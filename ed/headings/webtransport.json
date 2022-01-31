@@ -1,0 +1,425 @@
+{
+  "spec": {
+    "title": "WebTransport",
+    "url": "https://w3c.github.io/webtransport/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://w3c.github.io/webtransport/#title",
+      "level": 1,
+      "title": "WebTransport"
+    },
+    {
+      "id": "abstract",
+      "href": "https://w3c.github.io/webtransport/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "sotd",
+      "href": "https://w3c.github.io/webtransport/#sotd",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://w3c.github.io/webtransport/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "introduction",
+      "href": "https://w3c.github.io/webtransport/#introduction",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "conformance",
+      "href": "https://w3c.github.io/webtransport/#conformance",
+      "level": 2,
+      "title": "Conformance",
+      "number": "2"
+    },
+    {
+      "id": "terminology",
+      "href": "https://w3c.github.io/webtransport/#terminology",
+      "level": 2,
+      "title": "Terminology",
+      "number": "3"
+    },
+    {
+      "id": "protocol-concepts",
+      "href": "https://w3c.github.io/webtransport/#protocol-concepts",
+      "level": 2,
+      "title": "Protocol concepts",
+      "number": "4"
+    },
+    {
+      "id": "duplex-stream",
+      "href": "https://w3c.github.io/webtransport/#duplex-stream",
+      "level": 2,
+      "title": "WebTransportDatagramDuplexStream Interface",
+      "number": "5"
+    },
+    {
+      "id": "datagramduplexstream-internal-slots",
+      "href": "https://w3c.github.io/webtransport/#datagramduplexstream-internal-slots",
+      "level": 3,
+      "title": "Internal slots",
+      "number": "5.1"
+    },
+    {
+      "id": "datagram-duplex-stream-attributes",
+      "href": "https://w3c.github.io/webtransport/#datagram-duplex-stream-attributes",
+      "level": 3,
+      "title": "Attributes",
+      "number": "5.2"
+    },
+    {
+      "id": "datagram-duplex-stream-procedures",
+      "href": "https://w3c.github.io/webtransport/#datagram-duplex-stream-procedures",
+      "level": 3,
+      "title": "Procedures",
+      "number": "5.3"
+    },
+    {
+      "id": "web-transport",
+      "href": "https://w3c.github.io/webtransport/#web-transport",
+      "level": 2,
+      "title": "WebTransport Interface",
+      "number": "6"
+    },
+    {
+      "id": "webtransport-internal-slots",
+      "href": "https://w3c.github.io/webtransport/#webtransport-internal-slots",
+      "level": 3,
+      "title": "Internal slots",
+      "number": "6.1"
+    },
+    {
+      "id": "webtransport-constructor",
+      "href": "https://w3c.github.io/webtransport/#webtransport-constructor",
+      "level": 3,
+      "title": "Constructor",
+      "number": "6.2"
+    },
+    {
+      "id": "webtransport-attributes",
+      "href": "https://w3c.github.io/webtransport/#webtransport-attributes",
+      "level": 3,
+      "title": "Attributes",
+      "number": "6.3"
+    },
+    {
+      "id": "webtransport-methods",
+      "href": "https://w3c.github.io/webtransport/#webtransport-methods",
+      "level": 3,
+      "title": "Methods",
+      "number": "6.4"
+    },
+    {
+      "id": "webtransport-procedures",
+      "href": "https://w3c.github.io/webtransport/#webtransport-procedures",
+      "level": 3,
+      "title": "Procedures",
+      "number": "6.5"
+    },
+    {
+      "id": "web-transport-termination",
+      "href": "https://w3c.github.io/webtransport/#web-transport-termination",
+      "level": 3,
+      "title": "Session termination not initiated by the client",
+      "number": "6.6"
+    },
+    {
+      "id": "web-transport-context-cleanup-steps",
+      "href": "https://w3c.github.io/webtransport/#web-transport-context-cleanup-steps",
+      "level": 3,
+      "title": "Context cleanup steps",
+      "number": "6.7"
+    },
+    {
+      "id": "web-transport-gc",
+      "href": "https://w3c.github.io/webtransport/#web-transport-gc",
+      "level": 3,
+      "title": "Garbage Collection",
+      "number": "6.8"
+    },
+    {
+      "id": "web-transport-configuration",
+      "href": "https://w3c.github.io/webtransport/#web-transport-configuration",
+      "level": 3,
+      "title": "Configuration",
+      "number": "6.9"
+    },
+    {
+      "id": "web-transport-close-info",
+      "href": "https://w3c.github.io/webtransport/#web-transport-close-info",
+      "level": 3,
+      "title": "WebTransportCloseInfo Dictionary",
+      "number": "6.10"
+    },
+    {
+      "id": "web-transport-stats",
+      "href": "https://w3c.github.io/webtransport/#web-transport-stats",
+      "level": 3,
+      "title": "WebTransportStats Dictionary",
+      "number": "6.11"
+    },
+    {
+      "id": "send-stream",
+      "href": "https://w3c.github.io/webtransport/#send-stream",
+      "level": 2,
+      "title": "SendStream",
+      "number": "7"
+    },
+    {
+      "id": "send-stream-internal-slots",
+      "href": "https://w3c.github.io/webtransport/#send-stream-internal-slots",
+      "level": 3,
+      "title": "Internal Slots",
+      "number": "7.1"
+    },
+    {
+      "id": "send-stream-procedures",
+      "href": "https://w3c.github.io/webtransport/#send-stream-procedures",
+      "level": 3,
+      "title": "Procedures",
+      "number": "7.2"
+    },
+    {
+      "id": "send-stream-STOP_SENDING",
+      "href": "https://w3c.github.io/webtransport/#send-stream-STOP_SENDING",
+      "level": 3,
+      "title": "STOP_SENDING signal coming from the server",
+      "number": "7.3"
+    },
+    {
+      "id": "receive-stream",
+      "href": "https://w3c.github.io/webtransport/#receive-stream",
+      "level": 2,
+      "title": "ReceiveStream",
+      "number": "8"
+    },
+    {
+      "id": "receive-stream-internal-slots",
+      "href": "https://w3c.github.io/webtransport/#receive-stream-internal-slots",
+      "level": 3,
+      "title": "Internal Slots",
+      "number": "8.1"
+    },
+    {
+      "id": "receive-stream-procedures",
+      "href": "https://w3c.github.io/webtransport/#receive-stream-procedures",
+      "level": 3,
+      "title": "Procedures",
+      "number": "8.2"
+    },
+    {
+      "id": "receive-stream-RESET_STREAM",
+      "href": "https://w3c.github.io/webtransport/#receive-stream-RESET_STREAM",
+      "level": 3,
+      "title": "Reset signal coming from the server",
+      "number": "8.3"
+    },
+    {
+      "id": "bidirectional-stream",
+      "href": "https://w3c.github.io/webtransport/#bidirectional-stream",
+      "level": 2,
+      "title": "Interface WebTransportBidirectionalStream",
+      "number": "9"
+    },
+    {
+      "id": "bidirectional-stream-internal-slots",
+      "href": "https://w3c.github.io/webtransport/#bidirectional-stream-internal-slots",
+      "level": 3,
+      "title": "Internal slots",
+      "number": "9.1"
+    },
+    {
+      "id": "bidirectional-stream-attributes",
+      "href": "https://w3c.github.io/webtransport/#bidirectional-stream-attributes",
+      "level": 3,
+      "title": "Attributes",
+      "number": "9.2"
+    },
+    {
+      "id": "bidirectional-stream-procedures",
+      "href": "https://w3c.github.io/webtransport/#bidirectional-stream-procedures",
+      "level": 3,
+      "title": "Procedures",
+      "number": "9.3"
+    },
+    {
+      "id": "web-transport-error-interface",
+      "href": "https://w3c.github.io/webtransport/#web-transport-error-interface",
+      "level": 2,
+      "title": "10. WebTransportError Interface"
+    },
+    {
+      "id": "web-transport-error-internal-slots",
+      "href": "https://w3c.github.io/webtransport/#web-transport-error-internal-slots",
+      "level": 3,
+      "title": "Internal slots",
+      "number": "10.1"
+    },
+    {
+      "id": "web-transport-error-constructor1",
+      "href": "https://w3c.github.io/webtransport/#web-transport-error-constructor1",
+      "level": 3,
+      "title": "Constructor",
+      "number": "10.2"
+    },
+    {
+      "id": "web-transport-error-attributes",
+      "href": "https://w3c.github.io/webtransport/#web-transport-error-attributes",
+      "level": 3,
+      "title": "Attributes",
+      "number": "10.3"
+    },
+    {
+      "id": "web-transport-error-procedures",
+      "href": "https://w3c.github.io/webtransport/#web-transport-error-procedures",
+      "level": 3,
+      "title": "Procedures",
+      "number": "10.4"
+    },
+    {
+      "id": "protocol-mapping",
+      "href": "https://w3c.github.io/webtransport/#protocol-mapping",
+      "level": 2,
+      "title": "11. Protocol Mappings"
+    },
+    {
+      "id": "privacy-security",
+      "href": "https://w3c.github.io/webtransport/#privacy-security",
+      "level": 2,
+      "title": "12. Privacy and Security Considerations"
+    },
+    {
+      "id": "confidentiality",
+      "href": "https://w3c.github.io/webtransport/#confidentiality",
+      "level": 3,
+      "title": "Confidentiality of Communications",
+      "number": "12.1"
+    },
+    {
+      "id": "state-persistence",
+      "href": "https://w3c.github.io/webtransport/#state-persistence",
+      "level": 3,
+      "title": "State Persistence",
+      "number": "12.2"
+    },
+    {
+      "id": "protocol-security",
+      "href": "https://w3c.github.io/webtransport/#protocol-security",
+      "level": 3,
+      "title": "Protocol Security",
+      "number": "12.3"
+    },
+    {
+      "id": "examples",
+      "href": "https://w3c.github.io/webtransport/#examples",
+      "level": 2,
+      "title": "13. Examples"
+    },
+    {
+      "id": "example-datagrams",
+      "href": "https://w3c.github.io/webtransport/#example-datagrams",
+      "level": 3,
+      "title": "Sending a buffer of datagrams",
+      "number": "13.1"
+    },
+    {
+      "id": "example-fixed-rate",
+      "href": "https://w3c.github.io/webtransport/#example-fixed-rate",
+      "level": 3,
+      "title": "Sending datagrams at a fixed rate",
+      "number": "13.2"
+    },
+    {
+      "id": "example-receiving-datagrams",
+      "href": "https://w3c.github.io/webtransport/#example-receiving-datagrams",
+      "level": 3,
+      "title": "Receiving datagrams",
+      "number": "13.3"
+    },
+    {
+      "id": "example-sending-stream",
+      "href": "https://w3c.github.io/webtransport/#example-sending-stream",
+      "level": 3,
+      "title": "Sending a stream",
+      "number": "13.4"
+    },
+    {
+      "id": "example-receiving-incoming-streams",
+      "href": "https://w3c.github.io/webtransport/#example-receiving-incoming-streams",
+      "level": 3,
+      "title": "Receiving incoming streams",
+      "number": "13.5"
+    },
+    {
+      "id": "example-complete",
+      "href": "https://w3c.github.io/webtransport/#example-complete",
+      "level": 3,
+      "title": "Complete example",
+      "number": "13.6"
+    },
+    {
+      "id": "acknowledgements",
+      "href": "https://w3c.github.io/webtransport/#acknowledgements",
+      "level": 2,
+      "title": "14. Acknowledgements"
+    },
+    {
+      "id": "index",
+      "href": "https://w3c.github.io/webtransport/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://w3c.github.io/webtransport/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://w3c.github.io/webtransport/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://w3c.github.io/webtransport/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://w3c.github.io/webtransport/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://w3c.github.io/webtransport/#informative",
+      "level": 3,
+      "title": "Informative References"
+    },
+    {
+      "id": "idl-index",
+      "href": "https://w3c.github.io/webtransport/#idl-index",
+      "level": 2,
+      "title": "IDL Index"
+    },
+    {
+      "id": "issues-index",
+      "href": "https://w3c.github.io/webtransport/#issues-index",
+      "level": 2,
+      "title": "Issues Index"
+    }
+  ]
+}

@@ -1,0 +1,693 @@
+{
+  "name": "GPURenderPassEncoder",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebGPU",
+      "url": "https://www.w3.org/TR/webgpu/"
+    },
+    "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPURenderPassEncoder {\n    undefined setViewport(float x, float y,\n                     float width, float height,\n                     float minDepth, float maxDepth);\n\n    undefined setScissorRect(GPUIntegerCoordinate x, GPUIntegerCoordinate y,\n                        GPUIntegerCoordinate width, GPUIntegerCoordinate height);\n\n    undefined setBlendConstant(GPUColor color);\n    undefined setStencilReference(GPUStencilValue reference);\n\n    undefined beginOcclusionQuery(GPUSize32 queryIndex);\n    undefined endOcclusionQuery();\n\n    undefined executeBundles(sequence<GPURenderBundle> bundles);\n    undefined endPass();\n};",
+    "href": "https://gpuweb.github.io/gpuweb/#gpurenderpassencoder"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "WebGPU",
+        "url": "https://www.w3.org/TR/webgpu/"
+      },
+      "fragment": "GPURenderPassEncoder includes GPUObjectBase;"
+    },
+    {
+      "spec": {
+        "title": "WebGPU",
+        "url": "https://www.w3.org/TR/webgpu/"
+      },
+      "fragment": "GPURenderPassEncoder includes GPUCommandsMixin;"
+    },
+    {
+      "spec": {
+        "title": "WebGPU",
+        "url": "https://www.w3.org/TR/webgpu/"
+      },
+      "fragment": "GPURenderPassEncoder includes GPUDebugCommandsMixin;"
+    },
+    {
+      "spec": {
+        "title": "WebGPU",
+        "url": "https://www.w3.org/TR/webgpu/"
+      },
+      "fragment": "GPURenderPassEncoder includes GPUProgrammablePassEncoder;"
+    },
+    {
+      "spec": {
+        "title": "WebGPU",
+        "url": "https://www.w3.org/TR/webgpu/"
+      },
+      "fragment": "GPURenderPassEncoder includes GPURenderEncoderBase;"
+    }
+  ],
+  "inheritance": null,
+  "includes": [
+    {
+      "name": "GPUObjectBase",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "WebGPU",
+          "url": "https://www.w3.org/TR/webgpu/"
+        },
+        "fragment": "interface mixin GPUObjectBase {\n    attribute (USVString or undefined) label;\n};",
+        "href": "https://gpuweb.github.io/gpuweb/#gpuobjectbase"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "GPUCommandsMixin",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "WebGPU",
+          "url": "https://www.w3.org/TR/webgpu/"
+        },
+        "fragment": "interface mixin GPUCommandsMixin {\n};",
+        "href": "https://gpuweb.github.io/gpuweb/#gpucommandsmixin"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "GPUDebugCommandsMixin",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "WebGPU",
+          "url": "https://www.w3.org/TR/webgpu/"
+        },
+        "fragment": "interface mixin GPUDebugCommandsMixin {\n    undefined pushDebugGroup(USVString groupLabel);\n    undefined popDebugGroup();\n    undefined insertDebugMarker(USVString markerLabel);\n};",
+        "href": "https://gpuweb.github.io/gpuweb/#gpudebugcommandsmixin"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "GPUProgrammablePassEncoder",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "WebGPU",
+          "url": "https://www.w3.org/TR/webgpu/"
+        },
+        "fragment": "interface mixin GPUProgrammablePassEncoder {\n    undefined setBindGroup(GPUIndex32 index, GPUBindGroup bindGroup,\n                      optional sequence<GPUBufferDynamicOffset> dynamicOffsets = []);\n\n    undefined setBindGroup(GPUIndex32 index, GPUBindGroup bindGroup,\n                      Uint32Array dynamicOffsetsData,\n                      GPUSize64 dynamicOffsetsDataStart,\n                      GPUSize32 dynamicOffsetsDataLength);\n};",
+        "href": "https://gpuweb.github.io/gpuweb/#gpuprogrammablepassencoder"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "GPURenderEncoderBase",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "WebGPU",
+          "url": "https://www.w3.org/TR/webgpu/"
+        },
+        "fragment": "interface mixin GPURenderEncoderBase {\n    undefined setPipeline(GPURenderPipeline pipeline);\n\n    undefined setIndexBuffer(GPUBuffer buffer, GPUIndexFormat indexFormat, optional GPUSize64 offset = 0, optional GPUSize64 size);\n    undefined setVertexBuffer(GPUIndex32 slot, GPUBuffer buffer, optional GPUSize64 offset = 0, optional GPUSize64 size);\n\n    undefined draw(GPUSize32 vertexCount, optional GPUSize32 instanceCount = 1,\n              optional GPUSize32 firstVertex = 0, optional GPUSize32 firstInstance = 0);\n    undefined drawIndexed(GPUSize32 indexCount, optional GPUSize32 instanceCount = 1,\n                     optional GPUSize32 firstIndex = 0,\n                     optional GPUSignedOffset32 baseVertex = 0,\n                     optional GPUSize32 firstInstance = 0);\n\n    undefined drawIndirect(GPUBuffer indirectBuffer, GPUSize64 indirectOffset);\n    undefined drawIndexedIndirect(GPUBuffer indirectBuffer, GPUSize64 indirectOffset);\n};",
+        "href": "https://gpuweb.github.io/gpuweb/#gpurenderencoderbase"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    }
+  ],
+  "dfns": {
+    "https://www.w3.org/TR/webgpu/": [
+      {
+        "id": "gpurenderpassencoder",
+        "href": "https://gpuweb.github.io/gpuweb/#gpurenderpassencoder",
+        "linkingText": [
+          "GPURenderPassEncoder"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "render-pass-encoder",
+          "href": "https://gpuweb.github.io/gpuweb/#render-pass-encoder",
+          "title": "GPURenderPassEncoder",
+          "number": "16.1"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-gpurenderpassencoder-setviewport",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-setviewport",
+        "linkingText": [
+          "setViewport(x, y, width, height, minDepth, maxDepth)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GPURenderPassEncoder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "render-pass-encoder-rasterization-state",
+          "href": "https://gpuweb.github.io/gpuweb/#render-pass-encoder-rasterization-state",
+          "title": "Rasterization state",
+          "number": "16.1.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpurenderpassencoder-setscissorrect",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-setscissorrect",
+        "linkingText": [
+          "setScissorRect(x, y, width, height)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GPURenderPassEncoder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "render-pass-encoder-rasterization-state",
+          "href": "https://gpuweb.github.io/gpuweb/#render-pass-encoder-rasterization-state",
+          "title": "Rasterization state",
+          "number": "16.1.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpurenderpassencoder-setblendconstant",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-setblendconstant",
+        "linkingText": [
+          "setBlendConstant(color)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GPURenderPassEncoder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "render-pass-encoder-rasterization-state",
+          "href": "https://gpuweb.github.io/gpuweb/#render-pass-encoder-rasterization-state",
+          "title": "Rasterization state",
+          "number": "16.1.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpurenderpassencoder-setstencilreference",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-setstencilreference",
+        "linkingText": [
+          "setStencilReference(reference)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GPURenderPassEncoder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "render-pass-encoder-rasterization-state",
+          "href": "https://gpuweb.github.io/gpuweb/#render-pass-encoder-rasterization-state",
+          "title": "Rasterization state",
+          "number": "16.1.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpurenderpassencoder-beginocclusionquery",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-beginocclusionquery",
+        "linkingText": [
+          "beginOcclusionQuery(queryIndex)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GPURenderPassEncoder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "render-pass-encoder-queries",
+          "href": "https://gpuweb.github.io/gpuweb/#render-pass-encoder-queries",
+          "title": "Queries",
+          "number": "16.1.4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpurenderpassencoder-endocclusionquery",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-endocclusionquery",
+        "linkingText": [
+          "endOcclusionQuery()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GPURenderPassEncoder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "render-pass-encoder-queries",
+          "href": "https://gpuweb.github.io/gpuweb/#render-pass-encoder-queries",
+          "title": "Queries",
+          "number": "16.1.4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpurenderpassencoder-executebundles",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-executebundles",
+        "linkingText": [
+          "executeBundles(bundles)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GPURenderPassEncoder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "render-pass-encoder-bundles",
+          "href": "https://gpuweb.github.io/gpuweb/#render-pass-encoder-bundles",
+          "title": "Bundles",
+          "number": "16.1.5"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpurenderpassencoder-endpass",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-endpass",
+        "linkingText": [
+          "endPass()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GPURenderPassEncoder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "render-pass-encoder-finalization",
+          "href": "https://gpuweb.github.io/gpuweb/#render-pass-encoder-finalization",
+          "title": "Finalization",
+          "number": "16.1.6"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "gpuobjectbase",
+        "href": "https://gpuweb.github.io/gpuweb/#gpuobjectbase",
+        "linkingText": [
+          "GPUObjectBase"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "webgpu-interfaces",
+          "href": "https://gpuweb.github.io/gpuweb/#webgpu-interfaces",
+          "title": "WebGPU Interfaces",
+          "number": "3.1.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gpuobjectbase-label",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpuobjectbase-label",
+        "linkingText": [
+          "label"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "GPUObjectBase"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "webgpu-interfaces",
+          "href": "https://gpuweb.github.io/gpuweb/#webgpu-interfaces",
+          "title": "WebGPU Interfaces",
+          "number": "3.1.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "gpucommandsmixin",
+        "href": "https://gpuweb.github.io/gpuweb/#gpucommandsmixin",
+        "linkingText": [
+          "GPUCommandsMixin"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "commands-mixin",
+          "href": "https://gpuweb.github.io/gpuweb/#commands-mixin",
+          "title": "GPUCommandsMixin",
+          "number": "12.1"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "gpudebugcommandsmixin",
+        "href": "https://gpuweb.github.io/gpuweb/#gpudebugcommandsmixin",
+        "linkingText": [
+          "GPUDebugCommandsMixin"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "debug-markers",
+          "href": "https://gpuweb.github.io/gpuweb/#debug-markers",
+          "title": "14. Debug Markers"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-gpudebugcommandsmixin-pushdebuggroup",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpudebugcommandsmixin-pushdebuggroup",
+        "linkingText": [
+          "pushDebugGroup(groupLabel)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GPUDebugCommandsMixin"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "debug-markers",
+          "href": "https://gpuweb.github.io/gpuweb/#debug-markers",
+          "title": "14. Debug Markers"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpudebugcommandsmixin-popdebuggroup",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpudebugcommandsmixin-popdebuggroup",
+        "linkingText": [
+          "popDebugGroup()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GPUDebugCommandsMixin"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "debug-markers",
+          "href": "https://gpuweb.github.io/gpuweb/#debug-markers",
+          "title": "14. Debug Markers"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpudebugcommandsmixin-insertdebugmarker",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpudebugcommandsmixin-insertdebugmarker",
+        "linkingText": [
+          "insertDebugMarker(markerLabel)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GPUDebugCommandsMixin"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "debug-markers",
+          "href": "https://gpuweb.github.io/gpuweb/#debug-markers",
+          "title": "14. Debug Markers"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "gpuprogrammablepassencoder",
+        "href": "https://gpuweb.github.io/gpuweb/#gpuprogrammablepassencoder",
+        "linkingText": [
+          "GPUProgrammablePassEncoder"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "programmable-passes",
+          "href": "https://gpuweb.github.io/gpuweb/#programmable-passes",
+          "title": "13. Programmable Passes"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gpuprogrammablepassencoder-setbindgroup",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpuprogrammablepassencoder-setbindgroup",
+        "linkingText": [
+          "setBindGroup(index, bindGroup, dynamicOffsets)",
+          "setBindGroup(index, bindGroup)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GPUProgrammablePassEncoder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "programmable-passes-bind-groups",
+          "href": "https://gpuweb.github.io/gpuweb/#programmable-passes-bind-groups",
+          "title": "Bind Groups",
+          "number": "13.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpuprogrammablepassencoder-setbindgroup-index-bindgroup-dynamicoffsetsdata-dynamicoffsetsdatastart-dynamicoffsetsdatalength",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpuprogrammablepassencoder-setbindgroup-index-bindgroup-dynamicoffsetsdata-dynamicoffsetsdatastart-dynamicoffsetsdatalength",
+        "linkingText": [
+          "setBindGroup(index, bindGroup, dynamicOffsetsData, dynamicOffsetsDataStart, dynamicOffsetsDataLength)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GPUProgrammablePassEncoder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "programmable-passes-bind-groups",
+          "href": "https://gpuweb.github.io/gpuweb/#programmable-passes-bind-groups",
+          "title": "Bind Groups",
+          "number": "13.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "gpurenderencoderbase",
+        "href": "https://gpuweb.github.io/gpuweb/#gpurenderencoderbase",
+        "linkingText": [
+          "GPURenderEncoderBase"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "render-pass-encoder",
+          "href": "https://gpuweb.github.io/gpuweb/#render-pass-encoder",
+          "title": "GPURenderPassEncoder",
+          "number": "16.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gpurenderencoderbase-setpipeline",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-setpipeline",
+        "linkingText": [
+          "setPipeline(pipeline)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GPURenderEncoderBase"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "render-pass-encoder-drawing",
+          "href": "https://gpuweb.github.io/gpuweb/#render-pass-encoder-drawing",
+          "title": "Drawing",
+          "number": "16.1.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpurenderencoderbase-setindexbuffer",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-setindexbuffer",
+        "linkingText": [
+          "setIndexBuffer(buffer, indexFormat, offset, size)",
+          "setIndexBuffer(buffer, indexFormat, offset)",
+          "setIndexBuffer(buffer, indexFormat)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GPURenderEncoderBase"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "render-pass-encoder-drawing",
+          "href": "https://gpuweb.github.io/gpuweb/#render-pass-encoder-drawing",
+          "title": "Drawing",
+          "number": "16.1.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpurenderencoderbase-setvertexbuffer",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-setvertexbuffer",
+        "linkingText": [
+          "setVertexBuffer(slot, buffer, offset, size)",
+          "setVertexBuffer(slot, buffer, offset)",
+          "setVertexBuffer(slot, buffer)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GPURenderEncoderBase"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "render-pass-encoder-drawing",
+          "href": "https://gpuweb.github.io/gpuweb/#render-pass-encoder-drawing",
+          "title": "Drawing",
+          "number": "16.1.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpurenderencoderbase-draw",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-draw",
+        "linkingText": [
+          "draw(vertexCount, instanceCount, firstVertex, firstInstance)",
+          "draw(vertexCount, instanceCount, firstVertex)",
+          "draw(vertexCount, instanceCount)",
+          "draw(vertexCount)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GPURenderEncoderBase"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "render-pass-encoder-drawing",
+          "href": "https://gpuweb.github.io/gpuweb/#render-pass-encoder-drawing",
+          "title": "Drawing",
+          "number": "16.1.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpurenderencoderbase-drawindexed",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-drawindexed",
+        "linkingText": [
+          "drawIndexed(indexCount, instanceCount, firstIndex, baseVertex, firstInstance)",
+          "drawIndexed(indexCount, instanceCount, firstIndex, baseVertex)",
+          "drawIndexed(indexCount, instanceCount, firstIndex)",
+          "drawIndexed(indexCount, instanceCount)",
+          "drawIndexed(indexCount)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GPURenderEncoderBase"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "render-pass-encoder-drawing",
+          "href": "https://gpuweb.github.io/gpuweb/#render-pass-encoder-drawing",
+          "title": "Drawing",
+          "number": "16.1.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpurenderencoderbase-drawindirect",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-drawindirect",
+        "linkingText": [
+          "drawIndirect(indirectBuffer, indirectOffset)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GPURenderEncoderBase"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "render-pass-encoder-drawing",
+          "href": "https://gpuweb.github.io/gpuweb/#render-pass-encoder-drawing",
+          "title": "Drawing",
+          "number": "16.1.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpurenderencoderbase-drawindexedindirect",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-drawindexedindirect",
+        "linkingText": [
+          "drawIndexedIndirect(indirectBuffer, indirectOffset)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GPURenderEncoderBase"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "render-pass-encoder-drawing",
+          "href": "https://gpuweb.github.io/gpuweb/#render-pass-encoder-drawing",
+          "title": "Drawing",
+          "number": "16.1.2"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

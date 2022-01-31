@@ -1,0 +1,1836 @@
+{
+  "name": "MLGraphBuilder",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Web Neural Network API",
+      "url": "https://www.w3.org/TR/webnn/"
+    },
+    "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface MLGraphBuilder {\n  // Construct the graph builder from the context.\n  constructor(MLContext context);\n\n  // Create an operand for a graph input.\n  MLOperand input(DOMString name, MLOperandDescriptor desc);\n\n  // Create an operand for a graph constant.\n  MLOperand constant(MLOperandDescriptor desc, MLBufferView bufferView);\n\n  // Create a single-value operand from the specified number of the specified type.\n  MLOperand constant(double value, optional MLOperandType type = \"float32\");\n\n  // Compile the graph up to the specified output operands\n  MLGraph build(MLNamedOperands outputs);\n};",
+    "href": "https://webmachinelearning.github.io/webnn/#mlgraphbuilder"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "Web Neural Network API",
+        "url": "https://www.w3.org/TR/webnn/"
+      },
+      "fragment": "partial interface MLGraphBuilder {\n  MLOperand batchNormalization(MLOperand input, MLOperand mean, MLOperand variance,\n                             optional MLBatchNormalizationOptions options = {});\n};"
+    },
+    {
+      "spec": {
+        "title": "Web Neural Network API",
+        "url": "https://www.w3.org/TR/webnn/"
+      },
+      "fragment": "partial interface MLGraphBuilder {\n  MLOperand clamp(MLOperand x, optional MLClampOptions options = {});\n  MLOperator clamp(optional MLClampOptions options = {});\n};"
+    },
+    {
+      "spec": {
+        "title": "Web Neural Network API",
+        "url": "https://www.w3.org/TR/webnn/"
+      },
+      "fragment": "partial interface MLGraphBuilder {\n  MLOperand concat(sequence<MLOperand> inputs, long axis);\n};"
+    },
+    {
+      "spec": {
+        "title": "Web Neural Network API",
+        "url": "https://www.w3.org/TR/webnn/"
+      },
+      "fragment": "partial interface MLGraphBuilder {\n  MLOperand conv2d(MLOperand input, MLOperand filter, optional MLConv2dOptions options = {});\n};"
+    },
+    {
+      "spec": {
+        "title": "Web Neural Network API",
+        "url": "https://www.w3.org/TR/webnn/"
+      },
+      "fragment": "partial interface MLGraphBuilder {\n  MLOperand convTranspose2d(MLOperand input, MLOperand filter,\n                            optional MLConvTranspose2dOptions options = {});\n};"
+    },
+    {
+      "spec": {
+        "title": "Web Neural Network API",
+        "url": "https://www.w3.org/TR/webnn/"
+      },
+      "fragment": "partial interface MLGraphBuilder {\n  MLOperand add(MLOperand a, MLOperand b);\n  MLOperand sub(MLOperand a, MLOperand b);\n  MLOperand mul(MLOperand a, MLOperand b);\n  MLOperand div(MLOperand a, MLOperand b);\n  MLOperand max(MLOperand a, MLOperand b);\n  MLOperand min(MLOperand a, MLOperand b);\n  MLOperand pow(MLOperand a, MLOperand b);\n};"
+    },
+    {
+      "spec": {
+        "title": "Web Neural Network API",
+        "url": "https://www.w3.org/TR/webnn/"
+      },
+      "fragment": "partial interface MLGraphBuilder {\n  MLOperand abs(MLOperand x);\n  MLOperand ceil(MLOperand x);\n  MLOperand cos(MLOperand x);\n  MLOperand exp(MLOperand x);\n  MLOperand floor(MLOperand x);\n  MLOperand log(MLOperand x);\n  MLOperand neg(MLOperand x);\n  MLOperand sin(MLOperand x);\n  MLOperand tan(MLOperand x);\n};"
+    },
+    {
+      "spec": {
+        "title": "Web Neural Network API",
+        "url": "https://www.w3.org/TR/webnn/"
+      },
+      "fragment": "partial interface MLGraphBuilder {\n  MLOperand elu(MLOperand x, optional MLEluOptions options = {});\n  MLOperator elu(optional MLEluOptions options = {});\n};"
+    },
+    {
+      "spec": {
+        "title": "Web Neural Network API",
+        "url": "https://www.w3.org/TR/webnn/"
+      },
+      "fragment": "partial interface MLGraphBuilder {\n  MLOperand gemm(MLOperand a, MLOperand b, optional MLGemmOptions options = {});\n};"
+    },
+    {
+      "spec": {
+        "title": "Web Neural Network API",
+        "url": "https://www.w3.org/TR/webnn/"
+      },
+      "fragment": "partial interface MLGraphBuilder {\n  sequence<MLOperand> gru(MLOperand input, MLOperand weight, MLOperand recurrentWeight,\n\n                        long steps, long hiddenSize, optional MLGruOptions options = {});\n};"
+    },
+    {
+      "spec": {
+        "title": "Web Neural Network API",
+        "url": "https://www.w3.org/TR/webnn/"
+      },
+      "fragment": "partial interface MLGraphBuilder {\n  MLOperand gruCell(MLOperand input, MLOperand weight, MLOperand recurrentWeight,\n\n                  MLOperand hiddenState, long hiddenSize, optional MLGruCellOptions options = {});\n};"
+    },
+    {
+      "spec": {
+        "title": "Web Neural Network API",
+        "url": "https://www.w3.org/TR/webnn/"
+      },
+      "fragment": "partial interface MLGraphBuilder {\n  MLOperand hardSigmoid(MLOperand x, optional MLHardSigmoidOptions options = {});\n  MLOperator hardSigmoid(optional MLHardSigmoidOptions options = {});\n};"
+    },
+    {
+      "spec": {
+        "title": "Web Neural Network API",
+        "url": "https://www.w3.org/TR/webnn/"
+      },
+      "fragment": "partial interface MLGraphBuilder {\n  MLOperand hardSwish(MLOperand x);\n  MLOperator hardSwish();\n};"
+    },
+    {
+      "spec": {
+        "title": "Web Neural Network API",
+        "url": "https://www.w3.org/TR/webnn/"
+      },
+      "fragment": "partial interface MLGraphBuilder {\n  MLOperand instanceNormalization(MLOperand input,\n\n                                optional MLInstanceNormalizationOptions options = {});\n};"
+    },
+    {
+      "spec": {
+        "title": "Web Neural Network API",
+        "url": "https://www.w3.org/TR/webnn/"
+      },
+      "fragment": "partial interface MLGraphBuilder {\n  MLOperand leakyRelu(MLOperand x, optional MLLeakyReluOptions options = {});\n  MLOperator leakyRelu(optional MLLeakyReluOptions options = {});\n};"
+    },
+    {
+      "spec": {
+        "title": "Web Neural Network API",
+        "url": "https://www.w3.org/TR/webnn/"
+      },
+      "fragment": "partial interface MLGraphBuilder {\n  MLOperand matmul(MLOperand a, MLOperand b);\n};"
+    },
+    {
+      "spec": {
+        "title": "Web Neural Network API",
+        "url": "https://www.w3.org/TR/webnn/"
+      },
+      "fragment": "partial interface MLGraphBuilder {\n  MLOperand linear(MLOperand x, optional MLLinearOptions options = {});\n  MLOperator linear(optional MLLinearOptions options = {});\n};"
+    },
+    {
+      "spec": {
+        "title": "Web Neural Network API",
+        "url": "https://www.w3.org/TR/webnn/"
+      },
+      "fragment": "partial interface MLGraphBuilder {\n  MLOperand pad(MLOperand input, MLOperand padding, optional MLPadOptions options = {});\n};"
+    },
+    {
+      "spec": {
+        "title": "Web Neural Network API",
+        "url": "https://www.w3.org/TR/webnn/"
+      },
+      "fragment": "partial interface MLGraphBuilder {\n  MLOperand averagePool2d(MLOperand input, optional MLPool2dOptions options = {});\n  MLOperand l2Pool2d(MLOperand input, optional MLPool2dOptions options = {});\n  MLOperand maxPool2d(MLOperand input, optional MLPool2dOptions options = {});\n};"
+    },
+    {
+      "spec": {
+        "title": "Web Neural Network API",
+        "url": "https://www.w3.org/TR/webnn/"
+      },
+      "fragment": "partial interface MLGraphBuilder {\n  MLOperand reduceL1(MLOperand input, optional MLReduceOptions options = {});\n  MLOperand reduceL2(MLOperand input, optional MLReduceOptions options = {});\n  MLOperand reduceLogSum(MLOperand input, optional MLReduceOptions options = {});\n  MLOperand reduceLogSumExp(MLOperand input, optional MLReduceOptions options = {});\n  MLOperand reduceMax(MLOperand input, optional MLReduceOptions options = {});\n  MLOperand reduceMean(MLOperand input, optional MLReduceOptions options = {});\n  MLOperand reduceMin(MLOperand input, optional MLReduceOptions options = {});\n  MLOperand reduceProduct(MLOperand input, optional MLReduceOptions options = {});\n  MLOperand reduceSum(MLOperand input, optional MLReduceOptions options = {});\n  MLOperand reduceSumSquare(MLOperand input, optional MLReduceOptions options = {});\n};"
+    },
+    {
+      "spec": {
+        "title": "Web Neural Network API",
+        "url": "https://www.w3.org/TR/webnn/"
+      },
+      "fragment": "partial interface MLGraphBuilder {\n  MLOperand relu(MLOperand x);\n  MLOperator relu();\n};"
+    },
+    {
+      "spec": {
+        "title": "Web Neural Network API",
+        "url": "https://www.w3.org/TR/webnn/"
+      },
+      "fragment": "partial interface MLGraphBuilder {\n  MLOperand resample2d(MLOperand input, optional MLResample2dOptions options = {});\n};"
+    },
+    {
+      "spec": {
+        "title": "Web Neural Network API",
+        "url": "https://www.w3.org/TR/webnn/"
+      },
+      "fragment": "partial interface MLGraphBuilder {\n  MLOperand reshape(MLOperand input, sequence<long> newShape);\n};"
+    },
+    {
+      "spec": {
+        "title": "Web Neural Network API",
+        "url": "https://www.w3.org/TR/webnn/"
+      },
+      "fragment": "partial interface MLGraphBuilder {\n  MLOperand sigmoid(MLOperand x);\n  MLOperator sigmoid();\n};"
+    },
+    {
+      "spec": {
+        "title": "Web Neural Network API",
+        "url": "https://www.w3.org/TR/webnn/"
+      },
+      "fragment": "partial interface MLGraphBuilder {\n  MLOperand slice(MLOperand input, sequence<long> starts, sequence<long> sizes,\n                optional MLSliceOptions options = {});\n};"
+    },
+    {
+      "spec": {
+        "title": "Web Neural Network API",
+        "url": "https://www.w3.org/TR/webnn/"
+      },
+      "fragment": "partial interface MLGraphBuilder {\n  MLOperand softmax(MLOperand x);\n};"
+    },
+    {
+      "spec": {
+        "title": "Web Neural Network API",
+        "url": "https://www.w3.org/TR/webnn/"
+      },
+      "fragment": "partial interface MLGraphBuilder {\n  MLOperand softplus(MLOperand x, optional MLSoftplusOptions options = {});\n  MLOperator softplus(optional MLSoftplusOptions options = {});\n};"
+    },
+    {
+      "spec": {
+        "title": "Web Neural Network API",
+        "url": "https://www.w3.org/TR/webnn/"
+      },
+      "fragment": "partial interface MLGraphBuilder {\n  MLOperand softsign(MLOperand x);\n  MLOperator softsign();\n};"
+    },
+    {
+      "spec": {
+        "title": "Web Neural Network API",
+        "url": "https://www.w3.org/TR/webnn/"
+      },
+      "fragment": "partial interface MLGraphBuilder {\n  sequence<MLOperand> split(MLOperand input,\n                          (unsigned long or sequence<unsigned long>) splits,\n                          optional MLSplitOptions options = {});\n};"
+    },
+    {
+      "spec": {
+        "title": "Web Neural Network API",
+        "url": "https://www.w3.org/TR/webnn/"
+      },
+      "fragment": "partial interface MLGraphBuilder {\n  MLOperand squeeze(MLOperand input, optional MLSqueezeOptions options = {});\n};"
+    },
+    {
+      "spec": {
+        "title": "Web Neural Network API",
+        "url": "https://www.w3.org/TR/webnn/"
+      },
+      "fragment": "partial interface MLGraphBuilder {\n  MLOperand tanh(MLOperand x);\n  MLOperator tanh();\n};"
+    },
+    {
+      "spec": {
+        "title": "Web Neural Network API",
+        "url": "https://www.w3.org/TR/webnn/"
+      },
+      "fragment": "partial interface MLGraphBuilder {\n  MLOperand transpose(MLOperand input, optional MLTransposeOptions options = {});\n};"
+    }
+  ],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webnn/": [
+      {
+        "id": "mlgraphbuilder",
+        "href": "https://webmachinelearning.github.io/webnn/#mlgraphbuilder",
+        "linkingText": [
+          "MLGraphBuilder"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder",
+          "title": "MLGraphBuilder",
+          "number": "7.7"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlgraphbuilder-mlgraphbuilder",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-mlgraphbuilder",
+        "linkingText": [
+          "MLGraphBuilder(context)",
+          "constructor(context)"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "MLGraphBuilder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder",
+          "title": "MLGraphBuilder",
+          "number": "7.7"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlgraphbuilder-input",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-input",
+        "linkingText": [
+          "input(name, desc)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MLGraphBuilder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder",
+          "title": "MLGraphBuilder",
+          "number": "7.7"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlgraphbuilder-constant",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-constant",
+        "linkingText": [
+          "constant(desc, bufferView)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MLGraphBuilder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder",
+          "title": "MLGraphBuilder",
+          "number": "7.7"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlgraphbuilder-constant-value-type",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-constant-value-type",
+        "linkingText": [
+          "constant(value, type)",
+          "constant(value)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MLGraphBuilder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder",
+          "title": "MLGraphBuilder",
+          "number": "7.7"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlgraphbuilder-build",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-build",
+        "linkingText": [
+          "build(outputs)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MLGraphBuilder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder",
+          "title": "MLGraphBuilder",
+          "number": "7.7"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlgraphbuilder-batchnormalization",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-batchnormalization",
+        "linkingText": [
+          "batchNormalization(input, mean, variance, options)",
+          "batchNormalization(input, mean, variance)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MLGraphBuilder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-batchnorm",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-batchnorm",
+          "title": "batchNormalization",
+          "number": "7.7.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlgraphbuilder-clamp",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-clamp",
+        "linkingText": [
+          "clamp(x, options)",
+          "clamp(x)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MLGraphBuilder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-clamp",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-clamp",
+          "title": "clamp",
+          "number": "7.7.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlgraphbuilder-clamp-options",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-clamp-options",
+        "linkingText": [
+          "clamp(options)",
+          "clamp()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MLGraphBuilder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-clamp",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-clamp",
+          "title": "clamp",
+          "number": "7.7.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlgraphbuilder-concat",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-concat",
+        "linkingText": [
+          "concat(inputs, axis)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MLGraphBuilder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-concat",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-concat",
+          "title": "concat",
+          "number": "7.7.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlgraphbuilder-conv2d",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-conv2d",
+        "linkingText": [
+          "conv2d(input, filter, options)",
+          "conv2d(input, filter)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MLGraphBuilder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-conv2d",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-conv2d",
+          "title": "conv2d",
+          "number": "7.7.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlgraphbuilder-convtranspose2d",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-convtranspose2d",
+        "linkingText": [
+          "convTranspose2d(input, filter, options)",
+          "convTranspose2d(input, filter)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MLGraphBuilder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-convtranspose2d",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-convtranspose2d",
+          "title": "convTranspose2d",
+          "number": "7.7.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlgraphbuilder-add",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-add",
+        "linkingText": [
+          "add(a, b)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MLGraphBuilder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-binary",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-binary",
+          "title": "element-wise binary operations",
+          "number": "7.7.6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlgraphbuilder-sub",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-sub",
+        "linkingText": [
+          "sub(a, b)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MLGraphBuilder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-binary",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-binary",
+          "title": "element-wise binary operations",
+          "number": "7.7.6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlgraphbuilder-mul",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-mul",
+        "linkingText": [
+          "mul(a, b)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MLGraphBuilder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-binary",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-binary",
+          "title": "element-wise binary operations",
+          "number": "7.7.6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlgraphbuilder-div",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-div",
+        "linkingText": [
+          "div(a, b)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MLGraphBuilder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-binary",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-binary",
+          "title": "element-wise binary operations",
+          "number": "7.7.6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlgraphbuilder-max",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-max",
+        "linkingText": [
+          "max(a, b)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MLGraphBuilder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-binary",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-binary",
+          "title": "element-wise binary operations",
+          "number": "7.7.6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlgraphbuilder-min",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-min",
+        "linkingText": [
+          "min(a, b)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MLGraphBuilder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-binary",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-binary",
+          "title": "element-wise binary operations",
+          "number": "7.7.6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlgraphbuilder-pow",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-pow",
+        "linkingText": [
+          "pow(a, b)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MLGraphBuilder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-binary",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-binary",
+          "title": "element-wise binary operations",
+          "number": "7.7.6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlgraphbuilder-abs",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-abs",
+        "linkingText": [
+          "abs(x)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MLGraphBuilder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-unary",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-unary",
+          "title": "element-wise unary operations",
+          "number": "7.7.7"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlgraphbuilder-ceil",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-ceil",
+        "linkingText": [
+          "ceil(x)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MLGraphBuilder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-unary",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-unary",
+          "title": "element-wise unary operations",
+          "number": "7.7.7"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlgraphbuilder-cos",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-cos",
+        "linkingText": [
+          "cos(x)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MLGraphBuilder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-unary",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-unary",
+          "title": "element-wise unary operations",
+          "number": "7.7.7"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlgraphbuilder-exp",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-exp",
+        "linkingText": [
+          "exp(x)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MLGraphBuilder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-unary",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-unary",
+          "title": "element-wise unary operations",
+          "number": "7.7.7"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlgraphbuilder-floor",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-floor",
+        "linkingText": [
+          "floor(x)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MLGraphBuilder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-unary",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-unary",
+          "title": "element-wise unary operations",
+          "number": "7.7.7"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlgraphbuilder-log",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-log",
+        "linkingText": [
+          "log(x)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MLGraphBuilder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-unary",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-unary",
+          "title": "element-wise unary operations",
+          "number": "7.7.7"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlgraphbuilder-neg",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-neg",
+        "linkingText": [
+          "neg(x)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MLGraphBuilder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-unary",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-unary",
+          "title": "element-wise unary operations",
+          "number": "7.7.7"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlgraphbuilder-sin",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-sin",
+        "linkingText": [
+          "sin(x)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MLGraphBuilder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-unary",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-unary",
+          "title": "element-wise unary operations",
+          "number": "7.7.7"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlgraphbuilder-tan",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-tan",
+        "linkingText": [
+          "tan(x)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MLGraphBuilder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-unary",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-unary",
+          "title": "element-wise unary operations",
+          "number": "7.7.7"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlgraphbuilder-elu",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-elu",
+        "linkingText": [
+          "elu(x, options)",
+          "elu(x)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MLGraphBuilder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-elu",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-elu",
+          "title": "elu",
+          "number": "7.7.8"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlgraphbuilder-elu-options",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-elu-options",
+        "linkingText": [
+          "elu(options)",
+          "elu()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MLGraphBuilder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-elu",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-elu",
+          "title": "elu",
+          "number": "7.7.8"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlgraphbuilder-gemm",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-gemm",
+        "linkingText": [
+          "gemm(a, b, options)",
+          "gemm(a, b)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MLGraphBuilder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-gemm",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-gemm",
+          "title": "gemm",
+          "number": "7.7.9"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlgraphbuilder-gru",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-gru",
+        "linkingText": [
+          "gru(input, weight, recurrentWeight, steps, hiddenSize, options)",
+          "gru(input, weight, recurrentWeight, steps, hiddenSize)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MLGraphBuilder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-gru",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-gru",
+          "title": "gru",
+          "number": "7.7.10"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlgraphbuilder-grucell",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-grucell",
+        "linkingText": [
+          "gruCell(input, weight, recurrentWeight, hiddenState, hiddenSize, options)",
+          "gruCell(input, weight, recurrentWeight, hiddenState, hiddenSize)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MLGraphBuilder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-grucell",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-grucell",
+          "title": "gruCell",
+          "number": "7.7.11"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlgraphbuilder-hardsigmoid",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-hardsigmoid",
+        "linkingText": [
+          "hardSigmoid(x, options)",
+          "hardSigmoid(x)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MLGraphBuilder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-hard-sigmoid",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-hard-sigmoid",
+          "title": "hardSigmoid",
+          "number": "7.7.12"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlgraphbuilder-hardsigmoid-options",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-hardsigmoid-options",
+        "linkingText": [
+          "hardSigmoid(options)",
+          "hardSigmoid()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MLGraphBuilder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-hard-sigmoid",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-hard-sigmoid",
+          "title": "hardSigmoid",
+          "number": "7.7.12"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlgraphbuilder-hardswish",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-hardswish",
+        "linkingText": [
+          "hardSwish(x)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MLGraphBuilder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-hard-swish",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-hard-swish",
+          "title": "hardSwish",
+          "number": "7.7.13"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlgraphbuilder-hardswish①",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-hardswish%E2%91%A0",
+        "linkingText": [
+          "hardSwish()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MLGraphBuilder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-hard-swish",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-hard-swish",
+          "title": "hardSwish",
+          "number": "7.7.13"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlgraphbuilder-instancenormalization",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-instancenormalization",
+        "linkingText": [
+          "instanceNormalization(input, options)",
+          "instanceNormalization(input)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MLGraphBuilder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-instancenorm",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-instancenorm",
+          "title": "instanceNormalization",
+          "number": "7.7.14"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlgraphbuilder-leakyrelu",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-leakyrelu",
+        "linkingText": [
+          "leakyRelu(x, options)",
+          "leakyRelu(x)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MLGraphBuilder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-leakyrelu",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-leakyrelu",
+          "title": "leakyRelu",
+          "number": "7.7.15"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlgraphbuilder-leakyrelu-options",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-leakyrelu-options",
+        "linkingText": [
+          "leakyRelu(options)",
+          "leakyRelu()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MLGraphBuilder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-leakyrelu",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-leakyrelu",
+          "title": "leakyRelu",
+          "number": "7.7.15"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlgraphbuilder-matmul",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-matmul",
+        "linkingText": [
+          "matmul(a, b)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MLGraphBuilder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-matmul",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-matmul",
+          "title": "matmul",
+          "number": "7.7.16"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlgraphbuilder-linear",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-linear",
+        "linkingText": [
+          "linear(x, options)",
+          "linear(x)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MLGraphBuilder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-linear",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-linear",
+          "title": "linear",
+          "number": "7.7.17"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlgraphbuilder-linear-options",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-linear-options",
+        "linkingText": [
+          "linear(options)",
+          "linear()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MLGraphBuilder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-linear",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-linear",
+          "title": "linear",
+          "number": "7.7.17"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlgraphbuilder-pad",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-pad",
+        "linkingText": [
+          "pad(input, padding, options)",
+          "pad(input, padding)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MLGraphBuilder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-pad",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-pad",
+          "title": "pad",
+          "number": "7.7.18"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlgraphbuilder-averagepool2d",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-averagepool2d",
+        "linkingText": [
+          "averagePool2d(input, options)",
+          "averagePool2d(input)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MLGraphBuilder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-pool2d",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-pool2d",
+          "title": "pooling operations",
+          "number": "7.7.19"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlgraphbuilder-l2pool2d",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-l2pool2d",
+        "linkingText": [
+          "l2Pool2d(input, options)",
+          "l2Pool2d(input)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MLGraphBuilder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-pool2d",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-pool2d",
+          "title": "pooling operations",
+          "number": "7.7.19"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlgraphbuilder-maxpool2d",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-maxpool2d",
+        "linkingText": [
+          "maxPool2d(input, options)",
+          "maxPool2d(input)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MLGraphBuilder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-pool2d",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-pool2d",
+          "title": "pooling operations",
+          "number": "7.7.19"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlgraphbuilder-reducel1",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-reducel1",
+        "linkingText": [
+          "reduceL1(input, options)",
+          "reduceL1(input)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MLGraphBuilder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-reduce",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-reduce",
+          "title": "reduction operations",
+          "number": "7.7.20"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlgraphbuilder-reducel2",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-reducel2",
+        "linkingText": [
+          "reduceL2(input, options)",
+          "reduceL2(input)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MLGraphBuilder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-reduce",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-reduce",
+          "title": "reduction operations",
+          "number": "7.7.20"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlgraphbuilder-reducelogsum",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-reducelogsum",
+        "linkingText": [
+          "reduceLogSum(input, options)",
+          "reduceLogSum(input)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MLGraphBuilder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-reduce",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-reduce",
+          "title": "reduction operations",
+          "number": "7.7.20"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlgraphbuilder-reducelogsumexp",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-reducelogsumexp",
+        "linkingText": [
+          "reduceLogSumExp(input, options)",
+          "reduceLogSumExp(input)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MLGraphBuilder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-reduce",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-reduce",
+          "title": "reduction operations",
+          "number": "7.7.20"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlgraphbuilder-reducemax",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-reducemax",
+        "linkingText": [
+          "reduceMax(input, options)",
+          "reduceMax(input)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MLGraphBuilder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-reduce",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-reduce",
+          "title": "reduction operations",
+          "number": "7.7.20"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlgraphbuilder-reducemean",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-reducemean",
+        "linkingText": [
+          "reduceMean(input, options)",
+          "reduceMean(input)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MLGraphBuilder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-reduce",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-reduce",
+          "title": "reduction operations",
+          "number": "7.7.20"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlgraphbuilder-reducemin",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-reducemin",
+        "linkingText": [
+          "reduceMin(input, options)",
+          "reduceMin(input)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MLGraphBuilder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-reduce",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-reduce",
+          "title": "reduction operations",
+          "number": "7.7.20"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlgraphbuilder-reduceproduct",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-reduceproduct",
+        "linkingText": [
+          "reduceProduct(input, options)",
+          "reduceProduct(input)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MLGraphBuilder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-reduce",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-reduce",
+          "title": "reduction operations",
+          "number": "7.7.20"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlgraphbuilder-reducesum",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-reducesum",
+        "linkingText": [
+          "reduceSum(input, options)",
+          "reduceSum(input)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MLGraphBuilder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-reduce",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-reduce",
+          "title": "reduction operations",
+          "number": "7.7.20"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlgraphbuilder-reducesumsquare",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-reducesumsquare",
+        "linkingText": [
+          "reduceSumSquare(input, options)",
+          "reduceSumSquare(input)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MLGraphBuilder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-reduce",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-reduce",
+          "title": "reduction operations",
+          "number": "7.7.20"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlgraphbuilder-relu",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-relu",
+        "linkingText": [
+          "relu(x)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MLGraphBuilder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-relu",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-relu",
+          "title": "relu",
+          "number": "7.7.21"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlgraphbuilder-relu①",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-relu%E2%91%A0",
+        "linkingText": [
+          "relu()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MLGraphBuilder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-relu",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-relu",
+          "title": "relu",
+          "number": "7.7.21"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlgraphbuilder-resample2d",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-resample2d",
+        "linkingText": [
+          "resample2d(input, options)",
+          "resample2d(input)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MLGraphBuilder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-resample2d",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-resample2d",
+          "title": "resample2d",
+          "number": "7.7.22"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlgraphbuilder-reshape",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-reshape",
+        "linkingText": [
+          "reshape(input, newShape)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MLGraphBuilder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-reshape",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-reshape",
+          "title": "reshape",
+          "number": "7.7.23"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlgraphbuilder-sigmoid",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-sigmoid",
+        "linkingText": [
+          "sigmoid(x)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MLGraphBuilder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-sigmoid",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-sigmoid",
+          "title": "sigmoid",
+          "number": "7.7.24"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlgraphbuilder-sigmoid①",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-sigmoid%E2%91%A0",
+        "linkingText": [
+          "sigmoid()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MLGraphBuilder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-sigmoid",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-sigmoid",
+          "title": "sigmoid",
+          "number": "7.7.24"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlgraphbuilder-slice",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-slice",
+        "linkingText": [
+          "slice(input, starts, sizes, options)",
+          "slice(input, starts, sizes)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MLGraphBuilder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-slice",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-slice",
+          "title": "slice",
+          "number": "7.7.25"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlgraphbuilder-softmax",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-softmax",
+        "linkingText": [
+          "softmax(x)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MLGraphBuilder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-softmax",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-softmax",
+          "title": "softmax",
+          "number": "7.7.26"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlgraphbuilder-softplus",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-softplus",
+        "linkingText": [
+          "softplus(x, options)",
+          "softplus(x)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MLGraphBuilder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-softplus",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-softplus",
+          "title": "softplus",
+          "number": "7.7.27"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlgraphbuilder-softplus-options",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-softplus-options",
+        "linkingText": [
+          "softplus(options)",
+          "softplus()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MLGraphBuilder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-softplus",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-softplus",
+          "title": "softplus",
+          "number": "7.7.27"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlgraphbuilder-softsign",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-softsign",
+        "linkingText": [
+          "softsign(x)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MLGraphBuilder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-softsign",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-softsign",
+          "title": "softsign",
+          "number": "7.7.28"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlgraphbuilder-softsign①",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-softsign%E2%91%A0",
+        "linkingText": [
+          "softsign()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MLGraphBuilder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-softsign",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-softsign",
+          "title": "softsign",
+          "number": "7.7.28"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlgraphbuilder-split",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-split",
+        "linkingText": [
+          "split(input, splits, options)",
+          "split(input, splits)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MLGraphBuilder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-split",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-split",
+          "title": "split",
+          "number": "7.7.29"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlgraphbuilder-squeeze",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-squeeze",
+        "linkingText": [
+          "squeeze(input, options)",
+          "squeeze(input)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MLGraphBuilder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-squeeze",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-squeeze",
+          "title": "squeeze",
+          "number": "7.7.30"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlgraphbuilder-tanh",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-tanh",
+        "linkingText": [
+          "tanh(x)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MLGraphBuilder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-tanh",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-tanh",
+          "title": "tanh",
+          "number": "7.7.31"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlgraphbuilder-tanh①",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-tanh%E2%91%A0",
+        "linkingText": [
+          "tanh()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MLGraphBuilder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-tanh",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-tanh",
+          "title": "tanh",
+          "number": "7.7.31"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlgraphbuilder-transpose",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-transpose",
+        "linkingText": [
+          "transpose(input, options)",
+          "transpose(input)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MLGraphBuilder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-transpose",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-transpose",
+          "title": "transpose",
+          "number": "7.7.32"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

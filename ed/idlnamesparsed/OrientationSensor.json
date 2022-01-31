@@ -1,0 +1,405 @@
+{
+  "name": "OrientationSensor",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Orientation Sensor",
+      "url": "https://www.w3.org/TR/orientation-sensor/"
+    },
+    "fragment": "[SecureContext, Exposed=Window]\ninterface OrientationSensor : Sensor {\n  readonly attribute FrozenArray<double>? quaternion;\n  undefined populateMatrix(RotationMatrixType targetMatrix);\n};",
+    "href": "https://w3c.github.io/orientation-sensor/#orientationsensor"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "Sensor",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "Generic Sensor API",
+        "url": "https://www.w3.org/TR/generic-sensor/"
+      },
+      "fragment": "[SecureContext, Exposed=(DedicatedWorker, Window)]\ninterface Sensor : EventTarget {\n  readonly attribute boolean activated;\n  readonly attribute boolean hasReading;\n  readonly attribute DOMHighResTimeStamp? timestamp;\n  undefined start();\n  undefined stop();\n  attribute EventHandler onreading;\n  attribute EventHandler onactivate;\n  attribute EventHandler onerror;\n};",
+      "href": "https://w3c.github.io/sensors/#sensor"
+    },
+    "extended": [],
+    "inheritance": {
+      "name": "EventTarget",
+      "type": "interface",
+      "defined": {
+        "spec": {
+          "title": "DOM Standard",
+          "url": "https://dom.spec.whatwg.org/"
+        },
+        "fragment": "[Exposed=*]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+        "href": "https://dom.spec.whatwg.org/#eventtarget"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/orientation-sensor/": [
+      {
+        "id": "orientationsensor",
+        "href": "https://w3c.github.io/orientation-sensor/#orientationsensor",
+        "linkingText": [
+          "OrientationSensor"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "orientationsensor-interface",
+          "href": "https://w3c.github.io/orientation-sensor/#orientationsensor-interface",
+          "title": "The OrientationSensor Interface",
+          "number": "6.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-orientationsensor-quaternion",
+        "href": "https://w3c.github.io/orientation-sensor/#dom-orientationsensor-quaternion",
+        "linkingText": [
+          "quaternion"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "OrientationSensor"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "orientationsensor-interface",
+          "href": "https://w3c.github.io/orientation-sensor/#orientationsensor-interface",
+          "title": "The OrientationSensor Interface",
+          "number": "6.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-orientationsensor-populatematrix",
+        "href": "https://w3c.github.io/orientation-sensor/#dom-orientationsensor-populatematrix",
+        "linkingText": [
+          "populateMatrix(targetMatrix)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "OrientationSensor"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "orientationsensor-interface",
+          "href": "https://w3c.github.io/orientation-sensor/#orientationsensor-interface",
+          "title": "The OrientationSensor Interface",
+          "number": "6.1"
+        },
+        "definedIn": "pre"
+      }
+    ],
+    "https://www.w3.org/TR/generic-sensor/": [
+      {
+        "id": "sensor",
+        "href": "https://w3c.github.io/sensors/#sensor",
+        "linkingText": [
+          "Sensor"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-sensor-interface",
+          "href": "https://w3c.github.io/sensors/#the-sensor-interface",
+          "title": "The Sensor Interface",
+          "number": "7.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-sensor-activated",
+        "href": "https://w3c.github.io/sensors/#dom-sensor-activated",
+        "linkingText": [
+          "activated"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Sensor"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-sensor-interface",
+          "href": "https://w3c.github.io/sensors/#the-sensor-interface",
+          "title": "The Sensor Interface",
+          "number": "7.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-sensor-hasreading",
+        "href": "https://w3c.github.io/sensors/#dom-sensor-hasreading",
+        "linkingText": [
+          "hasReading"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Sensor"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-sensor-interface",
+          "href": "https://w3c.github.io/sensors/#the-sensor-interface",
+          "title": "The Sensor Interface",
+          "number": "7.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-sensor-timestamp",
+        "href": "https://w3c.github.io/sensors/#dom-sensor-timestamp",
+        "linkingText": [
+          "timestamp"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Sensor"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-sensor-interface",
+          "href": "https://w3c.github.io/sensors/#the-sensor-interface",
+          "title": "The Sensor Interface",
+          "number": "7.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-sensor-start",
+        "href": "https://w3c.github.io/sensors/#dom-sensor-start",
+        "linkingText": [
+          "start()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Sensor"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-sensor-interface",
+          "href": "https://w3c.github.io/sensors/#the-sensor-interface",
+          "title": "The Sensor Interface",
+          "number": "7.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-sensor-stop",
+        "href": "https://w3c.github.io/sensors/#dom-sensor-stop",
+        "linkingText": [
+          "stop()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Sensor"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-sensor-interface",
+          "href": "https://w3c.github.io/sensors/#the-sensor-interface",
+          "title": "The Sensor Interface",
+          "number": "7.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-sensor-onreading",
+        "href": "https://w3c.github.io/sensors/#dom-sensor-onreading",
+        "linkingText": [
+          "onreading"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Sensor"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-sensor-interface",
+          "href": "https://w3c.github.io/sensors/#the-sensor-interface",
+          "title": "The Sensor Interface",
+          "number": "7.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-sensor-onactivate",
+        "href": "https://w3c.github.io/sensors/#dom-sensor-onactivate",
+        "linkingText": [
+          "onactivate"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Sensor"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-sensor-interface",
+          "href": "https://w3c.github.io/sensors/#the-sensor-interface",
+          "title": "The Sensor Interface",
+          "number": "7.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-sensor-onerror",
+        "href": "https://w3c.github.io/sensors/#dom-sensor-onerror",
+        "linkingText": [
+          "onerror"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Sensor"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-sensor-interface",
+          "href": "https://w3c.github.io/sensors/#the-sensor-interface",
+          "title": "The Sensor Interface",
+          "number": "7.1"
+        },
+        "definedIn": "pre"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "eventtarget",
+        "href": "https://dom.spec.whatwg.org/#eventtarget",
+        "linkingText": [
+          "EventTarget"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventtarget-eventtarget",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-eventtarget",
+        "linkingText": [
+          "EventTarget()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-addeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-addeventlistener",
+        "linkingText": [
+          "addEventListener(type, callback, options)",
+          "addEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-removeeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-removeeventlistener",
+        "linkingText": [
+          "removeEventListener(type, callback, options)",
+          "removeEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-dispatchevent",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-dispatchevent",
+        "linkingText": [
+          "dispatchEvent(event)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "name": "XRPermissionDescriptor",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "WebXR Device API",
+      "url": "https://www.w3.org/TR/webxr/"
+    },
+    "fragment": "dictionary XRPermissionDescriptor: PermissionDescriptor {\n  XRSessionMode mode;\n  sequence<any> requiredFeatures;\n  sequence<any> optionalFeatures;\n};",
+    "href": "https://immersive-web.github.io/webxr/#dictdef-xrpermissiondescriptor"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "PermissionDescriptor",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "Permissions",
+        "url": "https://www.w3.org/TR/permissions/"
+      },
+      "fragment": "dictionary PermissionDescriptor {\n  required PermissionName name;\n};",
+      "href": "https://w3c.github.io/permissions/#dom-permissiondescriptor"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webxr/": [
+      {
+        "id": "dictdef-xrpermissiondescriptor",
+        "href": "https://immersive-web.github.io/webxr/#dictdef-xrpermissiondescriptor",
+        "linkingText": [
+          "XRPermissionDescriptor"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "permissions",
+          "href": "https://immersive-web.github.io/webxr/#permissions",
+          "title": "Permissions API Integration",
+          "number": "14.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-xrpermissiondescriptor-mode",
+        "href": "https://immersive-web.github.io/webxr/#dom-xrpermissiondescriptor-mode",
+        "linkingText": [
+          "mode"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "XRPermissionDescriptor"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "permissions",
+          "href": "https://immersive-web.github.io/webxr/#permissions",
+          "title": "Permissions API Integration",
+          "number": "14.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-xrpermissiondescriptor-requiredfeatures",
+        "href": "https://immersive-web.github.io/webxr/#dom-xrpermissiondescriptor-requiredfeatures",
+        "linkingText": [
+          "requiredFeatures"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "XRPermissionDescriptor"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "permissions",
+          "href": "https://immersive-web.github.io/webxr/#permissions",
+          "title": "Permissions API Integration",
+          "number": "14.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-xrpermissiondescriptor-optionalfeatures",
+        "href": "https://immersive-web.github.io/webxr/#dom-xrpermissiondescriptor-optionalfeatures",
+        "linkingText": [
+          "optionalFeatures"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "XRPermissionDescriptor"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "permissions",
+          "href": "https://immersive-web.github.io/webxr/#permissions",
+          "title": "Permissions API Integration",
+          "number": "14.2"
+        },
+        "definedIn": "pre"
+      }
+    ],
+    "https://www.w3.org/TR/permissions/": [
+      {
+        "id": "dom-permissiondescriptor",
+        "href": "https://w3c.github.io/permissions/#dom-permissiondescriptor",
+        "linkingText": [
+          "PermissionDescriptor"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "permissions-interface-0",
+          "href": "https://w3c.github.io/permissions/#permissions-interface-0",
+          "title": "Permissions interface",
+          "number": "4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-permissiondescriptor-name",
+        "href": "https://w3c.github.io/permissions/#dom-permissiondescriptor-name",
+        "linkingText": [
+          "name"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "PermissionDescriptor"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "permissions-interface-0",
+          "href": "https://w3c.github.io/permissions/#permissions-interface-0",
+          "title": "Permissions interface",
+          "number": "4"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

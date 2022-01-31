@@ -1,0 +1,252 @@
+{
+  "name": "WebTransport",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebTransport",
+      "url": "https://www.w3.org/TR/webtransport/"
+    },
+    "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface WebTransport {\n  constructor(USVString url, optional WebTransportOptions options = {});\n\n  Promise<WebTransportStats> getStats();\n  readonly attribute Promise<undefined> ready;\n  readonly attribute Promise<WebTransportCloseInfo> closed;\n  undefined close(optional WebTransportCloseInfo closeInfo = {});\n\n  readonly attribute WebTransportDatagramDuplexStream datagrams;\n\n  Promise<WebTransportBidirectionalStream> createBidirectionalStream();\n  /* a ReadableStream of WebTransportBidirectionalStream objects */\n  readonly attribute ReadableStream incomingBidirectionalStreams;\n\n  Promise<WritableStream> createUnidirectionalStream();\n  /* a ReadableStream of ReceiveStreams */\n  readonly attribute ReadableStream incomingUnidirectionalStreams;\n};",
+    "href": "https://w3c.github.io/webtransport/#webtransport"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webtransport/": [
+      {
+        "id": "webtransport",
+        "href": "https://w3c.github.io/webtransport/#webtransport",
+        "linkingText": [
+          "WebTransport"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "web-transport",
+          "href": "https://w3c.github.io/webtransport/#web-transport",
+          "title": "WebTransport Interface",
+          "number": "6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-webtransport-webtransport",
+        "href": "https://w3c.github.io/webtransport/#dom-webtransport-webtransport",
+        "linkingText": [
+          "WebTransport(url, options)",
+          "constructor(url, options)",
+          "WebTransport(url)",
+          "constructor(url)"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "WebTransport"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "web-transport",
+          "href": "https://w3c.github.io/webtransport/#web-transport",
+          "title": "WebTransport Interface",
+          "number": "6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-webtransport-getstats",
+        "href": "https://w3c.github.io/webtransport/#dom-webtransport-getstats",
+        "linkingText": [
+          "getStats()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "WebTransport"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "webtransport-methods",
+          "href": "https://w3c.github.io/webtransport/#webtransport-methods",
+          "title": "Methods",
+          "number": "6.4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-webtransport-ready",
+        "href": "https://w3c.github.io/webtransport/#dom-webtransport-ready",
+        "linkingText": [
+          "ready"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "WebTransport"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "webtransport-attributes",
+          "href": "https://w3c.github.io/webtransport/#webtransport-attributes",
+          "title": "Attributes",
+          "number": "6.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-webtransport-closed",
+        "href": "https://w3c.github.io/webtransport/#dom-webtransport-closed",
+        "linkingText": [
+          "closed"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "WebTransport"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "webtransport-attributes",
+          "href": "https://w3c.github.io/webtransport/#webtransport-attributes",
+          "title": "Attributes",
+          "number": "6.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-webtransport-close",
+        "href": "https://w3c.github.io/webtransport/#dom-webtransport-close",
+        "linkingText": [
+          "close(closeInfo)",
+          "close()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "WebTransport"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "webtransport-methods",
+          "href": "https://w3c.github.io/webtransport/#webtransport-methods",
+          "title": "Methods",
+          "number": "6.4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-webtransport-datagrams",
+        "href": "https://w3c.github.io/webtransport/#dom-webtransport-datagrams",
+        "linkingText": [
+          "datagrams"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "WebTransport"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "webtransport-attributes",
+          "href": "https://w3c.github.io/webtransport/#webtransport-attributes",
+          "title": "Attributes",
+          "number": "6.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-webtransport-createbidirectionalstream",
+        "href": "https://w3c.github.io/webtransport/#dom-webtransport-createbidirectionalstream",
+        "linkingText": [
+          "createBidirectionalStream()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "WebTransport"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "webtransport-methods",
+          "href": "https://w3c.github.io/webtransport/#webtransport-methods",
+          "title": "Methods",
+          "number": "6.4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-webtransport-incomingbidirectionalstreams",
+        "href": "https://w3c.github.io/webtransport/#dom-webtransport-incomingbidirectionalstreams",
+        "linkingText": [
+          "incomingBidirectionalStreams"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "WebTransport"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "webtransport-attributes",
+          "href": "https://w3c.github.io/webtransport/#webtransport-attributes",
+          "title": "Attributes",
+          "number": "6.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-webtransport-createunidirectionalstream",
+        "href": "https://w3c.github.io/webtransport/#dom-webtransport-createunidirectionalstream",
+        "linkingText": [
+          "createUnidirectionalStream()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "WebTransport"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "webtransport-methods",
+          "href": "https://w3c.github.io/webtransport/#webtransport-methods",
+          "title": "Methods",
+          "number": "6.4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-webtransport-incomingunidirectionalstreams",
+        "href": "https://w3c.github.io/webtransport/#dom-webtransport-incomingunidirectionalstreams",
+        "linkingText": [
+          "incomingUnidirectionalStreams"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "WebTransport"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "webtransport-attributes",
+          "href": "https://w3c.github.io/webtransport/#webtransport-attributes",
+          "title": "Attributes",
+          "number": "6.3"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

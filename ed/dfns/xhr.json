@@ -1,0 +1,2685 @@
+{
+  "spec": {
+    "title": "XMLHttpRequest Standard",
+    "url": "https://xhr.spec.whatwg.org/"
+  },
+  "dfns": [
+    {
+      "id": "xmlhttprequesteventtarget",
+      "href": "https://xhr.spec.whatwg.org/#xmlhttprequesteventtarget",
+      "linkingText": [
+        "XMLHttpRequestEventTarget"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-xmlhttprequest",
+        "href": "https://xhr.spec.whatwg.org/#interface-xmlhttprequest",
+        "title": "Interface XMLHttpRequest",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "xmlhttprequestupload",
+      "href": "https://xhr.spec.whatwg.org/#xmlhttprequestupload",
+      "linkingText": [
+        "XMLHttpRequestUpload"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-xmlhttprequest",
+        "href": "https://xhr.spec.whatwg.org/#interface-xmlhttprequest",
+        "title": "Interface XMLHttpRequest",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "xmlhttprequestresponsetype",
+      "href": "https://xhr.spec.whatwg.org/#xmlhttprequestresponsetype",
+      "linkingText": [
+        "XMLHttpRequestResponseType"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-xmlhttprequest",
+        "href": "https://xhr.spec.whatwg.org/#interface-xmlhttprequest",
+        "title": "Interface XMLHttpRequest",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xmlhttprequestresponsetype",
+      "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequestresponsetype",
+      "linkingText": [
+        "\"\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "XMLHttpRequestResponseType"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-xmlhttprequest",
+        "href": "https://xhr.spec.whatwg.org/#interface-xmlhttprequest",
+        "title": "Interface XMLHttpRequest",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xmlhttprequestresponsetype-arraybuffer",
+      "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequestresponsetype-arraybuffer",
+      "linkingText": [
+        "\"arraybuffer\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "XMLHttpRequestResponseType"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-xmlhttprequest",
+        "href": "https://xhr.spec.whatwg.org/#interface-xmlhttprequest",
+        "title": "Interface XMLHttpRequest",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xmlhttprequestresponsetype-blob",
+      "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequestresponsetype-blob",
+      "linkingText": [
+        "\"blob\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "XMLHttpRequestResponseType"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-xmlhttprequest",
+        "href": "https://xhr.spec.whatwg.org/#interface-xmlhttprequest",
+        "title": "Interface XMLHttpRequest",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xmlhttprequestresponsetype-document",
+      "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequestresponsetype-document",
+      "linkingText": [
+        "\"document\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "XMLHttpRequestResponseType"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-xmlhttprequest",
+        "href": "https://xhr.spec.whatwg.org/#interface-xmlhttprequest",
+        "title": "Interface XMLHttpRequest",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xmlhttprequestresponsetype-json",
+      "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequestresponsetype-json",
+      "linkingText": [
+        "\"json\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "XMLHttpRequestResponseType"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-xmlhttprequest",
+        "href": "https://xhr.spec.whatwg.org/#interface-xmlhttprequest",
+        "title": "Interface XMLHttpRequest",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xmlhttprequestresponsetype-text",
+      "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequestresponsetype-text",
+      "linkingText": [
+        "\"text\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "XMLHttpRequestResponseType"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-xmlhttprequest",
+        "href": "https://xhr.spec.whatwg.org/#interface-xmlhttprequest",
+        "title": "Interface XMLHttpRequest",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "xmlhttprequest",
+      "href": "https://xhr.spec.whatwg.org/#xmlhttprequest",
+      "linkingText": [
+        "XMLHttpRequest"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-xmlhttprequest",
+        "href": "https://xhr.spec.whatwg.org/#interface-xmlhttprequest",
+        "title": "Interface XMLHttpRequest",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xmlhttprequest-open-method-url-method",
+      "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequest-open-method-url-method",
+      "linkingText": [
+        "method"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "XMLHttpRequest/open(method, url)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-xmlhttprequest",
+        "href": "https://xhr.spec.whatwg.org/#interface-xmlhttprequest",
+        "title": "Interface XMLHttpRequest",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xmlhttprequest-open-method-url-url",
+      "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequest-open-method-url-url",
+      "linkingText": [
+        "url"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "XMLHttpRequest/open(method, url)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-xmlhttprequest",
+        "href": "https://xhr.spec.whatwg.org/#interface-xmlhttprequest",
+        "title": "Interface XMLHttpRequest",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xmlhttprequest-open-method-url-async-username-password-method",
+      "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequest-open-method-url-async-username-password-method",
+      "linkingText": [
+        "method"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "XMLHttpRequest/open(method, url, async, username, password)",
+        "XMLHttpRequest/open(method, url, async, username)",
+        "XMLHttpRequest/open(method, url, async)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-xmlhttprequest",
+        "href": "https://xhr.spec.whatwg.org/#interface-xmlhttprequest",
+        "title": "Interface XMLHttpRequest",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xmlhttprequest-open-method-url-async-username-password-url",
+      "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequest-open-method-url-async-username-password-url",
+      "linkingText": [
+        "url"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "XMLHttpRequest/open(method, url, async, username, password)",
+        "XMLHttpRequest/open(method, url, async, username)",
+        "XMLHttpRequest/open(method, url, async)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-xmlhttprequest",
+        "href": "https://xhr.spec.whatwg.org/#interface-xmlhttprequest",
+        "title": "Interface XMLHttpRequest",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xmlhttprequest-open-method-url-async-username-password-async",
+      "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequest-open-method-url-async-username-password-async",
+      "linkingText": [
+        "async"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "XMLHttpRequest/open(method, url, async, username, password)",
+        "XMLHttpRequest/open(method, url, async, username)",
+        "XMLHttpRequest/open(method, url, async)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-xmlhttprequest",
+        "href": "https://xhr.spec.whatwg.org/#interface-xmlhttprequest",
+        "title": "Interface XMLHttpRequest",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xmlhttprequest-open-method-url-async-username-password-username",
+      "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequest-open-method-url-async-username-password-username",
+      "linkingText": [
+        "username"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "XMLHttpRequest/open(method, url, async, username, password)",
+        "XMLHttpRequest/open(method, url, async, username)",
+        "XMLHttpRequest/open(method, url, async)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-xmlhttprequest",
+        "href": "https://xhr.spec.whatwg.org/#interface-xmlhttprequest",
+        "title": "Interface XMLHttpRequest",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xmlhttprequest-open-method-url-async-username-password-password",
+      "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequest-open-method-url-async-username-password-password",
+      "linkingText": [
+        "password"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "XMLHttpRequest/open(method, url, async, username, password)",
+        "XMLHttpRequest/open(method, url, async, username)",
+        "XMLHttpRequest/open(method, url, async)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-xmlhttprequest",
+        "href": "https://xhr.spec.whatwg.org/#interface-xmlhttprequest",
+        "title": "Interface XMLHttpRequest",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xmlhttprequest-setrequestheader-name-value-name",
+      "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequest-setrequestheader-name-value-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "XMLHttpRequest/setRequestHeader(name, value)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-xmlhttprequest",
+        "href": "https://xhr.spec.whatwg.org/#interface-xmlhttprequest",
+        "title": "Interface XMLHttpRequest",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xmlhttprequest-setrequestheader-name-value-value",
+      "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequest-setrequestheader-name-value-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "XMLHttpRequest/setRequestHeader(name, value)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-xmlhttprequest",
+        "href": "https://xhr.spec.whatwg.org/#interface-xmlhttprequest",
+        "title": "Interface XMLHttpRequest",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xmlhttprequest-send-body-body",
+      "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequest-send-body-body",
+      "linkingText": [
+        "body"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "XMLHttpRequest/send(body)",
+        "XMLHttpRequest/send()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-xmlhttprequest",
+        "href": "https://xhr.spec.whatwg.org/#interface-xmlhttprequest",
+        "title": "Interface XMLHttpRequest",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xmlhttprequest-getresponseheader-name-name",
+      "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequest-getresponseheader-name-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "XMLHttpRequest/getResponseHeader(name)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-xmlhttprequest",
+        "href": "https://xhr.spec.whatwg.org/#interface-xmlhttprequest",
+        "title": "Interface XMLHttpRequest",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xmlhttprequest-overridemimetype-mime-mime",
+      "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequest-overridemimetype-mime-mime",
+      "linkingText": [
+        "mime"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "XMLHttpRequest/overrideMimeType(mime)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-xmlhttprequest",
+        "href": "https://xhr.spec.whatwg.org/#interface-xmlhttprequest",
+        "title": "Interface XMLHttpRequest",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "upload-object",
+      "href": "https://xhr.spec.whatwg.org/#upload-object",
+      "linkingText": [
+        "upload object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "interface-xmlhttprequest",
+        "href": "https://xhr.spec.whatwg.org/#interface-xmlhttprequest",
+        "title": "Interface XMLHttpRequest",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "concept-xmlhttprequest-state",
+      "href": "https://xhr.spec.whatwg.org/#concept-xmlhttprequest-state",
+      "linkingText": [
+        "state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "interface-xmlhttprequest",
+        "href": "https://xhr.spec.whatwg.org/#interface-xmlhttprequest",
+        "title": "Interface XMLHttpRequest",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "send-flag",
+      "href": "https://xhr.spec.whatwg.org/#send-flag",
+      "linkingText": [
+        "send() flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "interface-xmlhttprequest",
+        "href": "https://xhr.spec.whatwg.org/#interface-xmlhttprequest",
+        "title": "Interface XMLHttpRequest",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "timeout",
+      "href": "https://xhr.spec.whatwg.org/#timeout",
+      "linkingText": [
+        "timeout"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "interface-xmlhttprequest",
+        "href": "https://xhr.spec.whatwg.org/#interface-xmlhttprequest",
+        "title": "Interface XMLHttpRequest",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "cross-origin-credentials",
+      "href": "https://xhr.spec.whatwg.org/#cross-origin-credentials",
+      "linkingText": [
+        "cross-origin credentials"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "interface-xmlhttprequest",
+        "href": "https://xhr.spec.whatwg.org/#interface-xmlhttprequest",
+        "title": "Interface XMLHttpRequest",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "request-method",
+      "href": "https://xhr.spec.whatwg.org/#request-method",
+      "linkingText": [
+        "request method"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "interface-xmlhttprequest",
+        "href": "https://xhr.spec.whatwg.org/#interface-xmlhttprequest",
+        "title": "Interface XMLHttpRequest",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "request-url",
+      "href": "https://xhr.spec.whatwg.org/#request-url",
+      "linkingText": [
+        "request URL"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "interface-xmlhttprequest",
+        "href": "https://xhr.spec.whatwg.org/#interface-xmlhttprequest",
+        "title": "Interface XMLHttpRequest",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "author-request-headers",
+      "href": "https://xhr.spec.whatwg.org/#author-request-headers",
+      "linkingText": [
+        "author request headers"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "interface-xmlhttprequest",
+        "href": "https://xhr.spec.whatwg.org/#interface-xmlhttprequest",
+        "title": "Interface XMLHttpRequest",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "request-body",
+      "href": "https://xhr.spec.whatwg.org/#request-body",
+      "linkingText": [
+        "request body"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "interface-xmlhttprequest",
+        "href": "https://xhr.spec.whatwg.org/#interface-xmlhttprequest",
+        "title": "Interface XMLHttpRequest",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "synchronous-flag",
+      "href": "https://xhr.spec.whatwg.org/#synchronous-flag",
+      "linkingText": [
+        "synchronous flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "interface-xmlhttprequest",
+        "href": "https://xhr.spec.whatwg.org/#interface-xmlhttprequest",
+        "title": "Interface XMLHttpRequest",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "upload-complete-flag",
+      "href": "https://xhr.spec.whatwg.org/#upload-complete-flag",
+      "linkingText": [
+        "upload complete flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "interface-xmlhttprequest",
+        "href": "https://xhr.spec.whatwg.org/#interface-xmlhttprequest",
+        "title": "Interface XMLHttpRequest",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "upload-listener-flag",
+      "href": "https://xhr.spec.whatwg.org/#upload-listener-flag",
+      "linkingText": [
+        "upload listener flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "interface-xmlhttprequest",
+        "href": "https://xhr.spec.whatwg.org/#interface-xmlhttprequest",
+        "title": "Interface XMLHttpRequest",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "timed-out-flag",
+      "href": "https://xhr.spec.whatwg.org/#timed-out-flag",
+      "linkingText": [
+        "timed out flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "interface-xmlhttprequest",
+        "href": "https://xhr.spec.whatwg.org/#interface-xmlhttprequest",
+        "title": "Interface XMLHttpRequest",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "response",
+      "href": "https://xhr.spec.whatwg.org/#response",
+      "linkingText": [
+        "response"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "XMLHttpRequest"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "interface-xmlhttprequest",
+        "href": "https://xhr.spec.whatwg.org/#interface-xmlhttprequest",
+        "title": "Interface XMLHttpRequest",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "received-bytes",
+      "href": "https://xhr.spec.whatwg.org/#received-bytes",
+      "linkingText": [
+        "received bytes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "interface-xmlhttprequest",
+        "href": "https://xhr.spec.whatwg.org/#interface-xmlhttprequest",
+        "title": "Interface XMLHttpRequest",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "response-type",
+      "href": "https://xhr.spec.whatwg.org/#response-type",
+      "linkingText": [
+        "response type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "interface-xmlhttprequest",
+        "href": "https://xhr.spec.whatwg.org/#interface-xmlhttprequest",
+        "title": "Interface XMLHttpRequest",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "response-object",
+      "href": "https://xhr.spec.whatwg.org/#response-object",
+      "linkingText": [
+        "response object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "interface-xmlhttprequest",
+        "href": "https://xhr.spec.whatwg.org/#interface-xmlhttprequest",
+        "title": "Interface XMLHttpRequest",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "override-mime-type",
+      "href": "https://xhr.spec.whatwg.org/#override-mime-type",
+      "linkingText": [
+        "override MIME type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "interface-xmlhttprequest",
+        "href": "https://xhr.spec.whatwg.org/#interface-xmlhttprequest",
+        "title": "Interface XMLHttpRequest",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-xmlhttprequest",
+      "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequest",
+      "linkingText": [
+        "XMLHttpRequest()",
+        "constructor()"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "XMLHttpRequest"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "constructors",
+        "href": "https://xhr.spec.whatwg.org/#constructors",
+        "title": "Constructors",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "handler-xhr-onloadstart",
+      "href": "https://xhr.spec.whatwg.org/#handler-xhr-onloadstart",
+      "linkingText": [
+        "onloadstart"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XMLHttpRequestEventTarget"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "event-handlers",
+        "href": "https://xhr.spec.whatwg.org/#event-handlers",
+        "title": "Event handlers",
+        "number": "3.3"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "handler-xhr-onprogress",
+      "href": "https://xhr.spec.whatwg.org/#handler-xhr-onprogress",
+      "linkingText": [
+        "onprogress"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XMLHttpRequestEventTarget"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "event-handlers",
+        "href": "https://xhr.spec.whatwg.org/#event-handlers",
+        "title": "Event handlers",
+        "number": "3.3"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "handler-xhr-onabort",
+      "href": "https://xhr.spec.whatwg.org/#handler-xhr-onabort",
+      "linkingText": [
+        "onabort"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XMLHttpRequestEventTarget"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "event-handlers",
+        "href": "https://xhr.spec.whatwg.org/#event-handlers",
+        "title": "Event handlers",
+        "number": "3.3"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "handler-xhr-onerror",
+      "href": "https://xhr.spec.whatwg.org/#handler-xhr-onerror",
+      "linkingText": [
+        "onerror"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XMLHttpRequestEventTarget"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "event-handlers",
+        "href": "https://xhr.spec.whatwg.org/#event-handlers",
+        "title": "Event handlers",
+        "number": "3.3"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "handler-xhr-onload",
+      "href": "https://xhr.spec.whatwg.org/#handler-xhr-onload",
+      "linkingText": [
+        "onload"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XMLHttpRequestEventTarget"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "event-handlers",
+        "href": "https://xhr.spec.whatwg.org/#event-handlers",
+        "title": "Event handlers",
+        "number": "3.3"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "handler-xhr-ontimeout",
+      "href": "https://xhr.spec.whatwg.org/#handler-xhr-ontimeout",
+      "linkingText": [
+        "ontimeout"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XMLHttpRequestEventTarget"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "event-handlers",
+        "href": "https://xhr.spec.whatwg.org/#event-handlers",
+        "title": "Event handlers",
+        "number": "3.3"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "handler-xhr-onloadend",
+      "href": "https://xhr.spec.whatwg.org/#handler-xhr-onloadend",
+      "linkingText": [
+        "onloadend"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XMLHttpRequestEventTarget"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "event-handlers",
+        "href": "https://xhr.spec.whatwg.org/#event-handlers",
+        "title": "Event handlers",
+        "number": "3.3"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "handler-xhr-onreadystatechange",
+      "href": "https://xhr.spec.whatwg.org/#handler-xhr-onreadystatechange",
+      "linkingText": [
+        "onreadystatechange"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XMLHttpRequest"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "event-handlers",
+        "href": "https://xhr.spec.whatwg.org/#event-handlers",
+        "title": "Event handlers",
+        "number": "3.3"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dom-xmlhttprequest-readystate",
+      "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequest-readystate",
+      "linkingText": [
+        "readyState"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XMLHttpRequest"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "states",
+        "href": "https://xhr.spec.whatwg.org/#states",
+        "title": "States",
+        "number": "3.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xmlhttprequest-unsent",
+      "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequest-unsent",
+      "linkingText": [
+        "UNSENT"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "XMLHttpRequest"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "states",
+        "href": "https://xhr.spec.whatwg.org/#states",
+        "title": "States",
+        "number": "3.4"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dom-xmlhttprequest-opened",
+      "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequest-opened",
+      "linkingText": [
+        "OPENED"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "XMLHttpRequest"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "states",
+        "href": "https://xhr.spec.whatwg.org/#states",
+        "title": "States",
+        "number": "3.4"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dom-xmlhttprequest-headers_received",
+      "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequest-headers_received",
+      "linkingText": [
+        "HEADERS_RECEIVED"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "XMLHttpRequest"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "states",
+        "href": "https://xhr.spec.whatwg.org/#states",
+        "title": "States",
+        "number": "3.4"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dom-xmlhttprequest-loading",
+      "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequest-loading",
+      "linkingText": [
+        "LOADING"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "XMLHttpRequest"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "states",
+        "href": "https://xhr.spec.whatwg.org/#states",
+        "title": "States",
+        "number": "3.4"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dom-xmlhttprequest-done",
+      "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequest-done",
+      "linkingText": [
+        "DONE"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "XMLHttpRequest"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "states",
+        "href": "https://xhr.spec.whatwg.org/#states",
+        "title": "States",
+        "number": "3.4"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dom-xmlhttprequest-open",
+      "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequest-open",
+      "linkingText": [
+        "open(method, url)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "XMLHttpRequest"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-open()-method",
+        "href": "https://xhr.spec.whatwg.org/#the-open()-method",
+        "title": "The open() method",
+        "number": "3.5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xmlhttprequest-open-method-url-async-username-password",
+      "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequest-open-method-url-async-username-password",
+      "linkingText": [
+        "open(method, url, async, username, password)",
+        "open(method, url, async, username)",
+        "open(method, url, async)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "XMLHttpRequest"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-open()-method",
+        "href": "https://xhr.spec.whatwg.org/#the-open()-method",
+        "title": "The open() method",
+        "number": "3.5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xmlhttprequest-setrequestheader",
+      "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequest-setrequestheader",
+      "linkingText": [
+        "setRequestHeader(name, value)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "XMLHttpRequest"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-setrequestheader()-method",
+        "href": "https://xhr.spec.whatwg.org/#the-setrequestheader()-method",
+        "title": "The setRequestHeader() method",
+        "number": "3.5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xmlhttprequest-timeout",
+      "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequest-timeout",
+      "linkingText": [
+        "timeout"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XMLHttpRequest"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-timeout-attribute",
+        "href": "https://xhr.spec.whatwg.org/#the-timeout-attribute",
+        "title": "The timeout getter and setter",
+        "number": "3.5.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xmlhttprequest-withcredentials",
+      "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequest-withcredentials",
+      "linkingText": [
+        "withCredentials"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XMLHttpRequest"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-withcredentials-attribute",
+        "href": "https://xhr.spec.whatwg.org/#the-withcredentials-attribute",
+        "title": "The withCredentials getter and setter",
+        "number": "3.5.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xmlhttprequest-upload",
+      "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequest-upload",
+      "linkingText": [
+        "upload"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XMLHttpRequest"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-upload-attribute",
+        "href": "https://xhr.spec.whatwg.org/#the-upload-attribute",
+        "title": "The upload getter",
+        "number": "3.5.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xmlhttprequest-send",
+      "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequest-send",
+      "linkingText": [
+        "send(body)",
+        "send()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "XMLHttpRequest"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-send()-method",
+        "href": "https://xhr.spec.whatwg.org/#the-send()-method",
+        "title": "The send() method",
+        "number": "3.5.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "handle-response-end-of-body",
+      "href": "https://xhr.spec.whatwg.org/#handle-response-end-of-body",
+      "linkingText": [
+        "handle response end-of-body"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-send()-method",
+        "href": "https://xhr.spec.whatwg.org/#the-send()-method",
+        "title": "The send() method",
+        "number": "3.5.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "handle-errors",
+      "href": "https://xhr.spec.whatwg.org/#handle-errors",
+      "linkingText": [
+        "handle errors"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-send()-method",
+        "href": "https://xhr.spec.whatwg.org/#the-send()-method",
+        "title": "The send() method",
+        "number": "3.5.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "request-error-steps",
+      "href": "https://xhr.spec.whatwg.org/#request-error-steps",
+      "linkingText": [
+        "request error steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-send()-method",
+        "href": "https://xhr.spec.whatwg.org/#the-send()-method",
+        "title": "The send() method",
+        "number": "3.5.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xmlhttprequest-abort",
+      "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequest-abort",
+      "linkingText": [
+        "abort()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "XMLHttpRequest"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-abort()-method",
+        "href": "https://xhr.spec.whatwg.org/#the-abort()-method",
+        "title": "The abort() method",
+        "number": "3.5.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xmlhttprequest-responseurl",
+      "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequest-responseurl",
+      "linkingText": [
+        "responseURL"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XMLHttpRequest"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-responseurl-attribute",
+        "href": "https://xhr.spec.whatwg.org/#the-responseurl-attribute",
+        "title": "The responseURL getter",
+        "number": "3.6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xmlhttprequest-status",
+      "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequest-status",
+      "linkingText": [
+        "status"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XMLHttpRequest"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-status-attribute",
+        "href": "https://xhr.spec.whatwg.org/#the-status-attribute",
+        "title": "The status getter",
+        "number": "3.6.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xmlhttprequest-statustext",
+      "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequest-statustext",
+      "linkingText": [
+        "statusText"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XMLHttpRequest"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-statustext-attribute",
+        "href": "https://xhr.spec.whatwg.org/#the-statustext-attribute",
+        "title": "The statusText getter",
+        "number": "3.6.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xmlhttprequest-getresponseheader",
+      "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequest-getresponseheader",
+      "linkingText": [
+        "getResponseHeader(name)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "XMLHttpRequest"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-getresponseheader()-method",
+        "href": "https://xhr.spec.whatwg.org/#the-getresponseheader()-method",
+        "title": "The getResponseHeader() method",
+        "number": "3.6.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "legacy-uppercased-byte-less-than",
+      "href": "https://xhr.spec.whatwg.org/#legacy-uppercased-byte-less-than",
+      "linkingText": [
+        "legacy-uppercased-byte less than"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-getallresponseheaders()-method",
+        "href": "https://xhr.spec.whatwg.org/#the-getallresponseheaders()-method",
+        "title": "The getAllResponseHeaders() method",
+        "number": "3.6.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xmlhttprequest-getallresponseheaders",
+      "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequest-getallresponseheaders",
+      "linkingText": [
+        "getAllResponseHeaders()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "XMLHttpRequest"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-getallresponseheaders()-method",
+        "href": "https://xhr.spec.whatwg.org/#the-getallresponseheaders()-method",
+        "title": "The getAllResponseHeaders() method",
+        "number": "3.6.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "response-mime-type",
+      "href": "https://xhr.spec.whatwg.org/#response-mime-type",
+      "linkingText": [
+        "get a response MIME type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "response-body",
+        "href": "https://xhr.spec.whatwg.org/#response-body",
+        "title": "Response body",
+        "number": "3.6.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "final-mime-type",
+      "href": "https://xhr.spec.whatwg.org/#final-mime-type",
+      "linkingText": [
+        "get a final MIME type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "response-body",
+        "href": "https://xhr.spec.whatwg.org/#response-body",
+        "title": "Response body",
+        "number": "3.6.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "final-charset",
+      "href": "https://xhr.spec.whatwg.org/#final-charset",
+      "linkingText": [
+        "get a final encoding"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "response-body",
+        "href": "https://xhr.spec.whatwg.org/#response-body",
+        "title": "Response body",
+        "number": "3.6.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "document-response",
+      "href": "https://xhr.spec.whatwg.org/#document-response",
+      "linkingText": [
+        "set a document response"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "response-body",
+        "href": "https://xhr.spec.whatwg.org/#response-body",
+        "title": "Response body",
+        "number": "3.6.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "text-response",
+      "href": "https://xhr.spec.whatwg.org/#text-response",
+      "linkingText": [
+        "getting a text response"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "response-body",
+        "href": "https://xhr.spec.whatwg.org/#response-body",
+        "title": "Response body",
+        "number": "3.6.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xmlhttprequest-overridemimetype",
+      "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequest-overridemimetype",
+      "linkingText": [
+        "overrideMimeType(mime)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "XMLHttpRequest"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-overridemimetype()-method",
+        "href": "https://xhr.spec.whatwg.org/#the-overridemimetype()-method",
+        "title": "The overrideMimeType() method",
+        "number": "3.6.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xmlhttprequest-responsetype",
+      "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequest-responsetype",
+      "linkingText": [
+        "responseType"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XMLHttpRequest"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-responsetype-attribute",
+        "href": "https://xhr.spec.whatwg.org/#the-responsetype-attribute",
+        "title": "The responseType getter and setter",
+        "number": "3.6.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xmlhttprequest-response",
+      "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequest-response",
+      "linkingText": [
+        "response"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XMLHttpRequest"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-response-attribute",
+        "href": "https://xhr.spec.whatwg.org/#the-response-attribute",
+        "title": "The response getter",
+        "number": "3.6.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xmlhttprequest-responsetext",
+      "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequest-responsetext",
+      "linkingText": [
+        "responseText"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XMLHttpRequest"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-responsetext-attribute",
+        "href": "https://xhr.spec.whatwg.org/#the-responsetext-attribute",
+        "title": "The responseText getter",
+        "number": "3.6.10"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xmlhttprequest-responsexml",
+      "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequest-responsexml",
+      "linkingText": [
+        "responseXML"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XMLHttpRequest"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-responsexml-attribute",
+        "href": "https://xhr.spec.whatwg.org/#the-responsexml-attribute",
+        "title": "The responseXML getter",
+        "number": "3.6.11"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "event-xhr-readystatechange",
+      "href": "https://xhr.spec.whatwg.org/#event-xhr-readystatechange",
+      "linkingText": [
+        "readystatechange"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "XMLHttpRequest"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "events",
+        "href": "https://xhr.spec.whatwg.org/#events",
+        "title": "Events summary",
+        "number": "3.7"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "event-xhr-loadstart",
+      "href": "https://xhr.spec.whatwg.org/#event-xhr-loadstart",
+      "linkingText": [
+        "loadstart"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "XMLHttpRequest"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "events",
+        "href": "https://xhr.spec.whatwg.org/#events",
+        "title": "Events summary",
+        "number": "3.7"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "event-xhr-progress",
+      "href": "https://xhr.spec.whatwg.org/#event-xhr-progress",
+      "linkingText": [
+        "progress"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "XMLHttpRequest"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "events",
+        "href": "https://xhr.spec.whatwg.org/#events",
+        "title": "Events summary",
+        "number": "3.7"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "event-xhr-abort",
+      "href": "https://xhr.spec.whatwg.org/#event-xhr-abort",
+      "linkingText": [
+        "abort"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "XMLHttpRequest"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "events",
+        "href": "https://xhr.spec.whatwg.org/#events",
+        "title": "Events summary",
+        "number": "3.7"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "event-xhr-error",
+      "href": "https://xhr.spec.whatwg.org/#event-xhr-error",
+      "linkingText": [
+        "error"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "XMLHttpRequest"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "events",
+        "href": "https://xhr.spec.whatwg.org/#events",
+        "title": "Events summary",
+        "number": "3.7"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "event-xhr-load",
+      "href": "https://xhr.spec.whatwg.org/#event-xhr-load",
+      "linkingText": [
+        "load"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "XMLHttpRequest"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "events",
+        "href": "https://xhr.spec.whatwg.org/#events",
+        "title": "Events summary",
+        "number": "3.7"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "event-xhr-timeout",
+      "href": "https://xhr.spec.whatwg.org/#event-xhr-timeout",
+      "linkingText": [
+        "timeout"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "XMLHttpRequest"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "events",
+        "href": "https://xhr.spec.whatwg.org/#events",
+        "title": "Events summary",
+        "number": "3.7"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "event-xhr-loadend",
+      "href": "https://xhr.spec.whatwg.org/#event-xhr-loadend",
+      "linkingText": [
+        "loadend"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "XMLHttpRequest"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "events",
+        "href": "https://xhr.spec.whatwg.org/#events",
+        "title": "Events summary",
+        "number": "3.7"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "formdataentryvalue",
+      "href": "https://xhr.spec.whatwg.org/#formdataentryvalue",
+      "linkingText": [
+        "FormDataEntryValue"
+      ],
+      "localLinkingText": [],
+      "type": "typedef",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-formdata",
+        "href": "https://xhr.spec.whatwg.org/#interface-formdata",
+        "title": "Interface FormData",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "formdata",
+      "href": "https://xhr.spec.whatwg.org/#formdata",
+      "linkingText": [
+        "FormData"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-formdata",
+        "href": "https://xhr.spec.whatwg.org/#interface-formdata",
+        "title": "Interface FormData",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-formdata-formdata-form-form",
+      "href": "https://xhr.spec.whatwg.org/#dom-formdata-formdata-form-form",
+      "linkingText": [
+        "form"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "FormData/FormData(form)",
+        "FormData/constructor(form)",
+        "FormData/FormData()",
+        "FormData/constructor()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-formdata",
+        "href": "https://xhr.spec.whatwg.org/#interface-formdata",
+        "title": "Interface FormData",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-formdata-append-name-value-name",
+      "href": "https://xhr.spec.whatwg.org/#dom-formdata-append-name-value-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "FormData/append(name, value)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-formdata",
+        "href": "https://xhr.spec.whatwg.org/#interface-formdata",
+        "title": "Interface FormData",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-formdata-append-name-value-value",
+      "href": "https://xhr.spec.whatwg.org/#dom-formdata-append-name-value-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "FormData/append(name, value)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-formdata",
+        "href": "https://xhr.spec.whatwg.org/#interface-formdata",
+        "title": "Interface FormData",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-formdata-append-name-blobvalue-filename-name",
+      "href": "https://xhr.spec.whatwg.org/#dom-formdata-append-name-blobvalue-filename-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "FormData/append(name, blobValue, filename)",
+        "FormData/append(name, blobValue)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-formdata",
+        "href": "https://xhr.spec.whatwg.org/#interface-formdata",
+        "title": "Interface FormData",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-formdata-append-name-blobvalue-filename-blobvalue",
+      "href": "https://xhr.spec.whatwg.org/#dom-formdata-append-name-blobvalue-filename-blobvalue",
+      "linkingText": [
+        "blobValue"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "FormData/append(name, blobValue, filename)",
+        "FormData/append(name, blobValue)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-formdata",
+        "href": "https://xhr.spec.whatwg.org/#interface-formdata",
+        "title": "Interface FormData",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-formdata-append-name-blobvalue-filename-filename",
+      "href": "https://xhr.spec.whatwg.org/#dom-formdata-append-name-blobvalue-filename-filename",
+      "linkingText": [
+        "filename"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "FormData/append(name, blobValue, filename)",
+        "FormData/append(name, blobValue)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-formdata",
+        "href": "https://xhr.spec.whatwg.org/#interface-formdata",
+        "title": "Interface FormData",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-formdata-delete-name-name",
+      "href": "https://xhr.spec.whatwg.org/#dom-formdata-delete-name-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "FormData/delete(name)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-formdata",
+        "href": "https://xhr.spec.whatwg.org/#interface-formdata",
+        "title": "Interface FormData",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-formdata-get-name-name",
+      "href": "https://xhr.spec.whatwg.org/#dom-formdata-get-name-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "FormData/get(name)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-formdata",
+        "href": "https://xhr.spec.whatwg.org/#interface-formdata",
+        "title": "Interface FormData",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-formdata-getall-name-name",
+      "href": "https://xhr.spec.whatwg.org/#dom-formdata-getall-name-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "FormData/getAll(name)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-formdata",
+        "href": "https://xhr.spec.whatwg.org/#interface-formdata",
+        "title": "Interface FormData",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-formdata-has-name-name",
+      "href": "https://xhr.spec.whatwg.org/#dom-formdata-has-name-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "FormData/has(name)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-formdata",
+        "href": "https://xhr.spec.whatwg.org/#interface-formdata",
+        "title": "Interface FormData",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-formdata-set-name-value-name",
+      "href": "https://xhr.spec.whatwg.org/#dom-formdata-set-name-value-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "FormData/set(name, value)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-formdata",
+        "href": "https://xhr.spec.whatwg.org/#interface-formdata",
+        "title": "Interface FormData",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-formdata-set-name-value-value",
+      "href": "https://xhr.spec.whatwg.org/#dom-formdata-set-name-value-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "FormData/set(name, value)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-formdata",
+        "href": "https://xhr.spec.whatwg.org/#interface-formdata",
+        "title": "Interface FormData",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-formdata-set-name-blobvalue-filename-name",
+      "href": "https://xhr.spec.whatwg.org/#dom-formdata-set-name-blobvalue-filename-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "FormData/set(name, blobValue, filename)",
+        "FormData/set(name, blobValue)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-formdata",
+        "href": "https://xhr.spec.whatwg.org/#interface-formdata",
+        "title": "Interface FormData",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-formdata-set-name-blobvalue-filename-blobvalue",
+      "href": "https://xhr.spec.whatwg.org/#dom-formdata-set-name-blobvalue-filename-blobvalue",
+      "linkingText": [
+        "blobValue"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "FormData/set(name, blobValue, filename)",
+        "FormData/set(name, blobValue)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-formdata",
+        "href": "https://xhr.spec.whatwg.org/#interface-formdata",
+        "title": "Interface FormData",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-formdata-set-name-blobvalue-filename-filename",
+      "href": "https://xhr.spec.whatwg.org/#dom-formdata-set-name-blobvalue-filename-filename",
+      "linkingText": [
+        "filename"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "FormData/set(name, blobValue, filename)",
+        "FormData/set(name, blobValue)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-formdata",
+        "href": "https://xhr.spec.whatwg.org/#interface-formdata",
+        "title": "Interface FormData",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "concept-formdata-entry-list",
+      "href": "https://xhr.spec.whatwg.org/#concept-formdata-entry-list",
+      "linkingText": [
+        "entry list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "FormData"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-formdata",
+        "href": "https://xhr.spec.whatwg.org/#interface-formdata",
+        "title": "Interface FormData",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-formdata",
+      "href": "https://xhr.spec.whatwg.org/#dom-formdata",
+      "linkingText": [
+        "FormData(form)",
+        "constructor(form)",
+        "FormData()",
+        "constructor()"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "FormData"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-formdata",
+        "href": "https://xhr.spec.whatwg.org/#interface-formdata",
+        "title": "Interface FormData",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-formdata-append",
+      "href": "https://xhr.spec.whatwg.org/#dom-formdata-append",
+      "linkingText": [
+        "append(name, value)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "FormData"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-formdata",
+        "href": "https://xhr.spec.whatwg.org/#interface-formdata",
+        "title": "Interface FormData",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-formdata-append-blob",
+      "href": "https://xhr.spec.whatwg.org/#dom-formdata-append-blob",
+      "linkingText": [
+        "append(name, blobValue, filename)",
+        "append(name, blobValue)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "FormData"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-formdata",
+        "href": "https://xhr.spec.whatwg.org/#interface-formdata",
+        "title": "Interface FormData",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-formdata-delete",
+      "href": "https://xhr.spec.whatwg.org/#dom-formdata-delete",
+      "linkingText": [
+        "delete(name)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "FormData"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-formdata",
+        "href": "https://xhr.spec.whatwg.org/#interface-formdata",
+        "title": "Interface FormData",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-formdata-get",
+      "href": "https://xhr.spec.whatwg.org/#dom-formdata-get",
+      "linkingText": [
+        "get(name)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "FormData"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-formdata",
+        "href": "https://xhr.spec.whatwg.org/#interface-formdata",
+        "title": "Interface FormData",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-formdata-getall",
+      "href": "https://xhr.spec.whatwg.org/#dom-formdata-getall",
+      "linkingText": [
+        "getAll(name)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "FormData"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-formdata",
+        "href": "https://xhr.spec.whatwg.org/#interface-formdata",
+        "title": "Interface FormData",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-formdata-has",
+      "href": "https://xhr.spec.whatwg.org/#dom-formdata-has",
+      "linkingText": [
+        "has(name)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "FormData"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-formdata",
+        "href": "https://xhr.spec.whatwg.org/#interface-formdata",
+        "title": "Interface FormData",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-formdata-set",
+      "href": "https://xhr.spec.whatwg.org/#dom-formdata-set",
+      "linkingText": [
+        "set(name, value)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "FormData"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-formdata",
+        "href": "https://xhr.spec.whatwg.org/#interface-formdata",
+        "title": "Interface FormData",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-formdata-set-blob",
+      "href": "https://xhr.spec.whatwg.org/#dom-formdata-set-blob",
+      "linkingText": [
+        "set(name, blobValue, filename)",
+        "set(name, blobValue)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "FormData"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-formdata",
+        "href": "https://xhr.spec.whatwg.org/#interface-formdata",
+        "title": "Interface FormData",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "progressevent",
+      "href": "https://xhr.spec.whatwg.org/#progressevent",
+      "linkingText": [
+        "ProgressEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-progressevent",
+        "href": "https://xhr.spec.whatwg.org/#interface-progressevent",
+        "title": "Interface ProgressEvent",
+        "number": "5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-progressevent-progressevent",
+      "href": "https://xhr.spec.whatwg.org/#dom-progressevent-progressevent",
+      "linkingText": [
+        "ProgressEvent(type, eventInitDict)",
+        "constructor(type, eventInitDict)",
+        "ProgressEvent(type)",
+        "constructor(type)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "ProgressEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-progressevent",
+        "href": "https://xhr.spec.whatwg.org/#interface-progressevent",
+        "title": "Interface ProgressEvent",
+        "number": "5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-progressevent-progressevent-type-eventinitdict-type",
+      "href": "https://xhr.spec.whatwg.org/#dom-progressevent-progressevent-type-eventinitdict-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "ProgressEvent/ProgressEvent(type, eventInitDict)",
+        "ProgressEvent/constructor(type, eventInitDict)",
+        "ProgressEvent/ProgressEvent(type)",
+        "ProgressEvent/constructor(type)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-progressevent",
+        "href": "https://xhr.spec.whatwg.org/#interface-progressevent",
+        "title": "Interface ProgressEvent",
+        "number": "5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-progressevent-progressevent-type-eventinitdict-eventinitdict",
+      "href": "https://xhr.spec.whatwg.org/#dom-progressevent-progressevent-type-eventinitdict-eventinitdict",
+      "linkingText": [
+        "eventInitDict"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "ProgressEvent/ProgressEvent(type, eventInitDict)",
+        "ProgressEvent/constructor(type, eventInitDict)",
+        "ProgressEvent/ProgressEvent(type)",
+        "ProgressEvent/constructor(type)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-progressevent",
+        "href": "https://xhr.spec.whatwg.org/#interface-progressevent",
+        "title": "Interface ProgressEvent",
+        "number": "5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "progresseventinit",
+      "href": "https://xhr.spec.whatwg.org/#progresseventinit",
+      "linkingText": [
+        "ProgressEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-progressevent",
+        "href": "https://xhr.spec.whatwg.org/#interface-progressevent",
+        "title": "Interface ProgressEvent",
+        "number": "5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-progresseventinit-lengthcomputable",
+      "href": "https://xhr.spec.whatwg.org/#dom-progresseventinit-lengthcomputable",
+      "linkingText": [
+        "lengthComputable"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ProgressEventInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-progressevent",
+        "href": "https://xhr.spec.whatwg.org/#interface-progressevent",
+        "title": "Interface ProgressEvent",
+        "number": "5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-progresseventinit-loaded",
+      "href": "https://xhr.spec.whatwg.org/#dom-progresseventinit-loaded",
+      "linkingText": [
+        "loaded"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ProgressEventInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-progressevent",
+        "href": "https://xhr.spec.whatwg.org/#interface-progressevent",
+        "title": "Interface ProgressEvent",
+        "number": "5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-progresseventinit-total",
+      "href": "https://xhr.spec.whatwg.org/#dom-progresseventinit-total",
+      "linkingText": [
+        "total"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ProgressEventInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-progressevent",
+        "href": "https://xhr.spec.whatwg.org/#interface-progressevent",
+        "title": "Interface ProgressEvent",
+        "number": "5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-progressevent-lengthcomputable",
+      "href": "https://xhr.spec.whatwg.org/#dom-progressevent-lengthcomputable",
+      "linkingText": [
+        "lengthComputable"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ProgressEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-progressevent",
+        "href": "https://xhr.spec.whatwg.org/#interface-progressevent",
+        "title": "Interface ProgressEvent",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-progressevent-loaded",
+      "href": "https://xhr.spec.whatwg.org/#dom-progressevent-loaded",
+      "linkingText": [
+        "loaded"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ProgressEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-progressevent",
+        "href": "https://xhr.spec.whatwg.org/#interface-progressevent",
+        "title": "Interface ProgressEvent",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-progressevent-total",
+      "href": "https://xhr.spec.whatwg.org/#dom-progressevent-total",
+      "linkingText": [
+        "total"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ProgressEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-progressevent",
+        "href": "https://xhr.spec.whatwg.org/#interface-progressevent",
+        "title": "Interface ProgressEvent",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "concept-event-fire-progress",
+      "href": "https://xhr.spec.whatwg.org/#concept-event-fire-progress",
+      "linkingText": [
+        "fire a progress event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "firing-events-using-the-progressevent-interface",
+        "href": "https://xhr.spec.whatwg.org/#firing-events-using-the-progressevent-interface",
+        "title": "Firing events using the ProgressEvent interface",
+        "number": "5.1"
+      },
+      "definedIn": "prose"
+    }
+  ]
+}

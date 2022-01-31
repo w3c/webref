@@ -1,0 +1,3114 @@
+{
+  "spec": {
+    "title": "CSS Layout API Level 1",
+    "url": "https://drafts.css-houdini.org/css-layout-api-1/"
+  },
+  "dfns": [
+    {
+      "id": "valdef-display-layout",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#valdef-display-layout",
+      "linkingText": [
+        "layout()"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "display"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "layout-api-containers",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-api-containers",
+        "title": "Layout API Containers",
+        "number": "2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "layout-api-container",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-api-container",
+      "linkingText": [
+        "layout API container"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "layout-api-containers",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-api-containers",
+        "title": "Layout API Containers",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "layout-api-formatting-context",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-api-formatting-context",
+      "linkingText": [
+        "layout API formatting context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "layout-api-containers",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-api-containers",
+        "title": "Layout API Containers",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-css-layoutworklet",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-css-layoutworklet",
+      "linkingText": [
+        "layoutWorklet"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "layout-worklet",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-worklet",
+        "title": "Layout Worklet",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "layoutworkletglobalscope",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#layoutworkletglobalscope",
+      "linkingText": [
+        "LayoutWorkletGlobalScope"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "layout-worklet",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-worklet",
+        "title": "Layout Worklet",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-layoutworkletglobalscope-registerlayout-name-layoutctor-name",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutworkletglobalscope-registerlayout-name-layoutctor-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "LayoutWorkletGlobalScope/registerLayout(name, layoutCtor)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "layout-worklet",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-worklet",
+        "title": "Layout Worklet",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-layoutworkletglobalscope-registerlayout-name-layoutctor-layoutctor",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutworkletglobalscope-registerlayout-name-layoutctor-layoutctor",
+      "linkingText": [
+        "layoutCtor"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "LayoutWorkletGlobalScope/registerLayout(name, layoutCtor)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "layout-worklet",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-worklet",
+        "title": "Layout Worklet",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "layout-definition",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-definition",
+      "linkingText": [
+        "layout definition"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "concepts",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#concepts",
+        "title": "Concepts",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "layout-definition-class-constructor",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-definition-class-constructor",
+      "linkingText": [
+        "class constructor"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "layout definition"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "concepts",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#concepts",
+        "title": "Concepts",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "layout-definition-layout-function",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-definition-layout-function",
+      "linkingText": [
+        "layout function"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "layout definition"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "concepts",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#concepts",
+        "title": "Concepts",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "layout-definition-intrinsic-sizes-function",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-definition-intrinsic-sizes-function",
+      "linkingText": [
+        "intrinsic sizes function"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "layout definition"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "concepts",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#concepts",
+        "title": "Concepts",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "layout-definition-constructor-valid-flag",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-definition-constructor-valid-flag",
+      "linkingText": [
+        "constructor valid flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "layout definition"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "concepts",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#concepts",
+        "title": "Concepts",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "layout-definition-input-properties",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-definition-input-properties",
+      "linkingText": [
+        "input properties"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "layout definition"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "concepts",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#concepts",
+        "title": "Concepts",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "layout-definition-child-input-properties",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-definition-child-input-properties",
+      "linkingText": [
+        "child input properties"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "layout definition"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "concepts",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#concepts",
+        "title": "Concepts",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "layout-definition-layout-options",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-definition-layout-options",
+      "linkingText": [
+        "layout options"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "layout definition"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "concepts",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#concepts",
+        "title": "Concepts",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "document-layout-definition",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#document-layout-definition",
+      "linkingText": [
+        "document layout definition"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "concepts",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#concepts",
+        "title": "Concepts",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "document-layout-definition-input-properties",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#document-layout-definition-input-properties",
+      "linkingText": [
+        "input properties"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "document layout definition"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "concepts",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#concepts",
+        "title": "Concepts",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "document-layout-definition-child-input-properties",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#document-layout-definition-child-input-properties",
+      "linkingText": [
+        "child input properties"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "document layout definition"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "concepts",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#concepts",
+        "title": "Concepts",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "document-layout-definition-layout-options",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#document-layout-definition-layout-options",
+      "linkingText": [
+        "layout options"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "document layout definition"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "concepts",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#concepts",
+        "title": "Concepts",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dictdef-layoutoptions",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dictdef-layoutoptions",
+      "linkingText": [
+        "LayoutOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "registering-layout",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#registering-layout",
+        "title": "Registering A Layout",
+        "number": "3.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-layoutoptions-childdisplay",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutoptions-childdisplay",
+      "linkingText": [
+        "childDisplay"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "LayoutOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "registering-layout",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#registering-layout",
+        "title": "Registering A Layout",
+        "number": "3.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-layoutoptions-sizing",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutoptions-sizing",
+      "linkingText": [
+        "sizing"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "LayoutOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "registering-layout",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#registering-layout",
+        "title": "Registering A Layout",
+        "number": "3.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "enumdef-childdisplaytype",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#enumdef-childdisplaytype",
+      "linkingText": [
+        "ChildDisplayType"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "registering-layout",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#registering-layout",
+        "title": "Registering A Layout",
+        "number": "3.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-childdisplaytype-block",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-childdisplaytype-block",
+      "linkingText": [
+        "\"block\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ChildDisplayType"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "registering-layout",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#registering-layout",
+        "title": "Registering A Layout",
+        "number": "3.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-childdisplaytype-normal",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-childdisplaytype-normal",
+      "linkingText": [
+        "\"normal\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ChildDisplayType"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "registering-layout",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#registering-layout",
+        "title": "Registering A Layout",
+        "number": "3.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "enumdef-layoutsizingmode",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#enumdef-layoutsizingmode",
+      "linkingText": [
+        "LayoutSizingMode"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "registering-layout",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#registering-layout",
+        "title": "Registering A Layout",
+        "number": "3.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-layoutsizingmode-block-like",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutsizingmode-block-like",
+      "linkingText": [
+        "\"block-like\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "LayoutSizingMode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "registering-layout",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#registering-layout",
+        "title": "Registering A Layout",
+        "number": "3.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-layoutsizingmode-manual",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutsizingmode-manual",
+      "linkingText": [
+        "\"manual\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "LayoutSizingMode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "registering-layout",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#registering-layout",
+        "title": "Registering A Layout",
+        "number": "3.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "document-layout-definitions",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#document-layout-definitions",
+      "linkingText": [
+        "document layout definitions"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "registering-layout",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#registering-layout",
+        "title": "Registering A Layout",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "layout-definitions",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-definitions",
+      "linkingText": [
+        "layout definitions"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "registering-layout",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#registering-layout",
+        "title": "Registering A Layout",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "layout-class-instances",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-class-instances",
+      "linkingText": [
+        "layout class instances"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "registering-layout",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#registering-layout",
+        "title": "Registering A Layout",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "stylemap",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#stylemap",
+      "linkingText": [
+        "styleMap"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "registering-layout",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#registering-layout",
+        "title": "Registering A Layout",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-layoutworkletglobalscope-registerlayout",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutworkletglobalscope-registerlayout",
+      "linkingText": [
+        "registerLayout(name, layoutCtor)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "LayoutWorkletGlobalScope"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "registering-layout",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#registering-layout",
+        "title": "Registering A Layout",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "current-layout",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#current-layout",
+      "linkingText": [
+        "current layout"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#terminology",
+        "title": "Terminology",
+        "number": "3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "parent-layout",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#parent-layout",
+      "linkingText": [
+        "parent layout"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#terminology",
+        "title": "Terminology",
+        "number": "3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "child-layout",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#child-layout",
+      "linkingText": [
+        "child layout"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#terminology",
+        "title": "Terminology",
+        "number": "3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "layoutchild",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#layoutchild",
+      "linkingText": [
+        "LayoutChild"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "layout-children",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-children",
+        "title": "Layout Children",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-layoutchild-layoutnextfragment-constraints-breaktoken-constraints",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutchild-layoutnextfragment-constraints-breaktoken-constraints",
+      "linkingText": [
+        "constraints"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "LayoutChild/layoutNextFragment(constraints, breakToken)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "layout-children",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-children",
+        "title": "Layout Children",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-layoutchild-layoutnextfragment-constraints-breaktoken-breaktoken",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutchild-layoutnextfragment-constraints-breaktoken-breaktoken",
+      "linkingText": [
+        "breakToken"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "LayoutChild/layoutNextFragment(constraints, breakToken)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "layout-children",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-children",
+        "title": "Layout Children",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-layoutchild-box-slot",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutchild-box-slot",
+      "linkingText": [
+        "[[box]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "LayoutChild"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "layout-children",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-children",
+        "title": "Layout Children",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-layoutchild-stylemap-slot",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutchild-stylemap-slot",
+      "linkingText": [
+        "[[styleMap]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "LayoutChild"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "layout-children",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-children",
+        "title": "Layout Children",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-layoutchild-unique-id-slot",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutchild-unique-id-slot",
+      "linkingText": [
+        "[[unique id]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "LayoutChild"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "layout-children",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-children",
+        "title": "Layout Children",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-layoutchild-stylemap",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutchild-stylemap",
+      "linkingText": [
+        "styleMap"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "LayoutChild"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "layout-children",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-children",
+        "title": "Layout Children",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-layoutchild-intrinsicsizes",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutchild-intrinsicsizes",
+      "linkingText": [
+        "intrinsicSizes()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "LayoutChild"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "layout-children",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-children",
+        "title": "Layout Children",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-layoutchild-layoutnextfragment",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutchild-layoutnextfragment",
+      "linkingText": [
+        "layoutNextFragment(constraints, breakToken)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "LayoutChild"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "layout-children",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-children",
+        "title": "Layout Children",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-box-layoutchildmap-slot",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-box-layoutchildmap-slot",
+      "linkingText": [
+        "[[layoutChildMap]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "box"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "layout-child-box-tree",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-child-box-tree",
+        "title": "LayoutChildren and the Box Tree",
+        "number": "4.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "get-a-layout-child",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#get-a-layout-child",
+      "linkingText": [
+        "get a layout child"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "layout-child-box-tree",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-child-box-tree",
+        "title": "LayoutChildren and the Box Tree",
+        "number": "4.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "update-a-layout-child-style",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#update-a-layout-child-style",
+      "linkingText": [
+        "update a layout child style"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "layout-child-box-tree",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-child-box-tree",
+        "title": "LayoutChildren and the Box Tree",
+        "number": "4.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "layoutfragment",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#layoutfragment",
+      "linkingText": [
+        "LayoutFragment"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "layout-fragments",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-fragments",
+        "title": "Layout Fragments",
+        "number": "4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-layoutfragment-inlinesize",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutfragment-inlinesize",
+      "linkingText": [
+        "inlineSize"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "LayoutFragment"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "layout-fragments",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-fragments",
+        "title": "Layout Fragments",
+        "number": "4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-layoutfragment-blocksize",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutfragment-blocksize",
+      "linkingText": [
+        "blockSize"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "LayoutFragment"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "layout-fragments",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-fragments",
+        "title": "Layout Fragments",
+        "number": "4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-layoutfragment-inlineoffset",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutfragment-inlineoffset",
+      "linkingText": [
+        "inlineOffset"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "LayoutFragment"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "layout-fragments",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-fragments",
+        "title": "Layout Fragments",
+        "number": "4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-layoutfragment-blockoffset",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutfragment-blockoffset",
+      "linkingText": [
+        "blockOffset"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "LayoutFragment"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "layout-fragments",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-fragments",
+        "title": "Layout Fragments",
+        "number": "4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-layoutfragment-data",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutfragment-data",
+      "linkingText": [
+        "data"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "LayoutFragment"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "layout-fragments",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-fragments",
+        "title": "Layout Fragments",
+        "number": "4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-layoutfragment-breaktoken",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutfragment-breaktoken",
+      "linkingText": [
+        "breakToken"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "LayoutFragment"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "layout-fragments",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-fragments",
+        "title": "Layout Fragments",
+        "number": "4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-layoutfragment-unique-id-slot",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutfragment-unique-id-slot",
+      "linkingText": [
+        "[[unique id]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "LayoutFragment"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "layout-fragments",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-fragments",
+        "title": "Layout Fragments",
+        "number": "4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "intrinsicsizes",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#intrinsicsizes",
+      "linkingText": [
+        "IntrinsicSizes"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "intrinsic-sizes",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#intrinsic-sizes",
+        "title": "Intrinsic Sizes",
+        "number": "4.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-intrinsicsizes-mincontentsize",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-intrinsicsizes-mincontentsize",
+      "linkingText": [
+        "minContentSize"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "IntrinsicSizes"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "intrinsic-sizes",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#intrinsic-sizes",
+        "title": "Intrinsic Sizes",
+        "number": "4.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-intrinsicsizes-maxcontentsize",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-intrinsicsizes-maxcontentsize",
+      "linkingText": [
+        "maxContentSize"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "IntrinsicSizes"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "intrinsic-sizes",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#intrinsic-sizes",
+        "title": "Intrinsic Sizes",
+        "number": "4.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "layoutconstraints",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#layoutconstraints",
+      "linkingText": [
+        "LayoutConstraints"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "layout-constraints",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-constraints",
+        "title": "Layout Constraints",
+        "number": "4.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-layoutconstraints-availableinlinesize",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutconstraints-availableinlinesize",
+      "linkingText": [
+        "availableInlineSize"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "LayoutConstraints"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "layout-constraints",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-constraints",
+        "title": "Layout Constraints",
+        "number": "4.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-layoutconstraints-availableblocksize",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutconstraints-availableblocksize",
+      "linkingText": [
+        "availableBlockSize"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "LayoutConstraints"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "layout-constraints",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-constraints",
+        "title": "Layout Constraints",
+        "number": "4.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-layoutconstraints-fixedinlinesize",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutconstraints-fixedinlinesize",
+      "linkingText": [
+        "fixedInlineSize"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "LayoutConstraints"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "layout-constraints",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-constraints",
+        "title": "Layout Constraints",
+        "number": "4.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-layoutconstraints-fixedblocksize",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutconstraints-fixedblocksize",
+      "linkingText": [
+        "fixedBlockSize"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "LayoutConstraints"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "layout-constraints",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-constraints",
+        "title": "Layout Constraints",
+        "number": "4.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-layoutconstraints-percentageinlinesize",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutconstraints-percentageinlinesize",
+      "linkingText": [
+        "percentageInlineSize"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "LayoutConstraints"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "layout-constraints",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-constraints",
+        "title": "Layout Constraints",
+        "number": "4.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-layoutconstraints-percentageblocksize",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutconstraints-percentageblocksize",
+      "linkingText": [
+        "percentageBlockSize"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "LayoutConstraints"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "layout-constraints",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-constraints",
+        "title": "Layout Constraints",
+        "number": "4.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-layoutconstraints-blockfragmentationoffset",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutconstraints-blockfragmentationoffset",
+      "linkingText": [
+        "blockFragmentationOffset"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "LayoutConstraints"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "layout-constraints",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-constraints",
+        "title": "Layout Constraints",
+        "number": "4.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-layoutconstraints-blockfragmentationtype",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutconstraints-blockfragmentationtype",
+      "linkingText": [
+        "blockFragmentationType"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "LayoutConstraints"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "layout-constraints",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-constraints",
+        "title": "Layout Constraints",
+        "number": "4.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-layoutconstraints-data",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutconstraints-data",
+      "linkingText": [
+        "data"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "LayoutConstraints"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "layout-constraints",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-constraints",
+        "title": "Layout Constraints",
+        "number": "4.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "enumdef-blockfragmentationtype",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#enumdef-blockfragmentationtype",
+      "linkingText": [
+        "BlockFragmentationType"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "layout-constraints",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-constraints",
+        "title": "Layout Constraints",
+        "number": "4.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-blockfragmentationtype-none",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-blockfragmentationtype-none",
+      "linkingText": [
+        "\"none\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "BlockFragmentationType"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "layout-constraints",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-constraints",
+        "title": "Layout Constraints",
+        "number": "4.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-blockfragmentationtype-page",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-blockfragmentationtype-page",
+      "linkingText": [
+        "\"page\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "BlockFragmentationType"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "layout-constraints",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-constraints",
+        "title": "Layout Constraints",
+        "number": "4.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-blockfragmentationtype-column",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-blockfragmentationtype-column",
+      "linkingText": [
+        "\"column\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "BlockFragmentationType"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "layout-constraints",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-constraints",
+        "title": "Layout Constraints",
+        "number": "4.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-blockfragmentationtype-region",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-blockfragmentationtype-region",
+      "linkingText": [
+        "\"region\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "BlockFragmentationType"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "layout-constraints",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-constraints",
+        "title": "Layout Constraints",
+        "number": "4.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "create-a-layout-constraints-object",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#create-a-layout-constraints-object",
+      "linkingText": [
+        "create a layout constraints object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "layout-constraints",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-constraints",
+        "title": "Layout Constraints",
+        "number": "4.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dictdef-layoutconstraintsoptions",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dictdef-layoutconstraintsoptions",
+      "linkingText": [
+        "LayoutConstraintsOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "layout-constraints-children",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-constraints-children",
+        "title": "Constraints for Layout Children",
+        "number": "4.4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-layoutconstraintsoptions-availableinlinesize",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutconstraintsoptions-availableinlinesize",
+      "linkingText": [
+        "availableInlineSize"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "LayoutConstraintsOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "layout-constraints-children",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-constraints-children",
+        "title": "Constraints for Layout Children",
+        "number": "4.4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-layoutconstraintsoptions-availableblocksize",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutconstraintsoptions-availableblocksize",
+      "linkingText": [
+        "availableBlockSize"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "LayoutConstraintsOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "layout-constraints-children",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-constraints-children",
+        "title": "Constraints for Layout Children",
+        "number": "4.4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-layoutconstraintsoptions-fixedinlinesize",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutconstraintsoptions-fixedinlinesize",
+      "linkingText": [
+        "fixedInlineSize"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "LayoutConstraintsOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "layout-constraints-children",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-constraints-children",
+        "title": "Constraints for Layout Children",
+        "number": "4.4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-layoutconstraintsoptions-fixedblocksize",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutconstraintsoptions-fixedblocksize",
+      "linkingText": [
+        "fixedBlockSize"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "LayoutConstraintsOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "layout-constraints-children",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-constraints-children",
+        "title": "Constraints for Layout Children",
+        "number": "4.4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-layoutconstraintsoptions-percentageinlinesize",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutconstraintsoptions-percentageinlinesize",
+      "linkingText": [
+        "percentageInlineSize"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "LayoutConstraintsOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "layout-constraints-children",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-constraints-children",
+        "title": "Constraints for Layout Children",
+        "number": "4.4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-layoutconstraintsoptions-percentageblocksize",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutconstraintsoptions-percentageblocksize",
+      "linkingText": [
+        "percentageBlockSize"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "LayoutConstraintsOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "layout-constraints-children",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-constraints-children",
+        "title": "Constraints for Layout Children",
+        "number": "4.4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-layoutconstraintsoptions-blockfragmentationoffset",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutconstraintsoptions-blockfragmentationoffset",
+      "linkingText": [
+        "blockFragmentationOffset"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "LayoutConstraintsOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "layout-constraints-children",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-constraints-children",
+        "title": "Constraints for Layout Children",
+        "number": "4.4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-layoutconstraintsoptions-blockfragmentationtype",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutconstraintsoptions-blockfragmentationtype",
+      "linkingText": [
+        "blockFragmentationType"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "LayoutConstraintsOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "layout-constraints-children",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-constraints-children",
+        "title": "Constraints for Layout Children",
+        "number": "4.4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-layoutconstraintsoptions-data",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutconstraintsoptions-data",
+      "linkingText": [
+        "data"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "LayoutConstraintsOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "layout-constraints-children",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-constraints-children",
+        "title": "Constraints for Layout Children",
+        "number": "4.4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "translate-a-layoutconstraintsoptions-to-internal-constraints",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#translate-a-layoutconstraintsoptions-to-internal-constraints",
+      "linkingText": [
+        "translate a LayoutConstraintsOptions to internal constraints"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "layout-constraints-children",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-constraints-children",
+        "title": "Constraints for Layout Children",
+        "number": "4.4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "childbreaktoken",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#childbreaktoken",
+      "linkingText": [
+        "ChildBreakToken"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "breaking-and-fragmentation",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#breaking-and-fragmentation",
+        "title": "Breaking and Fragmentation",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-childbreaktoken-breaktype",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-childbreaktoken-breaktype",
+      "linkingText": [
+        "breakType"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ChildBreakToken"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "breaking-and-fragmentation",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#breaking-and-fragmentation",
+        "title": "Breaking and Fragmentation",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-childbreaktoken-child",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-childbreaktoken-child",
+      "linkingText": [
+        "child"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ChildBreakToken"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "breaking-and-fragmentation",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#breaking-and-fragmentation",
+        "title": "Breaking and Fragmentation",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "breaktoken",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#breaktoken",
+      "linkingText": [
+        "BreakToken"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "breaking-and-fragmentation",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#breaking-and-fragmentation",
+        "title": "Breaking and Fragmentation",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-breaktoken-childbreaktokens",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-breaktoken-childbreaktokens",
+      "linkingText": [
+        "childBreakTokens"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "BreakToken"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "breaking-and-fragmentation",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#breaking-and-fragmentation",
+        "title": "Breaking and Fragmentation",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-breaktoken-data",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-breaktoken-data",
+      "linkingText": [
+        "data"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "BreakToken"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "breaking-and-fragmentation",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#breaking-and-fragmentation",
+        "title": "Breaking and Fragmentation",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-breaktokenoptions",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dictdef-breaktokenoptions",
+      "linkingText": [
+        "BreakTokenOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "breaking-and-fragmentation",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#breaking-and-fragmentation",
+        "title": "Breaking and Fragmentation",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-breaktokenoptions-childbreaktokens",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-breaktokenoptions-childbreaktokens",
+      "linkingText": [
+        "childBreakTokens"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "BreakTokenOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "breaking-and-fragmentation",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#breaking-and-fragmentation",
+        "title": "Breaking and Fragmentation",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-breaktokenoptions-data",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-breaktokenoptions-data",
+      "linkingText": [
+        "data"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "BreakTokenOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "breaking-and-fragmentation",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#breaking-and-fragmentation",
+        "title": "Breaking and Fragmentation",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "enumdef-breaktype",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#enumdef-breaktype",
+      "linkingText": [
+        "BreakType"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "breaking-and-fragmentation",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#breaking-and-fragmentation",
+        "title": "Breaking and Fragmentation",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-breaktype-none",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-breaktype-none",
+      "linkingText": [
+        "\"none\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "BreakType"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "breaking-and-fragmentation",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#breaking-and-fragmentation",
+        "title": "Breaking and Fragmentation",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-breaktype-line",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-breaktype-line",
+      "linkingText": [
+        "\"line\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "BreakType"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "breaking-and-fragmentation",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#breaking-and-fragmentation",
+        "title": "Breaking and Fragmentation",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-breaktype-column",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-breaktype-column",
+      "linkingText": [
+        "\"column\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "BreakType"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "breaking-and-fragmentation",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#breaking-and-fragmentation",
+        "title": "Breaking and Fragmentation",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-breaktype-page",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-breaktype-page",
+      "linkingText": [
+        "\"page\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "BreakType"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "breaking-and-fragmentation",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#breaking-and-fragmentation",
+        "title": "Breaking and Fragmentation",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-breaktype-region",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-breaktype-region",
+      "linkingText": [
+        "\"region\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "BreakType"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "breaking-and-fragmentation",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#breaking-and-fragmentation",
+        "title": "Breaking and Fragmentation",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-childbreaktoken-unique-id-slot",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-childbreaktoken-unique-id-slot",
+      "linkingText": [
+        "[[unique id]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ChildBreakToken"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "breaking-and-fragmentation",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#breaking-and-fragmentation",
+        "title": "Breaking and Fragmentation",
+        "number": "4.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "layoutedges",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#layoutedges",
+      "linkingText": [
+        "LayoutEdges"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "edges",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#edges",
+        "title": "Edges",
+        "number": "4.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-layoutedges-inlinestart",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutedges-inlinestart",
+      "linkingText": [
+        "inlineStart"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "LayoutEdges"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "edges",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#edges",
+        "title": "Edges",
+        "number": "4.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-layoutedges-inlineend",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutedges-inlineend",
+      "linkingText": [
+        "inlineEnd"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "LayoutEdges"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "edges",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#edges",
+        "title": "Edges",
+        "number": "4.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-layoutedges-blockstart",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutedges-blockstart",
+      "linkingText": [
+        "blockStart"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "LayoutEdges"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "edges",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#edges",
+        "title": "Edges",
+        "number": "4.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-layoutedges-blockend",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutedges-blockend",
+      "linkingText": [
+        "blockEnd"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "LayoutEdges"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "edges",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#edges",
+        "title": "Edges",
+        "number": "4.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-layoutedges-inline",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutedges-inline",
+      "linkingText": [
+        "inline"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "LayoutEdges"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "edges",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#edges",
+        "title": "Edges",
+        "number": "4.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-layoutedges-block",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutedges-block",
+      "linkingText": [
+        "block"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "LayoutEdges"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "edges",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#edges",
+        "title": "Edges",
+        "number": "4.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "layout-api-work-task",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-api-work-task",
+      "linkingText": [
+        "layout API work task"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "processing-model",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#processing-model",
+        "title": "Processing Model",
+        "number": "6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "layout-api-work-task-layout-constraints",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-api-work-task-layout-constraints",
+      "linkingText": [
+        "layout constraints"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "layout api work task"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "processing-model",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#processing-model",
+        "title": "Processing Model",
+        "number": "6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "layout-api-work-task-layout-child",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-api-work-task-layout-child",
+      "linkingText": [
+        "layout child"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "layout api work task"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "processing-model",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#processing-model",
+        "title": "Processing Model",
+        "number": "6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "layout-api-work-task-child-break-token",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-api-work-task-child-break-token",
+      "linkingText": [
+        "child break token"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "layout api work task"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "processing-model",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#processing-model",
+        "title": "Processing Model",
+        "number": "6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "layout-api-work-task-task-type",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-api-work-task-task-type",
+      "linkingText": [
+        "task type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "layout api work task"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "processing-model",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#processing-model",
+        "title": "Processing Model",
+        "number": "6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "layout-api-work-task-promise",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-api-work-task-promise",
+      "linkingText": [
+        "promise"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "layout api work task"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "processing-model",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#processing-model",
+        "title": "Processing Model",
+        "number": "6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "layout-api-context",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-api-context",
+      "linkingText": [
+        "layout API context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "processing-model",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#processing-model",
+        "title": "Processing Model",
+        "number": "6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "layout-api-context-work-queue",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-api-context-work-queue",
+      "linkingText": [
+        "work queue"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "layout API context"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "processing-model",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#processing-model",
+        "title": "Processing Model",
+        "number": "6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "layout-api-context-unique-id",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-api-context-unique-id",
+      "linkingText": [
+        "unique id"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "layout API context"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "processing-model",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#processing-model",
+        "title": "Processing Model",
+        "number": "6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "layout-api-context-mode",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-api-context-mode",
+      "linkingText": [
+        "mode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "layout API context"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "processing-model",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#processing-model",
+        "title": "Processing Model",
+        "number": "6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "create-a-layout-api-context",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#create-a-layout-api-context",
+      "linkingText": [
+        "create a layout API context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "processing-model",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#processing-model",
+        "title": "Processing Model",
+        "number": "6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dictdef-fragmentresultoptions",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dictdef-fragmentresultoptions",
+      "linkingText": [
+        "FragmentResultOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "performing-layout",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#performing-layout",
+        "title": "Performing Layout",
+        "number": "6.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-fragmentresultoptions-inlinesize",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-fragmentresultoptions-inlinesize",
+      "linkingText": [
+        "inlineSize"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "FragmentResultOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "performing-layout",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#performing-layout",
+        "title": "Performing Layout",
+        "number": "6.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-fragmentresultoptions-blocksize",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-fragmentresultoptions-blocksize",
+      "linkingText": [
+        "blockSize"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "FragmentResultOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "performing-layout",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#performing-layout",
+        "title": "Performing Layout",
+        "number": "6.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-fragmentresultoptions-autoblocksize",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-fragmentresultoptions-autoblocksize",
+      "linkingText": [
+        "autoBlockSize"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "FragmentResultOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "performing-layout",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#performing-layout",
+        "title": "Performing Layout",
+        "number": "6.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-fragmentresultoptions-childfragments",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-fragmentresultoptions-childfragments",
+      "linkingText": [
+        "childFragments"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "FragmentResultOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "performing-layout",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#performing-layout",
+        "title": "Performing Layout",
+        "number": "6.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-fragmentresultoptions-data",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-fragmentresultoptions-data",
+      "linkingText": [
+        "data"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "FragmentResultOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "performing-layout",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#performing-layout",
+        "title": "Performing Layout",
+        "number": "6.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-fragmentresultoptions-breaktoken",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-fragmentresultoptions-breaktoken",
+      "linkingText": [
+        "breakToken"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "FragmentResultOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "performing-layout",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#performing-layout",
+        "title": "Performing Layout",
+        "number": "6.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "fragmentresult",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#fragmentresult",
+      "linkingText": [
+        "FragmentResult"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "performing-layout",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#performing-layout",
+        "title": "Performing Layout",
+        "number": "6.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-fragmentresult-fragmentresult-options-options",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-fragmentresult-fragmentresult-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "FragmentResult/FragmentResult(options)",
+        "FragmentResult/constructor(options)",
+        "FragmentResult/FragmentResult()",
+        "FragmentResult/constructor()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "performing-layout",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#performing-layout",
+        "title": "Performing Layout",
+        "number": "6.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-intrinsicsizesresultoptions",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dictdef-intrinsicsizesresultoptions",
+      "linkingText": [
+        "IntrinsicSizesResultOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "performing-layout",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#performing-layout",
+        "title": "Performing Layout",
+        "number": "6.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-intrinsicsizesresultoptions-maxcontentsize",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-intrinsicsizesresultoptions-maxcontentsize",
+      "linkingText": [
+        "maxContentSize"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "IntrinsicSizesResultOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "performing-layout",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#performing-layout",
+        "title": "Performing Layout",
+        "number": "6.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-intrinsicsizesresultoptions-mincontentsize",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-intrinsicsizesresultoptions-mincontentsize",
+      "linkingText": [
+        "minContentSize"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "IntrinsicSizesResultOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "performing-layout",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#performing-layout",
+        "title": "Performing Layout",
+        "number": "6.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-fragmentresult-box-slot",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-fragmentresult-box-slot",
+      "linkingText": [
+        "[[box]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FragmentResult"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "performing-layout",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#performing-layout",
+        "title": "Performing Layout",
+        "number": "6.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-fragmentresult-inline-size-slot",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-fragmentresult-inline-size-slot",
+      "linkingText": [
+        "[[inline size]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FragmentResult"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "performing-layout",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#performing-layout",
+        "title": "Performing Layout",
+        "number": "6.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-fragmentresult-block-size-slot",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-fragmentresult-block-size-slot",
+      "linkingText": [
+        "[[block size]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FragmentResult"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "performing-layout",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#performing-layout",
+        "title": "Performing Layout",
+        "number": "6.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-fragmentresult-child-fragments-slot",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-fragmentresult-child-fragments-slot",
+      "linkingText": [
+        "[[child fragments]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FragmentResult"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "performing-layout",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#performing-layout",
+        "title": "Performing Layout",
+        "number": "6.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-fragmentresult-data-slot",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-fragmentresult-data-slot",
+      "linkingText": [
+        "[[data]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FragmentResult"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "performing-layout",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#performing-layout",
+        "title": "Performing Layout",
+        "number": "6.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-fragmentresult-internal-break-token-slot",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-fragmentresult-internal-break-token-slot",
+      "linkingText": [
+        "[[internal break token]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FragmentResult"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "performing-layout",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#performing-layout",
+        "title": "Performing Layout",
+        "number": "6.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-fragmentresult-unique-id-slot",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-fragmentresult-unique-id-slot",
+      "linkingText": [
+        "[[unique id]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FragmentResult"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "performing-layout",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#performing-layout",
+        "title": "Performing Layout",
+        "number": "6.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-fragmentresult-inlinesize",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-fragmentresult-inlinesize",
+      "linkingText": [
+        "inlineSize"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FragmentResult"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "performing-layout",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#performing-layout",
+        "title": "Performing Layout",
+        "number": "6.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-fragmentresult-blocksize",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-fragmentresult-blocksize",
+      "linkingText": [
+        "blockSize"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FragmentResult"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "performing-layout",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#performing-layout",
+        "title": "Performing Layout",
+        "number": "6.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-fragmentresult-fragmentresult",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-fragmentresult-fragmentresult",
+      "linkingText": [
+        "FragmentResult(options)",
+        "constructor(options)",
+        "FragmentResult()",
+        "constructor()"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "FragmentResult"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "performing-layout",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#performing-layout",
+        "title": "Performing Layout",
+        "number": "6.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "construct-a-fragment-result",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#construct-a-fragment-result",
+      "linkingText": [
+        "construct a fragment result"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "performing-layout",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#performing-layout",
+        "title": "Performing Layout",
+        "number": "6.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "determine-the-intrinsic-sizes",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#determine-the-intrinsic-sizes",
+      "linkingText": [
+        "determine the intrinsic sizes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "determining-intrinsic-sizes",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#determining-intrinsic-sizes",
+        "title": "Determining Intrinsic Sizes",
+        "number": "6.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "invoke-an-intrinsic-sizes-callback",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#invoke-an-intrinsic-sizes-callback",
+      "linkingText": [
+        "invoke an intrinsic sizes callback"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "determining-intrinsic-sizes",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#determining-intrinsic-sizes",
+        "title": "Determining Intrinsic Sizes",
+        "number": "6.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "generate-a-fragment",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#generate-a-fragment",
+      "linkingText": [
+        "generate a fragment"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "generating-fragments",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#generating-fragments",
+        "title": "Generating Fragments",
+        "number": "6.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "invoke-a-layout-callback",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#invoke-a-layout-callback",
+      "linkingText": [
+        "invoke a layout callback"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "generating-fragments",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#generating-fragments",
+        "title": "Generating Fragments",
+        "number": "6.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "get-a-document-layout-definition",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#get-a-document-layout-definition",
+      "linkingText": [
+        "get a document layout definition"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "utility-algorithms",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#utility-algorithms",
+        "title": "Utility Algorithms",
+        "number": "6.2.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "get-a-layout-definition",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#get-a-layout-definition",
+      "linkingText": [
+        "get a layout definition"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "utility-algorithms",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#utility-algorithms",
+        "title": "Utility Algorithms",
+        "number": "6.2.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "get-a-layout-class-instance",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#get-a-layout-class-instance",
+      "linkingText": [
+        "get a layout class instance"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "utility-algorithms",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#utility-algorithms",
+        "title": "Utility Algorithms",
+        "number": "6.2.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "get-a-style-map",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#get-a-style-map",
+      "linkingText": [
+        "get a style map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "utility-algorithms",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#utility-algorithms",
+        "title": "Utility Algorithms",
+        "number": "6.2.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "run-a-work-queue",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#run-a-work-queue",
+      "linkingText": [
+        "run a work queue"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "utility-algorithms",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#utility-algorithms",
+        "title": "Utility Algorithms",
+        "number": "6.2.4"
+      },
+      "definedIn": "prose"
+    }
+  ]
+}

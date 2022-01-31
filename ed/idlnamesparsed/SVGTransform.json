@@ -1,0 +1,248 @@
+{
+  "name": "SVGTransform",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Scalable Vector Graphics (SVG) 2",
+      "url": "https://www.w3.org/TR/SVG2/"
+    },
+    "fragment": "[Exposed=Window]\ninterface SVGTransform {\n\n  // Transform Types\n  const unsigned short SVG_TRANSFORM_UNKNOWN = 0;\n  const unsigned short SVG_TRANSFORM_MATRIX = 1;\n  const unsigned short SVG_TRANSFORM_TRANSLATE = 2;\n  const unsigned short SVG_TRANSFORM_SCALE = 3;\n  const unsigned short SVG_TRANSFORM_ROTATE = 4;\n  const unsigned short SVG_TRANSFORM_SKEWX = 5;\n  const unsigned short SVG_TRANSFORM_SKEWY = 6;\n\n  readonly attribute unsigned short type;\n  [SameObject] readonly attribute DOMMatrix matrix;\n  readonly attribute float angle;\n\n  undefined setMatrix(optional DOMMatrix2DInit matrix = {});\n  undefined setTranslate(float tx, float ty);\n  undefined setScale(float sx, float sy);\n  undefined setRotate(float angle, float cx, float cy);\n  undefined setSkewX(float angle);\n  undefined setSkewY(float angle);\n};",
+    "href": "https://svgwg.org/svg2-draft/coords.html#InterfaceSVGTransform"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/SVG2/": [
+      {
+        "id": "InterfaceSVGTransform",
+        "href": "https://svgwg.org/svg2-draft/coords.html#InterfaceSVGTransform",
+        "linkingText": [
+          "SVGTransform"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "InterfaceSVGTransform",
+          "href": "https://svgwg.org/svg2-draft/coords.html#InterfaceSVGTransform",
+          "title": "Interface SVGTransform",
+          "number": "8.14.1"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "__svg__SVGTransform__SVG_TRANSFORM_UNKNOWN",
+        "href": "https://svgwg.org/svg2-draft/coords.html#__svg__SVGTransform__SVG_TRANSFORM_UNKNOWN",
+        "linkingText": [
+          "SVG_TRANSFORM_UNKNOWN"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "SVGTransform"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "InterfaceSVGTransform",
+          "href": "https://svgwg.org/svg2-draft/coords.html#InterfaceSVGTransform",
+          "title": "Interface SVGTransform",
+          "number": "8.14.1"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "__svg__SVGTransform__SVG_TRANSFORM_MATRIX",
+        "href": "https://svgwg.org/svg2-draft/coords.html#__svg__SVGTransform__SVG_TRANSFORM_MATRIX",
+        "linkingText": [
+          "SVG_TRANSFORM_MATRIX"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "SVGTransform"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "InterfaceSVGTransform",
+          "href": "https://svgwg.org/svg2-draft/coords.html#InterfaceSVGTransform",
+          "title": "Interface SVGTransform",
+          "number": "8.14.1"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "__svg__SVGTransform__SVG_TRANSFORM_TRANSLATE",
+        "href": "https://svgwg.org/svg2-draft/coords.html#__svg__SVGTransform__SVG_TRANSFORM_TRANSLATE",
+        "linkingText": [
+          "SVG_TRANSFORM_TRANSLATE"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "SVGTransform"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "InterfaceSVGTransform",
+          "href": "https://svgwg.org/svg2-draft/coords.html#InterfaceSVGTransform",
+          "title": "Interface SVGTransform",
+          "number": "8.14.1"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "__svg__SVGTransform__SVG_TRANSFORM_SCALE",
+        "href": "https://svgwg.org/svg2-draft/coords.html#__svg__SVGTransform__SVG_TRANSFORM_SCALE",
+        "linkingText": [
+          "SVG_TRANSFORM_SCALE"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "SVGTransform"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "InterfaceSVGTransform",
+          "href": "https://svgwg.org/svg2-draft/coords.html#InterfaceSVGTransform",
+          "title": "Interface SVGTransform",
+          "number": "8.14.1"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "__svg__SVGTransform__SVG_TRANSFORM_ROTATE",
+        "href": "https://svgwg.org/svg2-draft/coords.html#__svg__SVGTransform__SVG_TRANSFORM_ROTATE",
+        "linkingText": [
+          "SVG_TRANSFORM_ROTATE"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "SVGTransform"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "InterfaceSVGTransform",
+          "href": "https://svgwg.org/svg2-draft/coords.html#InterfaceSVGTransform",
+          "title": "Interface SVGTransform",
+          "number": "8.14.1"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "__svg__SVGTransform__SVG_TRANSFORM_SKEWX",
+        "href": "https://svgwg.org/svg2-draft/coords.html#__svg__SVGTransform__SVG_TRANSFORM_SKEWX",
+        "linkingText": [
+          "SVG_TRANSFORM_SKEWX"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "SVGTransform"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "InterfaceSVGTransform",
+          "href": "https://svgwg.org/svg2-draft/coords.html#InterfaceSVGTransform",
+          "title": "Interface SVGTransform",
+          "number": "8.14.1"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "__svg__SVGTransform__SVG_TRANSFORM_SKEWY",
+        "href": "https://svgwg.org/svg2-draft/coords.html#__svg__SVGTransform__SVG_TRANSFORM_SKEWY",
+        "linkingText": [
+          "SVG_TRANSFORM_SKEWY"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "SVGTransform"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "InterfaceSVGTransform",
+          "href": "https://svgwg.org/svg2-draft/coords.html#InterfaceSVGTransform",
+          "title": "Interface SVGTransform",
+          "number": "8.14.1"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "__svg__SVGTransform__type",
+        "href": "https://svgwg.org/svg2-draft/coords.html#__svg__SVGTransform__type",
+        "linkingText": [
+          "type"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "SVGTransform"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "InterfaceSVGTransform",
+          "href": "https://svgwg.org/svg2-draft/coords.html#InterfaceSVGTransform",
+          "title": "Interface SVGTransform",
+          "number": "8.14.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "__svg__SVGTransform__matrix",
+        "href": "https://svgwg.org/svg2-draft/coords.html#__svg__SVGTransform__matrix",
+        "linkingText": [
+          "matrix"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "SVGTransform"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "InterfaceSVGTransform",
+          "href": "https://svgwg.org/svg2-draft/coords.html#InterfaceSVGTransform",
+          "title": "Interface SVGTransform",
+          "number": "8.14.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "__svg__SVGTransform__angle",
+        "href": "https://svgwg.org/svg2-draft/coords.html#__svg__SVGTransform__angle",
+        "linkingText": [
+          "angle"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "SVGTransform"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "InterfaceSVGTransform",
+          "href": "https://svgwg.org/svg2-draft/coords.html#InterfaceSVGTransform",
+          "title": "Interface SVGTransform",
+          "number": "8.14.1"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

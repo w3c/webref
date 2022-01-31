@@ -1,0 +1,846 @@
+{
+  "name": "XRSession",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebXR Device API",
+      "url": "https://www.w3.org/TR/webxr/"
+    },
+    "fragment": "[SecureContext, Exposed=Window] interface XRSession : EventTarget {\n  // Attributes\n  readonly attribute XRVisibilityState visibilityState;\n  readonly attribute float? frameRate;\n  readonly attribute Float32Array? supportedFrameRates;\n  [SameObject] readonly attribute XRRenderState renderState;\n  [SameObject] readonly attribute XRInputSourceArray inputSources;\n\n  // Methods\n  undefined updateRenderState(optional XRRenderStateInit state = {});\n  Promise<undefined> updateTargetFrameRate(float rate);\n  [NewObject] Promise<XRReferenceSpace> requestReferenceSpace(XRReferenceSpaceType type);\n\n  unsigned long requestAnimationFrame(XRFrameRequestCallback callback);\n  undefined cancelAnimationFrame(unsigned long handle);\n\n  Promise<undefined> end();\n\n  // Events\n  attribute EventHandler onend;\n  attribute EventHandler oninputsourceschange;\n  attribute EventHandler onselect;\n  attribute EventHandler onselectstart;\n  attribute EventHandler onselectend;\n  attribute EventHandler onsqueeze;\n  attribute EventHandler onsqueezestart;\n  attribute EventHandler onsqueezeend;\n  attribute EventHandler onvisibilitychange;\n  attribute EventHandler onframeratechange;\n};",
+    "href": "https://immersive-web.github.io/webxr/#xrsession"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "WebXR Augmented Reality Module - Level 1",
+        "url": "https://www.w3.org/TR/webxr-ar-module-1/"
+      },
+      "fragment": "partial interface XRSession {\n  // Attributes\n  readonly attribute XREnvironmentBlendMode environmentBlendMode;\n};"
+    },
+    {
+      "spec": {
+        "title": "WebXR Augmented Reality Module - Level 1",
+        "url": "https://www.w3.org/TR/webxr-ar-module-1/"
+      },
+      "fragment": "partial interface XRSession {\n  // Attributes\n  readonly attribute XRInteractionMode interactionMode;\n};"
+    },
+    {
+      "spec": {
+        "title": "WebXR Depth Sensing Module",
+        "url": "https://www.w3.org/TR/webxr-depth-sensing-1/"
+      },
+      "fragment": "partial interface XRSession {\n  readonly attribute XRDepthUsage depthUsage;\n  readonly attribute XRDepthDataFormat depthDataFormat;\n};"
+    },
+    {
+      "spec": {
+        "title": "WebXR DOM Overlays Module",
+        "url": "https://www.w3.org/TR/webxr-dom-overlays-1/"
+      },
+      "fragment": "partial interface XRSession {\n  readonly attribute XRDOMOverlayState? domOverlayState;\n};"
+    },
+    {
+      "spec": {
+        "title": "WebXR Hit Test Module",
+        "url": "https://www.w3.org/TR/webxr-hit-test-1/"
+      },
+      "fragment": "partial interface XRSession {\n  Promise<XRHitTestSource> requestHitTestSource(XRHitTestOptionsInit options);\n  Promise<XRTransientInputHitTestSource> requestHitTestSourceForTransientInput(XRTransientInputHitTestOptionsInit options);\n};"
+    },
+    {
+      "spec": {
+        "title": "WebXR Lighting Estimation API Level 1",
+        "url": "https://www.w3.org/TR/webxr-lighting-estimation-1/"
+      },
+      "fragment": "partial interface XRSession {\n  Promise<XRLightProbe> requestLightProbe(optional XRLightProbeInit options = {});\n  readonly attribute XRReflectionFormat preferredReflectionFormat;\n};"
+    }
+  ],
+  "inheritance": {
+    "name": "EventTarget",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=*]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+      "href": "https://dom.spec.whatwg.org/#eventtarget"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webxr/": [
+      {
+        "id": "xrsession",
+        "href": "https://immersive-web.github.io/webxr/#xrsession",
+        "linkingText": [
+          "XRSession"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrsession-interface",
+          "href": "https://immersive-web.github.io/webxr/#xrsession-interface",
+          "title": "XRSession",
+          "number": "4.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-xrsession-visibilitystate",
+        "href": "https://immersive-web.github.io/webxr/#dom-xrsession-visibilitystate",
+        "linkingText": [
+          "visibilityState"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XRSession"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrsession-interface",
+          "href": "https://immersive-web.github.io/webxr/#xrsession-interface",
+          "title": "XRSession",
+          "number": "4.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-xrsession-framerate",
+        "href": "https://immersive-web.github.io/webxr/#dom-xrsession-framerate",
+        "linkingText": [
+          "frameRate"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XRSession"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrsession-interface",
+          "href": "https://immersive-web.github.io/webxr/#xrsession-interface",
+          "title": "XRSession",
+          "number": "4.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-xrsession-supportedframerates",
+        "href": "https://immersive-web.github.io/webxr/#dom-xrsession-supportedframerates",
+        "linkingText": [
+          "supportedFrameRates"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XRSession"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrsession-interface",
+          "href": "https://immersive-web.github.io/webxr/#xrsession-interface",
+          "title": "XRSession",
+          "number": "4.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-xrsession-renderstate",
+        "href": "https://immersive-web.github.io/webxr/#dom-xrsession-renderstate",
+        "linkingText": [
+          "renderState"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XRSession"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrsession-interface",
+          "href": "https://immersive-web.github.io/webxr/#xrsession-interface",
+          "title": "XRSession",
+          "number": "4.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-xrsession-inputsources",
+        "href": "https://immersive-web.github.io/webxr/#dom-xrsession-inputsources",
+        "linkingText": [
+          "inputSources"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XRSession"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrsession-interface",
+          "href": "https://immersive-web.github.io/webxr/#xrsession-interface",
+          "title": "XRSession",
+          "number": "4.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-xrsession-updaterenderstate",
+        "href": "https://immersive-web.github.io/webxr/#dom-xrsession-updaterenderstate",
+        "linkingText": [
+          "updateRenderState(state)",
+          "updateRenderState()",
+          "updateRenderState(newState)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "XRSession"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrsession-interface",
+          "href": "https://immersive-web.github.io/webxr/#xrsession-interface",
+          "title": "XRSession",
+          "number": "4.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-xrsession-updatetargetframerate",
+        "href": "https://immersive-web.github.io/webxr/#dom-xrsession-updatetargetframerate",
+        "linkingText": [
+          "updateTargetFrameRate(rate)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "XRSession"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrsession-interface",
+          "href": "https://immersive-web.github.io/webxr/#xrsession-interface",
+          "title": "XRSession",
+          "number": "4.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-xrsession-requestreferencespace",
+        "href": "https://immersive-web.github.io/webxr/#dom-xrsession-requestreferencespace",
+        "linkingText": [
+          "requestReferenceSpace(type)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "XRSession"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrsession-interface",
+          "href": "https://immersive-web.github.io/webxr/#xrsession-interface",
+          "title": "XRSession",
+          "number": "4.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-xrsession-requestanimationframe",
+        "href": "https://immersive-web.github.io/webxr/#dom-xrsession-requestanimationframe",
+        "linkingText": [
+          "requestAnimationFrame(callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "XRSession"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "animation-frames",
+          "href": "https://immersive-web.github.io/webxr/#animation-frames",
+          "title": "Animation Frames",
+          "number": "4.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-xrsession-cancelanimationframe",
+        "href": "https://immersive-web.github.io/webxr/#dom-xrsession-cancelanimationframe",
+        "linkingText": [
+          "cancelAnimationFrame(handle)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "XRSession"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "animation-frames",
+          "href": "https://immersive-web.github.io/webxr/#animation-frames",
+          "title": "Animation Frames",
+          "number": "4.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-xrsession-end",
+        "href": "https://immersive-web.github.io/webxr/#dom-xrsession-end",
+        "linkingText": [
+          "end()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "XRSession"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrsession-interface",
+          "href": "https://immersive-web.github.io/webxr/#xrsession-interface",
+          "title": "XRSession",
+          "number": "4.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-xrsession-onend",
+        "href": "https://immersive-web.github.io/webxr/#dom-xrsession-onend",
+        "linkingText": [
+          "onend"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XRSession"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrsession-interface",
+          "href": "https://immersive-web.github.io/webxr/#xrsession-interface",
+          "title": "XRSession",
+          "number": "4.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-xrsession-oninputsourceschange",
+        "href": "https://immersive-web.github.io/webxr/#dom-xrsession-oninputsourceschange",
+        "linkingText": [
+          "oninputsourceschange"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XRSession"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrsession-interface",
+          "href": "https://immersive-web.github.io/webxr/#xrsession-interface",
+          "title": "XRSession",
+          "number": "4.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-xrsession-onselect",
+        "href": "https://immersive-web.github.io/webxr/#dom-xrsession-onselect",
+        "linkingText": [
+          "onselect"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XRSession"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrsession-interface",
+          "href": "https://immersive-web.github.io/webxr/#xrsession-interface",
+          "title": "XRSession",
+          "number": "4.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-xrsession-onselectstart",
+        "href": "https://immersive-web.github.io/webxr/#dom-xrsession-onselectstart",
+        "linkingText": [
+          "onselectstart"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XRSession"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrsession-interface",
+          "href": "https://immersive-web.github.io/webxr/#xrsession-interface",
+          "title": "XRSession",
+          "number": "4.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-xrsession-onselectend",
+        "href": "https://immersive-web.github.io/webxr/#dom-xrsession-onselectend",
+        "linkingText": [
+          "onselectend"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XRSession"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrsession-interface",
+          "href": "https://immersive-web.github.io/webxr/#xrsession-interface",
+          "title": "XRSession",
+          "number": "4.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-xrsession-onsqueeze",
+        "href": "https://immersive-web.github.io/webxr/#dom-xrsession-onsqueeze",
+        "linkingText": [
+          "onsqueeze"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XRSession"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrsession-interface",
+          "href": "https://immersive-web.github.io/webxr/#xrsession-interface",
+          "title": "XRSession",
+          "number": "4.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-xrsession-onsqueezestart",
+        "href": "https://immersive-web.github.io/webxr/#dom-xrsession-onsqueezestart",
+        "linkingText": [
+          "onsqueezestart"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XRSession"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrsession-interface",
+          "href": "https://immersive-web.github.io/webxr/#xrsession-interface",
+          "title": "XRSession",
+          "number": "4.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-xrsession-onsqueezeend",
+        "href": "https://immersive-web.github.io/webxr/#dom-xrsession-onsqueezeend",
+        "linkingText": [
+          "onsqueezeend"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XRSession"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrsession-interface",
+          "href": "https://immersive-web.github.io/webxr/#xrsession-interface",
+          "title": "XRSession",
+          "number": "4.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-xrsession-onvisibilitychange",
+        "href": "https://immersive-web.github.io/webxr/#dom-xrsession-onvisibilitychange",
+        "linkingText": [
+          "onvisibilitychange"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XRSession"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrsession-interface",
+          "href": "https://immersive-web.github.io/webxr/#xrsession-interface",
+          "title": "XRSession",
+          "number": "4.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-xrsession-onframeratechange",
+        "href": "https://immersive-web.github.io/webxr/#dom-xrsession-onframeratechange",
+        "linkingText": [
+          "onframeratechange"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XRSession"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrsession-interface",
+          "href": "https://immersive-web.github.io/webxr/#xrsession-interface",
+          "title": "XRSession",
+          "number": "4.1"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://www.w3.org/TR/webxr-ar-module-1/": [
+      {
+        "id": "dom-xrsession-environmentblendmode",
+        "href": "https://immersive-web.github.io/webxr-ar-module/#dom-xrsession-environmentblendmode",
+        "linkingText": [
+          "environmentBlendMode"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XRSession"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrenvironmentblendmode-enum",
+          "href": "https://immersive-web.github.io/webxr-ar-module/#xrenvironmentblendmode-enum",
+          "title": "XREnvironmentBlendMode",
+          "number": "2.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-xrsession-interactionmode",
+        "href": "https://immersive-web.github.io/webxr-ar-module/#dom-xrsession-interactionmode",
+        "linkingText": [
+          "interactionMode"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XRSession"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrinteractionmode-enum",
+          "href": "https://immersive-web.github.io/webxr-ar-module/#xrinteractionmode-enum",
+          "title": "XRInteractionMode",
+          "number": "2.3"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://www.w3.org/TR/webxr-depth-sensing-1/": [
+      {
+        "id": "dom-xrsession-depthusage",
+        "href": "https://immersive-web.github.io/depth-sensing/#dom-xrsession-depthusage",
+        "linkingText": [
+          "depthUsage"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XRSession"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "session-configuration",
+          "href": "https://immersive-web.github.io/depth-sensing/#session-configuration",
+          "title": "Session configuration",
+          "number": "2.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-xrsession-depthdataformat",
+        "href": "https://immersive-web.github.io/depth-sensing/#dom-xrsession-depthdataformat",
+        "linkingText": [
+          "depthDataFormat"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XRSession"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "session-configuration",
+          "href": "https://immersive-web.github.io/depth-sensing/#session-configuration",
+          "title": "Session configuration",
+          "number": "2.3"
+        },
+        "definedIn": "pre"
+      }
+    ],
+    "https://www.w3.org/TR/webxr-dom-overlays-1/": [
+      {
+        "id": "dom-xrsession-domoverlaystate",
+        "href": "https://immersive-web.github.io/dom-overlays/#dom-xrsession-domoverlaystate",
+        "linkingText": [
+          "domOverlayState"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XRSession"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrsession",
+          "href": "https://immersive-web.github.io/dom-overlays/#xrsession",
+          "title": "XRSession",
+          "number": "3.2"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://www.w3.org/TR/webxr-hit-test-1/": [
+      {
+        "id": "dom-xrsession-requesthittestsource",
+        "href": "https://immersive-web.github.io/hit-test/#dom-xrsession-requesthittestsource",
+        "linkingText": [
+          "requestHitTestSource(options)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "XRSession"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "requesting-hit-test",
+          "href": "https://immersive-web.github.io/hit-test/#requesting-hit-test",
+          "title": "Requesting hit test",
+          "number": "6"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-xrsession-requesthittestsourcefortransientinput",
+        "href": "https://immersive-web.github.io/hit-test/#dom-xrsession-requesthittestsourcefortransientinput",
+        "linkingText": [
+          "requestHitTestSourceForTransientInput(options)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "XRSession"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "requesting-hit-test",
+          "href": "https://immersive-web.github.io/hit-test/#requesting-hit-test",
+          "title": "Requesting hit test",
+          "number": "6"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://www.w3.org/TR/webxr-lighting-estimation-1/": [
+      {
+        "id": "dom-xrsession-requestlightprobe",
+        "href": "https://immersive-web.github.io/lighting-estimation/#dom-xrsession-requestlightprobe",
+        "linkingText": [
+          "requestLightProbe(options)",
+          "requestLightProbe()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "XRSession"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrsession-interface",
+          "href": "https://immersive-web.github.io/lighting-estimation/#xrsession-interface",
+          "title": "XRSession",
+          "number": "3.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-xrsession-preferredreflectionformat",
+        "href": "https://immersive-web.github.io/lighting-estimation/#dom-xrsession-preferredreflectionformat",
+        "linkingText": [
+          "preferredReflectionFormat"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XRSession"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrsession-interface",
+          "href": "https://immersive-web.github.io/lighting-estimation/#xrsession-interface",
+          "title": "XRSession",
+          "number": "3.2"
+        },
+        "definedIn": "pre"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "eventtarget",
+        "href": "https://dom.spec.whatwg.org/#eventtarget",
+        "linkingText": [
+          "EventTarget"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventtarget-eventtarget",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-eventtarget",
+        "linkingText": [
+          "EventTarget()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-addeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-addeventlistener",
+        "linkingText": [
+          "addEventListener(type, callback, options)",
+          "addEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-removeeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-removeeventlistener",
+        "linkingText": [
+          "removeEventListener(type, callback, options)",
+          "removeEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-dispatchevent",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-dispatchevent",
+        "linkingText": [
+          "dispatchEvent(event)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

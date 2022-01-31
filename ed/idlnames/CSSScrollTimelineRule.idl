@@ -1,0 +1,8 @@
+// Source: Scroll-linked Animations (https://drafts.csswg.org/scroll-animations-1/)
+[Exposed=Window]
+interface CSSScrollTimelineRule : CSSRule {
+  readonly attribute CSSOMString name;
+  readonly attribute CSSOMString source;
+  readonly attribute CSSOMString orientation;
+  readonly attribute CSSOMString scrollOffsets;
+};

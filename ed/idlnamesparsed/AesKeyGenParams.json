@@ -1,0 +1,112 @@
+{
+  "name": "AesKeyGenParams",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Web Cryptography API",
+      "url": "https://www.w3.org/TR/WebCryptoAPI/"
+    },
+    "fragment": "dictionary AesKeyGenParams : Algorithm {\n  required [EnforceRange] unsigned short length;\n};",
+    "href": "https://w3c.github.io/webcrypto/#dfn-AesKeyGenParams"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "Algorithm",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "Web Cryptography API",
+        "url": "https://www.w3.org/TR/WebCryptoAPI/"
+      },
+      "fragment": "dictionary Algorithm {\n  required DOMString name;\n};",
+      "href": "https://w3c.github.io/webcrypto/#dfn-Algorithm"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/WebCryptoAPI/": [
+      {
+        "id": "dfn-AesKeyGenParams",
+        "href": "https://w3c.github.io/webcrypto/#dfn-AesKeyGenParams",
+        "linkingText": [
+          "AesKeyGenParams"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "aes-keygen-params",
+          "href": "https://w3c.github.io/webcrypto/#aes-keygen-params",
+          "title": "AesKeyGenParams dictionary",
+          "number": "25.5"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dfn-AesKeyGenParams-length",
+        "href": "https://w3c.github.io/webcrypto/#dfn-AesKeyGenParams-length",
+        "linkingText": [
+          "length"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "AesKeyGenParams"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "aes-keygen-params",
+          "href": "https://w3c.github.io/webcrypto/#aes-keygen-params",
+          "title": "AesKeyGenParams dictionary",
+          "number": "25.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dfn-Algorithm",
+        "href": "https://w3c.github.io/webcrypto/#dfn-Algorithm",
+        "linkingText": [
+          "Algorithm"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "algorithm-dictionary",
+          "href": "https://w3c.github.io/webcrypto/#algorithm-dictionary",
+          "title": "11. Algorithm dictionary"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-algorithm-name",
+        "href": "https://w3c.github.io/webcrypto/#dom-algorithm-name",
+        "linkingText": [
+          "name"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "Algorithm"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "algorithm-dictionary-members",
+          "href": "https://w3c.github.io/webcrypto/#algorithm-dictionary-members",
+          "title": "Algorithm Dictionary Members",
+          "number": "11.1"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

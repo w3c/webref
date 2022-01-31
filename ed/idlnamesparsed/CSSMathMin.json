@@ -1,0 +1,513 @@
+{
+  "name": "CSSMathMin",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "CSS Typed OM Level 1",
+      "url": "https://www.w3.org/TR/css-typed-om-1/"
+    },
+    "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]\ninterface CSSMathMin : CSSMathValue {\n    constructor(CSSNumberish... args);\n    readonly attribute CSSNumericArray values;\n};",
+    "href": "https://drafts.css-houdini.org/css-typed-om-1/#cssmathmin"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "CSSMathValue",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "CSS Typed OM Level 1",
+        "url": "https://www.w3.org/TR/css-typed-om-1/"
+      },
+      "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]\ninterface CSSMathValue : CSSNumericValue {\n    readonly attribute CSSMathOperator operator;\n};",
+      "href": "https://drafts.css-houdini.org/css-typed-om-1/#cssmathvalue"
+    },
+    "extended": [],
+    "inheritance": {
+      "name": "CSSNumericValue",
+      "type": "interface",
+      "defined": {
+        "spec": {
+          "title": "CSS Typed OM Level 1",
+          "url": "https://www.w3.org/TR/css-typed-om-1/"
+        },
+        "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]\ninterface CSSNumericValue : CSSStyleValue {\n    CSSNumericValue add(CSSNumberish... values);\n    CSSNumericValue sub(CSSNumberish... values);\n    CSSNumericValue mul(CSSNumberish... values);\n    CSSNumericValue div(CSSNumberish... values);\n    CSSNumericValue min(CSSNumberish... values);\n    CSSNumericValue max(CSSNumberish... values);\n\n    boolean equals(CSSNumberish... value);\n\n    CSSUnitValue to(USVString unit);\n    CSSMathSum toSum(USVString... units);\n    CSSNumericType type();\n\n    [Exposed=Window] static CSSNumericValue parse(USVString cssText);\n};",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue"
+      },
+      "extended": [],
+      "inheritance": {
+        "name": "CSSStyleValue",
+        "type": "interface",
+        "defined": {
+          "spec": {
+            "title": "CSS Typed OM Level 1",
+            "url": "https://www.w3.org/TR/css-typed-om-1/"
+          },
+          "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]\ninterface CSSStyleValue {\n    stringifier;\n    [Exposed=Window] static CSSStyleValue parse(USVString property, USVString cssText);\n    [Exposed=Window] static sequence<CSSStyleValue> parseAll(USVString property, USVString cssText);\n};",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#cssstylevalue"
+        },
+        "extended": [],
+        "inheritance": null,
+        "includes": []
+      },
+      "includes": []
+    },
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/css-typed-om-1/": [
+      {
+        "id": "cssmathmin",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#cssmathmin",
+        "linkingText": [
+          "CSSMathMin"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "complex-numeric",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#complex-numeric",
+          "title": "Complex Numeric Values: CSSMathValue objects",
+          "number": "4.3.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-cssmathmin-cssmathmin",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-cssmathmin-cssmathmin",
+        "linkingText": [
+          "CSSMathMin(...args)",
+          "constructor(...args)",
+          "CSSMathMin()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "CSSMathMin"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "complex-numeric",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#complex-numeric",
+          "title": "Complex Numeric Values: CSSMathValue objects",
+          "number": "4.3.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-cssmathmin-values",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-cssmathmin-values",
+        "linkingText": [
+          "values"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "CSSMathMin"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "complex-numeric",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#complex-numeric",
+          "title": "Complex Numeric Values: CSSMathValue objects",
+          "number": "4.3.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "cssmathvalue",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#cssmathvalue",
+        "linkingText": [
+          "CSSMathValue"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "complex-numeric",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#complex-numeric",
+          "title": "Complex Numeric Values: CSSMathValue objects",
+          "number": "4.3.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-cssmathvalue-operator",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-cssmathvalue-operator",
+        "linkingText": [
+          "operator"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "CSSMathValue",
+          "CSSMathSum",
+          "CSSMathProduct",
+          "CSSMathMin",
+          "CSSMathMax",
+          "CSSMathClamp",
+          "CSSMathNegate",
+          "CSSMathInvert"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "complex-numeric",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#complex-numeric",
+          "title": "Complex Numeric Values: CSSMathValue objects",
+          "number": "4.3.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "cssnumericvalue",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue",
+        "linkingText": [
+          "CSSNumericValue"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "numeric-value",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#numeric-value",
+          "title": "Common Numeric Operations, and the CSSNumericValue Superclass",
+          "number": "4.3.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-cssnumericvalue-add",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-cssnumericvalue-add",
+        "linkingText": [
+          "add(...values)",
+          "add()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSSNumericValue"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "numeric-value",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#numeric-value",
+          "title": "Common Numeric Operations, and the CSSNumericValue Superclass",
+          "number": "4.3.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-cssnumericvalue-sub",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-cssnumericvalue-sub",
+        "linkingText": [
+          "sub(...values)",
+          "sub()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSSNumericValue"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "numeric-value",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#numeric-value",
+          "title": "Common Numeric Operations, and the CSSNumericValue Superclass",
+          "number": "4.3.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-cssnumericvalue-mul",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-cssnumericvalue-mul",
+        "linkingText": [
+          "mul(...values)",
+          "mul()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSSNumericValue"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "numeric-value",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#numeric-value",
+          "title": "Common Numeric Operations, and the CSSNumericValue Superclass",
+          "number": "4.3.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-cssnumericvalue-div",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-cssnumericvalue-div",
+        "linkingText": [
+          "div(...values)",
+          "div()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSSNumericValue"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "numeric-value",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#numeric-value",
+          "title": "Common Numeric Operations, and the CSSNumericValue Superclass",
+          "number": "4.3.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-cssnumericvalue-min",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-cssnumericvalue-min",
+        "linkingText": [
+          "min(...values)",
+          "min()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSSNumericValue"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "numeric-value",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#numeric-value",
+          "title": "Common Numeric Operations, and the CSSNumericValue Superclass",
+          "number": "4.3.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-cssnumericvalue-max",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-cssnumericvalue-max",
+        "linkingText": [
+          "max(...values)",
+          "max()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSSNumericValue"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "numeric-value",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#numeric-value",
+          "title": "Common Numeric Operations, and the CSSNumericValue Superclass",
+          "number": "4.3.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-cssnumericvalue-equals",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-cssnumericvalue-equals",
+        "linkingText": [
+          "equals(...value)",
+          "equals()",
+          "equals(...values)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSSNumericValue"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "numeric-value",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#numeric-value",
+          "title": "Common Numeric Operations, and the CSSNumericValue Superclass",
+          "number": "4.3.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-cssnumericvalue-to",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-cssnumericvalue-to",
+        "linkingText": [
+          "to(unit)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSSNumericValue"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "numeric-value",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#numeric-value",
+          "title": "Common Numeric Operations, and the CSSNumericValue Superclass",
+          "number": "4.3.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-cssnumericvalue-tosum",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-cssnumericvalue-tosum",
+        "linkingText": [
+          "toSum(...units)",
+          "toSum()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSSNumericValue"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "numeric-value",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#numeric-value",
+          "title": "Common Numeric Operations, and the CSSNumericValue Superclass",
+          "number": "4.3.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-cssnumericvalue-type",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-cssnumericvalue-type",
+        "linkingText": [
+          "type()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSSNumericValue"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "numeric-value",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#numeric-value",
+          "title": "Common Numeric Operations, and the CSSNumericValue Superclass",
+          "number": "4.3.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-cssnumericvalue-parse",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-cssnumericvalue-parse",
+        "linkingText": [
+          "parse(cssText)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSSNumericValue"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "numeric-value",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#numeric-value",
+          "title": "Common Numeric Operations, and the CSSNumericValue Superclass",
+          "number": "4.3.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "cssstylevalue",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#cssstylevalue",
+        "linkingText": [
+          "CSSStyleValue"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "stylevalue-objects",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#stylevalue-objects",
+          "title": "CSSStyleValue objects",
+          "number": "2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "CSSStyleValue-stringification-behavior",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#CSSStyleValue-stringification-behavior",
+        "linkingText": [
+          "stringification behavior"
+        ],
+        "localLinkingText": [],
+        "type": "dfn",
+        "for": [
+          "CSSStyleValue"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "stylevalue-objects",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#stylevalue-objects",
+          "title": "CSSStyleValue objects",
+          "number": "2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-cssstylevalue-parse",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-cssstylevalue-parse",
+        "linkingText": [
+          "parse(property, cssText)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSSStyleValue"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "stylevalue-objects",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#stylevalue-objects",
+          "title": "CSSStyleValue objects",
+          "number": "2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-cssstylevalue-parseall",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-cssstylevalue-parseall",
+        "linkingText": [
+          "parseAll(property, cssText)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSSStyleValue"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "stylevalue-objects",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#stylevalue-objects",
+          "title": "CSSStyleValue objects",
+          "number": "2"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

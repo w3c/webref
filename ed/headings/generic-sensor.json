@@ -1,0 +1,705 @@
+{
+  "spec": {
+    "title": "Generic Sensor API",
+    "url": "https://w3c.github.io/sensors/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://w3c.github.io/sensors/#title",
+      "level": 1,
+      "title": "Generic Sensor API"
+    },
+    {
+      "id": "abstract",
+      "href": "https://w3c.github.io/sensors/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "sotd",
+      "href": "https://w3c.github.io/sensors/#sotd",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://w3c.github.io/sensors/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "intro",
+      "href": "https://w3c.github.io/sensors/#intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "scope",
+      "href": "https://w3c.github.io/sensors/#scope",
+      "level": 2,
+      "title": "Scope",
+      "number": "2"
+    },
+    {
+      "id": "feature-detection",
+      "href": "https://w3c.github.io/sensors/#feature-detection",
+      "level": 2,
+      "title": "A note on Feature Detection of Hardware Features",
+      "number": "3"
+    },
+    {
+      "id": "security-and-privacy",
+      "href": "https://w3c.github.io/sensors/#security-and-privacy",
+      "level": 2,
+      "title": "Security and privacy considerations",
+      "number": "4"
+    },
+    {
+      "id": "main-privacy-security-threats",
+      "href": "https://w3c.github.io/sensors/#main-privacy-security-threats",
+      "level": 3,
+      "title": "Types of privacy and security threats",
+      "number": "4.1"
+    },
+    {
+      "id": "location-tracking",
+      "href": "https://w3c.github.io/sensors/#location-tracking",
+      "level": 4,
+      "title": "Location Tracking",
+      "number": "4.1.1"
+    },
+    {
+      "id": "eavesdropping",
+      "href": "https://w3c.github.io/sensors/#eavesdropping",
+      "level": 4,
+      "title": "Eavesdropping",
+      "number": "4.1.2"
+    },
+    {
+      "id": "keystroke-monitoring",
+      "href": "https://w3c.github.io/sensors/#keystroke-monitoring",
+      "level": 4,
+      "title": "Keystroke Monitoring",
+      "number": "4.1.3"
+    },
+    {
+      "id": "device-fingerprinting",
+      "href": "https://w3c.github.io/sensors/#device-fingerprinting",
+      "level": 4,
+      "title": "Device Fingerprinting",
+      "number": "4.1.4"
+    },
+    {
+      "id": "user-identifying",
+      "href": "https://w3c.github.io/sensors/#user-identifying",
+      "level": 4,
+      "title": "User Identifying",
+      "number": "4.1.5"
+    },
+    {
+      "id": "mitigation-strategies",
+      "href": "https://w3c.github.io/sensors/#mitigation-strategies",
+      "level": 3,
+      "title": "Mitigation Strategies",
+      "number": "4.2"
+    },
+    {
+      "id": "secure-context",
+      "href": "https://w3c.github.io/sensors/#secure-context",
+      "level": 4,
+      "title": "Secure Context",
+      "number": "4.2.1"
+    },
+    {
+      "id": "permissions-policy",
+      "href": "https://w3c.github.io/sensors/#permissions-policy",
+      "level": 4,
+      "title": "Permissions Policy",
+      "number": "4.2.2"
+    },
+    {
+      "id": "focused-area",
+      "href": "https://w3c.github.io/sensors/#focused-area",
+      "level": 4,
+      "title": "Focused Area",
+      "number": "4.2.3"
+    },
+    {
+      "id": "visibility-state",
+      "href": "https://w3c.github.io/sensors/#visibility-state",
+      "level": 4,
+      "title": "Visibility State",
+      "number": "4.2.4"
+    },
+    {
+      "id": "permissions",
+      "href": "https://w3c.github.io/sensors/#permissions",
+      "level": 4,
+      "title": "Permissions API",
+      "number": "4.2.5"
+    },
+    {
+      "id": "mitigation-strategies-case-by-case",
+      "href": "https://w3c.github.io/sensors/#mitigation-strategies-case-by-case",
+      "level": 3,
+      "title": "Mitigation strategies applied on a case by case basis",
+      "number": "4.3"
+    },
+    {
+      "id": "limit-max-frequency",
+      "href": "https://w3c.github.io/sensors/#limit-max-frequency",
+      "level": 4,
+      "title": "Limit maximum sampling frequency",
+      "number": "4.3.1"
+    },
+    {
+      "id": "stop-sensor",
+      "href": "https://w3c.github.io/sensors/#stop-sensor",
+      "level": 4,
+      "title": "Stop the sensor altogether",
+      "number": "4.3.2"
+    },
+    {
+      "id": "limit-number-of-delivered-readings",
+      "href": "https://w3c.github.io/sensors/#limit-number-of-delivered-readings",
+      "level": 4,
+      "title": "Limit number of delivered readings",
+      "number": "4.3.3"
+    },
+    {
+      "id": "reduce-accuracy",
+      "href": "https://w3c.github.io/sensors/#reduce-accuracy",
+      "level": 4,
+      "title": "Reduce accuracy",
+      "number": "4.3.4"
+    },
+    {
+      "id": "inform-user",
+      "href": "https://w3c.github.io/sensors/#inform-user",
+      "level": 4,
+      "title": "Keep the user informed about API use",
+      "number": "4.3.5"
+    },
+    {
+      "id": "concepts",
+      "href": "https://w3c.github.io/sensors/#concepts",
+      "level": 2,
+      "title": "Concepts",
+      "number": "5"
+    },
+    {
+      "id": "concepts-sensors",
+      "href": "https://w3c.github.io/sensors/#concepts-sensors",
+      "level": 3,
+      "title": "Sensors",
+      "number": "5.1"
+    },
+    {
+      "id": "concepts-sensor-types",
+      "href": "https://w3c.github.io/sensors/#concepts-sensor-types",
+      "level": 3,
+      "title": "Sensor Types",
+      "number": "5.2"
+    },
+    {
+      "id": "concepts-default-sensor",
+      "href": "https://w3c.github.io/sensors/#concepts-default-sensor",
+      "level": 3,
+      "title": "Default sensor",
+      "number": "5.3"
+    },
+    {
+      "id": "concepts-reading-change-threshold",
+      "href": "https://w3c.github.io/sensors/#concepts-reading-change-threshold",
+      "level": 3,
+      "title": "Reading change threshold",
+      "number": "5.4"
+    },
+    {
+      "id": "concepts-sampling-and-reporting-frequencies",
+      "href": "https://w3c.github.io/sensors/#concepts-sampling-and-reporting-frequencies",
+      "level": 3,
+      "title": "Sampling Frequency and Reporting Frequency",
+      "number": "5.5"
+    },
+    {
+      "id": "concepts-can-expose-sensor-readings",
+      "href": "https://w3c.github.io/sensors/#concepts-can-expose-sensor-readings",
+      "level": 3,
+      "title": "Conditions to expose sensor readings",
+      "number": "5.6"
+    },
+    {
+      "id": "model",
+      "href": "https://w3c.github.io/sensors/#model",
+      "level": 2,
+      "title": "Model",
+      "number": "6"
+    },
+    {
+      "id": "model-sensor-type",
+      "href": "https://w3c.github.io/sensors/#model-sensor-type",
+      "level": 3,
+      "title": "Sensor Type",
+      "number": "6.1"
+    },
+    {
+      "id": "model-sensor",
+      "href": "https://w3c.github.io/sensors/#model-sensor",
+      "level": 3,
+      "title": "Sensor",
+      "number": "6.2"
+    },
+    {
+      "id": "api",
+      "href": "https://w3c.github.io/sensors/#api",
+      "level": 2,
+      "title": "API",
+      "number": "7"
+    },
+    {
+      "id": "the-sensor-interface",
+      "href": "https://w3c.github.io/sensors/#the-sensor-interface",
+      "level": 3,
+      "title": "The Sensor Interface",
+      "number": "7.1"
+    },
+    {
+      "id": "sensor-lifecycle",
+      "href": "https://w3c.github.io/sensors/#sensor-lifecycle",
+      "level": 4,
+      "title": "Sensor lifecycle",
+      "number": "7.1.1"
+    },
+    {
+      "id": "sensor-garbage-collection",
+      "href": "https://w3c.github.io/sensors/#sensor-garbage-collection",
+      "level": 4,
+      "title": "Sensor garbage collection",
+      "number": "7.1.2"
+    },
+    {
+      "id": "sensor-internal-slots",
+      "href": "https://w3c.github.io/sensors/#sensor-internal-slots",
+      "level": 4,
+      "title": "Sensor internal slots",
+      "number": "7.1.3"
+    },
+    {
+      "id": "sensor-activated",
+      "href": "https://w3c.github.io/sensors/#sensor-activated",
+      "level": 4,
+      "title": "Sensor.activated",
+      "number": "7.1.4"
+    },
+    {
+      "id": "sensor-has-reading",
+      "href": "https://w3c.github.io/sensors/#sensor-has-reading",
+      "level": 4,
+      "title": "Sensor.hasReading",
+      "number": "7.1.5"
+    },
+    {
+      "id": "sensor-timestamp",
+      "href": "https://w3c.github.io/sensors/#sensor-timestamp",
+      "level": 4,
+      "title": "Sensor.timestamp",
+      "number": "7.1.6"
+    },
+    {
+      "id": "sensor-start",
+      "href": "https://w3c.github.io/sensors/#sensor-start",
+      "level": 4,
+      "title": "Sensor.start()",
+      "number": "7.1.7"
+    },
+    {
+      "id": "sensor-stop",
+      "href": "https://w3c.github.io/sensors/#sensor-stop",
+      "level": 4,
+      "title": "Sensor.stop()",
+      "number": "7.1.8"
+    },
+    {
+      "id": "sensor-onreading",
+      "href": "https://w3c.github.io/sensors/#sensor-onreading",
+      "level": 4,
+      "title": "Sensor.onreading",
+      "number": "7.1.9"
+    },
+    {
+      "id": "sensor-onactivate",
+      "href": "https://w3c.github.io/sensors/#sensor-onactivate",
+      "level": 4,
+      "title": "Sensor.onactivate",
+      "number": "7.1.10"
+    },
+    {
+      "id": "sensor-onerror",
+      "href": "https://w3c.github.io/sensors/#sensor-onerror",
+      "level": 4,
+      "title": "Sensor.onerror",
+      "number": "7.1.11"
+    },
+    {
+      "id": "event-handlers",
+      "href": "https://w3c.github.io/sensors/#event-handlers",
+      "level": 4,
+      "title": "Event handlers",
+      "number": "7.1.12"
+    },
+    {
+      "id": "the-sensor-error-event-interface",
+      "href": "https://w3c.github.io/sensors/#the-sensor-error-event-interface",
+      "level": 3,
+      "title": "The SensorErrorEvent Interface",
+      "number": "7.2"
+    },
+    {
+      "id": "sensor-error-event-error",
+      "href": "https://w3c.github.io/sensors/#sensor-error-event-error",
+      "level": 4,
+      "title": "SensorErrorEvent.error",
+      "number": "7.2.1"
+    },
+    {
+      "id": "abstract-operations",
+      "href": "https://w3c.github.io/sensors/#abstract-operations",
+      "level": 2,
+      "title": "Abstract Operations",
+      "number": "8"
+    },
+    {
+      "id": "initialize-a-sensor-object",
+      "href": "https://w3c.github.io/sensors/#initialize-a-sensor-object",
+      "level": 3,
+      "title": "Initialize a sensor object",
+      "number": "8.1"
+    },
+    {
+      "id": "check-sensor-policy-controlled-features",
+      "href": "https://w3c.github.io/sensors/#check-sensor-policy-controlled-features",
+      "level": 3,
+      "title": "Check sensor policy-controlled features",
+      "number": "8.2"
+    },
+    {
+      "id": "connect-to-sensor",
+      "href": "https://w3c.github.io/sensors/#connect-to-sensor",
+      "level": 3,
+      "title": "Connect to sensor",
+      "number": "8.3"
+    },
+    {
+      "id": "activate-a-sensor-object",
+      "href": "https://w3c.github.io/sensors/#activate-a-sensor-object",
+      "level": 3,
+      "title": "Activate a sensor object",
+      "number": "8.4"
+    },
+    {
+      "id": "deactivate-a-sensor-object",
+      "href": "https://w3c.github.io/sensors/#deactivate-a-sensor-object",
+      "level": 3,
+      "title": "Deactivate a sensor object",
+      "number": "8.5"
+    },
+    {
+      "id": "revoke-sensor-permission",
+      "href": "https://w3c.github.io/sensors/#revoke-sensor-permission",
+      "level": 3,
+      "title": "Revoke sensor permission",
+      "number": "8.6"
+    },
+    {
+      "id": "set-sensor-settings",
+      "href": "https://w3c.github.io/sensors/#set-sensor-settings",
+      "level": 3,
+      "title": "Set sensor settings",
+      "number": "8.7"
+    },
+    {
+      "id": "update-latest-reading",
+      "href": "https://w3c.github.io/sensors/#update-latest-reading",
+      "level": 3,
+      "title": "Update latest reading",
+      "number": "8.8"
+    },
+    {
+      "id": "find-the-reporting-frequency-of-a-sensor-object",
+      "href": "https://w3c.github.io/sensors/#find-the-reporting-frequency-of-a-sensor-object",
+      "level": 3,
+      "title": "Find the reporting frequency of a sensor object",
+      "number": "8.9"
+    },
+    {
+      "id": "report-latest-reading-updated",
+      "href": "https://w3c.github.io/sensors/#report-latest-reading-updated",
+      "level": 3,
+      "title": "Report latest reading updated",
+      "number": "8.10"
+    },
+    {
+      "id": "notify-new-reading",
+      "href": "https://w3c.github.io/sensors/#notify-new-reading",
+      "level": 3,
+      "title": "Notify new reading",
+      "number": "8.11"
+    },
+    {
+      "id": "notify-activated-state",
+      "href": "https://w3c.github.io/sensors/#notify-activated-state",
+      "level": 3,
+      "title": "Notify activated state",
+      "number": "8.12"
+    },
+    {
+      "id": "notify-error",
+      "href": "https://w3c.github.io/sensors/#notify-error",
+      "level": 3,
+      "title": "Notify error",
+      "number": "8.13"
+    },
+    {
+      "id": "get-value-from-latest-reading",
+      "href": "https://w3c.github.io/sensors/#get-value-from-latest-reading",
+      "level": 3,
+      "title": "Get value from latest reading",
+      "number": "8.14"
+    },
+    {
+      "id": "request-sensor-access",
+      "href": "https://w3c.github.io/sensors/#request-sensor-access",
+      "level": 3,
+      "title": "Request sensor access",
+      "number": "8.15"
+    },
+    {
+      "id": "automation",
+      "href": "https://w3c.github.io/sensors/#automation",
+      "level": 2,
+      "title": "Automation",
+      "number": "9"
+    },
+    {
+      "id": "mock-sensors",
+      "href": "https://w3c.github.io/sensors/#mock-sensors",
+      "level": 3,
+      "title": "Mock Sensors",
+      "number": "9.1"
+    },
+    {
+      "id": "dictionary-mocksensorconfiguration",
+      "href": "https://w3c.github.io/sensors/#dictionary-mocksensorconfiguration",
+      "level": 4,
+      "title": "MockSensorConfiguration dictionary",
+      "number": "9.1.1"
+    },
+    {
+      "id": "dictionary-mocksensor",
+      "href": "https://w3c.github.io/sensors/#dictionary-mocksensor",
+      "level": 4,
+      "title": "MockSensor dictionary",
+      "number": "9.1.2"
+    },
+    {
+      "id": "section-mock-sensor-type",
+      "href": "https://w3c.github.io/sensors/#section-mock-sensor-type",
+      "level": 4,
+      "title": "Mock sensor type",
+      "number": "9.1.3"
+    },
+    {
+      "id": "section-extension-commands",
+      "href": "https://w3c.github.io/sensors/#section-extension-commands",
+      "level": 3,
+      "title": "Extension Commands",
+      "number": "9.2"
+    },
+    {
+      "id": "create-mock-sensor-command",
+      "href": "https://w3c.github.io/sensors/#create-mock-sensor-command",
+      "level": 4,
+      "title": "Create mock sensor",
+      "number": "9.2.1"
+    },
+    {
+      "id": "get-mock-sensor-command",
+      "href": "https://w3c.github.io/sensors/#get-mock-sensor-command",
+      "level": 4,
+      "title": "Get mock sensor",
+      "number": "9.2.2"
+    },
+    {
+      "id": "update-mock-sensor-reading-command",
+      "href": "https://w3c.github.io/sensors/#update-mock-sensor-reading-command",
+      "level": 4,
+      "title": "Update mock sensor reading",
+      "number": "9.2.3"
+    },
+    {
+      "id": "delete-mock-sensor-command",
+      "href": "https://w3c.github.io/sensors/#delete-mock-sensor-command",
+      "level": 4,
+      "title": "Delete mock sensor",
+      "number": "9.2.4"
+    },
+    {
+      "id": "extension-handling-errors",
+      "href": "https://w3c.github.io/sensors/#extension-handling-errors",
+      "level": 3,
+      "title": "Handling errors",
+      "number": "9.3"
+    },
+    {
+      "id": "extensibility",
+      "href": "https://w3c.github.io/sensors/#extensibility",
+      "level": 2,
+      "title": "10. Extensibility"
+    },
+    {
+      "id": "extension-security-and-privacy",
+      "href": "https://w3c.github.io/sensors/#extension-security-and-privacy",
+      "level": 3,
+      "title": "Security and Privacy",
+      "number": "10.1"
+    },
+    {
+      "id": "naming",
+      "href": "https://w3c.github.io/sensors/#naming",
+      "level": 3,
+      "title": "Naming",
+      "number": "10.2"
+    },
+    {
+      "id": "unit",
+      "href": "https://w3c.github.io/sensors/#unit",
+      "level": 3,
+      "title": "Unit",
+      "number": "10.3"
+    },
+    {
+      "id": "high-vs-low-level",
+      "href": "https://w3c.github.io/sensors/#high-vs-low-level",
+      "level": 3,
+      "title": "Exposing High-Level vs. Low-Level Sensors",
+      "number": "10.4"
+    },
+    {
+      "id": "multiple-sensors",
+      "href": "https://w3c.github.io/sensors/#multiple-sensors",
+      "level": 3,
+      "title": "When is Enabling Multiple Sensors of the Same Type Not the Right Choice?",
+      "number": "10.5"
+    },
+    {
+      "id": "definition-reqs",
+      "href": "https://w3c.github.io/sensors/#definition-reqs",
+      "level": 3,
+      "title": "Definition Requirements",
+      "number": "10.6"
+    },
+    {
+      "id": "extend-automation",
+      "href": "https://w3c.github.io/sensors/#extend-automation",
+      "level": 3,
+      "title": "Automation",
+      "number": "10.7"
+    },
+    {
+      "id": "permission-api",
+      "href": "https://w3c.github.io/sensors/#permission-api",
+      "level": 3,
+      "title": "Extending the Permission API",
+      "number": "10.8"
+    },
+    {
+      "id": "permissions-policy-api",
+      "href": "https://w3c.github.io/sensors/#permissions-policy-api",
+      "level": 3,
+      "title": "Extending the Permissions Policy API",
+      "number": "10.9"
+    },
+    {
+      "id": "example-webidl",
+      "href": "https://w3c.github.io/sensors/#example-webidl",
+      "level": 3,
+      "title": "Example WebIDL",
+      "number": "10.10"
+    },
+    {
+      "id": "acknowledgements",
+      "href": "https://w3c.github.io/sensors/#acknowledgements",
+      "level": 2,
+      "title": "11. Acknowledgements"
+    },
+    {
+      "id": "conformance",
+      "href": "https://w3c.github.io/sensors/#conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "conventions",
+      "href": "https://w3c.github.io/sensors/#conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "conformant-algorithms",
+      "href": "https://w3c.github.io/sensors/#conformant-algorithms",
+      "level": 3,
+      "title": "Conformant Algorithms"
+    },
+    {
+      "id": "conformance-classes",
+      "href": "https://w3c.github.io/sensors/#conformance-classes",
+      "level": 3,
+      "title": "Conformance Classes"
+    },
+    {
+      "id": "index",
+      "href": "https://w3c.github.io/sensors/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://w3c.github.io/sensors/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://w3c.github.io/sensors/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://w3c.github.io/sensors/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://w3c.github.io/sensors/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://w3c.github.io/sensors/#informative",
+      "level": 3,
+      "title": "Informative References"
+    },
+    {
+      "id": "idl-index",
+      "href": "https://w3c.github.io/sensors/#idl-index",
+      "level": 2,
+      "title": "IDL Index"
+    }
+  ]
+}

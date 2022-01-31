@@ -1,0 +1,563 @@
+{
+  "name": "MediaRecorder",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "MediaStream Recording",
+      "url": "https://www.w3.org/TR/mediastream-recording/"
+    },
+    "fragment": "[Exposed=Window]\ninterface MediaRecorder : EventTarget {\n  constructor(MediaStream stream, optional MediaRecorderOptions options = {});\n  readonly attribute MediaStream stream;\n  readonly attribute DOMString mimeType;\n  readonly attribute RecordingState state;\n  attribute EventHandler onstart;\n  attribute EventHandler onstop;\n  attribute EventHandler ondataavailable;\n  attribute EventHandler onpause;\n  attribute EventHandler onresume;\n  attribute EventHandler onerror;\n  readonly attribute unsigned long videoBitsPerSecond;\n  readonly attribute unsigned long audioBitsPerSecond;\n  readonly attribute BitrateMode audioBitrateMode;\n\n  undefined start(optional unsigned long timeslice);\n  undefined stop();\n  undefined pause();\n  undefined resume();\n  undefined requestData();\n\n  static boolean isTypeSupported(DOMString type);\n};",
+    "href": "https://w3c.github.io/mediacapture-record/#mediarecorder"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "EventTarget",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=*]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+      "href": "https://dom.spec.whatwg.org/#eventtarget"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/mediastream-recording/": [
+      {
+        "id": "mediarecorder",
+        "href": "https://w3c.github.io/mediacapture-record/#mediarecorder",
+        "linkingText": [
+          "MediaRecorder"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "mediarecorder-api",
+          "href": "https://w3c.github.io/mediacapture-record/#mediarecorder-api",
+          "title": "Media Recorder API",
+          "number": "2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mediarecorder-mediarecorder",
+        "href": "https://w3c.github.io/mediacapture-record/#dom-mediarecorder-mediarecorder",
+        "linkingText": [
+          "MediaRecorder(stream, options)",
+          "constructor(stream, options)",
+          "MediaRecorder(stream)",
+          "constructor(stream)"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "MediaRecorder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "mediarecorder-constructor",
+          "href": "https://w3c.github.io/mediacapture-record/#mediarecorder-constructor",
+          "title": "Constructors",
+          "number": "2.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediarecorder-stream",
+        "href": "https://w3c.github.io/mediacapture-record/#dom-mediarecorder-stream",
+        "linkingText": [
+          "stream"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "MediaRecorder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "mediarecorder-attributes",
+          "href": "https://w3c.github.io/mediacapture-record/#mediarecorder-attributes",
+          "title": "Attributes",
+          "number": "2.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediarecorder-mimetype",
+        "href": "https://w3c.github.io/mediacapture-record/#dom-mediarecorder-mimetype",
+        "linkingText": [
+          "mimeType"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "MediaRecorder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "mediarecorder-attributes",
+          "href": "https://w3c.github.io/mediacapture-record/#mediarecorder-attributes",
+          "title": "Attributes",
+          "number": "2.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediarecorder-state",
+        "href": "https://w3c.github.io/mediacapture-record/#dom-mediarecorder-state",
+        "linkingText": [
+          "state"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "MediaRecorder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "mediarecorder-attributes",
+          "href": "https://w3c.github.io/mediacapture-record/#mediarecorder-attributes",
+          "title": "Attributes",
+          "number": "2.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediarecorder-onstart",
+        "href": "https://w3c.github.io/mediacapture-record/#dom-mediarecorder-onstart",
+        "linkingText": [
+          "onstart"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "MediaRecorder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "mediarecorder-attributes",
+          "href": "https://w3c.github.io/mediacapture-record/#mediarecorder-attributes",
+          "title": "Attributes",
+          "number": "2.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediarecorder-onstop",
+        "href": "https://w3c.github.io/mediacapture-record/#dom-mediarecorder-onstop",
+        "linkingText": [
+          "onstop"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "MediaRecorder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "mediarecorder-attributes",
+          "href": "https://w3c.github.io/mediacapture-record/#mediarecorder-attributes",
+          "title": "Attributes",
+          "number": "2.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediarecorder-ondataavailable",
+        "href": "https://w3c.github.io/mediacapture-record/#dom-mediarecorder-ondataavailable",
+        "linkingText": [
+          "ondataavailable"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "MediaRecorder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "mediarecorder-attributes",
+          "href": "https://w3c.github.io/mediacapture-record/#mediarecorder-attributes",
+          "title": "Attributes",
+          "number": "2.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediarecorder-onpause",
+        "href": "https://w3c.github.io/mediacapture-record/#dom-mediarecorder-onpause",
+        "linkingText": [
+          "onpause"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "MediaRecorder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "mediarecorder-attributes",
+          "href": "https://w3c.github.io/mediacapture-record/#mediarecorder-attributes",
+          "title": "Attributes",
+          "number": "2.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediarecorder-onresume",
+        "href": "https://w3c.github.io/mediacapture-record/#dom-mediarecorder-onresume",
+        "linkingText": [
+          "onresume"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "MediaRecorder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "mediarecorder-attributes",
+          "href": "https://w3c.github.io/mediacapture-record/#mediarecorder-attributes",
+          "title": "Attributes",
+          "number": "2.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediarecorder-onerror",
+        "href": "https://w3c.github.io/mediacapture-record/#dom-mediarecorder-onerror",
+        "linkingText": [
+          "onerror"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "MediaRecorder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "mediarecorder-attributes",
+          "href": "https://w3c.github.io/mediacapture-record/#mediarecorder-attributes",
+          "title": "Attributes",
+          "number": "2.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediarecorder-videobitspersecond",
+        "href": "https://w3c.github.io/mediacapture-record/#dom-mediarecorder-videobitspersecond",
+        "linkingText": [
+          "videoBitsPerSecond"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "MediaRecorder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "mediarecorder-attributes",
+          "href": "https://w3c.github.io/mediacapture-record/#mediarecorder-attributes",
+          "title": "Attributes",
+          "number": "2.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediarecorder-audiobitspersecond",
+        "href": "https://w3c.github.io/mediacapture-record/#dom-mediarecorder-audiobitspersecond",
+        "linkingText": [
+          "audioBitsPerSecond"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "MediaRecorder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "mediarecorder-attributes",
+          "href": "https://w3c.github.io/mediacapture-record/#mediarecorder-attributes",
+          "title": "Attributes",
+          "number": "2.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediarecorder-audiobitratemode",
+        "href": "https://w3c.github.io/mediacapture-record/#dom-mediarecorder-audiobitratemode",
+        "linkingText": [
+          "audioBitrateMode"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "MediaRecorder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "mediarecorder-attributes",
+          "href": "https://w3c.github.io/mediacapture-record/#mediarecorder-attributes",
+          "title": "Attributes",
+          "number": "2.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediarecorder-start",
+        "href": "https://w3c.github.io/mediacapture-record/#dom-mediarecorder-start",
+        "linkingText": [
+          "start(timeslice)",
+          "start()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MediaRecorder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "mediarecorder-methods",
+          "href": "https://w3c.github.io/mediacapture-record/#mediarecorder-methods",
+          "title": "Methods",
+          "number": "2.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediarecorder-stop",
+        "href": "https://w3c.github.io/mediacapture-record/#dom-mediarecorder-stop",
+        "linkingText": [
+          "stop()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MediaRecorder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "mediarecorder-methods",
+          "href": "https://w3c.github.io/mediacapture-record/#mediarecorder-methods",
+          "title": "Methods",
+          "number": "2.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediarecorder-pause",
+        "href": "https://w3c.github.io/mediacapture-record/#dom-mediarecorder-pause",
+        "linkingText": [
+          "pause()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MediaRecorder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "mediarecorder-methods",
+          "href": "https://w3c.github.io/mediacapture-record/#mediarecorder-methods",
+          "title": "Methods",
+          "number": "2.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediarecorder-resume",
+        "href": "https://w3c.github.io/mediacapture-record/#dom-mediarecorder-resume",
+        "linkingText": [
+          "resume()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MediaRecorder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "mediarecorder-methods",
+          "href": "https://w3c.github.io/mediacapture-record/#mediarecorder-methods",
+          "title": "Methods",
+          "number": "2.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediarecorder-requestdata",
+        "href": "https://w3c.github.io/mediacapture-record/#dom-mediarecorder-requestdata",
+        "linkingText": [
+          "requestData()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MediaRecorder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "mediarecorder-methods",
+          "href": "https://w3c.github.io/mediacapture-record/#mediarecorder-methods",
+          "title": "Methods",
+          "number": "2.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediarecorder-istypesupported",
+        "href": "https://w3c.github.io/mediacapture-record/#dom-mediarecorder-istypesupported",
+        "linkingText": [
+          "isTypeSupported(type)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MediaRecorder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "mediarecorder-methods",
+          "href": "https://w3c.github.io/mediacapture-record/#mediarecorder-methods",
+          "title": "Methods",
+          "number": "2.3"
+        },
+        "definedIn": "dt"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "eventtarget",
+        "href": "https://dom.spec.whatwg.org/#eventtarget",
+        "linkingText": [
+          "EventTarget"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventtarget-eventtarget",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-eventtarget",
+        "linkingText": [
+          "EventTarget()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-addeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-addeventlistener",
+        "linkingText": [
+          "addEventListener(type, callback, options)",
+          "addEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-removeeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-removeeventlistener",
+        "linkingText": [
+          "removeEventListener(type, callback, options)",
+          "removeEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-dispatchevent",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-dispatchevent",
+        "linkingText": [
+          "dispatchEvent(event)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

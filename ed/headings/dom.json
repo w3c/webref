@@ -1,0 +1,645 @@
+{
+  "spec": {
+    "title": "DOM Standard",
+    "url": "https://dom.spec.whatwg.org/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://dom.spec.whatwg.org/#title",
+      "level": 1,
+      "title": "DOM"
+    },
+    {
+      "id": "subtitle",
+      "href": "https://dom.spec.whatwg.org/#subtitle",
+      "level": 2,
+      "title": "Living Standard — Last Updated 24 January 2022"
+    },
+    {
+      "id": "abstract",
+      "href": "https://dom.spec.whatwg.org/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "toc",
+      "href": "https://dom.spec.whatwg.org/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "infrastructure",
+      "href": "https://dom.spec.whatwg.org/#infrastructure",
+      "level": 2,
+      "title": "Infrastructure",
+      "number": "1"
+    },
+    {
+      "id": "trees",
+      "href": "https://dom.spec.whatwg.org/#trees",
+      "level": 3,
+      "title": "Trees",
+      "number": "1.1"
+    },
+    {
+      "id": "ordered-sets",
+      "href": "https://dom.spec.whatwg.org/#ordered-sets",
+      "level": 3,
+      "title": "Ordered sets",
+      "number": "1.2"
+    },
+    {
+      "id": "selectors",
+      "href": "https://dom.spec.whatwg.org/#selectors",
+      "level": 3,
+      "title": "Selectors",
+      "number": "1.3"
+    },
+    {
+      "id": "namespaces",
+      "href": "https://dom.spec.whatwg.org/#namespaces",
+      "level": 3,
+      "title": "Namespaces",
+      "number": "1.4"
+    },
+    {
+      "id": "events",
+      "href": "https://dom.spec.whatwg.org/#events",
+      "level": 2,
+      "title": "Events",
+      "number": "2"
+    },
+    {
+      "id": "introduction-to-dom-events",
+      "href": "https://dom.spec.whatwg.org/#introduction-to-dom-events",
+      "level": 3,
+      "title": "Introduction to \"DOM Events\"",
+      "number": "2.1"
+    },
+    {
+      "id": "interface-event",
+      "href": "https://dom.spec.whatwg.org/#interface-event",
+      "level": 3,
+      "title": "Interface Event",
+      "number": "2.2"
+    },
+    {
+      "id": "interface-window-extensions",
+      "href": "https://dom.spec.whatwg.org/#interface-window-extensions",
+      "level": 3,
+      "title": "Legacy extensions to the Window interface",
+      "number": "2.3"
+    },
+    {
+      "id": "interface-customevent",
+      "href": "https://dom.spec.whatwg.org/#interface-customevent",
+      "level": 3,
+      "title": "Interface CustomEvent",
+      "number": "2.4"
+    },
+    {
+      "id": "constructing-events",
+      "href": "https://dom.spec.whatwg.org/#constructing-events",
+      "level": 3,
+      "title": "Constructing events",
+      "number": "2.5"
+    },
+    {
+      "id": "defining-event-interfaces",
+      "href": "https://dom.spec.whatwg.org/#defining-event-interfaces",
+      "level": 3,
+      "title": "Defining event interfaces",
+      "number": "2.6"
+    },
+    {
+      "id": "interface-eventtarget",
+      "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+      "level": 3,
+      "title": "Interface EventTarget",
+      "number": "2.7"
+    },
+    {
+      "id": "observing-event-listeners",
+      "href": "https://dom.spec.whatwg.org/#observing-event-listeners",
+      "level": 3,
+      "title": "Observing event listeners",
+      "number": "2.8"
+    },
+    {
+      "id": "dispatching-events",
+      "href": "https://dom.spec.whatwg.org/#dispatching-events",
+      "level": 3,
+      "title": "Dispatching events",
+      "number": "2.9"
+    },
+    {
+      "id": "firing-events",
+      "href": "https://dom.spec.whatwg.org/#firing-events",
+      "level": 3,
+      "title": "Firing events",
+      "number": "2.10"
+    },
+    {
+      "id": "action-versus-occurance",
+      "href": "https://dom.spec.whatwg.org/#action-versus-occurance",
+      "level": 3,
+      "title": "Action versus occurrence",
+      "number": "2.11"
+    },
+    {
+      "id": "aborting-ongoing-activities",
+      "href": "https://dom.spec.whatwg.org/#aborting-ongoing-activities",
+      "level": 2,
+      "title": "Aborting ongoing activities",
+      "number": "3"
+    },
+    {
+      "id": "interface-abortcontroller",
+      "href": "https://dom.spec.whatwg.org/#interface-abortcontroller",
+      "level": 3,
+      "title": "Interface AbortController",
+      "number": "3.1"
+    },
+    {
+      "id": "interface-AbortSignal",
+      "href": "https://dom.spec.whatwg.org/#interface-AbortSignal",
+      "level": 3,
+      "title": "Interface AbortSignal",
+      "number": "3.2"
+    },
+    {
+      "id": "abortcontroller-api-integration",
+      "href": "https://dom.spec.whatwg.org/#abortcontroller-api-integration",
+      "level": 3,
+      "title": "Using AbortController and AbortSignal objects in APIs",
+      "number": "3.3"
+    },
+    {
+      "id": "nodes",
+      "href": "https://dom.spec.whatwg.org/#nodes",
+      "level": 2,
+      "title": "Nodes",
+      "number": "4"
+    },
+    {
+      "id": "introduction-to-the-dom",
+      "href": "https://dom.spec.whatwg.org/#introduction-to-the-dom",
+      "level": 3,
+      "title": "Introduction to \"The DOM\"",
+      "number": "4.1"
+    },
+    {
+      "id": "node-trees",
+      "href": "https://dom.spec.whatwg.org/#node-trees",
+      "level": 3,
+      "title": "Node tree",
+      "number": "4.2"
+    },
+    {
+      "id": "document-trees",
+      "href": "https://dom.spec.whatwg.org/#document-trees",
+      "level": 4,
+      "title": "Document tree",
+      "number": "4.2.1"
+    },
+    {
+      "id": "shadow-trees",
+      "href": "https://dom.spec.whatwg.org/#shadow-trees",
+      "level": 4,
+      "title": "Shadow tree",
+      "number": "4.2.2"
+    },
+    {
+      "id": "shadow-tree-slots",
+      "href": "https://dom.spec.whatwg.org/#shadow-tree-slots",
+      "level": 5,
+      "title": "Slots",
+      "number": "4.2.2.1"
+    },
+    {
+      "id": "light-tree-slotables",
+      "href": "https://dom.spec.whatwg.org/#light-tree-slotables",
+      "level": 5,
+      "title": "Slottables",
+      "number": "4.2.2.2"
+    },
+    {
+      "id": "finding-slots-and-slotables",
+      "href": "https://dom.spec.whatwg.org/#finding-slots-and-slotables",
+      "level": 5,
+      "title": "Finding slots and slottables",
+      "number": "4.2.2.3"
+    },
+    {
+      "id": "assigning-slotables-and-slots",
+      "href": "https://dom.spec.whatwg.org/#assigning-slotables-and-slots",
+      "level": 5,
+      "title": "Assigning slottables and slots",
+      "number": "4.2.2.4"
+    },
+    {
+      "id": "signaling-slot-change",
+      "href": "https://dom.spec.whatwg.org/#signaling-slot-change",
+      "level": 5,
+      "title": "Signaling slot change",
+      "number": "4.2.2.5"
+    },
+    {
+      "id": "mutation-algorithms",
+      "href": "https://dom.spec.whatwg.org/#mutation-algorithms",
+      "level": 4,
+      "title": "Mutation algorithms",
+      "number": "4.2.3"
+    },
+    {
+      "id": "interface-nonelementparentnode",
+      "href": "https://dom.spec.whatwg.org/#interface-nonelementparentnode",
+      "level": 4,
+      "title": "Mixin NonElementParentNode",
+      "number": "4.2.4"
+    },
+    {
+      "id": "mixin-documentorshadowroot",
+      "href": "https://dom.spec.whatwg.org/#mixin-documentorshadowroot",
+      "level": 4,
+      "title": "Mixin DocumentOrShadowRoot",
+      "number": "4.2.5"
+    },
+    {
+      "id": "interface-parentnode",
+      "href": "https://dom.spec.whatwg.org/#interface-parentnode",
+      "level": 4,
+      "title": "Mixin ParentNode",
+      "number": "4.2.6"
+    },
+    {
+      "id": "interface-nondocumenttypechildnode",
+      "href": "https://dom.spec.whatwg.org/#interface-nondocumenttypechildnode",
+      "level": 4,
+      "title": "Mixin NonDocumentTypeChildNode",
+      "number": "4.2.7"
+    },
+    {
+      "id": "interface-childnode",
+      "href": "https://dom.spec.whatwg.org/#interface-childnode",
+      "level": 4,
+      "title": "Mixin ChildNode",
+      "number": "4.2.8"
+    },
+    {
+      "id": "mixin-slotable",
+      "href": "https://dom.spec.whatwg.org/#mixin-slotable",
+      "level": 4,
+      "title": "Mixin Slottable",
+      "number": "4.2.9"
+    },
+    {
+      "id": "old-style-collections",
+      "href": "https://dom.spec.whatwg.org/#old-style-collections",
+      "level": 4,
+      "title": "Old-style collections: NodeList and HTMLCollection",
+      "number": "4.2.10"
+    },
+    {
+      "id": "interface-nodelist",
+      "href": "https://dom.spec.whatwg.org/#interface-nodelist",
+      "level": 5,
+      "title": "Interface NodeList",
+      "number": "4.2.10.1"
+    },
+    {
+      "id": "interface-htmlcollection",
+      "href": "https://dom.spec.whatwg.org/#interface-htmlcollection",
+      "level": 5,
+      "title": "Interface HTMLCollection",
+      "number": "4.2.10.2"
+    },
+    {
+      "id": "mutation-observers",
+      "href": "https://dom.spec.whatwg.org/#mutation-observers",
+      "level": 3,
+      "title": "Mutation observers",
+      "number": "4.3"
+    },
+    {
+      "id": "interface-mutationobserver",
+      "href": "https://dom.spec.whatwg.org/#interface-mutationobserver",
+      "level": 4,
+      "title": "Interface MutationObserver",
+      "number": "4.3.1"
+    },
+    {
+      "id": "queueing-a-mutation-record",
+      "href": "https://dom.spec.whatwg.org/#queueing-a-mutation-record",
+      "level": 4,
+      "title": "Queuing a mutation record",
+      "number": "4.3.2"
+    },
+    {
+      "id": "interface-mutationrecord",
+      "href": "https://dom.spec.whatwg.org/#interface-mutationrecord",
+      "level": 4,
+      "title": "Interface MutationRecord",
+      "number": "4.3.3"
+    },
+    {
+      "id": "garbage-collection",
+      "href": "https://dom.spec.whatwg.org/#garbage-collection",
+      "level": 4,
+      "title": "Garbage collection",
+      "number": "4.3.4"
+    },
+    {
+      "id": "interface-node",
+      "href": "https://dom.spec.whatwg.org/#interface-node",
+      "level": 3,
+      "title": "Interface Node",
+      "number": "4.4"
+    },
+    {
+      "id": "interface-document",
+      "href": "https://dom.spec.whatwg.org/#interface-document",
+      "level": 3,
+      "title": "Interface Document",
+      "number": "4.5"
+    },
+    {
+      "id": "interface-domimplementation",
+      "href": "https://dom.spec.whatwg.org/#interface-domimplementation",
+      "level": 4,
+      "title": "Interface DOMImplementation",
+      "number": "4.5.1"
+    },
+    {
+      "id": "interface-documenttype",
+      "href": "https://dom.spec.whatwg.org/#interface-documenttype",
+      "level": 3,
+      "title": "Interface DocumentType",
+      "number": "4.6"
+    },
+    {
+      "id": "interface-documentfragment",
+      "href": "https://dom.spec.whatwg.org/#interface-documentfragment",
+      "level": 3,
+      "title": "Interface DocumentFragment",
+      "number": "4.7"
+    },
+    {
+      "id": "interface-shadowroot",
+      "href": "https://dom.spec.whatwg.org/#interface-shadowroot",
+      "level": 3,
+      "title": "Interface ShadowRoot",
+      "number": "4.8"
+    },
+    {
+      "id": "interface-element",
+      "href": "https://dom.spec.whatwg.org/#interface-element",
+      "level": 3,
+      "title": "Interface Element",
+      "number": "4.9"
+    },
+    {
+      "id": "interface-namednodemap",
+      "href": "https://dom.spec.whatwg.org/#interface-namednodemap",
+      "level": 4,
+      "title": "Interface NamedNodeMap",
+      "number": "4.9.1"
+    },
+    {
+      "id": "interface-attr",
+      "href": "https://dom.spec.whatwg.org/#interface-attr",
+      "level": 4,
+      "title": "Interface Attr",
+      "number": "4.9.2"
+    },
+    {
+      "id": "interface-characterdata",
+      "href": "https://dom.spec.whatwg.org/#interface-characterdata",
+      "level": 3,
+      "title": "Interface CharacterData",
+      "number": "4.10"
+    },
+    {
+      "id": "interface-text",
+      "href": "https://dom.spec.whatwg.org/#interface-text",
+      "level": 3,
+      "title": "Interface Text",
+      "number": "4.11"
+    },
+    {
+      "id": "interface-cdatasection",
+      "href": "https://dom.spec.whatwg.org/#interface-cdatasection",
+      "level": 3,
+      "title": "Interface CDATASection",
+      "number": "4.12"
+    },
+    {
+      "id": "interface-processinginstruction",
+      "href": "https://dom.spec.whatwg.org/#interface-processinginstruction",
+      "level": 3,
+      "title": "Interface ProcessingInstruction",
+      "number": "4.13"
+    },
+    {
+      "id": "interface-comment",
+      "href": "https://dom.spec.whatwg.org/#interface-comment",
+      "level": 3,
+      "title": "Interface Comment",
+      "number": "4.14"
+    },
+    {
+      "id": "ranges",
+      "href": "https://dom.spec.whatwg.org/#ranges",
+      "level": 2,
+      "title": "Ranges",
+      "number": "5"
+    },
+    {
+      "id": "introduction-to-dom-ranges",
+      "href": "https://dom.spec.whatwg.org/#introduction-to-dom-ranges",
+      "level": 3,
+      "title": "Introduction to \"DOM Ranges\"",
+      "number": "5.1"
+    },
+    {
+      "id": "boundary-points",
+      "href": "https://dom.spec.whatwg.org/#boundary-points",
+      "level": 3,
+      "title": "Boundary points",
+      "number": "5.2"
+    },
+    {
+      "id": "interface-abstractrange",
+      "href": "https://dom.spec.whatwg.org/#interface-abstractrange",
+      "level": 3,
+      "title": "Interface AbstractRange",
+      "number": "5.3"
+    },
+    {
+      "id": "interface-staticrange",
+      "href": "https://dom.spec.whatwg.org/#interface-staticrange",
+      "level": 3,
+      "title": "Interface StaticRange",
+      "number": "5.4"
+    },
+    {
+      "id": "interface-range",
+      "href": "https://dom.spec.whatwg.org/#interface-range",
+      "level": 3,
+      "title": "Interface Range",
+      "number": "5.5"
+    },
+    {
+      "id": "traversal",
+      "href": "https://dom.spec.whatwg.org/#traversal",
+      "level": 2,
+      "title": "Traversal",
+      "number": "6"
+    },
+    {
+      "id": "interface-nodeiterator",
+      "href": "https://dom.spec.whatwg.org/#interface-nodeiterator",
+      "level": 3,
+      "title": "Interface NodeIterator",
+      "number": "6.1"
+    },
+    {
+      "id": "interface-treewalker",
+      "href": "https://dom.spec.whatwg.org/#interface-treewalker",
+      "level": 3,
+      "title": "Interface TreeWalker",
+      "number": "6.2"
+    },
+    {
+      "id": "interface-nodefilter",
+      "href": "https://dom.spec.whatwg.org/#interface-nodefilter",
+      "level": 3,
+      "title": "Interface NodeFilter",
+      "number": "6.3"
+    },
+    {
+      "id": "sets",
+      "href": "https://dom.spec.whatwg.org/#sets",
+      "level": 2,
+      "title": "Sets",
+      "number": "7"
+    },
+    {
+      "id": "interface-domtokenlist",
+      "href": "https://dom.spec.whatwg.org/#interface-domtokenlist",
+      "level": 3,
+      "title": "Interface DOMTokenList",
+      "number": "7.1"
+    },
+    {
+      "id": "xpath",
+      "href": "https://dom.spec.whatwg.org/#xpath",
+      "level": 2,
+      "title": "XPath",
+      "number": "8"
+    },
+    {
+      "id": "interface-xpathresult",
+      "href": "https://dom.spec.whatwg.org/#interface-xpathresult",
+      "level": 3,
+      "title": "Interface XPathResult",
+      "number": "8.1"
+    },
+    {
+      "id": "interface-xpathexpression",
+      "href": "https://dom.spec.whatwg.org/#interface-xpathexpression",
+      "level": 3,
+      "title": "Interface XPathExpression",
+      "number": "8.2"
+    },
+    {
+      "id": "mixin-xpathevaluatorbase",
+      "href": "https://dom.spec.whatwg.org/#mixin-xpathevaluatorbase",
+      "level": 3,
+      "title": "Mixin XPathEvaluatorBase",
+      "number": "8.3"
+    },
+    {
+      "id": "interface-xpathevaluator",
+      "href": "https://dom.spec.whatwg.org/#interface-xpathevaluator",
+      "level": 3,
+      "title": "Interface XPathEvaluator",
+      "number": "8.4"
+    },
+    {
+      "id": "xslt",
+      "href": "https://dom.spec.whatwg.org/#xslt",
+      "level": 2,
+      "title": "XSLT",
+      "number": "9"
+    },
+    {
+      "id": "interface-xsltprocessor",
+      "href": "https://dom.spec.whatwg.org/#interface-xsltprocessor",
+      "level": 3,
+      "title": "Interface XSLTProcessor",
+      "number": "9.1"
+    },
+    {
+      "id": "historical",
+      "href": "https://dom.spec.whatwg.org/#historical",
+      "level": 2,
+      "title": "10. Historical"
+    },
+    {
+      "id": "acks",
+      "href": "https://dom.spec.whatwg.org/#acks",
+      "level": 2,
+      "title": "Acknowledgments"
+    },
+    {
+      "id": "ipr",
+      "href": "https://dom.spec.whatwg.org/#ipr",
+      "level": 2,
+      "title": "Intellectual property rights"
+    },
+    {
+      "id": "index",
+      "href": "https://dom.spec.whatwg.org/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://dom.spec.whatwg.org/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://dom.spec.whatwg.org/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://dom.spec.whatwg.org/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://dom.spec.whatwg.org/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://dom.spec.whatwg.org/#informative",
+      "level": 3,
+      "title": "Informative References"
+    },
+    {
+      "id": "idl-index",
+      "href": "https://dom.spec.whatwg.org/#idl-index",
+      "level": 2,
+      "title": "IDL Index"
+    }
+  ]
+}

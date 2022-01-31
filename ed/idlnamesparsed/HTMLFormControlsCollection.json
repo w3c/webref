@@ -1,0 +1,157 @@
+{
+  "name": "HTMLFormControlsCollection",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "HTML Standard",
+      "url": "https://html.spec.whatwg.org/multipage/"
+    },
+    "fragment": "[Exposed=Window]\ninterface HTMLFormControlsCollection : HTMLCollection {\n  // inherits length and item()\n  getter (RadioNodeList or Element)? namedItem(DOMString name); // shadows inherited namedItem()\n};",
+    "href": "https://html.spec.whatwg.org/multipage/common-dom-interfaces.html#htmlformcontrolscollection"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "HTMLCollection",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=Window, LegacyUnenumerableNamedProperties]\ninterface HTMLCollection {\n  readonly attribute unsigned long length;\n  getter Element? item(unsigned long index);\n  getter Element? namedItem(DOMString name);\n};",
+      "href": "https://dom.spec.whatwg.org/#htmlcollection"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://html.spec.whatwg.org/multipage/": [
+      {
+        "id": "htmlformcontrolscollection",
+        "href": "https://html.spec.whatwg.org/multipage/common-dom-interfaces.html#htmlformcontrolscollection",
+        "linkingText": [
+          "HTMLFormControlsCollection"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-htmlformcontrolscollection-interface",
+          "href": "https://html.spec.whatwg.org/multipage/common-dom-interfaces.html#the-htmlformcontrolscollection-interface",
+          "title": "The HTMLFormControlsCollection interface",
+          "number": "2.6.2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-htmlformcontrolscollection-nameditem",
+        "href": "https://html.spec.whatwg.org/multipage/common-dom-interfaces.html#dom-htmlformcontrolscollection-nameditem",
+        "linkingText": [
+          "namedItem(name)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "HTMLFormControlsCollection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-htmlformcontrolscollection-interface",
+          "href": "https://html.spec.whatwg.org/multipage/common-dom-interfaces.html#the-htmlformcontrolscollection-interface",
+          "title": "The HTMLFormControlsCollection interface",
+          "number": "2.6.2.2"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "htmlcollection",
+        "href": "https://dom.spec.whatwg.org/#htmlcollection",
+        "linkingText": [
+          "HTMLCollection"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-htmlcollection",
+          "href": "https://dom.spec.whatwg.org/#interface-htmlcollection",
+          "title": "Interface HTMLCollection",
+          "number": "4.2.10.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-htmlcollection-length",
+        "href": "https://dom.spec.whatwg.org/#dom-htmlcollection-length",
+        "linkingText": [
+          "length"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "HTMLCollection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-htmlcollection",
+          "href": "https://dom.spec.whatwg.org/#interface-htmlcollection",
+          "title": "Interface HTMLCollection",
+          "number": "4.2.10.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-htmlcollection-item",
+        "href": "https://dom.spec.whatwg.org/#dom-htmlcollection-item",
+        "linkingText": [
+          "item(index)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "HTMLCollection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-htmlcollection",
+          "href": "https://dom.spec.whatwg.org/#interface-htmlcollection",
+          "title": "Interface HTMLCollection",
+          "number": "4.2.10.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-htmlcollection-nameditem",
+        "href": "https://dom.spec.whatwg.org/#dom-htmlcollection-nameditem",
+        "linkingText": [
+          "namedItem(name)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "HTMLCollection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-htmlcollection",
+          "href": "https://dom.spec.whatwg.org/#interface-htmlcollection",
+          "title": "Interface HTMLCollection",
+          "number": "4.2.10.2"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

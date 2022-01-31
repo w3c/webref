@@ -1,0 +1,123 @@
+{
+  "name": "Clients",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Service Workers Nightly",
+      "url": "https://www.w3.org/TR/service-workers-1/"
+    },
+    "fragment": "[Exposed=ServiceWorker]\ninterface Clients {\n  // The objects returned will be new instances every time\n  [NewObject] Promise<(Client or undefined)> get(DOMString id);\n  [NewObject] Promise<FrozenArray<Client>> matchAll(optional ClientQueryOptions options = {});\n  [NewObject] Promise<WindowClient?> openWindow(USVString url);\n  [NewObject] Promise<undefined> claim();\n};",
+    "href": "https://w3c.github.io/ServiceWorker/#clients"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/service-workers-1/": [
+      {
+        "id": "clients",
+        "href": "https://w3c.github.io/ServiceWorker/#clients",
+        "linkingText": [
+          "Clients"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "clients-interface",
+          "href": "https://w3c.github.io/ServiceWorker/#clients-interface",
+          "title": "Clients",
+          "number": "4.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-clients-get",
+        "href": "https://w3c.github.io/ServiceWorker/#dom-clients-get",
+        "linkingText": [
+          "get(id)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Clients"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "clients-get",
+          "href": "https://w3c.github.io/ServiceWorker/#clients-get",
+          "title": "get(id)",
+          "number": "4.3.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-clients-matchall",
+        "href": "https://w3c.github.io/ServiceWorker/#dom-clients-matchall",
+        "linkingText": [
+          "matchAll(options)",
+          "matchAll()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Clients"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "clients-matchall",
+          "href": "https://w3c.github.io/ServiceWorker/#clients-matchall",
+          "title": "matchAll(options)",
+          "number": "4.3.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-clients-openwindow",
+        "href": "https://w3c.github.io/ServiceWorker/#dom-clients-openwindow",
+        "linkingText": [
+          "openWindow(url)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Clients"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "clients-openwindow",
+          "href": "https://w3c.github.io/ServiceWorker/#clients-openwindow",
+          "title": "openWindow(url)",
+          "number": "4.3.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-clients-claim",
+        "href": "https://w3c.github.io/ServiceWorker/#dom-clients-claim",
+        "linkingText": [
+          "claim()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Clients"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "clients-claim",
+          "href": "https://w3c.github.io/ServiceWorker/#clients-claim",
+          "title": "claim()",
+          "number": "4.3.4"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

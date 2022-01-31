@@ -1,0 +1,7 @@
+// Source: Trusted Types (https://w3c.github.io/webappsec-trusted-types/dist/spec/)
+[Exposed=(Window,Worker)]
+interface TrustedScriptURL {
+  stringifier;
+  USVString toJSON();
+  static TrustedScriptURL fromLiteral(object templateStringsArray);
+};

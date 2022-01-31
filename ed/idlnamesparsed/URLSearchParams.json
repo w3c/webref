@@ -1,0 +1,230 @@
+{
+  "name": "URLSearchParams",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "URL Standard",
+      "url": "https://url.spec.whatwg.org/"
+    },
+    "fragment": "[Exposed=*]\ninterface URLSearchParams {\n  constructor(optional (sequence<sequence<USVString>> or record<USVString, USVString> or USVString) init = \"\");\n\n  undefined append(USVString name, USVString value);\n  undefined delete(USVString name);\n  USVString? get(USVString name);\n  sequence<USVString> getAll(USVString name);\n  boolean has(USVString name);\n  undefined set(USVString name, USVString value);\n\n  undefined sort();\n\n  iterable<USVString, USVString>;\n  stringifier;\n};",
+    "href": "https://url.spec.whatwg.org/#urlsearchparams"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://url.spec.whatwg.org/": [
+      {
+        "id": "urlsearchparams",
+        "href": "https://url.spec.whatwg.org/#urlsearchparams",
+        "linkingText": [
+          "URLSearchParams"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-urlsearchparams",
+          "href": "https://url.spec.whatwg.org/#interface-urlsearchparams",
+          "title": "URLSearchParams class",
+          "number": "6.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-urlsearchparams-urlsearchparams",
+        "href": "https://url.spec.whatwg.org/#dom-urlsearchparams-urlsearchparams",
+        "linkingText": [
+          "URLSearchParams(init)",
+          "constructor(init)",
+          "URLSearchParams()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "URLSearchParams"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-urlsearchparams",
+          "href": "https://url.spec.whatwg.org/#interface-urlsearchparams",
+          "title": "URLSearchParams class",
+          "number": "6.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-urlsearchparams-append",
+        "href": "https://url.spec.whatwg.org/#dom-urlsearchparams-append",
+        "linkingText": [
+          "append(name, value)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "URLSearchParams"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-urlsearchparams",
+          "href": "https://url.spec.whatwg.org/#interface-urlsearchparams",
+          "title": "URLSearchParams class",
+          "number": "6.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-urlsearchparams-delete",
+        "href": "https://url.spec.whatwg.org/#dom-urlsearchparams-delete",
+        "linkingText": [
+          "delete(name)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "URLSearchParams"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-urlsearchparams",
+          "href": "https://url.spec.whatwg.org/#interface-urlsearchparams",
+          "title": "URLSearchParams class",
+          "number": "6.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-urlsearchparams-get",
+        "href": "https://url.spec.whatwg.org/#dom-urlsearchparams-get",
+        "linkingText": [
+          "get(name)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "URLSearchParams"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-urlsearchparams",
+          "href": "https://url.spec.whatwg.org/#interface-urlsearchparams",
+          "title": "URLSearchParams class",
+          "number": "6.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-urlsearchparams-getall",
+        "href": "https://url.spec.whatwg.org/#dom-urlsearchparams-getall",
+        "linkingText": [
+          "getAll(name)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "URLSearchParams"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-urlsearchparams",
+          "href": "https://url.spec.whatwg.org/#interface-urlsearchparams",
+          "title": "URLSearchParams class",
+          "number": "6.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-urlsearchparams-has",
+        "href": "https://url.spec.whatwg.org/#dom-urlsearchparams-has",
+        "linkingText": [
+          "has(name)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "URLSearchParams"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-urlsearchparams",
+          "href": "https://url.spec.whatwg.org/#interface-urlsearchparams",
+          "title": "URLSearchParams class",
+          "number": "6.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-urlsearchparams-set",
+        "href": "https://url.spec.whatwg.org/#dom-urlsearchparams-set",
+        "linkingText": [
+          "set(name, value)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "URLSearchParams"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-urlsearchparams",
+          "href": "https://url.spec.whatwg.org/#interface-urlsearchparams",
+          "title": "URLSearchParams class",
+          "number": "6.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-urlsearchparams-sort",
+        "href": "https://url.spec.whatwg.org/#dom-urlsearchparams-sort",
+        "linkingText": [
+          "sort()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "URLSearchParams"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-urlsearchparams",
+          "href": "https://url.spec.whatwg.org/#interface-urlsearchparams",
+          "title": "URLSearchParams class",
+          "number": "6.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "urlsearchparams-stringification-behavior",
+        "href": "https://url.spec.whatwg.org/#urlsearchparams-stringification-behavior",
+        "linkingText": [
+          "stringificationbehavior"
+        ],
+        "localLinkingText": [],
+        "type": "dfn",
+        "for": [
+          "URLSearchParams"
+        ],
+        "access": "private",
+        "informative": false,
+        "heading": {
+          "id": "interface-urlsearchparams",
+          "href": "https://url.spec.whatwg.org/#interface-urlsearchparams",
+          "title": "URLSearchParams class",
+          "number": "6.2"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

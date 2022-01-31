@@ -1,0 +1,176 @@
+{
+  "name": "WaveShaperOptions",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Web Audio API",
+      "url": "https://www.w3.org/TR/webaudio/"
+    },
+    "fragment": "dictionary WaveShaperOptions : AudioNodeOptions {\n  sequence<float> curve;\n  OverSampleType oversample = \"none\";\n};",
+    "href": "https://webaudio.github.io/web-audio-api/#dictdef-waveshaperoptions"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "AudioNodeOptions",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "Web Audio API",
+        "url": "https://www.w3.org/TR/webaudio/"
+      },
+      "fragment": "dictionary AudioNodeOptions {\n  unsigned long channelCount;\n  ChannelCountMode channelCountMode;\n  ChannelInterpretation channelInterpretation;\n};",
+      "href": "https://webaudio.github.io/web-audio-api/#dictdef-audionodeoptions"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webaudio/": [
+      {
+        "id": "dictdef-waveshaperoptions",
+        "href": "https://webaudio.github.io/web-audio-api/#dictdef-waveshaperoptions",
+        "linkingText": [
+          "WaveShaperOptions"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "WaveShaperOptions",
+          "href": "https://webaudio.github.io/web-audio-api/#WaveShaperOptions",
+          "title": "WaveShaperOptions",
+          "number": "1.31.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-waveshaperoptions-curve",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-waveshaperoptions-curve",
+        "linkingText": [
+          "curve"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "WaveShaperOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-waveshaperoptions-members",
+          "href": "https://webaudio.github.io/web-audio-api/#dictionary-waveshaperoptions-members",
+          "title": "Dictionary WaveShaperOptions Members",
+          "number": "1.31.3.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-waveshaperoptions-oversample",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-waveshaperoptions-oversample",
+        "linkingText": [
+          "oversample"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "WaveShaperOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-waveshaperoptions-members",
+          "href": "https://webaudio.github.io/web-audio-api/#dictionary-waveshaperoptions-members",
+          "title": "Dictionary WaveShaperOptions Members",
+          "number": "1.31.3.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dictdef-audionodeoptions",
+        "href": "https://webaudio.github.io/web-audio-api/#dictdef-audionodeoptions",
+        "linkingText": [
+          "AudioNodeOptions"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "AudioNodeOptions",
+          "href": "https://webaudio.github.io/web-audio-api/#AudioNodeOptions",
+          "title": "AudioNodeOptions",
+          "number": "1.5.6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-audionodeoptions-channelcount",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-audionodeoptions-channelcount",
+        "linkingText": [
+          "channelCount"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "AudioNodeOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-audionodeoptions-members",
+          "href": "https://webaudio.github.io/web-audio-api/#dictionary-audionodeoptions-members",
+          "title": "Dictionary AudioNodeOptions Members",
+          "number": "1.5.6.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-audionodeoptions-channelcountmode",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-audionodeoptions-channelcountmode",
+        "linkingText": [
+          "channelCountMode"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "AudioNodeOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-audionodeoptions-members",
+          "href": "https://webaudio.github.io/web-audio-api/#dictionary-audionodeoptions-members",
+          "title": "Dictionary AudioNodeOptions Members",
+          "number": "1.5.6.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-audionodeoptions-channelinterpretation",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-audionodeoptions-channelinterpretation",
+        "linkingText": [
+          "channelInterpretation"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "AudioNodeOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-audionodeoptions-members",
+          "href": "https://webaudio.github.io/web-audio-api/#dictionary-audionodeoptions-members",
+          "title": "Dictionary AudioNodeOptions Members",
+          "number": "1.5.6.1"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

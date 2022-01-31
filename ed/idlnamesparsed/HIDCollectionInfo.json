@@ -1,0 +1,185 @@
+{
+  "name": "HIDCollectionInfo",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "WebHID API",
+      "url": "https://wicg.github.io/webhid/"
+    },
+    "fragment": "dictionary HIDCollectionInfo {\n    unsigned short usagePage;\n    unsigned short usage;\n    octet type;\n    sequence<HIDCollectionInfo> children;\n    sequence<HIDReportInfo> inputReports;\n    sequence<HIDReportInfo> outputReports;\n    sequence<HIDReportInfo> featureReports;\n};",
+    "href": "https://wicg.github.io/webhid/#dom-hidcollectioninfo"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://wicg.github.io/webhid/": [
+      {
+        "id": "dom-hidcollectioninfo",
+        "href": "https://wicg.github.io/webhid/#dom-hidcollectioninfo",
+        "linkingText": [
+          "HIDCollectionInfo"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "hidcollectioninfo-dictionary",
+          "href": "https://wicg.github.io/webhid/#hidcollectioninfo-dictionary",
+          "title": "HIDCollectionInfo dictionary",
+          "number": "9"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-hidcollectioninfo-usagepage",
+        "href": "https://wicg.github.io/webhid/#dom-hidcollectioninfo-usagepage",
+        "linkingText": [
+          "usagePage"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "HIDCollectionInfo"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "hidcollectioninfo-dictionary",
+          "href": "https://wicg.github.io/webhid/#hidcollectioninfo-dictionary",
+          "title": "HIDCollectionInfo dictionary",
+          "number": "9"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-hidcollectioninfo-usage",
+        "href": "https://wicg.github.io/webhid/#dom-hidcollectioninfo-usage",
+        "linkingText": [
+          "usage"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "HIDCollectionInfo"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "hidcollectioninfo-dictionary",
+          "href": "https://wicg.github.io/webhid/#hidcollectioninfo-dictionary",
+          "title": "HIDCollectionInfo dictionary",
+          "number": "9"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-hidcollectioninfo-type",
+        "href": "https://wicg.github.io/webhid/#dom-hidcollectioninfo-type",
+        "linkingText": [
+          "type"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "HIDCollectionInfo"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "hidcollectioninfo-dictionary",
+          "href": "https://wicg.github.io/webhid/#hidcollectioninfo-dictionary",
+          "title": "HIDCollectionInfo dictionary",
+          "number": "9"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-hidcollectioninfo-children",
+        "href": "https://wicg.github.io/webhid/#dom-hidcollectioninfo-children",
+        "linkingText": [
+          "children"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "HIDCollectionInfo"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "hidcollectioninfo-dictionary",
+          "href": "https://wicg.github.io/webhid/#hidcollectioninfo-dictionary",
+          "title": "HIDCollectionInfo dictionary",
+          "number": "9"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-hidcollectioninfo-inputreports",
+        "href": "https://wicg.github.io/webhid/#dom-hidcollectioninfo-inputreports",
+        "linkingText": [
+          "inputReports"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "HIDCollectionInfo"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "hidcollectioninfo-dictionary",
+          "href": "https://wicg.github.io/webhid/#hidcollectioninfo-dictionary",
+          "title": "HIDCollectionInfo dictionary",
+          "number": "9"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-hidcollectioninfo-outputreports",
+        "href": "https://wicg.github.io/webhid/#dom-hidcollectioninfo-outputreports",
+        "linkingText": [
+          "outputReports"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "HIDCollectionInfo"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "hidcollectioninfo-dictionary",
+          "href": "https://wicg.github.io/webhid/#hidcollectioninfo-dictionary",
+          "title": "HIDCollectionInfo dictionary",
+          "number": "9"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-hidcollectioninfo-featurereports",
+        "href": "https://wicg.github.io/webhid/#dom-hidcollectioninfo-featurereports",
+        "linkingText": [
+          "featureReports"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "HIDCollectionInfo"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "hidcollectioninfo-dictionary",
+          "href": "https://wicg.github.io/webhid/#hidcollectioninfo-dictionary",
+          "title": "HIDCollectionInfo dictionary",
+          "number": "9"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

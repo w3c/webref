@@ -1,0 +1,316 @@
+{
+  "spec": {
+    "title": "CSS Basic User Interface Module Level 4",
+    "url": "https://drafts.csswg.org/css-ui-4/"
+  },
+  "properties": {
+    "outline": {
+      "name": "outline",
+      "value": "[ <'outline-color'> || <'outline-style'> || <'outline-width'> ]",
+      "initial": "see individual properties",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "outline"
+      ]
+    },
+    "outline-width": {
+      "name": "outline-width",
+      "value": "<line-width>",
+      "initial": "medium",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "absolute length; 0 if the outline style is none.",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value",
+      "styleDeclaration": [
+        "outline-width",
+        "outlineWidth"
+      ]
+    },
+    "outline-style": {
+      "name": "outline-style",
+      "value": "auto | <outline-line-style>",
+      "initial": "none",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "specified keyword",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value",
+      "styleDeclaration": [
+        "outline-style",
+        "outlineStyle"
+      ]
+    },
+    "outline-color": {
+      "name": "outline-color",
+      "value": "<color> | invert",
+      "initial": "invert",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "The computed value for invert is invert. For <color> values, see [[!CSS-COLOR-4#resolving-color-values]] in [CSS-COLOR-4].",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value",
+      "styleDeclaration": [
+        "outline-color",
+        "outlineColor"
+      ]
+    },
+    "outline-offset": {
+      "name": "outline-offset",
+      "value": "<length>",
+      "initial": "0",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "absolute length",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value",
+      "styleDeclaration": [
+        "outline-offset",
+        "outlineOffset"
+      ]
+    },
+    "resize": {
+      "name": "resize",
+      "value": "none | both | horizontal | vertical | block | inline",
+      "initial": "none",
+      "appliesTo": "elements with overflow other than visible, and optionally replaced elements such as images, videos, and iframes",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "specified keyword",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "resize"
+      ]
+    },
+    "cursor": {
+      "name": "cursor",
+      "value": "[ [<url> [<x> <y>]?,]* [ auto | default | none | context-menu | help | pointer | progress | wait | cell | crosshair | text | vertical-text | alias | copy | move | no-drop | not-allowed | grab | grabbing | e-resize | n-resize | ne-resize | nw-resize | s-resize | se-resize | sw-resize | w-resize | ew-resize | ns-resize | nesw-resize | nwse-resize | col-resize | row-resize | all-scroll | zoom-in | zoom-out ] ]",
+      "initial": "auto",
+      "appliesTo": "all elements",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "computedValue": "as specified, except with any relative URLs converted to absolute",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "cursor"
+      ]
+    },
+    "caret-color": {
+      "name": "caret-color",
+      "value": "auto | <color>",
+      "initial": "auto",
+      "appliesTo": "all elements",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "computedValue": "The computed value for auto is auto. For <color> values, see [[!CSS-COLOR-4#resolving-color-values]] in [CSS-COLOR-4].",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value",
+      "styleDeclaration": [
+        "caret-color",
+        "caretColor"
+      ]
+    },
+    "caret-shape": {
+      "name": "caret-shape",
+      "value": "auto | bar | block | underscore",
+      "initial": "auto",
+      "appliesTo": "elements that accept input",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "computedValue": "specified keyword",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value",
+      "styleDeclaration": [
+        "caret-shape",
+        "caretShape"
+      ]
+    },
+    "caret": {
+      "name": "caret",
+      "value": "<'caret-color'> || <'caret-shape'>",
+      "initial": "auto",
+      "appliesTo": "elements that accept input",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "caret"
+      ]
+    },
+    "nav-up": {
+      "name": "nav-up",
+      "value": "auto | <id> [ current | root | <target-name> ]?",
+      "initial": "auto",
+      "appliesTo": "all enabled elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "nav-up",
+        "navUp"
+      ]
+    },
+    "nav-right": {
+      "name": "nav-right",
+      "value": "auto | <id> [ current | root | <target-name> ]?",
+      "initial": "auto",
+      "appliesTo": "all enabled elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "nav-right",
+        "navRight"
+      ]
+    },
+    "nav-down": {
+      "name": "nav-down",
+      "value": "auto | <id> [ current | root | <target-name> ]?",
+      "initial": "auto",
+      "appliesTo": "all enabled elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "nav-down",
+        "navDown"
+      ]
+    },
+    "nav-left": {
+      "name": "nav-left",
+      "value": "auto | <id> [ current | root | <target-name> ]?",
+      "initial": "auto",
+      "appliesTo": "all enabled elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "nav-left",
+        "navLeft"
+      ]
+    },
+    "user-select": {
+      "name": "user-select",
+      "value": "auto | text | none | contain | all",
+      "initial": "auto",
+      "appliesTo": "all elements, and optionally to the ::before and ::after pseudo-elements",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "specified keyword",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "user-select",
+        "userSelect"
+      ]
+    },
+    "pointer-events": {
+      "name": "pointer-events",
+      "value": "auto | none",
+      "initial": "auto",
+      "appliesTo": "all elements",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "computedValue": "specified keyword",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
+      "styleDeclaration": [
+        "pointer-events",
+        "pointerEvents"
+      ]
+    },
+    "accent-color": {
+      "name": "accent-color",
+      "value": "auto | <color>",
+      "initial": "auto",
+      "appliesTo": "all elements",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "computedValue": "the keyword auto or a computed color",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
+      "styleDeclaration": [
+        "accent-color",
+        "accentColor"
+      ]
+    },
+    "appearance": {
+      "name": "appearance",
+      "value": "none | auto | textfield | menulist-button | <compat-auto>",
+      "initial": "none",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "specified keyword",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "appearance"
+      ]
+    },
+    "input-security": {
+      "name": "input-security",
+      "value": "auto | none",
+      "initial": "auto",
+      "appliesTo": "sensitive text inputs",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
+      "styleDeclaration": [
+        "input-security",
+        "inputSecurity"
+      ]
+    },
+    "-webkit-user-select": {
+      "name": "-webkit-user-select",
+      "styleDeclaration": [
+        "-webkit-user-select",
+        "WebkitUserSelect",
+        "webkitUserSelect"
+      ]
+    },
+    "-webkit-appearance": {
+      "name": "-webkit-appearance",
+      "styleDeclaration": [
+        "-webkit-appearance",
+        "WebkitAppearance",
+        "webkitAppearance"
+      ]
+    }
+  },
+  "descriptors": {},
+  "valuespaces": {
+    "<compat-auto>": {
+      "value": "searchfield | textarea | push-button | slider-horizontal | checkbox | radio | square-button | menulist | listbox | meter | progress-bar | button"
+    },
+    "<id>": {
+      "prose": "The <id> value is an ID selector [SELECT]. In response to directional navigation input corresponding to the property, the focus is navigated to the first element in tree order matching the selector. If this refers to the currently focused element, the directional navigation input respective to the nav- property is ignored — there is no need to refocus the same element. If no element matches the selector, the user agent automatically determines which element to navigate the focus to. If the focus is navigated to an element that was not otherwise focusable, it becomes focusable only as the result of this directional navigation, and the :focus pseudo-class matches the element while it is focused as such."
+    },
+    "<target-name>": {
+      "prose": "The <target-name> parameter indicates the target frame for the focus navigation. It is a <string> and it MUST NOT start with the underscore \"_\" character. Error handling: if it does start with an underscore, \"_parent\" navigates to the parent frame, \"_root\" is treated as root, and other values navigate to a frame by that name if it exists. If the specified target frame does not exist, the parameter will be treated as the keyword current, which means to simply use the frame that the element is in. The keyword root indicates that the user agent should target the full window."
+    }
+  }
+}

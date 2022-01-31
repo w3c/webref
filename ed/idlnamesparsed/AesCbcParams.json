@@ -1,0 +1,112 @@
+{
+  "name": "AesCbcParams",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Web Cryptography API",
+      "url": "https://www.w3.org/TR/WebCryptoAPI/"
+    },
+    "fragment": "dictionary AesCbcParams : Algorithm {\n  required BufferSource iv;\n};",
+    "href": "https://w3c.github.io/webcrypto/#dfn-AesCbcParams"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "Algorithm",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "Web Cryptography API",
+        "url": "https://www.w3.org/TR/WebCryptoAPI/"
+      },
+      "fragment": "dictionary Algorithm {\n  required DOMString name;\n};",
+      "href": "https://w3c.github.io/webcrypto/#dfn-Algorithm"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/WebCryptoAPI/": [
+      {
+        "id": "dfn-AesCbcParams",
+        "href": "https://w3c.github.io/webcrypto/#dfn-AesCbcParams",
+        "linkingText": [
+          "AesCbcParams"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "aes-cbc-params",
+          "href": "https://w3c.github.io/webcrypto/#aes-cbc-params",
+          "title": "AesCbcParams dictionary",
+          "number": "26.3"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dfn-AesCbcParams-iv",
+        "href": "https://w3c.github.io/webcrypto/#dfn-AesCbcParams-iv",
+        "linkingText": [
+          "iv"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "AesCbcParams"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "aes-cbc-params",
+          "href": "https://w3c.github.io/webcrypto/#aes-cbc-params",
+          "title": "AesCbcParams dictionary",
+          "number": "26.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dfn-Algorithm",
+        "href": "https://w3c.github.io/webcrypto/#dfn-Algorithm",
+        "linkingText": [
+          "Algorithm"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "algorithm-dictionary",
+          "href": "https://w3c.github.io/webcrypto/#algorithm-dictionary",
+          "title": "11. Algorithm dictionary"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-algorithm-name",
+        "href": "https://w3c.github.io/webcrypto/#dom-algorithm-name",
+        "linkingText": [
+          "name"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "Algorithm"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "algorithm-dictionary-members",
+          "href": "https://w3c.github.io/webcrypto/#algorithm-dictionary-members",
+          "title": "Algorithm Dictionary Members",
+          "number": "11.1"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

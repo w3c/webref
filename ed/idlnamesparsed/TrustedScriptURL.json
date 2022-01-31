@@ -1,0 +1,101 @@
+{
+  "name": "TrustedScriptURL",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Trusted Types",
+      "url": "https://w3c.github.io/webappsec-trusted-types/dist/spec/"
+    },
+    "fragment": "[Exposed=(Window,Worker)]\ninterface TrustedScriptURL {\n  stringifier;\n  USVString toJSON();\n  static TrustedScriptURL fromLiteral(object templateStringsArray);\n};",
+    "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#trustedscripturl"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://w3c.github.io/webappsec-trusted-types/dist/spec/": [
+      {
+        "id": "trustedscripturl",
+        "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#trustedscripturl",
+        "linkingText": [
+          "TrustedScriptURL"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "trused-script-url",
+          "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#trused-script-url",
+          "title": "TrustedScriptURL",
+          "number": "2.2.3"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "trustedscripturl-stringification-behavior",
+        "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#trustedscripturl-stringification-behavior",
+        "linkingText": [
+          "stringificationbehavior"
+        ],
+        "localLinkingText": [],
+        "type": "dfn",
+        "for": [
+          "TrustedScriptURL"
+        ],
+        "access": "private",
+        "informative": false,
+        "heading": {
+          "id": "trused-script-url",
+          "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#trused-script-url",
+          "title": "TrustedScriptURL",
+          "number": "2.2.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-trustedscripturl-tojson",
+        "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#dom-trustedscripturl-tojson",
+        "linkingText": [
+          "toJSON()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "TrustedScriptURL"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "trused-script-url",
+          "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#trused-script-url",
+          "title": "TrustedScriptURL",
+          "number": "2.2.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-trustedscripturl-fromliteral",
+        "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#dom-trustedscripturl-fromliteral",
+        "linkingText": [
+          "fromLiteral(templateStringsArray)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "TrustedScriptURL"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "trused-script-url",
+          "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#trused-script-url",
+          "title": "TrustedScriptURL",
+          "number": "2.2.3"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

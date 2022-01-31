@@ -1,0 +1,199 @@
+{
+  "name": "XRInputSourcesChangeEventInit",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "WebXR Device API",
+      "url": "https://www.w3.org/TR/webxr/"
+    },
+    "fragment": "dictionary XRInputSourcesChangeEventInit : EventInit {\n  required XRSession session;\n  required FrozenArray<XRInputSource> added;\n  required FrozenArray<XRInputSource> removed;\n\n};",
+    "href": "https://immersive-web.github.io/webxr/#dictdef-xrinputsourceschangeeventinit"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "EventInit",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "dictionary EventInit {\n  boolean bubbles = false;\n  boolean cancelable = false;\n  boolean composed = false;\n};",
+      "href": "https://dom.spec.whatwg.org/#dictdef-eventinit"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webxr/": [
+      {
+        "id": "dictdef-xrinputsourceschangeeventinit",
+        "href": "https://immersive-web.github.io/webxr/#dictdef-xrinputsourceschangeeventinit",
+        "linkingText": [
+          "XRInputSourcesChangeEventInit"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrinputsourceschangeevent-interface",
+          "href": "https://immersive-web.github.io/webxr/#xrinputsourceschangeevent-interface",
+          "title": "XRInputSourcesChangeEvent",
+          "number": "12.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-xrinputsourceschangeeventinit-session",
+        "href": "https://immersive-web.github.io/webxr/#dom-xrinputsourceschangeeventinit-session",
+        "linkingText": [
+          "session"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "XRInputSourcesChangeEventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrinputsourceschangeevent-interface",
+          "href": "https://immersive-web.github.io/webxr/#xrinputsourceschangeevent-interface",
+          "title": "XRInputSourcesChangeEvent",
+          "number": "12.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-xrinputsourceschangeeventinit-added",
+        "href": "https://immersive-web.github.io/webxr/#dom-xrinputsourceschangeeventinit-added",
+        "linkingText": [
+          "added"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "XRInputSourcesChangeEventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrinputsourceschangeevent-interface",
+          "href": "https://immersive-web.github.io/webxr/#xrinputsourceschangeevent-interface",
+          "title": "XRInputSourcesChangeEvent",
+          "number": "12.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-xrinputsourceschangeeventinit-removed",
+        "href": "https://immersive-web.github.io/webxr/#dom-xrinputsourceschangeeventinit-removed",
+        "linkingText": [
+          "removed"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "XRInputSourcesChangeEventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrinputsourceschangeevent-interface",
+          "href": "https://immersive-web.github.io/webxr/#xrinputsourceschangeevent-interface",
+          "title": "XRInputSourcesChangeEvent",
+          "number": "12.3"
+        },
+        "definedIn": "pre"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "dictdef-eventinit",
+        "href": "https://dom.spec.whatwg.org/#dictdef-eventinit",
+        "linkingText": [
+          "EventInit"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventinit-bubbles",
+        "href": "https://dom.spec.whatwg.org/#dom-eventinit-bubbles",
+        "linkingText": [
+          "bubbles"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventinit-cancelable",
+        "href": "https://dom.spec.whatwg.org/#dom-eventinit-cancelable",
+        "linkingText": [
+          "cancelable"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventinit-composed",
+        "href": "https://dom.spec.whatwg.org/#dom-eventinit-composed",
+        "linkingText": [
+          "composed"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

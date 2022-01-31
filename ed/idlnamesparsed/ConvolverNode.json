@@ -1,0 +1,577 @@
+{
+  "name": "ConvolverNode",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Web Audio API",
+      "url": "https://www.w3.org/TR/webaudio/"
+    },
+    "fragment": "[Exposed=Window]\ninterface ConvolverNode : AudioNode {\n  constructor (BaseAudioContext context, optional ConvolverOptions options = {});\n  attribute AudioBuffer? buffer;\n  attribute boolean normalize;\n};",
+    "href": "https://webaudio.github.io/web-audio-api/#convolvernode"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "AudioNode",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "Web Audio API",
+        "url": "https://www.w3.org/TR/webaudio/"
+      },
+      "fragment": "[Exposed=Window]\ninterface AudioNode : EventTarget {\n  AudioNode connect (AudioNode destinationNode,\n                     optional unsigned long output = 0,\n                     optional unsigned long input = 0);\n  undefined connect (AudioParam destinationParam, optional unsigned long output = 0);\n  undefined disconnect ();\n  undefined disconnect (unsigned long output);\n  undefined disconnect (AudioNode destinationNode);\n  undefined disconnect (AudioNode destinationNode, unsigned long output);\n  undefined disconnect (AudioNode destinationNode,\n                        unsigned long output,\n                        unsigned long input);\n  undefined disconnect (AudioParam destinationParam);\n  undefined disconnect (AudioParam destinationParam, unsigned long output);\n  readonly attribute BaseAudioContext context;\n  readonly attribute unsigned long numberOfInputs;\n  readonly attribute unsigned long numberOfOutputs;\n  attribute unsigned long channelCount;\n  attribute ChannelCountMode channelCountMode;\n  attribute ChannelInterpretation channelInterpretation;\n};",
+      "href": "https://webaudio.github.io/web-audio-api/#audionode"
+    },
+    "extended": [],
+    "inheritance": {
+      "name": "EventTarget",
+      "type": "interface",
+      "defined": {
+        "spec": {
+          "title": "DOM Standard",
+          "url": "https://dom.spec.whatwg.org/"
+        },
+        "fragment": "[Exposed=*]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+        "href": "https://dom.spec.whatwg.org/#eventtarget"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webaudio/": [
+      {
+        "id": "convolvernode",
+        "href": "https://webaudio.github.io/web-audio-api/#convolvernode",
+        "linkingText": [
+          "ConvolverNode"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "ConvolverNode",
+          "href": "https://webaudio.github.io/web-audio-api/#ConvolverNode",
+          "title": "The ConvolverNode Interface",
+          "number": "1.17"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-convolvernode-convolvernode",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-convolvernode-convolvernode",
+        "linkingText": [
+          "ConvolverNode(context, options)",
+          "constructor(context, options)",
+          "ConvolverNode(context)",
+          "constructor(context)"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "ConvolverNode"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "ConvolverNode",
+          "href": "https://webaudio.github.io/web-audio-api/#ConvolverNode",
+          "title": "The ConvolverNode Interface",
+          "number": "1.17"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-convolvernode-buffer",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-convolvernode-buffer",
+        "linkingText": [
+          "buffer"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "ConvolverNode"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "ConvolverNode-attributes",
+          "href": "https://webaudio.github.io/web-audio-api/#ConvolverNode-attributes",
+          "title": "Attributes",
+          "number": "1.17.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-convolvernode-normalize",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-convolvernode-normalize",
+        "linkingText": [
+          "normalize"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "ConvolverNode"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "ConvolverNode-attributes",
+          "href": "https://webaudio.github.io/web-audio-api/#ConvolverNode-attributes",
+          "title": "Attributes",
+          "number": "1.17.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "audionode",
+        "href": "https://webaudio.github.io/web-audio-api/#audionode",
+        "linkingText": [
+          "AudioNode"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "AudioNode",
+          "href": "https://webaudio.github.io/web-audio-api/#AudioNode",
+          "title": "The AudioNode Interface",
+          "number": "1.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-audionode-connect",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-audionode-connect",
+        "linkingText": [
+          "connect(destinationNode, output, input)",
+          "connect(destinationNode, output)",
+          "connect(destinationNode)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "AudioNode"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "AudioNode-methods",
+          "href": "https://webaudio.github.io/web-audio-api/#AudioNode-methods",
+          "title": "Methods",
+          "number": "1.5.5"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-audionode-connect-destinationparam-output",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-audionode-connect-destinationparam-output",
+        "linkingText": [
+          "connect(destinationParam, output)",
+          "connect(destinationParam)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "AudioNode"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "AudioNode-methods",
+          "href": "https://webaudio.github.io/web-audio-api/#AudioNode-methods",
+          "title": "Methods",
+          "number": "1.5.5"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-audionode-disconnect",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-audionode-disconnect",
+        "linkingText": [
+          "disconnect()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "AudioNode"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "AudioNode-methods",
+          "href": "https://webaudio.github.io/web-audio-api/#AudioNode-methods",
+          "title": "Methods",
+          "number": "1.5.5"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-audionode-disconnect-output",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-audionode-disconnect-output",
+        "linkingText": [
+          "disconnect(output)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "AudioNode"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "AudioNode-methods",
+          "href": "https://webaudio.github.io/web-audio-api/#AudioNode-methods",
+          "title": "Methods",
+          "number": "1.5.5"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-audionode-disconnect-destinationnode",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-audionode-disconnect-destinationnode",
+        "linkingText": [
+          "disconnect(destinationNode)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "AudioNode"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "AudioNode-methods",
+          "href": "https://webaudio.github.io/web-audio-api/#AudioNode-methods",
+          "title": "Methods",
+          "number": "1.5.5"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-audionode-disconnect-destinationnode-output",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-audionode-disconnect-destinationnode-output",
+        "linkingText": [
+          "disconnect(destinationNode, output)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "AudioNode"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "AudioNode-methods",
+          "href": "https://webaudio.github.io/web-audio-api/#AudioNode-methods",
+          "title": "Methods",
+          "number": "1.5.5"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-audionode-disconnect-destinationnode-output-input",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-audionode-disconnect-destinationnode-output-input",
+        "linkingText": [
+          "disconnect(destinationNode, output, input)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "AudioNode"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "AudioNode-methods",
+          "href": "https://webaudio.github.io/web-audio-api/#AudioNode-methods",
+          "title": "Methods",
+          "number": "1.5.5"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-audionode-disconnect-destinationparam",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-audionode-disconnect-destinationparam",
+        "linkingText": [
+          "disconnect(destinationParam)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "AudioNode"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "AudioNode-methods",
+          "href": "https://webaudio.github.io/web-audio-api/#AudioNode-methods",
+          "title": "Methods",
+          "number": "1.5.5"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-audionode-disconnect-destinationparam-output",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-audionode-disconnect-destinationparam-output",
+        "linkingText": [
+          "disconnect(destinationParam, output)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "AudioNode"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "AudioNode-methods",
+          "href": "https://webaudio.github.io/web-audio-api/#AudioNode-methods",
+          "title": "Methods",
+          "number": "1.5.5"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-audionode-context",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-audionode-context",
+        "linkingText": [
+          "context"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "AudioNode"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "AudioNode-attributes",
+          "href": "https://webaudio.github.io/web-audio-api/#AudioNode-attributes",
+          "title": "Attributes",
+          "number": "1.5.4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-audionode-numberofinputs",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-audionode-numberofinputs",
+        "linkingText": [
+          "numberOfInputs"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "AudioNode"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "AudioNode-attributes",
+          "href": "https://webaudio.github.io/web-audio-api/#AudioNode-attributes",
+          "title": "Attributes",
+          "number": "1.5.4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-audionode-numberofoutputs",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-audionode-numberofoutputs",
+        "linkingText": [
+          "numberOfOutputs"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "AudioNode"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "AudioNode-attributes",
+          "href": "https://webaudio.github.io/web-audio-api/#AudioNode-attributes",
+          "title": "Attributes",
+          "number": "1.5.4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-audionode-channelcount",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-audionode-channelcount",
+        "linkingText": [
+          "channelCount"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "AudioNode"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "AudioNode-attributes",
+          "href": "https://webaudio.github.io/web-audio-api/#AudioNode-attributes",
+          "title": "Attributes",
+          "number": "1.5.4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-audionode-channelcountmode",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-audionode-channelcountmode",
+        "linkingText": [
+          "channelCountMode"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "AudioNode"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "AudioNode-attributes",
+          "href": "https://webaudio.github.io/web-audio-api/#AudioNode-attributes",
+          "title": "Attributes",
+          "number": "1.5.4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-audionode-channelinterpretation",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-audionode-channelinterpretation",
+        "linkingText": [
+          "channelInterpretation"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "AudioNode"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "AudioNode-attributes",
+          "href": "https://webaudio.github.io/web-audio-api/#AudioNode-attributes",
+          "title": "Attributes",
+          "number": "1.5.4"
+        },
+        "definedIn": "dt"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "eventtarget",
+        "href": "https://dom.spec.whatwg.org/#eventtarget",
+        "linkingText": [
+          "EventTarget"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventtarget-eventtarget",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-eventtarget",
+        "linkingText": [
+          "EventTarget()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-addeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-addeventlistener",
+        "linkingText": [
+          "addEventListener(type, callback, options)",
+          "addEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-removeeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-removeeventlistener",
+        "linkingText": [
+          "removeEventListener(type, callback, options)",
+          "removeEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-dispatchevent",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-dispatchevent",
+        "linkingText": [
+          "dispatchEvent(event)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

@@ -1,0 +1,199 @@
+{
+  "name": "DeprecationReportBody",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Deprecation Reporting",
+      "url": "https://wicg.github.io/deprecation-reporting/"
+    },
+    "fragment": "[Exposed=(Window,Worker)]\ninterface DeprecationReportBody : ReportBody {\n  [Default] object toJSON();\n  readonly attribute DOMString id;\n  readonly attribute object? anticipatedRemoval;\n  readonly attribute DOMString message;\n  readonly attribute DOMString? sourceFile;\n  readonly attribute unsigned long? lineNumber;\n  readonly attribute unsigned long? columnNumber;\n};",
+    "href": "https://wicg.github.io/deprecation-reporting/#deprecationreportbody"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "ReportBody",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "Reporting API 1",
+        "url": "https://www.w3.org/TR/reporting-1/"
+      },
+      "fragment": "[Exposed=(Window,Worker)]\ninterface ReportBody {\n  [Default] object toJSON();\n};",
+      "href": "https://w3c.github.io/reporting/#reportbody"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://wicg.github.io/deprecation-reporting/": [
+      {
+        "id": "deprecationreportbody",
+        "href": "https://wicg.github.io/deprecation-reporting/#deprecationreportbody",
+        "linkingText": [
+          "DeprecationReportBody"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "deprecation-report",
+          "href": "https://wicg.github.io/deprecation-reporting/#deprecation-report",
+          "title": "Deprecation Reports",
+          "number": "2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-deprecationreportbody-id",
+        "href": "https://wicg.github.io/deprecation-reporting/#dom-deprecationreportbody-id",
+        "linkingText": [
+          "id"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "DeprecationReportBody"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "deprecation-report",
+          "href": "https://wicg.github.io/deprecation-reporting/#deprecation-report",
+          "title": "Deprecation Reports",
+          "number": "2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-deprecationreportbody-anticipatedremoval",
+        "href": "https://wicg.github.io/deprecation-reporting/#dom-deprecationreportbody-anticipatedremoval",
+        "linkingText": [
+          "anticipatedRemoval"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "DeprecationReportBody"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "deprecation-report",
+          "href": "https://wicg.github.io/deprecation-reporting/#deprecation-report",
+          "title": "Deprecation Reports",
+          "number": "2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-deprecationreportbody-message",
+        "href": "https://wicg.github.io/deprecation-reporting/#dom-deprecationreportbody-message",
+        "linkingText": [
+          "message"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "DeprecationReportBody"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "deprecation-report",
+          "href": "https://wicg.github.io/deprecation-reporting/#deprecation-report",
+          "title": "Deprecation Reports",
+          "number": "2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-deprecationreportbody-sourcefile",
+        "href": "https://wicg.github.io/deprecation-reporting/#dom-deprecationreportbody-sourcefile",
+        "linkingText": [
+          "sourceFile"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "DeprecationReportBody"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "deprecation-report",
+          "href": "https://wicg.github.io/deprecation-reporting/#deprecation-report",
+          "title": "Deprecation Reports",
+          "number": "2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-deprecationreportbody-linenumber",
+        "href": "https://wicg.github.io/deprecation-reporting/#dom-deprecationreportbody-linenumber",
+        "linkingText": [
+          "lineNumber"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "DeprecationReportBody"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "deprecation-report",
+          "href": "https://wicg.github.io/deprecation-reporting/#deprecation-report",
+          "title": "Deprecation Reports",
+          "number": "2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-deprecationreportbody-columnnumber",
+        "href": "https://wicg.github.io/deprecation-reporting/#dom-deprecationreportbody-columnnumber",
+        "linkingText": [
+          "columnNumber"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "DeprecationReportBody"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "deprecation-report",
+          "href": "https://wicg.github.io/deprecation-reporting/#deprecation-report",
+          "title": "Deprecation Reports",
+          "number": "2"
+        },
+        "definedIn": "pre"
+      }
+    ],
+    "https://www.w3.org/TR/reporting-1/": [
+      {
+        "id": "reportbody",
+        "href": "https://w3c.github.io/reporting/#reportbody",
+        "linkingText": [
+          "ReportBody"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-reporting-observer",
+          "href": "https://w3c.github.io/reporting/#interface-reporting-observer",
+          "title": "Interface ReportingObserver",
+          "number": "4.1"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

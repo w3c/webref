@@ -1,0 +1,132 @@
+{
+  "name": "StorageManager",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Storage Standard",
+      "url": "https://storage.spec.whatwg.org/"
+    },
+    "fragment": "[SecureContext,\n Exposed=(Window,Worker)]\ninterface StorageManager {\n  Promise<boolean> persisted();\n  [Exposed=Window] Promise<boolean> persist();\n\n  Promise<StorageEstimate> estimate();\n};",
+    "href": "https://storage.spec.whatwg.org/#storagemanager"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "File System Access",
+        "url": "https://wicg.github.io/file-system-access/"
+      },
+      "fragment": "[SecureContext]\npartial interface StorageManager {\n  Promise<FileSystemDirectoryHandle> getDirectory();\n};"
+    }
+  ],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://storage.spec.whatwg.org/": [
+      {
+        "id": "storagemanager",
+        "href": "https://storage.spec.whatwg.org/#storagemanager",
+        "linkingText": [
+          "StorageManager"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api",
+          "href": "https://storage.spec.whatwg.org/#api",
+          "title": "API",
+          "number": "8"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-storagemanager-persisted",
+        "href": "https://storage.spec.whatwg.org/#dom-storagemanager-persisted",
+        "linkingText": [
+          "persisted()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "StorageManager"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api",
+          "href": "https://storage.spec.whatwg.org/#api",
+          "title": "API",
+          "number": "8"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-storagemanager-persist",
+        "href": "https://storage.spec.whatwg.org/#dom-storagemanager-persist",
+        "linkingText": [
+          "persist()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "StorageManager"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api",
+          "href": "https://storage.spec.whatwg.org/#api",
+          "title": "API",
+          "number": "8"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-storagemanager-estimate",
+        "href": "https://storage.spec.whatwg.org/#dom-storagemanager-estimate",
+        "linkingText": [
+          "estimate()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "StorageManager"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api",
+          "href": "https://storage.spec.whatwg.org/#api",
+          "title": "API",
+          "number": "8"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://wicg.github.io/file-system-access/": [
+      {
+        "id": "dom-storagemanager-getdirectory",
+        "href": "https://wicg.github.io/file-system-access/#dom-storagemanager-getdirectory",
+        "linkingText": [
+          "getDirectory()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "StorageManager"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "sandboxed-filesystem",
+          "href": "https://wicg.github.io/file-system-access/#sandboxed-filesystem",
+          "title": "Accessing the Origin Private File System",
+          "number": "4"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

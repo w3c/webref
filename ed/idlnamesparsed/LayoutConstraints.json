@@ -1,0 +1,227 @@
+{
+  "name": "LayoutConstraints",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "CSS Layout API Level 1",
+      "url": "https://www.w3.org/TR/css-layout-api-1/"
+    },
+    "fragment": "[Exposed=LayoutWorklet]\ninterface LayoutConstraints {\n    readonly attribute double availableInlineSize;\n    readonly attribute double availableBlockSize;\n\n    readonly attribute double? fixedInlineSize;\n    readonly attribute double? fixedBlockSize;\n\n    readonly attribute double percentageInlineSize;\n    readonly attribute double percentageBlockSize;\n\n    readonly attribute double? blockFragmentationOffset;\n    readonly attribute BlockFragmentationType blockFragmentationType;\n\n    readonly attribute any data;\n};",
+    "href": "https://drafts.css-houdini.org/css-layout-api-1/#layoutconstraints"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/css-layout-api-1/": [
+      {
+        "id": "layoutconstraints",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#layoutconstraints",
+        "linkingText": [
+          "LayoutConstraints"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "layout-constraints",
+          "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-constraints",
+          "title": "Layout Constraints",
+          "number": "4.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-layoutconstraints-availableinlinesize",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutconstraints-availableinlinesize",
+        "linkingText": [
+          "availableInlineSize"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "LayoutConstraints"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "layout-constraints",
+          "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-constraints",
+          "title": "Layout Constraints",
+          "number": "4.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-layoutconstraints-availableblocksize",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutconstraints-availableblocksize",
+        "linkingText": [
+          "availableBlockSize"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "LayoutConstraints"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "layout-constraints",
+          "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-constraints",
+          "title": "Layout Constraints",
+          "number": "4.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-layoutconstraints-fixedinlinesize",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutconstraints-fixedinlinesize",
+        "linkingText": [
+          "fixedInlineSize"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "LayoutConstraints"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "layout-constraints",
+          "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-constraints",
+          "title": "Layout Constraints",
+          "number": "4.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-layoutconstraints-fixedblocksize",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutconstraints-fixedblocksize",
+        "linkingText": [
+          "fixedBlockSize"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "LayoutConstraints"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "layout-constraints",
+          "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-constraints",
+          "title": "Layout Constraints",
+          "number": "4.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-layoutconstraints-percentageinlinesize",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutconstraints-percentageinlinesize",
+        "linkingText": [
+          "percentageInlineSize"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "LayoutConstraints"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "layout-constraints",
+          "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-constraints",
+          "title": "Layout Constraints",
+          "number": "4.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-layoutconstraints-percentageblocksize",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutconstraints-percentageblocksize",
+        "linkingText": [
+          "percentageBlockSize"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "LayoutConstraints"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "layout-constraints",
+          "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-constraints",
+          "title": "Layout Constraints",
+          "number": "4.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-layoutconstraints-blockfragmentationoffset",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutconstraints-blockfragmentationoffset",
+        "linkingText": [
+          "blockFragmentationOffset"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "LayoutConstraints"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "layout-constraints",
+          "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-constraints",
+          "title": "Layout Constraints",
+          "number": "4.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-layoutconstraints-blockfragmentationtype",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutconstraints-blockfragmentationtype",
+        "linkingText": [
+          "blockFragmentationType"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "LayoutConstraints"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "layout-constraints",
+          "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-constraints",
+          "title": "Layout Constraints",
+          "number": "4.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-layoutconstraints-data",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutconstraints-data",
+        "linkingText": [
+          "data"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "LayoutConstraints"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "layout-constraints",
+          "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-constraints",
+          "title": "Layout Constraints",
+          "number": "4.4"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

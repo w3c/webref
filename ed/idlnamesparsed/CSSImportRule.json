@@ -1,0 +1,589 @@
+{
+  "name": "CSSImportRule",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "CSS Object Model (CSSOM)",
+      "url": "https://www.w3.org/TR/cssom-1/"
+    },
+    "fragment": "[Exposed=Window]\ninterface CSSImportRule : CSSRule {\n  readonly attribute USVString href;\n  [SameObject, PutForwards=mediaText] readonly attribute MediaList media;\n  [SameObject] readonly attribute CSSStyleSheet styleSheet;\n};",
+    "href": "https://drafts.csswg.org/cssom/#cssimportrule"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "CSS Cascading and Inheritance Level 5",
+        "url": "https://www.w3.org/TR/css-cascade-5/"
+      },
+      "fragment": "partial interface CSSImportRule {\n  readonly attribute CSSOMString? layerName;\n};"
+    }
+  ],
+  "inheritance": {
+    "name": "CSSRule",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "CSS Object Model (CSSOM)",
+        "url": "https://www.w3.org/TR/cssom-1/"
+      },
+      "fragment": "[Exposed=Window]\ninterface CSSRule {\n  attribute CSSOMString cssText;\n  readonly attribute CSSRule? parentRule;\n  readonly attribute CSSStyleSheet? parentStyleSheet;\n\n  // the following attribute and constants are historical\n  readonly attribute unsigned short type;\n  const unsigned short STYLE_RULE = 1;\n  const unsigned short CHARSET_RULE = 2;\n  const unsigned short IMPORT_RULE = 3;\n  const unsigned short MEDIA_RULE = 4;\n  const unsigned short FONT_FACE_RULE = 5;\n  const unsigned short PAGE_RULE = 6;\n  const unsigned short MARGIN_RULE = 9;\n  const unsigned short NAMESPACE_RULE = 10;\n};",
+      "href": "https://drafts.csswg.org/cssom/#cssrule"
+    },
+    "extended": [
+      {
+        "spec": {
+          "title": "CSS Animations Level 1",
+          "url": "https://www.w3.org/TR/css-animations-1/"
+        },
+        "fragment": "partial interface CSSRule {\n    const unsigned short KEYFRAMES_RULE = 7;\n    const unsigned short KEYFRAME_RULE = 8;\n};"
+      },
+      {
+        "spec": {
+          "title": "CSS Conditional Rules Module Level 3",
+          "url": "https://www.w3.org/TR/css-conditional-3/"
+        },
+        "fragment": "partial interface CSSRule {\n    const unsigned short SUPPORTS_RULE = 12;\n};"
+      },
+      {
+        "spec": {
+          "title": "CSS Counter Styles Level 3",
+          "url": "https://www.w3.org/TR/css-counter-styles-3/"
+        },
+        "fragment": "partial interface CSSRule {\n    const unsigned short COUNTER_STYLE_RULE = 11;\n};"
+      },
+      {
+        "spec": {
+          "title": "CSS Device Adaptation Module Level 1",
+          "url": "https://www.w3.org/TR/css-device-adapt-1/"
+        },
+        "fragment": "partial interface CSSRule {\n    const unsigned short VIEWPORT_RULE = 15;\n};"
+      },
+      {
+        "spec": {
+          "title": "CSS Fonts Module Level 4",
+          "url": "https://www.w3.org/TR/css-fonts-4/"
+        },
+        "fragment": "partial interface CSSRule {  const unsigned short FONT_FEATURE_VALUES_RULE = 14;\n};"
+      }
+    ],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/cssom-1/": [
+      {
+        "id": "cssimportrule",
+        "href": "https://drafts.csswg.org/cssom/#cssimportrule",
+        "linkingText": [
+          "CSSImportRule"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-cssimportrule-interface",
+          "href": "https://drafts.csswg.org/cssom/#the-cssimportrule-interface",
+          "title": "The CSSImportRule Interface",
+          "number": "6.4.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-cssimportrule-href",
+        "href": "https://drafts.csswg.org/cssom/#dom-cssimportrule-href",
+        "linkingText": [
+          "href"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "CSSImportRule"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-cssimportrule-interface",
+          "href": "https://drafts.csswg.org/cssom/#the-cssimportrule-interface",
+          "title": "The CSSImportRule Interface",
+          "number": "6.4.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-cssimportrule-media",
+        "href": "https://drafts.csswg.org/cssom/#dom-cssimportrule-media",
+        "linkingText": [
+          "media"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "CSSImportRule"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-cssimportrule-interface",
+          "href": "https://drafts.csswg.org/cssom/#the-cssimportrule-interface",
+          "title": "The CSSImportRule Interface",
+          "number": "6.4.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-cssimportrule-stylesheet",
+        "href": "https://drafts.csswg.org/cssom/#dom-cssimportrule-stylesheet",
+        "linkingText": [
+          "styleSheet"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "CSSImportRule"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-cssimportrule-interface",
+          "href": "https://drafts.csswg.org/cssom/#the-cssimportrule-interface",
+          "title": "The CSSImportRule Interface",
+          "number": "6.4.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "cssrule",
+        "href": "https://drafts.csswg.org/cssom/#cssrule",
+        "linkingText": [
+          "CSSRule"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-cssrule-interface",
+          "href": "https://drafts.csswg.org/cssom/#the-cssrule-interface",
+          "title": "The CSSRule Interface",
+          "number": "6.4.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-cssrule-csstext",
+        "href": "https://drafts.csswg.org/cssom/#dom-cssrule-csstext",
+        "linkingText": [
+          "cssText"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "CSSRule"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-cssrule-interface",
+          "href": "https://drafts.csswg.org/cssom/#the-cssrule-interface",
+          "title": "The CSSRule Interface",
+          "number": "6.4.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-cssrule-parentrule",
+        "href": "https://drafts.csswg.org/cssom/#dom-cssrule-parentrule",
+        "linkingText": [
+          "parentRule"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "CSSRule"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-cssrule-interface",
+          "href": "https://drafts.csswg.org/cssom/#the-cssrule-interface",
+          "title": "The CSSRule Interface",
+          "number": "6.4.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-cssrule-parentstylesheet",
+        "href": "https://drafts.csswg.org/cssom/#dom-cssrule-parentstylesheet",
+        "linkingText": [
+          "parentStyleSheet"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "CSSRule"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-cssrule-interface",
+          "href": "https://drafts.csswg.org/cssom/#the-cssrule-interface",
+          "title": "The CSSRule Interface",
+          "number": "6.4.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-cssrule-type",
+        "href": "https://drafts.csswg.org/cssom/#dom-cssrule-type",
+        "linkingText": [
+          "type"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "CSSRule"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-cssrule-interface",
+          "href": "https://drafts.csswg.org/cssom/#the-cssrule-interface",
+          "title": "The CSSRule Interface",
+          "number": "6.4.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-cssrule-style_rule",
+        "href": "https://drafts.csswg.org/cssom/#dom-cssrule-style_rule",
+        "linkingText": [
+          "STYLE_RULE"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "CSSRule"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-cssrule-interface",
+          "href": "https://drafts.csswg.org/cssom/#the-cssrule-interface",
+          "title": "The CSSRule Interface",
+          "number": "6.4.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-cssrule-charset_rule",
+        "href": "https://drafts.csswg.org/cssom/#dom-cssrule-charset_rule",
+        "linkingText": [
+          "CHARSET_RULE"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "CSSRule"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-cssrule-interface",
+          "href": "https://drafts.csswg.org/cssom/#the-cssrule-interface",
+          "title": "The CSSRule Interface",
+          "number": "6.4.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-cssrule-import_rule",
+        "href": "https://drafts.csswg.org/cssom/#dom-cssrule-import_rule",
+        "linkingText": [
+          "IMPORT_RULE"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "CSSRule"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-cssrule-interface",
+          "href": "https://drafts.csswg.org/cssom/#the-cssrule-interface",
+          "title": "The CSSRule Interface",
+          "number": "6.4.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-cssrule-media_rule",
+        "href": "https://drafts.csswg.org/cssom/#dom-cssrule-media_rule",
+        "linkingText": [
+          "MEDIA_RULE"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "CSSRule"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-cssrule-interface",
+          "href": "https://drafts.csswg.org/cssom/#the-cssrule-interface",
+          "title": "The CSSRule Interface",
+          "number": "6.4.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-cssrule-font_face_rule",
+        "href": "https://drafts.csswg.org/cssom/#dom-cssrule-font_face_rule",
+        "linkingText": [
+          "FONT_FACE_RULE"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "CSSRule"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-cssrule-interface",
+          "href": "https://drafts.csswg.org/cssom/#the-cssrule-interface",
+          "title": "The CSSRule Interface",
+          "number": "6.4.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-cssrule-page_rule",
+        "href": "https://drafts.csswg.org/cssom/#dom-cssrule-page_rule",
+        "linkingText": [
+          "PAGE_RULE"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "CSSRule"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-cssrule-interface",
+          "href": "https://drafts.csswg.org/cssom/#the-cssrule-interface",
+          "title": "The CSSRule Interface",
+          "number": "6.4.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-cssrule-margin_rule",
+        "href": "https://drafts.csswg.org/cssom/#dom-cssrule-margin_rule",
+        "linkingText": [
+          "MARGIN_RULE"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "CSSRule"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-cssrule-interface",
+          "href": "https://drafts.csswg.org/cssom/#the-cssrule-interface",
+          "title": "The CSSRule Interface",
+          "number": "6.4.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-cssrule-namespace_rule",
+        "href": "https://drafts.csswg.org/cssom/#dom-cssrule-namespace_rule",
+        "linkingText": [
+          "NAMESPACE_RULE"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "CSSRule"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-cssrule-interface",
+          "href": "https://drafts.csswg.org/cssom/#the-cssrule-interface",
+          "title": "The CSSRule Interface",
+          "number": "6.4.2"
+        },
+        "definedIn": "pre"
+      }
+    ],
+    "https://www.w3.org/TR/css-cascade-5/": [
+      {
+        "id": "dom-cssimportrule-layername",
+        "href": "https://drafts.csswg.org/css-cascade-5/#dom-cssimportrule-layername",
+        "linkingText": [
+          "layerName"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "CSSImportRule"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "extensions-to-cssimportrule-interface",
+          "href": "https://drafts.csswg.org/css-cascade-5/#extensions-to-cssimportrule-interface",
+          "title": "Extensions to the CSSImportRule interface",
+          "number": "8.1"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://www.w3.org/TR/css-animations-1/": [
+      {
+        "id": "dom-cssrule-keyframes_rule",
+        "href": "https://drafts.csswg.org/css-animations/#dom-cssrule-keyframes_rule",
+        "linkingText": [
+          "KEYFRAMES_RULE"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "CSSRule"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-cssrule-idl",
+          "href": "https://drafts.csswg.org/css-animations/#interface-cssrule-idl",
+          "title": "IDL Definition",
+          "number": "5.1.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-cssrule-keyframe_rule",
+        "href": "https://drafts.csswg.org/css-animations/#dom-cssrule-keyframe_rule",
+        "linkingText": [
+          "KEYFRAME_RULE"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "CSSRule"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-cssrule-idl",
+          "href": "https://drafts.csswg.org/css-animations/#interface-cssrule-idl",
+          "title": "IDL Definition",
+          "number": "5.1.1"
+        },
+        "definedIn": "pre"
+      }
+    ],
+    "https://www.w3.org/TR/css-conditional-3/": [
+      {
+        "id": "dom-cssrule-supports_rule",
+        "href": "https://drafts.csswg.org/css-conditional-3/#dom-cssrule-supports_rule",
+        "linkingText": [
+          "SUPPORTS_RULE"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "CSSRule"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "extensions-to-cssrule-interface",
+          "href": "https://drafts.csswg.org/css-conditional-3/#extensions-to-cssrule-interface",
+          "title": "Extensions to the CSSRule interface",
+          "number": "7.1"
+        },
+        "definedIn": "pre"
+      }
+    ],
+    "https://www.w3.org/TR/css-counter-styles-3/": [
+      {
+        "id": "dom-cssrule-counter_style_rule",
+        "href": "https://drafts.csswg.org/css-counter-styles/#dom-cssrule-counter_style_rule",
+        "linkingText": [
+          "COUNTER_STYLE_RULE"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "CSSRule"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "extensions-to-cssrule-interface",
+          "href": "https://drafts.csswg.org/css-counter-styles/#extensions-to-cssrule-interface",
+          "title": "Extensions to the CSSRule interface",
+          "number": "9.1"
+        },
+        "definedIn": "pre"
+      }
+    ],
+    "https://www.w3.org/TR/css-device-adapt-1/": [
+      {
+        "id": "dom-cssrule-viewport_rule",
+        "href": "https://drafts.csswg.org/css-device-adapt/#dom-cssrule-viewport_rule",
+        "linkingText": [
+          "VIEWPORT_RULE"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "CSSRule"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "css-rule-interface",
+          "href": "https://drafts.csswg.org/css-device-adapt/#css-rule-interface",
+          "title": "Interface CSSRule",
+          "number": "9.1"
+        },
+        "definedIn": "pre"
+      }
+    ],
+    "https://www.w3.org/TR/css-fonts-4/": [
+      {
+        "id": "dom-cssrule-font_feature_values_rule",
+        "href": "https://drafts.csswg.org/css-fonts-4/#dom-cssrule-font_feature_values_rule",
+        "linkingText": [
+          "FONT_FEATURE_VALUES_RULE"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "CSSRule"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "om-fontfeaturevalues",
+          "href": "https://drafts.csswg.org/css-fonts-4/#om-fontfeaturevalues",
+          "title": "The CSSFontFeatureValuesRule interface",
+          "number": "12.2"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

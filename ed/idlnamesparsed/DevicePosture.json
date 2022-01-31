@@ -1,0 +1,206 @@
+{
+  "name": "DevicePosture",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Device Posture API",
+      "url": "https://www.w3.org/TR/device-posture/"
+    },
+    "fragment": "[SecureContext, Exposed=(Window)]\ninterface DevicePosture : EventTarget {\n  readonly attribute DevicePostureType type;\n  attribute EventHandler onchange;\n};",
+    "href": "https://w3c.github.io/device-posture/#dom-deviceposture"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "EventTarget",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=*]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+      "href": "https://dom.spec.whatwg.org/#eventtarget"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/device-posture/": [
+      {
+        "id": "dom-deviceposture",
+        "href": "https://w3c.github.io/device-posture/#dom-deviceposture",
+        "linkingText": [
+          "DevicePosture"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-deviceposture-interface",
+          "href": "https://w3c.github.io/device-posture/#the-deviceposture-interface",
+          "title": "The DevicePosture interface",
+          "number": "4"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-deviceposture-type",
+        "href": "https://w3c.github.io/device-posture/#dom-deviceposture-type",
+        "linkingText": [
+          "type"
+        ],
+        "localLinkingText": [
+          "DevicePosture.type"
+        ],
+        "type": "attribute",
+        "for": [
+          "DevicePosture"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-type-attribute-get-current-device-posture",
+          "href": "https://w3c.github.io/device-posture/#the-type-attribute-get-current-device-posture",
+          "title": "The type attribute: Get current device posture",
+          "number": "4.1"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-deviceposture-onchange",
+        "href": "https://w3c.github.io/device-posture/#dom-deviceposture-onchange",
+        "linkingText": [
+          "onchange"
+        ],
+        "localLinkingText": [
+          "DevicePosture.onchange"
+        ],
+        "type": "attribute",
+        "for": [
+          "DevicePosture"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-onchange-attribute-handle-posture-changes",
+          "href": "https://w3c.github.io/device-posture/#the-onchange-attribute-handle-posture-changes",
+          "title": "The onchange attribute: Handle posture changes",
+          "number": "4.2"
+        },
+        "definedIn": "heading"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "eventtarget",
+        "href": "https://dom.spec.whatwg.org/#eventtarget",
+        "linkingText": [
+          "EventTarget"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventtarget-eventtarget",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-eventtarget",
+        "linkingText": [
+          "EventTarget()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-addeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-addeventlistener",
+        "linkingText": [
+          "addEventListener(type, callback, options)",
+          "addEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-removeeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-removeeventlistener",
+        "linkingText": [
+          "removeEventListener(type, callback, options)",
+          "removeEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-dispatchevent",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-dispatchevent",
+        "linkingText": [
+          "dispatchEvent(event)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

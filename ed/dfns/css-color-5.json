@@ -1,0 +1,1584 @@
+{
+  "spec": {
+    "title": "CSS Color Module Level 5",
+    "url": "https://drafts.csswg.org/css-color-5/"
+  },
+  "dfns": [
+    {
+      "id": "funcdef-color-mix",
+      "href": "https://drafts.csswg.org/css-color-5/#funcdef-color-mix",
+      "linkingText": [
+        "color-mix()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "color-mix",
+        "href": "https://drafts.csswg.org/css-color-5/#color-mix",
+        "title": "Mixing colors: the color-mix() function",
+        "number": "2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "funcdef-color-contrast",
+      "href": "https://drafts.csswg.org/css-color-5/#funcdef-color-contrast",
+      "linkingText": [
+        "color-contrast()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorcontrast",
+        "href": "https://drafts.csswg.org/css-color-5/#colorcontrast",
+        "title": "Selecting the most contrasting color: the color-contrast() function",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "valdef-color-contrast-aa",
+      "href": "https://drafts.csswg.org/css-color-5/#valdef-color-contrast-aa",
+      "linkingText": [
+        "AA"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "color-contrast()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorcontrast",
+        "href": "https://drafts.csswg.org/css-color-5/#colorcontrast",
+        "title": "Selecting the most contrasting color: the color-contrast() function",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valdef-color-contrast-aa-large",
+      "href": "https://drafts.csswg.org/css-color-5/#valdef-color-contrast-aa-large",
+      "linkingText": [
+        "AA-large"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "color-contrast()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorcontrast",
+        "href": "https://drafts.csswg.org/css-color-5/#colorcontrast",
+        "title": "Selecting the most contrasting color: the color-contrast() function",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valdef-color-contrast-aaa",
+      "href": "https://drafts.csswg.org/css-color-5/#valdef-color-contrast-aaa",
+      "linkingText": [
+        "AAA"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "color-contrast()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorcontrast",
+        "href": "https://drafts.csswg.org/css-color-5/#colorcontrast",
+        "title": "Selecting the most contrasting color: the color-contrast() function",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valdef-color-contrast-aaa-large",
+      "href": "https://drafts.csswg.org/css-color-5/#valdef-color-contrast-aaa-large",
+      "linkingText": [
+        "AAA-large"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "color-contrast()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorcontrast",
+        "href": "https://drafts.csswg.org/css-color-5/#colorcontrast",
+        "title": "Selecting the most contrasting color: the color-contrast() function",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "relative-color",
+      "href": "https://drafts.csswg.org/css-color-5/#relative-color",
+      "linkingText": [
+        "relative color"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "relative-colors",
+        "href": "https://drafts.csswg.org/css-color-5/#relative-colors",
+        "title": "Relative color syntax",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "origin-color",
+      "href": "https://drafts.csswg.org/css-color-5/#origin-color",
+      "linkingText": [
+        "origin color"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "relative-colors",
+        "href": "https://drafts.csswg.org/css-color-5/#relative-colors",
+        "title": "Relative color syntax",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "channel-keyword",
+      "href": "https://drafts.csswg.org/css-color-5/#channel-keyword",
+      "linkingText": [
+        "channel keyword"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "relative-colors",
+        "href": "https://drafts.csswg.org/css-color-5/#relative-colors",
+        "title": "Relative color syntax",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "funcdef-rgb",
+      "href": "https://drafts.csswg.org/css-color-5/#funcdef-rgb",
+      "linkingText": [
+        "rgb()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "relative-RGB",
+        "href": "https://drafts.csswg.org/css-color-5/#relative-RGB",
+        "title": "Relative RGB colors",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "typedef-alpha-value",
+      "href": "https://drafts.csswg.org/css-color-5/#typedef-alpha-value",
+      "linkingText": [
+        "<alpha-value>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "relative-RGB",
+        "href": "https://drafts.csswg.org/css-color-5/#relative-RGB",
+        "title": "Relative RGB colors",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "valdef-rgb-r",
+      "href": "https://drafts.csswg.org/css-color-5/#valdef-rgb-r",
+      "linkingText": [
+        "r"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "rgb()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "relative-RGB",
+        "href": "https://drafts.csswg.org/css-color-5/#relative-RGB",
+        "title": "Relative RGB colors",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valdef-rgb-g",
+      "href": "https://drafts.csswg.org/css-color-5/#valdef-rgb-g",
+      "linkingText": [
+        "g"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "rgb()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "relative-RGB",
+        "href": "https://drafts.csswg.org/css-color-5/#relative-RGB",
+        "title": "Relative RGB colors",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valdef-rgb-b",
+      "href": "https://drafts.csswg.org/css-color-5/#valdef-rgb-b",
+      "linkingText": [
+        "b"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "rgb()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "relative-RGB",
+        "href": "https://drafts.csswg.org/css-color-5/#relative-RGB",
+        "title": "Relative RGB colors",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valdef-rgb-alpha",
+      "href": "https://drafts.csswg.org/css-color-5/#valdef-rgb-alpha",
+      "linkingText": [
+        "alpha"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "rgb()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "relative-RGB",
+        "href": "https://drafts.csswg.org/css-color-5/#relative-RGB",
+        "title": "Relative RGB colors",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "funcdef-hsl",
+      "href": "https://drafts.csswg.org/css-color-5/#funcdef-hsl",
+      "linkingText": [
+        "hsl()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "relative-HSL",
+        "href": "https://drafts.csswg.org/css-color-5/#relative-HSL",
+        "title": "Relative HSL colors",
+        "number": "4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "valdef-hsl-h",
+      "href": "https://drafts.csswg.org/css-color-5/#valdef-hsl-h",
+      "linkingText": [
+        "h"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "hsl()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "relative-HSL",
+        "href": "https://drafts.csswg.org/css-color-5/#relative-HSL",
+        "title": "Relative HSL colors",
+        "number": "4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valdef-hsl-s",
+      "href": "https://drafts.csswg.org/css-color-5/#valdef-hsl-s",
+      "linkingText": [
+        "s"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "hsl()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "relative-HSL",
+        "href": "https://drafts.csswg.org/css-color-5/#relative-HSL",
+        "title": "Relative HSL colors",
+        "number": "4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valdef-hsl-l",
+      "href": "https://drafts.csswg.org/css-color-5/#valdef-hsl-l",
+      "linkingText": [
+        "l"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "hsl()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "relative-HSL",
+        "href": "https://drafts.csswg.org/css-color-5/#relative-HSL",
+        "title": "Relative HSL colors",
+        "number": "4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valdef-hsl-alpha",
+      "href": "https://drafts.csswg.org/css-color-5/#valdef-hsl-alpha",
+      "linkingText": [
+        "alpha"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "hsl()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "relative-HSL",
+        "href": "https://drafts.csswg.org/css-color-5/#relative-HSL",
+        "title": "Relative HSL colors",
+        "number": "4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "funcdef-hwb",
+      "href": "https://drafts.csswg.org/css-color-5/#funcdef-hwb",
+      "linkingText": [
+        "hwb()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "relative-HWB",
+        "href": "https://drafts.csswg.org/css-color-5/#relative-HWB",
+        "title": "Relative HWB colors",
+        "number": "4.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "valdef-hwb-h",
+      "href": "https://drafts.csswg.org/css-color-5/#valdef-hwb-h",
+      "linkingText": [
+        "h"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "hwb()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "relative-HWB",
+        "href": "https://drafts.csswg.org/css-color-5/#relative-HWB",
+        "title": "Relative HWB colors",
+        "number": "4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valdef-hwb-w",
+      "href": "https://drafts.csswg.org/css-color-5/#valdef-hwb-w",
+      "linkingText": [
+        "w"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "hwb()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "relative-HWB",
+        "href": "https://drafts.csswg.org/css-color-5/#relative-HWB",
+        "title": "Relative HWB colors",
+        "number": "4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valdef-hwb-b",
+      "href": "https://drafts.csswg.org/css-color-5/#valdef-hwb-b",
+      "linkingText": [
+        "b"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "hwb()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "relative-HWB",
+        "href": "https://drafts.csswg.org/css-color-5/#relative-HWB",
+        "title": "Relative HWB colors",
+        "number": "4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valdef-hwb-alpha",
+      "href": "https://drafts.csswg.org/css-color-5/#valdef-hwb-alpha",
+      "linkingText": [
+        "alpha"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "hwb()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "relative-HWB",
+        "href": "https://drafts.csswg.org/css-color-5/#relative-HWB",
+        "title": "Relative HWB colors",
+        "number": "4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "funcdef-lab",
+      "href": "https://drafts.csswg.org/css-color-5/#funcdef-lab",
+      "linkingText": [
+        "lab()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "relative-Lab",
+        "href": "https://drafts.csswg.org/css-color-5/#relative-Lab",
+        "title": "Relative Lab colors",
+        "number": "4.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "valdef-lab-l",
+      "href": "https://drafts.csswg.org/css-color-5/#valdef-lab-l",
+      "linkingText": [
+        "l"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "lab()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "relative-Lab",
+        "href": "https://drafts.csswg.org/css-color-5/#relative-Lab",
+        "title": "Relative Lab colors",
+        "number": "4.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valdef-lab-a",
+      "href": "https://drafts.csswg.org/css-color-5/#valdef-lab-a",
+      "linkingText": [
+        "a"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "lab()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "relative-Lab",
+        "href": "https://drafts.csswg.org/css-color-5/#relative-Lab",
+        "title": "Relative Lab colors",
+        "number": "4.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valdef-lab-b",
+      "href": "https://drafts.csswg.org/css-color-5/#valdef-lab-b",
+      "linkingText": [
+        "b"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "lab()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "relative-Lab",
+        "href": "https://drafts.csswg.org/css-color-5/#relative-Lab",
+        "title": "Relative Lab colors",
+        "number": "4.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valdef-lab-alpha",
+      "href": "https://drafts.csswg.org/css-color-5/#valdef-lab-alpha",
+      "linkingText": [
+        "alpha"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "lab()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "relative-Lab",
+        "href": "https://drafts.csswg.org/css-color-5/#relative-Lab",
+        "title": "Relative Lab colors",
+        "number": "4.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "funcdef-oklab",
+      "href": "https://drafts.csswg.org/css-color-5/#funcdef-oklab",
+      "linkingText": [
+        "oklab()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "relative-OKLab",
+        "href": "https://drafts.csswg.org/css-color-5/#relative-OKLab",
+        "title": "Relative OKLab colors",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "valdef-oklab-l",
+      "href": "https://drafts.csswg.org/css-color-5/#valdef-oklab-l",
+      "linkingText": [
+        "l"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "oklab()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "relative-OKLab",
+        "href": "https://drafts.csswg.org/css-color-5/#relative-OKLab",
+        "title": "Relative OKLab colors",
+        "number": "4.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valdef-oklab-a",
+      "href": "https://drafts.csswg.org/css-color-5/#valdef-oklab-a",
+      "linkingText": [
+        "a"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "oklab()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "relative-OKLab",
+        "href": "https://drafts.csswg.org/css-color-5/#relative-OKLab",
+        "title": "Relative OKLab colors",
+        "number": "4.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valdef-oklab-b",
+      "href": "https://drafts.csswg.org/css-color-5/#valdef-oklab-b",
+      "linkingText": [
+        "b"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "oklab()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "relative-OKLab",
+        "href": "https://drafts.csswg.org/css-color-5/#relative-OKLab",
+        "title": "Relative OKLab colors",
+        "number": "4.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valdef-oklab-alpha",
+      "href": "https://drafts.csswg.org/css-color-5/#valdef-oklab-alpha",
+      "linkingText": [
+        "alpha"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "oklab()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "relative-OKLab",
+        "href": "https://drafts.csswg.org/css-color-5/#relative-OKLab",
+        "title": "Relative OKLab colors",
+        "number": "4.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "funcdef-lch",
+      "href": "https://drafts.csswg.org/css-color-5/#funcdef-lch",
+      "linkingText": [
+        "lch()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "relative-LCH",
+        "href": "https://drafts.csswg.org/css-color-5/#relative-LCH",
+        "title": "Relative LCH colors",
+        "number": "4.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "valdef-lch-l",
+      "href": "https://drafts.csswg.org/css-color-5/#valdef-lch-l",
+      "linkingText": [
+        "l"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "lch()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "relative-LCH",
+        "href": "https://drafts.csswg.org/css-color-5/#relative-LCH",
+        "title": "Relative LCH colors",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valdef-lch-c",
+      "href": "https://drafts.csswg.org/css-color-5/#valdef-lch-c",
+      "linkingText": [
+        "c"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "lch()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "relative-LCH",
+        "href": "https://drafts.csswg.org/css-color-5/#relative-LCH",
+        "title": "Relative LCH colors",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valdef-lch-h",
+      "href": "https://drafts.csswg.org/css-color-5/#valdef-lch-h",
+      "linkingText": [
+        "h"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "lch()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "relative-LCH",
+        "href": "https://drafts.csswg.org/css-color-5/#relative-LCH",
+        "title": "Relative LCH colors",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valdef-lch-alpha",
+      "href": "https://drafts.csswg.org/css-color-5/#valdef-lch-alpha",
+      "linkingText": [
+        "alpha"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "lch()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "relative-LCH",
+        "href": "https://drafts.csswg.org/css-color-5/#relative-LCH",
+        "title": "Relative LCH colors",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "funcdef-oklch",
+      "href": "https://drafts.csswg.org/css-color-5/#funcdef-oklch",
+      "linkingText": [
+        "oklch()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "relative-OKLCH",
+        "href": "https://drafts.csswg.org/css-color-5/#relative-OKLCH",
+        "title": "Relative OKLCH colors",
+        "number": "4.7"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "valdef-oklch-l",
+      "href": "https://drafts.csswg.org/css-color-5/#valdef-oklch-l",
+      "linkingText": [
+        "l"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "oklch()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "relative-OKLCH",
+        "href": "https://drafts.csswg.org/css-color-5/#relative-OKLCH",
+        "title": "Relative OKLCH colors",
+        "number": "4.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valdef-oklch-c",
+      "href": "https://drafts.csswg.org/css-color-5/#valdef-oklch-c",
+      "linkingText": [
+        "c"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "oklch()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "relative-OKLCH",
+        "href": "https://drafts.csswg.org/css-color-5/#relative-OKLCH",
+        "title": "Relative OKLCH colors",
+        "number": "4.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valdef-oklch-h",
+      "href": "https://drafts.csswg.org/css-color-5/#valdef-oklch-h",
+      "linkingText": [
+        "h"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "oklch()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "relative-OKLCH",
+        "href": "https://drafts.csswg.org/css-color-5/#relative-OKLCH",
+        "title": "Relative OKLCH colors",
+        "number": "4.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valdef-oklch-alpha",
+      "href": "https://drafts.csswg.org/css-color-5/#valdef-oklch-alpha",
+      "linkingText": [
+        "alpha"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "oklch()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "relative-OKLCH",
+        "href": "https://drafts.csswg.org/css-color-5/#relative-OKLCH",
+        "title": "Relative OKLCH colors",
+        "number": "4.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "funcdef-color",
+      "href": "https://drafts.csswg.org/css-color-5/#funcdef-color",
+      "linkingText": [
+        "color()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "color-function",
+        "href": "https://drafts.csswg.org/css-color-5/#color-function",
+        "title": "Specifying custom color spaces: the color() function",
+        "number": "5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "colorspace-params",
+      "href": "https://drafts.csswg.org/css-color-5/#colorspace-params",
+      "linkingText": [
+        "colorspace-params"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "color-function",
+        "href": "https://drafts.csswg.org/css-color-5/#color-function",
+        "title": "Specifying custom color spaces: the color() function",
+        "number": "5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "custom-params",
+      "href": "https://drafts.csswg.org/css-color-5/#custom-params",
+      "linkingText": [
+        "custom-params"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "color-function",
+        "href": "https://drafts.csswg.org/css-color-5/#color-function",
+        "title": "Specifying custom color spaces: the color() function",
+        "number": "5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "predefined-rgb-params",
+      "href": "https://drafts.csswg.org/css-color-5/#predefined-rgb-params",
+      "linkingText": [
+        "predefined-rgb-params"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "color-function",
+        "href": "https://drafts.csswg.org/css-color-5/#color-function",
+        "title": "Specifying custom color spaces: the color() function",
+        "number": "5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "predefined-rgb",
+      "href": "https://drafts.csswg.org/css-color-5/#predefined-rgb",
+      "linkingText": [
+        "predefined-rgb"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "color-function",
+        "href": "https://drafts.csswg.org/css-color-5/#color-function",
+        "title": "Specifying custom color spaces: the color() function",
+        "number": "5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "xyz-params",
+      "href": "https://drafts.csswg.org/css-color-5/#xyz-params",
+      "linkingText": [
+        "xyz-params"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "color-function",
+        "href": "https://drafts.csswg.org/css-color-5/#color-function",
+        "title": "Specifying custom color spaces: the color() function",
+        "number": "5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "xyz",
+      "href": "https://drafts.csswg.org/css-color-5/#xyz",
+      "linkingText": [
+        "xyz"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "color-function",
+        "href": "https://drafts.csswg.org/css-color-5/#color-function",
+        "title": "Specifying custom color spaces: the color() function",
+        "number": "5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "invalid-color",
+      "href": "https://drafts.csswg.org/css-color-5/#invalid-color",
+      "linkingText": [
+        "invalid color"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "color-function",
+        "href": "https://drafts.csswg.org/css-color-5/#color-function",
+        "title": "Specifying custom color spaces: the color() function",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valid-color",
+      "href": "https://drafts.csswg.org/css-color-5/#valid-color",
+      "linkingText": [
+        "valid color"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "color-function",
+        "href": "https://drafts.csswg.org/css-color-5/#color-function",
+        "title": "Specifying custom color spaces: the color() function",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "out-of-gamut",
+      "href": "https://drafts.csswg.org/css-color-5/#out-of-gamut",
+      "linkingText": [
+        "out of gamut"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "color-function",
+        "href": "https://drafts.csswg.org/css-color-5/#color-function",
+        "title": "Specifying custom color spaces: the color() function",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valdef-color-r",
+      "href": "https://drafts.csswg.org/css-color-5/#valdef-color-r",
+      "linkingText": [
+        "r"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "color()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "relative-color-function",
+        "href": "https://drafts.csswg.org/css-color-5/#relative-color-function",
+        "title": "Relative color-function colors",
+        "number": "5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valdef-color-g",
+      "href": "https://drafts.csswg.org/css-color-5/#valdef-color-g",
+      "linkingText": [
+        "g"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "color()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "relative-color-function",
+        "href": "https://drafts.csswg.org/css-color-5/#relative-color-function",
+        "title": "Relative color-function colors",
+        "number": "5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valdef-color-b",
+      "href": "https://drafts.csswg.org/css-color-5/#valdef-color-b",
+      "linkingText": [
+        "b"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "color()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "relative-color-function",
+        "href": "https://drafts.csswg.org/css-color-5/#relative-color-function",
+        "title": "Relative color-function colors",
+        "number": "5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valdef-color-x",
+      "href": "https://drafts.csswg.org/css-color-5/#valdef-color-x",
+      "linkingText": [
+        "x"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "color()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "relative-color-function",
+        "href": "https://drafts.csswg.org/css-color-5/#relative-color-function",
+        "title": "Relative color-function colors",
+        "number": "5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valdef-color-y",
+      "href": "https://drafts.csswg.org/css-color-5/#valdef-color-y",
+      "linkingText": [
+        "y"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "color()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "relative-color-function",
+        "href": "https://drafts.csswg.org/css-color-5/#relative-color-function",
+        "title": "Relative color-function colors",
+        "number": "5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valdef-color-z",
+      "href": "https://drafts.csswg.org/css-color-5/#valdef-color-z",
+      "linkingText": [
+        "z"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "color()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "relative-color-function",
+        "href": "https://drafts.csswg.org/css-color-5/#relative-color-function",
+        "title": "Relative color-function colors",
+        "number": "5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "cant-be-displayed",
+      "href": "https://drafts.csswg.org/css-color-5/#cant-be-displayed",
+      "linkingText": [
+        "can’t be displayed"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "relative-color-function",
+        "href": "https://drafts.csswg.org/css-color-5/#relative-color-function",
+        "title": "Relative color-function colors",
+        "number": "5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "can-be-displayed",
+      "href": "https://drafts.csswg.org/css-color-5/#can-be-displayed",
+      "linkingText": [
+        "can be displayed"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "relative-color-function",
+        "href": "https://drafts.csswg.org/css-color-5/#relative-color-function",
+        "title": "Relative color-function colors",
+        "number": "5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "at-ruledef-profile",
+      "href": "https://drafts.csswg.org/css-color-5/#at-ruledef-profile",
+      "linkingText": [
+        "@color-profile"
+      ],
+      "localLinkingText": [],
+      "type": "at-rule",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "at-profile",
+        "href": "https://drafts.csswg.org/css-color-5/#at-profile",
+        "title": "Specifying a color profile: the @color-profile at-rule",
+        "number": "5.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "css-color-profile",
+      "href": "https://drafts.csswg.org/css-color-5/#css-color-profile",
+      "linkingText": [
+        "CSS color profile"
+      ],
+      "localLinkingText": [
+        "color profile"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "at-profile",
+        "href": "https://drafts.csswg.org/css-color-5/#at-profile",
+        "title": "Specifying a color profile: the @color-profile at-rule",
+        "number": "5.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "descdef-color-profile-src",
+      "href": "https://drafts.csswg.org/css-color-5/#descdef-color-profile-src",
+      "linkingText": [
+        "src"
+      ],
+      "localLinkingText": [],
+      "type": "descriptor",
+      "for": [
+        "@color-profile"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "at-profile",
+        "href": "https://drafts.csswg.org/css-color-5/#at-profile",
+        "title": "Specifying a color profile: the @color-profile at-rule",
+        "number": "5.3"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "fetch-an-external-color-profile",
+      "href": "https://drafts.csswg.org/css-color-5/#fetch-an-external-color-profile",
+      "linkingText": [
+        "fetch an external color profile"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "at-profile",
+        "href": "https://drafts.csswg.org/css-color-5/#at-profile",
+        "title": "Specifying a color profile: the @color-profile at-rule",
+        "number": "5.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "descdef-color-profile-rendering-intent",
+      "href": "https://drafts.csswg.org/css-color-5/#descdef-color-profile-rendering-intent",
+      "linkingText": [
+        "rendering-intent"
+      ],
+      "localLinkingText": [],
+      "type": "descriptor",
+      "for": [
+        "@color-profile"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "at-profile",
+        "href": "https://drafts.csswg.org/css-color-5/#at-profile",
+        "title": "Specifying a color profile: the @color-profile at-rule",
+        "number": "5.3"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "gamut-map",
+      "href": "https://drafts.csswg.org/css-color-5/#gamut-map",
+      "linkingText": [
+        "gamut-map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "at-profile",
+        "href": "https://drafts.csswg.org/css-color-5/#at-profile",
+        "title": "Specifying a color profile: the @color-profile at-rule",
+        "number": "5.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valdef-color-profile-rendering-intent-relative-colorimetric",
+      "href": "https://drafts.csswg.org/css-color-5/#valdef-color-profile-rendering-intent-relative-colorimetric",
+      "linkingText": [
+        "relative-colorimetric"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@color-profile/rendering-intent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "at-profile",
+        "href": "https://drafts.csswg.org/css-color-5/#at-profile",
+        "title": "Specifying a color profile: the @color-profile at-rule",
+        "number": "5.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-color-profile-rendering-intent-absolute-colorimetric",
+      "href": "https://drafts.csswg.org/css-color-5/#valdef-color-profile-rendering-intent-absolute-colorimetric",
+      "linkingText": [
+        "absolute-colorimetric"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@color-profile/rendering-intent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "at-profile",
+        "href": "https://drafts.csswg.org/css-color-5/#at-profile",
+        "title": "Specifying a color profile: the @color-profile at-rule",
+        "number": "5.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-color-profile-rendering-intent-perceptual",
+      "href": "https://drafts.csswg.org/css-color-5/#valdef-color-profile-rendering-intent-perceptual",
+      "linkingText": [
+        "perceptual"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@color-profile/rendering-intent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "at-profile",
+        "href": "https://drafts.csswg.org/css-color-5/#at-profile",
+        "title": "Specifying a color profile: the @color-profile at-rule",
+        "number": "5.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-color-profile-rendering-intent-saturation",
+      "href": "https://drafts.csswg.org/css-color-5/#valdef-color-profile-rendering-intent-saturation",
+      "linkingText": [
+        "saturation"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@color-profile/rendering-intent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "at-profile",
+        "href": "https://drafts.csswg.org/css-color-5/#at-profile",
+        "title": "Specifying a color profile: the @color-profile at-rule",
+        "number": "5.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "descdef-color-profile-components",
+      "href": "https://drafts.csswg.org/css-color-5/#descdef-color-profile-components",
+      "linkingText": [
+        "components"
+      ],
+      "localLinkingText": [],
+      "type": "descriptor",
+      "for": [
+        "@color-profile"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "at-profile",
+        "href": "https://drafts.csswg.org/css-color-5/#at-profile",
+        "title": "Specifying a color profile: the @color-profile at-rule",
+        "number": "5.3"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "funcdef-device-cmyk",
+      "href": "https://drafts.csswg.org/css-color-5/#funcdef-device-cmyk",
+      "linkingText": [
+        "device-cmyk()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "device-cmyk",
+        "href": "https://drafts.csswg.org/css-color-5/#device-cmyk",
+        "title": "Uncalibrated CMYK Colors: the device-cmyk() function",
+        "number": "6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "typedef-cmyk-component",
+      "href": "https://drafts.csswg.org/css-color-5/#typedef-cmyk-component",
+      "linkingText": [
+        "<cmyk-component>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "device-cmyk",
+        "href": "https://drafts.csswg.org/css-color-5/#device-cmyk",
+        "title": "Uncalibrated CMYK Colors: the device-cmyk() function",
+        "number": "6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "naively-convert-from-cmyk-to-rgba",
+      "href": "https://drafts.csswg.org/css-color-5/#naively-convert-from-cmyk-to-rgba",
+      "linkingText": [
+        "naively convert from CMYK to RGBA",
+        "naively converted to RGBA"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "cmyk-rgb",
+        "href": "https://drafts.csswg.org/css-color-5/#cmyk-rgb",
+        "title": "Naively Converting Between Uncalibrated CMYK and sRGB-Based Colors",
+        "number": "6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "naively-convert-from-rgba-to-cmyk",
+      "href": "https://drafts.csswg.org/css-color-5/#naively-convert-from-rgba-to-cmyk",
+      "linkingText": [
+        "naively convert from RGBA to CMYK",
+        "naively converted to CMYK"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "cmyk-rgb",
+        "href": "https://drafts.csswg.org/css-color-5/#cmyk-rgb",
+        "title": "Naively Converting Between Uncalibrated CMYK and sRGB-Based Colors",
+        "number": "6.1"
+      },
+      "definedIn": "prose"
+    }
+  ]
+}

@@ -1,0 +1,832 @@
+{
+  "name": "Range",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "DOM Standard",
+      "url": "https://dom.spec.whatwg.org/"
+    },
+    "fragment": "[Exposed=Window]\ninterface Range : AbstractRange {\n  constructor();\n\n  readonly attribute Node commonAncestorContainer;\n\n  undefined setStart(Node node, unsigned long offset);\n  undefined setEnd(Node node, unsigned long offset);\n  undefined setStartBefore(Node node);\n  undefined setStartAfter(Node node);\n  undefined setEndBefore(Node node);\n  undefined setEndAfter(Node node);\n  undefined collapse(optional boolean toStart = false);\n  undefined selectNode(Node node);\n  undefined selectNodeContents(Node node);\n\n  const unsigned short START_TO_START = 0;\n  const unsigned short START_TO_END = 1;\n  const unsigned short END_TO_END = 2;\n  const unsigned short END_TO_START = 3;\n  short compareBoundaryPoints(unsigned short how, Range sourceRange);\n\n  [CEReactions] undefined deleteContents();\n  [CEReactions, NewObject] DocumentFragment extractContents();\n  [CEReactions, NewObject] DocumentFragment cloneContents();\n  [CEReactions] undefined insertNode(Node node);\n  [CEReactions] undefined surroundContents(Node newParent);\n\n  [NewObject] Range cloneRange();\n  undefined detach();\n\n  boolean isPointInRange(Node node, unsigned long offset);\n  short comparePoint(Node node, unsigned long offset);\n\n  boolean intersectsNode(Node node);\n\n  stringifier;\n};",
+    "href": "https://dom.spec.whatwg.org/#range"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "CSSOM View Module",
+        "url": "https://www.w3.org/TR/cssom-view-1/"
+      },
+      "fragment": "partial interface Range {\n  DOMRectList getClientRects();\n  [NewObject] DOMRect getBoundingClientRect();\n};"
+    },
+    {
+      "spec": {
+        "title": "DOM Parsing and Serialization",
+        "url": "https://www.w3.org/TR/DOM-Parsing/"
+      },
+      "fragment": "partial interface Range {\n  [CEReactions, NewObject] DocumentFragment createContextualFragment(DOMString fragment);\n};"
+    }
+  ],
+  "inheritance": {
+    "name": "AbstractRange",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=Window]\ninterface AbstractRange {\n  readonly attribute Node startContainer;\n  readonly attribute unsigned long startOffset;\n  readonly attribute Node endContainer;\n  readonly attribute unsigned long endOffset;\n  readonly attribute boolean collapsed;\n};",
+      "href": "https://dom.spec.whatwg.org/#abstractrange"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "range",
+        "href": "https://dom.spec.whatwg.org/#range",
+        "linkingText": [
+          "Range"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-range",
+          "href": "https://dom.spec.whatwg.org/#interface-range",
+          "title": "Interface Range",
+          "number": "5.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-range-range",
+        "href": "https://dom.spec.whatwg.org/#dom-range-range",
+        "linkingText": [
+          "Range()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "Range"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-range",
+          "href": "https://dom.spec.whatwg.org/#interface-range",
+          "title": "Interface Range",
+          "number": "5.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-range-commonancestorcontainer",
+        "href": "https://dom.spec.whatwg.org/#dom-range-commonancestorcontainer",
+        "linkingText": [
+          "commonAncestorContainer"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Range"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-range",
+          "href": "https://dom.spec.whatwg.org/#interface-range",
+          "title": "Interface Range",
+          "number": "5.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-range-setstart",
+        "href": "https://dom.spec.whatwg.org/#dom-range-setstart",
+        "linkingText": [
+          "setStart(node, offset)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Range"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-range",
+          "href": "https://dom.spec.whatwg.org/#interface-range",
+          "title": "Interface Range",
+          "number": "5.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-range-setend",
+        "href": "https://dom.spec.whatwg.org/#dom-range-setend",
+        "linkingText": [
+          "setEnd(node, offset)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Range"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-range",
+          "href": "https://dom.spec.whatwg.org/#interface-range",
+          "title": "Interface Range",
+          "number": "5.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-range-setstartbefore",
+        "href": "https://dom.spec.whatwg.org/#dom-range-setstartbefore",
+        "linkingText": [
+          "setStartBefore(node)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Range"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-range",
+          "href": "https://dom.spec.whatwg.org/#interface-range",
+          "title": "Interface Range",
+          "number": "5.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-range-setstartafter",
+        "href": "https://dom.spec.whatwg.org/#dom-range-setstartafter",
+        "linkingText": [
+          "setStartAfter(node)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Range"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-range",
+          "href": "https://dom.spec.whatwg.org/#interface-range",
+          "title": "Interface Range",
+          "number": "5.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-range-setendbefore",
+        "href": "https://dom.spec.whatwg.org/#dom-range-setendbefore",
+        "linkingText": [
+          "setEndBefore(node)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Range"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-range",
+          "href": "https://dom.spec.whatwg.org/#interface-range",
+          "title": "Interface Range",
+          "number": "5.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-range-setendafter",
+        "href": "https://dom.spec.whatwg.org/#dom-range-setendafter",
+        "linkingText": [
+          "setEndAfter(node)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Range"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-range",
+          "href": "https://dom.spec.whatwg.org/#interface-range",
+          "title": "Interface Range",
+          "number": "5.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-range-collapse",
+        "href": "https://dom.spec.whatwg.org/#dom-range-collapse",
+        "linkingText": [
+          "collapse(toStart)",
+          "collapse()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Range"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-range",
+          "href": "https://dom.spec.whatwg.org/#interface-range",
+          "title": "Interface Range",
+          "number": "5.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-range-selectnode",
+        "href": "https://dom.spec.whatwg.org/#dom-range-selectnode",
+        "linkingText": [
+          "selectNode(node)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Range"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-range",
+          "href": "https://dom.spec.whatwg.org/#interface-range",
+          "title": "Interface Range",
+          "number": "5.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-range-selectnodecontents",
+        "href": "https://dom.spec.whatwg.org/#dom-range-selectnodecontents",
+        "linkingText": [
+          "selectNodeContents(node)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Range"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-range",
+          "href": "https://dom.spec.whatwg.org/#interface-range",
+          "title": "Interface Range",
+          "number": "5.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-range-start_to_start",
+        "href": "https://dom.spec.whatwg.org/#dom-range-start_to_start",
+        "linkingText": [
+          "START_TO_START"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "Range"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-range",
+          "href": "https://dom.spec.whatwg.org/#interface-range",
+          "title": "Interface Range",
+          "number": "5.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-range-start_to_end",
+        "href": "https://dom.spec.whatwg.org/#dom-range-start_to_end",
+        "linkingText": [
+          "START_TO_END"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "Range"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-range",
+          "href": "https://dom.spec.whatwg.org/#interface-range",
+          "title": "Interface Range",
+          "number": "5.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-range-end_to_end",
+        "href": "https://dom.spec.whatwg.org/#dom-range-end_to_end",
+        "linkingText": [
+          "END_TO_END"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "Range"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-range",
+          "href": "https://dom.spec.whatwg.org/#interface-range",
+          "title": "Interface Range",
+          "number": "5.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-range-end_to_start",
+        "href": "https://dom.spec.whatwg.org/#dom-range-end_to_start",
+        "linkingText": [
+          "END_TO_START"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "Range"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-range",
+          "href": "https://dom.spec.whatwg.org/#interface-range",
+          "title": "Interface Range",
+          "number": "5.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-range-compareboundarypoints",
+        "href": "https://dom.spec.whatwg.org/#dom-range-compareboundarypoints",
+        "linkingText": [
+          "compareBoundaryPoints(how, sourceRange)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Range"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-range",
+          "href": "https://dom.spec.whatwg.org/#interface-range",
+          "title": "Interface Range",
+          "number": "5.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-range-deletecontents",
+        "href": "https://dom.spec.whatwg.org/#dom-range-deletecontents",
+        "linkingText": [
+          "deleteContents()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Range"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-range",
+          "href": "https://dom.spec.whatwg.org/#interface-range",
+          "title": "Interface Range",
+          "number": "5.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-range-extractcontents",
+        "href": "https://dom.spec.whatwg.org/#dom-range-extractcontents",
+        "linkingText": [
+          "extractContents()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Range"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-range",
+          "href": "https://dom.spec.whatwg.org/#interface-range",
+          "title": "Interface Range",
+          "number": "5.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-range-clonecontents",
+        "href": "https://dom.spec.whatwg.org/#dom-range-clonecontents",
+        "linkingText": [
+          "cloneContents()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Range"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-range",
+          "href": "https://dom.spec.whatwg.org/#interface-range",
+          "title": "Interface Range",
+          "number": "5.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-range-insertnode",
+        "href": "https://dom.spec.whatwg.org/#dom-range-insertnode",
+        "linkingText": [
+          "insertNode(node)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Range"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-range",
+          "href": "https://dom.spec.whatwg.org/#interface-range",
+          "title": "Interface Range",
+          "number": "5.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-range-surroundcontents",
+        "href": "https://dom.spec.whatwg.org/#dom-range-surroundcontents",
+        "linkingText": [
+          "surroundContents(newParent)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Range"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-range",
+          "href": "https://dom.spec.whatwg.org/#interface-range",
+          "title": "Interface Range",
+          "number": "5.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-range-clonerange",
+        "href": "https://dom.spec.whatwg.org/#dom-range-clonerange",
+        "linkingText": [
+          "cloneRange()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Range"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-range",
+          "href": "https://dom.spec.whatwg.org/#interface-range",
+          "title": "Interface Range",
+          "number": "5.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-range-detach",
+        "href": "https://dom.spec.whatwg.org/#dom-range-detach",
+        "linkingText": [
+          "detach()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Range"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-range",
+          "href": "https://dom.spec.whatwg.org/#interface-range",
+          "title": "Interface Range",
+          "number": "5.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-range-ispointinrange",
+        "href": "https://dom.spec.whatwg.org/#dom-range-ispointinrange",
+        "linkingText": [
+          "isPointInRange(node, offset)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Range"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-range",
+          "href": "https://dom.spec.whatwg.org/#interface-range",
+          "title": "Interface Range",
+          "number": "5.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-range-comparepoint",
+        "href": "https://dom.spec.whatwg.org/#dom-range-comparepoint",
+        "linkingText": [
+          "comparePoint(node, offset)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Range"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-range",
+          "href": "https://dom.spec.whatwg.org/#interface-range",
+          "title": "Interface Range",
+          "number": "5.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-range-intersectsnode",
+        "href": "https://dom.spec.whatwg.org/#dom-range-intersectsnode",
+        "linkingText": [
+          "intersectsNode(node)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Range"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-range",
+          "href": "https://dom.spec.whatwg.org/#interface-range",
+          "title": "Interface Range",
+          "number": "5.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-range-stringifier",
+        "href": "https://dom.spec.whatwg.org/#dom-range-stringifier",
+        "linkingText": [
+          "stringificationbehavior"
+        ],
+        "localLinkingText": [],
+        "type": "dfn",
+        "for": [
+          "Range"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-range",
+          "href": "https://dom.spec.whatwg.org/#interface-range",
+          "title": "Interface Range",
+          "number": "5.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "abstractrange",
+        "href": "https://dom.spec.whatwg.org/#abstractrange",
+        "linkingText": [
+          "AbstractRange"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-abstractrange",
+          "href": "https://dom.spec.whatwg.org/#interface-abstractrange",
+          "title": "Interface AbstractRange",
+          "number": "5.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-range-startcontainer",
+        "href": "https://dom.spec.whatwg.org/#dom-range-startcontainer",
+        "linkingText": [
+          "startContainer"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "AbstractRange"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-abstractrange",
+          "href": "https://dom.spec.whatwg.org/#interface-abstractrange",
+          "title": "Interface AbstractRange",
+          "number": "5.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-range-startoffset",
+        "href": "https://dom.spec.whatwg.org/#dom-range-startoffset",
+        "linkingText": [
+          "startOffset"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "AbstractRange"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-abstractrange",
+          "href": "https://dom.spec.whatwg.org/#interface-abstractrange",
+          "title": "Interface AbstractRange",
+          "number": "5.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-range-endcontainer",
+        "href": "https://dom.spec.whatwg.org/#dom-range-endcontainer",
+        "linkingText": [
+          "endContainer"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "AbstractRange"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-abstractrange",
+          "href": "https://dom.spec.whatwg.org/#interface-abstractrange",
+          "title": "Interface AbstractRange",
+          "number": "5.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-range-endoffset",
+        "href": "https://dom.spec.whatwg.org/#dom-range-endoffset",
+        "linkingText": [
+          "endOffset"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "AbstractRange"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-abstractrange",
+          "href": "https://dom.spec.whatwg.org/#interface-abstractrange",
+          "title": "Interface AbstractRange",
+          "number": "5.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-range-collapsed",
+        "href": "https://dom.spec.whatwg.org/#dom-range-collapsed",
+        "linkingText": [
+          "collapsed"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "AbstractRange"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-abstractrange",
+          "href": "https://dom.spec.whatwg.org/#interface-abstractrange",
+          "title": "Interface AbstractRange",
+          "number": "5.3"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://www.w3.org/TR/cssom-view-1/": [
+      {
+        "id": "dom-range-getclientrects",
+        "href": "https://drafts.csswg.org/cssom-view/#dom-range-getclientrects",
+        "linkingText": [
+          "getClientRects()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Range"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "extensions-to-the-range-interface",
+          "href": "https://drafts.csswg.org/cssom-view/#extensions-to-the-range-interface",
+          "title": "Extensions to the Range Interface",
+          "number": "9"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-range-getboundingclientrect",
+        "href": "https://drafts.csswg.org/cssom-view/#dom-range-getboundingclientrect",
+        "linkingText": [
+          "getBoundingClientRect()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Range"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "extensions-to-the-range-interface",
+          "href": "https://drafts.csswg.org/cssom-view/#extensions-to-the-range-interface",
+          "title": "Extensions to the Range Interface",
+          "number": "9"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://www.w3.org/TR/DOM-Parsing/": [
+      {
+        "id": "dom-range-createcontextualfragment",
+        "href": "https://w3c.github.io/DOM-Parsing/#dom-range-createcontextualfragment",
+        "linkingText": [
+          "createContextualFragment(fragment)",
+          "createContextualFragment()"
+        ],
+        "localLinkingText": [
+          "Range.createContextualFragment",
+          "Range.createContextualFragment()",
+          "createContextualFragment"
+        ],
+        "type": "method",
+        "for": [
+          "Range"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "extensions-to-the-range-interface",
+          "href": "https://w3c.github.io/DOM-Parsing/#extensions-to-the-range-interface",
+          "title": "Extensions to the Range interface",
+          "number": "2.5"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "name": "GPUAdapter",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebGPU",
+      "url": "https://www.w3.org/TR/webgpu/"
+    },
+    "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUAdapter {\n    readonly attribute DOMString name;\n    [SameObject] readonly attribute GPUSupportedFeatures features;\n    [SameObject] readonly attribute GPUSupportedLimits limits;\n    readonly attribute boolean isFallbackAdapter;\n\n    Promise<GPUDevice> requestDevice(optional GPUDeviceDescriptor descriptor = {});\n};",
+    "href": "https://gpuweb.github.io/gpuweb/#gpuadapter"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webgpu/": [
+      {
+        "id": "gpuadapter",
+        "href": "https://gpuweb.github.io/gpuweb/#gpuadapter",
+        "linkingText": [
+          "GPUAdapter"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "gpu-adapter",
+          "href": "https://gpuweb.github.io/gpuweb/#gpu-adapter",
+          "title": "GPUAdapter",
+          "number": "4.3"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-gpuadapter-name",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpuadapter-name",
+        "linkingText": [
+          "name"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "GPUAdapter"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "gpu-adapter",
+          "href": "https://gpuweb.github.io/gpuweb/#gpu-adapter",
+          "title": "GPUAdapter",
+          "number": "4.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpuadapter-features",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpuadapter-features",
+        "linkingText": [
+          "features"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "GPUAdapter"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "gpu-adapter",
+          "href": "https://gpuweb.github.io/gpuweb/#gpu-adapter",
+          "title": "GPUAdapter",
+          "number": "4.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpuadapter-limits",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpuadapter-limits",
+        "linkingText": [
+          "limits"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "GPUAdapter"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "gpu-adapter",
+          "href": "https://gpuweb.github.io/gpuweb/#gpu-adapter",
+          "title": "GPUAdapter",
+          "number": "4.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpuadapter-isfallbackadapter",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpuadapter-isfallbackadapter",
+        "linkingText": [
+          "isFallbackAdapter"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "GPUAdapter"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "gpu-adapter",
+          "href": "https://gpuweb.github.io/gpuweb/#gpu-adapter",
+          "title": "GPUAdapter",
+          "number": "4.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpuadapter-requestdevice",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpuadapter-requestdevice",
+        "linkingText": [
+          "requestDevice(descriptor)",
+          "requestDevice()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GPUAdapter"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "gpu-adapter",
+          "href": "https://gpuweb.github.io/gpuweb/#gpu-adapter",
+          "title": "GPUAdapter",
+          "number": "4.3"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

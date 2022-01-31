@@ -1,0 +1,147 @@
+{
+  "name": "CompressionStream",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Compression Streams",
+      "url": "https://wicg.github.io/compression/"
+    },
+    "fragment": "[Exposed=*]\ninterface CompressionStream {\n  constructor(DOMString format);\n};",
+    "href": "https://wicg.github.io/compression/#compressionstream"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "Compression Streams",
+        "url": "https://wicg.github.io/compression/"
+      },
+      "fragment": "CompressionStream includes GenericTransformStream;"
+    }
+  ],
+  "inheritance": null,
+  "includes": [
+    {
+      "name": "GenericTransformStream",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "Streams Standard",
+          "url": "https://streams.spec.whatwg.org/"
+        },
+        "fragment": "interface mixin GenericTransformStream {\n  readonly attribute ReadableStream readable;\n  readonly attribute WritableStream writable;\n};",
+        "href": "https://streams.spec.whatwg.org/#generictransformstream"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    }
+  ],
+  "dfns": {
+    "https://wicg.github.io/compression/": [
+      {
+        "id": "compressionstream",
+        "href": "https://wicg.github.io/compression/#compressionstream",
+        "linkingText": [
+          "CompressionStream"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "compression-stream",
+          "href": "https://wicg.github.io/compression/#compression-stream",
+          "title": "Interface CompressionStream",
+          "number": "5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-compressionstream-compressionstream",
+        "href": "https://wicg.github.io/compression/#dom-compressionstream-compressionstream",
+        "linkingText": [
+          "CompressionStream(format)",
+          "constructor(format)"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "CompressionStream"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "compression-stream",
+          "href": "https://wicg.github.io/compression/#compression-stream",
+          "title": "Interface CompressionStream",
+          "number": "5"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://streams.spec.whatwg.org/": [
+      {
+        "id": "generictransformstream",
+        "href": "https://streams.spec.whatwg.org/#generictransformstream",
+        "linkingText": [
+          "GenericTransformStream"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "other-specs-ts-wrapping",
+          "href": "https://streams.spec.whatwg.org/#other-specs-ts-wrapping",
+          "title": "Wrapping into a custom class",
+          "number": "9.3.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-generictransformstream-readable",
+        "href": "https://streams.spec.whatwg.org/#dom-generictransformstream-readable",
+        "linkingText": [
+          "readable"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "GenericTransformStream"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "other-specs-ts-wrapping",
+          "href": "https://streams.spec.whatwg.org/#other-specs-ts-wrapping",
+          "title": "Wrapping into a custom class",
+          "number": "9.3.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-generictransformstream-writable",
+        "href": "https://streams.spec.whatwg.org/#dom-generictransformstream-writable",
+        "linkingText": [
+          "writable"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "GenericTransformStream"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "other-specs-ts-wrapping",
+          "href": "https://streams.spec.whatwg.org/#other-specs-ts-wrapping",
+          "title": "Wrapping into a custom class",
+          "number": "9.3.2"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

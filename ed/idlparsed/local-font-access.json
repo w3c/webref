@@ -1,0 +1,315 @@
+{
+  "spec": {
+    "title": "Local Font Access API",
+    "url": "https://wicg.github.io/local-font-access/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {},
+      "functions": {
+        "Window": [
+          "FontManager",
+          "FontMetadata"
+        ]
+      }
+    },
+    "idlNames": {
+      "NavigatorFonts": {
+        "fragment": "[SecureContext]\ninterface mixin NavigatorFonts {\n  [SameObject] readonly attribute FontManager fonts;\n};",
+        "type": "interface mixin",
+        "name": "NavigatorFonts",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "attribute",
+            "name": "fonts",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "FontManager"
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "SameObject",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "FontManager": {
+        "fragment": "[SecureContext,\n Exposed=Window]\ninterface FontManager {\n  Promise<sequence<FontMetadata>> query(optional QueryOptions options = {});\n};",
+        "type": "interface",
+        "name": "FontManager",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "operation",
+            "name": "query",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "sequence",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": [
+                    {
+                      "type": "return-type",
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "FontMetadata"
+                    }
+                  ]
+                }
+              ]
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "options",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "QueryOptions"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "QueryOptions": {
+        "fragment": "dictionary QueryOptions {\n  sequence<DOMString> select = [];\n};",
+        "type": "dictionary",
+        "name": "QueryOptions",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "select",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                }
+              ]
+            },
+            "default": {
+              "type": "sequence",
+              "value": []
+            },
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "FontMetadata": {
+        "fragment": "[Exposed=Window]\ninterface FontMetadata {\n  Promise<Blob> blob();\n\n  // Names\n  readonly attribute USVString postscriptName;\n  readonly attribute USVString fullName;\n  readonly attribute USVString family;\n  readonly attribute USVString style;\n};",
+        "type": "interface",
+        "name": "FontMetadata",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "operation",
+            "name": "blob",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "Blob"
+                }
+              ]
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "attribute",
+            "name": "postscriptName",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "fullName",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "family",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "style",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      }
+    },
+    "idlExtendedNames": {
+      "Navigator": [
+        {
+          "fragment": "Navigator includes NavigatorFonts;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "Navigator",
+          "includes": "NavigatorFonts"
+        }
+      ]
+    },
+    "globals": {},
+    "exposed": {
+      "Window": [
+        "FontManager",
+        "FontMetadata"
+      ]
+    },
+    "dependencies": {
+      "NavigatorFonts": [
+        "FontManager"
+      ],
+      "Navigator": [
+        "NavigatorFonts"
+      ],
+      "FontManager": [
+        "FontMetadata",
+        "QueryOptions"
+      ],
+      "QueryOptions": [],
+      "FontMetadata": [
+        "Blob"
+      ]
+    },
+    "externalDependencies": [
+      "Blob"
+    ],
+    "hasObsoleteIdl": false
+  }
+}

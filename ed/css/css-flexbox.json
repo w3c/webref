@@ -1,0 +1,181 @@
+{
+  "spec": {
+    "title": "CSS Flexible Box Layout Module Level 1",
+    "url": "https://drafts.csswg.org/css-flexbox-1/"
+  },
+  "properties": {
+    "display": {
+      "name": "display",
+      "newValues": "flex | inline-flex",
+      "styleDeclaration": [
+        "display"
+      ]
+    },
+    "flex-direction": {
+      "name": "flex-direction",
+      "value": "row | row-reverse | column | column-reverse",
+      "initial": "row",
+      "appliesTo": "flex containers",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "specified keyword",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "flex-direction",
+        "flexDirection"
+      ]
+    },
+    "flex-wrap": {
+      "name": "flex-wrap",
+      "value": "nowrap | wrap | wrap-reverse",
+      "initial": "nowrap",
+      "appliesTo": "flex containers",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "specified keyword",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "flex-wrap",
+        "flexWrap"
+      ]
+    },
+    "flex-flow": {
+      "name": "flex-flow",
+      "value": "<'flex-direction'> || <'flex-wrap'>",
+      "initial": "see individual properties",
+      "appliesTo": "see individual properties",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "flex-flow",
+        "flexFlow"
+      ]
+    },
+    "flex": {
+      "name": "flex",
+      "value": "none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]",
+      "initial": "0 1 auto",
+      "appliesTo": "flex items",
+      "inherited": "no",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "by computed value type",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "flex"
+      ]
+    },
+    "flex-grow": {
+      "name": "flex-grow",
+      "value": "<number [0,∞]>",
+      "initial": "0",
+      "appliesTo": "flex items",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "specified number",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
+      "styleDeclaration": [
+        "flex-grow",
+        "flexGrow"
+      ]
+    },
+    "flex-shrink": {
+      "name": "flex-shrink",
+      "value": "<number [0,∞]>",
+      "initial": "1",
+      "appliesTo": "flex items",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "specified value",
+      "canonicalOrder": "per grammar",
+      "animationType": "number",
+      "styleDeclaration": [
+        "flex-shrink",
+        "flexShrink"
+      ]
+    },
+    "flex-basis": {
+      "name": "flex-basis",
+      "value": "content | <'width'>",
+      "initial": "auto",
+      "appliesTo": "flex items",
+      "inherited": "no",
+      "percentages": "relative to the flex container’s inner main size",
+      "computedValue": "specified keyword or a computed <length-percentage> value",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
+      "styleDeclaration": [
+        "flex-basis",
+        "flexBasis"
+      ]
+    },
+    "justify-content": {
+      "name": "justify-content",
+      "value": "flex-start | flex-end | center | space-between | space-around",
+      "initial": "flex-start",
+      "appliesTo": "flex containers",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "specified keyword",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "justify-content",
+        "justifyContent"
+      ]
+    },
+    "align-items": {
+      "name": "align-items",
+      "value": "flex-start | flex-end | center | baseline | stretch",
+      "initial": "stretch",
+      "appliesTo": "flex containers",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "specified keyword",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "align-items",
+        "alignItems"
+      ]
+    },
+    "align-self": {
+      "name": "align-self",
+      "value": "auto | flex-start | flex-end | center | baseline | stretch",
+      "initial": "auto",
+      "appliesTo": "flex items",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "specified keyword",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "align-self",
+        "alignSelf"
+      ]
+    },
+    "align-content": {
+      "name": "align-content",
+      "value": "flex-start | flex-end | center | space-between | space-around | stretch",
+      "initial": "stretch",
+      "appliesTo": "multi-line flex containers",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "specified keyword",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "align-content",
+        "alignContent"
+      ]
+    }
+  },
+  "descriptors": {},
+  "valuespaces": {}
+}

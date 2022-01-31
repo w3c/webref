@@ -1,0 +1,266 @@
+{
+  "name": "CloseWatcher",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Close Watcher API",
+      "url": "https://wicg.github.io/close-watcher/"
+    },
+    "fragment": "[Exposed=Window]\ninterface CloseWatcher : EventTarget {\n  constructor();\n\n  undefined destroy();\n  undefined signalClose();\n\n  attribute EventHandler oncancel;\n  attribute EventHandler onclose;\n};",
+    "href": "https://wicg.github.io/close-watcher/#closewatcher"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "EventTarget",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=*]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+      "href": "https://dom.spec.whatwg.org/#eventtarget"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://wicg.github.io/close-watcher/": [
+      {
+        "id": "closewatcher",
+        "href": "https://wicg.github.io/close-watcher/#closewatcher",
+        "linkingText": [
+          "CloseWatcher"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "close-watcher-api",
+          "href": "https://wicg.github.io/close-watcher/#close-watcher-api",
+          "title": "Close watcher API",
+          "number": "1.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-closewatcher-closewatcher",
+        "href": "https://wicg.github.io/close-watcher/#dom-closewatcher-closewatcher",
+        "linkingText": [
+          "CloseWatcher()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "CloseWatcher"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "close-watcher-api",
+          "href": "https://wicg.github.io/close-watcher/#close-watcher-api",
+          "title": "Close watcher API",
+          "number": "1.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-closewatcher-destroy",
+        "href": "https://wicg.github.io/close-watcher/#dom-closewatcher-destroy",
+        "linkingText": [
+          "destroy()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CloseWatcher"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "close-watcher-api",
+          "href": "https://wicg.github.io/close-watcher/#close-watcher-api",
+          "title": "Close watcher API",
+          "number": "1.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-closewatcher-signalclose",
+        "href": "https://wicg.github.io/close-watcher/#dom-closewatcher-signalclose",
+        "linkingText": [
+          "signalClose()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CloseWatcher"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "close-watcher-api",
+          "href": "https://wicg.github.io/close-watcher/#close-watcher-api",
+          "title": "Close watcher API",
+          "number": "1.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-closewatcher-oncancel",
+        "href": "https://wicg.github.io/close-watcher/#dom-closewatcher-oncancel",
+        "linkingText": [
+          "oncancel"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "CloseWatcher"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "close-watcher-api",
+          "href": "https://wicg.github.io/close-watcher/#close-watcher-api",
+          "title": "Close watcher API",
+          "number": "1.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-closewatcher-onclose",
+        "href": "https://wicg.github.io/close-watcher/#dom-closewatcher-onclose",
+        "linkingText": [
+          "onclose"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "CloseWatcher"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "close-watcher-api",
+          "href": "https://wicg.github.io/close-watcher/#close-watcher-api",
+          "title": "Close watcher API",
+          "number": "1.2"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "eventtarget",
+        "href": "https://dom.spec.whatwg.org/#eventtarget",
+        "linkingText": [
+          "EventTarget"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventtarget-eventtarget",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-eventtarget",
+        "linkingText": [
+          "EventTarget()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-addeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-addeventlistener",
+        "linkingText": [
+          "addEventListener(type, callback, options)",
+          "addEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-removeeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-removeeventlistener",
+        "linkingText": [
+          "removeEventListener(type, callback, options)",
+          "removeEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-dispatchevent",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-dispatchevent",
+        "linkingText": [
+          "dispatchEvent(event)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

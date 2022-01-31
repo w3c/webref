@@ -1,0 +1,80 @@
+{
+  "name": "StyleSheetList",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "CSS Object Model (CSSOM)",
+      "url": "https://www.w3.org/TR/cssom-1/"
+    },
+    "fragment": "[Exposed=Window]\ninterface StyleSheetList {\n  getter CSSStyleSheet? item(unsigned long index);\n  readonly attribute unsigned long length;\n};",
+    "href": "https://drafts.csswg.org/cssom/#stylesheetlist"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/cssom-1/": [
+      {
+        "id": "stylesheetlist",
+        "href": "https://drafts.csswg.org/cssom/#stylesheetlist",
+        "linkingText": [
+          "StyleSheetList"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-stylesheetlist-interface",
+          "href": "https://drafts.csswg.org/cssom/#the-stylesheetlist-interface",
+          "title": "The StyleSheetList Interface",
+          "number": "6.2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-stylesheetlist-item",
+        "href": "https://drafts.csswg.org/cssom/#dom-stylesheetlist-item",
+        "linkingText": [
+          "item(index)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "StyleSheetList"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-stylesheetlist-interface",
+          "href": "https://drafts.csswg.org/cssom/#the-stylesheetlist-interface",
+          "title": "The StyleSheetList Interface",
+          "number": "6.2.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-stylesheetlist-length",
+        "href": "https://drafts.csswg.org/cssom/#dom-stylesheetlist-length",
+        "linkingText": [
+          "length"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "StyleSheetList"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-stylesheetlist-interface",
+          "href": "https://drafts.csswg.org/cssom/#the-stylesheetlist-interface",
+          "title": "The StyleSheetList Interface",
+          "number": "6.2.2"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

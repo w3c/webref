@@ -1,0 +1,101 @@
+{
+  "name": "TableDescriptor",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "WebAssembly JavaScript Interface",
+      "url": "https://www.w3.org/TR/wasm-js-api-1/"
+    },
+    "fragment": "dictionary TableDescriptor {\n  required TableKind element;\n  required [EnforceRange] unsigned long initial;\n  [EnforceRange] unsigned long maximum;\n};",
+    "href": "https://webassembly.github.io/spec/js-api/#dictdef-tabledescriptor"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/wasm-js-api-1/": [
+      {
+        "id": "dictdef-tabledescriptor",
+        "href": "https://webassembly.github.io/spec/js-api/#dictdef-tabledescriptor",
+        "linkingText": [
+          "TableDescriptor"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "tables",
+          "href": "https://webassembly.github.io/spec/js-api/#tables",
+          "title": "Tables",
+          "number": "4.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-tabledescriptor-element",
+        "href": "https://webassembly.github.io/spec/js-api/#dom-tabledescriptor-element",
+        "linkingText": [
+          "element"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "TableDescriptor"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "tables",
+          "href": "https://webassembly.github.io/spec/js-api/#tables",
+          "title": "Tables",
+          "number": "4.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-tabledescriptor-initial",
+        "href": "https://webassembly.github.io/spec/js-api/#dom-tabledescriptor-initial",
+        "linkingText": [
+          "initial"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "TableDescriptor"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "tables",
+          "href": "https://webassembly.github.io/spec/js-api/#tables",
+          "title": "Tables",
+          "number": "4.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-tabledescriptor-maximum",
+        "href": "https://webassembly.github.io/spec/js-api/#dom-tabledescriptor-maximum",
+        "linkingText": [
+          "maximum"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "TableDescriptor"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "tables",
+          "href": "https://webassembly.github.io/spec/js-api/#tables",
+          "title": "Tables",
+          "number": "4.4"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

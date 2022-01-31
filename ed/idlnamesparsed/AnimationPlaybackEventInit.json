@@ -1,0 +1,178 @@
+{
+  "name": "AnimationPlaybackEventInit",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Web Animations Level 2",
+      "url": "https://drafts.csswg.org/web-animations-2/"
+    },
+    "fragment": "dictionary AnimationPlaybackEventInit : EventInit {\n    CSSNumberish? currentTime = null;\n    CSSNumberish? timelineTime = null;\n};",
+    "href": "https://drafts.csswg.org/web-animations-2/#dictdef-animationplaybackeventinit"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "EventInit",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "dictionary EventInit {\n  boolean bubbles = false;\n  boolean cancelable = false;\n  boolean composed = false;\n};",
+      "href": "https://dom.spec.whatwg.org/#dictdef-eventinit"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://drafts.csswg.org/web-animations-2/": [
+      {
+        "id": "dictdef-animationplaybackeventinit",
+        "href": "https://drafts.csswg.org/web-animations-2/#dictdef-animationplaybackeventinit",
+        "linkingText": [
+          "AnimationPlaybackEventInit"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-animationplaybackevent-interface",
+          "href": "https://drafts.csswg.org/web-animations-2/#the-animationplaybackevent-interface",
+          "title": "The AnimationPlaybackEvent interface",
+          "number": "5.14"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-animationplaybackeventinit-currenttime",
+        "href": "https://drafts.csswg.org/web-animations-2/#dom-animationplaybackeventinit-currenttime",
+        "linkingText": [
+          "currentTime"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "AnimationPlaybackEventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-animationplaybackevent-interface",
+          "href": "https://drafts.csswg.org/web-animations-2/#the-animationplaybackevent-interface",
+          "title": "The AnimationPlaybackEvent interface",
+          "number": "5.14"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-animationplaybackeventinit-timelinetime",
+        "href": "https://drafts.csswg.org/web-animations-2/#dom-animationplaybackeventinit-timelinetime",
+        "linkingText": [
+          "timelineTime"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "AnimationPlaybackEventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-animationplaybackevent-interface",
+          "href": "https://drafts.csswg.org/web-animations-2/#the-animationplaybackevent-interface",
+          "title": "The AnimationPlaybackEvent interface",
+          "number": "5.14"
+        },
+        "definedIn": "dt"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "dictdef-eventinit",
+        "href": "https://dom.spec.whatwg.org/#dictdef-eventinit",
+        "linkingText": [
+          "EventInit"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventinit-bubbles",
+        "href": "https://dom.spec.whatwg.org/#dom-eventinit-bubbles",
+        "linkingText": [
+          "bubbles"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventinit-cancelable",
+        "href": "https://dom.spec.whatwg.org/#dom-eventinit-cancelable",
+        "linkingText": [
+          "cancelable"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventinit-composed",
+        "href": "https://dom.spec.whatwg.org/#dom-eventinit-composed",
+        "linkingText": [
+          "composed"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

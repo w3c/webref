@@ -1,0 +1,80 @@
+{
+  "name": "XRDepthStateInit",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "WebXR Depth Sensing Module",
+      "url": "https://www.w3.org/TR/webxr-depth-sensing-1/"
+    },
+    "fragment": "dictionary XRDepthStateInit {\n  required sequence<XRDepthUsage> usagePreference;\n  required sequence<XRDepthDataFormat> dataFormatPreference;\n};",
+    "href": "https://immersive-web.github.io/depth-sensing/#dictdef-xrdepthstateinit"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webxr-depth-sensing-1/": [
+      {
+        "id": "dictdef-xrdepthstateinit",
+        "href": "https://immersive-web.github.io/depth-sensing/#dictdef-xrdepthstateinit",
+        "linkingText": [
+          "XRDepthStateInit"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "session-configuration",
+          "href": "https://immersive-web.github.io/depth-sensing/#session-configuration",
+          "title": "Session configuration",
+          "number": "2.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-xrdepthstateinit-usagepreference",
+        "href": "https://immersive-web.github.io/depth-sensing/#dom-xrdepthstateinit-usagepreference",
+        "linkingText": [
+          "usagePreference"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "XRDepthStateInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "session-configuration",
+          "href": "https://immersive-web.github.io/depth-sensing/#session-configuration",
+          "title": "Session configuration",
+          "number": "2.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-xrdepthstateinit-dataformatpreference",
+        "href": "https://immersive-web.github.io/depth-sensing/#dom-xrdepthstateinit-dataformatpreference",
+        "linkingText": [
+          "dataFormatPreference"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "XRDepthStateInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "session-configuration",
+          "href": "https://immersive-web.github.io/depth-sensing/#session-configuration",
+          "title": "Session configuration",
+          "number": "2.3"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

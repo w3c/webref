@@ -1,0 +1,80 @@
+{
+  "name": "NavigationPreloadState",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Service Workers Nightly",
+      "url": "https://www.w3.org/TR/service-workers-1/"
+    },
+    "fragment": "dictionary NavigationPreloadState {\n  boolean enabled = false;\n  ByteString headerValue;\n};",
+    "href": "https://w3c.github.io/ServiceWorker/#dictdef-navigationpreloadstate"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/service-workers-1/": [
+      {
+        "id": "dictdef-navigationpreloadstate",
+        "href": "https://w3c.github.io/ServiceWorker/#dictdef-navigationpreloadstate",
+        "linkingText": [
+          "NavigationPreloadState"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "navigation-preload-manager",
+          "href": "https://w3c.github.io/ServiceWorker/#navigation-preload-manager",
+          "title": "NavigationPreloadManager",
+          "number": "3.6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-navigationpreloadstate-enabled",
+        "href": "https://w3c.github.io/ServiceWorker/#dom-navigationpreloadstate-enabled",
+        "linkingText": [
+          "enabled"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "NavigationPreloadState"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "navigation-preload-manager",
+          "href": "https://w3c.github.io/ServiceWorker/#navigation-preload-manager",
+          "title": "NavigationPreloadManager",
+          "number": "3.6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-navigationpreloadstate-headervalue",
+        "href": "https://w3c.github.io/ServiceWorker/#dom-navigationpreloadstate-headervalue",
+        "linkingText": [
+          "headerValue"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "NavigationPreloadState"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "navigation-preload-manager",
+          "href": "https://w3c.github.io/ServiceWorker/#navigation-preload-manager",
+          "title": "NavigationPreloadManager",
+          "number": "3.6"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

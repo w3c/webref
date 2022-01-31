@@ -1,0 +1,166 @@
+{
+  "name": "ImageCapture",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "MediaStream Image Capture",
+      "url": "https://www.w3.org/TR/image-capture/"
+    },
+    "fragment": "[Exposed=Window]\ninterface ImageCapture {\n   constructor(MediaStreamTrack videoTrack);\n   Promise<Blob>              takePhoto(optional PhotoSettings photoSettings = {});\n   Promise<PhotoCapabilities> getPhotoCapabilities();\n   Promise<PhotoSettings>     getPhotoSettings();\n\n   Promise<ImageBitmap>       grabFrame();\n\n   readonly attribute MediaStreamTrack track;\n};",
+    "href": "https://w3c.github.io/mediacapture-image/#imagecapture"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/image-capture/": [
+      {
+        "id": "imagecapture",
+        "href": "https://w3c.github.io/mediacapture-image/#imagecapture",
+        "linkingText": [
+          "ImageCapture"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "imagecaptureapi",
+          "href": "https://w3c.github.io/mediacapture-image/#imagecaptureapi",
+          "title": "Image Capture API",
+          "number": "3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-imagecapture-imagecapture",
+        "href": "https://w3c.github.io/mediacapture-image/#dom-imagecapture-imagecapture",
+        "linkingText": [
+          "ImageCapture(videoTrack)",
+          "constructor(videoTrack)"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "ImageCapture"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "imagecapture-methods",
+          "href": "https://w3c.github.io/mediacapture-image/#imagecapture-methods",
+          "title": "Methods",
+          "number": "3.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-imagecapture-takephoto",
+        "href": "https://w3c.github.io/mediacapture-image/#dom-imagecapture-takephoto",
+        "linkingText": [
+          "takePhoto(photoSettings)",
+          "takePhoto()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "ImageCapture"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "imagecapture-methods",
+          "href": "https://w3c.github.io/mediacapture-image/#imagecapture-methods",
+          "title": "Methods",
+          "number": "3.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-imagecapture-getphotocapabilities",
+        "href": "https://w3c.github.io/mediacapture-image/#dom-imagecapture-getphotocapabilities",
+        "linkingText": [
+          "getPhotoCapabilities()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "ImageCapture"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "imagecapture-methods",
+          "href": "https://w3c.github.io/mediacapture-image/#imagecapture-methods",
+          "title": "Methods",
+          "number": "3.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-imagecapture-getphotosettings",
+        "href": "https://w3c.github.io/mediacapture-image/#dom-imagecapture-getphotosettings",
+        "linkingText": [
+          "getPhotoSettings()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "ImageCapture"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "imagecapture-methods",
+          "href": "https://w3c.github.io/mediacapture-image/#imagecapture-methods",
+          "title": "Methods",
+          "number": "3.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-imagecapture-grabframe",
+        "href": "https://w3c.github.io/mediacapture-image/#dom-imagecapture-grabframe",
+        "linkingText": [
+          "grabFrame()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "ImageCapture"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "imagecapture-methods",
+          "href": "https://w3c.github.io/mediacapture-image/#imagecapture-methods",
+          "title": "Methods",
+          "number": "3.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-imagecapture-track",
+        "href": "https://w3c.github.io/mediacapture-image/#dom-imagecapture-track",
+        "linkingText": [
+          "track"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "ImageCapture"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "imagecapture-attributes",
+          "href": "https://w3c.github.io/mediacapture-image/#imagecapture-attributes",
+          "title": "Attributes",
+          "number": "3.1"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

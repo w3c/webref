@@ -1,0 +1,59 @@
+{
+  "name": "AbsoluteOrientationReadingValues",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Orientation Sensor",
+      "url": "https://www.w3.org/TR/orientation-sensor/"
+    },
+    "fragment": "dictionary AbsoluteOrientationReadingValues {\n  required FrozenArray<double>? quaternion;\n};",
+    "href": "https://w3c.github.io/orientation-sensor/#dictdef-absoluteorientationreadingvalues"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/orientation-sensor/": [
+      {
+        "id": "dictdef-absoluteorientationreadingvalues",
+        "href": "https://w3c.github.io/orientation-sensor/#dictdef-absoluteorientationreadingvalues",
+        "linkingText": [
+          "AbsoluteOrientationReadingValues"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "mock-orientation-sensor-type",
+          "href": "https://w3c.github.io/orientation-sensor/#mock-orientation-sensor-type",
+          "title": "Mock Sensor Type",
+          "number": "8.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-absoluteorientationreadingvalues-quaternion",
+        "href": "https://w3c.github.io/orientation-sensor/#dom-absoluteorientationreadingvalues-quaternion",
+        "linkingText": [
+          "quaternion"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "AbsoluteOrientationReadingValues"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "mock-orientation-sensor-type",
+          "href": "https://w3c.github.io/orientation-sensor/#mock-orientation-sensor-type",
+          "title": "Mock Sensor Type",
+          "number": "8.1"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

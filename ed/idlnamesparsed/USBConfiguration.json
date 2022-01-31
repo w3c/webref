@@ -1,0 +1,123 @@
+{
+  "name": "USBConfiguration",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebUSB API",
+      "url": "https://wicg.github.io/webusb/"
+    },
+    "fragment": "[\n  Exposed=(DedicatedWorker,SharedWorker,Window),\n  SecureContext\n]\ninterface USBConfiguration {\n  constructor(USBDevice device, octet configurationValue);\n  readonly attribute octet configurationValue;\n  readonly attribute DOMString? configurationName;\n  readonly attribute FrozenArray<USBInterface> interfaces;\n};",
+    "href": "https://wicg.github.io/webusb/#usbconfiguration"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://wicg.github.io/webusb/": [
+      {
+        "id": "usbconfiguration",
+        "href": "https://wicg.github.io/webusb/#usbconfiguration",
+        "linkingText": [
+          "USBConfiguration"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "configurations",
+          "href": "https://wicg.github.io/webusb/#configurations",
+          "title": "Configurations",
+          "number": "6.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-usbconfiguration-usbconfiguration",
+        "href": "https://wicg.github.io/webusb/#dom-usbconfiguration-usbconfiguration",
+        "linkingText": [
+          "USBConfiguration(device, configurationValue)",
+          "constructor(device, configurationValue)"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "USBConfiguration"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "configurations",
+          "href": "https://wicg.github.io/webusb/#configurations",
+          "title": "Configurations",
+          "number": "6.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-usbconfiguration-configurationvalue",
+        "href": "https://wicg.github.io/webusb/#dom-usbconfiguration-configurationvalue",
+        "linkingText": [
+          "configurationValue"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "USBConfiguration"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "configurations",
+          "href": "https://wicg.github.io/webusb/#configurations",
+          "title": "Configurations",
+          "number": "6.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-usbconfiguration-configurationname",
+        "href": "https://wicg.github.io/webusb/#dom-usbconfiguration-configurationname",
+        "linkingText": [
+          "configurationName"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "USBConfiguration"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "configurations",
+          "href": "https://wicg.github.io/webusb/#configurations",
+          "title": "Configurations",
+          "number": "6.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-usbconfiguration-interfaces",
+        "href": "https://wicg.github.io/webusb/#dom-usbconfiguration-interfaces",
+        "linkingText": [
+          "interfaces"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "USBConfiguration"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "configurations",
+          "href": "https://wicg.github.io/webusb/#configurations",
+          "title": "Configurations",
+          "number": "6.2"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

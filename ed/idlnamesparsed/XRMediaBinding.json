@@ -1,0 +1,126 @@
+{
+  "name": "XRMediaBinding",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebXR Layers API Level 1",
+      "url": "https://www.w3.org/TR/webxrlayers-1/"
+    },
+    "fragment": "[Exposed=Window] interface XRMediaBinding {\n  constructor(XRSession session);\n\n  XRQuadLayer createQuadLayer(HTMLVideoElement video, optional XRMediaQuadLayerInit init = {});\n  XRCylinderLayer createCylinderLayer(HTMLVideoElement video, optional XRMediaCylinderLayerInit init = {});\n  XREquirectLayer createEquirectLayer(HTMLVideoElement video, optional XRMediaEquirectLayerInit init = {});\n};",
+    "href": "https://immersive-web.github.io/layers/#xrmediabinding"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webxrlayers-1/": [
+      {
+        "id": "xrmediabinding",
+        "href": "https://immersive-web.github.io/layers/#xrmediabinding",
+        "linkingText": [
+          "XRMediaBinding"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrmediabindingtype",
+          "href": "https://immersive-web.github.io/layers/#xrmediabindingtype",
+          "title": "XRMediaBinding",
+          "number": "7.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-xrmediabinding-xrmediabinding",
+        "href": "https://immersive-web.github.io/layers/#dom-xrmediabinding-xrmediabinding",
+        "linkingText": [
+          "XRMediaBinding(session)",
+          "constructor(session)"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "XRMediaBinding"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrmediabindingtype",
+          "href": "https://immersive-web.github.io/layers/#xrmediabindingtype",
+          "title": "XRMediaBinding",
+          "number": "7.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-xrmediabinding-createquadlayer",
+        "href": "https://immersive-web.github.io/layers/#dom-xrmediabinding-createquadlayer",
+        "linkingText": [
+          "createQuadLayer(video, init)",
+          "createQuadLayer(video)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "XRMediaBinding"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrmediabindingtype",
+          "href": "https://immersive-web.github.io/layers/#xrmediabindingtype",
+          "title": "XRMediaBinding",
+          "number": "7.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-xrmediabinding-createcylinderlayer",
+        "href": "https://immersive-web.github.io/layers/#dom-xrmediabinding-createcylinderlayer",
+        "linkingText": [
+          "createCylinderLayer(video, init)",
+          "createCylinderLayer(video)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "XRMediaBinding"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrmediabindingtype",
+          "href": "https://immersive-web.github.io/layers/#xrmediabindingtype",
+          "title": "XRMediaBinding",
+          "number": "7.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-xrmediabinding-createequirectlayer",
+        "href": "https://immersive-web.github.io/layers/#dom-xrmediabinding-createequirectlayer",
+        "linkingText": [
+          "createEquirectLayer(video, init)",
+          "createEquirectLayer(video)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "XRMediaBinding"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrmediabindingtype",
+          "href": "https://immersive-web.github.io/layers/#xrmediabindingtype",
+          "title": "XRMediaBinding",
+          "number": "7.5"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

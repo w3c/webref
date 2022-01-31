@@ -1,0 +1,224 @@
+{
+  "name": "PortalHost",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Portals",
+      "url": "https://wicg.github.io/portals/"
+    },
+    "fragment": "[Exposed=Window]\ninterface PortalHost : EventTarget {\n    undefined postMessage(any message, optional StructuredSerializeOptions options = {});\n\n    attribute EventHandler onmessage;\n    attribute EventHandler onmessageerror;\n};",
+    "href": "https://wicg.github.io/portals/#portalhost"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "EventTarget",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=*]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+      "href": "https://dom.spec.whatwg.org/#eventtarget"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://wicg.github.io/portals/": [
+      {
+        "id": "portalhost",
+        "href": "https://wicg.github.io/portals/#portalhost",
+        "linkingText": [
+          "PortalHost"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-portal-element",
+          "href": "https://wicg.github.io/portals/#the-portal-element",
+          "title": "The portal element",
+          "number": "3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-portalhost-postmessage",
+        "href": "https://wicg.github.io/portals/#dom-portalhost-postmessage",
+        "linkingText": [
+          "postMessage(message, options)",
+          "postMessage(message)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "PortalHost"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-portal-element",
+          "href": "https://wicg.github.io/portals/#the-portal-element",
+          "title": "The portal element",
+          "number": "3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-portalhost-onmessage",
+        "href": "https://wicg.github.io/portals/#dom-portalhost-onmessage",
+        "linkingText": [
+          "onmessage"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "PortalHost"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-portal-element",
+          "href": "https://wicg.github.io/portals/#the-portal-element",
+          "title": "The portal element",
+          "number": "3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-portalhost-onmessageerror",
+        "href": "https://wicg.github.io/portals/#dom-portalhost-onmessageerror",
+        "linkingText": [
+          "onmessageerror"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "PortalHost"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-portal-element",
+          "href": "https://wicg.github.io/portals/#the-portal-element",
+          "title": "The portal element",
+          "number": "3"
+        },
+        "definedIn": "pre"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "eventtarget",
+        "href": "https://dom.spec.whatwg.org/#eventtarget",
+        "linkingText": [
+          "EventTarget"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventtarget-eventtarget",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-eventtarget",
+        "linkingText": [
+          "EventTarget()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-addeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-addeventlistener",
+        "linkingText": [
+          "addEventListener(type, callback, options)",
+          "addEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-removeeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-removeeventlistener",
+        "linkingText": [
+          "removeEventListener(type, callback, options)",
+          "removeEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-dispatchevent",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-dispatchevent",
+        "linkingText": [
+          "dispatchEvent(event)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

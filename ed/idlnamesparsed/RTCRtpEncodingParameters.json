@@ -1,0 +1,232 @@
+{
+  "name": "RTCRtpEncodingParameters",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
+      "url": "https://www.w3.org/TR/webrtc/"
+    },
+    "fragment": "dictionary RTCRtpEncodingParameters : RTCRtpCodingParameters {\n  boolean active = true;\n  unsigned long maxBitrate;\n  double scaleResolutionDownBy;\n};",
+    "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpencodingparameters"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "WebRTC Priority Control API",
+        "url": "https://www.w3.org/TR/webrtc-priority/"
+      },
+      "fragment": "partial dictionary RTCRtpEncodingParameters {\n  RTCPriorityType priority = \"low\";\n  RTCPriorityType networkPriority;\n};"
+    },
+    {
+      "spec": {
+        "title": "Scalable Video Coding (SVC) Extension for WebRTC",
+        "url": "https://www.w3.org/TR/webrtc-svc/"
+      },
+      "fragment": "partial dictionary RTCRtpEncodingParameters {\n             DOMString scalabilityMode;\n};"
+    }
+  ],
+  "inheritance": {
+    "name": "RTCRtpCodingParameters",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
+        "url": "https://www.w3.org/TR/webrtc/"
+      },
+      "fragment": "dictionary RTCRtpCodingParameters {\n  DOMString rid;\n};",
+      "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpcodingparameters"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webrtc/": [
+      {
+        "id": "dom-rtcrtpencodingparameters",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpencodingparameters",
+        "linkingText": [
+          "RTCRtpEncodingParameters"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "rtcrtpencodingparameters",
+          "href": "https://w3c.github.io/webrtc-pc/#rtcrtpencodingparameters",
+          "title": "RTCRtpEncodingParameters Dictionary",
+          "number": "5.2.6"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-rtcrtpencodingparameters-active",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpencodingparameters-active",
+        "linkingText": [
+          "active"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RTCRtpEncodingParameters"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-rtcrtpencodingparameters-members",
+          "href": "https://w3c.github.io/webrtc-pc/#dictionary-rtcrtpencodingparameters-members",
+          "title": "Dictionary RTCRtpEncodingParameters Members"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcrtpencodingparameters-maxbitrate",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpencodingparameters-maxbitrate",
+        "linkingText": [
+          "maxBitrate"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RTCRtpEncodingParameters"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-rtcrtpencodingparameters-members",
+          "href": "https://w3c.github.io/webrtc-pc/#dictionary-rtcrtpencodingparameters-members",
+          "title": "Dictionary RTCRtpEncodingParameters Members"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcrtpencodingparameters-scaleresolutiondownby",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpencodingparameters-scaleresolutiondownby",
+        "linkingText": [
+          "scaleResolutionDownBy"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RTCRtpEncodingParameters"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-rtcrtpencodingparameters-members",
+          "href": "https://w3c.github.io/webrtc-pc/#dictionary-rtcrtpencodingparameters-members",
+          "title": "Dictionary RTCRtpEncodingParameters Members"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcrtpcodingparameters",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpcodingparameters",
+        "linkingText": [
+          "RTCRtpCodingParameters"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "rtcrtpcodingparameters",
+          "href": "https://w3c.github.io/webrtc-pc/#rtcrtpcodingparameters",
+          "title": "RTCRtpCodingParameters Dictionary",
+          "number": "5.2.4"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-rtcrtpcodingparameters-rid",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpcodingparameters-rid",
+        "linkingText": [
+          "rid"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RTCRtpCodingParameters"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-rtcrtpcodingparameters-members",
+          "href": "https://w3c.github.io/webrtc-pc/#dictionary-rtcrtpcodingparameters-members",
+          "title": "Dictionary RTCRtpCodingParameters Members"
+        },
+        "definedIn": "dt"
+      }
+    ],
+    "https://www.w3.org/TR/webrtc-priority/": [
+      {
+        "id": "dom-rtcrtpencodingparameters-priority",
+        "href": "https://w3c.github.io/webrtc-priority/#dom-rtcrtpencodingparameters-priority",
+        "linkingText": [
+          "priority"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RTCRtpEncodingParameters"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "encoding-parameters",
+          "href": "https://w3c.github.io/webrtc-priority/#encoding-parameters",
+          "title": "Extension to RTCRtpEncodingParameters",
+          "number": "3.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcrtpencodingparameters-networkpriority",
+        "href": "https://w3c.github.io/webrtc-priority/#dom-rtcrtpencodingparameters-networkpriority",
+        "linkingText": [
+          "networkPriority"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RTCRtpEncodingParameters"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "encoding-parameters",
+          "href": "https://w3c.github.io/webrtc-priority/#encoding-parameters",
+          "title": "Extension to RTCRtpEncodingParameters",
+          "number": "3.2"
+        },
+        "definedIn": "dt"
+      }
+    ],
+    "https://www.w3.org/TR/webrtc-svc/": [
+      {
+        "id": "dom-rtcrtpencodingparameters-scalabilitymode",
+        "href": "https://w3c.github.io/webrtc-svc/#dom-rtcrtpencodingparameters-scalabilitymode",
+        "linkingText": [
+          "scalabilityMode"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RTCRtpEncodingParameters"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-rtcrtpencodingparameters-members",
+          "href": "https://w3c.github.io/webrtc-svc/#dictionary-rtcrtpencodingparameters-members",
+          "title": "Dictionary RTCRtpEncodingParameters Members"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

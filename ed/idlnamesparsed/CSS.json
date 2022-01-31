@@ -1,0 +1,1196 @@
+{
+  "name": "CSS",
+  "type": "namespace",
+  "defined": {
+    "spec": {
+      "title": "CSS Object Model (CSSOM)",
+      "url": "https://www.w3.org/TR/cssom-1/"
+    },
+    "fragment": "[Exposed=Window]\nnamespace CSS {\n  CSSOMString escape(CSSOMString ident);\n};",
+    "href": "https://drafts.csswg.org/cssom/#namespacedef-css"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "CSS Parser API",
+        "url": "https://wicg.github.io/css-parser-api/"
+      },
+      "fragment": "partial namespace CSS {\n  Promise<sequence<CSSParserRule>> parseStylesheet(CSSStringSource css, optional CSSParserOptions options = {});\n  Promise<sequence<CSSParserRule>> parseRuleList(CSSStringSource css, optional CSSParserOptions options = {});\n  Promise<CSSParserRule> parseRule(CSSStringSource css, optional CSSParserOptions options = {});\n  Promise<sequence<CSSParserRule>> parseDeclarationList(CSSStringSource css, optional CSSParserOptions options = {});\n  CSSParserDeclaration parseDeclaration(DOMString css, optional CSSParserOptions options = {});\n  CSSToken parseValue(DOMString css);\n  sequence<CSSToken> parseValueList(DOMString css);\n  sequence<sequence<CSSToken>> parseCommaValueList(DOMString css);\n};"
+    },
+    {
+      "spec": {
+        "title": "CSS Animation Worklet API",
+        "url": "https://www.w3.org/TR/css-animation-worklet-1/"
+      },
+      "fragment": "[Exposed=Window]\npartial namespace CSS {\n    [SameObject] readonly attribute Worklet animationWorklet;\n};"
+    },
+    {
+      "spec": {
+        "title": "CSS Conditional Rules Module Level 3",
+        "url": "https://www.w3.org/TR/css-conditional-3/"
+      },
+      "fragment": "partial namespace CSS {\n  boolean supports(CSSOMString property, CSSOMString value);\n  boolean supports(CSSOMString conditionText);\n};"
+    },
+    {
+      "spec": {
+        "title": "CSS Custom Highlight API Module Level 1",
+        "url": "https://www.w3.org/TR/css-highlight-api-1/"
+      },
+      "fragment": "partial namespace CSS {\n  readonly attribute HighlightRegistry highlights;\n};"
+    },
+    {
+      "spec": {
+        "title": "CSS Images Module Level 4",
+        "url": "https://www.w3.org/TR/css-images-4/"
+      },
+      "fragment": "partial namespace CSS {\n  [SameObject] readonly attribute any elementSources;\n};"
+    },
+    {
+      "spec": {
+        "title": "CSS Layout API Level 1",
+        "url": "https://www.w3.org/TR/css-layout-api-1/"
+      },
+      "fragment": "partial namespace CSS {\n    [SameObject] readonly attribute Worklet layoutWorklet;\n};"
+    },
+    {
+      "spec": {
+        "title": "CSS Painting API Level 1",
+        "url": "https://www.w3.org/TR/css-paint-api-1/"
+      },
+      "fragment": "partial namespace CSS {\n    [SameObject] readonly attribute Worklet paintWorklet;\n};"
+    },
+    {
+      "spec": {
+        "title": "CSS Properties and Values API Level 1",
+        "url": "https://www.w3.org/TR/css-properties-values-api-1/"
+      },
+      "fragment": "partial namespace CSS {\n  undefined registerProperty(PropertyDefinition definition);\n};"
+    },
+    {
+      "spec": {
+        "title": "CSS Typed OM Level 1",
+        "url": "https://www.w3.org/TR/css-typed-om-1/"
+      },
+      "fragment": "partial namespace CSS {\n    CSSUnitValue number(double value);\n    CSSUnitValue percent(double value);\n\n    // <length>\n    CSSUnitValue em(double value);\n    CSSUnitValue ex(double value);\n    CSSUnitValue ch(double value);\n    CSSUnitValue ic(double value);\n    CSSUnitValue rem(double value);\n    CSSUnitValue lh(double value);\n    CSSUnitValue rlh(double value);\n    CSSUnitValue vw(double value);\n    CSSUnitValue vh(double value);\n    CSSUnitValue vi(double value);\n    CSSUnitValue vb(double value);\n    CSSUnitValue vmin(double value);\n    CSSUnitValue vmax(double value);\n    CSSUnitValue cm(double value);\n    CSSUnitValue mm(double value);\n    CSSUnitValue Q(double value);\n    CSSUnitValue in(double value);\n    CSSUnitValue pt(double value);\n    CSSUnitValue pc(double value);\n    CSSUnitValue px(double value);\n\n    // <angle>\n    CSSUnitValue deg(double value);\n    CSSUnitValue grad(double value);\n    CSSUnitValue rad(double value);\n    CSSUnitValue turn(double value);\n\n    // <time>\n    CSSUnitValue s(double value);\n    CSSUnitValue ms(double value);\n\n    // <frequency>\n    CSSUnitValue Hz(double value);\n    CSSUnitValue kHz(double value);\n\n    // <resolution>\n    CSSUnitValue dpi(double value);\n    CSSUnitValue dpcm(double value);\n    CSSUnitValue dppx(double value);\n\n    // <flex>\n    CSSUnitValue fr(double value);\n};"
+    }
+  ],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/cssom-1/": [
+      {
+        "id": "namespacedef-css",
+        "href": "https://drafts.csswg.org/cssom/#namespacedef-css",
+        "linkingText": [
+          "CSS"
+        ],
+        "localLinkingText": [],
+        "type": "namespace",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-css.escape()-method",
+          "href": "https://drafts.csswg.org/cssom/#the-css.escape()-method",
+          "title": "The CSS.escape() Method",
+          "number": "8.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-css-escape",
+        "href": "https://drafts.csswg.org/cssom/#dom-css-escape",
+        "linkingText": [
+          "escape(ident)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSS"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-css.escape()-method",
+          "href": "https://drafts.csswg.org/cssom/#the-css.escape()-method",
+          "title": "The CSS.escape() Method",
+          "number": "8.1"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://wicg.github.io/css-parser-api/": [
+      {
+        "id": "dom-css-parsestylesheet",
+        "href": "https://wicg.github.io/css-parser-api/#dom-css-parsestylesheet",
+        "linkingText": [
+          "parseStylesheet(css, options)",
+          "parseStylesheet(css)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSS"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "parsing-api",
+          "href": "https://wicg.github.io/css-parser-api/#parsing-api",
+          "title": "Parsing API",
+          "number": "2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-css-parserulelist",
+        "href": "https://wicg.github.io/css-parser-api/#dom-css-parserulelist",
+        "linkingText": [
+          "parseRuleList(css, options)",
+          "parseRuleList(css)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSS"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "parsing-api",
+          "href": "https://wicg.github.io/css-parser-api/#parsing-api",
+          "title": "Parsing API",
+          "number": "2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-css-parserule",
+        "href": "https://wicg.github.io/css-parser-api/#dom-css-parserule",
+        "linkingText": [
+          "parseRule(css, options)",
+          "parseRule(css)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSS"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "parsing-api",
+          "href": "https://wicg.github.io/css-parser-api/#parsing-api",
+          "title": "Parsing API",
+          "number": "2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-css-parsedeclarationlist",
+        "href": "https://wicg.github.io/css-parser-api/#dom-css-parsedeclarationlist",
+        "linkingText": [
+          "parseDeclarationList(css, options)",
+          "parseDeclarationList(css)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSS"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "parsing-api",
+          "href": "https://wicg.github.io/css-parser-api/#parsing-api",
+          "title": "Parsing API",
+          "number": "2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-css-parsedeclaration",
+        "href": "https://wicg.github.io/css-parser-api/#dom-css-parsedeclaration",
+        "linkingText": [
+          "parseDeclaration(css, options)",
+          "parseDeclaration(css)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSS"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "parsing-api",
+          "href": "https://wicg.github.io/css-parser-api/#parsing-api",
+          "title": "Parsing API",
+          "number": "2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-css-parsevalue",
+        "href": "https://wicg.github.io/css-parser-api/#dom-css-parsevalue",
+        "linkingText": [
+          "parseValue(css)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSS"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "parsing-api",
+          "href": "https://wicg.github.io/css-parser-api/#parsing-api",
+          "title": "Parsing API",
+          "number": "2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-css-parsevaluelist",
+        "href": "https://wicg.github.io/css-parser-api/#dom-css-parsevaluelist",
+        "linkingText": [
+          "parseValueList(css)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSS"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "parsing-api",
+          "href": "https://wicg.github.io/css-parser-api/#parsing-api",
+          "title": "Parsing API",
+          "number": "2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-css-parsecommavaluelist",
+        "href": "https://wicg.github.io/css-parser-api/#dom-css-parsecommavaluelist",
+        "linkingText": [
+          "parseCommaValueList(css)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSS"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "parsing-api",
+          "href": "https://wicg.github.io/css-parser-api/#parsing-api",
+          "title": "Parsing API",
+          "number": "2"
+        },
+        "definedIn": "pre"
+      }
+    ],
+    "https://www.w3.org/TR/css-animation-worklet-1/": [
+      {
+        "id": "dom-css-animationworklet",
+        "href": "https://drafts.css-houdini.org/css-animationworklet-1/#dom-css-animationworklet",
+        "linkingText": [
+          "animationWorklet"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "CSS"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "animation-worklet-desc",
+          "href": "https://drafts.css-houdini.org/css-animationworklet-1/#animation-worklet-desc",
+          "title": "Animation Worklet",
+          "number": "2"
+        },
+        "definedIn": "pre"
+      }
+    ],
+    "https://www.w3.org/TR/css-conditional-3/": [
+      {
+        "id": "dom-css-supports",
+        "href": "https://drafts.csswg.org/css-conditional-3/#dom-css-supports",
+        "linkingText": [
+          "supports(property, value)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSS"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-css-namespace",
+          "href": "https://drafts.csswg.org/css-conditional-3/#the-css-namespace",
+          "title": "The CSS namespace, and the supports() function",
+          "number": "7.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-css-supports-conditiontext",
+        "href": "https://drafts.csswg.org/css-conditional-3/#dom-css-supports-conditiontext",
+        "linkingText": [
+          "supports(conditionText)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSS"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-css-namespace",
+          "href": "https://drafts.csswg.org/css-conditional-3/#the-css-namespace",
+          "title": "The CSS namespace, and the supports() function",
+          "number": "7.5"
+        },
+        "definedIn": "pre"
+      }
+    ],
+    "https://www.w3.org/TR/css-highlight-api-1/": [
+      {
+        "id": "dom-css-highlights",
+        "href": "https://drafts.csswg.org/css-highlight-api-1/#dom-css-highlights",
+        "linkingText": [
+          "highlights"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "CSS"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "registration",
+          "href": "https://drafts.csswg.org/css-highlight-api-1/#registration",
+          "title": "Registering Custom Highlights",
+          "number": "3.2"
+        },
+        "definedIn": "pre"
+      }
+    ],
+    "https://www.w3.org/TR/css-images-4/": [
+      {
+        "id": "dom-css-elementsources",
+        "href": "https://drafts.csswg.org/css-images-4/#dom-css-elementsources",
+        "linkingText": [
+          "elementSources"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "CSS"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "elementsources",
+          "href": "https://drafts.csswg.org/css-images-4/#elementsources",
+          "title": "Using Out-Of-Document Sources: the ElementSources interface",
+          "number": "2.7.2"
+        },
+        "definedIn": "pre"
+      }
+    ],
+    "https://www.w3.org/TR/css-layout-api-1/": [
+      {
+        "id": "dom-css-layoutworklet",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-css-layoutworklet",
+        "linkingText": [
+          "layoutWorklet"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "CSS"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "layout-worklet",
+          "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-worklet",
+          "title": "Layout Worklet",
+          "number": "3"
+        },
+        "definedIn": "pre"
+      }
+    ],
+    "https://www.w3.org/TR/css-paint-api-1/": [
+      {
+        "id": "dom-css-paintworklet",
+        "href": "https://drafts.css-houdini.org/css-paint-api-1/#dom-css-paintworklet",
+        "linkingText": [
+          "paintWorklet"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "CSS"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "paint-worklet",
+          "href": "https://drafts.css-houdini.org/css-paint-api-1/#paint-worklet",
+          "title": "Paint Worklet",
+          "number": "2"
+        },
+        "definedIn": "pre"
+      }
+    ],
+    "https://www.w3.org/TR/css-properties-values-api-1/": [
+      {
+        "id": "dom-css-registerproperty",
+        "href": "https://drafts.css-houdini.org/css-properties-values-api-1/#dom-css-registerproperty",
+        "linkingText": [
+          "registerProperty(definition)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSS"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-registerproperty-function",
+          "href": "https://drafts.css-houdini.org/css-properties-values-api-1/#the-registerproperty-function",
+          "title": "The registerProperty() Function",
+          "number": "4.1"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://www.w3.org/TR/css-typed-om-1/": [
+      {
+        "id": "dom-css-number",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-css-number",
+        "linkingText": [
+          "number(value)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSS"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "numeric-factory",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory",
+          "title": "Numeric Factory Functions",
+          "number": "4.3.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-css-percent",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-css-percent",
+        "linkingText": [
+          "percent(value)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSS"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "numeric-factory",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory",
+          "title": "Numeric Factory Functions",
+          "number": "4.3.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-css-em",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-css-em",
+        "linkingText": [
+          "em(value)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSS"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "numeric-factory",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory",
+          "title": "Numeric Factory Functions",
+          "number": "4.3.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-css-ex",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-css-ex",
+        "linkingText": [
+          "ex(value)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSS"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "numeric-factory",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory",
+          "title": "Numeric Factory Functions",
+          "number": "4.3.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-css-ch",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-css-ch",
+        "linkingText": [
+          "ch(value)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSS"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "numeric-factory",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory",
+          "title": "Numeric Factory Functions",
+          "number": "4.3.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-css-ic",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-css-ic",
+        "linkingText": [
+          "ic(value)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSS"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "numeric-factory",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory",
+          "title": "Numeric Factory Functions",
+          "number": "4.3.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-css-rem",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-css-rem",
+        "linkingText": [
+          "rem(value)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSS"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "numeric-factory",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory",
+          "title": "Numeric Factory Functions",
+          "number": "4.3.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-css-lh",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-css-lh",
+        "linkingText": [
+          "lh(value)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSS"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "numeric-factory",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory",
+          "title": "Numeric Factory Functions",
+          "number": "4.3.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-css-rlh",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-css-rlh",
+        "linkingText": [
+          "rlh(value)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSS"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "numeric-factory",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory",
+          "title": "Numeric Factory Functions",
+          "number": "4.3.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-css-vw",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-css-vw",
+        "linkingText": [
+          "vw(value)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSS"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "numeric-factory",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory",
+          "title": "Numeric Factory Functions",
+          "number": "4.3.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-css-vh",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-css-vh",
+        "linkingText": [
+          "vh(value)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSS"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "numeric-factory",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory",
+          "title": "Numeric Factory Functions",
+          "number": "4.3.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-css-vi",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-css-vi",
+        "linkingText": [
+          "vi(value)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSS"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "numeric-factory",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory",
+          "title": "Numeric Factory Functions",
+          "number": "4.3.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-css-vb",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-css-vb",
+        "linkingText": [
+          "vb(value)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSS"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "numeric-factory",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory",
+          "title": "Numeric Factory Functions",
+          "number": "4.3.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-css-vmin",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-css-vmin",
+        "linkingText": [
+          "vmin(value)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSS"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "numeric-factory",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory",
+          "title": "Numeric Factory Functions",
+          "number": "4.3.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-css-vmax",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-css-vmax",
+        "linkingText": [
+          "vmax(value)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSS"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "numeric-factory",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory",
+          "title": "Numeric Factory Functions",
+          "number": "4.3.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-css-cm",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-css-cm",
+        "linkingText": [
+          "cm(value)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSS"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "numeric-factory",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory",
+          "title": "Numeric Factory Functions",
+          "number": "4.3.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-css-mm",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-css-mm",
+        "linkingText": [
+          "mm(value)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSS"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "numeric-factory",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory",
+          "title": "Numeric Factory Functions",
+          "number": "4.3.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-css-q",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-css-q",
+        "linkingText": [
+          "Q(value)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSS"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "numeric-factory",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory",
+          "title": "Numeric Factory Functions",
+          "number": "4.3.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-css-in",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-css-in",
+        "linkingText": [
+          "in(value)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSS"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "numeric-factory",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory",
+          "title": "Numeric Factory Functions",
+          "number": "4.3.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-css-pt",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-css-pt",
+        "linkingText": [
+          "pt(value)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSS"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "numeric-factory",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory",
+          "title": "Numeric Factory Functions",
+          "number": "4.3.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-css-pc",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-css-pc",
+        "linkingText": [
+          "pc(value)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSS"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "numeric-factory",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory",
+          "title": "Numeric Factory Functions",
+          "number": "4.3.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-css-px",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-css-px",
+        "linkingText": [
+          "px(value)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSS"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "numeric-factory",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory",
+          "title": "Numeric Factory Functions",
+          "number": "4.3.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-css-deg",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-css-deg",
+        "linkingText": [
+          "deg(value)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSS"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "numeric-factory",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory",
+          "title": "Numeric Factory Functions",
+          "number": "4.3.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-css-grad",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-css-grad",
+        "linkingText": [
+          "grad(value)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSS"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "numeric-factory",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory",
+          "title": "Numeric Factory Functions",
+          "number": "4.3.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-css-rad",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-css-rad",
+        "linkingText": [
+          "rad(value)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSS"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "numeric-factory",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory",
+          "title": "Numeric Factory Functions",
+          "number": "4.3.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-css-turn",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-css-turn",
+        "linkingText": [
+          "turn(value)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSS"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "numeric-factory",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory",
+          "title": "Numeric Factory Functions",
+          "number": "4.3.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-css-s",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-css-s",
+        "linkingText": [
+          "s(value)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSS"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "numeric-factory",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory",
+          "title": "Numeric Factory Functions",
+          "number": "4.3.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-css-ms",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-css-ms",
+        "linkingText": [
+          "ms(value)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSS"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "numeric-factory",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory",
+          "title": "Numeric Factory Functions",
+          "number": "4.3.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-css-hz",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-css-hz",
+        "linkingText": [
+          "Hz(value)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSS"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "numeric-factory",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory",
+          "title": "Numeric Factory Functions",
+          "number": "4.3.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-css-khz",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-css-khz",
+        "linkingText": [
+          "kHz(value)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSS"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "numeric-factory",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory",
+          "title": "Numeric Factory Functions",
+          "number": "4.3.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-css-dpi",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-css-dpi",
+        "linkingText": [
+          "dpi(value)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSS"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "numeric-factory",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory",
+          "title": "Numeric Factory Functions",
+          "number": "4.3.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-css-dpcm",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-css-dpcm",
+        "linkingText": [
+          "dpcm(value)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSS"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "numeric-factory",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory",
+          "title": "Numeric Factory Functions",
+          "number": "4.3.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-css-dppx",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-css-dppx",
+        "linkingText": [
+          "dppx(value)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSS"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "numeric-factory",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory",
+          "title": "Numeric Factory Functions",
+          "number": "4.3.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-css-fr",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-css-fr",
+        "linkingText": [
+          "fr(value)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSS"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "numeric-factory",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory",
+          "title": "Numeric Factory Functions",
+          "number": "4.3.5"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

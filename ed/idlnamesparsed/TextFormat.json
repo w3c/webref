@@ -1,0 +1,225 @@
+{
+  "name": "TextFormat",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "EditContext API",
+      "url": "https://www.w3.org/TR/edit-context/"
+    },
+    "fragment": "[Exposed=Window]\ninterface TextFormat {\n    constructor(optional TextFormatInit options = {});\n    attribute unsigned long rangeStart;\n    attribute unsigned long rangeEnd;\n    attribute DOMString textColor;\n    attribute DOMString backgroundColor;\n    attribute DOMString underlineStyle;\n    attribute DOMString underlineThickness;\n    attribute DOMString underlineColor;\n};",
+    "href": "https://w3c.github.io/edit-context/#dom-textformat"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/edit-context/": [
+      {
+        "id": "dom-textformat",
+        "href": "https://w3c.github.io/edit-context/#dom-textformat",
+        "linkingText": [
+          "TextFormat"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "textformatupdateevent",
+          "href": "https://w3c.github.io/edit-context/#textformatupdateevent",
+          "title": "TextFormatUpdateEvent",
+          "number": "5.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-textformat-constructor",
+        "href": "https://w3c.github.io/edit-context/#dom-textformat-constructor",
+        "linkingText": [
+          "constructor()",
+          "constructor(options)"
+        ],
+        "localLinkingText": [
+          "TextFormat.constructor",
+          "TextFormat.constructor()",
+          "constructor"
+        ],
+        "type": "constructor",
+        "for": [
+          "TextFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "textformatupdateevent",
+          "href": "https://w3c.github.io/edit-context/#textformatupdateevent",
+          "title": "TextFormatUpdateEvent",
+          "number": "5.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-textformat-rangestart",
+        "href": "https://w3c.github.io/edit-context/#dom-textformat-rangestart",
+        "linkingText": [
+          "rangeStart"
+        ],
+        "localLinkingText": [
+          "TextFormat.rangeStart"
+        ],
+        "type": "attribute",
+        "for": [
+          "TextFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "textformatupdateevent",
+          "href": "https://w3c.github.io/edit-context/#textformatupdateevent",
+          "title": "TextFormatUpdateEvent",
+          "number": "5.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-textformat-rangeend",
+        "href": "https://w3c.github.io/edit-context/#dom-textformat-rangeend",
+        "linkingText": [
+          "rangeEnd"
+        ],
+        "localLinkingText": [
+          "TextFormat.rangeEnd"
+        ],
+        "type": "attribute",
+        "for": [
+          "TextFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "textformatupdateevent",
+          "href": "https://w3c.github.io/edit-context/#textformatupdateevent",
+          "title": "TextFormatUpdateEvent",
+          "number": "5.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-textformat-textcolor",
+        "href": "https://w3c.github.io/edit-context/#dom-textformat-textcolor",
+        "linkingText": [
+          "textColor"
+        ],
+        "localLinkingText": [
+          "TextFormat.textColor"
+        ],
+        "type": "attribute",
+        "for": [
+          "TextFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "textformatupdateevent",
+          "href": "https://w3c.github.io/edit-context/#textformatupdateevent",
+          "title": "TextFormatUpdateEvent",
+          "number": "5.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-textformat-backgroundcolor",
+        "href": "https://w3c.github.io/edit-context/#dom-textformat-backgroundcolor",
+        "linkingText": [
+          "backgroundColor"
+        ],
+        "localLinkingText": [
+          "TextFormat.backgroundColor"
+        ],
+        "type": "attribute",
+        "for": [
+          "TextFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "textformatupdateevent",
+          "href": "https://w3c.github.io/edit-context/#textformatupdateevent",
+          "title": "TextFormatUpdateEvent",
+          "number": "5.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-textformat-underlinestyle",
+        "href": "https://w3c.github.io/edit-context/#dom-textformat-underlinestyle",
+        "linkingText": [
+          "underlineStyle"
+        ],
+        "localLinkingText": [
+          "TextFormat.underlineStyle"
+        ],
+        "type": "attribute",
+        "for": [
+          "TextFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "textformatupdateevent",
+          "href": "https://w3c.github.io/edit-context/#textformatupdateevent",
+          "title": "TextFormatUpdateEvent",
+          "number": "5.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-textformat-underlinethickness",
+        "href": "https://w3c.github.io/edit-context/#dom-textformat-underlinethickness",
+        "linkingText": [
+          "underlineThickness"
+        ],
+        "localLinkingText": [
+          "TextFormat.underlineThickness"
+        ],
+        "type": "attribute",
+        "for": [
+          "TextFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "textformatupdateevent",
+          "href": "https://w3c.github.io/edit-context/#textformatupdateevent",
+          "title": "TextFormatUpdateEvent",
+          "number": "5.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-textformat-underlinecolor",
+        "href": "https://w3c.github.io/edit-context/#dom-textformat-underlinecolor",
+        "linkingText": [
+          "underlineColor"
+        ],
+        "localLinkingText": [
+          "TextFormat.underlineColor"
+        ],
+        "type": "attribute",
+        "for": [
+          "TextFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "textformatupdateevent",
+          "href": "https://w3c.github.io/edit-context/#textformatupdateevent",
+          "title": "TextFormatUpdateEvent",
+          "number": "5.2"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

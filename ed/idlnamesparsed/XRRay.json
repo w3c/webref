@@ -1,0 +1,149 @@
+{
+  "name": "XRRay",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebXR Hit Test Module",
+      "url": "https://www.w3.org/TR/webxr-hit-test-1/"
+    },
+    "fragment": "[SecureContext, Exposed=Window]\ninterface XRRay {\n  constructor(optional DOMPointInit origin = {}, optional XRRayDirectionInit direction = {});\n  constructor(XRRigidTransform transform);\n  [SameObject] readonly attribute DOMPointReadOnly origin;\n  [SameObject] readonly attribute DOMPointReadOnly direction;\n  [SameObject] readonly attribute Float32Array matrix;\n};",
+    "href": "https://immersive-web.github.io/hit-test/#xrray"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webxr-hit-test-1/": [
+      {
+        "id": "xrray",
+        "href": "https://immersive-web.github.io/hit-test/#xrray",
+        "linkingText": [
+          "XRRay"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrray-interface",
+          "href": "https://immersive-web.github.io/hit-test/#xrray-interface",
+          "title": "XRRay",
+          "number": "9.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-xrray-xrray",
+        "href": "https://immersive-web.github.io/hit-test/#dom-xrray-xrray",
+        "linkingText": [
+          "XRRay(origin, direction)",
+          "constructor(origin, direction)",
+          "XRRay(origin)",
+          "constructor(origin)",
+          "XRRay()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "XRRay"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrray-interface",
+          "href": "https://immersive-web.github.io/hit-test/#xrray-interface",
+          "title": "XRRay",
+          "number": "9.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-xrray-xrray-transform",
+        "href": "https://immersive-web.github.io/hit-test/#dom-xrray-xrray-transform",
+        "linkingText": [
+          "XRRay(transform)",
+          "constructor(transform)"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "XRRay"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrray-interface",
+          "href": "https://immersive-web.github.io/hit-test/#xrray-interface",
+          "title": "XRRay",
+          "number": "9.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-xrray-origin",
+        "href": "https://immersive-web.github.io/hit-test/#dom-xrray-origin",
+        "linkingText": [
+          "origin"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XRRay"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrray-interface",
+          "href": "https://immersive-web.github.io/hit-test/#xrray-interface",
+          "title": "XRRay",
+          "number": "9.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-xrray-direction",
+        "href": "https://immersive-web.github.io/hit-test/#dom-xrray-direction",
+        "linkingText": [
+          "direction"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XRRay"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrray-interface",
+          "href": "https://immersive-web.github.io/hit-test/#xrray-interface",
+          "title": "XRRay",
+          "number": "9.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-xrray-matrix",
+        "href": "https://immersive-web.github.io/hit-test/#dom-xrray-matrix",
+        "linkingText": [
+          "matrix"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XRRay"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrray-interface",
+          "href": "https://immersive-web.github.io/hit-test/#xrray-interface",
+          "title": "XRRay",
+          "number": "9.2"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

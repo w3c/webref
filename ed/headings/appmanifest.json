@@ -1,0 +1,620 @@
+{
+  "spec": {
+    "title": "Web Application Manifest",
+    "url": "https://w3c.github.io/manifest/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://w3c.github.io/manifest/#title",
+      "level": 1,
+      "title": "Web Application Manifest"
+    },
+    {
+      "id": "abstract",
+      "href": "https://w3c.github.io/manifest/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "sotd",
+      "href": "https://w3c.github.io/manifest/#sotd",
+      "level": 2,
+      "title": "Status of This Document"
+    },
+    {
+      "id": "toc",
+      "href": "https://w3c.github.io/manifest/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "web-application-manifest",
+      "href": "https://w3c.github.io/manifest/#web-application-manifest",
+      "level": 2,
+      "title": "Web Application Manifest",
+      "number": "1"
+    },
+    {
+      "id": "examples",
+      "href": "https://w3c.github.io/manifest/#examples",
+      "level": 3,
+      "title": "Examples",
+      "number": "1.1"
+    },
+    {
+      "id": "typical-structure",
+      "href": "https://w3c.github.io/manifest/#typical-structure",
+      "level": 4,
+      "title": "Typical structure",
+      "number": "1.1.1"
+    },
+    {
+      "id": "using-a-link-element-to-link-to-a-manifest",
+      "href": "https://w3c.github.io/manifest/#using-a-link-element-to-link-to-a-manifest",
+      "level": 4,
+      "title": "Using a link element to link to a manifest",
+      "number": "1.1.2"
+    },
+    {
+      "id": "declaring-multiple-icons",
+      "href": "https://w3c.github.io/manifest/#declaring-multiple-icons",
+      "level": 4,
+      "title": "Declaring multiple icons",
+      "number": "1.1.3"
+    },
+    {
+      "id": "creating-shortcuts",
+      "href": "https://w3c.github.io/manifest/#creating-shortcuts",
+      "level": 4,
+      "title": "Creating shortcuts",
+      "number": "1.1.4"
+    },
+    {
+      "id": "understanding-scope",
+      "href": "https://w3c.github.io/manifest/#understanding-scope",
+      "level": 4,
+      "title": "Understanding \"scope\"",
+      "number": "1.1.5"
+    },
+    {
+      "id": "dir-member",
+      "href": "https://w3c.github.io/manifest/#dir-member",
+      "level": 3,
+      "title": "dir member",
+      "number": "1.2"
+    },
+    {
+      "id": "lang-member",
+      "href": "https://w3c.github.io/manifest/#lang-member",
+      "level": 3,
+      "title": "lang member",
+      "number": "1.3"
+    },
+    {
+      "id": "name-member",
+      "href": "https://w3c.github.io/manifest/#name-member",
+      "level": 3,
+      "title": "name member",
+      "number": "1.4"
+    },
+    {
+      "id": "short_name-member",
+      "href": "https://w3c.github.io/manifest/#short_name-member",
+      "level": 3,
+      "title": "short_name member",
+      "number": "1.5"
+    },
+    {
+      "id": "scope-member",
+      "href": "https://w3c.github.io/manifest/#scope-member",
+      "level": 3,
+      "title": "scope member",
+      "number": "1.6"
+    },
+    {
+      "id": "icons-member",
+      "href": "https://w3c.github.io/manifest/#icons-member",
+      "level": 3,
+      "title": "icons member",
+      "number": "1.7"
+    },
+    {
+      "id": "display-member",
+      "href": "https://w3c.github.io/manifest/#display-member",
+      "level": 3,
+      "title": "display member",
+      "number": "1.8"
+    },
+    {
+      "id": "orientation-member",
+      "href": "https://w3c.github.io/manifest/#orientation-member",
+      "level": 3,
+      "title": "orientation member",
+      "number": "1.9"
+    },
+    {
+      "id": "start_url-member",
+      "href": "https://w3c.github.io/manifest/#start_url-member",
+      "level": 3,
+      "title": "start_url member",
+      "number": "1.10"
+    },
+    {
+      "id": "privacy-consideration-start_url-tracking",
+      "href": "https://w3c.github.io/manifest/#privacy-consideration-start_url-tracking",
+      "level": 4,
+      "title": "Privacy consideration: start_url tracking",
+      "number": "1.10.1"
+    },
+    {
+      "id": "id-member",
+      "href": "https://w3c.github.io/manifest/#id-member",
+      "level": 3,
+      "title": "id member",
+      "number": "1.11"
+    },
+    {
+      "id": "theme_color-member",
+      "href": "https://w3c.github.io/manifest/#theme_color-member",
+      "level": 3,
+      "title": "theme_color member",
+      "number": "1.12"
+    },
+    {
+      "id": "related_applications-member",
+      "href": "https://w3c.github.io/manifest/#related_applications-member",
+      "level": 3,
+      "title": "related_applications member",
+      "number": "1.13"
+    },
+    {
+      "id": "prefer_related_applications-member",
+      "href": "https://w3c.github.io/manifest/#prefer_related_applications-member",
+      "level": 3,
+      "title": "prefer_related_applications member",
+      "number": "1.14"
+    },
+    {
+      "id": "background_color-member",
+      "href": "https://w3c.github.io/manifest/#background_color-member",
+      "level": 3,
+      "title": "background_color member",
+      "number": "1.15"
+    },
+    {
+      "id": "shortcuts-member",
+      "href": "https://w3c.github.io/manifest/#shortcuts-member",
+      "level": 3,
+      "title": "shortcuts member",
+      "number": "1.16"
+    },
+    {
+      "id": "manifest-life-cycle",
+      "href": "https://w3c.github.io/manifest/#manifest-life-cycle",
+      "level": 3,
+      "title": "Manifest life-cycle",
+      "number": "1.17"
+    },
+    {
+      "id": "processing",
+      "href": "https://w3c.github.io/manifest/#processing",
+      "level": 4,
+      "title": "Processing the manifest",
+      "number": "1.17.1"
+    },
+    {
+      "id": "processing-color-members",
+      "href": "https://w3c.github.io/manifest/#processing-color-members",
+      "level": 4,
+      "title": "Processing color members",
+      "number": "1.17.2"
+    },
+    {
+      "id": "processing-text-members",
+      "href": "https://w3c.github.io/manifest/#processing-text-members",
+      "level": 4,
+      "title": "Processing text members",
+      "number": "1.17.3"
+    },
+    {
+      "id": "applying-the-manifest",
+      "href": "https://w3c.github.io/manifest/#applying-the-manifest",
+      "level": 4,
+      "title": "Applying the manifest",
+      "number": "1.17.4"
+    },
+    {
+      "id": "updating",
+      "href": "https://w3c.github.io/manifest/#updating",
+      "level": 4,
+      "title": "Updating the manifest",
+      "number": "1.17.5"
+    },
+    {
+      "id": "manifest-image-resources",
+      "href": "https://w3c.github.io/manifest/#manifest-image-resources",
+      "level": 2,
+      "title": "Manifest image resources",
+      "number": "2"
+    },
+    {
+      "id": "purpose-member",
+      "href": "https://w3c.github.io/manifest/#purpose-member",
+      "level": 3,
+      "title": "purpose member",
+      "number": "2.1"
+    },
+    {
+      "id": "content-security-policy",
+      "href": "https://w3c.github.io/manifest/#content-security-policy",
+      "level": 3,
+      "title": "Content security policy",
+      "number": "2.2"
+    },
+    {
+      "id": "icon-masks",
+      "href": "https://w3c.github.io/manifest/#icon-masks",
+      "level": 3,
+      "title": "Icon masks and safe zone",
+      "number": "2.3"
+    },
+    {
+      "id": "examples-of-masks",
+      "href": "https://w3c.github.io/manifest/#examples-of-masks",
+      "level": 4,
+      "title": "Examples of masks",
+      "number": "2.3.1"
+    },
+    {
+      "id": "icons-with-maskable-purpose",
+      "href": "https://w3c.github.io/manifest/#icons-with-maskable-purpose",
+      "level": 5,
+      "title": "Icons with \"maskable\" purpose",
+      "number": "2.3.1.1"
+    },
+    {
+      "id": "mask-examples",
+      "href": "https://w3c.github.io/manifest/#mask-examples",
+      "level": 5,
+      "title": "Mask examples",
+      "number": "2.3.1.2"
+    },
+    {
+      "id": "monochrome-icons-and-solid-fills",
+      "href": "https://w3c.github.io/manifest/#monochrome-icons-and-solid-fills",
+      "level": 3,
+      "title": "Monochrome icons and solid fills",
+      "number": "2.4"
+    },
+    {
+      "id": "example-usage-of-monochrome-icons",
+      "href": "https://w3c.github.io/manifest/#example-usage-of-monochrome-icons",
+      "level": 4,
+      "title": "Example usage of monochrome icons",
+      "number": "2.4.1"
+    },
+    {
+      "id": "usage-examples",
+      "href": "https://w3c.github.io/manifest/#usage-examples",
+      "level": 5,
+      "title": "Usage examples",
+      "number": "2.4.1.1"
+    },
+    {
+      "id": "processing-image-resources",
+      "href": "https://w3c.github.io/manifest/#processing-image-resources",
+      "level": 3,
+      "title": "Processing image resources",
+      "number": "2.5"
+    },
+    {
+      "id": "shortcut-items",
+      "href": "https://w3c.github.io/manifest/#shortcut-items",
+      "level": 2,
+      "title": "Shortcut items",
+      "number": "3"
+    },
+    {
+      "id": "name-member-0",
+      "href": "https://w3c.github.io/manifest/#name-member-0",
+      "level": 3,
+      "title": "name member",
+      "number": "3.1"
+    },
+    {
+      "id": "short_name-member-0",
+      "href": "https://w3c.github.io/manifest/#short_name-member-0",
+      "level": 3,
+      "title": "short_name member",
+      "number": "3.2"
+    },
+    {
+      "id": "description-member",
+      "href": "https://w3c.github.io/manifest/#description-member",
+      "level": 3,
+      "title": "description member",
+      "number": "3.3"
+    },
+    {
+      "id": "url-member",
+      "href": "https://w3c.github.io/manifest/#url-member",
+      "level": 3,
+      "title": "url member",
+      "number": "3.4"
+    },
+    {
+      "id": "icons-member-0",
+      "href": "https://w3c.github.io/manifest/#icons-member-0",
+      "level": 3,
+      "title": "icons member",
+      "number": "3.5"
+    },
+    {
+      "id": "launching-a-shortcut",
+      "href": "https://w3c.github.io/manifest/#launching-a-shortcut",
+      "level": 3,
+      "title": "Launching a shortcut",
+      "number": "3.6"
+    },
+    {
+      "id": "processing-shortcut-items",
+      "href": "https://w3c.github.io/manifest/#processing-shortcut-items",
+      "level": 3,
+      "title": "Processing shortcut items",
+      "number": "3.7"
+    },
+    {
+      "id": "external-application-resource",
+      "href": "https://w3c.github.io/manifest/#external-application-resource",
+      "level": 2,
+      "title": "External application resource",
+      "number": "4"
+    },
+    {
+      "id": "platform-member",
+      "href": "https://w3c.github.io/manifest/#platform-member",
+      "level": 3,
+      "title": "platform member",
+      "number": "4.1"
+    },
+    {
+      "id": "url-member-0",
+      "href": "https://w3c.github.io/manifest/#url-member-0",
+      "level": 3,
+      "title": "url member",
+      "number": "4.2"
+    },
+    {
+      "id": "id-member-0",
+      "href": "https://w3c.github.io/manifest/#id-member-0",
+      "level": 3,
+      "title": "id member",
+      "number": "4.3"
+    },
+    {
+      "id": "min_version-member",
+      "href": "https://w3c.github.io/manifest/#min_version-member",
+      "level": 3,
+      "title": "min_version member",
+      "number": "4.4"
+    },
+    {
+      "id": "fingerprints-member",
+      "href": "https://w3c.github.io/manifest/#fingerprints-member",
+      "level": 3,
+      "title": "fingerprints member",
+      "number": "4.5"
+    },
+    {
+      "id": "installable-web-applications",
+      "href": "https://w3c.github.io/manifest/#installable-web-applications",
+      "level": 2,
+      "title": "Installable web applications",
+      "number": "5"
+    },
+    {
+      "id": "application-s-name",
+      "href": "https://w3c.github.io/manifest/#application-s-name",
+      "level": 3,
+      "title": "Application's name",
+      "number": "5.1"
+    },
+    {
+      "id": "privacy-and-security-considerations",
+      "href": "https://w3c.github.io/manifest/#privacy-and-security-considerations",
+      "level": 3,
+      "title": "Privacy and security considerations",
+      "number": "5.2"
+    },
+    {
+      "id": "uninstallation",
+      "href": "https://w3c.github.io/manifest/#uninstallation",
+      "level": 3,
+      "title": "Uninstallation",
+      "number": "5.3"
+    },
+    {
+      "id": "nav-scope",
+      "href": "https://w3c.github.io/manifest/#nav-scope",
+      "level": 2,
+      "title": "Navigation scope",
+      "number": "6"
+    },
+    {
+      "id": "security-considerations",
+      "href": "https://w3c.github.io/manifest/#security-considerations",
+      "level": 3,
+      "title": "Security considerations",
+      "number": "6.1"
+    },
+    {
+      "id": "deep-links",
+      "href": "https://w3c.github.io/manifest/#deep-links",
+      "level": 3,
+      "title": "Deep links",
+      "number": "6.2"
+    },
+    {
+      "id": "choosing-a-display-mode",
+      "href": "https://w3c.github.io/manifest/#choosing-a-display-mode",
+      "level": 2,
+      "title": "Choosing a display mode",
+      "number": "7"
+    },
+    {
+      "id": "priv-sec",
+      "href": "https://w3c.github.io/manifest/#priv-sec",
+      "level": 2,
+      "title": "Privacy and security considerations",
+      "number": "8"
+    },
+    {
+      "id": "iana-considerations",
+      "href": "https://w3c.github.io/manifest/#iana-considerations",
+      "level": 2,
+      "title": "IANA considerations",
+      "number": "A"
+    },
+    {
+      "id": "media-type-registration",
+      "href": "https://w3c.github.io/manifest/#media-type-registration",
+      "level": 3,
+      "title": "Media type registration",
+      "number": "A.1"
+    },
+    {
+      "id": "link-relation-type-registration",
+      "href": "https://w3c.github.io/manifest/#link-relation-type-registration",
+      "level": 3,
+      "title": "Link relation type registration",
+      "number": "A.2"
+    },
+    {
+      "id": "conformance",
+      "href": "https://w3c.github.io/manifest/#conformance",
+      "level": 2,
+      "title": "Conformance",
+      "number": "B"
+    },
+    {
+      "id": "extensibility",
+      "href": "https://w3c.github.io/manifest/#extensibility",
+      "level": 3,
+      "title": "Extensibility",
+      "number": "B.1"
+    },
+    {
+      "id": "proprietary-extensions",
+      "href": "https://w3c.github.io/manifest/#proprietary-extensions",
+      "level": 4,
+      "title": "Proprietary manifest members",
+      "number": "B.1.1"
+    },
+    {
+      "id": "incubations",
+      "href": "https://w3c.github.io/manifest/#incubations",
+      "level": 2,
+      "title": "Incubations",
+      "number": "C"
+    },
+    {
+      "id": "application-information",
+      "href": "https://w3c.github.io/manifest/#application-information",
+      "level": 2,
+      "title": "Application Information",
+      "number": "D"
+    },
+    {
+      "id": "relationship-to-html-s-link-and-meta-elements",
+      "href": "https://w3c.github.io/manifest/#relationship-to-html-s-link-and-meta-elements",
+      "level": 2,
+      "title": "Relationship to HTML's link and meta elements",
+      "number": "E"
+    },
+    {
+      "id": "json-schema",
+      "href": "https://w3c.github.io/manifest/#json-schema",
+      "level": 2,
+      "title": "JSON Schema",
+      "number": "F"
+    },
+    {
+      "id": "internationalization",
+      "href": "https://w3c.github.io/manifest/#internationalization",
+      "level": 2,
+      "title": "Internationalization",
+      "number": "G"
+    },
+    {
+      "id": "use-cases-and-requirements",
+      "href": "https://w3c.github.io/manifest/#use-cases-and-requirements",
+      "level": 2,
+      "title": "Use Cases and Requirements",
+      "number": "H"
+    },
+    {
+      "id": "issue-summary",
+      "href": "https://w3c.github.io/manifest/#issue-summary",
+      "level": 2,
+      "title": "Issue summary",
+      "number": "I"
+    },
+    {
+      "id": "change-log",
+      "href": "https://w3c.github.io/manifest/#change-log",
+      "level": 2,
+      "title": "Change log",
+      "number": "J"
+    },
+    {
+      "id": "acknowledgements",
+      "href": "https://w3c.github.io/manifest/#acknowledgements",
+      "level": 2,
+      "title": "Acknowledgements",
+      "number": "K"
+    },
+    {
+      "id": "index",
+      "href": "https://w3c.github.io/manifest/#index",
+      "level": 2,
+      "title": "Index",
+      "number": "L"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://w3c.github.io/manifest/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification",
+      "number": "L.1"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://w3c.github.io/manifest/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference",
+      "number": "L.2"
+    },
+    {
+      "id": "references",
+      "href": "https://w3c.github.io/manifest/#references",
+      "level": 2,
+      "title": "References",
+      "number": "M"
+    },
+    {
+      "id": "normative-references",
+      "href": "https://w3c.github.io/manifest/#normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "number": "M.1"
+    },
+    {
+      "id": "informative-references",
+      "href": "https://w3c.github.io/manifest/#informative-references",
+      "level": 3,
+      "title": "Informative references",
+      "number": "M.2"
+    }
+  ]
+}

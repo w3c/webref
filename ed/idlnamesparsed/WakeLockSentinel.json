@@ -1,0 +1,254 @@
+{
+  "name": "WakeLockSentinel",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Screen Wake Lock API",
+      "url": "https://www.w3.org/TR/screen-wake-lock/"
+    },
+    "fragment": "[SecureContext, Exposed=(Window)]\ninterface WakeLockSentinel : EventTarget {\n  readonly attribute boolean released;\n  readonly attribute WakeLockType type;\n  Promise<undefined> release();\n  attribute EventHandler onrelease;\n};",
+    "href": "https://w3c.github.io/screen-wake-lock/#dom-wakelocksentinel"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "EventTarget",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=*]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+      "href": "https://dom.spec.whatwg.org/#eventtarget"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/screen-wake-lock/": [
+      {
+        "id": "dom-wakelocksentinel",
+        "href": "https://w3c.github.io/screen-wake-lock/#dom-wakelocksentinel",
+        "linkingText": [
+          "WakeLockSentinel"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-wakelocksentinel-interface",
+          "href": "https://w3c.github.io/screen-wake-lock/#the-wakelocksentinel-interface",
+          "title": "The WakeLockSentinel interface",
+          "number": "9"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-wakelocksentinel-released",
+        "href": "https://w3c.github.io/screen-wake-lock/#dom-wakelocksentinel-released",
+        "linkingText": [
+          "released"
+        ],
+        "localLinkingText": [
+          "WakeLockSentinel.released"
+        ],
+        "type": "attribute",
+        "for": [
+          "WakeLockSentinel"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-released-attribute",
+          "href": "https://w3c.github.io/screen-wake-lock/#the-released-attribute",
+          "title": "The released attribute",
+          "number": "9.2"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-wakelocksentinel-type",
+        "href": "https://w3c.github.io/screen-wake-lock/#dom-wakelocksentinel-type",
+        "linkingText": [
+          "type"
+        ],
+        "localLinkingText": [
+          "WakeLockSentinel.type"
+        ],
+        "type": "attribute",
+        "for": [
+          "WakeLockSentinel"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-type-attribute",
+          "href": "https://w3c.github.io/screen-wake-lock/#the-type-attribute",
+          "title": "The type attribute",
+          "number": "9.3"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-wakelocksentinel-release",
+        "href": "https://w3c.github.io/screen-wake-lock/#dom-wakelocksentinel-release",
+        "linkingText": [
+          "release()"
+        ],
+        "localLinkingText": [
+          "WakeLockSentinel.release",
+          "WakeLockSentinel.release()",
+          "release"
+        ],
+        "type": "method",
+        "for": [
+          "WakeLockSentinel"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-release-method",
+          "href": "https://w3c.github.io/screen-wake-lock/#the-release-method",
+          "title": "The release() method",
+          "number": "9.4"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-wakelocksentinel-onrelease",
+        "href": "https://w3c.github.io/screen-wake-lock/#dom-wakelocksentinel-onrelease",
+        "linkingText": [
+          "onrelease"
+        ],
+        "localLinkingText": [
+          "WakeLockSentinel.onrelease"
+        ],
+        "type": "attribute",
+        "for": [
+          "WakeLockSentinel"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-onrelease-attribute",
+          "href": "https://w3c.github.io/screen-wake-lock/#the-onrelease-attribute",
+          "title": "The onrelease attribute tests: 1 wakelock-onrelease 🔒",
+          "number": "9.5"
+        },
+        "definedIn": "heading"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "eventtarget",
+        "href": "https://dom.spec.whatwg.org/#eventtarget",
+        "linkingText": [
+          "EventTarget"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventtarget-eventtarget",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-eventtarget",
+        "linkingText": [
+          "EventTarget()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-addeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-addeventlistener",
+        "linkingText": [
+          "addEventListener(type, callback, options)",
+          "addEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-removeeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-removeeventlistener",
+        "linkingText": [
+          "removeEventListener(type, callback, options)",
+          "removeEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-dispatchevent",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-dispatchevent",
+        "linkingText": [
+          "dispatchEvent(event)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

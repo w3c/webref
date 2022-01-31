@@ -1,0 +1,122 @@
+{
+  "name": "ImageTrackList",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebCodecs",
+      "url": "https://www.w3.org/TR/webcodecs/"
+    },
+    "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface ImageTrackList {\n  getter ImageTrack (unsigned long index);\n\n  readonly attribute Promise<undefined> ready;\n  [EnforceRange] readonly attribute unsigned long length;\n  [EnforceRange] readonly attribute long selectedIndex;\n  readonly attribute ImageTrack? selectedTrack;\n};",
+    "href": "https://w3c.github.io/webcodecs/#imagetracklist"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webcodecs/": [
+      {
+        "id": "imagetracklist",
+        "href": "https://w3c.github.io/webcodecs/#imagetracklist",
+        "linkingText": [
+          "ImageTrackList"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "imagetracklist-interface",
+          "href": "https://w3c.github.io/webcodecs/#imagetracklist-interface",
+          "title": "ImageTrackList Interface",
+          "number": "10.6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-imagetracklist-ready",
+        "href": "https://w3c.github.io/webcodecs/#dom-imagetracklist-ready",
+        "linkingText": [
+          "ready"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "ImageTrackList"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "imagetracklist-attributes",
+          "href": "https://w3c.github.io/webcodecs/#imagetracklist-attributes",
+          "title": "Attributes",
+          "number": "10.6.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-imagetracklist-length",
+        "href": "https://w3c.github.io/webcodecs/#dom-imagetracklist-length",
+        "linkingText": [
+          "length"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "ImageTrackList"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "imagetracklist-attributes",
+          "href": "https://w3c.github.io/webcodecs/#imagetracklist-attributes",
+          "title": "Attributes",
+          "number": "10.6.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-imagetracklist-selectedindex",
+        "href": "https://w3c.github.io/webcodecs/#dom-imagetracklist-selectedindex",
+        "linkingText": [
+          "selectedIndex"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "ImageTrackList"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "imagetracklist-attributes",
+          "href": "https://w3c.github.io/webcodecs/#imagetracklist-attributes",
+          "title": "Attributes",
+          "number": "10.6.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-imagetracklist-selectedtrack",
+        "href": "https://w3c.github.io/webcodecs/#dom-imagetracklist-selectedtrack",
+        "linkingText": [
+          "selectedTrack"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "ImageTrackList"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "imagetracklist-attributes",
+          "href": "https://w3c.github.io/webcodecs/#imagetracklist-attributes",
+          "title": "Attributes",
+          "number": "10.6.2"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "name": "PushSubscriptionJSON",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Push API",
+      "url": "https://www.w3.org/TR/push-api/"
+    },
+    "fragment": "dictionary PushSubscriptionJSON {\n  USVString endpoint;\n  EpochTimeStamp? expirationTime = null;\n  record<DOMString, USVString> keys;\n};",
+    "href": "https://w3c.github.io/push-api/#dom-pushsubscriptionjson"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/push-api/": [
+      {
+        "id": "dom-pushsubscriptionjson",
+        "href": "https://w3c.github.io/push-api/#dom-pushsubscriptionjson",
+        "linkingText": [
+          "PushSubscriptionJSON"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "pushsubscription-interface",
+          "href": "https://w3c.github.io/push-api/#pushsubscription-interface",
+          "title": "PushSubscription interface",
+          "number": "8"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-pushsubscriptionjson-endpoint",
+        "href": "https://w3c.github.io/push-api/#dom-pushsubscriptionjson-endpoint",
+        "linkingText": [
+          "endpoint"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "PushSubscriptionJSON"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "pushsubscription-interface",
+          "href": "https://w3c.github.io/push-api/#pushsubscription-interface",
+          "title": "PushSubscription interface",
+          "number": "8"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-pushsubscriptionjson-expirationtime",
+        "href": "https://w3c.github.io/push-api/#dom-pushsubscriptionjson-expirationtime",
+        "linkingText": [
+          "expirationTime"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "PushSubscriptionJSON"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "pushsubscription-interface",
+          "href": "https://w3c.github.io/push-api/#pushsubscription-interface",
+          "title": "PushSubscription interface",
+          "number": "8"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-pushsubscriptionjson-keys",
+        "href": "https://w3c.github.io/push-api/#dom-pushsubscriptionjson-keys",
+        "linkingText": [
+          "keys"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "PushSubscriptionJSON"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "pushsubscription-interface",
+          "href": "https://w3c.github.io/push-api/#pushsubscription-interface",
+          "title": "PushSubscription interface",
+          "number": "8"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

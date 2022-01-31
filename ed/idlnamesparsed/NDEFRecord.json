@@ -1,0 +1,227 @@
+{
+  "name": "NDEFRecord",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Web NFC",
+      "url": "https://w3c.github.io/web-nfc/"
+    },
+    "fragment": "[SecureContext, Exposed=Window]\ninterface NDEFRecord {\n  constructor(NDEFRecordInit recordInit);\n\n  readonly attribute USVString recordType;\n  readonly attribute USVString? mediaType;\n  readonly attribute USVString? id;\n  readonly attribute DataView? data;\n\n  readonly attribute USVString? encoding;\n  readonly attribute USVString? lang;\n\n  sequence<NDEFRecord>? toRecords();\n};",
+    "href": "https://w3c.github.io/web-nfc/#dom-ndefrecord"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://w3c.github.io/web-nfc/": [
+      {
+        "id": "dom-ndefrecord",
+        "href": "https://w3c.github.io/web-nfc/#dom-ndefrecord",
+        "linkingText": [
+          "NDEFRecord"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-ndefrecord-interface",
+          "href": "https://w3c.github.io/web-nfc/#the-ndefrecord-interface",
+          "title": "The NDEFRecord interface",
+          "number": "8.2"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-ndefrecord-constructor",
+        "href": "https://w3c.github.io/web-nfc/#dom-ndefrecord-constructor",
+        "linkingText": [
+          "constructor()",
+          "constructor(recordInit)"
+        ],
+        "localLinkingText": [
+          "NDEFRecord.constructor",
+          "NDEFRecord.constructor()",
+          "constructor"
+        ],
+        "type": "constructor",
+        "for": [
+          "NDEFRecord"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-ndefrecord-interface",
+          "href": "https://w3c.github.io/web-nfc/#the-ndefrecord-interface",
+          "title": "The NDEFRecord interface",
+          "number": "8.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-ndefrecord-recordtype",
+        "href": "https://w3c.github.io/web-nfc/#dom-ndefrecord-recordtype",
+        "linkingText": [
+          "recordType"
+        ],
+        "localLinkingText": [
+          "NDEFRecord.recordType"
+        ],
+        "type": "attribute",
+        "for": [
+          "NDEFRecord"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-ndefrecord-interface",
+          "href": "https://w3c.github.io/web-nfc/#the-ndefrecord-interface",
+          "title": "The NDEFRecord interface",
+          "number": "8.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-ndefrecord-mediatype",
+        "href": "https://w3c.github.io/web-nfc/#dom-ndefrecord-mediatype",
+        "linkingText": [
+          "mediaType"
+        ],
+        "localLinkingText": [
+          "NDEFRecord.mediaType"
+        ],
+        "type": "attribute",
+        "for": [
+          "NDEFRecord"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-ndefrecord-interface",
+          "href": "https://w3c.github.io/web-nfc/#the-ndefrecord-interface",
+          "title": "The NDEFRecord interface",
+          "number": "8.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-ndefrecord-id",
+        "href": "https://w3c.github.io/web-nfc/#dom-ndefrecord-id",
+        "linkingText": [
+          "id"
+        ],
+        "localLinkingText": [
+          "NDEFRecord.id"
+        ],
+        "type": "attribute",
+        "for": [
+          "NDEFRecord"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-ndefrecord-interface",
+          "href": "https://w3c.github.io/web-nfc/#the-ndefrecord-interface",
+          "title": "The NDEFRecord interface",
+          "number": "8.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-ndefrecord-data",
+        "href": "https://w3c.github.io/web-nfc/#dom-ndefrecord-data",
+        "linkingText": [
+          "data"
+        ],
+        "localLinkingText": [
+          "NDEFRecord.data"
+        ],
+        "type": "attribute",
+        "for": [
+          "NDEFRecord"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-ndefrecord-interface",
+          "href": "https://w3c.github.io/web-nfc/#the-ndefrecord-interface",
+          "title": "The NDEFRecord interface",
+          "number": "8.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-ndefrecord-encoding",
+        "href": "https://w3c.github.io/web-nfc/#dom-ndefrecord-encoding",
+        "linkingText": [
+          "encoding"
+        ],
+        "localLinkingText": [
+          "NDEFRecord.encoding"
+        ],
+        "type": "attribute",
+        "for": [
+          "NDEFRecord"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-ndefrecord-interface",
+          "href": "https://w3c.github.io/web-nfc/#the-ndefrecord-interface",
+          "title": "The NDEFRecord interface",
+          "number": "8.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-ndefrecord-lang",
+        "href": "https://w3c.github.io/web-nfc/#dom-ndefrecord-lang",
+        "linkingText": [
+          "lang"
+        ],
+        "localLinkingText": [
+          "NDEFRecord.lang"
+        ],
+        "type": "attribute",
+        "for": [
+          "NDEFRecord"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-ndefrecord-interface",
+          "href": "https://w3c.github.io/web-nfc/#the-ndefrecord-interface",
+          "title": "The NDEFRecord interface",
+          "number": "8.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-ndefrecord-torecords",
+        "href": "https://w3c.github.io/web-nfc/#dom-ndefrecord-torecords",
+        "linkingText": [
+          "toRecords()"
+        ],
+        "localLinkingText": [
+          "NDEFRecord.toRecords",
+          "NDEFRecord.toRecords()",
+          "toRecords"
+        ],
+        "type": "method",
+        "for": [
+          "NDEFRecord"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-ndefrecord-interface",
+          "href": "https://w3c.github.io/web-nfc/#the-ndefrecord-interface",
+          "title": "The NDEFRecord interface",
+          "number": "8.2"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

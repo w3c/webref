@@ -1,0 +1,227 @@
+{
+  "name": "SVGAngle",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Scalable Vector Graphics (SVG) 2",
+      "url": "https://www.w3.org/TR/SVG2/"
+    },
+    "fragment": "[Exposed=Window]\ninterface SVGAngle {\n\n  // Angle Unit Types\n  const unsigned short SVG_ANGLETYPE_UNKNOWN = 0;\n  const unsigned short SVG_ANGLETYPE_UNSPECIFIED = 1;\n  const unsigned short SVG_ANGLETYPE_DEG = 2;\n  const unsigned short SVG_ANGLETYPE_RAD = 3;\n  const unsigned short SVG_ANGLETYPE_GRAD = 4;\n\n  readonly attribute unsigned short unitType;\n           attribute float value;\n           attribute float valueInSpecifiedUnits;\n           attribute DOMString valueAsString;\n\n  undefined newValueSpecifiedUnits(unsigned short unitType, float valueInSpecifiedUnits);\n  undefined convertToSpecifiedUnits(unsigned short unitType);\n};",
+    "href": "https://svgwg.org/svg2-draft/types.html#InterfaceSVGAngle"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/SVG2/": [
+      {
+        "id": "InterfaceSVGAngle",
+        "href": "https://svgwg.org/svg2-draft/types.html#InterfaceSVGAngle",
+        "linkingText": [
+          "SVGAngle"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "InterfaceSVGAngle",
+          "href": "https://svgwg.org/svg2-draft/types.html#InterfaceSVGAngle",
+          "title": "Interface SVGAngle",
+          "number": "4.5.3"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "__svg__SVGAngle__SVG_ANGLETYPE_UNKNOWN",
+        "href": "https://svgwg.org/svg2-draft/types.html#__svg__SVGAngle__SVG_ANGLETYPE_UNKNOWN",
+        "linkingText": [
+          "SVG_ANGLETYPE_UNKNOWN"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "SVGAngle"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "InterfaceSVGAngle",
+          "href": "https://svgwg.org/svg2-draft/types.html#InterfaceSVGAngle",
+          "title": "Interface SVGAngle",
+          "number": "4.5.3"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "__svg__SVGAngle__SVG_ANGLETYPE_UNSPECIFIED",
+        "href": "https://svgwg.org/svg2-draft/types.html#__svg__SVGAngle__SVG_ANGLETYPE_UNSPECIFIED",
+        "linkingText": [
+          "SVG_ANGLETYPE_UNSPECIFIED"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "SVGAngle"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "InterfaceSVGAngle",
+          "href": "https://svgwg.org/svg2-draft/types.html#InterfaceSVGAngle",
+          "title": "Interface SVGAngle",
+          "number": "4.5.3"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "__svg__SVGAngle__SVG_ANGLETYPE_DEG",
+        "href": "https://svgwg.org/svg2-draft/types.html#__svg__SVGAngle__SVG_ANGLETYPE_DEG",
+        "linkingText": [
+          "SVG_ANGLETYPE_DEG"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "SVGAngle"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "InterfaceSVGAngle",
+          "href": "https://svgwg.org/svg2-draft/types.html#InterfaceSVGAngle",
+          "title": "Interface SVGAngle",
+          "number": "4.5.3"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "__svg__SVGAngle__SVG_ANGLETYPE_RAD",
+        "href": "https://svgwg.org/svg2-draft/types.html#__svg__SVGAngle__SVG_ANGLETYPE_RAD",
+        "linkingText": [
+          "SVG_ANGLETYPE_RAD"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "SVGAngle"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "InterfaceSVGAngle",
+          "href": "https://svgwg.org/svg2-draft/types.html#InterfaceSVGAngle",
+          "title": "Interface SVGAngle",
+          "number": "4.5.3"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "__svg__SVGAngle__SVG_ANGLETYPE_GRAD",
+        "href": "https://svgwg.org/svg2-draft/types.html#__svg__SVGAngle__SVG_ANGLETYPE_GRAD",
+        "linkingText": [
+          "SVG_ANGLETYPE_GRAD"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "SVGAngle"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "InterfaceSVGAngle",
+          "href": "https://svgwg.org/svg2-draft/types.html#InterfaceSVGAngle",
+          "title": "Interface SVGAngle",
+          "number": "4.5.3"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "__svg__SVGAngle__unitType",
+        "href": "https://svgwg.org/svg2-draft/types.html#__svg__SVGAngle__unitType",
+        "linkingText": [
+          "unitType"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "SVGAngle"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "InterfaceSVGAngle",
+          "href": "https://svgwg.org/svg2-draft/types.html#InterfaceSVGAngle",
+          "title": "Interface SVGAngle",
+          "number": "4.5.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "__svg__SVGAngle__value",
+        "href": "https://svgwg.org/svg2-draft/types.html#__svg__SVGAngle__value",
+        "linkingText": [
+          "value"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "SVGAngle"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "InterfaceSVGAngle",
+          "href": "https://svgwg.org/svg2-draft/types.html#InterfaceSVGAngle",
+          "title": "Interface SVGAngle",
+          "number": "4.5.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "__svg__SVGAngle__valueInSpecifiedUnits",
+        "href": "https://svgwg.org/svg2-draft/types.html#__svg__SVGAngle__valueInSpecifiedUnits",
+        "linkingText": [
+          "valueInSpecifiedUnits"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "SVGAngle"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "InterfaceSVGAngle",
+          "href": "https://svgwg.org/svg2-draft/types.html#InterfaceSVGAngle",
+          "title": "Interface SVGAngle",
+          "number": "4.5.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "__svg__SVGAngle__valueAsString",
+        "href": "https://svgwg.org/svg2-draft/types.html#__svg__SVGAngle__valueAsString",
+        "linkingText": [
+          "valueAsString"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "SVGAngle"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "InterfaceSVGAngle",
+          "href": "https://svgwg.org/svg2-draft/types.html#InterfaceSVGAngle",
+          "title": "Interface SVGAngle",
+          "number": "4.5.3"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

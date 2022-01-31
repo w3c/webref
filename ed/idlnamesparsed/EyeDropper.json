@@ -1,0 +1,89 @@
+{
+  "name": "EyeDropper",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "EyeDropper API",
+      "url": "https://wicg.github.io/eyedropper-api/"
+    },
+    "fragment": "[Exposed=Window, SecureContext]\ninterface EyeDropper {\n    constructor();\n    Promise<ColorSelectionResult> open(optional ColorSelectionOptions options = {});\n};",
+    "href": "https://wicg.github.io/eyedropper-api/#dom-eyedropper"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://wicg.github.io/eyedropper-api/": [
+      {
+        "id": "dom-eyedropper",
+        "href": "https://wicg.github.io/eyedropper-api/#dom-eyedropper",
+        "linkingText": [
+          "EyeDropper"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "eyedropper-interface",
+          "href": "https://wicg.github.io/eyedropper-api/#eyedropper-interface",
+          "title": "EyeDropper interface",
+          "number": "3.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eyedropper-constructor",
+        "href": "https://wicg.github.io/eyedropper-api/#dom-eyedropper-constructor",
+        "linkingText": [
+          "constructor()"
+        ],
+        "localLinkingText": [
+          "EyeDropper.constructor",
+          "EyeDropper.constructor()",
+          "constructor"
+        ],
+        "type": "constructor",
+        "for": [
+          "EyeDropper"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "eyedropper-interface",
+          "href": "https://wicg.github.io/eyedropper-api/#eyedropper-interface",
+          "title": "EyeDropper interface",
+          "number": "3.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eyedropper-open",
+        "href": "https://wicg.github.io/eyedropper-api/#dom-eyedropper-open",
+        "linkingText": [
+          "open()",
+          "open(options)"
+        ],
+        "localLinkingText": [
+          "EyeDropper.open",
+          "EyeDropper.open()",
+          "open"
+        ],
+        "type": "method",
+        "for": [
+          "EyeDropper"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "eyedropper-interface",
+          "href": "https://wicg.github.io/eyedropper-api/#eyedropper-interface",
+          "title": "EyeDropper interface",
+          "number": "3.3"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

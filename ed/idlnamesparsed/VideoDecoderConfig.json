@@ -1,0 +1,227 @@
+{
+  "name": "VideoDecoderConfig",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "WebCodecs",
+      "url": "https://www.w3.org/TR/webcodecs/"
+    },
+    "fragment": "dictionary VideoDecoderConfig {\n  required DOMString codec;\n  BufferSource description;\n  [EnforceRange] unsigned long codedWidth;\n  [EnforceRange] unsigned long codedHeight;\n  [EnforceRange] unsigned long displayAspectWidth;\n  [EnforceRange] unsigned long displayAspectHeight;\n  VideoColorSpaceInit colorSpace;\n  HardwareAcceleration hardwareAcceleration = \"no-preference\";\n  boolean optimizeForLatency;\n};",
+    "href": "https://w3c.github.io/webcodecs/#dictdef-videodecoderconfig"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webcodecs/": [
+      {
+        "id": "dictdef-videodecoderconfig",
+        "href": "https://w3c.github.io/webcodecs/#dictdef-videodecoderconfig",
+        "linkingText": [
+          "VideoDecoderConfig"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "video-decoder-config",
+          "href": "https://w3c.github.io/webcodecs/#video-decoder-config",
+          "title": "VideoDecoderConfig",
+          "number": "7.6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-videodecoderconfig-codec",
+        "href": "https://w3c.github.io/webcodecs/#dom-videodecoderconfig-codec",
+        "linkingText": [
+          "codec"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "VideoDecoderConfig"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "video-decoder-config",
+          "href": "https://w3c.github.io/webcodecs/#video-decoder-config",
+          "title": "VideoDecoderConfig",
+          "number": "7.6"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-videodecoderconfig-description",
+        "href": "https://w3c.github.io/webcodecs/#dom-videodecoderconfig-description",
+        "linkingText": [
+          "description"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "VideoDecoderConfig"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "video-decoder-config",
+          "href": "https://w3c.github.io/webcodecs/#video-decoder-config",
+          "title": "VideoDecoderConfig",
+          "number": "7.6"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-videodecoderconfig-codedwidth",
+        "href": "https://w3c.github.io/webcodecs/#dom-videodecoderconfig-codedwidth",
+        "linkingText": [
+          "codedWidth"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "VideoDecoderConfig"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "video-decoder-config",
+          "href": "https://w3c.github.io/webcodecs/#video-decoder-config",
+          "title": "VideoDecoderConfig",
+          "number": "7.6"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-videodecoderconfig-codedheight",
+        "href": "https://w3c.github.io/webcodecs/#dom-videodecoderconfig-codedheight",
+        "linkingText": [
+          "codedHeight"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "VideoDecoderConfig"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "video-decoder-config",
+          "href": "https://w3c.github.io/webcodecs/#video-decoder-config",
+          "title": "VideoDecoderConfig",
+          "number": "7.6"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-videodecoderconfig-displayaspectwidth",
+        "href": "https://w3c.github.io/webcodecs/#dom-videodecoderconfig-displayaspectwidth",
+        "linkingText": [
+          "displayAspectWidth"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "VideoDecoderConfig"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "video-decoder-config",
+          "href": "https://w3c.github.io/webcodecs/#video-decoder-config",
+          "title": "VideoDecoderConfig",
+          "number": "7.6"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-videodecoderconfig-displayaspectheight",
+        "href": "https://w3c.github.io/webcodecs/#dom-videodecoderconfig-displayaspectheight",
+        "linkingText": [
+          "displayAspectHeight"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "VideoDecoderConfig"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "video-decoder-config",
+          "href": "https://w3c.github.io/webcodecs/#video-decoder-config",
+          "title": "VideoDecoderConfig",
+          "number": "7.6"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-videodecoderconfig-colorspace",
+        "href": "https://w3c.github.io/webcodecs/#dom-videodecoderconfig-colorspace",
+        "linkingText": [
+          "colorSpace"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "VideoDecoderConfig"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "video-decoder-config",
+          "href": "https://w3c.github.io/webcodecs/#video-decoder-config",
+          "title": "VideoDecoderConfig",
+          "number": "7.6"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-videodecoderconfig-hardwareacceleration",
+        "href": "https://w3c.github.io/webcodecs/#dom-videodecoderconfig-hardwareacceleration",
+        "linkingText": [
+          "hardwareAcceleration"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "VideoDecoderConfig"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "video-decoder-config",
+          "href": "https://w3c.github.io/webcodecs/#video-decoder-config",
+          "title": "VideoDecoderConfig",
+          "number": "7.6"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-videodecoderconfig-optimizeforlatency",
+        "href": "https://w3c.github.io/webcodecs/#dom-videodecoderconfig-optimizeforlatency",
+        "linkingText": [
+          "optimizeForLatency"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "VideoDecoderConfig"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "video-decoder-config",
+          "href": "https://w3c.github.io/webcodecs/#video-decoder-config",
+          "title": "VideoDecoderConfig",
+          "number": "7.6"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

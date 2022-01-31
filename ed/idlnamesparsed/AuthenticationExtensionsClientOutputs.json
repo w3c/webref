@@ -1,0 +1,179 @@
+{
+  "name": "AuthenticationExtensionsClientOutputs",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Web Authentication: An API for accessing Public Key Credentials - Level",
+      "url": "https://www.w3.org/TR/webauthn-3/"
+    },
+    "fragment": "dictionary AuthenticationExtensionsClientOutputs {\n};",
+    "href": "https://w3c.github.io/webauthn/#dictdef-authenticationextensionsclientoutputs"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "Web Authentication: An API for accessing Public Key Credentials - Level",
+        "url": "https://www.w3.org/TR/webauthn-3/"
+      },
+      "fragment": "partial dictionary AuthenticationExtensionsClientOutputs {\n  boolean appid;\n};"
+    },
+    {
+      "spec": {
+        "title": "Web Authentication: An API for accessing Public Key Credentials - Level",
+        "url": "https://www.w3.org/TR/webauthn-3/"
+      },
+      "fragment": "partial dictionary AuthenticationExtensionsClientOutputs {\n  boolean appidExclude;\n};"
+    },
+    {
+      "spec": {
+        "title": "Web Authentication: An API for accessing Public Key Credentials - Level",
+        "url": "https://www.w3.org/TR/webauthn-3/"
+      },
+      "fragment": "partial dictionary AuthenticationExtensionsClientOutputs {\n  UvmEntries uvm;\n};"
+    },
+    {
+      "spec": {
+        "title": "Web Authentication: An API for accessing Public Key Credentials - Level",
+        "url": "https://www.w3.org/TR/webauthn-3/"
+      },
+      "fragment": "partial dictionary AuthenticationExtensionsClientOutputs {\n    CredentialPropertiesOutput credProps;\n};"
+    },
+    {
+      "spec": {
+        "title": "Web Authentication: An API for accessing Public Key Credentials - Level",
+        "url": "https://www.w3.org/TR/webauthn-3/"
+      },
+      "fragment": "partial dictionary AuthenticationExtensionsClientOutputs {\n    AuthenticationExtensionsLargeBlobOutputs largeBlob;\n};"
+    }
+  ],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webauthn-3/": [
+      {
+        "id": "dictdef-authenticationextensionsclientoutputs",
+        "href": "https://w3c.github.io/webauthn/#dictdef-authenticationextensionsclientoutputs",
+        "linkingText": [
+          "AuthenticationExtensionsClientOutputs"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "iface-authentication-extensions-client-outputs",
+          "href": "https://w3c.github.io/webauthn/#iface-authentication-extensions-client-outputs",
+          "title": "Authentication Extensions Client Outputs (dictionary AuthenticationExtensionsClientOutputs)",
+          "number": "5.7.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-authenticationextensionsclientoutputs-appid",
+        "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsclientoutputs-appid",
+        "linkingText": [
+          "appid"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "AuthenticationExtensionsClientOutputs"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "sctn-appid-extension",
+          "href": "https://w3c.github.io/webauthn/#sctn-appid-extension",
+          "title": "FIDO AppID Extension (appid)",
+          "number": "10.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-authenticationextensionsclientoutputs-appidexclude",
+        "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsclientoutputs-appidexclude",
+        "linkingText": [
+          "appidExclude"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "AuthenticationExtensionsClientOutputs"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "sctn-appid-exclude-extension",
+          "href": "https://w3c.github.io/webauthn/#sctn-appid-exclude-extension",
+          "title": "FIDO AppID Exclusion Extension (appidExclude)",
+          "number": "10.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-authenticationextensionsclientoutputs-uvm",
+        "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsclientoutputs-uvm",
+        "linkingText": [
+          "uvm"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "AuthenticationExtensionsClientOutputs"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "sctn-uvm-extension",
+          "href": "https://w3c.github.io/webauthn/#sctn-uvm-extension",
+          "title": "User Verification Method Extension (uvm)",
+          "number": "10.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-authenticationextensionsclientoutputs-credprops",
+        "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsclientoutputs-credprops",
+        "linkingText": [
+          "credProps"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "AuthenticationExtensionsClientOutputs"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "sctn-authenticator-credential-properties-extension",
+          "href": "https://w3c.github.io/webauthn/#sctn-authenticator-credential-properties-extension",
+          "title": "Credential Properties Extension (credProps)",
+          "number": "10.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-authenticationextensionsclientoutputs-largeblob",
+        "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsclientoutputs-largeblob",
+        "linkingText": [
+          "largeBlob"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "AuthenticationExtensionsClientOutputs"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "sctn-large-blob-extension",
+          "href": "https://w3c.github.io/webauthn/#sctn-large-blob-extension",
+          "title": "Large blob storage extension (largeBlob)",
+          "number": "10.5"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

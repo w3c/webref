@@ -1,0 +1,157 @@
+{
+  "name": "SensorErrorEventInit",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Generic Sensor API",
+      "url": "https://www.w3.org/TR/generic-sensor/"
+    },
+    "fragment": "dictionary SensorErrorEventInit : EventInit {\n  required DOMException error;\n};",
+    "href": "https://w3c.github.io/sensors/#dictdef-sensorerroreventinit"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "EventInit",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "dictionary EventInit {\n  boolean bubbles = false;\n  boolean cancelable = false;\n  boolean composed = false;\n};",
+      "href": "https://dom.spec.whatwg.org/#dictdef-eventinit"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/generic-sensor/": [
+      {
+        "id": "dictdef-sensorerroreventinit",
+        "href": "https://w3c.github.io/sensors/#dictdef-sensorerroreventinit",
+        "linkingText": [
+          "SensorErrorEventInit"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-sensor-error-event-interface",
+          "href": "https://w3c.github.io/sensors/#the-sensor-error-event-interface",
+          "title": "The SensorErrorEvent Interface",
+          "number": "7.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-sensorerroreventinit-error",
+        "href": "https://w3c.github.io/sensors/#dom-sensorerroreventinit-error",
+        "linkingText": [
+          "error"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "SensorErrorEventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-sensor-error-event-interface",
+          "href": "https://w3c.github.io/sensors/#the-sensor-error-event-interface",
+          "title": "The SensorErrorEvent Interface",
+          "number": "7.2"
+        },
+        "definedIn": "pre"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "dictdef-eventinit",
+        "href": "https://dom.spec.whatwg.org/#dictdef-eventinit",
+        "linkingText": [
+          "EventInit"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventinit-bubbles",
+        "href": "https://dom.spec.whatwg.org/#dom-eventinit-bubbles",
+        "linkingText": [
+          "bubbles"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventinit-cancelable",
+        "href": "https://dom.spec.whatwg.org/#dom-eventinit-cancelable",
+        "linkingText": [
+          "cancelable"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventinit-composed",
+        "href": "https://dom.spec.whatwg.org/#dom-eventinit-composed",
+        "linkingText": [
+          "composed"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

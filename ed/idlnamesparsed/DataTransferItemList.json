@@ -1,0 +1,101 @@
+{
+  "name": "DataTransferItemList",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "HTML Standard",
+      "url": "https://html.spec.whatwg.org/multipage/"
+    },
+    "fragment": "[Exposed=Window]\ninterface DataTransferItemList {\n  readonly attribute unsigned long length;\n  getter DataTransferItem (unsigned long index);\n  DataTransferItem? add(DOMString data, DOMString type);\n  DataTransferItem? add(File data);\n  undefined remove(unsigned long index);\n  undefined clear();\n};",
+    "href": "https://html.spec.whatwg.org/multipage/dnd.html#datatransferitemlist"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://html.spec.whatwg.org/multipage/": [
+      {
+        "id": "datatransferitemlist",
+        "href": "https://html.spec.whatwg.org/multipage/dnd.html#datatransferitemlist",
+        "linkingText": [
+          "DataTransferItemList"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-datatransferitemlist-interface",
+          "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransferitemlist-interface",
+          "title": "The DataTransferItemList interface",
+          "number": "6.10.3.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-datatransferitemlist-length",
+        "href": "https://html.spec.whatwg.org/multipage/dnd.html#dom-datatransferitemlist-length",
+        "linkingText": [
+          "length"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "DataTransferItemList"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-datatransferitemlist-interface",
+          "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransferitemlist-interface",
+          "title": "The DataTransferItemList interface",
+          "number": "6.10.3.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-datatransferitemlist-remove",
+        "href": "https://html.spec.whatwg.org/multipage/dnd.html#dom-datatransferitemlist-remove",
+        "linkingText": [
+          "remove(index)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "DataTransferItemList"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-datatransferitemlist-interface",
+          "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransferitemlist-interface",
+          "title": "The DataTransferItemList interface",
+          "number": "6.10.3.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-datatransferitemlist-clear",
+        "href": "https://html.spec.whatwg.org/multipage/dnd.html#dom-datatransferitemlist-clear",
+        "linkingText": [
+          "clear()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "DataTransferItemList"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-datatransferitemlist-interface",
+          "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransferitemlist-interface",
+          "title": "The DataTransferItemList interface",
+          "number": "6.10.3.1"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "spec": {
+    "title": "CSS Color Adjustment Module Level 1",
+    "url": "https://drafts.csswg.org/css-color-adjust-1/"
+  },
+  "properties": {
+    "color-scheme": {
+      "name": "color-scheme",
+      "value": "normal | [ light | dark | <custom-ident> ]+ && only?",
+      "initial": "normal",
+      "appliesTo": "all elements and text",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "the keyword normal, or an ordered list of specified color scheme keywords",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "color-scheme",
+        "colorScheme"
+      ]
+    },
+    "forced-color-adjust": {
+      "name": "forced-color-adjust",
+      "value": "auto | none | preserve-parent-color",
+      "initial": "auto",
+      "appliesTo": "all elements and text",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "not animatable",
+      "styleDeclaration": [
+        "forced-color-adjust",
+        "forcedColorAdjust"
+      ]
+    },
+    "print-color-adjust": {
+      "name": "print-color-adjust",
+      "value": "economy | exact",
+      "initial": "economy",
+      "appliesTo": "all elements",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "computedValue": "specified keyword",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "print-color-adjust",
+        "printColorAdjust"
+      ]
+    },
+    "color-adjust": {
+      "name": "color-adjust",
+      "value": "<print-color-adjust>",
+      "initial": "see individual properties",
+      "appliesTo": "see individual properties",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "color-adjust",
+        "colorAdjust"
+      ]
+    }
+  },
+  "descriptors": {},
+  "valuespaces": {}
+}

@@ -1,0 +1,101 @@
+{
+  "name": "LayoutChild",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "CSS Layout API Level 1",
+      "url": "https://www.w3.org/TR/css-layout-api-1/"
+    },
+    "fragment": "[Exposed=LayoutWorklet]\ninterface LayoutChild {\n    readonly attribute StylePropertyMapReadOnly styleMap;\n\n    Promise<IntrinsicSizes> intrinsicSizes();\n    Promise<LayoutFragment> layoutNextFragment(LayoutConstraintsOptions constraints, ChildBreakToken breakToken);\n};",
+    "href": "https://drafts.css-houdini.org/css-layout-api-1/#layoutchild"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/css-layout-api-1/": [
+      {
+        "id": "layoutchild",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#layoutchild",
+        "linkingText": [
+          "LayoutChild"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "layout-children",
+          "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-children",
+          "title": "Layout Children",
+          "number": "4.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-layoutchild-stylemap",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutchild-stylemap",
+        "linkingText": [
+          "styleMap"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "LayoutChild"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "layout-children",
+          "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-children",
+          "title": "Layout Children",
+          "number": "4.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-layoutchild-intrinsicsizes",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutchild-intrinsicsizes",
+        "linkingText": [
+          "intrinsicSizes()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "LayoutChild"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "layout-children",
+          "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-children",
+          "title": "Layout Children",
+          "number": "4.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-layoutchild-layoutnextfragment",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutchild-layoutnextfragment",
+        "linkingText": [
+          "layoutNextFragment(constraints, breakToken)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "LayoutChild"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "layout-children",
+          "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-children",
+          "title": "Layout Children",
+          "number": "4.1"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

@@ -1,0 +1,794 @@
+{
+  "spec": {
+    "title": "Compute Pressure API",
+    "url": "https://wicg.github.io/compute-pressure/"
+  },
+  "dfns": [
+    {
+      "id": "dfn-processing-units",
+      "href": "https://wicg.github.io/compute-pressure/#dfn-processing-units",
+      "linkingText": [
+        "Processing Units"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "processing-units",
+        "href": "https://wicg.github.io/compute-pressure/#processing-units",
+        "title": "Processing Units",
+        "number": "3.1"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-cpu",
+      "href": "https://wicg.github.io/compute-pressure/#dfn-cpu",
+      "linkingText": [
+        "CPU"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "processing-units",
+        "href": "https://wicg.github.io/compute-pressure/#processing-units",
+        "title": "Processing Units",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-xpu",
+      "href": "https://wicg.github.io/compute-pressure/#dfn-xpu",
+      "linkingText": [
+        "XPU"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "processing-units",
+        "href": "https://wicg.github.io/compute-pressure/#processing-units",
+        "title": "Processing Units",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-utilization",
+      "href": "https://wicg.github.io/compute-pressure/#dfn-utilization",
+      "linkingText": [
+        "Utilization"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "utilization",
+        "href": "https://wicg.github.io/compute-pressure/#utilization",
+        "title": "Utilization",
+        "number": "3.2"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-load",
+      "href": "https://wicg.github.io/compute-pressure/#dfn-load",
+      "linkingText": [
+        "Load"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "load",
+        "href": "https://wicg.github.io/compute-pressure/#load",
+        "title": "Load",
+        "number": "3.3"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-frequency",
+      "href": "https://wicg.github.io/compute-pressure/#dfn-frequency",
+      "linkingText": [
+        "Frequency"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "frequency",
+        "href": "https://wicg.github.io/compute-pressure/#frequency",
+        "title": "Frequency",
+        "number": "3.4"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-dynamic-frequency-scaling",
+      "href": "https://wicg.github.io/compute-pressure/#dfn-dynamic-frequency-scaling",
+      "linkingText": [
+        "dynamic frequency scaling"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "frequency",
+        "href": "https://wicg.github.io/compute-pressure/#frequency",
+        "title": "Frequency",
+        "number": "3.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-boost",
+      "href": "https://wicg.github.io/compute-pressure/#dfn-boost",
+      "linkingText": [
+        "boost",
+        "boosting"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "frequency",
+        "href": "https://wicg.github.io/compute-pressure/#frequency",
+        "title": "Frequency",
+        "number": "3.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-throttle",
+      "href": "https://wicg.github.io/compute-pressure/#dfn-throttle",
+      "linkingText": [
+        "throttle",
+        "throttling"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "frequency",
+        "href": "https://wicg.github.io/compute-pressure/#frequency",
+        "title": "Frequency",
+        "number": "3.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-sampling-frequency",
+      "href": "https://wicg.github.io/compute-pressure/#dfn-sampling-frequency",
+      "linkingText": [
+        "Sampling Frequency"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sampling-frequency-and-reporting-frequency",
+        "href": "https://wicg.github.io/compute-pressure/#sampling-frequency-and-reporting-frequency",
+        "title": "Sampling Frequency and Reporting Frequency",
+        "number": "3.5"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-reporting-frequency",
+      "href": "https://wicg.github.io/compute-pressure/#dfn-reporting-frequency",
+      "linkingText": [
+        "Reporting Frequency"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sampling-frequency-and-reporting-frequency",
+        "href": "https://wicg.github.io/compute-pressure/#sampling-frequency-and-reporting-frequency",
+        "title": "Sampling Frequency and Reporting Frequency",
+        "number": "3.5"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-platform-collector",
+      "href": "https://wicg.github.io/compute-pressure/#dfn-platform-collector",
+      "linkingText": [
+        "platform collector"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "platform-primitives",
+        "href": "https://wicg.github.io/compute-pressure/#platform-primitives",
+        "title": "Platform primitives",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-active-observers",
+      "href": "https://wicg.github.io/compute-pressure/#dfn-active-observers",
+      "linkingText": [
+        "active observers"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "platform-primitives",
+        "href": "https://wicg.github.io/compute-pressure/#platform-primitives",
+        "title": "Platform primitives",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-computepressureupdatecallback",
+      "href": "https://wicg.github.io/compute-pressure/#dom-computepressureupdatecallback",
+      "linkingText": [
+        "ComputePressureUpdateCallback"
+      ],
+      "localLinkingText": [],
+      "type": "callback",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-computepressureupdatecallback-callback",
+        "href": "https://wicg.github.io/compute-pressure/#the-computepressureupdatecallback-callback",
+        "title": "The ComputePressureUpdateCallback callback",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-computepressuretarget",
+      "href": "https://wicg.github.io/compute-pressure/#dom-computepressuretarget",
+      "linkingText": [
+        "ComputePressureTarget"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-computepressureobserver-object",
+        "href": "https://wicg.github.io/compute-pressure/#the-computepressureobserver-object",
+        "title": "The ComputePressureObserver object",
+        "number": "5.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-computepressuretarget-cpu",
+      "href": "https://wicg.github.io/compute-pressure/#dom-computepressuretarget-cpu",
+      "linkingText": [
+        "cpu"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ComputePressureTarget"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-computepressureobserver-object",
+        "href": "https://wicg.github.io/compute-pressure/#the-computepressureobserver-object",
+        "title": "The ComputePressureObserver object",
+        "number": "5.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-computepressureobserver",
+      "href": "https://wicg.github.io/compute-pressure/#dom-computepressureobserver",
+      "linkingText": [
+        "ComputePressureObserver"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-computepressureobserver-object",
+        "href": "https://wicg.github.io/compute-pressure/#the-computepressureobserver-object",
+        "title": "The ComputePressureObserver object",
+        "number": "5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-computepressureobservertaskqueued",
+      "href": "https://wicg.github.io/compute-pressure/#dfn-computepressureobservertaskqueued",
+      "linkingText": [
+        "[[ComputePressureObserverTaskQueued]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Document"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "internal-slots",
+        "href": "https://wicg.github.io/compute-pressure/#internal-slots",
+        "title": "Internal slots",
+        "number": "5.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-callback",
+      "href": "https://wicg.github.io/compute-pressure/#dfn-callback",
+      "linkingText": [
+        "[[Callback]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ComputePressureObserver"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "internal-slots",
+        "href": "https://wicg.github.io/compute-pressure/#internal-slots",
+        "title": "Internal slots",
+        "number": "5.2.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dfn-activated",
+      "href": "https://wicg.github.io/compute-pressure/#dfn-activated",
+      "linkingText": [
+        "[[Activated]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ComputePressureObserver"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "internal-slots",
+        "href": "https://wicg.github.io/compute-pressure/#internal-slots",
+        "title": "Internal slots",
+        "number": "5.2.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dfn-queuedentries",
+      "href": "https://wicg.github.io/compute-pressure/#dfn-queuedentries",
+      "linkingText": [
+        "[[QueuedEntries]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ComputePressureObserver"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "internal-slots",
+        "href": "https://wicg.github.io/compute-pressure/#internal-slots",
+        "title": "Internal slots",
+        "number": "5.2.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dfn-cpuutilizationthresholds",
+      "href": "https://wicg.github.io/compute-pressure/#dfn-cpuutilizationthresholds",
+      "linkingText": [
+        "[[CPUUtilizationThresholds]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ComputePressureObserver"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "internal-slots",
+        "href": "https://wicg.github.io/compute-pressure/#internal-slots",
+        "title": "Internal slots",
+        "number": "5.2.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dfn-cpuspeedthresholds",
+      "href": "https://wicg.github.io/compute-pressure/#dfn-cpuspeedthresholds",
+      "linkingText": [
+        "[[CPUSpeedThresholds]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ComputePressureObserver"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "internal-slots",
+        "href": "https://wicg.github.io/compute-pressure/#internal-slots",
+        "title": "Internal slots",
+        "number": "5.2.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dom-computepressureobserver-constructor",
+      "href": "https://wicg.github.io/compute-pressure/#dom-computepressureobserver-constructor",
+      "linkingText": [
+        "constructor()",
+        "constructor(callback)"
+      ],
+      "localLinkingText": [
+        "ComputePressureObserver.constructor",
+        "ComputePressureObserver.constructor()",
+        "constructor"
+      ],
+      "type": "constructor",
+      "for": [
+        "ComputePressureObserver"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-constructor-method",
+        "href": "https://wicg.github.io/compute-pressure/#the-constructor-method",
+        "title": "The constructor() method",
+        "number": "5.2.2"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-computepressureobserver-observe",
+      "href": "https://wicg.github.io/compute-pressure/#dom-computepressureobserver-observe",
+      "linkingText": [
+        "observe()",
+        "observe(target)",
+        "observe(target, options)"
+      ],
+      "localLinkingText": [
+        "ComputePressureObserver.observe",
+        "ComputePressureObserver.observe()",
+        "observe"
+      ],
+      "type": "method",
+      "for": [
+        "ComputePressureObserver"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-observe-method",
+        "href": "https://wicg.github.io/compute-pressure/#the-observe-method",
+        "title": "The observe() method",
+        "number": "5.2.3"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-computepressureobserver-unobserve",
+      "href": "https://wicg.github.io/compute-pressure/#dom-computepressureobserver-unobserve",
+      "linkingText": [
+        "unobserve()",
+        "unobserve(target)"
+      ],
+      "localLinkingText": [
+        "ComputePressureObserver.unobserve",
+        "ComputePressureObserver.unobserve()",
+        "unobserve"
+      ],
+      "type": "method",
+      "for": [
+        "ComputePressureObserver"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-unobserve-method",
+        "href": "https://wicg.github.io/compute-pressure/#the-unobserve-method",
+        "title": "The unobserve() method",
+        "number": "5.2.4"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-computepressureobserver-disconnect",
+      "href": "https://wicg.github.io/compute-pressure/#dom-computepressureobserver-disconnect",
+      "linkingText": [
+        "disconnect()"
+      ],
+      "localLinkingText": [
+        "ComputePressureObserver.disconnect",
+        "ComputePressureObserver.disconnect()",
+        "disconnect"
+      ],
+      "type": "method",
+      "for": [
+        "ComputePressureObserver"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-disconnect-method",
+        "href": "https://wicg.github.io/compute-pressure/#the-disconnect-method",
+        "title": "The disconnect() method",
+        "number": "5.2.5"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-computepressureobserver-takerecords",
+      "href": "https://wicg.github.io/compute-pressure/#dom-computepressureobserver-takerecords",
+      "linkingText": [
+        "takeRecords()"
+      ],
+      "localLinkingText": [
+        "ComputePressureObserver.takeRecords",
+        "ComputePressureObserver.takeRecords()",
+        "takeRecords"
+      ],
+      "type": "method",
+      "for": [
+        "ComputePressureObserver"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-takerecords-method",
+        "href": "https://wicg.github.io/compute-pressure/#the-takerecords-method",
+        "title": "The takeRecords() method",
+        "number": "5.2.6"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-computepressureobserver-supportedtargettypes",
+      "href": "https://wicg.github.io/compute-pressure/#dom-computepressureobserver-supportedtargettypes",
+      "linkingText": [
+        "supportedTargetTypes"
+      ],
+      "localLinkingText": [
+        "ComputePressureObserver.supportedTargetTypes"
+      ],
+      "type": "attribute",
+      "for": [
+        "ComputePressureObserver"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-supportedtargettypes-attribute",
+        "href": "https://wicg.github.io/compute-pressure/#the-supportedtargettypes-attribute",
+        "title": "The supportedTargetTypes attribute",
+        "number": "5.2.7"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-computepressureentry",
+      "href": "https://wicg.github.io/compute-pressure/#dom-computepressureentry",
+      "linkingText": [
+        "ComputePressureEntry"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-computepressureentry-dictionary",
+        "href": "https://wicg.github.io/compute-pressure/#the-computepressureentry-dictionary",
+        "title": "The ComputePressureEntry dictionary",
+        "number": "5.3"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-computepressureentry-cpuspeed",
+      "href": "https://wicg.github.io/compute-pressure/#dom-computepressureentry-cpuspeed",
+      "linkingText": [
+        "cpuSpeed"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ComputePressureEntry"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-cpuspeed-attribute",
+        "href": "https://wicg.github.io/compute-pressure/#the-cpuspeed-attribute",
+        "title": "The cpuSpeed attribute",
+        "number": "5.3.1"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-computepressureentry-cpuutilization",
+      "href": "https://wicg.github.io/compute-pressure/#dom-computepressureentry-cpuutilization",
+      "linkingText": [
+        "cpuUtilization"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ComputePressureEntry"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-cpuutilization-attribute",
+        "href": "https://wicg.github.io/compute-pressure/#the-cpuutilization-attribute",
+        "title": "The cpuUtilization attribute",
+        "number": "5.3.2"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-computepressureentry-options",
+      "href": "https://wicg.github.io/compute-pressure/#dom-computepressureentry-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ComputePressureEntry"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-options-attribute",
+        "href": "https://wicg.github.io/compute-pressure/#the-options-attribute",
+        "title": "The options attribute",
+        "number": "5.3.3"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-computepressureobserveroptions",
+      "href": "https://wicg.github.io/compute-pressure/#dom-computepressureobserveroptions",
+      "linkingText": [
+        "ComputePressureObserverOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-computepressureobserveroptions-dictionary",
+        "href": "https://wicg.github.io/compute-pressure/#the-computepressureobserveroptions-dictionary",
+        "title": "The ComputePressureObserverOptions dictionary",
+        "number": "5.4"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-computepressureobserveroptions-cpuutilizationthresholds",
+      "href": "https://wicg.github.io/compute-pressure/#dom-computepressureobserveroptions-cpuutilizationthresholds",
+      "linkingText": [
+        "cpuUtilizationThresholds"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ComputePressureObserverOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-cpuutilizationthresholds-member",
+        "href": "https://wicg.github.io/compute-pressure/#the-cpuutilizationthresholds-member",
+        "title": "The cpuUtilizationThresholds member",
+        "number": "5.4.1"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-computepressureobserveroptions-cpuspeedthresholds",
+      "href": "https://wicg.github.io/compute-pressure/#dom-computepressureobserveroptions-cpuspeedthresholds",
+      "linkingText": [
+        "cpuSpeedThresholds"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ComputePressureObserverOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-cpuspeedthresholds-member",
+        "href": "https://wicg.github.io/compute-pressure/#the-cpuspeedthresholds-member",
+        "title": "The cpuSpeedThresholds member",
+        "number": "5.4.2"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-computepressureobserver-task-source",
+      "href": "https://wicg.github.io/compute-pressure/#dfn-computepressureobserver-task-source",
+      "linkingText": [
+        "ComputePressureObserver task source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "queue-a-computepressureobserver-task",
+        "href": "https://wicg.github.io/compute-pressure/#queue-a-computepressureobserver-task",
+        "title": "Queue a ComputePressureObserver Task",
+        "number": "5.5.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-queue-a-compute-pressure-observer-task",
+      "href": "https://wicg.github.io/compute-pressure/#dfn-queue-a-compute-pressure-observer-task",
+      "linkingText": [
+        "queue a compute pressure observer task"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "queue-a-computepressureobserver-task",
+        "href": "https://wicg.github.io/compute-pressure/#queue-a-computepressureobserver-task",
+        "title": "Queue a ComputePressureObserver Task",
+        "number": "5.5.5"
+      },
+      "definedIn": "prose"
+    }
+  ]
+}

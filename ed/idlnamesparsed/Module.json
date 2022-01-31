@@ -1,0 +1,123 @@
+{
+  "name": "Module",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebAssembly JavaScript Interface",
+      "url": "https://www.w3.org/TR/wasm-js-api-1/"
+    },
+    "fragment": "[LegacyNamespace=WebAssembly, Exposed=(Window,Worker,Worklet)]\ninterface Module {\n  constructor(BufferSource bytes);\n  static sequence<ModuleExportDescriptor> exports(Module moduleObject);\n  static sequence<ModuleImportDescriptor> imports(Module moduleObject);\n  static sequence<ArrayBuffer> customSections(Module moduleObject, DOMString sectionName);\n};",
+    "href": "https://webassembly.github.io/spec/js-api/#module"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/wasm-js-api-1/": [
+      {
+        "id": "module",
+        "href": "https://webassembly.github.io/spec/js-api/#module",
+        "linkingText": [
+          "Module"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "modules",
+          "href": "https://webassembly.github.io/spec/js-api/#modules",
+          "title": "Modules",
+          "number": "4.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-module-module",
+        "href": "https://webassembly.github.io/spec/js-api/#dom-module-module",
+        "linkingText": [
+          "Module(bytes)",
+          "constructor(bytes)"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "Module"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "modules",
+          "href": "https://webassembly.github.io/spec/js-api/#modules",
+          "title": "Modules",
+          "number": "4.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-module-exports",
+        "href": "https://webassembly.github.io/spec/js-api/#dom-module-exports",
+        "linkingText": [
+          "exports(moduleObject)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Module"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "modules",
+          "href": "https://webassembly.github.io/spec/js-api/#modules",
+          "title": "Modules",
+          "number": "4.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-module-imports",
+        "href": "https://webassembly.github.io/spec/js-api/#dom-module-imports",
+        "linkingText": [
+          "imports(moduleObject)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Module"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "modules",
+          "href": "https://webassembly.github.io/spec/js-api/#modules",
+          "title": "Modules",
+          "number": "4.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-module-customsections",
+        "href": "https://webassembly.github.io/spec/js-api/#dom-module-customsections",
+        "linkingText": [
+          "customSections(moduleObject, sectionName)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Module"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "modules",
+          "href": "https://webassembly.github.io/spec/js-api/#modules",
+          "title": "Modules",
+          "number": "4.1"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

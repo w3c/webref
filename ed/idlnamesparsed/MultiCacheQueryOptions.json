@@ -1,0 +1,155 @@
+{
+  "name": "MultiCacheQueryOptions",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Service Workers Nightly",
+      "url": "https://www.w3.org/TR/service-workers-1/"
+    },
+    "fragment": "dictionary MultiCacheQueryOptions : CacheQueryOptions {\n  DOMString cacheName;\n};",
+    "href": "https://w3c.github.io/ServiceWorker/#dictdef-multicachequeryoptions"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "CacheQueryOptions",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "Service Workers Nightly",
+        "url": "https://www.w3.org/TR/service-workers-1/"
+      },
+      "fragment": "dictionary CacheQueryOptions {\n  boolean ignoreSearch = false;\n  boolean ignoreMethod = false;\n  boolean ignoreVary = false;\n};",
+      "href": "https://w3c.github.io/ServiceWorker/#dictdef-cachequeryoptions"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/service-workers-1/": [
+      {
+        "id": "dictdef-multicachequeryoptions",
+        "href": "https://w3c.github.io/ServiceWorker/#dictdef-multicachequeryoptions",
+        "linkingText": [
+          "MultiCacheQueryOptions"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "cachestorage-interface",
+          "href": "https://w3c.github.io/ServiceWorker/#cachestorage-interface",
+          "title": "CacheStorage",
+          "number": "5.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-multicachequeryoptions-cachename",
+        "href": "https://w3c.github.io/ServiceWorker/#dom-multicachequeryoptions-cachename",
+        "linkingText": [
+          "cacheName"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MultiCacheQueryOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "cachestorage-interface",
+          "href": "https://w3c.github.io/ServiceWorker/#cachestorage-interface",
+          "title": "CacheStorage",
+          "number": "5.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dictdef-cachequeryoptions",
+        "href": "https://w3c.github.io/ServiceWorker/#dictdef-cachequeryoptions",
+        "linkingText": [
+          "CacheQueryOptions"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "cache-interface",
+          "href": "https://w3c.github.io/ServiceWorker/#cache-interface",
+          "title": "Cache",
+          "number": "5.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-cachequeryoptions-ignoresearch",
+        "href": "https://w3c.github.io/ServiceWorker/#dom-cachequeryoptions-ignoresearch",
+        "linkingText": [
+          "ignoreSearch"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "CacheQueryOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "cache-interface",
+          "href": "https://w3c.github.io/ServiceWorker/#cache-interface",
+          "title": "Cache",
+          "number": "5.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-cachequeryoptions-ignoremethod",
+        "href": "https://w3c.github.io/ServiceWorker/#dom-cachequeryoptions-ignoremethod",
+        "linkingText": [
+          "ignoreMethod"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "CacheQueryOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "cache-interface",
+          "href": "https://w3c.github.io/ServiceWorker/#cache-interface",
+          "title": "Cache",
+          "number": "5.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-cachequeryoptions-ignorevary",
+        "href": "https://w3c.github.io/ServiceWorker/#dom-cachequeryoptions-ignorevary",
+        "linkingText": [
+          "ignoreVary"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "CacheQueryOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "cache-interface",
+          "href": "https://w3c.github.io/ServiceWorker/#cache-interface",
+          "title": "Cache",
+          "number": "5.4"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "name": "CanvasUserInterface",
+  "type": "interface mixin",
+  "defined": {
+    "spec": {
+      "title": "HTML Standard",
+      "url": "https://html.spec.whatwg.org/multipage/"
+    },
+    "fragment": "interface mixin CanvasUserInterface {\n  undefined drawFocusIfNeeded(Element element);\n  undefined drawFocusIfNeeded(Path2D path, Element element);\n  undefined scrollPathIntoView();\n  undefined scrollPathIntoView(Path2D path);\n};",
+    "href": "https://html.spec.whatwg.org/multipage/canvas.html#canvasuserinterface"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://html.spec.whatwg.org/multipage/": [
+      {
+        "id": "canvasuserinterface",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#canvasuserinterface",
+        "linkingText": [
+          "CanvasUserInterface"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "2dcontext",
+          "href": "https://html.spec.whatwg.org/multipage/canvas.html#2dcontext",
+          "title": "The 2D rendering context",
+          "number": "4.12.5.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-context-2d-drawfocusifneeded",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-drawfocusifneeded",
+        "linkingText": [
+          "drawFocusIfNeeded(element)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CanvasUserInterface"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "drawing-focus-rings-and-scrolling-paths-into-view",
+          "href": "https://html.spec.whatwg.org/multipage/canvas.html#drawing-focus-rings-and-scrolling-paths-into-view",
+          "title": "Drawing focus rings and scrolling paths into view",
+          "number": "4.12.5.1.13"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-context-2d-scrollpathintoview",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-scrollpathintoview",
+        "linkingText": [
+          "scrollPathIntoView()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CanvasUserInterface"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "drawing-focus-rings-and-scrolling-paths-into-view",
+          "href": "https://html.spec.whatwg.org/multipage/canvas.html#drawing-focus-rings-and-scrolling-paths-into-view",
+          "title": "Drawing focus rings and scrolling paths into view",
+          "number": "4.12.5.1.13"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

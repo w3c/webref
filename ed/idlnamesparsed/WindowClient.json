@@ -1,0 +1,334 @@
+{
+  "name": "WindowClient",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Service Workers Nightly",
+      "url": "https://www.w3.org/TR/service-workers-1/"
+    },
+    "fragment": "[Exposed=ServiceWorker]\ninterface WindowClient : Client {\n  readonly attribute DocumentVisibilityState visibilityState;\n  readonly attribute boolean focused;\n  [SameObject] readonly attribute FrozenArray<USVString> ancestorOrigins;\n  [NewObject] Promise<WindowClient> focus();\n  [NewObject] Promise<WindowClient?> navigate(USVString url);\n};",
+    "href": "https://w3c.github.io/ServiceWorker/#windowclient"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "Client",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "Service Workers Nightly",
+        "url": "https://www.w3.org/TR/service-workers-1/"
+      },
+      "fragment": "[Exposed=ServiceWorker]\ninterface Client {\n  readonly attribute USVString url;\n  readonly attribute FrameType frameType;\n  readonly attribute DOMString id;\n  readonly attribute ClientType type;\n  undefined postMessage(any message, sequence<object> transfer);\n  undefined postMessage(any message, optional StructuredSerializeOptions options = {});\n};",
+      "href": "https://w3c.github.io/ServiceWorker/#client"
+    },
+    "extended": [
+      {
+        "spec": {
+          "title": "Page Lifecycle",
+          "url": "https://wicg.github.io/page-lifecycle/"
+        },
+        "fragment": "partial interface Client {\n    readonly attribute ClientLifecycleState lifecycleState;\n};"
+      }
+    ],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/service-workers-1/": [
+      {
+        "id": "windowclient",
+        "href": "https://w3c.github.io/ServiceWorker/#windowclient",
+        "linkingText": [
+          "WindowClient"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "client-interface",
+          "href": "https://w3c.github.io/ServiceWorker/#client-interface",
+          "title": "Client",
+          "number": "4.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-windowclient-visibilitystate",
+        "href": "https://w3c.github.io/ServiceWorker/#dom-windowclient-visibilitystate",
+        "linkingText": [
+          "visibilityState"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "WindowClient"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "client-visibilitystate",
+          "href": "https://w3c.github.io/ServiceWorker/#client-visibilitystate",
+          "title": "visibilityState",
+          "number": "4.2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-windowclient-focused",
+        "href": "https://w3c.github.io/ServiceWorker/#dom-windowclient-focused",
+        "linkingText": [
+          "focused"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "WindowClient"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "client-focused",
+          "href": "https://w3c.github.io/ServiceWorker/#client-focused",
+          "title": "focused",
+          "number": "4.2.8"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-windowclient-ancestororigins",
+        "href": "https://w3c.github.io/ServiceWorker/#dom-windowclient-ancestororigins",
+        "linkingText": [
+          "ancestorOrigins"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "WindowClient"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "client-ancestororigins",
+          "href": "https://w3c.github.io/ServiceWorker/#client-ancestororigins",
+          "title": "ancestorOrigins",
+          "number": "4.2.9"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-windowclient-focus",
+        "href": "https://w3c.github.io/ServiceWorker/#dom-windowclient-focus",
+        "linkingText": [
+          "focus()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "WindowClient"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "client-focus",
+          "href": "https://w3c.github.io/ServiceWorker/#client-focus",
+          "title": "focus()",
+          "number": "4.2.10"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-windowclient-navigate",
+        "href": "https://w3c.github.io/ServiceWorker/#dom-windowclient-navigate",
+        "linkingText": [
+          "navigate(url)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "WindowClient"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "client-navigate",
+          "href": "https://w3c.github.io/ServiceWorker/#client-navigate",
+          "title": "navigate(url)",
+          "number": "4.2.11"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "client",
+        "href": "https://w3c.github.io/ServiceWorker/#client",
+        "linkingText": [
+          "Client"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "client-interface",
+          "href": "https://w3c.github.io/ServiceWorker/#client-interface",
+          "title": "Client",
+          "number": "4.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-client-url",
+        "href": "https://w3c.github.io/ServiceWorker/#dom-client-url",
+        "linkingText": [
+          "url"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Client"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "client-url",
+          "href": "https://w3c.github.io/ServiceWorker/#client-url",
+          "title": "url",
+          "number": "4.2.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-client-frametype",
+        "href": "https://w3c.github.io/ServiceWorker/#dom-client-frametype",
+        "linkingText": [
+          "frameType"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Client"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "client-frametype",
+          "href": "https://w3c.github.io/ServiceWorker/#client-frametype",
+          "title": "frameType",
+          "number": "4.2.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-client-id",
+        "href": "https://w3c.github.io/ServiceWorker/#dom-client-id",
+        "linkingText": [
+          "id"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Client"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "client-id",
+          "href": "https://w3c.github.io/ServiceWorker/#client-id",
+          "title": "id",
+          "number": "4.2.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-client-type",
+        "href": "https://w3c.github.io/ServiceWorker/#dom-client-type",
+        "linkingText": [
+          "type"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Client"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "client-type",
+          "href": "https://w3c.github.io/ServiceWorker/#client-type",
+          "title": "type",
+          "number": "4.2.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-client-postmessage",
+        "href": "https://w3c.github.io/ServiceWorker/#dom-client-postmessage",
+        "linkingText": [
+          "postMessage(message, transfer)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Client"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "client-postmessage",
+          "href": "https://w3c.github.io/ServiceWorker/#client-postmessage",
+          "title": "postMessage(message, transfer)",
+          "number": "4.2.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-client-postmessage-message-options",
+        "href": "https://w3c.github.io/ServiceWorker/#dom-client-postmessage-message-options",
+        "linkingText": [
+          "postMessage(message, options)",
+          "postMessage(message)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Client"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "client-postmessage-options",
+          "href": "https://w3c.github.io/ServiceWorker/#client-postmessage-options",
+          "title": "postMessage(message, options)",
+          "number": "4.2.6"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://wicg.github.io/page-lifecycle/": [
+      {
+        "id": "dom-client-lifecyclestate",
+        "href": "https://wicg.github.io/page-lifecycle/#dom-client-lifecyclestate",
+        "linkingText": [
+          "lifecycleState"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Client"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "serviceworker-client-dfn",
+          "href": "https://wicg.github.io/page-lifecycle/#serviceworker-client-dfn",
+          "title": "Client",
+          "number": "5.3.1"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

@@ -1,0 +1,290 @@
+{
+  "name": "VideoEncoderConfig",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "WebCodecs",
+      "url": "https://www.w3.org/TR/webcodecs/"
+    },
+    "fragment": "dictionary VideoEncoderConfig {\n  required DOMString codec;\n  [EnforceRange] required unsigned long width;\n  [EnforceRange] required unsigned long height;\n  [EnforceRange] unsigned long displayWidth;\n  [EnforceRange] unsigned long displayHeight;\n  [EnforceRange] unsigned long long bitrate;\n  [EnforceRange] double framerate;\n  HardwareAcceleration hardwareAcceleration = \"no-preference\";\n  AlphaOption alpha = \"discard\";\n  DOMString scalabilityMode;\n  BitrateMode bitrateMode = \"variable\";\n  LatencyMode latencyMode = \"quality\";\n};",
+    "href": "https://w3c.github.io/webcodecs/#dictdef-videoencoderconfig"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webcodecs/": [
+      {
+        "id": "dictdef-videoencoderconfig",
+        "href": "https://w3c.github.io/webcodecs/#dictdef-videoencoderconfig",
+        "linkingText": [
+          "VideoEncoderConfig"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "video-encoder-config",
+          "href": "https://w3c.github.io/webcodecs/#video-encoder-config",
+          "title": "VideoEncoderConfig",
+          "number": "7.8"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-videoencoderconfig-codec",
+        "href": "https://w3c.github.io/webcodecs/#dom-videoencoderconfig-codec",
+        "linkingText": [
+          "codec"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "VideoEncoderConfig"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "video-encoder-config",
+          "href": "https://w3c.github.io/webcodecs/#video-encoder-config",
+          "title": "VideoEncoderConfig",
+          "number": "7.8"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-videoencoderconfig-width",
+        "href": "https://w3c.github.io/webcodecs/#dom-videoencoderconfig-width",
+        "linkingText": [
+          "width"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "VideoEncoderConfig"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "video-encoder-config",
+          "href": "https://w3c.github.io/webcodecs/#video-encoder-config",
+          "title": "VideoEncoderConfig",
+          "number": "7.8"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-videoencoderconfig-height",
+        "href": "https://w3c.github.io/webcodecs/#dom-videoencoderconfig-height",
+        "linkingText": [
+          "height"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "VideoEncoderConfig"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "video-encoder-config",
+          "href": "https://w3c.github.io/webcodecs/#video-encoder-config",
+          "title": "VideoEncoderConfig",
+          "number": "7.8"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-videoencoderconfig-displaywidth",
+        "href": "https://w3c.github.io/webcodecs/#dom-videoencoderconfig-displaywidth",
+        "linkingText": [
+          "displayWidth"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "VideoEncoderConfig"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "video-encoder-config",
+          "href": "https://w3c.github.io/webcodecs/#video-encoder-config",
+          "title": "VideoEncoderConfig",
+          "number": "7.8"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-videoencoderconfig-displayheight",
+        "href": "https://w3c.github.io/webcodecs/#dom-videoencoderconfig-displayheight",
+        "linkingText": [
+          "displayHeight"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "VideoEncoderConfig"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "video-encoder-config",
+          "href": "https://w3c.github.io/webcodecs/#video-encoder-config",
+          "title": "VideoEncoderConfig",
+          "number": "7.8"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-videoencoderconfig-bitrate",
+        "href": "https://w3c.github.io/webcodecs/#dom-videoencoderconfig-bitrate",
+        "linkingText": [
+          "bitrate"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "VideoEncoderConfig"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "video-encoder-config",
+          "href": "https://w3c.github.io/webcodecs/#video-encoder-config",
+          "title": "VideoEncoderConfig",
+          "number": "7.8"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-videoencoderconfig-framerate",
+        "href": "https://w3c.github.io/webcodecs/#dom-videoencoderconfig-framerate",
+        "linkingText": [
+          "framerate"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "VideoEncoderConfig"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "video-encoder-config",
+          "href": "https://w3c.github.io/webcodecs/#video-encoder-config",
+          "title": "VideoEncoderConfig",
+          "number": "7.8"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-videoencoderconfig-hardwareacceleration",
+        "href": "https://w3c.github.io/webcodecs/#dom-videoencoderconfig-hardwareacceleration",
+        "linkingText": [
+          "hardwareAcceleration"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "VideoEncoderConfig"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "video-encoder-config",
+          "href": "https://w3c.github.io/webcodecs/#video-encoder-config",
+          "title": "VideoEncoderConfig",
+          "number": "7.8"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-videoencoderconfig-alpha",
+        "href": "https://w3c.github.io/webcodecs/#dom-videoencoderconfig-alpha",
+        "linkingText": [
+          "alpha"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "VideoEncoderConfig"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "video-encoder-config",
+          "href": "https://w3c.github.io/webcodecs/#video-encoder-config",
+          "title": "VideoEncoderConfig",
+          "number": "7.8"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-videoencoderconfig-scalabilitymode",
+        "href": "https://w3c.github.io/webcodecs/#dom-videoencoderconfig-scalabilitymode",
+        "linkingText": [
+          "scalabilityMode"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "VideoEncoderConfig"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "video-encoder-config",
+          "href": "https://w3c.github.io/webcodecs/#video-encoder-config",
+          "title": "VideoEncoderConfig",
+          "number": "7.8"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-videoencoderconfig-bitratemode",
+        "href": "https://w3c.github.io/webcodecs/#dom-videoencoderconfig-bitratemode",
+        "linkingText": [
+          "bitrateMode"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "VideoEncoderConfig"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "video-encoder-config",
+          "href": "https://w3c.github.io/webcodecs/#video-encoder-config",
+          "title": "VideoEncoderConfig",
+          "number": "7.8"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-videoencoderconfig-latencymode",
+        "href": "https://w3c.github.io/webcodecs/#dom-videoencoderconfig-latencymode",
+        "linkingText": [
+          "latencyMode"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "VideoEncoderConfig"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "video-encoder-config",
+          "href": "https://w3c.github.io/webcodecs/#video-encoder-config",
+          "title": "VideoEncoderConfig",
+          "number": "7.8"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

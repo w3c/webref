@@ -1,0 +1,569 @@
+{
+  "spec": {
+    "title": "Web Background Synchronization",
+    "url": "https://wicg.github.io/background-sync/spec/"
+  },
+  "dfns": [
+    {
+      "id": "in-the-background",
+      "href": "https://wicg.github.io/background-sync/spec/#in-the-background",
+      "linkingText": [
+        "in the background"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "concepts",
+        "href": "https://wicg.github.io/background-sync/spec/#concepts",
+        "title": "Concepts",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "online",
+      "href": "https://wicg.github.io/background-sync/spec/#online",
+      "linkingText": [
+        "online"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "concepts",
+        "href": "https://wicg.github.io/background-sync/spec/#concepts",
+        "title": "Concepts",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "list-of-sync-registrations",
+      "href": "https://wicg.github.io/background-sync/spec/#list-of-sync-registrations",
+      "linkingText": [
+        "list of sync registrations"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "constructs",
+        "href": "https://wicg.github.io/background-sync/spec/#constructs",
+        "title": "Constructs",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "sync-registration",
+      "href": "https://wicg.github.io/background-sync/spec/#sync-registration",
+      "linkingText": [
+        "sync registration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "constructs",
+        "href": "https://wicg.github.io/background-sync/spec/#constructs",
+        "title": "Constructs",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "tag",
+      "href": "https://wicg.github.io/background-sync/spec/#tag",
+      "linkingText": [
+        "tag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "constructs",
+        "href": "https://wicg.github.io/background-sync/spec/#constructs",
+        "title": "Constructs",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "registration-state",
+      "href": "https://wicg.github.io/background-sync/spec/#registration-state",
+      "linkingText": [
+        "registration state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "constructs",
+        "href": "https://wicg.github.io/background-sync/spec/#constructs",
+        "title": "Constructs",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "pending",
+      "href": "https://wicg.github.io/background-sync/spec/#pending",
+      "linkingText": [
+        "pending"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "constructs",
+        "href": "https://wicg.github.io/background-sync/spec/#constructs",
+        "title": "Constructs",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "waiting",
+      "href": "https://wicg.github.io/background-sync/spec/#waiting",
+      "linkingText": [
+        "waiting"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "constructs",
+        "href": "https://wicg.github.io/background-sync/spec/#constructs",
+        "title": "Constructs",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "firing",
+      "href": "https://wicg.github.io/background-sync/spec/#firing",
+      "linkingText": [
+        "firing"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "constructs",
+        "href": "https://wicg.github.io/background-sync/spec/#constructs",
+        "title": "Constructs",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "reregisteredwhilefiring",
+      "href": "https://wicg.github.io/background-sync/spec/#reregisteredwhilefiring",
+      "linkingText": [
+        "reregisteredWhileFiring"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "constructs",
+        "href": "https://wicg.github.io/background-sync/spec/#constructs",
+        "title": "Constructs",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-serviceworkerregistration-sync",
+      "href": "https://wicg.github.io/background-sync/spec/#dom-serviceworkerregistration-sync",
+      "linkingText": [
+        "sync"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ServiceWorkerRegistration"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "service-worker-registration-extensions",
+        "href": "https://wicg.github.io/background-sync/spec/#service-worker-registration-extensions",
+        "title": "Extensions to the ServiceWorkerRegistration interface",
+        "number": "6.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-syncmanager-sync",
+      "href": "https://wicg.github.io/background-sync/spec/#dom-syncmanager-sync",
+      "linkingText": [
+        "sync"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SyncManager"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "service-worker-registration-extensions",
+        "href": "https://wicg.github.io/background-sync/spec/#service-worker-registration-extensions",
+        "title": "Extensions to the ServiceWorkerRegistration interface",
+        "number": "6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "syncmanager",
+      "href": "https://wicg.github.io/background-sync/spec/#syncmanager",
+      "linkingText": [
+        "SyncManager"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sync-manager-interface",
+        "href": "https://wicg.github.io/background-sync/spec/#sync-manager-interface",
+        "title": "SyncManager interface",
+        "number": "6.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-syncmanager-register-tag-tag",
+      "href": "https://wicg.github.io/background-sync/spec/#dom-syncmanager-register-tag-tag",
+      "linkingText": [
+        "tag"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "SyncManager/register(tag)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sync-manager-interface",
+        "href": "https://wicg.github.io/background-sync/spec/#sync-manager-interface",
+        "title": "SyncManager interface",
+        "number": "6.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-syncmanager-register",
+      "href": "https://wicg.github.io/background-sync/spec/#dom-syncmanager-register",
+      "linkingText": [
+        "register(tag)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "SyncManager"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sync-manager-interface",
+        "href": "https://wicg.github.io/background-sync/spec/#sync-manager-interface",
+        "title": "SyncManager interface",
+        "number": "6.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-syncmanager-gettags",
+      "href": "https://wicg.github.io/background-sync/spec/#dom-syncmanager-gettags",
+      "linkingText": [
+        "getTags()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "SyncManager"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sync-manager-interface",
+        "href": "https://wicg.github.io/background-sync/spec/#sync-manager-interface",
+        "title": "SyncManager interface",
+        "number": "6.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-serviceworkerglobalscope-onsync",
+      "href": "https://wicg.github.io/background-sync/spec/#dom-serviceworkerglobalscope-onsync",
+      "linkingText": [
+        "onsync"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ServiceWorkerGlobalScope"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sync-event",
+        "href": "https://wicg.github.io/background-sync/spec/#sync-event",
+        "title": "The sync event",
+        "number": "6.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "syncevent",
+      "href": "https://wicg.github.io/background-sync/spec/#syncevent",
+      "linkingText": [
+        "SyncEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sync-event",
+        "href": "https://wicg.github.io/background-sync/spec/#sync-event",
+        "title": "The sync event",
+        "number": "6.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-syncevent-syncevent",
+      "href": "https://wicg.github.io/background-sync/spec/#dom-syncevent-syncevent",
+      "linkingText": [
+        "SyncEvent(type, init)",
+        "constructor(type, init)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "SyncEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sync-event",
+        "href": "https://wicg.github.io/background-sync/spec/#sync-event",
+        "title": "The sync event",
+        "number": "6.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-syncevent-syncevent-type-init-type",
+      "href": "https://wicg.github.io/background-sync/spec/#dom-syncevent-syncevent-type-init-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "SyncEvent/SyncEvent(type, init)",
+        "SyncEvent/constructor(type, init)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sync-event",
+        "href": "https://wicg.github.io/background-sync/spec/#sync-event",
+        "title": "The sync event",
+        "number": "6.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-syncevent-syncevent-type-init-init",
+      "href": "https://wicg.github.io/background-sync/spec/#dom-syncevent-syncevent-type-init-init",
+      "linkingText": [
+        "init"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "SyncEvent/SyncEvent(type, init)",
+        "SyncEvent/constructor(type, init)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sync-event",
+        "href": "https://wicg.github.io/background-sync/spec/#sync-event",
+        "title": "The sync event",
+        "number": "6.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-syncevent-tag",
+      "href": "https://wicg.github.io/background-sync/spec/#dom-syncevent-tag",
+      "linkingText": [
+        "tag"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SyncEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sync-event",
+        "href": "https://wicg.github.io/background-sync/spec/#sync-event",
+        "title": "The sync event",
+        "number": "6.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-syncevent-lastchance",
+      "href": "https://wicg.github.io/background-sync/spec/#dom-syncevent-lastchance",
+      "linkingText": [
+        "lastChance"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SyncEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sync-event",
+        "href": "https://wicg.github.io/background-sync/spec/#sync-event",
+        "title": "The sync event",
+        "number": "6.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-synceventinit",
+      "href": "https://wicg.github.io/background-sync/spec/#dictdef-synceventinit",
+      "linkingText": [
+        "SyncEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sync-event",
+        "href": "https://wicg.github.io/background-sync/spec/#sync-event",
+        "title": "The sync event",
+        "number": "6.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-synceventinit-tag",
+      "href": "https://wicg.github.io/background-sync/spec/#dom-synceventinit-tag",
+      "linkingText": [
+        "tag"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SyncEventInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sync-event",
+        "href": "https://wicg.github.io/background-sync/spec/#sync-event",
+        "title": "The sync event",
+        "number": "6.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-synceventinit-lastchance",
+      "href": "https://wicg.github.io/background-sync/spec/#dom-synceventinit-lastchance",
+      "linkingText": [
+        "lastChance"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SyncEventInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sync-event",
+        "href": "https://wicg.github.io/background-sync/spec/#sync-event",
+        "title": "The sync event",
+        "number": "6.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "fire-a-sync-event",
+      "href": "https://wicg.github.io/background-sync/spec/#fire-a-sync-event",
+      "linkingText": [
+        "fire a sync event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sync-event",
+        "href": "https://wicg.github.io/background-sync/spec/#sync-event",
+        "title": "The sync event",
+        "number": "6.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "will-retry",
+      "href": "https://wicg.github.io/background-sync/spec/#will-retry",
+      "linkingText": [
+        "will retry"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sync-event",
+        "href": "https://wicg.github.io/background-sync/spec/#sync-event",
+        "title": "The sync event",
+        "number": "6.3"
+      },
+      "definedIn": "prose"
+    }
+  ]
+}

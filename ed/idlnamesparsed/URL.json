@@ -1,0 +1,387 @@
+{
+  "name": "URL",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "URL Standard",
+      "url": "https://url.spec.whatwg.org/"
+    },
+    "fragment": "[Exposed=*,\n LegacyWindowAlias=webkitURL]\ninterface URL {\n  constructor(USVString url, optional USVString base);\n\n  stringifier attribute USVString href;\n  readonly attribute USVString origin;\n           attribute USVString protocol;\n           attribute USVString username;\n           attribute USVString password;\n           attribute USVString host;\n           attribute USVString hostname;\n           attribute USVString port;\n           attribute USVString pathname;\n           attribute USVString search;\n  [SameObject] readonly attribute URLSearchParams searchParams;\n           attribute USVString hash;\n\n  USVString toJSON();\n};",
+    "href": "https://url.spec.whatwg.org/#url"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "File API",
+        "url": "https://www.w3.org/TR/FileAPI/"
+      },
+      "fragment": "[Exposed=(Window,DedicatedWorker,SharedWorker)]\npartial interface URL {\n  static DOMString createObjectURL((Blob or MediaSource) obj);\n  static undefined revokeObjectURL(DOMString url);\n};"
+    }
+  ],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://url.spec.whatwg.org/": [
+      {
+        "id": "url",
+        "href": "https://url.spec.whatwg.org/#url",
+        "linkingText": [
+          "URL"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "url-class",
+          "href": "https://url.spec.whatwg.org/#url-class",
+          "title": "URL class",
+          "number": "6.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-url-url",
+        "href": "https://url.spec.whatwg.org/#dom-url-url",
+        "linkingText": [
+          "URL(url, base)",
+          "constructor(url, base)",
+          "URL(url)",
+          "constructor(url)"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "URL"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "url-class",
+          "href": "https://url.spec.whatwg.org/#url-class",
+          "title": "URL class",
+          "number": "6.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-url-href",
+        "href": "https://url.spec.whatwg.org/#dom-url-href",
+        "linkingText": [
+          "href"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "URL"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "url-class",
+          "href": "https://url.spec.whatwg.org/#url-class",
+          "title": "URL class",
+          "number": "6.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-url-origin",
+        "href": "https://url.spec.whatwg.org/#dom-url-origin",
+        "linkingText": [
+          "origin"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "URL"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "url-class",
+          "href": "https://url.spec.whatwg.org/#url-class",
+          "title": "URL class",
+          "number": "6.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-url-protocol",
+        "href": "https://url.spec.whatwg.org/#dom-url-protocol",
+        "linkingText": [
+          "protocol"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "URL"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "url-class",
+          "href": "https://url.spec.whatwg.org/#url-class",
+          "title": "URL class",
+          "number": "6.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-url-username",
+        "href": "https://url.spec.whatwg.org/#dom-url-username",
+        "linkingText": [
+          "username"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "URL"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "url-class",
+          "href": "https://url.spec.whatwg.org/#url-class",
+          "title": "URL class",
+          "number": "6.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-url-password",
+        "href": "https://url.spec.whatwg.org/#dom-url-password",
+        "linkingText": [
+          "password"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "URL"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "url-class",
+          "href": "https://url.spec.whatwg.org/#url-class",
+          "title": "URL class",
+          "number": "6.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-url-host",
+        "href": "https://url.spec.whatwg.org/#dom-url-host",
+        "linkingText": [
+          "host"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "URL"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "url-class",
+          "href": "https://url.spec.whatwg.org/#url-class",
+          "title": "URL class",
+          "number": "6.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-url-hostname",
+        "href": "https://url.spec.whatwg.org/#dom-url-hostname",
+        "linkingText": [
+          "hostname"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "URL"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "url-class",
+          "href": "https://url.spec.whatwg.org/#url-class",
+          "title": "URL class",
+          "number": "6.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-url-port",
+        "href": "https://url.spec.whatwg.org/#dom-url-port",
+        "linkingText": [
+          "port"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "URL"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "url-class",
+          "href": "https://url.spec.whatwg.org/#url-class",
+          "title": "URL class",
+          "number": "6.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-url-pathname",
+        "href": "https://url.spec.whatwg.org/#dom-url-pathname",
+        "linkingText": [
+          "pathname"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "URL"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "url-class",
+          "href": "https://url.spec.whatwg.org/#url-class",
+          "title": "URL class",
+          "number": "6.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-url-search",
+        "href": "https://url.spec.whatwg.org/#dom-url-search",
+        "linkingText": [
+          "search"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "URL"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "url-class",
+          "href": "https://url.spec.whatwg.org/#url-class",
+          "title": "URL class",
+          "number": "6.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-url-searchparams",
+        "href": "https://url.spec.whatwg.org/#dom-url-searchparams",
+        "linkingText": [
+          "searchParams"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "URL"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "url-class",
+          "href": "https://url.spec.whatwg.org/#url-class",
+          "title": "URL class",
+          "number": "6.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-url-hash",
+        "href": "https://url.spec.whatwg.org/#dom-url-hash",
+        "linkingText": [
+          "hash"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "URL"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "url-class",
+          "href": "https://url.spec.whatwg.org/#url-class",
+          "title": "URL class",
+          "number": "6.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-url-tojson",
+        "href": "https://url.spec.whatwg.org/#dom-url-tojson",
+        "linkingText": [
+          "toJSON()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "URL"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "url-class",
+          "href": "https://url.spec.whatwg.org/#url-class",
+          "title": "URL class",
+          "number": "6.1"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://www.w3.org/TR/FileAPI/": [
+      {
+        "id": "dfn-createObjectURL",
+        "href": "https://w3c.github.io/FileAPI/#dfn-createObjectURL",
+        "linkingText": [
+          "createObjectURL(obj)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "URL"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "creating-revoking",
+          "href": "https://w3c.github.io/FileAPI/#creating-revoking",
+          "title": "Creating and Revoking a blob URL",
+          "number": "8.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dfn-revokeObjectURL",
+        "href": "https://w3c.github.io/FileAPI/#dfn-revokeObjectURL",
+        "linkingText": [
+          "revokeObjectURL(url)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "URL"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "creating-revoking",
+          "href": "https://w3c.github.io/FileAPI/#creating-revoking",
+          "title": "Creating and Revoking a blob URL",
+          "number": "8.4"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "name": "Storage",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "HTML Standard",
+      "url": "https://html.spec.whatwg.org/multipage/"
+    },
+    "fragment": "[Exposed=Window]\ninterface Storage {\n  readonly attribute unsigned long length;\n  DOMString? key(unsigned long index);\n  getter DOMString? getItem(DOMString key);\n  setter undefined setItem(DOMString key, DOMString value);\n  deleter undefined removeItem(DOMString key);\n  undefined clear();\n};",
+    "href": "https://html.spec.whatwg.org/multipage/webstorage.html#storage-2"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://html.spec.whatwg.org/multipage/": [
+      {
+        "id": "storage-2",
+        "href": "https://html.spec.whatwg.org/multipage/webstorage.html#storage-2",
+        "linkingText": [
+          "Storage"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-storage-interface",
+          "href": "https://html.spec.whatwg.org/multipage/webstorage.html#the-storage-interface",
+          "title": "The Storage interface",
+          "number": "12.2.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-storage-length",
+        "href": "https://html.spec.whatwg.org/multipage/webstorage.html#dom-storage-length",
+        "linkingText": [
+          "length"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Storage"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-storage-interface",
+          "href": "https://html.spec.whatwg.org/multipage/webstorage.html#the-storage-interface",
+          "title": "The Storage interface",
+          "number": "12.2.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-storage-key",
+        "href": "https://html.spec.whatwg.org/multipage/webstorage.html#dom-storage-key",
+        "linkingText": [
+          "key(index)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Storage"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-storage-interface",
+          "href": "https://html.spec.whatwg.org/multipage/webstorage.html#the-storage-interface",
+          "title": "The Storage interface",
+          "number": "12.2.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-storage-getitem",
+        "href": "https://html.spec.whatwg.org/multipage/webstorage.html#dom-storage-getitem",
+        "linkingText": [
+          "getItem(key)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Storage"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-storage-interface",
+          "href": "https://html.spec.whatwg.org/multipage/webstorage.html#the-storage-interface",
+          "title": "The Storage interface",
+          "number": "12.2.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-storage-setitem",
+        "href": "https://html.spec.whatwg.org/multipage/webstorage.html#dom-storage-setitem",
+        "linkingText": [
+          "setItem(key, value)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Storage"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-storage-interface",
+          "href": "https://html.spec.whatwg.org/multipage/webstorage.html#the-storage-interface",
+          "title": "The Storage interface",
+          "number": "12.2.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-storage-removeitem",
+        "href": "https://html.spec.whatwg.org/multipage/webstorage.html#dom-storage-removeitem",
+        "linkingText": [
+          "removeItem(key)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Storage"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-storage-interface",
+          "href": "https://html.spec.whatwg.org/multipage/webstorage.html#the-storage-interface",
+          "title": "The Storage interface",
+          "number": "12.2.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-storage-clear",
+        "href": "https://html.spec.whatwg.org/multipage/webstorage.html#dom-storage-clear",
+        "linkingText": [
+          "clear()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Storage"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-storage-interface",
+          "href": "https://html.spec.whatwg.org/multipage/webstorage.html#the-storage-interface",
+          "title": "The Storage interface",
+          "number": "12.2.1"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

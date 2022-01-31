@@ -1,0 +1,61 @@
+{
+  "name": "XPathExpression",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "DOM Standard",
+      "url": "https://dom.spec.whatwg.org/"
+    },
+    "fragment": "[Exposed=Window]\ninterface XPathExpression {\n  // XPathResult.ANY_TYPE = 0\n  XPathResult evaluate(Node contextNode, optional unsigned short type = 0, optional XPathResult? result = null);\n};",
+    "href": "https://dom.spec.whatwg.org/#xpathexpression"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "xpathexpression",
+        "href": "https://dom.spec.whatwg.org/#xpathexpression",
+        "linkingText": [
+          "XPathExpression"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-xpathexpression",
+          "href": "https://dom.spec.whatwg.org/#interface-xpathexpression",
+          "title": "Interface XPathExpression",
+          "number": "8.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-xpathexpression-evaluate",
+        "href": "https://dom.spec.whatwg.org/#dom-xpathexpression-evaluate",
+        "linkingText": [
+          "evaluate(contextNode, type, result)",
+          "evaluate(contextNode, type)",
+          "evaluate(contextNode)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "XPathExpression"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-xpathexpression",
+          "href": "https://dom.spec.whatwg.org/#interface-xpathexpression",
+          "title": "Interface XPathExpression",
+          "number": "8.2"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

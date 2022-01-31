@@ -1,0 +1,80 @@
+{
+  "name": "ModuleExportDescriptor",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "WebAssembly JavaScript Interface",
+      "url": "https://www.w3.org/TR/wasm-js-api-1/"
+    },
+    "fragment": "dictionary ModuleExportDescriptor {\n  required USVString name;\n  required ImportExportKind kind;\n  // Note: Other fields such as signature may be added in the future.\n};",
+    "href": "https://webassembly.github.io/spec/js-api/#dictdef-moduleexportdescriptor"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/wasm-js-api-1/": [
+      {
+        "id": "dictdef-moduleexportdescriptor",
+        "href": "https://webassembly.github.io/spec/js-api/#dictdef-moduleexportdescriptor",
+        "linkingText": [
+          "ModuleExportDescriptor"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "modules",
+          "href": "https://webassembly.github.io/spec/js-api/#modules",
+          "title": "Modules",
+          "number": "4.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-moduleexportdescriptor-name",
+        "href": "https://webassembly.github.io/spec/js-api/#dom-moduleexportdescriptor-name",
+        "linkingText": [
+          "name"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "ModuleExportDescriptor"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "modules",
+          "href": "https://webassembly.github.io/spec/js-api/#modules",
+          "title": "Modules",
+          "number": "4.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-moduleexportdescriptor-kind",
+        "href": "https://webassembly.github.io/spec/js-api/#dom-moduleexportdescriptor-kind",
+        "linkingText": [
+          "kind"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "ModuleExportDescriptor"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "modules",
+          "href": "https://webassembly.github.io/spec/js-api/#modules",
+          "title": "Modules",
+          "number": "4.1"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

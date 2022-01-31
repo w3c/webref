@@ -1,0 +1,367 @@
+{
+  "name": "MediaDevices",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Media Capture and Streams",
+      "url": "https://www.w3.org/TR/mediacapture-streams/"
+    },
+    "fragment": "[Exposed=Window, SecureContext]\ninterface MediaDevices : EventTarget {\n  attribute EventHandler ondevicechange;\n  Promise<sequence<MediaDeviceInfo>> enumerateDevices();\n};",
+    "href": "https://w3c.github.io/mediacapture-main/#dom-mediadevices"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "Region Capture",
+        "url": "https://w3c.github.io/mediacapture-region/"
+      },
+      "fragment": "partial interface MediaDevices {\n  Promise<CropTarget>\n  produceCropTarget(HTMLElement element);\n};"
+    },
+    {
+      "spec": {
+        "title": "Audio Output Devices API",
+        "url": "https://www.w3.org/TR/audio-output/"
+      },
+      "fragment": "partial interface MediaDevices {\n  Promise<MediaDeviceInfo> selectAudioOutput(optional AudioOutputOptions options = {});\n};"
+    },
+    {
+      "spec": {
+        "title": "Media Capture and Streams",
+        "url": "https://www.w3.org/TR/mediacapture-streams/"
+      },
+      "fragment": "partial interface MediaDevices {\n  MediaTrackSupportedConstraints getSupportedConstraints();\n  Promise<MediaStream> getUserMedia(optional MediaStreamConstraints constraints = {});\n};"
+    },
+    {
+      "spec": {
+        "title": "Screen Capture",
+        "url": "https://www.w3.org/TR/screen-capture/"
+      },
+      "fragment": "partial interface MediaDevices {\n  Promise<MediaStream> getDisplayMedia(optional DisplayMediaStreamConstraints constraints = {});\n};"
+    }
+  ],
+  "inheritance": {
+    "name": "EventTarget",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=*]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+      "href": "https://dom.spec.whatwg.org/#eventtarget"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/mediacapture-streams/": [
+      {
+        "id": "dom-mediadevices",
+        "href": "https://w3c.github.io/mediacapture-main/#dom-mediadevices",
+        "linkingText": [
+          "MediaDevices"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "mediadevices",
+          "href": "https://w3c.github.io/mediacapture-main/#mediadevices",
+          "title": "MediaDevices",
+          "number": "9.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-mediadevices-ondevicechange",
+        "href": "https://w3c.github.io/mediacapture-main/#dom-mediadevices-ondevicechange",
+        "linkingText": [
+          "ondevicechange"
+        ],
+        "localLinkingText": [
+          "MediaDevices.ondevicechange"
+        ],
+        "type": "attribute",
+        "for": [
+          "MediaDevices"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-4",
+          "href": "https://w3c.github.io/mediacapture-main/#attributes-4",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediadevices-enumeratedevices",
+        "href": "https://w3c.github.io/mediacapture-main/#dom-mediadevices-enumeratedevices",
+        "linkingText": [
+          "enumerateDevices()"
+        ],
+        "localLinkingText": [
+          "MediaDevices.enumerateDevices",
+          "MediaDevices.enumerateDevices()",
+          "enumerateDevices"
+        ],
+        "type": "method",
+        "for": [
+          "MediaDevices"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "methods-1",
+          "href": "https://w3c.github.io/mediacapture-main/#methods-1",
+          "title": "Methods"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediadevices-getsupportedconstraints",
+        "href": "https://w3c.github.io/mediacapture-main/#dom-mediadevices-getsupportedconstraints",
+        "linkingText": [
+          "getSupportedConstraints()"
+        ],
+        "localLinkingText": [
+          "MediaDevices.getSupportedConstraints",
+          "MediaDevices.getSupportedConstraints()",
+          "getSupportedConstraints"
+        ],
+        "type": "method",
+        "for": [
+          "MediaDevices"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "methods-5",
+          "href": "https://w3c.github.io/mediacapture-main/#methods-5",
+          "title": "Methods"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediadevices-getusermedia",
+        "href": "https://w3c.github.io/mediacapture-main/#dom-mediadevices-getusermedia",
+        "linkingText": [
+          "getUserMedia()",
+          "getUserMedia(constraints)"
+        ],
+        "localLinkingText": [
+          "MediaDevices.getUserMedia",
+          "MediaDevices.getUserMedia()",
+          "getUserMedia"
+        ],
+        "type": "method",
+        "for": [
+          "MediaDevices"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "methods-5",
+          "href": "https://w3c.github.io/mediacapture-main/#methods-5",
+          "title": "Methods"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://w3c.github.io/mediacapture-region/": [
+      {
+        "id": "dom-mediadevices-producecroptarget",
+        "href": "https://w3c.github.io/mediacapture-region/#dom-mediadevices-producecroptarget",
+        "linkingText": [
+          "produceCropTarget()",
+          "produceCropTarget(element)"
+        ],
+        "localLinkingText": [
+          "MediaDevices.produceCropTarget",
+          "MediaDevices.produceCropTarget()",
+          "produceCropTarget"
+        ],
+        "type": "method",
+        "for": [
+          "MediaDevices"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "producecroptarget-method",
+          "href": "https://w3c.github.io/mediacapture-region/#producecroptarget-method",
+          "title": "MediaDevices.produceCropTarget",
+          "number": "6.3"
+        },
+        "definedIn": "dt"
+      }
+    ],
+    "https://www.w3.org/TR/audio-output/": [
+      {
+        "id": "dom-mediadevices-selectaudiooutput",
+        "href": "https://w3c.github.io/mediacapture-output/#dom-mediadevices-selectaudiooutput",
+        "linkingText": [
+          "selectAudioOutput()",
+          "selectAudioOutput(options)"
+        ],
+        "localLinkingText": [
+          "MediaDevices.selectAudioOutput",
+          "MediaDevices.selectAudioOutput()",
+          "selectAudioOutput"
+        ],
+        "type": "method",
+        "for": [
+          "MediaDevices"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "methods-0",
+          "href": "https://w3c.github.io/mediacapture-output/#methods-0",
+          "title": "Methods"
+        },
+        "definedIn": "dt"
+      }
+    ],
+    "https://www.w3.org/TR/screen-capture/": [
+      {
+        "id": "dom-mediadevices-getdisplaymedia",
+        "href": "https://w3c.github.io/mediacapture-screen-share/#dom-mediadevices-getdisplaymedia",
+        "linkingText": [
+          "getDisplayMedia()",
+          "getDisplayMedia(constraints)"
+        ],
+        "localLinkingText": [
+          "MediaDevices.getDisplayMedia",
+          "MediaDevices.getDisplayMedia()",
+          "getDisplayMedia"
+        ],
+        "type": "method",
+        "for": [
+          "MediaDevices"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "mediadevices-additions",
+          "href": "https://w3c.github.io/mediacapture-screen-share/#mediadevices-additions",
+          "title": "MediaDevices Additions",
+          "number": "5.1"
+        },
+        "definedIn": "dt"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "eventtarget",
+        "href": "https://dom.spec.whatwg.org/#eventtarget",
+        "linkingText": [
+          "EventTarget"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventtarget-eventtarget",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-eventtarget",
+        "linkingText": [
+          "EventTarget()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-addeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-addeventlistener",
+        "linkingText": [
+          "addEventListener(type, callback, options)",
+          "addEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-removeeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-removeeventlistener",
+        "linkingText": [
+          "removeEventListener(type, callback, options)",
+          "removeEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-dispatchevent",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-dispatchevent",
+        "linkingText": [
+          "dispatchEvent(event)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

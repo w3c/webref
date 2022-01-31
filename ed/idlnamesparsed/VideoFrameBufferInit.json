@@ -1,0 +1,248 @@
+{
+  "name": "VideoFrameBufferInit",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "WebCodecs",
+      "url": "https://www.w3.org/TR/webcodecs/"
+    },
+    "fragment": "dictionary VideoFrameBufferInit {\n  required VideoPixelFormat format;\n  required [EnforceRange] unsigned long codedWidth;\n  required [EnforceRange] unsigned long codedHeight;\n  required [EnforceRange] long long timestamp;  // microseconds\n  [EnforceRange] unsigned long long duration;  // microseconds\n\n  // Default layout is tightly-packed.\n  sequence<PlaneLayout> layout;\n\n  // Default visible rect is coded size positioned at (0,0)\n  DOMRectInit visibleRect;\n\n  // Default display dimensions match visibleRect.\n  [EnforceRange] unsigned long displayWidth;\n  [EnforceRange] unsigned long displayHeight;\n\n  VideoColorSpaceInit colorSpace;\n};",
+    "href": "https://w3c.github.io/webcodecs/#dictdef-videoframebufferinit"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webcodecs/": [
+      {
+        "id": "dictdef-videoframebufferinit",
+        "href": "https://w3c.github.io/webcodecs/#dictdef-videoframebufferinit",
+        "linkingText": [
+          "VideoFrameBufferInit"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "videoframe-interface",
+          "href": "https://w3c.github.io/webcodecs/#videoframe-interface",
+          "title": "VideoFrame Interface",
+          "number": "9.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-videoframebufferinit-format",
+        "href": "https://w3c.github.io/webcodecs/#dom-videoframebufferinit-format",
+        "linkingText": [
+          "format"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "VideoFrameBufferInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "videoframe-interface",
+          "href": "https://w3c.github.io/webcodecs/#videoframe-interface",
+          "title": "VideoFrame Interface",
+          "number": "9.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-videoframebufferinit-codedwidth",
+        "href": "https://w3c.github.io/webcodecs/#dom-videoframebufferinit-codedwidth",
+        "linkingText": [
+          "codedWidth"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "VideoFrameBufferInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "videoframe-interface",
+          "href": "https://w3c.github.io/webcodecs/#videoframe-interface",
+          "title": "VideoFrame Interface",
+          "number": "9.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-videoframebufferinit-codedheight",
+        "href": "https://w3c.github.io/webcodecs/#dom-videoframebufferinit-codedheight",
+        "linkingText": [
+          "codedHeight"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "VideoFrameBufferInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "videoframe-interface",
+          "href": "https://w3c.github.io/webcodecs/#videoframe-interface",
+          "title": "VideoFrame Interface",
+          "number": "9.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-videoframebufferinit-timestamp",
+        "href": "https://w3c.github.io/webcodecs/#dom-videoframebufferinit-timestamp",
+        "linkingText": [
+          "timestamp"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "VideoFrameBufferInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "videoframe-interface",
+          "href": "https://w3c.github.io/webcodecs/#videoframe-interface",
+          "title": "VideoFrame Interface",
+          "number": "9.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-videoframebufferinit-duration",
+        "href": "https://w3c.github.io/webcodecs/#dom-videoframebufferinit-duration",
+        "linkingText": [
+          "duration"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "VideoFrameBufferInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "videoframe-interface",
+          "href": "https://w3c.github.io/webcodecs/#videoframe-interface",
+          "title": "VideoFrame Interface",
+          "number": "9.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-videoframebufferinit-layout",
+        "href": "https://w3c.github.io/webcodecs/#dom-videoframebufferinit-layout",
+        "linkingText": [
+          "layout"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "VideoFrameBufferInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "videoframe-interface",
+          "href": "https://w3c.github.io/webcodecs/#videoframe-interface",
+          "title": "VideoFrame Interface",
+          "number": "9.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-videoframebufferinit-visiblerect",
+        "href": "https://w3c.github.io/webcodecs/#dom-videoframebufferinit-visiblerect",
+        "linkingText": [
+          "visibleRect"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "VideoFrameBufferInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "videoframe-interface",
+          "href": "https://w3c.github.io/webcodecs/#videoframe-interface",
+          "title": "VideoFrame Interface",
+          "number": "9.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-videoframebufferinit-displaywidth",
+        "href": "https://w3c.github.io/webcodecs/#dom-videoframebufferinit-displaywidth",
+        "linkingText": [
+          "displayWidth"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "VideoFrameBufferInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "videoframe-interface",
+          "href": "https://w3c.github.io/webcodecs/#videoframe-interface",
+          "title": "VideoFrame Interface",
+          "number": "9.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-videoframebufferinit-displayheight",
+        "href": "https://w3c.github.io/webcodecs/#dom-videoframebufferinit-displayheight",
+        "linkingText": [
+          "displayHeight"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "VideoFrameBufferInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "videoframe-interface",
+          "href": "https://w3c.github.io/webcodecs/#videoframe-interface",
+          "title": "VideoFrame Interface",
+          "number": "9.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-videoframebufferinit-colorspace",
+        "href": "https://w3c.github.io/webcodecs/#dom-videoframebufferinit-colorspace",
+        "linkingText": [
+          "colorSpace"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "VideoFrameBufferInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "videoframe-interface",
+          "href": "https://w3c.github.io/webcodecs/#videoframe-interface",
+          "title": "VideoFrame Interface",
+          "number": "9.4"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

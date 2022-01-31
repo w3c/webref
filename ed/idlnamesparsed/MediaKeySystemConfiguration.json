@@ -1,0 +1,185 @@
+{
+  "name": "MediaKeySystemConfiguration",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Encrypted Media Extensions",
+      "url": "https://www.w3.org/TR/encrypted-media/"
+    },
+    "fragment": "dictionary MediaKeySystemConfiguration {\n             DOMString                               label = \"\";\n             sequence<DOMString>                     initDataTypes = [];\n             sequence<MediaKeySystemMediaCapability> audioCapabilities = [];\n             sequence<MediaKeySystemMediaCapability> videoCapabilities = [];\n             MediaKeysRequirement                    distinctiveIdentifier = \"optional\";\n             MediaKeysRequirement                    persistentState = \"optional\";\n             sequence<DOMString>                     sessionTypes;\n};",
+    "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysystemconfiguration"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/encrypted-media/": [
+      {
+        "id": "dom-mediakeysystemconfiguration",
+        "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysystemconfiguration",
+        "linkingText": [
+          "MediaKeySystemConfiguration"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "mediakeysystemconfiguration-dictionary",
+          "href": "https://w3c.github.io/encrypted-media/#mediakeysystemconfiguration-dictionary",
+          "title": "MediaKeySystemConfiguration dictionary",
+          "number": "3.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-mediakeysystemconfiguration-label",
+        "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysystemconfiguration-label",
+        "linkingText": [
+          "label"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MediaKeySystemConfiguration"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "mediakeysystemconfiguration-dictionary",
+          "href": "https://w3c.github.io/encrypted-media/#mediakeysystemconfiguration-dictionary",
+          "title": "MediaKeySystemConfiguration dictionary",
+          "number": "3.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediakeysystemconfiguration-initdatatypes",
+        "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysystemconfiguration-initdatatypes",
+        "linkingText": [
+          "initDataTypes"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MediaKeySystemConfiguration"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "mediakeysystemconfiguration-dictionary",
+          "href": "https://w3c.github.io/encrypted-media/#mediakeysystemconfiguration-dictionary",
+          "title": "MediaKeySystemConfiguration dictionary",
+          "number": "3.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediakeysystemconfiguration-audiocapabilities",
+        "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysystemconfiguration-audiocapabilities",
+        "linkingText": [
+          "audioCapabilities"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MediaKeySystemConfiguration"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "mediakeysystemconfiguration-dictionary",
+          "href": "https://w3c.github.io/encrypted-media/#mediakeysystemconfiguration-dictionary",
+          "title": "MediaKeySystemConfiguration dictionary",
+          "number": "3.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediakeysystemconfiguration-videocapabilities",
+        "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysystemconfiguration-videocapabilities",
+        "linkingText": [
+          "videoCapabilities"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MediaKeySystemConfiguration"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "mediakeysystemconfiguration-dictionary",
+          "href": "https://w3c.github.io/encrypted-media/#mediakeysystemconfiguration-dictionary",
+          "title": "MediaKeySystemConfiguration dictionary",
+          "number": "3.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediakeysystemconfiguration-distinctiveidentifier",
+        "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysystemconfiguration-distinctiveidentifier",
+        "linkingText": [
+          "distinctiveIdentifier"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MediaKeySystemConfiguration"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "mediakeysystemconfiguration-dictionary",
+          "href": "https://w3c.github.io/encrypted-media/#mediakeysystemconfiguration-dictionary",
+          "title": "MediaKeySystemConfiguration dictionary",
+          "number": "3.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediakeysystemconfiguration-persistentstate",
+        "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysystemconfiguration-persistentstate",
+        "linkingText": [
+          "persistentState"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MediaKeySystemConfiguration"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "mediakeysystemconfiguration-dictionary",
+          "href": "https://w3c.github.io/encrypted-media/#mediakeysystemconfiguration-dictionary",
+          "title": "MediaKeySystemConfiguration dictionary",
+          "number": "3.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediakeysystemconfiguration-sessiontypes",
+        "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysystemconfiguration-sessiontypes",
+        "linkingText": [
+          "sessionTypes"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MediaKeySystemConfiguration"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "mediakeysystemconfiguration-dictionary",
+          "href": "https://w3c.github.io/encrypted-media/#mediakeysystemconfiguration-dictionary",
+          "title": "MediaKeySystemConfiguration dictionary",
+          "number": "3.3"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

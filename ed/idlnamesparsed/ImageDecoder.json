@@ -1,0 +1,208 @@
+{
+  "name": "ImageDecoder",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebCodecs",
+      "url": "https://www.w3.org/TR/webcodecs/"
+    },
+    "fragment": "[Exposed=(Window,DedicatedWorker), SecureContext]\ninterface ImageDecoder {\n  constructor(ImageDecoderInit init);\n\n  readonly attribute boolean complete;\n  readonly attribute Promise<undefined> completed;\n  readonly attribute ImageTrackList tracks;\n\n  Promise<ImageDecodeResult> decode(optional ImageDecodeOptions options = {});\n  undefined reset();\n  undefined close();\n\n  static Promise<boolean> isTypeSupported(DOMString type);\n};",
+    "href": "https://w3c.github.io/webcodecs/#imagedecoder"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webcodecs/": [
+      {
+        "id": "imagedecoder",
+        "href": "https://w3c.github.io/webcodecs/#imagedecoder",
+        "linkingText": [
+          "ImageDecoder"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "imagedecoder-interface",
+          "href": "https://w3c.github.io/webcodecs/#imagedecoder-interface",
+          "title": "ImageDecoder Interface",
+          "number": "10.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-imagedecoder-imagedecoder",
+        "href": "https://w3c.github.io/webcodecs/#dom-imagedecoder-imagedecoder",
+        "linkingText": [
+          "ImageDecoder(init)",
+          "constructor(init)"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "ImageDecoder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "imagedecoder-constructor",
+          "href": "https://w3c.github.io/webcodecs/#imagedecoder-constructor",
+          "title": "Constructor",
+          "number": "10.2.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-imagedecoder-complete",
+        "href": "https://w3c.github.io/webcodecs/#dom-imagedecoder-complete",
+        "linkingText": [
+          "complete"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "ImageDecoder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "imagedecoder-attributes",
+          "href": "https://w3c.github.io/webcodecs/#imagedecoder-attributes",
+          "title": "Attributes",
+          "number": "10.2.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-imagedecoder-completed",
+        "href": "https://w3c.github.io/webcodecs/#dom-imagedecoder-completed",
+        "linkingText": [
+          "completed"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "ImageDecoder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "imagedecoder-attributes",
+          "href": "https://w3c.github.io/webcodecs/#imagedecoder-attributes",
+          "title": "Attributes",
+          "number": "10.2.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-imagedecoder-tracks",
+        "href": "https://w3c.github.io/webcodecs/#dom-imagedecoder-tracks",
+        "linkingText": [
+          "tracks"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "ImageDecoder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "imagedecoder-attributes",
+          "href": "https://w3c.github.io/webcodecs/#imagedecoder-attributes",
+          "title": "Attributes",
+          "number": "10.2.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-imagedecoder-decode",
+        "href": "https://w3c.github.io/webcodecs/#dom-imagedecoder-decode",
+        "linkingText": [
+          "decode(options)",
+          "decode()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "ImageDecoder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "imagedecoder-methods",
+          "href": "https://w3c.github.io/webcodecs/#imagedecoder-methods",
+          "title": "Methods",
+          "number": "10.2.4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-imagedecoder-reset",
+        "href": "https://w3c.github.io/webcodecs/#dom-imagedecoder-reset",
+        "linkingText": [
+          "reset()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "ImageDecoder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "imagedecoder-methods",
+          "href": "https://w3c.github.io/webcodecs/#imagedecoder-methods",
+          "title": "Methods",
+          "number": "10.2.4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-imagedecoder-close",
+        "href": "https://w3c.github.io/webcodecs/#dom-imagedecoder-close",
+        "linkingText": [
+          "close()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "ImageDecoder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "imagedecoder-methods",
+          "href": "https://w3c.github.io/webcodecs/#imagedecoder-methods",
+          "title": "Methods",
+          "number": "10.2.4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-imagedecoder-istypesupported",
+        "href": "https://w3c.github.io/webcodecs/#dom-imagedecoder-istypesupported",
+        "linkingText": [
+          "isTypeSupported(type)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "ImageDecoder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "imagedecoder-methods",
+          "href": "https://w3c.github.io/webcodecs/#imagedecoder-methods",
+          "title": "Methods",
+          "number": "10.2.4"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

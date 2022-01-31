@@ -1,0 +1,415 @@
+{
+  "name": "MediaKeySession",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Encrypted Media Extensions",
+      "url": "https://www.w3.org/TR/encrypted-media/"
+    },
+    "fragment": "[Exposed=Window, SecureContext] interface MediaKeySession : EventTarget {\n    readonly        attribute DOMString                            sessionId;\n    readonly        attribute unrestricted double                  expiration;\n    readonly        attribute Promise<MediaKeySessionClosedReason> closed;\n    readonly        attribute MediaKeyStatusMap                    keyStatuses;\n                    attribute EventHandler                         onkeystatuseschange;\n                    attribute EventHandler                         onmessage;\n    Promise<undefined>    generateRequest (DOMString initDataType, BufferSource initData);\n    Promise<boolean> load (DOMString sessionId);\n    Promise<undefined>    update (BufferSource response);\n    Promise<undefined>    close ();\n    Promise<undefined>    remove ();\n};",
+    "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysession"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "EventTarget",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=*]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+      "href": "https://dom.spec.whatwg.org/#eventtarget"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/encrypted-media/": [
+      {
+        "id": "dom-mediakeysession",
+        "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysession",
+        "linkingText": [
+          "MediaKeySession"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "mediakeysession-interface",
+          "href": "https://w3c.github.io/encrypted-media/#mediakeysession-interface",
+          "title": "MediaKeySession Interface",
+          "number": "6"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-mediakeysession-sessionid",
+        "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysession-sessionid",
+        "linkingText": [
+          "sessionId"
+        ],
+        "localLinkingText": [
+          "MediaKeySession.sessionId"
+        ],
+        "type": "attribute",
+        "for": [
+          "MediaKeySession"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-0",
+          "href": "https://w3c.github.io/encrypted-media/#attributes-0",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediakeysession-expiration",
+        "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysession-expiration",
+        "linkingText": [
+          "expiration"
+        ],
+        "localLinkingText": [
+          "MediaKeySession.expiration"
+        ],
+        "type": "attribute",
+        "for": [
+          "MediaKeySession"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-0",
+          "href": "https://w3c.github.io/encrypted-media/#attributes-0",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediakeysession-closed",
+        "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysession-closed",
+        "linkingText": [
+          "closed"
+        ],
+        "localLinkingText": [
+          "MediaKeySession.closed"
+        ],
+        "type": "attribute",
+        "for": [
+          "MediaKeySession"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-0",
+          "href": "https://w3c.github.io/encrypted-media/#attributes-0",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediakeysession-keystatuses",
+        "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysession-keystatuses",
+        "linkingText": [
+          "keyStatuses"
+        ],
+        "localLinkingText": [
+          "MediaKeySession.keyStatuses"
+        ],
+        "type": "attribute",
+        "for": [
+          "MediaKeySession"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-0",
+          "href": "https://w3c.github.io/encrypted-media/#attributes-0",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediakeysession-onkeystatuseschange",
+        "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysession-onkeystatuseschange",
+        "linkingText": [
+          "onkeystatuseschange"
+        ],
+        "localLinkingText": [
+          "MediaKeySession.onkeystatuseschange"
+        ],
+        "type": "attribute",
+        "for": [
+          "MediaKeySession"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-0",
+          "href": "https://w3c.github.io/encrypted-media/#attributes-0",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediakeysession-onmessage",
+        "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysession-onmessage",
+        "linkingText": [
+          "onmessage"
+        ],
+        "localLinkingText": [
+          "MediaKeySession.onmessage"
+        ],
+        "type": "attribute",
+        "for": [
+          "MediaKeySession"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-0",
+          "href": "https://w3c.github.io/encrypted-media/#attributes-0",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediakeysession-generaterequest",
+        "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysession-generaterequest",
+        "linkingText": [
+          "generateRequest()",
+          "generateRequest(initDataType, initData)"
+        ],
+        "localLinkingText": [
+          "MediaKeySession.generateRequest",
+          "MediaKeySession.generateRequest()",
+          "generateRequest"
+        ],
+        "type": "method",
+        "for": [
+          "MediaKeySession"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "methods-2",
+          "href": "https://w3c.github.io/encrypted-media/#methods-2",
+          "title": "Methods"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediakeysession-load",
+        "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysession-load",
+        "linkingText": [
+          "load()",
+          "load(sessionId)"
+        ],
+        "localLinkingText": [
+          "MediaKeySession.load",
+          "MediaKeySession.load()",
+          "load"
+        ],
+        "type": "method",
+        "for": [
+          "MediaKeySession"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "methods-2",
+          "href": "https://w3c.github.io/encrypted-media/#methods-2",
+          "title": "Methods"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediakeysession-update",
+        "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysession-update",
+        "linkingText": [
+          "update()",
+          "update(response)"
+        ],
+        "localLinkingText": [
+          "MediaKeySession.update",
+          "MediaKeySession.update()",
+          "update"
+        ],
+        "type": "method",
+        "for": [
+          "MediaKeySession"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "methods-2",
+          "href": "https://w3c.github.io/encrypted-media/#methods-2",
+          "title": "Methods"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediakeysession-close",
+        "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysession-close",
+        "linkingText": [
+          "close()"
+        ],
+        "localLinkingText": [
+          "MediaKeySession.close",
+          "MediaKeySession.close()",
+          "close"
+        ],
+        "type": "method",
+        "for": [
+          "MediaKeySession"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "methods-2",
+          "href": "https://w3c.github.io/encrypted-media/#methods-2",
+          "title": "Methods"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediakeysession-remove",
+        "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysession-remove",
+        "linkingText": [
+          "remove()"
+        ],
+        "localLinkingText": [
+          "MediaKeySession.remove",
+          "MediaKeySession.remove()",
+          "remove"
+        ],
+        "type": "method",
+        "for": [
+          "MediaKeySession"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "methods-2",
+          "href": "https://w3c.github.io/encrypted-media/#methods-2",
+          "title": "Methods"
+        },
+        "definedIn": "dt"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "eventtarget",
+        "href": "https://dom.spec.whatwg.org/#eventtarget",
+        "linkingText": [
+          "EventTarget"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventtarget-eventtarget",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-eventtarget",
+        "linkingText": [
+          "EventTarget()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-addeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-addeventlistener",
+        "linkingText": [
+          "addEventListener(type, callback, options)",
+          "addEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-removeeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-removeeventlistener",
+        "linkingText": [
+          "removeEventListener(type, callback, options)",
+          "removeEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-dispatchevent",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-dispatchevent",
+        "linkingText": [
+          "dispatchEvent(event)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

@@ -1,0 +1,338 @@
+{
+  "name": "CSSHSL",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "CSS Typed OM Level 1",
+      "url": "https://www.w3.org/TR/css-typed-om-1/"
+    },
+    "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]\ninterface CSSHSL : CSSColorValue {\n    constructor(CSSColorAngle h, CSSColorPercent s, CSSColorPercent l, optional CSSColorPercent alpha = 1);\n    attribute CSSColorAngle h;\n    attribute CSSColorPercent s;\n    attribute CSSColorPercent l;\n    attribute CSSColorPercent alpha;\n};",
+    "href": "https://drafts.css-houdini.org/css-typed-om-1/#csshsl"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "CSSColorValue",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "CSS Typed OM Level 1",
+        "url": "https://www.w3.org/TR/css-typed-om-1/"
+      },
+      "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]\ninterface CSSColorValue : CSSStyleValue {\n    readonly attribute CSSKeywordValue colorSpace;\n    CSSColorValue to(CSSKeywordish colorSpace);\n    [Exposed=Window] static (CSSColorValue or CSSStyleValue) parse(USVString cssText);\n};",
+      "href": "https://drafts.css-houdini.org/css-typed-om-1/#csscolorvalue"
+    },
+    "extended": [],
+    "inheritance": {
+      "name": "CSSStyleValue",
+      "type": "interface",
+      "defined": {
+        "spec": {
+          "title": "CSS Typed OM Level 1",
+          "url": "https://www.w3.org/TR/css-typed-om-1/"
+        },
+        "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]\ninterface CSSStyleValue {\n    stringifier;\n    [Exposed=Window] static CSSStyleValue parse(USVString property, USVString cssText);\n    [Exposed=Window] static sequence<CSSStyleValue> parseAll(USVString property, USVString cssText);\n};",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#cssstylevalue"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/css-typed-om-1/": [
+      {
+        "id": "csshsl",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#csshsl",
+        "linkingText": [
+          "CSSHSL"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "colorvalue-objects",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#colorvalue-objects",
+          "title": "CSSColorValue objects",
+          "number": "4.6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-csshsl-csshsl",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-csshsl-csshsl",
+        "linkingText": [
+          "CSSHSL(h, s, l, alpha)",
+          "constructor(h, s, l, alpha)",
+          "CSSHSL(h, s, l)",
+          "constructor(h, s, l)"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "CSSHSL"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "colorvalue-objects",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#colorvalue-objects",
+          "title": "CSSColorValue objects",
+          "number": "4.6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-csshsl-h",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-csshsl-h",
+        "linkingText": [
+          "h"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "CSSHSL"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "colorvalue-objects",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#colorvalue-objects",
+          "title": "CSSColorValue objects",
+          "number": "4.6"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-csshsl-s",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-csshsl-s",
+        "linkingText": [
+          "s"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "CSSHSL"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "colorvalue-objects",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#colorvalue-objects",
+          "title": "CSSColorValue objects",
+          "number": "4.6"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-csshsl-l",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-csshsl-l",
+        "linkingText": [
+          "l"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "CSSHSL"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "colorvalue-objects",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#colorvalue-objects",
+          "title": "CSSColorValue objects",
+          "number": "4.6"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-csshsl-alpha",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-csshsl-alpha",
+        "linkingText": [
+          "alpha"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "CSSHSL"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "colorvalue-objects",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#colorvalue-objects",
+          "title": "CSSColorValue objects",
+          "number": "4.6"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "csscolorvalue",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#csscolorvalue",
+        "linkingText": [
+          "CSSColorValue"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "colorvalue-objects",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#colorvalue-objects",
+          "title": "CSSColorValue objects",
+          "number": "4.6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-csscolorvalue-colorspace",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-csscolorvalue-colorspace",
+        "linkingText": [
+          "colorSpace"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "CSSColorValue"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "colorvalue-objects",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#colorvalue-objects",
+          "title": "CSSColorValue objects",
+          "number": "4.6"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-csscolorvalue-to",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-csscolorvalue-to",
+        "linkingText": [
+          "to(colorSpace)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSSColorValue"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "colorvalue-objects",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#colorvalue-objects",
+          "title": "CSSColorValue objects",
+          "number": "4.6"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-csscolorvalue-parse",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-csscolorvalue-parse",
+        "linkingText": [
+          "parse(cssText)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSSColorValue"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "colorvalue-objects",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#colorvalue-objects",
+          "title": "CSSColorValue objects",
+          "number": "4.6"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "cssstylevalue",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#cssstylevalue",
+        "linkingText": [
+          "CSSStyleValue"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "stylevalue-objects",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#stylevalue-objects",
+          "title": "CSSStyleValue objects",
+          "number": "2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "CSSStyleValue-stringification-behavior",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#CSSStyleValue-stringification-behavior",
+        "linkingText": [
+          "stringification behavior"
+        ],
+        "localLinkingText": [],
+        "type": "dfn",
+        "for": [
+          "CSSStyleValue"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "stylevalue-objects",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#stylevalue-objects",
+          "title": "CSSStyleValue objects",
+          "number": "2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-cssstylevalue-parse",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-cssstylevalue-parse",
+        "linkingText": [
+          "parse(property, cssText)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSSStyleValue"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "stylevalue-objects",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#stylevalue-objects",
+          "title": "CSSStyleValue objects",
+          "number": "2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-cssstylevalue-parseall",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-cssstylevalue-parseall",
+        "linkingText": [
+          "parseAll(property, cssText)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSSStyleValue"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "stylevalue-objects",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#stylevalue-objects",
+          "title": "CSSStyleValue objects",
+          "number": "2"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

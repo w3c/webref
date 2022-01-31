@@ -1,0 +1,178 @@
+{
+  "name": "NDEFReadingEventInit",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Web NFC",
+      "url": "https://w3c.github.io/web-nfc/"
+    },
+    "fragment": "dictionary NDEFReadingEventInit : EventInit {\n  DOMString? serialNumber = \"\";\n  required NDEFMessageInit message;\n};",
+    "href": "https://w3c.github.io/web-nfc/#dom-ndefreadingeventinit"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "EventInit",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "dictionary EventInit {\n  boolean bubbles = false;\n  boolean cancelable = false;\n  boolean composed = false;\n};",
+      "href": "https://dom.spec.whatwg.org/#dictdef-eventinit"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://w3c.github.io/web-nfc/": [
+      {
+        "id": "dom-ndefreadingeventinit",
+        "href": "https://w3c.github.io/web-nfc/#dom-ndefreadingeventinit",
+        "linkingText": [
+          "NDEFReadingEventInit"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-ndefreader-object",
+          "href": "https://w3c.github.io/web-nfc/#the-ndefreader-object",
+          "title": "The NDEFReader object",
+          "number": "9"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-ndefreadingeventinit-serialnumber",
+        "href": "https://w3c.github.io/web-nfc/#dom-ndefreadingeventinit-serialnumber",
+        "linkingText": [
+          "serialNumber"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "NDEFReadingEventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-ndefreader-object",
+          "href": "https://w3c.github.io/web-nfc/#the-ndefreader-object",
+          "title": "The NDEFReader object",
+          "number": "9"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-ndefreadingeventinit-message",
+        "href": "https://w3c.github.io/web-nfc/#dom-ndefreadingeventinit-message",
+        "linkingText": [
+          "message"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "NDEFReadingEventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-ndefreader-object",
+          "href": "https://w3c.github.io/web-nfc/#the-ndefreader-object",
+          "title": "The NDEFReader object",
+          "number": "9"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "dictdef-eventinit",
+        "href": "https://dom.spec.whatwg.org/#dictdef-eventinit",
+        "linkingText": [
+          "EventInit"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventinit-bubbles",
+        "href": "https://dom.spec.whatwg.org/#dom-eventinit-bubbles",
+        "linkingText": [
+          "bubbles"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventinit-cancelable",
+        "href": "https://dom.spec.whatwg.org/#dom-eventinit-cancelable",
+        "linkingText": [
+          "cancelable"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventinit-composed",
+        "href": "https://dom.spec.whatwg.org/#dom-eventinit-composed",
+        "linkingText": [
+          "composed"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

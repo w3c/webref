@@ -1,0 +1,237 @@
+{
+  "name": "OptionalEffectTiming",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Web Animations",
+      "url": "https://www.w3.org/TR/web-animations-1/"
+    },
+    "fragment": "dictionary OptionalEffectTiming {\n    double                             delay;\n    double                             endDelay;\n    FillMode                           fill;\n    double                             iterationStart;\n    unrestricted double                iterations;\n    (unrestricted double or DOMString) duration;\n    PlaybackDirection                  direction;\n    DOMString                          easing;\n};",
+    "href": "https://drafts.csswg.org/web-animations-1/#dictdef-optionaleffecttiming"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "Web Animations Level 2",
+        "url": "https://drafts.csswg.org/web-animations-2/"
+      },
+      "fragment": "partial dictionary OptionalEffectTiming {\n    double playbackRate;\n};"
+    }
+  ],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/web-animations-1/": [
+      {
+        "id": "dictdef-optionaleffecttiming",
+        "href": "https://drafts.csswg.org/web-animations-1/#dictdef-optionaleffecttiming",
+        "linkingText": [
+          "OptionalEffectTiming"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-effecttiming-dictionaries",
+          "href": "https://drafts.csswg.org/web-animations-1/#the-effecttiming-dictionaries",
+          "title": "The EffectTiming and OptionalEffectTiming dictionaries",
+          "number": "6.5.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-optionaleffecttiming-delay",
+        "href": "https://drafts.csswg.org/web-animations-1/#dom-optionaleffecttiming-delay",
+        "linkingText": [
+          "delay"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "OptionalEffectTiming"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-effecttiming-dictionaries",
+          "href": "https://drafts.csswg.org/web-animations-1/#the-effecttiming-dictionaries",
+          "title": "The EffectTiming and OptionalEffectTiming dictionaries",
+          "number": "6.5.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-optionaleffecttiming-enddelay",
+        "href": "https://drafts.csswg.org/web-animations-1/#dom-optionaleffecttiming-enddelay",
+        "linkingText": [
+          "endDelay"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "OptionalEffectTiming"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-effecttiming-dictionaries",
+          "href": "https://drafts.csswg.org/web-animations-1/#the-effecttiming-dictionaries",
+          "title": "The EffectTiming and OptionalEffectTiming dictionaries",
+          "number": "6.5.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-optionaleffecttiming-fill",
+        "href": "https://drafts.csswg.org/web-animations-1/#dom-optionaleffecttiming-fill",
+        "linkingText": [
+          "fill"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "OptionalEffectTiming"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-effecttiming-dictionaries",
+          "href": "https://drafts.csswg.org/web-animations-1/#the-effecttiming-dictionaries",
+          "title": "The EffectTiming and OptionalEffectTiming dictionaries",
+          "number": "6.5.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-optionaleffecttiming-iterationstart",
+        "href": "https://drafts.csswg.org/web-animations-1/#dom-optionaleffecttiming-iterationstart",
+        "linkingText": [
+          "iterationStart"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "OptionalEffectTiming"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-effecttiming-dictionaries",
+          "href": "https://drafts.csswg.org/web-animations-1/#the-effecttiming-dictionaries",
+          "title": "The EffectTiming and OptionalEffectTiming dictionaries",
+          "number": "6.5.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-optionaleffecttiming-iterations",
+        "href": "https://drafts.csswg.org/web-animations-1/#dom-optionaleffecttiming-iterations",
+        "linkingText": [
+          "iterations"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "OptionalEffectTiming"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-effecttiming-dictionaries",
+          "href": "https://drafts.csswg.org/web-animations-1/#the-effecttiming-dictionaries",
+          "title": "The EffectTiming and OptionalEffectTiming dictionaries",
+          "number": "6.5.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-optionaleffecttiming-duration",
+        "href": "https://drafts.csswg.org/web-animations-1/#dom-optionaleffecttiming-duration",
+        "linkingText": [
+          "duration"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "OptionalEffectTiming"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-effecttiming-dictionaries",
+          "href": "https://drafts.csswg.org/web-animations-1/#the-effecttiming-dictionaries",
+          "title": "The EffectTiming and OptionalEffectTiming dictionaries",
+          "number": "6.5.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-optionaleffecttiming-direction",
+        "href": "https://drafts.csswg.org/web-animations-1/#dom-optionaleffecttiming-direction",
+        "linkingText": [
+          "direction"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "OptionalEffectTiming"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-effecttiming-dictionaries",
+          "href": "https://drafts.csswg.org/web-animations-1/#the-effecttiming-dictionaries",
+          "title": "The EffectTiming and OptionalEffectTiming dictionaries",
+          "number": "6.5.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-optionaleffecttiming-easing",
+        "href": "https://drafts.csswg.org/web-animations-1/#dom-optionaleffecttiming-easing",
+        "linkingText": [
+          "easing"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "OptionalEffectTiming"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-effecttiming-dictionaries",
+          "href": "https://drafts.csswg.org/web-animations-1/#the-effecttiming-dictionaries",
+          "title": "The EffectTiming and OptionalEffectTiming dictionaries",
+          "number": "6.5.1"
+        },
+        "definedIn": "dt"
+      }
+    ],
+    "https://drafts.csswg.org/web-animations-2/": [
+      {
+        "id": "dom-optionaleffecttiming-playbackrate",
+        "href": "https://drafts.csswg.org/web-animations-2/#dom-optionaleffecttiming-playbackrate",
+        "linkingText": [
+          "playbackRate"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "OptionalEffectTiming"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-effecttiming-dictionaries",
+          "href": "https://drafts.csswg.org/web-animations-2/#the-effecttiming-dictionaries",
+          "title": "The EffectTiming and OptionalEffectTiming dictionaries",
+          "number": "5.4"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

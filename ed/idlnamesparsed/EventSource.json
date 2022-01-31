@@ -1,0 +1,370 @@
+{
+  "name": "EventSource",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "HTML Standard",
+      "url": "https://html.spec.whatwg.org/multipage/"
+    },
+    "fragment": "[Exposed=(Window,Worker)]\ninterface EventSource : EventTarget {\n  constructor(USVString url, optional EventSourceInit eventSourceInitDict = {});\n\n  readonly attribute USVString url;\n  readonly attribute boolean withCredentials;\n\n  // ready state\n  const unsigned short CONNECTING = 0;\n  const unsigned short OPEN = 1;\n  const unsigned short CLOSED = 2;\n  readonly attribute unsigned short readyState;\n\n  // networking\n  attribute EventHandler onopen;\n  attribute EventHandler onmessage;\n  attribute EventHandler onerror;\n  undefined close();\n};",
+    "href": "https://html.spec.whatwg.org/multipage/server-sent-events.html#eventsource"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "EventTarget",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=*]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+      "href": "https://dom.spec.whatwg.org/#eventtarget"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://html.spec.whatwg.org/multipage/": [
+      {
+        "id": "eventsource",
+        "href": "https://html.spec.whatwg.org/multipage/server-sent-events.html#eventsource",
+        "linkingText": [
+          "EventSource"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-eventsource-interface",
+          "href": "https://html.spec.whatwg.org/multipage/server-sent-events.html#the-eventsource-interface",
+          "title": "The EventSource interface",
+          "number": "9.2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventsource-url",
+        "href": "https://html.spec.whatwg.org/multipage/server-sent-events.html#dom-eventsource-url",
+        "linkingText": [
+          "url"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "EventSource"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-eventsource-interface",
+          "href": "https://html.spec.whatwg.org/multipage/server-sent-events.html#the-eventsource-interface",
+          "title": "The EventSource interface",
+          "number": "9.2.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventsource-withcredentials",
+        "href": "https://html.spec.whatwg.org/multipage/server-sent-events.html#dom-eventsource-withcredentials",
+        "linkingText": [
+          "withCredentials"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "EventSource"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-eventsource-interface",
+          "href": "https://html.spec.whatwg.org/multipage/server-sent-events.html#the-eventsource-interface",
+          "title": "The EventSource interface",
+          "number": "9.2.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventsource-connecting",
+        "href": "https://html.spec.whatwg.org/multipage/server-sent-events.html#dom-eventsource-connecting",
+        "linkingText": [
+          "CONNECTING"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "EventSource"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-eventsource-interface",
+          "href": "https://html.spec.whatwg.org/multipage/server-sent-events.html#the-eventsource-interface",
+          "title": "The EventSource interface",
+          "number": "9.2.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-eventsource-open",
+        "href": "https://html.spec.whatwg.org/multipage/server-sent-events.html#dom-eventsource-open",
+        "linkingText": [
+          "OPEN"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "EventSource"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-eventsource-interface",
+          "href": "https://html.spec.whatwg.org/multipage/server-sent-events.html#the-eventsource-interface",
+          "title": "The EventSource interface",
+          "number": "9.2.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-eventsource-closed",
+        "href": "https://html.spec.whatwg.org/multipage/server-sent-events.html#dom-eventsource-closed",
+        "linkingText": [
+          "CLOSED"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "EventSource"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-eventsource-interface",
+          "href": "https://html.spec.whatwg.org/multipage/server-sent-events.html#the-eventsource-interface",
+          "title": "The EventSource interface",
+          "number": "9.2.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-eventsource-readystate",
+        "href": "https://html.spec.whatwg.org/multipage/server-sent-events.html#dom-eventsource-readystate",
+        "linkingText": [
+          "readyState"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "EventSource"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-eventsource-interface",
+          "href": "https://html.spec.whatwg.org/multipage/server-sent-events.html#the-eventsource-interface",
+          "title": "The EventSource interface",
+          "number": "9.2.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "handler-eventsource-onopen",
+        "href": "https://html.spec.whatwg.org/multipage/server-sent-events.html#handler-eventsource-onopen",
+        "linkingText": [
+          "onopen"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "EventSource"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-eventsource-interface",
+          "href": "https://html.spec.whatwg.org/multipage/server-sent-events.html#the-eventsource-interface",
+          "title": "The EventSource interface",
+          "number": "9.2.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-eventsource-onmessage",
+        "href": "https://html.spec.whatwg.org/multipage/server-sent-events.html#handler-eventsource-onmessage",
+        "linkingText": [
+          "onmessage"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "EventSource"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-eventsource-interface",
+          "href": "https://html.spec.whatwg.org/multipage/server-sent-events.html#the-eventsource-interface",
+          "title": "The EventSource interface",
+          "number": "9.2.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-eventsource-onerror",
+        "href": "https://html.spec.whatwg.org/multipage/server-sent-events.html#handler-eventsource-onerror",
+        "linkingText": [
+          "onerror"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "EventSource"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-eventsource-interface",
+          "href": "https://html.spec.whatwg.org/multipage/server-sent-events.html#the-eventsource-interface",
+          "title": "The EventSource interface",
+          "number": "9.2.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "dom-eventsource-close",
+        "href": "https://html.spec.whatwg.org/multipage/server-sent-events.html#dom-eventsource-close",
+        "linkingText": [
+          "close()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventSource"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-eventsource-interface",
+          "href": "https://html.spec.whatwg.org/multipage/server-sent-events.html#the-eventsource-interface",
+          "title": "The EventSource interface",
+          "number": "9.2.2"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "eventtarget",
+        "href": "https://dom.spec.whatwg.org/#eventtarget",
+        "linkingText": [
+          "EventTarget"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventtarget-eventtarget",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-eventtarget",
+        "linkingText": [
+          "EventTarget()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-addeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-addeventlistener",
+        "linkingText": [
+          "addEventListener(type, callback, options)",
+          "addEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-removeeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-removeeventlistener",
+        "linkingText": [
+          "removeEventListener(type, callback, options)",
+          "removeEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-dispatchevent",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-dispatchevent",
+        "linkingText": [
+          "dispatchEvent(event)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

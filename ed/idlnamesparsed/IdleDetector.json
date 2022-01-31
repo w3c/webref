@@ -1,0 +1,288 @@
+{
+  "name": "IdleDetector",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Idle Detection API",
+      "url": "https://wicg.github.io/idle-detection/"
+    },
+    "fragment": "[\n  SecureContext,\n  Exposed=(Window,DedicatedWorker)\n] interface IdleDetector : EventTarget {\n  constructor();\n  readonly attribute UserIdleState? userState;\n  readonly attribute ScreenIdleState? screenState;\n  attribute EventHandler onchange;\n  [Exposed=Window] static Promise<PermissionState> requestPermission();\n  Promise<undefined> start(optional IdleOptions options = {});\n};",
+    "href": "https://wicg.github.io/idle-detection/#idledetector"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "EventTarget",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=*]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+      "href": "https://dom.spec.whatwg.org/#eventtarget"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://wicg.github.io/idle-detection/": [
+      {
+        "id": "idledetector",
+        "href": "https://wicg.github.io/idle-detection/#idledetector",
+        "linkingText": [
+          "IdleDetector"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-idledetector",
+          "href": "https://wicg.github.io/idle-detection/#api-idledetector",
+          "title": "The IdleDetector interface",
+          "number": "2.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-idledetector-idledetector",
+        "href": "https://wicg.github.io/idle-detection/#dom-idledetector-idledetector",
+        "linkingText": [
+          "IdleDetector()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "IdleDetector"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-idledetector",
+          "href": "https://wicg.github.io/idle-detection/#api-idledetector",
+          "title": "The IdleDetector interface",
+          "number": "2.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-idledetector-userstate",
+        "href": "https://wicg.github.io/idle-detection/#dom-idledetector-userstate",
+        "linkingText": [
+          "userState"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "IdleDetector"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-idledetector-userstate",
+          "href": "https://wicg.github.io/idle-detection/#api-idledetector-userstate",
+          "title": "userState attribute",
+          "number": "2.4.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-idledetector-screenstate",
+        "href": "https://wicg.github.io/idle-detection/#dom-idledetector-screenstate",
+        "linkingText": [
+          "screenState"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "IdleDetector"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-idledetector-screenstate",
+          "href": "https://wicg.github.io/idle-detection/#api-idledetector-screenstate",
+          "title": "screenState attribute",
+          "number": "2.4.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-idledetector-onchange",
+        "href": "https://wicg.github.io/idle-detection/#dom-idledetector-onchange",
+        "linkingText": [
+          "onchange"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "IdleDetector"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-idledetector-onchange",
+          "href": "https://wicg.github.io/idle-detection/#api-idledetector-onchange",
+          "title": "onchange attribute",
+          "number": "2.4.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-idledetector-requestpermission",
+        "href": "https://wicg.github.io/idle-detection/#dom-idledetector-requestpermission",
+        "linkingText": [
+          "requestPermission()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "IdleDetector"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-idledetector-requestpermission",
+          "href": "https://wicg.github.io/idle-detection/#api-idledetector-requestpermission",
+          "title": "requestPermission() method",
+          "number": "2.4.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-idledetector-start",
+        "href": "https://wicg.github.io/idle-detection/#dom-idledetector-start",
+        "linkingText": [
+          "start(options)",
+          "start()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "IdleDetector"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-idledetector-start",
+          "href": "https://wicg.github.io/idle-detection/#api-idledetector-start",
+          "title": "start() method",
+          "number": "2.4.5"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "eventtarget",
+        "href": "https://dom.spec.whatwg.org/#eventtarget",
+        "linkingText": [
+          "EventTarget"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventtarget-eventtarget",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-eventtarget",
+        "linkingText": [
+          "EventTarget()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-addeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-addeventlistener",
+        "linkingText": [
+          "addEventListener(type, callback, options)",
+          "addEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-removeeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-removeeventlistener",
+        "linkingText": [
+          "removeEventListener(type, callback, options)",
+          "removeEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-dispatchevent",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-dispatchevent",
+        "linkingText": [
+          "dispatchEvent(event)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

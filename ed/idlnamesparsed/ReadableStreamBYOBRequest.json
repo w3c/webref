@@ -1,0 +1,101 @@
+{
+  "name": "ReadableStreamBYOBRequest",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Streams Standard",
+      "url": "https://streams.spec.whatwg.org/"
+    },
+    "fragment": "[Exposed=*]\ninterface ReadableStreamBYOBRequest {\n  readonly attribute ArrayBufferView? view;\n\n  undefined respond([EnforceRange] unsigned long long bytesWritten);\n  undefined respondWithNewView(ArrayBufferView view);\n};",
+    "href": "https://streams.spec.whatwg.org/#readablestreambyobrequest"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://streams.spec.whatwg.org/": [
+      {
+        "id": "readablestreambyobrequest",
+        "href": "https://streams.spec.whatwg.org/#readablestreambyobrequest",
+        "linkingText": [
+          "ReadableStreamBYOBRequest"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "rs-byob-request-class-definition",
+          "href": "https://streams.spec.whatwg.org/#rs-byob-request-class-definition",
+          "title": "Interface definition",
+          "number": "4.8.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "rs-byob-request-view",
+        "href": "https://streams.spec.whatwg.org/#rs-byob-request-view",
+        "linkingText": [
+          "view"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "ReadableStreamBYOBRequest"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "rs-byob-request-prototype",
+          "href": "https://streams.spec.whatwg.org/#rs-byob-request-prototype",
+          "title": "Methods and properties",
+          "number": "4.8.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "rs-byob-request-respond",
+        "href": "https://streams.spec.whatwg.org/#rs-byob-request-respond",
+        "linkingText": [
+          "respond(bytesWritten)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "ReadableStreamBYOBRequest"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "rs-byob-request-prototype",
+          "href": "https://streams.spec.whatwg.org/#rs-byob-request-prototype",
+          "title": "Methods and properties",
+          "number": "4.8.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "rs-byob-request-respond-with-new-view",
+        "href": "https://streams.spec.whatwg.org/#rs-byob-request-respond-with-new-view",
+        "linkingText": [
+          "respondWithNewView(view)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "ReadableStreamBYOBRequest"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "rs-byob-request-prototype",
+          "href": "https://streams.spec.whatwg.org/#rs-byob-request-prototype",
+          "title": "Methods and properties",
+          "number": "4.8.3"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

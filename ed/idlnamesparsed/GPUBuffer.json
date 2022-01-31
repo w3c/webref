@@ -1,0 +1,190 @@
+{
+  "name": "GPUBuffer",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebGPU",
+      "url": "https://www.w3.org/TR/webgpu/"
+    },
+    "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUBuffer {\n    Promise<undefined> mapAsync(GPUMapModeFlags mode, optional GPUSize64 offset = 0, optional GPUSize64 size);\n    ArrayBuffer getMappedRange(optional GPUSize64 offset = 0, optional GPUSize64 size);\n    undefined unmap();\n\n    undefined destroy();\n};",
+    "href": "https://gpuweb.github.io/gpuweb/#gpubuffer"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "WebGPU",
+        "url": "https://www.w3.org/TR/webgpu/"
+      },
+      "fragment": "GPUBuffer includes GPUObjectBase;"
+    }
+  ],
+  "inheritance": null,
+  "includes": [
+    {
+      "name": "GPUObjectBase",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "WebGPU",
+          "url": "https://www.w3.org/TR/webgpu/"
+        },
+        "fragment": "interface mixin GPUObjectBase {\n    attribute (USVString or undefined) label;\n};",
+        "href": "https://gpuweb.github.io/gpuweb/#gpuobjectbase"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    }
+  ],
+  "dfns": {
+    "https://www.w3.org/TR/webgpu/": [
+      {
+        "id": "gpubuffer",
+        "href": "https://gpuweb.github.io/gpuweb/#gpubuffer",
+        "linkingText": [
+          "GPUBuffer"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "buffer-interface",
+          "href": "https://gpuweb.github.io/gpuweb/#buffer-interface",
+          "title": "GPUBuffer",
+          "number": "5.1"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-gpubuffer-mapasync",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpubuffer-mapasync",
+        "linkingText": [
+          "mapAsync(mode, offset, size)",
+          "mapAsync(mode, offset)",
+          "mapAsync(mode)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GPUBuffer"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "buffer-mapping",
+          "href": "https://gpuweb.github.io/gpuweb/#buffer-mapping",
+          "title": "Buffer Mapping",
+          "number": "5.4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpubuffer-getmappedrange",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpubuffer-getmappedrange",
+        "linkingText": [
+          "getMappedRange(offset, size)",
+          "getMappedRange(offset)",
+          "getMappedRange()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GPUBuffer"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "buffer-mapping",
+          "href": "https://gpuweb.github.io/gpuweb/#buffer-mapping",
+          "title": "Buffer Mapping",
+          "number": "5.4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpubuffer-unmap",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpubuffer-unmap",
+        "linkingText": [
+          "unmap()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GPUBuffer"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "buffer-mapping",
+          "href": "https://gpuweb.github.io/gpuweb/#buffer-mapping",
+          "title": "Buffer Mapping",
+          "number": "5.4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpubuffer-destroy",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpubuffer-destroy",
+        "linkingText": [
+          "destroy()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GPUBuffer"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "buffer-destruction",
+          "href": "https://gpuweb.github.io/gpuweb/#buffer-destruction",
+          "title": "Buffer Destruction",
+          "number": "5.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "gpuobjectbase",
+        "href": "https://gpuweb.github.io/gpuweb/#gpuobjectbase",
+        "linkingText": [
+          "GPUObjectBase"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "webgpu-interfaces",
+          "href": "https://gpuweb.github.io/gpuweb/#webgpu-interfaces",
+          "title": "WebGPU Interfaces",
+          "number": "3.1.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gpuobjectbase-label",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpuobjectbase-label",
+        "linkingText": [
+          "label"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "GPUObjectBase"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "webgpu-interfaces",
+          "href": "https://gpuweb.github.io/gpuweb/#webgpu-interfaces",
+          "title": "WebGPU Interfaces",
+          "number": "3.1.3"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

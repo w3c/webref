@@ -1,0 +1,228 @@
+{
+  "name": "VideoDecoder",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebCodecs",
+      "url": "https://www.w3.org/TR/webcodecs/"
+    },
+    "fragment": "[Exposed=(Window,DedicatedWorker), SecureContext]\ninterface VideoDecoder {\n  constructor(VideoDecoderInit init);\n\n  readonly attribute CodecState state;\n  readonly attribute long decodeQueueSize;\n\n  undefined configure(VideoDecoderConfig config);\n  undefined decode(EncodedVideoChunk chunk);\n  Promise<undefined> flush();\n  undefined reset();\n  undefined close();\n\n  static Promise<VideoDecoderSupport> isConfigSupported(VideoDecoderConfig config);\n};",
+    "href": "https://w3c.github.io/webcodecs/#videodecoder"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webcodecs/": [
+      {
+        "id": "videodecoder",
+        "href": "https://w3c.github.io/webcodecs/#videodecoder",
+        "linkingText": [
+          "VideoDecoder"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "videodecoder-interface",
+          "href": "https://w3c.github.io/webcodecs/#videodecoder-interface",
+          "title": "VideoDecoder Interface",
+          "number": "4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-videodecoder-videodecoder",
+        "href": "https://w3c.github.io/webcodecs/#dom-videodecoder-videodecoder",
+        "linkingText": [
+          "VideoDecoder(init)",
+          "constructor(init)"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "VideoDecoder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "videodecoder-constructors",
+          "href": "https://w3c.github.io/webcodecs/#videodecoder-constructors",
+          "title": "Constructors",
+          "number": "4.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-videodecoder-state",
+        "href": "https://w3c.github.io/webcodecs/#dom-videodecoder-state",
+        "linkingText": [
+          "state"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "VideoDecoder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "videodecoder-attributes",
+          "href": "https://w3c.github.io/webcodecs/#videodecoder-attributes",
+          "title": "Attributes",
+          "number": "4.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-videodecoder-decodequeuesize",
+        "href": "https://w3c.github.io/webcodecs/#dom-videodecoder-decodequeuesize",
+        "linkingText": [
+          "decodeQueueSize"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "VideoDecoder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "videodecoder-attributes",
+          "href": "https://w3c.github.io/webcodecs/#videodecoder-attributes",
+          "title": "Attributes",
+          "number": "4.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-videodecoder-configure",
+        "href": "https://w3c.github.io/webcodecs/#dom-videodecoder-configure",
+        "linkingText": [
+          "configure(config)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "VideoDecoder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "videodecoder-methods",
+          "href": "https://w3c.github.io/webcodecs/#videodecoder-methods",
+          "title": "Methods",
+          "number": "4.4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-videodecoder-decode",
+        "href": "https://w3c.github.io/webcodecs/#dom-videodecoder-decode",
+        "linkingText": [
+          "decode(chunk)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "VideoDecoder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "videodecoder-methods",
+          "href": "https://w3c.github.io/webcodecs/#videodecoder-methods",
+          "title": "Methods",
+          "number": "4.4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-videodecoder-flush",
+        "href": "https://w3c.github.io/webcodecs/#dom-videodecoder-flush",
+        "linkingText": [
+          "flush()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "VideoDecoder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "videodecoder-methods",
+          "href": "https://w3c.github.io/webcodecs/#videodecoder-methods",
+          "title": "Methods",
+          "number": "4.4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-videodecoder-reset",
+        "href": "https://w3c.github.io/webcodecs/#dom-videodecoder-reset",
+        "linkingText": [
+          "reset()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "VideoDecoder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "videodecoder-methods",
+          "href": "https://w3c.github.io/webcodecs/#videodecoder-methods",
+          "title": "Methods",
+          "number": "4.4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-videodecoder-close",
+        "href": "https://w3c.github.io/webcodecs/#dom-videodecoder-close",
+        "linkingText": [
+          "close()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "VideoDecoder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "videodecoder-methods",
+          "href": "https://w3c.github.io/webcodecs/#videodecoder-methods",
+          "title": "Methods",
+          "number": "4.4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-videodecoder-isconfigsupported",
+        "href": "https://w3c.github.io/webcodecs/#dom-videodecoder-isconfigsupported",
+        "linkingText": [
+          "isConfigSupported(config)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "VideoDecoder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "videodecoder-methods",
+          "href": "https://w3c.github.io/webcodecs/#videodecoder-methods",
+          "title": "Methods",
+          "number": "4.4"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

@@ -1,0 +1,248 @@
+{
+  "name": "UADataValues",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "User-Agent Client Hints",
+      "url": "https://wicg.github.io/ua-client-hints/"
+    },
+    "fragment": "dictionary UADataValues {\n  sequence<NavigatorUABrandVersion> brands;\n  boolean mobile;\n  DOMString architecture;\n  DOMString bitness;\n  DOMString model;\n  DOMString platform;\n  DOMString platformVersion;\n  DOMString uaFullVersion; // deprecated in favor of fullVersionList\n  boolean wow64;\n  sequence<NavigatorUABrandVersion> fullVersionList;\n};",
+    "href": "https://wicg.github.io/ua-client-hints/#dictdef-uadatavalues"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://wicg.github.io/ua-client-hints/": [
+      {
+        "id": "dictdef-uadatavalues",
+        "href": "https://wicg.github.io/ua-client-hints/#dictdef-uadatavalues",
+        "linkingText": [
+          "UADataValues"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface",
+          "href": "https://wicg.github.io/ua-client-hints/#interface",
+          "title": "Interface",
+          "number": "4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-uadatavalues-brands",
+        "href": "https://wicg.github.io/ua-client-hints/#dom-uadatavalues-brands",
+        "linkingText": [
+          "brands"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "UADataValues"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface",
+          "href": "https://wicg.github.io/ua-client-hints/#interface",
+          "title": "Interface",
+          "number": "4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-uadatavalues-mobile",
+        "href": "https://wicg.github.io/ua-client-hints/#dom-uadatavalues-mobile",
+        "linkingText": [
+          "mobile"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "UADataValues"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface",
+          "href": "https://wicg.github.io/ua-client-hints/#interface",
+          "title": "Interface",
+          "number": "4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-uadatavalues-architecture",
+        "href": "https://wicg.github.io/ua-client-hints/#dom-uadatavalues-architecture",
+        "linkingText": [
+          "architecture"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "UADataValues"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface",
+          "href": "https://wicg.github.io/ua-client-hints/#interface",
+          "title": "Interface",
+          "number": "4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-uadatavalues-bitness",
+        "href": "https://wicg.github.io/ua-client-hints/#dom-uadatavalues-bitness",
+        "linkingText": [
+          "bitness"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "UADataValues"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface",
+          "href": "https://wicg.github.io/ua-client-hints/#interface",
+          "title": "Interface",
+          "number": "4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-uadatavalues-model",
+        "href": "https://wicg.github.io/ua-client-hints/#dom-uadatavalues-model",
+        "linkingText": [
+          "model"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "UADataValues"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface",
+          "href": "https://wicg.github.io/ua-client-hints/#interface",
+          "title": "Interface",
+          "number": "4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-uadatavalues-platform",
+        "href": "https://wicg.github.io/ua-client-hints/#dom-uadatavalues-platform",
+        "linkingText": [
+          "platform"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "UADataValues"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface",
+          "href": "https://wicg.github.io/ua-client-hints/#interface",
+          "title": "Interface",
+          "number": "4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-uadatavalues-platformversion",
+        "href": "https://wicg.github.io/ua-client-hints/#dom-uadatavalues-platformversion",
+        "linkingText": [
+          "platformVersion"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "UADataValues"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface",
+          "href": "https://wicg.github.io/ua-client-hints/#interface",
+          "title": "Interface",
+          "number": "4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-uadatavalues-uafullversion",
+        "href": "https://wicg.github.io/ua-client-hints/#dom-uadatavalues-uafullversion",
+        "linkingText": [
+          "uaFullVersion"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "UADataValues"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface",
+          "href": "https://wicg.github.io/ua-client-hints/#interface",
+          "title": "Interface",
+          "number": "4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-uadatavalues-wow64",
+        "href": "https://wicg.github.io/ua-client-hints/#dom-uadatavalues-wow64",
+        "linkingText": [
+          "wow64"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "UADataValues"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface",
+          "href": "https://wicg.github.io/ua-client-hints/#interface",
+          "title": "Interface",
+          "number": "4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-uadatavalues-fullversionlist",
+        "href": "https://wicg.github.io/ua-client-hints/#dom-uadatavalues-fullversionlist",
+        "linkingText": [
+          "fullVersionList"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "UADataValues"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface",
+          "href": "https://wicg.github.io/ua-client-hints/#interface",
+          "title": "Interface",
+          "number": "4"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

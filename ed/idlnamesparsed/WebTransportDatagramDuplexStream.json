@@ -1,0 +1,185 @@
+{
+  "name": "WebTransportDatagramDuplexStream",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebTransport",
+      "url": "https://www.w3.org/TR/webtransport/"
+    },
+    "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface WebTransportDatagramDuplexStream {\n  readonly attribute ReadableStream readable;\n  readonly attribute WritableStream writable;\n\n  readonly attribute unsigned long maxDatagramSize;\n  attribute double? incomingMaxAge;\n  attribute double? outgoingMaxAge;\n  attribute long incomingHighWaterMark;\n  attribute long outgoingHighWaterMark;\n};",
+    "href": "https://w3c.github.io/webtransport/#webtransportdatagramduplexstream"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webtransport/": [
+      {
+        "id": "webtransportdatagramduplexstream",
+        "href": "https://w3c.github.io/webtransport/#webtransportdatagramduplexstream",
+        "linkingText": [
+          "WebTransportDatagramDuplexStream"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "duplex-stream",
+          "href": "https://w3c.github.io/webtransport/#duplex-stream",
+          "title": "WebTransportDatagramDuplexStream Interface",
+          "number": "5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-webtransportdatagramduplexstream-readable",
+        "href": "https://w3c.github.io/webtransport/#dom-webtransportdatagramduplexstream-readable",
+        "linkingText": [
+          "readable"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "WebTransportDatagramDuplexStream"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "datagram-duplex-stream-attributes",
+          "href": "https://w3c.github.io/webtransport/#datagram-duplex-stream-attributes",
+          "title": "Attributes",
+          "number": "5.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-webtransportdatagramduplexstream-writable",
+        "href": "https://w3c.github.io/webtransport/#dom-webtransportdatagramduplexstream-writable",
+        "linkingText": [
+          "writable"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "WebTransportDatagramDuplexStream"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "datagram-duplex-stream-attributes",
+          "href": "https://w3c.github.io/webtransport/#datagram-duplex-stream-attributes",
+          "title": "Attributes",
+          "number": "5.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-webtransportdatagramduplexstream-maxdatagramsize",
+        "href": "https://w3c.github.io/webtransport/#dom-webtransportdatagramduplexstream-maxdatagramsize",
+        "linkingText": [
+          "maxDatagramSize"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "WebTransportDatagramDuplexStream"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "datagram-duplex-stream-attributes",
+          "href": "https://w3c.github.io/webtransport/#datagram-duplex-stream-attributes",
+          "title": "Attributes",
+          "number": "5.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-webtransportdatagramduplexstream-incomingmaxage",
+        "href": "https://w3c.github.io/webtransport/#dom-webtransportdatagramduplexstream-incomingmaxage",
+        "linkingText": [
+          "incomingMaxAge"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "WebTransportDatagramDuplexStream"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "datagram-duplex-stream-attributes",
+          "href": "https://w3c.github.io/webtransport/#datagram-duplex-stream-attributes",
+          "title": "Attributes",
+          "number": "5.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-webtransportdatagramduplexstream-outgoingmaxage",
+        "href": "https://w3c.github.io/webtransport/#dom-webtransportdatagramduplexstream-outgoingmaxage",
+        "linkingText": [
+          "outgoingMaxAge"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "WebTransportDatagramDuplexStream"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "datagram-duplex-stream-attributes",
+          "href": "https://w3c.github.io/webtransport/#datagram-duplex-stream-attributes",
+          "title": "Attributes",
+          "number": "5.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-webtransportdatagramduplexstream-incominghighwatermark",
+        "href": "https://w3c.github.io/webtransport/#dom-webtransportdatagramduplexstream-incominghighwatermark",
+        "linkingText": [
+          "incomingHighWaterMark"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "WebTransportDatagramDuplexStream"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "datagram-duplex-stream-attributes",
+          "href": "https://w3c.github.io/webtransport/#datagram-duplex-stream-attributes",
+          "title": "Attributes",
+          "number": "5.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-webtransportdatagramduplexstream-outgoinghighwatermark",
+        "href": "https://w3c.github.io/webtransport/#dom-webtransportdatagramduplexstream-outgoinghighwatermark",
+        "linkingText": [
+          "outgoingHighWaterMark"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "WebTransportDatagramDuplexStream"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "datagram-duplex-stream-attributes",
+          "href": "https://w3c.github.io/webtransport/#datagram-duplex-stream-attributes",
+          "title": "Attributes",
+          "number": "5.2"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

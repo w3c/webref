@@ -1,0 +1,726 @@
+{
+  "spec": {
+    "title": "Cookies: HTTP State Management Mechanism",
+    "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#title",
+      "level": 1,
+      "title": "Cookies: HTTP State Management Mechanism"
+    },
+    {
+      "id": "section-abstract",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "section-note.1",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-note.1",
+      "level": 2,
+      "title": "About This Document"
+    },
+    {
+      "id": "section-boilerplate.1",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-boilerplate.1",
+      "level": 2,
+      "title": "Status of This Memo"
+    },
+    {
+      "id": "section-boilerplate.2",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-boilerplate.2",
+      "level": 2,
+      "title": "Copyright Notice"
+    },
+    {
+      "id": "section-toc.1",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-toc.1",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "section-1",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-1",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "section-2",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-2",
+      "level": 2,
+      "title": "Conventions",
+      "number": "2"
+    },
+    {
+      "id": "section-2.1",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-2.1",
+      "level": 3,
+      "title": "Conformance Criteria",
+      "number": "2.1"
+    },
+    {
+      "id": "section-2.2",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-2.2",
+      "level": 3,
+      "title": "Syntax Notation",
+      "number": "2.2"
+    },
+    {
+      "id": "section-2.3",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-2.3",
+      "level": 3,
+      "title": "Terminology",
+      "number": "2.3"
+    },
+    {
+      "id": "section-3",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-3",
+      "level": 2,
+      "title": "Overview",
+      "number": "3"
+    },
+    {
+      "id": "section-3.1",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-3.1",
+      "level": 3,
+      "title": "Examples",
+      "number": "3.1"
+    },
+    {
+      "id": "section-4",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-4",
+      "level": 2,
+      "title": "Server Requirements",
+      "number": "4"
+    },
+    {
+      "id": "section-4.1",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-4.1",
+      "level": 3,
+      "title": "Set-Cookie",
+      "number": "4.1"
+    },
+    {
+      "id": "section-4.1.1",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-4.1.1",
+      "level": 4,
+      "title": "Syntax",
+      "number": "4.1.1"
+    },
+    {
+      "id": "section-4.1.2",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-4.1.2",
+      "level": 4,
+      "title": "Semantics (Non-Normative)",
+      "number": "4.1.2"
+    },
+    {
+      "id": "section-4.1.2.1",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-4.1.2.1",
+      "level": 5,
+      "title": "The Expires Attribute",
+      "number": "4.1.2.1"
+    },
+    {
+      "id": "section-4.1.2.2",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-4.1.2.2",
+      "level": 5,
+      "title": "The Max-Age Attribute",
+      "number": "4.1.2.2"
+    },
+    {
+      "id": "section-4.1.2.3",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-4.1.2.3",
+      "level": 5,
+      "title": "The Domain Attribute",
+      "number": "4.1.2.3"
+    },
+    {
+      "id": "section-4.1.2.4",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-4.1.2.4",
+      "level": 5,
+      "title": "The Path Attribute",
+      "number": "4.1.2.4"
+    },
+    {
+      "id": "section-4.1.2.5",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-4.1.2.5",
+      "level": 5,
+      "title": "The Secure Attribute",
+      "number": "4.1.2.5"
+    },
+    {
+      "id": "section-4.1.2.6",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-4.1.2.6",
+      "level": 5,
+      "title": "The HttpOnly Attribute",
+      "number": "4.1.2.6"
+    },
+    {
+      "id": "section-4.1.2.7",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-4.1.2.7",
+      "level": 5,
+      "title": "The SameSite Attribute",
+      "number": "4.1.2.7"
+    },
+    {
+      "id": "section-4.1.3",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-4.1.3",
+      "level": 4,
+      "title": "Cookie Name Prefixes",
+      "number": "4.1.3"
+    },
+    {
+      "id": "section-4.1.3.1",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-4.1.3.1",
+      "level": 5,
+      "title": "The \"__Secure-\" Prefix",
+      "number": "4.1.3.1"
+    },
+    {
+      "id": "section-4.1.3.2",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-4.1.3.2",
+      "level": 5,
+      "title": "The \"__Host-\" Prefix",
+      "number": "4.1.3.2"
+    },
+    {
+      "id": "section-4.2",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-4.2",
+      "level": 3,
+      "title": "Cookie",
+      "number": "4.2"
+    },
+    {
+      "id": "section-4.2.1",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-4.2.1",
+      "level": 4,
+      "title": "Syntax",
+      "number": "4.2.1"
+    },
+    {
+      "id": "section-4.2.2",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-4.2.2",
+      "level": 4,
+      "title": "Semantics",
+      "number": "4.2.2"
+    },
+    {
+      "id": "section-5",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5",
+      "level": 2,
+      "title": "User Agent Requirements",
+      "number": "5"
+    },
+    {
+      "id": "section-5.1",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.1",
+      "level": 3,
+      "title": "Subcomponent Algorithms",
+      "number": "5.1"
+    },
+    {
+      "id": "section-5.1.1",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.1.1",
+      "level": 4,
+      "title": "Dates",
+      "number": "5.1.1"
+    },
+    {
+      "id": "section-5.1.2",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.1.2",
+      "level": 4,
+      "title": "Canonicalized Host Names",
+      "number": "5.1.2"
+    },
+    {
+      "id": "section-5.1.3",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.1.3",
+      "level": 4,
+      "title": "Domain Matching",
+      "number": "5.1.3"
+    },
+    {
+      "id": "section-5.1.4",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.1.4",
+      "level": 4,
+      "title": "Paths and Path-Match",
+      "number": "5.1.4"
+    },
+    {
+      "id": "section-5.2",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.2",
+      "level": 3,
+      "title": "\"Same-site\" and \"cross-site\" Requests",
+      "number": "5.2"
+    },
+    {
+      "id": "section-5.2.1",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.2.1",
+      "level": 4,
+      "title": "Document-based requests",
+      "number": "5.2.1"
+    },
+    {
+      "id": "section-5.2.2",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.2.2",
+      "level": 4,
+      "title": "Worker-based requests",
+      "number": "5.2.2"
+    },
+    {
+      "id": "section-5.2.2.1",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.2.2.1",
+      "level": 5,
+      "title": "Dedicated and Shared Workers",
+      "number": "5.2.2.1"
+    },
+    {
+      "id": "section-5.2.2.2",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.2.2.2",
+      "level": 5,
+      "title": "Service Workers",
+      "number": "5.2.2.2"
+    },
+    {
+      "id": "section-5.3",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.3",
+      "level": 3,
+      "title": "Ignoring Set-Cookie Header Fields",
+      "number": "5.3"
+    },
+    {
+      "id": "section-5.4",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.4",
+      "level": 3,
+      "title": "The Set-Cookie Header Field",
+      "number": "5.4"
+    },
+    {
+      "id": "section-5.4.1",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.4.1",
+      "level": 4,
+      "title": "The Expires Attribute",
+      "number": "5.4.1"
+    },
+    {
+      "id": "section-5.4.2",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.4.2",
+      "level": 4,
+      "title": "The Max-Age Attribute",
+      "number": "5.4.2"
+    },
+    {
+      "id": "section-5.4.3",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.4.3",
+      "level": 4,
+      "title": "The Domain Attribute",
+      "number": "5.4.3"
+    },
+    {
+      "id": "section-5.4.4",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.4.4",
+      "level": 4,
+      "title": "The Path Attribute",
+      "number": "5.4.4"
+    },
+    {
+      "id": "section-5.4.5",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.4.5",
+      "level": 4,
+      "title": "The Secure Attribute",
+      "number": "5.4.5"
+    },
+    {
+      "id": "section-5.4.6",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.4.6",
+      "level": 4,
+      "title": "The HttpOnly Attribute",
+      "number": "5.4.6"
+    },
+    {
+      "id": "section-5.4.7",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.4.7",
+      "level": 4,
+      "title": "The SameSite Attribute",
+      "number": "5.4.7"
+    },
+    {
+      "id": "section-5.4.7.1",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.4.7.1",
+      "level": 5,
+      "title": "\"Strict\" and \"Lax\" enforcement",
+      "number": "5.4.7.1"
+    },
+    {
+      "id": "section-5.4.7.2",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.4.7.2",
+      "level": 5,
+      "title": "\"Lax-Allowing-Unsafe\" enforcement",
+      "number": "5.4.7.2"
+    },
+    {
+      "id": "section-5.5",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.5",
+      "level": 3,
+      "title": "Storage Model",
+      "number": "5.5"
+    },
+    {
+      "id": "section-5.6",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.6",
+      "level": 3,
+      "title": "Retrieval Model",
+      "number": "5.6"
+    },
+    {
+      "id": "section-5.6.1",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.6.1",
+      "level": 4,
+      "title": "The Cookie Header Field",
+      "number": "5.6.1"
+    },
+    {
+      "id": "section-5.6.2",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.6.2",
+      "level": 4,
+      "title": "Non-HTTP APIs",
+      "number": "5.6.2"
+    },
+    {
+      "id": "section-5.6.3",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-5.6.3",
+      "level": 4,
+      "title": "Retrieval Algorithm",
+      "number": "5.6.3"
+    },
+    {
+      "id": "section-6",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-6",
+      "level": 2,
+      "title": "Implementation Considerations",
+      "number": "6"
+    },
+    {
+      "id": "section-6.1",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-6.1",
+      "level": 3,
+      "title": "Limits",
+      "number": "6.1"
+    },
+    {
+      "id": "section-6.2",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-6.2",
+      "level": 3,
+      "title": "Application Programming Interfaces",
+      "number": "6.2"
+    },
+    {
+      "id": "section-6.3",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-6.3",
+      "level": 3,
+      "title": "IDNA Dependency and Migration",
+      "number": "6.3"
+    },
+    {
+      "id": "section-7",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-7",
+      "level": 2,
+      "title": "Privacy Considerations",
+      "number": "7"
+    },
+    {
+      "id": "section-7.1",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-7.1",
+      "level": 3,
+      "title": "Third-Party Cookies",
+      "number": "7.1"
+    },
+    {
+      "id": "section-7.2",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-7.2",
+      "level": 3,
+      "title": "Cookie policy",
+      "number": "7.2"
+    },
+    {
+      "id": "section-7.3",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-7.3",
+      "level": 3,
+      "title": "User Controls",
+      "number": "7.3"
+    },
+    {
+      "id": "section-7.4",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-7.4",
+      "level": 3,
+      "title": "Expiration Dates",
+      "number": "7.4"
+    },
+    {
+      "id": "section-8",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-8",
+      "level": 2,
+      "title": "Security Considerations",
+      "number": "8"
+    },
+    {
+      "id": "section-8.1",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-8.1",
+      "level": 3,
+      "title": "Overview",
+      "number": "8.1"
+    },
+    {
+      "id": "section-8.2",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-8.2",
+      "level": 3,
+      "title": "Ambient Authority",
+      "number": "8.2"
+    },
+    {
+      "id": "section-8.3",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-8.3",
+      "level": 3,
+      "title": "Clear Text",
+      "number": "8.3"
+    },
+    {
+      "id": "section-8.4",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-8.4",
+      "level": 3,
+      "title": "Session Identifiers",
+      "number": "8.4"
+    },
+    {
+      "id": "section-8.5",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-8.5",
+      "level": 3,
+      "title": "Weak Confidentiality",
+      "number": "8.5"
+    },
+    {
+      "id": "section-8.6",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-8.6",
+      "level": 3,
+      "title": "Weak Integrity",
+      "number": "8.6"
+    },
+    {
+      "id": "section-8.7",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-8.7",
+      "level": 3,
+      "title": "Reliance on DNS",
+      "number": "8.7"
+    },
+    {
+      "id": "section-8.8",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-8.8",
+      "level": 3,
+      "title": "SameSite Cookies",
+      "number": "8.8"
+    },
+    {
+      "id": "section-8.8.1",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-8.8.1",
+      "level": 4,
+      "title": "Defense in depth",
+      "number": "8.8.1"
+    },
+    {
+      "id": "section-8.8.2",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-8.8.2",
+      "level": 4,
+      "title": "Top-level Navigations",
+      "number": "8.8.2"
+    },
+    {
+      "id": "section-8.8.3",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-8.8.3",
+      "level": 4,
+      "title": "Mashups and Widgets",
+      "number": "8.8.3"
+    },
+    {
+      "id": "section-8.8.4",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-8.8.4",
+      "level": 4,
+      "title": "Server-controlled",
+      "number": "8.8.4"
+    },
+    {
+      "id": "section-8.8.5",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-8.8.5",
+      "level": 4,
+      "title": "Reload navigations",
+      "number": "8.8.5"
+    },
+    {
+      "id": "section-8.8.6",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-8.8.6",
+      "level": 4,
+      "title": "Top-level requests with \"unsafe\" methods",
+      "number": "8.8.6"
+    },
+    {
+      "id": "section-9",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-9",
+      "level": 2,
+      "title": "IANA Considerations",
+      "number": "9"
+    },
+    {
+      "id": "section-9.1",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-9.1",
+      "level": 3,
+      "title": "Cookie",
+      "number": "9.1"
+    },
+    {
+      "id": "section-9.2",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-9.2",
+      "level": 3,
+      "title": "Set-Cookie",
+      "number": "9.2"
+    },
+    {
+      "id": "section-9.3",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-9.3",
+      "level": 3,
+      "title": "Cookie Attribute Registry",
+      "number": "9.3"
+    },
+    {
+      "id": "section-9.3.1",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-9.3.1",
+      "level": 4,
+      "title": "Procedure",
+      "number": "9.3.1"
+    },
+    {
+      "id": "section-9.3.2",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-9.3.2",
+      "level": 4,
+      "title": "Registration",
+      "number": "9.3.2"
+    },
+    {
+      "id": "section-10",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-10",
+      "level": 2,
+      "title": "10. References"
+    },
+    {
+      "id": "section-10.1",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-10.1",
+      "level": 3,
+      "title": "Normative References",
+      "number": "10.1"
+    },
+    {
+      "id": "section-10.2",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#section-10.2",
+      "level": 3,
+      "title": "Informative References",
+      "number": "10.2"
+    },
+    {
+      "id": "appendix-A",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#appendix-A",
+      "level": 2,
+      "title": "Appendix A. Changes"
+    },
+    {
+      "id": "appendix-A.1",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#appendix-A.1",
+      "level": 3,
+      "title": "draft-ietf-httpbis-rfc6265bis-00",
+      "number": "A.1"
+    },
+    {
+      "id": "appendix-A.2",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#appendix-A.2",
+      "level": 3,
+      "title": "draft-ietf-httpbis-rfc6265bis-01",
+      "number": "A.2"
+    },
+    {
+      "id": "appendix-A.3",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#appendix-A.3",
+      "level": 3,
+      "title": "draft-ietf-httpbis-rfc6265bis-02",
+      "number": "A.3"
+    },
+    {
+      "id": "appendix-A.4",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#appendix-A.4",
+      "level": 3,
+      "title": "draft-ietf-httpbis-rfc6265bis-03",
+      "number": "A.4"
+    },
+    {
+      "id": "appendix-A.5",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#appendix-A.5",
+      "level": 3,
+      "title": "draft-ietf-httpbis-rfc6265bis-04",
+      "number": "A.5"
+    },
+    {
+      "id": "appendix-A.6",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#appendix-A.6",
+      "level": 3,
+      "title": "draft-ietf-httpbis-rfc6265bis-05",
+      "number": "A.6"
+    },
+    {
+      "id": "appendix-A.7",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#appendix-A.7",
+      "level": 3,
+      "title": "draft-ietf-httpbis-rfc6265bis-06",
+      "number": "A.7"
+    },
+    {
+      "id": "appendix-A.8",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#appendix-A.8",
+      "level": 3,
+      "title": "draft-ietf-httpbis-rfc6265bis-07",
+      "number": "A.8"
+    },
+    {
+      "id": "appendix-A.9",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#appendix-A.9",
+      "level": 3,
+      "title": "draft-ietf-httpbis-rfc6265bis-08",
+      "number": "A.9"
+    },
+    {
+      "id": "appendix-A.10",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#appendix-A.10",
+      "level": 3,
+      "title": "draft-ietf-httpbis-rfc6265bis-09",
+      "number": "A.10"
+    },
+    {
+      "id": "appendix-A.11",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#appendix-A.11",
+      "level": 3,
+      "title": "draft-ietf-httpbis-rfc6265bis-10",
+      "number": "A.11"
+    },
+    {
+      "id": "appendix-B",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#appendix-B",
+      "level": 2,
+      "title": "Acknowledgements"
+    },
+    {
+      "id": "appendix-C",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#appendix-C",
+      "level": 2,
+      "title": "Authors' Addresses"
+    }
+  ]
+}

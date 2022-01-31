@@ -1,0 +1,105 @@
+{
+  "spec": {
+    "title": "CSS Color Module Level 4",
+    "url": "https://drafts.csswg.org/css-color/"
+  },
+  "properties": {
+    "color": {
+      "name": "color",
+      "value": "<color>",
+      "initial": "CanvasText",
+      "appliesTo": "all elements and text",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "computedValue": "computed color, see resolving color values",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
+      "styleDeclaration": [
+        "color"
+      ]
+    },
+    "opacity": {
+      "name": "opacity",
+      "value": "<alpha-value>",
+      "initial": "1",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "map to the range [0,1]",
+      "computedValue": "specified number, clamped to the range [0,1]",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
+      "styleDeclaration": [
+        "opacity"
+      ]
+    }
+  },
+  "descriptors": {},
+  "valuespaces": {
+    "<color>": {
+      "value": "<absolute-color-base> | currentcolor | <system-color> | <device-cmyk()>"
+    },
+    "<absolute-color-base>": {
+      "value": "<hex-color> | <named-color> | transparent | <rgb()> | <rgba()> | <hsl()> | <hsla()> | <hwb()> | <lab()> | <lch()> | <oklab()> | <oklch()> | <color()>"
+    },
+    "<hue>": {
+      "value": "<number> | <angle> | none"
+    },
+    "<rgb()>": {
+      "value": "rgb( [<percentage> | none]{3} [ / [<alpha-value> | none] ]? ) | rgb( [<number> | none]{3} [ / [<alpha-value> | none] ]? )"
+    },
+    "<alpha-value>": {
+      "value": "<number> | <percentage>"
+    },
+    "<hsl()>": {
+      "value": "hsl( [<hue> | none] [<percentage> | none] [<percentage> | none] [ / [<alpha-value> | none] ]? )"
+    },
+    "<hwb()>": {
+      "value": "hwb( [<hue> | none] [<percentage> | none] [<percentage> | none] [ / [<alpha-value> | none] ]? )"
+    },
+    "<lab()>": {
+      "value": "lab( [<percentage> | none] [<number> | none] [<number> | none] [ / [<alpha-value> | none] ]? )"
+    },
+    "<lch()>": {
+      "value": "lch( [<percentage> | none] [<number> | none] [<hue> | none] [ / [<alpha-value> | none] ]? )"
+    },
+    "<oklab()>": {
+      "value": "oklab( [<percentage> | none] [<number> | none] [<number> | none] [ / [<alpha-value> | none] ]? )"
+    },
+    "<oklch()>": {
+      "value": "oklch( [<percentage> | none] [<number> | none] [<hue> | none] [ / [<alpha-value> | none] ]? )"
+    },
+    "<color()>": {
+      "value": "color( <colorspace-params> [ / <alpha-value> ]? )"
+    },
+    "<colorspace-params>": {
+      "value": "[ <predefined-rgb-params> | <xyz-params>]"
+    },
+    "<predefined-rgb-params>": {
+      "value": "<predefined-rgb> [ <number> | <percentage> | none ]{3}"
+    },
+    "<predefined-rgb>": {
+      "value": "srgb | srgb-linear | display-p3 | a98-rgb | prophoto-rgb | rec2020"
+    },
+    "<xyz-params>": {
+      "value": "<xyz-space> [ <number> | none ]{3}"
+    },
+    "<xyz-space>": {
+      "value": "xyz | xyz-d50 | xyz-d65"
+    },
+    "<color-space>": {
+      "value": "<rectangular-color-space> | <polar-color-space>"
+    },
+    "<rectangular-color-space>": {
+      "value": "srgb | srgb-linear | lab | oklab | xyz | xyz-d50 | xyz-d65"
+    },
+    "<polar-color-space>": {
+      "value": "hsl | hwb | lch | oklch"
+    },
+    "<hue-interpolation-method>": {
+      "value": "[ shorter | longer | increasing | decreasing | specified ] hue"
+    },
+    "<color-interpolation-method>": {
+      "value": "in [ <rectangular-color-space> | <polar-color-space> <hue-interpolation-method>? ]"
+    }
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "name": "XRRigidTransform",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebXR Device API",
+      "url": "https://www.w3.org/TR/webxr/"
+    },
+    "fragment": "[SecureContext, Exposed=Window]\ninterface XRRigidTransform {\n  constructor(optional DOMPointInit position = {}, optional DOMPointInit orientation = {});\n  [SameObject] readonly attribute DOMPointReadOnly position;\n  [SameObject] readonly attribute DOMPointReadOnly orientation;\n  readonly attribute Float32Array matrix;\n  [SameObject] readonly attribute XRRigidTransform inverse;\n};",
+    "href": "https://immersive-web.github.io/webxr/#xrrigidtransform"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webxr/": [
+      {
+        "id": "xrrigidtransform",
+        "href": "https://immersive-web.github.io/webxr/#xrrigidtransform",
+        "linkingText": [
+          "XRRigidTransform"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrrigidtransform-interface",
+          "href": "https://immersive-web.github.io/webxr/#xrrigidtransform-interface",
+          "title": "XRRigidTransform",
+          "number": "8.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-xrrigidtransform-xrrigidtransform",
+        "href": "https://immersive-web.github.io/webxr/#dom-xrrigidtransform-xrrigidtransform",
+        "linkingText": [
+          "XRRigidTransform(position, orientation)",
+          "constructor(position, orientation)",
+          "XRRigidTransform(position)",
+          "constructor(position)",
+          "XRRigidTransform()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "XRRigidTransform"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrrigidtransform-interface",
+          "href": "https://immersive-web.github.io/webxr/#xrrigidtransform-interface",
+          "title": "XRRigidTransform",
+          "number": "8.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-xrrigidtransform-position",
+        "href": "https://immersive-web.github.io/webxr/#dom-xrrigidtransform-position",
+        "linkingText": [
+          "position"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XRRigidTransform"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrrigidtransform-interface",
+          "href": "https://immersive-web.github.io/webxr/#xrrigidtransform-interface",
+          "title": "XRRigidTransform",
+          "number": "8.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-xrrigidtransform-orientation",
+        "href": "https://immersive-web.github.io/webxr/#dom-xrrigidtransform-orientation",
+        "linkingText": [
+          "orientation"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XRRigidTransform"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrrigidtransform-interface",
+          "href": "https://immersive-web.github.io/webxr/#xrrigidtransform-interface",
+          "title": "XRRigidTransform",
+          "number": "8.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-xrrigidtransform-matrix",
+        "href": "https://immersive-web.github.io/webxr/#dom-xrrigidtransform-matrix",
+        "linkingText": [
+          "matrix"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XRRigidTransform"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrrigidtransform-interface",
+          "href": "https://immersive-web.github.io/webxr/#xrrigidtransform-interface",
+          "title": "XRRigidTransform",
+          "number": "8.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-xrrigidtransform-inverse",
+        "href": "https://immersive-web.github.io/webxr/#dom-xrrigidtransform-inverse",
+        "linkingText": [
+          "inverse"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XRRigidTransform"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrrigidtransform-interface",
+          "href": "https://immersive-web.github.io/webxr/#xrrigidtransform-interface",
+          "title": "XRRigidTransform",
+          "number": "8.3"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

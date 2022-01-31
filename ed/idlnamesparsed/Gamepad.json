@@ -1,0 +1,301 @@
+{
+  "name": "Gamepad",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Gamepad",
+      "url": "https://www.w3.org/TR/gamepad/"
+    },
+    "fragment": "[Exposed=Window, SecureContext]\ninterface Gamepad {\n  readonly attribute DOMString id;\n  readonly attribute long index;\n  readonly attribute boolean connected;\n  readonly attribute DOMHighResTimeStamp timestamp;\n  readonly attribute GamepadMappingType mapping;\n  readonly attribute FrozenArray<double> axes;\n  readonly attribute FrozenArray<GamepadButton> buttons;\n};",
+    "href": "https://w3c.github.io/gamepad/#dom-gamepad"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "Gamepad Extensions",
+        "url": "https://w3c.github.io/gamepad/extensions.html"
+      },
+      "fragment": "partial interface Gamepad {\n  readonly attribute GamepadHand hand;\n  readonly attribute FrozenArray<GamepadHapticActuator> hapticActuators;\n  readonly attribute GamepadPose? pose;\n  readonly attribute FrozenArray<GamepadTouch>? touchEvents;\n};"
+    }
+  ],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/gamepad/": [
+      {
+        "id": "dom-gamepad",
+        "href": "https://w3c.github.io/gamepad/#dom-gamepad",
+        "linkingText": [
+          "Gamepad"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "gamepad-interface",
+          "href": "https://w3c.github.io/gamepad/#gamepad-interface",
+          "title": "Gamepad interface",
+          "number": "3"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-gamepad-id",
+        "href": "https://w3c.github.io/gamepad/#dom-gamepad-id",
+        "linkingText": [
+          "id"
+        ],
+        "localLinkingText": [
+          "Gamepad.id"
+        ],
+        "type": "attribute",
+        "for": [
+          "Gamepad"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "gamepad-interface",
+          "href": "https://w3c.github.io/gamepad/#gamepad-interface",
+          "title": "Gamepad interface",
+          "number": "3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gamepad-index",
+        "href": "https://w3c.github.io/gamepad/#dom-gamepad-index",
+        "linkingText": [
+          "index"
+        ],
+        "localLinkingText": [
+          "Gamepad.index"
+        ],
+        "type": "attribute",
+        "for": [
+          "Gamepad"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "gamepad-interface",
+          "href": "https://w3c.github.io/gamepad/#gamepad-interface",
+          "title": "Gamepad interface",
+          "number": "3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gamepad-connected",
+        "href": "https://w3c.github.io/gamepad/#dom-gamepad-connected",
+        "linkingText": [
+          "connected"
+        ],
+        "localLinkingText": [
+          "Gamepad.connected"
+        ],
+        "type": "attribute",
+        "for": [
+          "Gamepad"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "gamepad-interface",
+          "href": "https://w3c.github.io/gamepad/#gamepad-interface",
+          "title": "Gamepad interface",
+          "number": "3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gamepad-timestamp",
+        "href": "https://w3c.github.io/gamepad/#dom-gamepad-timestamp",
+        "linkingText": [
+          "timestamp"
+        ],
+        "localLinkingText": [
+          "Gamepad.timestamp"
+        ],
+        "type": "attribute",
+        "for": [
+          "Gamepad"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "gamepad-interface",
+          "href": "https://w3c.github.io/gamepad/#gamepad-interface",
+          "title": "Gamepad interface",
+          "number": "3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gamepad-mapping",
+        "href": "https://w3c.github.io/gamepad/#dom-gamepad-mapping",
+        "linkingText": [
+          "mapping"
+        ],
+        "localLinkingText": [
+          "Gamepad.mapping"
+        ],
+        "type": "attribute",
+        "for": [
+          "Gamepad"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "gamepad-interface",
+          "href": "https://w3c.github.io/gamepad/#gamepad-interface",
+          "title": "Gamepad interface",
+          "number": "3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gamepad-axes",
+        "href": "https://w3c.github.io/gamepad/#dom-gamepad-axes",
+        "linkingText": [
+          "axes"
+        ],
+        "localLinkingText": [
+          "Gamepad.axes"
+        ],
+        "type": "attribute",
+        "for": [
+          "Gamepad"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "gamepad-interface",
+          "href": "https://w3c.github.io/gamepad/#gamepad-interface",
+          "title": "Gamepad interface",
+          "number": "3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gamepad-buttons",
+        "href": "https://w3c.github.io/gamepad/#dom-gamepad-buttons",
+        "linkingText": [
+          "buttons"
+        ],
+        "localLinkingText": [
+          "Gamepad.buttons"
+        ],
+        "type": "attribute",
+        "for": [
+          "Gamepad"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "gamepad-interface",
+          "href": "https://w3c.github.io/gamepad/#gamepad-interface",
+          "title": "Gamepad interface",
+          "number": "3"
+        },
+        "definedIn": "dt"
+      }
+    ],
+    "https://w3c.github.io/gamepad/extensions.html": [
+      {
+        "id": "dom-gamepad-hand",
+        "href": "https://w3c.github.io/gamepad/extensions.html#dom-gamepad-hand",
+        "linkingText": [
+          "hand"
+        ],
+        "localLinkingText": [
+          "Gamepad.hand"
+        ],
+        "type": "attribute",
+        "for": [
+          "Gamepad"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "partial-gamepad-interface",
+          "href": "https://w3c.github.io/gamepad/extensions.html#partial-gamepad-interface",
+          "title": "Partial Gamepad Interface",
+          "number": "8"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gamepad-hapticactuators",
+        "href": "https://w3c.github.io/gamepad/extensions.html#dom-gamepad-hapticactuators",
+        "linkingText": [
+          "hapticActuators"
+        ],
+        "localLinkingText": [
+          "Gamepad.hapticActuators"
+        ],
+        "type": "attribute",
+        "for": [
+          "Gamepad"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "partial-gamepad-interface",
+          "href": "https://w3c.github.io/gamepad/extensions.html#partial-gamepad-interface",
+          "title": "Partial Gamepad Interface",
+          "number": "8"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gamepad-pose",
+        "href": "https://w3c.github.io/gamepad/extensions.html#dom-gamepad-pose",
+        "linkingText": [
+          "pose"
+        ],
+        "localLinkingText": [
+          "Gamepad.pose"
+        ],
+        "type": "attribute",
+        "for": [
+          "Gamepad"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "partial-gamepad-interface",
+          "href": "https://w3c.github.io/gamepad/extensions.html#partial-gamepad-interface",
+          "title": "Partial Gamepad Interface",
+          "number": "8"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gamepad-touchevents",
+        "href": "https://w3c.github.io/gamepad/extensions.html#dom-gamepad-touchevents",
+        "linkingText": [
+          "touchEvents"
+        ],
+        "localLinkingText": [
+          "Gamepad.touchEvents"
+        ],
+        "type": "attribute",
+        "for": [
+          "Gamepad"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "partial-gamepad-interface",
+          "href": "https://w3c.github.io/gamepad/extensions.html#partial-gamepad-interface",
+          "title": "Partial Gamepad Interface",
+          "number": "8"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

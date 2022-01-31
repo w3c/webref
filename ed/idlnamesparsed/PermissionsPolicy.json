@@ -1,0 +1,123 @@
+{
+  "name": "PermissionsPolicy",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Permissions Policy",
+      "url": "https://www.w3.org/TR/permissions-policy-1/"
+    },
+    "fragment": "[Exposed=Window]\ninterface PermissionsPolicy {\n  boolean allowsFeature(DOMString feature, optional DOMString origin);\n  sequence<DOMString> features();\n  sequence<DOMString> allowedFeatures();\n  sequence<DOMString> getAllowlistForFeature(DOMString feature);\n};",
+    "href": "https://w3c.github.io/webappsec-permissions-policy/#permissionspolicy"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/permissions-policy-1/": [
+      {
+        "id": "permissionspolicy",
+        "href": "https://w3c.github.io/webappsec-permissions-policy/#permissionspolicy",
+        "linkingText": [
+          "PermissionsPolicy"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-policy-object",
+          "href": "https://w3c.github.io/webappsec-permissions-policy/#the-policy-object",
+          "title": "The permissionsPolicy object",
+          "number": "7.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-permissionspolicy-allowsfeature",
+        "href": "https://w3c.github.io/webappsec-permissions-policy/#dom-permissionspolicy-allowsfeature",
+        "linkingText": [
+          "allowsFeature(feature, origin)",
+          "allowsFeature(feature)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "PermissionsPolicy"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-policy-object",
+          "href": "https://w3c.github.io/webappsec-permissions-policy/#the-policy-object",
+          "title": "The permissionsPolicy object",
+          "number": "7.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-permissionspolicy-features",
+        "href": "https://w3c.github.io/webappsec-permissions-policy/#dom-permissionspolicy-features",
+        "linkingText": [
+          "features()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "PermissionsPolicy"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-policy-object",
+          "href": "https://w3c.github.io/webappsec-permissions-policy/#the-policy-object",
+          "title": "The permissionsPolicy object",
+          "number": "7.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-permissionspolicy-allowedfeatures",
+        "href": "https://w3c.github.io/webappsec-permissions-policy/#dom-permissionspolicy-allowedfeatures",
+        "linkingText": [
+          "allowedFeatures()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "PermissionsPolicy"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-policy-object",
+          "href": "https://w3c.github.io/webappsec-permissions-policy/#the-policy-object",
+          "title": "The permissionsPolicy object",
+          "number": "7.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-permissionspolicy-getallowlistforfeature",
+        "href": "https://w3c.github.io/webappsec-permissions-policy/#dom-permissionspolicy-getallowlistforfeature",
+        "linkingText": [
+          "getAllowlistForFeature(feature)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "PermissionsPolicy"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-policy-object",
+          "href": "https://w3c.github.io/webappsec-permissions-policy/#the-policy-object",
+          "title": "The permissionsPolicy object",
+          "number": "7.2"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

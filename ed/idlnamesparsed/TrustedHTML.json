@@ -1,0 +1,101 @@
+{
+  "name": "TrustedHTML",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Trusted Types",
+      "url": "https://w3c.github.io/webappsec-trusted-types/dist/spec/"
+    },
+    "fragment": "[Exposed=(Window,Worker)]\ninterface TrustedHTML {\n  stringifier;\n  DOMString toJSON();\n  static TrustedHTML fromLiteral(object templateStringsArray);\n};",
+    "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#trustedhtml"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://w3c.github.io/webappsec-trusted-types/dist/spec/": [
+      {
+        "id": "trustedhtml",
+        "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#trustedhtml",
+        "linkingText": [
+          "TrustedHTML"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "trusted-html",
+          "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#trusted-html",
+          "title": "TrustedHTML",
+          "number": "2.2.1"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "trustedhtml-stringification-behavior",
+        "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#trustedhtml-stringification-behavior",
+        "linkingText": [
+          "stringificationbehavior"
+        ],
+        "localLinkingText": [],
+        "type": "dfn",
+        "for": [
+          "TrustedHTML"
+        ],
+        "access": "private",
+        "informative": false,
+        "heading": {
+          "id": "trusted-html",
+          "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#trusted-html",
+          "title": "TrustedHTML",
+          "number": "2.2.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-trustedhtml-tojson",
+        "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#dom-trustedhtml-tojson",
+        "linkingText": [
+          "toJSON()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "TrustedHTML"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "trusted-html",
+          "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#trusted-html",
+          "title": "TrustedHTML",
+          "number": "2.2.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-trustedhtml-fromliteral",
+        "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#dom-trustedhtml-fromliteral",
+        "linkingText": [
+          "fromLiteral(templateStringsArray)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "TrustedHTML"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "trusted-html",
+          "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#trusted-html",
+          "title": "TrustedHTML",
+          "number": "2.2.1"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

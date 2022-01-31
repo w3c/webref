@@ -1,0 +1,134 @@
+{
+  "name": "ScrollIntoViewOptions",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "CSSOM View Module",
+      "url": "https://www.w3.org/TR/cssom-view-1/"
+    },
+    "fragment": "dictionary ScrollIntoViewOptions : ScrollOptions {\n  ScrollLogicalPosition block = \"start\";\n  ScrollLogicalPosition inline = \"nearest\";\n};",
+    "href": "https://drafts.csswg.org/cssom-view/#dictdef-scrollintoviewoptions"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "ScrollOptions",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "CSSOM View Module",
+        "url": "https://www.w3.org/TR/cssom-view-1/"
+      },
+      "fragment": "dictionary ScrollOptions {\n    ScrollBehavior behavior = \"auto\";\n};",
+      "href": "https://drafts.csswg.org/cssom-view/#dictdef-scrolloptions"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/cssom-view-1/": [
+      {
+        "id": "dictdef-scrollintoviewoptions",
+        "href": "https://drafts.csswg.org/cssom-view/#dictdef-scrollintoviewoptions",
+        "linkingText": [
+          "ScrollIntoViewOptions"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "extension-to-the-element-interface",
+          "href": "https://drafts.csswg.org/cssom-view/#extension-to-the-element-interface",
+          "title": "Extensions to the Element Interface",
+          "number": "6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-scrollintoviewoptions-block",
+        "href": "https://drafts.csswg.org/cssom-view/#dom-scrollintoviewoptions-block",
+        "linkingText": [
+          "block"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "ScrollIntoViewOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "extension-to-the-element-interface",
+          "href": "https://drafts.csswg.org/cssom-view/#extension-to-the-element-interface",
+          "title": "Extensions to the Element Interface",
+          "number": "6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-scrollintoviewoptions-inline",
+        "href": "https://drafts.csswg.org/cssom-view/#dom-scrollintoviewoptions-inline",
+        "linkingText": [
+          "inline"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "ScrollIntoViewOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "extension-to-the-element-interface",
+          "href": "https://drafts.csswg.org/cssom-view/#extension-to-the-element-interface",
+          "title": "Extensions to the Element Interface",
+          "number": "6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dictdef-scrolloptions",
+        "href": "https://drafts.csswg.org/cssom-view/#dictdef-scrolloptions",
+        "linkingText": [
+          "ScrollOptions"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "extensions-to-the-window-interface",
+          "href": "https://drafts.csswg.org/cssom-view/#extensions-to-the-window-interface",
+          "title": "Extensions to the Window Interface",
+          "number": "4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-scrolloptions-behavior",
+        "href": "https://drafts.csswg.org/cssom-view/#dom-scrolloptions-behavior",
+        "linkingText": [
+          "behavior"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "ScrollOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "extensions-to-the-window-interface",
+          "href": "https://drafts.csswg.org/cssom-view/#extensions-to-the-window-interface",
+          "title": "Extensions to the Window Interface",
+          "number": "4"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

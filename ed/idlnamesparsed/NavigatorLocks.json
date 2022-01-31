@@ -1,0 +1,59 @@
+{
+  "name": "NavigatorLocks",
+  "type": "interface mixin",
+  "defined": {
+    "spec": {
+      "title": "Web Locks API",
+      "url": "https://w3c.github.io/web-locks/"
+    },
+    "fragment": "[SecureContext]\ninterface mixin NavigatorLocks {\n  readonly attribute LockManager locks;\n};",
+    "href": "https://w3c.github.io/web-locks/#navigatorlocks"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://w3c.github.io/web-locks/": [
+      {
+        "id": "navigatorlocks",
+        "href": "https://w3c.github.io/web-locks/#navigatorlocks",
+        "linkingText": [
+          "NavigatorLocks"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "navigator-mixins",
+          "href": "https://w3c.github.io/web-locks/#navigator-mixins",
+          "title": "Navigator Mixins",
+          "number": "3.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-navigatorlocks-locks",
+        "href": "https://w3c.github.io/web-locks/#dom-navigatorlocks-locks",
+        "linkingText": [
+          "locks"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "NavigatorLocks"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "navigator-mixins",
+          "href": "https://w3c.github.io/web-locks/#navigator-mixins",
+          "title": "Navigator Mixins",
+          "number": "3.1"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

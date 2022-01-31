@@ -1,0 +1,16 @@
+// Source: WebCodecs (https://www.w3.org/TR/webcodecs/)
+[Exposed=(Window,DedicatedWorker), SecureContext]
+interface VideoEncoder {
+  constructor(VideoEncoderInit init);
+
+  readonly attribute CodecState state;
+  readonly attribute long encodeQueueSize;
+
+  undefined configure(VideoEncoderConfig config);
+  undefined encode(VideoFrame frame, optional VideoEncoderEncodeOptions options = {});
+  Promise<undefined> flush();
+  undefined reset();
+  undefined close();
+
+  static Promise<VideoEncoderSupport> isConfigSupported(VideoEncoderConfig config);
+};

@@ -1,0 +1,127 @@
+{
+  "spec": {
+    "title": "CSS Box Sizing Module Level 3",
+    "url": "https://drafts.csswg.org/css-sizing-3/"
+  },
+  "properties": {
+    "width": {
+      "name": "width",
+      "value": "auto | <length-percentage> | min-content | max-content | fit-content(<length-percentage>)",
+      "initial": "auto",
+      "appliesTo": "all elements except non-replaced inlines",
+      "inherited": "no",
+      "percentages": "relative to width/height of containing block",
+      "computedValue": "as specified, with <length-percentage> values computed",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type, recursing into fit-content()",
+      "styleDeclaration": [
+        "width"
+      ]
+    },
+    "height": {
+      "name": "height",
+      "value": "auto | <length-percentage> | min-content | max-content | fit-content(<length-percentage>)",
+      "initial": "auto",
+      "appliesTo": "all elements except non-replaced inlines",
+      "inherited": "no",
+      "percentages": "relative to width/height of containing block",
+      "computedValue": "as specified, with <length-percentage> values computed",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type, recursing into fit-content()",
+      "styleDeclaration": [
+        "height"
+      ]
+    },
+    "min-width": {
+      "name": "min-width",
+      "value": "auto | <length-percentage> | min-content | max-content | fit-content(<length-percentage>)",
+      "initial": "auto",
+      "appliesTo": "all elements that accept width or height",
+      "inherited": "no",
+      "percentages": "relative to width/height of containing block",
+      "computedValue": "as specified, with <length-percentage> values computed",
+      "canonicalOrder": "per grammar",
+      "animatable": "by computed value, recursing into fit-content()",
+      "styleDeclaration": [
+        "min-width",
+        "minWidth"
+      ]
+    },
+    "min-height": {
+      "name": "min-height",
+      "value": "auto | <length-percentage> | min-content | max-content | fit-content(<length-percentage>)",
+      "initial": "auto",
+      "appliesTo": "all elements that accept width or height",
+      "inherited": "no",
+      "percentages": "relative to width/height of containing block",
+      "computedValue": "as specified, with <length-percentage> values computed",
+      "canonicalOrder": "per grammar",
+      "animatable": "by computed value, recursing into fit-content()",
+      "styleDeclaration": [
+        "min-height",
+        "minHeight"
+      ]
+    },
+    "max-width": {
+      "name": "max-width",
+      "value": "none | <length-percentage> | min-content | max-content | fit-content(<length-percentage>)",
+      "initial": "none",
+      "appliesTo": "all elements that accept width or height",
+      "inherited": "no",
+      "percentages": "relative to width/height of containing block",
+      "computedValue": "as specified, with <length-percentage> values computed",
+      "canonicalOrder": "per grammar",
+      "animatable": "by computed value, recursing into fit-content()",
+      "styleDeclaration": [
+        "max-width",
+        "maxWidth"
+      ]
+    },
+    "max-height": {
+      "name": "max-height",
+      "value": "none | <length-percentage> | min-content | max-content | fit-content(<length-percentage>)",
+      "initial": "none",
+      "appliesTo": "all elements that accept width or height",
+      "inherited": "no",
+      "percentages": "relative to width/height of containing block",
+      "computedValue": "as specified, with <length-percentage> values computed",
+      "canonicalOrder": "per grammar",
+      "animatable": "by computed value, recursing into fit-content()",
+      "styleDeclaration": [
+        "max-height",
+        "maxHeight"
+      ]
+    },
+    "box-sizing": {
+      "name": "box-sizing",
+      "value": "content-box | border-box",
+      "initial": "content-box",
+      "appliesTo": "all elements that accept width or height",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "specified keyword",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "box-sizing",
+        "boxSizing"
+      ]
+    },
+    "column-width": {
+      "name": "column-width",
+      "newValues": "min-content | max-content | fit-content(<length-percentage>)",
+      "computedValue": "as specified, with <length-percentage> values computed",
+      "animationType": "by computed value type",
+      "styleDeclaration": [
+        "column-width",
+        "columnWidth"
+      ]
+    }
+  },
+  "descriptors": {},
+  "valuespaces": {
+    "<fit-content()>": {
+      "value": "fit-content(<length-percentage>)"
+    }
+  }
+}

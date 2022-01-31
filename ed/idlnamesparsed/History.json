@@ -1,0 +1,206 @@
+{
+  "name": "History",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "HTML Standard",
+      "url": "https://html.spec.whatwg.org/multipage/"
+    },
+    "fragment": "[Exposed=Window]\ninterface History {\n  readonly attribute unsigned long length;\n  attribute ScrollRestoration scrollRestoration;\n  readonly attribute any state;\n  undefined go(optional long delta = 0);\n  undefined back();\n  undefined forward();\n  undefined pushState(any data, DOMString unused, optional USVString? url = null);\n  undefined replaceState(any data, DOMString unused, optional USVString? url = null);\n};",
+    "href": "https://html.spec.whatwg.org/multipage/history.html#history-3"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://html.spec.whatwg.org/multipage/": [
+      {
+        "id": "history-3",
+        "href": "https://html.spec.whatwg.org/multipage/history.html#history-3",
+        "linkingText": [
+          "History"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-history-interface",
+          "href": "https://html.spec.whatwg.org/multipage/history.html#the-history-interface",
+          "title": "The History interface",
+          "number": "7.10.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-history-length",
+        "href": "https://html.spec.whatwg.org/multipage/history.html#dom-history-length",
+        "linkingText": [
+          "length"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "History"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-history-interface",
+          "href": "https://html.spec.whatwg.org/multipage/history.html#the-history-interface",
+          "title": "The History interface",
+          "number": "7.10.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-history-scroll-restoration",
+        "href": "https://html.spec.whatwg.org/multipage/history.html#dom-history-scroll-restoration",
+        "linkingText": [
+          "scrollRestoration"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "History"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-history-interface",
+          "href": "https://html.spec.whatwg.org/multipage/history.html#the-history-interface",
+          "title": "The History interface",
+          "number": "7.10.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-history-state",
+        "href": "https://html.spec.whatwg.org/multipage/history.html#dom-history-state",
+        "linkingText": [
+          "state"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "History"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-history-interface",
+          "href": "https://html.spec.whatwg.org/multipage/history.html#the-history-interface",
+          "title": "The History interface",
+          "number": "7.10.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-history-go",
+        "href": "https://html.spec.whatwg.org/multipage/history.html#dom-history-go",
+        "linkingText": [
+          "go(delta)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "History"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-history-interface",
+          "href": "https://html.spec.whatwg.org/multipage/history.html#the-history-interface",
+          "title": "The History interface",
+          "number": "7.10.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-history-back",
+        "href": "https://html.spec.whatwg.org/multipage/history.html#dom-history-back",
+        "linkingText": [
+          "back()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "History"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-history-interface",
+          "href": "https://html.spec.whatwg.org/multipage/history.html#the-history-interface",
+          "title": "The History interface",
+          "number": "7.10.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-history-forward",
+        "href": "https://html.spec.whatwg.org/multipage/history.html#dom-history-forward",
+        "linkingText": [
+          "forward()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "History"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-history-interface",
+          "href": "https://html.spec.whatwg.org/multipage/history.html#the-history-interface",
+          "title": "The History interface",
+          "number": "7.10.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-history-pushstate",
+        "href": "https://html.spec.whatwg.org/multipage/history.html#dom-history-pushstate",
+        "linkingText": [
+          "pushState(data, unused, url)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "History"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-history-interface",
+          "href": "https://html.spec.whatwg.org/multipage/history.html#the-history-interface",
+          "title": "The History interface",
+          "number": "7.10.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-history-replacestate",
+        "href": "https://html.spec.whatwg.org/multipage/history.html#dom-history-replacestate",
+        "linkingText": [
+          "replaceState(data, unused, url)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "History"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-history-interface",
+          "href": "https://html.spec.whatwg.org/multipage/history.html#the-history-interface",
+          "title": "The History interface",
+          "number": "7.10.3"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

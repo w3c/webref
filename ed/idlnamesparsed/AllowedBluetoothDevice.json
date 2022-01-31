@@ -1,0 +1,122 @@
+{
+  "name": "AllowedBluetoothDevice",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Web Bluetooth",
+      "url": "https://webbluetoothcg.github.io/web-bluetooth/"
+    },
+    "fragment": "dictionary AllowedBluetoothDevice {\n  required DOMString deviceId;\n  required boolean mayUseGATT;\n  // An allowedServices of \"all\" means all services are allowed.\n  required (DOMString or sequence<UUID>) allowedServices;\n  required sequence<unsigned short> allowedManufacturerData;\n};",
+    "href": "https://webbluetoothcg.github.io/web-bluetooth/#dictdef-allowedbluetoothdevice"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://webbluetoothcg.github.io/web-bluetooth/": [
+      {
+        "id": "dictdef-allowedbluetoothdevice",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#dictdef-allowedbluetoothdevice",
+        "linkingText": [
+          "AllowedBluetoothDevice"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "permission-api-integration",
+          "href": "https://webbluetoothcg.github.io/web-bluetooth/#permission-api-integration",
+          "title": "Permission API Integration",
+          "number": "3.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-allowedbluetoothdevice-deviceid",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-allowedbluetoothdevice-deviceid",
+        "linkingText": [
+          "deviceId"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "AllowedBluetoothDevice"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "permission-api-integration",
+          "href": "https://webbluetoothcg.github.io/web-bluetooth/#permission-api-integration",
+          "title": "Permission API Integration",
+          "number": "3.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-allowedbluetoothdevice-mayusegatt",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-allowedbluetoothdevice-mayusegatt",
+        "linkingText": [
+          "mayUseGATT"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "AllowedBluetoothDevice"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "permission-api-integration",
+          "href": "https://webbluetoothcg.github.io/web-bluetooth/#permission-api-integration",
+          "title": "Permission API Integration",
+          "number": "3.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-allowedbluetoothdevice-allowedservices",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-allowedbluetoothdevice-allowedservices",
+        "linkingText": [
+          "allowedServices"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "AllowedBluetoothDevice"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "permission-api-integration",
+          "href": "https://webbluetoothcg.github.io/web-bluetooth/#permission-api-integration",
+          "title": "Permission API Integration",
+          "number": "3.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-allowedbluetoothdevice-allowedmanufacturerdata",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-allowedbluetoothdevice-allowedmanufacturerdata",
+        "linkingText": [
+          "allowedManufacturerData"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "AllowedBluetoothDevice"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "permission-api-integration",
+          "href": "https://webbluetoothcg.github.io/web-bluetooth/#permission-api-integration",
+          "title": "Permission API Integration",
+          "number": "3.1"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

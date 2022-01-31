@@ -1,0 +1,354 @@
+{
+  "spec": {
+    "title": "Private Click Measurement",
+    "url": "https://privacycg.github.io/private-click-measurement/"
+  },
+  "dfns": [
+    {
+      "id": "attribution",
+      "href": "https://privacycg.github.io/private-click-measurement/#attribution",
+      "linkingText": [
+        "attribution"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://privacycg.github.io/private-click-measurement/#terminology",
+        "title": "Terminology",
+        "number": "1.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "click-source-website",
+      "href": "https://privacycg.github.io/private-click-measurement/#click-source-website",
+      "linkingText": [
+        "click source website"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://privacycg.github.io/private-click-measurement/#terminology",
+        "title": "Terminology",
+        "number": "1.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "attribution-destination-website",
+      "href": "https://privacycg.github.io/private-click-measurement/#attribution-destination-website",
+      "linkingText": [
+        "attribution destination website"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://privacycg.github.io/private-click-measurement/#terminology",
+        "title": "Terminology",
+        "number": "1.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "attribution-source-id",
+      "href": "https://privacycg.github.io/private-click-measurement/#attribution-source-id",
+      "linkingText": [
+        "attribution source id"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://privacycg.github.io/private-click-measurement/#terminology",
+        "title": "Terminology",
+        "number": "1.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "trigger-data",
+      "href": "https://privacycg.github.io/private-click-measurement/#trigger-data",
+      "linkingText": [
+        "trigger data"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://privacycg.github.io/private-click-measurement/#terminology",
+        "title": "Terminology",
+        "number": "1.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "optional-trigger-priority",
+      "href": "https://privacycg.github.io/private-click-measurement/#optional-trigger-priority",
+      "linkingText": [
+        "optional trigger priority"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://privacycg.github.io/private-click-measurement/#terminology",
+        "title": "Terminology",
+        "number": "1.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "attribution-report",
+      "href": "https://privacycg.github.io/private-click-measurement/#attribution-report",
+      "linkingText": [
+        "attribution report"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://privacycg.github.io/private-click-measurement/#terminology",
+        "title": "Terminology",
+        "number": "1.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-htmlanchorelement-attributionsourceid",
+      "href": "https://privacycg.github.io/private-click-measurement/#dom-htmlanchorelement-attributionsourceid",
+      "linkingText": [
+        "attributionSourceId"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "HTMLAnchorElement"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "linkformat",
+        "href": "https://privacycg.github.io/private-click-measurement/#linkformat",
+        "title": "Click Source Link Format",
+        "number": "2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-htmlanchorelement-attributiondestination",
+      "href": "https://privacycg.github.io/private-click-measurement/#dom-htmlanchorelement-attributiondestination",
+      "linkingText": [
+        "attributionDestination"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "HTMLAnchorElement"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "linkformat",
+        "href": "https://privacycg.github.io/private-click-measurement/#linkformat",
+        "title": "Click Source Link Format",
+        "number": "2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "triggering-event",
+      "href": "https://privacycg.github.io/private-click-measurement/#triggering-event",
+      "linkingText": [
+        "triggering event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "triggering",
+        "href": "https://privacycg.github.io/private-click-measurement/#triggering",
+        "title": "Triggering of Click Attribution",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "generate-a-tiggering-event-url",
+      "href": "https://privacycg.github.io/private-click-measurement/#generate-a-tiggering-event-url",
+      "linkingText": [
+        "generate a tiggering event URL"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "triggering-event-url",
+        "href": "https://privacycg.github.io/private-click-measurement/#triggering-event-url",
+        "title": "Triggering Event URL",
+        "number": "6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "generate-an-attribution-report-url",
+      "href": "https://privacycg.github.io/private-click-measurement/#generate-an-attribution-report-url",
+      "linkingText": [
+        "generate an attribution report URL"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-report-url",
+        "href": "https://privacycg.github.io/private-click-measurement/#attribution-report-url",
+        "title": "Attribution Report URL",
+        "number": "6.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "click-source-attribute-on-pair",
+      "href": "https://privacycg.github.io/private-click-measurement/#click-source-attribute-on-pair",
+      "linkingText": [
+        "click source-attribute-on pair"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "click-source-attribute-on-pairs",
+        "href": "https://privacycg.github.io/private-click-measurement/#click-source-attribute-on-pairs",
+        "title": "Click source/attribute-on pairs",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "four-bit-decimal-value",
+      "href": "https://privacycg.github.io/private-click-measurement/#four-bit-decimal-value",
+      "linkingText": [
+        "four-bit decimal value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "n-bit-decimal-values",
+        "href": "https://privacycg.github.io/private-click-measurement/#n-bit-decimal-values",
+        "title": "N-bit decimal values",
+        "number": "8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "six-bit-decimal-value",
+      "href": "https://privacycg.github.io/private-click-measurement/#six-bit-decimal-value",
+      "linkingText": [
+        "six-bit decimal value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "n-bit-decimal-values",
+        "href": "https://privacycg.github.io/private-click-measurement/#n-bit-decimal-values",
+        "title": "N-bit decimal values",
+        "number": "8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "eight-bit-decimal-value",
+      "href": "https://privacycg.github.io/private-click-measurement/#eight-bit-decimal-value",
+      "linkingText": [
+        "eight-bit decimal value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "n-bit-decimal-values",
+        "href": "https://privacycg.github.io/private-click-measurement/#n-bit-decimal-values",
+        "title": "N-bit decimal values",
+        "number": "8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "extract-a-four-bit-decimal-value",
+      "href": "https://privacycg.github.io/private-click-measurement/#extract-a-four-bit-decimal-value",
+      "linkingText": [
+        "extract a four-bit decimal value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "n-bit-decimal-values",
+        "href": "https://privacycg.github.io/private-click-measurement/#n-bit-decimal-values",
+        "title": "N-bit decimal values",
+        "number": "8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "extract-a-six-bit-decimal-value",
+      "href": "https://privacycg.github.io/private-click-measurement/#extract-a-six-bit-decimal-value",
+      "linkingText": [
+        "extract a six-bit decimal value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "n-bit-decimal-values",
+        "href": "https://privacycg.github.io/private-click-measurement/#n-bit-decimal-values",
+        "title": "N-bit decimal values",
+        "number": "8"
+      },
+      "definedIn": "prose"
+    }
+  ]
+}

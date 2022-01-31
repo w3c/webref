@@ -1,0 +1,108 @@
+{
+  "name": "MediaKeySystemAccess",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Encrypted Media Extensions",
+      "url": "https://www.w3.org/TR/encrypted-media/"
+    },
+    "fragment": "[Exposed=Window, SecureContext] interface MediaKeySystemAccess {\n    readonly        attribute DOMString keySystem;\n    MediaKeySystemConfiguration getConfiguration ();\n    Promise<MediaKeys>          createMediaKeys ();\n};",
+    "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysystemaccess"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/encrypted-media/": [
+      {
+        "id": "dom-mediakeysystemaccess",
+        "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysystemaccess",
+        "linkingText": [
+          "MediaKeySystemAccess"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "mediakeysystemaccess-interface",
+          "href": "https://w3c.github.io/encrypted-media/#mediakeysystemaccess-interface",
+          "title": "MediaKeySystemAccess Interface",
+          "number": "4"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-mediakeysystemaccess-keysystem",
+        "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysystemaccess-keysystem",
+        "linkingText": [
+          "keySystem"
+        ],
+        "localLinkingText": [
+          "MediaKeySystemAccess.keySystem"
+        ],
+        "type": "attribute",
+        "for": [
+          "MediaKeySystemAccess"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes",
+          "href": "https://w3c.github.io/encrypted-media/#attributes",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediakeysystemaccess-getconfiguration",
+        "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysystemaccess-getconfiguration",
+        "linkingText": [
+          "getConfiguration()"
+        ],
+        "localLinkingText": [
+          "MediaKeySystemAccess.getConfiguration",
+          "MediaKeySystemAccess.getConfiguration()",
+          "getConfiguration"
+        ],
+        "type": "method",
+        "for": [
+          "MediaKeySystemAccess"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "methods-0",
+          "href": "https://w3c.github.io/encrypted-media/#methods-0",
+          "title": "Methods"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediakeysystemaccess-createmediakeys",
+        "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysystemaccess-createmediakeys",
+        "linkingText": [
+          "createMediaKeys()"
+        ],
+        "localLinkingText": [
+          "MediaKeySystemAccess.createMediaKeys",
+          "MediaKeySystemAccess.createMediaKeys()",
+          "createMediaKeys"
+        ],
+        "type": "method",
+        "for": [
+          "MediaKeySystemAccess"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "methods-0",
+          "href": "https://w3c.github.io/encrypted-media/#methods-0",
+          "title": "Methods"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

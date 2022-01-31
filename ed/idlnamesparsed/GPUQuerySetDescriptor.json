@@ -1,0 +1,134 @@
+{
+  "name": "GPUQuerySetDescriptor",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "WebGPU",
+      "url": "https://www.w3.org/TR/webgpu/"
+    },
+    "fragment": "dictionary GPUQuerySetDescriptor : GPUObjectDescriptorBase {\n    required GPUQueryType type;\n    required GPUSize32 count;\n};",
+    "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpuquerysetdescriptor"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "GPUObjectDescriptorBase",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "WebGPU",
+        "url": "https://www.w3.org/TR/webgpu/"
+      },
+      "fragment": "dictionary GPUObjectDescriptorBase {\n    USVString label;\n};",
+      "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpuobjectdescriptorbase"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webgpu/": [
+      {
+        "id": "dictdef-gpuquerysetdescriptor",
+        "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpuquerysetdescriptor",
+        "linkingText": [
+          "GPUQuerySetDescriptor"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "queryset-creation",
+          "href": "https://gpuweb.github.io/gpuweb/#queryset-creation",
+          "title": "QuerySet Creation",
+          "number": "19.1.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gpuquerysetdescriptor-type",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpuquerysetdescriptor-type",
+        "linkingText": [
+          "type"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "GPUQuerySetDescriptor"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "queryset-creation",
+          "href": "https://gpuweb.github.io/gpuweb/#queryset-creation",
+          "title": "QuerySet Creation",
+          "number": "19.1.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpuquerysetdescriptor-count",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpuquerysetdescriptor-count",
+        "linkingText": [
+          "count"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "GPUQuerySetDescriptor"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "queryset-creation",
+          "href": "https://gpuweb.github.io/gpuweb/#queryset-creation",
+          "title": "QuerySet Creation",
+          "number": "19.1.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dictdef-gpuobjectdescriptorbase",
+        "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpuobjectdescriptorbase",
+        "linkingText": [
+          "GPUObjectDescriptorBase"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "object-descriptors",
+          "href": "https://gpuweb.github.io/gpuweb/#object-descriptors",
+          "title": "Object Descriptors",
+          "number": "3.1.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gpuobjectdescriptorbase-label",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpuobjectdescriptorbase-label",
+        "linkingText": [
+          "label"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "GPUObjectDescriptorBase"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "object-descriptors",
+          "href": "https://gpuweb.github.io/gpuweb/#object-descriptors",
+          "title": "Object Descriptors",
+          "number": "3.1.4"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

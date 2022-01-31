@@ -1,0 +1,122 @@
+{
+  "name": "XRPose",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebXR Device API",
+      "url": "https://www.w3.org/TR/webxr/"
+    },
+    "fragment": "[SecureContext, Exposed=Window] interface XRPose {\n  [SameObject] readonly attribute XRRigidTransform transform;\n  [SameObject] readonly attribute DOMPointReadOnly? linearVelocity;\n  [SameObject] readonly attribute DOMPointReadOnly? angularVelocity;\n\n  readonly attribute boolean emulatedPosition;\n};",
+    "href": "https://immersive-web.github.io/webxr/#xrpose"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webxr/": [
+      {
+        "id": "xrpose",
+        "href": "https://immersive-web.github.io/webxr/#xrpose",
+        "linkingText": [
+          "XRPose"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrpose-interface",
+          "href": "https://immersive-web.github.io/webxr/#xrpose-interface",
+          "title": "XRPose",
+          "number": "9.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-xrpose-transform",
+        "href": "https://immersive-web.github.io/webxr/#dom-xrpose-transform",
+        "linkingText": [
+          "transform"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XRPose"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrpose-interface",
+          "href": "https://immersive-web.github.io/webxr/#xrpose-interface",
+          "title": "XRPose",
+          "number": "9.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-xrpose-linearvelocity",
+        "href": "https://immersive-web.github.io/webxr/#dom-xrpose-linearvelocity",
+        "linkingText": [
+          "linearVelocity"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XRPose"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrpose-interface",
+          "href": "https://immersive-web.github.io/webxr/#xrpose-interface",
+          "title": "XRPose",
+          "number": "9.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-xrpose-angularvelocity",
+        "href": "https://immersive-web.github.io/webxr/#dom-xrpose-angularvelocity",
+        "linkingText": [
+          "angularVelocity"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XRPose"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrpose-interface",
+          "href": "https://immersive-web.github.io/webxr/#xrpose-interface",
+          "title": "XRPose",
+          "number": "9.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-xrpose-emulatedposition",
+        "href": "https://immersive-web.github.io/webxr/#dom-xrpose-emulatedposition",
+        "linkingText": [
+          "emulatedPosition"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XRPose"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrpose-interface",
+          "href": "https://immersive-web.github.io/webxr/#xrpose-interface",
+          "title": "XRPose",
+          "number": "9.1"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

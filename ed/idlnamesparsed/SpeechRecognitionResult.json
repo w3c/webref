@@ -1,0 +1,101 @@
+{
+  "name": "SpeechRecognitionResult",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Web Speech API",
+      "url": "https://wicg.github.io/speech-api/"
+    },
+    "fragment": "// A complete one-shot simple response\n[Exposed=Window]\ninterface SpeechRecognitionResult {\n    readonly attribute unsigned long length;\n    getter SpeechRecognitionAlternative item(unsigned long index);\n    readonly attribute boolean isFinal;\n};",
+    "href": "https://wicg.github.io/speech-api/#speechrecognitionresult"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://wicg.github.io/speech-api/": [
+      {
+        "id": "speechrecognitionresult",
+        "href": "https://wicg.github.io/speech-api/#speechrecognitionresult",
+        "linkingText": [
+          "SpeechRecognitionResult"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "speechreco-section",
+          "href": "https://wicg.github.io/speech-api/#speechreco-section",
+          "title": "The SpeechRecognition Interface",
+          "number": "4.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-speechrecognitionresult-length",
+        "href": "https://wicg.github.io/speech-api/#dom-speechrecognitionresult-length",
+        "linkingText": [
+          "length"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "SpeechRecognitionResult"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "speechreco-result",
+          "href": "https://wicg.github.io/speech-api/#speechreco-result",
+          "title": "SpeechRecognitionResult",
+          "number": "4.1.6"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-speechrecognitionresult-item",
+        "href": "https://wicg.github.io/speech-api/#dom-speechrecognitionresult-item",
+        "linkingText": [
+          "item(index)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "SpeechRecognitionResult"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "speechreco-result",
+          "href": "https://wicg.github.io/speech-api/#speechreco-result",
+          "title": "SpeechRecognitionResult",
+          "number": "4.1.6"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-speechrecognitionresult-isfinal",
+        "href": "https://wicg.github.io/speech-api/#dom-speechrecognitionresult-isfinal",
+        "linkingText": [
+          "isFinal"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "SpeechRecognitionResult"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "speechreco-result",
+          "href": "https://wicg.github.io/speech-api/#speechreco-result",
+          "title": "SpeechRecognitionResult",
+          "number": "4.1.6"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

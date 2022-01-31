@@ -1,0 +1,459 @@
+{
+  "name": "XRQuadLayer",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebXR Layers API Level 1",
+      "url": "https://www.w3.org/TR/webxrlayers-1/"
+    },
+    "fragment": "[Exposed=Window] interface XRQuadLayer : XRCompositionLayer {\n  attribute XRSpace space;\n  attribute XRRigidTransform transform;\n\n  attribute float width;\n  attribute float height;\n\n  // Events\n  attribute EventHandler onredraw;\n};",
+    "href": "https://immersive-web.github.io/layers/#xrquadlayer"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "XRCompositionLayer",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "WebXR Layers API Level 1",
+        "url": "https://www.w3.org/TR/webxrlayers-1/"
+      },
+      "fragment": "[Exposed=Window] interface XRCompositionLayer : XRLayer {\n  readonly attribute XRLayerLayout layout;\n\n  attribute boolean blendTextureSourceAlpha;\n  attribute boolean? chromaticAberrationCorrection;\n  readonly attribute unsigned long mipLevels;\n\n  readonly attribute boolean needsRedraw;\n\n  undefined destroy();\n};",
+      "href": "https://immersive-web.github.io/layers/#xrcompositionlayer"
+    },
+    "extended": [],
+    "inheritance": {
+      "name": "XRLayer",
+      "type": "interface",
+      "defined": {
+        "spec": {
+          "title": "WebXR Device API",
+          "url": "https://www.w3.org/TR/webxr/"
+        },
+        "fragment": "[SecureContext, Exposed=Window]\ninterface XRLayer : EventTarget {};",
+        "href": "https://immersive-web.github.io/webxr/#xrlayer"
+      },
+      "extended": [],
+      "inheritance": {
+        "name": "EventTarget",
+        "type": "interface",
+        "defined": {
+          "spec": {
+            "title": "DOM Standard",
+            "url": "https://dom.spec.whatwg.org/"
+          },
+          "fragment": "[Exposed=*]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+          "href": "https://dom.spec.whatwg.org/#eventtarget"
+        },
+        "extended": [],
+        "inheritance": null,
+        "includes": []
+      },
+      "includes": []
+    },
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webxrlayers-1/": [
+      {
+        "id": "xrquadlayer",
+        "href": "https://immersive-web.github.io/layers/#xrquadlayer",
+        "linkingText": [
+          "XRQuadLayer"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrquadlayertype",
+          "href": "https://immersive-web.github.io/layers/#xrquadlayertype",
+          "title": "XRQuadLayer",
+          "number": "3.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-xrquadlayer-space",
+        "href": "https://immersive-web.github.io/layers/#dom-xrquadlayer-space",
+        "linkingText": [
+          "space"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XRQuadLayer"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrquadlayertype",
+          "href": "https://immersive-web.github.io/layers/#xrquadlayertype",
+          "title": "XRQuadLayer",
+          "number": "3.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-xrquadlayer-transform",
+        "href": "https://immersive-web.github.io/layers/#dom-xrquadlayer-transform",
+        "linkingText": [
+          "transform"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XRQuadLayer"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrquadlayertype",
+          "href": "https://immersive-web.github.io/layers/#xrquadlayertype",
+          "title": "XRQuadLayer",
+          "number": "3.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-xrquadlayer-width",
+        "href": "https://immersive-web.github.io/layers/#dom-xrquadlayer-width",
+        "linkingText": [
+          "width"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XRQuadLayer"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrquadlayertype",
+          "href": "https://immersive-web.github.io/layers/#xrquadlayertype",
+          "title": "XRQuadLayer",
+          "number": "3.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-xrquadlayer-height",
+        "href": "https://immersive-web.github.io/layers/#dom-xrquadlayer-height",
+        "linkingText": [
+          "height"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XRQuadLayer"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrquadlayertype",
+          "href": "https://immersive-web.github.io/layers/#xrquadlayertype",
+          "title": "XRQuadLayer",
+          "number": "3.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-xrquadlayer-onredraw",
+        "href": "https://immersive-web.github.io/layers/#dom-xrquadlayer-onredraw",
+        "linkingText": [
+          "onredraw"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XRQuadLayer"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrquadlayertype",
+          "href": "https://immersive-web.github.io/layers/#xrquadlayertype",
+          "title": "XRQuadLayer",
+          "number": "3.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "xrcompositionlayer",
+        "href": "https://immersive-web.github.io/layers/#xrcompositionlayer",
+        "linkingText": [
+          "XRCompositionLayer"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrcompositionlayertype",
+          "href": "https://immersive-web.github.io/layers/#xrcompositionlayertype",
+          "title": "XRCompositionLayer",
+          "number": "3.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-xrcompositionlayer-layout",
+        "href": "https://immersive-web.github.io/layers/#dom-xrcompositionlayer-layout",
+        "linkingText": [
+          "layout"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XRCompositionLayer"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrcompositionlayertype",
+          "href": "https://immersive-web.github.io/layers/#xrcompositionlayertype",
+          "title": "XRCompositionLayer",
+          "number": "3.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-xrcompositionlayer-blendtexturesourcealpha",
+        "href": "https://immersive-web.github.io/layers/#dom-xrcompositionlayer-blendtexturesourcealpha",
+        "linkingText": [
+          "blendTextureSourceAlpha"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XRCompositionLayer"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrcompositionlayertype",
+          "href": "https://immersive-web.github.io/layers/#xrcompositionlayertype",
+          "title": "XRCompositionLayer",
+          "number": "3.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-xrcompositionlayer-chromaticaberrationcorrection",
+        "href": "https://immersive-web.github.io/layers/#dom-xrcompositionlayer-chromaticaberrationcorrection",
+        "linkingText": [
+          "chromaticAberrationCorrection"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XRCompositionLayer"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrcompositionlayertype",
+          "href": "https://immersive-web.github.io/layers/#xrcompositionlayertype",
+          "title": "XRCompositionLayer",
+          "number": "3.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-xrcompositionlayer-miplevels",
+        "href": "https://immersive-web.github.io/layers/#dom-xrcompositionlayer-miplevels",
+        "linkingText": [
+          "mipLevels"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XRCompositionLayer"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrcompositionlayertype",
+          "href": "https://immersive-web.github.io/layers/#xrcompositionlayertype",
+          "title": "XRCompositionLayer",
+          "number": "3.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-xrcompositionlayer-needsredraw",
+        "href": "https://immersive-web.github.io/layers/#dom-xrcompositionlayer-needsredraw",
+        "linkingText": [
+          "needsRedraw"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XRCompositionLayer"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrcompositionlayertype",
+          "href": "https://immersive-web.github.io/layers/#xrcompositionlayertype",
+          "title": "XRCompositionLayer",
+          "number": "3.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-xrcompositionlayer-destroy",
+        "href": "https://immersive-web.github.io/layers/#dom-xrcompositionlayer-destroy",
+        "linkingText": [
+          "destroy()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "XRCompositionLayer"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrcompositionlayertype",
+          "href": "https://immersive-web.github.io/layers/#xrcompositionlayertype",
+          "title": "XRCompositionLayer",
+          "number": "3.3"
+        },
+        "definedIn": "pre"
+      }
+    ],
+    "https://www.w3.org/TR/webxr/": [
+      {
+        "id": "xrlayer",
+        "href": "https://immersive-web.github.io/webxr/#xrlayer",
+        "linkingText": [
+          "XRLayer"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrlayer-interface",
+          "href": "https://immersive-web.github.io/webxr/#xrlayer-interface",
+          "title": "XRLayer",
+          "number": "11.1"
+        },
+        "definedIn": "pre"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "eventtarget",
+        "href": "https://dom.spec.whatwg.org/#eventtarget",
+        "linkingText": [
+          "EventTarget"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventtarget-eventtarget",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-eventtarget",
+        "linkingText": [
+          "EventTarget()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-addeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-addeventlistener",
+        "linkingText": [
+          "addEventListener(type, callback, options)",
+          "addEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-removeeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-removeeventlistener",
+        "linkingText": [
+          "removeEventListener(type, callback, options)",
+          "removeEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-dispatchevent",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-dispatchevent",
+        "linkingText": [
+          "dispatchEvent(event)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

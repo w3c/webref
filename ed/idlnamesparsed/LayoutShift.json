@@ -1,0 +1,249 @@
+{
+  "name": "LayoutShift",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Layout Instability API",
+      "url": "https://wicg.github.io/layout-instability/"
+    },
+    "fragment": "[Exposed=Window]\ninterface LayoutShift : PerformanceEntry {\n  readonly attribute double value;\n  readonly attribute boolean hadRecentInput;\n  readonly attribute DOMHighResTimeStamp lastInputTime;\n  readonly attribute FrozenArray<LayoutShiftAttribution> sources;\n  [Default] object toJSON();\n};",
+    "href": "https://wicg.github.io/layout-instability/#layoutshift"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "PerformanceEntry",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "Performance Timeline Level 2",
+        "url": "https://www.w3.org/TR/performance-timeline/"
+      },
+      "fragment": "[Exposed=*]\ninterface PerformanceEntry {\n  readonly    attribute DOMString           name;\n  readonly    attribute DOMString           entryType;\n  readonly    attribute DOMHighResTimeStamp startTime;\n  readonly    attribute DOMHighResTimeStamp duration;\n  [Default] object toJSON();\n};",
+      "href": "https://w3c.github.io/performance-timeline/#dom-performanceentry"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://wicg.github.io/layout-instability/": [
+      {
+        "id": "layoutshift",
+        "href": "https://wicg.github.io/layout-instability/#layoutshift",
+        "linkingText": [
+          "LayoutShift"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "sec-layout-shift",
+          "href": "https://wicg.github.io/layout-instability/#sec-layout-shift",
+          "title": "LayoutShift interface",
+          "number": "3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-layoutshift-value",
+        "href": "https://wicg.github.io/layout-instability/#dom-layoutshift-value",
+        "linkingText": [
+          "value"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "LayoutShift"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "sec-report-layout-shift",
+          "href": "https://wicg.github.io/layout-instability/#sec-report-layout-shift",
+          "title": "Report the layout shift",
+          "number": "5.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-layoutshift-hadrecentinput",
+        "href": "https://wicg.github.io/layout-instability/#dom-layoutshift-hadrecentinput",
+        "linkingText": [
+          "hadRecentInput"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "LayoutShift"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "sec-report-layout-shift",
+          "href": "https://wicg.github.io/layout-instability/#sec-report-layout-shift",
+          "title": "Report the layout shift",
+          "number": "5.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-layoutshift-lastinputtime",
+        "href": "https://wicg.github.io/layout-instability/#dom-layoutshift-lastinputtime",
+        "linkingText": [
+          "lastInputTime"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "LayoutShift"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "sec-report-layout-shift",
+          "href": "https://wicg.github.io/layout-instability/#sec-report-layout-shift",
+          "title": "Report the layout shift",
+          "number": "5.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-layoutshift-sources",
+        "href": "https://wicg.github.io/layout-instability/#dom-layoutshift-sources",
+        "linkingText": [
+          "sources"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "LayoutShift"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "sec-report-layout-shift",
+          "href": "https://wicg.github.io/layout-instability/#sec-report-layout-shift",
+          "title": "Report the layout shift",
+          "number": "5.1"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://www.w3.org/TR/performance-timeline/": [
+      {
+        "id": "dom-performanceentry",
+        "href": "https://w3c.github.io/performance-timeline/#dom-performanceentry",
+        "linkingText": [
+          "PerformanceEntry"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-performanceentry-interface",
+          "href": "https://w3c.github.io/performance-timeline/#the-performanceentry-interface",
+          "title": "The PerformanceEntry interface",
+          "number": "4"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-performanceentry-name",
+        "href": "https://w3c.github.io/performance-timeline/#dom-performanceentry-name",
+        "linkingText": [
+          "name"
+        ],
+        "localLinkingText": [
+          "PerformanceEntry.name"
+        ],
+        "type": "attribute",
+        "for": [
+          "PerformanceEntry"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-performanceentry-interface",
+          "href": "https://w3c.github.io/performance-timeline/#the-performanceentry-interface",
+          "title": "The PerformanceEntry interface",
+          "number": "4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-performanceentry-entrytype",
+        "href": "https://w3c.github.io/performance-timeline/#dom-performanceentry-entrytype",
+        "linkingText": [
+          "entryType"
+        ],
+        "localLinkingText": [
+          "PerformanceEntry.entryType"
+        ],
+        "type": "attribute",
+        "for": [
+          "PerformanceEntry"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-performanceentry-interface",
+          "href": "https://w3c.github.io/performance-timeline/#the-performanceentry-interface",
+          "title": "The PerformanceEntry interface",
+          "number": "4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-performanceentry-starttime",
+        "href": "https://w3c.github.io/performance-timeline/#dom-performanceentry-starttime",
+        "linkingText": [
+          "startTime"
+        ],
+        "localLinkingText": [
+          "PerformanceEntry.startTime"
+        ],
+        "type": "attribute",
+        "for": [
+          "PerformanceEntry"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-performanceentry-interface",
+          "href": "https://w3c.github.io/performance-timeline/#the-performanceentry-interface",
+          "title": "The PerformanceEntry interface",
+          "number": "4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-performanceentry-duration",
+        "href": "https://w3c.github.io/performance-timeline/#dom-performanceentry-duration",
+        "linkingText": [
+          "duration"
+        ],
+        "localLinkingText": [
+          "PerformanceEntry.duration"
+        ],
+        "type": "attribute",
+        "for": [
+          "PerformanceEntry"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-performanceentry-interface",
+          "href": "https://w3c.github.io/performance-timeline/#the-performanceentry-interface",
+          "title": "The PerformanceEntry interface",
+          "number": "4"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

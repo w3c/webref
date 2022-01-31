@@ -1,0 +1,155 @@
+{
+  "name": "ElementContentEditable",
+  "type": "interface mixin",
+  "defined": {
+    "spec": {
+      "title": "HTML Standard",
+      "url": "https://html.spec.whatwg.org/multipage/"
+    },
+    "fragment": "interface mixin ElementContentEditable {\n  [CEReactions] attribute DOMString contentEditable;\n  [CEReactions] attribute DOMString enterKeyHint;\n  readonly attribute boolean isContentEditable;\n  [CEReactions] attribute DOMString inputMode;\n};",
+    "href": "https://html.spec.whatwg.org/multipage/interaction.html#elementcontenteditable"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "VirtualKeyboard API",
+        "url": "https://www.w3.org/TR/virtual-keyboard/"
+      },
+      "fragment": "partial interface mixin ElementContentEditable {\n     [CEReactions] attribute DOMString virtualKeyboardPolicy;\n};"
+    }
+  ],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://html.spec.whatwg.org/multipage/": [
+      {
+        "id": "elementcontenteditable",
+        "href": "https://html.spec.whatwg.org/multipage/interaction.html#elementcontenteditable",
+        "linkingText": [
+          "ElementContentEditable"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "contenteditable",
+          "href": "https://html.spec.whatwg.org/multipage/interaction.html#contenteditable",
+          "title": "Making document regions editable: The contenteditable content attribute",
+          "number": "6.8.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-contenteditable",
+        "href": "https://html.spec.whatwg.org/multipage/interaction.html#dom-contenteditable",
+        "linkingText": [
+          "contentEditable"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "ElementContentEditable"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "contenteditable",
+          "href": "https://html.spec.whatwg.org/multipage/interaction.html#contenteditable",
+          "title": "Making document regions editable: The contenteditable content attribute",
+          "number": "6.8.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-enterkeyhint",
+        "href": "https://html.spec.whatwg.org/multipage/interaction.html#dom-enterkeyhint",
+        "linkingText": [
+          "enterKeyHint"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "ElementContentEditable"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "input-modalities:-the-enterkeyhint-attribute",
+          "href": "https://html.spec.whatwg.org/multipage/interaction.html#input-modalities:-the-enterkeyhint-attribute",
+          "title": "Input modalities: the enterkeyhint attribute",
+          "number": "6.8.8"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-iscontenteditable",
+        "href": "https://html.spec.whatwg.org/multipage/interaction.html#dom-iscontenteditable",
+        "linkingText": [
+          "isContentEditable"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "ElementContentEditable"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "contenteditable",
+          "href": "https://html.spec.whatwg.org/multipage/interaction.html#contenteditable",
+          "title": "Making document regions editable: The contenteditable content attribute",
+          "number": "6.8.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-inputmode",
+        "href": "https://html.spec.whatwg.org/multipage/interaction.html#dom-inputmode",
+        "linkingText": [
+          "inputMode"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "ElementContentEditable"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "input-modalities:-the-inputmode-attribute",
+          "href": "https://html.spec.whatwg.org/multipage/interaction.html#input-modalities:-the-inputmode-attribute",
+          "title": "Input modalities: the inputmode attribute",
+          "number": "6.8.7"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://www.w3.org/TR/virtual-keyboard/": [
+      {
+        "id": "dom-elementcontenteditable-virtualkeyboardpolicy",
+        "href": "https://w3c.github.io/virtual-keyboard/#dom-elementcontenteditable-virtualkeyboardpolicy",
+        "linkingText": [
+          "virtualKeyboardPolicy"
+        ],
+        "localLinkingText": [
+          "ElementContentEditable.virtualKeyboardPolicy"
+        ],
+        "type": "attribute",
+        "for": [
+          "ElementContentEditable"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "extensions-to-the-elementcontenteditable-mixin",
+          "href": "https://w3c.github.io/virtual-keyboard/#extensions-to-the-elementcontenteditable-mixin",
+          "title": "Extensions to the ElementContentEditable mixin",
+          "number": "4"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

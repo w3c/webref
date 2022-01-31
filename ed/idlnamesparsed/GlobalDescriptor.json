@@ -1,0 +1,80 @@
+{
+  "name": "GlobalDescriptor",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "WebAssembly JavaScript Interface",
+      "url": "https://www.w3.org/TR/wasm-js-api-1/"
+    },
+    "fragment": "dictionary GlobalDescriptor {\n  required ValueType value;\n  boolean mutable = false;\n};",
+    "href": "https://webassembly.github.io/spec/js-api/#dictdef-globaldescriptor"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/wasm-js-api-1/": [
+      {
+        "id": "dictdef-globaldescriptor",
+        "href": "https://webassembly.github.io/spec/js-api/#dictdef-globaldescriptor",
+        "linkingText": [
+          "GlobalDescriptor"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "globals",
+          "href": "https://webassembly.github.io/spec/js-api/#globals",
+          "title": "Globals",
+          "number": "4.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-globaldescriptor-value",
+        "href": "https://webassembly.github.io/spec/js-api/#dom-globaldescriptor-value",
+        "linkingText": [
+          "value"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "GlobalDescriptor"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "globals",
+          "href": "https://webassembly.github.io/spec/js-api/#globals",
+          "title": "Globals",
+          "number": "4.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-globaldescriptor-mutable",
+        "href": "https://webassembly.github.io/spec/js-api/#dom-globaldescriptor-mutable",
+        "linkingText": [
+          "mutable"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "GlobalDescriptor"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "globals",
+          "href": "https://webassembly.github.io/spec/js-api/#globals",
+          "title": "Globals",
+          "number": "4.5"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

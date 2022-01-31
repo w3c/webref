@@ -1,0 +1,164 @@
+{
+  "name": "SerialOptions",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Web Serial API",
+      "url": "https://wicg.github.io/serial/"
+    },
+    "fragment": "dictionary SerialOptions {\n  required [EnforceRange] unsigned long baudRate;\n  [EnforceRange] octet dataBits = 8;\n  [EnforceRange] octet stopBits = 1;\n  ParityType parity = \"none\";\n  [EnforceRange] unsigned long bufferSize = 255;\n  FlowControlType flowControl = \"none\";\n};",
+    "href": "https://wicg.github.io/serial/#dom-serialoptions"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://wicg.github.io/serial/": [
+      {
+        "id": "dom-serialoptions",
+        "href": "https://wicg.github.io/serial/#dom-serialoptions",
+        "linkingText": [
+          "SerialOptions"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "serialoptions-dictionary",
+          "href": "https://wicg.github.io/serial/#serialoptions-dictionary",
+          "title": "SerialOptions dictionary",
+          "number": "4.4.1"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-serialoptions-baudrate",
+        "href": "https://wicg.github.io/serial/#dom-serialoptions-baudrate",
+        "linkingText": [
+          "baudRate"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "SerialOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "serialoptions-dictionary",
+          "href": "https://wicg.github.io/serial/#serialoptions-dictionary",
+          "title": "SerialOptions dictionary",
+          "number": "4.4.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-serialoptions-databits",
+        "href": "https://wicg.github.io/serial/#dom-serialoptions-databits",
+        "linkingText": [
+          "dataBits"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "SerialOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "serialoptions-dictionary",
+          "href": "https://wicg.github.io/serial/#serialoptions-dictionary",
+          "title": "SerialOptions dictionary",
+          "number": "4.4.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-serialoptions-stopbits",
+        "href": "https://wicg.github.io/serial/#dom-serialoptions-stopbits",
+        "linkingText": [
+          "stopBits"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "SerialOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "serialoptions-dictionary",
+          "href": "https://wicg.github.io/serial/#serialoptions-dictionary",
+          "title": "SerialOptions dictionary",
+          "number": "4.4.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-serialoptions-parity",
+        "href": "https://wicg.github.io/serial/#dom-serialoptions-parity",
+        "linkingText": [
+          "parity"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "SerialOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "serialoptions-dictionary",
+          "href": "https://wicg.github.io/serial/#serialoptions-dictionary",
+          "title": "SerialOptions dictionary",
+          "number": "4.4.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-serialoptions-buffersize",
+        "href": "https://wicg.github.io/serial/#dom-serialoptions-buffersize",
+        "linkingText": [
+          "bufferSize"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "SerialOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "serialoptions-dictionary",
+          "href": "https://wicg.github.io/serial/#serialoptions-dictionary",
+          "title": "SerialOptions dictionary",
+          "number": "4.4.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-serialoptions-flowcontrol",
+        "href": "https://wicg.github.io/serial/#dom-serialoptions-flowcontrol",
+        "linkingText": [
+          "flowControl"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "SerialOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "serialoptions-dictionary",
+          "href": "https://wicg.github.io/serial/#serialoptions-dictionary",
+          "title": "SerialOptions dictionary",
+          "number": "4.4.1"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "name": "ElementCSSInlineStyle",
+  "type": "interface mixin",
+  "defined": {
+    "spec": {
+      "title": "CSS Object Model (CSSOM)",
+      "url": "https://www.w3.org/TR/cssom-1/"
+    },
+    "fragment": "interface mixin ElementCSSInlineStyle {\n  [SameObject, PutForwards=cssText] readonly attribute CSSStyleDeclaration style;\n};",
+    "href": "https://drafts.csswg.org/cssom/#elementcssinlinestyle"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "CSS Typed OM Level 1",
+        "url": "https://www.w3.org/TR/css-typed-om-1/"
+      },
+      "fragment": "partial interface mixin ElementCSSInlineStyle {\n    [SameObject] readonly attribute StylePropertyMap attributeStyleMap;\n};"
+    }
+  ],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/cssom-1/": [
+      {
+        "id": "elementcssinlinestyle",
+        "href": "https://drafts.csswg.org/cssom/#elementcssinlinestyle",
+        "linkingText": [
+          "ElementCSSInlineStyle"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-elementcssinlinestyle-mixin",
+          "href": "https://drafts.csswg.org/cssom/#the-elementcssinlinestyle-mixin",
+          "title": "The ElementCSSInlineStyle Mixin",
+          "number": "7.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-elementcssinlinestyle-style",
+        "href": "https://drafts.csswg.org/cssom/#dom-elementcssinlinestyle-style",
+        "linkingText": [
+          "style"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "ElementCSSInlineStyle"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-elementcssinlinestyle-mixin",
+          "href": "https://drafts.csswg.org/cssom/#the-elementcssinlinestyle-mixin",
+          "title": "The ElementCSSInlineStyle Mixin",
+          "number": "7.1"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://www.w3.org/TR/css-typed-om-1/": [
+      {
+        "id": "dom-elementcssinlinestyle-attributestylemap",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-elementcssinlinestyle-attributestylemap",
+        "linkingText": [
+          "attributeStyleMap"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "ElementCSSInlineStyle"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "declared-stylepropertymap-objects",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#declared-stylepropertymap-objects",
+          "title": "Declared & Inline StylePropertyMap objects",
+          "number": "3.2"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

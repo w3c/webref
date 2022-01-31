@@ -1,0 +1,293 @@
+{
+  "name": "RTCIceCandidateStats",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Identifiers for WebRTC's Statistics API",
+      "url": "https://www.w3.org/TR/webrtc-stats/"
+    },
+    "fragment": "dictionary RTCIceCandidateStats : RTCStats {\n             required DOMString       transportId;\n             DOMString?               address;\n             long                     port;\n             DOMString                protocol;\n             required RTCIceCandidateType candidateType;\n             long                     priority;\n             DOMString                url;\n             DOMString                relayProtocol;\n};",
+    "href": "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatestats"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "RTCStats",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
+        "url": "https://www.w3.org/TR/webrtc/"
+      },
+      "fragment": "dictionary RTCStats {\n  required DOMHighResTimeStamp timestamp;\n  required RTCStatsType type;\n  required DOMString id;\n};",
+      "href": "https://w3c.github.io/webrtc-pc/#dom-rtcstats"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webrtc-stats/": [
+      {
+        "id": "dom-rtcicecandidatestats",
+        "href": "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatestats",
+        "linkingText": [
+          "RTCIceCandidateStats"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "icecandidate-dict*",
+          "href": "https://w3c.github.io/webrtc-stats/#icecandidate-dict*",
+          "title": "RTCIceCandidateStats dictionary",
+          "number": "7.27"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-rtcicecandidatestats-transportid",
+        "href": "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatestats-transportid",
+        "linkingText": [
+          "transportId"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RTCIceCandidateStats"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-rtcicecandidatestats-members",
+          "href": "https://w3c.github.io/webrtc-stats/#dictionary-rtcicecandidatestats-members",
+          "title": "Dictionary RTCIceCandidateStats Members"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcicecandidatestats-address",
+        "href": "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatestats-address",
+        "linkingText": [
+          "address"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RTCIceCandidateStats"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-rtcicecandidatestats-members",
+          "href": "https://w3c.github.io/webrtc-stats/#dictionary-rtcicecandidatestats-members",
+          "title": "Dictionary RTCIceCandidateStats Members"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcicecandidatestats-port",
+        "href": "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatestats-port",
+        "linkingText": [
+          "port"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RTCIceCandidateStats"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-rtcicecandidatestats-members",
+          "href": "https://w3c.github.io/webrtc-stats/#dictionary-rtcicecandidatestats-members",
+          "title": "Dictionary RTCIceCandidateStats Members"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcicecandidatestats-protocol",
+        "href": "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatestats-protocol",
+        "linkingText": [
+          "protocol"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RTCIceCandidateStats"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-rtcicecandidatestats-members",
+          "href": "https://w3c.github.io/webrtc-stats/#dictionary-rtcicecandidatestats-members",
+          "title": "Dictionary RTCIceCandidateStats Members"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcicecandidatestats-candidatetype",
+        "href": "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatestats-candidatetype",
+        "linkingText": [
+          "candidateType"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RTCIceCandidateStats"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-rtcicecandidatestats-members",
+          "href": "https://w3c.github.io/webrtc-stats/#dictionary-rtcicecandidatestats-members",
+          "title": "Dictionary RTCIceCandidateStats Members"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcicecandidatestats-priority",
+        "href": "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatestats-priority",
+        "linkingText": [
+          "priority"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RTCIceCandidateStats"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-rtcicecandidatestats-members",
+          "href": "https://w3c.github.io/webrtc-stats/#dictionary-rtcicecandidatestats-members",
+          "title": "Dictionary RTCIceCandidateStats Members"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcicecandidatestats-url",
+        "href": "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatestats-url",
+        "linkingText": [
+          "url"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RTCIceCandidateStats"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-rtcicecandidatestats-members",
+          "href": "https://w3c.github.io/webrtc-stats/#dictionary-rtcicecandidatestats-members",
+          "title": "Dictionary RTCIceCandidateStats Members"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcicecandidatestats-relayprotocol",
+        "href": "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatestats-relayprotocol",
+        "linkingText": [
+          "relayProtocol"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RTCIceCandidateStats"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-rtcicecandidatestats-members",
+          "href": "https://w3c.github.io/webrtc-stats/#dictionary-rtcicecandidatestats-members",
+          "title": "Dictionary RTCIceCandidateStats Members"
+        },
+        "definedIn": "dt"
+      }
+    ],
+    "https://www.w3.org/TR/webrtc/": [
+      {
+        "id": "dom-rtcstats",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcstats",
+        "linkingText": [
+          "RTCStats"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "rtcstats-dictionary",
+          "href": "https://w3c.github.io/webrtc-pc/#rtcstats-dictionary",
+          "title": "RTCStats Dictionary",
+          "number": "8.4"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-rtcstats-timestamp",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcstats-timestamp",
+        "linkingText": [
+          "timestamp"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RTCStats"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-rtcstats-members",
+          "href": "https://w3c.github.io/webrtc-pc/#dictionary-rtcstats-members",
+          "title": "Dictionary RTCStats Members"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcstats-type",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcstats-type",
+        "linkingText": [
+          "type"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RTCStats"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-rtcstats-members",
+          "href": "https://w3c.github.io/webrtc-pc/#dictionary-rtcstats-members",
+          "title": "Dictionary RTCStats Members"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcstats-id",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcstats-id",
+        "linkingText": [
+          "id"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RTCStats"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-rtcstats-members",
+          "href": "https://w3c.github.io/webrtc-pc/#dictionary-rtcstats-members",
+          "title": "Dictionary RTCStats Members"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

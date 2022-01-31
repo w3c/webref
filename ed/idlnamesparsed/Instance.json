@@ -1,0 +1,83 @@
+{
+  "name": "Instance",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebAssembly JavaScript Interface",
+      "url": "https://www.w3.org/TR/wasm-js-api-1/"
+    },
+    "fragment": "[LegacyNamespace=WebAssembly, Exposed=(Window,Worker,Worklet)]\ninterface Instance {\n  constructor(Module module, optional object importObject);\n  readonly attribute object exports;\n};",
+    "href": "https://webassembly.github.io/spec/js-api/#instance"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/wasm-js-api-1/": [
+      {
+        "id": "instance",
+        "href": "https://webassembly.github.io/spec/js-api/#instance",
+        "linkingText": [
+          "Instance"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "instances",
+          "href": "https://webassembly.github.io/spec/js-api/#instances",
+          "title": "Instances",
+          "number": "4.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-instance-instance",
+        "href": "https://webassembly.github.io/spec/js-api/#dom-instance-instance",
+        "linkingText": [
+          "Instance(module, importObject)",
+          "constructor(module, importObject)",
+          "Instance(module)",
+          "constructor(module)"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "Instance"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "instances",
+          "href": "https://webassembly.github.io/spec/js-api/#instances",
+          "title": "Instances",
+          "number": "4.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-instance-exports",
+        "href": "https://webassembly.github.io/spec/js-api/#dom-instance-exports",
+        "linkingText": [
+          "exports"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Instance"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "instances",
+          "href": "https://webassembly.github.io/spec/js-api/#instances",
+          "title": "Instances",
+          "number": "4.2"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

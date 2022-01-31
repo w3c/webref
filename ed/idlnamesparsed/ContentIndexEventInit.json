@@ -1,0 +1,192 @@
+{
+  "name": "ContentIndexEventInit",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Content Index",
+      "url": "https://wicg.github.io/content-index/spec/"
+    },
+    "fragment": "dictionary ContentIndexEventInit : ExtendableEventInit {\n  required DOMString id;\n};",
+    "href": "https://wicg.github.io/content-index/spec/#dictdef-contentindexeventinit"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "ExtendableEventInit",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "Service Workers Nightly",
+        "url": "https://www.w3.org/TR/service-workers-1/"
+      },
+      "fragment": "dictionary ExtendableEventInit : EventInit {\n  // Defined for the forward compatibility across the derived events\n};",
+      "href": "https://w3c.github.io/ServiceWorker/#dictdef-extendableeventinit"
+    },
+    "extended": [],
+    "inheritance": {
+      "name": "EventInit",
+      "type": "dictionary",
+      "defined": {
+        "spec": {
+          "title": "DOM Standard",
+          "url": "https://dom.spec.whatwg.org/"
+        },
+        "fragment": "dictionary EventInit {\n  boolean bubbles = false;\n  boolean cancelable = false;\n  boolean composed = false;\n};",
+        "href": "https://dom.spec.whatwg.org/#dictdef-eventinit"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://wicg.github.io/content-index/spec/": [
+      {
+        "id": "dictdef-contentindexeventinit",
+        "href": "https://wicg.github.io/content-index/spec/#dictdef-contentindexeventinit",
+        "linkingText": [
+          "ContentIndexEventInit"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "content-index-event",
+          "href": "https://wicg.github.io/content-index/spec/#content-index-event",
+          "title": "ContentIndexEvent",
+          "number": "5.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-contentindexeventinit-id",
+        "href": "https://wicg.github.io/content-index/spec/#dom-contentindexeventinit-id",
+        "linkingText": [
+          "id"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "ContentIndexEventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "content-index-event",
+          "href": "https://wicg.github.io/content-index/spec/#content-index-event",
+          "title": "ContentIndexEvent",
+          "number": "5.4"
+        },
+        "definedIn": "pre"
+      }
+    ],
+    "https://www.w3.org/TR/service-workers-1/": [
+      {
+        "id": "dictdef-extendableeventinit",
+        "href": "https://w3c.github.io/ServiceWorker/#dictdef-extendableeventinit",
+        "linkingText": [
+          "ExtendableEventInit"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "extendableevent-interface",
+          "href": "https://w3c.github.io/ServiceWorker/#extendableevent-interface",
+          "title": "ExtendableEvent",
+          "number": "4.4"
+        },
+        "definedIn": "pre"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "dictdef-eventinit",
+        "href": "https://dom.spec.whatwg.org/#dictdef-eventinit",
+        "linkingText": [
+          "EventInit"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventinit-bubbles",
+        "href": "https://dom.spec.whatwg.org/#dom-eventinit-bubbles",
+        "linkingText": [
+          "bubbles"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventinit-cancelable",
+        "href": "https://dom.spec.whatwg.org/#dom-eventinit-cancelable",
+        "linkingText": [
+          "cancelable"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventinit-composed",
+        "href": "https://dom.spec.whatwg.org/#dom-eventinit-composed",
+        "linkingText": [
+          "composed"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

@@ -1,0 +1,289 @@
+{
+  "name": "VideoTrackList",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "HTML Standard",
+      "url": "https://html.spec.whatwg.org/multipage/"
+    },
+    "fragment": "[Exposed=Window]\ninterface VideoTrackList : EventTarget {\n  readonly attribute unsigned long length;\n  getter VideoTrack (unsigned long index);\n  VideoTrack? getTrackById(DOMString id);\n  readonly attribute long selectedIndex;\n\n  attribute EventHandler onchange;\n  attribute EventHandler onaddtrack;\n  attribute EventHandler onremovetrack;\n};",
+    "href": "https://html.spec.whatwg.org/multipage/media.html#videotracklist"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "EventTarget",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=*]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+      "href": "https://dom.spec.whatwg.org/#eventtarget"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://html.spec.whatwg.org/multipage/": [
+      {
+        "id": "videotracklist",
+        "href": "https://html.spec.whatwg.org/multipage/media.html#videotracklist",
+        "linkingText": [
+          "VideoTrackList"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "audiotracklist-and-videotracklist-objects",
+          "href": "https://html.spec.whatwg.org/multipage/media.html#audiotracklist-and-videotracklist-objects",
+          "title": "AudioTrackList and VideoTrackList objects",
+          "number": "4.8.12.10.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-videotracklist-length",
+        "href": "https://html.spec.whatwg.org/multipage/media.html#dom-videotracklist-length",
+        "linkingText": [
+          "length"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "VideoTrackList"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "audiotracklist-and-videotracklist-objects",
+          "href": "https://html.spec.whatwg.org/multipage/media.html#audiotracklist-and-videotracklist-objects",
+          "title": "AudioTrackList and VideoTrackList objects",
+          "number": "4.8.12.10.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-videotracklist-gettrackbyid",
+        "href": "https://html.spec.whatwg.org/multipage/media.html#dom-videotracklist-gettrackbyid",
+        "linkingText": [
+          "getTrackById(id)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "VideoTrackList"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "audiotracklist-and-videotracklist-objects",
+          "href": "https://html.spec.whatwg.org/multipage/media.html#audiotracklist-and-videotracklist-objects",
+          "title": "AudioTrackList and VideoTrackList objects",
+          "number": "4.8.12.10.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-videotracklist-selectedindex",
+        "href": "https://html.spec.whatwg.org/multipage/media.html#dom-videotracklist-selectedindex",
+        "linkingText": [
+          "selectedIndex"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "VideoTrackList"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "audiotracklist-and-videotracklist-objects",
+          "href": "https://html.spec.whatwg.org/multipage/media.html#audiotracklist-and-videotracklist-objects",
+          "title": "AudioTrackList and VideoTrackList objects",
+          "number": "4.8.12.10.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "handler-tracklist-onchange",
+        "href": "https://html.spec.whatwg.org/multipage/media.html#handler-tracklist-onchange",
+        "linkingText": [
+          "onchange"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "AudioTrackList",
+          "VideoTrackList"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "audiotracklist-and-videotracklist-objects",
+          "href": "https://html.spec.whatwg.org/multipage/media.html#audiotracklist-and-videotracklist-objects",
+          "title": "AudioTrackList and VideoTrackList objects",
+          "number": "4.8.12.10.1"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-tracklist-onaddtrack",
+        "href": "https://html.spec.whatwg.org/multipage/media.html#handler-tracklist-onaddtrack",
+        "linkingText": [
+          "onaddtrack"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "AudioTrackList",
+          "VideoTrackList"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "audiotracklist-and-videotracklist-objects",
+          "href": "https://html.spec.whatwg.org/multipage/media.html#audiotracklist-and-videotracklist-objects",
+          "title": "AudioTrackList and VideoTrackList objects",
+          "number": "4.8.12.10.1"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-tracklist-onremovetrack",
+        "href": "https://html.spec.whatwg.org/multipage/media.html#handler-tracklist-onremovetrack",
+        "linkingText": [
+          "onremovetrack"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "AudioTrackList",
+          "VideoTrackList"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "audiotracklist-and-videotracklist-objects",
+          "href": "https://html.spec.whatwg.org/multipage/media.html#audiotracklist-and-videotracklist-objects",
+          "title": "AudioTrackList and VideoTrackList objects",
+          "number": "4.8.12.10.1"
+        },
+        "definedIn": "table"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "eventtarget",
+        "href": "https://dom.spec.whatwg.org/#eventtarget",
+        "linkingText": [
+          "EventTarget"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventtarget-eventtarget",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-eventtarget",
+        "linkingText": [
+          "EventTarget()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-addeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-addeventlistener",
+        "linkingText": [
+          "addEventListener(type, callback, options)",
+          "addEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-removeeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-removeeventlistener",
+        "linkingText": [
+          "removeEventListener(type, callback, options)",
+          "removeEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-dispatchevent",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-dispatchevent",
+        "linkingText": [
+          "dispatchEvent(event)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "name": "PresentationReceiver",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Presentation API",
+      "url": "https://www.w3.org/TR/presentation-api/"
+    },
+    "fragment": "[SecureContext, Exposed=Window]\ninterface PresentationReceiver {\n  readonly attribute Promise<PresentationConnectionList> connectionList;\n};",
+    "href": "https://w3c.github.io/presentation-api/#dom-presentationreceiver"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/presentation-api/": [
+      {
+        "id": "dom-presentationreceiver",
+        "href": "https://w3c.github.io/presentation-api/#dom-presentationreceiver",
+        "linkingText": [
+          "PresentationReceiver"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-presentationreceiver",
+          "href": "https://w3c.github.io/presentation-api/#interface-presentationreceiver",
+          "title": "Interface PresentationReceiver",
+          "number": "6.6"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-presentationreceiver-connectionlist",
+        "href": "https://w3c.github.io/presentation-api/#dom-presentationreceiver-connectionlist",
+        "linkingText": [
+          "connectionList"
+        ],
+        "localLinkingText": [
+          "PresentationReceiver.connectionList"
+        ],
+        "type": "attribute",
+        "for": [
+          "PresentationReceiver"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-presentationreceiver",
+          "href": "https://w3c.github.io/presentation-api/#interface-presentationreceiver",
+          "title": "Interface PresentationReceiver",
+          "number": "6.6"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

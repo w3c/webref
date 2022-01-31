@@ -1,0 +1,80 @@
+{
+  "name": "MediaCapabilities",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Media Capabilities",
+      "url": "https://www.w3.org/TR/media-capabilities/"
+    },
+    "fragment": "[Exposed=(Window, Worker)]\ninterface MediaCapabilities {\n  [NewObject] Promise<MediaCapabilitiesDecodingInfo> decodingInfo(MediaDecodingConfiguration configuration);\n  [NewObject] Promise<MediaCapabilitiesEncodingInfo> encodingInfo(MediaEncodingConfiguration configuration);\n};",
+    "href": "https://w3c.github.io/media-capabilities/#mediacapabilities"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/media-capabilities/": [
+      {
+        "id": "mediacapabilities",
+        "href": "https://w3c.github.io/media-capabilities/#mediacapabilities",
+        "linkingText": [
+          "MediaCapabilities"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "media-capabilities-interface",
+          "href": "https://w3c.github.io/media-capabilities/#media-capabilities-interface",
+          "title": "Media Capabilities Interface",
+          "number": "2.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mediacapabilities-decodinginfo",
+        "href": "https://w3c.github.io/media-capabilities/#dom-mediacapabilities-decodinginfo",
+        "linkingText": [
+          "decodingInfo(configuration)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MediaCapabilities"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "media-capabilities-interface",
+          "href": "https://w3c.github.io/media-capabilities/#media-capabilities-interface",
+          "title": "Media Capabilities Interface",
+          "number": "2.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mediacapabilities-encodinginfo",
+        "href": "https://w3c.github.io/media-capabilities/#dom-mediacapabilities-encodinginfo",
+        "linkingText": [
+          "encodingInfo(configuration)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MediaCapabilities"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "media-capabilities-interface",
+          "href": "https://w3c.github.io/media-capabilities/#media-capabilities-interface",
+          "title": "Media Capabilities Interface",
+          "number": "2.5"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

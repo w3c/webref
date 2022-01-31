@@ -1,0 +1,423 @@
+{
+  "name": "TextTrack",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "HTML Standard",
+      "url": "https://html.spec.whatwg.org/multipage/"
+    },
+    "fragment": "[Exposed=Window]\ninterface TextTrack : EventTarget {\n  readonly attribute TextTrackKind kind;\n  readonly attribute DOMString label;\n  readonly attribute DOMString language;\n\n  readonly attribute DOMString id;\n  readonly attribute DOMString inBandMetadataTrackDispatchType;\n\n  attribute TextTrackMode mode;\n\n  readonly attribute TextTrackCueList? cues;\n  readonly attribute TextTrackCueList? activeCues;\n\n  undefined addCue(TextTrackCue cue);\n  undefined removeCue(TextTrackCue cue);\n\n  attribute EventHandler oncuechange;\n};",
+    "href": "https://html.spec.whatwg.org/multipage/media.html#texttrack"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "Media Source Extensions™",
+        "url": "https://www.w3.org/TR/media-source-2/"
+      },
+      "fragment": "[Exposed=(Window,DedicatedWorker)]\npartial interface TextTrack {\n    readonly        attribute SourceBuffer? sourceBuffer;\n};"
+    }
+  ],
+  "inheritance": {
+    "name": "EventTarget",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=*]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+      "href": "https://dom.spec.whatwg.org/#eventtarget"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://html.spec.whatwg.org/multipage/": [
+      {
+        "id": "texttrack",
+        "href": "https://html.spec.whatwg.org/multipage/media.html#texttrack",
+        "linkingText": [
+          "TextTrack"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "text-track-api",
+          "href": "https://html.spec.whatwg.org/multipage/media.html#text-track-api",
+          "title": "Text track API",
+          "number": "4.8.12.11.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-texttrack-kind",
+        "href": "https://html.spec.whatwg.org/multipage/media.html#dom-texttrack-kind",
+        "linkingText": [
+          "kind"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "TextTrack"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "text-track-api",
+          "href": "https://html.spec.whatwg.org/multipage/media.html#text-track-api",
+          "title": "Text track API",
+          "number": "4.8.12.11.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-texttrack-label",
+        "href": "https://html.spec.whatwg.org/multipage/media.html#dom-texttrack-label",
+        "linkingText": [
+          "label"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "TextTrack"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "text-track-api",
+          "href": "https://html.spec.whatwg.org/multipage/media.html#text-track-api",
+          "title": "Text track API",
+          "number": "4.8.12.11.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-texttrack-language",
+        "href": "https://html.spec.whatwg.org/multipage/media.html#dom-texttrack-language",
+        "linkingText": [
+          "language"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "TextTrack"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "text-track-api",
+          "href": "https://html.spec.whatwg.org/multipage/media.html#text-track-api",
+          "title": "Text track API",
+          "number": "4.8.12.11.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-texttrack-id",
+        "href": "https://html.spec.whatwg.org/multipage/media.html#dom-texttrack-id",
+        "linkingText": [
+          "id"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "TextTrack"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "text-track-api",
+          "href": "https://html.spec.whatwg.org/multipage/media.html#text-track-api",
+          "title": "Text track API",
+          "number": "4.8.12.11.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-texttrack-inbandmetadatatrackdispatchtype",
+        "href": "https://html.spec.whatwg.org/multipage/media.html#dom-texttrack-inbandmetadatatrackdispatchtype",
+        "linkingText": [
+          "inBandMetadataTrackDispatchType"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "TextTrack"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "text-track-api",
+          "href": "https://html.spec.whatwg.org/multipage/media.html#text-track-api",
+          "title": "Text track API",
+          "number": "4.8.12.11.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-texttrack-mode",
+        "href": "https://html.spec.whatwg.org/multipage/media.html#dom-texttrack-mode",
+        "linkingText": [
+          "mode"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "TextTrack"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "text-track-api",
+          "href": "https://html.spec.whatwg.org/multipage/media.html#text-track-api",
+          "title": "Text track API",
+          "number": "4.8.12.11.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-texttrack-cues",
+        "href": "https://html.spec.whatwg.org/multipage/media.html#dom-texttrack-cues",
+        "linkingText": [
+          "cues"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "TextTrack"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "text-track-api",
+          "href": "https://html.spec.whatwg.org/multipage/media.html#text-track-api",
+          "title": "Text track API",
+          "number": "4.8.12.11.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-texttrack-activecues",
+        "href": "https://html.spec.whatwg.org/multipage/media.html#dom-texttrack-activecues",
+        "linkingText": [
+          "activeCues"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "TextTrack"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "text-track-api",
+          "href": "https://html.spec.whatwg.org/multipage/media.html#text-track-api",
+          "title": "Text track API",
+          "number": "4.8.12.11.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-texttrack-addcue",
+        "href": "https://html.spec.whatwg.org/multipage/media.html#dom-texttrack-addcue",
+        "linkingText": [
+          "addCue(cue)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "TextTrack"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "text-track-api",
+          "href": "https://html.spec.whatwg.org/multipage/media.html#text-track-api",
+          "title": "Text track API",
+          "number": "4.8.12.11.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-texttrack-removecue",
+        "href": "https://html.spec.whatwg.org/multipage/media.html#dom-texttrack-removecue",
+        "linkingText": [
+          "removeCue(cue)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "TextTrack"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "text-track-api",
+          "href": "https://html.spec.whatwg.org/multipage/media.html#text-track-api",
+          "title": "Text track API",
+          "number": "4.8.12.11.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "handler-texttrack-oncuechange",
+        "href": "https://html.spec.whatwg.org/multipage/media.html#handler-texttrack-oncuechange",
+        "linkingText": [
+          "oncuechange"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "TextTrack"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "cue-events",
+          "href": "https://html.spec.whatwg.org/multipage/media.html#cue-events",
+          "title": "Event handlers for objects of the text track APIs",
+          "number": "4.8.12.11.6"
+        },
+        "definedIn": "table"
+      }
+    ],
+    "https://www.w3.org/TR/media-source-2/": [
+      {
+        "id": "dom-texttrack-sourcebuffer",
+        "href": "https://w3c.github.io/media-source/#dom-texttrack-sourcebuffer",
+        "linkingText": [
+          "sourceBuffer"
+        ],
+        "localLinkingText": [
+          "TextTrack.sourceBuffer"
+        ],
+        "type": "attribute",
+        "for": [
+          "TextTrack"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-4",
+          "href": "https://w3c.github.io/media-source/#attributes-4",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "eventtarget",
+        "href": "https://dom.spec.whatwg.org/#eventtarget",
+        "linkingText": [
+          "EventTarget"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventtarget-eventtarget",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-eventtarget",
+        "linkingText": [
+          "EventTarget()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-addeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-addeventlistener",
+        "linkingText": [
+          "addEventListener(type, callback, options)",
+          "addEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-removeeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-removeeventlistener",
+        "linkingText": [
+          "removeEventListener(type, callback, options)",
+          "removeEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-dispatchevent",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-dispatchevent",
+        "linkingText": [
+          "dispatchEvent(event)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

@@ -1,0 +1,206 @@
+{
+  "name": "MLPool2dOptions",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Web Neural Network API",
+      "url": "https://www.w3.org/TR/webnn/"
+    },
+    "fragment": "dictionary MLPool2dOptions {\n  sequence<long> windowDimensions;\n  sequence<long> padding;\n  sequence<long> strides;\n  sequence<long> dilations;\n  MLAutoPad autoPad = \"explicit\";\n  MLInputOperandLayout layout = \"nchw\";\n  MLRoundingType roundingType = \"floor\";\n  sequence<long> outputSizes;\n};",
+    "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlpool2doptions"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webnn/": [
+      {
+        "id": "dictdef-mlpool2doptions",
+        "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlpool2doptions",
+        "linkingText": [
+          "MLPool2dOptions"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-pool2d",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-pool2d",
+          "title": "pooling operations",
+          "number": "7.7.19"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlpool2doptions-windowdimensions",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlpool2doptions-windowdimensions",
+        "linkingText": [
+          "windowDimensions"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MLPool2dOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-pool2d",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-pool2d",
+          "title": "pooling operations",
+          "number": "7.7.19"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlpool2doptions-padding",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlpool2doptions-padding",
+        "linkingText": [
+          "padding"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MLPool2dOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-pool2d",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-pool2d",
+          "title": "pooling operations",
+          "number": "7.7.19"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlpool2doptions-strides",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlpool2doptions-strides",
+        "linkingText": [
+          "strides"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MLPool2dOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-pool2d",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-pool2d",
+          "title": "pooling operations",
+          "number": "7.7.19"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlpool2doptions-dilations",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlpool2doptions-dilations",
+        "linkingText": [
+          "dilations"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MLPool2dOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-pool2d",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-pool2d",
+          "title": "pooling operations",
+          "number": "7.7.19"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlpool2doptions-autopad",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlpool2doptions-autopad",
+        "linkingText": [
+          "autoPad"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MLPool2dOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-pool2d",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-pool2d",
+          "title": "pooling operations",
+          "number": "7.7.19"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlpool2doptions-layout",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlpool2doptions-layout",
+        "linkingText": [
+          "layout"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MLPool2dOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-pool2d",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-pool2d",
+          "title": "pooling operations",
+          "number": "7.7.19"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlpool2doptions-roundingtype",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlpool2doptions-roundingtype",
+        "linkingText": [
+          "roundingType"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MLPool2dOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-pool2d",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-pool2d",
+          "title": "pooling operations",
+          "number": "7.7.19"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlpool2doptions-outputsizes",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlpool2doptions-outputsizes",
+        "linkingText": [
+          "outputSizes"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MLPool2dOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-pool2d",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-pool2d",
+          "title": "pooling operations",
+          "number": "7.7.19"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

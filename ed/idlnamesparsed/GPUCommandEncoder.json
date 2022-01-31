@@ -1,0 +1,457 @@
+{
+  "name": "GPUCommandEncoder",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebGPU",
+      "url": "https://www.w3.org/TR/webgpu/"
+    },
+    "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUCommandEncoder {\n    GPURenderPassEncoder beginRenderPass(GPURenderPassDescriptor descriptor);\n    GPUComputePassEncoder beginComputePass(optional GPUComputePassDescriptor descriptor = {});\n\n    undefined copyBufferToBuffer(\n        GPUBuffer source,\n        GPUSize64 sourceOffset,\n        GPUBuffer destination,\n        GPUSize64 destinationOffset,\n        GPUSize64 size);\n\n    undefined copyBufferToTexture(\n        GPUImageCopyBuffer source,\n        GPUImageCopyTexture destination,\n        GPUExtent3D copySize);\n\n    undefined copyTextureToBuffer(\n        GPUImageCopyTexture source,\n        GPUImageCopyBuffer destination,\n        GPUExtent3D copySize);\n\n    undefined copyTextureToTexture(\n        GPUImageCopyTexture source,\n        GPUImageCopyTexture destination,\n        GPUExtent3D copySize);\n\n    undefined clearBuffer(\n        GPUBuffer buffer,\n        optional GPUSize64 offset = 0,\n        optional GPUSize64 size);\n\n    undefined writeTimestamp(GPUQuerySet querySet, GPUSize32 queryIndex);\n\n    undefined resolveQuerySet(\n        GPUQuerySet querySet,\n        GPUSize32 firstQuery,\n        GPUSize32 queryCount,\n        GPUBuffer destination,\n        GPUSize64 destinationOffset);\n\n    GPUCommandBuffer finish(optional GPUCommandBufferDescriptor descriptor = {});\n};",
+    "href": "https://gpuweb.github.io/gpuweb/#gpucommandencoder"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "WebGPU",
+        "url": "https://www.w3.org/TR/webgpu/"
+      },
+      "fragment": "GPUCommandEncoder includes GPUObjectBase;"
+    },
+    {
+      "spec": {
+        "title": "WebGPU",
+        "url": "https://www.w3.org/TR/webgpu/"
+      },
+      "fragment": "GPUCommandEncoder includes GPUCommandsMixin;"
+    },
+    {
+      "spec": {
+        "title": "WebGPU",
+        "url": "https://www.w3.org/TR/webgpu/"
+      },
+      "fragment": "GPUCommandEncoder includes GPUDebugCommandsMixin;"
+    }
+  ],
+  "inheritance": null,
+  "includes": [
+    {
+      "name": "GPUObjectBase",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "WebGPU",
+          "url": "https://www.w3.org/TR/webgpu/"
+        },
+        "fragment": "interface mixin GPUObjectBase {\n    attribute (USVString or undefined) label;\n};",
+        "href": "https://gpuweb.github.io/gpuweb/#gpuobjectbase"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "GPUCommandsMixin",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "WebGPU",
+          "url": "https://www.w3.org/TR/webgpu/"
+        },
+        "fragment": "interface mixin GPUCommandsMixin {\n};",
+        "href": "https://gpuweb.github.io/gpuweb/#gpucommandsmixin"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "GPUDebugCommandsMixin",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "WebGPU",
+          "url": "https://www.w3.org/TR/webgpu/"
+        },
+        "fragment": "interface mixin GPUDebugCommandsMixin {\n    undefined pushDebugGroup(USVString groupLabel);\n    undefined popDebugGroup();\n    undefined insertDebugMarker(USVString markerLabel);\n};",
+        "href": "https://gpuweb.github.io/gpuweb/#gpudebugcommandsmixin"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    }
+  ],
+  "dfns": {
+    "https://www.w3.org/TR/webgpu/": [
+      {
+        "id": "gpucommandencoder",
+        "href": "https://gpuweb.github.io/gpuweb/#gpucommandencoder",
+        "linkingText": [
+          "GPUCommandEncoder"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "command-encoder",
+          "href": "https://gpuweb.github.io/gpuweb/#command-encoder",
+          "title": "GPUCommandEncoder",
+          "number": "12.2"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-gpucommandencoder-beginrenderpass",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-beginrenderpass",
+        "linkingText": [
+          "beginRenderPass(descriptor)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GPUCommandEncoder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "command-encoder-pass-encoding",
+          "href": "https://gpuweb.github.io/gpuweb/#command-encoder-pass-encoding",
+          "title": "Pass Encoding",
+          "number": "12.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpucommandencoder-begincomputepass",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-begincomputepass",
+        "linkingText": [
+          "beginComputePass(descriptor)",
+          "beginComputePass()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GPUCommandEncoder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "command-encoder-pass-encoding",
+          "href": "https://gpuweb.github.io/gpuweb/#command-encoder-pass-encoding",
+          "title": "Pass Encoding",
+          "number": "12.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpucommandencoder-copybuffertobuffer",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-copybuffertobuffer",
+        "linkingText": [
+          "copyBufferToBuffer(source, sourceOffset, destination, destinationOffset, size)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GPUCommandEncoder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "buffer-copies",
+          "href": "https://gpuweb.github.io/gpuweb/#buffer-copies",
+          "title": "Buffer Copies",
+          "number": "12.4.6"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpucommandencoder-copybuffertotexture",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-copybuffertotexture",
+        "linkingText": [
+          "copyBufferToTexture(source, destination, copySize)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GPUCommandEncoder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "image-copies",
+          "href": "https://gpuweb.github.io/gpuweb/#image-copies",
+          "title": "Image Copies",
+          "number": "12.4.8"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpucommandencoder-copytexturetobuffer",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-copytexturetobuffer",
+        "linkingText": [
+          "copyTextureToBuffer(source, destination, copySize)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GPUCommandEncoder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "image-copies",
+          "href": "https://gpuweb.github.io/gpuweb/#image-copies",
+          "title": "Image Copies",
+          "number": "12.4.8"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpucommandencoder-copytexturetotexture",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-copytexturetotexture",
+        "linkingText": [
+          "copyTextureToTexture(source, destination, copySize)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GPUCommandEncoder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "image-copies",
+          "href": "https://gpuweb.github.io/gpuweb/#image-copies",
+          "title": "Image Copies",
+          "number": "12.4.8"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpucommandencoder-clearbuffer",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-clearbuffer",
+        "linkingText": [
+          "clearBuffer(buffer, offset, size)",
+          "clearBuffer(buffer, offset)",
+          "clearBuffer(buffer)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GPUCommandEncoder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "buffer-fills",
+          "href": "https://gpuweb.github.io/gpuweb/#buffer-fills",
+          "title": "Buffer Fills",
+          "number": "12.4.7"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpucommandencoder-writetimestamp",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-writetimestamp",
+        "linkingText": [
+          "writeTimestamp(querySet, queryIndex)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GPUCommandEncoder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "command-encoder-queries",
+          "href": "https://gpuweb.github.io/gpuweb/#command-encoder-queries",
+          "title": "Queries",
+          "number": "12.5"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpucommandencoder-resolvequeryset",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-resolvequeryset",
+        "linkingText": [
+          "resolveQuerySet(querySet, firstQuery, queryCount, destination, destinationOffset)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GPUCommandEncoder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "command-encoder-queries",
+          "href": "https://gpuweb.github.io/gpuweb/#command-encoder-queries",
+          "title": "Queries",
+          "number": "12.5"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpucommandencoder-finish",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-finish",
+        "linkingText": [
+          "finish(descriptor)",
+          "finish()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GPUCommandEncoder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "command-encoder-finalization",
+          "href": "https://gpuweb.github.io/gpuweb/#command-encoder-finalization",
+          "title": "Finalization",
+          "number": "12.6"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "gpuobjectbase",
+        "href": "https://gpuweb.github.io/gpuweb/#gpuobjectbase",
+        "linkingText": [
+          "GPUObjectBase"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "webgpu-interfaces",
+          "href": "https://gpuweb.github.io/gpuweb/#webgpu-interfaces",
+          "title": "WebGPU Interfaces",
+          "number": "3.1.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gpuobjectbase-label",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpuobjectbase-label",
+        "linkingText": [
+          "label"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "GPUObjectBase"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "webgpu-interfaces",
+          "href": "https://gpuweb.github.io/gpuweb/#webgpu-interfaces",
+          "title": "WebGPU Interfaces",
+          "number": "3.1.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "gpucommandsmixin",
+        "href": "https://gpuweb.github.io/gpuweb/#gpucommandsmixin",
+        "linkingText": [
+          "GPUCommandsMixin"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "commands-mixin",
+          "href": "https://gpuweb.github.io/gpuweb/#commands-mixin",
+          "title": "GPUCommandsMixin",
+          "number": "12.1"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "gpudebugcommandsmixin",
+        "href": "https://gpuweb.github.io/gpuweb/#gpudebugcommandsmixin",
+        "linkingText": [
+          "GPUDebugCommandsMixin"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "debug-markers",
+          "href": "https://gpuweb.github.io/gpuweb/#debug-markers",
+          "title": "14. Debug Markers"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-gpudebugcommandsmixin-pushdebuggroup",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpudebugcommandsmixin-pushdebuggroup",
+        "linkingText": [
+          "pushDebugGroup(groupLabel)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GPUDebugCommandsMixin"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "debug-markers",
+          "href": "https://gpuweb.github.io/gpuweb/#debug-markers",
+          "title": "14. Debug Markers"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpudebugcommandsmixin-popdebuggroup",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpudebugcommandsmixin-popdebuggroup",
+        "linkingText": [
+          "popDebugGroup()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GPUDebugCommandsMixin"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "debug-markers",
+          "href": "https://gpuweb.github.io/gpuweb/#debug-markers",
+          "title": "14. Debug Markers"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpudebugcommandsmixin-insertdebugmarker",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpudebugcommandsmixin-insertdebugmarker",
+        "linkingText": [
+          "insertDebugMarker(markerLabel)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GPUDebugCommandsMixin"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "debug-markers",
+          "href": "https://gpuweb.github.io/gpuweb/#debug-markers",
+          "title": "14. Debug Markers"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

@@ -1,0 +1,176 @@
+{
+  "name": "MediaCapabilitiesDecodingInfo",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Media Capabilities",
+      "url": "https://www.w3.org/TR/media-capabilities/"
+    },
+    "fragment": "dictionary MediaCapabilitiesDecodingInfo : MediaCapabilitiesInfo {\n  required MediaKeySystemAccess keySystemAccess;\n  MediaDecodingConfiguration configuration;\n};",
+    "href": "https://w3c.github.io/media-capabilities/#dictdef-mediacapabilitiesdecodinginfo"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "MediaCapabilitiesInfo",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "Media Capabilities",
+        "url": "https://www.w3.org/TR/media-capabilities/"
+      },
+      "fragment": "dictionary MediaCapabilitiesInfo {\n  required boolean supported;\n  required boolean smooth;\n  required boolean powerEfficient;\n};",
+      "href": "https://w3c.github.io/media-capabilities/#dictdef-mediacapabilitiesinfo"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/media-capabilities/": [
+      {
+        "id": "dictdef-mediacapabilitiesdecodinginfo",
+        "href": "https://w3c.github.io/media-capabilities/#dictdef-mediacapabilitiesdecodinginfo",
+        "linkingText": [
+          "MediaCapabilitiesDecodingInfo"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "media-capabilities-info",
+          "href": "https://w3c.github.io/media-capabilities/#media-capabilities-info",
+          "title": "Media Capabilities Information",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mediacapabilitiesdecodinginfo-keysystemaccess",
+        "href": "https://w3c.github.io/media-capabilities/#dom-mediacapabilitiesdecodinginfo-keysystemaccess",
+        "linkingText": [
+          "keySystemAccess"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MediaCapabilitiesDecodingInfo"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "media-capabilities-info",
+          "href": "https://w3c.github.io/media-capabilities/#media-capabilities-info",
+          "title": "Media Capabilities Information",
+          "number": "2.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-mediacapabilitiesdecodinginfo-configuration",
+        "href": "https://w3c.github.io/media-capabilities/#dom-mediacapabilitiesdecodinginfo-configuration",
+        "linkingText": [
+          "configuration"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MediaCapabilitiesDecodingInfo"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "media-capabilities-info",
+          "href": "https://w3c.github.io/media-capabilities/#media-capabilities-info",
+          "title": "Media Capabilities Information",
+          "number": "2.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dictdef-mediacapabilitiesinfo",
+        "href": "https://w3c.github.io/media-capabilities/#dictdef-mediacapabilitiesinfo",
+        "linkingText": [
+          "MediaCapabilitiesInfo"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "media-capabilities-info",
+          "href": "https://w3c.github.io/media-capabilities/#media-capabilities-info",
+          "title": "Media Capabilities Information",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mediacapabilitiesinfo-supported",
+        "href": "https://w3c.github.io/media-capabilities/#dom-mediacapabilitiesinfo-supported",
+        "linkingText": [
+          "supported"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MediaCapabilitiesInfo"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "media-capabilities-info",
+          "href": "https://w3c.github.io/media-capabilities/#media-capabilities-info",
+          "title": "Media Capabilities Information",
+          "number": "2.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-mediacapabilitiesinfo-smooth",
+        "href": "https://w3c.github.io/media-capabilities/#dom-mediacapabilitiesinfo-smooth",
+        "linkingText": [
+          "smooth"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MediaCapabilitiesInfo"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "media-capabilities-info",
+          "href": "https://w3c.github.io/media-capabilities/#media-capabilities-info",
+          "title": "Media Capabilities Information",
+          "number": "2.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-mediacapabilitiesinfo-powerefficient",
+        "href": "https://w3c.github.io/media-capabilities/#dom-mediacapabilitiesinfo-powerefficient",
+        "linkingText": [
+          "powerEfficient"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MediaCapabilitiesInfo"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "media-capabilities-info",
+          "href": "https://w3c.github.io/media-capabilities/#media-capabilities-info",
+          "title": "Media Capabilities Information",
+          "number": "2.2"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

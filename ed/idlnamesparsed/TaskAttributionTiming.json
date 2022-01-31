@@ -1,0 +1,249 @@
+{
+  "name": "TaskAttributionTiming",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Long Tasks API",
+      "url": "https://www.w3.org/TR/longtasks-1/"
+    },
+    "fragment": "[Exposed=Window]\ninterface TaskAttributionTiming : PerformanceEntry {\n    readonly attribute DOMString containerType;\n    readonly attribute DOMString containerSrc;\n    readonly attribute DOMString containerId;\n    readonly attribute DOMString containerName;\n    [Default] object toJSON();\n};",
+    "href": "https://w3c.github.io/longtasks/#taskattributiontiming"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "PerformanceEntry",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "Performance Timeline Level 2",
+        "url": "https://www.w3.org/TR/performance-timeline/"
+      },
+      "fragment": "[Exposed=*]\ninterface PerformanceEntry {\n  readonly    attribute DOMString           name;\n  readonly    attribute DOMString           entryType;\n  readonly    attribute DOMHighResTimeStamp startTime;\n  readonly    attribute DOMHighResTimeStamp duration;\n  [Default] object toJSON();\n};",
+      "href": "https://w3c.github.io/performance-timeline/#dom-performanceentry"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/longtasks-1/": [
+      {
+        "id": "taskattributiontiming",
+        "href": "https://w3c.github.io/longtasks/#taskattributiontiming",
+        "linkingText": [
+          "TaskAttributionTiming"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "sec-TaskAttributionTiming",
+          "href": "https://w3c.github.io/longtasks/#sec-TaskAttributionTiming",
+          "title": "TaskAttributionTiming interface",
+          "number": "3.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-taskattributiontiming-containertype",
+        "href": "https://w3c.github.io/longtasks/#dom-taskattributiontiming-containertype",
+        "linkingText": [
+          "containerType"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "TaskAttributionTiming"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "sec-TaskAttributionTiming",
+          "href": "https://w3c.github.io/longtasks/#sec-TaskAttributionTiming",
+          "title": "TaskAttributionTiming interface",
+          "number": "3.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-taskattributiontiming-containersrc",
+        "href": "https://w3c.github.io/longtasks/#dom-taskattributiontiming-containersrc",
+        "linkingText": [
+          "containerSrc"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "TaskAttributionTiming"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "sec-TaskAttributionTiming",
+          "href": "https://w3c.github.io/longtasks/#sec-TaskAttributionTiming",
+          "title": "TaskAttributionTiming interface",
+          "number": "3.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-taskattributiontiming-containerid",
+        "href": "https://w3c.github.io/longtasks/#dom-taskattributiontiming-containerid",
+        "linkingText": [
+          "containerId"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "TaskAttributionTiming"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "sec-TaskAttributionTiming",
+          "href": "https://w3c.github.io/longtasks/#sec-TaskAttributionTiming",
+          "title": "TaskAttributionTiming interface",
+          "number": "3.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-taskattributiontiming-containername",
+        "href": "https://w3c.github.io/longtasks/#dom-taskattributiontiming-containername",
+        "linkingText": [
+          "containerName"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "TaskAttributionTiming"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "sec-TaskAttributionTiming",
+          "href": "https://w3c.github.io/longtasks/#sec-TaskAttributionTiming",
+          "title": "TaskAttributionTiming interface",
+          "number": "3.2"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://www.w3.org/TR/performance-timeline/": [
+      {
+        "id": "dom-performanceentry",
+        "href": "https://w3c.github.io/performance-timeline/#dom-performanceentry",
+        "linkingText": [
+          "PerformanceEntry"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-performanceentry-interface",
+          "href": "https://w3c.github.io/performance-timeline/#the-performanceentry-interface",
+          "title": "The PerformanceEntry interface",
+          "number": "4"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-performanceentry-name",
+        "href": "https://w3c.github.io/performance-timeline/#dom-performanceentry-name",
+        "linkingText": [
+          "name"
+        ],
+        "localLinkingText": [
+          "PerformanceEntry.name"
+        ],
+        "type": "attribute",
+        "for": [
+          "PerformanceEntry"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-performanceentry-interface",
+          "href": "https://w3c.github.io/performance-timeline/#the-performanceentry-interface",
+          "title": "The PerformanceEntry interface",
+          "number": "4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-performanceentry-entrytype",
+        "href": "https://w3c.github.io/performance-timeline/#dom-performanceentry-entrytype",
+        "linkingText": [
+          "entryType"
+        ],
+        "localLinkingText": [
+          "PerformanceEntry.entryType"
+        ],
+        "type": "attribute",
+        "for": [
+          "PerformanceEntry"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-performanceentry-interface",
+          "href": "https://w3c.github.io/performance-timeline/#the-performanceentry-interface",
+          "title": "The PerformanceEntry interface",
+          "number": "4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-performanceentry-starttime",
+        "href": "https://w3c.github.io/performance-timeline/#dom-performanceentry-starttime",
+        "linkingText": [
+          "startTime"
+        ],
+        "localLinkingText": [
+          "PerformanceEntry.startTime"
+        ],
+        "type": "attribute",
+        "for": [
+          "PerformanceEntry"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-performanceentry-interface",
+          "href": "https://w3c.github.io/performance-timeline/#the-performanceentry-interface",
+          "title": "The PerformanceEntry interface",
+          "number": "4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-performanceentry-duration",
+        "href": "https://w3c.github.io/performance-timeline/#dom-performanceentry-duration",
+        "linkingText": [
+          "duration"
+        ],
+        "localLinkingText": [
+          "PerformanceEntry.duration"
+        ],
+        "type": "attribute",
+        "for": [
+          "PerformanceEntry"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-performanceentry-interface",
+          "href": "https://w3c.github.io/performance-timeline/#the-performanceentry-interface",
+          "title": "The PerformanceEntry interface",
+          "number": "4"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

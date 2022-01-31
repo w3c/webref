@@ -1,0 +1,163 @@
+{
+  "name": "PerformanceObserver",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Performance Timeline Level 2",
+      "url": "https://www.w3.org/TR/performance-timeline/"
+    },
+    "fragment": "[Exposed=*]\ninterface PerformanceObserver {\n  constructor(PerformanceObserverCallback callback);\n  undefined observe (optional PerformanceObserverInit options = {});\n  undefined disconnect ();\n  PerformanceEntryList takeRecords();\n  [SameObject] static readonly attribute FrozenArray<DOMString> supportedEntryTypes;\n};",
+    "href": "https://w3c.github.io/performance-timeline/#dom-performanceobserver"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/performance-timeline/": [
+      {
+        "id": "dom-performanceobserver",
+        "href": "https://w3c.github.io/performance-timeline/#dom-performanceobserver",
+        "linkingText": [
+          "PerformanceObserver"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-performanceobserver-interface",
+          "href": "https://w3c.github.io/performance-timeline/#the-performanceobserver-interface",
+          "title": "The PerformanceObserver interface",
+          "number": "5"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-performanceobserver-constructor",
+        "href": "https://w3c.github.io/performance-timeline/#dom-performanceobserver-constructor",
+        "linkingText": [
+          "constructor()",
+          "constructor(callback)"
+        ],
+        "localLinkingText": [
+          "PerformanceObserver.constructor",
+          "PerformanceObserver.constructor()",
+          "constructor"
+        ],
+        "type": "constructor",
+        "for": [
+          "PerformanceObserver"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-performanceobserver-interface",
+          "href": "https://w3c.github.io/performance-timeline/#the-performanceobserver-interface",
+          "title": "The PerformanceObserver interface",
+          "number": "5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-performanceobserver-observe",
+        "href": "https://w3c.github.io/performance-timeline/#dom-performanceobserver-observe",
+        "linkingText": [
+          "observe()",
+          "observe(options)"
+        ],
+        "localLinkingText": [
+          "PerformanceObserver.observe",
+          "PerformanceObserver.observe()",
+          "observe"
+        ],
+        "type": "method",
+        "for": [
+          "PerformanceObserver"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "observe-method",
+          "href": "https://w3c.github.io/performance-timeline/#observe-method",
+          "title": "observe() method",
+          "number": "5.2"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-performanceobserver-disconnect",
+        "href": "https://w3c.github.io/performance-timeline/#dom-performanceobserver-disconnect",
+        "linkingText": [
+          "disconnect()"
+        ],
+        "localLinkingText": [
+          "PerformanceObserver.disconnect",
+          "PerformanceObserver.disconnect()",
+          "disconnect"
+        ],
+        "type": "method",
+        "for": [
+          "PerformanceObserver"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "disconnect-method",
+          "href": "https://w3c.github.io/performance-timeline/#disconnect-method",
+          "title": "disconnect() method",
+          "number": "5.4"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-performanceobserver-takerecords",
+        "href": "https://w3c.github.io/performance-timeline/#dom-performanceobserver-takerecords",
+        "linkingText": [
+          "takeRecords()"
+        ],
+        "localLinkingText": [
+          "PerformanceObserver.takeRecords",
+          "PerformanceObserver.takeRecords()",
+          "takeRecords"
+        ],
+        "type": "method",
+        "for": [
+          "PerformanceObserver"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "takerecords-method",
+          "href": "https://w3c.github.io/performance-timeline/#takerecords-method",
+          "title": "takeRecords() method",
+          "number": "5.3"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-performanceobserver-supportedentrytypes",
+        "href": "https://w3c.github.io/performance-timeline/#dom-performanceobserver-supportedentrytypes",
+        "linkingText": [
+          "supportedEntryTypes"
+        ],
+        "localLinkingText": [
+          "PerformanceObserver.supportedEntryTypes"
+        ],
+        "type": "attribute",
+        "for": [
+          "PerformanceObserver"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "supportedentrytypes-attribute",
+          "href": "https://w3c.github.io/performance-timeline/#supportedentrytypes-attribute",
+          "title": "supportedEntryTypes attribute",
+          "number": "5.5"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

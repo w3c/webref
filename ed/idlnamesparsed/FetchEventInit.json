@@ -1,0 +1,295 @@
+{
+  "name": "FetchEventInit",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Service Workers Nightly",
+      "url": "https://www.w3.org/TR/service-workers-1/"
+    },
+    "fragment": "dictionary FetchEventInit : ExtendableEventInit {\n  required Request request;\n  Promise<any> preloadResponse;\n  DOMString clientId = \"\";\n  DOMString resultingClientId = \"\";\n  DOMString replacesClientId = \"\";\n  Promise<undefined> handled;\n};",
+    "href": "https://w3c.github.io/ServiceWorker/#dictdef-fetcheventinit"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "ExtendableEventInit",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "Service Workers Nightly",
+        "url": "https://www.w3.org/TR/service-workers-1/"
+      },
+      "fragment": "dictionary ExtendableEventInit : EventInit {\n  // Defined for the forward compatibility across the derived events\n};",
+      "href": "https://w3c.github.io/ServiceWorker/#dictdef-extendableeventinit"
+    },
+    "extended": [],
+    "inheritance": {
+      "name": "EventInit",
+      "type": "dictionary",
+      "defined": {
+        "spec": {
+          "title": "DOM Standard",
+          "url": "https://dom.spec.whatwg.org/"
+        },
+        "fragment": "dictionary EventInit {\n  boolean bubbles = false;\n  boolean cancelable = false;\n  boolean composed = false;\n};",
+        "href": "https://dom.spec.whatwg.org/#dictdef-eventinit"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/service-workers-1/": [
+      {
+        "id": "dictdef-fetcheventinit",
+        "href": "https://w3c.github.io/ServiceWorker/#dictdef-fetcheventinit",
+        "linkingText": [
+          "FetchEventInit"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "fetchevent-interface",
+          "href": "https://w3c.github.io/ServiceWorker/#fetchevent-interface",
+          "title": "FetchEvent",
+          "number": "4.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-fetcheventinit-request",
+        "href": "https://w3c.github.io/ServiceWorker/#dom-fetcheventinit-request",
+        "linkingText": [
+          "request"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "FetchEventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "fetchevent-interface",
+          "href": "https://w3c.github.io/ServiceWorker/#fetchevent-interface",
+          "title": "FetchEvent",
+          "number": "4.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-fetcheventinit-preloadresponse",
+        "href": "https://w3c.github.io/ServiceWorker/#dom-fetcheventinit-preloadresponse",
+        "linkingText": [
+          "preloadResponse"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "FetchEventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "fetchevent-interface",
+          "href": "https://w3c.github.io/ServiceWorker/#fetchevent-interface",
+          "title": "FetchEvent",
+          "number": "4.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-fetcheventinit-clientid",
+        "href": "https://w3c.github.io/ServiceWorker/#dom-fetcheventinit-clientid",
+        "linkingText": [
+          "clientId"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "FetchEventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "fetchevent-interface",
+          "href": "https://w3c.github.io/ServiceWorker/#fetchevent-interface",
+          "title": "FetchEvent",
+          "number": "4.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-fetcheventinit-resultingclientid",
+        "href": "https://w3c.github.io/ServiceWorker/#dom-fetcheventinit-resultingclientid",
+        "linkingText": [
+          "resultingClientId"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "FetchEventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "fetchevent-interface",
+          "href": "https://w3c.github.io/ServiceWorker/#fetchevent-interface",
+          "title": "FetchEvent",
+          "number": "4.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-fetcheventinit-replacesclientid",
+        "href": "https://w3c.github.io/ServiceWorker/#dom-fetcheventinit-replacesclientid",
+        "linkingText": [
+          "replacesClientId"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "FetchEventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "fetchevent-interface",
+          "href": "https://w3c.github.io/ServiceWorker/#fetchevent-interface",
+          "title": "FetchEvent",
+          "number": "4.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-fetcheventinit-handled",
+        "href": "https://w3c.github.io/ServiceWorker/#dom-fetcheventinit-handled",
+        "linkingText": [
+          "handled"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "FetchEventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "fetchevent-interface",
+          "href": "https://w3c.github.io/ServiceWorker/#fetchevent-interface",
+          "title": "FetchEvent",
+          "number": "4.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dictdef-extendableeventinit",
+        "href": "https://w3c.github.io/ServiceWorker/#dictdef-extendableeventinit",
+        "linkingText": [
+          "ExtendableEventInit"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "extendableevent-interface",
+          "href": "https://w3c.github.io/ServiceWorker/#extendableevent-interface",
+          "title": "ExtendableEvent",
+          "number": "4.4"
+        },
+        "definedIn": "pre"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "dictdef-eventinit",
+        "href": "https://dom.spec.whatwg.org/#dictdef-eventinit",
+        "linkingText": [
+          "EventInit"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventinit-bubbles",
+        "href": "https://dom.spec.whatwg.org/#dom-eventinit-bubbles",
+        "linkingText": [
+          "bubbles"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventinit-cancelable",
+        "href": "https://dom.spec.whatwg.org/#dom-eventinit-cancelable",
+        "linkingText": [
+          "cancelable"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventinit-composed",
+        "href": "https://dom.spec.whatwg.org/#dom-eventinit-composed",
+        "linkingText": [
+          "composed"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

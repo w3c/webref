@@ -1,0 +1,188 @@
+{
+  "name": "RTCConfiguration",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
+      "url": "https://www.w3.org/TR/webrtc/"
+    },
+    "fragment": "dictionary RTCConfiguration {\n  sequence<RTCIceServer> iceServers = [];\n  RTCIceTransportPolicy iceTransportPolicy = \"all\";\n  RTCBundlePolicy bundlePolicy = \"balanced\";\n  RTCRtcpMuxPolicy rtcpMuxPolicy = \"require\";\n  sequence<RTCCertificate> certificates = [];\n  [EnforceRange] octet iceCandidatePoolSize = 0;\n};",
+    "href": "https://w3c.github.io/webrtc-pc/#dom-rtcconfiguration"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "Identity for WebRTC 1.0",
+        "url": "https://www.w3.org/TR/webrtc-identity/"
+      },
+      "fragment": "partial dictionary RTCConfiguration {\n  DOMString peerIdentity;\n};"
+    }
+  ],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webrtc/": [
+      {
+        "id": "dom-rtcconfiguration",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcconfiguration",
+        "linkingText": [
+          "RTCConfiguration"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "rtcconfiguration-dictionary",
+          "href": "https://w3c.github.io/webrtc-pc/#rtcconfiguration-dictionary",
+          "title": "RTCConfiguration Dictionary",
+          "number": "4.2.1"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-rtcconfiguration-iceservers",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcconfiguration-iceservers",
+        "linkingText": [
+          "iceServers"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RTCConfiguration"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-rtcconfiguration-members",
+          "href": "https://w3c.github.io/webrtc-pc/#dictionary-rtcconfiguration-members",
+          "title": "Dictionary RTCConfiguration Members"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcconfiguration-icetransportpolicy",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcconfiguration-icetransportpolicy",
+        "linkingText": [
+          "iceTransportPolicy"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RTCConfiguration"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-rtcconfiguration-members",
+          "href": "https://w3c.github.io/webrtc-pc/#dictionary-rtcconfiguration-members",
+          "title": "Dictionary RTCConfiguration Members"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcconfiguration-bundlepolicy",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcconfiguration-bundlepolicy",
+        "linkingText": [
+          "bundlePolicy"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RTCConfiguration"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-rtcconfiguration-members",
+          "href": "https://w3c.github.io/webrtc-pc/#dictionary-rtcconfiguration-members",
+          "title": "Dictionary RTCConfiguration Members"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcconfiguration-rtcpmuxpolicy",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcconfiguration-rtcpmuxpolicy",
+        "linkingText": [
+          "rtcpMuxPolicy"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RTCConfiguration"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-rtcconfiguration-members",
+          "href": "https://w3c.github.io/webrtc-pc/#dictionary-rtcconfiguration-members",
+          "title": "Dictionary RTCConfiguration Members"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcconfiguration-certificates",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcconfiguration-certificates",
+        "linkingText": [
+          "certificates"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RTCConfiguration"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-rtcconfiguration-members",
+          "href": "https://w3c.github.io/webrtc-pc/#dictionary-rtcconfiguration-members",
+          "title": "Dictionary RTCConfiguration Members"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcconfiguration-icecandidatepoolsize",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcconfiguration-icecandidatepoolsize",
+        "linkingText": [
+          "iceCandidatePoolSize"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RTCConfiguration"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-rtcconfiguration-members",
+          "href": "https://w3c.github.io/webrtc-pc/#dictionary-rtcconfiguration-members",
+          "title": "Dictionary RTCConfiguration Members"
+        },
+        "definedIn": "dt"
+      }
+    ],
+    "https://www.w3.org/TR/webrtc-identity/": [
+      {
+        "id": "dom-rtcconfiguration-peeridentity",
+        "href": "https://w3c.github.io/webrtc-identity/#dom-rtcconfiguration-peeridentity",
+        "linkingText": [
+          "peerIdentity"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RTCConfiguration"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-rtcconfiguration-members",
+          "href": "https://w3c.github.io/webrtc-identity/#dictionary-rtcconfiguration-members",
+          "title": "Dictionary RTCConfiguration Members"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

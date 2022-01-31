@@ -1,0 +1,144 @@
+{
+  "name": "CacheStorage",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Service Workers Nightly",
+      "url": "https://www.w3.org/TR/service-workers-1/"
+    },
+    "fragment": "[SecureContext, Exposed=(Window,Worker)]\ninterface CacheStorage {\n  [NewObject] Promise<(Response or undefined)> match(RequestInfo request, optional MultiCacheQueryOptions options = {});\n  [NewObject] Promise<boolean> has(DOMString cacheName);\n  [NewObject] Promise<Cache> open(DOMString cacheName);\n  [NewObject] Promise<boolean> delete(DOMString cacheName);\n  [NewObject] Promise<sequence<DOMString>> keys();\n};",
+    "href": "https://w3c.github.io/ServiceWorker/#cachestorage"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/service-workers-1/": [
+      {
+        "id": "cachestorage",
+        "href": "https://w3c.github.io/ServiceWorker/#cachestorage",
+        "linkingText": [
+          "CacheStorage"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "cachestorage-interface",
+          "href": "https://w3c.github.io/ServiceWorker/#cachestorage-interface",
+          "title": "CacheStorage",
+          "number": "5.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-cachestorage-match",
+        "href": "https://w3c.github.io/ServiceWorker/#dom-cachestorage-match",
+        "linkingText": [
+          "match(request, options)",
+          "match(request)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CacheStorage"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "cache-storage-match",
+          "href": "https://w3c.github.io/ServiceWorker/#cache-storage-match",
+          "title": "match(request, options)",
+          "number": "5.5.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-cachestorage-has",
+        "href": "https://w3c.github.io/ServiceWorker/#dom-cachestorage-has",
+        "linkingText": [
+          "has(cacheName)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CacheStorage"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "cache-storage-has",
+          "href": "https://w3c.github.io/ServiceWorker/#cache-storage-has",
+          "title": "has(cacheName)",
+          "number": "5.5.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-cachestorage-open",
+        "href": "https://w3c.github.io/ServiceWorker/#dom-cachestorage-open",
+        "linkingText": [
+          "open(cacheName)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CacheStorage"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "cache-storage-open",
+          "href": "https://w3c.github.io/ServiceWorker/#cache-storage-open",
+          "title": "open(cacheName)",
+          "number": "5.5.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-cachestorage-delete",
+        "href": "https://w3c.github.io/ServiceWorker/#dom-cachestorage-delete",
+        "linkingText": [
+          "delete(cacheName)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CacheStorage"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "cache-storage-delete",
+          "href": "https://w3c.github.io/ServiceWorker/#cache-storage-delete",
+          "title": "delete(cacheName)",
+          "number": "5.5.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-cachestorage-keys",
+        "href": "https://w3c.github.io/ServiceWorker/#dom-cachestorage-keys",
+        "linkingText": [
+          "keys()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CacheStorage"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "cache-storage-keys",
+          "href": "https://w3c.github.io/ServiceWorker/#cache-storage-keys",
+          "title": "keys()",
+          "number": "5.5.5"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

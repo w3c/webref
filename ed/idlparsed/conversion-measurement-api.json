@@ -1,0 +1,371 @@
+{
+  "spec": {
+    "title": "Attribution Reporting",
+    "url": "https://wicg.github.io/conversion-measurement-api/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {},
+      "functions": {
+        "Window": [
+          "AttributionReporting"
+        ]
+      }
+    },
+    "idlNames": {
+      "AttributionSourceParams": {
+        "fragment": "dictionary AttributionSourceParams {\n  required USVString attributionDestination;\n  required DOMString attributionSourceEventId;\n  USVString attributionReportTo;\n  long long attributionExpiry;\n  long long attributionSourcePriority;\n};",
+        "type": "dictionary",
+        "name": "AttributionSourceParams",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "attributionDestination",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "attributionSourceEventId",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "attributionReportTo",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "attributionExpiry",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "long long"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "attributionSourcePriority",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "long long"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "AttributionReporting": {
+        "fragment": "[Exposed=Window, SecureContext]\ninterface AttributionReporting {\n  Promise<undefined> registerAttributionSource(AttributionSourceParams params);\n};",
+        "type": "interface",
+        "name": "AttributionReporting",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "operation",
+            "name": "registerAttributionSource",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "undefined"
+                }
+              ]
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "params",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "AttributionSourceParams"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
+          }
+        ],
+        "partial": false
+      }
+    },
+    "idlExtendedNames": {
+      "HTMLAnchorElement": [
+        {
+          "fragment": "partial interface HTMLAnchorElement {\n    [CEReactions] attribute USVString attributionDestination;\n    [CEReactions] attribute DOMString attributionSourceEventId;\n    [CEReactions] attribute USVString attributionReportTo;\n    [CEReactions] attribute long long attributionExpiry;\n    [CEReactions] attribute long long attributionSourcePriority;\n    [CEReactions] attribute boolean registerAttributionSource;\n};",
+          "type": "interface",
+          "name": "HTMLAnchorElement",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "attribute",
+              "name": "attributionDestination",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "USVString"
+              },
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "CEReactions",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "special": "",
+              "readonly": false
+            },
+            {
+              "type": "attribute",
+              "name": "attributionSourceEventId",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "DOMString"
+              },
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "CEReactions",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "special": "",
+              "readonly": false
+            },
+            {
+              "type": "attribute",
+              "name": "attributionReportTo",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "USVString"
+              },
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "CEReactions",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "special": "",
+              "readonly": false
+            },
+            {
+              "type": "attribute",
+              "name": "attributionExpiry",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "long long"
+              },
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "CEReactions",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "special": "",
+              "readonly": false
+            },
+            {
+              "type": "attribute",
+              "name": "attributionSourcePriority",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "long long"
+              },
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "CEReactions",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "special": "",
+              "readonly": false
+            },
+            {
+              "type": "attribute",
+              "name": "registerAttributionSource",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "boolean"
+              },
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "CEReactions",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "special": "",
+              "readonly": false
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ],
+      "Window": [
+        {
+          "fragment": "[SecureContext]\npartial interface Window {\n  readonly attribute AttributionReporting attributionReporting;\n};",
+          "type": "interface",
+          "name": "Window",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "attribute",
+              "name": "attributionReporting",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "AttributionReporting"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": true
+            }
+          ],
+          "extAttrs": [
+            {
+              "type": "extended-attribute",
+              "name": "SecureContext",
+              "rhs": null,
+              "arguments": []
+            }
+          ],
+          "partial": true
+        }
+      ]
+    },
+    "globals": {},
+    "exposed": {
+      "Window": [
+        "AttributionReporting"
+      ]
+    },
+    "dependencies": {
+      "HTMLAnchorElement": [],
+      "AttributionSourceParams": [],
+      "AttributionReporting": [
+        "AttributionSourceParams"
+      ],
+      "Window": [
+        "AttributionReporting"
+      ]
+    },
+    "externalDependencies": [
+      "HTMLAnchorElement",
+      "Window"
+    ],
+    "hasObsoleteIdl": false
+  }
+}

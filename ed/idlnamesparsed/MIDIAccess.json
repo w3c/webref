@@ -1,0 +1,252 @@
+{
+  "name": "MIDIAccess",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Web MIDI API",
+      "url": "https://www.w3.org/TR/webmidi/"
+    },
+    "fragment": "[SecureContext, Exposed=Window] interface MIDIAccess: EventTarget {\n  readonly attribute MIDIInputMap inputs;\n  readonly attribute MIDIOutputMap outputs;\n  attribute EventHandler onstatechange;\n  readonly attribute boolean sysexEnabled;\n};",
+    "href": "https://webaudio.github.io/web-midi-api/#dom-midiaccess"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "EventTarget",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=*]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+      "href": "https://dom.spec.whatwg.org/#eventtarget"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webmidi/": [
+      {
+        "id": "dom-midiaccess",
+        "href": "https://webaudio.github.io/web-midi-api/#dom-midiaccess",
+        "linkingText": [
+          "MIDIAccess"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "midiaccess-interface",
+          "href": "https://webaudio.github.io/web-midi-api/#midiaccess-interface",
+          "title": "MIDIAccess Interface",
+          "number": "4.7"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-midiaccess-inputs",
+        "href": "https://webaudio.github.io/web-midi-api/#dom-midiaccess-inputs",
+        "linkingText": [
+          "inputs"
+        ],
+        "localLinkingText": [
+          "MIDIAccess.inputs"
+        ],
+        "type": "attribute",
+        "for": [
+          "MIDIAccess"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "midiaccess-interface",
+          "href": "https://webaudio.github.io/web-midi-api/#midiaccess-interface",
+          "title": "MIDIAccess Interface",
+          "number": "4.7"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-midiaccess-outputs",
+        "href": "https://webaudio.github.io/web-midi-api/#dom-midiaccess-outputs",
+        "linkingText": [
+          "outputs"
+        ],
+        "localLinkingText": [
+          "MIDIAccess.outputs"
+        ],
+        "type": "attribute",
+        "for": [
+          "MIDIAccess"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "midiaccess-interface",
+          "href": "https://webaudio.github.io/web-midi-api/#midiaccess-interface",
+          "title": "MIDIAccess Interface",
+          "number": "4.7"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-midiaccess-onstatechange",
+        "href": "https://webaudio.github.io/web-midi-api/#dom-midiaccess-onstatechange",
+        "linkingText": [
+          "onstatechange"
+        ],
+        "localLinkingText": [
+          "MIDIAccess.onstatechange"
+        ],
+        "type": "attribute",
+        "for": [
+          "MIDIAccess"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "midiaccess-interface",
+          "href": "https://webaudio.github.io/web-midi-api/#midiaccess-interface",
+          "title": "MIDIAccess Interface",
+          "number": "4.7"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-midiaccess-sysexenabled",
+        "href": "https://webaudio.github.io/web-midi-api/#dom-midiaccess-sysexenabled",
+        "linkingText": [
+          "sysexEnabled"
+        ],
+        "localLinkingText": [
+          "MIDIAccess.sysexEnabled"
+        ],
+        "type": "attribute",
+        "for": [
+          "MIDIAccess"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "midiaccess-interface",
+          "href": "https://webaudio.github.io/web-midi-api/#midiaccess-interface",
+          "title": "MIDIAccess Interface",
+          "number": "4.7"
+        },
+        "definedIn": "dt"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "eventtarget",
+        "href": "https://dom.spec.whatwg.org/#eventtarget",
+        "linkingText": [
+          "EventTarget"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventtarget-eventtarget",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-eventtarget",
+        "linkingText": [
+          "EventTarget()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-addeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-addeventlistener",
+        "linkingText": [
+          "addEventListener(type, callback, options)",
+          "addEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-removeeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-removeeventlistener",
+        "linkingText": [
+          "removeEventListener(type, callback, options)",
+          "removeEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-dispatchevent",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-dispatchevent",
+        "linkingText": [
+          "dispatchEvent(event)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

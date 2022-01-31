@@ -1,0 +1,517 @@
+{
+  "name": "BluetoothDevice",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Web Bluetooth",
+      "url": "https://webbluetoothcg.github.io/web-bluetooth/"
+    },
+    "fragment": "[Exposed=Window, SecureContext]\ninterface BluetoothDevice : EventTarget {\n  readonly attribute DOMString id;\n  readonly attribute DOMString? name;\n  readonly attribute BluetoothRemoteGATTServer? gatt;\n\n  Promise<undefined> watchAdvertisements(\n      optional WatchAdvertisementsOptions options = {});\n  readonly attribute boolean watchingAdvertisements;\n};",
+    "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetoothdevice"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "Web Bluetooth",
+        "url": "https://webbluetoothcg.github.io/web-bluetooth/"
+      },
+      "fragment": "BluetoothDevice includes BluetoothDeviceEventHandlers;"
+    },
+    {
+      "spec": {
+        "title": "Web Bluetooth",
+        "url": "https://webbluetoothcg.github.io/web-bluetooth/"
+      },
+      "fragment": "BluetoothDevice includes CharacteristicEventHandlers;"
+    },
+    {
+      "spec": {
+        "title": "Web Bluetooth",
+        "url": "https://webbluetoothcg.github.io/web-bluetooth/"
+      },
+      "fragment": "BluetoothDevice includes ServiceEventHandlers;"
+    }
+  ],
+  "inheritance": {
+    "name": "EventTarget",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=*]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+      "href": "https://dom.spec.whatwg.org/#eventtarget"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [
+    {
+      "name": "BluetoothDeviceEventHandlers",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "Web Bluetooth",
+          "url": "https://webbluetoothcg.github.io/web-bluetooth/"
+        },
+        "fragment": "[SecureContext]\ninterface mixin BluetoothDeviceEventHandlers {\n  attribute EventHandler onadvertisementreceived;\n  attribute EventHandler ongattserverdisconnected;\n};",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetoothdeviceeventhandlers"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "CharacteristicEventHandlers",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "Web Bluetooth",
+          "url": "https://webbluetoothcg.github.io/web-bluetooth/"
+        },
+        "fragment": "[SecureContext]\ninterface mixin CharacteristicEventHandlers {\n  attribute EventHandler oncharacteristicvaluechanged;\n};",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#characteristiceventhandlers"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "ServiceEventHandlers",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "Web Bluetooth",
+          "url": "https://webbluetoothcg.github.io/web-bluetooth/"
+        },
+        "fragment": "[SecureContext]\ninterface mixin ServiceEventHandlers {\n  attribute EventHandler onserviceadded;\n  attribute EventHandler onservicechanged;\n  attribute EventHandler onserviceremoved;\n};",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#serviceeventhandlers"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    }
+  ],
+  "dfns": {
+    "https://webbluetoothcg.github.io/web-bluetooth/": [
+      {
+        "id": "bluetoothdevice",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetoothdevice",
+        "linkingText": [
+          "BluetoothDevice"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "bluetoothdevice-interface",
+          "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetoothdevice-interface",
+          "title": "BluetoothDevice",
+          "number": "4.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-bluetoothdevice-id",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothdevice-id",
+        "linkingText": [
+          "id"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "BluetoothDevice"
+        ],
+        "access": "public",
+        "informative": true,
+        "heading": {
+          "id": "bluetoothdevice-interface",
+          "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetoothdevice-interface",
+          "title": "BluetoothDevice",
+          "number": "4.2"
+        },
+        "definedIn": "note"
+      },
+      {
+        "id": "dom-bluetoothdevice-name",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothdevice-name",
+        "linkingText": [
+          "name"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "BluetoothDevice"
+        ],
+        "access": "public",
+        "informative": true,
+        "heading": {
+          "id": "bluetoothdevice-interface",
+          "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetoothdevice-interface",
+          "title": "BluetoothDevice",
+          "number": "4.2"
+        },
+        "definedIn": "note"
+      },
+      {
+        "id": "dom-bluetoothdevice-gatt",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothdevice-gatt",
+        "linkingText": [
+          "gatt"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "BluetoothDevice"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "bluetoothdevice-interface",
+          "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetoothdevice-interface",
+          "title": "BluetoothDevice",
+          "number": "4.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-bluetoothdevice-watchadvertisements",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothdevice-watchadvertisements",
+        "linkingText": [
+          "watchAdvertisements(options)",
+          "watchAdvertisements()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "BluetoothDevice"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "bluetoothdevice-interface",
+          "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetoothdevice-interface",
+          "title": "BluetoothDevice",
+          "number": "4.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-bluetoothdevice-watchingadvertisements",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothdevice-watchingadvertisements",
+        "linkingText": [
+          "watchingAdvertisements"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "BluetoothDevice"
+        ],
+        "access": "public",
+        "informative": true,
+        "heading": {
+          "id": "bluetoothdevice-interface",
+          "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetoothdevice-interface",
+          "title": "BluetoothDevice",
+          "number": "4.2"
+        },
+        "definedIn": "note"
+      },
+      {
+        "id": "bluetoothdeviceeventhandlers",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetoothdeviceeventhandlers",
+        "linkingText": [
+          "BluetoothDeviceEventHandlers"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "idl-event-handlers",
+          "href": "https://webbluetoothcg.github.io/web-bluetooth/#idl-event-handlers",
+          "title": "IDL event handlers",
+          "number": "5.6.6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-bluetoothdeviceeventhandlers-onadvertisementreceived",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothdeviceeventhandlers-onadvertisementreceived",
+        "linkingText": [
+          "onadvertisementreceived"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "BluetoothDeviceEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "idl-event-handlers",
+          "href": "https://webbluetoothcg.github.io/web-bluetooth/#idl-event-handlers",
+          "title": "IDL event handlers",
+          "number": "5.6.6"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-bluetoothdeviceeventhandlers-ongattserverdisconnected",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothdeviceeventhandlers-ongattserverdisconnected",
+        "linkingText": [
+          "ongattserverdisconnected"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "BluetoothDeviceEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "idl-event-handlers",
+          "href": "https://webbluetoothcg.github.io/web-bluetooth/#idl-event-handlers",
+          "title": "IDL event handlers",
+          "number": "5.6.6"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "characteristiceventhandlers",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#characteristiceventhandlers",
+        "linkingText": [
+          "CharacteristicEventHandlers"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "idl-event-handlers",
+          "href": "https://webbluetoothcg.github.io/web-bluetooth/#idl-event-handlers",
+          "title": "IDL event handlers",
+          "number": "5.6.6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-characteristiceventhandlers-oncharacteristicvaluechanged",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-characteristiceventhandlers-oncharacteristicvaluechanged",
+        "linkingText": [
+          "oncharacteristicvaluechanged"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "CharacteristicEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "idl-event-handlers",
+          "href": "https://webbluetoothcg.github.io/web-bluetooth/#idl-event-handlers",
+          "title": "IDL event handlers",
+          "number": "5.6.6"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "serviceeventhandlers",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#serviceeventhandlers",
+        "linkingText": [
+          "ServiceEventHandlers"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "idl-event-handlers",
+          "href": "https://webbluetoothcg.github.io/web-bluetooth/#idl-event-handlers",
+          "title": "IDL event handlers",
+          "number": "5.6.6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-serviceeventhandlers-onserviceadded",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-serviceeventhandlers-onserviceadded",
+        "linkingText": [
+          "onserviceadded"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "ServiceEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "idl-event-handlers",
+          "href": "https://webbluetoothcg.github.io/web-bluetooth/#idl-event-handlers",
+          "title": "IDL event handlers",
+          "number": "5.6.6"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-serviceeventhandlers-onservicechanged",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-serviceeventhandlers-onservicechanged",
+        "linkingText": [
+          "onservicechanged"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "ServiceEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "idl-event-handlers",
+          "href": "https://webbluetoothcg.github.io/web-bluetooth/#idl-event-handlers",
+          "title": "IDL event handlers",
+          "number": "5.6.6"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-serviceeventhandlers-onserviceremoved",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-serviceeventhandlers-onserviceremoved",
+        "linkingText": [
+          "onserviceremoved"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "ServiceEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "idl-event-handlers",
+          "href": "https://webbluetoothcg.github.io/web-bluetooth/#idl-event-handlers",
+          "title": "IDL event handlers",
+          "number": "5.6.6"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "eventtarget",
+        "href": "https://dom.spec.whatwg.org/#eventtarget",
+        "linkingText": [
+          "EventTarget"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventtarget-eventtarget",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-eventtarget",
+        "linkingText": [
+          "EventTarget()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-addeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-addeventlistener",
+        "linkingText": [
+          "addEventListener(type, callback, options)",
+          "addEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-removeeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-removeeventlistener",
+        "linkingText": [
+          "removeEventListener(type, callback, options)",
+          "removeEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-dispatchevent",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-dispatchevent",
+        "linkingText": [
+          "dispatchEvent(event)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

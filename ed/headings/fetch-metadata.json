@@ -1,0 +1,246 @@
+{
+  "spec": {
+    "title": "Fetch Metadata Request Headers",
+    "url": "https://w3c.github.io/webappsec-fetch-metadata/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://w3c.github.io/webappsec-fetch-metadata/#title",
+      "level": 1,
+      "title": "Fetch Metadata Request Headers"
+    },
+    {
+      "id": "profile-and-date",
+      "href": "https://w3c.github.io/webappsec-fetch-metadata/#profile-and-date",
+      "level": 2,
+      "title": "W3C Working Draft, 20 July 2021"
+    },
+    {
+      "id": "abstract",
+      "href": "https://w3c.github.io/webappsec-fetch-metadata/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "status",
+      "href": "https://w3c.github.io/webappsec-fetch-metadata/#status",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://w3c.github.io/webappsec-fetch-metadata/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "intro",
+      "href": "https://w3c.github.io/webappsec-fetch-metadata/#intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "examples",
+      "href": "https://w3c.github.io/webappsec-fetch-metadata/#examples",
+      "level": 3,
+      "title": "Examples",
+      "number": "1.1"
+    },
+    {
+      "id": "framework",
+      "href": "https://w3c.github.io/webappsec-fetch-metadata/#framework",
+      "level": 2,
+      "title": "Fetch Metadata Headers",
+      "number": "2"
+    },
+    {
+      "id": "sec-fetch-dest-header",
+      "href": "https://w3c.github.io/webappsec-fetch-metadata/#sec-fetch-dest-header",
+      "level": 3,
+      "title": "The Sec-Fetch-Dest HTTP Request Header",
+      "number": "2.1"
+    },
+    {
+      "id": "sec-fetch-mode-header",
+      "href": "https://w3c.github.io/webappsec-fetch-metadata/#sec-fetch-mode-header",
+      "level": 3,
+      "title": "The Sec-Fetch-Mode HTTP Request Header",
+      "number": "2.2"
+    },
+    {
+      "id": "sec-fetch-site-header",
+      "href": "https://w3c.github.io/webappsec-fetch-metadata/#sec-fetch-site-header",
+      "level": 3,
+      "title": "The Sec-Fetch-Site HTTP Request Header",
+      "number": "2.3"
+    },
+    {
+      "id": "sec-fetch-user-header",
+      "href": "https://w3c.github.io/webappsec-fetch-metadata/#sec-fetch-user-header",
+      "level": 3,
+      "title": "The Sec-Fetch-User HTTP Request Header",
+      "number": "2.4"
+    },
+    {
+      "id": "fetch-integration",
+      "href": "https://w3c.github.io/webappsec-fetch-metadata/#fetch-integration",
+      "level": 2,
+      "title": "Integration with Fetch and HTML",
+      "number": "3"
+    },
+    {
+      "id": "sec-priv-considerations",
+      "href": "https://w3c.github.io/webappsec-fetch-metadata/#sec-priv-considerations",
+      "level": 2,
+      "title": "Security and Privacy Considerations",
+      "number": "4"
+    },
+    {
+      "id": "redirects",
+      "href": "https://w3c.github.io/webappsec-fetch-metadata/#redirects",
+      "level": 3,
+      "title": "Redirects",
+      "number": "4.1"
+    },
+    {
+      "id": "sec-prefix",
+      "href": "https://w3c.github.io/webappsec-fetch-metadata/#sec-prefix",
+      "level": 3,
+      "title": "The Sec- Prefix",
+      "number": "4.2"
+    },
+    {
+      "id": "directly-user-initiated",
+      "href": "https://w3c.github.io/webappsec-fetch-metadata/#directly-user-initiated",
+      "level": 3,
+      "title": "Directly User-Initiated Requests",
+      "number": "4.3"
+    },
+    {
+      "id": "extension-initiated",
+      "href": "https://w3c.github.io/webappsec-fetch-metadata/#extension-initiated",
+      "level": 3,
+      "title": "Extension-Initiated Requests",
+      "number": "4.4"
+    },
+    {
+      "id": "deployment-considerations",
+      "href": "https://w3c.github.io/webappsec-fetch-metadata/#deployment-considerations",
+      "level": 2,
+      "title": "Deployment Considerations",
+      "number": "5"
+    },
+    {
+      "id": "vary",
+      "href": "https://w3c.github.io/webappsec-fetch-metadata/#vary",
+      "level": 3,
+      "title": "Vary",
+      "number": "5.1"
+    },
+    {
+      "id": "bloat",
+      "href": "https://w3c.github.io/webappsec-fetch-metadata/#bloat",
+      "level": 3,
+      "title": "Header Bloat",
+      "number": "5.2"
+    },
+    {
+      "id": "iana",
+      "href": "https://w3c.github.io/webappsec-fetch-metadata/#iana",
+      "level": 2,
+      "title": "IANA Considerations",
+      "number": "6"
+    },
+    {
+      "id": "sec-fetc-dest-reg",
+      "href": "https://w3c.github.io/webappsec-fetch-metadata/#sec-fetc-dest-reg",
+      "level": 3,
+      "title": "Sec-Fetch-Dest Registration",
+      "number": "6.1"
+    },
+    {
+      "id": "sec-fetch-mode-reg",
+      "href": "https://w3c.github.io/webappsec-fetch-metadata/#sec-fetch-mode-reg",
+      "level": 3,
+      "title": "Sec-Fetch-Mode Registration",
+      "number": "6.2"
+    },
+    {
+      "id": "sec-fetch-site-reg",
+      "href": "https://w3c.github.io/webappsec-fetch-metadata/#sec-fetch-site-reg",
+      "level": 3,
+      "title": "Sec-Fetch-Site Registration",
+      "number": "6.3"
+    },
+    {
+      "id": "sec-fetch-user-reg",
+      "href": "https://w3c.github.io/webappsec-fetch-metadata/#sec-fetch-user-reg",
+      "level": 3,
+      "title": "Sec-Fetch-User Registration",
+      "number": "6.4"
+    },
+    {
+      "id": "acks",
+      "href": "https://w3c.github.io/webappsec-fetch-metadata/#acks",
+      "level": 2,
+      "title": "Acknowledgements",
+      "number": "7"
+    },
+    {
+      "id": "conformance",
+      "href": "https://w3c.github.io/webappsec-fetch-metadata/#conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "conventions",
+      "href": "https://w3c.github.io/webappsec-fetch-metadata/#conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "conformant-algorithms",
+      "href": "https://w3c.github.io/webappsec-fetch-metadata/#conformant-algorithms",
+      "level": 3,
+      "title": "Conformant Algorithms"
+    },
+    {
+      "id": "index",
+      "href": "https://w3c.github.io/webappsec-fetch-metadata/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://w3c.github.io/webappsec-fetch-metadata/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://w3c.github.io/webappsec-fetch-metadata/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://w3c.github.io/webappsec-fetch-metadata/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://w3c.github.io/webappsec-fetch-metadata/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://w3c.github.io/webappsec-fetch-metadata/#informative",
+      "level": 3,
+      "title": "Informative References"
+    }
+  ]
+}

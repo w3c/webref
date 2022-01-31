@@ -1,0 +1,265 @@
+{
+  "name": "BroadcastChannel",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "HTML Standard",
+      "url": "https://html.spec.whatwg.org/multipage/"
+    },
+    "fragment": "[Exposed=(Window,Worker)]\ninterface BroadcastChannel : EventTarget {\n  constructor(DOMString name);\n\n  readonly attribute DOMString name;\n  undefined postMessage(any message);\n  undefined close();\n  attribute EventHandler onmessage;\n  attribute EventHandler onmessageerror;\n};",
+    "href": "https://html.spec.whatwg.org/multipage/web-messaging.html#broadcastchannel"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "EventTarget",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=*]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+      "href": "https://dom.spec.whatwg.org/#eventtarget"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://html.spec.whatwg.org/multipage/": [
+      {
+        "id": "broadcastchannel",
+        "href": "https://html.spec.whatwg.org/multipage/web-messaging.html#broadcastchannel",
+        "linkingText": [
+          "BroadcastChannel"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "broadcasting-to-other-browsing-contexts",
+          "href": "https://html.spec.whatwg.org/multipage/web-messaging.html#broadcasting-to-other-browsing-contexts",
+          "title": "Broadcasting to other browsing contexts",
+          "number": "9.6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-broadcastchannel-name",
+        "href": "https://html.spec.whatwg.org/multipage/web-messaging.html#dom-broadcastchannel-name",
+        "linkingText": [
+          "name"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "BroadcastChannel"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "broadcasting-to-other-browsing-contexts",
+          "href": "https://html.spec.whatwg.org/multipage/web-messaging.html#broadcasting-to-other-browsing-contexts",
+          "title": "Broadcasting to other browsing contexts",
+          "number": "9.6"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-broadcastchannel-postmessage",
+        "href": "https://html.spec.whatwg.org/multipage/web-messaging.html#dom-broadcastchannel-postmessage",
+        "linkingText": [
+          "postMessage(message)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "BroadcastChannel"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "broadcasting-to-other-browsing-contexts",
+          "href": "https://html.spec.whatwg.org/multipage/web-messaging.html#broadcasting-to-other-browsing-contexts",
+          "title": "Broadcasting to other browsing contexts",
+          "number": "9.6"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-broadcastchannel-close",
+        "href": "https://html.spec.whatwg.org/multipage/web-messaging.html#dom-broadcastchannel-close",
+        "linkingText": [
+          "close()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "BroadcastChannel"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "broadcasting-to-other-browsing-contexts",
+          "href": "https://html.spec.whatwg.org/multipage/web-messaging.html#broadcasting-to-other-browsing-contexts",
+          "title": "Broadcasting to other browsing contexts",
+          "number": "9.6"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "handler-broadcastchannel-onmessage",
+        "href": "https://html.spec.whatwg.org/multipage/web-messaging.html#handler-broadcastchannel-onmessage",
+        "linkingText": [
+          "onmessage"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "BroadcastChannel"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "broadcasting-to-other-browsing-contexts",
+          "href": "https://html.spec.whatwg.org/multipage/web-messaging.html#broadcasting-to-other-browsing-contexts",
+          "title": "Broadcasting to other browsing contexts",
+          "number": "9.6"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-broadcastchannel-onmessageerror",
+        "href": "https://html.spec.whatwg.org/multipage/web-messaging.html#handler-broadcastchannel-onmessageerror",
+        "linkingText": [
+          "onmessageerror"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "BroadcastChannel"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "broadcasting-to-other-browsing-contexts",
+          "href": "https://html.spec.whatwg.org/multipage/web-messaging.html#broadcasting-to-other-browsing-contexts",
+          "title": "Broadcasting to other browsing contexts",
+          "number": "9.6"
+        },
+        "definedIn": "table"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "eventtarget",
+        "href": "https://dom.spec.whatwg.org/#eventtarget",
+        "linkingText": [
+          "EventTarget"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventtarget-eventtarget",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-eventtarget",
+        "linkingText": [
+          "EventTarget()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-addeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-addeventlistener",
+        "linkingText": [
+          "addEventListener(type, callback, options)",
+          "addEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-removeeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-removeeventlistener",
+        "linkingText": [
+          "removeEventListener(type, callback, options)",
+          "removeEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-dispatchevent",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-dispatchevent",
+        "linkingText": [
+          "dispatchEvent(event)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

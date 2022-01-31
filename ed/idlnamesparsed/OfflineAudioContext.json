@@ -1,0 +1,897 @@
+{
+  "name": "OfflineAudioContext",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Web Audio API",
+      "url": "https://www.w3.org/TR/webaudio/"
+    },
+    "fragment": "[Exposed=Window]\ninterface OfflineAudioContext : BaseAudioContext {\n  constructor(OfflineAudioContextOptions contextOptions);\n  constructor(unsigned long numberOfChannels, unsigned long length, float sampleRate);\n  Promise<AudioBuffer> startRendering();\n  Promise<undefined> resume();\n  Promise<undefined> suspend(double suspendTime);\n  readonly attribute unsigned long length;\n  attribute EventHandler oncomplete;\n};",
+    "href": "https://webaudio.github.io/web-audio-api/#offlineaudiocontext"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "BaseAudioContext",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "Web Audio API",
+        "url": "https://www.w3.org/TR/webaudio/"
+      },
+      "fragment": "[Exposed=Window]\ninterface BaseAudioContext : EventTarget {\n  readonly attribute AudioDestinationNode destination;\n  readonly attribute float sampleRate;\n  readonly attribute double currentTime;\n  readonly attribute AudioListener listener;\n  readonly attribute AudioContextState state;\n  [SameObject, SecureContext]\n  readonly attribute AudioWorklet audioWorklet;\n  attribute EventHandler onstatechange;\n\n  AnalyserNode createAnalyser ();\n  BiquadFilterNode createBiquadFilter ();\n  AudioBuffer createBuffer (unsigned long numberOfChannels,\n                            unsigned long length,\n                            float sampleRate);\n  AudioBufferSourceNode createBufferSource ();\n  ChannelMergerNode createChannelMerger (optional unsigned long numberOfInputs = 6);\n  ChannelSplitterNode createChannelSplitter (\n    optional unsigned long numberOfOutputs = 6);\n  ConstantSourceNode createConstantSource ();\n  ConvolverNode createConvolver ();\n  DelayNode createDelay (optional double maxDelayTime = 1.0);\n  DynamicsCompressorNode createDynamicsCompressor ();\n  GainNode createGain ();\n  IIRFilterNode createIIRFilter (sequence<double> feedforward,\n                                 sequence<double> feedback);\n  OscillatorNode createOscillator ();\n  PannerNode createPanner ();\n  PeriodicWave createPeriodicWave (sequence<float> real,\n                                   sequence<float> imag,\n                                   optional PeriodicWaveConstraints constraints = {});\n  ScriptProcessorNode createScriptProcessor(\n    optional unsigned long bufferSize = 0,\n    optional unsigned long numberOfInputChannels = 2,\n    optional unsigned long numberOfOutputChannels = 2);\n  StereoPannerNode createStereoPanner ();\n  WaveShaperNode createWaveShaper ();\n\n  Promise<AudioBuffer> decodeAudioData (\n    ArrayBuffer audioData,\n    optional DecodeSuccessCallback? successCallback,\n    optional DecodeErrorCallback? errorCallback);\n};",
+      "href": "https://webaudio.github.io/web-audio-api/#baseaudiocontext"
+    },
+    "extended": [],
+    "inheritance": {
+      "name": "EventTarget",
+      "type": "interface",
+      "defined": {
+        "spec": {
+          "title": "DOM Standard",
+          "url": "https://dom.spec.whatwg.org/"
+        },
+        "fragment": "[Exposed=*]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+        "href": "https://dom.spec.whatwg.org/#eventtarget"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webaudio/": [
+      {
+        "id": "offlineaudiocontext",
+        "href": "https://webaudio.github.io/web-audio-api/#offlineaudiocontext",
+        "linkingText": [
+          "OfflineAudioContext"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "OfflineAudioContext",
+          "href": "https://webaudio.github.io/web-audio-api/#OfflineAudioContext",
+          "title": "The OfflineAudioContext Interface",
+          "number": "1.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-offlineaudiocontext-offlineaudiocontext",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-offlineaudiocontext-offlineaudiocontext",
+        "linkingText": [
+          "OfflineAudioContext(contextOptions)",
+          "constructor(contextOptions)"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "OfflineAudioContext"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "OfflineAudioContext-constructors",
+          "href": "https://webaudio.github.io/web-audio-api/#OfflineAudioContext-constructors",
+          "title": "Constructors",
+          "number": "1.3.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-offlineaudiocontext-offlineaudiocontext-numberofchannels-length-samplerate",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-offlineaudiocontext-offlineaudiocontext-numberofchannels-length-samplerate",
+        "linkingText": [
+          "OfflineAudioContext(numberOfChannels, length, sampleRate)",
+          "constructor(numberOfChannels, length, sampleRate)"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "OfflineAudioContext"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "OfflineAudioContext-constructors",
+          "href": "https://webaudio.github.io/web-audio-api/#OfflineAudioContext-constructors",
+          "title": "Constructors",
+          "number": "1.3.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-offlineaudiocontext-startrendering",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-offlineaudiocontext-startrendering",
+        "linkingText": [
+          "startRendering()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "OfflineAudioContext"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "OfflineAudioContext-methods",
+          "href": "https://webaudio.github.io/web-audio-api/#OfflineAudioContext-methods",
+          "title": "Methods",
+          "number": "1.3.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-offlineaudiocontext-resume",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-offlineaudiocontext-resume",
+        "linkingText": [
+          "resume()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "OfflineAudioContext"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "OfflineAudioContext-methods",
+          "href": "https://webaudio.github.io/web-audio-api/#OfflineAudioContext-methods",
+          "title": "Methods",
+          "number": "1.3.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-offlineaudiocontext-suspend",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-offlineaudiocontext-suspend",
+        "linkingText": [
+          "suspend(suspendTime)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "OfflineAudioContext"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "OfflineAudioContext-methods",
+          "href": "https://webaudio.github.io/web-audio-api/#OfflineAudioContext-methods",
+          "title": "Methods",
+          "number": "1.3.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-offlineaudiocontext-length",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-offlineaudiocontext-length",
+        "linkingText": [
+          "length"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "OfflineAudioContext"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "OfflineAudioContext-attributes",
+          "href": "https://webaudio.github.io/web-audio-api/#OfflineAudioContext-attributes",
+          "title": "Attributes",
+          "number": "1.3.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-offlineaudiocontext-oncomplete",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-offlineaudiocontext-oncomplete",
+        "linkingText": [
+          "oncomplete"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "OfflineAudioContext"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "OfflineAudioContext-attributes",
+          "href": "https://webaudio.github.io/web-audio-api/#OfflineAudioContext-attributes",
+          "title": "Attributes",
+          "number": "1.3.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "baseaudiocontext",
+        "href": "https://webaudio.github.io/web-audio-api/#baseaudiocontext",
+        "linkingText": [
+          "BaseAudioContext"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "BaseAudioContext",
+          "href": "https://webaudio.github.io/web-audio-api/#BaseAudioContext",
+          "title": "The BaseAudioContext Interface",
+          "number": "1.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-baseaudiocontext-destination",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-destination",
+        "linkingText": [
+          "destination"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "BaseAudioContext"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "BaseAudioContext-attributes",
+          "href": "https://webaudio.github.io/web-audio-api/#BaseAudioContext-attributes",
+          "title": "Attributes",
+          "number": "1.1.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-baseaudiocontext-samplerate",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-samplerate",
+        "linkingText": [
+          "sampleRate"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "BaseAudioContext"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "BaseAudioContext-attributes",
+          "href": "https://webaudio.github.io/web-audio-api/#BaseAudioContext-attributes",
+          "title": "Attributes",
+          "number": "1.1.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-baseaudiocontext-currenttime",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-currenttime",
+        "linkingText": [
+          "currentTime"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "BaseAudioContext"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "BaseAudioContext-attributes",
+          "href": "https://webaudio.github.io/web-audio-api/#BaseAudioContext-attributes",
+          "title": "Attributes",
+          "number": "1.1.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-baseaudiocontext-listener",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-listener",
+        "linkingText": [
+          "listener"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "BaseAudioContext"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "BaseAudioContext-attributes",
+          "href": "https://webaudio.github.io/web-audio-api/#BaseAudioContext-attributes",
+          "title": "Attributes",
+          "number": "1.1.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-baseaudiocontext-state",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-state",
+        "linkingText": [
+          "state"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "BaseAudioContext"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "BaseAudioContext-attributes",
+          "href": "https://webaudio.github.io/web-audio-api/#BaseAudioContext-attributes",
+          "title": "Attributes",
+          "number": "1.1.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-baseaudiocontext-audioworklet",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-audioworklet",
+        "linkingText": [
+          "audioWorklet"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "BaseAudioContext"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "BaseAudioContext-attributes",
+          "href": "https://webaudio.github.io/web-audio-api/#BaseAudioContext-attributes",
+          "title": "Attributes",
+          "number": "1.1.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-baseaudiocontext-onstatechange",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-onstatechange",
+        "linkingText": [
+          "onstatechange"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "BaseAudioContext"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "BaseAudioContext-attributes",
+          "href": "https://webaudio.github.io/web-audio-api/#BaseAudioContext-attributes",
+          "title": "Attributes",
+          "number": "1.1.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-baseaudiocontext-createanalyser",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-createanalyser",
+        "linkingText": [
+          "createAnalyser()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "BaseAudioContext"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "BaseAudioContent-methods",
+          "href": "https://webaudio.github.io/web-audio-api/#BaseAudioContent-methods",
+          "title": "Methods",
+          "number": "1.1.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-baseaudiocontext-createbiquadfilter",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-createbiquadfilter",
+        "linkingText": [
+          "createBiquadFilter()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "BaseAudioContext"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "BaseAudioContent-methods",
+          "href": "https://webaudio.github.io/web-audio-api/#BaseAudioContent-methods",
+          "title": "Methods",
+          "number": "1.1.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-baseaudiocontext-createbuffer",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-createbuffer",
+        "linkingText": [
+          "createBuffer(numberOfChannels, length, sampleRate)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "BaseAudioContext"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "BaseAudioContent-methods",
+          "href": "https://webaudio.github.io/web-audio-api/#BaseAudioContent-methods",
+          "title": "Methods",
+          "number": "1.1.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-baseaudiocontext-createbuffersource",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-createbuffersource",
+        "linkingText": [
+          "createBufferSource()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "BaseAudioContext"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "BaseAudioContent-methods",
+          "href": "https://webaudio.github.io/web-audio-api/#BaseAudioContent-methods",
+          "title": "Methods",
+          "number": "1.1.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-baseaudiocontext-createchannelmerger",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-createchannelmerger",
+        "linkingText": [
+          "createChannelMerger(numberOfInputs)",
+          "createChannelMerger()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "BaseAudioContext"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "BaseAudioContent-methods",
+          "href": "https://webaudio.github.io/web-audio-api/#BaseAudioContent-methods",
+          "title": "Methods",
+          "number": "1.1.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-baseaudiocontext-createchannelsplitter",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-createchannelsplitter",
+        "linkingText": [
+          "createChannelSplitter(numberOfOutputs)",
+          "createChannelSplitter()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "BaseAudioContext"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "BaseAudioContent-methods",
+          "href": "https://webaudio.github.io/web-audio-api/#BaseAudioContent-methods",
+          "title": "Methods",
+          "number": "1.1.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-baseaudiocontext-createconstantsource",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-createconstantsource",
+        "linkingText": [
+          "createConstantSource()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "BaseAudioContext"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "BaseAudioContent-methods",
+          "href": "https://webaudio.github.io/web-audio-api/#BaseAudioContent-methods",
+          "title": "Methods",
+          "number": "1.1.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-baseaudiocontext-createconvolver",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-createconvolver",
+        "linkingText": [
+          "createConvolver()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "BaseAudioContext"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "BaseAudioContent-methods",
+          "href": "https://webaudio.github.io/web-audio-api/#BaseAudioContent-methods",
+          "title": "Methods",
+          "number": "1.1.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-baseaudiocontext-createdelay",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-createdelay",
+        "linkingText": [
+          "createDelay(maxDelayTime)",
+          "createDelay()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "BaseAudioContext"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "BaseAudioContent-methods",
+          "href": "https://webaudio.github.io/web-audio-api/#BaseAudioContent-methods",
+          "title": "Methods",
+          "number": "1.1.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-baseaudiocontext-createdynamicscompressor",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-createdynamicscompressor",
+        "linkingText": [
+          "createDynamicsCompressor()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "BaseAudioContext"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "BaseAudioContent-methods",
+          "href": "https://webaudio.github.io/web-audio-api/#BaseAudioContent-methods",
+          "title": "Methods",
+          "number": "1.1.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-baseaudiocontext-creategain",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-creategain",
+        "linkingText": [
+          "createGain()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "BaseAudioContext"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "BaseAudioContent-methods",
+          "href": "https://webaudio.github.io/web-audio-api/#BaseAudioContent-methods",
+          "title": "Methods",
+          "number": "1.1.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-baseaudiocontext-createiirfilter",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-createiirfilter",
+        "linkingText": [
+          "createIIRFilter(feedforward, feedback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "BaseAudioContext"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "BaseAudioContent-methods",
+          "href": "https://webaudio.github.io/web-audio-api/#BaseAudioContent-methods",
+          "title": "Methods",
+          "number": "1.1.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-baseaudiocontext-createoscillator",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-createoscillator",
+        "linkingText": [
+          "createOscillator()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "BaseAudioContext"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "BaseAudioContent-methods",
+          "href": "https://webaudio.github.io/web-audio-api/#BaseAudioContent-methods",
+          "title": "Methods",
+          "number": "1.1.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-baseaudiocontext-createpanner",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-createpanner",
+        "linkingText": [
+          "createPanner()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "BaseAudioContext"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "BaseAudioContent-methods",
+          "href": "https://webaudio.github.io/web-audio-api/#BaseAudioContent-methods",
+          "title": "Methods",
+          "number": "1.1.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-baseaudiocontext-createperiodicwave",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-createperiodicwave",
+        "linkingText": [
+          "createPeriodicWave(real, imag, constraints)",
+          "createPeriodicWave(real, imag)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "BaseAudioContext"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "BaseAudioContent-methods",
+          "href": "https://webaudio.github.io/web-audio-api/#BaseAudioContent-methods",
+          "title": "Methods",
+          "number": "1.1.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-baseaudiocontext-createscriptprocessor",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-createscriptprocessor",
+        "linkingText": [
+          "createScriptProcessor(bufferSize, numberOfInputChannels, numberOfOutputChannels)",
+          "createScriptProcessor(bufferSize, numberOfInputChannels)",
+          "createScriptProcessor(bufferSize)",
+          "createScriptProcessor()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "BaseAudioContext"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "BaseAudioContent-methods",
+          "href": "https://webaudio.github.io/web-audio-api/#BaseAudioContent-methods",
+          "title": "Methods",
+          "number": "1.1.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-baseaudiocontext-createstereopanner",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-createstereopanner",
+        "linkingText": [
+          "createStereoPanner()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "BaseAudioContext"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "BaseAudioContent-methods",
+          "href": "https://webaudio.github.io/web-audio-api/#BaseAudioContent-methods",
+          "title": "Methods",
+          "number": "1.1.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-baseaudiocontext-createwaveshaper",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-createwaveshaper",
+        "linkingText": [
+          "createWaveShaper()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "BaseAudioContext"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "BaseAudioContent-methods",
+          "href": "https://webaudio.github.io/web-audio-api/#BaseAudioContent-methods",
+          "title": "Methods",
+          "number": "1.1.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-baseaudiocontext-decodeaudiodata",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-decodeaudiodata",
+        "linkingText": [
+          "decodeAudioData(audioData, successCallback, errorCallback)",
+          "decodeAudioData(audioData, successCallback)",
+          "decodeAudioData(audioData)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "BaseAudioContext"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "BaseAudioContent-methods",
+          "href": "https://webaudio.github.io/web-audio-api/#BaseAudioContent-methods",
+          "title": "Methods",
+          "number": "1.1.2"
+        },
+        "definedIn": "dt"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "eventtarget",
+        "href": "https://dom.spec.whatwg.org/#eventtarget",
+        "linkingText": [
+          "EventTarget"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventtarget-eventtarget",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-eventtarget",
+        "linkingText": [
+          "EventTarget()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-addeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-addeventlistener",
+        "linkingText": [
+          "addEventListener(type, callback, options)",
+          "addEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-removeeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-removeeventlistener",
+        "linkingText": [
+          "removeEventListener(type, callback, options)",
+          "removeEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-dispatchevent",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-dispatchevent",
+        "linkingText": [
+          "dispatchEvent(event)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

@@ -1,0 +1,231 @@
+{
+  "name": "TrustedTypePolicyFactory",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Trusted Types",
+      "url": "https://w3c.github.io/webappsec-trusted-types/dist/spec/"
+    },
+    "fragment": "[Exposed=(Window,Worker)] interface TrustedTypePolicyFactory {\n    TrustedTypePolicy createPolicy(\n        DOMString policyName, optional TrustedTypePolicyOptions policyOptions = {});\n    boolean isHTML(any value);\n    boolean isScript(any value);\n    boolean isScriptURL(any value);\n    readonly attribute TrustedHTML emptyHTML;\n    readonly attribute TrustedScript emptyScript;\n    DOMString? getAttributeType(\n        DOMString tagName,\n        DOMString attribute,\n        optional DOMString elementNs = \"\",\n        optional DOMString attrNs = \"\");\n    DOMString? getPropertyType(\n        DOMString tagName,\n        DOMString property,\n        optional DOMString elementNs = \"\");\n    readonly attribute TrustedTypePolicy? defaultPolicy;\n};",
+    "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#trustedtypepolicyfactory"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://w3c.github.io/webappsec-trusted-types/dist/spec/": [
+      {
+        "id": "trustedtypepolicyfactory",
+        "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#trustedtypepolicyfactory",
+        "linkingText": [
+          "TrustedTypePolicyFactory"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "trusted-type-policy-factory",
+          "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#trusted-type-policy-factory",
+          "title": "TrustedTypePolicyFactory",
+          "number": "2.3.1"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-trustedtypepolicyfactory-createpolicy",
+        "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#dom-trustedtypepolicyfactory-createpolicy",
+        "linkingText": [
+          "createPolicy(policyName, policyOptions)",
+          "createPolicy(policyName)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "TrustedTypePolicyFactory"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "trusted-type-policy-factory",
+          "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#trusted-type-policy-factory",
+          "title": "TrustedTypePolicyFactory",
+          "number": "2.3.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-trustedtypepolicyfactory-ishtml",
+        "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#dom-trustedtypepolicyfactory-ishtml",
+        "linkingText": [
+          "isHTML(value)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "TrustedTypePolicyFactory"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "trusted-type-policy-factory",
+          "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#trusted-type-policy-factory",
+          "title": "TrustedTypePolicyFactory",
+          "number": "2.3.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-trustedtypepolicyfactory-isscript",
+        "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#dom-trustedtypepolicyfactory-isscript",
+        "linkingText": [
+          "isScript(value)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "TrustedTypePolicyFactory"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "trusted-type-policy-factory",
+          "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#trusted-type-policy-factory",
+          "title": "TrustedTypePolicyFactory",
+          "number": "2.3.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-trustedtypepolicyfactory-isscripturl",
+        "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#dom-trustedtypepolicyfactory-isscripturl",
+        "linkingText": [
+          "isScriptURL(value)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "TrustedTypePolicyFactory"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "trusted-type-policy-factory",
+          "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#trusted-type-policy-factory",
+          "title": "TrustedTypePolicyFactory",
+          "number": "2.3.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-trustedtypepolicyfactory-emptyhtml",
+        "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#dom-trustedtypepolicyfactory-emptyhtml",
+        "linkingText": [
+          "emptyHTML"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "TrustedTypePolicyFactory"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "trusted-type-policy-factory",
+          "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#trusted-type-policy-factory",
+          "title": "TrustedTypePolicyFactory",
+          "number": "2.3.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-trustedtypepolicyfactory-emptyscript",
+        "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#dom-trustedtypepolicyfactory-emptyscript",
+        "linkingText": [
+          "emptyScript"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "TrustedTypePolicyFactory"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "trusted-type-policy-factory",
+          "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#trusted-type-policy-factory",
+          "title": "TrustedTypePolicyFactory",
+          "number": "2.3.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-trustedtypepolicyfactory-getattributetype",
+        "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#dom-trustedtypepolicyfactory-getattributetype",
+        "linkingText": [
+          "getAttributeType(tagName, attribute, elementNs, attrNs)",
+          "getAttributeType(tagName, attribute, elementNs)",
+          "getAttributeType(tagName, attribute)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "TrustedTypePolicyFactory"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "trusted-type-policy-factory",
+          "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#trusted-type-policy-factory",
+          "title": "TrustedTypePolicyFactory",
+          "number": "2.3.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-trustedtypepolicyfactory-getpropertytype",
+        "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#dom-trustedtypepolicyfactory-getpropertytype",
+        "linkingText": [
+          "getPropertyType(tagName, property, elementNs)",
+          "getPropertyType(tagName, property)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "TrustedTypePolicyFactory"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "trusted-type-policy-factory",
+          "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#trusted-type-policy-factory",
+          "title": "TrustedTypePolicyFactory",
+          "number": "2.3.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-trustedtypepolicyfactory-defaultpolicy",
+        "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#dom-trustedtypepolicyfactory-defaultpolicy",
+        "linkingText": [
+          "defaultPolicy"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "TrustedTypePolicyFactory"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "trusted-type-policy-factory",
+          "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#trusted-type-policy-factory",
+          "title": "TrustedTypePolicyFactory",
+          "number": "2.3.1"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

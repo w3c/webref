@@ -1,0 +1,143 @@
+{
+  "name": "BluetoothRemoteGATTDescriptor",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Web Bluetooth",
+      "url": "https://webbluetoothcg.github.io/web-bluetooth/"
+    },
+    "fragment": "[Exposed=Window, SecureContext]\ninterface BluetoothRemoteGATTDescriptor {\n  [SameObject]\n  readonly attribute BluetoothRemoteGATTCharacteristic characteristic;\n  readonly attribute UUID uuid;\n  readonly attribute DataView? value;\n  Promise<DataView> readValue();\n  Promise<undefined> writeValue(BufferSource value);\n};",
+    "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetoothremotegattdescriptor"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://webbluetoothcg.github.io/web-bluetooth/": [
+      {
+        "id": "bluetoothremotegattdescriptor",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetoothremotegattdescriptor",
+        "linkingText": [
+          "BluetoothRemoteGATTDescriptor"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "bluetoothgattdescriptor-interface",
+          "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetoothgattdescriptor-interface",
+          "title": "BluetoothRemoteGATTDescriptor",
+          "number": "5.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-bluetoothremotegattdescriptor-characteristic",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothremotegattdescriptor-characteristic",
+        "linkingText": [
+          "characteristic"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "BluetoothRemoteGATTDescriptor"
+        ],
+        "access": "public",
+        "informative": true,
+        "heading": {
+          "id": "bluetoothgattdescriptor-interface",
+          "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetoothgattdescriptor-interface",
+          "title": "BluetoothRemoteGATTDescriptor",
+          "number": "5.5"
+        },
+        "definedIn": "note"
+      },
+      {
+        "id": "dom-bluetoothremotegattdescriptor-uuid",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothremotegattdescriptor-uuid",
+        "linkingText": [
+          "uuid"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "BluetoothRemoteGATTDescriptor"
+        ],
+        "access": "public",
+        "informative": true,
+        "heading": {
+          "id": "bluetoothgattdescriptor-interface",
+          "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetoothgattdescriptor-interface",
+          "title": "BluetoothRemoteGATTDescriptor",
+          "number": "5.5"
+        },
+        "definedIn": "note"
+      },
+      {
+        "id": "dom-bluetoothremotegattdescriptor-value",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothremotegattdescriptor-value",
+        "linkingText": [
+          "value"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "BluetoothRemoteGATTDescriptor"
+        ],
+        "access": "public",
+        "informative": true,
+        "heading": {
+          "id": "bluetoothgattdescriptor-interface",
+          "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetoothgattdescriptor-interface",
+          "title": "BluetoothRemoteGATTDescriptor",
+          "number": "5.5"
+        },
+        "definedIn": "note"
+      },
+      {
+        "id": "dom-bluetoothremotegattdescriptor-readvalue",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothremotegattdescriptor-readvalue",
+        "linkingText": [
+          "readValue()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "BluetoothRemoteGATTDescriptor"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "bluetoothgattdescriptor-interface",
+          "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetoothgattdescriptor-interface",
+          "title": "BluetoothRemoteGATTDescriptor",
+          "number": "5.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-bluetoothremotegattdescriptor-writevalue",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothremotegattdescriptor-writevalue",
+        "linkingText": [
+          "writeValue(value)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "BluetoothRemoteGATTDescriptor"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "bluetoothgattdescriptor-interface",
+          "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetoothgattdescriptor-interface",
+          "title": "BluetoothRemoteGATTDescriptor",
+          "number": "5.5"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

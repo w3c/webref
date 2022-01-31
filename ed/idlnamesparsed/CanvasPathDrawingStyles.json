@@ -1,0 +1,185 @@
+{
+  "name": "CanvasPathDrawingStyles",
+  "type": "interface mixin",
+  "defined": {
+    "spec": {
+      "title": "HTML Standard",
+      "url": "https://html.spec.whatwg.org/multipage/"
+    },
+    "fragment": "interface mixin CanvasPathDrawingStyles {\n  // line caps/joins\n  attribute unrestricted double lineWidth; // (default 1)\n  attribute CanvasLineCap lineCap; // (default \"butt\")\n  attribute CanvasLineJoin lineJoin; // (default \"miter\")\n  attribute unrestricted double miterLimit; // (default 10)\n\n  // dashed lines\n  undefined setLineDash(sequence<unrestricted double> segments); // default empty\n  sequence<unrestricted double> getLineDash();\n  attribute unrestricted double lineDashOffset;\n};",
+    "href": "https://html.spec.whatwg.org/multipage/canvas.html#canvaspathdrawingstyles"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://html.spec.whatwg.org/multipage/": [
+      {
+        "id": "canvaspathdrawingstyles",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#canvaspathdrawingstyles",
+        "linkingText": [
+          "CanvasPathDrawingStyles"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "2dcontext",
+          "href": "https://html.spec.whatwg.org/multipage/canvas.html#2dcontext",
+          "title": "The 2D rendering context",
+          "number": "4.12.5.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-context-2d-linewidth",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-linewidth",
+        "linkingText": [
+          "lineWidth"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "CanvasPathDrawingStyles"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "line-styles",
+          "href": "https://html.spec.whatwg.org/multipage/canvas.html#line-styles",
+          "title": "Line styles",
+          "number": "4.12.5.1.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-context-2d-linecap",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-linecap",
+        "linkingText": [
+          "lineCap"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "CanvasPathDrawingStyles"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "line-styles",
+          "href": "https://html.spec.whatwg.org/multipage/canvas.html#line-styles",
+          "title": "Line styles",
+          "number": "4.12.5.1.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-context-2d-linejoin",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-linejoin",
+        "linkingText": [
+          "lineJoin"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "CanvasPathDrawingStyles"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "line-styles",
+          "href": "https://html.spec.whatwg.org/multipage/canvas.html#line-styles",
+          "title": "Line styles",
+          "number": "4.12.5.1.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-context-2d-miterlimit",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-miterlimit",
+        "linkingText": [
+          "miterLimit"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "CanvasPathDrawingStyles"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "line-styles",
+          "href": "https://html.spec.whatwg.org/multipage/canvas.html#line-styles",
+          "title": "Line styles",
+          "number": "4.12.5.1.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-context-2d-setlinedash",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-setlinedash",
+        "linkingText": [
+          "setLineDash(segments)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CanvasPathDrawingStyles"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "line-styles",
+          "href": "https://html.spec.whatwg.org/multipage/canvas.html#line-styles",
+          "title": "Line styles",
+          "number": "4.12.5.1.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-context-2d-getlinedash",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-getlinedash",
+        "linkingText": [
+          "getLineDash()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CanvasPathDrawingStyles"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "line-styles",
+          "href": "https://html.spec.whatwg.org/multipage/canvas.html#line-styles",
+          "title": "Line styles",
+          "number": "4.12.5.1.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-context-2d-linedashoffset",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-linedashoffset",
+        "linkingText": [
+          "lineDashOffset"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "CanvasPathDrawingStyles"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "line-styles",
+          "href": "https://html.spec.whatwg.org/multipage/canvas.html#line-styles",
+          "title": "Line styles",
+          "number": "4.12.5.1.3"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

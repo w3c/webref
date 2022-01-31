@@ -1,0 +1,101 @@
+{
+  "name": "InkPresenter",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Ink API",
+      "url": "https://wicg.github.io/ink-enhancement/"
+    },
+    "fragment": "[Exposed=Window]\ninterface InkPresenter {\n    readonly attribute Element? presentationArea;\n    readonly attribute unsigned long expectedImprovement;\n\n    undefined updateInkTrailStartPoint(PointerEvent event, InkTrailStyle style);\n};",
+    "href": "https://wicg.github.io/ink-enhancement/#inkpresenter"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://wicg.github.io/ink-enhancement/": [
+      {
+        "id": "inkpresenter",
+        "href": "https://wicg.github.io/ink-enhancement/#inkpresenter",
+        "linkingText": [
+          "InkPresenter"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "ink-presenter",
+          "href": "https://wicg.github.io/ink-enhancement/#ink-presenter",
+          "title": "InkPresenter interface",
+          "number": "3.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-inkpresenter-presentationarea",
+        "href": "https://wicg.github.io/ink-enhancement/#dom-inkpresenter-presentationarea",
+        "linkingText": [
+          "presentationArea"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "InkPresenter"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "ink-presenter",
+          "href": "https://wicg.github.io/ink-enhancement/#ink-presenter",
+          "title": "InkPresenter interface",
+          "number": "3.4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-inkpresenter-expectedimprovement",
+        "href": "https://wicg.github.io/ink-enhancement/#dom-inkpresenter-expectedimprovement",
+        "linkingText": [
+          "expectedImprovement"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "InkPresenter"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "ink-presenter",
+          "href": "https://wicg.github.io/ink-enhancement/#ink-presenter",
+          "title": "InkPresenter interface",
+          "number": "3.4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-inkpresenter-updateinktrailstartpoint",
+        "href": "https://wicg.github.io/ink-enhancement/#dom-inkpresenter-updateinktrailstartpoint",
+        "linkingText": [
+          "updateInkTrailStartPoint(event, style)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "InkPresenter"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "ink-presenter",
+          "href": "https://wicg.github.io/ink-enhancement/#ink-presenter",
+          "title": "InkPresenter interface",
+          "number": "3.4"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

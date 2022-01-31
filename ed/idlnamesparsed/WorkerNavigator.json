@@ -1,0 +1,1204 @@
+{
+  "name": "WorkerNavigator",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "HTML Standard",
+      "url": "https://html.spec.whatwg.org/multipage/"
+    },
+    "fragment": "[Exposed=Worker]\ninterface WorkerNavigator {};",
+    "href": "https://html.spec.whatwg.org/multipage/workers.html#workernavigator"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "HTML Standard",
+        "url": "https://html.spec.whatwg.org/multipage/"
+      },
+      "fragment": "WorkerNavigator includes NavigatorID;"
+    },
+    {
+      "spec": {
+        "title": "HTML Standard",
+        "url": "https://html.spec.whatwg.org/multipage/"
+      },
+      "fragment": "WorkerNavigator includes NavigatorLanguage;"
+    },
+    {
+      "spec": {
+        "title": "HTML Standard",
+        "url": "https://html.spec.whatwg.org/multipage/"
+      },
+      "fragment": "WorkerNavigator includes NavigatorOnLine;"
+    },
+    {
+      "spec": {
+        "title": "HTML Standard",
+        "url": "https://html.spec.whatwg.org/multipage/"
+      },
+      "fragment": "WorkerNavigator includes NavigatorConcurrentHardware;"
+    },
+    {
+      "spec": {
+        "title": "Storage Standard",
+        "url": "https://storage.spec.whatwg.org/"
+      },
+      "fragment": "WorkerNavigator includes NavigatorStorage;"
+    },
+    {
+      "spec": {
+        "title": "Badging API",
+        "url": "https://w3c.github.io/badging/"
+      },
+      "fragment": "WorkerNavigator includes NavigatorBadge;"
+    },
+    {
+      "spec": {
+        "title": "Web Locks API",
+        "url": "https://w3c.github.io/web-locks/"
+      },
+      "fragment": "WorkerNavigator includes NavigatorLocks;"
+    },
+    {
+      "spec": {
+        "title": "Network Information API",
+        "url": "https://wicg.github.io/netinfo/"
+      },
+      "fragment": "WorkerNavigator includes NavigatorNetworkInformation;"
+    },
+    {
+      "spec": {
+        "title": "Web Serial API",
+        "url": "https://wicg.github.io/serial/"
+      },
+      "fragment": "[Exposed=DedicatedWorker, SecureContext]\npartial interface WorkerNavigator {\n  [SameObject] readonly attribute Serial serial;\n};"
+    },
+    {
+      "spec": {
+        "title": "User-Agent Client Hints",
+        "url": "https://wicg.github.io/ua-client-hints/"
+      },
+      "fragment": "WorkerNavigator includes NavigatorUA;"
+    },
+    {
+      "spec": {
+        "title": "WebUSB API",
+        "url": "https://wicg.github.io/webusb/"
+      },
+      "fragment": "[Exposed=(DedicatedWorker,SharedWorker), SecureContext]\npartial interface WorkerNavigator {\n  [SameObject] readonly attribute USB usb;\n};"
+    },
+    {
+      "spec": {
+        "title": "Device Memory 1",
+        "url": "https://www.w3.org/TR/device-memory-1/"
+      },
+      "fragment": "WorkerNavigator includes NavigatorDeviceMemory;"
+    },
+    {
+      "spec": {
+        "title": "Media Capabilities",
+        "url": "https://www.w3.org/TR/media-capabilities/"
+      },
+      "fragment": "[Exposed=Worker]\npartial interface WorkerNavigator {\n  [SameObject] readonly attribute MediaCapabilities mediaCapabilities;\n};"
+    },
+    {
+      "spec": {
+        "title": "Permissions",
+        "url": "https://www.w3.org/TR/permissions/"
+      },
+      "fragment": "[Exposed=(Worker)]\npartial interface WorkerNavigator {\n  [SameObject] readonly attribute Permissions permissions;\n};"
+    },
+    {
+      "spec": {
+        "title": "Service Workers Nightly",
+        "url": "https://www.w3.org/TR/service-workers-1/"
+      },
+      "fragment": "partial interface WorkerNavigator {\n  [SecureContext, SameObject] readonly attribute ServiceWorkerContainer serviceWorker;\n};"
+    },
+    {
+      "spec": {
+        "title": "WebGPU",
+        "url": "https://www.w3.org/TR/webgpu/"
+      },
+      "fragment": "WorkerNavigator includes NavigatorGPU;"
+    },
+    {
+      "spec": {
+        "title": "Web Neural Network API",
+        "url": "https://www.w3.org/TR/webnn/"
+      },
+      "fragment": "WorkerNavigator includes NavigatorML;"
+    }
+  ],
+  "inheritance": null,
+  "includes": [
+    {
+      "name": "NavigatorID",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        "fragment": "interface mixin NavigatorID {\n  readonly attribute DOMString appCodeName; // constant \"Mozilla\"\n  readonly attribute DOMString appName; // constant \"Netscape\"\n  readonly attribute DOMString appVersion;\n  readonly attribute DOMString platform;\n  readonly attribute DOMString product; // constant \"Gecko\"\n  [Exposed=Window] readonly attribute DOMString productSub;\n  readonly attribute DOMString userAgent;\n  [Exposed=Window] readonly attribute DOMString vendor;\n  [Exposed=Window] readonly attribute DOMString vendorSub; // constant \"\"\n};",
+        "href": "https://html.spec.whatwg.org/multipage/system-state.html#navigatorid"
+      },
+      "extended": [
+        {
+          "spec": {
+            "title": "HTML Standard",
+            "url": "https://html.spec.whatwg.org/multipage/"
+          },
+          "fragment": "partial interface mixin NavigatorID {\n  [Exposed=Window] boolean taintEnabled(); // constant false\n  [Exposed=Window] readonly attribute DOMString oscpu;\n};"
+        }
+      ],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "NavigatorLanguage",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        "fragment": "interface mixin NavigatorLanguage {\n  readonly attribute DOMString language;\n  readonly attribute FrozenArray<DOMString> languages;\n};",
+        "href": "https://html.spec.whatwg.org/multipage/system-state.html#navigatorlanguage"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "NavigatorOnLine",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        "fragment": "interface mixin NavigatorOnLine {\n  readonly attribute boolean onLine;\n};",
+        "href": "https://html.spec.whatwg.org/multipage/system-state.html#navigatoronline"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "NavigatorConcurrentHardware",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        "fragment": "interface mixin NavigatorConcurrentHardware {\n  readonly attribute unsigned long long hardwareConcurrency;\n};",
+        "href": "https://html.spec.whatwg.org/multipage/workers.html#navigatorconcurrenthardware"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "NavigatorStorage",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "Storage Standard",
+          "url": "https://storage.spec.whatwg.org/"
+        },
+        "fragment": "[SecureContext]\ninterface mixin NavigatorStorage {\n  [SameObject] readonly attribute StorageManager storage;\n};",
+        "href": "https://storage.spec.whatwg.org/#navigatorstorage"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "NavigatorBadge",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "Badging API",
+          "url": "https://w3c.github.io/badging/"
+        },
+        "fragment": "// Methods exposed on both documents and service workers.\n[SecureContext]\ninterface mixin NavigatorBadge {\n  Promise<undefined> setAppBadge(optional [EnforceRange] unsigned long long contents);\n  Promise<undefined> clearAppBadge();\n};",
+        "href": "https://w3c.github.io/badging/#dom-navigatorbadge"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "NavigatorLocks",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "Web Locks API",
+          "url": "https://w3c.github.io/web-locks/"
+        },
+        "fragment": "[SecureContext]\ninterface mixin NavigatorLocks {\n  readonly attribute LockManager locks;\n};",
+        "href": "https://w3c.github.io/web-locks/#navigatorlocks"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "NavigatorNetworkInformation",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "Network Information API",
+          "url": "https://wicg.github.io/netinfo/"
+        },
+        "fragment": "interface mixin NavigatorNetworkInformation {\n  [SameObject] readonly attribute NetworkInformation connection;\n};",
+        "href": "https://wicg.github.io/netinfo/#dom-navigatornetworkinformation"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "NavigatorUA",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "User-Agent Client Hints",
+          "url": "https://wicg.github.io/ua-client-hints/"
+        },
+        "fragment": "interface mixin NavigatorUA {\n  [SecureContext] readonly attribute NavigatorUAData userAgentData;\n};",
+        "href": "https://wicg.github.io/ua-client-hints/#navigatorua"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "NavigatorDeviceMemory",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "Device Memory 1",
+          "url": "https://www.w3.org/TR/device-memory-1/"
+        },
+        "fragment": "[\n    SecureContext,\n    Exposed=(Window,Worker)\n] interface mixin NavigatorDeviceMemory {\n    readonly attribute double deviceMemory;\n};",
+        "href": "https://w3c.github.io/device-memory/#navigatordevicememory"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "NavigatorGPU",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "WebGPU",
+          "url": "https://www.w3.org/TR/webgpu/"
+        },
+        "fragment": "interface mixin NavigatorGPU {\n    [SameObject, SecureContext] readonly attribute GPU gpu;\n};",
+        "href": "https://gpuweb.github.io/gpuweb/#navigatorgpu"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "NavigatorML",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "Web Neural Network API",
+          "url": "https://www.w3.org/TR/webnn/"
+        },
+        "fragment": "interface mixin NavigatorML {\n  [SecureContext, SameObject] readonly attribute ML ml;\n};",
+        "href": "https://webmachinelearning.github.io/webnn/#navigatorml"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    }
+  ],
+  "dfns": {
+    "https://html.spec.whatwg.org/multipage/": [
+      {
+        "id": "workernavigator",
+        "href": "https://html.spec.whatwg.org/multipage/workers.html#workernavigator",
+        "linkingText": [
+          "WorkerNavigator"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-workernavigator-object",
+          "href": "https://html.spec.whatwg.org/multipage/workers.html#the-workernavigator-object",
+          "title": "The WorkerNavigator interface",
+          "number": "10.3.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "navigatorid",
+        "href": "https://html.spec.whatwg.org/multipage/system-state.html#navigatorid",
+        "linkingText": [
+          "NavigatorID"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "client-identification",
+          "href": "https://html.spec.whatwg.org/multipage/system-state.html#client-identification",
+          "title": "Client identification",
+          "number": "8.9.1.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-navigator-appcodename",
+        "href": "https://html.spec.whatwg.org/multipage/system-state.html#dom-navigator-appcodename",
+        "linkingText": [
+          "appCodeName"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "NavigatorID"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "client-identification",
+          "href": "https://html.spec.whatwg.org/multipage/system-state.html#client-identification",
+          "title": "Client identification",
+          "number": "8.9.1.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-navigator-appname",
+        "href": "https://html.spec.whatwg.org/multipage/system-state.html#dom-navigator-appname",
+        "linkingText": [
+          "appName"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "NavigatorID"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "client-identification",
+          "href": "https://html.spec.whatwg.org/multipage/system-state.html#client-identification",
+          "title": "Client identification",
+          "number": "8.9.1.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-navigator-appversion",
+        "href": "https://html.spec.whatwg.org/multipage/system-state.html#dom-navigator-appversion",
+        "linkingText": [
+          "appVersion"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "NavigatorID"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "client-identification",
+          "href": "https://html.spec.whatwg.org/multipage/system-state.html#client-identification",
+          "title": "Client identification",
+          "number": "8.9.1.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-navigator-platform",
+        "href": "https://html.spec.whatwg.org/multipage/system-state.html#dom-navigator-platform",
+        "linkingText": [
+          "platform"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "NavigatorID"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "client-identification",
+          "href": "https://html.spec.whatwg.org/multipage/system-state.html#client-identification",
+          "title": "Client identification",
+          "number": "8.9.1.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-navigator-product",
+        "href": "https://html.spec.whatwg.org/multipage/system-state.html#dom-navigator-product",
+        "linkingText": [
+          "product"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "NavigatorID"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "client-identification",
+          "href": "https://html.spec.whatwg.org/multipage/system-state.html#client-identification",
+          "title": "Client identification",
+          "number": "8.9.1.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-navigator-productsub",
+        "href": "https://html.spec.whatwg.org/multipage/system-state.html#dom-navigator-productsub",
+        "linkingText": [
+          "productSub"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "NavigatorID"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "client-identification",
+          "href": "https://html.spec.whatwg.org/multipage/system-state.html#client-identification",
+          "title": "Client identification",
+          "number": "8.9.1.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-navigator-useragent",
+        "href": "https://html.spec.whatwg.org/multipage/system-state.html#dom-navigator-useragent",
+        "linkingText": [
+          "userAgent"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "NavigatorID"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "client-identification",
+          "href": "https://html.spec.whatwg.org/multipage/system-state.html#client-identification",
+          "title": "Client identification",
+          "number": "8.9.1.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-navigator-vendor",
+        "href": "https://html.spec.whatwg.org/multipage/system-state.html#dom-navigator-vendor",
+        "linkingText": [
+          "vendor"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "NavigatorID"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "client-identification",
+          "href": "https://html.spec.whatwg.org/multipage/system-state.html#client-identification",
+          "title": "Client identification",
+          "number": "8.9.1.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-navigator-vendorsub",
+        "href": "https://html.spec.whatwg.org/multipage/system-state.html#dom-navigator-vendorsub",
+        "linkingText": [
+          "vendorSub"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "NavigatorID"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "client-identification",
+          "href": "https://html.spec.whatwg.org/multipage/system-state.html#client-identification",
+          "title": "Client identification",
+          "number": "8.9.1.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-navigator-taintenabled",
+        "href": "https://html.spec.whatwg.org/multipage/system-state.html#dom-navigator-taintenabled",
+        "linkingText": [
+          "taintEnabled()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "NavigatorID"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "client-identification",
+          "href": "https://html.spec.whatwg.org/multipage/system-state.html#client-identification",
+          "title": "Client identification",
+          "number": "8.9.1.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-navigator-oscpu",
+        "href": "https://html.spec.whatwg.org/multipage/system-state.html#dom-navigator-oscpu",
+        "linkingText": [
+          "oscpu"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "NavigatorID"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "client-identification",
+          "href": "https://html.spec.whatwg.org/multipage/system-state.html#client-identification",
+          "title": "Client identification",
+          "number": "8.9.1.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "navigatorlanguage",
+        "href": "https://html.spec.whatwg.org/multipage/system-state.html#navigatorlanguage",
+        "linkingText": [
+          "NavigatorLanguage"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "language-preferences",
+          "href": "https://html.spec.whatwg.org/multipage/system-state.html#language-preferences",
+          "title": "Language preferences",
+          "number": "8.9.1.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-navigator-language",
+        "href": "https://html.spec.whatwg.org/multipage/system-state.html#dom-navigator-language",
+        "linkingText": [
+          "language"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "NavigatorLanguage"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "language-preferences",
+          "href": "https://html.spec.whatwg.org/multipage/system-state.html#language-preferences",
+          "title": "Language preferences",
+          "number": "8.9.1.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-navigator-languages",
+        "href": "https://html.spec.whatwg.org/multipage/system-state.html#dom-navigator-languages",
+        "linkingText": [
+          "languages"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "NavigatorLanguage"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "language-preferences",
+          "href": "https://html.spec.whatwg.org/multipage/system-state.html#language-preferences",
+          "title": "Language preferences",
+          "number": "8.9.1.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "navigatoronline",
+        "href": "https://html.spec.whatwg.org/multipage/system-state.html#navigatoronline",
+        "linkingText": [
+          "NavigatorOnLine"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "navigator.online",
+          "href": "https://html.spec.whatwg.org/multipage/system-state.html#navigator.online",
+          "title": "Browser state",
+          "number": "8.9.1.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-navigator-online",
+        "href": "https://html.spec.whatwg.org/multipage/system-state.html#dom-navigator-online",
+        "linkingText": [
+          "onLine"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "NavigatorOnLine"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "navigator.online",
+          "href": "https://html.spec.whatwg.org/multipage/system-state.html#navigator.online",
+          "title": "Browser state",
+          "number": "8.9.1.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "navigatorconcurrenthardware",
+        "href": "https://html.spec.whatwg.org/multipage/workers.html#navigatorconcurrenthardware",
+        "linkingText": [
+          "NavigatorConcurrentHardware"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "navigator.hardwareconcurrency",
+          "href": "https://html.spec.whatwg.org/multipage/workers.html#navigator.hardwareconcurrency",
+          "title": "Concurrent hardware capabilities",
+          "number": "10.2.7"
+        },
+        "definedIn": "pre"
+      }
+    ],
+    "https://storage.spec.whatwg.org/": [
+      {
+        "id": "navigatorstorage",
+        "href": "https://storage.spec.whatwg.org/#navigatorstorage",
+        "linkingText": [
+          "NavigatorStorage"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api",
+          "href": "https://storage.spec.whatwg.org/#api",
+          "title": "API",
+          "number": "8"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-navigatorstorage-storage",
+        "href": "https://storage.spec.whatwg.org/#dom-navigatorstorage-storage",
+        "linkingText": [
+          "storage"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "NavigatorStorage"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api",
+          "href": "https://storage.spec.whatwg.org/#api",
+          "title": "API",
+          "number": "8"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://w3c.github.io/badging/": [
+      {
+        "id": "dom-navigatorbadge",
+        "href": "https://w3c.github.io/badging/#dom-navigatorbadge",
+        "linkingText": [
+          "NavigatorBadge"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "extensions-to-the-navigator-and-workernavigator-interfaces",
+          "href": "https://w3c.github.io/badging/#extensions-to-the-navigator-and-workernavigator-interfaces",
+          "title": "Extensions to the Navigator and WorkerNavigator interfaces",
+          "number": "4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-navigatorbadge-setappbadge",
+        "href": "https://w3c.github.io/badging/#dom-navigatorbadge-setappbadge",
+        "linkingText": [
+          "setAppBadge()",
+          "setAppBadge(contents)"
+        ],
+        "localLinkingText": [
+          "NavigatorBadge.setAppBadge",
+          "NavigatorBadge.setAppBadge()",
+          "setAppBadge"
+        ],
+        "type": "method",
+        "for": [
+          "NavigatorBadge"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "setappbadge-method",
+          "href": "https://w3c.github.io/badging/#setappbadge-method",
+          "title": "setAppBadge() method",
+          "number": "4.3"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-navigatorbadge-clearappbadge",
+        "href": "https://w3c.github.io/badging/#dom-navigatorbadge-clearappbadge",
+        "linkingText": [
+          "clearAppBadge()"
+        ],
+        "localLinkingText": [
+          "NavigatorBadge.clearAppBadge",
+          "NavigatorBadge.clearAppBadge()",
+          "clearAppBadge"
+        ],
+        "type": "method",
+        "for": [
+          "NavigatorBadge"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "clearappbadge-method",
+          "href": "https://w3c.github.io/badging/#clearappbadge-method",
+          "title": "clearAppBadge() method",
+          "number": "4.4"
+        },
+        "definedIn": "heading"
+      }
+    ],
+    "https://w3c.github.io/web-locks/": [
+      {
+        "id": "navigatorlocks",
+        "href": "https://w3c.github.io/web-locks/#navigatorlocks",
+        "linkingText": [
+          "NavigatorLocks"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "navigator-mixins",
+          "href": "https://w3c.github.io/web-locks/#navigator-mixins",
+          "title": "Navigator Mixins",
+          "number": "3.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-navigatorlocks-locks",
+        "href": "https://w3c.github.io/web-locks/#dom-navigatorlocks-locks",
+        "linkingText": [
+          "locks"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "NavigatorLocks"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "navigator-mixins",
+          "href": "https://w3c.github.io/web-locks/#navigator-mixins",
+          "title": "Navigator Mixins",
+          "number": "3.1"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://wicg.github.io/netinfo/": [
+      {
+        "id": "dom-navigatornetworkinformation",
+        "href": "https://wicg.github.io/netinfo/#dom-navigatornetworkinformation",
+        "linkingText": [
+          "NavigatorNetworkInformation"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "navigatornetworkinformation-interface",
+          "href": "https://wicg.github.io/netinfo/#navigatornetworkinformation-interface",
+          "title": "NavigatorNetworkInformation interface",
+          "number": "5"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-navigatornetworkinformation-connection",
+        "href": "https://wicg.github.io/netinfo/#dom-navigatornetworkinformation-connection",
+        "linkingText": [
+          "connection"
+        ],
+        "localLinkingText": [
+          "NavigatorNetworkInformation.connection"
+        ],
+        "type": "attribute",
+        "for": [
+          "NavigatorNetworkInformation"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "connection-attribute",
+          "href": "https://wicg.github.io/netinfo/#connection-attribute",
+          "title": "connection attribute",
+          "number": "5.1"
+        },
+        "definedIn": "heading"
+      }
+    ],
+    "https://wicg.github.io/serial/": [
+      {
+        "id": "dom-workernavigator-serial",
+        "href": "https://wicg.github.io/serial/#dom-workernavigator-serial",
+        "linkingText": [
+          "serial"
+        ],
+        "localLinkingText": [
+          "WorkerNavigator.serial"
+        ],
+        "type": "attribute",
+        "for": [
+          "WorkerNavigator"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "serial-attribute-0",
+          "href": "https://wicg.github.io/serial/#serial-attribute-0",
+          "title": "serial attribute"
+        },
+        "definedIn": "heading"
+      }
+    ],
+    "https://wicg.github.io/ua-client-hints/": [
+      {
+        "id": "navigatorua",
+        "href": "https://wicg.github.io/ua-client-hints/#navigatorua",
+        "linkingText": [
+          "NavigatorUA"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface",
+          "href": "https://wicg.github.io/ua-client-hints/#interface",
+          "title": "Interface",
+          "number": "4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-navigatorua-useragentdata",
+        "href": "https://wicg.github.io/ua-client-hints/#dom-navigatorua-useragentdata",
+        "linkingText": [
+          "userAgentData"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "NavigatorUA"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface",
+          "href": "https://wicg.github.io/ua-client-hints/#interface",
+          "title": "Interface",
+          "number": "4"
+        },
+        "definedIn": "pre"
+      }
+    ],
+    "https://wicg.github.io/webusb/": [
+      {
+        "id": "dom-workernavigator-usb",
+        "href": "https://wicg.github.io/webusb/#dom-workernavigator-usb",
+        "linkingText": [
+          "usb"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "WorkerNavigator"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "enumeration",
+          "href": "https://wicg.github.io/webusb/#enumeration",
+          "title": "Device Enumeration",
+          "number": "5"
+        },
+        "definedIn": "pre"
+      }
+    ],
+    "https://www.w3.org/TR/device-memory-1/": [
+      {
+        "id": "navigatordevicememory",
+        "href": "https://w3c.github.io/device-memory/#navigatordevicememory",
+        "linkingText": [
+          "NavigatorDeviceMemory"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "sec-device-memory-js-api",
+          "href": "https://w3c.github.io/device-memory/#sec-device-memory-js-api",
+          "title": "Device Memory JS API",
+          "number": "3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-navigatordevicememory-devicememory",
+        "href": "https://w3c.github.io/device-memory/#dom-navigatordevicememory-devicememory",
+        "linkingText": [
+          "deviceMemory"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "NavigatorDeviceMemory"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "sec-device-memory-js-api",
+          "href": "https://w3c.github.io/device-memory/#sec-device-memory-js-api",
+          "title": "Device Memory JS API",
+          "number": "3"
+        },
+        "definedIn": "pre"
+      }
+    ],
+    "https://www.w3.org/TR/media-capabilities/": [
+      {
+        "id": "dom-workernavigator-mediacapabilities",
+        "href": "https://w3c.github.io/media-capabilities/#dom-workernavigator-mediacapabilities",
+        "linkingText": [
+          "mediaCapabilities"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "WorkerNavigator"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "navigators-extensions",
+          "href": "https://w3c.github.io/media-capabilities/#navigators-extensions",
+          "title": "Navigator and WorkerNavigator extension",
+          "number": "2.4"
+        },
+        "definedIn": "pre"
+      }
+    ],
+    "https://www.w3.org/TR/permissions/": [
+      {
+        "id": "dom-workernavigator-permissions",
+        "href": "https://w3c.github.io/permissions/#dom-workernavigator-permissions",
+        "linkingText": [
+          "permissions"
+        ],
+        "localLinkingText": [
+          "WorkerNavigator.permissions"
+        ],
+        "type": "attribute",
+        "for": [
+          "WorkerNavigator"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "extensions-to-the-navigator-and-workernavigator-interfaces",
+          "href": "https://w3c.github.io/permissions/#extensions-to-the-navigator-and-workernavigator-interfaces",
+          "title": "Extensions to the Navigator and WorkerNavigator interfaces",
+          "number": "3"
+        },
+        "definedIn": "pre"
+      }
+    ],
+    "https://www.w3.org/TR/service-workers-1/": [
+      {
+        "id": "navigator-service-worker-attribute",
+        "href": "https://w3c.github.io/ServiceWorker/#navigator-service-worker-attribute",
+        "linkingText": [
+          "serviceWorker"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Navigator",
+          "WorkerNavigator"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "navigator-serviceworker",
+          "href": "https://w3c.github.io/ServiceWorker/#navigator-serviceworker",
+          "title": "navigator.serviceWorker",
+          "number": "3.3"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://www.w3.org/TR/webgpu/": [
+      {
+        "id": "navigatorgpu",
+        "href": "https://gpuweb.github.io/gpuweb/#navigatorgpu",
+        "linkingText": [
+          "NavigatorGPU"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "navigator-gpu",
+          "href": "https://gpuweb.github.io/gpuweb/#navigator-gpu",
+          "title": "navigator.gpu",
+          "number": "4.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-navigatorgpu-gpu",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-navigatorgpu-gpu",
+        "linkingText": [
+          "gpu"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "NavigatorGPU"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "navigator-gpu",
+          "href": "https://gpuweb.github.io/gpuweb/#navigator-gpu",
+          "title": "navigator.gpu",
+          "number": "4.1"
+        },
+        "definedIn": "pre"
+      }
+    ],
+    "https://www.w3.org/TR/webnn/": [
+      {
+        "id": "navigatorml",
+        "href": "https://webmachinelearning.github.io/webnn/#navigatorml",
+        "linkingText": [
+          "NavigatorML"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-navigator-ml",
+          "href": "https://webmachinelearning.github.io/webnn/#api-navigator-ml",
+          "title": "navigator.ml",
+          "number": "7.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-navigatorml-ml",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-navigatorml-ml",
+        "linkingText": [
+          "ml"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "NavigatorML"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-navigator-ml",
+          "href": "https://webmachinelearning.github.io/webnn/#api-navigator-ml",
+          "title": "navigator.ml",
+          "number": "7.1"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

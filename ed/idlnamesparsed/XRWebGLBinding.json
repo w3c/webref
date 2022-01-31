@@ -1,0 +1,316 @@
+{
+  "name": "XRWebGLBinding",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebXR Layers API Level 1",
+      "url": "https://www.w3.org/TR/webxrlayers-1/"
+    },
+    "fragment": "[Exposed=Window] interface XRWebGLBinding {\n  constructor(XRSession session, XRWebGLRenderingContext context);\n\n  readonly attribute double nativeProjectionScaleFactor;\n  readonly attribute boolean usesDepthValues;\n\n  XRProjectionLayer createProjectionLayer(optional XRProjectionLayerInit init = {});\n  XRQuadLayer createQuadLayer(optional XRQuadLayerInit init = {});\n  XRCylinderLayer createCylinderLayer(optional XRCylinderLayerInit init = {});\n  XREquirectLayer createEquirectLayer(optional XREquirectLayerInit init = {});\n  XRCubeLayer createCubeLayer(optional XRCubeLayerInit init = {});\n\n  XRWebGLSubImage getSubImage(XRCompositionLayer layer, XRFrame frame, optional XREye eye = \"none\");\n  XRWebGLSubImage getViewSubImage(XRProjectionLayer layer, XRView view);\n};",
+    "href": "https://immersive-web.github.io/layers/#xrwebglbinding"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "WebXR Depth Sensing Module",
+        "url": "https://www.w3.org/TR/webxr-depth-sensing-1/"
+      },
+      "fragment": "partial interface XRWebGLBinding {\n  XRWebGLDepthInformation? getDepthInformation(XRView view);\n};"
+    },
+    {
+      "spec": {
+        "title": "WebXR Lighting Estimation API Level 1",
+        "url": "https://www.w3.org/TR/webxr-lighting-estimation-1/"
+      },
+      "fragment": "partial interface XRWebGLBinding {\n  WebGLTexture? getReflectionCubeMap(XRLightProbe lightProbe);\n};"
+    }
+  ],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webxrlayers-1/": [
+      {
+        "id": "xrwebglbinding",
+        "href": "https://immersive-web.github.io/layers/#xrwebglbinding",
+        "linkingText": [
+          "XRWebGLBinding"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "XRWebGLBindingtype",
+          "href": "https://immersive-web.github.io/layers/#XRWebGLBindingtype",
+          "title": "XRWebGLBinding",
+          "number": "6.9"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-xrwebglbinding-xrwebglbinding",
+        "href": "https://immersive-web.github.io/layers/#dom-xrwebglbinding-xrwebglbinding",
+        "linkingText": [
+          "XRWebGLBinding(session, context)",
+          "constructor(session, context)"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "XRWebGLBinding"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "XRWebGLBindingtype",
+          "href": "https://immersive-web.github.io/layers/#XRWebGLBindingtype",
+          "title": "XRWebGLBinding",
+          "number": "6.9"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-xrwebglbinding-nativeprojectionscalefactor",
+        "href": "https://immersive-web.github.io/layers/#dom-xrwebglbinding-nativeprojectionscalefactor",
+        "linkingText": [
+          "nativeProjectionScaleFactor"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XRWebGLBinding"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "XRWebGLBindingtype",
+          "href": "https://immersive-web.github.io/layers/#XRWebGLBindingtype",
+          "title": "XRWebGLBinding",
+          "number": "6.9"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-xrwebglbinding-usesdepthvalues",
+        "href": "https://immersive-web.github.io/layers/#dom-xrwebglbinding-usesdepthvalues",
+        "linkingText": [
+          "usesDepthValues"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XRWebGLBinding"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "XRWebGLBindingtype",
+          "href": "https://immersive-web.github.io/layers/#XRWebGLBindingtype",
+          "title": "XRWebGLBinding",
+          "number": "6.9"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-xrwebglbinding-createprojectionlayer",
+        "href": "https://immersive-web.github.io/layers/#dom-xrwebglbinding-createprojectionlayer",
+        "linkingText": [
+          "createProjectionLayer(init)",
+          "createProjectionLayer()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "XRWebGLBinding"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "XRWebGLBindingtype",
+          "href": "https://immersive-web.github.io/layers/#XRWebGLBindingtype",
+          "title": "XRWebGLBinding",
+          "number": "6.9"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-xrwebglbinding-createquadlayer",
+        "href": "https://immersive-web.github.io/layers/#dom-xrwebglbinding-createquadlayer",
+        "linkingText": [
+          "createQuadLayer(init)",
+          "createQuadLayer()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "XRWebGLBinding"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "XRWebGLBindingtype",
+          "href": "https://immersive-web.github.io/layers/#XRWebGLBindingtype",
+          "title": "XRWebGLBinding",
+          "number": "6.9"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-xrwebglbinding-createcylinderlayer",
+        "href": "https://immersive-web.github.io/layers/#dom-xrwebglbinding-createcylinderlayer",
+        "linkingText": [
+          "createCylinderLayer(init)",
+          "createCylinderLayer()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "XRWebGLBinding"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "XRWebGLBindingtype",
+          "href": "https://immersive-web.github.io/layers/#XRWebGLBindingtype",
+          "title": "XRWebGLBinding",
+          "number": "6.9"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-xrwebglbinding-createequirectlayer",
+        "href": "https://immersive-web.github.io/layers/#dom-xrwebglbinding-createequirectlayer",
+        "linkingText": [
+          "createEquirectLayer(init)",
+          "createEquirectLayer()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "XRWebGLBinding"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "XRWebGLBindingtype",
+          "href": "https://immersive-web.github.io/layers/#XRWebGLBindingtype",
+          "title": "XRWebGLBinding",
+          "number": "6.9"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-xrwebglbinding-createcubelayer",
+        "href": "https://immersive-web.github.io/layers/#dom-xrwebglbinding-createcubelayer",
+        "linkingText": [
+          "createCubeLayer(init)",
+          "createCubeLayer()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "XRWebGLBinding"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "XRWebGLBindingtype",
+          "href": "https://immersive-web.github.io/layers/#XRWebGLBindingtype",
+          "title": "XRWebGLBinding",
+          "number": "6.9"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-xrwebglbinding-getsubimage",
+        "href": "https://immersive-web.github.io/layers/#dom-xrwebglbinding-getsubimage",
+        "linkingText": [
+          "getSubImage(layer, frame, eye)",
+          "getSubImage(layer, frame)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "XRWebGLBinding"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "XRWebGLBindingtype",
+          "href": "https://immersive-web.github.io/layers/#XRWebGLBindingtype",
+          "title": "XRWebGLBinding",
+          "number": "6.9"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-xrwebglbinding-getviewsubimage",
+        "href": "https://immersive-web.github.io/layers/#dom-xrwebglbinding-getviewsubimage",
+        "linkingText": [
+          "getViewSubImage(layer, view)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "XRWebGLBinding"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "XRWebGLBindingtype",
+          "href": "https://immersive-web.github.io/layers/#XRWebGLBindingtype",
+          "title": "XRWebGLBinding",
+          "number": "6.9"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://www.w3.org/TR/webxr-depth-sensing-1/": [
+      {
+        "id": "dom-xrwebglbinding-getdepthinformation",
+        "href": "https://immersive-web.github.io/depth-sensing/#dom-xrwebglbinding-getdepthinformation",
+        "linkingText": [
+          "getDepthInformation(view)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "XRWebGLBinding"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xr-gpu-depth-info-section",
+          "href": "https://immersive-web.github.io/depth-sensing/#xr-gpu-depth-info-section",
+          "title": "XRWebGLDepthInformation",
+          "number": "3.3"
+        },
+        "definedIn": "pre"
+      }
+    ],
+    "https://www.w3.org/TR/webxr-lighting-estimation-1/": [
+      {
+        "id": "dom-xrwebglbinding-getreflectioncubemap",
+        "href": "https://immersive-web.github.io/lighting-estimation/#dom-xrwebglbinding-getreflectioncubemap",
+        "linkingText": [
+          "getReflectionCubeMap(lightProbe)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "XRWebGLBinding"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrwebglbinding-interface",
+          "href": "https://immersive-web.github.io/lighting-estimation/#xrwebglbinding-interface",
+          "title": "XRWebGLBinding",
+          "number": "4.1"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

@@ -1,0 +1,268 @@
+{
+  "name": "SequenceEffect",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Web Animations Level 2",
+      "url": "https://drafts.csswg.org/web-animations-2/"
+    },
+    "fragment": "[Exposed=Window]\ninterface SequenceEffect : GroupEffect {\n  constructor(sequence<AnimationEffect>? children,\n              optional (unrestricted double or EffectTiming) timing = {});\n\n  SequenceEffect clone ();\n};",
+    "href": "https://drafts.csswg.org/web-animations-2/#sequenceeffect"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "GroupEffect",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "Web Animations Level 2",
+        "url": "https://drafts.csswg.org/web-animations-2/"
+      },
+      "fragment": "[Exposed=Window]\ninterface GroupEffect {\n  constructor(sequence<AnimationEffect>? children,\n              optional (unrestricted double or EffectTiming) timing = {});\n\n  readonly attribute AnimationNodeList  children;\n  readonly attribute AnimationEffect?   firstChild;\n  readonly attribute AnimationEffect?   lastChild;\n  GroupEffect clone ();\n\n  undefined prepend (AnimationEffect... effects);\n  undefined append (AnimationEffect... effects);\n};",
+      "href": "https://drafts.csswg.org/web-animations-2/#groupeffect"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://drafts.csswg.org/web-animations-2/": [
+      {
+        "id": "sequenceeffect",
+        "href": "https://drafts.csswg.org/web-animations-2/#sequenceeffect",
+        "linkingText": [
+          "SequenceEffect"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-sequenceeffect-interface",
+          "href": "https://drafts.csswg.org/web-animations-2/#the-sequenceeffect-interface",
+          "title": "The SequenceEffect interfaces",
+          "number": "5.9"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-sequenceeffect-sequenceeffect",
+        "href": "https://drafts.csswg.org/web-animations-2/#dom-sequenceeffect-sequenceeffect",
+        "linkingText": [
+          "SequenceEffect(children, timing)",
+          "constructor(children, timing)",
+          "SequenceEffect(children)",
+          "constructor(children)"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "SequenceEffect"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-sequenceeffect-interface",
+          "href": "https://drafts.csswg.org/web-animations-2/#the-sequenceeffect-interface",
+          "title": "The SequenceEffect interfaces",
+          "number": "5.9"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-sequenceeffect-clone",
+        "href": "https://drafts.csswg.org/web-animations-2/#dom-sequenceeffect-clone",
+        "linkingText": [
+          "clone()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "SequenceEffect"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-sequenceeffect-interface",
+          "href": "https://drafts.csswg.org/web-animations-2/#the-sequenceeffect-interface",
+          "title": "The SequenceEffect interfaces",
+          "number": "5.9"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "groupeffect",
+        "href": "https://drafts.csswg.org/web-animations-2/#groupeffect",
+        "linkingText": [
+          "GroupEffect"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-groupeffect-interface",
+          "href": "https://drafts.csswg.org/web-animations-2/#the-groupeffect-interface",
+          "title": "The GroupEffect interface",
+          "number": "5.7"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-groupeffect-groupeffect",
+        "href": "https://drafts.csswg.org/web-animations-2/#dom-groupeffect-groupeffect",
+        "linkingText": [
+          "GroupEffect(children, timing)",
+          "constructor(children, timing)",
+          "GroupEffect(children)",
+          "constructor(children)"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "GroupEffect"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-groupeffect-interface",
+          "href": "https://drafts.csswg.org/web-animations-2/#the-groupeffect-interface",
+          "title": "The GroupEffect interface",
+          "number": "5.7"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-groupeffect-children",
+        "href": "https://drafts.csswg.org/web-animations-2/#dom-groupeffect-children",
+        "linkingText": [
+          "children"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "GroupEffect"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-groupeffect-interface",
+          "href": "https://drafts.csswg.org/web-animations-2/#the-groupeffect-interface",
+          "title": "The GroupEffect interface",
+          "number": "5.7"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-groupeffect-firstchild",
+        "href": "https://drafts.csswg.org/web-animations-2/#dom-groupeffect-firstchild",
+        "linkingText": [
+          "firstChild"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "GroupEffect"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-groupeffect-interface",
+          "href": "https://drafts.csswg.org/web-animations-2/#the-groupeffect-interface",
+          "title": "The GroupEffect interface",
+          "number": "5.7"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-groupeffect-lastchild",
+        "href": "https://drafts.csswg.org/web-animations-2/#dom-groupeffect-lastchild",
+        "linkingText": [
+          "lastChild"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "GroupEffect"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-groupeffect-interface",
+          "href": "https://drafts.csswg.org/web-animations-2/#the-groupeffect-interface",
+          "title": "The GroupEffect interface",
+          "number": "5.7"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-groupeffect-clone",
+        "href": "https://drafts.csswg.org/web-animations-2/#dom-groupeffect-clone",
+        "linkingText": [
+          "clone()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GroupEffect"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-groupeffect-interface",
+          "href": "https://drafts.csswg.org/web-animations-2/#the-groupeffect-interface",
+          "title": "The GroupEffect interface",
+          "number": "5.7"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-groupeffect-prepend",
+        "href": "https://drafts.csswg.org/web-animations-2/#dom-groupeffect-prepend",
+        "linkingText": [
+          "prepend(...effects)",
+          "prepend()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GroupEffect"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-groupeffect-interface",
+          "href": "https://drafts.csswg.org/web-animations-2/#the-groupeffect-interface",
+          "title": "The GroupEffect interface",
+          "number": "5.7"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-groupeffect-append",
+        "href": "https://drafts.csswg.org/web-animations-2/#dom-groupeffect-append",
+        "linkingText": [
+          "append(...effects)",
+          "append()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GroupEffect"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-groupeffect-interface",
+          "href": "https://drafts.csswg.org/web-animations-2/#the-groupeffect-interface",
+          "title": "The GroupEffect interface",
+          "number": "5.7"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

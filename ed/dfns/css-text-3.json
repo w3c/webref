@@ -1,0 +1,2360 @@
+{
+  "spec": {
+    "title": "CSS Text Module Level 3",
+    "url": "https://drafts.csswg.org/css-text-3/"
+  },
+  "dfns": [
+    {
+      "id": "content-language",
+      "href": "https://drafts.csswg.org/css-text-3/#content-language",
+      "linkingText": [
+        "content language"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "languages",
+        "href": "https://drafts.csswg.org/css-text-3/#languages",
+        "title": "Languages and Typesetting",
+        "number": "1.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "content-writing-system",
+      "href": "https://drafts.csswg.org/css-text-3/#content-writing-system",
+      "linkingText": [
+        "content writing system"
+      ],
+      "localLinkingText": [
+        "writing system"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "languages",
+        "href": "https://drafts.csswg.org/css-text-3/#languages",
+        "title": "Languages and Typesetting",
+        "number": "1.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "character",
+      "href": "https://drafts.csswg.org/css-text-3/#character",
+      "linkingText": [
+        "character"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "characters",
+        "href": "https://drafts.csswg.org/css-text-3/#characters",
+        "title": "Characters and Letters",
+        "number": "1.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "typographic-character-unit",
+      "href": "https://drafts.csswg.org/css-text-3/#typographic-character-unit",
+      "linkingText": [
+        "typographic character unit",
+        "typographic character"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "characters",
+        "href": "https://drafts.csswg.org/css-text-3/#characters",
+        "title": "Characters and Letters",
+        "number": "1.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "grapheme-cluster",
+      "href": "https://drafts.csswg.org/css-text-3/#grapheme-cluster",
+      "linkingText": [
+        "grapheme cluster"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "characters",
+        "href": "https://drafts.csswg.org/css-text-3/#characters",
+        "title": "Characters and Letters",
+        "number": "1.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "typographic-letter-unit",
+      "href": "https://drafts.csswg.org/css-text-3/#typographic-letter-unit",
+      "linkingText": [
+        "typographic letter unit"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "characters",
+        "href": "https://drafts.csswg.org/css-text-3/#characters",
+        "title": "Characters and Letters",
+        "number": "1.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "letter",
+      "href": "https://drafts.csswg.org/css-text-3/#letter",
+      "linkingText": [
+        "letter"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "characters",
+        "href": "https://drafts.csswg.org/css-text-3/#characters",
+        "title": "Characters and Letters",
+        "number": "1.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "propdef-text-transform",
+      "href": "https://drafts.csswg.org/css-text-3/#propdef-text-transform",
+      "linkingText": [
+        "text-transform"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "text-transform-property",
+        "href": "https://drafts.csswg.org/css-text-3/#text-transform-property",
+        "title": "Case Transforms: the text-transform property",
+        "number": "2.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "valdef-text-transform-none",
+      "href": "https://drafts.csswg.org/css-text-3/#valdef-text-transform-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-transform"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "text-transform-property",
+        "href": "https://drafts.csswg.org/css-text-3/#text-transform-property",
+        "title": "Case Transforms: the text-transform property",
+        "number": "2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-text-transform-capitalize",
+      "href": "https://drafts.csswg.org/css-text-3/#valdef-text-transform-capitalize",
+      "linkingText": [
+        "capitalize"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-transform"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "text-transform-property",
+        "href": "https://drafts.csswg.org/css-text-3/#text-transform-property",
+        "title": "Case Transforms: the text-transform property",
+        "number": "2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-text-transform-uppercase",
+      "href": "https://drafts.csswg.org/css-text-3/#valdef-text-transform-uppercase",
+      "linkingText": [
+        "uppercase"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-transform"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "text-transform-property",
+        "href": "https://drafts.csswg.org/css-text-3/#text-transform-property",
+        "title": "Case Transforms: the text-transform property",
+        "number": "2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-text-transform-lowercase",
+      "href": "https://drafts.csswg.org/css-text-3/#valdef-text-transform-lowercase",
+      "linkingText": [
+        "lowercase"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-transform"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "text-transform-property",
+        "href": "https://drafts.csswg.org/css-text-3/#text-transform-property",
+        "title": "Case Transforms: the text-transform property",
+        "number": "2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-text-transform-full-width",
+      "href": "https://drafts.csswg.org/css-text-3/#valdef-text-transform-full-width",
+      "linkingText": [
+        "full-width"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-transform"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "text-transform-property",
+        "href": "https://drafts.csswg.org/css-text-3/#text-transform-property",
+        "title": "Case Transforms: the text-transform property",
+        "number": "2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-text-transform-full-size-kana",
+      "href": "https://drafts.csswg.org/css-text-3/#valdef-text-transform-full-size-kana",
+      "linkingText": [
+        "full-size-kana"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-transform"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "text-transform-property",
+        "href": "https://drafts.csswg.org/css-text-3/#text-transform-property",
+        "title": "Case Transforms: the text-transform property",
+        "number": "2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "full-width",
+      "href": "https://drafts.csswg.org/css-text-3/#full-width",
+      "linkingText": [
+        "full-width"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "text-transform-mapping",
+        "href": "https://drafts.csswg.org/css-text-3/#text-transform-mapping",
+        "title": "Mapping Rules",
+        "number": "2.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "half-width",
+      "href": "https://drafts.csswg.org/css-text-3/#half-width",
+      "linkingText": [
+        "half-width"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "text-transform-mapping",
+        "href": "https://drafts.csswg.org/css-text-3/#text-transform-mapping",
+        "title": "Mapping Rules",
+        "number": "2.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "propdef-white-space",
+      "href": "https://drafts.csswg.org/css-text-3/#propdef-white-space",
+      "linkingText": [
+        "white-space"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "white-space-property",
+        "href": "https://drafts.csswg.org/css-text-3/#white-space-property",
+        "title": "White Space and Wrapping: the white-space property",
+        "number": "3"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "valdef-white-space-normal",
+      "href": "https://drafts.csswg.org/css-text-3/#valdef-white-space-normal",
+      "linkingText": [
+        "normal"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "white-space"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "white-space-property",
+        "href": "https://drafts.csswg.org/css-text-3/#white-space-property",
+        "title": "White Space and Wrapping: the white-space property",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-white-space-pre",
+      "href": "https://drafts.csswg.org/css-text-3/#valdef-white-space-pre",
+      "linkingText": [
+        "pre"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "white-space"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "white-space-property",
+        "href": "https://drafts.csswg.org/css-text-3/#white-space-property",
+        "title": "White Space and Wrapping: the white-space property",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-white-space-nowrap",
+      "href": "https://drafts.csswg.org/css-text-3/#valdef-white-space-nowrap",
+      "linkingText": [
+        "nowrap"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "white-space"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "white-space-property",
+        "href": "https://drafts.csswg.org/css-text-3/#white-space-property",
+        "title": "White Space and Wrapping: the white-space property",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-white-space-pre-wrap",
+      "href": "https://drafts.csswg.org/css-text-3/#valdef-white-space-pre-wrap",
+      "linkingText": [
+        "pre-wrap"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "white-space"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "white-space-property",
+        "href": "https://drafts.csswg.org/css-text-3/#white-space-property",
+        "title": "White Space and Wrapping: the white-space property",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-white-space-break-spaces",
+      "href": "https://drafts.csswg.org/css-text-3/#valdef-white-space-break-spaces",
+      "linkingText": [
+        "break-spaces"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "white-space"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "white-space-property",
+        "href": "https://drafts.csswg.org/css-text-3/#white-space-property",
+        "title": "White Space and Wrapping: the white-space property",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-white-space-pre-line",
+      "href": "https://drafts.csswg.org/css-text-3/#valdef-white-space-pre-line",
+      "linkingText": [
+        "pre-line"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "white-space"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "white-space-property",
+        "href": "https://drafts.csswg.org/css-text-3/#white-space-property",
+        "title": "White Space and Wrapping: the white-space property",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "preserved-white-space",
+      "href": "https://drafts.csswg.org/css-text-3/#preserved-white-space",
+      "linkingText": [
+        "preserved white space"
+      ],
+      "localLinkingText": [
+        "preserved"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "white-space-property",
+        "href": "https://drafts.csswg.org/css-text-3/#white-space-property",
+        "title": "White Space and Wrapping: the white-space property",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "segment-break",
+      "href": "https://drafts.csswg.org/css-text-3/#segment-break",
+      "linkingText": [
+        "segment break"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "white-space-processing",
+        "href": "https://drafts.csswg.org/css-text-3/#white-space-processing",
+        "title": "White Space Processing & Control Characters",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "white-space",
+      "href": "https://drafts.csswg.org/css-text-3/#white-space",
+      "linkingText": [
+        "white space",
+        "white space characters",
+        "document white space",
+        "document white space characters"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "white-space-rules",
+        "href": "https://drafts.csswg.org/css-text-3/#white-space-rules",
+        "title": "The White Space Processing Rules",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "spaces",
+      "href": "https://drafts.csswg.org/css-text-3/#spaces",
+      "linkingText": [
+        "spaces"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "white-space-rules",
+        "href": "https://drafts.csswg.org/css-text-3/#white-space-rules",
+        "title": "The White Space Processing Rules",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "tabs",
+      "href": "https://drafts.csswg.org/css-text-3/#tabs",
+      "linkingText": [
+        "tabs"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "white-space-rules",
+        "href": "https://drafts.csswg.org/css-text-3/#white-space-rules",
+        "title": "The White Space Processing Rules",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "other-space-separators",
+      "href": "https://drafts.csswg.org/css-text-3/#other-space-separators",
+      "linkingText": [
+        "other space separators"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "white-space-rules",
+        "href": "https://drafts.csswg.org/css-text-3/#white-space-rules",
+        "title": "The White Space Processing Rules",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "bidi-formatting-characters",
+      "href": "https://drafts.csswg.org/css-text-3/#bidi-formatting-characters",
+      "linkingText": [
+        "bidi formatting characters"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "white-space-phase-1",
+        "href": "https://drafts.csswg.org/css-text-3/#white-space-phase-1",
+        "title": "Phase I: Collapsing and Transformation",
+        "number": "4.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "collapsible-white-space",
+      "href": "https://drafts.csswg.org/css-text-3/#collapsible-white-space",
+      "linkingText": [
+        "collapsible white space"
+      ],
+      "localLinkingText": [
+        "collapsible"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "white-space-phase-1",
+        "href": "https://drafts.csswg.org/css-text-3/#white-space-phase-1",
+        "title": "Phase I: Collapsing and Transformation",
+        "number": "4.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "tab-stop",
+      "href": "https://drafts.csswg.org/css-text-3/#tab-stop",
+      "linkingText": [
+        "tab stop"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "white-space-phase-2",
+        "href": "https://drafts.csswg.org/css-text-3/#white-space-phase-2",
+        "title": "Phase II: Trimming and Positioning",
+        "number": "4.1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "propdef-tab-size",
+      "href": "https://drafts.csswg.org/css-text-3/#propdef-tab-size",
+      "linkingText": [
+        "tab-size"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "tab-size-property",
+        "href": "https://drafts.csswg.org/css-text-3/#tab-size-property",
+        "title": "Tab Character Size: the tab-size property",
+        "number": "4.2"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "tab-size-dfn",
+      "href": "https://drafts.csswg.org/css-text-3/#tab-size-dfn",
+      "linkingText": [
+        "tab size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "tab-size-property",
+        "href": "https://drafts.csswg.org/css-text-3/#tab-size-property",
+        "title": "Tab Character Size: the tab-size property",
+        "number": "4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "line-break",
+      "href": "https://drafts.csswg.org/css-text-3/#line-break",
+      "linkingText": [
+        "line break"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "line-breaking",
+        "href": "https://drafts.csswg.org/css-text-3/#line-breaking",
+        "title": "Line Breaking and Word Boundaries",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "forced-line-break",
+      "href": "https://drafts.csswg.org/css-text-3/#forced-line-break",
+      "linkingText": [
+        "forced line break"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "line-breaking",
+        "href": "https://drafts.csswg.org/css-text-3/#line-breaking",
+        "title": "Line Breaking and Word Boundaries",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "wrapping",
+      "href": "https://drafts.csswg.org/css-text-3/#wrapping",
+      "linkingText": [
+        "wrapping",
+        "wrap"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "line-breaking",
+        "href": "https://drafts.csswg.org/css-text-3/#line-breaking",
+        "title": "Line Breaking and Word Boundaries",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "soft-wrap-break",
+      "href": "https://drafts.csswg.org/css-text-3/#soft-wrap-break",
+      "linkingText": [
+        "soft wrap break"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "line-breaking",
+        "href": "https://drafts.csswg.org/css-text-3/#line-breaking",
+        "title": "Line Breaking and Word Boundaries",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "line-breaking-process",
+      "href": "https://drafts.csswg.org/css-text-3/#line-breaking-process",
+      "linkingText": [
+        "line breaking process",
+        "line breaking"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "line-breaking",
+        "href": "https://drafts.csswg.org/css-text-3/#line-breaking",
+        "title": "Line Breaking and Word Boundaries",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "soft-wrap-opportunity",
+      "href": "https://drafts.csswg.org/css-text-3/#soft-wrap-opportunity",
+      "linkingText": [
+        "soft wrap opportunity"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "line-breaking",
+        "href": "https://drafts.csswg.org/css-text-3/#line-breaking",
+        "title": "Line Breaking and Word Boundaries",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "propdef-word-break",
+      "href": "https://drafts.csswg.org/css-text-3/#propdef-word-break",
+      "linkingText": [
+        "word-break"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "word-break-property",
+        "href": "https://drafts.csswg.org/css-text-3/#word-break-property",
+        "title": "Breaking Rules for Letters: the word-break property",
+        "number": "5.2"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "valdef-word-break-normal",
+      "href": "https://drafts.csswg.org/css-text-3/#valdef-word-break-normal",
+      "linkingText": [
+        "normal"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "word-break"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "word-break-property",
+        "href": "https://drafts.csswg.org/css-text-3/#word-break-property",
+        "title": "Breaking Rules for Letters: the word-break property",
+        "number": "5.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-word-break-break-all",
+      "href": "https://drafts.csswg.org/css-text-3/#valdef-word-break-break-all",
+      "linkingText": [
+        "break-all"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "word-break"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "word-break-property",
+        "href": "https://drafts.csswg.org/css-text-3/#word-break-property",
+        "title": "Breaking Rules for Letters: the word-break property",
+        "number": "5.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-word-break-keep-all",
+      "href": "https://drafts.csswg.org/css-text-3/#valdef-word-break-keep-all",
+      "linkingText": [
+        "keep-all"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "word-break"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "word-break-property",
+        "href": "https://drafts.csswg.org/css-text-3/#word-break-property",
+        "title": "Breaking Rules for Letters: the word-break property",
+        "number": "5.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-word-break-break-word",
+      "href": "https://drafts.csswg.org/css-text-3/#valdef-word-break-break-word",
+      "linkingText": [
+        "break-word"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "word-break"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "word-break-property",
+        "href": "https://drafts.csswg.org/css-text-3/#word-break-property",
+        "title": "Breaking Rules for Letters: the word-break property",
+        "number": "5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "propdef-line-break",
+      "href": "https://drafts.csswg.org/css-text-3/#propdef-line-break",
+      "linkingText": [
+        "line-break"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "line-break-property",
+        "href": "https://drafts.csswg.org/css-text-3/#line-break-property",
+        "title": "Line Breaking Strictness: the line-break property",
+        "number": "5.3"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "valdef-line-break-auto",
+      "href": "https://drafts.csswg.org/css-text-3/#valdef-line-break-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "line-break"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "line-break-property",
+        "href": "https://drafts.csswg.org/css-text-3/#line-break-property",
+        "title": "Line Breaking Strictness: the line-break property",
+        "number": "5.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-line-break-loose",
+      "href": "https://drafts.csswg.org/css-text-3/#valdef-line-break-loose",
+      "linkingText": [
+        "loose"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "line-break"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "line-break-property",
+        "href": "https://drafts.csswg.org/css-text-3/#line-break-property",
+        "title": "Line Breaking Strictness: the line-break property",
+        "number": "5.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-line-break-normal",
+      "href": "https://drafts.csswg.org/css-text-3/#valdef-line-break-normal",
+      "linkingText": [
+        "normal"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "line-break"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "line-break-property",
+        "href": "https://drafts.csswg.org/css-text-3/#line-break-property",
+        "title": "Line Breaking Strictness: the line-break property",
+        "number": "5.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-line-break-strict",
+      "href": "https://drafts.csswg.org/css-text-3/#valdef-line-break-strict",
+      "linkingText": [
+        "strict"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "line-break"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "line-break-property",
+        "href": "https://drafts.csswg.org/css-text-3/#line-break-property",
+        "title": "Line Breaking Strictness: the line-break property",
+        "number": "5.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-line-break-anywhere",
+      "href": "https://drafts.csswg.org/css-text-3/#valdef-line-break-anywhere",
+      "linkingText": [
+        "anywhere"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "line-break"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "line-break-property",
+        "href": "https://drafts.csswg.org/css-text-3/#line-break-property",
+        "title": "Line Breaking Strictness: the line-break property",
+        "number": "5.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "hyphenate",
+      "href": "https://drafts.csswg.org/css-text-3/#hyphenate",
+      "linkingText": [
+        "hyphenation",
+        "hyphenate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "hyphenation",
+        "href": "https://drafts.csswg.org/css-text-3/#hyphenation",
+        "title": "Hyphenation: the hyphens property",
+        "number": "5.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "hyphenation-opportunity",
+      "href": "https://drafts.csswg.org/css-text-3/#hyphenation-opportunity",
+      "linkingText": [
+        "hyphenation opportunity"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "hyphenation",
+        "href": "https://drafts.csswg.org/css-text-3/#hyphenation",
+        "title": "Hyphenation: the hyphens property",
+        "number": "5.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "propdef-hyphens",
+      "href": "https://drafts.csswg.org/css-text-3/#propdef-hyphens",
+      "linkingText": [
+        "hyphens"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "hyphenation",
+        "href": "https://drafts.csswg.org/css-text-3/#hyphenation",
+        "title": "Hyphenation: the hyphens property",
+        "number": "5.4"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "valdef-hyphens-none",
+      "href": "https://drafts.csswg.org/css-text-3/#valdef-hyphens-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "hyphens"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "hyphenation",
+        "href": "https://drafts.csswg.org/css-text-3/#hyphenation",
+        "title": "Hyphenation: the hyphens property",
+        "number": "5.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-hyphens-manual",
+      "href": "https://drafts.csswg.org/css-text-3/#valdef-hyphens-manual",
+      "linkingText": [
+        "manual"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "hyphens"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "hyphenation",
+        "href": "https://drafts.csswg.org/css-text-3/#hyphenation",
+        "title": "Hyphenation: the hyphens property",
+        "number": "5.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-hyphens-auto",
+      "href": "https://drafts.csswg.org/css-text-3/#valdef-hyphens-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "hyphens"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "hyphenation",
+        "href": "https://drafts.csswg.org/css-text-3/#hyphenation",
+        "title": "Hyphenation: the hyphens property",
+        "number": "5.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "propdef-overflow-wrap",
+      "href": "https://drafts.csswg.org/css-text-3/#propdef-overflow-wrap",
+      "linkingText": [
+        "overflow-wrap"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "overflow-wrap-property",
+        "href": "https://drafts.csswg.org/css-text-3/#overflow-wrap-property",
+        "title": "Overflow Wrapping: the overflow-wrap/word-wrap property",
+        "number": "5.5"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-word-wrap",
+      "href": "https://drafts.csswg.org/css-text-3/#propdef-word-wrap",
+      "linkingText": [
+        "word-wrap"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "overflow-wrap-property",
+        "href": "https://drafts.csswg.org/css-text-3/#overflow-wrap-property",
+        "title": "Overflow Wrapping: the overflow-wrap/word-wrap property",
+        "number": "5.5"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "valdef-overflow-wrap-normal",
+      "href": "https://drafts.csswg.org/css-text-3/#valdef-overflow-wrap-normal",
+      "linkingText": [
+        "normal"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "overflow-wrap"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "overflow-wrap-property",
+        "href": "https://drafts.csswg.org/css-text-3/#overflow-wrap-property",
+        "title": "Overflow Wrapping: the overflow-wrap/word-wrap property",
+        "number": "5.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-overflow-wrap-anywhere",
+      "href": "https://drafts.csswg.org/css-text-3/#valdef-overflow-wrap-anywhere",
+      "linkingText": [
+        "anywhere"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "overflow-wrap"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "overflow-wrap-property",
+        "href": "https://drafts.csswg.org/css-text-3/#overflow-wrap-property",
+        "title": "Overflow Wrapping: the overflow-wrap/word-wrap property",
+        "number": "5.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-overflow-wrap-break-word",
+      "href": "https://drafts.csswg.org/css-text-3/#valdef-overflow-wrap-break-word",
+      "linkingText": [
+        "break-word"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "overflow-wrap"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "overflow-wrap-property",
+        "href": "https://drafts.csswg.org/css-text-3/#overflow-wrap-property",
+        "title": "Overflow Wrapping: the overflow-wrap/word-wrap property",
+        "number": "5.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "propdef-text-align",
+      "href": "https://drafts.csswg.org/css-text-3/#propdef-text-align",
+      "linkingText": [
+        "text-align"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "text-align-property",
+        "href": "https://drafts.csswg.org/css-text-3/#text-align-property",
+        "title": "Text Alignment: the text-align shorthand",
+        "number": "6.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "valdef-text-align-start",
+      "href": "https://drafts.csswg.org/css-text-3/#valdef-text-align-start",
+      "linkingText": [
+        "start"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-align"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "text-align-property",
+        "href": "https://drafts.csswg.org/css-text-3/#text-align-property",
+        "title": "Text Alignment: the text-align shorthand",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-text-align-end",
+      "href": "https://drafts.csswg.org/css-text-3/#valdef-text-align-end",
+      "linkingText": [
+        "end"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-align"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "text-align-property",
+        "href": "https://drafts.csswg.org/css-text-3/#text-align-property",
+        "title": "Text Alignment: the text-align shorthand",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-text-align-left",
+      "href": "https://drafts.csswg.org/css-text-3/#valdef-text-align-left",
+      "linkingText": [
+        "left"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-align"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "text-align-property",
+        "href": "https://drafts.csswg.org/css-text-3/#text-align-property",
+        "title": "Text Alignment: the text-align shorthand",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-text-align-right",
+      "href": "https://drafts.csswg.org/css-text-3/#valdef-text-align-right",
+      "linkingText": [
+        "right"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-align"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "text-align-property",
+        "href": "https://drafts.csswg.org/css-text-3/#text-align-property",
+        "title": "Text Alignment: the text-align shorthand",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-text-align-center",
+      "href": "https://drafts.csswg.org/css-text-3/#valdef-text-align-center",
+      "linkingText": [
+        "center"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-align"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "text-align-property",
+        "href": "https://drafts.csswg.org/css-text-3/#text-align-property",
+        "title": "Text Alignment: the text-align shorthand",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-text-align-justify",
+      "href": "https://drafts.csswg.org/css-text-3/#valdef-text-align-justify",
+      "linkingText": [
+        "justify"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-align"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "text-align-property",
+        "href": "https://drafts.csswg.org/css-text-3/#text-align-property",
+        "title": "Text Alignment: the text-align shorthand",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-text-align-justify-all",
+      "href": "https://drafts.csswg.org/css-text-3/#valdef-text-align-justify-all",
+      "linkingText": [
+        "justify-all"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-align"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "text-align-property",
+        "href": "https://drafts.csswg.org/css-text-3/#text-align-property",
+        "title": "Text Alignment: the text-align shorthand",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-text-align-match-parent",
+      "href": "https://drafts.csswg.org/css-text-3/#valdef-text-align-match-parent",
+      "linkingText": [
+        "match-parent"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-align"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "text-align-property",
+        "href": "https://drafts.csswg.org/css-text-3/#text-align-property",
+        "title": "Text Alignment: the text-align shorthand",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "propdef-text-align-all",
+      "href": "https://drafts.csswg.org/css-text-3/#propdef-text-align-all",
+      "linkingText": [
+        "text-align-all"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "text-align-all-property",
+        "href": "https://drafts.csswg.org/css-text-3/#text-align-all-property",
+        "title": "Default Text Alignment: the text-align-all property",
+        "number": "6.2"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-text-align-last",
+      "href": "https://drafts.csswg.org/css-text-3/#propdef-text-align-last",
+      "linkingText": [
+        "text-align-last"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "text-align-last-property",
+        "href": "https://drafts.csswg.org/css-text-3/#text-align-last-property",
+        "title": "Last Line Alignment: the text-align-last property",
+        "number": "6.3"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "valdef-text-align-last-auto",
+      "href": "https://drafts.csswg.org/css-text-3/#valdef-text-align-last-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-align-last"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "text-align-last-property",
+        "href": "https://drafts.csswg.org/css-text-3/#text-align-last-property",
+        "title": "Last Line Alignment: the text-align-last property",
+        "number": "6.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "propdef-text-justify",
+      "href": "https://drafts.csswg.org/css-text-3/#propdef-text-justify",
+      "linkingText": [
+        "text-justify"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "text-justify-property",
+        "href": "https://drafts.csswg.org/css-text-3/#text-justify-property",
+        "title": "Justification Method: the text-justify property",
+        "number": "6.4"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "valdef-text-justify-auto",
+      "href": "https://drafts.csswg.org/css-text-3/#valdef-text-justify-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-justify"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "text-justify-property",
+        "href": "https://drafts.csswg.org/css-text-3/#text-justify-property",
+        "title": "Justification Method: the text-justify property",
+        "number": "6.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-text-justify-none",
+      "href": "https://drafts.csswg.org/css-text-3/#valdef-text-justify-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-justify"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "text-justify-property",
+        "href": "https://drafts.csswg.org/css-text-3/#text-justify-property",
+        "title": "Justification Method: the text-justify property",
+        "number": "6.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-text-justify-inter-word",
+      "href": "https://drafts.csswg.org/css-text-3/#valdef-text-justify-inter-word",
+      "linkingText": [
+        "inter-word"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-justify"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "text-justify-property",
+        "href": "https://drafts.csswg.org/css-text-3/#text-justify-property",
+        "title": "Justification Method: the text-justify property",
+        "number": "6.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-text-justify-inter-character",
+      "href": "https://drafts.csswg.org/css-text-3/#valdef-text-justify-inter-character",
+      "linkingText": [
+        "inter-character"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-justify"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "text-justify-property",
+        "href": "https://drafts.csswg.org/css-text-3/#text-justify-property",
+        "title": "Justification Method: the text-justify property",
+        "number": "6.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-text-justify-distribute",
+      "href": "https://drafts.csswg.org/css-text-3/#valdef-text-justify-distribute",
+      "linkingText": [
+        "distribute"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-justify"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "text-justify-property",
+        "href": "https://drafts.csswg.org/css-text-3/#text-justify-property",
+        "title": "Justification Method: the text-justify property",
+        "number": "6.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "justification-opportunity",
+      "href": "https://drafts.csswg.org/css-text-3/#justification-opportunity",
+      "linkingText": [
+        "justification opportunity"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "expanding-text",
+        "href": "https://drafts.csswg.org/css-text-3/#expanding-text",
+        "title": "Expanding and Compressing Text",
+        "number": "6.4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "propdef-word-spacing",
+      "href": "https://drafts.csswg.org/css-text-3/#propdef-word-spacing",
+      "linkingText": [
+        "word-spacing"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "word-spacing-property",
+        "href": "https://drafts.csswg.org/css-text-3/#word-spacing-property",
+        "title": "Word Spacing: the word-spacing property",
+        "number": "7.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "valdef-word-spacing-normal",
+      "href": "https://drafts.csswg.org/css-text-3/#valdef-word-spacing-normal",
+      "linkingText": [
+        "normal"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "word-spacing"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "word-spacing-property",
+        "href": "https://drafts.csswg.org/css-text-3/#word-spacing-property",
+        "title": "Word Spacing: the word-spacing property",
+        "number": "7.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-word-spacing-length",
+      "href": "https://drafts.csswg.org/css-text-3/#valdef-word-spacing-length",
+      "linkingText": [
+        "<length>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "word-spacing"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "word-spacing-property",
+        "href": "https://drafts.csswg.org/css-text-3/#word-spacing-property",
+        "title": "Word Spacing: the word-spacing property",
+        "number": "7.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "word-separator",
+      "href": "https://drafts.csswg.org/css-text-3/#word-separator",
+      "linkingText": [
+        "word-separator character",
+        "word separator"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "word-spacing-property",
+        "href": "https://drafts.csswg.org/css-text-3/#word-spacing-property",
+        "title": "Word Spacing: the word-spacing property",
+        "number": "7.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "propdef-letter-spacing",
+      "href": "https://drafts.csswg.org/css-text-3/#propdef-letter-spacing",
+      "linkingText": [
+        "letter-spacing"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "letter-spacing-property",
+        "href": "https://drafts.csswg.org/css-text-3/#letter-spacing-property",
+        "title": "Tracking: the letter-spacing property",
+        "number": "7.2"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "tracking",
+      "href": "https://drafts.csswg.org/css-text-3/#tracking",
+      "linkingText": [
+        "tracking"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "letter-spacing-property",
+        "href": "https://drafts.csswg.org/css-text-3/#letter-spacing-property",
+        "title": "Tracking: the letter-spacing property",
+        "number": "7.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valdef-letter-spacing-normal",
+      "href": "https://drafts.csswg.org/css-text-3/#valdef-letter-spacing-normal",
+      "linkingText": [
+        "normal"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "letter-spacing"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "letter-spacing-property",
+        "href": "https://drafts.csswg.org/css-text-3/#letter-spacing-property",
+        "title": "Tracking: the letter-spacing property",
+        "number": "7.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-letter-spacing-length",
+      "href": "https://drafts.csswg.org/css-text-3/#valdef-letter-spacing-length",
+      "linkingText": [
+        "<length>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "letter-spacing"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "letter-spacing-property",
+        "href": "https://drafts.csswg.org/css-text-3/#letter-spacing-property",
+        "title": "Tracking: the letter-spacing property",
+        "number": "7.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "propdef-text-indent",
+      "href": "https://drafts.csswg.org/css-text-3/#propdef-text-indent",
+      "linkingText": [
+        "text-indent"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "text-indent-property",
+        "href": "https://drafts.csswg.org/css-text-3/#text-indent-property",
+        "title": "First Line Indentation: the text-indent property",
+        "number": "8.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "valdef-text-indent-length",
+      "href": "https://drafts.csswg.org/css-text-3/#valdef-text-indent-length",
+      "linkingText": [
+        "<length>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-indent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "text-indent-property",
+        "href": "https://drafts.csswg.org/css-text-3/#text-indent-property",
+        "title": "First Line Indentation: the text-indent property",
+        "number": "8.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-text-indent-percentage",
+      "href": "https://drafts.csswg.org/css-text-3/#valdef-text-indent-percentage",
+      "linkingText": [
+        "<percentage>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-indent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "text-indent-property",
+        "href": "https://drafts.csswg.org/css-text-3/#text-indent-property",
+        "title": "First Line Indentation: the text-indent property",
+        "number": "8.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-text-indent-each-line",
+      "href": "https://drafts.csswg.org/css-text-3/#valdef-text-indent-each-line",
+      "linkingText": [
+        "each-line"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-indent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "text-indent-property",
+        "href": "https://drafts.csswg.org/css-text-3/#text-indent-property",
+        "title": "First Line Indentation: the text-indent property",
+        "number": "8.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-text-indent-hanging",
+      "href": "https://drafts.csswg.org/css-text-3/#valdef-text-indent-hanging",
+      "linkingText": [
+        "hanging"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-indent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "text-indent-property",
+        "href": "https://drafts.csswg.org/css-text-3/#text-indent-property",
+        "title": "First Line Indentation: the text-indent property",
+        "number": "8.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "hang",
+      "href": "https://drafts.csswg.org/css-text-3/#hang",
+      "linkingText": [
+        "hang"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "hanging",
+        "href": "https://drafts.csswg.org/css-text-3/#hanging",
+        "title": "Hanging Glyphs",
+        "number": "8.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "hanging-glyph",
+      "href": "https://drafts.csswg.org/css-text-3/#hanging-glyph",
+      "linkingText": [
+        "hanging glyph"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "hanging",
+        "href": "https://drafts.csswg.org/css-text-3/#hanging",
+        "title": "Hanging Glyphs",
+        "number": "8.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "conditionally-hang",
+      "href": "https://drafts.csswg.org/css-text-3/#conditionally-hang",
+      "linkingText": [
+        "conditionally hang"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "hanging",
+        "href": "https://drafts.csswg.org/css-text-3/#hanging",
+        "title": "Hanging Glyphs",
+        "number": "8.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "propdef-hanging-punctuation",
+      "href": "https://drafts.csswg.org/css-text-3/#propdef-hanging-punctuation",
+      "linkingText": [
+        "hanging-punctuation"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "hanging-punctuation-property",
+        "href": "https://drafts.csswg.org/css-text-3/#hanging-punctuation-property",
+        "title": "Hanging Punctuation: the hanging-punctuation property",
+        "number": "8.2.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "valdef-hanging-punctuation-none",
+      "href": "https://drafts.csswg.org/css-text-3/#valdef-hanging-punctuation-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "hanging-punctuation"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "hanging-punctuation-property",
+        "href": "https://drafts.csswg.org/css-text-3/#hanging-punctuation-property",
+        "title": "Hanging Punctuation: the hanging-punctuation property",
+        "number": "8.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-hanging-punctuation-first",
+      "href": "https://drafts.csswg.org/css-text-3/#valdef-hanging-punctuation-first",
+      "linkingText": [
+        "first"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "hanging-punctuation"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "hanging-punctuation-property",
+        "href": "https://drafts.csswg.org/css-text-3/#hanging-punctuation-property",
+        "title": "Hanging Punctuation: the hanging-punctuation property",
+        "number": "8.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-hanging-punctuation-last",
+      "href": "https://drafts.csswg.org/css-text-3/#valdef-hanging-punctuation-last",
+      "linkingText": [
+        "last"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "hanging-punctuation"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "hanging-punctuation-property",
+        "href": "https://drafts.csswg.org/css-text-3/#hanging-punctuation-property",
+        "title": "Hanging Punctuation: the hanging-punctuation property",
+        "number": "8.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-hanging-punctuation-force-end",
+      "href": "https://drafts.csswg.org/css-text-3/#valdef-hanging-punctuation-force-end",
+      "linkingText": [
+        "force-end"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "hanging-punctuation"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "hanging-punctuation-property",
+        "href": "https://drafts.csswg.org/css-text-3/#hanging-punctuation-property",
+        "title": "Hanging Punctuation: the hanging-punctuation property",
+        "number": "8.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-hanging-punctuation-allow-end",
+      "href": "https://drafts.csswg.org/css-text-3/#valdef-hanging-punctuation-allow-end",
+      "linkingText": [
+        "allow-end"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "hanging-punctuation"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "hanging-punctuation-property",
+        "href": "https://drafts.csswg.org/css-text-3/#hanging-punctuation-property",
+        "title": "Hanging Punctuation: the hanging-punctuation property",
+        "number": "8.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "stop-or-comma",
+      "href": "https://drafts.csswg.org/css-text-3/#stop-or-comma",
+      "linkingText": [
+        "stop or comma"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "hanging-punctuation-property",
+        "href": "https://drafts.csswg.org/css-text-3/#hanging-punctuation-property",
+        "title": "Hanging Punctuation: the hanging-punctuation property",
+        "number": "8.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "block-scripts",
+      "href": "https://drafts.csswg.org/css-text-3/#block-scripts",
+      "linkingText": [
+        "block scripts"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "script-groups",
+        "href": "https://drafts.csswg.org/css-text-3/#script-groups",
+        "title": "Appendix D: Scripts and Spacing"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "clustered-scripts",
+      "href": "https://drafts.csswg.org/css-text-3/#clustered-scripts",
+      "linkingText": [
+        "clustered scripts"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "script-groups",
+        "href": "https://drafts.csswg.org/css-text-3/#script-groups",
+        "title": "Appendix D: Scripts and Spacing"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "cursive-script",
+      "href": "https://drafts.csswg.org/css-text-3/#cursive-script",
+      "linkingText": [
+        "cursive script"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "script-groups",
+        "href": "https://drafts.csswg.org/css-text-3/#script-groups",
+        "title": "Appendix D: Scripts and Spacing"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "unicode-east-asian-width",
+      "href": "https://drafts.csswg.org/css-text-3/#unicode-east-asian-width",
+      "linkingText": [
+        "Unicode East Asian Width",
+        "East Asian Width property"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "character-properties",
+        "href": "https://drafts.csswg.org/css-text-3/#character-properties",
+        "title": "Appendix E: Characters and Properties"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "unicode-general-category",
+      "href": "https://drafts.csswg.org/css-text-3/#unicode-general-category",
+      "linkingText": [
+        "Unicode General Category",
+        "Unicode category",
+        "General Category"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "character-properties",
+        "href": "https://drafts.csswg.org/css-text-3/#character-properties",
+        "title": "Appendix E: Characters and Properties"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "unicode-script",
+      "href": "https://drafts.csswg.org/css-text-3/#unicode-script",
+      "linkingText": [
+        "Unicode Script",
+        "Script property"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "character-properties",
+        "href": "https://drafts.csswg.org/css-text-3/#character-properties",
+        "title": "Appendix E: Characters and Properties"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "unicode-vertical-orientation",
+      "href": "https://drafts.csswg.org/css-text-3/#unicode-vertical-orientation",
+      "linkingText": [
+        "Unicode Vertical Orientation",
+        "Vertical Orientation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "character-properties",
+        "href": "https://drafts.csswg.org/css-text-3/#character-properties",
+        "title": "Appendix E: Characters and Properties"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "writing-system-chinese",
+      "href": "https://drafts.csswg.org/css-text-3/#writing-system-chinese",
+      "linkingText": [
+        "Chinese"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "writing-system"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "script-tagging",
+        "href": "https://drafts.csswg.org/css-text-3/#script-tagging",
+        "title": "Appendix F: Identifying the Content Writing System"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "writing-system-japanese",
+      "href": "https://drafts.csswg.org/css-text-3/#writing-system-japanese",
+      "linkingText": [
+        "Japanese"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "writing-system"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "script-tagging",
+        "href": "https://drafts.csswg.org/css-text-3/#script-tagging",
+        "title": "Appendix F: Identifying the Content Writing System"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "writing-system-korean",
+      "href": "https://drafts.csswg.org/css-text-3/#writing-system-korean",
+      "linkingText": [
+        "Korean"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "writing-system"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "script-tagging",
+        "href": "https://drafts.csswg.org/css-text-3/#script-tagging",
+        "title": "Appendix F: Identifying the Content Writing System"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "writing-system-known",
+      "href": "https://drafts.csswg.org/css-text-3/#writing-system-known",
+      "linkingText": [
+        "known",
+        "unknown"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "writing-system"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "script-tagging",
+        "href": "https://drafts.csswg.org/css-text-3/#script-tagging",
+        "title": "Appendix F: Identifying the Content Writing System"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "kana-small",
+      "href": "https://drafts.csswg.org/css-text-3/#kana-small",
+      "linkingText": [
+        "small",
+        "small kana"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "kana"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "small-kana",
+        "href": "https://drafts.csswg.org/css-text-3/#small-kana",
+        "title": "Appendix G: Small Kana Mappings"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "kana-full-size",
+      "href": "https://drafts.csswg.org/css-text-3/#kana-full-size",
+      "linkingText": [
+        "full-size",
+        "full-size kana"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "kana"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "small-kana",
+        "href": "https://drafts.csswg.org/css-text-3/#small-kana",
+        "title": "Appendix G: Small Kana Mappings"
+      },
+      "definedIn": "table"
+    }
+  ]
+}

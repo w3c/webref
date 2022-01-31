@@ -1,0 +1,87 @@
+{
+  "name": "TouchList",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Touch Events - Level 2",
+      "url": "https://www.w3.org/TR/touch-events/"
+    },
+    "fragment": "[Exposed=Window]\ninterface TouchList {\n    readonly        attribute unsigned long length;\n    getter Touch? item (unsigned long index);\n};",
+    "href": "https://w3c.github.io/touch-events/#dom-touchlist"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/touch-events/": [
+      {
+        "id": "dom-touchlist",
+        "href": "https://w3c.github.io/touch-events/#dom-touchlist",
+        "linkingText": [
+          "TouchList"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "touchlist-interface",
+          "href": "https://w3c.github.io/touch-events/#touchlist-interface",
+          "title": "TouchList Interface",
+          "number": "4"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-touchlist-length",
+        "href": "https://w3c.github.io/touch-events/#dom-touchlist-length",
+        "linkingText": [
+          "length"
+        ],
+        "localLinkingText": [
+          "TouchList.length"
+        ],
+        "type": "attribute",
+        "for": [
+          "TouchList"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "touchlist-interface",
+          "href": "https://w3c.github.io/touch-events/#touchlist-interface",
+          "title": "TouchList Interface",
+          "number": "4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-touchlist-item",
+        "href": "https://w3c.github.io/touch-events/#dom-touchlist-item",
+        "linkingText": [
+          "item()",
+          "item(index)"
+        ],
+        "localLinkingText": [
+          "TouchList.item",
+          "TouchList.item()",
+          "item"
+        ],
+        "type": "method",
+        "for": [
+          "TouchList"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "touchlist-interface",
+          "href": "https://w3c.github.io/touch-events/#touchlist-interface",
+          "title": "TouchList Interface",
+          "number": "4"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

@@ -1,0 +1,332 @@
+{
+  "name": "NotificationOptions",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Notifications API Standard",
+      "url": "https://notifications.spec.whatwg.org/"
+    },
+    "fragment": "dictionary NotificationOptions {\n  NotificationDirection dir = \"auto\";\n  DOMString lang = \"\";\n  DOMString body = \"\";\n  DOMString tag = \"\";\n  USVString image;\n  USVString icon;\n  USVString badge;\n  VibratePattern vibrate;\n  EpochTimeStamp timestamp;\n  boolean renotify = false;\n  boolean silent = false;\n  boolean requireInteraction = false;\n  any data = null;\n  sequence<NotificationAction> actions = [];\n};",
+    "href": "https://notifications.spec.whatwg.org/#dictdef-notificationoptions"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://notifications.spec.whatwg.org/": [
+      {
+        "id": "dictdef-notificationoptions",
+        "href": "https://notifications.spec.whatwg.org/#dictdef-notificationoptions",
+        "linkingText": [
+          "NotificationOptions"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api",
+          "href": "https://notifications.spec.whatwg.org/#api",
+          "title": "API",
+          "number": "3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-notificationoptions-dir",
+        "href": "https://notifications.spec.whatwg.org/#dom-notificationoptions-dir",
+        "linkingText": [
+          "dir"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "NotificationOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api",
+          "href": "https://notifications.spec.whatwg.org/#api",
+          "title": "API",
+          "number": "3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-notificationoptions-lang",
+        "href": "https://notifications.spec.whatwg.org/#dom-notificationoptions-lang",
+        "linkingText": [
+          "lang"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "NotificationOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api",
+          "href": "https://notifications.spec.whatwg.org/#api",
+          "title": "API",
+          "number": "3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-notificationoptions-body",
+        "href": "https://notifications.spec.whatwg.org/#dom-notificationoptions-body",
+        "linkingText": [
+          "body"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "NotificationOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api",
+          "href": "https://notifications.spec.whatwg.org/#api",
+          "title": "API",
+          "number": "3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-notificationoptions-tag",
+        "href": "https://notifications.spec.whatwg.org/#dom-notificationoptions-tag",
+        "linkingText": [
+          "tag"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "NotificationOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api",
+          "href": "https://notifications.spec.whatwg.org/#api",
+          "title": "API",
+          "number": "3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-notificationoptions-image",
+        "href": "https://notifications.spec.whatwg.org/#dom-notificationoptions-image",
+        "linkingText": [
+          "image"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "NotificationOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api",
+          "href": "https://notifications.spec.whatwg.org/#api",
+          "title": "API",
+          "number": "3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-notificationoptions-icon",
+        "href": "https://notifications.spec.whatwg.org/#dom-notificationoptions-icon",
+        "linkingText": [
+          "icon"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "NotificationOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api",
+          "href": "https://notifications.spec.whatwg.org/#api",
+          "title": "API",
+          "number": "3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-notificationoptions-badge",
+        "href": "https://notifications.spec.whatwg.org/#dom-notificationoptions-badge",
+        "linkingText": [
+          "badge"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "NotificationOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api",
+          "href": "https://notifications.spec.whatwg.org/#api",
+          "title": "API",
+          "number": "3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-notificationoptions-vibrate",
+        "href": "https://notifications.spec.whatwg.org/#dom-notificationoptions-vibrate",
+        "linkingText": [
+          "vibrate"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "NotificationOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api",
+          "href": "https://notifications.spec.whatwg.org/#api",
+          "title": "API",
+          "number": "3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-notificationoptions-timestamp",
+        "href": "https://notifications.spec.whatwg.org/#dom-notificationoptions-timestamp",
+        "linkingText": [
+          "timestamp"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "NotificationOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api",
+          "href": "https://notifications.spec.whatwg.org/#api",
+          "title": "API",
+          "number": "3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-notificationoptions-renotify",
+        "href": "https://notifications.spec.whatwg.org/#dom-notificationoptions-renotify",
+        "linkingText": [
+          "renotify"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "NotificationOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api",
+          "href": "https://notifications.spec.whatwg.org/#api",
+          "title": "API",
+          "number": "3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-notificationoptions-silent",
+        "href": "https://notifications.spec.whatwg.org/#dom-notificationoptions-silent",
+        "linkingText": [
+          "silent"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "NotificationOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api",
+          "href": "https://notifications.spec.whatwg.org/#api",
+          "title": "API",
+          "number": "3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-notificationoptions-requireinteraction",
+        "href": "https://notifications.spec.whatwg.org/#dom-notificationoptions-requireinteraction",
+        "linkingText": [
+          "requireInteraction"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "NotificationOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api",
+          "href": "https://notifications.spec.whatwg.org/#api",
+          "title": "API",
+          "number": "3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-notificationoptions-data",
+        "href": "https://notifications.spec.whatwg.org/#dom-notificationoptions-data",
+        "linkingText": [
+          "data"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "NotificationOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api",
+          "href": "https://notifications.spec.whatwg.org/#api",
+          "title": "API",
+          "number": "3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-notificationoptions-actions",
+        "href": "https://notifications.spec.whatwg.org/#dom-notificationoptions-actions",
+        "linkingText": [
+          "actions"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "NotificationOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api",
+          "href": "https://notifications.spec.whatwg.org/#api",
+          "title": "API",
+          "number": "3"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

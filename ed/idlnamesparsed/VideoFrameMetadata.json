@@ -1,0 +1,248 @@
+{
+  "name": "VideoFrameMetadata",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "HTMLVideoElement.requestVideoFrameCallback()",
+      "url": "https://wicg.github.io/video-rvfc/"
+    },
+    "fragment": "dictionary VideoFrameMetadata {\n  required DOMHighResTimeStamp presentationTime;\n  required DOMHighResTimeStamp expectedDisplayTime;\n\n  required unsigned long width;\n  required unsigned long height;\n  required double mediaTime;\n\n  required unsigned long presentedFrames;\n  double processingDuration;\n\n  DOMHighResTimeStamp captureTime;\n  DOMHighResTimeStamp receiveTime;\n  unsigned long rtpTimestamp;\n};",
+    "href": "https://wicg.github.io/video-rvfc/#dictdef-videoframemetadata"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://wicg.github.io/video-rvfc/": [
+      {
+        "id": "dictdef-videoframemetadata",
+        "href": "https://wicg.github.io/video-rvfc/#dictdef-videoframemetadata",
+        "linkingText": [
+          "VideoFrameMetadata"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "video-frame-metadata",
+          "href": "https://wicg.github.io/video-rvfc/#video-frame-metadata",
+          "title": "VideoFrameMetadata",
+          "number": "2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-videoframemetadata-presentationtime",
+        "href": "https://wicg.github.io/video-rvfc/#dom-videoframemetadata-presentationtime",
+        "linkingText": [
+          "presentationTime"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "VideoFrameMetadata"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "video-frame-metadata-attributes",
+          "href": "https://wicg.github.io/video-rvfc/#video-frame-metadata-attributes",
+          "title": "Attributes",
+          "number": "2.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-videoframemetadata-expecteddisplaytime",
+        "href": "https://wicg.github.io/video-rvfc/#dom-videoframemetadata-expecteddisplaytime",
+        "linkingText": [
+          "expectedDisplayTime"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "VideoFrameMetadata"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "video-frame-metadata-attributes",
+          "href": "https://wicg.github.io/video-rvfc/#video-frame-metadata-attributes",
+          "title": "Attributes",
+          "number": "2.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-videoframemetadata-width",
+        "href": "https://wicg.github.io/video-rvfc/#dom-videoframemetadata-width",
+        "linkingText": [
+          "width"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "VideoFrameMetadata"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "video-frame-metadata-attributes",
+          "href": "https://wicg.github.io/video-rvfc/#video-frame-metadata-attributes",
+          "title": "Attributes",
+          "number": "2.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-videoframemetadata-height",
+        "href": "https://wicg.github.io/video-rvfc/#dom-videoframemetadata-height",
+        "linkingText": [
+          "height"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "VideoFrameMetadata"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "video-frame-metadata-attributes",
+          "href": "https://wicg.github.io/video-rvfc/#video-frame-metadata-attributes",
+          "title": "Attributes",
+          "number": "2.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-videoframemetadata-mediatime",
+        "href": "https://wicg.github.io/video-rvfc/#dom-videoframemetadata-mediatime",
+        "linkingText": [
+          "mediaTime"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "VideoFrameMetadata"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "video-frame-metadata-attributes",
+          "href": "https://wicg.github.io/video-rvfc/#video-frame-metadata-attributes",
+          "title": "Attributes",
+          "number": "2.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-videoframemetadata-presentedframes",
+        "href": "https://wicg.github.io/video-rvfc/#dom-videoframemetadata-presentedframes",
+        "linkingText": [
+          "presentedFrames"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "VideoFrameMetadata"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "video-frame-metadata-attributes",
+          "href": "https://wicg.github.io/video-rvfc/#video-frame-metadata-attributes",
+          "title": "Attributes",
+          "number": "2.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-videoframemetadata-processingduration",
+        "href": "https://wicg.github.io/video-rvfc/#dom-videoframemetadata-processingduration",
+        "linkingText": [
+          "processingDuration"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "VideoFrameMetadata"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "video-frame-metadata-attributes",
+          "href": "https://wicg.github.io/video-rvfc/#video-frame-metadata-attributes",
+          "title": "Attributes",
+          "number": "2.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-videoframemetadata-capturetime",
+        "href": "https://wicg.github.io/video-rvfc/#dom-videoframemetadata-capturetime",
+        "linkingText": [
+          "captureTime"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "VideoFrameMetadata"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "video-frame-metadata-attributes",
+          "href": "https://wicg.github.io/video-rvfc/#video-frame-metadata-attributes",
+          "title": "Attributes",
+          "number": "2.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-videoframemetadata-receivetime",
+        "href": "https://wicg.github.io/video-rvfc/#dom-videoframemetadata-receivetime",
+        "linkingText": [
+          "receiveTime"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "VideoFrameMetadata"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "video-frame-metadata-attributes",
+          "href": "https://wicg.github.io/video-rvfc/#video-frame-metadata-attributes",
+          "title": "Attributes",
+          "number": "2.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-videoframemetadata-rtptimestamp",
+        "href": "https://wicg.github.io/video-rvfc/#dom-videoframemetadata-rtptimestamp",
+        "linkingText": [
+          "rtpTimestamp"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "VideoFrameMetadata"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "video-frame-metadata-attributes",
+          "href": "https://wicg.github.io/video-rvfc/#video-frame-metadata-attributes",
+          "title": "Attributes",
+          "number": "2.2"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

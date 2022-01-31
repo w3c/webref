@@ -1,0 +1,146 @@
+{
+  "name": "Sanitizer",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "HTML Sanitizer API",
+      "url": "https://wicg.github.io/sanitizer-api/"
+    },
+    "fragment": "[\n  Exposed=(Window),\n  SecureContext\n] interface Sanitizer {\n  constructor(optional SanitizerConfig config = {});\n\n  DocumentFragment sanitize((Document or DocumentFragment) input);\n  Element? sanitizeFor(DOMString element, DOMString input);\n\n  SanitizerConfig getConfiguration();\n  static SanitizerConfig getDefaultConfiguration();\n};",
+    "href": "https://wicg.github.io/sanitizer-api/#sanitizer"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://wicg.github.io/sanitizer-api/": [
+      {
+        "id": "sanitizer",
+        "href": "https://wicg.github.io/sanitizer-api/#sanitizer",
+        "linkingText": [
+          "Sanitizer"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "sanitizer-api",
+          "href": "https://wicg.github.io/sanitizer-api/#sanitizer-api",
+          "title": "Sanitizer API",
+          "number": "2.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-sanitizer-sanitizer",
+        "href": "https://wicg.github.io/sanitizer-api/#dom-sanitizer-sanitizer",
+        "linkingText": [
+          "Sanitizer(config)",
+          "constructor(config)",
+          "Sanitizer()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "Sanitizer"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "sanitizer-api",
+          "href": "https://wicg.github.io/sanitizer-api/#sanitizer-api",
+          "title": "Sanitizer API",
+          "number": "2.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-sanitizer-sanitize",
+        "href": "https://wicg.github.io/sanitizer-api/#dom-sanitizer-sanitize",
+        "linkingText": [
+          "sanitize(input)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Sanitizer"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "sanitizer-api",
+          "href": "https://wicg.github.io/sanitizer-api/#sanitizer-api",
+          "title": "Sanitizer API",
+          "number": "2.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-sanitizer-sanitizefor",
+        "href": "https://wicg.github.io/sanitizer-api/#dom-sanitizer-sanitizefor",
+        "linkingText": [
+          "sanitizeFor(element, input)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Sanitizer"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "sanitizer-api",
+          "href": "https://wicg.github.io/sanitizer-api/#sanitizer-api",
+          "title": "Sanitizer API",
+          "number": "2.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-sanitizer-getconfiguration",
+        "href": "https://wicg.github.io/sanitizer-api/#dom-sanitizer-getconfiguration",
+        "linkingText": [
+          "getConfiguration()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Sanitizer"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "sanitizer-api",
+          "href": "https://wicg.github.io/sanitizer-api/#sanitizer-api",
+          "title": "Sanitizer API",
+          "number": "2.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-sanitizer-getdefaultconfiguration",
+        "href": "https://wicg.github.io/sanitizer-api/#dom-sanitizer-getdefaultconfiguration",
+        "linkingText": [
+          "getDefaultConfiguration()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Sanitizer"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "sanitizer-api",
+          "href": "https://wicg.github.io/sanitizer-api/#sanitizer-api",
+          "title": "Sanitizer API",
+          "number": "2.1"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

@@ -1,0 +1,183 @@
+{
+  "name": "TaskController",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Prioritized Task Scheduling",
+      "url": "https://wicg.github.io/scheduling-apis/"
+    },
+    "fragment": "[Exposed=(Window,Worker)]\ninterface TaskController : AbortController {\n  constructor(optional TaskControllerInit init = {});\n\n  undefined setPriority(TaskPriority priority);\n};",
+    "href": "https://wicg.github.io/scheduling-apis/#taskcontroller"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "AbortController",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=*]\ninterface AbortController {\n  constructor();\n\n  [SameObject] readonly attribute AbortSignal signal;\n\n  undefined abort(optional any reason);\n};",
+      "href": "https://dom.spec.whatwg.org/#abortcontroller"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://wicg.github.io/scheduling-apis/": [
+      {
+        "id": "taskcontroller",
+        "href": "https://wicg.github.io/scheduling-apis/#taskcontroller",
+        "linkingText": [
+          "TaskController"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "sec-task-controller",
+          "href": "https://wicg.github.io/scheduling-apis/#sec-task-controller",
+          "title": "The TaskController Interface",
+          "number": "3.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-taskcontroller-taskcontroller",
+        "href": "https://wicg.github.io/scheduling-apis/#dom-taskcontroller-taskcontroller",
+        "linkingText": [
+          "TaskController(init)",
+          "constructor(init)",
+          "TaskController()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "TaskController"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "sec-task-controller",
+          "href": "https://wicg.github.io/scheduling-apis/#sec-task-controller",
+          "title": "The TaskController Interface",
+          "number": "3.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-taskcontroller-setpriority",
+        "href": "https://wicg.github.io/scheduling-apis/#dom-taskcontroller-setpriority",
+        "linkingText": [
+          "setPriority(priority)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "TaskController"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "sec-task-controller",
+          "href": "https://wicg.github.io/scheduling-apis/#sec-task-controller",
+          "title": "The TaskController Interface",
+          "number": "3.2"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "abortcontroller",
+        "href": "https://dom.spec.whatwg.org/#abortcontroller",
+        "linkingText": [
+          "AbortController"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-abortcontroller",
+          "href": "https://dom.spec.whatwg.org/#interface-abortcontroller",
+          "title": "Interface AbortController",
+          "number": "3.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-abortcontroller-abortcontroller",
+        "href": "https://dom.spec.whatwg.org/#dom-abortcontroller-abortcontroller",
+        "linkingText": [
+          "AbortController()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "AbortController"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-abortcontroller",
+          "href": "https://dom.spec.whatwg.org/#interface-abortcontroller",
+          "title": "Interface AbortController",
+          "number": "3.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-abortcontroller-signal",
+        "href": "https://dom.spec.whatwg.org/#dom-abortcontroller-signal",
+        "linkingText": [
+          "signal"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "AbortController"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-abortcontroller",
+          "href": "https://dom.spec.whatwg.org/#interface-abortcontroller",
+          "title": "Interface AbortController",
+          "number": "3.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-abortcontroller-abort",
+        "href": "https://dom.spec.whatwg.org/#dom-abortcontroller-abort",
+        "linkingText": [
+          "abort(reason)",
+          "abort()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "AbortController"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-abortcontroller",
+          "href": "https://dom.spec.whatwg.org/#interface-abortcontroller",
+          "title": "Interface AbortController",
+          "number": "3.1"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

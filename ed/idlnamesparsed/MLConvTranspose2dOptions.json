@@ -1,0 +1,269 @@
+{
+  "name": "MLConvTranspose2dOptions",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Web Neural Network API",
+      "url": "https://www.w3.org/TR/webnn/"
+    },
+    "fragment": "dictionary MLConvTranspose2dOptions {\n  sequence<long> padding;\n  sequence<long> strides;\n  sequence<long> dilations;\n  sequence<long> outputPadding;\n  sequence<long> outputSizes;\n  MLAutoPad autoPad = \"explicit\";\n  long groups = 1;\n  MLInputOperandLayout inputLayout = \"nchw\";\n  MLConvTranspose2dFilterOperandLayout filterLayout = \"iohw\";\n  MLOperand bias;\n  MLOperator activation;\n};",
+    "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlconvtranspose2doptions"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webnn/": [
+      {
+        "id": "dictdef-mlconvtranspose2doptions",
+        "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlconvtranspose2doptions",
+        "linkingText": [
+          "MLConvTranspose2dOptions"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-convtranspose2d",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-convtranspose2d",
+          "title": "convTranspose2d",
+          "number": "7.7.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlconvtranspose2doptions-padding",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlconvtranspose2doptions-padding",
+        "linkingText": [
+          "padding"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MLConvTranspose2dOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-convtranspose2d",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-convtranspose2d",
+          "title": "convTranspose2d",
+          "number": "7.7.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlconvtranspose2doptions-strides",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlconvtranspose2doptions-strides",
+        "linkingText": [
+          "strides"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MLConvTranspose2dOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-convtranspose2d",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-convtranspose2d",
+          "title": "convTranspose2d",
+          "number": "7.7.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlconvtranspose2doptions-dilations",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlconvtranspose2doptions-dilations",
+        "linkingText": [
+          "dilations"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MLConvTranspose2dOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-convtranspose2d",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-convtranspose2d",
+          "title": "convTranspose2d",
+          "number": "7.7.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlconvtranspose2doptions-outputpadding",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlconvtranspose2doptions-outputpadding",
+        "linkingText": [
+          "outputPadding"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MLConvTranspose2dOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-convtranspose2d",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-convtranspose2d",
+          "title": "convTranspose2d",
+          "number": "7.7.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlconvtranspose2doptions-outputsizes",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlconvtranspose2doptions-outputsizes",
+        "linkingText": [
+          "outputSizes"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MLConvTranspose2dOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-convtranspose2d",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-convtranspose2d",
+          "title": "convTranspose2d",
+          "number": "7.7.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlconvtranspose2doptions-autopad",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlconvtranspose2doptions-autopad",
+        "linkingText": [
+          "autoPad"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MLConvTranspose2dOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-convtranspose2d",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-convtranspose2d",
+          "title": "convTranspose2d",
+          "number": "7.7.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlconvtranspose2doptions-groups",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlconvtranspose2doptions-groups",
+        "linkingText": [
+          "groups"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MLConvTranspose2dOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-convtranspose2d",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-convtranspose2d",
+          "title": "convTranspose2d",
+          "number": "7.7.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlconvtranspose2doptions-inputlayout",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlconvtranspose2doptions-inputlayout",
+        "linkingText": [
+          "inputLayout"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MLConvTranspose2dOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-convtranspose2d",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-convtranspose2d",
+          "title": "convTranspose2d",
+          "number": "7.7.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlconvtranspose2doptions-filterlayout",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlconvtranspose2doptions-filterlayout",
+        "linkingText": [
+          "filterLayout"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MLConvTranspose2dOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-convtranspose2d",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-convtranspose2d",
+          "title": "convTranspose2d",
+          "number": "7.7.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlconvtranspose2doptions-bias",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlconvtranspose2doptions-bias",
+        "linkingText": [
+          "bias"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MLConvTranspose2dOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-convtranspose2d",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-convtranspose2d",
+          "title": "convTranspose2d",
+          "number": "7.7.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlconvtranspose2doptions-activation",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlconvtranspose2doptions-activation",
+        "linkingText": [
+          "activation"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MLConvTranspose2dOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-convtranspose2d",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-convtranspose2d",
+          "title": "convTranspose2d",
+          "number": "7.7.5"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

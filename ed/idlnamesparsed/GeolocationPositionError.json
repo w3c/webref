@@ -1,0 +1,146 @@
+{
+  "name": "GeolocationPositionError",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Geolocation API",
+      "url": "https://www.w3.org/TR/geolocation/"
+    },
+    "fragment": "[Exposed=Window]\ninterface GeolocationPositionError {\n  const unsigned short PERMISSION_DENIED = 1;\n  const unsigned short POSITION_UNAVAILABLE = 2;\n  const unsigned short TIMEOUT = 3;\n  readonly attribute unsigned short code;\n  readonly attribute DOMString message;\n};",
+    "href": "https://w3c.github.io/geolocation-api/#dom-geolocationpositionerror"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/geolocation/": [
+      {
+        "id": "dom-geolocationpositionerror",
+        "href": "https://w3c.github.io/geolocation-api/#dom-geolocationpositionerror",
+        "linkingText": [
+          "GeolocationPositionError"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "position_error_interface",
+          "href": "https://w3c.github.io/geolocation-api/#position_error_interface",
+          "title": "10. GeolocationPositionError interface"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-geolocationpositionerror-permission_denied",
+        "href": "https://w3c.github.io/geolocation-api/#dom-geolocationpositionerror-permission_denied",
+        "linkingText": [
+          "PERMISSION_DENIED"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "GeolocationPositionError"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "constants",
+          "href": "https://w3c.github.io/geolocation-api/#constants",
+          "title": "Constants",
+          "number": "10.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-geolocationpositionerror-position_unavailable",
+        "href": "https://w3c.github.io/geolocation-api/#dom-geolocationpositionerror-position_unavailable",
+        "linkingText": [
+          "POSITION_UNAVAILABLE"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "GeolocationPositionError"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "constants",
+          "href": "https://w3c.github.io/geolocation-api/#constants",
+          "title": "Constants",
+          "number": "10.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-geolocationpositionerror-timeout",
+        "href": "https://w3c.github.io/geolocation-api/#dom-geolocationpositionerror-timeout",
+        "linkingText": [
+          "TIMEOUT"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "GeolocationPositionError"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "constants",
+          "href": "https://w3c.github.io/geolocation-api/#constants",
+          "title": "Constants",
+          "number": "10.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-geolocationpositionerror-code",
+        "href": "https://w3c.github.io/geolocation-api/#dom-geolocationpositionerror-code",
+        "linkingText": [
+          "code"
+        ],
+        "localLinkingText": [
+          "GeolocationPositionError.code"
+        ],
+        "type": "attribute",
+        "for": [
+          "GeolocationPositionError"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "code-attribute",
+          "href": "https://w3c.github.io/geolocation-api/#code-attribute",
+          "title": "code attribute",
+          "number": "10.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-geolocationpositionerror-message",
+        "href": "https://w3c.github.io/geolocation-api/#dom-geolocationpositionerror-message",
+        "linkingText": [
+          "message"
+        ],
+        "localLinkingText": [
+          "GeolocationPositionError.message"
+        ],
+        "type": "attribute",
+        "for": [
+          "GeolocationPositionError"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "message-attribute",
+          "href": "https://w3c.github.io/geolocation-api/#message-attribute",
+          "title": "message attribute",
+          "number": "10.3"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

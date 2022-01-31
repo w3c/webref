@@ -1,0 +1,129 @@
+{
+  "name": "CryptoKey",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Web Cryptography API",
+      "url": "https://www.w3.org/TR/WebCryptoAPI/"
+    },
+    "fragment": "[SecureContext,Exposed=(Window,Worker),Serializable]\ninterface CryptoKey {\n  readonly attribute KeyType type;\n  readonly attribute boolean extractable;\n  readonly attribute object algorithm;\n  readonly attribute object usages;\n};",
+    "href": "https://w3c.github.io/webcrypto/#dfn-CryptoKey"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/WebCryptoAPI/": [
+      {
+        "id": "dfn-CryptoKey",
+        "href": "https://w3c.github.io/webcrypto/#dfn-CryptoKey",
+        "linkingText": [
+          "CryptoKey"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "cryptokey-interface",
+          "href": "https://w3c.github.io/webcrypto/#cryptokey-interface",
+          "title": "13. CryptoKey interface"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-cryptokey-type",
+        "href": "https://w3c.github.io/webcrypto/#dom-cryptokey-type",
+        "linkingText": [
+          "type"
+        ],
+        "localLinkingText": [
+          "CryptoKey.type"
+        ],
+        "type": "attribute",
+        "for": [
+          "CryptoKey"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "cryptokey-interface-members",
+          "href": "https://w3c.github.io/webcrypto/#cryptokey-interface-members",
+          "title": "CryptoKey interface members",
+          "number": "13.4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-cryptokey-extractable",
+        "href": "https://w3c.github.io/webcrypto/#dom-cryptokey-extractable",
+        "linkingText": [
+          "extractable"
+        ],
+        "localLinkingText": [
+          "CryptoKey.extractable"
+        ],
+        "type": "attribute",
+        "for": [
+          "CryptoKey"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "cryptokey-interface-members",
+          "href": "https://w3c.github.io/webcrypto/#cryptokey-interface-members",
+          "title": "CryptoKey interface members",
+          "number": "13.4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-cryptokey-algorithm",
+        "href": "https://w3c.github.io/webcrypto/#dom-cryptokey-algorithm",
+        "linkingText": [
+          "algorithm"
+        ],
+        "localLinkingText": [
+          "CryptoKey.algorithm"
+        ],
+        "type": "attribute",
+        "for": [
+          "CryptoKey"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "cryptokey-interface-members",
+          "href": "https://w3c.github.io/webcrypto/#cryptokey-interface-members",
+          "title": "CryptoKey interface members",
+          "number": "13.4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-cryptokey-usages",
+        "href": "https://w3c.github.io/webcrypto/#dom-cryptokey-usages",
+        "linkingText": [
+          "usages"
+        ],
+        "localLinkingText": [
+          "CryptoKey.usages"
+        ],
+        "type": "attribute",
+        "for": [
+          "CryptoKey"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "cryptokey-interface-members",
+          "href": "https://w3c.github.io/webcrypto/#cryptokey-interface-members",
+          "title": "CryptoKey interface members",
+          "number": "13.4"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

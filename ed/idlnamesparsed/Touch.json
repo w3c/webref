@@ -1,0 +1,409 @@
+{
+  "name": "Touch",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Touch Events - Level 2",
+      "url": "https://www.w3.org/TR/touch-events/"
+    },
+    "fragment": "[Exposed=Window]\ninterface Touch {\n    constructor(TouchInit touchInitDict);\n    readonly        attribute long        identifier;\n    readonly        attribute EventTarget target;\n    readonly        attribute double      screenX;\n    readonly        attribute double      screenY;\n    readonly        attribute double      clientX;\n    readonly        attribute double      clientY;\n    readonly        attribute double      pageX;\n    readonly        attribute double      pageY;\n    readonly        attribute float       radiusX;\n    readonly        attribute float       radiusY;\n    readonly        attribute float       rotationAngle;\n    readonly        attribute float       force;\n    readonly        attribute float       altitudeAngle;\n    readonly        attribute float       azimuthAngle;\n    readonly        attribute TouchType   touchType;\n};",
+    "href": "https://w3c.github.io/touch-events/#dom-touch"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/touch-events/": [
+      {
+        "id": "dom-touch",
+        "href": "https://w3c.github.io/touch-events/#dom-touch",
+        "linkingText": [
+          "Touch"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "touch-interface",
+          "href": "https://w3c.github.io/touch-events/#touch-interface",
+          "title": "Touch Interface",
+          "number": "3"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-touch-constructor",
+        "href": "https://w3c.github.io/touch-events/#dom-touch-constructor",
+        "linkingText": [
+          "constructor()",
+          "constructor(touchInitDict)"
+        ],
+        "localLinkingText": [
+          "Touch.constructor",
+          "Touch.constructor()",
+          "constructor"
+        ],
+        "type": "constructor",
+        "for": [
+          "Touch"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "touch-interface",
+          "href": "https://w3c.github.io/touch-events/#touch-interface",
+          "title": "Touch Interface",
+          "number": "3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-touch-identifier",
+        "href": "https://w3c.github.io/touch-events/#dom-touch-identifier",
+        "linkingText": [
+          "identifier"
+        ],
+        "localLinkingText": [
+          "Touch.identifier"
+        ],
+        "type": "attribute",
+        "for": [
+          "Touch"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "touch-interface",
+          "href": "https://w3c.github.io/touch-events/#touch-interface",
+          "title": "Touch Interface",
+          "number": "3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-touch-target",
+        "href": "https://w3c.github.io/touch-events/#dom-touch-target",
+        "linkingText": [
+          "target"
+        ],
+        "localLinkingText": [
+          "Touch.target"
+        ],
+        "type": "attribute",
+        "for": [
+          "Touch"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "touch-interface",
+          "href": "https://w3c.github.io/touch-events/#touch-interface",
+          "title": "Touch Interface",
+          "number": "3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-touch-screenx",
+        "href": "https://w3c.github.io/touch-events/#dom-touch-screenx",
+        "linkingText": [
+          "screenX"
+        ],
+        "localLinkingText": [
+          "Touch.screenX"
+        ],
+        "type": "attribute",
+        "for": [
+          "Touch"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "touch-interface",
+          "href": "https://w3c.github.io/touch-events/#touch-interface",
+          "title": "Touch Interface",
+          "number": "3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-touch-screeny",
+        "href": "https://w3c.github.io/touch-events/#dom-touch-screeny",
+        "linkingText": [
+          "screenY"
+        ],
+        "localLinkingText": [
+          "Touch.screenY"
+        ],
+        "type": "attribute",
+        "for": [
+          "Touch"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "touch-interface",
+          "href": "https://w3c.github.io/touch-events/#touch-interface",
+          "title": "Touch Interface",
+          "number": "3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-touch-clientx",
+        "href": "https://w3c.github.io/touch-events/#dom-touch-clientx",
+        "linkingText": [
+          "clientX"
+        ],
+        "localLinkingText": [
+          "Touch.clientX"
+        ],
+        "type": "attribute",
+        "for": [
+          "Touch"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "touch-interface",
+          "href": "https://w3c.github.io/touch-events/#touch-interface",
+          "title": "Touch Interface",
+          "number": "3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-touch-clienty",
+        "href": "https://w3c.github.io/touch-events/#dom-touch-clienty",
+        "linkingText": [
+          "clientY"
+        ],
+        "localLinkingText": [
+          "Touch.clientY"
+        ],
+        "type": "attribute",
+        "for": [
+          "Touch"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "touch-interface",
+          "href": "https://w3c.github.io/touch-events/#touch-interface",
+          "title": "Touch Interface",
+          "number": "3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-touch-pagex",
+        "href": "https://w3c.github.io/touch-events/#dom-touch-pagex",
+        "linkingText": [
+          "pageX"
+        ],
+        "localLinkingText": [
+          "Touch.pageX"
+        ],
+        "type": "attribute",
+        "for": [
+          "Touch"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "touch-interface",
+          "href": "https://w3c.github.io/touch-events/#touch-interface",
+          "title": "Touch Interface",
+          "number": "3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-touch-pagey",
+        "href": "https://w3c.github.io/touch-events/#dom-touch-pagey",
+        "linkingText": [
+          "pageY"
+        ],
+        "localLinkingText": [
+          "Touch.pageY"
+        ],
+        "type": "attribute",
+        "for": [
+          "Touch"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "touch-interface",
+          "href": "https://w3c.github.io/touch-events/#touch-interface",
+          "title": "Touch Interface",
+          "number": "3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-touch-radiusx",
+        "href": "https://w3c.github.io/touch-events/#dom-touch-radiusx",
+        "linkingText": [
+          "radiusX"
+        ],
+        "localLinkingText": [
+          "Touch.radiusX"
+        ],
+        "type": "attribute",
+        "for": [
+          "Touch"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "touch-interface",
+          "href": "https://w3c.github.io/touch-events/#touch-interface",
+          "title": "Touch Interface",
+          "number": "3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-touch-radiusy",
+        "href": "https://w3c.github.io/touch-events/#dom-touch-radiusy",
+        "linkingText": [
+          "radiusY"
+        ],
+        "localLinkingText": [
+          "Touch.radiusY"
+        ],
+        "type": "attribute",
+        "for": [
+          "Touch"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "touch-interface",
+          "href": "https://w3c.github.io/touch-events/#touch-interface",
+          "title": "Touch Interface",
+          "number": "3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-touch-rotationangle",
+        "href": "https://w3c.github.io/touch-events/#dom-touch-rotationangle",
+        "linkingText": [
+          "rotationAngle"
+        ],
+        "localLinkingText": [
+          "Touch.rotationAngle"
+        ],
+        "type": "attribute",
+        "for": [
+          "Touch"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "touch-interface",
+          "href": "https://w3c.github.io/touch-events/#touch-interface",
+          "title": "Touch Interface",
+          "number": "3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-touch-force",
+        "href": "https://w3c.github.io/touch-events/#dom-touch-force",
+        "linkingText": [
+          "force"
+        ],
+        "localLinkingText": [
+          "Touch.force"
+        ],
+        "type": "attribute",
+        "for": [
+          "Touch"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "touch-interface",
+          "href": "https://w3c.github.io/touch-events/#touch-interface",
+          "title": "Touch Interface",
+          "number": "3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-touch-altitudeangle",
+        "href": "https://w3c.github.io/touch-events/#dom-touch-altitudeangle",
+        "linkingText": [
+          "altitudeAngle"
+        ],
+        "localLinkingText": [
+          "Touch.altitudeAngle"
+        ],
+        "type": "attribute",
+        "for": [
+          "Touch"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "touch-interface",
+          "href": "https://w3c.github.io/touch-events/#touch-interface",
+          "title": "Touch Interface",
+          "number": "3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-touch-azimuthangle",
+        "href": "https://w3c.github.io/touch-events/#dom-touch-azimuthangle",
+        "linkingText": [
+          "azimuthAngle"
+        ],
+        "localLinkingText": [
+          "Touch.azimuthAngle"
+        ],
+        "type": "attribute",
+        "for": [
+          "Touch"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "touch-interface",
+          "href": "https://w3c.github.io/touch-events/#touch-interface",
+          "title": "Touch Interface",
+          "number": "3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-touch-touchtype",
+        "href": "https://w3c.github.io/touch-events/#dom-touch-touchtype",
+        "linkingText": [
+          "touchType"
+        ],
+        "localLinkingText": [
+          "Touch.touchType"
+        ],
+        "type": "attribute",
+        "for": [
+          "Touch"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "touch-interface",
+          "href": "https://w3c.github.io/touch-events/#touch-interface",
+          "title": "Touch Interface",
+          "number": "3"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

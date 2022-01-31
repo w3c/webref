@@ -1,0 +1,80 @@
+{
+  "name": "SpeechRecognitionResultList",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Web Speech API",
+      "url": "https://wicg.github.io/speech-api/"
+    },
+    "fragment": "// A collection of responses (used in continuous mode)\n[Exposed=Window]\ninterface SpeechRecognitionResultList {\n    readonly attribute unsigned long length;\n    getter SpeechRecognitionResult item(unsigned long index);\n};",
+    "href": "https://wicg.github.io/speech-api/#speechrecognitionresultlist"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://wicg.github.io/speech-api/": [
+      {
+        "id": "speechrecognitionresultlist",
+        "href": "https://wicg.github.io/speech-api/#speechrecognitionresultlist",
+        "linkingText": [
+          "SpeechRecognitionResultList"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "speechreco-section",
+          "href": "https://wicg.github.io/speech-api/#speechreco-section",
+          "title": "The SpeechRecognition Interface",
+          "number": "4.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-speechrecognitionresultlist-length",
+        "href": "https://wicg.github.io/speech-api/#dom-speechrecognitionresultlist-length",
+        "linkingText": [
+          "length"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "SpeechRecognitionResultList"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "speechreco-resultlist",
+          "href": "https://wicg.github.io/speech-api/#speechreco-resultlist",
+          "title": "SpeechRecognitionResultList",
+          "number": "4.1.7"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-speechrecognitionresultlist-item",
+        "href": "https://wicg.github.io/speech-api/#dom-speechrecognitionresultlist-item",
+        "linkingText": [
+          "item(index)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "SpeechRecognitionResultList"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "speechreco-resultlist",
+          "href": "https://wicg.github.io/speech-api/#speechreco-resultlist",
+          "title": "SpeechRecognitionResultList",
+          "number": "4.1.7"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

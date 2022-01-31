@@ -1,0 +1,101 @@
+{
+  "name": "FontFacePalette",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "CSS Font Loading Module Level 3",
+      "url": "https://www.w3.org/TR/css-font-loading-3/"
+    },
+    "fragment": "[Exposed=(Window,Worker)]\ninterface FontFacePalette {\n  iterable<DOMString>;\n  readonly attribute unsigned long length;\n  getter DOMString (unsigned long index);\n  readonly attribute boolean usableWithLightBackground;\n  readonly attribute boolean usableWithDarkBackground;\n};",
+    "href": "https://drafts.csswg.org/css-font-loading/#fontfacepalette"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/css-font-loading-3/": [
+      {
+        "id": "fontfacepalette",
+        "href": "https://drafts.csswg.org/css-font-loading/#fontfacepalette",
+        "linkingText": [
+          "FontFacePalette"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "discovery",
+          "href": "https://drafts.csswg.org/css-font-loading/#discovery",
+          "title": "Discovery of information about a font",
+          "number": "2.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-fontfacepalette-length",
+        "href": "https://drafts.csswg.org/css-font-loading/#dom-fontfacepalette-length",
+        "linkingText": [
+          "length"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "FontFacePalette"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "discovery",
+          "href": "https://drafts.csswg.org/css-font-loading/#discovery",
+          "title": "Discovery of information about a font",
+          "number": "2.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-fontfacepalette-usablewithlightbackground",
+        "href": "https://drafts.csswg.org/css-font-loading/#dom-fontfacepalette-usablewithlightbackground",
+        "linkingText": [
+          "usableWithLightBackground"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "FontFacePalette"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "discovery",
+          "href": "https://drafts.csswg.org/css-font-loading/#discovery",
+          "title": "Discovery of information about a font",
+          "number": "2.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-fontfacepalette-usablewithdarkbackground",
+        "href": "https://drafts.csswg.org/css-font-loading/#dom-fontfacepalette-usablewithdarkbackground",
+        "linkingText": [
+          "usableWithDarkBackground"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "FontFacePalette"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "discovery",
+          "href": "https://drafts.csswg.org/css-font-loading/#discovery",
+          "title": "Discovery of information about a font",
+          "number": "2.4"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

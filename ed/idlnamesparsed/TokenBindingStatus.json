@@ -1,0 +1,81 @@
+{
+  "name": "TokenBindingStatus",
+  "type": "enum",
+  "defined": {
+    "spec": {
+      "title": "Web Authentication: An API for accessing Public Key Credentials - Level",
+      "url": "https://www.w3.org/TR/webauthn-3/"
+    },
+    "fragment": "enum TokenBindingStatus { \"present\", \"supported\" };",
+    "href": "https://w3c.github.io/webauthn/#enumdef-tokenbindingstatus"
+  },
+  "extended": [],
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webauthn-3/": [
+      {
+        "id": "enumdef-tokenbindingstatus",
+        "href": "https://w3c.github.io/webauthn/#enumdef-tokenbindingstatus",
+        "linkingText": [
+          "TokenBindingStatus"
+        ],
+        "localLinkingText": [],
+        "type": "enum",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-client-data",
+          "href": "https://w3c.github.io/webauthn/#dictionary-client-data",
+          "title": "Client Data Used in WebAuthn Signatures (dictionary CollectedClientData)",
+          "number": "5.8.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-tokenbindingstatus-present",
+        "href": "https://w3c.github.io/webauthn/#dom-tokenbindingstatus-present",
+        "linkingText": [
+          "\"present\"",
+          "present"
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "TokenBindingStatus"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-client-data",
+          "href": "https://w3c.github.io/webauthn/#dictionary-client-data",
+          "title": "Client Data Used in WebAuthn Signatures (dictionary CollectedClientData)",
+          "number": "5.8.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-tokenbindingstatus-supported",
+        "href": "https://w3c.github.io/webauthn/#dom-tokenbindingstatus-supported",
+        "linkingText": [
+          "\"supported\"",
+          "supported"
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "TokenBindingStatus"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-client-data",
+          "href": "https://w3c.github.io/webauthn/#dictionary-client-data",
+          "title": "Client Data Used in WebAuthn Signatures (dictionary CollectedClientData)",
+          "number": "5.8.1"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

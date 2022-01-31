@@ -1,0 +1,346 @@
+{
+  "spec": {
+    "title": "CSS Cascading and Inheritance Level 3",
+    "url": "https://drafts.csswg.org/css-cascade-3/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://drafts.csswg.org/css-cascade-3/#title",
+      "level": 1,
+      "title": "CSS Cascading and Inheritance Level 3"
+    },
+    {
+      "id": "abstract",
+      "href": "https://drafts.csswg.org/css-cascade-3/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "sotd",
+      "href": "https://drafts.csswg.org/css-cascade-3/#sotd",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://drafts.csswg.org/css-cascade-3/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "intro",
+      "href": "https://drafts.csswg.org/css-cascade-3/#intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "placement",
+      "href": "https://drafts.csswg.org/css-cascade-3/#placement",
+      "level": 3,
+      "title": "Module Interactions",
+      "number": "1.1"
+    },
+    {
+      "id": "at-import",
+      "href": "https://drafts.csswg.org/css-cascade-3/#at-import",
+      "level": 2,
+      "title": "Importing Style Sheets: the @import rule",
+      "number": "2"
+    },
+    {
+      "id": "conditional-import",
+      "href": "https://drafts.csswg.org/css-cascade-3/#conditional-import",
+      "level": 3,
+      "title": "Conditional @import Rules",
+      "number": "2.1"
+    },
+    {
+      "id": "import-processing",
+      "href": "https://drafts.csswg.org/css-cascade-3/#import-processing",
+      "level": 3,
+      "title": "Processing Stylesheet Imports",
+      "number": "2.2"
+    },
+    {
+      "id": "content-type",
+      "href": "https://drafts.csswg.org/css-cascade-3/#content-type",
+      "level": 3,
+      "title": "Content-Type of CSS Style Sheets",
+      "number": "2.3"
+    },
+    {
+      "id": "shorthand",
+      "href": "https://drafts.csswg.org/css-cascade-3/#shorthand",
+      "level": 2,
+      "title": "Shorthand Properties",
+      "number": "3"
+    },
+    {
+      "id": "all-shorthand",
+      "href": "https://drafts.csswg.org/css-cascade-3/#all-shorthand",
+      "level": 3,
+      "title": "Resetting All Properties: the all property",
+      "number": "3.1"
+    },
+    {
+      "id": "value-stages",
+      "href": "https://drafts.csswg.org/css-cascade-3/#value-stages",
+      "level": 2,
+      "title": "Value Processing",
+      "number": "4"
+    },
+    {
+      "id": "declared",
+      "href": "https://drafts.csswg.org/css-cascade-3/#declared",
+      "level": 3,
+      "title": "Declared Values",
+      "number": "4.1"
+    },
+    {
+      "id": "cascaded",
+      "href": "https://drafts.csswg.org/css-cascade-3/#cascaded",
+      "level": 3,
+      "title": "Cascaded Values",
+      "number": "4.2"
+    },
+    {
+      "id": "specified",
+      "href": "https://drafts.csswg.org/css-cascade-3/#specified",
+      "level": 3,
+      "title": "Specified Values",
+      "number": "4.3"
+    },
+    {
+      "id": "computed",
+      "href": "https://drafts.csswg.org/css-cascade-3/#computed",
+      "level": 3,
+      "title": "Computed Values",
+      "number": "4.4"
+    },
+    {
+      "id": "used",
+      "href": "https://drafts.csswg.org/css-cascade-3/#used",
+      "level": 3,
+      "title": "Used Values",
+      "number": "4.5"
+    },
+    {
+      "id": "actual",
+      "href": "https://drafts.csswg.org/css-cascade-3/#actual",
+      "level": 3,
+      "title": "Actual Values",
+      "number": "4.6"
+    },
+    {
+      "id": "stages-examples",
+      "href": "https://drafts.csswg.org/css-cascade-3/#stages-examples",
+      "level": 3,
+      "title": "Examples",
+      "number": "4.7"
+    },
+    {
+      "id": "filtering",
+      "href": "https://drafts.csswg.org/css-cascade-3/#filtering",
+      "level": 2,
+      "title": "Filtering",
+      "number": "5"
+    },
+    {
+      "id": "cascading",
+      "href": "https://drafts.csswg.org/css-cascade-3/#cascading",
+      "level": 2,
+      "title": "Cascading",
+      "number": "6"
+    },
+    {
+      "id": "cascade-sort",
+      "href": "https://drafts.csswg.org/css-cascade-3/#cascade-sort",
+      "level": 3,
+      "title": "Cascade Sorting Order",
+      "number": "6.1"
+    },
+    {
+      "id": "cascading-origins",
+      "href": "https://drafts.csswg.org/css-cascade-3/#cascading-origins",
+      "level": 3,
+      "title": "Cascading Origins",
+      "number": "6.2"
+    },
+    {
+      "id": "importance",
+      "href": "https://drafts.csswg.org/css-cascade-3/#importance",
+      "level": 3,
+      "title": "Important Declarations: the !important annotation",
+      "number": "6.3"
+    },
+    {
+      "id": "preshint",
+      "href": "https://drafts.csswg.org/css-cascade-3/#preshint",
+      "level": 3,
+      "title": "Precedence of Non-CSS Presentational Hints",
+      "number": "6.4"
+    },
+    {
+      "id": "defaulting",
+      "href": "https://drafts.csswg.org/css-cascade-3/#defaulting",
+      "level": 2,
+      "title": "Defaulting",
+      "number": "7"
+    },
+    {
+      "id": "initial-values",
+      "href": "https://drafts.csswg.org/css-cascade-3/#initial-values",
+      "level": 3,
+      "title": "Initial Values",
+      "number": "7.1"
+    },
+    {
+      "id": "inheriting",
+      "href": "https://drafts.csswg.org/css-cascade-3/#inheriting",
+      "level": 3,
+      "title": "Inheritance",
+      "number": "7.2"
+    },
+    {
+      "id": "defaulting-keywords",
+      "href": "https://drafts.csswg.org/css-cascade-3/#defaulting-keywords",
+      "level": 3,
+      "title": "Explicit Defaulting",
+      "number": "7.3"
+    },
+    {
+      "id": "initial",
+      "href": "https://drafts.csswg.org/css-cascade-3/#initial",
+      "level": 4,
+      "title": "Resetting a Property: the initial keyword",
+      "number": "7.3.1"
+    },
+    {
+      "id": "inherit",
+      "href": "https://drafts.csswg.org/css-cascade-3/#inherit",
+      "level": 4,
+      "title": "Explicit Inheritance: the inherit keyword",
+      "number": "7.3.2"
+    },
+    {
+      "id": "inherit-initial",
+      "href": "https://drafts.csswg.org/css-cascade-3/#inherit-initial",
+      "level": 4,
+      "title": "Erasing All Declarations: the unset keyword",
+      "number": "7.3.3"
+    },
+    {
+      "id": "changes",
+      "href": "https://drafts.csswg.org/css-cascade-3/#changes",
+      "level": 2,
+      "title": "Changes",
+      "number": "8"
+    },
+    {
+      "id": "changes-2018",
+      "href": "https://drafts.csswg.org/css-cascade-3/#changes-2018",
+      "level": 3,
+      "title": "Changes Since the 11 February 2021 Recommendation",
+      "number": "8.1"
+    },
+    {
+      "id": "changes-2",
+      "href": "https://drafts.csswg.org/css-cascade-3/#changes-2",
+      "level": 3,
+      "title": "Additions Since Level 2",
+      "number": "8.2"
+    },
+    {
+      "id": "acknowledgments",
+      "href": "https://drafts.csswg.org/css-cascade-3/#acknowledgments",
+      "level": 2,
+      "title": "Acknowledgments"
+    },
+    {
+      "id": "priv-sec",
+      "href": "https://drafts.csswg.org/css-cascade-3/#priv-sec",
+      "level": 2,
+      "title": "Privacy and Security Considerations"
+    },
+    {
+      "id": "w3c-conformance",
+      "href": "https://drafts.csswg.org/css-cascade-3/#w3c-conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "w3c-conventions",
+      "href": "https://drafts.csswg.org/css-cascade-3/#w3c-conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "w3c-conformance-classes",
+      "href": "https://drafts.csswg.org/css-cascade-3/#w3c-conformance-classes",
+      "level": 3,
+      "title": "Conformance classes"
+    },
+    {
+      "id": "w3c-partial",
+      "href": "https://drafts.csswg.org/css-cascade-3/#w3c-partial",
+      "level": 3,
+      "title": "Partial implementations"
+    },
+    {
+      "id": "w3c-conform-future-proofing",
+      "href": "https://drafts.csswg.org/css-cascade-3/#w3c-conform-future-proofing",
+      "level": 4,
+      "title": "Implementations of Unstable and Proprietary Features"
+    },
+    {
+      "id": "w3c-testing",
+      "href": "https://drafts.csswg.org/css-cascade-3/#w3c-testing",
+      "level": 3,
+      "title": "Non-experimental implementations"
+    },
+    {
+      "id": "index",
+      "href": "https://drafts.csswg.org/css-cascade-3/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://drafts.csswg.org/css-cascade-3/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://drafts.csswg.org/css-cascade-3/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://drafts.csswg.org/css-cascade-3/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://drafts.csswg.org/css-cascade-3/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://drafts.csswg.org/css-cascade-3/#informative",
+      "level": 3,
+      "title": "Informative References"
+    },
+    {
+      "id": "property-index",
+      "href": "https://drafts.csswg.org/css-cascade-3/#property-index",
+      "level": 2,
+      "title": "Property Index"
+    }
+  ]
+}

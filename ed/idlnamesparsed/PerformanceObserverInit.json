@@ -1,0 +1,132 @@
+{
+  "name": "PerformanceObserverInit",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Performance Timeline Level 2",
+      "url": "https://www.w3.org/TR/performance-timeline/"
+    },
+    "fragment": "dictionary PerformanceObserverInit {\n  sequence<DOMString> entryTypes;\n  DOMString type;\n  boolean buffered;\n};",
+    "href": "https://w3c.github.io/performance-timeline/#dom-performanceobserverinit"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "Event Timing API",
+        "url": "https://wicg.github.io/event-timing/"
+      },
+      "fragment": "partial dictionary PerformanceObserverInit {\n    DOMHighResTimeStamp durationThreshold;\n};"
+    }
+  ],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/performance-timeline/": [
+      {
+        "id": "dom-performanceobserverinit",
+        "href": "https://w3c.github.io/performance-timeline/#dom-performanceobserverinit",
+        "linkingText": [
+          "PerformanceObserverInit"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "performanceobserverinit-dictionary",
+          "href": "https://w3c.github.io/performance-timeline/#performanceobserverinit-dictionary",
+          "title": "PerformanceObserverInit dictionary",
+          "number": "5.2.1"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-performanceobserverinit-entrytypes",
+        "href": "https://w3c.github.io/performance-timeline/#dom-performanceobserverinit-entrytypes",
+        "linkingText": [
+          "entryTypes"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "PerformanceObserverInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "performanceobserverinit-dictionary",
+          "href": "https://w3c.github.io/performance-timeline/#performanceobserverinit-dictionary",
+          "title": "PerformanceObserverInit dictionary",
+          "number": "5.2.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-performanceobserverinit-type",
+        "href": "https://w3c.github.io/performance-timeline/#dom-performanceobserverinit-type",
+        "linkingText": [
+          "type"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "PerformanceObserverInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "performanceobserverinit-dictionary",
+          "href": "https://w3c.github.io/performance-timeline/#performanceobserverinit-dictionary",
+          "title": "PerformanceObserverInit dictionary",
+          "number": "5.2.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-performanceobserverinit-buffered",
+        "href": "https://w3c.github.io/performance-timeline/#dom-performanceobserverinit-buffered",
+        "linkingText": [
+          "buffered"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "PerformanceObserverInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "performanceobserverinit-dictionary",
+          "href": "https://w3c.github.io/performance-timeline/#performanceobserverinit-dictionary",
+          "title": "PerformanceObserverInit dictionary",
+          "number": "5.2.1"
+        },
+        "definedIn": "dt"
+      }
+    ],
+    "https://wicg.github.io/event-timing/": [
+      {
+        "id": "dom-performanceobserverinit-durationthreshold",
+        "href": "https://wicg.github.io/event-timing/#dom-performanceobserverinit-durationthreshold",
+        "linkingText": [
+          "durationThreshold"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "PerformanceObserverInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "sec-modifications-perf-timeline",
+          "href": "https://wicg.github.io/event-timing/#sec-modifications-perf-timeline",
+          "title": "Modifications to the Performance Timeline specification",
+          "number": "3.3"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

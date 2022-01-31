@@ -1,0 +1,182 @@
+{
+  "name": "DataTransferItem",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "HTML Standard",
+      "url": "https://html.spec.whatwg.org/multipage/"
+    },
+    "fragment": "[Exposed=Window]\ninterface DataTransferItem {\n  readonly attribute DOMString kind;\n  readonly attribute DOMString type;\n  undefined getAsString(FunctionStringCallback? _callback);\n  File? getAsFile();\n};",
+    "href": "https://html.spec.whatwg.org/multipage/dnd.html#datatransferitem"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "File and Directory Entries API",
+        "url": "https://wicg.github.io/entries-api/"
+      },
+      "fragment": "partial interface DataTransferItem {\n    FileSystemEntry? webkitGetAsEntry();\n};"
+    },
+    {
+      "spec": {
+        "title": "File System Access",
+        "url": "https://wicg.github.io/file-system-access/"
+      },
+      "fragment": "partial interface DataTransferItem {\n    Promise<FileSystemHandle?> getAsFileSystemHandle();\n};"
+    }
+  ],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://html.spec.whatwg.org/multipage/": [
+      {
+        "id": "datatransferitem",
+        "href": "https://html.spec.whatwg.org/multipage/dnd.html#datatransferitem",
+        "linkingText": [
+          "DataTransferItem"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-datatransferitem-interface",
+          "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransferitem-interface",
+          "title": "The DataTransferItem interface",
+          "number": "6.10.3.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-datatransferitem-kind",
+        "href": "https://html.spec.whatwg.org/multipage/dnd.html#dom-datatransferitem-kind",
+        "linkingText": [
+          "kind"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "DataTransferItem"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-datatransferitem-interface",
+          "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransferitem-interface",
+          "title": "The DataTransferItem interface",
+          "number": "6.10.3.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-datatransferitem-type",
+        "href": "https://html.spec.whatwg.org/multipage/dnd.html#dom-datatransferitem-type",
+        "linkingText": [
+          "type"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "DataTransferItem"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-datatransferitem-interface",
+          "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransferitem-interface",
+          "title": "The DataTransferItem interface",
+          "number": "6.10.3.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-datatransferitem-getasstring",
+        "href": "https://html.spec.whatwg.org/multipage/dnd.html#dom-datatransferitem-getasstring",
+        "linkingText": [
+          "getAsString(callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "DataTransferItem"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-datatransferitem-interface",
+          "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransferitem-interface",
+          "title": "The DataTransferItem interface",
+          "number": "6.10.3.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-datatransferitem-getasfile",
+        "href": "https://html.spec.whatwg.org/multipage/dnd.html#dom-datatransferitem-getasfile",
+        "linkingText": [
+          "getAsFile()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "DataTransferItem"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-datatransferitem-interface",
+          "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransferitem-interface",
+          "title": "The DataTransferItem interface",
+          "number": "6.10.3.2"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://wicg.github.io/entries-api/": [
+      {
+        "id": "dom-datatransferitem-webkitgetasentry",
+        "href": "https://wicg.github.io/entries-api/#dom-datatransferitem-webkitgetasentry",
+        "linkingText": [
+          "webkitGetAsEntry()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "DataTransferItem"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "title",
+          "href": "https://wicg.github.io/entries-api/#title",
+          "title": "File and Directory Entries API"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://wicg.github.io/file-system-access/": [
+      {
+        "id": "dom-datatransferitem-getasfilesystemhandle",
+        "href": "https://wicg.github.io/file-system-access/#dom-datatransferitem-getasfilesystemhandle",
+        "linkingText": [
+          "getAsFileSystemHandle()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "DataTransferItem"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "drag-and-drop",
+          "href": "https://wicg.github.io/file-system-access/#drag-and-drop",
+          "title": "Drag and Drop",
+          "number": "3.6"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

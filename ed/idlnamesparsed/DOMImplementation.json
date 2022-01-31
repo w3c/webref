@@ -1,0 +1,124 @@
+{
+  "name": "DOMImplementation",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "DOM Standard",
+      "url": "https://dom.spec.whatwg.org/"
+    },
+    "fragment": "[Exposed=Window]\ninterface DOMImplementation {\n  [NewObject] DocumentType createDocumentType(DOMString qualifiedName, DOMString publicId, DOMString systemId);\n  [NewObject] XMLDocument createDocument(DOMString? namespace, [LegacyNullToEmptyString] DOMString qualifiedName, optional DocumentType? doctype = null);\n  [NewObject] Document createHTMLDocument(optional DOMString title);\n\n  boolean hasFeature(); // useless; always returns true\n};",
+    "href": "https://dom.spec.whatwg.org/#domimplementation"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "domimplementation",
+        "href": "https://dom.spec.whatwg.org/#domimplementation",
+        "linkingText": [
+          "DOMImplementation"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-domimplementation",
+          "href": "https://dom.spec.whatwg.org/#interface-domimplementation",
+          "title": "Interface DOMImplementation",
+          "number": "4.5.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-domimplementation-createdocumenttype",
+        "href": "https://dom.spec.whatwg.org/#dom-domimplementation-createdocumenttype",
+        "linkingText": [
+          "createDocumentType(qualifiedName, publicId, systemId)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "DOMImplementation"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-domimplementation",
+          "href": "https://dom.spec.whatwg.org/#interface-domimplementation",
+          "title": "Interface DOMImplementation",
+          "number": "4.5.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-domimplementation-createdocument",
+        "href": "https://dom.spec.whatwg.org/#dom-domimplementation-createdocument",
+        "linkingText": [
+          "createDocument(namespace, qualifiedName, doctype)",
+          "createDocument(namespace, qualifiedName)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "DOMImplementation"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-domimplementation",
+          "href": "https://dom.spec.whatwg.org/#interface-domimplementation",
+          "title": "Interface DOMImplementation",
+          "number": "4.5.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-domimplementation-createhtmldocument",
+        "href": "https://dom.spec.whatwg.org/#dom-domimplementation-createhtmldocument",
+        "linkingText": [
+          "createHTMLDocument(title)",
+          "createHTMLDocument()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "DOMImplementation"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-domimplementation",
+          "href": "https://dom.spec.whatwg.org/#interface-domimplementation",
+          "title": "Interface DOMImplementation",
+          "number": "4.5.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-domimplementation-hasfeature",
+        "href": "https://dom.spec.whatwg.org/#dom-domimplementation-hasfeature",
+        "linkingText": [
+          "hasFeature()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "DOMImplementation"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-domimplementation",
+          "href": "https://dom.spec.whatwg.org/#interface-domimplementation",
+          "title": "Interface DOMImplementation",
+          "number": "4.5.1"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

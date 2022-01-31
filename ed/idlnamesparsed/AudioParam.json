@@ -1,0 +1,290 @@
+{
+  "name": "AudioParam",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Web Audio API",
+      "url": "https://www.w3.org/TR/webaudio/"
+    },
+    "fragment": "[Exposed=Window]\ninterface AudioParam {\n  attribute float value;\n  attribute AutomationRate automationRate;\n  readonly attribute float defaultValue;\n  readonly attribute float minValue;\n  readonly attribute float maxValue;\n  AudioParam setValueAtTime (float value, double startTime);\n  AudioParam linearRampToValueAtTime (float value, double endTime);\n  AudioParam exponentialRampToValueAtTime (float value, double endTime);\n  AudioParam setTargetAtTime (float target, double startTime, float timeConstant);\n  AudioParam setValueCurveAtTime (sequence<float> values,\n                                  double startTime,\n                                  double duration);\n  AudioParam cancelScheduledValues (double cancelTime);\n  AudioParam cancelAndHoldAtTime (double cancelTime);\n};",
+    "href": "https://webaudio.github.io/web-audio-api/#audioparam"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webaudio/": [
+      {
+        "id": "audioparam",
+        "href": "https://webaudio.github.io/web-audio-api/#audioparam",
+        "linkingText": [
+          "AudioParam"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "AudioParam",
+          "href": "https://webaudio.github.io/web-audio-api/#AudioParam",
+          "title": "The AudioParam Interface",
+          "number": "1.6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-audioparam-value",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-audioparam-value",
+        "linkingText": [
+          "value"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "AudioParam"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "AudioParam-attributes",
+          "href": "https://webaudio.github.io/web-audio-api/#AudioParam-attributes",
+          "title": "Attributes",
+          "number": "1.6.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-audioparam-automationrate",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-audioparam-automationrate",
+        "linkingText": [
+          "automationRate"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "AudioParam"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "AudioParam-attributes",
+          "href": "https://webaudio.github.io/web-audio-api/#AudioParam-attributes",
+          "title": "Attributes",
+          "number": "1.6.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-audioparam-defaultvalue",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-audioparam-defaultvalue",
+        "linkingText": [
+          "defaultValue"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "AudioParam"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "AudioParam-attributes",
+          "href": "https://webaudio.github.io/web-audio-api/#AudioParam-attributes",
+          "title": "Attributes",
+          "number": "1.6.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-audioparam-minvalue",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-audioparam-minvalue",
+        "linkingText": [
+          "minValue"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "AudioParam"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "AudioParam-attributes",
+          "href": "https://webaudio.github.io/web-audio-api/#AudioParam-attributes",
+          "title": "Attributes",
+          "number": "1.6.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-audioparam-maxvalue",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-audioparam-maxvalue",
+        "linkingText": [
+          "maxValue"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "AudioParam"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "AudioParam-attributes",
+          "href": "https://webaudio.github.io/web-audio-api/#AudioParam-attributes",
+          "title": "Attributes",
+          "number": "1.6.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-audioparam-setvalueattime",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-audioparam-setvalueattime",
+        "linkingText": [
+          "setValueAtTime(value, startTime)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "AudioParam"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "AudioParam-methods",
+          "href": "https://webaudio.github.io/web-audio-api/#AudioParam-methods",
+          "title": "Methods",
+          "number": "1.6.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-audioparam-linearramptovalueattime",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-audioparam-linearramptovalueattime",
+        "linkingText": [
+          "linearRampToValueAtTime(value, endTime)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "AudioParam"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "AudioParam-methods",
+          "href": "https://webaudio.github.io/web-audio-api/#AudioParam-methods",
+          "title": "Methods",
+          "number": "1.6.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-audioparam-exponentialramptovalueattime",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-audioparam-exponentialramptovalueattime",
+        "linkingText": [
+          "exponentialRampToValueAtTime(value, endTime)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "AudioParam"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "AudioParam-methods",
+          "href": "https://webaudio.github.io/web-audio-api/#AudioParam-methods",
+          "title": "Methods",
+          "number": "1.6.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-audioparam-settargetattime",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-audioparam-settargetattime",
+        "linkingText": [
+          "setTargetAtTime(target, startTime, timeConstant)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "AudioParam"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "AudioParam-methods",
+          "href": "https://webaudio.github.io/web-audio-api/#AudioParam-methods",
+          "title": "Methods",
+          "number": "1.6.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-audioparam-setvaluecurveattime",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-audioparam-setvaluecurveattime",
+        "linkingText": [
+          "setValueCurveAtTime(values, startTime, duration)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "AudioParam"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "AudioParam-methods",
+          "href": "https://webaudio.github.io/web-audio-api/#AudioParam-methods",
+          "title": "Methods",
+          "number": "1.6.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-audioparam-cancelscheduledvalues",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-audioparam-cancelscheduledvalues",
+        "linkingText": [
+          "cancelScheduledValues(cancelTime)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "AudioParam"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "AudioParam-methods",
+          "href": "https://webaudio.github.io/web-audio-api/#AudioParam-methods",
+          "title": "Methods",
+          "number": "1.6.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-audioparam-cancelandholdattime",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-audioparam-cancelandholdattime",
+        "linkingText": [
+          "cancelAndHoldAtTime(cancelTime)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "AudioParam"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "AudioParam-methods",
+          "href": "https://webaudio.github.io/web-audio-api/#AudioParam-methods",
+          "title": "Methods",
+          "number": "1.6.2"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

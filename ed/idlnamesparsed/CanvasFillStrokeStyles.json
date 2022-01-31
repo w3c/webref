@@ -1,0 +1,164 @@
+{
+  "name": "CanvasFillStrokeStyles",
+  "type": "interface mixin",
+  "defined": {
+    "spec": {
+      "title": "HTML Standard",
+      "url": "https://html.spec.whatwg.org/multipage/"
+    },
+    "fragment": "interface mixin CanvasFillStrokeStyles {\n  // colors and styles (see also the CanvasPathDrawingStyles and CanvasTextDrawingStyles interfaces)\n  attribute (DOMString or CanvasGradient or CanvasPattern) strokeStyle; // (default black)\n  attribute (DOMString or CanvasGradient or CanvasPattern) fillStyle; // (default black)\n  CanvasGradient createLinearGradient(double x0, double y0, double x1, double y1);\n  CanvasGradient createRadialGradient(double x0, double y0, double r0, double x1, double y1, double r1);\n  CanvasGradient createConicGradient(double startAngle, double x, double y);\n  CanvasPattern? createPattern(CanvasImageSource image, [LegacyNullToEmptyString] DOMString repetition);\n\n};",
+    "href": "https://html.spec.whatwg.org/multipage/canvas.html#canvasfillstrokestyles"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://html.spec.whatwg.org/multipage/": [
+      {
+        "id": "canvasfillstrokestyles",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#canvasfillstrokestyles",
+        "linkingText": [
+          "CanvasFillStrokeStyles"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "2dcontext",
+          "href": "https://html.spec.whatwg.org/multipage/canvas.html#2dcontext",
+          "title": "The 2D rendering context",
+          "number": "4.12.5.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-context-2d-strokestyle",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-strokestyle",
+        "linkingText": [
+          "strokeStyle"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "CanvasFillStrokeStyles"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "fill-and-stroke-styles",
+          "href": "https://html.spec.whatwg.org/multipage/canvas.html#fill-and-stroke-styles",
+          "title": "Fill and stroke styles",
+          "number": "4.12.5.1.9"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-context-2d-fillstyle",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-fillstyle",
+        "linkingText": [
+          "fillStyle"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "CanvasFillStrokeStyles"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "fill-and-stroke-styles",
+          "href": "https://html.spec.whatwg.org/multipage/canvas.html#fill-and-stroke-styles",
+          "title": "Fill and stroke styles",
+          "number": "4.12.5.1.9"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-context-2d-createlineargradient",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-createlineargradient",
+        "linkingText": [
+          "createLinearGradient(x0, y0, x1, y1)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CanvasFillStrokeStyles"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "fill-and-stroke-styles",
+          "href": "https://html.spec.whatwg.org/multipage/canvas.html#fill-and-stroke-styles",
+          "title": "Fill and stroke styles",
+          "number": "4.12.5.1.9"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-context-2d-createradialgradient",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-createradialgradient",
+        "linkingText": [
+          "createRadialGradient(x0, y0, r0, x1, y1, r1)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CanvasFillStrokeStyles"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "fill-and-stroke-styles",
+          "href": "https://html.spec.whatwg.org/multipage/canvas.html#fill-and-stroke-styles",
+          "title": "Fill and stroke styles",
+          "number": "4.12.5.1.9"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-context-2d-createconicgradient",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-createconicgradient",
+        "linkingText": [
+          "createConicGradient(startAngle, x, y)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CanvasFillStrokeStyles"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "fill-and-stroke-styles",
+          "href": "https://html.spec.whatwg.org/multipage/canvas.html#fill-and-stroke-styles",
+          "title": "Fill and stroke styles",
+          "number": "4.12.5.1.9"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-context-2d-createpattern",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-createpattern",
+        "linkingText": [
+          "createPattern(image, repetition)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CanvasFillStrokeStyles"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "fill-and-stroke-styles",
+          "href": "https://html.spec.whatwg.org/multipage/canvas.html#fill-and-stroke-styles",
+          "title": "Fill and stroke styles",
+          "number": "4.12.5.1.9"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

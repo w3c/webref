@@ -1,0 +1,6 @@
+// Source: File System Access (https://wicg.github.io/file-system-access/)
+[Exposed=(Window,Worker), SecureContext, Serializable]
+interface FileSystemFileHandle : FileSystemHandle {
+  Promise<File> getFile();
+  Promise<FileSystemWritableFileStream> createWritable(optional FileSystemCreateWritableOptions options = {});
+};

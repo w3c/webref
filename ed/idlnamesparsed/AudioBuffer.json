@@ -1,0 +1,209 @@
+{
+  "name": "AudioBuffer",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Web Audio API",
+      "url": "https://www.w3.org/TR/webaudio/"
+    },
+    "fragment": "[Exposed=Window]\ninterface AudioBuffer {\n  constructor (AudioBufferOptions options);\n  readonly attribute float sampleRate;\n  readonly attribute unsigned long length;\n  readonly attribute double duration;\n  readonly attribute unsigned long numberOfChannels;\n  Float32Array getChannelData (unsigned long channel);\n  undefined copyFromChannel (Float32Array destination,\n                             unsigned long channelNumber,\n                             optional unsigned long bufferOffset = 0);\n  undefined copyToChannel (Float32Array source,\n                           unsigned long channelNumber,\n                           optional unsigned long bufferOffset = 0);\n};",
+    "href": "https://webaudio.github.io/web-audio-api/#audiobuffer"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webaudio/": [
+      {
+        "id": "audiobuffer",
+        "href": "https://webaudio.github.io/web-audio-api/#audiobuffer",
+        "linkingText": [
+          "AudioBuffer"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "AudioBuffer",
+          "href": "https://webaudio.github.io/web-audio-api/#AudioBuffer",
+          "title": "The AudioBuffer Interface",
+          "number": "1.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-audiobuffer-audiobuffer",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-audiobuffer-audiobuffer",
+        "linkingText": [
+          "AudioBuffer(options)",
+          "constructor(options)"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "AudioBuffer"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "AudioBuffer-constructors",
+          "href": "https://webaudio.github.io/web-audio-api/#AudioBuffer-constructors",
+          "title": "Constructors",
+          "number": "1.4.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-audiobuffer-samplerate",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-audiobuffer-samplerate",
+        "linkingText": [
+          "sampleRate"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "AudioBuffer"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "AudioBuffer-attributes",
+          "href": "https://webaudio.github.io/web-audio-api/#AudioBuffer-attributes",
+          "title": "Attributes",
+          "number": "1.4.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-audiobuffer-length",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-audiobuffer-length",
+        "linkingText": [
+          "length"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "AudioBuffer"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "AudioBuffer-attributes",
+          "href": "https://webaudio.github.io/web-audio-api/#AudioBuffer-attributes",
+          "title": "Attributes",
+          "number": "1.4.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-audiobuffer-duration",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-audiobuffer-duration",
+        "linkingText": [
+          "duration"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "AudioBuffer"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "AudioBuffer-attributes",
+          "href": "https://webaudio.github.io/web-audio-api/#AudioBuffer-attributes",
+          "title": "Attributes",
+          "number": "1.4.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-audiobuffer-numberofchannels",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-audiobuffer-numberofchannels",
+        "linkingText": [
+          "numberOfChannels"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "AudioBuffer"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "AudioBuffer-attributes",
+          "href": "https://webaudio.github.io/web-audio-api/#AudioBuffer-attributes",
+          "title": "Attributes",
+          "number": "1.4.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-audiobuffer-getchanneldata",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-audiobuffer-getchanneldata",
+        "linkingText": [
+          "getChannelData(channel)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "AudioBuffer"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "AudioBuffer-methods",
+          "href": "https://webaudio.github.io/web-audio-api/#AudioBuffer-methods",
+          "title": "Methods",
+          "number": "1.4.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-audiobuffer-copyfromchannel",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-audiobuffer-copyfromchannel",
+        "linkingText": [
+          "copyFromChannel(destination, channelNumber, bufferOffset)",
+          "copyFromChannel(destination, channelNumber)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "AudioBuffer"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "AudioBuffer-methods",
+          "href": "https://webaudio.github.io/web-audio-api/#AudioBuffer-methods",
+          "title": "Methods",
+          "number": "1.4.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-audiobuffer-copytochannel",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-audiobuffer-copytochannel",
+        "linkingText": [
+          "copyToChannel(source, channelNumber, bufferOffset)",
+          "copyToChannel(source, channelNumber)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "AudioBuffer"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "AudioBuffer-methods",
+          "href": "https://webaudio.github.io/web-audio-api/#AudioBuffer-methods",
+          "title": "Methods",
+          "number": "1.4.3"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

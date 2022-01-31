@@ -1,0 +1,78 @@
+{
+  "name": "RTCRtpCapabilities",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
+      "url": "https://www.w3.org/TR/webrtc/"
+    },
+    "fragment": "dictionary RTCRtpCapabilities {\n  required sequence<RTCRtpCodecCapability> codecs;\n  required sequence<RTCRtpHeaderExtensionCapability> headerExtensions;\n};",
+    "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpcapabilities"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webrtc/": [
+      {
+        "id": "dom-rtcrtpcapabilities",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpcapabilities",
+        "linkingText": [
+          "RTCRtpCapabilities"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "rtcrtpcapabilities",
+          "href": "https://w3c.github.io/webrtc-pc/#rtcrtpcapabilities",
+          "title": "RTCRtpCapabilities Dictionary",
+          "number": "5.2.10"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-rtcrtpcapabilities-codecs",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpcapabilities-codecs",
+        "linkingText": [
+          "codecs"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RTCRtpCapabilities"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-rtcrtpcapabilities-members",
+          "href": "https://w3c.github.io/webrtc-pc/#dictionary-rtcrtpcapabilities-members",
+          "title": "Dictionary RTCRtpCapabilities Members"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcrtpcapabilities-headerextensions",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpcapabilities-headerextensions",
+        "linkingText": [
+          "headerExtensions"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RTCRtpCapabilities"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-rtcrtpcapabilities-members",
+          "href": "https://w3c.github.io/webrtc-pc/#dictionary-rtcrtpcapabilities-members",
+          "title": "Dictionary RTCRtpCapabilities Members"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

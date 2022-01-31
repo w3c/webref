@@ -1,0 +1,84 @@
+{
+  "name": "PaymentManager",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Payment Handler API",
+      "url": "https://www.w3.org/TR/payment-handler/"
+    },
+    "fragment": "[SecureContext, Exposed=(Window,Worker)]\ninterface PaymentManager {\n  [SameObject] readonly attribute PaymentInstruments instruments;\n  attribute DOMString userHint;\n};",
+    "href": "https://w3c.github.io/payment-handler/#dom-paymentmanager"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/payment-handler/": [
+      {
+        "id": "dom-paymentmanager",
+        "href": "https://w3c.github.io/payment-handler/#dom-paymentmanager",
+        "linkingText": [
+          "PaymentManager"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "paymentmanager-interface",
+          "href": "https://w3c.github.io/payment-handler/#paymentmanager-interface",
+          "title": "PaymentManager interface",
+          "number": "3.2"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-paymentmanager-instruments",
+        "href": "https://w3c.github.io/payment-handler/#dom-paymentmanager-instruments",
+        "linkingText": [
+          "instruments"
+        ],
+        "localLinkingText": [
+          "PaymentManager.instruments"
+        ],
+        "type": "attribute",
+        "for": [
+          "PaymentManager"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "instruments-attribute",
+          "href": "https://w3c.github.io/payment-handler/#instruments-attribute",
+          "title": "instruments attribute",
+          "number": "3.2.1"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-paymentmanager-userhint",
+        "href": "https://w3c.github.io/payment-handler/#dom-paymentmanager-userhint",
+        "linkingText": [
+          "userHint"
+        ],
+        "localLinkingText": [
+          "PaymentManager.userHint"
+        ],
+        "type": "attribute",
+        "for": [
+          "PaymentManager"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "userhint-attribute",
+          "href": "https://w3c.github.io/payment-handler/#userhint-attribute",
+          "title": "userHint attribute",
+          "number": "3.2.2"
+        },
+        "definedIn": "heading"
+      }
+    ]
+  }
+}

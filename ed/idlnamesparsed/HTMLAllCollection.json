@@ -1,0 +1,101 @@
+{
+  "name": "HTMLAllCollection",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "HTML Standard",
+      "url": "https://html.spec.whatwg.org/multipage/"
+    },
+    "fragment": "[Exposed=Window,\n LegacyUnenumerableNamedProperties]\ninterface HTMLAllCollection {\n  readonly attribute unsigned long length;\n  getter Element (unsigned long index);\n  getter (HTMLCollection or Element)? namedItem(DOMString name);\n  (HTMLCollection or Element)? item(optional DOMString nameOrIndex);\n\n  // Note: HTMLAllCollection objects have a custom [[Call]] internal method and an [[IsHTMLDDA]] internal slot.\n};",
+    "href": "https://html.spec.whatwg.org/multipage/common-dom-interfaces.html#htmlallcollection"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://html.spec.whatwg.org/multipage/": [
+      {
+        "id": "htmlallcollection",
+        "href": "https://html.spec.whatwg.org/multipage/common-dom-interfaces.html#htmlallcollection",
+        "linkingText": [
+          "HTMLAllCollection"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-htmlallcollection-interface",
+          "href": "https://html.spec.whatwg.org/multipage/common-dom-interfaces.html#the-htmlallcollection-interface",
+          "title": "The HTMLAllCollection interface",
+          "number": "2.6.2.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-htmlallcollection-length",
+        "href": "https://html.spec.whatwg.org/multipage/common-dom-interfaces.html#dom-htmlallcollection-length",
+        "linkingText": [
+          "length"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "HTMLAllCollection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-htmlallcollection-interface",
+          "href": "https://html.spec.whatwg.org/multipage/common-dom-interfaces.html#the-htmlallcollection-interface",
+          "title": "The HTMLAllCollection interface",
+          "number": "2.6.2.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-htmlallcollection-nameditem",
+        "href": "https://html.spec.whatwg.org/multipage/common-dom-interfaces.html#dom-htmlallcollection-nameditem",
+        "linkingText": [
+          "namedItem(name)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "HTMLAllCollection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-htmlallcollection-interface",
+          "href": "https://html.spec.whatwg.org/multipage/common-dom-interfaces.html#the-htmlallcollection-interface",
+          "title": "The HTMLAllCollection interface",
+          "number": "2.6.2.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-htmlallcollection-item",
+        "href": "https://html.spec.whatwg.org/multipage/common-dom-interfaces.html#dom-htmlallcollection-item",
+        "linkingText": [
+          "item(nameOrIndex)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "HTMLAllCollection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-htmlallcollection-interface",
+          "href": "https://html.spec.whatwg.org/multipage/common-dom-interfaces.html#the-htmlallcollection-interface",
+          "title": "The HTMLAllCollection interface",
+          "number": "2.6.2.1"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

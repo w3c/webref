@@ -1,0 +1,107 @@
+{
+  "name": "RTCSessionDescription",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
+      "url": "https://www.w3.org/TR/webrtc/"
+    },
+    "fragment": "[Exposed=Window]\ninterface RTCSessionDescription {\n  constructor(RTCSessionDescriptionInit descriptionInitDict);\n  readonly attribute RTCSdpType type;\n  readonly attribute DOMString sdp;\n  [Default] object toJSON();\n};",
+    "href": "https://w3c.github.io/webrtc-pc/#dom-rtcsessiondescription"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webrtc/": [
+      {
+        "id": "dom-rtcsessiondescription",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcsessiondescription",
+        "linkingText": [
+          "RTCSessionDescription"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "rtcsessiondescription-class",
+          "href": "https://w3c.github.io/webrtc-pc/#rtcsessiondescription-class",
+          "title": "RTCSessionDescription Class",
+          "number": "4.6.2"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-rtcsessiondescription-constructor",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcsessiondescription-constructor",
+        "linkingText": [
+          "constructor()",
+          "constructor(descriptionInitDict)"
+        ],
+        "localLinkingText": [
+          "RTCSessionDescription.constructor",
+          "RTCSessionDescription.constructor()",
+          "constructor"
+        ],
+        "type": "constructor",
+        "for": [
+          "RTCSessionDescription"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "constructors-1",
+          "href": "https://w3c.github.io/webrtc-pc/#constructors-1",
+          "title": "Constructors"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcsessiondescription-type",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcsessiondescription-type",
+        "linkingText": [
+          "type"
+        ],
+        "localLinkingText": [
+          "RTCSessionDescription.type"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCSessionDescription"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-3",
+          "href": "https://w3c.github.io/webrtc-pc/#attributes-3",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcsessiondescription-sdp",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcsessiondescription-sdp",
+        "linkingText": [
+          "sdp"
+        ],
+        "localLinkingText": [
+          "RTCSessionDescription.sdp"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCSessionDescription"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-3",
+          "href": "https://w3c.github.io/webrtc-pc/#attributes-3",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

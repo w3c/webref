@@ -1,0 +1,80 @@
+{
+  "name": "NodeList",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "DOM Standard",
+      "url": "https://dom.spec.whatwg.org/"
+    },
+    "fragment": "[Exposed=Window]\ninterface NodeList {\n  getter Node? item(unsigned long index);\n  readonly attribute unsigned long length;\n  iterable<Node>;\n};",
+    "href": "https://dom.spec.whatwg.org/#nodelist"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "nodelist",
+        "href": "https://dom.spec.whatwg.org/#nodelist",
+        "linkingText": [
+          "NodeList"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-nodelist",
+          "href": "https://dom.spec.whatwg.org/#interface-nodelist",
+          "title": "Interface NodeList",
+          "number": "4.2.10.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-nodelist-item",
+        "href": "https://dom.spec.whatwg.org/#dom-nodelist-item",
+        "linkingText": [
+          "item(index)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "NodeList"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-nodelist",
+          "href": "https://dom.spec.whatwg.org/#interface-nodelist",
+          "title": "Interface NodeList",
+          "number": "4.2.10.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-nodelist-length",
+        "href": "https://dom.spec.whatwg.org/#dom-nodelist-length",
+        "linkingText": [
+          "length"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "NodeList"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-nodelist",
+          "href": "https://dom.spec.whatwg.org/#interface-nodelist",
+          "title": "Interface NodeList",
+          "number": "4.2.10.1"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

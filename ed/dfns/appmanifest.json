@@ -1,0 +1,1919 @@
+{
+  "spec": {
+    "title": "Web Application Manifest",
+    "url": "https://w3c.github.io/manifest/"
+  },
+  "dfns": [
+    {
+      "id": "dfn-manifest",
+      "href": "https://w3c.github.io/manifest/#dfn-manifest",
+      "linkingText": [
+        "manifest",
+        "application manifest",
+        "manifest's"
+      ],
+      "localLinkingText": [
+        "manifest's"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "web-application-manifest",
+        "href": "https://w3c.github.io/manifest/#web-application-manifest",
+        "title": "Web Application Manifest",
+        "number": "1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-manifest-url",
+      "href": "https://w3c.github.io/manifest/#dfn-manifest-url",
+      "linkingText": [
+        "manifest URL"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "web-application-manifest",
+        "href": "https://w3c.github.io/manifest/#web-application-manifest",
+        "title": "Web Application Manifest",
+        "number": "1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-dir",
+      "href": "https://w3c.github.io/manifest/#dfn-dir",
+      "linkingText": [
+        "dir"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "manifest"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "dir-member",
+        "href": "https://w3c.github.io/manifest/#dir-member",
+        "title": "dir member",
+        "number": "1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-base-direction",
+      "href": "https://w3c.github.io/manifest/#dfn-base-direction",
+      "linkingText": [
+        "base direction"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dir-member",
+        "href": "https://w3c.github.io/manifest/#dir-member",
+        "title": "dir member",
+        "number": "1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-localizable-members",
+      "href": "https://w3c.github.io/manifest/#dfn-localizable-members",
+      "linkingText": [
+        "localizable members"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dir-member",
+        "href": "https://w3c.github.io/manifest/#dir-member",
+        "title": "dir member",
+        "number": "1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-text-directions",
+      "href": "https://w3c.github.io/manifest/#dfn-text-directions",
+      "linkingText": [
+        "text-directions"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dir-member",
+        "href": "https://w3c.github.io/manifest/#dir-member",
+        "title": "dir member",
+        "number": "1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-ltr",
+      "href": "https://w3c.github.io/manifest/#dfn-ltr",
+      "linkingText": [
+        "ltr"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "text-direction"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dir-member",
+        "href": "https://w3c.github.io/manifest/#dir-member",
+        "title": "dir member",
+        "number": "1.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-rtl",
+      "href": "https://w3c.github.io/manifest/#dfn-rtl",
+      "linkingText": [
+        "rtl"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "text-direction"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dir-member",
+        "href": "https://w3c.github.io/manifest/#dir-member",
+        "title": "dir member",
+        "number": "1.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-auto",
+      "href": "https://w3c.github.io/manifest/#dfn-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "text-direction"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dir-member",
+        "href": "https://w3c.github.io/manifest/#dir-member",
+        "title": "dir member",
+        "number": "1.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-text-direction-list",
+      "href": "https://w3c.github.io/manifest/#dfn-text-direction-list",
+      "linkingText": [
+        "text-direction list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dir-member",
+        "href": "https://w3c.github.io/manifest/#dir-member",
+        "title": "dir member",
+        "number": "1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-process-the-dir-member",
+      "href": "https://w3c.github.io/manifest/#dfn-process-the-dir-member",
+      "linkingText": [
+        "process the dir member"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dir-member",
+        "href": "https://w3c.github.io/manifest/#dir-member",
+        "title": "dir member",
+        "number": "1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-lang",
+      "href": "https://w3c.github.io/manifest/#dfn-lang",
+      "linkingText": [
+        "lang"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "manifest"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "lang-member",
+        "href": "https://w3c.github.io/manifest/#lang-member",
+        "title": "lang member",
+        "number": "1.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-language-tag",
+      "href": "https://w3c.github.io/manifest/#dfn-language-tag",
+      "linkingText": [
+        "language tag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "lang-member",
+        "href": "https://w3c.github.io/manifest/#lang-member",
+        "title": "lang member",
+        "number": "1.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-subtags",
+      "href": "https://w3c.github.io/manifest/#dfn-subtags",
+      "linkingText": [
+        "subtags"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "lang-member",
+        "href": "https://w3c.github.io/manifest/#lang-member",
+        "title": "lang member",
+        "number": "1.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-process-the-lang-member",
+      "href": "https://w3c.github.io/manifest/#dfn-process-the-lang-member",
+      "linkingText": [
+        "process the lang member"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "lang-member",
+        "href": "https://w3c.github.io/manifest/#lang-member",
+        "title": "lang member",
+        "number": "1.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-name",
+      "href": "https://w3c.github.io/manifest/#dfn-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "manifest"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "name-member",
+        "href": "https://w3c.github.io/manifest/#name-member",
+        "title": "name member",
+        "number": "1.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-short_name",
+      "href": "https://w3c.github.io/manifest/#dfn-short_name",
+      "linkingText": [
+        "short_name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "manifest"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "short_name-member",
+        "href": "https://w3c.github.io/manifest/#short_name-member",
+        "title": "short_name member",
+        "number": "1.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-scope",
+      "href": "https://w3c.github.io/manifest/#dfn-scope",
+      "linkingText": [
+        "scope"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "manifest"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scope-member",
+        "href": "https://w3c.github.io/manifest/#scope-member",
+        "title": "scope member",
+        "number": "1.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-process-the-scope-member",
+      "href": "https://w3c.github.io/manifest/#dfn-process-the-scope-member",
+      "linkingText": [
+        "process the scope member"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "scope-member",
+        "href": "https://w3c.github.io/manifest/#scope-member",
+        "title": "scope member",
+        "number": "1.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-icons",
+      "href": "https://w3c.github.io/manifest/#dfn-icons",
+      "linkingText": [
+        "icons"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "manifest"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "icons-member",
+        "href": "https://w3c.github.io/manifest/#icons-member",
+        "title": "icons member",
+        "number": "1.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-display",
+      "href": "https://w3c.github.io/manifest/#dfn-display",
+      "linkingText": [
+        "display"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "manifest"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "display-member",
+        "href": "https://w3c.github.io/manifest/#display-member",
+        "title": "display member",
+        "number": "1.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-process-the-display-member",
+      "href": "https://w3c.github.io/manifest/#dfn-process-the-display-member",
+      "linkingText": [
+        "process the display member"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "display-member",
+        "href": "https://w3c.github.io/manifest/#display-member",
+        "title": "display member",
+        "number": "1.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-orientation",
+      "href": "https://w3c.github.io/manifest/#dfn-orientation",
+      "linkingText": [
+        "orientation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "manifest"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "orientation-member",
+        "href": "https://w3c.github.io/manifest/#orientation-member",
+        "title": "orientation member",
+        "number": "1.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-orientation-values",
+      "href": "https://w3c.github.io/manifest/#dfn-orientation-values",
+      "linkingText": [
+        "orientation values"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "orientation-member",
+        "href": "https://w3c.github.io/manifest/#orientation-member",
+        "title": "orientation member",
+        "number": "1.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-cannot-be-used-together",
+      "href": "https://w3c.github.io/manifest/#dfn-cannot-be-used-together",
+      "linkingText": [
+        "cannot be used together"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "orientation-member",
+        "href": "https://w3c.github.io/manifest/#orientation-member",
+        "title": "orientation member",
+        "number": "1.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-process-the-orientation-member",
+      "href": "https://w3c.github.io/manifest/#dfn-process-the-orientation-member",
+      "linkingText": [
+        "process the orientation member"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "orientation-member",
+        "href": "https://w3c.github.io/manifest/#orientation-member",
+        "title": "orientation member",
+        "number": "1.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-start_url",
+      "href": "https://w3c.github.io/manifest/#dfn-start_url",
+      "linkingText": [
+        "start_url"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "manifest"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "start_url-member",
+        "href": "https://w3c.github.io/manifest/#start_url-member",
+        "title": "start_url member",
+        "number": "1.10"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-start-url",
+      "href": "https://w3c.github.io/manifest/#dfn-start-url",
+      "linkingText": [
+        "start URL"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "start_url-member",
+        "href": "https://w3c.github.io/manifest/#start_url-member",
+        "title": "start_url member",
+        "number": "1.10"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-process-the-start_url-member",
+      "href": "https://w3c.github.io/manifest/#dfn-process-the-start_url-member",
+      "linkingText": [
+        "process the start_url member"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "start_url-member",
+        "href": "https://w3c.github.io/manifest/#start_url-member",
+        "title": "start_url member",
+        "number": "1.10"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-id",
+      "href": "https://w3c.github.io/manifest/#dfn-id",
+      "linkingText": [
+        "id"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "manifest"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "id-member",
+        "href": "https://w3c.github.io/manifest/#id-member",
+        "title": "id member",
+        "number": "1.11"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-identity",
+      "href": "https://w3c.github.io/manifest/#dfn-identity",
+      "linkingText": [
+        "identity"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "id-member",
+        "href": "https://w3c.github.io/manifest/#id-member",
+        "title": "id member",
+        "number": "1.11"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-process-the-id-member",
+      "href": "https://w3c.github.io/manifest/#dfn-process-the-id-member",
+      "linkingText": [
+        "process the id member"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "id-member",
+        "href": "https://w3c.github.io/manifest/#id-member",
+        "title": "id member",
+        "number": "1.11"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-theme_color",
+      "href": "https://w3c.github.io/manifest/#dfn-theme_color",
+      "linkingText": [
+        "theme_color"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "manifest"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "theme_color-member",
+        "href": "https://w3c.github.io/manifest/#theme_color-member",
+        "title": "theme_color member",
+        "number": "1.12"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-default-theme-color",
+      "href": "https://w3c.github.io/manifest/#dfn-default-theme-color",
+      "linkingText": [
+        "default theme color"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "theme_color-member",
+        "href": "https://w3c.github.io/manifest/#theme_color-member",
+        "title": "theme_color member",
+        "number": "1.12"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-theme-color",
+      "href": "https://w3c.github.io/manifest/#dfn-theme-color",
+      "linkingText": [
+        "theme color"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "theme_color-member",
+        "href": "https://w3c.github.io/manifest/#theme_color-member",
+        "title": "theme_color member",
+        "number": "1.12"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-related-application",
+      "href": "https://w3c.github.io/manifest/#dfn-related-application",
+      "linkingText": [
+        "related application"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "related_applications-member",
+        "href": "https://w3c.github.io/manifest/#related_applications-member",
+        "title": "related_applications member",
+        "number": "1.13"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-related_applications",
+      "href": "https://w3c.github.io/manifest/#dfn-related_applications",
+      "linkingText": [
+        "related_applications"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "manifest"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "related_applications-member",
+        "href": "https://w3c.github.io/manifest/#related_applications-member",
+        "title": "related_applications member",
+        "number": "1.13"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-process-the-related_applications-member",
+      "href": "https://w3c.github.io/manifest/#dfn-process-the-related_applications-member",
+      "linkingText": [
+        "process the related_applications member"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "related_applications-member",
+        "href": "https://w3c.github.io/manifest/#related_applications-member",
+        "title": "related_applications member",
+        "number": "1.13"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-prefer_related_applications",
+      "href": "https://w3c.github.io/manifest/#dfn-prefer_related_applications",
+      "linkingText": [
+        "prefer_related_applications"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "manifest"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "prefer_related_applications-member",
+        "href": "https://w3c.github.io/manifest/#prefer_related_applications-member",
+        "title": "prefer_related_applications member",
+        "number": "1.14"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-background_color",
+      "href": "https://w3c.github.io/manifest/#dfn-background_color",
+      "linkingText": [
+        "background_color"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "manifest"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "background_color-member",
+        "href": "https://w3c.github.io/manifest/#background_color-member",
+        "title": "background_color member",
+        "number": "1.15"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-shortcuts",
+      "href": "https://w3c.github.io/manifest/#dfn-shortcuts",
+      "linkingText": [
+        "shortcuts"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "manifest"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "shortcuts-member",
+        "href": "https://w3c.github.io/manifest/#shortcuts-member",
+        "title": "shortcuts member",
+        "number": "1.16"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-process-the-shortcuts-member",
+      "href": "https://w3c.github.io/manifest/#dfn-process-the-shortcuts-member",
+      "linkingText": [
+        "process the shortcuts member"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "shortcuts-member",
+        "href": "https://w3c.github.io/manifest/#shortcuts-member",
+        "title": "shortcuts member",
+        "number": "1.16"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-ignore",
+      "href": "https://w3c.github.io/manifest/#dfn-ignore",
+      "linkingText": [
+        "ignore"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "processing",
+        "href": "https://w3c.github.io/manifest/#processing",
+        "title": "Processing the manifest",
+        "number": "1.17.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-processing-extension-point",
+      "href": "https://w3c.github.io/manifest/#dfn-processing-extension-point",
+      "linkingText": [
+        "processing extension-point"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "application manifest"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "processing",
+        "href": "https://w3c.github.io/manifest/#processing",
+        "title": "Processing the manifest",
+        "number": "1.17.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-processing-a-manifest",
+      "href": "https://w3c.github.io/manifest/#dfn-processing-a-manifest",
+      "linkingText": [
+        "processing a manifest",
+        "processing"
+      ],
+      "localLinkingText": [
+        "processing"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "processing",
+        "href": "https://w3c.github.io/manifest/#processing",
+        "title": "Processing the manifest",
+        "number": "1.17.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-processed-manifest",
+      "href": "https://w3c.github.io/manifest/#dfn-processed-manifest",
+      "linkingText": [
+        "processed manifest"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "Document"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "processing",
+        "href": "https://w3c.github.io/manifest/#processing",
+        "title": "Processing the manifest",
+        "number": "1.17.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-process-a-color-member",
+      "href": "https://w3c.github.io/manifest/#dfn-process-a-color-member",
+      "linkingText": [
+        "process a color member"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "processing-color-members",
+        "href": "https://w3c.github.io/manifest/#processing-color-members",
+        "title": "Processing color members",
+        "number": "1.17.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-process-a-text-member",
+      "href": "https://w3c.github.io/manifest/#dfn-process-a-text-member",
+      "linkingText": [
+        "process a text member"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "processing-text-members",
+        "href": "https://w3c.github.io/manifest/#processing-text-members",
+        "title": "Processing text members",
+        "number": "1.17.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-applied",
+      "href": "https://w3c.github.io/manifest/#dfn-applied",
+      "linkingText": [
+        "applied",
+        "apply",
+        "applying"
+      ],
+      "localLinkingText": [
+        "apply",
+        "applying"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "applying-the-manifest",
+        "href": "https://w3c.github.io/manifest/#applying-the-manifest",
+        "title": "Applying the manifest",
+        "number": "1.17.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-application-context",
+      "href": "https://w3c.github.io/manifest/#dfn-application-context",
+      "linkingText": [
+        "application context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "applying-the-manifest",
+        "href": "https://w3c.github.io/manifest/#applying-the-manifest",
+        "title": "Applying the manifest",
+        "number": "1.17.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-manifest-image-resource",
+      "href": "https://w3c.github.io/manifest/#dfn-manifest-image-resource",
+      "linkingText": [
+        "manifest image resource"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "manifest-image-resources",
+        "href": "https://w3c.github.io/manifest/#manifest-image-resources",
+        "title": "Manifest image resources",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-purpose",
+      "href": "https://w3c.github.io/manifest/#dfn-purpose",
+      "linkingText": [
+        "purpose"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "manifest image resource"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "purpose-member",
+        "href": "https://w3c.github.io/manifest/#purpose-member",
+        "title": "purpose member",
+        "number": "2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-icon",
+      "href": "https://w3c.github.io/manifest/#dfn-icon",
+      "linkingText": [
+        "icon"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "purpose-member",
+        "href": "https://w3c.github.io/manifest/#purpose-member",
+        "title": "purpose member",
+        "number": "2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-icon-purposes",
+      "href": "https://w3c.github.io/manifest/#dfn-icon-purposes",
+      "linkingText": [
+        "icon purposes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "purpose-member",
+        "href": "https://w3c.github.io/manifest/#purpose-member",
+        "title": "purpose member",
+        "number": "2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-monochrome",
+      "href": "https://w3c.github.io/manifest/#dfn-monochrome",
+      "linkingText": [
+        "monochrome"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "icon purpose"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "purpose-member",
+        "href": "https://w3c.github.io/manifest/#purpose-member",
+        "title": "purpose member",
+        "number": "2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-maskable",
+      "href": "https://w3c.github.io/manifest/#dfn-maskable",
+      "linkingText": [
+        "maskable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "icon purpose"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "purpose-member",
+        "href": "https://w3c.github.io/manifest/#purpose-member",
+        "title": "purpose member",
+        "number": "2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-any",
+      "href": "https://w3c.github.io/manifest/#dfn-any",
+      "linkingText": [
+        "any"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "icon purpose"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "purpose-member",
+        "href": "https://w3c.github.io/manifest/#purpose-member",
+        "title": "purpose member",
+        "number": "2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-icon-purposes-list",
+      "href": "https://w3c.github.io/manifest/#dfn-icon-purposes-list",
+      "linkingText": [
+        "icon purposes list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "purpose-member",
+        "href": "https://w3c.github.io/manifest/#purpose-member",
+        "title": "purpose member",
+        "number": "2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-determine-the-purpose-of-an-image",
+      "href": "https://w3c.github.io/manifest/#dfn-determine-the-purpose-of-an-image",
+      "linkingText": [
+        "determine the purpose of an image"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "purpose-member",
+        "href": "https://w3c.github.io/manifest/#purpose-member",
+        "title": "purpose member",
+        "number": "2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-safe-zone",
+      "href": "https://w3c.github.io/manifest/#dfn-safe-zone",
+      "linkingText": [
+        "safe zone"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "icon-masks",
+        "href": "https://w3c.github.io/manifest/#icon-masks",
+        "title": "Icon masks and safe zone",
+        "number": "2.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-solid-fill",
+      "href": "https://w3c.github.io/manifest/#dfn-solid-fill",
+      "linkingText": [
+        "solid fill"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "monochrome-icons-and-solid-fills",
+        "href": "https://w3c.github.io/manifest/#monochrome-icons-and-solid-fills",
+        "title": "Monochrome icons and solid fills",
+        "number": "2.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-process-image-resources",
+      "href": "https://w3c.github.io/manifest/#dfn-process-image-resources",
+      "linkingText": [
+        "process image resources"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "processing-image-resources",
+        "href": "https://w3c.github.io/manifest/#processing-image-resources",
+        "title": "Processing image resources",
+        "number": "2.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-shortcut-item",
+      "href": "https://w3c.github.io/manifest/#dfn-shortcut-item",
+      "linkingText": [
+        "shortcut item",
+        "Shortcut item's"
+      ],
+      "localLinkingText": [
+        "Shortcut item's"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "shortcut-items",
+        "href": "https://w3c.github.io/manifest/#shortcut-items",
+        "title": "Shortcut items",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-name-0",
+      "href": "https://w3c.github.io/manifest/#dfn-name-0",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "shortcut item"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "name-member-0",
+        "href": "https://w3c.github.io/manifest/#name-member-0",
+        "title": "name member",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-short_name-0",
+      "href": "https://w3c.github.io/manifest/#dfn-short_name-0",
+      "linkingText": [
+        "short_name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "shortcut item"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "short_name-member-0",
+        "href": "https://w3c.github.io/manifest/#short_name-member-0",
+        "title": "short_name member",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-description",
+      "href": "https://w3c.github.io/manifest/#dfn-description",
+      "linkingText": [
+        "description"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "shortcut item"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "description-member",
+        "href": "https://w3c.github.io/manifest/#description-member",
+        "title": "description member",
+        "number": "3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-url",
+      "href": "https://w3c.github.io/manifest/#dfn-url",
+      "linkingText": [
+        "url"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "shortcut item"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "url-member",
+        "href": "https://w3c.github.io/manifest/#url-member",
+        "title": "url member",
+        "number": "3.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-icons-0",
+      "href": "https://w3c.github.io/manifest/#dfn-icons-0",
+      "linkingText": [
+        "icons"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "shortcut item"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "icons-member-0",
+        "href": "https://w3c.github.io/manifest/#icons-member-0",
+        "title": "icons member",
+        "number": "3.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-launching-a-shortcut",
+      "href": "https://w3c.github.io/manifest/#dfn-launching-a-shortcut",
+      "linkingText": [
+        "Launching a shortcut"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "launching-a-shortcut",
+        "href": "https://w3c.github.io/manifest/#launching-a-shortcut",
+        "title": "Launching a shortcut",
+        "number": "3.6"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-process-a-shortcut",
+      "href": "https://w3c.github.io/manifest/#dfn-process-a-shortcut",
+      "linkingText": [
+        "process a shortcut"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "processing-shortcut-items",
+        "href": "https://w3c.github.io/manifest/#processing-shortcut-items",
+        "title": "Processing shortcut items",
+        "number": "3.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-external-application-resource",
+      "href": "https://w3c.github.io/manifest/#dfn-external-application-resource",
+      "linkingText": [
+        "external application resource",
+        "external application resource's"
+      ],
+      "localLinkingText": [
+        "external application resource's"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "external-application-resource",
+        "href": "https://w3c.github.io/manifest/#external-application-resource",
+        "title": "External application resource",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-valid-external-application-resource",
+      "href": "https://w3c.github.io/manifest/#dfn-valid-external-application-resource",
+      "linkingText": [
+        "valid external application resource"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "external-application-resource",
+        "href": "https://w3c.github.io/manifest/#external-application-resource",
+        "title": "External application resource",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-platform",
+      "href": "https://w3c.github.io/manifest/#dfn-platform",
+      "linkingText": [
+        "platform"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "external application resource"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "platform-member",
+        "href": "https://w3c.github.io/manifest/#platform-member",
+        "title": "platform member",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-platform-0",
+      "href": "https://w3c.github.io/manifest/#dfn-platform-0",
+      "linkingText": [
+        "platform"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "platform-member",
+        "href": "https://w3c.github.io/manifest/#platform-member",
+        "title": "platform member",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-url-0",
+      "href": "https://w3c.github.io/manifest/#dfn-url-0",
+      "linkingText": [
+        "url"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "external application resource"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "url-member-0",
+        "href": "https://w3c.github.io/manifest/#url-member-0",
+        "title": "url member",
+        "number": "4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-process-the-url-member-of-an-application",
+      "href": "https://w3c.github.io/manifest/#dfn-process-the-url-member-of-an-application",
+      "linkingText": [
+        "process the url member of an application"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "url-member-0",
+        "href": "https://w3c.github.io/manifest/#url-member-0",
+        "title": "url member",
+        "number": "4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-id-0",
+      "href": "https://w3c.github.io/manifest/#dfn-id-0",
+      "linkingText": [
+        "id"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "external application resource"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "id-member-0",
+        "href": "https://w3c.github.io/manifest/#id-member-0",
+        "title": "id member",
+        "number": "4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-min_version",
+      "href": "https://w3c.github.io/manifest/#dfn-min_version",
+      "linkingText": [
+        "min_version"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "external application resource"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "min_version-member",
+        "href": "https://w3c.github.io/manifest/#min_version-member",
+        "title": "min_version member",
+        "number": "4.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-fingerprints",
+      "href": "https://w3c.github.io/manifest/#dfn-fingerprints",
+      "linkingText": [
+        "fingerprints"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "external application resource"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "fingerprints-member",
+        "href": "https://w3c.github.io/manifest/#fingerprints-member",
+        "title": "fingerprints member",
+        "number": "4.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-fingerprints-0",
+      "href": "https://w3c.github.io/manifest/#dfn-fingerprints-0",
+      "linkingText": [
+        "fingerprint",
+        "fingerprints"
+      ],
+      "localLinkingText": [
+        "fingerprints"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "fingerprints-member",
+        "href": "https://w3c.github.io/manifest/#fingerprints-member",
+        "title": "fingerprints member",
+        "number": "4.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-type",
+      "href": "https://w3c.github.io/manifest/#dfn-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "fingerprint"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "fingerprints-member",
+        "href": "https://w3c.github.io/manifest/#fingerprints-member",
+        "title": "fingerprints member",
+        "number": "4.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-value",
+      "href": "https://w3c.github.io/manifest/#dfn-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "fingerprint"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "fingerprints-member",
+        "href": "https://w3c.github.io/manifest/#fingerprints-member",
+        "title": "fingerprints member",
+        "number": "4.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-installed",
+      "href": "https://w3c.github.io/manifest/#dfn-installed",
+      "linkingText": [
+        "installed",
+        "install",
+        "installing",
+        "installation"
+      ],
+      "localLinkingText": [
+        "installing",
+        "installation"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "installable-web-applications",
+        "href": "https://w3c.github.io/manifest/#installable-web-applications",
+        "title": "Installable web applications",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-installed-web-application",
+      "href": "https://w3c.github.io/manifest/#dfn-installed-web-application",
+      "linkingText": [
+        "installed web application"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "installable-web-applications",
+        "href": "https://w3c.github.io/manifest/#installable-web-applications",
+        "title": "Installable web applications",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-application-s-name",
+      "href": "https://w3c.github.io/manifest/#dfn-application-s-name",
+      "linkingText": [
+        "application's name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "application-s-name",
+        "href": "https://w3c.github.io/manifest/#application-s-name",
+        "title": "Application's name",
+        "number": "5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-navigation-scope",
+      "href": "https://w3c.github.io/manifest/#dfn-navigation-scope",
+      "linkingText": [
+        "navigation scope",
+        "navigation scope of a manifest"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "manifest"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "nav-scope",
+        "href": "https://w3c.github.io/manifest/#nav-scope",
+        "title": "Navigation scope",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-within-scope",
+      "href": "https://w3c.github.io/manifest/#dfn-within-scope",
+      "linkingText": [
+        "within scope"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "URL"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "nav-scope",
+        "href": "https://w3c.github.io/manifest/#nav-scope",
+        "title": "Navigation scope",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-within-scope-0",
+      "href": "https://w3c.github.io/manifest/#dfn-within-scope-0",
+      "linkingText": [
+        "within scope"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "manifest"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "nav-scope",
+        "href": "https://w3c.github.io/manifest/#nav-scope",
+        "title": "Navigation scope",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-deep-link",
+      "href": "https://w3c.github.io/manifest/#dfn-deep-link",
+      "linkingText": [
+        "deep link"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "deep-links",
+        "href": "https://w3c.github.io/manifest/#deep-links",
+        "title": "Deep links",
+        "number": "6.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-default-display-mode",
+      "href": "https://w3c.github.io/manifest/#dfn-default-display-mode",
+      "linkingText": [
+        "default display mode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "choosing-a-display-mode",
+        "href": "https://w3c.github.io/manifest/#choosing-a-display-mode",
+        "title": "Choosing a display mode",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-fallback-chain",
+      "href": "https://w3c.github.io/manifest/#dfn-fallback-chain",
+      "linkingText": [
+        "fallback chain"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "choosing-a-display-mode",
+        "href": "https://w3c.github.io/manifest/#choosing-a-display-mode",
+        "title": "Choosing a display mode",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-steps-for-determining-the-web-app-s-chosen-display-mode",
+      "href": "https://w3c.github.io/manifest/#dfn-steps-for-determining-the-web-app-s-chosen-display-mode",
+      "linkingText": [
+        "steps for determining the web app's chosen display mode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "choosing-a-display-mode",
+        "href": "https://w3c.github.io/manifest/#choosing-a-display-mode",
+        "title": "Choosing a display mode",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-display-modes-list",
+      "href": "https://w3c.github.io/manifest/#dfn-display-modes-list",
+      "linkingText": [
+        "display modes list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "choosing-a-display-mode",
+        "href": "https://w3c.github.io/manifest/#choosing-a-display-mode",
+        "title": "Choosing a display mode",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-application-manifest-json",
+      "href": "https://w3c.github.io/manifest/#dfn-application-manifest-json",
+      "linkingText": [
+        "application/manifest+json"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "iana-considerations",
+        "href": "https://w3c.github.io/manifest/#iana-considerations",
+        "title": "IANA considerations",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-application-manifest-media-type",
+      "href": "https://w3c.github.io/manifest/#dfn-application-manifest-media-type",
+      "linkingText": [
+        "application manifest media type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "iana-considerations",
+        "href": "https://w3c.github.io/manifest/#iana-considerations",
+        "title": "IANA considerations",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    }
+  ]
+}

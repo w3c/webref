@@ -1,0 +1,595 @@
+{
+  "name": "VTTCue",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebVTT: The Web Video Text Tracks Format",
+      "url": "https://www.w3.org/TR/webvtt1/"
+    },
+    "fragment": "[Exposed=Window]\ninterface VTTCue : TextTrackCue {\n  constructor(double startTime, unrestricted double endTime, DOMString text);\n  attribute VTTRegion? region;\n  attribute DirectionSetting vertical;\n  attribute boolean snapToLines;\n  attribute LineAndPositionSetting line;\n  attribute LineAlignSetting lineAlign;\n  attribute LineAndPositionSetting position;\n  attribute PositionAlignSetting positionAlign;\n  attribute double size;\n  attribute AlignSetting align;\n  attribute DOMString text;\n  DocumentFragment getCueAsHTML();\n};",
+    "href": "https://w3c.github.io/webvtt/#vttcue"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "TextTrackCue",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "HTML Standard",
+        "url": "https://html.spec.whatwg.org/multipage/"
+      },
+      "fragment": "[Exposed=Window]\ninterface TextTrackCue : EventTarget {\n  readonly attribute TextTrack? track;\n\n  attribute DOMString id;\n  attribute double startTime;\n  attribute unrestricted double endTime;\n  attribute boolean pauseOnExit;\n\n  attribute EventHandler onenter;\n  attribute EventHandler onexit;\n};",
+      "href": "https://html.spec.whatwg.org/multipage/media.html#texttrackcue"
+    },
+    "extended": [],
+    "inheritance": {
+      "name": "EventTarget",
+      "type": "interface",
+      "defined": {
+        "spec": {
+          "title": "DOM Standard",
+          "url": "https://dom.spec.whatwg.org/"
+        },
+        "fragment": "[Exposed=*]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+        "href": "https://dom.spec.whatwg.org/#eventtarget"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webvtt1/": [
+      {
+        "id": "vttcue",
+        "href": "https://w3c.github.io/webvtt/#vttcue",
+        "linkingText": [
+          "VTTCue"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-vttcue-interface",
+          "href": "https://w3c.github.io/webvtt/#the-vttcue-interface",
+          "title": "The VTTCue interface",
+          "number": "9.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-vttcue-vttcue",
+        "href": "https://w3c.github.io/webvtt/#dom-vttcue-vttcue",
+        "linkingText": [
+          "VTTCue(startTime, endTime, text)",
+          "constructor(startTime, endTime, text)"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "VTTCue"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-vttcue-interface",
+          "href": "https://w3c.github.io/webvtt/#the-vttcue-interface",
+          "title": "The VTTCue interface",
+          "number": "9.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-vttcue-region",
+        "href": "https://w3c.github.io/webvtt/#dom-vttcue-region",
+        "linkingText": [
+          "region"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "VTTCue"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-vttcue-interface",
+          "href": "https://w3c.github.io/webvtt/#the-vttcue-interface",
+          "title": "The VTTCue interface",
+          "number": "9.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-vttcue-vertical",
+        "href": "https://w3c.github.io/webvtt/#dom-vttcue-vertical",
+        "linkingText": [
+          "vertical"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "VTTCue"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-vttcue-interface",
+          "href": "https://w3c.github.io/webvtt/#the-vttcue-interface",
+          "title": "The VTTCue interface",
+          "number": "9.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-vttcue-snaptolines",
+        "href": "https://w3c.github.io/webvtt/#dom-vttcue-snaptolines",
+        "linkingText": [
+          "snapToLines"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "VTTCue"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-vttcue-interface",
+          "href": "https://w3c.github.io/webvtt/#the-vttcue-interface",
+          "title": "The VTTCue interface",
+          "number": "9.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-vttcue-line",
+        "href": "https://w3c.github.io/webvtt/#dom-vttcue-line",
+        "linkingText": [
+          "line"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "VTTCue"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-vttcue-interface",
+          "href": "https://w3c.github.io/webvtt/#the-vttcue-interface",
+          "title": "The VTTCue interface",
+          "number": "9.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-vttcue-linealign",
+        "href": "https://w3c.github.io/webvtt/#dom-vttcue-linealign",
+        "linkingText": [
+          "lineAlign"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "VTTCue"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-vttcue-interface",
+          "href": "https://w3c.github.io/webvtt/#the-vttcue-interface",
+          "title": "The VTTCue interface",
+          "number": "9.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-vttcue-position",
+        "href": "https://w3c.github.io/webvtt/#dom-vttcue-position",
+        "linkingText": [
+          "position"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "VTTCue"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-vttcue-interface",
+          "href": "https://w3c.github.io/webvtt/#the-vttcue-interface",
+          "title": "The VTTCue interface",
+          "number": "9.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-vttcue-positionalign",
+        "href": "https://w3c.github.io/webvtt/#dom-vttcue-positionalign",
+        "linkingText": [
+          "positionAlign"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "VTTCue"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-vttcue-interface",
+          "href": "https://w3c.github.io/webvtt/#the-vttcue-interface",
+          "title": "The VTTCue interface",
+          "number": "9.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-vttcue-size",
+        "href": "https://w3c.github.io/webvtt/#dom-vttcue-size",
+        "linkingText": [
+          "size"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "VTTCue"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-vttcue-interface",
+          "href": "https://w3c.github.io/webvtt/#the-vttcue-interface",
+          "title": "The VTTCue interface",
+          "number": "9.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-vttcue-align",
+        "href": "https://w3c.github.io/webvtt/#dom-vttcue-align",
+        "linkingText": [
+          "align"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "VTTCue"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-vttcue-interface",
+          "href": "https://w3c.github.io/webvtt/#the-vttcue-interface",
+          "title": "The VTTCue interface",
+          "number": "9.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-vttcue-text",
+        "href": "https://w3c.github.io/webvtt/#dom-vttcue-text",
+        "linkingText": [
+          "text"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "VTTCue"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-vttcue-interface",
+          "href": "https://w3c.github.io/webvtt/#the-vttcue-interface",
+          "title": "The VTTCue interface",
+          "number": "9.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-vttcue-getcueashtml",
+        "href": "https://w3c.github.io/webvtt/#dom-vttcue-getcueashtml",
+        "linkingText": [
+          "getCueAsHTML()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "VTTCue"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-vttcue-interface",
+          "href": "https://w3c.github.io/webvtt/#the-vttcue-interface",
+          "title": "The VTTCue interface",
+          "number": "9.1"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://html.spec.whatwg.org/multipage/": [
+      {
+        "id": "texttrackcue",
+        "href": "https://html.spec.whatwg.org/multipage/media.html#texttrackcue",
+        "linkingText": [
+          "TextTrackCue"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "text-track-api",
+          "href": "https://html.spec.whatwg.org/multipage/media.html#text-track-api",
+          "title": "Text track API",
+          "number": "4.8.12.11.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-texttrackcue-track",
+        "href": "https://html.spec.whatwg.org/multipage/media.html#dom-texttrackcue-track",
+        "linkingText": [
+          "track"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "TextTrackCue"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "text-track-api",
+          "href": "https://html.spec.whatwg.org/multipage/media.html#text-track-api",
+          "title": "Text track API",
+          "number": "4.8.12.11.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-texttrackcue-id",
+        "href": "https://html.spec.whatwg.org/multipage/media.html#dom-texttrackcue-id",
+        "linkingText": [
+          "id"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "TextTrackCue"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "text-track-api",
+          "href": "https://html.spec.whatwg.org/multipage/media.html#text-track-api",
+          "title": "Text track API",
+          "number": "4.8.12.11.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-texttrackcue-starttime",
+        "href": "https://html.spec.whatwg.org/multipage/media.html#dom-texttrackcue-starttime",
+        "linkingText": [
+          "startTime"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "TextTrackCue"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "text-track-api",
+          "href": "https://html.spec.whatwg.org/multipage/media.html#text-track-api",
+          "title": "Text track API",
+          "number": "4.8.12.11.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-texttrackcue-endtime",
+        "href": "https://html.spec.whatwg.org/multipage/media.html#dom-texttrackcue-endtime",
+        "linkingText": [
+          "endTime"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "TextTrackCue"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "text-track-api",
+          "href": "https://html.spec.whatwg.org/multipage/media.html#text-track-api",
+          "title": "Text track API",
+          "number": "4.8.12.11.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-texttrackcue-pauseonexit",
+        "href": "https://html.spec.whatwg.org/multipage/media.html#dom-texttrackcue-pauseonexit",
+        "linkingText": [
+          "pauseOnExit"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "TextTrackCue"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "text-track-api",
+          "href": "https://html.spec.whatwg.org/multipage/media.html#text-track-api",
+          "title": "Text track API",
+          "number": "4.8.12.11.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "handler-texttrackcue-onenter",
+        "href": "https://html.spec.whatwg.org/multipage/media.html#handler-texttrackcue-onenter",
+        "linkingText": [
+          "onenter"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "TextTrackCue"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "cue-events",
+          "href": "https://html.spec.whatwg.org/multipage/media.html#cue-events",
+          "title": "Event handlers for objects of the text track APIs",
+          "number": "4.8.12.11.6"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-texttrackcue-onexit",
+        "href": "https://html.spec.whatwg.org/multipage/media.html#handler-texttrackcue-onexit",
+        "linkingText": [
+          "onexit"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "TextTrackCue"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "cue-events",
+          "href": "https://html.spec.whatwg.org/multipage/media.html#cue-events",
+          "title": "Event handlers for objects of the text track APIs",
+          "number": "4.8.12.11.6"
+        },
+        "definedIn": "table"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "eventtarget",
+        "href": "https://dom.spec.whatwg.org/#eventtarget",
+        "linkingText": [
+          "EventTarget"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventtarget-eventtarget",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-eventtarget",
+        "linkingText": [
+          "EventTarget()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-addeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-addeventlistener",
+        "linkingText": [
+          "addEventListener(type, callback, options)",
+          "addEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-removeeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-removeeventlistener",
+        "linkingText": [
+          "removeEventListener(type, callback, options)",
+          "removeEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-dispatchevent",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-dispatchevent",
+        "linkingText": [
+          "dispatchEvent(event)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

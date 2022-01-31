@@ -1,0 +1,255 @@
+{
+  "name": "ScrollTimeline",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Scroll-linked Animations",
+      "url": "https://drafts.csswg.org/scroll-animations-1/"
+    },
+    "fragment": "[Exposed=Window]\ninterface ScrollTimeline : AnimationTimeline {\n  constructor(optional ScrollTimelineOptions options = {});\n  readonly attribute Element? source;\n  readonly attribute ScrollDirection orientation;\n  readonly attribute FrozenArray<ScrollTimelineOffset> scrollOffsets;\n};",
+    "href": "https://drafts.csswg.org/scroll-animations-1/#scrolltimeline"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "AnimationTimeline",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "Web Animations",
+        "url": "https://www.w3.org/TR/web-animations-1/"
+      },
+      "fragment": "[Exposed=Window]\ninterface AnimationTimeline {\n    readonly attribute double? currentTime;\n    readonly attribute TimelinePhase phase;\n};",
+      "href": "https://drafts.csswg.org/web-animations-1/#animationtimeline"
+    },
+    "extended": [
+      {
+        "spec": {
+          "title": "Web Animations Level 2",
+          "url": "https://drafts.csswg.org/web-animations-2/"
+        },
+        "fragment": "[Exposed=Window]\npartial interface AnimationTimeline {\n    readonly attribute CSSNumberish? duration;\n    Animation play (optional AnimationEffect? effect = null);\n};"
+      }
+    ],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://drafts.csswg.org/scroll-animations-1/": [
+      {
+        "id": "scrolltimeline",
+        "href": "https://drafts.csswg.org/scroll-animations-1/#scrolltimeline",
+        "linkingText": [
+          "ScrollTimeline"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "scrolltimeline-interface",
+          "href": "https://drafts.csswg.org/scroll-animations-1/#scrolltimeline-interface",
+          "title": "The ScrollTimeline interface",
+          "number": "3.1.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-scrolltimeline-scrolltimeline",
+        "href": "https://drafts.csswg.org/scroll-animations-1/#dom-scrolltimeline-scrolltimeline",
+        "linkingText": [
+          "ScrollTimeline(options)",
+          "constructor(options)",
+          "ScrollTimeline()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "ScrollTimeline"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "scrolltimeline-interface",
+          "href": "https://drafts.csswg.org/scroll-animations-1/#scrolltimeline-interface",
+          "title": "The ScrollTimeline interface",
+          "number": "3.1.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-scrolltimeline-source",
+        "href": "https://drafts.csswg.org/scroll-animations-1/#dom-scrolltimeline-source",
+        "linkingText": [
+          "source"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "ScrollTimeline"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "scrolltimeline-interface",
+          "href": "https://drafts.csswg.org/scroll-animations-1/#scrolltimeline-interface",
+          "title": "The ScrollTimeline interface",
+          "number": "3.1.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-scrolltimeline-orientation",
+        "href": "https://drafts.csswg.org/scroll-animations-1/#dom-scrolltimeline-orientation",
+        "linkingText": [
+          "orientation"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "ScrollTimeline"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "scrolltimeline-interface",
+          "href": "https://drafts.csswg.org/scroll-animations-1/#scrolltimeline-interface",
+          "title": "The ScrollTimeline interface",
+          "number": "3.1.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-scrolltimeline-scrolloffsets",
+        "href": "https://drafts.csswg.org/scroll-animations-1/#dom-scrolltimeline-scrolloffsets",
+        "linkingText": [
+          "scrollOffsets"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "ScrollTimeline"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "scrolltimeline-interface",
+          "href": "https://drafts.csswg.org/scroll-animations-1/#scrolltimeline-interface",
+          "title": "The ScrollTimeline interface",
+          "number": "3.1.2"
+        },
+        "definedIn": "dt"
+      }
+    ],
+    "https://www.w3.org/TR/web-animations-1/": [
+      {
+        "id": "animationtimeline",
+        "href": "https://drafts.csswg.org/web-animations-1/#animationtimeline",
+        "linkingText": [
+          "AnimationTimeline"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-animationtimeline-interface",
+          "href": "https://drafts.csswg.org/web-animations-1/#the-animationtimeline-interface",
+          "title": "The AnimationTimeline interface",
+          "number": "6.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-animationtimeline-currenttime",
+        "href": "https://drafts.csswg.org/web-animations-1/#dom-animationtimeline-currenttime",
+        "linkingText": [
+          "currentTime"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "AnimationTimeline"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-animationtimeline-interface",
+          "href": "https://drafts.csswg.org/web-animations-1/#the-animationtimeline-interface",
+          "title": "The AnimationTimeline interface",
+          "number": "6.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-animationtimeline-phase",
+        "href": "https://drafts.csswg.org/web-animations-1/#dom-animationtimeline-phase",
+        "linkingText": [
+          "phase"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "AnimationTimeline"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-animationtimeline-interface",
+          "href": "https://drafts.csswg.org/web-animations-1/#the-animationtimeline-interface",
+          "title": "The AnimationTimeline interface",
+          "number": "6.2"
+        },
+        "definedIn": "dt"
+      }
+    ],
+    "https://drafts.csswg.org/web-animations-2/": [
+      {
+        "id": "dom-animationtimeline-duration",
+        "href": "https://drafts.csswg.org/web-animations-2/#dom-animationtimeline-duration",
+        "linkingText": [
+          "duration"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "AnimationTimeline"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-animationtimeline-interface",
+          "href": "https://drafts.csswg.org/web-animations-2/#the-animationtimeline-interface",
+          "title": "The AnimationTimeline interface",
+          "number": "5.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-animationtimeline-play",
+        "href": "https://drafts.csswg.org/web-animations-2/#dom-animationtimeline-play",
+        "linkingText": [
+          "play(effect)",
+          "play()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "AnimationTimeline"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-animationtimeline-interface",
+          "href": "https://drafts.csswg.org/web-animations-2/#the-animationtimeline-interface",
+          "title": "The AnimationTimeline interface",
+          "number": "5.1"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

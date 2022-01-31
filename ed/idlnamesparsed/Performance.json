@@ -1,0 +1,631 @@
+{
+  "name": "Performance",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "High Resolution Time",
+      "url": "https://www.w3.org/TR/hr-time-3/"
+    },
+    "fragment": "[Exposed=*]\ninterface Performance : EventTarget {\n    DOMHighResTimeStamp now();\n    readonly attribute DOMHighResTimeStamp timeOrigin;\n    [Default] object toJSON();\n};",
+    "href": "https://w3c.github.io/hr-time/#dom-performance"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "Event Timing API",
+        "url": "https://wicg.github.io/event-timing/"
+      },
+      "fragment": "[Exposed=Window]\npartial interface Performance {\n    [SameObject] readonly attribute EventCounts eventCounts;\n    [SameObject] readonly attribute InteractionCounts interactionCounts;\n};"
+    },
+    {
+      "spec": {
+        "title": "Measure Memory API",
+        "url": "https://wicg.github.io/performance-measure-memory/"
+      },
+      "fragment": "partial interface Performance {\n  [Exposed=(Window,ServiceWorker,SharedWorker), CrossOriginIsolated] Promise<MemoryMeasurement> measureUserAgentSpecificMemory();\n};"
+    },
+    {
+      "spec": {
+        "title": "Navigation Timing Level 2",
+        "url": "https://www.w3.org/TR/navigation-timing-2/"
+      },
+      "fragment": "[Exposed=Window]\npartial interface Performance {\n  [SameObject]\n  readonly attribute PerformanceTiming timing;\n  [SameObject]\n  readonly attribute PerformanceNavigation navigation;\n};"
+    },
+    {
+      "spec": {
+        "title": "Performance Timeline Level 2",
+        "url": "https://www.w3.org/TR/performance-timeline/"
+      },
+      "fragment": "partial interface Performance {\n  PerformanceEntryList getEntries ();\n  PerformanceEntryList getEntriesByType (DOMString type);\n  PerformanceEntryList getEntriesByName (DOMString name, optional DOMString type);\n};"
+    },
+    {
+      "spec": {
+        "title": "Resource Timing Level 2",
+        "url": "https://www.w3.org/TR/resource-timing-2/"
+      },
+      "fragment": "partial interface Performance {\n  undefined clearResourceTimings ();\n  undefined setResourceTimingBufferSize (unsigned long maxSize);\n  attribute EventHandler onresourcetimingbufferfull;\n};"
+    },
+    {
+      "spec": {
+        "title": "User Timing Level 3",
+        "url": "https://www.w3.org/TR/user-timing/"
+      },
+      "fragment": "partial interface Performance {\n    PerformanceMark mark(DOMString markName, optional PerformanceMarkOptions markOptions = {});\n    undefined clearMarks(optional DOMString markName);\n    PerformanceMeasure measure(DOMString measureName, optional (DOMString or PerformanceMeasureOptions) startOrMeasureOptions = {}, optional DOMString endMark);\n    undefined clearMeasures(optional DOMString measureName);\n};"
+    }
+  ],
+  "inheritance": {
+    "name": "EventTarget",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=*]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+      "href": "https://dom.spec.whatwg.org/#eventtarget"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/hr-time-3/": [
+      {
+        "id": "dom-performance",
+        "href": "https://w3c.github.io/hr-time/#dom-performance",
+        "linkingText": [
+          "Performance"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "sec-performance",
+          "href": "https://w3c.github.io/hr-time/#sec-performance",
+          "title": "The Performance interface",
+          "number": "5"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-performance-now",
+        "href": "https://w3c.github.io/hr-time/#dom-performance-now",
+        "linkingText": [
+          "now()"
+        ],
+        "localLinkingText": [
+          "Performance.now",
+          "Performance.now()",
+          "now"
+        ],
+        "type": "method",
+        "for": [
+          "Performance"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "now-method",
+          "href": "https://w3c.github.io/hr-time/#now-method",
+          "title": "now() method",
+          "number": "5.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-performance-timeorigin",
+        "href": "https://w3c.github.io/hr-time/#dom-performance-timeorigin",
+        "linkingText": [
+          "timeOrigin"
+        ],
+        "localLinkingText": [
+          "Performance.timeOrigin"
+        ],
+        "type": "attribute",
+        "for": [
+          "Performance"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "timeorigin-attribute",
+          "href": "https://w3c.github.io/hr-time/#timeorigin-attribute",
+          "title": "timeOrigin attribute",
+          "number": "5.2"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://wicg.github.io/event-timing/": [
+      {
+        "id": "dom-performance-eventcounts",
+        "href": "https://wicg.github.io/event-timing/#dom-performance-eventcounts",
+        "linkingText": [
+          "eventCounts"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Performance"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "sec-extensions",
+          "href": "https://wicg.github.io/event-timing/#sec-extensions",
+          "title": "Extensions to the Performance interface",
+          "number": "2.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-performance-interactioncounts",
+        "href": "https://wicg.github.io/event-timing/#dom-performance-interactioncounts",
+        "linkingText": [
+          "interactionCounts"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Performance"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "sec-extensions",
+          "href": "https://wicg.github.io/event-timing/#sec-extensions",
+          "title": "Extensions to the Performance interface",
+          "number": "2.4"
+        },
+        "definedIn": "pre"
+      }
+    ],
+    "https://wicg.github.io/performance-measure-memory/": [
+      {
+        "id": "dom-performance-measureuseragentspecificmemory",
+        "href": "https://wicg.github.io/performance-measure-memory/#dom-performance-measureuseragentspecificmemory",
+        "linkingText": [
+          "measureUserAgentSpecificMemory()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Performance"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "top-level-algorithms",
+          "href": "https://wicg.github.io/performance-measure-memory/#top-level-algorithms",
+          "title": "Top-level algorithms",
+          "number": "3.2"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://www.w3.org/TR/navigation-timing-2/": [
+      {
+        "id": "dom-performance-timing",
+        "href": "https://w3c.github.io/navigation-timing/#dom-performance-timing",
+        "linkingText": [
+          "timing"
+        ],
+        "localLinkingText": [
+          "Performance.timing"
+        ],
+        "type": "attribute",
+        "for": [
+          "Performance"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "extensions-to-the-performance-interface",
+          "href": "https://w3c.github.io/navigation-timing/#extensions-to-the-performance-interface",
+          "title": "Extensions to the Performance interface",
+          "number": "5.3.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-performance-navigation",
+        "href": "https://w3c.github.io/navigation-timing/#dom-performance-navigation",
+        "linkingText": [
+          "navigation"
+        ],
+        "localLinkingText": [
+          "Performance.navigation"
+        ],
+        "type": "attribute",
+        "for": [
+          "Performance"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "extensions-to-the-performance-interface",
+          "href": "https://w3c.github.io/navigation-timing/#extensions-to-the-performance-interface",
+          "title": "Extensions to the Performance interface",
+          "number": "5.3.3"
+        },
+        "definedIn": "dt"
+      }
+    ],
+    "https://www.w3.org/TR/performance-timeline/": [
+      {
+        "id": "dom-performance-getentries",
+        "href": "https://w3c.github.io/performance-timeline/#dom-performance-getentries",
+        "linkingText": [
+          "getEntries()"
+        ],
+        "localLinkingText": [
+          "Performance.getEntries",
+          "Performance.getEntries()",
+          "getEntries"
+        ],
+        "type": "method",
+        "for": [
+          "Performance"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "getentries-method",
+          "href": "https://w3c.github.io/performance-timeline/#getentries-method",
+          "title": "getEntries() method",
+          "number": "3.1.1"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-performance-getentriesbytype",
+        "href": "https://w3c.github.io/performance-timeline/#dom-performance-getentriesbytype",
+        "linkingText": [
+          "getEntriesByType()",
+          "getEntriesByType(type)"
+        ],
+        "localLinkingText": [
+          "Performance.getEntriesByType",
+          "Performance.getEntriesByType()",
+          "getEntriesByType"
+        ],
+        "type": "method",
+        "for": [
+          "Performance"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "getentriesbytype-method",
+          "href": "https://w3c.github.io/performance-timeline/#getentriesbytype-method",
+          "title": "getEntriesByType() method",
+          "number": "3.1.2"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-performance-getentriesbyname",
+        "href": "https://w3c.github.io/performance-timeline/#dom-performance-getentriesbyname",
+        "linkingText": [
+          "getEntriesByName()",
+          "getEntriesByName(name)",
+          "getEntriesByName(name, type)"
+        ],
+        "localLinkingText": [
+          "Performance.getEntriesByName",
+          "Performance.getEntriesByName()",
+          "getEntriesByName"
+        ],
+        "type": "method",
+        "for": [
+          "Performance"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "getentriesbyname-method",
+          "href": "https://w3c.github.io/performance-timeline/#getentriesbyname-method",
+          "title": "getEntriesByName() method",
+          "number": "3.1.3"
+        },
+        "definedIn": "heading"
+      }
+    ],
+    "https://www.w3.org/TR/resource-timing-2/": [
+      {
+        "id": "dom-performance-clearresourcetimings",
+        "href": "https://w3c.github.io/resource-timing/#dom-performance-clearresourcetimings",
+        "linkingText": [
+          "clearResourceTimings()"
+        ],
+        "localLinkingText": [
+          "Performance.clearResourceTimings",
+          "Performance.clearResourceTimings()",
+          "clearResourceTimings"
+        ],
+        "type": "method",
+        "for": [
+          "Performance"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "sec-extensions-performance-interface",
+          "href": "https://w3c.github.io/resource-timing/#sec-extensions-performance-interface",
+          "title": "Extensions to the Performance Interface",
+          "number": "4.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-performance-setresourcetimingbuffersize",
+        "href": "https://w3c.github.io/resource-timing/#dom-performance-setresourcetimingbuffersize",
+        "linkingText": [
+          "setResourceTimingBufferSize()",
+          "setResourceTimingBufferSize(maxSize)"
+        ],
+        "localLinkingText": [
+          "Performance.setResourceTimingBufferSize",
+          "Performance.setResourceTimingBufferSize()",
+          "setResourceTimingBufferSize"
+        ],
+        "type": "method",
+        "for": [
+          "Performance"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "sec-extensions-performance-interface",
+          "href": "https://w3c.github.io/resource-timing/#sec-extensions-performance-interface",
+          "title": "Extensions to the Performance Interface",
+          "number": "4.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-performance-onresourcetimingbufferfull",
+        "href": "https://w3c.github.io/resource-timing/#dom-performance-onresourcetimingbufferfull",
+        "linkingText": [
+          "onresourcetimingbufferfull"
+        ],
+        "localLinkingText": [
+          "Performance.onresourcetimingbufferfull"
+        ],
+        "type": "attribute",
+        "for": [
+          "Performance"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "sec-extensions-performance-interface",
+          "href": "https://w3c.github.io/resource-timing/#sec-extensions-performance-interface",
+          "title": "Extensions to the Performance Interface",
+          "number": "4.4"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://www.w3.org/TR/user-timing/": [
+      {
+        "id": "dom-performance-mark",
+        "href": "https://w3c.github.io/user-timing/#dom-performance-mark",
+        "linkingText": [
+          "mark()",
+          "mark(markName)",
+          "mark(markName, markOptions)"
+        ],
+        "localLinkingText": [
+          "Performance.mark",
+          "Performance.mark()",
+          "mark"
+        ],
+        "type": "method",
+        "for": [
+          "Performance"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "mark-method",
+          "href": "https://w3c.github.io/user-timing/#mark-method",
+          "title": "mark() method",
+          "number": "3.1.1"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-performance-clearmarks",
+        "href": "https://w3c.github.io/user-timing/#dom-performance-clearmarks",
+        "linkingText": [
+          "clearMarks()",
+          "clearMarks(markName)"
+        ],
+        "localLinkingText": [
+          "Performance.clearMarks",
+          "Performance.clearMarks()",
+          "clearMarks"
+        ],
+        "type": "method",
+        "for": [
+          "Performance"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "clearmarks-method",
+          "href": "https://w3c.github.io/user-timing/#clearmarks-method",
+          "title": "clearMarks() method",
+          "number": "3.1.2"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-performance-measure",
+        "href": "https://w3c.github.io/user-timing/#dom-performance-measure",
+        "linkingText": [
+          "measure()",
+          "measure(measureName)",
+          "measure(measureName, startOrMeasureOptions)",
+          "measure(measureName, startOrMeasureOptions, endMark)"
+        ],
+        "localLinkingText": [
+          "Performance.measure",
+          "Performance.measure()",
+          "measure"
+        ],
+        "type": "method",
+        "for": [
+          "Performance"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "measure-method",
+          "href": "https://w3c.github.io/user-timing/#measure-method",
+          "title": "measure() method",
+          "number": "3.1.3"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-performance-clearmeasures",
+        "href": "https://w3c.github.io/user-timing/#dom-performance-clearmeasures",
+        "linkingText": [
+          "clearMeasures()",
+          "clearMeasures(measureName)"
+        ],
+        "localLinkingText": [
+          "Performance.clearMeasures",
+          "Performance.clearMeasures()",
+          "clearMeasures"
+        ],
+        "type": "method",
+        "for": [
+          "Performance"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "clearmeasures-method",
+          "href": "https://w3c.github.io/user-timing/#clearmeasures-method",
+          "title": "clearMeasures() method",
+          "number": "3.1.4"
+        },
+        "definedIn": "heading"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "eventtarget",
+        "href": "https://dom.spec.whatwg.org/#eventtarget",
+        "linkingText": [
+          "EventTarget"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventtarget-eventtarget",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-eventtarget",
+        "linkingText": [
+          "EventTarget()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-addeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-addeventlistener",
+        "linkingText": [
+          "addEventListener(type, callback, options)",
+          "addEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-removeeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-removeeventlistener",
+        "linkingText": [
+          "removeEventListener(type, callback, options)",
+          "removeEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-dispatchevent",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-dispatchevent",
+        "linkingText": [
+          "dispatchEvent(event)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

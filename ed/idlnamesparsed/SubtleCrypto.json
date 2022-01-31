@@ -1,0 +1,349 @@
+{
+  "name": "SubtleCrypto",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Web Cryptography API",
+      "url": "https://www.w3.org/TR/WebCryptoAPI/"
+    },
+    "fragment": "[SecureContext,Exposed=(Window,Worker)]\ninterface SubtleCrypto {\n  Promise<any> encrypt(AlgorithmIdentifier algorithm,\n                       CryptoKey key,\n                       BufferSource data);\n  Promise<any> decrypt(AlgorithmIdentifier algorithm,\n                       CryptoKey key,\n                       BufferSource data);\n  Promise<any> sign(AlgorithmIdentifier algorithm,\n                    CryptoKey key,\n                    BufferSource data);\n  Promise<any> verify(AlgorithmIdentifier algorithm,\n                      CryptoKey key,\n                      BufferSource signature,\n                      BufferSource data);\n  Promise<any> digest(AlgorithmIdentifier algorithm,\n                      BufferSource data);\n\n  Promise<any> generateKey(AlgorithmIdentifier algorithm,\n                          boolean extractable,\n                          sequence<KeyUsage> keyUsages );\n  Promise<any> deriveKey(AlgorithmIdentifier algorithm,\n                         CryptoKey baseKey,\n                         AlgorithmIdentifier derivedKeyType,\n                         boolean extractable,\n                         sequence<KeyUsage> keyUsages );\n  Promise<ArrayBuffer> deriveBits(AlgorithmIdentifier algorithm,\n                          CryptoKey baseKey,\n                          unsigned long length);\n\n  Promise<CryptoKey> importKey(KeyFormat format,\n                         (BufferSource or JsonWebKey) keyData,\n                         AlgorithmIdentifier algorithm,\n                         boolean extractable,\n                         sequence<KeyUsage> keyUsages );\n  Promise<any> exportKey(KeyFormat format, CryptoKey key);\n\n  Promise<any> wrapKey(KeyFormat format,\n                       CryptoKey key,\n                       CryptoKey wrappingKey,\n                       AlgorithmIdentifier wrapAlgorithm);\n  Promise<CryptoKey> unwrapKey(KeyFormat format,\n                         BufferSource wrappedKey,\n                         CryptoKey unwrappingKey,\n                         AlgorithmIdentifier unwrapAlgorithm,\n                         AlgorithmIdentifier unwrappedKeyAlgorithm,\n                         boolean extractable,\n                         sequence<KeyUsage> keyUsages );\n};",
+    "href": "https://w3c.github.io/webcrypto/#dfn-SubtleCrypto"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/WebCryptoAPI/": [
+      {
+        "id": "dfn-SubtleCrypto",
+        "href": "https://w3c.github.io/webcrypto/#dfn-SubtleCrypto",
+        "linkingText": [
+          "SubtleCrypto"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "subtlecrypto-interface",
+          "href": "https://w3c.github.io/webcrypto/#subtlecrypto-interface",
+          "title": "14. SubtleCrypto interface"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dfn-SubtleCrypto-method-encrypt",
+        "href": "https://w3c.github.io/webcrypto/#dfn-SubtleCrypto-method-encrypt",
+        "linkingText": [
+          "encrypt()",
+          "encrypt(algorithm, key, data)"
+        ],
+        "localLinkingText": [
+          "SubtleCrypto.encrypt",
+          "SubtleCrypto.encrypt()",
+          "encrypt"
+        ],
+        "type": "method",
+        "for": [
+          "SubtleCrypto"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "SubtleCrypto-method-encrypt",
+          "href": "https://w3c.github.io/webcrypto/#SubtleCrypto-method-encrypt",
+          "title": "The encrypt method",
+          "number": "14.2.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dfn-SubtleCrypto-method-decrypt",
+        "href": "https://w3c.github.io/webcrypto/#dfn-SubtleCrypto-method-decrypt",
+        "linkingText": [
+          "decrypt()",
+          "decrypt(algorithm, key, data)"
+        ],
+        "localLinkingText": [
+          "SubtleCrypto.decrypt",
+          "SubtleCrypto.decrypt()",
+          "decrypt"
+        ],
+        "type": "method",
+        "for": [
+          "SubtleCrypto"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "SubtleCrypto-method-decrypt",
+          "href": "https://w3c.github.io/webcrypto/#SubtleCrypto-method-decrypt",
+          "title": "The decrypt method",
+          "number": "14.2.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dfn-SubtleCrypto-method-sign",
+        "href": "https://w3c.github.io/webcrypto/#dfn-SubtleCrypto-method-sign",
+        "linkingText": [
+          "sign()",
+          "sign(algorithm, key, data)"
+        ],
+        "localLinkingText": [
+          "SubtleCrypto.sign",
+          "SubtleCrypto.sign()",
+          "sign"
+        ],
+        "type": "method",
+        "for": [
+          "SubtleCrypto"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "SubtleCrypto-method-sign",
+          "href": "https://w3c.github.io/webcrypto/#SubtleCrypto-method-sign",
+          "title": "The sign method",
+          "number": "14.2.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dfn-SubtleCrypto-method-verify",
+        "href": "https://w3c.github.io/webcrypto/#dfn-SubtleCrypto-method-verify",
+        "linkingText": [
+          "verify()",
+          "verify(algorithm, key, signature, data)"
+        ],
+        "localLinkingText": [
+          "SubtleCrypto.verify",
+          "SubtleCrypto.verify()",
+          "verify"
+        ],
+        "type": "method",
+        "for": [
+          "SubtleCrypto"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "SubtleCrypto-method-verify",
+          "href": "https://w3c.github.io/webcrypto/#SubtleCrypto-method-verify",
+          "title": "The verify method",
+          "number": "14.2.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dfn-SubtleCrypto-method-digest",
+        "href": "https://w3c.github.io/webcrypto/#dfn-SubtleCrypto-method-digest",
+        "linkingText": [
+          "digest()",
+          "digest(algorithm, data)"
+        ],
+        "localLinkingText": [
+          "SubtleCrypto.digest",
+          "SubtleCrypto.digest()",
+          "digest"
+        ],
+        "type": "method",
+        "for": [
+          "SubtleCrypto"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "SubtleCrypto-method-digest",
+          "href": "https://w3c.github.io/webcrypto/#SubtleCrypto-method-digest",
+          "title": "The digest method",
+          "number": "14.2.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dfn-SubtleCrypto-method-generateKey",
+        "href": "https://w3c.github.io/webcrypto/#dfn-SubtleCrypto-method-generateKey",
+        "linkingText": [
+          "generateKey()",
+          "generateKey(algorithm, extractable, keyUsages)"
+        ],
+        "localLinkingText": [
+          "SubtleCrypto.generateKey",
+          "SubtleCrypto.generateKey()",
+          "generateKey"
+        ],
+        "type": "method",
+        "for": [
+          "SubtleCrypto"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "SubtleCrypto-method-generateKey",
+          "href": "https://w3c.github.io/webcrypto/#SubtleCrypto-method-generateKey",
+          "title": "The generateKey method",
+          "number": "14.2.6"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dfn-SubtleCrypto-method-deriveKey",
+        "href": "https://w3c.github.io/webcrypto/#dfn-SubtleCrypto-method-deriveKey",
+        "linkingText": [
+          "deriveKey()",
+          "deriveKey(algorithm, baseKey, derivedKeyType, extractable, keyUsages)"
+        ],
+        "localLinkingText": [
+          "SubtleCrypto.deriveKey",
+          "SubtleCrypto.deriveKey()",
+          "deriveKey"
+        ],
+        "type": "method",
+        "for": [
+          "SubtleCrypto"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "SubtleCrypto-method-deriveKey",
+          "href": "https://w3c.github.io/webcrypto/#SubtleCrypto-method-deriveKey",
+          "title": "The deriveKey method",
+          "number": "14.2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dfn-SubtleCrypto-method-deriveBits",
+        "href": "https://w3c.github.io/webcrypto/#dfn-SubtleCrypto-method-deriveBits",
+        "linkingText": [
+          "deriveBits()",
+          "deriveBits(algorithm, baseKey, length)"
+        ],
+        "localLinkingText": [
+          "SubtleCrypto.deriveBits",
+          "SubtleCrypto.deriveBits()",
+          "deriveBits"
+        ],
+        "type": "method",
+        "for": [
+          "SubtleCrypto"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "SubtleCrypto-method-deriveBits",
+          "href": "https://w3c.github.io/webcrypto/#SubtleCrypto-method-deriveBits",
+          "title": "The deriveBits method",
+          "number": "14.2.8"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dfn-SubtleCrypto-method-importKey",
+        "href": "https://w3c.github.io/webcrypto/#dfn-SubtleCrypto-method-importKey",
+        "linkingText": [
+          "importKey()",
+          "importKey(format, keyData, algorithm, extractable, keyUsages)"
+        ],
+        "localLinkingText": [
+          "SubtleCrypto.importKey",
+          "SubtleCrypto.importKey()",
+          "importKey"
+        ],
+        "type": "method",
+        "for": [
+          "SubtleCrypto"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "SubtleCrypto-method-importKey",
+          "href": "https://w3c.github.io/webcrypto/#SubtleCrypto-method-importKey",
+          "title": "The importKey() method",
+          "number": "14.2.9"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dfn-SubtleCrypto-method-exportKey",
+        "href": "https://w3c.github.io/webcrypto/#dfn-SubtleCrypto-method-exportKey",
+        "linkingText": [
+          "exportKey()",
+          "exportKey(format, key)"
+        ],
+        "localLinkingText": [
+          "SubtleCrypto.exportKey",
+          "SubtleCrypto.exportKey()",
+          "exportKey"
+        ],
+        "type": "method",
+        "for": [
+          "SubtleCrypto"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "SubtleCrypto-method-exportKey",
+          "href": "https://w3c.github.io/webcrypto/#SubtleCrypto-method-exportKey",
+          "title": "The exportKey() method",
+          "number": "14.2.10"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dfn-SubtleCrypto-method-wrapKey",
+        "href": "https://w3c.github.io/webcrypto/#dfn-SubtleCrypto-method-wrapKey",
+        "linkingText": [
+          "wrapKey()",
+          "wrapKey(format, key, wrappingKey, wrapAlgorithm)"
+        ],
+        "localLinkingText": [
+          "SubtleCrypto.wrapKey",
+          "SubtleCrypto.wrapKey()",
+          "wrapKey"
+        ],
+        "type": "method",
+        "for": [
+          "SubtleCrypto"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "SubtleCrypto-method-wrapKey",
+          "href": "https://w3c.github.io/webcrypto/#SubtleCrypto-method-wrapKey",
+          "title": "The wrapKey method",
+          "number": "14.2.11"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dfn-SubtleCrypto-method-unwrapKey",
+        "href": "https://w3c.github.io/webcrypto/#dfn-SubtleCrypto-method-unwrapKey",
+        "linkingText": [
+          "unwrapKey()",
+          "unwrapKey(format, wrappedKey, unwrappingKey, unwrapAlgorithm, unwrappedKeyAlgorithm, extractable, keyUsages)"
+        ],
+        "localLinkingText": [
+          "SubtleCrypto.unwrapKey",
+          "SubtleCrypto.unwrapKey()",
+          "unwrapKey"
+        ],
+        "type": "method",
+        "for": [
+          "SubtleCrypto"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "SubtleCrypto-method-unwrapKey",
+          "href": "https://w3c.github.io/webcrypto/#SubtleCrypto-method-unwrapKey",
+          "title": "The unwrapKey method",
+          "number": "14.2.12"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

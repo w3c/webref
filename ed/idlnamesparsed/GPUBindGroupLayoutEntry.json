@@ -1,0 +1,185 @@
+{
+  "name": "GPUBindGroupLayoutEntry",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "WebGPU",
+      "url": "https://www.w3.org/TR/webgpu/"
+    },
+    "fragment": "dictionary GPUBindGroupLayoutEntry {\n    required GPUIndex32 binding;\n    required GPUShaderStageFlags visibility;\n\n    GPUBufferBindingLayout buffer;\n    GPUSamplerBindingLayout sampler;\n    GPUTextureBindingLayout texture;\n    GPUStorageTextureBindingLayout storageTexture;\n    GPUExternalTextureBindingLayout externalTexture;\n};",
+    "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpubindgrouplayoutentry"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webgpu/": [
+      {
+        "id": "dictdef-gpubindgrouplayoutentry",
+        "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpubindgrouplayoutentry",
+        "linkingText": [
+          "GPUBindGroupLayoutEntry"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "bind-group-layout-creation",
+          "href": "https://gpuweb.github.io/gpuweb/#bind-group-layout-creation",
+          "title": "Creation",
+          "number": "8.1.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gpubindgrouplayoutentry-binding",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpubindgrouplayoutentry-binding",
+        "linkingText": [
+          "binding"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "GPUBindGroupLayoutEntry"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "bind-group-layout-creation",
+          "href": "https://gpuweb.github.io/gpuweb/#bind-group-layout-creation",
+          "title": "Creation",
+          "number": "8.1.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpubindgrouplayoutentry-visibility",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpubindgrouplayoutentry-visibility",
+        "linkingText": [
+          "visibility"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "GPUBindGroupLayoutEntry"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "bind-group-layout-creation",
+          "href": "https://gpuweb.github.io/gpuweb/#bind-group-layout-creation",
+          "title": "Creation",
+          "number": "8.1.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpubindgrouplayoutentry-buffer",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpubindgrouplayoutentry-buffer",
+        "linkingText": [
+          "buffer"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "GPUBindGroupLayoutEntry"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "bind-group-layout-creation",
+          "href": "https://gpuweb.github.io/gpuweb/#bind-group-layout-creation",
+          "title": "Creation",
+          "number": "8.1.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpubindgrouplayoutentry-sampler",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpubindgrouplayoutentry-sampler",
+        "linkingText": [
+          "sampler"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "GPUBindGroupLayoutEntry"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "bind-group-layout-creation",
+          "href": "https://gpuweb.github.io/gpuweb/#bind-group-layout-creation",
+          "title": "Creation",
+          "number": "8.1.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpubindgrouplayoutentry-texture",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpubindgrouplayoutentry-texture",
+        "linkingText": [
+          "texture"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "GPUBindGroupLayoutEntry"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "bind-group-layout-creation",
+          "href": "https://gpuweb.github.io/gpuweb/#bind-group-layout-creation",
+          "title": "Creation",
+          "number": "8.1.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpubindgrouplayoutentry-storagetexture",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpubindgrouplayoutentry-storagetexture",
+        "linkingText": [
+          "storageTexture"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "GPUBindGroupLayoutEntry"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "bind-group-layout-creation",
+          "href": "https://gpuweb.github.io/gpuweb/#bind-group-layout-creation",
+          "title": "Creation",
+          "number": "8.1.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpubindgrouplayoutentry-externaltexture",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpubindgrouplayoutentry-externaltexture",
+        "linkingText": [
+          "externalTexture"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "GPUBindGroupLayoutEntry"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "bind-group-layout-creation",
+          "href": "https://gpuweb.github.io/gpuweb/#bind-group-layout-creation",
+          "title": "Creation",
+          "number": "8.1.1"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

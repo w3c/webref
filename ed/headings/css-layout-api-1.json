@@ -1,0 +1,348 @@
+{
+  "spec": {
+    "title": "CSS Layout API Level 1",
+    "url": "https://drafts.css-houdini.org/css-layout-api-1/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#title",
+      "level": 1,
+      "title": "CSS Layout API Level 1"
+    },
+    {
+      "id": "abstract",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "sotd",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#sotd",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "intro",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "layout-api-containers",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-api-containers",
+      "level": 2,
+      "title": "Layout API Containers",
+      "number": "2"
+    },
+    {
+      "id": "painting",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#painting",
+      "level": 3,
+      "title": "Layout API Container Painting",
+      "number": "2.1"
+    },
+    {
+      "id": "layout-api-box-tree",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-api-box-tree",
+      "level": 3,
+      "title": "Box Tree Transformations",
+      "number": "2.2"
+    },
+    {
+      "id": "layout-worklet",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-worklet",
+      "level": 2,
+      "title": "Layout Worklet",
+      "number": "3"
+    },
+    {
+      "id": "concepts",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#concepts",
+      "level": 3,
+      "title": "Concepts",
+      "number": "3.1"
+    },
+    {
+      "id": "registering-layout",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#registering-layout",
+      "level": 3,
+      "title": "Registering A Layout",
+      "number": "3.2"
+    },
+    {
+      "id": "terminology",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#terminology",
+      "level": 3,
+      "title": "Terminology",
+      "number": "3.3"
+    },
+    {
+      "id": "layout-api",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-api",
+      "level": 2,
+      "title": "Layout API",
+      "number": "4"
+    },
+    {
+      "id": "layout-children",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-children",
+      "level": 3,
+      "title": "Layout Children",
+      "number": "4.1"
+    },
+    {
+      "id": "layout-child-box-tree",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-child-box-tree",
+      "level": 4,
+      "title": "LayoutChildren and the Box Tree",
+      "number": "4.1.1"
+    },
+    {
+      "id": "layout-fragments",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-fragments",
+      "level": 3,
+      "title": "Layout Fragments",
+      "number": "4.2"
+    },
+    {
+      "id": "intrinsic-sizes",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#intrinsic-sizes",
+      "level": 3,
+      "title": "Intrinsic Sizes",
+      "number": "4.3"
+    },
+    {
+      "id": "layout-constraints",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-constraints",
+      "level": 3,
+      "title": "Layout Constraints",
+      "number": "4.4"
+    },
+    {
+      "id": "layout-constraints-children",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-constraints-children",
+      "level": 4,
+      "title": "Constraints for Layout Children",
+      "number": "4.4.1"
+    },
+    {
+      "id": "breaking-and-fragmentation",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#breaking-and-fragmentation",
+      "level": 3,
+      "title": "Breaking and Fragmentation",
+      "number": "4.5"
+    },
+    {
+      "id": "edges",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#edges",
+      "level": 3,
+      "title": "Edges",
+      "number": "4.6"
+    },
+    {
+      "id": "interactions-with-other-modules",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#interactions-with-other-modules",
+      "level": 2,
+      "title": "Interactions with other Modules",
+      "number": "5"
+    },
+    {
+      "id": "interaction-sizing",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#interaction-sizing",
+      "level": 3,
+      "title": "Sizing",
+      "number": "5.1"
+    },
+    {
+      "id": "interaction-sizing-positiong-layout",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#interaction-sizing-positiong-layout",
+      "level": 4,
+      "title": "Positioned layout sizing",
+      "number": "5.1.1"
+    },
+    {
+      "id": "interaction-positioning",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#interaction-positioning",
+      "level": 3,
+      "title": "Positioning",
+      "number": "5.2"
+    },
+    {
+      "id": "interaction-overflow",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#interaction-overflow",
+      "level": 3,
+      "title": "Overflow",
+      "number": "5.3"
+    },
+    {
+      "id": "interaction-fragmentation",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#interaction-fragmentation",
+      "level": 3,
+      "title": "Fragmentation",
+      "number": "5.4"
+    },
+    {
+      "id": "interaction-alignment",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#interaction-alignment",
+      "level": 3,
+      "title": "Alignment",
+      "number": "5.5"
+    },
+    {
+      "id": "layout",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout",
+      "level": 2,
+      "title": "Layout",
+      "number": "6"
+    },
+    {
+      "id": "processing-model",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#processing-model",
+      "level": 3,
+      "title": "Processing Model",
+      "number": "6.1"
+    },
+    {
+      "id": "performing-layout",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#performing-layout",
+      "level": 3,
+      "title": "Performing Layout",
+      "number": "6.2"
+    },
+    {
+      "id": "determining-intrinsic-sizes",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#determining-intrinsic-sizes",
+      "level": 4,
+      "title": "Determining Intrinsic Sizes",
+      "number": "6.2.1"
+    },
+    {
+      "id": "generating-fragments",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#generating-fragments",
+      "level": 4,
+      "title": "Generating Fragments",
+      "number": "6.2.2"
+    },
+    {
+      "id": "global-scope-selection",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#global-scope-selection",
+      "level": 4,
+      "title": "Global Scope Selection",
+      "number": "6.2.3"
+    },
+    {
+      "id": "utility-algorithms",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#utility-algorithms",
+      "level": 4,
+      "title": "Utility Algorithms",
+      "number": "6.2.4"
+    },
+    {
+      "id": "examples",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#examples",
+      "level": 2,
+      "title": "Examples",
+      "number": "7"
+    },
+    {
+      "id": "security-considerations",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#security-considerations",
+      "level": 2,
+      "title": "Security Considerations",
+      "number": "8"
+    },
+    {
+      "id": "privacy-considerations",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#privacy-considerations",
+      "level": 2,
+      "title": "Privacy Considerations",
+      "number": "9"
+    },
+    {
+      "id": "w3c-conformance",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#w3c-conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "w3c-conventions",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#w3c-conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "w3c-conformance-classes",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#w3c-conformance-classes",
+      "level": 3,
+      "title": "Conformance classes"
+    },
+    {
+      "id": "w3c-partial",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#w3c-partial",
+      "level": 3,
+      "title": "Partial implementations"
+    },
+    {
+      "id": "w3c-conform-future-proofing",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#w3c-conform-future-proofing",
+      "level": 4,
+      "title": "Implementations of Unstable and Proprietary Features"
+    },
+    {
+      "id": "w3c-testing",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#w3c-testing",
+      "level": 3,
+      "title": "Non-experimental implementations"
+    },
+    {
+      "id": "index",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#informative",
+      "level": 3,
+      "title": "Informative References"
+    },
+    {
+      "id": "idl-index",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#idl-index",
+      "level": 2,
+      "title": "IDL Index"
+    }
+  ]
+}

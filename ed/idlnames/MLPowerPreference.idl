@@ -1,0 +1,11 @@
+// Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
+enum MLPowerPreference {
+  // Let the user agent select the most suitable behavior.
+  "default",
+
+  // Prioritizes execution speed over power consumption.
+  "high-performance",
+
+  // Prioritizes power consumption over other considerations such as execution speed.
+  "low-power"
+};

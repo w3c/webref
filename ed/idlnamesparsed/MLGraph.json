@@ -1,0 +1,59 @@
+{
+  "name": "MLGraph",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Web Neural Network API",
+      "url": "https://www.w3.org/TR/webnn/"
+    },
+    "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface MLGraph {\n  undefined compute(MLNamedInputs inputs, MLNamedOutputs outputs);\n};",
+    "href": "https://webmachinelearning.github.io/webnn/#mlgraph"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webnn/": [
+      {
+        "id": "mlgraph",
+        "href": "https://webmachinelearning.github.io/webnn/#mlgraph",
+        "linkingText": [
+          "MLGraph"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraph",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraph",
+          "title": "MLGraph",
+          "number": "7.8"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlgraph-compute",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraph-compute",
+        "linkingText": [
+          "compute(inputs, outputs)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MLGraph"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraph",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraph",
+          "title": "MLGraph",
+          "number": "7.8"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

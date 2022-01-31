@@ -1,0 +1,232 @@
+{
+  "name": "DOMTokenList",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "DOM Standard",
+      "url": "https://dom.spec.whatwg.org/"
+    },
+    "fragment": "[Exposed=Window]\ninterface DOMTokenList {\n  readonly attribute unsigned long length;\n  getter DOMString? item(unsigned long index);\n  boolean contains(DOMString token);\n  [CEReactions] undefined add(DOMString... tokens);\n  [CEReactions] undefined remove(DOMString... tokens);\n  [CEReactions] boolean toggle(DOMString token, optional boolean force);\n  [CEReactions] boolean replace(DOMString token, DOMString newToken);\n  boolean supports(DOMString token);\n  [CEReactions] stringifier attribute DOMString value;\n  iterable<DOMString>;\n};",
+    "href": "https://dom.spec.whatwg.org/#domtokenlist"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "domtokenlist",
+        "href": "https://dom.spec.whatwg.org/#domtokenlist",
+        "linkingText": [
+          "DOMTokenList"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-domtokenlist",
+          "href": "https://dom.spec.whatwg.org/#interface-domtokenlist",
+          "title": "Interface DOMTokenList",
+          "number": "7.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-domtokenlist-length",
+        "href": "https://dom.spec.whatwg.org/#dom-domtokenlist-length",
+        "linkingText": [
+          "length"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "DOMTokenList"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-domtokenlist",
+          "href": "https://dom.spec.whatwg.org/#interface-domtokenlist",
+          "title": "Interface DOMTokenList",
+          "number": "7.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-domtokenlist-item",
+        "href": "https://dom.spec.whatwg.org/#dom-domtokenlist-item",
+        "linkingText": [
+          "item(index)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "DOMTokenList"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-domtokenlist",
+          "href": "https://dom.spec.whatwg.org/#interface-domtokenlist",
+          "title": "Interface DOMTokenList",
+          "number": "7.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-domtokenlist-contains",
+        "href": "https://dom.spec.whatwg.org/#dom-domtokenlist-contains",
+        "linkingText": [
+          "contains(token)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "DOMTokenList"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-domtokenlist",
+          "href": "https://dom.spec.whatwg.org/#interface-domtokenlist",
+          "title": "Interface DOMTokenList",
+          "number": "7.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-domtokenlist-add",
+        "href": "https://dom.spec.whatwg.org/#dom-domtokenlist-add",
+        "linkingText": [
+          "add(...tokens)",
+          "add()",
+          "add(tokens)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "DOMTokenList"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-domtokenlist",
+          "href": "https://dom.spec.whatwg.org/#interface-domtokenlist",
+          "title": "Interface DOMTokenList",
+          "number": "7.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-domtokenlist-remove",
+        "href": "https://dom.spec.whatwg.org/#dom-domtokenlist-remove",
+        "linkingText": [
+          "remove(...tokens)",
+          "remove()",
+          "remove(tokens)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "DOMTokenList"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-domtokenlist",
+          "href": "https://dom.spec.whatwg.org/#interface-domtokenlist",
+          "title": "Interface DOMTokenList",
+          "number": "7.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-domtokenlist-toggle",
+        "href": "https://dom.spec.whatwg.org/#dom-domtokenlist-toggle",
+        "linkingText": [
+          "toggle(token, force)",
+          "toggle(token)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "DOMTokenList"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-domtokenlist",
+          "href": "https://dom.spec.whatwg.org/#interface-domtokenlist",
+          "title": "Interface DOMTokenList",
+          "number": "7.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-domtokenlist-replace",
+        "href": "https://dom.spec.whatwg.org/#dom-domtokenlist-replace",
+        "linkingText": [
+          "replace(token, newToken)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "DOMTokenList"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-domtokenlist",
+          "href": "https://dom.spec.whatwg.org/#interface-domtokenlist",
+          "title": "Interface DOMTokenList",
+          "number": "7.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-domtokenlist-supports",
+        "href": "https://dom.spec.whatwg.org/#dom-domtokenlist-supports",
+        "linkingText": [
+          "supports(token)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "DOMTokenList"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-domtokenlist",
+          "href": "https://dom.spec.whatwg.org/#interface-domtokenlist",
+          "title": "Interface DOMTokenList",
+          "number": "7.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-domtokenlist-value",
+        "href": "https://dom.spec.whatwg.org/#dom-domtokenlist-value",
+        "linkingText": [
+          "value"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "DOMTokenList"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-domtokenlist",
+          "href": "https://dom.spec.whatwg.org/#interface-domtokenlist",
+          "title": "Interface DOMTokenList",
+          "number": "7.1"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

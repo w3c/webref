@@ -1,0 +1,157 @@
+{
+  "name": "MediaRecorderErrorEventInit",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "MediaStream Recording",
+      "url": "https://www.w3.org/TR/mediastream-recording/"
+    },
+    "fragment": "dictionary MediaRecorderErrorEventInit : EventInit {\n  required DOMException error;\n};",
+    "href": "https://w3c.github.io/mediacapture-record/#dictdef-mediarecordererroreventinit"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "EventInit",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "dictionary EventInit {\n  boolean bubbles = false;\n  boolean cancelable = false;\n  boolean composed = false;\n};",
+      "href": "https://dom.spec.whatwg.org/#dictdef-eventinit"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/mediastream-recording/": [
+      {
+        "id": "dictdef-mediarecordererroreventinit",
+        "href": "https://w3c.github.io/mediacapture-record/#dictdef-mediarecordererroreventinit",
+        "linkingText": [
+          "MediaRecorderErrorEventInit"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "errorevent-section",
+          "href": "https://w3c.github.io/mediacapture-record/#errorevent-section",
+          "title": "MediaRecorderErrorEvent",
+          "number": "4.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mediarecordererroreventinit-error",
+        "href": "https://w3c.github.io/mediacapture-record/#dom-mediarecordererroreventinit-error",
+        "linkingText": [
+          "error"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MediaRecorderErrorEventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "erroreventinit",
+          "href": "https://w3c.github.io/mediacapture-record/#erroreventinit",
+          "title": "MediaRecorderErrorEventInit",
+          "number": "4.2.3"
+        },
+        "definedIn": "dt"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "dictdef-eventinit",
+        "href": "https://dom.spec.whatwg.org/#dictdef-eventinit",
+        "linkingText": [
+          "EventInit"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventinit-bubbles",
+        "href": "https://dom.spec.whatwg.org/#dom-eventinit-bubbles",
+        "linkingText": [
+          "bubbles"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventinit-cancelable",
+        "href": "https://dom.spec.whatwg.org/#dom-eventinit-cancelable",
+        "linkingText": [
+          "cancelable"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventinit-composed",
+        "href": "https://dom.spec.whatwg.org/#dom-eventinit-composed",
+        "linkingText": [
+          "composed"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

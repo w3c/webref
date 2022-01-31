@@ -1,0 +1,326 @@
+{
+  "spec": {
+    "title": "CSS Animation Worklet API",
+    "url": "https://drafts.css-houdini.org/css-animationworklet-1/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://drafts.css-houdini.org/css-animationworklet-1/#title",
+      "level": 1,
+      "title": "CSS Animation Worklet API"
+    },
+    {
+      "id": "abstract",
+      "href": "https://drafts.css-houdini.org/css-animationworklet-1/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "sotd",
+      "href": "https://drafts.css-houdini.org/css-animationworklet-1/#sotd",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://drafts.css-houdini.org/css-animationworklet-1/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "intro",
+      "href": "https://drafts.css-houdini.org/css-animationworklet-1/#intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "relationship-to-web-animations",
+      "href": "https://drafts.css-houdini.org/css-animationworklet-1/#relationship-to-web-animations",
+      "level": 3,
+      "title": "Relationship to the Web Animations API",
+      "number": "1.1"
+    },
+    {
+      "id": "animation-worklet-desc",
+      "href": "https://drafts.css-houdini.org/css-animationworklet-1/#animation-worklet-desc",
+      "level": 2,
+      "title": "Animation Worklet",
+      "number": "2"
+    },
+    {
+      "id": "animator-desc",
+      "href": "https://drafts.css-houdini.org/css-animationworklet-1/#animator-desc",
+      "level": 2,
+      "title": "Animator",
+      "number": "3"
+    },
+    {
+      "id": "stateless-animator-desc",
+      "href": "https://drafts.css-houdini.org/css-animationworklet-1/#stateless-animator-desc",
+      "level": 3,
+      "title": "Stateless Animator",
+      "number": "3.1"
+    },
+    {
+      "id": "stateful-animator-desc",
+      "href": "https://drafts.css-houdini.org/css-animationworklet-1/#stateful-animator-desc",
+      "level": 3,
+      "title": "Stateful Animator",
+      "number": "3.2"
+    },
+    {
+      "id": "animator-definition-desc",
+      "href": "https://drafts.css-houdini.org/css-animationworklet-1/#animator-definition-desc",
+      "level": 3,
+      "title": "Animator Definition",
+      "number": "3.3"
+    },
+    {
+      "id": "registering-animator-definition",
+      "href": "https://drafts.css-houdini.org/css-animationworklet-1/#registering-animator-definition",
+      "level": 3,
+      "title": "Registering an Animator Definition",
+      "number": "3.4"
+    },
+    {
+      "id": "animator-effect-desc",
+      "href": "https://drafts.css-houdini.org/css-animationworklet-1/#animator-effect-desc",
+      "level": 3,
+      "title": "Animator Effect",
+      "number": "3.5"
+    },
+    {
+      "id": "animator-instance-section",
+      "href": "https://drafts.css-houdini.org/css-animationworklet-1/#animator-instance-section",
+      "level": 2,
+      "title": "Animator Instance",
+      "number": "4"
+    },
+    {
+      "id": "creating-animator-instance",
+      "href": "https://drafts.css-houdini.org/css-animationworklet-1/#creating-animator-instance",
+      "level": 3,
+      "title": "Creating an Animator Instance",
+      "number": "4.1"
+    },
+    {
+      "id": "running-animators",
+      "href": "https://drafts.css-houdini.org/css-animationworklet-1/#running-animators",
+      "level": 3,
+      "title": "Running Animators",
+      "number": "4.2"
+    },
+    {
+      "id": "removing-animator",
+      "href": "https://drafts.css-houdini.org/css-animationworklet-1/#removing-animator",
+      "level": 3,
+      "title": "Removing an Animator Instance",
+      "number": "4.3"
+    },
+    {
+      "id": "migrating-animator",
+      "href": "https://drafts.css-houdini.org/css-animationworklet-1/#migrating-animator",
+      "level": 3,
+      "title": "Migrating an Animator Instance",
+      "number": "4.4"
+    },
+    {
+      "id": "requesting-animation-frames",
+      "href": "https://drafts.css-houdini.org/css-animationworklet-1/#requesting-animation-frames",
+      "level": 3,
+      "title": "Requesting Animation Frames",
+      "number": "4.5"
+    },
+    {
+      "id": "web-animation-integration",
+      "href": "https://drafts.css-houdini.org/css-animationworklet-1/#web-animation-integration",
+      "level": 2,
+      "title": "Web Animations Integration",
+      "number": "5"
+    },
+    {
+      "id": "worklet-animation-desc",
+      "href": "https://drafts.css-houdini.org/css-animationworklet-1/#worklet-animation-desc",
+      "level": 3,
+      "title": "Worklet Animation",
+      "number": "5.1"
+    },
+    {
+      "id": "creating-worklet-animation",
+      "href": "https://drafts.css-houdini.org/css-animationworklet-1/#creating-worklet-animation",
+      "level": 3,
+      "title": "Creating a Worklet Animation",
+      "number": "5.2"
+    },
+    {
+      "id": "timing-and-sync-model",
+      "href": "https://drafts.css-houdini.org/css-animationworklet-1/#timing-and-sync-model",
+      "level": 3,
+      "title": "Worklet Animation Timing and Sync Model",
+      "number": "5.3"
+    },
+    {
+      "id": "web-animation-overrides",
+      "href": "https://drafts.css-houdini.org/css-animationworklet-1/#web-animation-overrides",
+      "level": 3,
+      "title": "Web Animations Overrides",
+      "number": "5.4"
+    },
+    {
+      "id": "effect-stack-composite-order",
+      "href": "https://drafts.css-houdini.org/css-animationworklet-1/#effect-stack-composite-order",
+      "level": 3,
+      "title": "Effect Stack and Composite Order",
+      "number": "5.5"
+    },
+    {
+      "id": "related-concepts",
+      "href": "https://drafts.css-houdini.org/css-animationworklet-1/#related-concepts",
+      "level": 2,
+      "title": "Additional Related Concepts",
+      "number": "6"
+    },
+    {
+      "id": "worklet-group-effect",
+      "href": "https://drafts.css-houdini.org/css-animationworklet-1/#worklet-group-effect",
+      "level": 3,
+      "title": "Worklet Group Effect",
+      "number": "6.1"
+    },
+    {
+      "id": "scroll-timeline",
+      "href": "https://drafts.css-houdini.org/css-animationworklet-1/#scroll-timeline",
+      "level": 3,
+      "title": "ScrollTimeline",
+      "number": "6.2"
+    },
+    {
+      "id": "security-considerations",
+      "href": "https://drafts.css-houdini.org/css-animationworklet-1/#security-considerations",
+      "level": 2,
+      "title": "Security Considerations",
+      "number": "7"
+    },
+    {
+      "id": "privacy-considerations",
+      "href": "https://drafts.css-houdini.org/css-animationworklet-1/#privacy-considerations",
+      "level": 2,
+      "title": "Privacy Considerations",
+      "number": "8"
+    },
+    {
+      "id": "examples",
+      "href": "https://drafts.css-houdini.org/css-animationworklet-1/#examples",
+      "level": 2,
+      "title": "Examples",
+      "number": "9"
+    },
+    {
+      "id": "example-1",
+      "href": "https://drafts.css-houdini.org/css-animationworklet-1/#example-1",
+      "level": 3,
+      "title": "Example 1: Spring timing.",
+      "number": "9.1"
+    },
+    {
+      "id": "example-2",
+      "href": "https://drafts.css-houdini.org/css-animationworklet-1/#example-2",
+      "level": 3,
+      "title": "Example 2: Twitter header.",
+      "number": "9.2"
+    },
+    {
+      "id": "example-3",
+      "href": "https://drafts.css-houdini.org/css-animationworklet-1/#example-3",
+      "level": 3,
+      "title": "Example 3: Parallax backgrounds.",
+      "number": "9.3"
+    },
+    {
+      "id": "w3c-conformance",
+      "href": "https://drafts.css-houdini.org/css-animationworklet-1/#w3c-conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "w3c-conventions",
+      "href": "https://drafts.css-houdini.org/css-animationworklet-1/#w3c-conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "w3c-conformance-classes",
+      "href": "https://drafts.css-houdini.org/css-animationworklet-1/#w3c-conformance-classes",
+      "level": 3,
+      "title": "Conformance classes"
+    },
+    {
+      "id": "w3c-partial",
+      "href": "https://drafts.css-houdini.org/css-animationworklet-1/#w3c-partial",
+      "level": 3,
+      "title": "Partial implementations"
+    },
+    {
+      "id": "w3c-conform-future-proofing",
+      "href": "https://drafts.css-houdini.org/css-animationworklet-1/#w3c-conform-future-proofing",
+      "level": 4,
+      "title": "Implementations of Unstable and Proprietary Features"
+    },
+    {
+      "id": "w3c-testing",
+      "href": "https://drafts.css-houdini.org/css-animationworklet-1/#w3c-testing",
+      "level": 3,
+      "title": "Non-experimental implementations"
+    },
+    {
+      "id": "index",
+      "href": "https://drafts.css-houdini.org/css-animationworklet-1/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://drafts.css-houdini.org/css-animationworklet-1/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://drafts.css-houdini.org/css-animationworklet-1/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://drafts.css-houdini.org/css-animationworklet-1/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://drafts.css-houdini.org/css-animationworklet-1/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://drafts.css-houdini.org/css-animationworklet-1/#informative",
+      "level": 3,
+      "title": "Informative References"
+    },
+    {
+      "id": "idl-index",
+      "href": "https://drafts.css-houdini.org/css-animationworklet-1/#idl-index",
+      "level": 2,
+      "title": "IDL Index"
+    },
+    {
+      "id": "issues-index",
+      "href": "https://drafts.css-houdini.org/css-animationworklet-1/#issues-index",
+      "level": 2,
+      "title": "Issues Index"
+    }
+  ]
+}

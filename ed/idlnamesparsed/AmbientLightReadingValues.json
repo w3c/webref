@@ -1,0 +1,59 @@
+{
+  "name": "AmbientLightReadingValues",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Ambient Light Sensor",
+      "url": "https://www.w3.org/TR/ambient-light/"
+    },
+    "fragment": "dictionary AmbientLightReadingValues {\n  required double? illuminance;\n};",
+    "href": "https://w3c.github.io/ambient-light/#dictdef-ambientlightreadingvalues"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/ambient-light/": [
+      {
+        "id": "dictdef-ambientlightreadingvalues",
+        "href": "https://w3c.github.io/ambient-light/#dictdef-ambientlightreadingvalues",
+        "linkingText": [
+          "AmbientLightReadingValues"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "mock-ambient-light-sensor-type",
+          "href": "https://w3c.github.io/ambient-light/#mock-ambient-light-sensor-type",
+          "title": "Mock Sensor Type",
+          "number": "7.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-ambientlightreadingvalues-illuminance",
+        "href": "https://w3c.github.io/ambient-light/#dom-ambientlightreadingvalues-illuminance",
+        "linkingText": [
+          "illuminance"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "AmbientLightReadingValues"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "mock-ambient-light-sensor-type",
+          "href": "https://w3c.github.io/ambient-light/#mock-ambient-light-sensor-type",
+          "title": "Mock Sensor Type",
+          "number": "7.1"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

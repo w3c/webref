@@ -1,0 +1,187 @@
+{
+  "name": "RsaHashedKeyAlgorithm",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Web Cryptography API",
+      "url": "https://www.w3.org/TR/WebCryptoAPI/"
+    },
+    "fragment": "dictionary RsaHashedKeyAlgorithm : RsaKeyAlgorithm {\n  required KeyAlgorithm hash;\n};",
+    "href": "https://w3c.github.io/webcrypto/#dfn-RsaHashedKeyAlgorithm"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "RsaKeyAlgorithm",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "Web Cryptography API",
+        "url": "https://www.w3.org/TR/WebCryptoAPI/"
+      },
+      "fragment": "dictionary RsaKeyAlgorithm : KeyAlgorithm {\n  required unsigned long modulusLength;\n  required BigInteger publicExponent;\n};",
+      "href": "https://w3c.github.io/webcrypto/#dfn-RsaKeyAlgorithm"
+    },
+    "extended": [],
+    "inheritance": {
+      "name": "KeyAlgorithm",
+      "type": "dictionary",
+      "defined": {
+        "spec": {
+          "title": "Web Cryptography API",
+          "url": "https://www.w3.org/TR/WebCryptoAPI/"
+        },
+        "fragment": "dictionary KeyAlgorithm {\n  required DOMString name;\n};",
+        "href": "https://w3c.github.io/webcrypto/#dfn-KeyAlgorithm"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/WebCryptoAPI/": [
+      {
+        "id": "dfn-RsaHashedKeyAlgorithm",
+        "href": "https://w3c.github.io/webcrypto/#dfn-RsaHashedKeyAlgorithm",
+        "linkingText": [
+          "RsaHashedKeyAlgorithm"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "RsaHashedKeyAlgorithm-dictionary",
+          "href": "https://w3c.github.io/webcrypto/#RsaHashedKeyAlgorithm-dictionary",
+          "title": "RsaHashedKeyAlgorithm dictionary",
+          "number": "20.6"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dfn-RsaHashedKeyAlgorithm-hash",
+        "href": "https://w3c.github.io/webcrypto/#dfn-RsaHashedKeyAlgorithm-hash",
+        "linkingText": [
+          "hash"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RsaHashedKeyAlgorithm"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "RsaHashedKeyAlgorithm-dictionary",
+          "href": "https://w3c.github.io/webcrypto/#RsaHashedKeyAlgorithm-dictionary",
+          "title": "RsaHashedKeyAlgorithm dictionary",
+          "number": "20.6"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dfn-RsaKeyAlgorithm",
+        "href": "https://w3c.github.io/webcrypto/#dfn-RsaKeyAlgorithm",
+        "linkingText": [
+          "RsaKeyAlgorithm"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "RsaKeyAlgorithm-dictionary",
+          "href": "https://w3c.github.io/webcrypto/#RsaKeyAlgorithm-dictionary",
+          "title": "RsaKeyAlgorithm dictionary",
+          "number": "20.5"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dfn-RsaKeyAlgorithm-modulusLength",
+        "href": "https://w3c.github.io/webcrypto/#dfn-RsaKeyAlgorithm-modulusLength",
+        "linkingText": [
+          "modulusLength"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RsaKeyAlgorithm"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "RsaKeyAlgorithm-dictionary",
+          "href": "https://w3c.github.io/webcrypto/#RsaKeyAlgorithm-dictionary",
+          "title": "RsaKeyAlgorithm dictionary",
+          "number": "20.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dfn-RsaKeyAlgorithm-publicExponent",
+        "href": "https://w3c.github.io/webcrypto/#dfn-RsaKeyAlgorithm-publicExponent",
+        "linkingText": [
+          "publicExponent"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RsaKeyAlgorithm"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "RsaKeyAlgorithm-dictionary",
+          "href": "https://w3c.github.io/webcrypto/#RsaKeyAlgorithm-dictionary",
+          "title": "RsaKeyAlgorithm dictionary",
+          "number": "20.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dfn-KeyAlgorithm",
+        "href": "https://w3c.github.io/webcrypto/#dfn-KeyAlgorithm",
+        "linkingText": [
+          "KeyAlgorithm"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "key-algorithm-dictionary",
+          "href": "https://w3c.github.io/webcrypto/#key-algorithm-dictionary",
+          "title": "12. KeyAlgorithm dictionary"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-keyalgorithm-name",
+        "href": "https://w3c.github.io/webcrypto/#dom-keyalgorithm-name",
+        "linkingText": [
+          "name"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "KeyAlgorithm"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "key-algorithm-dictionary-members",
+          "href": "https://w3c.github.io/webcrypto/#key-algorithm-dictionary-members",
+          "title": "KeyAlgorithm dictionary members",
+          "number": "12.2"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

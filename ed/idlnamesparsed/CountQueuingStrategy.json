@@ -1,0 +1,102 @@
+{
+  "name": "CountQueuingStrategy",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Streams Standard",
+      "url": "https://streams.spec.whatwg.org/"
+    },
+    "fragment": "[Exposed=*]\ninterface CountQueuingStrategy {\n  constructor(QueuingStrategyInit init);\n\n  readonly attribute unrestricted double highWaterMark;\n  readonly attribute Function size;\n};",
+    "href": "https://streams.spec.whatwg.org/#countqueuingstrategy"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://streams.spec.whatwg.org/": [
+      {
+        "id": "countqueuingstrategy",
+        "href": "https://streams.spec.whatwg.org/#countqueuingstrategy",
+        "linkingText": [
+          "CountQueuingStrategy"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "cqs-class-definition",
+          "href": "https://streams.spec.whatwg.org/#cqs-class-definition",
+          "title": "Interface definition",
+          "number": "7.3.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "cqs-constructor",
+        "href": "https://streams.spec.whatwg.org/#cqs-constructor",
+        "linkingText": [
+          "CountQueuingStrategy(init)",
+          "constructor(init)"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "CountQueuingStrategy"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "cqs-prototype",
+          "href": "https://streams.spec.whatwg.org/#cqs-prototype",
+          "title": "Constructor and properties",
+          "number": "7.3.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "cqs-high-water-mark",
+        "href": "https://streams.spec.whatwg.org/#cqs-high-water-mark",
+        "linkingText": [
+          "highWaterMark"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "CountQueuingStrategy"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "cqs-prototype",
+          "href": "https://streams.spec.whatwg.org/#cqs-prototype",
+          "title": "Constructor and properties",
+          "number": "7.3.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "cqs-size",
+        "href": "https://streams.spec.whatwg.org/#cqs-size",
+        "linkingText": [
+          "size"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "CountQueuingStrategy"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "cqs-prototype",
+          "href": "https://streams.spec.whatwg.org/#cqs-prototype",
+          "title": "Constructor and properties",
+          "number": "7.3.3"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

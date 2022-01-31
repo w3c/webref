@@ -1,0 +1,101 @@
+{
+  "name": "CaretPosition",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "CSSOM View Module",
+      "url": "https://www.w3.org/TR/cssom-view-1/"
+    },
+    "fragment": "[Exposed=Window]\ninterface CaretPosition {\n  readonly attribute Node offsetNode;\n  readonly attribute unsigned long offset;\n  [NewObject] DOMRect? getClientRect();\n};",
+    "href": "https://drafts.csswg.org/cssom-view/#caretposition"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/cssom-view-1/": [
+      {
+        "id": "caretposition",
+        "href": "https://drafts.csswg.org/cssom-view/#caretposition",
+        "linkingText": [
+          "CaretPosition"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-caretposition-interface",
+          "href": "https://drafts.csswg.org/cssom-view/#the-caretposition-interface",
+          "title": "The CaretPosition Interface",
+          "number": "5.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-caretposition-offsetnode",
+        "href": "https://drafts.csswg.org/cssom-view/#dom-caretposition-offsetnode",
+        "linkingText": [
+          "offsetNode"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "CaretPosition"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-caretposition-interface",
+          "href": "https://drafts.csswg.org/cssom-view/#the-caretposition-interface",
+          "title": "The CaretPosition Interface",
+          "number": "5.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-caretposition-offset",
+        "href": "https://drafts.csswg.org/cssom-view/#dom-caretposition-offset",
+        "linkingText": [
+          "offset"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "CaretPosition"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-caretposition-interface",
+          "href": "https://drafts.csswg.org/cssom-view/#the-caretposition-interface",
+          "title": "The CaretPosition Interface",
+          "number": "5.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-caretposition-getclientrect",
+        "href": "https://drafts.csswg.org/cssom-view/#dom-caretposition-getclientrect",
+        "linkingText": [
+          "getClientRect()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CaretPosition"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-caretposition-interface",
+          "href": "https://drafts.csswg.org/cssom-view/#the-caretposition-interface",
+          "title": "The CaretPosition Interface",
+          "number": "5.1"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

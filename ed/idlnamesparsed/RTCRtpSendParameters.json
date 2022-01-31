@@ -1,0 +1,202 @@
+{
+  "name": "RTCRtpSendParameters",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
+      "url": "https://www.w3.org/TR/webrtc/"
+    },
+    "fragment": "dictionary RTCRtpSendParameters : RTCRtpParameters {\n  required DOMString transactionId;\n  required sequence<RTCRtpEncodingParameters> encodings;\n};",
+    "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpsendparameters"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "MediaStreamTrack Content Hints",
+        "url": "https://www.w3.org/TR/mst-content-hint/"
+      },
+      "fragment": "partial dictionary RTCRtpSendParameters {\n RTCDegradationPreference degradationPreference;\n};"
+    }
+  ],
+  "inheritance": {
+    "name": "RTCRtpParameters",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
+        "url": "https://www.w3.org/TR/webrtc/"
+      },
+      "fragment": "dictionary RTCRtpParameters {\n  required sequence<RTCRtpHeaderExtensionParameters> headerExtensions;\n  required RTCRtcpParameters rtcp;\n  required sequence<RTCRtpCodecParameters> codecs;\n};",
+      "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpparameters"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webrtc/": [
+      {
+        "id": "dom-rtcrtpsendparameters",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpsendparameters",
+        "linkingText": [
+          "RTCRtpSendParameters"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "rtcsendrtpparameters",
+          "href": "https://w3c.github.io/webrtc-pc/#rtcsendrtpparameters",
+          "title": "RTCRtpSendParameters Dictionary",
+          "number": "5.2.2"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-rtcrtpsendparameters-transactionid",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpsendparameters-transactionid",
+        "linkingText": [
+          "transactionId"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RTCRtpSendParameters"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-rtcrtpsendparameters-members",
+          "href": "https://w3c.github.io/webrtc-pc/#dictionary-rtcrtpsendparameters-members",
+          "title": "Dictionary RTCRtpSendParameters Members"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcrtpsendparameters-encodings",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpsendparameters-encodings",
+        "linkingText": [
+          "encodings"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RTCRtpSendParameters"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-rtcrtpsendparameters-members",
+          "href": "https://w3c.github.io/webrtc-pc/#dictionary-rtcrtpsendparameters-members",
+          "title": "Dictionary RTCRtpSendParameters Members"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcrtpparameters",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpparameters",
+        "linkingText": [
+          "RTCRtpParameters"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "rtcrtpparameters",
+          "href": "https://w3c.github.io/webrtc-pc/#rtcrtpparameters",
+          "title": "RTCRtpParameters Dictionary",
+          "number": "5.2.1"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-rtcrtpparameters-headerextensions",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpparameters-headerextensions",
+        "linkingText": [
+          "headerExtensions"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RTCRtpParameters"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-rtcrtpparameters-members",
+          "href": "https://w3c.github.io/webrtc-pc/#dictionary-rtcrtpparameters-members",
+          "title": "Dictionary RTCRtpParameters Members"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcrtpparameters-rtcp",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpparameters-rtcp",
+        "linkingText": [
+          "rtcp"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RTCRtpParameters"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-rtcrtpparameters-members",
+          "href": "https://w3c.github.io/webrtc-pc/#dictionary-rtcrtpparameters-members",
+          "title": "Dictionary RTCRtpParameters Members"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcrtpparameters-codecs",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpparameters-codecs",
+        "linkingText": [
+          "codecs"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RTCRtpParameters"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-rtcrtpparameters-members",
+          "href": "https://w3c.github.io/webrtc-pc/#dictionary-rtcrtpparameters-members",
+          "title": "Dictionary RTCRtpParameters Members"
+        },
+        "definedIn": "dt"
+      }
+    ],
+    "https://www.w3.org/TR/mst-content-hint/": [
+      {
+        "id": "dom-rtcrtpsendparameters-degradationpreference",
+        "href": "https://w3c.github.io/mst-content-hint/#dom-rtcrtpsendparameters-degradationpreference",
+        "linkingText": [
+          "degradationPreference"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RTCRtpSendParameters"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "degradation-preference-when-encoding",
+          "href": "https://w3c.github.io/mst-content-hint/#degradation-preference-when-encoding",
+          "title": "Degradation preference when encoding",
+          "number": "5.2"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

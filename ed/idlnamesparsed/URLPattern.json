@@ -1,0 +1,278 @@
+{
+  "name": "URLPattern",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "URLPattern API",
+      "url": "https://wicg.github.io/urlpattern/"
+    },
+    "fragment": "[Exposed=(Window,Worker)]\ninterface URLPattern {\n  constructor(optional URLPatternInput input = {}, optional USVString baseURL);\n\n  boolean test(optional URLPatternInput input = {}, optional USVString baseURL);\n\n  URLPatternResult? exec(optional URLPatternInput input = {}, optional USVString baseURL);\n\n  readonly attribute USVString protocol;\n  readonly attribute USVString username;\n  readonly attribute USVString password;\n  readonly attribute USVString hostname;\n  readonly attribute USVString port;\n  readonly attribute USVString pathname;\n  readonly attribute USVString search;\n  readonly attribute USVString hash;\n};",
+    "href": "https://wicg.github.io/urlpattern/#urlpattern"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://wicg.github.io/urlpattern/": [
+      {
+        "id": "urlpattern",
+        "href": "https://wicg.github.io/urlpattern/#urlpattern",
+        "linkingText": [
+          "URLPattern"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "urlpattern-class",
+          "href": "https://wicg.github.io/urlpattern/#urlpattern-class",
+          "title": "The URLPattern class",
+          "number": "1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-urlpattern-urlpattern",
+        "href": "https://wicg.github.io/urlpattern/#dom-urlpattern-urlpattern",
+        "linkingText": [
+          "URLPattern(input, baseURL)",
+          "constructor(input, baseURL)",
+          "URLPattern(input)",
+          "constructor(input)",
+          "URLPattern()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "URLPattern"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "urlpattern-class",
+          "href": "https://wicg.github.io/urlpattern/#urlpattern-class",
+          "title": "The URLPattern class",
+          "number": "1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-urlpattern-test",
+        "href": "https://wicg.github.io/urlpattern/#dom-urlpattern-test",
+        "linkingText": [
+          "test(input, baseURL)",
+          "test(input)",
+          "test()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "URLPattern"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "urlpattern-class",
+          "href": "https://wicg.github.io/urlpattern/#urlpattern-class",
+          "title": "The URLPattern class",
+          "number": "1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-urlpattern-exec",
+        "href": "https://wicg.github.io/urlpattern/#dom-urlpattern-exec",
+        "linkingText": [
+          "exec(input, baseURL)",
+          "exec(input)",
+          "exec()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "URLPattern"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "urlpattern-class",
+          "href": "https://wicg.github.io/urlpattern/#urlpattern-class",
+          "title": "The URLPattern class",
+          "number": "1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-urlpattern-protocol",
+        "href": "https://wicg.github.io/urlpattern/#dom-urlpattern-protocol",
+        "linkingText": [
+          "protocol"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "URLPattern"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "urlpattern-class",
+          "href": "https://wicg.github.io/urlpattern/#urlpattern-class",
+          "title": "The URLPattern class",
+          "number": "1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-urlpattern-username",
+        "href": "https://wicg.github.io/urlpattern/#dom-urlpattern-username",
+        "linkingText": [
+          "username"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "URLPattern"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "urlpattern-class",
+          "href": "https://wicg.github.io/urlpattern/#urlpattern-class",
+          "title": "The URLPattern class",
+          "number": "1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-urlpattern-password",
+        "href": "https://wicg.github.io/urlpattern/#dom-urlpattern-password",
+        "linkingText": [
+          "password"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "URLPattern"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "urlpattern-class",
+          "href": "https://wicg.github.io/urlpattern/#urlpattern-class",
+          "title": "The URLPattern class",
+          "number": "1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-urlpattern-hostname",
+        "href": "https://wicg.github.io/urlpattern/#dom-urlpattern-hostname",
+        "linkingText": [
+          "hostname"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "URLPattern"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "urlpattern-class",
+          "href": "https://wicg.github.io/urlpattern/#urlpattern-class",
+          "title": "The URLPattern class",
+          "number": "1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-urlpattern-port",
+        "href": "https://wicg.github.io/urlpattern/#dom-urlpattern-port",
+        "linkingText": [
+          "port"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "URLPattern"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "urlpattern-class",
+          "href": "https://wicg.github.io/urlpattern/#urlpattern-class",
+          "title": "The URLPattern class",
+          "number": "1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-urlpattern-pathname",
+        "href": "https://wicg.github.io/urlpattern/#dom-urlpattern-pathname",
+        "linkingText": [
+          "pathname"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "URLPattern"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "urlpattern-class",
+          "href": "https://wicg.github.io/urlpattern/#urlpattern-class",
+          "title": "The URLPattern class",
+          "number": "1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-urlpattern-search",
+        "href": "https://wicg.github.io/urlpattern/#dom-urlpattern-search",
+        "linkingText": [
+          "search"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "URLPattern"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "urlpattern-class",
+          "href": "https://wicg.github.io/urlpattern/#urlpattern-class",
+          "title": "The URLPattern class",
+          "number": "1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-urlpattern-hash",
+        "href": "https://wicg.github.io/urlpattern/#dom-urlpattern-hash",
+        "linkingText": [
+          "hash"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "URLPattern"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "urlpattern-class",
+          "href": "https://wicg.github.io/urlpattern/#urlpattern-class",
+          "title": "The URLPattern class",
+          "number": "1"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

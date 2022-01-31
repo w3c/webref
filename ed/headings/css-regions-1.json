@@ -1,0 +1,476 @@
+{
+  "spec": {
+    "title": "CSS Regions Module Level 1",
+    "url": "https://drafts.csswg.org/css-regions/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://drafts.csswg.org/css-regions/#title",
+      "level": 1,
+      "title": "CSS Regions Module Level 1"
+    },
+    {
+      "id": "abstract",
+      "href": "https://drafts.csswg.org/css-regions/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "sotd",
+      "href": "https://drafts.csswg.org/css-regions/#sotd",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://drafts.csswg.org/css-regions/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "introduction",
+      "href": "https://drafts.csswg.org/css-regions/#introduction",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "values",
+      "href": "https://drafts.csswg.org/css-regions/#values",
+      "level": 3,
+      "title": "Value Definitions",
+      "number": "1.1"
+    },
+    {
+      "id": "css-regions-concepts",
+      "href": "https://drafts.csswg.org/css-regions/#css-regions-concepts",
+      "level": 2,
+      "title": "CSS Regions concepts",
+      "number": "2"
+    },
+    {
+      "id": "regions",
+      "href": "https://drafts.csswg.org/css-regions/#regions",
+      "level": 3,
+      "title": "Regions",
+      "number": "2.1"
+    },
+    {
+      "id": "region-chain-section",
+      "href": "https://drafts.csswg.org/css-regions/#region-chain-section",
+      "level": 3,
+      "title": "Region chain",
+      "number": "2.2"
+    },
+    {
+      "id": "last-region",
+      "href": "https://drafts.csswg.org/css-regions/#last-region",
+      "level": 3,
+      "title": "Last region",
+      "number": "2.3"
+    },
+    {
+      "id": "named-flow-section",
+      "href": "https://drafts.csswg.org/css-regions/#named-flow-section",
+      "level": 3,
+      "title": "Named flows",
+      "number": "2.4"
+    },
+    {
+      "id": "regions-flow-breaking-rules",
+      "href": "https://drafts.csswg.org/css-regions/#regions-flow-breaking-rules",
+      "level": 3,
+      "title": "Regions flow breaking rules",
+      "number": "2.5"
+    },
+    {
+      "id": "properties",
+      "href": "https://drafts.csswg.org/css-regions/#properties",
+      "level": 2,
+      "title": "Properties",
+      "number": "3"
+    },
+    {
+      "id": "the-flow-into-property",
+      "href": "https://drafts.csswg.org/css-regions/#the-flow-into-property",
+      "level": 3,
+      "title": "The flow-into property",
+      "number": "3.1"
+    },
+    {
+      "id": "flow-from",
+      "href": "https://drafts.csswg.org/css-regions/#flow-from",
+      "level": 3,
+      "title": "The flow-from property",
+      "number": "3.2"
+    },
+    {
+      "id": "circular-dependencies",
+      "href": "https://drafts.csswg.org/css-regions/#circular-dependencies",
+      "level": 4,
+      "title": "Cycle Detection",
+      "number": "3.2.1"
+    },
+    {
+      "id": "fragmenting-regions",
+      "href": "https://drafts.csswg.org/css-regions/#fragmenting-regions",
+      "level": 4,
+      "title": "Nested fragmentation contexts",
+      "number": "3.2.2"
+    },
+    {
+      "id": "region-flow-break",
+      "href": "https://drafts.csswg.org/css-regions/#region-flow-break",
+      "level": 3,
+      "title": "Controlling Region Flow Breaks",
+      "number": "3.3"
+    },
+    {
+      "id": "the-region-fragment-property",
+      "href": "https://drafts.csswg.org/css-regions/#the-region-fragment-property",
+      "level": 3,
+      "title": "The region-fragment property",
+      "number": "3.4"
+    },
+    {
+      "id": "cssom_view_and_css_regions",
+      "href": "https://drafts.csswg.org/css-regions/#cssom_view_and_css_regions",
+      "level": 2,
+      "title": "CSSOM",
+      "number": "4"
+    },
+    {
+      "id": "the-namedflow-interface",
+      "href": "https://drafts.csswg.org/css-regions/#the-namedflow-interface",
+      "level": 3,
+      "title": "The NamedFlow interface",
+      "number": "4.1"
+    },
+    {
+      "id": "the-region-interface",
+      "href": "https://drafts.csswg.org/css-regions/#the-region-interface",
+      "level": 3,
+      "title": "The Region mixin",
+      "number": "4.2"
+    },
+    {
+      "id": "named-flow-events",
+      "href": "https://drafts.csswg.org/css-regions/#named-flow-events",
+      "level": 3,
+      "title": "Named flow events",
+      "number": "4.3"
+    },
+    {
+      "id": "cssomview-and-regions",
+      "href": "https://drafts.csswg.org/css-regions/#cssomview-and-regions",
+      "level": 3,
+      "title": "Clarifications on pre-existing APIs",
+      "number": "4.4"
+    },
+    {
+      "id": "cssomview-getclientrects-and-getboundingclientrect",
+      "href": "https://drafts.csswg.org/css-regions/#cssomview-getclientrects-and-getboundingclientrect",
+      "level": 4,
+      "title": "getClientRects() and getBoundingClientRect()",
+      "number": "4.4.1"
+    },
+    {
+      "id": "cssomview-offset-attributes",
+      "href": "https://drafts.csswg.org/css-regions/#cssomview-offset-attributes",
+      "level": 4,
+      "title": "offsetTop, offsetLeft, offsetWidth, offsetHeight and offsetParent",
+      "number": "4.4.2"
+    },
+    {
+      "id": "multi-column-regions",
+      "href": "https://drafts.csswg.org/css-regions/#multi-column-regions",
+      "level": 2,
+      "title": "Multi-column regions",
+      "number": "5"
+    },
+    {
+      "id": "pseudo_elements",
+      "href": "https://drafts.csswg.org/css-regions/#pseudo_elements",
+      "level": 2,
+      "title": "Pseudo-elements",
+      "number": "6"
+    },
+    {
+      "id": "regions-visual-formatting-details",
+      "href": "https://drafts.csswg.org/css-regions/#regions-visual-formatting-details",
+      "level": 2,
+      "title": "Regions visual formatting details",
+      "number": "7"
+    },
+    {
+      "id": "processing-model",
+      "href": "https://drafts.csswg.org/css-regions/#processing-model",
+      "level": 3,
+      "title": "Processing model",
+      "number": "7.1"
+    },
+    {
+      "id": "regions-flow-content-box",
+      "href": "https://drafts.csswg.org/css-regions/#regions-flow-content-box",
+      "level": 3,
+      "title": "The Region Flow Content Box (RFCB)",
+      "number": "7.2"
+    },
+    {
+      "id": "rfcb-width-resolution",
+      "href": "https://drafts.csswg.org/css-regions/#rfcb-width-resolution",
+      "level": 4,
+      "title": "RFCB width resolution",
+      "number": "7.2.1"
+    },
+    {
+      "id": "regions-visual-formatting-steps",
+      "href": "https://drafts.csswg.org/css-regions/#regions-visual-formatting-steps",
+      "level": 3,
+      "title": "Regions visual formatting steps",
+      "number": "7.3"
+    },
+    {
+      "id": "rfcb-flow-fragment-height-resolution",
+      "href": "https://drafts.csswg.org/css-regions/#rfcb-flow-fragment-height-resolution",
+      "level": 4,
+      "title": "Step 1: RFCB flow fragment height resolution",
+      "number": "7.3.1"
+    },
+    {
+      "id": "rfcb-flow-fragment-height-resolution-phase-1",
+      "href": "https://drafts.csswg.org/css-regions/#rfcb-flow-fragment-height-resolution-phase-1",
+      "level": 5,
+      "title": "RFCB flow fragment height resolution, Phase 1",
+      "number": "7.3.1.1"
+    },
+    {
+      "id": "rfcb-flow-fragment-height-resolution-phase-2",
+      "href": "https://drafts.csswg.org/css-regions/#rfcb-flow-fragment-height-resolution-phase-2",
+      "level": 5,
+      "title": "RFCB flow fragment height resolution, Phase 2",
+      "number": "7.3.1.2"
+    },
+    {
+      "id": "regions-boxes-layout",
+      "href": "https://drafts.csswg.org/css-regions/#regions-boxes-layout",
+      "level": 4,
+      "title": "Step 2: region boxes layout",
+      "number": "7.3.2"
+    },
+    {
+      "id": "named-flows-layout",
+      "href": "https://drafts.csswg.org/css-regions/#named-flows-layout",
+      "level": 4,
+      "title": "Step 3: named flows layout",
+      "number": "7.3.3"
+    },
+    {
+      "id": "regions-visual-formatting-implementation-note",
+      "href": "https://drafts.csswg.org/css-regions/#regions-visual-formatting-implementation-note",
+      "level": 3,
+      "title": "Regions visual formatting: implementation note",
+      "number": "7.4"
+    },
+    {
+      "id": "regions-visual-formatting-examples",
+      "href": "https://drafts.csswg.org/css-regions/#regions-visual-formatting-examples",
+      "level": 3,
+      "title": "Regions visual formatting example",
+      "number": "7.5"
+    },
+    {
+      "id": "step1-phase1-example",
+      "href": "https://drafts.csswg.org/css-regions/#step1-phase1-example",
+      "level": 4,
+      "title": "Step 1 - Phase 1: Laying out RFCBs with used height of zero",
+      "number": "7.5.1"
+    },
+    {
+      "id": "step1-phase2-example",
+      "href": "https://drafts.csswg.org/css-regions/#step1-phase2-example",
+      "level": 4,
+      "title": "Step 1 - Phase 2: Layout flow to compute the RFCBs' flow fragments heights",
+      "number": "7.5.2"
+    },
+    {
+      "id": "step2-example",
+      "href": "https://drafts.csswg.org/css-regions/#step2-example",
+      "level": 4,
+      "title": "Step 2: Layout document and regions without named flows",
+      "number": "7.5.3"
+    },
+    {
+      "id": "step3-example",
+      "href": "https://drafts.csswg.org/css-regions/#step3-example",
+      "level": 4,
+      "title": "Step 3: named flows layout",
+      "number": "7.5.4"
+    },
+    {
+      "id": "relation-to-document-events",
+      "href": "https://drafts.csswg.org/css-regions/#relation-to-document-events",
+      "level": 2,
+      "title": "Relation to document events",
+      "number": "8"
+    },
+    {
+      "id": "relation-to-other-specifications",
+      "href": "https://drafts.csswg.org/css-regions/#relation-to-other-specifications",
+      "level": 2,
+      "title": "Relation to other specifications",
+      "number": "9"
+    },
+    {
+      "id": "usecases",
+      "href": "https://drafts.csswg.org/css-regions/#usecases",
+      "level": 2,
+      "title": "10. Use Cases"
+    },
+    {
+      "id": "changes",
+      "href": "https://drafts.csswg.org/css-regions/#changes",
+      "level": 2,
+      "title": "11. Changes"
+    },
+    {
+      "id": "changes_from_Oct_9_2014",
+      "href": "https://drafts.csswg.org/css-regions/#changes_from_Oct_9_2014",
+      "level": 3,
+      "title": "Changes from October 9th 2014 version",
+      "number": "11.1"
+    },
+    {
+      "id": "changes_from_Feb_18_2014",
+      "href": "https://drafts.csswg.org/css-regions/#changes_from_Feb_18_2014",
+      "level": 3,
+      "title": "Changes from February 18th 2014 version",
+      "number": "11.2"
+    },
+    {
+      "id": "changes_from_May_28_2013",
+      "href": "https://drafts.csswg.org/css-regions/#changes_from_May_28_2013",
+      "level": 3,
+      "title": "Changes from May 28th 2013 version",
+      "number": "11.3"
+    },
+    {
+      "id": "changes_from_Aug_28_2012",
+      "href": "https://drafts.csswg.org/css-regions/#changes_from_Aug_28_2012",
+      "level": 3,
+      "title": "Changes from August 28th 2012 version",
+      "number": "11.4"
+    },
+    {
+      "id": "changes_from_May_03_2012",
+      "href": "https://drafts.csswg.org/css-regions/#changes_from_May_03_2012",
+      "level": 3,
+      "title": "Changes from May 3rd 2012 version",
+      "number": "11.5"
+    },
+    {
+      "id": "older_changes",
+      "href": "https://drafts.csswg.org/css-regions/#older_changes",
+      "level": 3,
+      "title": "Older Changes",
+      "number": "11.6"
+    },
+    {
+      "id": "acknowledgments",
+      "href": "https://drafts.csswg.org/css-regions/#acknowledgments",
+      "level": 2,
+      "title": "Acknowledgments"
+    },
+    {
+      "id": "w3c-conformance",
+      "href": "https://drafts.csswg.org/css-regions/#w3c-conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "w3c-conventions",
+      "href": "https://drafts.csswg.org/css-regions/#w3c-conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "w3c-conformance-classes",
+      "href": "https://drafts.csswg.org/css-regions/#w3c-conformance-classes",
+      "level": 3,
+      "title": "Conformance classes"
+    },
+    {
+      "id": "w3c-partial",
+      "href": "https://drafts.csswg.org/css-regions/#w3c-partial",
+      "level": 3,
+      "title": "Partial implementations"
+    },
+    {
+      "id": "w3c-conform-future-proofing",
+      "href": "https://drafts.csswg.org/css-regions/#w3c-conform-future-proofing",
+      "level": 4,
+      "title": "Implementations of Unstable and Proprietary Features"
+    },
+    {
+      "id": "w3c-testing",
+      "href": "https://drafts.csswg.org/css-regions/#w3c-testing",
+      "level": 3,
+      "title": "Non-experimental implementations"
+    },
+    {
+      "id": "index",
+      "href": "https://drafts.csswg.org/css-regions/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://drafts.csswg.org/css-regions/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://drafts.csswg.org/css-regions/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://drafts.csswg.org/css-regions/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://drafts.csswg.org/css-regions/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://drafts.csswg.org/css-regions/#informative",
+      "level": 3,
+      "title": "Informative References"
+    },
+    {
+      "id": "property-index",
+      "href": "https://drafts.csswg.org/css-regions/#property-index",
+      "level": 2,
+      "title": "Property Index"
+    },
+    {
+      "id": "idl-index",
+      "href": "https://drafts.csswg.org/css-regions/#idl-index",
+      "level": 2,
+      "title": "IDL Index"
+    },
+    {
+      "id": "issues-index",
+      "href": "https://drafts.csswg.org/css-regions/#issues-index",
+      "level": 2,
+      "title": "Issues Index"
+    }
+  ]
+}

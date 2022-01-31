@@ -1,0 +1,1266 @@
+{
+  "name": "ElementInternals",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "HTML Standard",
+      "url": "https://html.spec.whatwg.org/multipage/"
+    },
+    "fragment": "[Exposed=Window]\ninterface ElementInternals {\n  // Shadow root access\n  readonly attribute ShadowRoot? shadowRoot;\n\n  // Form-associated custom elements\n  undefined setFormValue((File or USVString or FormData)? value,\n                         optional (File or USVString or FormData)? state);\n\n  readonly attribute HTMLFormElement? form;\n\n  undefined setValidity(optional ValidityStateFlags flags = {},\n                        optional DOMString message,\n                        optional HTMLElement anchor);\n  readonly attribute boolean willValidate;\n  readonly attribute ValidityState validity;\n  readonly attribute DOMString validationMessage;\n  boolean checkValidity();\n  boolean reportValidity();\n\n  readonly attribute NodeList labels;\n};",
+    "href": "https://html.spec.whatwg.org/multipage/custom-elements.html#elementinternals"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "HTML Standard",
+        "url": "https://html.spec.whatwg.org/multipage/"
+      },
+      "fragment": "// Accessibility semantics\nElementInternals includes ARIAMixin;"
+    },
+    {
+      "spec": {
+        "title": "Custom State Pseudo Class",
+        "url": "https://wicg.github.io/custom-state-pseudo-class/"
+      },
+      "fragment": "partial interface ElementInternals {\n  readonly attribute CustomStateSet states;\n};"
+    }
+  ],
+  "inheritance": null,
+  "includes": [
+    {
+      "name": "ARIAMixin",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "Accessible Rich Internet Applications (WAI-ARIA) 1.3",
+          "url": "https://www.w3.org/TR/wai-aria-1.2/"
+        },
+        "fragment": "interface mixin ARIAMixin {\n  attribute DOMString? role;\n\n  attribute DOMString? ariaAtomic;\n  attribute DOMString? ariaAutoComplete;\n  attribute DOMString? ariaBusy;\n  attribute DOMString? ariaChecked;\n  attribute DOMString? ariaColCount;\n  attribute DOMString? ariaColIndex;\n  attribute DOMString? ariaColIndexText;\n  attribute DOMString? ariaColSpan;\n\n  attribute DOMString? ariaCurrent;\n\n  attribute DOMString? ariaDescription;\n\n  attribute DOMString? ariaDisabled;\n\n  attribute DOMString? ariaExpanded;\n\n  attribute DOMString? ariaHasPopup;\n  attribute DOMString? ariaHidden;\n  attribute DOMString? ariaInvalid;\n  attribute DOMString? ariaKeyShortcuts;\n  attribute DOMString? ariaLabel;\n\n  attribute DOMString? ariaLevel;\n  attribute DOMString? ariaLive;\n  attribute DOMString? ariaModal;\n  attribute DOMString? ariaMultiLine;\n  attribute DOMString? ariaMultiSelectable;\n  attribute DOMString? ariaOrientation;\n\n  attribute DOMString? ariaPlaceholder;\n  attribute DOMString? ariaPosInSet;\n  attribute DOMString? ariaPressed;\n  attribute DOMString? ariaReadOnly;\n\n  attribute DOMString? ariaRequired;\n  attribute DOMString? ariaRoleDescription;\n  attribute DOMString? ariaRowCount;\n  attribute DOMString? ariaRowIndex;\n  attribute DOMString? ariaRowIndexText;\n  attribute DOMString? ariaRowSpan;\n  attribute DOMString? ariaSelected;\n  attribute DOMString? ariaSetSize;\n  attribute DOMString? ariaSort;\n  attribute DOMString? ariaValueMax;\n  attribute DOMString? ariaValueMin;\n  attribute DOMString? ariaValueNow;\n  attribute DOMString? ariaValueText;\n};",
+        "href": "https://w3c.github.io/aria/#dom-ariamixin"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    }
+  ],
+  "dfns": {
+    "https://html.spec.whatwg.org/multipage/": [
+      {
+        "id": "elementinternals",
+        "href": "https://html.spec.whatwg.org/multipage/custom-elements.html#elementinternals",
+        "linkingText": [
+          "ElementInternals"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-elementinternals-interface",
+          "href": "https://html.spec.whatwg.org/multipage/custom-elements.html#the-elementinternals-interface",
+          "title": "The ElementInternals interface",
+          "number": "4.13.7.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-elementinternals-shadowroot",
+        "href": "https://html.spec.whatwg.org/multipage/custom-elements.html#dom-elementinternals-shadowroot",
+        "linkingText": [
+          "shadowRoot"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "ElementInternals"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "shadow-root-access",
+          "href": "https://html.spec.whatwg.org/multipage/custom-elements.html#shadow-root-access",
+          "title": "Shadow root access",
+          "number": "4.13.7.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-elementinternals-setformvalue",
+        "href": "https://html.spec.whatwg.org/multipage/custom-elements.html#dom-elementinternals-setformvalue",
+        "linkingText": [
+          "setFormValue(value, state)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "ElementInternals"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "form-associated-custom-elements",
+          "href": "https://html.spec.whatwg.org/multipage/custom-elements.html#form-associated-custom-elements",
+          "title": "Form-associated custom elements",
+          "number": "4.13.7.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-elementinternals-form",
+        "href": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-elementinternals-form",
+        "linkingText": [
+          "form"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "ElementInternals"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "association-of-controls-and-forms",
+          "href": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#association-of-controls-and-forms",
+          "title": "Association of controls and forms",
+          "number": "4.10.17.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-elementinternals-setvalidity",
+        "href": "https://html.spec.whatwg.org/multipage/custom-elements.html#dom-elementinternals-setvalidity",
+        "linkingText": [
+          "setValidity(flags, message, anchor)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "ElementInternals"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "form-associated-custom-elements",
+          "href": "https://html.spec.whatwg.org/multipage/custom-elements.html#form-associated-custom-elements",
+          "title": "Form-associated custom elements",
+          "number": "4.13.7.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-elementinternals-willvalidate",
+        "href": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-elementinternals-willvalidate",
+        "linkingText": [
+          "willValidate"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "ElementInternals"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-constraint-validation-api",
+          "href": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#the-constraint-validation-api",
+          "title": "The constraint validation API",
+          "number": "4.10.20.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-elementinternals-validity",
+        "href": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-elementinternals-validity",
+        "linkingText": [
+          "validity"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "ElementInternals"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-constraint-validation-api",
+          "href": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#the-constraint-validation-api",
+          "title": "The constraint validation API",
+          "number": "4.10.20.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-elementinternals-validationmessage",
+        "href": "https://html.spec.whatwg.org/multipage/custom-elements.html#dom-elementinternals-validationmessage",
+        "linkingText": [
+          "validationMessage"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "ElementInternals"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "form-associated-custom-elements",
+          "href": "https://html.spec.whatwg.org/multipage/custom-elements.html#form-associated-custom-elements",
+          "title": "Form-associated custom elements",
+          "number": "4.13.7.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-elementinternals-checkvalidity",
+        "href": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-elementinternals-checkvalidity",
+        "linkingText": [
+          "checkValidity()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "ElementInternals"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-constraint-validation-api",
+          "href": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#the-constraint-validation-api",
+          "title": "The constraint validation API",
+          "number": "4.10.20.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-elementinternals-reportvalidity",
+        "href": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-elementinternals-reportvalidity",
+        "linkingText": [
+          "reportValidity()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "ElementInternals"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-constraint-validation-api",
+          "href": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#the-constraint-validation-api",
+          "title": "The constraint validation API",
+          "number": "4.10.20.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-elementinternals-labels",
+        "href": "https://html.spec.whatwg.org/multipage/forms.html#dom-elementinternals-labels",
+        "linkingText": [
+          "labels"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "ElementInternals"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-label-element",
+          "href": "https://html.spec.whatwg.org/multipage/forms.html#the-label-element",
+          "title": "The label element",
+          "number": "4.10.4"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://wicg.github.io/custom-state-pseudo-class/": [
+      {
+        "id": "dom-elementinternals-states",
+        "href": "https://wicg.github.io/custom-state-pseudo-class/#dom-elementinternals-states",
+        "linkingText": [
+          "states"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "ElementInternals"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "exposing",
+          "href": "https://wicg.github.io/custom-state-pseudo-class/#exposing",
+          "title": "Exposing custom element states",
+          "number": "2"
+        },
+        "definedIn": "pre"
+      }
+    ],
+    "https://www.w3.org/TR/wai-aria-1.2/": [
+      {
+        "id": "dom-ariamixin",
+        "href": "https://w3c.github.io/aria/#dom-ariamixin",
+        "linkingText": [
+          "ARIAMixin"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "ARIAMixin",
+          "href": "https://w3c.github.io/aria/#ARIAMixin",
+          "title": "Interface Mixin ARIAMixin",
+          "number": "10.1"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-ariamixin-role",
+        "href": "https://w3c.github.io/aria/#dom-ariamixin-role",
+        "linkingText": [
+          "role"
+        ],
+        "localLinkingText": [
+          "ARIAMixin.role"
+        ],
+        "type": "attribute",
+        "for": [
+          "ARIAMixin"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "accessibilityroleandproperties-correspondence",
+          "href": "https://w3c.github.io/aria/#accessibilityroleandproperties-correspondence",
+          "title": "ARIA Attribute Correspondence",
+          "number": "10.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "dom-ariamixin-ariaatomic",
+        "href": "https://w3c.github.io/aria/#dom-ariamixin-ariaatomic",
+        "linkingText": [
+          "ariaAtomic"
+        ],
+        "localLinkingText": [
+          "ARIAMixin.ariaAtomic"
+        ],
+        "type": "attribute",
+        "for": [
+          "ARIAMixin"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "accessibilityroleandproperties-correspondence",
+          "href": "https://w3c.github.io/aria/#accessibilityroleandproperties-correspondence",
+          "title": "ARIA Attribute Correspondence",
+          "number": "10.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "dom-ariamixin-ariaautocomplete",
+        "href": "https://w3c.github.io/aria/#dom-ariamixin-ariaautocomplete",
+        "linkingText": [
+          "ariaAutoComplete"
+        ],
+        "localLinkingText": [
+          "ARIAMixin.ariaAutoComplete"
+        ],
+        "type": "attribute",
+        "for": [
+          "ARIAMixin"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "accessibilityroleandproperties-correspondence",
+          "href": "https://w3c.github.io/aria/#accessibilityroleandproperties-correspondence",
+          "title": "ARIA Attribute Correspondence",
+          "number": "10.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "dom-ariamixin-ariabusy",
+        "href": "https://w3c.github.io/aria/#dom-ariamixin-ariabusy",
+        "linkingText": [
+          "ariaBusy"
+        ],
+        "localLinkingText": [
+          "ARIAMixin.ariaBusy"
+        ],
+        "type": "attribute",
+        "for": [
+          "ARIAMixin"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "accessibilityroleandproperties-correspondence",
+          "href": "https://w3c.github.io/aria/#accessibilityroleandproperties-correspondence",
+          "title": "ARIA Attribute Correspondence",
+          "number": "10.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "dom-ariamixin-ariachecked",
+        "href": "https://w3c.github.io/aria/#dom-ariamixin-ariachecked",
+        "linkingText": [
+          "ariaChecked"
+        ],
+        "localLinkingText": [
+          "ARIAMixin.ariaChecked"
+        ],
+        "type": "attribute",
+        "for": [
+          "ARIAMixin"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "accessibilityroleandproperties-correspondence",
+          "href": "https://w3c.github.io/aria/#accessibilityroleandproperties-correspondence",
+          "title": "ARIA Attribute Correspondence",
+          "number": "10.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "dom-ariamixin-ariacolcount",
+        "href": "https://w3c.github.io/aria/#dom-ariamixin-ariacolcount",
+        "linkingText": [
+          "ariaColCount"
+        ],
+        "localLinkingText": [
+          "ARIAMixin.ariaColCount"
+        ],
+        "type": "attribute",
+        "for": [
+          "ARIAMixin"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "accessibilityroleandproperties-correspondence",
+          "href": "https://w3c.github.io/aria/#accessibilityroleandproperties-correspondence",
+          "title": "ARIA Attribute Correspondence",
+          "number": "10.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "dom-ariamixin-ariacolindex",
+        "href": "https://w3c.github.io/aria/#dom-ariamixin-ariacolindex",
+        "linkingText": [
+          "ariaColIndex"
+        ],
+        "localLinkingText": [
+          "ARIAMixin.ariaColIndex"
+        ],
+        "type": "attribute",
+        "for": [
+          "ARIAMixin"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "accessibilityroleandproperties-correspondence",
+          "href": "https://w3c.github.io/aria/#accessibilityroleandproperties-correspondence",
+          "title": "ARIA Attribute Correspondence",
+          "number": "10.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "dom-ariamixin-ariacolindextext",
+        "href": "https://w3c.github.io/aria/#dom-ariamixin-ariacolindextext",
+        "linkingText": [
+          "ariaColIndexText"
+        ],
+        "localLinkingText": [
+          "ARIAMixin.ariaColIndexText"
+        ],
+        "type": "attribute",
+        "for": [
+          "ARIAMixin"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "accessibilityroleandproperties-correspondence",
+          "href": "https://w3c.github.io/aria/#accessibilityroleandproperties-correspondence",
+          "title": "ARIA Attribute Correspondence",
+          "number": "10.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "dom-ariamixin-ariacolspan",
+        "href": "https://w3c.github.io/aria/#dom-ariamixin-ariacolspan",
+        "linkingText": [
+          "ariaColSpan"
+        ],
+        "localLinkingText": [
+          "ARIAMixin.ariaColSpan"
+        ],
+        "type": "attribute",
+        "for": [
+          "ARIAMixin"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "accessibilityroleandproperties-correspondence",
+          "href": "https://w3c.github.io/aria/#accessibilityroleandproperties-correspondence",
+          "title": "ARIA Attribute Correspondence",
+          "number": "10.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "dom-ariamixin-ariacurrent",
+        "href": "https://w3c.github.io/aria/#dom-ariamixin-ariacurrent",
+        "linkingText": [
+          "ariaCurrent"
+        ],
+        "localLinkingText": [
+          "ARIAMixin.ariaCurrent"
+        ],
+        "type": "attribute",
+        "for": [
+          "ARIAMixin"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "accessibilityroleandproperties-correspondence",
+          "href": "https://w3c.github.io/aria/#accessibilityroleandproperties-correspondence",
+          "title": "ARIA Attribute Correspondence",
+          "number": "10.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "dom-ariamixin-ariadescription",
+        "href": "https://w3c.github.io/aria/#dom-ariamixin-ariadescription",
+        "linkingText": [
+          "ariaDescription"
+        ],
+        "localLinkingText": [
+          "ARIAMixin.ariaDescription"
+        ],
+        "type": "attribute",
+        "for": [
+          "ARIAMixin"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "accessibilityroleandproperties-correspondence",
+          "href": "https://w3c.github.io/aria/#accessibilityroleandproperties-correspondence",
+          "title": "ARIA Attribute Correspondence",
+          "number": "10.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "dom-ariamixin-ariadisabled",
+        "href": "https://w3c.github.io/aria/#dom-ariamixin-ariadisabled",
+        "linkingText": [
+          "ariaDisabled"
+        ],
+        "localLinkingText": [
+          "ARIAMixin.ariaDisabled"
+        ],
+        "type": "attribute",
+        "for": [
+          "ARIAMixin"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "accessibilityroleandproperties-correspondence",
+          "href": "https://w3c.github.io/aria/#accessibilityroleandproperties-correspondence",
+          "title": "ARIA Attribute Correspondence",
+          "number": "10.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "dom-ariamixin-ariaexpanded",
+        "href": "https://w3c.github.io/aria/#dom-ariamixin-ariaexpanded",
+        "linkingText": [
+          "ariaExpanded"
+        ],
+        "localLinkingText": [
+          "ARIAMixin.ariaExpanded"
+        ],
+        "type": "attribute",
+        "for": [
+          "ARIAMixin"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "accessibilityroleandproperties-correspondence",
+          "href": "https://w3c.github.io/aria/#accessibilityroleandproperties-correspondence",
+          "title": "ARIA Attribute Correspondence",
+          "number": "10.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "dom-ariamixin-ariahaspopup",
+        "href": "https://w3c.github.io/aria/#dom-ariamixin-ariahaspopup",
+        "linkingText": [
+          "ariaHasPopup"
+        ],
+        "localLinkingText": [
+          "ARIAMixin.ariaHasPopup"
+        ],
+        "type": "attribute",
+        "for": [
+          "ARIAMixin"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "accessibilityroleandproperties-correspondence",
+          "href": "https://w3c.github.io/aria/#accessibilityroleandproperties-correspondence",
+          "title": "ARIA Attribute Correspondence",
+          "number": "10.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "dom-ariamixin-ariahidden",
+        "href": "https://w3c.github.io/aria/#dom-ariamixin-ariahidden",
+        "linkingText": [
+          "ariaHidden"
+        ],
+        "localLinkingText": [
+          "ARIAMixin.ariaHidden"
+        ],
+        "type": "attribute",
+        "for": [
+          "ARIAMixin"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "accessibilityroleandproperties-correspondence",
+          "href": "https://w3c.github.io/aria/#accessibilityroleandproperties-correspondence",
+          "title": "ARIA Attribute Correspondence",
+          "number": "10.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "dom-ariamixin-ariainvalid",
+        "href": "https://w3c.github.io/aria/#dom-ariamixin-ariainvalid",
+        "linkingText": [
+          "ariaInvalid"
+        ],
+        "localLinkingText": [
+          "ARIAMixin.ariaInvalid"
+        ],
+        "type": "attribute",
+        "for": [
+          "ARIAMixin"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "accessibilityroleandproperties-correspondence",
+          "href": "https://w3c.github.io/aria/#accessibilityroleandproperties-correspondence",
+          "title": "ARIA Attribute Correspondence",
+          "number": "10.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "dom-ariamixin-ariakeyshortcuts",
+        "href": "https://w3c.github.io/aria/#dom-ariamixin-ariakeyshortcuts",
+        "linkingText": [
+          "ariaKeyShortcuts"
+        ],
+        "localLinkingText": [
+          "ARIAMixin.ariaKeyShortcuts"
+        ],
+        "type": "attribute",
+        "for": [
+          "ARIAMixin"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "accessibilityroleandproperties-correspondence",
+          "href": "https://w3c.github.io/aria/#accessibilityroleandproperties-correspondence",
+          "title": "ARIA Attribute Correspondence",
+          "number": "10.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "dom-ariamixin-arialabel",
+        "href": "https://w3c.github.io/aria/#dom-ariamixin-arialabel",
+        "linkingText": [
+          "ariaLabel"
+        ],
+        "localLinkingText": [
+          "ARIAMixin.ariaLabel"
+        ],
+        "type": "attribute",
+        "for": [
+          "ARIAMixin"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "accessibilityroleandproperties-correspondence",
+          "href": "https://w3c.github.io/aria/#accessibilityroleandproperties-correspondence",
+          "title": "ARIA Attribute Correspondence",
+          "number": "10.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "dom-ariamixin-arialevel",
+        "href": "https://w3c.github.io/aria/#dom-ariamixin-arialevel",
+        "linkingText": [
+          "ariaLevel"
+        ],
+        "localLinkingText": [
+          "ARIAMixin.ariaLevel"
+        ],
+        "type": "attribute",
+        "for": [
+          "ARIAMixin"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "accessibilityroleandproperties-correspondence",
+          "href": "https://w3c.github.io/aria/#accessibilityroleandproperties-correspondence",
+          "title": "ARIA Attribute Correspondence",
+          "number": "10.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "dom-ariamixin-arialive",
+        "href": "https://w3c.github.io/aria/#dom-ariamixin-arialive",
+        "linkingText": [
+          "ariaLive"
+        ],
+        "localLinkingText": [
+          "ARIAMixin.ariaLive"
+        ],
+        "type": "attribute",
+        "for": [
+          "ARIAMixin"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "accessibilityroleandproperties-correspondence",
+          "href": "https://w3c.github.io/aria/#accessibilityroleandproperties-correspondence",
+          "title": "ARIA Attribute Correspondence",
+          "number": "10.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "dom-ariamixin-ariamodal",
+        "href": "https://w3c.github.io/aria/#dom-ariamixin-ariamodal",
+        "linkingText": [
+          "ariaModal"
+        ],
+        "localLinkingText": [
+          "ARIAMixin.ariaModal"
+        ],
+        "type": "attribute",
+        "for": [
+          "ARIAMixin"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "accessibilityroleandproperties-correspondence",
+          "href": "https://w3c.github.io/aria/#accessibilityroleandproperties-correspondence",
+          "title": "ARIA Attribute Correspondence",
+          "number": "10.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "dom-ariamixin-ariamultiline",
+        "href": "https://w3c.github.io/aria/#dom-ariamixin-ariamultiline",
+        "linkingText": [
+          "ariaMultiLine"
+        ],
+        "localLinkingText": [
+          "ARIAMixin.ariaMultiLine"
+        ],
+        "type": "attribute",
+        "for": [
+          "ARIAMixin"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "accessibilityroleandproperties-correspondence",
+          "href": "https://w3c.github.io/aria/#accessibilityroleandproperties-correspondence",
+          "title": "ARIA Attribute Correspondence",
+          "number": "10.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "dom-ariamixin-ariamultiselectable",
+        "href": "https://w3c.github.io/aria/#dom-ariamixin-ariamultiselectable",
+        "linkingText": [
+          "ariaMultiSelectable"
+        ],
+        "localLinkingText": [
+          "ARIAMixin.ariaMultiSelectable"
+        ],
+        "type": "attribute",
+        "for": [
+          "ARIAMixin"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "accessibilityroleandproperties-correspondence",
+          "href": "https://w3c.github.io/aria/#accessibilityroleandproperties-correspondence",
+          "title": "ARIA Attribute Correspondence",
+          "number": "10.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "dom-ariamixin-ariaorientation",
+        "href": "https://w3c.github.io/aria/#dom-ariamixin-ariaorientation",
+        "linkingText": [
+          "ariaOrientation"
+        ],
+        "localLinkingText": [
+          "ARIAMixin.ariaOrientation"
+        ],
+        "type": "attribute",
+        "for": [
+          "ARIAMixin"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "accessibilityroleandproperties-correspondence",
+          "href": "https://w3c.github.io/aria/#accessibilityroleandproperties-correspondence",
+          "title": "ARIA Attribute Correspondence",
+          "number": "10.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "dom-ariamixin-ariaplaceholder",
+        "href": "https://w3c.github.io/aria/#dom-ariamixin-ariaplaceholder",
+        "linkingText": [
+          "ariaPlaceholder"
+        ],
+        "localLinkingText": [
+          "ARIAMixin.ariaPlaceholder"
+        ],
+        "type": "attribute",
+        "for": [
+          "ARIAMixin"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "accessibilityroleandproperties-correspondence",
+          "href": "https://w3c.github.io/aria/#accessibilityroleandproperties-correspondence",
+          "title": "ARIA Attribute Correspondence",
+          "number": "10.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "dom-ariamixin-ariaposinset",
+        "href": "https://w3c.github.io/aria/#dom-ariamixin-ariaposinset",
+        "linkingText": [
+          "ariaPosInSet"
+        ],
+        "localLinkingText": [
+          "ARIAMixin.ariaPosInSet"
+        ],
+        "type": "attribute",
+        "for": [
+          "ARIAMixin"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "accessibilityroleandproperties-correspondence",
+          "href": "https://w3c.github.io/aria/#accessibilityroleandproperties-correspondence",
+          "title": "ARIA Attribute Correspondence",
+          "number": "10.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "dom-ariamixin-ariapressed",
+        "href": "https://w3c.github.io/aria/#dom-ariamixin-ariapressed",
+        "linkingText": [
+          "ariaPressed"
+        ],
+        "localLinkingText": [
+          "ARIAMixin.ariaPressed"
+        ],
+        "type": "attribute",
+        "for": [
+          "ARIAMixin"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "accessibilityroleandproperties-correspondence",
+          "href": "https://w3c.github.io/aria/#accessibilityroleandproperties-correspondence",
+          "title": "ARIA Attribute Correspondence",
+          "number": "10.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "dom-ariamixin-ariareadonly",
+        "href": "https://w3c.github.io/aria/#dom-ariamixin-ariareadonly",
+        "linkingText": [
+          "ariaReadOnly"
+        ],
+        "localLinkingText": [
+          "ARIAMixin.ariaReadOnly"
+        ],
+        "type": "attribute",
+        "for": [
+          "ARIAMixin"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "accessibilityroleandproperties-correspondence",
+          "href": "https://w3c.github.io/aria/#accessibilityroleandproperties-correspondence",
+          "title": "ARIA Attribute Correspondence",
+          "number": "10.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "dom-ariamixin-ariarequired",
+        "href": "https://w3c.github.io/aria/#dom-ariamixin-ariarequired",
+        "linkingText": [
+          "ariaRequired"
+        ],
+        "localLinkingText": [
+          "ARIAMixin.ariaRequired"
+        ],
+        "type": "attribute",
+        "for": [
+          "ARIAMixin"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "accessibilityroleandproperties-correspondence",
+          "href": "https://w3c.github.io/aria/#accessibilityroleandproperties-correspondence",
+          "title": "ARIA Attribute Correspondence",
+          "number": "10.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "dom-ariamixin-ariaroledescription",
+        "href": "https://w3c.github.io/aria/#dom-ariamixin-ariaroledescription",
+        "linkingText": [
+          "ariaRoleDescription"
+        ],
+        "localLinkingText": [
+          "ARIAMixin.ariaRoleDescription"
+        ],
+        "type": "attribute",
+        "for": [
+          "ARIAMixin"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "accessibilityroleandproperties-correspondence",
+          "href": "https://w3c.github.io/aria/#accessibilityroleandproperties-correspondence",
+          "title": "ARIA Attribute Correspondence",
+          "number": "10.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "dom-ariamixin-ariarowcount",
+        "href": "https://w3c.github.io/aria/#dom-ariamixin-ariarowcount",
+        "linkingText": [
+          "ariaRowCount"
+        ],
+        "localLinkingText": [
+          "ARIAMixin.ariaRowCount"
+        ],
+        "type": "attribute",
+        "for": [
+          "ARIAMixin"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "accessibilityroleandproperties-correspondence",
+          "href": "https://w3c.github.io/aria/#accessibilityroleandproperties-correspondence",
+          "title": "ARIA Attribute Correspondence",
+          "number": "10.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "dom-ariamixin-ariarowindex",
+        "href": "https://w3c.github.io/aria/#dom-ariamixin-ariarowindex",
+        "linkingText": [
+          "ariaRowIndex"
+        ],
+        "localLinkingText": [
+          "ARIAMixin.ariaRowIndex"
+        ],
+        "type": "attribute",
+        "for": [
+          "ARIAMixin"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "accessibilityroleandproperties-correspondence",
+          "href": "https://w3c.github.io/aria/#accessibilityroleandproperties-correspondence",
+          "title": "ARIA Attribute Correspondence",
+          "number": "10.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "dom-ariamixin-ariarowindextext",
+        "href": "https://w3c.github.io/aria/#dom-ariamixin-ariarowindextext",
+        "linkingText": [
+          "ariaRowIndexText"
+        ],
+        "localLinkingText": [
+          "ARIAMixin.ariaRowIndexText"
+        ],
+        "type": "attribute",
+        "for": [
+          "ARIAMixin"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "accessibilityroleandproperties-correspondence",
+          "href": "https://w3c.github.io/aria/#accessibilityroleandproperties-correspondence",
+          "title": "ARIA Attribute Correspondence",
+          "number": "10.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "dom-ariamixin-ariarowspan",
+        "href": "https://w3c.github.io/aria/#dom-ariamixin-ariarowspan",
+        "linkingText": [
+          "ariaRowSpan"
+        ],
+        "localLinkingText": [
+          "ARIAMixin.ariaRowSpan"
+        ],
+        "type": "attribute",
+        "for": [
+          "ARIAMixin"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "accessibilityroleandproperties-correspondence",
+          "href": "https://w3c.github.io/aria/#accessibilityroleandproperties-correspondence",
+          "title": "ARIA Attribute Correspondence",
+          "number": "10.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "dom-ariamixin-ariaselected",
+        "href": "https://w3c.github.io/aria/#dom-ariamixin-ariaselected",
+        "linkingText": [
+          "ariaSelected"
+        ],
+        "localLinkingText": [
+          "ARIAMixin.ariaSelected"
+        ],
+        "type": "attribute",
+        "for": [
+          "ARIAMixin"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "accessibilityroleandproperties-correspondence",
+          "href": "https://w3c.github.io/aria/#accessibilityroleandproperties-correspondence",
+          "title": "ARIA Attribute Correspondence",
+          "number": "10.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "dom-ariamixin-ariasetsize",
+        "href": "https://w3c.github.io/aria/#dom-ariamixin-ariasetsize",
+        "linkingText": [
+          "ariaSetSize"
+        ],
+        "localLinkingText": [
+          "ARIAMixin.ariaSetSize"
+        ],
+        "type": "attribute",
+        "for": [
+          "ARIAMixin"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "accessibilityroleandproperties-correspondence",
+          "href": "https://w3c.github.io/aria/#accessibilityroleandproperties-correspondence",
+          "title": "ARIA Attribute Correspondence",
+          "number": "10.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "dom-ariamixin-ariasort",
+        "href": "https://w3c.github.io/aria/#dom-ariamixin-ariasort",
+        "linkingText": [
+          "ariaSort"
+        ],
+        "localLinkingText": [
+          "ARIAMixin.ariaSort"
+        ],
+        "type": "attribute",
+        "for": [
+          "ARIAMixin"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "accessibilityroleandproperties-correspondence",
+          "href": "https://w3c.github.io/aria/#accessibilityroleandproperties-correspondence",
+          "title": "ARIA Attribute Correspondence",
+          "number": "10.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "dom-ariamixin-ariavaluemax",
+        "href": "https://w3c.github.io/aria/#dom-ariamixin-ariavaluemax",
+        "linkingText": [
+          "ariaValueMax"
+        ],
+        "localLinkingText": [
+          "ARIAMixin.ariaValueMax"
+        ],
+        "type": "attribute",
+        "for": [
+          "ARIAMixin"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "accessibilityroleandproperties-correspondence",
+          "href": "https://w3c.github.io/aria/#accessibilityroleandproperties-correspondence",
+          "title": "ARIA Attribute Correspondence",
+          "number": "10.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "dom-ariamixin-ariavaluemin",
+        "href": "https://w3c.github.io/aria/#dom-ariamixin-ariavaluemin",
+        "linkingText": [
+          "ariaValueMin"
+        ],
+        "localLinkingText": [
+          "ARIAMixin.ariaValueMin"
+        ],
+        "type": "attribute",
+        "for": [
+          "ARIAMixin"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "accessibilityroleandproperties-correspondence",
+          "href": "https://w3c.github.io/aria/#accessibilityroleandproperties-correspondence",
+          "title": "ARIA Attribute Correspondence",
+          "number": "10.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "dom-ariamixin-ariavaluenow",
+        "href": "https://w3c.github.io/aria/#dom-ariamixin-ariavaluenow",
+        "linkingText": [
+          "ariaValueNow"
+        ],
+        "localLinkingText": [
+          "ARIAMixin.ariaValueNow"
+        ],
+        "type": "attribute",
+        "for": [
+          "ARIAMixin"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "accessibilityroleandproperties-correspondence",
+          "href": "https://w3c.github.io/aria/#accessibilityroleandproperties-correspondence",
+          "title": "ARIA Attribute Correspondence",
+          "number": "10.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "dom-ariamixin-ariavaluetext",
+        "href": "https://w3c.github.io/aria/#dom-ariamixin-ariavaluetext",
+        "linkingText": [
+          "ariaValueText"
+        ],
+        "localLinkingText": [
+          "ARIAMixin.ariaValueText"
+        ],
+        "type": "attribute",
+        "for": [
+          "ARIAMixin"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "accessibilityroleandproperties-correspondence",
+          "href": "https://w3c.github.io/aria/#accessibilityroleandproperties-correspondence",
+          "title": "ARIA Attribute Correspondence",
+          "number": "10.2"
+        },
+        "definedIn": "table"
+      }
+    ]
+  }
+}

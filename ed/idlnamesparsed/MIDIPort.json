@@ -1,0 +1,394 @@
+{
+  "name": "MIDIPort",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Web MIDI API",
+      "url": "https://www.w3.org/TR/webmidi/"
+    },
+    "fragment": "[SecureContext, Exposed=Window] interface MIDIPort: EventTarget {\n  readonly attribute DOMString id;\n  readonly attribute DOMString? manufacturer;\n  readonly attribute DOMString? name;\n  readonly attribute MIDIPortType type;\n  readonly attribute DOMString? version;\n  readonly attribute MIDIPortDeviceState state;\n  readonly attribute MIDIPortConnectionState connection;\n  attribute EventHandler onstatechange;\n  Promise <MIDIPort> open();\n  Promise <MIDIPort> close();\n};",
+    "href": "https://webaudio.github.io/web-midi-api/#dom-midiport"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "EventTarget",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=*]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+      "href": "https://dom.spec.whatwg.org/#eventtarget"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webmidi/": [
+      {
+        "id": "dom-midiport",
+        "href": "https://webaudio.github.io/web-midi-api/#dom-midiport",
+        "linkingText": [
+          "MIDIPort"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "midiport-interface",
+          "href": "https://webaudio.github.io/web-midi-api/#midiport-interface",
+          "title": "MIDIPort Interface",
+          "number": "4.8"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-midiport-id",
+        "href": "https://webaudio.github.io/web-midi-api/#dom-midiport-id",
+        "linkingText": [
+          "id"
+        ],
+        "localLinkingText": [
+          "MIDIPort.id"
+        ],
+        "type": "attribute",
+        "for": [
+          "MIDIPort"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "midiport-interface",
+          "href": "https://webaudio.github.io/web-midi-api/#midiport-interface",
+          "title": "MIDIPort Interface",
+          "number": "4.8"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-midiport-manufacturer",
+        "href": "https://webaudio.github.io/web-midi-api/#dom-midiport-manufacturer",
+        "linkingText": [
+          "manufacturer"
+        ],
+        "localLinkingText": [
+          "MIDIPort.manufacturer"
+        ],
+        "type": "attribute",
+        "for": [
+          "MIDIPort"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "midiport-interface",
+          "href": "https://webaudio.github.io/web-midi-api/#midiport-interface",
+          "title": "MIDIPort Interface",
+          "number": "4.8"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-midiport-name",
+        "href": "https://webaudio.github.io/web-midi-api/#dom-midiport-name",
+        "linkingText": [
+          "name"
+        ],
+        "localLinkingText": [
+          "MIDIPort.name"
+        ],
+        "type": "attribute",
+        "for": [
+          "MIDIPort"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "midiport-interface",
+          "href": "https://webaudio.github.io/web-midi-api/#midiport-interface",
+          "title": "MIDIPort Interface",
+          "number": "4.8"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-midiport-type",
+        "href": "https://webaudio.github.io/web-midi-api/#dom-midiport-type",
+        "linkingText": [
+          "type"
+        ],
+        "localLinkingText": [
+          "MIDIPort.type"
+        ],
+        "type": "attribute",
+        "for": [
+          "MIDIPort"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "midiport-interface",
+          "href": "https://webaudio.github.io/web-midi-api/#midiport-interface",
+          "title": "MIDIPort Interface",
+          "number": "4.8"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-midiport-version",
+        "href": "https://webaudio.github.io/web-midi-api/#dom-midiport-version",
+        "linkingText": [
+          "version"
+        ],
+        "localLinkingText": [
+          "MIDIPort.version"
+        ],
+        "type": "attribute",
+        "for": [
+          "MIDIPort"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "midiport-interface",
+          "href": "https://webaudio.github.io/web-midi-api/#midiport-interface",
+          "title": "MIDIPort Interface",
+          "number": "4.8"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-midiport-state",
+        "href": "https://webaudio.github.io/web-midi-api/#dom-midiport-state",
+        "linkingText": [
+          "state"
+        ],
+        "localLinkingText": [
+          "MIDIPort.state"
+        ],
+        "type": "attribute",
+        "for": [
+          "MIDIPort"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "midiport-interface",
+          "href": "https://webaudio.github.io/web-midi-api/#midiport-interface",
+          "title": "MIDIPort Interface",
+          "number": "4.8"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-midiport-connection",
+        "href": "https://webaudio.github.io/web-midi-api/#dom-midiport-connection",
+        "linkingText": [
+          "connection"
+        ],
+        "localLinkingText": [
+          "MIDIPort.connection"
+        ],
+        "type": "attribute",
+        "for": [
+          "MIDIPort"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "midiport-interface",
+          "href": "https://webaudio.github.io/web-midi-api/#midiport-interface",
+          "title": "MIDIPort Interface",
+          "number": "4.8"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-midiport-onstatechange",
+        "href": "https://webaudio.github.io/web-midi-api/#dom-midiport-onstatechange",
+        "linkingText": [
+          "onstatechange"
+        ],
+        "localLinkingText": [
+          "MIDIPort.onstatechange"
+        ],
+        "type": "attribute",
+        "for": [
+          "MIDIPort"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "midiport-interface",
+          "href": "https://webaudio.github.io/web-midi-api/#midiport-interface",
+          "title": "MIDIPort Interface",
+          "number": "4.8"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-midiport-open",
+        "href": "https://webaudio.github.io/web-midi-api/#dom-midiport-open",
+        "linkingText": [
+          "open()"
+        ],
+        "localLinkingText": [
+          "MIDIPort.open",
+          "MIDIPort.open()",
+          "open"
+        ],
+        "type": "method",
+        "for": [
+          "MIDIPort"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "midiport-interface",
+          "href": "https://webaudio.github.io/web-midi-api/#midiport-interface",
+          "title": "MIDIPort Interface",
+          "number": "4.8"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-midiport-close",
+        "href": "https://webaudio.github.io/web-midi-api/#dom-midiport-close",
+        "linkingText": [
+          "close()"
+        ],
+        "localLinkingText": [
+          "MIDIPort.close",
+          "MIDIPort.close()",
+          "close"
+        ],
+        "type": "method",
+        "for": [
+          "MIDIPort"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "midiport-interface",
+          "href": "https://webaudio.github.io/web-midi-api/#midiport-interface",
+          "title": "MIDIPort Interface",
+          "number": "4.8"
+        },
+        "definedIn": "dt"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "eventtarget",
+        "href": "https://dom.spec.whatwg.org/#eventtarget",
+        "linkingText": [
+          "EventTarget"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventtarget-eventtarget",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-eventtarget",
+        "linkingText": [
+          "EventTarget()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-addeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-addeventlistener",
+        "linkingText": [
+          "addEventListener(type, callback, options)",
+          "addEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-removeeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-removeeventlistener",
+        "linkingText": [
+          "removeEventListener(type, callback, options)",
+          "removeEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-dispatchevent",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-dispatchevent",
+        "linkingText": [
+          "dispatchEvent(event)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

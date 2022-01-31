@@ -1,0 +1,104 @@
+{
+  "name": "Global",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebAssembly JavaScript Interface",
+      "url": "https://www.w3.org/TR/wasm-js-api-1/"
+    },
+    "fragment": "[LegacyNamespace=WebAssembly, Exposed=(Window,Worker,Worklet)]\ninterface Global {\n  constructor(GlobalDescriptor descriptor, optional any v);\n  any valueOf();\n  attribute any value;\n};",
+    "href": "https://webassembly.github.io/spec/js-api/#global"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/wasm-js-api-1/": [
+      {
+        "id": "global",
+        "href": "https://webassembly.github.io/spec/js-api/#global",
+        "linkingText": [
+          "Global"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "globals",
+          "href": "https://webassembly.github.io/spec/js-api/#globals",
+          "title": "Globals",
+          "number": "4.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-global-global",
+        "href": "https://webassembly.github.io/spec/js-api/#dom-global-global",
+        "linkingText": [
+          "Global(descriptor, v)",
+          "constructor(descriptor, v)",
+          "Global(descriptor)",
+          "constructor(descriptor)"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "Global"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "globals",
+          "href": "https://webassembly.github.io/spec/js-api/#globals",
+          "title": "Globals",
+          "number": "4.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-global-valueof",
+        "href": "https://webassembly.github.io/spec/js-api/#dom-global-valueof",
+        "linkingText": [
+          "valueOf()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Global"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "globals",
+          "href": "https://webassembly.github.io/spec/js-api/#globals",
+          "title": "Globals",
+          "number": "4.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-global-value",
+        "href": "https://webassembly.github.io/spec/js-api/#dom-global-value",
+        "linkingText": [
+          "value"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Global"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "globals",
+          "href": "https://webassembly.github.io/spec/js-api/#globals",
+          "title": "Globals",
+          "number": "4.5"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

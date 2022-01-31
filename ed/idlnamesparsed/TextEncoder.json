@@ -1,0 +1,167 @@
+{
+  "name": "TextEncoder",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Encoding Standard",
+      "url": "https://www.w3.org/TR/encoding/"
+    },
+    "fragment": "[Exposed=*]\ninterface TextEncoder {\n  constructor();\n\n  [NewObject] Uint8Array encode(optional USVString input = \"\");\n  TextEncoderEncodeIntoResult encodeInto(USVString source, [AllowShared] Uint8Array destination);\n};",
+    "href": "https://encoding.spec.whatwg.org/#textencoder"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "Encoding Standard",
+        "url": "https://www.w3.org/TR/encoding/"
+      },
+      "fragment": "TextEncoder includes TextEncoderCommon;"
+    }
+  ],
+  "inheritance": null,
+  "includes": [
+    {
+      "name": "TextEncoderCommon",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "Encoding Standard",
+          "url": "https://www.w3.org/TR/encoding/"
+        },
+        "fragment": "interface mixin TextEncoderCommon {\n  readonly attribute DOMString encoding;\n};",
+        "href": "https://encoding.spec.whatwg.org/#textencodercommon"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    }
+  ],
+  "dfns": {
+    "https://www.w3.org/TR/encoding/": [
+      {
+        "id": "textencoder",
+        "href": "https://encoding.spec.whatwg.org/#textencoder",
+        "linkingText": [
+          "TextEncoder"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-textencoder",
+          "href": "https://encoding.spec.whatwg.org/#interface-textencoder",
+          "title": "Interface TextEncoder",
+          "number": "7.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-textencoder",
+        "href": "https://encoding.spec.whatwg.org/#dom-textencoder",
+        "linkingText": [
+          "TextEncoder()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "TextEncoder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-textencoder",
+          "href": "https://encoding.spec.whatwg.org/#interface-textencoder",
+          "title": "Interface TextEncoder",
+          "number": "7.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-textencoder-encode",
+        "href": "https://encoding.spec.whatwg.org/#dom-textencoder-encode",
+        "linkingText": [
+          "encode(input)",
+          "encode()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "TextEncoder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-textencoder",
+          "href": "https://encoding.spec.whatwg.org/#interface-textencoder",
+          "title": "Interface TextEncoder",
+          "number": "7.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-textencoder-encodeinto",
+        "href": "https://encoding.spec.whatwg.org/#dom-textencoder-encodeinto",
+        "linkingText": [
+          "encodeInto(source, destination)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "TextEncoder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-textencoder",
+          "href": "https://encoding.spec.whatwg.org/#interface-textencoder",
+          "title": "Interface TextEncoder",
+          "number": "7.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "textencodercommon",
+        "href": "https://encoding.spec.whatwg.org/#textencodercommon",
+        "linkingText": [
+          "TextEncoderCommon"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-mixin-textencodercommon",
+          "href": "https://encoding.spec.whatwg.org/#interface-mixin-textencodercommon",
+          "title": "Interface mixin TextEncoderCommon",
+          "number": "7.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-textencoder-encoding",
+        "href": "https://encoding.spec.whatwg.org/#dom-textencoder-encoding",
+        "linkingText": [
+          "encoding"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "TextEncoderCommon"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-mixin-textencodercommon",
+          "href": "https://encoding.spec.whatwg.org/#interface-mixin-textencodercommon",
+          "title": "Interface mixin TextEncoderCommon",
+          "number": "7.3"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

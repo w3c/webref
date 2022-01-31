@@ -1,0 +1,199 @@
+{
+  "name": "ProgressEventInit",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "XMLHttpRequest Standard",
+      "url": "https://xhr.spec.whatwg.org/"
+    },
+    "fragment": "dictionary ProgressEventInit : EventInit {\n  boolean lengthComputable = false;\n  unsigned long long loaded = 0;\n  unsigned long long total = 0;\n};",
+    "href": "https://xhr.spec.whatwg.org/#progresseventinit"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "EventInit",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "dictionary EventInit {\n  boolean bubbles = false;\n  boolean cancelable = false;\n  boolean composed = false;\n};",
+      "href": "https://dom.spec.whatwg.org/#dictdef-eventinit"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://xhr.spec.whatwg.org/": [
+      {
+        "id": "progresseventinit",
+        "href": "https://xhr.spec.whatwg.org/#progresseventinit",
+        "linkingText": [
+          "ProgressEventInit"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-progressevent",
+          "href": "https://xhr.spec.whatwg.org/#interface-progressevent",
+          "title": "Interface ProgressEvent",
+          "number": "5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-progresseventinit-lengthcomputable",
+        "href": "https://xhr.spec.whatwg.org/#dom-progresseventinit-lengthcomputable",
+        "linkingText": [
+          "lengthComputable"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "ProgressEventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-progressevent",
+          "href": "https://xhr.spec.whatwg.org/#interface-progressevent",
+          "title": "Interface ProgressEvent",
+          "number": "5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-progresseventinit-loaded",
+        "href": "https://xhr.spec.whatwg.org/#dom-progresseventinit-loaded",
+        "linkingText": [
+          "loaded"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "ProgressEventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-progressevent",
+          "href": "https://xhr.spec.whatwg.org/#interface-progressevent",
+          "title": "Interface ProgressEvent",
+          "number": "5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-progresseventinit-total",
+        "href": "https://xhr.spec.whatwg.org/#dom-progresseventinit-total",
+        "linkingText": [
+          "total"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "ProgressEventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-progressevent",
+          "href": "https://xhr.spec.whatwg.org/#interface-progressevent",
+          "title": "Interface ProgressEvent",
+          "number": "5"
+        },
+        "definedIn": "pre"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "dictdef-eventinit",
+        "href": "https://dom.spec.whatwg.org/#dictdef-eventinit",
+        "linkingText": [
+          "EventInit"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventinit-bubbles",
+        "href": "https://dom.spec.whatwg.org/#dom-eventinit-bubbles",
+        "linkingText": [
+          "bubbles"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventinit-cancelable",
+        "href": "https://dom.spec.whatwg.org/#dom-eventinit-cancelable",
+        "linkingText": [
+          "cancelable"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventinit-composed",
+        "href": "https://dom.spec.whatwg.org/#dom-eventinit-composed",
+        "linkingText": [
+          "composed"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

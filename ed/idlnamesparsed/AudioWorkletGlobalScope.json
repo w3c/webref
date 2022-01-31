@@ -1,0 +1,157 @@
+{
+  "name": "AudioWorkletGlobalScope",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Web Audio API",
+      "url": "https://www.w3.org/TR/webaudio/"
+    },
+    "fragment": "[Global=(Worklet, AudioWorklet), Exposed=AudioWorklet]\ninterface AudioWorkletGlobalScope : WorkletGlobalScope {\n  undefined registerProcessor (DOMString name,\n                               AudioWorkletProcessorConstructor processorCtor);\n  readonly attribute unsigned long long currentFrame;\n  readonly attribute double currentTime;\n  readonly attribute float sampleRate;\n};",
+    "href": "https://webaudio.github.io/web-audio-api/#audioworkletglobalscope"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "WorkletGlobalScope",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "HTML Standard",
+        "url": "https://html.spec.whatwg.org/multipage/"
+      },
+      "fragment": "[Exposed=Worklet, SecureContext]\ninterface WorkletGlobalScope {};",
+      "href": "https://html.spec.whatwg.org/multipage/worklets.html#workletglobalscope"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webaudio/": [
+      {
+        "id": "audioworkletglobalscope",
+        "href": "https://webaudio.github.io/web-audio-api/#audioworkletglobalscope",
+        "linkingText": [
+          "AudioWorkletGlobalScope"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "AudioWorkletGlobalScope",
+          "href": "https://webaudio.github.io/web-audio-api/#AudioWorkletGlobalScope",
+          "title": "The AudioWorkletGlobalScope Interface",
+          "number": "1.32.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-audioworkletglobalscope-registerprocessor",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-audioworkletglobalscope-registerprocessor",
+        "linkingText": [
+          "registerProcessor(name, processorCtor)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "AudioWorkletGlobalScope"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "AudioWorkletGlobalScope-methods",
+          "href": "https://webaudio.github.io/web-audio-api/#AudioWorkletGlobalScope-methods",
+          "title": "Methods",
+          "number": "1.32.2.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-audioworkletglobalscope-currentframe",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-audioworkletglobalscope-currentframe",
+        "linkingText": [
+          "currentFrame"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "AudioWorkletGlobalScope"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "AudioWorkletGlobalScope-attributes",
+          "href": "https://webaudio.github.io/web-audio-api/#AudioWorkletGlobalScope-attributes",
+          "title": "Attributes",
+          "number": "1.32.2.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-audioworkletglobalscope-currenttime",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-audioworkletglobalscope-currenttime",
+        "linkingText": [
+          "currentTime"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "AudioWorkletGlobalScope"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "AudioWorkletGlobalScope-attributes",
+          "href": "https://webaudio.github.io/web-audio-api/#AudioWorkletGlobalScope-attributes",
+          "title": "Attributes",
+          "number": "1.32.2.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-audioworkletglobalscope-samplerate",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-audioworkletglobalscope-samplerate",
+        "linkingText": [
+          "sampleRate"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "AudioWorkletGlobalScope"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "AudioWorkletGlobalScope-attributes",
+          "href": "https://webaudio.github.io/web-audio-api/#AudioWorkletGlobalScope-attributes",
+          "title": "Attributes",
+          "number": "1.32.2.1"
+        },
+        "definedIn": "dt"
+      }
+    ],
+    "https://html.spec.whatwg.org/multipage/": [
+      {
+        "id": "workletglobalscope",
+        "href": "https://html.spec.whatwg.org/multipage/worklets.html#workletglobalscope",
+        "linkingText": [
+          "WorkletGlobalScope"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "worklets-global",
+          "href": "https://html.spec.whatwg.org/multipage/worklets.html#worklets-global",
+          "title": "The global scope",
+          "number": "11.3.1"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

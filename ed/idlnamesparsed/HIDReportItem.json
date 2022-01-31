@@ -1,0 +1,597 @@
+{
+  "name": "HIDReportItem",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "WebHID API",
+      "url": "https://wicg.github.io/webhid/"
+    },
+    "fragment": "dictionary HIDReportItem {\n    boolean isAbsolute;\n    boolean isArray;\n    boolean isBufferedBytes;\n    boolean isConstant;\n    boolean isLinear;\n    boolean isRange;\n    boolean isVolatile;\n    boolean hasNull;\n    boolean hasPreferredState;\n    boolean wrap;\n    sequence<unsigned long> usages;\n    unsigned long usageMinimum;\n    unsigned long usageMaximum;\n    unsigned short reportSize;\n    unsigned short reportCount;\n    byte unitExponent;\n    HIDUnitSystem unitSystem;\n    byte unitFactorLengthExponent;\n    byte unitFactorMassExponent;\n    byte unitFactorTimeExponent;\n    byte unitFactorTemperatureExponent;\n    byte unitFactorCurrentExponent;\n    byte unitFactorLuminousIntensityExponent;\n    long logicalMinimum;\n    long logicalMaximum;\n    long physicalMinimum;\n    long physicalMaximum;\n    sequence<DOMString> strings;\n};",
+    "href": "https://wicg.github.io/webhid/#dom-hidreportitem"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://wicg.github.io/webhid/": [
+      {
+        "id": "dom-hidreportitem",
+        "href": "https://wicg.github.io/webhid/#dom-hidreportitem",
+        "linkingText": [
+          "HIDReportItem"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "hidreportitem-dictionary",
+          "href": "https://wicg.github.io/webhid/#hidreportitem-dictionary",
+          "title": "11. HIDReportItem dictionary"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-hidreportitem-isabsolute",
+        "href": "https://wicg.github.io/webhid/#dom-hidreportitem-isabsolute",
+        "linkingText": [
+          "isAbsolute"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "HIDReportItem"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "hidreportitem-dictionary",
+          "href": "https://wicg.github.io/webhid/#hidreportitem-dictionary",
+          "title": "11. HIDReportItem dictionary"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-hidreportitem-isarray",
+        "href": "https://wicg.github.io/webhid/#dom-hidreportitem-isarray",
+        "linkingText": [
+          "isArray"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "HIDReportItem"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "hidreportitem-dictionary",
+          "href": "https://wicg.github.io/webhid/#hidreportitem-dictionary",
+          "title": "11. HIDReportItem dictionary"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-hidreportitem-isbufferedbytes",
+        "href": "https://wicg.github.io/webhid/#dom-hidreportitem-isbufferedbytes",
+        "linkingText": [
+          "isBufferedBytes"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "HIDReportItem"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "hidreportitem-dictionary",
+          "href": "https://wicg.github.io/webhid/#hidreportitem-dictionary",
+          "title": "11. HIDReportItem dictionary"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-hidreportitem-isconstant",
+        "href": "https://wicg.github.io/webhid/#dom-hidreportitem-isconstant",
+        "linkingText": [
+          "isConstant"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "HIDReportItem"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "hidreportitem-dictionary",
+          "href": "https://wicg.github.io/webhid/#hidreportitem-dictionary",
+          "title": "11. HIDReportItem dictionary"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-hidreportitem-islinear",
+        "href": "https://wicg.github.io/webhid/#dom-hidreportitem-islinear",
+        "linkingText": [
+          "isLinear"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "HIDReportItem"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "hidreportitem-dictionary",
+          "href": "https://wicg.github.io/webhid/#hidreportitem-dictionary",
+          "title": "11. HIDReportItem dictionary"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-hidreportitem-isrange",
+        "href": "https://wicg.github.io/webhid/#dom-hidreportitem-isrange",
+        "linkingText": [
+          "isRange"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "HIDReportItem"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "hidreportitem-dictionary",
+          "href": "https://wicg.github.io/webhid/#hidreportitem-dictionary",
+          "title": "11. HIDReportItem dictionary"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-hidreportitem-isvolatile",
+        "href": "https://wicg.github.io/webhid/#dom-hidreportitem-isvolatile",
+        "linkingText": [
+          "isVolatile"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "HIDReportItem"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "hidreportitem-dictionary",
+          "href": "https://wicg.github.io/webhid/#hidreportitem-dictionary",
+          "title": "11. HIDReportItem dictionary"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-hidreportitem-hasnull",
+        "href": "https://wicg.github.io/webhid/#dom-hidreportitem-hasnull",
+        "linkingText": [
+          "hasNull"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "HIDReportItem"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "hidreportitem-dictionary",
+          "href": "https://wicg.github.io/webhid/#hidreportitem-dictionary",
+          "title": "11. HIDReportItem dictionary"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-hidreportitem-haspreferredstate",
+        "href": "https://wicg.github.io/webhid/#dom-hidreportitem-haspreferredstate",
+        "linkingText": [
+          "hasPreferredState"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "HIDReportItem"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "hidreportitem-dictionary",
+          "href": "https://wicg.github.io/webhid/#hidreportitem-dictionary",
+          "title": "11. HIDReportItem dictionary"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-hidreportitem-wrap",
+        "href": "https://wicg.github.io/webhid/#dom-hidreportitem-wrap",
+        "linkingText": [
+          "wrap"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "HIDReportItem"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "hidreportitem-dictionary",
+          "href": "https://wicg.github.io/webhid/#hidreportitem-dictionary",
+          "title": "11. HIDReportItem dictionary"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-hidreportitem-usages",
+        "href": "https://wicg.github.io/webhid/#dom-hidreportitem-usages",
+        "linkingText": [
+          "usages"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "HIDReportItem"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "hidreportitem-dictionary",
+          "href": "https://wicg.github.io/webhid/#hidreportitem-dictionary",
+          "title": "11. HIDReportItem dictionary"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-hidreportitem-usageminimum",
+        "href": "https://wicg.github.io/webhid/#dom-hidreportitem-usageminimum",
+        "linkingText": [
+          "usageMinimum"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "HIDReportItem"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "hidreportitem-dictionary",
+          "href": "https://wicg.github.io/webhid/#hidreportitem-dictionary",
+          "title": "11. HIDReportItem dictionary"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-hidreportitem-usagemaximum",
+        "href": "https://wicg.github.io/webhid/#dom-hidreportitem-usagemaximum",
+        "linkingText": [
+          "usageMaximum"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "HIDReportItem"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "hidreportitem-dictionary",
+          "href": "https://wicg.github.io/webhid/#hidreportitem-dictionary",
+          "title": "11. HIDReportItem dictionary"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-hidreportitem-reportsize",
+        "href": "https://wicg.github.io/webhid/#dom-hidreportitem-reportsize",
+        "linkingText": [
+          "reportSize"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "HIDReportItem"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "hidreportitem-dictionary",
+          "href": "https://wicg.github.io/webhid/#hidreportitem-dictionary",
+          "title": "11. HIDReportItem dictionary"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-hidreportitem-reportcount",
+        "href": "https://wicg.github.io/webhid/#dom-hidreportitem-reportcount",
+        "linkingText": [
+          "reportCount"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "HIDReportItem"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "hidreportitem-dictionary",
+          "href": "https://wicg.github.io/webhid/#hidreportitem-dictionary",
+          "title": "11. HIDReportItem dictionary"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-hidreportitem-unitexponent",
+        "href": "https://wicg.github.io/webhid/#dom-hidreportitem-unitexponent",
+        "linkingText": [
+          "unitExponent"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "HIDReportItem"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "hidreportitem-dictionary",
+          "href": "https://wicg.github.io/webhid/#hidreportitem-dictionary",
+          "title": "11. HIDReportItem dictionary"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-hidreportitem-unitsystem",
+        "href": "https://wicg.github.io/webhid/#dom-hidreportitem-unitsystem",
+        "linkingText": [
+          "unitSystem"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "HIDReportItem"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "hidreportitem-dictionary",
+          "href": "https://wicg.github.io/webhid/#hidreportitem-dictionary",
+          "title": "11. HIDReportItem dictionary"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-hidreportitem-unitfactorlengthexponent",
+        "href": "https://wicg.github.io/webhid/#dom-hidreportitem-unitfactorlengthexponent",
+        "linkingText": [
+          "unitFactorLengthExponent"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "HIDReportItem"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "hidreportitem-dictionary",
+          "href": "https://wicg.github.io/webhid/#hidreportitem-dictionary",
+          "title": "11. HIDReportItem dictionary"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-hidreportitem-unitfactormassexponent",
+        "href": "https://wicg.github.io/webhid/#dom-hidreportitem-unitfactormassexponent",
+        "linkingText": [
+          "unitFactorMassExponent"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "HIDReportItem"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "hidreportitem-dictionary",
+          "href": "https://wicg.github.io/webhid/#hidreportitem-dictionary",
+          "title": "11. HIDReportItem dictionary"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-hidreportitem-unitfactortimeexponent",
+        "href": "https://wicg.github.io/webhid/#dom-hidreportitem-unitfactortimeexponent",
+        "linkingText": [
+          "unitFactorTimeExponent"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "HIDReportItem"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "hidreportitem-dictionary",
+          "href": "https://wicg.github.io/webhid/#hidreportitem-dictionary",
+          "title": "11. HIDReportItem dictionary"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-hidreportitem-unitfactortemperatureexponent",
+        "href": "https://wicg.github.io/webhid/#dom-hidreportitem-unitfactortemperatureexponent",
+        "linkingText": [
+          "unitFactorTemperatureExponent"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "HIDReportItem"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "hidreportitem-dictionary",
+          "href": "https://wicg.github.io/webhid/#hidreportitem-dictionary",
+          "title": "11. HIDReportItem dictionary"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-hidreportitem-unitfactorcurrentexponent",
+        "href": "https://wicg.github.io/webhid/#dom-hidreportitem-unitfactorcurrentexponent",
+        "linkingText": [
+          "unitFactorCurrentExponent"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "HIDReportItem"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "hidreportitem-dictionary",
+          "href": "https://wicg.github.io/webhid/#hidreportitem-dictionary",
+          "title": "11. HIDReportItem dictionary"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-hidreportitem-unitfactorluminousintensityexponent",
+        "href": "https://wicg.github.io/webhid/#dom-hidreportitem-unitfactorluminousintensityexponent",
+        "linkingText": [
+          "unitFactorLuminousIntensityExponent"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "HIDReportItem"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "hidreportitem-dictionary",
+          "href": "https://wicg.github.io/webhid/#hidreportitem-dictionary",
+          "title": "11. HIDReportItem dictionary"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-hidreportitem-logicalminimum",
+        "href": "https://wicg.github.io/webhid/#dom-hidreportitem-logicalminimum",
+        "linkingText": [
+          "logicalMinimum"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "HIDReportItem"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "hidreportitem-dictionary",
+          "href": "https://wicg.github.io/webhid/#hidreportitem-dictionary",
+          "title": "11. HIDReportItem dictionary"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-hidreportitem-logicalmaximum",
+        "href": "https://wicg.github.io/webhid/#dom-hidreportitem-logicalmaximum",
+        "linkingText": [
+          "logicalMaximum"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "HIDReportItem"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "hidreportitem-dictionary",
+          "href": "https://wicg.github.io/webhid/#hidreportitem-dictionary",
+          "title": "11. HIDReportItem dictionary"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-hidreportitem-physicalminimum",
+        "href": "https://wicg.github.io/webhid/#dom-hidreportitem-physicalminimum",
+        "linkingText": [
+          "physicalMinimum"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "HIDReportItem"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "hidreportitem-dictionary",
+          "href": "https://wicg.github.io/webhid/#hidreportitem-dictionary",
+          "title": "11. HIDReportItem dictionary"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-hidreportitem-physicalmaximum",
+        "href": "https://wicg.github.io/webhid/#dom-hidreportitem-physicalmaximum",
+        "linkingText": [
+          "physicalMaximum"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "HIDReportItem"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "hidreportitem-dictionary",
+          "href": "https://wicg.github.io/webhid/#hidreportitem-dictionary",
+          "title": "11. HIDReportItem dictionary"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-hidreportitem-strings",
+        "href": "https://wicg.github.io/webhid/#dom-hidreportitem-strings",
+        "linkingText": [
+          "strings"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "HIDReportItem"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "hidreportitem-dictionary",
+          "href": "https://wicg.github.io/webhid/#hidreportitem-dictionary",
+          "title": "11. HIDReportItem dictionary"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

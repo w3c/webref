@@ -1,0 +1,87 @@
+{
+  "name": "GamepadHapticActuator",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Gamepad Extensions",
+      "url": "https://w3c.github.io/gamepad/extensions.html"
+    },
+    "fragment": "[Exposed=Window]\ninterface GamepadHapticActuator {\n  readonly attribute GamepadHapticActuatorType type;\n  Promise<boolean> pulse(double value, double duration);\n};",
+    "href": "https://w3c.github.io/gamepad/extensions.html#dom-gamepadhapticactuator"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://w3c.github.io/gamepad/extensions.html": [
+      {
+        "id": "dom-gamepadhapticactuator",
+        "href": "https://w3c.github.io/gamepad/extensions.html#dom-gamepadhapticactuator",
+        "linkingText": [
+          "GamepadHapticActuator"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "gamepadhapticactuator-interface",
+          "href": "https://w3c.github.io/gamepad/extensions.html#gamepadhapticactuator-interface",
+          "title": "GamepadHapticActuator Interface",
+          "number": "4"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-gamepadhapticactuator-type",
+        "href": "https://w3c.github.io/gamepad/extensions.html#dom-gamepadhapticactuator-type",
+        "linkingText": [
+          "type"
+        ],
+        "localLinkingText": [
+          "GamepadHapticActuator.type"
+        ],
+        "type": "attribute",
+        "for": [
+          "GamepadHapticActuator"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "gamepadhapticactuator-interface",
+          "href": "https://w3c.github.io/gamepad/extensions.html#gamepadhapticactuator-interface",
+          "title": "GamepadHapticActuator Interface",
+          "number": "4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gamepadhapticactuator-pulse",
+        "href": "https://w3c.github.io/gamepad/extensions.html#dom-gamepadhapticactuator-pulse",
+        "linkingText": [
+          "pulse()",
+          "pulse(value, duration)"
+        ],
+        "localLinkingText": [
+          "GamepadHapticActuator.pulse",
+          "GamepadHapticActuator.pulse()",
+          "pulse"
+        ],
+        "type": "method",
+        "for": [
+          "GamepadHapticActuator"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "gamepadhapticactuator-interface",
+          "href": "https://w3c.github.io/gamepad/extensions.html#gamepadhapticactuator-interface",
+          "title": "GamepadHapticActuator Interface",
+          "number": "4"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

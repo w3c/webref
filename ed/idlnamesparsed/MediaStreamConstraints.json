@@ -1,0 +1,138 @@
+{
+  "name": "MediaStreamConstraints",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Media Capture and Streams",
+      "url": "https://www.w3.org/TR/mediacapture-streams/"
+    },
+    "fragment": "dictionary MediaStreamConstraints {\n  (boolean or MediaTrackConstraints) video = false;\n  (boolean or MediaTrackConstraints) audio = false;\n};",
+    "href": "https://w3c.github.io/mediacapture-main/#dom-mediastreamconstraints"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "preferCurrentTab",
+        "url": "https://wicg.github.io/prefer-current-tab/"
+      },
+      "fragment": "partial dictionary MediaStreamConstraints {\n  boolean preferCurrentTab = false;\n};"
+    },
+    {
+      "spec": {
+        "title": "Identity for WebRTC 1.0",
+        "url": "https://www.w3.org/TR/webrtc-identity/"
+      },
+      "fragment": "partial dictionary MediaStreamConstraints {\n             DOMString peerIdentity;\n};"
+    }
+  ],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/mediacapture-streams/": [
+      {
+        "id": "dom-mediastreamconstraints",
+        "href": "https://w3c.github.io/mediacapture-main/#dom-mediastreamconstraints",
+        "linkingText": [
+          "MediaStreamConstraints"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "mediastreamconstraints",
+          "href": "https://w3c.github.io/mediacapture-main/#mediastreamconstraints",
+          "title": "MediaStreamConstraints",
+          "number": "10.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-mediastreamconstraints-video",
+        "href": "https://w3c.github.io/mediacapture-main/#dom-mediastreamconstraints-video",
+        "linkingText": [
+          "video"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MediaStreamConstraints"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-mediastreamconstraints-members",
+          "href": "https://w3c.github.io/mediacapture-main/#dictionary-mediastreamconstraints-members",
+          "title": "Dictionary MediaStreamConstraints Members"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediastreamconstraints-audio",
+        "href": "https://w3c.github.io/mediacapture-main/#dom-mediastreamconstraints-audio",
+        "linkingText": [
+          "audio"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MediaStreamConstraints"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-mediastreamconstraints-members",
+          "href": "https://w3c.github.io/mediacapture-main/#dictionary-mediastreamconstraints-members",
+          "title": "Dictionary MediaStreamConstraints Members"
+        },
+        "definedIn": "dt"
+      }
+    ],
+    "https://wicg.github.io/prefer-current-tab/": [
+      {
+        "id": "dom-mediastreamconstraints-prefercurrenttab",
+        "href": "https://wicg.github.io/prefer-current-tab/#dom-mediastreamconstraints-prefercurrenttab",
+        "linkingText": [
+          "preferCurrentTab"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MediaStreamConstraints"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "prefer-current-tab",
+          "href": "https://wicg.github.io/prefer-current-tab/#prefer-current-tab",
+          "title": "preferCurrentTab",
+          "number": "3"
+        },
+        "definedIn": "dt"
+      }
+    ],
+    "https://www.w3.org/TR/webrtc-identity/": [
+      {
+        "id": "dom-mediastreamconstraints-peeridentity",
+        "href": "https://w3c.github.io/webrtc-identity/#dom-mediastreamconstraints-peeridentity",
+        "linkingText": [
+          "peerIdentity"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MediaStreamConstraints"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-mediastreamconstraints-members",
+          "href": "https://w3c.github.io/webrtc-identity/#dictionary-mediastreamconstraints-members",
+          "title": "Dictionary MediaStreamConstraints Members"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

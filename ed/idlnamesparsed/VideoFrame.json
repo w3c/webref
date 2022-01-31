@@ -1,0 +1,380 @@
+{
+  "name": "VideoFrame",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebCodecs",
+      "url": "https://www.w3.org/TR/webcodecs/"
+    },
+    "fragment": "[Exposed=(Window,DedicatedWorker), Serializable, Transferable]\ninterface VideoFrame {\n  constructor(CanvasImageSource image, optional VideoFrameInit init = {});\n  constructor([AllowShared] BufferSource data, VideoFrameBufferInit init);\n\n  readonly attribute VideoPixelFormat? format;\n  readonly attribute unsigned long codedWidth;\n  readonly attribute unsigned long codedHeight;\n  readonly attribute DOMRectReadOnly? codedRect;\n  readonly attribute DOMRectReadOnly? visibleRect;\n  readonly attribute unsigned long displayWidth;\n  readonly attribute unsigned long displayHeight;\n  readonly attribute unsigned long long? duration;  // microseconds\n  readonly attribute long long? timestamp;          // microseconds\n  readonly attribute VideoColorSpace colorSpace;\n\n  unsigned long allocationSize(\n      optional VideoFrameCopyToOptions options = {});\n  Promise<sequence<PlaneLayout>> copyTo(\n      [AllowShared] BufferSource destination,\n      optional VideoFrameCopyToOptions options = {});\n  VideoFrame clone();\n  undefined close();\n};",
+    "href": "https://w3c.github.io/webcodecs/#videoframe"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webcodecs/": [
+      {
+        "id": "videoframe",
+        "href": "https://w3c.github.io/webcodecs/#videoframe",
+        "linkingText": [
+          "VideoFrame"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "videoframe-interface",
+          "href": "https://w3c.github.io/webcodecs/#videoframe-interface",
+          "title": "VideoFrame Interface",
+          "number": "9.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-videoframe-videoframe",
+        "href": "https://w3c.github.io/webcodecs/#dom-videoframe-videoframe",
+        "linkingText": [
+          "VideoFrame(image, init)",
+          "constructor(image, init)",
+          "VideoFrame(image)",
+          "constructor(image)"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "VideoFrame"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "videoframe-constructors",
+          "href": "https://w3c.github.io/webcodecs/#videoframe-constructors",
+          "title": "Constructors",
+          "number": "9.4.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-videoframe-videoframe-data-init",
+        "href": "https://w3c.github.io/webcodecs/#dom-videoframe-videoframe-data-init",
+        "linkingText": [
+          "VideoFrame(data, init)",
+          "constructor(data, init)"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "VideoFrame"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "videoframe-constructors",
+          "href": "https://w3c.github.io/webcodecs/#videoframe-constructors",
+          "title": "Constructors",
+          "number": "9.4.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-videoframe-format",
+        "href": "https://w3c.github.io/webcodecs/#dom-videoframe-format",
+        "linkingText": [
+          "format"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "VideoFrame"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "videoframe-attributes",
+          "href": "https://w3c.github.io/webcodecs/#videoframe-attributes",
+          "title": "Attributes",
+          "number": "9.4.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-videoframe-codedwidth",
+        "href": "https://w3c.github.io/webcodecs/#dom-videoframe-codedwidth",
+        "linkingText": [
+          "codedWidth"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "VideoFrame"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "videoframe-attributes",
+          "href": "https://w3c.github.io/webcodecs/#videoframe-attributes",
+          "title": "Attributes",
+          "number": "9.4.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-videoframe-codedheight",
+        "href": "https://w3c.github.io/webcodecs/#dom-videoframe-codedheight",
+        "linkingText": [
+          "codedHeight"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "VideoFrame"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "videoframe-attributes",
+          "href": "https://w3c.github.io/webcodecs/#videoframe-attributes",
+          "title": "Attributes",
+          "number": "9.4.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-videoframe-codedrect",
+        "href": "https://w3c.github.io/webcodecs/#dom-videoframe-codedrect",
+        "linkingText": [
+          "codedRect"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "VideoFrame"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "videoframe-attributes",
+          "href": "https://w3c.github.io/webcodecs/#videoframe-attributes",
+          "title": "Attributes",
+          "number": "9.4.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-videoframe-visiblerect",
+        "href": "https://w3c.github.io/webcodecs/#dom-videoframe-visiblerect",
+        "linkingText": [
+          "visibleRect"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "VideoFrame"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "videoframe-attributes",
+          "href": "https://w3c.github.io/webcodecs/#videoframe-attributes",
+          "title": "Attributes",
+          "number": "9.4.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-videoframe-displaywidth",
+        "href": "https://w3c.github.io/webcodecs/#dom-videoframe-displaywidth",
+        "linkingText": [
+          "displayWidth"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "VideoFrame"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "videoframe-attributes",
+          "href": "https://w3c.github.io/webcodecs/#videoframe-attributes",
+          "title": "Attributes",
+          "number": "9.4.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-videoframe-displayheight",
+        "href": "https://w3c.github.io/webcodecs/#dom-videoframe-displayheight",
+        "linkingText": [
+          "displayHeight"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "VideoFrame"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "videoframe-attributes",
+          "href": "https://w3c.github.io/webcodecs/#videoframe-attributes",
+          "title": "Attributes",
+          "number": "9.4.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-videoframe-duration",
+        "href": "https://w3c.github.io/webcodecs/#dom-videoframe-duration",
+        "linkingText": [
+          "duration"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "VideoFrame"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "videoframe-attributes",
+          "href": "https://w3c.github.io/webcodecs/#videoframe-attributes",
+          "title": "Attributes",
+          "number": "9.4.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-videoframe-timestamp",
+        "href": "https://w3c.github.io/webcodecs/#dom-videoframe-timestamp",
+        "linkingText": [
+          "timestamp"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "VideoFrame"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "videoframe-attributes",
+          "href": "https://w3c.github.io/webcodecs/#videoframe-attributes",
+          "title": "Attributes",
+          "number": "9.4.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-videoframe-colorspace",
+        "href": "https://w3c.github.io/webcodecs/#dom-videoframe-colorspace",
+        "linkingText": [
+          "colorSpace"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "VideoFrame"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "videoframe-attributes",
+          "href": "https://w3c.github.io/webcodecs/#videoframe-attributes",
+          "title": "Attributes",
+          "number": "9.4.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-videoframe-allocationsize",
+        "href": "https://w3c.github.io/webcodecs/#dom-videoframe-allocationsize",
+        "linkingText": [
+          "allocationSize(options)",
+          "allocationSize()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "VideoFrame"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "videoframe-methods",
+          "href": "https://w3c.github.io/webcodecs/#videoframe-methods",
+          "title": "Methods",
+          "number": "9.4.5"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-videoframe-copyto",
+        "href": "https://w3c.github.io/webcodecs/#dom-videoframe-copyto",
+        "linkingText": [
+          "copyTo(destination, options)",
+          "copyTo(destination)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "VideoFrame"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "videoframe-methods",
+          "href": "https://w3c.github.io/webcodecs/#videoframe-methods",
+          "title": "Methods",
+          "number": "9.4.5"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-videoframe-clone",
+        "href": "https://w3c.github.io/webcodecs/#dom-videoframe-clone",
+        "linkingText": [
+          "clone()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "VideoFrame"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "videoframe-methods",
+          "href": "https://w3c.github.io/webcodecs/#videoframe-methods",
+          "title": "Methods",
+          "number": "9.4.5"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-videoframe-close",
+        "href": "https://w3c.github.io/webcodecs/#dom-videoframe-close",
+        "linkingText": [
+          "close()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "VideoFrame"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "videoframe-methods",
+          "href": "https://w3c.github.io/webcodecs/#videoframe-methods",
+          "title": "Methods",
+          "number": "9.4.5"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

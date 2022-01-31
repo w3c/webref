@@ -1,0 +1,136 @@
+{
+  "name": "RadioNodeList",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "HTML Standard",
+      "url": "https://html.spec.whatwg.org/multipage/"
+    },
+    "fragment": "[Exposed=Window]\ninterface RadioNodeList : NodeList {\n  attribute DOMString value;\n};",
+    "href": "https://html.spec.whatwg.org/multipage/common-dom-interfaces.html#radionodelist"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "NodeList",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=Window]\ninterface NodeList {\n  getter Node? item(unsigned long index);\n  readonly attribute unsigned long length;\n  iterable<Node>;\n};",
+      "href": "https://dom.spec.whatwg.org/#nodelist"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://html.spec.whatwg.org/multipage/": [
+      {
+        "id": "radionodelist",
+        "href": "https://html.spec.whatwg.org/multipage/common-dom-interfaces.html#radionodelist",
+        "linkingText": [
+          "RadioNodeList"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-htmlformcontrolscollection-interface",
+          "href": "https://html.spec.whatwg.org/multipage/common-dom-interfaces.html#the-htmlformcontrolscollection-interface",
+          "title": "The HTMLFormControlsCollection interface",
+          "number": "2.6.2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-radionodelist-value",
+        "href": "https://html.spec.whatwg.org/multipage/common-dom-interfaces.html#dom-radionodelist-value",
+        "linkingText": [
+          "value"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "RadioNodeList"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-htmlformcontrolscollection-interface",
+          "href": "https://html.spec.whatwg.org/multipage/common-dom-interfaces.html#the-htmlformcontrolscollection-interface",
+          "title": "The HTMLFormControlsCollection interface",
+          "number": "2.6.2.2"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "nodelist",
+        "href": "https://dom.spec.whatwg.org/#nodelist",
+        "linkingText": [
+          "NodeList"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-nodelist",
+          "href": "https://dom.spec.whatwg.org/#interface-nodelist",
+          "title": "Interface NodeList",
+          "number": "4.2.10.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-nodelist-item",
+        "href": "https://dom.spec.whatwg.org/#dom-nodelist-item",
+        "linkingText": [
+          "item(index)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "NodeList"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-nodelist",
+          "href": "https://dom.spec.whatwg.org/#interface-nodelist",
+          "title": "Interface NodeList",
+          "number": "4.2.10.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-nodelist-length",
+        "href": "https://dom.spec.whatwg.org/#dom-nodelist-length",
+        "linkingText": [
+          "length"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "NodeList"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-nodelist",
+          "href": "https://dom.spec.whatwg.org/#interface-nodelist",
+          "title": "Interface NodeList",
+          "number": "4.2.10.1"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

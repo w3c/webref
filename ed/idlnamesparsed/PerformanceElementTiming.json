@@ -1,0 +1,354 @@
+{
+  "name": "PerformanceElementTiming",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Element Timing API",
+      "url": "https://wicg.github.io/element-timing/"
+    },
+    "fragment": "[Exposed=Window]\ninterface PerformanceElementTiming : PerformanceEntry {\n    readonly attribute DOMHighResTimeStamp renderTime;\n    readonly attribute DOMHighResTimeStamp loadTime;\n    readonly attribute DOMRectReadOnly intersectionRect;\n    readonly attribute DOMString identifier;\n    readonly attribute unsigned long naturalWidth;\n    readonly attribute unsigned long naturalHeight;\n    readonly attribute DOMString id;\n    readonly attribute Element? element;\n    readonly attribute DOMString url;\n    [Default] object toJSON();\n};",
+    "href": "https://wicg.github.io/element-timing/#performanceelementtiming"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "PerformanceEntry",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "Performance Timeline Level 2",
+        "url": "https://www.w3.org/TR/performance-timeline/"
+      },
+      "fragment": "[Exposed=*]\ninterface PerformanceEntry {\n  readonly    attribute DOMString           name;\n  readonly    attribute DOMString           entryType;\n  readonly    attribute DOMHighResTimeStamp startTime;\n  readonly    attribute DOMHighResTimeStamp duration;\n  [Default] object toJSON();\n};",
+      "href": "https://w3c.github.io/performance-timeline/#dom-performanceentry"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://wicg.github.io/element-timing/": [
+      {
+        "id": "performanceelementtiming",
+        "href": "https://wicg.github.io/element-timing/#performanceelementtiming",
+        "linkingText": [
+          "PerformanceElementTiming"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "sec-performance-element-timing",
+          "href": "https://wicg.github.io/element-timing/#sec-performance-element-timing",
+          "title": "PerformanceElementTiming interface",
+          "number": "2.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-performanceelementtiming-rendertime",
+        "href": "https://wicg.github.io/element-timing/#dom-performanceelementtiming-rendertime",
+        "linkingText": [
+          "renderTime"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "PerformanceElementTiming"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "sec-performance-element-timing",
+          "href": "https://wicg.github.io/element-timing/#sec-performance-element-timing",
+          "title": "PerformanceElementTiming interface",
+          "number": "2.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-performanceelementtiming-loadtime",
+        "href": "https://wicg.github.io/element-timing/#dom-performanceelementtiming-loadtime",
+        "linkingText": [
+          "loadTime"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "PerformanceElementTiming"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "sec-performance-element-timing",
+          "href": "https://wicg.github.io/element-timing/#sec-performance-element-timing",
+          "title": "PerformanceElementTiming interface",
+          "number": "2.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-performanceelementtiming-intersectionrect",
+        "href": "https://wicg.github.io/element-timing/#dom-performanceelementtiming-intersectionrect",
+        "linkingText": [
+          "intersectionRect"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "PerformanceElementTiming"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "sec-performance-element-timing",
+          "href": "https://wicg.github.io/element-timing/#sec-performance-element-timing",
+          "title": "PerformanceElementTiming interface",
+          "number": "2.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-performanceelementtiming-identifier",
+        "href": "https://wicg.github.io/element-timing/#dom-performanceelementtiming-identifier",
+        "linkingText": [
+          "identifier"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "PerformanceElementTiming"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "sec-performance-element-timing",
+          "href": "https://wicg.github.io/element-timing/#sec-performance-element-timing",
+          "title": "PerformanceElementTiming interface",
+          "number": "2.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-performanceelementtiming-naturalwidth",
+        "href": "https://wicg.github.io/element-timing/#dom-performanceelementtiming-naturalwidth",
+        "linkingText": [
+          "naturalWidth"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "PerformanceElementTiming"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "sec-performance-element-timing",
+          "href": "https://wicg.github.io/element-timing/#sec-performance-element-timing",
+          "title": "PerformanceElementTiming interface",
+          "number": "2.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-performanceelementtiming-naturalheight",
+        "href": "https://wicg.github.io/element-timing/#dom-performanceelementtiming-naturalheight",
+        "linkingText": [
+          "naturalHeight"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "PerformanceElementTiming"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "sec-performance-element-timing",
+          "href": "https://wicg.github.io/element-timing/#sec-performance-element-timing",
+          "title": "PerformanceElementTiming interface",
+          "number": "2.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-performanceelementtiming-id",
+        "href": "https://wicg.github.io/element-timing/#dom-performanceelementtiming-id",
+        "linkingText": [
+          "id"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "PerformanceElementTiming"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "sec-performance-element-timing",
+          "href": "https://wicg.github.io/element-timing/#sec-performance-element-timing",
+          "title": "PerformanceElementTiming interface",
+          "number": "2.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-performanceelementtiming-element",
+        "href": "https://wicg.github.io/element-timing/#dom-performanceelementtiming-element",
+        "linkingText": [
+          "element"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "PerformanceElementTiming"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "sec-performance-element-timing",
+          "href": "https://wicg.github.io/element-timing/#sec-performance-element-timing",
+          "title": "PerformanceElementTiming interface",
+          "number": "2.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-performanceelementtiming-url",
+        "href": "https://wicg.github.io/element-timing/#dom-performanceelementtiming-url",
+        "linkingText": [
+          "url"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "PerformanceElementTiming"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "sec-performance-element-timing",
+          "href": "https://wicg.github.io/element-timing/#sec-performance-element-timing",
+          "title": "PerformanceElementTiming interface",
+          "number": "2.1"
+        },
+        "definedIn": "pre"
+      }
+    ],
+    "https://www.w3.org/TR/performance-timeline/": [
+      {
+        "id": "dom-performanceentry",
+        "href": "https://w3c.github.io/performance-timeline/#dom-performanceentry",
+        "linkingText": [
+          "PerformanceEntry"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-performanceentry-interface",
+          "href": "https://w3c.github.io/performance-timeline/#the-performanceentry-interface",
+          "title": "The PerformanceEntry interface",
+          "number": "4"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-performanceentry-name",
+        "href": "https://w3c.github.io/performance-timeline/#dom-performanceentry-name",
+        "linkingText": [
+          "name"
+        ],
+        "localLinkingText": [
+          "PerformanceEntry.name"
+        ],
+        "type": "attribute",
+        "for": [
+          "PerformanceEntry"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-performanceentry-interface",
+          "href": "https://w3c.github.io/performance-timeline/#the-performanceentry-interface",
+          "title": "The PerformanceEntry interface",
+          "number": "4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-performanceentry-entrytype",
+        "href": "https://w3c.github.io/performance-timeline/#dom-performanceentry-entrytype",
+        "linkingText": [
+          "entryType"
+        ],
+        "localLinkingText": [
+          "PerformanceEntry.entryType"
+        ],
+        "type": "attribute",
+        "for": [
+          "PerformanceEntry"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-performanceentry-interface",
+          "href": "https://w3c.github.io/performance-timeline/#the-performanceentry-interface",
+          "title": "The PerformanceEntry interface",
+          "number": "4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-performanceentry-starttime",
+        "href": "https://w3c.github.io/performance-timeline/#dom-performanceentry-starttime",
+        "linkingText": [
+          "startTime"
+        ],
+        "localLinkingText": [
+          "PerformanceEntry.startTime"
+        ],
+        "type": "attribute",
+        "for": [
+          "PerformanceEntry"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-performanceentry-interface",
+          "href": "https://w3c.github.io/performance-timeline/#the-performanceentry-interface",
+          "title": "The PerformanceEntry interface",
+          "number": "4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-performanceentry-duration",
+        "href": "https://w3c.github.io/performance-timeline/#dom-performanceentry-duration",
+        "linkingText": [
+          "duration"
+        ],
+        "localLinkingText": [
+          "PerformanceEntry.duration"
+        ],
+        "type": "attribute",
+        "for": [
+          "PerformanceEntry"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-performanceentry-interface",
+          "href": "https://w3c.github.io/performance-timeline/#the-performanceentry-interface",
+          "title": "The PerformanceEntry interface",
+          "number": "4"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

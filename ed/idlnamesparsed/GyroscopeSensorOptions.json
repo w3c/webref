@@ -1,0 +1,115 @@
+{
+  "name": "GyroscopeSensorOptions",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Gyroscope",
+      "url": "https://www.w3.org/TR/gyroscope/"
+    },
+    "fragment": "dictionary GyroscopeSensorOptions : SensorOptions {\n  GyroscopeLocalCoordinateSystem referenceFrame = \"device\";\n};",
+    "href": "https://w3c.github.io/gyroscope/#dictdef-gyroscopesensoroptions"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "SensorOptions",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "Generic Sensor API",
+        "url": "https://www.w3.org/TR/generic-sensor/"
+      },
+      "fragment": "dictionary SensorOptions {\n  double frequency;\n};",
+      "href": "https://w3c.github.io/sensors/#dictdef-sensoroptions"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/gyroscope/": [
+      {
+        "id": "dictdef-gyroscopesensoroptions",
+        "href": "https://w3c.github.io/gyroscope/#dictdef-gyroscopesensoroptions",
+        "linkingText": [
+          "GyroscopeSensorOptions"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "gyroscope-interface",
+          "href": "https://w3c.github.io/gyroscope/#gyroscope-interface",
+          "title": "The Gyroscope Interface",
+          "number": "6.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gyroscopesensoroptions-referenceframe",
+        "href": "https://w3c.github.io/gyroscope/#dom-gyroscopesensoroptions-referenceframe",
+        "linkingText": [
+          "referenceFrame"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "GyroscopeSensorOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "gyroscope-interface",
+          "href": "https://w3c.github.io/gyroscope/#gyroscope-interface",
+          "title": "The Gyroscope Interface",
+          "number": "6.1"
+        },
+        "definedIn": "pre"
+      }
+    ],
+    "https://www.w3.org/TR/generic-sensor/": [
+      {
+        "id": "dictdef-sensoroptions",
+        "href": "https://w3c.github.io/sensors/#dictdef-sensoroptions",
+        "linkingText": [
+          "SensorOptions"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-sensor-interface",
+          "href": "https://w3c.github.io/sensors/#the-sensor-interface",
+          "title": "The Sensor Interface",
+          "number": "7.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-sensoroptions-frequency",
+        "href": "https://w3c.github.io/sensors/#dom-sensoroptions-frequency",
+        "linkingText": [
+          "frequency"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "SensorOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-sensor-interface",
+          "href": "https://w3c.github.io/sensors/#the-sensor-interface",
+          "title": "The Sensor Interface",
+          "number": "7.1"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

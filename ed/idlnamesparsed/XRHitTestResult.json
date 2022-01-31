@@ -1,0 +1,90 @@
+{
+  "name": "XRHitTestResult",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebXR Hit Test Module",
+      "url": "https://www.w3.org/TR/webxr-hit-test-1/"
+    },
+    "fragment": "[SecureContext, Exposed=Window]\ninterface XRHitTestResult {\n  XRPose? getPose(XRSpace baseSpace);\n};",
+    "href": "https://immersive-web.github.io/hit-test/#xrhittestresult"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "WebXR Anchors Module",
+        "url": "https://immersive-web.github.io/anchors/"
+      },
+      "fragment": "partial interface XRHitTestResult {\n  Promise<XRAnchor> createAnchor();\n};"
+    }
+  ],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webxr-hit-test-1/": [
+      {
+        "id": "xrhittestresult",
+        "href": "https://immersive-web.github.io/hit-test/#xrhittestresult",
+        "linkingText": [
+          "XRHitTestResult"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xr-hit-test-result-interface",
+          "href": "https://immersive-web.github.io/hit-test/#xr-hit-test-result-interface",
+          "title": "XRHitTestResult",
+          "number": "5.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-xrhittestresult-getpose",
+        "href": "https://immersive-web.github.io/hit-test/#dom-xrhittestresult-getpose",
+        "linkingText": [
+          "getPose(baseSpace)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "XRHitTestResult"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xr-hit-test-result-interface",
+          "href": "https://immersive-web.github.io/hit-test/#xr-hit-test-result-interface",
+          "title": "XRHitTestResult",
+          "number": "5.1"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://immersive-web.github.io/anchors/": [
+      {
+        "id": "dom-xrhittestresult-createanchor",
+        "href": "https://immersive-web.github.io/anchors/#dom-xrhittestresult-createanchor",
+        "linkingText": [
+          "createAnchor()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "XRHitTestResult"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "anchor-creation",
+          "href": "https://immersive-web.github.io/anchors/#anchor-creation",
+          "title": "Anchor creation",
+          "number": "4"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

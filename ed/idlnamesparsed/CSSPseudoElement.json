@@ -1,0 +1,377 @@
+{
+  "name": "CSSPseudoElement",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "CSS Pseudo-Elements Module Level 4",
+      "url": "https://www.w3.org/TR/css-pseudo-4/"
+    },
+    "fragment": "[Exposed=Window]\ninterface CSSPseudoElement : EventTarget {\n    readonly attribute CSSOMString type;\n    readonly attribute Element element;\n    readonly attribute (Element or CSSPseudoElement) parent;\n    CSSPseudoElement? pseudo(CSSOMString type);\n};",
+    "href": "https://drafts.csswg.org/css-pseudo-4/#csspseudoelement"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "CSSOM View Module",
+        "url": "https://www.w3.org/TR/cssom-view-1/"
+      },
+      "fragment": "CSSPseudoElement includes GeometryUtils;"
+    }
+  ],
+  "inheritance": {
+    "name": "EventTarget",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=*]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+      "href": "https://dom.spec.whatwg.org/#eventtarget"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [
+    {
+      "name": "GeometryUtils",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "CSSOM View Module",
+          "url": "https://www.w3.org/TR/cssom-view-1/"
+        },
+        "fragment": "interface mixin GeometryUtils {\n  sequence<DOMQuad> getBoxQuads(optional BoxQuadOptions options = {});\n  DOMQuad convertQuadFromNode(DOMQuadInit quad, GeometryNode from, optional ConvertCoordinateOptions options = {});\n  DOMQuad convertRectFromNode(DOMRectReadOnly rect, GeometryNode from, optional ConvertCoordinateOptions options = {});\n  DOMPoint convertPointFromNode(DOMPointInit point, GeometryNode from, optional ConvertCoordinateOptions options = {}); // XXX z,w turns into 0\n};",
+        "href": "https://drafts.csswg.org/cssom-view/#geometryutils"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    }
+  ],
+  "dfns": {
+    "https://www.w3.org/TR/css-pseudo-4/": [
+      {
+        "id": "csspseudoelement",
+        "href": "https://drafts.csswg.org/css-pseudo-4/#csspseudoelement",
+        "linkingText": [
+          "CSSPseudoElement"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "CSSPseudoElement-interface",
+          "href": "https://drafts.csswg.org/css-pseudo-4/#CSSPseudoElement-interface",
+          "title": "CSSPseudoElement Interface",
+          "number": "6.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-csspseudoelement-type",
+        "href": "https://drafts.csswg.org/css-pseudo-4/#dom-csspseudoelement-type",
+        "linkingText": [
+          "type"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "CSSPseudoElement"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "CSSPseudoElement-interface",
+          "href": "https://drafts.csswg.org/css-pseudo-4/#CSSPseudoElement-interface",
+          "title": "CSSPseudoElement Interface",
+          "number": "6.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-csspseudoelement-element",
+        "href": "https://drafts.csswg.org/css-pseudo-4/#dom-csspseudoelement-element",
+        "linkingText": [
+          "element"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "CSSPseudoElement"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "CSSPseudoElement-interface",
+          "href": "https://drafts.csswg.org/css-pseudo-4/#CSSPseudoElement-interface",
+          "title": "CSSPseudoElement Interface",
+          "number": "6.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-csspseudoelement-parent",
+        "href": "https://drafts.csswg.org/css-pseudo-4/#dom-csspseudoelement-parent",
+        "linkingText": [
+          "parent"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "CSSPseudoElement"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "CSSPseudoElement-interface",
+          "href": "https://drafts.csswg.org/css-pseudo-4/#CSSPseudoElement-interface",
+          "title": "CSSPseudoElement Interface",
+          "number": "6.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-csspseudoelement-pseudo",
+        "href": "https://drafts.csswg.org/css-pseudo-4/#dom-csspseudoelement-pseudo",
+        "linkingText": [
+          "pseudo(type)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSSPseudoElement"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "CSSPseudoElement-interface",
+          "href": "https://drafts.csswg.org/css-pseudo-4/#CSSPseudoElement-interface",
+          "title": "CSSPseudoElement Interface",
+          "number": "6.1"
+        },
+        "definedIn": "pre"
+      }
+    ],
+    "https://www.w3.org/TR/cssom-view-1/": [
+      {
+        "id": "geometryutils",
+        "href": "https://drafts.csswg.org/cssom-view/#geometryutils",
+        "linkingText": [
+          "GeometryUtils"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-geometryutils-interface",
+          "href": "https://drafts.csswg.org/cssom-view/#the-geometryutils-interface",
+          "title": "The GeometryUtils Interface",
+          "number": "11.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-geometryutils-getboxquads",
+        "href": "https://drafts.csswg.org/cssom-view/#dom-geometryutils-getboxquads",
+        "linkingText": [
+          "getBoxQuads(options)",
+          "getBoxQuads()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GeometryUtils"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-geometryutils-interface",
+          "href": "https://drafts.csswg.org/cssom-view/#the-geometryutils-interface",
+          "title": "The GeometryUtils Interface",
+          "number": "11.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-geometryutils-convertquadfromnode",
+        "href": "https://drafts.csswg.org/cssom-view/#dom-geometryutils-convertquadfromnode",
+        "linkingText": [
+          "convertQuadFromNode(quad, from, options)",
+          "convertQuadFromNode(quad, from)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GeometryUtils"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-geometryutils-interface",
+          "href": "https://drafts.csswg.org/cssom-view/#the-geometryutils-interface",
+          "title": "The GeometryUtils Interface",
+          "number": "11.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-geometryutils-convertrectfromnode",
+        "href": "https://drafts.csswg.org/cssom-view/#dom-geometryutils-convertrectfromnode",
+        "linkingText": [
+          "convertRectFromNode(rect, from, options)",
+          "convertRectFromNode(rect, from)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GeometryUtils"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-geometryutils-interface",
+          "href": "https://drafts.csswg.org/cssom-view/#the-geometryutils-interface",
+          "title": "The GeometryUtils Interface",
+          "number": "11.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-geometryutils-convertpointfromnode",
+        "href": "https://drafts.csswg.org/cssom-view/#dom-geometryutils-convertpointfromnode",
+        "linkingText": [
+          "convertPointFromNode(point, from, options)",
+          "convertPointFromNode(point, from)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GeometryUtils"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-geometryutils-interface",
+          "href": "https://drafts.csswg.org/cssom-view/#the-geometryutils-interface",
+          "title": "The GeometryUtils Interface",
+          "number": "11.1"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "eventtarget",
+        "href": "https://dom.spec.whatwg.org/#eventtarget",
+        "linkingText": [
+          "EventTarget"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventtarget-eventtarget",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-eventtarget",
+        "linkingText": [
+          "EventTarget()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-addeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-addeventlistener",
+        "linkingText": [
+          "addEventListener(type, callback, options)",
+          "addEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-removeeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-removeeventlistener",
+        "linkingText": [
+          "removeEventListener(type, callback, options)",
+          "removeEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-dispatchevent",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-dispatchevent",
+        "linkingText": [
+          "dispatchEvent(event)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

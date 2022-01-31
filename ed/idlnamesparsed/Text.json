@@ -1,0 +1,1834 @@
+{
+  "name": "Text",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "DOM Standard",
+      "url": "https://dom.spec.whatwg.org/"
+    },
+    "fragment": "[Exposed=Window]\ninterface Text : CharacterData {\n  constructor(optional DOMString data = \"\");\n\n  [NewObject] Text splitText(unsigned long offset);\n  readonly attribute DOMString wholeText;\n};",
+    "href": "https://dom.spec.whatwg.org/#text"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "Text includes Slottable;"
+    },
+    {
+      "spec": {
+        "title": "CSSOM View Module",
+        "url": "https://www.w3.org/TR/cssom-view-1/"
+      },
+      "fragment": "Text includes GeometryUtils;"
+    }
+  ],
+  "inheritance": {
+    "name": "CharacterData",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=Window]\ninterface CharacterData : Node {\n  attribute [LegacyNullToEmptyString] DOMString data;\n  readonly attribute unsigned long length;\n  DOMString substringData(unsigned long offset, unsigned long count);\n  undefined appendData(DOMString data);\n  undefined insertData(unsigned long offset, DOMString data);\n  undefined deleteData(unsigned long offset, unsigned long count);\n  undefined replaceData(unsigned long offset, unsigned long count, DOMString data);\n};",
+      "href": "https://dom.spec.whatwg.org/#characterdata"
+    },
+    "extended": [
+      {
+        "spec": {
+          "title": "DOM Standard",
+          "url": "https://dom.spec.whatwg.org/"
+        },
+        "fragment": "CharacterData includes NonDocumentTypeChildNode;"
+      },
+      {
+        "spec": {
+          "title": "DOM Standard",
+          "url": "https://dom.spec.whatwg.org/"
+        },
+        "fragment": "CharacterData includes ChildNode;"
+      }
+    ],
+    "inheritance": {
+      "name": "Node",
+      "type": "interface",
+      "defined": {
+        "spec": {
+          "title": "DOM Standard",
+          "url": "https://dom.spec.whatwg.org/"
+        },
+        "fragment": "[Exposed=Window]\ninterface Node : EventTarget {\n  const unsigned short ELEMENT_NODE = 1;\n  const unsigned short ATTRIBUTE_NODE = 2;\n  const unsigned short TEXT_NODE = 3;\n  const unsigned short CDATA_SECTION_NODE = 4;\n  const unsigned short ENTITY_REFERENCE_NODE = 5; // legacy\n  const unsigned short ENTITY_NODE = 6; // legacy\n  const unsigned short PROCESSING_INSTRUCTION_NODE = 7;\n  const unsigned short COMMENT_NODE = 8;\n  const unsigned short DOCUMENT_NODE = 9;\n  const unsigned short DOCUMENT_TYPE_NODE = 10;\n  const unsigned short DOCUMENT_FRAGMENT_NODE = 11;\n  const unsigned short NOTATION_NODE = 12; // legacy\n  readonly attribute unsigned short nodeType;\n  readonly attribute DOMString nodeName;\n\n  readonly attribute USVString baseURI;\n\n  readonly attribute boolean isConnected;\n  readonly attribute Document? ownerDocument;\n  Node getRootNode(optional GetRootNodeOptions options = {});\n  readonly attribute Node? parentNode;\n  readonly attribute Element? parentElement;\n  boolean hasChildNodes();\n  [SameObject] readonly attribute NodeList childNodes;\n  readonly attribute Node? firstChild;\n  readonly attribute Node? lastChild;\n  readonly attribute Node? previousSibling;\n  readonly attribute Node? nextSibling;\n\n  [CEReactions] attribute DOMString? nodeValue;\n  [CEReactions] attribute DOMString? textContent;\n  [CEReactions] undefined normalize();\n\n  [CEReactions, NewObject] Node cloneNode(optional boolean deep = false);\n  boolean isEqualNode(Node? otherNode);\n  boolean isSameNode(Node? otherNode); // legacy alias of ===\n\n  const unsigned short DOCUMENT_POSITION_DISCONNECTED = 0x01;\n  const unsigned short DOCUMENT_POSITION_PRECEDING = 0x02;\n  const unsigned short DOCUMENT_POSITION_FOLLOWING = 0x04;\n  const unsigned short DOCUMENT_POSITION_CONTAINS = 0x08;\n  const unsigned short DOCUMENT_POSITION_CONTAINED_BY = 0x10;\n  const unsigned short DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC = 0x20;\n  unsigned short compareDocumentPosition(Node other);\n  boolean contains(Node? other);\n\n  DOMString? lookupPrefix(DOMString? namespace);\n  DOMString? lookupNamespaceURI(DOMString? prefix);\n  boolean isDefaultNamespace(DOMString? namespace);\n\n  [CEReactions] Node insertBefore(Node node, Node? child);\n  [CEReactions] Node appendChild(Node node);\n  [CEReactions] Node replaceChild(Node node, Node child);\n  [CEReactions] Node removeChild(Node child);\n};",
+        "href": "https://dom.spec.whatwg.org/#node"
+      },
+      "extended": [],
+      "inheritance": {
+        "name": "EventTarget",
+        "type": "interface",
+        "defined": {
+          "spec": {
+            "title": "DOM Standard",
+            "url": "https://dom.spec.whatwg.org/"
+          },
+          "fragment": "[Exposed=*]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+          "href": "https://dom.spec.whatwg.org/#eventtarget"
+        },
+        "extended": [],
+        "inheritance": null,
+        "includes": []
+      },
+      "includes": []
+    },
+    "includes": [
+      {
+        "name": "NonDocumentTypeChildNode",
+        "type": "interface mixin",
+        "defined": {
+          "spec": {
+            "title": "DOM Standard",
+            "url": "https://dom.spec.whatwg.org/"
+          },
+          "fragment": "interface mixin NonDocumentTypeChildNode {\n  readonly attribute Element? previousElementSibling;\n  readonly attribute Element? nextElementSibling;\n};",
+          "href": "https://dom.spec.whatwg.org/#nondocumenttypechildnode"
+        },
+        "extended": [],
+        "inheritance": null,
+        "includes": []
+      },
+      {
+        "name": "ChildNode",
+        "type": "interface mixin",
+        "defined": {
+          "spec": {
+            "title": "DOM Standard",
+            "url": "https://dom.spec.whatwg.org/"
+          },
+          "fragment": "interface mixin ChildNode {\n  [CEReactions, Unscopable] undefined before((Node or DOMString)... nodes);\n  [CEReactions, Unscopable] undefined after((Node or DOMString)... nodes);\n  [CEReactions, Unscopable] undefined replaceWith((Node or DOMString)... nodes);\n  [CEReactions, Unscopable] undefined remove();\n};",
+          "href": "https://dom.spec.whatwg.org/#childnode"
+        },
+        "extended": [],
+        "inheritance": null,
+        "includes": []
+      }
+    ]
+  },
+  "includes": [
+    {
+      "name": "Slottable",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "DOM Standard",
+          "url": "https://dom.spec.whatwg.org/"
+        },
+        "fragment": "interface mixin Slottable {\n  readonly attribute HTMLSlotElement? assignedSlot;\n};",
+        "href": "https://dom.spec.whatwg.org/#slotable"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "GeometryUtils",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "CSSOM View Module",
+          "url": "https://www.w3.org/TR/cssom-view-1/"
+        },
+        "fragment": "interface mixin GeometryUtils {\n  sequence<DOMQuad> getBoxQuads(optional BoxQuadOptions options = {});\n  DOMQuad convertQuadFromNode(DOMQuadInit quad, GeometryNode from, optional ConvertCoordinateOptions options = {});\n  DOMQuad convertRectFromNode(DOMRectReadOnly rect, GeometryNode from, optional ConvertCoordinateOptions options = {});\n  DOMPoint convertPointFromNode(DOMPointInit point, GeometryNode from, optional ConvertCoordinateOptions options = {}); // XXX z,w turns into 0\n};",
+        "href": "https://drafts.csswg.org/cssom-view/#geometryutils"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    }
+  ],
+  "dfns": {
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "text",
+        "href": "https://dom.spec.whatwg.org/#text",
+        "linkingText": [
+          "Text"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-text",
+          "href": "https://dom.spec.whatwg.org/#interface-text",
+          "title": "Interface Text",
+          "number": "4.11"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-text-text",
+        "href": "https://dom.spec.whatwg.org/#dom-text-text",
+        "linkingText": [
+          "Text(data)",
+          "constructor(data)",
+          "Text()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "Text"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-text",
+          "href": "https://dom.spec.whatwg.org/#interface-text",
+          "title": "Interface Text",
+          "number": "4.11"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-text-splittext",
+        "href": "https://dom.spec.whatwg.org/#dom-text-splittext",
+        "linkingText": [
+          "splitText(offset)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Text"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-text",
+          "href": "https://dom.spec.whatwg.org/#interface-text",
+          "title": "Interface Text",
+          "number": "4.11"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-text-wholetext",
+        "href": "https://dom.spec.whatwg.org/#dom-text-wholetext",
+        "linkingText": [
+          "wholeText"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Text"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-text",
+          "href": "https://dom.spec.whatwg.org/#interface-text",
+          "title": "Interface Text",
+          "number": "4.11"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "slotable",
+        "href": "https://dom.spec.whatwg.org/#slotable",
+        "linkingText": [
+          "Slottable"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "mixin-slotable",
+          "href": "https://dom.spec.whatwg.org/#mixin-slotable",
+          "title": "Mixin Slottable",
+          "number": "4.2.9"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-slotable-assignedslot",
+        "href": "https://dom.spec.whatwg.org/#dom-slotable-assignedslot",
+        "linkingText": [
+          "assignedSlot"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Slottable"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "mixin-slotable",
+          "href": "https://dom.spec.whatwg.org/#mixin-slotable",
+          "title": "Mixin Slottable",
+          "number": "4.2.9"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "characterdata",
+        "href": "https://dom.spec.whatwg.org/#characterdata",
+        "linkingText": [
+          "CharacterData"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-characterdata",
+          "href": "https://dom.spec.whatwg.org/#interface-characterdata",
+          "title": "Interface CharacterData",
+          "number": "4.10"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-characterdata-data",
+        "href": "https://dom.spec.whatwg.org/#dom-characterdata-data",
+        "linkingText": [
+          "data"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "CharacterData"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-characterdata",
+          "href": "https://dom.spec.whatwg.org/#interface-characterdata",
+          "title": "Interface CharacterData",
+          "number": "4.10"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-characterdata-length",
+        "href": "https://dom.spec.whatwg.org/#dom-characterdata-length",
+        "linkingText": [
+          "length"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "CharacterData"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-characterdata",
+          "href": "https://dom.spec.whatwg.org/#interface-characterdata",
+          "title": "Interface CharacterData",
+          "number": "4.10"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-characterdata-substringdata",
+        "href": "https://dom.spec.whatwg.org/#dom-characterdata-substringdata",
+        "linkingText": [
+          "substringData(offset, count)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CharacterData"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-characterdata",
+          "href": "https://dom.spec.whatwg.org/#interface-characterdata",
+          "title": "Interface CharacterData",
+          "number": "4.10"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-characterdata-appenddata",
+        "href": "https://dom.spec.whatwg.org/#dom-characterdata-appenddata",
+        "linkingText": [
+          "appendData(data)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CharacterData"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-characterdata",
+          "href": "https://dom.spec.whatwg.org/#interface-characterdata",
+          "title": "Interface CharacterData",
+          "number": "4.10"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-characterdata-insertdata",
+        "href": "https://dom.spec.whatwg.org/#dom-characterdata-insertdata",
+        "linkingText": [
+          "insertData(offset, data)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CharacterData"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-characterdata",
+          "href": "https://dom.spec.whatwg.org/#interface-characterdata",
+          "title": "Interface CharacterData",
+          "number": "4.10"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-characterdata-deletedata",
+        "href": "https://dom.spec.whatwg.org/#dom-characterdata-deletedata",
+        "linkingText": [
+          "deleteData(offset, count)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CharacterData"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-characterdata",
+          "href": "https://dom.spec.whatwg.org/#interface-characterdata",
+          "title": "Interface CharacterData",
+          "number": "4.10"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-characterdata-replacedata",
+        "href": "https://dom.spec.whatwg.org/#dom-characterdata-replacedata",
+        "linkingText": [
+          "replaceData(offset, count, data)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CharacterData"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-characterdata",
+          "href": "https://dom.spec.whatwg.org/#interface-characterdata",
+          "title": "Interface CharacterData",
+          "number": "4.10"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "nondocumenttypechildnode",
+        "href": "https://dom.spec.whatwg.org/#nondocumenttypechildnode",
+        "linkingText": [
+          "NonDocumentTypeChildNode"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-nondocumenttypechildnode",
+          "href": "https://dom.spec.whatwg.org/#interface-nondocumenttypechildnode",
+          "title": "Mixin NonDocumentTypeChildNode",
+          "number": "4.2.7"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-nondocumenttypechildnode-previouselementsibling",
+        "href": "https://dom.spec.whatwg.org/#dom-nondocumenttypechildnode-previouselementsibling",
+        "linkingText": [
+          "previousElementSibling"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "NonDocumentTypeChildNode"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-nondocumenttypechildnode",
+          "href": "https://dom.spec.whatwg.org/#interface-nondocumenttypechildnode",
+          "title": "Mixin NonDocumentTypeChildNode",
+          "number": "4.2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-nondocumenttypechildnode-nextelementsibling",
+        "href": "https://dom.spec.whatwg.org/#dom-nondocumenttypechildnode-nextelementsibling",
+        "linkingText": [
+          "nextElementSibling"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "NonDocumentTypeChildNode"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-nondocumenttypechildnode",
+          "href": "https://dom.spec.whatwg.org/#interface-nondocumenttypechildnode",
+          "title": "Mixin NonDocumentTypeChildNode",
+          "number": "4.2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "childnode",
+        "href": "https://dom.spec.whatwg.org/#childnode",
+        "linkingText": [
+          "ChildNode"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-childnode",
+          "href": "https://dom.spec.whatwg.org/#interface-childnode",
+          "title": "Mixin ChildNode",
+          "number": "4.2.8"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-childnode-before",
+        "href": "https://dom.spec.whatwg.org/#dom-childnode-before",
+        "linkingText": [
+          "before(...nodes)",
+          "before()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "ChildNode"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-childnode",
+          "href": "https://dom.spec.whatwg.org/#interface-childnode",
+          "title": "Mixin ChildNode",
+          "number": "4.2.8"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-childnode-after",
+        "href": "https://dom.spec.whatwg.org/#dom-childnode-after",
+        "linkingText": [
+          "after(...nodes)",
+          "after()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "ChildNode"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-childnode",
+          "href": "https://dom.spec.whatwg.org/#interface-childnode",
+          "title": "Mixin ChildNode",
+          "number": "4.2.8"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-childnode-replacewith",
+        "href": "https://dom.spec.whatwg.org/#dom-childnode-replacewith",
+        "linkingText": [
+          "replaceWith(...nodes)",
+          "replaceWith()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "ChildNode"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-childnode",
+          "href": "https://dom.spec.whatwg.org/#interface-childnode",
+          "title": "Mixin ChildNode",
+          "number": "4.2.8"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-childnode-remove",
+        "href": "https://dom.spec.whatwg.org/#dom-childnode-remove",
+        "linkingText": [
+          "remove()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "ChildNode"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-childnode",
+          "href": "https://dom.spec.whatwg.org/#interface-childnode",
+          "title": "Mixin ChildNode",
+          "number": "4.2.8"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "node",
+        "href": "https://dom.spec.whatwg.org/#node",
+        "linkingText": [
+          "Node"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-node",
+          "href": "https://dom.spec.whatwg.org/#interface-node",
+          "title": "Interface Node",
+          "number": "4.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-node-element_node",
+        "href": "https://dom.spec.whatwg.org/#dom-node-element_node",
+        "linkingText": [
+          "ELEMENT_NODE"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "Node"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-node",
+          "href": "https://dom.spec.whatwg.org/#interface-node",
+          "title": "Interface Node",
+          "number": "4.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-node-attribute_node",
+        "href": "https://dom.spec.whatwg.org/#dom-node-attribute_node",
+        "linkingText": [
+          "ATTRIBUTE_NODE"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "Node"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-node",
+          "href": "https://dom.spec.whatwg.org/#interface-node",
+          "title": "Interface Node",
+          "number": "4.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-node-text_node",
+        "href": "https://dom.spec.whatwg.org/#dom-node-text_node",
+        "linkingText": [
+          "TEXT_NODE"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "Node"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-node",
+          "href": "https://dom.spec.whatwg.org/#interface-node",
+          "title": "Interface Node",
+          "number": "4.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-node-cdata_section_node",
+        "href": "https://dom.spec.whatwg.org/#dom-node-cdata_section_node",
+        "linkingText": [
+          "CDATA_SECTION_NODE"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "Node"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-node",
+          "href": "https://dom.spec.whatwg.org/#interface-node",
+          "title": "Interface Node",
+          "number": "4.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-node-entity_reference_node",
+        "href": "https://dom.spec.whatwg.org/#dom-node-entity_reference_node",
+        "linkingText": [
+          "ENTITY_REFERENCE_NODE"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "Node"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-node",
+          "href": "https://dom.spec.whatwg.org/#interface-node",
+          "title": "Interface Node",
+          "number": "4.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-node-entity_node",
+        "href": "https://dom.spec.whatwg.org/#dom-node-entity_node",
+        "linkingText": [
+          "ENTITY_NODE"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "Node"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-node",
+          "href": "https://dom.spec.whatwg.org/#interface-node",
+          "title": "Interface Node",
+          "number": "4.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-node-processing_instruction_node",
+        "href": "https://dom.spec.whatwg.org/#dom-node-processing_instruction_node",
+        "linkingText": [
+          "PROCESSING_INSTRUCTION_NODE"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "Node"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-node",
+          "href": "https://dom.spec.whatwg.org/#interface-node",
+          "title": "Interface Node",
+          "number": "4.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-node-comment_node",
+        "href": "https://dom.spec.whatwg.org/#dom-node-comment_node",
+        "linkingText": [
+          "COMMENT_NODE"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "Node"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-node",
+          "href": "https://dom.spec.whatwg.org/#interface-node",
+          "title": "Interface Node",
+          "number": "4.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-node-document_node",
+        "href": "https://dom.spec.whatwg.org/#dom-node-document_node",
+        "linkingText": [
+          "DOCUMENT_NODE"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "Node"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-node",
+          "href": "https://dom.spec.whatwg.org/#interface-node",
+          "title": "Interface Node",
+          "number": "4.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-node-document_type_node",
+        "href": "https://dom.spec.whatwg.org/#dom-node-document_type_node",
+        "linkingText": [
+          "DOCUMENT_TYPE_NODE"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "Node"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-node",
+          "href": "https://dom.spec.whatwg.org/#interface-node",
+          "title": "Interface Node",
+          "number": "4.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-node-document_fragment_node",
+        "href": "https://dom.spec.whatwg.org/#dom-node-document_fragment_node",
+        "linkingText": [
+          "DOCUMENT_FRAGMENT_NODE"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "Node"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-node",
+          "href": "https://dom.spec.whatwg.org/#interface-node",
+          "title": "Interface Node",
+          "number": "4.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-node-notation_node",
+        "href": "https://dom.spec.whatwg.org/#dom-node-notation_node",
+        "linkingText": [
+          "NOTATION_NODE"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "Node"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-node",
+          "href": "https://dom.spec.whatwg.org/#interface-node",
+          "title": "Interface Node",
+          "number": "4.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-node-nodetype",
+        "href": "https://dom.spec.whatwg.org/#dom-node-nodetype",
+        "linkingText": [
+          "nodeType"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Node"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-node",
+          "href": "https://dom.spec.whatwg.org/#interface-node",
+          "title": "Interface Node",
+          "number": "4.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-node-nodename",
+        "href": "https://dom.spec.whatwg.org/#dom-node-nodename",
+        "linkingText": [
+          "nodeName"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Node"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-node",
+          "href": "https://dom.spec.whatwg.org/#interface-node",
+          "title": "Interface Node",
+          "number": "4.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-node-baseuri",
+        "href": "https://dom.spec.whatwg.org/#dom-node-baseuri",
+        "linkingText": [
+          "baseURI"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Node"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-node",
+          "href": "https://dom.spec.whatwg.org/#interface-node",
+          "title": "Interface Node",
+          "number": "4.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-node-isconnected",
+        "href": "https://dom.spec.whatwg.org/#dom-node-isconnected",
+        "linkingText": [
+          "isConnected"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Node"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-node",
+          "href": "https://dom.spec.whatwg.org/#interface-node",
+          "title": "Interface Node",
+          "number": "4.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-node-ownerdocument",
+        "href": "https://dom.spec.whatwg.org/#dom-node-ownerdocument",
+        "linkingText": [
+          "ownerDocument"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Node"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-node",
+          "href": "https://dom.spec.whatwg.org/#interface-node",
+          "title": "Interface Node",
+          "number": "4.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-node-getrootnode",
+        "href": "https://dom.spec.whatwg.org/#dom-node-getrootnode",
+        "linkingText": [
+          "getRootNode(options)",
+          "getRootNode()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Node"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-node",
+          "href": "https://dom.spec.whatwg.org/#interface-node",
+          "title": "Interface Node",
+          "number": "4.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-node-parentnode",
+        "href": "https://dom.spec.whatwg.org/#dom-node-parentnode",
+        "linkingText": [
+          "parentNode"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Node"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-node",
+          "href": "https://dom.spec.whatwg.org/#interface-node",
+          "title": "Interface Node",
+          "number": "4.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-node-parentelement",
+        "href": "https://dom.spec.whatwg.org/#dom-node-parentelement",
+        "linkingText": [
+          "parentElement"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Node"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-node",
+          "href": "https://dom.spec.whatwg.org/#interface-node",
+          "title": "Interface Node",
+          "number": "4.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-node-haschildnodes",
+        "href": "https://dom.spec.whatwg.org/#dom-node-haschildnodes",
+        "linkingText": [
+          "hasChildNodes()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Node"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-node",
+          "href": "https://dom.spec.whatwg.org/#interface-node",
+          "title": "Interface Node",
+          "number": "4.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-node-childnodes",
+        "href": "https://dom.spec.whatwg.org/#dom-node-childnodes",
+        "linkingText": [
+          "childNodes"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Node"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-node",
+          "href": "https://dom.spec.whatwg.org/#interface-node",
+          "title": "Interface Node",
+          "number": "4.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-node-firstchild",
+        "href": "https://dom.spec.whatwg.org/#dom-node-firstchild",
+        "linkingText": [
+          "firstChild"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Node"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-node",
+          "href": "https://dom.spec.whatwg.org/#interface-node",
+          "title": "Interface Node",
+          "number": "4.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-node-lastchild",
+        "href": "https://dom.spec.whatwg.org/#dom-node-lastchild",
+        "linkingText": [
+          "lastChild"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Node"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-node",
+          "href": "https://dom.spec.whatwg.org/#interface-node",
+          "title": "Interface Node",
+          "number": "4.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-node-previoussibling",
+        "href": "https://dom.spec.whatwg.org/#dom-node-previoussibling",
+        "linkingText": [
+          "previousSibling"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Node"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-node",
+          "href": "https://dom.spec.whatwg.org/#interface-node",
+          "title": "Interface Node",
+          "number": "4.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-node-nextsibling",
+        "href": "https://dom.spec.whatwg.org/#dom-node-nextsibling",
+        "linkingText": [
+          "nextSibling"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Node"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-node",
+          "href": "https://dom.spec.whatwg.org/#interface-node",
+          "title": "Interface Node",
+          "number": "4.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-node-nodevalue",
+        "href": "https://dom.spec.whatwg.org/#dom-node-nodevalue",
+        "linkingText": [
+          "nodeValue"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Node"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-node",
+          "href": "https://dom.spec.whatwg.org/#interface-node",
+          "title": "Interface Node",
+          "number": "4.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-node-textcontent",
+        "href": "https://dom.spec.whatwg.org/#dom-node-textcontent",
+        "linkingText": [
+          "textContent"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Node"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-node",
+          "href": "https://dom.spec.whatwg.org/#interface-node",
+          "title": "Interface Node",
+          "number": "4.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-node-normalize",
+        "href": "https://dom.spec.whatwg.org/#dom-node-normalize",
+        "linkingText": [
+          "normalize()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Node"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-node",
+          "href": "https://dom.spec.whatwg.org/#interface-node",
+          "title": "Interface Node",
+          "number": "4.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-node-clonenode",
+        "href": "https://dom.spec.whatwg.org/#dom-node-clonenode",
+        "linkingText": [
+          "cloneNode(deep)",
+          "cloneNode()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Node"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-node",
+          "href": "https://dom.spec.whatwg.org/#interface-node",
+          "title": "Interface Node",
+          "number": "4.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-node-isequalnode",
+        "href": "https://dom.spec.whatwg.org/#dom-node-isequalnode",
+        "linkingText": [
+          "isEqualNode(otherNode)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Node"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-node",
+          "href": "https://dom.spec.whatwg.org/#interface-node",
+          "title": "Interface Node",
+          "number": "4.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-node-issamenode",
+        "href": "https://dom.spec.whatwg.org/#dom-node-issamenode",
+        "linkingText": [
+          "isSameNode(otherNode)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Node"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-node",
+          "href": "https://dom.spec.whatwg.org/#interface-node",
+          "title": "Interface Node",
+          "number": "4.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-node-document_position_disconnected",
+        "href": "https://dom.spec.whatwg.org/#dom-node-document_position_disconnected",
+        "linkingText": [
+          "DOCUMENT_POSITION_DISCONNECTED"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "Node"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-node",
+          "href": "https://dom.spec.whatwg.org/#interface-node",
+          "title": "Interface Node",
+          "number": "4.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-node-document_position_preceding",
+        "href": "https://dom.spec.whatwg.org/#dom-node-document_position_preceding",
+        "linkingText": [
+          "DOCUMENT_POSITION_PRECEDING"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "Node"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-node",
+          "href": "https://dom.spec.whatwg.org/#interface-node",
+          "title": "Interface Node",
+          "number": "4.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-node-document_position_following",
+        "href": "https://dom.spec.whatwg.org/#dom-node-document_position_following",
+        "linkingText": [
+          "DOCUMENT_POSITION_FOLLOWING"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "Node"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-node",
+          "href": "https://dom.spec.whatwg.org/#interface-node",
+          "title": "Interface Node",
+          "number": "4.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-node-document_position_contains",
+        "href": "https://dom.spec.whatwg.org/#dom-node-document_position_contains",
+        "linkingText": [
+          "DOCUMENT_POSITION_CONTAINS"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "Node"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-node",
+          "href": "https://dom.spec.whatwg.org/#interface-node",
+          "title": "Interface Node",
+          "number": "4.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-node-document_position_contained_by",
+        "href": "https://dom.spec.whatwg.org/#dom-node-document_position_contained_by",
+        "linkingText": [
+          "DOCUMENT_POSITION_CONTAINED_BY"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "Node"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-node",
+          "href": "https://dom.spec.whatwg.org/#interface-node",
+          "title": "Interface Node",
+          "number": "4.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-node-document_position_implementation_specific",
+        "href": "https://dom.spec.whatwg.org/#dom-node-document_position_implementation_specific",
+        "linkingText": [
+          "DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "Node"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-node",
+          "href": "https://dom.spec.whatwg.org/#interface-node",
+          "title": "Interface Node",
+          "number": "4.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-node-comparedocumentposition",
+        "href": "https://dom.spec.whatwg.org/#dom-node-comparedocumentposition",
+        "linkingText": [
+          "compareDocumentPosition(other)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Node"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-node",
+          "href": "https://dom.spec.whatwg.org/#interface-node",
+          "title": "Interface Node",
+          "number": "4.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-node-contains",
+        "href": "https://dom.spec.whatwg.org/#dom-node-contains",
+        "linkingText": [
+          "contains(other)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Node"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-node",
+          "href": "https://dom.spec.whatwg.org/#interface-node",
+          "title": "Interface Node",
+          "number": "4.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-node-lookupprefix",
+        "href": "https://dom.spec.whatwg.org/#dom-node-lookupprefix",
+        "linkingText": [
+          "lookupPrefix(namespace)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Node"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-node",
+          "href": "https://dom.spec.whatwg.org/#interface-node",
+          "title": "Interface Node",
+          "number": "4.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-node-lookupnamespaceuri",
+        "href": "https://dom.spec.whatwg.org/#dom-node-lookupnamespaceuri",
+        "linkingText": [
+          "lookupNamespaceURI(prefix)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Node"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-node",
+          "href": "https://dom.spec.whatwg.org/#interface-node",
+          "title": "Interface Node",
+          "number": "4.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-node-isdefaultnamespace",
+        "href": "https://dom.spec.whatwg.org/#dom-node-isdefaultnamespace",
+        "linkingText": [
+          "isDefaultNamespace(namespace)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Node"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-node",
+          "href": "https://dom.spec.whatwg.org/#interface-node",
+          "title": "Interface Node",
+          "number": "4.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-node-insertbefore",
+        "href": "https://dom.spec.whatwg.org/#dom-node-insertbefore",
+        "linkingText": [
+          "insertBefore(node, child)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Node"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-node",
+          "href": "https://dom.spec.whatwg.org/#interface-node",
+          "title": "Interface Node",
+          "number": "4.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-node-appendchild",
+        "href": "https://dom.spec.whatwg.org/#dom-node-appendchild",
+        "linkingText": [
+          "appendChild(node)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Node"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-node",
+          "href": "https://dom.spec.whatwg.org/#interface-node",
+          "title": "Interface Node",
+          "number": "4.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-node-replacechild",
+        "href": "https://dom.spec.whatwg.org/#dom-node-replacechild",
+        "linkingText": [
+          "replaceChild(node, child)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Node"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-node",
+          "href": "https://dom.spec.whatwg.org/#interface-node",
+          "title": "Interface Node",
+          "number": "4.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-node-removechild",
+        "href": "https://dom.spec.whatwg.org/#dom-node-removechild",
+        "linkingText": [
+          "removeChild(child)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Node"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-node",
+          "href": "https://dom.spec.whatwg.org/#interface-node",
+          "title": "Interface Node",
+          "number": "4.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "eventtarget",
+        "href": "https://dom.spec.whatwg.org/#eventtarget",
+        "linkingText": [
+          "EventTarget"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventtarget-eventtarget",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-eventtarget",
+        "linkingText": [
+          "EventTarget()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-addeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-addeventlistener",
+        "linkingText": [
+          "addEventListener(type, callback, options)",
+          "addEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-removeeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-removeeventlistener",
+        "linkingText": [
+          "removeEventListener(type, callback, options)",
+          "removeEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-dispatchevent",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-dispatchevent",
+        "linkingText": [
+          "dispatchEvent(event)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://www.w3.org/TR/cssom-view-1/": [
+      {
+        "id": "geometryutils",
+        "href": "https://drafts.csswg.org/cssom-view/#geometryutils",
+        "linkingText": [
+          "GeometryUtils"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-geometryutils-interface",
+          "href": "https://drafts.csswg.org/cssom-view/#the-geometryutils-interface",
+          "title": "The GeometryUtils Interface",
+          "number": "11.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-geometryutils-getboxquads",
+        "href": "https://drafts.csswg.org/cssom-view/#dom-geometryutils-getboxquads",
+        "linkingText": [
+          "getBoxQuads(options)",
+          "getBoxQuads()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GeometryUtils"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-geometryutils-interface",
+          "href": "https://drafts.csswg.org/cssom-view/#the-geometryutils-interface",
+          "title": "The GeometryUtils Interface",
+          "number": "11.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-geometryutils-convertquadfromnode",
+        "href": "https://drafts.csswg.org/cssom-view/#dom-geometryutils-convertquadfromnode",
+        "linkingText": [
+          "convertQuadFromNode(quad, from, options)",
+          "convertQuadFromNode(quad, from)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GeometryUtils"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-geometryutils-interface",
+          "href": "https://drafts.csswg.org/cssom-view/#the-geometryutils-interface",
+          "title": "The GeometryUtils Interface",
+          "number": "11.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-geometryutils-convertrectfromnode",
+        "href": "https://drafts.csswg.org/cssom-view/#dom-geometryutils-convertrectfromnode",
+        "linkingText": [
+          "convertRectFromNode(rect, from, options)",
+          "convertRectFromNode(rect, from)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GeometryUtils"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-geometryutils-interface",
+          "href": "https://drafts.csswg.org/cssom-view/#the-geometryutils-interface",
+          "title": "The GeometryUtils Interface",
+          "number": "11.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-geometryutils-convertpointfromnode",
+        "href": "https://drafts.csswg.org/cssom-view/#dom-geometryutils-convertpointfromnode",
+        "linkingText": [
+          "convertPointFromNode(point, from, options)",
+          "convertPointFromNode(point, from)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GeometryUtils"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-geometryutils-interface",
+          "href": "https://drafts.csswg.org/cssom-view/#the-geometryutils-interface",
+          "title": "The GeometryUtils Interface",
+          "number": "11.1"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

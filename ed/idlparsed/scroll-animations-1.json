@@ -1,0 +1,484 @@
+{
+  "spec": {
+    "title": "Scroll-linked Animations",
+    "url": "https://drafts.csswg.org/scroll-animations-1/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {
+        "Window": [
+          "ScrollTimeline"
+        ]
+      },
+      "functions": {
+        "Window": [
+          "CSSScrollTimelineRule"
+        ]
+      }
+    },
+    "idlNames": {
+      "ScrollDirection": {
+        "fragment": "enum ScrollDirection {\n  \"block\",\n  \"inline\",\n  \"horizontal\",\n  \"vertical\"\n};",
+        "type": "enum",
+        "name": "ScrollDirection",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "block"
+          },
+          {
+            "type": "enum-value",
+            "value": "inline"
+          },
+          {
+            "type": "enum-value",
+            "value": "horizontal"
+          },
+          {
+            "type": "enum-value",
+            "value": "vertical"
+          }
+        ],
+        "extAttrs": []
+      },
+      "ScrollTimelineAutoKeyword": {
+        "fragment": "enum ScrollTimelineAutoKeyword { \"auto\" };",
+        "type": "enum",
+        "name": "ScrollTimelineAutoKeyword",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "auto"
+          }
+        ],
+        "extAttrs": []
+      },
+      "ContainerBasedOffset": {
+        "fragment": "typedef (CSSNumericValue or CSSKeywordish) ContainerBasedOffset;",
+        "type": "typedef",
+        "name": "ContainerBasedOffset",
+        "idlType": {
+          "type": "typedef-type",
+          "extAttrs": [],
+          "generic": "",
+          "nullable": false,
+          "union": true,
+          "idlType": [
+            {
+              "type": null,
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSNumericValue"
+            },
+            {
+              "type": null,
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSKeywordish"
+            }
+          ]
+        },
+        "extAttrs": []
+      },
+      "ScrollTimelineOffset": {
+        "fragment": "typedef (ContainerBasedOffset or ElementBasedOffset) ScrollTimelineOffset;",
+        "type": "typedef",
+        "name": "ScrollTimelineOffset",
+        "idlType": {
+          "type": "typedef-type",
+          "extAttrs": [],
+          "generic": "",
+          "nullable": false,
+          "union": true,
+          "idlType": [
+            {
+              "type": null,
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "ContainerBasedOffset"
+            },
+            {
+              "type": null,
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "ElementBasedOffset"
+            }
+          ]
+        },
+        "extAttrs": []
+      },
+      "ScrollTimelineOptions": {
+        "fragment": "dictionary ScrollTimelineOptions {\n  Element? source;\n  ScrollDirection orientation = \"block\";\n  sequence<ScrollTimelineOffset> scrollOffsets = [];\n};",
+        "type": "dictionary",
+        "name": "ScrollTimelineOptions",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "source",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "Element"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "orientation",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "ScrollDirection"
+            },
+            "default": {
+              "type": "string",
+              "value": "block"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "scrollOffsets",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "ScrollTimelineOffset"
+                }
+              ]
+            },
+            "default": {
+              "type": "sequence",
+              "value": []
+            },
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "ScrollTimeline": {
+        "fragment": "[Exposed=Window]\ninterface ScrollTimeline : AnimationTimeline {\n  constructor(optional ScrollTimelineOptions options = {});\n  readonly attribute Element? source;\n  readonly attribute ScrollDirection orientation;\n  readonly attribute FrozenArray<ScrollTimelineOffset> scrollOffsets;\n};",
+        "type": "interface",
+        "name": "ScrollTimeline",
+        "inheritance": "AnimationTimeline",
+        "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "options",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "ScrollTimelineOptions"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": []
+          },
+          {
+            "type": "attribute",
+            "name": "source",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "Element"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "orientation",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "ScrollDirection"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "scrollOffsets",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "FrozenArray",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "ScrollTimelineOffset"
+                }
+              ]
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "Edge": {
+        "fragment": "enum Edge { \"start\", \"end\" };",
+        "type": "enum",
+        "name": "Edge",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "start"
+          },
+          {
+            "type": "enum-value",
+            "value": "end"
+          }
+        ],
+        "extAttrs": []
+      },
+      "ElementBasedOffset": {
+        "fragment": "dictionary ElementBasedOffset {\n  Element target;\n  Edge edge = \"start\";\n  double threshold = 0.0;\n};",
+        "type": "dictionary",
+        "name": "ElementBasedOffset",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "target",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "Element"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "edge",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "Edge"
+            },
+            "default": {
+              "type": "string",
+              "value": "start"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "threshold",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "default": {
+              "type": "number",
+              "value": "0.0"
+            },
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "CSSScrollTimelineRule": {
+        "fragment": "[Exposed=Window]\ninterface CSSScrollTimelineRule : CSSRule {\n  readonly attribute CSSOMString name;\n  readonly attribute CSSOMString source;\n  readonly attribute CSSOMString orientation;\n  readonly attribute CSSOMString scrollOffsets;\n};",
+        "type": "interface",
+        "name": "CSSScrollTimelineRule",
+        "inheritance": "CSSRule",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "name",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "source",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "orientation",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "scrollOffsets",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      }
+    },
+    "idlExtendedNames": {},
+    "globals": {},
+    "exposed": {
+      "Window": [
+        "ScrollTimeline",
+        "CSSScrollTimelineRule"
+      ]
+    },
+    "dependencies": {
+      "ScrollTimelineOptions": [
+        "Element",
+        "ScrollDirection",
+        "ScrollTimelineOffset"
+      ],
+      "ScrollTimeline": [
+        "AnimationTimeline",
+        "ScrollTimelineOptions",
+        "Element",
+        "ScrollDirection",
+        "ScrollTimelineOffset"
+      ],
+      "ElementBasedOffset": [
+        "Element",
+        "Edge"
+      ],
+      "CSSScrollTimelineRule": [
+        "CSSRule",
+        "CSSOMString"
+      ]
+    },
+    "externalDependencies": [
+      "CSSNumericValue",
+      "CSSKeywordish",
+      "Element",
+      "AnimationTimeline",
+      "CSSRule",
+      "CSSOMString"
+    ],
+    "hasObsoleteIdl": false
+  }
+}

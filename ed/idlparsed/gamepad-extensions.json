@@ -1,0 +1,494 @@
+{
+  "spec": {
+    "title": "Gamepad Extensions",
+    "url": "https://w3c.github.io/gamepad/extensions.html"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {},
+      "functions": {
+        "Window": [
+          "GamepadHapticActuator",
+          "GamepadPose",
+          "GamepadTouch"
+        ]
+      }
+    },
+    "idlNames": {
+      "GamepadHand": {
+        "fragment": "enum GamepadHand {\n  \"\",  /* unknown, both hands, or not applicable */\n  \"left\",\n  \"right\"\n};",
+        "type": "enum",
+        "name": "GamepadHand",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": ""
+          },
+          {
+            "type": "enum-value",
+            "value": "left"
+          },
+          {
+            "type": "enum-value",
+            "value": "right"
+          }
+        ],
+        "extAttrs": []
+      },
+      "GamepadHapticActuator": {
+        "fragment": "[Exposed=Window]\ninterface GamepadHapticActuator {\n  readonly attribute GamepadHapticActuatorType type;\n  Promise<boolean> pulse(double value, double duration);\n};",
+        "type": "interface",
+        "name": "GamepadHapticActuator",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "attribute",
+            "name": "type",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GamepadHapticActuatorType"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "operation",
+            "name": "pulse",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "boolean"
+                }
+              ]
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "value",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "double"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "duration",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "double"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "GamepadHapticActuatorType": {
+        "fragment": "enum GamepadHapticActuatorType {\n  \"vibration\"\n};",
+        "type": "enum",
+        "name": "GamepadHapticActuatorType",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "vibration"
+          }
+        ],
+        "extAttrs": []
+      },
+      "GamepadPose": {
+        "fragment": "[Exposed=Window]\ninterface GamepadPose {\n  readonly attribute boolean hasOrientation;\n  readonly attribute boolean hasPosition;\n\n  readonly attribute Float32Array? position;\n  readonly attribute Float32Array? linearVelocity;\n  readonly attribute Float32Array? linearAcceleration;\n  readonly attribute Float32Array? orientation;\n  readonly attribute Float32Array? angularVelocity;\n  readonly attribute Float32Array? angularAcceleration;\n};",
+        "type": "interface",
+        "name": "GamepadPose",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "attribute",
+            "name": "hasOrientation",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "hasPosition",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "position",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "Float32Array"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "linearVelocity",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "Float32Array"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "linearAcceleration",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "Float32Array"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "orientation",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "Float32Array"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "angularVelocity",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "Float32Array"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "angularAcceleration",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "Float32Array"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "GamepadTouch": {
+        "fragment": "[Exposed=Window, SecureContext]\ninterface GamepadTouch {\n  readonly attribute unsigned long touchId;\n  readonly attribute octet surfaceId;\n  readonly attribute Float32Array position;\n  readonly attribute Uint32Array? surfaceDimensions;\n};",
+        "type": "interface",
+        "name": "GamepadTouch",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "attribute",
+            "name": "touchId",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "surfaceId",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "octet"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "position",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "Float32Array"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "surfaceDimensions",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "Uint32Array"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
+          }
+        ],
+        "partial": false
+      }
+    },
+    "idlExtendedNames": {
+      "Gamepad": [
+        {
+          "fragment": "partial interface Gamepad {\n  readonly attribute GamepadHand hand;\n  readonly attribute FrozenArray<GamepadHapticActuator> hapticActuators;\n  readonly attribute GamepadPose? pose;\n  readonly attribute FrozenArray<GamepadTouch>? touchEvents;\n};",
+          "type": "interface",
+          "name": "Gamepad",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "attribute",
+              "name": "hand",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "GamepadHand"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": true
+            },
+            {
+              "type": "attribute",
+              "name": "hapticActuators",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "FrozenArray",
+                "nullable": false,
+                "union": false,
+                "idlType": [
+                  {
+                    "type": "attribute-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "GamepadHapticActuator"
+                  }
+                ]
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": true
+            },
+            {
+              "type": "attribute",
+              "name": "pose",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": true,
+                "union": false,
+                "idlType": "GamepadPose"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": true
+            },
+            {
+              "type": "attribute",
+              "name": "touchEvents",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "FrozenArray",
+                "nullable": true,
+                "union": false,
+                "idlType": [
+                  {
+                    "type": "attribute-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "GamepadTouch"
+                  }
+                ]
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": true
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ]
+    },
+    "globals": {},
+    "exposed": {
+      "Window": [
+        "GamepadHapticActuator",
+        "GamepadPose",
+        "GamepadTouch"
+      ]
+    },
+    "dependencies": {
+      "GamepadHapticActuator": [
+        "GamepadHapticActuatorType"
+      ],
+      "GamepadPose": [
+        "Float32Array"
+      ],
+      "GamepadTouch": [
+        "Float32Array",
+        "Uint32Array"
+      ],
+      "Gamepad": [
+        "GamepadHand",
+        "GamepadHapticActuator",
+        "GamepadPose",
+        "GamepadTouch"
+      ]
+    },
+    "externalDependencies": [
+      "Float32Array",
+      "Uint32Array",
+      "Gamepad"
+    ],
+    "hasObsoleteIdl": false
+  }
+}

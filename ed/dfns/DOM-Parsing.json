@@ -1,0 +1,2589 @@
+{
+  "spec": {
+    "title": "DOM Parsing and Serialization",
+    "url": "https://w3c.github.io/DOM-Parsing/"
+  },
+  "dfns": [
+    {
+      "id": "dfn-applicable-specification",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-applicable-specification",
+      "linkingText": [
+        "applicable specification"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "",
+        "href": "https://w3c.github.io/DOM-Parsing/#null",
+        "title": "Extensibility"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-parsing",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-parsing",
+      "linkingText": [
+        "Parsing"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "introduction",
+        "href": "https://w3c.github.io/DOM-Parsing/#introduction",
+        "title": "Introduction",
+        "number": "1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-serializing",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-serializing",
+      "linkingText": [
+        "Serializing"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "introduction",
+        "href": "https://w3c.github.io/DOM-Parsing/#introduction",
+        "title": "Introduction",
+        "number": "1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-round-tripping",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-round-tripping",
+      "linkingText": [
+        "Round-tripping"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "introduction",
+        "href": "https://w3c.github.io/DOM-Parsing/#introduction",
+        "title": "Introduction",
+        "number": "1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-context-object",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-context-object",
+      "linkingText": [
+        "context object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "introduction",
+        "href": "https://w3c.github.io/DOM-Parsing/#introduction",
+        "title": "Introduction",
+        "number": "1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-html-namespace",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-html-namespace",
+      "linkingText": [
+        "HTML namespace"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "introduction",
+        "href": "https://w3c.github.io/DOM-Parsing/#introduction",
+        "title": "Introduction",
+        "number": "1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-xml-namespace",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-xml-namespace",
+      "linkingText": [
+        "XML namespace"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "introduction",
+        "href": "https://w3c.github.io/DOM-Parsing/#introduction",
+        "title": "Introduction",
+        "number": "1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-xmlns-namespace",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-xmlns-namespace",
+      "linkingText": [
+        "XMLNS namespace"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "introduction",
+        "href": "https://w3c.github.io/DOM-Parsing/#introduction",
+        "title": "Introduction",
+        "number": "1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xmlserializer-constructor",
+      "href": "https://w3c.github.io/DOM-Parsing/#dom-xmlserializer-constructor",
+      "linkingText": [
+        "constructor()"
+      ],
+      "localLinkingText": [
+        "XMLSerializer.constructor",
+        "XMLSerializer.constructor()",
+        "constructor"
+      ],
+      "type": "constructor",
+      "for": [
+        "XMLSerializer"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-xmlserializer-interface",
+        "href": "https://w3c.github.io/DOM-Parsing/#the-xmlserializer-interface",
+        "title": "The XMLSerializer interface",
+        "number": "2.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xmlserializer",
+      "href": "https://w3c.github.io/DOM-Parsing/#dom-xmlserializer",
+      "linkingText": [
+        "XMLSerializer"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-xmlserializer-interface",
+        "href": "https://w3c.github.io/DOM-Parsing/#the-xmlserializer-interface",
+        "title": "The XMLSerializer interface",
+        "number": "2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xmlserializer-serializetostring",
+      "href": "https://w3c.github.io/DOM-Parsing/#dom-xmlserializer-serializetostring",
+      "linkingText": [
+        "serializeToString()",
+        "serializeToString(root)"
+      ],
+      "localLinkingText": [
+        "XMLSerializer.serializeToString",
+        "XMLSerializer.serializeToString()",
+        "serializeToString"
+      ],
+      "type": "method",
+      "for": [
+        "XMLSerializer"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-xmlserializer-interface",
+        "href": "https://w3c.github.io/DOM-Parsing/#the-xmlserializer-interface",
+        "title": "The XMLSerializer interface",
+        "number": "2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-innerhtml",
+      "href": "https://w3c.github.io/DOM-Parsing/#dom-innerhtml",
+      "linkingText": [
+        "InnerHTML"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-innerhtml-mixin",
+        "href": "https://w3c.github.io/DOM-Parsing/#the-innerhtml-mixin",
+        "title": "The InnerHTML mixin",
+        "number": "2.3"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-innerhtml-innerhtml",
+      "href": "https://w3c.github.io/DOM-Parsing/#dom-innerhtml-innerhtml",
+      "linkingText": [
+        "innerHTML"
+      ],
+      "localLinkingText": [
+        "InnerHTML.innerHTML"
+      ],
+      "type": "attribute",
+      "for": [
+        "InnerHTML"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-innerhtml-mixin",
+        "href": "https://w3c.github.io/DOM-Parsing/#the-innerhtml-mixin",
+        "title": "The InnerHTML mixin",
+        "number": "2.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-element-outerhtml",
+      "href": "https://w3c.github.io/DOM-Parsing/#dom-element-outerhtml",
+      "linkingText": [
+        "outerHTML"
+      ],
+      "localLinkingText": [
+        "Element.outerHTML"
+      ],
+      "type": "attribute",
+      "for": [
+        "Element"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "extensions-to-the-element-interface",
+        "href": "https://w3c.github.io/DOM-Parsing/#extensions-to-the-element-interface",
+        "title": "Extensions to the Element interface",
+        "number": "2.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-element-insertadjacenthtml",
+      "href": "https://w3c.github.io/DOM-Parsing/#dom-element-insertadjacenthtml",
+      "linkingText": [
+        "insertAdjacentHTML(position, text)",
+        "insertAdjacentHTML()"
+      ],
+      "localLinkingText": [
+        "Element.insertAdjacentHTML",
+        "Element.insertAdjacentHTML()",
+        "insertAdjacentHTML"
+      ],
+      "type": "method",
+      "for": [
+        "Element"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "extensions-to-the-element-interface",
+        "href": "https://w3c.github.io/DOM-Parsing/#extensions-to-the-element-interface",
+        "title": "Extensions to the Element interface",
+        "number": "2.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-range-createcontextualfragment",
+      "href": "https://w3c.github.io/DOM-Parsing/#dom-range-createcontextualfragment",
+      "linkingText": [
+        "createContextualFragment(fragment)",
+        "createContextualFragment()"
+      ],
+      "localLinkingText": [
+        "Range.createContextualFragment",
+        "Range.createContextualFragment()",
+        "createContextualFragment"
+      ],
+      "type": "method",
+      "for": [
+        "Range"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "extensions-to-the-range-interface",
+        "href": "https://w3c.github.io/DOM-Parsing/#extensions-to-the-range-interface",
+        "title": "Extensions to the Range interface",
+        "number": "2.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-fragment-parsing-algorithm",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-fragment-parsing-algorithm",
+      "linkingText": [
+        "fragment parsing algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "parsing",
+        "href": "https://w3c.github.io/DOM-Parsing/#parsing",
+        "title": "Parsing",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-fragment-serializing-algorithm",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm",
+      "linkingText": [
+        "fragment serializing algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "serializing",
+        "href": "https://w3c.github.io/DOM-Parsing/#serializing",
+        "title": "Serializing",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-require-well-formed",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-require-well-formed",
+      "linkingText": [
+        "require well-formed"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "serializing",
+        "href": "https://w3c.github.io/DOM-Parsing/#serializing",
+        "title": "Serializing",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-html-serialization",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-html-serialization",
+      "linkingText": [
+        "HTML serialization"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "serializing",
+        "href": "https://w3c.github.io/DOM-Parsing/#serializing",
+        "title": "Serializing",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-xml-serialization",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-xml-serialization",
+      "linkingText": [
+        "XML serialization"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "xml-serialization",
+        "href": "https://w3c.github.io/DOM-Parsing/#xml-serialization",
+        "title": "XML Serialization",
+        "number": "3.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-context-namespace",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-context-namespace",
+      "linkingText": [
+        "context namespace"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "xml-serialization",
+        "href": "https://w3c.github.io/DOM-Parsing/#xml-serialization",
+        "title": "XML Serialization",
+        "number": "3.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-generated-namespace-prefix-index",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-generated-namespace-prefix-index",
+      "linkingText": [
+        "generated namespace prefix index"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "xml-serialization",
+        "href": "https://w3c.github.io/DOM-Parsing/#xml-serialization",
+        "title": "XML Serialization",
+        "number": "3.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-throw-an-exception",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-throw-an-exception",
+      "linkingText": [
+        "throw an exception",
+        "exception"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "xml-serialization",
+        "href": "https://w3c.github.io/DOM-Parsing/#xml-serialization",
+        "title": "XML Serialization",
+        "number": "3.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-producing-an-xml-serialization-of-a-dom-node",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-producing-an-xml-serialization-of-a-dom-node",
+      "linkingText": [
+        "producing an XML serialization of a DOM node"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "xml-serialization",
+        "href": "https://w3c.github.io/DOM-Parsing/#xml-serialization",
+        "title": "XML Serialization",
+        "number": "3.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-namespace",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-namespace",
+      "linkingText": [
+        "namespace"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "xml-serialization",
+        "href": "https://w3c.github.io/DOM-Parsing/#xml-serialization",
+        "title": "XML Serialization",
+        "number": "3.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-prefix-map",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-prefix-map",
+      "linkingText": [
+        "prefix map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "xml-serialization",
+        "href": "https://w3c.github.io/DOM-Parsing/#xml-serialization",
+        "title": "XML Serialization",
+        "number": "3.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-prefix-index",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-prefix-index",
+      "linkingText": [
+        "prefix index"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "xml-serialization",
+        "href": "https://w3c.github.io/DOM-Parsing/#xml-serialization",
+        "title": "XML Serialization",
+        "number": "3.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-xml-serialization-algorithm",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-xml-serialization-algorithm",
+      "linkingText": [
+        "XML serialization algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "xml-serialization",
+        "href": "https://w3c.github.io/DOM-Parsing/#xml-serialization",
+        "title": "XML Serialization",
+        "number": "3.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-xml-serializing-an-element-node",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-xml-serializing-an-element-node",
+      "linkingText": [
+        "XML serializing an Element node"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "xml-serializing-an-element-node",
+        "href": "https://w3c.github.io/DOM-Parsing/#xml-serializing-an-element-node",
+        "title": "XML serializing an Element node",
+        "number": "3.2.1.1"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-qualified-name",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-qualified-name",
+      "linkingText": [
+        "qualified name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "xml-serializing-an-element-node",
+        "href": "https://w3c.github.io/DOM-Parsing/#xml-serializing-an-element-node",
+        "title": "XML serializing an Element node",
+        "number": "3.2.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-skip-end-tag",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-skip-end-tag",
+      "linkingText": [
+        "skip end tag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "xml-serializing-an-element-node",
+        "href": "https://w3c.github.io/DOM-Parsing/#xml-serializing-an-element-node",
+        "title": "XML serializing an Element node",
+        "number": "3.2.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-ignore-namespace-definition-attribute",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-ignore-namespace-definition-attribute",
+      "linkingText": [
+        "ignore namespace definition attribute"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "xml-serializing-an-element-node",
+        "href": "https://w3c.github.io/DOM-Parsing/#xml-serializing-an-element-node",
+        "title": "XML serializing an Element node",
+        "number": "3.2.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-local-prefixes-map",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-local-prefixes-map",
+      "linkingText": [
+        "local prefixes map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "xml-serializing-an-element-node",
+        "href": "https://w3c.github.io/DOM-Parsing/#xml-serializing-an-element-node",
+        "title": "XML serializing an Element node",
+        "number": "3.2.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-local-default-namespace",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-local-default-namespace",
+      "linkingText": [
+        "local default namespace"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "xml-serializing-an-element-node",
+        "href": "https://w3c.github.io/DOM-Parsing/#xml-serializing-an-element-node",
+        "title": "XML serializing an Element node",
+        "number": "3.2.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-inherited-ns",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-inherited-ns",
+      "linkingText": [
+        "inherited ns"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "xml-serializing-an-element-node",
+        "href": "https://w3c.github.io/DOM-Parsing/#xml-serializing-an-element-node",
+        "title": "XML serializing an Element node",
+        "number": "3.2.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-found-a-suitable-namespace-prefix",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-found-a-suitable-namespace-prefix",
+      "linkingText": [
+        "Found a suitable namespace prefix"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "xml-serializing-an-element-node",
+        "href": "https://w3c.github.io/DOM-Parsing/#xml-serializing-an-element-node",
+        "title": "XML serializing an Element node",
+        "number": "3.2.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-recording-the-namespace-information",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-recording-the-namespace-information",
+      "linkingText": [
+        "recording the namespace information"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "recording-the-namespace",
+        "href": "https://w3c.github.io/DOM-Parsing/#recording-the-namespace",
+        "title": "Recording the namespace",
+        "number": "3.2.1.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-main",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-main",
+      "linkingText": [
+        "Main"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "recording-the-namespace",
+        "href": "https://w3c.github.io/DOM-Parsing/#recording-the-namespace",
+        "title": "Recording the namespace",
+        "number": "3.2.1.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-namespace-prefix-map",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-namespace-prefix-map",
+      "linkingText": [
+        "namespace prefix map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-namespace-prefix-map",
+        "href": "https://w3c.github.io/DOM-Parsing/#the-namespace-prefix-map",
+        "title": "The Namespace Prefix Map",
+        "number": "3.2.1.1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-list",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-list",
+      "linkingText": [
+        "list",
+        "namespace prefix lists"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-namespace-prefix-map",
+        "href": "https://w3c.github.io/DOM-Parsing/#the-namespace-prefix-map",
+        "title": "The Namespace Prefix Map",
+        "number": "3.2.1.1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-copy-a-namespace-prefix-map",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-copy-a-namespace-prefix-map",
+      "linkingText": [
+        "copy a namespace prefix map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-namespace-prefix-map",
+        "href": "https://w3c.github.io/DOM-Parsing/#the-namespace-prefix-map",
+        "title": "The Namespace Prefix Map",
+        "number": "3.2.1.1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-retrieving-a-preferred-prefix-string",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-retrieving-a-preferred-prefix-string",
+      "linkingText": [
+        "retrieving a preferred prefix string",
+        "retrieve a preferred prefix string"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-namespace-prefix-map",
+        "href": "https://w3c.github.io/DOM-Parsing/#the-namespace-prefix-map",
+        "title": "The Namespace Prefix Map",
+        "number": "3.2.1.1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-found",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-found",
+      "linkingText": [
+        "found"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-namespace-prefix-map",
+        "href": "https://w3c.github.io/DOM-Parsing/#the-namespace-prefix-map",
+        "title": "The Namespace Prefix Map",
+        "number": "3.2.1.1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-add",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-add",
+      "linkingText": [
+        "add"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-namespace-prefix-map",
+        "href": "https://w3c.github.io/DOM-Parsing/#the-namespace-prefix-map",
+        "title": "The Namespace Prefix Map",
+        "number": "3.2.1.1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-xml-serialization-of-the-attributes",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-xml-serialization-of-the-attributes",
+      "linkingText": [
+        "XML serialization of the attributes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "serializing-an-element-s-attributes",
+        "href": "https://w3c.github.io/DOM-Parsing/#serializing-an-element-s-attributes",
+        "title": "Serializing an Element's attributes",
+        "number": "3.2.1.1.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-loop",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-loop",
+      "linkingText": [
+        "Loop"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "serializing-an-element-s-attributes",
+        "href": "https://w3c.github.io/DOM-Parsing/#serializing-an-element-s-attributes",
+        "title": "Serializing an Element's attributes",
+        "number": "3.2.1.1.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-serializing-an-attribute-value",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-serializing-an-attribute-value",
+      "linkingText": [
+        "serializing an attribute value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "serializing-an-element-s-attributes",
+        "href": "https://w3c.github.io/DOM-Parsing/#serializing-an-element-s-attributes",
+        "title": "Serializing an Element's attributes",
+        "number": "3.2.1.1.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-generating-a-prefix",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-generating-a-prefix",
+      "linkingText": [
+        "generating a prefix",
+        "generate a prefix"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "generating-namespace-prefixes",
+        "href": "https://w3c.github.io/DOM-Parsing/#generating-namespace-prefixes",
+        "title": "Generating namespace prefixes",
+        "number": "3.2.1.1.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-xml-serializing-a-document-node",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-xml-serializing-a-document-node",
+      "linkingText": [
+        "XML serializing a Document node"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "xml-serializing-a-document-node",
+        "href": "https://w3c.github.io/DOM-Parsing/#xml-serializing-a-document-node",
+        "title": "XML serializing a Document node",
+        "number": "3.2.1.2"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-xml-serializing-a-comment-node",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-xml-serializing-a-comment-node",
+      "linkingText": [
+        "XML serializing a Comment node"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "xml-serializing-a-comment-node",
+        "href": "https://w3c.github.io/DOM-Parsing/#xml-serializing-a-comment-node",
+        "title": "XML serializing a Comment node",
+        "number": "3.2.1.3"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-xml-serializing-a-text-node",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-xml-serializing-a-text-node",
+      "linkingText": [
+        "XML serializing a Text node"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "xml-serializing-a-text-node",
+        "href": "https://w3c.github.io/DOM-Parsing/#xml-serializing-a-text-node",
+        "title": "XML serializing a Text node",
+        "number": "3.2.1.4"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-xml-serializing-a-documentfragment-node",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-xml-serializing-a-documentfragment-node",
+      "linkingText": [
+        "XML serializing a DocumentFragment node"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "xml-serializing-a-documentfragment-node",
+        "href": "https://w3c.github.io/DOM-Parsing/#xml-serializing-a-documentfragment-node",
+        "title": "XML serializing a DocumentFragment node",
+        "number": "3.2.1.5"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-xml-serializing-a-documenttype-node",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-xml-serializing-a-documenttype-node",
+      "linkingText": [
+        "XML serializing a DocumentType node"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "xml-serializing-a-documenttype-node",
+        "href": "https://w3c.github.io/DOM-Parsing/#xml-serializing-a-documenttype-node",
+        "title": "XML serializing a DocumentType node",
+        "number": "3.2.1.6"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-xml-serializing-a-processinginstruction-node",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-xml-serializing-a-processinginstruction-node",
+      "linkingText": [
+        "XML serializing a ProcessingInstruction node"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "xml-serializing-a-processinginstruction-node",
+        "href": "https://w3c.github.io/DOM-Parsing/#xml-serializing-a-processinginstruction-node",
+        "title": "XML serializing a ProcessingInstruction node",
+        "number": "3.2.1.7"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-active-document",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-active-document",
+      "linkingText": [
+        "active document"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://w3c.github.io/DOM-Parsing/#dependencies",
+        "title": "Dependencies",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-context",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-context",
+      "linkingText": [
+        "context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://w3c.github.io/DOM-Parsing/#dependencies",
+        "title": "Dependencies",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-html-fragment-parsing-algorithm",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-html-fragment-parsing-algorithm",
+      "linkingText": [
+        "HTML fragment parsing algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://w3c.github.io/DOM-Parsing/#dependencies",
+        "title": "Dependencies",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-html-fragment-serialization-algorithm",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-html-fragment-serialization-algorithm",
+      "linkingText": [
+        "HTML fragment serialization algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://w3c.github.io/DOM-Parsing/#dependencies",
+        "title": "Dependencies",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-html-parser",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-html-parser",
+      "linkingText": [
+        "HTML parser"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://w3c.github.io/DOM-Parsing/#dependencies",
+        "title": "Dependencies",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-parsing-xhtml-documents",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-parsing-xhtml-documents",
+      "linkingText": [
+        "parsing XHTML documents"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://w3c.github.io/DOM-Parsing/#dependencies",
+        "title": "Dependencies",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-xml-fragment-parsing-algorithm",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-xml-fragment-parsing-algorithm",
+      "linkingText": [
+        "XML fragment parsing algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://w3c.github.io/DOM-Parsing/#dependencies",
+        "title": "Dependencies",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-xml-fragment-serialization-algorithm",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-xml-fragment-serialization-algorithm",
+      "linkingText": [
+        "XML fragment serialization algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://w3c.github.io/DOM-Parsing/#dependencies",
+        "title": "Dependencies",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-xml-parser",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-xml-parser",
+      "linkingText": [
+        "XML parser"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://w3c.github.io/DOM-Parsing/#dependencies",
+        "title": "Dependencies",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-scripting-flag",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-scripting-flag",
+      "linkingText": [
+        "scripting flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://w3c.github.io/DOM-Parsing/#dependencies",
+        "title": "Dependencies",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-location",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-location",
+      "linkingText": [
+        "location"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://w3c.github.io/DOM-Parsing/#dependencies",
+        "title": "Dependencies",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-meta",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-meta",
+      "linkingText": [
+        "meta"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://w3c.github.io/DOM-Parsing/#dependencies",
+        "title": "Dependencies",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-noscript",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-noscript",
+      "linkingText": [
+        "noscript"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://w3c.github.io/DOM-Parsing/#dependencies",
+        "title": "Dependencies",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-script",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-script",
+      "linkingText": [
+        "script"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://w3c.github.io/DOM-Parsing/#dependencies",
+        "title": "Dependencies",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-template",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-template",
+      "linkingText": [
+        "template"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://w3c.github.io/DOM-Parsing/#dependencies",
+        "title": "Dependencies",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-void-elements",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-void-elements",
+      "linkingText": [
+        "void elements"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://w3c.github.io/DOM-Parsing/#dependencies",
+        "title": "Dependencies",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-template-content",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-template-content",
+      "linkingText": [
+        "template content",
+        "template contents"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://w3c.github.io/DOM-Parsing/#dependencies",
+        "title": "Dependencies",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-cereactions",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-cereactions",
+      "linkingText": [
+        "CEReactions",
+        "[CEReactions]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://w3c.github.io/DOM-Parsing/#dependencies",
+        "title": "Dependencies",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-case-sensitive",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-case-sensitive",
+      "linkingText": [
+        "case-sensitive"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://w3c.github.io/DOM-Parsing/#dependencies",
+        "title": "Dependencies",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-ascii-case-insensitive",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-ascii-case-insensitive",
+      "linkingText": [
+        "ASCII case-insensitive"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://w3c.github.io/DOM-Parsing/#dependencies",
+        "title": "Dependencies",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-child",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-child",
+      "linkingText": [
+        "child",
+        "child nodes",
+        "children"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://w3c.github.io/DOM-Parsing/#dependencies",
+        "title": "Dependencies",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-first-child",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-first-child",
+      "linkingText": [
+        "first child"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://w3c.github.io/DOM-Parsing/#dependencies",
+        "title": "Dependencies",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-next-sibling",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-next-sibling",
+      "linkingText": [
+        "next sibling"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://w3c.github.io/DOM-Parsing/#dependencies",
+        "title": "Dependencies",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-parent",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-parent",
+      "linkingText": [
+        "parent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://w3c.github.io/DOM-Parsing/#dependencies",
+        "title": "Dependencies",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-content-type",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-content-type",
+      "linkingText": [
+        "content type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://w3c.github.io/DOM-Parsing/#dependencies",
+        "title": "Dependencies",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-encoding",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-encoding",
+      "linkingText": [
+        "encoding"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://w3c.github.io/DOM-Parsing/#dependencies",
+        "title": "Dependencies",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-html-document",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-html-document",
+      "linkingText": [
+        "HTML document"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://w3c.github.io/DOM-Parsing/#dependencies",
+        "title": "Dependencies",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-local-name",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-local-name",
+      "linkingText": [
+        "local name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://w3c.github.io/DOM-Parsing/#dependencies",
+        "title": "Dependencies",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-concept-namespace",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-concept-namespace",
+      "linkingText": [
+        "concept namespace",
+        "namespace concept"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://w3c.github.io/DOM-Parsing/#dependencies",
+        "title": "Dependencies",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-node-document",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-node-document",
+      "linkingText": [
+        "node document"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://w3c.github.io/DOM-Parsing/#dependencies",
+        "title": "Dependencies",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-append",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-append",
+      "linkingText": [
+        "append"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://w3c.github.io/DOM-Parsing/#dependencies",
+        "title": "Dependencies",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-insert",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-insert",
+      "linkingText": [
+        "insert"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://w3c.github.io/DOM-Parsing/#dependencies",
+        "title": "Dependencies",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-replace",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-replace",
+      "linkingText": [
+        "replace"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://w3c.github.io/DOM-Parsing/#dependencies",
+        "title": "Dependencies",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-replace-all",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-replace-all",
+      "linkingText": [
+        "replace all"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://w3c.github.io/DOM-Parsing/#dependencies",
+        "title": "Dependencies",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-tree-order",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-tree-order",
+      "linkingText": [
+        "tree order"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://w3c.github.io/DOM-Parsing/#dependencies",
+        "title": "Dependencies",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-start-node",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-start-node",
+      "linkingText": [
+        "start node"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://w3c.github.io/DOM-Parsing/#dependencies",
+        "title": "Dependencies",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-url",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-url",
+      "linkingText": [
+        "URL"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://w3c.github.io/DOM-Parsing/#dependencies",
+        "title": "Dependencies",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-xml-document",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-xml-document",
+      "linkingText": [
+        "XML document"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://w3c.github.io/DOM-Parsing/#dependencies",
+        "title": "Dependencies",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-attribute",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-attribute",
+      "linkingText": [
+        "attribute",
+        "Attr"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://w3c.github.io/DOM-Parsing/#dependencies",
+        "title": "Dependencies",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-attr-localname",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-attr-localname",
+      "linkingText": [
+        "attr localName",
+        "attr.localName"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://w3c.github.io/DOM-Parsing/#dependencies",
+        "title": "Dependencies",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-namespaceuri",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-namespaceuri",
+      "linkingText": [
+        "namespaceURI",
+        "attr.namespaceURI"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://w3c.github.io/DOM-Parsing/#dependencies",
+        "title": "Dependencies",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-prefix",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-prefix",
+      "linkingText": [
+        "prefix",
+        "attr.prefix"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://w3c.github.io/DOM-Parsing/#dependencies",
+        "title": "Dependencies",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-value",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-value",
+      "linkingText": [
+        "value",
+        "attr.value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://w3c.github.io/DOM-Parsing/#dependencies",
+        "title": "Dependencies",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-data",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-data",
+      "linkingText": [
+        "data"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://w3c.github.io/DOM-Parsing/#dependencies",
+        "title": "Dependencies",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-comment",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-comment",
+      "linkingText": [
+        "Comment"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://w3c.github.io/DOM-Parsing/#dependencies",
+        "title": "Dependencies",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-document",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-document",
+      "linkingText": [
+        "Document"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://w3c.github.io/DOM-Parsing/#dependencies",
+        "title": "Dependencies",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-doctype",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-doctype",
+      "linkingText": [
+        "doctype"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://w3c.github.io/DOM-Parsing/#dependencies",
+        "title": "Dependencies",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-documentelement",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-documentelement",
+      "linkingText": [
+        "documentElement"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://w3c.github.io/DOM-Parsing/#dependencies",
+        "title": "Dependencies",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-documenttype",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-documenttype",
+      "linkingText": [
+        "DocumentType"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://w3c.github.io/DOM-Parsing/#dependencies",
+        "title": "Dependencies",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-doctype-name",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-doctype-name",
+      "linkingText": [
+        "doctype name",
+        "doctype.name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://w3c.github.io/DOM-Parsing/#dependencies",
+        "title": "Dependencies",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-publicid",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-publicid",
+      "linkingText": [
+        "publicId"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://w3c.github.io/DOM-Parsing/#dependencies",
+        "title": "Dependencies",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-systemid",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-systemid",
+      "linkingText": [
+        "systemId"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://w3c.github.io/DOM-Parsing/#dependencies",
+        "title": "Dependencies",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-documentfragment",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-documentfragment",
+      "linkingText": [
+        "DocumentFragment"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://w3c.github.io/DOM-Parsing/#dependencies",
+        "title": "Dependencies",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-element",
+      "href": "https://w3c.github.io/DOM-Parsing/#dom-element",
+      "linkingText": [
+        "Element",
+        "Elements"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://w3c.github.io/DOM-Parsing/#dependencies",
+        "title": "Dependencies",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-attributes",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-attributes",
+      "linkingText": [
+        "attributes",
+        "attribute list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://w3c.github.io/DOM-Parsing/#dependencies",
+        "title": "Dependencies",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-localname",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-localname",
+      "linkingText": [
+        "localName",
+        "element.localName"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://w3c.github.io/DOM-Parsing/#dependencies",
+        "title": "Dependencies",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-element-namespaceuri",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-element-namespaceuri",
+      "linkingText": [
+        "element.namespaceURI"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://w3c.github.io/DOM-Parsing/#dependencies",
+        "title": "Dependencies",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-element-prefix",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-element-prefix",
+      "linkingText": [
+        "element.prefix"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://w3c.github.io/DOM-Parsing/#dependencies",
+        "title": "Dependencies",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-setattribute",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-setattribute",
+      "linkingText": [
+        "setAttribute"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://w3c.github.io/DOM-Parsing/#dependencies",
+        "title": "Dependencies",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-node",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-node",
+      "linkingText": [
+        "Node",
+        "Nodes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://w3c.github.io/DOM-Parsing/#dependencies",
+        "title": "Dependencies",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-processinginstruction",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-processinginstruction",
+      "linkingText": [
+        "ProcessingInstruction"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://w3c.github.io/DOM-Parsing/#dependencies",
+        "title": "Dependencies",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-target",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-target",
+      "linkingText": [
+        "target"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://w3c.github.io/DOM-Parsing/#dependencies",
+        "title": "Dependencies",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-range",
+      "href": "https://w3c.github.io/DOM-Parsing/#dom-range",
+      "linkingText": [
+        "Range"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://w3c.github.io/DOM-Parsing/#dependencies",
+        "title": "Dependencies",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-text",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-text",
+      "linkingText": [
+        "Text"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://w3c.github.io/DOM-Parsing/#dependencies",
+        "title": "Dependencies",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-domexception",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-domexception",
+      "linkingText": [
+        "DOMException"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://w3c.github.io/DOM-Parsing/#dependencies",
+        "title": "Dependencies",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-invalidstateerror",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-invalidstateerror",
+      "linkingText": [
+        "InvalidStateError"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://w3c.github.io/DOM-Parsing/#dependencies",
+        "title": "Dependencies",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-nomodificationallowederror",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-nomodificationallowederror",
+      "linkingText": [
+        "NoModificationAllowedError"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://w3c.github.io/DOM-Parsing/#dependencies",
+        "title": "Dependencies",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-syntaxerror",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-syntaxerror",
+      "linkingText": [
+        "SyntaxError"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://w3c.github.io/DOM-Parsing/#dependencies",
+        "title": "Dependencies",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-xmldocument",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-xmldocument",
+      "linkingText": [
+        "XMLDocument"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://w3c.github.io/DOM-Parsing/#dependencies",
+        "title": "Dependencies",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-shadowroot",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-shadowroot",
+      "linkingText": [
+        "ShadowRoot"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://w3c.github.io/DOM-Parsing/#dependencies",
+        "title": "Dependencies",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-attvalue",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-attvalue",
+      "linkingText": [
+        "AttValue"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://w3c.github.io/DOM-Parsing/#dependencies",
+        "title": "Dependencies",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-char",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-char",
+      "linkingText": [
+        "Char"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://w3c.github.io/DOM-Parsing/#dependencies",
+        "title": "Dependencies",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-emptyelemtag",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-emptyelemtag",
+      "linkingText": [
+        "EmptyElemTag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://w3c.github.io/DOM-Parsing/#dependencies",
+        "title": "Dependencies",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-name",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-name",
+      "linkingText": [
+        "Name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://w3c.github.io/DOM-Parsing/#dependencies",
+        "title": "Dependencies",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-pubidchar",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-pubidchar",
+      "linkingText": [
+        "PubidChar"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://w3c.github.io/DOM-Parsing/#dependencies",
+        "title": "Dependencies",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-empty-element-tag",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-empty-element-tag",
+      "linkingText": [
+        "empty-element tag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://w3c.github.io/DOM-Parsing/#dependencies",
+        "title": "Dependencies",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-typeerror",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-typeerror",
+      "linkingText": [
+        "TypeError"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://w3c.github.io/DOM-Parsing/#dependencies",
+        "title": "Dependencies",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-legacynulltoemptystring",
+      "href": "https://w3c.github.io/DOM-Parsing/#dfn-legacynulltoemptystring",
+      "linkingText": [
+        "LegacyNullToEmptyString",
+        "[LegacyNullToEmptyString]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://w3c.github.io/DOM-Parsing/#dependencies",
+        "title": "Dependencies",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    }
+  ]
+}

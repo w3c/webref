@@ -1,0 +1,223 @@
+{
+  "name": "PictureInPictureWindow",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Picture-in-Picture",
+      "url": "https://www.w3.org/TR/picture-in-picture/"
+    },
+    "fragment": "[Exposed=Window]\ninterface PictureInPictureWindow : EventTarget {\n  readonly attribute long width;\n  readonly attribute long height;\n\n  attribute EventHandler onresize;\n};",
+    "href": "https://w3c.github.io/picture-in-picture/#pictureinpicturewindow"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "EventTarget",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=*]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+      "href": "https://dom.spec.whatwg.org/#eventtarget"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/picture-in-picture/": [
+      {
+        "id": "pictureinpicturewindow",
+        "href": "https://w3c.github.io/picture-in-picture/#pictureinpicturewindow",
+        "linkingText": [
+          "PictureInPictureWindow"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-picture-in-picture-window",
+          "href": "https://w3c.github.io/picture-in-picture/#interface-picture-in-picture-window",
+          "title": "Interface PictureInPictureWindow",
+          "number": "4.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-pictureinpicturewindow-width",
+        "href": "https://w3c.github.io/picture-in-picture/#dom-pictureinpicturewindow-width",
+        "linkingText": [
+          "width"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "PictureInPictureWindow"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-picture-in-picture-window",
+          "href": "https://w3c.github.io/picture-in-picture/#interface-picture-in-picture-window",
+          "title": "Interface PictureInPictureWindow",
+          "number": "4.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-pictureinpicturewindow-height",
+        "href": "https://w3c.github.io/picture-in-picture/#dom-pictureinpicturewindow-height",
+        "linkingText": [
+          "height"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "PictureInPictureWindow"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-picture-in-picture-window",
+          "href": "https://w3c.github.io/picture-in-picture/#interface-picture-in-picture-window",
+          "title": "Interface PictureInPictureWindow",
+          "number": "4.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-pictureinpicturewindow-onresize",
+        "href": "https://w3c.github.io/picture-in-picture/#dom-pictureinpicturewindow-onresize",
+        "linkingText": [
+          "onresize"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "PictureInPictureWindow"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-picture-in-picture-window",
+          "href": "https://w3c.github.io/picture-in-picture/#interface-picture-in-picture-window",
+          "title": "Interface PictureInPictureWindow",
+          "number": "4.4"
+        },
+        "definedIn": "pre"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "eventtarget",
+        "href": "https://dom.spec.whatwg.org/#eventtarget",
+        "linkingText": [
+          "EventTarget"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventtarget-eventtarget",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-eventtarget",
+        "linkingText": [
+          "EventTarget()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-addeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-addeventlistener",
+        "linkingText": [
+          "addEventListener(type, callback, options)",
+          "addEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-removeeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-removeeventlistener",
+        "linkingText": [
+          "removeEventListener(type, callback, options)",
+          "removeEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-dispatchevent",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-dispatchevent",
+        "linkingText": [
+          "dispatchEvent(event)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

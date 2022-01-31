@@ -1,0 +1,11 @@
+// Source: Encoding Standard (https://www.w3.org/TR/encoding/)
+[Exposed=*]
+interface TextEncoderStream {
+  constructor();
+};
+
+// Source: Encoding Standard (https://www.w3.org/TR/encoding/)
+TextEncoderStream includes TextEncoderCommon;
+
+// Source: Encoding Standard (https://www.w3.org/TR/encoding/)
+TextEncoderStream includes GenericTransformStream;

@@ -1,0 +1,168 @@
+{
+  "name": "PerformanceNavigation",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Navigation Timing Level 2",
+      "url": "https://www.w3.org/TR/navigation-timing-2/"
+    },
+    "fragment": "[Exposed=Window]\ninterface PerformanceNavigation {\n  const unsigned short TYPE_NAVIGATE = 0;\n  const unsigned short TYPE_RELOAD = 1;\n  const unsigned short TYPE_BACK_FORWARD = 2;\n  const unsigned short TYPE_RESERVED = 255;\n  readonly attribute unsigned short type;\n  readonly attribute unsigned short redirectCount;\n  [Default] object toJSON();\n};",
+    "href": "https://w3c.github.io/navigation-timing/#dom-performancenavigation"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/navigation-timing-2/": [
+      {
+        "id": "dom-performancenavigation",
+        "href": "https://w3c.github.io/navigation-timing/#dom-performancenavigation",
+        "linkingText": [
+          "PerformanceNavigation"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-performancenavigation-interface",
+          "href": "https://w3c.github.io/navigation-timing/#the-performancenavigation-interface",
+          "title": "The PerformanceNavigation interface",
+          "number": "5.3.2"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-performancenavigation-type_navigate",
+        "href": "https://w3c.github.io/navigation-timing/#dom-performancenavigation-type_navigate",
+        "linkingText": [
+          "TYPE_NAVIGATE"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "PerformanceNavigation"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-performancenavigation-interface",
+          "href": "https://w3c.github.io/navigation-timing/#the-performancenavigation-interface",
+          "title": "The PerformanceNavigation interface",
+          "number": "5.3.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-performancenavigation-type_reload",
+        "href": "https://w3c.github.io/navigation-timing/#dom-performancenavigation-type_reload",
+        "linkingText": [
+          "TYPE_RELOAD"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "PerformanceNavigation"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-performancenavigation-interface",
+          "href": "https://w3c.github.io/navigation-timing/#the-performancenavigation-interface",
+          "title": "The PerformanceNavigation interface",
+          "number": "5.3.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-performancenavigation-type_back_forward",
+        "href": "https://w3c.github.io/navigation-timing/#dom-performancenavigation-type_back_forward",
+        "linkingText": [
+          "TYPE_BACK_FORWARD"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "PerformanceNavigation"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-performancenavigation-interface",
+          "href": "https://w3c.github.io/navigation-timing/#the-performancenavigation-interface",
+          "title": "The PerformanceNavigation interface",
+          "number": "5.3.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-performancenavigation-type_reserved",
+        "href": "https://w3c.github.io/navigation-timing/#dom-performancenavigation-type_reserved",
+        "linkingText": [
+          "TYPE_RESERVED"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "PerformanceNavigation"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-performancenavigation-interface",
+          "href": "https://w3c.github.io/navigation-timing/#the-performancenavigation-interface",
+          "title": "The PerformanceNavigation interface",
+          "number": "5.3.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-performancenavigation-type",
+        "href": "https://w3c.github.io/navigation-timing/#dom-performancenavigation-type",
+        "linkingText": [
+          "type"
+        ],
+        "localLinkingText": [
+          "PerformanceNavigation.type"
+        ],
+        "type": "attribute",
+        "for": [
+          "PerformanceNavigation"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-performancenavigation-interface",
+          "href": "https://w3c.github.io/navigation-timing/#the-performancenavigation-interface",
+          "title": "The PerformanceNavigation interface",
+          "number": "5.3.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-performancenavigation-redirectcount",
+        "href": "https://w3c.github.io/navigation-timing/#dom-performancenavigation-redirectcount",
+        "linkingText": [
+          "redirectCount"
+        ],
+        "localLinkingText": [
+          "PerformanceNavigation.redirectCount"
+        ],
+        "type": "attribute",
+        "for": [
+          "PerformanceNavigation"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-performancenavigation-interface",
+          "href": "https://w3c.github.io/navigation-timing/#the-performancenavigation-interface",
+          "title": "The PerformanceNavigation interface",
+          "number": "5.3.2"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

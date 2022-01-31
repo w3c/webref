@@ -1,0 +1,113 @@
+{
+  "name": "WindowPostMessageOptions",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "HTML Standard",
+      "url": "https://html.spec.whatwg.org/multipage/"
+    },
+    "fragment": "dictionary WindowPostMessageOptions : StructuredSerializeOptions {\n  USVString targetOrigin = \"/\";\n};",
+    "href": "https://html.spec.whatwg.org/multipage/window-object.html#windowpostmessageoptions"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "StructuredSerializeOptions",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "HTML Standard",
+        "url": "https://html.spec.whatwg.org/multipage/"
+      },
+      "fragment": "dictionary StructuredSerializeOptions {\n  sequence<object> transfer = [];\n};",
+      "href": "https://html.spec.whatwg.org/multipage/web-messaging.html#structuredserializeoptions"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://html.spec.whatwg.org/multipage/": [
+      {
+        "id": "windowpostmessageoptions",
+        "href": "https://html.spec.whatwg.org/multipage/window-object.html#windowpostmessageoptions",
+        "linkingText": [
+          "WindowPostMessageOptions"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-window-object",
+          "href": "https://html.spec.whatwg.org/multipage/window-object.html#the-window-object",
+          "title": "The Window object",
+          "number": "7.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-windowpostmessageoptions-targetorigin",
+        "href": "https://html.spec.whatwg.org/multipage/window-object.html#dom-windowpostmessageoptions-targetorigin",
+        "linkingText": [
+          "targetOrigin"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "WindowPostMessageOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-window-object",
+          "href": "https://html.spec.whatwg.org/multipage/window-object.html#the-window-object",
+          "title": "The Window object",
+          "number": "7.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "structuredserializeoptions",
+        "href": "https://html.spec.whatwg.org/multipage/web-messaging.html#structuredserializeoptions",
+        "linkingText": [
+          "StructuredSerializeOptions"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "message-ports",
+          "href": "https://html.spec.whatwg.org/multipage/web-messaging.html#message-ports",
+          "title": "Message ports",
+          "number": "9.5.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-structuredserializeoptions-transfer",
+        "href": "https://html.spec.whatwg.org/multipage/web-messaging.html#dom-structuredserializeoptions-transfer",
+        "linkingText": [
+          "transfer"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "StructuredSerializeOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "message-ports",
+          "href": "https://html.spec.whatwg.org/multipage/web-messaging.html#message-ports",
+          "title": "Message ports",
+          "number": "9.5.3"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

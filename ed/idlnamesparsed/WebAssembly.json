@@ -1,0 +1,177 @@
+{
+  "name": "WebAssembly",
+  "type": "namespace",
+  "defined": {
+    "spec": {
+      "title": "WebAssembly JavaScript Interface",
+      "url": "https://www.w3.org/TR/wasm-js-api-1/"
+    },
+    "fragment": "[Exposed=(Window,Worker,Worklet)]\nnamespace WebAssembly {\n    boolean validate(BufferSource bytes);\n    Promise<Module> compile(BufferSource bytes);\n\n    Promise<WebAssemblyInstantiatedSource> instantiate(\n        BufferSource bytes, optional object importObject);\n\n    Promise<Instance> instantiate(\n        Module moduleObject, optional object importObject);\n};",
+    "href": "https://webassembly.github.io/spec/js-api/#namespacedef-webassembly"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "WebAssembly Web API",
+        "url": "https://www.w3.org/TR/wasm-web-api-1/"
+      },
+      "fragment": "[Exposed=(Window,Worker)]\npartial namespace WebAssembly {\n  Promise<Module> compileStreaming(Promise<Response> source);\n  Promise<WebAssemblyInstantiatedSource> instantiateStreaming(\n      Promise<Response> source, optional object importObject);\n};"
+    }
+  ],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/wasm-js-api-1/": [
+      {
+        "id": "namespacedef-webassembly",
+        "href": "https://webassembly.github.io/spec/js-api/#namespacedef-webassembly",
+        "linkingText": [
+          "WebAssembly"
+        ],
+        "localLinkingText": [],
+        "type": "namespace",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "webassembly-namespace",
+          "href": "https://webassembly.github.io/spec/js-api/#webassembly-namespace",
+          "title": "The WebAssembly Namespace",
+          "number": "4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-webassembly-validate",
+        "href": "https://webassembly.github.io/spec/js-api/#dom-webassembly-validate",
+        "linkingText": [
+          "validate(bytes)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "WebAssembly"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "webassembly-namespace",
+          "href": "https://webassembly.github.io/spec/js-api/#webassembly-namespace",
+          "title": "The WebAssembly Namespace",
+          "number": "4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-webassembly-compile",
+        "href": "https://webassembly.github.io/spec/js-api/#dom-webassembly-compile",
+        "linkingText": [
+          "compile(bytes)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "WebAssembly"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "webassembly-namespace",
+          "href": "https://webassembly.github.io/spec/js-api/#webassembly-namespace",
+          "title": "The WebAssembly Namespace",
+          "number": "4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-webassembly-instantiate",
+        "href": "https://webassembly.github.io/spec/js-api/#dom-webassembly-instantiate",
+        "linkingText": [
+          "instantiate(bytes, importObject)",
+          "instantiate(bytes)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "WebAssembly"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "webassembly-namespace",
+          "href": "https://webassembly.github.io/spec/js-api/#webassembly-namespace",
+          "title": "The WebAssembly Namespace",
+          "number": "4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-webassembly-instantiate-moduleobject-importobject",
+        "href": "https://webassembly.github.io/spec/js-api/#dom-webassembly-instantiate-moduleobject-importobject",
+        "linkingText": [
+          "instantiate(moduleObject, importObject)",
+          "instantiate(moduleObject)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "WebAssembly"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "webassembly-namespace",
+          "href": "https://webassembly.github.io/spec/js-api/#webassembly-namespace",
+          "title": "The WebAssembly Namespace",
+          "number": "4"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://www.w3.org/TR/wasm-web-api-1/": [
+      {
+        "id": "dom-webassembly-compilestreaming",
+        "href": "https://webassembly.github.io/spec/web-api/#dom-webassembly-compilestreaming",
+        "linkingText": [
+          "compileStreaming(source)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "WebAssembly"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "streaming-modules",
+          "href": "https://webassembly.github.io/spec/web-api/#streaming-modules",
+          "title": "Streaming Module Compilation and Instantiation",
+          "number": "1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-webassembly-instantiatestreaming",
+        "href": "https://webassembly.github.io/spec/web-api/#dom-webassembly-instantiatestreaming",
+        "linkingText": [
+          "instantiateStreaming(source, importObject)",
+          "instantiateStreaming(source)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "WebAssembly"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "streaming-modules",
+          "href": "https://webassembly.github.io/spec/web-api/#streaming-modules",
+          "title": "Streaming Module Compilation and Instantiation",
+          "number": "1"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

@@ -1,0 +1,228 @@
+{
+  "name": "CSSStyleDeclaration",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "CSS Object Model (CSSOM)",
+      "url": "https://www.w3.org/TR/cssom-1/"
+    },
+    "fragment": "[Exposed=Window]\ninterface CSSStyleDeclaration {\n  [CEReactions] attribute CSSOMString cssText;\n  readonly attribute unsigned long length;\n  getter CSSOMString item(unsigned long index);\n  CSSOMString getPropertyValue(CSSOMString property);\n  CSSOMString getPropertyPriority(CSSOMString property);\n  [CEReactions] undefined setProperty(CSSOMString property, [LegacyNullToEmptyString] CSSOMString value, optional [LegacyNullToEmptyString] CSSOMString priority = \"\");\n  [CEReactions] CSSOMString removeProperty(CSSOMString property);\n  readonly attribute CSSRule? parentRule;\n  [CEReactions] attribute [LegacyNullToEmptyString] CSSOMString cssFloat;\n};",
+    "href": "https://drafts.csswg.org/cssom/#cssstyledeclaration"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/cssom-1/": [
+      {
+        "id": "cssstyledeclaration",
+        "href": "https://drafts.csswg.org/cssom/#cssstyledeclaration",
+        "linkingText": [
+          "CSSStyleDeclaration"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-cssstyledeclaration-interface",
+          "href": "https://drafts.csswg.org/cssom/#the-cssstyledeclaration-interface",
+          "title": "The CSSStyleDeclaration Interface",
+          "number": "6.6.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-cssstyledeclaration-csstext",
+        "href": "https://drafts.csswg.org/cssom/#dom-cssstyledeclaration-csstext",
+        "linkingText": [
+          "cssText"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "CSSStyleDeclaration"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-cssstyledeclaration-interface",
+          "href": "https://drafts.csswg.org/cssom/#the-cssstyledeclaration-interface",
+          "title": "The CSSStyleDeclaration Interface",
+          "number": "6.6.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-cssstyledeclaration-length",
+        "href": "https://drafts.csswg.org/cssom/#dom-cssstyledeclaration-length",
+        "linkingText": [
+          "length"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "CSSStyleDeclaration"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-cssstyledeclaration-interface",
+          "href": "https://drafts.csswg.org/cssom/#the-cssstyledeclaration-interface",
+          "title": "The CSSStyleDeclaration Interface",
+          "number": "6.6.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-cssstyledeclaration-item",
+        "href": "https://drafts.csswg.org/cssom/#dom-cssstyledeclaration-item",
+        "linkingText": [
+          "item(index)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSSStyleDeclaration"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-cssstyledeclaration-interface",
+          "href": "https://drafts.csswg.org/cssom/#the-cssstyledeclaration-interface",
+          "title": "The CSSStyleDeclaration Interface",
+          "number": "6.6.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-cssstyledeclaration-getpropertyvalue",
+        "href": "https://drafts.csswg.org/cssom/#dom-cssstyledeclaration-getpropertyvalue",
+        "linkingText": [
+          "getPropertyValue(property)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSSStyleDeclaration"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-cssstyledeclaration-interface",
+          "href": "https://drafts.csswg.org/cssom/#the-cssstyledeclaration-interface",
+          "title": "The CSSStyleDeclaration Interface",
+          "number": "6.6.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-cssstyledeclaration-getpropertypriority",
+        "href": "https://drafts.csswg.org/cssom/#dom-cssstyledeclaration-getpropertypriority",
+        "linkingText": [
+          "getPropertyPriority(property)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSSStyleDeclaration"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-cssstyledeclaration-interface",
+          "href": "https://drafts.csswg.org/cssom/#the-cssstyledeclaration-interface",
+          "title": "The CSSStyleDeclaration Interface",
+          "number": "6.6.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-cssstyledeclaration-setproperty",
+        "href": "https://drafts.csswg.org/cssom/#dom-cssstyledeclaration-setproperty",
+        "linkingText": [
+          "setProperty(property, value, priority)",
+          "setProperty(property, value)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSSStyleDeclaration"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-cssstyledeclaration-interface",
+          "href": "https://drafts.csswg.org/cssom/#the-cssstyledeclaration-interface",
+          "title": "The CSSStyleDeclaration Interface",
+          "number": "6.6.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-cssstyledeclaration-removeproperty",
+        "href": "https://drafts.csswg.org/cssom/#dom-cssstyledeclaration-removeproperty",
+        "linkingText": [
+          "removeProperty(property)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSSStyleDeclaration"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-cssstyledeclaration-interface",
+          "href": "https://drafts.csswg.org/cssom/#the-cssstyledeclaration-interface",
+          "title": "The CSSStyleDeclaration Interface",
+          "number": "6.6.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-cssstyledeclaration-parentrule",
+        "href": "https://drafts.csswg.org/cssom/#dom-cssstyledeclaration-parentrule",
+        "linkingText": [
+          "parentRule"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "CSSStyleDeclaration"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-cssstyledeclaration-interface",
+          "href": "https://drafts.csswg.org/cssom/#the-cssstyledeclaration-interface",
+          "title": "The CSSStyleDeclaration Interface",
+          "number": "6.6.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-cssstyledeclaration-cssfloat",
+        "href": "https://drafts.csswg.org/cssom/#dom-cssstyledeclaration-cssfloat",
+        "linkingText": [
+          "cssFloat"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "CSSStyleDeclaration"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-cssstyledeclaration-interface",
+          "href": "https://drafts.csswg.org/cssom/#the-cssstyledeclaration-interface",
+          "title": "The CSSStyleDeclaration Interface",
+          "number": "6.6.1"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

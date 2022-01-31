@@ -1,0 +1,1338 @@
+{
+  "spec": {
+    "title": "Web Locks API",
+    "url": "https://w3c.github.io/web-locks/"
+  },
+  "dfns": [
+    {
+      "id": "lock-task-queue",
+      "href": "https://w3c.github.io/web-locks/#lock-task-queue",
+      "linkingText": [
+        "lock task queue"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "concepts",
+        "href": "https://w3c.github.io/web-locks/#concepts",
+        "title": "Concepts",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "web-locks-tasks-source",
+      "href": "https://w3c.github.io/web-locks/#web-locks-tasks-source",
+      "linkingText": [
+        "web locks tasks source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "concepts",
+        "href": "https://w3c.github.io/web-locks/#concepts",
+        "title": "Concepts",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "resource-name",
+      "href": "https://w3c.github.io/web-locks/#resource-name",
+      "linkingText": [
+        "resource name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "resource-names",
+        "href": "https://w3c.github.io/web-locks/#resource-names",
+        "title": "Resources Names",
+        "number": "2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "lock-manager",
+      "href": "https://w3c.github.io/web-locks/#lock-manager",
+      "linkingText": [
+        "lock manager"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "lock-managers",
+        "href": "https://w3c.github.io/web-locks/#lock-managers",
+        "title": "Lock Managers",
+        "number": "2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "obtain-a-lock-manager",
+      "href": "https://w3c.github.io/web-locks/#obtain-a-lock-manager",
+      "linkingText": [
+        "obtain a lock manager"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "lock-managers",
+        "href": "https://w3c.github.io/web-locks/#lock-managers",
+        "title": "Lock Managers",
+        "number": "2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "mode",
+      "href": "https://w3c.github.io/web-locks/#mode",
+      "linkingText": [
+        "mode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "modes-scheduling",
+        "href": "https://w3c.github.io/web-locks/#modes-scheduling",
+        "title": "Modes and Scheduling",
+        "number": "2.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "lock-concept",
+      "href": "https://w3c.github.io/web-locks/#lock-concept",
+      "linkingText": [
+        "lock-concept"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "concept-lock",
+        "href": "https://w3c.github.io/web-locks/#concept-lock",
+        "title": "Locks",
+        "number": "2.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "lock-concept-agent",
+      "href": "https://w3c.github.io/web-locks/#lock-concept-agent",
+      "linkingText": [
+        "agent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "lock-concept"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "concept-lock",
+        "href": "https://w3c.github.io/web-locks/#concept-lock",
+        "title": "Locks",
+        "number": "2.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "lock-concept-clientid",
+      "href": "https://w3c.github.io/web-locks/#lock-concept-clientid",
+      "linkingText": [
+        "clientId"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "lock-concept"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "concept-lock",
+        "href": "https://w3c.github.io/web-locks/#concept-lock",
+        "title": "Locks",
+        "number": "2.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "lock-concept-manager",
+      "href": "https://w3c.github.io/web-locks/#lock-concept-manager",
+      "linkingText": [
+        "manager"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "lock-concept"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "concept-lock",
+        "href": "https://w3c.github.io/web-locks/#concept-lock",
+        "title": "Locks",
+        "number": "2.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "lock-concept-name",
+      "href": "https://w3c.github.io/web-locks/#lock-concept-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "lock-concept"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "concept-lock",
+        "href": "https://w3c.github.io/web-locks/#concept-lock",
+        "title": "Locks",
+        "number": "2.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "lock-concept-mode",
+      "href": "https://w3c.github.io/web-locks/#lock-concept-mode",
+      "linkingText": [
+        "mode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "lock-concept"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "concept-lock",
+        "href": "https://w3c.github.io/web-locks/#concept-lock",
+        "title": "Locks",
+        "number": "2.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "lock-concept-waiting-promise",
+      "href": "https://w3c.github.io/web-locks/#lock-concept-waiting-promise",
+      "linkingText": [
+        "waiting promise"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "lock-concept"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "concept-lock",
+        "href": "https://w3c.github.io/web-locks/#concept-lock",
+        "title": "Locks",
+        "number": "2.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "lock-concept-released-promise",
+      "href": "https://w3c.github.io/web-locks/#lock-concept-released-promise",
+      "linkingText": [
+        "released promise"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "lock-concept"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "concept-lock",
+        "href": "https://w3c.github.io/web-locks/#concept-lock",
+        "title": "Locks",
+        "number": "2.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "lock-manager-held-lock-set",
+      "href": "https://w3c.github.io/web-locks/#lock-manager-held-lock-set",
+      "linkingText": [
+        "held lock set"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "lock manager"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://w3c.github.io/web-locks/#title",
+        "title": "Web Locks API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "lock-request",
+      "href": "https://w3c.github.io/web-locks/#lock-request",
+      "linkingText": [
+        "lock request"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "concept-lock-request",
+        "href": "https://w3c.github.io/web-locks/#concept-lock-request",
+        "title": "Lock Requests",
+        "number": "2.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "lock-request-agent",
+      "href": "https://w3c.github.io/web-locks/#lock-request-agent",
+      "linkingText": [
+        "agent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "lock request"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "concept-lock-request",
+        "href": "https://w3c.github.io/web-locks/#concept-lock-request",
+        "title": "Lock Requests",
+        "number": "2.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "lock-request-clientid",
+      "href": "https://w3c.github.io/web-locks/#lock-request-clientid",
+      "linkingText": [
+        "clientId"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "lock request"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "concept-lock-request",
+        "href": "https://w3c.github.io/web-locks/#concept-lock-request",
+        "title": "Lock Requests",
+        "number": "2.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "lock-request-manager",
+      "href": "https://w3c.github.io/web-locks/#lock-request-manager",
+      "linkingText": [
+        "manager"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "lock request"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "concept-lock-request",
+        "href": "https://w3c.github.io/web-locks/#concept-lock-request",
+        "title": "Lock Requests",
+        "number": "2.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "lock-request-name",
+      "href": "https://w3c.github.io/web-locks/#lock-request-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "lock request"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "concept-lock-request",
+        "href": "https://w3c.github.io/web-locks/#concept-lock-request",
+        "title": "Lock Requests",
+        "number": "2.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "lock-request-mode",
+      "href": "https://w3c.github.io/web-locks/#lock-request-mode",
+      "linkingText": [
+        "mode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "lock request"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "concept-lock-request",
+        "href": "https://w3c.github.io/web-locks/#concept-lock-request",
+        "title": "Lock Requests",
+        "number": "2.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "lock-request-callback",
+      "href": "https://w3c.github.io/web-locks/#lock-request-callback",
+      "linkingText": [
+        "callback"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "lock request"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "concept-lock-request",
+        "href": "https://w3c.github.io/web-locks/#concept-lock-request",
+        "title": "Lock Requests",
+        "number": "2.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "lock-request-promise",
+      "href": "https://w3c.github.io/web-locks/#lock-request-promise",
+      "linkingText": [
+        "promise"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "lock request"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "concept-lock-request",
+        "href": "https://w3c.github.io/web-locks/#concept-lock-request",
+        "title": "Lock Requests",
+        "number": "2.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "lock-request-signal",
+      "href": "https://w3c.github.io/web-locks/#lock-request-signal",
+      "linkingText": [
+        "signal"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "lock request"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "concept-lock-request",
+        "href": "https://w3c.github.io/web-locks/#concept-lock-request",
+        "title": "Lock Requests",
+        "number": "2.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "lock-request-queue",
+      "href": "https://w3c.github.io/web-locks/#lock-request-queue",
+      "linkingText": [
+        "lock request queue"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "concept-lock-request",
+        "href": "https://w3c.github.io/web-locks/#concept-lock-request",
+        "title": "Lock Requests",
+        "number": "2.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "lock-manager-lock-request-queue-map",
+      "href": "https://w3c.github.io/web-locks/#lock-manager-lock-request-queue-map",
+      "linkingText": [
+        "lock request queue map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "lock manager"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "concept-lock-request",
+        "href": "https://w3c.github.io/web-locks/#concept-lock-request",
+        "title": "Lock Requests",
+        "number": "2.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "get-the-lock-request-queue",
+      "href": "https://w3c.github.io/web-locks/#get-the-lock-request-queue",
+      "linkingText": [
+        "get the lock request queue"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "concept-lock-request",
+        "href": "https://w3c.github.io/web-locks/#concept-lock-request",
+        "title": "Lock Requests",
+        "number": "2.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "grantable",
+      "href": "https://w3c.github.io/web-locks/#grantable",
+      "linkingText": [
+        "grantable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "concept-lock-request",
+        "href": "https://w3c.github.io/web-locks/#concept-lock-request",
+        "title": "Lock Requests",
+        "number": "2.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "terminate-remaining-locks-and-requests",
+      "href": "https://w3c.github.io/web-locks/#terminate-remaining-locks-and-requests",
+      "linkingText": [
+        "terminate remaining locks and requests"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "termination-of-locks",
+        "href": "https://w3c.github.io/web-locks/#termination-of-locks",
+        "title": "Termination of Locks",
+        "number": "2.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "navigatorlocks",
+      "href": "https://w3c.github.io/web-locks/#navigatorlocks",
+      "linkingText": [
+        "NavigatorLocks"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "navigator-mixins",
+        "href": "https://w3c.github.io/web-locks/#navigator-mixins",
+        "title": "Navigator Mixins",
+        "number": "3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-navigatorlocks-locks",
+      "href": "https://w3c.github.io/web-locks/#dom-navigatorlocks-locks",
+      "linkingText": [
+        "locks"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "NavigatorLocks"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "navigator-mixins",
+        "href": "https://w3c.github.io/web-locks/#navigator-mixins",
+        "title": "Navigator Mixins",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "lockmanager",
+      "href": "https://w3c.github.io/web-locks/#lockmanager",
+      "linkingText": [
+        "LockManager"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-lock-manager",
+        "href": "https://w3c.github.io/web-locks/#api-lock-manager",
+        "title": "LockManager class",
+        "number": "3.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-lockmanager-request-name-callback-name",
+      "href": "https://w3c.github.io/web-locks/#dom-lockmanager-request-name-callback-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "LockManager/request(name, callback)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-lock-manager",
+        "href": "https://w3c.github.io/web-locks/#api-lock-manager",
+        "title": "LockManager class",
+        "number": "3.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-lockmanager-request-name-callback-callback",
+      "href": "https://w3c.github.io/web-locks/#dom-lockmanager-request-name-callback-callback",
+      "linkingText": [
+        "callback"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "LockManager/request(name, callback)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-lock-manager",
+        "href": "https://w3c.github.io/web-locks/#api-lock-manager",
+        "title": "LockManager class",
+        "number": "3.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-lockmanager-request-name-options-callback-name",
+      "href": "https://w3c.github.io/web-locks/#dom-lockmanager-request-name-options-callback-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "LockManager/request(name, options, callback)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-lock-manager",
+        "href": "https://w3c.github.io/web-locks/#api-lock-manager",
+        "title": "LockManager class",
+        "number": "3.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-lockmanager-request-name-options-callback-options",
+      "href": "https://w3c.github.io/web-locks/#dom-lockmanager-request-name-options-callback-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "LockManager/request(name, options, callback)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-lock-manager",
+        "href": "https://w3c.github.io/web-locks/#api-lock-manager",
+        "title": "LockManager class",
+        "number": "3.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-lockmanager-request-name-options-callback-callback",
+      "href": "https://w3c.github.io/web-locks/#dom-lockmanager-request-name-options-callback-callback",
+      "linkingText": [
+        "callback"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "LockManager/request(name, options, callback)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-lock-manager",
+        "href": "https://w3c.github.io/web-locks/#api-lock-manager",
+        "title": "LockManager class",
+        "number": "3.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "callbackdef-lockgrantedcallback",
+      "href": "https://w3c.github.io/web-locks/#callbackdef-lockgrantedcallback",
+      "linkingText": [
+        "LockGrantedCallback"
+      ],
+      "localLinkingText": [],
+      "type": "callback",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-lock-manager",
+        "href": "https://w3c.github.io/web-locks/#api-lock-manager",
+        "title": "LockManager class",
+        "number": "3.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-lockgrantedcallback-lock",
+      "href": "https://w3c.github.io/web-locks/#dom-lockgrantedcallback-lock",
+      "linkingText": [
+        "lock"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "LockGrantedCallback"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-lock-manager",
+        "href": "https://w3c.github.io/web-locks/#api-lock-manager",
+        "title": "LockManager class",
+        "number": "3.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "enumdef-lockmode",
+      "href": "https://w3c.github.io/web-locks/#enumdef-lockmode",
+      "linkingText": [
+        "LockMode"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-lock-manager",
+        "href": "https://w3c.github.io/web-locks/#api-lock-manager",
+        "title": "LockManager class",
+        "number": "3.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-lockmode-shared",
+      "href": "https://w3c.github.io/web-locks/#dom-lockmode-shared",
+      "linkingText": [
+        "\"shared\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "LockMode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-lock-manager",
+        "href": "https://w3c.github.io/web-locks/#api-lock-manager",
+        "title": "LockManager class",
+        "number": "3.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-lockmode-exclusive",
+      "href": "https://w3c.github.io/web-locks/#dom-lockmode-exclusive",
+      "linkingText": [
+        "\"exclusive\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "LockMode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-lock-manager",
+        "href": "https://w3c.github.io/web-locks/#api-lock-manager",
+        "title": "LockManager class",
+        "number": "3.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-lockoptions",
+      "href": "https://w3c.github.io/web-locks/#dictdef-lockoptions",
+      "linkingText": [
+        "LockOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-lock-manager",
+        "href": "https://w3c.github.io/web-locks/#api-lock-manager",
+        "title": "LockManager class",
+        "number": "3.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-lockoptions-mode",
+      "href": "https://w3c.github.io/web-locks/#dom-lockoptions-mode",
+      "linkingText": [
+        "mode"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "LockOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-lock-manager",
+        "href": "https://w3c.github.io/web-locks/#api-lock-manager",
+        "title": "LockManager class",
+        "number": "3.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-lockoptions-ifavailable",
+      "href": "https://w3c.github.io/web-locks/#dom-lockoptions-ifavailable",
+      "linkingText": [
+        "ifAvailable"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "LockOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-lock-manager",
+        "href": "https://w3c.github.io/web-locks/#api-lock-manager",
+        "title": "LockManager class",
+        "number": "3.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-lockoptions-steal",
+      "href": "https://w3c.github.io/web-locks/#dom-lockoptions-steal",
+      "linkingText": [
+        "steal"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "LockOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-lock-manager",
+        "href": "https://w3c.github.io/web-locks/#api-lock-manager",
+        "title": "LockManager class",
+        "number": "3.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-lockoptions-signal",
+      "href": "https://w3c.github.io/web-locks/#dom-lockoptions-signal",
+      "linkingText": [
+        "signal"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "LockOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-lock-manager",
+        "href": "https://w3c.github.io/web-locks/#api-lock-manager",
+        "title": "LockManager class",
+        "number": "3.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-lockmanagersnapshot",
+      "href": "https://w3c.github.io/web-locks/#dictdef-lockmanagersnapshot",
+      "linkingText": [
+        "LockManagerSnapshot"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-lock-manager",
+        "href": "https://w3c.github.io/web-locks/#api-lock-manager",
+        "title": "LockManager class",
+        "number": "3.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-lockmanagersnapshot-held",
+      "href": "https://w3c.github.io/web-locks/#dom-lockmanagersnapshot-held",
+      "linkingText": [
+        "held"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "LockManagerSnapshot"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-lock-manager",
+        "href": "https://w3c.github.io/web-locks/#api-lock-manager",
+        "title": "LockManager class",
+        "number": "3.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-lockmanagersnapshot-pending",
+      "href": "https://w3c.github.io/web-locks/#dom-lockmanagersnapshot-pending",
+      "linkingText": [
+        "pending"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "LockManagerSnapshot"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-lock-manager",
+        "href": "https://w3c.github.io/web-locks/#api-lock-manager",
+        "title": "LockManager class",
+        "number": "3.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-lockinfo",
+      "href": "https://w3c.github.io/web-locks/#dictdef-lockinfo",
+      "linkingText": [
+        "LockInfo"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-lock-manager",
+        "href": "https://w3c.github.io/web-locks/#api-lock-manager",
+        "title": "LockManager class",
+        "number": "3.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-lockinfo-name",
+      "href": "https://w3c.github.io/web-locks/#dom-lockinfo-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "LockInfo"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-lock-manager",
+        "href": "https://w3c.github.io/web-locks/#api-lock-manager",
+        "title": "LockManager class",
+        "number": "3.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-lockinfo-mode",
+      "href": "https://w3c.github.io/web-locks/#dom-lockinfo-mode",
+      "linkingText": [
+        "mode"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "LockInfo"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-lock-manager",
+        "href": "https://w3c.github.io/web-locks/#api-lock-manager",
+        "title": "LockManager class",
+        "number": "3.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-lockinfo-clientid",
+      "href": "https://w3c.github.io/web-locks/#dom-lockinfo-clientid",
+      "linkingText": [
+        "clientId"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "LockInfo"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-lock-manager",
+        "href": "https://w3c.github.io/web-locks/#api-lock-manager",
+        "title": "LockManager class",
+        "number": "3.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-lockmanager-request",
+      "href": "https://w3c.github.io/web-locks/#dom-lockmanager-request",
+      "linkingText": [
+        "request(name, callback)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "LockManager"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://w3c.github.io/web-locks/#title",
+        "title": "Web Locks API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-lockmanager-request-name-options-callback",
+      "href": "https://w3c.github.io/web-locks/#dom-lockmanager-request-name-options-callback",
+      "linkingText": [
+        "request(name, options, callback)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "LockManager"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://w3c.github.io/web-locks/#title",
+        "title": "Web Locks API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-lockmanager-query",
+      "href": "https://w3c.github.io/web-locks/#dom-lockmanager-query",
+      "linkingText": [
+        "query()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "LockManager"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://w3c.github.io/web-locks/#title",
+        "title": "Web Locks API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "lock",
+      "href": "https://w3c.github.io/web-locks/#lock",
+      "linkingText": [
+        "Lock"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-lock",
+        "href": "https://w3c.github.io/web-locks/#api-lock",
+        "title": "Lock class",
+        "number": "3.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-lock-name",
+      "href": "https://w3c.github.io/web-locks/#dom-lock-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Lock"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-lock",
+        "href": "https://w3c.github.io/web-locks/#api-lock",
+        "title": "Lock class",
+        "number": "3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-lock-mode",
+      "href": "https://w3c.github.io/web-locks/#dom-lock-mode",
+      "linkingText": [
+        "mode"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Lock"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-lock",
+        "href": "https://w3c.github.io/web-locks/#api-lock",
+        "title": "Lock class",
+        "number": "3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "request-a-lock",
+      "href": "https://w3c.github.io/web-locks/#request-a-lock",
+      "linkingText": [
+        "request a lock"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "algorithm-request-lock",
+        "href": "https://w3c.github.io/web-locks/#algorithm-request-lock",
+        "title": "Request a lock",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "release-the-lock",
+      "href": "https://w3c.github.io/web-locks/#release-the-lock",
+      "linkingText": [
+        "release the lock"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "algorithm-release-lock",
+        "href": "https://w3c.github.io/web-locks/#algorithm-release-lock",
+        "title": "Release a lock",
+        "number": "4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "abort-the-request",
+      "href": "https://w3c.github.io/web-locks/#abort-the-request",
+      "linkingText": [
+        "abort the request"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "algorithm-abort-request",
+        "href": "https://w3c.github.io/web-locks/#algorithm-abort-request",
+        "title": "Abort a request",
+        "number": "4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "signal-to-abort-the-request",
+      "href": "https://w3c.github.io/web-locks/#signal-to-abort-the-request",
+      "linkingText": [
+        "signal to abort the request"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "algorithm-abort-request",
+        "href": "https://w3c.github.io/web-locks/#algorithm-abort-request",
+        "title": "Abort a request",
+        "number": "4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "process-the-lock-request-queue",
+      "href": "https://w3c.github.io/web-locks/#process-the-lock-request-queue",
+      "linkingText": [
+        "process the lock request queue"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "algorithm-process-request",
+        "href": "https://w3c.github.io/web-locks/#algorithm-process-request",
+        "title": "Process a lock request queue for a given resource name",
+        "number": "4.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "snapshot-the-lock-state",
+      "href": "https://w3c.github.io/web-locks/#snapshot-the-lock-state",
+      "linkingText": [
+        "snapshot the lock state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "algorithm-snapshot-state",
+        "href": "https://w3c.github.io/web-locks/#algorithm-snapshot-state",
+        "title": "Snapshot the lock state",
+        "number": "4.5"
+      },
+      "definedIn": "prose"
+    }
+  ]
+}

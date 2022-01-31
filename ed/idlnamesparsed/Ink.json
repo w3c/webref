@@ -1,0 +1,60 @@
+{
+  "name": "Ink",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Ink API",
+      "url": "https://wicg.github.io/ink-enhancement/"
+    },
+    "fragment": "[Exposed=Window]\ninterface Ink {\n    Promise<InkPresenter> requestPresenter(\n        optional InkPresenterParam param = {});\n};",
+    "href": "https://wicg.github.io/ink-enhancement/#ink"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://wicg.github.io/ink-enhancement/": [
+      {
+        "id": "ink",
+        "href": "https://wicg.github.io/ink-enhancement/#ink",
+        "linkingText": [
+          "Ink"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "ink-interface",
+          "href": "https://wicg.github.io/ink-enhancement/#ink-interface",
+          "title": "Ink interface",
+          "number": "3.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-ink-requestpresenter",
+        "href": "https://wicg.github.io/ink-enhancement/#dom-ink-requestpresenter",
+        "linkingText": [
+          "requestPresenter(param)",
+          "requestPresenter()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Ink"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "ink-interface",
+          "href": "https://wicg.github.io/ink-enhancement/#ink-interface",
+          "title": "Ink interface",
+          "number": "3.2"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

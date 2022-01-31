@@ -1,0 +1,351 @@
+{
+  "name": "CookieStore",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Cookie Store API",
+      "url": "https://wicg.github.io/cookie-store/"
+    },
+    "fragment": "[Exposed=(ServiceWorker,Window),\n SecureContext]\ninterface CookieStore : EventTarget {\n  Promise<CookieListItem?> get(USVString name);\n  Promise<CookieListItem?> get(optional CookieStoreGetOptions options = {});\n\n  Promise<CookieList> getAll(USVString name);\n  Promise<CookieList> getAll(optional CookieStoreGetOptions options = {});\n\n  Promise<undefined> set(USVString name, USVString value);\n  Promise<undefined> set(CookieInit options);\n\n  Promise<undefined> delete(USVString name);\n  Promise<undefined> delete(CookieStoreDeleteOptions options);\n\n  [Exposed=Window]\n  attribute EventHandler onchange;\n};",
+    "href": "https://wicg.github.io/cookie-store/#cookiestore"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "EventTarget",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=*]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+      "href": "https://dom.spec.whatwg.org/#eventtarget"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://wicg.github.io/cookie-store/": [
+      {
+        "id": "cookiestore",
+        "href": "https://wicg.github.io/cookie-store/#cookiestore",
+        "linkingText": [
+          "CookieStore"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "CookieStore",
+          "href": "https://wicg.github.io/cookie-store/#CookieStore",
+          "title": "The CookieStore Interface",
+          "number": "3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-cookiestore-get",
+        "href": "https://wicg.github.io/cookie-store/#dom-cookiestore-get",
+        "linkingText": [
+          "get(name)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CookieStore"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "CookieStore-get",
+          "href": "https://wicg.github.io/cookie-store/#CookieStore-get",
+          "title": "The get() method",
+          "number": "3.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-cookiestore-get-options",
+        "href": "https://wicg.github.io/cookie-store/#dom-cookiestore-get-options",
+        "linkingText": [
+          "get(options)",
+          "get()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CookieStore"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "CookieStore-get",
+          "href": "https://wicg.github.io/cookie-store/#CookieStore-get",
+          "title": "The get() method",
+          "number": "3.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-cookiestore-getall",
+        "href": "https://wicg.github.io/cookie-store/#dom-cookiestore-getall",
+        "linkingText": [
+          "getAll(name)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CookieStore"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "CookieStore-getAll",
+          "href": "https://wicg.github.io/cookie-store/#CookieStore-getAll",
+          "title": "The getAll() method",
+          "number": "3.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-cookiestore-getall-options",
+        "href": "https://wicg.github.io/cookie-store/#dom-cookiestore-getall-options",
+        "linkingText": [
+          "getAll(options)",
+          "getAll()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CookieStore"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "CookieStore-getAll",
+          "href": "https://wicg.github.io/cookie-store/#CookieStore-getAll",
+          "title": "The getAll() method",
+          "number": "3.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-cookiestore-set",
+        "href": "https://wicg.github.io/cookie-store/#dom-cookiestore-set",
+        "linkingText": [
+          "set(name, value)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CookieStore"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "CookieStore-set",
+          "href": "https://wicg.github.io/cookie-store/#CookieStore-set",
+          "title": "The set() method",
+          "number": "3.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-cookiestore-set-options",
+        "href": "https://wicg.github.io/cookie-store/#dom-cookiestore-set-options",
+        "linkingText": [
+          "set(options)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CookieStore"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "CookieStore-set",
+          "href": "https://wicg.github.io/cookie-store/#CookieStore-set",
+          "title": "The set() method",
+          "number": "3.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-cookiestore-delete",
+        "href": "https://wicg.github.io/cookie-store/#dom-cookiestore-delete",
+        "linkingText": [
+          "delete(name)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CookieStore"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "CookieStore-delete",
+          "href": "https://wicg.github.io/cookie-store/#CookieStore-delete",
+          "title": "The delete() method",
+          "number": "3.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-cookiestore-delete-options",
+        "href": "https://wicg.github.io/cookie-store/#dom-cookiestore-delete-options",
+        "linkingText": [
+          "delete(options)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CookieStore"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "CookieStore-delete",
+          "href": "https://wicg.github.io/cookie-store/#CookieStore-delete",
+          "title": "The delete() method",
+          "number": "3.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-cookiestore-onchange",
+        "href": "https://wicg.github.io/cookie-store/#dom-cookiestore-onchange",
+        "linkingText": [
+          "onchange"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "CookieStore"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "CookieStore",
+          "href": "https://wicg.github.io/cookie-store/#CookieStore",
+          "title": "The CookieStore Interface",
+          "number": "3"
+        },
+        "definedIn": "pre"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "eventtarget",
+        "href": "https://dom.spec.whatwg.org/#eventtarget",
+        "linkingText": [
+          "EventTarget"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventtarget-eventtarget",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-eventtarget",
+        "linkingText": [
+          "EventTarget()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-addeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-addeventlistener",
+        "linkingText": [
+          "addEventListener(type, callback, options)",
+          "addEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-removeeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-removeeventlistener",
+        "linkingText": [
+          "removeEventListener(type, callback, options)",
+          "removeEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-dispatchevent",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-dispatchevent",
+        "linkingText": [
+          "dispatchEvent(event)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

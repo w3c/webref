@@ -1,0 +1,197 @@
+{
+  "spec": {
+    "title": "Layout Instability API",
+    "url": "https://wicg.github.io/layout-instability/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://wicg.github.io/layout-instability/#title",
+      "level": 1,
+      "title": "Layout Instability API"
+    },
+    {
+      "id": "abstract",
+      "href": "https://wicg.github.io/layout-instability/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "status",
+      "href": "https://wicg.github.io/layout-instability/#status",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://wicg.github.io/layout-instability/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "sec-intro",
+      "href": "https://wicg.github.io/layout-instability/#sec-intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "cumulative-layout-shift",
+      "href": "https://wicg.github.io/layout-instability/#cumulative-layout-shift",
+      "level": 3,
+      "title": "Cumulative Layout Shift (CLS)",
+      "number": "1.1"
+    },
+    {
+      "id": "source-attribution",
+      "href": "https://wicg.github.io/layout-instability/#source-attribution",
+      "level": 3,
+      "title": "Source attribution",
+      "number": "1.2"
+    },
+    {
+      "id": "example",
+      "href": "https://wicg.github.io/layout-instability/#example",
+      "level": 3,
+      "title": "Usage example",
+      "number": "1.3"
+    },
+    {
+      "id": "sec-terminology",
+      "href": "https://wicg.github.io/layout-instability/#sec-terminology",
+      "level": 2,
+      "title": "Terminology",
+      "number": "2"
+    },
+    {
+      "id": "sec-basic-concepts",
+      "href": "https://wicg.github.io/layout-instability/#sec-basic-concepts",
+      "level": 3,
+      "title": "Basic Concepts",
+      "number": "2.1"
+    },
+    {
+      "id": "sec-unstable-nodes",
+      "href": "https://wicg.github.io/layout-instability/#sec-unstable-nodes",
+      "level": 3,
+      "title": "Unstable Nodes",
+      "number": "2.2"
+    },
+    {
+      "id": "sec-layout-shift-value",
+      "href": "https://wicg.github.io/layout-instability/#sec-layout-shift-value",
+      "level": 3,
+      "title": "Layout Shift Value",
+      "number": "2.3"
+    },
+    {
+      "id": "sec-input-exclusion",
+      "href": "https://wicg.github.io/layout-instability/#sec-input-exclusion",
+      "level": 3,
+      "title": "Input Exclusion",
+      "number": "2.4"
+    },
+    {
+      "id": "sec-layout-shift",
+      "href": "https://wicg.github.io/layout-instability/#sec-layout-shift",
+      "level": 2,
+      "title": "LayoutShift interface",
+      "number": "3"
+    },
+    {
+      "id": "sec-layout-shift-attribution",
+      "href": "https://wicg.github.io/layout-instability/#sec-layout-shift-attribution",
+      "level": 2,
+      "title": "LayoutShiftAttribution interface",
+      "number": "4"
+    },
+    {
+      "id": "sec-processing-model",
+      "href": "https://wicg.github.io/layout-instability/#sec-processing-model",
+      "level": 2,
+      "title": "Processing model",
+      "number": "5"
+    },
+    {
+      "id": "sec-report-layout-shift",
+      "href": "https://wicg.github.io/layout-instability/#sec-report-layout-shift",
+      "level": 3,
+      "title": "Report the layout shift",
+      "number": "5.1"
+    },
+    {
+      "id": "sec-report-layout-shift-sources",
+      "href": "https://wicg.github.io/layout-instability/#sec-report-layout-shift-sources",
+      "level": 3,
+      "title": "Report the layout shift sources",
+      "number": "5.2"
+    },
+    {
+      "id": "priv-sec",
+      "href": "https://wicg.github.io/layout-instability/#priv-sec",
+      "level": 2,
+      "title": "Security & privacy considerations",
+      "number": "6"
+    },
+    {
+      "id": "w3c-conformance",
+      "href": "https://wicg.github.io/layout-instability/#w3c-conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "w3c-conventions",
+      "href": "https://wicg.github.io/layout-instability/#w3c-conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "w3c-conformant-algorithms",
+      "href": "https://wicg.github.io/layout-instability/#w3c-conformant-algorithms",
+      "level": 3,
+      "title": "Conformant Algorithms"
+    },
+    {
+      "id": "index",
+      "href": "https://wicg.github.io/layout-instability/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://wicg.github.io/layout-instability/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://wicg.github.io/layout-instability/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://wicg.github.io/layout-instability/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://wicg.github.io/layout-instability/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "idl-index",
+      "href": "https://wicg.github.io/layout-instability/#idl-index",
+      "level": 2,
+      "title": "IDL Index"
+    },
+    {
+      "id": "issues-index",
+      "href": "https://wicg.github.io/layout-instability/#issues-index",
+      "level": 2,
+      "title": "Issues Index"
+    }
+  ]
+}

@@ -1,0 +1,209 @@
+{
+  "name": "WritableStreamDefaultWriter",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Streams Standard",
+      "url": "https://streams.spec.whatwg.org/"
+    },
+    "fragment": "[Exposed=*]\ninterface WritableStreamDefaultWriter {\n  constructor(WritableStream stream);\n\n  readonly attribute Promise<undefined> closed;\n  readonly attribute unrestricted double? desiredSize;\n  readonly attribute Promise<undefined> ready;\n\n  Promise<undefined> abort(optional any reason);\n  Promise<undefined> close();\n  undefined releaseLock();\n  Promise<undefined> write(optional any chunk);\n};",
+    "href": "https://streams.spec.whatwg.org/#writablestreamdefaultwriter"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://streams.spec.whatwg.org/": [
+      {
+        "id": "writablestreamdefaultwriter",
+        "href": "https://streams.spec.whatwg.org/#writablestreamdefaultwriter",
+        "linkingText": [
+          "WritableStreamDefaultWriter"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "default-writer-class-definition",
+          "href": "https://streams.spec.whatwg.org/#default-writer-class-definition",
+          "title": "Interface definition",
+          "number": "5.3.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "default-writer-constructor",
+        "href": "https://streams.spec.whatwg.org/#default-writer-constructor",
+        "linkingText": [
+          "WritableStreamDefaultWriter(stream)",
+          "constructor(stream)"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "WritableStreamDefaultWriter"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "default-writer-prototype",
+          "href": "https://streams.spec.whatwg.org/#default-writer-prototype",
+          "title": "Constructor, methods, and properties",
+          "number": "5.3.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "default-writer-closed",
+        "href": "https://streams.spec.whatwg.org/#default-writer-closed",
+        "linkingText": [
+          "closed"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "WritableStreamDefaultWriter"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "default-writer-prototype",
+          "href": "https://streams.spec.whatwg.org/#default-writer-prototype",
+          "title": "Constructor, methods, and properties",
+          "number": "5.3.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "default-writer-desired-size",
+        "href": "https://streams.spec.whatwg.org/#default-writer-desired-size",
+        "linkingText": [
+          "desiredSize"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "WritableStreamDefaultWriter"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "default-writer-prototype",
+          "href": "https://streams.spec.whatwg.org/#default-writer-prototype",
+          "title": "Constructor, methods, and properties",
+          "number": "5.3.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "default-writer-ready",
+        "href": "https://streams.spec.whatwg.org/#default-writer-ready",
+        "linkingText": [
+          "ready"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "WritableStreamDefaultWriter"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "default-writer-prototype",
+          "href": "https://streams.spec.whatwg.org/#default-writer-prototype",
+          "title": "Constructor, methods, and properties",
+          "number": "5.3.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "default-writer-abort",
+        "href": "https://streams.spec.whatwg.org/#default-writer-abort",
+        "linkingText": [
+          "abort(reason)",
+          "abort()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "WritableStreamDefaultWriter"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "default-writer-prototype",
+          "href": "https://streams.spec.whatwg.org/#default-writer-prototype",
+          "title": "Constructor, methods, and properties",
+          "number": "5.3.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "default-writer-close",
+        "href": "https://streams.spec.whatwg.org/#default-writer-close",
+        "linkingText": [
+          "close()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "WritableStreamDefaultWriter"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "default-writer-prototype",
+          "href": "https://streams.spec.whatwg.org/#default-writer-prototype",
+          "title": "Constructor, methods, and properties",
+          "number": "5.3.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "default-writer-release-lock",
+        "href": "https://streams.spec.whatwg.org/#default-writer-release-lock",
+        "linkingText": [
+          "releaseLock()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "WritableStreamDefaultWriter"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "default-writer-prototype",
+          "href": "https://streams.spec.whatwg.org/#default-writer-prototype",
+          "title": "Constructor, methods, and properties",
+          "number": "5.3.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "default-writer-write",
+        "href": "https://streams.spec.whatwg.org/#default-writer-write",
+        "linkingText": [
+          "write(chunk)",
+          "write()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "WritableStreamDefaultWriter"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "default-writer-prototype",
+          "href": "https://streams.spec.whatwg.org/#default-writer-prototype",
+          "title": "Constructor, methods, and properties",
+          "number": "5.3.3"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

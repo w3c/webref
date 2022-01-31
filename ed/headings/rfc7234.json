@@ -1,0 +1,524 @@
+{
+  "spec": {
+    "title": "Hypertext Transfer Protocol (HTTP/1.1): Caching",
+    "url": "https://httpwg.org/specs/rfc7234.html"
+  },
+  "headings": [
+    {
+      "id": "rfc.abstract",
+      "href": "https://httpwg.org/specs/rfc7234.html#rfc.abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "caching",
+      "href": "https://httpwg.org/specs/rfc7234.html#caching",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "conformance",
+      "href": "https://httpwg.org/specs/rfc7234.html#conformance",
+      "level": 3,
+      "title": "Conformance and Error Handling",
+      "number": "1.1"
+    },
+    {
+      "id": "notation",
+      "href": "https://httpwg.org/specs/rfc7234.html#notation",
+      "level": 3,
+      "title": "Syntax Notation",
+      "number": "1.2"
+    },
+    {
+      "id": "delta-seconds",
+      "href": "https://httpwg.org/specs/rfc7234.html#delta-seconds",
+      "level": 4,
+      "title": "Delta Seconds",
+      "number": "1.2.1"
+    },
+    {
+      "id": "caching.overview",
+      "href": "https://httpwg.org/specs/rfc7234.html#caching.overview",
+      "level": 2,
+      "title": "Overview of Cache Operation",
+      "number": "2"
+    },
+    {
+      "id": "response.cacheability",
+      "href": "https://httpwg.org/specs/rfc7234.html#response.cacheability",
+      "level": 2,
+      "title": "Storing Responses in Caches",
+      "number": "3"
+    },
+    {
+      "id": "incomplete.responses",
+      "href": "https://httpwg.org/specs/rfc7234.html#incomplete.responses",
+      "level": 3,
+      "title": "Storing Incomplete Responses",
+      "number": "3.1"
+    },
+    {
+      "id": "caching.authenticated.responses",
+      "href": "https://httpwg.org/specs/rfc7234.html#caching.authenticated.responses",
+      "level": 3,
+      "title": "Storing Responses to Authenticated Requests",
+      "number": "3.2"
+    },
+    {
+      "id": "combining.responses",
+      "href": "https://httpwg.org/specs/rfc7234.html#combining.responses",
+      "level": 3,
+      "title": "Combining Partial Content",
+      "number": "3.3"
+    },
+    {
+      "id": "constructing.responses.from.caches",
+      "href": "https://httpwg.org/specs/rfc7234.html#constructing.responses.from.caches",
+      "level": 2,
+      "title": "Constructing Responses from Caches",
+      "number": "4"
+    },
+    {
+      "id": "caching.negotiated.responses",
+      "href": "https://httpwg.org/specs/rfc7234.html#caching.negotiated.responses",
+      "level": 3,
+      "title": "Calculating Secondary Keys with Vary",
+      "number": "4.1"
+    },
+    {
+      "id": "expiration.model",
+      "href": "https://httpwg.org/specs/rfc7234.html#expiration.model",
+      "level": 3,
+      "title": "Freshness",
+      "number": "4.2"
+    },
+    {
+      "id": "calculating.freshness.lifetime",
+      "href": "https://httpwg.org/specs/rfc7234.html#calculating.freshness.lifetime",
+      "level": 4,
+      "title": "Calculating Freshness Lifetime",
+      "number": "4.2.1"
+    },
+    {
+      "id": "heuristic.freshness",
+      "href": "https://httpwg.org/specs/rfc7234.html#heuristic.freshness",
+      "level": 4,
+      "title": "Calculating Heuristic Freshness",
+      "number": "4.2.2"
+    },
+    {
+      "id": "age.calculations",
+      "href": "https://httpwg.org/specs/rfc7234.html#age.calculations",
+      "level": 4,
+      "title": "Calculating Age",
+      "number": "4.2.3"
+    },
+    {
+      "id": "serving.stale.responses",
+      "href": "https://httpwg.org/specs/rfc7234.html#serving.stale.responses",
+      "level": 4,
+      "title": "Serving Stale Responses",
+      "number": "4.2.4"
+    },
+    {
+      "id": "validation.model",
+      "href": "https://httpwg.org/specs/rfc7234.html#validation.model",
+      "level": 3,
+      "title": "Validation",
+      "number": "4.3"
+    },
+    {
+      "id": "validation.sent",
+      "href": "https://httpwg.org/specs/rfc7234.html#validation.sent",
+      "level": 4,
+      "title": "Sending a Validation Request",
+      "number": "4.3.1"
+    },
+    {
+      "id": "validation.received",
+      "href": "https://httpwg.org/specs/rfc7234.html#validation.received",
+      "level": 4,
+      "title": "Handling a Received Validation Request",
+      "number": "4.3.2"
+    },
+    {
+      "id": "validation.response",
+      "href": "https://httpwg.org/specs/rfc7234.html#validation.response",
+      "level": 4,
+      "title": "Handling a Validation Response",
+      "number": "4.3.3"
+    },
+    {
+      "id": "freshening.responses",
+      "href": "https://httpwg.org/specs/rfc7234.html#freshening.responses",
+      "level": 4,
+      "title": "Freshening Stored Responses upon Validation",
+      "number": "4.3.4"
+    },
+    {
+      "id": "head.effects",
+      "href": "https://httpwg.org/specs/rfc7234.html#head.effects",
+      "level": 4,
+      "title": "Freshening Responses via HEAD",
+      "number": "4.3.5"
+    },
+    {
+      "id": "invalidation",
+      "href": "https://httpwg.org/specs/rfc7234.html#invalidation",
+      "level": 3,
+      "title": "Invalidation",
+      "number": "4.4"
+    },
+    {
+      "id": "header.field.definitions",
+      "href": "https://httpwg.org/specs/rfc7234.html#header.field.definitions",
+      "level": 2,
+      "title": "Header Field Definitions",
+      "number": "5"
+    },
+    {
+      "id": "header.age",
+      "href": "https://httpwg.org/specs/rfc7234.html#header.age",
+      "level": 3,
+      "title": "Age",
+      "number": "5.1"
+    },
+    {
+      "id": "header.cache-control",
+      "href": "https://httpwg.org/specs/rfc7234.html#header.cache-control",
+      "level": 3,
+      "title": "Cache-Control",
+      "number": "5.2"
+    },
+    {
+      "id": "cache-request-directive",
+      "href": "https://httpwg.org/specs/rfc7234.html#cache-request-directive",
+      "level": 4,
+      "title": "Request Cache-Control Directives",
+      "number": "5.2.1"
+    },
+    {
+      "id": "cache-request-directive.max-age",
+      "href": "https://httpwg.org/specs/rfc7234.html#cache-request-directive.max-age",
+      "level": 5,
+      "title": "max-age",
+      "number": "5.2.1.1"
+    },
+    {
+      "id": "cache-request-directive.max-stale",
+      "href": "https://httpwg.org/specs/rfc7234.html#cache-request-directive.max-stale",
+      "level": 5,
+      "title": "max-stale",
+      "number": "5.2.1.2"
+    },
+    {
+      "id": "cache-request-directive.min-fresh",
+      "href": "https://httpwg.org/specs/rfc7234.html#cache-request-directive.min-fresh",
+      "level": 5,
+      "title": "min-fresh",
+      "number": "5.2.1.3"
+    },
+    {
+      "id": "cache-request-directive.no-cache",
+      "href": "https://httpwg.org/specs/rfc7234.html#cache-request-directive.no-cache",
+      "level": 5,
+      "title": "no-cache",
+      "number": "5.2.1.4"
+    },
+    {
+      "id": "cache-request-directive.no-store",
+      "href": "https://httpwg.org/specs/rfc7234.html#cache-request-directive.no-store",
+      "level": 5,
+      "title": "no-store",
+      "number": "5.2.1.5"
+    },
+    {
+      "id": "cache-request-directive.no-transform",
+      "href": "https://httpwg.org/specs/rfc7234.html#cache-request-directive.no-transform",
+      "level": 5,
+      "title": "no-transform",
+      "number": "5.2.1.6"
+    },
+    {
+      "id": "cache-request-directive.only-if-cached",
+      "href": "https://httpwg.org/specs/rfc7234.html#cache-request-directive.only-if-cached",
+      "level": 5,
+      "title": "only-if-cached",
+      "number": "5.2.1.7"
+    },
+    {
+      "id": "cache-response-directive",
+      "href": "https://httpwg.org/specs/rfc7234.html#cache-response-directive",
+      "level": 4,
+      "title": "Response Cache-Control Directives",
+      "number": "5.2.2"
+    },
+    {
+      "id": "cache-response-directive.must-revalidate",
+      "href": "https://httpwg.org/specs/rfc7234.html#cache-response-directive.must-revalidate",
+      "level": 5,
+      "title": "must-revalidate",
+      "number": "5.2.2.1"
+    },
+    {
+      "id": "cache-response-directive.no-cache",
+      "href": "https://httpwg.org/specs/rfc7234.html#cache-response-directive.no-cache",
+      "level": 5,
+      "title": "no-cache",
+      "number": "5.2.2.2"
+    },
+    {
+      "id": "cache-response-directive.no-store",
+      "href": "https://httpwg.org/specs/rfc7234.html#cache-response-directive.no-store",
+      "level": 5,
+      "title": "no-store",
+      "number": "5.2.2.3"
+    },
+    {
+      "id": "cache-response-directive.no-transform",
+      "href": "https://httpwg.org/specs/rfc7234.html#cache-response-directive.no-transform",
+      "level": 5,
+      "title": "no-transform",
+      "number": "5.2.2.4"
+    },
+    {
+      "id": "cache-response-directive.public",
+      "href": "https://httpwg.org/specs/rfc7234.html#cache-response-directive.public",
+      "level": 5,
+      "title": "public",
+      "number": "5.2.2.5"
+    },
+    {
+      "id": "cache-response-directive.private",
+      "href": "https://httpwg.org/specs/rfc7234.html#cache-response-directive.private",
+      "level": 5,
+      "title": "private",
+      "number": "5.2.2.6"
+    },
+    {
+      "id": "cache-response-directive.proxy-revalidate",
+      "href": "https://httpwg.org/specs/rfc7234.html#cache-response-directive.proxy-revalidate",
+      "level": 5,
+      "title": "proxy-revalidate",
+      "number": "5.2.2.7"
+    },
+    {
+      "id": "cache-response-directive.max-age",
+      "href": "https://httpwg.org/specs/rfc7234.html#cache-response-directive.max-age",
+      "level": 5,
+      "title": "max-age",
+      "number": "5.2.2.8"
+    },
+    {
+      "id": "cache-response-directive.s-maxage",
+      "href": "https://httpwg.org/specs/rfc7234.html#cache-response-directive.s-maxage",
+      "level": 5,
+      "title": "s-maxage",
+      "number": "5.2.2.9"
+    },
+    {
+      "id": "cache.control.extensions",
+      "href": "https://httpwg.org/specs/rfc7234.html#cache.control.extensions",
+      "level": 4,
+      "title": "Cache Control Extensions",
+      "number": "5.2.3"
+    },
+    {
+      "id": "header.expires",
+      "href": "https://httpwg.org/specs/rfc7234.html#header.expires",
+      "level": 3,
+      "title": "Expires",
+      "number": "5.3"
+    },
+    {
+      "id": "header.pragma",
+      "href": "https://httpwg.org/specs/rfc7234.html#header.pragma",
+      "level": 3,
+      "title": "Pragma",
+      "number": "5.4"
+    },
+    {
+      "id": "header.warning",
+      "href": "https://httpwg.org/specs/rfc7234.html#header.warning",
+      "level": 3,
+      "title": "Warning",
+      "number": "5.5"
+    },
+    {
+      "id": "warn.110",
+      "href": "https://httpwg.org/specs/rfc7234.html#warn.110",
+      "level": 4,
+      "title": "Warning: 110 - \"Response is Stale\"",
+      "number": "5.5.1"
+    },
+    {
+      "id": "warn.111",
+      "href": "https://httpwg.org/specs/rfc7234.html#warn.111",
+      "level": 4,
+      "title": "Warning: 111 - \"Revalidation Failed\"",
+      "number": "5.5.2"
+    },
+    {
+      "id": "warn.112",
+      "href": "https://httpwg.org/specs/rfc7234.html#warn.112",
+      "level": 4,
+      "title": "Warning: 112 - \"Disconnected Operation\"",
+      "number": "5.5.3"
+    },
+    {
+      "id": "warn.113",
+      "href": "https://httpwg.org/specs/rfc7234.html#warn.113",
+      "level": 4,
+      "title": "Warning: 113 - \"Heuristic Expiration\"",
+      "number": "5.5.4"
+    },
+    {
+      "id": "warn.199",
+      "href": "https://httpwg.org/specs/rfc7234.html#warn.199",
+      "level": 4,
+      "title": "Warning: 199 - \"Miscellaneous Warning\"",
+      "number": "5.5.5"
+    },
+    {
+      "id": "warn.214",
+      "href": "https://httpwg.org/specs/rfc7234.html#warn.214",
+      "level": 4,
+      "title": "Warning: 214 - \"Transformation Applied\"",
+      "number": "5.5.6"
+    },
+    {
+      "id": "warn.299",
+      "href": "https://httpwg.org/specs/rfc7234.html#warn.299",
+      "level": 4,
+      "title": "Warning: 299 - \"Miscellaneous Persistent Warning\"",
+      "number": "5.5.7"
+    },
+    {
+      "id": "history.lists",
+      "href": "https://httpwg.org/specs/rfc7234.html#history.lists",
+      "level": 2,
+      "title": "History Lists",
+      "number": "6"
+    },
+    {
+      "id": "iana.considerations",
+      "href": "https://httpwg.org/specs/rfc7234.html#iana.considerations",
+      "level": 2,
+      "title": "IANA Considerations",
+      "number": "7"
+    },
+    {
+      "id": "cache.directive.registry",
+      "href": "https://httpwg.org/specs/rfc7234.html#cache.directive.registry",
+      "level": 3,
+      "title": "Cache Directive Registry",
+      "number": "7.1"
+    },
+    {
+      "id": "cache.directive.registry.procedure",
+      "href": "https://httpwg.org/specs/rfc7234.html#cache.directive.registry.procedure",
+      "level": 4,
+      "title": "Procedure",
+      "number": "7.1.1"
+    },
+    {
+      "id": "cache.directive.considerations",
+      "href": "https://httpwg.org/specs/rfc7234.html#cache.directive.considerations",
+      "level": 4,
+      "title": "Considerations for New Cache Control Directives",
+      "number": "7.1.2"
+    },
+    {
+      "id": "cache.directive.registration",
+      "href": "https://httpwg.org/specs/rfc7234.html#cache.directive.registration",
+      "level": 4,
+      "title": "Registrations",
+      "number": "7.1.3"
+    },
+    {
+      "id": "warn.code.registry",
+      "href": "https://httpwg.org/specs/rfc7234.html#warn.code.registry",
+      "level": 3,
+      "title": "Warn Code Registry",
+      "number": "7.2"
+    },
+    {
+      "id": "warn.code.registry.procedure",
+      "href": "https://httpwg.org/specs/rfc7234.html#warn.code.registry.procedure",
+      "level": 4,
+      "title": "Procedure",
+      "number": "7.2.1"
+    },
+    {
+      "id": "warn.code.registration",
+      "href": "https://httpwg.org/specs/rfc7234.html#warn.code.registration",
+      "level": 4,
+      "title": "Registrations",
+      "number": "7.2.2"
+    },
+    {
+      "id": "header.field.registration",
+      "href": "https://httpwg.org/specs/rfc7234.html#header.field.registration",
+      "level": 3,
+      "title": "Header Field Registration",
+      "number": "7.3"
+    },
+    {
+      "id": "security.considerations",
+      "href": "https://httpwg.org/specs/rfc7234.html#security.considerations",
+      "level": 2,
+      "title": "Security Considerations",
+      "number": "8"
+    },
+    {
+      "id": "acks",
+      "href": "https://httpwg.org/specs/rfc7234.html#acks",
+      "level": 2,
+      "title": "Acknowledgments",
+      "number": "9"
+    },
+    {
+      "id": "rfc.references",
+      "href": "https://httpwg.org/specs/rfc7234.html#rfc.references",
+      "level": 2,
+      "title": "10. References"
+    },
+    {
+      "id": "rfc.references.1",
+      "href": "https://httpwg.org/specs/rfc7234.html#rfc.references.1",
+      "level": 3,
+      "title": "Normative References",
+      "number": "10.1"
+    },
+    {
+      "id": "rfc.references.2",
+      "href": "https://httpwg.org/specs/rfc7234.html#rfc.references.2",
+      "level": 3,
+      "title": "Informative References",
+      "number": "10.2"
+    },
+    {
+      "id": "changes.from.rfc.2616",
+      "href": "https://httpwg.org/specs/rfc7234.html#changes.from.rfc.2616",
+      "level": 2,
+      "title": "Changes from RFC 2616",
+      "number": "A"
+    },
+    {
+      "id": "imported.abnf",
+      "href": "https://httpwg.org/specs/rfc7234.html#imported.abnf",
+      "level": 2,
+      "title": "Imported ABNF",
+      "number": "B"
+    },
+    {
+      "id": "collected.abnf",
+      "href": "https://httpwg.org/specs/rfc7234.html#collected.abnf",
+      "level": 2,
+      "title": "Collected ABNF",
+      "number": "C"
+    }
+  ]
+}

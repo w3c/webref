@@ -1,0 +1,253 @@
+{
+  "name": "RTCDTMFSender",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
+      "url": "https://www.w3.org/TR/webrtc/"
+    },
+    "fragment": "[Exposed=Window]\ninterface RTCDTMFSender : EventTarget {\n  undefined insertDTMF(DOMString tones, optional unsigned long duration = 100, optional unsigned long interToneGap = 70);\n  attribute EventHandler ontonechange;\n  readonly attribute boolean canInsertDTMF;\n  readonly attribute DOMString toneBuffer;\n};",
+    "href": "https://w3c.github.io/webrtc-pc/#dom-rtcdtmfsender"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "EventTarget",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=*]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+      "href": "https://dom.spec.whatwg.org/#eventtarget"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webrtc/": [
+      {
+        "id": "dom-rtcdtmfsender",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcdtmfsender",
+        "linkingText": [
+          "RTCDTMFSender"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "rtcdtmfsender",
+          "href": "https://w3c.github.io/webrtc-pc/#rtcdtmfsender",
+          "title": "RTCDTMFSender",
+          "number": "7.2"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-RTCDTMFSender-insertDTMF",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-RTCDTMFSender-insertDTMF",
+        "linkingText": [
+          "insertDTMF()",
+          "insertDTMF(tones)",
+          "insertDTMF(tones, duration)",
+          "insertDTMF(tones, duration, interToneGap)"
+        ],
+        "localLinkingText": [
+          "RTCDTMFSender.insertDTMF",
+          "RTCDTMFSender.insertDTMF()",
+          "insertDTMF"
+        ],
+        "type": "method",
+        "for": [
+          "RTCDTMFSender"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "methods-13",
+          "href": "https://w3c.github.io/webrtc-pc/#methods-13",
+          "title": "Methods"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcdtmfsender-ontonechange",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcdtmfsender-ontonechange",
+        "linkingText": [
+          "ontonechange"
+        ],
+        "localLinkingText": [
+          "RTCDTMFSender.ontonechange"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCDTMFSender"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-20",
+          "href": "https://w3c.github.io/webrtc-pc/#attributes-20",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcdtmfsender-caninsertdtmf",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcdtmfsender-caninsertdtmf",
+        "linkingText": [
+          "canInsertDTMF"
+        ],
+        "localLinkingText": [
+          "RTCDTMFSender.canInsertDTMF"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCDTMFSender"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-20",
+          "href": "https://w3c.github.io/webrtc-pc/#attributes-20",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-RTCDTMFSender-tonebuffer",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-RTCDTMFSender-tonebuffer",
+        "linkingText": [
+          "toneBuffer"
+        ],
+        "localLinkingText": [
+          "RTCDTMFSender.toneBuffer"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCDTMFSender"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-20",
+          "href": "https://w3c.github.io/webrtc-pc/#attributes-20",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "eventtarget",
+        "href": "https://dom.spec.whatwg.org/#eventtarget",
+        "linkingText": [
+          "EventTarget"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventtarget-eventtarget",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-eventtarget",
+        "linkingText": [
+          "EventTarget()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-addeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-addeventlistener",
+        "linkingText": [
+          "addEventListener(type, callback, options)",
+          "addEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-removeeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-removeeventlistener",
+        "linkingText": [
+          "removeEventListener(type, callback, options)",
+          "removeEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-dispatchevent",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-dispatchevent",
+        "linkingText": [
+          "dispatchEvent(event)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

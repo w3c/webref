@@ -1,0 +1,308 @@
+{
+  "name": "PaymentRequest",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Payment Request API",
+      "url": "https://www.w3.org/TR/payment-request/"
+    },
+    "fragment": "[SecureContext, Exposed=Window]\ninterface PaymentRequest : EventTarget {\n  constructor(\n    sequence<PaymentMethodData> methodData,\n    PaymentDetailsInit details\n  );\n  [NewObject]\n  Promise<PaymentResponse> show(optional Promise<PaymentDetailsUpdate> detailsPromise);\n  [NewObject]\n  Promise<undefined> abort();\n  [NewObject]\n  Promise<boolean> canMakePayment();\n\n  readonly attribute DOMString id;\n\n  attribute EventHandler onpaymentmethodchange;\n};",
+    "href": "https://w3c.github.io/payment-request/#dom-paymentrequest"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "EventTarget",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=*]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+      "href": "https://dom.spec.whatwg.org/#eventtarget"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/payment-request/": [
+      {
+        "id": "dom-paymentrequest",
+        "href": "https://w3c.github.io/payment-request/#dom-paymentrequest",
+        "linkingText": [
+          "PaymentRequest"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "paymentrequest-interface",
+          "href": "https://w3c.github.io/payment-request/#paymentrequest-interface",
+          "title": "PaymentRequest interface",
+          "number": "3"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-paymentrequest-constructor",
+        "href": "https://w3c.github.io/payment-request/#dom-paymentrequest-constructor",
+        "linkingText": [
+          "constructor()",
+          "constructor(methodData, details)"
+        ],
+        "localLinkingText": [
+          "PaymentRequest.constructor",
+          "PaymentRequest.constructor()",
+          "constructor"
+        ],
+        "type": "constructor",
+        "for": [
+          "PaymentRequest"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "paymentrequest-interface",
+          "href": "https://w3c.github.io/payment-request/#paymentrequest-interface",
+          "title": "PaymentRequest interface",
+          "number": "3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-paymentrequest-show",
+        "href": "https://w3c.github.io/payment-request/#dom-paymentrequest-show",
+        "linkingText": [
+          "show()",
+          "show(detailsPromise)"
+        ],
+        "localLinkingText": [
+          "PaymentRequest.show",
+          "PaymentRequest.show()",
+          "show"
+        ],
+        "type": "method",
+        "for": [
+          "PaymentRequest"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "show-method",
+          "href": "https://w3c.github.io/payment-request/#show-method",
+          "title": "show() method",
+          "number": "3.3"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-paymentrequest-abort",
+        "href": "https://w3c.github.io/payment-request/#dom-paymentrequest-abort",
+        "linkingText": [
+          "abort()"
+        ],
+        "localLinkingText": [
+          "PaymentRequest.abort",
+          "PaymentRequest.abort()",
+          "abort"
+        ],
+        "type": "method",
+        "for": [
+          "PaymentRequest"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "abort-method",
+          "href": "https://w3c.github.io/payment-request/#abort-method",
+          "title": "abort() method",
+          "number": "3.4"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-paymentrequest-canmakepayment",
+        "href": "https://w3c.github.io/payment-request/#dom-paymentrequest-canmakepayment",
+        "linkingText": [
+          "canMakePayment()"
+        ],
+        "localLinkingText": [
+          "PaymentRequest.canMakePayment",
+          "PaymentRequest.canMakePayment()",
+          "canMakePayment"
+        ],
+        "type": "method",
+        "for": [
+          "PaymentRequest"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "canmakepayment-method",
+          "href": "https://w3c.github.io/payment-request/#canmakepayment-method",
+          "title": "canMakePayment() method",
+          "number": "3.5"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-paymentrequest-id",
+        "href": "https://w3c.github.io/payment-request/#dom-paymentrequest-id",
+        "linkingText": [
+          "id"
+        ],
+        "localLinkingText": [
+          "PaymentRequest.id"
+        ],
+        "type": "attribute",
+        "for": [
+          "PaymentRequest"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "id-attribute",
+          "href": "https://w3c.github.io/payment-request/#id-attribute",
+          "title": "id attribute",
+          "number": "3.2"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-paymentrequest-onpaymentmethodchange",
+        "href": "https://w3c.github.io/payment-request/#dom-paymentrequest-onpaymentmethodchange",
+        "linkingText": [
+          "onpaymentmethodchange"
+        ],
+        "localLinkingText": [
+          "PaymentRequest.onpaymentmethodchange"
+        ],
+        "type": "attribute",
+        "for": [
+          "PaymentRequest"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "onpaymentmethodchange-attribute",
+          "href": "https://w3c.github.io/payment-request/#onpaymentmethodchange-attribute",
+          "title": "onpaymentmethodchange attribute",
+          "number": "3.6"
+        },
+        "definedIn": "heading"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "eventtarget",
+        "href": "https://dom.spec.whatwg.org/#eventtarget",
+        "linkingText": [
+          "EventTarget"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventtarget-eventtarget",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-eventtarget",
+        "linkingText": [
+          "EventTarget()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-addeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-addeventlistener",
+        "linkingText": [
+          "addEventListener(type, callback, options)",
+          "addEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-removeeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-removeeventlistener",
+        "linkingText": [
+          "removeEventListener(type, callback, options)",
+          "removeEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-dispatchevent",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-dispatchevent",
+        "linkingText": [
+          "dispatchEvent(event)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

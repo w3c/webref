@@ -1,0 +1,174 @@
+{
+  "name": "XRView",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebXR Device API",
+      "url": "https://www.w3.org/TR/webxr/"
+    },
+    "fragment": "[SecureContext, Exposed=Window] interface XRView {\n  readonly attribute XREye eye;\n  readonly attribute Float32Array projectionMatrix;\n  [SameObject] readonly attribute XRRigidTransform transform;\n  readonly attribute double? recommendedViewportScale;\n\n  undefined requestViewportScale(double? scale);\n};",
+    "href": "https://immersive-web.github.io/webxr/#xrview"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "WebXR Augmented Reality Module - Level 1",
+        "url": "https://www.w3.org/TR/webxr-ar-module-1/"
+      },
+      "fragment": "partial interface XRView {\n  readonly attribute boolean isFirstPersonObserver;\n};"
+    }
+  ],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webxr/": [
+      {
+        "id": "xrview",
+        "href": "https://immersive-web.github.io/webxr/#xrview",
+        "linkingText": [
+          "XRView"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrview-interface",
+          "href": "https://immersive-web.github.io/webxr/#xrview-interface",
+          "title": "XRView",
+          "number": "7.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-xrview-eye",
+        "href": "https://immersive-web.github.io/webxr/#dom-xrview-eye",
+        "linkingText": [
+          "eye"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XRView"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrview-interface",
+          "href": "https://immersive-web.github.io/webxr/#xrview-interface",
+          "title": "XRView",
+          "number": "7.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-xrview-projectionmatrix",
+        "href": "https://immersive-web.github.io/webxr/#dom-xrview-projectionmatrix",
+        "linkingText": [
+          "projectionMatrix"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XRView"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrview-interface",
+          "href": "https://immersive-web.github.io/webxr/#xrview-interface",
+          "title": "XRView",
+          "number": "7.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-xrview-transform",
+        "href": "https://immersive-web.github.io/webxr/#dom-xrview-transform",
+        "linkingText": [
+          "transform"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XRView"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrview-interface",
+          "href": "https://immersive-web.github.io/webxr/#xrview-interface",
+          "title": "XRView",
+          "number": "7.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-xrview-recommendedviewportscale",
+        "href": "https://immersive-web.github.io/webxr/#dom-xrview-recommendedviewportscale",
+        "linkingText": [
+          "recommendedViewportScale"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XRView"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrview-interface",
+          "href": "https://immersive-web.github.io/webxr/#xrview-interface",
+          "title": "XRView",
+          "number": "7.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-xrview-requestviewportscale",
+        "href": "https://immersive-web.github.io/webxr/#dom-xrview-requestviewportscale",
+        "linkingText": [
+          "requestViewportScale(scale)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "XRView"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrview-interface",
+          "href": "https://immersive-web.github.io/webxr/#xrview-interface",
+          "title": "XRView",
+          "number": "7.1"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://www.w3.org/TR/webxr-ar-module-1/": [
+      {
+        "id": "dom-xrview-isfirstpersonobserver",
+        "href": "https://immersive-web.github.io/webxr-ar-module/#dom-xrview-isfirstpersonobserver",
+        "linkingText": [
+          "isFirstPersonObserver"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XRView"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "first-person-observer",
+          "href": "https://immersive-web.github.io/webxr-ar-module/#first-person-observer",
+          "title": "First Person Observer Views",
+          "number": "2.5"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

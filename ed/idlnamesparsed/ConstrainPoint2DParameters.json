@@ -1,0 +1,80 @@
+{
+  "name": "ConstrainPoint2DParameters",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "MediaStream Image Capture",
+      "url": "https://www.w3.org/TR/image-capture/"
+    },
+    "fragment": "dictionary ConstrainPoint2DParameters {\n  sequence<Point2D> exact;\n  sequence<Point2D> ideal;\n};",
+    "href": "https://w3c.github.io/mediacapture-image/#dictdef-constrainpoint2dparameters"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/image-capture/": [
+      {
+        "id": "dictdef-constrainpoint2dparameters",
+        "href": "https://w3c.github.io/mediacapture-image/#dictdef-constrainpoint2dparameters",
+        "linkingText": [
+          "ConstrainPoint2DParameters"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "additional-constrainable-props",
+          "href": "https://w3c.github.io/mediacapture-image/#additional-constrainable-props",
+          "title": "Additional Constrainable Properties",
+          "number": "9.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-constrainpoint2dparameters-exact",
+        "href": "https://w3c.github.io/mediacapture-image/#dom-constrainpoint2dparameters-exact",
+        "linkingText": [
+          "exact"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "ConstrainPoint2DParameters"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "constraintpoint2d-members",
+          "href": "https://w3c.github.io/mediacapture-image/#constraintpoint2d-members",
+          "title": "Members",
+          "number": "9.5.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-constrainpoint2dparameters-ideal",
+        "href": "https://w3c.github.io/mediacapture-image/#dom-constrainpoint2dparameters-ideal",
+        "linkingText": [
+          "ideal"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "ConstrainPoint2DParameters"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "constraintpoint2d-members",
+          "href": "https://w3c.github.io/mediacapture-image/#constraintpoint2d-members",
+          "title": "Members",
+          "number": "9.5.1"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

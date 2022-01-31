@@ -1,0 +1,220 @@
+{
+  "name": "DeviceMotionEventInit",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "DeviceOrientation Event Specification",
+      "url": "https://www.w3.org/TR/orientation-event/"
+    },
+    "fragment": "dictionary DeviceMotionEventInit : EventInit {\n    DeviceMotionEventAccelerationInit acceleration;\n    DeviceMotionEventAccelerationInit accelerationIncludingGravity;\n    DeviceMotionEventRotationRateInit rotationRate;\n    double interval = 0;\n};",
+    "href": "https://w3c.github.io/deviceorientation/#dictdef-devicemotioneventinit"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "EventInit",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "dictionary EventInit {\n  boolean bubbles = false;\n  boolean cancelable = false;\n  boolean composed = false;\n};",
+      "href": "https://dom.spec.whatwg.org/#dictdef-eventinit"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/orientation-event/": [
+      {
+        "id": "dictdef-devicemotioneventinit",
+        "href": "https://w3c.github.io/deviceorientation/#dictdef-devicemotioneventinit",
+        "linkingText": [
+          "DeviceMotionEventInit"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "devicemotion",
+          "href": "https://w3c.github.io/deviceorientation/#devicemotion",
+          "title": "devicemotion Event",
+          "number": "4.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-devicemotioneventinit-acceleration",
+        "href": "https://w3c.github.io/deviceorientation/#dom-devicemotioneventinit-acceleration",
+        "linkingText": [
+          "acceleration"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "DeviceMotionEventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "devicemotion",
+          "href": "https://w3c.github.io/deviceorientation/#devicemotion",
+          "title": "devicemotion Event",
+          "number": "4.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-devicemotioneventinit-accelerationincludinggravity",
+        "href": "https://w3c.github.io/deviceorientation/#dom-devicemotioneventinit-accelerationincludinggravity",
+        "linkingText": [
+          "accelerationIncludingGravity"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "DeviceMotionEventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "devicemotion",
+          "href": "https://w3c.github.io/deviceorientation/#devicemotion",
+          "title": "devicemotion Event",
+          "number": "4.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-devicemotioneventinit-rotationrate",
+        "href": "https://w3c.github.io/deviceorientation/#dom-devicemotioneventinit-rotationrate",
+        "linkingText": [
+          "rotationRate"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "DeviceMotionEventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "devicemotion",
+          "href": "https://w3c.github.io/deviceorientation/#devicemotion",
+          "title": "devicemotion Event",
+          "number": "4.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-devicemotioneventinit-interval",
+        "href": "https://w3c.github.io/deviceorientation/#dom-devicemotioneventinit-interval",
+        "linkingText": [
+          "interval"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "DeviceMotionEventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "devicemotion",
+          "href": "https://w3c.github.io/deviceorientation/#devicemotion",
+          "title": "devicemotion Event",
+          "number": "4.4"
+        },
+        "definedIn": "pre"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "dictdef-eventinit",
+        "href": "https://dom.spec.whatwg.org/#dictdef-eventinit",
+        "linkingText": [
+          "EventInit"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventinit-bubbles",
+        "href": "https://dom.spec.whatwg.org/#dom-eventinit-bubbles",
+        "linkingText": [
+          "bubbles"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventinit-cancelable",
+        "href": "https://dom.spec.whatwg.org/#dom-eventinit-cancelable",
+        "linkingText": [
+          "cancelable"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventinit-composed",
+        "href": "https://dom.spec.whatwg.org/#dom-eventinit-composed",
+        "linkingText": [
+          "composed"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

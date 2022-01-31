@@ -1,0 +1,101 @@
+{
+  "name": "CanvasText",
+  "type": "interface mixin",
+  "defined": {
+    "spec": {
+      "title": "HTML Standard",
+      "url": "https://html.spec.whatwg.org/multipage/"
+    },
+    "fragment": "interface mixin CanvasText {\n  // text (see also the CanvasPathDrawingStyles and CanvasTextDrawingStyles interfaces)\n  undefined fillText(DOMString text, unrestricted double x, unrestricted double y, optional unrestricted double maxWidth);\n  undefined strokeText(DOMString text, unrestricted double x, unrestricted double y, optional unrestricted double maxWidth);\n  TextMetrics measureText(DOMString text);\n};",
+    "href": "https://html.spec.whatwg.org/multipage/canvas.html#canvastext"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://html.spec.whatwg.org/multipage/": [
+      {
+        "id": "canvastext",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#canvastext",
+        "linkingText": [
+          "CanvasText"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "2dcontext",
+          "href": "https://html.spec.whatwg.org/multipage/canvas.html#2dcontext",
+          "title": "The 2D rendering context",
+          "number": "4.12.5.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-context-2d-filltext",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-filltext",
+        "linkingText": [
+          "fillText(text, x, y, maxWidth)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CanvasText"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "drawing-text-to-the-bitmap",
+          "href": "https://html.spec.whatwg.org/multipage/canvas.html#drawing-text-to-the-bitmap",
+          "title": "Drawing text to the bitmap",
+          "number": "4.12.5.1.11"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-context-2d-stroketext",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-stroketext",
+        "linkingText": [
+          "strokeText(text, x, y, maxWidth)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CanvasText"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "drawing-text-to-the-bitmap",
+          "href": "https://html.spec.whatwg.org/multipage/canvas.html#drawing-text-to-the-bitmap",
+          "title": "Drawing text to the bitmap",
+          "number": "4.12.5.1.11"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-context-2d-measuretext",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-measuretext",
+        "linkingText": [
+          "measureText(text)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CanvasText"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "drawing-text-to-the-bitmap",
+          "href": "https://html.spec.whatwg.org/multipage/canvas.html#drawing-text-to-the-bitmap",
+          "title": "Drawing text to the bitmap",
+          "number": "4.12.5.1.11"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

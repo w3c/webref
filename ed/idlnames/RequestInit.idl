@@ -1,0 +1,21 @@
+// Source: Fetch Standard (https://fetch.spec.whatwg.org/)
+dictionary RequestInit {
+  ByteString method;
+  HeadersInit headers;
+  BodyInit? body;
+  USVString referrer;
+  ReferrerPolicy referrerPolicy;
+  RequestMode mode;
+  RequestCredentials credentials;
+  RequestCache cache;
+  RequestRedirect redirect;
+  DOMString integrity;
+  boolean keepalive;
+  AbortSignal? signal;
+  any window; // can only be set to null
+};
+
+// Source: Priority Hints (https://wicg.github.io/priority-hints/)
+partial dictionary RequestInit {
+  Importance importance;
+};

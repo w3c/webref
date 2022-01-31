@@ -1,0 +1,796 @@
+{
+  "name": "MouseEventInit",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "UI Events",
+      "url": "https://www.w3.org/TR/uievents/"
+    },
+    "fragment": "dictionary MouseEventInit : EventModifierInit {\n  long screenX = 0;\n  long screenY = 0;\n  long clientX = 0;\n  long clientY = 0;\n\n  short button = 0;\n  unsigned short buttons = 0;\n  EventTarget? relatedTarget = null;\n};",
+    "href": "https://w3c.github.io/uievents/#dictdef-mouseeventinit"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "Pointer Lock 2.0",
+        "url": "https://www.w3.org/TR/pointerlock-2/"
+      },
+      "fragment": "partial dictionary MouseEventInit {\n  double movementX = 0;\n  double movementY = 0;\n};"
+    }
+  ],
+  "inheritance": {
+    "name": "EventModifierInit",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "UI Events",
+        "url": "https://www.w3.org/TR/uievents/"
+      },
+      "fragment": "dictionary EventModifierInit : UIEventInit {\n  boolean ctrlKey = false;\n  boolean shiftKey = false;\n  boolean altKey = false;\n  boolean metaKey = false;\n\n  boolean modifierAltGraph = false;\n  boolean modifierCapsLock = false;\n  boolean modifierFn = false;\n  boolean modifierFnLock = false;\n  boolean modifierHyper = false;\n  boolean modifierNumLock = false;\n  boolean modifierScrollLock = false;\n  boolean modifierSuper = false;\n  boolean modifierSymbol = false;\n  boolean modifierSymbolLock = false;\n};",
+      "href": "https://w3c.github.io/uievents/#dictdef-eventmodifierinit"
+    },
+    "extended": [],
+    "inheritance": {
+      "name": "UIEventInit",
+      "type": "dictionary",
+      "defined": {
+        "spec": {
+          "title": "UI Events",
+          "url": "https://www.w3.org/TR/uievents/"
+        },
+        "fragment": "dictionary UIEventInit : EventInit {\n  Window? view = null;\n  long detail = 0;\n};",
+        "href": "https://w3c.github.io/uievents/#dictdef-uieventinit"
+      },
+      "extended": [
+        {
+          "spec": {
+            "title": "Input Device Capabilities",
+            "url": "https://wicg.github.io/input-device-capabilities/"
+          },
+          "fragment": "partial dictionary UIEventInit {\n  InputDeviceCapabilities? sourceCapabilities = null;\n};"
+        },
+        {
+          "spec": {
+            "title": "UI Events",
+            "url": "https://www.w3.org/TR/uievents/"
+          },
+          "fragment": "partial dictionary UIEventInit {\n  unsigned long which = 0;\n};"
+        }
+      ],
+      "inheritance": {
+        "name": "EventInit",
+        "type": "dictionary",
+        "defined": {
+          "spec": {
+            "title": "DOM Standard",
+            "url": "https://dom.spec.whatwg.org/"
+          },
+          "fragment": "dictionary EventInit {\n  boolean bubbles = false;\n  boolean cancelable = false;\n  boolean composed = false;\n};",
+          "href": "https://dom.spec.whatwg.org/#dictdef-eventinit"
+        },
+        "extended": [],
+        "inheritance": null,
+        "includes": []
+      },
+      "includes": []
+    },
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/uievents/": [
+      {
+        "id": "dictdef-mouseeventinit",
+        "href": "https://w3c.github.io/uievents/#dictdef-mouseeventinit",
+        "linkingText": [
+          "MouseEventInit"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "idl-mouseeventinit",
+          "href": "https://w3c.github.io/uievents/#idl-mouseeventinit",
+          "title": "MouseEventInit",
+          "number": "5.3.1.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mouseeventinit-screenx",
+        "href": "https://w3c.github.io/uievents/#dom-mouseeventinit-screenx",
+        "linkingText": [
+          "screenX"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MouseEventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "idl-mouseeventinit",
+          "href": "https://w3c.github.io/uievents/#idl-mouseeventinit",
+          "title": "MouseEventInit",
+          "number": "5.3.1.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mouseeventinit-screeny",
+        "href": "https://w3c.github.io/uievents/#dom-mouseeventinit-screeny",
+        "linkingText": [
+          "screenY"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MouseEventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "idl-mouseeventinit",
+          "href": "https://w3c.github.io/uievents/#idl-mouseeventinit",
+          "title": "MouseEventInit",
+          "number": "5.3.1.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mouseeventinit-clientx",
+        "href": "https://w3c.github.io/uievents/#dom-mouseeventinit-clientx",
+        "linkingText": [
+          "clientX"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MouseEventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "idl-mouseeventinit",
+          "href": "https://w3c.github.io/uievents/#idl-mouseeventinit",
+          "title": "MouseEventInit",
+          "number": "5.3.1.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mouseeventinit-clienty",
+        "href": "https://w3c.github.io/uievents/#dom-mouseeventinit-clienty",
+        "linkingText": [
+          "clientY"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MouseEventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "idl-mouseeventinit",
+          "href": "https://w3c.github.io/uievents/#idl-mouseeventinit",
+          "title": "MouseEventInit",
+          "number": "5.3.1.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mouseeventinit-button",
+        "href": "https://w3c.github.io/uievents/#dom-mouseeventinit-button",
+        "linkingText": [
+          "button"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MouseEventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "idl-mouseeventinit",
+          "href": "https://w3c.github.io/uievents/#idl-mouseeventinit",
+          "title": "MouseEventInit",
+          "number": "5.3.1.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mouseeventinit-buttons",
+        "href": "https://w3c.github.io/uievents/#dom-mouseeventinit-buttons",
+        "linkingText": [
+          "buttons"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MouseEventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "idl-mouseeventinit",
+          "href": "https://w3c.github.io/uievents/#idl-mouseeventinit",
+          "title": "MouseEventInit",
+          "number": "5.3.1.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mouseeventinit-relatedtarget",
+        "href": "https://w3c.github.io/uievents/#dom-mouseeventinit-relatedtarget",
+        "linkingText": [
+          "relatedTarget"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MouseEventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "idl-mouseeventinit",
+          "href": "https://w3c.github.io/uievents/#idl-mouseeventinit",
+          "title": "MouseEventInit",
+          "number": "5.3.1.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dictdef-eventmodifierinit",
+        "href": "https://w3c.github.io/uievents/#dictdef-eventmodifierinit",
+        "linkingText": [
+          "EventModifierInit"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-modifier-initializers",
+          "href": "https://w3c.github.io/uievents/#event-modifier-initializers",
+          "title": "Event Modifier Initializers",
+          "number": "5.3.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventmodifierinit-ctrlkey",
+        "href": "https://w3c.github.io/uievents/#dom-eventmodifierinit-ctrlkey",
+        "linkingText": [
+          "ctrlKey"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EventModifierInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-modifier-initializers",
+          "href": "https://w3c.github.io/uievents/#event-modifier-initializers",
+          "title": "Event Modifier Initializers",
+          "number": "5.3.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-eventmodifierinit-shiftkey",
+        "href": "https://w3c.github.io/uievents/#dom-eventmodifierinit-shiftkey",
+        "linkingText": [
+          "shiftKey"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EventModifierInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-modifier-initializers",
+          "href": "https://w3c.github.io/uievents/#event-modifier-initializers",
+          "title": "Event Modifier Initializers",
+          "number": "5.3.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-eventmodifierinit-altkey",
+        "href": "https://w3c.github.io/uievents/#dom-eventmodifierinit-altkey",
+        "linkingText": [
+          "altKey"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EventModifierInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-modifier-initializers",
+          "href": "https://w3c.github.io/uievents/#event-modifier-initializers",
+          "title": "Event Modifier Initializers",
+          "number": "5.3.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-eventmodifierinit-metakey",
+        "href": "https://w3c.github.io/uievents/#dom-eventmodifierinit-metakey",
+        "linkingText": [
+          "metaKey"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EventModifierInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-modifier-initializers",
+          "href": "https://w3c.github.io/uievents/#event-modifier-initializers",
+          "title": "Event Modifier Initializers",
+          "number": "5.3.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-eventmodifierinit-modifieraltgraph",
+        "href": "https://w3c.github.io/uievents/#dom-eventmodifierinit-modifieraltgraph",
+        "linkingText": [
+          "modifierAltGraph"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EventModifierInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-modifier-initializers",
+          "href": "https://w3c.github.io/uievents/#event-modifier-initializers",
+          "title": "Event Modifier Initializers",
+          "number": "5.3.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-eventmodifierinit-modifiercapslock",
+        "href": "https://w3c.github.io/uievents/#dom-eventmodifierinit-modifiercapslock",
+        "linkingText": [
+          "modifierCapsLock"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EventModifierInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-modifier-initializers",
+          "href": "https://w3c.github.io/uievents/#event-modifier-initializers",
+          "title": "Event Modifier Initializers",
+          "number": "5.3.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-eventmodifierinit-modifierfn",
+        "href": "https://w3c.github.io/uievents/#dom-eventmodifierinit-modifierfn",
+        "linkingText": [
+          "modifierFn"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EventModifierInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-modifier-initializers",
+          "href": "https://w3c.github.io/uievents/#event-modifier-initializers",
+          "title": "Event Modifier Initializers",
+          "number": "5.3.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-eventmodifierinit-modifierfnlock",
+        "href": "https://w3c.github.io/uievents/#dom-eventmodifierinit-modifierfnlock",
+        "linkingText": [
+          "modifierFnLock"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EventModifierInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-modifier-initializers",
+          "href": "https://w3c.github.io/uievents/#event-modifier-initializers",
+          "title": "Event Modifier Initializers",
+          "number": "5.3.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-eventmodifierinit-modifierhyper",
+        "href": "https://w3c.github.io/uievents/#dom-eventmodifierinit-modifierhyper",
+        "linkingText": [
+          "modifierHyper"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EventModifierInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-modifier-initializers",
+          "href": "https://w3c.github.io/uievents/#event-modifier-initializers",
+          "title": "Event Modifier Initializers",
+          "number": "5.3.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-eventmodifierinit-modifiernumlock",
+        "href": "https://w3c.github.io/uievents/#dom-eventmodifierinit-modifiernumlock",
+        "linkingText": [
+          "modifierNumLock"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EventModifierInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-modifier-initializers",
+          "href": "https://w3c.github.io/uievents/#event-modifier-initializers",
+          "title": "Event Modifier Initializers",
+          "number": "5.3.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-eventmodifierinit-modifierscrolllock",
+        "href": "https://w3c.github.io/uievents/#dom-eventmodifierinit-modifierscrolllock",
+        "linkingText": [
+          "modifierScrollLock"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EventModifierInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-modifier-initializers",
+          "href": "https://w3c.github.io/uievents/#event-modifier-initializers",
+          "title": "Event Modifier Initializers",
+          "number": "5.3.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-eventmodifierinit-modifiersuper",
+        "href": "https://w3c.github.io/uievents/#dom-eventmodifierinit-modifiersuper",
+        "linkingText": [
+          "modifierSuper"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EventModifierInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-modifier-initializers",
+          "href": "https://w3c.github.io/uievents/#event-modifier-initializers",
+          "title": "Event Modifier Initializers",
+          "number": "5.3.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-eventmodifierinit-modifiersymbol",
+        "href": "https://w3c.github.io/uievents/#dom-eventmodifierinit-modifiersymbol",
+        "linkingText": [
+          "modifierSymbol"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EventModifierInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-modifier-initializers",
+          "href": "https://w3c.github.io/uievents/#event-modifier-initializers",
+          "title": "Event Modifier Initializers",
+          "number": "5.3.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-eventmodifierinit-modifiersymbollock",
+        "href": "https://w3c.github.io/uievents/#dom-eventmodifierinit-modifiersymbollock",
+        "linkingText": [
+          "modifierSymbolLock"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EventModifierInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-modifier-initializers",
+          "href": "https://w3c.github.io/uievents/#event-modifier-initializers",
+          "title": "Event Modifier Initializers",
+          "number": "5.3.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dictdef-uieventinit",
+        "href": "https://w3c.github.io/uievents/#dictdef-uieventinit",
+        "linkingText": [
+          "UIEventInit"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "idl-uieventinit",
+          "href": "https://w3c.github.io/uievents/#idl-uieventinit",
+          "title": "UIEventInit",
+          "number": "5.1.1.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-uieventinit-view",
+        "href": "https://w3c.github.io/uievents/#dom-uieventinit-view",
+        "linkingText": [
+          "view"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "UIEventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "idl-uieventinit",
+          "href": "https://w3c.github.io/uievents/#idl-uieventinit",
+          "title": "UIEventInit",
+          "number": "5.1.1.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-uieventinit-detail",
+        "href": "https://w3c.github.io/uievents/#dom-uieventinit-detail",
+        "linkingText": [
+          "detail"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "UIEventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "idl-uieventinit",
+          "href": "https://w3c.github.io/uievents/#idl-uieventinit",
+          "title": "UIEventInit",
+          "number": "5.1.1.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-uieventinit-which",
+        "href": "https://w3c.github.io/uievents/#dom-uieventinit-which",
+        "linkingText": [
+          "which"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "UIEventInit"
+        ],
+        "access": "private",
+        "informative": false,
+        "heading": {
+          "id": "legacy-dictionary-UIEventInit",
+          "href": "https://w3c.github.io/uievents/#legacy-dictionary-UIEventInit",
+          "title": "Interface UIEventInit (supplemental)",
+          "number": "8.1.2"
+        },
+        "definedIn": "dt"
+      }
+    ],
+    "https://www.w3.org/TR/pointerlock-2/": [
+      {
+        "id": "dom-mouseeventinit-movementx",
+        "href": "https://w3c.github.io/pointerlock/#dom-mouseeventinit-movementx",
+        "linkingText": [
+          "movementX"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MouseEventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "extensions-to-the-mouseeventinit-dictionary",
+          "href": "https://w3c.github.io/pointerlock/#extensions-to-the-mouseeventinit-dictionary",
+          "title": "Extensions to the MouseEventInit Dictionary",
+          "number": "7"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mouseeventinit-movementy",
+        "href": "https://w3c.github.io/pointerlock/#dom-mouseeventinit-movementy",
+        "linkingText": [
+          "movementY"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MouseEventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "extensions-to-the-mouseeventinit-dictionary",
+          "href": "https://w3c.github.io/pointerlock/#extensions-to-the-mouseeventinit-dictionary",
+          "title": "Extensions to the MouseEventInit Dictionary",
+          "number": "7"
+        },
+        "definedIn": "dt"
+      }
+    ],
+    "https://wicg.github.io/input-device-capabilities/": [
+      {
+        "id": "dom-uieventinit-sourcecapabilities",
+        "href": "https://wicg.github.io/input-device-capabilities/#dom-uieventinit-sourcecapabilities",
+        "linkingText": [
+          "sourceCapabilities"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "UIEventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "extensions-to-the-uievent-interface-and-uieventinit-dictionary",
+          "href": "https://wicg.github.io/input-device-capabilities/#extensions-to-the-uievent-interface-and-uieventinit-dictionary",
+          "title": "Extensions to the UIEvent interface and UIEventInit dictionary",
+          "number": "4"
+        },
+        "definedIn": "pre"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "dictdef-eventinit",
+        "href": "https://dom.spec.whatwg.org/#dictdef-eventinit",
+        "linkingText": [
+          "EventInit"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventinit-bubbles",
+        "href": "https://dom.spec.whatwg.org/#dom-eventinit-bubbles",
+        "linkingText": [
+          "bubbles"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventinit-cancelable",
+        "href": "https://dom.spec.whatwg.org/#dom-eventinit-cancelable",
+        "linkingText": [
+          "cancelable"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventinit-composed",
+        "href": "https://dom.spec.whatwg.org/#dom-eventinit-composed",
+        "linkingText": [
+          "composed"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "name": "CSSParserFunction",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "CSS Parser API",
+      "url": "https://wicg.github.io/css-parser-api/"
+    },
+    "fragment": "[Exposed=Window]\ninterface CSSParserFunction : CSSParserValue {\n  constructor(DOMString name, sequence<sequence<CSSParserValue>> args);\n  readonly attribute DOMString name;\n  readonly attribute FrozenArray<FrozenArray<CSSParserValue>> args;\n  stringifier;\n};",
+    "href": "https://wicg.github.io/css-parser-api/#cssparserfunction"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "CSSParserValue",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "CSS Parser API",
+        "url": "https://wicg.github.io/css-parser-api/"
+      },
+      "fragment": "[Exposed=Window]\ninterface CSSParserValue {\n  /* Just a superclass. */\n};",
+      "href": "https://wicg.github.io/css-parser-api/#cssparservalue"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://wicg.github.io/css-parser-api/": [
+      {
+        "id": "cssparserfunction",
+        "href": "https://wicg.github.io/css-parser-api/#cssparserfunction",
+        "linkingText": [
+          "CSSParserFunction"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "parser-values",
+          "href": "https://wicg.github.io/css-parser-api/#parser-values",
+          "title": "Parser Values",
+          "number": "3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-cssparserfunction-cssparserfunction",
+        "href": "https://wicg.github.io/css-parser-api/#dom-cssparserfunction-cssparserfunction",
+        "linkingText": [
+          "CSSParserFunction(name, args)",
+          "constructor(name, args)"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "CSSParserFunction"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "parser-values",
+          "href": "https://wicg.github.io/css-parser-api/#parser-values",
+          "title": "Parser Values",
+          "number": "3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-cssparserfunction-name",
+        "href": "https://wicg.github.io/css-parser-api/#dom-cssparserfunction-name",
+        "linkingText": [
+          "name"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "CSSParserFunction"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "parser-values",
+          "href": "https://wicg.github.io/css-parser-api/#parser-values",
+          "title": "Parser Values",
+          "number": "3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-cssparserfunction-args",
+        "href": "https://wicg.github.io/css-parser-api/#dom-cssparserfunction-args",
+        "linkingText": [
+          "args"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "CSSParserFunction"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "parser-values",
+          "href": "https://wicg.github.io/css-parser-api/#parser-values",
+          "title": "Parser Values",
+          "number": "3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "CSSParserFunction-stringification-behavior",
+        "href": "https://wicg.github.io/css-parser-api/#CSSParserFunction-stringification-behavior",
+        "linkingText": [
+          "stringification behavior"
+        ],
+        "localLinkingText": [],
+        "type": "dfn",
+        "for": [
+          "CSSParserFunction"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "parser-values",
+          "href": "https://wicg.github.io/css-parser-api/#parser-values",
+          "title": "Parser Values",
+          "number": "3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "cssparservalue",
+        "href": "https://wicg.github.io/css-parser-api/#cssparservalue",
+        "linkingText": [
+          "CSSParserValue"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "parser-values",
+          "href": "https://wicg.github.io/css-parser-api/#parser-values",
+          "title": "Parser Values",
+          "number": "3"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

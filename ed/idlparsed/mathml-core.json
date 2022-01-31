@@ -1,0 +1,80 @@
+{
+  "spec": {
+    "title": "MathML Core",
+    "url": "https://w3c.github.io/mathml-core/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {},
+      "functions": {
+        "Window": [
+          "MathMLElement"
+        ]
+      }
+    },
+    "idlNames": {
+      "MathMLElement": {
+        "fragment": "[Exposed=Window]\ninterface MathMLElement : Element { };",
+        "type": "interface",
+        "name": "MathMLElement",
+        "inheritance": "Element",
+        "members": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      }
+    },
+    "idlExtendedNames": {
+      "MathMLElement": [
+        {
+          "fragment": "MathMLElement includes GlobalEventHandlers;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "MathMLElement",
+          "includes": "GlobalEventHandlers"
+        },
+        {
+          "fragment": "MathMLElement includes DocumentAndElementEventHandlers;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "MathMLElement",
+          "includes": "DocumentAndElementEventHandlers"
+        },
+        {
+          "fragment": "MathMLElement includes HTMLOrSVGElement;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "MathMLElement",
+          "includes": "HTMLOrSVGElement"
+        }
+      ]
+    },
+    "globals": {},
+    "exposed": {
+      "Window": [
+        "MathMLElement"
+      ]
+    },
+    "dependencies": {
+      "MathMLElement": [
+        "Element",
+        "GlobalEventHandlers",
+        "DocumentAndElementEventHandlers",
+        "HTMLOrSVGElement"
+      ]
+    },
+    "externalDependencies": [
+      "Element"
+    ],
+    "hasObsoleteIdl": false
+  }
+}

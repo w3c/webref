@@ -1,0 +1,227 @@
+{
+  "name": "MLConv2dOptions",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Web Neural Network API",
+      "url": "https://www.w3.org/TR/webnn/"
+    },
+    "fragment": "dictionary MLConv2dOptions {\n  sequence<long> padding;\n  sequence<long> strides;\n  sequence<long> dilations;\n  MLAutoPad autoPad = \"explicit\";\n  long groups = 1;\n  MLInputOperandLayout inputLayout = \"nchw\";\n  MLConv2dFilterOperandLayout filterLayout = \"oihw\";\n  MLOperand bias;\n  MLOperator activation;\n};",
+    "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlconv2doptions"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webnn/": [
+      {
+        "id": "dictdef-mlconv2doptions",
+        "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlconv2doptions",
+        "linkingText": [
+          "MLConv2dOptions"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-conv2d",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-conv2d",
+          "title": "conv2d",
+          "number": "7.7.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlconv2doptions-padding",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlconv2doptions-padding",
+        "linkingText": [
+          "padding"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MLConv2dOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-conv2d",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-conv2d",
+          "title": "conv2d",
+          "number": "7.7.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlconv2doptions-strides",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlconv2doptions-strides",
+        "linkingText": [
+          "strides"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MLConv2dOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-conv2d",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-conv2d",
+          "title": "conv2d",
+          "number": "7.7.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlconv2doptions-dilations",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlconv2doptions-dilations",
+        "linkingText": [
+          "dilations"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MLConv2dOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-conv2d",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-conv2d",
+          "title": "conv2d",
+          "number": "7.7.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlconv2doptions-autopad",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlconv2doptions-autopad",
+        "linkingText": [
+          "autoPad"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MLConv2dOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-conv2d",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-conv2d",
+          "title": "conv2d",
+          "number": "7.7.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlconv2doptions-groups",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlconv2doptions-groups",
+        "linkingText": [
+          "groups"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MLConv2dOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-conv2d",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-conv2d",
+          "title": "conv2d",
+          "number": "7.7.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlconv2doptions-inputlayout",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlconv2doptions-inputlayout",
+        "linkingText": [
+          "inputLayout"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MLConv2dOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-conv2d",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-conv2d",
+          "title": "conv2d",
+          "number": "7.7.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlconv2doptions-filterlayout",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlconv2doptions-filterlayout",
+        "linkingText": [
+          "filterLayout"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MLConv2dOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-conv2d",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-conv2d",
+          "title": "conv2d",
+          "number": "7.7.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlconv2doptions-bias",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlconv2doptions-bias",
+        "linkingText": [
+          "bias"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MLConv2dOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-conv2d",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-conv2d",
+          "title": "conv2d",
+          "number": "7.7.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlconv2doptions-activation",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlconv2doptions-activation",
+        "linkingText": [
+          "activation"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MLConv2dOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-conv2d",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-conv2d",
+          "title": "conv2d",
+          "number": "7.7.4"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

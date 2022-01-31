@@ -1,0 +1,80 @@
+{
+  "name": "FilePickerAcceptType",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "File System Access",
+      "url": "https://wicg.github.io/file-system-access/"
+    },
+    "fragment": "dictionary FilePickerAcceptType {\n    USVString description;\n    record<USVString, (USVString or sequence<USVString>)> accept;\n};",
+    "href": "https://wicg.github.io/file-system-access/#dictdef-filepickeraccepttype"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://wicg.github.io/file-system-access/": [
+      {
+        "id": "dictdef-filepickeraccepttype",
+        "href": "https://wicg.github.io/file-system-access/#dictdef-filepickeraccepttype",
+        "linkingText": [
+          "FilePickerAcceptType"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "local-filesystem",
+          "href": "https://wicg.github.io/file-system-access/#local-filesystem",
+          "title": "Accessing Local File System",
+          "number": "3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-filepickeraccepttype-description",
+        "href": "https://wicg.github.io/file-system-access/#dom-filepickeraccepttype-description",
+        "linkingText": [
+          "description"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "FilePickerAcceptType"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "local-filesystem",
+          "href": "https://wicg.github.io/file-system-access/#local-filesystem",
+          "title": "Accessing Local File System",
+          "number": "3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-filepickeraccepttype-accept",
+        "href": "https://wicg.github.io/file-system-access/#dom-filepickeraccepttype-accept",
+        "linkingText": [
+          "accept"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "FilePickerAcceptType"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "local-filesystem",
+          "href": "https://wicg.github.io/file-system-access/#local-filesystem",
+          "title": "Accessing Local File System",
+          "number": "3"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

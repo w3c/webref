@@ -1,0 +1,12 @@
+// Source: WebRTC Encoded Transform (https://www.w3.org/TR/webrtc-encoded-transform/)
+dictionary RTCEncodedVideoFrameMetadata {
+    long long frameId;
+    sequence<long long> dependencies;
+    unsigned short width;
+    unsigned short height;
+    long spatialIndex;
+    long temporalIndex;
+    long synchronizationSource;
+    octet payloadType;
+    sequence<long> contributingSources;
+};

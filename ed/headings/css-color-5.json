@@ -1,0 +1,407 @@
+{
+  "spec": {
+    "title": "CSS Color Module Level 5",
+    "url": "https://drafts.csswg.org/css-color-5/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://drafts.csswg.org/css-color-5/#title",
+      "level": 1,
+      "title": "CSS Color Module Level 5"
+    },
+    {
+      "id": "abstract",
+      "href": "https://drafts.csswg.org/css-color-5/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "sotd",
+      "href": "https://drafts.csswg.org/css-color-5/#sotd",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://drafts.csswg.org/css-color-5/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "intro",
+      "href": "https://drafts.csswg.org/css-color-5/#intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "color-mix",
+      "href": "https://drafts.csswg.org/css-color-5/#color-mix",
+      "level": 2,
+      "title": "Mixing colors: the color-mix() function",
+      "number": "2"
+    },
+    {
+      "id": "color-mix-percent-norm",
+      "href": "https://drafts.csswg.org/css-color-5/#color-mix-percent-norm",
+      "level": 3,
+      "title": "Percentage normalization",
+      "number": "2.1"
+    },
+    {
+      "id": "color-mix-result",
+      "href": "https://drafts.csswg.org/css-color-5/#color-mix-result",
+      "level": 3,
+      "title": "Calculating the result of color-mix",
+      "number": "2.2"
+    },
+    {
+      "id": "color-mix-color-space-effect",
+      "href": "https://drafts.csswg.org/css-color-5/#color-mix-color-space-effect",
+      "level": 3,
+      "title": "Effect of mixing colorspace on color-mix",
+      "number": "2.3"
+    },
+    {
+      "id": "color-mix-with-alpha",
+      "href": "https://drafts.csswg.org/css-color-5/#color-mix-with-alpha",
+      "level": 3,
+      "title": "Effect of non-unity alpha on color-mix",
+      "number": "2.4"
+    },
+    {
+      "id": "colorcontrast",
+      "href": "https://drafts.csswg.org/css-color-5/#colorcontrast",
+      "level": 2,
+      "title": "Selecting the most contrasting color: the color-contrast() function",
+      "number": "3"
+    },
+    {
+      "id": "luminance-contrast",
+      "href": "https://drafts.csswg.org/css-color-5/#luminance-contrast",
+      "level": 3,
+      "title": "Calculating luminance and WCAG 2.1 contrast",
+      "number": "3.1"
+    },
+    {
+      "id": "winner",
+      "href": "https://drafts.csswg.org/css-color-5/#winner",
+      "level": 3,
+      "title": "Finding the winning color",
+      "number": "3.2"
+    },
+    {
+      "id": "relative-colors",
+      "href": "https://drafts.csswg.org/css-color-5/#relative-colors",
+      "level": 2,
+      "title": "Relative color syntax",
+      "number": "4"
+    },
+    {
+      "id": "relative-RGB",
+      "href": "https://drafts.csswg.org/css-color-5/#relative-RGB",
+      "level": 3,
+      "title": "Relative RGB colors",
+      "number": "4.1"
+    },
+    {
+      "id": "relative-HSL",
+      "href": "https://drafts.csswg.org/css-color-5/#relative-HSL",
+      "level": 3,
+      "title": "Relative HSL colors",
+      "number": "4.2"
+    },
+    {
+      "id": "relative-HWB",
+      "href": "https://drafts.csswg.org/css-color-5/#relative-HWB",
+      "level": 3,
+      "title": "Relative HWB colors",
+      "number": "4.3"
+    },
+    {
+      "id": "relative-Lab",
+      "href": "https://drafts.csswg.org/css-color-5/#relative-Lab",
+      "level": 3,
+      "title": "Relative Lab colors",
+      "number": "4.4"
+    },
+    {
+      "id": "relative-OKLab",
+      "href": "https://drafts.csswg.org/css-color-5/#relative-OKLab",
+      "level": 3,
+      "title": "Relative OKLab colors",
+      "number": "4.5"
+    },
+    {
+      "id": "relative-LCH",
+      "href": "https://drafts.csswg.org/css-color-5/#relative-LCH",
+      "level": 3,
+      "title": "Relative LCH colors",
+      "number": "4.6"
+    },
+    {
+      "id": "relative-OKLCH",
+      "href": "https://drafts.csswg.org/css-color-5/#relative-OKLCH",
+      "level": 3,
+      "title": "Relative OKLCH colors",
+      "number": "4.7"
+    },
+    {
+      "id": "color-function",
+      "href": "https://drafts.csswg.org/css-color-5/#color-function",
+      "level": 2,
+      "title": "Specifying custom color spaces: the color() function",
+      "number": "5"
+    },
+    {
+      "id": "relative-color-function",
+      "href": "https://drafts.csswg.org/css-color-5/#relative-color-function",
+      "level": 3,
+      "title": "Relative color-function colors",
+      "number": "5.1"
+    },
+    {
+      "id": "custom-color",
+      "href": "https://drafts.csswg.org/css-color-5/#custom-color",
+      "level": 3,
+      "title": "Custom color spaces",
+      "number": "5.2"
+    },
+    {
+      "id": "at-profile",
+      "href": "https://drafts.csswg.org/css-color-5/#at-profile",
+      "level": 3,
+      "title": "Specifying a color profile: the @color-profile at-rule",
+      "number": "5.3"
+    },
+    {
+      "id": "cal-cmyk",
+      "href": "https://drafts.csswg.org/css-color-5/#cal-cmyk",
+      "level": 3,
+      "title": "CSS and print: using calibrated CMYK and other printed color spaces",
+      "number": "5.4"
+    },
+    {
+      "id": "cmyk-to-lab",
+      "href": "https://drafts.csswg.org/css-color-5/#cmyk-to-lab",
+      "level": 3,
+      "title": "Converting CMYK colors to Lab",
+      "number": "5.5"
+    },
+    {
+      "id": "lab-to-cmyk",
+      "href": "https://drafts.csswg.org/css-color-5/#lab-to-cmyk",
+      "level": 3,
+      "title": "Converting Lab colors to CMYK",
+      "number": "5.6"
+    },
+    {
+      "id": "device-cmyk",
+      "href": "https://drafts.csswg.org/css-color-5/#device-cmyk",
+      "level": 2,
+      "title": "Uncalibrated CMYK Colors: the device-cmyk() function",
+      "number": "6"
+    },
+    {
+      "id": "cmyk-rgb",
+      "href": "https://drafts.csswg.org/css-color-5/#cmyk-rgb",
+      "level": 3,
+      "title": "Naively Converting Between Uncalibrated CMYK and sRGB-Based Colors",
+      "number": "6.1"
+    },
+    {
+      "id": "resolving-color-values",
+      "href": "https://drafts.csswg.org/css-color-5/#resolving-color-values",
+      "level": 2,
+      "title": "Resolving <color> Values",
+      "number": "7"
+    },
+    {
+      "id": "resolving-contrast",
+      "href": "https://drafts.csswg.org/css-color-5/#resolving-contrast",
+      "level": 3,
+      "title": "Resolving color-contrast() values",
+      "number": "7.1"
+    },
+    {
+      "id": "resolving-device-cmyk-values",
+      "href": "https://drafts.csswg.org/css-color-5/#resolving-device-cmyk-values",
+      "level": 3,
+      "title": "Resolving device-cmyk values",
+      "number": "7.2"
+    },
+    {
+      "id": "serial",
+      "href": "https://drafts.csswg.org/css-color-5/#serial",
+      "level": 2,
+      "title": "Serialization",
+      "number": "8"
+    },
+    {
+      "id": "serial-color-mix",
+      "href": "https://drafts.csswg.org/css-color-5/#serial-color-mix",
+      "level": 3,
+      "title": "Serializing color-mix()",
+      "number": "8.1"
+    },
+    {
+      "id": "serial-color-contrast",
+      "href": "https://drafts.csswg.org/css-color-5/#serial-color-contrast",
+      "level": 3,
+      "title": "Serializing color-contrast()",
+      "number": "8.2"
+    },
+    {
+      "id": "serial-relative-color",
+      "href": "https://drafts.csswg.org/css-color-5/#serial-relative-color",
+      "level": 3,
+      "title": "Serializing relative color functions",
+      "number": "8.3"
+    },
+    {
+      "id": "serial-custom-color",
+      "href": "https://drafts.csswg.org/css-color-5/#serial-custom-color",
+      "level": 3,
+      "title": "Serializing custom color-spaces",
+      "number": "8.4"
+    },
+    {
+      "id": "serializing-device-cmyk-values",
+      "href": "https://drafts.csswg.org/css-color-5/#serializing-device-cmyk-values",
+      "level": 3,
+      "title": "Serializing device-cmyk values",
+      "number": "8.5"
+    },
+    {
+      "id": "sample",
+      "href": "https://drafts.csswg.org/css-color-5/#sample",
+      "level": 2,
+      "title": "Default Style Rules",
+      "number": "9"
+    },
+    {
+      "id": "security",
+      "href": "https://drafts.csswg.org/css-color-5/#security",
+      "level": 2,
+      "title": "10. Security Considerations"
+    },
+    {
+      "id": "privacy",
+      "href": "https://drafts.csswg.org/css-color-5/#privacy",
+      "level": 2,
+      "title": "11. Privacy Considerations"
+    },
+    {
+      "id": "a11y",
+      "href": "https://drafts.csswg.org/css-color-5/#a11y",
+      "level": 2,
+      "title": "12. Accessibility Considerations"
+    },
+    {
+      "id": "changes",
+      "href": "https://drafts.csswg.org/css-color-5/#changes",
+      "level": 2,
+      "title": "13. Changes"
+    },
+    {
+      "id": "changes-20210601",
+      "href": "https://drafts.csswg.org/css-color-5/#changes-20210601",
+      "level": 3,
+      "title": "Since the Working Draft of 1 June 2021",
+      "number": "13.1"
+    },
+    {
+      "id": "changes-20200303",
+      "href": "https://drafts.csswg.org/css-color-5/#changes-20200303",
+      "level": 3,
+      "title": "Since the FPWD of 10 June 2020",
+      "number": "13.2"
+    },
+    {
+      "id": "changes-from-3",
+      "href": "https://drafts.csswg.org/css-color-5/#changes-from-3",
+      "level": 3,
+      "title": "Changes from Colors 4",
+      "number": "13.3"
+    },
+    {
+      "id": "w3c-conformance",
+      "href": "https://drafts.csswg.org/css-color-5/#w3c-conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "w3c-conventions",
+      "href": "https://drafts.csswg.org/css-color-5/#w3c-conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "w3c-conformance-classes",
+      "href": "https://drafts.csswg.org/css-color-5/#w3c-conformance-classes",
+      "level": 3,
+      "title": "Conformance classes"
+    },
+    {
+      "id": "w3c-partial",
+      "href": "https://drafts.csswg.org/css-color-5/#w3c-partial",
+      "level": 3,
+      "title": "Partial implementations"
+    },
+    {
+      "id": "w3c-conform-future-proofing",
+      "href": "https://drafts.csswg.org/css-color-5/#w3c-conform-future-proofing",
+      "level": 4,
+      "title": "Implementations of Unstable and Proprietary Features"
+    },
+    {
+      "id": "w3c-testing",
+      "href": "https://drafts.csswg.org/css-color-5/#w3c-testing",
+      "level": 3,
+      "title": "Non-experimental implementations"
+    },
+    {
+      "id": "index",
+      "href": "https://drafts.csswg.org/css-color-5/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://drafts.csswg.org/css-color-5/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://drafts.csswg.org/css-color-5/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://drafts.csswg.org/css-color-5/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://drafts.csswg.org/css-color-5/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "property-index",
+      "href": "https://drafts.csswg.org/css-color-5/#property-index",
+      "level": 2,
+      "title": "Property Index"
+    },
+    {
+      "id": "color-profile-descriptor-table",
+      "href": "https://drafts.csswg.org/css-color-5/#color-profile-descriptor-table",
+      "level": 3,
+      "title": "@color-profile Descriptors"
+    }
+  ]
+}

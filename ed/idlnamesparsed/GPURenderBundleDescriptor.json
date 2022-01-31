@@ -1,0 +1,92 @@
+{
+  "name": "GPURenderBundleDescriptor",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "WebGPU",
+      "url": "https://www.w3.org/TR/webgpu/"
+    },
+    "fragment": "dictionary GPURenderBundleDescriptor : GPUObjectDescriptorBase {\n};",
+    "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpurenderbundledescriptor"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "GPUObjectDescriptorBase",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "WebGPU",
+        "url": "https://www.w3.org/TR/webgpu/"
+      },
+      "fragment": "dictionary GPUObjectDescriptorBase {\n    USVString label;\n};",
+      "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpuobjectdescriptorbase"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webgpu/": [
+      {
+        "id": "dictdef-gpurenderbundledescriptor",
+        "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpurenderbundledescriptor",
+        "linkingText": [
+          "GPURenderBundleDescriptor"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "render-bundle-creation",
+          "href": "https://gpuweb.github.io/gpuweb/#render-bundle-creation",
+          "title": "Creation",
+          "number": "17.1.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dictdef-gpuobjectdescriptorbase",
+        "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpuobjectdescriptorbase",
+        "linkingText": [
+          "GPUObjectDescriptorBase"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "object-descriptors",
+          "href": "https://gpuweb.github.io/gpuweb/#object-descriptors",
+          "title": "Object Descriptors",
+          "number": "3.1.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gpuobjectdescriptorbase-label",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpuobjectdescriptorbase-label",
+        "linkingText": [
+          "label"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "GPUObjectDescriptorBase"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "object-descriptors",
+          "href": "https://gpuweb.github.io/gpuweb/#object-descriptors",
+          "title": "Object Descriptors",
+          "number": "3.1.4"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

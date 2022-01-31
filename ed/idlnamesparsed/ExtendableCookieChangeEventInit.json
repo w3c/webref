@@ -1,0 +1,213 @@
+{
+  "name": "ExtendableCookieChangeEventInit",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Cookie Store API",
+      "url": "https://wicg.github.io/cookie-store/"
+    },
+    "fragment": "dictionary ExtendableCookieChangeEventInit : ExtendableEventInit {\n  CookieList changed;\n  CookieList deleted;\n};",
+    "href": "https://wicg.github.io/cookie-store/#dictdef-extendablecookiechangeeventinit"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "ExtendableEventInit",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "Service Workers Nightly",
+        "url": "https://www.w3.org/TR/service-workers-1/"
+      },
+      "fragment": "dictionary ExtendableEventInit : EventInit {\n  // Defined for the forward compatibility across the derived events\n};",
+      "href": "https://w3c.github.io/ServiceWorker/#dictdef-extendableeventinit"
+    },
+    "extended": [],
+    "inheritance": {
+      "name": "EventInit",
+      "type": "dictionary",
+      "defined": {
+        "spec": {
+          "title": "DOM Standard",
+          "url": "https://dom.spec.whatwg.org/"
+        },
+        "fragment": "dictionary EventInit {\n  boolean bubbles = false;\n  boolean cancelable = false;\n  boolean composed = false;\n};",
+        "href": "https://dom.spec.whatwg.org/#dictdef-eventinit"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://wicg.github.io/cookie-store/": [
+      {
+        "id": "dictdef-extendablecookiechangeeventinit",
+        "href": "https://wicg.github.io/cookie-store/#dictdef-extendablecookiechangeeventinit",
+        "linkingText": [
+          "ExtendableCookieChangeEventInit"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "ExtendableCookieChangeEvent",
+          "href": "https://wicg.github.io/cookie-store/#ExtendableCookieChangeEvent",
+          "title": "The ExtendableCookieChangeEvent interface",
+          "number": "5.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-extendablecookiechangeeventinit-changed",
+        "href": "https://wicg.github.io/cookie-store/#dom-extendablecookiechangeeventinit-changed",
+        "linkingText": [
+          "changed"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "ExtendableCookieChangeEventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "ExtendableCookieChangeEvent",
+          "href": "https://wicg.github.io/cookie-store/#ExtendableCookieChangeEvent",
+          "title": "The ExtendableCookieChangeEvent interface",
+          "number": "5.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-extendablecookiechangeeventinit-deleted",
+        "href": "https://wicg.github.io/cookie-store/#dom-extendablecookiechangeeventinit-deleted",
+        "linkingText": [
+          "deleted"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "ExtendableCookieChangeEventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "ExtendableCookieChangeEvent",
+          "href": "https://wicg.github.io/cookie-store/#ExtendableCookieChangeEvent",
+          "title": "The ExtendableCookieChangeEvent interface",
+          "number": "5.2"
+        },
+        "definedIn": "pre"
+      }
+    ],
+    "https://www.w3.org/TR/service-workers-1/": [
+      {
+        "id": "dictdef-extendableeventinit",
+        "href": "https://w3c.github.io/ServiceWorker/#dictdef-extendableeventinit",
+        "linkingText": [
+          "ExtendableEventInit"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "extendableevent-interface",
+          "href": "https://w3c.github.io/ServiceWorker/#extendableevent-interface",
+          "title": "ExtendableEvent",
+          "number": "4.4"
+        },
+        "definedIn": "pre"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "dictdef-eventinit",
+        "href": "https://dom.spec.whatwg.org/#dictdef-eventinit",
+        "linkingText": [
+          "EventInit"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventinit-bubbles",
+        "href": "https://dom.spec.whatwg.org/#dom-eventinit-bubbles",
+        "linkingText": [
+          "bubbles"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventinit-cancelable",
+        "href": "https://dom.spec.whatwg.org/#dom-eventinit-cancelable",
+        "linkingText": [
+          "cancelable"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventinit-composed",
+        "href": "https://dom.spec.whatwg.org/#dom-eventinit-composed",
+        "linkingText": [
+          "composed"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

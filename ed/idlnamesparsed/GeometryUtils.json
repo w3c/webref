@@ -1,0 +1,126 @@
+{
+  "name": "GeometryUtils",
+  "type": "interface mixin",
+  "defined": {
+    "spec": {
+      "title": "CSSOM View Module",
+      "url": "https://www.w3.org/TR/cssom-view-1/"
+    },
+    "fragment": "interface mixin GeometryUtils {\n  sequence<DOMQuad> getBoxQuads(optional BoxQuadOptions options = {});\n  DOMQuad convertQuadFromNode(DOMQuadInit quad, GeometryNode from, optional ConvertCoordinateOptions options = {});\n  DOMQuad convertRectFromNode(DOMRectReadOnly rect, GeometryNode from, optional ConvertCoordinateOptions options = {});\n  DOMPoint convertPointFromNode(DOMPointInit point, GeometryNode from, optional ConvertCoordinateOptions options = {}); // XXX z,w turns into 0\n};",
+    "href": "https://drafts.csswg.org/cssom-view/#geometryutils"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/cssom-view-1/": [
+      {
+        "id": "geometryutils",
+        "href": "https://drafts.csswg.org/cssom-view/#geometryutils",
+        "linkingText": [
+          "GeometryUtils"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-geometryutils-interface",
+          "href": "https://drafts.csswg.org/cssom-view/#the-geometryutils-interface",
+          "title": "The GeometryUtils Interface",
+          "number": "11.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-geometryutils-getboxquads",
+        "href": "https://drafts.csswg.org/cssom-view/#dom-geometryutils-getboxquads",
+        "linkingText": [
+          "getBoxQuads(options)",
+          "getBoxQuads()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GeometryUtils"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-geometryutils-interface",
+          "href": "https://drafts.csswg.org/cssom-view/#the-geometryutils-interface",
+          "title": "The GeometryUtils Interface",
+          "number": "11.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-geometryutils-convertquadfromnode",
+        "href": "https://drafts.csswg.org/cssom-view/#dom-geometryutils-convertquadfromnode",
+        "linkingText": [
+          "convertQuadFromNode(quad, from, options)",
+          "convertQuadFromNode(quad, from)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GeometryUtils"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-geometryutils-interface",
+          "href": "https://drafts.csswg.org/cssom-view/#the-geometryutils-interface",
+          "title": "The GeometryUtils Interface",
+          "number": "11.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-geometryutils-convertrectfromnode",
+        "href": "https://drafts.csswg.org/cssom-view/#dom-geometryutils-convertrectfromnode",
+        "linkingText": [
+          "convertRectFromNode(rect, from, options)",
+          "convertRectFromNode(rect, from)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GeometryUtils"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-geometryutils-interface",
+          "href": "https://drafts.csswg.org/cssom-view/#the-geometryutils-interface",
+          "title": "The GeometryUtils Interface",
+          "number": "11.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-geometryutils-convertpointfromnode",
+        "href": "https://drafts.csswg.org/cssom-view/#dom-geometryutils-convertpointfromnode",
+        "linkingText": [
+          "convertPointFromNode(point, from, options)",
+          "convertPointFromNode(point, from)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GeometryUtils"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-geometryutils-interface",
+          "href": "https://drafts.csswg.org/cssom-view/#the-geometryutils-interface",
+          "title": "The GeometryUtils Interface",
+          "number": "11.1"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

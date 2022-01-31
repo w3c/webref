@@ -1,0 +1,240 @@
+{
+  "spec": {
+    "title": "CSS Conditional Rules Module Level 3",
+    "url": "https://drafts.csswg.org/css-conditional-3/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://drafts.csswg.org/css-conditional-3/#title",
+      "level": 1,
+      "title": "CSS Conditional Rules Module Level 3"
+    },
+    {
+      "id": "abstract",
+      "href": "https://drafts.csswg.org/css-conditional-3/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "sotd",
+      "href": "https://drafts.csswg.org/css-conditional-3/#sotd",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://drafts.csswg.org/css-conditional-3/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "introduction",
+      "href": "https://drafts.csswg.org/css-conditional-3/#introduction",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "context",
+      "href": "https://drafts.csswg.org/css-conditional-3/#context",
+      "level": 3,
+      "title": "Background",
+      "number": "1.1"
+    },
+    {
+      "id": "placement",
+      "href": "https://drafts.csswg.org/css-conditional-3/#placement",
+      "level": 3,
+      "title": "Module Interactions",
+      "number": "1.2"
+    },
+    {
+      "id": "processing",
+      "href": "https://drafts.csswg.org/css-conditional-3/#processing",
+      "level": 2,
+      "title": "Processing of conditional group rules",
+      "number": "2"
+    },
+    {
+      "id": "contents-of",
+      "href": "https://drafts.csswg.org/css-conditional-3/#contents-of",
+      "level": 2,
+      "title": "Contents of conditional group rules",
+      "number": "3"
+    },
+    {
+      "id": "use",
+      "href": "https://drafts.csswg.org/css-conditional-3/#use",
+      "level": 2,
+      "title": "Placement of conditional group rules",
+      "number": "4"
+    },
+    {
+      "id": "at-media",
+      "href": "https://drafts.csswg.org/css-conditional-3/#at-media",
+      "level": 2,
+      "title": "Media-specific style sheets: the @media rule",
+      "number": "5"
+    },
+    {
+      "id": "at-supports",
+      "href": "https://drafts.csswg.org/css-conditional-3/#at-supports",
+      "level": 2,
+      "title": "Feature queries: the @supports rule",
+      "number": "6"
+    },
+    {
+      "id": "support-definition",
+      "href": "https://drafts.csswg.org/css-conditional-3/#support-definition",
+      "level": 3,
+      "title": "Definition of support",
+      "number": "6.1"
+    },
+    {
+      "id": "apis",
+      "href": "https://drafts.csswg.org/css-conditional-3/#apis",
+      "level": 2,
+      "title": "APIs",
+      "number": "7"
+    },
+    {
+      "id": "extensions-to-cssrule-interface",
+      "href": "https://drafts.csswg.org/css-conditional-3/#extensions-to-cssrule-interface",
+      "level": 3,
+      "title": "Extensions to the CSSRule interface",
+      "number": "7.1"
+    },
+    {
+      "id": "the-cssconditionrule-interface",
+      "href": "https://drafts.csswg.org/css-conditional-3/#the-cssconditionrule-interface",
+      "level": 3,
+      "title": "The CSSConditionRule interface",
+      "number": "7.2"
+    },
+    {
+      "id": "the-cssmediarule-interface",
+      "href": "https://drafts.csswg.org/css-conditional-3/#the-cssmediarule-interface",
+      "level": 3,
+      "title": "The CSSMediaRule interface",
+      "number": "7.3"
+    },
+    {
+      "id": "the-csssupportsrule-interface",
+      "href": "https://drafts.csswg.org/css-conditional-3/#the-csssupportsrule-interface",
+      "level": 3,
+      "title": "The CSSSupportsRule interface",
+      "number": "7.4"
+    },
+    {
+      "id": "the-css-namespace",
+      "href": "https://drafts.csswg.org/css-conditional-3/#the-css-namespace",
+      "level": 3,
+      "title": "The CSS namespace, and the supports() function",
+      "number": "7.5"
+    },
+    {
+      "id": "security",
+      "href": "https://drafts.csswg.org/css-conditional-3/#security",
+      "level": 2,
+      "title": "Security Considerations"
+    },
+    {
+      "id": "privacy",
+      "href": "https://drafts.csswg.org/css-conditional-3/#privacy",
+      "level": 2,
+      "title": "Privacy Considerations"
+    },
+    {
+      "id": "changes",
+      "href": "https://drafts.csswg.org/css-conditional-3/#changes",
+      "level": 2,
+      "title": "Changes",
+      "number": "8"
+    },
+    {
+      "id": "acknowledgments",
+      "href": "https://drafts.csswg.org/css-conditional-3/#acknowledgments",
+      "level": 2,
+      "title": "Acknowledgments"
+    },
+    {
+      "id": "w3c-conformance",
+      "href": "https://drafts.csswg.org/css-conditional-3/#w3c-conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "w3c-conventions",
+      "href": "https://drafts.csswg.org/css-conditional-3/#w3c-conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "w3c-conformance-classes",
+      "href": "https://drafts.csswg.org/css-conditional-3/#w3c-conformance-classes",
+      "level": 3,
+      "title": "Conformance classes"
+    },
+    {
+      "id": "w3c-partial",
+      "href": "https://drafts.csswg.org/css-conditional-3/#w3c-partial",
+      "level": 3,
+      "title": "Partial implementations"
+    },
+    {
+      "id": "w3c-conform-future-proofing",
+      "href": "https://drafts.csswg.org/css-conditional-3/#w3c-conform-future-proofing",
+      "level": 4,
+      "title": "Implementations of Unstable and Proprietary Features"
+    },
+    {
+      "id": "w3c-testing",
+      "href": "https://drafts.csswg.org/css-conditional-3/#w3c-testing",
+      "level": 3,
+      "title": "Non-experimental implementations"
+    },
+    {
+      "id": "index",
+      "href": "https://drafts.csswg.org/css-conditional-3/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://drafts.csswg.org/css-conditional-3/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://drafts.csswg.org/css-conditional-3/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://drafts.csswg.org/css-conditional-3/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://drafts.csswg.org/css-conditional-3/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://drafts.csswg.org/css-conditional-3/#informative",
+      "level": 3,
+      "title": "Informative References"
+    },
+    {
+      "id": "idl-index",
+      "href": "https://drafts.csswg.org/css-conditional-3/#idl-index",
+      "level": 2,
+      "title": "IDL Index"
+    }
+  ]
+}

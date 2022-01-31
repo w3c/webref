@@ -1,0 +1,329 @@
+{
+  "name": "RemotePlayback",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Remote Playback API",
+      "url": "https://www.w3.org/TR/remote-playback/"
+    },
+    "fragment": "[Exposed=Window]\ninterface RemotePlayback : EventTarget {\n  Promise<long> watchAvailability(RemotePlaybackAvailabilityCallback callback);\n  Promise<undefined> cancelWatchAvailability(optional long id);\n\n  readonly attribute RemotePlaybackState state;\n\n  attribute EventHandler onconnecting;\n  attribute EventHandler onconnect;\n  attribute EventHandler ondisconnect;\n\n  Promise<undefined> prompt();\n};",
+    "href": "https://w3c.github.io/remote-playback/#dom-remoteplayback"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "EventTarget",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=*]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+      "href": "https://dom.spec.whatwg.org/#eventtarget"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/remote-playback/": [
+      {
+        "id": "dom-remoteplayback",
+        "href": "https://w3c.github.io/remote-playback/#dom-remoteplayback",
+        "linkingText": [
+          "RemotePlayback"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "remoteplayback-interface",
+          "href": "https://w3c.github.io/remote-playback/#remoteplayback-interface",
+          "title": "RemotePlayback interface",
+          "number": "5.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-remoteplayback-watchavailability",
+        "href": "https://w3c.github.io/remote-playback/#dom-remoteplayback-watchavailability",
+        "linkingText": [
+          "watchAvailability()",
+          "watchAvailability(callback)"
+        ],
+        "localLinkingText": [
+          "RemotePlayback.watchAvailability",
+          "RemotePlayback.watchAvailability()",
+          "watchAvailability"
+        ],
+        "type": "method",
+        "for": [
+          "RemotePlayback"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "remoteplayback-interface",
+          "href": "https://w3c.github.io/remote-playback/#remoteplayback-interface",
+          "title": "RemotePlayback interface",
+          "number": "5.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-remoteplayback-cancelwatchavailability",
+        "href": "https://w3c.github.io/remote-playback/#dom-remoteplayback-cancelwatchavailability",
+        "linkingText": [
+          "cancelWatchAvailability()",
+          "cancelWatchAvailability(id)"
+        ],
+        "localLinkingText": [
+          "RemotePlayback.cancelWatchAvailability",
+          "RemotePlayback.cancelWatchAvailability()",
+          "cancelWatchAvailability"
+        ],
+        "type": "method",
+        "for": [
+          "RemotePlayback"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "stop-observing-remote-playback-devices-availability",
+          "href": "https://w3c.github.io/remote-playback/#stop-observing-remote-playback-devices-availability",
+          "title": "Stop observing remote playback devices availability",
+          "number": "5.2.1.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-remoteplayback-state",
+        "href": "https://w3c.github.io/remote-playback/#dom-remoteplayback-state",
+        "linkingText": [
+          "state"
+        ],
+        "localLinkingText": [
+          "RemotePlayback.state"
+        ],
+        "type": "attribute",
+        "for": [
+          "RemotePlayback"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-state-attribute",
+          "href": "https://w3c.github.io/remote-playback/#the-state-attribute",
+          "title": "The state attribute",
+          "number": "5.2.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-remoteplayback-onconnecting",
+        "href": "https://w3c.github.io/remote-playback/#dom-remoteplayback-onconnecting",
+        "linkingText": [
+          "onconnecting"
+        ],
+        "localLinkingText": [
+          "RemotePlayback.onconnecting"
+        ],
+        "type": "attribute",
+        "for": [
+          "RemotePlayback"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers",
+          "href": "https://w3c.github.io/remote-playback/#event-handlers",
+          "title": "Event Handlers",
+          "number": "5.2.8"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "dom-remoteplayback-onconnect",
+        "href": "https://w3c.github.io/remote-playback/#dom-remoteplayback-onconnect",
+        "linkingText": [
+          "onconnect"
+        ],
+        "localLinkingText": [
+          "RemotePlayback.onconnect"
+        ],
+        "type": "attribute",
+        "for": [
+          "RemotePlayback"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers",
+          "href": "https://w3c.github.io/remote-playback/#event-handlers",
+          "title": "Event Handlers",
+          "number": "5.2.8"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "dom-remoteplayback-ondisconnect",
+        "href": "https://w3c.github.io/remote-playback/#dom-remoteplayback-ondisconnect",
+        "linkingText": [
+          "ondisconnect"
+        ],
+        "localLinkingText": [
+          "RemotePlayback.ondisconnect"
+        ],
+        "type": "attribute",
+        "for": [
+          "RemotePlayback"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers",
+          "href": "https://w3c.github.io/remote-playback/#event-handlers",
+          "title": "Event Handlers",
+          "number": "5.2.8"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "dom-remoteplayback-prompt",
+        "href": "https://w3c.github.io/remote-playback/#dom-remoteplayback-prompt",
+        "linkingText": [
+          "prompt()"
+        ],
+        "localLinkingText": [
+          "RemotePlayback.prompt",
+          "RemotePlayback.prompt()",
+          "prompt"
+        ],
+        "type": "method",
+        "for": [
+          "RemotePlayback"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "prompt-user-for-changing-remote-playback-state",
+          "href": "https://w3c.github.io/remote-playback/#prompt-user-for-changing-remote-playback-state",
+          "title": "Prompt user for changing remote playback state",
+          "number": "5.2.2"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "eventtarget",
+        "href": "https://dom.spec.whatwg.org/#eventtarget",
+        "linkingText": [
+          "EventTarget"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventtarget-eventtarget",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-eventtarget",
+        "linkingText": [
+          "EventTarget()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-addeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-addeventlistener",
+        "linkingText": [
+          "addEventListener(type, callback, options)",
+          "addEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-removeeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-removeeventlistener",
+        "linkingText": [
+          "removeEventListener(type, callback, options)",
+          "removeEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-dispatchevent",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-dispatchevent",
+        "linkingText": [
+          "dispatchEvent(event)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

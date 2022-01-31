@@ -1,0 +1,102 @@
+{
+  "name": "NavigatorPlugins",
+  "type": "interface mixin",
+  "defined": {
+    "spec": {
+      "title": "HTML Standard",
+      "url": "https://html.spec.whatwg.org/multipage/"
+    },
+    "fragment": "interface mixin NavigatorPlugins {\n  [SameObject] readonly attribute PluginArray plugins;\n  [SameObject] readonly attribute MimeTypeArray mimeTypes;\n  boolean javaEnabled();\n  readonly attribute boolean pdfViewerEnabled;\n};"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://html.spec.whatwg.org/multipage/": [
+      {
+        "id": "dom-navigator-plugins",
+        "href": "https://html.spec.whatwg.org/multipage/system-state.html#dom-navigator-plugins",
+        "linkingText": [
+          "plugins"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "NavigatorPlugins"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "pdf-viewing-support",
+          "href": "https://html.spec.whatwg.org/multipage/system-state.html#pdf-viewing-support",
+          "title": "PDF viewing support",
+          "number": "8.9.1.6"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-navigator-mimetypes",
+        "href": "https://html.spec.whatwg.org/multipage/system-state.html#dom-navigator-mimetypes",
+        "linkingText": [
+          "mimeTypes"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "NavigatorPlugins"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "pdf-viewing-support",
+          "href": "https://html.spec.whatwg.org/multipage/system-state.html#pdf-viewing-support",
+          "title": "PDF viewing support",
+          "number": "8.9.1.6"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-navigator-javaenabled",
+        "href": "https://html.spec.whatwg.org/multipage/system-state.html#dom-navigator-javaenabled",
+        "linkingText": [
+          "javaEnabled()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "NavigatorPlugins"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "pdf-viewing-support",
+          "href": "https://html.spec.whatwg.org/multipage/system-state.html#pdf-viewing-support",
+          "title": "PDF viewing support",
+          "number": "8.9.1.6"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-navigator-pdfviewerenabled",
+        "href": "https://html.spec.whatwg.org/multipage/system-state.html#dom-navigator-pdfviewerenabled",
+        "linkingText": [
+          "pdfViewerEnabled"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "NavigatorPlugins"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "pdf-viewing-support",
+          "href": "https://html.spec.whatwg.org/multipage/system-state.html#pdf-viewing-support",
+          "title": "PDF viewing support",
+          "number": "8.9.1.6"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

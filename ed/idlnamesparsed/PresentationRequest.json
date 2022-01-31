@@ -1,0 +1,311 @@
+{
+  "name": "PresentationRequest",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Presentation API",
+      "url": "https://www.w3.org/TR/presentation-api/"
+    },
+    "fragment": "[SecureContext, Exposed=Window]\ninterface PresentationRequest : EventTarget {\n  constructor(USVString url);\n  constructor(sequence<USVString> urls);\n  Promise<PresentationConnection> start();\n  Promise<PresentationConnection> reconnect(USVString presentationId);\n  Promise<PresentationAvailability> getAvailability();\n\n  attribute EventHandler onconnectionavailable;\n};",
+    "href": "https://w3c.github.io/presentation-api/#dom-presentationrequest"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "EventTarget",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=*]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+      "href": "https://dom.spec.whatwg.org/#eventtarget"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/presentation-api/": [
+      {
+        "id": "dom-presentationrequest",
+        "href": "https://w3c.github.io/presentation-api/#dom-presentationrequest",
+        "linkingText": [
+          "PresentationRequest"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-presentationrequest",
+          "href": "https://w3c.github.io/presentation-api/#interface-presentationrequest",
+          "title": "Interface PresentationRequest",
+          "number": "6.3"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-presentationrequest-constructor",
+        "href": "https://w3c.github.io/presentation-api/#dom-presentationrequest-constructor",
+        "linkingText": [
+          "constructor()",
+          "constructor(url)"
+        ],
+        "localLinkingText": [
+          "PresentationRequest.constructor",
+          "PresentationRequest.constructor()",
+          "constructor"
+        ],
+        "type": "constructor",
+        "for": [
+          "PresentationRequest"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-presentationrequest",
+          "href": "https://w3c.github.io/presentation-api/#interface-presentationrequest",
+          "title": "Interface PresentationRequest",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-presentationrequest-constructor!overload-1",
+        "href": "https://w3c.github.io/presentation-api/#dom-presentationrequest-constructor!overload-1",
+        "linkingText": [
+          "constructor!overload-1()",
+          "constructor!overload-1(urls)"
+        ],
+        "localLinkingText": [
+          "PresentationRequest.constructor!overload-1",
+          "PresentationRequest.constructor!overload-1()",
+          "constructor!overload-1"
+        ],
+        "type": "constructor",
+        "for": [
+          "PresentationRequest"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-presentationrequest",
+          "href": "https://w3c.github.io/presentation-api/#interface-presentationrequest",
+          "title": "Interface PresentationRequest",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-presentationrequest-start",
+        "href": "https://w3c.github.io/presentation-api/#dom-presentationrequest-start",
+        "linkingText": [
+          "start()"
+        ],
+        "localLinkingText": [
+          "PresentationRequest.start",
+          "PresentationRequest.start()",
+          "start"
+        ],
+        "type": "method",
+        "for": [
+          "PresentationRequest"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "selecting-a-presentation-display",
+          "href": "https://w3c.github.io/presentation-api/#selecting-a-presentation-display",
+          "title": "Selecting a presentation display",
+          "number": "6.3.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-presentationrequest-reconnect",
+        "href": "https://w3c.github.io/presentation-api/#dom-presentationrequest-reconnect",
+        "linkingText": [
+          "reconnect()",
+          "reconnect(presentationId)"
+        ],
+        "localLinkingText": [
+          "PresentationRequest.reconnect",
+          "PresentationRequest.reconnect()",
+          "reconnect"
+        ],
+        "type": "method",
+        "for": [
+          "PresentationRequest"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "reconnecting-to-a-presentation",
+          "href": "https://w3c.github.io/presentation-api/#reconnecting-to-a-presentation",
+          "title": "Reconnecting to a presentation",
+          "number": "6.3.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-presentationrequest-getavailability",
+        "href": "https://w3c.github.io/presentation-api/#dom-presentationrequest-getavailability",
+        "linkingText": [
+          "getAvailability()"
+        ],
+        "localLinkingText": [
+          "PresentationRequest.getAvailability",
+          "PresentationRequest.getAvailability()",
+          "getAvailability"
+        ],
+        "type": "method",
+        "for": [
+          "PresentationRequest"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "getting-the-presentation-displays-availability-information",
+          "href": "https://w3c.github.io/presentation-api/#getting-the-presentation-displays-availability-information",
+          "title": "Getting the presentation displays availability information",
+          "number": "6.4.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-presentationrequest-onconnectionavailable",
+        "href": "https://w3c.github.io/presentation-api/#dom-presentationrequest-onconnectionavailable",
+        "linkingText": [
+          "onconnectionavailable"
+        ],
+        "localLinkingText": [
+          "PresentationRequest.onconnectionavailable"
+        ],
+        "type": "attribute",
+        "for": [
+          "PresentationRequest"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers",
+          "href": "https://w3c.github.io/presentation-api/#event-handlers",
+          "title": "Event Handlers",
+          "number": "6.3.6"
+        },
+        "definedIn": "table"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "eventtarget",
+        "href": "https://dom.spec.whatwg.org/#eventtarget",
+        "linkingText": [
+          "EventTarget"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventtarget-eventtarget",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-eventtarget",
+        "linkingText": [
+          "EventTarget()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-addeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-addeventlistener",
+        "linkingText": [
+          "addEventListener(type, callback, options)",
+          "addEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-removeeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-removeeventlistener",
+        "linkingText": [
+          "removeEventListener(type, callback, options)",
+          "removeEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-dispatchevent",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-dispatchevent",
+        "linkingText": [
+          "dispatchEvent(event)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

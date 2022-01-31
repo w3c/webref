@@ -1,0 +1,199 @@
+{
+  "name": "AnimationEventInit",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "CSS Animations Level 1",
+      "url": "https://www.w3.org/TR/css-animations-1/"
+    },
+    "fragment": "dictionary AnimationEventInit : EventInit {\n  CSSOMString animationName = \"\";\n  double elapsedTime = 0.0;\n  CSSOMString pseudoElement = \"\";\n};",
+    "href": "https://drafts.csswg.org/css-animations/#dictdef-animationeventinit"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "EventInit",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "dictionary EventInit {\n  boolean bubbles = false;\n  boolean cancelable = false;\n  boolean composed = false;\n};",
+      "href": "https://dom.spec.whatwg.org/#dictdef-eventinit"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/css-animations-1/": [
+      {
+        "id": "dictdef-animationeventinit",
+        "href": "https://drafts.csswg.org/css-animations/#dictdef-animationeventinit",
+        "linkingText": [
+          "AnimationEventInit"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-animationevent-idl",
+          "href": "https://drafts.csswg.org/css-animations/#interface-animationevent-idl",
+          "title": "IDL Definition",
+          "number": "4.1.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-animationeventinit-animationname",
+        "href": "https://drafts.csswg.org/css-animations/#dom-animationeventinit-animationname",
+        "linkingText": [
+          "animationName"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "AnimationEventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-animationevent-idl",
+          "href": "https://drafts.csswg.org/css-animations/#interface-animationevent-idl",
+          "title": "IDL Definition",
+          "number": "4.1.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-animationeventinit-elapsedtime",
+        "href": "https://drafts.csswg.org/css-animations/#dom-animationeventinit-elapsedtime",
+        "linkingText": [
+          "elapsedTime"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "AnimationEventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-animationevent-idl",
+          "href": "https://drafts.csswg.org/css-animations/#interface-animationevent-idl",
+          "title": "IDL Definition",
+          "number": "4.1.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-animationeventinit-pseudoelement",
+        "href": "https://drafts.csswg.org/css-animations/#dom-animationeventinit-pseudoelement",
+        "linkingText": [
+          "pseudoElement"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "AnimationEventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-animationevent-idl",
+          "href": "https://drafts.csswg.org/css-animations/#interface-animationevent-idl",
+          "title": "IDL Definition",
+          "number": "4.1.1"
+        },
+        "definedIn": "pre"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "dictdef-eventinit",
+        "href": "https://dom.spec.whatwg.org/#dictdef-eventinit",
+        "linkingText": [
+          "EventInit"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventinit-bubbles",
+        "href": "https://dom.spec.whatwg.org/#dom-eventinit-bubbles",
+        "linkingText": [
+          "bubbles"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventinit-cancelable",
+        "href": "https://dom.spec.whatwg.org/#dom-eventinit-cancelable",
+        "linkingText": [
+          "cancelable"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventinit-composed",
+        "href": "https://dom.spec.whatwg.org/#dom-eventinit-composed",
+        "linkingText": [
+          "composed"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

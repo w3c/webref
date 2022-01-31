@@ -1,0 +1,122 @@
+{
+  "name": "XRDepthInformation",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebXR Depth Sensing Module",
+      "url": "https://www.w3.org/TR/webxr-depth-sensing-1/"
+    },
+    "fragment": "[SecureContext, Exposed=Window]\ninterface XRDepthInformation {\n  readonly attribute unsigned long width;\n  readonly attribute unsigned long height;\n\n  [SameObject] readonly attribute XRRigidTransform normDepthBufferFromNormView;\n  readonly attribute float rawValueToMeters;\n};",
+    "href": "https://immersive-web.github.io/depth-sensing/#xrdepthinformation"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webxr-depth-sensing-1/": [
+      {
+        "id": "xrdepthinformation",
+        "href": "https://immersive-web.github.io/depth-sensing/#xrdepthinformation",
+        "linkingText": [
+          "XRDepthInformation"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xr-depth-info-section",
+          "href": "https://immersive-web.github.io/depth-sensing/#xr-depth-info-section",
+          "title": "XRDepthInformation",
+          "number": "3.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-xrdepthinformation-width",
+        "href": "https://immersive-web.github.io/depth-sensing/#dom-xrdepthinformation-width",
+        "linkingText": [
+          "width"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XRDepthInformation"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xr-depth-info-section",
+          "href": "https://immersive-web.github.io/depth-sensing/#xr-depth-info-section",
+          "title": "XRDepthInformation",
+          "number": "3.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-xrdepthinformation-height",
+        "href": "https://immersive-web.github.io/depth-sensing/#dom-xrdepthinformation-height",
+        "linkingText": [
+          "height"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XRDepthInformation"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xr-depth-info-section",
+          "href": "https://immersive-web.github.io/depth-sensing/#xr-depth-info-section",
+          "title": "XRDepthInformation",
+          "number": "3.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-xrdepthinformation-normdepthbufferfromnormview",
+        "href": "https://immersive-web.github.io/depth-sensing/#dom-xrdepthinformation-normdepthbufferfromnormview",
+        "linkingText": [
+          "normDepthBufferFromNormView"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XRDepthInformation"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xr-depth-info-section",
+          "href": "https://immersive-web.github.io/depth-sensing/#xr-depth-info-section",
+          "title": "XRDepthInformation",
+          "number": "3.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-xrdepthinformation-rawvaluetometers",
+        "href": "https://immersive-web.github.io/depth-sensing/#dom-xrdepthinformation-rawvaluetometers",
+        "linkingText": [
+          "rawValueToMeters"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XRDepthInformation"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xr-depth-info-section",
+          "href": "https://immersive-web.github.io/depth-sensing/#xr-depth-info-section",
+          "title": "XRDepthInformation",
+          "number": "3.1"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

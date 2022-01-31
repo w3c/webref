@@ -1,0 +1,218 @@
+{
+  "name": "OscillatorOptions",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Web Audio API",
+      "url": "https://www.w3.org/TR/webaudio/"
+    },
+    "fragment": "dictionary OscillatorOptions : AudioNodeOptions {\n  OscillatorType type = \"sine\";\n  float frequency = 440;\n  float detune = 0;\n  PeriodicWave periodicWave;\n};",
+    "href": "https://webaudio.github.io/web-audio-api/#dictdef-oscillatoroptions"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "AudioNodeOptions",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "Web Audio API",
+        "url": "https://www.w3.org/TR/webaudio/"
+      },
+      "fragment": "dictionary AudioNodeOptions {\n  unsigned long channelCount;\n  ChannelCountMode channelCountMode;\n  ChannelInterpretation channelInterpretation;\n};",
+      "href": "https://webaudio.github.io/web-audio-api/#dictdef-audionodeoptions"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webaudio/": [
+      {
+        "id": "dictdef-oscillatoroptions",
+        "href": "https://webaudio.github.io/web-audio-api/#dictdef-oscillatoroptions",
+        "linkingText": [
+          "OscillatorOptions"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "OscillatorOptions",
+          "href": "https://webaudio.github.io/web-audio-api/#OscillatorOptions",
+          "title": "OscillatorOptions",
+          "number": "1.26.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-oscillatoroptions-type",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-oscillatoroptions-type",
+        "linkingText": [
+          "type"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "OscillatorOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-oscillatoroptions-members",
+          "href": "https://webaudio.github.io/web-audio-api/#dictionary-oscillatoroptions-members",
+          "title": "Dictionary OscillatorOptions Members",
+          "number": "1.26.4.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-oscillatoroptions-frequency",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-oscillatoroptions-frequency",
+        "linkingText": [
+          "frequency"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "OscillatorOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-oscillatoroptions-members",
+          "href": "https://webaudio.github.io/web-audio-api/#dictionary-oscillatoroptions-members",
+          "title": "Dictionary OscillatorOptions Members",
+          "number": "1.26.4.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-oscillatoroptions-detune",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-oscillatoroptions-detune",
+        "linkingText": [
+          "detune"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "OscillatorOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-oscillatoroptions-members",
+          "href": "https://webaudio.github.io/web-audio-api/#dictionary-oscillatoroptions-members",
+          "title": "Dictionary OscillatorOptions Members",
+          "number": "1.26.4.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-oscillatoroptions-periodicwave",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-oscillatoroptions-periodicwave",
+        "linkingText": [
+          "periodicWave"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "OscillatorOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-oscillatoroptions-members",
+          "href": "https://webaudio.github.io/web-audio-api/#dictionary-oscillatoroptions-members",
+          "title": "Dictionary OscillatorOptions Members",
+          "number": "1.26.4.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dictdef-audionodeoptions",
+        "href": "https://webaudio.github.io/web-audio-api/#dictdef-audionodeoptions",
+        "linkingText": [
+          "AudioNodeOptions"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "AudioNodeOptions",
+          "href": "https://webaudio.github.io/web-audio-api/#AudioNodeOptions",
+          "title": "AudioNodeOptions",
+          "number": "1.5.6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-audionodeoptions-channelcount",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-audionodeoptions-channelcount",
+        "linkingText": [
+          "channelCount"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "AudioNodeOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-audionodeoptions-members",
+          "href": "https://webaudio.github.io/web-audio-api/#dictionary-audionodeoptions-members",
+          "title": "Dictionary AudioNodeOptions Members",
+          "number": "1.5.6.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-audionodeoptions-channelcountmode",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-audionodeoptions-channelcountmode",
+        "linkingText": [
+          "channelCountMode"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "AudioNodeOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-audionodeoptions-members",
+          "href": "https://webaudio.github.io/web-audio-api/#dictionary-audionodeoptions-members",
+          "title": "Dictionary AudioNodeOptions Members",
+          "number": "1.5.6.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-audionodeoptions-channelinterpretation",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-audionodeoptions-channelinterpretation",
+        "linkingText": [
+          "channelInterpretation"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "AudioNodeOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-audionodeoptions-members",
+          "href": "https://webaudio.github.io/web-audio-api/#dictionary-audionodeoptions-members",
+          "title": "Dictionary AudioNodeOptions Members",
+          "number": "1.5.6.1"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

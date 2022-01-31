@@ -1,0 +1,197 @@
+{
+  "name": "RTCRtpTransceiver",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
+      "url": "https://www.w3.org/TR/webrtc/"
+    },
+    "fragment": "[Exposed=Window]\ninterface RTCRtpTransceiver {\n  readonly attribute DOMString? mid;\n  [SameObject] readonly attribute RTCRtpSender sender;\n  [SameObject] readonly attribute RTCRtpReceiver receiver;\n  attribute RTCRtpTransceiverDirection direction;\n  readonly attribute RTCRtpTransceiverDirection? currentDirection;\n  undefined stop();\n  undefined setCodecPreferences(sequence<RTCRtpCodecCapability> codecs);\n};",
+    "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtptransceiver"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webrtc/": [
+      {
+        "id": "dom-rtcrtptransceiver",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtptransceiver",
+        "linkingText": [
+          "RTCRtpTransceiver"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "rtcrtptransceiver-interface",
+          "href": "https://w3c.github.io/webrtc-pc/#rtcrtptransceiver-interface",
+          "title": "RTCRtpTransceiver Interface",
+          "number": "5.4"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-rtptransceiver-mid",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtptransceiver-mid",
+        "linkingText": [
+          "mid"
+        ],
+        "localLinkingText": [
+          "RTCRtpTransceiver.mid"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCRtpTransceiver"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-11",
+          "href": "https://w3c.github.io/webrtc-pc/#attributes-11",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcrtptransceiver-sender",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtptransceiver-sender",
+        "linkingText": [
+          "sender"
+        ],
+        "localLinkingText": [
+          "RTCRtpTransceiver.sender"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCRtpTransceiver"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-11",
+          "href": "https://w3c.github.io/webrtc-pc/#attributes-11",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcrtptransceiver-receiver",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtptransceiver-receiver",
+        "linkingText": [
+          "receiver"
+        ],
+        "localLinkingText": [
+          "RTCRtpTransceiver.receiver"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCRtpTransceiver"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-11",
+          "href": "https://w3c.github.io/webrtc-pc/#attributes-11",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcrtptransceiver-direction",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtptransceiver-direction",
+        "linkingText": [
+          "direction"
+        ],
+        "localLinkingText": [
+          "RTCRtpTransceiver.direction"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCRtpTransceiver"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-11",
+          "href": "https://w3c.github.io/webrtc-pc/#attributes-11",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcrtptransceiver-currentdirection",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtptransceiver-currentdirection",
+        "linkingText": [
+          "currentDirection"
+        ],
+        "localLinkingText": [
+          "RTCRtpTransceiver.currentDirection"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCRtpTransceiver"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-11",
+          "href": "https://w3c.github.io/webrtc-pc/#attributes-11",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcrtptransceiver-stop",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtptransceiver-stop",
+        "linkingText": [
+          "stop()"
+        ],
+        "localLinkingText": [
+          "RTCRtpTransceiver.stop",
+          "RTCRtpTransceiver.stop()",
+          "stop"
+        ],
+        "type": "method",
+        "for": [
+          "RTCRtpTransceiver"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "methods-8",
+          "href": "https://w3c.github.io/webrtc-pc/#methods-8",
+          "title": "Methods"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcrtptransceiver-setcodecpreferences",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtptransceiver-setcodecpreferences",
+        "linkingText": [
+          "setCodecPreferences()",
+          "setCodecPreferences(codecs)"
+        ],
+        "localLinkingText": [
+          "RTCRtpTransceiver.setCodecPreferences",
+          "RTCRtpTransceiver.setCodecPreferences()",
+          "setCodecPreferences"
+        ],
+        "type": "method",
+        "for": [
+          "RTCRtpTransceiver"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "methods-8",
+          "href": "https://w3c.github.io/webrtc-pc/#methods-8",
+          "title": "Methods"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

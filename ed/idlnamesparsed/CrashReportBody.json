@@ -1,0 +1,94 @@
+{
+  "name": "CrashReportBody",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Crash Reporting",
+      "url": "https://wicg.github.io/crash-reporting/"
+    },
+    "fragment": "[Exposed=(Window,Worker)]\ninterface CrashReportBody : ReportBody {\n  [Default] object toJSON();\n  readonly attribute DOMString? reason;\n};",
+    "href": "https://wicg.github.io/crash-reporting/#crashreportbody"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "ReportBody",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "Reporting API 1",
+        "url": "https://www.w3.org/TR/reporting-1/"
+      },
+      "fragment": "[Exposed=(Window,Worker)]\ninterface ReportBody {\n  [Default] object toJSON();\n};",
+      "href": "https://w3c.github.io/reporting/#reportbody"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://wicg.github.io/crash-reporting/": [
+      {
+        "id": "crashreportbody",
+        "href": "https://wicg.github.io/crash-reporting/#crashreportbody",
+        "linkingText": [
+          "CrashReportBody"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "crash-report",
+          "href": "https://wicg.github.io/crash-reporting/#crash-report",
+          "title": "Crash Reports",
+          "number": "3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-crashreportbody-reason",
+        "href": "https://wicg.github.io/crash-reporting/#dom-crashreportbody-reason",
+        "linkingText": [
+          "reason"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "CrashReportBody"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "crash-report",
+          "href": "https://wicg.github.io/crash-reporting/#crash-report",
+          "title": "Crash Reports",
+          "number": "3"
+        },
+        "definedIn": "pre"
+      }
+    ],
+    "https://www.w3.org/TR/reporting-1/": [
+      {
+        "id": "reportbody",
+        "href": "https://w3c.github.io/reporting/#reportbody",
+        "linkingText": [
+          "ReportBody"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-reporting-observer",
+          "href": "https://w3c.github.io/reporting/#interface-reporting-observer",
+          "title": "Interface ReportingObserver",
+          "number": "4.1"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

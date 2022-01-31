@@ -1,0 +1,104 @@
+{
+  "name": "USBIsochronousInTransferResult",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebUSB API",
+      "url": "https://wicg.github.io/webusb/"
+    },
+    "fragment": "[\n  Exposed=(DedicatedWorker,SharedWorker,Window),\n  SecureContext\n]\ninterface USBIsochronousInTransferResult {\n  constructor(sequence<USBIsochronousInTransferPacket> packets, optional DataView? data);\n  readonly attribute DataView? data;\n  readonly attribute FrozenArray<USBIsochronousInTransferPacket> packets;\n};",
+    "href": "https://wicg.github.io/webusb/#usbisochronousintransferresult"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://wicg.github.io/webusb/": [
+      {
+        "id": "usbisochronousintransferresult",
+        "href": "https://wicg.github.io/webusb/#usbisochronousintransferresult",
+        "linkingText": [
+          "USBIsochronousInTransferResult"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "transfers",
+          "href": "https://wicg.github.io/webusb/#transfers",
+          "title": "Transfers",
+          "number": "6.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-usbisochronousintransferresult-usbisochronousintransferresult",
+        "href": "https://wicg.github.io/webusb/#dom-usbisochronousintransferresult-usbisochronousintransferresult",
+        "linkingText": [
+          "USBIsochronousInTransferResult(packets, data)",
+          "constructor(packets, data)",
+          "USBIsochronousInTransferResult(packets)",
+          "constructor(packets)"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "USBIsochronousInTransferResult"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "transfers",
+          "href": "https://wicg.github.io/webusb/#transfers",
+          "title": "Transfers",
+          "number": "6.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-usbisochronousintransferresult-data",
+        "href": "https://wicg.github.io/webusb/#dom-usbisochronousintransferresult-data",
+        "linkingText": [
+          "data"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "USBIsochronousInTransferResult"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "transfers",
+          "href": "https://wicg.github.io/webusb/#transfers",
+          "title": "Transfers",
+          "number": "6.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-usbisochronousintransferresult-packets",
+        "href": "https://wicg.github.io/webusb/#dom-usbisochronousintransferresult-packets",
+        "linkingText": [
+          "packets"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "USBIsochronousInTransferResult"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "transfers",
+          "href": "https://wicg.github.io/webusb/#transfers",
+          "title": "Transfers",
+          "number": "6.1"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

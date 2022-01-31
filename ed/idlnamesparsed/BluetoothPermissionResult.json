@@ -1,0 +1,285 @@
+{
+  "name": "BluetoothPermissionResult",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Web Bluetooth",
+      "url": "https://webbluetoothcg.github.io/web-bluetooth/"
+    },
+    "fragment": "[Exposed=Window]\ninterface BluetoothPermissionResult : PermissionStatus {\n  attribute FrozenArray<BluetoothDevice> devices;\n};",
+    "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetoothpermissionresult"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "PermissionStatus",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "Permissions",
+        "url": "https://www.w3.org/TR/permissions/"
+      },
+      "fragment": "[Exposed=(Window,Worker)]\ninterface PermissionStatus : EventTarget {\n  readonly attribute PermissionState state;\n  readonly attribute PermissionName name;\n  attribute EventHandler onchange;\n};",
+      "href": "https://w3c.github.io/permissions/#dom-permissionstatus"
+    },
+    "extended": [],
+    "inheritance": {
+      "name": "EventTarget",
+      "type": "interface",
+      "defined": {
+        "spec": {
+          "title": "DOM Standard",
+          "url": "https://dom.spec.whatwg.org/"
+        },
+        "fragment": "[Exposed=*]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+        "href": "https://dom.spec.whatwg.org/#eventtarget"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://webbluetoothcg.github.io/web-bluetooth/": [
+      {
+        "id": "bluetoothpermissionresult",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetoothpermissionresult",
+        "linkingText": [
+          "BluetoothPermissionResult"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "permission-api-integration",
+          "href": "https://webbluetoothcg.github.io/web-bluetooth/#permission-api-integration",
+          "title": "Permission API Integration",
+          "number": "3.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-bluetoothpermissionresult-devices",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothpermissionresult-devices",
+        "linkingText": [
+          "devices"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "BluetoothPermissionResult"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "permission-api-integration",
+          "href": "https://webbluetoothcg.github.io/web-bluetooth/#permission-api-integration",
+          "title": "Permission API Integration",
+          "number": "3.1"
+        },
+        "definedIn": "pre"
+      }
+    ],
+    "https://www.w3.org/TR/permissions/": [
+      {
+        "id": "dom-permissionstatus",
+        "href": "https://w3c.github.io/permissions/#dom-permissionstatus",
+        "linkingText": [
+          "PermissionStatus"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "permissionstatus-interface-0",
+          "href": "https://w3c.github.io/permissions/#permissionstatus-interface-0",
+          "title": "PermissionStatus interface",
+          "number": "5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-permissionstatus-state",
+        "href": "https://w3c.github.io/permissions/#dom-permissionstatus-state",
+        "linkingText": [
+          "state"
+        ],
+        "localLinkingText": [
+          "PermissionStatus.state"
+        ],
+        "type": "attribute",
+        "for": [
+          "PermissionStatus"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "state-attribute",
+          "href": "https://w3c.github.io/permissions/#state-attribute",
+          "title": "state attribute",
+          "number": "5.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-permissionstatus-name",
+        "href": "https://w3c.github.io/permissions/#dom-permissionstatus-name",
+        "linkingText": [
+          "name"
+        ],
+        "localLinkingText": [
+          "PermissionStatus.name"
+        ],
+        "type": "attribute",
+        "for": [
+          "PermissionStatus"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "name-attribute",
+          "href": "https://w3c.github.io/permissions/#name-attribute",
+          "title": "name attribute",
+          "number": "5.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-permissionstatus-onchange",
+        "href": "https://w3c.github.io/permissions/#dom-permissionstatus-onchange",
+        "linkingText": [
+          "onchange"
+        ],
+        "localLinkingText": [
+          "PermissionStatus.onchange"
+        ],
+        "type": "attribute",
+        "for": [
+          "PermissionStatus"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "onchange-attribute",
+          "href": "https://w3c.github.io/permissions/#onchange-attribute",
+          "title": "onchange attribute",
+          "number": "5.4"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "eventtarget",
+        "href": "https://dom.spec.whatwg.org/#eventtarget",
+        "linkingText": [
+          "EventTarget"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventtarget-eventtarget",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-eventtarget",
+        "linkingText": [
+          "EventTarget()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-addeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-addeventlistener",
+        "linkingText": [
+          "addEventListener(type, callback, options)",
+          "addEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-removeeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-removeeventlistener",
+        "linkingText": [
+          "removeEventListener(type, callback, options)",
+          "removeEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-dispatchevent",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-dispatchevent",
+        "linkingText": [
+          "dispatchEvent(event)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

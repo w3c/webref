@@ -1,0 +1,279 @@
+{
+  "name": "VirtualKeyboard",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "VirtualKeyboard API",
+      "url": "https://www.w3.org/TR/virtual-keyboard/"
+    },
+    "fragment": "[Exposed=Window, SecureContext]\ninterface VirtualKeyboard : EventTarget {\n    undefined show();\n    undefined hide();\n    readonly attribute DOMRect boundingRect;\n    attribute boolean overlaysContent;\n    attribute EventHandler ongeometrychange;\n};",
+    "href": "https://w3c.github.io/virtual-keyboard/#dom-virtualkeyboard"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "EventTarget",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=*]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+      "href": "https://dom.spec.whatwg.org/#eventtarget"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/virtual-keyboard/": [
+      {
+        "id": "dom-virtualkeyboard",
+        "href": "https://w3c.github.io/virtual-keyboard/#dom-virtualkeyboard",
+        "linkingText": [
+          "VirtualKeyboard"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-virtualkeyboard-interface",
+          "href": "https://w3c.github.io/virtual-keyboard/#the-virtualkeyboard-interface",
+          "title": "The VirtualKeyboard Interface",
+          "number": "3"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-virtualkeyboard-show",
+        "href": "https://w3c.github.io/virtual-keyboard/#dom-virtualkeyboard-show",
+        "linkingText": [
+          "show()"
+        ],
+        "localLinkingText": [
+          "VirtualKeyboard.show",
+          "VirtualKeyboard.show()",
+          "show"
+        ],
+        "type": "method",
+        "for": [
+          "VirtualKeyboard"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-virtualkeyboard-interface",
+          "href": "https://w3c.github.io/virtual-keyboard/#the-virtualkeyboard-interface",
+          "title": "The VirtualKeyboard Interface",
+          "number": "3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-virtualkeyboard-hide",
+        "href": "https://w3c.github.io/virtual-keyboard/#dom-virtualkeyboard-hide",
+        "linkingText": [
+          "hide()"
+        ],
+        "localLinkingText": [
+          "VirtualKeyboard.hide",
+          "VirtualKeyboard.hide()",
+          "hide"
+        ],
+        "type": "method",
+        "for": [
+          "VirtualKeyboard"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-virtualkeyboard-interface",
+          "href": "https://w3c.github.io/virtual-keyboard/#the-virtualkeyboard-interface",
+          "title": "The VirtualKeyboard Interface",
+          "number": "3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-virtualkeyboard-boundingrect",
+        "href": "https://w3c.github.io/virtual-keyboard/#dom-virtualkeyboard-boundingrect",
+        "linkingText": [
+          "boundingRect"
+        ],
+        "localLinkingText": [
+          "VirtualKeyboard.boundingRect"
+        ],
+        "type": "attribute",
+        "for": [
+          "VirtualKeyboard"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-virtualkeyboard-interface",
+          "href": "https://w3c.github.io/virtual-keyboard/#the-virtualkeyboard-interface",
+          "title": "The VirtualKeyboard Interface",
+          "number": "3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-virtualkeyboard-overlayscontent",
+        "href": "https://w3c.github.io/virtual-keyboard/#dom-virtualkeyboard-overlayscontent",
+        "linkingText": [
+          "overlaysContent"
+        ],
+        "localLinkingText": [
+          "VirtualKeyboard.overlaysContent"
+        ],
+        "type": "attribute",
+        "for": [
+          "VirtualKeyboard"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-virtualkeyboard-interface",
+          "href": "https://w3c.github.io/virtual-keyboard/#the-virtualkeyboard-interface",
+          "title": "The VirtualKeyboard Interface",
+          "number": "3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-virtualkeyboard-ongeometrychange",
+        "href": "https://w3c.github.io/virtual-keyboard/#dom-virtualkeyboard-ongeometrychange",
+        "linkingText": [
+          "ongeometrychange"
+        ],
+        "localLinkingText": [
+          "VirtualKeyboard.ongeometrychange"
+        ],
+        "type": "attribute",
+        "for": [
+          "VirtualKeyboard"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-virtualkeyboard-interface",
+          "href": "https://w3c.github.io/virtual-keyboard/#the-virtualkeyboard-interface",
+          "title": "The VirtualKeyboard Interface",
+          "number": "3"
+        },
+        "definedIn": "dt"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "eventtarget",
+        "href": "https://dom.spec.whatwg.org/#eventtarget",
+        "linkingText": [
+          "EventTarget"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventtarget-eventtarget",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-eventtarget",
+        "linkingText": [
+          "EventTarget()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-addeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-addeventlistener",
+        "linkingText": [
+          "addEventListener(type, callback, options)",
+          "addEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-removeeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-removeeventlistener",
+        "linkingText": [
+          "removeEventListener(type, callback, options)",
+          "removeEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-dispatchevent",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-dispatchevent",
+        "linkingText": [
+          "dispatchEvent(event)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

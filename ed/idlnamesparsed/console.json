@@ -1,0 +1,458 @@
+{
+  "name": "console",
+  "type": "namespace",
+  "defined": {
+    "spec": {
+      "title": "Console Standard",
+      "url": "https://console.spec.whatwg.org/"
+    },
+    "fragment": "[Exposed=(Window,Worker,Worklet)]\nnamespace console { // but see namespace object requirements below\n  // Logging\n  undefined assert(optional boolean condition = false, any... data);\n  undefined clear();\n  undefined debug(any... data);\n  undefined error(any... data);\n  undefined info(any... data);\n  undefined log(any... data);\n  undefined table(optional any tabularData, optional sequence<DOMString> properties);\n  undefined trace(any... data);\n  undefined warn(any... data);\n  undefined dir(optional any item, optional object? options);\n  undefined dirxml(any... data);\n\n  // Counting\n  undefined count(optional DOMString label = \"default\");\n  undefined countReset(optional DOMString label = \"default\");\n\n  // Grouping\n  undefined group(any... data);\n  undefined groupCollapsed(any... data);\n  undefined groupEnd();\n\n  // Timing\n  undefined time(optional DOMString label = \"default\");\n  undefined timeLog(optional DOMString label = \"default\", any... data);\n  undefined timeEnd(optional DOMString label = \"default\");\n};",
+    "href": "https://console.spec.whatwg.org/#namespacedef-console"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://console.spec.whatwg.org/": [
+      {
+        "id": "namespacedef-console",
+        "href": "https://console.spec.whatwg.org/#namespacedef-console",
+        "linkingText": [
+          "console"
+        ],
+        "localLinkingText": [],
+        "type": "namespace",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "console-namespace",
+          "href": "https://console.spec.whatwg.org/#console-namespace",
+          "title": "Namespace console",
+          "number": "1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "assert",
+        "href": "https://console.spec.whatwg.org/#assert",
+        "linkingText": [
+          "assert(condition, ...data)",
+          "assert(condition)",
+          "assert()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "console"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "assert",
+          "href": "https://console.spec.whatwg.org/#assert",
+          "title": "assert(condition, ...data)",
+          "number": "1.1.1"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "clear",
+        "href": "https://console.spec.whatwg.org/#clear",
+        "linkingText": [
+          "clear()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "console"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "clear",
+          "href": "https://console.spec.whatwg.org/#clear",
+          "title": "clear()",
+          "number": "1.1.2"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "debug",
+        "href": "https://console.spec.whatwg.org/#debug",
+        "linkingText": [
+          "debug(...data)",
+          "debug()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "console"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "debug",
+          "href": "https://console.spec.whatwg.org/#debug",
+          "title": "debug(...data)",
+          "number": "1.1.3"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "error",
+        "href": "https://console.spec.whatwg.org/#error",
+        "linkingText": [
+          "error(...data)",
+          "error()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "console"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "error",
+          "href": "https://console.spec.whatwg.org/#error",
+          "title": "error(...data)",
+          "number": "1.1.4"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "info",
+        "href": "https://console.spec.whatwg.org/#info",
+        "linkingText": [
+          "info(...data)",
+          "info()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "console"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "info",
+          "href": "https://console.spec.whatwg.org/#info",
+          "title": "info(...data)",
+          "number": "1.1.5"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "log",
+        "href": "https://console.spec.whatwg.org/#log",
+        "linkingText": [
+          "log(...data)",
+          "log()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "console"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "log",
+          "href": "https://console.spec.whatwg.org/#log",
+          "title": "log(...data)",
+          "number": "1.1.6"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "table",
+        "href": "https://console.spec.whatwg.org/#table",
+        "linkingText": [
+          "table(tabularData, properties)",
+          "table(tabularData)",
+          "table()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "console"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "table",
+          "href": "https://console.spec.whatwg.org/#table",
+          "title": "table(tabularData, properties)",
+          "number": "1.1.7"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "trace",
+        "href": "https://console.spec.whatwg.org/#trace",
+        "linkingText": [
+          "trace(...data)",
+          "trace()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "console"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "trace",
+          "href": "https://console.spec.whatwg.org/#trace",
+          "title": "trace(...data)",
+          "number": "1.1.8"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "warn",
+        "href": "https://console.spec.whatwg.org/#warn",
+        "linkingText": [
+          "warn(...data)",
+          "warn()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "console"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "warn",
+          "href": "https://console.spec.whatwg.org/#warn",
+          "title": "warn(...data)",
+          "number": "1.1.9"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dir",
+        "href": "https://console.spec.whatwg.org/#dir",
+        "linkingText": [
+          "dir(item, options)",
+          "dir(item)",
+          "dir()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "console"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dir",
+          "href": "https://console.spec.whatwg.org/#dir",
+          "title": "dir(item, options)",
+          "number": "1.1.10"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dirxml",
+        "href": "https://console.spec.whatwg.org/#dirxml",
+        "linkingText": [
+          "dirxml(...data)",
+          "dirxml()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "console"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dirxml",
+          "href": "https://console.spec.whatwg.org/#dirxml",
+          "title": "dirxml(...data)",
+          "number": "1.1.11"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "count",
+        "href": "https://console.spec.whatwg.org/#count",
+        "linkingText": [
+          "count(label)",
+          "count()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "console"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "count",
+          "href": "https://console.spec.whatwg.org/#count",
+          "title": "count(label)",
+          "number": "1.2.1"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "countreset",
+        "href": "https://console.spec.whatwg.org/#countreset",
+        "linkingText": [
+          "countReset(label)",
+          "countReset()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "console"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "countreset",
+          "href": "https://console.spec.whatwg.org/#countreset",
+          "title": "countReset(label)",
+          "number": "1.2.2"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "group",
+        "href": "https://console.spec.whatwg.org/#group",
+        "linkingText": [
+          "group(...data)",
+          "group()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "console"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "group",
+          "href": "https://console.spec.whatwg.org/#group",
+          "title": "group(...data)",
+          "number": "1.3.1"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "groupcollapsed",
+        "href": "https://console.spec.whatwg.org/#groupcollapsed",
+        "linkingText": [
+          "groupCollapsed(...data)",
+          "groupCollapsed()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "console"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "groupcollapsed",
+          "href": "https://console.spec.whatwg.org/#groupcollapsed",
+          "title": "groupCollapsed(...data)",
+          "number": "1.3.2"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "groupend",
+        "href": "https://console.spec.whatwg.org/#groupend",
+        "linkingText": [
+          "groupEnd()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "console"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "groupend",
+          "href": "https://console.spec.whatwg.org/#groupend",
+          "title": "groupEnd()",
+          "number": "1.3.3"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "time",
+        "href": "https://console.spec.whatwg.org/#time",
+        "linkingText": [
+          "time(label)",
+          "time()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "console"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "time",
+          "href": "https://console.spec.whatwg.org/#time",
+          "title": "time(label)",
+          "number": "1.4.1"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "timelog",
+        "href": "https://console.spec.whatwg.org/#timelog",
+        "linkingText": [
+          "timeLog(label, ...data)",
+          "timeLog(label)",
+          "timeLog()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "console"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "timelog",
+          "href": "https://console.spec.whatwg.org/#timelog",
+          "title": "timeLog(label, ...data)",
+          "number": "1.4.2"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "timeend",
+        "href": "https://console.spec.whatwg.org/#timeend",
+        "linkingText": [
+          "timeEnd(label)",
+          "timeEnd()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "console"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "timeend",
+          "href": "https://console.spec.whatwg.org/#timeend",
+          "title": "timeEnd(label)",
+          "number": "1.4.3"
+        },
+        "definedIn": "heading"
+      }
+    ]
+  }
+}

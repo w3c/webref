@@ -1,0 +1,228 @@
+{
+  "spec": {
+    "title": "CSS Painting API Level 1",
+    "url": "https://drafts.css-houdini.org/css-paint-api-1/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://drafts.css-houdini.org/css-paint-api-1/#title",
+      "level": 1,
+      "title": "CSS Painting API Level 1"
+    },
+    {
+      "id": "abstract",
+      "href": "https://drafts.css-houdini.org/css-paint-api-1/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "sotd",
+      "href": "https://drafts.css-houdini.org/css-paint-api-1/#sotd",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://drafts.css-houdini.org/css-paint-api-1/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "intro",
+      "href": "https://drafts.css-houdini.org/css-paint-api-1/#intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "paint-worklet",
+      "href": "https://drafts.css-houdini.org/css-paint-api-1/#paint-worklet",
+      "level": 2,
+      "title": "Paint Worklet",
+      "number": "2"
+    },
+    {
+      "id": "concepts",
+      "href": "https://drafts.css-houdini.org/css-paint-api-1/#concepts",
+      "level": 2,
+      "title": "Concepts",
+      "number": "3"
+    },
+    {
+      "id": "registering-custom-paint",
+      "href": "https://drafts.css-houdini.org/css-paint-api-1/#registering-custom-paint",
+      "level": 2,
+      "title": "Registering Custom Paint",
+      "number": "4"
+    },
+    {
+      "id": "paint-notation",
+      "href": "https://drafts.css-houdini.org/css-paint-api-1/#paint-notation",
+      "level": 2,
+      "title": "Paint Notation",
+      "number": "5"
+    },
+    {
+      "id": "2d-rendering-context",
+      "href": "https://drafts.css-houdini.org/css-paint-api-1/#2d-rendering-context",
+      "level": 2,
+      "title": "The 2D rendering context",
+      "number": "6"
+    },
+    {
+      "id": "drawing-a-cssimagevalue",
+      "href": "https://drafts.css-houdini.org/css-paint-api-1/#drawing-a-cssimagevalue",
+      "level": 3,
+      "title": "Drawing a CSSImageValue",
+      "number": "6.1"
+    },
+    {
+      "id": "drawing-an-image",
+      "href": "https://drafts.css-houdini.org/css-paint-api-1/#drawing-an-image",
+      "level": 2,
+      "title": "Drawing an image",
+      "number": "7"
+    },
+    {
+      "id": "global-scope-selection",
+      "href": "https://drafts.css-houdini.org/css-paint-api-1/#global-scope-selection",
+      "level": 3,
+      "title": "Global Scope Selection",
+      "number": "7.1"
+    },
+    {
+      "id": "examples",
+      "href": "https://drafts.css-houdini.org/css-paint-api-1/#examples",
+      "level": 2,
+      "title": "Examples",
+      "number": "8"
+    },
+    {
+      "id": "example-1",
+      "href": "https://drafts.css-houdini.org/css-paint-api-1/#example-1",
+      "level": 3,
+      "title": "Example 1: Colored Circle",
+      "number": "8.1"
+    },
+    {
+      "id": "example-2",
+      "href": "https://drafts.css-houdini.org/css-paint-api-1/#example-2",
+      "level": 3,
+      "title": "Example 2: Image Placeholder",
+      "number": "8.2"
+    },
+    {
+      "id": "example-3",
+      "href": "https://drafts.css-houdini.org/css-paint-api-1/#example-3",
+      "level": 3,
+      "title": "Example 3: Arcs",
+      "number": "8.3"
+    },
+    {
+      "id": "example-4",
+      "href": "https://drafts.css-houdini.org/css-paint-api-1/#example-4",
+      "level": 3,
+      "title": "Example 4: Different Colors (based on size)",
+      "number": "8.4"
+    },
+    {
+      "id": "example-5",
+      "href": "https://drafts.css-houdini.org/css-paint-api-1/#example-5",
+      "level": 3,
+      "title": "Example 5: Drawing outside an element’s area",
+      "number": "8.5"
+    },
+    {
+      "id": "security-considerations",
+      "href": "https://drafts.css-houdini.org/css-paint-api-1/#security-considerations",
+      "level": 2,
+      "title": "Security Considerations",
+      "number": "9"
+    },
+    {
+      "id": "privacy-considerations",
+      "href": "https://drafts.css-houdini.org/css-paint-api-1/#privacy-considerations",
+      "level": 2,
+      "title": "10. Privacy Considerations"
+    },
+    {
+      "id": "changes",
+      "href": "https://drafts.css-houdini.org/css-paint-api-1/#changes",
+      "level": 2,
+      "title": "11. Changes"
+    },
+    {
+      "id": "w3c-conformance",
+      "href": "https://drafts.css-houdini.org/css-paint-api-1/#w3c-conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "w3c-conventions",
+      "href": "https://drafts.css-houdini.org/css-paint-api-1/#w3c-conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "w3c-conformance-classes",
+      "href": "https://drafts.css-houdini.org/css-paint-api-1/#w3c-conformance-classes",
+      "level": 3,
+      "title": "Conformance classes"
+    },
+    {
+      "id": "w3c-partial",
+      "href": "https://drafts.css-houdini.org/css-paint-api-1/#w3c-partial",
+      "level": 3,
+      "title": "Partial implementations"
+    },
+    {
+      "id": "w3c-conform-future-proofing",
+      "href": "https://drafts.css-houdini.org/css-paint-api-1/#w3c-conform-future-proofing",
+      "level": 4,
+      "title": "Implementations of Unstable and Proprietary Features"
+    },
+    {
+      "id": "w3c-testing",
+      "href": "https://drafts.css-houdini.org/css-paint-api-1/#w3c-testing",
+      "level": 3,
+      "title": "Non-experimental implementations"
+    },
+    {
+      "id": "index",
+      "href": "https://drafts.css-houdini.org/css-paint-api-1/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://drafts.css-houdini.org/css-paint-api-1/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://drafts.css-houdini.org/css-paint-api-1/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://drafts.css-houdini.org/css-paint-api-1/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://drafts.css-houdini.org/css-paint-api-1/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "idl-index",
+      "href": "https://drafts.css-houdini.org/css-paint-api-1/#idl-index",
+      "level": 2,
+      "title": "IDL Index"
+    }
+  ]
+}

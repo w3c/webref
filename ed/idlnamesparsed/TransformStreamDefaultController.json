@@ -1,0 +1,125 @@
+{
+  "name": "TransformStreamDefaultController",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Streams Standard",
+      "url": "https://streams.spec.whatwg.org/"
+    },
+    "fragment": "[Exposed=*]\ninterface TransformStreamDefaultController {\n  readonly attribute unrestricted double? desiredSize;\n\n  undefined enqueue(optional any chunk);\n  undefined error(optional any reason);\n  undefined terminate();\n};",
+    "href": "https://streams.spec.whatwg.org/#transformstreamdefaultcontroller"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://streams.spec.whatwg.org/": [
+      {
+        "id": "transformstreamdefaultcontroller",
+        "href": "https://streams.spec.whatwg.org/#transformstreamdefaultcontroller",
+        "linkingText": [
+          "TransformStreamDefaultController"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "ts-default-controller-class-definition",
+          "href": "https://streams.spec.whatwg.org/#ts-default-controller-class-definition",
+          "title": "Interface definition",
+          "number": "6.3.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "ts-default-controller-desired-size",
+        "href": "https://streams.spec.whatwg.org/#ts-default-controller-desired-size",
+        "linkingText": [
+          "desiredSize"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "TransformStreamDefaultController"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "ts-default-controller-prototype",
+          "href": "https://streams.spec.whatwg.org/#ts-default-controller-prototype",
+          "title": "Methods and properties",
+          "number": "6.3.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "ts-default-controller-enqueue",
+        "href": "https://streams.spec.whatwg.org/#ts-default-controller-enqueue",
+        "linkingText": [
+          "enqueue(chunk)",
+          "enqueue()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "TransformStreamDefaultController"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "ts-default-controller-prototype",
+          "href": "https://streams.spec.whatwg.org/#ts-default-controller-prototype",
+          "title": "Methods and properties",
+          "number": "6.3.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "ts-default-controller-error",
+        "href": "https://streams.spec.whatwg.org/#ts-default-controller-error",
+        "linkingText": [
+          "error(reason)",
+          "error()",
+          "error(e)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "TransformStreamDefaultController"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "ts-default-controller-prototype",
+          "href": "https://streams.spec.whatwg.org/#ts-default-controller-prototype",
+          "title": "Methods and properties",
+          "number": "6.3.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "ts-default-controller-terminate",
+        "href": "https://streams.spec.whatwg.org/#ts-default-controller-terminate",
+        "linkingText": [
+          "terminate()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "TransformStreamDefaultController"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "ts-default-controller-prototype",
+          "href": "https://streams.spec.whatwg.org/#ts-default-controller-prototype",
+          "title": "Methods and properties",
+          "number": "6.3.3"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

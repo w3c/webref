@@ -1,0 +1,2911 @@
+{
+  "spec": {
+    "title": "Web Cryptography API",
+    "url": "https://w3c.github.io/webcrypto/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {},
+      "functions": {
+        "Window": [
+          "Crypto",
+          "CryptoKey",
+          "SubtleCrypto"
+        ],
+        "Worker": [
+          "Crypto",
+          "CryptoKey",
+          "SubtleCrypto"
+        ]
+      }
+    },
+    "idlNames": {
+      "Crypto": {
+        "fragment": "[Exposed=(Window,Worker)]\ninterface Crypto {\n  [SecureContext] readonly attribute SubtleCrypto subtle;\n  ArrayBufferView getRandomValues(ArrayBufferView array);\n  [SecureContext] DOMString randomUUID();\n};",
+        "type": "interface",
+        "name": "Crypto",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "attribute",
+            "name": "subtle",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SubtleCrypto"
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "SecureContext",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "operation",
+            "name": "getRandomValues",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "ArrayBufferView"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "array",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "ArrayBufferView"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "randomUUID",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "arguments": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "SecureContext",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": ""
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                }
+              ]
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "AlgorithmIdentifier": {
+        "fragment": "typedef (object or DOMString) AlgorithmIdentifier;",
+        "type": "typedef",
+        "name": "AlgorithmIdentifier",
+        "idlType": {
+          "type": "typedef-type",
+          "extAttrs": [],
+          "generic": "",
+          "nullable": false,
+          "union": true,
+          "idlType": [
+            {
+              "type": null,
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "object"
+            },
+            {
+              "type": null,
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            }
+          ]
+        },
+        "extAttrs": []
+      },
+      "HashAlgorithmIdentifier": {
+        "fragment": "typedef AlgorithmIdentifier HashAlgorithmIdentifier;",
+        "type": "typedef",
+        "name": "HashAlgorithmIdentifier",
+        "idlType": {
+          "type": "typedef-type",
+          "extAttrs": [],
+          "generic": "",
+          "nullable": false,
+          "union": false,
+          "idlType": "AlgorithmIdentifier"
+        },
+        "extAttrs": []
+      },
+      "Algorithm": {
+        "fragment": "dictionary Algorithm {\n  required DOMString name;\n};",
+        "type": "dictionary",
+        "name": "Algorithm",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "name",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "KeyAlgorithm": {
+        "fragment": "dictionary KeyAlgorithm {\n  required DOMString name;\n};",
+        "type": "dictionary",
+        "name": "KeyAlgorithm",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "name",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "KeyType": {
+        "fragment": "enum KeyType { \"public\", \"private\", \"secret\" };",
+        "type": "enum",
+        "name": "KeyType",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "public"
+          },
+          {
+            "type": "enum-value",
+            "value": "private"
+          },
+          {
+            "type": "enum-value",
+            "value": "secret"
+          }
+        ],
+        "extAttrs": []
+      },
+      "KeyUsage": {
+        "fragment": "enum KeyUsage { \"encrypt\", \"decrypt\", \"sign\", \"verify\", \"deriveKey\", \"deriveBits\", \"wrapKey\", \"unwrapKey\" };",
+        "type": "enum",
+        "name": "KeyUsage",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "encrypt"
+          },
+          {
+            "type": "enum-value",
+            "value": "decrypt"
+          },
+          {
+            "type": "enum-value",
+            "value": "sign"
+          },
+          {
+            "type": "enum-value",
+            "value": "verify"
+          },
+          {
+            "type": "enum-value",
+            "value": "deriveKey"
+          },
+          {
+            "type": "enum-value",
+            "value": "deriveBits"
+          },
+          {
+            "type": "enum-value",
+            "value": "wrapKey"
+          },
+          {
+            "type": "enum-value",
+            "value": "unwrapKey"
+          }
+        ],
+        "extAttrs": []
+      },
+      "CryptoKey": {
+        "fragment": "[SecureContext,Exposed=(Window,Worker),Serializable]\ninterface CryptoKey {\n  readonly attribute KeyType type;\n  readonly attribute boolean extractable;\n  readonly attribute object algorithm;\n  readonly attribute object usages;\n};",
+        "type": "interface",
+        "name": "CryptoKey",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "attribute",
+            "name": "type",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "KeyType"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "extractable",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "algorithm",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "object"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "usages",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "object"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                }
+              ]
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "Serializable",
+            "rhs": null,
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "KeyFormat": {
+        "fragment": "enum KeyFormat { \"raw\", \"spki\", \"pkcs8\", \"jwk\" };",
+        "type": "enum",
+        "name": "KeyFormat",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "raw"
+          },
+          {
+            "type": "enum-value",
+            "value": "spki"
+          },
+          {
+            "type": "enum-value",
+            "value": "pkcs8"
+          },
+          {
+            "type": "enum-value",
+            "value": "jwk"
+          }
+        ],
+        "extAttrs": []
+      },
+      "SubtleCrypto": {
+        "fragment": "[SecureContext,Exposed=(Window,Worker)]\ninterface SubtleCrypto {\n  Promise<any> encrypt(AlgorithmIdentifier algorithm,\n                       CryptoKey key,\n                       BufferSource data);\n  Promise<any> decrypt(AlgorithmIdentifier algorithm,\n                       CryptoKey key,\n                       BufferSource data);\n  Promise<any> sign(AlgorithmIdentifier algorithm,\n                    CryptoKey key,\n                    BufferSource data);\n  Promise<any> verify(AlgorithmIdentifier algorithm,\n                      CryptoKey key,\n                      BufferSource signature,\n                      BufferSource data);\n  Promise<any> digest(AlgorithmIdentifier algorithm,\n                      BufferSource data);\n\n  Promise<any> generateKey(AlgorithmIdentifier algorithm,\n                          boolean extractable,\n                          sequence<KeyUsage> keyUsages );\n  Promise<any> deriveKey(AlgorithmIdentifier algorithm,\n                         CryptoKey baseKey,\n                         AlgorithmIdentifier derivedKeyType,\n                         boolean extractable,\n                         sequence<KeyUsage> keyUsages );\n  Promise<ArrayBuffer> deriveBits(AlgorithmIdentifier algorithm,\n                          CryptoKey baseKey,\n                          unsigned long length);\n\n  Promise<CryptoKey> importKey(KeyFormat format,\n                         (BufferSource or JsonWebKey) keyData,\n                         AlgorithmIdentifier algorithm,\n                         boolean extractable,\n                         sequence<KeyUsage> keyUsages );\n  Promise<any> exportKey(KeyFormat format, CryptoKey key);\n\n  Promise<any> wrapKey(KeyFormat format,\n                       CryptoKey key,\n                       CryptoKey wrappingKey,\n                       AlgorithmIdentifier wrapAlgorithm);\n  Promise<CryptoKey> unwrapKey(KeyFormat format,\n                         BufferSource wrappedKey,\n                         CryptoKey unwrappingKey,\n                         AlgorithmIdentifier unwrapAlgorithm,\n                         AlgorithmIdentifier unwrappedKeyAlgorithm,\n                         boolean extractable,\n                         sequence<KeyUsage> keyUsages );\n};",
+        "type": "interface",
+        "name": "SubtleCrypto",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "operation",
+            "name": "encrypt",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "any"
+                }
+              ]
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "algorithm",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "AlgorithmIdentifier"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "key",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CryptoKey"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "data",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "BufferSource"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "decrypt",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "any"
+                }
+              ]
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "algorithm",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "AlgorithmIdentifier"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "key",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CryptoKey"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "data",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "BufferSource"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "sign",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "any"
+                }
+              ]
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "algorithm",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "AlgorithmIdentifier"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "key",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CryptoKey"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "data",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "BufferSource"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "verify",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "any"
+                }
+              ]
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "algorithm",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "AlgorithmIdentifier"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "key",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CryptoKey"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "signature",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "BufferSource"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "data",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "BufferSource"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "digest",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "any"
+                }
+              ]
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "algorithm",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "AlgorithmIdentifier"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "data",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "BufferSource"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "generateKey",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "any"
+                }
+              ]
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "algorithm",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "AlgorithmIdentifier"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "extractable",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "boolean"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "keyUsages",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "sequence",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": [
+                    {
+                      "type": "argument-type",
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "KeyUsage"
+                    }
+                  ]
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "deriveKey",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "any"
+                }
+              ]
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "algorithm",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "AlgorithmIdentifier"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "baseKey",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CryptoKey"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "derivedKeyType",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "AlgorithmIdentifier"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "extractable",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "boolean"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "keyUsages",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "sequence",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": [
+                    {
+                      "type": "argument-type",
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "KeyUsage"
+                    }
+                  ]
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "deriveBits",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "ArrayBuffer"
+                }
+              ]
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "algorithm",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "AlgorithmIdentifier"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "baseKey",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CryptoKey"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "length",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "unsigned long"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "importKey",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CryptoKey"
+                }
+              ]
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "format",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "KeyFormat"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "keyData",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": true,
+                  "idlType": [
+                    {
+                      "type": null,
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "BufferSource"
+                    },
+                    {
+                      "type": null,
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "JsonWebKey"
+                    }
+                  ]
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "algorithm",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "AlgorithmIdentifier"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "extractable",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "boolean"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "keyUsages",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "sequence",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": [
+                    {
+                      "type": "argument-type",
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "KeyUsage"
+                    }
+                  ]
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "exportKey",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "any"
+                }
+              ]
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "format",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "KeyFormat"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "key",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CryptoKey"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "wrapKey",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "any"
+                }
+              ]
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "format",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "KeyFormat"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "key",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CryptoKey"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "wrappingKey",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CryptoKey"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "wrapAlgorithm",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "AlgorithmIdentifier"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "unwrapKey",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CryptoKey"
+                }
+              ]
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "format",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "KeyFormat"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "wrappedKey",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "BufferSource"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "unwrappingKey",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CryptoKey"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "unwrapAlgorithm",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "AlgorithmIdentifier"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "unwrappedKeyAlgorithm",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "AlgorithmIdentifier"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "extractable",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "boolean"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "keyUsages",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "sequence",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": [
+                    {
+                      "type": "argument-type",
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "KeyUsage"
+                    }
+                  ]
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                }
+              ]
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "RsaOtherPrimesInfo": {
+        "fragment": "dictionary RsaOtherPrimesInfo {\n  // The following fields are defined in Section 6.3.2.7 of JSON Web Algorithms\n  DOMString r;\n  DOMString d;\n  DOMString t;\n};",
+        "type": "dictionary",
+        "name": "RsaOtherPrimesInfo",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "r",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "d",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "t",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "JsonWebKey": {
+        "fragment": "dictionary JsonWebKey {\n  // The following fields are defined in Section 3.1 of JSON Web Key\n  DOMString kty;\n  DOMString use;\n  sequence<DOMString> key_ops;\n  DOMString alg;\n\n  // The following fields are defined in JSON Web Key Parameters Registration\n  boolean ext;\n\n  // The following fields are defined in Section 6 of JSON Web Algorithms\n  DOMString crv;\n  DOMString x;\n  DOMString y;\n  DOMString d;\n  DOMString n;\n  DOMString e;\n  DOMString p;\n  DOMString q;\n  DOMString dp;\n  DOMString dq;\n  DOMString qi;\n  sequence<RsaOtherPrimesInfo> oth;\n  DOMString k;\n};",
+        "type": "dictionary",
+        "name": "JsonWebKey",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "kty",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "use",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "key_ops",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                }
+              ]
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "alg",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "ext",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "crv",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "x",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "y",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "d",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "n",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "e",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "p",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "q",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "dp",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "dq",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "qi",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "oth",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "RsaOtherPrimesInfo"
+                }
+              ]
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "k",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "BigInteger": {
+        "fragment": "typedef Uint8Array BigInteger;",
+        "type": "typedef",
+        "name": "BigInteger",
+        "idlType": {
+          "type": "typedef-type",
+          "extAttrs": [],
+          "generic": "",
+          "nullable": false,
+          "union": false,
+          "idlType": "Uint8Array"
+        },
+        "extAttrs": []
+      },
+      "CryptoKeyPair": {
+        "fragment": "dictionary CryptoKeyPair {\n  CryptoKey publicKey;\n  CryptoKey privateKey;\n};",
+        "type": "dictionary",
+        "name": "CryptoKeyPair",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "publicKey",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CryptoKey"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "privateKey",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CryptoKey"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "RsaKeyGenParams": {
+        "fragment": "dictionary RsaKeyGenParams : Algorithm {\n  required [EnforceRange] unsigned long modulusLength;\n  required BigInteger publicExponent;\n};",
+        "type": "dictionary",
+        "name": "RsaKeyGenParams",
+        "inheritance": "Algorithm",
+        "members": [
+          {
+            "type": "field",
+            "name": "modulusLength",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "EnforceRange",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "publicExponent",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "BigInteger"
+            },
+            "default": null,
+            "required": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "RsaHashedKeyGenParams": {
+        "fragment": "dictionary RsaHashedKeyGenParams : RsaKeyGenParams {\n  required HashAlgorithmIdentifier hash;\n};",
+        "type": "dictionary",
+        "name": "RsaHashedKeyGenParams",
+        "inheritance": "RsaKeyGenParams",
+        "members": [
+          {
+            "type": "field",
+            "name": "hash",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "HashAlgorithmIdentifier"
+            },
+            "default": null,
+            "required": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "RsaKeyAlgorithm": {
+        "fragment": "dictionary RsaKeyAlgorithm : KeyAlgorithm {\n  required unsigned long modulusLength;\n  required BigInteger publicExponent;\n};",
+        "type": "dictionary",
+        "name": "RsaKeyAlgorithm",
+        "inheritance": "KeyAlgorithm",
+        "members": [
+          {
+            "type": "field",
+            "name": "modulusLength",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "publicExponent",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "BigInteger"
+            },
+            "default": null,
+            "required": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "RsaHashedKeyAlgorithm": {
+        "fragment": "dictionary RsaHashedKeyAlgorithm : RsaKeyAlgorithm {\n  required KeyAlgorithm hash;\n};",
+        "type": "dictionary",
+        "name": "RsaHashedKeyAlgorithm",
+        "inheritance": "RsaKeyAlgorithm",
+        "members": [
+          {
+            "type": "field",
+            "name": "hash",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "KeyAlgorithm"
+            },
+            "default": null,
+            "required": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "RsaHashedImportParams": {
+        "fragment": "dictionary RsaHashedImportParams : Algorithm {\n  required HashAlgorithmIdentifier hash;\n};",
+        "type": "dictionary",
+        "name": "RsaHashedImportParams",
+        "inheritance": "Algorithm",
+        "members": [
+          {
+            "type": "field",
+            "name": "hash",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "HashAlgorithmIdentifier"
+            },
+            "default": null,
+            "required": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "RsaPssParams": {
+        "fragment": "dictionary RsaPssParams : Algorithm {\n  required [EnforceRange] unsigned long saltLength;\n};",
+        "type": "dictionary",
+        "name": "RsaPssParams",
+        "inheritance": "Algorithm",
+        "members": [
+          {
+            "type": "field",
+            "name": "saltLength",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "EnforceRange",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "default": null,
+            "required": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "RsaOaepParams": {
+        "fragment": "dictionary RsaOaepParams : Algorithm {\n  BufferSource label;\n};",
+        "type": "dictionary",
+        "name": "RsaOaepParams",
+        "inheritance": "Algorithm",
+        "members": [
+          {
+            "type": "field",
+            "name": "label",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "BufferSource"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "EcdsaParams": {
+        "fragment": "dictionary EcdsaParams : Algorithm {\n  required HashAlgorithmIdentifier hash;\n};",
+        "type": "dictionary",
+        "name": "EcdsaParams",
+        "inheritance": "Algorithm",
+        "members": [
+          {
+            "type": "field",
+            "name": "hash",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "HashAlgorithmIdentifier"
+            },
+            "default": null,
+            "required": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "NamedCurve": {
+        "fragment": "typedef DOMString NamedCurve;",
+        "type": "typedef",
+        "name": "NamedCurve",
+        "idlType": {
+          "type": "typedef-type",
+          "extAttrs": [],
+          "generic": "",
+          "nullable": false,
+          "union": false,
+          "idlType": "DOMString"
+        },
+        "extAttrs": []
+      },
+      "EcKeyGenParams": {
+        "fragment": "dictionary EcKeyGenParams : Algorithm {\n  required NamedCurve namedCurve;\n};",
+        "type": "dictionary",
+        "name": "EcKeyGenParams",
+        "inheritance": "Algorithm",
+        "members": [
+          {
+            "type": "field",
+            "name": "namedCurve",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "NamedCurve"
+            },
+            "default": null,
+            "required": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "EcKeyAlgorithm": {
+        "fragment": "dictionary EcKeyAlgorithm : KeyAlgorithm {\n  required NamedCurve namedCurve;\n};",
+        "type": "dictionary",
+        "name": "EcKeyAlgorithm",
+        "inheritance": "KeyAlgorithm",
+        "members": [
+          {
+            "type": "field",
+            "name": "namedCurve",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "NamedCurve"
+            },
+            "default": null,
+            "required": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "EcKeyImportParams": {
+        "fragment": "dictionary EcKeyImportParams : Algorithm {\n  required NamedCurve namedCurve;\n};",
+        "type": "dictionary",
+        "name": "EcKeyImportParams",
+        "inheritance": "Algorithm",
+        "members": [
+          {
+            "type": "field",
+            "name": "namedCurve",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "NamedCurve"
+            },
+            "default": null,
+            "required": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "EcdhKeyDeriveParams": {
+        "fragment": "dictionary EcdhKeyDeriveParams : Algorithm {\n  required CryptoKey public;\n};",
+        "type": "dictionary",
+        "name": "EcdhKeyDeriveParams",
+        "inheritance": "Algorithm",
+        "members": [
+          {
+            "type": "field",
+            "name": "public",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CryptoKey"
+            },
+            "default": null,
+            "required": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "AesCtrParams": {
+        "fragment": "dictionary AesCtrParams : Algorithm {\n  required BufferSource counter;\n  required [EnforceRange] octet length;\n};",
+        "type": "dictionary",
+        "name": "AesCtrParams",
+        "inheritance": "Algorithm",
+        "members": [
+          {
+            "type": "field",
+            "name": "counter",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "BufferSource"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "length",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "EnforceRange",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "octet"
+            },
+            "default": null,
+            "required": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "AesKeyAlgorithm": {
+        "fragment": "dictionary AesKeyAlgorithm : KeyAlgorithm {\n  required unsigned short length;\n};",
+        "type": "dictionary",
+        "name": "AesKeyAlgorithm",
+        "inheritance": "KeyAlgorithm",
+        "members": [
+          {
+            "type": "field",
+            "name": "length",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "default": null,
+            "required": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "AesKeyGenParams": {
+        "fragment": "dictionary AesKeyGenParams : Algorithm {\n  required [EnforceRange] unsigned short length;\n};",
+        "type": "dictionary",
+        "name": "AesKeyGenParams",
+        "inheritance": "Algorithm",
+        "members": [
+          {
+            "type": "field",
+            "name": "length",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "EnforceRange",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "default": null,
+            "required": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "AesDerivedKeyParams": {
+        "fragment": "dictionary AesDerivedKeyParams : Algorithm {\n  required [EnforceRange] unsigned short length;\n};",
+        "type": "dictionary",
+        "name": "AesDerivedKeyParams",
+        "inheritance": "Algorithm",
+        "members": [
+          {
+            "type": "field",
+            "name": "length",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "EnforceRange",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "default": null,
+            "required": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "AesCbcParams": {
+        "fragment": "dictionary AesCbcParams : Algorithm {\n  required BufferSource iv;\n};",
+        "type": "dictionary",
+        "name": "AesCbcParams",
+        "inheritance": "Algorithm",
+        "members": [
+          {
+            "type": "field",
+            "name": "iv",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "BufferSource"
+            },
+            "default": null,
+            "required": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "AesGcmParams": {
+        "fragment": "dictionary AesGcmParams : Algorithm {\n  required BufferSource iv;\n  BufferSource additionalData;\n  [EnforceRange] octet tagLength;\n};",
+        "type": "dictionary",
+        "name": "AesGcmParams",
+        "inheritance": "Algorithm",
+        "members": [
+          {
+            "type": "field",
+            "name": "iv",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "BufferSource"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "additionalData",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "BufferSource"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "tagLength",
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "EnforceRange",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "octet"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "HmacImportParams": {
+        "fragment": "dictionary HmacImportParams : Algorithm {\n  required HashAlgorithmIdentifier hash;\n  [EnforceRange] unsigned long length;\n};",
+        "type": "dictionary",
+        "name": "HmacImportParams",
+        "inheritance": "Algorithm",
+        "members": [
+          {
+            "type": "field",
+            "name": "hash",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "HashAlgorithmIdentifier"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "length",
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "EnforceRange",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "HmacKeyAlgorithm": {
+        "fragment": "dictionary HmacKeyAlgorithm : KeyAlgorithm {\n  required KeyAlgorithm hash;\n  required unsigned long length;\n};",
+        "type": "dictionary",
+        "name": "HmacKeyAlgorithm",
+        "inheritance": "KeyAlgorithm",
+        "members": [
+          {
+            "type": "field",
+            "name": "hash",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "KeyAlgorithm"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "length",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "default": null,
+            "required": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "HmacKeyGenParams": {
+        "fragment": "dictionary HmacKeyGenParams : Algorithm {\n  required HashAlgorithmIdentifier hash;\n  [EnforceRange] unsigned long length;\n};",
+        "type": "dictionary",
+        "name": "HmacKeyGenParams",
+        "inheritance": "Algorithm",
+        "members": [
+          {
+            "type": "field",
+            "name": "hash",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "HashAlgorithmIdentifier"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "length",
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "EnforceRange",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "HkdfParams": {
+        "fragment": "dictionary HkdfParams : Algorithm {\n  required HashAlgorithmIdentifier hash;\n  required BufferSource salt;\n  required BufferSource info;\n};",
+        "type": "dictionary",
+        "name": "HkdfParams",
+        "inheritance": "Algorithm",
+        "members": [
+          {
+            "type": "field",
+            "name": "hash",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "HashAlgorithmIdentifier"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "salt",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "BufferSource"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "info",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "BufferSource"
+            },
+            "default": null,
+            "required": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "Pbkdf2Params": {
+        "fragment": "dictionary Pbkdf2Params : Algorithm {\n  required BufferSource salt;\n  required [EnforceRange] unsigned long iterations;\n  required HashAlgorithmIdentifier hash;\n};",
+        "type": "dictionary",
+        "name": "Pbkdf2Params",
+        "inheritance": "Algorithm",
+        "members": [
+          {
+            "type": "field",
+            "name": "salt",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "BufferSource"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "iterations",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "EnforceRange",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "hash",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "HashAlgorithmIdentifier"
+            },
+            "default": null,
+            "required": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      }
+    },
+    "idlExtendedNames": {
+      "WindowOrWorkerGlobalScope": [
+        {
+          "fragment": "partial interface mixin WindowOrWorkerGlobalScope {\n  [SameObject] readonly attribute Crypto crypto;\n};",
+          "type": "interface mixin",
+          "name": "WindowOrWorkerGlobalScope",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "attribute",
+              "name": "crypto",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "Crypto"
+              },
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "SameObject",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "special": "",
+              "readonly": true
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ]
+    },
+    "globals": {},
+    "exposed": {
+      "Window": [
+        "Crypto",
+        "CryptoKey",
+        "SubtleCrypto"
+      ],
+      "Worker": [
+        "Crypto",
+        "CryptoKey",
+        "SubtleCrypto"
+      ]
+    },
+    "dependencies": {
+      "WindowOrWorkerGlobalScope": [
+        "Crypto"
+      ],
+      "Crypto": [
+        "SubtleCrypto",
+        "ArrayBufferView"
+      ],
+      "Algorithm": [],
+      "KeyAlgorithm": [],
+      "CryptoKey": [
+        "KeyType"
+      ],
+      "SubtleCrypto": [
+        "AlgorithmIdentifier",
+        "CryptoKey",
+        "BufferSource",
+        "KeyUsage",
+        "ArrayBuffer",
+        "KeyFormat",
+        "JsonWebKey"
+      ],
+      "RsaOtherPrimesInfo": [],
+      "JsonWebKey": [
+        "RsaOtherPrimesInfo"
+      ],
+      "CryptoKeyPair": [
+        "CryptoKey"
+      ],
+      "RsaKeyGenParams": [
+        "Algorithm",
+        "BigInteger"
+      ],
+      "RsaHashedKeyGenParams": [
+        "RsaKeyGenParams",
+        "HashAlgorithmIdentifier"
+      ],
+      "RsaKeyAlgorithm": [
+        "KeyAlgorithm",
+        "BigInteger"
+      ],
+      "RsaHashedKeyAlgorithm": [
+        "RsaKeyAlgorithm",
+        "KeyAlgorithm"
+      ],
+      "RsaHashedImportParams": [
+        "Algorithm",
+        "HashAlgorithmIdentifier"
+      ],
+      "RsaPssParams": [
+        "Algorithm"
+      ],
+      "RsaOaepParams": [
+        "Algorithm",
+        "BufferSource"
+      ],
+      "EcdsaParams": [
+        "Algorithm",
+        "HashAlgorithmIdentifier"
+      ],
+      "EcKeyGenParams": [
+        "Algorithm",
+        "NamedCurve"
+      ],
+      "EcKeyAlgorithm": [
+        "KeyAlgorithm",
+        "NamedCurve"
+      ],
+      "EcKeyImportParams": [
+        "Algorithm",
+        "NamedCurve"
+      ],
+      "EcdhKeyDeriveParams": [
+        "Algorithm",
+        "CryptoKey"
+      ],
+      "AesCtrParams": [
+        "Algorithm",
+        "BufferSource"
+      ],
+      "AesKeyAlgorithm": [
+        "KeyAlgorithm"
+      ],
+      "AesKeyGenParams": [
+        "Algorithm"
+      ],
+      "AesDerivedKeyParams": [
+        "Algorithm"
+      ],
+      "AesCbcParams": [
+        "Algorithm",
+        "BufferSource"
+      ],
+      "AesGcmParams": [
+        "Algorithm",
+        "BufferSource"
+      ],
+      "HmacImportParams": [
+        "Algorithm",
+        "HashAlgorithmIdentifier"
+      ],
+      "HmacKeyAlgorithm": [
+        "KeyAlgorithm"
+      ],
+      "HmacKeyGenParams": [
+        "Algorithm",
+        "HashAlgorithmIdentifier"
+      ],
+      "HkdfParams": [
+        "Algorithm",
+        "HashAlgorithmIdentifier",
+        "BufferSource"
+      ],
+      "Pbkdf2Params": [
+        "Algorithm",
+        "BufferSource",
+        "HashAlgorithmIdentifier"
+      ]
+    },
+    "externalDependencies": [
+      "WindowOrWorkerGlobalScope",
+      "ArrayBufferView",
+      "BufferSource",
+      "ArrayBuffer",
+      "Uint8Array"
+    ],
+    "hasObsoleteIdl": false
+  }
+}

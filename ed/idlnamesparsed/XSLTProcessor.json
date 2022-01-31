@@ -1,0 +1,228 @@
+{
+  "name": "XSLTProcessor",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "DOM Standard",
+      "url": "https://dom.spec.whatwg.org/"
+    },
+    "fragment": "[Exposed=Window]\ninterface XSLTProcessor {\n  constructor();\n  undefined importStylesheet(Node style);\n  [CEReactions] DocumentFragment transformToFragment(Node source, Document output);\n  [CEReactions] Document transformToDocument(Node source);\n  undefined setParameter([LegacyNullToEmptyString] DOMString namespaceURI, DOMString localName, any value);\n  any getParameter([LegacyNullToEmptyString] DOMString namespaceURI, DOMString localName);\n  undefined removeParameter([LegacyNullToEmptyString] DOMString namespaceURI, DOMString localName);\n  undefined clearParameters();\n  undefined reset();\n};",
+    "href": "https://dom.spec.whatwg.org/#xsltprocessor"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "xsltprocessor",
+        "href": "https://dom.spec.whatwg.org/#xsltprocessor",
+        "linkingText": [
+          "XSLTProcessor"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-xsltprocessor",
+          "href": "https://dom.spec.whatwg.org/#interface-xsltprocessor",
+          "title": "Interface XSLTProcessor",
+          "number": "9.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-xsltprocessor-xsltprocessor",
+        "href": "https://dom.spec.whatwg.org/#dom-xsltprocessor-xsltprocessor",
+        "linkingText": [
+          "XSLTProcessor()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "XSLTProcessor"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-xsltprocessor",
+          "href": "https://dom.spec.whatwg.org/#interface-xsltprocessor",
+          "title": "Interface XSLTProcessor",
+          "number": "9.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-xsltprocessor-importstylesheet",
+        "href": "https://dom.spec.whatwg.org/#dom-xsltprocessor-importstylesheet",
+        "linkingText": [
+          "importStylesheet(style)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "XSLTProcessor"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-xsltprocessor",
+          "href": "https://dom.spec.whatwg.org/#interface-xsltprocessor",
+          "title": "Interface XSLTProcessor",
+          "number": "9.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-xsltprocessor-transformtofragment",
+        "href": "https://dom.spec.whatwg.org/#dom-xsltprocessor-transformtofragment",
+        "linkingText": [
+          "transformToFragment(source, output)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "XSLTProcessor"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-xsltprocessor",
+          "href": "https://dom.spec.whatwg.org/#interface-xsltprocessor",
+          "title": "Interface XSLTProcessor",
+          "number": "9.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-xsltprocessor-transformtodocument",
+        "href": "https://dom.spec.whatwg.org/#dom-xsltprocessor-transformtodocument",
+        "linkingText": [
+          "transformToDocument(source)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "XSLTProcessor"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-xsltprocessor",
+          "href": "https://dom.spec.whatwg.org/#interface-xsltprocessor",
+          "title": "Interface XSLTProcessor",
+          "number": "9.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-xsltprocessor-setparameter",
+        "href": "https://dom.spec.whatwg.org/#dom-xsltprocessor-setparameter",
+        "linkingText": [
+          "setParameter(namespaceURI, localName, value)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "XSLTProcessor"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-xsltprocessor",
+          "href": "https://dom.spec.whatwg.org/#interface-xsltprocessor",
+          "title": "Interface XSLTProcessor",
+          "number": "9.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-xsltprocessor-getparameter",
+        "href": "https://dom.spec.whatwg.org/#dom-xsltprocessor-getparameter",
+        "linkingText": [
+          "getParameter(namespaceURI, localName)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "XSLTProcessor"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-xsltprocessor",
+          "href": "https://dom.spec.whatwg.org/#interface-xsltprocessor",
+          "title": "Interface XSLTProcessor",
+          "number": "9.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-xsltprocessor-removeparameter",
+        "href": "https://dom.spec.whatwg.org/#dom-xsltprocessor-removeparameter",
+        "linkingText": [
+          "removeParameter(namespaceURI, localName)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "XSLTProcessor"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-xsltprocessor",
+          "href": "https://dom.spec.whatwg.org/#interface-xsltprocessor",
+          "title": "Interface XSLTProcessor",
+          "number": "9.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-xsltprocessor-clearparameters",
+        "href": "https://dom.spec.whatwg.org/#dom-xsltprocessor-clearparameters",
+        "linkingText": [
+          "clearParameters()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "XSLTProcessor"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-xsltprocessor",
+          "href": "https://dom.spec.whatwg.org/#interface-xsltprocessor",
+          "title": "Interface XSLTProcessor",
+          "number": "9.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-xsltprocessor-reset",
+        "href": "https://dom.spec.whatwg.org/#dom-xsltprocessor-reset",
+        "linkingText": [
+          "reset()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "XSLTProcessor"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-xsltprocessor",
+          "href": "https://dom.spec.whatwg.org/#interface-xsltprocessor",
+          "title": "Interface XSLTProcessor",
+          "number": "9.1"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

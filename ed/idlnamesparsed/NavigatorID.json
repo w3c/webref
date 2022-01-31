@@ -1,0 +1,277 @@
+{
+  "name": "NavigatorID",
+  "type": "interface mixin",
+  "defined": {
+    "spec": {
+      "title": "HTML Standard",
+      "url": "https://html.spec.whatwg.org/multipage/"
+    },
+    "fragment": "interface mixin NavigatorID {\n  readonly attribute DOMString appCodeName; // constant \"Mozilla\"\n  readonly attribute DOMString appName; // constant \"Netscape\"\n  readonly attribute DOMString appVersion;\n  readonly attribute DOMString platform;\n  readonly attribute DOMString product; // constant \"Gecko\"\n  [Exposed=Window] readonly attribute DOMString productSub;\n  readonly attribute DOMString userAgent;\n  [Exposed=Window] readonly attribute DOMString vendor;\n  [Exposed=Window] readonly attribute DOMString vendorSub; // constant \"\"\n};",
+    "href": "https://html.spec.whatwg.org/multipage/system-state.html#navigatorid"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "HTML Standard",
+        "url": "https://html.spec.whatwg.org/multipage/"
+      },
+      "fragment": "partial interface mixin NavigatorID {\n  [Exposed=Window] boolean taintEnabled(); // constant false\n  [Exposed=Window] readonly attribute DOMString oscpu;\n};"
+    }
+  ],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://html.spec.whatwg.org/multipage/": [
+      {
+        "id": "navigatorid",
+        "href": "https://html.spec.whatwg.org/multipage/system-state.html#navigatorid",
+        "linkingText": [
+          "NavigatorID"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "client-identification",
+          "href": "https://html.spec.whatwg.org/multipage/system-state.html#client-identification",
+          "title": "Client identification",
+          "number": "8.9.1.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-navigator-appcodename",
+        "href": "https://html.spec.whatwg.org/multipage/system-state.html#dom-navigator-appcodename",
+        "linkingText": [
+          "appCodeName"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "NavigatorID"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "client-identification",
+          "href": "https://html.spec.whatwg.org/multipage/system-state.html#client-identification",
+          "title": "Client identification",
+          "number": "8.9.1.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-navigator-appname",
+        "href": "https://html.spec.whatwg.org/multipage/system-state.html#dom-navigator-appname",
+        "linkingText": [
+          "appName"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "NavigatorID"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "client-identification",
+          "href": "https://html.spec.whatwg.org/multipage/system-state.html#client-identification",
+          "title": "Client identification",
+          "number": "8.9.1.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-navigator-appversion",
+        "href": "https://html.spec.whatwg.org/multipage/system-state.html#dom-navigator-appversion",
+        "linkingText": [
+          "appVersion"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "NavigatorID"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "client-identification",
+          "href": "https://html.spec.whatwg.org/multipage/system-state.html#client-identification",
+          "title": "Client identification",
+          "number": "8.9.1.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-navigator-platform",
+        "href": "https://html.spec.whatwg.org/multipage/system-state.html#dom-navigator-platform",
+        "linkingText": [
+          "platform"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "NavigatorID"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "client-identification",
+          "href": "https://html.spec.whatwg.org/multipage/system-state.html#client-identification",
+          "title": "Client identification",
+          "number": "8.9.1.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-navigator-product",
+        "href": "https://html.spec.whatwg.org/multipage/system-state.html#dom-navigator-product",
+        "linkingText": [
+          "product"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "NavigatorID"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "client-identification",
+          "href": "https://html.spec.whatwg.org/multipage/system-state.html#client-identification",
+          "title": "Client identification",
+          "number": "8.9.1.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-navigator-productsub",
+        "href": "https://html.spec.whatwg.org/multipage/system-state.html#dom-navigator-productsub",
+        "linkingText": [
+          "productSub"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "NavigatorID"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "client-identification",
+          "href": "https://html.spec.whatwg.org/multipage/system-state.html#client-identification",
+          "title": "Client identification",
+          "number": "8.9.1.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-navigator-useragent",
+        "href": "https://html.spec.whatwg.org/multipage/system-state.html#dom-navigator-useragent",
+        "linkingText": [
+          "userAgent"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "NavigatorID"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "client-identification",
+          "href": "https://html.spec.whatwg.org/multipage/system-state.html#client-identification",
+          "title": "Client identification",
+          "number": "8.9.1.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-navigator-vendor",
+        "href": "https://html.spec.whatwg.org/multipage/system-state.html#dom-navigator-vendor",
+        "linkingText": [
+          "vendor"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "NavigatorID"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "client-identification",
+          "href": "https://html.spec.whatwg.org/multipage/system-state.html#client-identification",
+          "title": "Client identification",
+          "number": "8.9.1.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-navigator-vendorsub",
+        "href": "https://html.spec.whatwg.org/multipage/system-state.html#dom-navigator-vendorsub",
+        "linkingText": [
+          "vendorSub"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "NavigatorID"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "client-identification",
+          "href": "https://html.spec.whatwg.org/multipage/system-state.html#client-identification",
+          "title": "Client identification",
+          "number": "8.9.1.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-navigator-taintenabled",
+        "href": "https://html.spec.whatwg.org/multipage/system-state.html#dom-navigator-taintenabled",
+        "linkingText": [
+          "taintEnabled()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "NavigatorID"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "client-identification",
+          "href": "https://html.spec.whatwg.org/multipage/system-state.html#client-identification",
+          "title": "Client identification",
+          "number": "8.9.1.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-navigator-oscpu",
+        "href": "https://html.spec.whatwg.org/multipage/system-state.html#dom-navigator-oscpu",
+        "linkingText": [
+          "oscpu"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "NavigatorID"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "client-identification",
+          "href": "https://html.spec.whatwg.org/multipage/system-state.html#client-identification",
+          "title": "Client identification",
+          "number": "8.9.1.1"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

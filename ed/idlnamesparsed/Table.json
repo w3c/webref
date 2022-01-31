@@ -1,0 +1,148 @@
+{
+  "name": "Table",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebAssembly JavaScript Interface",
+      "url": "https://www.w3.org/TR/wasm-js-api-1/"
+    },
+    "fragment": "[LegacyNamespace=WebAssembly, Exposed=(Window,Worker,Worklet)]\ninterface Table {\n  constructor(TableDescriptor descriptor, optional any value);\n  unsigned long grow([EnforceRange] unsigned long delta, optional any value);\n  any get([EnforceRange] unsigned long index);\n  undefined set([EnforceRange] unsigned long index, optional any value);\n  readonly attribute unsigned long length;\n};",
+    "href": "https://webassembly.github.io/spec/js-api/#table"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/wasm-js-api-1/": [
+      {
+        "id": "table",
+        "href": "https://webassembly.github.io/spec/js-api/#table",
+        "linkingText": [
+          "Table"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "tables",
+          "href": "https://webassembly.github.io/spec/js-api/#tables",
+          "title": "Tables",
+          "number": "4.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-table-table",
+        "href": "https://webassembly.github.io/spec/js-api/#dom-table-table",
+        "linkingText": [
+          "Table(descriptor, value)",
+          "constructor(descriptor, value)",
+          "Table(descriptor)",
+          "constructor(descriptor)"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "Table"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "tables",
+          "href": "https://webassembly.github.io/spec/js-api/#tables",
+          "title": "Tables",
+          "number": "4.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-table-grow",
+        "href": "https://webassembly.github.io/spec/js-api/#dom-table-grow",
+        "linkingText": [
+          "grow(delta, value)",
+          "grow(delta)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Table"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "tables",
+          "href": "https://webassembly.github.io/spec/js-api/#tables",
+          "title": "Tables",
+          "number": "4.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-table-get",
+        "href": "https://webassembly.github.io/spec/js-api/#dom-table-get",
+        "linkingText": [
+          "get(index)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Table"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "tables",
+          "href": "https://webassembly.github.io/spec/js-api/#tables",
+          "title": "Tables",
+          "number": "4.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-table-set",
+        "href": "https://webassembly.github.io/spec/js-api/#dom-table-set",
+        "linkingText": [
+          "set(index, value)",
+          "set(index)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Table"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "tables",
+          "href": "https://webassembly.github.io/spec/js-api/#tables",
+          "title": "Tables",
+          "number": "4.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-table-length",
+        "href": "https://webassembly.github.io/spec/js-api/#dom-table-length",
+        "linkingText": [
+          "length"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Table"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "tables",
+          "href": "https://webassembly.github.io/spec/js-api/#tables",
+          "title": "Tables",
+          "number": "4.4"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "name": "Memory",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebAssembly JavaScript Interface",
+      "url": "https://www.w3.org/TR/wasm-js-api-1/"
+    },
+    "fragment": "[LegacyNamespace=WebAssembly, Exposed=(Window,Worker,Worklet)]\ninterface Memory {\n  constructor(MemoryDescriptor descriptor);\n  unsigned long grow([EnforceRange] unsigned long delta);\n  readonly attribute ArrayBuffer buffer;\n};",
+    "href": "https://webassembly.github.io/spec/js-api/#memory"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/wasm-js-api-1/": [
+      {
+        "id": "memory",
+        "href": "https://webassembly.github.io/spec/js-api/#memory",
+        "linkingText": [
+          "Memory"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "memories",
+          "href": "https://webassembly.github.io/spec/js-api/#memories",
+          "title": "Memories",
+          "number": "4.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-memory-memory",
+        "href": "https://webassembly.github.io/spec/js-api/#dom-memory-memory",
+        "linkingText": [
+          "Memory(descriptor)",
+          "constructor(descriptor)"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "Memory"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "memories",
+          "href": "https://webassembly.github.io/spec/js-api/#memories",
+          "title": "Memories",
+          "number": "4.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-memory-grow",
+        "href": "https://webassembly.github.io/spec/js-api/#dom-memory-grow",
+        "linkingText": [
+          "grow(delta)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Memory"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "memories",
+          "href": "https://webassembly.github.io/spec/js-api/#memories",
+          "title": "Memories",
+          "number": "4.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-memory-buffer",
+        "href": "https://webassembly.github.io/spec/js-api/#dom-memory-buffer",
+        "linkingText": [
+          "buffer"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Memory"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "memories",
+          "href": "https://webassembly.github.io/spec/js-api/#memories",
+          "title": "Memories",
+          "number": "4.3"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

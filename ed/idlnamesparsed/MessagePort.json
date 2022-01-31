@@ -1,0 +1,286 @@
+{
+  "name": "MessagePort",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "HTML Standard",
+      "url": "https://html.spec.whatwg.org/multipage/"
+    },
+    "fragment": "[Exposed=(Window,Worker,AudioWorklet), Transferable]\ninterface MessagePort : EventTarget {\n  undefined postMessage(any message, sequence<object> transfer);\n  undefined postMessage(any message, optional StructuredSerializeOptions options = {});\n  undefined start();\n  undefined close();\n\n  // event handlers\n  attribute EventHandler onmessage;\n  attribute EventHandler onmessageerror;\n};",
+    "href": "https://html.spec.whatwg.org/multipage/web-messaging.html#messageport"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "EventTarget",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=*]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+      "href": "https://dom.spec.whatwg.org/#eventtarget"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://html.spec.whatwg.org/multipage/": [
+      {
+        "id": "messageport",
+        "href": "https://html.spec.whatwg.org/multipage/web-messaging.html#messageport",
+        "linkingText": [
+          "MessagePort"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "message-ports",
+          "href": "https://html.spec.whatwg.org/multipage/web-messaging.html#message-ports",
+          "title": "Message ports",
+          "number": "9.5.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-messageport-postmessage",
+        "href": "https://html.spec.whatwg.org/multipage/web-messaging.html#dom-messageport-postmessage",
+        "linkingText": [
+          "postMessage(message, transfer)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MessagePort"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "message-ports",
+          "href": "https://html.spec.whatwg.org/multipage/web-messaging.html#message-ports",
+          "title": "Message ports",
+          "number": "9.5.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-messageport-postmessage-options",
+        "href": "https://html.spec.whatwg.org/multipage/web-messaging.html#dom-messageport-postmessage-options",
+        "linkingText": [
+          "postMessage(message, options)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MessagePort"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "message-ports",
+          "href": "https://html.spec.whatwg.org/multipage/web-messaging.html#message-ports",
+          "title": "Message ports",
+          "number": "9.5.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-messageport-start",
+        "href": "https://html.spec.whatwg.org/multipage/web-messaging.html#dom-messageport-start",
+        "linkingText": [
+          "start()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MessagePort"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "message-ports",
+          "href": "https://html.spec.whatwg.org/multipage/web-messaging.html#message-ports",
+          "title": "Message ports",
+          "number": "9.5.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-messageport-close",
+        "href": "https://html.spec.whatwg.org/multipage/web-messaging.html#dom-messageport-close",
+        "linkingText": [
+          "close()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MessagePort"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "message-ports",
+          "href": "https://html.spec.whatwg.org/multipage/web-messaging.html#message-ports",
+          "title": "Message ports",
+          "number": "9.5.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "handler-messageport-onmessage",
+        "href": "https://html.spec.whatwg.org/multipage/web-messaging.html#handler-messageport-onmessage",
+        "linkingText": [
+          "onmessage"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "MessagePort"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "message-ports",
+          "href": "https://html.spec.whatwg.org/multipage/web-messaging.html#message-ports",
+          "title": "Message ports",
+          "number": "9.5.3"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-messageport-onmessageerror",
+        "href": "https://html.spec.whatwg.org/multipage/web-messaging.html#handler-messageport-onmessageerror",
+        "linkingText": [
+          "onmessageerror"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "MessagePort"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "message-ports",
+          "href": "https://html.spec.whatwg.org/multipage/web-messaging.html#message-ports",
+          "title": "Message ports",
+          "number": "9.5.3"
+        },
+        "definedIn": "table"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "eventtarget",
+        "href": "https://dom.spec.whatwg.org/#eventtarget",
+        "linkingText": [
+          "EventTarget"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventtarget-eventtarget",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-eventtarget",
+        "linkingText": [
+          "EventTarget()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-addeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-addeventlistener",
+        "linkingText": [
+          "addEventListener(type, callback, options)",
+          "addEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-removeeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-removeeventlistener",
+        "linkingText": [
+          "removeEventListener(type, callback, options)",
+          "removeEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-dispatchevent",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-dispatchevent",
+        "linkingText": [
+          "dispatchEvent(event)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

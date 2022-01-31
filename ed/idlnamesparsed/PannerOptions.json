@@ -1,0 +1,428 @@
+{
+  "name": "PannerOptions",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Web Audio API",
+      "url": "https://www.w3.org/TR/webaudio/"
+    },
+    "fragment": "dictionary PannerOptions : AudioNodeOptions {\n  PanningModelType panningModel = \"equalpower\";\n  DistanceModelType distanceModel = \"inverse\";\n  float positionX = 0;\n  float positionY = 0;\n  float positionZ = 0;\n  float orientationX = 1;\n  float orientationY = 0;\n  float orientationZ = 0;\n  double refDistance = 1;\n  double maxDistance = 10000;\n  double rolloffFactor = 1;\n  double coneInnerAngle = 360;\n  double coneOuterAngle = 360;\n  double coneOuterGain = 0;\n};",
+    "href": "https://webaudio.github.io/web-audio-api/#dictdef-panneroptions"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "AudioNodeOptions",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "Web Audio API",
+        "url": "https://www.w3.org/TR/webaudio/"
+      },
+      "fragment": "dictionary AudioNodeOptions {\n  unsigned long channelCount;\n  ChannelCountMode channelCountMode;\n  ChannelInterpretation channelInterpretation;\n};",
+      "href": "https://webaudio.github.io/web-audio-api/#dictdef-audionodeoptions"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webaudio/": [
+      {
+        "id": "dictdef-panneroptions",
+        "href": "https://webaudio.github.io/web-audio-api/#dictdef-panneroptions",
+        "linkingText": [
+          "PannerOptions"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "PannerOptions",
+          "href": "https://webaudio.github.io/web-audio-api/#PannerOptions",
+          "title": "PannerOptions",
+          "number": "1.27.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-panneroptions-panningmodel",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-panneroptions-panningmodel",
+        "linkingText": [
+          "panningModel"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "PannerOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-pannernode-members",
+          "href": "https://webaudio.github.io/web-audio-api/#dictionary-pannernode-members",
+          "title": "Dictionary PannerOptions Members",
+          "number": "1.27.4.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-panneroptions-distancemodel",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-panneroptions-distancemodel",
+        "linkingText": [
+          "distanceModel"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "PannerOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-pannernode-members",
+          "href": "https://webaudio.github.io/web-audio-api/#dictionary-pannernode-members",
+          "title": "Dictionary PannerOptions Members",
+          "number": "1.27.4.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-panneroptions-positionx",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-panneroptions-positionx",
+        "linkingText": [
+          "positionX"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "PannerOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-pannernode-members",
+          "href": "https://webaudio.github.io/web-audio-api/#dictionary-pannernode-members",
+          "title": "Dictionary PannerOptions Members",
+          "number": "1.27.4.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-panneroptions-positiony",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-panneroptions-positiony",
+        "linkingText": [
+          "positionY"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "PannerOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-pannernode-members",
+          "href": "https://webaudio.github.io/web-audio-api/#dictionary-pannernode-members",
+          "title": "Dictionary PannerOptions Members",
+          "number": "1.27.4.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-panneroptions-positionz",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-panneroptions-positionz",
+        "linkingText": [
+          "positionZ"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "PannerOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-pannernode-members",
+          "href": "https://webaudio.github.io/web-audio-api/#dictionary-pannernode-members",
+          "title": "Dictionary PannerOptions Members",
+          "number": "1.27.4.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-panneroptions-orientationx",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-panneroptions-orientationx",
+        "linkingText": [
+          "orientationX"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "PannerOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-pannernode-members",
+          "href": "https://webaudio.github.io/web-audio-api/#dictionary-pannernode-members",
+          "title": "Dictionary PannerOptions Members",
+          "number": "1.27.4.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-panneroptions-orientationy",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-panneroptions-orientationy",
+        "linkingText": [
+          "orientationY"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "PannerOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-pannernode-members",
+          "href": "https://webaudio.github.io/web-audio-api/#dictionary-pannernode-members",
+          "title": "Dictionary PannerOptions Members",
+          "number": "1.27.4.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-panneroptions-orientationz",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-panneroptions-orientationz",
+        "linkingText": [
+          "orientationZ"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "PannerOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-pannernode-members",
+          "href": "https://webaudio.github.io/web-audio-api/#dictionary-pannernode-members",
+          "title": "Dictionary PannerOptions Members",
+          "number": "1.27.4.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-panneroptions-refdistance",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-panneroptions-refdistance",
+        "linkingText": [
+          "refDistance"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "PannerOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-pannernode-members",
+          "href": "https://webaudio.github.io/web-audio-api/#dictionary-pannernode-members",
+          "title": "Dictionary PannerOptions Members",
+          "number": "1.27.4.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-panneroptions-maxdistance",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-panneroptions-maxdistance",
+        "linkingText": [
+          "maxDistance"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "PannerOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-pannernode-members",
+          "href": "https://webaudio.github.io/web-audio-api/#dictionary-pannernode-members",
+          "title": "Dictionary PannerOptions Members",
+          "number": "1.27.4.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-panneroptions-rollofffactor",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-panneroptions-rollofffactor",
+        "linkingText": [
+          "rolloffFactor"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "PannerOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-pannernode-members",
+          "href": "https://webaudio.github.io/web-audio-api/#dictionary-pannernode-members",
+          "title": "Dictionary PannerOptions Members",
+          "number": "1.27.4.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-panneroptions-coneinnerangle",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-panneroptions-coneinnerangle",
+        "linkingText": [
+          "coneInnerAngle"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "PannerOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-pannernode-members",
+          "href": "https://webaudio.github.io/web-audio-api/#dictionary-pannernode-members",
+          "title": "Dictionary PannerOptions Members",
+          "number": "1.27.4.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-panneroptions-coneouterangle",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-panneroptions-coneouterangle",
+        "linkingText": [
+          "coneOuterAngle"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "PannerOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-pannernode-members",
+          "href": "https://webaudio.github.io/web-audio-api/#dictionary-pannernode-members",
+          "title": "Dictionary PannerOptions Members",
+          "number": "1.27.4.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-panneroptions-coneoutergain",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-panneroptions-coneoutergain",
+        "linkingText": [
+          "coneOuterGain"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "PannerOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-pannernode-members",
+          "href": "https://webaudio.github.io/web-audio-api/#dictionary-pannernode-members",
+          "title": "Dictionary PannerOptions Members",
+          "number": "1.27.4.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dictdef-audionodeoptions",
+        "href": "https://webaudio.github.io/web-audio-api/#dictdef-audionodeoptions",
+        "linkingText": [
+          "AudioNodeOptions"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "AudioNodeOptions",
+          "href": "https://webaudio.github.io/web-audio-api/#AudioNodeOptions",
+          "title": "AudioNodeOptions",
+          "number": "1.5.6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-audionodeoptions-channelcount",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-audionodeoptions-channelcount",
+        "linkingText": [
+          "channelCount"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "AudioNodeOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-audionodeoptions-members",
+          "href": "https://webaudio.github.io/web-audio-api/#dictionary-audionodeoptions-members",
+          "title": "Dictionary AudioNodeOptions Members",
+          "number": "1.5.6.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-audionodeoptions-channelcountmode",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-audionodeoptions-channelcountmode",
+        "linkingText": [
+          "channelCountMode"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "AudioNodeOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-audionodeoptions-members",
+          "href": "https://webaudio.github.io/web-audio-api/#dictionary-audionodeoptions-members",
+          "title": "Dictionary AudioNodeOptions Members",
+          "number": "1.5.6.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-audionodeoptions-channelinterpretation",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-audionodeoptions-channelinterpretation",
+        "linkingText": [
+          "channelInterpretation"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "AudioNodeOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-audionodeoptions-members",
+          "href": "https://webaudio.github.io/web-audio-api/#dictionary-audionodeoptions-members",
+          "title": "Dictionary AudioNodeOptions Members",
+          "number": "1.5.6.1"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

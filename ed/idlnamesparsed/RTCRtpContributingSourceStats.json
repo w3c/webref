@@ -1,0 +1,213 @@
+{
+  "name": "RTCRtpContributingSourceStats",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Identifiers for WebRTC's Statistics API",
+      "url": "https://www.w3.org/TR/webrtc-stats/"
+    },
+    "fragment": "dictionary RTCRtpContributingSourceStats : RTCStats {\n             required unsigned long contributorSsrc;\n             required DOMString     inboundRtpStreamId;\n             unsigned long packetsContributedTo;\n             double        audioLevel;\n};",
+    "href": "https://w3c.github.io/webrtc-stats/#dom-rtcrtpcontributingsourcestats"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "RTCStats",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
+        "url": "https://www.w3.org/TR/webrtc/"
+      },
+      "fragment": "dictionary RTCStats {\n  required DOMHighResTimeStamp timestamp;\n  required RTCStatsType type;\n  required DOMString id;\n};",
+      "href": "https://w3c.github.io/webrtc-pc/#dom-rtcstats"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webrtc-stats/": [
+      {
+        "id": "dom-rtcrtpcontributingsourcestats",
+        "href": "https://w3c.github.io/webrtc-stats/#dom-rtcrtpcontributingsourcestats",
+        "linkingText": [
+          "RTCRtpContributingSourceStats"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "contributingsourcestats-dict*",
+          "href": "https://w3c.github.io/webrtc-stats/#contributingsourcestats-dict*",
+          "title": "RTCRtpContributingSourceStats dictionary",
+          "number": "7.14"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-rtcrtpcontributingsourcestats-contributorssrc",
+        "href": "https://w3c.github.io/webrtc-stats/#dom-rtcrtpcontributingsourcestats-contributorssrc",
+        "linkingText": [
+          "contributorSsrc"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RTCRtpContributingSourceStats"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-rtcrtpcontributingsourcestats-members",
+          "href": "https://w3c.github.io/webrtc-stats/#dictionary-rtcrtpcontributingsourcestats-members",
+          "title": "Dictionary RTCRtpContributingSourceStats Members"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcrtpcontributingsourcestats-inboundrtpstreamid",
+        "href": "https://w3c.github.io/webrtc-stats/#dom-rtcrtpcontributingsourcestats-inboundrtpstreamid",
+        "linkingText": [
+          "inboundRtpStreamId"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RTCRtpContributingSourceStats"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-rtcrtpcontributingsourcestats-members",
+          "href": "https://w3c.github.io/webrtc-stats/#dictionary-rtcrtpcontributingsourcestats-members",
+          "title": "Dictionary RTCRtpContributingSourceStats Members"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcrtpcontributingsourcestats-packetscontributedto",
+        "href": "https://w3c.github.io/webrtc-stats/#dom-rtcrtpcontributingsourcestats-packetscontributedto",
+        "linkingText": [
+          "packetsContributedTo"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RTCRtpContributingSourceStats"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-rtcrtpcontributingsourcestats-members",
+          "href": "https://w3c.github.io/webrtc-stats/#dictionary-rtcrtpcontributingsourcestats-members",
+          "title": "Dictionary RTCRtpContributingSourceStats Members"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcrtpcontributingsourcestats-audiolevel",
+        "href": "https://w3c.github.io/webrtc-stats/#dom-rtcrtpcontributingsourcestats-audiolevel",
+        "linkingText": [
+          "audioLevel"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RTCRtpContributingSourceStats"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-rtcrtpcontributingsourcestats-members",
+          "href": "https://w3c.github.io/webrtc-stats/#dictionary-rtcrtpcontributingsourcestats-members",
+          "title": "Dictionary RTCRtpContributingSourceStats Members"
+        },
+        "definedIn": "dt"
+      }
+    ],
+    "https://www.w3.org/TR/webrtc/": [
+      {
+        "id": "dom-rtcstats",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcstats",
+        "linkingText": [
+          "RTCStats"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "rtcstats-dictionary",
+          "href": "https://w3c.github.io/webrtc-pc/#rtcstats-dictionary",
+          "title": "RTCStats Dictionary",
+          "number": "8.4"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-rtcstats-timestamp",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcstats-timestamp",
+        "linkingText": [
+          "timestamp"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RTCStats"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-rtcstats-members",
+          "href": "https://w3c.github.io/webrtc-pc/#dictionary-rtcstats-members",
+          "title": "Dictionary RTCStats Members"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcstats-type",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcstats-type",
+        "linkingText": [
+          "type"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RTCStats"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-rtcstats-members",
+          "href": "https://w3c.github.io/webrtc-pc/#dictionary-rtcstats-members",
+          "title": "Dictionary RTCStats Members"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcstats-id",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcstats-id",
+        "linkingText": [
+          "id"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RTCStats"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-rtcstats-members",
+          "href": "https://w3c.github.io/webrtc-pc/#dictionary-rtcstats-members",
+          "title": "Dictionary RTCStats Members"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

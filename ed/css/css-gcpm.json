@@ -1,0 +1,89 @@
+{
+  "spec": {
+    "title": "CSS Generated Content for Paged Media Module",
+    "url": "https://drafts.csswg.org/css-gcpm/"
+  },
+  "properties": {
+    "string-set": {
+      "name": "string-set",
+      "value": "[ <custom-ident> <content-list> ]# | none",
+      "initial": "none",
+      "appliesTo": "all elements, but not pseudo-elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "specified value",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "string-set",
+        "stringSet"
+      ]
+    },
+    "position": {
+      "name": "position",
+      "newValues": "running()",
+      "styleDeclaration": [
+        "position"
+      ]
+    },
+    "content": {
+      "name": "content",
+      "newValues": "element()",
+      "styleDeclaration": [
+        "content"
+      ]
+    },
+    "float": {
+      "name": "float",
+      "newValues": "footnote",
+      "styleDeclaration": [
+        "float"
+      ]
+    },
+    "footnote-display": {
+      "name": "footnote-display",
+      "value": "block | inline | compact",
+      "initial": "block",
+      "appliesTo": "elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "specified value",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "footnote-display",
+        "footnoteDisplay"
+      ]
+    },
+    "footnote-policy": {
+      "name": "footnote-policy",
+      "value": "auto | line | block",
+      "initial": "auto",
+      "appliesTo": "elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "specified value",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "footnote-policy",
+        "footnotePolicy"
+      ]
+    }
+  },
+  "descriptors": {},
+  "valuespaces": {
+    "<content()>": {
+      "value": "content([text | before | after | first-letter ])"
+    },
+    "<string()>": {
+      "value": "string( <custom-ident> , [ first | start | last | first-except ]? )"
+    },
+    "<running()>": {
+      "value": "running( <custom-ident> )"
+    },
+    "<element()>": {
+      "value": "element( <custom-ident> , [ first | start | last | first-except ]? )"
+    },
+    "<nth()>": {
+      "value": "( An+B [of <custom-ident>]?)"
+    }
+  }
+}

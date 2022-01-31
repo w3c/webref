@@ -1,0 +1,739 @@
+{
+  "spec": {
+    "title": "CSS Positioned Layout Module Level 3",
+    "url": "https://drafts.csswg.org/css-position/"
+  },
+  "dfns": [
+    {
+      "id": "propdef-position",
+      "href": "https://drafts.csswg.org/css-position/#propdef-position",
+      "linkingText": [
+        "position"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "position-property",
+        "href": "https://drafts.csswg.org/css-position/#position-property",
+        "title": "Choosing A Positioning Scheme: position property",
+        "number": "2"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "positioning-scheme",
+      "href": "https://drafts.csswg.org/css-position/#positioning-scheme",
+      "linkingText": [
+        "positioning scheme"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "position-property",
+        "href": "https://drafts.csswg.org/css-position/#position-property",
+        "title": "Choosing A Positioning Scheme: position property",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "positioned-box",
+      "href": "https://drafts.csswg.org/css-position/#positioned-box",
+      "linkingText": [
+        "positioned box",
+        "positioned"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "position-property",
+        "href": "https://drafts.csswg.org/css-position/#position-property",
+        "title": "Choosing A Positioning Scheme: position property",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valdef-position-static",
+      "href": "https://drafts.csswg.org/css-position/#valdef-position-static",
+      "linkingText": [
+        "static"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "position"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "position-property",
+        "href": "https://drafts.csswg.org/css-position/#position-property",
+        "title": "Choosing A Positioning Scheme: position property",
+        "number": "2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-position-relative",
+      "href": "https://drafts.csswg.org/css-position/#valdef-position-relative",
+      "linkingText": [
+        "relative"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "position"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "position-property",
+        "href": "https://drafts.csswg.org/css-position/#position-property",
+        "title": "Choosing A Positioning Scheme: position property",
+        "number": "2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "relative-position",
+      "href": "https://drafts.csswg.org/css-position/#relative-position",
+      "linkingText": [
+        "relative position",
+        "relatively position",
+        "relatively-positioned",
+        "relatively positioned box"
+      ],
+      "localLinkingText": [
+        "relative",
+        "relatively"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "position-property",
+        "href": "https://drafts.csswg.org/css-position/#position-property",
+        "title": "Choosing A Positioning Scheme: position property",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valdef-position-sticky",
+      "href": "https://drafts.csswg.org/css-position/#valdef-position-sticky",
+      "linkingText": [
+        "sticky"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "position"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "position-property",
+        "href": "https://drafts.csswg.org/css-position/#position-property",
+        "title": "Choosing A Positioning Scheme: position property",
+        "number": "2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "sticky-position",
+      "href": "https://drafts.csswg.org/css-position/#sticky-position",
+      "linkingText": [
+        "sticky position",
+        "sticky-positioned",
+        "sticky-positioned box"
+      ],
+      "localLinkingText": [
+        "sticky"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "position-property",
+        "href": "https://drafts.csswg.org/css-position/#position-property",
+        "title": "Choosing A Positioning Scheme: position property",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valdef-position-absolute",
+      "href": "https://drafts.csswg.org/css-position/#valdef-position-absolute",
+      "linkingText": [
+        "absolute"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "position"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "position-property",
+        "href": "https://drafts.csswg.org/css-position/#position-property",
+        "title": "Choosing A Positioning Scheme: position property",
+        "number": "2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "absolute-position",
+      "href": "https://drafts.csswg.org/css-position/#absolute-position",
+      "linkingText": [
+        "absolute position",
+        "absolutely position",
+        "absolutely-positioned",
+        "absolutely positioned box",
+        "absolutely positioned element"
+      ],
+      "localLinkingText": [
+        "absolute",
+        "absolutely"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "position-property",
+        "href": "https://drafts.csswg.org/css-position/#position-property",
+        "title": "Choosing A Positioning Scheme: position property",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valdef-position-fixed",
+      "href": "https://drafts.csswg.org/css-position/#valdef-position-fixed",
+      "linkingText": [
+        "fixed"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "position"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "position-property",
+        "href": "https://drafts.csswg.org/css-position/#position-property",
+        "title": "Choosing A Positioning Scheme: position property",
+        "number": "2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "fixed-position",
+      "href": "https://drafts.csswg.org/css-position/#fixed-position",
+      "linkingText": [
+        "fixed position",
+        "fixed-positioned",
+        "fixed-positioned box"
+      ],
+      "localLinkingText": [
+        "fixed"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "position-property",
+        "href": "https://drafts.csswg.org/css-position/#position-property",
+        "title": "Choosing A Positioning Scheme: position property",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "absolute-positioning-containing-block",
+      "href": "https://drafts.csswg.org/css-position/#absolute-positioning-containing-block",
+      "linkingText": [
+        "absolute positioning containing block"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "def-cb",
+        "href": "https://drafts.csswg.org/css-position/#def-cb",
+        "title": "Containing Blocks of Positioned Boxes",
+        "number": "2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "fixed-positioning-containing-block",
+      "href": "https://drafts.csswg.org/css-position/#fixed-positioning-containing-block",
+      "linkingText": [
+        "fixed positioning containing block"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "def-cb",
+        "href": "https://drafts.csswg.org/css-position/#def-cb",
+        "title": "Containing Blocks of Positioned Boxes",
+        "number": "2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "inset-properties",
+      "href": "https://drafts.csswg.org/css-position/#inset-properties",
+      "linkingText": [
+        "inset properties"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "coords",
+        "href": "https://drafts.csswg.org/css-position/#coords",
+        "title": "Positioning Coordinates",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "propdef-top",
+      "href": "https://drafts.csswg.org/css-position/#propdef-top",
+      "linkingText": [
+        "top"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "insets",
+        "href": "https://drafts.csswg.org/css-position/#insets",
+        "title": "Box Insets: the top, right, bottom, left, inset-block-start, inset-inline-start, inset-block-end, and inset-inline-end properties",
+        "number": "3.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-right",
+      "href": "https://drafts.csswg.org/css-position/#propdef-right",
+      "linkingText": [
+        "right"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "insets",
+        "href": "https://drafts.csswg.org/css-position/#insets",
+        "title": "Box Insets: the top, right, bottom, left, inset-block-start, inset-inline-start, inset-block-end, and inset-inline-end properties",
+        "number": "3.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-bottom",
+      "href": "https://drafts.csswg.org/css-position/#propdef-bottom",
+      "linkingText": [
+        "bottom"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "insets",
+        "href": "https://drafts.csswg.org/css-position/#insets",
+        "title": "Box Insets: the top, right, bottom, left, inset-block-start, inset-inline-start, inset-block-end, and inset-inline-end properties",
+        "number": "3.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-left",
+      "href": "https://drafts.csswg.org/css-position/#propdef-left",
+      "linkingText": [
+        "left"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "insets",
+        "href": "https://drafts.csswg.org/css-position/#insets",
+        "title": "Box Insets: the top, right, bottom, left, inset-block-start, inset-inline-start, inset-block-end, and inset-inline-end properties",
+        "number": "3.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-inset-block-start",
+      "href": "https://drafts.csswg.org/css-position/#propdef-inset-block-start",
+      "linkingText": [
+        "inset-block-start"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "insets",
+        "href": "https://drafts.csswg.org/css-position/#insets",
+        "title": "Box Insets: the top, right, bottom, left, inset-block-start, inset-inline-start, inset-block-end, and inset-inline-end properties",
+        "number": "3.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-inset-inline-start",
+      "href": "https://drafts.csswg.org/css-position/#propdef-inset-inline-start",
+      "linkingText": [
+        "inset-inline-start"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "insets",
+        "href": "https://drafts.csswg.org/css-position/#insets",
+        "title": "Box Insets: the top, right, bottom, left, inset-block-start, inset-inline-start, inset-block-end, and inset-inline-end properties",
+        "number": "3.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-inset-block-end",
+      "href": "https://drafts.csswg.org/css-position/#propdef-inset-block-end",
+      "linkingText": [
+        "inset-block-end"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "insets",
+        "href": "https://drafts.csswg.org/css-position/#insets",
+        "title": "Box Insets: the top, right, bottom, left, inset-block-start, inset-inline-start, inset-block-end, and inset-inline-end properties",
+        "number": "3.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-inset-inline-end",
+      "href": "https://drafts.csswg.org/css-position/#propdef-inset-inline-end",
+      "linkingText": [
+        "inset-inline-end"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "insets",
+        "href": "https://drafts.csswg.org/css-position/#insets",
+        "title": "Box Insets: the top, right, bottom, left, inset-block-start, inset-inline-start, inset-block-end, and inset-inline-end properties",
+        "number": "3.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "valdef-top-length",
+      "href": "https://drafts.csswg.org/css-position/#valdef-top-length",
+      "linkingText": [
+        "<length>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "top",
+        "right",
+        "bottom",
+        "left",
+        "inset-block-start",
+        "inset-inline-start",
+        "inset-block-end",
+        "inset-inline-end inset-block",
+        "inset-inline",
+        "inset"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "insets",
+        "href": "https://drafts.csswg.org/css-position/#insets",
+        "title": "Box Insets: the top, right, bottom, left, inset-block-start, inset-inline-start, inset-block-end, and inset-inline-end properties",
+        "number": "3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-top-percentage",
+      "href": "https://drafts.csswg.org/css-position/#valdef-top-percentage",
+      "linkingText": [
+        "<percentage>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "top",
+        "right",
+        "bottom",
+        "left",
+        "inset-block-start",
+        "inset-inline-start",
+        "inset-block-end",
+        "inset-inline-end inset-block",
+        "inset-inline",
+        "inset"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "insets",
+        "href": "https://drafts.csswg.org/css-position/#insets",
+        "title": "Box Insets: the top, right, bottom, left, inset-block-start, inset-inline-start, inset-block-end, and inset-inline-end properties",
+        "number": "3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-top-auto",
+      "href": "https://drafts.csswg.org/css-position/#valdef-top-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "top",
+        "right",
+        "bottom",
+        "left",
+        "inset-block-start",
+        "inset-inline-start",
+        "inset-block-end",
+        "inset-inline-end inset-block",
+        "inset-inline",
+        "inset"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "insets",
+        "href": "https://drafts.csswg.org/css-position/#insets",
+        "title": "Box Insets: the top, right, bottom, left, inset-block-start, inset-inline-start, inset-block-end, and inset-inline-end properties",
+        "number": "3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "propdef-inset-block",
+      "href": "https://drafts.csswg.org/css-position/#propdef-inset-block",
+      "linkingText": [
+        "inset-block"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "inset-shorthands",
+        "href": "https://drafts.csswg.org/css-position/#inset-shorthands",
+        "title": "Box Insets Shorthands: the inset-block, inset-inline, and inset properties",
+        "number": "3.2"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-inset-inline",
+      "href": "https://drafts.csswg.org/css-position/#propdef-inset-inline",
+      "linkingText": [
+        "inset-inline"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "inset-shorthands",
+        "href": "https://drafts.csswg.org/css-position/#inset-shorthands",
+        "title": "Box Insets Shorthands: the inset-block, inset-inline, and inset properties",
+        "number": "3.2"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-inset",
+      "href": "https://drafts.csswg.org/css-position/#propdef-inset",
+      "linkingText": [
+        "inset"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "inset-shorthands",
+        "href": "https://drafts.csswg.org/css-position/#inset-shorthands",
+        "title": "Box Insets Shorthands: the inset-block, inset-inline, and inset properties",
+        "number": "3.2"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "sticky-view-rectangle",
+      "href": "https://drafts.csswg.org/css-position/#sticky-view-rectangle",
+      "linkingText": [
+        "sticky view rectangle"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "stickypos-insets",
+        "href": "https://drafts.csswg.org/css-position/#stickypos-insets",
+        "title": "Sticky positioning",
+        "number": "3.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "position-box",
+      "href": "https://drafts.csswg.org/css-position/#position-box",
+      "linkingText": [
+        "position box"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "stickypos-insets",
+        "href": "https://drafts.csswg.org/css-position/#stickypos-insets",
+        "title": "Sticky positioning",
+        "number": "3.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "weaker-inset",
+      "href": "https://drafts.csswg.org/css-position/#weaker-inset",
+      "linkingText": [
+        "weaker inset"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "abspos-insets",
+        "href": "https://drafts.csswg.org/css-position/#abspos-insets",
+        "title": "Absolute (and Fixed) Positioning",
+        "number": "3.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "inset-modified-containing-block",
+      "href": "https://drafts.csswg.org/css-position/#inset-modified-containing-block",
+      "linkingText": [
+        "inset-modified containing block"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "abspos-insets",
+        "href": "https://drafts.csswg.org/css-position/#abspos-insets",
+        "title": "Absolute (and Fixed) Positioning",
+        "number": "3.5"
+      },
+      "definedIn": "note"
+    },
+    {
+      "id": "static-position-rectangle",
+      "href": "https://drafts.csswg.org/css-position/#static-position-rectangle",
+      "linkingText": [
+        "static position rectangle"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "staticpos-rect",
+        "href": "https://drafts.csswg.org/css-position/#staticpos-rect",
+        "title": "Resolving Automatic Insets",
+        "number": "3.5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "absolute-positioning-layout",
+      "href": "https://drafts.csswg.org/css-position/#absolute-positioning-layout",
+      "linkingText": [
+        "absolute positioning layout",
+        "absolute positioning layout model"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "abspos-layout",
+        "href": "https://drafts.csswg.org/css-position/#abspos-layout",
+        "title": "Absolute Positioning Layout Model",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    }
+  ]
+}

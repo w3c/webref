@@ -1,0 +1,262 @@
+{
+  "name": "CSSRotate",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "CSS Typed OM Level 1",
+      "url": "https://www.w3.org/TR/css-typed-om-1/"
+    },
+    "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]\ninterface CSSRotate : CSSTransformComponent {\n    constructor(CSSNumericValue angle);\n    constructor(CSSNumberish x, CSSNumberish y, CSSNumberish z, CSSNumericValue angle);\n    attribute CSSNumberish x;\n    attribute CSSNumberish y;\n    attribute CSSNumberish z;\n    attribute CSSNumericValue angle;\n};",
+    "href": "https://drafts.css-houdini.org/css-typed-om-1/#cssrotate"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "CSSTransformComponent",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "CSS Typed OM Level 1",
+        "url": "https://www.w3.org/TR/css-typed-om-1/"
+      },
+      "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]\ninterface CSSTransformComponent {\n    stringifier;\n    attribute boolean is2D;\n    DOMMatrix toMatrix();\n};",
+      "href": "https://drafts.css-houdini.org/css-typed-om-1/#csstransformcomponent"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/css-typed-om-1/": [
+      {
+        "id": "cssrotate",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#cssrotate",
+        "linkingText": [
+          "CSSRotate"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "transformvalue-objects",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#transformvalue-objects",
+          "title": "CSSTransformValue objects",
+          "number": "4.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-cssrotate-cssrotate",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-cssrotate-cssrotate",
+        "linkingText": [
+          "CSSRotate(angle)",
+          "constructor(angle)"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "CSSRotate"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "transformvalue-objects",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#transformvalue-objects",
+          "title": "CSSTransformValue objects",
+          "number": "4.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-cssrotate-cssrotate-x-y-z-angle",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-cssrotate-cssrotate-x-y-z-angle",
+        "linkingText": [
+          "CSSRotate(x, y, z, angle)",
+          "constructor(x, y, z, angle)"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "CSSRotate"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "transformvalue-objects",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#transformvalue-objects",
+          "title": "CSSTransformValue objects",
+          "number": "4.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-cssrotate-x",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-cssrotate-x",
+        "linkingText": [
+          "x"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "CSSRotate"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "transformvalue-objects",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#transformvalue-objects",
+          "title": "CSSTransformValue objects",
+          "number": "4.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-cssrotate-y",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-cssrotate-y",
+        "linkingText": [
+          "y"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "CSSRotate"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "transformvalue-objects",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#transformvalue-objects",
+          "title": "CSSTransformValue objects",
+          "number": "4.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-cssrotate-z",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-cssrotate-z",
+        "linkingText": [
+          "z"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "CSSRotate"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "transformvalue-objects",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#transformvalue-objects",
+          "title": "CSSTransformValue objects",
+          "number": "4.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-cssrotate-angle",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-cssrotate-angle",
+        "linkingText": [
+          "angle"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "CSSRotate"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "transformvalue-objects",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#transformvalue-objects",
+          "title": "CSSTransformValue objects",
+          "number": "4.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "csstransformcomponent",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#csstransformcomponent",
+        "linkingText": [
+          "CSSTransformComponent"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "transformvalue-objects",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#transformvalue-objects",
+          "title": "CSSTransformValue objects",
+          "number": "4.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "CSSTransformComponent-stringification-behavior",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#CSSTransformComponent-stringification-behavior",
+        "linkingText": [
+          "stringification behavior"
+        ],
+        "localLinkingText": [],
+        "type": "dfn",
+        "for": [
+          "CSSTransformComponent"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "transformvalue-objects",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#transformvalue-objects",
+          "title": "CSSTransformValue objects",
+          "number": "4.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-csstransformcomponent-is2d",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-csstransformcomponent-is2d",
+        "linkingText": [
+          "is2D"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "CSSTransformComponent"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "transformvalue-objects",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#transformvalue-objects",
+          "title": "CSSTransformValue objects",
+          "number": "4.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-csstransformcomponent-tomatrix",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-csstransformcomponent-tomatrix",
+        "linkingText": [
+          "toMatrix()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSSTransformComponent"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "transformvalue-objects",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#transformvalue-objects",
+          "title": "CSSTransformValue objects",
+          "number": "4.4"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

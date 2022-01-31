@@ -1,0 +1,59 @@
+{
+  "name": "NavigatorDeviceMemory",
+  "type": "interface mixin",
+  "defined": {
+    "spec": {
+      "title": "Device Memory 1",
+      "url": "https://www.w3.org/TR/device-memory-1/"
+    },
+    "fragment": "[\n    SecureContext,\n    Exposed=(Window,Worker)\n] interface mixin NavigatorDeviceMemory {\n    readonly attribute double deviceMemory;\n};",
+    "href": "https://w3c.github.io/device-memory/#navigatordevicememory"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/device-memory-1/": [
+      {
+        "id": "navigatordevicememory",
+        "href": "https://w3c.github.io/device-memory/#navigatordevicememory",
+        "linkingText": [
+          "NavigatorDeviceMemory"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "sec-device-memory-js-api",
+          "href": "https://w3c.github.io/device-memory/#sec-device-memory-js-api",
+          "title": "Device Memory JS API",
+          "number": "3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-navigatordevicememory-devicememory",
+        "href": "https://w3c.github.io/device-memory/#dom-navigatordevicememory-devicememory",
+        "linkingText": [
+          "deviceMemory"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "NavigatorDeviceMemory"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "sec-device-memory-js-api",
+          "href": "https://w3c.github.io/device-memory/#sec-device-memory-js-api",
+          "title": "Device Memory JS API",
+          "number": "3"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

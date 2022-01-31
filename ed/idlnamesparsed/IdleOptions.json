@@ -1,0 +1,80 @@
+{
+  "name": "IdleOptions",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Idle Detection API",
+      "url": "https://wicg.github.io/idle-detection/"
+    },
+    "fragment": "dictionary IdleOptions {\n  [EnforceRange] unsigned long long threshold;\n  AbortSignal signal;\n};",
+    "href": "https://wicg.github.io/idle-detection/#dictdef-idleoptions"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://wicg.github.io/idle-detection/": [
+      {
+        "id": "dictdef-idleoptions",
+        "href": "https://wicg.github.io/idle-detection/#dictdef-idleoptions",
+        "linkingText": [
+          "IdleOptions"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-idledetector",
+          "href": "https://wicg.github.io/idle-detection/#api-idledetector",
+          "title": "The IdleDetector interface",
+          "number": "2.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-idleoptions-threshold",
+        "href": "https://wicg.github.io/idle-detection/#dom-idleoptions-threshold",
+        "linkingText": [
+          "threshold"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "IdleOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-idledetector",
+          "href": "https://wicg.github.io/idle-detection/#api-idledetector",
+          "title": "The IdleDetector interface",
+          "number": "2.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-idleoptions-signal",
+        "href": "https://wicg.github.io/idle-detection/#dom-idleoptions-signal",
+        "linkingText": [
+          "signal"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "IdleOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-idledetector",
+          "href": "https://wicg.github.io/idle-detection/#api-idledetector",
+          "title": "The IdleDetector interface",
+          "number": "2.4"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

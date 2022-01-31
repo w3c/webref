@@ -1,0 +1,98 @@
+{
+  "name": "LockManager",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Web Locks API",
+      "url": "https://w3c.github.io/web-locks/"
+    },
+    "fragment": "[SecureContext, Exposed=(Window,Worker)]\ninterface LockManager {\n  Promise<any> request(DOMString name,\n                       LockGrantedCallback callback);\n  Promise<any> request(DOMString name,\n                       LockOptions options,\n                       LockGrantedCallback callback);\n\n  Promise<LockManagerSnapshot> query();\n};",
+    "href": "https://w3c.github.io/web-locks/#lockmanager"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://w3c.github.io/web-locks/": [
+      {
+        "id": "lockmanager",
+        "href": "https://w3c.github.io/web-locks/#lockmanager",
+        "linkingText": [
+          "LockManager"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-lock-manager",
+          "href": "https://w3c.github.io/web-locks/#api-lock-manager",
+          "title": "LockManager class",
+          "number": "3.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-lockmanager-request",
+        "href": "https://w3c.github.io/web-locks/#dom-lockmanager-request",
+        "linkingText": [
+          "request(name, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "LockManager"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "title",
+          "href": "https://w3c.github.io/web-locks/#title",
+          "title": "Web Locks API"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-lockmanager-request-name-options-callback",
+        "href": "https://w3c.github.io/web-locks/#dom-lockmanager-request-name-options-callback",
+        "linkingText": [
+          "request(name, options, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "LockManager"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "title",
+          "href": "https://w3c.github.io/web-locks/#title",
+          "title": "Web Locks API"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-lockmanager-query",
+        "href": "https://w3c.github.io/web-locks/#dom-lockmanager-query",
+        "linkingText": [
+          "query()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "LockManager"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "title",
+          "href": "https://w3c.github.io/web-locks/#title",
+          "title": "Web Locks API"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

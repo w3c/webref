@@ -1,0 +1,164 @@
+{
+  "name": "AudioDataInit",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "WebCodecs",
+      "url": "https://www.w3.org/TR/webcodecs/"
+    },
+    "fragment": "dictionary AudioDataInit {\n  required AudioSampleFormat format;\n  required float sampleRate;\n  [EnforceRange] required unsigned long numberOfFrames;\n  [EnforceRange] required unsigned long numberOfChannels;\n  [EnforceRange] required long long timestamp;  // microseconds\n  required BufferSource data;\n};",
+    "href": "https://w3c.github.io/webcodecs/#dictdef-audiodatainit"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webcodecs/": [
+      {
+        "id": "dictdef-audiodatainit",
+        "href": "https://w3c.github.io/webcodecs/#dictdef-audiodatainit",
+        "linkingText": [
+          "AudioDataInit"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "audiodata-interface",
+          "href": "https://w3c.github.io/webcodecs/#audiodata-interface",
+          "title": "AudioData Interface",
+          "number": "9.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-audiodatainit-format",
+        "href": "https://w3c.github.io/webcodecs/#dom-audiodatainit-format",
+        "linkingText": [
+          "format"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "AudioDataInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "audiodata-interface",
+          "href": "https://w3c.github.io/webcodecs/#audiodata-interface",
+          "title": "AudioData Interface",
+          "number": "9.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-audiodatainit-samplerate",
+        "href": "https://w3c.github.io/webcodecs/#dom-audiodatainit-samplerate",
+        "linkingText": [
+          "sampleRate"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "AudioDataInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "audiodata-interface",
+          "href": "https://w3c.github.io/webcodecs/#audiodata-interface",
+          "title": "AudioData Interface",
+          "number": "9.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-audiodatainit-numberofframes",
+        "href": "https://w3c.github.io/webcodecs/#dom-audiodatainit-numberofframes",
+        "linkingText": [
+          "numberOfFrames"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "AudioDataInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "audiodata-interface",
+          "href": "https://w3c.github.io/webcodecs/#audiodata-interface",
+          "title": "AudioData Interface",
+          "number": "9.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-audiodatainit-numberofchannels",
+        "href": "https://w3c.github.io/webcodecs/#dom-audiodatainit-numberofchannels",
+        "linkingText": [
+          "numberOfChannels"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "AudioDataInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "audiodata-interface",
+          "href": "https://w3c.github.io/webcodecs/#audiodata-interface",
+          "title": "AudioData Interface",
+          "number": "9.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-audiodatainit-timestamp",
+        "href": "https://w3c.github.io/webcodecs/#dom-audiodatainit-timestamp",
+        "linkingText": [
+          "timestamp"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "AudioDataInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "audiodata-interface",
+          "href": "https://w3c.github.io/webcodecs/#audiodata-interface",
+          "title": "AudioData Interface",
+          "number": "9.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-audiodatainit-data",
+        "href": "https://w3c.github.io/webcodecs/#dom-audiodatainit-data",
+        "linkingText": [
+          "data"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "AudioDataInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "audiodata-interface",
+          "href": "https://w3c.github.io/webcodecs/#audiodata-interface",
+          "title": "AudioData Interface",
+          "number": "9.2"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

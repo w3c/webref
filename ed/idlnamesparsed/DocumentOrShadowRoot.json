@@ -1,0 +1,242 @@
+{
+  "name": "DocumentOrShadowRoot",
+  "type": "interface mixin",
+  "defined": {
+    "spec": {
+      "title": "DOM Standard",
+      "url": "https://dom.spec.whatwg.org/"
+    },
+    "fragment": "interface mixin DocumentOrShadowRoot {\n};",
+    "href": "https://dom.spec.whatwg.org/#documentorshadowroot"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "Fullscreen API Standard",
+        "url": "https://fullscreen.spec.whatwg.org/"
+      },
+      "fragment": "partial interface mixin DocumentOrShadowRoot {\n  [LegacyLenientSetter] readonly attribute Element? fullscreenElement;\n};"
+    },
+    {
+      "spec": {
+        "title": "HTML Standard",
+        "url": "https://html.spec.whatwg.org/multipage/"
+      },
+      "fragment": "partial interface mixin DocumentOrShadowRoot {\n  readonly attribute Element? activeElement;\n};"
+    },
+    {
+      "spec": {
+        "title": "CSS Object Model (CSSOM)",
+        "url": "https://www.w3.org/TR/cssom-1/"
+      },
+      "fragment": "partial interface mixin DocumentOrShadowRoot {\n  [SameObject] readonly attribute StyleSheetList styleSheets;\n  attribute ObservableArray<CSSStyleSheet> adoptedStyleSheets;\n};"
+    },
+    {
+      "spec": {
+        "title": "Picture-in-Picture",
+        "url": "https://www.w3.org/TR/picture-in-picture/"
+      },
+      "fragment": "partial interface mixin DocumentOrShadowRoot {\n  readonly attribute Element? pictureInPictureElement;\n};"
+    },
+    {
+      "spec": {
+        "title": "Pointer Lock 2.0",
+        "url": "https://www.w3.org/TR/pointerlock-2/"
+      },
+      "fragment": "partial interface mixin DocumentOrShadowRoot {\n  readonly attribute Element ? pointerLockElement;\n};"
+    },
+    {
+      "spec": {
+        "title": "Web Animations",
+        "url": "https://www.w3.org/TR/web-animations-1/"
+      },
+      "fragment": "partial interface mixin DocumentOrShadowRoot {\n    sequence<Animation> getAnimations();\n};"
+    }
+  ],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "documentorshadowroot",
+        "href": "https://dom.spec.whatwg.org/#documentorshadowroot",
+        "linkingText": [
+          "DocumentOrShadowRoot"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "mixin-documentorshadowroot",
+          "href": "https://dom.spec.whatwg.org/#mixin-documentorshadowroot",
+          "title": "Mixin DocumentOrShadowRoot",
+          "number": "4.2.5"
+        },
+        "definedIn": "pre"
+      }
+    ],
+    "https://fullscreen.spec.whatwg.org/": [
+      {
+        "id": "dom-document-fullscreenelement",
+        "href": "https://fullscreen.spec.whatwg.org/#dom-document-fullscreenelement",
+        "linkingText": [
+          "fullscreenElement"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "DocumentOrShadowRoot"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api",
+          "href": "https://fullscreen.spec.whatwg.org/#api",
+          "title": "API",
+          "number": "3"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://html.spec.whatwg.org/multipage/": [
+      {
+        "id": "dom-documentorshadowroot-activeelement",
+        "href": "https://html.spec.whatwg.org/multipage/interaction.html#dom-documentorshadowroot-activeelement",
+        "linkingText": [
+          "activeElement"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "DocumentOrShadowRoot"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "focus-management-apis",
+          "href": "https://html.spec.whatwg.org/multipage/interaction.html#focus-management-apis",
+          "title": "Focus management APIs",
+          "number": "6.6.6"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://www.w3.org/TR/cssom-1/": [
+      {
+        "id": "dom-documentorshadowroot-stylesheets",
+        "href": "https://drafts.csswg.org/cssom/#dom-documentorshadowroot-stylesheets",
+        "linkingText": [
+          "styleSheets"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "DocumentOrShadowRoot"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "extensions-to-the-document-or-shadow-root-interface",
+          "href": "https://drafts.csswg.org/cssom/#extensions-to-the-document-or-shadow-root-interface",
+          "title": "Extensions to the DocumentOrShadowRoot Interface Mixin",
+          "number": "6.2.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-documentorshadowroot-adoptedstylesheets",
+        "href": "https://drafts.csswg.org/cssom/#dom-documentorshadowroot-adoptedstylesheets",
+        "linkingText": [
+          "adoptedStyleSheets"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "DocumentOrShadowRoot"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "extensions-to-the-document-or-shadow-root-interface",
+          "href": "https://drafts.csswg.org/cssom/#extensions-to-the-document-or-shadow-root-interface",
+          "title": "Extensions to the DocumentOrShadowRoot Interface Mixin",
+          "number": "6.2.3"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://www.w3.org/TR/picture-in-picture/": [
+      {
+        "id": "dom-documentorshadowroot-pictureinpictureelement",
+        "href": "https://w3c.github.io/picture-in-picture/#dom-documentorshadowroot-pictureinpictureelement",
+        "linkingText": [
+          "pictureInPictureElement"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "DocumentOrShadowRoot"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "documentorshadowroot-extension",
+          "href": "https://w3c.github.io/picture-in-picture/#documentorshadowroot-extension",
+          "title": "Extension to DocumentOrShadowRoot",
+          "number": "4.3"
+        },
+        "definedIn": "pre"
+      }
+    ],
+    "https://www.w3.org/TR/pointerlock-2/": [
+      {
+        "id": "dom-documentorshadowroot-pointerlockelement",
+        "href": "https://w3c.github.io/pointerlock/#dom-documentorshadowroot-pointerlockelement",
+        "linkingText": [
+          "pointerLockElement"
+        ],
+        "localLinkingText": [
+          "DocumentOrShadowRoot.pointerLockElement"
+        ],
+        "type": "attribute",
+        "for": [
+          "DocumentOrShadowRoot"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "extensions-to-the-documentorshadowroot-mixin",
+          "href": "https://w3c.github.io/pointerlock/#extensions-to-the-documentorshadowroot-mixin",
+          "title": "Extensions to the DocumentOrShadowRoot Mixin",
+          "number": "5"
+        },
+        "definedIn": "dt"
+      }
+    ],
+    "https://www.w3.org/TR/web-animations-1/": [
+      {
+        "id": "dom-documentorshadowroot-getanimations",
+        "href": "https://drafts.csswg.org/web-animations-1/#dom-documentorshadowroot-getanimations",
+        "linkingText": [
+          "getAnimations()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "DocumentOrShadowRoot"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "extensions-to-the-documentorshadowroot-interface-mixin",
+          "href": "https://drafts.csswg.org/web-animations-1/#extensions-to-the-documentorshadowroot-interface-mixin",
+          "title": "Extensions to the DocumentOrShadowRoot interface mixin",
+          "number": "6.10"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

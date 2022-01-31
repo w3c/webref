@@ -1,0 +1,521 @@
+{
+  "name": "PerformanceTiming",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Navigation Timing Level 2",
+      "url": "https://www.w3.org/TR/navigation-timing-2/"
+    },
+    "fragment": "[Exposed=Window]\ninterface PerformanceTiming {\n  readonly attribute unsigned long long navigationStart;\n  readonly attribute unsigned long long unloadEventStart;\n  readonly attribute unsigned long long unloadEventEnd;\n  readonly attribute unsigned long long redirectStart;\n  readonly attribute unsigned long long redirectEnd;\n  readonly attribute unsigned long long fetchStart;\n  readonly attribute unsigned long long domainLookupStart;\n  readonly attribute unsigned long long domainLookupEnd;\n  readonly attribute unsigned long long connectStart;\n  readonly attribute unsigned long long connectEnd;\n  readonly attribute unsigned long long secureConnectionStart;\n  readonly attribute unsigned long long requestStart;\n  readonly attribute unsigned long long responseStart;\n  readonly attribute unsigned long long responseEnd;\n  readonly attribute unsigned long long domLoading;\n  readonly attribute unsigned long long domInteractive;\n  readonly attribute unsigned long long domContentLoadedEventStart;\n  readonly attribute unsigned long long domContentLoadedEventEnd;\n  readonly attribute unsigned long long domComplete;\n  readonly attribute unsigned long long loadEventStart;\n  readonly attribute unsigned long long loadEventEnd;\n  [Default] object toJSON();\n};",
+    "href": "https://w3c.github.io/navigation-timing/#dom-performancetiming"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/navigation-timing-2/": [
+      {
+        "id": "dom-performancetiming",
+        "href": "https://w3c.github.io/navigation-timing/#dom-performancetiming",
+        "linkingText": [
+          "PerformanceTiming"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-performancetiming-interface",
+          "href": "https://w3c.github.io/navigation-timing/#the-performancetiming-interface",
+          "title": "The PerformanceTiming interface",
+          "number": "5.3.1"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-performancetiming-navigationstart",
+        "href": "https://w3c.github.io/navigation-timing/#dom-performancetiming-navigationstart",
+        "linkingText": [
+          "navigationStart"
+        ],
+        "localLinkingText": [
+          "PerformanceTiming.navigationStart"
+        ],
+        "type": "attribute",
+        "for": [
+          "PerformanceTiming"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-performancetiming-interface",
+          "href": "https://w3c.github.io/navigation-timing/#the-performancetiming-interface",
+          "title": "The PerformanceTiming interface",
+          "number": "5.3.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-performancetiming-unloadeventstart",
+        "href": "https://w3c.github.io/navigation-timing/#dom-performancetiming-unloadeventstart",
+        "linkingText": [
+          "unloadEventStart"
+        ],
+        "localLinkingText": [
+          "PerformanceTiming.unloadEventStart"
+        ],
+        "type": "attribute",
+        "for": [
+          "PerformanceTiming"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-performancetiming-interface",
+          "href": "https://w3c.github.io/navigation-timing/#the-performancetiming-interface",
+          "title": "The PerformanceTiming interface",
+          "number": "5.3.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-performancetiming-unloadeventend",
+        "href": "https://w3c.github.io/navigation-timing/#dom-performancetiming-unloadeventend",
+        "linkingText": [
+          "unloadEventEnd"
+        ],
+        "localLinkingText": [
+          "PerformanceTiming.unloadEventEnd"
+        ],
+        "type": "attribute",
+        "for": [
+          "PerformanceTiming"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-performancetiming-interface",
+          "href": "https://w3c.github.io/navigation-timing/#the-performancetiming-interface",
+          "title": "The PerformanceTiming interface",
+          "number": "5.3.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-performancetiming-redirectstart",
+        "href": "https://w3c.github.io/navigation-timing/#dom-performancetiming-redirectstart",
+        "linkingText": [
+          "redirectStart"
+        ],
+        "localLinkingText": [
+          "PerformanceTiming.redirectStart"
+        ],
+        "type": "attribute",
+        "for": [
+          "PerformanceTiming"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-performancetiming-interface",
+          "href": "https://w3c.github.io/navigation-timing/#the-performancetiming-interface",
+          "title": "The PerformanceTiming interface",
+          "number": "5.3.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-performancetiming-redirectend",
+        "href": "https://w3c.github.io/navigation-timing/#dom-performancetiming-redirectend",
+        "linkingText": [
+          "redirectEnd"
+        ],
+        "localLinkingText": [
+          "PerformanceTiming.redirectEnd"
+        ],
+        "type": "attribute",
+        "for": [
+          "PerformanceTiming"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-performancetiming-interface",
+          "href": "https://w3c.github.io/navigation-timing/#the-performancetiming-interface",
+          "title": "The PerformanceTiming interface",
+          "number": "5.3.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-performancetiming-fetchstart",
+        "href": "https://w3c.github.io/navigation-timing/#dom-performancetiming-fetchstart",
+        "linkingText": [
+          "fetchStart"
+        ],
+        "localLinkingText": [
+          "PerformanceTiming.fetchStart"
+        ],
+        "type": "attribute",
+        "for": [
+          "PerformanceTiming"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-performancetiming-interface",
+          "href": "https://w3c.github.io/navigation-timing/#the-performancetiming-interface",
+          "title": "The PerformanceTiming interface",
+          "number": "5.3.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-performancetiming-domainlookupstart",
+        "href": "https://w3c.github.io/navigation-timing/#dom-performancetiming-domainlookupstart",
+        "linkingText": [
+          "domainLookupStart"
+        ],
+        "localLinkingText": [
+          "PerformanceTiming.domainLookupStart"
+        ],
+        "type": "attribute",
+        "for": [
+          "PerformanceTiming"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-performancetiming-interface",
+          "href": "https://w3c.github.io/navigation-timing/#the-performancetiming-interface",
+          "title": "The PerformanceTiming interface",
+          "number": "5.3.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-performancetiming-domainlookupend",
+        "href": "https://w3c.github.io/navigation-timing/#dom-performancetiming-domainlookupend",
+        "linkingText": [
+          "domainLookupEnd"
+        ],
+        "localLinkingText": [
+          "PerformanceTiming.domainLookupEnd"
+        ],
+        "type": "attribute",
+        "for": [
+          "PerformanceTiming"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-performancetiming-interface",
+          "href": "https://w3c.github.io/navigation-timing/#the-performancetiming-interface",
+          "title": "The PerformanceTiming interface",
+          "number": "5.3.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-performancetiming-connectstart",
+        "href": "https://w3c.github.io/navigation-timing/#dom-performancetiming-connectstart",
+        "linkingText": [
+          "connectStart"
+        ],
+        "localLinkingText": [
+          "PerformanceTiming.connectStart"
+        ],
+        "type": "attribute",
+        "for": [
+          "PerformanceTiming"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-performancetiming-interface",
+          "href": "https://w3c.github.io/navigation-timing/#the-performancetiming-interface",
+          "title": "The PerformanceTiming interface",
+          "number": "5.3.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-performancetiming-connectend",
+        "href": "https://w3c.github.io/navigation-timing/#dom-performancetiming-connectend",
+        "linkingText": [
+          "connectEnd"
+        ],
+        "localLinkingText": [
+          "PerformanceTiming.connectEnd"
+        ],
+        "type": "attribute",
+        "for": [
+          "PerformanceTiming"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-performancetiming-interface",
+          "href": "https://w3c.github.io/navigation-timing/#the-performancetiming-interface",
+          "title": "The PerformanceTiming interface",
+          "number": "5.3.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-performancetiming-secureconnectionstart",
+        "href": "https://w3c.github.io/navigation-timing/#dom-performancetiming-secureconnectionstart",
+        "linkingText": [
+          "secureConnectionStart"
+        ],
+        "localLinkingText": [
+          "PerformanceTiming.secureConnectionStart"
+        ],
+        "type": "attribute",
+        "for": [
+          "PerformanceTiming"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-performancetiming-interface",
+          "href": "https://w3c.github.io/navigation-timing/#the-performancetiming-interface",
+          "title": "The PerformanceTiming interface",
+          "number": "5.3.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-performancetiming-requeststart",
+        "href": "https://w3c.github.io/navigation-timing/#dom-performancetiming-requeststart",
+        "linkingText": [
+          "requestStart"
+        ],
+        "localLinkingText": [
+          "PerformanceTiming.requestStart"
+        ],
+        "type": "attribute",
+        "for": [
+          "PerformanceTiming"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-performancetiming-interface",
+          "href": "https://w3c.github.io/navigation-timing/#the-performancetiming-interface",
+          "title": "The PerformanceTiming interface",
+          "number": "5.3.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-performancetiming-responsestart",
+        "href": "https://w3c.github.io/navigation-timing/#dom-performancetiming-responsestart",
+        "linkingText": [
+          "responseStart"
+        ],
+        "localLinkingText": [
+          "PerformanceTiming.responseStart"
+        ],
+        "type": "attribute",
+        "for": [
+          "PerformanceTiming"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-performancetiming-interface",
+          "href": "https://w3c.github.io/navigation-timing/#the-performancetiming-interface",
+          "title": "The PerformanceTiming interface",
+          "number": "5.3.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-performancetiming-responseend",
+        "href": "https://w3c.github.io/navigation-timing/#dom-performancetiming-responseend",
+        "linkingText": [
+          "responseEnd"
+        ],
+        "localLinkingText": [
+          "PerformanceTiming.responseEnd"
+        ],
+        "type": "attribute",
+        "for": [
+          "PerformanceTiming"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-performancetiming-interface",
+          "href": "https://w3c.github.io/navigation-timing/#the-performancetiming-interface",
+          "title": "The PerformanceTiming interface",
+          "number": "5.3.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-performancetiming-domloading",
+        "href": "https://w3c.github.io/navigation-timing/#dom-performancetiming-domloading",
+        "linkingText": [
+          "domLoading"
+        ],
+        "localLinkingText": [
+          "PerformanceTiming.domLoading"
+        ],
+        "type": "attribute",
+        "for": [
+          "PerformanceTiming"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-performancetiming-interface",
+          "href": "https://w3c.github.io/navigation-timing/#the-performancetiming-interface",
+          "title": "The PerformanceTiming interface",
+          "number": "5.3.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-performancetiming-dominteractive",
+        "href": "https://w3c.github.io/navigation-timing/#dom-performancetiming-dominteractive",
+        "linkingText": [
+          "domInteractive"
+        ],
+        "localLinkingText": [
+          "PerformanceTiming.domInteractive"
+        ],
+        "type": "attribute",
+        "for": [
+          "PerformanceTiming"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-performancetiming-interface",
+          "href": "https://w3c.github.io/navigation-timing/#the-performancetiming-interface",
+          "title": "The PerformanceTiming interface",
+          "number": "5.3.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-performancetiming-domcontentloadedeventstart",
+        "href": "https://w3c.github.io/navigation-timing/#dom-performancetiming-domcontentloadedeventstart",
+        "linkingText": [
+          "domContentLoadedEventStart"
+        ],
+        "localLinkingText": [
+          "PerformanceTiming.domContentLoadedEventStart"
+        ],
+        "type": "attribute",
+        "for": [
+          "PerformanceTiming"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-performancetiming-interface",
+          "href": "https://w3c.github.io/navigation-timing/#the-performancetiming-interface",
+          "title": "The PerformanceTiming interface",
+          "number": "5.3.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-performancetiming-domcontentloadedeventend",
+        "href": "https://w3c.github.io/navigation-timing/#dom-performancetiming-domcontentloadedeventend",
+        "linkingText": [
+          "domContentLoadedEventEnd"
+        ],
+        "localLinkingText": [
+          "PerformanceTiming.domContentLoadedEventEnd"
+        ],
+        "type": "attribute",
+        "for": [
+          "PerformanceTiming"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-performancetiming-interface",
+          "href": "https://w3c.github.io/navigation-timing/#the-performancetiming-interface",
+          "title": "The PerformanceTiming interface",
+          "number": "5.3.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-performancetiming-domcomplete",
+        "href": "https://w3c.github.io/navigation-timing/#dom-performancetiming-domcomplete",
+        "linkingText": [
+          "domComplete"
+        ],
+        "localLinkingText": [
+          "PerformanceTiming.domComplete"
+        ],
+        "type": "attribute",
+        "for": [
+          "PerformanceTiming"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-performancetiming-interface",
+          "href": "https://w3c.github.io/navigation-timing/#the-performancetiming-interface",
+          "title": "The PerformanceTiming interface",
+          "number": "5.3.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-performancetiming-loadeventstart",
+        "href": "https://w3c.github.io/navigation-timing/#dom-performancetiming-loadeventstart",
+        "linkingText": [
+          "loadEventStart"
+        ],
+        "localLinkingText": [
+          "PerformanceTiming.loadEventStart"
+        ],
+        "type": "attribute",
+        "for": [
+          "PerformanceTiming"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-performancetiming-interface",
+          "href": "https://w3c.github.io/navigation-timing/#the-performancetiming-interface",
+          "title": "The PerformanceTiming interface",
+          "number": "5.3.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-performancetiming-loadeventend",
+        "href": "https://w3c.github.io/navigation-timing/#dom-performancetiming-loadeventend",
+        "linkingText": [
+          "loadEventEnd"
+        ],
+        "localLinkingText": [
+          "PerformanceTiming.loadEventEnd"
+        ],
+        "type": "attribute",
+        "for": [
+          "PerformanceTiming"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-performancetiming-interface",
+          "href": "https://w3c.github.io/navigation-timing/#the-performancetiming-interface",
+          "title": "The PerformanceTiming interface",
+          "number": "5.3.1"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

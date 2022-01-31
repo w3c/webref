@@ -1,0 +1,134 @@
+{
+  "name": "PeriodicWaveOptions",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Web Audio API",
+      "url": "https://www.w3.org/TR/webaudio/"
+    },
+    "fragment": "dictionary PeriodicWaveOptions : PeriodicWaveConstraints {\n  sequence<float> real;\n  sequence<float> imag;\n};",
+    "href": "https://webaudio.github.io/web-audio-api/#dictdef-periodicwaveoptions"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "PeriodicWaveConstraints",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "Web Audio API",
+        "url": "https://www.w3.org/TR/webaudio/"
+      },
+      "fragment": "dictionary PeriodicWaveConstraints {\n  boolean disableNormalization = false;\n};",
+      "href": "https://webaudio.github.io/web-audio-api/#dictdef-periodicwaveconstraints"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webaudio/": [
+      {
+        "id": "dictdef-periodicwaveoptions",
+        "href": "https://webaudio.github.io/web-audio-api/#dictdef-periodicwaveoptions",
+        "linkingText": [
+          "PeriodicWaveOptions"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "PeriodicWaveOptions",
+          "href": "https://webaudio.github.io/web-audio-api/#PeriodicWaveOptions",
+          "title": "PeriodicWaveOptions",
+          "number": "1.28.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-periodicwaveoptions-real",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-periodicwaveoptions-real",
+        "linkingText": [
+          "real"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "PeriodicWaveOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-periodicwaveoptions-members",
+          "href": "https://webaudio.github.io/web-audio-api/#dictionary-periodicwaveoptions-members",
+          "title": "Dictionary PeriodicWaveOptions Members",
+          "number": "1.28.3.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-periodicwaveoptions-imag",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-periodicwaveoptions-imag",
+        "linkingText": [
+          "imag"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "PeriodicWaveOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-periodicwaveoptions-members",
+          "href": "https://webaudio.github.io/web-audio-api/#dictionary-periodicwaveoptions-members",
+          "title": "Dictionary PeriodicWaveOptions Members",
+          "number": "1.28.3.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dictdef-periodicwaveconstraints",
+        "href": "https://webaudio.github.io/web-audio-api/#dictdef-periodicwaveconstraints",
+        "linkingText": [
+          "PeriodicWaveConstraints"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "PeriodicWaveConstraints",
+          "href": "https://webaudio.github.io/web-audio-api/#PeriodicWaveConstraints",
+          "title": "PeriodicWaveConstraints",
+          "number": "1.28.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-periodicwaveconstraints-disablenormalization",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-periodicwaveconstraints-disablenormalization",
+        "linkingText": [
+          "disableNormalization"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "PeriodicWaveConstraints"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-periodicwaveconstraints-members",
+          "href": "https://webaudio.github.io/web-audio-api/#dictionary-periodicwaveconstraints-members",
+          "title": "Dictionary PeriodicWaveConstraints Members",
+          "number": "1.28.2.1"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

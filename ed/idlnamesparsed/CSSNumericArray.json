@@ -1,0 +1,59 @@
+{
+  "name": "CSSNumericArray",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "CSS Typed OM Level 1",
+      "url": "https://www.w3.org/TR/css-typed-om-1/"
+    },
+    "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]\ninterface CSSNumericArray {\n    iterable<CSSNumericValue>;\n    readonly attribute unsigned long length;\n    getter CSSNumericValue (unsigned long index);\n};",
+    "href": "https://drafts.css-houdini.org/css-typed-om-1/#cssnumericarray"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/css-typed-om-1/": [
+      {
+        "id": "cssnumericarray",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#cssnumericarray",
+        "linkingText": [
+          "CSSNumericArray"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "complex-numeric",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#complex-numeric",
+          "title": "Complex Numeric Values: CSSMathValue objects",
+          "number": "4.3.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-cssnumericarray-length",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-cssnumericarray-length",
+        "linkingText": [
+          "length"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "CSSNumericArray"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "complex-numeric",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#complex-numeric",
+          "title": "Complex Numeric Values: CSSMathValue objects",
+          "number": "4.3.4"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

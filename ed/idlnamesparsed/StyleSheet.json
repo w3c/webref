@@ -1,0 +1,185 @@
+{
+  "name": "StyleSheet",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "CSS Object Model (CSSOM)",
+      "url": "https://www.w3.org/TR/cssom-1/"
+    },
+    "fragment": "[Exposed=Window]\ninterface StyleSheet {\n  readonly attribute CSSOMString type;\n  readonly attribute USVString? href;\n  readonly attribute (Element or ProcessingInstruction)? ownerNode;\n  readonly attribute CSSStyleSheet? parentStyleSheet;\n  readonly attribute DOMString? title;\n  [SameObject, PutForwards=mediaText] readonly attribute MediaList media;\n  attribute boolean disabled;\n};",
+    "href": "https://drafts.csswg.org/cssom/#stylesheet"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/cssom-1/": [
+      {
+        "id": "stylesheet",
+        "href": "https://drafts.csswg.org/cssom/#stylesheet",
+        "linkingText": [
+          "StyleSheet"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-stylesheet-interface",
+          "href": "https://drafts.csswg.org/cssom/#the-stylesheet-interface",
+          "title": "The StyleSheet Interface",
+          "number": "6.1.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-stylesheet-type",
+        "href": "https://drafts.csswg.org/cssom/#dom-stylesheet-type",
+        "linkingText": [
+          "type"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "StyleSheet"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-stylesheet-interface",
+          "href": "https://drafts.csswg.org/cssom/#the-stylesheet-interface",
+          "title": "The StyleSheet Interface",
+          "number": "6.1.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-stylesheet-href",
+        "href": "https://drafts.csswg.org/cssom/#dom-stylesheet-href",
+        "linkingText": [
+          "href"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "StyleSheet"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-stylesheet-interface",
+          "href": "https://drafts.csswg.org/cssom/#the-stylesheet-interface",
+          "title": "The StyleSheet Interface",
+          "number": "6.1.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-stylesheet-ownernode",
+        "href": "https://drafts.csswg.org/cssom/#dom-stylesheet-ownernode",
+        "linkingText": [
+          "ownerNode"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "StyleSheet"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-stylesheet-interface",
+          "href": "https://drafts.csswg.org/cssom/#the-stylesheet-interface",
+          "title": "The StyleSheet Interface",
+          "number": "6.1.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-stylesheet-parentstylesheet",
+        "href": "https://drafts.csswg.org/cssom/#dom-stylesheet-parentstylesheet",
+        "linkingText": [
+          "parentStyleSheet"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "StyleSheet"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-stylesheet-interface",
+          "href": "https://drafts.csswg.org/cssom/#the-stylesheet-interface",
+          "title": "The StyleSheet Interface",
+          "number": "6.1.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-stylesheet-title",
+        "href": "https://drafts.csswg.org/cssom/#dom-stylesheet-title",
+        "linkingText": [
+          "title"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "StyleSheet"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-stylesheet-interface",
+          "href": "https://drafts.csswg.org/cssom/#the-stylesheet-interface",
+          "title": "The StyleSheet Interface",
+          "number": "6.1.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-stylesheet-media",
+        "href": "https://drafts.csswg.org/cssom/#dom-stylesheet-media",
+        "linkingText": [
+          "media"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "StyleSheet"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-stylesheet-interface",
+          "href": "https://drafts.csswg.org/cssom/#the-stylesheet-interface",
+          "title": "The StyleSheet Interface",
+          "number": "6.1.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-stylesheet-disabled",
+        "href": "https://drafts.csswg.org/cssom/#dom-stylesheet-disabled",
+        "linkingText": [
+          "disabled"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "StyleSheet"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-stylesheet-interface",
+          "href": "https://drafts.csswg.org/cssom/#the-stylesheet-interface",
+          "title": "The StyleSheet Interface",
+          "number": "6.1.1"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

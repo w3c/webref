@@ -1,0 +1,80 @@
+{
+  "name": "Landmark",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Accelerated Shape Detection in Images",
+      "url": "https://wicg.github.io/shape-detection-api/"
+    },
+    "fragment": "dictionary Landmark {\n  required FrozenArray<Point2D> locations;\n  LandmarkType type;\n};",
+    "href": "https://wicg.github.io/shape-detection-api/#dictdef-landmark"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://wicg.github.io/shape-detection-api/": [
+      {
+        "id": "dictdef-landmark",
+        "href": "https://wicg.github.io/shape-detection-api/#dictdef-landmark",
+        "linkingText": [
+          "Landmark"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "detectedface-section",
+          "href": "https://wicg.github.io/shape-detection-api/#detectedface-section",
+          "title": "DetectedFace",
+          "number": "2.2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-landmark-locations",
+        "href": "https://wicg.github.io/shape-detection-api/#dom-landmark-locations",
+        "linkingText": [
+          "locations"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "Landmark"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "detectedface-section",
+          "href": "https://wicg.github.io/shape-detection-api/#detectedface-section",
+          "title": "DetectedFace",
+          "number": "2.2.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-landmark-type",
+        "href": "https://wicg.github.io/shape-detection-api/#dom-landmark-type",
+        "linkingText": [
+          "type"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "Landmark"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "detectedface-section",
+          "href": "https://wicg.github.io/shape-detection-api/#detectedface-section",
+          "title": "DetectedFace",
+          "number": "2.2.2"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

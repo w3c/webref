@@ -1,0 +1,64 @@
+{
+  "name": "WakeLock",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Screen Wake Lock API",
+      "url": "https://www.w3.org/TR/screen-wake-lock/"
+    },
+    "fragment": "[SecureContext, Exposed=(Window)]\ninterface WakeLock {\n  Promise<WakeLockSentinel> request(optional WakeLockType type = \"screen\");\n};",
+    "href": "https://w3c.github.io/screen-wake-lock/#dom-wakelock"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/screen-wake-lock/": [
+      {
+        "id": "dom-wakelock",
+        "href": "https://w3c.github.io/screen-wake-lock/#dom-wakelock",
+        "linkingText": [
+          "WakeLock"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-wakelock-interface",
+          "href": "https://w3c.github.io/screen-wake-lock/#the-wakelock-interface",
+          "title": "The WakeLock interface",
+          "number": "8"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-wakelock-request",
+        "href": "https://w3c.github.io/screen-wake-lock/#dom-wakelock-request",
+        "linkingText": [
+          "request()",
+          "request(type)"
+        ],
+        "localLinkingText": [
+          "WakeLock.request",
+          "WakeLock.request()",
+          "request"
+        ],
+        "type": "method",
+        "for": [
+          "WakeLock"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-request-method",
+          "href": "https://w3c.github.io/screen-wake-lock/#the-request-method",
+          "title": "The request() method",
+          "number": "8.1"
+        },
+        "definedIn": "heading"
+      }
+    ]
+  }
+}

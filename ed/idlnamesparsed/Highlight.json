@@ -1,0 +1,104 @@
+{
+  "name": "Highlight",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "CSS Custom Highlight API Module Level 1",
+      "url": "https://www.w3.org/TR/css-highlight-api-1/"
+    },
+    "fragment": "[Exposed=Window]\ninterface Highlight {\n  constructor(AbstractRange... initialRanges);\n  setlike<AbstractRange>;\n  attribute long priority;\n  attribute HighlightType type;\n};",
+    "href": "https://drafts.csswg.org/css-highlight-api-1/#highlight"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/css-highlight-api-1/": [
+      {
+        "id": "highlight",
+        "href": "https://drafts.csswg.org/css-highlight-api-1/#highlight",
+        "linkingText": [
+          "Highlight"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "creation",
+          "href": "https://drafts.csswg.org/css-highlight-api-1/#creation",
+          "title": "Creating Custom Highlights",
+          "number": "3.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-highlight-highlight",
+        "href": "https://drafts.csswg.org/css-highlight-api-1/#dom-highlight-highlight",
+        "linkingText": [
+          "Highlight(...initialRanges)",
+          "constructor(...initialRanges)",
+          "Highlight()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "Highlight"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "creation",
+          "href": "https://drafts.csswg.org/css-highlight-api-1/#creation",
+          "title": "Creating Custom Highlights",
+          "number": "3.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-highlight-priority",
+        "href": "https://drafts.csswg.org/css-highlight-api-1/#dom-highlight-priority",
+        "linkingText": [
+          "priority"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Highlight"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "creation",
+          "href": "https://drafts.csswg.org/css-highlight-api-1/#creation",
+          "title": "Creating Custom Highlights",
+          "number": "3.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-highlight-type",
+        "href": "https://drafts.csswg.org/css-highlight-api-1/#dom-highlight-type",
+        "linkingText": [
+          "type"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Highlight"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "creation",
+          "href": "https://drafts.csswg.org/css-highlight-api-1/#creation",
+          "title": "Creating Custom Highlights",
+          "number": "3.1"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

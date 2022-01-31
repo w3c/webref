@@ -1,0 +1,125 @@
+{
+  "name": "Permissions",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Permissions",
+      "url": "https://www.w3.org/TR/permissions/"
+    },
+    "fragment": "[Exposed=(Window,Worker)]\ninterface Permissions {\n  Promise<PermissionStatus> query(object permissionDesc);\n};",
+    "href": "https://w3c.github.io/permissions/#dom-permissions"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "Requesting Permissions",
+        "url": "https://wicg.github.io/permissions-request/"
+      },
+      "fragment": "partial interface Permissions {\n  Promise<PermissionStatus> request(object permissionDesc);\n};"
+    },
+    {
+      "spec": {
+        "title": "Relinquishing Permissions",
+        "url": "https://wicg.github.io/permissions-revoke/"
+      },
+      "fragment": "partial interface Permissions {\n  Promise<PermissionStatus> revoke(object permissionDesc);\n};"
+    }
+  ],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/permissions/": [
+      {
+        "id": "dom-permissions",
+        "href": "https://w3c.github.io/permissions/#dom-permissions",
+        "linkingText": [
+          "Permissions"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "permissions-interface-0",
+          "href": "https://w3c.github.io/permissions/#permissions-interface-0",
+          "title": "Permissions interface",
+          "number": "4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-permissions-query",
+        "href": "https://w3c.github.io/permissions/#dom-permissions-query",
+        "linkingText": [
+          "query()",
+          "query(permissionDesc)"
+        ],
+        "localLinkingText": [
+          "Permissions.query",
+          "Permissions.query()",
+          "query"
+        ],
+        "type": "method",
+        "for": [
+          "Permissions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "query-method-0",
+          "href": "https://w3c.github.io/permissions/#query-method-0",
+          "title": "query() method",
+          "number": "4.1"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://wicg.github.io/permissions-request/": [
+      {
+        "id": "dom-permissions-request",
+        "href": "https://wicg.github.io/permissions-request/#dom-permissions-request",
+        "linkingText": [
+          "request(permissionDesc)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Permissions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api",
+          "href": "https://wicg.github.io/permissions-request/#api",
+          "title": "Request API",
+          "number": "2"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://wicg.github.io/permissions-revoke/": [
+      {
+        "id": "dom-permissions-revoke",
+        "href": "https://wicg.github.io/permissions-revoke/#dom-permissions-revoke",
+        "linkingText": [
+          "revoke(permissionDesc)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Permissions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api",
+          "href": "https://wicg.github.io/permissions-revoke/#api",
+          "title": "Revoke API",
+          "number": "2"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

@@ -1,0 +1,540 @@
+{
+  "name": "FileReader",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "File API",
+      "url": "https://www.w3.org/TR/FileAPI/"
+    },
+    "fragment": "[Exposed=(Window,Worker)]\ninterface FileReader: EventTarget {\n  constructor();\n  // async read methods\n  undefined readAsArrayBuffer(Blob blob);\n  undefined readAsBinaryString(Blob blob);\n  undefined readAsText(Blob blob, optional DOMString encoding);\n  undefined readAsDataURL(Blob blob);\n\n  undefined abort();\n\n  // states\n  const unsigned short EMPTY = 0;\n  const unsigned short LOADING = 1;\n  const unsigned short DONE = 2;\n\n  readonly attribute unsigned short readyState;\n\n  // File or Blob data\n  readonly attribute (DOMString or ArrayBuffer)? result;\n\n  readonly attribute DOMException? error;\n\n  // event handler content attributes\n  attribute EventHandler onloadstart;\n  attribute EventHandler onprogress;\n  attribute EventHandler onload;\n  attribute EventHandler onabort;\n  attribute EventHandler onerror;\n  attribute EventHandler onloadend;\n};",
+    "href": "https://w3c.github.io/FileAPI/#dfn-filereader"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "EventTarget",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=*]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+      "href": "https://dom.spec.whatwg.org/#eventtarget"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/FileAPI/": [
+      {
+        "id": "dfn-filereader",
+        "href": "https://w3c.github.io/FileAPI/#dfn-filereader",
+        "linkingText": [
+          "FileReader"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "APIASynch",
+          "href": "https://w3c.github.io/FileAPI/#APIASynch",
+          "title": "The FileReader API",
+          "number": "6.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "filereaderConstrctr",
+        "href": "https://w3c.github.io/FileAPI/#filereaderConstrctr",
+        "linkingText": [
+          "FileReader()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "FileReader"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "APIASynch",
+          "href": "https://w3c.github.io/FileAPI/#APIASynch",
+          "title": "The FileReader API",
+          "number": "6.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dfn-readAsArrayBuffer",
+        "href": "https://w3c.github.io/FileAPI/#dfn-readAsArrayBuffer",
+        "linkingText": [
+          "readAsArrayBuffer(blob)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "FileReader"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "readAsArrayBuffer",
+          "href": "https://w3c.github.io/FileAPI/#readAsArrayBuffer",
+          "title": "The readAsArrayBuffer()",
+          "number": "6.2.3.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dfn-readAsBinaryString",
+        "href": "https://w3c.github.io/FileAPI/#dfn-readAsBinaryString",
+        "linkingText": [
+          "readAsBinaryString(blob)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "FileReader"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "readAsBinaryString",
+          "href": "https://w3c.github.io/FileAPI/#readAsBinaryString",
+          "title": "The readAsBinaryString() method",
+          "number": "6.2.3.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dfn-readAsText",
+        "href": "https://w3c.github.io/FileAPI/#dfn-readAsText",
+        "linkingText": [
+          "readAsText(blob, encoding)",
+          "readAsText(blob)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "FileReader"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "readAsDataText",
+          "href": "https://w3c.github.io/FileAPI/#readAsDataText",
+          "title": "The readAsText() method",
+          "number": "6.2.3.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dfn-readAsDataURL",
+        "href": "https://w3c.github.io/FileAPI/#dfn-readAsDataURL",
+        "linkingText": [
+          "readAsDataURL(blob)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "FileReader"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "readAsDataURL",
+          "href": "https://w3c.github.io/FileAPI/#readAsDataURL",
+          "title": "The readAsDataURL() method",
+          "number": "6.2.3.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dfn-abort",
+        "href": "https://w3c.github.io/FileAPI/#dfn-abort",
+        "linkingText": [
+          "abort()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "FileReader"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "abort",
+          "href": "https://w3c.github.io/FileAPI/#abort",
+          "title": "The abort() method",
+          "number": "6.2.3.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-filereader-empty",
+        "href": "https://w3c.github.io/FileAPI/#dom-filereader-empty",
+        "linkingText": [
+          "EMPTY"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "FileReader"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "APIASynch",
+          "href": "https://w3c.github.io/FileAPI/#APIASynch",
+          "title": "The FileReader API",
+          "number": "6.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-filereader-loading",
+        "href": "https://w3c.github.io/FileAPI/#dom-filereader-loading",
+        "linkingText": [
+          "LOADING"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "FileReader"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "APIASynch",
+          "href": "https://w3c.github.io/FileAPI/#APIASynch",
+          "title": "The FileReader API",
+          "number": "6.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-filereader-done",
+        "href": "https://w3c.github.io/FileAPI/#dom-filereader-done",
+        "linkingText": [
+          "DONE"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "FileReader"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "APIASynch",
+          "href": "https://w3c.github.io/FileAPI/#APIASynch",
+          "title": "The FileReader API",
+          "number": "6.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-filereader-readystate",
+        "href": "https://w3c.github.io/FileAPI/#dom-filereader-readystate",
+        "linkingText": [
+          "readyState"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "FileReader"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "APIASynch",
+          "href": "https://w3c.github.io/FileAPI/#APIASynch",
+          "title": "The FileReader API",
+          "number": "6.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-filereader-result",
+        "href": "https://w3c.github.io/FileAPI/#dom-filereader-result",
+        "linkingText": [
+          "result"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "FileReader"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "APIASynch",
+          "href": "https://w3c.github.io/FileAPI/#APIASynch",
+          "title": "The FileReader API",
+          "number": "6.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-filereader-error",
+        "href": "https://w3c.github.io/FileAPI/#dom-filereader-error",
+        "linkingText": [
+          "error"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "FileReader"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "APIASynch",
+          "href": "https://w3c.github.io/FileAPI/#APIASynch",
+          "title": "The FileReader API",
+          "number": "6.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dfn-onloadstart",
+        "href": "https://w3c.github.io/FileAPI/#dfn-onloadstart",
+        "linkingText": [
+          "onloadstart"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "FileReader"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handler-attributes-section",
+          "href": "https://w3c.github.io/FileAPI/#event-handler-attributes-section",
+          "title": "Event Handler Content Attributes",
+          "number": "6.2.1"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "dfn-onprogress",
+        "href": "https://w3c.github.io/FileAPI/#dfn-onprogress",
+        "linkingText": [
+          "onprogress"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "FileReader"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handler-attributes-section",
+          "href": "https://w3c.github.io/FileAPI/#event-handler-attributes-section",
+          "title": "Event Handler Content Attributes",
+          "number": "6.2.1"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "dfn-onload",
+        "href": "https://w3c.github.io/FileAPI/#dfn-onload",
+        "linkingText": [
+          "onload"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "FileReader"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handler-attributes-section",
+          "href": "https://w3c.github.io/FileAPI/#event-handler-attributes-section",
+          "title": "Event Handler Content Attributes",
+          "number": "6.2.1"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "dfn-onabort",
+        "href": "https://w3c.github.io/FileAPI/#dfn-onabort",
+        "linkingText": [
+          "onabort"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "FileReader"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handler-attributes-section",
+          "href": "https://w3c.github.io/FileAPI/#event-handler-attributes-section",
+          "title": "Event Handler Content Attributes",
+          "number": "6.2.1"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "dfn-onerror",
+        "href": "https://w3c.github.io/FileAPI/#dfn-onerror",
+        "linkingText": [
+          "onerror"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "FileReader"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handler-attributes-section",
+          "href": "https://w3c.github.io/FileAPI/#event-handler-attributes-section",
+          "title": "Event Handler Content Attributes",
+          "number": "6.2.1"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "dfn-onloadend",
+        "href": "https://w3c.github.io/FileAPI/#dfn-onloadend",
+        "linkingText": [
+          "onloadend"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "FileReader"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handler-attributes-section",
+          "href": "https://w3c.github.io/FileAPI/#event-handler-attributes-section",
+          "title": "Event Handler Content Attributes",
+          "number": "6.2.1"
+        },
+        "definedIn": "table"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "eventtarget",
+        "href": "https://dom.spec.whatwg.org/#eventtarget",
+        "linkingText": [
+          "EventTarget"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventtarget-eventtarget",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-eventtarget",
+        "linkingText": [
+          "EventTarget()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-addeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-addeventlistener",
+        "linkingText": [
+          "addEventListener(type, callback, options)",
+          "addEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-removeeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-removeeventlistener",
+        "linkingText": [
+          "removeEventListener(type, callback, options)",
+          "removeEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-dispatchevent",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-dispatchevent",
+        "linkingText": [
+          "dispatchEvent(event)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

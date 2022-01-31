@@ -1,0 +1,2425 @@
+{
+  "spec": {
+    "title": "Presentation API",
+    "url": "https://w3c.github.io/presentation-api/"
+  },
+  "dfns": [
+    {
+      "id": "dfn-1-ua",
+      "href": "https://w3c.github.io/presentation-api/#dfn-1-ua",
+      "linkingText": [
+        "1-UA",
+        "1-UA mode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "introduction",
+        "href": "https://w3c.github.io/presentation-api/#introduction",
+        "title": "Introduction",
+        "number": "1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-2-ua",
+      "href": "https://w3c.github.io/presentation-api/#dfn-2-ua",
+      "linkingText": [
+        "2-UA",
+        "2-UA mode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "introduction",
+        "href": "https://w3c.github.io/presentation-api/#introduction",
+        "title": "Introduction",
+        "number": "1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-user-agent",
+      "href": "https://w3c.github.io/presentation-api/#dfn-user-agent",
+      "linkingText": [
+        "user agent",
+        "user agents"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "conformance-classes",
+        "href": "https://w3c.github.io/presentation-api/#conformance-classes",
+        "title": "Conformance classes",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-controlling-user-agent",
+      "href": "https://w3c.github.io/presentation-api/#dfn-controlling-user-agent",
+      "linkingText": [
+        "Controlling user agent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "conformance-classes",
+        "href": "https://w3c.github.io/presentation-api/#conformance-classes",
+        "title": "Conformance classes",
+        "number": "3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-receiving-user-agent",
+      "href": "https://w3c.github.io/presentation-api/#dfn-receiving-user-agent",
+      "linkingText": [
+        "Receiving user agent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "conformance-classes",
+        "href": "https://w3c.github.io/presentation-api/#conformance-classes",
+        "title": "Conformance classes",
+        "number": "3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-javascript-realm",
+      "href": "https://w3c.github.io/presentation-api/#dfn-javascript-realm",
+      "linkingText": [
+        "JavaScript realm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/presentation-api/#terminology",
+        "title": "Terminology",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-current-realm",
+      "href": "https://w3c.github.io/presentation-api/#dfn-current-realm",
+      "linkingText": [
+        "current realm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/presentation-api/#terminology",
+        "title": "Terminology",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-resolve",
+      "href": "https://w3c.github.io/presentation-api/#dfn-resolve",
+      "linkingText": [
+        "resolve",
+        "resolved"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/presentation-api/#terminology",
+        "title": "Terminology",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-reject",
+      "href": "https://w3c.github.io/presentation-api/#dfn-reject",
+      "linkingText": [
+        "reject",
+        "rejected"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/presentation-api/#terminology",
+        "title": "Terminology",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-accept-language",
+      "href": "https://w3c.github.io/presentation-api/#dfn-accept-language",
+      "linkingText": [
+        "Accept-Language"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/presentation-api/#terminology",
+        "title": "Terminology",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-http-authentication",
+      "href": "https://w3c.github.io/presentation-api/#dfn-http-authentication",
+      "linkingText": [
+        "HTTP authentication"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/presentation-api/#terminology",
+        "title": "Terminology",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-cookie-store",
+      "href": "https://w3c.github.io/presentation-api/#dfn-cookie-store",
+      "linkingText": [
+        "cookie store"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/presentation-api/#terminology",
+        "title": "Terminology",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-uuid",
+      "href": "https://w3c.github.io/presentation-api/#dfn-uuid",
+      "linkingText": [
+        "UUID"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/presentation-api/#terminology",
+        "title": "Terminology",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-dial",
+      "href": "https://w3c.github.io/presentation-api/#dfn-dial",
+      "linkingText": [
+        "DIAL"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/presentation-api/#terminology",
+        "title": "Terminology",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-reload-a-document",
+      "href": "https://w3c.github.io/presentation-api/#dfn-reload-a-document",
+      "linkingText": [
+        "reload a document"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/presentation-api/#terminology",
+        "title": "Terminology",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-local-storage-area",
+      "href": "https://w3c.github.io/presentation-api/#dfn-local-storage-area",
+      "linkingText": [
+        "local storage area"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/presentation-api/#terminology",
+        "title": "Terminology",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-session-storage-area",
+      "href": "https://w3c.github.io/presentation-api/#dfn-session-storage-area",
+      "linkingText": [
+        "session storage area"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/presentation-api/#terminology",
+        "title": "Terminology",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-parse-a-url",
+      "href": "https://w3c.github.io/presentation-api/#dfn-parse-a-url",
+      "linkingText": [
+        "parse a url"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/presentation-api/#terminology",
+        "title": "Terminology",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-list-of-descendant-browsing-contexts",
+      "href": "https://w3c.github.io/presentation-api/#dfn-list-of-descendant-browsing-contexts",
+      "linkingText": [
+        "list of descendant browsing contexts"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/presentation-api/#terminology",
+        "title": "Terminology",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-creating-a-new-browsing-context",
+      "href": "https://w3c.github.io/presentation-api/#dfn-creating-a-new-browsing-context",
+      "linkingText": [
+        "creating a new browsing context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/presentation-api/#terminology",
+        "title": "Terminology",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-session-history",
+      "href": "https://w3c.github.io/presentation-api/#dfn-session-history",
+      "linkingText": [
+        "session history"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/presentation-api/#terminology",
+        "title": "Terminology",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-allowed-to-navigate",
+      "href": "https://w3c.github.io/presentation-api/#dfn-allowed-to-navigate",
+      "linkingText": [
+        "allowed to navigate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/presentation-api/#terminology",
+        "title": "Terminology",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-navigating-to-a-fragment-identifier",
+      "href": "https://w3c.github.io/presentation-api/#dfn-navigating-to-a-fragment-identifier",
+      "linkingText": [
+        "navigating to a fragment identifier"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/presentation-api/#terminology",
+        "title": "Terminology",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-database",
+      "href": "https://w3c.github.io/presentation-api/#dfn-database",
+      "linkingText": [
+        "database"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/presentation-api/#terminology",
+        "title": "Terminology",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-presentation-display",
+      "href": "https://w3c.github.io/presentation-api/#dfn-presentation-display",
+      "linkingText": [
+        "presentation display",
+        "presentation displays"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "common-idioms",
+        "href": "https://w3c.github.io/presentation-api/#common-idioms",
+        "title": "Common idioms",
+        "number": "6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-presentation-connection",
+      "href": "https://w3c.github.io/presentation-api/#dfn-presentation-connection",
+      "linkingText": [
+        "presentation connection",
+        "presentation connections"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "common-idioms",
+        "href": "https://w3c.github.io/presentation-api/#common-idioms",
+        "title": "Common idioms",
+        "number": "6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-presentation-connection-state",
+      "href": "https://w3c.github.io/presentation-api/#dfn-presentation-connection-state",
+      "linkingText": [
+        "presentation connection state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "common-idioms",
+        "href": "https://w3c.github.io/presentation-api/#common-idioms",
+        "title": "Common idioms",
+        "number": "6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-presentation-identifier",
+      "href": "https://w3c.github.io/presentation-api/#dfn-presentation-identifier",
+      "linkingText": [
+        "presentation identifier",
+        "presentation identifiers"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "common-idioms",
+        "href": "https://w3c.github.io/presentation-api/#common-idioms",
+        "title": "Common idioms",
+        "number": "6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-presentation-url",
+      "href": "https://w3c.github.io/presentation-api/#dfn-presentation-url",
+      "linkingText": [
+        "presentation URL"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "common-idioms",
+        "href": "https://w3c.github.io/presentation-api/#common-idioms",
+        "title": "Common idioms",
+        "number": "6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-valid-presentation-identifier",
+      "href": "https://w3c.github.io/presentation-api/#dfn-valid-presentation-identifier",
+      "linkingText": [
+        "valid presentation identifier"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "common-idioms",
+        "href": "https://w3c.github.io/presentation-api/#common-idioms",
+        "title": "Common idioms",
+        "number": "6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-available-presentation-display",
+      "href": "https://w3c.github.io/presentation-api/#dfn-available-presentation-display",
+      "linkingText": [
+        "available presentation display",
+        "available presentation displays"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "common-idioms",
+        "href": "https://w3c.github.io/presentation-api/#common-idioms",
+        "title": "Common idioms",
+        "number": "6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-controlling-browsing-context",
+      "href": "https://w3c.github.io/presentation-api/#dfn-controlling-browsing-context",
+      "linkingText": [
+        "controlling browsing context",
+        "controlling browsing contexts",
+        "controller"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "common-idioms",
+        "href": "https://w3c.github.io/presentation-api/#common-idioms",
+        "title": "Common idioms",
+        "number": "6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-receiving-browsing-context",
+      "href": "https://w3c.github.io/presentation-api/#dfn-receiving-browsing-context",
+      "linkingText": [
+        "receiving browsing context",
+        "receiving browsing contexts",
+        "presentations"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "common-idioms",
+        "href": "https://w3c.github.io/presentation-api/#common-idioms",
+        "title": "Common idioms",
+        "number": "6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-destination-browsing-context",
+      "href": "https://w3c.github.io/presentation-api/#dfn-destination-browsing-context",
+      "linkingText": [
+        "destination browsing context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "common-idioms",
+        "href": "https://w3c.github.io/presentation-api/#common-idioms",
+        "title": "Common idioms",
+        "number": "6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-set-of-controlled-presentations",
+      "href": "https://w3c.github.io/presentation-api/#dfn-set-of-controlled-presentations",
+      "linkingText": [
+        "set of controlled presentations"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "common-idioms",
+        "href": "https://w3c.github.io/presentation-api/#common-idioms",
+        "title": "Common idioms",
+        "number": "6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-set-of-presentation-controllers",
+      "href": "https://w3c.github.io/presentation-api/#dfn-set-of-presentation-controllers",
+      "linkingText": [
+        "set of presentation controllers"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "common-idioms",
+        "href": "https://w3c.github.io/presentation-api/#common-idioms",
+        "title": "Common idioms",
+        "number": "6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-presentation-controllers-monitor",
+      "href": "https://w3c.github.io/presentation-api/#dfn-presentation-controllers-monitor",
+      "linkingText": [
+        "presentation controllers monitor"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "common-idioms",
+        "href": "https://w3c.github.io/presentation-api/#common-idioms",
+        "title": "Common idioms",
+        "number": "6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-presentation-controllers-promise",
+      "href": "https://w3c.github.io/presentation-api/#dfn-presentation-controllers-promise",
+      "linkingText": [
+        "presentation controllers promise"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "common-idioms",
+        "href": "https://w3c.github.io/presentation-api/#common-idioms",
+        "title": "Common idioms",
+        "number": "6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-default-presentation-request",
+      "href": "https://w3c.github.io/presentation-api/#dfn-default-presentation-request",
+      "linkingText": [
+        "default presentation request"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "common-idioms",
+        "href": "https://w3c.github.io/presentation-api/#common-idioms",
+        "title": "Common idioms",
+        "number": "6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-presentation-task-source",
+      "href": "https://w3c.github.io/presentation-api/#dfn-presentation-task-source",
+      "linkingText": [
+        "presentation task source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "common-idioms",
+        "href": "https://w3c.github.io/presentation-api/#common-idioms",
+        "title": "Common idioms",
+        "number": "6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-presentation",
+      "href": "https://w3c.github.io/presentation-api/#dom-presentation",
+      "linkingText": [
+        "Presentation"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-presentation",
+        "href": "https://w3c.github.io/presentation-api/#interface-presentation",
+        "title": "Interface Presentation",
+        "number": "6.2"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-navigator-presentation",
+      "href": "https://w3c.github.io/presentation-api/#dom-navigator-presentation",
+      "linkingText": [
+        "presentation"
+      ],
+      "localLinkingText": [
+        "Navigator.presentation"
+      ],
+      "type": "attribute",
+      "for": [
+        "Navigator"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-presentation",
+        "href": "https://w3c.github.io/presentation-api/#interface-presentation",
+        "title": "Interface Presentation",
+        "number": "6.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-presentation-defaultrequest",
+      "href": "https://w3c.github.io/presentation-api/#dom-presentation-defaultrequest",
+      "linkingText": [
+        "defaultRequest"
+      ],
+      "localLinkingText": [
+        "Presentation.defaultRequest"
+      ],
+      "type": "attribute",
+      "for": [
+        "Presentation"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "controlling-user-agent",
+        "href": "https://w3c.github.io/presentation-api/#controlling-user-agent",
+        "title": "Controlling user agent",
+        "number": "6.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-presentation-receiver",
+      "href": "https://w3c.github.io/presentation-api/#dom-presentation-receiver",
+      "linkingText": [
+        "receiver"
+      ],
+      "localLinkingText": [
+        "Presentation.receiver"
+      ],
+      "type": "attribute",
+      "for": [
+        "Presentation"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "receiving-user-agent",
+        "href": "https://w3c.github.io/presentation-api/#receiving-user-agent",
+        "title": "Receiving user agent",
+        "number": "6.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-presentationrequest",
+      "href": "https://w3c.github.io/presentation-api/#dom-presentationrequest",
+      "linkingText": [
+        "PresentationRequest"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-presentationrequest",
+        "href": "https://w3c.github.io/presentation-api/#interface-presentationrequest",
+        "title": "Interface PresentationRequest",
+        "number": "6.3"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-presentationrequest-constructor",
+      "href": "https://w3c.github.io/presentation-api/#dom-presentationrequest-constructor",
+      "linkingText": [
+        "constructor()",
+        "constructor(url)"
+      ],
+      "localLinkingText": [
+        "PresentationRequest.constructor",
+        "PresentationRequest.constructor()",
+        "constructor"
+      ],
+      "type": "constructor",
+      "for": [
+        "PresentationRequest"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-presentationrequest",
+        "href": "https://w3c.github.io/presentation-api/#interface-presentationrequest",
+        "title": "Interface PresentationRequest",
+        "number": "6.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-presentationrequest-constructor!overload-1",
+      "href": "https://w3c.github.io/presentation-api/#dom-presentationrequest-constructor!overload-1",
+      "linkingText": [
+        "constructor!overload-1()",
+        "constructor!overload-1(urls)"
+      ],
+      "localLinkingText": [
+        "PresentationRequest.constructor!overload-1",
+        "PresentationRequest.constructor!overload-1()",
+        "constructor!overload-1"
+      ],
+      "type": "constructor",
+      "for": [
+        "PresentationRequest"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-presentationrequest",
+        "href": "https://w3c.github.io/presentation-api/#interface-presentationrequest",
+        "title": "Interface PresentationRequest",
+        "number": "6.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dfn-presentation-request-url",
+      "href": "https://w3c.github.io/presentation-api/#dfn-presentation-request-url",
+      "linkingText": [
+        "presentation request URL",
+        "presentation request URLs"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "interface-presentationrequest",
+        "href": "https://w3c.github.io/presentation-api/#interface-presentationrequest",
+        "title": "Interface PresentationRequest",
+        "number": "6.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-presentationrequest-start",
+      "href": "https://w3c.github.io/presentation-api/#dom-presentationrequest-start",
+      "linkingText": [
+        "start()"
+      ],
+      "localLinkingText": [
+        "PresentationRequest.start",
+        "PresentationRequest.start()",
+        "start"
+      ],
+      "type": "method",
+      "for": [
+        "PresentationRequest"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "selecting-a-presentation-display",
+        "href": "https://w3c.github.io/presentation-api/#selecting-a-presentation-display",
+        "title": "Selecting a presentation display",
+        "number": "6.3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-select-a-presentation-display",
+      "href": "https://w3c.github.io/presentation-api/#dfn-select-a-presentation-display",
+      "linkingText": [
+        "select a presentation display"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "selecting-a-presentation-display",
+        "href": "https://w3c.github.io/presentation-api/#selecting-a-presentation-display",
+        "title": "Selecting a presentation display",
+        "number": "6.3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-starting-a-presentation-from-a-default-presentation-request",
+      "href": "https://w3c.github.io/presentation-api/#dfn-starting-a-presentation-from-a-default-presentation-request",
+      "linkingText": [
+        "starting a presentation from a default presentation request",
+        "start a presentation from a default presentation request"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "starting-a-presentation-from-a-default-presentation-request",
+        "href": "https://w3c.github.io/presentation-api/#starting-a-presentation-from-a-default-presentation-request",
+        "title": "Starting a presentation from a default presentation request",
+        "number": "6.3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-start-a-presentation-connection",
+      "href": "https://w3c.github.io/presentation-api/#dfn-start-a-presentation-connection",
+      "linkingText": [
+        "start a presentation connection"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "starting-a-presentation-connection",
+        "href": "https://w3c.github.io/presentation-api/#starting-a-presentation-connection",
+        "title": "Starting a presentation connection",
+        "number": "6.3.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-presentationrequest-reconnect",
+      "href": "https://w3c.github.io/presentation-api/#dom-presentationrequest-reconnect",
+      "linkingText": [
+        "reconnect()",
+        "reconnect(presentationId)"
+      ],
+      "localLinkingText": [
+        "PresentationRequest.reconnect",
+        "PresentationRequest.reconnect()",
+        "reconnect"
+      ],
+      "type": "method",
+      "for": [
+        "PresentationRequest"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "reconnecting-to-a-presentation",
+        "href": "https://w3c.github.io/presentation-api/#reconnecting-to-a-presentation",
+        "title": "Reconnecting to a presentation",
+        "number": "6.3.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-reconnect-to-a-presentation",
+      "href": "https://w3c.github.io/presentation-api/#dfn-reconnect-to-a-presentation",
+      "linkingText": [
+        "reconnect to a presentation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "reconnecting-to-a-presentation",
+        "href": "https://w3c.github.io/presentation-api/#reconnecting-to-a-presentation",
+        "title": "Reconnecting to a presentation",
+        "number": "6.3.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-presentationrequest-onconnectionavailable",
+      "href": "https://w3c.github.io/presentation-api/#dom-presentationrequest-onconnectionavailable",
+      "linkingText": [
+        "onconnectionavailable"
+      ],
+      "localLinkingText": [
+        "PresentationRequest.onconnectionavailable"
+      ],
+      "type": "attribute",
+      "for": [
+        "PresentationRequest"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "event-handlers",
+        "href": "https://w3c.github.io/presentation-api/#event-handlers",
+        "title": "Event Handlers",
+        "number": "6.3.6"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dfn-connectionavailable",
+      "href": "https://w3c.github.io/presentation-api/#dfn-connectionavailable",
+      "linkingText": [
+        "connectionavailable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "event-handlers",
+        "href": "https://w3c.github.io/presentation-api/#event-handlers",
+        "title": "Event Handlers",
+        "number": "6.3.6"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dom-presentationavailability",
+      "href": "https://w3c.github.io/presentation-api/#dom-presentationavailability",
+      "linkingText": [
+        "PresentationAvailability"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-presentationavailability",
+        "href": "https://w3c.github.io/presentation-api/#interface-presentationavailability",
+        "title": "Interface PresentationAvailability",
+        "number": "6.4"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-presentation-display-availability",
+      "href": "https://w3c.github.io/presentation-api/#dfn-presentation-display-availability",
+      "linkingText": [
+        "presentation display availability"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "interface-presentationavailability",
+        "href": "https://w3c.github.io/presentation-api/#interface-presentationavailability",
+        "title": "Interface PresentationAvailability",
+        "number": "6.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-presentationavailability-value",
+      "href": "https://w3c.github.io/presentation-api/#dom-presentationavailability-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [
+        "PresentationAvailability.value"
+      ],
+      "type": "attribute",
+      "for": [
+        "PresentationAvailability"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-presentationavailability",
+        "href": "https://w3c.github.io/presentation-api/#interface-presentationavailability",
+        "title": "Interface PresentationAvailability",
+        "number": "6.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-presentationavailability-onchange",
+      "href": "https://w3c.github.io/presentation-api/#dom-presentationavailability-onchange",
+      "linkingText": [
+        "onchange"
+      ],
+      "localLinkingText": [
+        "PresentationAvailability.onchange"
+      ],
+      "type": "attribute",
+      "for": [
+        "PresentationAvailability"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-presentationavailability",
+        "href": "https://w3c.github.io/presentation-api/#interface-presentationavailability",
+        "title": "Interface PresentationAvailability",
+        "number": "6.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-change",
+      "href": "https://w3c.github.io/presentation-api/#dfn-change",
+      "linkingText": [
+        "change"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "interface-presentationavailability",
+        "href": "https://w3c.github.io/presentation-api/#interface-presentationavailability",
+        "title": "Interface PresentationAvailability",
+        "number": "6.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-set-of-presentation-availability-objects",
+      "href": "https://w3c.github.io/presentation-api/#dfn-set-of-presentation-availability-objects",
+      "linkingText": [
+        "set of presentation availability objects"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-set-of-presentation-availability-objects",
+        "href": "https://w3c.github.io/presentation-api/#the-set-of-presentation-availability-objects",
+        "title": "The set of presentation availability objects",
+        "number": "6.4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-list-of-available-presentation-displays",
+      "href": "https://w3c.github.io/presentation-api/#dfn-list-of-available-presentation-displays",
+      "linkingText": [
+        "list of available presentation displays"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-list-of-available-presentation-displays",
+        "href": "https://w3c.github.io/presentation-api/#the-list-of-available-presentation-displays",
+        "title": "The list of available presentation displays",
+        "number": "6.4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-presentationrequest-getavailability",
+      "href": "https://w3c.github.io/presentation-api/#dom-presentationrequest-getavailability",
+      "linkingText": [
+        "getAvailability()"
+      ],
+      "localLinkingText": [
+        "PresentationRequest.getAvailability",
+        "PresentationRequest.getAvailability()",
+        "getAvailability"
+      ],
+      "type": "method",
+      "for": [
+        "PresentationRequest"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "getting-the-presentation-displays-availability-information",
+        "href": "https://w3c.github.io/presentation-api/#getting-the-presentation-displays-availability-information",
+        "title": "Getting the presentation displays availability information",
+        "number": "6.4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-monitor-the-list-of-available-presentation-displays",
+      "href": "https://w3c.github.io/presentation-api/#dfn-monitor-the-list-of-available-presentation-displays",
+      "linkingText": [
+        "monitor the list of available presentation displays"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "monitoring-the-list-of-available-presentation-displays",
+        "href": "https://w3c.github.io/presentation-api/#monitoring-the-list-of-available-presentation-displays",
+        "title": "Monitoring the list of available presentation displays",
+        "number": "6.4.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-presentationconnectionavailableevent",
+      "href": "https://w3c.github.io/presentation-api/#dom-presentationconnectionavailableevent",
+      "linkingText": [
+        "PresentationConnectionAvailableEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-presentationconnectionavailableevent",
+        "href": "https://w3c.github.io/presentation-api/#interface-presentationconnectionavailableevent",
+        "title": "Interface PresentationConnectionAvailableEvent",
+        "number": "6.4.5"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-presentationconnectionavailableevent-constructor",
+      "href": "https://w3c.github.io/presentation-api/#dom-presentationconnectionavailableevent-constructor",
+      "linkingText": [
+        "constructor()",
+        "constructor(type, eventInitDict)"
+      ],
+      "localLinkingText": [
+        "PresentationConnectionAvailableEvent.constructor",
+        "PresentationConnectionAvailableEvent.constructor()",
+        "constructor"
+      ],
+      "type": "constructor",
+      "for": [
+        "PresentationConnectionAvailableEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-presentationconnectionavailableevent",
+        "href": "https://w3c.github.io/presentation-api/#interface-presentationconnectionavailableevent",
+        "title": "Interface PresentationConnectionAvailableEvent",
+        "number": "6.4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-presentationconnectionavailableevent-connection",
+      "href": "https://w3c.github.io/presentation-api/#dom-presentationconnectionavailableevent-connection",
+      "linkingText": [
+        "connection"
+      ],
+      "localLinkingText": [
+        "PresentationConnectionAvailableEvent.connection"
+      ],
+      "type": "attribute",
+      "for": [
+        "PresentationConnectionAvailableEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-presentationconnectionavailableevent",
+        "href": "https://w3c.github.io/presentation-api/#interface-presentationconnectionavailableevent",
+        "title": "Interface PresentationConnectionAvailableEvent",
+        "number": "6.4.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-presentationconnectionavailableeventinit-connection",
+      "href": "https://w3c.github.io/presentation-api/#dom-presentationconnectionavailableeventinit-connection",
+      "linkingText": [
+        "connection"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PresentationConnectionAvailableEventInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-presentationconnectionavailableevent",
+        "href": "https://w3c.github.io/presentation-api/#interface-presentationconnectionavailableevent",
+        "title": "Interface PresentationConnectionAvailableEvent",
+        "number": "6.4.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-presentationconnectionavailableeventinit",
+      "href": "https://w3c.github.io/presentation-api/#dom-presentationconnectionavailableeventinit",
+      "linkingText": [
+        "PresentationConnectionAvailableEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-presentationconnectionavailableevent",
+        "href": "https://w3c.github.io/presentation-api/#interface-presentationconnectionavailableevent",
+        "title": "Interface PresentationConnectionAvailableEvent",
+        "number": "6.4.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-presentationconnection",
+      "href": "https://w3c.github.io/presentation-api/#dom-presentationconnection",
+      "linkingText": [
+        "PresentationConnection"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-presentationconnection",
+        "href": "https://w3c.github.io/presentation-api/#interface-presentationconnection",
+        "title": "Interface PresentationConnection",
+        "number": "6.5"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-presentationconnection-id",
+      "href": "https://w3c.github.io/presentation-api/#dom-presentationconnection-id",
+      "linkingText": [
+        "id"
+      ],
+      "localLinkingText": [
+        "PresentationConnection.id"
+      ],
+      "type": "attribute",
+      "for": [
+        "PresentationConnection"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-presentationconnection",
+        "href": "https://w3c.github.io/presentation-api/#interface-presentationconnection",
+        "title": "Interface PresentationConnection",
+        "number": "6.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-presentationconnection-url",
+      "href": "https://w3c.github.io/presentation-api/#dom-presentationconnection-url",
+      "linkingText": [
+        "url"
+      ],
+      "localLinkingText": [
+        "PresentationConnection.url"
+      ],
+      "type": "attribute",
+      "for": [
+        "PresentationConnection"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-presentationconnection",
+        "href": "https://w3c.github.io/presentation-api/#interface-presentationconnection",
+        "title": "Interface PresentationConnection",
+        "number": "6.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-presentationconnection-state",
+      "href": "https://w3c.github.io/presentation-api/#dom-presentationconnection-state",
+      "linkingText": [
+        "state"
+      ],
+      "localLinkingText": [
+        "PresentationConnection.state"
+      ],
+      "type": "attribute",
+      "for": [
+        "PresentationConnection"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-presentationconnection",
+        "href": "https://w3c.github.io/presentation-api/#interface-presentationconnection",
+        "title": "Interface PresentationConnection",
+        "number": "6.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-presentationconnectionstate",
+      "href": "https://w3c.github.io/presentation-api/#dom-presentationconnectionstate",
+      "linkingText": [
+        "PresentationConnectionState"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-presentationconnection",
+        "href": "https://w3c.github.io/presentation-api/#interface-presentationconnection",
+        "title": "Interface PresentationConnection",
+        "number": "6.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-presentationconnectionstate-connecting",
+      "href": "https://w3c.github.io/presentation-api/#dom-presentationconnectionstate-connecting",
+      "linkingText": [
+        "connecting"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PresentationConnectionState"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-presentationconnection",
+        "href": "https://w3c.github.io/presentation-api/#interface-presentationconnection",
+        "title": "Interface PresentationConnection",
+        "number": "6.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-presentationconnectionstate-connected",
+      "href": "https://w3c.github.io/presentation-api/#dom-presentationconnectionstate-connected",
+      "linkingText": [
+        "connected"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PresentationConnectionState"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-presentationconnection",
+        "href": "https://w3c.github.io/presentation-api/#interface-presentationconnection",
+        "title": "Interface PresentationConnection",
+        "number": "6.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-presentationconnectionstate-closed",
+      "href": "https://w3c.github.io/presentation-api/#dom-presentationconnectionstate-closed",
+      "linkingText": [
+        "closed"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PresentationConnectionState"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-presentationconnection",
+        "href": "https://w3c.github.io/presentation-api/#interface-presentationconnection",
+        "title": "Interface PresentationConnection",
+        "number": "6.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-presentationconnectionstate-terminated",
+      "href": "https://w3c.github.io/presentation-api/#dom-presentationconnectionstate-terminated",
+      "linkingText": [
+        "terminated"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PresentationConnectionState"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-presentationconnection",
+        "href": "https://w3c.github.io/presentation-api/#interface-presentationconnection",
+        "title": "Interface PresentationConnection",
+        "number": "6.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-presentationconnection-close",
+      "href": "https://w3c.github.io/presentation-api/#dom-presentationconnection-close",
+      "linkingText": [
+        "close()"
+      ],
+      "localLinkingText": [
+        "PresentationConnection.close",
+        "PresentationConnection.close()",
+        "close"
+      ],
+      "type": "method",
+      "for": [
+        "PresentationConnection"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-presentationconnection",
+        "href": "https://w3c.github.io/presentation-api/#interface-presentationconnection",
+        "title": "Interface PresentationConnection",
+        "number": "6.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-presentationconnection-terminate",
+      "href": "https://w3c.github.io/presentation-api/#dom-presentationconnection-terminate",
+      "linkingText": [
+        "terminate()"
+      ],
+      "localLinkingText": [
+        "PresentationConnection.terminate",
+        "PresentationConnection.terminate()",
+        "terminate"
+      ],
+      "type": "method",
+      "for": [
+        "PresentationConnection"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-presentationconnection",
+        "href": "https://w3c.github.io/presentation-api/#interface-presentationconnection",
+        "title": "Interface PresentationConnection",
+        "number": "6.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-presentationconnection-binarytype",
+      "href": "https://w3c.github.io/presentation-api/#dom-presentationconnection-binarytype",
+      "linkingText": [
+        "binaryType"
+      ],
+      "localLinkingText": [
+        "PresentationConnection.binaryType"
+      ],
+      "type": "attribute",
+      "for": [
+        "PresentationConnection"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-presentationconnection",
+        "href": "https://w3c.github.io/presentation-api/#interface-presentationconnection",
+        "title": "Interface PresentationConnection",
+        "number": "6.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-presentationconnection-send",
+      "href": "https://w3c.github.io/presentation-api/#dom-presentationconnection-send",
+      "linkingText": [
+        "send()",
+        "send(message)",
+        "send!overload-1()",
+        "send!overload-1(data)",
+        "send!overload-2()",
+        "send!overload-2(data)",
+        "send!overload-3()",
+        "send!overload-3(data)"
+      ],
+      "localLinkingText": [
+        "PresentationConnection.send!overload-3",
+        "PresentationConnection.send!overload-3()",
+        "send!overload-3"
+      ],
+      "type": "method",
+      "for": [
+        "PresentationConnection"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-presentationconnection",
+        "href": "https://w3c.github.io/presentation-api/#interface-presentationconnection",
+        "title": "Interface PresentationConnection",
+        "number": "6.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-establish-a-presentation-connection",
+      "href": "https://w3c.github.io/presentation-api/#dfn-establish-a-presentation-connection",
+      "linkingText": [
+        "establish a presentation connection"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "establishing-a-presentation-connection",
+        "href": "https://w3c.github.io/presentation-api/#establishing-a-presentation-connection",
+        "title": "Establishing a presentation connection",
+        "number": "6.5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-presentation-message-data",
+      "href": "https://w3c.github.io/presentation-api/#dfn-presentation-message-data",
+      "linkingText": [
+        "presentation message data"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sending-a-message-through-presentationconnection",
+        "href": "https://w3c.github.io/presentation-api/#sending-a-message-through-presentationconnection",
+        "title": "Sending a message through PresentationConnection",
+        "number": "6.5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-presentation-message-type",
+      "href": "https://w3c.github.io/presentation-api/#dfn-presentation-message-type",
+      "linkingText": [
+        "presentation message type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sending-a-message-through-presentationconnection",
+        "href": "https://w3c.github.io/presentation-api/#sending-a-message-through-presentationconnection",
+        "title": "Sending a message through PresentationConnection",
+        "number": "6.5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-send-algorithm",
+      "href": "https://w3c.github.io/presentation-api/#dfn-send-algorithm",
+      "linkingText": [
+        "send-algorithm",
+        "send a message"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sending-a-message-through-presentationconnection",
+        "href": "https://w3c.github.io/presentation-api/#sending-a-message-through-presentationconnection",
+        "title": "Sending a message through PresentationConnection",
+        "number": "6.5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-receive-algorithm",
+      "href": "https://w3c.github.io/presentation-api/#dfn-receive-algorithm",
+      "linkingText": [
+        "receive-algorithm",
+        "receive a message"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "receiving-a-message-through-presentationconnection",
+        "href": "https://w3c.github.io/presentation-api/#receiving-a-message-through-presentationconnection",
+        "title": "Receiving a message through PresentationConnection",
+        "number": "6.5.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-presentationconnectioncloseevent",
+      "href": "https://w3c.github.io/presentation-api/#dom-presentationconnectioncloseevent",
+      "linkingText": [
+        "PresentationConnectionCloseEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-presentationconnectioncloseevent",
+        "href": "https://w3c.github.io/presentation-api/#interface-presentationconnectioncloseevent",
+        "title": "Interface PresentationConnectionCloseEvent",
+        "number": "6.5.4"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-presentationconnectioncloseevent-constructor",
+      "href": "https://w3c.github.io/presentation-api/#dom-presentationconnectioncloseevent-constructor",
+      "linkingText": [
+        "constructor()",
+        "constructor(type, eventInitDict)"
+      ],
+      "localLinkingText": [
+        "PresentationConnectionCloseEvent.constructor",
+        "PresentationConnectionCloseEvent.constructor()",
+        "constructor"
+      ],
+      "type": "constructor",
+      "for": [
+        "PresentationConnectionCloseEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-presentationconnectioncloseevent",
+        "href": "https://w3c.github.io/presentation-api/#interface-presentationconnectioncloseevent",
+        "title": "Interface PresentationConnectionCloseEvent",
+        "number": "6.5.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-presentationconnectioncloseevent-reason",
+      "href": "https://w3c.github.io/presentation-api/#dom-presentationconnectioncloseevent-reason",
+      "linkingText": [
+        "reason"
+      ],
+      "localLinkingText": [
+        "PresentationConnectionCloseEvent.reason"
+      ],
+      "type": "attribute",
+      "for": [
+        "PresentationConnectionCloseEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-presentationconnectioncloseevent",
+        "href": "https://w3c.github.io/presentation-api/#interface-presentationconnectioncloseevent",
+        "title": "Interface PresentationConnectionCloseEvent",
+        "number": "6.5.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-presentationconnectionclosereason",
+      "href": "https://w3c.github.io/presentation-api/#dom-presentationconnectionclosereason",
+      "linkingText": [
+        "PresentationConnectionCloseReason"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-presentationconnectioncloseevent",
+        "href": "https://w3c.github.io/presentation-api/#interface-presentationconnectioncloseevent",
+        "title": "Interface PresentationConnectionCloseEvent",
+        "number": "6.5.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-presentationconnectionclosereason-error",
+      "href": "https://w3c.github.io/presentation-api/#dom-presentationconnectionclosereason-error",
+      "linkingText": [
+        "error"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PresentationConnectionCloseReason"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-presentationconnectioncloseevent",
+        "href": "https://w3c.github.io/presentation-api/#interface-presentationconnectioncloseevent",
+        "title": "Interface PresentationConnectionCloseEvent",
+        "number": "6.5.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-presentationconnectionclosereason-closed",
+      "href": "https://w3c.github.io/presentation-api/#dom-presentationconnectionclosereason-closed",
+      "linkingText": [
+        "closed"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PresentationConnectionCloseReason"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-presentationconnectioncloseevent",
+        "href": "https://w3c.github.io/presentation-api/#interface-presentationconnectioncloseevent",
+        "title": "Interface PresentationConnectionCloseEvent",
+        "number": "6.5.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-presentationconnectionclosereason-wentaway",
+      "href": "https://w3c.github.io/presentation-api/#dom-presentationconnectionclosereason-wentaway",
+      "linkingText": [
+        "wentaway"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PresentationConnectionCloseReason"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-presentationconnectioncloseevent",
+        "href": "https://w3c.github.io/presentation-api/#interface-presentationconnectioncloseevent",
+        "title": "Interface PresentationConnectionCloseEvent",
+        "number": "6.5.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-presentationconnectioncloseevent-message",
+      "href": "https://w3c.github.io/presentation-api/#dom-presentationconnectioncloseevent-message",
+      "linkingText": [
+        "message"
+      ],
+      "localLinkingText": [
+        "PresentationConnectionCloseEvent.message"
+      ],
+      "type": "attribute",
+      "for": [
+        "PresentationConnectionCloseEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-presentationconnectioncloseevent",
+        "href": "https://w3c.github.io/presentation-api/#interface-presentationconnectioncloseevent",
+        "title": "Interface PresentationConnectionCloseEvent",
+        "number": "6.5.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-presentationconnectioncloseeventinit-reason",
+      "href": "https://w3c.github.io/presentation-api/#dom-presentationconnectioncloseeventinit-reason",
+      "linkingText": [
+        "reason"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PresentationConnectionCloseEventInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-presentationconnectioncloseevent",
+        "href": "https://w3c.github.io/presentation-api/#interface-presentationconnectioncloseevent",
+        "title": "Interface PresentationConnectionCloseEvent",
+        "number": "6.5.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-presentationconnectioncloseeventinit",
+      "href": "https://w3c.github.io/presentation-api/#dom-presentationconnectioncloseeventinit",
+      "linkingText": [
+        "PresentationConnectionCloseEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-presentationconnectioncloseevent",
+        "href": "https://w3c.github.io/presentation-api/#interface-presentationconnectioncloseevent",
+        "title": "Interface PresentationConnectionCloseEvent",
+        "number": "6.5.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-presentationconnectioncloseeventinit-message",
+      "href": "https://w3c.github.io/presentation-api/#dom-presentationconnectioncloseeventinit-message",
+      "linkingText": [
+        "message"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PresentationConnectionCloseEventInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-presentationconnectioncloseevent",
+        "href": "https://w3c.github.io/presentation-api/#interface-presentationconnectioncloseevent",
+        "title": "Interface PresentationConnectionCloseEvent",
+        "number": "6.5.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-start-closing-the-presentation-connection",
+      "href": "https://w3c.github.io/presentation-api/#dfn-start-closing-the-presentation-connection",
+      "linkingText": [
+        "start closing the presentation connection",
+        "closing procedure",
+        "start closing a presentation connection"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "closing-a-presentationconnection",
+        "href": "https://w3c.github.io/presentation-api/#closing-a-presentationconnection",
+        "title": "Closing a PresentationConnection",
+        "number": "6.5.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-close-the-presentation-connection",
+      "href": "https://w3c.github.io/presentation-api/#dfn-close-the-presentation-connection",
+      "linkingText": [
+        "close the presentation connection",
+        "close a presentation connection"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "closing-a-presentationconnection",
+        "href": "https://w3c.github.io/presentation-api/#closing-a-presentationconnection",
+        "title": "Closing a PresentationConnection",
+        "number": "6.5.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-terminate-algorithm-controlling",
+      "href": "https://w3c.github.io/presentation-api/#dfn-terminate-algorithm-controlling",
+      "linkingText": [
+        "terminate-algorithm-controlling",
+        "terminate a presentation in a controlling browsing context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminating-a-presentation-in-a-controlling-browsing-context",
+        "href": "https://w3c.github.io/presentation-api/#terminating-a-presentation-in-a-controlling-browsing-context",
+        "title": "Terminating a presentation in a controlling browsing context",
+        "number": "6.5.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-send-a-termination-request",
+      "href": "https://w3c.github.io/presentation-api/#dfn-send-a-termination-request",
+      "linkingText": [
+        "Send a termination request"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminating-a-presentation-in-a-controlling-browsing-context",
+        "href": "https://w3c.github.io/presentation-api/#terminating-a-presentation-in-a-controlling-browsing-context",
+        "title": "Terminating a presentation in a controlling browsing context",
+        "number": "6.5.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-terminate-algorithm-receiving",
+      "href": "https://w3c.github.io/presentation-api/#dfn-terminate-algorithm-receiving",
+      "linkingText": [
+        "terminate-algorithm-receiving",
+        "terminate a presentation in a receiving browsing context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminating-a-presentation-in-a-receiving-browsing-context",
+        "href": "https://w3c.github.io/presentation-api/#terminating-a-presentation-in-a-receiving-browsing-context",
+        "title": "Terminating a presentation in a receiving browsing context",
+        "number": "6.5.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-send-a-termination-confirmation",
+      "href": "https://w3c.github.io/presentation-api/#dfn-send-a-termination-confirmation",
+      "linkingText": [
+        "send a termination confirmation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "handling-a-termination-confirmation-in-a-controlling-user-agent",
+        "href": "https://w3c.github.io/presentation-api/#handling-a-termination-confirmation-in-a-controlling-user-agent",
+        "title": "Handling a termination confirmation in a controlling user agent",
+        "number": "6.5.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-presentationconnection-onmessage",
+      "href": "https://w3c.github.io/presentation-api/#dom-presentationconnection-onmessage",
+      "linkingText": [
+        "onmessage"
+      ],
+      "localLinkingText": [
+        "PresentationConnection.onmessage"
+      ],
+      "type": "attribute",
+      "for": [
+        "PresentationConnection"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "event-handlers-0",
+        "href": "https://w3c.github.io/presentation-api/#event-handlers-0",
+        "title": "Event Handlers",
+        "number": "6.5.9"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dom-presentationconnection-onconnect",
+      "href": "https://w3c.github.io/presentation-api/#dom-presentationconnection-onconnect",
+      "linkingText": [
+        "onconnect"
+      ],
+      "localLinkingText": [
+        "PresentationConnection.onconnect"
+      ],
+      "type": "attribute",
+      "for": [
+        "PresentationConnection"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "event-handlers-0",
+        "href": "https://w3c.github.io/presentation-api/#event-handlers-0",
+        "title": "Event Handlers",
+        "number": "6.5.9"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dfn-connect",
+      "href": "https://w3c.github.io/presentation-api/#dfn-connect",
+      "linkingText": [
+        "connect"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "event-handlers-0",
+        "href": "https://w3c.github.io/presentation-api/#event-handlers-0",
+        "title": "Event Handlers",
+        "number": "6.5.9"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dom-presentationconnection-onclose",
+      "href": "https://w3c.github.io/presentation-api/#dom-presentationconnection-onclose",
+      "linkingText": [
+        "onclose"
+      ],
+      "localLinkingText": [
+        "PresentationConnection.onclose"
+      ],
+      "type": "attribute",
+      "for": [
+        "PresentationConnection"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "event-handlers-0",
+        "href": "https://w3c.github.io/presentation-api/#event-handlers-0",
+        "title": "Event Handlers",
+        "number": "6.5.9"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dom-presentationconnection-onterminate",
+      "href": "https://w3c.github.io/presentation-api/#dom-presentationconnection-onterminate",
+      "linkingText": [
+        "onterminate"
+      ],
+      "localLinkingText": [
+        "PresentationConnection.onterminate"
+      ],
+      "type": "attribute",
+      "for": [
+        "PresentationConnection"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "event-handlers-0",
+        "href": "https://w3c.github.io/presentation-api/#event-handlers-0",
+        "title": "Event Handlers",
+        "number": "6.5.9"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dom-presentationreceiver",
+      "href": "https://w3c.github.io/presentation-api/#dom-presentationreceiver",
+      "linkingText": [
+        "PresentationReceiver"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-presentationreceiver",
+        "href": "https://w3c.github.io/presentation-api/#interface-presentationreceiver",
+        "title": "Interface PresentationReceiver",
+        "number": "6.6"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-presentationreceiver-connectionlist",
+      "href": "https://w3c.github.io/presentation-api/#dom-presentationreceiver-connectionlist",
+      "linkingText": [
+        "connectionList"
+      ],
+      "localLinkingText": [
+        "PresentationReceiver.connectionList"
+      ],
+      "type": "attribute",
+      "for": [
+        "PresentationReceiver"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-presentationreceiver",
+        "href": "https://w3c.github.io/presentation-api/#interface-presentationreceiver",
+        "title": "Interface PresentationReceiver",
+        "number": "6.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-create-a-receiving-browsing-context",
+      "href": "https://w3c.github.io/presentation-api/#dfn-create-a-receiving-browsing-context",
+      "linkingText": [
+        "create a receiving browsing context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "creating-a-receiving-browsing-context",
+        "href": "https://w3c.github.io/presentation-api/#creating-a-receiving-browsing-context",
+        "title": "Creating a receiving browsing context",
+        "number": "6.6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-presentationconnectionlist",
+      "href": "https://w3c.github.io/presentation-api/#dom-presentationconnectionlist",
+      "linkingText": [
+        "PresentationConnectionList"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-presentationconnectionlist",
+        "href": "https://w3c.github.io/presentation-api/#interface-presentationconnectionlist",
+        "title": "Interface PresentationConnectionList",
+        "number": "6.7"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-presentationconnectionlist-connections",
+      "href": "https://w3c.github.io/presentation-api/#dom-presentationconnectionlist-connections",
+      "linkingText": [
+        "connections"
+      ],
+      "localLinkingText": [
+        "PresentationConnectionList.connections"
+      ],
+      "type": "attribute",
+      "for": [
+        "PresentationConnectionList"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-presentationconnectionlist",
+        "href": "https://w3c.github.io/presentation-api/#interface-presentationconnectionlist",
+        "title": "Interface PresentationConnectionList",
+        "number": "6.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-monitoring-incoming-presentation-connections",
+      "href": "https://w3c.github.io/presentation-api/#dfn-monitoring-incoming-presentation-connections",
+      "linkingText": [
+        "monitoring incoming presentation connections"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "monitoring-incoming-presentation-connections",
+        "href": "https://w3c.github.io/presentation-api/#monitoring-incoming-presentation-connections",
+        "title": "Monitoring incoming presentation connections",
+        "number": "6.7.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-presentationconnectionlist-onconnectionavailable",
+      "href": "https://w3c.github.io/presentation-api/#dom-presentationconnectionlist-onconnectionavailable",
+      "linkingText": [
+        "onconnectionavailable"
+      ],
+      "localLinkingText": [
+        "PresentationConnectionList.onconnectionavailable"
+      ],
+      "type": "attribute",
+      "for": [
+        "PresentationConnectionList"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "event-handlers-1",
+        "href": "https://w3c.github.io/presentation-api/#event-handlers-1",
+        "title": "Event Handlers",
+        "number": "6.7.2"
+      },
+      "definedIn": "table"
+    }
+  ]
+}

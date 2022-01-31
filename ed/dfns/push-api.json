@@ -1,0 +1,1432 @@
+{
+  "spec": {
+    "title": "Push API",
+    "url": "https://w3c.github.io/push-api/"
+  },
+  "dfns": [
+    {
+      "id": "dfn-web-push-protocol",
+      "href": "https://w3c.github.io/push-api/#dfn-web-push-protocol",
+      "linkingText": [
+        "web push protocol"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://w3c.github.io/push-api/#dependencies",
+        "title": "Dependencies",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-content-encoding",
+      "href": "https://w3c.github.io/push-api/#dfn-content-encoding",
+      "linkingText": [
+        "Content-Encoding"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://w3c.github.io/push-api/#dependencies",
+        "title": "Dependencies",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-application-server",
+      "href": "https://w3c.github.io/push-api/#dfn-application-server",
+      "linkingText": [
+        "application server"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "application-server",
+        "href": "https://w3c.github.io/push-api/#application-server",
+        "title": "Application server",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-push-message",
+      "href": "https://w3c.github.io/push-api/#dfn-push-message",
+      "linkingText": [
+        "push message"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "push-message",
+        "href": "https://w3c.github.io/push-api/#push-message",
+        "title": "Push message",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-push-subscription",
+      "href": "https://w3c.github.io/push-api/#dfn-push-subscription",
+      "linkingText": [
+        "push subscription"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "push-subscription",
+        "href": "https://w3c.github.io/push-api/#push-subscription",
+        "title": "Push subscription",
+        "number": "3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-push-endpoint",
+      "href": "https://w3c.github.io/push-api/#dfn-push-endpoint",
+      "linkingText": [
+        "push endpoint"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "push-subscription",
+        "href": "https://w3c.github.io/push-api/#push-subscription",
+        "title": "Push subscription",
+        "number": "3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-subscription-expiration-time",
+      "href": "https://w3c.github.io/push-api/#dfn-subscription-expiration-time",
+      "linkingText": [
+        "subscription expiration time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "push-subscription",
+        "href": "https://w3c.github.io/push-api/#push-subscription",
+        "title": "Push subscription",
+        "number": "3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-create-a-push-subscription",
+      "href": "https://w3c.github.io/push-api/#dfn-create-a-push-subscription",
+      "linkingText": [
+        "create a push subscription"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "push-subscription",
+        "href": "https://w3c.github.io/push-api/#push-subscription",
+        "title": "Push subscription",
+        "number": "3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-refresh",
+      "href": "https://w3c.github.io/push-api/#dfn-refresh",
+      "linkingText": [
+        "refresh"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "subscription-refreshes",
+        "href": "https://w3c.github.io/push-api/#subscription-refreshes",
+        "title": "Subscription Refreshes",
+        "number": "3.3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-deactivate",
+      "href": "https://w3c.github.io/push-api/#dfn-deactivate",
+      "linkingText": [
+        "deactivate",
+        "deactivated"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "subscription-deactivation",
+        "href": "https://w3c.github.io/push-api/#subscription-deactivation",
+        "title": "Subscription Deactivation",
+        "number": "3.3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-push-service",
+      "href": "https://w3c.github.io/push-api/#dfn-push-service",
+      "linkingText": [
+        "push service"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "push-service",
+        "href": "https://w3c.github.io/push-api/#push-service",
+        "title": "Push service",
+        "number": "3.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-pushpermissiondescriptor",
+      "href": "https://w3c.github.io/push-api/#dom-pushpermissiondescriptor",
+      "linkingText": [
+        "PushPermissionDescriptor"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "permission",
+        "href": "https://w3c.github.io/push-api/#permission",
+        "title": "Permission",
+        "number": "3.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-pushpermissiondescriptor-uservisibleonly",
+      "href": "https://w3c.github.io/push-api/#dom-pushpermissiondescriptor-uservisibleonly",
+      "linkingText": [
+        "userVisibleOnly"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PushPermissionDescriptor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "permission",
+        "href": "https://w3c.github.io/push-api/#permission",
+        "title": "Permission",
+        "number": "3.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-ecdh",
+      "href": "https://w3c.github.io/push-api/#dfn-ecdh",
+      "linkingText": [
+        "ECDH",
+        "elliptic curve Diffie-Hellman"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "push-service-use",
+        "href": "https://w3c.github.io/push-api/#push-service-use",
+        "title": "Push service use",
+        "number": "5.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-serviceworkerregistration-pushmanager",
+      "href": "https://w3c.github.io/push-api/#dom-serviceworkerregistration-pushmanager",
+      "linkingText": [
+        "pushManager"
+      ],
+      "localLinkingText": [
+        "ServiceWorkerRegistration.pushManager"
+      ],
+      "type": "attribute",
+      "for": [
+        "ServiceWorkerRegistration"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "extensions-to-the-serviceworkerregistration-interface",
+        "href": "https://w3c.github.io/push-api/#extensions-to-the-serviceworkerregistration-interface",
+        "title": "Extensions to the ServiceWorkerRegistration Interface",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-pushmanager",
+      "href": "https://w3c.github.io/push-api/#dom-pushmanager",
+      "linkingText": [
+        "PushManager"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pushmanager-interface",
+        "href": "https://w3c.github.io/push-api/#pushmanager-interface",
+        "title": "PushManager interface",
+        "number": "7"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-pushmanager-supportedcontentencodings",
+      "href": "https://w3c.github.io/push-api/#dom-pushmanager-supportedcontentencodings",
+      "linkingText": [
+        "supportedContentEncodings"
+      ],
+      "localLinkingText": [
+        "PushManager.supportedContentEncodings"
+      ],
+      "type": "attribute",
+      "for": [
+        "PushManager"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pushmanager-interface",
+        "href": "https://w3c.github.io/push-api/#pushmanager-interface",
+        "title": "PushManager interface",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-pushmanager-subscribe",
+      "href": "https://w3c.github.io/push-api/#dom-pushmanager-subscribe",
+      "linkingText": [
+        "subscribe()",
+        "subscribe(options)"
+      ],
+      "localLinkingText": [
+        "PushManager.subscribe",
+        "PushManager.subscribe()",
+        "subscribe"
+      ],
+      "type": "method",
+      "for": [
+        "PushManager"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pushmanager-interface",
+        "href": "https://w3c.github.io/push-api/#pushmanager-interface",
+        "title": "PushManager interface",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-pushmanager-getsubscription",
+      "href": "https://w3c.github.io/push-api/#dom-pushmanager-getsubscription",
+      "linkingText": [
+        "getSubscription()"
+      ],
+      "localLinkingText": [
+        "PushManager.getSubscription",
+        "PushManager.getSubscription()",
+        "getSubscription"
+      ],
+      "type": "method",
+      "for": [
+        "PushManager"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pushmanager-interface",
+        "href": "https://w3c.github.io/push-api/#pushmanager-interface",
+        "title": "PushManager interface",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-pushmanager-permissionstate",
+      "href": "https://w3c.github.io/push-api/#dom-pushmanager-permissionstate",
+      "linkingText": [
+        "permissionState()",
+        "permissionState(options)"
+      ],
+      "localLinkingText": [
+        "PushManager.permissionState",
+        "PushManager.permissionState()",
+        "permissionState"
+      ],
+      "type": "method",
+      "for": [
+        "PushManager"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pushmanager-interface",
+        "href": "https://w3c.github.io/push-api/#pushmanager-interface",
+        "title": "PushManager interface",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-pushsubscriptionoptions",
+      "href": "https://w3c.github.io/push-api/#dom-pushsubscriptionoptions",
+      "linkingText": [
+        "PushSubscriptionOptions"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pushsubscriptionoptions-interface",
+        "href": "https://w3c.github.io/push-api/#pushsubscriptionoptions-interface",
+        "title": "PushSubscriptionOptions Interface",
+        "number": "7.1"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-pushsubscriptionoptions-uservisibleonly",
+      "href": "https://w3c.github.io/push-api/#dom-pushsubscriptionoptions-uservisibleonly",
+      "linkingText": [
+        "userVisibleOnly"
+      ],
+      "localLinkingText": [
+        "PushSubscriptionOptions.userVisibleOnly"
+      ],
+      "type": "attribute",
+      "for": [
+        "PushSubscriptionOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pushsubscriptionoptions-interface",
+        "href": "https://w3c.github.io/push-api/#pushsubscriptionoptions-interface",
+        "title": "PushSubscriptionOptions Interface",
+        "number": "7.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-pushsubscriptionoptions-applicationserverkey",
+      "href": "https://w3c.github.io/push-api/#dom-pushsubscriptionoptions-applicationserverkey",
+      "linkingText": [
+        "applicationServerKey"
+      ],
+      "localLinkingText": [
+        "PushSubscriptionOptions.applicationServerKey"
+      ],
+      "type": "attribute",
+      "for": [
+        "PushSubscriptionOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pushsubscriptionoptions-interface",
+        "href": "https://w3c.github.io/push-api/#pushsubscriptionoptions-interface",
+        "title": "PushSubscriptionOptions Interface",
+        "number": "7.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-pushsubscriptionoptionsinit",
+      "href": "https://w3c.github.io/push-api/#dom-pushsubscriptionoptionsinit",
+      "linkingText": [
+        "PushSubscriptionOptionsInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pushsubscriptionoptionsinit-dictionary",
+        "href": "https://w3c.github.io/push-api/#pushsubscriptionoptionsinit-dictionary",
+        "title": "PushSubscriptionOptionsInit dictionary",
+        "number": "7.2"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-pushsubscriptionoptionsinit-uservisibleonly",
+      "href": "https://w3c.github.io/push-api/#dom-pushsubscriptionoptionsinit-uservisibleonly",
+      "linkingText": [
+        "userVisibleOnly"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PushSubscriptionOptionsInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pushsubscriptionoptionsinit-dictionary",
+        "href": "https://w3c.github.io/push-api/#pushsubscriptionoptionsinit-dictionary",
+        "title": "PushSubscriptionOptionsInit dictionary",
+        "number": "7.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-pushsubscriptionoptionsinit-applicationserverkey",
+      "href": "https://w3c.github.io/push-api/#dom-pushsubscriptionoptionsinit-applicationserverkey",
+      "linkingText": [
+        "applicationServerKey"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PushSubscriptionOptionsInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pushsubscriptionoptionsinit-dictionary",
+        "href": "https://w3c.github.io/push-api/#pushsubscriptionoptionsinit-dictionary",
+        "title": "PushSubscriptionOptionsInit dictionary",
+        "number": "7.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-pushsubscription",
+      "href": "https://w3c.github.io/push-api/#dom-pushsubscription",
+      "linkingText": [
+        "PushSubscription"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pushsubscription-interface",
+        "href": "https://w3c.github.io/push-api/#pushsubscription-interface",
+        "title": "PushSubscription interface",
+        "number": "8"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-pushsubscription-endpoint",
+      "href": "https://w3c.github.io/push-api/#dom-pushsubscription-endpoint",
+      "linkingText": [
+        "endpoint"
+      ],
+      "localLinkingText": [
+        "PushSubscription.endpoint"
+      ],
+      "type": "attribute",
+      "for": [
+        "PushSubscription"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pushsubscription-interface",
+        "href": "https://w3c.github.io/push-api/#pushsubscription-interface",
+        "title": "PushSubscription interface",
+        "number": "8"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-pushsubscription-expirationtime",
+      "href": "https://w3c.github.io/push-api/#dom-pushsubscription-expirationtime",
+      "linkingText": [
+        "expirationTime"
+      ],
+      "localLinkingText": [
+        "PushSubscription.expirationTime"
+      ],
+      "type": "attribute",
+      "for": [
+        "PushSubscription"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pushsubscription-interface",
+        "href": "https://w3c.github.io/push-api/#pushsubscription-interface",
+        "title": "PushSubscription interface",
+        "number": "8"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-pushsubscriptionjson-endpoint",
+      "href": "https://w3c.github.io/push-api/#dom-pushsubscriptionjson-endpoint",
+      "linkingText": [
+        "endpoint"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PushSubscriptionJSON"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pushsubscription-interface",
+        "href": "https://w3c.github.io/push-api/#pushsubscription-interface",
+        "title": "PushSubscription interface",
+        "number": "8"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-pushsubscriptionjson-expirationtime",
+      "href": "https://w3c.github.io/push-api/#dom-pushsubscriptionjson-expirationtime",
+      "linkingText": [
+        "expirationTime"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PushSubscriptionJSON"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pushsubscription-interface",
+        "href": "https://w3c.github.io/push-api/#pushsubscription-interface",
+        "title": "PushSubscription interface",
+        "number": "8"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dfn-getting-the-endpoint-attribute",
+      "href": "https://w3c.github.io/push-api/#dfn-getting-the-endpoint-attribute",
+      "linkingText": [
+        "getting the endpoint attribute"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "pushsubscription-interface",
+        "href": "https://w3c.github.io/push-api/#pushsubscription-interface",
+        "title": "PushSubscription interface",
+        "number": "8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-getting-the-expirationtime-attribute",
+      "href": "https://w3c.github.io/push-api/#dfn-getting-the-expirationtime-attribute",
+      "linkingText": [
+        "getting the expirationTime attribute"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "pushsubscription-interface",
+        "href": "https://w3c.github.io/push-api/#pushsubscription-interface",
+        "title": "PushSubscription interface",
+        "number": "8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-pushsubscription-options",
+      "href": "https://w3c.github.io/push-api/#dom-pushsubscription-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [
+        "PushSubscription.options"
+      ],
+      "type": "attribute",
+      "for": [
+        "PushSubscription"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pushsubscription-interface",
+        "href": "https://w3c.github.io/push-api/#pushsubscription-interface",
+        "title": "PushSubscription interface",
+        "number": "8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-pushsubscription-getkey",
+      "href": "https://w3c.github.io/push-api/#dom-pushsubscription-getkey",
+      "linkingText": [
+        "getKey()",
+        "getKey(name)"
+      ],
+      "localLinkingText": [
+        "PushSubscription.getKey",
+        "PushSubscription.getKey()",
+        "getKey"
+      ],
+      "type": "method",
+      "for": [
+        "PushSubscription"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pushsubscription-interface",
+        "href": "https://w3c.github.io/push-api/#pushsubscription-interface",
+        "title": "PushSubscription interface",
+        "number": "8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-pushsubscription-unsubscribe",
+      "href": "https://w3c.github.io/push-api/#dom-pushsubscription-unsubscribe",
+      "linkingText": [
+        "unsubscribed",
+        "unsubscribe()"
+      ],
+      "localLinkingText": [
+        "PushSubscription.unsubscribe",
+        "PushSubscription.unsubscribe()",
+        "unsubscribe"
+      ],
+      "type": "method",
+      "for": [
+        "PushSubscription"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pushsubscription-interface",
+        "href": "https://w3c.github.io/push-api/#pushsubscription-interface",
+        "title": "PushSubscription interface",
+        "number": "8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-pushsubscription-tojson",
+      "href": "https://w3c.github.io/push-api/#dom-pushsubscription-tojson",
+      "linkingText": [
+        "toJSON()"
+      ],
+      "localLinkingText": [
+        "PushSubscription.toJSON",
+        "PushSubscription.toJSON()",
+        "toJSON"
+      ],
+      "type": "method",
+      "for": [
+        "PushSubscription"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pushsubscription-interface",
+        "href": "https://w3c.github.io/push-api/#pushsubscription-interface",
+        "title": "PushSubscription interface",
+        "number": "8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-pushsubscriptionjson",
+      "href": "https://w3c.github.io/push-api/#dom-pushsubscriptionjson",
+      "linkingText": [
+        "PushSubscriptionJSON"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pushsubscription-interface",
+        "href": "https://w3c.github.io/push-api/#pushsubscription-interface",
+        "title": "PushSubscription interface",
+        "number": "8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-pushsubscriptionjson-keys",
+      "href": "https://w3c.github.io/push-api/#dom-pushsubscriptionjson-keys",
+      "linkingText": [
+        "keys"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PushSubscriptionJSON"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pushsubscription-interface",
+        "href": "https://w3c.github.io/push-api/#pushsubscription-interface",
+        "title": "PushSubscription interface",
+        "number": "8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-pushencryptionkeyname",
+      "href": "https://w3c.github.io/push-api/#dom-pushencryptionkeyname",
+      "linkingText": [
+        "PushEncryptionKeyName"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pushencryptionkeyname-enumeration",
+        "href": "https://w3c.github.io/push-api/#pushencryptionkeyname-enumeration",
+        "title": "PushEncryptionKeyName enumeration",
+        "number": "8.1"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-pushencryptionkeyname-p256dh",
+      "href": "https://w3c.github.io/push-api/#dom-pushencryptionkeyname-p256dh",
+      "linkingText": [
+        "p256dh"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PushEncryptionKeyName"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pushencryptionkeyname-enumeration",
+        "href": "https://w3c.github.io/push-api/#pushencryptionkeyname-enumeration",
+        "title": "PushEncryptionKeyName enumeration",
+        "number": "8.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-pushencryptionkeyname-auth",
+      "href": "https://w3c.github.io/push-api/#dom-pushencryptionkeyname-auth",
+      "linkingText": [
+        "auth"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PushEncryptionKeyName"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pushencryptionkeyname-enumeration",
+        "href": "https://w3c.github.io/push-api/#pushencryptionkeyname-enumeration",
+        "title": "PushEncryptionKeyName enumeration",
+        "number": "8.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-pushmessagedata",
+      "href": "https://w3c.github.io/push-api/#dom-pushmessagedata",
+      "linkingText": [
+        "PushMessageData"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pushmessagedata-interface",
+        "href": "https://w3c.github.io/push-api/#pushmessagedata-interface",
+        "title": "PushMessageData interface",
+        "number": "9"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-bytes",
+      "href": "https://w3c.github.io/push-api/#dfn-bytes",
+      "linkingText": [
+        "bytes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "pushmessagedata-interface",
+        "href": "https://w3c.github.io/push-api/#pushmessagedata-interface",
+        "title": "PushMessageData interface",
+        "number": "9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-pushmessagedata-arraybuffer",
+      "href": "https://w3c.github.io/push-api/#dom-pushmessagedata-arraybuffer",
+      "linkingText": [
+        "arrayBuffer()"
+      ],
+      "localLinkingText": [
+        "PushMessageData.arrayBuffer",
+        "PushMessageData.arrayBuffer()",
+        "arrayBuffer"
+      ],
+      "type": "method",
+      "for": [
+        "PushMessageData"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pushmessagedata-interface",
+        "href": "https://w3c.github.io/push-api/#pushmessagedata-interface",
+        "title": "PushMessageData interface",
+        "number": "9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-pushmessagedata-blob",
+      "href": "https://w3c.github.io/push-api/#dom-pushmessagedata-blob",
+      "linkingText": [
+        "blob()"
+      ],
+      "localLinkingText": [
+        "PushMessageData.blob",
+        "PushMessageData.blob()",
+        "blob"
+      ],
+      "type": "method",
+      "for": [
+        "PushMessageData"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pushmessagedata-interface",
+        "href": "https://w3c.github.io/push-api/#pushmessagedata-interface",
+        "title": "PushMessageData interface",
+        "number": "9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-pushmessagedata-json",
+      "href": "https://w3c.github.io/push-api/#dom-pushmessagedata-json",
+      "linkingText": [
+        "json()"
+      ],
+      "localLinkingText": [
+        "PushMessageData.json",
+        "PushMessageData.json()",
+        "json"
+      ],
+      "type": "method",
+      "for": [
+        "PushMessageData"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pushmessagedata-interface",
+        "href": "https://w3c.github.io/push-api/#pushmessagedata-interface",
+        "title": "PushMessageData interface",
+        "number": "9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-pushmessagedata-text",
+      "href": "https://w3c.github.io/push-api/#dom-pushmessagedata-text",
+      "linkingText": [
+        "text()"
+      ],
+      "localLinkingText": [
+        "PushMessageData.text",
+        "PushMessageData.text()",
+        "text"
+      ],
+      "type": "method",
+      "for": [
+        "PushMessageData"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pushmessagedata-interface",
+        "href": "https://w3c.github.io/push-api/#pushmessagedata-interface",
+        "title": "PushMessageData interface",
+        "number": "9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-extract-a-byte-sequence",
+      "href": "https://w3c.github.io/push-api/#dfn-extract-a-byte-sequence",
+      "linkingText": [
+        "extract a byte sequence"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "pushmessagedata-interface",
+        "href": "https://w3c.github.io/push-api/#pushmessagedata-interface",
+        "title": "PushMessageData interface",
+        "number": "9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-serviceworkerglobalscope-onpush",
+      "href": "https://w3c.github.io/push-api/#dom-serviceworkerglobalscope-onpush",
+      "linkingText": [
+        "onpush"
+      ],
+      "localLinkingText": [
+        "ServiceWorkerGlobalScope.onpush"
+      ],
+      "type": "attribute",
+      "for": [
+        "ServiceWorkerGlobalScope"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "extensions-to-the-serviceworkerglobalscope-interface",
+        "href": "https://w3c.github.io/push-api/#extensions-to-the-serviceworkerglobalscope-interface",
+        "title": "Extensions to the ServiceWorkerGlobalScope interface",
+        "number": "10.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-serviceworkerglobalscope-onpushsubscriptionchange",
+      "href": "https://w3c.github.io/push-api/#dom-serviceworkerglobalscope-onpushsubscriptionchange",
+      "linkingText": [
+        "onpushsubscriptionchange"
+      ],
+      "localLinkingText": [
+        "ServiceWorkerGlobalScope.onpushsubscriptionchange"
+      ],
+      "type": "attribute",
+      "for": [
+        "ServiceWorkerGlobalScope"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "extensions-to-the-serviceworkerglobalscope-interface",
+        "href": "https://w3c.github.io/push-api/#extensions-to-the-serviceworkerglobalscope-interface",
+        "title": "Extensions to the ServiceWorkerGlobalScope interface",
+        "number": "10.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-pushevent",
+      "href": "https://w3c.github.io/push-api/#dom-pushevent",
+      "linkingText": [
+        "PushEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pushevent-interface",
+        "href": "https://w3c.github.io/push-api/#pushevent-interface",
+        "title": "PushEvent Interface",
+        "number": "10.2"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-pushevent-constructor",
+      "href": "https://w3c.github.io/push-api/#dom-pushevent-constructor",
+      "linkingText": [
+        "constructor()",
+        "constructor(type)",
+        "constructor(type, eventInitDict)"
+      ],
+      "localLinkingText": [
+        "PushEvent.constructor",
+        "PushEvent.constructor()",
+        "constructor"
+      ],
+      "type": "constructor",
+      "for": [
+        "PushEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pushevent-interface",
+        "href": "https://w3c.github.io/push-api/#pushevent-interface",
+        "title": "PushEvent Interface",
+        "number": "10.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-pushevent-data",
+      "href": "https://w3c.github.io/push-api/#dom-pushevent-data",
+      "linkingText": [
+        "data"
+      ],
+      "localLinkingText": [
+        "PushEvent.data"
+      ],
+      "type": "attribute",
+      "for": [
+        "PushEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pushevent-interface",
+        "href": "https://w3c.github.io/push-api/#pushevent-interface",
+        "title": "PushEvent Interface",
+        "number": "10.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-pusheventinit",
+      "href": "https://w3c.github.io/push-api/#dom-pusheventinit",
+      "linkingText": [
+        "PushEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pusheventinit-dictionary",
+        "href": "https://w3c.github.io/push-api/#pusheventinit-dictionary",
+        "title": "PushEventInit dictionary",
+        "number": "10.3"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-pushmessagedatainit",
+      "href": "https://w3c.github.io/push-api/#dom-pushmessagedatainit",
+      "linkingText": [
+        "PushMessageDataInit"
+      ],
+      "localLinkingText": [],
+      "type": "typedef",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pusheventinit-dictionary",
+        "href": "https://w3c.github.io/push-api/#pusheventinit-dictionary",
+        "title": "PushEventInit dictionary",
+        "number": "10.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-pusheventinit-data",
+      "href": "https://w3c.github.io/push-api/#dom-pusheventinit-data",
+      "linkingText": [
+        "data"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PushEventInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pusheventinit-dictionary",
+        "href": "https://w3c.github.io/push-api/#pusheventinit-dictionary",
+        "title": "PushEventInit dictionary",
+        "number": "10.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-pushsubscriptionchange",
+      "href": "https://w3c.github.io/push-api/#dfn-pushsubscriptionchange",
+      "linkingText": [
+        "pushsubscriptionchange"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-pushsubscriptionchange-event",
+        "href": "https://w3c.github.io/push-api/#the-pushsubscriptionchange-event",
+        "title": "The pushsubscriptionchange Event",
+        "number": "10.5"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-fire-the-pushsubscriptionchange-event",
+      "href": "https://w3c.github.io/push-api/#dfn-fire-the-pushsubscriptionchange-event",
+      "linkingText": [
+        "fire the \"pushsubscriptionchange\" event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-pushsubscriptionchange-event",
+        "href": "https://w3c.github.io/push-api/#the-pushsubscriptionchange-event",
+        "title": "The pushsubscriptionchange Event",
+        "number": "10.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-pushsubscriptionchangeevent",
+      "href": "https://w3c.github.io/push-api/#dom-pushsubscriptionchangeevent",
+      "linkingText": [
+        "PushSubscriptionChangeEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pushsubscriptionchangeevent-interface",
+        "href": "https://w3c.github.io/push-api/#pushsubscriptionchangeevent-interface",
+        "title": "PushSubscriptionChangeEvent Interface",
+        "number": "10.5.1"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-pushsubscriptionchangeevent-constructor",
+      "href": "https://w3c.github.io/push-api/#dom-pushsubscriptionchangeevent-constructor",
+      "linkingText": [
+        "constructor()",
+        "constructor(type)",
+        "constructor(type, eventInitDict)"
+      ],
+      "localLinkingText": [
+        "PushSubscriptionChangeEvent.constructor",
+        "PushSubscriptionChangeEvent.constructor()",
+        "constructor"
+      ],
+      "type": "constructor",
+      "for": [
+        "PushSubscriptionChangeEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pushsubscriptionchangeevent-interface",
+        "href": "https://w3c.github.io/push-api/#pushsubscriptionchangeevent-interface",
+        "title": "PushSubscriptionChangeEvent Interface",
+        "number": "10.5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-pushsubscriptionchangeevent-newsubscription",
+      "href": "https://w3c.github.io/push-api/#dom-pushsubscriptionchangeevent-newsubscription",
+      "linkingText": [
+        "newSubscription"
+      ],
+      "localLinkingText": [
+        "PushSubscriptionChangeEvent.newSubscription"
+      ],
+      "type": "attribute",
+      "for": [
+        "PushSubscriptionChangeEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pushsubscriptionchangeevent-interface",
+        "href": "https://w3c.github.io/push-api/#pushsubscriptionchangeevent-interface",
+        "title": "PushSubscriptionChangeEvent Interface",
+        "number": "10.5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-pushsubscriptionchangeevent-oldsubscription",
+      "href": "https://w3c.github.io/push-api/#dom-pushsubscriptionchangeevent-oldsubscription",
+      "linkingText": [
+        "oldSubscription"
+      ],
+      "localLinkingText": [
+        "PushSubscriptionChangeEvent.oldSubscription"
+      ],
+      "type": "attribute",
+      "for": [
+        "PushSubscriptionChangeEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pushsubscriptionchangeevent-interface",
+        "href": "https://w3c.github.io/push-api/#pushsubscriptionchangeevent-interface",
+        "title": "PushSubscriptionChangeEvent Interface",
+        "number": "10.5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-pushsubscriptionchangeeventinit",
+      "href": "https://w3c.github.io/push-api/#dom-pushsubscriptionchangeeventinit",
+      "linkingText": [
+        "PushSubscriptionChangeEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pushsubscriptionchangeeventinit-interface",
+        "href": "https://w3c.github.io/push-api/#pushsubscriptionchangeeventinit-interface",
+        "title": "PushSubscriptionChangeEventInit Interface",
+        "number": "10.5.2"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-pushsubscriptionchangeeventinit-newsubscription",
+      "href": "https://w3c.github.io/push-api/#dom-pushsubscriptionchangeeventinit-newsubscription",
+      "linkingText": [
+        "newSubscription"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PushSubscriptionChangeEventInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pushsubscriptionchangeeventinit-interface",
+        "href": "https://w3c.github.io/push-api/#pushsubscriptionchangeeventinit-interface",
+        "title": "PushSubscriptionChangeEventInit Interface",
+        "number": "10.5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-pushsubscriptionchangeeventinit-oldsubscription",
+      "href": "https://w3c.github.io/push-api/#dom-pushsubscriptionchangeeventinit-oldsubscription",
+      "linkingText": [
+        "oldSubscription"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PushSubscriptionChangeEventInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pushsubscriptionchangeeventinit-interface",
+        "href": "https://w3c.github.io/push-api/#pushsubscriptionchangeeventinit-interface",
+        "title": "PushSubscriptionChangeEventInit Interface",
+        "number": "10.5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-user-agent",
+      "href": "https://w3c.github.io/push-api/#dfn-user-agent",
+      "linkingText": [
+        "user agent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "conformance",
+        "href": "https://w3c.github.io/push-api/#conformance",
+        "title": "12. Conformance"
+      },
+      "definedIn": "prose"
+    }
+  ]
+}

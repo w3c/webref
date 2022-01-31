@@ -1,0 +1,177 @@
+{
+  "name": "CSSUnparsedValue",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "CSS Typed OM Level 1",
+      "url": "https://www.w3.org/TR/css-typed-om-1/"
+    },
+    "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]\ninterface CSSUnparsedValue : CSSStyleValue {\n    constructor(sequence<CSSUnparsedSegment> members);\n    iterable<CSSUnparsedSegment>;\n    readonly attribute unsigned long length;\n    getter CSSUnparsedSegment (unsigned long index);\n    setter CSSUnparsedSegment (unsigned long index, CSSUnparsedSegment val);\n};",
+    "href": "https://drafts.css-houdini.org/css-typed-om-1/#cssunparsedvalue"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "CSSStyleValue",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "CSS Typed OM Level 1",
+        "url": "https://www.w3.org/TR/css-typed-om-1/"
+      },
+      "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]\ninterface CSSStyleValue {\n    stringifier;\n    [Exposed=Window] static CSSStyleValue parse(USVString property, USVString cssText);\n    [Exposed=Window] static sequence<CSSStyleValue> parseAll(USVString property, USVString cssText);\n};",
+      "href": "https://drafts.css-houdini.org/css-typed-om-1/#cssstylevalue"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/css-typed-om-1/": [
+      {
+        "id": "cssunparsedvalue",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#cssunparsedvalue",
+        "linkingText": [
+          "CSSUnparsedValue"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "unparsedvalue-objects",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#unparsedvalue-objects",
+          "title": "CSSUnparsedValue objects",
+          "number": "4.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-cssunparsedvalue-cssunparsedvalue",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-cssunparsedvalue-cssunparsedvalue",
+        "linkingText": [
+          "CSSUnparsedValue(members)",
+          "constructor(members)"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "CSSUnparsedValue"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "unparsedvalue-objects",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#unparsedvalue-objects",
+          "title": "CSSUnparsedValue objects",
+          "number": "4.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-cssunparsedvalue-length",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-cssunparsedvalue-length",
+        "linkingText": [
+          "length"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "CSSUnparsedValue"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "unparsedvalue-objects",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#unparsedvalue-objects",
+          "title": "CSSUnparsedValue objects",
+          "number": "4.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "cssstylevalue",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#cssstylevalue",
+        "linkingText": [
+          "CSSStyleValue"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "stylevalue-objects",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#stylevalue-objects",
+          "title": "CSSStyleValue objects",
+          "number": "2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "CSSStyleValue-stringification-behavior",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#CSSStyleValue-stringification-behavior",
+        "linkingText": [
+          "stringification behavior"
+        ],
+        "localLinkingText": [],
+        "type": "dfn",
+        "for": [
+          "CSSStyleValue"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "stylevalue-objects",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#stylevalue-objects",
+          "title": "CSSStyleValue objects",
+          "number": "2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-cssstylevalue-parse",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-cssstylevalue-parse",
+        "linkingText": [
+          "parse(property, cssText)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSSStyleValue"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "stylevalue-objects",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#stylevalue-objects",
+          "title": "CSSStyleValue objects",
+          "number": "2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-cssstylevalue-parseall",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-cssstylevalue-parseall",
+        "linkingText": [
+          "parseAll(property, cssText)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSSStyleValue"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "stylevalue-objects",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#stylevalue-objects",
+          "title": "CSSStyleValue objects",
+          "number": "2"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

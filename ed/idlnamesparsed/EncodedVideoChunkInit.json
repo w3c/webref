@@ -1,0 +1,122 @@
+{
+  "name": "EncodedVideoChunkInit",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "WebCodecs",
+      "url": "https://www.w3.org/TR/webcodecs/"
+    },
+    "fragment": "dictionary EncodedVideoChunkInit {\n  required EncodedVideoChunkType type;\n  [EnforceRange] required long long timestamp;        // microseconds\n  [EnforceRange] unsigned long long duration;         // microseconds\n  required BufferSource data;\n};",
+    "href": "https://w3c.github.io/webcodecs/#dictdef-encodedvideochunkinit"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webcodecs/": [
+      {
+        "id": "dictdef-encodedvideochunkinit",
+        "href": "https://w3c.github.io/webcodecs/#dictdef-encodedvideochunkinit",
+        "linkingText": [
+          "EncodedVideoChunkInit"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "encodedvideochunk-interface",
+          "href": "https://w3c.github.io/webcodecs/#encodedvideochunk-interface",
+          "title": "EncodedVideoChunk Interface",
+          "number": "8.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-encodedvideochunkinit-type",
+        "href": "https://w3c.github.io/webcodecs/#dom-encodedvideochunkinit-type",
+        "linkingText": [
+          "type"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EncodedVideoChunkInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "encodedvideochunk-interface",
+          "href": "https://w3c.github.io/webcodecs/#encodedvideochunk-interface",
+          "title": "EncodedVideoChunk Interface",
+          "number": "8.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-encodedvideochunkinit-timestamp",
+        "href": "https://w3c.github.io/webcodecs/#dom-encodedvideochunkinit-timestamp",
+        "linkingText": [
+          "timestamp"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EncodedVideoChunkInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "encodedvideochunk-interface",
+          "href": "https://w3c.github.io/webcodecs/#encodedvideochunk-interface",
+          "title": "EncodedVideoChunk Interface",
+          "number": "8.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-encodedvideochunkinit-duration",
+        "href": "https://w3c.github.io/webcodecs/#dom-encodedvideochunkinit-duration",
+        "linkingText": [
+          "duration"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EncodedVideoChunkInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "encodedvideochunk-interface",
+          "href": "https://w3c.github.io/webcodecs/#encodedvideochunk-interface",
+          "title": "EncodedVideoChunk Interface",
+          "number": "8.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-encodedvideochunkinit-data",
+        "href": "https://w3c.github.io/webcodecs/#dom-encodedvideochunkinit-data",
+        "linkingText": [
+          "data"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EncodedVideoChunkInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "encodedvideochunk-interface",
+          "href": "https://w3c.github.io/webcodecs/#encodedvideochunk-interface",
+          "title": "EncodedVideoChunk Interface",
+          "number": "8.2"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

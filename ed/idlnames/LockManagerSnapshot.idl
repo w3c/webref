@@ -1,0 +1,5 @@
+// Source: Web Locks API (https://w3c.github.io/web-locks/)
+dictionary LockManagerSnapshot {
+  sequence<LockInfo> held;
+  sequence<LockInfo> pending;
+};

@@ -1,0 +1,104 @@
+{
+  "name": "CSSVariableReferenceValue",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "CSS Typed OM Level 1",
+      "url": "https://www.w3.org/TR/css-typed-om-1/"
+    },
+    "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]\ninterface CSSVariableReferenceValue {\n    constructor(USVString variable, optional CSSUnparsedValue? fallback = null);\n    attribute USVString variable;\n    readonly attribute CSSUnparsedValue? fallback;\n};",
+    "href": "https://drafts.css-houdini.org/css-typed-om-1/#cssvariablereferencevalue"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/css-typed-om-1/": [
+      {
+        "id": "cssvariablereferencevalue",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#cssvariablereferencevalue",
+        "linkingText": [
+          "CSSVariableReferenceValue"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "unparsedvalue-objects",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#unparsedvalue-objects",
+          "title": "CSSUnparsedValue objects",
+          "number": "4.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-cssvariablereferencevalue-cssvariablereferencevalue",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-cssvariablereferencevalue-cssvariablereferencevalue",
+        "linkingText": [
+          "CSSVariableReferenceValue(variable, fallback)",
+          "constructor(variable, fallback)",
+          "CSSVariableReferenceValue(variable)",
+          "constructor(variable)"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "CSSVariableReferenceValue"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "unparsedvalue-objects",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#unparsedvalue-objects",
+          "title": "CSSUnparsedValue objects",
+          "number": "4.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-cssvariablereferencevalue-variable",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-cssvariablereferencevalue-variable",
+        "linkingText": [
+          "variable"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "CSSVariableReferenceValue"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "unparsedvalue-objects",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#unparsedvalue-objects",
+          "title": "CSSUnparsedValue objects",
+          "number": "4.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-cssvariablereferencevalue-fallback",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-cssvariablereferencevalue-fallback",
+        "linkingText": [
+          "fallback"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "CSSVariableReferenceValue"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "unparsedvalue-objects",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#unparsedvalue-objects",
+          "title": "CSSUnparsedValue objects",
+          "number": "4.1"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

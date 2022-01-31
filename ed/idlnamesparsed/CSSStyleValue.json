@@ -1,0 +1,101 @@
+{
+  "name": "CSSStyleValue",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "CSS Typed OM Level 1",
+      "url": "https://www.w3.org/TR/css-typed-om-1/"
+    },
+    "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]\ninterface CSSStyleValue {\n    stringifier;\n    [Exposed=Window] static CSSStyleValue parse(USVString property, USVString cssText);\n    [Exposed=Window] static sequence<CSSStyleValue> parseAll(USVString property, USVString cssText);\n};",
+    "href": "https://drafts.css-houdini.org/css-typed-om-1/#cssstylevalue"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/css-typed-om-1/": [
+      {
+        "id": "cssstylevalue",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#cssstylevalue",
+        "linkingText": [
+          "CSSStyleValue"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "stylevalue-objects",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#stylevalue-objects",
+          "title": "CSSStyleValue objects",
+          "number": "2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "CSSStyleValue-stringification-behavior",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#CSSStyleValue-stringification-behavior",
+        "linkingText": [
+          "stringification behavior"
+        ],
+        "localLinkingText": [],
+        "type": "dfn",
+        "for": [
+          "CSSStyleValue"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "stylevalue-objects",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#stylevalue-objects",
+          "title": "CSSStyleValue objects",
+          "number": "2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-cssstylevalue-parse",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-cssstylevalue-parse",
+        "linkingText": [
+          "parse(property, cssText)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSSStyleValue"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "stylevalue-objects",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#stylevalue-objects",
+          "title": "CSSStyleValue objects",
+          "number": "2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-cssstylevalue-parseall",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-cssstylevalue-parseall",
+        "linkingText": [
+          "parseAll(property, cssText)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSSStyleValue"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "stylevalue-objects",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#stylevalue-objects",
+          "title": "CSSStyleValue objects",
+          "number": "2"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

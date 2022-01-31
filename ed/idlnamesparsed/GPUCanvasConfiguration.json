@@ -1,0 +1,185 @@
+{
+  "name": "GPUCanvasConfiguration",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "WebGPU",
+      "url": "https://www.w3.org/TR/webgpu/"
+    },
+    "fragment": "dictionary GPUCanvasConfiguration {\n    required GPUDevice device;\n    required GPUTextureFormat format;\n    GPUTextureUsageFlags usage = 0x10;  // GPUTextureUsage.RENDER_ATTACHMENT\n    sequence<GPUTextureFormat> viewFormats = [];\n    GPUPredefinedColorSpace colorSpace = \"srgb\";\n    GPUCanvasCompositingAlphaMode compositingAlphaMode = \"opaque\";\n    GPUExtent3D size;\n};",
+    "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpucanvasconfiguration"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webgpu/": [
+      {
+        "id": "dictdef-gpucanvasconfiguration",
+        "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpucanvasconfiguration",
+        "linkingText": [
+          "GPUCanvasConfiguration"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "canvas-configuration",
+          "href": "https://gpuweb.github.io/gpuweb/#canvas-configuration",
+          "title": "GPUCanvasConfiguration",
+          "number": "20.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gpucanvasconfiguration-device",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpucanvasconfiguration-device",
+        "linkingText": [
+          "device"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "GPUCanvasConfiguration"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "canvas-configuration",
+          "href": "https://gpuweb.github.io/gpuweb/#canvas-configuration",
+          "title": "GPUCanvasConfiguration",
+          "number": "20.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gpucanvasconfiguration-format",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpucanvasconfiguration-format",
+        "linkingText": [
+          "format"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "GPUCanvasConfiguration"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "canvas-configuration",
+          "href": "https://gpuweb.github.io/gpuweb/#canvas-configuration",
+          "title": "GPUCanvasConfiguration",
+          "number": "20.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gpucanvasconfiguration-usage",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpucanvasconfiguration-usage",
+        "linkingText": [
+          "usage"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "GPUCanvasConfiguration"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "canvas-configuration",
+          "href": "https://gpuweb.github.io/gpuweb/#canvas-configuration",
+          "title": "GPUCanvasConfiguration",
+          "number": "20.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gpucanvasconfiguration-viewformats",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpucanvasconfiguration-viewformats",
+        "linkingText": [
+          "viewFormats"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "GPUCanvasConfiguration"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "canvas-configuration",
+          "href": "https://gpuweb.github.io/gpuweb/#canvas-configuration",
+          "title": "GPUCanvasConfiguration",
+          "number": "20.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gpucanvasconfiguration-colorspace",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpucanvasconfiguration-colorspace",
+        "linkingText": [
+          "colorSpace"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "GPUCanvasConfiguration"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "canvas-configuration",
+          "href": "https://gpuweb.github.io/gpuweb/#canvas-configuration",
+          "title": "GPUCanvasConfiguration",
+          "number": "20.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gpucanvasconfiguration-compositingalphamode",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpucanvasconfiguration-compositingalphamode",
+        "linkingText": [
+          "compositingAlphaMode"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "GPUCanvasConfiguration"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "canvas-configuration",
+          "href": "https://gpuweb.github.io/gpuweb/#canvas-configuration",
+          "title": "GPUCanvasConfiguration",
+          "number": "20.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gpucanvasconfiguration-size",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpucanvasconfiguration-size",
+        "linkingText": [
+          "size"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "GPUCanvasConfiguration"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "canvas-configuration",
+          "href": "https://gpuweb.github.io/gpuweb/#canvas-configuration",
+          "title": "GPUCanvasConfiguration",
+          "number": "20.3"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "name": "GPUMultisampleState",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "WebGPU",
+      "url": "https://www.w3.org/TR/webgpu/"
+    },
+    "fragment": "dictionary GPUMultisampleState {\n    GPUSize32 count = 1;\n    GPUSampleMask mask = 0xFFFFFFFF;\n    boolean alphaToCoverageEnabled = false;\n};",
+    "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpumultisamplestate"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webgpu/": [
+      {
+        "id": "dictdef-gpumultisamplestate",
+        "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpumultisamplestate",
+        "linkingText": [
+          "GPUMultisampleState"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "multisample-state",
+          "href": "https://gpuweb.github.io/gpuweb/#multisample-state",
+          "title": "Multisample State",
+          "number": "10.3.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gpumultisamplestate-count",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpumultisamplestate-count",
+        "linkingText": [
+          "count"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "GPUMultisampleState"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "multisample-state",
+          "href": "https://gpuweb.github.io/gpuweb/#multisample-state",
+          "title": "Multisample State",
+          "number": "10.3.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gpumultisamplestate-mask",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpumultisamplestate-mask",
+        "linkingText": [
+          "mask"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "GPUMultisampleState"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "multisample-state",
+          "href": "https://gpuweb.github.io/gpuweb/#multisample-state",
+          "title": "Multisample State",
+          "number": "10.3.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gpumultisamplestate-alphatocoverageenabled",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpumultisamplestate-alphatocoverageenabled",
+        "linkingText": [
+          "alphaToCoverageEnabled"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "GPUMultisampleState"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "multisample-state",
+          "href": "https://gpuweb.github.io/gpuweb/#multisample-state",
+          "title": "Multisample State",
+          "number": "10.3.3"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

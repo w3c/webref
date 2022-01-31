@@ -1,0 +1,87 @@
+{
+  "name": "NDEFMessage",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Web NFC",
+      "url": "https://w3c.github.io/web-nfc/"
+    },
+    "fragment": "[SecureContext, Exposed=Window]\ninterface NDEFMessage {\n  constructor(NDEFMessageInit messageInit);\n  readonly attribute FrozenArray<NDEFRecord> records;\n};",
+    "href": "https://w3c.github.io/web-nfc/#dom-ndefmessage"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://w3c.github.io/web-nfc/": [
+      {
+        "id": "dom-ndefmessage",
+        "href": "https://w3c.github.io/web-nfc/#dom-ndefmessage",
+        "linkingText": [
+          "NDEFMessage"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-ndefmessage-interface",
+          "href": "https://w3c.github.io/web-nfc/#the-ndefmessage-interface",
+          "title": "The NDEFMessage interface",
+          "number": "8.1"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-ndefmessage-constructor",
+        "href": "https://w3c.github.io/web-nfc/#dom-ndefmessage-constructor",
+        "linkingText": [
+          "constructor()",
+          "constructor(messageInit)"
+        ],
+        "localLinkingText": [
+          "NDEFMessage.constructor",
+          "NDEFMessage.constructor()",
+          "constructor"
+        ],
+        "type": "constructor",
+        "for": [
+          "NDEFMessage"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-ndefmessage-interface",
+          "href": "https://w3c.github.io/web-nfc/#the-ndefmessage-interface",
+          "title": "The NDEFMessage interface",
+          "number": "8.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-ndefmessage-records",
+        "href": "https://w3c.github.io/web-nfc/#dom-ndefmessage-records",
+        "linkingText": [
+          "records"
+        ],
+        "localLinkingText": [
+          "NDEFMessage.records"
+        ],
+        "type": "attribute",
+        "for": [
+          "NDEFMessage"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-ndefmessage-interface",
+          "href": "https://w3c.github.io/web-nfc/#the-ndefmessage-interface",
+          "title": "The NDEFMessage interface",
+          "number": "8.1"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

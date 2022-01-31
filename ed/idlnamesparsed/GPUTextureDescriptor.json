@@ -1,0 +1,239 @@
+{
+  "name": "GPUTextureDescriptor",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "WebGPU",
+      "url": "https://www.w3.org/TR/webgpu/"
+    },
+    "fragment": "dictionary GPUTextureDescriptor : GPUObjectDescriptorBase {\n    required GPUExtent3D size;\n    GPUIntegerCoordinate mipLevelCount = 1;\n    GPUSize32 sampleCount = 1;\n    GPUTextureDimension dimension = \"2d\";\n    required GPUTextureFormat format;\n    required GPUTextureUsageFlags usage;\n    sequence<GPUTextureFormat> viewFormats = [];\n};",
+    "href": "https://gpuweb.github.io/gpuweb/#dictdef-gputexturedescriptor"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "GPUObjectDescriptorBase",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "WebGPU",
+        "url": "https://www.w3.org/TR/webgpu/"
+      },
+      "fragment": "dictionary GPUObjectDescriptorBase {\n    USVString label;\n};",
+      "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpuobjectdescriptorbase"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webgpu/": [
+      {
+        "id": "dictdef-gputexturedescriptor",
+        "href": "https://gpuweb.github.io/gpuweb/#dictdef-gputexturedescriptor",
+        "linkingText": [
+          "GPUTextureDescriptor"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-creation",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-creation",
+          "title": "Texture Creation",
+          "number": "6.1.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputexturedescriptor-size",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputexturedescriptor-size",
+        "linkingText": [
+          "size"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "GPUTextureDescriptor"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-creation",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-creation",
+          "title": "Texture Creation",
+          "number": "6.1.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputexturedescriptor-miplevelcount",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputexturedescriptor-miplevelcount",
+        "linkingText": [
+          "mipLevelCount"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "GPUTextureDescriptor"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-creation",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-creation",
+          "title": "Texture Creation",
+          "number": "6.1.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputexturedescriptor-samplecount",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputexturedescriptor-samplecount",
+        "linkingText": [
+          "sampleCount"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "GPUTextureDescriptor"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-creation",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-creation",
+          "title": "Texture Creation",
+          "number": "6.1.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputexturedescriptor-dimension",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputexturedescriptor-dimension",
+        "linkingText": [
+          "dimension"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "GPUTextureDescriptor"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-creation",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-creation",
+          "title": "Texture Creation",
+          "number": "6.1.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputexturedescriptor-format",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputexturedescriptor-format",
+        "linkingText": [
+          "format"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "GPUTextureDescriptor"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-creation",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-creation",
+          "title": "Texture Creation",
+          "number": "6.1.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputexturedescriptor-usage",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputexturedescriptor-usage",
+        "linkingText": [
+          "usage"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "GPUTextureDescriptor"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-creation",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-creation",
+          "title": "Texture Creation",
+          "number": "6.1.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputexturedescriptor-viewformats",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputexturedescriptor-viewformats",
+        "linkingText": [
+          "viewFormats"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "GPUTextureDescriptor"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-creation",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-creation",
+          "title": "Texture Creation",
+          "number": "6.1.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dictdef-gpuobjectdescriptorbase",
+        "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpuobjectdescriptorbase",
+        "linkingText": [
+          "GPUObjectDescriptorBase"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "object-descriptors",
+          "href": "https://gpuweb.github.io/gpuweb/#object-descriptors",
+          "title": "Object Descriptors",
+          "number": "3.1.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gpuobjectdescriptorbase-label",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpuobjectdescriptorbase-label",
+        "linkingText": [
+          "label"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "GPUObjectDescriptorBase"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "object-descriptors",
+          "href": "https://gpuweb.github.io/gpuweb/#object-descriptors",
+          "title": "Object Descriptors",
+          "number": "3.1.4"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

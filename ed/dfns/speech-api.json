@@ -1,0 +1,3398 @@
+{
+  "spec": {
+    "title": "Web Speech API",
+    "url": "https://wicg.github.io/speech-api/"
+  },
+  "dfns": [
+    {
+      "id": "speechrecognition",
+      "href": "https://wicg.github.io/speech-api/#speechrecognition",
+      "linkingText": [
+        "SpeechRecognition"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-section",
+        "href": "https://wicg.github.io/speech-api/#speechreco-section",
+        "title": "The SpeechRecognition Interface",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-speechrecognition-speechrecognition",
+      "href": "https://wicg.github.io/speech-api/#dom-speechrecognition-speechrecognition",
+      "linkingText": [
+        "SpeechRecognition()",
+        "constructor()"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "SpeechRecognition"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-section",
+        "href": "https://wicg.github.io/speech-api/#speechreco-section",
+        "title": "The SpeechRecognition Interface",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-speechrecognition-onaudiostart",
+      "href": "https://wicg.github.io/speech-api/#dom-speechrecognition-onaudiostart",
+      "linkingText": [
+        "onaudiostart"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SpeechRecognition"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-section",
+        "href": "https://wicg.github.io/speech-api/#speechreco-section",
+        "title": "The SpeechRecognition Interface",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-speechrecognition-onsoundstart",
+      "href": "https://wicg.github.io/speech-api/#dom-speechrecognition-onsoundstart",
+      "linkingText": [
+        "onsoundstart"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SpeechRecognition"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-section",
+        "href": "https://wicg.github.io/speech-api/#speechreco-section",
+        "title": "The SpeechRecognition Interface",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-speechrecognition-onspeechstart",
+      "href": "https://wicg.github.io/speech-api/#dom-speechrecognition-onspeechstart",
+      "linkingText": [
+        "onspeechstart"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SpeechRecognition"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-section",
+        "href": "https://wicg.github.io/speech-api/#speechreco-section",
+        "title": "The SpeechRecognition Interface",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-speechrecognition-onspeechend",
+      "href": "https://wicg.github.io/speech-api/#dom-speechrecognition-onspeechend",
+      "linkingText": [
+        "onspeechend"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SpeechRecognition"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-section",
+        "href": "https://wicg.github.io/speech-api/#speechreco-section",
+        "title": "The SpeechRecognition Interface",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-speechrecognition-onsoundend",
+      "href": "https://wicg.github.io/speech-api/#dom-speechrecognition-onsoundend",
+      "linkingText": [
+        "onsoundend"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SpeechRecognition"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-section",
+        "href": "https://wicg.github.io/speech-api/#speechreco-section",
+        "title": "The SpeechRecognition Interface",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-speechrecognition-onaudioend",
+      "href": "https://wicg.github.io/speech-api/#dom-speechrecognition-onaudioend",
+      "linkingText": [
+        "onaudioend"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SpeechRecognition"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-section",
+        "href": "https://wicg.github.io/speech-api/#speechreco-section",
+        "title": "The SpeechRecognition Interface",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-speechrecognition-onresult",
+      "href": "https://wicg.github.io/speech-api/#dom-speechrecognition-onresult",
+      "linkingText": [
+        "onresult"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SpeechRecognition"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-section",
+        "href": "https://wicg.github.io/speech-api/#speechreco-section",
+        "title": "The SpeechRecognition Interface",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-speechrecognition-onnomatch",
+      "href": "https://wicg.github.io/speech-api/#dom-speechrecognition-onnomatch",
+      "linkingText": [
+        "onnomatch"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SpeechRecognition"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-section",
+        "href": "https://wicg.github.io/speech-api/#speechreco-section",
+        "title": "The SpeechRecognition Interface",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-speechrecognition-onerror",
+      "href": "https://wicg.github.io/speech-api/#dom-speechrecognition-onerror",
+      "linkingText": [
+        "onerror"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SpeechRecognition"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-section",
+        "href": "https://wicg.github.io/speech-api/#speechreco-section",
+        "title": "The SpeechRecognition Interface",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-speechrecognition-onstart",
+      "href": "https://wicg.github.io/speech-api/#dom-speechrecognition-onstart",
+      "linkingText": [
+        "onstart"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SpeechRecognition"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-section",
+        "href": "https://wicg.github.io/speech-api/#speechreco-section",
+        "title": "The SpeechRecognition Interface",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-speechrecognition-onend",
+      "href": "https://wicg.github.io/speech-api/#dom-speechrecognition-onend",
+      "linkingText": [
+        "onend"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SpeechRecognition"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-section",
+        "href": "https://wicg.github.io/speech-api/#speechreco-section",
+        "title": "The SpeechRecognition Interface",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "enumdef-speechrecognitionerrorcode",
+      "href": "https://wicg.github.io/speech-api/#enumdef-speechrecognitionerrorcode",
+      "linkingText": [
+        "SpeechRecognitionErrorCode"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-section",
+        "href": "https://wicg.github.io/speech-api/#speechreco-section",
+        "title": "The SpeechRecognition Interface",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "speechrecognitionerrorevent",
+      "href": "https://wicg.github.io/speech-api/#speechrecognitionerrorevent",
+      "linkingText": [
+        "SpeechRecognitionErrorEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-section",
+        "href": "https://wicg.github.io/speech-api/#speechreco-section",
+        "title": "The SpeechRecognition Interface",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-speechrecognitionerrorevent-speechrecognitionerrorevent",
+      "href": "https://wicg.github.io/speech-api/#dom-speechrecognitionerrorevent-speechrecognitionerrorevent",
+      "linkingText": [
+        "SpeechRecognitionErrorEvent(type, eventInitDict)",
+        "constructor(type, eventInitDict)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "SpeechRecognitionErrorEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-section",
+        "href": "https://wicg.github.io/speech-api/#speechreco-section",
+        "title": "The SpeechRecognition Interface",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-speechrecognitionerrorevent-speechrecognitionerrorevent-type-eventinitdict-type",
+      "href": "https://wicg.github.io/speech-api/#dom-speechrecognitionerrorevent-speechrecognitionerrorevent-type-eventinitdict-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "SpeechRecognitionErrorEvent/SpeechRecognitionErrorEvent(type, eventInitDict)",
+        "SpeechRecognitionErrorEvent/constructor(type, eventInitDict)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-section",
+        "href": "https://wicg.github.io/speech-api/#speechreco-section",
+        "title": "The SpeechRecognition Interface",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-speechrecognitionerrorevent-speechrecognitionerrorevent-type-eventinitdict-eventinitdict",
+      "href": "https://wicg.github.io/speech-api/#dom-speechrecognitionerrorevent-speechrecognitionerrorevent-type-eventinitdict-eventinitdict",
+      "linkingText": [
+        "eventInitDict"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "SpeechRecognitionErrorEvent/SpeechRecognitionErrorEvent(type, eventInitDict)",
+        "SpeechRecognitionErrorEvent/constructor(type, eventInitDict)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-section",
+        "href": "https://wicg.github.io/speech-api/#speechreco-section",
+        "title": "The SpeechRecognition Interface",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-speechrecognitionerroreventinit",
+      "href": "https://wicg.github.io/speech-api/#dictdef-speechrecognitionerroreventinit",
+      "linkingText": [
+        "SpeechRecognitionErrorEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-section",
+        "href": "https://wicg.github.io/speech-api/#speechreco-section",
+        "title": "The SpeechRecognition Interface",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-speechrecognitionerroreventinit-error",
+      "href": "https://wicg.github.io/speech-api/#dom-speechrecognitionerroreventinit-error",
+      "linkingText": [
+        "error"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SpeechRecognitionErrorEventInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-section",
+        "href": "https://wicg.github.io/speech-api/#speechreco-section",
+        "title": "The SpeechRecognition Interface",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-speechrecognitionerroreventinit-message",
+      "href": "https://wicg.github.io/speech-api/#dom-speechrecognitionerroreventinit-message",
+      "linkingText": [
+        "message"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SpeechRecognitionErrorEventInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-section",
+        "href": "https://wicg.github.io/speech-api/#speechreco-section",
+        "title": "The SpeechRecognition Interface",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "speechrecognitionalternative",
+      "href": "https://wicg.github.io/speech-api/#speechrecognitionalternative",
+      "linkingText": [
+        "SpeechRecognitionAlternative"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-section",
+        "href": "https://wicg.github.io/speech-api/#speechreco-section",
+        "title": "The SpeechRecognition Interface",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "speechrecognitionresult",
+      "href": "https://wicg.github.io/speech-api/#speechrecognitionresult",
+      "linkingText": [
+        "SpeechRecognitionResult"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-section",
+        "href": "https://wicg.github.io/speech-api/#speechreco-section",
+        "title": "The SpeechRecognition Interface",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-speechrecognitionresult-item-index-index",
+      "href": "https://wicg.github.io/speech-api/#dom-speechrecognitionresult-item-index-index",
+      "linkingText": [
+        "index"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "SpeechRecognitionResult/item(index)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-section",
+        "href": "https://wicg.github.io/speech-api/#speechreco-section",
+        "title": "The SpeechRecognition Interface",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "speechrecognitionresultlist",
+      "href": "https://wicg.github.io/speech-api/#speechrecognitionresultlist",
+      "linkingText": [
+        "SpeechRecognitionResultList"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-section",
+        "href": "https://wicg.github.io/speech-api/#speechreco-section",
+        "title": "The SpeechRecognition Interface",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-speechrecognitionresultlist-item-index-index",
+      "href": "https://wicg.github.io/speech-api/#dom-speechrecognitionresultlist-item-index-index",
+      "linkingText": [
+        "index"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "SpeechRecognitionResultList/item(index)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-section",
+        "href": "https://wicg.github.io/speech-api/#speechreco-section",
+        "title": "The SpeechRecognition Interface",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "speechrecognitionevent",
+      "href": "https://wicg.github.io/speech-api/#speechrecognitionevent",
+      "linkingText": [
+        "SpeechRecognitionEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-section",
+        "href": "https://wicg.github.io/speech-api/#speechreco-section",
+        "title": "The SpeechRecognition Interface",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-speechrecognitionevent-speechrecognitionevent",
+      "href": "https://wicg.github.io/speech-api/#dom-speechrecognitionevent-speechrecognitionevent",
+      "linkingText": [
+        "SpeechRecognitionEvent(type, eventInitDict)",
+        "constructor(type, eventInitDict)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "SpeechRecognitionEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-section",
+        "href": "https://wicg.github.io/speech-api/#speechreco-section",
+        "title": "The SpeechRecognition Interface",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-speechrecognitionevent-speechrecognitionevent-type-eventinitdict-type",
+      "href": "https://wicg.github.io/speech-api/#dom-speechrecognitionevent-speechrecognitionevent-type-eventinitdict-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "SpeechRecognitionEvent/SpeechRecognitionEvent(type, eventInitDict)",
+        "SpeechRecognitionEvent/constructor(type, eventInitDict)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-section",
+        "href": "https://wicg.github.io/speech-api/#speechreco-section",
+        "title": "The SpeechRecognition Interface",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-speechrecognitionevent-speechrecognitionevent-type-eventinitdict-eventinitdict",
+      "href": "https://wicg.github.io/speech-api/#dom-speechrecognitionevent-speechrecognitionevent-type-eventinitdict-eventinitdict",
+      "linkingText": [
+        "eventInitDict"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "SpeechRecognitionEvent/SpeechRecognitionEvent(type, eventInitDict)",
+        "SpeechRecognitionEvent/constructor(type, eventInitDict)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-section",
+        "href": "https://wicg.github.io/speech-api/#speechreco-section",
+        "title": "The SpeechRecognition Interface",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-speechrecognitioneventinit",
+      "href": "https://wicg.github.io/speech-api/#dictdef-speechrecognitioneventinit",
+      "linkingText": [
+        "SpeechRecognitionEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-section",
+        "href": "https://wicg.github.io/speech-api/#speechreco-section",
+        "title": "The SpeechRecognition Interface",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-speechrecognitioneventinit-resultindex",
+      "href": "https://wicg.github.io/speech-api/#dom-speechrecognitioneventinit-resultindex",
+      "linkingText": [
+        "resultIndex"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SpeechRecognitionEventInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-section",
+        "href": "https://wicg.github.io/speech-api/#speechreco-section",
+        "title": "The SpeechRecognition Interface",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-speechrecognitioneventinit-results",
+      "href": "https://wicg.github.io/speech-api/#dom-speechrecognitioneventinit-results",
+      "linkingText": [
+        "results"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SpeechRecognitionEventInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-section",
+        "href": "https://wicg.github.io/speech-api/#speechreco-section",
+        "title": "The SpeechRecognition Interface",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "speechgrammar",
+      "href": "https://wicg.github.io/speech-api/#speechgrammar",
+      "linkingText": [
+        "SpeechGrammar"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-section",
+        "href": "https://wicg.github.io/speech-api/#speechreco-section",
+        "title": "The SpeechRecognition Interface",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "speechgrammarlist",
+      "href": "https://wicg.github.io/speech-api/#speechgrammarlist",
+      "linkingText": [
+        "SpeechGrammarList"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-section",
+        "href": "https://wicg.github.io/speech-api/#speechreco-section",
+        "title": "The SpeechRecognition Interface",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-speechgrammarlist-speechgrammarlist",
+      "href": "https://wicg.github.io/speech-api/#dom-speechgrammarlist-speechgrammarlist",
+      "linkingText": [
+        "SpeechGrammarList()",
+        "constructor()"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "SpeechGrammarList"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-section",
+        "href": "https://wicg.github.io/speech-api/#speechreco-section",
+        "title": "The SpeechRecognition Interface",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-speechgrammarlist-item-index-index",
+      "href": "https://wicg.github.io/speech-api/#dom-speechgrammarlist-item-index-index",
+      "linkingText": [
+        "index"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "SpeechGrammarList/item(index)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-section",
+        "href": "https://wicg.github.io/speech-api/#speechreco-section",
+        "title": "The SpeechRecognition Interface",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-speechgrammarlist-addfromuri-src-weight-src",
+      "href": "https://wicg.github.io/speech-api/#dom-speechgrammarlist-addfromuri-src-weight-src",
+      "linkingText": [
+        "src"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "SpeechGrammarList/addFromURI(src, weight)",
+        "SpeechGrammarList/addFromURI(src)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-section",
+        "href": "https://wicg.github.io/speech-api/#speechreco-section",
+        "title": "The SpeechRecognition Interface",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-speechgrammarlist-addfromuri-src-weight-weight",
+      "href": "https://wicg.github.io/speech-api/#dom-speechgrammarlist-addfromuri-src-weight-weight",
+      "linkingText": [
+        "weight"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "SpeechGrammarList/addFromURI(src, weight)",
+        "SpeechGrammarList/addFromURI(src)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-section",
+        "href": "https://wicg.github.io/speech-api/#speechreco-section",
+        "title": "The SpeechRecognition Interface",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-speechgrammarlist-addfromstring-string-weight-string",
+      "href": "https://wicg.github.io/speech-api/#dom-speechgrammarlist-addfromstring-string-weight-string",
+      "linkingText": [
+        "string"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "SpeechGrammarList/addFromString(string, weight)",
+        "SpeechGrammarList/addFromString(string)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-section",
+        "href": "https://wicg.github.io/speech-api/#speechreco-section",
+        "title": "The SpeechRecognition Interface",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-speechgrammarlist-addfromstring-string-weight-weight",
+      "href": "https://wicg.github.io/speech-api/#dom-speechgrammarlist-addfromstring-string-weight-weight",
+      "linkingText": [
+        "weight"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "SpeechGrammarList/addFromString(string, weight)",
+        "SpeechGrammarList/addFromString(string)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-section",
+        "href": "https://wicg.github.io/speech-api/#speechreco-section",
+        "title": "The SpeechRecognition Interface",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-speechrecognition-grammars",
+      "href": "https://wicg.github.io/speech-api/#dom-speechrecognition-grammars",
+      "linkingText": [
+        "grammars"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SpeechRecognition"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-attributes",
+        "href": "https://wicg.github.io/speech-api/#speechreco-attributes",
+        "title": "SpeechRecognition Attributes",
+        "number": "4.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-speechrecognition-lang",
+      "href": "https://wicg.github.io/speech-api/#dom-speechrecognition-lang",
+      "linkingText": [
+        "lang"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SpeechRecognition"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-attributes",
+        "href": "https://wicg.github.io/speech-api/#speechreco-attributes",
+        "title": "SpeechRecognition Attributes",
+        "number": "4.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-speechrecognition-continuous",
+      "href": "https://wicg.github.io/speech-api/#dom-speechrecognition-continuous",
+      "linkingText": [
+        "continuous"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SpeechRecognition"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-attributes",
+        "href": "https://wicg.github.io/speech-api/#speechreco-attributes",
+        "title": "SpeechRecognition Attributes",
+        "number": "4.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-speechrecognition-interimresults",
+      "href": "https://wicg.github.io/speech-api/#dom-speechrecognition-interimresults",
+      "linkingText": [
+        "interimResults"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SpeechRecognition"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-attributes",
+        "href": "https://wicg.github.io/speech-api/#speechreco-attributes",
+        "title": "SpeechRecognition Attributes",
+        "number": "4.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-speechrecognition-maxalternatives",
+      "href": "https://wicg.github.io/speech-api/#dom-speechrecognition-maxalternatives",
+      "linkingText": [
+        "maxAlternatives"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SpeechRecognition"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-attributes",
+        "href": "https://wicg.github.io/speech-api/#speechreco-attributes",
+        "title": "SpeechRecognition Attributes",
+        "number": "4.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-speechrecognition-start",
+      "href": "https://wicg.github.io/speech-api/#dom-speechrecognition-start",
+      "linkingText": [
+        "start()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "SpeechRecognition"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-methods",
+        "href": "https://wicg.github.io/speech-api/#speechreco-methods",
+        "title": "SpeechRecognition Methods",
+        "number": "4.1.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-speechrecognition-stop",
+      "href": "https://wicg.github.io/speech-api/#dom-speechrecognition-stop",
+      "linkingText": [
+        "stop()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "SpeechRecognition"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-methods",
+        "href": "https://wicg.github.io/speech-api/#speechreco-methods",
+        "title": "SpeechRecognition Methods",
+        "number": "4.1.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-speechrecognition-abort",
+      "href": "https://wicg.github.io/speech-api/#dom-speechrecognition-abort",
+      "linkingText": [
+        "abort()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "SpeechRecognition"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-methods",
+        "href": "https://wicg.github.io/speech-api/#speechreco-methods",
+        "title": "SpeechRecognition Methods",
+        "number": "4.1.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "eventdef-speechrecognition-audiostart",
+      "href": "https://wicg.github.io/speech-api/#eventdef-speechrecognition-audiostart",
+      "linkingText": [
+        "audiostart"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "SpeechRecognition"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-events",
+        "href": "https://wicg.github.io/speech-api/#speechreco-events",
+        "title": "SpeechRecognition Events",
+        "number": "4.1.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "eventdef-speechrecognition-soundstart",
+      "href": "https://wicg.github.io/speech-api/#eventdef-speechrecognition-soundstart",
+      "linkingText": [
+        "soundstart"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "SpeechRecognition"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-events",
+        "href": "https://wicg.github.io/speech-api/#speechreco-events",
+        "title": "SpeechRecognition Events",
+        "number": "4.1.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "eventdef-speechrecognition-speechstart",
+      "href": "https://wicg.github.io/speech-api/#eventdef-speechrecognition-speechstart",
+      "linkingText": [
+        "speechstart"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "SpeechRecognition"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-events",
+        "href": "https://wicg.github.io/speech-api/#speechreco-events",
+        "title": "SpeechRecognition Events",
+        "number": "4.1.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "eventdef-speechrecognition-speechend",
+      "href": "https://wicg.github.io/speech-api/#eventdef-speechrecognition-speechend",
+      "linkingText": [
+        "speechend"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "SpeechRecognition"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-events",
+        "href": "https://wicg.github.io/speech-api/#speechreco-events",
+        "title": "SpeechRecognition Events",
+        "number": "4.1.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "eventdef-speechrecognition-soundend",
+      "href": "https://wicg.github.io/speech-api/#eventdef-speechrecognition-soundend",
+      "linkingText": [
+        "soundend"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "SpeechRecognition"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-events",
+        "href": "https://wicg.github.io/speech-api/#speechreco-events",
+        "title": "SpeechRecognition Events",
+        "number": "4.1.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "eventdef-speechrecognition-audioend",
+      "href": "https://wicg.github.io/speech-api/#eventdef-speechrecognition-audioend",
+      "linkingText": [
+        "audioend"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "SpeechRecognition"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-events",
+        "href": "https://wicg.github.io/speech-api/#speechreco-events",
+        "title": "SpeechRecognition Events",
+        "number": "4.1.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "eventdef-speechrecognition-result",
+      "href": "https://wicg.github.io/speech-api/#eventdef-speechrecognition-result",
+      "linkingText": [
+        "result"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "SpeechRecognition"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-events",
+        "href": "https://wicg.github.io/speech-api/#speechreco-events",
+        "title": "SpeechRecognition Events",
+        "number": "4.1.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "eventdef-speechrecognition-nomatch",
+      "href": "https://wicg.github.io/speech-api/#eventdef-speechrecognition-nomatch",
+      "linkingText": [
+        "nomatch"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "SpeechRecognition"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-events",
+        "href": "https://wicg.github.io/speech-api/#speechreco-events",
+        "title": "SpeechRecognition Events",
+        "number": "4.1.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "eventdef-speechrecognition-error",
+      "href": "https://wicg.github.io/speech-api/#eventdef-speechrecognition-error",
+      "linkingText": [
+        "error"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "SpeechRecognition"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-events",
+        "href": "https://wicg.github.io/speech-api/#speechreco-events",
+        "title": "SpeechRecognition Events",
+        "number": "4.1.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "eventdef-speechrecognition-start",
+      "href": "https://wicg.github.io/speech-api/#eventdef-speechrecognition-start",
+      "linkingText": [
+        "start"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "SpeechRecognition"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-events",
+        "href": "https://wicg.github.io/speech-api/#speechreco-events",
+        "title": "SpeechRecognition Events",
+        "number": "4.1.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "eventdef-speechrecognition-end",
+      "href": "https://wicg.github.io/speech-api/#eventdef-speechrecognition-end",
+      "linkingText": [
+        "end"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "SpeechRecognition"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-events",
+        "href": "https://wicg.github.io/speech-api/#speechreco-events",
+        "title": "SpeechRecognition Events",
+        "number": "4.1.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-speechrecognitionerrorevent-error",
+      "href": "https://wicg.github.io/speech-api/#dom-speechrecognitionerrorevent-error",
+      "linkingText": [
+        "error"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SpeechRecognitionErrorEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-error",
+        "href": "https://wicg.github.io/speech-api/#speechreco-error",
+        "title": "SpeechRecognitionErrorEvent",
+        "number": "4.1.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-speechrecognitionerrorcode-no-speech",
+      "href": "https://wicg.github.io/speech-api/#dom-speechrecognitionerrorcode-no-speech",
+      "linkingText": [
+        "\"no-speech\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "SpeechRecognitionErrorCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-error",
+        "href": "https://wicg.github.io/speech-api/#speechreco-error",
+        "title": "SpeechRecognitionErrorEvent",
+        "number": "4.1.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-speechrecognitionerrorcode-aborted",
+      "href": "https://wicg.github.io/speech-api/#dom-speechrecognitionerrorcode-aborted",
+      "linkingText": [
+        "\"aborted\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "SpeechRecognitionErrorCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-error",
+        "href": "https://wicg.github.io/speech-api/#speechreco-error",
+        "title": "SpeechRecognitionErrorEvent",
+        "number": "4.1.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-speechrecognitionerrorcode-audio-capture",
+      "href": "https://wicg.github.io/speech-api/#dom-speechrecognitionerrorcode-audio-capture",
+      "linkingText": [
+        "\"audio-capture\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "SpeechRecognitionErrorCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-error",
+        "href": "https://wicg.github.io/speech-api/#speechreco-error",
+        "title": "SpeechRecognitionErrorEvent",
+        "number": "4.1.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-speechrecognitionerrorcode-network",
+      "href": "https://wicg.github.io/speech-api/#dom-speechrecognitionerrorcode-network",
+      "linkingText": [
+        "\"network\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "SpeechRecognitionErrorCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-error",
+        "href": "https://wicg.github.io/speech-api/#speechreco-error",
+        "title": "SpeechRecognitionErrorEvent",
+        "number": "4.1.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-speechrecognitionerrorcode-not-allowed",
+      "href": "https://wicg.github.io/speech-api/#dom-speechrecognitionerrorcode-not-allowed",
+      "linkingText": [
+        "\"not-allowed\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "SpeechRecognitionErrorCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-error",
+        "href": "https://wicg.github.io/speech-api/#speechreco-error",
+        "title": "SpeechRecognitionErrorEvent",
+        "number": "4.1.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-speechrecognitionerrorcode-service-not-allowed",
+      "href": "https://wicg.github.io/speech-api/#dom-speechrecognitionerrorcode-service-not-allowed",
+      "linkingText": [
+        "\"service-not-allowed\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "SpeechRecognitionErrorCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-error",
+        "href": "https://wicg.github.io/speech-api/#speechreco-error",
+        "title": "SpeechRecognitionErrorEvent",
+        "number": "4.1.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-speechrecognitionerrorcode-bad-grammar",
+      "href": "https://wicg.github.io/speech-api/#dom-speechrecognitionerrorcode-bad-grammar",
+      "linkingText": [
+        "\"bad-grammar\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "SpeechRecognitionErrorCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-error",
+        "href": "https://wicg.github.io/speech-api/#speechreco-error",
+        "title": "SpeechRecognitionErrorEvent",
+        "number": "4.1.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-speechrecognitionerrorcode-language-not-supported",
+      "href": "https://wicg.github.io/speech-api/#dom-speechrecognitionerrorcode-language-not-supported",
+      "linkingText": [
+        "\"language-not-supported\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "SpeechRecognitionErrorCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-error",
+        "href": "https://wicg.github.io/speech-api/#speechreco-error",
+        "title": "SpeechRecognitionErrorEvent",
+        "number": "4.1.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-speechrecognitionerrorevent-message",
+      "href": "https://wicg.github.io/speech-api/#dom-speechrecognitionerrorevent-message",
+      "linkingText": [
+        "message"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SpeechRecognitionErrorEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-error",
+        "href": "https://wicg.github.io/speech-api/#speechreco-error",
+        "title": "SpeechRecognitionErrorEvent",
+        "number": "4.1.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-speechrecognitionalternative-transcript",
+      "href": "https://wicg.github.io/speech-api/#dom-speechrecognitionalternative-transcript",
+      "linkingText": [
+        "transcript"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SpeechRecognitionAlternative"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-alternative",
+        "href": "https://wicg.github.io/speech-api/#speechreco-alternative",
+        "title": "SpeechRecognitionAlternative",
+        "number": "4.1.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-speechrecognitionalternative-confidence",
+      "href": "https://wicg.github.io/speech-api/#dom-speechrecognitionalternative-confidence",
+      "linkingText": [
+        "confidence"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SpeechRecognitionAlternative"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-alternative",
+        "href": "https://wicg.github.io/speech-api/#speechreco-alternative",
+        "title": "SpeechRecognitionAlternative",
+        "number": "4.1.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-speechrecognitionresult-length",
+      "href": "https://wicg.github.io/speech-api/#dom-speechrecognitionresult-length",
+      "linkingText": [
+        "length"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SpeechRecognitionResult"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-result",
+        "href": "https://wicg.github.io/speech-api/#speechreco-result",
+        "title": "SpeechRecognitionResult",
+        "number": "4.1.6"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-speechrecognitionresult-item",
+      "href": "https://wicg.github.io/speech-api/#dom-speechrecognitionresult-item",
+      "linkingText": [
+        "item(index)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "SpeechRecognitionResult"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-result",
+        "href": "https://wicg.github.io/speech-api/#speechreco-result",
+        "title": "SpeechRecognitionResult",
+        "number": "4.1.6"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-speechrecognitionresult-isfinal",
+      "href": "https://wicg.github.io/speech-api/#dom-speechrecognitionresult-isfinal",
+      "linkingText": [
+        "isFinal"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SpeechRecognitionResult"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-result",
+        "href": "https://wicg.github.io/speech-api/#speechreco-result",
+        "title": "SpeechRecognitionResult",
+        "number": "4.1.6"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-speechrecognitionresultlist-length",
+      "href": "https://wicg.github.io/speech-api/#dom-speechrecognitionresultlist-length",
+      "linkingText": [
+        "length"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SpeechRecognitionResultList"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-resultlist",
+        "href": "https://wicg.github.io/speech-api/#speechreco-resultlist",
+        "title": "SpeechRecognitionResultList",
+        "number": "4.1.7"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-speechrecognitionresultlist-item",
+      "href": "https://wicg.github.io/speech-api/#dom-speechrecognitionresultlist-item",
+      "linkingText": [
+        "item(index)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "SpeechRecognitionResultList"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-resultlist",
+        "href": "https://wicg.github.io/speech-api/#speechreco-resultlist",
+        "title": "SpeechRecognitionResultList",
+        "number": "4.1.7"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-speechrecognitionevent-resultindex",
+      "href": "https://wicg.github.io/speech-api/#dom-speechrecognitionevent-resultindex",
+      "linkingText": [
+        "resultIndex"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SpeechRecognitionEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-event",
+        "href": "https://wicg.github.io/speech-api/#speechreco-event",
+        "title": "SpeechRecognitionEvent",
+        "number": "4.1.8"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-speechrecognitionevent-results",
+      "href": "https://wicg.github.io/speech-api/#dom-speechrecognitionevent-results",
+      "linkingText": [
+        "results"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SpeechRecognitionEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-event",
+        "href": "https://wicg.github.io/speech-api/#speechreco-event",
+        "title": "SpeechRecognitionEvent",
+        "number": "4.1.8"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-speechgrammar-src",
+      "href": "https://wicg.github.io/speech-api/#dom-speechgrammar-src",
+      "linkingText": [
+        "src"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SpeechGrammar"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-speechgrammar",
+        "href": "https://wicg.github.io/speech-api/#speechreco-speechgrammar",
+        "title": "SpeechGrammar",
+        "number": "4.1.9"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-speechgrammar-weight",
+      "href": "https://wicg.github.io/speech-api/#dom-speechgrammar-weight",
+      "linkingText": [
+        "weight"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SpeechGrammar"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-speechgrammar",
+        "href": "https://wicg.github.io/speech-api/#speechreco-speechgrammar",
+        "title": "SpeechGrammar",
+        "number": "4.1.9"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-speechgrammarlist-length",
+      "href": "https://wicg.github.io/speech-api/#dom-speechgrammarlist-length",
+      "linkingText": [
+        "length"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SpeechGrammarList"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-speechgrammarlist",
+        "href": "https://wicg.github.io/speech-api/#speechreco-speechgrammarlist",
+        "title": "SpeechGrammarList",
+        "number": "4.1.10"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-speechgrammarlist-item",
+      "href": "https://wicg.github.io/speech-api/#dom-speechgrammarlist-item",
+      "linkingText": [
+        "item(index)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "SpeechGrammarList"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-speechgrammarlist",
+        "href": "https://wicg.github.io/speech-api/#speechreco-speechgrammarlist",
+        "title": "SpeechGrammarList",
+        "number": "4.1.10"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-speechgrammarlist-addfromuri",
+      "href": "https://wicg.github.io/speech-api/#dom-speechgrammarlist-addfromuri",
+      "linkingText": [
+        "addFromURI(src, weight)",
+        "addFromURI(src)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "SpeechGrammarList"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-speechgrammarlist",
+        "href": "https://wicg.github.io/speech-api/#speechreco-speechgrammarlist",
+        "title": "SpeechGrammarList",
+        "number": "4.1.10"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-speechgrammarlist-addfromstring",
+      "href": "https://wicg.github.io/speech-api/#dom-speechgrammarlist-addfromstring",
+      "linkingText": [
+        "addFromString(string, weight)",
+        "addFromString(string)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "SpeechGrammarList"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechreco-speechgrammarlist",
+        "href": "https://wicg.github.io/speech-api/#speechreco-speechgrammarlist",
+        "title": "SpeechGrammarList",
+        "number": "4.1.10"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "speechsynthesis",
+      "href": "https://wicg.github.io/speech-api/#speechsynthesis",
+      "linkingText": [
+        "SpeechSynthesis"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "tts-section",
+        "href": "https://wicg.github.io/speech-api/#tts-section",
+        "title": "The SpeechSynthesis Interface",
+        "number": "4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-speechsynthesis-onvoiceschanged",
+      "href": "https://wicg.github.io/speech-api/#dom-speechsynthesis-onvoiceschanged",
+      "linkingText": [
+        "onvoiceschanged"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SpeechSynthesis"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "tts-section",
+        "href": "https://wicg.github.io/speech-api/#tts-section",
+        "title": "The SpeechSynthesis Interface",
+        "number": "4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-speechsynthesis-speak-utterance-utterance",
+      "href": "https://wicg.github.io/speech-api/#dom-speechsynthesis-speak-utterance-utterance",
+      "linkingText": [
+        "utterance"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "SpeechSynthesis/speak(utterance)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "tts-section",
+        "href": "https://wicg.github.io/speech-api/#tts-section",
+        "title": "The SpeechSynthesis Interface",
+        "number": "4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-window-speechsynthesis",
+      "href": "https://wicg.github.io/speech-api/#dom-window-speechsynthesis",
+      "linkingText": [
+        "speechSynthesis"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Window"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "tts-section",
+        "href": "https://wicg.github.io/speech-api/#tts-section",
+        "title": "The SpeechSynthesis Interface",
+        "number": "4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "speechsynthesisutterance",
+      "href": "https://wicg.github.io/speech-api/#speechsynthesisutterance",
+      "linkingText": [
+        "SpeechSynthesisUtterance"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "tts-section",
+        "href": "https://wicg.github.io/speech-api/#tts-section",
+        "title": "The SpeechSynthesis Interface",
+        "number": "4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-speechsynthesisutterance-speechsynthesisutterance",
+      "href": "https://wicg.github.io/speech-api/#dom-speechsynthesisutterance-speechsynthesisutterance",
+      "linkingText": [
+        "SpeechSynthesisUtterance(text)",
+        "constructor(text)",
+        "SpeechSynthesisUtterance()",
+        "constructor()"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "SpeechSynthesisUtterance"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "tts-section",
+        "href": "https://wicg.github.io/speech-api/#tts-section",
+        "title": "The SpeechSynthesis Interface",
+        "number": "4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-speechsynthesisutterance-speechsynthesisutterance-text-text",
+      "href": "https://wicg.github.io/speech-api/#dom-speechsynthesisutterance-speechsynthesisutterance-text-text",
+      "linkingText": [
+        "text"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "SpeechSynthesisUtterance/SpeechSynthesisUtterance(text)",
+        "SpeechSynthesisUtterance/constructor(text)",
+        "SpeechSynthesisUtterance/SpeechSynthesisUtterance()",
+        "SpeechSynthesisUtterance/constructor()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "tts-section",
+        "href": "https://wicg.github.io/speech-api/#tts-section",
+        "title": "The SpeechSynthesis Interface",
+        "number": "4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-speechsynthesisutterance-onstart",
+      "href": "https://wicg.github.io/speech-api/#dom-speechsynthesisutterance-onstart",
+      "linkingText": [
+        "onstart"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SpeechSynthesisUtterance"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "tts-section",
+        "href": "https://wicg.github.io/speech-api/#tts-section",
+        "title": "The SpeechSynthesis Interface",
+        "number": "4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-speechsynthesisutterance-onend",
+      "href": "https://wicg.github.io/speech-api/#dom-speechsynthesisutterance-onend",
+      "linkingText": [
+        "onend"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SpeechSynthesisUtterance"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "tts-section",
+        "href": "https://wicg.github.io/speech-api/#tts-section",
+        "title": "The SpeechSynthesis Interface",
+        "number": "4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-speechsynthesisutterance-onerror",
+      "href": "https://wicg.github.io/speech-api/#dom-speechsynthesisutterance-onerror",
+      "linkingText": [
+        "onerror"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SpeechSynthesisUtterance"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "tts-section",
+        "href": "https://wicg.github.io/speech-api/#tts-section",
+        "title": "The SpeechSynthesis Interface",
+        "number": "4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-speechsynthesisutterance-onpause",
+      "href": "https://wicg.github.io/speech-api/#dom-speechsynthesisutterance-onpause",
+      "linkingText": [
+        "onpause"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SpeechSynthesisUtterance"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "tts-section",
+        "href": "https://wicg.github.io/speech-api/#tts-section",
+        "title": "The SpeechSynthesis Interface",
+        "number": "4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-speechsynthesisutterance-onresume",
+      "href": "https://wicg.github.io/speech-api/#dom-speechsynthesisutterance-onresume",
+      "linkingText": [
+        "onresume"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SpeechSynthesisUtterance"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "tts-section",
+        "href": "https://wicg.github.io/speech-api/#tts-section",
+        "title": "The SpeechSynthesis Interface",
+        "number": "4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-speechsynthesisutterance-onmark",
+      "href": "https://wicg.github.io/speech-api/#dom-speechsynthesisutterance-onmark",
+      "linkingText": [
+        "onmark"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SpeechSynthesisUtterance"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "tts-section",
+        "href": "https://wicg.github.io/speech-api/#tts-section",
+        "title": "The SpeechSynthesis Interface",
+        "number": "4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-speechsynthesisutterance-onboundary",
+      "href": "https://wicg.github.io/speech-api/#dom-speechsynthesisutterance-onboundary",
+      "linkingText": [
+        "onboundary"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SpeechSynthesisUtterance"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "tts-section",
+        "href": "https://wicg.github.io/speech-api/#tts-section",
+        "title": "The SpeechSynthesis Interface",
+        "number": "4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "speechsynthesisevent",
+      "href": "https://wicg.github.io/speech-api/#speechsynthesisevent",
+      "linkingText": [
+        "SpeechSynthesisEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "tts-section",
+        "href": "https://wicg.github.io/speech-api/#tts-section",
+        "title": "The SpeechSynthesis Interface",
+        "number": "4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-speechsynthesisevent-speechsynthesisevent",
+      "href": "https://wicg.github.io/speech-api/#dom-speechsynthesisevent-speechsynthesisevent",
+      "linkingText": [
+        "SpeechSynthesisEvent(type, eventInitDict)",
+        "constructor(type, eventInitDict)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "SpeechSynthesisEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "tts-section",
+        "href": "https://wicg.github.io/speech-api/#tts-section",
+        "title": "The SpeechSynthesis Interface",
+        "number": "4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-speechsynthesisevent-speechsynthesisevent-type-eventinitdict-type",
+      "href": "https://wicg.github.io/speech-api/#dom-speechsynthesisevent-speechsynthesisevent-type-eventinitdict-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "SpeechSynthesisEvent/SpeechSynthesisEvent(type, eventInitDict)",
+        "SpeechSynthesisEvent/constructor(type, eventInitDict)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "tts-section",
+        "href": "https://wicg.github.io/speech-api/#tts-section",
+        "title": "The SpeechSynthesis Interface",
+        "number": "4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-speechsynthesisevent-speechsynthesisevent-type-eventinitdict-eventinitdict",
+      "href": "https://wicg.github.io/speech-api/#dom-speechsynthesisevent-speechsynthesisevent-type-eventinitdict-eventinitdict",
+      "linkingText": [
+        "eventInitDict"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "SpeechSynthesisEvent/SpeechSynthesisEvent(type, eventInitDict)",
+        "SpeechSynthesisEvent/constructor(type, eventInitDict)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "tts-section",
+        "href": "https://wicg.github.io/speech-api/#tts-section",
+        "title": "The SpeechSynthesis Interface",
+        "number": "4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-speechsynthesiseventinit",
+      "href": "https://wicg.github.io/speech-api/#dictdef-speechsynthesiseventinit",
+      "linkingText": [
+        "SpeechSynthesisEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "tts-section",
+        "href": "https://wicg.github.io/speech-api/#tts-section",
+        "title": "The SpeechSynthesis Interface",
+        "number": "4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-speechsynthesiseventinit-utterance",
+      "href": "https://wicg.github.io/speech-api/#dom-speechsynthesiseventinit-utterance",
+      "linkingText": [
+        "utterance"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SpeechSynthesisEventInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "tts-section",
+        "href": "https://wicg.github.io/speech-api/#tts-section",
+        "title": "The SpeechSynthesis Interface",
+        "number": "4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-speechsynthesiseventinit-charindex",
+      "href": "https://wicg.github.io/speech-api/#dom-speechsynthesiseventinit-charindex",
+      "linkingText": [
+        "charIndex"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SpeechSynthesisEventInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "tts-section",
+        "href": "https://wicg.github.io/speech-api/#tts-section",
+        "title": "The SpeechSynthesis Interface",
+        "number": "4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-speechsynthesiseventinit-charlength",
+      "href": "https://wicg.github.io/speech-api/#dom-speechsynthesiseventinit-charlength",
+      "linkingText": [
+        "charLength"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SpeechSynthesisEventInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "tts-section",
+        "href": "https://wicg.github.io/speech-api/#tts-section",
+        "title": "The SpeechSynthesis Interface",
+        "number": "4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-speechsynthesiseventinit-elapsedtime",
+      "href": "https://wicg.github.io/speech-api/#dom-speechsynthesiseventinit-elapsedtime",
+      "linkingText": [
+        "elapsedTime"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SpeechSynthesisEventInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "tts-section",
+        "href": "https://wicg.github.io/speech-api/#tts-section",
+        "title": "The SpeechSynthesis Interface",
+        "number": "4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-speechsynthesiseventinit-name",
+      "href": "https://wicg.github.io/speech-api/#dom-speechsynthesiseventinit-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SpeechSynthesisEventInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "tts-section",
+        "href": "https://wicg.github.io/speech-api/#tts-section",
+        "title": "The SpeechSynthesis Interface",
+        "number": "4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "enumdef-speechsynthesiserrorcode",
+      "href": "https://wicg.github.io/speech-api/#enumdef-speechsynthesiserrorcode",
+      "linkingText": [
+        "SpeechSynthesisErrorCode"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "tts-section",
+        "href": "https://wicg.github.io/speech-api/#tts-section",
+        "title": "The SpeechSynthesis Interface",
+        "number": "4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "speechsynthesiserrorevent",
+      "href": "https://wicg.github.io/speech-api/#speechsynthesiserrorevent",
+      "linkingText": [
+        "SpeechSynthesisErrorEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "tts-section",
+        "href": "https://wicg.github.io/speech-api/#tts-section",
+        "title": "The SpeechSynthesis Interface",
+        "number": "4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-speechsynthesiserrorevent-speechsynthesiserrorevent",
+      "href": "https://wicg.github.io/speech-api/#dom-speechsynthesiserrorevent-speechsynthesiserrorevent",
+      "linkingText": [
+        "SpeechSynthesisErrorEvent(type, eventInitDict)",
+        "constructor(type, eventInitDict)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "SpeechSynthesisErrorEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "tts-section",
+        "href": "https://wicg.github.io/speech-api/#tts-section",
+        "title": "The SpeechSynthesis Interface",
+        "number": "4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-speechsynthesiserrorevent-speechsynthesiserrorevent-type-eventinitdict-type",
+      "href": "https://wicg.github.io/speech-api/#dom-speechsynthesiserrorevent-speechsynthesiserrorevent-type-eventinitdict-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "SpeechSynthesisErrorEvent/SpeechSynthesisErrorEvent(type, eventInitDict)",
+        "SpeechSynthesisErrorEvent/constructor(type, eventInitDict)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "tts-section",
+        "href": "https://wicg.github.io/speech-api/#tts-section",
+        "title": "The SpeechSynthesis Interface",
+        "number": "4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-speechsynthesiserrorevent-speechsynthesiserrorevent-type-eventinitdict-eventinitdict",
+      "href": "https://wicg.github.io/speech-api/#dom-speechsynthesiserrorevent-speechsynthesiserrorevent-type-eventinitdict-eventinitdict",
+      "linkingText": [
+        "eventInitDict"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "SpeechSynthesisErrorEvent/SpeechSynthesisErrorEvent(type, eventInitDict)",
+        "SpeechSynthesisErrorEvent/constructor(type, eventInitDict)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "tts-section",
+        "href": "https://wicg.github.io/speech-api/#tts-section",
+        "title": "The SpeechSynthesis Interface",
+        "number": "4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-speechsynthesiserroreventinit",
+      "href": "https://wicg.github.io/speech-api/#dictdef-speechsynthesiserroreventinit",
+      "linkingText": [
+        "SpeechSynthesisErrorEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "tts-section",
+        "href": "https://wicg.github.io/speech-api/#tts-section",
+        "title": "The SpeechSynthesis Interface",
+        "number": "4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-speechsynthesiserroreventinit-error",
+      "href": "https://wicg.github.io/speech-api/#dom-speechsynthesiserroreventinit-error",
+      "linkingText": [
+        "error"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SpeechSynthesisErrorEventInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "tts-section",
+        "href": "https://wicg.github.io/speech-api/#tts-section",
+        "title": "The SpeechSynthesis Interface",
+        "number": "4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "speechsynthesisvoice",
+      "href": "https://wicg.github.io/speech-api/#speechsynthesisvoice",
+      "linkingText": [
+        "SpeechSynthesisVoice"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "tts-section",
+        "href": "https://wicg.github.io/speech-api/#tts-section",
+        "title": "The SpeechSynthesis Interface",
+        "number": "4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-speechsynthesis-pending",
+      "href": "https://wicg.github.io/speech-api/#dom-speechsynthesis-pending",
+      "linkingText": [
+        "pending"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SpeechSynthesis"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "tts-attributes",
+        "href": "https://wicg.github.io/speech-api/#tts-attributes",
+        "title": "SpeechSynthesis Attributes",
+        "number": "4.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-speechsynthesis-speaking",
+      "href": "https://wicg.github.io/speech-api/#dom-speechsynthesis-speaking",
+      "linkingText": [
+        "speaking"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SpeechSynthesis"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "tts-attributes",
+        "href": "https://wicg.github.io/speech-api/#tts-attributes",
+        "title": "SpeechSynthesis Attributes",
+        "number": "4.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-speechsynthesis-paused",
+      "href": "https://wicg.github.io/speech-api/#dom-speechsynthesis-paused",
+      "linkingText": [
+        "paused"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SpeechSynthesis"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "tts-attributes",
+        "href": "https://wicg.github.io/speech-api/#tts-attributes",
+        "title": "SpeechSynthesis Attributes",
+        "number": "4.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-speechsynthesis-speak",
+      "href": "https://wicg.github.io/speech-api/#dom-speechsynthesis-speak",
+      "linkingText": [
+        "speak(utterance)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "SpeechSynthesis"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "tts-methods",
+        "href": "https://wicg.github.io/speech-api/#tts-methods",
+        "title": "SpeechSynthesis Methods",
+        "number": "4.2.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-speechsynthesis-cancel",
+      "href": "https://wicg.github.io/speech-api/#dom-speechsynthesis-cancel",
+      "linkingText": [
+        "cancel()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "SpeechSynthesis"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "tts-methods",
+        "href": "https://wicg.github.io/speech-api/#tts-methods",
+        "title": "SpeechSynthesis Methods",
+        "number": "4.2.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-speechsynthesis-pause",
+      "href": "https://wicg.github.io/speech-api/#dom-speechsynthesis-pause",
+      "linkingText": [
+        "pause()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "SpeechSynthesis"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "tts-methods",
+        "href": "https://wicg.github.io/speech-api/#tts-methods",
+        "title": "SpeechSynthesis Methods",
+        "number": "4.2.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-speechsynthesis-resume",
+      "href": "https://wicg.github.io/speech-api/#dom-speechsynthesis-resume",
+      "linkingText": [
+        "resume()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "SpeechSynthesis"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "tts-methods",
+        "href": "https://wicg.github.io/speech-api/#tts-methods",
+        "title": "SpeechSynthesis Methods",
+        "number": "4.2.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-speechsynthesis-getvoices",
+      "href": "https://wicg.github.io/speech-api/#dom-speechsynthesis-getvoices",
+      "linkingText": [
+        "getVoices()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "SpeechSynthesis"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "tts-methods",
+        "href": "https://wicg.github.io/speech-api/#tts-methods",
+        "title": "SpeechSynthesis Methods",
+        "number": "4.2.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "eventdef-speechsynthesis-voiceschanged",
+      "href": "https://wicg.github.io/speech-api/#eventdef-speechsynthesis-voiceschanged",
+      "linkingText": [
+        "voiceschanged"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "SpeechSynthesis"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "tts-events",
+        "href": "https://wicg.github.io/speech-api/#tts-events",
+        "title": "SpeechSynthesis Events",
+        "number": "4.2.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-speechsynthesisutterance-text",
+      "href": "https://wicg.github.io/speech-api/#dom-speechsynthesisutterance-text",
+      "linkingText": [
+        "text"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SpeechSynthesisUtterance"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "utterance-attributes",
+        "href": "https://wicg.github.io/speech-api/#utterance-attributes",
+        "title": "SpeechSynthesisUtterance Attributes",
+        "number": "4.2.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-speechsynthesisutterance-lang",
+      "href": "https://wicg.github.io/speech-api/#dom-speechsynthesisutterance-lang",
+      "linkingText": [
+        "lang"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SpeechSynthesisUtterance"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "utterance-attributes",
+        "href": "https://wicg.github.io/speech-api/#utterance-attributes",
+        "title": "SpeechSynthesisUtterance Attributes",
+        "number": "4.2.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-speechsynthesisutterance-voice",
+      "href": "https://wicg.github.io/speech-api/#dom-speechsynthesisutterance-voice",
+      "linkingText": [
+        "voice"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SpeechSynthesisUtterance"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "utterance-attributes",
+        "href": "https://wicg.github.io/speech-api/#utterance-attributes",
+        "title": "SpeechSynthesisUtterance Attributes",
+        "number": "4.2.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-speechsynthesisutterance-volume",
+      "href": "https://wicg.github.io/speech-api/#dom-speechsynthesisutterance-volume",
+      "linkingText": [
+        "volume"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SpeechSynthesisUtterance"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "utterance-attributes",
+        "href": "https://wicg.github.io/speech-api/#utterance-attributes",
+        "title": "SpeechSynthesisUtterance Attributes",
+        "number": "4.2.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-speechsynthesisutterance-rate",
+      "href": "https://wicg.github.io/speech-api/#dom-speechsynthesisutterance-rate",
+      "linkingText": [
+        "rate"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SpeechSynthesisUtterance"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "utterance-attributes",
+        "href": "https://wicg.github.io/speech-api/#utterance-attributes",
+        "title": "SpeechSynthesisUtterance Attributes",
+        "number": "4.2.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-speechsynthesisutterance-pitch",
+      "href": "https://wicg.github.io/speech-api/#dom-speechsynthesisutterance-pitch",
+      "linkingText": [
+        "pitch"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SpeechSynthesisUtterance"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "utterance-attributes",
+        "href": "https://wicg.github.io/speech-api/#utterance-attributes",
+        "title": "SpeechSynthesisUtterance Attributes",
+        "number": "4.2.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "eventdef-speechsynthesisutterance-start",
+      "href": "https://wicg.github.io/speech-api/#eventdef-speechsynthesisutterance-start",
+      "linkingText": [
+        "start"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "SpeechSynthesisUtterance"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "utterance-events",
+        "href": "https://wicg.github.io/speech-api/#utterance-events",
+        "title": "SpeechSynthesisUtterance Events",
+        "number": "4.2.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "eventdef-speechsynthesisutterance-end",
+      "href": "https://wicg.github.io/speech-api/#eventdef-speechsynthesisutterance-end",
+      "linkingText": [
+        "end"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "SpeechSynthesisUtterance"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "utterance-events",
+        "href": "https://wicg.github.io/speech-api/#utterance-events",
+        "title": "SpeechSynthesisUtterance Events",
+        "number": "4.2.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "eventdef-speechsynthesisutterance-error",
+      "href": "https://wicg.github.io/speech-api/#eventdef-speechsynthesisutterance-error",
+      "linkingText": [
+        "error"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "SpeechSynthesisUtterance"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "utterance-events",
+        "href": "https://wicg.github.io/speech-api/#utterance-events",
+        "title": "SpeechSynthesisUtterance Events",
+        "number": "4.2.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "eventdef-speechsynthesisutterance-pause",
+      "href": "https://wicg.github.io/speech-api/#eventdef-speechsynthesisutterance-pause",
+      "linkingText": [
+        "pause"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "SpeechSynthesisUtterance"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "utterance-events",
+        "href": "https://wicg.github.io/speech-api/#utterance-events",
+        "title": "SpeechSynthesisUtterance Events",
+        "number": "4.2.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "eventdef-speechsynthesisutterance-resume",
+      "href": "https://wicg.github.io/speech-api/#eventdef-speechsynthesisutterance-resume",
+      "linkingText": [
+        "resume"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "SpeechSynthesisUtterance"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "utterance-events",
+        "href": "https://wicg.github.io/speech-api/#utterance-events",
+        "title": "SpeechSynthesisUtterance Events",
+        "number": "4.2.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "eventdef-speechsynthesisutterance-mark",
+      "href": "https://wicg.github.io/speech-api/#eventdef-speechsynthesisutterance-mark",
+      "linkingText": [
+        "mark"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "SpeechSynthesisUtterance"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "utterance-events",
+        "href": "https://wicg.github.io/speech-api/#utterance-events",
+        "title": "SpeechSynthesisUtterance Events",
+        "number": "4.2.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "eventdef-speechsynthesisutterance-boundary",
+      "href": "https://wicg.github.io/speech-api/#eventdef-speechsynthesisutterance-boundary",
+      "linkingText": [
+        "boundary"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "SpeechSynthesisUtterance"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "utterance-events",
+        "href": "https://wicg.github.io/speech-api/#utterance-events",
+        "title": "SpeechSynthesisUtterance Events",
+        "number": "4.2.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-speechsynthesisevent-utterance",
+      "href": "https://wicg.github.io/speech-api/#dom-speechsynthesisevent-utterance",
+      "linkingText": [
+        "utterance"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SpeechSynthesisEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechsynthesisevent-attributes",
+        "href": "https://wicg.github.io/speech-api/#speechsynthesisevent-attributes",
+        "title": "SpeechSynthesisEvent Attributes",
+        "number": "4.2.6"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-speechsynthesisevent-charindex",
+      "href": "https://wicg.github.io/speech-api/#dom-speechsynthesisevent-charindex",
+      "linkingText": [
+        "charIndex"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SpeechSynthesisEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechsynthesisevent-attributes",
+        "href": "https://wicg.github.io/speech-api/#speechsynthesisevent-attributes",
+        "title": "SpeechSynthesisEvent Attributes",
+        "number": "4.2.6"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-speechsynthesisevent-charlength",
+      "href": "https://wicg.github.io/speech-api/#dom-speechsynthesisevent-charlength",
+      "linkingText": [
+        "charLength"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SpeechSynthesisEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechsynthesisevent-attributes",
+        "href": "https://wicg.github.io/speech-api/#speechsynthesisevent-attributes",
+        "title": "SpeechSynthesisEvent Attributes",
+        "number": "4.2.6"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-speechsynthesisevent-elapsedtime",
+      "href": "https://wicg.github.io/speech-api/#dom-speechsynthesisevent-elapsedtime",
+      "linkingText": [
+        "elapsedTime"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SpeechSynthesisEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechsynthesisevent-attributes",
+        "href": "https://wicg.github.io/speech-api/#speechsynthesisevent-attributes",
+        "title": "SpeechSynthesisEvent Attributes",
+        "number": "4.2.6"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-speechsynthesisevent-name",
+      "href": "https://wicg.github.io/speech-api/#dom-speechsynthesisevent-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SpeechSynthesisEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechsynthesisevent-attributes",
+        "href": "https://wicg.github.io/speech-api/#speechsynthesisevent-attributes",
+        "title": "SpeechSynthesisEvent Attributes",
+        "number": "4.2.6"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-speechsynthesiserrorevent-error",
+      "href": "https://wicg.github.io/speech-api/#dom-speechsynthesiserrorevent-error",
+      "linkingText": [
+        "error"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SpeechSynthesisErrorEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechsynthesiserrorevent-attributes",
+        "href": "https://wicg.github.io/speech-api/#speechsynthesiserrorevent-attributes",
+        "title": "SpeechSynthesisErrorEvent Attributes",
+        "number": "4.2.7"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-speechsynthesiserrorcode-canceled",
+      "href": "https://wicg.github.io/speech-api/#dom-speechsynthesiserrorcode-canceled",
+      "linkingText": [
+        "\"canceled\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "SpeechSynthesisErrorCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechsynthesiserrorevent-attributes",
+        "href": "https://wicg.github.io/speech-api/#speechsynthesiserrorevent-attributes",
+        "title": "SpeechSynthesisErrorEvent Attributes",
+        "number": "4.2.7"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-speechsynthesiserrorcode-interrupted",
+      "href": "https://wicg.github.io/speech-api/#dom-speechsynthesiserrorcode-interrupted",
+      "linkingText": [
+        "\"interrupted\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "SpeechSynthesisErrorCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechsynthesiserrorevent-attributes",
+        "href": "https://wicg.github.io/speech-api/#speechsynthesiserrorevent-attributes",
+        "title": "SpeechSynthesisErrorEvent Attributes",
+        "number": "4.2.7"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-speechsynthesiserrorcode-audio-busy",
+      "href": "https://wicg.github.io/speech-api/#dom-speechsynthesiserrorcode-audio-busy",
+      "linkingText": [
+        "\"audio-busy\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "SpeechSynthesisErrorCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechsynthesiserrorevent-attributes",
+        "href": "https://wicg.github.io/speech-api/#speechsynthesiserrorevent-attributes",
+        "title": "SpeechSynthesisErrorEvent Attributes",
+        "number": "4.2.7"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-speechsynthesiserrorcode-audio-hardware",
+      "href": "https://wicg.github.io/speech-api/#dom-speechsynthesiserrorcode-audio-hardware",
+      "linkingText": [
+        "\"audio-hardware\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "SpeechSynthesisErrorCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechsynthesiserrorevent-attributes",
+        "href": "https://wicg.github.io/speech-api/#speechsynthesiserrorevent-attributes",
+        "title": "SpeechSynthesisErrorEvent Attributes",
+        "number": "4.2.7"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-speechsynthesiserrorcode-network",
+      "href": "https://wicg.github.io/speech-api/#dom-speechsynthesiserrorcode-network",
+      "linkingText": [
+        "\"network\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "SpeechSynthesisErrorCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechsynthesiserrorevent-attributes",
+        "href": "https://wicg.github.io/speech-api/#speechsynthesiserrorevent-attributes",
+        "title": "SpeechSynthesisErrorEvent Attributes",
+        "number": "4.2.7"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-speechsynthesiserrorcode-synthesis-unavailable",
+      "href": "https://wicg.github.io/speech-api/#dom-speechsynthesiserrorcode-synthesis-unavailable",
+      "linkingText": [
+        "\"synthesis-unavailable\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "SpeechSynthesisErrorCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechsynthesiserrorevent-attributes",
+        "href": "https://wicg.github.io/speech-api/#speechsynthesiserrorevent-attributes",
+        "title": "SpeechSynthesisErrorEvent Attributes",
+        "number": "4.2.7"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-speechsynthesiserrorcode-synthesis-failed",
+      "href": "https://wicg.github.io/speech-api/#dom-speechsynthesiserrorcode-synthesis-failed",
+      "linkingText": [
+        "\"synthesis-failed\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "SpeechSynthesisErrorCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechsynthesiserrorevent-attributes",
+        "href": "https://wicg.github.io/speech-api/#speechsynthesiserrorevent-attributes",
+        "title": "SpeechSynthesisErrorEvent Attributes",
+        "number": "4.2.7"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-speechsynthesiserrorcode-language-unavailable",
+      "href": "https://wicg.github.io/speech-api/#dom-speechsynthesiserrorcode-language-unavailable",
+      "linkingText": [
+        "\"language-unavailable\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "SpeechSynthesisErrorCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechsynthesiserrorevent-attributes",
+        "href": "https://wicg.github.io/speech-api/#speechsynthesiserrorevent-attributes",
+        "title": "SpeechSynthesisErrorEvent Attributes",
+        "number": "4.2.7"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-speechsynthesiserrorcode-voice-unavailable",
+      "href": "https://wicg.github.io/speech-api/#dom-speechsynthesiserrorcode-voice-unavailable",
+      "linkingText": [
+        "\"voice-unavailable\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "SpeechSynthesisErrorCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechsynthesiserrorevent-attributes",
+        "href": "https://wicg.github.io/speech-api/#speechsynthesiserrorevent-attributes",
+        "title": "SpeechSynthesisErrorEvent Attributes",
+        "number": "4.2.7"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-speechsynthesiserrorcode-text-too-long",
+      "href": "https://wicg.github.io/speech-api/#dom-speechsynthesiserrorcode-text-too-long",
+      "linkingText": [
+        "\"text-too-long\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "SpeechSynthesisErrorCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechsynthesiserrorevent-attributes",
+        "href": "https://wicg.github.io/speech-api/#speechsynthesiserrorevent-attributes",
+        "title": "SpeechSynthesisErrorEvent Attributes",
+        "number": "4.2.7"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-speechsynthesiserrorcode-invalid-argument",
+      "href": "https://wicg.github.io/speech-api/#dom-speechsynthesiserrorcode-invalid-argument",
+      "linkingText": [
+        "\"invalid-argument\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "SpeechSynthesisErrorCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechsynthesiserrorevent-attributes",
+        "href": "https://wicg.github.io/speech-api/#speechsynthesiserrorevent-attributes",
+        "title": "SpeechSynthesisErrorEvent Attributes",
+        "number": "4.2.7"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-speechsynthesiserrorcode-not-allowed",
+      "href": "https://wicg.github.io/speech-api/#dom-speechsynthesiserrorcode-not-allowed",
+      "linkingText": [
+        "\"not-allowed\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "SpeechSynthesisErrorCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechsynthesiserrorevent-attributes",
+        "href": "https://wicg.github.io/speech-api/#speechsynthesiserrorevent-attributes",
+        "title": "SpeechSynthesisErrorEvent Attributes",
+        "number": "4.2.7"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-speechsynthesisvoice-voiceuri",
+      "href": "https://wicg.github.io/speech-api/#dom-speechsynthesisvoice-voiceuri",
+      "linkingText": [
+        "voiceURI"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SpeechSynthesisVoice"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechsynthesisvoice-attributes",
+        "href": "https://wicg.github.io/speech-api/#speechsynthesisvoice-attributes",
+        "title": "SpeechSynthesisVoice Attributes",
+        "number": "4.2.8"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-speechsynthesisvoice-name",
+      "href": "https://wicg.github.io/speech-api/#dom-speechsynthesisvoice-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SpeechSynthesisVoice"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechsynthesisvoice-attributes",
+        "href": "https://wicg.github.io/speech-api/#speechsynthesisvoice-attributes",
+        "title": "SpeechSynthesisVoice Attributes",
+        "number": "4.2.8"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-speechsynthesisvoice-lang",
+      "href": "https://wicg.github.io/speech-api/#dom-speechsynthesisvoice-lang",
+      "linkingText": [
+        "lang"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SpeechSynthesisVoice"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechsynthesisvoice-attributes",
+        "href": "https://wicg.github.io/speech-api/#speechsynthesisvoice-attributes",
+        "title": "SpeechSynthesisVoice Attributes",
+        "number": "4.2.8"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-speechsynthesisvoice-localservice",
+      "href": "https://wicg.github.io/speech-api/#dom-speechsynthesisvoice-localservice",
+      "linkingText": [
+        "localService"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SpeechSynthesisVoice"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechsynthesisvoice-attributes",
+        "href": "https://wicg.github.io/speech-api/#speechsynthesisvoice-attributes",
+        "title": "SpeechSynthesisVoice Attributes",
+        "number": "4.2.8"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-speechsynthesisvoice-default",
+      "href": "https://wicg.github.io/speech-api/#dom-speechsynthesisvoice-default",
+      "linkingText": [
+        "default"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SpeechSynthesisVoice"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "speechsynthesisvoice-attributes",
+        "href": "https://wicg.github.io/speech-api/#speechsynthesisvoice-attributes",
+        "title": "SpeechSynthesisVoice Attributes",
+        "number": "4.2.8"
+      },
+      "definedIn": "dt"
+    }
+  ]
+}

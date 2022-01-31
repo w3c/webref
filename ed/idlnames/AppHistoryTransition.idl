@@ -1,0 +1,9 @@
+// Source: App History API (https://wicg.github.io/app-history/)
+[Exposed=Window]
+interface AppHistoryTransition {
+  readonly attribute AppHistoryNavigationType navigationType;
+  readonly attribute AppHistoryEntry from;
+  readonly attribute Promise<undefined> finished;
+
+  AppHistoryResult rollback(optional AppHistoryNavigationOptions options = {});
+};

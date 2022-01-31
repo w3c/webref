@@ -1,0 +1,308 @@
+{
+  "spec": {
+    "title": "Web Locks API",
+    "url": "https://w3c.github.io/web-locks/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://w3c.github.io/web-locks/#title",
+      "level": 1,
+      "title": "Web Locks API"
+    },
+    {
+      "id": "abstract",
+      "href": "https://w3c.github.io/web-locks/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "sotd",
+      "href": "https://w3c.github.io/web-locks/#sotd",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://w3c.github.io/web-locks/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "introduction",
+      "href": "https://w3c.github.io/web-locks/#introduction",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "usage-overview",
+      "href": "https://w3c.github.io/web-locks/#usage-overview",
+      "level": 3,
+      "title": "Usage Overview",
+      "number": "1.1"
+    },
+    {
+      "id": "motivations",
+      "href": "https://w3c.github.io/web-locks/#motivations",
+      "level": 3,
+      "title": "Motivating Use Cases",
+      "number": "1.2"
+    },
+    {
+      "id": "concepts",
+      "href": "https://w3c.github.io/web-locks/#concepts",
+      "level": 2,
+      "title": "Concepts",
+      "number": "2"
+    },
+    {
+      "id": "resource-names",
+      "href": "https://w3c.github.io/web-locks/#resource-names",
+      "level": 3,
+      "title": "Resources Names",
+      "number": "2.1"
+    },
+    {
+      "id": "lock-managers",
+      "href": "https://w3c.github.io/web-locks/#lock-managers",
+      "level": 3,
+      "title": "Lock Managers",
+      "number": "2.2"
+    },
+    {
+      "id": "modes-scheduling",
+      "href": "https://w3c.github.io/web-locks/#modes-scheduling",
+      "level": 3,
+      "title": "Modes and Scheduling",
+      "number": "2.3"
+    },
+    {
+      "id": "concept-lock",
+      "href": "https://w3c.github.io/web-locks/#concept-lock",
+      "level": 3,
+      "title": "Locks",
+      "number": "2.4"
+    },
+    {
+      "id": "concept-lock-request",
+      "href": "https://w3c.github.io/web-locks/#concept-lock-request",
+      "level": 3,
+      "title": "Lock Requests",
+      "number": "2.5"
+    },
+    {
+      "id": "termination-of-locks",
+      "href": "https://w3c.github.io/web-locks/#termination-of-locks",
+      "level": 3,
+      "title": "Termination of Locks",
+      "number": "2.6"
+    },
+    {
+      "id": "api",
+      "href": "https://w3c.github.io/web-locks/#api",
+      "level": 2,
+      "title": "API",
+      "number": "3"
+    },
+    {
+      "id": "navigator-mixins",
+      "href": "https://w3c.github.io/web-locks/#navigator-mixins",
+      "level": 3,
+      "title": "Navigator Mixins",
+      "number": "3.1"
+    },
+    {
+      "id": "api-lock-manager",
+      "href": "https://w3c.github.io/web-locks/#api-lock-manager",
+      "level": 3,
+      "title": "LockManager class",
+      "number": "3.2"
+    },
+    {
+      "id": "api-lock-manager-request",
+      "href": "https://w3c.github.io/web-locks/#api-lock-manager-request",
+      "level": 4,
+      "title": "The request() method",
+      "number": "3.2.1"
+    },
+    {
+      "id": "api-lock-manager-query",
+      "href": "https://w3c.github.io/web-locks/#api-lock-manager-query",
+      "level": 4,
+      "title": "The query() method",
+      "number": "3.2.2"
+    },
+    {
+      "id": "api-lock",
+      "href": "https://w3c.github.io/web-locks/#api-lock",
+      "level": 3,
+      "title": "Lock class",
+      "number": "3.3"
+    },
+    {
+      "id": "algorithms",
+      "href": "https://w3c.github.io/web-locks/#algorithms",
+      "level": 2,
+      "title": "Algorithms",
+      "number": "4"
+    },
+    {
+      "id": "algorithm-request-lock",
+      "href": "https://w3c.github.io/web-locks/#algorithm-request-lock",
+      "level": 3,
+      "title": "Request a lock",
+      "number": "4.1"
+    },
+    {
+      "id": "algorithm-release-lock",
+      "href": "https://w3c.github.io/web-locks/#algorithm-release-lock",
+      "level": 3,
+      "title": "Release a lock",
+      "number": "4.2"
+    },
+    {
+      "id": "algorithm-abort-request",
+      "href": "https://w3c.github.io/web-locks/#algorithm-abort-request",
+      "level": 3,
+      "title": "Abort a request",
+      "number": "4.3"
+    },
+    {
+      "id": "algorithm-process-request",
+      "href": "https://w3c.github.io/web-locks/#algorithm-process-request",
+      "level": 3,
+      "title": "Process a lock request queue for a given resource name",
+      "number": "4.4"
+    },
+    {
+      "id": "algorithm-snapshot-state",
+      "href": "https://w3c.github.io/web-locks/#algorithm-snapshot-state",
+      "level": 3,
+      "title": "Snapshot the lock state",
+      "number": "4.5"
+    },
+    {
+      "id": "usage-considerations",
+      "href": "https://w3c.github.io/web-locks/#usage-considerations",
+      "level": 2,
+      "title": "Usage Considerations",
+      "number": "5"
+    },
+    {
+      "id": "deadlocks",
+      "href": "https://w3c.github.io/web-locks/#deadlocks",
+      "level": 3,
+      "title": "Deadlocks",
+      "number": "5.1"
+    },
+    {
+      "id": "security-privacy",
+      "href": "https://w3c.github.io/web-locks/#security-privacy",
+      "level": 2,
+      "title": "Security and Privacy Considerations",
+      "number": "6"
+    },
+    {
+      "id": "security-scope",
+      "href": "https://w3c.github.io/web-locks/#security-scope",
+      "level": 3,
+      "title": "Lock Scope",
+      "number": "6.1"
+    },
+    {
+      "id": "private-browsing",
+      "href": "https://w3c.github.io/web-locks/#private-browsing",
+      "level": 3,
+      "title": "Private Browsing",
+      "number": "6.2"
+    },
+    {
+      "id": "implementation-risks",
+      "href": "https://w3c.github.io/web-locks/#implementation-risks",
+      "level": 3,
+      "title": "Implementation Risks",
+      "number": "6.3"
+    },
+    {
+      "id": "security-privacy-checklist",
+      "href": "https://w3c.github.io/web-locks/#security-privacy-checklist",
+      "level": 3,
+      "title": "Checklist",
+      "number": "6.4"
+    },
+    {
+      "id": "acknowledgements",
+      "href": "https://w3c.github.io/web-locks/#acknowledgements",
+      "level": 2,
+      "title": "Acknowledgements",
+      "number": "7"
+    },
+    {
+      "id": "w3c-conformance",
+      "href": "https://w3c.github.io/web-locks/#w3c-conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "w3c-conventions",
+      "href": "https://w3c.github.io/web-locks/#w3c-conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "w3c-conformant-algorithms",
+      "href": "https://w3c.github.io/web-locks/#w3c-conformant-algorithms",
+      "level": 3,
+      "title": "Conformant Algorithms"
+    },
+    {
+      "id": "index",
+      "href": "https://w3c.github.io/web-locks/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://w3c.github.io/web-locks/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://w3c.github.io/web-locks/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://w3c.github.io/web-locks/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://w3c.github.io/web-locks/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://w3c.github.io/web-locks/#informative",
+      "level": 3,
+      "title": "Informative References"
+    },
+    {
+      "id": "idl-index",
+      "href": "https://w3c.github.io/web-locks/#idl-index",
+      "level": 2,
+      "title": "IDL Index"
+    },
+    {
+      "id": "issues-index",
+      "href": "https://w3c.github.io/web-locks/#issues-index",
+      "level": 2,
+      "title": "Issues Index"
+    }
+  ]
+}

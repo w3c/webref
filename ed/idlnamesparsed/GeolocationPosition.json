@@ -1,0 +1,84 @@
+{
+  "name": "GeolocationPosition",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Geolocation API",
+      "url": "https://www.w3.org/TR/geolocation/"
+    },
+    "fragment": "[Exposed=Window, SecureContext]\ninterface GeolocationPosition {\n  readonly attribute GeolocationCoordinates coords;\n  readonly attribute EpochTimeStamp timestamp;\n};",
+    "href": "https://w3c.github.io/geolocation-api/#dom-geolocationposition"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/geolocation/": [
+      {
+        "id": "dom-geolocationposition",
+        "href": "https://w3c.github.io/geolocation-api/#dom-geolocationposition",
+        "linkingText": [
+          "GeolocationPosition"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "position_interface",
+          "href": "https://w3c.github.io/geolocation-api/#position_interface",
+          "title": "GeolocationPosition interface",
+          "number": "8"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-geolocationposition-coords",
+        "href": "https://w3c.github.io/geolocation-api/#dom-geolocationposition-coords",
+        "linkingText": [
+          "coords"
+        ],
+        "localLinkingText": [
+          "GeolocationPosition.coords"
+        ],
+        "type": "attribute",
+        "for": [
+          "GeolocationPosition"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "coords-attribute",
+          "href": "https://w3c.github.io/geolocation-api/#coords-attribute",
+          "title": "coords attribute",
+          "number": "8.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-geolocationposition-timestamp",
+        "href": "https://w3c.github.io/geolocation-api/#dom-geolocationposition-timestamp",
+        "linkingText": [
+          "timestamp"
+        ],
+        "localLinkingText": [
+          "GeolocationPosition.timestamp"
+        ],
+        "type": "attribute",
+        "for": [
+          "GeolocationPosition"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "timestamp-attribute",
+          "href": "https://w3c.github.io/geolocation-api/#timestamp-attribute",
+          "title": "timestamp attribute",
+          "number": "8.2"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

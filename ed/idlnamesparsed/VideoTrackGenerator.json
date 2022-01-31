@@ -1,0 +1,123 @@
+{
+  "name": "VideoTrackGenerator",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "MediaStreamTrack Insertable Media Processing using Streams",
+      "url": "https://w3c.github.io/mediacapture-transform/"
+    },
+    "fragment": "[Exposed=DedicatedWorker]\ninterface VideoTrackGenerator {\n  constructor();\n  readonly attribute WritableStream writable;\n  attribute boolean muted;\n  readonly attribute MediaStreamTrack track;\n};",
+    "href": "https://w3c.github.io/mediacapture-transform/#videotrackgenerator"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://w3c.github.io/mediacapture-transform/": [
+      {
+        "id": "videotrackgenerator",
+        "href": "https://w3c.github.io/mediacapture-transform/#videotrackgenerator",
+        "linkingText": [
+          "VideoTrackGenerator"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "video-generator-interface",
+          "href": "https://w3c.github.io/mediacapture-transform/#video-generator-interface",
+          "title": "Interface definition",
+          "number": "2.2.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-videotrackgenerator-videotrackgenerator",
+        "href": "https://w3c.github.io/mediacapture-transform/#dom-videotrackgenerator-videotrackgenerator",
+        "linkingText": [
+          "VideoTrackGenerator()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "VideoTrackGenerator"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "video-generator-constructor",
+          "href": "https://w3c.github.io/mediacapture-transform/#video-generator-constructor",
+          "title": "Constructor",
+          "number": "2.2.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-videotrackgenerator-writable",
+        "href": "https://w3c.github.io/mediacapture-transform/#dom-videotrackgenerator-writable",
+        "linkingText": [
+          "writable"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "VideoTrackGenerator"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "video-generator-attributes",
+          "href": "https://w3c.github.io/mediacapture-transform/#video-generator-attributes",
+          "title": "Attributes",
+          "number": "2.2.4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-videotrackgenerator-muted",
+        "href": "https://w3c.github.io/mediacapture-transform/#dom-videotrackgenerator-muted",
+        "linkingText": [
+          "muted"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "VideoTrackGenerator"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "video-generator-attributes",
+          "href": "https://w3c.github.io/mediacapture-transform/#video-generator-attributes",
+          "title": "Attributes",
+          "number": "2.2.4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-videotrackgenerator-track",
+        "href": "https://w3c.github.io/mediacapture-transform/#dom-videotrackgenerator-track",
+        "linkingText": [
+          "track"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "VideoTrackGenerator"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "video-generator-attributes",
+          "href": "https://w3c.github.io/mediacapture-transform/#video-generator-attributes",
+          "title": "Attributes",
+          "number": "2.2.4"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

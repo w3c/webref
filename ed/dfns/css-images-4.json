@@ -1,0 +1,1219 @@
+{
+  "spec": {
+    "title": "CSS Images Module Level 4",
+    "url": "https://drafts.csswg.org/css-images-4/"
+  },
+  "dfns": [
+    {
+      "id": "typedef-image",
+      "href": "https://drafts.csswg.org/css-images-4/#typedef-image",
+      "linkingText": [
+        "<image>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "image-values",
+        "href": "https://drafts.csswg.org/css-images-4/#image-values",
+        "title": "2D Image Values: the <image> type",
+        "number": "2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "invalid-image",
+      "href": "https://drafts.csswg.org/css-images-4/#invalid-image",
+      "linkingText": [
+        "invalid image",
+        "valid image"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "image-values",
+        "href": "https://drafts.csswg.org/css-images-4/#image-values",
+        "title": "2D Image Values: the <image> type",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "loading-image",
+      "href": "https://drafts.csswg.org/css-images-4/#loading-image",
+      "linkingText": [
+        "loading image"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "image-values",
+        "href": "https://drafts.csswg.org/css-images-4/#image-values",
+        "title": "2D Image Values: the <image> type",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "computed-image",
+      "href": "https://drafts.csswg.org/css-images-4/#computed-image",
+      "linkingText": [
+        "computed <image>"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "image-values",
+        "href": "https://drafts.csswg.org/css-images-4/#image-values",
+        "title": "2D Image Values: the <image> type",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "fetch-an-external-image-for-a-stylesheet",
+      "href": "https://drafts.csswg.org/css-images-4/#fetch-an-external-image-for-a-stylesheet",
+      "linkingText": [
+        "fetch an external image for a stylesheet"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "fetching-images",
+        "href": "https://drafts.csswg.org/css-images-4/#fetching-images",
+        "title": "Fetching External Images",
+        "number": "2.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "funcdef-image-set",
+      "href": "https://drafts.csswg.org/css-images-4/#funcdef-image-set",
+      "linkingText": [
+        "image-set()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "image-set-notation",
+        "href": "https://drafts.csswg.org/css-images-4/#image-set-notation",
+        "title": "Resolution/Type Negotiation: the image-set() notation",
+        "number": "2.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "typedef-image-set-option",
+      "href": "https://drafts.csswg.org/css-images-4/#typedef-image-set-option",
+      "linkingText": [
+        "<image-set-option>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "image-set-notation",
+        "href": "https://drafts.csswg.org/css-images-4/#image-set-notation",
+        "title": "Resolution/Type Negotiation: the image-set() notation",
+        "number": "2.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "funcdef-image-set-type",
+      "href": "https://drafts.csswg.org/css-images-4/#funcdef-image-set-type",
+      "linkingText": [
+        "type()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [
+        "image-set()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "image-set-notation",
+        "href": "https://drafts.csswg.org/css-images-4/#image-set-notation",
+        "title": "Resolution/Type Negotiation: the image-set() notation",
+        "number": "2.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "funcdef-image",
+      "href": "https://drafts.csswg.org/css-images-4/#funcdef-image",
+      "linkingText": [
+        "image()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "image-notation",
+        "href": "https://drafts.csswg.org/css-images-4/#image-notation",
+        "title": "Image Fallbacks and Annotations: the image() notation",
+        "number": "2.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "typedef-image-tags",
+      "href": "https://drafts.csswg.org/css-images-4/#typedef-image-tags",
+      "linkingText": [
+        "<image-tags>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "image-notation",
+        "href": "https://drafts.csswg.org/css-images-4/#image-notation",
+        "title": "Image Fallbacks and Annotations: the image() notation",
+        "number": "2.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "typedef-image-src",
+      "href": "https://drafts.csswg.org/css-images-4/#typedef-image-src",
+      "linkingText": [
+        "<image-src>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "image-notation",
+        "href": "https://drafts.csswg.org/css-images-4/#image-notation",
+        "title": "Image Fallbacks and Annotations: the image() notation",
+        "number": "2.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "funcdef-cross-fade",
+      "href": "https://drafts.csswg.org/css-images-4/#funcdef-cross-fade",
+      "linkingText": [
+        "cross-fade()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "cross-fade-function",
+        "href": "https://drafts.csswg.org/css-images-4/#cross-fade-function",
+        "title": "Combining images: the cross-fade() notation",
+        "number": "2.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "typedef-cf-image",
+      "href": "https://drafts.csswg.org/css-images-4/#typedef-cf-image",
+      "linkingText": [
+        "<cf-image>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "cross-fade-function",
+        "href": "https://drafts.csswg.org/css-images-4/#cross-fade-function",
+        "title": "Combining images: the cross-fade() notation",
+        "number": "2.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "natural-dimensions-of-a-cross-fade",
+      "href": "https://drafts.csswg.org/css-images-4/#natural-dimensions-of-a-cross-fade",
+      "linkingText": [
+        "natural dimensions of a cross-fade()"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "cross-fade-sizing",
+        "href": "https://drafts.csswg.org/css-images-4/#cross-fade-sizing",
+        "title": "cross-fade() Sizing",
+        "number": "2.6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "appearance-of-a-cross-fade",
+      "href": "https://drafts.csswg.org/css-images-4/#appearance-of-a-cross-fade",
+      "linkingText": [
+        "appearance of a cross-fade()"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "cross-fade-painting",
+        "href": "https://drafts.csswg.org/css-images-4/#cross-fade-painting",
+        "title": "cross-fade() Painting",
+        "number": "2.6.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "funcdef-element",
+      "href": "https://drafts.csswg.org/css-images-4/#funcdef-element",
+      "linkingText": [
+        "element()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "element-notation",
+        "href": "https://drafts.csswg.org/css-images-4/#element-notation",
+        "title": "Using Elements as Images: the element() notation",
+        "number": "2.7"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "decorated-bounding-box",
+      "href": "https://drafts.csswg.org/css-images-4/#decorated-bounding-box",
+      "linkingText": [
+        "decorated bounding box"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "element-notation",
+        "href": "https://drafts.csswg.org/css-images-4/#element-notation",
+        "title": "Using Elements as Images: the element() notation",
+        "number": "2.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "element-not-rendered",
+      "href": "https://drafts.csswg.org/css-images-4/#element-not-rendered",
+      "linkingText": [
+        "element-not-rendered"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "element-notation",
+        "href": "https://drafts.csswg.org/css-images-4/#element-notation",
+        "title": "Using Elements as Images: the element() notation",
+        "number": "2.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "paint-source",
+      "href": "https://drafts.csswg.org/css-images-4/#paint-source",
+      "linkingText": [
+        "paint source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "paint-sources",
+        "href": "https://drafts.csswg.org/css-images-4/#paint-sources",
+        "title": "Paint Sources",
+        "number": "2.7.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-css-elementsources",
+      "href": "https://drafts.csswg.org/css-images-4/#dom-css-elementsources",
+      "linkingText": [
+        "elementSources"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "elementsources",
+        "href": "https://drafts.csswg.org/css-images-4/#elementsources",
+        "title": "Using Out-Of-Document Sources: the ElementSources interface",
+        "number": "2.7.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "gradient-function",
+      "href": "https://drafts.csswg.org/css-images-4/#gradient-function",
+      "linkingText": [
+        "gradient function"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gradients",
+        "href": "https://drafts.csswg.org/css-images-4/#gradients",
+        "title": "Gradients",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "typedef-gradient",
+      "href": "https://drafts.csswg.org/css-images-4/#typedef-gradient",
+      "linkingText": [
+        "<gradient>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gradients",
+        "href": "https://drafts.csswg.org/css-images-4/#gradients",
+        "title": "Gradients",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "gradient-box",
+      "href": "https://drafts.csswg.org/css-images-4/#gradient-box",
+      "linkingText": [
+        "gradient box"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gradients",
+        "href": "https://drafts.csswg.org/css-images-4/#gradients",
+        "title": "Gradients",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "starting-point",
+      "href": "https://drafts.csswg.org/css-images-4/#starting-point",
+      "linkingText": [
+        "starting point"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "gradients",
+        "href": "https://drafts.csswg.org/css-images-4/#gradients",
+        "title": "Gradients",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "ending-point",
+      "href": "https://drafts.csswg.org/css-images-4/#ending-point",
+      "linkingText": [
+        "ending point"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "gradients",
+        "href": "https://drafts.csswg.org/css-images-4/#gradients",
+        "title": "Gradients",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "gradient-line",
+      "href": "https://drafts.csswg.org/css-images-4/#gradient-line",
+      "linkingText": [
+        "gradient line"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gradients",
+        "href": "https://drafts.csswg.org/css-images-4/#gradients",
+        "title": "Gradients",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "funcdef-linear-gradient",
+      "href": "https://drafts.csswg.org/css-images-4/#funcdef-linear-gradient",
+      "linkingText": [
+        "linear-gradient()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "linear-gradients",
+        "href": "https://drafts.csswg.org/css-images-4/#linear-gradients",
+        "title": "Linear Gradients: the linear-gradient() notation",
+        "number": "3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "typedef-side-or-corner",
+      "href": "https://drafts.csswg.org/css-images-4/#typedef-side-or-corner",
+      "linkingText": [
+        "<side-or-corner>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "linear-gradients",
+        "href": "https://drafts.csswg.org/css-images-4/#linear-gradients",
+        "title": "Linear Gradients: the linear-gradient() notation",
+        "number": "3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "funcdef-radial-gradient",
+      "href": "https://drafts.csswg.org/css-images-4/#funcdef-radial-gradient",
+      "linkingText": [
+        "radial-gradient()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "radial-gradients",
+        "href": "https://drafts.csswg.org/css-images-4/#radial-gradients",
+        "title": "Radial Gradients: the radial-gradient() notation",
+        "number": "3.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "funcdef-conic-gradient",
+      "href": "https://drafts.csswg.org/css-images-4/#funcdef-conic-gradient",
+      "linkingText": [
+        "conic-gradient()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "conic-gradient-syntax",
+        "href": "https://drafts.csswg.org/css-images-4/#conic-gradient-syntax",
+        "title": "conic-gradient() Syntax",
+        "number": "3.3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "valdef-conic-gradient-angle",
+      "href": "https://drafts.csswg.org/css-images-4/#valdef-conic-gradient-angle",
+      "linkingText": [
+        "<angle>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "conic-gradient()",
+        "repeating-conic-gradient()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "conic-gradient-syntax",
+        "href": "https://drafts.csswg.org/css-images-4/#conic-gradient-syntax",
+        "title": "conic-gradient() Syntax",
+        "number": "3.3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-conic-gradient-position",
+      "href": "https://drafts.csswg.org/css-images-4/#valdef-conic-gradient-position",
+      "linkingText": [
+        "<position>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "conic-gradient()",
+        "repeating-conic-gradient()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "conic-gradient-syntax",
+        "href": "https://drafts.csswg.org/css-images-4/#conic-gradient-syntax",
+        "title": "conic-gradient() Syntax",
+        "number": "3.3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "conic-gradient-gradient-center",
+      "href": "https://drafts.csswg.org/css-images-4/#conic-gradient-gradient-center",
+      "linkingText": [
+        "gradient center"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "conic-gradient()",
+        "repeating-conic-gradient()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "conic-gradient-syntax",
+        "href": "https://drafts.csswg.org/css-images-4/#conic-gradient-syntax",
+        "title": "conic-gradient() Syntax",
+        "number": "3.3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "funcdef-repeating-linear-gradient",
+      "href": "https://drafts.csswg.org/css-images-4/#funcdef-repeating-linear-gradient",
+      "linkingText": [
+        "repeating-linear-gradient()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "repeating-gradients",
+        "href": "https://drafts.csswg.org/css-images-4/#repeating-gradients",
+        "title": "Repeating Gradients: the repeating-linear-gradient(), repeating-radial-gradient(), and repeating-conic-gradient() notations",
+        "number": "3.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "funcdef-repeating-radial-gradient",
+      "href": "https://drafts.csswg.org/css-images-4/#funcdef-repeating-radial-gradient",
+      "linkingText": [
+        "repeating-radial-gradient()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "repeating-gradients",
+        "href": "https://drafts.csswg.org/css-images-4/#repeating-gradients",
+        "title": "Repeating Gradients: the repeating-linear-gradient(), repeating-radial-gradient(), and repeating-conic-gradient() notations",
+        "number": "3.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "funcdef-repeating-conic-gradient",
+      "href": "https://drafts.csswg.org/css-images-4/#funcdef-repeating-conic-gradient",
+      "linkingText": [
+        "repeating-conic-gradient()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "repeating-gradients",
+        "href": "https://drafts.csswg.org/css-images-4/#repeating-gradients",
+        "title": "Repeating Gradients: the repeating-linear-gradient(), repeating-radial-gradient(), and repeating-conic-gradient() notations",
+        "number": "3.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "color-stop",
+      "href": "https://drafts.csswg.org/css-images-4/#color-stop",
+      "linkingText": [
+        "color stop"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gradient-colors",
+        "href": "https://drafts.csswg.org/css-images-4/#gradient-colors",
+        "title": "Defining Gradient Color",
+        "number": "3.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "color-transition-hint",
+      "href": "https://drafts.csswg.org/css-images-4/#color-transition-hint",
+      "linkingText": [
+        "color transition hint"
+      ],
+      "localLinkingText": [
+        "transition hint"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gradient-colors",
+        "href": "https://drafts.csswg.org/css-images-4/#gradient-colors",
+        "title": "Defining Gradient Color",
+        "number": "3.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "color-stop-list",
+      "href": "https://drafts.csswg.org/css-images-4/#color-stop-list",
+      "linkingText": [
+        "color stop list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "color-stop-syntax",
+        "href": "https://drafts.csswg.org/css-images-4/#color-stop-syntax",
+        "title": "Color Stop Lists",
+        "number": "3.5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "typedef-color-stop-list",
+      "href": "https://drafts.csswg.org/css-images-4/#typedef-color-stop-list",
+      "linkingText": [
+        "<color-stop-list>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "color-stop-syntax",
+        "href": "https://drafts.csswg.org/css-images-4/#color-stop-syntax",
+        "title": "Color Stop Lists",
+        "number": "3.5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "typedef-linear-color-stop",
+      "href": "https://drafts.csswg.org/css-images-4/#typedef-linear-color-stop",
+      "linkingText": [
+        "<linear-color-stop>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "color-stop-syntax",
+        "href": "https://drafts.csswg.org/css-images-4/#color-stop-syntax",
+        "title": "Color Stop Lists",
+        "number": "3.5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "typedef-linear-color-hint",
+      "href": "https://drafts.csswg.org/css-images-4/#typedef-linear-color-hint",
+      "linkingText": [
+        "<linear-color-hint>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "color-stop-syntax",
+        "href": "https://drafts.csswg.org/css-images-4/#color-stop-syntax",
+        "title": "Color Stop Lists",
+        "number": "3.5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "typedef-color-stop-length",
+      "href": "https://drafts.csswg.org/css-images-4/#typedef-color-stop-length",
+      "linkingText": [
+        "<color-stop-length>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "color-stop-syntax",
+        "href": "https://drafts.csswg.org/css-images-4/#color-stop-syntax",
+        "title": "Color Stop Lists",
+        "number": "3.5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "typedef-angular-color-stop-list",
+      "href": "https://drafts.csswg.org/css-images-4/#typedef-angular-color-stop-list",
+      "linkingText": [
+        "<angular-color-stop-list>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "color-stop-syntax",
+        "href": "https://drafts.csswg.org/css-images-4/#color-stop-syntax",
+        "title": "Color Stop Lists",
+        "number": "3.5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "typedef-angular-color-stop",
+      "href": "https://drafts.csswg.org/css-images-4/#typedef-angular-color-stop",
+      "linkingText": [
+        "<angular-color-stop>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "color-stop-syntax",
+        "href": "https://drafts.csswg.org/css-images-4/#color-stop-syntax",
+        "title": "Color Stop Lists",
+        "number": "3.5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "typedef-angular-color-hint",
+      "href": "https://drafts.csswg.org/css-images-4/#typedef-angular-color-hint",
+      "linkingText": [
+        "<angular-color-hint>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "color-stop-syntax",
+        "href": "https://drafts.csswg.org/css-images-4/#color-stop-syntax",
+        "title": "Color Stop Lists",
+        "number": "3.5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "typedef-color-stop-angle",
+      "href": "https://drafts.csswg.org/css-images-4/#typedef-color-stop-angle",
+      "linkingText": [
+        "<color-stop-angle>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "color-stop-syntax",
+        "href": "https://drafts.csswg.org/css-images-4/#color-stop-syntax",
+        "title": "Color Stop Lists",
+        "number": "3.5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "typedef-color-stop",
+      "href": "https://drafts.csswg.org/css-images-4/#typedef-color-stop",
+      "linkingText": [
+        "<color-stop>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "color-stop-syntax",
+        "href": "https://drafts.csswg.org/css-images-4/#color-stop-syntax",
+        "title": "Color Stop Lists",
+        "number": "3.5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "propdef-object-fit",
+      "href": "https://drafts.csswg.org/css-images-4/#propdef-object-fit",
+      "linkingText": [
+        "object-fit"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-object-fit",
+        "href": "https://drafts.csswg.org/css-images-4/#the-object-fit",
+        "title": "Sizing Objects: the object-fit property",
+        "number": "5.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "valdef-object-fit-fill",
+      "href": "https://drafts.csswg.org/css-images-4/#valdef-object-fit-fill",
+      "linkingText": [
+        "fill"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "object-fit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-object-fit",
+        "href": "https://drafts.csswg.org/css-images-4/#the-object-fit",
+        "title": "Sizing Objects: the object-fit property",
+        "number": "5.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-object-fit-none",
+      "href": "https://drafts.csswg.org/css-images-4/#valdef-object-fit-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "object-fit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-object-fit",
+        "href": "https://drafts.csswg.org/css-images-4/#the-object-fit",
+        "title": "Sizing Objects: the object-fit property",
+        "number": "5.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-object-fit-contain",
+      "href": "https://drafts.csswg.org/css-images-4/#valdef-object-fit-contain",
+      "linkingText": [
+        "contain"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "object-fit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-object-fit",
+        "href": "https://drafts.csswg.org/css-images-4/#the-object-fit",
+        "title": "Sizing Objects: the object-fit property",
+        "number": "5.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-object-fit-cover",
+      "href": "https://drafts.csswg.org/css-images-4/#valdef-object-fit-cover",
+      "linkingText": [
+        "cover"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "object-fit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-object-fit",
+        "href": "https://drafts.csswg.org/css-images-4/#the-object-fit",
+        "title": "Sizing Objects: the object-fit property",
+        "number": "5.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-object-fit-scale-down",
+      "href": "https://drafts.csswg.org/css-images-4/#valdef-object-fit-scale-down",
+      "linkingText": [
+        "scale-down"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "object-fit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-object-fit",
+        "href": "https://drafts.csswg.org/css-images-4/#the-object-fit",
+        "title": "Sizing Objects: the object-fit property",
+        "number": "5.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "image-resolution",
+      "href": "https://drafts.csswg.org/css-images-4/#image-resolution",
+      "linkingText": [
+        "image resolution"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-image-resolution",
+        "href": "https://drafts.csswg.org/css-images-4/#the-image-resolution",
+        "title": "Overriding Image Resolutions: the image-resolution property",
+        "number": "6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "propdef-image-resolution",
+      "href": "https://drafts.csswg.org/css-images-4/#propdef-image-resolution",
+      "linkingText": [
+        "image-resolution"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-image-resolution",
+        "href": "https://drafts.csswg.org/css-images-4/#the-image-resolution",
+        "title": "Overriding Image Resolutions: the image-resolution property",
+        "number": "6.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "preferred-resolution",
+      "href": "https://drafts.csswg.org/css-images-4/#preferred-resolution",
+      "linkingText": [
+        "preferred resolution"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-image-resolution",
+        "href": "https://drafts.csswg.org/css-images-4/#the-image-resolution",
+        "title": "Overriding Image Resolutions: the image-resolution property",
+        "number": "6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valdef-image-resolution-resolution",
+      "href": "https://drafts.csswg.org/css-images-4/#valdef-image-resolution-resolution",
+      "linkingText": [
+        "<resolution>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "image-resolution"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-image-resolution",
+        "href": "https://drafts.csswg.org/css-images-4/#the-image-resolution",
+        "title": "Overriding Image Resolutions: the image-resolution property",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-image-resolution-from-image",
+      "href": "https://drafts.csswg.org/css-images-4/#valdef-image-resolution-from-image",
+      "linkingText": [
+        "from-image"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "image-resolution"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-image-resolution",
+        "href": "https://drafts.csswg.org/css-images-4/#the-image-resolution",
+        "title": "Overriding Image Resolutions: the image-resolution property",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "--natural-resolution",
+      "href": "https://drafts.csswg.org/css-images-4/#--natural-resolution",
+      "linkingText": [
+        "natural resolution"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "/"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-image-resolution",
+        "href": "https://drafts.csswg.org/css-images-4/#the-image-resolution",
+        "title": "Overriding Image Resolutions: the image-resolution property",
+        "number": "6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valdef-image-resolution-snap",
+      "href": "https://drafts.csswg.org/css-images-4/#valdef-image-resolution-snap",
+      "linkingText": [
+        "snap"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "image-resolution"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-image-resolution",
+        "href": "https://drafts.csswg.org/css-images-4/#the-image-resolution",
+        "title": "Overriding Image Resolutions: the image-resolution property",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "funcdef--webkit-image-set",
+      "href": "https://drafts.csswg.org/css-images-4/#funcdef--webkit-image-set",
+      "linkingText": [
+        "-webkit-image-set()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "deprecated",
+        "href": "https://drafts.csswg.org/css-images-4/#deprecated",
+        "title": "Appendix A: Deprecated Features and Aliases"
+      },
+      "definedIn": "prose"
+    }
+  ]
+}

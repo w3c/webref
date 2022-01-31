@@ -1,0 +1,101 @@
+{
+  "name": "ContentIndex",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Content Index",
+      "url": "https://wicg.github.io/content-index/spec/"
+    },
+    "fragment": "[Exposed=(Window,Worker)]\ninterface ContentIndex {\n  Promise<undefined> add(ContentDescription description);\n  Promise<undefined> delete(DOMString id);\n  Promise<sequence<ContentDescription>> getAll();\n};",
+    "href": "https://wicg.github.io/content-index/spec/#contentindex"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://wicg.github.io/content-index/spec/": [
+      {
+        "id": "contentindex",
+        "href": "https://wicg.github.io/content-index/spec/#contentindex",
+        "linkingText": [
+          "ContentIndex"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "content-index",
+          "href": "https://wicg.github.io/content-index/spec/#content-index",
+          "title": "ContentIndex",
+          "number": "5.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-contentindex-add",
+        "href": "https://wicg.github.io/content-index/spec/#dom-contentindex-add",
+        "linkingText": [
+          "add(description)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "ContentIndex"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "content-index-add",
+          "href": "https://wicg.github.io/content-index/spec/#content-index-add",
+          "title": "add()",
+          "number": "5.3.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-contentindex-delete",
+        "href": "https://wicg.github.io/content-index/spec/#dom-contentindex-delete",
+        "linkingText": [
+          "delete(id)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "ContentIndex"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "content-index-delete",
+          "href": "https://wicg.github.io/content-index/spec/#content-index-delete",
+          "title": "delete()",
+          "number": "5.3.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-contentindex-getall",
+        "href": "https://wicg.github.io/content-index/spec/#dom-contentindex-getall",
+        "linkingText": [
+          "getAll()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "ContentIndex"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "content-index-getall",
+          "href": "https://wicg.github.io/content-index/spec/#content-index-getall",
+          "title": "getAll()",
+          "number": "5.3.3"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

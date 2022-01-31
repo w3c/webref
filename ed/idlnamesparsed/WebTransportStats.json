@@ -1,0 +1,227 @@
+{
+  "name": "WebTransportStats",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "WebTransport",
+      "url": "https://www.w3.org/TR/webtransport/"
+    },
+    "fragment": "dictionary WebTransportStats {\n  DOMHighResTimeStamp timestamp;\n  unsigned long long bytesSent;\n  unsigned long long packetsSent;\n  unsigned long numOutgoingStreamsCreated;\n  unsigned long numIncomingStreamsCreated;\n  unsigned long long bytesReceived;\n  unsigned long long packetsReceived;\n  DOMHighResTimeStamp minRtt;\n  unsigned long numReceivedDatagramsDropped;\n};",
+    "href": "https://w3c.github.io/webtransport/#dictdef-webtransportstats"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webtransport/": [
+      {
+        "id": "dictdef-webtransportstats",
+        "href": "https://w3c.github.io/webtransport/#dictdef-webtransportstats",
+        "linkingText": [
+          "WebTransportStats"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "web-transport-stats",
+          "href": "https://w3c.github.io/webtransport/#web-transport-stats",
+          "title": "WebTransportStats Dictionary",
+          "number": "6.11"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-webtransportstats-timestamp",
+        "href": "https://w3c.github.io/webtransport/#dom-webtransportstats-timestamp",
+        "linkingText": [
+          "timestamp"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "WebTransportStats"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "web-transport-stats",
+          "href": "https://w3c.github.io/webtransport/#web-transport-stats",
+          "title": "WebTransportStats Dictionary",
+          "number": "6.11"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-webtransportstats-bytessent",
+        "href": "https://w3c.github.io/webtransport/#dom-webtransportstats-bytessent",
+        "linkingText": [
+          "bytesSent"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "WebTransportStats"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "web-transport-stats",
+          "href": "https://w3c.github.io/webtransport/#web-transport-stats",
+          "title": "WebTransportStats Dictionary",
+          "number": "6.11"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-webtransportstats-packetssent",
+        "href": "https://w3c.github.io/webtransport/#dom-webtransportstats-packetssent",
+        "linkingText": [
+          "packetsSent"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "WebTransportStats"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "web-transport-stats",
+          "href": "https://w3c.github.io/webtransport/#web-transport-stats",
+          "title": "WebTransportStats Dictionary",
+          "number": "6.11"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-webtransportstats-numoutgoingstreamscreated",
+        "href": "https://w3c.github.io/webtransport/#dom-webtransportstats-numoutgoingstreamscreated",
+        "linkingText": [
+          "numOutgoingStreamsCreated"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "WebTransportStats"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "web-transport-stats",
+          "href": "https://w3c.github.io/webtransport/#web-transport-stats",
+          "title": "WebTransportStats Dictionary",
+          "number": "6.11"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-webtransportstats-numincomingstreamscreated",
+        "href": "https://w3c.github.io/webtransport/#dom-webtransportstats-numincomingstreamscreated",
+        "linkingText": [
+          "numIncomingStreamsCreated"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "WebTransportStats"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "web-transport-stats",
+          "href": "https://w3c.github.io/webtransport/#web-transport-stats",
+          "title": "WebTransportStats Dictionary",
+          "number": "6.11"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-webtransportstats-bytesreceived",
+        "href": "https://w3c.github.io/webtransport/#dom-webtransportstats-bytesreceived",
+        "linkingText": [
+          "bytesReceived"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "WebTransportStats"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "web-transport-stats",
+          "href": "https://w3c.github.io/webtransport/#web-transport-stats",
+          "title": "WebTransportStats Dictionary",
+          "number": "6.11"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-webtransportstats-packetsreceived",
+        "href": "https://w3c.github.io/webtransport/#dom-webtransportstats-packetsreceived",
+        "linkingText": [
+          "packetsReceived"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "WebTransportStats"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "web-transport-stats",
+          "href": "https://w3c.github.io/webtransport/#web-transport-stats",
+          "title": "WebTransportStats Dictionary",
+          "number": "6.11"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-webtransportstats-minrtt",
+        "href": "https://w3c.github.io/webtransport/#dom-webtransportstats-minrtt",
+        "linkingText": [
+          "minRtt"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "WebTransportStats"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "web-transport-stats",
+          "href": "https://w3c.github.io/webtransport/#web-transport-stats",
+          "title": "WebTransportStats Dictionary",
+          "number": "6.11"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-webtransportstats-numreceiveddatagramsdropped",
+        "href": "https://w3c.github.io/webtransport/#dom-webtransportstats-numreceiveddatagramsdropped",
+        "linkingText": [
+          "numReceivedDatagramsDropped"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "WebTransportStats"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "web-transport-stats",
+          "href": "https://w3c.github.io/webtransport/#web-transport-stats",
+          "title": "WebTransportStats Dictionary",
+          "number": "6.11"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

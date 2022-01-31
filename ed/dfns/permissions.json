@@ -1,0 +1,1418 @@
+{
+  "spec": {
+    "title": "Permissions",
+    "url": "https://w3c.github.io/permissions/"
+  },
+  "dfns": [
+    {
+      "id": "dfn-at-risk",
+      "href": "https://w3c.github.io/permissions/#dfn-at-risk",
+      "linkingText": [
+        "at risk"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "sotd",
+        "href": "https://w3c.github.io/permissions/#sotd",
+        "title": "Status of This Document"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-permission",
+      "href": "https://w3c.github.io/permissions/#dfn-permission",
+      "linkingText": [
+        "permission"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "permissions",
+        "href": "https://w3c.github.io/permissions/#permissions",
+        "title": "Permissions",
+        "number": "2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-states",
+      "href": "https://w3c.github.io/permissions/#dfn-states",
+      "linkingText": [
+        "states"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "permission"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "permissions",
+        "href": "https://w3c.github.io/permissions/#permissions",
+        "title": "Permissions",
+        "number": "2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-prompt",
+      "href": "https://w3c.github.io/permissions/#dfn-prompt",
+      "linkingText": [
+        "Prompt"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "permission"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "permissions",
+        "href": "https://w3c.github.io/permissions/#permissions",
+        "title": "Permissions",
+        "number": "2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-granted",
+      "href": "https://w3c.github.io/permissions/#dfn-granted",
+      "linkingText": [
+        "Granted",
+        "grant"
+      ],
+      "localLinkingText": [
+        "grant"
+      ],
+      "type": "dfn",
+      "for": [
+        "permission"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "permissions",
+        "href": "https://w3c.github.io/permissions/#permissions",
+        "title": "Permissions",
+        "number": "2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-denied",
+      "href": "https://w3c.github.io/permissions/#dfn-denied",
+      "linkingText": [
+        "Denied"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "permission"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "permissions",
+        "href": "https://w3c.github.io/permissions/#permissions",
+        "title": "Permissions",
+        "number": "2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-new-information-about-the-user-s-intent",
+      "href": "https://w3c.github.io/permissions/#dfn-new-information-about-the-user-s-intent",
+      "linkingText": [
+        "new information about the user's intent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "permissions",
+        "href": "https://w3c.github.io/permissions/#permissions",
+        "title": "Permissions",
+        "number": "2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-implicit-signals",
+      "href": "https://w3c.github.io/permissions/#dfn-implicit-signals",
+      "linkingText": [
+        "implicit signals"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "permissions",
+        "href": "https://w3c.github.io/permissions/#permissions",
+        "title": "Permissions",
+        "number": "2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-powerful-feature",
+      "href": "https://w3c.github.io/permissions/#dfn-powerful-feature",
+      "linkingText": [
+        "powerful feature",
+        "feature"
+      ],
+      "localLinkingText": [
+        "feature"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "powerful-features",
+        "href": "https://w3c.github.io/permissions/#powerful-features",
+        "title": "Powerful features",
+        "number": "2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-express-permission",
+      "href": "https://w3c.github.io/permissions/#dfn-express-permission",
+      "linkingText": [
+        "Express permission"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "powerful-features",
+        "href": "https://w3c.github.io/permissions/#powerful-features",
+        "title": "Powerful features",
+        "number": "2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-name",
+      "href": "https://w3c.github.io/permissions/#dfn-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "powerful feature"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "powerful-features",
+        "href": "https://w3c.github.io/permissions/#powerful-features",
+        "title": "Powerful features",
+        "number": "2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-permission-descriptor-type",
+      "href": "https://w3c.github.io/permissions/#dfn-permission-descriptor-type",
+      "linkingText": [
+        "permission descriptor type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "powerful feature"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "specifying-a-powerful-feature",
+        "href": "https://w3c.github.io/permissions/#specifying-a-powerful-feature",
+        "title": "Specifying a powerful feature",
+        "number": "2.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-stronger-than",
+      "href": "https://w3c.github.io/permissions/#dfn-stronger-than",
+      "linkingText": [
+        "stronger than"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PermissionDescriptor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "specifying-a-powerful-feature",
+        "href": "https://w3c.github.io/permissions/#specifying-a-powerful-feature",
+        "title": "Specifying a powerful feature",
+        "number": "2.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-permission-state-constraints",
+      "href": "https://w3c.github.io/permissions/#dfn-permission-state-constraints",
+      "linkingText": [
+        "permission state constraints"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "powerful feature"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "specifying-a-powerful-feature",
+        "href": "https://w3c.github.io/permissions/#specifying-a-powerful-feature",
+        "title": "Specifying a powerful feature",
+        "number": "2.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-extra-permission-data-type",
+      "href": "https://w3c.github.io/permissions/#dfn-extra-permission-data-type",
+      "linkingText": [
+        "extra permission data type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "powerful feature"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "specifying-a-powerful-feature",
+        "href": "https://w3c.github.io/permissions/#specifying-a-powerful-feature",
+        "title": "Specifying a powerful feature",
+        "number": "2.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-extra-permission-data",
+      "href": "https://w3c.github.io/permissions/#dfn-extra-permission-data",
+      "linkingText": [
+        "extra permission data"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "powerful feature"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "specifying-a-powerful-feature",
+        "href": "https://w3c.github.io/permissions/#specifying-a-powerful-feature",
+        "title": "Specifying a powerful feature",
+        "number": "2.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-extra-permission-data-constraints",
+      "href": "https://w3c.github.io/permissions/#dfn-extra-permission-data-constraints",
+      "linkingText": [
+        "extra permission data constraints"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "powerful feature"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "specifying-a-powerful-feature",
+        "href": "https://w3c.github.io/permissions/#specifying-a-powerful-feature",
+        "title": "Specifying a powerful feature",
+        "number": "2.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-permission-result-type",
+      "href": "https://w3c.github.io/permissions/#dfn-permission-result-type",
+      "linkingText": [
+        "permission result type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "powerful feature"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "specifying-a-powerful-feature",
+        "href": "https://w3c.github.io/permissions/#specifying-a-powerful-feature",
+        "title": "Specifying a powerful feature",
+        "number": "2.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-permission-query-algorithm",
+      "href": "https://w3c.github.io/permissions/#dfn-permission-query-algorithm",
+      "linkingText": [
+        "permission query algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "powerful feature"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "specifying-a-powerful-feature",
+        "href": "https://w3c.github.io/permissions/#specifying-a-powerful-feature",
+        "title": "Specifying a powerful feature",
+        "number": "2.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-default-permission-query-algorithm",
+      "href": "https://w3c.github.io/permissions/#dfn-default-permission-query-algorithm",
+      "linkingText": [
+        "default permission query algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "specifying-a-powerful-feature",
+        "href": "https://w3c.github.io/permissions/#specifying-a-powerful-feature",
+        "title": "Specifying a powerful feature",
+        "number": "2.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-permission-revocation-algorithm",
+      "href": "https://w3c.github.io/permissions/#dfn-permission-revocation-algorithm",
+      "linkingText": [
+        "permission revocation algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "powerful feature"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "specifying-a-powerful-feature",
+        "href": "https://w3c.github.io/permissions/#specifying-a-powerful-feature",
+        "title": "Specifying a powerful feature",
+        "number": "2.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-lifetime",
+      "href": "https://w3c.github.io/permissions/#dfn-lifetime",
+      "linkingText": [
+        "lifetime"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "permission"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "specifying-a-powerful-feature",
+        "href": "https://w3c.github.io/permissions/#specifying-a-powerful-feature",
+        "title": "Specifying a powerful feature",
+        "number": "2.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-default-powerful-feature",
+      "href": "https://w3c.github.io/permissions/#dfn-default-powerful-feature",
+      "linkingText": [
+        "default powerful feature"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "specifying-a-powerful-feature",
+        "href": "https://w3c.github.io/permissions/#specifying-a-powerful-feature",
+        "title": "Specifying a powerful feature",
+        "number": "2.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-aspects",
+      "href": "https://w3c.github.io/permissions/#dfn-aspects",
+      "linkingText": [
+        "aspects"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "powerful feature"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "aspects",
+        "href": "https://w3c.github.io/permissions/#aspects",
+        "title": "Aspects",
+        "number": "2.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-getting-the-current-permission-state",
+      "href": "https://w3c.github.io/permissions/#dfn-getting-the-current-permission-state",
+      "linkingText": [
+        "getting the current permission state",
+        "get the current permission state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "reading-the-current-permission-state",
+        "href": "https://w3c.github.io/permissions/#reading-the-current-permission-state",
+        "title": "Reading the current permission state",
+        "number": "2.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-permission-state",
+      "href": "https://w3c.github.io/permissions/#dfn-permission-state",
+      "linkingText": [
+        "permission state",
+        "state"
+      ],
+      "localLinkingText": [
+        "state"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "reading-the-current-permission-state",
+        "href": "https://w3c.github.io/permissions/#reading-the-current-permission-state",
+        "title": "Reading the current permission state",
+        "number": "2.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-request-permission-to-use",
+      "href": "https://w3c.github.io/permissions/#dfn-request-permission-to-use",
+      "linkingText": [
+        "request permission to use",
+        "requesting permission to use"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "requesting-permission-to-use-a-powerful-feature",
+        "href": "https://w3c.github.io/permissions/#requesting-permission-to-use-a-powerful-feature",
+        "title": "Requesting permission to use a powerful feature",
+        "number": "2.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-prompt-the-user-to-choose",
+      "href": "https://w3c.github.io/permissions/#dfn-prompt-the-user-to-choose",
+      "linkingText": [
+        "prompt the user to choose",
+        "prompting the user to choose"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "prompt-the-user-to-choose",
+        "href": "https://w3c.github.io/permissions/#prompt-the-user-to-choose",
+        "title": "Prompt the user to choose",
+        "number": "2.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-react-to-the-user-revoking-permission",
+      "href": "https://w3c.github.io/permissions/#dfn-react-to-the-user-revoking-permission",
+      "linkingText": [
+        "react to the user revoking permission"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "reacting-to-users-revoking-permission",
+        "href": "https://w3c.github.io/permissions/#reacting-to-users-revoking-permission",
+        "title": "Reacting to users revoking permission",
+        "number": "2.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-navigator-permissions",
+      "href": "https://w3c.github.io/permissions/#dom-navigator-permissions",
+      "linkingText": [
+        "permissions"
+      ],
+      "localLinkingText": [
+        "Navigator.permissions"
+      ],
+      "type": "attribute",
+      "for": [
+        "Navigator"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "extensions-to-the-navigator-and-workernavigator-interfaces",
+        "href": "https://w3c.github.io/permissions/#extensions-to-the-navigator-and-workernavigator-interfaces",
+        "title": "Extensions to the Navigator and WorkerNavigator interfaces",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-workernavigator-permissions",
+      "href": "https://w3c.github.io/permissions/#dom-workernavigator-permissions",
+      "linkingText": [
+        "permissions"
+      ],
+      "localLinkingText": [
+        "WorkerNavigator.permissions"
+      ],
+      "type": "attribute",
+      "for": [
+        "WorkerNavigator"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "extensions-to-the-navigator-and-workernavigator-interfaces",
+        "href": "https://w3c.github.io/permissions/#extensions-to-the-navigator-and-workernavigator-interfaces",
+        "title": "Extensions to the Navigator and WorkerNavigator interfaces",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-permissions",
+      "href": "https://w3c.github.io/permissions/#dom-permissions",
+      "linkingText": [
+        "Permissions"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "permissions-interface-0",
+        "href": "https://w3c.github.io/permissions/#permissions-interface-0",
+        "title": "Permissions interface",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-permissiondescriptor",
+      "href": "https://w3c.github.io/permissions/#dom-permissiondescriptor",
+      "linkingText": [
+        "PermissionDescriptor"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "permissions-interface-0",
+        "href": "https://w3c.github.io/permissions/#permissions-interface-0",
+        "title": "Permissions interface",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-permissiondescriptor-name",
+      "href": "https://w3c.github.io/permissions/#dom-permissiondescriptor-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PermissionDescriptor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "permissions-interface-0",
+        "href": "https://w3c.github.io/permissions/#permissions-interface-0",
+        "title": "Permissions interface",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-permissions-query",
+      "href": "https://w3c.github.io/permissions/#dom-permissions-query",
+      "linkingText": [
+        "query()",
+        "query(permissionDesc)"
+      ],
+      "localLinkingText": [
+        "Permissions.query",
+        "Permissions.query()",
+        "query"
+      ],
+      "type": "method",
+      "for": [
+        "Permissions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "query-method-0",
+        "href": "https://w3c.github.io/permissions/#query-method-0",
+        "title": "query() method",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-query-a-permission",
+      "href": "https://w3c.github.io/permissions/#dfn-query-a-permission",
+      "linkingText": [
+        "query a permission"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "query-method-0",
+        "href": "https://w3c.github.io/permissions/#query-method-0",
+        "title": "query() method",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-permissionstatus",
+      "href": "https://w3c.github.io/permissions/#dom-permissionstatus",
+      "linkingText": [
+        "PermissionStatus"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "permissionstatus-interface-0",
+        "href": "https://w3c.github.io/permissions/#permissionstatus-interface-0",
+        "title": "PermissionStatus interface",
+        "number": "5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-permissionstate",
+      "href": "https://w3c.github.io/permissions/#dom-permissionstate",
+      "linkingText": [
+        "PermissionState"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "permissionstatus-interface-0",
+        "href": "https://w3c.github.io/permissions/#permissionstatus-interface-0",
+        "title": "PermissionStatus interface",
+        "number": "5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dfn-query",
+      "href": "https://w3c.github.io/permissions/#dfn-query",
+      "linkingText": [
+        "[[query]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PermissionStatus"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "permissionstatus-interface-0",
+        "href": "https://w3c.github.io/permissions/#permissionstatus-interface-0",
+        "title": "PermissionStatus interface",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-permissionstate-granted",
+      "href": "https://w3c.github.io/permissions/#dom-permissionstate-granted",
+      "linkingText": [
+        "granted"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PermissionState"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "permissionstatus-interface-0",
+        "href": "https://w3c.github.io/permissions/#permissionstatus-interface-0",
+        "title": "PermissionStatus interface",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-permissionstate-denied",
+      "href": "https://w3c.github.io/permissions/#dom-permissionstate-denied",
+      "linkingText": [
+        "denied"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PermissionState"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "permissionstatus-interface-0",
+        "href": "https://w3c.github.io/permissions/#permissionstatus-interface-0",
+        "title": "PermissionStatus interface",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-permissionstate-prompt",
+      "href": "https://w3c.github.io/permissions/#dom-permissionstate-prompt",
+      "linkingText": [
+        "prompt"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PermissionState"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "permissionstatus-interface-0",
+        "href": "https://w3c.github.io/permissions/#permissionstatus-interface-0",
+        "title": "PermissionStatus interface",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-create-a-permissionstatus",
+      "href": "https://w3c.github.io/permissions/#dfn-create-a-permissionstatus",
+      "linkingText": [
+        "create a PermissionStatus"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "creating-instances",
+        "href": "https://w3c.github.io/permissions/#creating-instances",
+        "title": "Creating instances",
+        "number": "5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-permissionstatus-name",
+      "href": "https://w3c.github.io/permissions/#dom-permissionstatus-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [
+        "PermissionStatus.name"
+      ],
+      "type": "attribute",
+      "for": [
+        "PermissionStatus"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "name-attribute",
+        "href": "https://w3c.github.io/permissions/#name-attribute",
+        "title": "name attribute",
+        "number": "5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-permissionstatus-state",
+      "href": "https://w3c.github.io/permissions/#dom-permissionstatus-state",
+      "linkingText": [
+        "state"
+      ],
+      "localLinkingText": [
+        "PermissionStatus.state"
+      ],
+      "type": "attribute",
+      "for": [
+        "PermissionStatus"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "state-attribute",
+        "href": "https://w3c.github.io/permissions/#state-attribute",
+        "title": "state attribute",
+        "number": "5.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-permissionstatus-onchange",
+      "href": "https://w3c.github.io/permissions/#dom-permissionstatus-onchange",
+      "linkingText": [
+        "onchange"
+      ],
+      "localLinkingText": [
+        "PermissionStatus.onchange"
+      ],
+      "type": "attribute",
+      "for": [
+        "PermissionStatus"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "onchange-attribute",
+        "href": "https://w3c.github.io/permissions/#onchange-attribute",
+        "title": "onchange attribute",
+        "number": "5.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-permissionstatus-update-steps",
+      "href": "https://w3c.github.io/permissions/#dfn-permissionstatus-update-steps",
+      "linkingText": [
+        "PermissionStatus update steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "onchange-attribute",
+        "href": "https://w3c.github.io/permissions/#onchange-attribute",
+        "title": "onchange attribute",
+        "number": "5.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-permissions-task-source",
+      "href": "https://w3c.github.io/permissions/#dfn-permissions-task-source",
+      "linkingText": [
+        "permissions task source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "onchange-attribute",
+        "href": "https://w3c.github.io/permissions/#onchange-attribute",
+        "title": "onchange attribute",
+        "number": "5.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-permissionname",
+      "href": "https://w3c.github.io/permissions/#dom-permissionname",
+      "linkingText": [
+        "PermissionName"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "powerful-features-registry",
+        "href": "https://w3c.github.io/permissions/#powerful-features-registry",
+        "title": "Powerful features registry",
+        "number": "6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-permissionname-accelerometer",
+      "href": "https://w3c.github.io/permissions/#dom-permissionname-accelerometer",
+      "linkingText": [
+        "accelerometer"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PermissionName"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "powerful-features-registry",
+        "href": "https://w3c.github.io/permissions/#powerful-features-registry",
+        "title": "Powerful features registry",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-permissionname-ambient-light-sensor",
+      "href": "https://w3c.github.io/permissions/#dom-permissionname-ambient-light-sensor",
+      "linkingText": [
+        "ambient-light-sensor"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PermissionName"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "powerful-features-registry",
+        "href": "https://w3c.github.io/permissions/#powerful-features-registry",
+        "title": "Powerful features registry",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-permissionname-background-fetch",
+      "href": "https://w3c.github.io/permissions/#dom-permissionname-background-fetch",
+      "linkingText": [
+        "background-fetch"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PermissionName"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "powerful-features-registry",
+        "href": "https://w3c.github.io/permissions/#powerful-features-registry",
+        "title": "Powerful features registry",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-permissionname-background-sync",
+      "href": "https://w3c.github.io/permissions/#dom-permissionname-background-sync",
+      "linkingText": [
+        "background-sync"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PermissionName"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "powerful-features-registry",
+        "href": "https://w3c.github.io/permissions/#powerful-features-registry",
+        "title": "Powerful features registry",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-permissionname-bluetooth",
+      "href": "https://w3c.github.io/permissions/#dom-permissionname-bluetooth",
+      "linkingText": [
+        "bluetooth"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PermissionName"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "powerful-features-registry",
+        "href": "https://w3c.github.io/permissions/#powerful-features-registry",
+        "title": "Powerful features registry",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-permissionname-camera",
+      "href": "https://w3c.github.io/permissions/#dom-permissionname-camera",
+      "linkingText": [
+        "camera"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PermissionName"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "powerful-features-registry",
+        "href": "https://w3c.github.io/permissions/#powerful-features-registry",
+        "title": "Powerful features registry",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-permissionname-microphone",
+      "href": "https://w3c.github.io/permissions/#dom-permissionname-microphone",
+      "linkingText": [
+        "microphone"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PermissionName"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "powerful-features-registry",
+        "href": "https://w3c.github.io/permissions/#powerful-features-registry",
+        "title": "Powerful features registry",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-permissionname-display-capture",
+      "href": "https://w3c.github.io/permissions/#dom-permissionname-display-capture",
+      "linkingText": [
+        "display-capture"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PermissionName"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "powerful-features-registry",
+        "href": "https://w3c.github.io/permissions/#powerful-features-registry",
+        "title": "Powerful features registry",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-permissionname-geolocation",
+      "href": "https://w3c.github.io/permissions/#dom-permissionname-geolocation",
+      "linkingText": [
+        "geolocation"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PermissionName"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "powerful-features-registry",
+        "href": "https://w3c.github.io/permissions/#powerful-features-registry",
+        "title": "Powerful features registry",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-permissionname-gyroscope",
+      "href": "https://w3c.github.io/permissions/#dom-permissionname-gyroscope",
+      "linkingText": [
+        "gyroscope"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PermissionName"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "powerful-features-registry",
+        "href": "https://w3c.github.io/permissions/#powerful-features-registry",
+        "title": "Powerful features registry",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-permissionname-magnetometer",
+      "href": "https://w3c.github.io/permissions/#dom-permissionname-magnetometer",
+      "linkingText": [
+        "magnetometer"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PermissionName"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "powerful-features-registry",
+        "href": "https://w3c.github.io/permissions/#powerful-features-registry",
+        "title": "Powerful features registry",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-permissionname-midi",
+      "href": "https://w3c.github.io/permissions/#dom-permissionname-midi",
+      "linkingText": [
+        "midi"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PermissionName"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "powerful-features-registry",
+        "href": "https://w3c.github.io/permissions/#powerful-features-registry",
+        "title": "Powerful features registry",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-permissionname-nfc",
+      "href": "https://w3c.github.io/permissions/#dom-permissionname-nfc",
+      "linkingText": [
+        "nfc"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PermissionName"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "powerful-features-registry",
+        "href": "https://w3c.github.io/permissions/#powerful-features-registry",
+        "title": "Powerful features registry",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-permissionname-notifications",
+      "href": "https://w3c.github.io/permissions/#dom-permissionname-notifications",
+      "linkingText": [
+        "notifications"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PermissionName"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "powerful-features-registry",
+        "href": "https://w3c.github.io/permissions/#powerful-features-registry",
+        "title": "Powerful features registry",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-permissionname-persistent-storage",
+      "href": "https://w3c.github.io/permissions/#dom-permissionname-persistent-storage",
+      "linkingText": [
+        "persistent-storage"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PermissionName"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "powerful-features-registry",
+        "href": "https://w3c.github.io/permissions/#powerful-features-registry",
+        "title": "Powerful features registry",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-permissionname-push",
+      "href": "https://w3c.github.io/permissions/#dom-permissionname-push",
+      "linkingText": [
+        "push"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PermissionName"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "powerful-features-registry",
+        "href": "https://w3c.github.io/permissions/#powerful-features-registry",
+        "title": "Powerful features registry",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-permissionname-speaker-selection",
+      "href": "https://w3c.github.io/permissions/#dom-permissionname-speaker-selection",
+      "linkingText": [
+        "speaker-selection"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PermissionName"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "powerful-features-registry",
+        "href": "https://w3c.github.io/permissions/#powerful-features-registry",
+        "title": "Powerful features registry",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-permissionname-xr-spatial-tracking",
+      "href": "https://w3c.github.io/permissions/#dom-permissionname-xr-spatial-tracking",
+      "linkingText": [
+        "xr-spatial-tracking"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PermissionName"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "powerful-features-registry",
+        "href": "https://w3c.github.io/permissions/#powerful-features-registry",
+        "title": "Powerful features registry",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-permissionname-screen-wake-lock",
+      "href": "https://w3c.github.io/permissions/#dom-permissionname-screen-wake-lock",
+      "linkingText": [
+        "screen-wake-lock"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PermissionName"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "screen-wake-lock-0",
+        "href": "https://w3c.github.io/permissions/#screen-wake-lock-0",
+        "title": "Screen wake lock",
+        "number": "6.1"
+      },
+      "definedIn": "prose"
+    }
+  ]
+}

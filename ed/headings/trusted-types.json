@@ -1,0 +1,561 @@
+{
+  "spec": {
+    "title": "Trusted Types",
+    "url": "https://w3c.github.io/webappsec-trusted-types/dist/spec/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#title",
+      "level": 1,
+      "title": "Trusted Types"
+    },
+    {
+      "id": "abstract",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "status",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#status",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "introduction",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#introduction",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "goals",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#goals",
+      "level": 3,
+      "title": "Goals",
+      "number": "1.1"
+    },
+    {
+      "id": "non-goals",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#non-goals",
+      "level": 3,
+      "title": "Non-goals",
+      "number": "1.2"
+    },
+    {
+      "id": "use-cases",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#use-cases",
+      "level": 3,
+      "title": "Use cases",
+      "number": "1.3"
+    },
+    {
+      "id": "framework",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#framework",
+      "level": 2,
+      "title": "Framework",
+      "number": "2"
+    },
+    {
+      "id": "injection-sinks",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#injection-sinks",
+      "level": 3,
+      "title": "Injection sinks",
+      "number": "2.1"
+    },
+    {
+      "id": "html-injection-sinks",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#html-injection-sinks",
+      "level": 4,
+      "title": "HTML injection sinks",
+      "number": "2.1.1"
+    },
+    {
+      "id": "dom-xss-injection-sinks",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#dom-xss-injection-sinks",
+      "level": 4,
+      "title": "DOM XSS injection sinks",
+      "number": "2.1.2"
+    },
+    {
+      "id": "trusted-types",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#trusted-types",
+      "level": 3,
+      "title": "Trusted Types",
+      "number": "2.2"
+    },
+    {
+      "id": "trusted-html",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#trusted-html",
+      "level": 4,
+      "title": "TrustedHTML",
+      "number": "2.2.1"
+    },
+    {
+      "id": "trusted-script",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#trusted-script",
+      "level": 4,
+      "title": "TrustedScript",
+      "number": "2.2.2"
+    },
+    {
+      "id": "trused-script-url",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#trused-script-url",
+      "level": 4,
+      "title": "TrustedScriptURL",
+      "number": "2.2.3"
+    },
+    {
+      "id": "policies-hdr",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#policies-hdr",
+      "level": 3,
+      "title": "Policies",
+      "number": "2.3"
+    },
+    {
+      "id": "trusted-type-policy-factory",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#trusted-type-policy-factory",
+      "level": 4,
+      "title": "TrustedTypePolicyFactory",
+      "number": "2.3.1"
+    },
+    {
+      "id": "trusted-type-policy",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#trusted-type-policy",
+      "level": 4,
+      "title": "TrustedTypePolicy",
+      "number": "2.3.2"
+    },
+    {
+      "id": "trusted-type-policy-options",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#trusted-type-policy-options",
+      "level": 4,
+      "title": "TrustedTypePolicyOptions",
+      "number": "2.3.3"
+    },
+    {
+      "id": "default-policy-hdr",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#default-policy-hdr",
+      "level": 4,
+      "title": "Default policy",
+      "number": "2.3.4"
+    },
+    {
+      "id": "enforcement-hdr",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#enforcement-hdr",
+      "level": 3,
+      "title": "Enforcement",
+      "number": "2.4"
+    },
+    {
+      "id": "content-security-policy-hdr",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#content-security-policy-hdr",
+      "level": 4,
+      "title": "Content Security Policy",
+      "number": "2.4.1"
+    },
+    {
+      "id": "algorithms",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#algorithms",
+      "level": 2,
+      "title": "Algorithms",
+      "number": "3"
+    },
+    {
+      "id": "create-trusted-type-policy-algorithm",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#create-trusted-type-policy-algorithm",
+      "level": 3,
+      "title": "Create a Trusted Type Policy",
+      "number": "3.1"
+    },
+    {
+      "id": "create-a-trusted-type-algorithm",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#create-a-trusted-type-algorithm",
+      "level": 3,
+      "title": "Create a Trusted Type",
+      "number": "3.2"
+    },
+    {
+      "id": "create-a-trusted-type-from-literal-algorithm",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#create-a-trusted-type-from-literal-algorithm",
+      "level": 3,
+      "title": "Create a Trusted Type from literal",
+      "number": "3.3"
+    },
+    {
+      "id": "check-templatedness-algorithm",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#check-templatedness-algorithm",
+      "level": 3,
+      "title": "Check templatedness of an object",
+      "number": "3.4"
+    },
+    {
+      "id": "get-trusted-type-compliant-string-algorithm",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#get-trusted-type-compliant-string-algorithm",
+      "level": 3,
+      "title": "Get Trusted Type compliant string",
+      "number": "3.5"
+    },
+    {
+      "id": "process-value-with-a-default-policy-algorithm",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#process-value-with-a-default-policy-algorithm",
+      "level": 3,
+      "title": "Process value with a default policy",
+      "number": "3.6"
+    },
+    {
+      "id": "prepare-script-url-and-text",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#prepare-script-url-and-text",
+      "level": 3,
+      "title": "Prepare the script URL and text",
+      "number": "3.7"
+    },
+    {
+      "id": "integrations",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#integrations",
+      "level": 2,
+      "title": "Integrations",
+      "number": "4"
+    },
+    {
+      "id": "webidl-integration",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#webidl-integration",
+      "level": 3,
+      "title": "Integration with WebIDL",
+      "number": "4.1"
+    },
+    {
+      "id": "StringContext",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#StringContext",
+      "level": 3,
+      "title": "[StringContext]",
+      "number": "4.2"
+    },
+    {
+      "id": "webidl-applicable-to-types",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#webidl-applicable-to-types",
+      "level": 4,
+      "title": "Extended attributes applicable to types",
+      "number": "4.2.1"
+    },
+    {
+      "id": "webidl-type-conversion",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#webidl-type-conversion",
+      "level": 4,
+      "title": "Type conversion",
+      "number": "4.2.2"
+    },
+    {
+      "id": "webidl-validate-the-string-in-context",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#webidl-validate-the-string-in-context",
+      "level": 4,
+      "title": "Validate the string in context",
+      "number": "4.2.3"
+    },
+    {
+      "id": "integration-with-html",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#integration-with-html",
+      "level": 3,
+      "title": "Integration with HTML",
+      "number": "4.3"
+    },
+    {
+      "id": "extensions-to-the-windoworworkerglobalscope-interface",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#extensions-to-the-windoworworkerglobalscope-interface",
+      "level": 4,
+      "title": "Extensions to the WindowOrWorkerGlobalScope interface",
+      "number": "4.3.1"
+    },
+    {
+      "id": "extensions-to-the-document-interface",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#extensions-to-the-document-interface",
+      "level": 4,
+      "title": "Extensions to the Document interface",
+      "number": "4.3.2"
+    },
+    {
+      "id": "enforcement-in-scripts",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#enforcement-in-scripts",
+      "level": 4,
+      "title": "Enforcement for scripts",
+      "number": "4.3.3"
+    },
+    {
+      "id": "slots-with-trusted-values",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#slots-with-trusted-values",
+      "level": 5,
+      "title": "Slots with trusted values",
+      "number": "4.3.3.1"
+    },
+    {
+      "id": "setting-slot-values",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#setting-slot-values",
+      "level": 5,
+      "title": "Setting slot values",
+      "number": "4.3.3.2"
+    },
+    {
+      "id": "slot-value-verification",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#slot-value-verification",
+      "level": 5,
+      "title": "Slot value verification",
+      "number": "4.3.3.3"
+    },
+    {
+      "id": "enforcement-in-sinks",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#enforcement-in-sinks",
+      "level": 4,
+      "title": "Enforcement in element attributes",
+      "number": "4.3.4"
+    },
+    {
+      "id": "enforcement-in-timer-functions",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#enforcement-in-timer-functions",
+      "level": 4,
+      "title": "Enforcement in timer functions",
+      "number": "4.3.5"
+    },
+    {
+      "id": "enforcement-in-event-handler-content-attributes",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#enforcement-in-event-handler-content-attributes",
+      "level": 4,
+      "title": "Enforcement in event handler content attributes",
+      "number": "4.3.6"
+    },
+    {
+      "id": "html-validate-the-string-in-context",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#html-validate-the-string-in-context",
+      "level": 4,
+      "title": "Validate the string in context",
+      "number": "4.3.7"
+    },
+    {
+      "id": "html-workers",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#html-workers",
+      "level": 4,
+      "title": "Web Workers",
+      "number": "4.3.8"
+    },
+    {
+      "id": "sw-integration",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#sw-integration",
+      "level": 3,
+      "title": "Integration with Service Workers",
+      "number": "4.4"
+    },
+    {
+      "id": "integration-with-svg",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#integration-with-svg",
+      "level": 3,
+      "title": "Integration with SVG",
+      "number": "4.5"
+    },
+    {
+      "id": "integration-with-dom",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#integration-with-dom",
+      "level": 3,
+      "title": "Integration with DOM",
+      "number": "4.6"
+    },
+    {
+      "id": "integration-with-dom-parsing",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#integration-with-dom-parsing",
+      "level": 3,
+      "title": "Integration with DOM Parsing",
+      "number": "4.7"
+    },
+    {
+      "id": "integration-with-exec-command",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#integration-with-exec-command",
+      "level": 3,
+      "title": "Integration with execCommand",
+      "number": "4.8"
+    },
+    {
+      "id": "integration-with-content-security-policy",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#integration-with-content-security-policy",
+      "level": 3,
+      "title": "Integration with Content Security Policy",
+      "number": "4.9"
+    },
+    {
+      "id": "require-trusted-types-for-csp-directive",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#require-trusted-types-for-csp-directive",
+      "level": 4,
+      "title": "require-trusted-types-for directive",
+      "number": "4.9.1"
+    },
+    {
+      "id": "require-trusted-types-for-pre-navigation-check",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#require-trusted-types-for-pre-navigation-check",
+      "level": 5,
+      "title": "require-trusted-types-for Pre-Navigation check",
+      "number": "4.9.1.1"
+    },
+    {
+      "id": "trusted-types-csp-directive",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#trusted-types-csp-directive",
+      "level": 4,
+      "title": "trusted-types directive",
+      "number": "4.9.2"
+    },
+    {
+      "id": "should-block-sink-type-mismatch",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#should-block-sink-type-mismatch",
+      "level": 4,
+      "title": "Should sink type mismatch violation be blocked by Content Security Policy?",
+      "number": "4.9.3"
+    },
+    {
+      "id": "should-block-create-policy",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#should-block-create-policy",
+      "level": 4,
+      "title": "Should Trusted Type policy creation be blocked by Content Security Policy?",
+      "number": "4.9.4"
+    },
+    {
+      "id": "csp-violation-object-hdr",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#csp-violation-object-hdr",
+      "level": 4,
+      "title": "Violation object changes",
+      "number": "4.9.5"
+    },
+    {
+      "id": "csp-eval",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#csp-eval",
+      "level": 4,
+      "title": "Support for dynamic code compilation",
+      "number": "4.9.6"
+    },
+    {
+      "id": "security-considerations",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#security-considerations",
+      "level": 2,
+      "title": "Security Considerations",
+      "number": "5"
+    },
+    {
+      "id": "cross-document-vectors",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#cross-document-vectors",
+      "level": 3,
+      "title": "Cross-document vectors",
+      "number": "5.1"
+    },
+    {
+      "id": "deprecated-features",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#deprecated-features",
+      "level": 3,
+      "title": "Deprecated features",
+      "number": "5.2"
+    },
+    {
+      "id": "plugins",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#plugins",
+      "level": 3,
+      "title": "Plugin navigation",
+      "number": "5.3"
+    },
+    {
+      "id": "script-gadgets",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#script-gadgets",
+      "level": 3,
+      "title": "Script gadgets",
+      "number": "5.4"
+    },
+    {
+      "id": "best-practices-for-policy-design",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#best-practices-for-policy-design",
+      "level": 3,
+      "title": "Best practices for policy design",
+      "number": "5.5"
+    },
+    {
+      "id": "privacy-considerations",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#privacy-considerations",
+      "level": 2,
+      "title": "Privacy Considerations",
+      "number": "6"
+    },
+    {
+      "id": "implementation-considerations",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#implementation-considerations",
+      "level": 2,
+      "title": "Implementation Considerations",
+      "number": "7"
+    },
+    {
+      "id": "vendor-specific-extensions-and-addons",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#vendor-specific-extensions-and-addons",
+      "level": 3,
+      "title": "Vendor-specific Extensions and Addons",
+      "number": "7.1"
+    },
+    {
+      "id": "conformance",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "conventions",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "conformant-algorithms",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#conformant-algorithms",
+      "level": 3,
+      "title": "Conformant Algorithms"
+    },
+    {
+      "id": "index",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#informative",
+      "level": 3,
+      "title": "Informative References"
+    },
+    {
+      "id": "issues-index",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#issues-index",
+      "level": 2,
+      "title": "Issues Index"
+    }
+  ]
+}

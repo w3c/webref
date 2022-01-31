@@ -1,0 +1,614 @@
+{
+  "name": "RTCDataChannel",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
+      "url": "https://www.w3.org/TR/webrtc/"
+    },
+    "fragment": "[Exposed=Window]\ninterface RTCDataChannel : EventTarget {\n  readonly attribute USVString label;\n  readonly attribute boolean ordered;\n  readonly attribute unsigned short? maxPacketLifeTime;\n  readonly attribute unsigned short? maxRetransmits;\n  readonly attribute USVString protocol;\n  readonly attribute boolean negotiated;\n  readonly attribute unsigned short? id;\n  readonly attribute RTCDataChannelState readyState;\n  readonly attribute unsigned long bufferedAmount;\n  [EnforceRange] attribute unsigned long bufferedAmountLowThreshold;\n  attribute EventHandler onopen;\n  attribute EventHandler onbufferedamountlow;\n  attribute EventHandler onerror;\n  attribute EventHandler onclosing;\n  attribute EventHandler onclose;\n  undefined close();\n  attribute EventHandler onmessage;\n  attribute BinaryType binaryType;\n  undefined send(USVString data);\n  undefined send(Blob data);\n  undefined send(ArrayBuffer data);\n  undefined send(ArrayBufferView data);\n};",
+    "href": "https://w3c.github.io/webrtc-pc/#dom-rtcdatachannel"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "WebRTC Priority Control API",
+        "url": "https://www.w3.org/TR/webrtc-priority/"
+      },
+      "fragment": "partial interface RTCDataChannel {\n  readonly attribute RTCPriorityType priority;\n};"
+    }
+  ],
+  "inheritance": {
+    "name": "EventTarget",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=*]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+      "href": "https://dom.spec.whatwg.org/#eventtarget"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webrtc/": [
+      {
+        "id": "dom-rtcdatachannel",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcdatachannel",
+        "linkingText": [
+          "RTCDataChannel"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "rtcdatachannel",
+          "href": "https://w3c.github.io/webrtc-pc/#rtcdatachannel",
+          "title": "RTCDataChannel",
+          "number": "6.2"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-datachannel-label",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-datachannel-label",
+        "linkingText": [
+          "label"
+        ],
+        "localLinkingText": [
+          "RTCDataChannel.label"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCDataChannel"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-17",
+          "href": "https://w3c.github.io/webrtc-pc/#attributes-17",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-datachannel-ordered",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-datachannel-ordered",
+        "linkingText": [
+          "ordered"
+        ],
+        "localLinkingText": [
+          "RTCDataChannel.ordered"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCDataChannel"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-17",
+          "href": "https://w3c.github.io/webrtc-pc/#attributes-17",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-datachannel-maxpacketlifetime",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-datachannel-maxpacketlifetime",
+        "linkingText": [
+          "maxPacketLifeTime"
+        ],
+        "localLinkingText": [
+          "RTCDataChannel.maxPacketLifeTime"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCDataChannel"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-17",
+          "href": "https://w3c.github.io/webrtc-pc/#attributes-17",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-datachannel-maxretransmits",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-datachannel-maxretransmits",
+        "linkingText": [
+          "maxRetransmits"
+        ],
+        "localLinkingText": [
+          "RTCDataChannel.maxRetransmits"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCDataChannel"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-17",
+          "href": "https://w3c.github.io/webrtc-pc/#attributes-17",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-datachannel-protocol",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-datachannel-protocol",
+        "linkingText": [
+          "protocol"
+        ],
+        "localLinkingText": [
+          "RTCDataChannel.protocol"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCDataChannel"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-17",
+          "href": "https://w3c.github.io/webrtc-pc/#attributes-17",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-datachannel-negotiated",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-datachannel-negotiated",
+        "linkingText": [
+          "negotiated"
+        ],
+        "localLinkingText": [
+          "RTCDataChannel.negotiated"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCDataChannel"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-17",
+          "href": "https://w3c.github.io/webrtc-pc/#attributes-17",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcdatachannel-id",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcdatachannel-id",
+        "linkingText": [
+          "id"
+        ],
+        "localLinkingText": [
+          "RTCDataChannel.id"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCDataChannel"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-17",
+          "href": "https://w3c.github.io/webrtc-pc/#attributes-17",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-datachannel-readystate",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-datachannel-readystate",
+        "linkingText": [
+          "readyState"
+        ],
+        "localLinkingText": [
+          "RTCDataChannel.readyState"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCDataChannel"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-17",
+          "href": "https://w3c.github.io/webrtc-pc/#attributes-17",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-datachannel-bufferedamount",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-datachannel-bufferedamount",
+        "linkingText": [
+          "bufferedAmount"
+        ],
+        "localLinkingText": [
+          "RTCDataChannel.bufferedAmount"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCDataChannel"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-17",
+          "href": "https://w3c.github.io/webrtc-pc/#attributes-17",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcdatachannel-bufferedamountlowthreshold",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcdatachannel-bufferedamountlowthreshold",
+        "linkingText": [
+          "bufferedAmountLowThreshold"
+        ],
+        "localLinkingText": [
+          "RTCDataChannel.bufferedAmountLowThreshold"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCDataChannel"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-17",
+          "href": "https://w3c.github.io/webrtc-pc/#attributes-17",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcdatachannel-onopen",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcdatachannel-onopen",
+        "linkingText": [
+          "onopen"
+        ],
+        "localLinkingText": [
+          "RTCDataChannel.onopen"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCDataChannel"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-17",
+          "href": "https://w3c.github.io/webrtc-pc/#attributes-17",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcdatachannel-onbufferedamountlow",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcdatachannel-onbufferedamountlow",
+        "linkingText": [
+          "onbufferedamountlow"
+        ],
+        "localLinkingText": [
+          "RTCDataChannel.onbufferedamountlow"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCDataChannel"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-17",
+          "href": "https://w3c.github.io/webrtc-pc/#attributes-17",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcdatachannel-onerror",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcdatachannel-onerror",
+        "linkingText": [
+          "onerror"
+        ],
+        "localLinkingText": [
+          "RTCDataChannel.onerror"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCDataChannel"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-17",
+          "href": "https://w3c.github.io/webrtc-pc/#attributes-17",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcdatachannel-onclosing",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcdatachannel-onclosing",
+        "linkingText": [
+          "onclosing"
+        ],
+        "localLinkingText": [
+          "RTCDataChannel.onclosing"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCDataChannel"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-17",
+          "href": "https://w3c.github.io/webrtc-pc/#attributes-17",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcdatachannel-onclose",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcdatachannel-onclose",
+        "linkingText": [
+          "onclose"
+        ],
+        "localLinkingText": [
+          "RTCDataChannel.onclose"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCDataChannel"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-17",
+          "href": "https://w3c.github.io/webrtc-pc/#attributes-17",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcdatachannel-close",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcdatachannel-close",
+        "linkingText": [
+          "close()"
+        ],
+        "localLinkingText": [
+          "RTCDataChannel.close",
+          "RTCDataChannel.close()",
+          "close"
+        ],
+        "type": "method",
+        "for": [
+          "RTCDataChannel"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "methods-12",
+          "href": "https://w3c.github.io/webrtc-pc/#methods-12",
+          "title": "Methods"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcdatachannel-onmessage",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcdatachannel-onmessage",
+        "linkingText": [
+          "onmessage"
+        ],
+        "localLinkingText": [
+          "RTCDataChannel.onmessage"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCDataChannel"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-17",
+          "href": "https://w3c.github.io/webrtc-pc/#attributes-17",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-datachannel-binarytype",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-datachannel-binarytype",
+        "linkingText": [
+          "binaryType"
+        ],
+        "localLinkingText": [
+          "RTCDataChannel.binaryType"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCDataChannel"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-17",
+          "href": "https://w3c.github.io/webrtc-pc/#attributes-17",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcdatachannel-send",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcdatachannel-send",
+        "linkingText": [
+          "send()",
+          "send(data)"
+        ],
+        "localLinkingText": [
+          "RTCDataChannel.send",
+          "RTCDataChannel.send()",
+          "send"
+        ],
+        "type": "method",
+        "for": [
+          "RTCDataChannel"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "methods-12",
+          "href": "https://w3c.github.io/webrtc-pc/#methods-12",
+          "title": "Methods"
+        },
+        "definedIn": "dt"
+      }
+    ],
+    "https://www.w3.org/TR/webrtc-priority/": [
+      {
+        "id": "dom-rtcdatachannel-priority",
+        "href": "https://w3c.github.io/webrtc-priority/#dom-rtcdatachannel-priority",
+        "linkingText": [
+          "priority"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "RTCDataChannel"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "new-rtcdatachannel-attribute",
+          "href": "https://w3c.github.io/webrtc-priority/#new-rtcdatachannel-attribute",
+          "title": "New RTCDataChannel attribute",
+          "number": "4.1"
+        },
+        "definedIn": "dt"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "eventtarget",
+        "href": "https://dom.spec.whatwg.org/#eventtarget",
+        "linkingText": [
+          "EventTarget"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventtarget-eventtarget",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-eventtarget",
+        "linkingText": [
+          "EventTarget()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-addeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-addeventlistener",
+        "linkingText": [
+          "addEventListener(type, callback, options)",
+          "addEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-removeeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-removeeventlistener",
+        "linkingText": [
+          "removeEventListener(type, callback, options)",
+          "removeEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-dispatchevent",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-dispatchevent",
+        "linkingText": [
+          "dispatchEvent(event)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

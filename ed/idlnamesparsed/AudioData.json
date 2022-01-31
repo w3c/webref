@@ -1,0 +1,270 @@
+{
+  "name": "AudioData",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebCodecs",
+      "url": "https://www.w3.org/TR/webcodecs/"
+    },
+    "fragment": "[Exposed=(Window,DedicatedWorker), Serializable, Transferable]\ninterface AudioData {\n  constructor(AudioDataInit init);\n\n  readonly attribute AudioSampleFormat? format;\n  readonly attribute float sampleRate;\n  readonly attribute unsigned long numberOfFrames;\n  readonly attribute unsigned long numberOfChannels;\n  readonly attribute unsigned long long duration;  // microseconds\n  readonly attribute long long timestamp;          // microseconds\n\n  unsigned long allocationSize(AudioDataCopyToOptions options);\n  undefined copyTo([AllowShared] BufferSource destination, AudioDataCopyToOptions options);\n  AudioData clone();\n  undefined close();\n};",
+    "href": "https://w3c.github.io/webcodecs/#audiodata"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webcodecs/": [
+      {
+        "id": "audiodata",
+        "href": "https://w3c.github.io/webcodecs/#audiodata",
+        "linkingText": [
+          "AudioData"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "audiodata-interface",
+          "href": "https://w3c.github.io/webcodecs/#audiodata-interface",
+          "title": "AudioData Interface",
+          "number": "9.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-audiodata-audiodata",
+        "href": "https://w3c.github.io/webcodecs/#dom-audiodata-audiodata",
+        "linkingText": [
+          "AudioData(init)",
+          "constructor(init)"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "AudioData"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "audiodata-constructors",
+          "href": "https://w3c.github.io/webcodecs/#audiodata-constructors",
+          "title": "Constructors",
+          "number": "9.2.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-audiodata-format",
+        "href": "https://w3c.github.io/webcodecs/#dom-audiodata-format",
+        "linkingText": [
+          "format"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "AudioData"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "audiodata-attributes",
+          "href": "https://w3c.github.io/webcodecs/#audiodata-attributes",
+          "title": "Attributes",
+          "number": "9.2.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-audiodata-samplerate",
+        "href": "https://w3c.github.io/webcodecs/#dom-audiodata-samplerate",
+        "linkingText": [
+          "sampleRate"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "AudioData"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "audiodata-attributes",
+          "href": "https://w3c.github.io/webcodecs/#audiodata-attributes",
+          "title": "Attributes",
+          "number": "9.2.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-audiodata-numberofframes",
+        "href": "https://w3c.github.io/webcodecs/#dom-audiodata-numberofframes",
+        "linkingText": [
+          "numberOfFrames"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "AudioData"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "audiodata-attributes",
+          "href": "https://w3c.github.io/webcodecs/#audiodata-attributes",
+          "title": "Attributes",
+          "number": "9.2.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-audiodata-numberofchannels",
+        "href": "https://w3c.github.io/webcodecs/#dom-audiodata-numberofchannels",
+        "linkingText": [
+          "numberOfChannels"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "AudioData"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "audiodata-attributes",
+          "href": "https://w3c.github.io/webcodecs/#audiodata-attributes",
+          "title": "Attributes",
+          "number": "9.2.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-audiodata-duration",
+        "href": "https://w3c.github.io/webcodecs/#dom-audiodata-duration",
+        "linkingText": [
+          "duration"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "AudioData"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "audiodata-attributes",
+          "href": "https://w3c.github.io/webcodecs/#audiodata-attributes",
+          "title": "Attributes",
+          "number": "9.2.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-audiodata-timestamp",
+        "href": "https://w3c.github.io/webcodecs/#dom-audiodata-timestamp",
+        "linkingText": [
+          "timestamp"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "AudioData"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "audiodata-attributes",
+          "href": "https://w3c.github.io/webcodecs/#audiodata-attributes",
+          "title": "Attributes",
+          "number": "9.2.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-audiodata-allocationsize",
+        "href": "https://w3c.github.io/webcodecs/#dom-audiodata-allocationsize",
+        "linkingText": [
+          "allocationSize(options)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "AudioData"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "audiodata-methods",
+          "href": "https://w3c.github.io/webcodecs/#audiodata-methods",
+          "title": "Methods",
+          "number": "9.2.4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-audiodata-copyto",
+        "href": "https://w3c.github.io/webcodecs/#dom-audiodata-copyto",
+        "linkingText": [
+          "copyTo(destination, options)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "AudioData"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "audiodata-methods",
+          "href": "https://w3c.github.io/webcodecs/#audiodata-methods",
+          "title": "Methods",
+          "number": "9.2.4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-audiodata-clone",
+        "href": "https://w3c.github.io/webcodecs/#dom-audiodata-clone",
+        "linkingText": [
+          "clone()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "AudioData"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "audiodata-methods",
+          "href": "https://w3c.github.io/webcodecs/#audiodata-methods",
+          "title": "Methods",
+          "number": "9.2.4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-audiodata-close",
+        "href": "https://w3c.github.io/webcodecs/#dom-audiodata-close",
+        "linkingText": [
+          "close()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "AudioData"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "audiodata-methods",
+          "href": "https://w3c.github.io/webcodecs/#audiodata-methods",
+          "title": "Methods",
+          "number": "9.2.4"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

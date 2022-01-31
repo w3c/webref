@@ -1,0 +1,143 @@
+{
+  "name": "MediaList",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "CSS Object Model (CSSOM)",
+      "url": "https://www.w3.org/TR/cssom-1/"
+    },
+    "fragment": "[Exposed=Window]\ninterface MediaList {\n  stringifier attribute [LegacyNullToEmptyString] CSSOMString mediaText;\n  readonly attribute unsigned long length;\n  getter CSSOMString? item(unsigned long index);\n  undefined appendMedium(CSSOMString medium);\n  undefined deleteMedium(CSSOMString medium);\n};",
+    "href": "https://drafts.csswg.org/cssom/#medialist"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/cssom-1/": [
+      {
+        "id": "medialist",
+        "href": "https://drafts.csswg.org/cssom/#medialist",
+        "linkingText": [
+          "MediaList"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-medialist-interface",
+          "href": "https://drafts.csswg.org/cssom/#the-medialist-interface",
+          "title": "The MediaList Interface",
+          "number": "4.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-medialist-mediatext",
+        "href": "https://drafts.csswg.org/cssom/#dom-medialist-mediatext",
+        "linkingText": [
+          "mediaText"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "MediaList"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-medialist-interface",
+          "href": "https://drafts.csswg.org/cssom/#the-medialist-interface",
+          "title": "The MediaList Interface",
+          "number": "4.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-medialist-length",
+        "href": "https://drafts.csswg.org/cssom/#dom-medialist-length",
+        "linkingText": [
+          "length"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "MediaList"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-medialist-interface",
+          "href": "https://drafts.csswg.org/cssom/#the-medialist-interface",
+          "title": "The MediaList Interface",
+          "number": "4.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-medialist-item",
+        "href": "https://drafts.csswg.org/cssom/#dom-medialist-item",
+        "linkingText": [
+          "item(index)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MediaList"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-medialist-interface",
+          "href": "https://drafts.csswg.org/cssom/#the-medialist-interface",
+          "title": "The MediaList Interface",
+          "number": "4.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-medialist-appendmedium",
+        "href": "https://drafts.csswg.org/cssom/#dom-medialist-appendmedium",
+        "linkingText": [
+          "appendMedium(medium)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MediaList"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-medialist-interface",
+          "href": "https://drafts.csswg.org/cssom/#the-medialist-interface",
+          "title": "The MediaList Interface",
+          "number": "4.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-medialist-deletemedium",
+        "href": "https://drafts.csswg.org/cssom/#dom-medialist-deletemedium",
+        "linkingText": [
+          "deleteMedium(medium)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MediaList"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-medialist-interface",
+          "href": "https://drafts.csswg.org/cssom/#the-medialist-interface",
+          "title": "The MediaList Interface",
+          "number": "4.4"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

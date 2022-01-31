@@ -1,0 +1,344 @@
+{
+  "name": "XRCylinderLayerInit",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "WebXR Layers API Level 1",
+      "url": "https://www.w3.org/TR/webxrlayers-1/"
+    },
+    "fragment": "dictionary XRCylinderLayerInit : XRLayerInit {\n  XRTextureType textureType = \"texture\";\n  XRRigidTransform? transform;\n  float radius = 2.0;\n  float centralAngle = 0.78539;\n  float aspectRatio = 2.0;\n};",
+    "href": "https://immersive-web.github.io/layers/#dictdef-xrcylinderlayerinit"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "XRLayerInit",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "WebXR Layers API Level 1",
+        "url": "https://www.w3.org/TR/webxrlayers-1/"
+      },
+      "fragment": "dictionary XRLayerInit {\n  required XRSpace space;\n  GLenum colorFormat = 0x1908; // RGBA\n  GLenum? depthFormat;\n  unsigned long mipLevels = 1;\n  required unsigned long viewPixelWidth;\n  required unsigned long viewPixelHeight;\n  XRLayerLayout layout = \"mono\";\n  boolean isStatic = false;\n};",
+      "href": "https://immersive-web.github.io/layers/#dictdef-xrlayerinit"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webxrlayers-1/": [
+      {
+        "id": "dictdef-xrcylinderlayerinit",
+        "href": "https://immersive-web.github.io/layers/#dictdef-xrcylinderlayerinit",
+        "linkingText": [
+          "XRCylinderLayerInit"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrcylinderlayerinit",
+          "href": "https://immersive-web.github.io/layers/#xrcylinderlayerinit",
+          "title": "XRCylinderLayerInit",
+          "number": "6.6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-xrcylinderlayerinit-texturetype",
+        "href": "https://immersive-web.github.io/layers/#dom-xrcylinderlayerinit-texturetype",
+        "linkingText": [
+          "textureType"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "XRCylinderLayerInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrcylinderlayerinit",
+          "href": "https://immersive-web.github.io/layers/#xrcylinderlayerinit",
+          "title": "XRCylinderLayerInit",
+          "number": "6.6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-xrcylinderlayerinit-transform",
+        "href": "https://immersive-web.github.io/layers/#dom-xrcylinderlayerinit-transform",
+        "linkingText": [
+          "transform"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "XRCylinderLayerInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrcylinderlayerinit",
+          "href": "https://immersive-web.github.io/layers/#xrcylinderlayerinit",
+          "title": "XRCylinderLayerInit",
+          "number": "6.6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-xrcylinderlayerinit-radius",
+        "href": "https://immersive-web.github.io/layers/#dom-xrcylinderlayerinit-radius",
+        "linkingText": [
+          "radius"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "XRCylinderLayerInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrcylinderlayerinit",
+          "href": "https://immersive-web.github.io/layers/#xrcylinderlayerinit",
+          "title": "XRCylinderLayerInit",
+          "number": "6.6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-xrcylinderlayerinit-centralangle",
+        "href": "https://immersive-web.github.io/layers/#dom-xrcylinderlayerinit-centralangle",
+        "linkingText": [
+          "centralAngle"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "XRCylinderLayerInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrcylinderlayerinit",
+          "href": "https://immersive-web.github.io/layers/#xrcylinderlayerinit",
+          "title": "XRCylinderLayerInit",
+          "number": "6.6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-xrcylinderlayerinit-aspectratio",
+        "href": "https://immersive-web.github.io/layers/#dom-xrcylinderlayerinit-aspectratio",
+        "linkingText": [
+          "aspectRatio"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "XRCylinderLayerInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrcylinderlayerinit",
+          "href": "https://immersive-web.github.io/layers/#xrcylinderlayerinit",
+          "title": "XRCylinderLayerInit",
+          "number": "6.6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dictdef-xrlayerinit",
+        "href": "https://immersive-web.github.io/layers/#dictdef-xrlayerinit",
+        "linkingText": [
+          "XRLayerInit"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrlayerinittype",
+          "href": "https://immersive-web.github.io/layers/#xrlayerinittype",
+          "title": "XRLayerInit",
+          "number": "6.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-xrlayerinit-space",
+        "href": "https://immersive-web.github.io/layers/#dom-xrlayerinit-space",
+        "linkingText": [
+          "space"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "XRLayerInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrlayerinittype",
+          "href": "https://immersive-web.github.io/layers/#xrlayerinittype",
+          "title": "XRLayerInit",
+          "number": "6.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-xrlayerinit-colorformat",
+        "href": "https://immersive-web.github.io/layers/#dom-xrlayerinit-colorformat",
+        "linkingText": [
+          "colorFormat"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "XRLayerInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrlayerinittype",
+          "href": "https://immersive-web.github.io/layers/#xrlayerinittype",
+          "title": "XRLayerInit",
+          "number": "6.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-xrlayerinit-depthformat",
+        "href": "https://immersive-web.github.io/layers/#dom-xrlayerinit-depthformat",
+        "linkingText": [
+          "depthFormat"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "XRLayerInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrlayerinittype",
+          "href": "https://immersive-web.github.io/layers/#xrlayerinittype",
+          "title": "XRLayerInit",
+          "number": "6.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-xrlayerinit-miplevels",
+        "href": "https://immersive-web.github.io/layers/#dom-xrlayerinit-miplevels",
+        "linkingText": [
+          "mipLevels"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "XRLayerInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrlayerinittype",
+          "href": "https://immersive-web.github.io/layers/#xrlayerinittype",
+          "title": "XRLayerInit",
+          "number": "6.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-xrlayerinit-viewpixelwidth",
+        "href": "https://immersive-web.github.io/layers/#dom-xrlayerinit-viewpixelwidth",
+        "linkingText": [
+          "viewPixelWidth"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "XRLayerInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrlayerinittype",
+          "href": "https://immersive-web.github.io/layers/#xrlayerinittype",
+          "title": "XRLayerInit",
+          "number": "6.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-xrlayerinit-viewpixelheight",
+        "href": "https://immersive-web.github.io/layers/#dom-xrlayerinit-viewpixelheight",
+        "linkingText": [
+          "viewPixelHeight"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "XRLayerInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrlayerinittype",
+          "href": "https://immersive-web.github.io/layers/#xrlayerinittype",
+          "title": "XRLayerInit",
+          "number": "6.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-xrlayerinit-layout",
+        "href": "https://immersive-web.github.io/layers/#dom-xrlayerinit-layout",
+        "linkingText": [
+          "layout"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "XRLayerInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrlayerinittype",
+          "href": "https://immersive-web.github.io/layers/#xrlayerinittype",
+          "title": "XRLayerInit",
+          "number": "6.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-xrlayerinit-isstatic",
+        "href": "https://immersive-web.github.io/layers/#dom-xrlayerinit-isstatic",
+        "linkingText": [
+          "isStatic"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "XRLayerInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrlayerinittype",
+          "href": "https://immersive-web.github.io/layers/#xrlayerinittype",
+          "title": "XRLayerInit",
+          "number": "6.4"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

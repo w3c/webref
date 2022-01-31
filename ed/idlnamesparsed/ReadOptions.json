@@ -1,0 +1,148 @@
+{
+  "name": "ReadOptions",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Geolocation Sensor",
+      "url": "https://www.w3.org/TR/geolocation-sensor/"
+    },
+    "fragment": "dictionary ReadOptions : GeolocationSensorOptions {\n  AbortSignal? signal;\n};",
+    "href": "https://w3c.github.io/geolocation-sensor/#dictdef-readoptions"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "GeolocationSensorOptions",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "Geolocation Sensor",
+        "url": "https://www.w3.org/TR/geolocation-sensor/"
+      },
+      "fragment": "dictionary GeolocationSensorOptions : SensorOptions {\n  // placeholder for GeolocationSensor-specific options\n};",
+      "href": "https://w3c.github.io/geolocation-sensor/#dictdef-geolocationsensoroptions"
+    },
+    "extended": [],
+    "inheritance": {
+      "name": "SensorOptions",
+      "type": "dictionary",
+      "defined": {
+        "spec": {
+          "title": "Generic Sensor API",
+          "url": "https://www.w3.org/TR/generic-sensor/"
+        },
+        "fragment": "dictionary SensorOptions {\n  double frequency;\n};",
+        "href": "https://w3c.github.io/sensors/#dictdef-sensoroptions"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/geolocation-sensor/": [
+      {
+        "id": "dictdef-readoptions",
+        "href": "https://w3c.github.io/geolocation-sensor/#dictdef-readoptions",
+        "linkingText": [
+          "ReadOptions"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "geolocationsensor-interface",
+          "href": "https://w3c.github.io/geolocation-sensor/#geolocationsensor-interface",
+          "title": "The GeolocationSensor Interface",
+          "number": "5.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-readoptions-signal",
+        "href": "https://w3c.github.io/geolocation-sensor/#dom-readoptions-signal",
+        "linkingText": [
+          "signal"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "ReadOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "geolocationsensor-interface",
+          "href": "https://w3c.github.io/geolocation-sensor/#geolocationsensor-interface",
+          "title": "The GeolocationSensor Interface",
+          "number": "5.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dictdef-geolocationsensoroptions",
+        "href": "https://w3c.github.io/geolocation-sensor/#dictdef-geolocationsensoroptions",
+        "linkingText": [
+          "GeolocationSensorOptions"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "geolocationsensor-interface",
+          "href": "https://w3c.github.io/geolocation-sensor/#geolocationsensor-interface",
+          "title": "The GeolocationSensor Interface",
+          "number": "5.1"
+        },
+        "definedIn": "pre"
+      }
+    ],
+    "https://www.w3.org/TR/generic-sensor/": [
+      {
+        "id": "dictdef-sensoroptions",
+        "href": "https://w3c.github.io/sensors/#dictdef-sensoroptions",
+        "linkingText": [
+          "SensorOptions"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-sensor-interface",
+          "href": "https://w3c.github.io/sensors/#the-sensor-interface",
+          "title": "The Sensor Interface",
+          "number": "7.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-sensoroptions-frequency",
+        "href": "https://w3c.github.io/sensors/#dom-sensoroptions-frequency",
+        "linkingText": [
+          "frequency"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "SensorOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-sensor-interface",
+          "href": "https://w3c.github.io/sensors/#the-sensor-interface",
+          "title": "The Sensor Interface",
+          "number": "7.1"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

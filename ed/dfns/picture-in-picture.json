@@ -1,0 +1,581 @@
+{
+  "spec": {
+    "title": "Picture-in-Picture",
+    "url": "https://w3c.github.io/picture-in-picture/"
+  },
+  "dfns": [
+    {
+      "id": "request-picture-in-picture-algorithm",
+      "href": "https://w3c.github.io/picture-in-picture/#request-picture-in-picture-algorithm",
+      "linkingText": [
+        "request Picture-in-Picture algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "request-pip",
+        "href": "https://w3c.github.io/picture-in-picture/#request-pip",
+        "title": "Request Picture-in-Picture",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "picture-in-picture-window",
+      "href": "https://w3c.github.io/picture-in-picture/#picture-in-picture-window",
+      "linkingText": [
+        "Picture-in-Picture window"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "request-pip",
+        "href": "https://w3c.github.io/picture-in-picture/#request-pip",
+        "title": "Request Picture-in-Picture",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "exit-picture-in-picture-algorithm",
+      "href": "https://w3c.github.io/picture-in-picture/#exit-picture-in-picture-algorithm",
+      "linkingText": [
+        "exit Picture-in-Picture algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "exit-pip",
+        "href": "https://w3c.github.io/picture-in-picture/#exit-pip",
+        "title": "Exit Picture-in-Picture",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "autopictureinpictureelement",
+      "href": "https://w3c.github.io/picture-in-picture/#autopictureinpictureelement",
+      "linkingText": [
+        "autoPictureInPictureElement"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "auto-pip",
+        "href": "https://w3c.github.io/picture-in-picture/#auto-pip",
+        "title": "Auto Picture-in-Picture",
+        "number": "3.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-htmlvideoelement-requestpictureinpicture",
+      "href": "https://w3c.github.io/picture-in-picture/#dom-htmlvideoelement-requestpictureinpicture",
+      "linkingText": [
+        "requestPictureInPicture()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "HTMLVideoElement"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "htmlvideoelement-extensions",
+        "href": "https://w3c.github.io/picture-in-picture/#htmlvideoelement-extensions",
+        "title": "Extensions to HTMLVideoElement",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-htmlvideoelement-onenterpictureinpicture",
+      "href": "https://w3c.github.io/picture-in-picture/#dom-htmlvideoelement-onenterpictureinpicture",
+      "linkingText": [
+        "onenterpictureinpicture"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "HTMLVideoElement"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "htmlvideoelement-extensions",
+        "href": "https://w3c.github.io/picture-in-picture/#htmlvideoelement-extensions",
+        "title": "Extensions to HTMLVideoElement",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-htmlvideoelement-onleavepictureinpicture",
+      "href": "https://w3c.github.io/picture-in-picture/#dom-htmlvideoelement-onleavepictureinpicture",
+      "linkingText": [
+        "onleavepictureinpicture"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "HTMLVideoElement"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "htmlvideoelement-extensions",
+        "href": "https://w3c.github.io/picture-in-picture/#htmlvideoelement-extensions",
+        "title": "Extensions to HTMLVideoElement",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-htmlvideoelement-autopictureinpicture",
+      "href": "https://w3c.github.io/picture-in-picture/#dom-htmlvideoelement-autopictureinpicture",
+      "linkingText": [
+        "autoPictureInPicture"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "HTMLVideoElement"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "htmlvideoelement-extensions",
+        "href": "https://w3c.github.io/picture-in-picture/#htmlvideoelement-extensions",
+        "title": "Extensions to HTMLVideoElement",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-htmlvideoelement-disablepictureinpicture",
+      "href": "https://w3c.github.io/picture-in-picture/#dom-htmlvideoelement-disablepictureinpicture",
+      "linkingText": [
+        "disablePictureInPicture"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "HTMLVideoElement"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "htmlvideoelement-extensions",
+        "href": "https://w3c.github.io/picture-in-picture/#htmlvideoelement-extensions",
+        "title": "Extensions to HTMLVideoElement",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-document-pictureinpictureenabled",
+      "href": "https://w3c.github.io/picture-in-picture/#dom-document-pictureinpictureenabled",
+      "linkingText": [
+        "pictureInPictureEnabled"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Document"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "document-extensions",
+        "href": "https://w3c.github.io/picture-in-picture/#document-extensions",
+        "title": "Extensions to Document",
+        "number": "4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-document-exitpictureinpicture",
+      "href": "https://w3c.github.io/picture-in-picture/#dom-document-exitpictureinpicture",
+      "linkingText": [
+        "exitPictureInPicture()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Document"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "document-extensions",
+        "href": "https://w3c.github.io/picture-in-picture/#document-extensions",
+        "title": "Extensions to Document",
+        "number": "4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "picture-in-picture-support",
+      "href": "https://w3c.github.io/picture-in-picture/#picture-in-picture-support",
+      "linkingText": [
+        "Picture-in-Picture support"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "document-extensions",
+        "href": "https://w3c.github.io/picture-in-picture/#document-extensions",
+        "title": "Extensions to Document",
+        "number": "4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-documentorshadowroot-pictureinpictureelement",
+      "href": "https://w3c.github.io/picture-in-picture/#dom-documentorshadowroot-pictureinpictureelement",
+      "linkingText": [
+        "pictureInPictureElement"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "DocumentOrShadowRoot"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "documentorshadowroot-extension",
+        "href": "https://w3c.github.io/picture-in-picture/#documentorshadowroot-extension",
+        "title": "Extension to DocumentOrShadowRoot",
+        "number": "4.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "pictureinpicturewindow",
+      "href": "https://w3c.github.io/picture-in-picture/#pictureinpicturewindow",
+      "linkingText": [
+        "PictureInPictureWindow"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-picture-in-picture-window",
+        "href": "https://w3c.github.io/picture-in-picture/#interface-picture-in-picture-window",
+        "title": "Interface PictureInPictureWindow",
+        "number": "4.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-pictureinpicturewindow-width",
+      "href": "https://w3c.github.io/picture-in-picture/#dom-pictureinpicturewindow-width",
+      "linkingText": [
+        "width"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PictureInPictureWindow"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-picture-in-picture-window",
+        "href": "https://w3c.github.io/picture-in-picture/#interface-picture-in-picture-window",
+        "title": "Interface PictureInPictureWindow",
+        "number": "4.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-pictureinpicturewindow-height",
+      "href": "https://w3c.github.io/picture-in-picture/#dom-pictureinpicturewindow-height",
+      "linkingText": [
+        "height"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PictureInPictureWindow"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-picture-in-picture-window",
+        "href": "https://w3c.github.io/picture-in-picture/#interface-picture-in-picture-window",
+        "title": "Interface PictureInPictureWindow",
+        "number": "4.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-pictureinpicturewindow-onresize",
+      "href": "https://w3c.github.io/picture-in-picture/#dom-pictureinpicturewindow-onresize",
+      "linkingText": [
+        "onresize"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PictureInPictureWindow"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-picture-in-picture-window",
+        "href": "https://w3c.github.io/picture-in-picture/#interface-picture-in-picture-window",
+        "title": "Interface PictureInPictureWindow",
+        "number": "4.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "close-window-algorithm",
+      "href": "https://w3c.github.io/picture-in-picture/#close-window-algorithm",
+      "linkingText": [
+        "close window algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "interface-picture-in-picture-window",
+        "href": "https://w3c.github.io/picture-in-picture/#interface-picture-in-picture-window",
+        "title": "Interface PictureInPictureWindow",
+        "number": "4.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "pictureinpictureevent",
+      "href": "https://w3c.github.io/picture-in-picture/#pictureinpictureevent",
+      "linkingText": [
+        "PictureInPictureEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "event-types",
+        "href": "https://w3c.github.io/picture-in-picture/#event-types",
+        "title": "Event types",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-pictureinpictureevent-pictureinpictureevent",
+      "href": "https://w3c.github.io/picture-in-picture/#dom-pictureinpictureevent-pictureinpictureevent",
+      "linkingText": [
+        "PictureInPictureEvent(type, eventInitDict)",
+        "constructor(type, eventInitDict)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "PictureInPictureEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "event-types",
+        "href": "https://w3c.github.io/picture-in-picture/#event-types",
+        "title": "Event types",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-pictureinpictureevent-pictureinpictureevent-type-eventinitdict-type",
+      "href": "https://w3c.github.io/picture-in-picture/#dom-pictureinpictureevent-pictureinpictureevent-type-eventinitdict-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "PictureInPictureEvent/PictureInPictureEvent(type, eventInitDict)",
+        "PictureInPictureEvent/constructor(type, eventInitDict)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "event-types",
+        "href": "https://w3c.github.io/picture-in-picture/#event-types",
+        "title": "Event types",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-pictureinpictureevent-pictureinpictureevent-type-eventinitdict-eventinitdict",
+      "href": "https://w3c.github.io/picture-in-picture/#dom-pictureinpictureevent-pictureinpictureevent-type-eventinitdict-eventinitdict",
+      "linkingText": [
+        "eventInitDict"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "PictureInPictureEvent/PictureInPictureEvent(type, eventInitDict)",
+        "PictureInPictureEvent/constructor(type, eventInitDict)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "event-types",
+        "href": "https://w3c.github.io/picture-in-picture/#event-types",
+        "title": "Event types",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-pictureinpictureevent-pictureinpicturewindow",
+      "href": "https://w3c.github.io/picture-in-picture/#dom-pictureinpictureevent-pictureinpicturewindow",
+      "linkingText": [
+        "pictureInPictureWindow"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PictureInPictureEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "event-types",
+        "href": "https://w3c.github.io/picture-in-picture/#event-types",
+        "title": "Event types",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-pictureinpictureeventinit",
+      "href": "https://w3c.github.io/picture-in-picture/#dictdef-pictureinpictureeventinit",
+      "linkingText": [
+        "PictureInPictureEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "event-types",
+        "href": "https://w3c.github.io/picture-in-picture/#event-types",
+        "title": "Event types",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-pictureinpictureeventinit-pictureinpicturewindow",
+      "href": "https://w3c.github.io/picture-in-picture/#dom-pictureinpictureeventinit-pictureinpicturewindow",
+      "linkingText": [
+        "pictureInPictureWindow"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PictureInPictureEventInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "event-types",
+        "href": "https://w3c.github.io/picture-in-picture/#event-types",
+        "title": "Event types",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "eventdef-htmlvideoelement-enterpictureinpicture",
+      "href": "https://w3c.github.io/picture-in-picture/#eventdef-htmlvideoelement-enterpictureinpicture",
+      "linkingText": [
+        "enterpictureinpicture"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "HTMLVideoElement"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "event-types",
+        "href": "https://w3c.github.io/picture-in-picture/#event-types",
+        "title": "Event types",
+        "number": "4.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "eventdef-htmlvideoelement-leavepictureinpicture",
+      "href": "https://w3c.github.io/picture-in-picture/#eventdef-htmlvideoelement-leavepictureinpicture",
+      "linkingText": [
+        "leavepictureinpicture"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "HTMLVideoElement"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "event-types",
+        "href": "https://w3c.github.io/picture-in-picture/#event-types",
+        "title": "Event types",
+        "number": "4.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "eventdef-pictureinpicturewindow-resize",
+      "href": "https://w3c.github.io/picture-in-picture/#eventdef-pictureinpicturewindow-resize",
+      "linkingText": [
+        "resize"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "PictureInPictureWindow"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "event-types",
+        "href": "https://w3c.github.io/picture-in-picture/#event-types",
+        "title": "Event types",
+        "number": "4.5"
+      },
+      "definedIn": "dt"
+    }
+  ]
+}

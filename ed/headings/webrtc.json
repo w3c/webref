@@ -1,0 +1,1550 @@
+{
+  "spec": {
+    "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
+    "url": "https://w3c.github.io/webrtc-pc/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://w3c.github.io/webrtc-pc/#title",
+      "level": 1,
+      "title": "WebRTC 1.0: Real-Time Communication Between Browsers"
+    },
+    {
+      "id": "abstract",
+      "href": "https://w3c.github.io/webrtc-pc/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "sotd",
+      "href": "https://w3c.github.io/webrtc-pc/#sotd",
+      "level": 2,
+      "title": "Status of This Document"
+    },
+    {
+      "id": "toc",
+      "href": "https://w3c.github.io/webrtc-pc/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "intro",
+      "href": "https://w3c.github.io/webrtc-pc/#intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "conformance",
+      "href": "https://w3c.github.io/webrtc-pc/#conformance",
+      "level": 2,
+      "title": "Conformance",
+      "number": "2"
+    },
+    {
+      "id": "terminology",
+      "href": "https://w3c.github.io/webrtc-pc/#terminology",
+      "level": 2,
+      "title": "Terminology",
+      "number": "3"
+    },
+    {
+      "id": "peer-to-peer-connections",
+      "href": "https://w3c.github.io/webrtc-pc/#peer-to-peer-connections",
+      "level": 2,
+      "title": "Peer-to-peer connections",
+      "number": "4"
+    },
+    {
+      "id": "introduction",
+      "href": "https://w3c.github.io/webrtc-pc/#introduction",
+      "level": 3,
+      "title": "Introduction",
+      "number": "4.1"
+    },
+    {
+      "id": "configuration",
+      "href": "https://w3c.github.io/webrtc-pc/#configuration",
+      "level": 3,
+      "title": "Configuration",
+      "number": "4.2"
+    },
+    {
+      "id": "rtcconfiguration-dictionary",
+      "href": "https://w3c.github.io/webrtc-pc/#rtcconfiguration-dictionary",
+      "level": 4,
+      "title": "RTCConfiguration Dictionary",
+      "number": "4.2.1"
+    },
+    {
+      "id": "dictionary-rtcconfiguration-members",
+      "href": "https://w3c.github.io/webrtc-pc/#dictionary-rtcconfiguration-members",
+      "level": 5,
+      "title": "Dictionary RTCConfiguration Members"
+    },
+    {
+      "id": "rtcicecredentialtype-enum",
+      "href": "https://w3c.github.io/webrtc-pc/#rtcicecredentialtype-enum",
+      "level": 4,
+      "title": "RTCIceCredentialType Enum",
+      "number": "4.2.2"
+    },
+    {
+      "id": "rtciceserver-dictionary",
+      "href": "https://w3c.github.io/webrtc-pc/#rtciceserver-dictionary",
+      "level": 4,
+      "title": "RTCIceServer Dictionary",
+      "number": "4.2.3"
+    },
+    {
+      "id": "dictionary-rtciceserver-members",
+      "href": "https://w3c.github.io/webrtc-pc/#dictionary-rtciceserver-members",
+      "level": 5,
+      "title": "Dictionary RTCIceServer Members"
+    },
+    {
+      "id": "rtcicetransportpolicy-enum",
+      "href": "https://w3c.github.io/webrtc-pc/#rtcicetransportpolicy-enum",
+      "level": 4,
+      "title": "RTCIceTransportPolicy Enum",
+      "number": "4.2.4"
+    },
+    {
+      "id": "rtcbundlepolicy-enum",
+      "href": "https://w3c.github.io/webrtc-pc/#rtcbundlepolicy-enum",
+      "level": 4,
+      "title": "RTCBundlePolicy Enum",
+      "number": "4.2.5"
+    },
+    {
+      "id": "rtcrtcpmuxpolicy-enum",
+      "href": "https://w3c.github.io/webrtc-pc/#rtcrtcpmuxpolicy-enum",
+      "level": 4,
+      "title": "RTCRtcpMuxPolicy Enum",
+      "number": "4.2.6"
+    },
+    {
+      "id": "offer-answer-options",
+      "href": "https://w3c.github.io/webrtc-pc/#offer-answer-options",
+      "level": 4,
+      "title": "Offer/Answer Options",
+      "number": "4.2.7"
+    },
+    {
+      "id": "dictionary-rtcofferansweroptions-members",
+      "href": "https://w3c.github.io/webrtc-pc/#dictionary-rtcofferansweroptions-members",
+      "level": 5,
+      "title": "Dictionary RTCOfferAnswerOptions Members"
+    },
+    {
+      "id": "dictionary-rtcofferoptions-members",
+      "href": "https://w3c.github.io/webrtc-pc/#dictionary-rtcofferoptions-members",
+      "level": 5,
+      "title": "Dictionary RTCOfferOptions Members"
+    },
+    {
+      "id": "state-definitions",
+      "href": "https://w3c.github.io/webrtc-pc/#state-definitions",
+      "level": 3,
+      "title": "State Definitions",
+      "number": "4.3"
+    },
+    {
+      "id": "rtcsignalingstate-enum",
+      "href": "https://w3c.github.io/webrtc-pc/#rtcsignalingstate-enum",
+      "level": 4,
+      "title": "RTCSignalingState Enum",
+      "number": "4.3.1"
+    },
+    {
+      "id": "rtcicegatheringstate-enum",
+      "href": "https://w3c.github.io/webrtc-pc/#rtcicegatheringstate-enum",
+      "level": 4,
+      "title": "RTCIceGatheringState Enum",
+      "number": "4.3.2"
+    },
+    {
+      "id": "rtcpeerconnectionstate-enum",
+      "href": "https://w3c.github.io/webrtc-pc/#rtcpeerconnectionstate-enum",
+      "level": 4,
+      "title": "RTCPeerConnectionState Enum",
+      "number": "4.3.3"
+    },
+    {
+      "id": "rtciceconnectionstate-enum",
+      "href": "https://w3c.github.io/webrtc-pc/#rtciceconnectionstate-enum",
+      "level": 4,
+      "title": "RTCIceConnectionState Enum",
+      "number": "4.3.4"
+    },
+    {
+      "id": "rtcpeerconnection-interface",
+      "href": "https://w3c.github.io/webrtc-pc/#rtcpeerconnection-interface",
+      "level": 3,
+      "title": "RTCPeerConnection Interface",
+      "number": "4.4"
+    },
+    {
+      "id": "operation",
+      "href": "https://w3c.github.io/webrtc-pc/#operation",
+      "level": 4,
+      "title": "Operation",
+      "number": "4.4.1"
+    },
+    {
+      "id": "constructor",
+      "href": "https://w3c.github.io/webrtc-pc/#constructor",
+      "level": 5,
+      "title": "Constructor",
+      "number": "4.4.1.1"
+    },
+    {
+      "id": "chain-an-asynchronous-operation",
+      "href": "https://w3c.github.io/webrtc-pc/#chain-an-asynchronous-operation",
+      "level": 5,
+      "title": "Chain an asynchronous operation",
+      "number": "4.4.1.2"
+    },
+    {
+      "id": "update-the-connection-state",
+      "href": "https://w3c.github.io/webrtc-pc/#update-the-connection-state",
+      "level": 5,
+      "title": "Update the connection state",
+      "number": "4.4.1.3"
+    },
+    {
+      "id": "update-the-ice-gathering-state",
+      "href": "https://w3c.github.io/webrtc-pc/#update-the-ice-gathering-state",
+      "level": 5,
+      "title": "Update the ICE gathering state",
+      "number": "4.4.1.4"
+    },
+    {
+      "id": "set-the-session-description",
+      "href": "https://w3c.github.io/webrtc-pc/#set-the-session-description",
+      "level": 5,
+      "title": "Set the session description",
+      "number": "4.4.1.5"
+    },
+    {
+      "id": "set-the-configuration",
+      "href": "https://w3c.github.io/webrtc-pc/#set-the-configuration",
+      "level": 5,
+      "title": "Set the configuration",
+      "number": "4.4.1.6"
+    },
+    {
+      "id": "interface-definition",
+      "href": "https://w3c.github.io/webrtc-pc/#interface-definition",
+      "level": 4,
+      "title": "Interface Definition",
+      "number": "4.4.2"
+    },
+    {
+      "id": "attributes-1",
+      "href": "https://w3c.github.io/webrtc-pc/#attributes-1",
+      "level": 5,
+      "title": "Attributes"
+    },
+    {
+      "id": "methods",
+      "href": "https://w3c.github.io/webrtc-pc/#methods",
+      "level": 5,
+      "title": "Methods"
+    },
+    {
+      "id": "legacy-interface-extensions",
+      "href": "https://w3c.github.io/webrtc-pc/#legacy-interface-extensions",
+      "level": 4,
+      "title": "Legacy Interface Extensions",
+      "number": "4.4.3"
+    },
+    {
+      "id": "method-extensions",
+      "href": "https://w3c.github.io/webrtc-pc/#method-extensions",
+      "level": 5,
+      "title": "Method extensions",
+      "number": "4.4.3.1"
+    },
+    {
+      "id": "methods-0",
+      "href": "https://w3c.github.io/webrtc-pc/#methods-0",
+      "level": 6,
+      "title": "Methods"
+    },
+    {
+      "id": "callback-definitions",
+      "href": "https://w3c.github.io/webrtc-pc/#callback-definitions",
+      "level": 4,
+      "title": "Callback Definitions"
+    },
+    {
+      "id": "rtcpeerconnectionerrorcallback",
+      "href": "https://w3c.github.io/webrtc-pc/#rtcpeerconnectionerrorcallback",
+      "level": 6,
+      "title": "RTCPeerConnectionErrorCallback"
+    },
+    {
+      "id": "callback-rtcpeerconnectionerrorcallback-parameters",
+      "href": "https://w3c.github.io/webrtc-pc/#callback-rtcpeerconnectionerrorcallback-parameters",
+      "level": 6,
+      "title": "Callback RTCPeerConnectionErrorCallback Parameters"
+    },
+    {
+      "id": "rtcsessiondescriptioncallback",
+      "href": "https://w3c.github.io/webrtc-pc/#rtcsessiondescriptioncallback",
+      "level": 6,
+      "title": "RTCSessionDescriptionCallback"
+    },
+    {
+      "id": "callback-rtcsessiondescriptioncallback-parameters",
+      "href": "https://w3c.github.io/webrtc-pc/#callback-rtcsessiondescriptioncallback-parameters",
+      "level": 6,
+      "title": "Callback RTCSessionDescriptionCallback Parameters"
+    },
+    {
+      "id": "legacy-configuration-extensions",
+      "href": "https://w3c.github.io/webrtc-pc/#legacy-configuration-extensions",
+      "level": 5,
+      "title": "Legacy configuration extensions",
+      "number": "4.4.3.2"
+    },
+    {
+      "id": "attributes-2",
+      "href": "https://w3c.github.io/webrtc-pc/#attributes-2",
+      "level": 6,
+      "title": "Attributes"
+    },
+    {
+      "id": "garbage-collection",
+      "href": "https://w3c.github.io/webrtc-pc/#garbage-collection",
+      "level": 4,
+      "title": "Garbage collection",
+      "number": "4.4.4"
+    },
+    {
+      "id": "error-handling",
+      "href": "https://w3c.github.io/webrtc-pc/#error-handling",
+      "level": 3,
+      "title": "Error Handling",
+      "number": "4.5"
+    },
+    {
+      "id": "general-principles",
+      "href": "https://w3c.github.io/webrtc-pc/#general-principles",
+      "level": 4,
+      "title": "General Principles",
+      "number": "4.5.1"
+    },
+    {
+      "id": "session-description-model",
+      "href": "https://w3c.github.io/webrtc-pc/#session-description-model",
+      "level": 3,
+      "title": "Session Description Model",
+      "number": "4.6"
+    },
+    {
+      "id": "rtcsdptype",
+      "href": "https://w3c.github.io/webrtc-pc/#rtcsdptype",
+      "level": 4,
+      "title": "RTCSdpType",
+      "number": "4.6.1"
+    },
+    {
+      "id": "rtcsessiondescription-class",
+      "href": "https://w3c.github.io/webrtc-pc/#rtcsessiondescription-class",
+      "level": 4,
+      "title": "RTCSessionDescription Class",
+      "number": "4.6.2"
+    },
+    {
+      "id": "constructors-1",
+      "href": "https://w3c.github.io/webrtc-pc/#constructors-1",
+      "level": 5,
+      "title": "Constructors"
+    },
+    {
+      "id": "attributes-3",
+      "href": "https://w3c.github.io/webrtc-pc/#attributes-3",
+      "level": 5,
+      "title": "Attributes"
+    },
+    {
+      "id": "methods-1",
+      "href": "https://w3c.github.io/webrtc-pc/#methods-1",
+      "level": 5,
+      "title": "Methods"
+    },
+    {
+      "id": "dictionary-rtcsessiondescriptioninit-members",
+      "href": "https://w3c.github.io/webrtc-pc/#dictionary-rtcsessiondescriptioninit-members",
+      "level": 5,
+      "title": "Dictionary RTCSessionDescriptionInit Members"
+    },
+    {
+      "id": "dictionary-rtclocalsessiondescriptioninit-members",
+      "href": "https://w3c.github.io/webrtc-pc/#dictionary-rtclocalsessiondescriptioninit-members",
+      "level": 5,
+      "title": "Dictionary RTCLocalSessionDescriptionInit Members"
+    },
+    {
+      "id": "session-negotiation-model",
+      "href": "https://w3c.github.io/webrtc-pc/#session-negotiation-model",
+      "level": 3,
+      "title": "Session Negotiation Model",
+      "number": "4.7"
+    },
+    {
+      "id": "setting-negotiation-needed",
+      "href": "https://w3c.github.io/webrtc-pc/#setting-negotiation-needed",
+      "level": 4,
+      "title": "Setting Negotiation-Needed",
+      "number": "4.7.1"
+    },
+    {
+      "id": "clearing-negotiation-needed",
+      "href": "https://w3c.github.io/webrtc-pc/#clearing-negotiation-needed",
+      "level": 4,
+      "title": "Clearing Negotiation-Needed",
+      "number": "4.7.2"
+    },
+    {
+      "id": "updating-the-negotiation-needed-flag",
+      "href": "https://w3c.github.io/webrtc-pc/#updating-the-negotiation-needed-flag",
+      "level": 4,
+      "title": "Updating the Negotiation-Needed flag",
+      "number": "4.7.3"
+    },
+    {
+      "id": "interfaces-for-interactive-connectivity-establishment",
+      "href": "https://w3c.github.io/webrtc-pc/#interfaces-for-interactive-connectivity-establishment",
+      "level": 3,
+      "title": "Interfaces for Interactive Connectivity Establishment",
+      "number": "4.8"
+    },
+    {
+      "id": "rtcicecandidate-interface",
+      "href": "https://w3c.github.io/webrtc-pc/#rtcicecandidate-interface",
+      "level": 4,
+      "title": "RTCIceCandidate Interface",
+      "number": "4.8.1"
+    },
+    {
+      "id": "constructor-0",
+      "href": "https://w3c.github.io/webrtc-pc/#constructor-0",
+      "level": 5,
+      "title": "Constructor"
+    },
+    {
+      "id": "attributes-4",
+      "href": "https://w3c.github.io/webrtc-pc/#attributes-4",
+      "level": 5,
+      "title": "Attributes"
+    },
+    {
+      "id": "methods-2",
+      "href": "https://w3c.github.io/webrtc-pc/#methods-2",
+      "level": 5,
+      "title": "Methods"
+    },
+    {
+      "id": "dictionary-rtcicecandidateinit-members",
+      "href": "https://w3c.github.io/webrtc-pc/#dictionary-rtcicecandidateinit-members",
+      "level": 5,
+      "title": "Dictionary RTCIceCandidateInit Members"
+    },
+    {
+      "id": "candidate-attribute-grammar",
+      "href": "https://w3c.github.io/webrtc-pc/#candidate-attribute-grammar",
+      "level": 5,
+      "title": "candidate-attribute Grammar",
+      "number": "4.8.1.1"
+    },
+    {
+      "id": "rtciceprotocol-enum",
+      "href": "https://w3c.github.io/webrtc-pc/#rtciceprotocol-enum",
+      "level": 5,
+      "title": "RTCIceProtocol Enum",
+      "number": "4.8.1.2"
+    },
+    {
+      "id": "rtcicetcpcandidatetype-enum",
+      "href": "https://w3c.github.io/webrtc-pc/#rtcicetcpcandidatetype-enum",
+      "level": 5,
+      "title": "RTCIceTcpCandidateType Enum",
+      "number": "4.8.1.3"
+    },
+    {
+      "id": "rtcicecandidatetype-enum",
+      "href": "https://w3c.github.io/webrtc-pc/#rtcicecandidatetype-enum",
+      "level": 5,
+      "title": "RTCIceCandidateType Enum",
+      "number": "4.8.1.4"
+    },
+    {
+      "id": "rtcpeerconnectioniceevent",
+      "href": "https://w3c.github.io/webrtc-pc/#rtcpeerconnectioniceevent",
+      "level": 4,
+      "title": "RTCPeerConnectionIceEvent",
+      "number": "4.8.2"
+    },
+    {
+      "id": "constructors-2",
+      "href": "https://w3c.github.io/webrtc-pc/#constructors-2",
+      "level": 5,
+      "title": "Constructors"
+    },
+    {
+      "id": "attributes-5",
+      "href": "https://w3c.github.io/webrtc-pc/#attributes-5",
+      "level": 5,
+      "title": "Attributes"
+    },
+    {
+      "id": "dictionary-rtcpeerconnectioniceeventinit-members",
+      "href": "https://w3c.github.io/webrtc-pc/#dictionary-rtcpeerconnectioniceeventinit-members",
+      "level": 5,
+      "title": "Dictionary RTCPeerConnectionIceEventInit Members"
+    },
+    {
+      "id": "rtcpeerconnectioniceerrorevent",
+      "href": "https://w3c.github.io/webrtc-pc/#rtcpeerconnectioniceerrorevent",
+      "level": 4,
+      "title": "RTCPeerConnectionIceErrorEvent",
+      "number": "4.8.3"
+    },
+    {
+      "id": "constructors-3",
+      "href": "https://w3c.github.io/webrtc-pc/#constructors-3",
+      "level": 5,
+      "title": "Constructors"
+    },
+    {
+      "id": "attributes-6",
+      "href": "https://w3c.github.io/webrtc-pc/#attributes-6",
+      "level": 5,
+      "title": "Attributes"
+    },
+    {
+      "id": "dictionary-rtcpeerconnectioniceerroreventinit-members",
+      "href": "https://w3c.github.io/webrtc-pc/#dictionary-rtcpeerconnectioniceerroreventinit-members",
+      "level": 5,
+      "title": "Dictionary RTCPeerConnectionIceErrorEventInit Members"
+    },
+    {
+      "id": "certificate-management",
+      "href": "https://w3c.github.io/webrtc-pc/#certificate-management",
+      "level": 3,
+      "title": "Certificate Management",
+      "number": "4.9"
+    },
+    {
+      "id": "methods-3",
+      "href": "https://w3c.github.io/webrtc-pc/#methods-3",
+      "level": 4,
+      "title": "Methods"
+    },
+    {
+      "id": "rtccertificateexpiration-dictionary",
+      "href": "https://w3c.github.io/webrtc-pc/#rtccertificateexpiration-dictionary",
+      "level": 4,
+      "title": "RTCCertificateExpiration Dictionary",
+      "number": "4.9.1"
+    },
+    {
+      "id": "rtccertificate-interface",
+      "href": "https://w3c.github.io/webrtc-pc/#rtccertificate-interface",
+      "level": 4,
+      "title": "RTCCertificate Interface",
+      "number": "4.9.2"
+    },
+    {
+      "id": "attributes-7",
+      "href": "https://w3c.github.io/webrtc-pc/#attributes-7",
+      "level": 5,
+      "title": "Attributes"
+    },
+    {
+      "id": "methods-4",
+      "href": "https://w3c.github.io/webrtc-pc/#methods-4",
+      "level": 5,
+      "title": "Methods"
+    },
+    {
+      "id": "rtp-media-api",
+      "href": "https://w3c.github.io/webrtc-pc/#rtp-media-api",
+      "level": 2,
+      "title": "RTP Media API",
+      "number": "5"
+    },
+    {
+      "id": "rtcpeerconnection-interface-extensions",
+      "href": "https://w3c.github.io/webrtc-pc/#rtcpeerconnection-interface-extensions",
+      "level": 3,
+      "title": "RTCPeerConnection Interface Extensions",
+      "number": "5.1"
+    },
+    {
+      "id": "attributes-8",
+      "href": "https://w3c.github.io/webrtc-pc/#attributes-8",
+      "level": 4,
+      "title": "Attributes"
+    },
+    {
+      "id": "methods-5",
+      "href": "https://w3c.github.io/webrtc-pc/#methods-5",
+      "level": 4,
+      "title": "Methods"
+    },
+    {
+      "id": "dictionary-rtcrtptransceiverinit-members",
+      "href": "https://w3c.github.io/webrtc-pc/#dictionary-rtcrtptransceiverinit-members",
+      "level": 4,
+      "title": "Dictionary RTCRtpTransceiverInit Members"
+    },
+    {
+      "id": "processing-remote-mediastreamtracks",
+      "href": "https://w3c.github.io/webrtc-pc/#processing-remote-mediastreamtracks",
+      "level": 4,
+      "title": "Processing Remote MediaStreamTracks",
+      "number": "5.1.1"
+    },
+    {
+      "id": "rtcrtpsender-interface",
+      "href": "https://w3c.github.io/webrtc-pc/#rtcrtpsender-interface",
+      "level": 3,
+      "title": "RTCRtpSender Interface",
+      "number": "5.2"
+    },
+    {
+      "id": "attributes-9",
+      "href": "https://w3c.github.io/webrtc-pc/#attributes-9",
+      "level": 4,
+      "title": "Attributes"
+    },
+    {
+      "id": "methods-6",
+      "href": "https://w3c.github.io/webrtc-pc/#methods-6",
+      "level": 4,
+      "title": "Methods"
+    },
+    {
+      "id": "rtcrtpparameters",
+      "href": "https://w3c.github.io/webrtc-pc/#rtcrtpparameters",
+      "level": 4,
+      "title": "RTCRtpParameters Dictionary",
+      "number": "5.2.1"
+    },
+    {
+      "id": "dictionary-rtcrtpparameters-members",
+      "href": "https://w3c.github.io/webrtc-pc/#dictionary-rtcrtpparameters-members",
+      "level": 5,
+      "title": "Dictionary RTCRtpParameters Members"
+    },
+    {
+      "id": "rtcsendrtpparameters",
+      "href": "https://w3c.github.io/webrtc-pc/#rtcsendrtpparameters",
+      "level": 4,
+      "title": "RTCRtpSendParameters Dictionary",
+      "number": "5.2.2"
+    },
+    {
+      "id": "dictionary-rtcrtpsendparameters-members",
+      "href": "https://w3c.github.io/webrtc-pc/#dictionary-rtcrtpsendparameters-members",
+      "level": 5,
+      "title": "Dictionary RTCRtpSendParameters Members"
+    },
+    {
+      "id": "rtcreceivertpparameters",
+      "href": "https://w3c.github.io/webrtc-pc/#rtcreceivertpparameters",
+      "level": 4,
+      "title": "RTCRtpReceiveParameters Dictionary",
+      "number": "5.2.3"
+    },
+    {
+      "id": "rtcrtpcodingparameters",
+      "href": "https://w3c.github.io/webrtc-pc/#rtcrtpcodingparameters",
+      "level": 4,
+      "title": "RTCRtpCodingParameters Dictionary",
+      "number": "5.2.4"
+    },
+    {
+      "id": "dictionary-rtcrtpcodingparameters-members",
+      "href": "https://w3c.github.io/webrtc-pc/#dictionary-rtcrtpcodingparameters-members",
+      "level": 5,
+      "title": "Dictionary RTCRtpCodingParameters Members"
+    },
+    {
+      "id": "rtcrtpdecodingparameters",
+      "href": "https://w3c.github.io/webrtc-pc/#rtcrtpdecodingparameters",
+      "level": 4,
+      "title": "RTCRtpDecodingParameters Dictionary",
+      "number": "5.2.5"
+    },
+    {
+      "id": "rtcrtpencodingparameters",
+      "href": "https://w3c.github.io/webrtc-pc/#rtcrtpencodingparameters",
+      "level": 4,
+      "title": "RTCRtpEncodingParameters Dictionary",
+      "number": "5.2.6"
+    },
+    {
+      "id": "dictionary-rtcrtpencodingparameters-members",
+      "href": "https://w3c.github.io/webrtc-pc/#dictionary-rtcrtpencodingparameters-members",
+      "level": 5,
+      "title": "Dictionary RTCRtpEncodingParameters Members"
+    },
+    {
+      "id": "rtcrtcpparameters",
+      "href": "https://w3c.github.io/webrtc-pc/#rtcrtcpparameters",
+      "level": 4,
+      "title": "RTCRtcpParameters Dictionary",
+      "number": "5.2.7"
+    },
+    {
+      "id": "dictionary-rtcrtcpparameters-members",
+      "href": "https://w3c.github.io/webrtc-pc/#dictionary-rtcrtcpparameters-members",
+      "level": 5,
+      "title": "Dictionary RTCRtcpParameters Members"
+    },
+    {
+      "id": "rtcrtpheaderextensionparameters",
+      "href": "https://w3c.github.io/webrtc-pc/#rtcrtpheaderextensionparameters",
+      "level": 4,
+      "title": "RTCRtpHeaderExtensionParameters Dictionary",
+      "number": "5.2.8"
+    },
+    {
+      "id": "dictionary-rtcrtpheaderextensionparameters-members",
+      "href": "https://w3c.github.io/webrtc-pc/#dictionary-rtcrtpheaderextensionparameters-members",
+      "level": 5,
+      "title": "Dictionary RTCRtpHeaderExtensionParameters Members"
+    },
+    {
+      "id": "rtcrtpcodecparameters",
+      "href": "https://w3c.github.io/webrtc-pc/#rtcrtpcodecparameters",
+      "level": 4,
+      "title": "RTCRtpCodecParameters Dictionary",
+      "number": "5.2.9"
+    },
+    {
+      "id": "dictionary-rtcrtpcodecparameters-members",
+      "href": "https://w3c.github.io/webrtc-pc/#dictionary-rtcrtpcodecparameters-members",
+      "level": 5,
+      "title": "Dictionary RTCRtpCodecParameters Members"
+    },
+    {
+      "id": "rtcrtpcapabilities",
+      "href": "https://w3c.github.io/webrtc-pc/#rtcrtpcapabilities",
+      "level": 4,
+      "title": "RTCRtpCapabilities Dictionary",
+      "number": "5.2.10"
+    },
+    {
+      "id": "dictionary-rtcrtpcapabilities-members",
+      "href": "https://w3c.github.io/webrtc-pc/#dictionary-rtcrtpcapabilities-members",
+      "level": 5,
+      "title": "Dictionary RTCRtpCapabilities Members"
+    },
+    {
+      "id": "rtcrtpcodeccapability",
+      "href": "https://w3c.github.io/webrtc-pc/#rtcrtpcodeccapability",
+      "level": 4,
+      "title": "RTCRtpCodecCapability Dictionary",
+      "number": "5.2.11"
+    },
+    {
+      "id": "dictionary-rtcrtpcodeccapability-members",
+      "href": "https://w3c.github.io/webrtc-pc/#dictionary-rtcrtpcodeccapability-members",
+      "level": 5,
+      "title": "Dictionary RTCRtpCodecCapability Members"
+    },
+    {
+      "id": "rtcrtpheaderextensioncapability",
+      "href": "https://w3c.github.io/webrtc-pc/#rtcrtpheaderextensioncapability",
+      "level": 4,
+      "title": "RTCRtpHeaderExtensionCapability Dictionary",
+      "number": "5.2.12"
+    },
+    {
+      "id": "dictionary-rtcrtpheaderextensioncapability-members",
+      "href": "https://w3c.github.io/webrtc-pc/#dictionary-rtcrtpheaderextensioncapability-members",
+      "level": 5,
+      "title": "Dictionary RTCRtpHeaderExtensionCapability Members"
+    },
+    {
+      "id": "rtcrtpreceiver-interface",
+      "href": "https://w3c.github.io/webrtc-pc/#rtcrtpreceiver-interface",
+      "level": 3,
+      "title": "RTCRtpReceiver Interface",
+      "number": "5.3"
+    },
+    {
+      "id": "attributes-10",
+      "href": "https://w3c.github.io/webrtc-pc/#attributes-10",
+      "level": 4,
+      "title": "Attributes"
+    },
+    {
+      "id": "methods-7",
+      "href": "https://w3c.github.io/webrtc-pc/#methods-7",
+      "level": 4,
+      "title": "Methods"
+    },
+    {
+      "id": "dictionary-rtcrtpcontributingsource-members",
+      "href": "https://w3c.github.io/webrtc-pc/#dictionary-rtcrtpcontributingsource-members",
+      "level": 4,
+      "title": "Dictionary RTCRtpContributingSource Members"
+    },
+    {
+      "id": "rtcrtptransceiver-interface",
+      "href": "https://w3c.github.io/webrtc-pc/#rtcrtptransceiver-interface",
+      "level": 3,
+      "title": "RTCRtpTransceiver Interface",
+      "number": "5.4"
+    },
+    {
+      "id": "attributes-11",
+      "href": "https://w3c.github.io/webrtc-pc/#attributes-11",
+      "level": 4,
+      "title": "Attributes"
+    },
+    {
+      "id": "methods-8",
+      "href": "https://w3c.github.io/webrtc-pc/#methods-8",
+      "level": 4,
+      "title": "Methods"
+    },
+    {
+      "id": "simulcast-functionality",
+      "href": "https://w3c.github.io/webrtc-pc/#simulcast-functionality",
+      "level": 4,
+      "title": "Simulcast functionality",
+      "number": "5.4.1"
+    },
+    {
+      "id": "rtcrtpencodingspatialsim-example*",
+      "href": "https://w3c.github.io/webrtc-pc/#rtcrtpencodingspatialsim-example*",
+      "level": 5,
+      "title": "Encoding Parameter Examples",
+      "number": "5.4.1.1"
+    },
+    {
+      "id": "hold-functionality",
+      "href": "https://w3c.github.io/webrtc-pc/#hold-functionality",
+      "level": 4,
+      "title": "\"Hold\" functionality",
+      "number": "5.4.2"
+    },
+    {
+      "id": "rtcdtlstransport-interface",
+      "href": "https://w3c.github.io/webrtc-pc/#rtcdtlstransport-interface",
+      "level": 3,
+      "title": "RTCDtlsTransport Interface",
+      "number": "5.5"
+    },
+    {
+      "id": "attributes-12",
+      "href": "https://w3c.github.io/webrtc-pc/#attributes-12",
+      "level": 4,
+      "title": "Attributes"
+    },
+    {
+      "id": "methods-9",
+      "href": "https://w3c.github.io/webrtc-pc/#methods-9",
+      "level": 4,
+      "title": "Methods"
+    },
+    {
+      "id": "rtcdtlstransportstate-enum",
+      "href": "https://w3c.github.io/webrtc-pc/#rtcdtlstransportstate-enum",
+      "level": 3,
+      "title": "RTCDtlsTransportState Enum"
+    },
+    {
+      "id": "rtcdtlsfingerprint",
+      "href": "https://w3c.github.io/webrtc-pc/#rtcdtlsfingerprint",
+      "level": 4,
+      "title": "RTCDtlsFingerprint Dictionary",
+      "number": "5.5.1"
+    },
+    {
+      "id": "dictionary-rtcdtlsfingerprint-members",
+      "href": "https://w3c.github.io/webrtc-pc/#dictionary-rtcdtlsfingerprint-members",
+      "level": 5,
+      "title": "Dictionary RTCDtlsFingerprint Members"
+    },
+    {
+      "id": "rtcicetransport",
+      "href": "https://w3c.github.io/webrtc-pc/#rtcicetransport",
+      "level": 3,
+      "title": "RTCIceTransport Interface",
+      "number": "5.6"
+    },
+    {
+      "id": "attributes-13",
+      "href": "https://w3c.github.io/webrtc-pc/#attributes-13",
+      "level": 4,
+      "title": "Attributes"
+    },
+    {
+      "id": "methods-10",
+      "href": "https://w3c.github.io/webrtc-pc/#methods-10",
+      "level": 4,
+      "title": "Methods"
+    },
+    {
+      "id": "rtciceparameters",
+      "href": "https://w3c.github.io/webrtc-pc/#rtciceparameters",
+      "level": 4,
+      "title": "RTCIceParameters Dictionary",
+      "number": "5.6.1"
+    },
+    {
+      "id": "dictionary-rtciceparameters-members",
+      "href": "https://w3c.github.io/webrtc-pc/#dictionary-rtciceparameters-members",
+      "level": 5,
+      "title": "Dictionary RTCIceParameters Members"
+    },
+    {
+      "id": "rtcicecandidatepair",
+      "href": "https://w3c.github.io/webrtc-pc/#rtcicecandidatepair",
+      "level": 4,
+      "title": "RTCIceCandidatePair Dictionary",
+      "number": "5.6.2"
+    },
+    {
+      "id": "dictionary-rtcicecandidatepair-members",
+      "href": "https://w3c.github.io/webrtc-pc/#dictionary-rtcicecandidatepair-members",
+      "level": 5,
+      "title": "Dictionary RTCIceCandidatePair Members"
+    },
+    {
+      "id": "rtcicegathererstate",
+      "href": "https://w3c.github.io/webrtc-pc/#rtcicegathererstate",
+      "level": 4,
+      "title": "RTCIceGathererState Enum",
+      "number": "5.6.3"
+    },
+    {
+      "id": "rtcicetransportstate",
+      "href": "https://w3c.github.io/webrtc-pc/#rtcicetransportstate",
+      "level": 4,
+      "title": "RTCIceTransportState Enum",
+      "number": "5.6.4"
+    },
+    {
+      "id": "rtcicerole",
+      "href": "https://w3c.github.io/webrtc-pc/#rtcicerole",
+      "level": 4,
+      "title": "RTCIceRole Enum",
+      "number": "5.6.5"
+    },
+    {
+      "id": "rtcicecomponent",
+      "href": "https://w3c.github.io/webrtc-pc/#rtcicecomponent",
+      "level": 4,
+      "title": "RTCIceComponent Enum",
+      "number": "5.6.6"
+    },
+    {
+      "id": "rtctrackevent",
+      "href": "https://w3c.github.io/webrtc-pc/#rtctrackevent",
+      "level": 3,
+      "title": "RTCTrackEvent",
+      "number": "5.7"
+    },
+    {
+      "id": "constructors-4",
+      "href": "https://w3c.github.io/webrtc-pc/#constructors-4",
+      "level": 4,
+      "title": "Constructors"
+    },
+    {
+      "id": "attributes-14",
+      "href": "https://w3c.github.io/webrtc-pc/#attributes-14",
+      "level": 4,
+      "title": "Attributes"
+    },
+    {
+      "id": "dictionary-rtctrackeventinit-members",
+      "href": "https://w3c.github.io/webrtc-pc/#dictionary-rtctrackeventinit-members",
+      "level": 4,
+      "title": "Dictionary RTCTrackEventInit Members"
+    },
+    {
+      "id": "peer-to-peer-data-api",
+      "href": "https://w3c.github.io/webrtc-pc/#peer-to-peer-data-api",
+      "level": 2,
+      "title": "Peer-to-peer Data API",
+      "number": "6"
+    },
+    {
+      "id": "rtcpeerconnection-interface-extensions-0",
+      "href": "https://w3c.github.io/webrtc-pc/#rtcpeerconnection-interface-extensions-0",
+      "level": 3,
+      "title": "RTCPeerConnection Interface Extensions",
+      "number": "6.1"
+    },
+    {
+      "id": "attributes-15",
+      "href": "https://w3c.github.io/webrtc-pc/#attributes-15",
+      "level": 4,
+      "title": "Attributes"
+    },
+    {
+      "id": "methods-11",
+      "href": "https://w3c.github.io/webrtc-pc/#methods-11",
+      "level": 4,
+      "title": "Methods"
+    },
+    {
+      "id": "rtcsctptransport-interface",
+      "href": "https://w3c.github.io/webrtc-pc/#rtcsctptransport-interface",
+      "level": 4,
+      "title": "RTCSctpTransport Interface",
+      "number": "6.1.1"
+    },
+    {
+      "id": "create-an-instance",
+      "href": "https://w3c.github.io/webrtc-pc/#create-an-instance",
+      "level": 5,
+      "title": "Create an instance",
+      "number": "6.1.1.1"
+    },
+    {
+      "id": "update-max-message-size",
+      "href": "https://w3c.github.io/webrtc-pc/#update-max-message-size",
+      "level": 5,
+      "title": "Update max message size",
+      "number": "6.1.1.2"
+    },
+    {
+      "id": "connected-procedure",
+      "href": "https://w3c.github.io/webrtc-pc/#connected-procedure",
+      "level": 5,
+      "title": "Connected procedure",
+      "number": "6.1.1.3"
+    },
+    {
+      "id": "attributes-16",
+      "href": "https://w3c.github.io/webrtc-pc/#attributes-16",
+      "level": 5,
+      "title": "Attributes"
+    },
+    {
+      "id": "rtcsctptransportstate",
+      "href": "https://w3c.github.io/webrtc-pc/#rtcsctptransportstate",
+      "level": 4,
+      "title": "RTCSctpTransportState Enum",
+      "number": "6.1.2"
+    },
+    {
+      "id": "rtcdatachannel",
+      "href": "https://w3c.github.io/webrtc-pc/#rtcdatachannel",
+      "level": 3,
+      "title": "RTCDataChannel",
+      "number": "6.2"
+    },
+    {
+      "id": "creating-a-data-channel",
+      "href": "https://w3c.github.io/webrtc-pc/#creating-a-data-channel",
+      "level": 4,
+      "title": "Creating a data channel",
+      "number": "6.2.1"
+    },
+    {
+      "id": "announcing-a-data-channel-as-open",
+      "href": "https://w3c.github.io/webrtc-pc/#announcing-a-data-channel-as-open",
+      "level": 4,
+      "title": "Announcing a data channel as open",
+      "number": "6.2.2"
+    },
+    {
+      "id": "announcing-a-data-channel-instance",
+      "href": "https://w3c.github.io/webrtc-pc/#announcing-a-data-channel-instance",
+      "level": 4,
+      "title": "Announcing a data channel instance",
+      "number": "6.2.3"
+    },
+    {
+      "id": "closing-procedure",
+      "href": "https://w3c.github.io/webrtc-pc/#closing-procedure",
+      "level": 4,
+      "title": "Closing procedure",
+      "number": "6.2.4"
+    },
+    {
+      "id": "announcing-a-data-channel-as-closed",
+      "href": "https://w3c.github.io/webrtc-pc/#announcing-a-data-channel-as-closed",
+      "level": 4,
+      "title": "Announcing a data channel as closed",
+      "number": "6.2.5"
+    },
+    {
+      "id": "error-on-creating-data-channels",
+      "href": "https://w3c.github.io/webrtc-pc/#error-on-creating-data-channels",
+      "level": 4,
+      "title": "Error on creating data channels",
+      "number": "6.2.6"
+    },
+    {
+      "id": "receiving-messages-on-a-data-channel",
+      "href": "https://w3c.github.io/webrtc-pc/#receiving-messages-on-a-data-channel",
+      "level": 4,
+      "title": "Receiving messages on a data channel",
+      "number": "6.2.7"
+    },
+    {
+      "id": "attributes-17",
+      "href": "https://w3c.github.io/webrtc-pc/#attributes-17",
+      "level": 4,
+      "title": "Attributes"
+    },
+    {
+      "id": "methods-12",
+      "href": "https://w3c.github.io/webrtc-pc/#methods-12",
+      "level": 4,
+      "title": "Methods"
+    },
+    {
+      "id": "dictionary-rtcdatachannelinit-members",
+      "href": "https://w3c.github.io/webrtc-pc/#dictionary-rtcdatachannelinit-members",
+      "level": 4,
+      "title": "Dictionary RTCDataChannelInit Members"
+    },
+    {
+      "id": "rtcdatachannelevent",
+      "href": "https://w3c.github.io/webrtc-pc/#rtcdatachannelevent",
+      "level": 3,
+      "title": "RTCDataChannelEvent",
+      "number": "6.3"
+    },
+    {
+      "id": "constructors-5",
+      "href": "https://w3c.github.io/webrtc-pc/#constructors-5",
+      "level": 4,
+      "title": "Constructors"
+    },
+    {
+      "id": "attributes-18",
+      "href": "https://w3c.github.io/webrtc-pc/#attributes-18",
+      "level": 4,
+      "title": "Attributes"
+    },
+    {
+      "id": "dictionary-rtcdatachanneleventinit-members",
+      "href": "https://w3c.github.io/webrtc-pc/#dictionary-rtcdatachanneleventinit-members",
+      "level": 4,
+      "title": "Dictionary RTCDataChannelEventInit Members"
+    },
+    {
+      "id": "garbage-collection-0",
+      "href": "https://w3c.github.io/webrtc-pc/#garbage-collection-0",
+      "level": 3,
+      "title": "Garbage Collection",
+      "number": "6.4"
+    },
+    {
+      "id": "peer-to-peer-dtmf",
+      "href": "https://w3c.github.io/webrtc-pc/#peer-to-peer-dtmf",
+      "level": 2,
+      "title": "Peer-to-peer DTMF",
+      "number": "7"
+    },
+    {
+      "id": "rtcrtpsender-interface-extensions",
+      "href": "https://w3c.github.io/webrtc-pc/#rtcrtpsender-interface-extensions",
+      "level": 3,
+      "title": "RTCRtpSender Interface Extensions",
+      "number": "7.1"
+    },
+    {
+      "id": "attributes-19",
+      "href": "https://w3c.github.io/webrtc-pc/#attributes-19",
+      "level": 4,
+      "title": "Attributes"
+    },
+    {
+      "id": "rtcdtmfsender",
+      "href": "https://w3c.github.io/webrtc-pc/#rtcdtmfsender",
+      "level": 3,
+      "title": "RTCDTMFSender",
+      "number": "7.2"
+    },
+    {
+      "id": "attributes-20",
+      "href": "https://w3c.github.io/webrtc-pc/#attributes-20",
+      "level": 4,
+      "title": "Attributes"
+    },
+    {
+      "id": "methods-13",
+      "href": "https://w3c.github.io/webrtc-pc/#methods-13",
+      "level": 4,
+      "title": "Methods"
+    },
+    {
+      "id": "caninsertdtmf-algorithm",
+      "href": "https://w3c.github.io/webrtc-pc/#caninsertdtmf-algorithm",
+      "level": 3,
+      "title": "canInsertDTMF algorithm",
+      "number": "7.3"
+    },
+    {
+      "id": "rtcdtmftonechangeevent",
+      "href": "https://w3c.github.io/webrtc-pc/#rtcdtmftonechangeevent",
+      "level": 3,
+      "title": "RTCDTMFToneChangeEvent",
+      "number": "7.4"
+    },
+    {
+      "id": "constructors-6",
+      "href": "https://w3c.github.io/webrtc-pc/#constructors-6",
+      "level": 4,
+      "title": "Constructors"
+    },
+    {
+      "id": "attributes-21",
+      "href": "https://w3c.github.io/webrtc-pc/#attributes-21",
+      "level": 4,
+      "title": "Attributes"
+    },
+    {
+      "id": "dictionary-rtcdtmftonechangeeventinit-members",
+      "href": "https://w3c.github.io/webrtc-pc/#dictionary-rtcdtmftonechangeeventinit-members",
+      "level": 4,
+      "title": "Dictionary RTCDTMFToneChangeEventInit Members"
+    },
+    {
+      "id": "statistics-model",
+      "href": "https://w3c.github.io/webrtc-pc/#statistics-model",
+      "level": 2,
+      "title": "Statistics Model",
+      "number": "8"
+    },
+    {
+      "id": "introduction-0",
+      "href": "https://w3c.github.io/webrtc-pc/#introduction-0",
+      "level": 3,
+      "title": "Introduction",
+      "number": "8.1"
+    },
+    {
+      "id": "rtcpeerconnection-interface-extensions-1",
+      "href": "https://w3c.github.io/webrtc-pc/#rtcpeerconnection-interface-extensions-1",
+      "level": 3,
+      "title": "RTCPeerConnection Interface Extensions",
+      "number": "8.2"
+    },
+    {
+      "id": "methods-14",
+      "href": "https://w3c.github.io/webrtc-pc/#methods-14",
+      "level": 4,
+      "title": "Methods"
+    },
+    {
+      "id": "rtcstatsreport-object",
+      "href": "https://w3c.github.io/webrtc-pc/#rtcstatsreport-object",
+      "level": 3,
+      "title": "RTCStatsReport Object",
+      "number": "8.3"
+    },
+    {
+      "id": "rtcstats-dictionary",
+      "href": "https://w3c.github.io/webrtc-pc/#rtcstats-dictionary",
+      "level": 3,
+      "title": "RTCStats Dictionary",
+      "number": "8.4"
+    },
+    {
+      "id": "dictionary-rtcstats-members",
+      "href": "https://w3c.github.io/webrtc-pc/#dictionary-rtcstats-members",
+      "level": 4,
+      "title": "Dictionary RTCStats Members"
+    },
+    {
+      "id": "the-stats-selection-algorithm",
+      "href": "https://w3c.github.io/webrtc-pc/#the-stats-selection-algorithm",
+      "level": 3,
+      "title": "The stats selection algorithm",
+      "number": "8.5"
+    },
+    {
+      "id": "mandatory-to-implement-stats",
+      "href": "https://w3c.github.io/webrtc-pc/#mandatory-to-implement-stats",
+      "level": 3,
+      "title": "Mandatory To Implement Stats",
+      "number": "8.6"
+    },
+    {
+      "id": "getstats-example",
+      "href": "https://w3c.github.io/webrtc-pc/#getstats-example",
+      "level": 3,
+      "title": "GetStats Example",
+      "number": "8.7"
+    },
+    {
+      "id": "media-stream-api-extensions-for-network-use",
+      "href": "https://w3c.github.io/webrtc-pc/#media-stream-api-extensions-for-network-use",
+      "level": 2,
+      "title": "Media Stream API Extensions for Network Use",
+      "number": "9"
+    },
+    {
+      "id": "introduction-1",
+      "href": "https://w3c.github.io/webrtc-pc/#introduction-1",
+      "level": 3,
+      "title": "Introduction",
+      "number": "9.1"
+    },
+    {
+      "id": "mediastream",
+      "href": "https://w3c.github.io/webrtc-pc/#mediastream",
+      "level": 3,
+      "title": "MediaStream",
+      "number": "9.2"
+    },
+    {
+      "id": "id",
+      "href": "https://w3c.github.io/webrtc-pc/#id",
+      "level": 4,
+      "title": "id",
+      "number": "9.2.1"
+    },
+    {
+      "id": "mediastreamtrack",
+      "href": "https://w3c.github.io/webrtc-pc/#mediastreamtrack",
+      "level": 3,
+      "title": "MediaStreamTrack",
+      "number": "9.3"
+    },
+    {
+      "id": "mediatracksupportedconstraints-mediatrackcapabilities-mediatrackconstraints-and-mediatracksettings",
+      "href": "https://w3c.github.io/webrtc-pc/#mediatracksupportedconstraints-mediatrackcapabilities-mediatrackconstraints-and-mediatracksettings",
+      "level": 4,
+      "title": "MediaTrackSupportedConstraints, MediaTrackCapabilities, MediaTrackConstraints and MediaTrackSettings",
+      "number": "9.3.1"
+    },
+    {
+      "id": "examples-and-call-flows",
+      "href": "https://w3c.github.io/webrtc-pc/#examples-and-call-flows",
+      "level": 2,
+      "title": "10. Examples and Call Flows"
+    },
+    {
+      "id": "simple-peer-to-peer-example",
+      "href": "https://w3c.github.io/webrtc-pc/#simple-peer-to-peer-example",
+      "level": 3,
+      "title": "Simple Peer-to-peer Example",
+      "number": "10.1"
+    },
+    {
+      "id": "advanced-peer-to-peer-example-with-warm-up",
+      "href": "https://w3c.github.io/webrtc-pc/#advanced-peer-to-peer-example-with-warm-up",
+      "level": 3,
+      "title": "Advanced Peer-to-peer Example with Warm-up",
+      "number": "10.2"
+    },
+    {
+      "id": "simulcast-example",
+      "href": "https://w3c.github.io/webrtc-pc/#simulcast-example",
+      "level": 3,
+      "title": "Simulcast Example",
+      "number": "10.3"
+    },
+    {
+      "id": "peer-to-peer-data-example",
+      "href": "https://w3c.github.io/webrtc-pc/#peer-to-peer-data-example",
+      "level": 3,
+      "title": "Peer-to-peer Data Example",
+      "number": "10.4"
+    },
+    {
+      "id": "call-flow-browser-to-browser",
+      "href": "https://w3c.github.io/webrtc-pc/#call-flow-browser-to-browser",
+      "level": 3,
+      "title": "Call Flow Browser to Browser",
+      "number": "10.5"
+    },
+    {
+      "id": "dtmf-example",
+      "href": "https://w3c.github.io/webrtc-pc/#dtmf-example",
+      "level": 3,
+      "title": "DTMF Example",
+      "number": "10.6"
+    },
+    {
+      "id": "perfect-negotiation-example",
+      "href": "https://w3c.github.io/webrtc-pc/#perfect-negotiation-example",
+      "level": 3,
+      "title": "Perfect Negotiation Example",
+      "number": "10.7"
+    },
+    {
+      "id": "error-handling-0",
+      "href": "https://w3c.github.io/webrtc-pc/#error-handling-0",
+      "level": 2,
+      "title": "11. Error Handling"
+    },
+    {
+      "id": "rtcerror-interface",
+      "href": "https://w3c.github.io/webrtc-pc/#rtcerror-interface",
+      "level": 3,
+      "title": "RTCError Interface",
+      "number": "11.1"
+    },
+    {
+      "id": "constructors",
+      "href": "https://w3c.github.io/webrtc-pc/#constructors",
+      "level": 4,
+      "title": "Constructors",
+      "number": "11.1.1"
+    },
+    {
+      "id": "attributes",
+      "href": "https://w3c.github.io/webrtc-pc/#attributes",
+      "level": 4,
+      "title": "Attributes",
+      "number": "11.1.2"
+    },
+    {
+      "id": "rtcerrorinit-dictionary",
+      "href": "https://w3c.github.io/webrtc-pc/#rtcerrorinit-dictionary",
+      "level": 3,
+      "title": "RTCErrorInit Dictionary"
+    },
+    {
+      "id": "rtcerrordetailtype-enum",
+      "href": "https://w3c.github.io/webrtc-pc/#rtcerrordetailtype-enum",
+      "level": 3,
+      "title": "RTCErrorDetailType Enum",
+      "number": "11.2"
+    },
+    {
+      "id": "rtcerrorevent-interface",
+      "href": "https://w3c.github.io/webrtc-pc/#rtcerrorevent-interface",
+      "level": 3,
+      "title": "RTCErrorEvent Interface",
+      "number": "11.3"
+    },
+    {
+      "id": "constructors-0",
+      "href": "https://w3c.github.io/webrtc-pc/#constructors-0",
+      "level": 4,
+      "title": "Constructors",
+      "number": "11.3.1"
+    },
+    {
+      "id": "attributes-0",
+      "href": "https://w3c.github.io/webrtc-pc/#attributes-0",
+      "level": 4,
+      "title": "Attributes",
+      "number": "11.3.2"
+    },
+    {
+      "id": "rtcerroreventinit-dictionary",
+      "href": "https://w3c.github.io/webrtc-pc/#rtcerroreventinit-dictionary",
+      "level": 3,
+      "title": "RTCErrorEventInit Dictionary",
+      "number": "11.4"
+    },
+    {
+      "id": "dictionary-rtcerroreventinit-members",
+      "href": "https://w3c.github.io/webrtc-pc/#dictionary-rtcerroreventinit-members",
+      "level": 4,
+      "title": "Dictionary RTCErrorEventInit Members",
+      "number": "11.4.1"
+    },
+    {
+      "id": "event-summary",
+      "href": "https://w3c.github.io/webrtc-pc/#event-summary",
+      "level": 2,
+      "title": "12. Event summary"
+    },
+    {
+      "id": "privacy-and-security-considerations",
+      "href": "https://w3c.github.io/webrtc-pc/#privacy-and-security-considerations",
+      "level": 2,
+      "title": "13. Privacy and Security Considerations"
+    },
+    {
+      "id": "impact-on-same-origin-policy",
+      "href": "https://w3c.github.io/webrtc-pc/#impact-on-same-origin-policy",
+      "level": 3,
+      "title": "Impact on same origin policy",
+      "number": "13.1"
+    },
+    {
+      "id": "revealing-ip-addresses",
+      "href": "https://w3c.github.io/webrtc-pc/#revealing-ip-addresses",
+      "level": 3,
+      "title": "Revealing IP addresses",
+      "number": "13.2"
+    },
+    {
+      "id": "impact-on-local-network",
+      "href": "https://w3c.github.io/webrtc-pc/#impact-on-local-network",
+      "level": 3,
+      "title": "Impact on local network",
+      "number": "13.3"
+    },
+    {
+      "id": "confidentiality-of-communications",
+      "href": "https://w3c.github.io/webrtc-pc/#confidentiality-of-communications",
+      "level": 3,
+      "title": "Confidentiality of Communications",
+      "number": "13.4"
+    },
+    {
+      "id": "persistent-information-exposed-by-webrtc",
+      "href": "https://w3c.github.io/webrtc-pc/#persistent-information-exposed-by-webrtc",
+      "level": 3,
+      "title": "Persistent information exposed by WebRTC",
+      "number": "13.5"
+    },
+    {
+      "id": "setting-sdp-from-remote-endpoints",
+      "href": "https://w3c.github.io/webrtc-pc/#setting-sdp-from-remote-endpoints",
+      "level": 3,
+      "title": "Setting SDP from remote endpoints",
+      "number": "13.6"
+    },
+    {
+      "id": "accessibility-considerations",
+      "href": "https://w3c.github.io/webrtc-pc/#accessibility-considerations",
+      "level": 2,
+      "title": "14. Accessibility Considerations"
+    },
+    {
+      "id": "acknowledgements",
+      "href": "https://w3c.github.io/webrtc-pc/#acknowledgements",
+      "level": 2,
+      "title": "Acknowledgements",
+      "number": "A"
+    },
+    {
+      "id": "references",
+      "href": "https://w3c.github.io/webrtc-pc/#references",
+      "level": 2,
+      "title": "References",
+      "number": "B"
+    },
+    {
+      "id": "normative-references",
+      "href": "https://w3c.github.io/webrtc-pc/#normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "number": "B.1"
+    },
+    {
+      "id": "informative-references",
+      "href": "https://w3c.github.io/webrtc-pc/#informative-references",
+      "level": 3,
+      "title": "Informative references",
+      "number": "B.2"
+    }
+  ]
+}

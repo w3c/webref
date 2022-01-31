@@ -1,0 +1,89 @@
+{
+  "name": "NavigatorBadge",
+  "type": "interface mixin",
+  "defined": {
+    "spec": {
+      "title": "Badging API",
+      "url": "https://w3c.github.io/badging/"
+    },
+    "fragment": "// Methods exposed on both documents and service workers.\n[SecureContext]\ninterface mixin NavigatorBadge {\n  Promise<undefined> setAppBadge(optional [EnforceRange] unsigned long long contents);\n  Promise<undefined> clearAppBadge();\n};",
+    "href": "https://w3c.github.io/badging/#dom-navigatorbadge"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://w3c.github.io/badging/": [
+      {
+        "id": "dom-navigatorbadge",
+        "href": "https://w3c.github.io/badging/#dom-navigatorbadge",
+        "linkingText": [
+          "NavigatorBadge"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "extensions-to-the-navigator-and-workernavigator-interfaces",
+          "href": "https://w3c.github.io/badging/#extensions-to-the-navigator-and-workernavigator-interfaces",
+          "title": "Extensions to the Navigator and WorkerNavigator interfaces",
+          "number": "4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-navigatorbadge-setappbadge",
+        "href": "https://w3c.github.io/badging/#dom-navigatorbadge-setappbadge",
+        "linkingText": [
+          "setAppBadge()",
+          "setAppBadge(contents)"
+        ],
+        "localLinkingText": [
+          "NavigatorBadge.setAppBadge",
+          "NavigatorBadge.setAppBadge()",
+          "setAppBadge"
+        ],
+        "type": "method",
+        "for": [
+          "NavigatorBadge"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "setappbadge-method",
+          "href": "https://w3c.github.io/badging/#setappbadge-method",
+          "title": "setAppBadge() method",
+          "number": "4.3"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-navigatorbadge-clearappbadge",
+        "href": "https://w3c.github.io/badging/#dom-navigatorbadge-clearappbadge",
+        "linkingText": [
+          "clearAppBadge()"
+        ],
+        "localLinkingText": [
+          "NavigatorBadge.clearAppBadge",
+          "NavigatorBadge.clearAppBadge()",
+          "clearAppBadge"
+        ],
+        "type": "method",
+        "for": [
+          "NavigatorBadge"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "clearappbadge-method",
+          "href": "https://w3c.github.io/badging/#clearappbadge-method",
+          "title": "clearAppBadge() method",
+          "number": "4.4"
+        },
+        "definedIn": "heading"
+      }
+    ]
+  }
+}

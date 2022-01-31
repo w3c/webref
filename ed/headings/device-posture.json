@@ -1,0 +1,246 @@
+{
+  "spec": {
+    "title": "Device Posture API",
+    "url": "https://w3c.github.io/device-posture/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://w3c.github.io/device-posture/#title",
+      "level": 1,
+      "title": "Device Posture API"
+    },
+    {
+      "id": "abstract",
+      "href": "https://w3c.github.io/device-posture/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "sotd",
+      "href": "https://w3c.github.io/device-posture/#sotd",
+      "level": 2,
+      "title": "Status of This Document"
+    },
+    {
+      "id": "toc",
+      "href": "https://w3c.github.io/device-posture/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "introduction",
+      "href": "https://w3c.github.io/device-posture/#introduction",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "internal-slots",
+      "href": "https://w3c.github.io/device-posture/#internal-slots",
+      "level": 2,
+      "title": "Internal slots",
+      "number": "2"
+    },
+    {
+      "id": "extensions-to-the-navigator-interface",
+      "href": "https://w3c.github.io/device-posture/#extensions-to-the-navigator-interface",
+      "level": 2,
+      "title": "Extensions to the Navigator interface",
+      "number": "3"
+    },
+    {
+      "id": "the-deviceposture-interface",
+      "href": "https://w3c.github.io/device-posture/#the-deviceposture-interface",
+      "level": 2,
+      "title": "The DevicePosture interface",
+      "number": "4"
+    },
+    {
+      "id": "the-type-attribute-get-current-device-posture",
+      "href": "https://w3c.github.io/device-posture/#the-type-attribute-get-current-device-posture",
+      "level": 3,
+      "title": "The type attribute: Get current device posture",
+      "number": "4.1"
+    },
+    {
+      "id": "the-onchange-attribute-handle-posture-changes",
+      "href": "https://w3c.github.io/device-posture/#the-onchange-attribute-handle-posture-changes",
+      "level": 3,
+      "title": "The onchange attribute: Handle posture changes",
+      "number": "4.2"
+    },
+    {
+      "id": "posture-types",
+      "href": "https://w3c.github.io/device-posture/#posture-types",
+      "level": 2,
+      "title": "Posture types",
+      "number": "5"
+    },
+    {
+      "id": "device-posture-media-queries",
+      "href": "https://w3c.github.io/device-posture/#device-posture-media-queries",
+      "level": 2,
+      "title": "Device Posture Media Queries",
+      "number": "6"
+    },
+    {
+      "id": "the-device-posture-media-feature",
+      "href": "https://w3c.github.io/device-posture/#the-device-posture-media-feature",
+      "level": 3,
+      "title": "The 'device-posture' media feature",
+      "number": "6.1"
+    },
+    {
+      "id": "reading-the-posture",
+      "href": "https://w3c.github.io/device-posture/#reading-the-posture",
+      "level": 2,
+      "title": "Reading the posture",
+      "number": "7"
+    },
+    {
+      "id": "posture-values-table",
+      "href": "https://w3c.github.io/device-posture/#posture-values-table",
+      "level": 3,
+      "title": "Posture values table",
+      "number": "7.1"
+    },
+    {
+      "id": "foldables",
+      "href": "https://w3c.github.io/device-posture/#foldables",
+      "level": 4,
+      "title": "Foldables",
+      "number": "7.1.1"
+    },
+    {
+      "id": "algorithms",
+      "href": "https://w3c.github.io/device-posture/#algorithms",
+      "level": 2,
+      "title": "Algorithms",
+      "number": "8"
+    },
+    {
+      "id": "updating-the-device-posture-information",
+      "href": "https://w3c.github.io/device-posture/#updating-the-device-posture-information",
+      "level": 3,
+      "title": "Updating the device posture information",
+      "number": "8.1"
+    },
+    {
+      "id": "device-posture-change",
+      "href": "https://w3c.github.io/device-posture/#device-posture-change",
+      "level": 3,
+      "title": "Device Posture change",
+      "number": "8.2"
+    },
+    {
+      "id": "security-and-privacy-considerations",
+      "href": "https://w3c.github.io/device-posture/#security-and-privacy-considerations",
+      "level": 2,
+      "title": "Security and Privacy considerations",
+      "number": "9"
+    },
+    {
+      "id": "types-of-security-and-privacy-threats",
+      "href": "https://w3c.github.io/device-posture/#types-of-security-and-privacy-threats",
+      "level": 3,
+      "title": "Types of security and privacy threats",
+      "number": "9.1"
+    },
+    {
+      "id": "mitigation-strategies",
+      "href": "https://w3c.github.io/device-posture/#mitigation-strategies",
+      "level": 3,
+      "title": "Mitigation Strategies",
+      "number": "9.2"
+    },
+    {
+      "id": "secure-context",
+      "href": "https://w3c.github.io/device-posture/#secure-context",
+      "level": 4,
+      "title": "Secure Context",
+      "number": "9.2.1"
+    },
+    {
+      "id": "focused-area",
+      "href": "https://w3c.github.io/device-posture/#focused-area",
+      "level": 4,
+      "title": "Focused Area",
+      "number": "9.2.2"
+    },
+    {
+      "id": "visibility-state",
+      "href": "https://w3c.github.io/device-posture/#visibility-state",
+      "level": 4,
+      "title": "Visibility State",
+      "number": "9.2.3"
+    },
+    {
+      "id": "examples",
+      "href": "https://w3c.github.io/device-posture/#examples",
+      "level": 2,
+      "title": "10. Examples"
+    },
+    {
+      "id": "example-1-posture-data",
+      "href": "https://w3c.github.io/device-posture/#example-1-posture-data",
+      "level": 3,
+      "title": "Example 1: Posture data",
+      "number": "10.1"
+    },
+    {
+      "id": "example-2-device-posture",
+      "href": "https://w3c.github.io/device-posture/#example-2-device-posture",
+      "level": 3,
+      "title": "Example 2: device-posture",
+      "number": "10.2"
+    },
+    {
+      "id": "example-3-feature-detection-of-device-posture-media-feature",
+      "href": "https://w3c.github.io/device-posture/#example-3-feature-detection-of-device-posture-media-feature",
+      "level": 3,
+      "title": "Example 3: Feature detection of device-posture media feature",
+      "number": "10.3"
+    },
+    {
+      "id": "dependencies",
+      "href": "https://w3c.github.io/device-posture/#dependencies",
+      "level": 2,
+      "title": "11. Dependencies"
+    },
+    {
+      "id": "conformance",
+      "href": "https://w3c.github.io/device-posture/#conformance",
+      "level": 2,
+      "title": "12. Conformance"
+    },
+    {
+      "id": "idl-index",
+      "href": "https://w3c.github.io/device-posture/#idl-index",
+      "level": 2,
+      "title": "IDL Index",
+      "number": "A"
+    },
+    {
+      "id": "acknowledgments",
+      "href": "https://w3c.github.io/device-posture/#acknowledgments",
+      "level": 2,
+      "title": "Acknowledgments",
+      "number": "B"
+    },
+    {
+      "id": "references",
+      "href": "https://w3c.github.io/device-posture/#references",
+      "level": 2,
+      "title": "References",
+      "number": "C"
+    },
+    {
+      "id": "normative-references",
+      "href": "https://w3c.github.io/device-posture/#normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "number": "C.1"
+    }
+  ]
+}

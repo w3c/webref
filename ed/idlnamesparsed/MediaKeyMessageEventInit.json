@@ -1,0 +1,176 @@
+{
+  "name": "MediaKeyMessageEventInit",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Encrypted Media Extensions",
+      "url": "https://www.w3.org/TR/encrypted-media/"
+    },
+    "fragment": "dictionary MediaKeyMessageEventInit : EventInit {\n             required MediaKeyMessageType messageType;\n             required ArrayBuffer         message;\n};",
+    "href": "https://w3c.github.io/encrypted-media/#dom-mediakeymessageeventinit"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "EventInit",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "dictionary EventInit {\n  boolean bubbles = false;\n  boolean cancelable = false;\n  boolean composed = false;\n};",
+      "href": "https://dom.spec.whatwg.org/#dictdef-eventinit"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/encrypted-media/": [
+      {
+        "id": "dom-mediakeymessageeventinit",
+        "href": "https://w3c.github.io/encrypted-media/#dom-mediakeymessageeventinit",
+        "linkingText": [
+          "MediaKeyMessageEventInit"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "mediakeymessageeventinit",
+          "href": "https://w3c.github.io/encrypted-media/#mediakeymessageeventinit",
+          "title": "MediaKeyMessageEventInit",
+          "number": "6.2.1"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-mediakeymessageeventinit-messagetype",
+        "href": "https://w3c.github.io/encrypted-media/#dom-mediakeymessageeventinit-messagetype",
+        "linkingText": [
+          "messageType"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MediaKeyMessageEventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-mediakeymessageeventinit-members",
+          "href": "https://w3c.github.io/encrypted-media/#dictionary-mediakeymessageeventinit-members",
+          "title": "Dictionary MediaKeyMessageEventInit Members"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediakeymessageeventinit-message",
+        "href": "https://w3c.github.io/encrypted-media/#dom-mediakeymessageeventinit-message",
+        "linkingText": [
+          "message"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MediaKeyMessageEventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-mediakeymessageeventinit-members",
+          "href": "https://w3c.github.io/encrypted-media/#dictionary-mediakeymessageeventinit-members",
+          "title": "Dictionary MediaKeyMessageEventInit Members"
+        },
+        "definedIn": "dt"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "dictdef-eventinit",
+        "href": "https://dom.spec.whatwg.org/#dictdef-eventinit",
+        "linkingText": [
+          "EventInit"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventinit-bubbles",
+        "href": "https://dom.spec.whatwg.org/#dom-eventinit-bubbles",
+        "linkingText": [
+          "bubbles"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventinit-cancelable",
+        "href": "https://dom.spec.whatwg.org/#dom-eventinit-cancelable",
+        "linkingText": [
+          "cancelable"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventinit-composed",
+        "href": "https://dom.spec.whatwg.org/#dom-eventinit-composed",
+        "linkingText": [
+          "composed"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

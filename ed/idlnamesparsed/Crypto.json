@@ -1,0 +1,111 @@
+{
+  "name": "Crypto",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Web Cryptography API",
+      "url": "https://www.w3.org/TR/WebCryptoAPI/"
+    },
+    "fragment": "[Exposed=(Window,Worker)]\ninterface Crypto {\n  [SecureContext] readonly attribute SubtleCrypto subtle;\n  ArrayBufferView getRandomValues(ArrayBufferView array);\n  [SecureContext] DOMString randomUUID();\n};",
+    "href": "https://w3c.github.io/webcrypto/#dfn-Crypto"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/WebCryptoAPI/": [
+      {
+        "id": "dfn-Crypto",
+        "href": "https://w3c.github.io/webcrypto/#dfn-Crypto",
+        "linkingText": [
+          "Crypto"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "crypto-interface",
+          "href": "https://w3c.github.io/webcrypto/#crypto-interface",
+          "title": "10. Crypto interface"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dfn-Crypto-attribute-subtle",
+        "href": "https://w3c.github.io/webcrypto/#dfn-Crypto-attribute-subtle",
+        "linkingText": [
+          "subtle"
+        ],
+        "localLinkingText": [
+          "Crypto.subtle"
+        ],
+        "type": "attribute",
+        "for": [
+          "Crypto"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "Crypto-attribute-subtle",
+          "href": "https://w3c.github.io/webcrypto/#Crypto-attribute-subtle",
+          "title": "The subtle attribute",
+          "number": "10.2.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dfn-Crypto-method-getRandomValues",
+        "href": "https://w3c.github.io/webcrypto/#dfn-Crypto-method-getRandomValues",
+        "linkingText": [
+          "getRandomValues()",
+          "getRandomValues(array)"
+        ],
+        "localLinkingText": [
+          "Crypto.getRandomValues",
+          "Crypto.getRandomValues()",
+          "getRandomValues"
+        ],
+        "type": "method",
+        "for": [
+          "Crypto"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "Crypto-method-getRandomValues",
+          "href": "https://w3c.github.io/webcrypto/#Crypto-method-getRandomValues",
+          "title": "The getRandomValues method",
+          "number": "10.1.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dfn-Crypto-method-randomUUID",
+        "href": "https://w3c.github.io/webcrypto/#dfn-Crypto-method-randomUUID",
+        "linkingText": [
+          "randomUUID()"
+        ],
+        "localLinkingText": [
+          "Crypto.randomUUID",
+          "Crypto.randomUUID()",
+          "randomUUID"
+        ],
+        "type": "method",
+        "for": [
+          "Crypto"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "Crypto-method-randomUUID",
+          "href": "https://w3c.github.io/webcrypto/#Crypto-method-randomUUID",
+          "title": "The randomUUID method",
+          "number": "10.1.2"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

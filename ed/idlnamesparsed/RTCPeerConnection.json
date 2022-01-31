@@ -1,0 +1,1349 @@
+{
+  "name": "RTCPeerConnection",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
+      "url": "https://www.w3.org/TR/webrtc/"
+    },
+    "fragment": "[Exposed=Window]\ninterface RTCPeerConnection : EventTarget  {\n  constructor(optional RTCConfiguration configuration = {});\n  Promise<RTCSessionDescriptionInit> createOffer(optional RTCOfferOptions options = {});\n  Promise<RTCSessionDescriptionInit> createAnswer(optional RTCAnswerOptions options = {});\n  Promise<undefined> setLocalDescription(optional RTCLocalSessionDescriptionInit description = {});\n  readonly attribute RTCSessionDescription? localDescription;\n  readonly attribute RTCSessionDescription? currentLocalDescription;\n  readonly attribute RTCSessionDescription? pendingLocalDescription;\n  Promise<undefined> setRemoteDescription(RTCSessionDescriptionInit description);\n  readonly attribute RTCSessionDescription? remoteDescription;\n  readonly attribute RTCSessionDescription? currentRemoteDescription;\n  readonly attribute RTCSessionDescription? pendingRemoteDescription;\n  Promise<undefined> addIceCandidate(optional RTCIceCandidateInit candidate = {});\n  readonly attribute RTCSignalingState signalingState;\n  readonly attribute RTCIceGatheringState iceGatheringState;\n  readonly attribute RTCIceConnectionState iceConnectionState;\n  readonly attribute RTCPeerConnectionState connectionState;\n  readonly attribute boolean? canTrickleIceCandidates;\n  undefined restartIce();\n  RTCConfiguration getConfiguration();\n  undefined setConfiguration(optional RTCConfiguration configuration = {});\n  undefined close();\n  attribute EventHandler onnegotiationneeded;\n  attribute EventHandler onicecandidate;\n  attribute EventHandler onicecandidateerror;\n  attribute EventHandler onsignalingstatechange;\n  attribute EventHandler oniceconnectionstatechange;\n  attribute EventHandler onicegatheringstatechange;\n  attribute EventHandler onconnectionstatechange;\n\n  // Legacy Interface Extensions\n  // Supporting the methods in this section is optional.\n  // If these methods are supported\n  // they must be implemented as defined\n  // in section \"Legacy Interface Extensions\"\n  Promise<undefined> createOffer(RTCSessionDescriptionCallback successCallback,\n                            RTCPeerConnectionErrorCallback failureCallback,\n                            optional RTCOfferOptions options = {});\n  Promise<undefined> setLocalDescription(RTCLocalSessionDescriptionInit description,\n                                    VoidFunction successCallback,\n                                    RTCPeerConnectionErrorCallback failureCallback);\n  Promise<undefined> createAnswer(RTCSessionDescriptionCallback successCallback,\n                             RTCPeerConnectionErrorCallback failureCallback);\n  Promise<undefined> setRemoteDescription(RTCSessionDescriptionInit description,\n                                     VoidFunction successCallback,\n                                     RTCPeerConnectionErrorCallback failureCallback);\n  Promise<undefined> addIceCandidate(RTCIceCandidateInit candidate,\n                                VoidFunction successCallback,\n                                RTCPeerConnectionErrorCallback failureCallback);\n};",
+    "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "Identity for WebRTC 1.0",
+        "url": "https://www.w3.org/TR/webrtc-identity/"
+      },
+      "fragment": "partial interface RTCPeerConnection {\n    undefined               setIdentityProvider (DOMString provider, optional RTCIdentityProviderOptions options = {});\n    Promise<DOMString> getIdentityAssertion ();\n    readonly        attribute Promise<RTCIdentityAssertion> peerIdentity;\n    readonly        attribute DOMString?                    idpLoginUrl;\n    readonly        attribute DOMString?                    idpErrorInfo;\n};"
+    },
+    {
+      "spec": {
+        "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
+        "url": "https://www.w3.org/TR/webrtc/"
+      },
+      "fragment": "partial interface RTCPeerConnection {\n  static Promise<RTCCertificate>\n      generateCertificate(AlgorithmIdentifier keygenAlgorithm);\n};"
+    },
+    {
+      "spec": {
+        "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
+        "url": "https://www.w3.org/TR/webrtc/"
+      },
+      "fragment": "partial interface RTCPeerConnection {\n  sequence<RTCRtpSender> getSenders();\n  sequence<RTCRtpReceiver> getReceivers();\n  sequence<RTCRtpTransceiver> getTransceivers();\n  RTCRtpSender addTrack(MediaStreamTrack track, MediaStream... streams);\n  undefined removeTrack(RTCRtpSender sender);\n  RTCRtpTransceiver addTransceiver((MediaStreamTrack or DOMString) trackOrKind,\n                                   optional RTCRtpTransceiverInit init = {});\n  attribute EventHandler ontrack;\n};"
+    },
+    {
+      "spec": {
+        "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
+        "url": "https://www.w3.org/TR/webrtc/"
+      },
+      "fragment": "partial interface RTCPeerConnection {\n  readonly attribute RTCSctpTransport? sctp;\n  RTCDataChannel createDataChannel(USVString label,\n                                   optional RTCDataChannelInit dataChannelDict = {});\n  attribute EventHandler ondatachannel;\n};"
+    },
+    {
+      "spec": {
+        "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
+        "url": "https://www.w3.org/TR/webrtc/"
+      },
+      "fragment": "partial interface RTCPeerConnection {\n  Promise<RTCStatsReport> getStats(optional MediaStreamTrack? selector = null);\n};"
+    }
+  ],
+  "inheritance": {
+    "name": "EventTarget",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=*]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+      "href": "https://dom.spec.whatwg.org/#eventtarget"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webrtc/": [
+      {
+        "id": "dom-rtcpeerconnection",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection",
+        "linkingText": [
+          "RTCPeerConnection"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-definition",
+          "href": "https://w3c.github.io/webrtc-pc/#interface-definition",
+          "title": "Interface Definition",
+          "number": "4.4.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-peerconnection",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-peerconnection",
+        "linkingText": [
+          "constructor()",
+          "constructor(configuration)"
+        ],
+        "localLinkingText": [
+          "RTCPeerConnection.constructor",
+          "RTCPeerConnection.constructor()",
+          "constructor"
+        ],
+        "type": "constructor",
+        "for": [
+          "RTCPeerConnection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "constructor",
+          "href": "https://w3c.github.io/webrtc-pc/#constructor",
+          "title": "Constructor",
+          "number": "4.4.1.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-rtcpeerconnection-createoffer",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-createoffer",
+        "linkingText": [
+          "createOffer()",
+          "createOffer(options)"
+        ],
+        "localLinkingText": [
+          "RTCPeerConnection.createOffer",
+          "RTCPeerConnection.createOffer()",
+          "createOffer"
+        ],
+        "type": "method",
+        "for": [
+          "RTCPeerConnection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "methods",
+          "href": "https://w3c.github.io/webrtc-pc/#methods",
+          "title": "Methods"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcpeerconnection-createanswer",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-createanswer",
+        "linkingText": [
+          "createAnswer()",
+          "createAnswer(options)"
+        ],
+        "localLinkingText": [
+          "RTCPeerConnection.createAnswer",
+          "RTCPeerConnection.createAnswer()",
+          "createAnswer"
+        ],
+        "type": "method",
+        "for": [
+          "RTCPeerConnection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "methods",
+          "href": "https://w3c.github.io/webrtc-pc/#methods",
+          "title": "Methods"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-peerconnection-setlocaldescription",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-peerconnection-setlocaldescription",
+        "linkingText": [
+          "setLocalDescription()",
+          "setLocalDescription(description)"
+        ],
+        "localLinkingText": [
+          "RTCPeerConnection.setLocalDescription",
+          "RTCPeerConnection.setLocalDescription()",
+          "setLocalDescription"
+        ],
+        "type": "method",
+        "for": [
+          "RTCPeerConnection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "methods",
+          "href": "https://w3c.github.io/webrtc-pc/#methods",
+          "title": "Methods"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-peerconnection-localdescription",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-peerconnection-localdescription",
+        "linkingText": [
+          "localDescription"
+        ],
+        "localLinkingText": [
+          "RTCPeerConnection.localDescription"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCPeerConnection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-1",
+          "href": "https://w3c.github.io/webrtc-pc/#attributes-1",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-peerconnection-currentlocaldesc",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-peerconnection-currentlocaldesc",
+        "linkingText": [
+          "currentLocalDescription"
+        ],
+        "localLinkingText": [
+          "RTCPeerConnection.currentLocalDescription"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCPeerConnection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-1",
+          "href": "https://w3c.github.io/webrtc-pc/#attributes-1",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-peerconnection-pendinglocaldesc",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-peerconnection-pendinglocaldesc",
+        "linkingText": [
+          "pendingLocalDescription"
+        ],
+        "localLinkingText": [
+          "RTCPeerConnection.pendingLocalDescription"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCPeerConnection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-1",
+          "href": "https://w3c.github.io/webrtc-pc/#attributes-1",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-peerconnection-setremotedescription",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-peerconnection-setremotedescription",
+        "linkingText": [
+          "setRemoteDescription()",
+          "setRemoteDescription(description)"
+        ],
+        "localLinkingText": [
+          "RTCPeerConnection.setRemoteDescription",
+          "RTCPeerConnection.setRemoteDescription()",
+          "setRemoteDescription"
+        ],
+        "type": "method",
+        "for": [
+          "RTCPeerConnection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "methods",
+          "href": "https://w3c.github.io/webrtc-pc/#methods",
+          "title": "Methods"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-peerconnection-remotedescription",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-peerconnection-remotedescription",
+        "linkingText": [
+          "remoteDescription"
+        ],
+        "localLinkingText": [
+          "RTCPeerConnection.remoteDescription"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCPeerConnection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-1",
+          "href": "https://w3c.github.io/webrtc-pc/#attributes-1",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-peerconnection-currentremotedesc",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-peerconnection-currentremotedesc",
+        "linkingText": [
+          "currentRemoteDescription"
+        ],
+        "localLinkingText": [
+          "RTCPeerConnection.currentRemoteDescription"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCPeerConnection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-1",
+          "href": "https://w3c.github.io/webrtc-pc/#attributes-1",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-peerconnection-pendingremotedesc",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-peerconnection-pendingremotedesc",
+        "linkingText": [
+          "pendingRemoteDescription"
+        ],
+        "localLinkingText": [
+          "RTCPeerConnection.pendingRemoteDescription"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCPeerConnection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-1",
+          "href": "https://w3c.github.io/webrtc-pc/#attributes-1",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-peerconnection-addicecandidate",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-peerconnection-addicecandidate",
+        "linkingText": [
+          "addIceCandidate()",
+          "addIceCandidate(candidate)"
+        ],
+        "localLinkingText": [
+          "RTCPeerConnection.addIceCandidate",
+          "RTCPeerConnection.addIceCandidate()",
+          "addIceCandidate"
+        ],
+        "type": "method",
+        "for": [
+          "RTCPeerConnection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "methods",
+          "href": "https://w3c.github.io/webrtc-pc/#methods",
+          "title": "Methods"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-peerconnection-signaling-state",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-peerconnection-signaling-state",
+        "linkingText": [
+          "signalingState"
+        ],
+        "localLinkingText": [
+          "RTCPeerConnection.signalingState"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCPeerConnection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-1",
+          "href": "https://w3c.github.io/webrtc-pc/#attributes-1",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-peerconnection-ice-gathering-state",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-peerconnection-ice-gathering-state",
+        "linkingText": [
+          "iceGatheringState"
+        ],
+        "localLinkingText": [
+          "RTCPeerConnection.iceGatheringState"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCPeerConnection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-1",
+          "href": "https://w3c.github.io/webrtc-pc/#attributes-1",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-peerconnection-ice-connection-state",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-peerconnection-ice-connection-state",
+        "linkingText": [
+          "iceConnectionState"
+        ],
+        "localLinkingText": [
+          "RTCPeerConnection.iceConnectionState"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCPeerConnection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-1",
+          "href": "https://w3c.github.io/webrtc-pc/#attributes-1",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-peerconnection-connection-state",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-peerconnection-connection-state",
+        "linkingText": [
+          "connectionState"
+        ],
+        "localLinkingText": [
+          "RTCPeerConnection.connectionState"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCPeerConnection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-1",
+          "href": "https://w3c.github.io/webrtc-pc/#attributes-1",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcpeerconnection-cantrickleicecandidates",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-cantrickleicecandidates",
+        "linkingText": [
+          "canTrickleIceCandidates"
+        ],
+        "localLinkingText": [
+          "RTCPeerConnection.canTrickleIceCandidates"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCPeerConnection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-1",
+          "href": "https://w3c.github.io/webrtc-pc/#attributes-1",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcpeerconnection-restartice",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-restartice",
+        "linkingText": [
+          "restartIce()"
+        ],
+        "localLinkingText": [
+          "RTCPeerConnection.restartIce",
+          "RTCPeerConnection.restartIce()",
+          "restartIce"
+        ],
+        "type": "method",
+        "for": [
+          "RTCPeerConnection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "methods",
+          "href": "https://w3c.github.io/webrtc-pc/#methods",
+          "title": "Methods"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcpeerconnection-getconfiguration",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-getconfiguration",
+        "linkingText": [
+          "getConfiguration()"
+        ],
+        "localLinkingText": [
+          "RTCPeerConnection.getConfiguration",
+          "RTCPeerConnection.getConfiguration()",
+          "getConfiguration"
+        ],
+        "type": "method",
+        "for": [
+          "RTCPeerConnection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "methods",
+          "href": "https://w3c.github.io/webrtc-pc/#methods",
+          "title": "Methods"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcpeerconnection-setconfiguration",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-setconfiguration",
+        "linkingText": [
+          "setConfiguration()",
+          "setConfiguration(configuration)"
+        ],
+        "localLinkingText": [
+          "RTCPeerConnection.setConfiguration",
+          "RTCPeerConnection.setConfiguration()",
+          "setConfiguration"
+        ],
+        "type": "method",
+        "for": [
+          "RTCPeerConnection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "methods",
+          "href": "https://w3c.github.io/webrtc-pc/#methods",
+          "title": "Methods"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcpeerconnection-close",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-close",
+        "linkingText": [
+          "close()"
+        ],
+        "localLinkingText": [
+          "RTCPeerConnection.close",
+          "RTCPeerConnection.close()",
+          "close"
+        ],
+        "type": "method",
+        "for": [
+          "RTCPeerConnection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "methods",
+          "href": "https://w3c.github.io/webrtc-pc/#methods",
+          "title": "Methods"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcpeerconnection-onnegotiationneeded",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-onnegotiationneeded",
+        "linkingText": [
+          "onnegotiationneeded"
+        ],
+        "localLinkingText": [
+          "RTCPeerConnection.onnegotiationneeded"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCPeerConnection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-1",
+          "href": "https://w3c.github.io/webrtc-pc/#attributes-1",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcpeerconnection-onicecandidate",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-onicecandidate",
+        "linkingText": [
+          "onicecandidate"
+        ],
+        "localLinkingText": [
+          "RTCPeerConnection.onicecandidate"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCPeerConnection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-1",
+          "href": "https://w3c.github.io/webrtc-pc/#attributes-1",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcpeerconnection-onicecandidateerror",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-onicecandidateerror",
+        "linkingText": [
+          "onicecandidateerror"
+        ],
+        "localLinkingText": [
+          "RTCPeerConnection.onicecandidateerror"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCPeerConnection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-1",
+          "href": "https://w3c.github.io/webrtc-pc/#attributes-1",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcpeerconnection-onsignalingstatechange",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-onsignalingstatechange",
+        "linkingText": [
+          "onsignalingstatechange"
+        ],
+        "localLinkingText": [
+          "RTCPeerConnection.onsignalingstatechange"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCPeerConnection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-1",
+          "href": "https://w3c.github.io/webrtc-pc/#attributes-1",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcpeerconnection-oniceconnectionstatechange",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-oniceconnectionstatechange",
+        "linkingText": [
+          "oniceconnectionstatechange"
+        ],
+        "localLinkingText": [
+          "RTCPeerConnection.oniceconnectionstatechange"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCPeerConnection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-1",
+          "href": "https://w3c.github.io/webrtc-pc/#attributes-1",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcpeerconnection-onicegatheringstatechange",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-onicegatheringstatechange",
+        "linkingText": [
+          "onicegatheringstatechange"
+        ],
+        "localLinkingText": [
+          "RTCPeerConnection.onicegatheringstatechange"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCPeerConnection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-1",
+          "href": "https://w3c.github.io/webrtc-pc/#attributes-1",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcpeerconnection-onconnectionstatechange",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-onconnectionstatechange",
+        "linkingText": [
+          "onconnectionstatechange"
+        ],
+        "localLinkingText": [
+          "RTCPeerConnection.onconnectionstatechange"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCPeerConnection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-1",
+          "href": "https://w3c.github.io/webrtc-pc/#attributes-1",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcpeerconnection-createoffer!overload-1",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-createoffer!overload-1",
+        "linkingText": [
+          "createOffer!overload-1()",
+          "createOffer!overload-1(successCallback, failureCallback)",
+          "createOffer!overload-1(successCallback, failureCallback, options)"
+        ],
+        "localLinkingText": [
+          "RTCPeerConnection.createOffer!overload-1",
+          "RTCPeerConnection.createOffer!overload-1()",
+          "createOffer!overload-1"
+        ],
+        "type": "method",
+        "for": [
+          "RTCPeerConnection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "methods-0",
+          "href": "https://w3c.github.io/webrtc-pc/#methods-0",
+          "title": "Methods"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcpeerconnection-setlocaldescription!overload-1",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-setlocaldescription!overload-1",
+        "linkingText": [
+          "setLocalDescription!overload-1()",
+          "setLocalDescription!overload-1(description, successCallback, failureCallback)"
+        ],
+        "localLinkingText": [
+          "RTCPeerConnection.setLocalDescription!overload-1",
+          "RTCPeerConnection.setLocalDescription!overload-1()",
+          "setLocalDescription!overload-1"
+        ],
+        "type": "method",
+        "for": [
+          "RTCPeerConnection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "methods-0",
+          "href": "https://w3c.github.io/webrtc-pc/#methods-0",
+          "title": "Methods"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcpeerconnection-createanswer!overload-1",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-createanswer!overload-1",
+        "linkingText": [
+          "createAnswer!overload-1()",
+          "createAnswer!overload-1(successCallback, failureCallback)"
+        ],
+        "localLinkingText": [
+          "RTCPeerConnection.createAnswer!overload-1",
+          "RTCPeerConnection.createAnswer!overload-1()",
+          "createAnswer!overload-1"
+        ],
+        "type": "method",
+        "for": [
+          "RTCPeerConnection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "methods-0",
+          "href": "https://w3c.github.io/webrtc-pc/#methods-0",
+          "title": "Methods"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcpeerconnection-setremotedescription!overload-1",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-setremotedescription!overload-1",
+        "linkingText": [
+          "setRemoteDescription!overload-1()",
+          "setRemoteDescription!overload-1(description, successCallback, failureCallback)"
+        ],
+        "localLinkingText": [
+          "RTCPeerConnection.setRemoteDescription!overload-1",
+          "RTCPeerConnection.setRemoteDescription!overload-1()",
+          "setRemoteDescription!overload-1"
+        ],
+        "type": "method",
+        "for": [
+          "RTCPeerConnection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "methods-0",
+          "href": "https://w3c.github.io/webrtc-pc/#methods-0",
+          "title": "Methods"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcpeerconnection-addicecandidate!overload-1",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-addicecandidate!overload-1",
+        "linkingText": [
+          "addIceCandidate!overload-1()",
+          "addIceCandidate!overload-1(candidate, successCallback, failureCallback)"
+        ],
+        "localLinkingText": [
+          "RTCPeerConnection.addIceCandidate!overload-1",
+          "RTCPeerConnection.addIceCandidate!overload-1()",
+          "addIceCandidate!overload-1"
+        ],
+        "type": "method",
+        "for": [
+          "RTCPeerConnection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "methods-0",
+          "href": "https://w3c.github.io/webrtc-pc/#methods-0",
+          "title": "Methods"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcpeerconnection-generatecertificate",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-generatecertificate",
+        "linkingText": [
+          "generateCertificate()",
+          "generateCertificate(keygenAlgorithm)"
+        ],
+        "localLinkingText": [
+          "RTCPeerConnection.generateCertificate",
+          "RTCPeerConnection.generateCertificate()",
+          "generateCertificate"
+        ],
+        "type": "method",
+        "for": [
+          "RTCPeerConnection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "methods-3",
+          "href": "https://w3c.github.io/webrtc-pc/#methods-3",
+          "title": "Methods"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-peerconnection-getsenders",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-peerconnection-getsenders",
+        "linkingText": [
+          "getSenders()"
+        ],
+        "localLinkingText": [
+          "RTCPeerConnection.getSenders",
+          "RTCPeerConnection.getSenders()",
+          "getSenders"
+        ],
+        "type": "method",
+        "for": [
+          "RTCPeerConnection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "methods-5",
+          "href": "https://w3c.github.io/webrtc-pc/#methods-5",
+          "title": "Methods"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-peerconnection-getreceivers",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-peerconnection-getreceivers",
+        "linkingText": [
+          "getReceivers()"
+        ],
+        "localLinkingText": [
+          "RTCPeerConnection.getReceivers",
+          "RTCPeerConnection.getReceivers()",
+          "getReceivers"
+        ],
+        "type": "method",
+        "for": [
+          "RTCPeerConnection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "methods-5",
+          "href": "https://w3c.github.io/webrtc-pc/#methods-5",
+          "title": "Methods"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-peerconnection-gettranseceivers",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-peerconnection-gettranseceivers",
+        "linkingText": [
+          "getTransceivers()"
+        ],
+        "localLinkingText": [
+          "RTCPeerConnection.getTransceivers",
+          "RTCPeerConnection.getTransceivers()",
+          "getTransceivers"
+        ],
+        "type": "method",
+        "for": [
+          "RTCPeerConnection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "methods-5",
+          "href": "https://w3c.github.io/webrtc-pc/#methods-5",
+          "title": "Methods"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcpeerconnection-removetrack",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-removetrack",
+        "linkingText": [
+          "removeTrack()",
+          "removeTrack(sender)"
+        ],
+        "localLinkingText": [
+          "RTCPeerConnection.removeTrack",
+          "RTCPeerConnection.removeTrack()",
+          "removeTrack"
+        ],
+        "type": "method",
+        "for": [
+          "RTCPeerConnection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "methods-5",
+          "href": "https://w3c.github.io/webrtc-pc/#methods-5",
+          "title": "Methods"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcpeerconnection-addtransceiver",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-addtransceiver",
+        "linkingText": [
+          "addTransceiver()",
+          "addTransceiver(trackOrKind)",
+          "addTransceiver(trackOrKind, init)"
+        ],
+        "localLinkingText": [
+          "RTCPeerConnection.addTransceiver",
+          "RTCPeerConnection.addTransceiver()",
+          "addTransceiver"
+        ],
+        "type": "method",
+        "for": [
+          "RTCPeerConnection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "methods-5",
+          "href": "https://w3c.github.io/webrtc-pc/#methods-5",
+          "title": "Methods"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcpeerconnection-ontrack",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-ontrack",
+        "linkingText": [
+          "ontrack"
+        ],
+        "localLinkingText": [
+          "RTCPeerConnection.ontrack"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCPeerConnection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-8",
+          "href": "https://w3c.github.io/webrtc-pc/#attributes-8",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcpeerconnection-sctp",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-sctp",
+        "linkingText": [
+          "sctp"
+        ],
+        "localLinkingText": [
+          "RTCPeerConnection.sctp"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCPeerConnection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-15",
+          "href": "https://w3c.github.io/webrtc-pc/#attributes-15",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-peerconnection-createdatachannel",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-peerconnection-createdatachannel",
+        "linkingText": [
+          "createDataChannel()",
+          "createDataChannel(label)",
+          "createDataChannel(label, dataChannelDict)"
+        ],
+        "localLinkingText": [
+          "RTCPeerConnection.createDataChannel",
+          "RTCPeerConnection.createDataChannel()",
+          "createDataChannel"
+        ],
+        "type": "method",
+        "for": [
+          "RTCPeerConnection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "methods-11",
+          "href": "https://w3c.github.io/webrtc-pc/#methods-11",
+          "title": "Methods"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcpeerconnection-ondatachannel",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-ondatachannel",
+        "linkingText": [
+          "ondatachannel"
+        ],
+        "localLinkingText": [
+          "RTCPeerConnection.ondatachannel"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCPeerConnection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-15",
+          "href": "https://w3c.github.io/webrtc-pc/#attributes-15",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "widl-RTCPeerConnection-getStats-Promise-RTCStatsReport--MediaStreamTrack-selector",
+        "href": "https://w3c.github.io/webrtc-pc/#widl-RTCPeerConnection-getStats-Promise-RTCStatsReport--MediaStreamTrack-selector",
+        "linkingText": [
+          "getStats()",
+          "getStats(selector)"
+        ],
+        "localLinkingText": [
+          "RTCPeerConnection.getStats",
+          "RTCPeerConnection.getStats()",
+          "getStats"
+        ],
+        "type": "method",
+        "for": [
+          "RTCPeerConnection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "methods-14",
+          "href": "https://w3c.github.io/webrtc-pc/#methods-14",
+          "title": "Methods"
+        },
+        "definedIn": "dt"
+      }
+    ],
+    "https://www.w3.org/TR/webrtc-identity/": [
+      {
+        "id": "dom-rtcpeerconnection-setidentityprovider",
+        "href": "https://w3c.github.io/webrtc-identity/#dom-rtcpeerconnection-setidentityprovider",
+        "linkingText": [
+          "setIdentityProvider()",
+          "setIdentityProvider(provider)",
+          "setIdentityProvider(provider, options)"
+        ],
+        "localLinkingText": [
+          "RTCPeerConnection.setIdentityProvider",
+          "RTCPeerConnection.setIdentityProvider()",
+          "setIdentityProvider"
+        ],
+        "type": "method",
+        "for": [
+          "RTCPeerConnection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "methods-0",
+          "href": "https://w3c.github.io/webrtc-identity/#methods-0",
+          "title": "Methods"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-rtcpeerconnection-getidentityassertion",
+        "href": "https://w3c.github.io/webrtc-identity/#dom-rtcpeerconnection-getidentityassertion",
+        "linkingText": [
+          "getIdentityAssertion()"
+        ],
+        "localLinkingText": [
+          "RTCPeerConnection.getIdentityAssertion",
+          "RTCPeerConnection.getIdentityAssertion()",
+          "getIdentityAssertion"
+        ],
+        "type": "method",
+        "for": [
+          "RTCPeerConnection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "methods-0",
+          "href": "https://w3c.github.io/webrtc-identity/#methods-0",
+          "title": "Methods"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcpeerconnection-peeridentity",
+        "href": "https://w3c.github.io/webrtc-identity/#dom-rtcpeerconnection-peeridentity",
+        "linkingText": [
+          "peerIdentity"
+        ],
+        "localLinkingText": [
+          "RTCPeerConnection.peerIdentity"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCPeerConnection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-1",
+          "href": "https://w3c.github.io/webrtc-identity/#attributes-1",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcpeerconnection-idploginurl",
+        "href": "https://w3c.github.io/webrtc-identity/#dom-rtcpeerconnection-idploginurl",
+        "linkingText": [
+          "idpLoginUrl"
+        ],
+        "localLinkingText": [
+          "RTCPeerConnection.idpLoginUrl"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCPeerConnection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-1",
+          "href": "https://w3c.github.io/webrtc-identity/#attributes-1",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcpeerconnection-idperrorinfo",
+        "href": "https://w3c.github.io/webrtc-identity/#dom-rtcpeerconnection-idperrorinfo",
+        "linkingText": [
+          "idpErrorInfo"
+        ],
+        "localLinkingText": [
+          "RTCPeerConnection.idpErrorInfo"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCPeerConnection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-1",
+          "href": "https://w3c.github.io/webrtc-identity/#attributes-1",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "eventtarget",
+        "href": "https://dom.spec.whatwg.org/#eventtarget",
+        "linkingText": [
+          "EventTarget"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventtarget-eventtarget",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-eventtarget",
+        "linkingText": [
+          "EventTarget()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-addeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-addeventlistener",
+        "linkingText": [
+          "addEventListener(type, callback, options)",
+          "addEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-removeeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-removeeventlistener",
+        "linkingText": [
+          "removeEventListener(type, callback, options)",
+          "removeEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-dispatchevent",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-dispatchevent",
+        "linkingText": [
+          "dispatchEvent(event)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

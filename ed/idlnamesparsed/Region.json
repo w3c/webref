@@ -1,0 +1,80 @@
+{
+  "name": "Region",
+  "type": "interface mixin",
+  "defined": {
+    "spec": {
+      "title": "CSS Regions Module Level 1",
+      "url": "https://www.w3.org/TR/css-regions-1/"
+    },
+    "fragment": "interface mixin Region {\n  readonly attribute CSSOMString regionOverset;\n  sequence<Range>? getRegionFlowRanges();\n};",
+    "href": "https://drafts.csswg.org/css-regions/#region"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/css-regions-1/": [
+      {
+        "id": "region",
+        "href": "https://drafts.csswg.org/css-regions/#region",
+        "linkingText": [
+          "Region"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-region-interface",
+          "href": "https://drafts.csswg.org/css-regions/#the-region-interface",
+          "title": "The Region mixin",
+          "number": "4.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-region-regionoverset",
+        "href": "https://drafts.csswg.org/css-regions/#dom-region-regionoverset",
+        "linkingText": [
+          "regionOverset"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Region"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-region-interface",
+          "href": "https://drafts.csswg.org/css-regions/#the-region-interface",
+          "title": "The Region mixin",
+          "number": "4.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-region-getregionflowranges",
+        "href": "https://drafts.csswg.org/css-regions/#dom-region-getregionflowranges",
+        "linkingText": [
+          "getRegionFlowRanges()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Region"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-region-interface",
+          "href": "https://drafts.csswg.org/css-regions/#the-region-interface",
+          "title": "The Region mixin",
+          "number": "4.2"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

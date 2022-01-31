@@ -1,0 +1,235 @@
+{
+  "name": "RTCRtpReceiver",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
+      "url": "https://www.w3.org/TR/webrtc/"
+    },
+    "fragment": "[Exposed=Window]\ninterface RTCRtpReceiver {\n  readonly attribute MediaStreamTrack track;\n  readonly attribute RTCDtlsTransport? transport;\n  static RTCRtpCapabilities? getCapabilities(DOMString kind);\n  RTCRtpReceiveParameters getParameters();\n  sequence<RTCRtpContributingSource> getContributingSources();\n  sequence<RTCRtpSynchronizationSource> getSynchronizationSources();\n  Promise<RTCStatsReport> getStats();\n};",
+    "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpreceiver"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "WebRTC Encoded Transform",
+        "url": "https://www.w3.org/TR/webrtc-encoded-transform/"
+      },
+      "fragment": "partial interface RTCRtpReceiver {\n    attribute RTCRtpTransform? transform;\n};"
+    }
+  ],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webrtc/": [
+      {
+        "id": "dom-rtcrtpreceiver",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpreceiver",
+        "linkingText": [
+          "RTCRtpReceiver"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "rtcrtpreceiver-interface",
+          "href": "https://w3c.github.io/webrtc-pc/#rtcrtpreceiver-interface",
+          "title": "RTCRtpReceiver Interface",
+          "number": "5.3"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-rtpreceiver-track",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtpreceiver-track",
+        "linkingText": [
+          "track"
+        ],
+        "localLinkingText": [
+          "RTCRtpReceiver.track"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCRtpReceiver"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-10",
+          "href": "https://w3c.github.io/webrtc-pc/#attributes-10",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcrtpreceiver-transport",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpreceiver-transport",
+        "linkingText": [
+          "transport"
+        ],
+        "localLinkingText": [
+          "RTCRtpReceiver.transport"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCRtpReceiver"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-10",
+          "href": "https://w3c.github.io/webrtc-pc/#attributes-10",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcrtpreceiver-getcapabilities",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpreceiver-getcapabilities",
+        "linkingText": [
+          "getCapabilities()",
+          "getCapabilities(kind)"
+        ],
+        "localLinkingText": [
+          "RTCRtpReceiver.getCapabilities",
+          "RTCRtpReceiver.getCapabilities()",
+          "getCapabilities"
+        ],
+        "type": "method",
+        "for": [
+          "RTCRtpReceiver"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "methods-7",
+          "href": "https://w3c.github.io/webrtc-pc/#methods-7",
+          "title": "Methods"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcrtpreceiver-getparameters",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpreceiver-getparameters",
+        "linkingText": [
+          "getParameters()"
+        ],
+        "localLinkingText": [
+          "RTCRtpReceiver.getParameters",
+          "RTCRtpReceiver.getParameters()",
+          "getParameters"
+        ],
+        "type": "method",
+        "for": [
+          "RTCRtpReceiver"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "methods-7",
+          "href": "https://w3c.github.io/webrtc-pc/#methods-7",
+          "title": "Methods"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcrtpreceiver-getcontributingsources",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpreceiver-getcontributingsources",
+        "linkingText": [
+          "getContributingSources()"
+        ],
+        "localLinkingText": [
+          "RTCRtpReceiver.getContributingSources",
+          "RTCRtpReceiver.getContributingSources()",
+          "getContributingSources"
+        ],
+        "type": "method",
+        "for": [
+          "RTCRtpReceiver"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "methods-7",
+          "href": "https://w3c.github.io/webrtc-pc/#methods-7",
+          "title": "Methods"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcrtpreceiver-getsynchronizationsources",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpreceiver-getsynchronizationsources",
+        "linkingText": [
+          "getSynchronizationSources()"
+        ],
+        "localLinkingText": [
+          "RTCRtpReceiver.getSynchronizationSources",
+          "RTCRtpReceiver.getSynchronizationSources()",
+          "getSynchronizationSources"
+        ],
+        "type": "method",
+        "for": [
+          "RTCRtpReceiver"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "methods-7",
+          "href": "https://w3c.github.io/webrtc-pc/#methods-7",
+          "title": "Methods"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "widl-RTCRtpReceiver-getStats-Promise-RTCStatsReport",
+        "href": "https://w3c.github.io/webrtc-pc/#widl-RTCRtpReceiver-getStats-Promise-RTCStatsReport",
+        "linkingText": [
+          "getStats()"
+        ],
+        "localLinkingText": [
+          "RTCRtpReceiver.getStats",
+          "RTCRtpReceiver.getStats()",
+          "getStats"
+        ],
+        "type": "method",
+        "for": [
+          "RTCRtpReceiver"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "methods-7",
+          "href": "https://w3c.github.io/webrtc-pc/#methods-7",
+          "title": "Methods"
+        },
+        "definedIn": "dt"
+      }
+    ],
+    "https://www.w3.org/TR/webrtc-encoded-transform/": [
+      {
+        "id": "dom-rtcrtpsender-transform",
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcrtpsender-transform",
+        "linkingText": [
+          "transform"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "RTCRtpSender",
+          "RTCRtpReceiver"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attribute",
+          "href": "https://w3c.github.io/webrtc-encoded-transform/#attribute",
+          "title": "Extension attribute",
+          "number": "3.2"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

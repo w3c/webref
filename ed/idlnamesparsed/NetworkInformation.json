@@ -1,0 +1,368 @@
+{
+  "name": "NetworkInformation",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Network Information API",
+      "url": "https://wicg.github.io/netinfo/"
+    },
+    "fragment": "[Exposed=(Window,Worker)]\ninterface NetworkInformation : EventTarget {\n  readonly attribute ConnectionType type;\n  readonly attribute EffectiveConnectionType effectiveType;\n  readonly attribute Megabit downlinkMax;\n  readonly attribute Megabit downlink;\n  readonly attribute Millisecond rtt;\n  attribute EventHandler onchange;\n};",
+    "href": "https://wicg.github.io/netinfo/#dom-networkinformation"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "Save Data API",
+        "url": "https://wicg.github.io/savedata/"
+      },
+      "fragment": "NetworkInformation includes NetworkInformationSaveData;"
+    }
+  ],
+  "inheritance": {
+    "name": "EventTarget",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=*]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+      "href": "https://dom.spec.whatwg.org/#eventtarget"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [
+    {
+      "name": "NetworkInformationSaveData",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "Save Data API",
+          "url": "https://wicg.github.io/savedata/"
+        },
+        "fragment": "interface mixin NetworkInformationSaveData {\n  [SameObject] readonly attribute boolean saveData;\n};",
+        "href": "https://wicg.github.io/savedata/#dom-networkinformationsavedata"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    }
+  ],
+  "dfns": {
+    "https://wicg.github.io/netinfo/": [
+      {
+        "id": "dom-networkinformation",
+        "href": "https://wicg.github.io/netinfo/#dom-networkinformation",
+        "linkingText": [
+          "NetworkInformation"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "networkinformation-interface",
+          "href": "https://wicg.github.io/netinfo/#networkinformation-interface",
+          "title": "NetworkInformation interface",
+          "number": "6"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-networkinformation-type",
+        "href": "https://wicg.github.io/netinfo/#dom-networkinformation-type",
+        "linkingText": [
+          "type"
+        ],
+        "localLinkingText": [
+          "NetworkInformation.type"
+        ],
+        "type": "attribute",
+        "for": [
+          "NetworkInformation"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "type-attribute",
+          "href": "https://wicg.github.io/netinfo/#type-attribute",
+          "title": "type attribute",
+          "number": "6.1"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-networkinformation-effectivetype",
+        "href": "https://wicg.github.io/netinfo/#dom-networkinformation-effectivetype",
+        "linkingText": [
+          "effectiveType"
+        ],
+        "localLinkingText": [
+          "NetworkInformation.effectiveType"
+        ],
+        "type": "attribute",
+        "for": [
+          "NetworkInformation"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "effectivetype-attribute",
+          "href": "https://wicg.github.io/netinfo/#effectivetype-attribute",
+          "title": "effectiveType attribute",
+          "number": "6.2"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-networkinformation-downlinkmax",
+        "href": "https://wicg.github.io/netinfo/#dom-networkinformation-downlinkmax",
+        "linkingText": [
+          "downlinkMax"
+        ],
+        "localLinkingText": [
+          "NetworkInformation.downlinkMax"
+        ],
+        "type": "attribute",
+        "for": [
+          "NetworkInformation"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "downlinkmax-attribute",
+          "href": "https://wicg.github.io/netinfo/#downlinkmax-attribute",
+          "title": "downlinkMax attribute",
+          "number": "6.3"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-networkinformation-downlink",
+        "href": "https://wicg.github.io/netinfo/#dom-networkinformation-downlink",
+        "linkingText": [
+          "downlink"
+        ],
+        "localLinkingText": [
+          "NetworkInformation.downlink"
+        ],
+        "type": "attribute",
+        "for": [
+          "NetworkInformation"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "downlink-attribute",
+          "href": "https://wicg.github.io/netinfo/#downlink-attribute",
+          "title": "downlink attribute",
+          "number": "6.5"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-networkinformation-rtt",
+        "href": "https://wicg.github.io/netinfo/#dom-networkinformation-rtt",
+        "linkingText": [
+          "rtt"
+        ],
+        "localLinkingText": [
+          "NetworkInformation.rtt"
+        ],
+        "type": "attribute",
+        "for": [
+          "NetworkInformation"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "rtt-attribute",
+          "href": "https://wicg.github.io/netinfo/#rtt-attribute",
+          "title": "rtt attribute",
+          "number": "6.6"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-networkinformation-onchange",
+        "href": "https://wicg.github.io/netinfo/#dom-networkinformation-onchange",
+        "linkingText": [
+          "onchange"
+        ],
+        "localLinkingText": [
+          "NetworkInformation.onchange"
+        ],
+        "type": "attribute",
+        "for": [
+          "NetworkInformation"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "onchange-attribute",
+          "href": "https://wicg.github.io/netinfo/#onchange-attribute",
+          "title": "onchange attribute",
+          "number": "6.4"
+        },
+        "definedIn": "heading"
+      }
+    ],
+    "https://wicg.github.io/savedata/": [
+      {
+        "id": "dom-networkinformationsavedata",
+        "href": "https://wicg.github.io/savedata/#dom-networkinformationsavedata",
+        "linkingText": [
+          "NetworkInformationSaveData"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [
+          "NetworkInformationSaveData"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "navigatornetworkinformation-interface",
+          "href": "https://wicg.github.io/savedata/#navigatornetworkinformation-interface",
+          "title": "NavigatorNetworkInformation interface",
+          "number": "2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-networkinformationsavedata-savedata",
+        "href": "https://wicg.github.io/savedata/#dom-networkinformationsavedata-savedata",
+        "linkingText": [
+          "saveData"
+        ],
+        "localLinkingText": [
+          "NetworkInformationSaveData.saveData"
+        ],
+        "type": "attribute",
+        "for": [
+          "NetworkInformationSaveData"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "navigatornetworkinformation-interface",
+          "href": "https://wicg.github.io/savedata/#navigatornetworkinformation-interface",
+          "title": "NavigatorNetworkInformation interface",
+          "number": "2"
+        },
+        "definedIn": "pre"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "eventtarget",
+        "href": "https://dom.spec.whatwg.org/#eventtarget",
+        "linkingText": [
+          "EventTarget"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventtarget-eventtarget",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-eventtarget",
+        "linkingText": [
+          "EventTarget()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-addeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-addeventlistener",
+        "linkingText": [
+          "addEventListener(type, callback, options)",
+          "addEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-removeeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-removeeventlistener",
+        "linkingText": [
+          "removeEventListener(type, callback, options)",
+          "removeEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-dispatchevent",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-dispatchevent",
+        "linkingText": [
+          "dispatchEvent(event)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

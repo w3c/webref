@@ -1,0 +1,477 @@
+{
+  "spec": {
+    "title": "CSS Values and Units Module Level 3",
+    "url": "https://drafts.csswg.org/css-values-3/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://drafts.csswg.org/css-values-3/#title",
+      "level": 1,
+      "title": "CSS Values and Units Module Level 3"
+    },
+    {
+      "id": "abstract",
+      "href": "https://drafts.csswg.org/css-values-3/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "sotd",
+      "href": "https://drafts.csswg.org/css-values-3/#sotd",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://drafts.csswg.org/css-values-3/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "intro",
+      "href": "https://drafts.csswg.org/css-values-3/#intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "placement",
+      "href": "https://drafts.csswg.org/css-values-3/#placement",
+      "level": 3,
+      "title": "Module Interactions",
+      "number": "1.1"
+    },
+    {
+      "id": "value-defs",
+      "href": "https://drafts.csswg.org/css-values-3/#value-defs",
+      "level": 2,
+      "title": "Value Definition Syntax",
+      "number": "2"
+    },
+    {
+      "id": "component-types",
+      "href": "https://drafts.csswg.org/css-values-3/#component-types",
+      "level": 3,
+      "title": "Component Value Types",
+      "number": "2.1"
+    },
+    {
+      "id": "component-combinators",
+      "href": "https://drafts.csswg.org/css-values-3/#component-combinators",
+      "level": 3,
+      "title": "Component Value Combinators",
+      "number": "2.2"
+    },
+    {
+      "id": "component-multipliers",
+      "href": "https://drafts.csswg.org/css-values-3/#component-multipliers",
+      "level": 3,
+      "title": "Component Value Multipliers",
+      "number": "2.3"
+    },
+    {
+      "id": "combinator-multiplier-patterns",
+      "href": "https://drafts.csswg.org/css-values-3/#combinator-multiplier-patterns",
+      "level": 3,
+      "title": "Combinator and Multiplier Patterns",
+      "number": "2.4"
+    },
+    {
+      "id": "component-whitespace",
+      "href": "https://drafts.csswg.org/css-values-3/#component-whitespace",
+      "level": 3,
+      "title": "Component Values and White Space",
+      "number": "2.5"
+    },
+    {
+      "id": "value-examples",
+      "href": "https://drafts.csswg.org/css-values-3/#value-examples",
+      "level": 3,
+      "title": "Property Value Examples",
+      "number": "2.6"
+    },
+    {
+      "id": "textual-values",
+      "href": "https://drafts.csswg.org/css-values-3/#textual-values",
+      "level": 2,
+      "title": "Textual Data Types",
+      "number": "3"
+    },
+    {
+      "id": "keywords",
+      "href": "https://drafts.csswg.org/css-values-3/#keywords",
+      "level": 3,
+      "title": "Pre-defined Keywords",
+      "number": "3.1"
+    },
+    {
+      "id": "common-keywords",
+      "href": "https://drafts.csswg.org/css-values-3/#common-keywords",
+      "level": 4,
+      "title": "CSS-wide keywords: initial, inherit and unset",
+      "number": "3.1.1"
+    },
+    {
+      "id": "custom-idents",
+      "href": "https://drafts.csswg.org/css-values-3/#custom-idents",
+      "level": 3,
+      "title": "Author-defined Identifiers: the <custom-ident> type",
+      "number": "3.2"
+    },
+    {
+      "id": "strings",
+      "href": "https://drafts.csswg.org/css-values-3/#strings",
+      "level": 3,
+      "title": "Quoted Strings: the <string> type",
+      "number": "3.3"
+    },
+    {
+      "id": "urls",
+      "href": "https://drafts.csswg.org/css-values-3/#urls",
+      "level": 3,
+      "title": "Resource Locators: the <url> type",
+      "number": "3.4"
+    },
+    {
+      "id": "relative-urls",
+      "href": "https://drafts.csswg.org/css-values-3/#relative-urls",
+      "level": 4,
+      "title": "Relative URLs",
+      "number": "3.4.1"
+    },
+    {
+      "id": "local-urls",
+      "href": "https://drafts.csswg.org/css-values-3/#local-urls",
+      "level": 5,
+      "title": "Fragment URLs",
+      "number": "3.4.1.1"
+    },
+    {
+      "id": "url-empty",
+      "href": "https://drafts.csswg.org/css-values-3/#url-empty",
+      "level": 4,
+      "title": "Empty URLs",
+      "number": "3.4.2"
+    },
+    {
+      "id": "url-modifiers",
+      "href": "https://drafts.csswg.org/css-values-3/#url-modifiers",
+      "level": 4,
+      "title": "URL Modifiers",
+      "number": "3.4.3"
+    },
+    {
+      "id": "numeric-types",
+      "href": "https://drafts.csswg.org/css-values-3/#numeric-types",
+      "level": 2,
+      "title": "Numeric Data Types",
+      "number": "4"
+    },
+    {
+      "id": "numeric-ranges",
+      "href": "https://drafts.csswg.org/css-values-3/#numeric-ranges",
+      "level": 3,
+      "title": "Range Restrictions and Range Definition Notation",
+      "number": "4.1"
+    },
+    {
+      "id": "integers",
+      "href": "https://drafts.csswg.org/css-values-3/#integers",
+      "level": 3,
+      "title": "Integers: the <integer> type",
+      "number": "4.2"
+    },
+    {
+      "id": "numbers",
+      "href": "https://drafts.csswg.org/css-values-3/#numbers",
+      "level": 3,
+      "title": "Real Numbers: the <number> type",
+      "number": "4.3"
+    },
+    {
+      "id": "dimensions",
+      "href": "https://drafts.csswg.org/css-values-3/#dimensions",
+      "level": 3,
+      "title": "Numbers with Units: dimension values",
+      "number": "4.4"
+    },
+    {
+      "id": "compat",
+      "href": "https://drafts.csswg.org/css-values-3/#compat",
+      "level": 4,
+      "title": "Compatible Units",
+      "number": "4.4.1"
+    },
+    {
+      "id": "percentages",
+      "href": "https://drafts.csswg.org/css-values-3/#percentages",
+      "level": 3,
+      "title": "Percentages: the <percentage> type",
+      "number": "4.5"
+    },
+    {
+      "id": "mixed-percentages",
+      "href": "https://drafts.csswg.org/css-values-3/#mixed-percentages",
+      "level": 3,
+      "title": "Mixing Percentages and Dimensions",
+      "number": "4.6"
+    },
+    {
+      "id": "lengths",
+      "href": "https://drafts.csswg.org/css-values-3/#lengths",
+      "level": 2,
+      "title": "Distance Units: the <length> type",
+      "number": "5"
+    },
+    {
+      "id": "relative-lengths",
+      "href": "https://drafts.csswg.org/css-values-3/#relative-lengths",
+      "level": 3,
+      "title": "Relative Lengths",
+      "number": "5.1"
+    },
+    {
+      "id": "font-relative-lengths",
+      "href": "https://drafts.csswg.org/css-values-3/#font-relative-lengths",
+      "level": 4,
+      "title": "Font-relative Lengths: the em, ex, ch, rem units",
+      "number": "5.1.1"
+    },
+    {
+      "id": "viewport-relative-lengths",
+      "href": "https://drafts.csswg.org/css-values-3/#viewport-relative-lengths",
+      "level": 4,
+      "title": "Viewport-percentage Lengths: the vw, vh, vmin, vmax units",
+      "number": "5.1.2"
+    },
+    {
+      "id": "absolute-lengths",
+      "href": "https://drafts.csswg.org/css-values-3/#absolute-lengths",
+      "level": 3,
+      "title": "Absolute Lengths: the cm, mm, Q, in, pt, pc, px units",
+      "number": "5.2"
+    },
+    {
+      "id": "other-units",
+      "href": "https://drafts.csswg.org/css-values-3/#other-units",
+      "level": 2,
+      "title": "Other Quantities",
+      "number": "6"
+    },
+    {
+      "id": "angles",
+      "href": "https://drafts.csswg.org/css-values-3/#angles",
+      "level": 3,
+      "title": "Angle Units: the <angle> type and deg, grad, rad, turn units",
+      "number": "6.1"
+    },
+    {
+      "id": "time",
+      "href": "https://drafts.csswg.org/css-values-3/#time",
+      "level": 3,
+      "title": "Duration Units: the <time> type and s, ms units",
+      "number": "6.2"
+    },
+    {
+      "id": "frequency",
+      "href": "https://drafts.csswg.org/css-values-3/#frequency",
+      "level": 3,
+      "title": "Frequency Units: the <frequency> type and Hz, kHz units",
+      "number": "6.3"
+    },
+    {
+      "id": "resolution",
+      "href": "https://drafts.csswg.org/css-values-3/#resolution",
+      "level": 3,
+      "title": "Resolution Units: the <resolution> type and dpi, dpcm, dppx units",
+      "number": "6.4"
+    },
+    {
+      "id": "defined-elsewhere",
+      "href": "https://drafts.csswg.org/css-values-3/#defined-elsewhere",
+      "level": 2,
+      "title": "Data Types Defined Elsewhere",
+      "number": "7"
+    },
+    {
+      "id": "colors",
+      "href": "https://drafts.csswg.org/css-values-3/#colors",
+      "level": 3,
+      "title": "Colors: the <color> type",
+      "number": "7.1"
+    },
+    {
+      "id": "images",
+      "href": "https://drafts.csswg.org/css-values-3/#images",
+      "level": 3,
+      "title": "Images: the <image> type",
+      "number": "7.2"
+    },
+    {
+      "id": "position",
+      "href": "https://drafts.csswg.org/css-values-3/#position",
+      "level": 3,
+      "title": "2D Positioning: the <position> type",
+      "number": "7.3"
+    },
+    {
+      "id": "functional-notations",
+      "href": "https://drafts.csswg.org/css-values-3/#functional-notations",
+      "level": 2,
+      "title": "Functional Notations",
+      "number": "8"
+    },
+    {
+      "id": "calc-notation",
+      "href": "https://drafts.csswg.org/css-values-3/#calc-notation",
+      "level": 3,
+      "title": "Mathematical Expressions: calc()",
+      "number": "8.1"
+    },
+    {
+      "id": "calc-syntax",
+      "href": "https://drafts.csswg.org/css-values-3/#calc-syntax",
+      "level": 4,
+      "title": "Syntax",
+      "number": "8.1.1"
+    },
+    {
+      "id": "calc-type-checking",
+      "href": "https://drafts.csswg.org/css-values-3/#calc-type-checking",
+      "level": 4,
+      "title": "Type Checking",
+      "number": "8.1.2"
+    },
+    {
+      "id": "calc-computed-value",
+      "href": "https://drafts.csswg.org/css-values-3/#calc-computed-value",
+      "level": 4,
+      "title": "Computed Value",
+      "number": "8.1.3"
+    },
+    {
+      "id": "calc-range",
+      "href": "https://drafts.csswg.org/css-values-3/#calc-range",
+      "level": 4,
+      "title": "Range Checking",
+      "number": "8.1.4"
+    },
+    {
+      "id": "calc-serialize",
+      "href": "https://drafts.csswg.org/css-values-3/#calc-serialize",
+      "level": 4,
+      "title": "Serialization",
+      "number": "8.1.5"
+    },
+    {
+      "id": "attr-notation",
+      "href": "https://drafts.csswg.org/css-values-3/#attr-notation",
+      "level": 3,
+      "title": "Attribute References: attr()",
+      "number": "8.2"
+    },
+    {
+      "id": "iana",
+      "href": "https://drafts.csswg.org/css-values-3/#iana",
+      "level": 2,
+      "title": "Appendix A: IANA Considerations"
+    },
+    {
+      "id": "about-invalid",
+      "href": "https://drafts.csswg.org/css-values-3/#about-invalid",
+      "level": 3,
+      "title": "Registration for the about:invalid URL scheme"
+    },
+    {
+      "id": "acknowledgments",
+      "href": "https://drafts.csswg.org/css-values-3/#acknowledgments",
+      "level": 2,
+      "title": "Acknowledgments"
+    },
+    {
+      "id": "changes",
+      "href": "https://drafts.csswg.org/css-values-3/#changes",
+      "level": 2,
+      "title": "Changes"
+    },
+    {
+      "id": "sec-pri",
+      "href": "https://drafts.csswg.org/css-values-3/#sec-pri",
+      "level": 2,
+      "title": "Security and Privacy Considerations"
+    },
+    {
+      "id": "w3c-conformance",
+      "href": "https://drafts.csswg.org/css-values-3/#w3c-conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "w3c-conventions",
+      "href": "https://drafts.csswg.org/css-values-3/#w3c-conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "w3c-conformance-classes",
+      "href": "https://drafts.csswg.org/css-values-3/#w3c-conformance-classes",
+      "level": 3,
+      "title": "Conformance classes"
+    },
+    {
+      "id": "w3c-partial",
+      "href": "https://drafts.csswg.org/css-values-3/#w3c-partial",
+      "level": 3,
+      "title": "Partial implementations"
+    },
+    {
+      "id": "w3c-conform-future-proofing",
+      "href": "https://drafts.csswg.org/css-values-3/#w3c-conform-future-proofing",
+      "level": 4,
+      "title": "Implementations of Unstable and Proprietary Features"
+    },
+    {
+      "id": "w3c-testing",
+      "href": "https://drafts.csswg.org/css-values-3/#w3c-testing",
+      "level": 3,
+      "title": "Non-experimental implementations"
+    },
+    {
+      "id": "index",
+      "href": "https://drafts.csswg.org/css-values-3/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://drafts.csswg.org/css-values-3/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://drafts.csswg.org/css-values-3/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://drafts.csswg.org/css-values-3/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://drafts.csswg.org/css-values-3/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://drafts.csswg.org/css-values-3/#informative",
+      "level": 3,
+      "title": "Informative References"
+    }
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "name": "GPUFragmentState",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "WebGPU",
+      "url": "https://www.w3.org/TR/webgpu/"
+    },
+    "fragment": "dictionary GPUFragmentState : GPUProgrammableStage {\n    required sequence<GPUColorTargetState> targets;\n};",
+    "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpufragmentstate"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "GPUProgrammableStage",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "WebGPU",
+        "url": "https://www.w3.org/TR/webgpu/"
+      },
+      "fragment": "dictionary GPUProgrammableStage {\n    required GPUShaderModule module;\n    required USVString entryPoint;\n    record<USVString, GPUPipelineConstantValue> constants;\n};",
+      "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpuprogrammablestage"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webgpu/": [
+      {
+        "id": "dictdef-gpufragmentstate",
+        "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpufragmentstate",
+        "linkingText": [
+          "GPUFragmentState"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "fragment-state",
+          "href": "https://gpuweb.github.io/gpuweb/#fragment-state",
+          "title": "Fragment State",
+          "number": "10.3.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gpufragmentstate-targets",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpufragmentstate-targets",
+        "linkingText": [
+          "targets"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "GPUFragmentState"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "fragment-state",
+          "href": "https://gpuweb.github.io/gpuweb/#fragment-state",
+          "title": "Fragment State",
+          "number": "10.3.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dictdef-gpuprogrammablestage",
+        "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpuprogrammablestage",
+        "linkingText": [
+          "GPUProgrammableStage"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "GPUProgrammableStage",
+          "href": "https://gpuweb.github.io/gpuweb/#GPUProgrammableStage",
+          "title": "GPUProgrammableStage",
+          "number": "10.1.2"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-gpuprogrammablestage-module",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpuprogrammablestage-module",
+        "linkingText": [
+          "module"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "GPUProgrammableStage"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "GPUProgrammableStage",
+          "href": "https://gpuweb.github.io/gpuweb/#GPUProgrammableStage",
+          "title": "GPUProgrammableStage",
+          "number": "10.1.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gpuprogrammablestage-entrypoint",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpuprogrammablestage-entrypoint",
+        "linkingText": [
+          "entryPoint"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "GPUProgrammableStage"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "GPUProgrammableStage",
+          "href": "https://gpuweb.github.io/gpuweb/#GPUProgrammableStage",
+          "title": "GPUProgrammableStage",
+          "number": "10.1.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gpuprogrammablestage-constants",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpuprogrammablestage-constants",
+        "linkingText": [
+          "constants"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "GPUProgrammableStage"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "GPUProgrammableStage",
+          "href": "https://gpuweb.github.io/gpuweb/#GPUProgrammableStage",
+          "title": "GPUProgrammableStage",
+          "number": "10.1.2"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

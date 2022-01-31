@@ -1,0 +1,2032 @@
+{
+  "name": "GPUTextureFormat",
+  "type": "enum",
+  "defined": {
+    "spec": {
+      "title": "WebGPU",
+      "url": "https://www.w3.org/TR/webgpu/"
+    },
+    "fragment": "enum GPUTextureFormat {\n    // 8-bit formats\n    \"r8unorm\",\n    \"r8snorm\",\n    \"r8uint\",\n    \"r8sint\",\n\n    // 16-bit formats\n    \"r16uint\",\n    \"r16sint\",\n    \"r16float\",\n    \"rg8unorm\",\n    \"rg8snorm\",\n    \"rg8uint\",\n    \"rg8sint\",\n\n    // 32-bit formats\n    \"r32uint\",\n    \"r32sint\",\n    \"r32float\",\n    \"rg16uint\",\n    \"rg16sint\",\n    \"rg16float\",\n    \"rgba8unorm\",\n    \"rgba8unorm-srgb\",\n    \"rgba8snorm\",\n    \"rgba8uint\",\n    \"rgba8sint\",\n    \"bgra8unorm\",\n    \"bgra8unorm-srgb\",\n    // Packed 32-bit formats\n    \"rgb9e5ufloat\",\n    \"rgb10a2unorm\",\n    \"rg11b10ufloat\",\n\n    // 64-bit formats\n    \"rg32uint\",\n    \"rg32sint\",\n    \"rg32float\",\n    \"rgba16uint\",\n    \"rgba16sint\",\n    \"rgba16float\",\n\n    // 128-bit formats\n    \"rgba32uint\",\n    \"rgba32sint\",\n    \"rgba32float\",\n\n    // Depth/stencil formats\n    \"stencil8\",\n    \"depth16unorm\",\n    \"depth24plus\",\n    \"depth24plus-stencil8\",\n    \"depth32float\",\n\n    // \"depth24unorm-stencil8\" feature\n    \"depth24unorm-stencil8\",\n\n    // \"depth32float-stencil8\" feature\n    \"depth32float-stencil8\",\n\n    // BC compressed formats usable if \"texture-compression-bc\" is both\n    // supported by the device/user agent and enabled in requestDevice.\n    \"bc1-rgba-unorm\",\n    \"bc1-rgba-unorm-srgb\",\n    \"bc2-rgba-unorm\",\n    \"bc2-rgba-unorm-srgb\",\n    \"bc3-rgba-unorm\",\n    \"bc3-rgba-unorm-srgb\",\n    \"bc4-r-unorm\",\n    \"bc4-r-snorm\",\n    \"bc5-rg-unorm\",\n    \"bc5-rg-snorm\",\n    \"bc6h-rgb-ufloat\",\n    \"bc6h-rgb-float\",\n    \"bc7-rgba-unorm\",\n    \"bc7-rgba-unorm-srgb\",\n\n    // ETC2 compressed formats usable if \"texture-compression-etc2\" is both\n    // supported by the device/user agent and enabled in requestDevice.\n    \"etc2-rgb8unorm\",\n    \"etc2-rgb8unorm-srgb\",\n    \"etc2-rgb8a1unorm\",\n    \"etc2-rgb8a1unorm-srgb\",\n    \"etc2-rgba8unorm\",\n    \"etc2-rgba8unorm-srgb\",\n    \"eac-r11unorm\",\n    \"eac-r11snorm\",\n    \"eac-rg11unorm\",\n    \"eac-rg11snorm\",\n\n    // ASTC compressed formats usable if \"texture-compression-astc\" is both\n    // supported by the device/user agent and enabled in requestDevice.\n    \"astc-4x4-unorm\",\n    \"astc-4x4-unorm-srgb\",\n    \"astc-5x4-unorm\",\n    \"astc-5x4-unorm-srgb\",\n    \"astc-5x5-unorm\",\n    \"astc-5x5-unorm-srgb\",\n    \"astc-6x5-unorm\",\n    \"astc-6x5-unorm-srgb\",\n    \"astc-6x6-unorm\",\n    \"astc-6x6-unorm-srgb\",\n    \"astc-8x5-unorm\",\n    \"astc-8x5-unorm-srgb\",\n    \"astc-8x6-unorm\",\n    \"astc-8x6-unorm-srgb\",\n    \"astc-8x8-unorm\",\n    \"astc-8x8-unorm-srgb\",\n    \"astc-10x5-unorm\",\n    \"astc-10x5-unorm-srgb\",\n    \"astc-10x6-unorm\",\n    \"astc-10x6-unorm-srgb\",\n    \"astc-10x8-unorm\",\n    \"astc-10x8-unorm-srgb\",\n    \"astc-10x10-unorm\",\n    \"astc-10x10-unorm-srgb\",\n    \"astc-12x10-unorm\",\n    \"astc-12x10-unorm-srgb\",\n    \"astc-12x12-unorm\",\n    \"astc-12x12-unorm-srgb\",\n};",
+    "href": "https://gpuweb.github.io/gpuweb/#enumdef-gputextureformat"
+  },
+  "extended": [],
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webgpu/": [
+      {
+        "id": "enumdef-gputextureformat",
+        "href": "https://gpuweb.github.io/gpuweb/#enumdef-gputextureformat",
+        "linkingText": [
+          "GPUTextureFormat"
+        ],
+        "localLinkingText": [],
+        "type": "enum",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-r8unorm",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-r8unorm",
+        "linkingText": [
+          "\"r8unorm\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-r8snorm",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-r8snorm",
+        "linkingText": [
+          "\"r8snorm\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-r8uint",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-r8uint",
+        "linkingText": [
+          "\"r8uint\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-r8sint",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-r8sint",
+        "linkingText": [
+          "\"r8sint\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-r16uint",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-r16uint",
+        "linkingText": [
+          "\"r16uint\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-r16sint",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-r16sint",
+        "linkingText": [
+          "\"r16sint\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-r16float",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-r16float",
+        "linkingText": [
+          "\"r16float\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-rg8unorm",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-rg8unorm",
+        "linkingText": [
+          "\"rg8unorm\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-rg8snorm",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-rg8snorm",
+        "linkingText": [
+          "\"rg8snorm\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-rg8uint",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-rg8uint",
+        "linkingText": [
+          "\"rg8uint\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-rg8sint",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-rg8sint",
+        "linkingText": [
+          "\"rg8sint\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-r32uint",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-r32uint",
+        "linkingText": [
+          "\"r32uint\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-r32sint",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-r32sint",
+        "linkingText": [
+          "\"r32sint\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-r32float",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-r32float",
+        "linkingText": [
+          "\"r32float\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-rg16uint",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-rg16uint",
+        "linkingText": [
+          "\"rg16uint\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-rg16sint",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-rg16sint",
+        "linkingText": [
+          "\"rg16sint\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-rg16float",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-rg16float",
+        "linkingText": [
+          "\"rg16float\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-rgba8unorm",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-rgba8unorm",
+        "linkingText": [
+          "\"rgba8unorm\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-rgba8unorm-srgb",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-rgba8unorm-srgb",
+        "linkingText": [
+          "\"rgba8unorm-srgb\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-rgba8snorm",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-rgba8snorm",
+        "linkingText": [
+          "\"rgba8snorm\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-rgba8uint",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-rgba8uint",
+        "linkingText": [
+          "\"rgba8uint\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-rgba8sint",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-rgba8sint",
+        "linkingText": [
+          "\"rgba8sint\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-bgra8unorm",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-bgra8unorm",
+        "linkingText": [
+          "\"bgra8unorm\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-bgra8unorm-srgb",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-bgra8unorm-srgb",
+        "linkingText": [
+          "\"bgra8unorm-srgb\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-rgb9e5ufloat",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-rgb9e5ufloat",
+        "linkingText": [
+          "\"rgb9e5ufloat\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-rgb10a2unorm",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-rgb10a2unorm",
+        "linkingText": [
+          "\"rgb10a2unorm\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-rg11b10ufloat",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-rg11b10ufloat",
+        "linkingText": [
+          "\"rg11b10ufloat\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-rg32uint",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-rg32uint",
+        "linkingText": [
+          "\"rg32uint\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-rg32sint",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-rg32sint",
+        "linkingText": [
+          "\"rg32sint\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-rg32float",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-rg32float",
+        "linkingText": [
+          "\"rg32float\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-rgba16uint",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-rgba16uint",
+        "linkingText": [
+          "\"rgba16uint\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-rgba16sint",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-rgba16sint",
+        "linkingText": [
+          "\"rgba16sint\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-rgba16float",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-rgba16float",
+        "linkingText": [
+          "\"rgba16float\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-rgba32uint",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-rgba32uint",
+        "linkingText": [
+          "\"rgba32uint\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-rgba32sint",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-rgba32sint",
+        "linkingText": [
+          "\"rgba32sint\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-rgba32float",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-rgba32float",
+        "linkingText": [
+          "\"rgba32float\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-stencil8",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-stencil8",
+        "linkingText": [
+          "\"stencil8\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-depth16unorm",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-depth16unorm",
+        "linkingText": [
+          "\"depth16unorm\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-depth24plus",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-depth24plus",
+        "linkingText": [
+          "\"depth24plus\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-depth24plus-stencil8",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-depth24plus-stencil8",
+        "linkingText": [
+          "\"depth24plus-stencil8\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-depth32float",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-depth32float",
+        "linkingText": [
+          "\"depth32float\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-depth24unorm-stencil8",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-depth24unorm-stencil8",
+        "linkingText": [
+          "\"depth24unorm-stencil8\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-depth32float-stencil8",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-depth32float-stencil8",
+        "linkingText": [
+          "\"depth32float-stencil8\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-bc1-rgba-unorm",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-bc1-rgba-unorm",
+        "linkingText": [
+          "\"bc1-rgba-unorm\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-bc1-rgba-unorm-srgb",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-bc1-rgba-unorm-srgb",
+        "linkingText": [
+          "\"bc1-rgba-unorm-srgb\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-bc2-rgba-unorm",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-bc2-rgba-unorm",
+        "linkingText": [
+          "\"bc2-rgba-unorm\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-bc2-rgba-unorm-srgb",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-bc2-rgba-unorm-srgb",
+        "linkingText": [
+          "\"bc2-rgba-unorm-srgb\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-bc3-rgba-unorm",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-bc3-rgba-unorm",
+        "linkingText": [
+          "\"bc3-rgba-unorm\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-bc3-rgba-unorm-srgb",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-bc3-rgba-unorm-srgb",
+        "linkingText": [
+          "\"bc3-rgba-unorm-srgb\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-bc4-r-unorm",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-bc4-r-unorm",
+        "linkingText": [
+          "\"bc4-r-unorm\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-bc4-r-snorm",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-bc4-r-snorm",
+        "linkingText": [
+          "\"bc4-r-snorm\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-bc5-rg-unorm",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-bc5-rg-unorm",
+        "linkingText": [
+          "\"bc5-rg-unorm\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-bc5-rg-snorm",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-bc5-rg-snorm",
+        "linkingText": [
+          "\"bc5-rg-snorm\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-bc6h-rgb-ufloat",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-bc6h-rgb-ufloat",
+        "linkingText": [
+          "\"bc6h-rgb-ufloat\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-bc6h-rgb-float",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-bc6h-rgb-float",
+        "linkingText": [
+          "\"bc6h-rgb-float\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-bc7-rgba-unorm",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-bc7-rgba-unorm",
+        "linkingText": [
+          "\"bc7-rgba-unorm\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-bc7-rgba-unorm-srgb",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-bc7-rgba-unorm-srgb",
+        "linkingText": [
+          "\"bc7-rgba-unorm-srgb\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-etc2-rgb8unorm",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-etc2-rgb8unorm",
+        "linkingText": [
+          "\"etc2-rgb8unorm\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-etc2-rgb8unorm-srgb",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-etc2-rgb8unorm-srgb",
+        "linkingText": [
+          "\"etc2-rgb8unorm-srgb\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-etc2-rgb8a1unorm",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-etc2-rgb8a1unorm",
+        "linkingText": [
+          "\"etc2-rgb8a1unorm\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-etc2-rgb8a1unorm-srgb",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-etc2-rgb8a1unorm-srgb",
+        "linkingText": [
+          "\"etc2-rgb8a1unorm-srgb\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-etc2-rgba8unorm",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-etc2-rgba8unorm",
+        "linkingText": [
+          "\"etc2-rgba8unorm\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-etc2-rgba8unorm-srgb",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-etc2-rgba8unorm-srgb",
+        "linkingText": [
+          "\"etc2-rgba8unorm-srgb\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-eac-r11unorm",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-eac-r11unorm",
+        "linkingText": [
+          "\"eac-r11unorm\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-eac-r11snorm",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-eac-r11snorm",
+        "linkingText": [
+          "\"eac-r11snorm\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-eac-rg11unorm",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-eac-rg11unorm",
+        "linkingText": [
+          "\"eac-rg11unorm\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-eac-rg11snorm",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-eac-rg11snorm",
+        "linkingText": [
+          "\"eac-rg11snorm\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-astc-4x4-unorm",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-astc-4x4-unorm",
+        "linkingText": [
+          "\"astc-4x4-unorm\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-astc-4x4-unorm-srgb",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-astc-4x4-unorm-srgb",
+        "linkingText": [
+          "\"astc-4x4-unorm-srgb\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-astc-5x4-unorm",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-astc-5x4-unorm",
+        "linkingText": [
+          "\"astc-5x4-unorm\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-astc-5x4-unorm-srgb",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-astc-5x4-unorm-srgb",
+        "linkingText": [
+          "\"astc-5x4-unorm-srgb\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-astc-5x5-unorm",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-astc-5x5-unorm",
+        "linkingText": [
+          "\"astc-5x5-unorm\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-astc-5x5-unorm-srgb",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-astc-5x5-unorm-srgb",
+        "linkingText": [
+          "\"astc-5x5-unorm-srgb\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-astc-6x5-unorm",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-astc-6x5-unorm",
+        "linkingText": [
+          "\"astc-6x5-unorm\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-astc-6x5-unorm-srgb",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-astc-6x5-unorm-srgb",
+        "linkingText": [
+          "\"astc-6x5-unorm-srgb\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-astc-6x6-unorm",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-astc-6x6-unorm",
+        "linkingText": [
+          "\"astc-6x6-unorm\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-astc-6x6-unorm-srgb",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-astc-6x6-unorm-srgb",
+        "linkingText": [
+          "\"astc-6x6-unorm-srgb\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-astc-8x5-unorm",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-astc-8x5-unorm",
+        "linkingText": [
+          "\"astc-8x5-unorm\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-astc-8x5-unorm-srgb",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-astc-8x5-unorm-srgb",
+        "linkingText": [
+          "\"astc-8x5-unorm-srgb\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-astc-8x6-unorm",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-astc-8x6-unorm",
+        "linkingText": [
+          "\"astc-8x6-unorm\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-astc-8x6-unorm-srgb",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-astc-8x6-unorm-srgb",
+        "linkingText": [
+          "\"astc-8x6-unorm-srgb\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-astc-8x8-unorm",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-astc-8x8-unorm",
+        "linkingText": [
+          "\"astc-8x8-unorm\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-astc-8x8-unorm-srgb",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-astc-8x8-unorm-srgb",
+        "linkingText": [
+          "\"astc-8x8-unorm-srgb\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-astc-10x5-unorm",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-astc-10x5-unorm",
+        "linkingText": [
+          "\"astc-10x5-unorm\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-astc-10x5-unorm-srgb",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-astc-10x5-unorm-srgb",
+        "linkingText": [
+          "\"astc-10x5-unorm-srgb\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-astc-10x6-unorm",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-astc-10x6-unorm",
+        "linkingText": [
+          "\"astc-10x6-unorm\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-astc-10x6-unorm-srgb",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-astc-10x6-unorm-srgb",
+        "linkingText": [
+          "\"astc-10x6-unorm-srgb\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-astc-10x8-unorm",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-astc-10x8-unorm",
+        "linkingText": [
+          "\"astc-10x8-unorm\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-astc-10x8-unorm-srgb",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-astc-10x8-unorm-srgb",
+        "linkingText": [
+          "\"astc-10x8-unorm-srgb\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-astc-10x10-unorm",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-astc-10x10-unorm",
+        "linkingText": [
+          "\"astc-10x10-unorm\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-astc-10x10-unorm-srgb",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-astc-10x10-unorm-srgb",
+        "linkingText": [
+          "\"astc-10x10-unorm-srgb\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-astc-12x10-unorm",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-astc-12x10-unorm",
+        "linkingText": [
+          "\"astc-12x10-unorm\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-astc-12x10-unorm-srgb",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-astc-12x10-unorm-srgb",
+        "linkingText": [
+          "\"astc-12x10-unorm-srgb\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-astc-12x12-unorm",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-astc-12x12-unorm",
+        "linkingText": [
+          "\"astc-12x12-unorm\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gputextureformat-astc-12x12-unorm-srgb",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-astc-12x12-unorm-srgb",
+        "linkingText": [
+          "\"astc-12x12-unorm-srgb\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUTextureFormat"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-formats",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+          "title": "Texture Formats",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

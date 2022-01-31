@@ -1,0 +1,535 @@
+{
+  "spec": {
+    "title": "HTML Accessibility API Mappings 1.0",
+    "url": "https://w3c.github.io/html-aam/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://w3c.github.io/html-aam/#title",
+      "level": 1,
+      "title": "HTML Accessibility API Mappings 1.0"
+    },
+    {
+      "id": "abstract",
+      "href": "https://w3c.github.io/html-aam/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "sotd",
+      "href": "https://w3c.github.io/html-aam/#sotd",
+      "level": 2,
+      "title": "Status of This Document"
+    },
+    {
+      "id": "toc",
+      "href": "https://w3c.github.io/html-aam/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "intro",
+      "href": "https://w3c.github.io/html-aam/#intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "intro_aapi",
+      "href": "https://w3c.github.io/html-aam/#intro_aapi",
+      "level": 3,
+      "title": "Accessibility APIs",
+      "number": "1.1"
+    },
+    {
+      "id": "conformance",
+      "href": "https://w3c.github.io/html-aam/#conformance",
+      "level": 2,
+      "title": "Conformance",
+      "number": "2"
+    },
+    {
+      "id": "deprecated",
+      "href": "https://w3c.github.io/html-aam/#deprecated",
+      "level": 3,
+      "title": "Deprecated",
+      "number": "2.1"
+    },
+    {
+      "id": "mapping-html-to-accessibility-apis",
+      "href": "https://w3c.github.io/html-aam/#mapping-html-to-accessibility-apis",
+      "level": 2,
+      "title": "Mapping HTML to Accessibility APIs",
+      "number": "3"
+    },
+    {
+      "id": "mapping_general",
+      "href": "https://w3c.github.io/html-aam/#mapping_general",
+      "level": 3,
+      "title": "General Rules for Exposing WAI-ARIA Semantics",
+      "number": "3.1"
+    },
+    {
+      "id": "mapping_conflicts",
+      "href": "https://w3c.github.io/html-aam/#mapping_conflicts",
+      "level": 3,
+      "title": "Conflicts Between Native Markup Semantics and WAI-ARIA",
+      "number": "3.2"
+    },
+    {
+      "id": "mapping_nodirect",
+      "href": "https://w3c.github.io/html-aam/#mapping_nodirect",
+      "level": 3,
+      "title": "Exposing HTML Features That Do Not Directly Map to Accessibility APIs",
+      "number": "3.3"
+    },
+    {
+      "id": "html-element-role-mappings",
+      "href": "https://w3c.github.io/html-aam/#html-element-role-mappings",
+      "level": 3,
+      "title": "HTML Element Role Mappings",
+      "number": "3.4"
+    },
+    {
+      "id": "html-attribute-state-and-property-mappings",
+      "href": "https://w3c.github.io/html-aam/#html-attribute-state-and-property-mappings",
+      "level": 3,
+      "title": "HTML Attribute State and Property Mappings",
+      "number": "3.5"
+    },
+    {
+      "id": "accessible-name-and-description-computation",
+      "href": "https://w3c.github.io/html-aam/#accessible-name-and-description-computation",
+      "level": 2,
+      "title": "Accessible Name and Description Computation",
+      "number": "4"
+    },
+    {
+      "id": "input-type-text-input-type-password-input-type-search-input-type-tel-input-type-url-and-textarea-element",
+      "href": "https://w3c.github.io/html-aam/#input-type-text-input-type-password-input-type-search-input-type-tel-input-type-url-and-textarea-element",
+      "level": 3,
+      "title": "input type=\"text\", input type=\"password\", input type=\"search\", input type=\"tel\", input type=\"url\" and textarea Element",
+      "number": "4.1"
+    },
+    {
+      "id": "input-type-text-input-type-password-input-type-search-input-type-tel-input-type-email-input-type-url-and-textarea-element-accessible-name-computation",
+      "href": "https://w3c.github.io/html-aam/#input-type-text-input-type-password-input-type-search-input-type-tel-input-type-email-input-type-url-and-textarea-element-accessible-name-computation",
+      "level": 4,
+      "title": "input type=\"text\", input type=\"password\", input type=\"search\", input type=\"tel\", input type=\"email\", input type=\"url\" and textarea Element Accessible Name Computation",
+      "number": "4.1.1"
+    },
+    {
+      "id": "input-type-text-input-type-password-input-type-search-input-type-tel-input-type-email-input-type-url-and-textarea-element-accessible-description-computation",
+      "href": "https://w3c.github.io/html-aam/#input-type-text-input-type-password-input-type-search-input-type-tel-input-type-email-input-type-url-and-textarea-element-accessible-description-computation",
+      "level": 4,
+      "title": "input type=\"text\", input type=\"password\", input type=\"search\", input type=\"tel\", input type=\"email\", input type=\"url\" and textarea Element Accessible Description Computation",
+      "number": "4.1.2"
+    },
+    {
+      "id": "input-type-button-input-type-submit-and-input-type-reset",
+      "href": "https://w3c.github.io/html-aam/#input-type-button-input-type-submit-and-input-type-reset",
+      "level": 3,
+      "title": "input type=\"button\", input type=\"submit\" and input type=\"reset\"",
+      "number": "4.2"
+    },
+    {
+      "id": "input-type-button-input-type-submit-and-input-type-reset-accessible-name-computation",
+      "href": "https://w3c.github.io/html-aam/#input-type-button-input-type-submit-and-input-type-reset-accessible-name-computation",
+      "level": 4,
+      "title": "input type=\"button\" , input type=\"submit\" and input type=\"reset\" Accessible Name Computation",
+      "number": "4.2.1"
+    },
+    {
+      "id": "input-type-button-input-type-submit-and-input-type-reset-accessible-description-computation",
+      "href": "https://w3c.github.io/html-aam/#input-type-button-input-type-submit-and-input-type-reset-accessible-description-computation",
+      "level": 4,
+      "title": "input type=\"button\" , input type=\"submit\" and input type=\"reset\" Accessible Description Computation",
+      "number": "4.2.2"
+    },
+    {
+      "id": "input-type-image",
+      "href": "https://w3c.github.io/html-aam/#input-type-image",
+      "level": 3,
+      "title": "input type=\"image\"",
+      "number": "4.3"
+    },
+    {
+      "id": "input-type-image-accessible-name-computation",
+      "href": "https://w3c.github.io/html-aam/#input-type-image-accessible-name-computation",
+      "level": 4,
+      "title": "input type=\"image\" Accessible Name Computation",
+      "number": "4.3.1"
+    },
+    {
+      "id": "input-type-image-accessible-description-computation",
+      "href": "https://w3c.github.io/html-aam/#input-type-image-accessible-description-computation",
+      "level": 4,
+      "title": "input type=\"image\" Accessible Description Computation",
+      "number": "4.3.2"
+    },
+    {
+      "id": "button-element",
+      "href": "https://w3c.github.io/html-aam/#button-element",
+      "level": 3,
+      "title": "button Element",
+      "number": "4.4"
+    },
+    {
+      "id": "button-element-accessible-name-computation",
+      "href": "https://w3c.github.io/html-aam/#button-element-accessible-name-computation",
+      "level": 4,
+      "title": "button Element Accessible Name Computation",
+      "number": "4.4.1"
+    },
+    {
+      "id": "button-element-accessible-description-computation",
+      "href": "https://w3c.github.io/html-aam/#button-element-accessible-description-computation",
+      "level": 4,
+      "title": "button Element Accessible Description Computation",
+      "number": "4.4.2"
+    },
+    {
+      "id": "fieldset-and-legend-elements",
+      "href": "https://w3c.github.io/html-aam/#fieldset-and-legend-elements",
+      "level": 3,
+      "title": "fieldset and legend Elements",
+      "number": "4.5"
+    },
+    {
+      "id": "fieldset-element-accessible-name-computation",
+      "href": "https://w3c.github.io/html-aam/#fieldset-element-accessible-name-computation",
+      "level": 4,
+      "title": "fieldset Element Accessible Name Computation",
+      "number": "4.5.1"
+    },
+    {
+      "id": "fieldset-element-accessible-description-computation",
+      "href": "https://w3c.github.io/html-aam/#fieldset-element-accessible-description-computation",
+      "level": 4,
+      "title": "fieldset Element Accessible Description Computation",
+      "number": "4.5.2"
+    },
+    {
+      "id": "output-element",
+      "href": "https://w3c.github.io/html-aam/#output-element",
+      "level": 3,
+      "title": "output Element",
+      "number": "4.6"
+    },
+    {
+      "id": "output-element-accessible-name-computation",
+      "href": "https://w3c.github.io/html-aam/#output-element-accessible-name-computation",
+      "level": 4,
+      "title": "output Element Accessible Name Computation",
+      "number": "4.6.1"
+    },
+    {
+      "id": "output-element-accessible-description-computation",
+      "href": "https://w3c.github.io/html-aam/#output-element-accessible-description-computation",
+      "level": 4,
+      "title": "output Element Accessible Description Computation",
+      "number": "4.6.2"
+    },
+    {
+      "id": "other-form-elements",
+      "href": "https://w3c.github.io/html-aam/#other-form-elements",
+      "level": 3,
+      "title": "Other Form Elements",
+      "number": "4.7"
+    },
+    {
+      "id": "other-form-elements-accessible-name-computation",
+      "href": "https://w3c.github.io/html-aam/#other-form-elements-accessible-name-computation",
+      "level": 4,
+      "title": "Other Form Elements Accessible Name Computation",
+      "number": "4.7.1"
+    },
+    {
+      "id": "other-form-elements-accessible-description-computation",
+      "href": "https://w3c.github.io/html-aam/#other-form-elements-accessible-description-computation",
+      "level": 4,
+      "title": "Other Form Elements Accessible Description Computation",
+      "number": "4.7.2"
+    },
+    {
+      "id": "summary-element",
+      "href": "https://w3c.github.io/html-aam/#summary-element",
+      "level": 3,
+      "title": "summary Element",
+      "number": "4.8"
+    },
+    {
+      "id": "summary-element-accessible-name-computation",
+      "href": "https://w3c.github.io/html-aam/#summary-element-accessible-name-computation",
+      "level": 4,
+      "title": "summary Element Accessible Name Computation",
+      "number": "4.8.1"
+    },
+    {
+      "id": "summary-element-accessible-description-computation",
+      "href": "https://w3c.github.io/html-aam/#summary-element-accessible-description-computation",
+      "level": 4,
+      "title": "summary Element Accessible Description Computation",
+      "number": "4.8.2"
+    },
+    {
+      "id": "figure-and-figcaption-elements",
+      "href": "https://w3c.github.io/html-aam/#figure-and-figcaption-elements",
+      "level": 3,
+      "title": "figure and figcaption Elements",
+      "number": "4.9"
+    },
+    {
+      "id": "figure-element-accessible-name-computation",
+      "href": "https://w3c.github.io/html-aam/#figure-element-accessible-name-computation",
+      "level": 4,
+      "title": "figure Element Accessible Name Computation",
+      "number": "4.9.1"
+    },
+    {
+      "id": "figure-element-accessible-description-computation",
+      "href": "https://w3c.github.io/html-aam/#figure-element-accessible-description-computation",
+      "level": 4,
+      "title": "figure Element Accessible Description Computation",
+      "number": "4.9.2"
+    },
+    {
+      "id": "img-element",
+      "href": "https://w3c.github.io/html-aam/#img-element",
+      "level": 3,
+      "title": "img Element",
+      "number": "4.10"
+    },
+    {
+      "id": "img-element-accessible-name-computation",
+      "href": "https://w3c.github.io/html-aam/#img-element-accessible-name-computation",
+      "level": 4,
+      "title": "img Element Accessible Name Computation",
+      "number": "4.10.1"
+    },
+    {
+      "id": "img-element-accessible-description-computation",
+      "href": "https://w3c.github.io/html-aam/#img-element-accessible-description-computation",
+      "level": 4,
+      "title": "img Element Accessible Description Computation",
+      "number": "4.10.2"
+    },
+    {
+      "id": "table-element",
+      "href": "https://w3c.github.io/html-aam/#table-element",
+      "level": 3,
+      "title": "table Element",
+      "number": "4.11"
+    },
+    {
+      "id": "table-element-accessible-name-computation",
+      "href": "https://w3c.github.io/html-aam/#table-element-accessible-name-computation",
+      "level": 4,
+      "title": "table Element Accessible Name Computation",
+      "number": "4.11.1"
+    },
+    {
+      "id": "table-element-accessible-description-computation",
+      "href": "https://w3c.github.io/html-aam/#table-element-accessible-description-computation",
+      "level": 4,
+      "title": "table Element Accessible Description Computation",
+      "number": "4.11.2"
+    },
+    {
+      "id": "other-tabular-data-elements",
+      "href": "https://w3c.github.io/html-aam/#other-tabular-data-elements",
+      "level": 3,
+      "title": "Other Tabular data elements",
+      "number": "4.12"
+    },
+    {
+      "id": "tr-td-th-elements-accessible-name-computation",
+      "href": "https://w3c.github.io/html-aam/#tr-td-th-elements-accessible-name-computation",
+      "level": 4,
+      "title": "tr, td, th Elements Accessible Name Computation",
+      "number": "4.12.1"
+    },
+    {
+      "id": "tr-td-th-elements-accessible-description-computation",
+      "href": "https://w3c.github.io/html-aam/#tr-td-th-elements-accessible-description-computation",
+      "level": 4,
+      "title": "tr, td, th Elements Accessible Description Computation",
+      "number": "4.12.2"
+    },
+    {
+      "id": "a-element-with-a-href-attribute",
+      "href": "https://w3c.github.io/html-aam/#a-element-with-a-href-attribute",
+      "level": 3,
+      "title": "a Element with a href attribute",
+      "number": "4.13"
+    },
+    {
+      "id": "a-element-accessible-name-computation",
+      "href": "https://w3c.github.io/html-aam/#a-element-accessible-name-computation",
+      "level": 4,
+      "title": "a Element Accessible Name Computation",
+      "number": "4.13.1"
+    },
+    {
+      "id": "a-element-with-a-href-attribute-accessible-description-computation",
+      "href": "https://w3c.github.io/html-aam/#a-element-with-a-href-attribute-accessible-description-computation",
+      "level": 4,
+      "title": "a Element with a href attribute Accessible Description Computation",
+      "number": "4.13.2"
+    },
+    {
+      "id": "area-element",
+      "href": "https://w3c.github.io/html-aam/#area-element",
+      "level": 3,
+      "title": "area Element",
+      "number": "4.14"
+    },
+    {
+      "id": "area-element-accessible-name-computation",
+      "href": "https://w3c.github.io/html-aam/#area-element-accessible-name-computation",
+      "level": 4,
+      "title": "area Element Accessible Name Computation",
+      "number": "4.14.1"
+    },
+    {
+      "id": "area-element-accessible-description-computation",
+      "href": "https://w3c.github.io/html-aam/#area-element-accessible-description-computation",
+      "level": 4,
+      "title": "area Element Accessible Description Computation",
+      "number": "4.14.2"
+    },
+    {
+      "id": "iframe-element",
+      "href": "https://w3c.github.io/html-aam/#iframe-element",
+      "level": 3,
+      "title": "iframe Element",
+      "number": "4.15"
+    },
+    {
+      "id": "iframe-element-accessible-name-computation",
+      "href": "https://w3c.github.io/html-aam/#iframe-element-accessible-name-computation",
+      "level": 4,
+      "title": "iframe Element Accessible Name Computation",
+      "number": "4.15.1"
+    },
+    {
+      "id": "iframe-element-accessible-description-computation",
+      "href": "https://w3c.github.io/html-aam/#iframe-element-accessible-description-computation",
+      "level": 4,
+      "title": "iframe Element Accessible Description Computation",
+      "number": "4.15.2"
+    },
+    {
+      "id": "section-elements-and-grouping-content-elements-not-listed-elsewhere",
+      "href": "https://w3c.github.io/html-aam/#section-elements-and-grouping-content-elements-not-listed-elsewhere",
+      "level": 3,
+      "title": "Section Elements and Grouping Content Elements Not listed Elsewhere",
+      "number": "4.16"
+    },
+    {
+      "id": "section-and-grouping-element-accessible-name-computation",
+      "href": "https://w3c.github.io/html-aam/#section-and-grouping-element-accessible-name-computation",
+      "level": 4,
+      "title": "Section and Grouping Element Accessible Name Computation",
+      "number": "4.16.1"
+    },
+    {
+      "id": "section-and-grouping-element-accessible-description-computation",
+      "href": "https://w3c.github.io/html-aam/#section-and-grouping-element-accessible-description-computation",
+      "level": 4,
+      "title": "Section and Grouping Element Accessible Description Computation",
+      "number": "4.16.2"
+    },
+    {
+      "id": "text-level-elements-not-listed-elsewhere",
+      "href": "https://w3c.github.io/html-aam/#text-level-elements-not-listed-elsewhere",
+      "level": 3,
+      "title": "Text Level Elements Not Listed Elsewhere",
+      "number": "4.17"
+    },
+    {
+      "id": "text-level-element-accessible-name-computation",
+      "href": "https://w3c.github.io/html-aam/#text-level-element-accessible-name-computation",
+      "level": 4,
+      "title": "Text Level Element Accessible Name Computation",
+      "number": "4.17.1"
+    },
+    {
+      "id": "text-level-element-accessible-description-computation",
+      "href": "https://w3c.github.io/html-aam/#text-level-element-accessible-description-computation",
+      "level": 4,
+      "title": "Text Level Element Accessible Description Computation",
+      "number": "4.17.2"
+    },
+    {
+      "id": "appendices",
+      "href": "https://w3c.github.io/html-aam/#appendices",
+      "level": 2,
+      "title": "Appendices",
+      "number": "A"
+    },
+    {
+      "id": "changelog",
+      "href": "https://w3c.github.io/html-aam/#changelog",
+      "level": 3,
+      "title": "Change Log",
+      "number": "A.1"
+    },
+    {
+      "id": "substantive-changes-since-moving-to-the-accessible-rich-internet-applications-working-group-03-nov-2019",
+      "href": "https://w3c.github.io/html-aam/#substantive-changes-since-moving-to-the-accessible-rich-internet-applications-working-group-03-nov-2019",
+      "level": 4,
+      "title": "Substantive changes since moving to the Accessible Rich Internet Applications Working Group (03-Nov-2019)",
+      "number": "A.1.1"
+    },
+    {
+      "id": "substantive-changes-since-moving-to-the-web-application-working-group-formerly-web-platform-wg-01-oct-2016",
+      "href": "https://w3c.github.io/html-aam/#substantive-changes-since-moving-to-the-web-application-working-group-formerly-web-platform-wg-01-oct-2016",
+      "level": 5,
+      "title": "Substantive changes since moving to the Web Application Working Group (formerly Web Platform WG) (01-Oct-2016)"
+    },
+    {
+      "id": "acknowledgements",
+      "href": "https://w3c.github.io/html-aam/#acknowledgements",
+      "level": 3,
+      "title": "Acknowledgments",
+      "number": "A.2"
+    },
+    {
+      "id": "ack_group",
+      "href": "https://w3c.github.io/html-aam/#ack_group",
+      "level": 4,
+      "title": "Participants active in the HTML Accessibility Task Force active at the time of publication",
+      "number": "A.2.1"
+    },
+    {
+      "id": "ack_funders",
+      "href": "https://w3c.github.io/html-aam/#ack_funders",
+      "level": 4,
+      "title": "Enabling funders",
+      "number": "A.2.2"
+    },
+    {
+      "id": "references",
+      "href": "https://w3c.github.io/html-aam/#references",
+      "level": 2,
+      "title": "References",
+      "number": "B"
+    },
+    {
+      "id": "normative-references",
+      "href": "https://w3c.github.io/html-aam/#normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "number": "B.1"
+    },
+    {
+      "id": "informative-references",
+      "href": "https://w3c.github.io/html-aam/#informative-references",
+      "level": 3,
+      "title": "Informative references",
+      "number": "B.2"
+    }
+  ]
+}

@@ -1,0 +1,265 @@
+{
+  "name": "FileSystemDirectoryHandle",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "File System Access",
+      "url": "https://wicg.github.io/file-system-access/"
+    },
+    "fragment": "[Exposed=(Window,Worker), SecureContext, Serializable]\ninterface FileSystemDirectoryHandle : FileSystemHandle {\n  async iterable<USVString, FileSystemHandle>;\n\n  Promise<FileSystemFileHandle> getFileHandle(USVString name, optional FileSystemGetFileOptions options = {});\n  Promise<FileSystemDirectoryHandle> getDirectoryHandle(USVString name, optional FileSystemGetDirectoryOptions options = {});\n\n  Promise<undefined> removeEntry(USVString name, optional FileSystemRemoveOptions options = {});\n\n  Promise<sequence<USVString>?> resolve(FileSystemHandle possibleDescendant);\n};",
+    "href": "https://wicg.github.io/file-system-access/#filesystemdirectoryhandle"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "FileSystemHandle",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "File System Access",
+        "url": "https://wicg.github.io/file-system-access/"
+      },
+      "fragment": "[Exposed=(Window,Worker), SecureContext, Serializable]\ninterface FileSystemHandle {\n  readonly attribute FileSystemHandleKind kind;\n  readonly attribute USVString name;\n\n  Promise<boolean> isSameEntry(FileSystemHandle other);\n\n  Promise<PermissionState> queryPermission(optional FileSystemHandlePermissionDescriptor descriptor = {});\n  Promise<PermissionState> requestPermission(optional FileSystemHandlePermissionDescriptor descriptor = {});\n};",
+      "href": "https://wicg.github.io/file-system-access/#filesystemhandle"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://wicg.github.io/file-system-access/": [
+      {
+        "id": "filesystemdirectoryhandle",
+        "href": "https://wicg.github.io/file-system-access/#filesystemdirectoryhandle",
+        "linkingText": [
+          "FileSystemDirectoryHandle"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-filesystemdirectoryhandle",
+          "href": "https://wicg.github.io/file-system-access/#api-filesystemdirectoryhandle",
+          "title": "The FileSystemDirectoryHandle interface",
+          "number": "2.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-filesystemdirectoryhandle-getfilehandle",
+        "href": "https://wicg.github.io/file-system-access/#dom-filesystemdirectoryhandle-getfilehandle",
+        "linkingText": [
+          "getFileHandle(name, options)",
+          "getFileHandle(name)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "FileSystemDirectoryHandle"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-filesystemdirectoryhandle-getfilehandle",
+          "href": "https://wicg.github.io/file-system-access/#api-filesystemdirectoryhandle-getfilehandle",
+          "title": "The getFileHandle() method",
+          "number": "2.5.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-filesystemdirectoryhandle-getdirectoryhandle",
+        "href": "https://wicg.github.io/file-system-access/#dom-filesystemdirectoryhandle-getdirectoryhandle",
+        "linkingText": [
+          "getDirectoryHandle(name, options)",
+          "getDirectoryHandle(name)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "FileSystemDirectoryHandle"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-filesystemdirectoryhandle-getdirectoryhandle",
+          "href": "https://wicg.github.io/file-system-access/#api-filesystemdirectoryhandle-getdirectoryhandle",
+          "title": "The getDirectoryHandle() method",
+          "number": "2.5.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-filesystemdirectoryhandle-removeentry",
+        "href": "https://wicg.github.io/file-system-access/#dom-filesystemdirectoryhandle-removeentry",
+        "linkingText": [
+          "removeEntry(name, options)",
+          "removeEntry(name)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "FileSystemDirectoryHandle"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-filesystemdirectoryhandle-removeentry",
+          "href": "https://wicg.github.io/file-system-access/#api-filesystemdirectoryhandle-removeentry",
+          "title": "The removeEntry() method",
+          "number": "2.5.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-filesystemdirectoryhandle-resolve",
+        "href": "https://wicg.github.io/file-system-access/#dom-filesystemdirectoryhandle-resolve",
+        "linkingText": [
+          "resolve(possibleDescendant)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "FileSystemDirectoryHandle"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-filesystemdirectoryhandle-resolve",
+          "href": "https://wicg.github.io/file-system-access/#api-filesystemdirectoryhandle-resolve",
+          "title": "The resolve() method",
+          "number": "2.5.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "filesystemhandle",
+        "href": "https://wicg.github.io/file-system-access/#filesystemhandle",
+        "linkingText": [
+          "FileSystemHandle"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-filesystemhandle",
+          "href": "https://wicg.github.io/file-system-access/#api-filesystemhandle",
+          "title": "The FileSystemHandle interface",
+          "number": "2.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-filesystemhandle-kind",
+        "href": "https://wicg.github.io/file-system-access/#dom-filesystemhandle-kind",
+        "linkingText": [
+          "kind"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "FileSystemHandle"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-filesystemhandle",
+          "href": "https://wicg.github.io/file-system-access/#api-filesystemhandle",
+          "title": "The FileSystemHandle interface",
+          "number": "2.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-filesystemhandle-name",
+        "href": "https://wicg.github.io/file-system-access/#dom-filesystemhandle-name",
+        "linkingText": [
+          "name"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "FileSystemHandle"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-filesystemhandle",
+          "href": "https://wicg.github.io/file-system-access/#api-filesystemhandle",
+          "title": "The FileSystemHandle interface",
+          "number": "2.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-filesystemhandle-issameentry",
+        "href": "https://wicg.github.io/file-system-access/#dom-filesystemhandle-issameentry",
+        "linkingText": [
+          "isSameEntry(other)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "FileSystemHandle"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-filesystemhandle-issameentry",
+          "href": "https://wicg.github.io/file-system-access/#api-filesystemhandle-issameentry",
+          "title": "The isSameEntry() method",
+          "number": "2.3.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-filesystemhandle-querypermission",
+        "href": "https://wicg.github.io/file-system-access/#dom-filesystemhandle-querypermission",
+        "linkingText": [
+          "queryPermission(descriptor)",
+          "queryPermission()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "FileSystemHandle"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-filesystemhandle-querypermission",
+          "href": "https://wicg.github.io/file-system-access/#api-filesystemhandle-querypermission",
+          "title": "The queryPermission() method",
+          "number": "2.3.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-filesystemhandle-requestpermission",
+        "href": "https://wicg.github.io/file-system-access/#dom-filesystemhandle-requestpermission",
+        "linkingText": [
+          "requestPermission(descriptor)",
+          "requestPermission()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "FileSystemHandle"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-filesystemhandle-requestpermission",
+          "href": "https://wicg.github.io/file-system-access/#api-filesystemhandle-requestpermission",
+          "title": "The requestPermission() method",
+          "number": "2.3.3"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

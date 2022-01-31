@@ -1,0 +1,209 @@
+{
+  "spec": {
+    "title": "CSS Box Sizing Module Level 4",
+    "url": "https://drafts.csswg.org/css-sizing-4/"
+  },
+  "properties": {
+    "width": {
+      "name": "width",
+      "newValues": "stretch | fit-content | contain",
+      "styleDeclaration": [
+        "width"
+      ]
+    },
+    "height": {
+      "name": "height",
+      "newValues": "stretch | fit-content | contain",
+      "styleDeclaration": [
+        "height"
+      ]
+    },
+    "inline-size": {
+      "name": "inline-size",
+      "newValues": "stretch | fit-content | contain",
+      "styleDeclaration": [
+        "inline-size",
+        "inlineSize"
+      ]
+    },
+    "block-size": {
+      "name": "block-size",
+      "newValues": "stretch | fit-content | contain",
+      "styleDeclaration": [
+        "block-size",
+        "blockSize"
+      ]
+    },
+    "min-width": {
+      "name": "min-width",
+      "newValues": "stretch | fit-content | contain",
+      "styleDeclaration": [
+        "min-width",
+        "minWidth"
+      ]
+    },
+    "min-height": {
+      "name": "min-height",
+      "newValues": "stretch | fit-content | contain",
+      "styleDeclaration": [
+        "min-height",
+        "minHeight"
+      ]
+    },
+    "min-inline-size": {
+      "name": "min-inline-size",
+      "newValues": "stretch | fit-content | contain",
+      "styleDeclaration": [
+        "min-inline-size",
+        "minInlineSize"
+      ]
+    },
+    "min-block-size": {
+      "name": "min-block-size",
+      "newValues": "stretch | fit-content | contain",
+      "styleDeclaration": [
+        "min-block-size",
+        "minBlockSize"
+      ]
+    },
+    "max-width": {
+      "name": "max-width",
+      "newValues": "stretch | fit-content | contain",
+      "styleDeclaration": [
+        "max-width",
+        "maxWidth"
+      ]
+    },
+    "max-height": {
+      "name": "max-height",
+      "newValues": "stretch | fit-content | contain",
+      "styleDeclaration": [
+        "max-height",
+        "maxHeight"
+      ]
+    },
+    "max-inline-size": {
+      "name": "max-inline-size",
+      "newValues": "stretch | fit-content | contain",
+      "styleDeclaration": [
+        "max-inline-size",
+        "maxInlineSize"
+      ]
+    },
+    "max-block-size": {
+      "name": "max-block-size",
+      "newValues": "stretch | fit-content | contain",
+      "styleDeclaration": [
+        "max-block-size",
+        "maxBlockSize"
+      ]
+    },
+    "aspect-ratio": {
+      "name": "aspect-ratio",
+      "value": "auto || <ratio>",
+      "initial": "auto",
+      "appliesTo": "all elements except inline boxes and internal ruby or table boxes",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "specified keyword or a pair of numbers",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value",
+      "styleDeclaration": [
+        "aspect-ratio",
+        "aspectRatio"
+      ]
+    },
+    "contain-intrinsic-width": {
+      "name": "contain-intrinsic-width",
+      "value": "none | <length> | auto <length>",
+      "initial": "none",
+      "appliesTo": "elements with size containment",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "as specified, with <length> values computed",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
+      "styleDeclaration": [
+        "contain-intrinsic-width",
+        "containIntrinsicWidth"
+      ]
+    },
+    "contain-intrinsic-height": {
+      "name": "contain-intrinsic-height",
+      "value": "none | <length> | auto <length>",
+      "initial": "none",
+      "appliesTo": "elements with size containment",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "as specified, with <length> values computed",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
+      "styleDeclaration": [
+        "contain-intrinsic-height",
+        "containIntrinsicHeight"
+      ]
+    },
+    "contain-intrinsic-block-size": {
+      "name": "contain-intrinsic-block-size",
+      "value": "none | <length> | auto <length>",
+      "initial": "none",
+      "appliesTo": "elements with size containment",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "as specified, with <length> values computed",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
+      "styleDeclaration": [
+        "contain-intrinsic-block-size",
+        "containIntrinsicBlockSize"
+      ]
+    },
+    "contain-intrinsic-inline-size": {
+      "name": "contain-intrinsic-inline-size",
+      "value": "none | <length> | auto <length>",
+      "initial": "none",
+      "appliesTo": "elements with size containment",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "as specified, with <length> values computed",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
+      "styleDeclaration": [
+        "contain-intrinsic-inline-size",
+        "containIntrinsicInlineSize"
+      ]
+    },
+    "contain-intrinsic-size": {
+      "name": "contain-intrinsic-size",
+      "value": "[ none | <length> | auto <length> ]{1,2}",
+      "initial": "see individual properties",
+      "appliesTo": "see individual properties",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "contain-intrinsic-size",
+        "containIntrinsicSize"
+      ]
+    },
+    "min-intrinsic-sizing": {
+      "name": "min-intrinsic-sizing",
+      "value": "legacy | zero-if-scroll || zero-if-extrinsic",
+      "initial": "legacy",
+      "appliesTo": "all elements except inline boxes",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "min-intrinsic-sizing",
+        "minIntrinsicSizing"
+      ]
+    }
+  },
+  "descriptors": {},
+  "valuespaces": {}
+}

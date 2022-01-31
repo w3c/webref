@@ -1,0 +1,206 @@
+{
+  "name": "MLGruOptions",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Web Neural Network API",
+      "url": "https://www.w3.org/TR/webnn/"
+    },
+    "fragment": "dictionary MLGruOptions {\n  MLOperand bias;\n  MLOperand recurrentBias;\n  MLOperand initialHiddenState;\n  boolean resetAfter = true;\n  boolean returnSequence = false;\n  MLRecurrentNetworkDirection direction = \"forward\";\n  MLRecurrentNetworkWeightLayout layout = \"zrn\";\n  sequence<MLOperator> activations;\n};",
+    "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlgruoptions"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webnn/": [
+      {
+        "id": "dictdef-mlgruoptions",
+        "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlgruoptions",
+        "linkingText": [
+          "MLGruOptions"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-gru",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-gru",
+          "title": "gru",
+          "number": "7.7.10"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlgruoptions-bias",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlgruoptions-bias",
+        "linkingText": [
+          "bias"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MLGruOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-gru",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-gru",
+          "title": "gru",
+          "number": "7.7.10"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlgruoptions-recurrentbias",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlgruoptions-recurrentbias",
+        "linkingText": [
+          "recurrentBias"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MLGruOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-gru",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-gru",
+          "title": "gru",
+          "number": "7.7.10"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlgruoptions-initialhiddenstate",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlgruoptions-initialhiddenstate",
+        "linkingText": [
+          "initialHiddenState"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MLGruOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-gru",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-gru",
+          "title": "gru",
+          "number": "7.7.10"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlgruoptions-resetafter",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlgruoptions-resetafter",
+        "linkingText": [
+          "resetAfter"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MLGruOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-gru",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-gru",
+          "title": "gru",
+          "number": "7.7.10"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlgruoptions-returnsequence",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlgruoptions-returnsequence",
+        "linkingText": [
+          "returnSequence"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MLGruOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-gru",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-gru",
+          "title": "gru",
+          "number": "7.7.10"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlgruoptions-direction",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlgruoptions-direction",
+        "linkingText": [
+          "direction"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MLGruOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-gru",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-gru",
+          "title": "gru",
+          "number": "7.7.10"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlgruoptions-layout",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlgruoptions-layout",
+        "linkingText": [
+          "layout"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MLGruOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-gru",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-gru",
+          "title": "gru",
+          "number": "7.7.10"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlgruoptions-activations",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlgruoptions-activations",
+        "linkingText": [
+          "activations"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MLGruOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder-gru",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-gru",
+          "title": "gru",
+          "number": "7.7.10"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

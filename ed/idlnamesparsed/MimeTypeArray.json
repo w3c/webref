@@ -1,0 +1,81 @@
+{
+  "name": "MimeTypeArray",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "HTML Standard",
+      "url": "https://html.spec.whatwg.org/multipage/"
+    },
+    "fragment": "[Exposed=Window,\n LegacyUnenumerableNamedProperties]\ninterface MimeTypeArray {\n  readonly attribute unsigned long length;\n  getter MimeType? item(unsigned long index);\n  getter MimeType? namedItem(DOMString name);\n};"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://html.spec.whatwg.org/multipage/": [
+      {
+        "id": "dom-mimetypearray-length",
+        "href": "https://html.spec.whatwg.org/multipage/system-state.html#dom-mimetypearray-length",
+        "linkingText": [
+          "length"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "MimeTypeArray"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "pdf-viewing-support",
+          "href": "https://html.spec.whatwg.org/multipage/system-state.html#pdf-viewing-support",
+          "title": "PDF viewing support",
+          "number": "8.9.1.6"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-mimetypearray-item",
+        "href": "https://html.spec.whatwg.org/multipage/system-state.html#dom-mimetypearray-item",
+        "linkingText": [
+          "item(index)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MimeTypeArray"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "pdf-viewing-support",
+          "href": "https://html.spec.whatwg.org/multipage/system-state.html#pdf-viewing-support",
+          "title": "PDF viewing support",
+          "number": "8.9.1.6"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-mimetypearray-nameditem",
+        "href": "https://html.spec.whatwg.org/multipage/system-state.html#dom-mimetypearray-nameditem",
+        "linkingText": [
+          "namedItem(name)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MimeTypeArray"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "pdf-viewing-support",
+          "href": "https://html.spec.whatwg.org/multipage/system-state.html#pdf-viewing-support",
+          "title": "PDF viewing support",
+          "number": "8.9.1.6"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

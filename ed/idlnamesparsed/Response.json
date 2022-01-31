@@ -1,0 +1,465 @@
+{
+  "name": "Response",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Fetch Standard",
+      "url": "https://fetch.spec.whatwg.org/"
+    },
+    "fragment": "[Exposed=(Window,Worker)]interface Response {\n  constructor(optional BodyInit? body = null, optional ResponseInit init = {});\n\n  [NewObject] static Response error();\n  [NewObject] static Response redirect(USVString url, optional unsigned short status = 302);\n\n  readonly attribute ResponseType type;\n\n  readonly attribute USVString url;\n  readonly attribute boolean redirected;\n  readonly attribute unsigned short status;\n  readonly attribute boolean ok;\n  readonly attribute ByteString statusText;\n  [SameObject] readonly attribute Headers headers;\n\n  [NewObject] Response clone();\n};",
+    "href": "https://fetch.spec.whatwg.org/#response"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "Fetch Standard",
+        "url": "https://fetch.spec.whatwg.org/"
+      },
+      "fragment": "Response includes Body;"
+    }
+  ],
+  "inheritance": null,
+  "includes": [
+    {
+      "name": "Body",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        "fragment": "interface mixin Body {\n  readonly attribute ReadableStream? body;\n  readonly attribute boolean bodyUsed;\n  [NewObject] Promise<ArrayBuffer> arrayBuffer();\n  [NewObject] Promise<Blob> blob();\n  [NewObject] Promise<FormData> formData();\n  [NewObject] Promise<any> json();\n  [NewObject] Promise<USVString> text();\n};",
+        "href": "https://fetch.spec.whatwg.org/#body"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    }
+  ],
+  "dfns": {
+    "https://fetch.spec.whatwg.org/": [
+      {
+        "id": "response",
+        "href": "https://fetch.spec.whatwg.org/#response",
+        "linkingText": [
+          "Response"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "response-class",
+          "href": "https://fetch.spec.whatwg.org/#response-class",
+          "title": "Response class",
+          "number": "5.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-response",
+        "href": "https://fetch.spec.whatwg.org/#dom-response",
+        "linkingText": [
+          "Response(body, init)",
+          "constructor(body, init)",
+          "Response(body)",
+          "constructor(body)",
+          "Response()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "Response"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "response-class",
+          "href": "https://fetch.spec.whatwg.org/#response-class",
+          "title": "Response class",
+          "number": "5.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-response-error",
+        "href": "https://fetch.spec.whatwg.org/#dom-response-error",
+        "linkingText": [
+          "error()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Response"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "response-class",
+          "href": "https://fetch.spec.whatwg.org/#response-class",
+          "title": "Response class",
+          "number": "5.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-response-redirect",
+        "href": "https://fetch.spec.whatwg.org/#dom-response-redirect",
+        "linkingText": [
+          "redirect(url, status)",
+          "redirect(url)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Response"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "response-class",
+          "href": "https://fetch.spec.whatwg.org/#response-class",
+          "title": "Response class",
+          "number": "5.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-response-type",
+        "href": "https://fetch.spec.whatwg.org/#dom-response-type",
+        "linkingText": [
+          "type"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Response"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "response-class",
+          "href": "https://fetch.spec.whatwg.org/#response-class",
+          "title": "Response class",
+          "number": "5.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-response-url",
+        "href": "https://fetch.spec.whatwg.org/#dom-response-url",
+        "linkingText": [
+          "url"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Response"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "response-class",
+          "href": "https://fetch.spec.whatwg.org/#response-class",
+          "title": "Response class",
+          "number": "5.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-response-redirected",
+        "href": "https://fetch.spec.whatwg.org/#dom-response-redirected",
+        "linkingText": [
+          "redirected"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Response"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "response-class",
+          "href": "https://fetch.spec.whatwg.org/#response-class",
+          "title": "Response class",
+          "number": "5.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-response-status",
+        "href": "https://fetch.spec.whatwg.org/#dom-response-status",
+        "linkingText": [
+          "status"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Response"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "response-class",
+          "href": "https://fetch.spec.whatwg.org/#response-class",
+          "title": "Response class",
+          "number": "5.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-response-ok",
+        "href": "https://fetch.spec.whatwg.org/#dom-response-ok",
+        "linkingText": [
+          "ok"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Response"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "response-class",
+          "href": "https://fetch.spec.whatwg.org/#response-class",
+          "title": "Response class",
+          "number": "5.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-response-statustext",
+        "href": "https://fetch.spec.whatwg.org/#dom-response-statustext",
+        "linkingText": [
+          "statusText"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Response"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "response-class",
+          "href": "https://fetch.spec.whatwg.org/#response-class",
+          "title": "Response class",
+          "number": "5.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-response-headers",
+        "href": "https://fetch.spec.whatwg.org/#dom-response-headers",
+        "linkingText": [
+          "headers"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Response"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "response-class",
+          "href": "https://fetch.spec.whatwg.org/#response-class",
+          "title": "Response class",
+          "number": "5.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-response-clone",
+        "href": "https://fetch.spec.whatwg.org/#dom-response-clone",
+        "linkingText": [
+          "clone()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Response"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "response-class",
+          "href": "https://fetch.spec.whatwg.org/#response-class",
+          "title": "Response class",
+          "number": "5.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "body",
+        "href": "https://fetch.spec.whatwg.org/#body",
+        "linkingText": [
+          "Body"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "body-mixin",
+          "href": "https://fetch.spec.whatwg.org/#body-mixin",
+          "title": "Body mixin",
+          "number": "5.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-body-body",
+        "href": "https://fetch.spec.whatwg.org/#dom-body-body",
+        "linkingText": [
+          "body"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Body"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "body-mixin",
+          "href": "https://fetch.spec.whatwg.org/#body-mixin",
+          "title": "Body mixin",
+          "number": "5.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-body-bodyused",
+        "href": "https://fetch.spec.whatwg.org/#dom-body-bodyused",
+        "linkingText": [
+          "bodyUsed"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Body"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "body-mixin",
+          "href": "https://fetch.spec.whatwg.org/#body-mixin",
+          "title": "Body mixin",
+          "number": "5.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-body-arraybuffer",
+        "href": "https://fetch.spec.whatwg.org/#dom-body-arraybuffer",
+        "linkingText": [
+          "arrayBuffer()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Body"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "body-mixin",
+          "href": "https://fetch.spec.whatwg.org/#body-mixin",
+          "title": "Body mixin",
+          "number": "5.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-body-blob",
+        "href": "https://fetch.spec.whatwg.org/#dom-body-blob",
+        "linkingText": [
+          "blob()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Body"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "body-mixin",
+          "href": "https://fetch.spec.whatwg.org/#body-mixin",
+          "title": "Body mixin",
+          "number": "5.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-body-formdata",
+        "href": "https://fetch.spec.whatwg.org/#dom-body-formdata",
+        "linkingText": [
+          "formData()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Body"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "body-mixin",
+          "href": "https://fetch.spec.whatwg.org/#body-mixin",
+          "title": "Body mixin",
+          "number": "5.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-body-json",
+        "href": "https://fetch.spec.whatwg.org/#dom-body-json",
+        "linkingText": [
+          "json()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Body"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "body-mixin",
+          "href": "https://fetch.spec.whatwg.org/#body-mixin",
+          "title": "Body mixin",
+          "number": "5.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-body-text",
+        "href": "https://fetch.spec.whatwg.org/#dom-body-text",
+        "linkingText": [
+          "text()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Body"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "body-mixin",
+          "href": "https://fetch.spec.whatwg.org/#body-mixin",
+          "title": "Body mixin",
+          "number": "5.3"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

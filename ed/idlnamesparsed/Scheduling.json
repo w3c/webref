@@ -1,0 +1,64 @@
+{
+  "name": "Scheduling",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Early detection of input events",
+      "url": "https://wicg.github.io/is-input-pending/"
+    },
+    "fragment": "[Exposed=Window] interface Scheduling {\n   boolean isInputPending(optional IsInputPendingOptions isInputPendingOptions = {});\n};",
+    "href": "https://wicg.github.io/is-input-pending/#dom-scheduling"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://wicg.github.io/is-input-pending/": [
+      {
+        "id": "dom-scheduling",
+        "href": "https://wicg.github.io/is-input-pending/#dom-scheduling",
+        "linkingText": [
+          "Scheduling"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-scheduling-interface",
+          "href": "https://wicg.github.io/is-input-pending/#the-scheduling-interface",
+          "title": "The Scheduling interface",
+          "number": "1.5"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-scheduling-isinputpending",
+        "href": "https://wicg.github.io/is-input-pending/#dom-scheduling-isinputpending",
+        "linkingText": [
+          "isInputPending()",
+          "isInputPending(isInputPendingOptions)"
+        ],
+        "localLinkingText": [
+          "Scheduling.isInputPending",
+          "Scheduling.isInputPending()",
+          "isInputPending"
+        ],
+        "type": "method",
+        "for": [
+          "Scheduling"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-isinputpending-method",
+          "href": "https://wicg.github.io/is-input-pending/#the-isinputpending-method",
+          "title": "The isInputPending Method",
+          "number": "1.5.1"
+        },
+        "definedIn": "heading"
+      }
+    ]
+  }
+}

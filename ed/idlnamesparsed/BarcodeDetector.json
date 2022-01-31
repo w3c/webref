@@ -1,0 +1,104 @@
+{
+  "name": "BarcodeDetector",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Accelerated Shape Detection in Images",
+      "url": "https://wicg.github.io/shape-detection-api/"
+    },
+    "fragment": "[Exposed=(Window,Worker),\n SecureContext]\ninterface BarcodeDetector {\n  constructor(optional BarcodeDetectorOptions barcodeDetectorOptions = {});\n  static Promise<sequence<BarcodeFormat>> getSupportedFormats();\n\n  Promise<sequence<DetectedBarcode>> detect(ImageBitmapSource image);\n};",
+    "href": "https://wicg.github.io/shape-detection-api/#barcodedetector"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://wicg.github.io/shape-detection-api/": [
+      {
+        "id": "barcodedetector",
+        "href": "https://wicg.github.io/shape-detection-api/#barcodedetector",
+        "linkingText": [
+          "BarcodeDetector"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "barcode-detection-api",
+          "href": "https://wicg.github.io/shape-detection-api/#barcode-detection-api",
+          "title": "Barcode Detection API",
+          "number": "2.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-barcodedetector-barcodedetector",
+        "href": "https://wicg.github.io/shape-detection-api/#dom-barcodedetector-barcodedetector",
+        "linkingText": [
+          "BarcodeDetector(barcodeDetectorOptions)",
+          "constructor(barcodeDetectorOptions)",
+          "BarcodeDetector()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "BarcodeDetector"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "barcode-detection-api",
+          "href": "https://wicg.github.io/shape-detection-api/#barcode-detection-api",
+          "title": "Barcode Detection API",
+          "number": "2.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-barcodedetector-getsupportedformats",
+        "href": "https://wicg.github.io/shape-detection-api/#dom-barcodedetector-getsupportedformats",
+        "linkingText": [
+          "getSupportedFormats()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "BarcodeDetector"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "barcode-detection-api",
+          "href": "https://wicg.github.io/shape-detection-api/#barcode-detection-api",
+          "title": "Barcode Detection API",
+          "number": "2.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-barcodedetector-detect",
+        "href": "https://wicg.github.io/shape-detection-api/#dom-barcodedetector-detect",
+        "linkingText": [
+          "detect(image)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "BarcodeDetector"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "barcode-detection-api",
+          "href": "https://wicg.github.io/shape-detection-api/#barcode-detection-api",
+          "title": "Barcode Detection API",
+          "number": "2.3"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

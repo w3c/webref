@@ -1,0 +1,323 @@
+{
+  "name": "File",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "File API",
+      "url": "https://www.w3.org/TR/FileAPI/"
+    },
+    "fragment": "[Exposed=(Window,Worker), Serializable]\ninterface File : Blob {\n  constructor(sequence<BlobPart> fileBits,\n              USVString fileName,\n              optional FilePropertyBag options = {});\n  readonly attribute DOMString name;\n  readonly attribute long long lastModified;\n};",
+    "href": "https://w3c.github.io/FileAPI/#dfn-file"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "File and Directory Entries API",
+        "url": "https://wicg.github.io/entries-api/"
+      },
+      "fragment": "partial interface File {\n    readonly attribute USVString webkitRelativePath;\n};"
+    }
+  ],
+  "inheritance": {
+    "name": "Blob",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "File API",
+        "url": "https://www.w3.org/TR/FileAPI/"
+      },
+      "fragment": "[Exposed=(Window,Worker), Serializable]\ninterface Blob {\n  constructor(optional sequence<BlobPart> blobParts,\n              optional BlobPropertyBag options = {});\n\n  readonly attribute unsigned long long size;\n  readonly attribute DOMString type;\n\n  // slice Blob into byte-ranged chunks\n  Blob slice(optional [Clamp] long long start,\n            optional [Clamp] long long end,\n            optional DOMString contentType);\n\n  // read from the Blob.\n  [NewObject] ReadableStream stream();\n  [NewObject] Promise<USVString> text();\n  [NewObject] Promise<ArrayBuffer> arrayBuffer();\n};",
+      "href": "https://w3c.github.io/FileAPI/#dfn-Blob"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/FileAPI/": [
+      {
+        "id": "dfn-file",
+        "href": "https://w3c.github.io/FileAPI/#dfn-file",
+        "linkingText": [
+          "File"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "file-section",
+          "href": "https://w3c.github.io/FileAPI/#file-section",
+          "title": "The File Interface",
+          "number": "4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-file-file",
+        "href": "https://w3c.github.io/FileAPI/#dom-file-file",
+        "linkingText": [
+          "File(fileBits, fileName, options)",
+          "constructor(fileBits, fileName, options)",
+          "File(fileBits, fileName)",
+          "constructor(fileBits, fileName)"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "File"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "file-section",
+          "href": "https://w3c.github.io/FileAPI/#file-section",
+          "title": "The File Interface",
+          "number": "4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dfn-name",
+        "href": "https://w3c.github.io/FileAPI/#dfn-name",
+        "linkingText": [
+          "name"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "File"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "file-attrs",
+          "href": "https://w3c.github.io/FileAPI/#file-attrs",
+          "title": "Attributes",
+          "number": "4.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dfn-lastModified",
+        "href": "https://w3c.github.io/FileAPI/#dfn-lastModified",
+        "linkingText": [
+          "lastModified"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "File"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "file-attrs",
+          "href": "https://w3c.github.io/FileAPI/#file-attrs",
+          "title": "Attributes",
+          "number": "4.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dfn-Blob",
+        "href": "https://w3c.github.io/FileAPI/#dfn-Blob",
+        "linkingText": [
+          "Blob"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "blob-section",
+          "href": "https://w3c.github.io/FileAPI/#blob-section",
+          "title": "The Blob Interface and Binary Data",
+          "number": "3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-blob-blob",
+        "href": "https://w3c.github.io/FileAPI/#dom-blob-blob",
+        "linkingText": [
+          "Blob(blobParts, options)",
+          "constructor(blobParts, options)",
+          "Blob(blobParts)",
+          "constructor(blobParts)",
+          "Blob()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "Blob"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "blob-section",
+          "href": "https://w3c.github.io/FileAPI/#blob-section",
+          "title": "The Blob Interface and Binary Data",
+          "number": "3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dfn-size",
+        "href": "https://w3c.github.io/FileAPI/#dfn-size",
+        "linkingText": [
+          "size"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Blob"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-blob",
+          "href": "https://w3c.github.io/FileAPI/#attributes-blob",
+          "title": "Attributes",
+          "number": "3.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dfn-type",
+        "href": "https://w3c.github.io/FileAPI/#dfn-type",
+        "linkingText": [
+          "type"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Blob"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-blob",
+          "href": "https://w3c.github.io/FileAPI/#attributes-blob",
+          "title": "Attributes",
+          "number": "3.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dfn-slice",
+        "href": "https://w3c.github.io/FileAPI/#dfn-slice",
+        "linkingText": [
+          "slice(start, end, contentType)",
+          "slice(start, end)",
+          "slice(start)",
+          "slice()",
+          "slice(start, end, contentType), slice(start, end), slice(start), slice()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Blob"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "slice-method-algo",
+          "href": "https://w3c.github.io/FileAPI/#slice-method-algo",
+          "title": "The slice() method",
+          "number": "3.3.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-blob-stream",
+        "href": "https://w3c.github.io/FileAPI/#dom-blob-stream",
+        "linkingText": [
+          "stream()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Blob"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "stream-method-algo",
+          "href": "https://w3c.github.io/FileAPI/#stream-method-algo",
+          "title": "The stream() method",
+          "number": "3.3.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-blob-text",
+        "href": "https://w3c.github.io/FileAPI/#dom-blob-text",
+        "linkingText": [
+          "text()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Blob"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "text-method-algo",
+          "href": "https://w3c.github.io/FileAPI/#text-method-algo",
+          "title": "The text() method",
+          "number": "3.3.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-blob-arraybuffer",
+        "href": "https://w3c.github.io/FileAPI/#dom-blob-arraybuffer",
+        "linkingText": [
+          "arrayBuffer()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Blob"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "arraybuffer-method-algo",
+          "href": "https://w3c.github.io/FileAPI/#arraybuffer-method-algo",
+          "title": "The arrayBuffer() method",
+          "number": "3.3.4"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://wicg.github.io/entries-api/": [
+      {
+        "id": "dom-file-webkitrelativepath",
+        "href": "https://wicg.github.io/entries-api/#dom-file-webkitrelativepath",
+        "linkingText": [
+          "webkitRelativePath"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "File"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "title",
+          "href": "https://wicg.github.io/entries-api/#title",
+          "title": "File and Directory Entries API"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

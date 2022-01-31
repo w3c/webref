@@ -1,0 +1,395 @@
+{
+  "name": "NodeFilter",
+  "type": "callback interface",
+  "defined": {
+    "spec": {
+      "title": "DOM Standard",
+      "url": "https://dom.spec.whatwg.org/"
+    },
+    "fragment": "[Exposed=Window]\ncallback interface NodeFilter {\n  // Constants for acceptNode()\n  const unsigned short FILTER_ACCEPT = 1;\n  const unsigned short FILTER_REJECT = 2;\n  const unsigned short FILTER_SKIP = 3;\n\n  // Constants for whatToShow\n  const unsigned long SHOW_ALL = 0xFFFFFFFF;\n  const unsigned long SHOW_ELEMENT = 0x1;\n  const unsigned long SHOW_ATTRIBUTE = 0x2;\n  const unsigned long SHOW_TEXT = 0x4;\n  const unsigned long SHOW_CDATA_SECTION = 0x8;\n  const unsigned long SHOW_ENTITY_REFERENCE = 0x10; // legacy\n  const unsigned long SHOW_ENTITY = 0x20; // legacy\n  const unsigned long SHOW_PROCESSING_INSTRUCTION = 0x40;\n  const unsigned long SHOW_COMMENT = 0x80;\n  const unsigned long SHOW_DOCUMENT = 0x100;\n  const unsigned long SHOW_DOCUMENT_TYPE = 0x200;\n  const unsigned long SHOW_DOCUMENT_FRAGMENT = 0x400;\n  const unsigned long SHOW_NOTATION = 0x800; // legacy\n\n  unsigned short acceptNode(Node node);\n};",
+    "href": "https://dom.spec.whatwg.org/#callbackdef-nodefilter"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "callbackdef-nodefilter",
+        "href": "https://dom.spec.whatwg.org/#callbackdef-nodefilter",
+        "linkingText": [
+          "NodeFilter"
+        ],
+        "localLinkingText": [],
+        "type": "callback",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-nodefilter",
+          "href": "https://dom.spec.whatwg.org/#interface-nodefilter",
+          "title": "Interface NodeFilter",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-nodefilter-filter_accept",
+        "href": "https://dom.spec.whatwg.org/#dom-nodefilter-filter_accept",
+        "linkingText": [
+          "FILTER_ACCEPT"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "NodeFilter"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-nodefilter",
+          "href": "https://dom.spec.whatwg.org/#interface-nodefilter",
+          "title": "Interface NodeFilter",
+          "number": "6.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-nodefilter-filter_reject",
+        "href": "https://dom.spec.whatwg.org/#dom-nodefilter-filter_reject",
+        "linkingText": [
+          "FILTER_REJECT"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "NodeFilter"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-nodefilter",
+          "href": "https://dom.spec.whatwg.org/#interface-nodefilter",
+          "title": "Interface NodeFilter",
+          "number": "6.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-nodefilter-filter_skip",
+        "href": "https://dom.spec.whatwg.org/#dom-nodefilter-filter_skip",
+        "linkingText": [
+          "FILTER_SKIP"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "NodeFilter"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-nodefilter",
+          "href": "https://dom.spec.whatwg.org/#interface-nodefilter",
+          "title": "Interface NodeFilter",
+          "number": "6.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-nodefilter-show_all",
+        "href": "https://dom.spec.whatwg.org/#dom-nodefilter-show_all",
+        "linkingText": [
+          "SHOW_ALL"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "NodeFilter"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-nodefilter",
+          "href": "https://dom.spec.whatwg.org/#interface-nodefilter",
+          "title": "Interface NodeFilter",
+          "number": "6.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-nodefilter-show_element",
+        "href": "https://dom.spec.whatwg.org/#dom-nodefilter-show_element",
+        "linkingText": [
+          "SHOW_ELEMENT"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "NodeFilter"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-nodefilter",
+          "href": "https://dom.spec.whatwg.org/#interface-nodefilter",
+          "title": "Interface NodeFilter",
+          "number": "6.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-nodefilter-show_attribute",
+        "href": "https://dom.spec.whatwg.org/#dom-nodefilter-show_attribute",
+        "linkingText": [
+          "SHOW_ATTRIBUTE"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "NodeFilter"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-nodefilter",
+          "href": "https://dom.spec.whatwg.org/#interface-nodefilter",
+          "title": "Interface NodeFilter",
+          "number": "6.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-nodefilter-show_text",
+        "href": "https://dom.spec.whatwg.org/#dom-nodefilter-show_text",
+        "linkingText": [
+          "SHOW_TEXT"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "NodeFilter"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-nodefilter",
+          "href": "https://dom.spec.whatwg.org/#interface-nodefilter",
+          "title": "Interface NodeFilter",
+          "number": "6.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-nodefilter-show_cdata_section",
+        "href": "https://dom.spec.whatwg.org/#dom-nodefilter-show_cdata_section",
+        "linkingText": [
+          "SHOW_CDATA_SECTION"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "NodeFilter"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-nodefilter",
+          "href": "https://dom.spec.whatwg.org/#interface-nodefilter",
+          "title": "Interface NodeFilter",
+          "number": "6.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-nodefilter-show_entity_reference",
+        "href": "https://dom.spec.whatwg.org/#dom-nodefilter-show_entity_reference",
+        "linkingText": [
+          "SHOW_ENTITY_REFERENCE"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "NodeFilter"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-nodefilter",
+          "href": "https://dom.spec.whatwg.org/#interface-nodefilter",
+          "title": "Interface NodeFilter",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-nodefilter-show_entity",
+        "href": "https://dom.spec.whatwg.org/#dom-nodefilter-show_entity",
+        "linkingText": [
+          "SHOW_ENTITY"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "NodeFilter"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-nodefilter",
+          "href": "https://dom.spec.whatwg.org/#interface-nodefilter",
+          "title": "Interface NodeFilter",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-nodefilter-show_processing_instruction",
+        "href": "https://dom.spec.whatwg.org/#dom-nodefilter-show_processing_instruction",
+        "linkingText": [
+          "SHOW_PROCESSING_INSTRUCTION"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "NodeFilter"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-nodefilter",
+          "href": "https://dom.spec.whatwg.org/#interface-nodefilter",
+          "title": "Interface NodeFilter",
+          "number": "6.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-nodefilter-show_comment",
+        "href": "https://dom.spec.whatwg.org/#dom-nodefilter-show_comment",
+        "linkingText": [
+          "SHOW_COMMENT"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "NodeFilter"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-nodefilter",
+          "href": "https://dom.spec.whatwg.org/#interface-nodefilter",
+          "title": "Interface NodeFilter",
+          "number": "6.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-nodefilter-show_document",
+        "href": "https://dom.spec.whatwg.org/#dom-nodefilter-show_document",
+        "linkingText": [
+          "SHOW_DOCUMENT"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "NodeFilter"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-nodefilter",
+          "href": "https://dom.spec.whatwg.org/#interface-nodefilter",
+          "title": "Interface NodeFilter",
+          "number": "6.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-nodefilter-show_document_type",
+        "href": "https://dom.spec.whatwg.org/#dom-nodefilter-show_document_type",
+        "linkingText": [
+          "SHOW_DOCUMENT_TYPE"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "NodeFilter"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-nodefilter",
+          "href": "https://dom.spec.whatwg.org/#interface-nodefilter",
+          "title": "Interface NodeFilter",
+          "number": "6.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-nodefilter-show_document_fragment",
+        "href": "https://dom.spec.whatwg.org/#dom-nodefilter-show_document_fragment",
+        "linkingText": [
+          "SHOW_DOCUMENT_FRAGMENT"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "NodeFilter"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-nodefilter",
+          "href": "https://dom.spec.whatwg.org/#interface-nodefilter",
+          "title": "Interface NodeFilter",
+          "number": "6.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-nodefilter-show_notation",
+        "href": "https://dom.spec.whatwg.org/#dom-nodefilter-show_notation",
+        "linkingText": [
+          "SHOW_NOTATION"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "NodeFilter"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-nodefilter",
+          "href": "https://dom.spec.whatwg.org/#interface-nodefilter",
+          "title": "Interface NodeFilter",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-nodefilter-acceptnode",
+        "href": "https://dom.spec.whatwg.org/#dom-nodefilter-acceptnode",
+        "linkingText": [
+          "acceptNode(node)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "NodeFilter"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-nodefilter",
+          "href": "https://dom.spec.whatwg.org/#interface-nodefilter",
+          "title": "Interface NodeFilter",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

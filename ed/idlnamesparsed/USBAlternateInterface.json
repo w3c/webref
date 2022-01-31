@@ -1,0 +1,186 @@
+{
+  "name": "USBAlternateInterface",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebUSB API",
+      "url": "https://wicg.github.io/webusb/"
+    },
+    "fragment": "[\n  Exposed=(DedicatedWorker,SharedWorker,Window),\n  SecureContext\n]\ninterface USBAlternateInterface {\n  constructor(USBInterface deviceInterface, octet alternateSetting);\n  readonly attribute octet alternateSetting;\n  readonly attribute octet interfaceClass;\n  readonly attribute octet interfaceSubclass;\n  readonly attribute octet interfaceProtocol;\n  readonly attribute DOMString? interfaceName;\n  readonly attribute FrozenArray<USBEndpoint> endpoints;\n};",
+    "href": "https://wicg.github.io/webusb/#usbalternateinterface"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://wicg.github.io/webusb/": [
+      {
+        "id": "usbalternateinterface",
+        "href": "https://wicg.github.io/webusb/#usbalternateinterface",
+        "linkingText": [
+          "USBAlternateInterface"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interfaces",
+          "href": "https://wicg.github.io/webusb/#interfaces",
+          "title": "Interfaces",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-usbalternateinterface-usbalternateinterface",
+        "href": "https://wicg.github.io/webusb/#dom-usbalternateinterface-usbalternateinterface",
+        "linkingText": [
+          "USBAlternateInterface(deviceInterface, alternateSetting)",
+          "constructor(deviceInterface, alternateSetting)"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "USBAlternateInterface"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interfaces",
+          "href": "https://wicg.github.io/webusb/#interfaces",
+          "title": "Interfaces",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-usbalternateinterface-alternatesetting",
+        "href": "https://wicg.github.io/webusb/#dom-usbalternateinterface-alternatesetting",
+        "linkingText": [
+          "alternateSetting"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "USBAlternateInterface"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interfaces",
+          "href": "https://wicg.github.io/webusb/#interfaces",
+          "title": "Interfaces",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-usbalternateinterface-interfaceclass",
+        "href": "https://wicg.github.io/webusb/#dom-usbalternateinterface-interfaceclass",
+        "linkingText": [
+          "interfaceClass"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "USBAlternateInterface"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interfaces",
+          "href": "https://wicg.github.io/webusb/#interfaces",
+          "title": "Interfaces",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-usbalternateinterface-interfacesubclass",
+        "href": "https://wicg.github.io/webusb/#dom-usbalternateinterface-interfacesubclass",
+        "linkingText": [
+          "interfaceSubclass"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "USBAlternateInterface"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interfaces",
+          "href": "https://wicg.github.io/webusb/#interfaces",
+          "title": "Interfaces",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-usbalternateinterface-interfaceprotocol",
+        "href": "https://wicg.github.io/webusb/#dom-usbalternateinterface-interfaceprotocol",
+        "linkingText": [
+          "interfaceProtocol"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "USBAlternateInterface"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interfaces",
+          "href": "https://wicg.github.io/webusb/#interfaces",
+          "title": "Interfaces",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-usbalternateinterface-interfacename",
+        "href": "https://wicg.github.io/webusb/#dom-usbalternateinterface-interfacename",
+        "linkingText": [
+          "interfaceName"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "USBAlternateInterface"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interfaces",
+          "href": "https://wicg.github.io/webusb/#interfaces",
+          "title": "Interfaces",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-usbalternateinterface-endpoints",
+        "href": "https://wicg.github.io/webusb/#dom-usbalternateinterface-endpoints",
+        "linkingText": [
+          "endpoints"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "USBAlternateInterface"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interfaces",
+          "href": "https://wicg.github.io/webusb/#interfaces",
+          "title": "Interfaces",
+          "number": "6.3"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

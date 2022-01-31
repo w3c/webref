@@ -1,0 +1,104 @@
+{
+  "name": "USBOutTransferResult",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebUSB API",
+      "url": "https://wicg.github.io/webusb/"
+    },
+    "fragment": "[\n  Exposed=(DedicatedWorker,SharedWorker,Window),\n  SecureContext\n]\ninterface USBOutTransferResult {\n  constructor(USBTransferStatus status, optional unsigned long bytesWritten = 0);\n  readonly attribute unsigned long bytesWritten;\n  readonly attribute USBTransferStatus status;\n};",
+    "href": "https://wicg.github.io/webusb/#usbouttransferresult"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://wicg.github.io/webusb/": [
+      {
+        "id": "usbouttransferresult",
+        "href": "https://wicg.github.io/webusb/#usbouttransferresult",
+        "linkingText": [
+          "USBOutTransferResult"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "transfers",
+          "href": "https://wicg.github.io/webusb/#transfers",
+          "title": "Transfers",
+          "number": "6.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-usbouttransferresult-usbouttransferresult",
+        "href": "https://wicg.github.io/webusb/#dom-usbouttransferresult-usbouttransferresult",
+        "linkingText": [
+          "USBOutTransferResult(status, bytesWritten)",
+          "constructor(status, bytesWritten)",
+          "USBOutTransferResult(status)",
+          "constructor(status)"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "USBOutTransferResult"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "transfers",
+          "href": "https://wicg.github.io/webusb/#transfers",
+          "title": "Transfers",
+          "number": "6.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-usbouttransferresult-byteswritten",
+        "href": "https://wicg.github.io/webusb/#dom-usbouttransferresult-byteswritten",
+        "linkingText": [
+          "bytesWritten"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "USBOutTransferResult"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "transfers",
+          "href": "https://wicg.github.io/webusb/#transfers",
+          "title": "Transfers",
+          "number": "6.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-usbouttransferresult-status",
+        "href": "https://wicg.github.io/webusb/#dom-usbouttransferresult-status",
+        "linkingText": [
+          "status"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "USBOutTransferResult"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "transfers",
+          "href": "https://wicg.github.io/webusb/#transfers",
+          "title": "Transfers",
+          "number": "6.1"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

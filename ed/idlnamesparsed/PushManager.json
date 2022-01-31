@@ -1,0 +1,138 @@
+{
+  "name": "PushManager",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Push API",
+      "url": "https://www.w3.org/TR/push-api/"
+    },
+    "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface PushManager {\n  [SameObject] static readonly attribute FrozenArray<DOMString> supportedContentEncodings;\n\n  Promise<PushSubscription> subscribe(optional PushSubscriptionOptionsInit options = {});\n  Promise<PushSubscription?> getSubscription();\n  Promise<PermissionState> permissionState(optional PushSubscriptionOptionsInit options = {});\n};",
+    "href": "https://w3c.github.io/push-api/#dom-pushmanager"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/push-api/": [
+      {
+        "id": "dom-pushmanager",
+        "href": "https://w3c.github.io/push-api/#dom-pushmanager",
+        "linkingText": [
+          "PushManager"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "pushmanager-interface",
+          "href": "https://w3c.github.io/push-api/#pushmanager-interface",
+          "title": "PushManager interface",
+          "number": "7"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-pushmanager-supportedcontentencodings",
+        "href": "https://w3c.github.io/push-api/#dom-pushmanager-supportedcontentencodings",
+        "linkingText": [
+          "supportedContentEncodings"
+        ],
+        "localLinkingText": [
+          "PushManager.supportedContentEncodings"
+        ],
+        "type": "attribute",
+        "for": [
+          "PushManager"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "pushmanager-interface",
+          "href": "https://w3c.github.io/push-api/#pushmanager-interface",
+          "title": "PushManager interface",
+          "number": "7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-pushmanager-subscribe",
+        "href": "https://w3c.github.io/push-api/#dom-pushmanager-subscribe",
+        "linkingText": [
+          "subscribe()",
+          "subscribe(options)"
+        ],
+        "localLinkingText": [
+          "PushManager.subscribe",
+          "PushManager.subscribe()",
+          "subscribe"
+        ],
+        "type": "method",
+        "for": [
+          "PushManager"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "pushmanager-interface",
+          "href": "https://w3c.github.io/push-api/#pushmanager-interface",
+          "title": "PushManager interface",
+          "number": "7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-pushmanager-getsubscription",
+        "href": "https://w3c.github.io/push-api/#dom-pushmanager-getsubscription",
+        "linkingText": [
+          "getSubscription()"
+        ],
+        "localLinkingText": [
+          "PushManager.getSubscription",
+          "PushManager.getSubscription()",
+          "getSubscription"
+        ],
+        "type": "method",
+        "for": [
+          "PushManager"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "pushmanager-interface",
+          "href": "https://w3c.github.io/push-api/#pushmanager-interface",
+          "title": "PushManager interface",
+          "number": "7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-pushmanager-permissionstate",
+        "href": "https://w3c.github.io/push-api/#dom-pushmanager-permissionstate",
+        "linkingText": [
+          "permissionState()",
+          "permissionState(options)"
+        ],
+        "localLinkingText": [
+          "PushManager.permissionState",
+          "PushManager.permissionState()",
+          "permissionState"
+        ],
+        "type": "method",
+        "for": [
+          "PushManager"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "pushmanager-interface",
+          "href": "https://w3c.github.io/push-api/#pushmanager-interface",
+          "title": "PushManager interface",
+          "number": "7"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

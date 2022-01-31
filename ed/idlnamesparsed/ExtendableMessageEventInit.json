@@ -1,0 +1,274 @@
+{
+  "name": "ExtendableMessageEventInit",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Service Workers Nightly",
+      "url": "https://www.w3.org/TR/service-workers-1/"
+    },
+    "fragment": "dictionary ExtendableMessageEventInit : ExtendableEventInit {\n  any data = null;\n  USVString origin = \"\";\n  DOMString lastEventId = \"\";\n  (Client or ServiceWorker or MessagePort)? source = null;\n  sequence<MessagePort> ports = [];\n};",
+    "href": "https://w3c.github.io/ServiceWorker/#dictdef-extendablemessageeventinit"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "ExtendableEventInit",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "Service Workers Nightly",
+        "url": "https://www.w3.org/TR/service-workers-1/"
+      },
+      "fragment": "dictionary ExtendableEventInit : EventInit {\n  // Defined for the forward compatibility across the derived events\n};",
+      "href": "https://w3c.github.io/ServiceWorker/#dictdef-extendableeventinit"
+    },
+    "extended": [],
+    "inheritance": {
+      "name": "EventInit",
+      "type": "dictionary",
+      "defined": {
+        "spec": {
+          "title": "DOM Standard",
+          "url": "https://dom.spec.whatwg.org/"
+        },
+        "fragment": "dictionary EventInit {\n  boolean bubbles = false;\n  boolean cancelable = false;\n  boolean composed = false;\n};",
+        "href": "https://dom.spec.whatwg.org/#dictdef-eventinit"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/service-workers-1/": [
+      {
+        "id": "dictdef-extendablemessageeventinit",
+        "href": "https://w3c.github.io/ServiceWorker/#dictdef-extendablemessageeventinit",
+        "linkingText": [
+          "ExtendableMessageEventInit"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "extendablemessageevent-interface",
+          "href": "https://w3c.github.io/ServiceWorker/#extendablemessageevent-interface",
+          "title": "ExtendableMessageEvent",
+          "number": "4.6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-extendablemessageeventinit-data",
+        "href": "https://w3c.github.io/ServiceWorker/#dom-extendablemessageeventinit-data",
+        "linkingText": [
+          "data"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "ExtendableMessageEventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "extendablemessageevent-interface",
+          "href": "https://w3c.github.io/ServiceWorker/#extendablemessageevent-interface",
+          "title": "ExtendableMessageEvent",
+          "number": "4.6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-extendablemessageeventinit-origin",
+        "href": "https://w3c.github.io/ServiceWorker/#dom-extendablemessageeventinit-origin",
+        "linkingText": [
+          "origin"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "ExtendableMessageEventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "extendablemessageevent-interface",
+          "href": "https://w3c.github.io/ServiceWorker/#extendablemessageevent-interface",
+          "title": "ExtendableMessageEvent",
+          "number": "4.6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-extendablemessageeventinit-lasteventid",
+        "href": "https://w3c.github.io/ServiceWorker/#dom-extendablemessageeventinit-lasteventid",
+        "linkingText": [
+          "lastEventId"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "ExtendableMessageEventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "extendablemessageevent-interface",
+          "href": "https://w3c.github.io/ServiceWorker/#extendablemessageevent-interface",
+          "title": "ExtendableMessageEvent",
+          "number": "4.6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-extendablemessageeventinit-source",
+        "href": "https://w3c.github.io/ServiceWorker/#dom-extendablemessageeventinit-source",
+        "linkingText": [
+          "source"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "ExtendableMessageEventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "extendablemessageevent-interface",
+          "href": "https://w3c.github.io/ServiceWorker/#extendablemessageevent-interface",
+          "title": "ExtendableMessageEvent",
+          "number": "4.6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-extendablemessageeventinit-ports",
+        "href": "https://w3c.github.io/ServiceWorker/#dom-extendablemessageeventinit-ports",
+        "linkingText": [
+          "ports"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "ExtendableMessageEventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "extendablemessageevent-interface",
+          "href": "https://w3c.github.io/ServiceWorker/#extendablemessageevent-interface",
+          "title": "ExtendableMessageEvent",
+          "number": "4.6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dictdef-extendableeventinit",
+        "href": "https://w3c.github.io/ServiceWorker/#dictdef-extendableeventinit",
+        "linkingText": [
+          "ExtendableEventInit"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "extendableevent-interface",
+          "href": "https://w3c.github.io/ServiceWorker/#extendableevent-interface",
+          "title": "ExtendableEvent",
+          "number": "4.4"
+        },
+        "definedIn": "pre"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "dictdef-eventinit",
+        "href": "https://dom.spec.whatwg.org/#dictdef-eventinit",
+        "linkingText": [
+          "EventInit"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventinit-bubbles",
+        "href": "https://dom.spec.whatwg.org/#dom-eventinit-bubbles",
+        "linkingText": [
+          "bubbles"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventinit-cancelable",
+        "href": "https://dom.spec.whatwg.org/#dom-eventinit-cancelable",
+        "linkingText": [
+          "cancelable"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventinit-composed",
+        "href": "https://dom.spec.whatwg.org/#dom-eventinit-composed",
+        "linkingText": [
+          "composed"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

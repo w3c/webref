@@ -1,0 +1,59 @@
+{
+  "name": "BluetoothPermissionStorage",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Web Bluetooth",
+      "url": "https://webbluetoothcg.github.io/web-bluetooth/"
+    },
+    "fragment": "dictionary BluetoothPermissionStorage {\n  required sequence<AllowedBluetoothDevice> allowedDevices;\n};",
+    "href": "https://webbluetoothcg.github.io/web-bluetooth/#dictdef-bluetoothpermissionstorage"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://webbluetoothcg.github.io/web-bluetooth/": [
+      {
+        "id": "dictdef-bluetoothpermissionstorage",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#dictdef-bluetoothpermissionstorage",
+        "linkingText": [
+          "BluetoothPermissionStorage"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "permission-api-integration",
+          "href": "https://webbluetoothcg.github.io/web-bluetooth/#permission-api-integration",
+          "title": "Permission API Integration",
+          "number": "3.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-bluetoothpermissionstorage-alloweddevices",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothpermissionstorage-alloweddevices",
+        "linkingText": [
+          "allowedDevices"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "BluetoothPermissionStorage"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "permission-api-integration",
+          "href": "https://webbluetoothcg.github.io/web-bluetooth/#permission-api-integration",
+          "title": "Permission API Integration",
+          "number": "3.1"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

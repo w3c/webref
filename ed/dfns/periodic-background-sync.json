@@ -1,0 +1,822 @@
+{
+  "spec": {
+    "title": "Web Periodic Background Synchronization",
+    "url": "https://wicg.github.io/periodic-background-sync/"
+  },
+  "dfns": [
+    {
+      "id": "periodicsync-event-in-the-background",
+      "href": "https://wicg.github.io/periodic-background-sync/#periodicsync-event-in-the-background",
+      "linkingText": [
+        "in the background"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "periodicsync event"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "concepts",
+        "href": "https://wicg.github.io/periodic-background-sync/#concepts",
+        "title": "Concepts",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "active-periodic-sync-registrations",
+      "href": "https://wicg.github.io/periodic-background-sync/#active-periodic-sync-registrations",
+      "linkingText": [
+        "Active periodic sync registrations"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "extensions-to-service-worker-registration",
+        "href": "https://wicg.github.io/periodic-background-sync/#extensions-to-service-worker-registration",
+        "title": "Extensions to service worker registration",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "periodic-sync-processing-queue",
+      "href": "https://wicg.github.io/periodic-background-sync/#periodic-sync-processing-queue",
+      "linkingText": [
+        "Periodic sync processing queue"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "extensions-to-service-worker-registration",
+        "href": "https://wicg.github.io/periodic-background-sync/#extensions-to-service-worker-registration",
+        "title": "Extensions to service worker registration",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "periodic-sync-registration",
+      "href": "https://wicg.github.io/periodic-background-sync/#periodic-sync-registration",
+      "linkingText": [
+        "periodic sync registration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "periodic-sync-registration-construct",
+        "href": "https://wicg.github.io/periodic-background-sync/#periodic-sync-registration-construct",
+        "title": "Periodic sync registration",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "periodic-sync-registration-service-worker-registration",
+      "href": "https://wicg.github.io/periodic-background-sync/#periodic-sync-registration-service-worker-registration",
+      "linkingText": [
+        "service worker registration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "periodic sync registration"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "periodic-sync-registration-construct",
+        "href": "https://wicg.github.io/periodic-background-sync/#periodic-sync-registration-construct",
+        "title": "Periodic sync registration",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "periodic-sync-registration-tag",
+      "href": "https://wicg.github.io/periodic-background-sync/#periodic-sync-registration-tag",
+      "linkingText": [
+        "tag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "periodic sync registration"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "periodic-sync-registration-construct",
+        "href": "https://wicg.github.io/periodic-background-sync/#periodic-sync-registration-construct",
+        "title": "Periodic sync registration",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "periodic-sync-registration-minimum-interval",
+      "href": "https://wicg.github.io/periodic-background-sync/#periodic-sync-registration-minimum-interval",
+      "linkingText": [
+        "minimum interval"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "periodic sync registration"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "periodic-sync-registration-construct",
+        "href": "https://wicg.github.io/periodic-background-sync/#periodic-sync-registration-construct",
+        "title": "Periodic sync registration",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "periodic-sync-registration-anchor-time",
+      "href": "https://wicg.github.io/periodic-background-sync/#periodic-sync-registration-anchor-time",
+      "linkingText": [
+        "anchor time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "periodic sync registration"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "periodic-sync-registration-construct",
+        "href": "https://wicg.github.io/periodic-background-sync/#periodic-sync-registration-construct",
+        "title": "Periodic sync registration",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "periodic-sync-registration-state",
+      "href": "https://wicg.github.io/periodic-background-sync/#periodic-sync-registration-state",
+      "linkingText": [
+        "state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "periodic sync registration"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "periodic-sync-registration-construct",
+        "href": "https://wicg.github.io/periodic-background-sync/#periodic-sync-registration-construct",
+        "title": "Periodic sync registration",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "periodic-sync-scheduler",
+      "href": "https://wicg.github.io/periodic-background-sync/#periodic-sync-scheduler",
+      "linkingText": [
+        "Periodic Sync Scheduler"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "periodic-sync-scheduler-construct",
+        "href": "https://wicg.github.io/periodic-background-sync/#periodic-sync-scheduler-construct",
+        "title": "Periodic Sync Scheduler",
+        "number": "4.2"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "periodic-sync-scheduler-time-of-last-fire",
+      "href": "https://wicg.github.io/periodic-background-sync/#periodic-sync-scheduler-time-of-last-fire",
+      "linkingText": [
+        "time of last fire"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "periodic sync scheduler"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "periodic-sync-scheduler-construct",
+        "href": "https://wicg.github.io/periodic-background-sync/#periodic-sync-scheduler-construct",
+        "title": "Periodic Sync Scheduler",
+        "number": "4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "effective-minimum-sync-interval-for-origin",
+      "href": "https://wicg.github.io/periodic-background-sync/#effective-minimum-sync-interval-for-origin",
+      "linkingText": [
+        "effective minimum sync interval for origin"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "periodic-sync-scheduler-construct",
+        "href": "https://wicg.github.io/periodic-background-sync/#periodic-sync-scheduler-construct",
+        "title": "Periodic Sync Scheduler",
+        "number": "4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "minimum-periodic-sync-interval-for-any-origin",
+      "href": "https://wicg.github.io/periodic-background-sync/#minimum-periodic-sync-interval-for-any-origin",
+      "linkingText": [
+        "minimum periodic sync interval for any origin"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "constants",
+        "href": "https://wicg.github.io/periodic-background-sync/#constants",
+        "title": "Constants",
+        "number": "4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "minimum-periodic-sync-interval-across-origins",
+      "href": "https://wicg.github.io/periodic-background-sync/#minimum-periodic-sync-interval-across-origins",
+      "linkingText": [
+        "minimum periodic sync interval across origins"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "constants",
+        "href": "https://wicg.github.io/periodic-background-sync/#constants",
+        "title": "Constants",
+        "number": "4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "maximum-number-of-retries",
+      "href": "https://wicg.github.io/periodic-background-sync/#maximum-number-of-retries",
+      "linkingText": [
+        "maximum number of retries"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "constants",
+        "href": "https://wicg.github.io/periodic-background-sync/#constants",
+        "title": "Constants",
+        "number": "4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "process-periodic-sync-registrations",
+      "href": "https://wicg.github.io/periodic-background-sync/#process-periodic-sync-registrations",
+      "linkingText": [
+        "Process periodic sync registrations"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "process-periodic-sync-registrations-algorithm",
+        "href": "https://wicg.github.io/periodic-background-sync/#process-periodic-sync-registrations-algorithm",
+        "title": "Process periodic sync registrations",
+        "number": "7.1"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "respond-to-permission-revocation",
+      "href": "https://wicg.github.io/periodic-background-sync/#respond-to-permission-revocation",
+      "linkingText": [
+        "Respond to permission revocation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "responding-to-permission-revocation-algorithm",
+        "href": "https://wicg.github.io/periodic-background-sync/#responding-to-permission-revocation-algorithm",
+        "title": "Respond to permission revocation",
+        "number": "7.2"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-serviceworkerglobalscope-onperiodicsync",
+      "href": "https://wicg.github.io/periodic-background-sync/#dom-serviceworkerglobalscope-onperiodicsync",
+      "linkingText": [
+        "onperiodicsync"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ServiceWorkerGlobalScope"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "extensions-to-serviceworkerglobalscope",
+        "href": "https://wicg.github.io/periodic-background-sync/#extensions-to-serviceworkerglobalscope",
+        "title": "Extensions to the ServiceWorkerGlobalScope interface",
+        "number": "8.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "serviceworkerregistration-periodic-sync-manager",
+      "href": "https://wicg.github.io/periodic-background-sync/#serviceworkerregistration-periodic-sync-manager",
+      "linkingText": [
+        "periodic sync manager"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ServiceWorkerRegistration"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "extensions-to-serviceworkerregistration",
+        "href": "https://wicg.github.io/periodic-background-sync/#extensions-to-serviceworkerregistration",
+        "title": "Extensions to the ServiceWorkerRegistration interface",
+        "number": "8.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-serviceworkerregistration-periodicsync",
+      "href": "https://wicg.github.io/periodic-background-sync/#dom-serviceworkerregistration-periodicsync",
+      "linkingText": [
+        "periodicSync"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ServiceWorkerRegistration"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "extensions-to-serviceworkerregistration",
+        "href": "https://wicg.github.io/periodic-background-sync/#extensions-to-serviceworkerregistration",
+        "title": "Extensions to the ServiceWorkerRegistration interface",
+        "number": "8.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "periodicsyncmanager",
+      "href": "https://wicg.github.io/periodic-background-sync/#periodicsyncmanager",
+      "linkingText": [
+        "PeriodicSyncManager"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "periodicsyncmanager-interface",
+        "href": "https://wicg.github.io/periodic-background-sync/#periodicsyncmanager-interface",
+        "title": "PeriodicSyncManager interface",
+        "number": "8.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-periodicsyncmanager-register-tag-options-tag",
+      "href": "https://wicg.github.io/periodic-background-sync/#dom-periodicsyncmanager-register-tag-options-tag",
+      "linkingText": [
+        "tag"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "PeriodicSyncManager/register(tag, options)",
+        "PeriodicSyncManager/register(tag)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "periodicsyncmanager-interface",
+        "href": "https://wicg.github.io/periodic-background-sync/#periodicsyncmanager-interface",
+        "title": "PeriodicSyncManager interface",
+        "number": "8.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-periodicsyncmanager-register-tag-options-options",
+      "href": "https://wicg.github.io/periodic-background-sync/#dom-periodicsyncmanager-register-tag-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "PeriodicSyncManager/register(tag, options)",
+        "PeriodicSyncManager/register(tag)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "periodicsyncmanager-interface",
+        "href": "https://wicg.github.io/periodic-background-sync/#periodicsyncmanager-interface",
+        "title": "PeriodicSyncManager interface",
+        "number": "8.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-periodicsyncmanager-unregister-tag-tag",
+      "href": "https://wicg.github.io/periodic-background-sync/#dom-periodicsyncmanager-unregister-tag-tag",
+      "linkingText": [
+        "tag"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "PeriodicSyncManager/unregister(tag)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "periodicsyncmanager-interface",
+        "href": "https://wicg.github.io/periodic-background-sync/#periodicsyncmanager-interface",
+        "title": "PeriodicSyncManager interface",
+        "number": "8.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-backgroundsyncoptions",
+      "href": "https://wicg.github.io/periodic-background-sync/#dictdef-backgroundsyncoptions",
+      "linkingText": [
+        "BackgroundSyncOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "periodicsyncmanager-interface",
+        "href": "https://wicg.github.io/periodic-background-sync/#periodicsyncmanager-interface",
+        "title": "PeriodicSyncManager interface",
+        "number": "8.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-backgroundsyncoptions-mininterval",
+      "href": "https://wicg.github.io/periodic-background-sync/#dom-backgroundsyncoptions-mininterval",
+      "linkingText": [
+        "minInterval"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "BackgroundSyncOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "periodicsyncmanager-interface",
+        "href": "https://wicg.github.io/periodic-background-sync/#periodicsyncmanager-interface",
+        "title": "PeriodicSyncManager interface",
+        "number": "8.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "periodicsyncmanager-service-worker-registration",
+      "href": "https://wicg.github.io/periodic-background-sync/#periodicsyncmanager-service-worker-registration",
+      "linkingText": [
+        "service worker registration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PeriodicSyncManager"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "periodicsyncmanager-interface",
+        "href": "https://wicg.github.io/periodic-background-sync/#periodicsyncmanager-interface",
+        "title": "PeriodicSyncManager interface",
+        "number": "8.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-periodicsyncmanager-register",
+      "href": "https://wicg.github.io/periodic-background-sync/#dom-periodicsyncmanager-register",
+      "linkingText": [
+        "register(tag, options)",
+        "register(tag)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "PeriodicSyncManager"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "periodicsyncmanager-interface",
+        "href": "https://wicg.github.io/periodic-background-sync/#periodicsyncmanager-interface",
+        "title": "PeriodicSyncManager interface",
+        "number": "8.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-periodicsyncmanager-gettags",
+      "href": "https://wicg.github.io/periodic-background-sync/#dom-periodicsyncmanager-gettags",
+      "linkingText": [
+        "getTags()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "PeriodicSyncManager"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "periodicsyncmanager-interface",
+        "href": "https://wicg.github.io/periodic-background-sync/#periodicsyncmanager-interface",
+        "title": "PeriodicSyncManager interface",
+        "number": "8.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-periodicsyncmanager-unregister",
+      "href": "https://wicg.github.io/periodic-background-sync/#dom-periodicsyncmanager-unregister",
+      "linkingText": [
+        "unregister(tag)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "PeriodicSyncManager"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "periodicsyncmanager-interface",
+        "href": "https://wicg.github.io/periodic-background-sync/#periodicsyncmanager-interface",
+        "title": "PeriodicSyncManager interface",
+        "number": "8.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "periodicsync-event",
+      "href": "https://wicg.github.io/periodic-background-sync/#periodicsync-event",
+      "linkingText": [
+        "periodicsync event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "periodicsync-event-interface",
+        "href": "https://wicg.github.io/periodic-background-sync/#periodicsync-event-interface",
+        "title": "The periodicsync event",
+        "number": "8.4"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dictdef-periodicsynceventinit",
+      "href": "https://wicg.github.io/periodic-background-sync/#dictdef-periodicsynceventinit",
+      "linkingText": [
+        "PeriodicSyncEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "periodicsync-event-interface",
+        "href": "https://wicg.github.io/periodic-background-sync/#periodicsync-event-interface",
+        "title": "The periodicsync event",
+        "number": "8.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-periodicsynceventinit-tag",
+      "href": "https://wicg.github.io/periodic-background-sync/#dom-periodicsynceventinit-tag",
+      "linkingText": [
+        "tag"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PeriodicSyncEventInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "periodicsync-event-interface",
+        "href": "https://wicg.github.io/periodic-background-sync/#periodicsync-event-interface",
+        "title": "The periodicsync event",
+        "number": "8.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "periodicsyncevent",
+      "href": "https://wicg.github.io/periodic-background-sync/#periodicsyncevent",
+      "linkingText": [
+        "PeriodicSyncEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "periodicsync-event-interface",
+        "href": "https://wicg.github.io/periodic-background-sync/#periodicsync-event-interface",
+        "title": "The periodicsync event",
+        "number": "8.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-periodicsyncevent-periodicsyncevent",
+      "href": "https://wicg.github.io/periodic-background-sync/#dom-periodicsyncevent-periodicsyncevent",
+      "linkingText": [
+        "PeriodicSyncEvent(type, init)",
+        "constructor(type, init)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "PeriodicSyncEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "periodicsync-event-interface",
+        "href": "https://wicg.github.io/periodic-background-sync/#periodicsync-event-interface",
+        "title": "The periodicsync event",
+        "number": "8.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-periodicsyncevent-periodicsyncevent-type-init-type",
+      "href": "https://wicg.github.io/periodic-background-sync/#dom-periodicsyncevent-periodicsyncevent-type-init-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "PeriodicSyncEvent/PeriodicSyncEvent(type, init)",
+        "PeriodicSyncEvent/constructor(type, init)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "periodicsync-event-interface",
+        "href": "https://wicg.github.io/periodic-background-sync/#periodicsync-event-interface",
+        "title": "The periodicsync event",
+        "number": "8.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-periodicsyncevent-periodicsyncevent-type-init-init",
+      "href": "https://wicg.github.io/periodic-background-sync/#dom-periodicsyncevent-periodicsyncevent-type-init-init",
+      "linkingText": [
+        "init"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "PeriodicSyncEvent/PeriodicSyncEvent(type, init)",
+        "PeriodicSyncEvent/constructor(type, init)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "periodicsync-event-interface",
+        "href": "https://wicg.github.io/periodic-background-sync/#periodicsync-event-interface",
+        "title": "The periodicsync event",
+        "number": "8.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "periodicsyncevent-tag",
+      "href": "https://wicg.github.io/periodic-background-sync/#periodicsyncevent-tag",
+      "linkingText": [
+        "tag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PeriodicSyncEvent"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "periodicsync-event-interface",
+        "href": "https://wicg.github.io/periodic-background-sync/#periodicsync-event-interface",
+        "title": "The periodicsync event",
+        "number": "8.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-periodicsyncevent-tag",
+      "href": "https://wicg.github.io/periodic-background-sync/#dom-periodicsyncevent-tag",
+      "linkingText": [
+        "tag"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PeriodicSyncEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "periodicsync-event-interface",
+        "href": "https://wicg.github.io/periodic-background-sync/#periodicsync-event-interface",
+        "title": "The periodicsync event",
+        "number": "8.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "fire-a-periodicsync-event",
+      "href": "https://wicg.github.io/periodic-background-sync/#fire-a-periodicsync-event",
+      "linkingText": [
+        "fire a periodicsync event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "firing-a-periodicsync-event",
+        "href": "https://wicg.github.io/periodic-background-sync/#firing-a-periodicsync-event",
+        "title": "Fire a periodicsync event",
+        "number": "8.4.1"
+      },
+      "definedIn": "prose"
+    }
+  ]
+}

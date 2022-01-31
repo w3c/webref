@@ -1,0 +1,107 @@
+{
+  "name": "PerformanceServerTiming",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Server Timing",
+      "url": "https://www.w3.org/TR/server-timing/"
+    },
+    "fragment": "[Exposed=(Window,Worker)]\ninterface PerformanceServerTiming {\n  readonly attribute DOMString name;\n  readonly attribute DOMHighResTimeStamp duration;\n  readonly attribute DOMString description;\n  [Default] object toJSON();\n};",
+    "href": "https://w3c.github.io/server-timing/#dom-performanceservertiming"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/server-timing/": [
+      {
+        "id": "dom-performanceservertiming",
+        "href": "https://w3c.github.io/server-timing/#dom-performanceservertiming",
+        "linkingText": [
+          "PerformanceServerTiming"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-performanceservertiming-interface",
+          "href": "https://w3c.github.io/server-timing/#the-performanceservertiming-interface",
+          "title": "The PerformanceServerTiming Interface",
+          "number": "4"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-performanceservertiming-name",
+        "href": "https://w3c.github.io/server-timing/#dom-performanceservertiming-name",
+        "linkingText": [
+          "name"
+        ],
+        "localLinkingText": [
+          "PerformanceServerTiming.name"
+        ],
+        "type": "attribute",
+        "for": [
+          "PerformanceServerTiming"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "name-attribute",
+          "href": "https://w3c.github.io/server-timing/#name-attribute",
+          "title": "name attribute",
+          "number": "4.1"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-performanceservertiming-duration",
+        "href": "https://w3c.github.io/server-timing/#dom-performanceservertiming-duration",
+        "linkingText": [
+          "duration"
+        ],
+        "localLinkingText": [
+          "PerformanceServerTiming.duration"
+        ],
+        "type": "attribute",
+        "for": [
+          "PerformanceServerTiming"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "duration-attribute",
+          "href": "https://w3c.github.io/server-timing/#duration-attribute",
+          "title": "duration attribute",
+          "number": "4.2"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-performanceservertiming-description",
+        "href": "https://w3c.github.io/server-timing/#dom-performanceservertiming-description",
+        "linkingText": [
+          "description"
+        ],
+        "localLinkingText": [
+          "PerformanceServerTiming.description"
+        ],
+        "type": "attribute",
+        "for": [
+          "PerformanceServerTiming"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "description-attribute",
+          "href": "https://w3c.github.io/server-timing/#description-attribute",
+          "title": "description attribute",
+          "number": "4.3"
+        },
+        "definedIn": "heading"
+      }
+    ]
+  }
+}

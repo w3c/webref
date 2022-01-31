@@ -1,0 +1,612 @@
+{
+  "name": "RTCIceTransport",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
+      "url": "https://www.w3.org/TR/webrtc/"
+    },
+    "fragment": "[Exposed=Window]\ninterface RTCIceTransport : EventTarget {\n  readonly attribute RTCIceRole role;\n  readonly attribute RTCIceComponent component;\n  readonly attribute RTCIceTransportState state;\n  readonly attribute RTCIceGathererState gatheringState;\n  sequence<RTCIceCandidate> getLocalCandidates();\n  sequence<RTCIceCandidate> getRemoteCandidates();\n  RTCIceCandidatePair? getSelectedCandidatePair();\n  RTCIceParameters? getLocalParameters();\n  RTCIceParameters? getRemoteParameters();\n  attribute EventHandler onstatechange;\n  attribute EventHandler ongatheringstatechange;\n  attribute EventHandler onselectedcandidatepairchange;\n};",
+    "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicetransport"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "IceTransport Extensions for WebRTC",
+        "url": "https://w3c.github.io/webrtc-ice/"
+      },
+      "fragment": "[Exposed=Window]\npartial interface RTCIceTransport {\n    constructor();\n    undefined                      gather (optional RTCIceGatherOptions options = {});\n    undefined                      start (optional RTCIceParameters remoteParameters = {}, optional RTCIceRole role = \"controlled\");\n    undefined                      stop ();\n    undefined                      addRemoteCandidate (optional RTCIceCandidateInit remoteCandidate = {});\n                    attribute EventHandler        onerror;\n                    attribute EventHandler        onicecandidate;\n};"
+    }
+  ],
+  "inheritance": {
+    "name": "EventTarget",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=*]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+      "href": "https://dom.spec.whatwg.org/#eventtarget"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webrtc/": [
+      {
+        "id": "dom-rtcicetransport",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicetransport",
+        "linkingText": [
+          "RTCIceTransport"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "rtcicetransport",
+          "href": "https://w3c.github.io/webrtc-pc/#rtcicetransport",
+          "title": "RTCIceTransport Interface",
+          "number": "5.6"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-icetransport-role",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-icetransport-role",
+        "linkingText": [
+          "role"
+        ],
+        "localLinkingText": [
+          "RTCIceTransport.role"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCIceTransport"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-13",
+          "href": "https://w3c.github.io/webrtc-pc/#attributes-13",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-icetransport-component",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-icetransport-component",
+        "linkingText": [
+          "component"
+        ],
+        "localLinkingText": [
+          "RTCIceTransport.component"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCIceTransport"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-13",
+          "href": "https://w3c.github.io/webrtc-pc/#attributes-13",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-icetransport-state",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-icetransport-state",
+        "linkingText": [
+          "state"
+        ],
+        "localLinkingText": [
+          "RTCIceTransport.state"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCIceTransport"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-13",
+          "href": "https://w3c.github.io/webrtc-pc/#attributes-13",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-icetransport-gatheringstate",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-icetransport-gatheringstate",
+        "linkingText": [
+          "gatheringState"
+        ],
+        "localLinkingText": [
+          "RTCIceTransport.gatheringState"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCIceTransport"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-13",
+          "href": "https://w3c.github.io/webrtc-pc/#attributes-13",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcicetransport-getlocalcandidates",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicetransport-getlocalcandidates",
+        "linkingText": [
+          "getLocalCandidates()"
+        ],
+        "localLinkingText": [
+          "RTCIceTransport.getLocalCandidates",
+          "RTCIceTransport.getLocalCandidates()",
+          "getLocalCandidates"
+        ],
+        "type": "method",
+        "for": [
+          "RTCIceTransport"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "methods-10",
+          "href": "https://w3c.github.io/webrtc-pc/#methods-10",
+          "title": "Methods"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcicetransport-getremotecandidates",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicetransport-getremotecandidates",
+        "linkingText": [
+          "getRemoteCandidates()"
+        ],
+        "localLinkingText": [
+          "RTCIceTransport.getRemoteCandidates",
+          "RTCIceTransport.getRemoteCandidates()",
+          "getRemoteCandidates"
+        ],
+        "type": "method",
+        "for": [
+          "RTCIceTransport"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "methods-10",
+          "href": "https://w3c.github.io/webrtc-pc/#methods-10",
+          "title": "Methods"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcicetransport-getselectedcandidatepair",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicetransport-getselectedcandidatepair",
+        "linkingText": [
+          "getSelectedCandidatePair()"
+        ],
+        "localLinkingText": [
+          "RTCIceTransport.getSelectedCandidatePair",
+          "RTCIceTransport.getSelectedCandidatePair()",
+          "getSelectedCandidatePair"
+        ],
+        "type": "method",
+        "for": [
+          "RTCIceTransport"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "methods-10",
+          "href": "https://w3c.github.io/webrtc-pc/#methods-10",
+          "title": "Methods"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcicetransport-getlocalparameters",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicetransport-getlocalparameters",
+        "linkingText": [
+          "getLocalParameters()"
+        ],
+        "localLinkingText": [
+          "RTCIceTransport.getLocalParameters",
+          "RTCIceTransport.getLocalParameters()",
+          "getLocalParameters"
+        ],
+        "type": "method",
+        "for": [
+          "RTCIceTransport"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "methods-10",
+          "href": "https://w3c.github.io/webrtc-pc/#methods-10",
+          "title": "Methods"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcicetransport-getremoteparameters",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicetransport-getremoteparameters",
+        "linkingText": [
+          "getRemoteParameters()"
+        ],
+        "localLinkingText": [
+          "RTCIceTransport.getRemoteParameters",
+          "RTCIceTransport.getRemoteParameters()",
+          "getRemoteParameters"
+        ],
+        "type": "method",
+        "for": [
+          "RTCIceTransport"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "methods-10",
+          "href": "https://w3c.github.io/webrtc-pc/#methods-10",
+          "title": "Methods"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcicetransport-onstatechange",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicetransport-onstatechange",
+        "linkingText": [
+          "onstatechange"
+        ],
+        "localLinkingText": [
+          "RTCIceTransport.onstatechange"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCIceTransport"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-13",
+          "href": "https://w3c.github.io/webrtc-pc/#attributes-13",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcicetransport-ongatheringstatechange",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicetransport-ongatheringstatechange",
+        "linkingText": [
+          "ongatheringstatechange"
+        ],
+        "localLinkingText": [
+          "RTCIceTransport.ongatheringstatechange"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCIceTransport"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-13",
+          "href": "https://w3c.github.io/webrtc-pc/#attributes-13",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcicetransport-onselectedcandidatepairchange",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicetransport-onselectedcandidatepairchange",
+        "linkingText": [
+          "onselectedcandidatepairchange"
+        ],
+        "localLinkingText": [
+          "RTCIceTransport.onselectedcandidatepairchange"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCIceTransport"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-13",
+          "href": "https://w3c.github.io/webrtc-pc/#attributes-13",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      }
+    ],
+    "https://w3c.github.io/webrtc-ice/": [
+      {
+        "id": "dom-rtcicetransport-constructor",
+        "href": "https://w3c.github.io/webrtc-ice/#dom-rtcicetransport-constructor",
+        "linkingText": [
+          "constructor()"
+        ],
+        "localLinkingText": [
+          "RTCIceTransport.constructor",
+          "RTCIceTransport.constructor()",
+          "constructor"
+        ],
+        "type": "constructor",
+        "for": [
+          "RTCIceTransport"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "constructors",
+          "href": "https://w3c.github.io/webrtc-ice/#constructors",
+          "title": "Constructors"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcicetransport-gather",
+        "href": "https://w3c.github.io/webrtc-ice/#dom-rtcicetransport-gather",
+        "linkingText": [
+          "gather()",
+          "gather(options)"
+        ],
+        "localLinkingText": [
+          "RTCIceTransport.gather",
+          "RTCIceTransport.gather()",
+          "gather"
+        ],
+        "type": "method",
+        "for": [
+          "RTCIceTransport"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "methods",
+          "href": "https://w3c.github.io/webrtc-ice/#methods",
+          "title": "Methods"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcicetransport-start",
+        "href": "https://w3c.github.io/webrtc-ice/#dom-rtcicetransport-start",
+        "linkingText": [
+          "start()",
+          "start(remoteParameters)",
+          "start(remoteParameters, role)"
+        ],
+        "localLinkingText": [
+          "RTCIceTransport.start",
+          "RTCIceTransport.start()",
+          "start"
+        ],
+        "type": "method",
+        "for": [
+          "RTCIceTransport"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "methods",
+          "href": "https://w3c.github.io/webrtc-ice/#methods",
+          "title": "Methods"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcicetransport-stop",
+        "href": "https://w3c.github.io/webrtc-ice/#dom-rtcicetransport-stop",
+        "linkingText": [
+          "stop()"
+        ],
+        "localLinkingText": [
+          "RTCIceTransport.stop",
+          "RTCIceTransport.stop()",
+          "stop"
+        ],
+        "type": "method",
+        "for": [
+          "RTCIceTransport"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "methods",
+          "href": "https://w3c.github.io/webrtc-ice/#methods",
+          "title": "Methods"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcicetransport-addremotecandidate",
+        "href": "https://w3c.github.io/webrtc-ice/#dom-rtcicetransport-addremotecandidate",
+        "linkingText": [
+          "addRemoteCandidate()",
+          "addRemoteCandidate(remoteCandidate)"
+        ],
+        "localLinkingText": [
+          "RTCIceTransport.addRemoteCandidate",
+          "RTCIceTransport.addRemoteCandidate()",
+          "addRemoteCandidate"
+        ],
+        "type": "method",
+        "for": [
+          "RTCIceTransport"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "methods",
+          "href": "https://w3c.github.io/webrtc-ice/#methods",
+          "title": "Methods"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcicetransport-onerror",
+        "href": "https://w3c.github.io/webrtc-ice/#dom-rtcicetransport-onerror",
+        "linkingText": [
+          "onerror"
+        ],
+        "localLinkingText": [
+          "RTCIceTransport.onerror"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCIceTransport"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes",
+          "href": "https://w3c.github.io/webrtc-ice/#attributes",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcicetransport-onicecandidate",
+        "href": "https://w3c.github.io/webrtc-ice/#dom-rtcicetransport-onicecandidate",
+        "linkingText": [
+          "onicecandidate"
+        ],
+        "localLinkingText": [
+          "RTCIceTransport.onicecandidate"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCIceTransport"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes",
+          "href": "https://w3c.github.io/webrtc-ice/#attributes",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "eventtarget",
+        "href": "https://dom.spec.whatwg.org/#eventtarget",
+        "linkingText": [
+          "EventTarget"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventtarget-eventtarget",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-eventtarget",
+        "linkingText": [
+          "EventTarget()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-addeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-addeventlistener",
+        "linkingText": [
+          "addEventListener(type, callback, options)",
+          "addEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-removeeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-removeeventlistener",
+        "linkingText": [
+          "removeEventListener(type, callback, options)",
+          "removeEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-dispatchevent",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-dispatchevent",
+        "linkingText": [
+          "dispatchEvent(event)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

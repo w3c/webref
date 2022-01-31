@@ -1,0 +1,194 @@
+{
+  "spec": {
+    "title": "Scripting Policy",
+    "url": "https://wicg.github.io/csp-next/scripting-policy.html"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {},
+      "functions": {
+        "Window": [
+          "ScriptingPolicyReportBody"
+        ],
+        "Worker": [
+          "ScriptingPolicyReportBody"
+        ]
+      }
+    },
+    "idlNames": {
+      "ScriptingPolicyViolationType": {
+        "fragment": "enum ScriptingPolicyViolationType {\n  \"externalScript\",\n  \"inlineScript\",\n  \"inlineEventHandler\",\n  \"eval\"\n};",
+        "type": "enum",
+        "name": "ScriptingPolicyViolationType",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "externalScript"
+          },
+          {
+            "type": "enum-value",
+            "value": "inlineScript"
+          },
+          {
+            "type": "enum-value",
+            "value": "inlineEventHandler"
+          },
+          {
+            "type": "enum-value",
+            "value": "eval"
+          }
+        ],
+        "extAttrs": []
+      },
+      "ScriptingPolicyReportBody": {
+        "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface ScriptingPolicyReportBody : ReportBody {\n  [Default] object toJSON();\n  readonly attribute DOMString     violationType;\n  readonly attribute USVString?    violationURL;\n  readonly attribute USVString?    violationSample;\n  readonly attribute unsigned long lineno;\n  readonly attribute unsigned long colno;\n};",
+        "type": "interface",
+        "name": "ScriptingPolicyReportBody",
+        "inheritance": "ReportBody",
+        "members": [
+          {
+            "type": "operation",
+            "name": "toJSON",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "object"
+            },
+            "arguments": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "Default",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": ""
+          },
+          {
+            "type": "attribute",
+            "name": "violationType",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "violationURL",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "violationSample",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "lineno",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "colno",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                }
+              ]
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
+          }
+        ],
+        "partial": false
+      }
+    },
+    "idlExtendedNames": {},
+    "globals": {},
+    "exposed": {
+      "Window": [
+        "ScriptingPolicyReportBody"
+      ],
+      "Worker": [
+        "ScriptingPolicyReportBody"
+      ]
+    },
+    "dependencies": {
+      "ScriptingPolicyReportBody": [
+        "ReportBody"
+      ]
+    },
+    "externalDependencies": [
+      "ReportBody"
+    ],
+    "hasObsoleteIdl": false
+  }
+}

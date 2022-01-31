@@ -1,0 +1,120 @@
+{
+  "name": "IDBFactory",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Indexed Database API 3.0",
+      "url": "https://www.w3.org/TR/IndexedDB-3/"
+    },
+    "fragment": "[Exposed=(Window,Worker)]\ninterface IDBFactory {\n  [NewObject] IDBOpenDBRequest open(DOMString name,\n                                    optional [EnforceRange] unsigned long long version);\n  [NewObject] IDBOpenDBRequest deleteDatabase(DOMString name);\n\n  Promise<sequence<IDBDatabaseInfo>> databases();\n\n  short cmp(any first, any second);\n};",
+    "href": "https://w3c.github.io/IndexedDB/#idbfactory"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/IndexedDB-3/": [
+      {
+        "id": "idbfactory",
+        "href": "https://w3c.github.io/IndexedDB/#idbfactory",
+        "linkingText": [
+          "IDBFactory"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "factory-interface",
+          "href": "https://w3c.github.io/IndexedDB/#factory-interface",
+          "title": "The IDBFactory interface",
+          "number": "4.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-idbfactory-open",
+        "href": "https://w3c.github.io/IndexedDB/#dom-idbfactory-open",
+        "linkingText": [
+          "open(name, version)",
+          "open(name)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "IDBFactory"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "factory-interface",
+          "href": "https://w3c.github.io/IndexedDB/#factory-interface",
+          "title": "The IDBFactory interface",
+          "number": "4.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-idbfactory-deletedatabase",
+        "href": "https://w3c.github.io/IndexedDB/#dom-idbfactory-deletedatabase",
+        "linkingText": [
+          "deleteDatabase(name)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "IDBFactory"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "title",
+          "href": "https://w3c.github.io/IndexedDB/#title",
+          "title": "Indexed Database API 3.0"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-idbfactory-databases",
+        "href": "https://w3c.github.io/IndexedDB/#dom-idbfactory-databases",
+        "linkingText": [
+          "databases()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "IDBFactory"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "title",
+          "href": "https://w3c.github.io/IndexedDB/#title",
+          "title": "Indexed Database API 3.0"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-idbfactory-cmp",
+        "href": "https://w3c.github.io/IndexedDB/#dom-idbfactory-cmp",
+        "linkingText": [
+          "cmp(first, second)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "IDBFactory"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "title",
+          "href": "https://w3c.github.io/IndexedDB/#title",
+          "title": "Indexed Database API 3.0"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

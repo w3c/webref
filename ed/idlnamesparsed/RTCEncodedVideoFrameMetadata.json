@@ -1,0 +1,227 @@
+{
+  "name": "RTCEncodedVideoFrameMetadata",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "WebRTC Encoded Transform",
+      "url": "https://www.w3.org/TR/webrtc-encoded-transform/"
+    },
+    "fragment": "dictionary RTCEncodedVideoFrameMetadata {\n    long long frameId;\n    sequence<long long> dependencies;\n    unsigned short width;\n    unsigned short height;\n    long spatialIndex;\n    long temporalIndex;\n    long synchronizationSource;\n    octet payloadType;\n    sequence<long> contributingSources;\n};",
+    "href": "https://w3c.github.io/webrtc-encoded-transform/#dictdef-rtcencodedvideoframemetadata"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webrtc-encoded-transform/": [
+      {
+        "id": "dictdef-rtcencodedvideoframemetadata",
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#dictdef-rtcencodedvideoframemetadata",
+        "linkingText": [
+          "RTCEncodedVideoFrameMetadata"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "scriptTransform",
+          "href": "https://w3c.github.io/webrtc-encoded-transform/#scriptTransform",
+          "title": "RTCRtpScriptTransform",
+          "number": "5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-rtcencodedvideoframemetadata-frameid",
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcencodedvideoframemetadata-frameid",
+        "linkingText": [
+          "frameId"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RTCEncodedVideoFrameMetadata"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "scriptTransform",
+          "href": "https://w3c.github.io/webrtc-encoded-transform/#scriptTransform",
+          "title": "RTCRtpScriptTransform",
+          "number": "5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-rtcencodedvideoframemetadata-dependencies",
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcencodedvideoframemetadata-dependencies",
+        "linkingText": [
+          "dependencies"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RTCEncodedVideoFrameMetadata"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "scriptTransform",
+          "href": "https://w3c.github.io/webrtc-encoded-transform/#scriptTransform",
+          "title": "RTCRtpScriptTransform",
+          "number": "5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-rtcencodedvideoframemetadata-width",
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcencodedvideoframemetadata-width",
+        "linkingText": [
+          "width"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RTCEncodedVideoFrameMetadata"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "scriptTransform",
+          "href": "https://w3c.github.io/webrtc-encoded-transform/#scriptTransform",
+          "title": "RTCRtpScriptTransform",
+          "number": "5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-rtcencodedvideoframemetadata-height",
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcencodedvideoframemetadata-height",
+        "linkingText": [
+          "height"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RTCEncodedVideoFrameMetadata"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "scriptTransform",
+          "href": "https://w3c.github.io/webrtc-encoded-transform/#scriptTransform",
+          "title": "RTCRtpScriptTransform",
+          "number": "5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-rtcencodedvideoframemetadata-spatialindex",
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcencodedvideoframemetadata-spatialindex",
+        "linkingText": [
+          "spatialIndex"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RTCEncodedVideoFrameMetadata"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "scriptTransform",
+          "href": "https://w3c.github.io/webrtc-encoded-transform/#scriptTransform",
+          "title": "RTCRtpScriptTransform",
+          "number": "5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-rtcencodedvideoframemetadata-temporalindex",
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcencodedvideoframemetadata-temporalindex",
+        "linkingText": [
+          "temporalIndex"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RTCEncodedVideoFrameMetadata"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "scriptTransform",
+          "href": "https://w3c.github.io/webrtc-encoded-transform/#scriptTransform",
+          "title": "RTCRtpScriptTransform",
+          "number": "5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-rtcencodedvideoframemetadata-synchronizationsource",
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcencodedvideoframemetadata-synchronizationsource",
+        "linkingText": [
+          "synchronizationSource"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RTCEncodedVideoFrameMetadata"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "scriptTransform",
+          "href": "https://w3c.github.io/webrtc-encoded-transform/#scriptTransform",
+          "title": "RTCRtpScriptTransform",
+          "number": "5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-rtcencodedvideoframemetadata-payloadtype",
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcencodedvideoframemetadata-payloadtype",
+        "linkingText": [
+          "payloadType"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RTCEncodedVideoFrameMetadata"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "scriptTransform",
+          "href": "https://w3c.github.io/webrtc-encoded-transform/#scriptTransform",
+          "title": "RTCRtpScriptTransform",
+          "number": "5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-rtcencodedvideoframemetadata-contributingsources",
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcencodedvideoframemetadata-contributingsources",
+        "linkingText": [
+          "contributingSources"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RTCEncodedVideoFrameMetadata"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "scriptTransform",
+          "href": "https://w3c.github.io/webrtc-encoded-transform/#scriptTransform",
+          "title": "RTCRtpScriptTransform",
+          "number": "5"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

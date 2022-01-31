@@ -1,0 +1,426 @@
+{
+  "name": "PresentationConnection",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Presentation API",
+      "url": "https://www.w3.org/TR/presentation-api/"
+    },
+    "fragment": "[SecureContext, Exposed=Window]\ninterface PresentationConnection : EventTarget {\n  readonly attribute USVString id;\n  readonly attribute USVString url;\n  readonly attribute PresentationConnectionState state;\n  undefined close();\n  undefined terminate();\n  attribute EventHandler onconnect;\n  attribute EventHandler onclose;\n  attribute EventHandler onterminate;\n\n  // Communication\n  attribute BinaryType binaryType;\n  attribute EventHandler onmessage;\n  undefined send (DOMString message);\n  undefined send (Blob data);\n  undefined send (ArrayBuffer data);\n  undefined send (ArrayBufferView data);\n};",
+    "href": "https://w3c.github.io/presentation-api/#dom-presentationconnection"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "EventTarget",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=*]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+      "href": "https://dom.spec.whatwg.org/#eventtarget"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/presentation-api/": [
+      {
+        "id": "dom-presentationconnection",
+        "href": "https://w3c.github.io/presentation-api/#dom-presentationconnection",
+        "linkingText": [
+          "PresentationConnection"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-presentationconnection",
+          "href": "https://w3c.github.io/presentation-api/#interface-presentationconnection",
+          "title": "Interface PresentationConnection",
+          "number": "6.5"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-presentationconnection-id",
+        "href": "https://w3c.github.io/presentation-api/#dom-presentationconnection-id",
+        "linkingText": [
+          "id"
+        ],
+        "localLinkingText": [
+          "PresentationConnection.id"
+        ],
+        "type": "attribute",
+        "for": [
+          "PresentationConnection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-presentationconnection",
+          "href": "https://w3c.github.io/presentation-api/#interface-presentationconnection",
+          "title": "Interface PresentationConnection",
+          "number": "6.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-presentationconnection-url",
+        "href": "https://w3c.github.io/presentation-api/#dom-presentationconnection-url",
+        "linkingText": [
+          "url"
+        ],
+        "localLinkingText": [
+          "PresentationConnection.url"
+        ],
+        "type": "attribute",
+        "for": [
+          "PresentationConnection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-presentationconnection",
+          "href": "https://w3c.github.io/presentation-api/#interface-presentationconnection",
+          "title": "Interface PresentationConnection",
+          "number": "6.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-presentationconnection-state",
+        "href": "https://w3c.github.io/presentation-api/#dom-presentationconnection-state",
+        "linkingText": [
+          "state"
+        ],
+        "localLinkingText": [
+          "PresentationConnection.state"
+        ],
+        "type": "attribute",
+        "for": [
+          "PresentationConnection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-presentationconnection",
+          "href": "https://w3c.github.io/presentation-api/#interface-presentationconnection",
+          "title": "Interface PresentationConnection",
+          "number": "6.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-presentationconnection-close",
+        "href": "https://w3c.github.io/presentation-api/#dom-presentationconnection-close",
+        "linkingText": [
+          "close()"
+        ],
+        "localLinkingText": [
+          "PresentationConnection.close",
+          "PresentationConnection.close()",
+          "close"
+        ],
+        "type": "method",
+        "for": [
+          "PresentationConnection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-presentationconnection",
+          "href": "https://w3c.github.io/presentation-api/#interface-presentationconnection",
+          "title": "Interface PresentationConnection",
+          "number": "6.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-presentationconnection-terminate",
+        "href": "https://w3c.github.io/presentation-api/#dom-presentationconnection-terminate",
+        "linkingText": [
+          "terminate()"
+        ],
+        "localLinkingText": [
+          "PresentationConnection.terminate",
+          "PresentationConnection.terminate()",
+          "terminate"
+        ],
+        "type": "method",
+        "for": [
+          "PresentationConnection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-presentationconnection",
+          "href": "https://w3c.github.io/presentation-api/#interface-presentationconnection",
+          "title": "Interface PresentationConnection",
+          "number": "6.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-presentationconnection-onconnect",
+        "href": "https://w3c.github.io/presentation-api/#dom-presentationconnection-onconnect",
+        "linkingText": [
+          "onconnect"
+        ],
+        "localLinkingText": [
+          "PresentationConnection.onconnect"
+        ],
+        "type": "attribute",
+        "for": [
+          "PresentationConnection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers-0",
+          "href": "https://w3c.github.io/presentation-api/#event-handlers-0",
+          "title": "Event Handlers",
+          "number": "6.5.9"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "dom-presentationconnection-onclose",
+        "href": "https://w3c.github.io/presentation-api/#dom-presentationconnection-onclose",
+        "linkingText": [
+          "onclose"
+        ],
+        "localLinkingText": [
+          "PresentationConnection.onclose"
+        ],
+        "type": "attribute",
+        "for": [
+          "PresentationConnection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers-0",
+          "href": "https://w3c.github.io/presentation-api/#event-handlers-0",
+          "title": "Event Handlers",
+          "number": "6.5.9"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "dom-presentationconnection-onterminate",
+        "href": "https://w3c.github.io/presentation-api/#dom-presentationconnection-onterminate",
+        "linkingText": [
+          "onterminate"
+        ],
+        "localLinkingText": [
+          "PresentationConnection.onterminate"
+        ],
+        "type": "attribute",
+        "for": [
+          "PresentationConnection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers-0",
+          "href": "https://w3c.github.io/presentation-api/#event-handlers-0",
+          "title": "Event Handlers",
+          "number": "6.5.9"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "dom-presentationconnection-binarytype",
+        "href": "https://w3c.github.io/presentation-api/#dom-presentationconnection-binarytype",
+        "linkingText": [
+          "binaryType"
+        ],
+        "localLinkingText": [
+          "PresentationConnection.binaryType"
+        ],
+        "type": "attribute",
+        "for": [
+          "PresentationConnection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-presentationconnection",
+          "href": "https://w3c.github.io/presentation-api/#interface-presentationconnection",
+          "title": "Interface PresentationConnection",
+          "number": "6.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-presentationconnection-onmessage",
+        "href": "https://w3c.github.io/presentation-api/#dom-presentationconnection-onmessage",
+        "linkingText": [
+          "onmessage"
+        ],
+        "localLinkingText": [
+          "PresentationConnection.onmessage"
+        ],
+        "type": "attribute",
+        "for": [
+          "PresentationConnection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers-0",
+          "href": "https://w3c.github.io/presentation-api/#event-handlers-0",
+          "title": "Event Handlers",
+          "number": "6.5.9"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "dom-presentationconnection-send",
+        "href": "https://w3c.github.io/presentation-api/#dom-presentationconnection-send",
+        "linkingText": [
+          "send()",
+          "send(message)",
+          "send!overload-1()",
+          "send!overload-1(data)",
+          "send!overload-2()",
+          "send!overload-2(data)",
+          "send!overload-3()",
+          "send!overload-3(data)"
+        ],
+        "localLinkingText": [
+          "PresentationConnection.send!overload-3",
+          "PresentationConnection.send!overload-3()",
+          "send!overload-3"
+        ],
+        "type": "method",
+        "for": [
+          "PresentationConnection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-presentationconnection",
+          "href": "https://w3c.github.io/presentation-api/#interface-presentationconnection",
+          "title": "Interface PresentationConnection",
+          "number": "6.5"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "eventtarget",
+        "href": "https://dom.spec.whatwg.org/#eventtarget",
+        "linkingText": [
+          "EventTarget"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventtarget-eventtarget",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-eventtarget",
+        "linkingText": [
+          "EventTarget()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-addeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-addeventlistener",
+        "linkingText": [
+          "addEventListener(type, callback, options)",
+          "addEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-removeeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-removeeventlistener",
+        "linkingText": [
+          "removeEventListener(type, callback, options)",
+          "removeEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-dispatchevent",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-dispatchevent",
+        "linkingText": [
+          "dispatchEvent(event)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

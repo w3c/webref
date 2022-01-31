@@ -1,0 +1,457 @@
+{
+  "name": "SpeechSynthesisUtterance",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Web Speech API",
+      "url": "https://wicg.github.io/speech-api/"
+    },
+    "fragment": "[Exposed=Window]\ninterface SpeechSynthesisUtterance : EventTarget {\n    constructor(optional DOMString text);\n\n    attribute DOMString text;\n    attribute DOMString lang;\n    attribute SpeechSynthesisVoice? voice;\n    attribute float volume;\n    attribute float rate;\n    attribute float pitch;\n\n    attribute EventHandler onstart;\n    attribute EventHandler onend;\n    attribute EventHandler onerror;\n    attribute EventHandler onpause;\n    attribute EventHandler onresume;\n    attribute EventHandler onmark;\n    attribute EventHandler onboundary;\n};",
+    "href": "https://wicg.github.io/speech-api/#speechsynthesisutterance"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "EventTarget",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=*]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+      "href": "https://dom.spec.whatwg.org/#eventtarget"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://wicg.github.io/speech-api/": [
+      {
+        "id": "speechsynthesisutterance",
+        "href": "https://wicg.github.io/speech-api/#speechsynthesisutterance",
+        "linkingText": [
+          "SpeechSynthesisUtterance"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "tts-section",
+          "href": "https://wicg.github.io/speech-api/#tts-section",
+          "title": "The SpeechSynthesis Interface",
+          "number": "4.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-speechsynthesisutterance-speechsynthesisutterance",
+        "href": "https://wicg.github.io/speech-api/#dom-speechsynthesisutterance-speechsynthesisutterance",
+        "linkingText": [
+          "SpeechSynthesisUtterance(text)",
+          "constructor(text)",
+          "SpeechSynthesisUtterance()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "SpeechSynthesisUtterance"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "tts-section",
+          "href": "https://wicg.github.io/speech-api/#tts-section",
+          "title": "The SpeechSynthesis Interface",
+          "number": "4.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-speechsynthesisutterance-text",
+        "href": "https://wicg.github.io/speech-api/#dom-speechsynthesisutterance-text",
+        "linkingText": [
+          "text"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "SpeechSynthesisUtterance"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "utterance-attributes",
+          "href": "https://wicg.github.io/speech-api/#utterance-attributes",
+          "title": "SpeechSynthesisUtterance Attributes",
+          "number": "4.2.4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-speechsynthesisutterance-lang",
+        "href": "https://wicg.github.io/speech-api/#dom-speechsynthesisutterance-lang",
+        "linkingText": [
+          "lang"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "SpeechSynthesisUtterance"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "utterance-attributes",
+          "href": "https://wicg.github.io/speech-api/#utterance-attributes",
+          "title": "SpeechSynthesisUtterance Attributes",
+          "number": "4.2.4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-speechsynthesisutterance-voice",
+        "href": "https://wicg.github.io/speech-api/#dom-speechsynthesisutterance-voice",
+        "linkingText": [
+          "voice"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "SpeechSynthesisUtterance"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "utterance-attributes",
+          "href": "https://wicg.github.io/speech-api/#utterance-attributes",
+          "title": "SpeechSynthesisUtterance Attributes",
+          "number": "4.2.4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-speechsynthesisutterance-volume",
+        "href": "https://wicg.github.io/speech-api/#dom-speechsynthesisutterance-volume",
+        "linkingText": [
+          "volume"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "SpeechSynthesisUtterance"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "utterance-attributes",
+          "href": "https://wicg.github.io/speech-api/#utterance-attributes",
+          "title": "SpeechSynthesisUtterance Attributes",
+          "number": "4.2.4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-speechsynthesisutterance-rate",
+        "href": "https://wicg.github.io/speech-api/#dom-speechsynthesisutterance-rate",
+        "linkingText": [
+          "rate"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "SpeechSynthesisUtterance"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "utterance-attributes",
+          "href": "https://wicg.github.io/speech-api/#utterance-attributes",
+          "title": "SpeechSynthesisUtterance Attributes",
+          "number": "4.2.4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-speechsynthesisutterance-pitch",
+        "href": "https://wicg.github.io/speech-api/#dom-speechsynthesisutterance-pitch",
+        "linkingText": [
+          "pitch"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "SpeechSynthesisUtterance"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "utterance-attributes",
+          "href": "https://wicg.github.io/speech-api/#utterance-attributes",
+          "title": "SpeechSynthesisUtterance Attributes",
+          "number": "4.2.4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-speechsynthesisutterance-onstart",
+        "href": "https://wicg.github.io/speech-api/#dom-speechsynthesisutterance-onstart",
+        "linkingText": [
+          "onstart"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "SpeechSynthesisUtterance"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "tts-section",
+          "href": "https://wicg.github.io/speech-api/#tts-section",
+          "title": "The SpeechSynthesis Interface",
+          "number": "4.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-speechsynthesisutterance-onend",
+        "href": "https://wicg.github.io/speech-api/#dom-speechsynthesisutterance-onend",
+        "linkingText": [
+          "onend"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "SpeechSynthesisUtterance"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "tts-section",
+          "href": "https://wicg.github.io/speech-api/#tts-section",
+          "title": "The SpeechSynthesis Interface",
+          "number": "4.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-speechsynthesisutterance-onerror",
+        "href": "https://wicg.github.io/speech-api/#dom-speechsynthesisutterance-onerror",
+        "linkingText": [
+          "onerror"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "SpeechSynthesisUtterance"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "tts-section",
+          "href": "https://wicg.github.io/speech-api/#tts-section",
+          "title": "The SpeechSynthesis Interface",
+          "number": "4.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-speechsynthesisutterance-onpause",
+        "href": "https://wicg.github.io/speech-api/#dom-speechsynthesisutterance-onpause",
+        "linkingText": [
+          "onpause"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "SpeechSynthesisUtterance"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "tts-section",
+          "href": "https://wicg.github.io/speech-api/#tts-section",
+          "title": "The SpeechSynthesis Interface",
+          "number": "4.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-speechsynthesisutterance-onresume",
+        "href": "https://wicg.github.io/speech-api/#dom-speechsynthesisutterance-onresume",
+        "linkingText": [
+          "onresume"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "SpeechSynthesisUtterance"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "tts-section",
+          "href": "https://wicg.github.io/speech-api/#tts-section",
+          "title": "The SpeechSynthesis Interface",
+          "number": "4.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-speechsynthesisutterance-onmark",
+        "href": "https://wicg.github.io/speech-api/#dom-speechsynthesisutterance-onmark",
+        "linkingText": [
+          "onmark"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "SpeechSynthesisUtterance"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "tts-section",
+          "href": "https://wicg.github.io/speech-api/#tts-section",
+          "title": "The SpeechSynthesis Interface",
+          "number": "4.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-speechsynthesisutterance-onboundary",
+        "href": "https://wicg.github.io/speech-api/#dom-speechsynthesisutterance-onboundary",
+        "linkingText": [
+          "onboundary"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "SpeechSynthesisUtterance"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "tts-section",
+          "href": "https://wicg.github.io/speech-api/#tts-section",
+          "title": "The SpeechSynthesis Interface",
+          "number": "4.2"
+        },
+        "definedIn": "pre"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "eventtarget",
+        "href": "https://dom.spec.whatwg.org/#eventtarget",
+        "linkingText": [
+          "EventTarget"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventtarget-eventtarget",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-eventtarget",
+        "linkingText": [
+          "EventTarget()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-addeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-addeventlistener",
+        "linkingText": [
+          "addEventListener(type, callback, options)",
+          "addEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-removeeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-removeeventlistener",
+        "linkingText": [
+          "removeEventListener(type, callback, options)",
+          "removeEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-dispatchevent",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-dispatchevent",
+        "linkingText": [
+          "dispatchEvent(event)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

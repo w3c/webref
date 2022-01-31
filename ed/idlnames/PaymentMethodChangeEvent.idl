@@ -1,0 +1,7 @@
+// Source: Payment Request API (https://www.w3.org/TR/payment-request/)
+[SecureContext, Exposed=Window]
+interface PaymentMethodChangeEvent : PaymentRequestUpdateEvent {
+  constructor(DOMString type, optional PaymentMethodChangeEventInit eventInitDict = {});
+  readonly attribute DOMString methodName;
+  readonly attribute object? methodDetails;
+};

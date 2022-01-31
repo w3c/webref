@@ -1,0 +1,80 @@
+{
+  "name": "MemoryMeasurement",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Measure Memory API",
+      "url": "https://wicg.github.io/performance-measure-memory/"
+    },
+    "fragment": "dictionary MemoryMeasurement {\n  unsigned long long bytes;\n  sequence<MemoryBreakdownEntry> breakdown;\n};",
+    "href": "https://wicg.github.io/performance-measure-memory/#dictdef-memorymeasurement"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://wicg.github.io/performance-measure-memory/": [
+      {
+        "id": "dictdef-memorymeasurement",
+        "href": "https://wicg.github.io/performance-measure-memory/#dictdef-memorymeasurement",
+        "linkingText": [
+          "MemoryMeasurement"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "memory-measurement-result",
+          "href": "https://wicg.github.io/performance-measure-memory/#memory-measurement-result",
+          "title": "Memory measurement result",
+          "number": "2.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-memorymeasurement-bytes",
+        "href": "https://wicg.github.io/performance-measure-memory/#dom-memorymeasurement-bytes",
+        "linkingText": [
+          "bytes"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MemoryMeasurement"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "memory-measurement-result",
+          "href": "https://wicg.github.io/performance-measure-memory/#memory-measurement-result",
+          "title": "Memory measurement result",
+          "number": "2.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-memorymeasurement-breakdown",
+        "href": "https://wicg.github.io/performance-measure-memory/#dom-memorymeasurement-breakdown",
+        "linkingText": [
+          "breakdown"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MemoryMeasurement"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "memory-measurement-result",
+          "href": "https://wicg.github.io/performance-measure-memory/#memory-measurement-result",
+          "title": "Memory measurement result",
+          "number": "2.1"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

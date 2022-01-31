@@ -1,0 +1,829 @@
+{
+  "spec": {
+    "title": "CSS Transforms Module Level 1",
+    "url": "https://drafts.csswg.org/css-transforms/"
+  },
+  "dfns": [
+    {
+      "id": "transformable-element",
+      "href": "https://drafts.csswg.org/css-transforms/#transformable-element",
+      "linkingText": [
+        "transformable element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "css-values",
+        "href": "https://drafts.csswg.org/css-transforms/#css-values",
+        "title": "CSS Values",
+        "number": "1.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "transformed-element",
+      "href": "https://drafts.csswg.org/css-transforms/#transformed-element",
+      "linkingText": [
+        "transformed element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "css-values",
+        "href": "https://drafts.csswg.org/css-transforms/#css-values",
+        "title": "CSS Values",
+        "number": "1.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "user-coordinate-system",
+      "href": "https://drafts.csswg.org/css-transforms/#user-coordinate-system",
+      "linkingText": [
+        "user coordinate system"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "css-values",
+        "href": "https://drafts.csswg.org/css-transforms/#css-values",
+        "title": "CSS Values",
+        "number": "1.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "local-coordinate-system",
+      "href": "https://drafts.csswg.org/css-transforms/#local-coordinate-system",
+      "linkingText": [
+        "local coordinate system"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "css-values",
+        "href": "https://drafts.csswg.org/css-transforms/#css-values",
+        "title": "CSS Values",
+        "number": "1.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "transformation-matrix",
+      "href": "https://drafts.csswg.org/css-transforms/#transformation-matrix",
+      "linkingText": [
+        "transformation matrix"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "css-values",
+        "href": "https://drafts.csswg.org/css-transforms/#css-values",
+        "title": "CSS Values",
+        "number": "1.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "current-transformation-matrix",
+      "href": "https://drafts.csswg.org/css-transforms/#current-transformation-matrix",
+      "linkingText": [
+        "current transformation matrix"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "css-values",
+        "href": "https://drafts.csswg.org/css-transforms/#css-values",
+        "title": "CSS Values",
+        "number": "1.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "2d-matrix",
+      "href": "https://drafts.csswg.org/css-transforms/#2d-matrix",
+      "linkingText": [
+        "2D matrix"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "css-values",
+        "href": "https://drafts.csswg.org/css-transforms/#css-values",
+        "title": "CSS Values",
+        "number": "1.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "identity-transform-function",
+      "href": "https://drafts.csswg.org/css-transforms/#identity-transform-function",
+      "linkingText": [
+        "identity transform function"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "css-values",
+        "href": "https://drafts.csswg.org/css-transforms/#css-values",
+        "title": "CSS Values",
+        "number": "1.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "post-multiply",
+      "href": "https://drafts.csswg.org/css-transforms/#post-multiply",
+      "linkingText": [
+        "post-multiply"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "css-values",
+        "href": "https://drafts.csswg.org/css-transforms/#css-values",
+        "title": "CSS Values",
+        "number": "1.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "post-multiplied",
+      "href": "https://drafts.csswg.org/css-transforms/#post-multiplied",
+      "linkingText": [
+        "post-multiplied"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "css-values",
+        "href": "https://drafts.csswg.org/css-transforms/#css-values",
+        "title": "CSS Values",
+        "number": "1.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "pre-multiply",
+      "href": "https://drafts.csswg.org/css-transforms/#pre-multiply",
+      "linkingText": [
+        "pre-multiply"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "css-values",
+        "href": "https://drafts.csswg.org/css-transforms/#css-values",
+        "title": "CSS Values",
+        "number": "1.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "pre-multiplied",
+      "href": "https://drafts.csswg.org/css-transforms/#pre-multiplied",
+      "linkingText": [
+        "pre-multiplied"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "css-values",
+        "href": "https://drafts.csswg.org/css-transforms/#css-values",
+        "title": "CSS Values",
+        "number": "1.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "multiply",
+      "href": "https://drafts.csswg.org/css-transforms/#multiply",
+      "linkingText": [
+        "multiply"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "css-values",
+        "href": "https://drafts.csswg.org/css-transforms/#css-values",
+        "title": "CSS Values",
+        "number": "1.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "containing-block-for-all-descendants",
+      "href": "https://drafts.csswg.org/css-transforms/#containing-block-for-all-descendants",
+      "linkingText": [
+        "containing block for all descendants"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "transform-rendering",
+        "href": "https://drafts.csswg.org/css-transforms/#transform-rendering",
+        "title": "The Transform Rendering Model",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "propdef-transform",
+      "href": "https://drafts.csswg.org/css-transforms/#propdef-transform",
+      "linkingText": [
+        "transform"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "transform-property",
+        "href": "https://drafts.csswg.org/css-transforms/#transform-property",
+        "title": "The transform Property",
+        "number": "3"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "typedef-transform-list",
+      "href": "https://drafts.csswg.org/css-transforms/#typedef-transform-list",
+      "linkingText": [
+        "<transform-list>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "transform-property",
+        "href": "https://drafts.csswg.org/css-transforms/#transform-property",
+        "title": "The transform Property",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "propdef-transform-origin",
+      "href": "https://drafts.csswg.org/css-transforms/#propdef-transform-origin",
+      "linkingText": [
+        "transform-origin"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "transform-origin-property",
+        "href": "https://drafts.csswg.org/css-transforms/#transform-origin-property",
+        "title": "The transform-origin Property",
+        "number": "4"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "valdef-transform-origin-top",
+      "href": "https://drafts.csswg.org/css-transforms/#valdef-transform-origin-top",
+      "linkingText": [
+        "top"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "transform-origin"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "transform-origin-property",
+        "href": "https://drafts.csswg.org/css-transforms/#transform-origin-property",
+        "title": "The transform-origin Property",
+        "number": "4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-transform-origin-right",
+      "href": "https://drafts.csswg.org/css-transforms/#valdef-transform-origin-right",
+      "linkingText": [
+        "right"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "transform-origin"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "transform-origin-property",
+        "href": "https://drafts.csswg.org/css-transforms/#transform-origin-property",
+        "title": "The transform-origin Property",
+        "number": "4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-transform-origin-bottom",
+      "href": "https://drafts.csswg.org/css-transforms/#valdef-transform-origin-bottom",
+      "linkingText": [
+        "bottom"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "transform-origin"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "transform-origin-property",
+        "href": "https://drafts.csswg.org/css-transforms/#transform-origin-property",
+        "title": "The transform-origin Property",
+        "number": "4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-transform-origin-left",
+      "href": "https://drafts.csswg.org/css-transforms/#valdef-transform-origin-left",
+      "linkingText": [
+        "left"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "transform-origin"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "transform-origin-property",
+        "href": "https://drafts.csswg.org/css-transforms/#transform-origin-property",
+        "title": "The transform-origin Property",
+        "number": "4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-transform-origin-center",
+      "href": "https://drafts.csswg.org/css-transforms/#valdef-transform-origin-center",
+      "linkingText": [
+        "center"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "transform-origin"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "transform-origin-property",
+        "href": "https://drafts.csswg.org/css-transforms/#transform-origin-property",
+        "title": "The transform-origin Property",
+        "number": "4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "propdef-transform-box",
+      "href": "https://drafts.csswg.org/css-transforms/#propdef-transform-box",
+      "linkingText": [
+        "transform-box"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "transform-box",
+        "href": "https://drafts.csswg.org/css-transforms/#transform-box",
+        "title": "Transform reference box: the transform-box property",
+        "number": "5"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "reference-box",
+      "href": "https://drafts.csswg.org/css-transforms/#reference-box",
+      "linkingText": [
+        "reference box"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "transform-box",
+        "href": "https://drafts.csswg.org/css-transforms/#transform-box",
+        "title": "Transform reference box: the transform-box property",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valdef-transform-box-content-box",
+      "href": "https://drafts.csswg.org/css-transforms/#valdef-transform-box-content-box",
+      "linkingText": [
+        "content-box"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "transform-box"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "transform-box",
+        "href": "https://drafts.csswg.org/css-transforms/#transform-box",
+        "title": "Transform reference box: the transform-box property",
+        "number": "5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-transform-box-border-box",
+      "href": "https://drafts.csswg.org/css-transforms/#valdef-transform-box-border-box",
+      "linkingText": [
+        "border-box"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "transform-box"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "transform-box",
+        "href": "https://drafts.csswg.org/css-transforms/#transform-box",
+        "title": "Transform reference box: the transform-box property",
+        "number": "5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-transform-box-fill-box",
+      "href": "https://drafts.csswg.org/css-transforms/#valdef-transform-box-fill-box",
+      "linkingText": [
+        "fill-box"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "transform-box"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "transform-box",
+        "href": "https://drafts.csswg.org/css-transforms/#transform-box",
+        "title": "Transform reference box: the transform-box property",
+        "number": "5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-transform-box-stroke-box",
+      "href": "https://drafts.csswg.org/css-transforms/#valdef-transform-box-stroke-box",
+      "linkingText": [
+        "stroke-box"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "transform-box"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "transform-box",
+        "href": "https://drafts.csswg.org/css-transforms/#transform-box",
+        "title": "Transform reference box: the transform-box property",
+        "number": "5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-transform-box-view-box",
+      "href": "https://drafts.csswg.org/css-transforms/#valdef-transform-box-view-box",
+      "linkingText": [
+        "view-box"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "transform-box"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "transform-box",
+        "href": "https://drafts.csswg.org/css-transforms/#transform-box",
+        "title": "Transform reference box: the transform-box property",
+        "number": "5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "typedef-transform-function",
+      "href": "https://drafts.csswg.org/css-transforms/#typedef-transform-function",
+      "linkingText": [
+        "<transform-function>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "transform-functions",
+        "href": "https://drafts.csswg.org/css-transforms/#transform-functions",
+        "title": "The Transform Functions",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "funcdef-transform-matrix",
+      "href": "https://drafts.csswg.org/css-transforms/#funcdef-transform-matrix",
+      "linkingText": [
+        "matrix()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [
+        "transform"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "two-d-transform-functions",
+        "href": "https://drafts.csswg.org/css-transforms/#two-d-transform-functions",
+        "title": "2D Transform Functions",
+        "number": "7.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "funcdef-transform-translate",
+      "href": "https://drafts.csswg.org/css-transforms/#funcdef-transform-translate",
+      "linkingText": [
+        "translate()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [
+        "transform"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "two-d-transform-functions",
+        "href": "https://drafts.csswg.org/css-transforms/#two-d-transform-functions",
+        "title": "2D Transform Functions",
+        "number": "7.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "funcdef-transform-translatex",
+      "href": "https://drafts.csswg.org/css-transforms/#funcdef-transform-translatex",
+      "linkingText": [
+        "translateX()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [
+        "transform"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "two-d-transform-functions",
+        "href": "https://drafts.csswg.org/css-transforms/#two-d-transform-functions",
+        "title": "2D Transform Functions",
+        "number": "7.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "funcdef-transform-translatey",
+      "href": "https://drafts.csswg.org/css-transforms/#funcdef-transform-translatey",
+      "linkingText": [
+        "translateY()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [
+        "transform"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "two-d-transform-functions",
+        "href": "https://drafts.csswg.org/css-transforms/#two-d-transform-functions",
+        "title": "2D Transform Functions",
+        "number": "7.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "funcdef-transform-scale",
+      "href": "https://drafts.csswg.org/css-transforms/#funcdef-transform-scale",
+      "linkingText": [
+        "scale()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [
+        "transform"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "two-d-transform-functions",
+        "href": "https://drafts.csswg.org/css-transforms/#two-d-transform-functions",
+        "title": "2D Transform Functions",
+        "number": "7.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "funcdef-transform-scalex",
+      "href": "https://drafts.csswg.org/css-transforms/#funcdef-transform-scalex",
+      "linkingText": [
+        "scaleX()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [
+        "transform"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "two-d-transform-functions",
+        "href": "https://drafts.csswg.org/css-transforms/#two-d-transform-functions",
+        "title": "2D Transform Functions",
+        "number": "7.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "funcdef-transform-scaley",
+      "href": "https://drafts.csswg.org/css-transforms/#funcdef-transform-scaley",
+      "linkingText": [
+        "scaleY()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [
+        "transform"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "two-d-transform-functions",
+        "href": "https://drafts.csswg.org/css-transforms/#two-d-transform-functions",
+        "title": "2D Transform Functions",
+        "number": "7.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "funcdef-transform-rotate",
+      "href": "https://drafts.csswg.org/css-transforms/#funcdef-transform-rotate",
+      "linkingText": [
+        "rotate()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [
+        "transform"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "two-d-transform-functions",
+        "href": "https://drafts.csswg.org/css-transforms/#two-d-transform-functions",
+        "title": "2D Transform Functions",
+        "number": "7.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "funcdef-transform-skew",
+      "href": "https://drafts.csswg.org/css-transforms/#funcdef-transform-skew",
+      "linkingText": [
+        "skew()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [
+        "transform"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "two-d-transform-functions",
+        "href": "https://drafts.csswg.org/css-transforms/#two-d-transform-functions",
+        "title": "2D Transform Functions",
+        "number": "7.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "funcdef-transform-skewx",
+      "href": "https://drafts.csswg.org/css-transforms/#funcdef-transform-skewx",
+      "linkingText": [
+        "skewX()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [
+        "transform"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "two-d-transform-functions",
+        "href": "https://drafts.csswg.org/css-transforms/#two-d-transform-functions",
+        "title": "2D Transform Functions",
+        "number": "7.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "funcdef-transform-skewy",
+      "href": "https://drafts.csswg.org/css-transforms/#funcdef-transform-skewy",
+      "linkingText": [
+        "skewY()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [
+        "transform"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "two-d-transform-functions",
+        "href": "https://drafts.csswg.org/css-transforms/#two-d-transform-functions",
+        "title": "2D Transform Functions",
+        "number": "7.1"
+      },
+      "definedIn": "dt"
+    }
+  ]
+}

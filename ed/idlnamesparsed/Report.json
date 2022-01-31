@@ -1,0 +1,101 @@
+{
+  "name": "Report",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Reporting API 1",
+      "url": "https://www.w3.org/TR/reporting-1/"
+    },
+    "fragment": "[Exposed=(Window,Worker)]\ninterface Report {\n  [Default] object toJSON();\n  readonly attribute DOMString type;\n  readonly attribute DOMString url;\n  readonly attribute ReportBody? body;\n};",
+    "href": "https://w3c.github.io/reporting/#dom-report"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/reporting-1/": [
+      {
+        "id": "dom-report",
+        "href": "https://w3c.github.io/reporting/#dom-report",
+        "linkingText": [
+          "Report"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-reporting-observer",
+          "href": "https://w3c.github.io/reporting/#interface-reporting-observer",
+          "title": "Interface ReportingObserver",
+          "number": "4.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-report-type",
+        "href": "https://w3c.github.io/reporting/#dom-report-type",
+        "linkingText": [
+          "type"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Report"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-reporting-observer",
+          "href": "https://w3c.github.io/reporting/#interface-reporting-observer",
+          "title": "Interface ReportingObserver",
+          "number": "4.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-report-url",
+        "href": "https://w3c.github.io/reporting/#dom-report-url",
+        "linkingText": [
+          "url"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Report"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-reporting-observer",
+          "href": "https://w3c.github.io/reporting/#interface-reporting-observer",
+          "title": "Interface ReportingObserver",
+          "number": "4.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-report-body",
+        "href": "https://w3c.github.io/reporting/#dom-report-body",
+        "linkingText": [
+          "body"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Report"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-reporting-observer",
+          "href": "https://w3c.github.io/reporting/#interface-reporting-observer",
+          "title": "Interface ReportingObserver",
+          "number": "4.1"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

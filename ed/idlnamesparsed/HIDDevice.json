@@ -1,0 +1,451 @@
+{
+  "name": "HIDDevice",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebHID API",
+      "url": "https://wicg.github.io/webhid/"
+    },
+    "fragment": "[Exposed=Window, SecureContext]\ninterface HIDDevice : EventTarget {\n    attribute EventHandler oninputreport;\n    readonly attribute boolean opened;\n    readonly attribute unsigned short vendorId;\n    readonly attribute unsigned short productId;\n    readonly attribute DOMString productName;\n    readonly attribute FrozenArray<HIDCollectionInfo> collections;\n    Promise<undefined> open();\n    Promise<undefined> close();\n    Promise<undefined> forget();\n    Promise<undefined> sendReport([EnforceRange] octet reportId, BufferSource data);\n    Promise<undefined> sendFeatureReport(\n        [EnforceRange] octet reportId,\n        BufferSource data);\n    Promise<DataView> receiveFeatureReport([EnforceRange] octet reportId);\n};",
+    "href": "https://wicg.github.io/webhid/#dom-hiddevice"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "EventTarget",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=*]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+      "href": "https://dom.spec.whatwg.org/#eventtarget"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://wicg.github.io/webhid/": [
+      {
+        "id": "dom-hiddevice",
+        "href": "https://wicg.github.io/webhid/#dom-hiddevice",
+        "linkingText": [
+          "HIDDevice"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "hiddevice-interface",
+          "href": "https://wicg.github.io/webhid/#hiddevice-interface",
+          "title": "HIDDevice interface",
+          "number": "6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-hiddevice-oninputreport",
+        "href": "https://wicg.github.io/webhid/#dom-hiddevice-oninputreport",
+        "linkingText": [
+          "oninputreport"
+        ],
+        "localLinkingText": [
+          "HIDDevice.oninputreport"
+        ],
+        "type": "attribute",
+        "for": [
+          "HIDDevice"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "hiddevice-interface",
+          "href": "https://wicg.github.io/webhid/#hiddevice-interface",
+          "title": "HIDDevice interface",
+          "number": "6"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-hiddevice-opened",
+        "href": "https://wicg.github.io/webhid/#dom-hiddevice-opened",
+        "linkingText": [
+          "opened"
+        ],
+        "localLinkingText": [
+          "HIDDevice.opened"
+        ],
+        "type": "attribute",
+        "for": [
+          "HIDDevice"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "hiddevice-interface",
+          "href": "https://wicg.github.io/webhid/#hiddevice-interface",
+          "title": "HIDDevice interface",
+          "number": "6"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-hiddevice-vendorid",
+        "href": "https://wicg.github.io/webhid/#dom-hiddevice-vendorid",
+        "linkingText": [
+          "vendorId"
+        ],
+        "localLinkingText": [
+          "HIDDevice.vendorId"
+        ],
+        "type": "attribute",
+        "for": [
+          "HIDDevice"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "hiddevice-interface",
+          "href": "https://wicg.github.io/webhid/#hiddevice-interface",
+          "title": "HIDDevice interface",
+          "number": "6"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-hiddevice-productid",
+        "href": "https://wicg.github.io/webhid/#dom-hiddevice-productid",
+        "linkingText": [
+          "productId"
+        ],
+        "localLinkingText": [
+          "HIDDevice.productId"
+        ],
+        "type": "attribute",
+        "for": [
+          "HIDDevice"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "hiddevice-interface",
+          "href": "https://wicg.github.io/webhid/#hiddevice-interface",
+          "title": "HIDDevice interface",
+          "number": "6"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-hiddevice-productname",
+        "href": "https://wicg.github.io/webhid/#dom-hiddevice-productname",
+        "linkingText": [
+          "productName"
+        ],
+        "localLinkingText": [
+          "HIDDevice.productName"
+        ],
+        "type": "attribute",
+        "for": [
+          "HIDDevice"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "hiddevice-interface",
+          "href": "https://wicg.github.io/webhid/#hiddevice-interface",
+          "title": "HIDDevice interface",
+          "number": "6"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-hiddevice-collections",
+        "href": "https://wicg.github.io/webhid/#dom-hiddevice-collections",
+        "linkingText": [
+          "collections"
+        ],
+        "localLinkingText": [
+          "HIDDevice.collections"
+        ],
+        "type": "attribute",
+        "for": [
+          "HIDDevice"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "hiddevice-interface",
+          "href": "https://wicg.github.io/webhid/#hiddevice-interface",
+          "title": "HIDDevice interface",
+          "number": "6"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-hiddevice-open",
+        "href": "https://wicg.github.io/webhid/#dom-hiddevice-open",
+        "linkingText": [
+          "open()"
+        ],
+        "localLinkingText": [
+          "HIDDevice.open",
+          "HIDDevice.open()",
+          "open"
+        ],
+        "type": "method",
+        "for": [
+          "HIDDevice"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "open-method",
+          "href": "https://wicg.github.io/webhid/#open-method",
+          "title": "open() method",
+          "number": "6.1"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-hiddevice-close",
+        "href": "https://wicg.github.io/webhid/#dom-hiddevice-close",
+        "linkingText": [
+          "close()"
+        ],
+        "localLinkingText": [
+          "HIDDevice.close",
+          "HIDDevice.close()",
+          "close"
+        ],
+        "type": "method",
+        "for": [
+          "HIDDevice"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "close-method",
+          "href": "https://wicg.github.io/webhid/#close-method",
+          "title": "close() method",
+          "number": "6.2"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-hiddevice-forget",
+        "href": "https://wicg.github.io/webhid/#dom-hiddevice-forget",
+        "linkingText": [
+          "forget()"
+        ],
+        "localLinkingText": [
+          "HIDDevice.forget",
+          "HIDDevice.forget()",
+          "forget"
+        ],
+        "type": "method",
+        "for": [
+          "HIDDevice"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "forget-method",
+          "href": "https://wicg.github.io/webhid/#forget-method",
+          "title": "forget() method",
+          "number": "6.3"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-hiddevice-sendreport",
+        "href": "https://wicg.github.io/webhid/#dom-hiddevice-sendreport",
+        "linkingText": [
+          "sendReport()",
+          "sendReport(reportId, data)"
+        ],
+        "localLinkingText": [
+          "HIDDevice.sendReport",
+          "HIDDevice.sendReport()",
+          "sendReport"
+        ],
+        "type": "method",
+        "for": [
+          "HIDDevice"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "sendreport-method",
+          "href": "https://wicg.github.io/webhid/#sendreport-method",
+          "title": "sendReport() method",
+          "number": "6.4"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-hiddevice-sendfeaturereport",
+        "href": "https://wicg.github.io/webhid/#dom-hiddevice-sendfeaturereport",
+        "linkingText": [
+          "sendFeatureReport()",
+          "sendFeatureReport(reportId, data)"
+        ],
+        "localLinkingText": [
+          "HIDDevice.sendFeatureReport",
+          "HIDDevice.sendFeatureReport()",
+          "sendFeatureReport"
+        ],
+        "type": "method",
+        "for": [
+          "HIDDevice"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "sendfeaturereport-method",
+          "href": "https://wicg.github.io/webhid/#sendfeaturereport-method",
+          "title": "sendFeatureReport() method",
+          "number": "6.5"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-hiddevice-receivefeaturereport",
+        "href": "https://wicg.github.io/webhid/#dom-hiddevice-receivefeaturereport",
+        "linkingText": [
+          "receiveFeatureReport()",
+          "receiveFeatureReport(reportId)"
+        ],
+        "localLinkingText": [
+          "HIDDevice.receiveFeatureReport",
+          "HIDDevice.receiveFeatureReport()",
+          "receiveFeatureReport"
+        ],
+        "type": "method",
+        "for": [
+          "HIDDevice"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "receivefeaturereport-method",
+          "href": "https://wicg.github.io/webhid/#receivefeaturereport-method",
+          "title": "receiveFeatureReport() method",
+          "number": "6.6"
+        },
+        "definedIn": "heading"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "eventtarget",
+        "href": "https://dom.spec.whatwg.org/#eventtarget",
+        "linkingText": [
+          "EventTarget"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventtarget-eventtarget",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-eventtarget",
+        "linkingText": [
+          "EventTarget()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-addeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-addeventlistener",
+        "linkingText": [
+          "addEventListener(type, callback, options)",
+          "addEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-removeeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-removeeventlistener",
+        "linkingText": [
+          "removeEventListener(type, callback, options)",
+          "removeEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-dispatchevent",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-dispatchevent",
+        "linkingText": [
+          "dispatchEvent(event)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "name": "Animatable",
+  "type": "interface mixin",
+  "defined": {
+    "spec": {
+      "title": "Web Animations",
+      "url": "https://www.w3.org/TR/web-animations-1/"
+    },
+    "fragment": "interface mixin Animatable {\n    Animation           animate(object? keyframes,\n                                optional (unrestricted double or KeyframeAnimationOptions) options = {});\n    sequence<Animation> getAnimations(optional GetAnimationsOptions options = {});\n};",
+    "href": "https://drafts.csswg.org/web-animations-1/#animatable"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/web-animations-1/": [
+      {
+        "id": "animatable",
+        "href": "https://drafts.csswg.org/web-animations-1/#animatable",
+        "linkingText": [
+          "Animatable"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-animatable-interface-mixin",
+          "href": "https://drafts.csswg.org/web-animations-1/#the-animatable-interface-mixin",
+          "title": "The Animatable interface mixin",
+          "number": "6.8"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-animatable-animate",
+        "href": "https://drafts.csswg.org/web-animations-1/#dom-animatable-animate",
+        "linkingText": [
+          "animate(keyframes, options)",
+          "animate(keyframes)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Animatable"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-animatable-interface-mixin",
+          "href": "https://drafts.csswg.org/web-animations-1/#the-animatable-interface-mixin",
+          "title": "The Animatable interface mixin",
+          "number": "6.8"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-animatable-getanimations",
+        "href": "https://drafts.csswg.org/web-animations-1/#dom-animatable-getanimations",
+        "linkingText": [
+          "getAnimations(options)",
+          "getAnimations()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Animatable"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-animatable-interface-mixin",
+          "href": "https://drafts.csswg.org/web-animations-1/#the-animatable-interface-mixin",
+          "title": "The Animatable interface mixin",
+          "number": "6.8"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

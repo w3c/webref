@@ -1,0 +1,122 @@
+{
+  "name": "RequestDeviceOptions",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Web Bluetooth",
+      "url": "https://webbluetoothcg.github.io/web-bluetooth/"
+    },
+    "fragment": "dictionary RequestDeviceOptions {\n  sequence<BluetoothLEScanFilterInit> filters;\n  sequence<BluetoothServiceUUID> optionalServices = [];\n  sequence<unsigned short> optionalManufacturerData = [];\n  boolean acceptAllDevices = false;\n};",
+    "href": "https://webbluetoothcg.github.io/web-bluetooth/#dictdef-requestdeviceoptions"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://webbluetoothcg.github.io/web-bluetooth/": [
+      {
+        "id": "dictdef-requestdeviceoptions",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#dictdef-requestdeviceoptions",
+        "linkingText": [
+          "RequestDeviceOptions"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "device-discovery",
+          "href": "https://webbluetoothcg.github.io/web-bluetooth/#device-discovery",
+          "title": "Device Discovery",
+          "number": "3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-requestdeviceoptions-filters",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-requestdeviceoptions-filters",
+        "linkingText": [
+          "filters"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RequestDeviceOptions"
+        ],
+        "access": "public",
+        "informative": true,
+        "heading": {
+          "id": "device-discovery",
+          "href": "https://webbluetoothcg.github.io/web-bluetooth/#device-discovery",
+          "title": "Device Discovery",
+          "number": "3"
+        },
+        "definedIn": "note"
+      },
+      {
+        "id": "dom-requestdeviceoptions-optionalservices",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-requestdeviceoptions-optionalservices",
+        "linkingText": [
+          "optionalServices"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RequestDeviceOptions"
+        ],
+        "access": "public",
+        "informative": true,
+        "heading": {
+          "id": "device-discovery",
+          "href": "https://webbluetoothcg.github.io/web-bluetooth/#device-discovery",
+          "title": "Device Discovery",
+          "number": "3"
+        },
+        "definedIn": "note"
+      },
+      {
+        "id": "dom-requestdeviceoptions-optionalmanufacturerdata",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-requestdeviceoptions-optionalmanufacturerdata",
+        "linkingText": [
+          "optionalManufacturerData"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RequestDeviceOptions"
+        ],
+        "access": "public",
+        "informative": true,
+        "heading": {
+          "id": "device-discovery",
+          "href": "https://webbluetoothcg.github.io/web-bluetooth/#device-discovery",
+          "title": "Device Discovery",
+          "number": "3"
+        },
+        "definedIn": "note"
+      },
+      {
+        "id": "dom-requestdeviceoptions-acceptalldevices",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-requestdeviceoptions-acceptalldevices",
+        "linkingText": [
+          "acceptAllDevices"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RequestDeviceOptions"
+        ],
+        "access": "public",
+        "informative": true,
+        "heading": {
+          "id": "device-discovery",
+          "href": "https://webbluetoothcg.github.io/web-bluetooth/#device-discovery",
+          "title": "Device Discovery",
+          "number": "3"
+        },
+        "definedIn": "note"
+      }
+    ]
+  }
+}

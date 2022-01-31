@@ -1,0 +1,123 @@
+{
+  "name": "GPUShaderModule",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebGPU",
+      "url": "https://www.w3.org/TR/webgpu/"
+    },
+    "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUShaderModule {\n    Promise<GPUCompilationInfo> compilationInfo();\n};",
+    "href": "https://gpuweb.github.io/gpuweb/#gpushadermodule"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "WebGPU",
+        "url": "https://www.w3.org/TR/webgpu/"
+      },
+      "fragment": "GPUShaderModule includes GPUObjectBase;"
+    }
+  ],
+  "inheritance": null,
+  "includes": [
+    {
+      "name": "GPUObjectBase",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "WebGPU",
+          "url": "https://www.w3.org/TR/webgpu/"
+        },
+        "fragment": "interface mixin GPUObjectBase {\n    attribute (USVString or undefined) label;\n};",
+        "href": "https://gpuweb.github.io/gpuweb/#gpuobjectbase"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    }
+  ],
+  "dfns": {
+    "https://www.w3.org/TR/webgpu/": [
+      {
+        "id": "gpushadermodule",
+        "href": "https://gpuweb.github.io/gpuweb/#gpushadermodule",
+        "linkingText": [
+          "GPUShaderModule"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "shader-module",
+          "href": "https://gpuweb.github.io/gpuweb/#shader-module",
+          "title": "GPUShaderModule",
+          "number": "9.1"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-gpushadermodule-compilationinfo",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpushadermodule-compilationinfo",
+        "linkingText": [
+          "compilationInfo()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GPUShaderModule"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "shader-module-compilation-information",
+          "href": "https://gpuweb.github.io/gpuweb/#shader-module-compilation-information",
+          "title": "Shader Module Compilation Information",
+          "number": "9.1.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "gpuobjectbase",
+        "href": "https://gpuweb.github.io/gpuweb/#gpuobjectbase",
+        "linkingText": [
+          "GPUObjectBase"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "webgpu-interfaces",
+          "href": "https://gpuweb.github.io/gpuweb/#webgpu-interfaces",
+          "title": "WebGPU Interfaces",
+          "number": "3.1.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gpuobjectbase-label",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpuobjectbase-label",
+        "linkingText": [
+          "label"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "GPUObjectBase"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "webgpu-interfaces",
+          "href": "https://gpuweb.github.io/gpuweb/#webgpu-interfaces",
+          "title": "WebGPU Interfaces",
+          "number": "3.1.3"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

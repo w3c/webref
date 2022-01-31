@@ -1,0 +1,204 @@
+{
+  "name": "XRInputSource",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebXR Device API",
+      "url": "https://www.w3.org/TR/webxr/"
+    },
+    "fragment": "[SecureContext, Exposed=Window]\ninterface XRInputSource {\n  readonly attribute XRHandedness handedness;\n  readonly attribute XRTargetRayMode targetRayMode;\n  [SameObject] readonly attribute XRSpace targetRaySpace;\n  [SameObject] readonly attribute XRSpace? gripSpace;\n  [SameObject] readonly attribute FrozenArray<DOMString> profiles;\n};",
+    "href": "https://immersive-web.github.io/webxr/#xrinputsource"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "WebXR Gamepads Module - Level 1",
+        "url": "https://www.w3.org/TR/webxr-gamepads-module-1/"
+      },
+      "fragment": "partial interface XRInputSource {\n  [SameObject] readonly attribute Gamepad? gamepad;\n};"
+    },
+    {
+      "spec": {
+        "title": "WebXR Hand Input Module - Level 1",
+        "url": "https://www.w3.org/TR/webxr-hand-input-1/"
+      },
+      "fragment": "partial interface XRInputSource {\n   [SameObject] readonly attribute XRHand? hand;\n};"
+    }
+  ],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webxr/": [
+      {
+        "id": "xrinputsource",
+        "href": "https://immersive-web.github.io/webxr/#xrinputsource",
+        "linkingText": [
+          "XRInputSource"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrinputsource-interface",
+          "href": "https://immersive-web.github.io/webxr/#xrinputsource-interface",
+          "title": "XRInputSource",
+          "number": "10.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-xrinputsource-handedness",
+        "href": "https://immersive-web.github.io/webxr/#dom-xrinputsource-handedness",
+        "linkingText": [
+          "handedness"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XRInputSource"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrinputsource-interface",
+          "href": "https://immersive-web.github.io/webxr/#xrinputsource-interface",
+          "title": "XRInputSource",
+          "number": "10.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-xrinputsource-targetraymode",
+        "href": "https://immersive-web.github.io/webxr/#dom-xrinputsource-targetraymode",
+        "linkingText": [
+          "targetRayMode"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XRInputSource"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrinputsource-interface",
+          "href": "https://immersive-web.github.io/webxr/#xrinputsource-interface",
+          "title": "XRInputSource",
+          "number": "10.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-xrinputsource-targetrayspace",
+        "href": "https://immersive-web.github.io/webxr/#dom-xrinputsource-targetrayspace",
+        "linkingText": [
+          "targetRaySpace"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XRInputSource"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrinputsource-interface",
+          "href": "https://immersive-web.github.io/webxr/#xrinputsource-interface",
+          "title": "XRInputSource",
+          "number": "10.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-xrinputsource-gripspace",
+        "href": "https://immersive-web.github.io/webxr/#dom-xrinputsource-gripspace",
+        "linkingText": [
+          "gripSpace"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XRInputSource"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrinputsource-interface",
+          "href": "https://immersive-web.github.io/webxr/#xrinputsource-interface",
+          "title": "XRInputSource",
+          "number": "10.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-xrinputsource-profiles",
+        "href": "https://immersive-web.github.io/webxr/#dom-xrinputsource-profiles",
+        "linkingText": [
+          "profiles"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XRInputSource"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrinputsource-interface",
+          "href": "https://immersive-web.github.io/webxr/#xrinputsource-interface",
+          "title": "XRInputSource",
+          "number": "10.1"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://www.w3.org/TR/webxr-gamepads-module-1/": [
+      {
+        "id": "dom-xrinputsource-gamepad",
+        "href": "https://immersive-web.github.io/webxr-gamepads-module/#dom-xrinputsource-gamepad",
+        "linkingText": [
+          "gamepad"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XRInputSource"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrinputsource-interface",
+          "href": "https://immersive-web.github.io/webxr-gamepads-module/#xrinputsource-interface",
+          "title": "XRInputSource",
+          "number": "2.1"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://www.w3.org/TR/webxr-hand-input-1/": [
+      {
+        "id": "dom-xrinputsource-hand",
+        "href": "https://immersive-web.github.io/webxr-hand-input/#dom-xrinputsource-hand",
+        "linkingText": [
+          "hand"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XRInputSource"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrinputsource-interface",
+          "href": "https://immersive-web.github.io/webxr-hand-input/#xrinputsource-interface",
+          "title": "XRInputSource",
+          "number": "3.1"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

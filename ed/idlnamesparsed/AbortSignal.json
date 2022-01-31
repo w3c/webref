@@ -1,0 +1,264 @@
+{
+  "name": "AbortSignal",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "DOM Standard",
+      "url": "https://dom.spec.whatwg.org/"
+    },
+    "fragment": "[Exposed=*]\ninterface AbortSignal : EventTarget {\n  [NewObject] static AbortSignal abort(optional any reason);\n\n  readonly attribute boolean aborted;\n  readonly attribute any reason;\n  undefined throwIfAborted();\n\n  attribute EventHandler onabort;\n};",
+    "href": "https://dom.spec.whatwg.org/#abortsignal"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "EventTarget",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=*]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+      "href": "https://dom.spec.whatwg.org/#eventtarget"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "abortsignal",
+        "href": "https://dom.spec.whatwg.org/#abortsignal",
+        "linkingText": [
+          "AbortSignal"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-AbortSignal",
+          "href": "https://dom.spec.whatwg.org/#interface-AbortSignal",
+          "title": "Interface AbortSignal",
+          "number": "3.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-abortsignal-abort",
+        "href": "https://dom.spec.whatwg.org/#dom-abortsignal-abort",
+        "linkingText": [
+          "abort(reason)",
+          "abort()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "AbortSignal"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-AbortSignal",
+          "href": "https://dom.spec.whatwg.org/#interface-AbortSignal",
+          "title": "Interface AbortSignal",
+          "number": "3.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-abortsignal-aborted",
+        "href": "https://dom.spec.whatwg.org/#dom-abortsignal-aborted",
+        "linkingText": [
+          "aborted"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "AbortSignal"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-AbortSignal",
+          "href": "https://dom.spec.whatwg.org/#interface-AbortSignal",
+          "title": "Interface AbortSignal",
+          "number": "3.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-abortsignal-reason",
+        "href": "https://dom.spec.whatwg.org/#dom-abortsignal-reason",
+        "linkingText": [
+          "reason"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "AbortSignal"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-AbortSignal",
+          "href": "https://dom.spec.whatwg.org/#interface-AbortSignal",
+          "title": "Interface AbortSignal",
+          "number": "3.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-abortsignal-throwifaborted",
+        "href": "https://dom.spec.whatwg.org/#dom-abortsignal-throwifaborted",
+        "linkingText": [
+          "throwIfAborted()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "AbortSignal"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-AbortSignal",
+          "href": "https://dom.spec.whatwg.org/#interface-AbortSignal",
+          "title": "Interface AbortSignal",
+          "number": "3.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-abortsignal-onabort",
+        "href": "https://dom.spec.whatwg.org/#dom-abortsignal-onabort",
+        "linkingText": [
+          "onabort"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "AbortSignal"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-AbortSignal",
+          "href": "https://dom.spec.whatwg.org/#interface-AbortSignal",
+          "title": "Interface AbortSignal",
+          "number": "3.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "eventtarget",
+        "href": "https://dom.spec.whatwg.org/#eventtarget",
+        "linkingText": [
+          "EventTarget"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventtarget-eventtarget",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-eventtarget",
+        "linkingText": [
+          "EventTarget()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-addeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-addeventlistener",
+        "linkingText": [
+          "addEventListener(type, callback, options)",
+          "addEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-removeeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-removeeventlistener",
+        "linkingText": [
+          "removeEventListener(type, callback, options)",
+          "removeEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-dispatchevent",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-dispatchevent",
+        "linkingText": [
+          "dispatchEvent(event)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

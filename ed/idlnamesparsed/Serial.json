@@ -1,0 +1,257 @@
+{
+  "name": "Serial",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Web Serial API",
+      "url": "https://wicg.github.io/serial/"
+    },
+    "fragment": "[Exposed=(DedicatedWorker, Window), SecureContext]\ninterface Serial : EventTarget {\n  attribute EventHandler onconnect;\n  attribute EventHandler ondisconnect;\n  Promise<sequence<SerialPort>> getPorts();\n  [Exposed=Window] Promise<SerialPort> requestPort(optional SerialPortRequestOptions options = {});\n};",
+    "href": "https://wicg.github.io/serial/#dom-serial"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "EventTarget",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=*]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+      "href": "https://dom.spec.whatwg.org/#eventtarget"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://wicg.github.io/serial/": [
+      {
+        "id": "dom-serial",
+        "href": "https://wicg.github.io/serial/#dom-serial",
+        "linkingText": [
+          "Serial"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "serial-interface",
+          "href": "https://wicg.github.io/serial/#serial-interface",
+          "title": "Serial interface",
+          "number": "3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-serial-onconnect",
+        "href": "https://wicg.github.io/serial/#dom-serial-onconnect",
+        "linkingText": [
+          "onconnect"
+        ],
+        "localLinkingText": [
+          "Serial.onconnect"
+        ],
+        "type": "attribute",
+        "for": [
+          "Serial"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "onconnect-attribute",
+          "href": "https://wicg.github.io/serial/#onconnect-attribute",
+          "title": "onconnect attribute",
+          "number": "3.3"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-serial-ondisconnect",
+        "href": "https://wicg.github.io/serial/#dom-serial-ondisconnect",
+        "linkingText": [
+          "ondisconnect"
+        ],
+        "localLinkingText": [
+          "Serial.ondisconnect"
+        ],
+        "type": "attribute",
+        "for": [
+          "Serial"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "ondisconnect-attribute",
+          "href": "https://wicg.github.io/serial/#ondisconnect-attribute",
+          "title": "ondisconnect attribute",
+          "number": "3.4"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-serial-getports",
+        "href": "https://wicg.github.io/serial/#dom-serial-getports",
+        "linkingText": [
+          "getPorts()"
+        ],
+        "localLinkingText": [
+          "Serial.getPorts",
+          "Serial.getPorts()",
+          "getPorts"
+        ],
+        "type": "method",
+        "for": [
+          "Serial"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "getports-method",
+          "href": "https://wicg.github.io/serial/#getports-method",
+          "title": "getPorts() method",
+          "number": "3.2"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-serial-requestport",
+        "href": "https://wicg.github.io/serial/#dom-serial-requestport",
+        "linkingText": [
+          "requestPort()",
+          "requestPort(options)"
+        ],
+        "localLinkingText": [
+          "Serial.requestPort",
+          "Serial.requestPort()",
+          "requestPort"
+        ],
+        "type": "method",
+        "for": [
+          "Serial"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "requestport-method",
+          "href": "https://wicg.github.io/serial/#requestport-method",
+          "title": "requestPort() method",
+          "number": "3.1"
+        },
+        "definedIn": "heading"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "eventtarget",
+        "href": "https://dom.spec.whatwg.org/#eventtarget",
+        "linkingText": [
+          "EventTarget"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventtarget-eventtarget",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-eventtarget",
+        "linkingText": [
+          "EventTarget()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-addeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-addeventlistener",
+        "linkingText": [
+          "addEventListener(type, callback, options)",
+          "addEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-removeeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-removeeventlistener",
+        "linkingText": [
+          "removeEventListener(type, callback, options)",
+          "removeEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-dispatchevent",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-dispatchevent",
+        "linkingText": [
+          "dispatchEvent(event)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

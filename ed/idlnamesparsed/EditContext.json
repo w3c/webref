@@ -1,0 +1,688 @@
+{
+  "name": "EditContext",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "EditContext API",
+      "url": "https://www.w3.org/TR/edit-context/"
+    },
+    "fragment": "[Exposed=Window]\ninterface EditContext : EventTarget {\n    constructor(optional EditContextInit options = {});\n\n    undefined updateText(unsigned long rangeStart, unsigned long rangeEnd,\n        DOMString text);\n    undefined updateSelection(unsigned long start, unsigned long end);\n    undefined updateControlBound(DOMRect controlBound);\n    undefined updateSelectionBound(DOMRect selectionBound);\n    undefined updateCharacterBounds(unsigned long rangeStart, sequence<DOMRect> characterBounds);\n\n    sequence<Element> attachedElements();\n\n    readonly attribute DOMString text;\n    readonly attribute unsigned long selectionStart;\n    readonly attribute unsigned long selectionEnd;\n    readonly attribute unsigned long compositionRangeStart;\n    readonly attribute unsigned long compositionRangeEnd;\n    readonly attribute boolean isInComposition;\n    readonly attribute DOMRect controlBound;\n    readonly attribute DOMRect selectionBound;\n    readonly attribute unsigned long characterBoundsRangeStart;\n    sequence<DOMRect> characterBounds();\n\n    attribute EventHandler ontextupdate;\n    attribute EventHandler ontextformatupdate;\n    attribute EventHandler oncharacterboundsupdate;\n    attribute EventHandler oncompositionstart;\n    attribute EventHandler oncompositionend;\n};",
+    "href": "https://w3c.github.io/edit-context/#dom-editcontext"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "EventTarget",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=*]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+      "href": "https://dom.spec.whatwg.org/#eventtarget"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/edit-context/": [
+      {
+        "id": "dom-editcontext",
+        "href": "https://w3c.github.io/edit-context/#dom-editcontext",
+        "linkingText": [
+          "EditContext"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-editcontext-interface",
+          "href": "https://w3c.github.io/edit-context/#the-editcontext-interface",
+          "title": "The EditContext Interface",
+          "number": "4"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-editcontext-constructor",
+        "href": "https://w3c.github.io/edit-context/#dom-editcontext-constructor",
+        "linkingText": [
+          "constructor()",
+          "constructor(options)"
+        ],
+        "localLinkingText": [
+          "EditContext.constructor",
+          "EditContext.constructor()",
+          "constructor"
+        ],
+        "type": "constructor",
+        "for": [
+          "EditContext"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-editcontext-interface",
+          "href": "https://w3c.github.io/edit-context/#the-editcontext-interface",
+          "title": "The EditContext Interface",
+          "number": "4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-editcontext-updatetext",
+        "href": "https://w3c.github.io/edit-context/#dom-editcontext-updatetext",
+        "linkingText": [
+          "updateText()",
+          "updateText(rangeStart, rangeEnd, text)"
+        ],
+        "localLinkingText": [
+          "EditContext.updateText",
+          "EditContext.updateText()",
+          "updateText"
+        ],
+        "type": "method",
+        "for": [
+          "EditContext"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-editcontext-interface",
+          "href": "https://w3c.github.io/edit-context/#the-editcontext-interface",
+          "title": "The EditContext Interface",
+          "number": "4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-editcontext-updateselection",
+        "href": "https://w3c.github.io/edit-context/#dom-editcontext-updateselection",
+        "linkingText": [
+          "updateSelection()",
+          "updateSelection(start, end)"
+        ],
+        "localLinkingText": [
+          "EditContext.updateSelection",
+          "EditContext.updateSelection()",
+          "updateSelection"
+        ],
+        "type": "method",
+        "for": [
+          "EditContext"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-editcontext-interface",
+          "href": "https://w3c.github.io/edit-context/#the-editcontext-interface",
+          "title": "The EditContext Interface",
+          "number": "4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-editcontext-updatecontrolbound",
+        "href": "https://w3c.github.io/edit-context/#dom-editcontext-updatecontrolbound",
+        "linkingText": [
+          "updateControlBound()",
+          "updateControlBound(controlBound)"
+        ],
+        "localLinkingText": [
+          "EditContext.updateControlBound",
+          "EditContext.updateControlBound()",
+          "updateControlBound"
+        ],
+        "type": "method",
+        "for": [
+          "EditContext"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-editcontext-interface",
+          "href": "https://w3c.github.io/edit-context/#the-editcontext-interface",
+          "title": "The EditContext Interface",
+          "number": "4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-editcontext-updateselectionbound",
+        "href": "https://w3c.github.io/edit-context/#dom-editcontext-updateselectionbound",
+        "linkingText": [
+          "updateSelectionBound()",
+          "updateSelectionBound(selectionBound)"
+        ],
+        "localLinkingText": [
+          "EditContext.updateSelectionBound",
+          "EditContext.updateSelectionBound()",
+          "updateSelectionBound"
+        ],
+        "type": "method",
+        "for": [
+          "EditContext"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-editcontext-interface",
+          "href": "https://w3c.github.io/edit-context/#the-editcontext-interface",
+          "title": "The EditContext Interface",
+          "number": "4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-editcontext-updatecharacterbounds",
+        "href": "https://w3c.github.io/edit-context/#dom-editcontext-updatecharacterbounds",
+        "linkingText": [
+          "updateCharacterBounds()",
+          "updateCharacterBounds(rangeStart, characterBounds)"
+        ],
+        "localLinkingText": [
+          "EditContext.updateCharacterBounds",
+          "EditContext.updateCharacterBounds()",
+          "updateCharacterBounds"
+        ],
+        "type": "method",
+        "for": [
+          "EditContext"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-editcontext-interface",
+          "href": "https://w3c.github.io/edit-context/#the-editcontext-interface",
+          "title": "The EditContext Interface",
+          "number": "4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-editcontext-attachedelements",
+        "href": "https://w3c.github.io/edit-context/#dom-editcontext-attachedelements",
+        "linkingText": [
+          "attachedElements()"
+        ],
+        "localLinkingText": [
+          "EditContext.attachedElements",
+          "EditContext.attachedElements()",
+          "attachedElements"
+        ],
+        "type": "method",
+        "for": [
+          "EditContext"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-editcontext-interface",
+          "href": "https://w3c.github.io/edit-context/#the-editcontext-interface",
+          "title": "The EditContext Interface",
+          "number": "4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-editcontext-text",
+        "href": "https://w3c.github.io/edit-context/#dom-editcontext-text",
+        "linkingText": [
+          "text"
+        ],
+        "localLinkingText": [
+          "EditContext.text"
+        ],
+        "type": "attribute",
+        "for": [
+          "EditContext"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-editcontext-interface",
+          "href": "https://w3c.github.io/edit-context/#the-editcontext-interface",
+          "title": "The EditContext Interface",
+          "number": "4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-editcontext-selectionstart",
+        "href": "https://w3c.github.io/edit-context/#dom-editcontext-selectionstart",
+        "linkingText": [
+          "selectionStart"
+        ],
+        "localLinkingText": [
+          "EditContext.selectionStart"
+        ],
+        "type": "attribute",
+        "for": [
+          "EditContext"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-editcontext-interface",
+          "href": "https://w3c.github.io/edit-context/#the-editcontext-interface",
+          "title": "The EditContext Interface",
+          "number": "4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-editcontext-selectionend",
+        "href": "https://w3c.github.io/edit-context/#dom-editcontext-selectionend",
+        "linkingText": [
+          "selectionEnd"
+        ],
+        "localLinkingText": [
+          "EditContext.selectionEnd"
+        ],
+        "type": "attribute",
+        "for": [
+          "EditContext"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-editcontext-interface",
+          "href": "https://w3c.github.io/edit-context/#the-editcontext-interface",
+          "title": "The EditContext Interface",
+          "number": "4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-editcontext-compositionrangestart",
+        "href": "https://w3c.github.io/edit-context/#dom-editcontext-compositionrangestart",
+        "linkingText": [
+          "compositionRangeStart"
+        ],
+        "localLinkingText": [
+          "EditContext.compositionRangeStart"
+        ],
+        "type": "attribute",
+        "for": [
+          "EditContext"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-editcontext-interface",
+          "href": "https://w3c.github.io/edit-context/#the-editcontext-interface",
+          "title": "The EditContext Interface",
+          "number": "4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-editcontext-compositionrangeend",
+        "href": "https://w3c.github.io/edit-context/#dom-editcontext-compositionrangeend",
+        "linkingText": [
+          "compositionRangeEnd"
+        ],
+        "localLinkingText": [
+          "EditContext.compositionRangeEnd"
+        ],
+        "type": "attribute",
+        "for": [
+          "EditContext"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-editcontext-interface",
+          "href": "https://w3c.github.io/edit-context/#the-editcontext-interface",
+          "title": "The EditContext Interface",
+          "number": "4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-editcontext-isincomposition",
+        "href": "https://w3c.github.io/edit-context/#dom-editcontext-isincomposition",
+        "linkingText": [
+          "isInComposition"
+        ],
+        "localLinkingText": [
+          "EditContext.isInComposition"
+        ],
+        "type": "attribute",
+        "for": [
+          "EditContext"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-editcontext-interface",
+          "href": "https://w3c.github.io/edit-context/#the-editcontext-interface",
+          "title": "The EditContext Interface",
+          "number": "4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-editcontext-controlbound",
+        "href": "https://w3c.github.io/edit-context/#dom-editcontext-controlbound",
+        "linkingText": [
+          "controlBound"
+        ],
+        "localLinkingText": [
+          "EditContext.controlBound"
+        ],
+        "type": "attribute",
+        "for": [
+          "EditContext"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-editcontext-interface",
+          "href": "https://w3c.github.io/edit-context/#the-editcontext-interface",
+          "title": "The EditContext Interface",
+          "number": "4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-editcontext-selectionbound",
+        "href": "https://w3c.github.io/edit-context/#dom-editcontext-selectionbound",
+        "linkingText": [
+          "selectionBound"
+        ],
+        "localLinkingText": [
+          "EditContext.selectionBound"
+        ],
+        "type": "attribute",
+        "for": [
+          "EditContext"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-editcontext-interface",
+          "href": "https://w3c.github.io/edit-context/#the-editcontext-interface",
+          "title": "The EditContext Interface",
+          "number": "4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-editcontext-characterboundsrangestart",
+        "href": "https://w3c.github.io/edit-context/#dom-editcontext-characterboundsrangestart",
+        "linkingText": [
+          "characterBoundsRangeStart"
+        ],
+        "localLinkingText": [
+          "EditContext.characterBoundsRangeStart"
+        ],
+        "type": "attribute",
+        "for": [
+          "EditContext"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-editcontext-interface",
+          "href": "https://w3c.github.io/edit-context/#the-editcontext-interface",
+          "title": "The EditContext Interface",
+          "number": "4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-editcontext-characterbounds",
+        "href": "https://w3c.github.io/edit-context/#dom-editcontext-characterbounds",
+        "linkingText": [
+          "characterBounds()"
+        ],
+        "localLinkingText": [
+          "EditContext.characterBounds",
+          "EditContext.characterBounds()",
+          "characterBounds"
+        ],
+        "type": "method",
+        "for": [
+          "EditContext"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-editcontext-interface",
+          "href": "https://w3c.github.io/edit-context/#the-editcontext-interface",
+          "title": "The EditContext Interface",
+          "number": "4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-editcontext-ontextupdate",
+        "href": "https://w3c.github.io/edit-context/#dom-editcontext-ontextupdate",
+        "linkingText": [
+          "ontextupdate"
+        ],
+        "localLinkingText": [
+          "EditContext.ontextupdate"
+        ],
+        "type": "attribute",
+        "for": [
+          "EditContext"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-editcontext-interface",
+          "href": "https://w3c.github.io/edit-context/#the-editcontext-interface",
+          "title": "The EditContext Interface",
+          "number": "4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-editcontext-ontextformatupdate",
+        "href": "https://w3c.github.io/edit-context/#dom-editcontext-ontextformatupdate",
+        "linkingText": [
+          "ontextformatupdate"
+        ],
+        "localLinkingText": [
+          "EditContext.ontextformatupdate"
+        ],
+        "type": "attribute",
+        "for": [
+          "EditContext"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-editcontext-interface",
+          "href": "https://w3c.github.io/edit-context/#the-editcontext-interface",
+          "title": "The EditContext Interface",
+          "number": "4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-editcontext-oncharacterboundsupdate",
+        "href": "https://w3c.github.io/edit-context/#dom-editcontext-oncharacterboundsupdate",
+        "linkingText": [
+          "oncharacterboundsupdate"
+        ],
+        "localLinkingText": [
+          "EditContext.oncharacterboundsupdate"
+        ],
+        "type": "attribute",
+        "for": [
+          "EditContext"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-editcontext-interface",
+          "href": "https://w3c.github.io/edit-context/#the-editcontext-interface",
+          "title": "The EditContext Interface",
+          "number": "4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-editcontext-oncompositionstart",
+        "href": "https://w3c.github.io/edit-context/#dom-editcontext-oncompositionstart",
+        "linkingText": [
+          "oncompositionstart"
+        ],
+        "localLinkingText": [
+          "EditContext.oncompositionstart"
+        ],
+        "type": "attribute",
+        "for": [
+          "EditContext"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-editcontext-interface",
+          "href": "https://w3c.github.io/edit-context/#the-editcontext-interface",
+          "title": "The EditContext Interface",
+          "number": "4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-editcontext-oncompositionend",
+        "href": "https://w3c.github.io/edit-context/#dom-editcontext-oncompositionend",
+        "linkingText": [
+          "oncompositionend"
+        ],
+        "localLinkingText": [
+          "EditContext.oncompositionend"
+        ],
+        "type": "attribute",
+        "for": [
+          "EditContext"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-editcontext-interface",
+          "href": "https://w3c.github.io/edit-context/#the-editcontext-interface",
+          "title": "The EditContext Interface",
+          "number": "4"
+        },
+        "definedIn": "dt"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "eventtarget",
+        "href": "https://dom.spec.whatwg.org/#eventtarget",
+        "linkingText": [
+          "EventTarget"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventtarget-eventtarget",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-eventtarget",
+        "linkingText": [
+          "EventTarget()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-addeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-addeventlistener",
+        "linkingText": [
+          "addEventListener(type, callback, options)",
+          "addEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-removeeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-removeeventlistener",
+        "linkingText": [
+          "removeEventListener(type, callback, options)",
+          "removeEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-dispatchevent",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-dispatchevent",
+        "linkingText": [
+          "dispatchEvent(event)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

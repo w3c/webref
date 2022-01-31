@@ -1,0 +1,197 @@
+{
+  "name": "XRWebGLSubImage",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebXR Layers API Level 1",
+      "url": "https://www.w3.org/TR/webxrlayers-1/"
+    },
+    "fragment": "[Exposed=Window] interface XRWebGLSubImage : XRSubImage {\n  [SameObject] readonly attribute WebGLTexture colorTexture;\n  [SameObject] readonly attribute WebGLTexture? depthStencilTexture;\n  readonly attribute unsigned long? imageIndex;\n  readonly attribute unsigned long textureWidth;\n  readonly attribute unsigned long textureHeight;\n};",
+    "href": "https://immersive-web.github.io/layers/#xrwebglsubimage"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "XRSubImage",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "WebXR Layers API Level 1",
+        "url": "https://www.w3.org/TR/webxrlayers-1/"
+      },
+      "fragment": "[Exposed=Window] interface XRSubImage {\n  [SameObject] readonly attribute XRViewport viewport;\n};",
+      "href": "https://immersive-web.github.io/layers/#xrsubimage"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webxrlayers-1/": [
+      {
+        "id": "xrwebglsubimage",
+        "href": "https://immersive-web.github.io/layers/#xrwebglsubimage",
+        "linkingText": [
+          "XRWebGLSubImage"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrwebglsubimagetype",
+          "href": "https://immersive-web.github.io/layers/#xrwebglsubimagetype",
+          "title": "XRWebGLSubImage",
+          "number": "5.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-xrwebglsubimage-colortexture",
+        "href": "https://immersive-web.github.io/layers/#dom-xrwebglsubimage-colortexture",
+        "linkingText": [
+          "colorTexture"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XRWebGLSubImage"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrwebglsubimagetype",
+          "href": "https://immersive-web.github.io/layers/#xrwebglsubimagetype",
+          "title": "XRWebGLSubImage",
+          "number": "5.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-xrwebglsubimage-depthstenciltexture",
+        "href": "https://immersive-web.github.io/layers/#dom-xrwebglsubimage-depthstenciltexture",
+        "linkingText": [
+          "depthStencilTexture"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XRWebGLSubImage"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrwebglsubimagetype",
+          "href": "https://immersive-web.github.io/layers/#xrwebglsubimagetype",
+          "title": "XRWebGLSubImage",
+          "number": "5.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-xrwebglsubimage-imageindex",
+        "href": "https://immersive-web.github.io/layers/#dom-xrwebglsubimage-imageindex",
+        "linkingText": [
+          "imageIndex"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XRWebGLSubImage"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrwebglsubimagetype",
+          "href": "https://immersive-web.github.io/layers/#xrwebglsubimagetype",
+          "title": "XRWebGLSubImage",
+          "number": "5.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-xrwebglsubimage-texturewidth",
+        "href": "https://immersive-web.github.io/layers/#dom-xrwebglsubimage-texturewidth",
+        "linkingText": [
+          "textureWidth"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XRWebGLSubImage"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrwebglsubimagetype",
+          "href": "https://immersive-web.github.io/layers/#xrwebglsubimagetype",
+          "title": "XRWebGLSubImage",
+          "number": "5.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-xrwebglsubimage-textureheight",
+        "href": "https://immersive-web.github.io/layers/#dom-xrwebglsubimage-textureheight",
+        "linkingText": [
+          "textureHeight"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XRWebGLSubImage"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrwebglsubimagetype",
+          "href": "https://immersive-web.github.io/layers/#xrwebglsubimagetype",
+          "title": "XRWebGLSubImage",
+          "number": "5.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "xrsubimage",
+        "href": "https://immersive-web.github.io/layers/#xrsubimage",
+        "linkingText": [
+          "XRSubImage"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrsubimagetype",
+          "href": "https://immersive-web.github.io/layers/#xrsubimagetype",
+          "title": "XRSubImage",
+          "number": "5.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-xrsubimage-viewport",
+        "href": "https://immersive-web.github.io/layers/#dom-xrsubimage-viewport",
+        "linkingText": [
+          "viewport"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XRSubImage"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrsubimagetype",
+          "href": "https://immersive-web.github.io/layers/#xrsubimagetype",
+          "title": "XRSubImage",
+          "number": "5.1"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

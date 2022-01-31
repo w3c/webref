@@ -1,0 +1,144 @@
+{
+  "name": "ReadableByteStreamController",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Streams Standard",
+      "url": "https://streams.spec.whatwg.org/"
+    },
+    "fragment": "[Exposed=*]\ninterface ReadableByteStreamController {\n  readonly attribute ReadableStreamBYOBRequest? byobRequest;\n  readonly attribute unrestricted double? desiredSize;\n\n  undefined close();\n  undefined enqueue(ArrayBufferView chunk);\n  undefined error(optional any e);\n};",
+    "href": "https://streams.spec.whatwg.org/#readablebytestreamcontroller"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://streams.spec.whatwg.org/": [
+      {
+        "id": "readablebytestreamcontroller",
+        "href": "https://streams.spec.whatwg.org/#readablebytestreamcontroller",
+        "linkingText": [
+          "ReadableByteStreamController"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "rbs-controller-class-definition",
+          "href": "https://streams.spec.whatwg.org/#rbs-controller-class-definition",
+          "title": "Interface definition",
+          "number": "4.7.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "rbs-controller-byob-request",
+        "href": "https://streams.spec.whatwg.org/#rbs-controller-byob-request",
+        "linkingText": [
+          "byobRequest"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "ReadableByteStreamController"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "rbs-controller-prototype",
+          "href": "https://streams.spec.whatwg.org/#rbs-controller-prototype",
+          "title": "Methods and properties",
+          "number": "4.7.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "rbs-controller-desired-size",
+        "href": "https://streams.spec.whatwg.org/#rbs-controller-desired-size",
+        "linkingText": [
+          "desiredSize"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "ReadableByteStreamController"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "rbs-controller-prototype",
+          "href": "https://streams.spec.whatwg.org/#rbs-controller-prototype",
+          "title": "Methods and properties",
+          "number": "4.7.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "rbs-controller-close",
+        "href": "https://streams.spec.whatwg.org/#rbs-controller-close",
+        "linkingText": [
+          "close()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "ReadableByteStreamController"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "rbs-controller-prototype",
+          "href": "https://streams.spec.whatwg.org/#rbs-controller-prototype",
+          "title": "Methods and properties",
+          "number": "4.7.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "rbs-controller-enqueue",
+        "href": "https://streams.spec.whatwg.org/#rbs-controller-enqueue",
+        "linkingText": [
+          "enqueue(chunk)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "ReadableByteStreamController"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "rbs-controller-prototype",
+          "href": "https://streams.spec.whatwg.org/#rbs-controller-prototype",
+          "title": "Methods and properties",
+          "number": "4.7.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "rbs-controller-error",
+        "href": "https://streams.spec.whatwg.org/#rbs-controller-error",
+        "linkingText": [
+          "error(e)",
+          "error()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "ReadableByteStreamController"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "rbs-controller-prototype",
+          "href": "https://streams.spec.whatwg.org/#rbs-controller-prototype",
+          "title": "Methods and properties",
+          "number": "4.7.3"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

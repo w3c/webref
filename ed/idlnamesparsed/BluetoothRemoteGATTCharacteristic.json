@@ -1,0 +1,477 @@
+{
+  "name": "BluetoothRemoteGATTCharacteristic",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Web Bluetooth",
+      "url": "https://webbluetoothcg.github.io/web-bluetooth/"
+    },
+    "fragment": "[Exposed=Window, SecureContext]\ninterface BluetoothRemoteGATTCharacteristic : EventTarget {\n  [SameObject]\n  readonly attribute BluetoothRemoteGATTService service;\n  readonly attribute UUID uuid;\n  readonly attribute BluetoothCharacteristicProperties properties;\n  readonly attribute DataView? value;\n  Promise<BluetoothRemoteGATTDescriptor> getDescriptor(BluetoothDescriptorUUID descriptor);\n  Promise<sequence<BluetoothRemoteGATTDescriptor>>\n    getDescriptors(optional BluetoothDescriptorUUID descriptor);\n  Promise<DataView> readValue();\n  Promise<undefined> writeValue(BufferSource value);\n  Promise<undefined> writeValueWithResponse(BufferSource value);\n  Promise<undefined> writeValueWithoutResponse(BufferSource value);\n  Promise<BluetoothRemoteGATTCharacteristic> startNotifications();\n  Promise<BluetoothRemoteGATTCharacteristic> stopNotifications();\n};",
+    "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetoothremotegattcharacteristic"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "Web Bluetooth",
+        "url": "https://webbluetoothcg.github.io/web-bluetooth/"
+      },
+      "fragment": "BluetoothRemoteGATTCharacteristic includes CharacteristicEventHandlers;"
+    }
+  ],
+  "inheritance": {
+    "name": "EventTarget",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=*]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+      "href": "https://dom.spec.whatwg.org/#eventtarget"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [
+    {
+      "name": "CharacteristicEventHandlers",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "Web Bluetooth",
+          "url": "https://webbluetoothcg.github.io/web-bluetooth/"
+        },
+        "fragment": "[SecureContext]\ninterface mixin CharacteristicEventHandlers {\n  attribute EventHandler oncharacteristicvaluechanged;\n};",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#characteristiceventhandlers"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    }
+  ],
+  "dfns": {
+    "https://webbluetoothcg.github.io/web-bluetooth/": [
+      {
+        "id": "bluetoothremotegattcharacteristic",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetoothremotegattcharacteristic",
+        "linkingText": [
+          "BluetoothRemoteGATTCharacteristic"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "bluetoothgattcharacteristic-interface",
+          "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetoothgattcharacteristic-interface",
+          "title": "BluetoothRemoteGATTCharacteristic",
+          "number": "5.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-bluetoothremotegattcharacteristic-service",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothremotegattcharacteristic-service",
+        "linkingText": [
+          "service"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "BluetoothRemoteGATTCharacteristic"
+        ],
+        "access": "public",
+        "informative": true,
+        "heading": {
+          "id": "bluetoothgattcharacteristic-interface",
+          "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetoothgattcharacteristic-interface",
+          "title": "BluetoothRemoteGATTCharacteristic",
+          "number": "5.4"
+        },
+        "definedIn": "note"
+      },
+      {
+        "id": "dom-bluetoothremotegattcharacteristic-uuid",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothremotegattcharacteristic-uuid",
+        "linkingText": [
+          "uuid"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "BluetoothRemoteGATTCharacteristic"
+        ],
+        "access": "public",
+        "informative": true,
+        "heading": {
+          "id": "bluetoothgattcharacteristic-interface",
+          "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetoothgattcharacteristic-interface",
+          "title": "BluetoothRemoteGATTCharacteristic",
+          "number": "5.4"
+        },
+        "definedIn": "note"
+      },
+      {
+        "id": "dom-bluetoothremotegattcharacteristic-properties",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothremotegattcharacteristic-properties",
+        "linkingText": [
+          "properties"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "BluetoothRemoteGATTCharacteristic"
+        ],
+        "access": "public",
+        "informative": true,
+        "heading": {
+          "id": "bluetoothgattcharacteristic-interface",
+          "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetoothgattcharacteristic-interface",
+          "title": "BluetoothRemoteGATTCharacteristic",
+          "number": "5.4"
+        },
+        "definedIn": "note"
+      },
+      {
+        "id": "dom-bluetoothremotegattcharacteristic-value",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothremotegattcharacteristic-value",
+        "linkingText": [
+          "value"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "BluetoothRemoteGATTCharacteristic"
+        ],
+        "access": "public",
+        "informative": true,
+        "heading": {
+          "id": "bluetoothgattcharacteristic-interface",
+          "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetoothgattcharacteristic-interface",
+          "title": "BluetoothRemoteGATTCharacteristic",
+          "number": "5.4"
+        },
+        "definedIn": "note"
+      },
+      {
+        "id": "dom-bluetoothremotegattcharacteristic-getdescriptor",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothremotegattcharacteristic-getdescriptor",
+        "linkingText": [
+          "getDescriptor(descriptor)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "BluetoothRemoteGATTCharacteristic"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "bluetoothgattcharacteristic-interface",
+          "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetoothgattcharacteristic-interface",
+          "title": "BluetoothRemoteGATTCharacteristic",
+          "number": "5.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-bluetoothremotegattcharacteristic-getdescriptors",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothremotegattcharacteristic-getdescriptors",
+        "linkingText": [
+          "getDescriptors(descriptor)",
+          "getDescriptors()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "BluetoothRemoteGATTCharacteristic"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "bluetoothgattcharacteristic-interface",
+          "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetoothgattcharacteristic-interface",
+          "title": "BluetoothRemoteGATTCharacteristic",
+          "number": "5.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-bluetoothremotegattcharacteristic-readvalue",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothremotegattcharacteristic-readvalue",
+        "linkingText": [
+          "readValue()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "BluetoothRemoteGATTCharacteristic"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "bluetoothgattcharacteristic-interface",
+          "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetoothgattcharacteristic-interface",
+          "title": "BluetoothRemoteGATTCharacteristic",
+          "number": "5.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-bluetoothremotegattcharacteristic-writevalue",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothremotegattcharacteristic-writevalue",
+        "linkingText": [
+          "writeValue(value)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "BluetoothRemoteGATTCharacteristic"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "bluetoothgattcharacteristic-interface",
+          "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetoothgattcharacteristic-interface",
+          "title": "BluetoothRemoteGATTCharacteristic",
+          "number": "5.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-bluetoothremotegattcharacteristic-writevaluewithresponse",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothremotegattcharacteristic-writevaluewithresponse",
+        "linkingText": [
+          "writeValueWithResponse(value)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "BluetoothRemoteGATTCharacteristic"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "bluetoothgattcharacteristic-interface",
+          "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetoothgattcharacteristic-interface",
+          "title": "BluetoothRemoteGATTCharacteristic",
+          "number": "5.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-bluetoothremotegattcharacteristic-writevaluewithoutresponse",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothremotegattcharacteristic-writevaluewithoutresponse",
+        "linkingText": [
+          "writeValueWithoutResponse(value)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "BluetoothRemoteGATTCharacteristic"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "bluetoothgattcharacteristic-interface",
+          "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetoothgattcharacteristic-interface",
+          "title": "BluetoothRemoteGATTCharacteristic",
+          "number": "5.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-bluetoothremotegattcharacteristic-startnotifications",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothremotegattcharacteristic-startnotifications",
+        "linkingText": [
+          "startNotifications()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "BluetoothRemoteGATTCharacteristic"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "bluetoothgattcharacteristic-interface",
+          "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetoothgattcharacteristic-interface",
+          "title": "BluetoothRemoteGATTCharacteristic",
+          "number": "5.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-bluetoothremotegattcharacteristic-stopnotifications",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothremotegattcharacteristic-stopnotifications",
+        "linkingText": [
+          "stopNotifications()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "BluetoothRemoteGATTCharacteristic"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "bluetoothgattcharacteristic-interface",
+          "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetoothgattcharacteristic-interface",
+          "title": "BluetoothRemoteGATTCharacteristic",
+          "number": "5.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "characteristiceventhandlers",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#characteristiceventhandlers",
+        "linkingText": [
+          "CharacteristicEventHandlers"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "idl-event-handlers",
+          "href": "https://webbluetoothcg.github.io/web-bluetooth/#idl-event-handlers",
+          "title": "IDL event handlers",
+          "number": "5.6.6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-characteristiceventhandlers-oncharacteristicvaluechanged",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-characteristiceventhandlers-oncharacteristicvaluechanged",
+        "linkingText": [
+          "oncharacteristicvaluechanged"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "CharacteristicEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "idl-event-handlers",
+          "href": "https://webbluetoothcg.github.io/web-bluetooth/#idl-event-handlers",
+          "title": "IDL event handlers",
+          "number": "5.6.6"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "eventtarget",
+        "href": "https://dom.spec.whatwg.org/#eventtarget",
+        "linkingText": [
+          "EventTarget"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventtarget-eventtarget",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-eventtarget",
+        "linkingText": [
+          "EventTarget()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-addeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-addeventlistener",
+        "linkingText": [
+          "addEventListener(type, callback, options)",
+          "addEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-removeeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-removeeventlistener",
+        "linkingText": [
+          "removeEventListener(type, callback, options)",
+          "removeEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-dispatchevent",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-dispatchevent",
+        "linkingText": [
+          "dispatchEvent(event)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "name": "HTMLOrSVGElement",
+  "type": "interface mixin",
+  "defined": {
+    "spec": {
+      "title": "HTML Standard",
+      "url": "https://html.spec.whatwg.org/multipage/"
+    },
+    "fragment": "interface mixin HTMLOrSVGElement {\n  [SameObject] readonly attribute DOMStringMap dataset;\n  attribute DOMString nonce; // intentionally no [CEReactions]\n\n  [CEReactions] attribute boolean autofocus;\n  [CEReactions] attribute long tabIndex;\n  undefined focus(optional FocusOptions options = {});\n  undefined blur();\n};",
+    "href": "https://html.spec.whatwg.org/multipage/dom.html#htmlorsvgelement"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://html.spec.whatwg.org/multipage/": [
+      {
+        "id": "htmlorsvgelement",
+        "href": "https://html.spec.whatwg.org/multipage/dom.html#htmlorsvgelement",
+        "linkingText": [
+          "HTMLOrSVGElement"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "elements-in-the-dom",
+          "href": "https://html.spec.whatwg.org/multipage/dom.html#elements-in-the-dom",
+          "title": "Elements in the DOM",
+          "number": "3.2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-dataset",
+        "href": "https://html.spec.whatwg.org/multipage/dom.html#dom-dataset",
+        "linkingText": [
+          "dataset"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "HTMLOrSVGElement"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "embedding-custom-non-visible-data-with-the-data-*-attributes",
+          "href": "https://html.spec.whatwg.org/multipage/dom.html#embedding-custom-non-visible-data-with-the-data-*-attributes",
+          "title": "Embedding custom non-visible data with the data-* attributes",
+          "number": "3.2.6.6"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-noncedelement-nonce",
+        "href": "https://html.spec.whatwg.org/multipage/urls-and-fetching.html#dom-noncedelement-nonce",
+        "linkingText": [
+          "nonce"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "HTMLOrSVGElement"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "nonce-attributes",
+          "href": "https://html.spec.whatwg.org/multipage/urls-and-fetching.html#nonce-attributes",
+          "title": "Nonce attributes",
+          "number": "2.5.6"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-fe-autofocus",
+        "href": "https://html.spec.whatwg.org/multipage/interaction.html#dom-fe-autofocus",
+        "linkingText": [
+          "autofocus"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "HTMLOrSVGElement"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-autofocus-attribute",
+          "href": "https://html.spec.whatwg.org/multipage/interaction.html#the-autofocus-attribute",
+          "title": "The autofocus attribute",
+          "number": "6.6.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-tabindex",
+        "href": "https://html.spec.whatwg.org/multipage/interaction.html#dom-tabindex",
+        "linkingText": [
+          "tabIndex"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "HTMLOrSVGElement"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-tabindex-attribute",
+          "href": "https://html.spec.whatwg.org/multipage/interaction.html#the-tabindex-attribute",
+          "title": "The tabindex attribute",
+          "number": "6.6.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-focus",
+        "href": "https://html.spec.whatwg.org/multipage/interaction.html#dom-focus",
+        "linkingText": [
+          "focus(options)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "HTMLOrSVGElement"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "focus-management-apis",
+          "href": "https://html.spec.whatwg.org/multipage/interaction.html#focus-management-apis",
+          "title": "Focus management APIs",
+          "number": "6.6.6"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-blur",
+        "href": "https://html.spec.whatwg.org/multipage/interaction.html#dom-blur",
+        "linkingText": [
+          "blur()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "HTMLOrSVGElement"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "focus-management-apis",
+          "href": "https://html.spec.whatwg.org/multipage/interaction.html#focus-management-apis",
+          "title": "Focus management APIs",
+          "number": "6.6.6"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

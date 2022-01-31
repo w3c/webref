@@ -1,0 +1,427 @@
+{
+  "spec": {
+    "title": "High Resolution Time",
+    "url": "https://w3c.github.io/hr-time/"
+  },
+  "dfns": [
+    {
+      "id": "dfn-date",
+      "href": "https://w3c.github.io/hr-time/#dfn-date",
+      "linkingText": [
+        "Date"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "introduction",
+        "href": "https://w3c.github.io/hr-time/#introduction",
+        "title": "Introduction",
+        "number": "1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-date-now",
+      "href": "https://w3c.github.io/hr-time/#dfn-date-now",
+      "linkingText": [
+        "Date.now()"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "introduction",
+        "href": "https://w3c.github.io/hr-time/#introduction",
+        "title": "Introduction",
+        "number": "1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-time-origin",
+      "href": "https://w3c.github.io/hr-time/#dfn-time-origin",
+      "linkingText": [
+        "time origin"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-time-origin",
+        "href": "https://w3c.github.io/hr-time/#sec-time-origin",
+        "title": "Time Origin",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-get-time-origin-timestamp",
+      "href": "https://w3c.github.io/hr-time/#dfn-get-time-origin-timestamp",
+      "linkingText": [
+        "get time origin timestamp"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-time-origin",
+        "href": "https://w3c.github.io/hr-time/#sec-time-origin",
+        "title": "Time Origin",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-coarsen-time",
+      "href": "https://w3c.github.io/hr-time/#dfn-coarsen-time",
+      "linkingText": [
+        "coarsen time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-time-origin",
+        "href": "https://w3c.github.io/hr-time/#sec-time-origin",
+        "title": "Time Origin",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-relative-high-resolution-time",
+      "href": "https://w3c.github.io/hr-time/#dfn-relative-high-resolution-time",
+      "linkingText": [
+        "relative high resolution time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-time-origin",
+        "href": "https://w3c.github.io/hr-time/#sec-time-origin",
+        "title": "Time Origin",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-relative-high-resolution-coarse-time",
+      "href": "https://w3c.github.io/hr-time/#dfn-relative-high-resolution-coarse-time",
+      "linkingText": [
+        "relative high resolution coarse time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-time-origin",
+        "href": "https://w3c.github.io/hr-time/#sec-time-origin",
+        "title": "Time Origin",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-current-high-resolution-time",
+      "href": "https://w3c.github.io/hr-time/#dfn-current-high-resolution-time",
+      "linkingText": [
+        "current high resolution time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-time-origin",
+        "href": "https://w3c.github.io/hr-time/#sec-time-origin",
+        "title": "Time Origin",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-coarsened-shared-current-time",
+      "href": "https://w3c.github.io/hr-time/#dfn-coarsened-shared-current-time",
+      "linkingText": [
+        "coarsened shared current time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-time-origin",
+        "href": "https://w3c.github.io/hr-time/#sec-time-origin",
+        "title": "Time Origin",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-unsafe-shared-current-time",
+      "href": "https://w3c.github.io/hr-time/#dfn-unsafe-shared-current-time",
+      "linkingText": [
+        "unsafe shared current time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-time-origin",
+        "href": "https://w3c.github.io/hr-time/#sec-time-origin",
+        "title": "Time Origin",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-epoch-relative-timestamp",
+      "href": "https://w3c.github.io/hr-time/#dfn-epoch-relative-timestamp",
+      "linkingText": [
+        "epoch-relative timestamp"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-time-origin",
+        "href": "https://w3c.github.io/hr-time/#sec-time-origin",
+        "title": "Time Origin",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-domhighrestimestamp",
+      "href": "https://w3c.github.io/hr-time/#dom-domhighrestimestamp",
+      "linkingText": [
+        "DOMHighResTimeStamp"
+      ],
+      "localLinkingText": [],
+      "type": "typedef",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-domhighrestimestamp",
+        "href": "https://w3c.github.io/hr-time/#sec-domhighrestimestamp",
+        "title": "The DOMHighResTimeStamp typedef",
+        "number": "3"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-epochtimestamp",
+      "href": "https://w3c.github.io/hr-time/#dom-epochtimestamp",
+      "linkingText": [
+        "EpochTimeStamp"
+      ],
+      "localLinkingText": [],
+      "type": "typedef",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-epochtimestamp-typedef",
+        "href": "https://w3c.github.io/hr-time/#the-epochtimestamp-typedef",
+        "title": "The EpochTimeStamp typedef",
+        "number": "4"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-performance",
+      "href": "https://w3c.github.io/hr-time/#dom-performance",
+      "linkingText": [
+        "Performance"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-performance",
+        "href": "https://w3c.github.io/hr-time/#sec-performance",
+        "title": "The Performance interface",
+        "number": "5"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-performance-now",
+      "href": "https://w3c.github.io/hr-time/#dom-performance-now",
+      "linkingText": [
+        "now()"
+      ],
+      "localLinkingText": [
+        "Performance.now",
+        "Performance.now()",
+        "now"
+      ],
+      "type": "method",
+      "for": [
+        "Performance"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "now-method",
+        "href": "https://w3c.github.io/hr-time/#now-method",
+        "title": "now() method",
+        "number": "5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-performance-timeorigin",
+      "href": "https://w3c.github.io/hr-time/#dom-performance-timeorigin",
+      "linkingText": [
+        "timeOrigin"
+      ],
+      "localLinkingText": [
+        "Performance.timeOrigin"
+      ],
+      "type": "attribute",
+      "for": [
+        "Performance"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "timeorigin-attribute",
+        "href": "https://w3c.github.io/hr-time/#timeorigin-attribute",
+        "title": "timeOrigin attribute",
+        "number": "5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-performance-tojson",
+      "href": "https://w3c.github.io/hr-time/#dom-performance-tojson",
+      "linkingText": [
+        "toJSON()"
+      ],
+      "localLinkingText": [
+        "Performance.toJSON",
+        "Performance.toJSON()",
+        "toJSON"
+      ],
+      "type": "method",
+      "for": [
+        "Performance"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "tojson-method",
+        "href": "https://w3c.github.io/hr-time/#tojson-method",
+        "title": "toJSON() method",
+        "number": "5.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-windoworworkerglobalscope-performance",
+      "href": "https://w3c.github.io/hr-time/#dom-windoworworkerglobalscope-performance",
+      "linkingText": [
+        "performance"
+      ],
+      "localLinkingText": [
+        "WindowOrWorkerGlobalScope.performance"
+      ],
+      "type": "attribute",
+      "for": [
+        "WindowOrWorkerGlobalScope"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-performance-attribute",
+        "href": "https://w3c.github.io/hr-time/#the-performance-attribute",
+        "title": "The performance attribute",
+        "number": "6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-monotonic-clock",
+      "href": "https://w3c.github.io/hr-time/#dfn-monotonic-clock",
+      "linkingText": [
+        "monotonic clock"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-monotonic-clock",
+        "href": "https://w3c.github.io/hr-time/#sec-monotonic-clock",
+        "title": "Monotonic Clock",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-shared-monotonic-clock",
+      "href": "https://w3c.github.io/hr-time/#dfn-shared-monotonic-clock",
+      "linkingText": [
+        "shared monotonic clock"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-monotonic-clock",
+        "href": "https://w3c.github.io/hr-time/#sec-monotonic-clock",
+        "title": "Monotonic Clock",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-time",
+      "href": "https://w3c.github.io/hr-time/#dfn-time",
+      "linkingText": [
+        "time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-monotonic-clock",
+        "href": "https://w3c.github.io/hr-time/#sec-monotonic-clock",
+        "title": "Monotonic Clock",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    }
+  ]
+}

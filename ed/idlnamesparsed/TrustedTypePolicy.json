@@ -1,0 +1,125 @@
+{
+  "name": "TrustedTypePolicy",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Trusted Types",
+      "url": "https://w3c.github.io/webappsec-trusted-types/dist/spec/"
+    },
+    "fragment": "[Exposed=(Window,Worker)]\ninterface TrustedTypePolicy {\n  readonly attribute DOMString name;\n  TrustedHTML createHTML(DOMString input, any... arguments);\n  TrustedScript createScript(DOMString input, any... arguments);\n  TrustedScriptURL createScriptURL(DOMString input, any... arguments);\n};",
+    "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#trustedtypepolicy"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://w3c.github.io/webappsec-trusted-types/dist/spec/": [
+      {
+        "id": "trustedtypepolicy",
+        "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#trustedtypepolicy",
+        "linkingText": [
+          "TrustedTypePolicy"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "trusted-type-policy",
+          "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#trusted-type-policy",
+          "title": "TrustedTypePolicy",
+          "number": "2.3.2"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-trustedtypepolicy-name",
+        "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#dom-trustedtypepolicy-name",
+        "linkingText": [
+          "name"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "TrustedTypePolicy"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "trusted-type-policy",
+          "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#trusted-type-policy",
+          "title": "TrustedTypePolicy",
+          "number": "2.3.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-trustedtypepolicy-createhtml",
+        "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#dom-trustedtypepolicy-createhtml",
+        "linkingText": [
+          "createHTML(input, ...arguments)",
+          "createHTML(input)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "TrustedTypePolicy"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "trusted-type-policy",
+          "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#trusted-type-policy",
+          "title": "TrustedTypePolicy",
+          "number": "2.3.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-trustedtypepolicy-createscript",
+        "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#dom-trustedtypepolicy-createscript",
+        "linkingText": [
+          "createScript(input, ...arguments)",
+          "createScript(input)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "TrustedTypePolicy"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "trusted-type-policy",
+          "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#trusted-type-policy",
+          "title": "TrustedTypePolicy",
+          "number": "2.3.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-trustedtypepolicy-createscripturl",
+        "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#dom-trustedtypepolicy-createscripturl",
+        "linkingText": [
+          "createScriptURL(input, ...arguments)",
+          "createScriptURL(input)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "TrustedTypePolicy"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "trusted-type-policy",
+          "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#trusted-type-policy",
+          "title": "TrustedTypePolicy",
+          "number": "2.3.2"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

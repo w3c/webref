@@ -1,0 +1,215 @@
+{
+  "name": "RTCTrackEventInit",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
+      "url": "https://www.w3.org/TR/webrtc/"
+    },
+    "fragment": "dictionary RTCTrackEventInit : EventInit {\n  required RTCRtpReceiver receiver;\n  required MediaStreamTrack track;\n  sequence<MediaStream> streams = [];\n  required RTCRtpTransceiver transceiver;\n};",
+    "href": "https://w3c.github.io/webrtc-pc/#dom-rtctrackeventinit"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "EventInit",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "dictionary EventInit {\n  boolean bubbles = false;\n  boolean cancelable = false;\n  boolean composed = false;\n};",
+      "href": "https://dom.spec.whatwg.org/#dictdef-eventinit"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webrtc/": [
+      {
+        "id": "dom-rtctrackeventinit",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtctrackeventinit",
+        "linkingText": [
+          "RTCTrackEventInit"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-rtctrackeventinit-members",
+          "href": "https://w3c.github.io/webrtc-pc/#dictionary-rtctrackeventinit-members",
+          "title": "Dictionary RTCTrackEventInit Members"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-rtctrackeventinit-receiver",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtctrackeventinit-receiver",
+        "linkingText": [
+          "receiver"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RTCTrackEventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-rtctrackeventinit-members",
+          "href": "https://w3c.github.io/webrtc-pc/#dictionary-rtctrackeventinit-members",
+          "title": "Dictionary RTCTrackEventInit Members"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtctrackeventinit-track",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtctrackeventinit-track",
+        "linkingText": [
+          "track"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RTCTrackEventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-rtctrackeventinit-members",
+          "href": "https://w3c.github.io/webrtc-pc/#dictionary-rtctrackeventinit-members",
+          "title": "Dictionary RTCTrackEventInit Members"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtctrackeventinit-streams",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtctrackeventinit-streams",
+        "linkingText": [
+          "streams"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RTCTrackEventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-rtctrackeventinit-members",
+          "href": "https://w3c.github.io/webrtc-pc/#dictionary-rtctrackeventinit-members",
+          "title": "Dictionary RTCTrackEventInit Members"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtctrackeventinit-transceiver",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtctrackeventinit-transceiver",
+        "linkingText": [
+          "transceiver"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RTCTrackEventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-rtctrackeventinit-members",
+          "href": "https://w3c.github.io/webrtc-pc/#dictionary-rtctrackeventinit-members",
+          "title": "Dictionary RTCTrackEventInit Members"
+        },
+        "definedIn": "dt"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "dictdef-eventinit",
+        "href": "https://dom.spec.whatwg.org/#dictdef-eventinit",
+        "linkingText": [
+          "EventInit"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventinit-bubbles",
+        "href": "https://dom.spec.whatwg.org/#dom-eventinit-bubbles",
+        "linkingText": [
+          "bubbles"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventinit-cancelable",
+        "href": "https://dom.spec.whatwg.org/#dom-eventinit-cancelable",
+        "linkingText": [
+          "cancelable"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventinit-composed",
+        "href": "https://dom.spec.whatwg.org/#dom-eventinit-composed",
+        "linkingText": [
+          "composed"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

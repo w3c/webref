@@ -1,0 +1,134 @@
+{
+  "name": "FilePropertyBag",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "File API",
+      "url": "https://www.w3.org/TR/FileAPI/"
+    },
+    "fragment": "dictionary FilePropertyBag : BlobPropertyBag {\n  long long lastModified;\n};",
+    "href": "https://w3c.github.io/FileAPI/#dfn-FilePropertyBag"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "BlobPropertyBag",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "File API",
+        "url": "https://www.w3.org/TR/FileAPI/"
+      },
+      "fragment": "dictionary BlobPropertyBag {\n  DOMString type = \"\";\n  EndingType endings = \"transparent\";\n};",
+      "href": "https://w3c.github.io/FileAPI/#dfn-BlobPropertyBag"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/FileAPI/": [
+      {
+        "id": "dfn-FilePropertyBag",
+        "href": "https://w3c.github.io/FileAPI/#dfn-FilePropertyBag",
+        "linkingText": [
+          "FilePropertyBag"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "file-section",
+          "href": "https://w3c.github.io/FileAPI/#file-section",
+          "title": "The File Interface",
+          "number": "4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dfn-FPdate",
+        "href": "https://w3c.github.io/FileAPI/#dfn-FPdate",
+        "linkingText": [
+          "lastModified"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "FilePropertyBag"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "file-constructor-params",
+          "href": "https://w3c.github.io/FileAPI/#file-constructor-params",
+          "title": "Constructor Parameters",
+          "number": "4.1.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dfn-BlobPropertyBag",
+        "href": "https://w3c.github.io/FileAPI/#dfn-BlobPropertyBag",
+        "linkingText": [
+          "BlobPropertyBag"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "blob-section",
+          "href": "https://w3c.github.io/FileAPI/#blob-section",
+          "title": "The Blob Interface and Binary Data",
+          "number": "3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dfn-BPtype",
+        "href": "https://w3c.github.io/FileAPI/#dfn-BPtype",
+        "linkingText": [
+          "type"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "BlobPropertyBag"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "constructorParams",
+          "href": "https://w3c.github.io/FileAPI/#constructorParams",
+          "title": "Constructor Parameters",
+          "number": "3.1.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-blobpropertybag-endings",
+        "href": "https://w3c.github.io/FileAPI/#dom-blobpropertybag-endings",
+        "linkingText": [
+          "endings"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "BlobPropertyBag"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "constructorParams",
+          "href": "https://w3c.github.io/FileAPI/#constructorParams",
+          "title": "Constructor Parameters",
+          "number": "3.1.1"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

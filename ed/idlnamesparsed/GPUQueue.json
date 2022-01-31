@@ -1,0 +1,203 @@
+{
+  "name": "GPUQueue",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebGPU",
+      "url": "https://www.w3.org/TR/webgpu/"
+    },
+    "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUQueue {\n    undefined submit(sequence<GPUCommandBuffer> commandBuffers);\n\n    Promise<undefined> onSubmittedWorkDone();\n\n    undefined writeBuffer(\n        GPUBuffer buffer,\n        GPUSize64 bufferOffset,\n        [AllowShared] BufferSource data,\n        optional GPUSize64 dataOffset = 0,\n        optional GPUSize64 size);\n\n    undefined writeTexture(\n        GPUImageCopyTexture destination,\n        [AllowShared] BufferSource data,\n        GPUImageDataLayout dataLayout,\n        GPUExtent3D size);\n\n    undefined copyExternalImageToTexture(\n        GPUImageCopyExternalImage source,\n        GPUImageCopyTextureTagged destination,\n        GPUExtent3D copySize);\n};",
+    "href": "https://gpuweb.github.io/gpuweb/#gpuqueue"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "WebGPU",
+        "url": "https://www.w3.org/TR/webgpu/"
+      },
+      "fragment": "GPUQueue includes GPUObjectBase;"
+    }
+  ],
+  "inheritance": null,
+  "includes": [
+    {
+      "name": "GPUObjectBase",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "WebGPU",
+          "url": "https://www.w3.org/TR/webgpu/"
+        },
+        "fragment": "interface mixin GPUObjectBase {\n    attribute (USVString or undefined) label;\n};",
+        "href": "https://gpuweb.github.io/gpuweb/#gpuobjectbase"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    }
+  ],
+  "dfns": {
+    "https://www.w3.org/TR/webgpu/": [
+      {
+        "id": "gpuqueue",
+        "href": "https://gpuweb.github.io/gpuweb/#gpuqueue",
+        "linkingText": [
+          "GPUQueue"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "queues",
+          "href": "https://gpuweb.github.io/gpuweb/#queues",
+          "title": "18. Queues"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gpuqueue-submit",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpuqueue-submit",
+        "linkingText": [
+          "submit(commandBuffers)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GPUQueue"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "queues",
+          "href": "https://gpuweb.github.io/gpuweb/#queues",
+          "title": "18. Queues"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpuqueue-onsubmittedworkdone",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpuqueue-onsubmittedworkdone",
+        "linkingText": [
+          "onSubmittedWorkDone()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GPUQueue"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "queues",
+          "href": "https://gpuweb.github.io/gpuweb/#queues",
+          "title": "18. Queues"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpuqueue-writebuffer",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpuqueue-writebuffer",
+        "linkingText": [
+          "writeBuffer(buffer, bufferOffset, data, dataOffset, size)",
+          "writeBuffer(buffer, bufferOffset, data, dataOffset)",
+          "writeBuffer(buffer, bufferOffset, data)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GPUQueue"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "queues",
+          "href": "https://gpuweb.github.io/gpuweb/#queues",
+          "title": "18. Queues"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpuqueue-writetexture",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpuqueue-writetexture",
+        "linkingText": [
+          "writeTexture(destination, data, dataLayout, size)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GPUQueue"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "queues",
+          "href": "https://gpuweb.github.io/gpuweb/#queues",
+          "title": "18. Queues"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpuqueue-copyexternalimagetotexture",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpuqueue-copyexternalimagetotexture",
+        "linkingText": [
+          "copyExternalImageToTexture(source, destination, copySize)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GPUQueue"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "queues",
+          "href": "https://gpuweb.github.io/gpuweb/#queues",
+          "title": "18. Queues"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "gpuobjectbase",
+        "href": "https://gpuweb.github.io/gpuweb/#gpuobjectbase",
+        "linkingText": [
+          "GPUObjectBase"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "webgpu-interfaces",
+          "href": "https://gpuweb.github.io/gpuweb/#webgpu-interfaces",
+          "title": "WebGPU Interfaces",
+          "number": "3.1.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gpuobjectbase-label",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpuobjectbase-label",
+        "linkingText": [
+          "label"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "GPUObjectBase"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "webgpu-interfaces",
+          "href": "https://gpuweb.github.io/gpuweb/#webgpu-interfaces",
+          "title": "WebGPU Interfaces",
+          "number": "3.1.3"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

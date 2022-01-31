@@ -1,0 +1,228 @@
+{
+  "name": "AudioDecoder",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebCodecs",
+      "url": "https://www.w3.org/TR/webcodecs/"
+    },
+    "fragment": "[Exposed=(Window,DedicatedWorker), SecureContext]\ninterface AudioDecoder {\n  constructor(AudioDecoderInit init);\n\n  readonly attribute CodecState state;\n  readonly attribute long decodeQueueSize;\n\n  undefined configure(AudioDecoderConfig config);\n  undefined decode(EncodedAudioChunk chunk);\n  Promise<undefined> flush();\n  undefined reset();\n  undefined close();\n\n  static Promise<AudioDecoderSupport> isConfigSupported(AudioDecoderConfig config);\n};",
+    "href": "https://w3c.github.io/webcodecs/#audiodecoder"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webcodecs/": [
+      {
+        "id": "audiodecoder",
+        "href": "https://w3c.github.io/webcodecs/#audiodecoder",
+        "linkingText": [
+          "AudioDecoder"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "audiodecoder-interface",
+          "href": "https://w3c.github.io/webcodecs/#audiodecoder-interface",
+          "title": "AudioDecoder Interface",
+          "number": "3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-audiodecoder-audiodecoder",
+        "href": "https://w3c.github.io/webcodecs/#dom-audiodecoder-audiodecoder",
+        "linkingText": [
+          "AudioDecoder(init)",
+          "constructor(init)"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "AudioDecoder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "audiodecoder-constructors",
+          "href": "https://w3c.github.io/webcodecs/#audiodecoder-constructors",
+          "title": "Constructors",
+          "number": "3.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-audiodecoder-state",
+        "href": "https://w3c.github.io/webcodecs/#dom-audiodecoder-state",
+        "linkingText": [
+          "state"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "AudioDecoder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "audiodecoder-attributes",
+          "href": "https://w3c.github.io/webcodecs/#audiodecoder-attributes",
+          "title": "Attributes",
+          "number": "3.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-audiodecoder-decodequeuesize",
+        "href": "https://w3c.github.io/webcodecs/#dom-audiodecoder-decodequeuesize",
+        "linkingText": [
+          "decodeQueueSize"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "AudioDecoder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "audiodecoder-attributes",
+          "href": "https://w3c.github.io/webcodecs/#audiodecoder-attributes",
+          "title": "Attributes",
+          "number": "3.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-audiodecoder-configure",
+        "href": "https://w3c.github.io/webcodecs/#dom-audiodecoder-configure",
+        "linkingText": [
+          "configure(config)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "AudioDecoder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "audiodecoder-methods",
+          "href": "https://w3c.github.io/webcodecs/#audiodecoder-methods",
+          "title": "Methods",
+          "number": "3.4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-audiodecoder-decode",
+        "href": "https://w3c.github.io/webcodecs/#dom-audiodecoder-decode",
+        "linkingText": [
+          "decode(chunk)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "AudioDecoder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "audiodecoder-methods",
+          "href": "https://w3c.github.io/webcodecs/#audiodecoder-methods",
+          "title": "Methods",
+          "number": "3.4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-audiodecoder-flush",
+        "href": "https://w3c.github.io/webcodecs/#dom-audiodecoder-flush",
+        "linkingText": [
+          "flush()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "AudioDecoder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "audiodecoder-methods",
+          "href": "https://w3c.github.io/webcodecs/#audiodecoder-methods",
+          "title": "Methods",
+          "number": "3.4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-audiodecoder-reset",
+        "href": "https://w3c.github.io/webcodecs/#dom-audiodecoder-reset",
+        "linkingText": [
+          "reset()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "AudioDecoder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "audiodecoder-methods",
+          "href": "https://w3c.github.io/webcodecs/#audiodecoder-methods",
+          "title": "Methods",
+          "number": "3.4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-audiodecoder-close",
+        "href": "https://w3c.github.io/webcodecs/#dom-audiodecoder-close",
+        "linkingText": [
+          "close()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "AudioDecoder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "audiodecoder-methods",
+          "href": "https://w3c.github.io/webcodecs/#audiodecoder-methods",
+          "title": "Methods",
+          "number": "3.4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-audiodecoder-isconfigsupported",
+        "href": "https://w3c.github.io/webcodecs/#dom-audiodecoder-isconfigsupported",
+        "linkingText": [
+          "isConfigSupported(config)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "AudioDecoder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "audiodecoder-methods",
+          "href": "https://w3c.github.io/webcodecs/#audiodecoder-methods",
+          "title": "Methods",
+          "number": "3.4"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

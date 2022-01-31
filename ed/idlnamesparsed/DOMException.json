@@ -1,0 +1,652 @@
+{
+  "name": "DOMException",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Web IDL Standard",
+      "url": "https://webidl.spec.whatwg.org/"
+    },
+    "fragment": "[Exposed=(Window,Worker),\n Serializable]\ninterface DOMException { // but see below note about ECMAScript binding\n  constructor(optional DOMString message = \"\", optional DOMString name = \"Error\");\n  readonly attribute DOMString name;\n  readonly attribute DOMString message;\n  readonly attribute unsigned short code;\n\n  const unsigned short INDEX_SIZE_ERR = 1;\n  const unsigned short DOMSTRING_SIZE_ERR = 2;\n  const unsigned short HIERARCHY_REQUEST_ERR = 3;\n  const unsigned short WRONG_DOCUMENT_ERR = 4;\n  const unsigned short INVALID_CHARACTER_ERR = 5;\n  const unsigned short NO_DATA_ALLOWED_ERR = 6;\n  const unsigned short NO_MODIFICATION_ALLOWED_ERR = 7;\n  const unsigned short NOT_FOUND_ERR = 8;\n  const unsigned short NOT_SUPPORTED_ERR = 9;\n  const unsigned short INUSE_ATTRIBUTE_ERR = 10;\n  const unsigned short INVALID_STATE_ERR = 11;\n  const unsigned short SYNTAX_ERR = 12;\n  const unsigned short INVALID_MODIFICATION_ERR = 13;\n  const unsigned short NAMESPACE_ERR = 14;\n  const unsigned short INVALID_ACCESS_ERR = 15;\n  const unsigned short VALIDATION_ERR = 16;\n  const unsigned short TYPE_MISMATCH_ERR = 17;\n  const unsigned short SECURITY_ERR = 18;\n  const unsigned short NETWORK_ERR = 19;\n  const unsigned short ABORT_ERR = 20;\n  const unsigned short URL_MISMATCH_ERR = 21;\n  const unsigned short QUOTA_EXCEEDED_ERR = 22;\n  const unsigned short TIMEOUT_ERR = 23;\n  const unsigned short INVALID_NODE_TYPE_ERR = 24;\n  const unsigned short DATA_CLONE_ERR = 25;\n};",
+    "href": "https://webidl.spec.whatwg.org/#idl-DOMException"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://webidl.spec.whatwg.org/": [
+      {
+        "id": "idl-DOMException",
+        "href": "https://webidl.spec.whatwg.org/#idl-DOMException",
+        "linkingText": [
+          "DOMException"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "idl-DOMException",
+          "href": "https://webidl.spec.whatwg.org/#idl-DOMException",
+          "title": "DOMException",
+          "number": "4.3"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-domexception-domexception",
+        "href": "https://webidl.spec.whatwg.org/#dom-domexception-domexception",
+        "linkingText": [
+          "DOMException(message, name)",
+          "constructor(message, name)",
+          "DOMException(message)",
+          "constructor(message)",
+          "DOMException()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "DOMException"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "idl-DOMException",
+          "href": "https://webidl.spec.whatwg.org/#idl-DOMException",
+          "title": "DOMException",
+          "number": "4.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-domexception-name",
+        "href": "https://webidl.spec.whatwg.org/#dom-domexception-name",
+        "linkingText": [
+          "name"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "DOMException"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "idl-DOMException",
+          "href": "https://webidl.spec.whatwg.org/#idl-DOMException",
+          "title": "DOMException",
+          "number": "4.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-domexception-message",
+        "href": "https://webidl.spec.whatwg.org/#dom-domexception-message",
+        "linkingText": [
+          "message"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "DOMException"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "idl-DOMException",
+          "href": "https://webidl.spec.whatwg.org/#idl-DOMException",
+          "title": "DOMException",
+          "number": "4.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-domexception-code",
+        "href": "https://webidl.spec.whatwg.org/#dom-domexception-code",
+        "linkingText": [
+          "code"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "DOMException"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "idl-DOMException",
+          "href": "https://webidl.spec.whatwg.org/#idl-DOMException",
+          "title": "DOMException",
+          "number": "4.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-domexception-index_size_err",
+        "href": "https://webidl.spec.whatwg.org/#dom-domexception-index_size_err",
+        "linkingText": [
+          "INDEX_SIZE_ERR"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "DOMException"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "idl-DOMException-error-names",
+          "href": "https://webidl.spec.whatwg.org/#idl-DOMException-error-names",
+          "title": "Error names",
+          "number": "2.8.1"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "dom-domexception-domstring_size_err",
+        "href": "https://webidl.spec.whatwg.org/#dom-domexception-domstring_size_err",
+        "linkingText": [
+          "DOMSTRING_SIZE_ERR"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "DOMException"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "idl-DOMException",
+          "href": "https://webidl.spec.whatwg.org/#idl-DOMException",
+          "title": "DOMException",
+          "number": "4.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-domexception-hierarchy_request_err",
+        "href": "https://webidl.spec.whatwg.org/#dom-domexception-hierarchy_request_err",
+        "linkingText": [
+          "HIERARCHY_REQUEST_ERR"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "DOMException"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "idl-DOMException-error-names",
+          "href": "https://webidl.spec.whatwg.org/#idl-DOMException-error-names",
+          "title": "Error names",
+          "number": "2.8.1"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "dom-domexception-wrong_document_err",
+        "href": "https://webidl.spec.whatwg.org/#dom-domexception-wrong_document_err",
+        "linkingText": [
+          "WRONG_DOCUMENT_ERR"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "DOMException"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "idl-DOMException-error-names",
+          "href": "https://webidl.spec.whatwg.org/#idl-DOMException-error-names",
+          "title": "Error names",
+          "number": "2.8.1"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "dom-domexception-invalid_character_err",
+        "href": "https://webidl.spec.whatwg.org/#dom-domexception-invalid_character_err",
+        "linkingText": [
+          "INVALID_CHARACTER_ERR"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "DOMException"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "idl-DOMException-error-names",
+          "href": "https://webidl.spec.whatwg.org/#idl-DOMException-error-names",
+          "title": "Error names",
+          "number": "2.8.1"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "dom-domexception-no_data_allowed_err",
+        "href": "https://webidl.spec.whatwg.org/#dom-domexception-no_data_allowed_err",
+        "linkingText": [
+          "NO_DATA_ALLOWED_ERR"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "DOMException"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "idl-DOMException",
+          "href": "https://webidl.spec.whatwg.org/#idl-DOMException",
+          "title": "DOMException",
+          "number": "4.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-domexception-no_modification_allowed_err",
+        "href": "https://webidl.spec.whatwg.org/#dom-domexception-no_modification_allowed_err",
+        "linkingText": [
+          "NO_MODIFICATION_ALLOWED_ERR"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "DOMException"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "idl-DOMException-error-names",
+          "href": "https://webidl.spec.whatwg.org/#idl-DOMException-error-names",
+          "title": "Error names",
+          "number": "2.8.1"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "dom-domexception-not_found_err",
+        "href": "https://webidl.spec.whatwg.org/#dom-domexception-not_found_err",
+        "linkingText": [
+          "NOT_FOUND_ERR"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "DOMException"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "idl-DOMException-error-names",
+          "href": "https://webidl.spec.whatwg.org/#idl-DOMException-error-names",
+          "title": "Error names",
+          "number": "2.8.1"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "dom-domexception-not_supported_err",
+        "href": "https://webidl.spec.whatwg.org/#dom-domexception-not_supported_err",
+        "linkingText": [
+          "NOT_SUPPORTED_ERR"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "DOMException"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "idl-DOMException-error-names",
+          "href": "https://webidl.spec.whatwg.org/#idl-DOMException-error-names",
+          "title": "Error names",
+          "number": "2.8.1"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "dom-domexception-inuse_attribute_err",
+        "href": "https://webidl.spec.whatwg.org/#dom-domexception-inuse_attribute_err",
+        "linkingText": [
+          "INUSE_ATTRIBUTE_ERR"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "DOMException"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "idl-DOMException-error-names",
+          "href": "https://webidl.spec.whatwg.org/#idl-DOMException-error-names",
+          "title": "Error names",
+          "number": "2.8.1"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "dom-domexception-invalid_state_err",
+        "href": "https://webidl.spec.whatwg.org/#dom-domexception-invalid_state_err",
+        "linkingText": [
+          "INVALID_STATE_ERR"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "DOMException"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "idl-DOMException-error-names",
+          "href": "https://webidl.spec.whatwg.org/#idl-DOMException-error-names",
+          "title": "Error names",
+          "number": "2.8.1"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "dom-domexception-syntax_err",
+        "href": "https://webidl.spec.whatwg.org/#dom-domexception-syntax_err",
+        "linkingText": [
+          "SYNTAX_ERR"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "DOMException"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "idl-DOMException-error-names",
+          "href": "https://webidl.spec.whatwg.org/#idl-DOMException-error-names",
+          "title": "Error names",
+          "number": "2.8.1"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "dom-domexception-invalid_modification_err",
+        "href": "https://webidl.spec.whatwg.org/#dom-domexception-invalid_modification_err",
+        "linkingText": [
+          "INVALID_MODIFICATION_ERR"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "DOMException"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "idl-DOMException-error-names",
+          "href": "https://webidl.spec.whatwg.org/#idl-DOMException-error-names",
+          "title": "Error names",
+          "number": "2.8.1"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "dom-domexception-namespace_err",
+        "href": "https://webidl.spec.whatwg.org/#dom-domexception-namespace_err",
+        "linkingText": [
+          "NAMESPACE_ERR"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "DOMException"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "idl-DOMException-error-names",
+          "href": "https://webidl.spec.whatwg.org/#idl-DOMException-error-names",
+          "title": "Error names",
+          "number": "2.8.1"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "dom-domexception-invalid_access_err",
+        "href": "https://webidl.spec.whatwg.org/#dom-domexception-invalid_access_err",
+        "linkingText": [
+          "INVALID_ACCESS_ERR"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "DOMException"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "idl-DOMException-error-names",
+          "href": "https://webidl.spec.whatwg.org/#idl-DOMException-error-names",
+          "title": "Error names",
+          "number": "2.8.1"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "dom-domexception-validation_err",
+        "href": "https://webidl.spec.whatwg.org/#dom-domexception-validation_err",
+        "linkingText": [
+          "VALIDATION_ERR"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "DOMException"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "idl-DOMException",
+          "href": "https://webidl.spec.whatwg.org/#idl-DOMException",
+          "title": "DOMException",
+          "number": "4.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-domexception-type_mismatch_err",
+        "href": "https://webidl.spec.whatwg.org/#dom-domexception-type_mismatch_err",
+        "linkingText": [
+          "TYPE_MISMATCH_ERR"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "DOMException"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "idl-DOMException-error-names",
+          "href": "https://webidl.spec.whatwg.org/#idl-DOMException-error-names",
+          "title": "Error names",
+          "number": "2.8.1"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "dom-domexception-security_err",
+        "href": "https://webidl.spec.whatwg.org/#dom-domexception-security_err",
+        "linkingText": [
+          "SECURITY_ERR"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "DOMException"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "idl-DOMException-error-names",
+          "href": "https://webidl.spec.whatwg.org/#idl-DOMException-error-names",
+          "title": "Error names",
+          "number": "2.8.1"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "dom-domexception-network_err",
+        "href": "https://webidl.spec.whatwg.org/#dom-domexception-network_err",
+        "linkingText": [
+          "NETWORK_ERR"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "DOMException"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "idl-DOMException-error-names",
+          "href": "https://webidl.spec.whatwg.org/#idl-DOMException-error-names",
+          "title": "Error names",
+          "number": "2.8.1"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "dom-domexception-abort_err",
+        "href": "https://webidl.spec.whatwg.org/#dom-domexception-abort_err",
+        "linkingText": [
+          "ABORT_ERR"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "DOMException"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "idl-DOMException-error-names",
+          "href": "https://webidl.spec.whatwg.org/#idl-DOMException-error-names",
+          "title": "Error names",
+          "number": "2.8.1"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "dom-domexception-url_mismatch_err",
+        "href": "https://webidl.spec.whatwg.org/#dom-domexception-url_mismatch_err",
+        "linkingText": [
+          "URL_MISMATCH_ERR"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "DOMException"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "idl-DOMException-error-names",
+          "href": "https://webidl.spec.whatwg.org/#idl-DOMException-error-names",
+          "title": "Error names",
+          "number": "2.8.1"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "dom-domexception-quota_exceeded_err",
+        "href": "https://webidl.spec.whatwg.org/#dom-domexception-quota_exceeded_err",
+        "linkingText": [
+          "QUOTA_EXCEEDED_ERR"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "DOMException"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "idl-DOMException-error-names",
+          "href": "https://webidl.spec.whatwg.org/#idl-DOMException-error-names",
+          "title": "Error names",
+          "number": "2.8.1"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "dom-domexception-timeout_err",
+        "href": "https://webidl.spec.whatwg.org/#dom-domexception-timeout_err",
+        "linkingText": [
+          "TIMEOUT_ERR"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "DOMException"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "idl-DOMException-error-names",
+          "href": "https://webidl.spec.whatwg.org/#idl-DOMException-error-names",
+          "title": "Error names",
+          "number": "2.8.1"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "dom-domexception-invalid_node_type_err",
+        "href": "https://webidl.spec.whatwg.org/#dom-domexception-invalid_node_type_err",
+        "linkingText": [
+          "INVALID_NODE_TYPE_ERR"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "DOMException"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "idl-DOMException-error-names",
+          "href": "https://webidl.spec.whatwg.org/#idl-DOMException-error-names",
+          "title": "Error names",
+          "number": "2.8.1"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "dom-domexception-data_clone_err",
+        "href": "https://webidl.spec.whatwg.org/#dom-domexception-data_clone_err",
+        "linkingText": [
+          "DATA_CLONE_ERR"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "DOMException"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "idl-DOMException-error-names",
+          "href": "https://webidl.spec.whatwg.org/#idl-DOMException-error-names",
+          "title": "Error names",
+          "number": "2.8.1"
+        },
+        "definedIn": "table"
+      }
+    ]
+  }
+}

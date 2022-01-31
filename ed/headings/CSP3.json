@@ -1,0 +1,1245 @@
+{
+  "spec": {
+    "title": "Content Security Policy Level 3",
+    "url": "https://w3c.github.io/webappsec-csp/"
+  },
+  "headings": [
+    {
+      "id": "abstract",
+      "href": "https://w3c.github.io/webappsec-csp/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "sotd",
+      "href": "https://w3c.github.io/webappsec-csp/#sotd",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://w3c.github.io/webappsec-csp/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "intro",
+      "href": "https://w3c.github.io/webappsec-csp/#intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "examples",
+      "href": "https://w3c.github.io/webappsec-csp/#examples",
+      "level": 3,
+      "title": "Examples",
+      "number": "1.1"
+    },
+    {
+      "id": "example-basic",
+      "href": "https://w3c.github.io/webappsec-csp/#example-basic",
+      "level": 4,
+      "title": "Control Execution",
+      "number": "1.1.1"
+    },
+    {
+      "id": "goals",
+      "href": "https://w3c.github.io/webappsec-csp/#goals",
+      "level": 3,
+      "title": "Goals",
+      "number": "1.2"
+    },
+    {
+      "id": "changes-from-level-2",
+      "href": "https://w3c.github.io/webappsec-csp/#changes-from-level-2",
+      "level": 3,
+      "title": "Changes from Level 2",
+      "number": "1.3"
+    },
+    {
+      "id": "framework",
+      "href": "https://w3c.github.io/webappsec-csp/#framework",
+      "level": 2,
+      "title": "Framework",
+      "number": "2"
+    },
+    {
+      "id": "framework-infrastructure",
+      "href": "https://w3c.github.io/webappsec-csp/#framework-infrastructure",
+      "level": 3,
+      "title": "Infrastructure",
+      "number": "2.1"
+    },
+    {
+      "id": "framework-policy",
+      "href": "https://w3c.github.io/webappsec-csp/#framework-policy",
+      "level": 3,
+      "title": "Policies",
+      "number": "2.2"
+    },
+    {
+      "id": "parse-serialized-policy",
+      "href": "https://w3c.github.io/webappsec-csp/#parse-serialized-policy",
+      "level": 4,
+      "title": "Parse a serialized CSP",
+      "number": "2.2.1"
+    },
+    {
+      "id": "parse-serialized-policy-list",
+      "href": "https://w3c.github.io/webappsec-csp/#parse-serialized-policy-list",
+      "level": 4,
+      "title": "Parse a serialized CSP list",
+      "number": "2.2.2"
+    },
+    {
+      "id": "parse-response-csp",
+      "href": "https://w3c.github.io/webappsec-csp/#parse-response-csp",
+      "level": 4,
+      "title": "Parse response’s Content Security Policies",
+      "number": "2.2.3"
+    },
+    {
+      "id": "framework-directives",
+      "href": "https://w3c.github.io/webappsec-csp/#framework-directives",
+      "level": 3,
+      "title": "Directives",
+      "number": "2.3"
+    },
+    {
+      "id": "framework-directive-source-list",
+      "href": "https://w3c.github.io/webappsec-csp/#framework-directive-source-list",
+      "level": 4,
+      "title": "Source Lists",
+      "number": "2.3.1"
+    },
+    {
+      "id": "framework-violation",
+      "href": "https://w3c.github.io/webappsec-csp/#framework-violation",
+      "level": 3,
+      "title": "Violations",
+      "number": "2.4"
+    },
+    {
+      "id": "create-violation-for-global",
+      "href": "https://w3c.github.io/webappsec-csp/#create-violation-for-global",
+      "level": 4,
+      "title": "Create a violation object for global, policy, and directive",
+      "number": "2.4.1"
+    },
+    {
+      "id": "create-violation-for-request",
+      "href": "https://w3c.github.io/webappsec-csp/#create-violation-for-request",
+      "level": 4,
+      "title": "Create a violation object for request, and policy.",
+      "number": "2.4.2"
+    },
+    {
+      "id": "policy-delivery",
+      "href": "https://w3c.github.io/webappsec-csp/#policy-delivery",
+      "level": 2,
+      "title": "Policy Delivery",
+      "number": "3"
+    },
+    {
+      "id": "csp-header",
+      "href": "https://w3c.github.io/webappsec-csp/#csp-header",
+      "level": 3,
+      "title": "The Content-Security-Policy HTTP Response Header Field",
+      "number": "3.1"
+    },
+    {
+      "id": "cspro-header",
+      "href": "https://w3c.github.io/webappsec-csp/#cspro-header",
+      "level": 3,
+      "title": "The Content-Security-Policy-Report-Only HTTP Response Header Field",
+      "number": "3.2"
+    },
+    {
+      "id": "meta-element",
+      "href": "https://w3c.github.io/webappsec-csp/#meta-element",
+      "level": 3,
+      "title": "The <meta> element",
+      "number": "3.3"
+    },
+    {
+      "id": "integrations",
+      "href": "https://w3c.github.io/webappsec-csp/#integrations",
+      "level": 2,
+      "title": "Integrations",
+      "number": "4"
+    },
+    {
+      "id": "fetch-integration",
+      "href": "https://w3c.github.io/webappsec-csp/#fetch-integration",
+      "level": 3,
+      "title": "Integration with Fetch",
+      "number": "4.1"
+    },
+    {
+      "id": "report-for-request",
+      "href": "https://w3c.github.io/webappsec-csp/#report-for-request",
+      "level": 4,
+      "title": "Report Content Security Policy violations for request",
+      "number": "4.1.1"
+    },
+    {
+      "id": "should-block-request",
+      "href": "https://w3c.github.io/webappsec-csp/#should-block-request",
+      "level": 4,
+      "title": "Should request be blocked by Content Security Policy?",
+      "number": "4.1.2"
+    },
+    {
+      "id": "should-block-response",
+      "href": "https://w3c.github.io/webappsec-csp/#should-block-response",
+      "level": 4,
+      "title": "Should response to request be blocked by Content Security Policy?",
+      "number": "4.1.3"
+    },
+    {
+      "id": "html-integration",
+      "href": "https://w3c.github.io/webappsec-csp/#html-integration",
+      "level": 3,
+      "title": "Integration with HTML",
+      "number": "4.2"
+    },
+    {
+      "id": "run-document-csp-initialization",
+      "href": "https://w3c.github.io/webappsec-csp/#run-document-csp-initialization",
+      "level": 4,
+      "title": "Run CSP initialization for a Document",
+      "number": "4.2.1"
+    },
+    {
+      "id": "get-csp-of-object",
+      "href": "https://w3c.github.io/webappsec-csp/#get-csp-of-object",
+      "level": 4,
+      "title": "Retrieve the CSP list of an object",
+      "number": "4.2.2"
+    },
+    {
+      "id": "should-block-inline",
+      "href": "https://w3c.github.io/webappsec-csp/#should-block-inline",
+      "level": 4,
+      "title": "Should element’s inline type behavior be blocked by Content Security Policy?",
+      "number": "4.2.3"
+    },
+    {
+      "id": "should-block-navigation-request",
+      "href": "https://w3c.github.io/webappsec-csp/#should-block-navigation-request",
+      "level": 4,
+      "title": "Should navigation request of type be blocked by Content Security Policy?",
+      "number": "4.2.4"
+    },
+    {
+      "id": "should-block-navigation-response",
+      "href": "https://w3c.github.io/webappsec-csp/#should-block-navigation-response",
+      "level": 4,
+      "title": "Should navigation response to navigation request of type in target be blocked by Content Security Policy?",
+      "number": "4.2.5"
+    },
+    {
+      "id": "run-global-object-csp-initialization",
+      "href": "https://w3c.github.io/webappsec-csp/#run-global-object-csp-initialization",
+      "level": 4,
+      "title": "Run CSP initialization for a global object.",
+      "number": "4.2.6"
+    },
+    {
+      "id": "ecma-integration",
+      "href": "https://w3c.github.io/webappsec-csp/#ecma-integration",
+      "level": 3,
+      "title": "Integration with ECMAScript",
+      "number": "4.3"
+    },
+    {
+      "id": "can-compile-strings",
+      "href": "https://w3c.github.io/webappsec-csp/#can-compile-strings",
+      "level": 4,
+      "title": "EnsureCSPDoesNotBlockStringCompilation(callerRealm, calleeRealm, source)",
+      "number": "4.3.1"
+    },
+    {
+      "id": "wasm-integration",
+      "href": "https://w3c.github.io/webappsec-csp/#wasm-integration",
+      "level": 3,
+      "title": "Integration with WebAssembly",
+      "number": "4.4"
+    },
+    {
+      "id": "can-compile-wasm-bytes",
+      "href": "https://w3c.github.io/webappsec-csp/#can-compile-wasm-bytes",
+      "level": 4,
+      "title": "EnsureCSPDoesNotBlockWasmByteCompilation(callerRealm, calleeRealm)",
+      "number": "4.4.1"
+    },
+    {
+      "id": "reporting",
+      "href": "https://w3c.github.io/webappsec-csp/#reporting",
+      "level": 2,
+      "title": "Reporting",
+      "number": "5"
+    },
+    {
+      "id": "violation-events",
+      "href": "https://w3c.github.io/webappsec-csp/#violation-events",
+      "level": 3,
+      "title": "Violation DOM Events",
+      "number": "5.1"
+    },
+    {
+      "id": "obtain-violation-blocked-uri",
+      "href": "https://w3c.github.io/webappsec-csp/#obtain-violation-blocked-uri",
+      "level": 3,
+      "title": "Obtain the blockedURI of a violation’s resource",
+      "number": "5.2"
+    },
+    {
+      "id": "deprecated-serialize-violation",
+      "href": "https://w3c.github.io/webappsec-csp/#deprecated-serialize-violation",
+      "level": 3,
+      "title": "Obtain the deprecated serialization of violation",
+      "number": "5.3"
+    },
+    {
+      "id": "strip-url-for-use-in-reports",
+      "href": "https://w3c.github.io/webappsec-csp/#strip-url-for-use-in-reports",
+      "level": 3,
+      "title": "Strip URL for use in reports",
+      "number": "5.4"
+    },
+    {
+      "id": "report-violation",
+      "href": "https://w3c.github.io/webappsec-csp/#report-violation",
+      "level": 3,
+      "title": "Report a violation",
+      "number": "5.5"
+    },
+    {
+      "id": "csp-directives",
+      "href": "https://w3c.github.io/webappsec-csp/#csp-directives",
+      "level": 2,
+      "title": "Content Security Policy Directives",
+      "number": "6"
+    },
+    {
+      "id": "directives-fetch",
+      "href": "https://w3c.github.io/webappsec-csp/#directives-fetch",
+      "level": 3,
+      "title": "Fetch Directives",
+      "number": "6.1"
+    },
+    {
+      "id": "directive-child-src",
+      "href": "https://w3c.github.io/webappsec-csp/#directive-child-src",
+      "level": 4,
+      "title": "child-src",
+      "number": "6.1.1"
+    },
+    {
+      "id": "child-src-pre-request",
+      "href": "https://w3c.github.io/webappsec-csp/#child-src-pre-request",
+      "level": 5,
+      "title": "child-src Pre-request check",
+      "number": "6.1.1.1"
+    },
+    {
+      "id": "child-src-post-request",
+      "href": "https://w3c.github.io/webappsec-csp/#child-src-post-request",
+      "level": 5,
+      "title": "child-src Post-request check",
+      "number": "6.1.1.2"
+    },
+    {
+      "id": "directive-connect-src",
+      "href": "https://w3c.github.io/webappsec-csp/#directive-connect-src",
+      "level": 4,
+      "title": "connect-src",
+      "number": "6.1.2"
+    },
+    {
+      "id": "connect-src-pre-request",
+      "href": "https://w3c.github.io/webappsec-csp/#connect-src-pre-request",
+      "level": 5,
+      "title": "connect-src Pre-request check",
+      "number": "6.1.2.1"
+    },
+    {
+      "id": "connect-src-post-request",
+      "href": "https://w3c.github.io/webappsec-csp/#connect-src-post-request",
+      "level": 5,
+      "title": "connect-src Post-request check",
+      "number": "6.1.2.2"
+    },
+    {
+      "id": "directive-default-src",
+      "href": "https://w3c.github.io/webappsec-csp/#directive-default-src",
+      "level": 4,
+      "title": "default-src",
+      "number": "6.1.3"
+    },
+    {
+      "id": "default-src-pre-request",
+      "href": "https://w3c.github.io/webappsec-csp/#default-src-pre-request",
+      "level": 5,
+      "title": "default-src Pre-request check",
+      "number": "6.1.3.1"
+    },
+    {
+      "id": "default-src-post-request",
+      "href": "https://w3c.github.io/webappsec-csp/#default-src-post-request",
+      "level": 5,
+      "title": "default-src Post-request check",
+      "number": "6.1.3.2"
+    },
+    {
+      "id": "default-src-inline",
+      "href": "https://w3c.github.io/webappsec-csp/#default-src-inline",
+      "level": 5,
+      "title": "default-src Inline Check",
+      "number": "6.1.3.3"
+    },
+    {
+      "id": "directive-font-src",
+      "href": "https://w3c.github.io/webappsec-csp/#directive-font-src",
+      "level": 4,
+      "title": "font-src",
+      "number": "6.1.4"
+    },
+    {
+      "id": "font-src-pre-request",
+      "href": "https://w3c.github.io/webappsec-csp/#font-src-pre-request",
+      "level": 5,
+      "title": "font-src Pre-request check",
+      "number": "6.1.4.1"
+    },
+    {
+      "id": "font-src-post-request",
+      "href": "https://w3c.github.io/webappsec-csp/#font-src-post-request",
+      "level": 5,
+      "title": "font-src Post-request check",
+      "number": "6.1.4.2"
+    },
+    {
+      "id": "directive-frame-src",
+      "href": "https://w3c.github.io/webappsec-csp/#directive-frame-src",
+      "level": 4,
+      "title": "frame-src",
+      "number": "6.1.5"
+    },
+    {
+      "id": "frame-src-pre-request",
+      "href": "https://w3c.github.io/webappsec-csp/#frame-src-pre-request",
+      "level": 5,
+      "title": "frame-src Pre-request check",
+      "number": "6.1.5.1"
+    },
+    {
+      "id": "frame-src-post-request",
+      "href": "https://w3c.github.io/webappsec-csp/#frame-src-post-request",
+      "level": 5,
+      "title": "frame-src Post-request check",
+      "number": "6.1.5.2"
+    },
+    {
+      "id": "directive-img-src",
+      "href": "https://w3c.github.io/webappsec-csp/#directive-img-src",
+      "level": 4,
+      "title": "img-src",
+      "number": "6.1.6"
+    },
+    {
+      "id": "img-src-pre-request",
+      "href": "https://w3c.github.io/webappsec-csp/#img-src-pre-request",
+      "level": 5,
+      "title": "img-src Pre-request check",
+      "number": "6.1.6.1"
+    },
+    {
+      "id": "img-src-post-request",
+      "href": "https://w3c.github.io/webappsec-csp/#img-src-post-request",
+      "level": 5,
+      "title": "img-src Post-request check",
+      "number": "6.1.6.2"
+    },
+    {
+      "id": "directive-manifest-src",
+      "href": "https://w3c.github.io/webappsec-csp/#directive-manifest-src",
+      "level": 4,
+      "title": "manifest-src",
+      "number": "6.1.7"
+    },
+    {
+      "id": "manifest-src-pre-request",
+      "href": "https://w3c.github.io/webappsec-csp/#manifest-src-pre-request",
+      "level": 5,
+      "title": "manifest-src Pre-request check",
+      "number": "6.1.7.1"
+    },
+    {
+      "id": "manifest-src-post-request",
+      "href": "https://w3c.github.io/webappsec-csp/#manifest-src-post-request",
+      "level": 5,
+      "title": "manifest-src Post-request check",
+      "number": "6.1.7.2"
+    },
+    {
+      "id": "directive-media-src",
+      "href": "https://w3c.github.io/webappsec-csp/#directive-media-src",
+      "level": 4,
+      "title": "media-src",
+      "number": "6.1.8"
+    },
+    {
+      "id": "media-src-pre-request",
+      "href": "https://w3c.github.io/webappsec-csp/#media-src-pre-request",
+      "level": 5,
+      "title": "media-src Pre-request check",
+      "number": "6.1.8.1"
+    },
+    {
+      "id": "media-src-post-request",
+      "href": "https://w3c.github.io/webappsec-csp/#media-src-post-request",
+      "level": 5,
+      "title": "media-src Post-request check",
+      "number": "6.1.8.2"
+    },
+    {
+      "id": "directive-object-src",
+      "href": "https://w3c.github.io/webappsec-csp/#directive-object-src",
+      "level": 4,
+      "title": "object-src",
+      "number": "6.1.9"
+    },
+    {
+      "id": "object-src-pre-request",
+      "href": "https://w3c.github.io/webappsec-csp/#object-src-pre-request",
+      "level": 5,
+      "title": "object-src Pre-request check",
+      "number": "6.1.9.1"
+    },
+    {
+      "id": "object-src-post-request",
+      "href": "https://w3c.github.io/webappsec-csp/#object-src-post-request",
+      "level": 5,
+      "title": "object-src Post-request check",
+      "number": "6.1.9.2"
+    },
+    {
+      "id": "directive-prefetch-src",
+      "href": "https://w3c.github.io/webappsec-csp/#directive-prefetch-src",
+      "level": 4,
+      "title": "prefetch-src",
+      "number": "6.1.10"
+    },
+    {
+      "id": "prefetch-src-pre-request",
+      "href": "https://w3c.github.io/webappsec-csp/#prefetch-src-pre-request",
+      "level": 5,
+      "title": "prefetch-src Pre-request check",
+      "number": "6.1.10.1"
+    },
+    {
+      "id": "prefetch-src-post-request",
+      "href": "https://w3c.github.io/webappsec-csp/#prefetch-src-post-request",
+      "level": 5,
+      "title": "prefetch-src Post-request check",
+      "number": "6.1.10.2"
+    },
+    {
+      "id": "directive-script-src",
+      "href": "https://w3c.github.io/webappsec-csp/#directive-script-src",
+      "level": 4,
+      "title": "script-src",
+      "number": "6.1.11"
+    },
+    {
+      "id": "script-src-pre-request",
+      "href": "https://w3c.github.io/webappsec-csp/#script-src-pre-request",
+      "level": 5,
+      "title": "script-src Pre-request check",
+      "number": "6.1.11.1"
+    },
+    {
+      "id": "script-src-post-request",
+      "href": "https://w3c.github.io/webappsec-csp/#script-src-post-request",
+      "level": 5,
+      "title": "script-src Post-request check",
+      "number": "6.1.11.2"
+    },
+    {
+      "id": "script-src-inline",
+      "href": "https://w3c.github.io/webappsec-csp/#script-src-inline",
+      "level": 5,
+      "title": "script-src Inline Check",
+      "number": "6.1.11.3"
+    },
+    {
+      "id": "directive-script-src-elem",
+      "href": "https://w3c.github.io/webappsec-csp/#directive-script-src-elem",
+      "level": 4,
+      "title": "script-src-elem",
+      "number": "6.1.12"
+    },
+    {
+      "id": "script-src-elem-pre-request",
+      "href": "https://w3c.github.io/webappsec-csp/#script-src-elem-pre-request",
+      "level": 5,
+      "title": "script-src-elem Pre-request check",
+      "number": "6.1.12.1"
+    },
+    {
+      "id": "script-src-elem-post-request",
+      "href": "https://w3c.github.io/webappsec-csp/#script-src-elem-post-request",
+      "level": 5,
+      "title": "script-src-elem Post-request check",
+      "number": "6.1.12.2"
+    },
+    {
+      "id": "script-src-elem-inline",
+      "href": "https://w3c.github.io/webappsec-csp/#script-src-elem-inline",
+      "level": 5,
+      "title": "script-src-elem Inline Check",
+      "number": "6.1.12.3"
+    },
+    {
+      "id": "directive-script-src-attr",
+      "href": "https://w3c.github.io/webappsec-csp/#directive-script-src-attr",
+      "level": 4,
+      "title": "script-src-attr",
+      "number": "6.1.13"
+    },
+    {
+      "id": "script-src-attr-inline",
+      "href": "https://w3c.github.io/webappsec-csp/#script-src-attr-inline",
+      "level": 5,
+      "title": "script-src-attr Inline Check",
+      "number": "6.1.13.1"
+    },
+    {
+      "id": "directive-style-src",
+      "href": "https://w3c.github.io/webappsec-csp/#directive-style-src",
+      "level": 4,
+      "title": "style-src",
+      "number": "6.1.14"
+    },
+    {
+      "id": "style-src-pre-request",
+      "href": "https://w3c.github.io/webappsec-csp/#style-src-pre-request",
+      "level": 5,
+      "title": "style-src Pre-request Check",
+      "number": "6.1.14.1"
+    },
+    {
+      "id": "style-src-post-request",
+      "href": "https://w3c.github.io/webappsec-csp/#style-src-post-request",
+      "level": 5,
+      "title": "style-src Post-request Check",
+      "number": "6.1.14.2"
+    },
+    {
+      "id": "style-src-inline",
+      "href": "https://w3c.github.io/webappsec-csp/#style-src-inline",
+      "level": 5,
+      "title": "style-src Inline Check",
+      "number": "6.1.14.3"
+    },
+    {
+      "id": "directive-style-src-elem",
+      "href": "https://w3c.github.io/webappsec-csp/#directive-style-src-elem",
+      "level": 4,
+      "title": "style-src-elem",
+      "number": "6.1.15"
+    },
+    {
+      "id": "style-src-elem-pre-request",
+      "href": "https://w3c.github.io/webappsec-csp/#style-src-elem-pre-request",
+      "level": 5,
+      "title": "style-src-elem Pre-request Check",
+      "number": "6.1.15.1"
+    },
+    {
+      "id": "style-src-elem-post-request",
+      "href": "https://w3c.github.io/webappsec-csp/#style-src-elem-post-request",
+      "level": 5,
+      "title": "style-src-elem Post-request Check",
+      "number": "6.1.15.2"
+    },
+    {
+      "id": "style-src-elem-inline",
+      "href": "https://w3c.github.io/webappsec-csp/#style-src-elem-inline",
+      "level": 5,
+      "title": "style-src-elem Inline Check",
+      "number": "6.1.15.3"
+    },
+    {
+      "id": "directive-style-src-attr",
+      "href": "https://w3c.github.io/webappsec-csp/#directive-style-src-attr",
+      "level": 4,
+      "title": "style-src-attr",
+      "number": "6.1.16"
+    },
+    {
+      "id": "style-src-attr-inline",
+      "href": "https://w3c.github.io/webappsec-csp/#style-src-attr-inline",
+      "level": 5,
+      "title": "style-src-attr Inline Check",
+      "number": "6.1.16.1"
+    },
+    {
+      "id": "directive-worker-src",
+      "href": "https://w3c.github.io/webappsec-csp/#directive-worker-src",
+      "level": 4,
+      "title": "worker-src",
+      "number": "6.1.17"
+    },
+    {
+      "id": "worker-src-pre-request",
+      "href": "https://w3c.github.io/webappsec-csp/#worker-src-pre-request",
+      "level": 5,
+      "title": "worker-src Pre-request Check",
+      "number": "6.1.17.1"
+    },
+    {
+      "id": "worker-src-post-request",
+      "href": "https://w3c.github.io/webappsec-csp/#worker-src-post-request",
+      "level": 5,
+      "title": "worker-src Post-request Check",
+      "number": "6.1.17.2"
+    },
+    {
+      "id": "directives-document",
+      "href": "https://w3c.github.io/webappsec-csp/#directives-document",
+      "level": 3,
+      "title": "Document Directives",
+      "number": "6.2"
+    },
+    {
+      "id": "directive-base-uri",
+      "href": "https://w3c.github.io/webappsec-csp/#directive-base-uri",
+      "level": 4,
+      "title": "base-uri",
+      "number": "6.2.1"
+    },
+    {
+      "id": "allow-base-for-document",
+      "href": "https://w3c.github.io/webappsec-csp/#allow-base-for-document",
+      "level": 5,
+      "title": "Is base allowed for document?",
+      "number": "6.2.1.1"
+    },
+    {
+      "id": "directive-sandbox",
+      "href": "https://w3c.github.io/webappsec-csp/#directive-sandbox",
+      "level": 4,
+      "title": "sandbox",
+      "number": "6.2.2"
+    },
+    {
+      "id": "sandbox-init",
+      "href": "https://w3c.github.io/webappsec-csp/#sandbox-init",
+      "level": 5,
+      "title": "sandbox Initialization",
+      "number": "6.2.2.1"
+    },
+    {
+      "id": "directives-navigation",
+      "href": "https://w3c.github.io/webappsec-csp/#directives-navigation",
+      "level": 3,
+      "title": "Navigation Directives",
+      "number": "6.3"
+    },
+    {
+      "id": "directive-form-action",
+      "href": "https://w3c.github.io/webappsec-csp/#directive-form-action",
+      "level": 4,
+      "title": "form-action",
+      "number": "6.3.1"
+    },
+    {
+      "id": "form-action-pre-navigate",
+      "href": "https://w3c.github.io/webappsec-csp/#form-action-pre-navigate",
+      "level": 5,
+      "title": "form-action Pre-Navigation Check",
+      "number": "6.3.1.1"
+    },
+    {
+      "id": "directive-frame-ancestors",
+      "href": "https://w3c.github.io/webappsec-csp/#directive-frame-ancestors",
+      "level": 4,
+      "title": "frame-ancestors",
+      "number": "6.3.2"
+    },
+    {
+      "id": "frame-ancestors-navigation-response",
+      "href": "https://w3c.github.io/webappsec-csp/#frame-ancestors-navigation-response",
+      "level": 5,
+      "title": "frame-ancestors Navigation Response Check",
+      "number": "6.3.2.1"
+    },
+    {
+      "id": "frame-ancestors-and-frame-options",
+      "href": "https://w3c.github.io/webappsec-csp/#frame-ancestors-and-frame-options",
+      "level": 5,
+      "title": "Relation to X-Frame-Options",
+      "number": "6.3.2.2"
+    },
+    {
+      "id": "directive-navigate-to",
+      "href": "https://w3c.github.io/webappsec-csp/#directive-navigate-to",
+      "level": 4,
+      "title": "navigate-to",
+      "number": "6.3.3"
+    },
+    {
+      "id": "navigate-to-pre-navigate",
+      "href": "https://w3c.github.io/webappsec-csp/#navigate-to-pre-navigate",
+      "level": 5,
+      "title": "navigate-to Pre-Navigation Check",
+      "number": "6.3.3.1"
+    },
+    {
+      "id": "navigate-to-navigation-response",
+      "href": "https://w3c.github.io/webappsec-csp/#navigate-to-navigation-response",
+      "level": 5,
+      "title": "navigate-to Navigation Response Check",
+      "number": "6.3.3.2"
+    },
+    {
+      "id": "directives-reporting",
+      "href": "https://w3c.github.io/webappsec-csp/#directives-reporting",
+      "level": 3,
+      "title": "Reporting Directives",
+      "number": "6.4"
+    },
+    {
+      "id": "directive-report-uri",
+      "href": "https://w3c.github.io/webappsec-csp/#directive-report-uri",
+      "level": 4,
+      "title": "report-uri",
+      "number": "6.4.1"
+    },
+    {
+      "id": "directive-report-to",
+      "href": "https://w3c.github.io/webappsec-csp/#directive-report-to",
+      "level": 4,
+      "title": "report-to",
+      "number": "6.4.2"
+    },
+    {
+      "id": "directives-elsewhere",
+      "href": "https://w3c.github.io/webappsec-csp/#directives-elsewhere",
+      "level": 3,
+      "title": "Directives Defined in Other Documents",
+      "number": "6.5"
+    },
+    {
+      "id": "matching-algorithms",
+      "href": "https://w3c.github.io/webappsec-csp/#matching-algorithms",
+      "level": 3,
+      "title": "Matching Algorithms",
+      "number": "6.6"
+    },
+    {
+      "id": "script-checks",
+      "href": "https://w3c.github.io/webappsec-csp/#script-checks",
+      "level": 4,
+      "title": "Script directive checks",
+      "number": "6.6.1"
+    },
+    {
+      "id": "script-pre-request",
+      "href": "https://w3c.github.io/webappsec-csp/#script-pre-request",
+      "level": 5,
+      "title": "Script directives pre-request check",
+      "number": "6.6.1.1"
+    },
+    {
+      "id": "script-post-request",
+      "href": "https://w3c.github.io/webappsec-csp/#script-post-request",
+      "level": 5,
+      "title": "Script directives post-request check",
+      "number": "6.6.1.2"
+    },
+    {
+      "id": "matching-urls",
+      "href": "https://w3c.github.io/webappsec-csp/#matching-urls",
+      "level": 4,
+      "title": "URL Matching",
+      "number": "6.6.2"
+    },
+    {
+      "id": "does-request-violate-policy",
+      "href": "https://w3c.github.io/webappsec-csp/#does-request-violate-policy",
+      "level": 5,
+      "title": "Does request violate policy?",
+      "number": "6.6.2.1"
+    },
+    {
+      "id": "match-nonce-to-source-list",
+      "href": "https://w3c.github.io/webappsec-csp/#match-nonce-to-source-list",
+      "level": 5,
+      "title": "Does nonce match source list?",
+      "number": "6.6.2.2"
+    },
+    {
+      "id": "match-request-to-source-list",
+      "href": "https://w3c.github.io/webappsec-csp/#match-request-to-source-list",
+      "level": 5,
+      "title": "Does request match source list?",
+      "number": "6.6.2.3"
+    },
+    {
+      "id": "match-response-to-source-list",
+      "href": "https://w3c.github.io/webappsec-csp/#match-response-to-source-list",
+      "level": 5,
+      "title": "Does response to request match source list?",
+      "number": "6.6.2.4"
+    },
+    {
+      "id": "match-url-to-source-list",
+      "href": "https://w3c.github.io/webappsec-csp/#match-url-to-source-list",
+      "level": 5,
+      "title": "Does url match source list in origin with redirect count?",
+      "number": "6.6.2.5"
+    },
+    {
+      "id": "match-url-to-source-expression",
+      "href": "https://w3c.github.io/webappsec-csp/#match-url-to-source-expression",
+      "level": 5,
+      "title": "Does url match expression in origin with redirect count?",
+      "number": "6.6.2.6"
+    },
+    {
+      "id": "match-schemes",
+      "href": "https://w3c.github.io/webappsec-csp/#match-schemes",
+      "level": 5,
+      "title": "scheme-part matching",
+      "number": "6.6.2.7"
+    },
+    {
+      "id": "match-hosts",
+      "href": "https://w3c.github.io/webappsec-csp/#match-hosts",
+      "level": 5,
+      "title": "host-part matching",
+      "number": "6.6.2.8"
+    },
+    {
+      "id": "match-ports",
+      "href": "https://w3c.github.io/webappsec-csp/#match-ports",
+      "level": 5,
+      "title": "port-part matching",
+      "number": "6.6.2.9"
+    },
+    {
+      "id": "match-paths",
+      "href": "https://w3c.github.io/webappsec-csp/#match-paths",
+      "level": 5,
+      "title": "path-part matching",
+      "number": "6.6.2.10"
+    },
+    {
+      "id": "matching-elements",
+      "href": "https://w3c.github.io/webappsec-csp/#matching-elements",
+      "level": 4,
+      "title": "Element Matching Algorithms",
+      "number": "6.6.3"
+    },
+    {
+      "id": "is-element-nonceable",
+      "href": "https://w3c.github.io/webappsec-csp/#is-element-nonceable",
+      "level": 5,
+      "title": "Is element nonceable?",
+      "number": "6.6.3.1"
+    },
+    {
+      "id": "allow-all-inline",
+      "href": "https://w3c.github.io/webappsec-csp/#allow-all-inline",
+      "level": 5,
+      "title": "Does a source list allow all inline behavior for type?",
+      "number": "6.6.3.2"
+    },
+    {
+      "id": "match-element-to-source-list",
+      "href": "https://w3c.github.io/webappsec-csp/#match-element-to-source-list",
+      "level": 5,
+      "title": "Does element match source list for type and source?",
+      "number": "6.6.3.3"
+    },
+    {
+      "id": "directive-algorithms",
+      "href": "https://w3c.github.io/webappsec-csp/#directive-algorithms",
+      "level": 3,
+      "title": "Directive Algorithms",
+      "number": "6.7"
+    },
+    {
+      "id": "effective-directive-for-a-request",
+      "href": "https://w3c.github.io/webappsec-csp/#effective-directive-for-a-request",
+      "level": 4,
+      "title": "Get the effective directive for request",
+      "number": "6.7.1"
+    },
+    {
+      "id": "effective-directive-for-inline-check",
+      "href": "https://w3c.github.io/webappsec-csp/#effective-directive-for-inline-check",
+      "level": 4,
+      "title": "Get the effective directive for inline checks",
+      "number": "6.7.2"
+    },
+    {
+      "id": "directive-fallback-list",
+      "href": "https://w3c.github.io/webappsec-csp/#directive-fallback-list",
+      "level": 4,
+      "title": "Get fetch directive fallback list",
+      "number": "6.7.3"
+    },
+    {
+      "id": "should-directive-execute",
+      "href": "https://w3c.github.io/webappsec-csp/#should-directive-execute",
+      "level": 4,
+      "title": "Should fetch directive execute",
+      "number": "6.7.4"
+    },
+    {
+      "id": "security-considerations",
+      "href": "https://w3c.github.io/webappsec-csp/#security-considerations",
+      "level": 2,
+      "title": "Security and Privacy Considerations",
+      "number": "7"
+    },
+    {
+      "id": "security-nonces",
+      "href": "https://w3c.github.io/webappsec-csp/#security-nonces",
+      "level": 3,
+      "title": "Nonce Reuse",
+      "number": "7.1"
+    },
+    {
+      "id": "security-nonce-hijacking",
+      "href": "https://w3c.github.io/webappsec-csp/#security-nonce-hijacking",
+      "level": 3,
+      "title": "Nonce Hijacking",
+      "number": "7.2"
+    },
+    {
+      "id": "dangling-markup-attacks",
+      "href": "https://w3c.github.io/webappsec-csp/#dangling-markup-attacks",
+      "level": 4,
+      "title": "Dangling markup attacks",
+      "number": "7.2.1"
+    },
+    {
+      "id": "nonce-exfiltration-content-attributes",
+      "href": "https://w3c.github.io/webappsec-csp/#nonce-exfiltration-content-attributes",
+      "level": 4,
+      "title": "Nonce exfiltration via content attributes",
+      "number": "7.2.2"
+    },
+    {
+      "id": "security-nonce-retargeting",
+      "href": "https://w3c.github.io/webappsec-csp/#security-nonce-retargeting",
+      "level": 3,
+      "title": "Nonce Retargeting",
+      "number": "7.3"
+    },
+    {
+      "id": "security-css-parsing",
+      "href": "https://w3c.github.io/webappsec-csp/#security-css-parsing",
+      "level": 3,
+      "title": "CSS Parsing",
+      "number": "7.4"
+    },
+    {
+      "id": "security-violation-reports",
+      "href": "https://w3c.github.io/webappsec-csp/#security-violation-reports",
+      "level": 3,
+      "title": "Violation Reports",
+      "number": "7.5"
+    },
+    {
+      "id": "source-list-paths-and-redirects",
+      "href": "https://w3c.github.io/webappsec-csp/#source-list-paths-and-redirects",
+      "level": 3,
+      "title": "Paths and Redirects",
+      "number": "7.6"
+    },
+    {
+      "id": "security-secure-upgrades",
+      "href": "https://w3c.github.io/webappsec-csp/#security-secure-upgrades",
+      "level": 3,
+      "title": "Secure Upgrades",
+      "number": "7.7"
+    },
+    {
+      "id": "security-inherit-csp",
+      "href": "https://w3c.github.io/webappsec-csp/#security-inherit-csp",
+      "level": 3,
+      "title": "CSP Inheriting to avoid bypasses",
+      "number": "7.8"
+    },
+    {
+      "id": "authoring-considerations",
+      "href": "https://w3c.github.io/webappsec-csp/#authoring-considerations",
+      "level": 2,
+      "title": "Authoring Considerations",
+      "number": "8"
+    },
+    {
+      "id": "multiple-policies",
+      "href": "https://w3c.github.io/webappsec-csp/#multiple-policies",
+      "level": 3,
+      "title": "The effect of multiple policies",
+      "number": "8.1"
+    },
+    {
+      "id": "strict-dynamic-usage",
+      "href": "https://w3c.github.io/webappsec-csp/#strict-dynamic-usage",
+      "level": 3,
+      "title": "Usage of \"'strict-dynamic'\"",
+      "number": "8.2"
+    },
+    {
+      "id": "unsafe-hashes-usage",
+      "href": "https://w3c.github.io/webappsec-csp/#unsafe-hashes-usage",
+      "level": 3,
+      "title": "Usage of \"'unsafe-hashes'\"",
+      "number": "8.3"
+    },
+    {
+      "id": "external-hash",
+      "href": "https://w3c.github.io/webappsec-csp/#external-hash",
+      "level": 3,
+      "title": "Allowing external JavaScript via hashes",
+      "number": "8.4"
+    },
+    {
+      "id": "strict-csp",
+      "href": "https://w3c.github.io/webappsec-csp/#strict-csp",
+      "level": 3,
+      "title": "Strict CSP",
+      "number": "8.5"
+    },
+    {
+      "id": "implementation-considerations",
+      "href": "https://w3c.github.io/webappsec-csp/#implementation-considerations",
+      "level": 2,
+      "title": "Implementation Considerations",
+      "number": "9"
+    },
+    {
+      "id": "extensions",
+      "href": "https://w3c.github.io/webappsec-csp/#extensions",
+      "level": 3,
+      "title": "Vendor-specific Extensions and Addons",
+      "number": "9.1"
+    },
+    {
+      "id": "iana-considerations",
+      "href": "https://w3c.github.io/webappsec-csp/#iana-considerations",
+      "level": 2,
+      "title": "10. IANA Considerations"
+    },
+    {
+      "id": "iana-registry",
+      "href": "https://w3c.github.io/webappsec-csp/#iana-registry",
+      "level": 3,
+      "title": "Directive Registry",
+      "number": "10.1"
+    },
+    {
+      "id": "iana-headers",
+      "href": "https://w3c.github.io/webappsec-csp/#iana-headers",
+      "level": 3,
+      "title": "Headers",
+      "number": "10.2"
+    },
+    {
+      "id": "iana-csp",
+      "href": "https://w3c.github.io/webappsec-csp/#iana-csp",
+      "level": 4,
+      "title": "Content-Security-Policy",
+      "number": "10.2.1"
+    },
+    {
+      "id": "iana-cspro",
+      "href": "https://w3c.github.io/webappsec-csp/#iana-cspro",
+      "level": 4,
+      "title": "Content-Security-Policy-Report-Only",
+      "number": "10.2.2"
+    },
+    {
+      "id": "acknowledgements",
+      "href": "https://w3c.github.io/webappsec-csp/#acknowledgements",
+      "level": 2,
+      "title": "11. Acknowledgements"
+    },
+    {
+      "id": "w3c-conformance",
+      "href": "https://w3c.github.io/webappsec-csp/#w3c-conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "w3c-conventions",
+      "href": "https://w3c.github.io/webappsec-csp/#w3c-conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "w3c-conformant-algorithms",
+      "href": "https://w3c.github.io/webappsec-csp/#w3c-conformant-algorithms",
+      "level": 3,
+      "title": "Conformant Algorithms"
+    },
+    {
+      "id": "index",
+      "href": "https://w3c.github.io/webappsec-csp/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://w3c.github.io/webappsec-csp/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://w3c.github.io/webappsec-csp/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://w3c.github.io/webappsec-csp/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://w3c.github.io/webappsec-csp/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://w3c.github.io/webappsec-csp/#informative",
+      "level": 3,
+      "title": "Informative References"
+    },
+    {
+      "id": "idl-index",
+      "href": "https://w3c.github.io/webappsec-csp/#idl-index",
+      "level": 2,
+      "title": "IDL Index"
+    },
+    {
+      "id": "issues-index",
+      "href": "https://w3c.github.io/webappsec-csp/#issues-index",
+      "level": 2,
+      "title": "Issues Index"
+    }
+  ]
+}

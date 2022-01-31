@@ -1,0 +1,221 @@
+{
+  "name": "FileSystemFileEntry",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "File and Directory Entries API",
+      "url": "https://wicg.github.io/entries-api/"
+    },
+    "fragment": "[Exposed=Window]\ninterface FileSystemFileEntry : FileSystemEntry {\n    undefined file(FileCallback successCallback,\n              optional ErrorCallback errorCallback);\n};",
+    "href": "https://wicg.github.io/entries-api/#filesystemfileentry"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "FileSystemEntry",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "File and Directory Entries API",
+        "url": "https://wicg.github.io/entries-api/"
+      },
+      "fragment": "[Exposed=Window]\ninterface FileSystemEntry {\n    readonly attribute boolean isFile;\n    readonly attribute boolean isDirectory;\n    readonly attribute USVString name;\n    readonly attribute USVString fullPath;\n    readonly attribute FileSystem filesystem;\n\n    undefined getParent(optional FileSystemEntryCallback successCallback,\n                   optional ErrorCallback errorCallback);\n};",
+      "href": "https://wicg.github.io/entries-api/#filesystementry"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://wicg.github.io/entries-api/": [
+      {
+        "id": "filesystemfileentry",
+        "href": "https://wicg.github.io/entries-api/#filesystemfileentry",
+        "linkingText": [
+          "FileSystemFileEntry"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-fileentry",
+          "href": "https://wicg.github.io/entries-api/#api-fileentry",
+          "title": "The FileSystemFileEntry Interface",
+          "number": "7.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-filesystemfileentry-file",
+        "href": "https://wicg.github.io/entries-api/#dom-filesystemfileentry-file",
+        "linkingText": [
+          "file(successCallback, errorCallback)",
+          "file(successCallback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "FileSystemFileEntry"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-fileentry",
+          "href": "https://wicg.github.io/entries-api/#api-fileentry",
+          "title": "The FileSystemFileEntry Interface",
+          "number": "7.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "filesystementry",
+        "href": "https://wicg.github.io/entries-api/#filesystementry",
+        "linkingText": [
+          "FileSystemEntry"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-entry",
+          "href": "https://wicg.github.io/entries-api/#api-entry",
+          "title": "The FileSystemEntry Interface",
+          "number": "7.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-filesystementry-isfile",
+        "href": "https://wicg.github.io/entries-api/#dom-filesystementry-isfile",
+        "linkingText": [
+          "isFile"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "FileSystemEntry"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-entry",
+          "href": "https://wicg.github.io/entries-api/#api-entry",
+          "title": "The FileSystemEntry Interface",
+          "number": "7.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-filesystementry-isdirectory",
+        "href": "https://wicg.github.io/entries-api/#dom-filesystementry-isdirectory",
+        "linkingText": [
+          "isDirectory"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "FileSystemEntry"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-entry",
+          "href": "https://wicg.github.io/entries-api/#api-entry",
+          "title": "The FileSystemEntry Interface",
+          "number": "7.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-filesystementry-name",
+        "href": "https://wicg.github.io/entries-api/#dom-filesystementry-name",
+        "linkingText": [
+          "name"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "FileSystemEntry"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-entry",
+          "href": "https://wicg.github.io/entries-api/#api-entry",
+          "title": "The FileSystemEntry Interface",
+          "number": "7.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-filesystementry-fullpath",
+        "href": "https://wicg.github.io/entries-api/#dom-filesystementry-fullpath",
+        "linkingText": [
+          "fullPath"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "FileSystemEntry"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-entry",
+          "href": "https://wicg.github.io/entries-api/#api-entry",
+          "title": "The FileSystemEntry Interface",
+          "number": "7.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-filesystementry-filesystem",
+        "href": "https://wicg.github.io/entries-api/#dom-filesystementry-filesystem",
+        "linkingText": [
+          "filesystem"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "FileSystemEntry"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-entry",
+          "href": "https://wicg.github.io/entries-api/#api-entry",
+          "title": "The FileSystemEntry Interface",
+          "number": "7.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-filesystementry-getparent",
+        "href": "https://wicg.github.io/entries-api/#dom-filesystementry-getparent",
+        "linkingText": [
+          "getParent(successCallback, errorCallback)",
+          "getParent(successCallback)",
+          "getParent()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "FileSystemEntry"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-entry",
+          "href": "https://wicg.github.io/entries-api/#api-entry",
+          "title": "The FileSystemEntry Interface",
+          "number": "7.1"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

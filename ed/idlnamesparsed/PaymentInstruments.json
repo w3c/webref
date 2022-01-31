@@ -1,0 +1,192 @@
+{
+  "name": "PaymentInstruments",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Payment Handler API",
+      "url": "https://www.w3.org/TR/payment-handler/"
+    },
+    "fragment": "[SecureContext, Exposed=(Window,Worker)]\ninterface PaymentInstruments {\n  Promise<boolean> delete(DOMString instrumentKey);\n  Promise<any> get(DOMString instrumentKey);\n  Promise<sequence<DOMString>>  keys();\n  Promise<boolean> has(DOMString instrumentKey);\n  Promise<undefined> set(DOMString instrumentKey, PaymentInstrument details);\n  Promise<undefined> clear();\n};",
+    "href": "https://w3c.github.io/payment-handler/#dom-paymentinstruments"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/payment-handler/": [
+      {
+        "id": "dom-paymentinstruments",
+        "href": "https://w3c.github.io/payment-handler/#dom-paymentinstruments",
+        "linkingText": [
+          "PaymentInstruments"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "paymentinstruments-interface",
+          "href": "https://w3c.github.io/payment-handler/#paymentinstruments-interface",
+          "title": "PaymentInstruments interface",
+          "number": "3.3"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-paymentinstruments-delete",
+        "href": "https://w3c.github.io/payment-handler/#dom-paymentinstruments-delete",
+        "linkingText": [
+          "delete()",
+          "delete(instrumentKey)"
+        ],
+        "localLinkingText": [
+          "PaymentInstruments.delete",
+          "PaymentInstruments.delete()",
+          "delete"
+        ],
+        "type": "method",
+        "for": [
+          "PaymentInstruments"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "delete-method",
+          "href": "https://w3c.github.io/payment-handler/#delete-method",
+          "title": "delete() method",
+          "number": "3.3.1"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-paymentinstruments-get",
+        "href": "https://w3c.github.io/payment-handler/#dom-paymentinstruments-get",
+        "linkingText": [
+          "get()",
+          "get(instrumentKey)"
+        ],
+        "localLinkingText": [
+          "PaymentInstruments.get",
+          "PaymentInstruments.get()",
+          "get"
+        ],
+        "type": "method",
+        "for": [
+          "PaymentInstruments"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "get-method",
+          "href": "https://w3c.github.io/payment-handler/#get-method",
+          "title": "get() method",
+          "number": "3.3.2"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-paymentinstruments-keys",
+        "href": "https://w3c.github.io/payment-handler/#dom-paymentinstruments-keys",
+        "linkingText": [
+          "keys()"
+        ],
+        "localLinkingText": [
+          "PaymentInstruments.keys",
+          "PaymentInstruments.keys()",
+          "keys"
+        ],
+        "type": "method",
+        "for": [
+          "PaymentInstruments"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "keys-method",
+          "href": "https://w3c.github.io/payment-handler/#keys-method",
+          "title": "keys() method",
+          "number": "3.3.3"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-paymentinstruments-has",
+        "href": "https://w3c.github.io/payment-handler/#dom-paymentinstruments-has",
+        "linkingText": [
+          "has()",
+          "has(instrumentKey)"
+        ],
+        "localLinkingText": [
+          "PaymentInstruments.has",
+          "PaymentInstruments.has()",
+          "has"
+        ],
+        "type": "method",
+        "for": [
+          "PaymentInstruments"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "has-method",
+          "href": "https://w3c.github.io/payment-handler/#has-method",
+          "title": "has() method",
+          "number": "3.3.4"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-paymentinstruments-set",
+        "href": "https://w3c.github.io/payment-handler/#dom-paymentinstruments-set",
+        "linkingText": [
+          "set()",
+          "set(instrumentKey, details)"
+        ],
+        "localLinkingText": [
+          "PaymentInstruments.set",
+          "PaymentInstruments.set()",
+          "set"
+        ],
+        "type": "method",
+        "for": [
+          "PaymentInstruments"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "set-method",
+          "href": "https://w3c.github.io/payment-handler/#set-method",
+          "title": "set() method",
+          "number": "3.3.5"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-paymentinstruments-clear",
+        "href": "https://w3c.github.io/payment-handler/#dom-paymentinstruments-clear",
+        "linkingText": [
+          "clear()"
+        ],
+        "localLinkingText": [
+          "PaymentInstruments.clear",
+          "PaymentInstruments.clear()",
+          "clear"
+        ],
+        "type": "method",
+        "for": [
+          "PaymentInstruments"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "clear-method",
+          "href": "https://w3c.github.io/payment-handler/#clear-method",
+          "title": "clear() method",
+          "number": "3.3.6"
+        },
+        "definedIn": "heading"
+      }
+    ]
+  }
+}

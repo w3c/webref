@@ -1,0 +1,155 @@
+{
+  "name": "MockMicrophoneConfiguration",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Media Capture Automation",
+      "url": "https://w3c.github.io/mediacapture-automation/"
+    },
+    "fragment": "dictionary MockMicrophoneConfiguration : MockCaptureDeviceConfiguration {\n  unsigned long defaultSampleRate = 44100;\n  // TODO: Add more capabilities parameters like:\n  // ULongRange sampleRate;\n  // sequence echoCancellation;\n};",
+    "href": "https://w3c.github.io/mediacapture-automation/#dom-mockmicrophoneconfiguration"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "MockCaptureDeviceConfiguration",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "Media Capture Automation",
+        "url": "https://w3c.github.io/mediacapture-automation/"
+      },
+      "fragment": "dictionary MockCaptureDeviceConfiguration {\n  DOMString label;\n  DOMString deviceId;\n  DOMString groupId;\n};",
+      "href": "https://w3c.github.io/mediacapture-automation/#dom-mockcapturedeviceconfiguration"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://w3c.github.io/mediacapture-automation/": [
+      {
+        "id": "dom-mockmicrophoneconfiguration",
+        "href": "https://w3c.github.io/mediacapture-automation/#dom-mockmicrophoneconfiguration",
+        "linkingText": [
+          "MockMicrophoneConfiguration"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "mock-microphone-0",
+          "href": "https://w3c.github.io/mediacapture-automation/#mock-microphone-0",
+          "title": "Mock Microphone",
+          "number": "4.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-mockmicrophoneconfiguration-defaultsamplerate",
+        "href": "https://w3c.github.io/mediacapture-automation/#dom-mockmicrophoneconfiguration-defaultsamplerate",
+        "linkingText": [
+          "defaultSampleRate"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MockMicrophoneConfiguration"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-mockmicrophoneconfiguration-members",
+          "href": "https://w3c.github.io/mediacapture-automation/#dictionary-mockmicrophoneconfiguration-members",
+          "title": "Dictionary MockMicrophoneConfiguration Members",
+          "number": "4.3.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mockcapturedeviceconfiguration",
+        "href": "https://w3c.github.io/mediacapture-automation/#dom-mockcapturedeviceconfiguration",
+        "linkingText": [
+          "MockCaptureDeviceConfiguration"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "mock-capture-device-0",
+          "href": "https://w3c.github.io/mediacapture-automation/#mock-capture-device-0",
+          "title": "Mock Capture Device",
+          "number": "4.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-mockcapturedeviceconfiguration-label",
+        "href": "https://w3c.github.io/mediacapture-automation/#dom-mockcapturedeviceconfiguration-label",
+        "linkingText": [
+          "label"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MockCaptureDeviceConfiguration"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-mockcapturedeviceconfiguration-members",
+          "href": "https://w3c.github.io/mediacapture-automation/#dictionary-mockcapturedeviceconfiguration-members",
+          "title": "Dictionary MockCaptureDeviceConfiguration Members",
+          "number": "4.1.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mockcapturedeviceconfiguration-deviceid",
+        "href": "https://w3c.github.io/mediacapture-automation/#dom-mockcapturedeviceconfiguration-deviceid",
+        "linkingText": [
+          "deviceId"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MockCaptureDeviceConfiguration"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-mockcapturedeviceconfiguration-members",
+          "href": "https://w3c.github.io/mediacapture-automation/#dictionary-mockcapturedeviceconfiguration-members",
+          "title": "Dictionary MockCaptureDeviceConfiguration Members",
+          "number": "4.1.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mockcapturedeviceconfiguration-groupid",
+        "href": "https://w3c.github.io/mediacapture-automation/#dom-mockcapturedeviceconfiguration-groupid",
+        "linkingText": [
+          "groupId"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MockCaptureDeviceConfiguration"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-mockcapturedeviceconfiguration-members",
+          "href": "https://w3c.github.io/mediacapture-automation/#dictionary-mockcapturedeviceconfiguration-members",
+          "title": "Dictionary MockCaptureDeviceConfiguration Members",
+          "number": "4.1.1"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

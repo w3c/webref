@@ -1,0 +1,207 @@
+{
+  "name": "IntersectionObserverEntry",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Intersection Observer",
+      "url": "https://www.w3.org/TR/intersection-observer/"
+    },
+    "fragment": "[Exposed=Window]\ninterface IntersectionObserverEntry {\n  constructor(IntersectionObserverEntryInit intersectionObserverEntryInit);\n  readonly attribute DOMHighResTimeStamp time;\n  readonly attribute DOMRectReadOnly? rootBounds;\n  readonly attribute DOMRectReadOnly boundingClientRect;\n  readonly attribute DOMRectReadOnly intersectionRect;\n  readonly attribute boolean isIntersecting;\n  readonly attribute double intersectionRatio;\n  readonly attribute Element target;\n};",
+    "href": "https://w3c.github.io/IntersectionObserver/#intersectionobserverentry"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/intersection-observer/": [
+      {
+        "id": "intersectionobserverentry",
+        "href": "https://w3c.github.io/IntersectionObserver/#intersectionobserverentry",
+        "linkingText": [
+          "IntersectionObserverEntry"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "intersection-observer-entry",
+          "href": "https://w3c.github.io/IntersectionObserver/#intersection-observer-entry",
+          "title": "The IntersectionObserverEntry interface",
+          "number": "2.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-intersectionobserverentry-intersectionobserverentry",
+        "href": "https://w3c.github.io/IntersectionObserver/#dom-intersectionobserverentry-intersectionobserverentry",
+        "linkingText": [
+          "IntersectionObserverEntry(intersectionObserverEntryInit)",
+          "constructor(intersectionObserverEntryInit)"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "IntersectionObserverEntry"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "intersection-observer-entry",
+          "href": "https://w3c.github.io/IntersectionObserver/#intersection-observer-entry",
+          "title": "The IntersectionObserverEntry interface",
+          "number": "2.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-intersectionobserverentry-time",
+        "href": "https://w3c.github.io/IntersectionObserver/#dom-intersectionobserverentry-time",
+        "linkingText": [
+          "time"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "IntersectionObserverEntry"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "intersection-observer-entry",
+          "href": "https://w3c.github.io/IntersectionObserver/#intersection-observer-entry",
+          "title": "The IntersectionObserverEntry interface",
+          "number": "2.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-intersectionobserverentry-rootbounds",
+        "href": "https://w3c.github.io/IntersectionObserver/#dom-intersectionobserverentry-rootbounds",
+        "linkingText": [
+          "rootBounds"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "IntersectionObserverEntry"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "intersection-observer-entry",
+          "href": "https://w3c.github.io/IntersectionObserver/#intersection-observer-entry",
+          "title": "The IntersectionObserverEntry interface",
+          "number": "2.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-intersectionobserverentry-boundingclientrect",
+        "href": "https://w3c.github.io/IntersectionObserver/#dom-intersectionobserverentry-boundingclientrect",
+        "linkingText": [
+          "boundingClientRect"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "IntersectionObserverEntry"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "intersection-observer-entry",
+          "href": "https://w3c.github.io/IntersectionObserver/#intersection-observer-entry",
+          "title": "The IntersectionObserverEntry interface",
+          "number": "2.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-intersectionobserverentry-intersectionrect",
+        "href": "https://w3c.github.io/IntersectionObserver/#dom-intersectionobserverentry-intersectionrect",
+        "linkingText": [
+          "intersectionRect"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "IntersectionObserverEntry"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "intersection-observer-entry",
+          "href": "https://w3c.github.io/IntersectionObserver/#intersection-observer-entry",
+          "title": "The IntersectionObserverEntry interface",
+          "number": "2.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-intersectionobserverentry-isintersecting",
+        "href": "https://w3c.github.io/IntersectionObserver/#dom-intersectionobserverentry-isintersecting",
+        "linkingText": [
+          "isIntersecting"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "IntersectionObserverEntry"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "intersection-observer-entry",
+          "href": "https://w3c.github.io/IntersectionObserver/#intersection-observer-entry",
+          "title": "The IntersectionObserverEntry interface",
+          "number": "2.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-intersectionobserverentry-intersectionratio",
+        "href": "https://w3c.github.io/IntersectionObserver/#dom-intersectionobserverentry-intersectionratio",
+        "linkingText": [
+          "intersectionRatio"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "IntersectionObserverEntry"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "intersection-observer-entry",
+          "href": "https://w3c.github.io/IntersectionObserver/#intersection-observer-entry",
+          "title": "The IntersectionObserverEntry interface",
+          "number": "2.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-intersectionobserverentry-target",
+        "href": "https://w3c.github.io/IntersectionObserver/#dom-intersectionobserverentry-target",
+        "linkingText": [
+          "target"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "IntersectionObserverEntry"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "intersection-observer-entry",
+          "href": "https://w3c.github.io/IntersectionObserver/#intersection-observer-entry",
+          "title": "The IntersectionObserverEntry interface",
+          "number": "2.3"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

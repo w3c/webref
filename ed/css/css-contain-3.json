@@ -1,0 +1,129 @@
+{
+  "spec": {
+    "title": "CSS Containment Module Level 3",
+    "url": "https://drafts.csswg.org/css-contain-3/"
+  },
+  "properties": {
+    "contain": {
+      "name": "contain",
+      "newValues": "layout || style || paint || [ size | inline-size ]",
+      "styleDeclaration": [
+        "contain"
+      ]
+    },
+    "container-type": {
+      "name": "container-type",
+      "value": "none | style || state || [ size | inline-size | block-size ]",
+      "initial": "none",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "the keyword none or one or more of size, inline-size, block-size, style, state",
+      "canonicalOrder": "per grammar",
+      "animationType": "not animatable",
+      "styleDeclaration": [
+        "container-type",
+        "containerType"
+      ]
+    },
+    "container-name": {
+      "name": "container-name",
+      "value": "none | [ <custom-ident> | <string> ]+",
+      "initial": "none",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "a set of unique identifiers",
+      "canonicalOrder": "per grammar",
+      "animationType": "not animatable",
+      "styleDeclaration": [
+        "container-name",
+        "containerName"
+      ]
+    },
+    "container": {
+      "name": "container",
+      "value": "<'container-type'> [ / <'container-name'> ]?",
+      "initial": "see individual properties",
+      "appliesTo": "see individual properties",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "container"
+      ]
+    }
+  },
+  "descriptors": {
+    "width": [
+      {
+        "name": "width",
+        "for": "@container",
+        "value": "<length>",
+        "type": "range"
+      }
+    ],
+    "height": [
+      {
+        "name": "height",
+        "for": "@container",
+        "value": "<length>",
+        "type": "range"
+      }
+    ],
+    "inline-size": [
+      {
+        "name": "inline-size",
+        "for": "@container",
+        "value": "<length>",
+        "type": "range"
+      }
+    ],
+    "block-size": [
+      {
+        "name": "block-size",
+        "for": "@container",
+        "value": "<length>",
+        "type": "range"
+      }
+    ],
+    "aspect-ratio": [
+      {
+        "name": "aspect-ratio",
+        "for": "@container",
+        "value": "<ratio>",
+        "type": "range"
+      }
+    ],
+    "orientation": [
+      {
+        "name": "orientation",
+        "for": "@container",
+        "value": "portrait | landscape",
+        "type": "discrete"
+      }
+    ]
+  },
+  "valuespaces": {
+    "<container-condition>": {
+      "value": "not <container-query> | <container-query> [ and <container-query> ]* | <container-query> [ or <container-query> ]*"
+    },
+    "<container-query>": {
+      "value": "( <container-condition> ) | size( <size-query> ) | style( <style-query> )"
+    },
+    "<size-query>": {
+      "value": "<size-feature> | <size-condition>"
+    },
+    "<size-condition>": {
+      "value": "not ( <size-query> ) | ( <size-query> ) [ and ( <size-query> ) ]* | ( <size-query> ) [ or ( <size-query> ) ]*"
+    },
+    "<style-query>": {
+      "value": "<style-feature> | <style-condition>"
+    },
+    "<style-condition>": {
+      "value": "not ( <style-query> ) | ( <style-query> ) [ and ( <style-query> ) ]* | ( <style-query> ) [ or ( <style-query> ) ]*"
+    }
+  }
+}

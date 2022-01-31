@@ -1,0 +1,236 @@
+{
+  "spec": {
+    "title": "Media Queries Level 4",
+    "url": "https://drafts.csswg.org/mediaqueries-4/"
+  },
+  "properties": {},
+  "descriptors": {
+    "width": [
+      {
+        "name": "width",
+        "for": "@media",
+        "value": "<length>",
+        "type": "range"
+      }
+    ],
+    "height": [
+      {
+        "name": "height",
+        "for": "@media",
+        "value": "<length>",
+        "type": "range"
+      }
+    ],
+    "aspect-ratio": [
+      {
+        "name": "aspect-ratio",
+        "for": "@media",
+        "value": "<ratio>",
+        "type": "range"
+      }
+    ],
+    "orientation": [
+      {
+        "name": "orientation",
+        "for": "@media",
+        "value": "portrait | landscape",
+        "type": "discrete"
+      }
+    ],
+    "resolution": [
+      {
+        "name": "resolution",
+        "for": "@media",
+        "value": "<resolution> | infinite",
+        "type": "range"
+      }
+    ],
+    "scan": [
+      {
+        "name": "scan",
+        "for": "@media",
+        "value": "interlace | progressive",
+        "type": "discrete"
+      }
+    ],
+    "grid": [
+      {
+        "name": "grid",
+        "for": "@media",
+        "value": "<mq-boolean>",
+        "type": "discrete"
+      }
+    ],
+    "update": [
+      {
+        "name": "update",
+        "for": "@media",
+        "value": "none | slow | fast",
+        "type": "discrete"
+      }
+    ],
+    "overflow-block": [
+      {
+        "name": "overflow-block",
+        "for": "@media",
+        "value": "none | scroll | paged",
+        "type": "discrete"
+      }
+    ],
+    "overflow-inline": [
+      {
+        "name": "overflow-inline",
+        "for": "@media",
+        "value": "none | scroll",
+        "type": "discrete"
+      }
+    ],
+    "color": [
+      {
+        "name": "color",
+        "for": "@media",
+        "value": "<integer>",
+        "type": "range"
+      }
+    ],
+    "color-index": [
+      {
+        "name": "color-index",
+        "for": "@media",
+        "value": "<integer>",
+        "type": "range"
+      }
+    ],
+    "monochrome": [
+      {
+        "name": "monochrome",
+        "for": "@media",
+        "value": "<integer>",
+        "type": "range"
+      }
+    ],
+    "color-gamut": [
+      {
+        "name": "color-gamut",
+        "for": "@media",
+        "value": "srgb | p3 | rec2020",
+        "type": "discrete"
+      }
+    ],
+    "pointer": [
+      {
+        "name": "pointer",
+        "for": "@media",
+        "value": "none | coarse | fine",
+        "type": "discrete"
+      }
+    ],
+    "hover": [
+      {
+        "name": "hover",
+        "for": "@media",
+        "value": "none | hover",
+        "type": "discrete"
+      }
+    ],
+    "any-pointer": [
+      {
+        "name": "any-pointer",
+        "for": "@media",
+        "value": "none | coarse | fine",
+        "type": "discrete"
+      }
+    ],
+    "any-hover": [
+      {
+        "name": "any-hover",
+        "for": "@media",
+        "value": "none | hover",
+        "type": "discrete"
+      }
+    ],
+    "device-width": [
+      {
+        "name": "device-width",
+        "for": "@media",
+        "value": "<length>",
+        "type": "range"
+      }
+    ],
+    "device-height": [
+      {
+        "name": "device-height",
+        "for": "@media",
+        "value": "<length>",
+        "type": "range"
+      }
+    ],
+    "device-aspect-ratio": [
+      {
+        "name": "device-aspect-ratio",
+        "for": "@media",
+        "value": "<ratio>",
+        "type": "range"
+      }
+    ]
+  },
+  "valuespaces": {
+    "<media-query>": {
+      "value": "<media-condition> | [ not | only ]? <media-type> [ and <media-condition-without-or> ]?"
+    },
+    "<media-type>": {
+      "value": "<ident>"
+    },
+    "<media-condition>": {
+      "value": "<media-not> | <media-in-parens> [ <media-and>* | <media-or>* ]"
+    },
+    "<media-condition-without-or>": {
+      "value": "<media-not> | <media-in-parens> <media-and>*"
+    },
+    "<media-not>": {
+      "value": "not <media-in-parens>"
+    },
+    "<media-and>": {
+      "value": "and <media-in-parens>"
+    },
+    "<media-or>": {
+      "value": "or <media-in-parens>"
+    },
+    "<media-in-parens>": {
+      "value": "( <media-condition> ) | ( <media-feature> ) | <general-enclosed>"
+    },
+    "<media-feature>": {
+      "value": "[ <mf-plain> | <mf-boolean> | <mf-range> ]"
+    },
+    "<mf-plain>": {
+      "value": "<mf-name> : <mf-value>"
+    },
+    "<mf-boolean>": {
+      "value": "<mf-name>"
+    },
+    "<mf-range>": {
+      "value": "<mf-name> <mf-comparison> <mf-value> | <mf-value> <mf-comparison> <mf-name> | <mf-value> <mf-lt> <mf-name> <mf-lt> <mf-value> | <mf-value> <mf-gt> <mf-name> <mf-gt> <mf-value>"
+    },
+    "<mf-name>": {
+      "value": "<ident>"
+    },
+    "<mf-value>": {
+      "value": "<number> | <dimension> | <ident> | <ratio>"
+    },
+    "<mf-lt>": {
+      "value": "'<' '='?"
+    },
+    "<mf-gt>": {
+      "value": "'>' '='?"
+    },
+    "<mf-eq>": {
+      "value": "'='"
+    },
+    "<mf-comparison>": {
+      "value": "<mf-lt> | <mf-gt> | <mf-eq>"
+    },
+    "<general-enclosed>": {
+      "value": "[ <function-token> <any-value>? ) ] | ( <any-value>? )"
+    }
+  }
+}

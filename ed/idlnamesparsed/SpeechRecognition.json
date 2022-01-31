@@ -1,0 +1,581 @@
+{
+  "name": "SpeechRecognition",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Web Speech API",
+      "url": "https://wicg.github.io/speech-api/"
+    },
+    "fragment": "[Exposed=Window]\ninterface SpeechRecognition : EventTarget {\n    constructor();\n\n    // recognition parameters\n    attribute SpeechGrammarList grammars;\n    attribute DOMString lang;\n    attribute boolean continuous;\n    attribute boolean interimResults;\n    attribute unsigned long maxAlternatives;\n\n    // methods to drive the speech interaction\n    undefined start();\n    undefined stop();\n    undefined abort();\n\n    // event methods\n    attribute EventHandler onaudiostart;\n    attribute EventHandler onsoundstart;\n    attribute EventHandler onspeechstart;\n    attribute EventHandler onspeechend;\n    attribute EventHandler onsoundend;\n    attribute EventHandler onaudioend;\n    attribute EventHandler onresult;\n    attribute EventHandler onnomatch;\n    attribute EventHandler onerror;\n    attribute EventHandler onstart;\n    attribute EventHandler onend;\n};",
+    "href": "https://wicg.github.io/speech-api/#speechrecognition"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "EventTarget",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=*]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+      "href": "https://dom.spec.whatwg.org/#eventtarget"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://wicg.github.io/speech-api/": [
+      {
+        "id": "speechrecognition",
+        "href": "https://wicg.github.io/speech-api/#speechrecognition",
+        "linkingText": [
+          "SpeechRecognition"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "speechreco-section",
+          "href": "https://wicg.github.io/speech-api/#speechreco-section",
+          "title": "The SpeechRecognition Interface",
+          "number": "4.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-speechrecognition-speechrecognition",
+        "href": "https://wicg.github.io/speech-api/#dom-speechrecognition-speechrecognition",
+        "linkingText": [
+          "SpeechRecognition()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "SpeechRecognition"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "speechreco-section",
+          "href": "https://wicg.github.io/speech-api/#speechreco-section",
+          "title": "The SpeechRecognition Interface",
+          "number": "4.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-speechrecognition-grammars",
+        "href": "https://wicg.github.io/speech-api/#dom-speechrecognition-grammars",
+        "linkingText": [
+          "grammars"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "SpeechRecognition"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "speechreco-attributes",
+          "href": "https://wicg.github.io/speech-api/#speechreco-attributes",
+          "title": "SpeechRecognition Attributes",
+          "number": "4.1.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-speechrecognition-lang",
+        "href": "https://wicg.github.io/speech-api/#dom-speechrecognition-lang",
+        "linkingText": [
+          "lang"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "SpeechRecognition"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "speechreco-attributes",
+          "href": "https://wicg.github.io/speech-api/#speechreco-attributes",
+          "title": "SpeechRecognition Attributes",
+          "number": "4.1.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-speechrecognition-continuous",
+        "href": "https://wicg.github.io/speech-api/#dom-speechrecognition-continuous",
+        "linkingText": [
+          "continuous"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "SpeechRecognition"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "speechreco-attributes",
+          "href": "https://wicg.github.io/speech-api/#speechreco-attributes",
+          "title": "SpeechRecognition Attributes",
+          "number": "4.1.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-speechrecognition-interimresults",
+        "href": "https://wicg.github.io/speech-api/#dom-speechrecognition-interimresults",
+        "linkingText": [
+          "interimResults"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "SpeechRecognition"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "speechreco-attributes",
+          "href": "https://wicg.github.io/speech-api/#speechreco-attributes",
+          "title": "SpeechRecognition Attributes",
+          "number": "4.1.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-speechrecognition-maxalternatives",
+        "href": "https://wicg.github.io/speech-api/#dom-speechrecognition-maxalternatives",
+        "linkingText": [
+          "maxAlternatives"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "SpeechRecognition"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "speechreco-attributes",
+          "href": "https://wicg.github.io/speech-api/#speechreco-attributes",
+          "title": "SpeechRecognition Attributes",
+          "number": "4.1.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-speechrecognition-start",
+        "href": "https://wicg.github.io/speech-api/#dom-speechrecognition-start",
+        "linkingText": [
+          "start()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "SpeechRecognition"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "speechreco-methods",
+          "href": "https://wicg.github.io/speech-api/#speechreco-methods",
+          "title": "SpeechRecognition Methods",
+          "number": "4.1.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-speechrecognition-stop",
+        "href": "https://wicg.github.io/speech-api/#dom-speechrecognition-stop",
+        "linkingText": [
+          "stop()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "SpeechRecognition"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "speechreco-methods",
+          "href": "https://wicg.github.io/speech-api/#speechreco-methods",
+          "title": "SpeechRecognition Methods",
+          "number": "4.1.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-speechrecognition-abort",
+        "href": "https://wicg.github.io/speech-api/#dom-speechrecognition-abort",
+        "linkingText": [
+          "abort()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "SpeechRecognition"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "speechreco-methods",
+          "href": "https://wicg.github.io/speech-api/#speechreco-methods",
+          "title": "SpeechRecognition Methods",
+          "number": "4.1.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-speechrecognition-onaudiostart",
+        "href": "https://wicg.github.io/speech-api/#dom-speechrecognition-onaudiostart",
+        "linkingText": [
+          "onaudiostart"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "SpeechRecognition"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "speechreco-section",
+          "href": "https://wicg.github.io/speech-api/#speechreco-section",
+          "title": "The SpeechRecognition Interface",
+          "number": "4.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-speechrecognition-onsoundstart",
+        "href": "https://wicg.github.io/speech-api/#dom-speechrecognition-onsoundstart",
+        "linkingText": [
+          "onsoundstart"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "SpeechRecognition"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "speechreco-section",
+          "href": "https://wicg.github.io/speech-api/#speechreco-section",
+          "title": "The SpeechRecognition Interface",
+          "number": "4.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-speechrecognition-onspeechstart",
+        "href": "https://wicg.github.io/speech-api/#dom-speechrecognition-onspeechstart",
+        "linkingText": [
+          "onspeechstart"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "SpeechRecognition"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "speechreco-section",
+          "href": "https://wicg.github.io/speech-api/#speechreco-section",
+          "title": "The SpeechRecognition Interface",
+          "number": "4.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-speechrecognition-onspeechend",
+        "href": "https://wicg.github.io/speech-api/#dom-speechrecognition-onspeechend",
+        "linkingText": [
+          "onspeechend"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "SpeechRecognition"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "speechreco-section",
+          "href": "https://wicg.github.io/speech-api/#speechreco-section",
+          "title": "The SpeechRecognition Interface",
+          "number": "4.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-speechrecognition-onsoundend",
+        "href": "https://wicg.github.io/speech-api/#dom-speechrecognition-onsoundend",
+        "linkingText": [
+          "onsoundend"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "SpeechRecognition"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "speechreco-section",
+          "href": "https://wicg.github.io/speech-api/#speechreco-section",
+          "title": "The SpeechRecognition Interface",
+          "number": "4.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-speechrecognition-onaudioend",
+        "href": "https://wicg.github.io/speech-api/#dom-speechrecognition-onaudioend",
+        "linkingText": [
+          "onaudioend"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "SpeechRecognition"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "speechreco-section",
+          "href": "https://wicg.github.io/speech-api/#speechreco-section",
+          "title": "The SpeechRecognition Interface",
+          "number": "4.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-speechrecognition-onresult",
+        "href": "https://wicg.github.io/speech-api/#dom-speechrecognition-onresult",
+        "linkingText": [
+          "onresult"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "SpeechRecognition"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "speechreco-section",
+          "href": "https://wicg.github.io/speech-api/#speechreco-section",
+          "title": "The SpeechRecognition Interface",
+          "number": "4.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-speechrecognition-onnomatch",
+        "href": "https://wicg.github.io/speech-api/#dom-speechrecognition-onnomatch",
+        "linkingText": [
+          "onnomatch"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "SpeechRecognition"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "speechreco-section",
+          "href": "https://wicg.github.io/speech-api/#speechreco-section",
+          "title": "The SpeechRecognition Interface",
+          "number": "4.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-speechrecognition-onerror",
+        "href": "https://wicg.github.io/speech-api/#dom-speechrecognition-onerror",
+        "linkingText": [
+          "onerror"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "SpeechRecognition"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "speechreco-section",
+          "href": "https://wicg.github.io/speech-api/#speechreco-section",
+          "title": "The SpeechRecognition Interface",
+          "number": "4.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-speechrecognition-onstart",
+        "href": "https://wicg.github.io/speech-api/#dom-speechrecognition-onstart",
+        "linkingText": [
+          "onstart"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "SpeechRecognition"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "speechreco-section",
+          "href": "https://wicg.github.io/speech-api/#speechreco-section",
+          "title": "The SpeechRecognition Interface",
+          "number": "4.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-speechrecognition-onend",
+        "href": "https://wicg.github.io/speech-api/#dom-speechrecognition-onend",
+        "linkingText": [
+          "onend"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "SpeechRecognition"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "speechreco-section",
+          "href": "https://wicg.github.io/speech-api/#speechreco-section",
+          "title": "The SpeechRecognition Interface",
+          "number": "4.1"
+        },
+        "definedIn": "pre"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "eventtarget",
+        "href": "https://dom.spec.whatwg.org/#eventtarget",
+        "linkingText": [
+          "EventTarget"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventtarget-eventtarget",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-eventtarget",
+        "linkingText": [
+          "EventTarget()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-addeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-addeventlistener",
+        "linkingText": [
+          "addEventListener(type, callback, options)",
+          "addEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-removeeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-removeeventlistener",
+        "linkingText": [
+          "removeEventListener(type, callback, options)",
+          "removeEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-dispatchevent",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-dispatchevent",
+        "linkingText": [
+          "dispatchEvent(event)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

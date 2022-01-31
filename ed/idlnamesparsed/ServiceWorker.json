@@ -1,0 +1,332 @@
+{
+  "name": "ServiceWorker",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Service Workers Nightly",
+      "url": "https://www.w3.org/TR/service-workers-1/"
+    },
+    "fragment": "[SecureContext, Exposed=(Window,Worker)]\ninterface ServiceWorker : EventTarget {\n  readonly attribute USVString scriptURL;\n  readonly attribute ServiceWorkerState state;\n  undefined postMessage(any message, sequence<object> transfer);\n  undefined postMessage(any message, optional StructuredSerializeOptions options = {});\n\n  // event\n  attribute EventHandler onstatechange;\n};",
+    "href": "https://w3c.github.io/ServiceWorker/#serviceworker"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "Service Workers Nightly",
+        "url": "https://www.w3.org/TR/service-workers-1/"
+      },
+      "fragment": "ServiceWorker includes AbstractWorker;"
+    }
+  ],
+  "inheritance": {
+    "name": "EventTarget",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=*]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+      "href": "https://dom.spec.whatwg.org/#eventtarget"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [
+    {
+      "name": "AbstractWorker",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        "fragment": "interface mixin AbstractWorker {\n  attribute EventHandler onerror;\n};",
+        "href": "https://html.spec.whatwg.org/multipage/workers.html#abstractworker"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    }
+  ],
+  "dfns": {
+    "https://www.w3.org/TR/service-workers-1/": [
+      {
+        "id": "serviceworker",
+        "href": "https://w3c.github.io/ServiceWorker/#serviceworker",
+        "linkingText": [
+          "ServiceWorker"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "serviceworker-interface",
+          "href": "https://w3c.github.io/ServiceWorker/#serviceworker-interface",
+          "title": "ServiceWorker",
+          "number": "3.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-serviceworker-scripturl",
+        "href": "https://w3c.github.io/ServiceWorker/#dom-serviceworker-scripturl",
+        "linkingText": [
+          "scriptURL"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "ServiceWorker"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "service-worker-url",
+          "href": "https://w3c.github.io/ServiceWorker/#service-worker-url",
+          "title": "scriptURL",
+          "number": "3.1.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-serviceworker-state",
+        "href": "https://w3c.github.io/ServiceWorker/#dom-serviceworker-state",
+        "linkingText": [
+          "state"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "ServiceWorker"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "service-worker-state",
+          "href": "https://w3c.github.io/ServiceWorker/#service-worker-state",
+          "title": "state",
+          "number": "3.1.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-serviceworker-postmessage",
+        "href": "https://w3c.github.io/ServiceWorker/#dom-serviceworker-postmessage",
+        "linkingText": [
+          "postMessage(message, transfer)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "ServiceWorker"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "service-worker-postmessage",
+          "href": "https://w3c.github.io/ServiceWorker/#service-worker-postmessage",
+          "title": "postMessage(message, transfer)",
+          "number": "3.1.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-serviceworker-postmessage-message-options",
+        "href": "https://w3c.github.io/ServiceWorker/#dom-serviceworker-postmessage-message-options",
+        "linkingText": [
+          "postMessage(message, options)",
+          "postMessage(message)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "ServiceWorker"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "service-worker-postmessage-options",
+          "href": "https://w3c.github.io/ServiceWorker/#service-worker-postmessage-options",
+          "title": "postMessage(message, options)",
+          "number": "3.1.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-serviceworker-onstatechange",
+        "href": "https://w3c.github.io/ServiceWorker/#dom-serviceworker-onstatechange",
+        "linkingText": [
+          "onstatechange"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "ServiceWorker"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "service-worker-event-handler",
+          "href": "https://w3c.github.io/ServiceWorker/#service-worker-event-handler",
+          "title": "Event handler",
+          "number": "3.1.6"
+        },
+        "definedIn": "table"
+      }
+    ],
+    "https://html.spec.whatwg.org/multipage/": [
+      {
+        "id": "abstractworker",
+        "href": "https://html.spec.whatwg.org/multipage/workers.html#abstractworker",
+        "linkingText": [
+          "AbstractWorker"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-abstractworker-mixin",
+          "href": "https://html.spec.whatwg.org/multipage/workers.html#the-abstractworker-mixin",
+          "title": "The AbstractWorker mixin",
+          "number": "10.2.6.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "handler-abstractworker-onerror",
+        "href": "https://html.spec.whatwg.org/multipage/workers.html#handler-abstractworker-onerror",
+        "linkingText": [
+          "onerror"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "AbstractWorker"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-abstractworker-mixin",
+          "href": "https://html.spec.whatwg.org/multipage/workers.html#the-abstractworker-mixin",
+          "title": "The AbstractWorker mixin",
+          "number": "10.2.6.1"
+        },
+        "definedIn": "table"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "eventtarget",
+        "href": "https://dom.spec.whatwg.org/#eventtarget",
+        "linkingText": [
+          "EventTarget"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventtarget-eventtarget",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-eventtarget",
+        "linkingText": [
+          "EventTarget()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-addeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-addeventlistener",
+        "linkingText": [
+          "addEventListener(type, callback, options)",
+          "addEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-removeeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-removeeventlistener",
+        "linkingText": [
+          "removeEventListener(type, callback, options)",
+          "removeEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-dispatchevent",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-dispatchevent",
+        "linkingText": [
+          "dispatchEvent(event)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

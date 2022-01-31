@@ -1,0 +1,3292 @@
+{
+  "spec": {
+    "title": "Content Security Policy Level 3",
+    "url": "https://w3c.github.io/webappsec-csp/"
+  },
+  "dfns": [
+    {
+      "id": "content-security-policy",
+      "href": "https://w3c.github.io/webappsec-csp/#content-security-policy",
+      "linkingText": [
+        "Content Security Policy"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "intro",
+        "href": "https://w3c.github.io/webappsec-csp/#intro",
+        "title": "Introduction",
+        "number": "1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "grammardef-optional-ascii-whitespace",
+      "href": "https://w3c.github.io/webappsec-csp/#grammardef-optional-ascii-whitespace",
+      "linkingText": [
+        "optional-ascii-whitespace"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "framework-infrastructure",
+        "href": "https://w3c.github.io/webappsec-csp/#framework-infrastructure",
+        "title": "Infrastructure",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "grammardef-required-ascii-whitespace",
+      "href": "https://w3c.github.io/webappsec-csp/#grammardef-required-ascii-whitespace",
+      "linkingText": [
+        "required-ascii-whitespace"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "framework-infrastructure",
+        "href": "https://w3c.github.io/webappsec-csp/#framework-infrastructure",
+        "title": "Infrastructure",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "content-security-policy-object",
+      "href": "https://w3c.github.io/webappsec-csp/#content-security-policy-object",
+      "linkingText": [
+        "content security policy object"
+      ],
+      "localLinkingText": [
+        "policy"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "framework-policy",
+        "href": "https://w3c.github.io/webappsec-csp/#framework-policy",
+        "title": "Policies",
+        "number": "2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "policy-directive-set",
+      "href": "https://w3c.github.io/webappsec-csp/#policy-directive-set",
+      "linkingText": [
+        "directive set"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "policy"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "framework-policy",
+        "href": "https://w3c.github.io/webappsec-csp/#framework-policy",
+        "title": "Policies",
+        "number": "2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "policy-disposition",
+      "href": "https://w3c.github.io/webappsec-csp/#policy-disposition",
+      "linkingText": [
+        "disposition"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "policy"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "framework-policy",
+        "href": "https://w3c.github.io/webappsec-csp/#framework-policy",
+        "title": "Policies",
+        "number": "2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "policy-source",
+      "href": "https://w3c.github.io/webappsec-csp/#policy-source",
+      "linkingText": [
+        "source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "policy"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "framework-policy",
+        "href": "https://w3c.github.io/webappsec-csp/#framework-policy",
+        "title": "Policies",
+        "number": "2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "policy-self-origin",
+      "href": "https://w3c.github.io/webappsec-csp/#policy-self-origin",
+      "linkingText": [
+        "self-origin"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "policy"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "framework-policy",
+        "href": "https://w3c.github.io/webappsec-csp/#framework-policy",
+        "title": "Policies",
+        "number": "2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "csp-list",
+      "href": "https://w3c.github.io/webappsec-csp/#csp-list",
+      "linkingText": [
+        "CSP list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "framework-policy",
+        "href": "https://w3c.github.io/webappsec-csp/#framework-policy",
+        "title": "Policies",
+        "number": "2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "contains-a-header-delivered-content-security-policy",
+      "href": "https://w3c.github.io/webappsec-csp/#contains-a-header-delivered-content-security-policy",
+      "linkingText": [
+        "contains a header-delivered Content Security Policy"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "framework-policy",
+        "href": "https://w3c.github.io/webappsec-csp/#framework-policy",
+        "title": "Policies",
+        "number": "2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "serialized-csp",
+      "href": "https://w3c.github.io/webappsec-csp/#serialized-csp",
+      "linkingText": [
+        "serialized CSP"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "framework-policy",
+        "href": "https://w3c.github.io/webappsec-csp/#framework-policy",
+        "title": "Policies",
+        "number": "2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "grammardef-serialized-policy",
+      "href": "https://w3c.github.io/webappsec-csp/#grammardef-serialized-policy",
+      "linkingText": [
+        "serialized-policy"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "framework-policy",
+        "href": "https://w3c.github.io/webappsec-csp/#framework-policy",
+        "title": "Policies",
+        "number": "2.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "serialized-csp-list",
+      "href": "https://w3c.github.io/webappsec-csp/#serialized-csp-list",
+      "linkingText": [
+        "serialized CSP list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "framework-policy",
+        "href": "https://w3c.github.io/webappsec-csp/#framework-policy",
+        "title": "Policies",
+        "number": "2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "grammardef-serialized-policy-list",
+      "href": "https://w3c.github.io/webappsec-csp/#grammardef-serialized-policy-list",
+      "linkingText": [
+        "serialized-policy-list"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "framework-policy",
+        "href": "https://w3c.github.io/webappsec-csp/#framework-policy",
+        "title": "Policies",
+        "number": "2.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "abstract-opdef-parse-a-serialized-csp",
+      "href": "https://w3c.github.io/webappsec-csp/#abstract-opdef-parse-a-serialized-csp",
+      "linkingText": [
+        "parse a serialized CSP"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "parse-serialized-policy",
+        "href": "https://w3c.github.io/webappsec-csp/#parse-serialized-policy",
+        "title": "Parse a serialized CSP",
+        "number": "2.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "abstract-opdef-parse-a-serialized-csp-list",
+      "href": "https://w3c.github.io/webappsec-csp/#abstract-opdef-parse-a-serialized-csp-list",
+      "linkingText": [
+        "parse a serialized CSP list"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "parse-serialized-policy-list",
+        "href": "https://w3c.github.io/webappsec-csp/#parse-serialized-policy-list",
+        "title": "Parse a serialized CSP list",
+        "number": "2.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "parse-response-csp",
+      "href": "https://w3c.github.io/webappsec-csp/#parse-response-csp",
+      "linkingText": [
+        "Parse response’s Content Security Policies"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "parse-response-csp",
+        "href": "https://w3c.github.io/webappsec-csp/#parse-response-csp",
+        "title": "Parse response’s Content Security Policies",
+        "number": "2.2.3"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "abstract-opdef-parse-a-responses-content-security-policies",
+      "href": "https://w3c.github.io/webappsec-csp/#abstract-opdef-parse-a-responses-content-security-policies",
+      "linkingText": [
+        "parse a response’s Content Security Policies"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "parse-response-csp",
+        "href": "https://w3c.github.io/webappsec-csp/#parse-response-csp",
+        "title": "Parse response’s Content Security Policies",
+        "number": "2.2.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "directives",
+      "href": "https://w3c.github.io/webappsec-csp/#directives",
+      "linkingText": [
+        "directives"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "framework-directives",
+        "href": "https://w3c.github.io/webappsec-csp/#framework-directives",
+        "title": "Directives",
+        "number": "2.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "directive-name",
+      "href": "https://w3c.github.io/webappsec-csp/#directive-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "directive"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "framework-directives",
+        "href": "https://w3c.github.io/webappsec-csp/#framework-directives",
+        "title": "Directives",
+        "number": "2.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "directive-value",
+      "href": "https://w3c.github.io/webappsec-csp/#directive-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "directive"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "framework-directives",
+        "href": "https://w3c.github.io/webappsec-csp/#framework-directives",
+        "title": "Directives",
+        "number": "2.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "serialized-directive",
+      "href": "https://w3c.github.io/webappsec-csp/#serialized-directive",
+      "linkingText": [
+        "serialized directive"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "framework-directives",
+        "href": "https://w3c.github.io/webappsec-csp/#framework-directives",
+        "title": "Directives",
+        "number": "2.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "grammardef-serialized-directive",
+      "href": "https://w3c.github.io/webappsec-csp/#grammardef-serialized-directive",
+      "linkingText": [
+        "serialized-directive"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "framework-directives",
+        "href": "https://w3c.github.io/webappsec-csp/#framework-directives",
+        "title": "Directives",
+        "number": "2.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "grammardef-directive-name",
+      "href": "https://w3c.github.io/webappsec-csp/#grammardef-directive-name",
+      "linkingText": [
+        "directive-name"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "framework-directives",
+        "href": "https://w3c.github.io/webappsec-csp/#framework-directives",
+        "title": "Directives",
+        "number": "2.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "grammardef-directive-value",
+      "href": "https://w3c.github.io/webappsec-csp/#grammardef-directive-value",
+      "linkingText": [
+        "directive-value"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "framework-directives",
+        "href": "https://w3c.github.io/webappsec-csp/#framework-directives",
+        "title": "Directives",
+        "number": "2.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "directive-pre-request-check",
+      "href": "https://w3c.github.io/webappsec-csp/#directive-pre-request-check",
+      "linkingText": [
+        "pre-request check"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "directive"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "framework-directives",
+        "href": "https://w3c.github.io/webappsec-csp/#framework-directives",
+        "title": "Directives",
+        "number": "2.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "directive-post-request-check",
+      "href": "https://w3c.github.io/webappsec-csp/#directive-post-request-check",
+      "linkingText": [
+        "post-request check"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "directive"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "framework-directives",
+        "href": "https://w3c.github.io/webappsec-csp/#framework-directives",
+        "title": "Directives",
+        "number": "2.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "directive-inline-check",
+      "href": "https://w3c.github.io/webappsec-csp/#directive-inline-check",
+      "linkingText": [
+        "inline check"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "directive"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "framework-directives",
+        "href": "https://w3c.github.io/webappsec-csp/#framework-directives",
+        "title": "Directives",
+        "number": "2.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "directive-initialization",
+      "href": "https://w3c.github.io/webappsec-csp/#directive-initialization",
+      "linkingText": [
+        "initialization"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "directive"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "framework-directives",
+        "href": "https://w3c.github.io/webappsec-csp/#framework-directives",
+        "title": "Directives",
+        "number": "2.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "directive-pre-navigation-check",
+      "href": "https://w3c.github.io/webappsec-csp/#directive-pre-navigation-check",
+      "linkingText": [
+        "pre-navigation check"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "directive"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "framework-directives",
+        "href": "https://w3c.github.io/webappsec-csp/#framework-directives",
+        "title": "Directives",
+        "number": "2.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "directive-navigation-response-check",
+      "href": "https://w3c.github.io/webappsec-csp/#directive-navigation-response-check",
+      "linkingText": [
+        "navigation response check"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "directive"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "framework-directives",
+        "href": "https://w3c.github.io/webappsec-csp/#framework-directives",
+        "title": "Directives",
+        "number": "2.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "source-lists",
+      "href": "https://w3c.github.io/webappsec-csp/#source-lists",
+      "linkingText": [
+        "source lists"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "framework-directive-source-list",
+        "href": "https://w3c.github.io/webappsec-csp/#framework-directive-source-list",
+        "title": "Source Lists",
+        "number": "2.3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "source-expression",
+      "href": "https://w3c.github.io/webappsec-csp/#source-expression",
+      "linkingText": [
+        "source expression"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "framework-directive-source-list",
+        "href": "https://w3c.github.io/webappsec-csp/#framework-directive-source-list",
+        "title": "Source Lists",
+        "number": "2.3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "serialized-source-list",
+      "href": "https://w3c.github.io/webappsec-csp/#serialized-source-list",
+      "linkingText": [
+        "serialized source list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "framework-directive-source-list",
+        "href": "https://w3c.github.io/webappsec-csp/#framework-directive-source-list",
+        "title": "Source Lists",
+        "number": "2.3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "grammardef-serialized-source-list",
+      "href": "https://w3c.github.io/webappsec-csp/#grammardef-serialized-source-list",
+      "linkingText": [
+        "serialized-source-list"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "framework-directive-source-list",
+        "href": "https://w3c.github.io/webappsec-csp/#framework-directive-source-list",
+        "title": "Source Lists",
+        "number": "2.3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "grammardef-none",
+      "href": "https://w3c.github.io/webappsec-csp/#grammardef-none",
+      "linkingText": [
+        "'none'"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "framework-directive-source-list",
+        "href": "https://w3c.github.io/webappsec-csp/#framework-directive-source-list",
+        "title": "Source Lists",
+        "number": "2.3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "grammardef-source-expression",
+      "href": "https://w3c.github.io/webappsec-csp/#grammardef-source-expression",
+      "linkingText": [
+        "source-expression"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "framework-directive-source-list",
+        "href": "https://w3c.github.io/webappsec-csp/#framework-directive-source-list",
+        "title": "Source Lists",
+        "number": "2.3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "grammardef-scheme-source",
+      "href": "https://w3c.github.io/webappsec-csp/#grammardef-scheme-source",
+      "linkingText": [
+        "scheme-source"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "framework-directive-source-list",
+        "href": "https://w3c.github.io/webappsec-csp/#framework-directive-source-list",
+        "title": "Source Lists",
+        "number": "2.3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "grammardef-host-source",
+      "href": "https://w3c.github.io/webappsec-csp/#grammardef-host-source",
+      "linkingText": [
+        "host-source"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "framework-directive-source-list",
+        "href": "https://w3c.github.io/webappsec-csp/#framework-directive-source-list",
+        "title": "Source Lists",
+        "number": "2.3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "grammardef-scheme-part",
+      "href": "https://w3c.github.io/webappsec-csp/#grammardef-scheme-part",
+      "linkingText": [
+        "scheme-part"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "framework-directive-source-list",
+        "href": "https://w3c.github.io/webappsec-csp/#framework-directive-source-list",
+        "title": "Source Lists",
+        "number": "2.3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "grammardef-host-part",
+      "href": "https://w3c.github.io/webappsec-csp/#grammardef-host-part",
+      "linkingText": [
+        "host-part"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "framework-directive-source-list",
+        "href": "https://w3c.github.io/webappsec-csp/#framework-directive-source-list",
+        "title": "Source Lists",
+        "number": "2.3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "grammardef-host-char",
+      "href": "https://w3c.github.io/webappsec-csp/#grammardef-host-char",
+      "linkingText": [
+        "host-char"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "framework-directive-source-list",
+        "href": "https://w3c.github.io/webappsec-csp/#framework-directive-source-list",
+        "title": "Source Lists",
+        "number": "2.3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "grammardef-port-part",
+      "href": "https://w3c.github.io/webappsec-csp/#grammardef-port-part",
+      "linkingText": [
+        "port-part"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "framework-directive-source-list",
+        "href": "https://w3c.github.io/webappsec-csp/#framework-directive-source-list",
+        "title": "Source Lists",
+        "number": "2.3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "grammardef-path-part",
+      "href": "https://w3c.github.io/webappsec-csp/#grammardef-path-part",
+      "linkingText": [
+        "path-part"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "framework-directive-source-list",
+        "href": "https://w3c.github.io/webappsec-csp/#framework-directive-source-list",
+        "title": "Source Lists",
+        "number": "2.3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "grammardef-keyword-source",
+      "href": "https://w3c.github.io/webappsec-csp/#grammardef-keyword-source",
+      "linkingText": [
+        "keyword-source"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "framework-directive-source-list",
+        "href": "https://w3c.github.io/webappsec-csp/#framework-directive-source-list",
+        "title": "Source Lists",
+        "number": "2.3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "grammardef-self",
+      "href": "https://w3c.github.io/webappsec-csp/#grammardef-self",
+      "linkingText": [
+        "'self'"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "framework-directive-source-list",
+        "href": "https://w3c.github.io/webappsec-csp/#framework-directive-source-list",
+        "title": "Source Lists",
+        "number": "2.3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "grammardef-unsafe-inline",
+      "href": "https://w3c.github.io/webappsec-csp/#grammardef-unsafe-inline",
+      "linkingText": [
+        "'unsafe-inline'"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "framework-directive-source-list",
+        "href": "https://w3c.github.io/webappsec-csp/#framework-directive-source-list",
+        "title": "Source Lists",
+        "number": "2.3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "grammardef-unsafe-eval",
+      "href": "https://w3c.github.io/webappsec-csp/#grammardef-unsafe-eval",
+      "linkingText": [
+        "'unsafe-eval'"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "framework-directive-source-list",
+        "href": "https://w3c.github.io/webappsec-csp/#framework-directive-source-list",
+        "title": "Source Lists",
+        "number": "2.3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "grammardef-strict-dynamic",
+      "href": "https://w3c.github.io/webappsec-csp/#grammardef-strict-dynamic",
+      "linkingText": [
+        "'strict-dynamic'"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "framework-directive-source-list",
+        "href": "https://w3c.github.io/webappsec-csp/#framework-directive-source-list",
+        "title": "Source Lists",
+        "number": "2.3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "grammardef-unsafe-hashes",
+      "href": "https://w3c.github.io/webappsec-csp/#grammardef-unsafe-hashes",
+      "linkingText": [
+        "'unsafe-hashes'"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "framework-directive-source-list",
+        "href": "https://w3c.github.io/webappsec-csp/#framework-directive-source-list",
+        "title": "Source Lists",
+        "number": "2.3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "grammardef-report-sample",
+      "href": "https://w3c.github.io/webappsec-csp/#grammardef-report-sample",
+      "linkingText": [
+        "'report-sample'"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "framework-directive-source-list",
+        "href": "https://w3c.github.io/webappsec-csp/#framework-directive-source-list",
+        "title": "Source Lists",
+        "number": "2.3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "grammardef-unsafe-allow-redirects",
+      "href": "https://w3c.github.io/webappsec-csp/#grammardef-unsafe-allow-redirects",
+      "linkingText": [
+        "'unsafe-allow-redirects'"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "framework-directive-source-list",
+        "href": "https://w3c.github.io/webappsec-csp/#framework-directive-source-list",
+        "title": "Source Lists",
+        "number": "2.3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "grammardef-wasm-unsafe-eval",
+      "href": "https://w3c.github.io/webappsec-csp/#grammardef-wasm-unsafe-eval",
+      "linkingText": [
+        "'wasm-unsafe-eval'"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "framework-directive-source-list",
+        "href": "https://w3c.github.io/webappsec-csp/#framework-directive-source-list",
+        "title": "Source Lists",
+        "number": "2.3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "grammardef-nonce-source",
+      "href": "https://w3c.github.io/webappsec-csp/#grammardef-nonce-source",
+      "linkingText": [
+        "nonce-source"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "framework-directive-source-list",
+        "href": "https://w3c.github.io/webappsec-csp/#framework-directive-source-list",
+        "title": "Source Lists",
+        "number": "2.3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "grammardef-base64-value",
+      "href": "https://w3c.github.io/webappsec-csp/#grammardef-base64-value",
+      "linkingText": [
+        "base64-value"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "framework-directive-source-list",
+        "href": "https://w3c.github.io/webappsec-csp/#framework-directive-source-list",
+        "title": "Source Lists",
+        "number": "2.3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "grammardef-hash-source",
+      "href": "https://w3c.github.io/webappsec-csp/#grammardef-hash-source",
+      "linkingText": [
+        "hash-source"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "framework-directive-source-list",
+        "href": "https://w3c.github.io/webappsec-csp/#framework-directive-source-list",
+        "title": "Source Lists",
+        "number": "2.3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "grammardef-hash-algorithm",
+      "href": "https://w3c.github.io/webappsec-csp/#grammardef-hash-algorithm",
+      "linkingText": [
+        "hash-algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "framework-directive-source-list",
+        "href": "https://w3c.github.io/webappsec-csp/#framework-directive-source-list",
+        "title": "Source Lists",
+        "number": "2.3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "violation",
+      "href": "https://w3c.github.io/webappsec-csp/#violation",
+      "linkingText": [
+        "violation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "framework-violation",
+        "href": "https://w3c.github.io/webappsec-csp/#framework-violation",
+        "title": "Violations",
+        "number": "2.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "violation-global-object",
+      "href": "https://w3c.github.io/webappsec-csp/#violation-global-object",
+      "linkingText": [
+        "global object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "violation"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "framework-violation",
+        "href": "https://w3c.github.io/webappsec-csp/#framework-violation",
+        "title": "Violations",
+        "number": "2.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "violation-url",
+      "href": "https://w3c.github.io/webappsec-csp/#violation-url",
+      "linkingText": [
+        "url"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "violation"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "framework-violation",
+        "href": "https://w3c.github.io/webappsec-csp/#framework-violation",
+        "title": "Violations",
+        "number": "2.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "violation-status",
+      "href": "https://w3c.github.io/webappsec-csp/#violation-status",
+      "linkingText": [
+        "status"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "violation"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "framework-violation",
+        "href": "https://w3c.github.io/webappsec-csp/#framework-violation",
+        "title": "Violations",
+        "number": "2.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "violation-resource",
+      "href": "https://w3c.github.io/webappsec-csp/#violation-resource",
+      "linkingText": [
+        "resource"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "violation"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "framework-violation",
+        "href": "https://w3c.github.io/webappsec-csp/#framework-violation",
+        "title": "Violations",
+        "number": "2.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "violation-referrer",
+      "href": "https://w3c.github.io/webappsec-csp/#violation-referrer",
+      "linkingText": [
+        "referrer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "violation"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "framework-violation",
+        "href": "https://w3c.github.io/webappsec-csp/#framework-violation",
+        "title": "Violations",
+        "number": "2.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "violation-policy",
+      "href": "https://w3c.github.io/webappsec-csp/#violation-policy",
+      "linkingText": [
+        "policy"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "violation"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "framework-violation",
+        "href": "https://w3c.github.io/webappsec-csp/#framework-violation",
+        "title": "Violations",
+        "number": "2.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "violation-disposition",
+      "href": "https://w3c.github.io/webappsec-csp/#violation-disposition",
+      "linkingText": [
+        "disposition"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "violation"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "framework-violation",
+        "href": "https://w3c.github.io/webappsec-csp/#framework-violation",
+        "title": "Violations",
+        "number": "2.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "violation-effective-directive",
+      "href": "https://w3c.github.io/webappsec-csp/#violation-effective-directive",
+      "linkingText": [
+        "effective directive"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "violation"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "framework-violation",
+        "href": "https://w3c.github.io/webappsec-csp/#framework-violation",
+        "title": "Violations",
+        "number": "2.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "violation-source-file",
+      "href": "https://w3c.github.io/webappsec-csp/#violation-source-file",
+      "linkingText": [
+        "source file"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "violation"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "framework-violation",
+        "href": "https://w3c.github.io/webappsec-csp/#framework-violation",
+        "title": "Violations",
+        "number": "2.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "violation-line-number",
+      "href": "https://w3c.github.io/webappsec-csp/#violation-line-number",
+      "linkingText": [
+        "line number"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "violation"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "framework-violation",
+        "href": "https://w3c.github.io/webappsec-csp/#framework-violation",
+        "title": "Violations",
+        "number": "2.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "violation-column-number",
+      "href": "https://w3c.github.io/webappsec-csp/#violation-column-number",
+      "linkingText": [
+        "column number"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "violation"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "framework-violation",
+        "href": "https://w3c.github.io/webappsec-csp/#framework-violation",
+        "title": "Violations",
+        "number": "2.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "violation-element",
+      "href": "https://w3c.github.io/webappsec-csp/#violation-element",
+      "linkingText": [
+        "element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "violation"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "framework-violation",
+        "href": "https://w3c.github.io/webappsec-csp/#framework-violation",
+        "title": "Violations",
+        "number": "2.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "violation-sample",
+      "href": "https://w3c.github.io/webappsec-csp/#violation-sample",
+      "linkingText": [
+        "sample"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "violation"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "framework-violation",
+        "href": "https://w3c.github.io/webappsec-csp/#framework-violation",
+        "title": "Violations",
+        "number": "2.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "header-content-security-policy",
+      "href": "https://w3c.github.io/webappsec-csp/#header-content-security-policy",
+      "linkingText": [
+        "Content-Security-Policy"
+      ],
+      "localLinkingText": [],
+      "type": "http-header",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "csp-header",
+        "href": "https://w3c.github.io/webappsec-csp/#csp-header",
+        "title": "The Content-Security-Policy HTTP Response Header Field",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "header-content-security-policy-report-only",
+      "href": "https://w3c.github.io/webappsec-csp/#header-content-security-policy-report-only",
+      "linkingText": [
+        "Content-Security-Policy-Report-Only"
+      ],
+      "localLinkingText": [],
+      "type": "http-header",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "cspro-header",
+        "href": "https://w3c.github.io/webappsec-csp/#cspro-header",
+        "title": "The Content-Security-Policy-Report-Only HTTP Response Header Field",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "report-for-request",
+      "href": "https://w3c.github.io/webappsec-csp/#report-for-request",
+      "linkingText": [
+        "Report Content Security Policy violations for request"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "report-for-request",
+        "href": "https://w3c.github.io/webappsec-csp/#report-for-request",
+        "title": "Report Content Security Policy violations for request",
+        "number": "4.1.1"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "should-block-request",
+      "href": "https://w3c.github.io/webappsec-csp/#should-block-request",
+      "linkingText": [
+        "Should request be blocked by Content Security Policy?"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "should-block-request",
+        "href": "https://w3c.github.io/webappsec-csp/#should-block-request",
+        "title": "Should request be blocked by Content Security Policy?",
+        "number": "4.1.2"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "should-block-response",
+      "href": "https://w3c.github.io/webappsec-csp/#should-block-response",
+      "linkingText": [
+        "Should response to request be blocked by Content Security Policy?"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "should-block-response",
+        "href": "https://w3c.github.io/webappsec-csp/#should-block-response",
+        "title": "Should response to request be blocked by Content Security Policy?",
+        "number": "4.1.3"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "global-object-csp-list",
+      "href": "https://w3c.github.io/webappsec-csp/#global-object-csp-list",
+      "linkingText": [
+        "CSP list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "global object"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "html-integration",
+        "href": "https://w3c.github.io/webappsec-csp/#html-integration",
+        "title": "Integration with HTML",
+        "number": "4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "enforced",
+      "href": "https://w3c.github.io/webappsec-csp/#enforced",
+      "linkingText": [
+        "enforced"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "html-integration",
+        "href": "https://w3c.github.io/webappsec-csp/#html-integration",
+        "title": "Integration with HTML",
+        "number": "4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "monitored",
+      "href": "https://w3c.github.io/webappsec-csp/#monitored",
+      "linkingText": [
+        "monitored"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "html-integration",
+        "href": "https://w3c.github.io/webappsec-csp/#html-integration",
+        "title": "Integration with HTML",
+        "number": "4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "run-document-csp-initialization",
+      "href": "https://w3c.github.io/webappsec-csp/#run-document-csp-initialization",
+      "linkingText": [
+        "Run CSP initialization for a Document"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "run-document-csp-initialization",
+        "href": "https://w3c.github.io/webappsec-csp/#run-document-csp-initialization",
+        "title": "Run CSP initialization for a Document",
+        "number": "4.2.1"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "should-block-inline",
+      "href": "https://w3c.github.io/webappsec-csp/#should-block-inline",
+      "linkingText": [
+        "Should element’s inline type behavior be blocked by Content Security Policy?"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "should-block-inline",
+        "href": "https://w3c.github.io/webappsec-csp/#should-block-inline",
+        "title": "Should element’s inline type behavior be blocked by Content Security Policy?",
+        "number": "4.2.3"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "should-block-navigation-request",
+      "href": "https://w3c.github.io/webappsec-csp/#should-block-navigation-request",
+      "linkingText": [
+        "Should navigation request of type be blocked by Content Security Policy?"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "should-block-navigation-request",
+        "href": "https://w3c.github.io/webappsec-csp/#should-block-navigation-request",
+        "title": "Should navigation request of type be blocked by Content Security Policy?",
+        "number": "4.2.4"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "should-block-navigation-response",
+      "href": "https://w3c.github.io/webappsec-csp/#should-block-navigation-response",
+      "linkingText": [
+        "Should navigation response to navigation request of type in target be blocked by Content Security Policy?"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "should-block-navigation-response",
+        "href": "https://w3c.github.io/webappsec-csp/#should-block-navigation-response",
+        "title": "Should navigation response to navigation request of type in target be blocked by Content Security Policy?",
+        "number": "4.2.5"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "run-global-object-csp-initialization",
+      "href": "https://w3c.github.io/webappsec-csp/#run-global-object-csp-initialization",
+      "linkingText": [
+        "Run CSP initialization for a global object."
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "run-global-object-csp-initialization",
+        "href": "https://w3c.github.io/webappsec-csp/#run-global-object-csp-initialization",
+        "title": "Run CSP initialization for a global object.",
+        "number": "4.2.6"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "can-compile-strings",
+      "href": "https://w3c.github.io/webappsec-csp/#can-compile-strings",
+      "linkingText": [
+        "EnsureCSPDoesNotBlockStringCompilation(callerRealm, calleeRealm, source)"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "can-compile-strings",
+        "href": "https://w3c.github.io/webappsec-csp/#can-compile-strings",
+        "title": "EnsureCSPDoesNotBlockStringCompilation(callerRealm, calleeRealm, source)",
+        "number": "4.3.1"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "can-compile-wasm-bytes",
+      "href": "https://w3c.github.io/webappsec-csp/#can-compile-wasm-bytes",
+      "linkingText": [
+        "EnsureCSPDoesNotBlockWasmByteCompilation(callerRealm, calleeRealm)"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "can-compile-wasm-bytes",
+        "href": "https://w3c.github.io/webappsec-csp/#can-compile-wasm-bytes",
+        "title": "EnsureCSPDoesNotBlockWasmByteCompilation(callerRealm, calleeRealm)",
+        "number": "4.4.1"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "csp-violation-report",
+      "href": "https://w3c.github.io/webappsec-csp/#csp-violation-report",
+      "linkingText": [
+        "csp violation report"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "reporting",
+        "href": "https://w3c.github.io/webappsec-csp/#reporting",
+        "title": "Reporting",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "cspviolationreportbody",
+      "href": "https://w3c.github.io/webappsec-csp/#cspviolationreportbody",
+      "linkingText": [
+        "CSPViolationReportBody"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "reporting",
+        "href": "https://w3c.github.io/webappsec-csp/#reporting",
+        "title": "Reporting",
+        "number": "5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-cspviolationreportbody-documenturl",
+      "href": "https://w3c.github.io/webappsec-csp/#dom-cspviolationreportbody-documenturl",
+      "linkingText": [
+        "documentURL"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSPViolationReportBody"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "reporting",
+        "href": "https://w3c.github.io/webappsec-csp/#reporting",
+        "title": "Reporting",
+        "number": "5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-cspviolationreportbody-referrer",
+      "href": "https://w3c.github.io/webappsec-csp/#dom-cspviolationreportbody-referrer",
+      "linkingText": [
+        "referrer"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSPViolationReportBody"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "reporting",
+        "href": "https://w3c.github.io/webappsec-csp/#reporting",
+        "title": "Reporting",
+        "number": "5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-cspviolationreportbody-blockedurl",
+      "href": "https://w3c.github.io/webappsec-csp/#dom-cspviolationreportbody-blockedurl",
+      "linkingText": [
+        "blockedURL"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSPViolationReportBody"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "reporting",
+        "href": "https://w3c.github.io/webappsec-csp/#reporting",
+        "title": "Reporting",
+        "number": "5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-cspviolationreportbody-effectivedirective",
+      "href": "https://w3c.github.io/webappsec-csp/#dom-cspviolationreportbody-effectivedirective",
+      "linkingText": [
+        "effectiveDirective"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSPViolationReportBody"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "reporting",
+        "href": "https://w3c.github.io/webappsec-csp/#reporting",
+        "title": "Reporting",
+        "number": "5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-cspviolationreportbody-originalpolicy",
+      "href": "https://w3c.github.io/webappsec-csp/#dom-cspviolationreportbody-originalpolicy",
+      "linkingText": [
+        "originalPolicy"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSPViolationReportBody"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "reporting",
+        "href": "https://w3c.github.io/webappsec-csp/#reporting",
+        "title": "Reporting",
+        "number": "5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-cspviolationreportbody-sourcefile",
+      "href": "https://w3c.github.io/webappsec-csp/#dom-cspviolationreportbody-sourcefile",
+      "linkingText": [
+        "sourceFile"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSPViolationReportBody"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "reporting",
+        "href": "https://w3c.github.io/webappsec-csp/#reporting",
+        "title": "Reporting",
+        "number": "5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-cspviolationreportbody-sample",
+      "href": "https://w3c.github.io/webappsec-csp/#dom-cspviolationreportbody-sample",
+      "linkingText": [
+        "sample"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSPViolationReportBody"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "reporting",
+        "href": "https://w3c.github.io/webappsec-csp/#reporting",
+        "title": "Reporting",
+        "number": "5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-cspviolationreportbody-disposition",
+      "href": "https://w3c.github.io/webappsec-csp/#dom-cspviolationreportbody-disposition",
+      "linkingText": [
+        "disposition"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSPViolationReportBody"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "reporting",
+        "href": "https://w3c.github.io/webappsec-csp/#reporting",
+        "title": "Reporting",
+        "number": "5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-cspviolationreportbody-statuscode",
+      "href": "https://w3c.github.io/webappsec-csp/#dom-cspviolationreportbody-statuscode",
+      "linkingText": [
+        "statusCode"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSPViolationReportBody"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "reporting",
+        "href": "https://w3c.github.io/webappsec-csp/#reporting",
+        "title": "Reporting",
+        "number": "5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-cspviolationreportbody-linenumber",
+      "href": "https://w3c.github.io/webappsec-csp/#dom-cspviolationreportbody-linenumber",
+      "linkingText": [
+        "lineNumber"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSPViolationReportBody"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "reporting",
+        "href": "https://w3c.github.io/webappsec-csp/#reporting",
+        "title": "Reporting",
+        "number": "5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-cspviolationreportbody-columnnumber",
+      "href": "https://w3c.github.io/webappsec-csp/#dom-cspviolationreportbody-columnnumber",
+      "linkingText": [
+        "columnNumber"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSPViolationReportBody"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "reporting",
+        "href": "https://w3c.github.io/webappsec-csp/#reporting",
+        "title": "Reporting",
+        "number": "5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "enumdef-securitypolicyviolationeventdisposition",
+      "href": "https://w3c.github.io/webappsec-csp/#enumdef-securitypolicyviolationeventdisposition",
+      "linkingText": [
+        "SecurityPolicyViolationEventDisposition"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "violation-events",
+        "href": "https://w3c.github.io/webappsec-csp/#violation-events",
+        "title": "Violation DOM Events",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-securitypolicyviolationeventdisposition-enforce",
+      "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationeventdisposition-enforce",
+      "linkingText": [
+        "\"enforce\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "SecurityPolicyViolationEventDisposition"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "violation-events",
+        "href": "https://w3c.github.io/webappsec-csp/#violation-events",
+        "title": "Violation DOM Events",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-securitypolicyviolationeventdisposition-report",
+      "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationeventdisposition-report",
+      "linkingText": [
+        "\"report\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "SecurityPolicyViolationEventDisposition"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "violation-events",
+        "href": "https://w3c.github.io/webappsec-csp/#violation-events",
+        "title": "Violation DOM Events",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "securitypolicyviolationevent",
+      "href": "https://w3c.github.io/webappsec-csp/#securitypolicyviolationevent",
+      "linkingText": [
+        "SecurityPolicyViolationEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "violation-events",
+        "href": "https://w3c.github.io/webappsec-csp/#violation-events",
+        "title": "Violation DOM Events",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-securitypolicyviolationevent-securitypolicyviolationevent",
+      "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationevent-securitypolicyviolationevent",
+      "linkingText": [
+        "SecurityPolicyViolationEvent(type, eventInitDict)",
+        "constructor(type, eventInitDict)",
+        "SecurityPolicyViolationEvent(type)",
+        "constructor(type)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "SecurityPolicyViolationEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "violation-events",
+        "href": "https://w3c.github.io/webappsec-csp/#violation-events",
+        "title": "Violation DOM Events",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-securitypolicyviolationevent-securitypolicyviolationevent-type-eventinitdict-type",
+      "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationevent-securitypolicyviolationevent-type-eventinitdict-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "SecurityPolicyViolationEvent/SecurityPolicyViolationEvent(type, eventInitDict)",
+        "SecurityPolicyViolationEvent/constructor(type, eventInitDict)",
+        "SecurityPolicyViolationEvent/SecurityPolicyViolationEvent(type)",
+        "SecurityPolicyViolationEvent/constructor(type)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "violation-events",
+        "href": "https://w3c.github.io/webappsec-csp/#violation-events",
+        "title": "Violation DOM Events",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-securitypolicyviolationevent-securitypolicyviolationevent-type-eventinitdict-eventinitdict",
+      "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationevent-securitypolicyviolationevent-type-eventinitdict-eventinitdict",
+      "linkingText": [
+        "eventInitDict"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "SecurityPolicyViolationEvent/SecurityPolicyViolationEvent(type, eventInitDict)",
+        "SecurityPolicyViolationEvent/constructor(type, eventInitDict)",
+        "SecurityPolicyViolationEvent/SecurityPolicyViolationEvent(type)",
+        "SecurityPolicyViolationEvent/constructor(type)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "violation-events",
+        "href": "https://w3c.github.io/webappsec-csp/#violation-events",
+        "title": "Violation DOM Events",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-securitypolicyviolationevent-documenturi",
+      "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationevent-documenturi",
+      "linkingText": [
+        "documentURI"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SecurityPolicyViolationEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "violation-events",
+        "href": "https://w3c.github.io/webappsec-csp/#violation-events",
+        "title": "Violation DOM Events",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-securitypolicyviolationevent-referrer",
+      "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationevent-referrer",
+      "linkingText": [
+        "referrer"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SecurityPolicyViolationEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "violation-events",
+        "href": "https://w3c.github.io/webappsec-csp/#violation-events",
+        "title": "Violation DOM Events",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-securitypolicyviolationevent-blockeduri",
+      "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationevent-blockeduri",
+      "linkingText": [
+        "blockedURI"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SecurityPolicyViolationEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "violation-events",
+        "href": "https://w3c.github.io/webappsec-csp/#violation-events",
+        "title": "Violation DOM Events",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-securitypolicyviolationevent-effectivedirective",
+      "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationevent-effectivedirective",
+      "linkingText": [
+        "effectiveDirective"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SecurityPolicyViolationEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "violation-events",
+        "href": "https://w3c.github.io/webappsec-csp/#violation-events",
+        "title": "Violation DOM Events",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-securitypolicyviolationevent-violateddirective",
+      "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationevent-violateddirective",
+      "linkingText": [
+        "violatedDirective"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SecurityPolicyViolationEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "violation-events",
+        "href": "https://w3c.github.io/webappsec-csp/#violation-events",
+        "title": "Violation DOM Events",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-securitypolicyviolationevent-originalpolicy",
+      "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationevent-originalpolicy",
+      "linkingText": [
+        "originalPolicy"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SecurityPolicyViolationEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "violation-events",
+        "href": "https://w3c.github.io/webappsec-csp/#violation-events",
+        "title": "Violation DOM Events",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-securitypolicyviolationevent-sourcefile",
+      "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationevent-sourcefile",
+      "linkingText": [
+        "sourceFile"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SecurityPolicyViolationEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "violation-events",
+        "href": "https://w3c.github.io/webappsec-csp/#violation-events",
+        "title": "Violation DOM Events",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-securitypolicyviolationevent-sample",
+      "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationevent-sample",
+      "linkingText": [
+        "sample"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SecurityPolicyViolationEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "violation-events",
+        "href": "https://w3c.github.io/webappsec-csp/#violation-events",
+        "title": "Violation DOM Events",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-securitypolicyviolationevent-disposition",
+      "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationevent-disposition",
+      "linkingText": [
+        "disposition"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SecurityPolicyViolationEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "violation-events",
+        "href": "https://w3c.github.io/webappsec-csp/#violation-events",
+        "title": "Violation DOM Events",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-securitypolicyviolationevent-statuscode",
+      "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationevent-statuscode",
+      "linkingText": [
+        "statusCode"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SecurityPolicyViolationEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "violation-events",
+        "href": "https://w3c.github.io/webappsec-csp/#violation-events",
+        "title": "Violation DOM Events",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-securitypolicyviolationevent-linenumber",
+      "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationevent-linenumber",
+      "linkingText": [
+        "lineNumber"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SecurityPolicyViolationEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "violation-events",
+        "href": "https://w3c.github.io/webappsec-csp/#violation-events",
+        "title": "Violation DOM Events",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-securitypolicyviolationevent-columnnumber",
+      "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationevent-columnnumber",
+      "linkingText": [
+        "columnNumber"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SecurityPolicyViolationEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "violation-events",
+        "href": "https://w3c.github.io/webappsec-csp/#violation-events",
+        "title": "Violation DOM Events",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-securitypolicyviolationeventinit",
+      "href": "https://w3c.github.io/webappsec-csp/#dictdef-securitypolicyviolationeventinit",
+      "linkingText": [
+        "SecurityPolicyViolationEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "violation-events",
+        "href": "https://w3c.github.io/webappsec-csp/#violation-events",
+        "title": "Violation DOM Events",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-securitypolicyviolationeventinit-documenturi",
+      "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationeventinit-documenturi",
+      "linkingText": [
+        "documentURI"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SecurityPolicyViolationEventInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "violation-events",
+        "href": "https://w3c.github.io/webappsec-csp/#violation-events",
+        "title": "Violation DOM Events",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-securitypolicyviolationeventinit-referrer",
+      "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationeventinit-referrer",
+      "linkingText": [
+        "referrer"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SecurityPolicyViolationEventInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "violation-events",
+        "href": "https://w3c.github.io/webappsec-csp/#violation-events",
+        "title": "Violation DOM Events",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-securitypolicyviolationeventinit-blockeduri",
+      "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationeventinit-blockeduri",
+      "linkingText": [
+        "blockedURI"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SecurityPolicyViolationEventInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "violation-events",
+        "href": "https://w3c.github.io/webappsec-csp/#violation-events",
+        "title": "Violation DOM Events",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-securitypolicyviolationeventinit-violateddirective",
+      "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationeventinit-violateddirective",
+      "linkingText": [
+        "violatedDirective"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SecurityPolicyViolationEventInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "violation-events",
+        "href": "https://w3c.github.io/webappsec-csp/#violation-events",
+        "title": "Violation DOM Events",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-securitypolicyviolationeventinit-effectivedirective",
+      "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationeventinit-effectivedirective",
+      "linkingText": [
+        "effectiveDirective"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SecurityPolicyViolationEventInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "violation-events",
+        "href": "https://w3c.github.io/webappsec-csp/#violation-events",
+        "title": "Violation DOM Events",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-securitypolicyviolationeventinit-originalpolicy",
+      "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationeventinit-originalpolicy",
+      "linkingText": [
+        "originalPolicy"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SecurityPolicyViolationEventInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "violation-events",
+        "href": "https://w3c.github.io/webappsec-csp/#violation-events",
+        "title": "Violation DOM Events",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-securitypolicyviolationeventinit-sourcefile",
+      "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationeventinit-sourcefile",
+      "linkingText": [
+        "sourceFile"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SecurityPolicyViolationEventInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "violation-events",
+        "href": "https://w3c.github.io/webappsec-csp/#violation-events",
+        "title": "Violation DOM Events",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-securitypolicyviolationeventinit-sample",
+      "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationeventinit-sample",
+      "linkingText": [
+        "sample"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SecurityPolicyViolationEventInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "violation-events",
+        "href": "https://w3c.github.io/webappsec-csp/#violation-events",
+        "title": "Violation DOM Events",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-securitypolicyviolationeventinit-disposition",
+      "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationeventinit-disposition",
+      "linkingText": [
+        "disposition"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SecurityPolicyViolationEventInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "violation-events",
+        "href": "https://w3c.github.io/webappsec-csp/#violation-events",
+        "title": "Violation DOM Events",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-securitypolicyviolationeventinit-statuscode",
+      "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationeventinit-statuscode",
+      "linkingText": [
+        "statusCode"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SecurityPolicyViolationEventInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "violation-events",
+        "href": "https://w3c.github.io/webappsec-csp/#violation-events",
+        "title": "Violation DOM Events",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-securitypolicyviolationeventinit-linenumber",
+      "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationeventinit-linenumber",
+      "linkingText": [
+        "lineNumber"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SecurityPolicyViolationEventInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "violation-events",
+        "href": "https://w3c.github.io/webappsec-csp/#violation-events",
+        "title": "Violation DOM Events",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-securitypolicyviolationeventinit-columnnumber",
+      "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationeventinit-columnnumber",
+      "linkingText": [
+        "columnNumber"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SecurityPolicyViolationEventInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "violation-events",
+        "href": "https://w3c.github.io/webappsec-csp/#violation-events",
+        "title": "Violation DOM Events",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "fetch-directives",
+      "href": "https://w3c.github.io/webappsec-csp/#fetch-directives",
+      "linkingText": [
+        "Fetch directives"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "directives-fetch",
+        "href": "https://w3c.github.io/webappsec-csp/#directives-fetch",
+        "title": "Fetch Directives",
+        "number": "6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "child-src",
+      "href": "https://w3c.github.io/webappsec-csp/#child-src",
+      "linkingText": [
+        "child-src"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "directive-child-src",
+        "href": "https://w3c.github.io/webappsec-csp/#directive-child-src",
+        "title": "child-src",
+        "number": "6.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "connect-src",
+      "href": "https://w3c.github.io/webappsec-csp/#connect-src",
+      "linkingText": [
+        "connect-src"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "directive-connect-src",
+        "href": "https://w3c.github.io/webappsec-csp/#directive-connect-src",
+        "title": "connect-src",
+        "number": "6.1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "default-src",
+      "href": "https://w3c.github.io/webappsec-csp/#default-src",
+      "linkingText": [
+        "default-src"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "directive-default-src",
+        "href": "https://w3c.github.io/webappsec-csp/#directive-default-src",
+        "title": "default-src",
+        "number": "6.1.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "font-src",
+      "href": "https://w3c.github.io/webappsec-csp/#font-src",
+      "linkingText": [
+        "font-src"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "directive-font-src",
+        "href": "https://w3c.github.io/webappsec-csp/#directive-font-src",
+        "title": "font-src",
+        "number": "6.1.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "frame-src",
+      "href": "https://w3c.github.io/webappsec-csp/#frame-src",
+      "linkingText": [
+        "frame-src"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "directive-frame-src",
+        "href": "https://w3c.github.io/webappsec-csp/#directive-frame-src",
+        "title": "frame-src",
+        "number": "6.1.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "img-src",
+      "href": "https://w3c.github.io/webappsec-csp/#img-src",
+      "linkingText": [
+        "img-src"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "directive-img-src",
+        "href": "https://w3c.github.io/webappsec-csp/#directive-img-src",
+        "title": "img-src",
+        "number": "6.1.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "manifest-src",
+      "href": "https://w3c.github.io/webappsec-csp/#manifest-src",
+      "linkingText": [
+        "manifest-src"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "directive-manifest-src",
+        "href": "https://w3c.github.io/webappsec-csp/#directive-manifest-src",
+        "title": "manifest-src",
+        "number": "6.1.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "media-src",
+      "href": "https://w3c.github.io/webappsec-csp/#media-src",
+      "linkingText": [
+        "media-src"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "directive-media-src",
+        "href": "https://w3c.github.io/webappsec-csp/#directive-media-src",
+        "title": "media-src",
+        "number": "6.1.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "object-src",
+      "href": "https://w3c.github.io/webappsec-csp/#object-src",
+      "linkingText": [
+        "object-src"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "directive-object-src",
+        "href": "https://w3c.github.io/webappsec-csp/#directive-object-src",
+        "title": "object-src",
+        "number": "6.1.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "prefetch-src",
+      "href": "https://w3c.github.io/webappsec-csp/#prefetch-src",
+      "linkingText": [
+        "prefetch-src"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "directive-prefetch-src",
+        "href": "https://w3c.github.io/webappsec-csp/#directive-prefetch-src",
+        "title": "prefetch-src",
+        "number": "6.1.10"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "script-src",
+      "href": "https://w3c.github.io/webappsec-csp/#script-src",
+      "linkingText": [
+        "script-src"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "directive-script-src",
+        "href": "https://w3c.github.io/webappsec-csp/#directive-script-src",
+        "title": "script-src",
+        "number": "6.1.11"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "script-src-elem",
+      "href": "https://w3c.github.io/webappsec-csp/#script-src-elem",
+      "linkingText": [
+        "script-src-elem"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "directive-script-src-elem",
+        "href": "https://w3c.github.io/webappsec-csp/#directive-script-src-elem",
+        "title": "script-src-elem",
+        "number": "6.1.12"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "script-src-attr",
+      "href": "https://w3c.github.io/webappsec-csp/#script-src-attr",
+      "linkingText": [
+        "script-src-attr"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "directive-script-src-attr",
+        "href": "https://w3c.github.io/webappsec-csp/#directive-script-src-attr",
+        "title": "script-src-attr",
+        "number": "6.1.13"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "style-src",
+      "href": "https://w3c.github.io/webappsec-csp/#style-src",
+      "linkingText": [
+        "style-src"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "directive-style-src",
+        "href": "https://w3c.github.io/webappsec-csp/#directive-style-src",
+        "title": "style-src",
+        "number": "6.1.14"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "style-src-elem",
+      "href": "https://w3c.github.io/webappsec-csp/#style-src-elem",
+      "linkingText": [
+        "style-src-elem"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "directive-style-src-elem",
+        "href": "https://w3c.github.io/webappsec-csp/#directive-style-src-elem",
+        "title": "style-src-elem",
+        "number": "6.1.15"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "style-src-attr",
+      "href": "https://w3c.github.io/webappsec-csp/#style-src-attr",
+      "linkingText": [
+        "style-src-attr"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "directive-style-src-attr",
+        "href": "https://w3c.github.io/webappsec-csp/#directive-style-src-attr",
+        "title": "style-src-attr",
+        "number": "6.1.16"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "worker-src",
+      "href": "https://w3c.github.io/webappsec-csp/#worker-src",
+      "linkingText": [
+        "worker-src"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "directive-worker-src",
+        "href": "https://w3c.github.io/webappsec-csp/#directive-worker-src",
+        "title": "worker-src",
+        "number": "6.1.17"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "base-uri",
+      "href": "https://w3c.github.io/webappsec-csp/#base-uri",
+      "linkingText": [
+        "base-uri"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "directive-base-uri",
+        "href": "https://w3c.github.io/webappsec-csp/#directive-base-uri",
+        "title": "base-uri",
+        "number": "6.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "allow-base-for-document",
+      "href": "https://w3c.github.io/webappsec-csp/#allow-base-for-document",
+      "linkingText": [
+        "Is base allowed for document?"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "allow-base-for-document",
+        "href": "https://w3c.github.io/webappsec-csp/#allow-base-for-document",
+        "title": "Is base allowed for document?",
+        "number": "6.2.1.1"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "sandbox",
+      "href": "https://w3c.github.io/webappsec-csp/#sandbox",
+      "linkingText": [
+        "sandbox"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "directive-sandbox",
+        "href": "https://w3c.github.io/webappsec-csp/#directive-sandbox",
+        "title": "sandbox",
+        "number": "6.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "form-action",
+      "href": "https://w3c.github.io/webappsec-csp/#form-action",
+      "linkingText": [
+        "form-action"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "directive-form-action",
+        "href": "https://w3c.github.io/webappsec-csp/#directive-form-action",
+        "title": "form-action",
+        "number": "6.3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "frame-ancestors",
+      "href": "https://w3c.github.io/webappsec-csp/#frame-ancestors",
+      "linkingText": [
+        "frame-ancestors"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "directive-frame-ancestors",
+        "href": "https://w3c.github.io/webappsec-csp/#directive-frame-ancestors",
+        "title": "frame-ancestors",
+        "number": "6.3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "grammardef-ancestor-source-list",
+      "href": "https://w3c.github.io/webappsec-csp/#grammardef-ancestor-source-list",
+      "linkingText": [
+        "ancestor-source-list"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "directive-frame-ancestors",
+        "href": "https://w3c.github.io/webappsec-csp/#directive-frame-ancestors",
+        "title": "frame-ancestors",
+        "number": "6.3.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "grammardef-ancestor-source",
+      "href": "https://w3c.github.io/webappsec-csp/#grammardef-ancestor-source",
+      "linkingText": [
+        "ancestor-source"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "directive-frame-ancestors",
+        "href": "https://w3c.github.io/webappsec-csp/#directive-frame-ancestors",
+        "title": "frame-ancestors",
+        "number": "6.3.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "navigate-to",
+      "href": "https://w3c.github.io/webappsec-csp/#navigate-to",
+      "linkingText": [
+        "navigate-to"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "directive-navigate-to",
+        "href": "https://w3c.github.io/webappsec-csp/#directive-navigate-to",
+        "title": "navigate-to",
+        "number": "6.3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "report-uri",
+      "href": "https://w3c.github.io/webappsec-csp/#report-uri",
+      "linkingText": [
+        "report-uri"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "directive-report-uri",
+        "href": "https://w3c.github.io/webappsec-csp/#directive-report-uri",
+        "title": "report-uri",
+        "number": "6.4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "report-to",
+      "href": "https://w3c.github.io/webappsec-csp/#report-to",
+      "linkingText": [
+        "report-to"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "directive-report-to",
+        "href": "https://w3c.github.io/webappsec-csp/#directive-report-to",
+        "title": "report-to",
+        "number": "6.4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "scheme-part-match",
+      "href": "https://w3c.github.io/webappsec-csp/#scheme-part-match",
+      "linkingText": [
+        "scheme-part match"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "match-schemes",
+        "href": "https://w3c.github.io/webappsec-csp/#match-schemes",
+        "title": "scheme-part matching",
+        "number": "6.6.2.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "host-part-match",
+      "href": "https://w3c.github.io/webappsec-csp/#host-part-match",
+      "linkingText": [
+        "host-part match"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "match-hosts",
+        "href": "https://w3c.github.io/webappsec-csp/#match-hosts",
+        "title": "host-part matching",
+        "number": "6.6.2.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "port-part-matches",
+      "href": "https://w3c.github.io/webappsec-csp/#port-part-matches",
+      "linkingText": [
+        "port-part matches"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "match-ports",
+        "href": "https://w3c.github.io/webappsec-csp/#match-ports",
+        "title": "port-part matching",
+        "number": "6.6.2.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "path-part-match",
+      "href": "https://w3c.github.io/webappsec-csp/#path-part-match",
+      "linkingText": [
+        "path-part match"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "match-paths",
+        "href": "https://w3c.github.io/webappsec-csp/#match-paths",
+        "title": "path-part matching",
+        "number": "6.6.2.10"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "source-list-allows-all-inline-behavior",
+      "href": "https://w3c.github.io/webappsec-csp/#source-list-allows-all-inline-behavior",
+      "linkingText": [
+        "allows all inline behavior"
+      ],
+      "localLinkingText": [
+        "allow all inline behavior"
+      ],
+      "type": "dfn",
+      "for": [
+        "source list"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "allow-all-inline",
+        "href": "https://w3c.github.io/webappsec-csp/#allow-all-inline",
+        "title": "Does a source list allow all inline behavior for type?",
+        "number": "6.6.3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "request-effective-directive",
+      "href": "https://w3c.github.io/webappsec-csp/#request-effective-directive",
+      "linkingText": [
+        "effective directive"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "request"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "effective-directive-for-a-request",
+        "href": "https://w3c.github.io/webappsec-csp/#effective-directive-for-a-request",
+        "title": "Get the effective directive for request",
+        "number": "6.7.1"
+      },
+      "definedIn": "prose"
+    }
+  ]
+}

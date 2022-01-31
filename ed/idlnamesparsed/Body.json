@@ -1,0 +1,185 @@
+{
+  "name": "Body",
+  "type": "interface mixin",
+  "defined": {
+    "spec": {
+      "title": "Fetch Standard",
+      "url": "https://fetch.spec.whatwg.org/"
+    },
+    "fragment": "interface mixin Body {\n  readonly attribute ReadableStream? body;\n  readonly attribute boolean bodyUsed;\n  [NewObject] Promise<ArrayBuffer> arrayBuffer();\n  [NewObject] Promise<Blob> blob();\n  [NewObject] Promise<FormData> formData();\n  [NewObject] Promise<any> json();\n  [NewObject] Promise<USVString> text();\n};",
+    "href": "https://fetch.spec.whatwg.org/#body"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://fetch.spec.whatwg.org/": [
+      {
+        "id": "body",
+        "href": "https://fetch.spec.whatwg.org/#body",
+        "linkingText": [
+          "Body"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "body-mixin",
+          "href": "https://fetch.spec.whatwg.org/#body-mixin",
+          "title": "Body mixin",
+          "number": "5.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-body-body",
+        "href": "https://fetch.spec.whatwg.org/#dom-body-body",
+        "linkingText": [
+          "body"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Body"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "body-mixin",
+          "href": "https://fetch.spec.whatwg.org/#body-mixin",
+          "title": "Body mixin",
+          "number": "5.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-body-bodyused",
+        "href": "https://fetch.spec.whatwg.org/#dom-body-bodyused",
+        "linkingText": [
+          "bodyUsed"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Body"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "body-mixin",
+          "href": "https://fetch.spec.whatwg.org/#body-mixin",
+          "title": "Body mixin",
+          "number": "5.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-body-arraybuffer",
+        "href": "https://fetch.spec.whatwg.org/#dom-body-arraybuffer",
+        "linkingText": [
+          "arrayBuffer()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Body"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "body-mixin",
+          "href": "https://fetch.spec.whatwg.org/#body-mixin",
+          "title": "Body mixin",
+          "number": "5.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-body-blob",
+        "href": "https://fetch.spec.whatwg.org/#dom-body-blob",
+        "linkingText": [
+          "blob()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Body"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "body-mixin",
+          "href": "https://fetch.spec.whatwg.org/#body-mixin",
+          "title": "Body mixin",
+          "number": "5.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-body-formdata",
+        "href": "https://fetch.spec.whatwg.org/#dom-body-formdata",
+        "linkingText": [
+          "formData()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Body"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "body-mixin",
+          "href": "https://fetch.spec.whatwg.org/#body-mixin",
+          "title": "Body mixin",
+          "number": "5.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-body-json",
+        "href": "https://fetch.spec.whatwg.org/#dom-body-json",
+        "linkingText": [
+          "json()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Body"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "body-mixin",
+          "href": "https://fetch.spec.whatwg.org/#body-mixin",
+          "title": "Body mixin",
+          "number": "5.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-body-text",
+        "href": "https://fetch.spec.whatwg.org/#dom-body-text",
+        "linkingText": [
+          "text()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Body"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "body-mixin",
+          "href": "https://fetch.spec.whatwg.org/#body-mixin",
+          "title": "Body mixin",
+          "number": "5.3"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

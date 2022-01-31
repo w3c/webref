@@ -1,0 +1,339 @@
+{
+  "spec": {
+    "title": "CSS Transforms Module Level 1",
+    "url": "https://drafts.csswg.org/css-transforms/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://drafts.csswg.org/css-transforms/#title",
+      "level": 1,
+      "title": "CSS Transforms Module Level 1"
+    },
+    {
+      "id": "abstract",
+      "href": "https://drafts.csswg.org/css-transforms/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "sotd",
+      "href": "https://drafts.csswg.org/css-transforms/#sotd",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://drafts.csswg.org/css-transforms/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "intro",
+      "href": "https://drafts.csswg.org/css-transforms/#intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "module-interactions",
+      "href": "https://drafts.csswg.org/css-transforms/#module-interactions",
+      "level": 3,
+      "title": "Module Interactions",
+      "number": "1.1"
+    },
+    {
+      "id": "css-values",
+      "href": "https://drafts.csswg.org/css-transforms/#css-values",
+      "level": 3,
+      "title": "CSS Values",
+      "number": "1.2"
+    },
+    {
+      "id": "transform-rendering",
+      "href": "https://drafts.csswg.org/css-transforms/#transform-rendering",
+      "level": 2,
+      "title": "The Transform Rendering Model",
+      "number": "2"
+    },
+    {
+      "id": "transform-property",
+      "href": "https://drafts.csswg.org/css-transforms/#transform-property",
+      "level": 2,
+      "title": "The transform Property",
+      "number": "3"
+    },
+    {
+      "id": "serialization-of-transform-functions",
+      "href": "https://drafts.csswg.org/css-transforms/#serialization-of-transform-functions",
+      "level": 3,
+      "title": "Serialization of <transform-function>s",
+      "number": "3.1"
+    },
+    {
+      "id": "serialization-of-the-computed-value",
+      "href": "https://drafts.csswg.org/css-transforms/#serialization-of-the-computed-value",
+      "level": 3,
+      "title": "Serialization of the computed value of <transform-list>",
+      "number": "3.2"
+    },
+    {
+      "id": "transform-origin-property",
+      "href": "https://drafts.csswg.org/css-transforms/#transform-origin-property",
+      "level": 2,
+      "title": "The transform-origin Property",
+      "number": "4"
+    },
+    {
+      "id": "transform-box",
+      "href": "https://drafts.csswg.org/css-transforms/#transform-box",
+      "level": 2,
+      "title": "Transform reference box: the transform-box property",
+      "number": "5"
+    },
+    {
+      "id": "svg-transform",
+      "href": "https://drafts.csswg.org/css-transforms/#svg-transform",
+      "level": 2,
+      "title": "The SVG transform Attribute",
+      "number": "6"
+    },
+    {
+      "id": "transform-attribute-specificity",
+      "href": "https://drafts.csswg.org/css-transforms/#transform-attribute-specificity",
+      "level": 3,
+      "title": "SVG presentation attributes",
+      "number": "6.1"
+    },
+    {
+      "id": "svg-syntax",
+      "href": "https://drafts.csswg.org/css-transforms/#svg-syntax",
+      "level": 3,
+      "title": "Syntax of the SVG transform attribute",
+      "number": "6.2"
+    },
+    {
+      "id": "svg-transform-functions",
+      "href": "https://drafts.csswg.org/css-transforms/#svg-transform-functions",
+      "level": 3,
+      "title": "SVG transform functions",
+      "number": "6.3"
+    },
+    {
+      "id": "svg-user-coordinate-space",
+      "href": "https://drafts.csswg.org/css-transforms/#svg-user-coordinate-space",
+      "level": 3,
+      "title": "User coordinate space",
+      "number": "6.4"
+    },
+    {
+      "id": "transform-attribute-dom",
+      "href": "https://drafts.csswg.org/css-transforms/#transform-attribute-dom",
+      "level": 3,
+      "title": "SVG DOM interface for the transform attribute",
+      "number": "6.5"
+    },
+    {
+      "id": "transform-functions",
+      "href": "https://drafts.csswg.org/css-transforms/#transform-functions",
+      "level": 2,
+      "title": "The Transform Functions",
+      "number": "7"
+    },
+    {
+      "id": "two-d-transform-functions",
+      "href": "https://drafts.csswg.org/css-transforms/#two-d-transform-functions",
+      "level": 3,
+      "title": "2D Transform Functions",
+      "number": "7.1"
+    },
+    {
+      "id": "transform-primitives",
+      "href": "https://drafts.csswg.org/css-transforms/#transform-primitives",
+      "level": 3,
+      "title": "Transform function primitives and derivatives",
+      "number": "7.2"
+    },
+    {
+      "id": "transform-function-lists",
+      "href": "https://drafts.csswg.org/css-transforms/#transform-function-lists",
+      "level": 2,
+      "title": "The Transform Function Lists",
+      "number": "8"
+    },
+    {
+      "id": "interpolation-of-transforms",
+      "href": "https://drafts.csswg.org/css-transforms/#interpolation-of-transforms",
+      "level": 2,
+      "title": "Interpolation of Transforms",
+      "number": "9"
+    },
+    {
+      "id": "interpolation-of-transform-functions",
+      "href": "https://drafts.csswg.org/css-transforms/#interpolation-of-transform-functions",
+      "level": 2,
+      "title": "10. Interpolation of primitives and derived transform functions"
+    },
+    {
+      "id": "matrix-interpolation",
+      "href": "https://drafts.csswg.org/css-transforms/#matrix-interpolation",
+      "level": 2,
+      "title": "11. Interpolation of Matrices"
+    },
+    {
+      "id": "supporting-functions",
+      "href": "https://drafts.csswg.org/css-transforms/#supporting-functions",
+      "level": 3,
+      "title": "Supporting functions",
+      "number": "11.1"
+    },
+    {
+      "id": "interpolation-of-2d-matrices",
+      "href": "https://drafts.csswg.org/css-transforms/#interpolation-of-2d-matrices",
+      "level": 3,
+      "title": "Interpolation of 2D matrices",
+      "number": "11.2"
+    },
+    {
+      "id": "decomposing-a-2d-matrix",
+      "href": "https://drafts.csswg.org/css-transforms/#decomposing-a-2d-matrix",
+      "level": 4,
+      "title": "Decomposing a 2D matrix",
+      "number": "11.2.1"
+    },
+    {
+      "id": "interpolation-of-decomposed-2d-matrix-values",
+      "href": "https://drafts.csswg.org/css-transforms/#interpolation-of-decomposed-2d-matrix-values",
+      "level": 4,
+      "title": "Interpolation of decomposed 2D matrix values",
+      "number": "11.2.2"
+    },
+    {
+      "id": "recomposing-to-a-2d-matrix",
+      "href": "https://drafts.csswg.org/css-transforms/#recomposing-to-a-2d-matrix",
+      "level": 4,
+      "title": "Recomposing to a 2D matrix",
+      "number": "11.2.3"
+    },
+    {
+      "id": "mathematical-description",
+      "href": "https://drafts.csswg.org/css-transforms/#mathematical-description",
+      "level": 2,
+      "title": "12. Mathematical Description of Transform Functions"
+    },
+    {
+      "id": "priv-sec",
+      "href": "https://drafts.csswg.org/css-transforms/#priv-sec",
+      "level": 2,
+      "title": "13. Privacy and Security Considerations"
+    },
+    {
+      "id": "changes",
+      "href": "https://drafts.csswg.org/css-transforms/#changes",
+      "level": 2,
+      "title": "Changes"
+    },
+    {
+      "id": "CR20190214",
+      "href": "https://drafts.csswg.org/css-transforms/#CR20190214",
+      "level": 3,
+      "title": "Since the 14 February 2019 Candidate Recommendation"
+    },
+    {
+      "id": "WD20181130",
+      "href": "https://drafts.csswg.org/css-transforms/#WD20181130",
+      "level": 3,
+      "title": "Since the 30 November 2018 Working Draft"
+    },
+    {
+      "id": "WD20171130",
+      "href": "https://drafts.csswg.org/css-transforms/#WD20171130",
+      "level": 3,
+      "title": "Since the 30 November 2017 Working Draft"
+    },
+    {
+      "id": "acknowledgments",
+      "href": "https://drafts.csswg.org/css-transforms/#acknowledgments",
+      "level": 2,
+      "title": "Acknowledgments"
+    },
+    {
+      "id": "w3c-conformance",
+      "href": "https://drafts.csswg.org/css-transforms/#w3c-conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "w3c-conventions",
+      "href": "https://drafts.csswg.org/css-transforms/#w3c-conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "w3c-conformance-classes",
+      "href": "https://drafts.csswg.org/css-transforms/#w3c-conformance-classes",
+      "level": 3,
+      "title": "Conformance classes"
+    },
+    {
+      "id": "w3c-partial",
+      "href": "https://drafts.csswg.org/css-transforms/#w3c-partial",
+      "level": 3,
+      "title": "Partial implementations"
+    },
+    {
+      "id": "w3c-conform-future-proofing",
+      "href": "https://drafts.csswg.org/css-transforms/#w3c-conform-future-proofing",
+      "level": 4,
+      "title": "Implementations of Unstable and Proprietary Features"
+    },
+    {
+      "id": "w3c-testing",
+      "href": "https://drafts.csswg.org/css-transforms/#w3c-testing",
+      "level": 3,
+      "title": "Non-experimental implementations"
+    },
+    {
+      "id": "index",
+      "href": "https://drafts.csswg.org/css-transforms/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://drafts.csswg.org/css-transforms/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://drafts.csswg.org/css-transforms/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://drafts.csswg.org/css-transforms/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://drafts.csswg.org/css-transforms/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://drafts.csswg.org/css-transforms/#informative",
+      "level": 3,
+      "title": "Informative References"
+    },
+    {
+      "id": "property-index",
+      "href": "https://drafts.csswg.org/css-transforms/#property-index",
+      "level": 2,
+      "title": "Property Index"
+    }
+  ]
+}

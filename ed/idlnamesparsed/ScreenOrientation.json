@@ -1,0 +1,280 @@
+{
+  "name": "ScreenOrientation",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "The Screen Orientation API",
+      "url": "https://www.w3.org/TR/screen-orientation/"
+    },
+    "fragment": "[Exposed=Window]\ninterface ScreenOrientation : EventTarget {\n  Promise<undefined> lock(OrientationLockType orientation);\n  undefined unlock();\n  readonly attribute OrientationType type;\n  readonly attribute unsigned short angle;\n  attribute EventHandler onchange;\n};",
+    "href": "https://w3c.github.io/screen-orientation/#dom-screenorientation"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "EventTarget",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=*]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+      "href": "https://dom.spec.whatwg.org/#eventtarget"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/screen-orientation/": [
+      {
+        "id": "dom-screenorientation",
+        "href": "https://w3c.github.io/screen-orientation/#dom-screenorientation",
+        "linkingText": [
+          "ScreenOrientation"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "screenorientation-interface",
+          "href": "https://w3c.github.io/screen-orientation/#screenorientation-interface",
+          "title": "ScreenOrientation interface",
+          "number": "3"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-screenorientation-lock",
+        "href": "https://w3c.github.io/screen-orientation/#dom-screenorientation-lock",
+        "linkingText": [
+          "lock()",
+          "lock(orientation)"
+        ],
+        "localLinkingText": [
+          "ScreenOrientation.lock",
+          "ScreenOrientation.lock()",
+          "lock"
+        ],
+        "type": "method",
+        "for": [
+          "ScreenOrientation"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "lock-method-lock-screen-to-a-specific-orientation",
+          "href": "https://w3c.github.io/screen-orientation/#lock-method-lock-screen-to-a-specific-orientation",
+          "title": "lock() method: Lock screen to a specific orientation",
+          "number": "3.1"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-screenorientation-unlock",
+        "href": "https://w3c.github.io/screen-orientation/#dom-screenorientation-unlock",
+        "linkingText": [
+          "unlock()"
+        ],
+        "localLinkingText": [
+          "ScreenOrientation.unlock",
+          "ScreenOrientation.unlock()",
+          "unlock"
+        ],
+        "type": "method",
+        "for": [
+          "ScreenOrientation"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "unlock-method-unlock-screen-to-default-orientation",
+          "href": "https://w3c.github.io/screen-orientation/#unlock-method-unlock-screen-to-default-orientation",
+          "title": "unlock() method: Unlock screen to default orientation",
+          "number": "3.2"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-screenorientation-type",
+        "href": "https://w3c.github.io/screen-orientation/#dom-screenorientation-type",
+        "linkingText": [
+          "type"
+        ],
+        "localLinkingText": [
+          "ScreenOrientation.type"
+        ],
+        "type": "attribute",
+        "for": [
+          "ScreenOrientation"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "type-attribute-get-current-orientation",
+          "href": "https://w3c.github.io/screen-orientation/#type-attribute-get-current-orientation",
+          "title": "type attribute: Get current orientation",
+          "number": "3.3"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-screenorientation-angle",
+        "href": "https://w3c.github.io/screen-orientation/#dom-screenorientation-angle",
+        "linkingText": [
+          "angle"
+        ],
+        "localLinkingText": [
+          "ScreenOrientation.angle"
+        ],
+        "type": "attribute",
+        "for": [
+          "ScreenOrientation"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "angle-attribute-get-orientation-angle",
+          "href": "https://w3c.github.io/screen-orientation/#angle-attribute-get-orientation-angle",
+          "title": "angle attribute: Get orientation angle",
+          "number": "3.4"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-screenorientation-onchange",
+        "href": "https://w3c.github.io/screen-orientation/#dom-screenorientation-onchange",
+        "linkingText": [
+          "onchange"
+        ],
+        "localLinkingText": [
+          "ScreenOrientation.onchange"
+        ],
+        "type": "attribute",
+        "for": [
+          "ScreenOrientation"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "onchange-attribute-handle-orientation-changes",
+          "href": "https://w3c.github.io/screen-orientation/#onchange-attribute-handle-orientation-changes",
+          "title": "onchange attribute: Handle orientation changes",
+          "number": "3.5"
+        },
+        "definedIn": "heading"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "eventtarget",
+        "href": "https://dom.spec.whatwg.org/#eventtarget",
+        "linkingText": [
+          "EventTarget"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventtarget-eventtarget",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-eventtarget",
+        "linkingText": [
+          "EventTarget()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-addeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-addeventlistener",
+        "linkingText": [
+          "addEventListener(type, callback, options)",
+          "addEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-removeeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-removeeventlistener",
+        "linkingText": [
+          "removeEventListener(type, callback, options)",
+          "removeEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-dispatchevent",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-dispatchevent",
+        "linkingText": [
+          "dispatchEvent(event)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

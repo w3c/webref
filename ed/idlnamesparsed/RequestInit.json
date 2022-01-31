@@ -1,0 +1,342 @@
+{
+  "name": "RequestInit",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Fetch Standard",
+      "url": "https://fetch.spec.whatwg.org/"
+    },
+    "fragment": "dictionary RequestInit {\n  ByteString method;\n  HeadersInit headers;\n  BodyInit? body;\n  USVString referrer;\n  ReferrerPolicy referrerPolicy;\n  RequestMode mode;\n  RequestCredentials credentials;\n  RequestCache cache;\n  RequestRedirect redirect;\n  DOMString integrity;\n  boolean keepalive;\n  AbortSignal? signal;\n  any window; // can only be set to null\n};",
+    "href": "https://fetch.spec.whatwg.org/#requestinit"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "Priority Hints",
+        "url": "https://wicg.github.io/priority-hints/"
+      },
+      "fragment": "partial dictionary RequestInit {\n  Importance importance;\n};"
+    }
+  ],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://fetch.spec.whatwg.org/": [
+      {
+        "id": "requestinit",
+        "href": "https://fetch.spec.whatwg.org/#requestinit",
+        "linkingText": [
+          "RequestInit"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "request-class",
+          "href": "https://fetch.spec.whatwg.org/#request-class",
+          "title": "Request class",
+          "number": "5.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-requestinit-method",
+        "href": "https://fetch.spec.whatwg.org/#dom-requestinit-method",
+        "linkingText": [
+          "method"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RequestInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "request-class",
+          "href": "https://fetch.spec.whatwg.org/#request-class",
+          "title": "Request class",
+          "number": "5.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-requestinit-headers",
+        "href": "https://fetch.spec.whatwg.org/#dom-requestinit-headers",
+        "linkingText": [
+          "headers"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RequestInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "request-class",
+          "href": "https://fetch.spec.whatwg.org/#request-class",
+          "title": "Request class",
+          "number": "5.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-requestinit-body",
+        "href": "https://fetch.spec.whatwg.org/#dom-requestinit-body",
+        "linkingText": [
+          "body"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RequestInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "request-class",
+          "href": "https://fetch.spec.whatwg.org/#request-class",
+          "title": "Request class",
+          "number": "5.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-requestinit-referrer",
+        "href": "https://fetch.spec.whatwg.org/#dom-requestinit-referrer",
+        "linkingText": [
+          "referrer"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RequestInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "request-class",
+          "href": "https://fetch.spec.whatwg.org/#request-class",
+          "title": "Request class",
+          "number": "5.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-requestinit-referrerpolicy",
+        "href": "https://fetch.spec.whatwg.org/#dom-requestinit-referrerpolicy",
+        "linkingText": [
+          "referrerPolicy"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RequestInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "request-class",
+          "href": "https://fetch.spec.whatwg.org/#request-class",
+          "title": "Request class",
+          "number": "5.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-requestinit-mode",
+        "href": "https://fetch.spec.whatwg.org/#dom-requestinit-mode",
+        "linkingText": [
+          "mode"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RequestInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "request-class",
+          "href": "https://fetch.spec.whatwg.org/#request-class",
+          "title": "Request class",
+          "number": "5.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-requestinit-credentials",
+        "href": "https://fetch.spec.whatwg.org/#dom-requestinit-credentials",
+        "linkingText": [
+          "credentials"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RequestInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "request-class",
+          "href": "https://fetch.spec.whatwg.org/#request-class",
+          "title": "Request class",
+          "number": "5.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-requestinit-cache",
+        "href": "https://fetch.spec.whatwg.org/#dom-requestinit-cache",
+        "linkingText": [
+          "cache"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RequestInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "request-class",
+          "href": "https://fetch.spec.whatwg.org/#request-class",
+          "title": "Request class",
+          "number": "5.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-requestinit-redirect",
+        "href": "https://fetch.spec.whatwg.org/#dom-requestinit-redirect",
+        "linkingText": [
+          "redirect"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RequestInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "request-class",
+          "href": "https://fetch.spec.whatwg.org/#request-class",
+          "title": "Request class",
+          "number": "5.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-requestinit-integrity",
+        "href": "https://fetch.spec.whatwg.org/#dom-requestinit-integrity",
+        "linkingText": [
+          "integrity"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RequestInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "request-class",
+          "href": "https://fetch.spec.whatwg.org/#request-class",
+          "title": "Request class",
+          "number": "5.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-requestinit-keepalive",
+        "href": "https://fetch.spec.whatwg.org/#dom-requestinit-keepalive",
+        "linkingText": [
+          "keepalive"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RequestInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "request-class",
+          "href": "https://fetch.spec.whatwg.org/#request-class",
+          "title": "Request class",
+          "number": "5.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-requestinit-signal",
+        "href": "https://fetch.spec.whatwg.org/#dom-requestinit-signal",
+        "linkingText": [
+          "signal"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RequestInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "request-class",
+          "href": "https://fetch.spec.whatwg.org/#request-class",
+          "title": "Request class",
+          "number": "5.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-requestinit-window",
+        "href": "https://fetch.spec.whatwg.org/#dom-requestinit-window",
+        "linkingText": [
+          "window"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RequestInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "request-class",
+          "href": "https://fetch.spec.whatwg.org/#request-class",
+          "title": "Request class",
+          "number": "5.4"
+        },
+        "definedIn": "pre"
+      }
+    ],
+    "https://wicg.github.io/priority-hints/": [
+      {
+        "id": "dom-requestinit-importance",
+        "href": "https://wicg.github.io/priority-hints/#dom-requestinit-importance",
+        "linkingText": [
+          "importance"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RequestInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "fetch-integration",
+          "href": "https://wicg.github.io/priority-hints/#fetch-integration",
+          "title": "Fetch Integration",
+          "number": "3.2"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

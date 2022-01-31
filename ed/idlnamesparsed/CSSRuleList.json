@@ -1,0 +1,80 @@
+{
+  "name": "CSSRuleList",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "CSS Object Model (CSSOM)",
+      "url": "https://www.w3.org/TR/cssom-1/"
+    },
+    "fragment": "[Exposed=Window]\ninterface CSSRuleList {\n  getter CSSRule? item(unsigned long index);\n  readonly attribute unsigned long length;\n};",
+    "href": "https://drafts.csswg.org/cssom/#cssrulelist"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/cssom-1/": [
+      {
+        "id": "cssrulelist",
+        "href": "https://drafts.csswg.org/cssom/#cssrulelist",
+        "linkingText": [
+          "CSSRuleList"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-cssrulelist-interface",
+          "href": "https://drafts.csswg.org/cssom/#the-cssrulelist-interface",
+          "title": "The CSSRuleList Interface",
+          "number": "6.4.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-cssrulelist-item",
+        "href": "https://drafts.csswg.org/cssom/#dom-cssrulelist-item",
+        "linkingText": [
+          "item(index)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSSRuleList"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-cssrulelist-interface",
+          "href": "https://drafts.csswg.org/cssom/#the-cssrulelist-interface",
+          "title": "The CSSRuleList Interface",
+          "number": "6.4.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-cssrulelist-length",
+        "href": "https://drafts.csswg.org/cssom/#dom-cssrulelist-length",
+        "linkingText": [
+          "length"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "CSSRuleList"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-cssrulelist-interface",
+          "href": "https://drafts.csswg.org/cssom/#the-cssrulelist-interface",
+          "title": "The CSSRuleList Interface",
+          "number": "6.4.1"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

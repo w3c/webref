@@ -1,0 +1,346 @@
+{
+  "spec": {
+    "title": "MediaStream Image Capture",
+    "url": "https://w3c.github.io/mediacapture-image/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://w3c.github.io/mediacapture-image/#title",
+      "level": 1,
+      "title": "MediaStream Image Capture"
+    },
+    {
+      "id": "subtitle",
+      "href": "https://w3c.github.io/mediacapture-image/#subtitle",
+      "level": 2,
+      "title": "Editor’s Draft, 6 April 2021"
+    },
+    {
+      "id": "abstract",
+      "href": "https://w3c.github.io/mediacapture-image/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "sotd",
+      "href": "https://w3c.github.io/mediacapture-image/#sotd",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://w3c.github.io/mediacapture-image/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "introduction",
+      "href": "https://w3c.github.io/mediacapture-image/#introduction",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "securityandprivacy",
+      "href": "https://w3c.github.io/mediacapture-image/#securityandprivacy",
+      "level": 2,
+      "title": "Security and Privacy Considerations",
+      "number": "2"
+    },
+    {
+      "id": "imagecaptureapi",
+      "href": "https://w3c.github.io/mediacapture-image/#imagecaptureapi",
+      "level": 2,
+      "title": "Image Capture API",
+      "number": "3"
+    },
+    {
+      "id": "imagecapture-attributes",
+      "href": "https://w3c.github.io/mediacapture-image/#imagecapture-attributes",
+      "level": 3,
+      "title": "Attributes",
+      "number": "3.1"
+    },
+    {
+      "id": "imagecapture-methods",
+      "href": "https://w3c.github.io/mediacapture-image/#imagecapture-methods",
+      "level": 3,
+      "title": "Methods",
+      "number": "3.2"
+    },
+    {
+      "id": "photocapabilities-section",
+      "href": "https://w3c.github.io/mediacapture-image/#photocapabilities-section",
+      "level": 2,
+      "title": "PhotoCapabilities",
+      "number": "4"
+    },
+    {
+      "id": "photocapabilities-members",
+      "href": "https://w3c.github.io/mediacapture-image/#photocapabilities-members",
+      "level": 3,
+      "title": "Members",
+      "number": "4.1"
+    },
+    {
+      "id": "photosettings-section",
+      "href": "https://w3c.github.io/mediacapture-image/#photosettings-section",
+      "level": 2,
+      "title": "PhotoSettings",
+      "number": "5"
+    },
+    {
+      "id": "photosettings-members",
+      "href": "https://w3c.github.io/mediacapture-image/#photosettings-members",
+      "level": 3,
+      "title": "Members",
+      "number": "5.1"
+    },
+    {
+      "id": "mediasettingsrange-section",
+      "href": "https://w3c.github.io/mediacapture-image/#mediasettingsrange-section",
+      "level": 2,
+      "title": "MediaSettingsRange",
+      "number": "6"
+    },
+    {
+      "id": "mediasettingsrange-members",
+      "href": "https://w3c.github.io/mediacapture-image/#mediasettingsrange-members",
+      "level": 3,
+      "title": "Members",
+      "number": "6.1"
+    },
+    {
+      "id": "redeyereduction-section",
+      "href": "https://w3c.github.io/mediacapture-image/#redeyereduction-section",
+      "level": 2,
+      "title": "RedEyeReduction",
+      "number": "7"
+    },
+    {
+      "id": "redeyereduction-values",
+      "href": "https://w3c.github.io/mediacapture-image/#redeyereduction-values",
+      "level": 3,
+      "title": "Values",
+      "number": "7.1"
+    },
+    {
+      "id": "filllightmode-section",
+      "href": "https://w3c.github.io/mediacapture-image/#filllightmode-section",
+      "level": 2,
+      "title": "FillLightMode",
+      "number": "8"
+    },
+    {
+      "id": "filllightmode-values",
+      "href": "https://w3c.github.io/mediacapture-image/#filllightmode-values",
+      "level": 3,
+      "title": "Values",
+      "number": "8.1"
+    },
+    {
+      "id": "extensions",
+      "href": "https://w3c.github.io/mediacapture-image/#extensions",
+      "level": 2,
+      "title": "Extensions",
+      "number": "9"
+    },
+    {
+      "id": "mediatracksupportedconstraints-section",
+      "href": "https://w3c.github.io/mediacapture-image/#mediatracksupportedconstraints-section",
+      "level": 3,
+      "title": "MediaTrackSupportedConstraints dictionary",
+      "number": "9.1"
+    },
+    {
+      "id": "mediatracksupportedconstraints-members",
+      "href": "https://w3c.github.io/mediacapture-image/#mediatracksupportedconstraints-members",
+      "level": 4,
+      "title": "Members",
+      "number": "9.1.1"
+    },
+    {
+      "id": "mediatrackcapabilities-section",
+      "href": "https://w3c.github.io/mediacapture-image/#mediatrackcapabilities-section",
+      "level": 3,
+      "title": "MediaTrackCapabilities dictionary",
+      "number": "9.2"
+    },
+    {
+      "id": "mediatrackcapabilities-members",
+      "href": "https://w3c.github.io/mediacapture-image/#mediatrackcapabilities-members",
+      "level": 4,
+      "title": "Members",
+      "number": "9.2.1"
+    },
+    {
+      "id": "mediatrackconstraintset-section",
+      "href": "https://w3c.github.io/mediacapture-image/#mediatrackconstraintset-section",
+      "level": 3,
+      "title": "MediaTrackConstraintSet dictionary",
+      "number": "9.3"
+    },
+    {
+      "id": "mediatrackconstraintset-members",
+      "href": "https://w3c.github.io/mediacapture-image/#mediatrackconstraintset-members",
+      "level": 4,
+      "title": "Members",
+      "number": "9.3.1"
+    },
+    {
+      "id": "mediatracksettings-section",
+      "href": "https://w3c.github.io/mediacapture-image/#mediatracksettings-section",
+      "level": 3,
+      "title": "MediaTrackSettings dictionary",
+      "number": "9.4"
+    },
+    {
+      "id": "mediatracksettings-members",
+      "href": "https://w3c.github.io/mediacapture-image/#mediatracksettings-members",
+      "level": 4,
+      "title": "Members",
+      "number": "9.4.1"
+    },
+    {
+      "id": "additional-constrainable-props",
+      "href": "https://w3c.github.io/mediacapture-image/#additional-constrainable-props",
+      "level": 3,
+      "title": "Additional Constrainable Properties",
+      "number": "9.5"
+    },
+    {
+      "id": "constraintpoint2d-members",
+      "href": "https://w3c.github.io/mediacapture-image/#constraintpoint2d-members",
+      "level": 4,
+      "title": "Members",
+      "number": "9.5.1"
+    },
+    {
+      "id": "constrainable-properties",
+      "href": "https://w3c.github.io/mediacapture-image/#constrainable-properties",
+      "level": 2,
+      "title": "10. Photo Capabilities and Constrainable Properties"
+    },
+    {
+      "id": "meteringmode-section",
+      "href": "https://w3c.github.io/mediacapture-image/#meteringmode-section",
+      "level": 2,
+      "title": "11. MeteringMode"
+    },
+    {
+      "id": "meteringmode-values",
+      "href": "https://w3c.github.io/mediacapture-image/#meteringmode-values",
+      "level": 3,
+      "title": "Values",
+      "number": "11.1"
+    },
+    {
+      "id": "point2d-section",
+      "href": "https://w3c.github.io/mediacapture-image/#point2d-section",
+      "level": 2,
+      "title": "12. Point2D"
+    },
+    {
+      "id": "point2d-members",
+      "href": "https://w3c.github.io/mediacapture-image/#point2d-members",
+      "level": 3,
+      "title": "Members",
+      "number": "12.1"
+    },
+    {
+      "id": "examples",
+      "href": "https://w3c.github.io/mediacapture-image/#examples",
+      "level": 2,
+      "title": "13. Examples"
+    },
+    {
+      "id": "example1",
+      "href": "https://w3c.github.io/mediacapture-image/#example1",
+      "level": 3,
+      "title": "Update camera pan, tilt and zoom and takePhoto()",
+      "number": "13.1"
+    },
+    {
+      "id": "example2",
+      "href": "https://w3c.github.io/mediacapture-image/#example2",
+      "level": 3,
+      "title": "Repeated grabbing of a frame with grabFrame()",
+      "number": "13.2"
+    },
+    {
+      "id": "example3",
+      "href": "https://w3c.github.io/mediacapture-image/#example3",
+      "level": 3,
+      "title": "Grabbing a Frame and Post-Processing",
+      "number": "13.3"
+    },
+    {
+      "id": "example4",
+      "href": "https://w3c.github.io/mediacapture-image/#example4",
+      "level": 3,
+      "title": "Update camera focus distance and takePhoto()",
+      "number": "13.4"
+    },
+    {
+      "id": "w3c-conformance",
+      "href": "https://w3c.github.io/mediacapture-image/#w3c-conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "w3c-conventions",
+      "href": "https://w3c.github.io/mediacapture-image/#w3c-conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "w3c-conformant-algorithms",
+      "href": "https://w3c.github.io/mediacapture-image/#w3c-conformant-algorithms",
+      "level": 3,
+      "title": "Conformant Algorithms"
+    },
+    {
+      "id": "index",
+      "href": "https://w3c.github.io/mediacapture-image/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://w3c.github.io/mediacapture-image/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://w3c.github.io/mediacapture-image/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://w3c.github.io/mediacapture-image/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://w3c.github.io/mediacapture-image/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://w3c.github.io/mediacapture-image/#informative",
+      "level": 3,
+      "title": "Informative References"
+    },
+    {
+      "id": "idl-index",
+      "href": "https://w3c.github.io/mediacapture-image/#idl-index",
+      "level": 2,
+      "title": "IDL Index"
+    }
+  ]
+}

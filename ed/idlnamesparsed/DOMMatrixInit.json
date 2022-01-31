@@ -1,0 +1,554 @@
+{
+  "name": "DOMMatrixInit",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Geometry Interfaces Module Level 1",
+      "url": "https://www.w3.org/TR/geometry-1/"
+    },
+    "fragment": "dictionary DOMMatrixInit : DOMMatrix2DInit {\n    unrestricted double m13 = 0;\n    unrestricted double m14 = 0;\n    unrestricted double m23 = 0;\n    unrestricted double m24 = 0;\n    unrestricted double m31 = 0;\n    unrestricted double m32 = 0;\n    unrestricted double m33 = 1;\n    unrestricted double m34 = 0;\n    unrestricted double m43 = 0;\n    unrestricted double m44 = 1;\n    boolean is2D;\n};",
+    "href": "https://drafts.fxtf.org/geometry/#dictdef-dommatrixinit"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "DOMMatrix2DInit",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "Geometry Interfaces Module Level 1",
+        "url": "https://www.w3.org/TR/geometry-1/"
+      },
+      "fragment": "dictionary DOMMatrix2DInit {\n    unrestricted double a;\n    unrestricted double b;\n    unrestricted double c;\n    unrestricted double d;\n    unrestricted double e;\n    unrestricted double f;\n    unrestricted double m11;\n    unrestricted double m12;\n    unrestricted double m21;\n    unrestricted double m22;\n    unrestricted double m41;\n    unrestricted double m42;\n};",
+      "href": "https://drafts.fxtf.org/geometry/#dictdef-dommatrix2dinit"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/geometry-1/": [
+      {
+        "id": "dictdef-dommatrixinit",
+        "href": "https://drafts.fxtf.org/geometry/#dictdef-dommatrixinit",
+        "linkingText": [
+          "DOMMatrixInit"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "DOMMatrix",
+          "href": "https://drafts.fxtf.org/geometry/#DOMMatrix",
+          "title": "The DOMMatrix interfaces",
+          "number": "6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-dommatrixinit-m13",
+        "href": "https://drafts.fxtf.org/geometry/#dom-dommatrixinit-m13",
+        "linkingText": [
+          "m13"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "DOMMatrixInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "DOMMatrix",
+          "href": "https://drafts.fxtf.org/geometry/#DOMMatrix",
+          "title": "The DOMMatrix interfaces",
+          "number": "6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-dommatrixinit-m14",
+        "href": "https://drafts.fxtf.org/geometry/#dom-dommatrixinit-m14",
+        "linkingText": [
+          "m14"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "DOMMatrixInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "DOMMatrix",
+          "href": "https://drafts.fxtf.org/geometry/#DOMMatrix",
+          "title": "The DOMMatrix interfaces",
+          "number": "6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-dommatrixinit-m23",
+        "href": "https://drafts.fxtf.org/geometry/#dom-dommatrixinit-m23",
+        "linkingText": [
+          "m23"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "DOMMatrixInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "DOMMatrix",
+          "href": "https://drafts.fxtf.org/geometry/#DOMMatrix",
+          "title": "The DOMMatrix interfaces",
+          "number": "6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-dommatrixinit-m24",
+        "href": "https://drafts.fxtf.org/geometry/#dom-dommatrixinit-m24",
+        "linkingText": [
+          "m24"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "DOMMatrixInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "DOMMatrix",
+          "href": "https://drafts.fxtf.org/geometry/#DOMMatrix",
+          "title": "The DOMMatrix interfaces",
+          "number": "6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-dommatrixinit-m31",
+        "href": "https://drafts.fxtf.org/geometry/#dom-dommatrixinit-m31",
+        "linkingText": [
+          "m31"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "DOMMatrixInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "DOMMatrix",
+          "href": "https://drafts.fxtf.org/geometry/#DOMMatrix",
+          "title": "The DOMMatrix interfaces",
+          "number": "6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-dommatrixinit-m32",
+        "href": "https://drafts.fxtf.org/geometry/#dom-dommatrixinit-m32",
+        "linkingText": [
+          "m32"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "DOMMatrixInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "DOMMatrix",
+          "href": "https://drafts.fxtf.org/geometry/#DOMMatrix",
+          "title": "The DOMMatrix interfaces",
+          "number": "6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-dommatrixinit-m33",
+        "href": "https://drafts.fxtf.org/geometry/#dom-dommatrixinit-m33",
+        "linkingText": [
+          "m33"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "DOMMatrixInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "DOMMatrix",
+          "href": "https://drafts.fxtf.org/geometry/#DOMMatrix",
+          "title": "The DOMMatrix interfaces",
+          "number": "6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-dommatrixinit-m34",
+        "href": "https://drafts.fxtf.org/geometry/#dom-dommatrixinit-m34",
+        "linkingText": [
+          "m34"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "DOMMatrixInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "DOMMatrix",
+          "href": "https://drafts.fxtf.org/geometry/#DOMMatrix",
+          "title": "The DOMMatrix interfaces",
+          "number": "6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-dommatrixinit-m43",
+        "href": "https://drafts.fxtf.org/geometry/#dom-dommatrixinit-m43",
+        "linkingText": [
+          "m43"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "DOMMatrixInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "DOMMatrix",
+          "href": "https://drafts.fxtf.org/geometry/#DOMMatrix",
+          "title": "The DOMMatrix interfaces",
+          "number": "6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-dommatrixinit-m44",
+        "href": "https://drafts.fxtf.org/geometry/#dom-dommatrixinit-m44",
+        "linkingText": [
+          "m44"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "DOMMatrixInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "DOMMatrix",
+          "href": "https://drafts.fxtf.org/geometry/#DOMMatrix",
+          "title": "The DOMMatrix interfaces",
+          "number": "6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-dommatrixinit-is2d",
+        "href": "https://drafts.fxtf.org/geometry/#dom-dommatrixinit-is2d",
+        "linkingText": [
+          "is2D"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "DOMMatrixInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "DOMMatrix",
+          "href": "https://drafts.fxtf.org/geometry/#DOMMatrix",
+          "title": "The DOMMatrix interfaces",
+          "number": "6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dictdef-dommatrix2dinit",
+        "href": "https://drafts.fxtf.org/geometry/#dictdef-dommatrix2dinit",
+        "linkingText": [
+          "DOMMatrix2DInit"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "DOMMatrix",
+          "href": "https://drafts.fxtf.org/geometry/#DOMMatrix",
+          "title": "The DOMMatrix interfaces",
+          "number": "6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-dommatrix2dinit-a",
+        "href": "https://drafts.fxtf.org/geometry/#dom-dommatrix2dinit-a",
+        "linkingText": [
+          "a"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "DOMMatrix2DInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "DOMMatrix",
+          "href": "https://drafts.fxtf.org/geometry/#DOMMatrix",
+          "title": "The DOMMatrix interfaces",
+          "number": "6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-dommatrix2dinit-b",
+        "href": "https://drafts.fxtf.org/geometry/#dom-dommatrix2dinit-b",
+        "linkingText": [
+          "b"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "DOMMatrix2DInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "DOMMatrix",
+          "href": "https://drafts.fxtf.org/geometry/#DOMMatrix",
+          "title": "The DOMMatrix interfaces",
+          "number": "6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-dommatrix2dinit-c",
+        "href": "https://drafts.fxtf.org/geometry/#dom-dommatrix2dinit-c",
+        "linkingText": [
+          "c"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "DOMMatrix2DInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "DOMMatrix",
+          "href": "https://drafts.fxtf.org/geometry/#DOMMatrix",
+          "title": "The DOMMatrix interfaces",
+          "number": "6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-dommatrix2dinit-d",
+        "href": "https://drafts.fxtf.org/geometry/#dom-dommatrix2dinit-d",
+        "linkingText": [
+          "d"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "DOMMatrix2DInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "DOMMatrix",
+          "href": "https://drafts.fxtf.org/geometry/#DOMMatrix",
+          "title": "The DOMMatrix interfaces",
+          "number": "6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-dommatrix2dinit-e",
+        "href": "https://drafts.fxtf.org/geometry/#dom-dommatrix2dinit-e",
+        "linkingText": [
+          "e"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "DOMMatrix2DInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "DOMMatrix",
+          "href": "https://drafts.fxtf.org/geometry/#DOMMatrix",
+          "title": "The DOMMatrix interfaces",
+          "number": "6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-dommatrix2dinit-f",
+        "href": "https://drafts.fxtf.org/geometry/#dom-dommatrix2dinit-f",
+        "linkingText": [
+          "f"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "DOMMatrix2DInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "DOMMatrix",
+          "href": "https://drafts.fxtf.org/geometry/#DOMMatrix",
+          "title": "The DOMMatrix interfaces",
+          "number": "6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-dommatrix2dinit-m11",
+        "href": "https://drafts.fxtf.org/geometry/#dom-dommatrix2dinit-m11",
+        "linkingText": [
+          "m11"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "DOMMatrix2DInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "DOMMatrix",
+          "href": "https://drafts.fxtf.org/geometry/#DOMMatrix",
+          "title": "The DOMMatrix interfaces",
+          "number": "6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-dommatrix2dinit-m12",
+        "href": "https://drafts.fxtf.org/geometry/#dom-dommatrix2dinit-m12",
+        "linkingText": [
+          "m12"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "DOMMatrix2DInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "DOMMatrix",
+          "href": "https://drafts.fxtf.org/geometry/#DOMMatrix",
+          "title": "The DOMMatrix interfaces",
+          "number": "6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-dommatrix2dinit-m21",
+        "href": "https://drafts.fxtf.org/geometry/#dom-dommatrix2dinit-m21",
+        "linkingText": [
+          "m21"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "DOMMatrix2DInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "DOMMatrix",
+          "href": "https://drafts.fxtf.org/geometry/#DOMMatrix",
+          "title": "The DOMMatrix interfaces",
+          "number": "6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-dommatrix2dinit-m22",
+        "href": "https://drafts.fxtf.org/geometry/#dom-dommatrix2dinit-m22",
+        "linkingText": [
+          "m22"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "DOMMatrix2DInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "DOMMatrix",
+          "href": "https://drafts.fxtf.org/geometry/#DOMMatrix",
+          "title": "The DOMMatrix interfaces",
+          "number": "6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-dommatrix2dinit-m41",
+        "href": "https://drafts.fxtf.org/geometry/#dom-dommatrix2dinit-m41",
+        "linkingText": [
+          "m41"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "DOMMatrix2DInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "DOMMatrix",
+          "href": "https://drafts.fxtf.org/geometry/#DOMMatrix",
+          "title": "The DOMMatrix interfaces",
+          "number": "6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-dommatrix2dinit-m42",
+        "href": "https://drafts.fxtf.org/geometry/#dom-dommatrix2dinit-m42",
+        "linkingText": [
+          "m42"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "DOMMatrix2DInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "DOMMatrix",
+          "href": "https://drafts.fxtf.org/geometry/#DOMMatrix",
+          "title": "The DOMMatrix interfaces",
+          "number": "6"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

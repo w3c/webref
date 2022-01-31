@@ -1,0 +1,81 @@
+{
+  "name": "TextDetector",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Accelerated Text Detection in Images",
+      "url": "https://wicg.github.io/shape-detection-api/text.html"
+    },
+    "fragment": "[\n    Exposed=(Window,Worker),\n    SecureContext\n] interface TextDetector {\n    constructor();\n    Promise<sequence<DetectedText>> detect(ImageBitmapSource image);\n};",
+    "href": "https://wicg.github.io/shape-detection-api/text.html#textdetector"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://wicg.github.io/shape-detection-api/text.html": [
+      {
+        "id": "textdetector",
+        "href": "https://wicg.github.io/shape-detection-api/text.html#textdetector",
+        "linkingText": [
+          "TextDetector"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "text-detection-api",
+          "href": "https://wicg.github.io/shape-detection-api/text.html#text-detection-api",
+          "title": "Text Detection API",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-textdetector-textdetector",
+        "href": "https://wicg.github.io/shape-detection-api/text.html#dom-textdetector-textdetector",
+        "linkingText": [
+          "TextDetector()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "TextDetector"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "text-detection-api",
+          "href": "https://wicg.github.io/shape-detection-api/text.html#text-detection-api",
+          "title": "Text Detection API",
+          "number": "2.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-textdetector-detect",
+        "href": "https://wicg.github.io/shape-detection-api/text.html#dom-textdetector-detect",
+        "linkingText": [
+          "detect(image)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "TextDetector"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "text-detection-api",
+          "href": "https://wicg.github.io/shape-detection-api/text.html#text-detection-api",
+          "title": "Text Detection API",
+          "number": "2.2"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

@@ -1,0 +1,227 @@
+{
+  "name": "DataTransfer",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "HTML Standard",
+      "url": "https://html.spec.whatwg.org/multipage/"
+    },
+    "fragment": "[Exposed=Window]\ninterface DataTransfer {\n  constructor();\n\n  attribute DOMString dropEffect;\n  attribute DOMString effectAllowed;\n\n  [SameObject] readonly attribute DataTransferItemList items;\n\n  undefined setDragImage(Element image, long x, long y);\n\n  /* old interface */\n  readonly attribute FrozenArray<DOMString> types;\n  DOMString getData(DOMString format);\n  undefined setData(DOMString format, DOMString data);\n  undefined clearData(optional DOMString format);\n  [SameObject] readonly attribute FileList files;\n};",
+    "href": "https://html.spec.whatwg.org/multipage/dnd.html#datatransfer"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://html.spec.whatwg.org/multipage/": [
+      {
+        "id": "datatransfer",
+        "href": "https://html.spec.whatwg.org/multipage/dnd.html#datatransfer",
+        "linkingText": [
+          "DataTransfer"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-datatransfer-interface",
+          "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransfer-interface",
+          "title": "The DataTransfer interface",
+          "number": "6.10.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-datatransfer-dropeffect",
+        "href": "https://html.spec.whatwg.org/multipage/dnd.html#dom-datatransfer-dropeffect",
+        "linkingText": [
+          "dropEffect"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "DataTransfer"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-datatransfer-interface",
+          "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransfer-interface",
+          "title": "The DataTransfer interface",
+          "number": "6.10.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-datatransfer-effectallowed",
+        "href": "https://html.spec.whatwg.org/multipage/dnd.html#dom-datatransfer-effectallowed",
+        "linkingText": [
+          "effectAllowed"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "DataTransfer"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-datatransfer-interface",
+          "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransfer-interface",
+          "title": "The DataTransfer interface",
+          "number": "6.10.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-datatransfer-items",
+        "href": "https://html.spec.whatwg.org/multipage/dnd.html#dom-datatransfer-items",
+        "linkingText": [
+          "items"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "DataTransfer"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-datatransfer-interface",
+          "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransfer-interface",
+          "title": "The DataTransfer interface",
+          "number": "6.10.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-datatransfer-setdragimage",
+        "href": "https://html.spec.whatwg.org/multipage/dnd.html#dom-datatransfer-setdragimage",
+        "linkingText": [
+          "setDragImage(image, x, y)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "DataTransfer"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-datatransfer-interface",
+          "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransfer-interface",
+          "title": "The DataTransfer interface",
+          "number": "6.10.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-datatransfer-types",
+        "href": "https://html.spec.whatwg.org/multipage/dnd.html#dom-datatransfer-types",
+        "linkingText": [
+          "types"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "DataTransfer"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-datatransfer-interface",
+          "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransfer-interface",
+          "title": "The DataTransfer interface",
+          "number": "6.10.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-datatransfer-getdata",
+        "href": "https://html.spec.whatwg.org/multipage/dnd.html#dom-datatransfer-getdata",
+        "linkingText": [
+          "getData(format)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "DataTransfer"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-datatransfer-interface",
+          "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransfer-interface",
+          "title": "The DataTransfer interface",
+          "number": "6.10.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-datatransfer-setdata",
+        "href": "https://html.spec.whatwg.org/multipage/dnd.html#dom-datatransfer-setdata",
+        "linkingText": [
+          "setData(format, data)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "DataTransfer"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-datatransfer-interface",
+          "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransfer-interface",
+          "title": "The DataTransfer interface",
+          "number": "6.10.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-datatransfer-cleardata",
+        "href": "https://html.spec.whatwg.org/multipage/dnd.html#dom-datatransfer-cleardata",
+        "linkingText": [
+          "clearData(format)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "DataTransfer"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-datatransfer-interface",
+          "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransfer-interface",
+          "title": "The DataTransfer interface",
+          "number": "6.10.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-datatransfer-files",
+        "href": "https://html.spec.whatwg.org/multipage/dnd.html#dom-datatransfer-files",
+        "linkingText": [
+          "files"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "DataTransfer"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-datatransfer-interface",
+          "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransfer-interface",
+          "title": "The DataTransfer interface",
+          "number": "6.10.3"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

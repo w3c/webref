@@ -1,0 +1,177 @@
+{
+  "name": "CSSSkewX",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "CSS Typed OM Level 1",
+      "url": "https://www.w3.org/TR/css-typed-om-1/"
+    },
+    "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]\ninterface CSSSkewX : CSSTransformComponent {\n    constructor(CSSNumericValue ax);\n    attribute CSSNumericValue ax;\n};",
+    "href": "https://drafts.css-houdini.org/css-typed-om-1/#cssskewx"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "CSSTransformComponent",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "CSS Typed OM Level 1",
+        "url": "https://www.w3.org/TR/css-typed-om-1/"
+      },
+      "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]\ninterface CSSTransformComponent {\n    stringifier;\n    attribute boolean is2D;\n    DOMMatrix toMatrix();\n};",
+      "href": "https://drafts.css-houdini.org/css-typed-om-1/#csstransformcomponent"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/css-typed-om-1/": [
+      {
+        "id": "cssskewx",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#cssskewx",
+        "linkingText": [
+          "CSSSkewX"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "transformvalue-objects",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#transformvalue-objects",
+          "title": "CSSTransformValue objects",
+          "number": "4.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-cssskewx-cssskewx",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-cssskewx-cssskewx",
+        "linkingText": [
+          "CSSSkewX(ax)",
+          "constructor(ax)"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "CSSSkewX"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "transformvalue-objects",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#transformvalue-objects",
+          "title": "CSSTransformValue objects",
+          "number": "4.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-cssskewx-ax",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-cssskewx-ax",
+        "linkingText": [
+          "ax"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "CSSSkewX"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "transformvalue-objects",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#transformvalue-objects",
+          "title": "CSSTransformValue objects",
+          "number": "4.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "csstransformcomponent",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#csstransformcomponent",
+        "linkingText": [
+          "CSSTransformComponent"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "transformvalue-objects",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#transformvalue-objects",
+          "title": "CSSTransformValue objects",
+          "number": "4.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "CSSTransformComponent-stringification-behavior",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#CSSTransformComponent-stringification-behavior",
+        "linkingText": [
+          "stringification behavior"
+        ],
+        "localLinkingText": [],
+        "type": "dfn",
+        "for": [
+          "CSSTransformComponent"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "transformvalue-objects",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#transformvalue-objects",
+          "title": "CSSTransformValue objects",
+          "number": "4.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-csstransformcomponent-is2d",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-csstransformcomponent-is2d",
+        "linkingText": [
+          "is2D"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "CSSTransformComponent"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "transformvalue-objects",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#transformvalue-objects",
+          "title": "CSSTransformValue objects",
+          "number": "4.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-csstransformcomponent-tomatrix",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-csstransformcomponent-tomatrix",
+        "linkingText": [
+          "toMatrix()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSSTransformComponent"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "transformvalue-objects",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#transformvalue-objects",
+          "title": "CSSTransformValue objects",
+          "number": "4.4"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

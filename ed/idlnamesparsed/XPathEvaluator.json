@@ -1,0 +1,170 @@
+{
+  "name": "XPathEvaluator",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "DOM Standard",
+      "url": "https://dom.spec.whatwg.org/"
+    },
+    "fragment": "[Exposed=Window]\ninterface XPathEvaluator {\n  constructor();\n};",
+    "href": "https://dom.spec.whatwg.org/#xpathevaluator"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "XPathEvaluator includes XPathEvaluatorBase;"
+    }
+  ],
+  "inheritance": null,
+  "includes": [
+    {
+      "name": "XPathEvaluatorBase",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "DOM Standard",
+          "url": "https://dom.spec.whatwg.org/"
+        },
+        "fragment": "interface mixin XPathEvaluatorBase {\n  [NewObject] XPathExpression createExpression(DOMString expression, optional XPathNSResolver? resolver = null);\n  XPathNSResolver createNSResolver(Node nodeResolver);\n  // XPathResult.ANY_TYPE = 0\n  XPathResult evaluate(DOMString expression, Node contextNode, optional XPathNSResolver? resolver = null, optional unsigned short type = 0, optional XPathResult? result = null);\n};",
+        "href": "https://dom.spec.whatwg.org/#xpathevaluatorbase"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    }
+  ],
+  "dfns": {
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "xpathevaluator",
+        "href": "https://dom.spec.whatwg.org/#xpathevaluator",
+        "linkingText": [
+          "XPathEvaluator"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-xpathevaluator",
+          "href": "https://dom.spec.whatwg.org/#interface-xpathevaluator",
+          "title": "Interface XPathEvaluator",
+          "number": "8.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-xpathevaluator-xpathevaluator",
+        "href": "https://dom.spec.whatwg.org/#dom-xpathevaluator-xpathevaluator",
+        "linkingText": [
+          "XPathEvaluator()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "XPathEvaluator"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-xpathevaluator",
+          "href": "https://dom.spec.whatwg.org/#interface-xpathevaluator",
+          "title": "Interface XPathEvaluator",
+          "number": "8.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "xpathevaluatorbase",
+        "href": "https://dom.spec.whatwg.org/#xpathevaluatorbase",
+        "linkingText": [
+          "XPathEvaluatorBase"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "mixin-xpathevaluatorbase",
+          "href": "https://dom.spec.whatwg.org/#mixin-xpathevaluatorbase",
+          "title": "Mixin XPathEvaluatorBase",
+          "number": "8.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-xpathevaluatorbase-createexpression",
+        "href": "https://dom.spec.whatwg.org/#dom-xpathevaluatorbase-createexpression",
+        "linkingText": [
+          "createExpression(expression, resolver)",
+          "createExpression(expression)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "XPathEvaluatorBase"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "mixin-xpathevaluatorbase",
+          "href": "https://dom.spec.whatwg.org/#mixin-xpathevaluatorbase",
+          "title": "Mixin XPathEvaluatorBase",
+          "number": "8.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-xpathevaluatorbase-creatensresolver",
+        "href": "https://dom.spec.whatwg.org/#dom-xpathevaluatorbase-creatensresolver",
+        "linkingText": [
+          "createNSResolver(nodeResolver)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "XPathEvaluatorBase"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "mixin-xpathevaluatorbase",
+          "href": "https://dom.spec.whatwg.org/#mixin-xpathevaluatorbase",
+          "title": "Mixin XPathEvaluatorBase",
+          "number": "8.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-xpathevaluatorbase-evaluate",
+        "href": "https://dom.spec.whatwg.org/#dom-xpathevaluatorbase-evaluate",
+        "linkingText": [
+          "evaluate(expression, contextNode, resolver, type, result)",
+          "evaluate(expression, contextNode, resolver, type)",
+          "evaluate(expression, contextNode, resolver)",
+          "evaluate(expression, contextNode)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "XPathEvaluatorBase"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "mixin-xpathevaluatorbase",
+          "href": "https://dom.spec.whatwg.org/#mixin-xpathevaluatorbase",
+          "title": "Mixin XPathEvaluatorBase",
+          "number": "8.3"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

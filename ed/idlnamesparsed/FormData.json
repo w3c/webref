@@ -1,0 +1,232 @@
+{
+  "name": "FormData",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "XMLHttpRequest Standard",
+      "url": "https://xhr.spec.whatwg.org/"
+    },
+    "fragment": "[Exposed=(Window,Worker)]\ninterface FormData {\n  constructor(optional HTMLFormElement form);\n\n  undefined append(USVString name, USVString value);\n  undefined append(USVString name, Blob blobValue, optional USVString filename);\n  undefined delete(USVString name);\n  FormDataEntryValue? get(USVString name);\n  sequence<FormDataEntryValue> getAll(USVString name);\n  boolean has(USVString name);\n  undefined set(USVString name, USVString value);\n  undefined set(USVString name, Blob blobValue, optional USVString filename);\n  iterable<USVString, FormDataEntryValue>;\n};",
+    "href": "https://xhr.spec.whatwg.org/#formdata"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://xhr.spec.whatwg.org/": [
+      {
+        "id": "formdata",
+        "href": "https://xhr.spec.whatwg.org/#formdata",
+        "linkingText": [
+          "FormData"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-formdata",
+          "href": "https://xhr.spec.whatwg.org/#interface-formdata",
+          "title": "Interface FormData",
+          "number": "4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-formdata",
+        "href": "https://xhr.spec.whatwg.org/#dom-formdata",
+        "linkingText": [
+          "FormData(form)",
+          "constructor(form)",
+          "FormData()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "FormData"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-formdata",
+          "href": "https://xhr.spec.whatwg.org/#interface-formdata",
+          "title": "Interface FormData",
+          "number": "4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-formdata-append",
+        "href": "https://xhr.spec.whatwg.org/#dom-formdata-append",
+        "linkingText": [
+          "append(name, value)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "FormData"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-formdata",
+          "href": "https://xhr.spec.whatwg.org/#interface-formdata",
+          "title": "Interface FormData",
+          "number": "4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-formdata-append-blob",
+        "href": "https://xhr.spec.whatwg.org/#dom-formdata-append-blob",
+        "linkingText": [
+          "append(name, blobValue, filename)",
+          "append(name, blobValue)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "FormData"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-formdata",
+          "href": "https://xhr.spec.whatwg.org/#interface-formdata",
+          "title": "Interface FormData",
+          "number": "4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-formdata-delete",
+        "href": "https://xhr.spec.whatwg.org/#dom-formdata-delete",
+        "linkingText": [
+          "delete(name)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "FormData"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-formdata",
+          "href": "https://xhr.spec.whatwg.org/#interface-formdata",
+          "title": "Interface FormData",
+          "number": "4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-formdata-get",
+        "href": "https://xhr.spec.whatwg.org/#dom-formdata-get",
+        "linkingText": [
+          "get(name)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "FormData"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-formdata",
+          "href": "https://xhr.spec.whatwg.org/#interface-formdata",
+          "title": "Interface FormData",
+          "number": "4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-formdata-getall",
+        "href": "https://xhr.spec.whatwg.org/#dom-formdata-getall",
+        "linkingText": [
+          "getAll(name)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "FormData"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-formdata",
+          "href": "https://xhr.spec.whatwg.org/#interface-formdata",
+          "title": "Interface FormData",
+          "number": "4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-formdata-has",
+        "href": "https://xhr.spec.whatwg.org/#dom-formdata-has",
+        "linkingText": [
+          "has(name)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "FormData"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-formdata",
+          "href": "https://xhr.spec.whatwg.org/#interface-formdata",
+          "title": "Interface FormData",
+          "number": "4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-formdata-set",
+        "href": "https://xhr.spec.whatwg.org/#dom-formdata-set",
+        "linkingText": [
+          "set(name, value)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "FormData"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-formdata",
+          "href": "https://xhr.spec.whatwg.org/#interface-formdata",
+          "title": "Interface FormData",
+          "number": "4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-formdata-set-blob",
+        "href": "https://xhr.spec.whatwg.org/#dom-formdata-set-blob",
+        "linkingText": [
+          "set(name, blobValue, filename)",
+          "set(name, blobValue)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "FormData"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-formdata",
+          "href": "https://xhr.spec.whatwg.org/#interface-formdata",
+          "title": "Interface FormData",
+          "number": "4"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

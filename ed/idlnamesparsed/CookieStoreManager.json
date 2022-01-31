@@ -1,0 +1,101 @@
+{
+  "name": "CookieStoreManager",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Cookie Store API",
+      "url": "https://wicg.github.io/cookie-store/"
+    },
+    "fragment": "[Exposed=(ServiceWorker,Window),\n SecureContext]\ninterface CookieStoreManager {\n  Promise<undefined> subscribe(sequence<CookieStoreGetOptions> subscriptions);\n  Promise<sequence<CookieStoreGetOptions>> getSubscriptions();\n  Promise<undefined> unsubscribe(sequence<CookieStoreGetOptions> subscriptions);\n};",
+    "href": "https://wicg.github.io/cookie-store/#cookiestoremanager"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://wicg.github.io/cookie-store/": [
+      {
+        "id": "cookiestoremanager",
+        "href": "https://wicg.github.io/cookie-store/#cookiestoremanager",
+        "linkingText": [
+          "CookieStoreManager"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "CookieStoreManager",
+          "href": "https://wicg.github.io/cookie-store/#CookieStoreManager",
+          "title": "The CookieStoreManager Interface",
+          "number": "4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-cookiestoremanager-subscribe",
+        "href": "https://wicg.github.io/cookie-store/#dom-cookiestoremanager-subscribe",
+        "linkingText": [
+          "subscribe(subscriptions)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CookieStoreManager"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "CookieStoreManager-subscribe",
+          "href": "https://wicg.github.io/cookie-store/#CookieStoreManager-subscribe",
+          "title": "The subscribe() method",
+          "number": "4.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-cookiestoremanager-getsubscriptions",
+        "href": "https://wicg.github.io/cookie-store/#dom-cookiestoremanager-getsubscriptions",
+        "linkingText": [
+          "getSubscriptions()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CookieStoreManager"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "CookieStoreManager-getSubscriptions",
+          "href": "https://wicg.github.io/cookie-store/#CookieStoreManager-getSubscriptions",
+          "title": "The getSubscriptions() method",
+          "number": "4.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-cookiestoremanager-unsubscribe",
+        "href": "https://wicg.github.io/cookie-store/#dom-cookiestoremanager-unsubscribe",
+        "linkingText": [
+          "unsubscribe(subscriptions)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CookieStoreManager"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "CookieStoreManager-unsubscribe",
+          "href": "https://wicg.github.io/cookie-store/#CookieStoreManager-unsubscribe",
+          "title": "The unsubscribe() method",
+          "number": "4.3"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

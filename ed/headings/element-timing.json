@@ -1,0 +1,197 @@
+{
+  "spec": {
+    "title": "Element Timing API",
+    "url": "https://wicg.github.io/element-timing/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://wicg.github.io/element-timing/#title",
+      "level": 1,
+      "title": "Element Timing API"
+    },
+    {
+      "id": "abstract",
+      "href": "https://wicg.github.io/element-timing/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "status",
+      "href": "https://wicg.github.io/element-timing/#status",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://wicg.github.io/element-timing/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "sec-intro",
+      "href": "https://wicg.github.io/element-timing/#sec-intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "sec-elements-exposed",
+      "href": "https://wicg.github.io/element-timing/#sec-elements-exposed",
+      "level": 3,
+      "title": "Elements exposed",
+      "number": "1.1"
+    },
+    {
+      "id": "sec-example",
+      "href": "https://wicg.github.io/element-timing/#sec-example",
+      "level": 3,
+      "title": "Usage example",
+      "number": "1.2"
+    },
+    {
+      "id": "sec-element-timing",
+      "href": "https://wicg.github.io/element-timing/#sec-element-timing",
+      "level": 2,
+      "title": "Element Timing",
+      "number": "2"
+    },
+    {
+      "id": "sec-performance-element-timing",
+      "href": "https://wicg.github.io/element-timing/#sec-performance-element-timing",
+      "level": 3,
+      "title": "PerformanceElementTiming interface",
+      "number": "2.1"
+    },
+    {
+      "id": "sec-processing-model",
+      "href": "https://wicg.github.io/element-timing/#sec-processing-model",
+      "level": 2,
+      "title": "Processing model",
+      "number": "3"
+    },
+    {
+      "id": "sec-modifications-DOM",
+      "href": "https://wicg.github.io/element-timing/#sec-modifications-DOM",
+      "level": 3,
+      "title": "Modifications to the DOM specification",
+      "number": "3.1"
+    },
+    {
+      "id": "sec-modifications-CSS",
+      "href": "https://wicg.github.io/element-timing/#sec-modifications-CSS",
+      "level": 3,
+      "title": "Modifications to the CSS specification",
+      "number": "3.2"
+    },
+    {
+      "id": "sec-modifications-HTML",
+      "href": "https://wicg.github.io/element-timing/#sec-modifications-HTML",
+      "level": 3,
+      "title": "Modifications to the HTML specification",
+      "number": "3.3"
+    },
+    {
+      "id": "sec-process-loaded-image",
+      "href": "https://wicg.github.io/element-timing/#sec-process-loaded-image",
+      "level": 3,
+      "title": "Process image that finished loading",
+      "number": "3.4"
+    },
+    {
+      "id": "sec-report-image-element",
+      "href": "https://wicg.github.io/element-timing/#sec-report-image-element",
+      "level": 3,
+      "title": "Report image Element Timing",
+      "number": "3.5"
+    },
+    {
+      "id": "sec-report-text",
+      "href": "https://wicg.github.io/element-timing/#sec-report-text",
+      "level": 3,
+      "title": "Report text Element Timing",
+      "number": "3.6"
+    },
+    {
+      "id": "sec-element-processing",
+      "href": "https://wicg.github.io/element-timing/#sec-element-processing",
+      "level": 3,
+      "title": "Element Timing processing",
+      "number": "3.7"
+    },
+    {
+      "id": "sec-get-an-element",
+      "href": "https://wicg.github.io/element-timing/#sec-get-an-element",
+      "level": 3,
+      "title": "Get an element algorithm",
+      "number": "3.8"
+    },
+    {
+      "id": "sec-security",
+      "href": "https://wicg.github.io/element-timing/#sec-security",
+      "level": 2,
+      "title": "Security & privacy considerations",
+      "number": "4"
+    },
+    {
+      "id": "w3c-conformance",
+      "href": "https://wicg.github.io/element-timing/#w3c-conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "w3c-conventions",
+      "href": "https://wicg.github.io/element-timing/#w3c-conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "w3c-conformant-algorithms",
+      "href": "https://wicg.github.io/element-timing/#w3c-conformant-algorithms",
+      "level": 3,
+      "title": "Conformant Algorithms"
+    },
+    {
+      "id": "index",
+      "href": "https://wicg.github.io/element-timing/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://wicg.github.io/element-timing/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://wicg.github.io/element-timing/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://wicg.github.io/element-timing/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://wicg.github.io/element-timing/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://wicg.github.io/element-timing/#informative",
+      "level": 3,
+      "title": "Informative References"
+    },
+    {
+      "id": "idl-index",
+      "href": "https://wicg.github.io/element-timing/#idl-index",
+      "level": 2,
+      "title": "IDL Index"
+    }
+  ]
+}

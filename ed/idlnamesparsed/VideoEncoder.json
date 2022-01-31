@@ -1,0 +1,229 @@
+{
+  "name": "VideoEncoder",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebCodecs",
+      "url": "https://www.w3.org/TR/webcodecs/"
+    },
+    "fragment": "[Exposed=(Window,DedicatedWorker), SecureContext]\ninterface VideoEncoder {\n  constructor(VideoEncoderInit init);\n\n  readonly attribute CodecState state;\n  readonly attribute long encodeQueueSize;\n\n  undefined configure(VideoEncoderConfig config);\n  undefined encode(VideoFrame frame, optional VideoEncoderEncodeOptions options = {});\n  Promise<undefined> flush();\n  undefined reset();\n  undefined close();\n\n  static Promise<VideoEncoderSupport> isConfigSupported(VideoEncoderConfig config);\n};",
+    "href": "https://w3c.github.io/webcodecs/#videoencoder"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webcodecs/": [
+      {
+        "id": "videoencoder",
+        "href": "https://w3c.github.io/webcodecs/#videoencoder",
+        "linkingText": [
+          "VideoEncoder"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "videoencoder-interface",
+          "href": "https://w3c.github.io/webcodecs/#videoencoder-interface",
+          "title": "VideoEncoder Interface",
+          "number": "6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-videoencoder-videoencoder",
+        "href": "https://w3c.github.io/webcodecs/#dom-videoencoder-videoencoder",
+        "linkingText": [
+          "VideoEncoder(init)",
+          "constructor(init)"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "VideoEncoder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "videoencoder-constructors",
+          "href": "https://w3c.github.io/webcodecs/#videoencoder-constructors",
+          "title": "Constructors",
+          "number": "6.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-videoencoder-state",
+        "href": "https://w3c.github.io/webcodecs/#dom-videoencoder-state",
+        "linkingText": [
+          "state"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "VideoEncoder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "videoencoder-attributes",
+          "href": "https://w3c.github.io/webcodecs/#videoencoder-attributes",
+          "title": "Attributes",
+          "number": "6.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-videoencoder-encodequeuesize",
+        "href": "https://w3c.github.io/webcodecs/#dom-videoencoder-encodequeuesize",
+        "linkingText": [
+          "encodeQueueSize"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "VideoEncoder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "videoencoder-attributes",
+          "href": "https://w3c.github.io/webcodecs/#videoencoder-attributes",
+          "title": "Attributes",
+          "number": "6.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-videoencoder-configure",
+        "href": "https://w3c.github.io/webcodecs/#dom-videoencoder-configure",
+        "linkingText": [
+          "configure(config)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "VideoEncoder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "videoencoder-methods",
+          "href": "https://w3c.github.io/webcodecs/#videoencoder-methods",
+          "title": "Methods",
+          "number": "6.4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-videoencoder-encode",
+        "href": "https://w3c.github.io/webcodecs/#dom-videoencoder-encode",
+        "linkingText": [
+          "encode(frame, options)",
+          "encode(frame)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "VideoEncoder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "videoencoder-methods",
+          "href": "https://w3c.github.io/webcodecs/#videoencoder-methods",
+          "title": "Methods",
+          "number": "6.4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-videoencoder-flush",
+        "href": "https://w3c.github.io/webcodecs/#dom-videoencoder-flush",
+        "linkingText": [
+          "flush()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "VideoEncoder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "videoencoder-methods",
+          "href": "https://w3c.github.io/webcodecs/#videoencoder-methods",
+          "title": "Methods",
+          "number": "6.4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-videoencoder-reset",
+        "href": "https://w3c.github.io/webcodecs/#dom-videoencoder-reset",
+        "linkingText": [
+          "reset()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "VideoEncoder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "videoencoder-methods",
+          "href": "https://w3c.github.io/webcodecs/#videoencoder-methods",
+          "title": "Methods",
+          "number": "6.4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-videoencoder-close",
+        "href": "https://w3c.github.io/webcodecs/#dom-videoencoder-close",
+        "linkingText": [
+          "close()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "VideoEncoder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "videoencoder-methods",
+          "href": "https://w3c.github.io/webcodecs/#videoencoder-methods",
+          "title": "Methods",
+          "number": "6.4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-videoencoder-isconfigsupported",
+        "href": "https://w3c.github.io/webcodecs/#dom-videoencoder-isconfigsupported",
+        "linkingText": [
+          "isConfigSupported(config)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "VideoEncoder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "videoencoder-methods",
+          "href": "https://w3c.github.io/webcodecs/#videoencoder-methods",
+          "title": "Methods",
+          "number": "6.4"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

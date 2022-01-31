@@ -1,0 +1,80 @@
+{
+  "name": "LockManagerSnapshot",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Web Locks API",
+      "url": "https://w3c.github.io/web-locks/"
+    },
+    "fragment": "dictionary LockManagerSnapshot {\n  sequence<LockInfo> held;\n  sequence<LockInfo> pending;\n};",
+    "href": "https://w3c.github.io/web-locks/#dictdef-lockmanagersnapshot"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://w3c.github.io/web-locks/": [
+      {
+        "id": "dictdef-lockmanagersnapshot",
+        "href": "https://w3c.github.io/web-locks/#dictdef-lockmanagersnapshot",
+        "linkingText": [
+          "LockManagerSnapshot"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-lock-manager",
+          "href": "https://w3c.github.io/web-locks/#api-lock-manager",
+          "title": "LockManager class",
+          "number": "3.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-lockmanagersnapshot-held",
+        "href": "https://w3c.github.io/web-locks/#dom-lockmanagersnapshot-held",
+        "linkingText": [
+          "held"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "LockManagerSnapshot"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-lock-manager",
+          "href": "https://w3c.github.io/web-locks/#api-lock-manager",
+          "title": "LockManager class",
+          "number": "3.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-lockmanagersnapshot-pending",
+        "href": "https://w3c.github.io/web-locks/#dom-lockmanagersnapshot-pending",
+        "linkingText": [
+          "pending"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "LockManagerSnapshot"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-lock-manager",
+          "href": "https://w3c.github.io/web-locks/#api-lock-manager",
+          "title": "LockManager class",
+          "number": "3.2"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

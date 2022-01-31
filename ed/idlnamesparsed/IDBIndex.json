@@ -1,0 +1,290 @@
+{
+  "name": "IDBIndex",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Indexed Database API 3.0",
+      "url": "https://www.w3.org/TR/IndexedDB-3/"
+    },
+    "fragment": "[Exposed=(Window,Worker)]\ninterface IDBIndex {\n  attribute DOMString name;\n  [SameObject] readonly attribute IDBObjectStore objectStore;\n  readonly attribute any keyPath;\n  readonly attribute boolean multiEntry;\n  readonly attribute boolean unique;\n\n  [NewObject] IDBRequest get(any query);\n  [NewObject] IDBRequest getKey(any query);\n  [NewObject] IDBRequest getAll(optional any query,\n                                optional [EnforceRange] unsigned long count);\n  [NewObject] IDBRequest getAllKeys(optional any query,\n                                    optional [EnforceRange] unsigned long count);\n  [NewObject] IDBRequest count(optional any query);\n\n  [NewObject] IDBRequest openCursor(optional any query,\n                                    optional IDBCursorDirection direction = \"next\");\n  [NewObject] IDBRequest openKeyCursor(optional any query,\n                                       optional IDBCursorDirection direction = \"next\");\n};",
+    "href": "https://w3c.github.io/IndexedDB/#idbindex"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/IndexedDB-3/": [
+      {
+        "id": "idbindex",
+        "href": "https://w3c.github.io/IndexedDB/#idbindex",
+        "linkingText": [
+          "IDBIndex"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "index-interface",
+          "href": "https://w3c.github.io/IndexedDB/#index-interface",
+          "title": "The IDBIndex interface",
+          "number": "4.6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-idbindex-name",
+        "href": "https://w3c.github.io/IndexedDB/#dom-idbindex-name",
+        "linkingText": [
+          "name"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "IDBIndex"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "index-interface",
+          "href": "https://w3c.github.io/IndexedDB/#index-interface",
+          "title": "The IDBIndex interface",
+          "number": "4.6"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-idbindex-objectstore",
+        "href": "https://w3c.github.io/IndexedDB/#dom-idbindex-objectstore",
+        "linkingText": [
+          "objectStore"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "IDBIndex"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "index-interface",
+          "href": "https://w3c.github.io/IndexedDB/#index-interface",
+          "title": "The IDBIndex interface",
+          "number": "4.6"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-idbindex-keypath",
+        "href": "https://w3c.github.io/IndexedDB/#dom-idbindex-keypath",
+        "linkingText": [
+          "keyPath"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "IDBIndex"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "index-interface",
+          "href": "https://w3c.github.io/IndexedDB/#index-interface",
+          "title": "The IDBIndex interface",
+          "number": "4.6"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-idbindex-multientry",
+        "href": "https://w3c.github.io/IndexedDB/#dom-idbindex-multientry",
+        "linkingText": [
+          "multiEntry"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "IDBIndex"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "title",
+          "href": "https://w3c.github.io/IndexedDB/#title",
+          "title": "Indexed Database API 3.0"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-idbindex-unique",
+        "href": "https://w3c.github.io/IndexedDB/#dom-idbindex-unique",
+        "linkingText": [
+          "unique"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "IDBIndex"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "title",
+          "href": "https://w3c.github.io/IndexedDB/#title",
+          "title": "Indexed Database API 3.0"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-idbindex-get",
+        "href": "https://w3c.github.io/IndexedDB/#dom-idbindex-get",
+        "linkingText": [
+          "get(query)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "IDBIndex"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "title",
+          "href": "https://w3c.github.io/IndexedDB/#title",
+          "title": "Indexed Database API 3.0"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-idbindex-getkey",
+        "href": "https://w3c.github.io/IndexedDB/#dom-idbindex-getkey",
+        "linkingText": [
+          "getKey(query)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "IDBIndex"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "title",
+          "href": "https://w3c.github.io/IndexedDB/#title",
+          "title": "Indexed Database API 3.0"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-idbindex-getall",
+        "href": "https://w3c.github.io/IndexedDB/#dom-idbindex-getall",
+        "linkingText": [
+          "getAll(query, count)",
+          "getAll(query)",
+          "getAll()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "IDBIndex"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "title",
+          "href": "https://w3c.github.io/IndexedDB/#title",
+          "title": "Indexed Database API 3.0"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-idbindex-getallkeys",
+        "href": "https://w3c.github.io/IndexedDB/#dom-idbindex-getallkeys",
+        "linkingText": [
+          "getAllKeys(query, count)",
+          "getAllKeys(query)",
+          "getAllKeys()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "IDBIndex"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "title",
+          "href": "https://w3c.github.io/IndexedDB/#title",
+          "title": "Indexed Database API 3.0"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-idbindex-count",
+        "href": "https://w3c.github.io/IndexedDB/#dom-idbindex-count",
+        "linkingText": [
+          "count(query)",
+          "count()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "IDBIndex"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "title",
+          "href": "https://w3c.github.io/IndexedDB/#title",
+          "title": "Indexed Database API 3.0"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-idbindex-opencursor",
+        "href": "https://w3c.github.io/IndexedDB/#dom-idbindex-opencursor",
+        "linkingText": [
+          "openCursor(query, direction)",
+          "openCursor(query)",
+          "openCursor()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "IDBIndex"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "title",
+          "href": "https://w3c.github.io/IndexedDB/#title",
+          "title": "Indexed Database API 3.0"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-idbindex-openkeycursor",
+        "href": "https://w3c.github.io/IndexedDB/#dom-idbindex-openkeycursor",
+        "linkingText": [
+          "openKeyCursor(query, direction)",
+          "openKeyCursor(query)",
+          "openKeyCursor()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "IDBIndex"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "title",
+          "href": "https://w3c.github.io/IndexedDB/#title",
+          "title": "Indexed Database API 3.0"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

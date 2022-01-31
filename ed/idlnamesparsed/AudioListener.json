@@ -1,0 +1,269 @@
+{
+  "name": "AudioListener",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Web Audio API",
+      "url": "https://www.w3.org/TR/webaudio/"
+    },
+    "fragment": "[Exposed=Window]\ninterface AudioListener {\n  readonly attribute AudioParam positionX;\n  readonly attribute AudioParam positionY;\n  readonly attribute AudioParam positionZ;\n  readonly attribute AudioParam forwardX;\n  readonly attribute AudioParam forwardY;\n  readonly attribute AudioParam forwardZ;\n  readonly attribute AudioParam upX;\n  readonly attribute AudioParam upY;\n  readonly attribute AudioParam upZ;\n  undefined setPosition (float x, float y, float z);\n  undefined setOrientation (float x, float y, float z, float xUp, float yUp, float zUp);\n};",
+    "href": "https://webaudio.github.io/web-audio-api/#audiolistener"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webaudio/": [
+      {
+        "id": "audiolistener",
+        "href": "https://webaudio.github.io/web-audio-api/#audiolistener",
+        "linkingText": [
+          "AudioListener"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "AudioListener",
+          "href": "https://webaudio.github.io/web-audio-api/#AudioListener",
+          "title": "The AudioListener Interface",
+          "number": "1.11"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-audiolistener-positionx",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-audiolistener-positionx",
+        "linkingText": [
+          "positionX"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "AudioListener"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "AudioListener-attributes",
+          "href": "https://webaudio.github.io/web-audio-api/#AudioListener-attributes",
+          "title": "Attributes",
+          "number": "1.11.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-audiolistener-positiony",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-audiolistener-positiony",
+        "linkingText": [
+          "positionY"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "AudioListener"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "AudioListener-attributes",
+          "href": "https://webaudio.github.io/web-audio-api/#AudioListener-attributes",
+          "title": "Attributes",
+          "number": "1.11.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-audiolistener-positionz",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-audiolistener-positionz",
+        "linkingText": [
+          "positionZ"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "AudioListener"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "AudioListener-attributes",
+          "href": "https://webaudio.github.io/web-audio-api/#AudioListener-attributes",
+          "title": "Attributes",
+          "number": "1.11.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-audiolistener-forwardx",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-audiolistener-forwardx",
+        "linkingText": [
+          "forwardX"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "AudioListener"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "AudioListener-attributes",
+          "href": "https://webaudio.github.io/web-audio-api/#AudioListener-attributes",
+          "title": "Attributes",
+          "number": "1.11.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-audiolistener-forwardy",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-audiolistener-forwardy",
+        "linkingText": [
+          "forwardY"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "AudioListener"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "AudioListener-attributes",
+          "href": "https://webaudio.github.io/web-audio-api/#AudioListener-attributes",
+          "title": "Attributes",
+          "number": "1.11.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-audiolistener-forwardz",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-audiolistener-forwardz",
+        "linkingText": [
+          "forwardZ"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "AudioListener"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "AudioListener-attributes",
+          "href": "https://webaudio.github.io/web-audio-api/#AudioListener-attributes",
+          "title": "Attributes",
+          "number": "1.11.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-audiolistener-upx",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-audiolistener-upx",
+        "linkingText": [
+          "upX"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "AudioListener"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "AudioListener-attributes",
+          "href": "https://webaudio.github.io/web-audio-api/#AudioListener-attributes",
+          "title": "Attributes",
+          "number": "1.11.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-audiolistener-upy",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-audiolistener-upy",
+        "linkingText": [
+          "upY"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "AudioListener"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "AudioListener-attributes",
+          "href": "https://webaudio.github.io/web-audio-api/#AudioListener-attributes",
+          "title": "Attributes",
+          "number": "1.11.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-audiolistener-upz",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-audiolistener-upz",
+        "linkingText": [
+          "upZ"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "AudioListener"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "AudioListener-attributes",
+          "href": "https://webaudio.github.io/web-audio-api/#AudioListener-attributes",
+          "title": "Attributes",
+          "number": "1.11.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-audiolistener-setposition",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-audiolistener-setposition",
+        "linkingText": [
+          "setPosition(x, y, z)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "AudioListener"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "AudioListener-methods",
+          "href": "https://webaudio.github.io/web-audio-api/#AudioListener-methods",
+          "title": "Methods",
+          "number": "1.11.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-audiolistener-setorientation",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-audiolistener-setorientation",
+        "linkingText": [
+          "setOrientation(x, y, z, xUp, yUp, zUp)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "AudioListener"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "AudioListener-methods",
+          "href": "https://webaudio.github.io/web-audio-api/#AudioListener-methods",
+          "title": "Methods",
+          "number": "1.11.2"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

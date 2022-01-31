@@ -1,0 +1,122 @@
+{
+  "name": "CanvasState",
+  "type": "interface mixin",
+  "defined": {
+    "spec": {
+      "title": "HTML Standard",
+      "url": "https://html.spec.whatwg.org/multipage/"
+    },
+    "fragment": "interface mixin CanvasState {\n  // state\n  undefined save(); // push state on state stack\n  undefined restore(); // pop state stack and restore state\n  undefined reset(); // reset the rendering context to its default state\n  boolean isContextLost(); // return whether context is lost\n};",
+    "href": "https://html.spec.whatwg.org/multipage/canvas.html#canvasstate"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://html.spec.whatwg.org/multipage/": [
+      {
+        "id": "canvasstate",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#canvasstate",
+        "linkingText": [
+          "CanvasState"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "2dcontext",
+          "href": "https://html.spec.whatwg.org/multipage/canvas.html#2dcontext",
+          "title": "The 2D rendering context",
+          "number": "4.12.5.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-context-2d-save",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-save",
+        "linkingText": [
+          "save()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CanvasState"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-canvas-state",
+          "href": "https://html.spec.whatwg.org/multipage/canvas.html#the-canvas-state",
+          "title": "The canvas state",
+          "number": "4.12.5.1.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-context-2d-restore",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-restore",
+        "linkingText": [
+          "restore()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CanvasState"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-canvas-state",
+          "href": "https://html.spec.whatwg.org/multipage/canvas.html#the-canvas-state",
+          "title": "The canvas state",
+          "number": "4.12.5.1.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-context-2d-reset",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-reset",
+        "linkingText": [
+          "reset()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CanvasState"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-canvas-state",
+          "href": "https://html.spec.whatwg.org/multipage/canvas.html#the-canvas-state",
+          "title": "The canvas state",
+          "number": "4.12.5.1.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-context-2d-iscontextlost",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-iscontextlost",
+        "linkingText": [
+          "isContextLost()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CanvasState"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-canvas-state",
+          "href": "https://html.spec.whatwg.org/multipage/canvas.html#the-canvas-state",
+          "title": "The canvas state",
+          "number": "4.12.5.1.2"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

@@ -1,0 +1,617 @@
+{
+  "name": "ServiceWorkerRegistration",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Service Workers Nightly",
+      "url": "https://www.w3.org/TR/service-workers-1/"
+    },
+    "fragment": "[SecureContext, Exposed=(Window,Worker)]\ninterface ServiceWorkerRegistration : EventTarget {\n  readonly attribute ServiceWorker? installing;\n  readonly attribute ServiceWorker? waiting;\n  readonly attribute ServiceWorker? active;\n  [SameObject] readonly attribute NavigationPreloadManager navigationPreload;\n\n  readonly attribute USVString scope;\n  readonly attribute ServiceWorkerUpdateViaCache updateViaCache;\n\n  [NewObject] Promise<undefined> update();\n  [NewObject] Promise<boolean> unregister();\n\n  // event\n  attribute EventHandler onupdatefound;\n};",
+    "href": "https://w3c.github.io/ServiceWorker/#serviceworkerregistration"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "Notifications API Standard",
+        "url": "https://notifications.spec.whatwg.org/"
+      },
+      "fragment": "partial interface ServiceWorkerRegistration {\n  Promise<undefined> showNotification(DOMString title, optional NotificationOptions options = {});\n  Promise<sequence<Notification>> getNotifications(optional GetNotificationOptions filter = {});\n};"
+    },
+    {
+      "spec": {
+        "title": "Background Fetch",
+        "url": "https://wicg.github.io/background-fetch/"
+      },
+      "fragment": "partial interface ServiceWorkerRegistration {\n  readonly attribute BackgroundFetchManager backgroundFetch;\n};"
+    },
+    {
+      "spec": {
+        "title": "Web Background Synchronization",
+        "url": "https://wicg.github.io/background-sync/spec/"
+      },
+      "fragment": "partial interface ServiceWorkerRegistration {\n  readonly attribute SyncManager sync;\n};"
+    },
+    {
+      "spec": {
+        "title": "Content Index",
+        "url": "https://wicg.github.io/content-index/spec/"
+      },
+      "fragment": "partial interface ServiceWorkerRegistration {\n  [SameObject] readonly attribute ContentIndex index;\n};"
+    },
+    {
+      "spec": {
+        "title": "Cookie Store API",
+        "url": "https://wicg.github.io/cookie-store/"
+      },
+      "fragment": "[Exposed=(ServiceWorker,Window)]\npartial interface ServiceWorkerRegistration {\n  [SameObject] readonly attribute CookieStoreManager cookies;\n};"
+    },
+    {
+      "spec": {
+        "title": "Web Periodic Background Synchronization",
+        "url": "https://wicg.github.io/periodic-background-sync/"
+      },
+      "fragment": "[Exposed=(Window,Worker)]\npartial interface ServiceWorkerRegistration {\n  readonly attribute PeriodicSyncManager periodicSync;\n};"
+    },
+    {
+      "spec": {
+        "title": "Payment Handler API",
+        "url": "https://www.w3.org/TR/payment-handler/"
+      },
+      "fragment": "partial interface ServiceWorkerRegistration {\n  [SameObject] readonly attribute PaymentManager paymentManager;\n};"
+    },
+    {
+      "spec": {
+        "title": "Push API",
+        "url": "https://www.w3.org/TR/push-api/"
+      },
+      "fragment": "[SecureContext]\npartial interface ServiceWorkerRegistration {\n  readonly attribute PushManager pushManager;\n};"
+    }
+  ],
+  "inheritance": {
+    "name": "EventTarget",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=*]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+      "href": "https://dom.spec.whatwg.org/#eventtarget"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/service-workers-1/": [
+      {
+        "id": "serviceworkerregistration",
+        "href": "https://w3c.github.io/ServiceWorker/#serviceworkerregistration",
+        "linkingText": [
+          "ServiceWorkerRegistration"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "serviceworkerregistration-interface",
+          "href": "https://w3c.github.io/ServiceWorker/#serviceworkerregistration-interface",
+          "title": "ServiceWorkerRegistration",
+          "number": "3.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-serviceworkerregistration-installing",
+        "href": "https://w3c.github.io/ServiceWorker/#dom-serviceworkerregistration-installing",
+        "linkingText": [
+          "installing"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "ServiceWorkerRegistration"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "navigator-service-worker-installing",
+          "href": "https://w3c.github.io/ServiceWorker/#navigator-service-worker-installing",
+          "title": "installing",
+          "number": "3.2.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-serviceworkerregistration-waiting",
+        "href": "https://w3c.github.io/ServiceWorker/#dom-serviceworkerregistration-waiting",
+        "linkingText": [
+          "waiting"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "ServiceWorkerRegistration"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "navigator-service-worker-waiting",
+          "href": "https://w3c.github.io/ServiceWorker/#navigator-service-worker-waiting",
+          "title": "waiting",
+          "number": "3.2.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-serviceworkerregistration-active",
+        "href": "https://w3c.github.io/ServiceWorker/#dom-serviceworkerregistration-active",
+        "linkingText": [
+          "active"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "ServiceWorkerRegistration"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "navigator-service-worker-active",
+          "href": "https://w3c.github.io/ServiceWorker/#navigator-service-worker-active",
+          "title": "active",
+          "number": "3.2.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-serviceworkerregistration-navigationpreload",
+        "href": "https://w3c.github.io/ServiceWorker/#dom-serviceworkerregistration-navigationpreload",
+        "linkingText": [
+          "navigationPreload"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "ServiceWorkerRegistration"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "service-worker-registration-navigationpreload",
+          "href": "https://w3c.github.io/ServiceWorker/#service-worker-registration-navigationpreload",
+          "title": "navigationPreload",
+          "number": "3.2.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-serviceworkerregistration-scope",
+        "href": "https://w3c.github.io/ServiceWorker/#dom-serviceworkerregistration-scope",
+        "linkingText": [
+          "scope"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "ServiceWorkerRegistration"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "service-worker-registration-scope",
+          "href": "https://w3c.github.io/ServiceWorker/#service-worker-registration-scope",
+          "title": "scope",
+          "number": "3.2.6"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-serviceworkerregistration-updateviacache",
+        "href": "https://w3c.github.io/ServiceWorker/#dom-serviceworkerregistration-updateviacache",
+        "linkingText": [
+          "updateViaCache"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "ServiceWorkerRegistration"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "service-worker-registration-updateviacache",
+          "href": "https://w3c.github.io/ServiceWorker/#service-worker-registration-updateviacache",
+          "title": "updateViaCache",
+          "number": "3.2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-serviceworkerregistration-update",
+        "href": "https://w3c.github.io/ServiceWorker/#dom-serviceworkerregistration-update",
+        "linkingText": [
+          "update()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "ServiceWorkerRegistration"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "service-worker-registration-update",
+          "href": "https://w3c.github.io/ServiceWorker/#service-worker-registration-update",
+          "title": "update()",
+          "number": "3.2.8"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-serviceworkerregistration-unregister",
+        "href": "https://w3c.github.io/ServiceWorker/#dom-serviceworkerregistration-unregister",
+        "linkingText": [
+          "unregister()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "ServiceWorkerRegistration"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "navigator-service-worker-unregister",
+          "href": "https://w3c.github.io/ServiceWorker/#navigator-service-worker-unregister",
+          "title": "unregister()",
+          "number": "3.2.9"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-serviceworkerregistration-onupdatefound",
+        "href": "https://w3c.github.io/ServiceWorker/#dom-serviceworkerregistration-onupdatefound",
+        "linkingText": [
+          "onupdatefound"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "ServiceWorkerRegistration"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "service-worker-registration-event-handler",
+          "href": "https://w3c.github.io/ServiceWorker/#service-worker-registration-event-handler",
+          "title": "Event handler",
+          "number": "3.2.10"
+        },
+        "definedIn": "table"
+      }
+    ],
+    "https://notifications.spec.whatwg.org/": [
+      {
+        "id": "dom-serviceworkerregistration-shownotification",
+        "href": "https://notifications.spec.whatwg.org/#dom-serviceworkerregistration-shownotification",
+        "linkingText": [
+          "showNotification(title, options)",
+          "showNotification(title)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "ServiceWorkerRegistration"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "service-worker-api",
+          "href": "https://notifications.spec.whatwg.org/#service-worker-api",
+          "title": "Service worker API",
+          "number": "4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-serviceworkerregistration-getnotifications",
+        "href": "https://notifications.spec.whatwg.org/#dom-serviceworkerregistration-getnotifications",
+        "linkingText": [
+          "getNotifications(filter)",
+          "getNotifications()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "ServiceWorkerRegistration"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "service-worker-api",
+          "href": "https://notifications.spec.whatwg.org/#service-worker-api",
+          "title": "Service worker API",
+          "number": "4"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://wicg.github.io/background-fetch/": [
+      {
+        "id": "dom-serviceworkerregistration-backgroundfetch",
+        "href": "https://wicg.github.io/background-fetch/#dom-serviceworkerregistration-backgroundfetch",
+        "linkingText": [
+          "backgroundFetch"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "ServiceWorkerRegistration"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "extensions-to-service-worker-registration",
+          "href": "https://wicg.github.io/background-fetch/#extensions-to-service-worker-registration",
+          "title": "Extensions to ServiceWorkerRegistration",
+          "number": "6.2"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://wicg.github.io/background-sync/spec/": [
+      {
+        "id": "dom-serviceworkerregistration-sync",
+        "href": "https://wicg.github.io/background-sync/spec/#dom-serviceworkerregistration-sync",
+        "linkingText": [
+          "sync"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "ServiceWorkerRegistration"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "service-worker-registration-extensions",
+          "href": "https://wicg.github.io/background-sync/spec/#service-worker-registration-extensions",
+          "title": "Extensions to the ServiceWorkerRegistration interface",
+          "number": "6.1"
+        },
+        "definedIn": "pre"
+      }
+    ],
+    "https://wicg.github.io/content-index/spec/": [
+      {
+        "id": "dom-serviceworkerregistration-index",
+        "href": "https://wicg.github.io/content-index/spec/#dom-serviceworkerregistration-index",
+        "linkingText": [
+          "index"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "ServiceWorkerRegistration"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "extensions-to-service-worker-registration",
+          "href": "https://wicg.github.io/content-index/spec/#extensions-to-service-worker-registration",
+          "title": "Extensions to ServiceWorkerRegistration",
+          "number": "5.2"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://wicg.github.io/cookie-store/": [
+      {
+        "id": "dom-serviceworkerregistration-cookies",
+        "href": "https://wicg.github.io/cookie-store/#dom-serviceworkerregistration-cookies",
+        "linkingText": [
+          "cookies"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "ServiceWorkerRegistration"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "ServiceWorkerRegistration",
+          "href": "https://wicg.github.io/cookie-store/#ServiceWorkerRegistration",
+          "title": "The ServiceWorkerRegistration interface",
+          "number": "4.4"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://wicg.github.io/periodic-background-sync/": [
+      {
+        "id": "dom-serviceworkerregistration-periodicsync",
+        "href": "https://wicg.github.io/periodic-background-sync/#dom-serviceworkerregistration-periodicsync",
+        "linkingText": [
+          "periodicSync"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "ServiceWorkerRegistration"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "extensions-to-serviceworkerregistration",
+          "href": "https://wicg.github.io/periodic-background-sync/#extensions-to-serviceworkerregistration",
+          "title": "Extensions to the ServiceWorkerRegistration interface",
+          "number": "8.2"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://www.w3.org/TR/payment-handler/": [
+      {
+        "id": "dom-serviceworkerregistration-paymentmanager",
+        "href": "https://w3c.github.io/payment-handler/#dom-serviceworkerregistration-paymentmanager",
+        "linkingText": [
+          "paymentManager"
+        ],
+        "localLinkingText": [
+          "ServiceWorkerRegistration.paymentManager"
+        ],
+        "type": "attribute",
+        "for": [
+          "ServiceWorkerRegistration"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "extension-to-the-serviceworkerregistration-interface",
+          "href": "https://w3c.github.io/payment-handler/#extension-to-the-serviceworkerregistration-interface",
+          "title": "Extension to the ServiceWorkerRegistration interface",
+          "number": "3.1"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://www.w3.org/TR/push-api/": [
+      {
+        "id": "dom-serviceworkerregistration-pushmanager",
+        "href": "https://w3c.github.io/push-api/#dom-serviceworkerregistration-pushmanager",
+        "linkingText": [
+          "pushManager"
+        ],
+        "localLinkingText": [
+          "ServiceWorkerRegistration.pushManager"
+        ],
+        "type": "attribute",
+        "for": [
+          "ServiceWorkerRegistration"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "extensions-to-the-serviceworkerregistration-interface",
+          "href": "https://w3c.github.io/push-api/#extensions-to-the-serviceworkerregistration-interface",
+          "title": "Extensions to the ServiceWorkerRegistration Interface",
+          "number": "6"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "eventtarget",
+        "href": "https://dom.spec.whatwg.org/#eventtarget",
+        "linkingText": [
+          "EventTarget"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventtarget-eventtarget",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-eventtarget",
+        "linkingText": [
+          "EventTarget()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-addeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-addeventlistener",
+        "linkingText": [
+          "addEventListener(type, callback, options)",
+          "addEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-removeeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-removeeventlistener",
+        "linkingText": [
+          "removeEventListener(type, callback, options)",
+          "removeEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-dispatchevent",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-dispatchevent",
+        "linkingText": [
+          "dispatchEvent(event)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

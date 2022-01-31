@@ -1,0 +1,269 @@
+{
+  "name": "TreeWalker",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "DOM Standard",
+      "url": "https://dom.spec.whatwg.org/"
+    },
+    "fragment": "[Exposed=Window]\ninterface TreeWalker {\n  [SameObject] readonly attribute Node root;\n  readonly attribute unsigned long whatToShow;\n  readonly attribute NodeFilter? filter;\n           attribute Node currentNode;\n\n  Node? parentNode();\n  Node? firstChild();\n  Node? lastChild();\n  Node? previousSibling();\n  Node? nextSibling();\n  Node? previousNode();\n  Node? nextNode();\n};",
+    "href": "https://dom.spec.whatwg.org/#treewalker"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "treewalker",
+        "href": "https://dom.spec.whatwg.org/#treewalker",
+        "linkingText": [
+          "TreeWalker"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-treewalker",
+          "href": "https://dom.spec.whatwg.org/#interface-treewalker",
+          "title": "Interface TreeWalker",
+          "number": "6.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-treewalker-root",
+        "href": "https://dom.spec.whatwg.org/#dom-treewalker-root",
+        "linkingText": [
+          "root"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "TreeWalker"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-treewalker",
+          "href": "https://dom.spec.whatwg.org/#interface-treewalker",
+          "title": "Interface TreeWalker",
+          "number": "6.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-treewalker-whattoshow",
+        "href": "https://dom.spec.whatwg.org/#dom-treewalker-whattoshow",
+        "linkingText": [
+          "whatToShow"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "TreeWalker"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-treewalker",
+          "href": "https://dom.spec.whatwg.org/#interface-treewalker",
+          "title": "Interface TreeWalker",
+          "number": "6.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-treewalker-filter",
+        "href": "https://dom.spec.whatwg.org/#dom-treewalker-filter",
+        "linkingText": [
+          "filter"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "TreeWalker"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-treewalker",
+          "href": "https://dom.spec.whatwg.org/#interface-treewalker",
+          "title": "Interface TreeWalker",
+          "number": "6.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-treewalker-currentnode",
+        "href": "https://dom.spec.whatwg.org/#dom-treewalker-currentnode",
+        "linkingText": [
+          "currentNode"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "TreeWalker"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-treewalker",
+          "href": "https://dom.spec.whatwg.org/#interface-treewalker",
+          "title": "Interface TreeWalker",
+          "number": "6.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-treewalker-parentnode",
+        "href": "https://dom.spec.whatwg.org/#dom-treewalker-parentnode",
+        "linkingText": [
+          "parentNode()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "TreeWalker"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-treewalker",
+          "href": "https://dom.spec.whatwg.org/#interface-treewalker",
+          "title": "Interface TreeWalker",
+          "number": "6.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-treewalker-firstchild",
+        "href": "https://dom.spec.whatwg.org/#dom-treewalker-firstchild",
+        "linkingText": [
+          "firstChild()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "TreeWalker"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-treewalker",
+          "href": "https://dom.spec.whatwg.org/#interface-treewalker",
+          "title": "Interface TreeWalker",
+          "number": "6.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-treewalker-lastchild",
+        "href": "https://dom.spec.whatwg.org/#dom-treewalker-lastchild",
+        "linkingText": [
+          "lastChild()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "TreeWalker"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-treewalker",
+          "href": "https://dom.spec.whatwg.org/#interface-treewalker",
+          "title": "Interface TreeWalker",
+          "number": "6.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-treewalker-previoussibling",
+        "href": "https://dom.spec.whatwg.org/#dom-treewalker-previoussibling",
+        "linkingText": [
+          "previousSibling()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "TreeWalker"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-treewalker",
+          "href": "https://dom.spec.whatwg.org/#interface-treewalker",
+          "title": "Interface TreeWalker",
+          "number": "6.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-treewalker-nextsibling",
+        "href": "https://dom.spec.whatwg.org/#dom-treewalker-nextsibling",
+        "linkingText": [
+          "nextSibling()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "TreeWalker"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-treewalker",
+          "href": "https://dom.spec.whatwg.org/#interface-treewalker",
+          "title": "Interface TreeWalker",
+          "number": "6.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-treewalker-previousnode",
+        "href": "https://dom.spec.whatwg.org/#dom-treewalker-previousnode",
+        "linkingText": [
+          "previousNode()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "TreeWalker"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-treewalker",
+          "href": "https://dom.spec.whatwg.org/#interface-treewalker",
+          "title": "Interface TreeWalker",
+          "number": "6.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-treewalker-nextnode",
+        "href": "https://dom.spec.whatwg.org/#dom-treewalker-nextnode",
+        "linkingText": [
+          "nextNode()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "TreeWalker"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-treewalker",
+          "href": "https://dom.spec.whatwg.org/#interface-treewalker",
+          "title": "Interface TreeWalker",
+          "number": "6.2"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

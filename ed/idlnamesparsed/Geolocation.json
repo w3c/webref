@@ -1,0 +1,120 @@
+{
+  "name": "Geolocation",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Geolocation API",
+      "url": "https://www.w3.org/TR/geolocation/"
+    },
+    "fragment": "[Exposed=Window]\ninterface Geolocation {\n  undefined getCurrentPosition (\n    PositionCallback successCallback,\n    optional PositionErrorCallback? errorCallback = null,\n    optional PositionOptions options = {}\n  );\n\n  long watchPosition (\n    PositionCallback successCallback,\n    optional PositionErrorCallback? errorCallback = null,\n    optional PositionOptions options = {}\n  );\n\n  undefined clearWatch (long watchId);\n};",
+    "href": "https://w3c.github.io/geolocation-api/#dom-geolocation"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/geolocation/": [
+      {
+        "id": "dom-geolocation",
+        "href": "https://w3c.github.io/geolocation-api/#dom-geolocation",
+        "linkingText": [
+          "Geolocation"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "geolocation_interface",
+          "href": "https://w3c.github.io/geolocation-api/#geolocation_interface",
+          "title": "Geolocation interface and callbacks",
+          "number": "6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-geolocation-getcurrentposition",
+        "href": "https://w3c.github.io/geolocation-api/#dom-geolocation-getcurrentposition",
+        "linkingText": [
+          "getCurrentPosition()",
+          "getCurrentPosition(successCallback)",
+          "getCurrentPosition(successCallback, errorCallback)",
+          "getCurrentPosition(successCallback, errorCallback, options)"
+        ],
+        "localLinkingText": [
+          "Geolocation.getCurrentPosition",
+          "Geolocation.getCurrentPosition()",
+          "getCurrentPosition"
+        ],
+        "type": "method",
+        "for": [
+          "Geolocation"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "getcurrentposition-method",
+          "href": "https://w3c.github.io/geolocation-api/#getcurrentposition-method",
+          "title": "getCurrentPosition() method",
+          "number": "6.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-geolocation-watchposition",
+        "href": "https://w3c.github.io/geolocation-api/#dom-geolocation-watchposition",
+        "linkingText": [
+          "watchPosition()",
+          "watchPosition(successCallback)",
+          "watchPosition(successCallback, errorCallback)",
+          "watchPosition(successCallback, errorCallback, options)"
+        ],
+        "localLinkingText": [
+          "Geolocation.watchPosition",
+          "Geolocation.watchPosition()",
+          "watchPosition"
+        ],
+        "type": "method",
+        "for": [
+          "Geolocation"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "watchposition-method",
+          "href": "https://w3c.github.io/geolocation-api/#watchposition-method",
+          "title": "watchPosition() method",
+          "number": "6.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-geolocation-clearwatch",
+        "href": "https://w3c.github.io/geolocation-api/#dom-geolocation-clearwatch",
+        "linkingText": [
+          "clearWatch()",
+          "clearWatch(watchId)"
+        ],
+        "localLinkingText": [
+          "Geolocation.clearWatch",
+          "Geolocation.clearWatch()",
+          "clearWatch"
+        ],
+        "type": "method",
+        "for": [
+          "Geolocation"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "clearwatch-method",
+          "href": "https://w3c.github.io/geolocation-api/#clearwatch-method",
+          "title": "clearWatch() method",
+          "number": "6.4"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

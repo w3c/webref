@@ -1,0 +1,6 @@
+// Source: MediaStreamTrack Insertable Media Processing using Streams (https://w3c.github.io/mediacapture-transform/)
+[Exposed=DedicatedWorker]
+interface MediaStreamTrackProcessor {
+    constructor(MediaStreamTrackProcessorInit init);
+    attribute ReadableStream readable;
+};

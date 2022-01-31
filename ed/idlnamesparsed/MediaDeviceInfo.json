@@ -1,0 +1,126 @@
+{
+  "name": "MediaDeviceInfo",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Media Capture and Streams",
+      "url": "https://www.w3.org/TR/mediacapture-streams/"
+    },
+    "fragment": "[Exposed=Window, SecureContext]\ninterface MediaDeviceInfo {\n  readonly attribute DOMString deviceId;\n  readonly attribute MediaDeviceKind kind;\n  readonly attribute DOMString label;\n  readonly attribute DOMString groupId;\n  [Default] object toJSON();\n};",
+    "href": "https://w3c.github.io/mediacapture-main/#dom-mediadeviceinfo"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/mediacapture-streams/": [
+      {
+        "id": "dom-mediadeviceinfo",
+        "href": "https://w3c.github.io/mediacapture-main/#dom-mediadeviceinfo",
+        "linkingText": [
+          "MediaDeviceInfo"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "access-control-model",
+          "href": "https://w3c.github.io/mediacapture-main/#access-control-model",
+          "title": "Access control model",
+          "number": "9.2.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-mediadeviceinfo-deviceid",
+        "href": "https://w3c.github.io/mediacapture-main/#dom-mediadeviceinfo-deviceid",
+        "linkingText": [
+          "deviceId"
+        ],
+        "localLinkingText": [
+          "MediaDeviceInfo.deviceId"
+        ],
+        "type": "attribute",
+        "for": [
+          "MediaDeviceInfo"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-5",
+          "href": "https://w3c.github.io/mediacapture-main/#attributes-5",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediadeviceinfo-kind",
+        "href": "https://w3c.github.io/mediacapture-main/#dom-mediadeviceinfo-kind",
+        "linkingText": [
+          "kind"
+        ],
+        "localLinkingText": [
+          "MediaDeviceInfo.kind"
+        ],
+        "type": "attribute",
+        "for": [
+          "MediaDeviceInfo"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-5",
+          "href": "https://w3c.github.io/mediacapture-main/#attributes-5",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediadeviceinfo-label",
+        "href": "https://w3c.github.io/mediacapture-main/#dom-mediadeviceinfo-label",
+        "linkingText": [
+          "label"
+        ],
+        "localLinkingText": [
+          "MediaDeviceInfo.label"
+        ],
+        "type": "attribute",
+        "for": [
+          "MediaDeviceInfo"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-5",
+          "href": "https://w3c.github.io/mediacapture-main/#attributes-5",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediadeviceinfo-groupid",
+        "href": "https://w3c.github.io/mediacapture-main/#dom-mediadeviceinfo-groupid",
+        "linkingText": [
+          "groupId"
+        ],
+        "localLinkingText": [
+          "MediaDeviceInfo.groupId"
+        ],
+        "type": "attribute",
+        "for": [
+          "MediaDeviceInfo"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-5",
+          "href": "https://w3c.github.io/mediacapture-main/#attributes-5",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

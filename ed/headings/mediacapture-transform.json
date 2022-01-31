@@ -1,0 +1,267 @@
+{
+  "spec": {
+    "title": "MediaStreamTrack Insertable Media Processing using Streams",
+    "url": "https://w3c.github.io/mediacapture-transform/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://w3c.github.io/mediacapture-transform/#title",
+      "level": 1,
+      "title": "MediaStreamTrack Insertable Media Processing using Streams"
+    },
+    {
+      "id": "abstract",
+      "href": "https://w3c.github.io/mediacapture-transform/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "sotd",
+      "href": "https://w3c.github.io/mediacapture-transform/#sotd",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://w3c.github.io/mediacapture-transform/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "introduction",
+      "href": "https://w3c.github.io/mediacapture-transform/#introduction",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "specification",
+      "href": "https://w3c.github.io/mediacapture-transform/#specification",
+      "level": 2,
+      "title": "Specification",
+      "number": "2"
+    },
+    {
+      "id": "track-processor",
+      "href": "https://w3c.github.io/mediacapture-transform/#track-processor",
+      "level": 3,
+      "title": "MediaStreamTrackProcessor",
+      "number": "2.1"
+    },
+    {
+      "id": "track-processor-interface",
+      "href": "https://w3c.github.io/mediacapture-transform/#track-processor-interface",
+      "level": 4,
+      "title": "Interface definition",
+      "number": "2.1.1"
+    },
+    {
+      "id": "internal-slots-processor",
+      "href": "https://w3c.github.io/mediacapture-transform/#internal-slots-processor",
+      "level": 4,
+      "title": "Internal slots",
+      "number": "2.1.2"
+    },
+    {
+      "id": "constructor-processor",
+      "href": "https://w3c.github.io/mediacapture-transform/#constructor-processor",
+      "level": 4,
+      "title": "Constructor",
+      "number": "2.1.3"
+    },
+    {
+      "id": "attributes-processor",
+      "href": "https://w3c.github.io/mediacapture-transform/#attributes-processor",
+      "level": 4,
+      "title": "Attributes",
+      "number": "2.1.4"
+    },
+    {
+      "id": "processor-handling-interaction-with-track",
+      "href": "https://w3c.github.io/mediacapture-transform/#processor-handling-interaction-with-track",
+      "level": 4,
+      "title": "Handling interaction with the track",
+      "number": "2.1.5"
+    },
+    {
+      "id": "video-track-generator",
+      "href": "https://w3c.github.io/mediacapture-transform/#video-track-generator",
+      "level": 3,
+      "title": "VideoTrackGenerator",
+      "number": "2.2"
+    },
+    {
+      "id": "video-generator-interface",
+      "href": "https://w3c.github.io/mediacapture-transform/#video-generator-interface",
+      "level": 4,
+      "title": "Interface definition",
+      "number": "2.2.1"
+    },
+    {
+      "id": "internal-slots",
+      "href": "https://w3c.github.io/mediacapture-transform/#internal-slots",
+      "level": 4,
+      "title": "Internal slots",
+      "number": "2.2.2"
+    },
+    {
+      "id": "video-generator-constructor",
+      "href": "https://w3c.github.io/mediacapture-transform/#video-generator-constructor",
+      "level": 4,
+      "title": "Constructor",
+      "number": "2.2.3"
+    },
+    {
+      "id": "video-generator-attributes",
+      "href": "https://w3c.github.io/mediacapture-transform/#video-generator-attributes",
+      "level": 4,
+      "title": "Attributes",
+      "number": "2.2.4"
+    },
+    {
+      "id": "video-generator-as-track",
+      "href": "https://w3c.github.io/mediacapture-transform/#video-generator-as-track",
+      "level": 4,
+      "title": "Specialization of MediaStreamTrack behavior",
+      "number": "2.2.5"
+    },
+    {
+      "id": "video-generator-stop",
+      "href": "https://w3c.github.io/mediacapture-transform/#video-generator-stop",
+      "level": 5,
+      "title": "stop",
+      "number": "2.2.5.1"
+    },
+    {
+      "id": "generator-constrainable-properties",
+      "href": "https://w3c.github.io/mediacapture-transform/#generator-constrainable-properties",
+      "level": 5,
+      "title": "Constrainable properties",
+      "number": "2.2.5.2"
+    },
+    {
+      "id": "generator-events-attributes",
+      "href": "https://w3c.github.io/mediacapture-transform/#generator-events-attributes",
+      "level": 5,
+      "title": "Events and attributes",
+      "number": "2.2.5.3"
+    },
+    {
+      "id": "examples",
+      "href": "https://w3c.github.io/mediacapture-transform/#examples",
+      "level": 2,
+      "title": "Examples",
+      "number": "3"
+    },
+    {
+      "id": "video-processing",
+      "href": "https://w3c.github.io/mediacapture-transform/#video-processing",
+      "level": 3,
+      "title": "Video Processing",
+      "number": "3.1"
+    },
+    {
+      "id": "multi-consumer-constraints",
+      "href": "https://w3c.github.io/mediacapture-transform/#multi-consumer-constraints",
+      "level": 3,
+      "title": "Multi-consumer post-processing with constraints",
+      "number": "3.2"
+    },
+    {
+      "id": "multi-consumer-worker",
+      "href": "https://w3c.github.io/mediacapture-transform/#multi-consumer-worker",
+      "level": 3,
+      "title": "Multi-consumer post-processing with constraints in a worker",
+      "number": "3.3"
+    },
+    {
+      "id": "implementation-advice",
+      "href": "https://w3c.github.io/mediacapture-transform/#implementation-advice",
+      "level": 2,
+      "title": "Implementation advice",
+      "number": "4"
+    },
+    {
+      "id": "multi-consumers",
+      "href": "https://w3c.github.io/mediacapture-transform/#multi-consumers",
+      "level": 3,
+      "title": "Use with multiple consumers",
+      "number": "4.1"
+    },
+    {
+      "id": "security-considerations",
+      "href": "https://w3c.github.io/mediacapture-transform/#security-considerations",
+      "level": 2,
+      "title": "Security and Privacy considerations",
+      "number": "5"
+    },
+    {
+      "id": "backwards-compatibility",
+      "href": "https://w3c.github.io/mediacapture-transform/#backwards-compatibility",
+      "level": 2,
+      "title": "Backwards compatibility with earlier proposals",
+      "number": "6"
+    },
+    {
+      "id": "w3c-conformance",
+      "href": "https://w3c.github.io/mediacapture-transform/#w3c-conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "w3c-conventions",
+      "href": "https://w3c.github.io/mediacapture-transform/#w3c-conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "w3c-conformant-algorithms",
+      "href": "https://w3c.github.io/mediacapture-transform/#w3c-conformant-algorithms",
+      "level": 3,
+      "title": "Conformant Algorithms"
+    },
+    {
+      "id": "index",
+      "href": "https://w3c.github.io/mediacapture-transform/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://w3c.github.io/mediacapture-transform/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://w3c.github.io/mediacapture-transform/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://w3c.github.io/mediacapture-transform/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://w3c.github.io/mediacapture-transform/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://w3c.github.io/mediacapture-transform/#informative",
+      "level": 3,
+      "title": "Informative References"
+    },
+    {
+      "id": "idl-index",
+      "href": "https://w3c.github.io/mediacapture-transform/#idl-index",
+      "level": 2,
+      "title": "IDL Index"
+    }
+  ]
+}

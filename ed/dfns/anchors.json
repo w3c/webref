@@ -1,0 +1,490 @@
+{
+  "spec": {
+    "title": "WebXR Anchors Module",
+    "url": "https://immersive-web.github.io/anchors/"
+  },
+  "dfns": [
+    {
+      "id": "anchors",
+      "href": "https://immersive-web.github.io/anchors/#anchors",
+      "linkingText": [
+        "anchors"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "anchor-feature-descriptor",
+        "href": "https://immersive-web.github.io/anchors/#anchor-feature-descriptor",
+        "title": "Feature descriptor",
+        "number": "2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "xranchor",
+      "href": "https://immersive-web.github.io/anchors/#xranchor",
+      "linkingText": [
+        "XRAnchor"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xr-anchor",
+        "href": "https://immersive-web.github.io/anchors/#xr-anchor",
+        "title": "XRAnchor",
+        "number": "3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xranchor-anchorspace",
+      "href": "https://immersive-web.github.io/anchors/#dom-xranchor-anchorspace",
+      "linkingText": [
+        "anchorSpace"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XRAnchor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xr-anchor",
+        "href": "https://immersive-web.github.io/anchors/#xr-anchor",
+        "title": "XRAnchor",
+        "number": "3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xranchor-delete",
+      "href": "https://immersive-web.github.io/anchors/#dom-xranchor-delete",
+      "linkingText": [
+        "delete()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "XRAnchor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xr-anchor",
+        "href": "https://immersive-web.github.io/anchors/#xr-anchor",
+        "title": "XRAnchor",
+        "number": "3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "xranchor-deleted",
+      "href": "https://immersive-web.github.io/anchors/#xranchor-deleted",
+      "linkingText": [
+        "deleted"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "XRAnchor"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "xr-anchor",
+        "href": "https://immersive-web.github.io/anchors/#xr-anchor",
+        "title": "XRAnchor",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "xranchor-native-origin",
+      "href": "https://immersive-web.github.io/anchors/#xranchor-native-origin",
+      "linkingText": [
+        "native origin"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "XRAnchor"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "xr-anchor",
+        "href": "https://immersive-web.github.io/anchors/#xr-anchor",
+        "title": "XRAnchor",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "xranchor-session",
+      "href": "https://immersive-web.github.io/anchors/#xranchor-session",
+      "linkingText": [
+        "session"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "XRAnchor"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "xr-anchor",
+        "href": "https://immersive-web.github.io/anchors/#xr-anchor",
+        "title": "XRAnchor",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "create-new-anchor-object",
+      "href": "https://immersive-web.github.io/anchors/#create-new-anchor-object",
+      "linkingText": [
+        "create new anchor object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "xr-anchor",
+        "href": "https://immersive-web.github.io/anchors/#xr-anchor",
+        "title": "XRAnchor",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "xrsession-set-of-tracked-anchors",
+      "href": "https://immersive-web.github.io/anchors/#xrsession-set-of-tracked-anchors",
+      "linkingText": [
+        "set of tracked anchors"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "XRSession"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "anchor-creation",
+        "href": "https://immersive-web.github.io/anchors/#anchor-creation",
+        "title": "Anchor creation",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "xrsession-map-of-new-anchors",
+      "href": "https://immersive-web.github.io/anchors/#xrsession-map-of-new-anchors",
+      "linkingText": [
+        "map of new anchors"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "XRSession"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "anchor-creation",
+        "href": "https://immersive-web.github.io/anchors/#anchor-creation",
+        "title": "Anchor creation",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrframe-createanchor",
+      "href": "https://immersive-web.github.io/anchors/#dom-xrframe-createanchor",
+      "linkingText": [
+        "createAnchor(pose, space)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "XRFrame"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "anchor-creation",
+        "href": "https://immersive-web.github.io/anchors/#anchor-creation",
+        "title": "Anchor creation",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrframe-createanchor-pose-space-pose",
+      "href": "https://immersive-web.github.io/anchors/#dom-xrframe-createanchor-pose-space-pose",
+      "linkingText": [
+        "pose"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "XRFrame/createAnchor(pose, space)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "anchor-creation",
+        "href": "https://immersive-web.github.io/anchors/#anchor-creation",
+        "title": "Anchor creation",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrframe-createanchor-pose-space-space",
+      "href": "https://immersive-web.github.io/anchors/#dom-xrframe-createanchor-pose-space-space",
+      "linkingText": [
+        "space"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "XRFrame/createAnchor(pose, space)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "anchor-creation",
+        "href": "https://immersive-web.github.io/anchors/#anchor-creation",
+        "title": "Anchor creation",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrhittestresult-createanchor",
+      "href": "https://immersive-web.github.io/anchors/#dom-xrhittestresult-createanchor",
+      "linkingText": [
+        "createAnchor()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "XRHitTestResult"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "anchor-creation",
+        "href": "https://immersive-web.github.io/anchors/#anchor-creation",
+        "title": "Anchor creation",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "xrhittestresult-native-entity",
+      "href": "https://immersive-web.github.io/anchors/#xrhittestresult-native-entity",
+      "linkingText": [
+        "native entity"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "XRHitTestResult"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "anchor-creation",
+        "href": "https://immersive-web.github.io/anchors/#anchor-creation",
+        "title": "Anchor creation",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "create-an-anchor-from-frame",
+      "href": "https://immersive-web.github.io/anchors/#create-an-anchor-from-frame",
+      "linkingText": [
+        "create an anchor from frame"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "anchor-creation",
+        "href": "https://immersive-web.github.io/anchors/#anchor-creation",
+        "title": "Anchor creation",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "create-an-anchor-from-hit-test-result",
+      "href": "https://immersive-web.github.io/anchors/#create-an-anchor-from-hit-test-result",
+      "linkingText": [
+        "create an anchor from hit test result"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "anchor-creation",
+        "href": "https://immersive-web.github.io/anchors/#anchor-creation",
+        "title": "Anchor creation",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "xranchorset",
+      "href": "https://immersive-web.github.io/anchors/#xranchorset",
+      "linkingText": [
+        "XRAnchorSet"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "anchor-updates",
+        "href": "https://immersive-web.github.io/anchors/#anchor-updates",
+        "title": "Anchor updates",
+        "number": "5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrframe-trackedanchors",
+      "href": "https://immersive-web.github.io/anchors/#dom-xrframe-trackedanchors",
+      "linkingText": [
+        "trackedAnchors"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XRFrame"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "anchor-updates",
+        "href": "https://immersive-web.github.io/anchors/#anchor-updates",
+        "title": "Anchor updates",
+        "number": "5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "update-anchors",
+      "href": "https://immersive-web.github.io/anchors/#update-anchors",
+      "linkingText": [
+        "update anchors"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "anchor-updates",
+        "href": "https://immersive-web.github.io/anchors/#anchor-updates",
+        "title": "Anchor updates",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "delete-an-anchor",
+      "href": "https://immersive-web.github.io/anchors/#delete-an-anchor",
+      "linkingText": [
+        "delete an anchor"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "anchor-removal",
+        "href": "https://immersive-web.github.io/anchors/#anchor-removal",
+        "title": "Anchor removal",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "tracked",
+      "href": "https://immersive-web.github.io/anchors/#tracked",
+      "linkingText": [
+        "tracked"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "native-anchor",
+        "href": "https://immersive-web.github.io/anchors/#native-anchor",
+        "title": "Native anchor",
+        "number": "7.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "attached",
+      "href": "https://immersive-web.github.io/anchors/#attached",
+      "linkingText": [
+        "attached"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "native-anchor",
+        "href": "https://immersive-web.github.io/anchors/#native-anchor",
+        "title": "Native anchor",
+        "number": "7.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "emulated-native-anchors",
+      "href": "https://immersive-web.github.io/anchors/#emulated-native-anchors",
+      "linkingText": [
+        "emulated native anchors"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "native-anchor",
+        "href": "https://immersive-web.github.io/anchors/#native-anchor",
+        "title": "Native anchor",
+        "number": "7.1"
+      },
+      "definedIn": "prose"
+    }
+  ]
+}

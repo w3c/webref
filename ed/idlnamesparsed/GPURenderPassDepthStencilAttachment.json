@@ -1,0 +1,227 @@
+{
+  "name": "GPURenderPassDepthStencilAttachment",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "WebGPU",
+      "url": "https://www.w3.org/TR/webgpu/"
+    },
+    "fragment": "dictionary GPURenderPassDepthStencilAttachment {\n    required GPUTextureView view;\n\n    float depthClearValue = 0;\n    required GPULoadOp depthLoadOp;\n    required GPUStoreOp depthStoreOp;\n    boolean depthReadOnly = false;\n\n    GPUStencilValue stencilClearValue = 0;\n    required GPULoadOp stencilLoadOp;\n    required GPUStoreOp stencilStoreOp;\n    boolean stencilReadOnly = false;\n};",
+    "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpurenderpassdepthstencilattachment"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webgpu/": [
+      {
+        "id": "dictdef-gpurenderpassdepthstencilattachment",
+        "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpurenderpassdepthstencilattachment",
+        "linkingText": [
+          "GPURenderPassDepthStencilAttachment"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "depth-stencil-attachments",
+          "href": "https://gpuweb.github.io/gpuweb/#depth-stencil-attachments",
+          "title": "Depth/Stencil Attachments",
+          "number": "16.1.1.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gpurenderpassdepthstencilattachment-view",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassdepthstencilattachment-view",
+        "linkingText": [
+          "view"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "GPURenderPassDepthStencilAttachment"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "depth-stencil-attachments",
+          "href": "https://gpuweb.github.io/gpuweb/#depth-stencil-attachments",
+          "title": "Depth/Stencil Attachments",
+          "number": "16.1.1.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpurenderpassdepthstencilattachment-depthclearvalue",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassdepthstencilattachment-depthclearvalue",
+        "linkingText": [
+          "depthClearValue"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "GPURenderPassDepthStencilAttachment"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "depth-stencil-attachments",
+          "href": "https://gpuweb.github.io/gpuweb/#depth-stencil-attachments",
+          "title": "Depth/Stencil Attachments",
+          "number": "16.1.1.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpurenderpassdepthstencilattachment-depthloadop",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassdepthstencilattachment-depthloadop",
+        "linkingText": [
+          "depthLoadOp"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "GPURenderPassDepthStencilAttachment"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "depth-stencil-attachments",
+          "href": "https://gpuweb.github.io/gpuweb/#depth-stencil-attachments",
+          "title": "Depth/Stencil Attachments",
+          "number": "16.1.1.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpurenderpassdepthstencilattachment-depthstoreop",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassdepthstencilattachment-depthstoreop",
+        "linkingText": [
+          "depthStoreOp"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "GPURenderPassDepthStencilAttachment"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "depth-stencil-attachments",
+          "href": "https://gpuweb.github.io/gpuweb/#depth-stencil-attachments",
+          "title": "Depth/Stencil Attachments",
+          "number": "16.1.1.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpurenderpassdepthstencilattachment-depthreadonly",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassdepthstencilattachment-depthreadonly",
+        "linkingText": [
+          "depthReadOnly"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "GPURenderPassDepthStencilAttachment"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "depth-stencil-attachments",
+          "href": "https://gpuweb.github.io/gpuweb/#depth-stencil-attachments",
+          "title": "Depth/Stencil Attachments",
+          "number": "16.1.1.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpurenderpassdepthstencilattachment-stencilclearvalue",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassdepthstencilattachment-stencilclearvalue",
+        "linkingText": [
+          "stencilClearValue"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "GPURenderPassDepthStencilAttachment"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "depth-stencil-attachments",
+          "href": "https://gpuweb.github.io/gpuweb/#depth-stencil-attachments",
+          "title": "Depth/Stencil Attachments",
+          "number": "16.1.1.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpurenderpassdepthstencilattachment-stencilloadop",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassdepthstencilattachment-stencilloadop",
+        "linkingText": [
+          "stencilLoadOp"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "GPURenderPassDepthStencilAttachment"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "depth-stencil-attachments",
+          "href": "https://gpuweb.github.io/gpuweb/#depth-stencil-attachments",
+          "title": "Depth/Stencil Attachments",
+          "number": "16.1.1.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpurenderpassdepthstencilattachment-stencilstoreop",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassdepthstencilattachment-stencilstoreop",
+        "linkingText": [
+          "stencilStoreOp"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "GPURenderPassDepthStencilAttachment"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "depth-stencil-attachments",
+          "href": "https://gpuweb.github.io/gpuweb/#depth-stencil-attachments",
+          "title": "Depth/Stencil Attachments",
+          "number": "16.1.1.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpurenderpassdepthstencilattachment-stencilreadonly",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassdepthstencilattachment-stencilreadonly",
+        "linkingText": [
+          "stencilReadOnly"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "GPURenderPassDepthStencilAttachment"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "depth-stencil-attachments",
+          "href": "https://gpuweb.github.io/gpuweb/#depth-stencil-attachments",
+          "title": "Depth/Stencil Attachments",
+          "number": "16.1.1.2"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

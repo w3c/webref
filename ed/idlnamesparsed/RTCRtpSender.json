@@ -1,0 +1,295 @@
+{
+  "name": "RTCRtpSender",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
+      "url": "https://www.w3.org/TR/webrtc/"
+    },
+    "fragment": "[Exposed=Window]\ninterface RTCRtpSender {\n  readonly attribute MediaStreamTrack? track;\n  readonly attribute RTCDtlsTransport? transport;\n  static RTCRtpCapabilities? getCapabilities(DOMString kind);\n  Promise<undefined> setParameters(RTCRtpSendParameters parameters);\n  RTCRtpSendParameters getParameters();\n  Promise<undefined> replaceTrack(MediaStreamTrack? withTrack);\n  undefined setStreams(MediaStream... streams);\n  Promise<RTCStatsReport> getStats();\n};",
+    "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpsender"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "WebRTC Encoded Transform",
+        "url": "https://www.w3.org/TR/webrtc-encoded-transform/"
+      },
+      "fragment": "// New methods for RTCRtpSender and RTCRtpReceiver\npartial interface RTCRtpSender {\n    attribute RTCRtpTransform? transform;\n};"
+    },
+    {
+      "spec": {
+        "title": "WebRTC Encoded Transform",
+        "url": "https://www.w3.org/TR/webrtc-encoded-transform/"
+      },
+      "fragment": "partial interface RTCRtpSender {\n    Promise<undefined> generateKeyFrame(optional sequence <DOMString> rids);\n};"
+    },
+    {
+      "spec": {
+        "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
+        "url": "https://www.w3.org/TR/webrtc/"
+      },
+      "fragment": "partial interface RTCRtpSender {\n  readonly attribute RTCDTMFSender? dtmf;\n};"
+    }
+  ],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webrtc/": [
+      {
+        "id": "dom-rtcrtpsender",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpsender",
+        "linkingText": [
+          "RTCRtpSender"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "rtcrtpsender-interface",
+          "href": "https://w3c.github.io/webrtc-pc/#rtcrtpsender-interface",
+          "title": "RTCRtpSender Interface",
+          "number": "5.2"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-rtcrtpsender-track",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpsender-track",
+        "linkingText": [
+          "track"
+        ],
+        "localLinkingText": [
+          "RTCRtpSender.track"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCRtpSender"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-9",
+          "href": "https://w3c.github.io/webrtc-pc/#attributes-9",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcrtpsender-transport",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpsender-transport",
+        "linkingText": [
+          "transport"
+        ],
+        "localLinkingText": [
+          "RTCRtpSender.transport"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCRtpSender"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-9",
+          "href": "https://w3c.github.io/webrtc-pc/#attributes-9",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcrtpsender-getcapabilities",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpsender-getcapabilities",
+        "linkingText": [
+          "getCapabilities()",
+          "getCapabilities(kind)"
+        ],
+        "localLinkingText": [
+          "RTCRtpSender.getCapabilities",
+          "RTCRtpSender.getCapabilities()",
+          "getCapabilities"
+        ],
+        "type": "method",
+        "for": [
+          "RTCRtpSender"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "methods-6",
+          "href": "https://w3c.github.io/webrtc-pc/#methods-6",
+          "title": "Methods"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcrtpsender-setparameters",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpsender-setparameters",
+        "linkingText": [
+          "setParameters()",
+          "setParameters(parameters)"
+        ],
+        "localLinkingText": [
+          "RTCRtpSender.setParameters",
+          "RTCRtpSender.setParameters()",
+          "setParameters"
+        ],
+        "type": "method",
+        "for": [
+          "RTCRtpSender"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "methods-6",
+          "href": "https://w3c.github.io/webrtc-pc/#methods-6",
+          "title": "Methods"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcrtpsender-getparameters",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpsender-getparameters",
+        "linkingText": [
+          "getParameters()"
+        ],
+        "localLinkingText": [
+          "RTCRtpSender.getParameters",
+          "RTCRtpSender.getParameters()",
+          "getParameters"
+        ],
+        "type": "method",
+        "for": [
+          "RTCRtpSender"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "methods-6",
+          "href": "https://w3c.github.io/webrtc-pc/#methods-6",
+          "title": "Methods"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcrtpsender-replacetrack",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpsender-replacetrack",
+        "linkingText": [
+          "replaceTrack()",
+          "replaceTrack(withTrack)"
+        ],
+        "localLinkingText": [
+          "RTCRtpSender.replaceTrack",
+          "RTCRtpSender.replaceTrack()",
+          "replaceTrack"
+        ],
+        "type": "method",
+        "for": [
+          "RTCRtpSender"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "methods-6",
+          "href": "https://w3c.github.io/webrtc-pc/#methods-6",
+          "title": "Methods"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "widl-RTCRtpSender-getStats-Promise-RTCStatsReport",
+        "href": "https://w3c.github.io/webrtc-pc/#widl-RTCRtpSender-getStats-Promise-RTCStatsReport",
+        "linkingText": [
+          "getStats()"
+        ],
+        "localLinkingText": [
+          "RTCRtpSender.getStats",
+          "RTCRtpSender.getStats()",
+          "getStats"
+        ],
+        "type": "method",
+        "for": [
+          "RTCRtpSender"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "methods-6",
+          "href": "https://w3c.github.io/webrtc-pc/#methods-6",
+          "title": "Methods"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcrtpsender-dtmf",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpsender-dtmf",
+        "linkingText": [
+          "dtmf"
+        ],
+        "localLinkingText": [
+          "RTCRtpSender.dtmf"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCRtpSender"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-19",
+          "href": "https://w3c.github.io/webrtc-pc/#attributes-19",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      }
+    ],
+    "https://www.w3.org/TR/webrtc-encoded-transform/": [
+      {
+        "id": "dom-rtcrtpsender-transform",
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcrtpsender-transform",
+        "linkingText": [
+          "transform"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "RTCRtpSender",
+          "RTCRtpReceiver"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attribute",
+          "href": "https://w3c.github.io/webrtc-encoded-transform/#attribute",
+          "title": "Extension attribute",
+          "number": "3.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-rtcrtpsender-generatekeyframe",
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcrtpsender-generatekeyframe",
+        "linkingText": [
+          "generateKeyFrame(rids)",
+          "generateKeyFrame()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "RTCRtpSender"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "sender-operation",
+          "href": "https://w3c.github.io/webrtc-encoded-transform/#sender-operation",
+          "title": "Extension operation",
+          "number": "6.1"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

@@ -1,0 +1,898 @@
+{
+  "name": "InputEvent",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "UI Events",
+      "url": "https://www.w3.org/TR/uievents/"
+    },
+    "fragment": "[Exposed=Window]\ninterface InputEvent : UIEvent {\n  constructor(DOMString type, optional InputEventInit eventInitDict = {});\n  readonly attribute DOMString? data;\n  readonly attribute boolean isComposing;\n  readonly attribute DOMString inputType;\n};",
+    "href": "https://w3c.github.io/uievents/#inputevent"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "Input Events Level 2",
+        "url": "https://www.w3.org/TR/input-events-2/"
+      },
+      "fragment": "partial interface InputEvent {\n   readonly attribute DataTransfer? dataTransfer;\n   sequence<StaticRange> getTargetRanges();\n};"
+    }
+  ],
+  "inheritance": {
+    "name": "UIEvent",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "UI Events",
+        "url": "https://www.w3.org/TR/uievents/"
+      },
+      "fragment": "[Exposed=Window]\ninterface UIEvent : Event {\n  constructor(DOMString type, optional UIEventInit eventInitDict = {});\n  readonly attribute Window? view;\n  readonly attribute long detail;\n};",
+      "href": "https://w3c.github.io/uievents/#uievent"
+    },
+    "extended": [
+      {
+        "spec": {
+          "title": "Input Device Capabilities",
+          "url": "https://wicg.github.io/input-device-capabilities/"
+        },
+        "fragment": "partial interface UIEvent {\n  readonly attribute InputDeviceCapabilities? sourceCapabilities;\n};"
+      },
+      {
+        "spec": {
+          "title": "UI Events",
+          "url": "https://www.w3.org/TR/uievents/"
+        },
+        "fragment": "partial interface UIEvent {\n  // Deprecated in this specification\n  undefined initUIEvent(DOMString typeArg,\n    optional boolean bubblesArg = false,\n    optional boolean cancelableArg = false,\n    optional Window? viewArg = null,\n    optional long detailArg = 0);\n};"
+      },
+      {
+        "spec": {
+          "title": "UI Events",
+          "url": "https://www.w3.org/TR/uievents/"
+        },
+        "fragment": "partial interface UIEvent {\n  // The following support legacy user agents\n  readonly attribute unsigned long which;\n};"
+      }
+    ],
+    "inheritance": {
+      "name": "Event",
+      "type": "interface",
+      "defined": {
+        "spec": {
+          "title": "DOM Standard",
+          "url": "https://dom.spec.whatwg.org/"
+        },
+        "fragment": "[Exposed=*]\ninterface Event {\n  constructor(DOMString type, optional EventInit eventInitDict = {});\n\n  readonly attribute DOMString type;\n  readonly attribute EventTarget? target;\n  readonly attribute EventTarget? srcElement; // legacy\n  readonly attribute EventTarget? currentTarget;\n  sequence<EventTarget> composedPath();\n\n  const unsigned short NONE = 0;\n  const unsigned short CAPTURING_PHASE = 1;\n  const unsigned short AT_TARGET = 2;\n  const unsigned short BUBBLING_PHASE = 3;\n  readonly attribute unsigned short eventPhase;\n\n  undefined stopPropagation();\n           attribute boolean cancelBubble; // legacy alias of .stopPropagation()\n  undefined stopImmediatePropagation();\n\n  readonly attribute boolean bubbles;\n  readonly attribute boolean cancelable;\n           attribute boolean returnValue;  // legacy\n  undefined preventDefault();\n  readonly attribute boolean defaultPrevented;\n  readonly attribute boolean composed;\n\n  [LegacyUnforgeable] readonly attribute boolean isTrusted;\n  readonly attribute DOMHighResTimeStamp timeStamp;\n\n  undefined initEvent(DOMString type, optional boolean bubbles = false, optional boolean cancelable = false); // legacy\n};",
+        "href": "https://dom.spec.whatwg.org/#event"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/uievents/": [
+      {
+        "id": "inputevent",
+        "href": "https://w3c.github.io/uievents/#inputevent",
+        "linkingText": [
+          "InputEvent"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "idl-inputevent",
+          "href": "https://w3c.github.io/uievents/#idl-inputevent",
+          "title": "InputEvent",
+          "number": "5.5.1.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-inputevent-inputevent",
+        "href": "https://w3c.github.io/uievents/#dom-inputevent-inputevent",
+        "linkingText": [
+          "InputEvent(type, eventInitDict)",
+          "constructor(type, eventInitDict)",
+          "InputEvent(type)",
+          "constructor(type)"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "InputEvent"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "idl-inputevent",
+          "href": "https://w3c.github.io/uievents/#idl-inputevent",
+          "title": "InputEvent",
+          "number": "5.5.1.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-inputevent-data",
+        "href": "https://w3c.github.io/uievents/#dom-inputevent-data",
+        "linkingText": [
+          "data"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "InputEvent"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "idl-inputevent",
+          "href": "https://w3c.github.io/uievents/#idl-inputevent",
+          "title": "InputEvent",
+          "number": "5.5.1.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-inputevent-iscomposing",
+        "href": "https://w3c.github.io/uievents/#dom-inputevent-iscomposing",
+        "linkingText": [
+          "isComposing"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "InputEvent"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "idl-inputevent",
+          "href": "https://w3c.github.io/uievents/#idl-inputevent",
+          "title": "InputEvent",
+          "number": "5.5.1.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-inputevent-inputtype",
+        "href": "https://w3c.github.io/uievents/#dom-inputevent-inputtype",
+        "linkingText": [
+          "inputType"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "InputEvent"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "idl-inputevent",
+          "href": "https://w3c.github.io/uievents/#idl-inputevent",
+          "title": "InputEvent",
+          "number": "5.5.1.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "uievent",
+        "href": "https://w3c.github.io/uievents/#uievent",
+        "linkingText": [
+          "UIEvent"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "idl-uievent",
+          "href": "https://w3c.github.io/uievents/#idl-uievent",
+          "title": "UIEvent",
+          "number": "5.1.1.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-uievent-uievent",
+        "href": "https://w3c.github.io/uievents/#dom-uievent-uievent",
+        "linkingText": [
+          "UIEvent(type, eventInitDict)",
+          "constructor(type, eventInitDict)",
+          "UIEvent(type)",
+          "constructor(type)"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "UIEvent"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "idl-uievent",
+          "href": "https://w3c.github.io/uievents/#idl-uievent",
+          "title": "UIEvent",
+          "number": "5.1.1.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-uievent-view",
+        "href": "https://w3c.github.io/uievents/#dom-uievent-view",
+        "linkingText": [
+          "view"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "UIEvent"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "idl-uievent",
+          "href": "https://w3c.github.io/uievents/#idl-uievent",
+          "title": "UIEvent",
+          "number": "5.1.1.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-uievent-detail",
+        "href": "https://w3c.github.io/uievents/#dom-uievent-detail",
+        "linkingText": [
+          "detail"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "UIEvent"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "idl-uievent",
+          "href": "https://w3c.github.io/uievents/#idl-uievent",
+          "title": "UIEvent",
+          "number": "5.1.1.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-uievent-inituievent",
+        "href": "https://w3c.github.io/uievents/#dom-uievent-inituievent",
+        "linkingText": [
+          "initUIEvent(typeArg, bubblesArg, cancelableArg, viewArg, detailArg)",
+          "initUIEvent(typeArg, bubblesArg, cancelableArg, viewArg)",
+          "initUIEvent(typeArg, bubblesArg, cancelableArg)",
+          "initUIEvent(typeArg, bubblesArg)",
+          "initUIEvent(typeArg)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "UIEvent"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "idl-interface-UIEvent-initializers",
+          "href": "https://w3c.github.io/uievents/#idl-interface-UIEvent-initializers",
+          "title": "Initializers for interface UIEvent",
+          "number": "7.1.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-uievent-which",
+        "href": "https://w3c.github.io/uievents/#dom-uievent-which",
+        "linkingText": [
+          "which"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "UIEvent"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "legacy-interface-UIEvent",
+          "href": "https://w3c.github.io/uievents/#legacy-interface-UIEvent",
+          "title": "Interface UIEvent (supplemental)",
+          "number": "8.1.1"
+        },
+        "definedIn": "dt"
+      }
+    ],
+    "https://www.w3.org/TR/input-events-2/": [
+      {
+        "id": "dom-inputevent-datatransfer",
+        "href": "https://w3c.github.io/input-events/#dom-inputevent-datatransfer",
+        "linkingText": [
+          "dataTransfer"
+        ],
+        "localLinkingText": [
+          "InputEvent.dataTransfer"
+        ],
+        "type": "attribute",
+        "for": [
+          "InputEvent"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-InputEvent-Attributes",
+          "href": "https://w3c.github.io/input-events/#interface-InputEvent-Attributes",
+          "title": "Attributes",
+          "number": "6.1.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-inputevent-gettargetranges",
+        "href": "https://w3c.github.io/input-events/#dom-inputevent-gettargetranges",
+        "linkingText": [
+          "getTargetRanges()"
+        ],
+        "localLinkingText": [
+          "InputEvent.getTargetRanges",
+          "InputEvent.getTargetRanges()",
+          "getTargetRanges"
+        ],
+        "type": "method",
+        "for": [
+          "InputEvent"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-InputEvent-Attributes",
+          "href": "https://w3c.github.io/input-events/#interface-InputEvent-Attributes",
+          "title": "Attributes",
+          "number": "6.1.2"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://wicg.github.io/input-device-capabilities/": [
+      {
+        "id": "dom-uievent-sourcecapabilities",
+        "href": "https://wicg.github.io/input-device-capabilities/#dom-uievent-sourcecapabilities",
+        "linkingText": [
+          "sourceCapabilities"
+        ],
+        "localLinkingText": [
+          "UIEvent.sourceCapabilities"
+        ],
+        "type": "attribute",
+        "for": [
+          "UIEvent"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "extensions-to-the-uievent-interface-and-uieventinit-dictionary",
+          "href": "https://wicg.github.io/input-device-capabilities/#extensions-to-the-uievent-interface-and-uieventinit-dictionary",
+          "title": "Extensions to the UIEvent interface and UIEventInit dictionary",
+          "number": "4"
+        },
+        "definedIn": "dt"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "event",
+        "href": "https://dom.spec.whatwg.org/#event",
+        "linkingText": [
+          "Event"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-event-event",
+        "href": "https://dom.spec.whatwg.org/#dom-event-event",
+        "linkingText": [
+          "Event(type, eventInitDict)",
+          "constructor(type, eventInitDict)",
+          "Event(type)",
+          "constructor(type)"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "Event"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-event-type",
+        "href": "https://dom.spec.whatwg.org/#dom-event-type",
+        "linkingText": [
+          "type"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Event"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-event-target",
+        "href": "https://dom.spec.whatwg.org/#dom-event-target",
+        "linkingText": [
+          "target"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Event"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-event-srcelement",
+        "href": "https://dom.spec.whatwg.org/#dom-event-srcelement",
+        "linkingText": [
+          "srcElement"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Event"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-event-currenttarget",
+        "href": "https://dom.spec.whatwg.org/#dom-event-currenttarget",
+        "linkingText": [
+          "currentTarget"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Event"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-event-composedpath",
+        "href": "https://dom.spec.whatwg.org/#dom-event-composedpath",
+        "linkingText": [
+          "composedPath()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Event"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-event-none",
+        "href": "https://dom.spec.whatwg.org/#dom-event-none",
+        "linkingText": [
+          "NONE"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "Event"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-event-capturing_phase",
+        "href": "https://dom.spec.whatwg.org/#dom-event-capturing_phase",
+        "linkingText": [
+          "CAPTURING_PHASE"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "Event"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-event-at_target",
+        "href": "https://dom.spec.whatwg.org/#dom-event-at_target",
+        "linkingText": [
+          "AT_TARGET"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "Event"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-event-bubbling_phase",
+        "href": "https://dom.spec.whatwg.org/#dom-event-bubbling_phase",
+        "linkingText": [
+          "BUBBLING_PHASE"
+        ],
+        "localLinkingText": [],
+        "type": "const",
+        "for": [
+          "Event"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-event-eventphase",
+        "href": "https://dom.spec.whatwg.org/#dom-event-eventphase",
+        "linkingText": [
+          "eventPhase"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Event"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-event-stoppropagation",
+        "href": "https://dom.spec.whatwg.org/#dom-event-stoppropagation",
+        "linkingText": [
+          "stopPropagation()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Event"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-event-cancelbubble",
+        "href": "https://dom.spec.whatwg.org/#dom-event-cancelbubble",
+        "linkingText": [
+          "cancelBubble"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Event"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-event-stopimmediatepropagation",
+        "href": "https://dom.spec.whatwg.org/#dom-event-stopimmediatepropagation",
+        "linkingText": [
+          "stopImmediatePropagation()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Event"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-event-bubbles",
+        "href": "https://dom.spec.whatwg.org/#dom-event-bubbles",
+        "linkingText": [
+          "bubbles"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Event"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-event-cancelable",
+        "href": "https://dom.spec.whatwg.org/#dom-event-cancelable",
+        "linkingText": [
+          "cancelable"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Event"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-event-returnvalue",
+        "href": "https://dom.spec.whatwg.org/#dom-event-returnvalue",
+        "linkingText": [
+          "returnValue"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Event"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-event-preventdefault",
+        "href": "https://dom.spec.whatwg.org/#dom-event-preventdefault",
+        "linkingText": [
+          "preventDefault()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Event"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-event-defaultprevented",
+        "href": "https://dom.spec.whatwg.org/#dom-event-defaultprevented",
+        "linkingText": [
+          "defaultPrevented"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Event"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-event-composed",
+        "href": "https://dom.spec.whatwg.org/#dom-event-composed",
+        "linkingText": [
+          "composed"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Event"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-event-istrusted",
+        "href": "https://dom.spec.whatwg.org/#dom-event-istrusted",
+        "linkingText": [
+          "isTrusted"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Event"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-event-timestamp",
+        "href": "https://dom.spec.whatwg.org/#dom-event-timestamp",
+        "linkingText": [
+          "timeStamp"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Event"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-event-initevent",
+        "href": "https://dom.spec.whatwg.org/#dom-event-initevent",
+        "linkingText": [
+          "initEvent(type, bubbles, cancelable)",
+          "initEvent(type, bubbles)",
+          "initEvent(type)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Event"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

@@ -1,0 +1,153 @@
+{
+  "name": "XRRenderState",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebXR Device API",
+      "url": "https://www.w3.org/TR/webxr/"
+    },
+    "fragment": "[SecureContext, Exposed=Window] interface XRRenderState {\n  readonly attribute double depthNear;\n  readonly attribute double depthFar;\n  readonly attribute double? inlineVerticalFieldOfView;\n  readonly attribute XRWebGLLayer? baseLayer;\n};",
+    "href": "https://immersive-web.github.io/webxr/#xrrenderstate"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "WebXR Layers API Level 1",
+        "url": "https://www.w3.org/TR/webxrlayers-1/"
+      },
+      "fragment": "[SecureContext, Exposed=Window] partial interface XRRenderState {\n  readonly attribute FrozenArray<XRLayer> layers;\n};"
+    }
+  ],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webxr/": [
+      {
+        "id": "xrrenderstate",
+        "href": "https://immersive-web.github.io/webxr/#xrrenderstate",
+        "linkingText": [
+          "XRRenderState"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrrenderstate-interface",
+          "href": "https://immersive-web.github.io/webxr/#xrrenderstate-interface",
+          "title": "XRRenderState",
+          "number": "4.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-xrrenderstate-depthnear",
+        "href": "https://immersive-web.github.io/webxr/#dom-xrrenderstate-depthnear",
+        "linkingText": [
+          "depthNear"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XRRenderState"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrrenderstate-interface",
+          "href": "https://immersive-web.github.io/webxr/#xrrenderstate-interface",
+          "title": "XRRenderState",
+          "number": "4.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-xrrenderstate-depthfar",
+        "href": "https://immersive-web.github.io/webxr/#dom-xrrenderstate-depthfar",
+        "linkingText": [
+          "depthFar"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XRRenderState"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrrenderstate-interface",
+          "href": "https://immersive-web.github.io/webxr/#xrrenderstate-interface",
+          "title": "XRRenderState",
+          "number": "4.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-xrrenderstate-inlineverticalfieldofview",
+        "href": "https://immersive-web.github.io/webxr/#dom-xrrenderstate-inlineverticalfieldofview",
+        "linkingText": [
+          "inlineVerticalFieldOfView"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XRRenderState"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrrenderstate-interface",
+          "href": "https://immersive-web.github.io/webxr/#xrrenderstate-interface",
+          "title": "XRRenderState",
+          "number": "4.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-xrrenderstate-baselayer",
+        "href": "https://immersive-web.github.io/webxr/#dom-xrrenderstate-baselayer",
+        "linkingText": [
+          "baseLayer"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XRRenderState"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrrenderstate-interface",
+          "href": "https://immersive-web.github.io/webxr/#xrrenderstate-interface",
+          "title": "XRRenderState",
+          "number": "4.2"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://www.w3.org/TR/webxrlayers-1/": [
+      {
+        "id": "dom-xrrenderstate-layers",
+        "href": "https://immersive-web.github.io/layers/#dom-xrrenderstate-layers",
+        "linkingText": [
+          "layers"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XRRenderState"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrrenderstatechanges",
+          "href": "https://immersive-web.github.io/layers/#xrrenderstatechanges",
+          "title": "XRRenderState changes",
+          "number": "10.1"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

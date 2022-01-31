@@ -1,0 +1,304 @@
+{
+  "name": "CSPViolationReportBody",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Content Security Policy Level 3",
+      "url": "https://www.w3.org/TR/CSP3/"
+    },
+    "fragment": "[Exposed=Window]\ninterface CSPViolationReportBody : ReportBody {\n  readonly attribute USVString documentURL;\n  readonly attribute USVString? referrer;\n  readonly attribute USVString? blockedURL;\n  readonly attribute DOMString effectiveDirective;\n  readonly attribute DOMString originalPolicy;\n  readonly attribute USVString? sourceFile;\n  readonly attribute DOMString? sample;\n  readonly attribute SecurityPolicyViolationEventDisposition disposition;\n  readonly attribute unsigned short statusCode;\n  readonly attribute unsigned long? lineNumber;\n  readonly attribute unsigned long? columnNumber;\n};",
+    "href": "https://w3c.github.io/webappsec-csp/#cspviolationreportbody"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "ReportBody",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "Reporting API 1",
+        "url": "https://www.w3.org/TR/reporting-1/"
+      },
+      "fragment": "[Exposed=(Window,Worker)]\ninterface ReportBody {\n  [Default] object toJSON();\n};",
+      "href": "https://w3c.github.io/reporting/#reportbody"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/CSP3/": [
+      {
+        "id": "cspviolationreportbody",
+        "href": "https://w3c.github.io/webappsec-csp/#cspviolationreportbody",
+        "linkingText": [
+          "CSPViolationReportBody"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "reporting",
+          "href": "https://w3c.github.io/webappsec-csp/#reporting",
+          "title": "Reporting",
+          "number": "5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-cspviolationreportbody-documenturl",
+        "href": "https://w3c.github.io/webappsec-csp/#dom-cspviolationreportbody-documenturl",
+        "linkingText": [
+          "documentURL"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "CSPViolationReportBody"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "reporting",
+          "href": "https://w3c.github.io/webappsec-csp/#reporting",
+          "title": "Reporting",
+          "number": "5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-cspviolationreportbody-referrer",
+        "href": "https://w3c.github.io/webappsec-csp/#dom-cspviolationreportbody-referrer",
+        "linkingText": [
+          "referrer"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "CSPViolationReportBody"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "reporting",
+          "href": "https://w3c.github.io/webappsec-csp/#reporting",
+          "title": "Reporting",
+          "number": "5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-cspviolationreportbody-blockedurl",
+        "href": "https://w3c.github.io/webappsec-csp/#dom-cspviolationreportbody-blockedurl",
+        "linkingText": [
+          "blockedURL"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "CSPViolationReportBody"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "reporting",
+          "href": "https://w3c.github.io/webappsec-csp/#reporting",
+          "title": "Reporting",
+          "number": "5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-cspviolationreportbody-effectivedirective",
+        "href": "https://w3c.github.io/webappsec-csp/#dom-cspviolationreportbody-effectivedirective",
+        "linkingText": [
+          "effectiveDirective"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "CSPViolationReportBody"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "reporting",
+          "href": "https://w3c.github.io/webappsec-csp/#reporting",
+          "title": "Reporting",
+          "number": "5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-cspviolationreportbody-originalpolicy",
+        "href": "https://w3c.github.io/webappsec-csp/#dom-cspviolationreportbody-originalpolicy",
+        "linkingText": [
+          "originalPolicy"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "CSPViolationReportBody"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "reporting",
+          "href": "https://w3c.github.io/webappsec-csp/#reporting",
+          "title": "Reporting",
+          "number": "5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-cspviolationreportbody-sourcefile",
+        "href": "https://w3c.github.io/webappsec-csp/#dom-cspviolationreportbody-sourcefile",
+        "linkingText": [
+          "sourceFile"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "CSPViolationReportBody"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "reporting",
+          "href": "https://w3c.github.io/webappsec-csp/#reporting",
+          "title": "Reporting",
+          "number": "5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-cspviolationreportbody-sample",
+        "href": "https://w3c.github.io/webappsec-csp/#dom-cspviolationreportbody-sample",
+        "linkingText": [
+          "sample"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "CSPViolationReportBody"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "reporting",
+          "href": "https://w3c.github.io/webappsec-csp/#reporting",
+          "title": "Reporting",
+          "number": "5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-cspviolationreportbody-disposition",
+        "href": "https://w3c.github.io/webappsec-csp/#dom-cspviolationreportbody-disposition",
+        "linkingText": [
+          "disposition"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "CSPViolationReportBody"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "reporting",
+          "href": "https://w3c.github.io/webappsec-csp/#reporting",
+          "title": "Reporting",
+          "number": "5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-cspviolationreportbody-statuscode",
+        "href": "https://w3c.github.io/webappsec-csp/#dom-cspviolationreportbody-statuscode",
+        "linkingText": [
+          "statusCode"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "CSPViolationReportBody"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "reporting",
+          "href": "https://w3c.github.io/webappsec-csp/#reporting",
+          "title": "Reporting",
+          "number": "5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-cspviolationreportbody-linenumber",
+        "href": "https://w3c.github.io/webappsec-csp/#dom-cspviolationreportbody-linenumber",
+        "linkingText": [
+          "lineNumber"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "CSPViolationReportBody"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "reporting",
+          "href": "https://w3c.github.io/webappsec-csp/#reporting",
+          "title": "Reporting",
+          "number": "5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-cspviolationreportbody-columnnumber",
+        "href": "https://w3c.github.io/webappsec-csp/#dom-cspviolationreportbody-columnnumber",
+        "linkingText": [
+          "columnNumber"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "CSPViolationReportBody"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "reporting",
+          "href": "https://w3c.github.io/webappsec-csp/#reporting",
+          "title": "Reporting",
+          "number": "5"
+        },
+        "definedIn": "pre"
+      }
+    ],
+    "https://www.w3.org/TR/reporting-1/": [
+      {
+        "id": "reportbody",
+        "href": "https://w3c.github.io/reporting/#reportbody",
+        "linkingText": [
+          "ReportBody"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-reporting-observer",
+          "href": "https://w3c.github.io/reporting/#interface-reporting-observer",
+          "title": "Interface ReportingObserver",
+          "number": "4.1"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

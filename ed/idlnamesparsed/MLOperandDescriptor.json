@@ -1,0 +1,80 @@
+{
+  "name": "MLOperandDescriptor",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Web Neural Network API",
+      "url": "https://www.w3.org/TR/webnn/"
+    },
+    "fragment": "dictionary MLOperandDescriptor {\n  // The operand type.\n  required MLOperandType type;\n\n  // The dimensions field is only required for tensor operands.\n  // The negative value means an unknown dimension.\n  sequence<long> dimensions;\n};",
+    "href": "https://webmachinelearning.github.io/webnn/#dictdef-mloperanddescriptor"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webnn/": [
+      {
+        "id": "dictdef-mloperanddescriptor",
+        "href": "https://webmachinelearning.github.io/webnn/#dictdef-mloperanddescriptor",
+        "linkingText": [
+          "MLOperandDescriptor"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mloperanddescriptor",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mloperanddescriptor",
+          "title": "MLOperandDescriptor",
+          "number": "7.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mloperanddescriptor-type",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-type",
+        "linkingText": [
+          "type"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MLOperandDescriptor"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mloperanddescriptor",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mloperanddescriptor",
+          "title": "MLOperandDescriptor",
+          "number": "7.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mloperanddescriptor-dimensions",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-dimensions",
+        "linkingText": [
+          "dimensions"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MLOperandDescriptor"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mloperanddescriptor",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mloperanddescriptor",
+          "title": "MLOperandDescriptor",
+          "number": "7.4"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

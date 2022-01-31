@@ -1,0 +1,84 @@
+{
+  "name": "RTCCertificate",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
+      "url": "https://www.w3.org/TR/webrtc/"
+    },
+    "fragment": "[Exposed=Window, Serializable]\ninterface RTCCertificate {\n  readonly attribute EpochTimeStamp expires;\n  sequence<RTCDtlsFingerprint> getFingerprints();\n};",
+    "href": "https://w3c.github.io/webrtc-pc/#dom-rtccertificate"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webrtc/": [
+      {
+        "id": "dom-rtccertificate",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtccertificate",
+        "linkingText": [
+          "RTCCertificate"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "rtccertificate-interface",
+          "href": "https://w3c.github.io/webrtc-pc/#rtccertificate-interface",
+          "title": "RTCCertificate Interface",
+          "number": "4.9.2"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-rtccertificate-expires",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtccertificate-expires",
+        "linkingText": [
+          "expires"
+        ],
+        "localLinkingText": [
+          "RTCCertificate.expires"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCCertificate"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-7",
+          "href": "https://w3c.github.io/webrtc-pc/#attributes-7",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtccertificate-getfingerprints",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtccertificate-getfingerprints",
+        "linkingText": [
+          "getFingerprints()"
+        ],
+        "localLinkingText": [
+          "RTCCertificate.getFingerprints",
+          "RTCCertificate.getFingerprints()",
+          "getFingerprints"
+        ],
+        "type": "method",
+        "for": [
+          "RTCCertificate"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "methods-4",
+          "href": "https://w3c.github.io/webrtc-pc/#methods-4",
+          "title": "Methods"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

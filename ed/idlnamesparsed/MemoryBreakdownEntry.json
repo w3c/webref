@@ -1,0 +1,101 @@
+{
+  "name": "MemoryBreakdownEntry",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Measure Memory API",
+      "url": "https://wicg.github.io/performance-measure-memory/"
+    },
+    "fragment": "dictionary MemoryBreakdownEntry {\n  unsigned long long bytes;\n  sequence<MemoryAttribution> attribution;\n  sequence<DOMString> types;\n};",
+    "href": "https://wicg.github.io/performance-measure-memory/#dictdef-memorybreakdownentry"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://wicg.github.io/performance-measure-memory/": [
+      {
+        "id": "dictdef-memorybreakdownentry",
+        "href": "https://wicg.github.io/performance-measure-memory/#dictdef-memorybreakdownentry",
+        "linkingText": [
+          "MemoryBreakdownEntry"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "memory-measurement-result",
+          "href": "https://wicg.github.io/performance-measure-memory/#memory-measurement-result",
+          "title": "Memory measurement result",
+          "number": "2.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-memorybreakdownentry-bytes",
+        "href": "https://wicg.github.io/performance-measure-memory/#dom-memorybreakdownentry-bytes",
+        "linkingText": [
+          "bytes"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MemoryBreakdownEntry"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "memory-measurement-result",
+          "href": "https://wicg.github.io/performance-measure-memory/#memory-measurement-result",
+          "title": "Memory measurement result",
+          "number": "2.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-memorybreakdownentry-attribution",
+        "href": "https://wicg.github.io/performance-measure-memory/#dom-memorybreakdownentry-attribution",
+        "linkingText": [
+          "attribution"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MemoryBreakdownEntry"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "memory-measurement-result",
+          "href": "https://wicg.github.io/performance-measure-memory/#memory-measurement-result",
+          "title": "Memory measurement result",
+          "number": "2.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-memorybreakdownentry-types",
+        "href": "https://wicg.github.io/performance-measure-memory/#dom-memorybreakdownentry-types",
+        "linkingText": [
+          "types"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MemoryBreakdownEntry"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "memory-measurement-result",
+          "href": "https://wicg.github.io/performance-measure-memory/#memory-measurement-result",
+          "title": "Memory measurement result",
+          "number": "2.1"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

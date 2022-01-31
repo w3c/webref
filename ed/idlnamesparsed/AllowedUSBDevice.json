@@ -1,0 +1,101 @@
+{
+  "name": "AllowedUSBDevice",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "WebUSB API",
+      "url": "https://wicg.github.io/webusb/"
+    },
+    "fragment": "dictionary AllowedUSBDevice {\n  required octet vendorId;\n  required octet productId;\n  DOMString serialNumber;\n};",
+    "href": "https://wicg.github.io/webusb/#dictdef-allowedusbdevice"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://wicg.github.io/webusb/": [
+      {
+        "id": "dictdef-allowedusbdevice",
+        "href": "https://wicg.github.io/webusb/#dictdef-allowedusbdevice",
+        "linkingText": [
+          "AllowedUSBDevice"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "permission-api",
+          "href": "https://wicg.github.io/webusb/#permission-api",
+          "title": "Permission API",
+          "number": "7.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-allowedusbdevice-vendorid",
+        "href": "https://wicg.github.io/webusb/#dom-allowedusbdevice-vendorid",
+        "linkingText": [
+          "vendorId"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "AllowedUSBDevice"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "permission-api",
+          "href": "https://wicg.github.io/webusb/#permission-api",
+          "title": "Permission API",
+          "number": "7.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-allowedusbdevice-productid",
+        "href": "https://wicg.github.io/webusb/#dom-allowedusbdevice-productid",
+        "linkingText": [
+          "productId"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "AllowedUSBDevice"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "permission-api",
+          "href": "https://wicg.github.io/webusb/#permission-api",
+          "title": "Permission API",
+          "number": "7.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-allowedusbdevice-serialnumber",
+        "href": "https://wicg.github.io/webusb/#dom-allowedusbdevice-serialnumber",
+        "linkingText": [
+          "serialNumber"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "AllowedUSBDevice"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "permission-api",
+          "href": "https://wicg.github.io/webusb/#permission-api",
+          "title": "Permission API",
+          "number": "7.2"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

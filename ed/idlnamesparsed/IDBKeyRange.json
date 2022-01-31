@@ -1,0 +1,231 @@
+{
+  "name": "IDBKeyRange",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Indexed Database API 3.0",
+      "url": "https://www.w3.org/TR/IndexedDB-3/"
+    },
+    "fragment": "[Exposed=(Window,Worker)]\ninterface IDBKeyRange {\n  readonly attribute any lower;\n  readonly attribute any upper;\n  readonly attribute boolean lowerOpen;\n  readonly attribute boolean upperOpen;\n\n  // Static construction methods:\n  [NewObject] static IDBKeyRange only(any value);\n  [NewObject] static IDBKeyRange lowerBound(any lower, optional boolean open = false);\n  [NewObject] static IDBKeyRange upperBound(any upper, optional boolean open = false);\n  [NewObject] static IDBKeyRange bound(any lower,\n                                       any upper,\n                                       optional boolean lowerOpen = false,\n                                       optional boolean upperOpen = false);\n\n  boolean includes(any key);\n};",
+    "href": "https://w3c.github.io/IndexedDB/#idbkeyrange"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/IndexedDB-3/": [
+      {
+        "id": "idbkeyrange",
+        "href": "https://w3c.github.io/IndexedDB/#idbkeyrange",
+        "linkingText": [
+          "IDBKeyRange"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "keyrange",
+          "href": "https://w3c.github.io/IndexedDB/#keyrange",
+          "title": "The IDBKeyRange interface",
+          "number": "4.7"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-idbkeyrange-lower",
+        "href": "https://w3c.github.io/IndexedDB/#dom-idbkeyrange-lower",
+        "linkingText": [
+          "lower"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "IDBKeyRange"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "keyrange",
+          "href": "https://w3c.github.io/IndexedDB/#keyrange",
+          "title": "The IDBKeyRange interface",
+          "number": "4.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-idbkeyrange-upper",
+        "href": "https://w3c.github.io/IndexedDB/#dom-idbkeyrange-upper",
+        "linkingText": [
+          "upper"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "IDBKeyRange"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "keyrange",
+          "href": "https://w3c.github.io/IndexedDB/#keyrange",
+          "title": "The IDBKeyRange interface",
+          "number": "4.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-idbkeyrange-loweropen",
+        "href": "https://w3c.github.io/IndexedDB/#dom-idbkeyrange-loweropen",
+        "linkingText": [
+          "lowerOpen"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "IDBKeyRange"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "keyrange",
+          "href": "https://w3c.github.io/IndexedDB/#keyrange",
+          "title": "The IDBKeyRange interface",
+          "number": "4.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-idbkeyrange-upperopen",
+        "href": "https://w3c.github.io/IndexedDB/#dom-idbkeyrange-upperopen",
+        "linkingText": [
+          "upperOpen"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "IDBKeyRange"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "keyrange",
+          "href": "https://w3c.github.io/IndexedDB/#keyrange",
+          "title": "The IDBKeyRange interface",
+          "number": "4.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-idbkeyrange-only",
+        "href": "https://w3c.github.io/IndexedDB/#dom-idbkeyrange-only",
+        "linkingText": [
+          "only(value)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "IDBKeyRange"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "keyrange",
+          "href": "https://w3c.github.io/IndexedDB/#keyrange",
+          "title": "The IDBKeyRange interface",
+          "number": "4.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-idbkeyrange-lowerbound",
+        "href": "https://w3c.github.io/IndexedDB/#dom-idbkeyrange-lowerbound",
+        "linkingText": [
+          "lowerBound(lower, open)",
+          "lowerBound(lower)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "IDBKeyRange"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "keyrange",
+          "href": "https://w3c.github.io/IndexedDB/#keyrange",
+          "title": "The IDBKeyRange interface",
+          "number": "4.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-idbkeyrange-upperbound",
+        "href": "https://w3c.github.io/IndexedDB/#dom-idbkeyrange-upperbound",
+        "linkingText": [
+          "upperBound(upper, open)",
+          "upperBound(upper)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "IDBKeyRange"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "keyrange",
+          "href": "https://w3c.github.io/IndexedDB/#keyrange",
+          "title": "The IDBKeyRange interface",
+          "number": "4.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-idbkeyrange-bound",
+        "href": "https://w3c.github.io/IndexedDB/#dom-idbkeyrange-bound",
+        "linkingText": [
+          "bound(lower, upper, lowerOpen, upperOpen)",
+          "bound(lower, upper, lowerOpen)",
+          "bound(lower, upper)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "IDBKeyRange"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "keyrange",
+          "href": "https://w3c.github.io/IndexedDB/#keyrange",
+          "title": "The IDBKeyRange interface",
+          "number": "4.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-idbkeyrange-includes",
+        "href": "https://w3c.github.io/IndexedDB/#dom-idbkeyrange-includes",
+        "linkingText": [
+          "includes(key)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "IDBKeyRange"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "keyrange",
+          "href": "https://w3c.github.io/IndexedDB/#keyrange",
+          "title": "The IDBKeyRange interface",
+          "number": "4.7"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

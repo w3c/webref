@@ -1,0 +1,80 @@
+{
+  "name": "QueuingStrategy",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Streams Standard",
+      "url": "https://streams.spec.whatwg.org/"
+    },
+    "fragment": "dictionary QueuingStrategy {\n  unrestricted double highWaterMark;\n  QueuingStrategySize size;\n};",
+    "href": "https://streams.spec.whatwg.org/#dictdef-queuingstrategy"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://streams.spec.whatwg.org/": [
+      {
+        "id": "dictdef-queuingstrategy",
+        "href": "https://streams.spec.whatwg.org/#dictdef-queuingstrategy",
+        "linkingText": [
+          "QueuingStrategy"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "qs-api",
+          "href": "https://streams.spec.whatwg.org/#qs-api",
+          "title": "The queuing strategy API",
+          "number": "7.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-queuingstrategy-highwatermark",
+        "href": "https://streams.spec.whatwg.org/#dom-queuingstrategy-highwatermark",
+        "linkingText": [
+          "highWaterMark"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "QueuingStrategy"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "qs-api",
+          "href": "https://streams.spec.whatwg.org/#qs-api",
+          "title": "The queuing strategy API",
+          "number": "7.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-queuingstrategy-size",
+        "href": "https://streams.spec.whatwg.org/#dom-queuingstrategy-size",
+        "linkingText": [
+          "size"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "QueuingStrategy"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "qs-api",
+          "href": "https://streams.spec.whatwg.org/#qs-api",
+          "title": "The queuing strategy API",
+          "number": "7.1"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

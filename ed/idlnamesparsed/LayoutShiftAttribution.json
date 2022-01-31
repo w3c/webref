@@ -1,0 +1,101 @@
+{
+  "name": "LayoutShiftAttribution",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Layout Instability API",
+      "url": "https://wicg.github.io/layout-instability/"
+    },
+    "fragment": "[Exposed=Window]\ninterface LayoutShiftAttribution {\n  readonly attribute Node? node;\n  readonly attribute DOMRectReadOnly previousRect;\n  readonly attribute DOMRectReadOnly currentRect;\n};",
+    "href": "https://wicg.github.io/layout-instability/#layoutshiftattribution"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://wicg.github.io/layout-instability/": [
+      {
+        "id": "layoutshiftattribution",
+        "href": "https://wicg.github.io/layout-instability/#layoutshiftattribution",
+        "linkingText": [
+          "LayoutShiftAttribution"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "sec-layout-shift-attribution",
+          "href": "https://wicg.github.io/layout-instability/#sec-layout-shift-attribution",
+          "title": "LayoutShiftAttribution interface",
+          "number": "4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-layoutshiftattribution-node",
+        "href": "https://wicg.github.io/layout-instability/#dom-layoutshiftattribution-node",
+        "linkingText": [
+          "node"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "LayoutShiftAttribution"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "sec-layout-shift-attribution",
+          "href": "https://wicg.github.io/layout-instability/#sec-layout-shift-attribution",
+          "title": "LayoutShiftAttribution interface",
+          "number": "4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-layoutshiftattribution-previousrect",
+        "href": "https://wicg.github.io/layout-instability/#dom-layoutshiftattribution-previousrect",
+        "linkingText": [
+          "previousRect"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "LayoutShiftAttribution"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "sec-report-layout-shift-sources",
+          "href": "https://wicg.github.io/layout-instability/#sec-report-layout-shift-sources",
+          "title": "Report the layout shift sources",
+          "number": "5.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-layoutshiftattribution-currentrect",
+        "href": "https://wicg.github.io/layout-instability/#dom-layoutshiftattribution-currentrect",
+        "linkingText": [
+          "currentRect"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "LayoutShiftAttribution"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "sec-report-layout-shift-sources",
+          "href": "https://wicg.github.io/layout-instability/#sec-report-layout-shift-sources",
+          "title": "Report the layout shift sources",
+          "number": "5.2"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

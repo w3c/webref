@@ -1,0 +1,395 @@
+{
+  "name": "RTCIceCandidate",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
+      "url": "https://www.w3.org/TR/webrtc/"
+    },
+    "fragment": "[Exposed=Window]\ninterface RTCIceCandidate {\n  constructor(optional RTCIceCandidateInit candidateInitDict = {});\n  readonly attribute DOMString candidate;\n  readonly attribute DOMString? sdpMid;\n  readonly attribute unsigned short? sdpMLineIndex;\n  readonly attribute DOMString? foundation;\n  readonly attribute RTCIceComponent? component;\n  readonly attribute unsigned long? priority;\n  readonly attribute DOMString? address;\n  readonly attribute RTCIceProtocol? protocol;\n  readonly attribute unsigned short? port;\n  readonly attribute RTCIceCandidateType? type;\n  readonly attribute RTCIceTcpCandidateType? tcpType;\n  readonly attribute DOMString? relatedAddress;\n  readonly attribute unsigned short? relatedPort;\n  readonly attribute DOMString? usernameFragment;\n  RTCIceCandidateInit toJSON();\n};",
+    "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidate"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webrtc/": [
+      {
+        "id": "dom-rtcicecandidate",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidate",
+        "linkingText": [
+          "RTCIceCandidate"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "rtcicecandidate-interface",
+          "href": "https://w3c.github.io/webrtc-pc/#rtcicecandidate-interface",
+          "title": "RTCIceCandidate Interface",
+          "number": "4.8.1"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-rtcicecandidate-constructor",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidate-constructor",
+        "linkingText": [
+          "constructor()",
+          "constructor(candidateInitDict)"
+        ],
+        "localLinkingText": [
+          "RTCIceCandidate.constructor",
+          "RTCIceCandidate.constructor()",
+          "constructor"
+        ],
+        "type": "constructor",
+        "for": [
+          "RTCIceCandidate"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "constructor-0",
+          "href": "https://w3c.github.io/webrtc-pc/#constructor-0",
+          "title": "Constructor"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcicecandidate-candidate",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidate-candidate",
+        "linkingText": [
+          "candidate"
+        ],
+        "localLinkingText": [
+          "RTCIceCandidate.candidate"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCIceCandidate"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-4",
+          "href": "https://w3c.github.io/webrtc-pc/#attributes-4",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcicecandidate-sdpmid",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidate-sdpmid",
+        "linkingText": [
+          "sdpMid"
+        ],
+        "localLinkingText": [
+          "RTCIceCandidate.sdpMid"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCIceCandidate"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-4",
+          "href": "https://w3c.github.io/webrtc-pc/#attributes-4",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcicecandidate-sdpmlineindex",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidate-sdpmlineindex",
+        "linkingText": [
+          "sdpMLineIndex"
+        ],
+        "localLinkingText": [
+          "RTCIceCandidate.sdpMLineIndex"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCIceCandidate"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-4",
+          "href": "https://w3c.github.io/webrtc-pc/#attributes-4",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcicecandidate-foundation",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidate-foundation",
+        "linkingText": [
+          "foundation"
+        ],
+        "localLinkingText": [
+          "RTCIceCandidate.foundation"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCIceCandidate"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-4",
+          "href": "https://w3c.github.io/webrtc-pc/#attributes-4",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcicecandidate-component",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidate-component",
+        "linkingText": [
+          "component"
+        ],
+        "localLinkingText": [
+          "RTCIceCandidate.component"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCIceCandidate"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-4",
+          "href": "https://w3c.github.io/webrtc-pc/#attributes-4",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcicecandidate-priority",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidate-priority",
+        "linkingText": [
+          "priority"
+        ],
+        "localLinkingText": [
+          "RTCIceCandidate.priority"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCIceCandidate"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-4",
+          "href": "https://w3c.github.io/webrtc-pc/#attributes-4",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcicecandidate-address",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidate-address",
+        "linkingText": [
+          "address"
+        ],
+        "localLinkingText": [
+          "RTCIceCandidate.address"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCIceCandidate"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-4",
+          "href": "https://w3c.github.io/webrtc-pc/#attributes-4",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcicecandidate-protocol",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidate-protocol",
+        "linkingText": [
+          "protocol"
+        ],
+        "localLinkingText": [
+          "RTCIceCandidate.protocol"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCIceCandidate"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-4",
+          "href": "https://w3c.github.io/webrtc-pc/#attributes-4",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcicecandidate-port",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidate-port",
+        "linkingText": [
+          "port"
+        ],
+        "localLinkingText": [
+          "RTCIceCandidate.port"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCIceCandidate"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-4",
+          "href": "https://w3c.github.io/webrtc-pc/#attributes-4",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcicecandidate-type",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidate-type",
+        "linkingText": [
+          "type"
+        ],
+        "localLinkingText": [
+          "RTCIceCandidate.type"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCIceCandidate"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-4",
+          "href": "https://w3c.github.io/webrtc-pc/#attributes-4",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcicecandidate-tcptype",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidate-tcptype",
+        "linkingText": [
+          "tcpType"
+        ],
+        "localLinkingText": [
+          "RTCIceCandidate.tcpType"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCIceCandidate"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-4",
+          "href": "https://w3c.github.io/webrtc-pc/#attributes-4",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcicecandidate-relatedaddress",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidate-relatedaddress",
+        "linkingText": [
+          "relatedAddress"
+        ],
+        "localLinkingText": [
+          "RTCIceCandidate.relatedAddress"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCIceCandidate"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-4",
+          "href": "https://w3c.github.io/webrtc-pc/#attributes-4",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcicecandidate-relatedport",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidate-relatedport",
+        "linkingText": [
+          "relatedPort"
+        ],
+        "localLinkingText": [
+          "RTCIceCandidate.relatedPort"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCIceCandidate"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-4",
+          "href": "https://w3c.github.io/webrtc-pc/#attributes-4",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcicecandidate-usernamefragment",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidate-usernamefragment",
+        "linkingText": [
+          "usernameFragment"
+        ],
+        "localLinkingText": [
+          "RTCIceCandidate.usernameFragment"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCIceCandidate"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-4",
+          "href": "https://w3c.github.io/webrtc-pc/#attributes-4",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcicecandidate-tojson",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidate-tojson",
+        "linkingText": [
+          "toJSON()"
+        ],
+        "localLinkingText": [
+          "RTCIceCandidate.toJSON",
+          "RTCIceCandidate.toJSON()",
+          "toJSON"
+        ],
+        "type": "method",
+        "for": [
+          "RTCIceCandidate"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "methods-2",
+          "href": "https://w3c.github.io/webrtc-pc/#methods-2",
+          "title": "Methods"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

@@ -1,0 +1,231 @@
+{
+  "name": "WindowControlsOverlay",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Window Controls Overlay",
+      "url": "https://wicg.github.io/window-controls-overlay/"
+    },
+    "fragment": "[Exposed=Window]\ninterface WindowControlsOverlay : EventTarget {\n  readonly attribute boolean visible;\n  DOMRect getTitlebarAreaRect();\n  attribute EventHandler ongeometrychange;\n};",
+    "href": "https://wicg.github.io/window-controls-overlay/#dom-windowcontrolsoverlay"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "EventTarget",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=*]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+      "href": "https://dom.spec.whatwg.org/#eventtarget"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://wicg.github.io/window-controls-overlay/": [
+      {
+        "id": "dom-windowcontrolsoverlay",
+        "href": "https://wicg.github.io/window-controls-overlay/#dom-windowcontrolsoverlay",
+        "linkingText": [
+          "WindowControlsOverlay"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "windowcontrolsoverlay-interface",
+          "href": "https://wicg.github.io/window-controls-overlay/#windowcontrolsoverlay-interface",
+          "title": "WindowControlsOverlay interface",
+          "number": "5"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-windowcontrolsoverlay-visible",
+        "href": "https://wicg.github.io/window-controls-overlay/#dom-windowcontrolsoverlay-visible",
+        "linkingText": [
+          "visible"
+        ],
+        "localLinkingText": [
+          "WindowControlsOverlay.visible"
+        ],
+        "type": "attribute",
+        "for": [
+          "WindowControlsOverlay"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-visible-attribute",
+          "href": "https://wicg.github.io/window-controls-overlay/#the-visible-attribute",
+          "title": "The visible attribute",
+          "number": "5.1"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-windowcontrolsoverlay-gettitlebararearect",
+        "href": "https://wicg.github.io/window-controls-overlay/#dom-windowcontrolsoverlay-gettitlebararearect",
+        "linkingText": [
+          "getTitlebarAreaRect()"
+        ],
+        "localLinkingText": [
+          "WindowControlsOverlay.getTitlebarAreaRect",
+          "WindowControlsOverlay.getTitlebarAreaRect()",
+          "getTitlebarAreaRect"
+        ],
+        "type": "method",
+        "for": [
+          "WindowControlsOverlay"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-gettitlebararearect-method",
+          "href": "https://wicg.github.io/window-controls-overlay/#the-gettitlebararearect-method",
+          "title": "The getTitlebarAreaRect method",
+          "number": "5.2"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-windowcontrolsoverlay-ongeometrychange",
+        "href": "https://wicg.github.io/window-controls-overlay/#dom-windowcontrolsoverlay-ongeometrychange",
+        "linkingText": [
+          "ongeometrychange"
+        ],
+        "localLinkingText": [
+          "WindowControlsOverlay.ongeometrychange"
+        ],
+        "type": "attribute",
+        "for": [
+          "WindowControlsOverlay"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-ongeometrychange-attribute",
+          "href": "https://wicg.github.io/window-controls-overlay/#the-ongeometrychange-attribute",
+          "title": "The ongeometrychange attribute",
+          "number": "5.3"
+        },
+        "definedIn": "heading"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "eventtarget",
+        "href": "https://dom.spec.whatwg.org/#eventtarget",
+        "linkingText": [
+          "EventTarget"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventtarget-eventtarget",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-eventtarget",
+        "linkingText": [
+          "EventTarget()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-addeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-addeventlistener",
+        "linkingText": [
+          "addEventListener(type, callback, options)",
+          "addEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-removeeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-removeeventlistener",
+        "linkingText": [
+          "removeEventListener(type, callback, options)",
+          "removeEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-dispatchevent",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-dispatchevent",
+        "linkingText": [
+          "dispatchEvent(event)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

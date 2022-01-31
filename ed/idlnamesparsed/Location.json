@@ -1,0 +1,311 @@
+{
+  "name": "Location",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "HTML Standard",
+      "url": "https://html.spec.whatwg.org/multipage/"
+    },
+    "fragment": "[Exposed=Window]\ninterface Location { // but see also additional creation steps and overridden internal methods\n  [LegacyUnforgeable] stringifier attribute USVString href;\n  [LegacyUnforgeable] readonly attribute USVString origin;\n  [LegacyUnforgeable] attribute USVString protocol;\n  [LegacyUnforgeable] attribute USVString host;\n  [LegacyUnforgeable] attribute USVString hostname;\n  [LegacyUnforgeable] attribute USVString port;\n  [LegacyUnforgeable] attribute USVString pathname;\n  [LegacyUnforgeable] attribute USVString search;\n  [LegacyUnforgeable] attribute USVString hash;\n\n  [LegacyUnforgeable] undefined assign(USVString url);\n  [LegacyUnforgeable] undefined replace(USVString url);\n  [LegacyUnforgeable] undefined reload();\n\n  [LegacyUnforgeable, SameObject] readonly attribute DOMStringList ancestorOrigins;\n};",
+    "href": "https://html.spec.whatwg.org/multipage/history.html#location"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://html.spec.whatwg.org/multipage/": [
+      {
+        "id": "location",
+        "href": "https://html.spec.whatwg.org/multipage/history.html#location",
+        "linkingText": [
+          "Location"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-location-interface",
+          "href": "https://html.spec.whatwg.org/multipage/history.html#the-location-interface",
+          "title": "The Location interface",
+          "number": "7.10.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-location-href",
+        "href": "https://html.spec.whatwg.org/multipage/history.html#dom-location-href",
+        "linkingText": [
+          "href"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Location"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-location-interface",
+          "href": "https://html.spec.whatwg.org/multipage/history.html#the-location-interface",
+          "title": "The Location interface",
+          "number": "7.10.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-location-origin",
+        "href": "https://html.spec.whatwg.org/multipage/history.html#dom-location-origin",
+        "linkingText": [
+          "origin"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Location"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-location-interface",
+          "href": "https://html.spec.whatwg.org/multipage/history.html#the-location-interface",
+          "title": "The Location interface",
+          "number": "7.10.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-location-protocol",
+        "href": "https://html.spec.whatwg.org/multipage/history.html#dom-location-protocol",
+        "linkingText": [
+          "protocol"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Location"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-location-interface",
+          "href": "https://html.spec.whatwg.org/multipage/history.html#the-location-interface",
+          "title": "The Location interface",
+          "number": "7.10.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-location-host",
+        "href": "https://html.spec.whatwg.org/multipage/history.html#dom-location-host",
+        "linkingText": [
+          "host"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Location"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-location-interface",
+          "href": "https://html.spec.whatwg.org/multipage/history.html#the-location-interface",
+          "title": "The Location interface",
+          "number": "7.10.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-location-hostname",
+        "href": "https://html.spec.whatwg.org/multipage/history.html#dom-location-hostname",
+        "linkingText": [
+          "hostname"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Location"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-location-interface",
+          "href": "https://html.spec.whatwg.org/multipage/history.html#the-location-interface",
+          "title": "The Location interface",
+          "number": "7.10.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-location-port",
+        "href": "https://html.spec.whatwg.org/multipage/history.html#dom-location-port",
+        "linkingText": [
+          "port"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Location"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-location-interface",
+          "href": "https://html.spec.whatwg.org/multipage/history.html#the-location-interface",
+          "title": "The Location interface",
+          "number": "7.10.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-location-pathname",
+        "href": "https://html.spec.whatwg.org/multipage/history.html#dom-location-pathname",
+        "linkingText": [
+          "pathname"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Location"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-location-interface",
+          "href": "https://html.spec.whatwg.org/multipage/history.html#the-location-interface",
+          "title": "The Location interface",
+          "number": "7.10.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-location-search",
+        "href": "https://html.spec.whatwg.org/multipage/history.html#dom-location-search",
+        "linkingText": [
+          "search"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Location"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-location-interface",
+          "href": "https://html.spec.whatwg.org/multipage/history.html#the-location-interface",
+          "title": "The Location interface",
+          "number": "7.10.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-location-hash",
+        "href": "https://html.spec.whatwg.org/multipage/history.html#dom-location-hash",
+        "linkingText": [
+          "hash"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Location"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-location-interface",
+          "href": "https://html.spec.whatwg.org/multipage/history.html#the-location-interface",
+          "title": "The Location interface",
+          "number": "7.10.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-location-assign",
+        "href": "https://html.spec.whatwg.org/multipage/history.html#dom-location-assign",
+        "linkingText": [
+          "assign(url)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Location"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-location-interface",
+          "href": "https://html.spec.whatwg.org/multipage/history.html#the-location-interface",
+          "title": "The Location interface",
+          "number": "7.10.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-location-replace",
+        "href": "https://html.spec.whatwg.org/multipage/history.html#dom-location-replace",
+        "linkingText": [
+          "replace(url)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Location"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-location-interface",
+          "href": "https://html.spec.whatwg.org/multipage/history.html#the-location-interface",
+          "title": "The Location interface",
+          "number": "7.10.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-location-reload",
+        "href": "https://html.spec.whatwg.org/multipage/history.html#dom-location-reload",
+        "linkingText": [
+          "reload()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Location"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-location-interface",
+          "href": "https://html.spec.whatwg.org/multipage/history.html#the-location-interface",
+          "title": "The Location interface",
+          "number": "7.10.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-location-ancestororigins",
+        "href": "https://html.spec.whatwg.org/multipage/history.html#dom-location-ancestororigins",
+        "linkingText": [
+          "ancestorOrigins"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Location"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-location-interface",
+          "href": "https://html.spec.whatwg.org/multipage/history.html#the-location-interface",
+          "title": "The Location interface",
+          "number": "7.10.5"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "name": "MemoryDescriptor",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "WebAssembly JavaScript Interface",
+      "url": "https://www.w3.org/TR/wasm-js-api-1/"
+    },
+    "fragment": "dictionary MemoryDescriptor {\n  required [EnforceRange] unsigned long initial;\n  [EnforceRange] unsigned long maximum;\n};",
+    "href": "https://webassembly.github.io/spec/js-api/#dictdef-memorydescriptor"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/wasm-js-api-1/": [
+      {
+        "id": "dictdef-memorydescriptor",
+        "href": "https://webassembly.github.io/spec/js-api/#dictdef-memorydescriptor",
+        "linkingText": [
+          "MemoryDescriptor"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "memories",
+          "href": "https://webassembly.github.io/spec/js-api/#memories",
+          "title": "Memories",
+          "number": "4.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-memorydescriptor-initial",
+        "href": "https://webassembly.github.io/spec/js-api/#dom-memorydescriptor-initial",
+        "linkingText": [
+          "initial"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MemoryDescriptor"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "memories",
+          "href": "https://webassembly.github.io/spec/js-api/#memories",
+          "title": "Memories",
+          "number": "4.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-memorydescriptor-maximum",
+        "href": "https://webassembly.github.io/spec/js-api/#dom-memorydescriptor-maximum",
+        "linkingText": [
+          "maximum"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MemoryDescriptor"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "memories",
+          "href": "https://webassembly.github.io/spec/js-api/#memories",
+          "title": "Memories",
+          "number": "4.3"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

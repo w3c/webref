@@ -1,0 +1,137 @@
+{
+  "name": "RTCOfferOptions",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
+      "url": "https://www.w3.org/TR/webrtc/"
+    },
+    "fragment": "dictionary RTCOfferOptions : RTCOfferAnswerOptions {\n  boolean iceRestart = false;\n};",
+    "href": "https://w3c.github.io/webrtc-pc/#dom-rtcofferoptions"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
+        "url": "https://www.w3.org/TR/webrtc/"
+      },
+      "fragment": "partial dictionary RTCOfferOptions {\n  boolean offerToReceiveAudio;\n  boolean offerToReceiveVideo;\n};"
+    }
+  ],
+  "inheritance": {
+    "name": "RTCOfferAnswerOptions",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
+        "url": "https://www.w3.org/TR/webrtc/"
+      },
+      "fragment": "dictionary RTCOfferAnswerOptions {};",
+      "href": "https://w3c.github.io/webrtc-pc/#dom-rtcofferansweroptions"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webrtc/": [
+      {
+        "id": "dom-rtcofferoptions",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcofferoptions",
+        "linkingText": [
+          "RTCOfferOptions"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-rtcofferoptions-members",
+          "href": "https://w3c.github.io/webrtc-pc/#dictionary-rtcofferoptions-members",
+          "title": "Dictionary RTCOfferOptions Members"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-rtcofferoptions-icerestart",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcofferoptions-icerestart",
+        "linkingText": [
+          "iceRestart"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RTCOfferOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-rtcofferoptions-members",
+          "href": "https://w3c.github.io/webrtc-pc/#dictionary-rtcofferoptions-members",
+          "title": "Dictionary RTCOfferOptions Members"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcofferoptions-offertoreceiveaudio",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcofferoptions-offertoreceiveaudio",
+        "linkingText": [
+          "offerToReceiveAudio"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RTCOfferOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-2",
+          "href": "https://w3c.github.io/webrtc-pc/#attributes-2",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcofferoptions-offertoreceivevideo",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcofferoptions-offertoreceivevideo",
+        "linkingText": [
+          "offerToReceiveVideo"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RTCOfferOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-2",
+          "href": "https://w3c.github.io/webrtc-pc/#attributes-2",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcofferansweroptions",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcofferansweroptions",
+        "linkingText": [
+          "RTCOfferAnswerOptions"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-rtcofferansweroptions-members",
+          "href": "https://w3c.github.io/webrtc-pc/#dictionary-rtcofferansweroptions-members",
+          "title": "Dictionary RTCOfferAnswerOptions Members"
+        },
+        "definedIn": "heading"
+      }
+    ]
+  }
+}

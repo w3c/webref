@@ -1,0 +1,197 @@
+{
+  "name": "XRCPUDepthInformation",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebXR Depth Sensing Module",
+      "url": "https://www.w3.org/TR/webxr-depth-sensing-1/"
+    },
+    "fragment": "[Exposed=Window]\ninterface XRCPUDepthInformation : XRDepthInformation {\n  [SameObject] readonly attribute ArrayBuffer data;\n\n  float getDepthInMeters(float x, float y);\n};",
+    "href": "https://immersive-web.github.io/depth-sensing/#xrcpudepthinformation"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "XRDepthInformation",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "WebXR Depth Sensing Module",
+        "url": "https://www.w3.org/TR/webxr-depth-sensing-1/"
+      },
+      "fragment": "[SecureContext, Exposed=Window]\ninterface XRDepthInformation {\n  readonly attribute unsigned long width;\n  readonly attribute unsigned long height;\n\n  [SameObject] readonly attribute XRRigidTransform normDepthBufferFromNormView;\n  readonly attribute float rawValueToMeters;\n};",
+      "href": "https://immersive-web.github.io/depth-sensing/#xrdepthinformation"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webxr-depth-sensing-1/": [
+      {
+        "id": "xrcpudepthinformation",
+        "href": "https://immersive-web.github.io/depth-sensing/#xrcpudepthinformation",
+        "linkingText": [
+          "XRCPUDepthInformation"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xr-cpu-depth-info-section",
+          "href": "https://immersive-web.github.io/depth-sensing/#xr-cpu-depth-info-section",
+          "title": "XRCPUDepthInformation",
+          "number": "3.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-xrcpudepthinformation-data",
+        "href": "https://immersive-web.github.io/depth-sensing/#dom-xrcpudepthinformation-data",
+        "linkingText": [
+          "data"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XRCPUDepthInformation"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xr-cpu-depth-info-section",
+          "href": "https://immersive-web.github.io/depth-sensing/#xr-cpu-depth-info-section",
+          "title": "XRCPUDepthInformation",
+          "number": "3.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-xrcpudepthinformation-getdepthinmeters",
+        "href": "https://immersive-web.github.io/depth-sensing/#dom-xrcpudepthinformation-getdepthinmeters",
+        "linkingText": [
+          "getDepthInMeters(x, y)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "XRCPUDepthInformation"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xr-cpu-depth-info-section",
+          "href": "https://immersive-web.github.io/depth-sensing/#xr-cpu-depth-info-section",
+          "title": "XRCPUDepthInformation",
+          "number": "3.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "xrdepthinformation",
+        "href": "https://immersive-web.github.io/depth-sensing/#xrdepthinformation",
+        "linkingText": [
+          "XRDepthInformation"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xr-depth-info-section",
+          "href": "https://immersive-web.github.io/depth-sensing/#xr-depth-info-section",
+          "title": "XRDepthInformation",
+          "number": "3.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-xrdepthinformation-width",
+        "href": "https://immersive-web.github.io/depth-sensing/#dom-xrdepthinformation-width",
+        "linkingText": [
+          "width"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XRDepthInformation"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xr-depth-info-section",
+          "href": "https://immersive-web.github.io/depth-sensing/#xr-depth-info-section",
+          "title": "XRDepthInformation",
+          "number": "3.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-xrdepthinformation-height",
+        "href": "https://immersive-web.github.io/depth-sensing/#dom-xrdepthinformation-height",
+        "linkingText": [
+          "height"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XRDepthInformation"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xr-depth-info-section",
+          "href": "https://immersive-web.github.io/depth-sensing/#xr-depth-info-section",
+          "title": "XRDepthInformation",
+          "number": "3.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-xrdepthinformation-normdepthbufferfromnormview",
+        "href": "https://immersive-web.github.io/depth-sensing/#dom-xrdepthinformation-normdepthbufferfromnormview",
+        "linkingText": [
+          "normDepthBufferFromNormView"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XRDepthInformation"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xr-depth-info-section",
+          "href": "https://immersive-web.github.io/depth-sensing/#xr-depth-info-section",
+          "title": "XRDepthInformation",
+          "number": "3.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-xrdepthinformation-rawvaluetometers",
+        "href": "https://immersive-web.github.io/depth-sensing/#dom-xrdepthinformation-rawvaluetometers",
+        "linkingText": [
+          "rawValueToMeters"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XRDepthInformation"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xr-depth-info-section",
+          "href": "https://immersive-web.github.io/depth-sensing/#xr-depth-info-section",
+          "title": "XRDepthInformation",
+          "number": "3.1"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

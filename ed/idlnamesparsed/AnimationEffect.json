@@ -1,0 +1,262 @@
+{
+  "name": "AnimationEffect",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Web Animations",
+      "url": "https://www.w3.org/TR/web-animations-1/"
+    },
+    "fragment": "[Exposed=Window]\ninterface AnimationEffect {\n    EffectTiming         getTiming();\n    ComputedEffectTiming getComputedTiming();\n    undefined            updateTiming(optional OptionalEffectTiming timing = {});\n};",
+    "href": "https://drafts.csswg.org/web-animations-1/#animationeffect"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "Web Animations Level 2",
+        "url": "https://drafts.csswg.org/web-animations-2/"
+      },
+      "fragment": "[Exposed=Window]\npartial interface AnimationEffect {\n    // Timing hierarchy\n    readonly attribute GroupEffect?     parent;\n    readonly attribute AnimationEffect? previousSibling;\n    readonly attribute AnimationEffect? nextSibling;\n\n    undefined before (AnimationEffect... effects);\n    undefined after (AnimationEffect... effects);\n    undefined replace (AnimationEffect... effects);\n    undefined remove ();\n};"
+    }
+  ],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/web-animations-1/": [
+      {
+        "id": "animationeffect",
+        "href": "https://drafts.csswg.org/web-animations-1/#animationeffect",
+        "linkingText": [
+          "AnimationEffect"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-animationeffect-interface",
+          "href": "https://drafts.csswg.org/web-animations-1/#the-animationeffect-interface",
+          "title": "The AnimationEffect interface",
+          "number": "6.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-animationeffect-gettiming",
+        "href": "https://drafts.csswg.org/web-animations-1/#dom-animationeffect-gettiming",
+        "linkingText": [
+          "getTiming()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "AnimationEffect"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-animationeffect-interface",
+          "href": "https://drafts.csswg.org/web-animations-1/#the-animationeffect-interface",
+          "title": "The AnimationEffect interface",
+          "number": "6.5"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-animationeffect-getcomputedtiming",
+        "href": "https://drafts.csswg.org/web-animations-1/#dom-animationeffect-getcomputedtiming",
+        "linkingText": [
+          "getComputedTiming()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "AnimationEffect"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-animationeffect-interface",
+          "href": "https://drafts.csswg.org/web-animations-1/#the-animationeffect-interface",
+          "title": "The AnimationEffect interface",
+          "number": "6.5"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-animationeffect-updatetiming",
+        "href": "https://drafts.csswg.org/web-animations-1/#dom-animationeffect-updatetiming",
+        "linkingText": [
+          "updateTiming(timing)",
+          "updateTiming()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "AnimationEffect"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-animationeffect-interface",
+          "href": "https://drafts.csswg.org/web-animations-1/#the-animationeffect-interface",
+          "title": "The AnimationEffect interface",
+          "number": "6.5"
+        },
+        "definedIn": "dt"
+      }
+    ],
+    "https://drafts.csswg.org/web-animations-2/": [
+      {
+        "id": "dom-animationeffect-parent",
+        "href": "https://drafts.csswg.org/web-animations-2/#dom-animationeffect-parent",
+        "linkingText": [
+          "parent"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "AnimationEffect"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-animationeffect-interface",
+          "href": "https://drafts.csswg.org/web-animations-2/#the-animationeffect-interface",
+          "title": "The AnimationEffect interface",
+          "number": "5.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-animationeffect-previoussibling",
+        "href": "https://drafts.csswg.org/web-animations-2/#dom-animationeffect-previoussibling",
+        "linkingText": [
+          "previousSibling"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "AnimationEffect"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-animationeffect-interface",
+          "href": "https://drafts.csswg.org/web-animations-2/#the-animationeffect-interface",
+          "title": "The AnimationEffect interface",
+          "number": "5.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-animationeffect-nextsibling",
+        "href": "https://drafts.csswg.org/web-animations-2/#dom-animationeffect-nextsibling",
+        "linkingText": [
+          "nextSibling"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "AnimationEffect"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-animationeffect-interface",
+          "href": "https://drafts.csswg.org/web-animations-2/#the-animationeffect-interface",
+          "title": "The AnimationEffect interface",
+          "number": "5.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-animationeffect-before",
+        "href": "https://drafts.csswg.org/web-animations-2/#dom-animationeffect-before",
+        "linkingText": [
+          "before(...effects)",
+          "before()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "AnimationEffect"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-animationeffect-interface",
+          "href": "https://drafts.csswg.org/web-animations-2/#the-animationeffect-interface",
+          "title": "The AnimationEffect interface",
+          "number": "5.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-animationeffect-after",
+        "href": "https://drafts.csswg.org/web-animations-2/#dom-animationeffect-after",
+        "linkingText": [
+          "after(...effects)",
+          "after()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "AnimationEffect"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-animationeffect-interface",
+          "href": "https://drafts.csswg.org/web-animations-2/#the-animationeffect-interface",
+          "title": "The AnimationEffect interface",
+          "number": "5.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-animationeffect-replace",
+        "href": "https://drafts.csswg.org/web-animations-2/#dom-animationeffect-replace",
+        "linkingText": [
+          "replace(...effects)",
+          "replace()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "AnimationEffect"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-animationeffect-interface",
+          "href": "https://drafts.csswg.org/web-animations-2/#the-animationeffect-interface",
+          "title": "The AnimationEffect interface",
+          "number": "5.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-animationeffect-remove",
+        "href": "https://drafts.csswg.org/web-animations-2/#dom-animationeffect-remove",
+        "linkingText": [
+          "remove()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "AnimationEffect"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-animationeffect-interface",
+          "href": "https://drafts.csswg.org/web-animations-2/#the-animationeffect-interface",
+          "title": "The AnimationEffect interface",
+          "number": "5.3"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

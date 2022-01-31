@@ -1,0 +1,110 @@
+{
+  "name": "MediaKeyStatusMap",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Encrypted Media Extensions",
+      "url": "https://www.w3.org/TR/encrypted-media/"
+    },
+    "fragment": "[Exposed=Window, SecureContext] interface MediaKeyStatusMap {\n    iterable<BufferSource,MediaKeyStatus>;\n    readonly        attribute unsigned long size;\n    boolean has (BufferSource keyId);\n    (MediaKeyStatus or undefined)     get (BufferSource keyId);\n};",
+    "href": "https://w3c.github.io/encrypted-media/#dom-mediakeystatusmap"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/encrypted-media/": [
+      {
+        "id": "dom-mediakeystatusmap",
+        "href": "https://w3c.github.io/encrypted-media/#dom-mediakeystatusmap",
+        "linkingText": [
+          "MediaKeyStatusMap"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "mediakeystatusmap-interface",
+          "href": "https://w3c.github.io/encrypted-media/#mediakeystatusmap-interface",
+          "title": "MediaKeyStatusMap Interface",
+          "number": "6.1"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-mediakeystatusmap-size",
+        "href": "https://w3c.github.io/encrypted-media/#dom-mediakeystatusmap-size",
+        "linkingText": [
+          "size"
+        ],
+        "localLinkingText": [
+          "MediaKeyStatusMap.size"
+        ],
+        "type": "attribute",
+        "for": [
+          "MediaKeyStatusMap"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-1",
+          "href": "https://w3c.github.io/encrypted-media/#attributes-1",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediakeystatusmap-has",
+        "href": "https://w3c.github.io/encrypted-media/#dom-mediakeystatusmap-has",
+        "linkingText": [
+          "has()",
+          "has(keyId)"
+        ],
+        "localLinkingText": [
+          "MediaKeyStatusMap.has",
+          "MediaKeyStatusMap.has()",
+          "has"
+        ],
+        "type": "method",
+        "for": [
+          "MediaKeyStatusMap"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "methods-3",
+          "href": "https://w3c.github.io/encrypted-media/#methods-3",
+          "title": "Methods"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediakeystatusmap-get",
+        "href": "https://w3c.github.io/encrypted-media/#dom-mediakeystatusmap-get",
+        "linkingText": [
+          "get()",
+          "get(keyId)"
+        ],
+        "localLinkingText": [
+          "MediaKeyStatusMap.get",
+          "MediaKeyStatusMap.get()",
+          "get"
+        ],
+        "type": "method",
+        "for": [
+          "MediaKeyStatusMap"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "methods-3",
+          "href": "https://w3c.github.io/encrypted-media/#methods-3",
+          "title": "Methods"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

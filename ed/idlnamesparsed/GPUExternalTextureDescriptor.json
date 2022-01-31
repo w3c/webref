@@ -1,0 +1,134 @@
+{
+  "name": "GPUExternalTextureDescriptor",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "WebGPU",
+      "url": "https://www.w3.org/TR/webgpu/"
+    },
+    "fragment": "dictionary GPUExternalTextureDescriptor : GPUObjectDescriptorBase {\n    required HTMLVideoElement source;\n    GPUPredefinedColorSpace colorSpace = \"srgb\";\n};",
+    "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpuexternaltexturedescriptor"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "GPUObjectDescriptorBase",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "WebGPU",
+        "url": "https://www.w3.org/TR/webgpu/"
+      },
+      "fragment": "dictionary GPUObjectDescriptorBase {\n    USVString label;\n};",
+      "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpuobjectdescriptorbase"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webgpu/": [
+      {
+        "id": "dictdef-gpuexternaltexturedescriptor",
+        "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpuexternaltexturedescriptor",
+        "linkingText": [
+          "GPUExternalTextureDescriptor"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "external-texture-creation",
+          "href": "https://gpuweb.github.io/gpuweb/#external-texture-creation",
+          "title": "Importing External Textures",
+          "number": "6.4.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gpuexternaltexturedescriptor-source",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpuexternaltexturedescriptor-source",
+        "linkingText": [
+          "source"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "GPUExternalTextureDescriptor"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "external-texture-creation",
+          "href": "https://gpuweb.github.io/gpuweb/#external-texture-creation",
+          "title": "Importing External Textures",
+          "number": "6.4.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gpuexternaltexturedescriptor-colorspace",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpuexternaltexturedescriptor-colorspace",
+        "linkingText": [
+          "colorSpace"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "GPUExternalTextureDescriptor"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "external-texture-creation",
+          "href": "https://gpuweb.github.io/gpuweb/#external-texture-creation",
+          "title": "Importing External Textures",
+          "number": "6.4.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dictdef-gpuobjectdescriptorbase",
+        "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpuobjectdescriptorbase",
+        "linkingText": [
+          "GPUObjectDescriptorBase"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "object-descriptors",
+          "href": "https://gpuweb.github.io/gpuweb/#object-descriptors",
+          "title": "Object Descriptors",
+          "number": "3.1.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gpuobjectdescriptorbase-label",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpuobjectdescriptorbase-label",
+        "linkingText": [
+          "label"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "GPUObjectDescriptorBase"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "object-descriptors",
+          "href": "https://gpuweb.github.io/gpuweb/#object-descriptors",
+          "title": "Object Descriptors",
+          "number": "3.1.4"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

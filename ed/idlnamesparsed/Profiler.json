@@ -1,0 +1,258 @@
+{
+  "name": "Profiler",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "JS Self-Profiling API",
+      "url": "https://wicg.github.io/js-self-profiling/"
+    },
+    "fragment": "[Exposed=Window]\ninterface Profiler : EventTarget {\n  readonly attribute DOMHighResTimeStamp sampleInterval;\n  readonly attribute boolean stopped;\n\n  constructor(ProfilerInitOptions options);\n  Promise<ProfilerTrace> stop();\n};",
+    "href": "https://wicg.github.io/js-self-profiling/#dom-profiler"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "EventTarget",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=*]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+      "href": "https://dom.spec.whatwg.org/#eventtarget"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://wicg.github.io/js-self-profiling/": [
+      {
+        "id": "dom-profiler",
+        "href": "https://wicg.github.io/js-self-profiling/#dom-profiler",
+        "linkingText": [
+          "Profiler"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-profiler-interface",
+          "href": "https://wicg.github.io/js-self-profiling/#the-profiler-interface",
+          "title": "The Profiler Interface",
+          "number": "6"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-profiler-sampleinterval",
+        "href": "https://wicg.github.io/js-self-profiling/#dom-profiler-sampleinterval",
+        "linkingText": [
+          "sampleInterval"
+        ],
+        "localLinkingText": [
+          "Profiler.sampleInterval"
+        ],
+        "type": "attribute",
+        "for": [
+          "Profiler"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-profiler-interface",
+          "href": "https://wicg.github.io/js-self-profiling/#the-profiler-interface",
+          "title": "The Profiler Interface",
+          "number": "6"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-profiler-stopped",
+        "href": "https://wicg.github.io/js-self-profiling/#dom-profiler-stopped",
+        "linkingText": [
+          "stopped"
+        ],
+        "localLinkingText": [
+          "Profiler.stopped"
+        ],
+        "type": "attribute",
+        "for": [
+          "Profiler"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-profiler-interface",
+          "href": "https://wicg.github.io/js-self-profiling/#the-profiler-interface",
+          "title": "The Profiler Interface",
+          "number": "6"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-profiler-constructor",
+        "href": "https://wicg.github.io/js-self-profiling/#dom-profiler-constructor",
+        "linkingText": [
+          "constructor()",
+          "new Profiler(options)",
+          "constructor(options)"
+        ],
+        "localLinkingText": [
+          "Profiler.constructor",
+          "Profiler.constructor()",
+          "constructor"
+        ],
+        "type": "constructor",
+        "for": [
+          "Profiler"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "new-profiler-options",
+          "href": "https://wicg.github.io/js-self-profiling/#new-profiler-options",
+          "title": "new Profiler(options)",
+          "number": "6.1"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-profiler-stop",
+        "href": "https://wicg.github.io/js-self-profiling/#dom-profiler-stop",
+        "linkingText": [
+          "stop()"
+        ],
+        "localLinkingText": [
+          "Profiler.stop",
+          "Profiler.stop()",
+          "stop"
+        ],
+        "type": "method",
+        "for": [
+          "Profiler"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "stop-method",
+          "href": "https://wicg.github.io/js-self-profiling/#stop-method",
+          "title": "stop() method",
+          "number": "6.2"
+        },
+        "definedIn": "heading"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "eventtarget",
+        "href": "https://dom.spec.whatwg.org/#eventtarget",
+        "linkingText": [
+          "EventTarget"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventtarget-eventtarget",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-eventtarget",
+        "linkingText": [
+          "EventTarget()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-addeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-addeventlistener",
+        "linkingText": [
+          "addEventListener(type, callback, options)",
+          "addEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-removeeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-removeeventlistener",
+        "linkingText": [
+          "removeEventListener(type, callback, options)",
+          "removeEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-dispatchevent",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-dispatchevent",
+        "linkingText": [
+          "dispatchEvent(event)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

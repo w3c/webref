@@ -1,0 +1,217 @@
+{
+  "name": "DOMQuad",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Geometry Interfaces Module Level 1",
+      "url": "https://www.w3.org/TR/geometry-1/"
+    },
+    "fragment": "[Exposed=(Window,Worker),\n Serializable]\ninterface DOMQuad {\n    constructor(optional DOMPointInit p1 = {}, optional DOMPointInit p2 = {},\n            optional DOMPointInit p3 = {}, optional DOMPointInit p4 = {});\n\n    [NewObject] static DOMQuad fromRect(optional DOMRectInit other = {});\n    [NewObject] static DOMQuad fromQuad(optional DOMQuadInit other = {});\n\n    [SameObject] readonly attribute DOMPoint p1;\n    [SameObject] readonly attribute DOMPoint p2;\n    [SameObject] readonly attribute DOMPoint p3;\n    [SameObject] readonly attribute DOMPoint p4;\n    [NewObject] DOMRect getBounds();\n\n    [Default] object toJSON();\n};",
+    "href": "https://drafts.fxtf.org/geometry/#domquad"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/geometry-1/": [
+      {
+        "id": "domquad",
+        "href": "https://drafts.fxtf.org/geometry/#domquad",
+        "linkingText": [
+          "DOMQuad"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "DOMQuad",
+          "href": "https://drafts.fxtf.org/geometry/#DOMQuad",
+          "title": "The DOMQuad interface",
+          "number": "5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-domquad-domquad",
+        "href": "https://drafts.fxtf.org/geometry/#dom-domquad-domquad",
+        "linkingText": [
+          "DOMQuad(p1, p2, p3, p4)",
+          "constructor(p1, p2, p3, p4)",
+          "DOMQuad(p1, p2, p3)",
+          "constructor(p1, p2, p3)",
+          "DOMQuad(p1, p2)",
+          "constructor(p1, p2)",
+          "DOMQuad(p1)",
+          "constructor(p1)",
+          "DOMQuad()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "DOMQuad"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "DOMQuad",
+          "href": "https://drafts.fxtf.org/geometry/#DOMQuad",
+          "title": "The DOMQuad interface",
+          "number": "5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-domquad-fromrect",
+        "href": "https://drafts.fxtf.org/geometry/#dom-domquad-fromrect",
+        "linkingText": [
+          "fromRect(other)",
+          "fromRect()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "DOMQuad"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "DOMQuad",
+          "href": "https://drafts.fxtf.org/geometry/#DOMQuad",
+          "title": "The DOMQuad interface",
+          "number": "5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-domquad-fromquad",
+        "href": "https://drafts.fxtf.org/geometry/#dom-domquad-fromquad",
+        "linkingText": [
+          "fromQuad(other)",
+          "fromQuad()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "DOMQuad"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "DOMQuad",
+          "href": "https://drafts.fxtf.org/geometry/#DOMQuad",
+          "title": "The DOMQuad interface",
+          "number": "5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-domquad-p1",
+        "href": "https://drafts.fxtf.org/geometry/#dom-domquad-p1",
+        "linkingText": [
+          "p1"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "DOMQuad"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "DOMQuad",
+          "href": "https://drafts.fxtf.org/geometry/#DOMQuad",
+          "title": "The DOMQuad interface",
+          "number": "5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-domquad-p2",
+        "href": "https://drafts.fxtf.org/geometry/#dom-domquad-p2",
+        "linkingText": [
+          "p2"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "DOMQuad"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "DOMQuad",
+          "href": "https://drafts.fxtf.org/geometry/#DOMQuad",
+          "title": "The DOMQuad interface",
+          "number": "5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-domquad-p3",
+        "href": "https://drafts.fxtf.org/geometry/#dom-domquad-p3",
+        "linkingText": [
+          "p3"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "DOMQuad"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "DOMQuad",
+          "href": "https://drafts.fxtf.org/geometry/#DOMQuad",
+          "title": "The DOMQuad interface",
+          "number": "5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-domquad-p4",
+        "href": "https://drafts.fxtf.org/geometry/#dom-domquad-p4",
+        "linkingText": [
+          "p4"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "DOMQuad"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "DOMQuad",
+          "href": "https://drafts.fxtf.org/geometry/#DOMQuad",
+          "title": "The DOMQuad interface",
+          "number": "5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-domquad-getbounds",
+        "href": "https://drafts.fxtf.org/geometry/#dom-domquad-getbounds",
+        "linkingText": [
+          "getBounds()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "DOMQuad"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "DOMQuad",
+          "href": "https://drafts.fxtf.org/geometry/#DOMQuad",
+          "title": "The DOMQuad interface",
+          "number": "5"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

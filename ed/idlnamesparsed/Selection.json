@@ -1,0 +1,562 @@
+{
+  "name": "Selection",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Selection API",
+      "url": "https://www.w3.org/TR/selection-api/"
+    },
+    "fragment": "[Exposed=Window]\ninterface Selection {\n  readonly attribute Node? anchorNode;\n  readonly attribute unsigned long anchorOffset;\n  readonly attribute Node? focusNode;\n  readonly attribute unsigned long focusOffset;\n  readonly attribute boolean isCollapsed;\n  readonly attribute unsigned long rangeCount;\n  readonly attribute DOMString type;\n  Range getRangeAt(unsigned long index);\n  undefined addRange(Range range);\n  undefined removeRange(Range range);\n  undefined removeAllRanges();\n  undefined empty();\n  undefined collapse(Node? node, optional unsigned long offset = 0);\n  undefined setPosition(Node? node, optional unsigned long offset = 0);\n  undefined collapseToStart();\n  undefined collapseToEnd();\n  undefined extend(Node node, optional unsigned long offset = 0);\n  undefined setBaseAndExtent(Node anchorNode, unsigned long anchorOffset, Node focusNode, unsigned long focusOffset);\n  undefined selectAllChildren(Node node);\n  [CEReactions]\n  undefined deleteFromDocument();\n  boolean containsNode(Node node, optional boolean allowPartialContainment = false);\n  stringifier;\n};",
+    "href": "https://w3c.github.io/selection-api/#dom-selection"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/selection-api/": [
+      {
+        "id": "dom-selection",
+        "href": "https://w3c.github.io/selection-api/#dom-selection",
+        "linkingText": [
+          "Selection"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "selection-interface",
+          "href": "https://w3c.github.io/selection-api/#selection-interface",
+          "title": "Selection interface",
+          "number": "3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-selection-anchornode",
+        "href": "https://w3c.github.io/selection-api/#dom-selection-anchornode",
+        "linkingText": [
+          "anchorNode"
+        ],
+        "localLinkingText": [
+          "Selection.anchorNode"
+        ],
+        "type": "attribute",
+        "for": [
+          "Selection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "selection-interface",
+          "href": "https://w3c.github.io/selection-api/#selection-interface",
+          "title": "Selection interface",
+          "number": "3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-selection-anchoroffset",
+        "href": "https://w3c.github.io/selection-api/#dom-selection-anchoroffset",
+        "linkingText": [
+          "anchorOffset"
+        ],
+        "localLinkingText": [
+          "Selection.anchorOffset"
+        ],
+        "type": "attribute",
+        "for": [
+          "Selection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "selection-interface",
+          "href": "https://w3c.github.io/selection-api/#selection-interface",
+          "title": "Selection interface",
+          "number": "3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-selection-focusnode",
+        "href": "https://w3c.github.io/selection-api/#dom-selection-focusnode",
+        "linkingText": [
+          "focusNode"
+        ],
+        "localLinkingText": [
+          "Selection.focusNode"
+        ],
+        "type": "attribute",
+        "for": [
+          "Selection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "selection-interface",
+          "href": "https://w3c.github.io/selection-api/#selection-interface",
+          "title": "Selection interface",
+          "number": "3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-selection-focusoffset",
+        "href": "https://w3c.github.io/selection-api/#dom-selection-focusoffset",
+        "linkingText": [
+          "focusOffset"
+        ],
+        "localLinkingText": [
+          "Selection.focusOffset"
+        ],
+        "type": "attribute",
+        "for": [
+          "Selection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "selection-interface",
+          "href": "https://w3c.github.io/selection-api/#selection-interface",
+          "title": "Selection interface",
+          "number": "3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-selection-iscollapsed",
+        "href": "https://w3c.github.io/selection-api/#dom-selection-iscollapsed",
+        "linkingText": [
+          "isCollapsed"
+        ],
+        "localLinkingText": [
+          "Selection.isCollapsed"
+        ],
+        "type": "attribute",
+        "for": [
+          "Selection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "selection-interface",
+          "href": "https://w3c.github.io/selection-api/#selection-interface",
+          "title": "Selection interface",
+          "number": "3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-selection-rangecount",
+        "href": "https://w3c.github.io/selection-api/#dom-selection-rangecount",
+        "linkingText": [
+          "rangeCount"
+        ],
+        "localLinkingText": [
+          "Selection.rangeCount"
+        ],
+        "type": "attribute",
+        "for": [
+          "Selection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "selection-interface",
+          "href": "https://w3c.github.io/selection-api/#selection-interface",
+          "title": "Selection interface",
+          "number": "3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-selection-type",
+        "href": "https://w3c.github.io/selection-api/#dom-selection-type",
+        "linkingText": [
+          "type"
+        ],
+        "localLinkingText": [
+          "Selection.type"
+        ],
+        "type": "attribute",
+        "for": [
+          "Selection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "selection-interface",
+          "href": "https://w3c.github.io/selection-api/#selection-interface",
+          "title": "Selection interface",
+          "number": "3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-selection-getrangeat",
+        "href": "https://w3c.github.io/selection-api/#dom-selection-getrangeat",
+        "linkingText": [
+          "getRangeAt()",
+          "getRangeAt(index)"
+        ],
+        "localLinkingText": [
+          "Selection.getRangeAt",
+          "Selection.getRangeAt()",
+          "getRangeAt"
+        ],
+        "type": "method",
+        "for": [
+          "Selection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "selection-interface",
+          "href": "https://w3c.github.io/selection-api/#selection-interface",
+          "title": "Selection interface",
+          "number": "3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-selection-addrange",
+        "href": "https://w3c.github.io/selection-api/#dom-selection-addrange",
+        "linkingText": [
+          "addRange()",
+          "addRange(range)"
+        ],
+        "localLinkingText": [
+          "Selection.addRange",
+          "Selection.addRange()",
+          "addRange"
+        ],
+        "type": "method",
+        "for": [
+          "Selection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "selection-interface",
+          "href": "https://w3c.github.io/selection-api/#selection-interface",
+          "title": "Selection interface",
+          "number": "3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-selection-removerange",
+        "href": "https://w3c.github.io/selection-api/#dom-selection-removerange",
+        "linkingText": [
+          "removeRange()",
+          "removeRange(range)"
+        ],
+        "localLinkingText": [
+          "Selection.removeRange",
+          "Selection.removeRange()",
+          "removeRange"
+        ],
+        "type": "method",
+        "for": [
+          "Selection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "selection-interface",
+          "href": "https://w3c.github.io/selection-api/#selection-interface",
+          "title": "Selection interface",
+          "number": "3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-selection-removeallranges",
+        "href": "https://w3c.github.io/selection-api/#dom-selection-removeallranges",
+        "linkingText": [
+          "removeAllRanges()"
+        ],
+        "localLinkingText": [
+          "Selection.removeAllRanges",
+          "Selection.removeAllRanges()",
+          "removeAllRanges"
+        ],
+        "type": "method",
+        "for": [
+          "Selection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "selection-interface",
+          "href": "https://w3c.github.io/selection-api/#selection-interface",
+          "title": "Selection interface",
+          "number": "3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-selection-empty",
+        "href": "https://w3c.github.io/selection-api/#dom-selection-empty",
+        "linkingText": [
+          "empty()"
+        ],
+        "localLinkingText": [
+          "Selection.empty",
+          "Selection.empty()",
+          "empty"
+        ],
+        "type": "method",
+        "for": [
+          "Selection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "selection-interface",
+          "href": "https://w3c.github.io/selection-api/#selection-interface",
+          "title": "Selection interface",
+          "number": "3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-selection-collapse",
+        "href": "https://w3c.github.io/selection-api/#dom-selection-collapse",
+        "linkingText": [
+          "collapse()",
+          "collapse(node)",
+          "collapse(node, offset)"
+        ],
+        "localLinkingText": [
+          "Selection.collapse",
+          "Selection.collapse()",
+          "collapse"
+        ],
+        "type": "method",
+        "for": [
+          "Selection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "selection-interface",
+          "href": "https://w3c.github.io/selection-api/#selection-interface",
+          "title": "Selection interface",
+          "number": "3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-selection-setposition",
+        "href": "https://w3c.github.io/selection-api/#dom-selection-setposition",
+        "linkingText": [
+          "setPosition()",
+          "setPosition(node)",
+          "setPosition(node, offset)"
+        ],
+        "localLinkingText": [
+          "Selection.setPosition",
+          "Selection.setPosition()",
+          "setPosition"
+        ],
+        "type": "method",
+        "for": [
+          "Selection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "selection-interface",
+          "href": "https://w3c.github.io/selection-api/#selection-interface",
+          "title": "Selection interface",
+          "number": "3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-selection-collapsetostart",
+        "href": "https://w3c.github.io/selection-api/#dom-selection-collapsetostart",
+        "linkingText": [
+          "collapseToStart()"
+        ],
+        "localLinkingText": [
+          "Selection.collapseToStart",
+          "Selection.collapseToStart()",
+          "collapseToStart"
+        ],
+        "type": "method",
+        "for": [
+          "Selection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "selection-interface",
+          "href": "https://w3c.github.io/selection-api/#selection-interface",
+          "title": "Selection interface",
+          "number": "3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-selection-collapsetoend",
+        "href": "https://w3c.github.io/selection-api/#dom-selection-collapsetoend",
+        "linkingText": [
+          "collapseToEnd()"
+        ],
+        "localLinkingText": [
+          "Selection.collapseToEnd",
+          "Selection.collapseToEnd()",
+          "collapseToEnd"
+        ],
+        "type": "method",
+        "for": [
+          "Selection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "selection-interface",
+          "href": "https://w3c.github.io/selection-api/#selection-interface",
+          "title": "Selection interface",
+          "number": "3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-selection-extend",
+        "href": "https://w3c.github.io/selection-api/#dom-selection-extend",
+        "linkingText": [
+          "extend()",
+          "extend(node)",
+          "extend(node, offset)"
+        ],
+        "localLinkingText": [
+          "Selection.extend",
+          "Selection.extend()",
+          "extend"
+        ],
+        "type": "method",
+        "for": [
+          "Selection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "selection-interface",
+          "href": "https://w3c.github.io/selection-api/#selection-interface",
+          "title": "Selection interface",
+          "number": "3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-selection-setbaseandextent",
+        "href": "https://w3c.github.io/selection-api/#dom-selection-setbaseandextent",
+        "linkingText": [
+          "setBaseAndExtent()",
+          "setBaseAndExtent(anchorNode, anchorOffset, focusNode, focusOffset)"
+        ],
+        "localLinkingText": [
+          "Selection.setBaseAndExtent",
+          "Selection.setBaseAndExtent()",
+          "setBaseAndExtent"
+        ],
+        "type": "method",
+        "for": [
+          "Selection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "selection-interface",
+          "href": "https://w3c.github.io/selection-api/#selection-interface",
+          "title": "Selection interface",
+          "number": "3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-selection-selectallchildren",
+        "href": "https://w3c.github.io/selection-api/#dom-selection-selectallchildren",
+        "linkingText": [
+          "selectAllChildren()",
+          "selectAllChildren(node)"
+        ],
+        "localLinkingText": [
+          "Selection.selectAllChildren",
+          "Selection.selectAllChildren()",
+          "selectAllChildren"
+        ],
+        "type": "method",
+        "for": [
+          "Selection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "selection-interface",
+          "href": "https://w3c.github.io/selection-api/#selection-interface",
+          "title": "Selection interface",
+          "number": "3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-selection-deletefromdocument",
+        "href": "https://w3c.github.io/selection-api/#dom-selection-deletefromdocument",
+        "linkingText": [
+          "deleteFromDocument()"
+        ],
+        "localLinkingText": [
+          "Selection.deleteFromDocument",
+          "Selection.deleteFromDocument()",
+          "deleteFromDocument"
+        ],
+        "type": "method",
+        "for": [
+          "Selection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "selection-interface",
+          "href": "https://w3c.github.io/selection-api/#selection-interface",
+          "title": "Selection interface",
+          "number": "3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-selection-containsnode",
+        "href": "https://w3c.github.io/selection-api/#dom-selection-containsnode",
+        "linkingText": [
+          "containsNode()",
+          "containsNode(node)",
+          "containsNode(node, allowPartialContainment)"
+        ],
+        "localLinkingText": [
+          "Selection.containsNode",
+          "Selection.containsNode()",
+          "containsNode"
+        ],
+        "type": "method",
+        "for": [
+          "Selection"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "selection-interface",
+          "href": "https://w3c.github.io/selection-api/#selection-interface",
+          "title": "Selection interface",
+          "number": "3"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

@@ -1,0 +1,589 @@
+{
+  "name": "PerformanceResourceTiming",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Resource Timing Level 2",
+      "url": "https://www.w3.org/TR/resource-timing-2/"
+    },
+    "fragment": "[Exposed=(Window,Worker)]\ninterface PerformanceResourceTiming : PerformanceEntry {\n    readonly attribute DOMString initiatorType;\n    readonly attribute ByteString nextHopProtocol;\n    readonly attribute DOMHighResTimeStamp workerStart;\n    readonly attribute DOMHighResTimeStamp redirectStart;\n    readonly attribute DOMHighResTimeStamp redirectEnd;\n    readonly attribute DOMHighResTimeStamp fetchStart;\n    readonly attribute DOMHighResTimeStamp domainLookupStart;\n    readonly attribute DOMHighResTimeStamp domainLookupEnd;\n    readonly attribute DOMHighResTimeStamp connectStart;\n    readonly attribute DOMHighResTimeStamp connectEnd;\n    readonly attribute DOMHighResTimeStamp secureConnectionStart;\n    readonly attribute DOMHighResTimeStamp requestStart;\n    readonly attribute DOMHighResTimeStamp responseStart;\n    readonly attribute DOMHighResTimeStamp responseEnd;\n    readonly attribute unsigned long long  transferSize;\n    readonly attribute unsigned long long  encodedBodySize;\n    readonly attribute unsigned long long  decodedBodySize;\n    [Default] object toJSON();\n};",
+    "href": "https://w3c.github.io/resource-timing/#dom-performanceresourcetiming"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "Server Timing",
+        "url": "https://www.w3.org/TR/server-timing/"
+      },
+      "fragment": "[Exposed=(Window,Worker)]\npartial interface PerformanceResourceTiming {\n  readonly attribute FrozenArray<PerformanceServerTiming> serverTiming;\n};"
+    }
+  ],
+  "inheritance": {
+    "name": "PerformanceEntry",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "Performance Timeline Level 2",
+        "url": "https://www.w3.org/TR/performance-timeline/"
+      },
+      "fragment": "[Exposed=*]\ninterface PerformanceEntry {\n  readonly    attribute DOMString           name;\n  readonly    attribute DOMString           entryType;\n  readonly    attribute DOMHighResTimeStamp startTime;\n  readonly    attribute DOMHighResTimeStamp duration;\n  [Default] object toJSON();\n};",
+      "href": "https://w3c.github.io/performance-timeline/#dom-performanceentry"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/resource-timing-2/": [
+      {
+        "id": "dom-performanceresourcetiming",
+        "href": "https://w3c.github.io/resource-timing/#dom-performanceresourcetiming",
+        "linkingText": [
+          "PerformanceResourceTiming"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "sec-performanceresourcetiming",
+          "href": "https://w3c.github.io/resource-timing/#sec-performanceresourcetiming",
+          "title": "The PerformanceResourceTiming Interface",
+          "number": "4.3"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-performanceresourcetiming-initiatortype",
+        "href": "https://w3c.github.io/resource-timing/#dom-performanceresourcetiming-initiatortype",
+        "linkingText": [
+          "initiatorType"
+        ],
+        "localLinkingText": [
+          "PerformanceResourceTiming.initiatorType"
+        ],
+        "type": "attribute",
+        "for": [
+          "PerformanceResourceTiming"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "sec-performanceresourcetiming",
+          "href": "https://w3c.github.io/resource-timing/#sec-performanceresourcetiming",
+          "title": "The PerformanceResourceTiming Interface",
+          "number": "4.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-performanceresourcetiming-nexthopprotocol",
+        "href": "https://w3c.github.io/resource-timing/#dom-performanceresourcetiming-nexthopprotocol",
+        "linkingText": [
+          "nextHopProtocol"
+        ],
+        "localLinkingText": [
+          "PerformanceResourceTiming.nextHopProtocol"
+        ],
+        "type": "attribute",
+        "for": [
+          "PerformanceResourceTiming"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "sec-performanceresourcetiming",
+          "href": "https://w3c.github.io/resource-timing/#sec-performanceresourcetiming",
+          "title": "The PerformanceResourceTiming Interface",
+          "number": "4.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-performanceresourcetiming-workerstart",
+        "href": "https://w3c.github.io/resource-timing/#dom-performanceresourcetiming-workerstart",
+        "linkingText": [
+          "workerStart"
+        ],
+        "localLinkingText": [
+          "PerformanceResourceTiming.workerStart"
+        ],
+        "type": "attribute",
+        "for": [
+          "PerformanceResourceTiming"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "sec-performanceresourcetiming",
+          "href": "https://w3c.github.io/resource-timing/#sec-performanceresourcetiming",
+          "title": "The PerformanceResourceTiming Interface",
+          "number": "4.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-performanceresourcetiming-redirectstart",
+        "href": "https://w3c.github.io/resource-timing/#dom-performanceresourcetiming-redirectstart",
+        "linkingText": [
+          "redirectStart"
+        ],
+        "localLinkingText": [
+          "PerformanceResourceTiming.redirectStart"
+        ],
+        "type": "attribute",
+        "for": [
+          "PerformanceResourceTiming"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "sec-performanceresourcetiming",
+          "href": "https://w3c.github.io/resource-timing/#sec-performanceresourcetiming",
+          "title": "The PerformanceResourceTiming Interface",
+          "number": "4.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-performanceresourcetiming-redirectend",
+        "href": "https://w3c.github.io/resource-timing/#dom-performanceresourcetiming-redirectend",
+        "linkingText": [
+          "redirectEnd"
+        ],
+        "localLinkingText": [
+          "PerformanceResourceTiming.redirectEnd"
+        ],
+        "type": "attribute",
+        "for": [
+          "PerformanceResourceTiming"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "sec-performanceresourcetiming",
+          "href": "https://w3c.github.io/resource-timing/#sec-performanceresourcetiming",
+          "title": "The PerformanceResourceTiming Interface",
+          "number": "4.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-performanceresourcetiming-fetchstart",
+        "href": "https://w3c.github.io/resource-timing/#dom-performanceresourcetiming-fetchstart",
+        "linkingText": [
+          "fetchStart"
+        ],
+        "localLinkingText": [
+          "PerformanceResourceTiming.fetchStart"
+        ],
+        "type": "attribute",
+        "for": [
+          "PerformanceResourceTiming"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "sec-performanceresourcetiming",
+          "href": "https://w3c.github.io/resource-timing/#sec-performanceresourcetiming",
+          "title": "The PerformanceResourceTiming Interface",
+          "number": "4.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-performanceresourcetiming-domainlookupstart",
+        "href": "https://w3c.github.io/resource-timing/#dom-performanceresourcetiming-domainlookupstart",
+        "linkingText": [
+          "domainLookupStart"
+        ],
+        "localLinkingText": [
+          "PerformanceResourceTiming.domainLookupStart"
+        ],
+        "type": "attribute",
+        "for": [
+          "PerformanceResourceTiming"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "sec-performanceresourcetiming",
+          "href": "https://w3c.github.io/resource-timing/#sec-performanceresourcetiming",
+          "title": "The PerformanceResourceTiming Interface",
+          "number": "4.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-performanceresourcetiming-domainlookupend",
+        "href": "https://w3c.github.io/resource-timing/#dom-performanceresourcetiming-domainlookupend",
+        "linkingText": [
+          "domainLookupEnd"
+        ],
+        "localLinkingText": [
+          "PerformanceResourceTiming.domainLookupEnd"
+        ],
+        "type": "attribute",
+        "for": [
+          "PerformanceResourceTiming"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "sec-performanceresourcetiming",
+          "href": "https://w3c.github.io/resource-timing/#sec-performanceresourcetiming",
+          "title": "The PerformanceResourceTiming Interface",
+          "number": "4.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-performanceresourcetiming-connectstart",
+        "href": "https://w3c.github.io/resource-timing/#dom-performanceresourcetiming-connectstart",
+        "linkingText": [
+          "connectStart"
+        ],
+        "localLinkingText": [
+          "PerformanceResourceTiming.connectStart"
+        ],
+        "type": "attribute",
+        "for": [
+          "PerformanceResourceTiming"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "sec-performanceresourcetiming",
+          "href": "https://w3c.github.io/resource-timing/#sec-performanceresourcetiming",
+          "title": "The PerformanceResourceTiming Interface",
+          "number": "4.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-performanceresourcetiming-connectend",
+        "href": "https://w3c.github.io/resource-timing/#dom-performanceresourcetiming-connectend",
+        "linkingText": [
+          "connectEnd"
+        ],
+        "localLinkingText": [
+          "PerformanceResourceTiming.connectEnd"
+        ],
+        "type": "attribute",
+        "for": [
+          "PerformanceResourceTiming"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "sec-performanceresourcetiming",
+          "href": "https://w3c.github.io/resource-timing/#sec-performanceresourcetiming",
+          "title": "The PerformanceResourceTiming Interface",
+          "number": "4.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-performanceresourcetiming-secureconnectionstart",
+        "href": "https://w3c.github.io/resource-timing/#dom-performanceresourcetiming-secureconnectionstart",
+        "linkingText": [
+          "secureConnectionStart"
+        ],
+        "localLinkingText": [
+          "PerformanceResourceTiming.secureConnectionStart"
+        ],
+        "type": "attribute",
+        "for": [
+          "PerformanceResourceTiming"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "sec-performanceresourcetiming",
+          "href": "https://w3c.github.io/resource-timing/#sec-performanceresourcetiming",
+          "title": "The PerformanceResourceTiming Interface",
+          "number": "4.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-performanceresourcetiming-requeststart",
+        "href": "https://w3c.github.io/resource-timing/#dom-performanceresourcetiming-requeststart",
+        "linkingText": [
+          "requestStart"
+        ],
+        "localLinkingText": [
+          "PerformanceResourceTiming.requestStart"
+        ],
+        "type": "attribute",
+        "for": [
+          "PerformanceResourceTiming"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "sec-performanceresourcetiming",
+          "href": "https://w3c.github.io/resource-timing/#sec-performanceresourcetiming",
+          "title": "The PerformanceResourceTiming Interface",
+          "number": "4.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-performanceresourcetiming-responsestart",
+        "href": "https://w3c.github.io/resource-timing/#dom-performanceresourcetiming-responsestart",
+        "linkingText": [
+          "responseStart"
+        ],
+        "localLinkingText": [
+          "PerformanceResourceTiming.responseStart"
+        ],
+        "type": "attribute",
+        "for": [
+          "PerformanceResourceTiming"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "sec-performanceresourcetiming",
+          "href": "https://w3c.github.io/resource-timing/#sec-performanceresourcetiming",
+          "title": "The PerformanceResourceTiming Interface",
+          "number": "4.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-performanceresourcetiming-responseend",
+        "href": "https://w3c.github.io/resource-timing/#dom-performanceresourcetiming-responseend",
+        "linkingText": [
+          "responseEnd"
+        ],
+        "localLinkingText": [
+          "PerformanceResourceTiming.responseEnd"
+        ],
+        "type": "attribute",
+        "for": [
+          "PerformanceResourceTiming"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "sec-performanceresourcetiming",
+          "href": "https://w3c.github.io/resource-timing/#sec-performanceresourcetiming",
+          "title": "The PerformanceResourceTiming Interface",
+          "number": "4.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-performanceresourcetiming-transfersize",
+        "href": "https://w3c.github.io/resource-timing/#dom-performanceresourcetiming-transfersize",
+        "linkingText": [
+          "transferSize"
+        ],
+        "localLinkingText": [
+          "PerformanceResourceTiming.transferSize"
+        ],
+        "type": "attribute",
+        "for": [
+          "PerformanceResourceTiming"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "sec-performanceresourcetiming",
+          "href": "https://w3c.github.io/resource-timing/#sec-performanceresourcetiming",
+          "title": "The PerformanceResourceTiming Interface",
+          "number": "4.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-performanceresourcetiming-encodedbodysize",
+        "href": "https://w3c.github.io/resource-timing/#dom-performanceresourcetiming-encodedbodysize",
+        "linkingText": [
+          "encodedBodySize"
+        ],
+        "localLinkingText": [
+          "PerformanceResourceTiming.encodedBodySize"
+        ],
+        "type": "attribute",
+        "for": [
+          "PerformanceResourceTiming"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "sec-performanceresourcetiming",
+          "href": "https://w3c.github.io/resource-timing/#sec-performanceresourcetiming",
+          "title": "The PerformanceResourceTiming Interface",
+          "number": "4.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-performanceresourcetiming-decodedbodysize",
+        "href": "https://w3c.github.io/resource-timing/#dom-performanceresourcetiming-decodedbodysize",
+        "linkingText": [
+          "decodedBodySize"
+        ],
+        "localLinkingText": [
+          "PerformanceResourceTiming.decodedBodySize"
+        ],
+        "type": "attribute",
+        "for": [
+          "PerformanceResourceTiming"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "sec-performanceresourcetiming",
+          "href": "https://w3c.github.io/resource-timing/#sec-performanceresourcetiming",
+          "title": "The PerformanceResourceTiming Interface",
+          "number": "4.3"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://www.w3.org/TR/server-timing/": [
+      {
+        "id": "dom-performanceresourcetiming-servertiming",
+        "href": "https://w3c.github.io/server-timing/#dom-performanceresourcetiming-servertiming",
+        "linkingText": [
+          "serverTiming"
+        ],
+        "localLinkingText": [
+          "PerformanceResourceTiming.serverTiming"
+        ],
+        "type": "attribute",
+        "for": [
+          "PerformanceResourceTiming"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "servertiming-attribute",
+          "href": "https://w3c.github.io/server-timing/#servertiming-attribute",
+          "title": "serverTiming attribute",
+          "number": "5.1"
+        },
+        "definedIn": "heading"
+      }
+    ],
+    "https://www.w3.org/TR/performance-timeline/": [
+      {
+        "id": "dom-performanceentry",
+        "href": "https://w3c.github.io/performance-timeline/#dom-performanceentry",
+        "linkingText": [
+          "PerformanceEntry"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-performanceentry-interface",
+          "href": "https://w3c.github.io/performance-timeline/#the-performanceentry-interface",
+          "title": "The PerformanceEntry interface",
+          "number": "4"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-performanceentry-name",
+        "href": "https://w3c.github.io/performance-timeline/#dom-performanceentry-name",
+        "linkingText": [
+          "name"
+        ],
+        "localLinkingText": [
+          "PerformanceEntry.name"
+        ],
+        "type": "attribute",
+        "for": [
+          "PerformanceEntry"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-performanceentry-interface",
+          "href": "https://w3c.github.io/performance-timeline/#the-performanceentry-interface",
+          "title": "The PerformanceEntry interface",
+          "number": "4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-performanceentry-entrytype",
+        "href": "https://w3c.github.io/performance-timeline/#dom-performanceentry-entrytype",
+        "linkingText": [
+          "entryType"
+        ],
+        "localLinkingText": [
+          "PerformanceEntry.entryType"
+        ],
+        "type": "attribute",
+        "for": [
+          "PerformanceEntry"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-performanceentry-interface",
+          "href": "https://w3c.github.io/performance-timeline/#the-performanceentry-interface",
+          "title": "The PerformanceEntry interface",
+          "number": "4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-performanceentry-starttime",
+        "href": "https://w3c.github.io/performance-timeline/#dom-performanceentry-starttime",
+        "linkingText": [
+          "startTime"
+        ],
+        "localLinkingText": [
+          "PerformanceEntry.startTime"
+        ],
+        "type": "attribute",
+        "for": [
+          "PerformanceEntry"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-performanceentry-interface",
+          "href": "https://w3c.github.io/performance-timeline/#the-performanceentry-interface",
+          "title": "The PerformanceEntry interface",
+          "number": "4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-performanceentry-duration",
+        "href": "https://w3c.github.io/performance-timeline/#dom-performanceentry-duration",
+        "linkingText": [
+          "duration"
+        ],
+        "localLinkingText": [
+          "PerformanceEntry.duration"
+        ],
+        "type": "attribute",
+        "for": [
+          "PerformanceEntry"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-performanceentry-interface",
+          "href": "https://w3c.github.io/performance-timeline/#the-performanceentry-interface",
+          "title": "The PerformanceEntry interface",
+          "number": "4"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

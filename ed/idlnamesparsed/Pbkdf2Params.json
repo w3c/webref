@@ -1,0 +1,154 @@
+{
+  "name": "Pbkdf2Params",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Web Cryptography API",
+      "url": "https://www.w3.org/TR/WebCryptoAPI/"
+    },
+    "fragment": "dictionary Pbkdf2Params : Algorithm {\n  required BufferSource salt;\n  required [EnforceRange] unsigned long iterations;\n  required HashAlgorithmIdentifier hash;\n};",
+    "href": "https://w3c.github.io/webcrypto/#dfn-Pbkdf2Params"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "Algorithm",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "Web Cryptography API",
+        "url": "https://www.w3.org/TR/WebCryptoAPI/"
+      },
+      "fragment": "dictionary Algorithm {\n  required DOMString name;\n};",
+      "href": "https://w3c.github.io/webcrypto/#dfn-Algorithm"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/WebCryptoAPI/": [
+      {
+        "id": "dfn-Pbkdf2Params",
+        "href": "https://w3c.github.io/webcrypto/#dfn-Pbkdf2Params",
+        "linkingText": [
+          "Pbkdf2Params"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "pbkdf2-params",
+          "href": "https://w3c.github.io/webcrypto/#pbkdf2-params",
+          "title": "Pbkdf2Params dictionary",
+          "number": "32.3"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dfn-Pbkdf2Params-salt",
+        "href": "https://w3c.github.io/webcrypto/#dfn-Pbkdf2Params-salt",
+        "linkingText": [
+          "salt"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "Pbkdf2Params"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "pbkdf2-params",
+          "href": "https://w3c.github.io/webcrypto/#pbkdf2-params",
+          "title": "Pbkdf2Params dictionary",
+          "number": "32.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dfn-Pbkdf2Params-iterations",
+        "href": "https://w3c.github.io/webcrypto/#dfn-Pbkdf2Params-iterations",
+        "linkingText": [
+          "iterations"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "Pbkdf2Params"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "pbkdf2-params",
+          "href": "https://w3c.github.io/webcrypto/#pbkdf2-params",
+          "title": "Pbkdf2Params dictionary",
+          "number": "32.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dfn-Pbkdf2Params-hash",
+        "href": "https://w3c.github.io/webcrypto/#dfn-Pbkdf2Params-hash",
+        "linkingText": [
+          "hash"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "Pbkdf2Params"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "pbkdf2-params",
+          "href": "https://w3c.github.io/webcrypto/#pbkdf2-params",
+          "title": "Pbkdf2Params dictionary",
+          "number": "32.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dfn-Algorithm",
+        "href": "https://w3c.github.io/webcrypto/#dfn-Algorithm",
+        "linkingText": [
+          "Algorithm"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "algorithm-dictionary",
+          "href": "https://w3c.github.io/webcrypto/#algorithm-dictionary",
+          "title": "11. Algorithm dictionary"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-algorithm-name",
+        "href": "https://w3c.github.io/webcrypto/#dom-algorithm-name",
+        "linkingText": [
+          "name"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "Algorithm"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "algorithm-dictionary-members",
+          "href": "https://w3c.github.io/webcrypto/#algorithm-dictionary-members",
+          "title": "Algorithm Dictionary Members",
+          "number": "11.1"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

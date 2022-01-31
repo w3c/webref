@@ -1,0 +1,80 @@
+{
+  "name": "WebTransportOptions",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "WebTransport",
+      "url": "https://www.w3.org/TR/webtransport/"
+    },
+    "fragment": "dictionary WebTransportOptions {\n  boolean allowPooling;\n  sequence<WebTransportHash> serverCertificateHashes;\n};",
+    "href": "https://w3c.github.io/webtransport/#dictdef-webtransportoptions"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webtransport/": [
+      {
+        "id": "dictdef-webtransportoptions",
+        "href": "https://w3c.github.io/webtransport/#dictdef-webtransportoptions",
+        "linkingText": [
+          "WebTransportOptions"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "web-transport-configuration",
+          "href": "https://w3c.github.io/webtransport/#web-transport-configuration",
+          "title": "Configuration",
+          "number": "6.9"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-webtransportoptions-allowpooling",
+        "href": "https://w3c.github.io/webtransport/#dom-webtransportoptions-allowpooling",
+        "linkingText": [
+          "allowPooling"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "WebTransportOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "web-transport-configuration",
+          "href": "https://w3c.github.io/webtransport/#web-transport-configuration",
+          "title": "Configuration",
+          "number": "6.9"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-webtransportoptions-servercertificatehashes",
+        "href": "https://w3c.github.io/webtransport/#dom-webtransportoptions-servercertificatehashes",
+        "linkingText": [
+          "serverCertificateHashes"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "WebTransportOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "web-transport-configuration",
+          "href": "https://w3c.github.io/webtransport/#web-transport-configuration",
+          "title": "Configuration",
+          "number": "6.9"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

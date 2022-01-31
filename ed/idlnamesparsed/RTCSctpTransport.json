@@ -1,0 +1,270 @@
+{
+  "name": "RTCSctpTransport",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
+      "url": "https://www.w3.org/TR/webrtc/"
+    },
+    "fragment": "[Exposed=Window]\ninterface RTCSctpTransport : EventTarget {\n  readonly attribute RTCDtlsTransport transport;\n  readonly attribute RTCSctpTransportState state;\n  readonly attribute unrestricted double maxMessageSize;\n  readonly attribute unsigned short? maxChannels;\n  attribute EventHandler onstatechange;\n};",
+    "href": "https://w3c.github.io/webrtc-pc/#dom-rtcsctptransport"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "EventTarget",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=*]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+      "href": "https://dom.spec.whatwg.org/#eventtarget"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webrtc/": [
+      {
+        "id": "dom-rtcsctptransport",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcsctptransport",
+        "linkingText": [
+          "RTCSctpTransport"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "rtcsctptransport-interface",
+          "href": "https://w3c.github.io/webrtc-pc/#rtcsctptransport-interface",
+          "title": "RTCSctpTransport Interface",
+          "number": "6.1.1"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-rtcsctptransport-transport",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcsctptransport-transport",
+        "linkingText": [
+          "transport"
+        ],
+        "localLinkingText": [
+          "RTCSctpTransport.transport"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCSctpTransport"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-16",
+          "href": "https://w3c.github.io/webrtc-pc/#attributes-16",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcsctptransport-state",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcsctptransport-state",
+        "linkingText": [
+          "state"
+        ],
+        "localLinkingText": [
+          "RTCSctpTransport.state"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCSctpTransport"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-16",
+          "href": "https://w3c.github.io/webrtc-pc/#attributes-16",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcsctptransport-maxmessagesize",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcsctptransport-maxmessagesize",
+        "linkingText": [
+          "maxMessageSize"
+        ],
+        "localLinkingText": [
+          "RTCSctpTransport.maxMessageSize"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCSctpTransport"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-16",
+          "href": "https://w3c.github.io/webrtc-pc/#attributes-16",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcsctptransport-maxchannels",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcsctptransport-maxchannels",
+        "linkingText": [
+          "maxChannels"
+        ],
+        "localLinkingText": [
+          "RTCSctpTransport.maxChannels"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCSctpTransport"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-16",
+          "href": "https://w3c.github.io/webrtc-pc/#attributes-16",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcsctptransport-onstatechange",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcsctptransport-onstatechange",
+        "linkingText": [
+          "onstatechange"
+        ],
+        "localLinkingText": [
+          "RTCSctpTransport.onstatechange"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCSctpTransport"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-16",
+          "href": "https://w3c.github.io/webrtc-pc/#attributes-16",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "eventtarget",
+        "href": "https://dom.spec.whatwg.org/#eventtarget",
+        "linkingText": [
+          "EventTarget"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventtarget-eventtarget",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-eventtarget",
+        "linkingText": [
+          "EventTarget()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-addeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-addeventlistener",
+        "linkingText": [
+          "addEventListener(type, callback, options)",
+          "addEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-removeeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-removeeventlistener",
+        "linkingText": [
+          "removeEventListener(type, callback, options)",
+          "removeEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-dispatchevent",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-dispatchevent",
+        "linkingText": [
+          "dispatchEvent(event)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "name": "FileSystem",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "File and Directory Entries API",
+      "url": "https://wicg.github.io/entries-api/"
+    },
+    "fragment": "[Exposed=Window]\ninterface FileSystem {\n    readonly attribute USVString name;\n    readonly attribute FileSystemDirectoryEntry root;\n};",
+    "href": "https://wicg.github.io/entries-api/#filesystem"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://wicg.github.io/entries-api/": [
+      {
+        "id": "filesystem",
+        "href": "https://wicg.github.io/entries-api/#filesystem",
+        "linkingText": [
+          "FileSystem"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-domfilesystem",
+          "href": "https://wicg.github.io/entries-api/#api-domfilesystem",
+          "title": "The FileSystem Interface",
+          "number": "7.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-filesystem-name",
+        "href": "https://wicg.github.io/entries-api/#dom-filesystem-name",
+        "linkingText": [
+          "name"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "FileSystem"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-domfilesystem",
+          "href": "https://wicg.github.io/entries-api/#api-domfilesystem",
+          "title": "The FileSystem Interface",
+          "number": "7.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-filesystem-root",
+        "href": "https://wicg.github.io/entries-api/#dom-filesystem-root",
+        "linkingText": [
+          "root"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "FileSystem"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-domfilesystem",
+          "href": "https://wicg.github.io/entries-api/#api-domfilesystem",
+          "title": "The FileSystem Interface",
+          "number": "7.5"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

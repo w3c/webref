@@ -1,0 +1,310 @@
+{
+  "name": "NDEFReader",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Web NFC",
+      "url": "https://w3c.github.io/web-nfc/"
+    },
+    "fragment": "[SecureContext, Exposed=Window]\ninterface NDEFReader : EventTarget {\n  constructor();\n\n  attribute EventHandler onreading;\n  attribute EventHandler onreadingerror;\n\n  Promise<undefined> scan(optional NDEFScanOptions options={});\n  Promise<undefined> write(NDEFMessageSource message,\n                                 optional NDEFWriteOptions options={});\n  Promise<undefined> makeReadOnly(optional NDEFMakeReadOnlyOptions options={});\n};",
+    "href": "https://w3c.github.io/web-nfc/#dom-ndefreader"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "EventTarget",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=*]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+      "href": "https://dom.spec.whatwg.org/#eventtarget"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://w3c.github.io/web-nfc/": [
+      {
+        "id": "dom-ndefreader",
+        "href": "https://w3c.github.io/web-nfc/#dom-ndefreader",
+        "linkingText": [
+          "NDEFReader"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-ndefreader-object",
+          "href": "https://w3c.github.io/web-nfc/#the-ndefreader-object",
+          "title": "The NDEFReader object",
+          "number": "9"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-ndefreader-constructor",
+        "href": "https://w3c.github.io/web-nfc/#dom-ndefreader-constructor",
+        "linkingText": [
+          "constructor()"
+        ],
+        "localLinkingText": [
+          "NDEFReader.constructor",
+          "NDEFReader.constructor()",
+          "constructor"
+        ],
+        "type": "constructor",
+        "for": [
+          "NDEFReader"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-ndefreader-object",
+          "href": "https://w3c.github.io/web-nfc/#the-ndefreader-object",
+          "title": "The NDEFReader object",
+          "number": "9"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-ndefreader-onreading",
+        "href": "https://w3c.github.io/web-nfc/#dom-ndefreader-onreading",
+        "linkingText": [
+          "onreading"
+        ],
+        "localLinkingText": [
+          "NDEFReader.onreading"
+        ],
+        "type": "attribute",
+        "for": [
+          "NDEFReader"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-ndefreader-object",
+          "href": "https://w3c.github.io/web-nfc/#the-ndefreader-object",
+          "title": "The NDEFReader object",
+          "number": "9"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-ndefreader-onreadingerror",
+        "href": "https://w3c.github.io/web-nfc/#dom-ndefreader-onreadingerror",
+        "linkingText": [
+          "onreadingerror"
+        ],
+        "localLinkingText": [
+          "NDEFReader.onreadingerror"
+        ],
+        "type": "attribute",
+        "for": [
+          "NDEFReader"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-ndefreader-object",
+          "href": "https://w3c.github.io/web-nfc/#the-ndefreader-object",
+          "title": "The NDEFReader object",
+          "number": "9"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-ndefreader-scan",
+        "href": "https://w3c.github.io/web-nfc/#dom-ndefreader-scan",
+        "linkingText": [
+          "scan()",
+          "scan(options)"
+        ],
+        "localLinkingText": [
+          "NDEFReader.scan",
+          "NDEFReader.scan()",
+          "scan"
+        ],
+        "type": "method",
+        "for": [
+          "NDEFReader"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-scan-method",
+          "href": "https://w3c.github.io/web-nfc/#the-scan-method",
+          "title": "The scan() method",
+          "number": "9.14.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-ndefreader-write",
+        "href": "https://w3c.github.io/web-nfc/#dom-ndefreader-write",
+        "linkingText": [
+          "write()",
+          "write(message)",
+          "write(message, options)"
+        ],
+        "localLinkingText": [
+          "NDEFReader.write",
+          "NDEFReader.write()",
+          "write"
+        ],
+        "type": "method",
+        "for": [
+          "NDEFReader"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-write-method",
+          "href": "https://w3c.github.io/web-nfc/#the-write-method",
+          "title": "The write() method",
+          "number": "9.11.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-ndefreader-makereadonly",
+        "href": "https://w3c.github.io/web-nfc/#dom-ndefreader-makereadonly",
+        "linkingText": [
+          "makeReadOnly()",
+          "makeReadOnly(options)"
+        ],
+        "localLinkingText": [
+          "NDEFReader.makeReadOnly",
+          "NDEFReader.makeReadOnly()",
+          "makeReadOnly"
+        ],
+        "type": "method",
+        "for": [
+          "NDEFReader"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-makereadonly-method",
+          "href": "https://w3c.github.io/web-nfc/#the-makereadonly-method",
+          "title": "The makeReadOnly() method",
+          "number": "9.13.1"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "eventtarget",
+        "href": "https://dom.spec.whatwg.org/#eventtarget",
+        "linkingText": [
+          "EventTarget"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventtarget-eventtarget",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-eventtarget",
+        "linkingText": [
+          "EventTarget()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-addeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-addeventlistener",
+        "linkingText": [
+          "addEventListener(type, callback, options)",
+          "addEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-removeeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-removeeventlistener",
+        "linkingText": [
+          "removeEventListener(type, callback, options)",
+          "removeEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-dispatchevent",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-dispatchevent",
+        "linkingText": [
+          "dispatchEvent(event)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

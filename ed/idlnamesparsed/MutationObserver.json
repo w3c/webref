@@ -1,0 +1,124 @@
+{
+  "name": "MutationObserver",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "DOM Standard",
+      "url": "https://dom.spec.whatwg.org/"
+    },
+    "fragment": "[Exposed=Window]\ninterface MutationObserver {\n  constructor(MutationCallback callback);\n\n  undefined observe(Node target, optional MutationObserverInit options = {});\n  undefined disconnect();\n  sequence<MutationRecord> takeRecords();\n};",
+    "href": "https://dom.spec.whatwg.org/#mutationobserver"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "mutationobserver",
+        "href": "https://dom.spec.whatwg.org/#mutationobserver",
+        "linkingText": [
+          "MutationObserver"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-mutationobserver",
+          "href": "https://dom.spec.whatwg.org/#interface-mutationobserver",
+          "title": "Interface MutationObserver",
+          "number": "4.3.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mutationobserver-mutationobserver",
+        "href": "https://dom.spec.whatwg.org/#dom-mutationobserver-mutationobserver",
+        "linkingText": [
+          "MutationObserver(callback)",
+          "constructor(callback)"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "MutationObserver"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-mutationobserver",
+          "href": "https://dom.spec.whatwg.org/#interface-mutationobserver",
+          "title": "Interface MutationObserver",
+          "number": "4.3.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-mutationobserver-observe",
+        "href": "https://dom.spec.whatwg.org/#dom-mutationobserver-observe",
+        "linkingText": [
+          "observe(target, options)",
+          "observe(target)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MutationObserver"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-mutationobserver",
+          "href": "https://dom.spec.whatwg.org/#interface-mutationobserver",
+          "title": "Interface MutationObserver",
+          "number": "4.3.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-mutationobserver-disconnect",
+        "href": "https://dom.spec.whatwg.org/#dom-mutationobserver-disconnect",
+        "linkingText": [
+          "disconnect()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MutationObserver"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-mutationobserver",
+          "href": "https://dom.spec.whatwg.org/#interface-mutationobserver",
+          "title": "Interface MutationObserver",
+          "number": "4.3.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-mutationobserver-takerecords",
+        "href": "https://dom.spec.whatwg.org/#dom-mutationobserver-takerecords",
+        "linkingText": [
+          "takeRecords()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MutationObserver"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-mutationobserver",
+          "href": "https://dom.spec.whatwg.org/#interface-mutationobserver",
+          "title": "Interface MutationObserver",
+          "number": "4.3.1"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

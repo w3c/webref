@@ -1,0 +1,122 @@
+{
+  "name": "RTCEncodedVideoFrame",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebRTC Encoded Transform",
+      "url": "https://www.w3.org/TR/webrtc-encoded-transform/"
+    },
+    "fragment": "// New interfaces to define encoded video and audio frames. Will eventually\n// re-use or extend the equivalent defined in WebCodecs.\n[Exposed=(Window,DedicatedWorker)]\ninterface RTCEncodedVideoFrame {\n    readonly attribute RTCEncodedVideoFrameType type;\n    readonly attribute unsigned long long timestamp;\n    attribute ArrayBuffer data;\n    RTCEncodedVideoFrameMetadata getMetadata();\n};",
+    "href": "https://w3c.github.io/webrtc-encoded-transform/#rtcencodedvideoframe"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webrtc-encoded-transform/": [
+      {
+        "id": "rtcencodedvideoframe",
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#rtcencodedvideoframe",
+        "linkingText": [
+          "RTCEncodedVideoFrame"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "scriptTransform",
+          "href": "https://w3c.github.io/webrtc-encoded-transform/#scriptTransform",
+          "title": "RTCRtpScriptTransform",
+          "number": "5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-rtcencodedvideoframe-type",
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcencodedvideoframe-type",
+        "linkingText": [
+          "type"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "RTCEncodedVideoFrame"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "scriptTransform",
+          "href": "https://w3c.github.io/webrtc-encoded-transform/#scriptTransform",
+          "title": "RTCRtpScriptTransform",
+          "number": "5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-rtcencodedvideoframe-timestamp",
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcencodedvideoframe-timestamp",
+        "linkingText": [
+          "timestamp"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "RTCEncodedVideoFrame"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "scriptTransform",
+          "href": "https://w3c.github.io/webrtc-encoded-transform/#scriptTransform",
+          "title": "RTCRtpScriptTransform",
+          "number": "5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-rtcencodedvideoframe-data",
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcencodedvideoframe-data",
+        "linkingText": [
+          "data"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "RTCEncodedVideoFrame"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "scriptTransform",
+          "href": "https://w3c.github.io/webrtc-encoded-transform/#scriptTransform",
+          "title": "RTCRtpScriptTransform",
+          "number": "5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-rtcencodedvideoframe-getmetadata",
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcencodedvideoframe-getmetadata",
+        "linkingText": [
+          "getMetadata()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "RTCEncodedVideoFrame"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "scriptTransform",
+          "href": "https://w3c.github.io/webrtc-encoded-transform/#scriptTransform",
+          "title": "RTCRtpScriptTransform",
+          "number": "5"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

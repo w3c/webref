@@ -1,0 +1,122 @@
+{
+  "name": "BluetoothUUID",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Web Bluetooth",
+      "url": "https://webbluetoothcg.github.io/web-bluetooth/"
+    },
+    "fragment": "[Exposed=Window]\ninterface BluetoothUUID {\n  static UUID getService((DOMString or unsigned long) name);\n  static UUID getCharacteristic((DOMString or unsigned long) name);\n  static UUID getDescriptor((DOMString or unsigned long) name);\n\n  static UUID canonicalUUID([EnforceRange] unsigned long alias);\n};",
+    "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetoothuuid"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://webbluetoothcg.github.io/web-bluetooth/": [
+      {
+        "id": "bluetoothuuid",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetoothuuid",
+        "linkingText": [
+          "BluetoothUUID"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "standardized-uuids",
+          "href": "https://webbluetoothcg.github.io/web-bluetooth/#standardized-uuids",
+          "title": "Standardized UUIDs",
+          "number": "6.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-bluetoothuuid-getservice",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothuuid-getservice",
+        "linkingText": [
+          "getService(name)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "BluetoothUUID"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "standardized-uuids",
+          "href": "https://webbluetoothcg.github.io/web-bluetooth/#standardized-uuids",
+          "title": "Standardized UUIDs",
+          "number": "6.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-bluetoothuuid-getcharacteristic",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothuuid-getcharacteristic",
+        "linkingText": [
+          "getCharacteristic(name)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "BluetoothUUID"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "standardized-uuids",
+          "href": "https://webbluetoothcg.github.io/web-bluetooth/#standardized-uuids",
+          "title": "Standardized UUIDs",
+          "number": "6.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-bluetoothuuid-getdescriptor",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothuuid-getdescriptor",
+        "linkingText": [
+          "getDescriptor(name)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "BluetoothUUID"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "standardized-uuids",
+          "href": "https://webbluetoothcg.github.io/web-bluetooth/#standardized-uuids",
+          "title": "Standardized UUIDs",
+          "number": "6.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-bluetoothuuid-canonicaluuid",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothuuid-canonicaluuid",
+        "linkingText": [
+          "canonicalUUID(alias)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "BluetoothUUID"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "standardized-uuids",
+          "href": "https://webbluetoothcg.github.io/web-bluetooth/#standardized-uuids",
+          "title": "Standardized UUIDs",
+          "number": "6.1"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

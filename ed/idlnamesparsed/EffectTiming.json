@@ -1,0 +1,237 @@
+{
+  "name": "EffectTiming",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Web Animations",
+      "url": "https://www.w3.org/TR/web-animations-1/"
+    },
+    "fragment": "dictionary EffectTiming {\n    double                             delay = 0;\n    double                             endDelay = 0;\n    FillMode                           fill = \"auto\";\n    double                             iterationStart = 0.0;\n    unrestricted double                iterations = 1.0;\n    PlaybackDirection                  direction = \"normal\";\n    DOMString                          easing = \"linear\";\n};",
+    "href": "https://drafts.csswg.org/web-animations-1/#dictdef-effecttiming"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "Web Animations Level 2",
+        "url": "https://drafts.csswg.org/web-animations-2/"
+      },
+      "fragment": "partial dictionary EffectTiming {\n    double playbackRate = 1.0;\n    (unrestricted double or CSSNumericValue or DOMString) duration = \"auto\";\n};"
+    }
+  ],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/web-animations-1/": [
+      {
+        "id": "dictdef-effecttiming",
+        "href": "https://drafts.csswg.org/web-animations-1/#dictdef-effecttiming",
+        "linkingText": [
+          "EffectTiming"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-effecttiming-dictionaries",
+          "href": "https://drafts.csswg.org/web-animations-1/#the-effecttiming-dictionaries",
+          "title": "The EffectTiming and OptionalEffectTiming dictionaries",
+          "number": "6.5.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-effecttiming-delay",
+        "href": "https://drafts.csswg.org/web-animations-1/#dom-effecttiming-delay",
+        "linkingText": [
+          "delay"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EffectTiming"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-effecttiming-dictionaries",
+          "href": "https://drafts.csswg.org/web-animations-1/#the-effecttiming-dictionaries",
+          "title": "The EffectTiming and OptionalEffectTiming dictionaries",
+          "number": "6.5.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-effecttiming-enddelay",
+        "href": "https://drafts.csswg.org/web-animations-1/#dom-effecttiming-enddelay",
+        "linkingText": [
+          "endDelay"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EffectTiming"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-effecttiming-dictionaries",
+          "href": "https://drafts.csswg.org/web-animations-1/#the-effecttiming-dictionaries",
+          "title": "The EffectTiming and OptionalEffectTiming dictionaries",
+          "number": "6.5.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-effecttiming-fill",
+        "href": "https://drafts.csswg.org/web-animations-1/#dom-effecttiming-fill",
+        "linkingText": [
+          "fill"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EffectTiming"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-effecttiming-dictionaries",
+          "href": "https://drafts.csswg.org/web-animations-1/#the-effecttiming-dictionaries",
+          "title": "The EffectTiming and OptionalEffectTiming dictionaries",
+          "number": "6.5.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-effecttiming-iterationstart",
+        "href": "https://drafts.csswg.org/web-animations-1/#dom-effecttiming-iterationstart",
+        "linkingText": [
+          "iterationStart"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EffectTiming"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-effecttiming-dictionaries",
+          "href": "https://drafts.csswg.org/web-animations-1/#the-effecttiming-dictionaries",
+          "title": "The EffectTiming and OptionalEffectTiming dictionaries",
+          "number": "6.5.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-effecttiming-iterations",
+        "href": "https://drafts.csswg.org/web-animations-1/#dom-effecttiming-iterations",
+        "linkingText": [
+          "iterations"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EffectTiming"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-effecttiming-dictionaries",
+          "href": "https://drafts.csswg.org/web-animations-1/#the-effecttiming-dictionaries",
+          "title": "The EffectTiming and OptionalEffectTiming dictionaries",
+          "number": "6.5.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-effecttiming-direction",
+        "href": "https://drafts.csswg.org/web-animations-1/#dom-effecttiming-direction",
+        "linkingText": [
+          "direction"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EffectTiming"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-effecttiming-dictionaries",
+          "href": "https://drafts.csswg.org/web-animations-1/#the-effecttiming-dictionaries",
+          "title": "The EffectTiming and OptionalEffectTiming dictionaries",
+          "number": "6.5.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-effecttiming-easing",
+        "href": "https://drafts.csswg.org/web-animations-1/#dom-effecttiming-easing",
+        "linkingText": [
+          "easing"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EffectTiming"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-effecttiming-dictionaries",
+          "href": "https://drafts.csswg.org/web-animations-1/#the-effecttiming-dictionaries",
+          "title": "The EffectTiming and OptionalEffectTiming dictionaries",
+          "number": "6.5.1"
+        },
+        "definedIn": "dt"
+      }
+    ],
+    "https://drafts.csswg.org/web-animations-2/": [
+      {
+        "id": "dom-effecttiming-playbackrate",
+        "href": "https://drafts.csswg.org/web-animations-2/#dom-effecttiming-playbackrate",
+        "linkingText": [
+          "playbackRate"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EffectTiming"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-effecttiming-dictionaries",
+          "href": "https://drafts.csswg.org/web-animations-2/#the-effecttiming-dictionaries",
+          "title": "The EffectTiming and OptionalEffectTiming dictionaries",
+          "number": "5.4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-effecttiming-duration",
+        "href": "https://drafts.csswg.org/web-animations-2/#dom-effecttiming-duration",
+        "linkingText": [
+          "duration"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EffectTiming"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-effecttiming-dictionaries",
+          "href": "https://drafts.csswg.org/web-animations-2/#the-effecttiming-dictionaries",
+          "title": "The EffectTiming and OptionalEffectTiming dictionaries",
+          "number": "5.4"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

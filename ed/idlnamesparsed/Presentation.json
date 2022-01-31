@@ -1,0 +1,99 @@
+{
+  "name": "Presentation",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Presentation API",
+      "url": "https://www.w3.org/TR/presentation-api/"
+    },
+    "fragment": "[SecureContext, Exposed=Window]\ninterface Presentation {\n};",
+    "href": "https://w3c.github.io/presentation-api/#dom-presentation"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "Presentation API",
+        "url": "https://www.w3.org/TR/presentation-api/"
+      },
+      "fragment": "partial interface Presentation {\n  attribute PresentationRequest? defaultRequest;\n};"
+    },
+    {
+      "spec": {
+        "title": "Presentation API",
+        "url": "https://www.w3.org/TR/presentation-api/"
+      },
+      "fragment": "partial interface Presentation {\n  readonly attribute PresentationReceiver? receiver;\n};"
+    }
+  ],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/presentation-api/": [
+      {
+        "id": "dom-presentation",
+        "href": "https://w3c.github.io/presentation-api/#dom-presentation",
+        "linkingText": [
+          "Presentation"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-presentation",
+          "href": "https://w3c.github.io/presentation-api/#interface-presentation",
+          "title": "Interface Presentation",
+          "number": "6.2"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-presentation-defaultrequest",
+        "href": "https://w3c.github.io/presentation-api/#dom-presentation-defaultrequest",
+        "linkingText": [
+          "defaultRequest"
+        ],
+        "localLinkingText": [
+          "Presentation.defaultRequest"
+        ],
+        "type": "attribute",
+        "for": [
+          "Presentation"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "controlling-user-agent",
+          "href": "https://w3c.github.io/presentation-api/#controlling-user-agent",
+          "title": "Controlling user agent",
+          "number": "6.2.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-presentation-receiver",
+        "href": "https://w3c.github.io/presentation-api/#dom-presentation-receiver",
+        "linkingText": [
+          "receiver"
+        ],
+        "localLinkingText": [
+          "Presentation.receiver"
+        ],
+        "type": "attribute",
+        "for": [
+          "Presentation"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "receiving-user-agent",
+          "href": "https://w3c.github.io/presentation-api/#receiving-user-agent",
+          "title": "Receiving user agent",
+          "number": "6.2.2"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

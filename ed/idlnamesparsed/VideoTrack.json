@@ -1,0 +1,175 @@
+{
+  "name": "VideoTrack",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "HTML Standard",
+      "url": "https://html.spec.whatwg.org/multipage/"
+    },
+    "fragment": "[Exposed=Window]\ninterface VideoTrack {\n  readonly attribute DOMString id;\n  readonly attribute DOMString kind;\n  readonly attribute DOMString label;\n  readonly attribute DOMString language;\n  attribute boolean selected;\n};",
+    "href": "https://html.spec.whatwg.org/multipage/media.html#videotrack"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "Media Source Extensions™",
+        "url": "https://www.w3.org/TR/media-source-2/"
+      },
+      "fragment": "[Exposed=(Window,DedicatedWorker)]\npartial interface VideoTrack {\n    readonly        attribute SourceBuffer? sourceBuffer;\n};"
+    }
+  ],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://html.spec.whatwg.org/multipage/": [
+      {
+        "id": "videotrack",
+        "href": "https://html.spec.whatwg.org/multipage/media.html#videotrack",
+        "linkingText": [
+          "VideoTrack"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "audiotracklist-and-videotracklist-objects",
+          "href": "https://html.spec.whatwg.org/multipage/media.html#audiotracklist-and-videotracklist-objects",
+          "title": "AudioTrackList and VideoTrackList objects",
+          "number": "4.8.12.10.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-videotrack-id",
+        "href": "https://html.spec.whatwg.org/multipage/media.html#dom-videotrack-id",
+        "linkingText": [
+          "id"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "VideoTrack"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "audiotracklist-and-videotracklist-objects",
+          "href": "https://html.spec.whatwg.org/multipage/media.html#audiotracklist-and-videotracklist-objects",
+          "title": "AudioTrackList and VideoTrackList objects",
+          "number": "4.8.12.10.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-videotrack-kind",
+        "href": "https://html.spec.whatwg.org/multipage/media.html#dom-videotrack-kind",
+        "linkingText": [
+          "kind"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "VideoTrack"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "audiotracklist-and-videotracklist-objects",
+          "href": "https://html.spec.whatwg.org/multipage/media.html#audiotracklist-and-videotracklist-objects",
+          "title": "AudioTrackList and VideoTrackList objects",
+          "number": "4.8.12.10.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-videotrack-label",
+        "href": "https://html.spec.whatwg.org/multipage/media.html#dom-videotrack-label",
+        "linkingText": [
+          "label"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "VideoTrack"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "audiotracklist-and-videotracklist-objects",
+          "href": "https://html.spec.whatwg.org/multipage/media.html#audiotracklist-and-videotracklist-objects",
+          "title": "AudioTrackList and VideoTrackList objects",
+          "number": "4.8.12.10.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-videotrack-language",
+        "href": "https://html.spec.whatwg.org/multipage/media.html#dom-videotrack-language",
+        "linkingText": [
+          "language"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "VideoTrack"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "audiotracklist-and-videotracklist-objects",
+          "href": "https://html.spec.whatwg.org/multipage/media.html#audiotracklist-and-videotracklist-objects",
+          "title": "AudioTrackList and VideoTrackList objects",
+          "number": "4.8.12.10.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-videotrack-selected",
+        "href": "https://html.spec.whatwg.org/multipage/media.html#dom-videotrack-selected",
+        "linkingText": [
+          "selected"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "VideoTrack"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "audiotracklist-and-videotracklist-objects",
+          "href": "https://html.spec.whatwg.org/multipage/media.html#audiotracklist-and-videotracklist-objects",
+          "title": "AudioTrackList and VideoTrackList objects",
+          "number": "4.8.12.10.1"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://www.w3.org/TR/media-source-2/": [
+      {
+        "id": "dom-videotrack-sourcebuffer",
+        "href": "https://w3c.github.io/media-source/#dom-videotrack-sourcebuffer",
+        "linkingText": [
+          "sourceBuffer"
+        ],
+        "localLinkingText": [
+          "VideoTrack.sourceBuffer"
+        ],
+        "type": "attribute",
+        "for": [
+          "VideoTrack"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-3",
+          "href": "https://w3c.github.io/media-source/#attributes-3",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

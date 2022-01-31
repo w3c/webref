@@ -1,0 +1,6 @@
+// Source: Web Locks API (https://w3c.github.io/web-locks/)
+[SecureContext, Exposed=(Window,Worker)]
+interface Lock {
+  readonly attribute DOMString name;
+  readonly attribute LockMode mode;
+};

@@ -1,0 +1,259 @@
+{
+  "spec": {
+    "title": "WebOTP API",
+    "url": "https://wicg.github.io/web-otp/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://wicg.github.io/web-otp/#title",
+      "level": 1,
+      "title": "WebOTP API"
+    },
+    {
+      "id": "subtitle",
+      "href": "https://wicg.github.io/web-otp/#subtitle",
+      "level": 2,
+      "title": "Draft Community Group Report, 13 April 2021"
+    },
+    {
+      "id": "abstract",
+      "href": "https://wicg.github.io/web-otp/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "status",
+      "href": "https://wicg.github.io/web-otp/#status",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://wicg.github.io/web-otp/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "intro",
+      "href": "https://wicg.github.io/web-otp/#intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "intro-client",
+      "href": "https://wicg.github.io/web-otp/#intro-client",
+      "level": 3,
+      "title": "The client side API",
+      "number": "1.1"
+    },
+    {
+      "id": "intro-server",
+      "href": "https://wicg.github.io/web-otp/#intro-server",
+      "level": 3,
+      "title": "The server side API",
+      "number": "1.2"
+    },
+    {
+      "id": "intro-feature-detection",
+      "href": "https://wicg.github.io/web-otp/#intro-feature-detection",
+      "level": 3,
+      "title": "Feature Detection",
+      "number": "1.3"
+    },
+    {
+      "id": "intro-wc",
+      "href": "https://wicg.github.io/web-otp/#intro-wc",
+      "level": 3,
+      "title": "Web Components",
+      "number": "1.4"
+    },
+    {
+      "id": "intro-abort",
+      "href": "https://wicg.github.io/web-otp/#intro-abort",
+      "level": 3,
+      "title": "Abort API",
+      "number": "1.5"
+    },
+    {
+      "id": "API",
+      "href": "https://wicg.github.io/web-otp/#API",
+      "level": 2,
+      "title": "Client Side API",
+      "number": "2"
+    },
+    {
+      "id": "OTPCredential",
+      "href": "https://wicg.github.io/web-otp/#OTPCredential",
+      "level": 3,
+      "title": "The OTPCredential Interface",
+      "number": "2.1"
+    },
+    {
+      "id": "sctn-discover-from-external-source",
+      "href": "https://wicg.github.io/web-otp/#sctn-discover-from-external-source",
+      "level": 4,
+      "title": "The [[DiscoverFromExternalSource]](origin, options, sameOriginWithAncestors) Method",
+      "number": "2.1.1"
+    },
+    {
+      "id": "CredentialRequestOptions",
+      "href": "https://wicg.github.io/web-otp/#CredentialRequestOptions",
+      "level": 3,
+      "title": "CredentialRequestOptions",
+      "number": "2.2"
+    },
+    {
+      "id": "OTPCredentialRequestOptions",
+      "href": "https://wicg.github.io/web-otp/#OTPCredentialRequestOptions",
+      "level": 3,
+      "title": "OTPCredentialRequestOptions",
+      "number": "2.3"
+    },
+    {
+      "id": "enum-transport",
+      "href": "https://wicg.github.io/web-otp/#enum-transport",
+      "level": 3,
+      "title": "OTPCredentialTransportType",
+      "number": "2.4"
+    },
+    {
+      "id": "sctn-permissions-policy",
+      "href": "https://wicg.github.io/web-otp/#sctn-permissions-policy",
+      "level": 3,
+      "title": "Permissions Policy integration",
+      "number": "2.5"
+    },
+    {
+      "id": "sctn-iframe-guidance",
+      "href": "https://wicg.github.io/web-otp/#sctn-iframe-guidance",
+      "level": 3,
+      "title": "Using WebOTP within iframe elements",
+      "number": "2.6"
+    },
+    {
+      "id": "transports",
+      "href": "https://wicg.github.io/web-otp/#transports",
+      "level": 2,
+      "title": "Transports",
+      "number": "3"
+    },
+    {
+      "id": "transports-sms",
+      "href": "https://wicg.github.io/web-otp/#transports-sms",
+      "level": 3,
+      "title": "SMS",
+      "number": "3.1"
+    },
+    {
+      "id": "security",
+      "href": "https://wicg.github.io/web-otp/#security",
+      "level": 2,
+      "title": "Security",
+      "number": "4"
+    },
+    {
+      "id": "security-availability",
+      "href": "https://wicg.github.io/web-otp/#security-availability",
+      "level": 3,
+      "title": "Availability",
+      "number": "4.1"
+    },
+    {
+      "id": "security-addressing",
+      "href": "https://wicg.github.io/web-otp/#security-addressing",
+      "level": 3,
+      "title": "Addressing",
+      "number": "4.2"
+    },
+    {
+      "id": "security-tampering",
+      "href": "https://wicg.github.io/web-otp/#security-tampering",
+      "level": 3,
+      "title": "Tampering",
+      "number": "4.3"
+    },
+    {
+      "id": "sctn-seccons-visibility",
+      "href": "https://wicg.github.io/web-otp/#sctn-seccons-visibility",
+      "level": 3,
+      "title": "Visibility Considerations for Embedded Usage",
+      "number": "4.4"
+    },
+    {
+      "id": "privacy",
+      "href": "https://wicg.github.io/web-otp/#privacy",
+      "level": 2,
+      "title": "Privacy",
+      "number": "5"
+    },
+    {
+      "id": "acknowledgements",
+      "href": "https://wicg.github.io/web-otp/#acknowledgements",
+      "level": 2,
+      "title": "Acknowledgements",
+      "number": "6"
+    },
+    {
+      "id": "w3c-conformance",
+      "href": "https://wicg.github.io/web-otp/#w3c-conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "w3c-conventions",
+      "href": "https://wicg.github.io/web-otp/#w3c-conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "w3c-conformant-algorithms",
+      "href": "https://wicg.github.io/web-otp/#w3c-conformant-algorithms",
+      "level": 3,
+      "title": "Conformant Algorithms"
+    },
+    {
+      "id": "index",
+      "href": "https://wicg.github.io/web-otp/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://wicg.github.io/web-otp/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://wicg.github.io/web-otp/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://wicg.github.io/web-otp/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://wicg.github.io/web-otp/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://wicg.github.io/web-otp/#informative",
+      "level": 3,
+      "title": "Informative References"
+    },
+    {
+      "id": "idl-index",
+      "href": "https://wicg.github.io/web-otp/#idl-index",
+      "level": 2,
+      "title": "IDL Index"
+    }
+  ]
+}

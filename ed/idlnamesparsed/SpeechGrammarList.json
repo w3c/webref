@@ -1,0 +1,146 @@
+{
+  "name": "SpeechGrammarList",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Web Speech API",
+      "url": "https://wicg.github.io/speech-api/"
+    },
+    "fragment": "// The object representing a speech grammar collection\n[Exposed=Window]\ninterface SpeechGrammarList {\n    constructor();\n    readonly attribute unsigned long length;\n    getter SpeechGrammar item(unsigned long index);\n    undefined addFromURI(DOMString src,\n                    optional float weight = 1.0);\n    undefined addFromString(DOMString string,\n                    optional float weight = 1.0);\n};",
+    "href": "https://wicg.github.io/speech-api/#speechgrammarlist"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://wicg.github.io/speech-api/": [
+      {
+        "id": "speechgrammarlist",
+        "href": "https://wicg.github.io/speech-api/#speechgrammarlist",
+        "linkingText": [
+          "SpeechGrammarList"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "speechreco-section",
+          "href": "https://wicg.github.io/speech-api/#speechreco-section",
+          "title": "The SpeechRecognition Interface",
+          "number": "4.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-speechgrammarlist-speechgrammarlist",
+        "href": "https://wicg.github.io/speech-api/#dom-speechgrammarlist-speechgrammarlist",
+        "linkingText": [
+          "SpeechGrammarList()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "SpeechGrammarList"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "speechreco-section",
+          "href": "https://wicg.github.io/speech-api/#speechreco-section",
+          "title": "The SpeechRecognition Interface",
+          "number": "4.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-speechgrammarlist-length",
+        "href": "https://wicg.github.io/speech-api/#dom-speechgrammarlist-length",
+        "linkingText": [
+          "length"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "SpeechGrammarList"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "speechreco-speechgrammarlist",
+          "href": "https://wicg.github.io/speech-api/#speechreco-speechgrammarlist",
+          "title": "SpeechGrammarList",
+          "number": "4.1.10"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-speechgrammarlist-item",
+        "href": "https://wicg.github.io/speech-api/#dom-speechgrammarlist-item",
+        "linkingText": [
+          "item(index)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "SpeechGrammarList"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "speechreco-speechgrammarlist",
+          "href": "https://wicg.github.io/speech-api/#speechreco-speechgrammarlist",
+          "title": "SpeechGrammarList",
+          "number": "4.1.10"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-speechgrammarlist-addfromuri",
+        "href": "https://wicg.github.io/speech-api/#dom-speechgrammarlist-addfromuri",
+        "linkingText": [
+          "addFromURI(src, weight)",
+          "addFromURI(src)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "SpeechGrammarList"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "speechreco-speechgrammarlist",
+          "href": "https://wicg.github.io/speech-api/#speechreco-speechgrammarlist",
+          "title": "SpeechGrammarList",
+          "number": "4.1.10"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-speechgrammarlist-addfromstring",
+        "href": "https://wicg.github.io/speech-api/#dom-speechgrammarlist-addfromstring",
+        "linkingText": [
+          "addFromString(string, weight)",
+          "addFromString(string)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "SpeechGrammarList"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "speechreco-speechgrammarlist",
+          "href": "https://wicg.github.io/speech-api/#speechreco-speechgrammarlist",
+          "title": "SpeechGrammarList",
+          "number": "4.1.10"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

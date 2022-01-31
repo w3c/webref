@@ -1,0 +1,2287 @@
+{
+  "name": "GlobalEventHandlers",
+  "type": "interface mixin",
+  "defined": {
+    "spec": {
+      "title": "HTML Standard",
+      "url": "https://html.spec.whatwg.org/multipage/"
+    },
+    "fragment": "interface mixin GlobalEventHandlers {\n  attribute EventHandler onabort;\n  attribute EventHandler onauxclick;\n  attribute EventHandler onblur;\n  attribute EventHandler oncancel;\n  attribute EventHandler oncanplay;\n  attribute EventHandler oncanplaythrough;\n  attribute EventHandler onchange;\n  attribute EventHandler onclick;\n  attribute EventHandler onclose;\n  attribute EventHandler oncontextlost;\n  attribute EventHandler oncontextmenu;\n  attribute EventHandler oncontextrestored;\n  attribute EventHandler oncuechange;\n  attribute EventHandler ondblclick;\n  attribute EventHandler ondrag;\n  attribute EventHandler ondragend;\n  attribute EventHandler ondragenter;\n  attribute EventHandler ondragleave;\n  attribute EventHandler ondragover;\n  attribute EventHandler ondragstart;\n  attribute EventHandler ondrop;\n  attribute EventHandler ondurationchange;\n  attribute EventHandler onemptied;\n  attribute EventHandler onended;\n  attribute OnErrorEventHandler onerror;\n  attribute EventHandler onfocus;\n  attribute EventHandler onformdata;\n  attribute EventHandler oninput;\n  attribute EventHandler oninvalid;\n  attribute EventHandler onkeydown;\n  attribute EventHandler onkeypress;\n  attribute EventHandler onkeyup;\n  attribute EventHandler onload;\n  attribute EventHandler onloadeddata;\n  attribute EventHandler onloadedmetadata;\n  attribute EventHandler onloadstart;\n  attribute EventHandler onmousedown;\n  [LegacyLenientThis] attribute EventHandler onmouseenter;\n  [LegacyLenientThis] attribute EventHandler onmouseleave;\n  attribute EventHandler onmousemove;\n  attribute EventHandler onmouseout;\n  attribute EventHandler onmouseover;\n  attribute EventHandler onmouseup;\n  attribute EventHandler onpause;\n  attribute EventHandler onplay;\n  attribute EventHandler onplaying;\n  attribute EventHandler onprogress;\n  attribute EventHandler onratechange;\n  attribute EventHandler onreset;\n  attribute EventHandler onresize;\n  attribute EventHandler onscroll;\n  attribute EventHandler onsecuritypolicyviolation;\n  attribute EventHandler onseeked;\n  attribute EventHandler onseeking;\n  attribute EventHandler onselect;\n  attribute EventHandler onslotchange;\n  attribute EventHandler onstalled;\n  attribute EventHandler onsubmit;\n  attribute EventHandler onsuspend;\n  attribute EventHandler ontimeupdate;\n  attribute EventHandler ontoggle;\n  attribute EventHandler onvolumechange;\n  attribute EventHandler onwaiting;\n  attribute EventHandler onwebkitanimationend;\n  attribute EventHandler onwebkitanimationiteration;\n  attribute EventHandler onwebkitanimationstart;\n  attribute EventHandler onwebkittransitionend;\n  attribute EventHandler onwheel;\n};",
+    "href": "https://html.spec.whatwg.org/multipage/webappapis.html#globaleventhandlers"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "CSS Animations Level 1",
+        "url": "https://www.w3.org/TR/css-animations-1/"
+      },
+      "fragment": "partial interface mixin GlobalEventHandlers {\n  attribute EventHandler onanimationstart;\n  attribute EventHandler onanimationiteration;\n  attribute EventHandler onanimationend;\n  attribute EventHandler onanimationcancel;\n};"
+    },
+    {
+      "spec": {
+        "title": "CSS Transitions",
+        "url": "https://www.w3.org/TR/css-transitions-1/"
+      },
+      "fragment": "partial interface mixin GlobalEventHandlers {\n  attribute EventHandler ontransitionrun;\n  attribute EventHandler ontransitionstart;\n  attribute EventHandler ontransitionend;\n  attribute EventHandler ontransitioncancel;\n};"
+    },
+    {
+      "spec": {
+        "title": "Pointer Events",
+        "url": "https://www.w3.org/TR/pointerevents3/"
+      },
+      "fragment": "partial interface mixin GlobalEventHandlers {\n    attribute EventHandler ongotpointercapture;\n    attribute EventHandler onlostpointercapture;\n    attribute EventHandler onpointerdown;\n    attribute EventHandler onpointermove;\n    [SecureContext] attribute EventHandler onpointerrawupdate;\n    attribute EventHandler onpointerup;\n    attribute EventHandler onpointercancel;\n    attribute EventHandler onpointerover;\n    attribute EventHandler onpointerout;\n    attribute EventHandler onpointerenter;\n    attribute EventHandler onpointerleave;\n};"
+    },
+    {
+      "spec": {
+        "title": "Selection API",
+        "url": "https://www.w3.org/TR/selection-api/"
+      },
+      "fragment": "partial interface mixin GlobalEventHandlers {\n  attribute EventHandler onselectstart;\n  attribute EventHandler onselectionchange;\n};"
+    },
+    {
+      "spec": {
+        "title": "Touch Events - Level 2",
+        "url": "https://www.w3.org/TR/touch-events/"
+      },
+      "fragment": "partial interface mixin GlobalEventHandlers {\n                    attribute EventHandler ontouchstart;\n                    attribute EventHandler ontouchend;\n                    attribute EventHandler ontouchmove;\n                    attribute EventHandler ontouchcancel;\n};"
+    },
+    {
+      "spec": {
+        "title": "WebXR DOM Overlays Module",
+        "url": "https://www.w3.org/TR/webxr-dom-overlays-1/"
+      },
+      "fragment": "partial interface mixin GlobalEventHandlers {\n  attribute EventHandler onbeforexrselect;\n};"
+    }
+  ],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://html.spec.whatwg.org/multipage/": [
+      {
+        "id": "globaleventhandlers",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#globaleventhandlers",
+        "linkingText": [
+          "GlobalEventHandlers"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "idl-definitions",
+          "href": "https://html.spec.whatwg.org/multipage/webappapis.html#idl-definitions",
+          "title": "IDL definitions",
+          "number": "8.1.7.2.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "handler-onabort",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onabort",
+        "linkingText": [
+          "onabort"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "HTMLElement",
+          "Document",
+          "Window",
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers-on-elements,-document-objects,-and-window-objects",
+          "href": "https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers-on-elements,-document-objects,-and-window-objects",
+          "title": "Event handlers on elements, Document objects, and Window objects",
+          "number": "8.1.7.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-onauxclick",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onauxclick",
+        "linkingText": [
+          "onauxclick"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "HTMLElement",
+          "Document",
+          "Window",
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers-on-elements,-document-objects,-and-window-objects",
+          "href": "https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers-on-elements,-document-objects,-and-window-objects",
+          "title": "Event handlers on elements, Document objects, and Window objects",
+          "number": "8.1.7.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-onblur",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onblur",
+        "linkingText": [
+          "onblur"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers-on-elements,-document-objects,-and-window-objects",
+          "href": "https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers-on-elements,-document-objects,-and-window-objects",
+          "title": "Event handlers on elements, Document objects, and Window objects",
+          "number": "8.1.7.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-oncancel",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-oncancel",
+        "linkingText": [
+          "oncancel"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "HTMLElement",
+          "Document",
+          "Window",
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers-on-elements,-document-objects,-and-window-objects",
+          "href": "https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers-on-elements,-document-objects,-and-window-objects",
+          "title": "Event handlers on elements, Document objects, and Window objects",
+          "number": "8.1.7.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-oncanplay",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-oncanplay",
+        "linkingText": [
+          "oncanplay"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "HTMLElement",
+          "Document",
+          "Window",
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers-on-elements,-document-objects,-and-window-objects",
+          "href": "https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers-on-elements,-document-objects,-and-window-objects",
+          "title": "Event handlers on elements, Document objects, and Window objects",
+          "number": "8.1.7.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-oncanplaythrough",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-oncanplaythrough",
+        "linkingText": [
+          "oncanplaythrough"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "HTMLElement",
+          "Document",
+          "Window",
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers-on-elements,-document-objects,-and-window-objects",
+          "href": "https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers-on-elements,-document-objects,-and-window-objects",
+          "title": "Event handlers on elements, Document objects, and Window objects",
+          "number": "8.1.7.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-onchange",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onchange",
+        "linkingText": [
+          "onchange"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "HTMLElement",
+          "Document",
+          "Window",
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers-on-elements,-document-objects,-and-window-objects",
+          "href": "https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers-on-elements,-document-objects,-and-window-objects",
+          "title": "Event handlers on elements, Document objects, and Window objects",
+          "number": "8.1.7.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-onclick",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onclick",
+        "linkingText": [
+          "onclick"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "HTMLElement",
+          "Document",
+          "Window",
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers-on-elements,-document-objects,-and-window-objects",
+          "href": "https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers-on-elements,-document-objects,-and-window-objects",
+          "title": "Event handlers on elements, Document objects, and Window objects",
+          "number": "8.1.7.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-onclose",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onclose",
+        "linkingText": [
+          "onclose"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "HTMLElement",
+          "Document",
+          "Window",
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers-on-elements,-document-objects,-and-window-objects",
+          "href": "https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers-on-elements,-document-objects,-and-window-objects",
+          "title": "Event handlers on elements, Document objects, and Window objects",
+          "number": "8.1.7.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-oncontextlost",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-oncontextlost",
+        "linkingText": [
+          "oncontextlost"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "HTMLElement",
+          "Document",
+          "Window",
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers-on-elements,-document-objects,-and-window-objects",
+          "href": "https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers-on-elements,-document-objects,-and-window-objects",
+          "title": "Event handlers on elements, Document objects, and Window objects",
+          "number": "8.1.7.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-oncontextmenu",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-oncontextmenu",
+        "linkingText": [
+          "oncontextmenu"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "HTMLElement",
+          "Document",
+          "Window",
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers-on-elements,-document-objects,-and-window-objects",
+          "href": "https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers-on-elements,-document-objects,-and-window-objects",
+          "title": "Event handlers on elements, Document objects, and Window objects",
+          "number": "8.1.7.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-oncontextrestored",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-oncontextrestored",
+        "linkingText": [
+          "oncontextrestored"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "HTMLElement",
+          "Document",
+          "Window",
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers-on-elements,-document-objects,-and-window-objects",
+          "href": "https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers-on-elements,-document-objects,-and-window-objects",
+          "title": "Event handlers on elements, Document objects, and Window objects",
+          "number": "8.1.7.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-oncuechange",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-oncuechange",
+        "linkingText": [
+          "oncuechange"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "HTMLElement",
+          "Document",
+          "Window",
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers-on-elements,-document-objects,-and-window-objects",
+          "href": "https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers-on-elements,-document-objects,-and-window-objects",
+          "title": "Event handlers on elements, Document objects, and Window objects",
+          "number": "8.1.7.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-ondblclick",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-ondblclick",
+        "linkingText": [
+          "ondblclick"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "HTMLElement",
+          "Document",
+          "Window",
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers-on-elements,-document-objects,-and-window-objects",
+          "href": "https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers-on-elements,-document-objects,-and-window-objects",
+          "title": "Event handlers on elements, Document objects, and Window objects",
+          "number": "8.1.7.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-ondrag",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-ondrag",
+        "linkingText": [
+          "ondrag"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "HTMLElement",
+          "Document",
+          "Window",
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers-on-elements,-document-objects,-and-window-objects",
+          "href": "https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers-on-elements,-document-objects,-and-window-objects",
+          "title": "Event handlers on elements, Document objects, and Window objects",
+          "number": "8.1.7.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-ondragend",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-ondragend",
+        "linkingText": [
+          "ondragend"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "HTMLElement",
+          "Document",
+          "Window",
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers-on-elements,-document-objects,-and-window-objects",
+          "href": "https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers-on-elements,-document-objects,-and-window-objects",
+          "title": "Event handlers on elements, Document objects, and Window objects",
+          "number": "8.1.7.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-ondragenter",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-ondragenter",
+        "linkingText": [
+          "ondragenter"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "HTMLElement",
+          "Document",
+          "Window",
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers-on-elements,-document-objects,-and-window-objects",
+          "href": "https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers-on-elements,-document-objects,-and-window-objects",
+          "title": "Event handlers on elements, Document objects, and Window objects",
+          "number": "8.1.7.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-ondragleave",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-ondragleave",
+        "linkingText": [
+          "ondragleave"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "HTMLElement",
+          "Document",
+          "Window",
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers-on-elements,-document-objects,-and-window-objects",
+          "href": "https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers-on-elements,-document-objects,-and-window-objects",
+          "title": "Event handlers on elements, Document objects, and Window objects",
+          "number": "8.1.7.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-ondragover",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-ondragover",
+        "linkingText": [
+          "ondragover"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "HTMLElement",
+          "Document",
+          "Window",
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers-on-elements,-document-objects,-and-window-objects",
+          "href": "https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers-on-elements,-document-objects,-and-window-objects",
+          "title": "Event handlers on elements, Document objects, and Window objects",
+          "number": "8.1.7.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-ondragstart",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-ondragstart",
+        "linkingText": [
+          "ondragstart"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "HTMLElement",
+          "Document",
+          "Window",
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers-on-elements,-document-objects,-and-window-objects",
+          "href": "https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers-on-elements,-document-objects,-and-window-objects",
+          "title": "Event handlers on elements, Document objects, and Window objects",
+          "number": "8.1.7.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-ondrop",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-ondrop",
+        "linkingText": [
+          "ondrop"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "HTMLElement",
+          "Document",
+          "Window",
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers-on-elements,-document-objects,-and-window-objects",
+          "href": "https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers-on-elements,-document-objects,-and-window-objects",
+          "title": "Event handlers on elements, Document objects, and Window objects",
+          "number": "8.1.7.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-ondurationchange",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-ondurationchange",
+        "linkingText": [
+          "ondurationchange"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "HTMLElement",
+          "Document",
+          "Window",
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers-on-elements,-document-objects,-and-window-objects",
+          "href": "https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers-on-elements,-document-objects,-and-window-objects",
+          "title": "Event handlers on elements, Document objects, and Window objects",
+          "number": "8.1.7.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-onemptied",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onemptied",
+        "linkingText": [
+          "onemptied"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "HTMLElement",
+          "Document",
+          "Window",
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers-on-elements,-document-objects,-and-window-objects",
+          "href": "https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers-on-elements,-document-objects,-and-window-objects",
+          "title": "Event handlers on elements, Document objects, and Window objects",
+          "number": "8.1.7.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-onended",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onended",
+        "linkingText": [
+          "onended"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "HTMLElement",
+          "Document",
+          "Window",
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers-on-elements,-document-objects,-and-window-objects",
+          "href": "https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers-on-elements,-document-objects,-and-window-objects",
+          "title": "Event handlers on elements, Document objects, and Window objects",
+          "number": "8.1.7.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-onerror",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onerror",
+        "linkingText": [
+          "onerror"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers-on-elements,-document-objects,-and-window-objects",
+          "href": "https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers-on-elements,-document-objects,-and-window-objects",
+          "title": "Event handlers on elements, Document objects, and Window objects",
+          "number": "8.1.7.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-onfocus",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onfocus",
+        "linkingText": [
+          "onfocus"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers-on-elements,-document-objects,-and-window-objects",
+          "href": "https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers-on-elements,-document-objects,-and-window-objects",
+          "title": "Event handlers on elements, Document objects, and Window objects",
+          "number": "8.1.7.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-onformdata",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onformdata",
+        "linkingText": [
+          "onformdata"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "HTMLElement",
+          "Document",
+          "Window",
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers-on-elements,-document-objects,-and-window-objects",
+          "href": "https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers-on-elements,-document-objects,-and-window-objects",
+          "title": "Event handlers on elements, Document objects, and Window objects",
+          "number": "8.1.7.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-oninput",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-oninput",
+        "linkingText": [
+          "oninput"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "HTMLElement",
+          "Document",
+          "Window",
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers-on-elements,-document-objects,-and-window-objects",
+          "href": "https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers-on-elements,-document-objects,-and-window-objects",
+          "title": "Event handlers on elements, Document objects, and Window objects",
+          "number": "8.1.7.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-oninvalid",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-oninvalid",
+        "linkingText": [
+          "oninvalid"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "HTMLElement",
+          "Document",
+          "Window",
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers-on-elements,-document-objects,-and-window-objects",
+          "href": "https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers-on-elements,-document-objects,-and-window-objects",
+          "title": "Event handlers on elements, Document objects, and Window objects",
+          "number": "8.1.7.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-onkeydown",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onkeydown",
+        "linkingText": [
+          "onkeydown"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "HTMLElement",
+          "Document",
+          "Window",
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers-on-elements,-document-objects,-and-window-objects",
+          "href": "https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers-on-elements,-document-objects,-and-window-objects",
+          "title": "Event handlers on elements, Document objects, and Window objects",
+          "number": "8.1.7.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-onkeypress",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onkeypress",
+        "linkingText": [
+          "onkeypress"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "HTMLElement",
+          "Document",
+          "Window",
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers-on-elements,-document-objects,-and-window-objects",
+          "href": "https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers-on-elements,-document-objects,-and-window-objects",
+          "title": "Event handlers on elements, Document objects, and Window objects",
+          "number": "8.1.7.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-onkeyup",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onkeyup",
+        "linkingText": [
+          "onkeyup"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "HTMLElement",
+          "Document",
+          "Window",
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers-on-elements,-document-objects,-and-window-objects",
+          "href": "https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers-on-elements,-document-objects,-and-window-objects",
+          "title": "Event handlers on elements, Document objects, and Window objects",
+          "number": "8.1.7.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-onload",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onload",
+        "linkingText": [
+          "onload"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers-on-elements,-document-objects,-and-window-objects",
+          "href": "https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers-on-elements,-document-objects,-and-window-objects",
+          "title": "Event handlers on elements, Document objects, and Window objects",
+          "number": "8.1.7.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-onloadeddata",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onloadeddata",
+        "linkingText": [
+          "onloadeddata"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "HTMLElement",
+          "Document",
+          "Window",
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers-on-elements,-document-objects,-and-window-objects",
+          "href": "https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers-on-elements,-document-objects,-and-window-objects",
+          "title": "Event handlers on elements, Document objects, and Window objects",
+          "number": "8.1.7.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-onloadedmetadata",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onloadedmetadata",
+        "linkingText": [
+          "onloadedmetadata"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "HTMLElement",
+          "Document",
+          "Window",
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers-on-elements,-document-objects,-and-window-objects",
+          "href": "https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers-on-elements,-document-objects,-and-window-objects",
+          "title": "Event handlers on elements, Document objects, and Window objects",
+          "number": "8.1.7.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-onloadstart",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onloadstart",
+        "linkingText": [
+          "onloadstart"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "HTMLElement",
+          "Document",
+          "Window",
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers-on-elements,-document-objects,-and-window-objects",
+          "href": "https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers-on-elements,-document-objects,-and-window-objects",
+          "title": "Event handlers on elements, Document objects, and Window objects",
+          "number": "8.1.7.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-onmousedown",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onmousedown",
+        "linkingText": [
+          "onmousedown"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "HTMLElement",
+          "Document",
+          "Window",
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers-on-elements,-document-objects,-and-window-objects",
+          "href": "https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers-on-elements,-document-objects,-and-window-objects",
+          "title": "Event handlers on elements, Document objects, and Window objects",
+          "number": "8.1.7.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-onmouseenter",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onmouseenter",
+        "linkingText": [
+          "onmouseenter"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "HTMLElement",
+          "Document",
+          "Window",
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers-on-elements,-document-objects,-and-window-objects",
+          "href": "https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers-on-elements,-document-objects,-and-window-objects",
+          "title": "Event handlers on elements, Document objects, and Window objects",
+          "number": "8.1.7.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-onmouseleave",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onmouseleave",
+        "linkingText": [
+          "onmouseleave"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "HTMLElement",
+          "Document",
+          "Window",
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers-on-elements,-document-objects,-and-window-objects",
+          "href": "https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers-on-elements,-document-objects,-and-window-objects",
+          "title": "Event handlers on elements, Document objects, and Window objects",
+          "number": "8.1.7.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-onmousemove",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onmousemove",
+        "linkingText": [
+          "onmousemove"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "HTMLElement",
+          "Document",
+          "Window",
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers-on-elements,-document-objects,-and-window-objects",
+          "href": "https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers-on-elements,-document-objects,-and-window-objects",
+          "title": "Event handlers on elements, Document objects, and Window objects",
+          "number": "8.1.7.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-onmouseout",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onmouseout",
+        "linkingText": [
+          "onmouseout"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "HTMLElement",
+          "Document",
+          "Window",
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers-on-elements,-document-objects,-and-window-objects",
+          "href": "https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers-on-elements,-document-objects,-and-window-objects",
+          "title": "Event handlers on elements, Document objects, and Window objects",
+          "number": "8.1.7.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-onmouseover",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onmouseover",
+        "linkingText": [
+          "onmouseover"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "HTMLElement",
+          "Document",
+          "Window",
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers-on-elements,-document-objects,-and-window-objects",
+          "href": "https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers-on-elements,-document-objects,-and-window-objects",
+          "title": "Event handlers on elements, Document objects, and Window objects",
+          "number": "8.1.7.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-onmouseup",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onmouseup",
+        "linkingText": [
+          "onmouseup"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "HTMLElement",
+          "Document",
+          "Window",
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers-on-elements,-document-objects,-and-window-objects",
+          "href": "https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers-on-elements,-document-objects,-and-window-objects",
+          "title": "Event handlers on elements, Document objects, and Window objects",
+          "number": "8.1.7.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-onpause",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onpause",
+        "linkingText": [
+          "onpause"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "HTMLElement",
+          "Document",
+          "Window",
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers-on-elements,-document-objects,-and-window-objects",
+          "href": "https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers-on-elements,-document-objects,-and-window-objects",
+          "title": "Event handlers on elements, Document objects, and Window objects",
+          "number": "8.1.7.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-onplay",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onplay",
+        "linkingText": [
+          "onplay"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "HTMLElement",
+          "Document",
+          "Window",
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers-on-elements,-document-objects,-and-window-objects",
+          "href": "https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers-on-elements,-document-objects,-and-window-objects",
+          "title": "Event handlers on elements, Document objects, and Window objects",
+          "number": "8.1.7.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-onplaying",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onplaying",
+        "linkingText": [
+          "onplaying"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "HTMLElement",
+          "Document",
+          "Window",
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers-on-elements,-document-objects,-and-window-objects",
+          "href": "https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers-on-elements,-document-objects,-and-window-objects",
+          "title": "Event handlers on elements, Document objects, and Window objects",
+          "number": "8.1.7.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-onprogress",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onprogress",
+        "linkingText": [
+          "onprogress"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "HTMLElement",
+          "Document",
+          "Window",
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers-on-elements,-document-objects,-and-window-objects",
+          "href": "https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers-on-elements,-document-objects,-and-window-objects",
+          "title": "Event handlers on elements, Document objects, and Window objects",
+          "number": "8.1.7.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-onratechange",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onratechange",
+        "linkingText": [
+          "onratechange"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "HTMLElement",
+          "Document",
+          "Window",
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers-on-elements,-document-objects,-and-window-objects",
+          "href": "https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers-on-elements,-document-objects,-and-window-objects",
+          "title": "Event handlers on elements, Document objects, and Window objects",
+          "number": "8.1.7.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-onreset",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onreset",
+        "linkingText": [
+          "onreset"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "HTMLElement",
+          "Document",
+          "Window",
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers-on-elements,-document-objects,-and-window-objects",
+          "href": "https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers-on-elements,-document-objects,-and-window-objects",
+          "title": "Event handlers on elements, Document objects, and Window objects",
+          "number": "8.1.7.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-onresize",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onresize",
+        "linkingText": [
+          "onresize"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers-on-elements,-document-objects,-and-window-objects",
+          "href": "https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers-on-elements,-document-objects,-and-window-objects",
+          "title": "Event handlers on elements, Document objects, and Window objects",
+          "number": "8.1.7.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-onscroll",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onscroll",
+        "linkingText": [
+          "onscroll"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers-on-elements,-document-objects,-and-window-objects",
+          "href": "https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers-on-elements,-document-objects,-and-window-objects",
+          "title": "Event handlers on elements, Document objects, and Window objects",
+          "number": "8.1.7.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-onsecuritypolicyviolation",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onsecuritypolicyviolation",
+        "linkingText": [
+          "onsecuritypolicyviolation"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "HTMLElement",
+          "Document",
+          "Window",
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers-on-elements,-document-objects,-and-window-objects",
+          "href": "https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers-on-elements,-document-objects,-and-window-objects",
+          "title": "Event handlers on elements, Document objects, and Window objects",
+          "number": "8.1.7.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-onseeked",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onseeked",
+        "linkingText": [
+          "onseeked"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "HTMLElement",
+          "Document",
+          "Window",
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers-on-elements,-document-objects,-and-window-objects",
+          "href": "https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers-on-elements,-document-objects,-and-window-objects",
+          "title": "Event handlers on elements, Document objects, and Window objects",
+          "number": "8.1.7.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-onseeking",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onseeking",
+        "linkingText": [
+          "onseeking"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "HTMLElement",
+          "Document",
+          "Window",
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers-on-elements,-document-objects,-and-window-objects",
+          "href": "https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers-on-elements,-document-objects,-and-window-objects",
+          "title": "Event handlers on elements, Document objects, and Window objects",
+          "number": "8.1.7.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-onselect",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onselect",
+        "linkingText": [
+          "onselect"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "HTMLElement",
+          "Document",
+          "Window",
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers-on-elements,-document-objects,-and-window-objects",
+          "href": "https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers-on-elements,-document-objects,-and-window-objects",
+          "title": "Event handlers on elements, Document objects, and Window objects",
+          "number": "8.1.7.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-onslotchange",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onslotchange",
+        "linkingText": [
+          "onslotchange"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "HTMLElement",
+          "Document",
+          "Window",
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers-on-elements,-document-objects,-and-window-objects",
+          "href": "https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers-on-elements,-document-objects,-and-window-objects",
+          "title": "Event handlers on elements, Document objects, and Window objects",
+          "number": "8.1.7.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-onstalled",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onstalled",
+        "linkingText": [
+          "onstalled"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "HTMLElement",
+          "Document",
+          "Window",
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers-on-elements,-document-objects,-and-window-objects",
+          "href": "https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers-on-elements,-document-objects,-and-window-objects",
+          "title": "Event handlers on elements, Document objects, and Window objects",
+          "number": "8.1.7.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-onsubmit",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onsubmit",
+        "linkingText": [
+          "onsubmit"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "HTMLElement",
+          "Document",
+          "Window",
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers-on-elements,-document-objects,-and-window-objects",
+          "href": "https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers-on-elements,-document-objects,-and-window-objects",
+          "title": "Event handlers on elements, Document objects, and Window objects",
+          "number": "8.1.7.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-onsuspend",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onsuspend",
+        "linkingText": [
+          "onsuspend"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "HTMLElement",
+          "Document",
+          "Window",
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers-on-elements,-document-objects,-and-window-objects",
+          "href": "https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers-on-elements,-document-objects,-and-window-objects",
+          "title": "Event handlers on elements, Document objects, and Window objects",
+          "number": "8.1.7.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-ontimeupdate",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-ontimeupdate",
+        "linkingText": [
+          "ontimeupdate"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "HTMLElement",
+          "Document",
+          "Window",
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers-on-elements,-document-objects,-and-window-objects",
+          "href": "https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers-on-elements,-document-objects,-and-window-objects",
+          "title": "Event handlers on elements, Document objects, and Window objects",
+          "number": "8.1.7.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-ontoggle",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-ontoggle",
+        "linkingText": [
+          "ontoggle"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "HTMLElement",
+          "Document",
+          "Window",
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers-on-elements,-document-objects,-and-window-objects",
+          "href": "https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers-on-elements,-document-objects,-and-window-objects",
+          "title": "Event handlers on elements, Document objects, and Window objects",
+          "number": "8.1.7.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-onvolumechange",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onvolumechange",
+        "linkingText": [
+          "onvolumechange"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "HTMLElement",
+          "Document",
+          "Window",
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers-on-elements,-document-objects,-and-window-objects",
+          "href": "https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers-on-elements,-document-objects,-and-window-objects",
+          "title": "Event handlers on elements, Document objects, and Window objects",
+          "number": "8.1.7.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-onwaiting",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onwaiting",
+        "linkingText": [
+          "onwaiting"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "HTMLElement",
+          "Document",
+          "Window",
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers-on-elements,-document-objects,-and-window-objects",
+          "href": "https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers-on-elements,-document-objects,-and-window-objects",
+          "title": "Event handlers on elements, Document objects, and Window objects",
+          "number": "8.1.7.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-onwebkitanimationend",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onwebkitanimationend",
+        "linkingText": [
+          "onwebkitanimationend"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "HTMLElement",
+          "Document",
+          "Window",
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers-on-elements,-document-objects,-and-window-objects",
+          "href": "https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers-on-elements,-document-objects,-and-window-objects",
+          "title": "Event handlers on elements, Document objects, and Window objects",
+          "number": "8.1.7.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-onwebkitanimationiteration",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onwebkitanimationiteration",
+        "linkingText": [
+          "onwebkitanimationiteration"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "HTMLElement",
+          "Document",
+          "Window",
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers-on-elements,-document-objects,-and-window-objects",
+          "href": "https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers-on-elements,-document-objects,-and-window-objects",
+          "title": "Event handlers on elements, Document objects, and Window objects",
+          "number": "8.1.7.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-onwebkitanimationstart",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onwebkitanimationstart",
+        "linkingText": [
+          "onwebkitanimationstart"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "HTMLElement",
+          "Document",
+          "Window",
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers-on-elements,-document-objects,-and-window-objects",
+          "href": "https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers-on-elements,-document-objects,-and-window-objects",
+          "title": "Event handlers on elements, Document objects, and Window objects",
+          "number": "8.1.7.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-onwebkittransitionend",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onwebkittransitionend",
+        "linkingText": [
+          "onwebkittransitionend"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "HTMLElement",
+          "Document",
+          "Window",
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers-on-elements,-document-objects,-and-window-objects",
+          "href": "https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers-on-elements,-document-objects,-and-window-objects",
+          "title": "Event handlers on elements, Document objects, and Window objects",
+          "number": "8.1.7.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-onwheel",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onwheel",
+        "linkingText": [
+          "onwheel"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "HTMLElement",
+          "Document",
+          "Window",
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers-on-elements,-document-objects,-and-window-objects",
+          "href": "https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers-on-elements,-document-objects,-and-window-objects",
+          "title": "Event handlers on elements, Document objects, and Window objects",
+          "number": "8.1.7.2"
+        },
+        "definedIn": "table"
+      }
+    ],
+    "https://www.w3.org/TR/css-animations-1/": [
+      {
+        "id": "dom-globaleventhandlers-onanimationstart",
+        "href": "https://drafts.csswg.org/css-animations/#dom-globaleventhandlers-onanimationstart",
+        "linkingText": [
+          "onanimationstart"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-globaleventhandlers-idl",
+          "href": "https://drafts.csswg.org/css-animations/#interface-globaleventhandlers-idl",
+          "title": "IDL Definition",
+          "number": "5.4.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-globaleventhandlers-onanimationiteration",
+        "href": "https://drafts.csswg.org/css-animations/#dom-globaleventhandlers-onanimationiteration",
+        "linkingText": [
+          "onanimationiteration"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-globaleventhandlers-idl",
+          "href": "https://drafts.csswg.org/css-animations/#interface-globaleventhandlers-idl",
+          "title": "IDL Definition",
+          "number": "5.4.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-globaleventhandlers-onanimationend",
+        "href": "https://drafts.csswg.org/css-animations/#dom-globaleventhandlers-onanimationend",
+        "linkingText": [
+          "onanimationend"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-globaleventhandlers-idl",
+          "href": "https://drafts.csswg.org/css-animations/#interface-globaleventhandlers-idl",
+          "title": "IDL Definition",
+          "number": "5.4.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-globaleventhandlers-onanimationcancel",
+        "href": "https://drafts.csswg.org/css-animations/#dom-globaleventhandlers-onanimationcancel",
+        "linkingText": [
+          "onanimationcancel"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-globaleventhandlers-idl",
+          "href": "https://drafts.csswg.org/css-animations/#interface-globaleventhandlers-idl",
+          "title": "IDL Definition",
+          "number": "5.4.1"
+        },
+        "definedIn": "pre"
+      }
+    ],
+    "https://www.w3.org/TR/css-transitions-1/": [
+      {
+        "id": "dom-globaleventhandlers-ontransitionrun",
+        "href": "https://drafts.csswg.org/css-transitions/#dom-globaleventhandlers-ontransitionrun",
+        "linkingText": [
+          "ontransitionrun"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-globaleventhandlers-idl",
+          "href": "https://drafts.csswg.org/css-transitions/#interface-globaleventhandlers-idl",
+          "title": "IDL Definition",
+          "number": "7.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-globaleventhandlers-ontransitionstart",
+        "href": "https://drafts.csswg.org/css-transitions/#dom-globaleventhandlers-ontransitionstart",
+        "linkingText": [
+          "ontransitionstart"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-globaleventhandlers-idl",
+          "href": "https://drafts.csswg.org/css-transitions/#interface-globaleventhandlers-idl",
+          "title": "IDL Definition",
+          "number": "7.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-globaleventhandlers-ontransitionend",
+        "href": "https://drafts.csswg.org/css-transitions/#dom-globaleventhandlers-ontransitionend",
+        "linkingText": [
+          "ontransitionend"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-globaleventhandlers-idl",
+          "href": "https://drafts.csswg.org/css-transitions/#interface-globaleventhandlers-idl",
+          "title": "IDL Definition",
+          "number": "7.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-globaleventhandlers-ontransitioncancel",
+        "href": "https://drafts.csswg.org/css-transitions/#dom-globaleventhandlers-ontransitioncancel",
+        "linkingText": [
+          "ontransitioncancel"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-globaleventhandlers-idl",
+          "href": "https://drafts.csswg.org/css-transitions/#interface-globaleventhandlers-idl",
+          "title": "IDL Definition",
+          "number": "7.1"
+        },
+        "definedIn": "pre"
+      }
+    ],
+    "https://www.w3.org/TR/pointerevents3/": [
+      {
+        "id": "dom-globaleventhandlers-ongotpointercapture",
+        "href": "https://w3c.github.io/pointerevents/#dom-globaleventhandlers-ongotpointercapture",
+        "linkingText": [
+          "ongotpointercapture"
+        ],
+        "localLinkingText": [
+          "GlobalEventHandlers.ongotpointercapture"
+        ],
+        "type": "attribute",
+        "for": [
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "extensions-to-the-globaleventhandlers-mixin",
+          "href": "https://w3c.github.io/pointerevents/#extensions-to-the-globaleventhandlers-mixin",
+          "title": "Extensions to the GlobalEventHandlers mixin",
+          "number": "6"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-globaleventhandlers-onlostpointercapture",
+        "href": "https://w3c.github.io/pointerevents/#dom-globaleventhandlers-onlostpointercapture",
+        "linkingText": [
+          "onlostpointercapture"
+        ],
+        "localLinkingText": [
+          "GlobalEventHandlers.onlostpointercapture"
+        ],
+        "type": "attribute",
+        "for": [
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "extensions-to-the-globaleventhandlers-mixin",
+          "href": "https://w3c.github.io/pointerevents/#extensions-to-the-globaleventhandlers-mixin",
+          "title": "Extensions to the GlobalEventHandlers mixin",
+          "number": "6"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-globaleventhandlers-onpointerdown",
+        "href": "https://w3c.github.io/pointerevents/#dom-globaleventhandlers-onpointerdown",
+        "linkingText": [
+          "onpointerdown"
+        ],
+        "localLinkingText": [
+          "GlobalEventHandlers.onpointerdown"
+        ],
+        "type": "attribute",
+        "for": [
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "extensions-to-the-globaleventhandlers-mixin",
+          "href": "https://w3c.github.io/pointerevents/#extensions-to-the-globaleventhandlers-mixin",
+          "title": "Extensions to the GlobalEventHandlers mixin",
+          "number": "6"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-globaleventhandlers-onpointermove",
+        "href": "https://w3c.github.io/pointerevents/#dom-globaleventhandlers-onpointermove",
+        "linkingText": [
+          "onpointermove"
+        ],
+        "localLinkingText": [
+          "GlobalEventHandlers.onpointermove"
+        ],
+        "type": "attribute",
+        "for": [
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "extensions-to-the-globaleventhandlers-mixin",
+          "href": "https://w3c.github.io/pointerevents/#extensions-to-the-globaleventhandlers-mixin",
+          "title": "Extensions to the GlobalEventHandlers mixin",
+          "number": "6"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-globaleventhandlers-onpointerrawupdate",
+        "href": "https://w3c.github.io/pointerevents/#dom-globaleventhandlers-onpointerrawupdate",
+        "linkingText": [
+          "onpointerrawupdate"
+        ],
+        "localLinkingText": [
+          "GlobalEventHandlers.onpointerrawupdate"
+        ],
+        "type": "attribute",
+        "for": [
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "extensions-to-the-globaleventhandlers-mixin",
+          "href": "https://w3c.github.io/pointerevents/#extensions-to-the-globaleventhandlers-mixin",
+          "title": "Extensions to the GlobalEventHandlers mixin",
+          "number": "6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-globaleventhandlers-onpointerup",
+        "href": "https://w3c.github.io/pointerevents/#dom-globaleventhandlers-onpointerup",
+        "linkingText": [
+          "onpointerup"
+        ],
+        "localLinkingText": [
+          "GlobalEventHandlers.onpointerup"
+        ],
+        "type": "attribute",
+        "for": [
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "extensions-to-the-globaleventhandlers-mixin",
+          "href": "https://w3c.github.io/pointerevents/#extensions-to-the-globaleventhandlers-mixin",
+          "title": "Extensions to the GlobalEventHandlers mixin",
+          "number": "6"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-globaleventhandlers-onpointercancel",
+        "href": "https://w3c.github.io/pointerevents/#dom-globaleventhandlers-onpointercancel",
+        "linkingText": [
+          "onpointercancel"
+        ],
+        "localLinkingText": [
+          "GlobalEventHandlers.onpointercancel"
+        ],
+        "type": "attribute",
+        "for": [
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "extensions-to-the-globaleventhandlers-mixin",
+          "href": "https://w3c.github.io/pointerevents/#extensions-to-the-globaleventhandlers-mixin",
+          "title": "Extensions to the GlobalEventHandlers mixin",
+          "number": "6"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-globaleventhandlers-onpointerover",
+        "href": "https://w3c.github.io/pointerevents/#dom-globaleventhandlers-onpointerover",
+        "linkingText": [
+          "onpointerover"
+        ],
+        "localLinkingText": [
+          "GlobalEventHandlers.onpointerover"
+        ],
+        "type": "attribute",
+        "for": [
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "extensions-to-the-globaleventhandlers-mixin",
+          "href": "https://w3c.github.io/pointerevents/#extensions-to-the-globaleventhandlers-mixin",
+          "title": "Extensions to the GlobalEventHandlers mixin",
+          "number": "6"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-globaleventhandlers-onpointerout",
+        "href": "https://w3c.github.io/pointerevents/#dom-globaleventhandlers-onpointerout",
+        "linkingText": [
+          "onpointerout"
+        ],
+        "localLinkingText": [
+          "GlobalEventHandlers.onpointerout"
+        ],
+        "type": "attribute",
+        "for": [
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "extensions-to-the-globaleventhandlers-mixin",
+          "href": "https://w3c.github.io/pointerevents/#extensions-to-the-globaleventhandlers-mixin",
+          "title": "Extensions to the GlobalEventHandlers mixin",
+          "number": "6"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-globaleventhandlers-onpointerenter",
+        "href": "https://w3c.github.io/pointerevents/#dom-globaleventhandlers-onpointerenter",
+        "linkingText": [
+          "onpointerenter"
+        ],
+        "localLinkingText": [
+          "GlobalEventHandlers.onpointerenter"
+        ],
+        "type": "attribute",
+        "for": [
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "extensions-to-the-globaleventhandlers-mixin",
+          "href": "https://w3c.github.io/pointerevents/#extensions-to-the-globaleventhandlers-mixin",
+          "title": "Extensions to the GlobalEventHandlers mixin",
+          "number": "6"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-globaleventhandlers-onpointerleave",
+        "href": "https://w3c.github.io/pointerevents/#dom-globaleventhandlers-onpointerleave",
+        "linkingText": [
+          "onpointerleave"
+        ],
+        "localLinkingText": [
+          "GlobalEventHandlers.onpointerleave"
+        ],
+        "type": "attribute",
+        "for": [
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "extensions-to-the-globaleventhandlers-mixin",
+          "href": "https://w3c.github.io/pointerevents/#extensions-to-the-globaleventhandlers-mixin",
+          "title": "Extensions to the GlobalEventHandlers mixin",
+          "number": "6"
+        },
+        "definedIn": "dt"
+      }
+    ],
+    "https://www.w3.org/TR/selection-api/": [
+      {
+        "id": "dom-globaleventhandlers-onselectstart",
+        "href": "https://w3c.github.io/selection-api/#dom-globaleventhandlers-onselectstart",
+        "linkingText": [
+          "onselectstart"
+        ],
+        "localLinkingText": [
+          "GlobalEventHandlers.onselectstart"
+        ],
+        "type": "attribute",
+        "for": [
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "extensions-to-globaleventhandlers-interface",
+          "href": "https://w3c.github.io/selection-api/#extensions-to-globaleventhandlers-interface",
+          "title": "Extensions to GlobalEventHandlers interface",
+          "number": "4.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-globaleventhandlers-onselectionchange",
+        "href": "https://w3c.github.io/selection-api/#dom-globaleventhandlers-onselectionchange",
+        "linkingText": [
+          "onselectionchange"
+        ],
+        "localLinkingText": [
+          "GlobalEventHandlers.onselectionchange"
+        ],
+        "type": "attribute",
+        "for": [
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "extensions-to-globaleventhandlers-interface",
+          "href": "https://w3c.github.io/selection-api/#extensions-to-globaleventhandlers-interface",
+          "title": "Extensions to GlobalEventHandlers interface",
+          "number": "4.3"
+        },
+        "definedIn": "dt"
+      }
+    ],
+    "https://www.w3.org/TR/touch-events/": [
+      {
+        "id": "dom-globaleventhandlers-ontouchstart",
+        "href": "https://w3c.github.io/touch-events/#dom-globaleventhandlers-ontouchstart",
+        "linkingText": [
+          "ontouchstart"
+        ],
+        "localLinkingText": [
+          "GlobalEventHandlers.ontouchstart"
+        ],
+        "type": "attribute",
+        "for": [
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "extensions-to-the-globaleventhandlers-mixin",
+          "href": "https://w3c.github.io/touch-events/#extensions-to-the-globaleventhandlers-mixin",
+          "title": "Extensions to the GlobalEventHandlers mixin",
+          "number": "7"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-globaleventhandlers-ontouchend",
+        "href": "https://w3c.github.io/touch-events/#dom-globaleventhandlers-ontouchend",
+        "linkingText": [
+          "ontouchend"
+        ],
+        "localLinkingText": [
+          "GlobalEventHandlers.ontouchend"
+        ],
+        "type": "attribute",
+        "for": [
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "extensions-to-the-globaleventhandlers-mixin",
+          "href": "https://w3c.github.io/touch-events/#extensions-to-the-globaleventhandlers-mixin",
+          "title": "Extensions to the GlobalEventHandlers mixin",
+          "number": "7"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-globaleventhandlers-ontouchmove",
+        "href": "https://w3c.github.io/touch-events/#dom-globaleventhandlers-ontouchmove",
+        "linkingText": [
+          "ontouchmove"
+        ],
+        "localLinkingText": [
+          "GlobalEventHandlers.ontouchmove"
+        ],
+        "type": "attribute",
+        "for": [
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "extensions-to-the-globaleventhandlers-mixin",
+          "href": "https://w3c.github.io/touch-events/#extensions-to-the-globaleventhandlers-mixin",
+          "title": "Extensions to the GlobalEventHandlers mixin",
+          "number": "7"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-globaleventhandlers-ontouchcancel",
+        "href": "https://w3c.github.io/touch-events/#dom-globaleventhandlers-ontouchcancel",
+        "linkingText": [
+          "ontouchcancel"
+        ],
+        "localLinkingText": [
+          "GlobalEventHandlers.ontouchcancel"
+        ],
+        "type": "attribute",
+        "for": [
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "extensions-to-the-globaleventhandlers-mixin",
+          "href": "https://w3c.github.io/touch-events/#extensions-to-the-globaleventhandlers-mixin",
+          "title": "Extensions to the GlobalEventHandlers mixin",
+          "number": "7"
+        },
+        "definedIn": "dt"
+      }
+    ],
+    "https://www.w3.org/TR/webxr-dom-overlays-1/": [
+      {
+        "id": "dom-globaleventhandlers-onbeforexrselect",
+        "href": "https://immersive-web.github.io/dom-overlays/#dom-globaleventhandlers-onbeforexrselect",
+        "linkingText": [
+          "onbeforexrselect"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "onbeforexrselect",
+          "href": "https://immersive-web.github.io/dom-overlays/#onbeforexrselect",
+          "title": "onbeforexrselect",
+          "number": "2.1"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

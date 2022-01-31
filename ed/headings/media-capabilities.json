@@ -1,0 +1,294 @@
+{
+  "spec": {
+    "title": "Media Capabilities",
+    "url": "https://w3c.github.io/media-capabilities/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://w3c.github.io/media-capabilities/#title",
+      "level": 1,
+      "title": "Media Capabilities"
+    },
+    {
+      "id": "abstract",
+      "href": "https://w3c.github.io/media-capabilities/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "sotd",
+      "href": "https://w3c.github.io/media-capabilities/#sotd",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://w3c.github.io/media-capabilities/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "introduction",
+      "href": "https://w3c.github.io/media-capabilities/#introduction",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "decoding-encoding-capabilities",
+      "href": "https://w3c.github.io/media-capabilities/#decoding-encoding-capabilities",
+      "level": 2,
+      "title": "Decoding and Encoding Capabilities",
+      "number": "2"
+    },
+    {
+      "id": "media-configurations",
+      "href": "https://w3c.github.io/media-capabilities/#media-configurations",
+      "level": 3,
+      "title": "Media Configurations",
+      "number": "2.1"
+    },
+    {
+      "id": "mediaconfiguration",
+      "href": "https://w3c.github.io/media-capabilities/#mediaconfiguration",
+      "level": 4,
+      "title": "MediaConfiguration",
+      "number": "2.1.1"
+    },
+    {
+      "id": "mediadecodingtype",
+      "href": "https://w3c.github.io/media-capabilities/#mediadecodingtype",
+      "level": 4,
+      "title": "MediaDecodingType",
+      "number": "2.1.2"
+    },
+    {
+      "id": "mediaencodingtype",
+      "href": "https://w3c.github.io/media-capabilities/#mediaencodingtype",
+      "level": 4,
+      "title": "MediaEncodingType",
+      "number": "2.1.3"
+    },
+    {
+      "id": "mime-type",
+      "href": "https://w3c.github.io/media-capabilities/#mime-type",
+      "level": 4,
+      "title": "MIME types",
+      "number": "2.1.4"
+    },
+    {
+      "id": "http",
+      "href": "https://w3c.github.io/media-capabilities/#http",
+      "level": 5,
+      "title": "HTTP",
+      "number": "2.1.4.1"
+    },
+    {
+      "id": "rtp",
+      "href": "https://w3c.github.io/media-capabilities/#rtp",
+      "level": 5,
+      "title": "RTP",
+      "number": "2.1.4.2"
+    },
+    {
+      "id": "videoconfiguration",
+      "href": "https://w3c.github.io/media-capabilities/#videoconfiguration",
+      "level": 4,
+      "title": "VideoConfiguration",
+      "number": "2.1.5"
+    },
+    {
+      "id": "hdrmetadatatype",
+      "href": "https://w3c.github.io/media-capabilities/#hdrmetadatatype",
+      "level": 4,
+      "title": "HdrMetadataType",
+      "number": "2.1.6"
+    },
+    {
+      "id": "colorgamut",
+      "href": "https://w3c.github.io/media-capabilities/#colorgamut",
+      "level": 4,
+      "title": "ColorGamut",
+      "number": "2.1.7"
+    },
+    {
+      "id": "transferfunction",
+      "href": "https://w3c.github.io/media-capabilities/#transferfunction",
+      "level": 4,
+      "title": "TransferFunction",
+      "number": "2.1.8"
+    },
+    {
+      "id": "audioconfiguration",
+      "href": "https://w3c.github.io/media-capabilities/#audioconfiguration",
+      "level": 4,
+      "title": "AudioConfiguration",
+      "number": "2.1.9"
+    },
+    {
+      "id": "mediacapabilitieskeysystemconfiguration",
+      "href": "https://w3c.github.io/media-capabilities/#mediacapabilitieskeysystemconfiguration",
+      "level": 4,
+      "title": "MediaCapabilitiesKeySystemConfiguration",
+      "number": "2.1.10"
+    },
+    {
+      "id": "keysystemtrackconfiguration",
+      "href": "https://w3c.github.io/media-capabilities/#keysystemtrackconfiguration",
+      "level": 4,
+      "title": "KeySystemTrackConfiguration",
+      "number": "2.1.11"
+    },
+    {
+      "id": "media-capabilities-info",
+      "href": "https://w3c.github.io/media-capabilities/#media-capabilities-info",
+      "level": 3,
+      "title": "Media Capabilities Information",
+      "number": "2.2"
+    },
+    {
+      "id": "info-algorithms",
+      "href": "https://w3c.github.io/media-capabilities/#info-algorithms",
+      "level": 3,
+      "title": "Algorithms",
+      "number": "2.3"
+    },
+    {
+      "id": "create-media-capabilities-encoding-info",
+      "href": "https://w3c.github.io/media-capabilities/#create-media-capabilities-encoding-info",
+      "level": 4,
+      "title": "Create a MediaCapabilitiesEncodingInfo",
+      "number": "2.3.1"
+    },
+    {
+      "id": "create-media-capabilities-decoding-info",
+      "href": "https://w3c.github.io/media-capabilities/#create-media-capabilities-decoding-info",
+      "level": 4,
+      "title": "Create a MediaCapabilitiesDecodingInfo",
+      "number": "2.3.2"
+    },
+    {
+      "id": "is-encrypted-decode-supported",
+      "href": "https://w3c.github.io/media-capabilities/#is-encrypted-decode-supported",
+      "level": 4,
+      "title": "Check Encrypted Decoding Support",
+      "number": "2.3.3"
+    },
+    {
+      "id": "navigators-extensions",
+      "href": "https://w3c.github.io/media-capabilities/#navigators-extensions",
+      "level": 3,
+      "title": "Navigator and WorkerNavigator extension",
+      "number": "2.4"
+    },
+    {
+      "id": "media-capabilities-interface",
+      "href": "https://w3c.github.io/media-capabilities/#media-capabilities-interface",
+      "level": 3,
+      "title": "Media Capabilities Interface",
+      "number": "2.5"
+    },
+    {
+      "id": "security-privacy-considerations",
+      "href": "https://w3c.github.io/media-capabilities/#security-privacy-considerations",
+      "level": 2,
+      "title": "Security and Privacy Considerations",
+      "number": "3"
+    },
+    {
+      "id": "decoding-encoding-fingerprinting",
+      "href": "https://w3c.github.io/media-capabilities/#decoding-encoding-fingerprinting",
+      "level": 3,
+      "title": "Decoding/Encoding and Fingerprinting",
+      "number": "3.1"
+    },
+    {
+      "id": "examples",
+      "href": "https://w3c.github.io/media-capabilities/#examples",
+      "level": 2,
+      "title": "Examples",
+      "number": "4"
+    },
+    {
+      "id": "example1",
+      "href": "https://w3c.github.io/media-capabilities/#example1",
+      "level": 3,
+      "title": "Query playback capabilities with decodingInfo()",
+      "number": "4.1"
+    },
+    {
+      "id": "example2",
+      "href": "https://w3c.github.io/media-capabilities/#example2",
+      "level": 3,
+      "title": "Query recording capabilities with encodingInfo()",
+      "number": "4.2"
+    },
+    {
+      "id": "w3c-conformance",
+      "href": "https://w3c.github.io/media-capabilities/#w3c-conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "w3c-conventions",
+      "href": "https://w3c.github.io/media-capabilities/#w3c-conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "w3c-conformant-algorithms",
+      "href": "https://w3c.github.io/media-capabilities/#w3c-conformant-algorithms",
+      "level": 3,
+      "title": "Conformant Algorithms"
+    },
+    {
+      "id": "index",
+      "href": "https://w3c.github.io/media-capabilities/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://w3c.github.io/media-capabilities/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://w3c.github.io/media-capabilities/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://w3c.github.io/media-capabilities/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://w3c.github.io/media-capabilities/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://w3c.github.io/media-capabilities/#informative",
+      "level": 3,
+      "title": "Informative References"
+    },
+    {
+      "id": "idl-index",
+      "href": "https://w3c.github.io/media-capabilities/#idl-index",
+      "level": 2,
+      "title": "IDL Index"
+    },
+    {
+      "id": "issues-index",
+      "href": "https://w3c.github.io/media-capabilities/#issues-index",
+      "level": 2,
+      "title": "Issues Index"
+    }
+  ]
+}

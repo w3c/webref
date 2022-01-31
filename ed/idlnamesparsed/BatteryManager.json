@@ -1,0 +1,344 @@
+{
+  "name": "BatteryManager",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Battery Status API",
+      "url": "https://www.w3.org/TR/battery-status/"
+    },
+    "fragment": "[Exposed=Window]\ninterface BatteryManager : EventTarget {\n    readonly        attribute boolean             charging;\n    readonly        attribute unrestricted double chargingTime;\n    readonly        attribute unrestricted double dischargingTime;\n    readonly        attribute double              level;\n                    attribute EventHandler        onchargingchange;\n                    attribute EventHandler        onchargingtimechange;\n                    attribute EventHandler        ondischargingtimechange;\n                    attribute EventHandler        onlevelchange;\n};",
+    "href": "https://w3c.github.io/battery/#dom-batterymanager"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "EventTarget",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=*]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+      "href": "https://dom.spec.whatwg.org/#eventtarget"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/battery-status/": [
+      {
+        "id": "dom-batterymanager",
+        "href": "https://w3c.github.io/battery/#dom-batterymanager",
+        "linkingText": [
+          "BatteryManager"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-batterymanager-interface",
+          "href": "https://w3c.github.io/battery/#the-batterymanager-interface",
+          "title": "The BatteryManager interface",
+          "number": "6"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-batterymanager-charging",
+        "href": "https://w3c.github.io/battery/#dom-batterymanager-charging",
+        "linkingText": [
+          "charging"
+        ],
+        "localLinkingText": [
+          "BatteryManager.charging"
+        ],
+        "type": "attribute",
+        "for": [
+          "BatteryManager"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-charging-attribute",
+          "href": "https://w3c.github.io/battery/#the-charging-attribute",
+          "title": "The charging attribute",
+          "number": "6.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-batterymanager-chargingtime",
+        "href": "https://w3c.github.io/battery/#dom-batterymanager-chargingtime",
+        "linkingText": [
+          "chargingTime"
+        ],
+        "localLinkingText": [
+          "BatteryManager.chargingTime"
+        ],
+        "type": "attribute",
+        "for": [
+          "BatteryManager"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-chargingtime-attribute",
+          "href": "https://w3c.github.io/battery/#the-chargingtime-attribute",
+          "title": "The chargingTime attribute",
+          "number": "6.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-batterymanager-dischargingtime",
+        "href": "https://w3c.github.io/battery/#dom-batterymanager-dischargingtime",
+        "linkingText": [
+          "dischargingTime"
+        ],
+        "localLinkingText": [
+          "BatteryManager.dischargingTime"
+        ],
+        "type": "attribute",
+        "for": [
+          "BatteryManager"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-dischargingtime-attribute",
+          "href": "https://w3c.github.io/battery/#the-dischargingtime-attribute",
+          "title": "The dischargingTime attribute",
+          "number": "6.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-batterymanager-level",
+        "href": "https://w3c.github.io/battery/#dom-batterymanager-level",
+        "linkingText": [
+          "level"
+        ],
+        "localLinkingText": [
+          "BatteryManager.level"
+        ],
+        "type": "attribute",
+        "for": [
+          "BatteryManager"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-level-attribute",
+          "href": "https://w3c.github.io/battery/#the-level-attribute",
+          "title": "The level attribute",
+          "number": "6.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-batterymanager-onchargingchange",
+        "href": "https://w3c.github.io/battery/#dom-batterymanager-onchargingchange",
+        "linkingText": [
+          "onchargingchange"
+        ],
+        "localLinkingText": [
+          "BatteryManager.onchargingchange"
+        ],
+        "type": "attribute",
+        "for": [
+          "BatteryManager"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers",
+          "href": "https://w3c.github.io/battery/#event-handlers",
+          "title": "Event handlers",
+          "number": "6.6"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "dom-batterymanager-onchargingtimechange",
+        "href": "https://w3c.github.io/battery/#dom-batterymanager-onchargingtimechange",
+        "linkingText": [
+          "onchargingtimechange"
+        ],
+        "localLinkingText": [
+          "BatteryManager.onchargingtimechange"
+        ],
+        "type": "attribute",
+        "for": [
+          "BatteryManager"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers",
+          "href": "https://w3c.github.io/battery/#event-handlers",
+          "title": "Event handlers",
+          "number": "6.6"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "dom-batterymanager-ondischargingtimechange",
+        "href": "https://w3c.github.io/battery/#dom-batterymanager-ondischargingtimechange",
+        "linkingText": [
+          "ondischargingtimechange"
+        ],
+        "localLinkingText": [
+          "BatteryManager.ondischargingtimechange"
+        ],
+        "type": "attribute",
+        "for": [
+          "BatteryManager"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers",
+          "href": "https://w3c.github.io/battery/#event-handlers",
+          "title": "Event handlers",
+          "number": "6.6"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "dom-batterymanager-onlevelchange",
+        "href": "https://w3c.github.io/battery/#dom-batterymanager-onlevelchange",
+        "linkingText": [
+          "onlevelchange"
+        ],
+        "localLinkingText": [
+          "BatteryManager.onlevelchange"
+        ],
+        "type": "attribute",
+        "for": [
+          "BatteryManager"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers",
+          "href": "https://w3c.github.io/battery/#event-handlers",
+          "title": "Event handlers",
+          "number": "6.6"
+        },
+        "definedIn": "table"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "eventtarget",
+        "href": "https://dom.spec.whatwg.org/#eventtarget",
+        "linkingText": [
+          "EventTarget"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventtarget-eventtarget",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-eventtarget",
+        "linkingText": [
+          "EventTarget()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-addeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-addeventlistener",
+        "linkingText": [
+          "addEventListener(type, callback, options)",
+          "addEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-removeeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-removeeventlistener",
+        "linkingText": [
+          "removeEventListener(type, callback, options)",
+          "removeEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-dispatchevent",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-dispatchevent",
+        "linkingText": [
+          "dispatchEvent(event)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

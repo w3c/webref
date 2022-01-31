@@ -1,0 +1,80 @@
+{
+  "name": "ProfilerStack",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "JS Self-Profiling API",
+      "url": "https://wicg.github.io/js-self-profiling/"
+    },
+    "fragment": "dictionary ProfilerStack {\n  unsigned long long parentId;\n  required unsigned long long frameId;\n};",
+    "href": "https://wicg.github.io/js-self-profiling/#dom-profilerstack"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://wicg.github.io/js-self-profiling/": [
+      {
+        "id": "dom-profilerstack",
+        "href": "https://wicg.github.io/js-self-profiling/#dom-profilerstack",
+        "linkingText": [
+          "ProfilerStack"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-profilerstack-dictionary",
+          "href": "https://wicg.github.io/js-self-profiling/#the-profilerstack-dictionary",
+          "title": "The ProfilerStack Dictionary",
+          "number": "7.2"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-profilerstack-parentid",
+        "href": "https://wicg.github.io/js-self-profiling/#dom-profilerstack-parentid",
+        "linkingText": [
+          "parentId"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "ProfilerStack"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-profilerstack-dictionary",
+          "href": "https://wicg.github.io/js-self-profiling/#the-profilerstack-dictionary",
+          "title": "The ProfilerStack Dictionary",
+          "number": "7.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-profilerstack-frameid",
+        "href": "https://wicg.github.io/js-self-profiling/#dom-profilerstack-frameid",
+        "linkingText": [
+          "frameId"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "ProfilerStack"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-profilerstack-dictionary",
+          "href": "https://wicg.github.io/js-self-profiling/#the-profilerstack-dictionary",
+          "title": "The ProfilerStack Dictionary",
+          "number": "7.2"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

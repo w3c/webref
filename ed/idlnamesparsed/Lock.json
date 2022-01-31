@@ -1,0 +1,80 @@
+{
+  "name": "Lock",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Web Locks API",
+      "url": "https://w3c.github.io/web-locks/"
+    },
+    "fragment": "[SecureContext, Exposed=(Window,Worker)]\ninterface Lock {\n  readonly attribute DOMString name;\n  readonly attribute LockMode mode;\n};",
+    "href": "https://w3c.github.io/web-locks/#lock"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://w3c.github.io/web-locks/": [
+      {
+        "id": "lock",
+        "href": "https://w3c.github.io/web-locks/#lock",
+        "linkingText": [
+          "Lock"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-lock",
+          "href": "https://w3c.github.io/web-locks/#api-lock",
+          "title": "Lock class",
+          "number": "3.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-lock-name",
+        "href": "https://w3c.github.io/web-locks/#dom-lock-name",
+        "linkingText": [
+          "name"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Lock"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-lock",
+          "href": "https://w3c.github.io/web-locks/#api-lock",
+          "title": "Lock class",
+          "number": "3.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-lock-mode",
+        "href": "https://w3c.github.io/web-locks/#dom-lock-mode",
+        "linkingText": [
+          "mode"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Lock"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-lock",
+          "href": "https://w3c.github.io/web-locks/#api-lock",
+          "title": "Lock class",
+          "number": "3.3"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

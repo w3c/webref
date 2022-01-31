@@ -1,0 +1,190 @@
+{
+  "spec": {
+    "title": "WebXR Gamepads Module - Level 1",
+    "url": "https://immersive-web.github.io/webxr-gamepads-module/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://immersive-web.github.io/webxr-gamepads-module/#title",
+      "level": 1,
+      "title": "WebXR Gamepads Module - Level 1"
+    },
+    {
+      "id": "abstract",
+      "href": "https://immersive-web.github.io/webxr-gamepads-module/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "sotd",
+      "href": "https://immersive-web.github.io/webxr-gamepads-module/#sotd",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://immersive-web.github.io/webxr-gamepads-module/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "intro",
+      "href": "https://immersive-web.github.io/webxr-gamepads-module/#intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "terminology",
+      "href": "https://immersive-web.github.io/webxr-gamepads-module/#terminology",
+      "level": 3,
+      "title": "Terminology",
+      "number": "1.1"
+    },
+    {
+      "id": "webxr-device-api-integration",
+      "href": "https://immersive-web.github.io/webxr-gamepads-module/#webxr-device-api-integration",
+      "level": 2,
+      "title": "WebXR Device API Integration",
+      "number": "2"
+    },
+    {
+      "id": "xrinputsource-interface",
+      "href": "https://immersive-web.github.io/webxr-gamepads-module/#xrinputsource-interface",
+      "level": 3,
+      "title": "XRInputSource",
+      "number": "2.1"
+    },
+    {
+      "id": "xrsession-interface",
+      "href": "https://immersive-web.github.io/webxr-gamepads-module/#xrsession-interface",
+      "level": 3,
+      "title": "XRSession",
+      "number": "2.2"
+    },
+    {
+      "id": "gamepad-api-integration",
+      "href": "https://immersive-web.github.io/webxr-gamepads-module/#gamepad-api-integration",
+      "level": 2,
+      "title": "Gamepad API Integration",
+      "number": "3"
+    },
+    {
+      "id": "navigator-differences",
+      "href": "https://immersive-web.github.io/webxr-gamepads-module/#navigator-differences",
+      "level": 3,
+      "title": "Navigator",
+      "number": "3.1"
+    },
+    {
+      "id": "gamepad-differences",
+      "href": "https://immersive-web.github.io/webxr-gamepads-module/#gamepad-differences",
+      "level": 3,
+      "title": "Gamepad",
+      "number": "3.2"
+    },
+    {
+      "id": "xr-standard-heading",
+      "href": "https://immersive-web.github.io/webxr-gamepads-module/#xr-standard-heading",
+      "level": 3,
+      "title": "\"xr-standard\" Gamepad Mapping",
+      "number": "3.3"
+    },
+    {
+      "id": "reserved-buttons",
+      "href": "https://immersive-web.github.io/webxr-gamepads-module/#reserved-buttons",
+      "level": 3,
+      "title": "UA/Platform reserved buttons",
+      "number": "3.4"
+    },
+    {
+      "id": "example-mappings",
+      "href": "https://immersive-web.github.io/webxr-gamepads-module/#example-mappings",
+      "level": 3,
+      "title": "Example Mappings",
+      "number": "3.5"
+    },
+    {
+      "id": "security",
+      "href": "https://immersive-web.github.io/webxr-gamepads-module/#security",
+      "level": 2,
+      "title": "Security and Privacy",
+      "number": "4"
+    },
+    {
+      "id": "fingerprinting-security",
+      "href": "https://immersive-web.github.io/webxr-gamepads-module/#fingerprinting-security",
+      "level": 3,
+      "title": "Fingerprinting",
+      "number": "4.1"
+    },
+    {
+      "id": "ack",
+      "href": "https://immersive-web.github.io/webxr-gamepads-module/#ack",
+      "level": 2,
+      "title": "Acknowledgements",
+      "number": "5"
+    },
+    {
+      "id": "w3c-conformance",
+      "href": "https://immersive-web.github.io/webxr-gamepads-module/#w3c-conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "w3c-conventions",
+      "href": "https://immersive-web.github.io/webxr-gamepads-module/#w3c-conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "w3c-conformant-algorithms",
+      "href": "https://immersive-web.github.io/webxr-gamepads-module/#w3c-conformant-algorithms",
+      "level": 3,
+      "title": "Conformant Algorithms"
+    },
+    {
+      "id": "index",
+      "href": "https://immersive-web.github.io/webxr-gamepads-module/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://immersive-web.github.io/webxr-gamepads-module/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://immersive-web.github.io/webxr-gamepads-module/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://immersive-web.github.io/webxr-gamepads-module/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://immersive-web.github.io/webxr-gamepads-module/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://immersive-web.github.io/webxr-gamepads-module/#informative",
+      "level": 3,
+      "title": "Informative References"
+    },
+    {
+      "id": "idl-index",
+      "href": "https://immersive-web.github.io/webxr-gamepads-module/#idl-index",
+      "level": 2,
+      "title": "IDL Index"
+    }
+  ]
+}

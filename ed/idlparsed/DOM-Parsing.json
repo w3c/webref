@@ -1,0 +1,313 @@
+{
+  "spec": {
+    "title": "DOM Parsing and Serialization",
+    "url": "https://w3c.github.io/DOM-Parsing/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {
+        "Window": [
+          "XMLSerializer"
+        ]
+      },
+      "functions": {}
+    },
+    "idlNames": {
+      "XMLSerializer": {
+        "fragment": "[Exposed=Window]\ninterface XMLSerializer {\n  constructor();\n  DOMString serializeToString(Node root);\n};",
+        "type": "interface",
+        "name": "XMLSerializer",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "constructor",
+            "arguments": [],
+            "extAttrs": []
+          },
+          {
+            "type": "operation",
+            "name": "serializeToString",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "root",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "Node"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "InnerHTML": {
+        "fragment": "interface mixin InnerHTML {\n  [CEReactions] attribute [LegacyNullToEmptyString] DOMString innerHTML;\n};",
+        "type": "interface mixin",
+        "name": "InnerHTML",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "attribute",
+            "name": "innerHTML",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "LegacyNullToEmptyString",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      }
+    },
+    "idlExtendedNames": {
+      "Element": [
+        {
+          "fragment": "Element includes InnerHTML;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "Element",
+          "includes": "InnerHTML"
+        },
+        {
+          "fragment": "partial interface Element {\n  [CEReactions] attribute [LegacyNullToEmptyString] DOMString outerHTML;\n  [CEReactions] undefined insertAdjacentHTML(DOMString position, DOMString text);\n};",
+          "type": "interface",
+          "name": "Element",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "attribute",
+              "name": "outerHTML",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [
+                  {
+                    "type": "extended-attribute",
+                    "name": "LegacyNullToEmptyString",
+                    "rhs": null,
+                    "arguments": []
+                  }
+                ],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "DOMString"
+              },
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "CEReactions",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "special": "",
+              "readonly": false
+            },
+            {
+              "type": "operation",
+              "name": "insertAdjacentHTML",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "undefined"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "position",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "DOMString"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "text",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "DOMString"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "CEReactions",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "special": ""
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ],
+      "ShadowRoot": [
+        {
+          "fragment": "ShadowRoot includes InnerHTML;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "ShadowRoot",
+          "includes": "InnerHTML"
+        }
+      ],
+      "Range": [
+        {
+          "fragment": "partial interface Range {\n  [CEReactions, NewObject] DocumentFragment createContextualFragment(DOMString fragment);\n};",
+          "type": "interface",
+          "name": "Range",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "operation",
+              "name": "createContextualFragment",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "DocumentFragment"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "fragment",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "DOMString"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "CEReactions",
+                  "rhs": null,
+                  "arguments": []
+                },
+                {
+                  "type": "extended-attribute",
+                  "name": "NewObject",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "special": ""
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ]
+    },
+    "globals": {},
+    "exposed": {
+      "Window": [
+        "XMLSerializer"
+      ]
+    },
+    "dependencies": {
+      "XMLSerializer": [
+        "Node"
+      ],
+      "InnerHTML": [],
+      "Element": [
+        "InnerHTML"
+      ],
+      "ShadowRoot": [
+        "InnerHTML"
+      ],
+      "Range": [
+        "DocumentFragment"
+      ]
+    },
+    "externalDependencies": [
+      "Node",
+      "Element",
+      "Range",
+      "DocumentFragment"
+    ],
+    "hasObsoleteIdl": false
+  }
+}

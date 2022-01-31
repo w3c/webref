@@ -1,0 +1,206 @@
+{
+  "name": "NamedNodeMap",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "DOM Standard",
+      "url": "https://dom.spec.whatwg.org/"
+    },
+    "fragment": "[Exposed=Window,\n LegacyUnenumerableNamedProperties]\ninterface NamedNodeMap {\n  readonly attribute unsigned long length;\n  getter Attr? item(unsigned long index);\n  getter Attr? getNamedItem(DOMString qualifiedName);\n  Attr? getNamedItemNS(DOMString? namespace, DOMString localName);\n  [CEReactions] Attr? setNamedItem(Attr attr);\n  [CEReactions] Attr? setNamedItemNS(Attr attr);\n  [CEReactions] Attr removeNamedItem(DOMString qualifiedName);\n  [CEReactions] Attr removeNamedItemNS(DOMString? namespace, DOMString localName);\n};",
+    "href": "https://dom.spec.whatwg.org/#namednodemap"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "namednodemap",
+        "href": "https://dom.spec.whatwg.org/#namednodemap",
+        "linkingText": [
+          "NamedNodeMap"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-namednodemap",
+          "href": "https://dom.spec.whatwg.org/#interface-namednodemap",
+          "title": "Interface NamedNodeMap",
+          "number": "4.9.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-namednodemap-length",
+        "href": "https://dom.spec.whatwg.org/#dom-namednodemap-length",
+        "linkingText": [
+          "length"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "NamedNodeMap"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-namednodemap",
+          "href": "https://dom.spec.whatwg.org/#interface-namednodemap",
+          "title": "Interface NamedNodeMap",
+          "number": "4.9.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-namednodemap-item",
+        "href": "https://dom.spec.whatwg.org/#dom-namednodemap-item",
+        "linkingText": [
+          "item(index)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "NamedNodeMap"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-namednodemap",
+          "href": "https://dom.spec.whatwg.org/#interface-namednodemap",
+          "title": "Interface NamedNodeMap",
+          "number": "4.9.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-namednodemap-getnameditem",
+        "href": "https://dom.spec.whatwg.org/#dom-namednodemap-getnameditem",
+        "linkingText": [
+          "getNamedItem(qualifiedName)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "NamedNodeMap"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-namednodemap",
+          "href": "https://dom.spec.whatwg.org/#interface-namednodemap",
+          "title": "Interface NamedNodeMap",
+          "number": "4.9.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-namednodemap-getnameditemns",
+        "href": "https://dom.spec.whatwg.org/#dom-namednodemap-getnameditemns",
+        "linkingText": [
+          "getNamedItemNS(namespace, localName)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "NamedNodeMap"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-namednodemap",
+          "href": "https://dom.spec.whatwg.org/#interface-namednodemap",
+          "title": "Interface NamedNodeMap",
+          "number": "4.9.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-namednodemap-setnameditem",
+        "href": "https://dom.spec.whatwg.org/#dom-namednodemap-setnameditem",
+        "linkingText": [
+          "setNamedItem(attr)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "NamedNodeMap"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-namednodemap",
+          "href": "https://dom.spec.whatwg.org/#interface-namednodemap",
+          "title": "Interface NamedNodeMap",
+          "number": "4.9.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-namednodemap-setnameditemns",
+        "href": "https://dom.spec.whatwg.org/#dom-namednodemap-setnameditemns",
+        "linkingText": [
+          "setNamedItemNS(attr)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "NamedNodeMap"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-namednodemap",
+          "href": "https://dom.spec.whatwg.org/#interface-namednodemap",
+          "title": "Interface NamedNodeMap",
+          "number": "4.9.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-namednodemap-removenameditem",
+        "href": "https://dom.spec.whatwg.org/#dom-namednodemap-removenameditem",
+        "linkingText": [
+          "removeNamedItem(qualifiedName)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "NamedNodeMap"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-namednodemap",
+          "href": "https://dom.spec.whatwg.org/#interface-namednodemap",
+          "title": "Interface NamedNodeMap",
+          "number": "4.9.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-namednodemap-removenameditemns",
+        "href": "https://dom.spec.whatwg.org/#dom-namednodemap-removenameditemns",
+        "linkingText": [
+          "removeNamedItemNS(namespace, localName)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "NamedNodeMap"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-namednodemap",
+          "href": "https://dom.spec.whatwg.org/#interface-namednodemap",
+          "title": "Interface NamedNodeMap",
+          "number": "4.9.1"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

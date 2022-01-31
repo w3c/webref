@@ -1,0 +1,59 @@
+{
+  "name": "FontFacePalettes",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "CSS Font Loading Module Level 3",
+      "url": "https://www.w3.org/TR/css-font-loading-3/"
+    },
+    "fragment": "[Exposed=(Window,Worker)]\ninterface FontFacePalettes {\n  iterable<FontFacePalette>;\n  readonly attribute unsigned long length;\n  getter FontFacePalette (unsigned long index);\n};",
+    "href": "https://drafts.csswg.org/css-font-loading/#fontfacepalettes"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/css-font-loading-3/": [
+      {
+        "id": "fontfacepalettes",
+        "href": "https://drafts.csswg.org/css-font-loading/#fontfacepalettes",
+        "linkingText": [
+          "FontFacePalettes"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "discovery",
+          "href": "https://drafts.csswg.org/css-font-loading/#discovery",
+          "title": "Discovery of information about a font",
+          "number": "2.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-fontfacepalettes-length",
+        "href": "https://drafts.csswg.org/css-font-loading/#dom-fontfacepalettes-length",
+        "linkingText": [
+          "length"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "FontFacePalettes"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "discovery",
+          "href": "https://drafts.csswg.org/css-font-loading/#discovery",
+          "title": "Discovery of information about a font",
+          "number": "2.4"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

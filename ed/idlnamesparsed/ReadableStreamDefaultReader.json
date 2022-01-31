@@ -1,0 +1,188 @@
+{
+  "name": "ReadableStreamDefaultReader",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Streams Standard",
+      "url": "https://streams.spec.whatwg.org/"
+    },
+    "fragment": "[Exposed=*]\ninterface ReadableStreamDefaultReader {\n  constructor(ReadableStream stream);\n\n  Promise<ReadableStreamDefaultReadResult> read();\n  undefined releaseLock();\n};",
+    "href": "https://streams.spec.whatwg.org/#readablestreamdefaultreader"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "Streams Standard",
+        "url": "https://streams.spec.whatwg.org/"
+      },
+      "fragment": "ReadableStreamDefaultReader includes ReadableStreamGenericReader;"
+    }
+  ],
+  "inheritance": null,
+  "includes": [
+    {
+      "name": "ReadableStreamGenericReader",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "Streams Standard",
+          "url": "https://streams.spec.whatwg.org/"
+        },
+        "fragment": "interface mixin ReadableStreamGenericReader {\n  readonly attribute Promise<undefined> closed;\n\n  Promise<undefined> cancel(optional any reason);\n};",
+        "href": "https://streams.spec.whatwg.org/#readablestreamgenericreader"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    }
+  ],
+  "dfns": {
+    "https://streams.spec.whatwg.org/": [
+      {
+        "id": "readablestreamdefaultreader",
+        "href": "https://streams.spec.whatwg.org/#readablestreamdefaultreader",
+        "linkingText": [
+          "ReadableStreamDefaultReader"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "default-reader-class-definition",
+          "href": "https://streams.spec.whatwg.org/#default-reader-class-definition",
+          "title": "Interface definition",
+          "number": "4.4.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "default-reader-constructor",
+        "href": "https://streams.spec.whatwg.org/#default-reader-constructor",
+        "linkingText": [
+          "ReadableStreamDefaultReader(stream)",
+          "constructor(stream)"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "ReadableStreamDefaultReader"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "default-reader-prototype",
+          "href": "https://streams.spec.whatwg.org/#default-reader-prototype",
+          "title": "Constructor, methods, and properties",
+          "number": "4.4.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "default-reader-read",
+        "href": "https://streams.spec.whatwg.org/#default-reader-read",
+        "linkingText": [
+          "read()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "ReadableStreamDefaultReader"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "default-reader-prototype",
+          "href": "https://streams.spec.whatwg.org/#default-reader-prototype",
+          "title": "Constructor, methods, and properties",
+          "number": "4.4.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "default-reader-release-lock",
+        "href": "https://streams.spec.whatwg.org/#default-reader-release-lock",
+        "linkingText": [
+          "releaseLock()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "ReadableStreamDefaultReader"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "default-reader-prototype",
+          "href": "https://streams.spec.whatwg.org/#default-reader-prototype",
+          "title": "Constructor, methods, and properties",
+          "number": "4.4.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "readablestreamgenericreader",
+        "href": "https://streams.spec.whatwg.org/#readablestreamgenericreader",
+        "linkingText": [
+          "ReadableStreamGenericReader"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "generic-reader-mixin-definition",
+          "href": "https://streams.spec.whatwg.org/#generic-reader-mixin-definition",
+          "title": "Mixin definition",
+          "number": "4.3.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "generic-reader-closed",
+        "href": "https://streams.spec.whatwg.org/#generic-reader-closed",
+        "linkingText": [
+          "closed"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "ReadableStreamGenericReader"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "generic-reader-prototype",
+          "href": "https://streams.spec.whatwg.org/#generic-reader-prototype",
+          "title": "Methods and properties",
+          "number": "4.3.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "generic-reader-cancel",
+        "href": "https://streams.spec.whatwg.org/#generic-reader-cancel",
+        "linkingText": [
+          "cancel(reason)",
+          "cancel()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "ReadableStreamGenericReader"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "generic-reader-prototype",
+          "href": "https://streams.spec.whatwg.org/#generic-reader-prototype",
+          "title": "Methods and properties",
+          "number": "4.3.3"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

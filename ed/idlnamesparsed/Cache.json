@@ -1,0 +1,191 @@
+{
+  "name": "Cache",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Service Workers Nightly",
+      "url": "https://www.w3.org/TR/service-workers-1/"
+    },
+    "fragment": "[SecureContext, Exposed=(Window,Worker)]\ninterface Cache {\n  [NewObject] Promise<(Response or undefined)> match(RequestInfo request, optional CacheQueryOptions options = {});\n  [NewObject] Promise<FrozenArray<Response>> matchAll(optional RequestInfo request, optional CacheQueryOptions options = {});\n  [NewObject] Promise<undefined> add(RequestInfo request);\n  [NewObject] Promise<undefined> addAll(sequence<RequestInfo> requests);\n  [NewObject] Promise<undefined> put(RequestInfo request, Response response);\n  [NewObject] Promise<boolean> delete(RequestInfo request, optional CacheQueryOptions options = {});\n  [NewObject] Promise<FrozenArray<Request>> keys(optional RequestInfo request, optional CacheQueryOptions options = {});\n};",
+    "href": "https://w3c.github.io/ServiceWorker/#cache"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/service-workers-1/": [
+      {
+        "id": "cache",
+        "href": "https://w3c.github.io/ServiceWorker/#cache",
+        "linkingText": [
+          "Cache"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "cache-interface",
+          "href": "https://w3c.github.io/ServiceWorker/#cache-interface",
+          "title": "Cache",
+          "number": "5.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-cache-match",
+        "href": "https://w3c.github.io/ServiceWorker/#dom-cache-match",
+        "linkingText": [
+          "match(request, options)",
+          "match(request)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Cache"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "cache-match",
+          "href": "https://w3c.github.io/ServiceWorker/#cache-match",
+          "title": "match(request, options)",
+          "number": "5.4.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-cache-matchall",
+        "href": "https://w3c.github.io/ServiceWorker/#dom-cache-matchall",
+        "linkingText": [
+          "matchAll(request, options)",
+          "matchAll(request)",
+          "matchAll()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Cache"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "cache-matchall",
+          "href": "https://w3c.github.io/ServiceWorker/#cache-matchall",
+          "title": "matchAll(request, options)",
+          "number": "5.4.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-cache-add",
+        "href": "https://w3c.github.io/ServiceWorker/#dom-cache-add",
+        "linkingText": [
+          "add(request)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Cache"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "cache-add",
+          "href": "https://w3c.github.io/ServiceWorker/#cache-add",
+          "title": "add(request)",
+          "number": "5.4.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-cache-addall",
+        "href": "https://w3c.github.io/ServiceWorker/#dom-cache-addall",
+        "linkingText": [
+          "addAll(requests)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Cache"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "cache-addAll",
+          "href": "https://w3c.github.io/ServiceWorker/#cache-addAll",
+          "title": "addAll(requests)",
+          "number": "5.4.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-cache-put",
+        "href": "https://w3c.github.io/ServiceWorker/#dom-cache-put",
+        "linkingText": [
+          "put(request, response)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Cache"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "cache-put",
+          "href": "https://w3c.github.io/ServiceWorker/#cache-put",
+          "title": "put(request, response)",
+          "number": "5.4.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-cache-delete",
+        "href": "https://w3c.github.io/ServiceWorker/#dom-cache-delete",
+        "linkingText": [
+          "delete(request, options)",
+          "delete(request)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Cache"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "cache-delete",
+          "href": "https://w3c.github.io/ServiceWorker/#cache-delete",
+          "title": "delete(request, options)",
+          "number": "5.4.6"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-cache-keys",
+        "href": "https://w3c.github.io/ServiceWorker/#dom-cache-keys",
+        "linkingText": [
+          "keys(request, options)",
+          "keys(request)",
+          "keys()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Cache"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "cache-keys",
+          "href": "https://w3c.github.io/ServiceWorker/#cache-keys",
+          "title": "keys(request, options)",
+          "number": "5.4.7"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

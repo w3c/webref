@@ -1,0 +1,475 @@
+{
+  "name": "KeyframeEffect",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Web Animations",
+      "url": "https://www.w3.org/TR/web-animations-1/"
+    },
+    "fragment": "[Exposed=Window]\ninterface KeyframeEffect : AnimationEffect {\n    constructor(Element? target,\n                object? keyframes,\n                optional (unrestricted double or KeyframeEffectOptions) options = {});\n    constructor(KeyframeEffect source);\n    attribute Element?           target;\n    attribute CSSOMString?       pseudoElement;\n    attribute CompositeOperation composite;\n    sequence<object> getKeyframes();\n    undefined        setKeyframes(object? keyframes);\n};",
+    "href": "https://drafts.csswg.org/web-animations-1/#keyframeeffect"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "Web Animations Level 2",
+        "url": "https://drafts.csswg.org/web-animations-2/"
+      },
+      "fragment": "partial interface KeyframeEffect {\n    attribute IterationCompositeOperation    iterationComposite;\n};"
+    }
+  ],
+  "inheritance": {
+    "name": "AnimationEffect",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "Web Animations",
+        "url": "https://www.w3.org/TR/web-animations-1/"
+      },
+      "fragment": "[Exposed=Window]\ninterface AnimationEffect {\n    EffectTiming         getTiming();\n    ComputedEffectTiming getComputedTiming();\n    undefined            updateTiming(optional OptionalEffectTiming timing = {});\n};",
+      "href": "https://drafts.csswg.org/web-animations-1/#animationeffect"
+    },
+    "extended": [
+      {
+        "spec": {
+          "title": "Web Animations Level 2",
+          "url": "https://drafts.csswg.org/web-animations-2/"
+        },
+        "fragment": "[Exposed=Window]\npartial interface AnimationEffect {\n    // Timing hierarchy\n    readonly attribute GroupEffect?     parent;\n    readonly attribute AnimationEffect? previousSibling;\n    readonly attribute AnimationEffect? nextSibling;\n\n    undefined before (AnimationEffect... effects);\n    undefined after (AnimationEffect... effects);\n    undefined replace (AnimationEffect... effects);\n    undefined remove ();\n};"
+      }
+    ],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/web-animations-1/": [
+      {
+        "id": "keyframeeffect",
+        "href": "https://drafts.csswg.org/web-animations-1/#keyframeeffect",
+        "linkingText": [
+          "KeyframeEffect"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-keyframeeffect-interface",
+          "href": "https://drafts.csswg.org/web-animations-1/#the-keyframeeffect-interface",
+          "title": "The KeyframeEffect interface",
+          "number": "6.6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-keyframeeffect-keyframeeffect",
+        "href": "https://drafts.csswg.org/web-animations-1/#dom-keyframeeffect-keyframeeffect",
+        "linkingText": [
+          "KeyframeEffect(target, keyframes, options)",
+          "constructor(target, keyframes, options)",
+          "KeyframeEffect(target, keyframes)",
+          "constructor(target, keyframes)"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "KeyframeEffect"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-keyframeeffect-interface",
+          "href": "https://drafts.csswg.org/web-animations-1/#the-keyframeeffect-interface",
+          "title": "The KeyframeEffect interface",
+          "number": "6.6"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-keyframeeffect-keyframeeffect-source",
+        "href": "https://drafts.csswg.org/web-animations-1/#dom-keyframeeffect-keyframeeffect-source",
+        "linkingText": [
+          "KeyframeEffect(source)",
+          "constructor(source)"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "KeyframeEffect"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-keyframeeffect-interface",
+          "href": "https://drafts.csswg.org/web-animations-1/#the-keyframeeffect-interface",
+          "title": "The KeyframeEffect interface",
+          "number": "6.6"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-keyframeeffect-target",
+        "href": "https://drafts.csswg.org/web-animations-1/#dom-keyframeeffect-target",
+        "linkingText": [
+          "target"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "KeyframeEffect"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-keyframeeffect-interface",
+          "href": "https://drafts.csswg.org/web-animations-1/#the-keyframeeffect-interface",
+          "title": "The KeyframeEffect interface",
+          "number": "6.6"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-keyframeeffect-pseudoelement",
+        "href": "https://drafts.csswg.org/web-animations-1/#dom-keyframeeffect-pseudoelement",
+        "linkingText": [
+          "pseudoElement"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "KeyframeEffect"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-keyframeeffect-interface",
+          "href": "https://drafts.csswg.org/web-animations-1/#the-keyframeeffect-interface",
+          "title": "The KeyframeEffect interface",
+          "number": "6.6"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-keyframeeffect-composite",
+        "href": "https://drafts.csswg.org/web-animations-1/#dom-keyframeeffect-composite",
+        "linkingText": [
+          "composite"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "KeyframeEffect"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-keyframeeffect-interface",
+          "href": "https://drafts.csswg.org/web-animations-1/#the-keyframeeffect-interface",
+          "title": "The KeyframeEffect interface",
+          "number": "6.6"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-keyframeeffect-getkeyframes",
+        "href": "https://drafts.csswg.org/web-animations-1/#dom-keyframeeffect-getkeyframes",
+        "linkingText": [
+          "getKeyframes()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "KeyframeEffect"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-keyframeeffect-interface",
+          "href": "https://drafts.csswg.org/web-animations-1/#the-keyframeeffect-interface",
+          "title": "The KeyframeEffect interface",
+          "number": "6.6"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-keyframeeffect-setkeyframes",
+        "href": "https://drafts.csswg.org/web-animations-1/#dom-keyframeeffect-setkeyframes",
+        "linkingText": [
+          "setKeyframes(keyframes)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "KeyframeEffect"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-keyframeeffect-interface",
+          "href": "https://drafts.csswg.org/web-animations-1/#the-keyframeeffect-interface",
+          "title": "The KeyframeEffect interface",
+          "number": "6.6"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "animationeffect",
+        "href": "https://drafts.csswg.org/web-animations-1/#animationeffect",
+        "linkingText": [
+          "AnimationEffect"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-animationeffect-interface",
+          "href": "https://drafts.csswg.org/web-animations-1/#the-animationeffect-interface",
+          "title": "The AnimationEffect interface",
+          "number": "6.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-animationeffect-gettiming",
+        "href": "https://drafts.csswg.org/web-animations-1/#dom-animationeffect-gettiming",
+        "linkingText": [
+          "getTiming()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "AnimationEffect"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-animationeffect-interface",
+          "href": "https://drafts.csswg.org/web-animations-1/#the-animationeffect-interface",
+          "title": "The AnimationEffect interface",
+          "number": "6.5"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-animationeffect-getcomputedtiming",
+        "href": "https://drafts.csswg.org/web-animations-1/#dom-animationeffect-getcomputedtiming",
+        "linkingText": [
+          "getComputedTiming()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "AnimationEffect"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-animationeffect-interface",
+          "href": "https://drafts.csswg.org/web-animations-1/#the-animationeffect-interface",
+          "title": "The AnimationEffect interface",
+          "number": "6.5"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-animationeffect-updatetiming",
+        "href": "https://drafts.csswg.org/web-animations-1/#dom-animationeffect-updatetiming",
+        "linkingText": [
+          "updateTiming(timing)",
+          "updateTiming()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "AnimationEffect"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-animationeffect-interface",
+          "href": "https://drafts.csswg.org/web-animations-1/#the-animationeffect-interface",
+          "title": "The AnimationEffect interface",
+          "number": "6.5"
+        },
+        "definedIn": "dt"
+      }
+    ],
+    "https://drafts.csswg.org/web-animations-2/": [
+      {
+        "id": "dom-keyframeeffect-iterationcomposite",
+        "href": "https://drafts.csswg.org/web-animations-2/#dom-keyframeeffect-iterationcomposite",
+        "linkingText": [
+          "iterationComposite"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "KeyframeEffect"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-keyframeeffect-interface",
+          "href": "https://drafts.csswg.org/web-animations-2/#the-keyframeeffect-interface",
+          "title": "The KeyframeEffect interfaces",
+          "number": "5.10"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-animationeffect-parent",
+        "href": "https://drafts.csswg.org/web-animations-2/#dom-animationeffect-parent",
+        "linkingText": [
+          "parent"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "AnimationEffect"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-animationeffect-interface",
+          "href": "https://drafts.csswg.org/web-animations-2/#the-animationeffect-interface",
+          "title": "The AnimationEffect interface",
+          "number": "5.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-animationeffect-previoussibling",
+        "href": "https://drafts.csswg.org/web-animations-2/#dom-animationeffect-previoussibling",
+        "linkingText": [
+          "previousSibling"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "AnimationEffect"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-animationeffect-interface",
+          "href": "https://drafts.csswg.org/web-animations-2/#the-animationeffect-interface",
+          "title": "The AnimationEffect interface",
+          "number": "5.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-animationeffect-nextsibling",
+        "href": "https://drafts.csswg.org/web-animations-2/#dom-animationeffect-nextsibling",
+        "linkingText": [
+          "nextSibling"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "AnimationEffect"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-animationeffect-interface",
+          "href": "https://drafts.csswg.org/web-animations-2/#the-animationeffect-interface",
+          "title": "The AnimationEffect interface",
+          "number": "5.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-animationeffect-before",
+        "href": "https://drafts.csswg.org/web-animations-2/#dom-animationeffect-before",
+        "linkingText": [
+          "before(...effects)",
+          "before()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "AnimationEffect"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-animationeffect-interface",
+          "href": "https://drafts.csswg.org/web-animations-2/#the-animationeffect-interface",
+          "title": "The AnimationEffect interface",
+          "number": "5.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-animationeffect-after",
+        "href": "https://drafts.csswg.org/web-animations-2/#dom-animationeffect-after",
+        "linkingText": [
+          "after(...effects)",
+          "after()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "AnimationEffect"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-animationeffect-interface",
+          "href": "https://drafts.csswg.org/web-animations-2/#the-animationeffect-interface",
+          "title": "The AnimationEffect interface",
+          "number": "5.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-animationeffect-replace",
+        "href": "https://drafts.csswg.org/web-animations-2/#dom-animationeffect-replace",
+        "linkingText": [
+          "replace(...effects)",
+          "replace()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "AnimationEffect"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-animationeffect-interface",
+          "href": "https://drafts.csswg.org/web-animations-2/#the-animationeffect-interface",
+          "title": "The AnimationEffect interface",
+          "number": "5.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-animationeffect-remove",
+        "href": "https://drafts.csswg.org/web-animations-2/#dom-animationeffect-remove",
+        "linkingText": [
+          "remove()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "AnimationEffect"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-animationeffect-interface",
+          "href": "https://drafts.csswg.org/web-animations-2/#the-animationeffect-interface",
+          "title": "The AnimationEffect interface",
+          "number": "5.3"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

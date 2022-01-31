@@ -1,0 +1,101 @@
+{
+  "name": "RTCEncodedAudioFrame",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebRTC Encoded Transform",
+      "url": "https://www.w3.org/TR/webrtc-encoded-transform/"
+    },
+    "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface RTCEncodedAudioFrame {\n    readonly attribute unsigned long long timestamp;\n    attribute ArrayBuffer data;\n    RTCEncodedAudioFrameMetadata getMetadata();\n};",
+    "href": "https://w3c.github.io/webrtc-encoded-transform/#rtcencodedaudioframe"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webrtc-encoded-transform/": [
+      {
+        "id": "rtcencodedaudioframe",
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#rtcencodedaudioframe",
+        "linkingText": [
+          "RTCEncodedAudioFrame"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "scriptTransform",
+          "href": "https://w3c.github.io/webrtc-encoded-transform/#scriptTransform",
+          "title": "RTCRtpScriptTransform",
+          "number": "5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-rtcencodedaudioframe-timestamp",
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcencodedaudioframe-timestamp",
+        "linkingText": [
+          "timestamp"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "RTCEncodedAudioFrame"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "scriptTransform",
+          "href": "https://w3c.github.io/webrtc-encoded-transform/#scriptTransform",
+          "title": "RTCRtpScriptTransform",
+          "number": "5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-rtcencodedaudioframe-data",
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcencodedaudioframe-data",
+        "linkingText": [
+          "data"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "RTCEncodedAudioFrame"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "scriptTransform",
+          "href": "https://w3c.github.io/webrtc-encoded-transform/#scriptTransform",
+          "title": "RTCRtpScriptTransform",
+          "number": "5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-rtcencodedaudioframe-getmetadata",
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcencodedaudioframe-getmetadata",
+        "linkingText": [
+          "getMetadata()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "RTCEncodedAudioFrame"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "scriptTransform",
+          "href": "https://w3c.github.io/webrtc-encoded-transform/#scriptTransform",
+          "title": "RTCRtpScriptTransform",
+          "number": "5"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

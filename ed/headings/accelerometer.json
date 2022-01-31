@@ -1,0 +1,260 @@
+{
+  "spec": {
+    "title": "Accelerometer",
+    "url": "https://w3c.github.io/accelerometer/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://w3c.github.io/accelerometer/#title",
+      "level": 1,
+      "title": "Accelerometer"
+    },
+    {
+      "id": "abstract",
+      "href": "https://w3c.github.io/accelerometer/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "sotd",
+      "href": "https://w3c.github.io/accelerometer/#sotd",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://w3c.github.io/accelerometer/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "intro",
+      "href": "https://w3c.github.io/accelerometer/#intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "examples",
+      "href": "https://w3c.github.io/accelerometer/#examples",
+      "level": 2,
+      "title": "Examples",
+      "number": "2"
+    },
+    {
+      "id": "usecases-requirements",
+      "href": "https://w3c.github.io/accelerometer/#usecases-requirements",
+      "level": 2,
+      "title": "Use Cases and Requirements",
+      "number": "3"
+    },
+    {
+      "id": "security-and-privacy",
+      "href": "https://w3c.github.io/accelerometer/#security-and-privacy",
+      "level": 2,
+      "title": "Security and Privacy Considerations",
+      "number": "4"
+    },
+    {
+      "id": "model",
+      "href": "https://w3c.github.io/accelerometer/#model",
+      "level": 2,
+      "title": "Model",
+      "number": "5"
+    },
+    {
+      "id": "reference-frame",
+      "href": "https://w3c.github.io/accelerometer/#reference-frame",
+      "level": 3,
+      "title": "Reference Frame",
+      "number": "5.1"
+    },
+    {
+      "id": "api",
+      "href": "https://w3c.github.io/accelerometer/#api",
+      "level": 2,
+      "title": "API",
+      "number": "6"
+    },
+    {
+      "id": "accelerometer-interface",
+      "href": "https://w3c.github.io/accelerometer/#accelerometer-interface",
+      "level": 3,
+      "title": "The Accelerometer Interface",
+      "number": "6.1"
+    },
+    {
+      "id": "accelerometer-x",
+      "href": "https://w3c.github.io/accelerometer/#accelerometer-x",
+      "level": 4,
+      "title": "Accelerometer.x",
+      "number": "6.1.1"
+    },
+    {
+      "id": "accelerometer-y",
+      "href": "https://w3c.github.io/accelerometer/#accelerometer-y",
+      "level": 4,
+      "title": "Accelerometer.y",
+      "number": "6.1.2"
+    },
+    {
+      "id": "accelerometer-z",
+      "href": "https://w3c.github.io/accelerometer/#accelerometer-z",
+      "level": 4,
+      "title": "Accelerometer.z",
+      "number": "6.1.3"
+    },
+    {
+      "id": "linearaccelerationsensor-interface",
+      "href": "https://w3c.github.io/accelerometer/#linearaccelerationsensor-interface",
+      "level": 3,
+      "title": "The LinearAccelerationSensor Interface",
+      "number": "6.2"
+    },
+    {
+      "id": "linearaccelerationsensor-x",
+      "href": "https://w3c.github.io/accelerometer/#linearaccelerationsensor-x",
+      "level": 4,
+      "title": "LinearAccelerationSensor.x",
+      "number": "6.2.1"
+    },
+    {
+      "id": "linearaccelerationsensor-y",
+      "href": "https://w3c.github.io/accelerometer/#linearaccelerationsensor-y",
+      "level": 4,
+      "title": "LinearAccelerationSensor.y",
+      "number": "6.2.2"
+    },
+    {
+      "id": "linearaccelerationsensor-z",
+      "href": "https://w3c.github.io/accelerometer/#linearaccelerationsensor-z",
+      "level": 4,
+      "title": "LinearAccelerationSensor.z",
+      "number": "6.2.3"
+    },
+    {
+      "id": "gravitysensor-interface",
+      "href": "https://w3c.github.io/accelerometer/#gravitysensor-interface",
+      "level": 3,
+      "title": "The GravitySensor Interface",
+      "number": "6.3"
+    },
+    {
+      "id": "gravitysensor-x",
+      "href": "https://w3c.github.io/accelerometer/#gravitysensor-x",
+      "level": 4,
+      "title": "GravitySensor.x",
+      "number": "6.3.1"
+    },
+    {
+      "id": "gravitysensor-y",
+      "href": "https://w3c.github.io/accelerometer/#gravitysensor-y",
+      "level": 4,
+      "title": "GravitySensor.y",
+      "number": "6.3.2"
+    },
+    {
+      "id": "gravitysensor-z",
+      "href": "https://w3c.github.io/accelerometer/#gravitysensor-z",
+      "level": 4,
+      "title": "GravitySensor.z",
+      "number": "6.3.3"
+    },
+    {
+      "id": "abstract-opertaions",
+      "href": "https://w3c.github.io/accelerometer/#abstract-opertaions",
+      "level": 2,
+      "title": "Abstract Operations",
+      "number": "7"
+    },
+    {
+      "id": "construct-an-accelerometer-object",
+      "href": "https://w3c.github.io/accelerometer/#construct-an-accelerometer-object",
+      "level": 3,
+      "title": "Construct an accelerometer object",
+      "number": "7.1"
+    },
+    {
+      "id": "automation",
+      "href": "https://w3c.github.io/accelerometer/#automation",
+      "level": 2,
+      "title": "Automation",
+      "number": "8"
+    },
+    {
+      "id": "mock-accelerometer-type",
+      "href": "https://w3c.github.io/accelerometer/#mock-accelerometer-type",
+      "level": 3,
+      "title": "Mock Sensor Type",
+      "number": "8.1"
+    },
+    {
+      "id": "acknowledgements",
+      "href": "https://w3c.github.io/accelerometer/#acknowledgements",
+      "level": 2,
+      "title": "Acknowledgements",
+      "number": "9"
+    },
+    {
+      "id": "w3c-conformance",
+      "href": "https://w3c.github.io/accelerometer/#w3c-conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "w3c-conventions",
+      "href": "https://w3c.github.io/accelerometer/#w3c-conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "w3c-conformant-algorithms",
+      "href": "https://w3c.github.io/accelerometer/#w3c-conformant-algorithms",
+      "level": 3,
+      "title": "Conformant Algorithms"
+    },
+    {
+      "id": "index",
+      "href": "https://w3c.github.io/accelerometer/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://w3c.github.io/accelerometer/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://w3c.github.io/accelerometer/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://w3c.github.io/accelerometer/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://w3c.github.io/accelerometer/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://w3c.github.io/accelerometer/#informative",
+      "level": 3,
+      "title": "Informative References"
+    },
+    {
+      "id": "idl-index",
+      "href": "https://w3c.github.io/accelerometer/#idl-index",
+      "level": 2,
+      "title": "IDL Index"
+    }
+  ]
+}

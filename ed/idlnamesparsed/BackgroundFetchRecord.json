@@ -1,0 +1,80 @@
+{
+  "name": "BackgroundFetchRecord",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Background Fetch",
+      "url": "https://wicg.github.io/background-fetch/"
+    },
+    "fragment": "[Exposed=(Window,Worker)]\ninterface BackgroundFetchRecord {\n  readonly attribute Request request;\n  readonly attribute Promise<Response> responseReady;\n};",
+    "href": "https://wicg.github.io/background-fetch/#backgroundfetchrecord"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://wicg.github.io/background-fetch/": [
+      {
+        "id": "backgroundfetchrecord",
+        "href": "https://wicg.github.io/background-fetch/#backgroundfetchrecord",
+        "linkingText": [
+          "BackgroundFetchRecord"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "background-fetch-record-interface",
+          "href": "https://wicg.github.io/background-fetch/#background-fetch-record-interface",
+          "title": "BackgroundFetchRecord",
+          "number": "6.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-backgroundfetchrecord-request",
+        "href": "https://wicg.github.io/background-fetch/#dom-backgroundfetchrecord-request",
+        "linkingText": [
+          "request"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "BackgroundFetchRecord"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "background-fetch-record-interface",
+          "href": "https://wicg.github.io/background-fetch/#background-fetch-record-interface",
+          "title": "BackgroundFetchRecord",
+          "number": "6.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-backgroundfetchrecord-responseready",
+        "href": "https://wicg.github.io/background-fetch/#dom-backgroundfetchrecord-responseready",
+        "linkingText": [
+          "responseReady"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "BackgroundFetchRecord"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "background-fetch-record-interface",
+          "href": "https://wicg.github.io/background-fetch/#background-fetch-record-interface",
+          "title": "BackgroundFetchRecord",
+          "number": "6.5"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

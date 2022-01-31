@@ -1,0 +1,148 @@
+{
+  "name": "RTCRtpCodecCapability",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
+      "url": "https://www.w3.org/TR/webrtc/"
+    },
+    "fragment": "dictionary RTCRtpCodecCapability {\n  required DOMString mimeType;\n  required unsigned long clockRate;\n  unsigned short channels;\n  DOMString sdpFmtpLine;\n};",
+    "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpcodeccapability"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "Scalable Video Coding (SVC) Extension for WebRTC",
+        "url": "https://www.w3.org/TR/webrtc-svc/"
+      },
+      "fragment": "partial dictionary RTCRtpCodecCapability {\n             sequence<DOMString> scalabilityModes;\n};"
+    }
+  ],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webrtc/": [
+      {
+        "id": "dom-rtcrtpcodeccapability",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpcodeccapability",
+        "linkingText": [
+          "RTCRtpCodecCapability"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "rtcrtpcodeccapability",
+          "href": "https://w3c.github.io/webrtc-pc/#rtcrtpcodeccapability",
+          "title": "RTCRtpCodecCapability Dictionary",
+          "number": "5.2.11"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-rtcrtpcodeccapability-mimetype",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpcodeccapability-mimetype",
+        "linkingText": [
+          "mimeType"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RTCRtpCodecCapability"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-rtcrtpcodeccapability-members",
+          "href": "https://w3c.github.io/webrtc-pc/#dictionary-rtcrtpcodeccapability-members",
+          "title": "Dictionary RTCRtpCodecCapability Members"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcrtpcodeccapability-clockrate",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpcodeccapability-clockrate",
+        "linkingText": [
+          "clockRate"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RTCRtpCodecCapability"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-rtcrtpcodeccapability-members",
+          "href": "https://w3c.github.io/webrtc-pc/#dictionary-rtcrtpcodeccapability-members",
+          "title": "Dictionary RTCRtpCodecCapability Members"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcrtpcodeccapability-channels",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpcodeccapability-channels",
+        "linkingText": [
+          "channels"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RTCRtpCodecCapability"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-rtcrtpcodeccapability-members",
+          "href": "https://w3c.github.io/webrtc-pc/#dictionary-rtcrtpcodeccapability-members",
+          "title": "Dictionary RTCRtpCodecCapability Members"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcrtpcodeccapability-sdpfmtpline",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpcodeccapability-sdpfmtpline",
+        "linkingText": [
+          "sdpFmtpLine"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RTCRtpCodecCapability"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-rtcrtpcodeccapability-members",
+          "href": "https://w3c.github.io/webrtc-pc/#dictionary-rtcrtpcodeccapability-members",
+          "title": "Dictionary RTCRtpCodecCapability Members"
+        },
+        "definedIn": "dt"
+      }
+    ],
+    "https://www.w3.org/TR/webrtc-svc/": [
+      {
+        "id": "dom-rtcrtpcodeccapability-scalabilitymodes",
+        "href": "https://w3c.github.io/webrtc-svc/#dom-rtcrtpcodeccapability-scalabilitymodes",
+        "linkingText": [
+          "scalabilityModes"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RTCRtpCodecCapability"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-rtcrtpcodeccapability-members",
+          "href": "https://w3c.github.io/webrtc-svc/#dictionary-rtcrtpcodeccapability-members",
+          "title": "Dictionary RTCRtpCodecCapability Members"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

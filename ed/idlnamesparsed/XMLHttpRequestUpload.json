@@ -1,0 +1,340 @@
+{
+  "name": "XMLHttpRequestUpload",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "XMLHttpRequest Standard",
+      "url": "https://xhr.spec.whatwg.org/"
+    },
+    "fragment": "[Exposed=(Window,DedicatedWorker,SharedWorker)]\ninterface XMLHttpRequestUpload : XMLHttpRequestEventTarget {\n};",
+    "href": "https://xhr.spec.whatwg.org/#xmlhttprequestupload"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "XMLHttpRequestEventTarget",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "XMLHttpRequest Standard",
+        "url": "https://xhr.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=(Window,DedicatedWorker,SharedWorker)]\ninterface XMLHttpRequestEventTarget : EventTarget {\n  // event handlers\n  attribute EventHandler onloadstart;\n  attribute EventHandler onprogress;\n  attribute EventHandler onabort;\n  attribute EventHandler onerror;\n  attribute EventHandler onload;\n  attribute EventHandler ontimeout;\n  attribute EventHandler onloadend;\n};",
+      "href": "https://xhr.spec.whatwg.org/#xmlhttprequesteventtarget"
+    },
+    "extended": [],
+    "inheritance": {
+      "name": "EventTarget",
+      "type": "interface",
+      "defined": {
+        "spec": {
+          "title": "DOM Standard",
+          "url": "https://dom.spec.whatwg.org/"
+        },
+        "fragment": "[Exposed=*]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+        "href": "https://dom.spec.whatwg.org/#eventtarget"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://xhr.spec.whatwg.org/": [
+      {
+        "id": "xmlhttprequestupload",
+        "href": "https://xhr.spec.whatwg.org/#xmlhttprequestupload",
+        "linkingText": [
+          "XMLHttpRequestUpload"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-xmlhttprequest",
+          "href": "https://xhr.spec.whatwg.org/#interface-xmlhttprequest",
+          "title": "Interface XMLHttpRequest",
+          "number": "3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "xmlhttprequesteventtarget",
+        "href": "https://xhr.spec.whatwg.org/#xmlhttprequesteventtarget",
+        "linkingText": [
+          "XMLHttpRequestEventTarget"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-xmlhttprequest",
+          "href": "https://xhr.spec.whatwg.org/#interface-xmlhttprequest",
+          "title": "Interface XMLHttpRequest",
+          "number": "3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "handler-xhr-onloadstart",
+        "href": "https://xhr.spec.whatwg.org/#handler-xhr-onloadstart",
+        "linkingText": [
+          "onloadstart"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XMLHttpRequestEventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers",
+          "href": "https://xhr.spec.whatwg.org/#event-handlers",
+          "title": "Event handlers",
+          "number": "3.3"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-xhr-onprogress",
+        "href": "https://xhr.spec.whatwg.org/#handler-xhr-onprogress",
+        "linkingText": [
+          "onprogress"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XMLHttpRequestEventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers",
+          "href": "https://xhr.spec.whatwg.org/#event-handlers",
+          "title": "Event handlers",
+          "number": "3.3"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-xhr-onabort",
+        "href": "https://xhr.spec.whatwg.org/#handler-xhr-onabort",
+        "linkingText": [
+          "onabort"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XMLHttpRequestEventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers",
+          "href": "https://xhr.spec.whatwg.org/#event-handlers",
+          "title": "Event handlers",
+          "number": "3.3"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-xhr-onerror",
+        "href": "https://xhr.spec.whatwg.org/#handler-xhr-onerror",
+        "linkingText": [
+          "onerror"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XMLHttpRequestEventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers",
+          "href": "https://xhr.spec.whatwg.org/#event-handlers",
+          "title": "Event handlers",
+          "number": "3.3"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-xhr-onload",
+        "href": "https://xhr.spec.whatwg.org/#handler-xhr-onload",
+        "linkingText": [
+          "onload"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XMLHttpRequestEventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers",
+          "href": "https://xhr.spec.whatwg.org/#event-handlers",
+          "title": "Event handlers",
+          "number": "3.3"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-xhr-ontimeout",
+        "href": "https://xhr.spec.whatwg.org/#handler-xhr-ontimeout",
+        "linkingText": [
+          "ontimeout"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XMLHttpRequestEventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers",
+          "href": "https://xhr.spec.whatwg.org/#event-handlers",
+          "title": "Event handlers",
+          "number": "3.3"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-xhr-onloadend",
+        "href": "https://xhr.spec.whatwg.org/#handler-xhr-onloadend",
+        "linkingText": [
+          "onloadend"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XMLHttpRequestEventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers",
+          "href": "https://xhr.spec.whatwg.org/#event-handlers",
+          "title": "Event handlers",
+          "number": "3.3"
+        },
+        "definedIn": "table"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "eventtarget",
+        "href": "https://dom.spec.whatwg.org/#eventtarget",
+        "linkingText": [
+          "EventTarget"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventtarget-eventtarget",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-eventtarget",
+        "linkingText": [
+          "EventTarget()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-addeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-addeventlistener",
+        "linkingText": [
+          "addEventListener(type, callback, options)",
+          "addEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-removeeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-removeeventlistener",
+        "linkingText": [
+          "removeEventListener(type, callback, options)",
+          "removeEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-dispatchevent",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-dispatchevent",
+        "linkingText": [
+          "dispatchEvent(event)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

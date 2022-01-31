@@ -1,0 +1,730 @@
+{
+  "name": "GPUDevice",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebGPU",
+      "url": "https://www.w3.org/TR/webgpu/"
+    },
+    "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUDevice : EventTarget {\n    [SameObject] readonly attribute GPUSupportedFeatures features;\n    [SameObject] readonly attribute GPUSupportedLimits limits;\n\n    [SameObject] readonly attribute GPUQueue queue;\n\n    undefined destroy();\n\n    GPUBuffer createBuffer(GPUBufferDescriptor descriptor);\n    GPUTexture createTexture(GPUTextureDescriptor descriptor);\n    GPUSampler createSampler(optional GPUSamplerDescriptor descriptor = {});\n    GPUExternalTexture importExternalTexture(GPUExternalTextureDescriptor descriptor);\n\n    GPUBindGroupLayout createBindGroupLayout(GPUBindGroupLayoutDescriptor descriptor);\n    GPUPipelineLayout createPipelineLayout(GPUPipelineLayoutDescriptor descriptor);\n    GPUBindGroup createBindGroup(GPUBindGroupDescriptor descriptor);\n\n    GPUShaderModule createShaderModule(GPUShaderModuleDescriptor descriptor);\n    GPUComputePipeline createComputePipeline(GPUComputePipelineDescriptor descriptor);\n    GPURenderPipeline createRenderPipeline(GPURenderPipelineDescriptor descriptor);\n    Promise<GPUComputePipeline> createComputePipelineAsync(GPUComputePipelineDescriptor descriptor);\n    Promise<GPURenderPipeline> createRenderPipelineAsync(GPURenderPipelineDescriptor descriptor);\n\n    GPUCommandEncoder createCommandEncoder(optional GPUCommandEncoderDescriptor descriptor = {});\n    GPURenderBundleEncoder createRenderBundleEncoder(GPURenderBundleEncoderDescriptor descriptor);\n\n    GPUQuerySet createQuerySet(GPUQuerySetDescriptor descriptor);\n};",
+    "href": "https://gpuweb.github.io/gpuweb/#gpudevice"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "WebGPU",
+        "url": "https://www.w3.org/TR/webgpu/"
+      },
+      "fragment": "GPUDevice includes GPUObjectBase;"
+    },
+    {
+      "spec": {
+        "title": "WebGPU",
+        "url": "https://www.w3.org/TR/webgpu/"
+      },
+      "fragment": "partial interface GPUDevice {\n    readonly attribute Promise<GPUDeviceLostInfo> lost;\n};"
+    },
+    {
+      "spec": {
+        "title": "WebGPU",
+        "url": "https://www.w3.org/TR/webgpu/"
+      },
+      "fragment": "partial interface GPUDevice {\n    undefined pushErrorScope(GPUErrorFilter filter);\n    Promise<GPUError?> popErrorScope();\n};"
+    },
+    {
+      "spec": {
+        "title": "WebGPU",
+        "url": "https://www.w3.org/TR/webgpu/"
+      },
+      "fragment": "partial interface GPUDevice {\n    [Exposed=(Window, DedicatedWorker)]\n    attribute EventHandler onuncapturederror;\n};"
+    }
+  ],
+  "inheritance": {
+    "name": "EventTarget",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=*]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+      "href": "https://dom.spec.whatwg.org/#eventtarget"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [
+    {
+      "name": "GPUObjectBase",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "WebGPU",
+          "url": "https://www.w3.org/TR/webgpu/"
+        },
+        "fragment": "interface mixin GPUObjectBase {\n    attribute (USVString or undefined) label;\n};",
+        "href": "https://gpuweb.github.io/gpuweb/#gpuobjectbase"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    }
+  ],
+  "dfns": {
+    "https://www.w3.org/TR/webgpu/": [
+      {
+        "id": "gpudevice",
+        "href": "https://gpuweb.github.io/gpuweb/#gpudevice",
+        "linkingText": [
+          "GPUDevice"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "gpu-device",
+          "href": "https://gpuweb.github.io/gpuweb/#gpu-device",
+          "title": "GPUDevice",
+          "number": "4.4"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-gpudevice-features",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-features",
+        "linkingText": [
+          "features"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "GPUDevice"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "gpu-device",
+          "href": "https://gpuweb.github.io/gpuweb/#gpu-device",
+          "title": "GPUDevice",
+          "number": "4.4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpudevice-limits",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-limits",
+        "linkingText": [
+          "limits"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "GPUDevice"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "gpu-device",
+          "href": "https://gpuweb.github.io/gpuweb/#gpu-device",
+          "title": "GPUDevice",
+          "number": "4.4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpudevice-queue",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-queue",
+        "linkingText": [
+          "queue"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "GPUDevice"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "gpu-device",
+          "href": "https://gpuweb.github.io/gpuweb/#gpu-device",
+          "title": "GPUDevice",
+          "number": "4.4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpudevice-destroy",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-destroy",
+        "linkingText": [
+          "destroy()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GPUDevice"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "gpu-device",
+          "href": "https://gpuweb.github.io/gpuweb/#gpu-device",
+          "title": "GPUDevice",
+          "number": "4.4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpudevice-createbuffer",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createbuffer",
+        "linkingText": [
+          "createBuffer(descriptor)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GPUDevice"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "buffer-usage",
+          "href": "https://gpuweb.github.io/gpuweb/#buffer-usage",
+          "title": "Buffer Usage",
+          "number": "5.2.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpudevice-createtexture",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createtexture",
+        "linkingText": [
+          "createTexture(descriptor)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GPUDevice"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-creation",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-creation",
+          "title": "Texture Creation",
+          "number": "6.1.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpudevice-createsampler",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createsampler",
+        "linkingText": [
+          "createSampler(descriptor)",
+          "createSampler()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GPUDevice"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "GPUSamplerDescriptor",
+          "href": "https://gpuweb.github.io/gpuweb/#GPUSamplerDescriptor",
+          "title": "GPUSamplerDescriptor",
+          "number": "7.2.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpudevice-importexternaltexture",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-importexternaltexture",
+        "linkingText": [
+          "importExternalTexture(descriptor)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GPUDevice"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "external-texture-creation",
+          "href": "https://gpuweb.github.io/gpuweb/#external-texture-creation",
+          "title": "Importing External Textures",
+          "number": "6.4.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpudevice-createbindgrouplayout",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createbindgrouplayout",
+        "linkingText": [
+          "createBindGroupLayout(descriptor)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GPUDevice"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "bind-group-layout-creation",
+          "href": "https://gpuweb.github.io/gpuweb/#bind-group-layout-creation",
+          "title": "Creation",
+          "number": "8.1.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpudevice-createpipelinelayout",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createpipelinelayout",
+        "linkingText": [
+          "createPipelineLayout(descriptor)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GPUDevice"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "pipeline-layout-creation",
+          "href": "https://gpuweb.github.io/gpuweb/#pipeline-layout-creation",
+          "title": "Creation",
+          "number": "8.3.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpudevice-createbindgroup",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createbindgroup",
+        "linkingText": [
+          "createBindGroup(descriptor)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GPUDevice"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "bind-group-creation",
+          "href": "https://gpuweb.github.io/gpuweb/#bind-group-creation",
+          "title": "Bind Group Creation",
+          "number": "8.2.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpudevice-createshadermodule",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createshadermodule",
+        "linkingText": [
+          "createShaderModule(descriptor)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GPUDevice"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "shader-module-creation",
+          "href": "https://gpuweb.github.io/gpuweb/#shader-module-creation",
+          "title": "Shader Module Creation",
+          "number": "9.1.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpudevice-createcomputepipeline",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createcomputepipeline",
+        "linkingText": [
+          "createComputePipeline(descriptor)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GPUDevice"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "compute-pipeline-creation",
+          "href": "https://gpuweb.github.io/gpuweb/#compute-pipeline-creation",
+          "title": "Creation",
+          "number": "10.2.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpudevice-createrenderpipeline",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createrenderpipeline",
+        "linkingText": [
+          "createRenderPipeline(descriptor)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GPUDevice"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "render-pipeline-creation",
+          "href": "https://gpuweb.github.io/gpuweb/#render-pipeline-creation",
+          "title": "Creation",
+          "number": "10.3.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpudevice-createcomputepipelineasync",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createcomputepipelineasync",
+        "linkingText": [
+          "createComputePipelineAsync(descriptor)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GPUDevice"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "compute-pipeline-creation",
+          "href": "https://gpuweb.github.io/gpuweb/#compute-pipeline-creation",
+          "title": "Creation",
+          "number": "10.2.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpudevice-createrenderpipelineasync",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createrenderpipelineasync",
+        "linkingText": [
+          "createRenderPipelineAsync(descriptor)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GPUDevice"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "render-pipeline-creation",
+          "href": "https://gpuweb.github.io/gpuweb/#render-pipeline-creation",
+          "title": "Creation",
+          "number": "10.3.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpudevice-createcommandencoder",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createcommandencoder",
+        "linkingText": [
+          "createCommandEncoder(descriptor)",
+          "createCommandEncoder()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GPUDevice"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "command-encoder-creation",
+          "href": "https://gpuweb.github.io/gpuweb/#command-encoder-creation",
+          "title": "Creation",
+          "number": "12.2.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpudevice-createrenderbundleencoder",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createrenderbundleencoder",
+        "linkingText": [
+          "createRenderBundleEncoder(descriptor)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GPUDevice"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "render-bundle-creation",
+          "href": "https://gpuweb.github.io/gpuweb/#render-bundle-creation",
+          "title": "Creation",
+          "number": "17.1.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpudevice-createqueryset",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createqueryset",
+        "linkingText": [
+          "createQuerySet(descriptor)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GPUDevice"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "queryset-creation",
+          "href": "https://gpuweb.github.io/gpuweb/#queryset-creation",
+          "title": "QuerySet Creation",
+          "number": "19.1.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpudevice-lost",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-lost",
+        "linkingText": [
+          "lost"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "GPUDevice"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "fatal-errors",
+          "href": "https://gpuweb.github.io/gpuweb/#fatal-errors",
+          "title": "Fatal Errors",
+          "number": "21.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpudevice-pusherrorscope",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-pusherrorscope",
+        "linkingText": [
+          "pushErrorScope(filter)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GPUDevice"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "error-scopes",
+          "href": "https://gpuweb.github.io/gpuweb/#error-scopes",
+          "title": "Error Scopes",
+          "number": "21.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpudevice-poperrorscope",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-poperrorscope",
+        "linkingText": [
+          "popErrorScope()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GPUDevice"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "error-scopes",
+          "href": "https://gpuweb.github.io/gpuweb/#error-scopes",
+          "title": "Error Scopes",
+          "number": "21.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpudevice-onuncapturederror",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-onuncapturederror",
+        "linkingText": [
+          "onuncapturederror"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "GPUDevice"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "telemetry",
+          "href": "https://gpuweb.github.io/gpuweb/#telemetry",
+          "title": "Telemetry",
+          "number": "21.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "gpuobjectbase",
+        "href": "https://gpuweb.github.io/gpuweb/#gpuobjectbase",
+        "linkingText": [
+          "GPUObjectBase"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "webgpu-interfaces",
+          "href": "https://gpuweb.github.io/gpuweb/#webgpu-interfaces",
+          "title": "WebGPU Interfaces",
+          "number": "3.1.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gpuobjectbase-label",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpuobjectbase-label",
+        "linkingText": [
+          "label"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "GPUObjectBase"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "webgpu-interfaces",
+          "href": "https://gpuweb.github.io/gpuweb/#webgpu-interfaces",
+          "title": "WebGPU Interfaces",
+          "number": "3.1.3"
+        },
+        "definedIn": "dt"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "eventtarget",
+        "href": "https://dom.spec.whatwg.org/#eventtarget",
+        "linkingText": [
+          "EventTarget"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventtarget-eventtarget",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-eventtarget",
+        "linkingText": [
+          "EventTarget()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-addeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-addeventlistener",
+        "linkingText": [
+          "addEventListener(type, callback, options)",
+          "addEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-removeeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-removeeventlistener",
+        "linkingText": [
+          "removeEventListener(type, callback, options)",
+          "removeEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-dispatchevent",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-dispatchevent",
+        "linkingText": [
+          "dispatchEvent(event)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

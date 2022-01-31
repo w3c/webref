@@ -1,0 +1,185 @@
+{
+  "name": "ImageDecoderInit",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "WebCodecs",
+      "url": "https://www.w3.org/TR/webcodecs/"
+    },
+    "fragment": "dictionary ImageDecoderInit {\n  required DOMString type;\n  required ImageBufferSource data;\n  PremultiplyAlpha premultiplyAlpha = \"default\";\n  ColorSpaceConversion colorSpaceConversion = \"default\";\n  [EnforceRange] unsigned long desiredWidth;\n  [EnforceRange] unsigned long desiredHeight;\n  boolean preferAnimation;\n};",
+    "href": "https://w3c.github.io/webcodecs/#dictdef-imagedecoderinit"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webcodecs/": [
+      {
+        "id": "dictdef-imagedecoderinit",
+        "href": "https://w3c.github.io/webcodecs/#dictdef-imagedecoderinit",
+        "linkingText": [
+          "ImageDecoderInit"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "imagedecoderinit-interface",
+          "href": "https://w3c.github.io/webcodecs/#imagedecoderinit-interface",
+          "title": "ImageDecoderInit Interface",
+          "number": "10.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-imagedecoderinit-type",
+        "href": "https://w3c.github.io/webcodecs/#dom-imagedecoderinit-type",
+        "linkingText": [
+          "type"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "ImageDecoderInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "imagedecoderinit-interface",
+          "href": "https://w3c.github.io/webcodecs/#imagedecoderinit-interface",
+          "title": "ImageDecoderInit Interface",
+          "number": "10.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-imagedecoderinit-data",
+        "href": "https://w3c.github.io/webcodecs/#dom-imagedecoderinit-data",
+        "linkingText": [
+          "data"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "ImageDecoderInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "imagedecoderinit-interface",
+          "href": "https://w3c.github.io/webcodecs/#imagedecoderinit-interface",
+          "title": "ImageDecoderInit Interface",
+          "number": "10.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-imagedecoderinit-premultiplyalpha",
+        "href": "https://w3c.github.io/webcodecs/#dom-imagedecoderinit-premultiplyalpha",
+        "linkingText": [
+          "premultiplyAlpha"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "ImageDecoderInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "imagedecoderinit-interface",
+          "href": "https://w3c.github.io/webcodecs/#imagedecoderinit-interface",
+          "title": "ImageDecoderInit Interface",
+          "number": "10.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-imagedecoderinit-colorspaceconversion",
+        "href": "https://w3c.github.io/webcodecs/#dom-imagedecoderinit-colorspaceconversion",
+        "linkingText": [
+          "colorSpaceConversion"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "ImageDecoderInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "imagedecoderinit-interface",
+          "href": "https://w3c.github.io/webcodecs/#imagedecoderinit-interface",
+          "title": "ImageDecoderInit Interface",
+          "number": "10.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-imagedecoderinit-desiredwidth",
+        "href": "https://w3c.github.io/webcodecs/#dom-imagedecoderinit-desiredwidth",
+        "linkingText": [
+          "desiredWidth"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "ImageDecoderInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "imagedecoderinit-interface",
+          "href": "https://w3c.github.io/webcodecs/#imagedecoderinit-interface",
+          "title": "ImageDecoderInit Interface",
+          "number": "10.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-imagedecoderinit-desiredheight",
+        "href": "https://w3c.github.io/webcodecs/#dom-imagedecoderinit-desiredheight",
+        "linkingText": [
+          "desiredHeight"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "ImageDecoderInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "imagedecoderinit-interface",
+          "href": "https://w3c.github.io/webcodecs/#imagedecoderinit-interface",
+          "title": "ImageDecoderInit Interface",
+          "number": "10.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-imagedecoderinit-preferanimation",
+        "href": "https://w3c.github.io/webcodecs/#dom-imagedecoderinit-preferanimation",
+        "linkingText": [
+          "preferAnimation"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "ImageDecoderInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "imagedecoderinit-interface",
+          "href": "https://w3c.github.io/webcodecs/#imagedecoderinit-interface",
+          "title": "ImageDecoderInit Interface",
+          "number": "10.3"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

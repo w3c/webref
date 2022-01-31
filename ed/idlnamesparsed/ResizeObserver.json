@@ -1,0 +1,124 @@
+{
+  "name": "ResizeObserver",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Resize Observer",
+      "url": "https://www.w3.org/TR/resize-observer-1/"
+    },
+    "fragment": "[Exposed=(Window)]\ninterface ResizeObserver {\n    constructor(ResizeObserverCallback callback);\n    undefined observe(Element target, optional ResizeObserverOptions options = {});\n    undefined unobserve(Element target);\n    undefined disconnect();\n};",
+    "href": "https://drafts.csswg.org/resize-observer/#resizeobserver"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/resize-observer-1/": [
+      {
+        "id": "resizeobserver",
+        "href": "https://drafts.csswg.org/resize-observer/#resizeobserver",
+        "linkingText": [
+          "ResizeObserver"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "resize-observer-interface",
+          "href": "https://drafts.csswg.org/resize-observer/#resize-observer-interface",
+          "title": "ResizeObserver interface",
+          "number": "2.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-resizeobserver-resizeobserver",
+        "href": "https://drafts.csswg.org/resize-observer/#dom-resizeobserver-resizeobserver",
+        "linkingText": [
+          "ResizeObserver(callback)",
+          "constructor(callback)"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "ResizeObserver"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "resize-observer-interface",
+          "href": "https://drafts.csswg.org/resize-observer/#resize-observer-interface",
+          "title": "ResizeObserver interface",
+          "number": "2.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-resizeobserver-observe",
+        "href": "https://drafts.csswg.org/resize-observer/#dom-resizeobserver-observe",
+        "linkingText": [
+          "observe(target, options)",
+          "observe(target)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "ResizeObserver"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "resize-observer-interface",
+          "href": "https://drafts.csswg.org/resize-observer/#resize-observer-interface",
+          "title": "ResizeObserver interface",
+          "number": "2.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-resizeobserver-unobserve",
+        "href": "https://drafts.csswg.org/resize-observer/#dom-resizeobserver-unobserve",
+        "linkingText": [
+          "unobserve(target)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "ResizeObserver"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "resize-observer-interface",
+          "href": "https://drafts.csswg.org/resize-observer/#resize-observer-interface",
+          "title": "ResizeObserver interface",
+          "number": "2.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-resizeobserver-disconnect",
+        "href": "https://drafts.csswg.org/resize-observer/#dom-resizeobserver-disconnect",
+        "linkingText": [
+          "disconnect()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "ResizeObserver"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "resize-observer-interface",
+          "href": "https://drafts.csswg.org/resize-observer/#resize-observer-interface",
+          "title": "ResizeObserver interface",
+          "number": "2.1"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "name": "ML",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Web Neural Network API",
+      "url": "https://www.w3.org/TR/webnn/"
+    },
+    "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface ML {\n  // Create a context with options\n  MLContext createContext(optional MLContextOptions options = {});\n\n  // Create a context from WebGL rendering context\n  MLContext createContext(WebGLRenderingContext glContext);\n\n  // Create a context from WebGPU device\n  MLContext createContext(GPUDevice gpuDevice);\n};",
+    "href": "https://webmachinelearning.github.io/webnn/#ml"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webnn/": [
+      {
+        "id": "ml",
+        "href": "https://webmachinelearning.github.io/webnn/#ml",
+        "linkingText": [
+          "ML"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-ml",
+          "href": "https://webmachinelearning.github.io/webnn/#api-ml",
+          "title": "ML",
+          "number": "7.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-ml-createcontext",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-ml-createcontext",
+        "linkingText": [
+          "createContext(options)",
+          "createContext()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "ML"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-ml",
+          "href": "https://webmachinelearning.github.io/webnn/#api-ml",
+          "title": "ML",
+          "number": "7.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-ml-createcontext-glcontext",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-ml-createcontext-glcontext",
+        "linkingText": [
+          "createContext(glContext)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "ML"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-ml",
+          "href": "https://webmachinelearning.github.io/webnn/#api-ml",
+          "title": "ML",
+          "number": "7.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-ml-createcontext-gpudevice",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-ml-createcontext-gpudevice",
+        "linkingText": [
+          "createContext(gpuDevice)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "ML"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-ml",
+          "href": "https://webmachinelearning.github.io/webnn/#api-ml",
+          "title": "ML",
+          "number": "7.2"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

@@ -1,0 +1,239 @@
+{
+  "name": "AudioWorkletNodeOptions",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Web Audio API",
+      "url": "https://www.w3.org/TR/webaudio/"
+    },
+    "fragment": "dictionary AudioWorkletNodeOptions : AudioNodeOptions {\n  unsigned long numberOfInputs = 1;\n  unsigned long numberOfOutputs = 1;\n  sequence<unsigned long> outputChannelCount;\n  record<DOMString, double> parameterData;\n  object processorOptions;\n};",
+    "href": "https://webaudio.github.io/web-audio-api/#dictdef-audioworkletnodeoptions"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "AudioNodeOptions",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "Web Audio API",
+        "url": "https://www.w3.org/TR/webaudio/"
+      },
+      "fragment": "dictionary AudioNodeOptions {\n  unsigned long channelCount;\n  ChannelCountMode channelCountMode;\n  ChannelInterpretation channelInterpretation;\n};",
+      "href": "https://webaudio.github.io/web-audio-api/#dictdef-audionodeoptions"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webaudio/": [
+      {
+        "id": "dictdef-audioworkletnodeoptions",
+        "href": "https://webaudio.github.io/web-audio-api/#dictdef-audioworkletnodeoptions",
+        "linkingText": [
+          "AudioWorkletNodeOptions"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "AudioWorkletNodeOptions",
+          "href": "https://webaudio.github.io/web-audio-api/#AudioWorkletNodeOptions",
+          "title": "AudioWorkletNodeOptions",
+          "number": "1.32.3.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-audioworkletnodeoptions-numberofinputs",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-audioworkletnodeoptions-numberofinputs",
+        "linkingText": [
+          "numberOfInputs"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "AudioWorkletNodeOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-audioworkletnodeoptions-members",
+          "href": "https://webaudio.github.io/web-audio-api/#dictionary-audioworkletnodeoptions-members",
+          "title": "Dictionary AudioWorkletNodeOptions Members",
+          "number": "1.32.3.3.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-audioworkletnodeoptions-numberofoutputs",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-audioworkletnodeoptions-numberofoutputs",
+        "linkingText": [
+          "numberOfOutputs"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "AudioWorkletNodeOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-audioworkletnodeoptions-members",
+          "href": "https://webaudio.github.io/web-audio-api/#dictionary-audioworkletnodeoptions-members",
+          "title": "Dictionary AudioWorkletNodeOptions Members",
+          "number": "1.32.3.3.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-audioworkletnodeoptions-outputchannelcount",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-audioworkletnodeoptions-outputchannelcount",
+        "linkingText": [
+          "outputChannelCount"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "AudioWorkletNodeOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-audioworkletnodeoptions-members",
+          "href": "https://webaudio.github.io/web-audio-api/#dictionary-audioworkletnodeoptions-members",
+          "title": "Dictionary AudioWorkletNodeOptions Members",
+          "number": "1.32.3.3.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-audioworkletnodeoptions-parameterdata",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-audioworkletnodeoptions-parameterdata",
+        "linkingText": [
+          "parameterData"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "AudioWorkletNodeOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-audioworkletnodeoptions-members",
+          "href": "https://webaudio.github.io/web-audio-api/#dictionary-audioworkletnodeoptions-members",
+          "title": "Dictionary AudioWorkletNodeOptions Members",
+          "number": "1.32.3.3.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-audioworkletnodeoptions-processoroptions",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-audioworkletnodeoptions-processoroptions",
+        "linkingText": [
+          "processorOptions"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "AudioWorkletNodeOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-audioworkletnodeoptions-members",
+          "href": "https://webaudio.github.io/web-audio-api/#dictionary-audioworkletnodeoptions-members",
+          "title": "Dictionary AudioWorkletNodeOptions Members",
+          "number": "1.32.3.3.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dictdef-audionodeoptions",
+        "href": "https://webaudio.github.io/web-audio-api/#dictdef-audionodeoptions",
+        "linkingText": [
+          "AudioNodeOptions"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "AudioNodeOptions",
+          "href": "https://webaudio.github.io/web-audio-api/#AudioNodeOptions",
+          "title": "AudioNodeOptions",
+          "number": "1.5.6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-audionodeoptions-channelcount",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-audionodeoptions-channelcount",
+        "linkingText": [
+          "channelCount"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "AudioNodeOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-audionodeoptions-members",
+          "href": "https://webaudio.github.io/web-audio-api/#dictionary-audionodeoptions-members",
+          "title": "Dictionary AudioNodeOptions Members",
+          "number": "1.5.6.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-audionodeoptions-channelcountmode",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-audionodeoptions-channelcountmode",
+        "linkingText": [
+          "channelCountMode"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "AudioNodeOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-audionodeoptions-members",
+          "href": "https://webaudio.github.io/web-audio-api/#dictionary-audionodeoptions-members",
+          "title": "Dictionary AudioNodeOptions Members",
+          "number": "1.5.6.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-audionodeoptions-channelinterpretation",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-audionodeoptions-channelinterpretation",
+        "linkingText": [
+          "channelInterpretation"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "AudioNodeOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-audionodeoptions-members",
+          "href": "https://webaudio.github.io/web-audio-api/#dictionary-audionodeoptions-members",
+          "title": "Dictionary AudioNodeOptions Members",
+          "number": "1.5.6.1"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

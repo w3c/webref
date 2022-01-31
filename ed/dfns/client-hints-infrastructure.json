@@ -1,0 +1,679 @@
+{
+  "spec": {
+    "title": "Client Hints Infrastructure",
+    "url": "https://wicg.github.io/client-hints-infrastructure/"
+  },
+  "dfns": [
+    {
+      "id": "client-hints-set",
+      "href": "https://wicg.github.io/client-hints-infrastructure/#client-hints-set",
+      "linkingText": [
+        "client hints set"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "concept-client-hints-set",
+        "href": "https://wicg.github.io/client-hints-infrastructure/#concept-client-hints-set",
+        "title": "Client hints set",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "accept-ch-cache",
+      "href": "https://wicg.github.io/client-hints-infrastructure/#accept-ch-cache",
+      "linkingText": [
+        "Accept-CH cache"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "accept-ch-cache-definition",
+        "href": "https://wicg.github.io/client-hints-infrastructure/#accept-ch-cache-definition",
+        "title": "Accept-CH cache",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "accept-ch-cache-origin",
+      "href": "https://wicg.github.io/client-hints-infrastructure/#accept-ch-cache-origin",
+      "linkingText": [
+        "origin"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "accept-ch-cache"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "accept-ch-cache-definition",
+        "href": "https://wicg.github.io/client-hints-infrastructure/#accept-ch-cache-definition",
+        "title": "Accept-CH cache",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "accept-ch-cache-client-hints-set",
+      "href": "https://wicg.github.io/client-hints-infrastructure/#accept-ch-cache-client-hints-set",
+      "linkingText": [
+        "client hints set"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "accept-ch-cache"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "accept-ch-cache-definition",
+        "href": "https://wicg.github.io/client-hints-infrastructure/#accept-ch-cache-definition",
+        "title": "Accept-CH cache",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "add-a-new-accept-ch-cache-entry",
+      "href": "https://wicg.github.io/client-hints-infrastructure/#add-a-new-accept-ch-cache-entry",
+      "linkingText": [
+        "add a new Accept-CH cache entry"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "accept-ch-cache-definition",
+        "href": "https://wicg.github.io/client-hints-infrastructure/#accept-ch-cache-definition",
+        "title": "Accept-CH cache",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "retrieve-the-client-hints-set",
+      "href": "https://wicg.github.io/client-hints-infrastructure/#retrieve-the-client-hints-set",
+      "linkingText": [
+        "retrieve the client hints set"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "accept-ch-cache-definition",
+        "href": "https://wicg.github.io/client-hints-infrastructure/#accept-ch-cache-definition",
+        "title": "Accept-CH cache",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "abstract-opdef-initialize-the-client-hints-set",
+      "href": "https://wicg.github.io/client-hints-infrastructure/#abstract-opdef-initialize-the-client-hints-set",
+      "linkingText": [
+        "initialize the Client Hints set"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "initialize-ch-set",
+        "href": "https://wicg.github.io/client-hints-infrastructure/#initialize-ch-set",
+        "title": "Initialize Client Hints set",
+        "number": "3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "accept-ch-state",
+      "href": "https://wicg.github.io/client-hints-infrastructure/#accept-ch-state",
+      "linkingText": [
+        "Accept-CH state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "accept-ch-state-algo",
+        "href": "https://wicg.github.io/client-hints-infrastructure/#accept-ch-state-algo",
+        "title": "Accept-CH state (name=\"accept-ch\")",
+        "number": "3.4"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "environment-settings-object-client-hints-set",
+      "href": "https://wicg.github.io/client-hints-infrastructure/#environment-settings-object-client-hints-set",
+      "linkingText": [
+        "client hints set"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "environment settings object"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "extending-environment-settings-object",
+        "href": "https://wicg.github.io/client-hints-infrastructure/#extending-environment-settings-object",
+        "title": "Extending environment settings object",
+        "number": "4.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "abstract-opdef-append-client-hints-to-request",
+      "href": "https://wicg.github.io/client-hints-infrastructure/#abstract-opdef-append-client-hints-to-request",
+      "linkingText": [
+        "append client hints to request"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "request-processing",
+        "href": "https://wicg.github.io/client-hints-infrastructure/#request-processing",
+        "title": "Request processing",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "abstract-opdef-update-client-hints-from-redirect-if-needed",
+      "href": "https://wicg.github.io/client-hints-infrastructure/#abstract-opdef-update-client-hints-from-redirect-if-needed",
+      "linkingText": [
+        "update client hints from redirect if needed"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "request-processing",
+        "href": "https://wicg.github.io/client-hints-infrastructure/#request-processing",
+        "title": "Request processing",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "client-hints-token",
+      "href": "https://wicg.github.io/client-hints-infrastructure/#client-hints-token",
+      "linkingText": [
+        "client hints token"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "client-hints-token-definition",
+        "href": "https://wicg.github.io/client-hints-infrastructure/#client-hints-token-definition",
+        "title": "Client hints token",
+        "number": "7.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "policy-controlled-client-hints-features",
+      "href": "https://wicg.github.io/client-hints-infrastructure/#policy-controlled-client-hints-features",
+      "linkingText": [
+        "policy-controlled client hints features"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "policy-controlled-features",
+        "href": "https://wicg.github.io/client-hints-infrastructure/#policy-controlled-features",
+        "title": "Policy-controlled features",
+        "number": "7.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "ch-save-data",
+      "href": "https://wicg.github.io/client-hints-infrastructure/#ch-save-data",
+      "linkingText": [
+        "ch-save-data"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "policy-controlled-features",
+        "href": "https://wicg.github.io/client-hints-infrastructure/#policy-controlled-features",
+        "title": "Policy-controlled features",
+        "number": "7.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "ch-dpr",
+      "href": "https://wicg.github.io/client-hints-infrastructure/#ch-dpr",
+      "linkingText": [
+        "ch-dpr"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "policy-controlled-features",
+        "href": "https://wicg.github.io/client-hints-infrastructure/#policy-controlled-features",
+        "title": "Policy-controlled features",
+        "number": "7.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "ch-width",
+      "href": "https://wicg.github.io/client-hints-infrastructure/#ch-width",
+      "linkingText": [
+        "ch-width"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "policy-controlled-features",
+        "href": "https://wicg.github.io/client-hints-infrastructure/#policy-controlled-features",
+        "title": "Policy-controlled features",
+        "number": "7.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "ch-viewport-width",
+      "href": "https://wicg.github.io/client-hints-infrastructure/#ch-viewport-width",
+      "linkingText": [
+        "ch-viewport-width"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "policy-controlled-features",
+        "href": "https://wicg.github.io/client-hints-infrastructure/#policy-controlled-features",
+        "title": "Policy-controlled features",
+        "number": "7.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "ch-viewport-height",
+      "href": "https://wicg.github.io/client-hints-infrastructure/#ch-viewport-height",
+      "linkingText": [
+        "ch-viewport-height"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "policy-controlled-features",
+        "href": "https://wicg.github.io/client-hints-infrastructure/#policy-controlled-features",
+        "title": "Policy-controlled features",
+        "number": "7.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "ch-device-memory",
+      "href": "https://wicg.github.io/client-hints-infrastructure/#ch-device-memory",
+      "linkingText": [
+        "ch-device-memory"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "policy-controlled-features",
+        "href": "https://wicg.github.io/client-hints-infrastructure/#policy-controlled-features",
+        "title": "Policy-controlled features",
+        "number": "7.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "ch-rtt",
+      "href": "https://wicg.github.io/client-hints-infrastructure/#ch-rtt",
+      "linkingText": [
+        "ch-rtt"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "policy-controlled-features",
+        "href": "https://wicg.github.io/client-hints-infrastructure/#policy-controlled-features",
+        "title": "Policy-controlled features",
+        "number": "7.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "ch-downlink",
+      "href": "https://wicg.github.io/client-hints-infrastructure/#ch-downlink",
+      "linkingText": [
+        "ch-downlink"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "policy-controlled-features",
+        "href": "https://wicg.github.io/client-hints-infrastructure/#policy-controlled-features",
+        "title": "Policy-controlled features",
+        "number": "7.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "ch-ect",
+      "href": "https://wicg.github.io/client-hints-infrastructure/#ch-ect",
+      "linkingText": [
+        "ch-ect"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "policy-controlled-features",
+        "href": "https://wicg.github.io/client-hints-infrastructure/#policy-controlled-features",
+        "title": "Policy-controlled features",
+        "number": "7.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "ch-prefers-color-scheme",
+      "href": "https://wicg.github.io/client-hints-infrastructure/#ch-prefers-color-scheme",
+      "linkingText": [
+        "ch-prefers-color-scheme"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "policy-controlled-features",
+        "href": "https://wicg.github.io/client-hints-infrastructure/#policy-controlled-features",
+        "title": "Policy-controlled features",
+        "number": "7.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "ch-ua",
+      "href": "https://wicg.github.io/client-hints-infrastructure/#ch-ua",
+      "linkingText": [
+        "ch-ua"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "policy-controlled-features",
+        "href": "https://wicg.github.io/client-hints-infrastructure/#policy-controlled-features",
+        "title": "Policy-controlled features",
+        "number": "7.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "ch-ua-arch",
+      "href": "https://wicg.github.io/client-hints-infrastructure/#ch-ua-arch",
+      "linkingText": [
+        "ch-ua-arch"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "policy-controlled-features",
+        "href": "https://wicg.github.io/client-hints-infrastructure/#policy-controlled-features",
+        "title": "Policy-controlled features",
+        "number": "7.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "ch-ua-bitness",
+      "href": "https://wicg.github.io/client-hints-infrastructure/#ch-ua-bitness",
+      "linkingText": [
+        "ch-ua-bitness"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "policy-controlled-features",
+        "href": "https://wicg.github.io/client-hints-infrastructure/#policy-controlled-features",
+        "title": "Policy-controlled features",
+        "number": "7.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "ch-ua-full-version",
+      "href": "https://wicg.github.io/client-hints-infrastructure/#ch-ua-full-version",
+      "linkingText": [
+        "ch-ua-full-version"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "policy-controlled-features",
+        "href": "https://wicg.github.io/client-hints-infrastructure/#policy-controlled-features",
+        "title": "Policy-controlled features",
+        "number": "7.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "ch-ua-full-version-list",
+      "href": "https://wicg.github.io/client-hints-infrastructure/#ch-ua-full-version-list",
+      "linkingText": [
+        "ch-ua-full-version-list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "policy-controlled-features",
+        "href": "https://wicg.github.io/client-hints-infrastructure/#policy-controlled-features",
+        "title": "Policy-controlled features",
+        "number": "7.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "ch-ua-mobile",
+      "href": "https://wicg.github.io/client-hints-infrastructure/#ch-ua-mobile",
+      "linkingText": [
+        "ch-ua-mobile"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "policy-controlled-features",
+        "href": "https://wicg.github.io/client-hints-infrastructure/#policy-controlled-features",
+        "title": "Policy-controlled features",
+        "number": "7.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "ch-ua-model",
+      "href": "https://wicg.github.io/client-hints-infrastructure/#ch-ua-model",
+      "linkingText": [
+        "ch-ua-model"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "policy-controlled-features",
+        "href": "https://wicg.github.io/client-hints-infrastructure/#policy-controlled-features",
+        "title": "Policy-controlled features",
+        "number": "7.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "ch-ua-platform",
+      "href": "https://wicg.github.io/client-hints-infrastructure/#ch-ua-platform",
+      "linkingText": [
+        "ch-ua-platform"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "policy-controlled-features",
+        "href": "https://wicg.github.io/client-hints-infrastructure/#policy-controlled-features",
+        "title": "Policy-controlled features",
+        "number": "7.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "ch-ua-platform-version",
+      "href": "https://wicg.github.io/client-hints-infrastructure/#ch-ua-platform-version",
+      "linkingText": [
+        "ch-ua-platform-version"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "policy-controlled-features",
+        "href": "https://wicg.github.io/client-hints-infrastructure/#policy-controlled-features",
+        "title": "Policy-controlled features",
+        "number": "7.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "low-entropy-hint-table",
+      "href": "https://wicg.github.io/client-hints-infrastructure/#low-entropy-hint-table",
+      "linkingText": [
+        "low entropy hint table"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "low-entropy-table",
+        "href": "https://wicg.github.io/client-hints-infrastructure/#low-entropy-table",
+        "title": "Low entropy hint table",
+        "number": "7.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "find-client-hint-value",
+      "href": "https://wicg.github.io/client-hints-infrastructure/#find-client-hint-value",
+      "linkingText": [
+        "find client hint value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "find-client-hint-value-section",
+        "href": "https://wicg.github.io/client-hints-infrastructure/#find-client-hint-value-section",
+        "title": "Find client hint value",
+        "number": "7.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "field-name",
+      "href": "https://wicg.github.io/client-hints-infrastructure/#field-name",
+      "linkingText": [
+        "field-name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terms",
+        "href": "https://wicg.github.io/client-hints-infrastructure/#terms",
+        "title": "Terms",
+        "number": "9"
+      },
+      "definedIn": "prose"
+    }
+  ]
+}

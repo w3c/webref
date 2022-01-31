@@ -1,0 +1,80 @@
+{
+  "name": "MessageChannel",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "HTML Standard",
+      "url": "https://html.spec.whatwg.org/multipage/"
+    },
+    "fragment": "[Exposed=(Window,Worker)]\ninterface MessageChannel {\n  constructor();\n\n  readonly attribute MessagePort port1;\n  readonly attribute MessagePort port2;\n};",
+    "href": "https://html.spec.whatwg.org/multipage/web-messaging.html#messagechannel"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://html.spec.whatwg.org/multipage/": [
+      {
+        "id": "messagechannel",
+        "href": "https://html.spec.whatwg.org/multipage/web-messaging.html#messagechannel",
+        "linkingText": [
+          "MessageChannel"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "message-channels",
+          "href": "https://html.spec.whatwg.org/multipage/web-messaging.html#message-channels",
+          "title": "Message channels",
+          "number": "9.5.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-messagechannel-port1",
+        "href": "https://html.spec.whatwg.org/multipage/web-messaging.html#dom-messagechannel-port1",
+        "linkingText": [
+          "port1"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "MessageChannel"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "message-channels",
+          "href": "https://html.spec.whatwg.org/multipage/web-messaging.html#message-channels",
+          "title": "Message channels",
+          "number": "9.5.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-messagechannel-port2",
+        "href": "https://html.spec.whatwg.org/multipage/web-messaging.html#dom-messagechannel-port2",
+        "linkingText": [
+          "port2"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "MessageChannel"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "message-channels",
+          "href": "https://html.spec.whatwg.org/multipage/web-messaging.html#message-channels",
+          "title": "Message channels",
+          "number": "9.5.2"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

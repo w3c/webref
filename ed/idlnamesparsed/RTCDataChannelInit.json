@@ -1,0 +1,188 @@
+{
+  "name": "RTCDataChannelInit",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
+      "url": "https://www.w3.org/TR/webrtc/"
+    },
+    "fragment": "dictionary RTCDataChannelInit {\n  boolean ordered = true;\n  [EnforceRange] unsigned short maxPacketLifeTime;\n  [EnforceRange] unsigned short maxRetransmits;\n  USVString protocol = \"\";\n  boolean negotiated = false;\n  [EnforceRange] unsigned short id;\n};",
+    "href": "https://w3c.github.io/webrtc-pc/#dom-rtcdatachannelinit"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "WebRTC Priority Control API",
+        "url": "https://www.w3.org/TR/webrtc-priority/"
+      },
+      "fragment": "partial dictionary RTCDataChannelInit {\n  RTCPriorityType priority = \"low\";\n};"
+    }
+  ],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webrtc/": [
+      {
+        "id": "dom-rtcdatachannelinit",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcdatachannelinit",
+        "linkingText": [
+          "RTCDataChannelInit"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-rtcdatachannelinit-members",
+          "href": "https://w3c.github.io/webrtc-pc/#dictionary-rtcdatachannelinit-members",
+          "title": "Dictionary RTCDataChannelInit Members"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-rtcdatachannelinit-ordered",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcdatachannelinit-ordered",
+        "linkingText": [
+          "ordered"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RTCDataChannelInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-rtcdatachannelinit-members",
+          "href": "https://w3c.github.io/webrtc-pc/#dictionary-rtcdatachannelinit-members",
+          "title": "Dictionary RTCDataChannelInit Members"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcdatachannelinit-maxpacketlifetime",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcdatachannelinit-maxpacketlifetime",
+        "linkingText": [
+          "maxPacketLifeTime"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RTCDataChannelInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-rtcdatachannelinit-members",
+          "href": "https://w3c.github.io/webrtc-pc/#dictionary-rtcdatachannelinit-members",
+          "title": "Dictionary RTCDataChannelInit Members"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcdatachannelinit-maxretransmits",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcdatachannelinit-maxretransmits",
+        "linkingText": [
+          "maxRetransmits"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RTCDataChannelInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-rtcdatachannelinit-members",
+          "href": "https://w3c.github.io/webrtc-pc/#dictionary-rtcdatachannelinit-members",
+          "title": "Dictionary RTCDataChannelInit Members"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcdatachannelinit-protocol",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcdatachannelinit-protocol",
+        "linkingText": [
+          "protocol"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RTCDataChannelInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-rtcdatachannelinit-members",
+          "href": "https://w3c.github.io/webrtc-pc/#dictionary-rtcdatachannelinit-members",
+          "title": "Dictionary RTCDataChannelInit Members"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcdatachannelinit-negotiated",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcdatachannelinit-negotiated",
+        "linkingText": [
+          "negotiated"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RTCDataChannelInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-rtcdatachannelinit-members",
+          "href": "https://w3c.github.io/webrtc-pc/#dictionary-rtcdatachannelinit-members",
+          "title": "Dictionary RTCDataChannelInit Members"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcdatachannelinit-id",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcdatachannelinit-id",
+        "linkingText": [
+          "id"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RTCDataChannelInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-rtcdatachannelinit-members",
+          "href": "https://w3c.github.io/webrtc-pc/#dictionary-rtcdatachannelinit-members",
+          "title": "Dictionary RTCDataChannelInit Members"
+        },
+        "definedIn": "dt"
+      }
+    ],
+    "https://www.w3.org/TR/webrtc-priority/": [
+      {
+        "id": "dom-rtcdatachannelinit-priority",
+        "href": "https://w3c.github.io/webrtc-priority/#dom-rtcdatachannelinit-priority",
+        "linkingText": [
+          "priority"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RTCDataChannelInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "new-rtcdatachannelinit-member",
+          "href": "https://w3c.github.io/webrtc-priority/#new-rtcdatachannelinit-member",
+          "title": "New RTCDataChannelInit member",
+          "number": "4.2"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

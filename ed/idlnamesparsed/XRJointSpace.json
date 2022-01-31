@@ -1,0 +1,216 @@
+{
+  "name": "XRJointSpace",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebXR Hand Input Module - Level 1",
+      "url": "https://www.w3.org/TR/webxr-hand-input-1/"
+    },
+    "fragment": "[Exposed=Window]\ninterface XRJointSpace: XRSpace {\n  readonly attribute XRHandJoint jointName;\n};",
+    "href": "https://immersive-web.github.io/webxr-hand-input/#xrjointspace"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "XRSpace",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "WebXR Device API",
+        "url": "https://www.w3.org/TR/webxr/"
+      },
+      "fragment": "[SecureContext, Exposed=Window] interface XRSpace : EventTarget {\n\n};",
+      "href": "https://immersive-web.github.io/webxr/#xrspace"
+    },
+    "extended": [],
+    "inheritance": {
+      "name": "EventTarget",
+      "type": "interface",
+      "defined": {
+        "spec": {
+          "title": "DOM Standard",
+          "url": "https://dom.spec.whatwg.org/"
+        },
+        "fragment": "[Exposed=*]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+        "href": "https://dom.spec.whatwg.org/#eventtarget"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webxr-hand-input-1/": [
+      {
+        "id": "xrjointspace",
+        "href": "https://immersive-web.github.io/webxr-hand-input/#xrjointspace",
+        "linkingText": [
+          "XRJointSpace"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrjointspace-interface",
+          "href": "https://immersive-web.github.io/webxr-hand-input/#xrjointspace-interface",
+          "title": "XRJointSpace",
+          "number": "3.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-xrjointspace-jointname",
+        "href": "https://immersive-web.github.io/webxr-hand-input/#dom-xrjointspace-jointname",
+        "linkingText": [
+          "jointName"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XRJointSpace"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrjointspace-interface",
+          "href": "https://immersive-web.github.io/webxr-hand-input/#xrjointspace-interface",
+          "title": "XRJointSpace",
+          "number": "3.4"
+        },
+        "definedIn": "pre"
+      }
+    ],
+    "https://www.w3.org/TR/webxr/": [
+      {
+        "id": "xrspace",
+        "href": "https://immersive-web.github.io/webxr/#xrspace",
+        "linkingText": [
+          "XRSpace"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrspace-interface",
+          "href": "https://immersive-web.github.io/webxr/#xrspace-interface",
+          "title": "XRSpace",
+          "number": "6.1"
+        },
+        "definedIn": "pre"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "eventtarget",
+        "href": "https://dom.spec.whatwg.org/#eventtarget",
+        "linkingText": [
+          "EventTarget"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventtarget-eventtarget",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-eventtarget",
+        "linkingText": [
+          "EventTarget()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-addeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-addeventlistener",
+        "linkingText": [
+          "addEventListener(type, callback, options)",
+          "addEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-removeeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-removeeventlistener",
+        "linkingText": [
+          "removeEventListener(type, callback, options)",
+          "removeEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-dispatchevent",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-dispatchevent",
+        "linkingText": [
+          "dispatchEvent(event)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

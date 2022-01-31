@@ -1,0 +1,388 @@
+{
+  "name": "SecurityPolicyViolationEventInit",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Content Security Policy Level 3",
+      "url": "https://www.w3.org/TR/CSP3/"
+    },
+    "fragment": "dictionary SecurityPolicyViolationEventInit : EventInit {\n    required USVString      documentURI;\n             USVString      referrer = \"\";\n             USVString      blockedURI = \"\";\n    required DOMString      violatedDirective;\n    required DOMString      effectiveDirective;\n    required DOMString      originalPolicy;\n             USVString      sourceFile = \"\";\n             DOMString      sample = \"\";\n    required SecurityPolicyViolationEventDisposition disposition;\n    required unsigned short statusCode;\n             unsigned long  lineNumber = 0;\n             unsigned long  columnNumber = 0;\n};",
+    "href": "https://w3c.github.io/webappsec-csp/#dictdef-securitypolicyviolationeventinit"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "EventInit",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "dictionary EventInit {\n  boolean bubbles = false;\n  boolean cancelable = false;\n  boolean composed = false;\n};",
+      "href": "https://dom.spec.whatwg.org/#dictdef-eventinit"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/CSP3/": [
+      {
+        "id": "dictdef-securitypolicyviolationeventinit",
+        "href": "https://w3c.github.io/webappsec-csp/#dictdef-securitypolicyviolationeventinit",
+        "linkingText": [
+          "SecurityPolicyViolationEventInit"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "violation-events",
+          "href": "https://w3c.github.io/webappsec-csp/#violation-events",
+          "title": "Violation DOM Events",
+          "number": "5.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-securitypolicyviolationeventinit-documenturi",
+        "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationeventinit-documenturi",
+        "linkingText": [
+          "documentURI"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "SecurityPolicyViolationEventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "violation-events",
+          "href": "https://w3c.github.io/webappsec-csp/#violation-events",
+          "title": "Violation DOM Events",
+          "number": "5.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-securitypolicyviolationeventinit-referrer",
+        "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationeventinit-referrer",
+        "linkingText": [
+          "referrer"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "SecurityPolicyViolationEventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "violation-events",
+          "href": "https://w3c.github.io/webappsec-csp/#violation-events",
+          "title": "Violation DOM Events",
+          "number": "5.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-securitypolicyviolationeventinit-blockeduri",
+        "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationeventinit-blockeduri",
+        "linkingText": [
+          "blockedURI"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "SecurityPolicyViolationEventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "violation-events",
+          "href": "https://w3c.github.io/webappsec-csp/#violation-events",
+          "title": "Violation DOM Events",
+          "number": "5.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-securitypolicyviolationeventinit-violateddirective",
+        "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationeventinit-violateddirective",
+        "linkingText": [
+          "violatedDirective"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "SecurityPolicyViolationEventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "violation-events",
+          "href": "https://w3c.github.io/webappsec-csp/#violation-events",
+          "title": "Violation DOM Events",
+          "number": "5.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-securitypolicyviolationeventinit-effectivedirective",
+        "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationeventinit-effectivedirective",
+        "linkingText": [
+          "effectiveDirective"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "SecurityPolicyViolationEventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "violation-events",
+          "href": "https://w3c.github.io/webappsec-csp/#violation-events",
+          "title": "Violation DOM Events",
+          "number": "5.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-securitypolicyviolationeventinit-originalpolicy",
+        "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationeventinit-originalpolicy",
+        "linkingText": [
+          "originalPolicy"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "SecurityPolicyViolationEventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "violation-events",
+          "href": "https://w3c.github.io/webappsec-csp/#violation-events",
+          "title": "Violation DOM Events",
+          "number": "5.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-securitypolicyviolationeventinit-sourcefile",
+        "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationeventinit-sourcefile",
+        "linkingText": [
+          "sourceFile"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "SecurityPolicyViolationEventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "violation-events",
+          "href": "https://w3c.github.io/webappsec-csp/#violation-events",
+          "title": "Violation DOM Events",
+          "number": "5.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-securitypolicyviolationeventinit-sample",
+        "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationeventinit-sample",
+        "linkingText": [
+          "sample"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "SecurityPolicyViolationEventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "violation-events",
+          "href": "https://w3c.github.io/webappsec-csp/#violation-events",
+          "title": "Violation DOM Events",
+          "number": "5.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-securitypolicyviolationeventinit-disposition",
+        "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationeventinit-disposition",
+        "linkingText": [
+          "disposition"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "SecurityPolicyViolationEventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "violation-events",
+          "href": "https://w3c.github.io/webappsec-csp/#violation-events",
+          "title": "Violation DOM Events",
+          "number": "5.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-securitypolicyviolationeventinit-statuscode",
+        "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationeventinit-statuscode",
+        "linkingText": [
+          "statusCode"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "SecurityPolicyViolationEventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "violation-events",
+          "href": "https://w3c.github.io/webappsec-csp/#violation-events",
+          "title": "Violation DOM Events",
+          "number": "5.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-securitypolicyviolationeventinit-linenumber",
+        "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationeventinit-linenumber",
+        "linkingText": [
+          "lineNumber"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "SecurityPolicyViolationEventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "violation-events",
+          "href": "https://w3c.github.io/webappsec-csp/#violation-events",
+          "title": "Violation DOM Events",
+          "number": "5.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-securitypolicyviolationeventinit-columnnumber",
+        "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationeventinit-columnnumber",
+        "linkingText": [
+          "columnNumber"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "SecurityPolicyViolationEventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "violation-events",
+          "href": "https://w3c.github.io/webappsec-csp/#violation-events",
+          "title": "Violation DOM Events",
+          "number": "5.1"
+        },
+        "definedIn": "pre"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "dictdef-eventinit",
+        "href": "https://dom.spec.whatwg.org/#dictdef-eventinit",
+        "linkingText": [
+          "EventInit"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventinit-bubbles",
+        "href": "https://dom.spec.whatwg.org/#dom-eventinit-bubbles",
+        "linkingText": [
+          "bubbles"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventinit-cancelable",
+        "href": "https://dom.spec.whatwg.org/#dom-eventinit-cancelable",
+        "linkingText": [
+          "cancelable"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventinit-composed",
+        "href": "https://dom.spec.whatwg.org/#dom-eventinit-composed",
+        "linkingText": [
+          "composed"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

@@ -1,0 +1,269 @@
+{
+  "name": "CanvasDrawPath",
+  "type": "interface mixin",
+  "defined": {
+    "spec": {
+      "title": "HTML Standard",
+      "url": "https://html.spec.whatwg.org/multipage/"
+    },
+    "fragment": "interface mixin CanvasDrawPath {\n  // path API (see also CanvasPath)\n  undefined beginPath();\n  undefined fill(optional CanvasFillRule fillRule = \"nonzero\");\n  undefined fill(Path2D path, optional CanvasFillRule fillRule = \"nonzero\");\n  undefined stroke();\n  undefined stroke(Path2D path);\n  undefined clip(optional CanvasFillRule fillRule = \"nonzero\");\n  undefined clip(Path2D path, optional CanvasFillRule fillRule = \"nonzero\");\n  boolean isPointInPath(unrestricted double x, unrestricted double y, optional CanvasFillRule fillRule = \"nonzero\");\n  boolean isPointInPath(Path2D path, unrestricted double x, unrestricted double y, optional CanvasFillRule fillRule = \"nonzero\");\n  boolean isPointInStroke(unrestricted double x, unrestricted double y);\n  boolean isPointInStroke(Path2D path, unrestricted double x, unrestricted double y);\n};",
+    "href": "https://html.spec.whatwg.org/multipage/canvas.html#canvasdrawpath"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://html.spec.whatwg.org/multipage/": [
+      {
+        "id": "canvasdrawpath",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#canvasdrawpath",
+        "linkingText": [
+          "CanvasDrawPath"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "2dcontext",
+          "href": "https://html.spec.whatwg.org/multipage/canvas.html#2dcontext",
+          "title": "The 2D rendering context",
+          "number": "4.12.5.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-context-2d-beginpath",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-beginpath",
+        "linkingText": [
+          "beginPath()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CanvasDrawPath"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "drawing-paths-to-the-canvas",
+          "href": "https://html.spec.whatwg.org/multipage/canvas.html#drawing-paths-to-the-canvas",
+          "title": "Drawing paths to the canvas",
+          "number": "4.12.5.1.12"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-context-2d-fill",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-fill",
+        "linkingText": [
+          "fill(fillRule)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CanvasDrawPath"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "drawing-paths-to-the-canvas",
+          "href": "https://html.spec.whatwg.org/multipage/canvas.html#drawing-paths-to-the-canvas",
+          "title": "Drawing paths to the canvas",
+          "number": "4.12.5.1.12"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-context-2d-fill-path",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-fill-path",
+        "linkingText": [
+          "fill(path, fillRule)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CanvasDrawPath"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "drawing-paths-to-the-canvas",
+          "href": "https://html.spec.whatwg.org/multipage/canvas.html#drawing-paths-to-the-canvas",
+          "title": "Drawing paths to the canvas",
+          "number": "4.12.5.1.12"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-context-2d-stroke",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-stroke",
+        "linkingText": [
+          "stroke()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CanvasDrawPath"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "drawing-paths-to-the-canvas",
+          "href": "https://html.spec.whatwg.org/multipage/canvas.html#drawing-paths-to-the-canvas",
+          "title": "Drawing paths to the canvas",
+          "number": "4.12.5.1.12"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-context-2d-stroke-path",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-stroke-path",
+        "linkingText": [
+          "stroke(path)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CanvasDrawPath"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "drawing-paths-to-the-canvas",
+          "href": "https://html.spec.whatwg.org/multipage/canvas.html#drawing-paths-to-the-canvas",
+          "title": "Drawing paths to the canvas",
+          "number": "4.12.5.1.12"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-context-2d-clip",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-clip",
+        "linkingText": [
+          "clip(fillRule)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CanvasDrawPath"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "drawing-paths-to-the-canvas",
+          "href": "https://html.spec.whatwg.org/multipage/canvas.html#drawing-paths-to-the-canvas",
+          "title": "Drawing paths to the canvas",
+          "number": "4.12.5.1.12"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-context-2d-clip-path",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-clip-path",
+        "linkingText": [
+          "clip(path, fillRule)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CanvasDrawPath"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "drawing-paths-to-the-canvas",
+          "href": "https://html.spec.whatwg.org/multipage/canvas.html#drawing-paths-to-the-canvas",
+          "title": "Drawing paths to the canvas",
+          "number": "4.12.5.1.12"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-context-2d-ispointinpath",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-ispointinpath",
+        "linkingText": [
+          "isPointInPath(x, y, fillRule)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CanvasDrawPath"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "drawing-paths-to-the-canvas",
+          "href": "https://html.spec.whatwg.org/multipage/canvas.html#drawing-paths-to-the-canvas",
+          "title": "Drawing paths to the canvas",
+          "number": "4.12.5.1.12"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-context-2d-ispointinpath-path",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-ispointinpath-path",
+        "linkingText": [
+          "isPointInPath(path, x, y, fillRule)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CanvasDrawPath"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "drawing-paths-to-the-canvas",
+          "href": "https://html.spec.whatwg.org/multipage/canvas.html#drawing-paths-to-the-canvas",
+          "title": "Drawing paths to the canvas",
+          "number": "4.12.5.1.12"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-context-2d-ispointinstroke",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-ispointinstroke",
+        "linkingText": [
+          "isPointInStroke(x, y)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CanvasDrawPath"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "drawing-paths-to-the-canvas",
+          "href": "https://html.spec.whatwg.org/multipage/canvas.html#drawing-paths-to-the-canvas",
+          "title": "Drawing paths to the canvas",
+          "number": "4.12.5.1.12"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-context-2d-ispointinstroke-path",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-ispointinstroke-path",
+        "linkingText": [
+          "isPointInStroke(path, x, y)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CanvasDrawPath"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "drawing-paths-to-the-canvas",
+          "href": "https://html.spec.whatwg.org/multipage/canvas.html#drawing-paths-to-the-canvas",
+          "title": "Drawing paths to the canvas",
+          "number": "4.12.5.1.12"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

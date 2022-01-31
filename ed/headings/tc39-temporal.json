@@ -1,0 +1,4134 @@
+{
+  "spec": {
+    "title": "Temporal proposal",
+    "url": "https://tc39.es/proposal-temporal/"
+  },
+  "headings": [
+    {
+      "id": "sec-temporal-objects",
+      "title": "The Temporal Object",
+      "level": 1,
+      "number": "1"
+    },
+    {
+      "id": "sec-value-properties-of-the-temporal-object",
+      "title": "Value Properties of the Temporal Object",
+      "level": 2,
+      "number": "1.1"
+    },
+    {
+      "id": "sec-temporal-@@tostringtag",
+      "title": "Temporal [ @@toStringTag ]",
+      "level": 3,
+      "number": "1.1.1"
+    },
+    {
+      "id": "sec-constructor-properties-of-the-temporal-object",
+      "title": "Constructor Properties of the Temporal Object",
+      "level": 2,
+      "number": "1.2"
+    },
+    {
+      "id": "sec-temporal-instant",
+      "title": "Temporal.Instant ( . . . )",
+      "level": 3,
+      "number": "1.2.1"
+    },
+    {
+      "id": "sec-temporal-plaindatetime",
+      "title": "Temporal.PlainDateTime ( . . . )",
+      "level": 3,
+      "number": "1.2.2"
+    },
+    {
+      "id": "sec-temporal-plaindate",
+      "title": "Temporal.PlainDate ( . . . )",
+      "level": 3,
+      "number": "1.2.3"
+    },
+    {
+      "id": "sec-temporal-plaintime",
+      "title": "Temporal.PlainTime ( . . . )",
+      "level": 3,
+      "number": "1.2.4"
+    },
+    {
+      "id": "sec-temporal-plainyearmonth",
+      "title": "Temporal.PlainYearMonth ( . . . )",
+      "level": 3,
+      "number": "1.2.5"
+    },
+    {
+      "id": "sec-temporal-plainmonthday",
+      "title": "Temporal.PlainMonthDay ( . . . )",
+      "level": 3,
+      "number": "1.2.6"
+    },
+    {
+      "id": "sec-temporal-timezone",
+      "title": "Temporal.TimeZone ( . . . )",
+      "level": 3,
+      "number": "1.2.7"
+    },
+    {
+      "id": "sec-temporal-duration",
+      "title": "Temporal.Duration ( . . . )",
+      "level": 3,
+      "number": "1.2.8"
+    },
+    {
+      "id": "sec-other-properties-of-the-temporal-object",
+      "title": "Other Properties of the Temporal Object",
+      "level": 2,
+      "number": "1.3"
+    },
+    {
+      "id": "sec-temporal-now",
+      "title": "Temporal.Now",
+      "level": 3,
+      "number": "1.3.1"
+    },
+    {
+      "id": "sec-temporal-now-object",
+      "title": "The Temporal.Now Object",
+      "level": 1,
+      "number": "2"
+    },
+    {
+      "id": "sec-value-properties-of-the-temporal-now-object",
+      "title": "Value Properties of the Temporal.Now Object",
+      "level": 2,
+      "number": "2.1"
+    },
+    {
+      "id": "sec-temporal-now-@@tostringtag",
+      "title": "Temporal.Now [ @@toStringTag ]",
+      "level": 3,
+      "number": "2.1.1"
+    },
+    {
+      "id": "sec-function-properties-of-the-temporal-now-object",
+      "title": "Function Properties of the Temporal.Now Object",
+      "level": 2,
+      "number": "2.2"
+    },
+    {
+      "id": "sec-temporal.now.timezone",
+      "title": "Temporal.Now.timeZone ( )",
+      "level": 3,
+      "number": "2.2.1"
+    },
+    {
+      "id": "sec-temporal.now.instant",
+      "title": "Temporal.Now.instant ( )",
+      "level": 3,
+      "number": "2.2.2"
+    },
+    {
+      "id": "sec-temporal.now.plaindatetime",
+      "title": "Temporal.Now.plainDateTime ( calendar [ , temporalTimeZoneLike ] )",
+      "level": 3,
+      "number": "2.2.3"
+    },
+    {
+      "id": "sec-temporal.now.plaindatetimeiso",
+      "title": "Temporal.Now.plainDateTimeISO ( [ temporalTimeZoneLike ] )",
+      "level": 3,
+      "number": "2.2.4"
+    },
+    {
+      "id": "sec-temporal.now.zoneddatetime",
+      "title": "Temporal.Now.zonedDateTime ( calendar [ , temporalTimeZoneLike ] )",
+      "level": 3,
+      "number": "2.2.5"
+    },
+    {
+      "id": "sec-temporal.now.zoneddatetimeiso",
+      "title": "Temporal.Now.zonedDateTimeISO ( [ temporalTimeZoneLike ] )",
+      "level": 3,
+      "number": "2.2.6"
+    },
+    {
+      "id": "sec-temporal.now.plaindate",
+      "title": "Temporal.Now.plainDate ( calendar [ , temporalTimeZoneLike ] )",
+      "level": 3,
+      "number": "2.2.7"
+    },
+    {
+      "id": "sec-temporal.now.plaindateiso",
+      "title": "Temporal.Now.plainDateISO ( [ temporalTimeZoneLike ] )",
+      "level": 3,
+      "number": "2.2.8"
+    },
+    {
+      "id": "sec-temporal.now.plaintimeiso",
+      "title": "Temporal.Now.plainTimeISO ( [ temporalTimeZoneLike ] )",
+      "level": 3,
+      "number": "2.2.9"
+    },
+    {
+      "id": "sec-temporal-now-abstract-ops",
+      "title": "Abstract operations",
+      "level": 2,
+      "number": "2.3"
+    },
+    {
+      "id": "sec-temporal-systemtimezone",
+      "title": "SystemTimeZone ( )",
+      "level": 3,
+      "number": "2.3.1"
+    },
+    {
+      "id": "sec-temporal-systemutcepochnanoseconds",
+      "title": "SystemUTCEpochNanoseconds ( )",
+      "level": 3,
+      "number": "2.3.2"
+    },
+    {
+      "id": "sec-temporal-systeminstant",
+      "title": "SystemInstant ( )",
+      "level": 3,
+      "number": "2.3.3"
+    },
+    {
+      "id": "sec-temporal-systemdatetime",
+      "title": "SystemDateTime ( temporalTimeZoneLike, calendarLike )",
+      "level": 3,
+      "number": "2.3.4"
+    },
+    {
+      "id": "sec-temporal-systemzoneddatetime",
+      "title": "SystemZonedDateTime ( temporalTimeZoneLike, calendarLike )",
+      "level": 3,
+      "number": "2.3.5"
+    },
+    {
+      "id": "sec-temporal-plaindate-objects",
+      "title": "Temporal.PlainDate Objects",
+      "level": 1,
+      "number": "3"
+    },
+    {
+      "id": "sec-temporal-plaindate-constructor",
+      "title": "The Temporal.PlainDate Constructor",
+      "level": 2,
+      "number": "3.1"
+    },
+    {
+      "id": "sec-temporal.plaindate",
+      "title": "Temporal.PlainDate ( isoYear, isoMonth, isoDay [ , calendarLike ] )",
+      "level": 3,
+      "number": "3.1.1"
+    },
+    {
+      "id": "sec-properties-of-the-temporal-plaindate-constructor",
+      "title": "Properties of the Temporal.PlainDate Constructor",
+      "level": 2,
+      "number": "3.2"
+    },
+    {
+      "id": "sec-temporal-plaindate-prototype",
+      "title": "Temporal.PlainDate.prototype",
+      "level": 3,
+      "number": "3.2.1"
+    },
+    {
+      "id": "sec-temporal.plaindate.from",
+      "title": "Temporal.PlainDate.from ( item [ , options ] )",
+      "level": 3,
+      "number": "3.2.2"
+    },
+    {
+      "id": "sec-temporal.plaindate.compare",
+      "title": "Temporal.PlainDate.compare ( one, two )",
+      "level": 3,
+      "number": "3.2.3"
+    },
+    {
+      "id": "sec-properties-of-the-temporal-plaindate-prototype-object",
+      "title": "Properties of the Temporal.PlainDate Prototype Object",
+      "level": 2,
+      "number": "3.3"
+    },
+    {
+      "id": "sec-temporal.plaindate.prototype.constructor",
+      "title": "Temporal.PlainDate.prototype.constructor",
+      "level": 3,
+      "number": "3.3.1"
+    },
+    {
+      "id": "sec-temporal.plaindate.prototype-@@tostringtag",
+      "title": "Temporal.PlainDate.prototype[ @@toStringTag ]",
+      "level": 3,
+      "number": "3.3.2"
+    },
+    {
+      "id": "sec-get-temporal.plaindate.prototype.calendar",
+      "title": "get Temporal.PlainDate.prototype.calendar",
+      "level": 3,
+      "number": "3.3.3"
+    },
+    {
+      "id": "sec-get-temporal.plaindate.prototype.year",
+      "title": "get Temporal.PlainDate.prototype.year",
+      "level": 3,
+      "number": "3.3.4"
+    },
+    {
+      "id": "sec-get-temporal.plaindate.prototype.month",
+      "title": "get Temporal.PlainDate.prototype.month",
+      "level": 3,
+      "number": "3.3.5"
+    },
+    {
+      "id": "sec-get-temporal.plaindate.prototype.monthCode",
+      "title": "get Temporal.PlainDate.prototype.monthCode",
+      "level": 3,
+      "number": "3.3.6"
+    },
+    {
+      "id": "sec-get-temporal.plaindate.prototype.day",
+      "title": "get Temporal.PlainDate.prototype.day",
+      "level": 3,
+      "number": "3.3.7"
+    },
+    {
+      "id": "sec-get-temporal.plaindate.prototype.dayofweek",
+      "title": "get Temporal.PlainDate.prototype.dayOfWeek",
+      "level": 3,
+      "number": "3.3.8"
+    },
+    {
+      "id": "sec-get-temporal.plaindate.prototype.dayofyear",
+      "title": "get Temporal.PlainDate.prototype.dayOfYear",
+      "level": 3,
+      "number": "3.3.9"
+    },
+    {
+      "id": "sec-get-temporal.plaindate.prototype.weekofyear",
+      "title": "get Temporal.PlainDate.prototype.weekOfYear",
+      "level": 3,
+      "number": "3.3.10"
+    },
+    {
+      "id": "sec-get-temporal.plaindate.prototype.daysinweek",
+      "title": "get Temporal.PlainDate.prototype.daysInWeek",
+      "level": 3,
+      "number": "3.3.11"
+    },
+    {
+      "id": "sec-get-temporal.plaindate.prototype.daysinmonth",
+      "title": "get Temporal.PlainDate.prototype.daysInMonth",
+      "level": 3,
+      "number": "3.3.12"
+    },
+    {
+      "id": "sec-get-temporal.plaindate.prototype.daysinyear",
+      "title": "get Temporal.PlainDate.prototype.daysInYear",
+      "level": 3,
+      "number": "3.3.13"
+    },
+    {
+      "id": "sec-get-temporal.plaindate.prototype.monthsinyear",
+      "title": "get Temporal.PlainDate.prototype.monthsInYear",
+      "level": 3,
+      "number": "3.3.14"
+    },
+    {
+      "id": "sec-get-temporal.plaindate.prototype.inleapyear",
+      "title": "get Temporal.PlainDate.prototype.inLeapYear",
+      "level": 3,
+      "number": "3.3.15"
+    },
+    {
+      "id": "sec-temporal.plaindate.prototype.toplainyearmonth",
+      "title": "Temporal.PlainDate.prototype.toPlainYearMonth ( )",
+      "level": 3,
+      "number": "3.3.16"
+    },
+    {
+      "id": "sec-temporal.plaindate.prototype.toplainmonthday",
+      "title": "Temporal.PlainDate.prototype.toPlainMonthDay ( )",
+      "level": 3,
+      "number": "3.3.17"
+    },
+    {
+      "id": "sec-temporal.plaindate.prototype.getisofields",
+      "title": "Temporal.PlainDate.prototype.getISOFields ( )",
+      "level": 3,
+      "number": "3.3.18"
+    },
+    {
+      "id": "sec-temporal.plaindate.prototype.add",
+      "title": "Temporal.PlainDate.prototype.add ( temporalDurationLike [ , options ] )",
+      "level": 3,
+      "number": "3.3.19"
+    },
+    {
+      "id": "sec-temporal.plaindate.prototype.subtract",
+      "title": "Temporal.PlainDate.prototype.subtract ( temporalDurationLike [ , options ] )",
+      "level": 3,
+      "number": "3.3.20"
+    },
+    {
+      "id": "sec-temporal.plaindate.prototype.with",
+      "title": "Temporal.PlainDate.prototype.with ( temporalDateLike [ , options ] )",
+      "level": 3,
+      "number": "3.3.21"
+    },
+    {
+      "id": "sec-temporal.plaindate.prototype.withcalendar",
+      "title": "Temporal.PlainDate.prototype.withCalendar ( calendar )",
+      "level": 3,
+      "number": "3.3.22"
+    },
+    {
+      "id": "sec-temporal.plaindate.prototype.until",
+      "title": "Temporal.PlainDate.prototype.until ( other [ , options ] )",
+      "level": 3,
+      "number": "3.3.23"
+    },
+    {
+      "id": "sec-temporal.plaindate.prototype.since",
+      "title": "Temporal.PlainDate.prototype.since ( other [ , options ] )",
+      "level": 3,
+      "number": "3.3.24"
+    },
+    {
+      "id": "sec-temporal.plaindate.prototype.equals",
+      "title": "Temporal.PlainDate.prototype.equals ( other )",
+      "level": 3,
+      "number": "3.3.25"
+    },
+    {
+      "id": "sec-temporal.plaindate.prototype.toplaindatetime",
+      "title": "Temporal.PlainDate.prototype.toPlainDateTime ( [ temporalTime ] )",
+      "level": 3,
+      "number": "3.3.26"
+    },
+    {
+      "id": "sec-temporal.plaindate.prototype.tozoneddatetime",
+      "title": "Temporal.PlainDate.prototype.toZonedDateTime ( item )",
+      "level": 3,
+      "number": "3.3.27"
+    },
+    {
+      "id": "sec-temporal.plaindate.prototype.tostring",
+      "title": "Temporal.PlainDate.prototype.toString ( [ options ] )",
+      "level": 3,
+      "number": "3.3.28"
+    },
+    {
+      "id": "sec-temporal.plaindate.prototype.tolocalestring",
+      "title": "Temporal.PlainDate.prototype.toLocaleString ( [ locales [ , options ] ] )",
+      "level": 3,
+      "number": "3.3.29"
+    },
+    {
+      "id": "sec-temporal.plaindate.prototype.tojson",
+      "title": "Temporal.PlainDate.prototype.toJSON ( )",
+      "level": 3,
+      "number": "3.3.30"
+    },
+    {
+      "id": "sec-temporal.plaindate.prototype.valueof",
+      "title": "Temporal.PlainDate.prototype.valueOf ( )",
+      "level": 3,
+      "number": "3.3.31"
+    },
+    {
+      "id": "sec-properties-of-temporal-plaindate-instances",
+      "title": "Properties of Temporal.PlainDate Instances",
+      "level": 2,
+      "number": "3.4"
+    },
+    {
+      "id": "sec-temporal-plaindate-abstract-ops",
+      "title": "Abstract Operations for Temporal.PlainDate Objects",
+      "level": 2,
+      "number": "3.5"
+    },
+    {
+      "id": "sec-temporal-createtemporaldate",
+      "title": "CreateTemporalDate ( isoYear, isoMonth, isoDay, calendar [ , newTarget ] )",
+      "level": 3,
+      "number": "3.5.1"
+    },
+    {
+      "id": "sec-temporal-totemporaldate",
+      "title": "ToTemporalDate ( item [ , options ] )",
+      "level": 3,
+      "number": "3.5.2"
+    },
+    {
+      "id": "sec-temporal-differenceisodate",
+      "title": "DifferenceISODate ( y1, m1, d1, y2, m2, d2, largestUnit )",
+      "level": 3,
+      "number": "3.5.3"
+    },
+    {
+      "id": "sec-temporal-regulateisodate",
+      "title": "RegulateISODate ( year, month, day, overflow )",
+      "level": 3,
+      "number": "3.5.4"
+    },
+    {
+      "id": "sec-temporal-isvalidisodate",
+      "title": "IsValidISODate ( year, month, day )",
+      "level": 3,
+      "number": "3.5.5"
+    },
+    {
+      "id": "sec-temporal-balanceisodate",
+      "title": "BalanceISODate ( year, month, day )",
+      "level": 3,
+      "number": "3.5.6"
+    },
+    {
+      "id": "sec-temporal-padisoyear",
+      "title": "PadISOYear ( y )",
+      "level": 3,
+      "number": "3.5.7"
+    },
+    {
+      "id": "sec-temporal-temporaldatetostring",
+      "title": "TemporalDateToString ( temporalDate, showCalendar )",
+      "level": 3,
+      "number": "3.5.8"
+    },
+    {
+      "id": "sec-temporal-addisodate",
+      "title": "AddISODate ( year, month, day, years, months, weeks, days, overflow )",
+      "level": 3,
+      "number": "3.5.9"
+    },
+    {
+      "id": "sec-temporal-compareisodate",
+      "title": "CompareISODate ( y1, m1, d1, y2, m2, d2 )",
+      "level": 3,
+      "number": "3.5.10"
+    },
+    {
+      "id": "sec-temporal-plaintime-objects",
+      "title": "Temporal.PlainTime Objects",
+      "level": 1,
+      "number": "4"
+    },
+    {
+      "id": "sec-temporal-plaintime-constructor",
+      "title": "The Temporal.PlainTime Constructor",
+      "level": 2,
+      "number": "4.1"
+    },
+    {
+      "id": "sec-temporal.plaintime",
+      "title": "Temporal.PlainTime ( [ hour [ , minute [ , second [ , millisecond [ , microsecond [ , nanosecond ] ] ] ] ] ] )",
+      "level": 3,
+      "number": "4.1.1"
+    },
+    {
+      "id": "sec-properties-of-the-temporal-plaintime-constructor",
+      "title": "Properties of the Temporal.PlainTime Constructor",
+      "level": 2,
+      "number": "4.2"
+    },
+    {
+      "id": "sec-temporal-plaintime-prototype",
+      "title": "Temporal.PlainTime.prototype",
+      "level": 3,
+      "number": "4.2.1"
+    },
+    {
+      "id": "sec-temporal.plaintime.from",
+      "title": "Temporal.PlainTime.from ( item [ , options ] )",
+      "level": 3,
+      "number": "4.2.2"
+    },
+    {
+      "id": "sec-temporal.plaintime.compare",
+      "title": "Temporal.PlainTime.compare ( one, two )",
+      "level": 3,
+      "number": "4.2.3"
+    },
+    {
+      "id": "sec-properties-of-the-temporal-plaintime-prototype-object",
+      "title": "Properties of the Temporal.PlainTime Prototype Object",
+      "level": 2,
+      "number": "4.3"
+    },
+    {
+      "id": "sec-temporal.plaintime.prototype.constructor",
+      "title": "Temporal.PlainTime.prototype.constructor",
+      "level": 3,
+      "number": "4.3.1"
+    },
+    {
+      "id": "sec-temporal.plaintime.prototype-@@tostringtag",
+      "title": "Temporal.PlainTime.prototype[ @@toStringTag ]",
+      "level": 3,
+      "number": "4.3.2"
+    },
+    {
+      "id": "sec-get-temporal.plaintime.prototype.calendar",
+      "title": "get Temporal.PlainTime.prototype.calendar",
+      "level": 3,
+      "number": "4.3.3"
+    },
+    {
+      "id": "sec-get-temporal.plaintime.prototype.hour",
+      "title": "get Temporal.PlainTime.prototype.hour",
+      "level": 3,
+      "number": "4.3.4"
+    },
+    {
+      "id": "sec-get-temporal.plaintime.prototype.minute",
+      "title": "get Temporal.PlainTime.prototype.minute",
+      "level": 3,
+      "number": "4.3.5"
+    },
+    {
+      "id": "sec-get-temporal.plaintime.prototype.second",
+      "title": "get Temporal.PlainTime.prototype.second",
+      "level": 3,
+      "number": "4.3.6"
+    },
+    {
+      "id": "sec-get-temporal.plaintime.prototype.millisecond",
+      "title": "get Temporal.PlainTime.prototype.millisecond",
+      "level": 3,
+      "number": "4.3.7"
+    },
+    {
+      "id": "sec-get-temporal.plaintime.prototype.microsecond",
+      "title": "get Temporal.PlainTime.prototype.microsecond",
+      "level": 3,
+      "number": "4.3.8"
+    },
+    {
+      "id": "sec-get-temporal.plaintime.prototype.nanosecond",
+      "title": "get Temporal.PlainTime.prototype.nanosecond",
+      "level": 3,
+      "number": "4.3.9"
+    },
+    {
+      "id": "sec-temporal.plaintime.prototype.add",
+      "title": "Temporal.PlainTime.prototype.add ( temporalDurationLike )",
+      "level": 3,
+      "number": "4.3.10"
+    },
+    {
+      "id": "sec-temporal.plaintime.prototype.subtract",
+      "title": "Temporal.PlainTime.prototype.subtract ( temporalDurationLike )",
+      "level": 3,
+      "number": "4.3.11"
+    },
+    {
+      "id": "sec-temporal.plaintime.prototype.with",
+      "title": "Temporal.PlainTime.prototype.with ( temporalTimeLike [ , options ] )",
+      "level": 3,
+      "number": "4.3.12"
+    },
+    {
+      "id": "sec-temporal.plaintime.prototype.until",
+      "title": "Temporal.PlainTime.prototype.until ( other [ , options ] )",
+      "level": 3,
+      "number": "4.3.13"
+    },
+    {
+      "id": "sec-temporal.plaintime.prototype.since",
+      "title": "Temporal.PlainTime.prototype.since ( other [ , options ] )",
+      "level": 3,
+      "number": "4.3.14"
+    },
+    {
+      "id": "sec-temporal.plaintime.prototype.round",
+      "title": "Temporal.PlainTime.prototype.round ( roundTo )",
+      "level": 3,
+      "number": "4.3.15"
+    },
+    {
+      "id": "sec-temporal.plaintime.prototype.equals",
+      "title": "Temporal.PlainTime.prototype.equals ( other )",
+      "level": 3,
+      "number": "4.3.16"
+    },
+    {
+      "id": "sec-temporal.plaintime.prototype.toplaindatetime",
+      "title": "Temporal.PlainTime.prototype.toPlainDateTime ( temporalDate )",
+      "level": 3,
+      "number": "4.3.17"
+    },
+    {
+      "id": "sec-temporal.plaintime.prototype.tozoneddatetime",
+      "title": "Temporal.PlainTime.prototype.toZonedDateTime ( item )",
+      "level": 3,
+      "number": "4.3.18"
+    },
+    {
+      "id": "sec-temporal.plaintime.prototype.getisofields",
+      "title": "Temporal.PlainTime.prototype.getISOFields ( )",
+      "level": 3,
+      "number": "4.3.19"
+    },
+    {
+      "id": "sec-temporal.plaintime.prototype.tostring",
+      "title": "Temporal.PlainTime.prototype.toString ( [ options ] )",
+      "level": 3,
+      "number": "4.3.20"
+    },
+    {
+      "id": "sec-temporal.plaintime.prototype.tolocalestring",
+      "title": "Temporal.PlainTime.prototype.toLocaleString ( [ locales [ , options ] ] )",
+      "level": 3,
+      "number": "4.3.21"
+    },
+    {
+      "id": "sec-temporal.plaintime.prototype.tojson",
+      "title": "Temporal.PlainTime.prototype.toJSON ( )",
+      "level": 3,
+      "number": "4.3.22"
+    },
+    {
+      "id": "sec-temporal.plaintime.prototype.valueof",
+      "title": "Temporal.PlainTime.prototype.valueOf ( )",
+      "level": 3,
+      "number": "4.3.23"
+    },
+    {
+      "id": "sec-properties-of-temporal-plaintime-instances",
+      "title": "Properties of Temporal.PlainTime Instances",
+      "level": 2,
+      "number": "4.4"
+    },
+    {
+      "id": "sec-temporal-plaintime-abstract-ops",
+      "title": "Abstract operations",
+      "level": 2,
+      "number": "4.5"
+    },
+    {
+      "id": "sec-temporal-differencetime",
+      "title": "DifferenceTime ( h1, min1, s1, ms1, mus1, ns1, h2, min2, s2, ms2, mus2, ns2 )",
+      "level": 3,
+      "number": "4.5.1"
+    },
+    {
+      "id": "sec-temporal-totemporaltime",
+      "title": "ToTemporalTime ( item [ , overflow ] )",
+      "level": 3,
+      "number": "4.5.2"
+    },
+    {
+      "id": "sec-temporal-topartialtime",
+      "title": "ToPartialTime ( temporalTimeLike )",
+      "level": 3,
+      "number": "4.5.3"
+    },
+    {
+      "id": "sec-temporal-regulatetime",
+      "title": "RegulateTime ( hour, minute, second, millisecond, microsecond, nanosecond, overflow )",
+      "level": 3,
+      "number": "4.5.4"
+    },
+    {
+      "id": "sec-temporal-isvalidtime",
+      "title": "IsValidTime ( hour, minute, second, millisecond, microsecond, nanosecond )",
+      "level": 3,
+      "number": "4.5.5"
+    },
+    {
+      "id": "sec-temporal-balancetime",
+      "title": "BalanceTime ( hour, minute, second, millisecond, microsecond, nanosecond )",
+      "level": 3,
+      "number": "4.5.6"
+    },
+    {
+      "id": "sec-temporal-constraintime",
+      "title": "ConstrainTime ( hour, minute, second, millisecond, microsecond, nanosecond )",
+      "level": 3,
+      "number": "4.5.7"
+    },
+    {
+      "id": "sec-temporal-createtemporaltime",
+      "title": "CreateTemporalTime ( hour, minute, second, millisecond, microsecond, nanosecond [ , newTarget ] )",
+      "level": 3,
+      "number": "4.5.8"
+    },
+    {
+      "id": "sec-temporal-totemporaltimerecord",
+      "title": "ToTemporalTimeRecord ( temporalTimeLike )",
+      "level": 3,
+      "number": "4.5.9"
+    },
+    {
+      "id": "sec-temporal-temporaltimetostring",
+      "title": "TemporalTimeToString ( hour, minute, second, millisecond, microsecond, nanosecond, precision )",
+      "level": 3,
+      "number": "4.5.10"
+    },
+    {
+      "id": "sec-temporal-comparetemporaltime",
+      "title": "CompareTemporalTime ( h1, min1, s1, ms1, mus1, ns1, h2, min2, s2, ms2, mus2, ns2 )",
+      "level": 3,
+      "number": "4.5.11"
+    },
+    {
+      "id": "sec-temporal-addtime",
+      "title": "AddTime ( hour, minute, second, millisecond, microsecond, nanosecond, hours, minutes, seconds, milliseconds, microseconds, nanoseconds )",
+      "level": 3,
+      "number": "4.5.12"
+    },
+    {
+      "id": "sec-temporal-roundtime",
+      "title": "RoundTime ( hour, minute, second, millisecond, microsecond, nanosecond, increment, unit, roundingMode [ , dayLengthNs ] )",
+      "level": 3,
+      "number": "4.5.13"
+    },
+    {
+      "id": "sec-temporal-plaindatetime-objects",
+      "title": "Temporal.PlainDateTime Objects",
+      "level": 1,
+      "number": "5"
+    },
+    {
+      "id": "sec-temporal-plaindatetime-constructor",
+      "title": "The Temporal.PlainDateTime Constructor",
+      "level": 2,
+      "number": "5.1"
+    },
+    {
+      "id": "sec-temporal.plaindatetime",
+      "title": "Temporal.PlainDateTime ( isoYear, isoMonth, isoDay [ , hour [ , minute [ , second [ , millisecond [ , microsecond [ , nanosecond [ , calendarLike ] ] ] ] ] ] ] )",
+      "level": 3,
+      "number": "5.1.1"
+    },
+    {
+      "id": "sec-properties-of-the-temporal-plaindatetime-constructor",
+      "title": "Properties of the Temporal.PlainDateTime Constructor",
+      "level": 2,
+      "number": "5.2"
+    },
+    {
+      "id": "sec-temporal-plaindatetime-prototype",
+      "title": "Temporal.PlainDateTime.prototype",
+      "level": 3,
+      "number": "5.2.1"
+    },
+    {
+      "id": "sec-temporal.plaindatetime.from",
+      "title": "Temporal.PlainDateTime.from ( item [ , options ] )",
+      "level": 3,
+      "number": "5.2.2"
+    },
+    {
+      "id": "sec-temporal.plaindatetime.compare",
+      "title": "Temporal.PlainDateTime.compare ( one, two )",
+      "level": 3,
+      "number": "5.2.3"
+    },
+    {
+      "id": "sec-properties-of-the-temporal-plaindatetime-prototype-object",
+      "title": "Properties of the Temporal.PlainDateTime Prototype Object",
+      "level": 2,
+      "number": "5.3"
+    },
+    {
+      "id": "sec-temporal.plaindatetime.prototype.constructor",
+      "title": "Temporal.PlainDateTime.prototype.constructor",
+      "level": 3,
+      "number": "5.3.1"
+    },
+    {
+      "id": "sec-temporal.plaindatetime.prototype-@@tostringtag",
+      "title": "Temporal.PlainDateTime.prototype[ @@toStringTag ]",
+      "level": 3,
+      "number": "5.3.2"
+    },
+    {
+      "id": "sec-get-temporal.plaindatetime.prototype.calendar",
+      "title": "get Temporal.PlainDateTime.prototype.calendar",
+      "level": 3,
+      "number": "5.3.3"
+    },
+    {
+      "id": "sec-get-temporal.plaindatetime.prototype.year",
+      "title": "get Temporal.PlainDateTime.prototype.year",
+      "level": 3,
+      "number": "5.3.4"
+    },
+    {
+      "id": "sec-get-temporal.plaindatetime.prototype.month",
+      "title": "get Temporal.PlainDateTime.prototype.month",
+      "level": 3,
+      "number": "5.3.5"
+    },
+    {
+      "id": "sec-get-temporal.plaindatetime.prototype.monthcode",
+      "title": "get Temporal.PlainDateTime.prototype.monthCode",
+      "level": 3,
+      "number": "5.3.6"
+    },
+    {
+      "id": "sec-get-temporal.plaindatetime.prototype.day",
+      "title": "get Temporal.PlainDateTime.prototype.day",
+      "level": 3,
+      "number": "5.3.7"
+    },
+    {
+      "id": "sec-get-temporal.plaindatetime.prototype.hour",
+      "title": "get Temporal.PlainDateTime.prototype.hour",
+      "level": 3,
+      "number": "5.3.8"
+    },
+    {
+      "id": "sec-get-temporal.plaindatetime.prototype.minute",
+      "title": "get Temporal.PlainDateTime.prototype.minute",
+      "level": 3,
+      "number": "5.3.9"
+    },
+    {
+      "id": "sec-get-temporal.plaindatetime.prototype.second",
+      "title": "get Temporal.PlainDateTime.prototype.second",
+      "level": 3,
+      "number": "5.3.10"
+    },
+    {
+      "id": "sec-get-temporal.plaindatetime.prototype.millisecond",
+      "title": "get Temporal.PlainDateTime.prototype.millisecond",
+      "level": 3,
+      "number": "5.3.11"
+    },
+    {
+      "id": "sec-get-temporal.plaindatetime.prototype.microsecond",
+      "title": "get Temporal.PlainDateTime.prototype.microsecond",
+      "level": 3,
+      "number": "5.3.12"
+    },
+    {
+      "id": "sec-get-temporal.plaindatetime.prototype.nanosecond",
+      "title": "get Temporal.PlainDateTime.prototype.nanosecond",
+      "level": 3,
+      "number": "5.3.13"
+    },
+    {
+      "id": "sec-get-temporal.plaindatetime.prototype.dayofweek",
+      "title": "get Temporal.PlainDateTime.prototype.dayOfWeek",
+      "level": 3,
+      "number": "5.3.14"
+    },
+    {
+      "id": "sec-get-temporal.plaindatetime.prototype.dayofyear",
+      "title": "get Temporal.PlainDateTime.prototype.dayOfYear",
+      "level": 3,
+      "number": "5.3.15"
+    },
+    {
+      "id": "sec-get-temporal.plaindatetime.prototype.weekofyear",
+      "title": "get Temporal.PlainDateTime.prototype.weekOfYear",
+      "level": 3,
+      "number": "5.3.16"
+    },
+    {
+      "id": "sec-get-temporal.plaindatetime.prototype.daysinweek",
+      "title": "get Temporal.PlainDateTime.prototype.daysInWeek",
+      "level": 3,
+      "number": "5.3.17"
+    },
+    {
+      "id": "sec-get-temporal.plaindatetime.prototype.daysinmonth",
+      "title": "get Temporal.PlainDateTime.prototype.daysInMonth",
+      "level": 3,
+      "number": "5.3.18"
+    },
+    {
+      "id": "sec-get-temporal.plaindatetime.prototype.daysinyear",
+      "title": "get Temporal.PlainDateTime.prototype.daysInYear",
+      "level": 3,
+      "number": "5.3.19"
+    },
+    {
+      "id": "sec-get-temporal.plaindatetime.prototype.monthsinyear",
+      "title": "get Temporal.PlainDateTime.prototype.monthsInYear",
+      "level": 3,
+      "number": "5.3.20"
+    },
+    {
+      "id": "sec-get-temporal.plaindatetime.prototype.inleapyear",
+      "title": "get Temporal.PlainDateTime.prototype.inLeapYear",
+      "level": 3,
+      "number": "5.3.21"
+    },
+    {
+      "id": "sec-temporal.plaindatetime.prototype.with",
+      "title": "Temporal.PlainDateTime.prototype.with ( temporalDateTimeLike [ , options ] )",
+      "level": 3,
+      "number": "5.3.22"
+    },
+    {
+      "id": "sec-temporal.plaindatetime.prototype.withplaintime",
+      "title": "Temporal.PlainDateTime.prototype.withPlainTime ( [ plainTimeLike ] )",
+      "level": 3,
+      "number": "5.3.23"
+    },
+    {
+      "id": "sec-temporal.plaindatetime.prototype.withplaindate",
+      "title": "Temporal.PlainDateTime.prototype.withPlainDate ( plainDateLike )",
+      "level": 3,
+      "number": "5.3.24"
+    },
+    {
+      "id": "sec-temporal.plaindatetime.prototype.withcalendar",
+      "title": "Temporal.PlainDateTime.prototype.withCalendar ( calendar )",
+      "level": 3,
+      "number": "5.3.25"
+    },
+    {
+      "id": "sec-temporal.plaindatetime.prototype.add",
+      "title": "Temporal.PlainDateTime.prototype.add ( temporalDurationLike [ , options ] )",
+      "level": 3,
+      "number": "5.3.26"
+    },
+    {
+      "id": "sec-temporal.plaindatetime.prototype.subtract",
+      "title": "Temporal.PlainDateTime.prototype.subtract ( temporalDurationLike [ , options ] )",
+      "level": 3,
+      "number": "5.3.27"
+    },
+    {
+      "id": "sec-temporal.plaindatetime.prototype.until",
+      "title": "Temporal.PlainDateTime.prototype.until ( other [ , options ] )",
+      "level": 3,
+      "number": "5.3.28"
+    },
+    {
+      "id": "sec-temporal.plaindatetime.prototype.since",
+      "title": "Temporal.PlainDateTime.prototype.since ( other [ , options ] )",
+      "level": 3,
+      "number": "5.3.29"
+    },
+    {
+      "id": "sec-temporal.plaindatetime.prototype.round",
+      "title": "Temporal.PlainDateTime.prototype.round ( roundTo )",
+      "level": 3,
+      "number": "5.3.30"
+    },
+    {
+      "id": "sec-temporal.plaindatetime.prototype.equals",
+      "title": "Temporal.PlainDateTime.prototype.equals ( other )",
+      "level": 3,
+      "number": "5.3.31"
+    },
+    {
+      "id": "sec-temporal.plaindatetime.prototype.tostring",
+      "title": "Temporal.PlainDateTime.prototype.toString ( [ options ] )",
+      "level": 3,
+      "number": "5.3.32"
+    },
+    {
+      "id": "sec-temporal.plaindatetime.prototype.tolocalestring",
+      "title": "Temporal.PlainDateTime.prototype.toLocaleString ( [ locales [ , options ] ] )",
+      "level": 3,
+      "number": "5.3.33"
+    },
+    {
+      "id": "sec-temporal.plaindatetime.prototype.tojson",
+      "title": "Temporal.PlainDateTime.prototype.toJSON ( )",
+      "level": 3,
+      "number": "5.3.34"
+    },
+    {
+      "id": "sec-temporal.plaindatetime.prototype.valueof",
+      "title": "Temporal.PlainDateTime.prototype.valueOf ( )",
+      "level": 3,
+      "number": "5.3.35"
+    },
+    {
+      "id": "sec-temporal.plaindatetime.prototype.tozoneddatetime",
+      "title": "Temporal.PlainDateTime.prototype.toZonedDateTime ( temporalTimeZoneLike [ , options ] )",
+      "level": 3,
+      "number": "5.3.36"
+    },
+    {
+      "id": "sec-temporal.plaindatetime.prototype.toplaindate",
+      "title": "Temporal.PlainDateTime.prototype.toPlainDate ( )",
+      "level": 3,
+      "number": "5.3.37"
+    },
+    {
+      "id": "sec-temporal.plaindatetime.prototype.toplainyearmonth",
+      "title": "Temporal.PlainDateTime.prototype.toPlainYearMonth ( )",
+      "level": 3,
+      "number": "5.3.38"
+    },
+    {
+      "id": "sec-temporal.plaindatetime.prototype.toplainmonthday",
+      "title": "Temporal.PlainDateTime.prototype.toPlainMonthDay ( )",
+      "level": 3,
+      "number": "5.3.39"
+    },
+    {
+      "id": "sec-temporal.plaindatetime.prototype.toplaintime",
+      "title": "Temporal.PlainDateTime.prototype.toPlainTime ( )",
+      "level": 3,
+      "number": "5.3.40"
+    },
+    {
+      "id": "sec-temporal.plaindatetime.prototype.getisofields",
+      "title": "Temporal.PlainDateTime.prototype.getISOFields ( )",
+      "level": 3,
+      "number": "5.3.41"
+    },
+    {
+      "id": "sec-properties-of-temporal-plaindatetime-instances",
+      "title": "Properties of Temporal.PlainDateTime Instances",
+      "level": 2,
+      "number": "5.4"
+    },
+    {
+      "id": "sec-temporal-plaindatetime-abstract-ops",
+      "title": "Abstract operations",
+      "level": 2,
+      "number": "5.5"
+    },
+    {
+      "id": "sec-temporal-getepochfromisoparts",
+      "title": "GetEpochFromISOParts ( year, month, day, hour, minute, second, millisecond, microsecond, nanosecond )",
+      "level": 3,
+      "number": "5.5.1"
+    },
+    {
+      "id": "sec-temporal-isodatetimewithinlimits",
+      "title": "ISODateTimeWithinLimits ( year, month, day, hour, minute, second, millisecond, microsecond, nanosecond )",
+      "level": 3,
+      "number": "5.5.2"
+    },
+    {
+      "id": "sec-temporal-interprettemporaldatetimefields",
+      "title": "InterpretTemporalDateTimeFields ( calendar, fields, options )",
+      "level": 3,
+      "number": "5.5.3"
+    },
+    {
+      "id": "sec-temporal-totemporaldatetime",
+      "title": "ToTemporalDateTime ( item [ , options ] )",
+      "level": 3,
+      "number": "5.5.4"
+    },
+    {
+      "id": "sec-temporal-balanceisodatetime",
+      "title": "BalanceISODateTime ( year, month, day, hour, minute, second, millisecond, microsecond, nanosecond )",
+      "level": 3,
+      "number": "5.5.5"
+    },
+    {
+      "id": "sec-temporal-createtemporaldatetime",
+      "title": "CreateTemporalDateTime ( isoYear, isoMonth, isoDay, hour, minute, second, millisecond, microsecond, nanosecond, calendar [ , newTarget ] )",
+      "level": 3,
+      "number": "5.5.6"
+    },
+    {
+      "id": "sec-temporal-temporaldatetimetostring",
+      "title": "TemporalDateTimeToString ( isoYear, isoMonth, isoDay, hour, minute, second, millisecond, microsecond, nanosecond, calendar, precision, showCalendar )",
+      "level": 3,
+      "number": "5.5.7"
+    },
+    {
+      "id": "sec-temporal-compareisodatetime",
+      "title": "CompareISODateTime ( y1, mon1, d1, h1, min1, s1, ms1, mus1, ns1, y2, mon2, d2, h2, min2, s2, ms2, mus2, ns2 )",
+      "level": 3,
+      "number": "5.5.8"
+    },
+    {
+      "id": "sec-temporal-adddatetime",
+      "title": "AddDateTime ( year, month, day, hour, minute, second, millisecond, microsecond, nanosecond, calendar, years, months, weeks, days, hours, minutes, seconds, milliseconds, microseconds, nanoseconds, options )",
+      "level": 3,
+      "number": "5.5.9"
+    },
+    {
+      "id": "sec-temporal-roundisodatetime",
+      "title": "RoundISODateTime ( year, month, day, hour, minute, second, millisecond, microsecond, nanosecond, increment, unit, roundingMode [ , dayLength ] )",
+      "level": 3,
+      "number": "5.5.10"
+    },
+    {
+      "id": "sec-temporal-differenceisodatetime",
+      "title": "DifferenceISODateTime ( y1, mon1, d1, h1, min1, s1, ms1, mus1, ns1, y2, mon2, d2, h2, min2, s2, ms2, mus2, ns2, calendar, largestUnit [ , options ] )",
+      "level": 3,
+      "number": "5.5.11"
+    },
+    {
+      "id": "sec-temporal-zoneddatetime-objects",
+      "title": "Temporal.ZonedDateTime Objects",
+      "level": 1,
+      "number": "6"
+    },
+    {
+      "id": "sec-temporal-zoneddatetime-constructor",
+      "title": "The Temporal.ZonedDateTime Constructor",
+      "level": 2,
+      "number": "6.1"
+    },
+    {
+      "id": "sec-temporal.zoneddatetime",
+      "title": "Temporal.ZonedDateTime ( epochNanoseconds, timeZoneLike [ , calendarLike ] )",
+      "level": 3,
+      "number": "6.1.1"
+    },
+    {
+      "id": "sec-properties-of-the-temporal-zoneddatetime-constructor",
+      "title": "Properties of the Temporal.ZonedDateTime Constructor",
+      "level": 2,
+      "number": "6.2"
+    },
+    {
+      "id": "sec-temporal-zoneddatetime-prototype",
+      "title": "Temporal.ZonedDateTime.prototype",
+      "level": 3,
+      "number": "6.2.1"
+    },
+    {
+      "id": "sec-temporal.zoneddatetime.from",
+      "title": "Temporal.ZonedDateTime.from ( item [ , options ] )",
+      "level": 3,
+      "number": "6.2.2"
+    },
+    {
+      "id": "sec-temporal.zoneddatetime.compare",
+      "title": "Temporal.ZonedDateTime.compare ( one, two )",
+      "level": 3,
+      "number": "6.2.3"
+    },
+    {
+      "id": "sec-properties-of-the-temporal-zoneddatetime-prototype-object",
+      "title": "Properties of the Temporal.ZonedDateTime Prototype Object",
+      "level": 2,
+      "number": "6.3"
+    },
+    {
+      "id": "sec-temporal.zoneddatetime.prototype.constructor",
+      "title": "Temporal.ZonedDateTime.prototype.constructor",
+      "level": 3,
+      "number": "6.3.1"
+    },
+    {
+      "id": "sec-temporal.zoneddatetime.prototype-@@tostringtag",
+      "title": "Temporal.ZonedDateTime.prototype[ @@toStringTag ]",
+      "level": 3,
+      "number": "6.3.2"
+    },
+    {
+      "id": "sec-get-temporal.zoneddatetime.prototype.calendar",
+      "title": "get Temporal.ZonedDateTime.prototype.calendar",
+      "level": 3,
+      "number": "6.3.3"
+    },
+    {
+      "id": "sec-get-temporal.zoneddatetime.prototype.timezone",
+      "title": "get Temporal.ZonedDateTime.prototype.timeZone",
+      "level": 3,
+      "number": "6.3.4"
+    },
+    {
+      "id": "sec-get-temporal.zoneddatetime.prototype.year",
+      "title": "get Temporal.ZonedDateTime.prototype.year",
+      "level": 3,
+      "number": "6.3.5"
+    },
+    {
+      "id": "sec-get-temporal.zoneddatetime.prototype.month",
+      "title": "get Temporal.ZonedDateTime.prototype.month",
+      "level": 3,
+      "number": "6.3.6"
+    },
+    {
+      "id": "sec-get-temporal.zoneddatetime.prototype.monthcode",
+      "title": "get Temporal.ZonedDateTime.prototype.monthCode",
+      "level": 3,
+      "number": "6.3.7"
+    },
+    {
+      "id": "sec-get-temporal.zoneddatetime.prototype.day",
+      "title": "get Temporal.ZonedDateTime.prototype.day",
+      "level": 3,
+      "number": "6.3.8"
+    },
+    {
+      "id": "sec-get-temporal.zoneddatetime.prototype.hour",
+      "title": "get Temporal.ZonedDateTime.prototype.hour",
+      "level": 3,
+      "number": "6.3.9"
+    },
+    {
+      "id": "sec-get-temporal.zoneddatetime.prototype.minute",
+      "title": "get Temporal.ZonedDateTime.prototype.minute",
+      "level": 3,
+      "number": "6.3.10"
+    },
+    {
+      "id": "sec-get-temporal.zoneddatetime.prototype.second",
+      "title": "get Temporal.ZonedDateTime.prototype.second",
+      "level": 3,
+      "number": "6.3.11"
+    },
+    {
+      "id": "sec-get-temporal.zoneddatetime.prototype.millisecond",
+      "title": "get Temporal.ZonedDateTime.prototype.millisecond",
+      "level": 3,
+      "number": "6.3.12"
+    },
+    {
+      "id": "sec-get-temporal.zoneddatetime.prototype.microsecond",
+      "title": "get Temporal.ZonedDateTime.prototype.microsecond",
+      "level": 3,
+      "number": "6.3.13"
+    },
+    {
+      "id": "sec-get-temporal.zoneddatetime.prototype.nanosecond",
+      "title": "get Temporal.ZonedDateTime.prototype.nanosecond",
+      "level": 3,
+      "number": "6.3.14"
+    },
+    {
+      "id": "sec-get-temporal.zoneddatetime.prototype.epochseconds",
+      "title": "get Temporal.ZonedDateTime.prototype.epochSeconds",
+      "level": 3,
+      "number": "6.3.15"
+    },
+    {
+      "id": "sec-get-temporal.zoneddatetime.prototype.epochmilliseconds",
+      "title": "get Temporal.ZonedDateTime.prototype.epochMilliseconds",
+      "level": 3,
+      "number": "6.3.16"
+    },
+    {
+      "id": "sec-get-temporal.zoneddatetime.prototype.epochmicroseconds",
+      "title": "get Temporal.ZonedDateTime.prototype.epochMicroseconds",
+      "level": 3,
+      "number": "6.3.17"
+    },
+    {
+      "id": "sec-get-temporal.zoneddatetime.prototype.epochnanoseconds",
+      "title": "get Temporal.ZonedDateTime.prototype.epochNanoseconds",
+      "level": 3,
+      "number": "6.3.18"
+    },
+    {
+      "id": "sec-get-temporal.zoneddatetime.prototype.dayofweek",
+      "title": "get Temporal.ZonedDateTime.prototype.dayOfWeek",
+      "level": 3,
+      "number": "6.3.19"
+    },
+    {
+      "id": "sec-get-temporal.zoneddatetime.prototype.dayofyear",
+      "title": "get Temporal.ZonedDateTime.prototype.dayOfYear",
+      "level": 3,
+      "number": "6.3.20"
+    },
+    {
+      "id": "sec-get-temporal.zoneddatetime.prototype.weekofyear",
+      "title": "get Temporal.ZonedDateTime.prototype.weekOfYear",
+      "level": 3,
+      "number": "6.3.21"
+    },
+    {
+      "id": "sec-get-temporal.zoneddatetime.prototype.hoursinday",
+      "title": "get Temporal.ZonedDateTime.prototype.hoursInDay",
+      "level": 3,
+      "number": "6.3.22"
+    },
+    {
+      "id": "sec-get-temporal.zoneddatetime.prototype.daysinweek",
+      "title": "get Temporal.ZonedDateTime.prototype.daysInWeek",
+      "level": 3,
+      "number": "6.3.23"
+    },
+    {
+      "id": "sec-get-temporal.zoneddatetime.prototype.daysinmonth",
+      "title": "get Temporal.ZonedDateTime.prototype.daysInMonth",
+      "level": 3,
+      "number": "6.3.24"
+    },
+    {
+      "id": "sec-get-temporal.zoneddatetime.prototype.daysinyear",
+      "title": "get Temporal.ZonedDateTime.prototype.daysInYear",
+      "level": 3,
+      "number": "6.3.25"
+    },
+    {
+      "id": "sec-get-temporal.zoneddatetime.prototype.monthsinyear",
+      "title": "get Temporal.ZonedDateTime.prototype.monthsInYear",
+      "level": 3,
+      "number": "6.3.26"
+    },
+    {
+      "id": "sec-get-temporal.zoneddatetime.prototype.inleapyear",
+      "title": "get Temporal.ZonedDateTime.prototype.inLeapYear",
+      "level": 3,
+      "number": "6.3.27"
+    },
+    {
+      "id": "sec-get-temporal.zoneddatetime.prototype.offsetnanoseconds",
+      "title": "get Temporal.ZonedDateTime.prototype.offsetNanoseconds",
+      "level": 3,
+      "number": "6.3.28"
+    },
+    {
+      "id": "sec-get-temporal.zoneddatetime.prototype.offset",
+      "title": "get Temporal.ZonedDateTime.prototype.offset",
+      "level": 3,
+      "number": "6.3.29"
+    },
+    {
+      "id": "sec-temporal.zoneddatetime.prototype.with",
+      "title": "Temporal.ZonedDateTime.prototype.with ( temporalZonedDateTimeLike [ , options ] )",
+      "level": 3,
+      "number": "6.3.30"
+    },
+    {
+      "id": "sec-temporal.zoneddatetime.prototype.withplaintime",
+      "title": "Temporal.ZonedDateTime.prototype.withPlainTime ( [ plainTimeLike ] )",
+      "level": 3,
+      "number": "6.3.31"
+    },
+    {
+      "id": "sec-temporal.zoneddatetime.prototype.withplaindate",
+      "title": "Temporal.ZonedDateTime.prototype.withPlainDate ( plainDateLike )",
+      "level": 3,
+      "number": "6.3.32"
+    },
+    {
+      "id": "sec-temporal.zoneddatetime.prototype.withtimezone",
+      "title": "Temporal.ZonedDateTime.prototype.withTimeZone ( timeZoneLike )",
+      "level": 3,
+      "number": "6.3.33"
+    },
+    {
+      "id": "sec-temporal.zoneddatetime.prototype.withcalendar",
+      "title": "Temporal.ZonedDateTime.prototype.withCalendar ( calendarLike )",
+      "level": 3,
+      "number": "6.3.34"
+    },
+    {
+      "id": "sec-temporal.zoneddatetime.prototype.add",
+      "title": "Temporal.ZonedDateTime.prototype.add ( temporalDurationLike [ , options ] )",
+      "level": 3,
+      "number": "6.3.35"
+    },
+    {
+      "id": "sec-temporal.zoneddatetime.prototype.subtract",
+      "title": "Temporal.ZonedDateTime.prototype.subtract ( temporalDurationLike [ , options ] )",
+      "level": 3,
+      "number": "6.3.36"
+    },
+    {
+      "id": "sec-temporal.zoneddatetime.prototype.until",
+      "title": "Temporal.ZonedDateTime.prototype.until ( other [ , options ] )",
+      "level": 3,
+      "number": "6.3.37"
+    },
+    {
+      "id": "sec-temporal.zoneddatetime.prototype.since",
+      "title": "Temporal.ZonedDateTime.prototype.since ( other [ , options ] )",
+      "level": 3,
+      "number": "6.3.38"
+    },
+    {
+      "id": "sec-temporal.zoneddatetime.prototype.round",
+      "title": "Temporal.ZonedDateTime.prototype.round ( roundTo )",
+      "level": 3,
+      "number": "6.3.39"
+    },
+    {
+      "id": "sec-temporal.zoneddatetime.prototype.equals",
+      "title": "Temporal.ZonedDateTime.prototype.equals ( other )",
+      "level": 3,
+      "number": "6.3.40"
+    },
+    {
+      "id": "sec-temporal.zoneddatetime.prototype.tostring",
+      "title": "Temporal.ZonedDateTime.prototype.toString ( [ options ] )",
+      "level": 3,
+      "number": "6.3.41"
+    },
+    {
+      "id": "sec-temporal.zoneddatetime.prototype.tolocalestring",
+      "title": "Temporal.ZonedDateTime.prototype.toLocaleString ( [ locales [ , options ] ] )",
+      "level": 3,
+      "number": "6.3.42"
+    },
+    {
+      "id": "sec-temporal.zoneddatetime.prototype.tojson",
+      "title": "Temporal.ZonedDateTime.prototype.toJSON ( )",
+      "level": 3,
+      "number": "6.3.43"
+    },
+    {
+      "id": "sec-temporal.zoneddatetime.prototype.valueof",
+      "title": "Temporal.ZonedDateTime.prototype.valueOf ( )",
+      "level": 3,
+      "number": "6.3.44"
+    },
+    {
+      "id": "sec-temporal.zoneddatetime.prototype.startofday",
+      "title": "Temporal.ZonedDateTime.prototype.startOfDay ( )",
+      "level": 3,
+      "number": "6.3.45"
+    },
+    {
+      "id": "sec-temporal.zoneddatetime.prototype.toinstant",
+      "title": "Temporal.ZonedDateTime.prototype.toInstant ( )",
+      "level": 3,
+      "number": "6.3.46"
+    },
+    {
+      "id": "sec-temporal.zoneddatetime.prototype.toplaindate",
+      "title": "Temporal.ZonedDateTime.prototype.toPlainDate ( )",
+      "level": 3,
+      "number": "6.3.47"
+    },
+    {
+      "id": "sec-temporal.zoneddatetime.prototype.toplaintime",
+      "title": "Temporal.ZonedDateTime.prototype.toPlainTime ( )",
+      "level": 3,
+      "number": "6.3.48"
+    },
+    {
+      "id": "sec-temporal.zoneddatetime.prototype.toplaindatetime",
+      "title": "Temporal.ZonedDateTime.prototype.toPlainDateTime ( )",
+      "level": 3,
+      "number": "6.3.49"
+    },
+    {
+      "id": "sec-temporal.zoneddatetime.prototype.toplainyearmonth",
+      "title": "Temporal.ZonedDateTime.prototype.toPlainYearMonth ( )",
+      "level": 3,
+      "number": "6.3.50"
+    },
+    {
+      "id": "sec-temporal.zoneddatetime.prototype.toplainmonthday",
+      "title": "Temporal.ZonedDateTime.prototype.toPlainMonthDay ( )",
+      "level": 3,
+      "number": "6.3.51"
+    },
+    {
+      "id": "sec-temporal.zoneddatetime.prototype.getisofields",
+      "title": "Temporal.ZonedDateTime.prototype.getISOFields ( )",
+      "level": 3,
+      "number": "6.3.52"
+    },
+    {
+      "id": "sec-properties-of-temporal-zoneddatetime-instances",
+      "title": "Properties of Temporal.ZonedDateTime Instances",
+      "level": 2,
+      "number": "6.4"
+    },
+    {
+      "id": "sec-temporal-zoneddatetime-abstract-ops",
+      "title": "Abstract operations",
+      "level": 2,
+      "number": "6.5"
+    },
+    {
+      "id": "sec-temporal-interpretisodatetimeoffset",
+      "title": "InterpretISODateTimeOffset ( year, month, day, hour, minute, second, millisecond, microsecond, nanosecond, offsetBehaviour, offsetNanoseconds, timeZone, disambiguation, offsetOption, matchBehaviour )",
+      "level": 3,
+      "number": "6.5.1"
+    },
+    {
+      "id": "sec-temporal-totemporalzoneddatetime",
+      "title": "ToTemporalZonedDateTime ( item [ , options ] )",
+      "level": 3,
+      "number": "6.5.2"
+    },
+    {
+      "id": "sec-temporal-createtemporalzoneddatetime",
+      "title": "CreateTemporalZonedDateTime ( epochNanoseconds, timeZone, calendar [ , newTarget ] )",
+      "level": 3,
+      "number": "6.5.3"
+    },
+    {
+      "id": "sec-temporal-temporalzoneddatetimetostring",
+      "title": "TemporalZonedDateTimeToString ( zonedDateTime, precision, showCalendar, showTimeZone, showOffset [ , increment, unit, roundingMode ] )",
+      "level": 3,
+      "number": "6.5.4"
+    },
+    {
+      "id": "sec-temporal-addzoneddatetime",
+      "title": "AddZonedDateTime ( epochNanoseconds, timeZone, calendar, years, months, weeks, days, hours, minutes, seconds, milliseconds, microseconds, nanoseconds [ , options ] )",
+      "level": 3,
+      "number": "6.5.5"
+    },
+    {
+      "id": "sec-temporal-differencezoneddatetime",
+      "title": "DifferenceZonedDateTime ( ns1, ns2, timeZone, calendar, largestUnit [ , options ] )",
+      "level": 3,
+      "number": "6.5.6"
+    },
+    {
+      "id": "sec-temporal-nanosecondstodays",
+      "title": "NanosecondsToDays ( nanoseconds, relativeTo )",
+      "level": 3,
+      "number": "6.5.7"
+    },
+    {
+      "id": "sec-temporal-duration-objects",
+      "title": "Temporal.Duration Objects",
+      "level": 1,
+      "number": "7"
+    },
+    {
+      "id": "sec-temporal-duration-constructor",
+      "title": "The Temporal.Duration Constructor",
+      "level": 2,
+      "number": "7.1"
+    },
+    {
+      "id": "sec-temporal.duration",
+      "title": "Temporal.Duration ( [ years [ , months [ , weeks [ , days [ , hours [ , minutes [ , seconds [ , milliseconds [ , microseconds [ , nanoseconds ] ] ] ] ] ] ] ] ] ] )",
+      "level": 3,
+      "number": "7.1.1"
+    },
+    {
+      "id": "sec-properties-of-the-temporal-duration-constructor",
+      "title": "Properties of the Temporal.Duration Constructor",
+      "level": 2,
+      "number": "7.2"
+    },
+    {
+      "id": "sec-temporal-duration-prototype",
+      "title": "Temporal.Duration.prototype",
+      "level": 3,
+      "number": "7.2.1"
+    },
+    {
+      "id": "sec-temporal.duration.from",
+      "title": "Temporal.Duration.from ( item )",
+      "level": 3,
+      "number": "7.2.2"
+    },
+    {
+      "id": "sec-temporal.duration.compare",
+      "title": "Temporal.Duration.compare ( one, two [ , options ] )",
+      "level": 3,
+      "number": "7.2.3"
+    },
+    {
+      "id": "sec-properties-of-the-temporal-duration-prototype-object",
+      "title": "Properties of the Temporal.Duration Prototype Object",
+      "level": 2,
+      "number": "7.3"
+    },
+    {
+      "id": "sec-temporal.duration.prototype.constructor",
+      "title": "Temporal.Duration.prototype.constructor",
+      "level": 3,
+      "number": "7.3.1"
+    },
+    {
+      "id": "sec-temporal.duration.prototype-@@tostringtag",
+      "title": "Temporal.Duration.prototype[ @@toStringTag ]",
+      "level": 3,
+      "number": "7.3.2"
+    },
+    {
+      "id": "sec-get-temporal.duration.prototype.years",
+      "title": "get Temporal.Duration.prototype.years",
+      "level": 3,
+      "number": "7.3.3"
+    },
+    {
+      "id": "sec-get-temporal.duration.prototype.months",
+      "title": "get Temporal.Duration.prototype.months",
+      "level": 3,
+      "number": "7.3.4"
+    },
+    {
+      "id": "sec-get-temporal.duration.prototype.weeks",
+      "title": "get Temporal.Duration.prototype.weeks",
+      "level": 3,
+      "number": "7.3.5"
+    },
+    {
+      "id": "sec-get-temporal.duration.prototype.days",
+      "title": "get Temporal.Duration.prototype.days",
+      "level": 3,
+      "number": "7.3.6"
+    },
+    {
+      "id": "sec-get-temporal.duration.prototype.hours",
+      "title": "get Temporal.Duration.prototype.hours",
+      "level": 3,
+      "number": "7.3.7"
+    },
+    {
+      "id": "sec-get-temporal.duration.prototype.minutes",
+      "title": "get Temporal.Duration.prototype.minutes",
+      "level": 3,
+      "number": "7.3.8"
+    },
+    {
+      "id": "sec-get-temporal.duration.prototype.seconds",
+      "title": "get Temporal.Duration.prototype.seconds",
+      "level": 3,
+      "number": "7.3.9"
+    },
+    {
+      "id": "sec-get-temporal.duration.prototype.milliseconds",
+      "title": "get Temporal.Duration.prototype.milliseconds",
+      "level": 3,
+      "number": "7.3.10"
+    },
+    {
+      "id": "sec-get-temporal.duration.prototype.microseconds",
+      "title": "get Temporal.Duration.prototype.microseconds",
+      "level": 3,
+      "number": "7.3.11"
+    },
+    {
+      "id": "sec-get-temporal.duration.prototype.nanoseconds",
+      "title": "get Temporal.Duration.prototype.nanoseconds",
+      "level": 3,
+      "number": "7.3.12"
+    },
+    {
+      "id": "sec-get-temporal.duration.prototype.sign",
+      "title": "get Temporal.Duration.prototype.sign",
+      "level": 3,
+      "number": "7.3.13"
+    },
+    {
+      "id": "sec-get-temporal.duration.prototype.blank",
+      "title": "get Temporal.Duration.prototype.blank",
+      "level": 3,
+      "number": "7.3.14"
+    },
+    {
+      "id": "sec-temporal.duration.prototype.with",
+      "title": "Temporal.Duration.prototype.with ( temporalDurationLike )",
+      "level": 3,
+      "number": "7.3.15"
+    },
+    {
+      "id": "sec-temporal.duration.prototype.negated",
+      "title": "Temporal.Duration.prototype.negated ( )",
+      "level": 3,
+      "number": "7.3.16"
+    },
+    {
+      "id": "sec-temporal.duration.prototype.abs",
+      "title": "Temporal.Duration.prototype.abs ( )",
+      "level": 3,
+      "number": "7.3.17"
+    },
+    {
+      "id": "sec-temporal.duration.prototype.add",
+      "title": "Temporal.Duration.prototype.add ( other [ , options ] )",
+      "level": 3,
+      "number": "7.3.18"
+    },
+    {
+      "id": "sec-temporal.duration.prototype.subtract",
+      "title": "Temporal.Duration.prototype.subtract ( other [ , options ] )",
+      "level": 3,
+      "number": "7.3.19"
+    },
+    {
+      "id": "sec-temporal.duration.prototype.round",
+      "title": "Temporal.Duration.prototype.round ( roundTo )",
+      "level": 3,
+      "number": "7.3.20"
+    },
+    {
+      "id": "sec-temporal.duration.prototype.total",
+      "title": "Temporal.Duration.prototype.total ( totalOf )",
+      "level": 3,
+      "number": "7.3.21"
+    },
+    {
+      "id": "sec-temporal.duration.prototype.tostring",
+      "title": "Temporal.Duration.prototype.toString ( [ options ] )",
+      "level": 3,
+      "number": "7.3.22"
+    },
+    {
+      "id": "sec-temporal.duration.prototype.tojson",
+      "title": "Temporal.Duration.prototype.toJSON ( )",
+      "level": 3,
+      "number": "7.3.23"
+    },
+    {
+      "id": "sec-temporal.duration.prototype.tolocalestring",
+      "title": "Temporal.Duration.prototype.toLocaleString ( [ locales [ , options ] ] )",
+      "level": 3,
+      "number": "7.3.24"
+    },
+    {
+      "id": "sec-temporal.duration.prototype.valueof",
+      "title": "Temporal.Duration.prototype.valueOf ( )",
+      "level": 3,
+      "number": "7.3.25"
+    },
+    {
+      "id": "sec-properties-of-temporal-duration-instances",
+      "title": "Properties of Temporal.Duration Instances",
+      "level": 2,
+      "number": "7.4"
+    },
+    {
+      "id": "sec-temporal-duration-abstract-ops",
+      "title": "Abstract Operations",
+      "level": 2,
+      "number": "7.5"
+    },
+    {
+      "id": "sec-temporal-totemporalduration",
+      "title": "ToTemporalDuration ( item )",
+      "level": 3,
+      "number": "7.5.1"
+    },
+    {
+      "id": "sec-temporal-totemporaldurationrecord",
+      "title": "ToTemporalDurationRecord ( temporalDurationLike )",
+      "level": 3,
+      "number": "7.5.2"
+    },
+    {
+      "id": "sec-temporal-durationsign",
+      "title": "DurationSign ( years, months, weeks, days, hours, minutes, seconds, milliseconds, microseconds, nanoseconds )",
+      "level": 3,
+      "number": "7.5.3"
+    },
+    {
+      "id": "sec-temporal-isvalidduration",
+      "title": "IsValidDuration ( years, months, weeks, days, hours, minutes, seconds, milliseconds, microseconds, nanoseconds )",
+      "level": 3,
+      "number": "7.5.4"
+    },
+    {
+      "id": "sec-temporal-defaulttemporallargestunit",
+      "title": "DefaultTemporalLargestUnit ( years, months, weeks, days, hours, minutes, seconds, milliseconds, microseconds )",
+      "level": 3,
+      "number": "7.5.5"
+    },
+    {
+      "id": "sec-temporal-topartialduration",
+      "title": "ToPartialDuration ( temporalDurationLike )",
+      "level": 3,
+      "number": "7.5.6"
+    },
+    {
+      "id": "sec-temporal-createtemporalduration",
+      "title": "CreateTemporalDuration ( years, months, weeks, days, hours, minutes, seconds, milliseconds, microseconds, nanoseconds [ , newTarget ] )",
+      "level": 3,
+      "number": "7.5.7"
+    },
+    {
+      "id": "sec-temporal-createnegatedtemporalduration",
+      "title": "CreateNegatedTemporalDuration ( duration )",
+      "level": 3,
+      "number": "7.5.8"
+    },
+    {
+      "id": "sec-temporal-calculateoffsetshift",
+      "title": "CalculateOffsetShift ( relativeTo, y, mon, w, d, h, min, s, ms, mus, ns )",
+      "level": 3,
+      "number": "7.5.9"
+    },
+    {
+      "id": "sec-temporal-totaldurationnanoseconds",
+      "title": "TotalDurationNanoseconds ( days, hours, minutes, seconds, milliseconds, microseconds, nanoseconds, offsetShift )",
+      "level": 3,
+      "number": "7.5.10"
+    },
+    {
+      "id": "sec-temporal-balanceduration",
+      "title": "BalanceDuration ( days, hours, minutes, seconds, milliseconds, microseconds, nanoseconds, largestUnit [ , relativeTo ] )",
+      "level": 3,
+      "number": "7.5.11"
+    },
+    {
+      "id": "sec-temporal-unbalancedurationrelative",
+      "title": "UnbalanceDurationRelative ( years, months, weeks, days, largestUnit, relativeTo )",
+      "level": 3,
+      "number": "7.5.12"
+    },
+    {
+      "id": "sec-temporal-balancedurationrelative",
+      "title": "BalanceDurationRelative ( years, months, weeks, days, largestUnit, relativeTo )",
+      "level": 3,
+      "number": "7.5.13"
+    },
+    {
+      "id": "sec-temporal-addduration",
+      "title": "AddDuration ( y1, mon1, w1, d1, h1, min1, s1, ms1, mus1, ns1, y2, mon2, w2, d2, h2, min2, s2, ms2, mus2, ns2, relativeTo )",
+      "level": 3,
+      "number": "7.5.14"
+    },
+    {
+      "id": "sec-temporal-daysuntil",
+      "title": "DaysUntil ( earlier, later )",
+      "level": 3,
+      "number": "7.5.15"
+    },
+    {
+      "id": "sec-temporal-moverelativedate",
+      "title": "MoveRelativeDate ( calendar, relativeTo, duration )",
+      "level": 3,
+      "number": "7.5.16"
+    },
+    {
+      "id": "sec-temporal-moverelativezoneddatetime",
+      "title": "MoveRelativeZonedDateTime ( zonedDateTime, years, months, weeks, days )",
+      "level": 3,
+      "number": "7.5.17"
+    },
+    {
+      "id": "sec-temporal-roundduration",
+      "title": "RoundDuration ( years, months, weeks, days, hours, minutes, seconds, milliseconds, microseconds, nanoseconds, increment, unit, roundingMode [ , relativeTo ] )",
+      "level": 3,
+      "number": "7.5.18"
+    },
+    {
+      "id": "sec-temporal-adjustroundeddurationdays",
+      "title": "AdjustRoundedDurationDays ( years, months, weeks, days, hours, minutes, seconds, milliseconds, microseconds, nanoseconds, increment, unit, roundingMode [ , relativeTo ] )",
+      "level": 3,
+      "number": "7.5.19"
+    },
+    {
+      "id": "sec-temporal-tolimitedtemporalduration",
+      "title": "ToLimitedTemporalDuration ( temporalDurationLike, disallowedFields )",
+      "level": 3,
+      "number": "7.5.20"
+    },
+    {
+      "id": "sec-temporal-temporaldurationtostring",
+      "title": "TemporalDurationToString ( years, months, weeks, days, hours, minutes, seconds, milliseconds, microseconds, nanoseconds, precision )",
+      "level": 3,
+      "number": "7.5.21"
+    },
+    {
+      "id": "sec-temporal-instant-objects",
+      "title": "Temporal.Instant Objects",
+      "level": 1,
+      "number": "8"
+    },
+    {
+      "id": "sec-temporal-instant-constructor",
+      "title": "The Temporal.Instant Constructor",
+      "level": 2,
+      "number": "8.1"
+    },
+    {
+      "id": "sec-temporal.instant",
+      "title": "Temporal.Instant ( epochNanoseconds )",
+      "level": 3,
+      "number": "8.1.1"
+    },
+    {
+      "id": "sec-properties-of-the-temporal-instant-constructor",
+      "title": "Properties of the Temporal.Instant Constructor",
+      "level": 2,
+      "number": "8.2"
+    },
+    {
+      "id": "sec-temporal-instant-prototype",
+      "title": "Temporal.Instant.prototype",
+      "level": 3,
+      "number": "8.2.1"
+    },
+    {
+      "id": "sec-temporal.instant.from",
+      "title": "Temporal.Instant.from ( item )",
+      "level": 3,
+      "number": "8.2.2"
+    },
+    {
+      "id": "sec-temporal.instant.fromepochseconds",
+      "title": "Temporal.Instant.fromEpochSeconds ( epochSeconds )",
+      "level": 3,
+      "number": "8.2.3"
+    },
+    {
+      "id": "sec-temporal.instant.fromepochmilliseconds",
+      "title": "Temporal.Instant.fromEpochMilliseconds ( epochMilliseconds )",
+      "level": 3,
+      "number": "8.2.4"
+    },
+    {
+      "id": "sec-temporal.instant.fromepochmicroseconds",
+      "title": "Temporal.Instant.fromEpochMicroseconds ( epochMicroseconds )",
+      "level": 3,
+      "number": "8.2.5"
+    },
+    {
+      "id": "sec-temporal.instant.fromepochnanoseconds",
+      "title": "Temporal.Instant.fromEpochNanoseconds ( epochNanoseconds )",
+      "level": 3,
+      "number": "8.2.6"
+    },
+    {
+      "id": "sec-temporal.instant.compare",
+      "title": "Temporal.Instant.compare ( one, two )",
+      "level": 3,
+      "number": "8.2.7"
+    },
+    {
+      "id": "sec-properties-of-the-temporal-instant-prototype-object",
+      "title": "Properties of the Temporal.Instant Prototype Object",
+      "level": 2,
+      "number": "8.3"
+    },
+    {
+      "id": "sec-temporal.instant.prototype.constructor",
+      "title": "Temporal.Instant.prototype.constructor",
+      "level": 3,
+      "number": "8.3.1"
+    },
+    {
+      "id": "sec-temporal.instant.prototype-@@tostringtag",
+      "title": "Temporal.Instant.prototype[ @@toStringTag ]",
+      "level": 3,
+      "number": "8.3.2"
+    },
+    {
+      "id": "sec-get-temporal.instant.prototype.epochseconds",
+      "title": "get Temporal.Instant.prototype.epochSeconds",
+      "level": 3,
+      "number": "8.3.3"
+    },
+    {
+      "id": "sec-get-temporal.instant.prototype.epochmilliseconds",
+      "title": "get Temporal.Instant.prototype.epochMilliseconds",
+      "level": 3,
+      "number": "8.3.4"
+    },
+    {
+      "id": "sec-get-temporal.instant.prototype.epochmicroseconds",
+      "title": "get Temporal.Instant.prototype.epochMicroseconds",
+      "level": 3,
+      "number": "8.3.5"
+    },
+    {
+      "id": "sec-get-temporal.instant.prototype.epochnanoseconds",
+      "title": "get Temporal.Instant.prototype.epochNanoseconds",
+      "level": 3,
+      "number": "8.3.6"
+    },
+    {
+      "id": "sec-temporal.instant.prototype.add",
+      "title": "Temporal.Instant.prototype.add ( temporalDurationLike )",
+      "level": 3,
+      "number": "8.3.7"
+    },
+    {
+      "id": "sec-temporal.instant.prototype.subtract",
+      "title": "Temporal.Instant.prototype.subtract ( temporalDurationLike )",
+      "level": 3,
+      "number": "8.3.8"
+    },
+    {
+      "id": "sec-temporal.instant.prototype.until",
+      "title": "Temporal.Instant.prototype.until ( other [ , options ] )",
+      "level": 3,
+      "number": "8.3.9"
+    },
+    {
+      "id": "sec-temporal.instant.prototype.since",
+      "title": "Temporal.Instant.prototype.since ( other [ , options ] )",
+      "level": 3,
+      "number": "8.3.10"
+    },
+    {
+      "id": "sec-temporal.instant.prototype.round",
+      "title": "Temporal.Instant.prototype.round ( roundTo )",
+      "level": 3,
+      "number": "8.3.11"
+    },
+    {
+      "id": "sec-temporal.instant.prototype.equals",
+      "title": "Temporal.Instant.prototype.equals ( other )",
+      "level": 3,
+      "number": "8.3.12"
+    },
+    {
+      "id": "sec-temporal.instant.prototype.tostring",
+      "title": "Temporal.Instant.prototype.toString ( [ options ] )",
+      "level": 3,
+      "number": "8.3.13"
+    },
+    {
+      "id": "sec-temporal.instant.prototype.tolocalestring",
+      "title": "Temporal.Instant.prototype.toLocaleString ( [ locales [ , options ] ] )",
+      "level": 3,
+      "number": "8.3.14"
+    },
+    {
+      "id": "sec-temporal.instant.prototype.tojson",
+      "title": "Temporal.Instant.prototype.toJSON ( )",
+      "level": 3,
+      "number": "8.3.15"
+    },
+    {
+      "id": "sec-temporal.instant.prototype.valueof",
+      "title": "Temporal.Instant.prototype.valueOf ( )",
+      "level": 3,
+      "number": "8.3.16"
+    },
+    {
+      "id": "sec-temporal.instant.prototype.tozoneddatetime",
+      "title": "Temporal.Instant.prototype.toZonedDateTime ( item )",
+      "level": 3,
+      "number": "8.3.17"
+    },
+    {
+      "id": "sec-temporal.instant.prototype.tozoneddatetimeiso",
+      "title": "Temporal.Instant.prototype.toZonedDateTimeISO ( item )",
+      "level": 3,
+      "number": "8.3.18"
+    },
+    {
+      "id": "sec-properties-of-temporal-instant-instances",
+      "title": "Properties of Temporal.Instant Instances",
+      "level": 2,
+      "number": "8.4"
+    },
+    {
+      "id": "sec-temporal-instant-abstract-ops",
+      "title": "Abstract operations",
+      "level": 2,
+      "number": "8.5"
+    },
+    {
+      "id": "sec-temporal-isvalidepochnanoseconds",
+      "title": "IsValidEpochNanoseconds ( epochNanoseconds )",
+      "level": 3,
+      "number": "8.5.1"
+    },
+    {
+      "id": "sec-temporal-createtemporalinstant",
+      "title": "CreateTemporalInstant ( epochNanoseconds [ , newTarget ] )",
+      "level": 3,
+      "number": "8.5.2"
+    },
+    {
+      "id": "sec-temporal-totemporalinstant",
+      "title": "ToTemporalInstant ( item )",
+      "level": 3,
+      "number": "8.5.3"
+    },
+    {
+      "id": "sec-temporal-parsetemporalinstant",
+      "title": "ParseTemporalInstant ( isoString )",
+      "level": 3,
+      "number": "8.5.4"
+    },
+    {
+      "id": "sec-temporal-compareepochnanoseconds",
+      "title": "CompareEpochNanoseconds ( epochNanosecondsOne, epochNanosecondsTwo )",
+      "level": 3,
+      "number": "8.5.5"
+    },
+    {
+      "id": "sec-temporal-addinstant",
+      "title": "AddInstant ( epochNanoseconds, hours, minutes, seconds, milliseconds, microseconds, nanoseconds )",
+      "level": 3,
+      "number": "8.5.6"
+    },
+    {
+      "id": "sec-temporal-differenceinstant",
+      "title": "DifferenceInstant ( ns1, ns2, roundingIncrement, smallestUnit, roundingMode )",
+      "level": 3,
+      "number": "8.5.7"
+    },
+    {
+      "id": "sec-temporal-roundtemporalinstant",
+      "title": "RoundTemporalInstant ( ns, increment, unit, roundingMode )",
+      "level": 3,
+      "number": "8.5.8"
+    },
+    {
+      "id": "sec-temporal-temporalinstanttostring",
+      "title": "TemporalInstantToString ( instant, timeZone, precision )",
+      "level": 3,
+      "number": "8.5.9"
+    },
+    {
+      "id": "sec-temporal-plainyearmonth-objects",
+      "title": "Temporal.PlainYearMonth Objects",
+      "level": 1,
+      "number": "9"
+    },
+    {
+      "id": "sec-temporal-plainyearmonth-constructor",
+      "title": "The Temporal.PlainYearMonth Constructor",
+      "level": 2,
+      "number": "9.1"
+    },
+    {
+      "id": "sec-temporal.plainyearmonth",
+      "title": "Temporal.PlainYearMonth ( isoYear, isoMonth [ , calendarLike [ , referenceISODay ] ] )",
+      "level": 3,
+      "number": "9.1.1"
+    },
+    {
+      "id": "sec-properties-of-the-temporal-plainyearmonth-constructor",
+      "title": "Properties of the Temporal.PlainYearMonth Constructor",
+      "level": 2,
+      "number": "9.2"
+    },
+    {
+      "id": "sec-temporal-plainyearmonth-prototype",
+      "title": "Temporal.PlainYearMonth.prototype",
+      "level": 3,
+      "number": "9.2.1"
+    },
+    {
+      "id": "sec-temporal.plainyearmonth.from",
+      "title": "Temporal.PlainYearMonth.from ( item [ , options ] )",
+      "level": 3,
+      "number": "9.2.2"
+    },
+    {
+      "id": "sec-temporal.plainyearmonth.compare",
+      "title": "Temporal.PlainYearMonth.compare ( one, two )",
+      "level": 3,
+      "number": "9.2.3"
+    },
+    {
+      "id": "sec-properties-of-the-temporal-plainyearmonth-prototype-object",
+      "title": "Properties of the Temporal.PlainYearMonth Prototype Object",
+      "level": 2,
+      "number": "9.3"
+    },
+    {
+      "id": "sec-temporal.plainyearmonth.prototype.constructor",
+      "title": "Temporal.PlainYearMonth.prototype.constructor",
+      "level": 3,
+      "number": "9.3.1"
+    },
+    {
+      "id": "sec-temporal.plainyearmonth.prototype-@@tostringtag",
+      "title": "Temporal.PlainYearMonth.prototype[ @@toStringTag ]",
+      "level": 3,
+      "number": "9.3.2"
+    },
+    {
+      "id": "sec-get-temporal.plainyearmonth.prototype.calendar",
+      "title": "get Temporal.PlainYearMonth.prototype.calendar",
+      "level": 3,
+      "number": "9.3.3"
+    },
+    {
+      "id": "sec-get-temporal.plainyearmonth.prototype.year",
+      "title": "get Temporal.PlainYearMonth.prototype.year",
+      "level": 3,
+      "number": "9.3.4"
+    },
+    {
+      "id": "sec-get-temporal.plainyearmonth.prototype.month",
+      "title": "get Temporal.PlainYearMonth.prototype.month",
+      "level": 3,
+      "number": "9.3.5"
+    },
+    {
+      "id": "sec-get-temporal.plainyearmonth.prototype.monthCode",
+      "title": "get Temporal.PlainYearMonth.prototype.monthCode",
+      "level": 3,
+      "number": "9.3.6"
+    },
+    {
+      "id": "sec-get-temporal.plainyearmonth.prototype.daysinyear",
+      "title": "get Temporal.PlainYearMonth.prototype.daysInYear",
+      "level": 3,
+      "number": "9.3.7"
+    },
+    {
+      "id": "sec-get-temporal.plainyearmonth.prototype.daysinmonth",
+      "title": "get Temporal.PlainYearMonth.prototype.daysInMonth",
+      "level": 3,
+      "number": "9.3.8"
+    },
+    {
+      "id": "sec-get-temporal.plainyearmonth.prototype.monthsinyear",
+      "title": "get Temporal.PlainYearMonth.prototype.monthsInYear",
+      "level": 3,
+      "number": "9.3.9"
+    },
+    {
+      "id": "sec-get-temporal.plainyearmonth.prototype.inleapyear",
+      "title": "get Temporal.PlainYearMonth.prototype.inLeapYear",
+      "level": 3,
+      "number": "9.3.10"
+    },
+    {
+      "id": "sec-temporal.plainyearmonth.prototype.with",
+      "title": "Temporal.PlainYearMonth.prototype.with ( temporalYearMonthLike [ , options ] )",
+      "level": 3,
+      "number": "9.3.11"
+    },
+    {
+      "id": "sec-temporal.plainyearmonth.prototype.add",
+      "title": "Temporal.PlainYearMonth.prototype.add ( temporalDurationLike [ , options ] )",
+      "level": 3,
+      "number": "9.3.12"
+    },
+    {
+      "id": "sec-temporal.plainyearmonth.prototype.subtract",
+      "title": "Temporal.PlainYearMonth.prototype.subtract ( temporalDurationLike [ , options ] )",
+      "level": 3,
+      "number": "9.3.13"
+    },
+    {
+      "id": "sec-temporal.plainyearmonth.prototype.until",
+      "title": "Temporal.PlainYearMonth.prototype.until ( other [ , options ] )",
+      "level": 3,
+      "number": "9.3.14"
+    },
+    {
+      "id": "sec-temporal.plainyearmonth.prototype.since",
+      "title": "Temporal.PlainYearMonth.prototype.since ( other [ , options ] )",
+      "level": 3,
+      "number": "9.3.15"
+    },
+    {
+      "id": "sec-temporal.plainyearmonth.prototype.equals",
+      "title": "Temporal.PlainYearMonth.prototype.equals ( other )",
+      "level": 3,
+      "number": "9.3.16"
+    },
+    {
+      "id": "sec-temporal.plainyearmonth.prototype.tostring",
+      "title": "Temporal.PlainYearMonth.prototype.toString ( [ options ] )",
+      "level": 3,
+      "number": "9.3.17"
+    },
+    {
+      "id": "sec-temporal.plainyearmonth.prototype.tolocalestring",
+      "title": "Temporal.PlainYearMonth.prototype.toLocaleString ( [ locales [ , options ] ] )",
+      "level": 3,
+      "number": "9.3.18"
+    },
+    {
+      "id": "sec-temporal.plainyearmonth.prototype.tojson",
+      "title": "Temporal.PlainYearMonth.prototype.toJSON ( )",
+      "level": 3,
+      "number": "9.3.19"
+    },
+    {
+      "id": "sec-temporal.plainyearmonth.prototype.valueof",
+      "title": "Temporal.PlainYearMonth.prototype.valueOf ( )",
+      "level": 3,
+      "number": "9.3.20"
+    },
+    {
+      "id": "sec-temporal.plainyearmonth.prototype.toplaindate",
+      "title": "Temporal.PlainYearMonth.prototype.toPlainDate ( item )",
+      "level": 3,
+      "number": "9.3.21"
+    },
+    {
+      "id": "sec-temporal.plainyearmonth.prototype.getisofields",
+      "title": "Temporal.PlainYearMonth.prototype.getISOFields ( )",
+      "level": 3,
+      "number": "9.3.22"
+    },
+    {
+      "id": "sec-properties-of-temporal-plainyearmonth-instances",
+      "title": "Properties of Temporal.PlainYearMonth Instances",
+      "level": 2,
+      "number": "9.4"
+    },
+    {
+      "id": "sec-temporal-plainyearmonth-abstract-ops",
+      "title": "Abstract operations",
+      "level": 2,
+      "number": "9.5"
+    },
+    {
+      "id": "sec-temporal-totemporalyearmonth",
+      "title": "ToTemporalYearMonth ( item [ , options ] )",
+      "level": 3,
+      "number": "9.5.1"
+    },
+    {
+      "id": "sec-temporal-regulateisoyearmonth",
+      "title": "RegulateISOYearMonth ( year, month, overflow )",
+      "level": 3,
+      "number": "9.5.2"
+    },
+    {
+      "id": "sec-temporal-isvalidisomonth",
+      "title": "IsValidISOMonth ( month )",
+      "level": 3,
+      "number": "9.5.3"
+    },
+    {
+      "id": "sec-temporal-isoyearmonthwithinlimits",
+      "title": "ISOYearMonthWithinLimits ( year, month )",
+      "level": 3,
+      "number": "9.5.4"
+    },
+    {
+      "id": "sec-temporal-balanceisoyearmonth",
+      "title": "BalanceISOYearMonth ( year, month )",
+      "level": 3,
+      "number": "9.5.5"
+    },
+    {
+      "id": "sec-temporal-constrainisoyearmonth",
+      "title": "ConstrainISOYearMonth ( year, month )",
+      "level": 3,
+      "number": "9.5.6"
+    },
+    {
+      "id": "sec-temporal-createtemporalyearmonth",
+      "title": "CreateTemporalYearMonth ( isoYear, isoMonth, calendar, referenceISODay [ , newTarget ] )",
+      "level": 3,
+      "number": "9.5.7"
+    },
+    {
+      "id": "sec-temporal-temporalyearmonthtostring",
+      "title": "TemporalYearMonthToString ( yearMonth, showCalendar )",
+      "level": 3,
+      "number": "9.5.8"
+    },
+    {
+      "id": "sec-temporal-plainmonthday-objects",
+      "title": "Temporal.PlainMonthDay Objects",
+      "level": 1,
+      "number": "10"
+    },
+    {
+      "id": "sec-temporal-plainmonthday-constructor",
+      "title": "The Temporal.PlainMonthDay Constructor",
+      "level": 2,
+      "number": "10.1"
+    },
+    {
+      "id": "sec-temporal.plainmonthday",
+      "title": "Temporal.PlainMonthDay ( isoMonth, isoDay [ , calendarLike [ , referenceISOYear ] ] )",
+      "level": 3,
+      "number": "10.1.1"
+    },
+    {
+      "id": "sec-properties-of-the-temporal-plainmonthday-constructor",
+      "title": "Properties of the Temporal.PlainMonthDay Constructor",
+      "level": 2,
+      "number": "10.2"
+    },
+    {
+      "id": "sec-temporal-plainmonthday-prototype",
+      "title": "Temporal.PlainMonthDay.prototype",
+      "level": 3,
+      "number": "10.2.1"
+    },
+    {
+      "id": "sec-temporal.plainmonthday.from",
+      "title": "Temporal.PlainMonthDay.from ( item [ , options ] )",
+      "level": 3,
+      "number": "10.2.2"
+    },
+    {
+      "id": "sec-properties-of-the-temporal-plainmonthday-prototype-object",
+      "title": "Properties of the Temporal.PlainMonthDay Prototype Object",
+      "level": 2,
+      "number": "10.3"
+    },
+    {
+      "id": "sec-temporal.plainmonthday.prototype.constructor",
+      "title": "Temporal.PlainMonthDay.prototype.constructor",
+      "level": 3,
+      "number": "10.3.1"
+    },
+    {
+      "id": "sec-temporal.plainmonthday.prototype-@@tostringtag",
+      "title": "Temporal.PlainMonthDay.prototype[ @@toStringTag ]",
+      "level": 3,
+      "number": "10.3.2"
+    },
+    {
+      "id": "sec-get-temporal.plainmonthday.prototype.calendar",
+      "title": "get Temporal.PlainMonthDay.prototype.calendar",
+      "level": 3,
+      "number": "10.3.3"
+    },
+    {
+      "id": "sec-get-temporal.plainmonthday.prototype.monthcode",
+      "title": "get Temporal.PlainMonthDay.prototype.monthCode",
+      "level": 3,
+      "number": "10.3.4"
+    },
+    {
+      "id": "sec-get-temporal.plainmonthday.prototype.day",
+      "title": "get Temporal.PlainMonthDay.prototype.day",
+      "level": 3,
+      "number": "10.3.5"
+    },
+    {
+      "id": "sec-temporal.plainmonthday.prototype.with",
+      "title": "Temporal.PlainMonthDay.prototype.with ( temporalMonthDayLike [ , options ] )",
+      "level": 3,
+      "number": "10.3.6"
+    },
+    {
+      "id": "sec-temporal.plainmonthday.prototype.equals",
+      "title": "Temporal.PlainMonthDay.prototype.equals ( other )",
+      "level": 3,
+      "number": "10.3.7"
+    },
+    {
+      "id": "sec-temporal.plainmonthday.prototype.tostring",
+      "title": "Temporal.PlainMonthDay.prototype.toString ( [ options ] )",
+      "level": 3,
+      "number": "10.3.8"
+    },
+    {
+      "id": "sec-temporal.plainmonthday.prototype.tolocalestring",
+      "title": "Temporal.PlainMonthDay.prototype.toLocaleString ( [ locales [ , options ] ] )",
+      "level": 3,
+      "number": "10.3.9"
+    },
+    {
+      "id": "sec-temporal.plainmonthday.prototype.tojson",
+      "title": "Temporal.PlainMonthDay.prototype.toJSON ( )",
+      "level": 3,
+      "number": "10.3.10"
+    },
+    {
+      "id": "sec-temporal.plainmonthday.prototype.valueof",
+      "title": "Temporal.PlainMonthDay.prototype.valueOf ( )",
+      "level": 3,
+      "number": "10.3.11"
+    },
+    {
+      "id": "sec-temporal.plainmonthday.prototype.toplaindate",
+      "title": "Temporal.PlainMonthDay.prototype.toPlainDate ( item )",
+      "level": 3,
+      "number": "10.3.12"
+    },
+    {
+      "id": "sec-temporal.plainmonthday.prototype.getisofields",
+      "title": "Temporal.PlainMonthDay.prototype.getISOFields ( )",
+      "level": 3,
+      "number": "10.3.13"
+    },
+    {
+      "id": "sec-properties-of-temporal-plainmonthday-instances",
+      "title": "Properties of Temporal.PlainMonthDay Instances",
+      "level": 2,
+      "number": "10.4"
+    },
+    {
+      "id": "sec-temporal-plainmonthday-abstract-ops",
+      "title": "Abstract operations",
+      "level": 2,
+      "number": "10.5"
+    },
+    {
+      "id": "sec-temporal-totemporalmonthday",
+      "title": "ToTemporalMonthDay ( item [ , options ] )",
+      "level": 3,
+      "number": "10.5.1"
+    },
+    {
+      "id": "sec-temporal-createtemporalmonthday",
+      "title": "CreateTemporalMonthDay ( isoMonth, isoDay, calendar, referenceISOYear [ , newTarget ] )",
+      "level": 3,
+      "number": "10.5.2"
+    },
+    {
+      "id": "sec-temporal-temporalmonthdaytostring",
+      "title": "TemporalMonthDayToString ( monthDay, showCalendar )",
+      "level": 3,
+      "number": "10.5.3"
+    },
+    {
+      "id": "sec-temporal-timezone-objects",
+      "title": "Temporal.TimeZone Objects",
+      "level": 1,
+      "number": "11"
+    },
+    {
+      "id": "sec-time-zone-names",
+      "title": "Time Zone Names",
+      "level": 2,
+      "number": "11.1"
+    },
+    {
+      "id": "sec-isvalidtimezonename",
+      "title": "IsValidTimeZoneName ( timeZone )",
+      "level": 3,
+      "number": "11.1.1"
+    },
+    {
+      "id": "sec-canonicalizetimezonename",
+      "title": "CanonicalizeTimeZoneName ( timeZone )",
+      "level": 3,
+      "number": "11.1.2"
+    },
+    {
+      "id": "sec-defaulttimezone",
+      "title": "DefaultTimeZone ( )",
+      "level": 3,
+      "number": "11.1.3"
+    },
+    {
+      "id": "sec-temporal-timezone-constructor",
+      "title": "The Temporal.TimeZone Constructor",
+      "level": 2,
+      "number": "11.2"
+    },
+    {
+      "id": "sec-temporal.timezone",
+      "title": "Temporal.TimeZone ( identifier )",
+      "level": 3,
+      "number": "11.2.1"
+    },
+    {
+      "id": "sec-properties-of-the-temporal-timezone-constructor",
+      "title": "Properties of the Temporal.TimeZone Constructor",
+      "level": 2,
+      "number": "11.3"
+    },
+    {
+      "id": "sec-temporal-timezone-prototype",
+      "title": "Temporal.TimeZone.prototype",
+      "level": 3,
+      "number": "11.3.1"
+    },
+    {
+      "id": "sec-temporal.timezone.from",
+      "title": "Temporal.TimeZone.from ( item )",
+      "level": 3,
+      "number": "11.3.2"
+    },
+    {
+      "id": "sec-properties-of-the-temporal-timezone-prototype-object",
+      "title": "Properties of the Temporal.TimeZone Prototype Object",
+      "level": 2,
+      "number": "11.4"
+    },
+    {
+      "id": "sec-temporal.timezone.prototype.constructor",
+      "title": "Temporal.TimeZone.prototype.constructor",
+      "level": 3,
+      "number": "11.4.1"
+    },
+    {
+      "id": "sec-temporal.timezone.prototype-@@tostringtag",
+      "title": "Temporal.TimeZone.prototype[ @@toStringTag ]",
+      "level": 3,
+      "number": "11.4.2"
+    },
+    {
+      "id": "sec-get-temporal.timezone.prototype.id",
+      "title": "get Temporal.TimeZone.prototype.id",
+      "level": 3,
+      "number": "11.4.3"
+    },
+    {
+      "id": "sec-temporal.timezone.prototype.getoffsetnanosecondsfor",
+      "title": "Temporal.TimeZone.prototype.getOffsetNanosecondsFor ( instant )",
+      "level": 3,
+      "number": "11.4.4"
+    },
+    {
+      "id": "sec-temporal.timezone.prototype.getoffsetstringfor",
+      "title": "Temporal.TimeZone.prototype.getOffsetStringFor ( instant )",
+      "level": 3,
+      "number": "11.4.5"
+    },
+    {
+      "id": "sec-temporal.timezone.prototype.getplaindatetimefor",
+      "title": "Temporal.TimeZone.prototype.getPlainDateTimeFor ( instant [ , calendarLike ] )",
+      "level": 3,
+      "number": "11.4.6"
+    },
+    {
+      "id": "sec-temporal.timezone.prototype.getinstantfor",
+      "title": "Temporal.TimeZone.prototype.getInstantFor ( dateTime [ , options ] )",
+      "level": 3,
+      "number": "11.4.7"
+    },
+    {
+      "id": "sec-temporal.timezone.prototype.getpossibleinstantsfor",
+      "title": "Temporal.TimeZone.prototype.getPossibleInstantsFor ( dateTime )",
+      "level": 3,
+      "number": "11.4.8"
+    },
+    {
+      "id": "sec-temporal.timezone.prototype.getnexttransition",
+      "title": "Temporal.TimeZone.prototype.getNextTransition ( startingPoint )",
+      "level": 3,
+      "number": "11.4.9"
+    },
+    {
+      "id": "sec-temporal.timezone.prototype.getprevioustransition",
+      "title": "Temporal.TimeZone.prototype.getPreviousTransition ( startingPoint )",
+      "level": 3,
+      "number": "11.4.10"
+    },
+    {
+      "id": "sec-temporal.timezone.prototype.tostring",
+      "title": "Temporal.TimeZone.prototype.toString ( )",
+      "level": 3,
+      "number": "11.4.11"
+    },
+    {
+      "id": "sec-temporal.timezone.prototype.tojson",
+      "title": "Temporal.TimeZone.prototype.toJSON ( )",
+      "level": 3,
+      "number": "11.4.12"
+    },
+    {
+      "id": "sec-properties-of-temporal-timezone-instances",
+      "title": "Properties of Temporal.TimeZone Instances",
+      "level": 2,
+      "number": "11.5"
+    },
+    {
+      "id": "sec-temporal-timezone-abstract-ops",
+      "title": "Abstract operations",
+      "level": 2,
+      "number": "11.6"
+    },
+    {
+      "id": "sec-temporal-createtemporaltimezone",
+      "title": "CreateTemporalTimeZone ( identifier [ , newTarget ] )",
+      "level": 3,
+      "number": "11.6.1"
+    },
+    {
+      "id": "sec-temporal-getisopartsfromepoch",
+      "title": "GetISOPartsFromEpoch ( epochNanoseconds )",
+      "level": 3,
+      "number": "11.6.2"
+    },
+    {
+      "id": "sec-temporal-getianatimezoneepochvalue",
+      "title": "GetIANATimeZoneEpochValue ( timeZoneIdentifier, year, month, day, hour, minute, second, millisecond, microsecond, nanosecond )",
+      "level": 3,
+      "number": "11.6.3"
+    },
+    {
+      "id": "sec-temporal-getianatimezoneoffsetnanoseconds",
+      "title": "GetIANATimeZoneOffsetNanoseconds ( epochNanoseconds, timeZoneIdentifier )",
+      "level": 3,
+      "number": "11.6.4"
+    },
+    {
+      "id": "sec-temporal-getianatimezonenexttransition",
+      "title": "GetIANATimeZoneNextTransition ( epochNanoseconds, timeZoneIdentifier )",
+      "level": 3,
+      "number": "11.6.5"
+    },
+    {
+      "id": "sec-temporal-getianatimezoneprevioustransition",
+      "title": "GetIANATimeZonePreviousTransition ( epochNanoseconds, timeZoneIdentifier )",
+      "level": 3,
+      "number": "11.6.6"
+    },
+    {
+      "id": "sec-temporal-parsetimezoneoffsetstring",
+      "title": "ParseTimeZoneOffsetString ( offsetString )",
+      "level": 3,
+      "number": "11.6.7"
+    },
+    {
+      "id": "sec-temporal-formattimezoneoffsetstring",
+      "title": "FormatTimeZoneOffsetString ( offsetNanoseconds )",
+      "level": 3,
+      "number": "11.6.8"
+    },
+    {
+      "id": "sec-temporal-formatisotimezoneoffsetstring",
+      "title": "FormatISOTimeZoneOffsetString ( offsetNanoseconds )",
+      "level": 3,
+      "number": "11.6.9"
+    },
+    {
+      "id": "sec-temporal-totemporaltimezone",
+      "title": "ToTemporalTimeZone ( temporalTimeZoneLike )",
+      "level": 3,
+      "number": "11.6.10"
+    },
+    {
+      "id": "sec-temporal-getoffsetnanosecondsfor",
+      "title": "GetOffsetNanosecondsFor ( timeZone, instant )",
+      "level": 3,
+      "number": "11.6.11"
+    },
+    {
+      "id": "sec-temporal-builtintimezonegetoffsetstringfor",
+      "title": "BuiltinTimeZoneGetOffsetStringFor ( timeZone, instant )",
+      "level": 3,
+      "number": "11.6.12"
+    },
+    {
+      "id": "sec-temporal-builtintimezonegetplaindatetimefor",
+      "title": "BuiltinTimeZoneGetPlainDateTimeFor ( timeZone, instant, calendar )",
+      "level": 3,
+      "number": "11.6.13"
+    },
+    {
+      "id": "sec-temporal-builtintimezonegetinstantfor",
+      "title": "BuiltinTimeZoneGetInstantFor ( timeZone, dateTime, disambiguation )",
+      "level": 3,
+      "number": "11.6.14"
+    },
+    {
+      "id": "sec-temporal-disambiguatepossibleinstants",
+      "title": "DisambiguatePossibleInstants ( possibleInstants, timeZone, dateTime, disambiguation )",
+      "level": 3,
+      "number": "11.6.15"
+    },
+    {
+      "id": "sec-temporal-getpossibleinstantsfor",
+      "title": "GetPossibleInstantsFor ( timeZone, dateTime )",
+      "level": 3,
+      "number": "11.6.16"
+    },
+    {
+      "id": "sec-temporal-timezoneequals",
+      "title": "TimeZoneEquals ( one, two )",
+      "level": 3,
+      "number": "11.6.17"
+    },
+    {
+      "id": "sec-temporal-calendar-objects",
+      "title": "Temporal.Calendar Objects",
+      "level": 1,
+      "number": "12"
+    },
+    {
+      "id": "sec-temporal-calendar-abstract-ops",
+      "title": "Abstract Operations for Temporal.Calendar Objects",
+      "level": 2,
+      "number": "12.1"
+    },
+    {
+      "id": "sec-temporal-createtemporalcalendar",
+      "title": "CreateTemporalCalendar ( identifier [ , newTarget ] )",
+      "level": 3,
+      "number": "12.1.1"
+    },
+    {
+      "id": "sec-temporal-isbuiltincalendar",
+      "title": "IsBuiltinCalendar ( id )",
+      "level": 3,
+      "number": "12.1.2"
+    },
+    {
+      "id": "sec-temporal-getbuiltincalendar",
+      "title": "GetBuiltinCalendar ( id )",
+      "level": 3,
+      "number": "12.1.3"
+    },
+    {
+      "id": "sec-temporal-getiso8601calendar",
+      "title": "GetISO8601Calendar ( )",
+      "level": 3,
+      "number": "12.1.4"
+    },
+    {
+      "id": "sec-temporal-calendarfields",
+      "title": "CalendarFields ( calendar, fieldNames )",
+      "level": 3,
+      "number": "12.1.5"
+    },
+    {
+      "id": "sec-temporal-calendarmergefields",
+      "title": "CalendarMergeFields ( calendar, fields, additionalFields )",
+      "level": 3,
+      "number": "12.1.6"
+    },
+    {
+      "id": "sec-temporal-calendardateadd",
+      "title": "CalendarDateAdd ( calendar, date, duration, options [ , dateAdd ] )",
+      "level": 3,
+      "number": "12.1.7"
+    },
+    {
+      "id": "sec-temporal-calendardateuntil",
+      "title": "CalendarDateUntil ( calendar, one, two, options [ , dateUntil ] )",
+      "level": 3,
+      "number": "12.1.8"
+    },
+    {
+      "id": "sec-temporal-calendaryear",
+      "title": "CalendarYear ( calendar, dateLike )",
+      "level": 3,
+      "number": "12.1.9"
+    },
+    {
+      "id": "sec-temporal-calendarmonth",
+      "title": "CalendarMonth ( calendar, dateLike )",
+      "level": 3,
+      "number": "12.1.10"
+    },
+    {
+      "id": "sec-temporal-calendarmonthcode",
+      "title": "CalendarMonthCode ( calendar, dateLike )",
+      "level": 3,
+      "number": "12.1.11"
+    },
+    {
+      "id": "sec-temporal-calendarday",
+      "title": "CalendarDay ( calendar, dateLike )",
+      "level": 3,
+      "number": "12.1.12"
+    },
+    {
+      "id": "sec-temporal-calendardayofweek",
+      "title": "CalendarDayOfWeek ( calendar, dateLike )",
+      "level": 3,
+      "number": "12.1.13"
+    },
+    {
+      "id": "sec-temporal-calendardayofyear",
+      "title": "CalendarDayOfYear ( calendar, dateLike )",
+      "level": 3,
+      "number": "12.1.14"
+    },
+    {
+      "id": "sec-temporal-calendarweekofyear",
+      "title": "CalendarWeekOfYear ( calendar, dateLike )",
+      "level": 3,
+      "number": "12.1.15"
+    },
+    {
+      "id": "sec-temporal-calendardaysinweek",
+      "title": "CalendarDaysInWeek ( calendar, dateLike )",
+      "level": 3,
+      "number": "12.1.16"
+    },
+    {
+      "id": "sec-temporal-calendardaysinmonth",
+      "title": "CalendarDaysInMonth ( calendar, dateLike )",
+      "level": 3,
+      "number": "12.1.17"
+    },
+    {
+      "id": "sec-temporal-calendardaysinyear",
+      "title": "CalendarDaysInYear ( calendar, dateLike )",
+      "level": 3,
+      "number": "12.1.18"
+    },
+    {
+      "id": "sec-temporal-calendarmonthsinyear",
+      "title": "CalendarMonthsInYear ( calendar, dateLike )",
+      "level": 3,
+      "number": "12.1.19"
+    },
+    {
+      "id": "sec-temporal-calendarinleapyear",
+      "title": "CalendarInLeapYear ( calendar, dateLike )",
+      "level": 3,
+      "number": "12.1.20"
+    },
+    {
+      "id": "sec-temporal-totemporalcalendar",
+      "title": "ToTemporalCalendar ( temporalCalendarLike )",
+      "level": 3,
+      "number": "12.1.21"
+    },
+    {
+      "id": "sec-temporal-totemporalcalendarwithisodefault",
+      "title": "ToTemporalCalendarWithISODefault ( temporalCalendarLike )",
+      "level": 3,
+      "number": "12.1.22"
+    },
+    {
+      "id": "sec-temporal-gettemporalcalendarwithisodefault",
+      "title": "GetTemporalCalendarWithISODefault ( item )",
+      "level": 3,
+      "number": "12.1.23"
+    },
+    {
+      "id": "sec-temporal-datefromfields",
+      "title": "DateFromFields ( calendar, fields, options )",
+      "level": 3,
+      "number": "12.1.24"
+    },
+    {
+      "id": "sec-temporal-yearmonthfromfields",
+      "title": "YearMonthFromFields ( calendar, fields [ , options ] )",
+      "level": 3,
+      "number": "12.1.25"
+    },
+    {
+      "id": "sec-temporal-monthdayfromfields",
+      "title": "MonthDayFromFields ( calendar, fields [ , options ] )",
+      "level": 3,
+      "number": "12.1.26"
+    },
+    {
+      "id": "sec-temporal-formatcalendarannotation",
+      "title": "FormatCalendarAnnotation ( id, showCalendar )",
+      "level": 3,
+      "number": "12.1.27"
+    },
+    {
+      "id": "sec-temporal-calendarequals",
+      "title": "CalendarEquals ( one, two )",
+      "level": 3,
+      "number": "12.1.28"
+    },
+    {
+      "id": "sec-temporal-consolidatecalendars",
+      "title": "ConsolidateCalendars ( one, two )",
+      "level": 3,
+      "number": "12.1.29"
+    },
+    {
+      "id": "sec-temporal-isisoleapyear",
+      "title": "IsISOLeapYear ( year )",
+      "level": 3,
+      "number": "12.1.30"
+    },
+    {
+      "id": "sec-temporal-isodaysinyear",
+      "title": "ISODaysInYear ( year )",
+      "level": 3,
+      "number": "12.1.31"
+    },
+    {
+      "id": "sec-temporal-isodaysinmonth",
+      "title": "ISODaysInMonth ( year, month )",
+      "level": 3,
+      "number": "12.1.32"
+    },
+    {
+      "id": "sec-temporal-toisodayofweek",
+      "title": "ToISODayOfWeek ( year, month, day )",
+      "level": 3,
+      "number": "12.1.33"
+    },
+    {
+      "id": "sec-temporal-toisodayofyear",
+      "title": "ToISODayOfYear ( year, month, day )",
+      "level": 3,
+      "number": "12.1.34"
+    },
+    {
+      "id": "sec-temporal-toisoweekofyear",
+      "title": "ToISOWeekOfYear ( year, month, day )",
+      "level": 3,
+      "number": "12.1.35"
+    },
+    {
+      "id": "sec-buildisomonthcode",
+      "title": "BuildISOMonthCode ( month )",
+      "level": 3,
+      "number": "12.1.36"
+    },
+    {
+      "id": "sec-temporal-resolveisomonth",
+      "title": "ResolveISOMonth ( fields )",
+      "level": 3,
+      "number": "12.1.37"
+    },
+    {
+      "id": "sec-temporal-isodatefromfields",
+      "title": "ISODateFromFields ( fields, options )",
+      "level": 3,
+      "number": "12.1.38"
+    },
+    {
+      "id": "sec-temporal-isoyearmonthfromfields",
+      "title": "ISOYearMonthFromFields ( fields, options )",
+      "level": 3,
+      "number": "12.1.39"
+    },
+    {
+      "id": "sec-temporal-isomonthdayfromfields",
+      "title": "ISOMonthDayFromFields ( fields, options )",
+      "level": 3,
+      "number": "12.1.40"
+    },
+    {
+      "id": "sec-temporal-isoyear",
+      "title": "ISOYear ( temporalObject )",
+      "level": 3,
+      "number": "12.1.41"
+    },
+    {
+      "id": "sec-temporal-isomonth",
+      "title": "ISOMonth ( temporalObject )",
+      "level": 3,
+      "number": "12.1.42"
+    },
+    {
+      "id": "sec-temporal-isomonthcode",
+      "title": "ISOMonthCode ( temporalObject )",
+      "level": 3,
+      "number": "12.1.43"
+    },
+    {
+      "id": "sec-temporal-isoday",
+      "title": "ISODay ( temporalObject )",
+      "level": 3,
+      "number": "12.1.44"
+    },
+    {
+      "id": "sec-temporal-defaultmergefields",
+      "title": "DefaultMergeFields ( fields, additionalFields )",
+      "level": 3,
+      "number": "12.1.45"
+    },
+    {
+      "id": "sec-temporal-calendar-constructor",
+      "title": "The Temporal.Calendar Constructor",
+      "level": 2,
+      "number": "12.2"
+    },
+    {
+      "id": "sec-temporal.calendar",
+      "title": "Temporal.Calendar ( id )",
+      "level": 3,
+      "number": "12.2.1"
+    },
+    {
+      "id": "sec-properties-of-the-temporal-calendar-constructor",
+      "title": "Properties of the Temporal.Calendar Constructor",
+      "level": 2,
+      "number": "12.3"
+    },
+    {
+      "id": "sec-temporal-calendar-prototype",
+      "title": "Temporal.Calendar.prototype",
+      "level": 3,
+      "number": "12.3.1"
+    },
+    {
+      "id": "sec-temporal.calendar.from",
+      "title": "Temporal.Calendar.from ( item )",
+      "level": 3,
+      "number": "12.3.2"
+    },
+    {
+      "id": "sec-properties-of-the-temporal-calendar-prototype-object",
+      "title": "Properties of the Temporal.Calendar Prototype Object",
+      "level": 2,
+      "number": "12.4"
+    },
+    {
+      "id": "sec-temporal.calendar.prototype.constructor",
+      "title": "Temporal.Calendar.prototype.constructor",
+      "level": 3,
+      "number": "12.4.1"
+    },
+    {
+      "id": "sec-temporal.calendar.prototype-@@tostringtag",
+      "title": "Temporal.Calendar.prototype[ @@toStringTag ]",
+      "level": 3,
+      "number": "12.4.2"
+    },
+    {
+      "id": "sec-get-temporal.calendar.prototype.id",
+      "title": "get Temporal.Calendar.prototype.id",
+      "level": 3,
+      "number": "12.4.3"
+    },
+    {
+      "id": "sec-temporal.calendar.prototype.datefromfields",
+      "title": "Temporal.Calendar.prototype.dateFromFields ( fields [ , options ] )",
+      "level": 3,
+      "number": "12.4.4"
+    },
+    {
+      "id": "sec-temporal.calendar.prototype.yearmonthfromfields",
+      "title": "Temporal.Calendar.prototype.yearMonthFromFields ( fields [ , options ] )",
+      "level": 3,
+      "number": "12.4.5"
+    },
+    {
+      "id": "sec-temporal.calendar.prototype.monthdayfromfields",
+      "title": "Temporal.Calendar.prototype.monthDayFromFields ( fields [ , options ] )",
+      "level": 3,
+      "number": "12.4.6"
+    },
+    {
+      "id": "sec-temporal.calendar.prototype.dateadd",
+      "title": "Temporal.Calendar.prototype.dateAdd ( date, duration [ , options ] )",
+      "level": 3,
+      "number": "12.4.7"
+    },
+    {
+      "id": "sec-temporal.calendar.prototype.dateuntil",
+      "title": "Temporal.Calendar.prototype.dateUntil ( one, two [ , options ] )",
+      "level": 3,
+      "number": "12.4.8"
+    },
+    {
+      "id": "sec-temporal.calendar.prototype.year",
+      "title": "Temporal.Calendar.prototype.year ( temporalDateLike )",
+      "level": 3,
+      "number": "12.4.9"
+    },
+    {
+      "id": "sec-temporal.calendar.prototype.month",
+      "title": "Temporal.Calendar.prototype.month ( temporalDateLike )",
+      "level": 3,
+      "number": "12.4.10"
+    },
+    {
+      "id": "sec-temporal.calendar.prototype.monthcode",
+      "title": "Temporal.Calendar.prototype.monthCode ( temporalDateLike )",
+      "level": 3,
+      "number": "12.4.11"
+    },
+    {
+      "id": "sec-temporal.calendar.prototype.day",
+      "title": "Temporal.Calendar.prototype.day ( temporalDateLike )",
+      "level": 3,
+      "number": "12.4.12"
+    },
+    {
+      "id": "sec-temporal.calendar.prototype.dayofweek",
+      "title": "Temporal.Calendar.prototype.dayOfWeek ( temporalDateLike )",
+      "level": 3,
+      "number": "12.4.13"
+    },
+    {
+      "id": "sec-temporal.calendar.prototype.dayofyear",
+      "title": "Temporal.Calendar.prototype.dayOfYear ( temporalDateLike )",
+      "level": 3,
+      "number": "12.4.14"
+    },
+    {
+      "id": "sec-temporal.calendar.prototype.weekofyear",
+      "title": "Temporal.Calendar.prototype.weekOfYear ( temporalDateLike )",
+      "level": 3,
+      "number": "12.4.15"
+    },
+    {
+      "id": "sec-temporal.calendar.prototype.daysinweek",
+      "title": "Temporal.Calendar.prototype.daysInWeek ( temporalDateLike )",
+      "level": 3,
+      "number": "12.4.16"
+    },
+    {
+      "id": "sec-temporal.calendar.prototype.daysinmonth",
+      "title": "Temporal.Calendar.prototype.daysInMonth ( temporalDateLike )",
+      "level": 3,
+      "number": "12.4.17"
+    },
+    {
+      "id": "sec-temporal.calendar.prototype.daysinyear",
+      "title": "Temporal.Calendar.prototype.daysInYear ( temporalDateLike )",
+      "level": 3,
+      "number": "12.4.18"
+    },
+    {
+      "id": "sec-temporal.calendar.prototype.monthsinyear",
+      "title": "Temporal.Calendar.prototype.monthsInYear ( temporalDateLike )",
+      "level": 3,
+      "number": "12.4.19"
+    },
+    {
+      "id": "sec-temporal.calendar.prototype.inleapyear",
+      "title": "Temporal.Calendar.prototype.inLeapYear ( temporalDateLike )",
+      "level": 3,
+      "number": "12.4.20"
+    },
+    {
+      "id": "sec-temporal.calendar.prototype.fields",
+      "title": "Temporal.Calendar.prototype.fields ( fields )",
+      "level": 3,
+      "number": "12.4.21"
+    },
+    {
+      "id": "sec-temporal.calendar.prototype.mergefields",
+      "title": "Temporal.Calendar.prototype.mergeFields ( fields, additionalFields )",
+      "level": 3,
+      "number": "12.4.22"
+    },
+    {
+      "id": "sec-temporal.calendar.prototype.tostring",
+      "title": "Temporal.Calendar.prototype.toString ( )",
+      "level": 3,
+      "number": "12.4.23"
+    },
+    {
+      "id": "sec-temporal.calendar.prototype.tojson",
+      "title": "Temporal.Calendar.prototype.toJSON ( )",
+      "level": 3,
+      "number": "12.4.24"
+    },
+    {
+      "id": "sec-properties-of-temporal-calendar-instances",
+      "title": "Properties of Temporal.Calendar Instances",
+      "level": 2,
+      "number": "12.5"
+    },
+    {
+      "id": "sec-temporal-abstract-ops",
+      "title": "Abstract operations",
+      "level": 1,
+      "number": "13"
+    },
+    {
+      "id": "sec-iterabletolistoftype",
+      "title": "IterableToListOfType ( items, elementTypes )",
+      "level": 2,
+      "number": "13.1"
+    },
+    {
+      "id": "sec-getoptionsobject",
+      "title": "GetOptionsObject ( options )",
+      "level": 2,
+      "number": "13.2"
+    },
+    {
+      "id": "sec-getoption",
+      "title": "GetOption ( options, property, types, values, fallback )",
+      "level": 2,
+      "number": "13.3"
+    },
+    {
+      "id": "sec-getstringornumberoption",
+      "title": "GetStringOrNumberOption ( options, property, stringValues, minimum, maximum, fallback )",
+      "level": 2,
+      "number": "13.4"
+    },
+    {
+      "id": "sec-temporal-totemporaloverflow",
+      "title": "ToTemporalOverflow ( normalizedOptions )",
+      "level": 2,
+      "number": "13.5"
+    },
+    {
+      "id": "sec-temporal-totemporaldisambiguation",
+      "title": "ToTemporalDisambiguation ( normalizedOptions )",
+      "level": 2,
+      "number": "13.6"
+    },
+    {
+      "id": "sec-temporal-totemporalroundingmode",
+      "title": "ToTemporalRoundingMode ( normalizedOptions, fallback )",
+      "level": 2,
+      "number": "13.7"
+    },
+    {
+      "id": "sec-temporal-negatetemporalroundingmode",
+      "title": "NegateTemporalRoundingMode ( roundingMode )",
+      "level": 2,
+      "number": "13.8"
+    },
+    {
+      "id": "sec-temporal-totemporaloffset",
+      "title": "ToTemporalOffset ( normalizedOptions, fallback )",
+      "level": 2,
+      "number": "13.9"
+    },
+    {
+      "id": "sec-temporal-toshowcalendaroption",
+      "title": "ToShowCalendarOption ( normalizedOptions )",
+      "level": 2,
+      "number": "13.10"
+    },
+    {
+      "id": "sec-temporal-toshowtimezonenameoption",
+      "title": "ToShowTimeZoneNameOption ( normalizedOptions )",
+      "level": 2,
+      "number": "13.11"
+    },
+    {
+      "id": "sec-temporal-toshowoffsetoption",
+      "title": "ToShowOffsetOption ( normalizedOptions )",
+      "level": 2,
+      "number": "13.12"
+    },
+    {
+      "id": "sec-temporal-totemporalroundingincrement",
+      "title": "ToTemporalRoundingIncrement ( normalizedOptions, dividend, inclusive )",
+      "level": 2,
+      "number": "13.13"
+    },
+    {
+      "id": "sec-temporal-totemporaldatetimeroundingincrement",
+      "title": "ToTemporalDateTimeRoundingIncrement ( normalizedOptions, smallestUnit )",
+      "level": 2,
+      "number": "13.14"
+    },
+    {
+      "id": "sec-temporal-tosecondsstringprecision",
+      "title": "ToSecondsStringPrecision ( normalizedOptions )",
+      "level": 2,
+      "number": "13.15"
+    },
+    {
+      "id": "sec-temporal-tolargesttemporalunit",
+      "title": "ToLargestTemporalUnit ( normalizedOptions, disallowedUnits, fallback [ , autoValue ] )",
+      "level": 2,
+      "number": "13.16"
+    },
+    {
+      "id": "sec-temporal-tosmallesttemporalunit",
+      "title": "ToSmallestTemporalUnit ( normalizedOptions, disallowedUnits, fallback )",
+      "level": 2,
+      "number": "13.17"
+    },
+    {
+      "id": "sec-temporal-totemporaldurationtotalunit",
+      "title": "ToTemporalDurationTotalUnit ( normalizedOptions )",
+      "level": 2,
+      "number": "13.18"
+    },
+    {
+      "id": "sec-temporal-singular-and-plural-units",
+      "title": "Singular and plural units",
+      "level": 2,
+      "number": "13.19"
+    },
+    {
+      "id": "sec-temporal-torelativetemporalobject",
+      "title": "ToRelativeTemporalObject ( options )",
+      "level": 2,
+      "number": "13.20"
+    },
+    {
+      "id": "sec-temporal-validatetemporalunitrange",
+      "title": "ValidateTemporalUnitRange ( largestUnit, smallestUnit )",
+      "level": 2,
+      "number": "13.21"
+    },
+    {
+      "id": "sec-temporal-largeroftwotemporalunits",
+      "title": "LargerOfTwoTemporalUnits ( u1, u2 )",
+      "level": 2,
+      "number": "13.22"
+    },
+    {
+      "id": "sec-temporal-mergelargestunitoption",
+      "title": "MergeLargestUnitOption ( options, largestUnit )",
+      "level": 2,
+      "number": "13.23"
+    },
+    {
+      "id": "sec-temporal-maximumtemporaldurationroundingincrement",
+      "title": "MaximumTemporalDurationRoundingIncrement ( unit )",
+      "level": 2,
+      "number": "13.24"
+    },
+    {
+      "id": "sec-temporal-rejectobjectwithcalendarortimezone",
+      "title": "RejectObjectWithCalendarOrTimeZone ( object )",
+      "level": 2,
+      "number": "13.25"
+    },
+    {
+      "id": "sec-temporal-formatsecondsstringpart",
+      "title": "FormatSecondsStringPart ( second, millisecond, microsecond, nanosecond, precision )",
+      "level": 2,
+      "number": "13.26"
+    },
+    {
+      "id": "sec-temporal-sign",
+      "title": "Sign ( n )",
+      "level": 2,
+      "number": "13.27"
+    },
+    {
+      "id": "sec-temporal-constraintorange",
+      "title": "ConstrainToRange ( x, minimum, maximum )",
+      "level": 2,
+      "number": "13.28"
+    },
+    {
+      "id": "sec-temporal-roundtowardszero",
+      "title": "RoundTowardsZero ( x )",
+      "level": 2,
+      "number": "13.29"
+    },
+    {
+      "id": "sec-temporal-roundhalfawayfromzero",
+      "title": "RoundHalfAwayFromZero ( x )",
+      "level": 2,
+      "number": "13.30"
+    },
+    {
+      "id": "sec-temporal-roundnumbertoincrement",
+      "title": "RoundNumberToIncrement ( x, increment, roundingMode )",
+      "level": 2,
+      "number": "13.31"
+    },
+    {
+      "id": "sec-temporal-iso8601grammar",
+      "title": "ISO 8601 grammar",
+      "level": 2,
+      "number": "13.32"
+    },
+    {
+      "id": "sec-temporal-parseisodatetime",
+      "title": "ParseISODateTime ( isoString )",
+      "level": 2,
+      "number": "13.33"
+    },
+    {
+      "id": "sec-temporal-parsetemporalinstantstring",
+      "title": "ParseTemporalInstantString ( isoString )",
+      "level": 2,
+      "number": "13.34"
+    },
+    {
+      "id": "sec-temporal-parsetemporalzoneddatetimestring",
+      "title": "ParseTemporalZonedDateTimeString ( isoString )",
+      "level": 2,
+      "number": "13.35"
+    },
+    {
+      "id": "sec-temporal-parsetemporalcalendarstring",
+      "title": "ParseTemporalCalendarString ( isoString )",
+      "level": 2,
+      "number": "13.36"
+    },
+    {
+      "id": "sec-temporal-parsetemporaldatestring",
+      "title": "ParseTemporalDateString ( isoString )",
+      "level": 2,
+      "number": "13.37"
+    },
+    {
+      "id": "sec-temporal-parsetemporaldatetimestring",
+      "title": "ParseTemporalDateTimeString ( isoString )",
+      "level": 2,
+      "number": "13.38"
+    },
+    {
+      "id": "sec-temporal-parsetemporaldurationstring",
+      "title": "ParseTemporalDurationString ( isoString )",
+      "level": 2,
+      "number": "13.39"
+    },
+    {
+      "id": "sec-temporal-parsetemporalmonthdaystring",
+      "title": "ParseTemporalMonthDayString ( isoString )",
+      "level": 2,
+      "number": "13.40"
+    },
+    {
+      "id": "sec-temporal-parsetemporalrelativetostring",
+      "title": "ParseTemporalRelativeToString ( isoString )",
+      "level": 2,
+      "number": "13.41"
+    },
+    {
+      "id": "sec-temporal-parsetemporaltimestring",
+      "title": "ParseTemporalTimeString ( isoString )",
+      "level": 2,
+      "number": "13.42"
+    },
+    {
+      "id": "sec-temporal-parsetemporaltimezonestring",
+      "title": "ParseTemporalTimeZoneString ( isoString )",
+      "level": 2,
+      "number": "13.43"
+    },
+    {
+      "id": "sec-temporal-parsetemporalyearmonthstring",
+      "title": "ParseTemporalYearMonthString ( isoString )",
+      "level": 2,
+      "number": "13.44"
+    },
+    {
+      "id": "sec-temporal-topositiveinteger",
+      "title": "ToPositiveInteger ( argument )",
+      "level": 2,
+      "number": "13.45"
+    },
+    {
+      "id": "sec-temporal-tointegerthrowoninfinity",
+      "title": "ToIntegerThrowOnInfinity ( argument )",
+      "level": 2,
+      "number": "13.46"
+    },
+    {
+      "id": "sec-temporal-tointegerwithoutrounding",
+      "title": "ToIntegerWithoutRounding ( argument )",
+      "level": 2,
+      "number": "13.47"
+    },
+    {
+      "id": "sec-temporal-preparetemporalfields",
+      "title": "PrepareTemporalFields ( fields, fieldNames, requiredFields )",
+      "level": 2,
+      "number": "13.48"
+    },
+    {
+      "id": "sec-temporal-preparepartialtemporalfields",
+      "title": "PreparePartialTemporalFields ( fields, fieldNames )",
+      "level": 2,
+      "number": "13.49"
+    },
+    {
+      "id": "sec-temporal-legacy-date-objects",
+      "title": "Amendments to the ECMAScript® 2021 Language Specification",
+      "level": 1,
+      "number": "14"
+    },
+    {
+      "id": "sec-literals-numeric-literals",
+      "title": "Numeric Literals",
+      "level": 2,
+      "number": "14.1"
+    },
+    {
+      "id": "sec-mathematical-operations",
+      "title": "Mathematical Operations",
+      "level": 2,
+      "number": "14.2"
+    },
+    {
+      "id": "sec-temporal-properties-of-the-legacy-date-prototype-object",
+      "title": "Properties of the Date Prototype Object",
+      "level": 2,
+      "number": "14.3"
+    },
+    {
+      "id": "sec-date.prototype.totemporalinstant",
+      "title": "Date.prototype.toTemporalInstant ( )",
+      "level": 3,
+      "number": "14.3.1"
+    },
+    {
+      "id": "sec-temporal-intl",
+      "title": "Amendments to the ECMAScript® 2021 Internationalization API Specification",
+      "level": 1,
+      "number": "15"
+    },
+    {
+      "id": "sup-time-zone-names",
+      "title": "Time Zone Names",
+      "level": 2,
+      "number": "15.1"
+    },
+    {
+      "id": "sup-isvalidtimezonename",
+      "title": "IsValidTimeZoneName ( timeZone )",
+      "level": 3,
+      "number": "15.1.1"
+    },
+    {
+      "id": "sup-canonicalizetimezonename",
+      "title": "CanonicalizeTimeZoneName ( timeZone )",
+      "level": 3,
+      "number": "15.1.2"
+    },
+    {
+      "id": "sup-canonicalizetimezonename",
+      "title": "CanonicalizeTimeZoneName (\n          timeZone: a String value that is a valid time zone name as verified by IsValidTimeZoneName,\n        )"
+    },
+    {
+      "id": "sup-defaulttimezone",
+      "title": "DefaultTimeZone ( )",
+      "level": 3,
+      "number": "15.1.3"
+    },
+    {
+      "id": "sec-abstract-operations",
+      "title": "Abstract Operations",
+      "level": 2,
+      "number": "15.2"
+    },
+    {
+      "id": "sec-getoptionsobject-deleted",
+      "title": "GetOptionsObject ( options )",
+      "level": 3,
+      "number": "15.2.1"
+    },
+    {
+      "id": "sec-datetimeformat-abstracts",
+      "title": "Abstract Operations For DateTimeFormat Objects",
+      "level": 2,
+      "number": "15.3"
+    },
+    {
+      "id": "sec-temporal-initializedatetimeformat",
+      "title": "InitializeDateTimeFormat ( dateTimeFormat, locales, options )",
+      "level": 3,
+      "number": "15.3.1"
+    },
+    {
+      "id": "sec-datetime-format-functions",
+      "title": "DateTime Format Functions",
+      "level": 3,
+      "number": "15.3.2"
+    },
+    {
+      "id": "sec-formatdatetimepattern",
+      "title": "FormatDateTimePattern ( dateTimeFormat, pattern, patternParts, xepochNanoseconds, rangeFormatOptions )",
+      "level": 3,
+      "number": "15.3.3"
+    },
+    {
+      "id": "sec-partitiondatetimepattern",
+      "title": "PartitionDateTimePattern ( dateTimeFormat, x )",
+      "level": 3,
+      "number": "15.3.4"
+    },
+    {
+      "id": "sec-formatdatetime",
+      "title": "FormatDateTime ( dateTimeFormat, x )",
+      "level": 3,
+      "number": "15.3.5"
+    },
+    {
+      "id": "sec-temporal-formatdatetimetoparts",
+      "title": "FormatDateTimeToParts ( dateTimeFormat, x )",
+      "level": 3,
+      "number": "15.3.6"
+    },
+    {
+      "id": "sec-partitiondatetimerangepattern",
+      "title": "PartitionDateTimeRangePattern ( dateTimeFormat, x, y )",
+      "level": 3,
+      "number": "15.3.7"
+    },
+    {
+      "id": "sec-formatdatetimerange",
+      "title": "FormatDateTimeRange ( dateTimeFormat, x, y )",
+      "level": 3,
+      "number": "15.3.8"
+    },
+    {
+      "id": "sec-formatdatetimerangetoparts",
+      "title": "FormatDateTimeRangeToParts ( dateTimeFormat, x, y )",
+      "level": 3,
+      "number": "15.3.9"
+    },
+    {
+      "id": "sec-temporal-istemporalobject",
+      "title": "IsTemporalObject ( value )",
+      "level": 3,
+      "number": "15.3.10"
+    },
+    {
+      "id": "sec-temporal-sametemporaltype",
+      "title": "SameTemporalType ( x, y )",
+      "level": 3,
+      "number": "15.3.11"
+    },
+    {
+      "id": "sec-temporal-getdatetimeformatpattern",
+      "title": "GetDateTimeFormatPattern ( dateStyle, timeStyle, matcher, opt, dataLocaleData, hc )",
+      "level": 3,
+      "number": "15.3.12"
+    },
+    {
+      "id": "sec-temporal-handledatetimevaluetemporaldate",
+      "title": "HandleDateTimeTemporalDate ( dateTimeFormat, temporalDate )",
+      "level": 3,
+      "number": "15.3.13"
+    },
+    {
+      "id": "sec-temporal-handledatetimevaluetemporalyearmonth",
+      "title": "HandleDateTimeTemporalYearMonth ( dateTimeFormat, temporalYearMonth )",
+      "level": 3,
+      "number": "15.3.14"
+    },
+    {
+      "id": "sec-temporal-handledatetimevaluetemporalmonthday",
+      "title": "HandleDateTimeTemporalMonthDay ( dateTimeFormat, temporalMonthDay )",
+      "level": 3,
+      "number": "15.3.15"
+    },
+    {
+      "id": "sec-temporal-handledatetimevaluetemporaltime",
+      "title": "HandleDateTimeTemporalTime ( dateTimeFormat, temporalTime )",
+      "level": 3,
+      "number": "15.3.16"
+    },
+    {
+      "id": "sec-temporal-handledatetimevaluetemporaldatetime",
+      "title": "HandleDateTimeTemporalDateTime ( dateTimeFormat, dateTime )",
+      "level": 3,
+      "number": "15.3.17"
+    },
+    {
+      "id": "sec-temporal-handledatetimevaluetemporalinstant",
+      "title": "HandleDateTimeTemporalInstant ( dateTimeFormat, instant )",
+      "level": 3,
+      "number": "15.3.18"
+    },
+    {
+      "id": "sec-temporal-handledatetimevaluetemporalzoneddatetime",
+      "title": "HandleDateTimeTemporalZonedDateTime ( dateTimeFormat, zonedDateTime )",
+      "level": 3,
+      "number": "15.3.19"
+    },
+    {
+      "id": "sec-temporal-handledatetimeothers",
+      "title": "HandleDateTimeOthers ( dateTimeFormat, x )",
+      "level": 3,
+      "number": "15.3.20"
+    },
+    {
+      "id": "sec-temporal-handledatetimevalue",
+      "title": "HandleDateTimeValue ( dateTimeFormat, x )",
+      "level": 3,
+      "number": "15.3.21"
+    },
+    {
+      "id": "sec-temporal-tolocaltime",
+      "title": "ToLocalTime ( t, calendar, timeZone )",
+      "level": 3,
+      "number": "15.3.22"
+    },
+    {
+      "id": "sec-properties-of-intl-datetimeformat-prototype-object",
+      "title": "Properties of the Intl.DateTimeFormat Prototype Object",
+      "level": 2,
+      "number": "15.4"
+    },
+    {
+      "id": "sec-Intl.DateTimeFormat.prototype.formatToParts",
+      "title": "Intl.DateTimeFormat.prototype.formatToParts ( date )",
+      "level": 3,
+      "number": "15.4.1"
+    },
+    {
+      "id": "sec-intl.datetimeformat.prototype.formatRange",
+      "title": "Intl.DateTimeFormat.prototype.formatRange ( startDate, endDate )",
+      "level": 3,
+      "number": "15.4.2"
+    },
+    {
+      "id": "sec-Intl.DateTimeFormat.prototype.formatRangeToParts",
+      "title": "Intl.DateTimeFormat.prototype.formatRangeToParts ( startDate, endDate )",
+      "level": 3,
+      "number": "15.4.3"
+    },
+    {
+      "id": "sec-intl.datetimeformat.prototype.resolvedoptions",
+      "title": "Intl.DateTimeFormat.prototype.resolvedOptions ( )",
+      "level": 3,
+      "number": "15.4.4"
+    },
+    {
+      "id": "sec-properties-of-intl-datetimeformat-instances",
+      "title": "Properties of Intl.DateTimeFormat Instances",
+      "level": 2,
+      "number": "15.5"
+    },
+    {
+      "id": "locale-sensitive-functions",
+      "title": "Locale Sensitive Functions of the ECMAScript Language Specification",
+      "level": 2,
+      "number": "15.6"
+    },
+    {
+      "id": "sup-temporal-calendar-abstract-ops",
+      "title": "Abstract Operations for Temporal.Calendar Objects",
+      "level": 3,
+      "number": "15.6.1"
+    },
+    {
+      "id": "sup-temporal-isbuiltincalendar",
+      "title": "IsBuiltinCalendar ( id )",
+      "level": 4,
+      "number": "15.6.1.1"
+    },
+    {
+      "id": "sec-temporal-calendarera",
+      "title": "CalendarEra ( calendar, dateLike )",
+      "level": 4,
+      "number": "15.6.1.2"
+    },
+    {
+      "id": "sec-temporal-calendarerayear",
+      "title": "CalendarEraYear ( calendar, dateLike )",
+      "level": 4,
+      "number": "15.6.1.3"
+    },
+    {
+      "id": "sup-properties-of-the-temporal-calendar-prototype-object",
+      "title": "Properties of the Temporal.Calendar Prototype Object",
+      "level": 3,
+      "number": "15.6.2"
+    },
+    {
+      "id": "sup-temporal.calendar.prototype.datefromfields",
+      "title": "Temporal.Calendar.prototype.dateFromFields ( fields [ , options ] )",
+      "level": 4,
+      "number": "15.6.2.1"
+    },
+    {
+      "id": "sup-temporal.calendar.prototype.yearmonthfromfields",
+      "title": "Temporal.Calendar.prototype.yearMonthFromFields ( fields [ , options ] )",
+      "level": 4,
+      "number": "15.6.2.2"
+    },
+    {
+      "id": "sup-temporal.calendar.prototype.monthdayfromfields",
+      "title": "Temporal.Calendar.prototype.monthDayFromFields ( fields [ , options ] )",
+      "level": 4,
+      "number": "15.6.2.3"
+    },
+    {
+      "id": "sup-temporal.calendar.prototype.dateadd",
+      "title": "Temporal.Calendar.prototype.dateAdd ( date, duration [ , options ] )",
+      "level": 4,
+      "number": "15.6.2.4"
+    },
+    {
+      "id": "sup-temporal.calendar.prototype.dateuntil",
+      "title": "Temporal.Calendar.prototype.dateUntil ( one, two [ , options ] )",
+      "level": 4,
+      "number": "15.6.2.5"
+    },
+    {
+      "id": "sec-temporal.calendar.prototype.era",
+      "title": "Temporal.Calendar.prototype.era ( temporalDateLike )",
+      "level": 4,
+      "number": "15.6.2.6"
+    },
+    {
+      "id": "sec-temporal.calendar.prototype.erayear",
+      "title": "Temporal.Calendar.prototype.eraYear ( temporalDateLike )",
+      "level": 4,
+      "number": "15.6.2.7"
+    },
+    {
+      "id": "sup-temporal.calendar.prototype.year",
+      "title": "Temporal.Calendar.prototype.year ( temporalDateLike )",
+      "level": 4,
+      "number": "15.6.2.8"
+    },
+    {
+      "id": "sup-temporal.calendar.prototype.month",
+      "title": "Temporal.Calendar.prototype.month ( temporalDateLike )",
+      "level": 4,
+      "number": "15.6.2.9"
+    },
+    {
+      "id": "sup-temporal.calendar.prototype.monthcode",
+      "title": "Temporal.Calendar.prototype.monthCode ( temporalDateLike )",
+      "level": 4,
+      "number": "15.6.2.10"
+    },
+    {
+      "id": "sup-temporal.calendar.prototype.day",
+      "title": "Temporal.Calendar.prototype.day ( temporalDateLike )",
+      "level": 4,
+      "number": "15.6.2.11"
+    },
+    {
+      "id": "sup-temporal.calendar.prototype.dayofweek",
+      "title": "Temporal.Calendar.prototype.dayOfWeek ( dateOrDateTime )",
+      "level": 4,
+      "number": "15.6.2.12"
+    },
+    {
+      "id": "sup-temporal.calendar.prototype.dayofyear",
+      "title": "Temporal.Calendar.prototype.dayOfYear ( temporalDateLike )",
+      "level": 4,
+      "number": "15.6.2.13"
+    },
+    {
+      "id": "sup-temporal.calendar.prototype.weekofyear",
+      "title": "Temporal.Calendar.prototype.weekOfYear ( temporalDateLike )",
+      "level": 4,
+      "number": "15.6.2.14"
+    },
+    {
+      "id": "sup-temporal.calendar.prototype.daysinweek",
+      "title": "Temporal.Calendar.prototype.daysInWeek ( temporalDateLike )",
+      "level": 4,
+      "number": "15.6.2.15"
+    },
+    {
+      "id": "sup-temporal.calendar.prototype.daysinmonth",
+      "title": "Temporal.Calendar.prototype.daysInMonth ( temporalDateLike )",
+      "level": 4,
+      "number": "15.6.2.16"
+    },
+    {
+      "id": "sup-temporal.calendar.prototype.daysinyear",
+      "title": "Temporal.Calendar.prototype.daysInYear ( temporalDateLike )",
+      "level": 4,
+      "number": "15.6.2.17"
+    },
+    {
+      "id": "sup-temporal.calendar.prototype.monthsinyear",
+      "title": "Temporal.Calendar.prototype.monthsInYear ( temporalDateLike )",
+      "level": 4,
+      "number": "15.6.2.18"
+    },
+    {
+      "id": "sup-temporal.calendar.prototype.inleapyear",
+      "title": "Temporal.Calendar.prototype.inLeapYear ( temporalDateLike )",
+      "level": 4,
+      "number": "15.6.2.19"
+    },
+    {
+      "id": "sup-temporal.calendar.prototype.fields",
+      "title": "Temporal.Calendar.prototype.fields ( fields )",
+      "level": 4,
+      "number": "15.6.2.20"
+    },
+    {
+      "id": "sup-temporal.calendar.prototype.mergefields",
+      "title": "Temporal.Calendar.prototype.mergeFields ( fields, additionalFields )",
+      "level": 4,
+      "number": "15.6.2.21"
+    },
+    {
+      "id": "sup-properties-of-the-temporal-duration-prototype-object",
+      "title": "Properties of the Temporal.Duration Prototype Object",
+      "level": 3,
+      "number": "15.6.3"
+    },
+    {
+      "id": "sup-temporal.duration.prototype.tolocalestring",
+      "title": "Temporal.Duration.prototype.toLocaleString ( [ locales [ , options ] ] )",
+      "level": 4,
+      "number": "15.6.3.1"
+    },
+    {
+      "id": "sup-properties-of-the-temporal-instant-prototype-object",
+      "title": "Properties of the Temporal.Instant Prototype Object",
+      "level": 3,
+      "number": "15.6.4"
+    },
+    {
+      "id": "sup-temporal.instant.prototype.tolocalestring",
+      "title": "Temporal.Instant.prototype.toLocaleString ( [ locales [ , options ] ] )",
+      "level": 4,
+      "number": "15.6.4.1"
+    },
+    {
+      "id": "sup-properties-of-the-temporal-plaindate-prototype-object",
+      "title": "Properties of the Temporal.PlainDate Prototype Object",
+      "level": 3,
+      "number": "15.6.5"
+    },
+    {
+      "id": "sup-temporal.plaindate.prototype.tolocalestring",
+      "title": "Temporal.PlainDate.prototype.toLocaleString ( [ locales [ , options ] ] )",
+      "level": 4,
+      "number": "15.6.5.1"
+    },
+    {
+      "id": "sec-get-temporal.plaindate.prototype.era",
+      "title": "get Temporal.PlainDate.prototype.era",
+      "level": 4,
+      "number": "15.6.5.2"
+    },
+    {
+      "id": "sec-get-temporal.plaindate.prototype.erayear",
+      "title": "get Temporal.PlainDate.prototype.eraYear",
+      "level": 4,
+      "number": "15.6.5.3"
+    },
+    {
+      "id": "sup-properties-of-the-temporal-plaindatetime-prototype-object",
+      "title": "Properties of the Temporal.PlainDateTime Prototype Object",
+      "level": 3,
+      "number": "15.6.6"
+    },
+    {
+      "id": "sup-temporal.plaindatetime.prototype.tolocalestring",
+      "title": "Temporal.PlainDateTime.prototype.toLocaleString ( [ locales [ , options ] ] )",
+      "level": 4,
+      "number": "15.6.6.1"
+    },
+    {
+      "id": "sec-get-temporal.plaindatetime.prototype.era",
+      "title": "get Temporal.PlainDateTime.prototype.era",
+      "level": 4,
+      "number": "15.6.6.2"
+    },
+    {
+      "id": "sec-get-temporal.plaindatetime.prototype.erayear",
+      "title": "get Temporal.PlainDateTime.prototype.eraYear",
+      "level": 4,
+      "number": "15.6.6.3"
+    },
+    {
+      "id": "sup-properties-of-the-temporal-plainmonthday-prototype-object",
+      "title": "Properties of the Temporal.PlainMonthDay Prototype Object",
+      "level": 3,
+      "number": "15.6.7"
+    },
+    {
+      "id": "sup-temporal.plainmonthday.prototype.tolocalestring",
+      "title": "Temporal.PlainMonthDay.prototype.toLocaleString ( [ locales [ , options ] ] )",
+      "level": 4,
+      "number": "15.6.7.1"
+    },
+    {
+      "id": "sup-properties-of-the-temporal-plaintime-prototype-object",
+      "title": "Properties of the Temporal.PlainTime Prototype Object",
+      "level": 3,
+      "number": "15.6.8"
+    },
+    {
+      "id": "sup-temporal.plaintime.prototype.tolocalestring",
+      "title": "Temporal.PlainTime.prototype.toLocaleString ( [ locales [ , options ] ] )",
+      "level": 4,
+      "number": "15.6.8.1"
+    },
+    {
+      "id": "sup-properties-of-the-temporal-plainyearmonth-prototype-object",
+      "title": "Properties of the Temporal.PlainYearMonth Prototype Object",
+      "level": 3,
+      "number": "15.6.9"
+    },
+    {
+      "id": "sup-temporal.plainyearmonth.prototype.tolocalestring",
+      "title": "Temporal.PlainYearMonth.prototype.toLocaleString ( [ locales [ , options ] ] )",
+      "level": 4,
+      "number": "15.6.9.1"
+    },
+    {
+      "id": "sec-get-temporal.plainyearmonth.prototype.era",
+      "title": "get Temporal.PlainYearMonth.prototype.era",
+      "level": 4,
+      "number": "15.6.9.2"
+    },
+    {
+      "id": "sec-get-temporal.plainyearmonth.prototype.erayear",
+      "title": "get Temporal.PlainYearMonth.prototype.eraYear",
+      "level": 4,
+      "number": "15.6.9.3"
+    },
+    {
+      "id": "sup-properties-of-the-temporal-zoneddatetime-prototype-object",
+      "title": "Properties of the Temporal.ZonedDateTime Prototype Object",
+      "level": 3,
+      "number": "15.6.10"
+    },
+    {
+      "id": "sup-temporal.zoneddatetime.prototype.tolocalestring",
+      "title": "Temporal.ZonedDateTime.prototype.toLocaleString ( [ locales [ , options ] ] )",
+      "level": 4,
+      "number": "15.6.10.1"
+    },
+    {
+      "id": "sec-get-temporal.zoneddatetime.prototype.era",
+      "title": "get Temporal.ZonedDateTime.prototype.era",
+      "level": 4,
+      "number": "15.6.10.2"
+    },
+    {
+      "id": "sec-get-temporal.zoneddatetime.prototype.erayear",
+      "title": "get Temporal.ZonedDateTime.prototype.eraYear",
+      "level": 4,
+      "number": "15.6.10.3"
+    },
+    {
+      "id": "sec-abstracts",
+      "title": "Abstract Operations",
+      "level": 3,
+      "number": "15.6.11"
+    },
+    {
+      "id": "sup-temporal-preparetemporalfields",
+      "title": "PrepareTemporalFields ( fields, fieldNames, requiredFields )",
+      "level": 4,
+      "number": "15.6.11.1"
+    }
+  ]
+}

@@ -1,0 +1,187 @@
+{
+  "name": "RsaHashedKeyGenParams",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Web Cryptography API",
+      "url": "https://www.w3.org/TR/WebCryptoAPI/"
+    },
+    "fragment": "dictionary RsaHashedKeyGenParams : RsaKeyGenParams {\n  required HashAlgorithmIdentifier hash;\n};",
+    "href": "https://w3c.github.io/webcrypto/#dfn-RsaHashedKeyGenParams"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "RsaKeyGenParams",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "Web Cryptography API",
+        "url": "https://www.w3.org/TR/WebCryptoAPI/"
+      },
+      "fragment": "dictionary RsaKeyGenParams : Algorithm {\n  required [EnforceRange] unsigned long modulusLength;\n  required BigInteger publicExponent;\n};",
+      "href": "https://w3c.github.io/webcrypto/#dfn-RsaKeyGenParams"
+    },
+    "extended": [],
+    "inheritance": {
+      "name": "Algorithm",
+      "type": "dictionary",
+      "defined": {
+        "spec": {
+          "title": "Web Cryptography API",
+          "url": "https://www.w3.org/TR/WebCryptoAPI/"
+        },
+        "fragment": "dictionary Algorithm {\n  required DOMString name;\n};",
+        "href": "https://w3c.github.io/webcrypto/#dfn-Algorithm"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/WebCryptoAPI/": [
+      {
+        "id": "dfn-RsaHashedKeyGenParams",
+        "href": "https://w3c.github.io/webcrypto/#dfn-RsaHashedKeyGenParams",
+        "linkingText": [
+          "RsaHashedKeyGenParams"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "RsaHashedKeyGenParams-dictionary",
+          "href": "https://w3c.github.io/webcrypto/#RsaHashedKeyGenParams-dictionary",
+          "title": "RsaHashedKeyGenParams dictionary",
+          "number": "20.4"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dfn-RsaHashedKeyGenParams-hash",
+        "href": "https://w3c.github.io/webcrypto/#dfn-RsaHashedKeyGenParams-hash",
+        "linkingText": [
+          "hash"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RsaHashedKeyGenParams"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "RsaHashedKeyGenParams-dictionary",
+          "href": "https://w3c.github.io/webcrypto/#RsaHashedKeyGenParams-dictionary",
+          "title": "RsaHashedKeyGenParams dictionary",
+          "number": "20.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dfn-RsaKeyGenParams",
+        "href": "https://w3c.github.io/webcrypto/#dfn-RsaKeyGenParams",
+        "linkingText": [
+          "RsaKeyGenParams"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "RsaKeyGenParams-dictionary",
+          "href": "https://w3c.github.io/webcrypto/#RsaKeyGenParams-dictionary",
+          "title": "RsaKeyGenParams dictionary",
+          "number": "20.3"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dfn-RsaKeyGenParams-modulusLength",
+        "href": "https://w3c.github.io/webcrypto/#dfn-RsaKeyGenParams-modulusLength",
+        "linkingText": [
+          "modulusLength"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RsaKeyGenParams"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "RsaKeyGenParams-dictionary",
+          "href": "https://w3c.github.io/webcrypto/#RsaKeyGenParams-dictionary",
+          "title": "RsaKeyGenParams dictionary",
+          "number": "20.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dfn-RsaKeyGenParams-publicExponent",
+        "href": "https://w3c.github.io/webcrypto/#dfn-RsaKeyGenParams-publicExponent",
+        "linkingText": [
+          "publicExponent"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RsaKeyGenParams"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "RsaKeyGenParams-dictionary",
+          "href": "https://w3c.github.io/webcrypto/#RsaKeyGenParams-dictionary",
+          "title": "RsaKeyGenParams dictionary",
+          "number": "20.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dfn-Algorithm",
+        "href": "https://w3c.github.io/webcrypto/#dfn-Algorithm",
+        "linkingText": [
+          "Algorithm"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "algorithm-dictionary",
+          "href": "https://w3c.github.io/webcrypto/#algorithm-dictionary",
+          "title": "11. Algorithm dictionary"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-algorithm-name",
+        "href": "https://w3c.github.io/webcrypto/#dom-algorithm-name",
+        "linkingText": [
+          "name"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "Algorithm"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "algorithm-dictionary-members",
+          "href": "https://w3c.github.io/webcrypto/#algorithm-dictionary-members",
+          "title": "Algorithm Dictionary Members",
+          "number": "11.1"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

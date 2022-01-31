@@ -1,0 +1,1106 @@
+{
+  "spec": {
+    "title": "CSS Scroll Snap Module Level 1",
+    "url": "https://drafts.csswg.org/css-scroll-snap-1/"
+  },
+  "dfns": [
+    {
+      "id": "scroll-snap-position",
+      "href": "https://drafts.csswg.org/css-scroll-snap-1/#scroll-snap-position",
+      "linkingText": [
+        "scroll snap position"
+      ],
+      "localLinkingText": [
+        "snap position"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "overview",
+        "href": "https://drafts.csswg.org/css-scroll-snap-1/#overview",
+        "title": "Scroll Snap Model",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "scroll-snap",
+      "href": "https://drafts.csswg.org/css-scroll-snap-1/#scroll-snap",
+      "linkingText": [
+        "scroll snap"
+      ],
+      "localLinkingText": [
+        "snap"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "overview",
+        "href": "https://drafts.csswg.org/css-scroll-snap-1/#overview",
+        "title": "Scroll Snap Model",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "propdef-scroll-snap-type",
+      "href": "https://drafts.csswg.org/css-scroll-snap-1/#propdef-scroll-snap-type",
+      "linkingText": [
+        "scroll-snap-type"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scroll-snap-type",
+        "href": "https://drafts.csswg.org/css-scroll-snap-1/#scroll-snap-type",
+        "title": "Scroll Snapping Rules: the scroll-snap-type property",
+        "number": "4.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "axis-value",
+      "href": "https://drafts.csswg.org/css-scroll-snap-1/#axis-value",
+      "linkingText": [
+        "axis value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "snap-axis",
+        "href": "https://drafts.csswg.org/css-scroll-snap-1/#snap-axis",
+        "title": "Scroll Snap Axis: the x, y, block, inline, and both values",
+        "number": "4.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valdef-scroll-snap-type-x",
+      "href": "https://drafts.csswg.org/css-scroll-snap-1/#valdef-scroll-snap-type-x",
+      "linkingText": [
+        "x"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "scroll-snap-type"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "snap-axis",
+        "href": "https://drafts.csswg.org/css-scroll-snap-1/#snap-axis",
+        "title": "Scroll Snap Axis: the x, y, block, inline, and both values",
+        "number": "4.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-scroll-snap-type-y",
+      "href": "https://drafts.csswg.org/css-scroll-snap-1/#valdef-scroll-snap-type-y",
+      "linkingText": [
+        "y"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "scroll-snap-type"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "snap-axis",
+        "href": "https://drafts.csswg.org/css-scroll-snap-1/#snap-axis",
+        "title": "Scroll Snap Axis: the x, y, block, inline, and both values",
+        "number": "4.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-scroll-snap-type-block",
+      "href": "https://drafts.csswg.org/css-scroll-snap-1/#valdef-scroll-snap-type-block",
+      "linkingText": [
+        "block"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "scroll-snap-type"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "snap-axis",
+        "href": "https://drafts.csswg.org/css-scroll-snap-1/#snap-axis",
+        "title": "Scroll Snap Axis: the x, y, block, inline, and both values",
+        "number": "4.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-scroll-snap-type-inline",
+      "href": "https://drafts.csswg.org/css-scroll-snap-1/#valdef-scroll-snap-type-inline",
+      "linkingText": [
+        "inline"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "scroll-snap-type"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "snap-axis",
+        "href": "https://drafts.csswg.org/css-scroll-snap-1/#snap-axis",
+        "title": "Scroll Snap Axis: the x, y, block, inline, and both values",
+        "number": "4.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-scroll-snap-type-both",
+      "href": "https://drafts.csswg.org/css-scroll-snap-1/#valdef-scroll-snap-type-both",
+      "linkingText": [
+        "both"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "scroll-snap-type"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "snap-axis",
+        "href": "https://drafts.csswg.org/css-scroll-snap-1/#snap-axis",
+        "title": "Scroll Snap Axis: the x, y, block, inline, and both values",
+        "number": "4.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "strictness-value",
+      "href": "https://drafts.csswg.org/css-scroll-snap-1/#strictness-value",
+      "linkingText": [
+        "strictness value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "snap-strictness",
+        "href": "https://drafts.csswg.org/css-scroll-snap-1/#snap-strictness",
+        "title": "Scroll Snap Strictness: the none, proximity, and mandatory values",
+        "number": "4.1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valdef-scroll-snap-type-none",
+      "href": "https://drafts.csswg.org/css-scroll-snap-1/#valdef-scroll-snap-type-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "scroll-snap-type"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "snap-strictness",
+        "href": "https://drafts.csswg.org/css-scroll-snap-1/#snap-strictness",
+        "title": "Scroll Snap Strictness: the none, proximity, and mandatory values",
+        "number": "4.1.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-scroll-snap-type-mandatory",
+      "href": "https://drafts.csswg.org/css-scroll-snap-1/#valdef-scroll-snap-type-mandatory",
+      "linkingText": [
+        "mandatory"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "scroll-snap-type"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "snap-strictness",
+        "href": "https://drafts.csswg.org/css-scroll-snap-1/#snap-strictness",
+        "title": "Scroll Snap Strictness: the none, proximity, and mandatory values",
+        "number": "4.1.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-scroll-snap-type-proximity",
+      "href": "https://drafts.csswg.org/css-scroll-snap-1/#valdef-scroll-snap-type-proximity",
+      "linkingText": [
+        "proximity"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "scroll-snap-type"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "snap-strictness",
+        "href": "https://drafts.csswg.org/css-scroll-snap-1/#snap-strictness",
+        "title": "Scroll Snap Strictness: the none, proximity, and mandatory values",
+        "number": "4.1.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "captures-snap-positions",
+      "href": "https://drafts.csswg.org/css-scroll-snap-1/#captures-snap-positions",
+      "linkingText": [
+        "captures snap positions"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "snap-strictness",
+        "href": "https://drafts.csswg.org/css-scroll-snap-1/#snap-strictness",
+        "title": "Scroll Snap Strictness: the none, proximity, and mandatory values",
+        "number": "4.1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "scroll-snap-container",
+      "href": "https://drafts.csswg.org/css-scroll-snap-1/#scroll-snap-container",
+      "linkingText": [
+        "scroll snap container"
+      ],
+      "localLinkingText": [
+        "snap container"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "snap-strictness",
+        "href": "https://drafts.csswg.org/css-scroll-snap-1/#snap-strictness",
+        "title": "Scroll Snap Strictness: the none, proximity, and mandatory values",
+        "number": "4.1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "re-snap",
+      "href": "https://drafts.csswg.org/css-scroll-snap-1/#re-snap",
+      "linkingText": [
+        "re-snap"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "re-snap",
+        "href": "https://drafts.csswg.org/css-scroll-snap-1/#re-snap",
+        "title": "Re-snapping After Layout Changes",
+        "number": "4.1.3"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "propdef-scroll-padding",
+      "href": "https://drafts.csswg.org/css-scroll-snap-1/#propdef-scroll-padding",
+      "linkingText": [
+        "scroll-padding"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scroll-padding",
+        "href": "https://drafts.csswg.org/css-scroll-snap-1/#scroll-padding",
+        "title": "Scroll Snapport: the scroll-padding property",
+        "number": "4.2"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "optimal-viewing-region",
+      "href": "https://drafts.csswg.org/css-scroll-snap-1/#optimal-viewing-region",
+      "linkingText": [
+        "optimal viewing region"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scroll-padding",
+        "href": "https://drafts.csswg.org/css-scroll-snap-1/#scroll-padding",
+        "title": "Scroll Snapport: the scroll-padding property",
+        "number": "4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valdef-scroll-padding-length-percentage",
+      "href": "https://drafts.csswg.org/css-scroll-snap-1/#valdef-scroll-padding-length-percentage",
+      "linkingText": [
+        "<length-percentage>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "scroll-padding",
+        "scroll-padding-inline",
+        "scroll-padding-inline-start",
+        "scroll-padding-inline-end",
+        "scroll-padding-block",
+        "scroll-padding-block-start",
+        "scroll-padding-block-end"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scroll-padding",
+        "href": "https://drafts.csswg.org/css-scroll-snap-1/#scroll-padding",
+        "title": "Scroll Snapport: the scroll-padding property",
+        "number": "4.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-scroll-padding-auto",
+      "href": "https://drafts.csswg.org/css-scroll-snap-1/#valdef-scroll-padding-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "scroll-padding",
+        "scroll-padding-inline",
+        "scroll-padding-inline-start",
+        "scroll-padding-inline-end",
+        "scroll-padding-block",
+        "scroll-padding-block-start",
+        "scroll-padding-block-end"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scroll-padding",
+        "href": "https://drafts.csswg.org/css-scroll-snap-1/#scroll-padding",
+        "title": "Scroll Snapport: the scroll-padding property",
+        "number": "4.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "scroll-snapport",
+      "href": "https://drafts.csswg.org/css-scroll-snap-1/#scroll-snapport",
+      "linkingText": [
+        "scroll snapport"
+      ],
+      "localLinkingText": [
+        "snapport"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scroll-padding",
+        "href": "https://drafts.csswg.org/css-scroll-snap-1/#scroll-padding",
+        "title": "Scroll Snapport: the scroll-padding property",
+        "number": "4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "propdef-scroll-margin",
+      "href": "https://drafts.csswg.org/css-scroll-snap-1/#propdef-scroll-margin",
+      "linkingText": [
+        "scroll-margin"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scroll-margin",
+        "href": "https://drafts.csswg.org/css-scroll-snap-1/#scroll-margin",
+        "title": "Scroll Snapping Area: the scroll-margin property",
+        "number": "5.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "scroll-snap-area",
+      "href": "https://drafts.csswg.org/css-scroll-snap-1/#scroll-snap-area",
+      "linkingText": [
+        "scroll snap area"
+      ],
+      "localLinkingText": [
+        "snap area"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scroll-margin",
+        "href": "https://drafts.csswg.org/css-scroll-snap-1/#scroll-margin",
+        "title": "Scroll Snapping Area: the scroll-margin property",
+        "number": "5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "propdef-scroll-snap-align",
+      "href": "https://drafts.csswg.org/css-scroll-snap-1/#propdef-scroll-snap-align",
+      "linkingText": [
+        "scroll-snap-align"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scroll-snap-align",
+        "href": "https://drafts.csswg.org/css-scroll-snap-1/#scroll-snap-align",
+        "title": "Scroll Snapping Alignment: the scroll-snap-align property",
+        "number": "5.2"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "valdef-scroll-snap-align-none",
+      "href": "https://drafts.csswg.org/css-scroll-snap-1/#valdef-scroll-snap-align-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "scroll-snap-align"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scroll-snap-align",
+        "href": "https://drafts.csswg.org/css-scroll-snap-1/#scroll-snap-align",
+        "title": "Scroll Snapping Alignment: the scroll-snap-align property",
+        "number": "5.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-scroll-snap-align-start",
+      "href": "https://drafts.csswg.org/css-scroll-snap-1/#valdef-scroll-snap-align-start",
+      "linkingText": [
+        "start"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "scroll-snap-align"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scroll-snap-align",
+        "href": "https://drafts.csswg.org/css-scroll-snap-1/#scroll-snap-align",
+        "title": "Scroll Snapping Alignment: the scroll-snap-align property",
+        "number": "5.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-scroll-snap-align-end",
+      "href": "https://drafts.csswg.org/css-scroll-snap-1/#valdef-scroll-snap-align-end",
+      "linkingText": [
+        "end"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "scroll-snap-align"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scroll-snap-align",
+        "href": "https://drafts.csswg.org/css-scroll-snap-1/#scroll-snap-align",
+        "title": "Scroll Snapping Alignment: the scroll-snap-align property",
+        "number": "5.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-scroll-snap-align-center",
+      "href": "https://drafts.csswg.org/css-scroll-snap-1/#valdef-scroll-snap-align-center",
+      "linkingText": [
+        "center"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "scroll-snap-align"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scroll-snap-align",
+        "href": "https://drafts.csswg.org/css-scroll-snap-1/#scroll-snap-align",
+        "title": "Scroll Snapping Alignment: the scroll-snap-align property",
+        "number": "5.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "propdef-scroll-snap-stop",
+      "href": "https://drafts.csswg.org/css-scroll-snap-1/#propdef-scroll-snap-stop",
+      "linkingText": [
+        "scroll-snap-stop"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scroll-snap-stop",
+        "href": "https://drafts.csswg.org/css-scroll-snap-1/#scroll-snap-stop",
+        "title": "Scroll Snap Limits: the scroll-snap-stop property",
+        "number": "5.3"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "valdef-scroll-snap-stop-normal",
+      "href": "https://drafts.csswg.org/css-scroll-snap-1/#valdef-scroll-snap-stop-normal",
+      "linkingText": [
+        "normal"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "scroll-snap-stop"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scroll-snap-stop",
+        "href": "https://drafts.csswg.org/css-scroll-snap-1/#scroll-snap-stop",
+        "title": "Scroll Snap Limits: the scroll-snap-stop property",
+        "number": "5.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-scroll-snap-stop-always",
+      "href": "https://drafts.csswg.org/css-scroll-snap-1/#valdef-scroll-snap-stop-always",
+      "linkingText": [
+        "always"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "scroll-snap-stop"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scroll-snap-stop",
+        "href": "https://drafts.csswg.org/css-scroll-snap-1/#scroll-snap-stop",
+        "title": "Scroll Snap Limits: the scroll-snap-stop property",
+        "number": "5.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "intended-end-position",
+      "href": "https://drafts.csswg.org/css-scroll-snap-1/#intended-end-position",
+      "linkingText": [
+        "intended end position"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scroll-types",
+        "href": "https://drafts.csswg.org/css-scroll-snap-1/#scroll-types",
+        "title": "Types of Scrolling Methods",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "intended-direction-and-end-position",
+      "href": "https://drafts.csswg.org/css-scroll-snap-1/#intended-direction-and-end-position",
+      "linkingText": [
+        "intended direction and end position"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scroll-types",
+        "href": "https://drafts.csswg.org/css-scroll-snap-1/#scroll-types",
+        "title": "Types of Scrolling Methods",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "natural-end-point",
+      "href": "https://drafts.csswg.org/css-scroll-snap-1/#natural-end-point",
+      "linkingText": [
+        "natural end-point"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "scroll-types",
+        "href": "https://drafts.csswg.org/css-scroll-snap-1/#scroll-types",
+        "title": "Types of Scrolling Methods",
+        "number": "6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "intended-direction",
+      "href": "https://drafts.csswg.org/css-scroll-snap-1/#intended-direction",
+      "linkingText": [
+        "intended direction"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scroll-types",
+        "href": "https://drafts.csswg.org/css-scroll-snap-1/#scroll-types",
+        "title": "Types of Scrolling Methods",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "axis-lock",
+      "href": "https://drafts.csswg.org/css-scroll-snap-1/#axis-lock",
+      "linkingText": [
+        "axis-lock"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scroll-types",
+        "href": "https://drafts.csswg.org/css-scroll-snap-1/#scroll-types",
+        "title": "Types of Scrolling Methods",
+        "number": "6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "propdef-scroll-padding-top",
+      "href": "https://drafts.csswg.org/css-scroll-snap-1/#propdef-scroll-padding-top",
+      "linkingText": [
+        "scroll-padding-top"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "padding-longhands-physical",
+        "href": "https://drafts.csswg.org/css-scroll-snap-1/#padding-longhands-physical",
+        "title": "Physical Longhands for scroll-padding"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-scroll-padding-right",
+      "href": "https://drafts.csswg.org/css-scroll-snap-1/#propdef-scroll-padding-right",
+      "linkingText": [
+        "scroll-padding-right"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "padding-longhands-physical",
+        "href": "https://drafts.csswg.org/css-scroll-snap-1/#padding-longhands-physical",
+        "title": "Physical Longhands for scroll-padding"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-scroll-padding-bottom",
+      "href": "https://drafts.csswg.org/css-scroll-snap-1/#propdef-scroll-padding-bottom",
+      "linkingText": [
+        "scroll-padding-bottom"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "padding-longhands-physical",
+        "href": "https://drafts.csswg.org/css-scroll-snap-1/#padding-longhands-physical",
+        "title": "Physical Longhands for scroll-padding"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-scroll-padding-left",
+      "href": "https://drafts.csswg.org/css-scroll-snap-1/#propdef-scroll-padding-left",
+      "linkingText": [
+        "scroll-padding-left"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "padding-longhands-physical",
+        "href": "https://drafts.csswg.org/css-scroll-snap-1/#padding-longhands-physical",
+        "title": "Physical Longhands for scroll-padding"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-scroll-padding-inline-start",
+      "href": "https://drafts.csswg.org/css-scroll-snap-1/#propdef-scroll-padding-inline-start",
+      "linkingText": [
+        "scroll-padding-inline-start"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "padding-longhands-logical",
+        "href": "https://drafts.csswg.org/css-scroll-snap-1/#padding-longhands-logical",
+        "title": "Flow-relative Longhands for scroll-padding"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-scroll-padding-block-start",
+      "href": "https://drafts.csswg.org/css-scroll-snap-1/#propdef-scroll-padding-block-start",
+      "linkingText": [
+        "scroll-padding-block-start"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "padding-longhands-logical",
+        "href": "https://drafts.csswg.org/css-scroll-snap-1/#padding-longhands-logical",
+        "title": "Flow-relative Longhands for scroll-padding"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-scroll-padding-inline-end",
+      "href": "https://drafts.csswg.org/css-scroll-snap-1/#propdef-scroll-padding-inline-end",
+      "linkingText": [
+        "scroll-padding-inline-end"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "padding-longhands-logical",
+        "href": "https://drafts.csswg.org/css-scroll-snap-1/#padding-longhands-logical",
+        "title": "Flow-relative Longhands for scroll-padding"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-scroll-padding-block-end",
+      "href": "https://drafts.csswg.org/css-scroll-snap-1/#propdef-scroll-padding-block-end",
+      "linkingText": [
+        "scroll-padding-block-end"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "padding-longhands-logical",
+        "href": "https://drafts.csswg.org/css-scroll-snap-1/#padding-longhands-logical",
+        "title": "Flow-relative Longhands for scroll-padding"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-scroll-padding-block",
+      "href": "https://drafts.csswg.org/css-scroll-snap-1/#propdef-scroll-padding-block",
+      "linkingText": [
+        "scroll-padding-block"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "padding-longhands-logical",
+        "href": "https://drafts.csswg.org/css-scroll-snap-1/#padding-longhands-logical",
+        "title": "Flow-relative Longhands for scroll-padding"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-scroll-padding-inline",
+      "href": "https://drafts.csswg.org/css-scroll-snap-1/#propdef-scroll-padding-inline",
+      "linkingText": [
+        "scroll-padding-inline"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "padding-longhands-logical",
+        "href": "https://drafts.csswg.org/css-scroll-snap-1/#padding-longhands-logical",
+        "title": "Flow-relative Longhands for scroll-padding"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-scroll-margin-top",
+      "href": "https://drafts.csswg.org/css-scroll-snap-1/#propdef-scroll-margin-top",
+      "linkingText": [
+        "scroll-margin-top"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "margin-longhands-physical",
+        "href": "https://drafts.csswg.org/css-scroll-snap-1/#margin-longhands-physical",
+        "title": "Physical Longhands for scroll-margin"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-scroll-margin-right",
+      "href": "https://drafts.csswg.org/css-scroll-snap-1/#propdef-scroll-margin-right",
+      "linkingText": [
+        "scroll-margin-right"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "margin-longhands-physical",
+        "href": "https://drafts.csswg.org/css-scroll-snap-1/#margin-longhands-physical",
+        "title": "Physical Longhands for scroll-margin"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-scroll-margin-bottom",
+      "href": "https://drafts.csswg.org/css-scroll-snap-1/#propdef-scroll-margin-bottom",
+      "linkingText": [
+        "scroll-margin-bottom"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "margin-longhands-physical",
+        "href": "https://drafts.csswg.org/css-scroll-snap-1/#margin-longhands-physical",
+        "title": "Physical Longhands for scroll-margin"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-scroll-margin-left",
+      "href": "https://drafts.csswg.org/css-scroll-snap-1/#propdef-scroll-margin-left",
+      "linkingText": [
+        "scroll-margin-left"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "margin-longhands-physical",
+        "href": "https://drafts.csswg.org/css-scroll-snap-1/#margin-longhands-physical",
+        "title": "Physical Longhands for scroll-margin"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-scroll-margin-block-start",
+      "href": "https://drafts.csswg.org/css-scroll-snap-1/#propdef-scroll-margin-block-start",
+      "linkingText": [
+        "scroll-margin-block-start"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "margin-longhands-logical",
+        "href": "https://drafts.csswg.org/css-scroll-snap-1/#margin-longhands-logical",
+        "title": "Flow-relative Longhands for scroll-margin"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-scroll-margin-inline-start",
+      "href": "https://drafts.csswg.org/css-scroll-snap-1/#propdef-scroll-margin-inline-start",
+      "linkingText": [
+        "scroll-margin-inline-start"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "margin-longhands-logical",
+        "href": "https://drafts.csswg.org/css-scroll-snap-1/#margin-longhands-logical",
+        "title": "Flow-relative Longhands for scroll-margin"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-scroll-margin-block-end",
+      "href": "https://drafts.csswg.org/css-scroll-snap-1/#propdef-scroll-margin-block-end",
+      "linkingText": [
+        "scroll-margin-block-end"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "margin-longhands-logical",
+        "href": "https://drafts.csswg.org/css-scroll-snap-1/#margin-longhands-logical",
+        "title": "Flow-relative Longhands for scroll-margin"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-scroll-margin-inline-end",
+      "href": "https://drafts.csswg.org/css-scroll-snap-1/#propdef-scroll-margin-inline-end",
+      "linkingText": [
+        "scroll-margin-inline-end"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "margin-longhands-logical",
+        "href": "https://drafts.csswg.org/css-scroll-snap-1/#margin-longhands-logical",
+        "title": "Flow-relative Longhands for scroll-margin"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-scroll-margin-block",
+      "href": "https://drafts.csswg.org/css-scroll-snap-1/#propdef-scroll-margin-block",
+      "linkingText": [
+        "scroll-margin-block"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "margin-longhands-logical",
+        "href": "https://drafts.csswg.org/css-scroll-snap-1/#margin-longhands-logical",
+        "title": "Flow-relative Longhands for scroll-margin"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-scroll-margin-inline",
+      "href": "https://drafts.csswg.org/css-scroll-snap-1/#propdef-scroll-margin-inline",
+      "linkingText": [
+        "scroll-margin-inline"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "margin-longhands-logical",
+        "href": "https://drafts.csswg.org/css-scroll-snap-1/#margin-longhands-logical",
+        "title": "Flow-relative Longhands for scroll-margin"
+      },
+      "definedIn": "table"
+    }
+  ]
+}

@@ -1,0 +1,241 @@
+{
+  "name": "MessageEventInit",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "HTML Standard",
+      "url": "https://html.spec.whatwg.org/multipage/"
+    },
+    "fragment": "dictionary MessageEventInit : EventInit {\n  any data = null;\n  USVString origin = \"\";\n  DOMString lastEventId = \"\";\n  MessageEventSource? source = null;\n  sequence<MessagePort> ports = [];\n};",
+    "href": "https://html.spec.whatwg.org/multipage/comms.html#messageeventinit"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "EventInit",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "dictionary EventInit {\n  boolean bubbles = false;\n  boolean cancelable = false;\n  boolean composed = false;\n};",
+      "href": "https://dom.spec.whatwg.org/#dictdef-eventinit"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://html.spec.whatwg.org/multipage/": [
+      {
+        "id": "messageeventinit",
+        "href": "https://html.spec.whatwg.org/multipage/comms.html#messageeventinit",
+        "linkingText": [
+          "MessageEventInit"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-messageevent-interface",
+          "href": "https://html.spec.whatwg.org/multipage/comms.html#the-messageevent-interface",
+          "title": "The MessageEvent interface",
+          "number": "9.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-messageeventinit-data",
+        "href": "https://html.spec.whatwg.org/multipage/comms.html#dom-messageeventinit-data",
+        "linkingText": [
+          "data"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MessageEventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-messageevent-interface",
+          "href": "https://html.spec.whatwg.org/multipage/comms.html#the-messageevent-interface",
+          "title": "The MessageEvent interface",
+          "number": "9.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-messageeventinit-origin",
+        "href": "https://html.spec.whatwg.org/multipage/comms.html#dom-messageeventinit-origin",
+        "linkingText": [
+          "origin"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MessageEventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-messageevent-interface",
+          "href": "https://html.spec.whatwg.org/multipage/comms.html#the-messageevent-interface",
+          "title": "The MessageEvent interface",
+          "number": "9.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-messageeventinit-lasteventid",
+        "href": "https://html.spec.whatwg.org/multipage/comms.html#dom-messageeventinit-lasteventid",
+        "linkingText": [
+          "lastEventId"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MessageEventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-messageevent-interface",
+          "href": "https://html.spec.whatwg.org/multipage/comms.html#the-messageevent-interface",
+          "title": "The MessageEvent interface",
+          "number": "9.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-messageeventinit-source",
+        "href": "https://html.spec.whatwg.org/multipage/comms.html#dom-messageeventinit-source",
+        "linkingText": [
+          "source"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MessageEventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-messageevent-interface",
+          "href": "https://html.spec.whatwg.org/multipage/comms.html#the-messageevent-interface",
+          "title": "The MessageEvent interface",
+          "number": "9.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-messageeventinit-ports",
+        "href": "https://html.spec.whatwg.org/multipage/comms.html#dom-messageeventinit-ports",
+        "linkingText": [
+          "ports"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MessageEventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-messageevent-interface",
+          "href": "https://html.spec.whatwg.org/multipage/comms.html#the-messageevent-interface",
+          "title": "The MessageEvent interface",
+          "number": "9.1"
+        },
+        "definedIn": "pre"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "dictdef-eventinit",
+        "href": "https://dom.spec.whatwg.org/#dictdef-eventinit",
+        "linkingText": [
+          "EventInit"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventinit-bubbles",
+        "href": "https://dom.spec.whatwg.org/#dom-eventinit-bubbles",
+        "linkingText": [
+          "bubbles"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventinit-cancelable",
+        "href": "https://dom.spec.whatwg.org/#dom-eventinit-cancelable",
+        "linkingText": [
+          "cancelable"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventinit-composed",
+        "href": "https://dom.spec.whatwg.org/#dom-eventinit-composed",
+        "linkingText": [
+          "composed"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

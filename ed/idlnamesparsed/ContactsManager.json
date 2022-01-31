@@ -1,0 +1,81 @@
+{
+  "name": "ContactsManager",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Contact Picker API",
+      "url": "https://w3c.github.io/contact-api/spec/"
+    },
+    "fragment": "[Exposed=Window,SecureContext]\ninterface ContactsManager {\n    Promise<sequence<ContactProperty>> getProperties();\n    Promise<sequence<ContactInfo>> select(sequence<ContactProperty> properties, optional ContactsSelectOptions options = {});\n};",
+    "href": "https://w3c.github.io/contact-api/spec/#contactsmanager"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://w3c.github.io/contact-api/spec/": [
+      {
+        "id": "contactsmanager",
+        "href": "https://w3c.github.io/contact-api/spec/#contactsmanager",
+        "linkingText": [
+          "ContactsManager"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "contacts-manager",
+          "href": "https://w3c.github.io/contact-api/spec/#contacts-manager",
+          "title": "ContactsManager",
+          "number": "5.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-contactsmanager-getproperties",
+        "href": "https://w3c.github.io/contact-api/spec/#dom-contactsmanager-getproperties",
+        "linkingText": [
+          "getProperties()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "ContactsManager"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "contacts-manager-getproperties",
+          "href": "https://w3c.github.io/contact-api/spec/#contacts-manager-getproperties",
+          "title": "getProperties()",
+          "number": "5.4.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-contactsmanager-select",
+        "href": "https://w3c.github.io/contact-api/spec/#dom-contactsmanager-select",
+        "linkingText": [
+          "select(properties, options)",
+          "select(properties)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "ContactsManager"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "contacts-manager-select",
+          "href": "https://w3c.github.io/contact-api/spec/#contacts-manager-select",
+          "title": "select()",
+          "number": "5.4.2"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

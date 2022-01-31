@@ -1,0 +1,370 @@
+{
+  "name": "AppHistoryEntry",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "App History API",
+      "url": "https://wicg.github.io/app-history/"
+    },
+    "fragment": "[Exposed=Window]\ninterface AppHistoryEntry : EventTarget {\n  readonly attribute USVString? url;\n  readonly attribute DOMString key;\n  readonly attribute DOMString id;\n  readonly attribute long long index;\n  readonly attribute boolean sameDocument;\n\n  any getState();\n\n  attribute EventHandler onnavigateto;\n  attribute EventHandler onnavigatefrom;\n  attribute EventHandler onfinish;\n  attribute EventHandler ondispose;\n};",
+    "href": "https://wicg.github.io/app-history/#apphistoryentry"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "EventTarget",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=*]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+      "href": "https://dom.spec.whatwg.org/#eventtarget"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://wicg.github.io/app-history/": [
+      {
+        "id": "apphistoryentry",
+        "href": "https://wicg.github.io/app-history/#apphistoryentry",
+        "linkingText": [
+          "AppHistoryEntry"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "apphistoryentry-class",
+          "href": "https://wicg.github.io/app-history/#apphistoryentry-class",
+          "title": "App history entries",
+          "number": "3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-apphistoryentry-url",
+        "href": "https://wicg.github.io/app-history/#dom-apphistoryentry-url",
+        "linkingText": [
+          "url"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "AppHistoryEntry"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "apphistoryentry-class",
+          "href": "https://wicg.github.io/app-history/#apphistoryentry-class",
+          "title": "App history entries",
+          "number": "3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-apphistoryentry-key",
+        "href": "https://wicg.github.io/app-history/#dom-apphistoryentry-key",
+        "linkingText": [
+          "key"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "AppHistoryEntry"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "apphistoryentry-class",
+          "href": "https://wicg.github.io/app-history/#apphistoryentry-class",
+          "title": "App history entries",
+          "number": "3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-apphistoryentry-id",
+        "href": "https://wicg.github.io/app-history/#dom-apphistoryentry-id",
+        "linkingText": [
+          "id"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "AppHistoryEntry"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "apphistoryentry-class",
+          "href": "https://wicg.github.io/app-history/#apphistoryentry-class",
+          "title": "App history entries",
+          "number": "3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-apphistoryentry-index",
+        "href": "https://wicg.github.io/app-history/#dom-apphistoryentry-index",
+        "linkingText": [
+          "index"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "AppHistoryEntry"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "apphistoryentry-class",
+          "href": "https://wicg.github.io/app-history/#apphistoryentry-class",
+          "title": "App history entries",
+          "number": "3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-apphistoryentry-samedocument",
+        "href": "https://wicg.github.io/app-history/#dom-apphistoryentry-samedocument",
+        "linkingText": [
+          "sameDocument"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "AppHistoryEntry"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "apphistoryentry-class",
+          "href": "https://wicg.github.io/app-history/#apphistoryentry-class",
+          "title": "App history entries",
+          "number": "3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-apphistoryentry-getstate",
+        "href": "https://wicg.github.io/app-history/#dom-apphistoryentry-getstate",
+        "linkingText": [
+          "getState()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "AppHistoryEntry"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "apphistoryentry-class",
+          "href": "https://wicg.github.io/app-history/#apphistoryentry-class",
+          "title": "App history entries",
+          "number": "3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-apphistoryentry-onnavigateto",
+        "href": "https://wicg.github.io/app-history/#dom-apphistoryentry-onnavigateto",
+        "linkingText": [
+          "onnavigateto"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "AppHistoryEntry"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "apphistoryentry-class",
+          "href": "https://wicg.github.io/app-history/#apphistoryentry-class",
+          "title": "App history entries",
+          "number": "3"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "dom-apphistoryentry-onnavigatefrom",
+        "href": "https://wicg.github.io/app-history/#dom-apphistoryentry-onnavigatefrom",
+        "linkingText": [
+          "onnavigatefrom"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "AppHistoryEntry"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "apphistoryentry-class",
+          "href": "https://wicg.github.io/app-history/#apphistoryentry-class",
+          "title": "App history entries",
+          "number": "3"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "dom-apphistoryentry-onfinish",
+        "href": "https://wicg.github.io/app-history/#dom-apphistoryentry-onfinish",
+        "linkingText": [
+          "onfinish"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "AppHistoryEntry"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "apphistoryentry-class",
+          "href": "https://wicg.github.io/app-history/#apphistoryentry-class",
+          "title": "App history entries",
+          "number": "3"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "dom-apphistoryentry-ondispose",
+        "href": "https://wicg.github.io/app-history/#dom-apphistoryentry-ondispose",
+        "linkingText": [
+          "ondispose"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "AppHistoryEntry"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "apphistoryentry-class",
+          "href": "https://wicg.github.io/app-history/#apphistoryentry-class",
+          "title": "App history entries",
+          "number": "3"
+        },
+        "definedIn": "table"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "eventtarget",
+        "href": "https://dom.spec.whatwg.org/#eventtarget",
+        "linkingText": [
+          "EventTarget"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventtarget-eventtarget",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-eventtarget",
+        "linkingText": [
+          "EventTarget()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-addeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-addeventlistener",
+        "linkingText": [
+          "addEventListener(type, callback, options)",
+          "addEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-removeeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-removeeventlistener",
+        "linkingText": [
+          "removeEventListener(type, callback, options)",
+          "removeEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-dispatchevent",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-dispatchevent",
+        "linkingText": [
+          "dispatchEvent(event)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

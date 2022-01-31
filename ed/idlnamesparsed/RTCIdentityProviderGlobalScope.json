@@ -1,0 +1,1052 @@
+{
+  "name": "RTCIdentityProviderGlobalScope",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Identity for WebRTC 1.0",
+      "url": "https://www.w3.org/TR/webrtc-identity/"
+    },
+    "fragment": "[Global, Exposed=RTCIdentityProviderGlobalScope]\ninterface RTCIdentityProviderGlobalScope : WorkerGlobalScope {\n    readonly        attribute RTCIdentityProviderRegistrar rtcIdentityProvider;\n};",
+    "href": "https://w3c.github.io/webrtc-identity/#dom-rtcidentityproviderglobalscope"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "WorkerGlobalScope",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "HTML Standard",
+        "url": "https://html.spec.whatwg.org/multipage/"
+      },
+      "fragment": "[Exposed=Worker]\ninterface WorkerGlobalScope : EventTarget {\n  readonly attribute WorkerGlobalScope self;\n  readonly attribute WorkerLocation location;\n  readonly attribute WorkerNavigator navigator;\n  undefined importScripts(USVString... urls);\n\n  attribute OnErrorEventHandler onerror;\n  attribute EventHandler onlanguagechange;\n  attribute EventHandler onoffline;\n  attribute EventHandler ononline;\n  attribute EventHandler onrejectionhandled;\n  attribute EventHandler onunhandledrejection;\n};",
+      "href": "https://html.spec.whatwg.org/multipage/workers.html#workerglobalscope"
+    },
+    "extended": [
+      {
+        "spec": {
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        "fragment": "WorkerGlobalScope includes WindowOrWorkerGlobalScope;"
+      },
+      {
+        "spec": {
+          "title": "CSS Font Loading Module Level 3",
+          "url": "https://www.w3.org/TR/css-font-loading-3/"
+        },
+        "fragment": "WorkerGlobalScope includes FontFaceSource;"
+      }
+    ],
+    "inheritance": {
+      "name": "EventTarget",
+      "type": "interface",
+      "defined": {
+        "spec": {
+          "title": "DOM Standard",
+          "url": "https://dom.spec.whatwg.org/"
+        },
+        "fragment": "[Exposed=*]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+        "href": "https://dom.spec.whatwg.org/#eventtarget"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    "includes": [
+      {
+        "name": "WindowOrWorkerGlobalScope",
+        "type": "interface mixin",
+        "defined": {
+          "spec": {
+            "title": "HTML Standard",
+            "url": "https://html.spec.whatwg.org/multipage/"
+          },
+          "fragment": "interface mixin WindowOrWorkerGlobalScope {\n  [Replaceable] readonly attribute USVString origin;\n  readonly attribute boolean isSecureContext;\n  readonly attribute boolean crossOriginIsolated;\n\n  undefined reportError(any e);\n\n  // base64 utility methods\n  DOMString btoa(DOMString data);\n  ByteString atob(DOMString data);\n\n  // timers\n  long setTimeout(TimerHandler handler, optional long timeout = 0, any... arguments);\n  undefined clearTimeout(optional long id = 0);\n  long setInterval(TimerHandler handler, optional long timeout = 0, any... arguments);\n  undefined clearInterval(optional long id = 0);\n\n  // microtask queuing\n  undefined queueMicrotask(VoidFunction callback);\n\n  // ImageBitmap\n  Promise<ImageBitmap> createImageBitmap(ImageBitmapSource image, optional ImageBitmapOptions options = {});\n  Promise<ImageBitmap> createImageBitmap(ImageBitmapSource image, long sx, long sy, long sw, long sh, optional ImageBitmapOptions options = {});\n\n  // structured cloning\n  any structuredClone(any value, optional StructuredSerializeOptions options = {});\n};",
+          "href": "https://html.spec.whatwg.org/multipage/webappapis.html#windoworworkerglobalscope"
+        },
+        "extended": [
+          {
+            "spec": {
+              "title": "Fetch Standard",
+              "url": "https://fetch.spec.whatwg.org/"
+            },
+            "fragment": "partial interface mixin WindowOrWorkerGlobalScope {\n  [NewObject] Promise<Response> fetch(RequestInfo input, optional RequestInit init = {});\n};"
+          },
+          {
+            "spec": {
+              "title": "Trusted Types",
+              "url": "https://w3c.github.io/webappsec-trusted-types/dist/spec/"
+            },
+            "fragment": "partial interface mixin WindowOrWorkerGlobalScope {\n  readonly attribute TrustedTypePolicyFactory trustedTypes;\n};"
+          },
+          {
+            "spec": {
+              "title": "Origin Policy",
+              "url": "https://wicg.github.io/origin-policy/"
+            },
+            "fragment": "partial interface mixin WindowOrWorkerGlobalScope {\n  readonly attribute FrozenArray<DOMString> originPolicyIds;\n};"
+          },
+          {
+            "spec": {
+              "title": "Prioritized Task Scheduling",
+              "url": "https://wicg.github.io/scheduling-apis/"
+            },
+            "fragment": "partial interface mixin WindowOrWorkerGlobalScope {\n  readonly attribute Scheduler scheduler;\n};"
+          },
+          {
+            "spec": {
+              "title": "High Resolution Time",
+              "url": "https://www.w3.org/TR/hr-time-3/"
+            },
+            "fragment": "partial interface mixin WindowOrWorkerGlobalScope {\n  [Replaceable] readonly attribute Performance performance;\n};"
+          },
+          {
+            "spec": {
+              "title": "Indexed Database API 3.0",
+              "url": "https://www.w3.org/TR/IndexedDB-3/"
+            },
+            "fragment": "partial interface mixin WindowOrWorkerGlobalScope {\n  [SameObject] readonly attribute IDBFactory indexedDB;\n};"
+          },
+          {
+            "spec": {
+              "title": "Service Workers Nightly",
+              "url": "https://www.w3.org/TR/service-workers-1/"
+            },
+            "fragment": "partial interface mixin WindowOrWorkerGlobalScope {\n  [SecureContext, SameObject] readonly attribute CacheStorage caches;\n};"
+          },
+          {
+            "spec": {
+              "title": "Web Cryptography API",
+              "url": "https://www.w3.org/TR/WebCryptoAPI/"
+            },
+            "fragment": "partial interface mixin WindowOrWorkerGlobalScope {\n  [SameObject] readonly attribute Crypto crypto;\n};"
+          }
+        ],
+        "inheritance": null,
+        "includes": []
+      },
+      {
+        "name": "FontFaceSource",
+        "type": "interface mixin",
+        "defined": {
+          "spec": {
+            "title": "CSS Font Loading Module Level 3",
+            "url": "https://www.w3.org/TR/css-font-loading-3/"
+          },
+          "fragment": "interface mixin FontFaceSource {\n  readonly attribute FontFaceSet fonts;\n};",
+          "href": "https://drafts.csswg.org/css-font-loading/#fontfacesource"
+        },
+        "extended": [],
+        "inheritance": null,
+        "includes": []
+      }
+    ]
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webrtc-identity/": [
+      {
+        "id": "dom-rtcidentityproviderglobalscope",
+        "href": "https://w3c.github.io/webrtc-identity/#dom-rtcidentityproviderglobalscope",
+        "linkingText": [
+          "RTCIdentityProviderGlobalScope"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "instantiating-an-idp-proxy",
+          "href": "https://w3c.github.io/webrtc-identity/#instantiating-an-idp-proxy",
+          "title": "Instantiating an IdP Proxy",
+          "number": "4.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-rtcidentityproviderglobalscope-rtcidentityprovider",
+        "href": "https://w3c.github.io/webrtc-identity/#dom-rtcidentityproviderglobalscope-rtcidentityprovider",
+        "linkingText": [
+          "rtcIdentityProvider"
+        ],
+        "localLinkingText": [
+          "RTCIdentityProviderGlobalScope.rtcIdentityProvider"
+        ],
+        "type": "attribute",
+        "for": [
+          "RTCIdentityProviderGlobalScope"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes-0",
+          "href": "https://w3c.github.io/webrtc-identity/#attributes-0",
+          "title": "Attributes"
+        },
+        "definedIn": "dt"
+      }
+    ],
+    "https://html.spec.whatwg.org/multipage/": [
+      {
+        "id": "workerglobalscope",
+        "href": "https://html.spec.whatwg.org/multipage/workers.html#workerglobalscope",
+        "linkingText": [
+          "WorkerGlobalScope"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-workerglobalscope-common-interface",
+          "href": "https://html.spec.whatwg.org/multipage/workers.html#the-workerglobalscope-common-interface",
+          "title": "The WorkerGlobalScope common interface",
+          "number": "10.2.1.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-workerglobalscope-self",
+        "href": "https://html.spec.whatwg.org/multipage/workers.html#dom-workerglobalscope-self",
+        "linkingText": [
+          "self"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "WorkerGlobalScope"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-workerglobalscope-common-interface",
+          "href": "https://html.spec.whatwg.org/multipage/workers.html#the-workerglobalscope-common-interface",
+          "title": "The WorkerGlobalScope common interface",
+          "number": "10.2.1.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-workerglobalscope-location",
+        "href": "https://html.spec.whatwg.org/multipage/workers.html#dom-workerglobalscope-location",
+        "linkingText": [
+          "location"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "WorkerGlobalScope"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-workerglobalscope-common-interface",
+          "href": "https://html.spec.whatwg.org/multipage/workers.html#the-workerglobalscope-common-interface",
+          "title": "The WorkerGlobalScope common interface",
+          "number": "10.2.1.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-worker-navigator",
+        "href": "https://html.spec.whatwg.org/multipage/workers.html#dom-worker-navigator",
+        "linkingText": [
+          "navigator"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "WorkerGlobalScope"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-workernavigator-object",
+          "href": "https://html.spec.whatwg.org/multipage/workers.html#the-workernavigator-object",
+          "title": "The WorkerNavigator interface",
+          "number": "10.3.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-workerglobalscope-importscripts",
+        "href": "https://html.spec.whatwg.org/multipage/workers.html#dom-workerglobalscope-importscripts",
+        "linkingText": [
+          "importScripts(...urls)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "WorkerGlobalScope"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "importing-scripts-and-libraries",
+          "href": "https://html.spec.whatwg.org/multipage/workers.html#importing-scripts-and-libraries",
+          "title": "Importing scripts and libraries",
+          "number": "10.3.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "handler-workerglobalscope-onerror",
+        "href": "https://html.spec.whatwg.org/multipage/workers.html#handler-workerglobalscope-onerror",
+        "linkingText": [
+          "onerror"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "WorkerGlobalScope"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-workerglobalscope-common-interface",
+          "href": "https://html.spec.whatwg.org/multipage/workers.html#the-workerglobalscope-common-interface",
+          "title": "The WorkerGlobalScope common interface",
+          "number": "10.2.1.1"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-workerglobalscope-onlanguagechange",
+        "href": "https://html.spec.whatwg.org/multipage/workers.html#handler-workerglobalscope-onlanguagechange",
+        "linkingText": [
+          "onlanguagechange"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "WorkerGlobalScope"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-workerglobalscope-common-interface",
+          "href": "https://html.spec.whatwg.org/multipage/workers.html#the-workerglobalscope-common-interface",
+          "title": "The WorkerGlobalScope common interface",
+          "number": "10.2.1.1"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-workerglobalscope-onoffline",
+        "href": "https://html.spec.whatwg.org/multipage/workers.html#handler-workerglobalscope-onoffline",
+        "linkingText": [
+          "onoffline"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "WorkerGlobalScope"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-workerglobalscope-common-interface",
+          "href": "https://html.spec.whatwg.org/multipage/workers.html#the-workerglobalscope-common-interface",
+          "title": "The WorkerGlobalScope common interface",
+          "number": "10.2.1.1"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-workerglobalscope-ononline",
+        "href": "https://html.spec.whatwg.org/multipage/workers.html#handler-workerglobalscope-ononline",
+        "linkingText": [
+          "ononline"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "WorkerGlobalScope"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-workerglobalscope-common-interface",
+          "href": "https://html.spec.whatwg.org/multipage/workers.html#the-workerglobalscope-common-interface",
+          "title": "The WorkerGlobalScope common interface",
+          "number": "10.2.1.1"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-workerglobalscope-onrejectionhandled",
+        "href": "https://html.spec.whatwg.org/multipage/workers.html#handler-workerglobalscope-onrejectionhandled",
+        "linkingText": [
+          "onrejectionhandled"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "WorkerGlobalScope"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-workerglobalscope-common-interface",
+          "href": "https://html.spec.whatwg.org/multipage/workers.html#the-workerglobalscope-common-interface",
+          "title": "The WorkerGlobalScope common interface",
+          "number": "10.2.1.1"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-workerglobalscope-onunhandledrejection",
+        "href": "https://html.spec.whatwg.org/multipage/workers.html#handler-workerglobalscope-onunhandledrejection",
+        "linkingText": [
+          "onunhandledrejection"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "WorkerGlobalScope"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-workerglobalscope-common-interface",
+          "href": "https://html.spec.whatwg.org/multipage/workers.html#the-workerglobalscope-common-interface",
+          "title": "The WorkerGlobalScope common interface",
+          "number": "10.2.1.1"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "windoworworkerglobalscope",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#windoworworkerglobalscope",
+        "linkingText": [
+          "WindowOrWorkerGlobalScope"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "windoworworkerglobalscope-mixin",
+          "href": "https://html.spec.whatwg.org/multipage/webappapis.html#windoworworkerglobalscope-mixin",
+          "title": "The WindowOrWorkerGlobalScope mixin",
+          "number": "8.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-origin",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#dom-origin",
+        "linkingText": [
+          "origin"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "WindowOrWorkerGlobalScope"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "windoworworkerglobalscope-mixin",
+          "href": "https://html.spec.whatwg.org/multipage/webappapis.html#windoworworkerglobalscope-mixin",
+          "title": "The WindowOrWorkerGlobalScope mixin",
+          "number": "8.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-issecurecontext",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#dom-issecurecontext",
+        "linkingText": [
+          "isSecureContext"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "WindowOrWorkerGlobalScope"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "windoworworkerglobalscope-mixin",
+          "href": "https://html.spec.whatwg.org/multipage/webappapis.html#windoworworkerglobalscope-mixin",
+          "title": "The WindowOrWorkerGlobalScope mixin",
+          "number": "8.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-crossoriginisolated",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#dom-crossoriginisolated",
+        "linkingText": [
+          "crossOriginIsolated"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "WindowOrWorkerGlobalScope"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "windoworworkerglobalscope-mixin",
+          "href": "https://html.spec.whatwg.org/multipage/webappapis.html#windoworworkerglobalscope-mixin",
+          "title": "The WindowOrWorkerGlobalScope mixin",
+          "number": "8.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-reporterror",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#dom-reporterror",
+        "linkingText": [
+          "reportError(e)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "WindowOrWorkerGlobalScope"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "runtime-script-errors",
+          "href": "https://html.spec.whatwg.org/multipage/webappapis.html#runtime-script-errors",
+          "title": "Runtime script errors",
+          "number": "8.1.4.6"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-btoa",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#dom-btoa",
+        "linkingText": [
+          "btoa(data)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "WindowOrWorkerGlobalScope"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "atob",
+          "href": "https://html.spec.whatwg.org/multipage/webappapis.html#atob",
+          "title": "Base64 utility methods",
+          "number": "8.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-atob",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#dom-atob",
+        "linkingText": [
+          "atob(data)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "WindowOrWorkerGlobalScope"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "atob",
+          "href": "https://html.spec.whatwg.org/multipage/webappapis.html#atob",
+          "title": "Base64 utility methods",
+          "number": "8.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-settimeout",
+        "href": "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#dom-settimeout",
+        "linkingText": [
+          "setTimeout(handler, timeout, ...arguments)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "WindowOrWorkerGlobalScope"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "timers",
+          "href": "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#timers",
+          "title": "Timers",
+          "number": "8.6"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-cleartimeout",
+        "href": "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#dom-cleartimeout",
+        "linkingText": [
+          "clearTimeout(id)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "WindowOrWorkerGlobalScope"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "timers",
+          "href": "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#timers",
+          "title": "Timers",
+          "number": "8.6"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-setinterval",
+        "href": "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#dom-setinterval",
+        "linkingText": [
+          "setInterval(handler, timeout, ...arguments)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "WindowOrWorkerGlobalScope"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "timers",
+          "href": "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#timers",
+          "title": "Timers",
+          "number": "8.6"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-clearinterval",
+        "href": "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#dom-clearinterval",
+        "linkingText": [
+          "clearInterval(id)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "WindowOrWorkerGlobalScope"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "timers",
+          "href": "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#timers",
+          "title": "Timers",
+          "number": "8.6"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-queuemicrotask",
+        "href": "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#dom-queuemicrotask",
+        "linkingText": [
+          "queueMicrotask(callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "WindowOrWorkerGlobalScope"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "microtask-queuing",
+          "href": "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#microtask-queuing",
+          "title": "Microtask queuing",
+          "number": "8.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-createimagebitmap",
+        "href": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#dom-createimagebitmap",
+        "linkingText": [
+          "createImageBitmap(image, options)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "WindowOrWorkerGlobalScope"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "images-2",
+          "href": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#images-2",
+          "title": "Images",
+          "number": "8.10"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-structuredclone",
+        "href": "https://html.spec.whatwg.org/multipage/structured-data.html#dom-structuredclone",
+        "linkingText": [
+          "structuredClone(value, options)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "WindowOrWorkerGlobalScope"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "structured-cloning",
+          "href": "https://html.spec.whatwg.org/multipage/structured-data.html#structured-cloning",
+          "title": "Structured cloning API",
+          "number": "2.7.10"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://www.w3.org/TR/css-font-loading-3/": [
+      {
+        "id": "fontfacesource",
+        "href": "https://drafts.csswg.org/css-font-loading/#fontfacesource",
+        "linkingText": [
+          "FontFaceSource"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "font-face-source",
+          "href": "https://drafts.csswg.org/css-font-loading/#font-face-source",
+          "title": "The FontFaceSource Mixin",
+          "number": "4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-fontfacesource-fonts",
+        "href": "https://drafts.csswg.org/css-font-loading/#dom-fontfacesource-fonts",
+        "linkingText": [
+          "fonts"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "FontFaceSource"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "font-face-source",
+          "href": "https://drafts.csswg.org/css-font-loading/#font-face-source",
+          "title": "The FontFaceSource Mixin",
+          "number": "4"
+        },
+        "definedIn": "pre"
+      }
+    ],
+    "https://fetch.spec.whatwg.org/": [
+      {
+        "id": "dom-global-fetch",
+        "href": "https://fetch.spec.whatwg.org/#dom-global-fetch",
+        "linkingText": [
+          "fetch(input, init)",
+          "fetch(input)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "WindowOrWorkerGlobalScope"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "fetch-method",
+          "href": "https://fetch.spec.whatwg.org/#fetch-method",
+          "title": "Fetch method",
+          "number": "5.6"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://w3c.github.io/webappsec-trusted-types/dist/spec/": [
+      {
+        "id": "dom-windoworworkerglobalscope-trustedtypes",
+        "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#dom-windoworworkerglobalscope-trustedtypes",
+        "linkingText": [
+          "trustedTypes"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "WindowOrWorkerGlobalScope"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "extensions-to-the-windoworworkerglobalscope-interface",
+          "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#extensions-to-the-windoworworkerglobalscope-interface",
+          "title": "Extensions to the WindowOrWorkerGlobalScope interface",
+          "number": "4.3.1"
+        },
+        "definedIn": "pre"
+      }
+    ],
+    "https://wicg.github.io/origin-policy/": [
+      {
+        "id": "dom-windoworworkerglobalscope-originpolicyids",
+        "href": "https://wicg.github.io/origin-policy/#dom-windoworworkerglobalscope-originpolicyids",
+        "linkingText": [
+          "originPolicyIds"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "WindowOrWorkerGlobalScope"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "monkeypatch-html-windoworworkerglobalscope",
+          "href": "https://wicg.github.io/origin-policy/#monkeypatch-html-windoworworkerglobalscope",
+          "title": "WindowOrWorkerGlobalScope",
+          "number": "5.2.1"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://wicg.github.io/scheduling-apis/": [
+      {
+        "id": "dom-windoworworkerglobalscope-scheduler",
+        "href": "https://wicg.github.io/scheduling-apis/#dom-windoworworkerglobalscope-scheduler",
+        "linkingText": [
+          "scheduler"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "WindowOrWorkerGlobalScope"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "sec-patches-html-windoworworkerglobalscope",
+          "href": "https://wicg.github.io/scheduling-apis/#sec-patches-html-windoworworkerglobalscope",
+          "title": "WindowOrWorkerGlobalScope",
+          "number": "4.1.1"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://www.w3.org/TR/hr-time-3/": [
+      {
+        "id": "dom-windoworworkerglobalscope-performance",
+        "href": "https://w3c.github.io/hr-time/#dom-windoworworkerglobalscope-performance",
+        "linkingText": [
+          "performance"
+        ],
+        "localLinkingText": [
+          "WindowOrWorkerGlobalScope.performance"
+        ],
+        "type": "attribute",
+        "for": [
+          "WindowOrWorkerGlobalScope"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-performance-attribute",
+          "href": "https://w3c.github.io/hr-time/#the-performance-attribute",
+          "title": "The performance attribute",
+          "number": "6.1"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://www.w3.org/TR/IndexedDB-3/": [
+      {
+        "id": "dom-windoworworkerglobalscope-indexeddb",
+        "href": "https://w3c.github.io/IndexedDB/#dom-windoworworkerglobalscope-indexeddb",
+        "linkingText": [
+          "indexedDB"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "WindowOrWorkerGlobalScope"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "factory-interface",
+          "href": "https://w3c.github.io/IndexedDB/#factory-interface",
+          "title": "The IDBFactory interface",
+          "number": "4.3"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://www.w3.org/TR/service-workers-1/": [
+      {
+        "id": "global-caches-attribute",
+        "href": "https://w3c.github.io/ServiceWorker/#global-caches-attribute",
+        "linkingText": [
+          "caches"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "WindowOrWorkerGlobalScope"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "global-caches",
+          "href": "https://w3c.github.io/ServiceWorker/#global-caches",
+          "title": "caches",
+          "number": "5.3.1"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://www.w3.org/TR/WebCryptoAPI/": [
+      {
+        "id": "dom-windoworworkerglobalscope-crypto",
+        "href": "https://w3c.github.io/webcrypto/#dom-windoworworkerglobalscope-crypto",
+        "linkingText": [
+          "crypto"
+        ],
+        "localLinkingText": [
+          "WindowOrWorkerGlobalScope.crypto"
+        ],
+        "type": "attribute",
+        "for": [
+          "WindowOrWorkerGlobalScope"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "crypto-interface",
+          "href": "https://w3c.github.io/webcrypto/#crypto-interface",
+          "title": "10. Crypto interface"
+        },
+        "definedIn": "pre"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "eventtarget",
+        "href": "https://dom.spec.whatwg.org/#eventtarget",
+        "linkingText": [
+          "EventTarget"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventtarget-eventtarget",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-eventtarget",
+        "linkingText": [
+          "EventTarget()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-addeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-addeventlistener",
+        "linkingText": [
+          "addEventListener(type, callback, options)",
+          "addEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-removeeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-removeeventlistener",
+        "linkingText": [
+          "removeEventListener(type, callback, options)",
+          "removeEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-dispatchevent",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-dispatchevent",
+        "linkingText": [
+          "dispatchEvent(event)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

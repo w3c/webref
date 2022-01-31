@@ -1,0 +1,290 @@
+{
+  "name": "TextMetrics",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "HTML Standard",
+      "url": "https://html.spec.whatwg.org/multipage/"
+    },
+    "fragment": "[Exposed=(Window,Worker)]\ninterface TextMetrics {\n  // x-direction\n  readonly attribute double width; // advance width\n  readonly attribute double actualBoundingBoxLeft;\n  readonly attribute double actualBoundingBoxRight;\n\n  // y-direction\n  readonly attribute double fontBoundingBoxAscent;\n  readonly attribute double fontBoundingBoxDescent;\n  readonly attribute double actualBoundingBoxAscent;\n  readonly attribute double actualBoundingBoxDescent;\n  readonly attribute double emHeightAscent;\n  readonly attribute double emHeightDescent;\n  readonly attribute double hangingBaseline;\n  readonly attribute double alphabeticBaseline;\n  readonly attribute double ideographicBaseline;\n};",
+    "href": "https://html.spec.whatwg.org/multipage/canvas.html#textmetrics"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://html.spec.whatwg.org/multipage/": [
+      {
+        "id": "textmetrics",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#textmetrics",
+        "linkingText": [
+          "TextMetrics"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "2dcontext",
+          "href": "https://html.spec.whatwg.org/multipage/canvas.html#2dcontext",
+          "title": "The 2D rendering context",
+          "number": "4.12.5.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-textmetrics-width",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-textmetrics-width",
+        "linkingText": [
+          "width"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "TextMetrics"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "drawing-text-to-the-bitmap",
+          "href": "https://html.spec.whatwg.org/multipage/canvas.html#drawing-text-to-the-bitmap",
+          "title": "Drawing text to the bitmap",
+          "number": "4.12.5.1.11"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-textmetrics-actualboundingboxleft",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-textmetrics-actualboundingboxleft",
+        "linkingText": [
+          "actualBoundingBoxLeft"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "TextMetrics"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "drawing-text-to-the-bitmap",
+          "href": "https://html.spec.whatwg.org/multipage/canvas.html#drawing-text-to-the-bitmap",
+          "title": "Drawing text to the bitmap",
+          "number": "4.12.5.1.11"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-textmetrics-actualboundingboxright",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-textmetrics-actualboundingboxright",
+        "linkingText": [
+          "actualBoundingBoxRight"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "TextMetrics"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "drawing-text-to-the-bitmap",
+          "href": "https://html.spec.whatwg.org/multipage/canvas.html#drawing-text-to-the-bitmap",
+          "title": "Drawing text to the bitmap",
+          "number": "4.12.5.1.11"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-textmetrics-fontboundingboxascent",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-textmetrics-fontboundingboxascent",
+        "linkingText": [
+          "fontBoundingBoxAscent"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "TextMetrics"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "drawing-text-to-the-bitmap",
+          "href": "https://html.spec.whatwg.org/multipage/canvas.html#drawing-text-to-the-bitmap",
+          "title": "Drawing text to the bitmap",
+          "number": "4.12.5.1.11"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-textmetrics-fontboundingboxdescent",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-textmetrics-fontboundingboxdescent",
+        "linkingText": [
+          "fontBoundingBoxDescent"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "TextMetrics"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "drawing-text-to-the-bitmap",
+          "href": "https://html.spec.whatwg.org/multipage/canvas.html#drawing-text-to-the-bitmap",
+          "title": "Drawing text to the bitmap",
+          "number": "4.12.5.1.11"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-textmetrics-actualboundingboxascent",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-textmetrics-actualboundingboxascent",
+        "linkingText": [
+          "actualBoundingBoxAscent"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "TextMetrics"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "drawing-text-to-the-bitmap",
+          "href": "https://html.spec.whatwg.org/multipage/canvas.html#drawing-text-to-the-bitmap",
+          "title": "Drawing text to the bitmap",
+          "number": "4.12.5.1.11"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-textmetrics-actualboundingboxdescent",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-textmetrics-actualboundingboxdescent",
+        "linkingText": [
+          "actualBoundingBoxDescent"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "TextMetrics"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "drawing-text-to-the-bitmap",
+          "href": "https://html.spec.whatwg.org/multipage/canvas.html#drawing-text-to-the-bitmap",
+          "title": "Drawing text to the bitmap",
+          "number": "4.12.5.1.11"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-textmetrics-emheightascent",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-textmetrics-emheightascent",
+        "linkingText": [
+          "emHeightAscent"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "TextMetrics"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "drawing-text-to-the-bitmap",
+          "href": "https://html.spec.whatwg.org/multipage/canvas.html#drawing-text-to-the-bitmap",
+          "title": "Drawing text to the bitmap",
+          "number": "4.12.5.1.11"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-textmetrics-emheightdescent",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-textmetrics-emheightdescent",
+        "linkingText": [
+          "emHeightDescent"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "TextMetrics"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "drawing-text-to-the-bitmap",
+          "href": "https://html.spec.whatwg.org/multipage/canvas.html#drawing-text-to-the-bitmap",
+          "title": "Drawing text to the bitmap",
+          "number": "4.12.5.1.11"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-textmetrics-hangingbaseline",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-textmetrics-hangingbaseline",
+        "linkingText": [
+          "hangingBaseline"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "TextMetrics"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "drawing-text-to-the-bitmap",
+          "href": "https://html.spec.whatwg.org/multipage/canvas.html#drawing-text-to-the-bitmap",
+          "title": "Drawing text to the bitmap",
+          "number": "4.12.5.1.11"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-textmetrics-alphabeticbaseline",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-textmetrics-alphabeticbaseline",
+        "linkingText": [
+          "alphabeticBaseline"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "TextMetrics"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "drawing-text-to-the-bitmap",
+          "href": "https://html.spec.whatwg.org/multipage/canvas.html#drawing-text-to-the-bitmap",
+          "title": "Drawing text to the bitmap",
+          "number": "4.12.5.1.11"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-textmetrics-ideographicbaseline",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-textmetrics-ideographicbaseline",
+        "linkingText": [
+          "ideographicBaseline"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "TextMetrics"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "drawing-text-to-the-bitmap",
+          "href": "https://html.spec.whatwg.org/multipage/canvas.html#drawing-text-to-the-bitmap",
+          "title": "Drawing text to the bitmap",
+          "number": "4.12.5.1.11"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

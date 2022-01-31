@@ -1,0 +1,84 @@
+{
+  "name": "PushSubscriptionOptions",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Push API",
+      "url": "https://www.w3.org/TR/push-api/"
+    },
+    "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface PushSubscriptionOptions {\n  readonly attribute boolean userVisibleOnly;\n  [SameObject] readonly attribute ArrayBuffer? applicationServerKey;\n};",
+    "href": "https://w3c.github.io/push-api/#dom-pushsubscriptionoptions"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/push-api/": [
+      {
+        "id": "dom-pushsubscriptionoptions",
+        "href": "https://w3c.github.io/push-api/#dom-pushsubscriptionoptions",
+        "linkingText": [
+          "PushSubscriptionOptions"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "pushsubscriptionoptions-interface",
+          "href": "https://w3c.github.io/push-api/#pushsubscriptionoptions-interface",
+          "title": "PushSubscriptionOptions Interface",
+          "number": "7.1"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-pushsubscriptionoptions-uservisibleonly",
+        "href": "https://w3c.github.io/push-api/#dom-pushsubscriptionoptions-uservisibleonly",
+        "linkingText": [
+          "userVisibleOnly"
+        ],
+        "localLinkingText": [
+          "PushSubscriptionOptions.userVisibleOnly"
+        ],
+        "type": "attribute",
+        "for": [
+          "PushSubscriptionOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "pushsubscriptionoptions-interface",
+          "href": "https://w3c.github.io/push-api/#pushsubscriptionoptions-interface",
+          "title": "PushSubscriptionOptions Interface",
+          "number": "7.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-pushsubscriptionoptions-applicationserverkey",
+        "href": "https://w3c.github.io/push-api/#dom-pushsubscriptionoptions-applicationserverkey",
+        "linkingText": [
+          "applicationServerKey"
+        ],
+        "localLinkingText": [
+          "PushSubscriptionOptions.applicationServerKey"
+        ],
+        "type": "attribute",
+        "for": [
+          "PushSubscriptionOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "pushsubscriptionoptions-interface",
+          "href": "https://w3c.github.io/push-api/#pushsubscriptionoptions-interface",
+          "title": "PushSubscriptionOptions Interface",
+          "number": "7.1"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

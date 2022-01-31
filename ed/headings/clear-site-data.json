@@ -1,0 +1,288 @@
+{
+  "spec": {
+    "title": "Clear Site Data",
+    "url": "https://w3c.github.io/webappsec-clear-site-data/"
+  },
+  "headings": [
+    {
+      "id": "subtitle",
+      "href": "https://w3c.github.io/webappsec-clear-site-data/#subtitle",
+      "level": 2,
+      "title": "Editor’s Draft, 18 February 2021"
+    },
+    {
+      "id": "abstract",
+      "href": "https://w3c.github.io/webappsec-clear-site-data/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "status",
+      "href": "https://w3c.github.io/webappsec-clear-site-data/#status",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://w3c.github.io/webappsec-clear-site-data/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "intro",
+      "href": "https://w3c.github.io/webappsec-clear-site-data/#intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "examples",
+      "href": "https://w3c.github.io/webappsec-clear-site-data/#examples",
+      "level": 3,
+      "title": "Examples",
+      "number": "1.1"
+    },
+    {
+      "id": "example-signout",
+      "href": "https://w3c.github.io/webappsec-clear-site-data/#example-signout",
+      "level": 4,
+      "title": "Signing Out",
+      "number": "1.1.1"
+    },
+    {
+      "id": "example-targeted",
+      "href": "https://w3c.github.io/webappsec-clear-site-data/#example-targeted",
+      "level": 4,
+      "title": "Targeted Clearing",
+      "number": "1.1.2"
+    },
+    {
+      "id": "example-keepcookies",
+      "href": "https://w3c.github.io/webappsec-clear-site-data/#example-keepcookies",
+      "level": 4,
+      "title": "Keep Critical Cookies",
+      "number": "1.1.3"
+    },
+    {
+      "id": "example-killswitch",
+      "href": "https://w3c.github.io/webappsec-clear-site-data/#example-killswitch",
+      "level": 4,
+      "title": "Kill Switch",
+      "number": "1.1.4"
+    },
+    {
+      "id": "goals",
+      "href": "https://w3c.github.io/webappsec-clear-site-data/#goals",
+      "level": 3,
+      "title": "Goals",
+      "number": "1.2"
+    },
+    {
+      "id": "infra",
+      "href": "https://w3c.github.io/webappsec-clear-site-data/#infra",
+      "level": 2,
+      "title": "Infrastructure",
+      "number": "2"
+    },
+    {
+      "id": "clearing",
+      "href": "https://w3c.github.io/webappsec-clear-site-data/#clearing",
+      "level": 2,
+      "title": "Clearing Site Data",
+      "number": "3"
+    },
+    {
+      "id": "header",
+      "href": "https://w3c.github.io/webappsec-clear-site-data/#header",
+      "level": 3,
+      "title": "The Clear-Site-Data HTTP Response Header Field",
+      "number": "3.1"
+    },
+    {
+      "id": "fetch-integration",
+      "href": "https://w3c.github.io/webappsec-clear-site-data/#fetch-integration",
+      "level": 3,
+      "title": "Fetch Integration",
+      "number": "3.2"
+    },
+    {
+      "id": "algorithms",
+      "href": "https://w3c.github.io/webappsec-clear-site-data/#algorithms",
+      "level": 2,
+      "title": "Algorithms",
+      "number": "4"
+    },
+    {
+      "id": "parsing",
+      "href": "https://w3c.github.io/webappsec-clear-site-data/#parsing",
+      "level": 3,
+      "title": "Parsing",
+      "number": "4.1"
+    },
+    {
+      "id": "clear-response",
+      "href": "https://w3c.github.io/webappsec-clear-site-data/#clear-response",
+      "level": 3,
+      "title": "Clear data for response",
+      "number": "4.2"
+    },
+    {
+      "id": "prepare",
+      "href": "https://w3c.github.io/webappsec-clear-site-data/#prepare",
+      "level": 4,
+      "title": "Prepare to clear origin’s data",
+      "number": "4.2.1"
+    },
+    {
+      "id": "reload-contexts",
+      "href": "https://w3c.github.io/webappsec-clear-site-data/#reload-contexts",
+      "level": 4,
+      "title": "Reload browsing contexts",
+      "number": "4.2.2"
+    },
+    {
+      "id": "clear-cache",
+      "href": "https://w3c.github.io/webappsec-clear-site-data/#clear-cache",
+      "level": 4,
+      "title": "Clear cache for origin",
+      "number": "4.2.3"
+    },
+    {
+      "id": "clear-cookies",
+      "href": "https://w3c.github.io/webappsec-clear-site-data/#clear-cookies",
+      "level": 4,
+      "title": "Clear cookies for origin",
+      "number": "4.2.4"
+    },
+    {
+      "id": "clear-dom",
+      "href": "https://w3c.github.io/webappsec-clear-site-data/#clear-dom",
+      "level": 4,
+      "title": "Clear DOM-accessible storage for origin",
+      "number": "4.2.5"
+    },
+    {
+      "id": "security",
+      "href": "https://w3c.github.io/webappsec-clear-site-data/#security",
+      "level": 2,
+      "title": "Security Considerations",
+      "number": "5"
+    },
+    {
+      "id": "incomplete",
+      "href": "https://w3c.github.io/webappsec-clear-site-data/#incomplete",
+      "level": 3,
+      "title": "Incomplete Clearing",
+      "number": "5.1"
+    },
+    {
+      "id": "service-workers",
+      "href": "https://w3c.github.io/webappsec-clear-site-data/#service-workers",
+      "level": 3,
+      "title": "Service workers",
+      "number": "5.2"
+    },
+    {
+      "id": "privacy",
+      "href": "https://w3c.github.io/webappsec-clear-site-data/#privacy",
+      "level": 2,
+      "title": "Privacy Considerations",
+      "number": "6"
+    },
+    {
+      "id": "user-vs-author",
+      "href": "https://w3c.github.io/webappsec-clear-site-data/#user-vs-author",
+      "level": 3,
+      "title": "Web developers control the timing.",
+      "number": "6.1"
+    },
+    {
+      "id": "remnants",
+      "href": "https://w3c.github.io/webappsec-clear-site-data/#remnants",
+      "level": 3,
+      "title": "Remnants of data on disk.",
+      "number": "6.2"
+    },
+    {
+      "id": "iana-considerations",
+      "href": "https://w3c.github.io/webappsec-clear-site-data/#iana-considerations",
+      "level": 2,
+      "title": "IANA Considerations",
+      "number": "7"
+    },
+    {
+      "id": "iana-clear-site-data",
+      "href": "https://w3c.github.io/webappsec-clear-site-data/#iana-clear-site-data",
+      "level": 3,
+      "title": "Clear-Site-Data",
+      "number": "7.1"
+    },
+    {
+      "id": "acknowledgements",
+      "href": "https://w3c.github.io/webappsec-clear-site-data/#acknowledgements",
+      "level": 2,
+      "title": "Acknowledgements",
+      "number": "8"
+    },
+    {
+      "id": "conformance",
+      "href": "https://w3c.github.io/webappsec-clear-site-data/#conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "conventions",
+      "href": "https://w3c.github.io/webappsec-clear-site-data/#conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "conformant-algorithms",
+      "href": "https://w3c.github.io/webappsec-clear-site-data/#conformant-algorithms",
+      "level": 3,
+      "title": "Conformant Algorithms"
+    },
+    {
+      "id": "index",
+      "href": "https://w3c.github.io/webappsec-clear-site-data/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://w3c.github.io/webappsec-clear-site-data/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://w3c.github.io/webappsec-clear-site-data/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://w3c.github.io/webappsec-clear-site-data/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://w3c.github.io/webappsec-clear-site-data/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://w3c.github.io/webappsec-clear-site-data/#informative",
+      "level": 3,
+      "title": "Informative References"
+    },
+    {
+      "id": "issues-index",
+      "href": "https://w3c.github.io/webappsec-clear-site-data/#issues-index",
+      "level": 2,
+      "title": "Issues Index"
+    }
+  ]
+}

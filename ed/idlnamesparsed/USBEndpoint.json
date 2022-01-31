@@ -1,0 +1,144 @@
+{
+  "name": "USBEndpoint",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebUSB API",
+      "url": "https://wicg.github.io/webusb/"
+    },
+    "fragment": "[\n  Exposed=(DedicatedWorker,SharedWorker,Window),\n  SecureContext\n]\ninterface USBEndpoint {\n  constructor(USBAlternateInterface alternate, octet endpointNumber, USBDirection direction);\n  readonly attribute octet endpointNumber;\n  readonly attribute USBDirection direction;\n  readonly attribute USBEndpointType type;\n  readonly attribute unsigned long packetSize;\n};",
+    "href": "https://wicg.github.io/webusb/#usbendpoint"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://wicg.github.io/webusb/": [
+      {
+        "id": "usbendpoint",
+        "href": "https://wicg.github.io/webusb/#usbendpoint",
+        "linkingText": [
+          "USBEndpoint"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "endpoints",
+          "href": "https://wicg.github.io/webusb/#endpoints",
+          "title": "Endpoints",
+          "number": "6.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-usbendpoint-usbendpoint",
+        "href": "https://wicg.github.io/webusb/#dom-usbendpoint-usbendpoint",
+        "linkingText": [
+          "USBEndpoint(alternate, endpointNumber, direction)",
+          "constructor(alternate, endpointNumber, direction)"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "USBEndpoint"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "endpoints",
+          "href": "https://wicg.github.io/webusb/#endpoints",
+          "title": "Endpoints",
+          "number": "6.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-usbendpoint-endpointnumber",
+        "href": "https://wicg.github.io/webusb/#dom-usbendpoint-endpointnumber",
+        "linkingText": [
+          "endpointNumber"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "USBEndpoint"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "endpoints",
+          "href": "https://wicg.github.io/webusb/#endpoints",
+          "title": "Endpoints",
+          "number": "6.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-usbendpoint-direction",
+        "href": "https://wicg.github.io/webusb/#dom-usbendpoint-direction",
+        "linkingText": [
+          "direction"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "USBEndpoint"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "endpoints",
+          "href": "https://wicg.github.io/webusb/#endpoints",
+          "title": "Endpoints",
+          "number": "6.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-usbendpoint-type",
+        "href": "https://wicg.github.io/webusb/#dom-usbendpoint-type",
+        "linkingText": [
+          "type"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "USBEndpoint"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "endpoints",
+          "href": "https://wicg.github.io/webusb/#endpoints",
+          "title": "Endpoints",
+          "number": "6.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-usbendpoint-packetsize",
+        "href": "https://wicg.github.io/webusb/#dom-usbendpoint-packetsize",
+        "linkingText": [
+          "packetSize"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "USBEndpoint"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "endpoints",
+          "href": "https://wicg.github.io/webusb/#endpoints",
+          "title": "Endpoints",
+          "number": "6.4"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

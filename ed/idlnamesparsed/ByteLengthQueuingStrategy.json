@@ -1,0 +1,102 @@
+{
+  "name": "ByteLengthQueuingStrategy",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Streams Standard",
+      "url": "https://streams.spec.whatwg.org/"
+    },
+    "fragment": "[Exposed=*]\ninterface ByteLengthQueuingStrategy {\n  constructor(QueuingStrategyInit init);\n\n  readonly attribute unrestricted double highWaterMark;\n  readonly attribute Function size;\n};",
+    "href": "https://streams.spec.whatwg.org/#bytelengthqueuingstrategy"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://streams.spec.whatwg.org/": [
+      {
+        "id": "bytelengthqueuingstrategy",
+        "href": "https://streams.spec.whatwg.org/#bytelengthqueuingstrategy",
+        "linkingText": [
+          "ByteLengthQueuingStrategy"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "blqs-class-definition",
+          "href": "https://streams.spec.whatwg.org/#blqs-class-definition",
+          "title": "Interface definition",
+          "number": "7.2.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "blqs-constructor",
+        "href": "https://streams.spec.whatwg.org/#blqs-constructor",
+        "linkingText": [
+          "ByteLengthQueuingStrategy(init)",
+          "constructor(init)"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "ByteLengthQueuingStrategy"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "blqs-prototype",
+          "href": "https://streams.spec.whatwg.org/#blqs-prototype",
+          "title": "Constructor and properties",
+          "number": "7.2.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "blqs-high-water-mark",
+        "href": "https://streams.spec.whatwg.org/#blqs-high-water-mark",
+        "linkingText": [
+          "highWaterMark"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "ByteLengthQueuingStrategy"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "blqs-prototype",
+          "href": "https://streams.spec.whatwg.org/#blqs-prototype",
+          "title": "Constructor and properties",
+          "number": "7.2.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "blqs-size",
+        "href": "https://streams.spec.whatwg.org/#blqs-size",
+        "linkingText": [
+          "size"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "ByteLengthQueuingStrategy"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "blqs-prototype",
+          "href": "https://streams.spec.whatwg.org/#blqs-prototype",
+          "title": "Constructor and properties",
+          "number": "7.2.3"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

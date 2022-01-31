@@ -1,0 +1,199 @@
+{
+  "name": "AudioProcessingEventInit",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Web Audio API",
+      "url": "https://www.w3.org/TR/webaudio/"
+    },
+    "fragment": "dictionary AudioProcessingEventInit : EventInit {\n  required double playbackTime;\n  required AudioBuffer inputBuffer;\n  required AudioBuffer outputBuffer;\n};",
+    "href": "https://webaudio.github.io/web-audio-api/#dictdef-audioprocessingeventinit"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "EventInit",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "dictionary EventInit {\n  boolean bubbles = false;\n  boolean cancelable = false;\n  boolean composed = false;\n};",
+      "href": "https://dom.spec.whatwg.org/#dictdef-eventinit"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webaudio/": [
+      {
+        "id": "dictdef-audioprocessingeventinit",
+        "href": "https://webaudio.github.io/web-audio-api/#dictdef-audioprocessingeventinit",
+        "linkingText": [
+          "AudioProcessingEventInit"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "AudioProcessingEventInit",
+          "href": "https://webaudio.github.io/web-audio-api/#AudioProcessingEventInit",
+          "title": "AudioProcessingEventInit",
+          "number": "1.12.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-audioprocessingeventinit-playbacktime",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-audioprocessingeventinit-playbacktime",
+        "linkingText": [
+          "playbackTime"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "AudioProcessingEventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-audioprocessingeventinit-members",
+          "href": "https://webaudio.github.io/web-audio-api/#dictionary-audioprocessingeventinit-members",
+          "title": "Dictionary AudioProcessingEventInit Members",
+          "number": "1.12.2.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-audioprocessingeventinit-inputbuffer",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-audioprocessingeventinit-inputbuffer",
+        "linkingText": [
+          "inputBuffer"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "AudioProcessingEventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-audioprocessingeventinit-members",
+          "href": "https://webaudio.github.io/web-audio-api/#dictionary-audioprocessingeventinit-members",
+          "title": "Dictionary AudioProcessingEventInit Members",
+          "number": "1.12.2.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-audioprocessingeventinit-outputbuffer",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-audioprocessingeventinit-outputbuffer",
+        "linkingText": [
+          "outputBuffer"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "AudioProcessingEventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-audioprocessingeventinit-members",
+          "href": "https://webaudio.github.io/web-audio-api/#dictionary-audioprocessingeventinit-members",
+          "title": "Dictionary AudioProcessingEventInit Members",
+          "number": "1.12.2.1"
+        },
+        "definedIn": "dt"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "dictdef-eventinit",
+        "href": "https://dom.spec.whatwg.org/#dictdef-eventinit",
+        "linkingText": [
+          "EventInit"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventinit-bubbles",
+        "href": "https://dom.spec.whatwg.org/#dom-eventinit-bubbles",
+        "linkingText": [
+          "bubbles"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventinit-cancelable",
+        "href": "https://dom.spec.whatwg.org/#dom-eventinit-cancelable",
+        "linkingText": [
+          "cancelable"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventinit-composed",
+        "href": "https://dom.spec.whatwg.org/#dom-eventinit-composed",
+        "linkingText": [
+          "composed"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

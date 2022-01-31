@@ -1,0 +1,364 @@
+{
+  "name": "XRFrame",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebXR Device API",
+      "url": "https://www.w3.org/TR/webxr/"
+    },
+    "fragment": "[SecureContext, Exposed=Window] interface XRFrame {\n  [SameObject] readonly attribute XRSession session;\n  readonly attribute DOMHighResTimeStamp predictedDisplayTime;\n\n  XRViewerPose? getViewerPose(XRReferenceSpace referenceSpace);\n  XRPose? getPose(XRSpace space, XRSpace baseSpace);\n};",
+    "href": "https://immersive-web.github.io/webxr/#xrframe"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "WebXR Anchors Module",
+        "url": "https://immersive-web.github.io/anchors/"
+      },
+      "fragment": "partial interface XRFrame {\n  Promise<XRAnchor> createAnchor(XRRigidTransform pose, XRSpace space);\n};"
+    },
+    {
+      "spec": {
+        "title": "WebXR Anchors Module",
+        "url": "https://immersive-web.github.io/anchors/"
+      },
+      "fragment": "partial interface XRFrame {\n  [SameObject] readonly attribute XRAnchorSet trackedAnchors;\n};"
+    },
+    {
+      "spec": {
+        "title": "WebXR Depth Sensing Module",
+        "url": "https://www.w3.org/TR/webxr-depth-sensing-1/"
+      },
+      "fragment": "partial interface XRFrame {\n  XRCPUDepthInformation? getDepthInformation(XRView view);\n};"
+    },
+    {
+      "spec": {
+        "title": "WebXR Hand Input Module - Level 1",
+        "url": "https://www.w3.org/TR/webxr-hand-input-1/"
+      },
+      "fragment": "partial interface XRFrame {\n    XRJointPose? getJointPose(XRJointSpace joint, XRSpace baseSpace);\n    boolean fillJointRadii(sequence<XRJointSpace> jointSpaces, Float32Array radii);\n\n    boolean fillPoses(sequence<XRSpace> spaces, XRSpace baseSpace, Float32Array transforms);\n};"
+    },
+    {
+      "spec": {
+        "title": "WebXR Hit Test Module",
+        "url": "https://www.w3.org/TR/webxr-hit-test-1/"
+      },
+      "fragment": "partial interface XRFrame {\n  FrozenArray<XRHitTestResult> getHitTestResults(XRHitTestSource hitTestSource);\n  FrozenArray<XRTransientInputHitTestResult> getHitTestResultsForTransientInput(XRTransientInputHitTestSource hitTestSource);\n};"
+    },
+    {
+      "spec": {
+        "title": "WebXR Lighting Estimation API Level 1",
+        "url": "https://www.w3.org/TR/webxr-lighting-estimation-1/"
+      },
+      "fragment": "partial interface XRFrame {\n  XRLightEstimate? getLightEstimate(XRLightProbe lightProbe);\n};"
+    }
+  ],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webxr/": [
+      {
+        "id": "xrframe",
+        "href": "https://immersive-web.github.io/webxr/#xrframe",
+        "linkingText": [
+          "XRFrame"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrframe-interface",
+          "href": "https://immersive-web.github.io/webxr/#xrframe-interface",
+          "title": "XRFrame",
+          "number": "5.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-xrframe-session",
+        "href": "https://immersive-web.github.io/webxr/#dom-xrframe-session",
+        "linkingText": [
+          "session"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XRFrame"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrframe-interface",
+          "href": "https://immersive-web.github.io/webxr/#xrframe-interface",
+          "title": "XRFrame",
+          "number": "5.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-xrframe-predicteddisplaytime",
+        "href": "https://immersive-web.github.io/webxr/#dom-xrframe-predicteddisplaytime",
+        "linkingText": [
+          "predictedDisplayTime"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XRFrame"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrframe-interface",
+          "href": "https://immersive-web.github.io/webxr/#xrframe-interface",
+          "title": "XRFrame",
+          "number": "5.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-xrframe-getviewerpose",
+        "href": "https://immersive-web.github.io/webxr/#dom-xrframe-getviewerpose",
+        "linkingText": [
+          "getViewerPose(referenceSpace)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "XRFrame"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrframe-interface",
+          "href": "https://immersive-web.github.io/webxr/#xrframe-interface",
+          "title": "XRFrame",
+          "number": "5.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-xrframe-getpose",
+        "href": "https://immersive-web.github.io/webxr/#dom-xrframe-getpose",
+        "linkingText": [
+          "getPose(space, baseSpace)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "XRFrame"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrframe-interface",
+          "href": "https://immersive-web.github.io/webxr/#xrframe-interface",
+          "title": "XRFrame",
+          "number": "5.1"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://immersive-web.github.io/anchors/": [
+      {
+        "id": "dom-xrframe-createanchor",
+        "href": "https://immersive-web.github.io/anchors/#dom-xrframe-createanchor",
+        "linkingText": [
+          "createAnchor(pose, space)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "XRFrame"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "anchor-creation",
+          "href": "https://immersive-web.github.io/anchors/#anchor-creation",
+          "title": "Anchor creation",
+          "number": "4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-xrframe-trackedanchors",
+        "href": "https://immersive-web.github.io/anchors/#dom-xrframe-trackedanchors",
+        "linkingText": [
+          "trackedAnchors"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "XRFrame"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "anchor-updates",
+          "href": "https://immersive-web.github.io/anchors/#anchor-updates",
+          "title": "Anchor updates",
+          "number": "5"
+        },
+        "definedIn": "pre"
+      }
+    ],
+    "https://www.w3.org/TR/webxr-depth-sensing-1/": [
+      {
+        "id": "dom-xrframe-getdepthinformation",
+        "href": "https://immersive-web.github.io/depth-sensing/#dom-xrframe-getdepthinformation",
+        "linkingText": [
+          "getDepthInformation(view)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "XRFrame"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xr-cpu-depth-info-section",
+          "href": "https://immersive-web.github.io/depth-sensing/#xr-cpu-depth-info-section",
+          "title": "XRCPUDepthInformation",
+          "number": "3.2"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://www.w3.org/TR/webxr-hand-input-1/": [
+      {
+        "id": "dom-xrframe-getjointpose",
+        "href": "https://immersive-web.github.io/webxr-hand-input/#dom-xrframe-getjointpose",
+        "linkingText": [
+          "getJointPose(joint, baseSpace)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "XRFrame"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrframe-interface",
+          "href": "https://immersive-web.github.io/webxr-hand-input/#xrframe-interface",
+          "title": "XRFrame",
+          "number": "4.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-xrframe-filljointradii",
+        "href": "https://immersive-web.github.io/webxr-hand-input/#dom-xrframe-filljointradii",
+        "linkingText": [
+          "fillJointRadii(jointSpaces, radii)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "XRFrame"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrframe-interface",
+          "href": "https://immersive-web.github.io/webxr-hand-input/#xrframe-interface",
+          "title": "XRFrame",
+          "number": "4.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-xrframe-fillposes",
+        "href": "https://immersive-web.github.io/webxr-hand-input/#dom-xrframe-fillposes",
+        "linkingText": [
+          "fillPoses(spaces, baseSpace, transforms)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "XRFrame"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrframe-interface",
+          "href": "https://immersive-web.github.io/webxr-hand-input/#xrframe-interface",
+          "title": "XRFrame",
+          "number": "4.1"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://www.w3.org/TR/webxr-hit-test-1/": [
+      {
+        "id": "dom-xrframe-gethittestresults",
+        "href": "https://immersive-web.github.io/hit-test/#dom-xrframe-gethittestresults",
+        "linkingText": [
+          "getHitTestResults(hitTestSource)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "XRFrame"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "obtaining-hit-test-results",
+          "href": "https://immersive-web.github.io/hit-test/#obtaining-hit-test-results",
+          "title": "Obtaining hit test results",
+          "number": "8"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-xrframe-gethittestresultsfortransientinput",
+        "href": "https://immersive-web.github.io/hit-test/#dom-xrframe-gethittestresultsfortransientinput",
+        "linkingText": [
+          "getHitTestResultsForTransientInput(hitTestSource)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "XRFrame"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "obtaining-hit-test-results",
+          "href": "https://immersive-web.github.io/hit-test/#obtaining-hit-test-results",
+          "title": "Obtaining hit test results",
+          "number": "8"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://www.w3.org/TR/webxr-lighting-estimation-1/": [
+      {
+        "id": "dom-xrframe-getlightestimate",
+        "href": "https://immersive-web.github.io/lighting-estimation/#dom-xrframe-getlightestimate",
+        "linkingText": [
+          "getLightEstimate(lightProbe)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "XRFrame"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "xrframe-interface",
+          "href": "https://immersive-web.github.io/lighting-estimation/#xrframe-interface",
+          "title": "XRFrame",
+          "number": "3.3"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "name": "GPUCanvasContext",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebGPU",
+      "url": "https://www.w3.org/TR/webgpu/"
+    },
+    "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUCanvasContext {\n    readonly attribute (HTMLCanvasElement or OffscreenCanvas) canvas;\n\n    undefined configure(GPUCanvasConfiguration configuration);\n    undefined unconfigure();\n\n    GPUTextureFormat getPreferredFormat(GPUAdapter adapter);\n    GPUTexture getCurrentTexture();\n};",
+    "href": "https://gpuweb.github.io/gpuweb/#gpucanvascontext"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webgpu/": [
+      {
+        "id": "gpucanvascontext",
+        "href": "https://gpuweb.github.io/gpuweb/#gpucanvascontext",
+        "linkingText": [
+          "GPUCanvasContext"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "canvas-context",
+          "href": "https://gpuweb.github.io/gpuweb/#canvas-context",
+          "title": "GPUCanvasContext",
+          "number": "20.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gpucanvascontext-canvas",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpucanvascontext-canvas",
+        "linkingText": [
+          "canvas"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "GPUCanvasContext"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "canvas-context",
+          "href": "https://gpuweb.github.io/gpuweb/#canvas-context",
+          "title": "GPUCanvasContext",
+          "number": "20.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpucanvascontext-configure",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpucanvascontext-configure",
+        "linkingText": [
+          "configure(configuration)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GPUCanvasContext"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "canvas-context",
+          "href": "https://gpuweb.github.io/gpuweb/#canvas-context",
+          "title": "GPUCanvasContext",
+          "number": "20.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpucanvascontext-unconfigure",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpucanvascontext-unconfigure",
+        "linkingText": [
+          "unconfigure()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GPUCanvasContext"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "canvas-context",
+          "href": "https://gpuweb.github.io/gpuweb/#canvas-context",
+          "title": "GPUCanvasContext",
+          "number": "20.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpucanvascontext-getpreferredformat",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpucanvascontext-getpreferredformat",
+        "linkingText": [
+          "getPreferredFormat(adapter)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GPUCanvasContext"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "canvas-context",
+          "href": "https://gpuweb.github.io/gpuweb/#canvas-context",
+          "title": "GPUCanvasContext",
+          "number": "20.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpucanvascontext-getcurrenttexture",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpucanvascontext-getcurrenttexture",
+        "linkingText": [
+          "getCurrentTexture()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GPUCanvasContext"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "canvas-context",
+          "href": "https://gpuweb.github.io/gpuweb/#canvas-context",
+          "title": "GPUCanvasContext",
+          "number": "20.2"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

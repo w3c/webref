@@ -1,0 +1,246 @@
+{
+  "spec": {
+    "title": "Web Periodic Background Synchronization",
+    "url": "https://wicg.github.io/periodic-background-sync/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://wicg.github.io/periodic-background-sync/#title",
+      "level": 1,
+      "title": "Web Periodic Background Synchronization"
+    },
+    {
+      "id": "subtitle",
+      "href": "https://wicg.github.io/periodic-background-sync/#subtitle",
+      "level": 2,
+      "title": "Draft Community Group Report, 12 April 2021"
+    },
+    {
+      "id": "abstract",
+      "href": "https://wicg.github.io/periodic-background-sync/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "status",
+      "href": "https://wicg.github.io/periodic-background-sync/#status",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://wicg.github.io/periodic-background-sync/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "intro",
+      "href": "https://wicg.github.io/periodic-background-sync/#intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "example",
+      "href": "https://wicg.github.io/periodic-background-sync/#example",
+      "level": 3,
+      "title": "Example",
+      "number": "1.1"
+    },
+    {
+      "id": "concepts",
+      "href": "https://wicg.github.io/periodic-background-sync/#concepts",
+      "level": 2,
+      "title": "Concepts",
+      "number": "2"
+    },
+    {
+      "id": "extensions-to-service-worker-registration",
+      "href": "https://wicg.github.io/periodic-background-sync/#extensions-to-service-worker-registration",
+      "level": 2,
+      "title": "Extensions to service worker registration",
+      "number": "3"
+    },
+    {
+      "id": "constructs",
+      "href": "https://wicg.github.io/periodic-background-sync/#constructs",
+      "level": 2,
+      "title": "Constructs",
+      "number": "4"
+    },
+    {
+      "id": "periodic-sync-registration-construct",
+      "href": "https://wicg.github.io/periodic-background-sync/#periodic-sync-registration-construct",
+      "level": 3,
+      "title": "Periodic sync registration",
+      "number": "4.1"
+    },
+    {
+      "id": "periodic-sync-scheduler-construct",
+      "href": "https://wicg.github.io/periodic-background-sync/#periodic-sync-scheduler-construct",
+      "level": 3,
+      "title": "Periodic Sync Scheduler",
+      "number": "4.2"
+    },
+    {
+      "id": "constants",
+      "href": "https://wicg.github.io/periodic-background-sync/#constants",
+      "level": 3,
+      "title": "Constants",
+      "number": "4.3"
+    },
+    {
+      "id": "privacy",
+      "href": "https://wicg.github.io/periodic-background-sync/#privacy",
+      "level": 2,
+      "title": "Privacy Considerations",
+      "number": "5"
+    },
+    {
+      "id": "permission",
+      "href": "https://wicg.github.io/periodic-background-sync/#permission",
+      "level": 3,
+      "title": "Permission",
+      "number": "5.1"
+    },
+    {
+      "id": "location-tracking",
+      "href": "https://wicg.github.io/periodic-background-sync/#location-tracking",
+      "level": 3,
+      "title": "Location Tracking",
+      "number": "5.2"
+    },
+    {
+      "id": "history-leaking",
+      "href": "https://wicg.github.io/periodic-background-sync/#history-leaking",
+      "level": 3,
+      "title": "History Leaking",
+      "number": "5.3"
+    },
+    {
+      "id": "resources",
+      "href": "https://wicg.github.io/periodic-background-sync/#resources",
+      "level": 2,
+      "title": "Resource Usage",
+      "number": "6"
+    },
+    {
+      "id": "algorithms",
+      "href": "https://wicg.github.io/periodic-background-sync/#algorithms",
+      "level": 2,
+      "title": "Algorithms",
+      "number": "7"
+    },
+    {
+      "id": "process-periodic-sync-registrations-algorithm",
+      "href": "https://wicg.github.io/periodic-background-sync/#process-periodic-sync-registrations-algorithm",
+      "level": 3,
+      "title": "Process periodic sync registrations",
+      "number": "7.1"
+    },
+    {
+      "id": "responding-to-permission-revocation-algorithm",
+      "href": "https://wicg.github.io/periodic-background-sync/#responding-to-permission-revocation-algorithm",
+      "level": 3,
+      "title": "Respond to permission revocation",
+      "number": "7.2"
+    },
+    {
+      "id": "api-description",
+      "href": "https://wicg.github.io/periodic-background-sync/#api-description",
+      "level": 2,
+      "title": "API Description",
+      "number": "8"
+    },
+    {
+      "id": "extensions-to-serviceworkerglobalscope",
+      "href": "https://wicg.github.io/periodic-background-sync/#extensions-to-serviceworkerglobalscope",
+      "level": 3,
+      "title": "Extensions to the ServiceWorkerGlobalScope interface",
+      "number": "8.1"
+    },
+    {
+      "id": "extensions-to-serviceworkerregistration",
+      "href": "https://wicg.github.io/periodic-background-sync/#extensions-to-serviceworkerregistration",
+      "level": 3,
+      "title": "Extensions to the ServiceWorkerRegistration interface",
+      "number": "8.2"
+    },
+    {
+      "id": "periodicsyncmanager-interface",
+      "href": "https://wicg.github.io/periodic-background-sync/#periodicsyncmanager-interface",
+      "level": 3,
+      "title": "PeriodicSyncManager interface",
+      "number": "8.3"
+    },
+    {
+      "id": "periodicsync-event-interface",
+      "href": "https://wicg.github.io/periodic-background-sync/#periodicsync-event-interface",
+      "level": 3,
+      "title": "The periodicsync event",
+      "number": "8.4"
+    },
+    {
+      "id": "firing-a-periodicsync-event",
+      "href": "https://wicg.github.io/periodic-background-sync/#firing-a-periodicsync-event",
+      "level": 4,
+      "title": "Fire a periodicsync event",
+      "number": "8.4.1"
+    },
+    {
+      "id": "w3c-conformance",
+      "href": "https://wicg.github.io/periodic-background-sync/#w3c-conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "w3c-conventions",
+      "href": "https://wicg.github.io/periodic-background-sync/#w3c-conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "w3c-conformant-algorithms",
+      "href": "https://wicg.github.io/periodic-background-sync/#w3c-conformant-algorithms",
+      "level": 3,
+      "title": "Conformant Algorithms"
+    },
+    {
+      "id": "index",
+      "href": "https://wicg.github.io/periodic-background-sync/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://wicg.github.io/periodic-background-sync/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://wicg.github.io/periodic-background-sync/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://wicg.github.io/periodic-background-sync/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://wicg.github.io/periodic-background-sync/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "idl-index",
+      "href": "https://wicg.github.io/periodic-background-sync/#idl-index",
+      "level": 2,
+      "title": "IDL Index"
+    }
+  ]
+}

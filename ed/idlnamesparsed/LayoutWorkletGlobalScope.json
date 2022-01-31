@@ -1,0 +1,94 @@
+{
+  "name": "LayoutWorkletGlobalScope",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "CSS Layout API Level 1",
+      "url": "https://www.w3.org/TR/css-layout-api-1/"
+    },
+    "fragment": "[Global=(Worklet,LayoutWorklet),Exposed=LayoutWorklet]\ninterface LayoutWorkletGlobalScope : WorkletGlobalScope {\n    undefined registerLayout(DOMString name, VoidFunction layoutCtor);\n};",
+    "href": "https://drafts.css-houdini.org/css-layout-api-1/#layoutworkletglobalscope"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "WorkletGlobalScope",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "HTML Standard",
+        "url": "https://html.spec.whatwg.org/multipage/"
+      },
+      "fragment": "[Exposed=Worklet, SecureContext]\ninterface WorkletGlobalScope {};",
+      "href": "https://html.spec.whatwg.org/multipage/worklets.html#workletglobalscope"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/css-layout-api-1/": [
+      {
+        "id": "layoutworkletglobalscope",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#layoutworkletglobalscope",
+        "linkingText": [
+          "LayoutWorkletGlobalScope"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "layout-worklet",
+          "href": "https://drafts.css-houdini.org/css-layout-api-1/#layout-worklet",
+          "title": "Layout Worklet",
+          "number": "3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-layoutworkletglobalscope-registerlayout",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutworkletglobalscope-registerlayout",
+        "linkingText": [
+          "registerLayout(name, layoutCtor)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "LayoutWorkletGlobalScope"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "registering-layout",
+          "href": "https://drafts.css-houdini.org/css-layout-api-1/#registering-layout",
+          "title": "Registering A Layout",
+          "number": "3.2"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://html.spec.whatwg.org/multipage/": [
+      {
+        "id": "workletglobalscope",
+        "href": "https://html.spec.whatwg.org/multipage/worklets.html#workletglobalscope",
+        "linkingText": [
+          "WorkletGlobalScope"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "worklets-global",
+          "href": "https://html.spec.whatwg.org/multipage/worklets.html#worklets-global",
+          "title": "The global scope",
+          "number": "11.3.1"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

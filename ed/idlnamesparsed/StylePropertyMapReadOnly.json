@@ -1,0 +1,126 @@
+{
+  "name": "StylePropertyMapReadOnly",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "CSS Typed OM Level 1",
+      "url": "https://www.w3.org/TR/css-typed-om-1/"
+    },
+    "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]\ninterface StylePropertyMapReadOnly {\n    iterable<USVString, sequence<CSSStyleValue>>;\n    any get(USVString property);\n    /* 'any' means (undefined or CSSStyleValue) here,\n       see https://github.com/heycam/webidl/issues/60 */\n    sequence<CSSStyleValue> getAll(USVString property);\n    boolean has(USVString property);\n    readonly attribute unsigned long size;\n};",
+    "href": "https://drafts.css-houdini.org/css-typed-om-1/#stylepropertymapreadonly"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/css-typed-om-1/": [
+      {
+        "id": "stylepropertymapreadonly",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#stylepropertymapreadonly",
+        "linkingText": [
+          "StylePropertyMapReadOnly"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-stylepropertymap",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#the-stylepropertymap",
+          "title": "The StylePropertyMap",
+          "number": "3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-stylepropertymapreadonly-get",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-stylepropertymapreadonly-get",
+        "linkingText": [
+          "get(property)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "StylePropertyMapReadOnly",
+          "StylePropertyMap"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-stylepropertymap",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#the-stylepropertymap",
+          "title": "The StylePropertyMap",
+          "number": "3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-stylepropertymapreadonly-getall",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-stylepropertymapreadonly-getall",
+        "linkingText": [
+          "getAll(property)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "StylePropertyMapReadOnly",
+          "StylePropertyMap"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-stylepropertymap",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#the-stylepropertymap",
+          "title": "The StylePropertyMap",
+          "number": "3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-stylepropertymapreadonly-has",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-stylepropertymapreadonly-has",
+        "linkingText": [
+          "has(property)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "StylePropertyMapReadOnly",
+          "StylePropertyMap"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-stylepropertymap",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#the-stylepropertymap",
+          "title": "The StylePropertyMap",
+          "number": "3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-stylepropertymapreadonly-size",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-stylepropertymapreadonly-size",
+        "linkingText": [
+          "size"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "StylePropertyMapReadOnly",
+          "StylePropertyMap"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-stylepropertymap",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#the-stylepropertymap",
+          "title": "The StylePropertyMap",
+          "number": "3"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

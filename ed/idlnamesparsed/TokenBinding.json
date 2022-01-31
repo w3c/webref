@@ -1,0 +1,80 @@
+{
+  "name": "TokenBinding",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Web Authentication: An API for accessing Public Key Credentials - Level",
+      "url": "https://www.w3.org/TR/webauthn-3/"
+    },
+    "fragment": "dictionary TokenBinding {\n    required DOMString status;\n    DOMString id;\n};",
+    "href": "https://w3c.github.io/webauthn/#dictdef-tokenbinding"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webauthn-3/": [
+      {
+        "id": "dictdef-tokenbinding",
+        "href": "https://w3c.github.io/webauthn/#dictdef-tokenbinding",
+        "linkingText": [
+          "TokenBinding"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-client-data",
+          "href": "https://w3c.github.io/webauthn/#dictionary-client-data",
+          "title": "Client Data Used in WebAuthn Signatures (dictionary CollectedClientData)",
+          "number": "5.8.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-tokenbinding-status",
+        "href": "https://w3c.github.io/webauthn/#dom-tokenbinding-status",
+        "linkingText": [
+          "status"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "TokenBinding"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-client-data",
+          "href": "https://w3c.github.io/webauthn/#dictionary-client-data",
+          "title": "Client Data Used in WebAuthn Signatures (dictionary CollectedClientData)",
+          "number": "5.8.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-tokenbinding-id",
+        "href": "https://w3c.github.io/webauthn/#dom-tokenbinding-id",
+        "linkingText": [
+          "id"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "TokenBinding"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-client-data",
+          "href": "https://w3c.github.io/webauthn/#dictionary-client-data",
+          "title": "Client Data Used in WebAuthn Signatures (dictionary CollectedClientData)",
+          "number": "5.8.1"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

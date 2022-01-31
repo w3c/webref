@@ -1,0 +1,255 @@
+{
+  "name": "Keyboard",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Keyboard Lock",
+      "url": "https://wicg.github.io/keyboard-lock/"
+    },
+    "fragment": "[SecureContext, Exposed=Window]\ninterface Keyboard : EventTarget {\n  Promise<undefined> lock(optional sequence<DOMString> keyCodes = []);\n  undefined unlock();\n};",
+    "href": "https://wicg.github.io/keyboard-lock/#keyboard"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "Keyboard Map",
+        "url": "https://wicg.github.io/keyboard-map/"
+      },
+      "fragment": "partial interface Keyboard {\n  Promise<KeyboardLayoutMap> getLayoutMap();\n\n  attribute EventHandler onlayoutchange;\n};"
+    }
+  ],
+  "inheritance": {
+    "name": "EventTarget",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=*]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+      "href": "https://dom.spec.whatwg.org/#eventtarget"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://wicg.github.io/keyboard-lock/": [
+      {
+        "id": "keyboard",
+        "href": "https://wicg.github.io/keyboard-lock/#keyboard",
+        "linkingText": [
+          "Keyboard"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "keyboard-interface",
+          "href": "https://wicg.github.io/keyboard-lock/#keyboard-interface",
+          "title": "Keyboard Interface",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-keyboard-lock",
+        "href": "https://wicg.github.io/keyboard-lock/#dom-keyboard-lock",
+        "linkingText": [
+          "lock(keyCodes)",
+          "lock()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Keyboard"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "keyboard-interface",
+          "href": "https://wicg.github.io/keyboard-lock/#keyboard-interface",
+          "title": "Keyboard Interface",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-keyboard-unlock",
+        "href": "https://wicg.github.io/keyboard-lock/#dom-keyboard-unlock",
+        "linkingText": [
+          "unlock()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Keyboard"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "keyboard-interface",
+          "href": "https://wicg.github.io/keyboard-lock/#keyboard-interface",
+          "title": "Keyboard Interface",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      }
+    ],
+    "https://wicg.github.io/keyboard-map/": [
+      {
+        "id": "dom-keyboard-getlayoutmap",
+        "href": "https://wicg.github.io/keyboard-map/#dom-keyboard-getlayoutmap",
+        "linkingText": [
+          "getLayoutMap()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Keyboard"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "keyboard-interface",
+          "href": "https://wicg.github.io/keyboard-map/#keyboard-interface",
+          "title": "Keyboard Interface",
+          "number": "2.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-keyboard-onlayoutchange",
+        "href": "https://wicg.github.io/keyboard-map/#dom-keyboard-onlayoutchange",
+        "linkingText": [
+          "onlayoutchange"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Keyboard"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "keyboard-interface",
+          "href": "https://wicg.github.io/keyboard-map/#keyboard-interface",
+          "title": "Keyboard Interface",
+          "number": "2.3"
+        },
+        "definedIn": "pre"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "eventtarget",
+        "href": "https://dom.spec.whatwg.org/#eventtarget",
+        "linkingText": [
+          "EventTarget"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventtarget-eventtarget",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-eventtarget",
+        "linkingText": [
+          "EventTarget()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-addeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-addeventlistener",
+        "linkingText": [
+          "addEventListener(type, callback, options)",
+          "addEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-removeeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-removeeventlistener",
+        "linkingText": [
+          "removeEventListener(type, callback, options)",
+          "removeEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-dispatchevent",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-dispatchevent",
+        "linkingText": [
+          "dispatchEvent(event)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

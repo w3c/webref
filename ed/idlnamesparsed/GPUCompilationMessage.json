@@ -1,0 +1,164 @@
+{
+  "name": "GPUCompilationMessage",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebGPU",
+      "url": "https://www.w3.org/TR/webgpu/"
+    },
+    "fragment": "[Exposed=(Window, DedicatedWorker), Serializable, SecureContext]\ninterface GPUCompilationMessage {\n    readonly attribute DOMString message;\n    readonly attribute GPUCompilationMessageType type;\n    readonly attribute unsigned long long lineNum;\n    readonly attribute unsigned long long linePos;\n    readonly attribute unsigned long long offset;\n    readonly attribute unsigned long long length;\n};",
+    "href": "https://gpuweb.github.io/gpuweb/#gpucompilationmessage"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webgpu/": [
+      {
+        "id": "gpucompilationmessage",
+        "href": "https://gpuweb.github.io/gpuweb/#gpucompilationmessage",
+        "linkingText": [
+          "GPUCompilationMessage"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "shader-module-compilation-information",
+          "href": "https://gpuweb.github.io/gpuweb/#shader-module-compilation-information",
+          "title": "Shader Module Compilation Information",
+          "number": "9.1.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gpucompilationmessage-message",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpucompilationmessage-message",
+        "linkingText": [
+          "message"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "GPUCompilationMessage"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "shader-module-compilation-information",
+          "href": "https://gpuweb.github.io/gpuweb/#shader-module-compilation-information",
+          "title": "Shader Module Compilation Information",
+          "number": "9.1.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpucompilationmessage-type",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpucompilationmessage-type",
+        "linkingText": [
+          "type"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "GPUCompilationMessage"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "shader-module-compilation-information",
+          "href": "https://gpuweb.github.io/gpuweb/#shader-module-compilation-information",
+          "title": "Shader Module Compilation Information",
+          "number": "9.1.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpucompilationmessage-linenum",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpucompilationmessage-linenum",
+        "linkingText": [
+          "lineNum"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "GPUCompilationMessage"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "shader-module-compilation-information",
+          "href": "https://gpuweb.github.io/gpuweb/#shader-module-compilation-information",
+          "title": "Shader Module Compilation Information",
+          "number": "9.1.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpucompilationmessage-linepos",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpucompilationmessage-linepos",
+        "linkingText": [
+          "linePos"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "GPUCompilationMessage"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "shader-module-compilation-information",
+          "href": "https://gpuweb.github.io/gpuweb/#shader-module-compilation-information",
+          "title": "Shader Module Compilation Information",
+          "number": "9.1.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpucompilationmessage-offset",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpucompilationmessage-offset",
+        "linkingText": [
+          "offset"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "GPUCompilationMessage"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "shader-module-compilation-information",
+          "href": "https://gpuweb.github.io/gpuweb/#shader-module-compilation-information",
+          "title": "Shader Module Compilation Information",
+          "number": "9.1.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpucompilationmessage-length",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpucompilationmessage-length",
+        "linkingText": [
+          "length"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "GPUCompilationMessage"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "shader-module-compilation-information",
+          "href": "https://gpuweb.github.io/gpuweb/#shader-module-compilation-information",
+          "title": "Shader Module Compilation Information",
+          "number": "9.1.2"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

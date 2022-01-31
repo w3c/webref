@@ -1,0 +1,146 @@
+{
+  "name": "VideoColorSpace",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebCodecs",
+      "url": "https://www.w3.org/TR/webcodecs/"
+    },
+    "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface VideoColorSpace {\n  constructor(optional VideoColorSpaceInit init = {});\n\n  readonly attribute VideoColorPrimaries? primaries;\n  readonly attribute VideoTransferCharacteristics? transfer;\n  readonly attribute VideoMatrixCoefficients? matrix;\n  readonly attribute boolean? fullRange;\n\n  [Default] VideoColorSpaceInit toJSON();\n};",
+    "href": "https://w3c.github.io/webcodecs/#videocolorspace"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webcodecs/": [
+      {
+        "id": "videocolorspace",
+        "href": "https://w3c.github.io/webcodecs/#videocolorspace",
+        "linkingText": [
+          "VideoColorSpace"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "video-color-space-interface",
+          "href": "https://w3c.github.io/webcodecs/#video-color-space-interface",
+          "title": "Video Color Space Interface",
+          "number": "9.9"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-videocolorspace-videocolorspace",
+        "href": "https://w3c.github.io/webcodecs/#dom-videocolorspace-videocolorspace",
+        "linkingText": [
+          "VideoColorSpace(init)",
+          "constructor(init)",
+          "VideoColorSpace()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "VideoColorSpace"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "videocolorspace-constructors",
+          "href": "https://w3c.github.io/webcodecs/#videocolorspace-constructors",
+          "title": "Constructors",
+          "number": "9.9.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-videocolorspace-primaries",
+        "href": "https://w3c.github.io/webcodecs/#dom-videocolorspace-primaries",
+        "linkingText": [
+          "primaries"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "VideoColorSpace"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "videocolorspace-attributes",
+          "href": "https://w3c.github.io/webcodecs/#videocolorspace-attributes",
+          "title": "Attributes",
+          "number": "9.9.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-videocolorspace-transfer",
+        "href": "https://w3c.github.io/webcodecs/#dom-videocolorspace-transfer",
+        "linkingText": [
+          "transfer"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "VideoColorSpace"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "videocolorspace-attributes",
+          "href": "https://w3c.github.io/webcodecs/#videocolorspace-attributes",
+          "title": "Attributes",
+          "number": "9.9.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-videocolorspace-matrix",
+        "href": "https://w3c.github.io/webcodecs/#dom-videocolorspace-matrix",
+        "linkingText": [
+          "matrix"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "VideoColorSpace"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "videocolorspace-attributes",
+          "href": "https://w3c.github.io/webcodecs/#videocolorspace-attributes",
+          "title": "Attributes",
+          "number": "9.9.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-videocolorspace-fullrange",
+        "href": "https://w3c.github.io/webcodecs/#dom-videocolorspace-fullrange",
+        "linkingText": [
+          "fullRange"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "VideoColorSpace"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "videocolorspace-attributes",
+          "href": "https://w3c.github.io/webcodecs/#videocolorspace-attributes",
+          "title": "Attributes",
+          "number": "9.9.3"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

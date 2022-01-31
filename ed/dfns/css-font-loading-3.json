@@ -1,0 +1,2280 @@
+{
+  "spec": {
+    "title": "CSS Font Loading Module Level 3",
+    "url": "https://drafts.csswg.org/css-font-loading/"
+  },
+  "dfns": [
+    {
+      "id": "typedefdef-binarydata",
+      "href": "https://drafts.csswg.org/css-font-loading/#typedefdef-binarydata",
+      "linkingText": [
+        "BinaryData"
+      ],
+      "localLinkingText": [],
+      "type": "typedef",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "fontface-interface",
+        "href": "https://drafts.csswg.org/css-font-loading/#fontface-interface",
+        "title": "The FontFace Interface",
+        "number": "2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-fontfacedescriptors",
+      "href": "https://drafts.csswg.org/css-font-loading/#dictdef-fontfacedescriptors",
+      "linkingText": [
+        "FontFaceDescriptors"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "fontface-interface",
+        "href": "https://drafts.csswg.org/css-font-loading/#fontface-interface",
+        "title": "The FontFace Interface",
+        "number": "2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-fontfacedescriptors-style",
+      "href": "https://drafts.csswg.org/css-font-loading/#dom-fontfacedescriptors-style",
+      "linkingText": [
+        "style"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "FontFaceDescriptors"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "fontface-interface",
+        "href": "https://drafts.csswg.org/css-font-loading/#fontface-interface",
+        "title": "The FontFace Interface",
+        "number": "2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-fontfacedescriptors-weight",
+      "href": "https://drafts.csswg.org/css-font-loading/#dom-fontfacedescriptors-weight",
+      "linkingText": [
+        "weight"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "FontFaceDescriptors"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "fontface-interface",
+        "href": "https://drafts.csswg.org/css-font-loading/#fontface-interface",
+        "title": "The FontFace Interface",
+        "number": "2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-fontfacedescriptors-stretch",
+      "href": "https://drafts.csswg.org/css-font-loading/#dom-fontfacedescriptors-stretch",
+      "linkingText": [
+        "stretch"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "FontFaceDescriptors"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "fontface-interface",
+        "href": "https://drafts.csswg.org/css-font-loading/#fontface-interface",
+        "title": "The FontFace Interface",
+        "number": "2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-fontfacedescriptors-unicoderange",
+      "href": "https://drafts.csswg.org/css-font-loading/#dom-fontfacedescriptors-unicoderange",
+      "linkingText": [
+        "unicodeRange"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "FontFaceDescriptors"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "fontface-interface",
+        "href": "https://drafts.csswg.org/css-font-loading/#fontface-interface",
+        "title": "The FontFace Interface",
+        "number": "2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-fontfacedescriptors-variant",
+      "href": "https://drafts.csswg.org/css-font-loading/#dom-fontfacedescriptors-variant",
+      "linkingText": [
+        "variant"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "FontFaceDescriptors"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "fontface-interface",
+        "href": "https://drafts.csswg.org/css-font-loading/#fontface-interface",
+        "title": "The FontFace Interface",
+        "number": "2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-fontfacedescriptors-featuresettings",
+      "href": "https://drafts.csswg.org/css-font-loading/#dom-fontfacedescriptors-featuresettings",
+      "linkingText": [
+        "featureSettings"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "FontFaceDescriptors"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "fontface-interface",
+        "href": "https://drafts.csswg.org/css-font-loading/#fontface-interface",
+        "title": "The FontFace Interface",
+        "number": "2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-fontfacedescriptors-variationsettings",
+      "href": "https://drafts.csswg.org/css-font-loading/#dom-fontfacedescriptors-variationsettings",
+      "linkingText": [
+        "variationSettings"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "FontFaceDescriptors"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "fontface-interface",
+        "href": "https://drafts.csswg.org/css-font-loading/#fontface-interface",
+        "title": "The FontFace Interface",
+        "number": "2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-fontfacedescriptors-display",
+      "href": "https://drafts.csswg.org/css-font-loading/#dom-fontfacedescriptors-display",
+      "linkingText": [
+        "display"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "FontFaceDescriptors"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "fontface-interface",
+        "href": "https://drafts.csswg.org/css-font-loading/#fontface-interface",
+        "title": "The FontFace Interface",
+        "number": "2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-fontfacedescriptors-ascentoverride",
+      "href": "https://drafts.csswg.org/css-font-loading/#dom-fontfacedescriptors-ascentoverride",
+      "linkingText": [
+        "ascentOverride"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "FontFaceDescriptors"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "fontface-interface",
+        "href": "https://drafts.csswg.org/css-font-loading/#fontface-interface",
+        "title": "The FontFace Interface",
+        "number": "2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-fontfacedescriptors-descentoverride",
+      "href": "https://drafts.csswg.org/css-font-loading/#dom-fontfacedescriptors-descentoverride",
+      "linkingText": [
+        "descentOverride"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "FontFaceDescriptors"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "fontface-interface",
+        "href": "https://drafts.csswg.org/css-font-loading/#fontface-interface",
+        "title": "The FontFace Interface",
+        "number": "2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-fontfacedescriptors-linegapoverride",
+      "href": "https://drafts.csswg.org/css-font-loading/#dom-fontfacedescriptors-linegapoverride",
+      "linkingText": [
+        "lineGapOverride"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "FontFaceDescriptors"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "fontface-interface",
+        "href": "https://drafts.csswg.org/css-font-loading/#fontface-interface",
+        "title": "The FontFace Interface",
+        "number": "2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "enumdef-fontfaceloadstatus",
+      "href": "https://drafts.csswg.org/css-font-loading/#enumdef-fontfaceloadstatus",
+      "linkingText": [
+        "FontFaceLoadStatus"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "fontface-interface",
+        "href": "https://drafts.csswg.org/css-font-loading/#fontface-interface",
+        "title": "The FontFace Interface",
+        "number": "2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-fontfaceloadstatus-unloaded",
+      "href": "https://drafts.csswg.org/css-font-loading/#dom-fontfaceloadstatus-unloaded",
+      "linkingText": [
+        "\"unloaded\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "FontFaceLoadStatus"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "fontface-interface",
+        "href": "https://drafts.csswg.org/css-font-loading/#fontface-interface",
+        "title": "The FontFace Interface",
+        "number": "2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-fontfaceloadstatus-loading",
+      "href": "https://drafts.csswg.org/css-font-loading/#dom-fontfaceloadstatus-loading",
+      "linkingText": [
+        "\"loading\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "FontFaceLoadStatus"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "fontface-interface",
+        "href": "https://drafts.csswg.org/css-font-loading/#fontface-interface",
+        "title": "The FontFace Interface",
+        "number": "2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-fontfaceloadstatus-loaded",
+      "href": "https://drafts.csswg.org/css-font-loading/#dom-fontfaceloadstatus-loaded",
+      "linkingText": [
+        "\"loaded\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "FontFaceLoadStatus"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "fontface-interface",
+        "href": "https://drafts.csswg.org/css-font-loading/#fontface-interface",
+        "title": "The FontFace Interface",
+        "number": "2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-fontfaceloadstatus-error",
+      "href": "https://drafts.csswg.org/css-font-loading/#dom-fontfaceloadstatus-error",
+      "linkingText": [
+        "\"error\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "FontFaceLoadStatus"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "fontface-interface",
+        "href": "https://drafts.csswg.org/css-font-loading/#fontface-interface",
+        "title": "The FontFace Interface",
+        "number": "2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "fontface",
+      "href": "https://drafts.csswg.org/css-font-loading/#fontface",
+      "linkingText": [
+        "FontFace"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "fontface-interface",
+        "href": "https://drafts.csswg.org/css-font-loading/#fontface-interface",
+        "title": "The FontFace Interface",
+        "number": "2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-fontface-fontface-family-source-descriptors-family",
+      "href": "https://drafts.csswg.org/css-font-loading/#dom-fontface-fontface-family-source-descriptors-family",
+      "linkingText": [
+        "family"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "FontFace/FontFace(family, source, descriptors)",
+        "FontFace/constructor(family, source, descriptors)",
+        "FontFace/FontFace(family, source)",
+        "FontFace/constructor(family, source)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "fontface-interface",
+        "href": "https://drafts.csswg.org/css-font-loading/#fontface-interface",
+        "title": "The FontFace Interface",
+        "number": "2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-fontface-fontface-family-source-descriptors-source",
+      "href": "https://drafts.csswg.org/css-font-loading/#dom-fontface-fontface-family-source-descriptors-source",
+      "linkingText": [
+        "source"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "FontFace/FontFace(family, source, descriptors)",
+        "FontFace/constructor(family, source, descriptors)",
+        "FontFace/FontFace(family, source)",
+        "FontFace/constructor(family, source)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "fontface-interface",
+        "href": "https://drafts.csswg.org/css-font-loading/#fontface-interface",
+        "title": "The FontFace Interface",
+        "number": "2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-fontface-fontface-family-source-descriptors-descriptors",
+      "href": "https://drafts.csswg.org/css-font-loading/#dom-fontface-fontface-family-source-descriptors-descriptors",
+      "linkingText": [
+        "descriptors"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "FontFace/FontFace(family, source, descriptors)",
+        "FontFace/constructor(family, source, descriptors)",
+        "FontFace/FontFace(family, source)",
+        "FontFace/constructor(family, source)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "fontface-interface",
+        "href": "https://drafts.csswg.org/css-font-loading/#fontface-interface",
+        "title": "The FontFace Interface",
+        "number": "2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-fontface-family",
+      "href": "https://drafts.csswg.org/css-font-loading/#dom-fontface-family",
+      "linkingText": [
+        "family"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FontFace"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "fontface-interface",
+        "href": "https://drafts.csswg.org/css-font-loading/#fontface-interface",
+        "title": "The FontFace Interface",
+        "number": "2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-fontface-style",
+      "href": "https://drafts.csswg.org/css-font-loading/#dom-fontface-style",
+      "linkingText": [
+        "style"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FontFace"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "fontface-interface",
+        "href": "https://drafts.csswg.org/css-font-loading/#fontface-interface",
+        "title": "The FontFace Interface",
+        "number": "2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-fontface-weight",
+      "href": "https://drafts.csswg.org/css-font-loading/#dom-fontface-weight",
+      "linkingText": [
+        "weight"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FontFace"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "fontface-interface",
+        "href": "https://drafts.csswg.org/css-font-loading/#fontface-interface",
+        "title": "The FontFace Interface",
+        "number": "2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-fontface-stretch",
+      "href": "https://drafts.csswg.org/css-font-loading/#dom-fontface-stretch",
+      "linkingText": [
+        "stretch"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FontFace"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "fontface-interface",
+        "href": "https://drafts.csswg.org/css-font-loading/#fontface-interface",
+        "title": "The FontFace Interface",
+        "number": "2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-fontface-unicoderange",
+      "href": "https://drafts.csswg.org/css-font-loading/#dom-fontface-unicoderange",
+      "linkingText": [
+        "unicodeRange"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FontFace"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "fontface-interface",
+        "href": "https://drafts.csswg.org/css-font-loading/#fontface-interface",
+        "title": "The FontFace Interface",
+        "number": "2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-fontface-variant",
+      "href": "https://drafts.csswg.org/css-font-loading/#dom-fontface-variant",
+      "linkingText": [
+        "variant"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FontFace"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "fontface-interface",
+        "href": "https://drafts.csswg.org/css-font-loading/#fontface-interface",
+        "title": "The FontFace Interface",
+        "number": "2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-fontface-featuresettings",
+      "href": "https://drafts.csswg.org/css-font-loading/#dom-fontface-featuresettings",
+      "linkingText": [
+        "featureSettings"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FontFace"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "fontface-interface",
+        "href": "https://drafts.csswg.org/css-font-loading/#fontface-interface",
+        "title": "The FontFace Interface",
+        "number": "2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-fontface-variationsettings",
+      "href": "https://drafts.csswg.org/css-font-loading/#dom-fontface-variationsettings",
+      "linkingText": [
+        "variationSettings"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FontFace"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "fontface-interface",
+        "href": "https://drafts.csswg.org/css-font-loading/#fontface-interface",
+        "title": "The FontFace Interface",
+        "number": "2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-fontface-display",
+      "href": "https://drafts.csswg.org/css-font-loading/#dom-fontface-display",
+      "linkingText": [
+        "display"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FontFace"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "fontface-interface",
+        "href": "https://drafts.csswg.org/css-font-loading/#fontface-interface",
+        "title": "The FontFace Interface",
+        "number": "2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-fontface-ascentoverride",
+      "href": "https://drafts.csswg.org/css-font-loading/#dom-fontface-ascentoverride",
+      "linkingText": [
+        "ascentOverride"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FontFace"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "fontface-interface",
+        "href": "https://drafts.csswg.org/css-font-loading/#fontface-interface",
+        "title": "The FontFace Interface",
+        "number": "2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-fontface-descentoverride",
+      "href": "https://drafts.csswg.org/css-font-loading/#dom-fontface-descentoverride",
+      "linkingText": [
+        "descentOverride"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FontFace"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "fontface-interface",
+        "href": "https://drafts.csswg.org/css-font-loading/#fontface-interface",
+        "title": "The FontFace Interface",
+        "number": "2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-fontface-linegapoverride",
+      "href": "https://drafts.csswg.org/css-font-loading/#dom-fontface-linegapoverride",
+      "linkingText": [
+        "lineGapOverride"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FontFace"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "fontface-interface",
+        "href": "https://drafts.csswg.org/css-font-loading/#fontface-interface",
+        "title": "The FontFace Interface",
+        "number": "2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-fontface-status",
+      "href": "https://drafts.csswg.org/css-font-loading/#dom-fontface-status",
+      "linkingText": [
+        "status"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FontFace"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "fontface-interface",
+        "href": "https://drafts.csswg.org/css-font-loading/#fontface-interface",
+        "title": "The FontFace Interface",
+        "number": "2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-fontface-loaded",
+      "href": "https://drafts.csswg.org/css-font-loading/#dom-fontface-loaded",
+      "linkingText": [
+        "loaded"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FontFace"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "fontface-interface",
+        "href": "https://drafts.csswg.org/css-font-loading/#fontface-interface",
+        "title": "The FontFace Interface",
+        "number": "2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-fontface-fontstatuspromise-slot",
+      "href": "https://drafts.csswg.org/css-font-loading/#dom-fontface-fontstatuspromise-slot",
+      "linkingText": [
+        "[[FontStatusPromise]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FontFace"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "fontface-interface",
+        "href": "https://drafts.csswg.org/css-font-loading/#fontface-interface",
+        "title": "The FontFace Interface",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-fontface-urls-slot",
+      "href": "https://drafts.csswg.org/css-font-loading/#dom-fontface-urls-slot",
+      "linkingText": [
+        "[[Urls]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FontFace"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "fontface-interface",
+        "href": "https://drafts.csswg.org/css-font-loading/#fontface-interface",
+        "title": "The FontFace Interface",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-fontface-data-slot",
+      "href": "https://drafts.csswg.org/css-font-loading/#dom-fontface-data-slot",
+      "linkingText": [
+        "[[Data]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FontFace"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "fontface-interface",
+        "href": "https://drafts.csswg.org/css-font-loading/#fontface-interface",
+        "title": "The FontFace Interface",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-fontface-fontface",
+      "href": "https://drafts.csswg.org/css-font-loading/#dom-fontface-fontface",
+      "linkingText": [
+        "FontFace(family, source, descriptors)",
+        "constructor(family, source, descriptors)",
+        "FontFace(family, source)",
+        "constructor(family, source)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "FontFace"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "font-face-constructor",
+        "href": "https://drafts.csswg.org/css-font-loading/#font-face-constructor",
+        "title": "The Constructor",
+        "number": "2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-fontface-load",
+      "href": "https://drafts.csswg.org/css-font-loading/#dom-fontface-load",
+      "linkingText": [
+        "load()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "FontFace"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "font-face-load",
+        "href": "https://drafts.csswg.org/css-font-loading/#font-face-load",
+        "title": "The load() method",
+        "number": "2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "css-connected",
+      "href": "https://drafts.csswg.org/css-font-loading/#css-connected",
+      "linkingText": [
+        "CSS-connected"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "font-face-css-connection",
+        "href": "https://drafts.csswg.org/css-font-loading/#font-face-css-connection",
+        "title": "Interaction with CSS’s @font-face Rule",
+        "number": "2.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "fontfacefeatures",
+      "href": "https://drafts.csswg.org/css-font-loading/#fontfacefeatures",
+      "linkingText": [
+        "FontFaceFeatures"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "discovery",
+        "href": "https://drafts.csswg.org/css-font-loading/#discovery",
+        "title": "Discovery of information about a font",
+        "number": "2.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "fontfacevariationaxis",
+      "href": "https://drafts.csswg.org/css-font-loading/#fontfacevariationaxis",
+      "linkingText": [
+        "FontFaceVariationAxis"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "discovery",
+        "href": "https://drafts.csswg.org/css-font-loading/#discovery",
+        "title": "Discovery of information about a font",
+        "number": "2.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-fontfacevariationaxis-name",
+      "href": "https://drafts.csswg.org/css-font-loading/#dom-fontfacevariationaxis-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FontFaceVariationAxis"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "discovery",
+        "href": "https://drafts.csswg.org/css-font-loading/#discovery",
+        "title": "Discovery of information about a font",
+        "number": "2.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-fontfacevariationaxis-axistag",
+      "href": "https://drafts.csswg.org/css-font-loading/#dom-fontfacevariationaxis-axistag",
+      "linkingText": [
+        "axisTag"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FontFaceVariationAxis"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "discovery",
+        "href": "https://drafts.csswg.org/css-font-loading/#discovery",
+        "title": "Discovery of information about a font",
+        "number": "2.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-fontfacevariationaxis-minimumvalue",
+      "href": "https://drafts.csswg.org/css-font-loading/#dom-fontfacevariationaxis-minimumvalue",
+      "linkingText": [
+        "minimumValue"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FontFaceVariationAxis"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "discovery",
+        "href": "https://drafts.csswg.org/css-font-loading/#discovery",
+        "title": "Discovery of information about a font",
+        "number": "2.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-fontfacevariationaxis-maximumvalue",
+      "href": "https://drafts.csswg.org/css-font-loading/#dom-fontfacevariationaxis-maximumvalue",
+      "linkingText": [
+        "maximumValue"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FontFaceVariationAxis"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "discovery",
+        "href": "https://drafts.csswg.org/css-font-loading/#discovery",
+        "title": "Discovery of information about a font",
+        "number": "2.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-fontfacevariationaxis-defaultvalue",
+      "href": "https://drafts.csswg.org/css-font-loading/#dom-fontfacevariationaxis-defaultvalue",
+      "linkingText": [
+        "defaultValue"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FontFaceVariationAxis"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "discovery",
+        "href": "https://drafts.csswg.org/css-font-loading/#discovery",
+        "title": "Discovery of information about a font",
+        "number": "2.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "fontfacevariations",
+      "href": "https://drafts.csswg.org/css-font-loading/#fontfacevariations",
+      "linkingText": [
+        "FontFaceVariations"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "discovery",
+        "href": "https://drafts.csswg.org/css-font-loading/#discovery",
+        "title": "Discovery of information about a font",
+        "number": "2.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "fontfacepalette",
+      "href": "https://drafts.csswg.org/css-font-loading/#fontfacepalette",
+      "linkingText": [
+        "FontFacePalette"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "discovery",
+        "href": "https://drafts.csswg.org/css-font-loading/#discovery",
+        "title": "Discovery of information about a font",
+        "number": "2.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-fontfacepalette-length",
+      "href": "https://drafts.csswg.org/css-font-loading/#dom-fontfacepalette-length",
+      "linkingText": [
+        "length"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FontFacePalette"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "discovery",
+        "href": "https://drafts.csswg.org/css-font-loading/#discovery",
+        "title": "Discovery of information about a font",
+        "number": "2.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-fontfacepalette-__getter__-index-index",
+      "href": "https://drafts.csswg.org/css-font-loading/#dom-fontfacepalette-__getter__-index-index",
+      "linkingText": [
+        "index"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "FontFacePalette/__getter__(index)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "discovery",
+        "href": "https://drafts.csswg.org/css-font-loading/#discovery",
+        "title": "Discovery of information about a font",
+        "number": "2.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-fontfacepalette-usablewithlightbackground",
+      "href": "https://drafts.csswg.org/css-font-loading/#dom-fontfacepalette-usablewithlightbackground",
+      "linkingText": [
+        "usableWithLightBackground"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FontFacePalette"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "discovery",
+        "href": "https://drafts.csswg.org/css-font-loading/#discovery",
+        "title": "Discovery of information about a font",
+        "number": "2.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-fontfacepalette-usablewithdarkbackground",
+      "href": "https://drafts.csswg.org/css-font-loading/#dom-fontfacepalette-usablewithdarkbackground",
+      "linkingText": [
+        "usableWithDarkBackground"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FontFacePalette"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "discovery",
+        "href": "https://drafts.csswg.org/css-font-loading/#discovery",
+        "title": "Discovery of information about a font",
+        "number": "2.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "fontfacepalettes",
+      "href": "https://drafts.csswg.org/css-font-loading/#fontfacepalettes",
+      "linkingText": [
+        "FontFacePalettes"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "discovery",
+        "href": "https://drafts.csswg.org/css-font-loading/#discovery",
+        "title": "Discovery of information about a font",
+        "number": "2.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-fontfacepalettes-length",
+      "href": "https://drafts.csswg.org/css-font-loading/#dom-fontfacepalettes-length",
+      "linkingText": [
+        "length"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FontFacePalettes"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "discovery",
+        "href": "https://drafts.csswg.org/css-font-loading/#discovery",
+        "title": "Discovery of information about a font",
+        "number": "2.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-fontfacepalettes-__getter__-index-index",
+      "href": "https://drafts.csswg.org/css-font-loading/#dom-fontfacepalettes-__getter__-index-index",
+      "linkingText": [
+        "index"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "FontFacePalettes/__getter__(index)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "discovery",
+        "href": "https://drafts.csswg.org/css-font-loading/#discovery",
+        "title": "Discovery of information about a font",
+        "number": "2.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-fontface-features",
+      "href": "https://drafts.csswg.org/css-font-loading/#dom-fontface-features",
+      "linkingText": [
+        "features"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FontFace"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "discovery",
+        "href": "https://drafts.csswg.org/css-font-loading/#discovery",
+        "title": "Discovery of information about a font",
+        "number": "2.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-fontface-variations",
+      "href": "https://drafts.csswg.org/css-font-loading/#dom-fontface-variations",
+      "linkingText": [
+        "variations"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FontFace"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "discovery",
+        "href": "https://drafts.csswg.org/css-font-loading/#discovery",
+        "title": "Discovery of information about a font",
+        "number": "2.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-fontface-palettes",
+      "href": "https://drafts.csswg.org/css-font-loading/#dom-fontface-palettes",
+      "linkingText": [
+        "palettes"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FontFace"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "discovery",
+        "href": "https://drafts.csswg.org/css-font-loading/#discovery",
+        "title": "Discovery of information about a font",
+        "number": "2.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-fontfacesetloadeventinit",
+      "href": "https://drafts.csswg.org/css-font-loading/#dictdef-fontfacesetloadeventinit",
+      "linkingText": [
+        "FontFaceSetLoadEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "FontFaceSet-interface",
+        "href": "https://drafts.csswg.org/css-font-loading/#FontFaceSet-interface",
+        "title": "The FontFaceSet Interface",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-fontfacesetloadeventinit-fontfaces",
+      "href": "https://drafts.csswg.org/css-font-loading/#dom-fontfacesetloadeventinit-fontfaces",
+      "linkingText": [
+        "fontfaces"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "FontFaceSetLoadEventInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "FontFaceSet-interface",
+        "href": "https://drafts.csswg.org/css-font-loading/#FontFaceSet-interface",
+        "title": "The FontFaceSet Interface",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "fontfacesetloadevent",
+      "href": "https://drafts.csswg.org/css-font-loading/#fontfacesetloadevent",
+      "linkingText": [
+        "FontFaceSetLoadEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "FontFaceSet-interface",
+        "href": "https://drafts.csswg.org/css-font-loading/#FontFaceSet-interface",
+        "title": "The FontFaceSet Interface",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-fontfacesetloadevent-fontfacesetloadevent",
+      "href": "https://drafts.csswg.org/css-font-loading/#dom-fontfacesetloadevent-fontfacesetloadevent",
+      "linkingText": [
+        "FontFaceSetLoadEvent(type, eventInitDict)",
+        "constructor(type, eventInitDict)",
+        "FontFaceSetLoadEvent(type)",
+        "constructor(type)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "FontFaceSetLoadEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "FontFaceSet-interface",
+        "href": "https://drafts.csswg.org/css-font-loading/#FontFaceSet-interface",
+        "title": "The FontFaceSet Interface",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-fontfacesetloadevent-fontfacesetloadevent-type-eventinitdict-type",
+      "href": "https://drafts.csswg.org/css-font-loading/#dom-fontfacesetloadevent-fontfacesetloadevent-type-eventinitdict-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "FontFaceSetLoadEvent/FontFaceSetLoadEvent(type, eventInitDict)",
+        "FontFaceSetLoadEvent/constructor(type, eventInitDict)",
+        "FontFaceSetLoadEvent/FontFaceSetLoadEvent(type)",
+        "FontFaceSetLoadEvent/constructor(type)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "FontFaceSet-interface",
+        "href": "https://drafts.csswg.org/css-font-loading/#FontFaceSet-interface",
+        "title": "The FontFaceSet Interface",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-fontfacesetloadevent-fontfacesetloadevent-type-eventinitdict-eventinitdict",
+      "href": "https://drafts.csswg.org/css-font-loading/#dom-fontfacesetloadevent-fontfacesetloadevent-type-eventinitdict-eventinitdict",
+      "linkingText": [
+        "eventInitDict"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "FontFaceSetLoadEvent/FontFaceSetLoadEvent(type, eventInitDict)",
+        "FontFaceSetLoadEvent/constructor(type, eventInitDict)",
+        "FontFaceSetLoadEvent/FontFaceSetLoadEvent(type)",
+        "FontFaceSetLoadEvent/constructor(type)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "FontFaceSet-interface",
+        "href": "https://drafts.csswg.org/css-font-loading/#FontFaceSet-interface",
+        "title": "The FontFaceSet Interface",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-fontfacesetloadevent-fontfaces",
+      "href": "https://drafts.csswg.org/css-font-loading/#dom-fontfacesetloadevent-fontfaces",
+      "linkingText": [
+        "fontfaces"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FontFaceSetLoadEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "FontFaceSet-interface",
+        "href": "https://drafts.csswg.org/css-font-loading/#FontFaceSet-interface",
+        "title": "The FontFaceSet Interface",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "enumdef-fontfacesetloadstatus",
+      "href": "https://drafts.csswg.org/css-font-loading/#enumdef-fontfacesetloadstatus",
+      "linkingText": [
+        "FontFaceSetLoadStatus"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "FontFaceSet-interface",
+        "href": "https://drafts.csswg.org/css-font-loading/#FontFaceSet-interface",
+        "title": "The FontFaceSet Interface",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-fontfacesetloadstatus-loading",
+      "href": "https://drafts.csswg.org/css-font-loading/#dom-fontfacesetloadstatus-loading",
+      "linkingText": [
+        "\"loading\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "FontFaceSetLoadStatus"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "FontFaceSet-interface",
+        "href": "https://drafts.csswg.org/css-font-loading/#FontFaceSet-interface",
+        "title": "The FontFaceSet Interface",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-fontfacesetloadstatus-loaded",
+      "href": "https://drafts.csswg.org/css-font-loading/#dom-fontfacesetloadstatus-loaded",
+      "linkingText": [
+        "\"loaded\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "FontFaceSetLoadStatus"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "FontFaceSet-interface",
+        "href": "https://drafts.csswg.org/css-font-loading/#FontFaceSet-interface",
+        "title": "The FontFaceSet Interface",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "fontfaceset",
+      "href": "https://drafts.csswg.org/css-font-loading/#fontfaceset",
+      "linkingText": [
+        "FontFaceSet"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "FontFaceSet-interface",
+        "href": "https://drafts.csswg.org/css-font-loading/#FontFaceSet-interface",
+        "title": "The FontFaceSet Interface",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-fontfaceset-fontfaceset-initialfaces-initialfaces",
+      "href": "https://drafts.csswg.org/css-font-loading/#dom-fontfaceset-fontfaceset-initialfaces-initialfaces",
+      "linkingText": [
+        "initialFaces"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "FontFaceSet/FontFaceSet(initialFaces)",
+        "FontFaceSet/constructor(initialFaces)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "FontFaceSet-interface",
+        "href": "https://drafts.csswg.org/css-font-loading/#FontFaceSet-interface",
+        "title": "The FontFaceSet Interface",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-fontfaceset-add-font-font",
+      "href": "https://drafts.csswg.org/css-font-loading/#dom-fontfaceset-add-font-font",
+      "linkingText": [
+        "font"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "FontFaceSet/add(font)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "FontFaceSet-interface",
+        "href": "https://drafts.csswg.org/css-font-loading/#FontFaceSet-interface",
+        "title": "The FontFaceSet Interface",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-fontfaceset-delete-font-font",
+      "href": "https://drafts.csswg.org/css-font-loading/#dom-fontfaceset-delete-font-font",
+      "linkingText": [
+        "font"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "FontFaceSet/delete(font)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "FontFaceSet-interface",
+        "href": "https://drafts.csswg.org/css-font-loading/#FontFaceSet-interface",
+        "title": "The FontFaceSet Interface",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-fontfaceset-onloading",
+      "href": "https://drafts.csswg.org/css-font-loading/#dom-fontfaceset-onloading",
+      "linkingText": [
+        "onloading"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FontFaceSet"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "FontFaceSet-interface",
+        "href": "https://drafts.csswg.org/css-font-loading/#FontFaceSet-interface",
+        "title": "The FontFaceSet Interface",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-fontfaceset-onloadingdone",
+      "href": "https://drafts.csswg.org/css-font-loading/#dom-fontfaceset-onloadingdone",
+      "linkingText": [
+        "onloadingdone"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FontFaceSet"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "FontFaceSet-interface",
+        "href": "https://drafts.csswg.org/css-font-loading/#FontFaceSet-interface",
+        "title": "The FontFaceSet Interface",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-fontfaceset-onloadingerror",
+      "href": "https://drafts.csswg.org/css-font-loading/#dom-fontfaceset-onloadingerror",
+      "linkingText": [
+        "onloadingerror"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FontFaceSet"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "FontFaceSet-interface",
+        "href": "https://drafts.csswg.org/css-font-loading/#FontFaceSet-interface",
+        "title": "The FontFaceSet Interface",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-fontfaceset-status",
+      "href": "https://drafts.csswg.org/css-font-loading/#dom-fontfaceset-status",
+      "linkingText": [
+        "status"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FontFaceSet"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "FontFaceSet-interface",
+        "href": "https://drafts.csswg.org/css-font-loading/#FontFaceSet-interface",
+        "title": "The FontFaceSet Interface",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-fontfaceset-ready",
+      "href": "https://drafts.csswg.org/css-font-loading/#dom-fontfaceset-ready",
+      "linkingText": [
+        "ready"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FontFaceSet"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "FontFaceSet-interface",
+        "href": "https://drafts.csswg.org/css-font-loading/#FontFaceSet-interface",
+        "title": "The FontFaceSet Interface",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-fontfaceset-fontfaceset",
+      "href": "https://drafts.csswg.org/css-font-loading/#dom-fontfaceset-fontfaceset",
+      "linkingText": [
+        "FontFaceSet(initialFaces)",
+        "constructor(initialFaces)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "FontFaceSet"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "FontFaceSet-interface",
+        "href": "https://drafts.csswg.org/css-font-loading/#FontFaceSet-interface",
+        "title": "The FontFaceSet Interface",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "fontfaceset-iteration-order",
+      "href": "https://drafts.csswg.org/css-font-loading/#fontfaceset-iteration-order",
+      "linkingText": [
+        "iteration order"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "FontFaceSet"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "FontFaceSet-interface",
+        "href": "https://drafts.csswg.org/css-font-loading/#FontFaceSet-interface",
+        "title": "The FontFaceSet Interface",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "fontfaceset-set-entries",
+      "href": "https://drafts.csswg.org/css-font-loading/#fontfaceset-set-entries",
+      "linkingText": [
+        "set entries"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "FontFaceSet"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "FontFaceSet-interface",
+        "href": "https://drafts.csswg.org/css-font-loading/#FontFaceSet-interface",
+        "title": "The FontFaceSet Interface",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-fontfaceset-add",
+      "href": "https://drafts.csswg.org/css-font-loading/#dom-fontfaceset-add",
+      "linkingText": [
+        "add(font)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "FontFaceSet"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "FontFaceSet-interface",
+        "href": "https://drafts.csswg.org/css-font-loading/#FontFaceSet-interface",
+        "title": "The FontFaceSet Interface",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-fontfaceset-delete",
+      "href": "https://drafts.csswg.org/css-font-loading/#dom-fontfaceset-delete",
+      "linkingText": [
+        "delete(font)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "FontFaceSet"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "FontFaceSet-interface",
+        "href": "https://drafts.csswg.org/css-font-loading/#FontFaceSet-interface",
+        "title": "The FontFaceSet Interface",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-fontfaceset-clear",
+      "href": "https://drafts.csswg.org/css-font-loading/#dom-fontfaceset-clear",
+      "linkingText": [
+        "clear()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "FontFaceSet"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "FontFaceSet-interface",
+        "href": "https://drafts.csswg.org/css-font-loading/#FontFaceSet-interface",
+        "title": "The FontFaceSet Interface",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-fontfaceset-loadingfonts-slot",
+      "href": "https://drafts.csswg.org/css-font-loading/#dom-fontfaceset-loadingfonts-slot",
+      "linkingText": [
+        "[[LoadingFonts]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FontFaceSet"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "FontFaceSet-interface",
+        "href": "https://drafts.csswg.org/css-font-loading/#FontFaceSet-interface",
+        "title": "The FontFaceSet Interface",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-fontfaceset-loadedfonts-slot",
+      "href": "https://drafts.csswg.org/css-font-loading/#dom-fontfaceset-loadedfonts-slot",
+      "linkingText": [
+        "[[LoadedFonts]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FontFaceSet"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "FontFaceSet-interface",
+        "href": "https://drafts.csswg.org/css-font-loading/#FontFaceSet-interface",
+        "title": "The FontFaceSet Interface",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-fontfaceset-failedfonts-slot",
+      "href": "https://drafts.csswg.org/css-font-loading/#dom-fontfaceset-failedfonts-slot",
+      "linkingText": [
+        "[[FailedFonts]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FontFaceSet"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "FontFaceSet-interface",
+        "href": "https://drafts.csswg.org/css-font-loading/#FontFaceSet-interface",
+        "title": "The FontFaceSet Interface",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-fontfaceset-readypromise-slot",
+      "href": "https://drafts.csswg.org/css-font-loading/#dom-fontfaceset-readypromise-slot",
+      "linkingText": [
+        "[[ReadyPromise]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FontFaceSet"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "FontFaceSet-interface",
+        "href": "https://drafts.csswg.org/css-font-loading/#FontFaceSet-interface",
+        "title": "The FontFaceSet Interface",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "fontfaceset-pending-on-the-environment",
+      "href": "https://drafts.csswg.org/css-font-loading/#fontfaceset-pending-on-the-environment",
+      "linkingText": [
+        "pending on the environment"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "FontFaceSet"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "FontFaceSet-interface",
+        "href": "https://drafts.csswg.org/css-font-loading/#FontFaceSet-interface",
+        "title": "The FontFaceSet Interface",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "eventdef-fontfaceset-loading",
+      "href": "https://drafts.csswg.org/css-font-loading/#eventdef-fontfaceset-loading",
+      "linkingText": [
+        "loading"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "FontFaceSet"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "FontFaceSet-events",
+        "href": "https://drafts.csswg.org/css-font-loading/#FontFaceSet-events",
+        "title": "Events",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "eventdef-fontfaceset-loadingdone",
+      "href": "https://drafts.csswg.org/css-font-loading/#eventdef-fontfaceset-loadingdone",
+      "linkingText": [
+        "loadingdone"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "FontFaceSet"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "FontFaceSet-events",
+        "href": "https://drafts.csswg.org/css-font-loading/#FontFaceSet-events",
+        "title": "Events",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "eventdef-fontfaceset-loadingerror",
+      "href": "https://drafts.csswg.org/css-font-loading/#eventdef-fontfaceset-loadingerror",
+      "linkingText": [
+        "loadingerror"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "FontFaceSet"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "FontFaceSet-events",
+        "href": "https://drafts.csswg.org/css-font-loading/#FontFaceSet-events",
+        "title": "Events",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "fire-a-font-load-event",
+      "href": "https://drafts.csswg.org/css-font-loading/#fire-a-font-load-event",
+      "linkingText": [
+        "fire a font load event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "FontFaceSet-events",
+        "href": "https://drafts.csswg.org/css-font-loading/#FontFaceSet-events",
+        "title": "Events",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "switch-the-fontfaceset-to-loading",
+      "href": "https://drafts.csswg.org/css-font-loading/#switch-the-fontfaceset-to-loading",
+      "linkingText": [
+        "switch the FontFaceSet to loading"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "FontFaceSet-events",
+        "href": "https://drafts.csswg.org/css-font-loading/#FontFaceSet-events",
+        "title": "Events",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "switch-the-fontfaceset-to-loaded",
+      "href": "https://drafts.csswg.org/css-font-loading/#switch-the-fontfaceset-to-loaded",
+      "linkingText": [
+        "switch the FontFaceSet to loaded"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "FontFaceSet-events",
+        "href": "https://drafts.csswg.org/css-font-loading/#FontFaceSet-events",
+        "title": "Events",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "fontfaceset-stuck-on-the-environment",
+      "href": "https://drafts.csswg.org/css-font-loading/#fontfaceset-stuck-on-the-environment",
+      "linkingText": [
+        "stuck on the environment"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "FontFaceSet"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "FontFaceSet-events",
+        "href": "https://drafts.csswg.org/css-font-loading/#FontFaceSet-events",
+        "title": "Events",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "find-the-matching-font-faces",
+      "href": "https://drafts.csswg.org/css-font-loading/#find-the-matching-font-faces",
+      "linkingText": [
+        "find the matching font faces"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "FontFaceSet-events",
+        "href": "https://drafts.csswg.org/css-font-loading/#FontFaceSet-events",
+        "title": "Events",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-fontfaceset-load",
+      "href": "https://drafts.csswg.org/css-font-loading/#dom-fontfaceset-load",
+      "linkingText": [
+        "load(font, text)",
+        "load(font)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "FontFaceSet"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "font-face-set-load",
+        "href": "https://drafts.csswg.org/css-font-loading/#font-face-set-load",
+        "title": "The load() method",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-fontfaceset-load-font-text-font",
+      "href": "https://drafts.csswg.org/css-font-loading/#dom-fontfaceset-load-font-text-font",
+      "linkingText": [
+        "font"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "FontFaceSet/load(font, text)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "font-face-set-load",
+        "href": "https://drafts.csswg.org/css-font-loading/#font-face-set-load",
+        "title": "The load() method",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-fontfaceset-load-font-text-text",
+      "href": "https://drafts.csswg.org/css-font-loading/#dom-fontfaceset-load-font-text-text",
+      "linkingText": [
+        "text"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "FontFaceSet/load(font, text)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "font-face-set-load",
+        "href": "https://drafts.csswg.org/css-font-loading/#font-face-set-load",
+        "title": "The load() method",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-fontfaceset-check",
+      "href": "https://drafts.csswg.org/css-font-loading/#dom-fontfaceset-check",
+      "linkingText": [
+        "check(font, text)",
+        "check(font)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "FontFaceSet"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "font-face-set-check",
+        "href": "https://drafts.csswg.org/css-font-loading/#font-face-set-check",
+        "title": "The check() method",
+        "number": "3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-fontfaceset-check-font-text-font",
+      "href": "https://drafts.csswg.org/css-font-loading/#dom-fontfaceset-check-font-text-font",
+      "linkingText": [
+        "font"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "FontFaceSet/check(font, text)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "font-face-set-check",
+        "href": "https://drafts.csswg.org/css-font-loading/#font-face-set-check",
+        "title": "The check() method",
+        "number": "3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-fontfaceset-check-font-text-text",
+      "href": "https://drafts.csswg.org/css-font-loading/#dom-fontfaceset-check-font-text-text",
+      "linkingText": [
+        "text"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "FontFaceSet/check(font, text)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "font-face-set-check",
+        "href": "https://drafts.csswg.org/css-font-loading/#font-face-set-check",
+        "title": "The check() method",
+        "number": "3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "fontfacesource",
+      "href": "https://drafts.csswg.org/css-font-loading/#fontfacesource",
+      "linkingText": [
+        "FontFaceSource"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "font-face-source",
+        "href": "https://drafts.csswg.org/css-font-loading/#font-face-source",
+        "title": "The FontFaceSource Mixin",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-fontfacesource-fonts",
+      "href": "https://drafts.csswg.org/css-font-loading/#dom-fontfacesource-fonts",
+      "linkingText": [
+        "fonts"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FontFaceSource"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "font-face-source",
+        "href": "https://drafts.csswg.org/css-font-loading/#font-face-source",
+        "title": "The FontFaceSource Mixin",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "font-source",
+      "href": "https://drafts.csswg.org/css-font-loading/#font-source",
+      "linkingText": [
+        "font source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "font-face-source",
+        "href": "https://drafts.csswg.org/css-font-loading/#font-face-source",
+        "title": "The FontFaceSource Mixin",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "available-font-faces",
+      "href": "https://drafts.csswg.org/css-font-loading/#available-font-faces",
+      "linkingText": [
+        "available font faces"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "font-face-source",
+        "href": "https://drafts.csswg.org/css-font-loading/#font-face-source",
+        "title": "The FontFaceSource Mixin",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "name": "RTCRtpReceiveParameters",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
+      "url": "https://www.w3.org/TR/webrtc/"
+    },
+    "fragment": "dictionary RTCRtpReceiveParameters : RTCRtpParameters {\n};",
+    "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpreceiveparameters"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "RTCRtpParameters",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
+        "url": "https://www.w3.org/TR/webrtc/"
+      },
+      "fragment": "dictionary RTCRtpParameters {\n  required sequence<RTCRtpHeaderExtensionParameters> headerExtensions;\n  required RTCRtcpParameters rtcp;\n  required sequence<RTCRtpCodecParameters> codecs;\n};",
+      "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpparameters"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webrtc/": [
+      {
+        "id": "dom-rtcrtpreceiveparameters",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpreceiveparameters",
+        "linkingText": [
+          "RTCRtpReceiveParameters"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "rtcreceivertpparameters",
+          "href": "https://w3c.github.io/webrtc-pc/#rtcreceivertpparameters",
+          "title": "RTCRtpReceiveParameters Dictionary",
+          "number": "5.2.3"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-rtcrtpparameters",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpparameters",
+        "linkingText": [
+          "RTCRtpParameters"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "rtcrtpparameters",
+          "href": "https://w3c.github.io/webrtc-pc/#rtcrtpparameters",
+          "title": "RTCRtpParameters Dictionary",
+          "number": "5.2.1"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-rtcrtpparameters-headerextensions",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpparameters-headerextensions",
+        "linkingText": [
+          "headerExtensions"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RTCRtpParameters"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-rtcrtpparameters-members",
+          "href": "https://w3c.github.io/webrtc-pc/#dictionary-rtcrtpparameters-members",
+          "title": "Dictionary RTCRtpParameters Members"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcrtpparameters-rtcp",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpparameters-rtcp",
+        "linkingText": [
+          "rtcp"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RTCRtpParameters"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-rtcrtpparameters-members",
+          "href": "https://w3c.github.io/webrtc-pc/#dictionary-rtcrtpparameters-members",
+          "title": "Dictionary RTCRtpParameters Members"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtcrtpparameters-codecs",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpparameters-codecs",
+        "linkingText": [
+          "codecs"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RTCRtpParameters"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-rtcrtpparameters-members",
+          "href": "https://w3c.github.io/webrtc-pc/#dictionary-rtcrtpparameters-members",
+          "title": "Dictionary RTCRtpParameters Members"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

@@ -1,0 +1,190 @@
+{
+  "name": "ComputePressureObserver",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Compute Pressure API",
+      "url": "https://wicg.github.io/compute-pressure/"
+    },
+    "fragment": "[Exposed=Window]\ninterface ComputePressureObserver {\n  constructor(ComputePressureUpdateCallback callback);\n  undefined observe(ComputePressureTarget target, optional ComputePressureObserverOptions options = {});\n  undefined unobserve(ComputePressureTarget target);\n  undefined disconnect();\n  sequence<ComputePressureEntry> takeRecords();\n  [SameObject] static readonly attribute FrozenArray<DOMString> supportedTargetTypes;\n};",
+    "href": "https://wicg.github.io/compute-pressure/#dom-computepressureobserver"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://wicg.github.io/compute-pressure/": [
+      {
+        "id": "dom-computepressureobserver",
+        "href": "https://wicg.github.io/compute-pressure/#dom-computepressureobserver",
+        "linkingText": [
+          "ComputePressureObserver"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-computepressureobserver-object",
+          "href": "https://wicg.github.io/compute-pressure/#the-computepressureobserver-object",
+          "title": "The ComputePressureObserver object",
+          "number": "5.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-computepressureobserver-constructor",
+        "href": "https://wicg.github.io/compute-pressure/#dom-computepressureobserver-constructor",
+        "linkingText": [
+          "constructor()",
+          "constructor(callback)"
+        ],
+        "localLinkingText": [
+          "ComputePressureObserver.constructor",
+          "ComputePressureObserver.constructor()",
+          "constructor"
+        ],
+        "type": "constructor",
+        "for": [
+          "ComputePressureObserver"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-constructor-method",
+          "href": "https://wicg.github.io/compute-pressure/#the-constructor-method",
+          "title": "The constructor() method",
+          "number": "5.2.2"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-computepressureobserver-observe",
+        "href": "https://wicg.github.io/compute-pressure/#dom-computepressureobserver-observe",
+        "linkingText": [
+          "observe()",
+          "observe(target)",
+          "observe(target, options)"
+        ],
+        "localLinkingText": [
+          "ComputePressureObserver.observe",
+          "ComputePressureObserver.observe()",
+          "observe"
+        ],
+        "type": "method",
+        "for": [
+          "ComputePressureObserver"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-observe-method",
+          "href": "https://wicg.github.io/compute-pressure/#the-observe-method",
+          "title": "The observe() method",
+          "number": "5.2.3"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-computepressureobserver-unobserve",
+        "href": "https://wicg.github.io/compute-pressure/#dom-computepressureobserver-unobserve",
+        "linkingText": [
+          "unobserve()",
+          "unobserve(target)"
+        ],
+        "localLinkingText": [
+          "ComputePressureObserver.unobserve",
+          "ComputePressureObserver.unobserve()",
+          "unobserve"
+        ],
+        "type": "method",
+        "for": [
+          "ComputePressureObserver"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-unobserve-method",
+          "href": "https://wicg.github.io/compute-pressure/#the-unobserve-method",
+          "title": "The unobserve() method",
+          "number": "5.2.4"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-computepressureobserver-disconnect",
+        "href": "https://wicg.github.io/compute-pressure/#dom-computepressureobserver-disconnect",
+        "linkingText": [
+          "disconnect()"
+        ],
+        "localLinkingText": [
+          "ComputePressureObserver.disconnect",
+          "ComputePressureObserver.disconnect()",
+          "disconnect"
+        ],
+        "type": "method",
+        "for": [
+          "ComputePressureObserver"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-disconnect-method",
+          "href": "https://wicg.github.io/compute-pressure/#the-disconnect-method",
+          "title": "The disconnect() method",
+          "number": "5.2.5"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-computepressureobserver-takerecords",
+        "href": "https://wicg.github.io/compute-pressure/#dom-computepressureobserver-takerecords",
+        "linkingText": [
+          "takeRecords()"
+        ],
+        "localLinkingText": [
+          "ComputePressureObserver.takeRecords",
+          "ComputePressureObserver.takeRecords()",
+          "takeRecords"
+        ],
+        "type": "method",
+        "for": [
+          "ComputePressureObserver"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-takerecords-method",
+          "href": "https://wicg.github.io/compute-pressure/#the-takerecords-method",
+          "title": "The takeRecords() method",
+          "number": "5.2.6"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-computepressureobserver-supportedtargettypes",
+        "href": "https://wicg.github.io/compute-pressure/#dom-computepressureobserver-supportedtargettypes",
+        "linkingText": [
+          "supportedTargetTypes"
+        ],
+        "localLinkingText": [
+          "ComputePressureObserver.supportedTargetTypes"
+        ],
+        "type": "attribute",
+        "for": [
+          "ComputePressureObserver"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-supportedtargettypes-attribute",
+          "href": "https://wicg.github.io/compute-pressure/#the-supportedtargettypes-attribute",
+          "title": "The supportedTargetTypes attribute",
+          "number": "5.2.7"
+        },
+        "definedIn": "heading"
+      }
+    ]
+  }
+}

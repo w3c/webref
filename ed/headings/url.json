@@ -1,0 +1,323 @@
+{
+  "spec": {
+    "title": "URL Standard",
+    "url": "https://url.spec.whatwg.org/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://url.spec.whatwg.org/#title",
+      "level": 1,
+      "title": "URL"
+    },
+    {
+      "id": "subtitle",
+      "href": "https://url.spec.whatwg.org/#subtitle",
+      "level": 2,
+      "title": "Living Standard — Last Updated 28 January 2022"
+    },
+    {
+      "id": "abstract",
+      "href": "https://url.spec.whatwg.org/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "toc",
+      "href": "https://url.spec.whatwg.org/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "goals",
+      "href": "https://url.spec.whatwg.org/#goals",
+      "level": 2,
+      "title": "Goals"
+    },
+    {
+      "id": "infrastructure",
+      "href": "https://url.spec.whatwg.org/#infrastructure",
+      "level": 2,
+      "title": "Infrastructure",
+      "number": "1"
+    },
+    {
+      "id": "writing",
+      "href": "https://url.spec.whatwg.org/#writing",
+      "level": 3,
+      "title": "Writing",
+      "number": "1.1"
+    },
+    {
+      "id": "parsers",
+      "href": "https://url.spec.whatwg.org/#parsers",
+      "level": 3,
+      "title": "Parsers",
+      "number": "1.2"
+    },
+    {
+      "id": "percent-encoded-bytes",
+      "href": "https://url.spec.whatwg.org/#percent-encoded-bytes",
+      "level": 3,
+      "title": "Percent-encoded bytes",
+      "number": "1.3"
+    },
+    {
+      "id": "security-considerations",
+      "href": "https://url.spec.whatwg.org/#security-considerations",
+      "level": 2,
+      "title": "Security considerations",
+      "number": "2"
+    },
+    {
+      "id": "hosts-(domains-and-ip-addresses)",
+      "href": "https://url.spec.whatwg.org/#hosts-(domains-and-ip-addresses)",
+      "level": 2,
+      "title": "Hosts (domains and IP addresses)",
+      "number": "3"
+    },
+    {
+      "id": "host-representation",
+      "href": "https://url.spec.whatwg.org/#host-representation",
+      "level": 3,
+      "title": "Host representation",
+      "number": "3.1"
+    },
+    {
+      "id": "host-miscellaneous",
+      "href": "https://url.spec.whatwg.org/#host-miscellaneous",
+      "level": 3,
+      "title": "Host miscellaneous",
+      "number": "3.2"
+    },
+    {
+      "id": "idna",
+      "href": "https://url.spec.whatwg.org/#idna",
+      "level": 3,
+      "title": "IDNA",
+      "number": "3.3"
+    },
+    {
+      "id": "host-writing",
+      "href": "https://url.spec.whatwg.org/#host-writing",
+      "level": 3,
+      "title": "Host writing",
+      "number": "3.4"
+    },
+    {
+      "id": "host-parsing",
+      "href": "https://url.spec.whatwg.org/#host-parsing",
+      "level": 3,
+      "title": "Host parsing",
+      "number": "3.5"
+    },
+    {
+      "id": "host-serializing",
+      "href": "https://url.spec.whatwg.org/#host-serializing",
+      "level": 3,
+      "title": "Host serializing",
+      "number": "3.6"
+    },
+    {
+      "id": "host-equivalence",
+      "href": "https://url.spec.whatwg.org/#host-equivalence",
+      "level": 3,
+      "title": "Host equivalence",
+      "number": "3.7"
+    },
+    {
+      "id": "urls",
+      "href": "https://url.spec.whatwg.org/#urls",
+      "level": 2,
+      "title": "URLs",
+      "number": "4"
+    },
+    {
+      "id": "url-representation",
+      "href": "https://url.spec.whatwg.org/#url-representation",
+      "level": 3,
+      "title": "URL representation",
+      "number": "4.1"
+    },
+    {
+      "id": "url-miscellaneous",
+      "href": "https://url.spec.whatwg.org/#url-miscellaneous",
+      "level": 3,
+      "title": "URL miscellaneous",
+      "number": "4.2"
+    },
+    {
+      "id": "url-writing",
+      "href": "https://url.spec.whatwg.org/#url-writing",
+      "level": 3,
+      "title": "URL writing",
+      "number": "4.3"
+    },
+    {
+      "id": "url-parsing",
+      "href": "https://url.spec.whatwg.org/#url-parsing",
+      "level": 3,
+      "title": "URL parsing",
+      "number": "4.4"
+    },
+    {
+      "id": "url-serializing",
+      "href": "https://url.spec.whatwg.org/#url-serializing",
+      "level": 3,
+      "title": "URL serializing",
+      "number": "4.5"
+    },
+    {
+      "id": "url-equivalence",
+      "href": "https://url.spec.whatwg.org/#url-equivalence",
+      "level": 3,
+      "title": "URL equivalence",
+      "number": "4.6"
+    },
+    {
+      "id": "origin",
+      "href": "https://url.spec.whatwg.org/#origin",
+      "level": 3,
+      "title": "Origin",
+      "number": "4.7"
+    },
+    {
+      "id": "url-rendering",
+      "href": "https://url.spec.whatwg.org/#url-rendering",
+      "level": 3,
+      "title": "URL rendering",
+      "number": "4.8"
+    },
+    {
+      "id": "url-rendering-simplification",
+      "href": "https://url.spec.whatwg.org/#url-rendering-simplification",
+      "level": 4,
+      "title": "Simplify non-human-readable or irrelevant components",
+      "number": "4.8.1"
+    },
+    {
+      "id": "url-rendering-elision",
+      "href": "https://url.spec.whatwg.org/#url-rendering-elision",
+      "level": 4,
+      "title": "Elision",
+      "number": "4.8.2"
+    },
+    {
+      "id": "url-rendering-i18n",
+      "href": "https://url.spec.whatwg.org/#url-rendering-i18n",
+      "level": 4,
+      "title": "Internationalization and special characters",
+      "number": "4.8.3"
+    },
+    {
+      "id": "application/x-www-form-urlencoded",
+      "href": "https://url.spec.whatwg.org/#application/x-www-form-urlencoded",
+      "level": 2,
+      "title": "application/x-www-form-urlencoded",
+      "number": "5"
+    },
+    {
+      "id": "urlencoded-parsing",
+      "href": "https://url.spec.whatwg.org/#urlencoded-parsing",
+      "level": 3,
+      "title": "application/x-www-form-urlencoded parsing",
+      "number": "5.1"
+    },
+    {
+      "id": "urlencoded-serializing",
+      "href": "https://url.spec.whatwg.org/#urlencoded-serializing",
+      "level": 3,
+      "title": "application/x-www-form-urlencoded serializing",
+      "number": "5.2"
+    },
+    {
+      "id": "urlencoded-hooks",
+      "href": "https://url.spec.whatwg.org/#urlencoded-hooks",
+      "level": 3,
+      "title": "Hooks",
+      "number": "5.3"
+    },
+    {
+      "id": "api",
+      "href": "https://url.spec.whatwg.org/#api",
+      "level": 2,
+      "title": "API",
+      "number": "6"
+    },
+    {
+      "id": "url-class",
+      "href": "https://url.spec.whatwg.org/#url-class",
+      "level": 3,
+      "title": "URL class",
+      "number": "6.1"
+    },
+    {
+      "id": "interface-urlsearchparams",
+      "href": "https://url.spec.whatwg.org/#interface-urlsearchparams",
+      "level": 3,
+      "title": "URLSearchParams class",
+      "number": "6.2"
+    },
+    {
+      "id": "url-apis-elsewhere",
+      "href": "https://url.spec.whatwg.org/#url-apis-elsewhere",
+      "level": 3,
+      "title": "URL APIs elsewhere",
+      "number": "6.3"
+    },
+    {
+      "id": "acknowledgments",
+      "href": "https://url.spec.whatwg.org/#acknowledgments",
+      "level": 2,
+      "title": "Acknowledgments"
+    },
+    {
+      "id": "ipr",
+      "href": "https://url.spec.whatwg.org/#ipr",
+      "level": 2,
+      "title": "Intellectual property rights"
+    },
+    {
+      "id": "index",
+      "href": "https://url.spec.whatwg.org/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://url.spec.whatwg.org/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://url.spec.whatwg.org/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://url.spec.whatwg.org/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://url.spec.whatwg.org/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://url.spec.whatwg.org/#informative",
+      "level": 3,
+      "title": "Informative References"
+    },
+    {
+      "id": "idl-index",
+      "href": "https://url.spec.whatwg.org/#idl-index",
+      "level": 2,
+      "title": "IDL Index"
+    }
+  ]
+}

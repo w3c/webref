@@ -1,0 +1,115 @@
+{
+  "name": "PortalActivateOptions",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Portals",
+      "url": "https://wicg.github.io/portals/"
+    },
+    "fragment": "dictionary PortalActivateOptions : StructuredSerializeOptions {\n    any data;\n};",
+    "href": "https://wicg.github.io/portals/#dictdef-portalactivateoptions"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "StructuredSerializeOptions",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "HTML Standard",
+        "url": "https://html.spec.whatwg.org/multipage/"
+      },
+      "fragment": "dictionary StructuredSerializeOptions {\n  sequence<object> transfer = [];\n};",
+      "href": "https://html.spec.whatwg.org/multipage/web-messaging.html#structuredserializeoptions"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://wicg.github.io/portals/": [
+      {
+        "id": "dictdef-portalactivateoptions",
+        "href": "https://wicg.github.io/portals/#dictdef-portalactivateoptions",
+        "linkingText": [
+          "PortalActivateOptions"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-portal-element",
+          "href": "https://wicg.github.io/portals/#the-portal-element",
+          "title": "The portal element",
+          "number": "3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-portalactivateoptions-data",
+        "href": "https://wicg.github.io/portals/#dom-portalactivateoptions-data",
+        "linkingText": [
+          "data"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "PortalActivateOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-portal-element",
+          "href": "https://wicg.github.io/portals/#the-portal-element",
+          "title": "The portal element",
+          "number": "3"
+        },
+        "definedIn": "pre"
+      }
+    ],
+    "https://html.spec.whatwg.org/multipage/": [
+      {
+        "id": "structuredserializeoptions",
+        "href": "https://html.spec.whatwg.org/multipage/web-messaging.html#structuredserializeoptions",
+        "linkingText": [
+          "StructuredSerializeOptions"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "message-ports",
+          "href": "https://html.spec.whatwg.org/multipage/web-messaging.html#message-ports",
+          "title": "Message ports",
+          "number": "9.5.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-structuredserializeoptions-transfer",
+        "href": "https://html.spec.whatwg.org/multipage/web-messaging.html#dom-structuredserializeoptions-transfer",
+        "linkingText": [
+          "transfer"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "StructuredSerializeOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "message-ports",
+          "href": "https://html.spec.whatwg.org/multipage/web-messaging.html#message-ports",
+          "title": "Message ports",
+          "number": "9.5.3"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

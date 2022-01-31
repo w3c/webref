@@ -1,0 +1,248 @@
+{
+  "name": "GPUDepthStencilState",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "WebGPU",
+      "url": "https://www.w3.org/TR/webgpu/"
+    },
+    "fragment": "dictionary GPUDepthStencilState {\n    required GPUTextureFormat format;\n\n    boolean depthWriteEnabled = false;\n    GPUCompareFunction depthCompare = \"always\";\n\n    GPUStencilFaceState stencilFront = {};\n    GPUStencilFaceState stencilBack = {};\n\n    GPUStencilValue stencilReadMask = 0xFFFFFFFF;\n    GPUStencilValue stencilWriteMask = 0xFFFFFFFF;\n\n    GPUDepthBias depthBias = 0;\n    float depthBiasSlopeScale = 0;\n    float depthBiasClamp = 0;\n};",
+    "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpudepthstencilstate"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webgpu/": [
+      {
+        "id": "dictdef-gpudepthstencilstate",
+        "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpudepthstencilstate",
+        "linkingText": [
+          "GPUDepthStencilState"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "depth-stencil-state",
+          "href": "https://gpuweb.github.io/gpuweb/#depth-stencil-state",
+          "title": "Depth/Stencil State",
+          "number": "10.3.6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gpudepthstencilstate-format",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpudepthstencilstate-format",
+        "linkingText": [
+          "format"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "GPUDepthStencilState"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "depth-stencil-state",
+          "href": "https://gpuweb.github.io/gpuweb/#depth-stencil-state",
+          "title": "Depth/Stencil State",
+          "number": "10.3.6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gpudepthstencilstate-depthwriteenabled",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpudepthstencilstate-depthwriteenabled",
+        "linkingText": [
+          "depthWriteEnabled"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "GPUDepthStencilState"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "depth-stencil-state",
+          "href": "https://gpuweb.github.io/gpuweb/#depth-stencil-state",
+          "title": "Depth/Stencil State",
+          "number": "10.3.6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gpudepthstencilstate-depthcompare",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpudepthstencilstate-depthcompare",
+        "linkingText": [
+          "depthCompare"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "GPUDepthStencilState"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "depth-stencil-state",
+          "href": "https://gpuweb.github.io/gpuweb/#depth-stencil-state",
+          "title": "Depth/Stencil State",
+          "number": "10.3.6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gpudepthstencilstate-stencilfront",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpudepthstencilstate-stencilfront",
+        "linkingText": [
+          "stencilFront"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "GPUDepthStencilState"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "depth-stencil-state",
+          "href": "https://gpuweb.github.io/gpuweb/#depth-stencil-state",
+          "title": "Depth/Stencil State",
+          "number": "10.3.6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gpudepthstencilstate-stencilback",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpudepthstencilstate-stencilback",
+        "linkingText": [
+          "stencilBack"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "GPUDepthStencilState"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "depth-stencil-state",
+          "href": "https://gpuweb.github.io/gpuweb/#depth-stencil-state",
+          "title": "Depth/Stencil State",
+          "number": "10.3.6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gpudepthstencilstate-stencilreadmask",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpudepthstencilstate-stencilreadmask",
+        "linkingText": [
+          "stencilReadMask"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "GPUDepthStencilState"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "depth-stencil-state",
+          "href": "https://gpuweb.github.io/gpuweb/#depth-stencil-state",
+          "title": "Depth/Stencil State",
+          "number": "10.3.6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gpudepthstencilstate-stencilwritemask",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpudepthstencilstate-stencilwritemask",
+        "linkingText": [
+          "stencilWriteMask"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "GPUDepthStencilState"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "depth-stencil-state",
+          "href": "https://gpuweb.github.io/gpuweb/#depth-stencil-state",
+          "title": "Depth/Stencil State",
+          "number": "10.3.6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gpudepthstencilstate-depthbias",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpudepthstencilstate-depthbias",
+        "linkingText": [
+          "depthBias"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "GPUDepthStencilState"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "depth-stencil-state",
+          "href": "https://gpuweb.github.io/gpuweb/#depth-stencil-state",
+          "title": "Depth/Stencil State",
+          "number": "10.3.6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gpudepthstencilstate-depthbiasslopescale",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpudepthstencilstate-depthbiasslopescale",
+        "linkingText": [
+          "depthBiasSlopeScale"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "GPUDepthStencilState"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "depth-stencil-state",
+          "href": "https://gpuweb.github.io/gpuweb/#depth-stencil-state",
+          "title": "Depth/Stencil State",
+          "number": "10.3.6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gpudepthstencilstate-depthbiasclamp",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpudepthstencilstate-depthbiasclamp",
+        "linkingText": [
+          "depthBiasClamp"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "GPUDepthStencilState"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "depth-stencil-state",
+          "href": "https://gpuweb.github.io/gpuweb/#depth-stencil-state",
+          "title": "Depth/Stencil State",
+          "number": "10.3.6"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

@@ -1,0 +1,247 @@
+{
+  "name": "FileSystemWritableFileStream",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "File System Access",
+      "url": "https://wicg.github.io/file-system-access/"
+    },
+    "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface FileSystemWritableFileStream : WritableStream {\n  Promise<undefined> write(FileSystemWriteChunkType data);\n  Promise<undefined> seek(unsigned long long position);\n  Promise<undefined> truncate(unsigned long long size);\n};",
+    "href": "https://wicg.github.io/file-system-access/#filesystemwritablefilestream"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "WritableStream",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "Streams Standard",
+        "url": "https://streams.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=*, Transferable]\ninterface WritableStream {\n  constructor(optional object underlyingSink, optional QueuingStrategy strategy = {});\n\n  readonly attribute boolean locked;\n\n  Promise<undefined> abort(optional any reason);\n  Promise<undefined> close();\n  WritableStreamDefaultWriter getWriter();\n};",
+      "href": "https://streams.spec.whatwg.org/#writablestream"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://wicg.github.io/file-system-access/": [
+      {
+        "id": "filesystemwritablefilestream",
+        "href": "https://wicg.github.io/file-system-access/#filesystemwritablefilestream",
+        "linkingText": [
+          "FileSystemWritableFileStream"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-filesystemwritablefilestream",
+          "href": "https://wicg.github.io/file-system-access/#api-filesystemwritablefilestream",
+          "title": "The FileSystemWritableFileStream interface",
+          "number": "2.6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-filesystemwritablefilestream-write",
+        "href": "https://wicg.github.io/file-system-access/#dom-filesystemwritablefilestream-write",
+        "linkingText": [
+          "write(data)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "FileSystemWritableFileStream"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-filesystemwritablefilestream-write",
+          "href": "https://wicg.github.io/file-system-access/#api-filesystemwritablefilestream-write",
+          "title": "The write() method",
+          "number": "2.6.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-filesystemwritablefilestream-seek",
+        "href": "https://wicg.github.io/file-system-access/#dom-filesystemwritablefilestream-seek",
+        "linkingText": [
+          "seek(position)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "FileSystemWritableFileStream"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-filesystemwritablefilestream-seek",
+          "href": "https://wicg.github.io/file-system-access/#api-filesystemwritablefilestream-seek",
+          "title": "The seek() method",
+          "number": "2.6.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-filesystemwritablefilestream-truncate",
+        "href": "https://wicg.github.io/file-system-access/#dom-filesystemwritablefilestream-truncate",
+        "linkingText": [
+          "truncate(size)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "FileSystemWritableFileStream"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-filesystemwritablefilestream-truncate",
+          "href": "https://wicg.github.io/file-system-access/#api-filesystemwritablefilestream-truncate",
+          "title": "The truncate() method",
+          "number": "2.6.3"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://streams.spec.whatwg.org/": [
+      {
+        "id": "writablestream",
+        "href": "https://streams.spec.whatwg.org/#writablestream",
+        "linkingText": [
+          "WritableStream"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "ws-class-definition",
+          "href": "https://streams.spec.whatwg.org/#ws-class-definition",
+          "title": "Interface definition",
+          "number": "5.2.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "ws-constructor",
+        "href": "https://streams.spec.whatwg.org/#ws-constructor",
+        "linkingText": [
+          "WritableStream(underlyingSink, strategy)",
+          "constructor(underlyingSink, strategy)",
+          "WritableStream(underlyingSink)",
+          "constructor(underlyingSink)",
+          "WritableStream()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "WritableStream"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "ws-prototype",
+          "href": "https://streams.spec.whatwg.org/#ws-prototype",
+          "title": "Constructor, methods, and properties",
+          "number": "5.2.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "ws-locked",
+        "href": "https://streams.spec.whatwg.org/#ws-locked",
+        "linkingText": [
+          "locked"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "WritableStream"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "ws-prototype",
+          "href": "https://streams.spec.whatwg.org/#ws-prototype",
+          "title": "Constructor, methods, and properties",
+          "number": "5.2.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "ws-abort",
+        "href": "https://streams.spec.whatwg.org/#ws-abort",
+        "linkingText": [
+          "abort(reason)",
+          "abort()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "WritableStream"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "ws-prototype",
+          "href": "https://streams.spec.whatwg.org/#ws-prototype",
+          "title": "Constructor, methods, and properties",
+          "number": "5.2.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "ws-close",
+        "href": "https://streams.spec.whatwg.org/#ws-close",
+        "linkingText": [
+          "close()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "WritableStream"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "ws-prototype",
+          "href": "https://streams.spec.whatwg.org/#ws-prototype",
+          "title": "Constructor, methods, and properties",
+          "number": "5.2.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "ws-get-writer",
+        "href": "https://streams.spec.whatwg.org/#ws-get-writer",
+        "linkingText": [
+          "getWriter()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "WritableStream"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "ws-prototype",
+          "href": "https://streams.spec.whatwg.org/#ws-prototype",
+          "title": "Constructor, methods, and properties",
+          "number": "5.2.4"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

@@ -1,0 +1,230 @@
+{
+  "name": "ParentNode",
+  "type": "interface mixin",
+  "defined": {
+    "spec": {
+      "title": "DOM Standard",
+      "url": "https://dom.spec.whatwg.org/"
+    },
+    "fragment": "interface mixin ParentNode {\n  [SameObject] readonly attribute HTMLCollection children;\n  readonly attribute Element? firstElementChild;\n  readonly attribute Element? lastElementChild;\n  readonly attribute unsigned long childElementCount;\n\n  [CEReactions, Unscopable] undefined prepend((Node or DOMString)... nodes);\n  [CEReactions, Unscopable] undefined append((Node or DOMString)... nodes);\n  [CEReactions, Unscopable] undefined replaceChildren((Node or DOMString)... nodes);\n\n  Element? querySelector(DOMString selectors);\n  [NewObject] NodeList querySelectorAll(DOMString selectors);\n};",
+    "href": "https://dom.spec.whatwg.org/#parentnode"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "parentnode",
+        "href": "https://dom.spec.whatwg.org/#parentnode",
+        "linkingText": [
+          "ParentNode"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-parentnode",
+          "href": "https://dom.spec.whatwg.org/#interface-parentnode",
+          "title": "Mixin ParentNode",
+          "number": "4.2.6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-parentnode-children",
+        "href": "https://dom.spec.whatwg.org/#dom-parentnode-children",
+        "linkingText": [
+          "children"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "ParentNode"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-parentnode",
+          "href": "https://dom.spec.whatwg.org/#interface-parentnode",
+          "title": "Mixin ParentNode",
+          "number": "4.2.6"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-parentnode-firstelementchild",
+        "href": "https://dom.spec.whatwg.org/#dom-parentnode-firstelementchild",
+        "linkingText": [
+          "firstElementChild"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "ParentNode"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-parentnode",
+          "href": "https://dom.spec.whatwg.org/#interface-parentnode",
+          "title": "Mixin ParentNode",
+          "number": "4.2.6"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-parentnode-lastelementchild",
+        "href": "https://dom.spec.whatwg.org/#dom-parentnode-lastelementchild",
+        "linkingText": [
+          "lastElementChild"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "ParentNode"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-parentnode",
+          "href": "https://dom.spec.whatwg.org/#interface-parentnode",
+          "title": "Mixin ParentNode",
+          "number": "4.2.6"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-parentnode-childelementcount",
+        "href": "https://dom.spec.whatwg.org/#dom-parentnode-childelementcount",
+        "linkingText": [
+          "childElementCount"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "ParentNode"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-parentnode",
+          "href": "https://dom.spec.whatwg.org/#interface-parentnode",
+          "title": "Mixin ParentNode",
+          "number": "4.2.6"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-parentnode-prepend",
+        "href": "https://dom.spec.whatwg.org/#dom-parentnode-prepend",
+        "linkingText": [
+          "prepend(...nodes)",
+          "prepend()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "ParentNode"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-parentnode",
+          "href": "https://dom.spec.whatwg.org/#interface-parentnode",
+          "title": "Mixin ParentNode",
+          "number": "4.2.6"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-parentnode-append",
+        "href": "https://dom.spec.whatwg.org/#dom-parentnode-append",
+        "linkingText": [
+          "append(...nodes)",
+          "append()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "ParentNode"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-parentnode",
+          "href": "https://dom.spec.whatwg.org/#interface-parentnode",
+          "title": "Mixin ParentNode",
+          "number": "4.2.6"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-parentnode-replacechildren",
+        "href": "https://dom.spec.whatwg.org/#dom-parentnode-replacechildren",
+        "linkingText": [
+          "replaceChildren(...nodes)",
+          "replaceChildren()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "ParentNode"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-parentnode",
+          "href": "https://dom.spec.whatwg.org/#interface-parentnode",
+          "title": "Mixin ParentNode",
+          "number": "4.2.6"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-parentnode-queryselector",
+        "href": "https://dom.spec.whatwg.org/#dom-parentnode-queryselector",
+        "linkingText": [
+          "querySelector(selectors)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "ParentNode"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-parentnode",
+          "href": "https://dom.spec.whatwg.org/#interface-parentnode",
+          "title": "Mixin ParentNode",
+          "number": "4.2.6"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-parentnode-queryselectorall",
+        "href": "https://dom.spec.whatwg.org/#dom-parentnode-queryselectorall",
+        "linkingText": [
+          "querySelectorAll(selectors)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "ParentNode"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-parentnode",
+          "href": "https://dom.spec.whatwg.org/#interface-parentnode",
+          "title": "Mixin ParentNode",
+          "number": "4.2.6"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

@@ -1,0 +1,849 @@
+{
+  "name": "MediaTrackConstraintSet",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Media Capture and Streams",
+      "url": "https://www.w3.org/TR/mediacapture-streams/"
+    },
+    "fragment": "dictionary MediaTrackConstraintSet {\n  ConstrainULong width;\n  ConstrainULong height;\n  ConstrainDouble aspectRatio;\n  ConstrainDouble frameRate;\n  ConstrainDOMString facingMode;\n  ConstrainDOMString resizeMode;\n  ConstrainULong sampleRate;\n  ConstrainULong sampleSize;\n  ConstrainBoolean echoCancellation;\n  ConstrainBoolean autoGainControl;\n  ConstrainBoolean noiseSuppression;\n  ConstrainDouble latency;\n  ConstrainULong channelCount;\n  ConstrainDOMString deviceId;\n  ConstrainDOMString groupId;\n};",
+    "href": "https://w3c.github.io/mediacapture-main/#dom-mediatrackconstraintset"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "MediaStream Image Capture",
+        "url": "https://www.w3.org/TR/image-capture/"
+      },
+      "fragment": "partial dictionary MediaTrackConstraintSet {\n  ConstrainDOMString           whiteBalanceMode;\n  ConstrainDOMString           exposureMode;\n  ConstrainDOMString           focusMode;\n  ConstrainPoint2D             pointsOfInterest;\n\n  ConstrainDouble              exposureCompensation;\n  ConstrainDouble              exposureTime;\n  ConstrainDouble              colorTemperature;\n  ConstrainDouble              iso;\n\n  ConstrainDouble              brightness;\n  ConstrainDouble              contrast;\n  ConstrainDouble              saturation;\n  ConstrainDouble              sharpness;\n\n  ConstrainDouble              focusDistance;\n  (boolean or ConstrainDouble) pan;\n  (boolean or ConstrainDouble) tilt;\n  (boolean or ConstrainDouble) zoom;\n\n  ConstrainBoolean             torch;\n};"
+    },
+    {
+      "spec": {
+        "title": "Media Capture Depth Stream Extensions",
+        "url": "https://www.w3.org/TR/mediacapture-depth/"
+      },
+      "fragment": "partial dictionary MediaTrackConstraintSet {\n    // Applies to both depth stream track and color stream track:\n    ConstrainDOMString videoKind;\n};"
+    },
+    {
+      "spec": {
+        "title": "Screen Capture",
+        "url": "https://www.w3.org/TR/screen-capture/"
+      },
+      "fragment": "partial dictionary MediaTrackConstraintSet {\n  ConstrainDOMString displaySurface;\n  ConstrainBoolean logicalSurface;\n  ConstrainDOMString cursor;\n  ConstrainBoolean restrictOwnAudio;\n  ConstrainBoolean suppressLocalAudioPlayback;\n};"
+    }
+  ],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/mediacapture-streams/": [
+      {
+        "id": "dom-mediatrackconstraintset",
+        "href": "https://w3c.github.io/mediacapture-main/#dom-mediatrackconstraintset",
+        "linkingText": [
+          "MediaTrackConstraintSet"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "media-track-constraints",
+          "href": "https://w3c.github.io/mediacapture-main/#media-track-constraints",
+          "title": "MediaTrackConstraints",
+          "number": "4.3.6"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-mediatrackconstraintset-width",
+        "href": "https://w3c.github.io/mediacapture-main/#dom-mediatrackconstraintset-width",
+        "linkingText": [
+          "width"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MediaTrackConstraintSet"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-mediatrackconstraintset-members",
+          "href": "https://w3c.github.io/mediacapture-main/#dictionary-mediatrackconstraintset-members",
+          "title": "Dictionary MediaTrackConstraintSet Members"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediatrackconstraintset-height",
+        "href": "https://w3c.github.io/mediacapture-main/#dom-mediatrackconstraintset-height",
+        "linkingText": [
+          "height"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MediaTrackConstraintSet"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-mediatrackconstraintset-members",
+          "href": "https://w3c.github.io/mediacapture-main/#dictionary-mediatrackconstraintset-members",
+          "title": "Dictionary MediaTrackConstraintSet Members"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediatrackconstraintset-aspectratio",
+        "href": "https://w3c.github.io/mediacapture-main/#dom-mediatrackconstraintset-aspectratio",
+        "linkingText": [
+          "aspectRatio"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MediaTrackConstraintSet"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-mediatrackconstraintset-members",
+          "href": "https://w3c.github.io/mediacapture-main/#dictionary-mediatrackconstraintset-members",
+          "title": "Dictionary MediaTrackConstraintSet Members"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediatrackconstraintset-framerate",
+        "href": "https://w3c.github.io/mediacapture-main/#dom-mediatrackconstraintset-framerate",
+        "linkingText": [
+          "frameRate"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MediaTrackConstraintSet"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-mediatrackconstraintset-members",
+          "href": "https://w3c.github.io/mediacapture-main/#dictionary-mediatrackconstraintset-members",
+          "title": "Dictionary MediaTrackConstraintSet Members"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediatrackconstraintset-facingmode",
+        "href": "https://w3c.github.io/mediacapture-main/#dom-mediatrackconstraintset-facingmode",
+        "linkingText": [
+          "facingMode"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MediaTrackConstraintSet"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-mediatrackconstraintset-members",
+          "href": "https://w3c.github.io/mediacapture-main/#dictionary-mediatrackconstraintset-members",
+          "title": "Dictionary MediaTrackConstraintSet Members"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediatrackconstraintset-resizemode",
+        "href": "https://w3c.github.io/mediacapture-main/#dom-mediatrackconstraintset-resizemode",
+        "linkingText": [
+          "resizeMode"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MediaTrackConstraintSet"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-mediatrackconstraintset-members",
+          "href": "https://w3c.github.io/mediacapture-main/#dictionary-mediatrackconstraintset-members",
+          "title": "Dictionary MediaTrackConstraintSet Members"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediatrackconstraintset-samplerate",
+        "href": "https://w3c.github.io/mediacapture-main/#dom-mediatrackconstraintset-samplerate",
+        "linkingText": [
+          "sampleRate"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MediaTrackConstraintSet"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-mediatrackconstraintset-members",
+          "href": "https://w3c.github.io/mediacapture-main/#dictionary-mediatrackconstraintset-members",
+          "title": "Dictionary MediaTrackConstraintSet Members"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediatrackconstraintset-samplesize",
+        "href": "https://w3c.github.io/mediacapture-main/#dom-mediatrackconstraintset-samplesize",
+        "linkingText": [
+          "sampleSize"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MediaTrackConstraintSet"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-mediatrackconstraintset-members",
+          "href": "https://w3c.github.io/mediacapture-main/#dictionary-mediatrackconstraintset-members",
+          "title": "Dictionary MediaTrackConstraintSet Members"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediatrackconstraintset-echocancellation",
+        "href": "https://w3c.github.io/mediacapture-main/#dom-mediatrackconstraintset-echocancellation",
+        "linkingText": [
+          "echoCancellation"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MediaTrackConstraintSet"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-mediatrackconstraintset-members",
+          "href": "https://w3c.github.io/mediacapture-main/#dictionary-mediatrackconstraintset-members",
+          "title": "Dictionary MediaTrackConstraintSet Members"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediatrackconstraintset-autogaincontrol",
+        "href": "https://w3c.github.io/mediacapture-main/#dom-mediatrackconstraintset-autogaincontrol",
+        "linkingText": [
+          "autoGainControl"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MediaTrackConstraintSet"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-mediatrackconstraintset-members",
+          "href": "https://w3c.github.io/mediacapture-main/#dictionary-mediatrackconstraintset-members",
+          "title": "Dictionary MediaTrackConstraintSet Members"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediatrackconstraintset-noisesuppression",
+        "href": "https://w3c.github.io/mediacapture-main/#dom-mediatrackconstraintset-noisesuppression",
+        "linkingText": [
+          "noiseSuppression"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MediaTrackConstraintSet"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-mediatrackconstraintset-members",
+          "href": "https://w3c.github.io/mediacapture-main/#dictionary-mediatrackconstraintset-members",
+          "title": "Dictionary MediaTrackConstraintSet Members"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediatrackconstraintset-latency",
+        "href": "https://w3c.github.io/mediacapture-main/#dom-mediatrackconstraintset-latency",
+        "linkingText": [
+          "latency"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MediaTrackConstraintSet"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-mediatrackconstraintset-members",
+          "href": "https://w3c.github.io/mediacapture-main/#dictionary-mediatrackconstraintset-members",
+          "title": "Dictionary MediaTrackConstraintSet Members"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediatrackconstraintset-channelcount",
+        "href": "https://w3c.github.io/mediacapture-main/#dom-mediatrackconstraintset-channelcount",
+        "linkingText": [
+          "channelCount"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MediaTrackConstraintSet"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-mediatrackconstraintset-members",
+          "href": "https://w3c.github.io/mediacapture-main/#dictionary-mediatrackconstraintset-members",
+          "title": "Dictionary MediaTrackConstraintSet Members"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediatrackconstraintset-deviceid",
+        "href": "https://w3c.github.io/mediacapture-main/#dom-mediatrackconstraintset-deviceid",
+        "linkingText": [
+          "deviceId"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MediaTrackConstraintSet"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-mediatrackconstraintset-members",
+          "href": "https://w3c.github.io/mediacapture-main/#dictionary-mediatrackconstraintset-members",
+          "title": "Dictionary MediaTrackConstraintSet Members"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediatrackconstraintset-groupid",
+        "href": "https://w3c.github.io/mediacapture-main/#dom-mediatrackconstraintset-groupid",
+        "linkingText": [
+          "groupId"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MediaTrackConstraintSet"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-mediatrackconstraintset-members",
+          "href": "https://w3c.github.io/mediacapture-main/#dictionary-mediatrackconstraintset-members",
+          "title": "Dictionary MediaTrackConstraintSet Members"
+        },
+        "definedIn": "dt"
+      }
+    ],
+    "https://www.w3.org/TR/image-capture/": [
+      {
+        "id": "dom-mediatrackconstraintset-whitebalancemode",
+        "href": "https://w3c.github.io/mediacapture-image/#dom-mediatrackconstraintset-whitebalancemode",
+        "linkingText": [
+          "whiteBalanceMode"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MediaTrackConstraintSet"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "mediatrackconstraintset-members",
+          "href": "https://w3c.github.io/mediacapture-image/#mediatrackconstraintset-members",
+          "title": "Members",
+          "number": "9.3.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediatrackconstraintset-exposuremode",
+        "href": "https://w3c.github.io/mediacapture-image/#dom-mediatrackconstraintset-exposuremode",
+        "linkingText": [
+          "exposureMode"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MediaTrackConstraintSet"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "mediatrackconstraintset-members",
+          "href": "https://w3c.github.io/mediacapture-image/#mediatrackconstraintset-members",
+          "title": "Members",
+          "number": "9.3.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediatrackconstraintset-focusmode",
+        "href": "https://w3c.github.io/mediacapture-image/#dom-mediatrackconstraintset-focusmode",
+        "linkingText": [
+          "focusMode"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MediaTrackConstraintSet"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "mediatrackconstraintset-members",
+          "href": "https://w3c.github.io/mediacapture-image/#mediatrackconstraintset-members",
+          "title": "Members",
+          "number": "9.3.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediatrackconstraintset-pointsofinterest",
+        "href": "https://w3c.github.io/mediacapture-image/#dom-mediatrackconstraintset-pointsofinterest",
+        "linkingText": [
+          "pointsOfInterest"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MediaTrackConstraintSet"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "mediatrackconstraintset-members",
+          "href": "https://w3c.github.io/mediacapture-image/#mediatrackconstraintset-members",
+          "title": "Members",
+          "number": "9.3.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediatrackconstraintset-exposurecompensation",
+        "href": "https://w3c.github.io/mediacapture-image/#dom-mediatrackconstraintset-exposurecompensation",
+        "linkingText": [
+          "exposureCompensation"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MediaTrackConstraintSet"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "mediatrackconstraintset-members",
+          "href": "https://w3c.github.io/mediacapture-image/#mediatrackconstraintset-members",
+          "title": "Members",
+          "number": "9.3.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediatrackconstraintset-exposuretime",
+        "href": "https://w3c.github.io/mediacapture-image/#dom-mediatrackconstraintset-exposuretime",
+        "linkingText": [
+          "exposureTime"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MediaTrackConstraintSet"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "mediatrackconstraintset-members",
+          "href": "https://w3c.github.io/mediacapture-image/#mediatrackconstraintset-members",
+          "title": "Members",
+          "number": "9.3.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediatrackconstraintset-colortemperature",
+        "href": "https://w3c.github.io/mediacapture-image/#dom-mediatrackconstraintset-colortemperature",
+        "linkingText": [
+          "colorTemperature"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MediaTrackConstraintSet"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "mediatrackconstraintset-members",
+          "href": "https://w3c.github.io/mediacapture-image/#mediatrackconstraintset-members",
+          "title": "Members",
+          "number": "9.3.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediatrackconstraintset-iso",
+        "href": "https://w3c.github.io/mediacapture-image/#dom-mediatrackconstraintset-iso",
+        "linkingText": [
+          "iso"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MediaTrackConstraintSet"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "mediatrackconstraintset-members",
+          "href": "https://w3c.github.io/mediacapture-image/#mediatrackconstraintset-members",
+          "title": "Members",
+          "number": "9.3.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediatrackconstraintset-brightness",
+        "href": "https://w3c.github.io/mediacapture-image/#dom-mediatrackconstraintset-brightness",
+        "linkingText": [
+          "brightness"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MediaTrackConstraintSet"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "mediatrackconstraintset-members",
+          "href": "https://w3c.github.io/mediacapture-image/#mediatrackconstraintset-members",
+          "title": "Members",
+          "number": "9.3.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediatrackconstraintset-contrast",
+        "href": "https://w3c.github.io/mediacapture-image/#dom-mediatrackconstraintset-contrast",
+        "linkingText": [
+          "contrast"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MediaTrackConstraintSet"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "mediatrackconstraintset-members",
+          "href": "https://w3c.github.io/mediacapture-image/#mediatrackconstraintset-members",
+          "title": "Members",
+          "number": "9.3.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediatrackconstraintset-saturation",
+        "href": "https://w3c.github.io/mediacapture-image/#dom-mediatrackconstraintset-saturation",
+        "linkingText": [
+          "saturation"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MediaTrackConstraintSet"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "mediatrackconstraintset-members",
+          "href": "https://w3c.github.io/mediacapture-image/#mediatrackconstraintset-members",
+          "title": "Members",
+          "number": "9.3.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediatrackconstraintset-sharpness",
+        "href": "https://w3c.github.io/mediacapture-image/#dom-mediatrackconstraintset-sharpness",
+        "linkingText": [
+          "sharpness"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MediaTrackConstraintSet"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "mediatrackconstraintset-members",
+          "href": "https://w3c.github.io/mediacapture-image/#mediatrackconstraintset-members",
+          "title": "Members",
+          "number": "9.3.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediatrackconstraintset-focusdistance",
+        "href": "https://w3c.github.io/mediacapture-image/#dom-mediatrackconstraintset-focusdistance",
+        "linkingText": [
+          "focusDistance"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MediaTrackConstraintSet"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "mediatrackconstraintset-members",
+          "href": "https://w3c.github.io/mediacapture-image/#mediatrackconstraintset-members",
+          "title": "Members",
+          "number": "9.3.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediatrackconstraintset-pan",
+        "href": "https://w3c.github.io/mediacapture-image/#dom-mediatrackconstraintset-pan",
+        "linkingText": [
+          "pan"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MediaTrackConstraintSet"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "mediatrackconstraintset-members",
+          "href": "https://w3c.github.io/mediacapture-image/#mediatrackconstraintset-members",
+          "title": "Members",
+          "number": "9.3.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediatrackconstraintset-tilt",
+        "href": "https://w3c.github.io/mediacapture-image/#dom-mediatrackconstraintset-tilt",
+        "linkingText": [
+          "tilt"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MediaTrackConstraintSet"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "mediatrackconstraintset-members",
+          "href": "https://w3c.github.io/mediacapture-image/#mediatrackconstraintset-members",
+          "title": "Members",
+          "number": "9.3.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediatrackconstraintset-zoom",
+        "href": "https://w3c.github.io/mediacapture-image/#dom-mediatrackconstraintset-zoom",
+        "linkingText": [
+          "zoom"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MediaTrackConstraintSet"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "mediatrackconstraintset-members",
+          "href": "https://w3c.github.io/mediacapture-image/#mediatrackconstraintset-members",
+          "title": "Members",
+          "number": "9.3.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediatrackconstraintset-torch",
+        "href": "https://w3c.github.io/mediacapture-image/#dom-mediatrackconstraintset-torch",
+        "linkingText": [
+          "torch"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MediaTrackConstraintSet"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "mediatrackconstraintset-members",
+          "href": "https://w3c.github.io/mediacapture-image/#mediatrackconstraintset-members",
+          "title": "Members",
+          "number": "9.3.1"
+        },
+        "definedIn": "dt"
+      }
+    ],
+    "https://www.w3.org/TR/mediacapture-depth/": [
+      {
+        "id": "dom-mediatrackconstraintset-videokind",
+        "href": "https://w3c.github.io/mediacapture-depth/#dom-mediatrackconstraintset-videokind",
+        "linkingText": [
+          "videoKind"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MediaTrackConstraintSet"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "def-constraint-videoKind",
+          "href": "https://w3c.github.io/mediacapture-depth/#def-constraint-videoKind",
+          "title": "Video kind constrainable property",
+          "number": "6.4.1"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://www.w3.org/TR/screen-capture/": [
+      {
+        "id": "dom-mediatrackconstraintset-displaysurface",
+        "href": "https://w3c.github.io/mediacapture-screen-share/#dom-mediatrackconstraintset-displaysurface",
+        "linkingText": [
+          "displaySurface"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MediaTrackConstraintSet"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "extensions-to-mediatrackconstraintset",
+          "href": "https://w3c.github.io/mediacapture-screen-share/#extensions-to-mediatrackconstraintset",
+          "title": "Extensions to MediaTrackConstraintSet",
+          "number": "5.4.4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediatrackconstraintset-logicalsurface",
+        "href": "https://w3c.github.io/mediacapture-screen-share/#dom-mediatrackconstraintset-logicalsurface",
+        "linkingText": [
+          "logicalSurface"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MediaTrackConstraintSet"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "extensions-to-mediatrackconstraintset",
+          "href": "https://w3c.github.io/mediacapture-screen-share/#extensions-to-mediatrackconstraintset",
+          "title": "Extensions to MediaTrackConstraintSet",
+          "number": "5.4.4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediatrackconstraintset-cursor",
+        "href": "https://w3c.github.io/mediacapture-screen-share/#dom-mediatrackconstraintset-cursor",
+        "linkingText": [
+          "cursor"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MediaTrackConstraintSet"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "extensions-to-mediatrackconstraintset",
+          "href": "https://w3c.github.io/mediacapture-screen-share/#extensions-to-mediatrackconstraintset",
+          "title": "Extensions to MediaTrackConstraintSet",
+          "number": "5.4.4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediatrackconstraintset-restrictownaudio",
+        "href": "https://w3c.github.io/mediacapture-screen-share/#dom-mediatrackconstraintset-restrictownaudio",
+        "linkingText": [
+          "restrictOwnAudio"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MediaTrackConstraintSet"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "extensions-to-mediatrackconstraintset",
+          "href": "https://w3c.github.io/mediacapture-screen-share/#extensions-to-mediatrackconstraintset",
+          "title": "Extensions to MediaTrackConstraintSet",
+          "number": "5.4.4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediatrackconstraintset-suppresslocalaudioplayback",
+        "href": "https://w3c.github.io/mediacapture-screen-share/#dom-mediatrackconstraintset-suppresslocalaudioplayback",
+        "linkingText": [
+          "suppressLocalAudioPlayback"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MediaTrackConstraintSet"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "extensions-to-mediatrackconstraintset",
+          "href": "https://w3c.github.io/mediacapture-screen-share/#extensions-to-mediatrackconstraintset",
+          "title": "Extensions to MediaTrackConstraintSet",
+          "number": "5.4.4"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

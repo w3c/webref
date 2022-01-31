@@ -1,0 +1,178 @@
+{
+  "name": "MediaQueryListEventInit",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "CSSOM View Module",
+      "url": "https://www.w3.org/TR/cssom-view-1/"
+    },
+    "fragment": "dictionary MediaQueryListEventInit : EventInit {\n  CSSOMString media = \"\";\n  boolean matches = false;\n};",
+    "href": "https://drafts.csswg.org/cssom-view/#dictdef-mediaquerylisteventinit"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "EventInit",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "dictionary EventInit {\n  boolean bubbles = false;\n  boolean cancelable = false;\n  boolean composed = false;\n};",
+      "href": "https://dom.spec.whatwg.org/#dictdef-eventinit"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/cssom-view-1/": [
+      {
+        "id": "dictdef-mediaquerylisteventinit",
+        "href": "https://drafts.csswg.org/cssom-view/#dictdef-mediaquerylisteventinit",
+        "linkingText": [
+          "MediaQueryListEventInit"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-mediaquerylist-interface",
+          "href": "https://drafts.csswg.org/cssom-view/#the-mediaquerylist-interface",
+          "title": "The MediaQueryList Interface",
+          "number": "4.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mediaquerylisteventinit-media",
+        "href": "https://drafts.csswg.org/cssom-view/#dom-mediaquerylisteventinit-media",
+        "linkingText": [
+          "media"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MediaQueryListEventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-mediaquerylist-interface",
+          "href": "https://drafts.csswg.org/cssom-view/#the-mediaquerylist-interface",
+          "title": "The MediaQueryList Interface",
+          "number": "4.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mediaquerylisteventinit-matches",
+        "href": "https://drafts.csswg.org/cssom-view/#dom-mediaquerylisteventinit-matches",
+        "linkingText": [
+          "matches"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "MediaQueryListEventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-mediaquerylist-interface",
+          "href": "https://drafts.csswg.org/cssom-view/#the-mediaquerylist-interface",
+          "title": "The MediaQueryList Interface",
+          "number": "4.2"
+        },
+        "definedIn": "pre"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "dictdef-eventinit",
+        "href": "https://dom.spec.whatwg.org/#dictdef-eventinit",
+        "linkingText": [
+          "EventInit"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventinit-bubbles",
+        "href": "https://dom.spec.whatwg.org/#dom-eventinit-bubbles",
+        "linkingText": [
+          "bubbles"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventinit-cancelable",
+        "href": "https://dom.spec.whatwg.org/#dom-eventinit-cancelable",
+        "linkingText": [
+          "cancelable"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventinit-composed",
+        "href": "https://dom.spec.whatwg.org/#dom-eventinit-composed",
+        "linkingText": [
+          "composed"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

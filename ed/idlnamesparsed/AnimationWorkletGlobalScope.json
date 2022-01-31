@@ -1,0 +1,94 @@
+{
+  "name": "AnimationWorkletGlobalScope",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "CSS Animation Worklet API",
+      "url": "https://www.w3.org/TR/css-animation-worklet-1/"
+    },
+    "fragment": "[ Global=(Worklet,AnimationWorklet), Exposed=AnimationWorklet ]\ninterface AnimationWorkletGlobalScope : WorkletGlobalScope {\n    undefined registerAnimator(DOMString name, AnimatorInstanceConstructor animatorCtor);\n};",
+    "href": "https://drafts.css-houdini.org/css-animationworklet-1/#animationworkletglobalscope"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "WorkletGlobalScope",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "HTML Standard",
+        "url": "https://html.spec.whatwg.org/multipage/"
+      },
+      "fragment": "[Exposed=Worklet, SecureContext]\ninterface WorkletGlobalScope {};",
+      "href": "https://html.spec.whatwg.org/multipage/worklets.html#workletglobalscope"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/css-animation-worklet-1/": [
+      {
+        "id": "animationworkletglobalscope",
+        "href": "https://drafts.css-houdini.org/css-animationworklet-1/#animationworkletglobalscope",
+        "linkingText": [
+          "AnimationWorkletGlobalScope"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "animation-worklet-desc",
+          "href": "https://drafts.css-houdini.org/css-animationworklet-1/#animation-worklet-desc",
+          "title": "Animation Worklet",
+          "number": "2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-animationworkletglobalscope-registeranimator",
+        "href": "https://drafts.css-houdini.org/css-animationworklet-1/#dom-animationworkletglobalscope-registeranimator",
+        "linkingText": [
+          "registerAnimator(name, animatorCtor)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "AnimationWorkletGlobalScope"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "registering-animator-definition",
+          "href": "https://drafts.css-houdini.org/css-animationworklet-1/#registering-animator-definition",
+          "title": "Registering an Animator Definition",
+          "number": "3.4"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://html.spec.whatwg.org/multipage/": [
+      {
+        "id": "workletglobalscope",
+        "href": "https://html.spec.whatwg.org/multipage/worklets.html#workletglobalscope",
+        "linkingText": [
+          "WorkletGlobalScope"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "worklets-global",
+          "href": "https://html.spec.whatwg.org/multipage/worklets.html#worklets-global",
+          "title": "The global scope",
+          "number": "11.3.1"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

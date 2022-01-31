@@ -1,0 +1,108 @@
+{
+  "name": "RTCIceParameters",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
+      "url": "https://www.w3.org/TR/webrtc/"
+    },
+    "fragment": "dictionary RTCIceParameters {\n  DOMString usernameFragment;\n  DOMString password;\n};",
+    "href": "https://w3c.github.io/webrtc-pc/#dom-rtciceparameters"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "IceTransport Extensions for WebRTC",
+        "url": "https://w3c.github.io/webrtc-ice/"
+      },
+      "fragment": "partial dictionary RTCIceParameters {\n             boolean   iceLite;\n};"
+    }
+  ],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webrtc/": [
+      {
+        "id": "dom-rtciceparameters",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtciceparameters",
+        "linkingText": [
+          "RTCIceParameters"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "rtciceparameters",
+          "href": "https://w3c.github.io/webrtc-pc/#rtciceparameters",
+          "title": "RTCIceParameters Dictionary",
+          "number": "5.6.1"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-rtciceparameters-usernamefragment",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtciceparameters-usernamefragment",
+        "linkingText": [
+          "usernameFragment"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RTCIceParameters"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-rtciceparameters-members",
+          "href": "https://w3c.github.io/webrtc-pc/#dictionary-rtciceparameters-members",
+          "title": "Dictionary RTCIceParameters Members"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-rtciceparameters-password",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtciceparameters-password",
+        "linkingText": [
+          "password"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RTCIceParameters"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-rtciceparameters-members",
+          "href": "https://w3c.github.io/webrtc-pc/#dictionary-rtciceparameters-members",
+          "title": "Dictionary RTCIceParameters Members"
+        },
+        "definedIn": "dt"
+      }
+    ],
+    "https://w3c.github.io/webrtc-ice/": [
+      {
+        "id": "dom-rtciceparameters-icelite",
+        "href": "https://w3c.github.io/webrtc-ice/#dom-rtciceparameters-icelite",
+        "linkingText": [
+          "iceLite"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RTCIceParameters"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "dictionary-rtciceparameters-members",
+          "href": "https://w3c.github.io/webrtc-ice/#dictionary-rtciceparameters-members",
+          "title": "Dictionary RTCIceParameters Members"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

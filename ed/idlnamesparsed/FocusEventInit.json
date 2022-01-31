@@ -1,0 +1,291 @@
+{
+  "name": "FocusEventInit",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "UI Events",
+      "url": "https://www.w3.org/TR/uievents/"
+    },
+    "fragment": "dictionary FocusEventInit : UIEventInit {\n  EventTarget? relatedTarget = null;\n};",
+    "href": "https://w3c.github.io/uievents/#dictdef-focuseventinit"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "UIEventInit",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "UI Events",
+        "url": "https://www.w3.org/TR/uievents/"
+      },
+      "fragment": "dictionary UIEventInit : EventInit {\n  Window? view = null;\n  long detail = 0;\n};",
+      "href": "https://w3c.github.io/uievents/#dictdef-uieventinit"
+    },
+    "extended": [
+      {
+        "spec": {
+          "title": "Input Device Capabilities",
+          "url": "https://wicg.github.io/input-device-capabilities/"
+        },
+        "fragment": "partial dictionary UIEventInit {\n  InputDeviceCapabilities? sourceCapabilities = null;\n};"
+      },
+      {
+        "spec": {
+          "title": "UI Events",
+          "url": "https://www.w3.org/TR/uievents/"
+        },
+        "fragment": "partial dictionary UIEventInit {\n  unsigned long which = 0;\n};"
+      }
+    ],
+    "inheritance": {
+      "name": "EventInit",
+      "type": "dictionary",
+      "defined": {
+        "spec": {
+          "title": "DOM Standard",
+          "url": "https://dom.spec.whatwg.org/"
+        },
+        "fragment": "dictionary EventInit {\n  boolean bubbles = false;\n  boolean cancelable = false;\n  boolean composed = false;\n};",
+        "href": "https://dom.spec.whatwg.org/#dictdef-eventinit"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/uievents/": [
+      {
+        "id": "dictdef-focuseventinit",
+        "href": "https://w3c.github.io/uievents/#dictdef-focuseventinit",
+        "linkingText": [
+          "FocusEventInit"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "idl-focuseventinit",
+          "href": "https://w3c.github.io/uievents/#idl-focuseventinit",
+          "title": "FocusEventInit",
+          "number": "5.2.1.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-focuseventinit-relatedtarget",
+        "href": "https://w3c.github.io/uievents/#dom-focuseventinit-relatedtarget",
+        "linkingText": [
+          "relatedTarget"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "FocusEventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "idl-focuseventinit",
+          "href": "https://w3c.github.io/uievents/#idl-focuseventinit",
+          "title": "FocusEventInit",
+          "number": "5.2.1.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dictdef-uieventinit",
+        "href": "https://w3c.github.io/uievents/#dictdef-uieventinit",
+        "linkingText": [
+          "UIEventInit"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "idl-uieventinit",
+          "href": "https://w3c.github.io/uievents/#idl-uieventinit",
+          "title": "UIEventInit",
+          "number": "5.1.1.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-uieventinit-view",
+        "href": "https://w3c.github.io/uievents/#dom-uieventinit-view",
+        "linkingText": [
+          "view"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "UIEventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "idl-uieventinit",
+          "href": "https://w3c.github.io/uievents/#idl-uieventinit",
+          "title": "UIEventInit",
+          "number": "5.1.1.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-uieventinit-detail",
+        "href": "https://w3c.github.io/uievents/#dom-uieventinit-detail",
+        "linkingText": [
+          "detail"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "UIEventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "idl-uieventinit",
+          "href": "https://w3c.github.io/uievents/#idl-uieventinit",
+          "title": "UIEventInit",
+          "number": "5.1.1.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-uieventinit-which",
+        "href": "https://w3c.github.io/uievents/#dom-uieventinit-which",
+        "linkingText": [
+          "which"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "UIEventInit"
+        ],
+        "access": "private",
+        "informative": false,
+        "heading": {
+          "id": "legacy-dictionary-UIEventInit",
+          "href": "https://w3c.github.io/uievents/#legacy-dictionary-UIEventInit",
+          "title": "Interface UIEventInit (supplemental)",
+          "number": "8.1.2"
+        },
+        "definedIn": "dt"
+      }
+    ],
+    "https://wicg.github.io/input-device-capabilities/": [
+      {
+        "id": "dom-uieventinit-sourcecapabilities",
+        "href": "https://wicg.github.io/input-device-capabilities/#dom-uieventinit-sourcecapabilities",
+        "linkingText": [
+          "sourceCapabilities"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "UIEventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "extensions-to-the-uievent-interface-and-uieventinit-dictionary",
+          "href": "https://wicg.github.io/input-device-capabilities/#extensions-to-the-uievent-interface-and-uieventinit-dictionary",
+          "title": "Extensions to the UIEvent interface and UIEventInit dictionary",
+          "number": "4"
+        },
+        "definedIn": "pre"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "dictdef-eventinit",
+        "href": "https://dom.spec.whatwg.org/#dictdef-eventinit",
+        "linkingText": [
+          "EventInit"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventinit-bubbles",
+        "href": "https://dom.spec.whatwg.org/#dom-eventinit-bubbles",
+        "linkingText": [
+          "bubbles"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventinit-cancelable",
+        "href": "https://dom.spec.whatwg.org/#dom-eventinit-cancelable",
+        "linkingText": [
+          "cancelable"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventinit-composed",
+        "href": "https://dom.spec.whatwg.org/#dom-eventinit-composed",
+        "linkingText": [
+          "composed"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

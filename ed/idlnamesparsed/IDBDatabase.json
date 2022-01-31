@@ -1,0 +1,384 @@
+{
+  "name": "IDBDatabase",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Indexed Database API 3.0",
+      "url": "https://www.w3.org/TR/IndexedDB-3/"
+    },
+    "fragment": "[Exposed=(Window,Worker)]\ninterface IDBDatabase : EventTarget {\n  readonly attribute DOMString name;\n  readonly attribute unsigned long long version;\n  readonly attribute DOMStringList objectStoreNames;\n\n  [NewObject] IDBTransaction transaction((DOMString or sequence<DOMString>) storeNames,\n                                         optional IDBTransactionMode mode = \"readonly\",\n                                         optional IDBTransactionOptions options = {});\n  undefined close();\n\n  [NewObject] IDBObjectStore createObjectStore(\n    DOMString name,\n    optional IDBObjectStoreParameters options = {});\n  undefined deleteObjectStore(DOMString name);\n\n  // Event handlers:\n  attribute EventHandler onabort;\n  attribute EventHandler onclose;\n  attribute EventHandler onerror;\n  attribute EventHandler onversionchange;\n};",
+    "href": "https://w3c.github.io/IndexedDB/#idbdatabase"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "EventTarget",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=*]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+      "href": "https://dom.spec.whatwg.org/#eventtarget"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/IndexedDB-3/": [
+      {
+        "id": "idbdatabase",
+        "href": "https://w3c.github.io/IndexedDB/#idbdatabase",
+        "linkingText": [
+          "IDBDatabase"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "database-interface",
+          "href": "https://w3c.github.io/IndexedDB/#database-interface",
+          "title": "The IDBDatabase interface",
+          "number": "4.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-idbdatabase-name",
+        "href": "https://w3c.github.io/IndexedDB/#dom-idbdatabase-name",
+        "linkingText": [
+          "name"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "IDBDatabase"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "database-interface",
+          "href": "https://w3c.github.io/IndexedDB/#database-interface",
+          "title": "The IDBDatabase interface",
+          "number": "4.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-idbdatabase-version",
+        "href": "https://w3c.github.io/IndexedDB/#dom-idbdatabase-version",
+        "linkingText": [
+          "version"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "IDBDatabase"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "title",
+          "href": "https://w3c.github.io/IndexedDB/#title",
+          "title": "Indexed Database API 3.0"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-idbdatabase-objectstorenames",
+        "href": "https://w3c.github.io/IndexedDB/#dom-idbdatabase-objectstorenames",
+        "linkingText": [
+          "objectStoreNames"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "IDBDatabase"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "title",
+          "href": "https://w3c.github.io/IndexedDB/#title",
+          "title": "Indexed Database API 3.0"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-idbdatabase-transaction",
+        "href": "https://w3c.github.io/IndexedDB/#dom-idbdatabase-transaction",
+        "linkingText": [
+          "transaction(storeNames, mode, options)",
+          "transaction(storeNames, mode)",
+          "transaction(storeNames)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "IDBDatabase"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "title",
+          "href": "https://w3c.github.io/IndexedDB/#title",
+          "title": "Indexed Database API 3.0"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-idbdatabase-close",
+        "href": "https://w3c.github.io/IndexedDB/#dom-idbdatabase-close",
+        "linkingText": [
+          "close()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "IDBDatabase"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "title",
+          "href": "https://w3c.github.io/IndexedDB/#title",
+          "title": "Indexed Database API 3.0"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-idbdatabase-createobjectstore",
+        "href": "https://w3c.github.io/IndexedDB/#dom-idbdatabase-createobjectstore",
+        "linkingText": [
+          "createObjectStore(name, options)",
+          "createObjectStore(name)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "IDBDatabase"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "title",
+          "href": "https://w3c.github.io/IndexedDB/#title",
+          "title": "Indexed Database API 3.0"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-idbdatabase-deleteobjectstore",
+        "href": "https://w3c.github.io/IndexedDB/#dom-idbdatabase-deleteobjectstore",
+        "linkingText": [
+          "deleteObjectStore(name)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "IDBDatabase"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "title",
+          "href": "https://w3c.github.io/IndexedDB/#title",
+          "title": "Indexed Database API 3.0"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-idbdatabase-onabort",
+        "href": "https://w3c.github.io/IndexedDB/#dom-idbdatabase-onabort",
+        "linkingText": [
+          "onabort"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "IDBDatabase"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "title",
+          "href": "https://w3c.github.io/IndexedDB/#title",
+          "title": "Indexed Database API 3.0"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-idbdatabase-onclose",
+        "href": "https://w3c.github.io/IndexedDB/#dom-idbdatabase-onclose",
+        "linkingText": [
+          "onclose"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "IDBDatabase"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "title",
+          "href": "https://w3c.github.io/IndexedDB/#title",
+          "title": "Indexed Database API 3.0"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-idbdatabase-onerror",
+        "href": "https://w3c.github.io/IndexedDB/#dom-idbdatabase-onerror",
+        "linkingText": [
+          "onerror"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "IDBDatabase"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "title",
+          "href": "https://w3c.github.io/IndexedDB/#title",
+          "title": "Indexed Database API 3.0"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-idbdatabase-onversionchange",
+        "href": "https://w3c.github.io/IndexedDB/#dom-idbdatabase-onversionchange",
+        "linkingText": [
+          "onversionchange"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "IDBDatabase"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "title",
+          "href": "https://w3c.github.io/IndexedDB/#title",
+          "title": "Indexed Database API 3.0"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "eventtarget",
+        "href": "https://dom.spec.whatwg.org/#eventtarget",
+        "linkingText": [
+          "EventTarget"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventtarget-eventtarget",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-eventtarget",
+        "linkingText": [
+          "EventTarget()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-addeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-addeventlistener",
+        "linkingText": [
+          "addEventListener(type, callback, options)",
+          "addEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-removeeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-removeeventlistener",
+        "linkingText": [
+          "removeEventListener(type, callback, options)",
+          "removeEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-dispatchevent",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-dispatchevent",
+        "linkingText": [
+          "dispatchEvent(event)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "name": "WritableStream",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Streams Standard",
+      "url": "https://streams.spec.whatwg.org/"
+    },
+    "fragment": "[Exposed=*, Transferable]\ninterface WritableStream {\n  constructor(optional object underlyingSink, optional QueuingStrategy strategy = {});\n\n  readonly attribute boolean locked;\n\n  Promise<undefined> abort(optional any reason);\n  Promise<undefined> close();\n  WritableStreamDefaultWriter getWriter();\n};",
+    "href": "https://streams.spec.whatwg.org/#writablestream"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://streams.spec.whatwg.org/": [
+      {
+        "id": "writablestream",
+        "href": "https://streams.spec.whatwg.org/#writablestream",
+        "linkingText": [
+          "WritableStream"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "ws-class-definition",
+          "href": "https://streams.spec.whatwg.org/#ws-class-definition",
+          "title": "Interface definition",
+          "number": "5.2.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "ws-constructor",
+        "href": "https://streams.spec.whatwg.org/#ws-constructor",
+        "linkingText": [
+          "WritableStream(underlyingSink, strategy)",
+          "constructor(underlyingSink, strategy)",
+          "WritableStream(underlyingSink)",
+          "constructor(underlyingSink)",
+          "WritableStream()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "WritableStream"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "ws-prototype",
+          "href": "https://streams.spec.whatwg.org/#ws-prototype",
+          "title": "Constructor, methods, and properties",
+          "number": "5.2.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "ws-locked",
+        "href": "https://streams.spec.whatwg.org/#ws-locked",
+        "linkingText": [
+          "locked"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "WritableStream"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "ws-prototype",
+          "href": "https://streams.spec.whatwg.org/#ws-prototype",
+          "title": "Constructor, methods, and properties",
+          "number": "5.2.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "ws-abort",
+        "href": "https://streams.spec.whatwg.org/#ws-abort",
+        "linkingText": [
+          "abort(reason)",
+          "abort()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "WritableStream"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "ws-prototype",
+          "href": "https://streams.spec.whatwg.org/#ws-prototype",
+          "title": "Constructor, methods, and properties",
+          "number": "5.2.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "ws-close",
+        "href": "https://streams.spec.whatwg.org/#ws-close",
+        "linkingText": [
+          "close()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "WritableStream"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "ws-prototype",
+          "href": "https://streams.spec.whatwg.org/#ws-prototype",
+          "title": "Constructor, methods, and properties",
+          "number": "5.2.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "ws-get-writer",
+        "href": "https://streams.spec.whatwg.org/#ws-get-writer",
+        "linkingText": [
+          "getWriter()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "WritableStream"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "ws-prototype",
+          "href": "https://streams.spec.whatwg.org/#ws-prototype",
+          "title": "Constructor, methods, and properties",
+          "number": "5.2.4"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

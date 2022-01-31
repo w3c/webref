@@ -1,0 +1,80 @@
+{
+  "name": "NavigatorContentUtils",
+  "type": "interface mixin",
+  "defined": {
+    "spec": {
+      "title": "HTML Standard",
+      "url": "https://html.spec.whatwg.org/multipage/"
+    },
+    "fragment": "interface mixin NavigatorContentUtils {\n  [SecureContext] undefined registerProtocolHandler(DOMString scheme, USVString url);\n  [SecureContext] undefined unregisterProtocolHandler(DOMString scheme, USVString url);\n};",
+    "href": "https://html.spec.whatwg.org/multipage/system-state.html#navigatorcontentutils"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://html.spec.whatwg.org/multipage/": [
+      {
+        "id": "navigatorcontentutils",
+        "href": "https://html.spec.whatwg.org/multipage/system-state.html#navigatorcontentutils",
+        "linkingText": [
+          "NavigatorContentUtils"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "custom-handlers",
+          "href": "https://html.spec.whatwg.org/multipage/system-state.html#custom-handlers",
+          "title": "Custom scheme handlers: the registerProtocolHandler() method",
+          "number": "8.9.1.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-navigator-registerprotocolhandler",
+        "href": "https://html.spec.whatwg.org/multipage/system-state.html#dom-navigator-registerprotocolhandler",
+        "linkingText": [
+          "registerProtocolHandler(scheme, url)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "NavigatorContentUtils"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "custom-handlers",
+          "href": "https://html.spec.whatwg.org/multipage/system-state.html#custom-handlers",
+          "title": "Custom scheme handlers: the registerProtocolHandler() method",
+          "number": "8.9.1.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-navigator-unregisterprotocolhandler",
+        "href": "https://html.spec.whatwg.org/multipage/system-state.html#dom-navigator-unregisterprotocolhandler",
+        "linkingText": [
+          "unregisterProtocolHandler(scheme, url)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "NavigatorContentUtils"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "custom-handlers",
+          "href": "https://html.spec.whatwg.org/multipage/system-state.html#custom-handlers",
+          "title": "Custom scheme handlers: the registerProtocolHandler() method",
+          "number": "8.9.1.4"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

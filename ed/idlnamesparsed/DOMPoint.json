@@ -1,0 +1,285 @@
+{
+  "name": "DOMPoint",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Geometry Interfaces Module Level 1",
+      "url": "https://www.w3.org/TR/geometry-1/"
+    },
+    "fragment": "[Exposed=(Window,Worker),\n Serializable,\n LegacyWindowAlias=SVGPoint]\ninterface DOMPoint : DOMPointReadOnly {\n    constructor(optional unrestricted double x = 0, optional unrestricted double y = 0,\n            optional unrestricted double z = 0, optional unrestricted double w = 1);\n\n    [NewObject] static DOMPoint fromPoint(optional DOMPointInit other = {});\n\n    inherit attribute unrestricted double x;\n    inherit attribute unrestricted double y;\n    inherit attribute unrestricted double z;\n    inherit attribute unrestricted double w;\n};",
+    "href": "https://drafts.fxtf.org/geometry/#dompoint"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "DOMPointReadOnly",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "Geometry Interfaces Module Level 1",
+        "url": "https://www.w3.org/TR/geometry-1/"
+      },
+      "fragment": "[Exposed=(Window,Worker),\n Serializable]\ninterface DOMPointReadOnly {\n    constructor(optional unrestricted double x = 0, optional unrestricted double y = 0,\n            optional unrestricted double z = 0, optional unrestricted double w = 1);\n\n    [NewObject] static DOMPointReadOnly fromPoint(optional DOMPointInit other = {});\n\n    readonly attribute unrestricted double x;\n    readonly attribute unrestricted double y;\n    readonly attribute unrestricted double z;\n    readonly attribute unrestricted double w;\n\n    [NewObject] DOMPoint matrixTransform(optional DOMMatrixInit matrix = {});\n\n    [Default] object toJSON();\n};",
+      "href": "https://drafts.fxtf.org/geometry/#dompointreadonly"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/geometry-1/": [
+      {
+        "id": "dompoint",
+        "href": "https://drafts.fxtf.org/geometry/#dompoint",
+        "linkingText": [
+          "DOMPoint"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "DOMPoint",
+          "href": "https://drafts.fxtf.org/geometry/#DOMPoint",
+          "title": "The DOMPoint interfaces",
+          "number": "2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-dompoint-dompoint",
+        "href": "https://drafts.fxtf.org/geometry/#dom-dompoint-dompoint",
+        "linkingText": [
+          "DOMPoint(x, y, z, w)",
+          "constructor(x, y, z, w)",
+          "DOMPoint(x, y, z)",
+          "constructor(x, y, z)",
+          "DOMPoint(x, y)",
+          "constructor(x, y)",
+          "DOMPoint(x)",
+          "constructor(x)",
+          "DOMPoint()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "DOMPoint"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "DOMPoint",
+          "href": "https://drafts.fxtf.org/geometry/#DOMPoint",
+          "title": "The DOMPoint interfaces",
+          "number": "2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-dompoint-frompoint",
+        "href": "https://drafts.fxtf.org/geometry/#dom-dompoint-frompoint",
+        "linkingText": [
+          "fromPoint(other)",
+          "fromPoint()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "DOMPoint"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "DOMPoint",
+          "href": "https://drafts.fxtf.org/geometry/#DOMPoint",
+          "title": "The DOMPoint interfaces",
+          "number": "2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-dompointreadonly-x",
+        "href": "https://drafts.fxtf.org/geometry/#dom-dompointreadonly-x",
+        "linkingText": [
+          "x"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "DOMPointReadOnly",
+          "DOMPoint"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "DOMPoint",
+          "href": "https://drafts.fxtf.org/geometry/#DOMPoint",
+          "title": "The DOMPoint interfaces",
+          "number": "2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-dompointreadonly-y",
+        "href": "https://drafts.fxtf.org/geometry/#dom-dompointreadonly-y",
+        "linkingText": [
+          "y"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "DOMPointReadOnly",
+          "DOMPoint"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "DOMPoint",
+          "href": "https://drafts.fxtf.org/geometry/#DOMPoint",
+          "title": "The DOMPoint interfaces",
+          "number": "2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-dompointreadonly-z",
+        "href": "https://drafts.fxtf.org/geometry/#dom-dompointreadonly-z",
+        "linkingText": [
+          "z"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "DOMPointReadOnly",
+          "DOMPoint"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "DOMPoint",
+          "href": "https://drafts.fxtf.org/geometry/#DOMPoint",
+          "title": "The DOMPoint interfaces",
+          "number": "2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-dompointreadonly-w",
+        "href": "https://drafts.fxtf.org/geometry/#dom-dompointreadonly-w",
+        "linkingText": [
+          "w"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "DOMPointReadOnly",
+          "DOMPoint"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "DOMPoint",
+          "href": "https://drafts.fxtf.org/geometry/#DOMPoint",
+          "title": "The DOMPoint interfaces",
+          "number": "2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dompointreadonly",
+        "href": "https://drafts.fxtf.org/geometry/#dompointreadonly",
+        "linkingText": [
+          "DOMPointReadOnly"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "DOMPoint",
+          "href": "https://drafts.fxtf.org/geometry/#DOMPoint",
+          "title": "The DOMPoint interfaces",
+          "number": "2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-dompointreadonly-dompointreadonly",
+        "href": "https://drafts.fxtf.org/geometry/#dom-dompointreadonly-dompointreadonly",
+        "linkingText": [
+          "DOMPointReadOnly(x, y, z, w)",
+          "constructor(x, y, z, w)",
+          "DOMPointReadOnly(x, y, z)",
+          "constructor(x, y, z)",
+          "DOMPointReadOnly(x, y)",
+          "constructor(x, y)",
+          "DOMPointReadOnly(x)",
+          "constructor(x)",
+          "DOMPointReadOnly()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "DOMPointReadOnly"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "DOMPoint",
+          "href": "https://drafts.fxtf.org/geometry/#DOMPoint",
+          "title": "The DOMPoint interfaces",
+          "number": "2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-dompointreadonly-frompoint",
+        "href": "https://drafts.fxtf.org/geometry/#dom-dompointreadonly-frompoint",
+        "linkingText": [
+          "fromPoint(other)",
+          "fromPoint()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "DOMPointReadOnly"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "DOMPoint",
+          "href": "https://drafts.fxtf.org/geometry/#DOMPoint",
+          "title": "The DOMPoint interfaces",
+          "number": "2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-dompointreadonly-matrixtransform",
+        "href": "https://drafts.fxtf.org/geometry/#dom-dompointreadonly-matrixtransform",
+        "linkingText": [
+          "matrixTransform(matrix)",
+          "matrixTransform()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "DOMPointReadOnly"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "DOMPoint",
+          "href": "https://drafts.fxtf.org/geometry/#DOMPoint",
+          "title": "The DOMPoint interfaces",
+          "number": "2"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

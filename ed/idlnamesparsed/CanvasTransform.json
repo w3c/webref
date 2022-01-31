@@ -1,0 +1,206 @@
+{
+  "name": "CanvasTransform",
+  "type": "interface mixin",
+  "defined": {
+    "spec": {
+      "title": "HTML Standard",
+      "url": "https://html.spec.whatwg.org/multipage/"
+    },
+    "fragment": "interface mixin CanvasTransform {\n  // transformations (default transform is the identity matrix)\n  undefined scale(unrestricted double x, unrestricted double y);\n  undefined rotate(unrestricted double angle);\n  undefined translate(unrestricted double x, unrestricted double y);\n  undefined transform(unrestricted double a, unrestricted double b, unrestricted double c, unrestricted double d, unrestricted double e, unrestricted double f);\n\n  [NewObject] DOMMatrix getTransform();\n  undefined setTransform(unrestricted double a, unrestricted double b, unrestricted double c, unrestricted double d, unrestricted double e, unrestricted double f);\n  undefined setTransform(optional DOMMatrix2DInit transform = {});\n  undefined resetTransform();\n\n};",
+    "href": "https://html.spec.whatwg.org/multipage/canvas.html#canvastransform"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://html.spec.whatwg.org/multipage/": [
+      {
+        "id": "canvastransform",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#canvastransform",
+        "linkingText": [
+          "CanvasTransform"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "2dcontext",
+          "href": "https://html.spec.whatwg.org/multipage/canvas.html#2dcontext",
+          "title": "The 2D rendering context",
+          "number": "4.12.5.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-context-2d-scale",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-scale",
+        "linkingText": [
+          "scale(x, y)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CanvasTransform"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "transformations",
+          "href": "https://html.spec.whatwg.org/multipage/canvas.html#transformations",
+          "title": "Transformations",
+          "number": "4.12.5.1.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-context-2d-rotate",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-rotate",
+        "linkingText": [
+          "rotate(angle)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CanvasTransform"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "transformations",
+          "href": "https://html.spec.whatwg.org/multipage/canvas.html#transformations",
+          "title": "Transformations",
+          "number": "4.12.5.1.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-context-2d-translate",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-translate",
+        "linkingText": [
+          "translate(x, y)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CanvasTransform"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "transformations",
+          "href": "https://html.spec.whatwg.org/multipage/canvas.html#transformations",
+          "title": "Transformations",
+          "number": "4.12.5.1.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-context-2d-transform",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-transform",
+        "linkingText": [
+          "transform(a, b, c, d, e, f)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CanvasTransform"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "transformations",
+          "href": "https://html.spec.whatwg.org/multipage/canvas.html#transformations",
+          "title": "Transformations",
+          "number": "4.12.5.1.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-context-2d-gettransform",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-gettransform",
+        "linkingText": [
+          "getTransform()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CanvasTransform"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "transformations",
+          "href": "https://html.spec.whatwg.org/multipage/canvas.html#transformations",
+          "title": "Transformations",
+          "number": "4.12.5.1.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-context-2d-settransform",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-settransform",
+        "linkingText": [
+          "setTransform(a, b, c, d, e, f)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CanvasTransform"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "transformations",
+          "href": "https://html.spec.whatwg.org/multipage/canvas.html#transformations",
+          "title": "Transformations",
+          "number": "4.12.5.1.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-context-2d-settransform-matrix",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-settransform-matrix",
+        "linkingText": [
+          "setTransform(transform)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CanvasTransform"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "transformations",
+          "href": "https://html.spec.whatwg.org/multipage/canvas.html#transformations",
+          "title": "Transformations",
+          "number": "4.12.5.1.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-context-2d-resettransform",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-resettransform",
+        "linkingText": [
+          "resetTransform()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CanvasTransform"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "transformations",
+          "href": "https://html.spec.whatwg.org/multipage/canvas.html#transformations",
+          "title": "Transformations",
+          "number": "4.12.5.1.7"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

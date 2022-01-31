@@ -1,0 +1,397 @@
+{
+  "name": "JsonWebKey",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Web Cryptography API",
+      "url": "https://www.w3.org/TR/WebCryptoAPI/"
+    },
+    "fragment": "dictionary JsonWebKey {\n  // The following fields are defined in Section 3.1 of JSON Web Key\n  DOMString kty;\n  DOMString use;\n  sequence<DOMString> key_ops;\n  DOMString alg;\n\n  // The following fields are defined in JSON Web Key Parameters Registration\n  boolean ext;\n\n  // The following fields are defined in Section 6 of JSON Web Algorithms\n  DOMString crv;\n  DOMString x;\n  DOMString y;\n  DOMString d;\n  DOMString n;\n  DOMString e;\n  DOMString p;\n  DOMString q;\n  DOMString dp;\n  DOMString dq;\n  DOMString qi;\n  sequence<RsaOtherPrimesInfo> oth;\n  DOMString k;\n};",
+    "href": "https://w3c.github.io/webcrypto/#dfn-JsonWebKey"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/WebCryptoAPI/": [
+      {
+        "id": "dfn-JsonWebKey",
+        "href": "https://w3c.github.io/webcrypto/#dfn-JsonWebKey",
+        "linkingText": [
+          "JsonWebKey"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "JsonWebKey-dictionary",
+          "href": "https://w3c.github.io/webcrypto/#JsonWebKey-dictionary",
+          "title": "15. JsonWebKey dictionary"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-jsonwebkey-kty",
+        "href": "https://w3c.github.io/webcrypto/#dom-jsonwebkey-kty",
+        "linkingText": [
+          "kty"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "JsonWebKey"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "JsonWebKey-dictionary",
+          "href": "https://w3c.github.io/webcrypto/#JsonWebKey-dictionary",
+          "title": "15. JsonWebKey dictionary"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-jsonwebkey-use",
+        "href": "https://w3c.github.io/webcrypto/#dom-jsonwebkey-use",
+        "linkingText": [
+          "use"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "JsonWebKey"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "JsonWebKey-dictionary",
+          "href": "https://w3c.github.io/webcrypto/#JsonWebKey-dictionary",
+          "title": "15. JsonWebKey dictionary"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-jsonwebkey-key_ops",
+        "href": "https://w3c.github.io/webcrypto/#dom-jsonwebkey-key_ops",
+        "linkingText": [
+          "key_ops"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "JsonWebKey"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "JsonWebKey-dictionary",
+          "href": "https://w3c.github.io/webcrypto/#JsonWebKey-dictionary",
+          "title": "15. JsonWebKey dictionary"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-jsonwebkey-alg",
+        "href": "https://w3c.github.io/webcrypto/#dom-jsonwebkey-alg",
+        "linkingText": [
+          "alg"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "JsonWebKey"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "JsonWebKey-dictionary",
+          "href": "https://w3c.github.io/webcrypto/#JsonWebKey-dictionary",
+          "title": "15. JsonWebKey dictionary"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-jsonwebkey-ext",
+        "href": "https://w3c.github.io/webcrypto/#dom-jsonwebkey-ext",
+        "linkingText": [
+          "ext"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "JsonWebKey"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "JsonWebKey-dictionary",
+          "href": "https://w3c.github.io/webcrypto/#JsonWebKey-dictionary",
+          "title": "15. JsonWebKey dictionary"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-jsonwebkey-crv",
+        "href": "https://w3c.github.io/webcrypto/#dom-jsonwebkey-crv",
+        "linkingText": [
+          "crv"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "JsonWebKey"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "JsonWebKey-dictionary",
+          "href": "https://w3c.github.io/webcrypto/#JsonWebKey-dictionary",
+          "title": "15. JsonWebKey dictionary"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-jsonwebkey-x",
+        "href": "https://w3c.github.io/webcrypto/#dom-jsonwebkey-x",
+        "linkingText": [
+          "x"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "JsonWebKey"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "JsonWebKey-dictionary",
+          "href": "https://w3c.github.io/webcrypto/#JsonWebKey-dictionary",
+          "title": "15. JsonWebKey dictionary"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-jsonwebkey-y",
+        "href": "https://w3c.github.io/webcrypto/#dom-jsonwebkey-y",
+        "linkingText": [
+          "y"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "JsonWebKey"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "JsonWebKey-dictionary",
+          "href": "https://w3c.github.io/webcrypto/#JsonWebKey-dictionary",
+          "title": "15. JsonWebKey dictionary"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-jsonwebkey-d",
+        "href": "https://w3c.github.io/webcrypto/#dom-jsonwebkey-d",
+        "linkingText": [
+          "d"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "JsonWebKey"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "JsonWebKey-dictionary",
+          "href": "https://w3c.github.io/webcrypto/#JsonWebKey-dictionary",
+          "title": "15. JsonWebKey dictionary"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-jsonwebkey-n",
+        "href": "https://w3c.github.io/webcrypto/#dom-jsonwebkey-n",
+        "linkingText": [
+          "n"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "JsonWebKey"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "JsonWebKey-dictionary",
+          "href": "https://w3c.github.io/webcrypto/#JsonWebKey-dictionary",
+          "title": "15. JsonWebKey dictionary"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-jsonwebkey-e",
+        "href": "https://w3c.github.io/webcrypto/#dom-jsonwebkey-e",
+        "linkingText": [
+          "e"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "JsonWebKey"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "JsonWebKey-dictionary",
+          "href": "https://w3c.github.io/webcrypto/#JsonWebKey-dictionary",
+          "title": "15. JsonWebKey dictionary"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-jsonwebkey-p",
+        "href": "https://w3c.github.io/webcrypto/#dom-jsonwebkey-p",
+        "linkingText": [
+          "p"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "JsonWebKey"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "JsonWebKey-dictionary",
+          "href": "https://w3c.github.io/webcrypto/#JsonWebKey-dictionary",
+          "title": "15. JsonWebKey dictionary"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-jsonwebkey-q",
+        "href": "https://w3c.github.io/webcrypto/#dom-jsonwebkey-q",
+        "linkingText": [
+          "q"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "JsonWebKey"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "JsonWebKey-dictionary",
+          "href": "https://w3c.github.io/webcrypto/#JsonWebKey-dictionary",
+          "title": "15. JsonWebKey dictionary"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-jsonwebkey-dp",
+        "href": "https://w3c.github.io/webcrypto/#dom-jsonwebkey-dp",
+        "linkingText": [
+          "dp"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "JsonWebKey"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "JsonWebKey-dictionary",
+          "href": "https://w3c.github.io/webcrypto/#JsonWebKey-dictionary",
+          "title": "15. JsonWebKey dictionary"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-jsonwebkey-dq",
+        "href": "https://w3c.github.io/webcrypto/#dom-jsonwebkey-dq",
+        "linkingText": [
+          "dq"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "JsonWebKey"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "JsonWebKey-dictionary",
+          "href": "https://w3c.github.io/webcrypto/#JsonWebKey-dictionary",
+          "title": "15. JsonWebKey dictionary"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-jsonwebkey-qi",
+        "href": "https://w3c.github.io/webcrypto/#dom-jsonwebkey-qi",
+        "linkingText": [
+          "qi"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "JsonWebKey"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "JsonWebKey-dictionary",
+          "href": "https://w3c.github.io/webcrypto/#JsonWebKey-dictionary",
+          "title": "15. JsonWebKey dictionary"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-jsonwebkey-oth",
+        "href": "https://w3c.github.io/webcrypto/#dom-jsonwebkey-oth",
+        "linkingText": [
+          "oth"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "JsonWebKey"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "JsonWebKey-dictionary",
+          "href": "https://w3c.github.io/webcrypto/#JsonWebKey-dictionary",
+          "title": "15. JsonWebKey dictionary"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-jsonwebkey-k",
+        "href": "https://w3c.github.io/webcrypto/#dom-jsonwebkey-k",
+        "linkingText": [
+          "k"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "JsonWebKey"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "JsonWebKey-dictionary",
+          "href": "https://w3c.github.io/webcrypto/#JsonWebKey-dictionary",
+          "title": "15. JsonWebKey dictionary"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

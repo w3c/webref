@@ -1,0 +1,167 @@
+{
+  "name": "Headers",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Fetch Standard",
+      "url": "https://fetch.spec.whatwg.org/"
+    },
+    "fragment": "[Exposed=(Window,Worker)]\ninterface Headers {\n  constructor(optional HeadersInit init);\n\n  undefined append(ByteString name, ByteString value);\n  undefined delete(ByteString name);\n  ByteString? get(ByteString name);\n  boolean has(ByteString name);\n  undefined set(ByteString name, ByteString value);\n  iterable<ByteString, ByteString>;\n};",
+    "href": "https://fetch.spec.whatwg.org/#headers"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://fetch.spec.whatwg.org/": [
+      {
+        "id": "headers",
+        "href": "https://fetch.spec.whatwg.org/#headers",
+        "linkingText": [
+          "Headers"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "headers-class",
+          "href": "https://fetch.spec.whatwg.org/#headers-class",
+          "title": "Headers class",
+          "number": "5.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-headers",
+        "href": "https://fetch.spec.whatwg.org/#dom-headers",
+        "linkingText": [
+          "Headers(init)",
+          "constructor(init)",
+          "Headers()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "Headers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "headers-class",
+          "href": "https://fetch.spec.whatwg.org/#headers-class",
+          "title": "Headers class",
+          "number": "5.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-headers-append",
+        "href": "https://fetch.spec.whatwg.org/#dom-headers-append",
+        "linkingText": [
+          "append(name, value)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Headers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "headers-class",
+          "href": "https://fetch.spec.whatwg.org/#headers-class",
+          "title": "Headers class",
+          "number": "5.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-headers-delete",
+        "href": "https://fetch.spec.whatwg.org/#dom-headers-delete",
+        "linkingText": [
+          "delete(name)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Headers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "headers-class",
+          "href": "https://fetch.spec.whatwg.org/#headers-class",
+          "title": "Headers class",
+          "number": "5.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-headers-get",
+        "href": "https://fetch.spec.whatwg.org/#dom-headers-get",
+        "linkingText": [
+          "get(name)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Headers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "headers-class",
+          "href": "https://fetch.spec.whatwg.org/#headers-class",
+          "title": "Headers class",
+          "number": "5.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-headers-has",
+        "href": "https://fetch.spec.whatwg.org/#dom-headers-has",
+        "linkingText": [
+          "has(name)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Headers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "headers-class",
+          "href": "https://fetch.spec.whatwg.org/#headers-class",
+          "title": "Headers class",
+          "number": "5.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-headers-set",
+        "href": "https://fetch.spec.whatwg.org/#dom-headers-set",
+        "linkingText": [
+          "set(name, value)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Headers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "headers-class",
+          "href": "https://fetch.spec.whatwg.org/#headers-class",
+          "title": "Headers class",
+          "number": "5.1"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

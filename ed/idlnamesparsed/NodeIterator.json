@@ -1,0 +1,206 @@
+{
+  "name": "NodeIterator",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "DOM Standard",
+      "url": "https://dom.spec.whatwg.org/"
+    },
+    "fragment": "[Exposed=Window]\ninterface NodeIterator {\n  [SameObject] readonly attribute Node root;\n  readonly attribute Node referenceNode;\n  readonly attribute boolean pointerBeforeReferenceNode;\n  readonly attribute unsigned long whatToShow;\n  readonly attribute NodeFilter? filter;\n\n  Node? nextNode();\n  Node? previousNode();\n\n  undefined detach();\n};",
+    "href": "https://dom.spec.whatwg.org/#nodeiterator"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "nodeiterator",
+        "href": "https://dom.spec.whatwg.org/#nodeiterator",
+        "linkingText": [
+          "NodeIterator"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-nodeiterator",
+          "href": "https://dom.spec.whatwg.org/#interface-nodeiterator",
+          "title": "Interface NodeIterator",
+          "number": "6.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-nodeiterator-root",
+        "href": "https://dom.spec.whatwg.org/#dom-nodeiterator-root",
+        "linkingText": [
+          "root"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "NodeIterator"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-nodeiterator",
+          "href": "https://dom.spec.whatwg.org/#interface-nodeiterator",
+          "title": "Interface NodeIterator",
+          "number": "6.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-nodeiterator-referencenode",
+        "href": "https://dom.spec.whatwg.org/#dom-nodeiterator-referencenode",
+        "linkingText": [
+          "referenceNode"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "NodeIterator"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-nodeiterator",
+          "href": "https://dom.spec.whatwg.org/#interface-nodeiterator",
+          "title": "Interface NodeIterator",
+          "number": "6.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-nodeiterator-pointerbeforereferencenode",
+        "href": "https://dom.spec.whatwg.org/#dom-nodeiterator-pointerbeforereferencenode",
+        "linkingText": [
+          "pointerBeforeReferenceNode"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "NodeIterator"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-nodeiterator",
+          "href": "https://dom.spec.whatwg.org/#interface-nodeiterator",
+          "title": "Interface NodeIterator",
+          "number": "6.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-nodeiterator-whattoshow",
+        "href": "https://dom.spec.whatwg.org/#dom-nodeiterator-whattoshow",
+        "linkingText": [
+          "whatToShow"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "NodeIterator"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-nodeiterator",
+          "href": "https://dom.spec.whatwg.org/#interface-nodeiterator",
+          "title": "Interface NodeIterator",
+          "number": "6.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-nodeiterator-filter",
+        "href": "https://dom.spec.whatwg.org/#dom-nodeiterator-filter",
+        "linkingText": [
+          "filter"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "NodeIterator"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-nodeiterator",
+          "href": "https://dom.spec.whatwg.org/#interface-nodeiterator",
+          "title": "Interface NodeIterator",
+          "number": "6.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-nodeiterator-nextnode",
+        "href": "https://dom.spec.whatwg.org/#dom-nodeiterator-nextnode",
+        "linkingText": [
+          "nextNode()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "NodeIterator"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-nodeiterator",
+          "href": "https://dom.spec.whatwg.org/#interface-nodeiterator",
+          "title": "Interface NodeIterator",
+          "number": "6.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-nodeiterator-previousnode",
+        "href": "https://dom.spec.whatwg.org/#dom-nodeiterator-previousnode",
+        "linkingText": [
+          "previousNode()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "NodeIterator"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-nodeiterator",
+          "href": "https://dom.spec.whatwg.org/#interface-nodeiterator",
+          "title": "Interface NodeIterator",
+          "number": "6.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-nodeiterator-detach",
+        "href": "https://dom.spec.whatwg.org/#dom-nodeiterator-detach",
+        "linkingText": [
+          "detach()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "NodeIterator"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-nodeiterator",
+          "href": "https://dom.spec.whatwg.org/#interface-nodeiterator",
+          "title": "Interface NodeIterator",
+          "number": "6.1"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

@@ -1,0 +1,524 @@
+{
+  "name": "MediaSource",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Media Source Extensions™",
+      "url": "https://www.w3.org/TR/media-source-2/"
+    },
+    "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface MediaSource : EventTarget {\n    constructor();\n    readonly        attribute SourceBufferList    sourceBuffers;\n    readonly        attribute SourceBufferList    activeSourceBuffers;\n    readonly        attribute ReadyState          readyState;\n                    attribute unrestricted double duration;\n                    attribute EventHandler        onsourceopen;\n                    attribute EventHandler        onsourceended;\n                    attribute EventHandler        onsourceclose;\n    static readonly attribute boolean canConstructInDedicatedWorker;\n    SourceBuffer   addSourceBuffer (DOMString type);\n    undefined           removeSourceBuffer (SourceBuffer sourceBuffer);\n    undefined           endOfStream (optional EndOfStreamError error);\n    undefined           setLiveSeekableRange (double start, double end);\n    undefined           clearLiveSeekableRange ();\n    static boolean isTypeSupported (DOMString type);\n};",
+    "href": "https://w3c.github.io/media-source/#dom-mediasource"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "EventTarget",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=*]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+      "href": "https://dom.spec.whatwg.org/#eventtarget"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/media-source-2/": [
+      {
+        "id": "dom-mediasource",
+        "href": "https://w3c.github.io/media-source/#dom-mediasource",
+        "linkingText": [
+          "MediaSource"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "mediasource",
+          "href": "https://w3c.github.io/media-source/#mediasource",
+          "title": "MediaSource Object",
+          "number": "2"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-mediasource-constructor",
+        "href": "https://w3c.github.io/media-source/#dom-mediasource-constructor",
+        "linkingText": [
+          "constructor()"
+        ],
+        "localLinkingText": [
+          "MediaSource.constructor",
+          "MediaSource.constructor()",
+          "constructor"
+        ],
+        "type": "constructor",
+        "for": [
+          "MediaSource"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "mediasource",
+          "href": "https://w3c.github.io/media-source/#mediasource",
+          "title": "MediaSource Object",
+          "number": "2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mediasource-sourcebuffers",
+        "href": "https://w3c.github.io/media-source/#dom-mediasource-sourcebuffers",
+        "linkingText": [
+          "sourceBuffers"
+        ],
+        "localLinkingText": [
+          "MediaSource.sourceBuffers"
+        ],
+        "type": "attribute",
+        "for": [
+          "MediaSource"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes",
+          "href": "https://w3c.github.io/media-source/#attributes",
+          "title": "Attributes",
+          "number": "2.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediasource-activesourcebuffers",
+        "href": "https://w3c.github.io/media-source/#dom-mediasource-activesourcebuffers",
+        "linkingText": [
+          "activeSourceBuffers"
+        ],
+        "localLinkingText": [
+          "MediaSource.activeSourceBuffers"
+        ],
+        "type": "attribute",
+        "for": [
+          "MediaSource"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes",
+          "href": "https://w3c.github.io/media-source/#attributes",
+          "title": "Attributes",
+          "number": "2.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediasource-readystate",
+        "href": "https://w3c.github.io/media-source/#dom-mediasource-readystate",
+        "linkingText": [
+          "readyState"
+        ],
+        "localLinkingText": [
+          "MediaSource.readyState"
+        ],
+        "type": "attribute",
+        "for": [
+          "MediaSource"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes",
+          "href": "https://w3c.github.io/media-source/#attributes",
+          "title": "Attributes",
+          "number": "2.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediasource-duration",
+        "href": "https://w3c.github.io/media-source/#dom-mediasource-duration",
+        "linkingText": [
+          "duration"
+        ],
+        "localLinkingText": [
+          "MediaSource.duration"
+        ],
+        "type": "attribute",
+        "for": [
+          "MediaSource"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes",
+          "href": "https://w3c.github.io/media-source/#attributes",
+          "title": "Attributes",
+          "number": "2.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediasource-onsourceopen",
+        "href": "https://w3c.github.io/media-source/#dom-mediasource-onsourceopen",
+        "linkingText": [
+          "onsourceopen"
+        ],
+        "localLinkingText": [
+          "MediaSource.onsourceopen"
+        ],
+        "type": "attribute",
+        "for": [
+          "MediaSource"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes",
+          "href": "https://w3c.github.io/media-source/#attributes",
+          "title": "Attributes",
+          "number": "2.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediasource-onsourceended",
+        "href": "https://w3c.github.io/media-source/#dom-mediasource-onsourceended",
+        "linkingText": [
+          "onsourceended"
+        ],
+        "localLinkingText": [
+          "MediaSource.onsourceended"
+        ],
+        "type": "attribute",
+        "for": [
+          "MediaSource"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes",
+          "href": "https://w3c.github.io/media-source/#attributes",
+          "title": "Attributes",
+          "number": "2.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediasource-onsourceclose",
+        "href": "https://w3c.github.io/media-source/#dom-mediasource-onsourceclose",
+        "linkingText": [
+          "onsourceclose"
+        ],
+        "localLinkingText": [
+          "MediaSource.onsourceclose"
+        ],
+        "type": "attribute",
+        "for": [
+          "MediaSource"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes",
+          "href": "https://w3c.github.io/media-source/#attributes",
+          "title": "Attributes",
+          "number": "2.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediasource-canconstructindedicatedworker",
+        "href": "https://w3c.github.io/media-source/#dom-mediasource-canconstructindedicatedworker",
+        "linkingText": [
+          "canConstructInDedicatedWorker"
+        ],
+        "localLinkingText": [
+          "MediaSource.canConstructInDedicatedWorker"
+        ],
+        "type": "attribute",
+        "for": [
+          "MediaSource"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "attributes",
+          "href": "https://w3c.github.io/media-source/#attributes",
+          "title": "Attributes",
+          "number": "2.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediasource-addsourcebuffer",
+        "href": "https://w3c.github.io/media-source/#dom-mediasource-addsourcebuffer",
+        "linkingText": [
+          "addSourceBuffer()",
+          "addSourceBuffer(type)"
+        ],
+        "localLinkingText": [
+          "MediaSource.addSourceBuffer",
+          "MediaSource.addSourceBuffer()",
+          "addSourceBuffer"
+        ],
+        "type": "method",
+        "for": [
+          "MediaSource"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "methods",
+          "href": "https://w3c.github.io/media-source/#methods",
+          "title": "Methods",
+          "number": "2.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediasource-removesourcebuffer",
+        "href": "https://w3c.github.io/media-source/#dom-mediasource-removesourcebuffer",
+        "linkingText": [
+          "removeSourceBuffer()",
+          "removeSourceBuffer(sourceBuffer)"
+        ],
+        "localLinkingText": [
+          "MediaSource.removeSourceBuffer",
+          "MediaSource.removeSourceBuffer()",
+          "removeSourceBuffer"
+        ],
+        "type": "method",
+        "for": [
+          "MediaSource"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "methods",
+          "href": "https://w3c.github.io/media-source/#methods",
+          "title": "Methods",
+          "number": "2.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediasource-endofstream",
+        "href": "https://w3c.github.io/media-source/#dom-mediasource-endofstream",
+        "linkingText": [
+          "endOfStream()",
+          "endOfStream(error)"
+        ],
+        "localLinkingText": [
+          "MediaSource.endOfStream",
+          "MediaSource.endOfStream()",
+          "endOfStream"
+        ],
+        "type": "method",
+        "for": [
+          "MediaSource"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "methods",
+          "href": "https://w3c.github.io/media-source/#methods",
+          "title": "Methods",
+          "number": "2.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediasource-setliveseekablerange",
+        "href": "https://w3c.github.io/media-source/#dom-mediasource-setliveseekablerange",
+        "linkingText": [
+          "setLiveSeekableRange()",
+          "setLiveSeekableRange(start, end)"
+        ],
+        "localLinkingText": [
+          "MediaSource.setLiveSeekableRange",
+          "MediaSource.setLiveSeekableRange()",
+          "setLiveSeekableRange"
+        ],
+        "type": "method",
+        "for": [
+          "MediaSource"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "methods",
+          "href": "https://w3c.github.io/media-source/#methods",
+          "title": "Methods",
+          "number": "2.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediasource-clearliveseekablerange",
+        "href": "https://w3c.github.io/media-source/#dom-mediasource-clearliveseekablerange",
+        "linkingText": [
+          "clearLiveSeekableRange()"
+        ],
+        "localLinkingText": [
+          "MediaSource.clearLiveSeekableRange",
+          "MediaSource.clearLiveSeekableRange()",
+          "clearLiveSeekableRange"
+        ],
+        "type": "method",
+        "for": [
+          "MediaSource"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "methods",
+          "href": "https://w3c.github.io/media-source/#methods",
+          "title": "Methods",
+          "number": "2.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediasource-istypesupported",
+        "href": "https://w3c.github.io/media-source/#dom-mediasource-istypesupported",
+        "linkingText": [
+          "isTypeSupported()",
+          "isTypeSupported(type)"
+        ],
+        "localLinkingText": [
+          "MediaSource.isTypeSupported",
+          "MediaSource.isTypeSupported()",
+          "isTypeSupported"
+        ],
+        "type": "method",
+        "for": [
+          "MediaSource"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "methods",
+          "href": "https://w3c.github.io/media-source/#methods",
+          "title": "Methods",
+          "number": "2.2"
+        },
+        "definedIn": "dt"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "eventtarget",
+        "href": "https://dom.spec.whatwg.org/#eventtarget",
+        "linkingText": [
+          "EventTarget"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventtarget-eventtarget",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-eventtarget",
+        "linkingText": [
+          "EventTarget()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-addeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-addeventlistener",
+        "linkingText": [
+          "addEventListener(type, callback, options)",
+          "addEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-removeeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-removeeventlistener",
+        "linkingText": [
+          "removeEventListener(type, callback, options)",
+          "removeEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-dispatchevent",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-dispatchevent",
+        "linkingText": [
+          "dispatchEvent(event)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

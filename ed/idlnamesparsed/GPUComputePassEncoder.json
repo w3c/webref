@@ -1,0 +1,412 @@
+{
+  "name": "GPUComputePassEncoder",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebGPU",
+      "url": "https://www.w3.org/TR/webgpu/"
+    },
+    "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUComputePassEncoder {\n    undefined setPipeline(GPUComputePipeline pipeline);\n    undefined dispatch(GPUSize32 workgroupCountX, optional GPUSize32 workgroupCountY = 1, optional GPUSize32 workgroupCountZ = 1);\n    undefined dispatchIndirect(GPUBuffer indirectBuffer, GPUSize64 indirectOffset);\n\n    undefined endPass();\n};",
+    "href": "https://gpuweb.github.io/gpuweb/#gpucomputepassencoder"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "WebGPU",
+        "url": "https://www.w3.org/TR/webgpu/"
+      },
+      "fragment": "GPUComputePassEncoder includes GPUObjectBase;"
+    },
+    {
+      "spec": {
+        "title": "WebGPU",
+        "url": "https://www.w3.org/TR/webgpu/"
+      },
+      "fragment": "GPUComputePassEncoder includes GPUCommandsMixin;"
+    },
+    {
+      "spec": {
+        "title": "WebGPU",
+        "url": "https://www.w3.org/TR/webgpu/"
+      },
+      "fragment": "GPUComputePassEncoder includes GPUDebugCommandsMixin;"
+    },
+    {
+      "spec": {
+        "title": "WebGPU",
+        "url": "https://www.w3.org/TR/webgpu/"
+      },
+      "fragment": "GPUComputePassEncoder includes GPUProgrammablePassEncoder;"
+    }
+  ],
+  "inheritance": null,
+  "includes": [
+    {
+      "name": "GPUObjectBase",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "WebGPU",
+          "url": "https://www.w3.org/TR/webgpu/"
+        },
+        "fragment": "interface mixin GPUObjectBase {\n    attribute (USVString or undefined) label;\n};",
+        "href": "https://gpuweb.github.io/gpuweb/#gpuobjectbase"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "GPUCommandsMixin",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "WebGPU",
+          "url": "https://www.w3.org/TR/webgpu/"
+        },
+        "fragment": "interface mixin GPUCommandsMixin {\n};",
+        "href": "https://gpuweb.github.io/gpuweb/#gpucommandsmixin"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "GPUDebugCommandsMixin",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "WebGPU",
+          "url": "https://www.w3.org/TR/webgpu/"
+        },
+        "fragment": "interface mixin GPUDebugCommandsMixin {\n    undefined pushDebugGroup(USVString groupLabel);\n    undefined popDebugGroup();\n    undefined insertDebugMarker(USVString markerLabel);\n};",
+        "href": "https://gpuweb.github.io/gpuweb/#gpudebugcommandsmixin"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "GPUProgrammablePassEncoder",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "WebGPU",
+          "url": "https://www.w3.org/TR/webgpu/"
+        },
+        "fragment": "interface mixin GPUProgrammablePassEncoder {\n    undefined setBindGroup(GPUIndex32 index, GPUBindGroup bindGroup,\n                      optional sequence<GPUBufferDynamicOffset> dynamicOffsets = []);\n\n    undefined setBindGroup(GPUIndex32 index, GPUBindGroup bindGroup,\n                      Uint32Array dynamicOffsetsData,\n                      GPUSize64 dynamicOffsetsDataStart,\n                      GPUSize32 dynamicOffsetsDataLength);\n};",
+        "href": "https://gpuweb.github.io/gpuweb/#gpuprogrammablepassencoder"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    }
+  ],
+  "dfns": {
+    "https://www.w3.org/TR/webgpu/": [
+      {
+        "id": "gpucomputepassencoder",
+        "href": "https://gpuweb.github.io/gpuweb/#gpucomputepassencoder",
+        "linkingText": [
+          "GPUComputePassEncoder"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "compute-pass-encoder",
+          "href": "https://gpuweb.github.io/gpuweb/#compute-pass-encoder",
+          "title": "GPUComputePassEncoder",
+          "number": "15.1"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-gpucomputepassencoder-setpipeline",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpucomputepassencoder-setpipeline",
+        "linkingText": [
+          "setPipeline(pipeline)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GPUComputePassEncoder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "compute-pass-encoder-dispatch",
+          "href": "https://gpuweb.github.io/gpuweb/#compute-pass-encoder-dispatch",
+          "title": "Dispatch",
+          "number": "15.1.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpucomputepassencoder-dispatch",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpucomputepassencoder-dispatch",
+        "linkingText": [
+          "dispatch(workgroupCountX, workgroupCountY, workgroupCountZ)",
+          "dispatch(workgroupCountX, workgroupCountY)",
+          "dispatch(workgroupCountX)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GPUComputePassEncoder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "compute-pass-encoder-dispatch",
+          "href": "https://gpuweb.github.io/gpuweb/#compute-pass-encoder-dispatch",
+          "title": "Dispatch",
+          "number": "15.1.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpucomputepassencoder-dispatchindirect",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpucomputepassencoder-dispatchindirect",
+        "linkingText": [
+          "dispatchIndirect(indirectBuffer, indirectOffset)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GPUComputePassEncoder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "compute-pass-encoder-dispatch",
+          "href": "https://gpuweb.github.io/gpuweb/#compute-pass-encoder-dispatch",
+          "title": "Dispatch",
+          "number": "15.1.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpucomputepassencoder-endpass",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpucomputepassencoder-endpass",
+        "linkingText": [
+          "endPass()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GPUComputePassEncoder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "compute-pass-encoder-finalization",
+          "href": "https://gpuweb.github.io/gpuweb/#compute-pass-encoder-finalization",
+          "title": "Finalization",
+          "number": "15.1.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "gpuobjectbase",
+        "href": "https://gpuweb.github.io/gpuweb/#gpuobjectbase",
+        "linkingText": [
+          "GPUObjectBase"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "webgpu-interfaces",
+          "href": "https://gpuweb.github.io/gpuweb/#webgpu-interfaces",
+          "title": "WebGPU Interfaces",
+          "number": "3.1.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gpuobjectbase-label",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpuobjectbase-label",
+        "linkingText": [
+          "label"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "GPUObjectBase"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "webgpu-interfaces",
+          "href": "https://gpuweb.github.io/gpuweb/#webgpu-interfaces",
+          "title": "WebGPU Interfaces",
+          "number": "3.1.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "gpucommandsmixin",
+        "href": "https://gpuweb.github.io/gpuweb/#gpucommandsmixin",
+        "linkingText": [
+          "GPUCommandsMixin"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "commands-mixin",
+          "href": "https://gpuweb.github.io/gpuweb/#commands-mixin",
+          "title": "GPUCommandsMixin",
+          "number": "12.1"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "gpudebugcommandsmixin",
+        "href": "https://gpuweb.github.io/gpuweb/#gpudebugcommandsmixin",
+        "linkingText": [
+          "GPUDebugCommandsMixin"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "debug-markers",
+          "href": "https://gpuweb.github.io/gpuweb/#debug-markers",
+          "title": "14. Debug Markers"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-gpudebugcommandsmixin-pushdebuggroup",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpudebugcommandsmixin-pushdebuggroup",
+        "linkingText": [
+          "pushDebugGroup(groupLabel)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GPUDebugCommandsMixin"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "debug-markers",
+          "href": "https://gpuweb.github.io/gpuweb/#debug-markers",
+          "title": "14. Debug Markers"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpudebugcommandsmixin-popdebuggroup",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpudebugcommandsmixin-popdebuggroup",
+        "linkingText": [
+          "popDebugGroup()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GPUDebugCommandsMixin"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "debug-markers",
+          "href": "https://gpuweb.github.io/gpuweb/#debug-markers",
+          "title": "14. Debug Markers"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpudebugcommandsmixin-insertdebugmarker",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpudebugcommandsmixin-insertdebugmarker",
+        "linkingText": [
+          "insertDebugMarker(markerLabel)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GPUDebugCommandsMixin"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "debug-markers",
+          "href": "https://gpuweb.github.io/gpuweb/#debug-markers",
+          "title": "14. Debug Markers"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "gpuprogrammablepassencoder",
+        "href": "https://gpuweb.github.io/gpuweb/#gpuprogrammablepassencoder",
+        "linkingText": [
+          "GPUProgrammablePassEncoder"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "programmable-passes",
+          "href": "https://gpuweb.github.io/gpuweb/#programmable-passes",
+          "title": "13. Programmable Passes"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gpuprogrammablepassencoder-setbindgroup",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpuprogrammablepassencoder-setbindgroup",
+        "linkingText": [
+          "setBindGroup(index, bindGroup, dynamicOffsets)",
+          "setBindGroup(index, bindGroup)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GPUProgrammablePassEncoder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "programmable-passes-bind-groups",
+          "href": "https://gpuweb.github.io/gpuweb/#programmable-passes-bind-groups",
+          "title": "Bind Groups",
+          "number": "13.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpuprogrammablepassencoder-setbindgroup-index-bindgroup-dynamicoffsetsdata-dynamicoffsetsdatastart-dynamicoffsetsdatalength",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpuprogrammablepassencoder-setbindgroup-index-bindgroup-dynamicoffsetsdata-dynamicoffsetsdatastart-dynamicoffsetsdatalength",
+        "linkingText": [
+          "setBindGroup(index, bindGroup, dynamicOffsetsData, dynamicOffsetsDataStart, dynamicOffsetsDataLength)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GPUProgrammablePassEncoder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "programmable-passes-bind-groups",
+          "href": "https://gpuweb.github.io/gpuweb/#programmable-passes-bind-groups",
+          "title": "Bind Groups",
+          "number": "13.1"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

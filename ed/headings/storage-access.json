@@ -1,0 +1,215 @@
+{
+  "spec": {
+    "title": "The Storage Access API",
+    "url": "https://privacycg.github.io/storage-access/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://privacycg.github.io/storage-access/#title",
+      "level": 1,
+      "title": "The Storage Access API"
+    },
+    {
+      "id": "subtitle",
+      "href": "https://privacycg.github.io/storage-access/#subtitle",
+      "level": 2,
+      "title": "Draft Community Group Report, 8 October 2021"
+    },
+    {
+      "id": "abstract",
+      "href": "https://privacycg.github.io/storage-access/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "status",
+      "href": "https://privacycg.github.io/storage-access/#status",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://privacycg.github.io/storage-access/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "intro",
+      "href": "https://privacycg.github.io/storage-access/#intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "infra",
+      "href": "https://privacycg.github.io/storage-access/#infra",
+      "level": 2,
+      "title": "Infrastructure",
+      "number": "2"
+    },
+    {
+      "id": "the-storage-access-api",
+      "href": "https://privacycg.github.io/storage-access/#the-storage-access-api",
+      "level": 2,
+      "title": "The Storage Access API",
+      "number": "3"
+    },
+    {
+      "id": "ua-state",
+      "href": "https://privacycg.github.io/storage-access/#ua-state",
+      "level": 3,
+      "title": "User Agent state related to storage access",
+      "number": "3.1"
+    },
+    {
+      "id": "the-document-object",
+      "href": "https://privacycg.github.io/storage-access/#the-document-object",
+      "level": 3,
+      "title": "Changes to Document",
+      "number": "3.2"
+    },
+    {
+      "id": "ua-policy",
+      "href": "https://privacycg.github.io/storage-access/#ua-policy",
+      "level": 4,
+      "title": "User Agent storage access policies",
+      "number": "3.2.1"
+    },
+    {
+      "id": "navigation",
+      "href": "https://privacycg.github.io/storage-access/#navigation",
+      "level": 3,
+      "title": "Changes to navigation",
+      "number": "3.3"
+    },
+    {
+      "id": "storage",
+      "href": "https://privacycg.github.io/storage-access/#storage",
+      "level": 3,
+      "title": "Changes to various client-side storage mechanisms",
+      "number": "3.4"
+    },
+    {
+      "id": "cookies",
+      "href": "https://privacycg.github.io/storage-access/#cookies",
+      "level": 4,
+      "title": "Cookies",
+      "number": "3.4.1"
+    },
+    {
+      "id": "sandboxing-storage-access",
+      "href": "https://privacycg.github.io/storage-access/#sandboxing-storage-access",
+      "level": 3,
+      "title": "Sandboxing storage access",
+      "number": "3.5"
+    },
+    {
+      "id": "permissions-policy-integration",
+      "href": "https://privacycg.github.io/storage-access/#permissions-policy-integration",
+      "level": 2,
+      "title": "Permissions Policy Integration",
+      "number": "4"
+    },
+    {
+      "id": "privacy",
+      "href": "https://privacycg.github.io/storage-access/#privacy",
+      "level": 2,
+      "title": "Privacy considerations",
+      "number": "5"
+    },
+    {
+      "id": "security",
+      "href": "https://privacycg.github.io/storage-access/#security",
+      "level": 2,
+      "title": "Security considerations",
+      "number": "6"
+    },
+    {
+      "id": "automation",
+      "href": "https://privacycg.github.io/storage-access/#automation",
+      "level": 2,
+      "title": "Automation",
+      "number": "7"
+    },
+    {
+      "id": "set-storage-access-command",
+      "href": "https://privacycg.github.io/storage-access/#set-storage-access-command",
+      "level": 3,
+      "title": "Set Storage Access",
+      "number": "7.1"
+    },
+    {
+      "id": "acknowledgements",
+      "href": "https://privacycg.github.io/storage-access/#acknowledgements",
+      "level": 2,
+      "title": "Acknowledgements"
+    },
+    {
+      "id": "w3c-conformance",
+      "href": "https://privacycg.github.io/storage-access/#w3c-conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "w3c-conventions",
+      "href": "https://privacycg.github.io/storage-access/#w3c-conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "w3c-conformant-algorithms",
+      "href": "https://privacycg.github.io/storage-access/#w3c-conformant-algorithms",
+      "level": 3,
+      "title": "Conformant Algorithms"
+    },
+    {
+      "id": "index",
+      "href": "https://privacycg.github.io/storage-access/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://privacycg.github.io/storage-access/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://privacycg.github.io/storage-access/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://privacycg.github.io/storage-access/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://privacycg.github.io/storage-access/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://privacycg.github.io/storage-access/#informative",
+      "level": 3,
+      "title": "Informative References"
+    },
+    {
+      "id": "idl-index",
+      "href": "https://privacycg.github.io/storage-access/#idl-index",
+      "level": 2,
+      "title": "IDL Index"
+    },
+    {
+      "id": "issues-index",
+      "href": "https://privacycg.github.io/storage-access/#issues-index",
+      "level": 2,
+      "title": "Issues Index"
+    }
+  ]
+}

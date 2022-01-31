@@ -1,0 +1,83 @@
+{
+  "name": "FaceDetector",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Accelerated Shape Detection in Images",
+      "url": "https://wicg.github.io/shape-detection-api/"
+    },
+    "fragment": "[Exposed=(Window,Worker),\n SecureContext]\ninterface FaceDetector {\n  constructor(optional FaceDetectorOptions faceDetectorOptions = {});\n  Promise<sequence<DetectedFace>> detect(ImageBitmapSource image);\n};",
+    "href": "https://wicg.github.io/shape-detection-api/#facedetector"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://wicg.github.io/shape-detection-api/": [
+      {
+        "id": "facedetector",
+        "href": "https://wicg.github.io/shape-detection-api/#facedetector",
+        "linkingText": [
+          "FaceDetector"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "face-detection-api",
+          "href": "https://wicg.github.io/shape-detection-api/#face-detection-api",
+          "title": "Face Detection API",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-facedetector-facedetector",
+        "href": "https://wicg.github.io/shape-detection-api/#dom-facedetector-facedetector",
+        "linkingText": [
+          "FaceDetector(faceDetectorOptions)",
+          "constructor(faceDetectorOptions)",
+          "FaceDetector()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "FaceDetector"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "face-detection-api",
+          "href": "https://wicg.github.io/shape-detection-api/#face-detection-api",
+          "title": "Face Detection API",
+          "number": "2.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-facedetector-detect",
+        "href": "https://wicg.github.io/shape-detection-api/#dom-facedetector-detect",
+        "linkingText": [
+          "detect(image)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "FaceDetector"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "face-detection-api",
+          "href": "https://wicg.github.io/shape-detection-api/#face-detection-api",
+          "title": "Face Detection API",
+          "number": "2.2"
+        },
+        "definedIn": "dt"
+      }
+    ]
+  }
+}

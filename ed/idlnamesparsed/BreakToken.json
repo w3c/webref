@@ -1,0 +1,80 @@
+{
+  "name": "BreakToken",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "CSS Layout API Level 1",
+      "url": "https://www.w3.org/TR/css-layout-api-1/"
+    },
+    "fragment": "[Exposed=LayoutWorklet]\ninterface BreakToken {\n    readonly attribute FrozenArray<ChildBreakToken> childBreakTokens;\n    readonly attribute any data;\n};",
+    "href": "https://drafts.css-houdini.org/css-layout-api-1/#breaktoken"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/css-layout-api-1/": [
+      {
+        "id": "breaktoken",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#breaktoken",
+        "linkingText": [
+          "BreakToken"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "breaking-and-fragmentation",
+          "href": "https://drafts.css-houdini.org/css-layout-api-1/#breaking-and-fragmentation",
+          "title": "Breaking and Fragmentation",
+          "number": "4.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-breaktoken-childbreaktokens",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-breaktoken-childbreaktokens",
+        "linkingText": [
+          "childBreakTokens"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "BreakToken"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "breaking-and-fragmentation",
+          "href": "https://drafts.css-houdini.org/css-layout-api-1/#breaking-and-fragmentation",
+          "title": "Breaking and Fragmentation",
+          "number": "4.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-breaktoken-data",
+        "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-breaktoken-data",
+        "linkingText": [
+          "data"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "BreakToken"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "breaking-and-fragmentation",
+          "href": "https://drafts.css-houdini.org/css-layout-api-1/#breaking-and-fragmentation",
+          "title": "Breaking and Fragmentation",
+          "number": "4.5"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

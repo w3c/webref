@@ -1,0 +1,251 @@
+{
+  "spec": {
+    "title": "Network Information API",
+    "url": "https://wicg.github.io/netinfo/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://wicg.github.io/netinfo/#title",
+      "level": 1,
+      "title": "Network Information API"
+    },
+    {
+      "id": "toc",
+      "href": "https://wicg.github.io/netinfo/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "requirements-and-use-cases",
+      "href": "https://wicg.github.io/netinfo/#requirements-and-use-cases",
+      "level": 2,
+      "title": "Requirements and use cases",
+      "number": "1"
+    },
+    {
+      "id": "provide-an-interface-for-determining-the-connection-type-currently-used-to-communicate-with-the-network",
+      "href": "https://wicg.github.io/netinfo/#provide-an-interface-for-determining-the-connection-type-currently-used-to-communicate-with-the-network",
+      "level": 3,
+      "title": "Provide an interface for determining the connection type currently used to communicate with the network.",
+      "number": "1.1"
+    },
+    {
+      "id": "provide-a-way-for-scripts-to-be-notified-if-the-connection-type-changes",
+      "href": "https://wicg.github.io/netinfo/#provide-a-way-for-scripts-to-be-notified-if-the-connection-type-changes",
+      "level": 3,
+      "title": "Provide a way for scripts to be notified if the connection type changes.",
+      "number": "1.2"
+    },
+    {
+      "id": "examples-of-usage",
+      "href": "https://wicg.github.io/netinfo/#examples-of-usage",
+      "level": 2,
+      "title": "Examples of usage",
+      "number": "2"
+    },
+    {
+      "id": "definitions",
+      "href": "https://wicg.github.io/netinfo/#definitions",
+      "level": 2,
+      "title": "Definitions",
+      "number": "3"
+    },
+    {
+      "id": "connection-types",
+      "href": "https://wicg.github.io/netinfo/#connection-types",
+      "level": 2,
+      "title": "Connection types",
+      "number": "4"
+    },
+    {
+      "id": "underlying-connection-technology",
+      "href": "https://wicg.github.io/netinfo/#underlying-connection-technology",
+      "level": 3,
+      "title": "Underlying connection technology",
+      "number": "4.1"
+    },
+    {
+      "id": "connectiontype-enum",
+      "href": "https://wicg.github.io/netinfo/#connectiontype-enum",
+      "level": 3,
+      "title": "ConnectionType enum",
+      "number": "4.2"
+    },
+    {
+      "id": "effective-connection-types",
+      "href": "https://wicg.github.io/netinfo/#effective-connection-types",
+      "level": 3,
+      "title": "Effective connection types",
+      "number": "4.3"
+    },
+    {
+      "id": "effectiveconnectiontype-enum",
+      "href": "https://wicg.github.io/netinfo/#effectiveconnectiontype-enum",
+      "level": 3,
+      "title": "EffectiveConnectionType enum",
+      "number": "4.4"
+    },
+    {
+      "id": "navigatornetworkinformation-interface",
+      "href": "https://wicg.github.io/netinfo/#navigatornetworkinformation-interface",
+      "level": 2,
+      "title": "NavigatorNetworkInformation interface",
+      "number": "5"
+    },
+    {
+      "id": "connection-attribute",
+      "href": "https://wicg.github.io/netinfo/#connection-attribute",
+      "level": 3,
+      "title": "connection attribute",
+      "number": "5.1"
+    },
+    {
+      "id": "networkinformation-interface",
+      "href": "https://wicg.github.io/netinfo/#networkinformation-interface",
+      "level": 2,
+      "title": "NetworkInformation interface",
+      "number": "6"
+    },
+    {
+      "id": "type-attribute",
+      "href": "https://wicg.github.io/netinfo/#type-attribute",
+      "level": 3,
+      "title": "type attribute",
+      "number": "6.1"
+    },
+    {
+      "id": "effectivetype-attribute",
+      "href": "https://wicg.github.io/netinfo/#effectivetype-attribute",
+      "level": 3,
+      "title": "effectiveType attribute",
+      "number": "6.2"
+    },
+    {
+      "id": "ect-request-header-field",
+      "href": "https://wicg.github.io/netinfo/#ect-request-header-field",
+      "level": 4,
+      "title": "ECT Request Header Field",
+      "number": "6.2.1"
+    },
+    {
+      "id": "downlinkmax-attribute",
+      "href": "https://wicg.github.io/netinfo/#downlinkmax-attribute",
+      "level": 3,
+      "title": "downlinkMax attribute",
+      "number": "6.3"
+    },
+    {
+      "id": "onchange-attribute",
+      "href": "https://wicg.github.io/netinfo/#onchange-attribute",
+      "level": 3,
+      "title": "onchange attribute",
+      "number": "6.4"
+    },
+    {
+      "id": "downlink-attribute",
+      "href": "https://wicg.github.io/netinfo/#downlink-attribute",
+      "level": 3,
+      "title": "downlink attribute",
+      "number": "6.5"
+    },
+    {
+      "id": "downlink-request-header-field",
+      "href": "https://wicg.github.io/netinfo/#downlink-request-header-field",
+      "level": 4,
+      "title": "Downlink Request Header Field",
+      "number": "6.5.1"
+    },
+    {
+      "id": "rtt-attribute",
+      "href": "https://wicg.github.io/netinfo/#rtt-attribute",
+      "level": 3,
+      "title": "rtt attribute",
+      "number": "6.6"
+    },
+    {
+      "id": "rtt-request-header-field",
+      "href": "https://wicg.github.io/netinfo/#rtt-request-header-field",
+      "level": 4,
+      "title": "RTT Request Header Field",
+      "number": "6.6.1"
+    },
+    {
+      "id": "underlying-connection-technology-0",
+      "href": "https://wicg.github.io/netinfo/#underlying-connection-technology-0",
+      "level": 3,
+      "title": "Underlying connection technology",
+      "number": "6.7"
+    },
+    {
+      "id": "handling-changes-to-the-underlying-connection",
+      "href": "https://wicg.github.io/netinfo/#handling-changes-to-the-underlying-connection",
+      "level": 4,
+      "title": "Handling changes to the underlying connection",
+      "number": "6.7.1"
+    },
+    {
+      "id": "privacy-considerations",
+      "href": "https://wicg.github.io/netinfo/#privacy-considerations",
+      "level": 3,
+      "title": "Privacy Considerations",
+      "number": "6.8"
+    },
+    {
+      "id": "iana-considerations",
+      "href": "https://wicg.github.io/netinfo/#iana-considerations",
+      "level": 3,
+      "title": "IANA Considerations",
+      "number": "6.9"
+    },
+    {
+      "id": "registration-ect",
+      "href": "https://wicg.github.io/netinfo/#registration-ect",
+      "level": 4,
+      "title": "ECT Request Header Field Registration",
+      "number": "6.9.1"
+    },
+    {
+      "id": "registration-downlink",
+      "href": "https://wicg.github.io/netinfo/#registration-downlink",
+      "level": 4,
+      "title": "Downlink Request Header Field Registration",
+      "number": "6.9.2"
+    },
+    {
+      "id": "registration-rtt",
+      "href": "https://wicg.github.io/netinfo/#registration-rtt",
+      "level": 4,
+      "title": "RTT Request Header Field Registration",
+      "number": "6.9.3"
+    },
+    {
+      "id": "conformance",
+      "href": "https://wicg.github.io/netinfo/#conformance",
+      "level": 3,
+      "title": "Conformance",
+      "number": "6.10"
+    },
+    {
+      "id": "acknowledgments",
+      "href": "https://wicg.github.io/netinfo/#acknowledgments",
+      "level": 3,
+      "title": "Acknowledgments",
+      "number": "6.11"
+    },
+    {
+      "id": "references",
+      "href": "https://wicg.github.io/netinfo/#references",
+      "level": 2,
+      "title": "References",
+      "number": "A"
+    },
+    {
+      "id": "normative-references",
+      "href": "https://wicg.github.io/netinfo/#normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "number": "A.1"
+    }
+  ]
+}

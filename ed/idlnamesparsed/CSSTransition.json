@@ -1,0 +1,714 @@
+{
+  "name": "CSSTransition",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "CSS Transitions Level 2",
+      "url": "https://drafts.csswg.org/css-transitions-2/"
+    },
+    "fragment": "[Exposed=Window]\ninterface CSSTransition : Animation {\n  readonly attribute CSSOMString transitionProperty;\n};",
+    "href": "https://drafts.csswg.org/css-transitions-2/#csstransition"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "Animation",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "Web Animations",
+        "url": "https://www.w3.org/TR/web-animations-1/"
+      },
+      "fragment": "[Exposed=Window]\ninterface Animation : EventTarget {\n    constructor(optional AnimationEffect? effect = null,\n                optional AnimationTimeline? timeline);\n             attribute DOMString                id;\n             attribute AnimationEffect?         effect;\n             attribute AnimationTimeline?       timeline;\n             attribute double                   playbackRate;\n    readonly attribute AnimationPlayState       playState;\n    readonly attribute AnimationReplaceState    replaceState;\n    readonly attribute boolean                  pending;\n    readonly attribute Promise<Animation>       ready;\n    readonly attribute Promise<Animation>       finished;\n             attribute EventHandler             onfinish;\n             attribute EventHandler             oncancel;\n             attribute EventHandler             onremove;\n    undefined cancel();\n    undefined finish();\n    undefined play();\n    undefined pause();\n    undefined updatePlaybackRate(double playbackRate);\n    undefined reverse();\n    undefined persist();\n    undefined commitStyles();\n};",
+      "href": "https://drafts.csswg.org/web-animations-1/#animation"
+    },
+    "extended": [
+      {
+        "spec": {
+          "title": "Web Animations Level 2",
+          "url": "https://drafts.csswg.org/web-animations-2/"
+        },
+        "fragment": "[Exposed=Window]\npartial interface Animation {\n    attribute CSSNumberish?       startTime;\n    attribute CSSNumberish?       currentTime;\n};"
+      }
+    ],
+    "inheritance": {
+      "name": "EventTarget",
+      "type": "interface",
+      "defined": {
+        "spec": {
+          "title": "DOM Standard",
+          "url": "https://dom.spec.whatwg.org/"
+        },
+        "fragment": "[Exposed=*]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+        "href": "https://dom.spec.whatwg.org/#eventtarget"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://drafts.csswg.org/css-transitions-2/": [
+      {
+        "id": "csstransition",
+        "href": "https://drafts.csswg.org/css-transitions-2/#csstransition",
+        "linkingText": [
+          "CSSTransition"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-CSSTransition-interface",
+          "href": "https://drafts.csswg.org/css-transitions-2/#the-CSSTransition-interface",
+          "title": "The CSSTransition interface",
+          "number": "6.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-csstransition-transitionproperty",
+        "href": "https://drafts.csswg.org/css-transitions-2/#dom-csstransition-transitionproperty",
+        "linkingText": [
+          "transitionProperty"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "CSSTransition"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-CSSTransition-interface",
+          "href": "https://drafts.csswg.org/css-transitions-2/#the-CSSTransition-interface",
+          "title": "The CSSTransition interface",
+          "number": "6.1"
+        },
+        "definedIn": "dt"
+      }
+    ],
+    "https://www.w3.org/TR/web-animations-1/": [
+      {
+        "id": "animation",
+        "href": "https://drafts.csswg.org/web-animations-1/#animation",
+        "linkingText": [
+          "Animation"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-animation-interface",
+          "href": "https://drafts.csswg.org/web-animations-1/#the-animation-interface",
+          "title": "The Animation interface",
+          "number": "6.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-animation-animation",
+        "href": "https://drafts.csswg.org/web-animations-1/#dom-animation-animation",
+        "linkingText": [
+          "Animation(effect, timeline)",
+          "constructor(effect, timeline)",
+          "Animation(effect)",
+          "constructor(effect)",
+          "Animation()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "Animation"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-animation-interface",
+          "href": "https://drafts.csswg.org/web-animations-1/#the-animation-interface",
+          "title": "The Animation interface",
+          "number": "6.4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-animation-id",
+        "href": "https://drafts.csswg.org/web-animations-1/#dom-animation-id",
+        "linkingText": [
+          "id"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Animation"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-animation-interface",
+          "href": "https://drafts.csswg.org/web-animations-1/#the-animation-interface",
+          "title": "The Animation interface",
+          "number": "6.4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-animation-effect",
+        "href": "https://drafts.csswg.org/web-animations-1/#dom-animation-effect",
+        "linkingText": [
+          "effect"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Animation"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-animation-interface",
+          "href": "https://drafts.csswg.org/web-animations-1/#the-animation-interface",
+          "title": "The Animation interface",
+          "number": "6.4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-animation-timeline",
+        "href": "https://drafts.csswg.org/web-animations-1/#dom-animation-timeline",
+        "linkingText": [
+          "timeline"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Animation"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-animation-interface",
+          "href": "https://drafts.csswg.org/web-animations-1/#the-animation-interface",
+          "title": "The Animation interface",
+          "number": "6.4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-animation-playbackrate",
+        "href": "https://drafts.csswg.org/web-animations-1/#dom-animation-playbackrate",
+        "linkingText": [
+          "playbackRate"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Animation"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-animation-interface",
+          "href": "https://drafts.csswg.org/web-animations-1/#the-animation-interface",
+          "title": "The Animation interface",
+          "number": "6.4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-animation-playstate",
+        "href": "https://drafts.csswg.org/web-animations-1/#dom-animation-playstate",
+        "linkingText": [
+          "playState"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Animation"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-animation-interface",
+          "href": "https://drafts.csswg.org/web-animations-1/#the-animation-interface",
+          "title": "The Animation interface",
+          "number": "6.4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-animation-replacestate",
+        "href": "https://drafts.csswg.org/web-animations-1/#dom-animation-replacestate",
+        "linkingText": [
+          "replaceState"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Animation"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-animation-interface",
+          "href": "https://drafts.csswg.org/web-animations-1/#the-animation-interface",
+          "title": "The Animation interface",
+          "number": "6.4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-animation-pending",
+        "href": "https://drafts.csswg.org/web-animations-1/#dom-animation-pending",
+        "linkingText": [
+          "pending"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Animation"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-animation-interface",
+          "href": "https://drafts.csswg.org/web-animations-1/#the-animation-interface",
+          "title": "The Animation interface",
+          "number": "6.4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-animation-ready",
+        "href": "https://drafts.csswg.org/web-animations-1/#dom-animation-ready",
+        "linkingText": [
+          "ready"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Animation"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-animation-interface",
+          "href": "https://drafts.csswg.org/web-animations-1/#the-animation-interface",
+          "title": "The Animation interface",
+          "number": "6.4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-animation-finished",
+        "href": "https://drafts.csswg.org/web-animations-1/#dom-animation-finished",
+        "linkingText": [
+          "finished"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Animation"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-animation-interface",
+          "href": "https://drafts.csswg.org/web-animations-1/#the-animation-interface",
+          "title": "The Animation interface",
+          "number": "6.4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-animation-onfinish",
+        "href": "https://drafts.csswg.org/web-animations-1/#dom-animation-onfinish",
+        "linkingText": [
+          "onfinish"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Animation"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-animation-interface",
+          "href": "https://drafts.csswg.org/web-animations-1/#the-animation-interface",
+          "title": "The Animation interface",
+          "number": "6.4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-animation-oncancel",
+        "href": "https://drafts.csswg.org/web-animations-1/#dom-animation-oncancel",
+        "linkingText": [
+          "oncancel"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Animation"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-animation-interface",
+          "href": "https://drafts.csswg.org/web-animations-1/#the-animation-interface",
+          "title": "The Animation interface",
+          "number": "6.4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-animation-onremove",
+        "href": "https://drafts.csswg.org/web-animations-1/#dom-animation-onremove",
+        "linkingText": [
+          "onremove"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Animation"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-animation-interface",
+          "href": "https://drafts.csswg.org/web-animations-1/#the-animation-interface",
+          "title": "The Animation interface",
+          "number": "6.4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-animation-cancel",
+        "href": "https://drafts.csswg.org/web-animations-1/#dom-animation-cancel",
+        "linkingText": [
+          "cancel()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Animation"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-animation-interface",
+          "href": "https://drafts.csswg.org/web-animations-1/#the-animation-interface",
+          "title": "The Animation interface",
+          "number": "6.4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-animation-finish",
+        "href": "https://drafts.csswg.org/web-animations-1/#dom-animation-finish",
+        "linkingText": [
+          "finish()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Animation"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-animation-interface",
+          "href": "https://drafts.csswg.org/web-animations-1/#the-animation-interface",
+          "title": "The Animation interface",
+          "number": "6.4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-animation-play",
+        "href": "https://drafts.csswg.org/web-animations-1/#dom-animation-play",
+        "linkingText": [
+          "play()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Animation"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-animation-interface",
+          "href": "https://drafts.csswg.org/web-animations-1/#the-animation-interface",
+          "title": "The Animation interface",
+          "number": "6.4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-animation-pause",
+        "href": "https://drafts.csswg.org/web-animations-1/#dom-animation-pause",
+        "linkingText": [
+          "pause()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Animation"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-animation-interface",
+          "href": "https://drafts.csswg.org/web-animations-1/#the-animation-interface",
+          "title": "The Animation interface",
+          "number": "6.4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-animation-updateplaybackrate",
+        "href": "https://drafts.csswg.org/web-animations-1/#dom-animation-updateplaybackrate",
+        "linkingText": [
+          "updatePlaybackRate(playbackRate)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Animation"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-animation-interface",
+          "href": "https://drafts.csswg.org/web-animations-1/#the-animation-interface",
+          "title": "The Animation interface",
+          "number": "6.4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-animation-reverse",
+        "href": "https://drafts.csswg.org/web-animations-1/#dom-animation-reverse",
+        "linkingText": [
+          "reverse()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Animation"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-animation-interface",
+          "href": "https://drafts.csswg.org/web-animations-1/#the-animation-interface",
+          "title": "The Animation interface",
+          "number": "6.4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-animation-persist",
+        "href": "https://drafts.csswg.org/web-animations-1/#dom-animation-persist",
+        "linkingText": [
+          "persist()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Animation"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-animation-interface",
+          "href": "https://drafts.csswg.org/web-animations-1/#the-animation-interface",
+          "title": "The Animation interface",
+          "number": "6.4"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-animation-commitstyles",
+        "href": "https://drafts.csswg.org/web-animations-1/#dom-animation-commitstyles",
+        "linkingText": [
+          "commitStyles()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Animation"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-animation-interface",
+          "href": "https://drafts.csswg.org/web-animations-1/#the-animation-interface",
+          "title": "The Animation interface",
+          "number": "6.4"
+        },
+        "definedIn": "dt"
+      }
+    ],
+    "https://drafts.csswg.org/web-animations-2/": [
+      {
+        "id": "dom-animation-starttime",
+        "href": "https://drafts.csswg.org/web-animations-2/#dom-animation-starttime",
+        "linkingText": [
+          "startTime"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Animation"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-animation-interface",
+          "href": "https://drafts.csswg.org/web-animations-2/#the-animation-interface",
+          "title": "The Animation interface",
+          "number": "5.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-animation-currenttime",
+        "href": "https://drafts.csswg.org/web-animations-2/#dom-animation-currenttime",
+        "linkingText": [
+          "currentTime"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Animation"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-animation-interface",
+          "href": "https://drafts.csswg.org/web-animations-2/#the-animation-interface",
+          "title": "The Animation interface",
+          "number": "5.2"
+        },
+        "definedIn": "dt"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "eventtarget",
+        "href": "https://dom.spec.whatwg.org/#eventtarget",
+        "linkingText": [
+          "EventTarget"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventtarget-eventtarget",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-eventtarget",
+        "linkingText": [
+          "EventTarget()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-addeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-addeventlistener",
+        "linkingText": [
+          "addEventListener(type, callback, options)",
+          "addEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-removeeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-removeeventlistener",
+        "linkingText": [
+          "removeEventListener(type, callback, options)",
+          "removeEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-dispatchevent",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-dispatchevent",
+        "linkingText": [
+          "dispatchEvent(event)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}
