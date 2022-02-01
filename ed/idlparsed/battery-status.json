@@ -14,7 +14,7 @@
     },
     "idlNames": {
       "BatteryManager": {
-        "fragment": "[Exposed=Window]\ninterface BatteryManager : EventTarget {\n    readonly        attribute boolean             charging;\n    readonly        attribute unrestricted double chargingTime;\n    readonly        attribute unrestricted double dischargingTime;\n    readonly        attribute double              level;\n                    attribute EventHandler        onchargingchange;\n                    attribute EventHandler        onchargingtimechange;\n                    attribute EventHandler        ondischargingtimechange;\n                    attribute EventHandler        onlevelchange;\n};",
+        "fragment": "[SecureContext, Exposed=Window]\ninterface BatteryManager : EventTarget {\n    readonly        attribute boolean             charging;\n    readonly        attribute unrestricted double chargingTime;\n    readonly        attribute unrestricted double dischargingTime;\n    readonly        attribute double              level;\n                    attribute EventHandler        onchargingchange;\n                    attribute EventHandler        onchargingtimechange;\n                    attribute EventHandler        ondischargingtimechange;\n                    attribute EventHandler        onlevelchange;\n};",
         "type": "interface",
         "name": "BatteryManager",
         "inheritance": "EventTarget",
@@ -143,6 +143,12 @@
         "extAttrs": [
           {
             "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
             "name": "Exposed",
             "rhs": {
               "type": "identifier",
@@ -157,7 +163,7 @@
     "idlExtendedNames": {
       "Navigator": [
         {
-          "fragment": "partial interface Navigator {\n  Promise<BatteryManager> getBattery();\n};",
+          "fragment": "[SecureContext]\npartial interface Navigator {\n  Promise<BatteryManager> getBattery();\n};",
           "type": "interface",
           "name": "Navigator",
           "inheritance": null,
@@ -187,7 +193,14 @@
               "special": ""
             }
           ],
-          "extAttrs": [],
+          "extAttrs": [
+            {
+              "type": "extended-attribute",
+              "name": "SecureContext",
+              "rhs": null,
+              "arguments": []
+            }
+          ],
           "partial": true
         }
       ]
