@@ -3,7 +3,6 @@ const fs = require("fs");
 const ed = require("../ed/index.json");
 const tr = require("../tr/index.json");
 
-const subdirs = ["dfns", "css", "elements", "headings", "idl", "idlparsed", "links", "refs"];
 const idlnamesSubdirs = ["idlnames", "idlnamesparsed"];
 
 
@@ -47,7 +46,10 @@ function checkIdlNames(path, index) {
   }
 }
 
-for (let dir of subdirs) {
+const folders = fs.readdirSync("ed").filter(folder =>
+    !folder.endsWith('patches') && !folder.includes('.') &&
+    !idlnamesSubdirs.includes(folder));
+for (let dir of folders) {
   checkDir("ed/" + dir, ed);
   checkDir("tr/" + dir, tr);
 }
