@@ -190,7 +190,7 @@
         "title": "Battery Status API",
         "url": "https://www.w3.org/TR/battery-status/"
       },
-      "fragment": "partial interface Navigator {\n  Promise<BatteryManager> getBattery();\n};"
+      "fragment": "[SecureContext]\npartial interface Navigator {\n  Promise<BatteryManager> getBattery();\n};"
     },
     {
       "spec": {
