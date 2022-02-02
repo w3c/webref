@@ -1112,7 +1112,7 @@
         "partial": false
       },
       "ReadableStreamBYOBReadResult": {
-        "fragment": "dictionary ReadableStreamBYOBReadResult {\n  ArrayBufferView value;\n  boolean done;\n};",
+        "fragment": "dictionary ReadableStreamBYOBReadResult {\n  (ArrayBufferView or undefined) value;\n  boolean done;\n};",
         "type": "dictionary",
         "name": "ReadableStreamBYOBReadResult",
         "inheritance": null,
@@ -1126,8 +1126,25 @@
               "extAttrs": [],
               "generic": "",
               "nullable": false,
-              "union": false,
-              "idlType": "ArrayBufferView"
+              "union": true,
+              "idlType": [
+                {
+                  "type": null,
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "ArrayBufferView"
+                },
+                {
+                  "type": null,
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "undefined"
+                }
+              ]
             },
             "default": null,
             "required": false
