@@ -16,7 +16,7 @@ jobs:
       run: npm install reffy
 
     # Use a separate checkout to reduce the chances
-    # that ty the time the crawl has ended, the underlying webred checkout
+    # that, by the time the crawl has ended, the underlying webref checkout
     # that gets updated be no longer in sync with origin
     - name: Checkout webref-fallback
       uses: actions/checkout@v2
