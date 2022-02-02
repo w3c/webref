@@ -15,10 +15,18 @@ jobs:
     - name: Install reffy
       run: npm install reffy
 
+    # Use a separate checkout to reduce the chances
+    # that, by the time the crawl has ended, the underlying webref checkout
+    # that gets updated be no longer in sync with origin
+    - name: Checkout webref-fallback
+      uses: actions/checkout@v2
+      with:
+        path: webref-fallback
+
     - name: Run Reffy's crawler
       run: |
         mkdir report
-        node_modules/.bin/reffy --output report
+        node_modules/.bin/reffy --output report --fallback webref-fallback/ed/index.json
 
     - name: Checkout webref
       uses: actions/checkout@v2
