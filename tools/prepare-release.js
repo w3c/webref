@@ -120,7 +120,7 @@ function computeDiff(type) {
 
   if (added.length > 0) {
     diff = "New repo files that are not yet in the released package:\n" +
-      added.map(file => `- ${file}`).join("\n") +
+      added.map(file => `+ ${file}`).join("\n") +
       "\n\n" +
       diff;
   }
