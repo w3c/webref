@@ -31,8 +31,7 @@ Navigator includes NavigatorStorage;
 // Source: Autoplay Policy Detection (https://w3c.github.io/autoplay/)
 [Exposed=Window]
 partial interface Navigator {
-  AutoplayPolicy getAutoplayPolicy(HTMLMediaElementConstructor mediaCtor);
-  AutoplayPolicy getAutoplayPolicy(AudioContextConstructor audioCtor);
+  AutoplayPolicy getAutoplayPolicy(AutoplayPolicyMediaType type);
   AutoplayPolicy getAutoplayPolicy(HTMLMediaElement element);
   AutoplayPolicy getAutoplayPolicy(AudioContext context);
 };

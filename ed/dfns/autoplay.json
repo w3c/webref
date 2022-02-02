@@ -132,32 +132,13 @@
       "definedIn": "table"
     },
     {
-      "id": "callbackdef-htmlmediaelementconstructor",
-      "href": "https://w3c.github.io/autoplay/#callbackdef-htmlmediaelementconstructor",
+      "id": "enumdef-autoplaypolicymediatype",
+      "href": "https://w3c.github.io/autoplay/#enumdef-autoplaypolicymediatype",
       "linkingText": [
-        "HTMLMediaElementConstructor"
+        "AutoplayPolicyMediaType"
       ],
       "localLinkingText": [],
-      "type": "callback",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "autoplay-detection-methods",
-        "href": "https://w3c.github.io/autoplay/#autoplay-detection-methods",
-        "title": "The Autoplay Detection Methods",
-        "number": "2.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "callbackdef-audiocontextconstructor",
-      "href": "https://w3c.github.io/autoplay/#callbackdef-audiocontextconstructor",
-      "linkingText": [
-        "AudioContextConstructor"
-      ],
-      "localLinkingText": [],
-      "type": "callback",
+      "type": "enum",
       "for": [],
       "access": "public",
       "informative": false,
@@ -173,7 +154,7 @@
       "id": "dom-navigator-getautoplaypolicy",
       "href": "https://w3c.github.io/autoplay/#dom-navigator-getautoplaypolicy",
       "linkingText": [
-        "getAutoplayPolicy(mediaCtor)"
+        "getAutoplayPolicy(type)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -191,57 +172,15 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-navigator-getautoplaypolicy-mediactor-mediactor",
-      "href": "https://w3c.github.io/autoplay/#dom-navigator-getautoplaypolicy-mediactor-mediactor",
+      "id": "dom-navigator-getautoplaypolicy-type-type",
+      "href": "https://w3c.github.io/autoplay/#dom-navigator-getautoplaypolicy-type-type",
       "linkingText": [
-        "mediaCtor"
+        "type"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "Navigator/getAutoplayPolicy(mediaCtor)"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "autoplay-detection-methods",
-        "href": "https://w3c.github.io/autoplay/#autoplay-detection-methods",
-        "title": "The Autoplay Detection Methods",
-        "number": "2.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-navigator-getautoplaypolicy-audioctor",
-      "href": "https://w3c.github.io/autoplay/#dom-navigator-getautoplaypolicy-audioctor",
-      "linkingText": [
-        "getAutoplayPolicy(audioCtor)"
-      ],
-      "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "Navigator"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "autoplay-detection-methods",
-        "href": "https://w3c.github.io/autoplay/#autoplay-detection-methods",
-        "title": "The Autoplay Detection Methods",
-        "number": "2.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-navigator-getautoplaypolicy-audioctor-audioctor",
-      "href": "https://w3c.github.io/autoplay/#dom-navigator-getautoplaypolicy-audioctor-audioctor",
-      "linkingText": [
-        "audioCtor"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "Navigator/getAutoplayPolicy(audioCtor)"
+        "Navigator/getAutoplayPolicy(type)"
       ],
       "access": "public",
       "informative": false,
@@ -336,6 +275,50 @@
         "number": "2.2"
       },
       "definedIn": "pre"
+    },
+    {
+      "id": "dom-autoplaypolicymediatype-mediaelement",
+      "href": "https://w3c.github.io/autoplay/#dom-autoplaypolicymediatype-mediaelement",
+      "linkingText": [
+        "\"mediaelement\"",
+        "mediaelement"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AutoplayPolicyMediaType"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "autoplay-detection-methods",
+        "href": "https://w3c.github.io/autoplay/#autoplay-detection-methods",
+        "title": "The Autoplay Detection Methods",
+        "number": "2.2"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dom-autoplaypolicymediatype-audiocontext",
+      "href": "https://w3c.github.io/autoplay/#dom-autoplaypolicymediatype-audiocontext",
+      "linkingText": [
+        "\"audiocontext\"",
+        "audiocontext"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AutoplayPolicyMediaType"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "autoplay-detection-methods",
+        "href": "https://w3c.github.io/autoplay/#autoplay-detection-methods",
+        "title": "The Autoplay Detection Methods",
+        "number": "2.2"
+      },
+      "definedIn": "table"
     }
   ]
 }

@@ -40,12 +40,6 @@ partial dictionary MediaTrackSupportedConstraints {
   boolean torch = true;
 };
 
-// Source: Media Capture Depth Stream Extensions (https://www.w3.org/TR/mediacapture-depth/)
-partial dictionary MediaTrackSupportedConstraints {
-    // Applies to both depth stream track and color stream track:
-    boolean videoKind = true;
-};
-
 // Source: Screen Capture (https://www.w3.org/TR/screen-capture/)
 partial dictionary MediaTrackSupportedConstraints {
   boolean displaySurface = true;

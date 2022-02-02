@@ -9147,7 +9147,7 @@
         "partial": false
       },
       "GPURenderPassDepthStencilAttachment": {
-        "fragment": "dictionary GPURenderPassDepthStencilAttachment {\n    required GPUTextureView view;\n\n    float depthClearValue = 0;\n    required GPULoadOp depthLoadOp;\n    required GPUStoreOp depthStoreOp;\n    boolean depthReadOnly = false;\n\n    GPUStencilValue stencilClearValue = 0;\n    required GPULoadOp stencilLoadOp;\n    required GPUStoreOp stencilStoreOp;\n    boolean stencilReadOnly = false;\n};",
+        "fragment": "dictionary GPURenderPassDepthStencilAttachment {\n    required GPUTextureView view;\n\n    float depthClearValue = 0;\n    GPULoadOp depthLoadOp;\n    GPUStoreOp depthStoreOp;\n    boolean depthReadOnly = false;\n\n    GPUStencilValue stencilClearValue = 0;\n    GPULoadOp stencilLoadOp;\n    GPUStoreOp stencilStoreOp;\n    boolean stencilReadOnly = false;\n};",
         "type": "dictionary",
         "name": "GPURenderPassDepthStencilAttachment",
         "inheritance": null,
@@ -9198,7 +9198,7 @@
               "idlType": "GPULoadOp"
             },
             "default": null,
-            "required": true
+            "required": false
           },
           {
             "type": "field",
@@ -9213,7 +9213,7 @@
               "idlType": "GPUStoreOp"
             },
             "default": null,
-            "required": true
+            "required": false
           },
           {
             "type": "field",
@@ -9264,7 +9264,7 @@
               "idlType": "GPULoadOp"
             },
             "default": null,
-            "required": true
+            "required": false
           },
           {
             "type": "field",
@@ -9279,7 +9279,7 @@
               "idlType": "GPUStoreOp"
             },
             "default": null,
-            "required": true
+            "required": false
           },
           {
             "type": "field",

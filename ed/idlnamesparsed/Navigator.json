@@ -71,7 +71,7 @@
         "title": "Autoplay Policy Detection",
         "url": "https://w3c.github.io/autoplay/"
       },
-      "fragment": "[Exposed=Window]\npartial interface Navigator {\n  AutoplayPolicy getAutoplayPolicy(HTMLMediaElementConstructor mediaCtor);\n  AutoplayPolicy getAutoplayPolicy(AudioContextConstructor audioCtor);\n  AutoplayPolicy getAutoplayPolicy(HTMLMediaElement element);\n  AutoplayPolicy getAutoplayPolicy(AudioContext context);\n};"
+      "fragment": "[Exposed=Window]\npartial interface Navigator {\n  AutoplayPolicy getAutoplayPolicy(AutoplayPolicyMediaType type);\n  AutoplayPolicy getAutoplayPolicy(HTMLMediaElement element);\n  AutoplayPolicy getAutoplayPolicy(AudioContext context);\n};"
     },
     {
       "spec": {
@@ -1257,28 +1257,7 @@
         "id": "dom-navigator-getautoplaypolicy",
         "href": "https://w3c.github.io/autoplay/#dom-navigator-getautoplaypolicy",
         "linkingText": [
-          "getAutoplayPolicy(mediaCtor)"
-        ],
-        "localLinkingText": [],
-        "type": "method",
-        "for": [
-          "Navigator"
-        ],
-        "access": "public",
-        "informative": false,
-        "heading": {
-          "id": "autoplay-detection-methods",
-          "href": "https://w3c.github.io/autoplay/#autoplay-detection-methods",
-          "title": "The Autoplay Detection Methods",
-          "number": "2.2"
-        },
-        "definedIn": "pre"
-      },
-      {
-        "id": "dom-navigator-getautoplaypolicy-audioctor",
-        "href": "https://w3c.github.io/autoplay/#dom-navigator-getautoplaypolicy-audioctor",
-        "linkingText": [
-          "getAutoplayPolicy(audioCtor)"
+          "getAutoplayPolicy(type)"
         ],
         "localLinkingText": [],
         "type": "method",
