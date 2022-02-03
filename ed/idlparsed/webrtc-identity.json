@@ -11,7 +11,7 @@
         ]
       },
       "functions": {
-        "RTCIdentityProviderGlobalScope": [
+        "RTCIdentityProvider": [
           "RTCIdentityProviderGlobalScope",
           "RTCIdentityProviderRegistrar"
         ]
@@ -19,7 +19,7 @@
     },
     "idlNames": {
       "RTCIdentityProviderGlobalScope": {
-        "fragment": "[Global, Exposed=RTCIdentityProviderGlobalScope]\ninterface RTCIdentityProviderGlobalScope : WorkerGlobalScope {\n    readonly        attribute RTCIdentityProviderRegistrar rtcIdentityProvider;\n};",
+        "fragment": "[Global=(Worker,RTCIdentityProvider), Exposed=RTCIdentityProvider]\ninterface RTCIdentityProviderGlobalScope : WorkerGlobalScope {\n    readonly        attribute RTCIdentityProviderRegistrar rtcIdentityProvider;\n};",
         "type": "interface",
         "name": "RTCIdentityProviderGlobalScope",
         "inheritance": "WorkerGlobalScope",
@@ -44,7 +44,17 @@
           {
             "type": "extended-attribute",
             "name": "Global",
-            "rhs": null,
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Worker"
+                },
+                {
+                  "value": "RTCIdentityProvider"
+                }
+              ]
+            },
             "arguments": []
           },
           {
@@ -52,7 +62,7 @@
             "name": "Exposed",
             "rhs": {
               "type": "identifier",
-              "value": "RTCIdentityProviderGlobalScope"
+              "value": "RTCIdentityProvider"
             },
             "arguments": []
           }
@@ -60,7 +70,7 @@
         "partial": false
       },
       "RTCIdentityProviderRegistrar": {
-        "fragment": "[Exposed=RTCIdentityProviderGlobalScope]\ninterface RTCIdentityProviderRegistrar {\n    undefined register (RTCIdentityProvider idp);\n};",
+        "fragment": "[Exposed=RTCIdentityProvider]\ninterface RTCIdentityProviderRegistrar {\n    undefined register (RTCIdentityProvider idp);\n};",
         "type": "interface",
         "name": "RTCIdentityProviderRegistrar",
         "inheritance": null,
@@ -104,7 +114,7 @@
             "name": "Exposed",
             "rhs": {
               "type": "identifier",
-              "value": "RTCIdentityProviderGlobalScope"
+              "value": "RTCIdentityProvider"
             },
             "arguments": []
           }
@@ -883,9 +893,16 @@
         }
       ]
     },
-    "globals": {},
+    "globals": {
+      "Worker": [
+        "RTCIdentityProviderGlobalScope"
+      ],
+      "RTCIdentityProvider": [
+        "RTCIdentityProviderGlobalScope"
+      ]
+    },
     "exposed": {
-      "RTCIdentityProviderGlobalScope": [
+      "RTCIdentityProvider": [
         "RTCIdentityProviderGlobalScope",
         "RTCIdentityProviderRegistrar"
       ],

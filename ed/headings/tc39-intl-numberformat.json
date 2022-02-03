@@ -1,0 +1,260 @@
+{
+  "spec": {
+    "title": "[No title found for https://tc39.es/proposal-intl-numberformat-v3/out/numberformat/proposed.html]",
+    "url": "https://tc39.es/proposal-intl-numberformat-v3/out/numberformat/proposed.html"
+  },
+  "headings": [
+    {
+      "id": "numberformat-objects",
+      "title": "NumberFormat Objects",
+      "level": 1,
+      "number": "1"
+    },
+    {
+      "id": "sec-numberformat-abstracts",
+      "title": "Abstract Operations for NumberFormat Objects",
+      "level": 2,
+      "number": "1.1"
+    },
+    {
+      "id": "sec-setnfdigitoptions",
+      "title": "SetNumberFormatDigitOptions ( intlObj, options, mnfdDefault, mxfdDefault, notation )",
+      "level": 3,
+      "number": "1.1.1"
+    },
+    {
+      "id": "sec-initializenumberformat",
+      "title": "InitializeNumberFormat ( numberFormat, locales, options )",
+      "level": 3,
+      "number": "1.1.2"
+    },
+    {
+      "id": "sec-currencydigits",
+      "title": "CurrencyDigits ( currency )",
+      "level": 3,
+      "number": "1.1.3"
+    },
+    {
+      "id": "sec-number-format-functions",
+      "title": "Number Format Functions",
+      "level": 3,
+      "number": "1.1.4"
+    },
+    {
+      "id": "sec-formatnumberstring",
+      "title": "FormatNumericToString ( intlObject, x )",
+      "level": 3,
+      "number": "1.1.5"
+    },
+    {
+      "id": "sec-partitionnumberpattern",
+      "title": "PartitionNumberPattern ( numberFormat, x )",
+      "level": 3,
+      "number": "1.1.6"
+    },
+    {
+      "id": "sec-partitionnotationsubpattern",
+      "title": "PartitionNotationSubPattern ( numberFormat, x, n, exponent )",
+      "level": 3,
+      "number": "1.1.7"
+    },
+    {
+      "id": "sec-formatnumber",
+      "title": "FormatNumeric ( numberFormat, x )",
+      "level": 3,
+      "number": "1.1.8"
+    },
+    {
+      "id": "sec-formatnumbertoparts",
+      "title": "FormatNumericToParts ( numberFormat, x )",
+      "level": 3,
+      "number": "1.1.9"
+    },
+    {
+      "id": "sec-torawprecision",
+      "title": "ToRawPrecision ( x, minPrecision, maxPrecision, unsignedRoundingMode )",
+      "level": 3,
+      "number": "1.1.10"
+    },
+    {
+      "id": "sec-torawfixed",
+      "title": "ToRawFixed ( x, minFraction, maxFraction, roundingIncrement, unsignedRoundingMode )",
+      "level": 3,
+      "number": "1.1.11"
+    },
+    {
+      "id": "sec-unwrapnumberformat",
+      "title": "UnwrapNumberFormat ( nf )",
+      "level": 3,
+      "number": "1.1.12"
+    },
+    {
+      "id": "sec-setnumberformatunitoptions",
+      "title": "SetNumberFormatUnitOptions ( intlObj, options )",
+      "level": 3,
+      "number": "1.1.13"
+    },
+    {
+      "id": "sec-getnumberformatpattern",
+      "title": "GetNumberFormatPattern ( numberFormat, x )",
+      "level": 3,
+      "number": "1.1.14"
+    },
+    {
+      "id": "sec-getnotationsubpattern",
+      "title": "GetNotationSubPattern ( numberFormat, exponent )",
+      "level": 3,
+      "number": "1.1.15"
+    },
+    {
+      "id": "sec-computeexponent",
+      "title": "ComputeExponent ( numberFormat, x )",
+      "level": 3,
+      "number": "1.1.16"
+    },
+    {
+      "id": "sec-computeexponentformagnitude",
+      "title": "ComputeExponentForMagnitude ( numberFormat, magnitude )",
+      "level": 3,
+      "number": "1.1.17"
+    },
+    {
+      "id": "sec-tointlmathematicalvalue",
+      "title": "ToIntlMathematicalValue ( value )",
+      "level": 3,
+      "number": "1.1.18"
+    },
+    {
+      "id": "sec-getunsignedroundingmode",
+      "title": "GetUnsignedRoundingMode ( roundingMode, isNegative )",
+      "level": 3,
+      "number": "1.1.19"
+    },
+    {
+      "id": "sec-applyunsignedroundingmode",
+      "title": "ApplyUnsignedRoundingMode ( x, r1, r2, unsignedRoundingMode )",
+      "level": 3,
+      "number": "1.1.20"
+    },
+    {
+      "id": "sec-partitionnumberrangepattern",
+      "title": "PartitionNumberRangePattern ( numberFormat, x, y )",
+      "level": 3,
+      "number": "1.1.21"
+    },
+    {
+      "id": "sec-formatapproximately",
+      "title": "FormatApproximately ( numberFormat, result )",
+      "level": 3,
+      "number": "1.1.22"
+    },
+    {
+      "id": "sec-collapsenumberrange",
+      "title": "CollapseNumberRange ( result )",
+      "level": 3,
+      "number": "1.1.23"
+    },
+    {
+      "id": "sec-formatnumericrange",
+      "title": "FormatNumericRange( numberFormat, x, y )",
+      "level": 3,
+      "number": "1.1.24"
+    },
+    {
+      "id": "sec-formatnumericrangetoparts",
+      "title": "FormatNumericRangeToParts( numberFormat, x, y )",
+      "level": 3,
+      "number": "1.1.25"
+    },
+    {
+      "id": "sec-intl-numberformat-constructor",
+      "title": "The Intl.NumberFormat Constructor",
+      "level": 2,
+      "number": "1.2"
+    },
+    {
+      "id": "sec-intl.numberformat",
+      "title": "Intl.NumberFormat ( [ locales [ , options ] ] )",
+      "level": 3,
+      "number": "1.2.1"
+    },
+    {
+      "id": "sec-properties-of-intl-numberformat-constructor",
+      "title": "Properties of the Intl.NumberFormat Constructor",
+      "level": 2,
+      "number": "1.3"
+    },
+    {
+      "id": "sec-intl.numberformat.prototype",
+      "title": "Intl.NumberFormat.prototype",
+      "level": 3,
+      "number": "1.3.1"
+    },
+    {
+      "id": "sec-intl.numberformat.supportedlocalesof",
+      "title": "Intl.NumberFormat.supportedLocalesOf ( locales [ , options ] )",
+      "level": 3,
+      "number": "1.3.2"
+    },
+    {
+      "id": "sec-intl.numberformat-internal-slots",
+      "title": "Internal slots",
+      "level": 3,
+      "number": "1.3.3"
+    },
+    {
+      "id": "sec-properties-of-intl-numberformat-prototype-object",
+      "title": "Properties of the Intl.NumberFormat Prototype Object",
+      "level": 2,
+      "number": "1.4"
+    },
+    {
+      "id": "sec-intl.numberformat.prototype.constructor",
+      "title": "Intl.NumberFormat.prototype.constructor",
+      "level": 3,
+      "number": "1.4.1"
+    },
+    {
+      "id": "sec-intl.numberformat.prototype-@@tostringtag",
+      "title": "Intl.NumberFormat.prototype [ @@toStringTag ]",
+      "level": 3,
+      "number": "1.4.2"
+    },
+    {
+      "id": "sec-intl.numberformat.prototype.format",
+      "title": "get Intl.NumberFormat.prototype.format",
+      "level": 3,
+      "number": "1.4.3"
+    },
+    {
+      "id": "sec-intl.numberformat.prototype.formattoparts",
+      "title": "Intl.NumberFormat.prototype.formatToParts ( value )",
+      "level": 3,
+      "number": "1.4.4"
+    },
+    {
+      "id": "sec-intl.numberformat.prototype.formatrange",
+      "title": "Intl.NumberFormat.prototype.formatRange ( start, end )",
+      "level": 3,
+      "number": "1.4.5"
+    },
+    {
+      "id": "sec-intl.numberformat.prototype.formatrangetoparts",
+      "title": "Intl.NumberFormat.prototype.formatRangeToParts ( start, end )",
+      "level": 3,
+      "number": "1.4.6"
+    },
+    {
+      "id": "sec-intl.numberformat.prototype.resolvedoptions",
+      "title": "Intl.NumberFormat.prototype.resolvedOptions ( )",
+      "level": 3,
+      "number": "1.4.7"
+    },
+    {
+      "id": "sec-properties-of-intl-numberformat-instances",
+      "title": "Properties of Intl.NumberFormat Instances",
+      "level": 2,
+      "number": "1.5"
+    }
+  ]
+}
