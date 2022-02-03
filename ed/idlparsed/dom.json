@@ -1210,7 +1210,7 @@
         "partial": false
       },
       "AbortSignal": {
-        "fragment": "[Exposed=*]\ninterface AbortSignal : EventTarget {\n  [NewObject] static AbortSignal abort(optional any reason);\n\n  readonly attribute boolean aborted;\n  readonly attribute any reason;\n  undefined throwIfAborted();\n\n  attribute EventHandler onabort;\n};",
+        "fragment": "[Exposed=*]\ninterface AbortSignal : EventTarget {\n  [NewObject] static AbortSignal abort(optional any reason);\n  [NewObject] static AbortSignal timeout([EnforceRange] unsigned long long milliseconds);\n\n  readonly attribute boolean aborted;\n  readonly attribute any reason;\n  undefined throwIfAborted();\n\n  attribute EventHandler onabort;\n};",
         "type": "interface",
         "name": "AbortSignal",
         "inheritance": "EventTarget",
@@ -1241,6 +1241,52 @@
                 },
                 "default": null,
                 "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "NewObject",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "static"
+          },
+          {
+            "type": "operation",
+            "name": "timeout",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "AbortSignal"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "milliseconds",
+                "extAttrs": [
+                  {
+                    "type": "extended-attribute",
+                    "name": "EnforceRange",
+                    "rhs": null,
+                    "arguments": []
+                  }
+                ],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "unsigned long long"
+                },
+                "default": null,
+                "optional": false,
                 "variadic": false
               }
             ],

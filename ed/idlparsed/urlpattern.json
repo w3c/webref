@@ -634,7 +634,7 @@
         "partial": false
       },
       "URLPatternComponentResult": {
-        "fragment": "dictionary URLPatternComponentResult {\n  USVString input;\n  record<USVString, USVString> groups;\n};",
+        "fragment": "dictionary URLPatternComponentResult {\n  USVString input;\n  record<USVString, (USVString or undefined)> groups;\n};",
         "type": "dictionary",
         "name": "URLPatternComponentResult",
         "inheritance": null,
@@ -678,8 +678,25 @@
                   "extAttrs": [],
                   "generic": "",
                   "nullable": false,
-                  "union": false,
-                  "idlType": "USVString"
+                  "union": true,
+                  "idlType": [
+                    {
+                      "type": null,
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "USVString"
+                    },
+                    {
+                      "type": null,
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "undefined"
+                    }
+                  ]
                 }
               ]
             },
