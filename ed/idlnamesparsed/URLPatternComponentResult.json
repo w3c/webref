@@ -6,7 +6,7 @@
       "title": "URLPattern API",
       "url": "https://wicg.github.io/urlpattern/"
     },
-    "fragment": "dictionary URLPatternComponentResult {\n  USVString input;\n  record<USVString, USVString> groups;\n};",
+    "fragment": "dictionary URLPatternComponentResult {\n  USVString input;\n  record<USVString, (USVString or undefined)> groups;\n};",
     "href": "https://wicg.github.io/urlpattern/#dictdef-urlpatterncomponentresult"
   },
   "extended": [],
