@@ -36,6 +36,10 @@ jobs:
     - name: Copy report
       run: rsync -av report/ webref/ed/
 
+    - name: Drop extract files from specs that are no longer crawled
+      run: node tools/clean-dropped-specs-files.js ed
+      working-directory: webref
+
     - name: Push updates to git
       run: |
         git config user.name "reffy-bot"
