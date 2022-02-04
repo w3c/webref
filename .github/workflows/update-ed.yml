@@ -40,6 +40,10 @@ jobs:
       run: node tools/clean-dropped-specs-files.js ed
       working-directory: webref
 
+    - name: Bump minor version of packages if needed
+      run: node tools/bump-packages-minor.js
+      working-directory: webref
+
     - name: Push updates to git
       run: |
         git config user.name "reffy-bot"
