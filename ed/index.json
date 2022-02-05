@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2022-02-04T18:38:22.989Z",
+  "date": "2022-02-05T00:57:13.476Z",
   "options": {
     "fallback": "webref-fallback/ed/index.json",
     "output": "report",
@@ -21,7 +21,7 @@
   },
   "stats": {
     "crawled": 462,
-    "errors": 0
+    "errors": 15
   },
   "results": [
     {
@@ -3857,7 +3857,7 @@
       ],
       "crawled": "https://wicg.github.io/app-history/",
       "generator": "bikeshed",
-      "date": "1 February 2022",
+      "date": "4 February 2022",
       "links": "links/app-history.json",
       "refs": "refs/app-history.json",
       "idl": "idl/app-history.idl",
@@ -8798,7 +8798,7 @@
         "https://www.rfc-editor.org/rfc/rfc2397"
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc2397",
-      "date": "4 February 2022",
+      "date": "5 February 2022",
       "links": "links/rfc2397.json",
       "ids": "ids/rfc2397.json"
     },
@@ -8831,7 +8831,7 @@
         "https://www.rfc-editor.org/rfc/rfc4120"
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc4120",
-      "date": "4 February 2022",
+      "date": "5 February 2022",
       "links": "links/rfc4120.json",
       "ids": "ids/rfc4120.json"
     },
@@ -8940,7 +8940,7 @@
         "https://www.rfc-editor.org/rfc/rfc6454"
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc6454",
-      "date": "4 February 2022",
+      "date": "5 February 2022",
       "links": "links/rfc6454.json",
       "ids": "ids/rfc6454.json"
     },
@@ -8973,7 +8973,7 @@
         "https://www.rfc-editor.org/rfc/rfc6797"
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc6797",
-      "date": "4 February 2022",
+      "date": "5 February 2022",
       "links": "links/rfc6797.json",
       "ids": "ids/rfc6797.json"
     },
@@ -9006,7 +9006,7 @@
         "https://www.rfc-editor.org/rfc/rfc7034"
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7034",
-      "date": "4 February 2022",
+      "date": "5 February 2022",
       "links": "links/rfc7034.json",
       "ids": "ids/rfc7034.json"
     },
@@ -9268,7 +9268,7 @@
         "https://www.rfc-editor.org/rfc/rfc7239"
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7239",
-      "date": "4 February 2022",
+      "date": "5 February 2022",
       "links": "links/rfc7239.json",
       "ids": "ids/rfc7239.json"
     },
@@ -9301,7 +9301,7 @@
         "https://www.rfc-editor.org/rfc/rfc7469"
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7469",
-      "date": "4 February 2022",
+      "date": "5 February 2022",
       "links": "links/rfc7469.json",
       "ids": "ids/rfc7469.json"
     },
@@ -9410,7 +9410,7 @@
         "https://www.rfc-editor.org/rfc/rfc7578"
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7578",
-      "date": "4 February 2022",
+      "date": "5 February 2022",
       "links": "links/rfc7578.json",
       "ids": "ids/rfc7578.json"
     },
@@ -9671,7 +9671,7 @@
         "https://www.rfc-editor.org/rfc/rfc8942"
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc8942",
-      "date": "4 February 2022",
+      "date": "5 February 2022",
       "links": "links/rfc8942.json",
       "refs": "refs/rfc8942.json",
       "headings": "headings/rfc8942.json",
@@ -10553,7 +10553,8 @@
       "css": "css/css-align.json",
       "dfns": "dfns/css-align-3.json",
       "headings": "headings/css-align-3.json",
-      "ids": "ids/css-align-3.json"
+      "ids": "ids/css-align-3.json",
+      "error": "Error: Loading https://drafts.csswg.org/css-align/ triggered HTTP status 500 Error: Loading https://drafts.csswg.org/css-align/ triggered HTTP status 500\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:506:23)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:85:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:395:22)\n    at async Promise.all (index 240)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:403:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-animation-worklet-1/",
@@ -10663,6 +10664,7 @@
       "dfns": "dfns/css-animations-1.json",
       "headings": "headings/css-animations-1.json",
       "ids": "ids/css-animations-1.json",
+      "error": "Error: Loading https://drafts.csswg.org/css-animations/ triggered HTTP status 500 Error: Loading https://drafts.csswg.org/css-animations/ triggered HTTP status 500\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:506:23)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:85:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:395:22)\n    at async Promise.all (index 242)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:403:21)",
       "idlparsed": "idlparsed/css-animations-1.json"
     },
     {
@@ -10717,7 +10719,8 @@
       "css": "css/css-backgrounds.json",
       "dfns": "dfns/css-backgrounds-3.json",
       "headings": "headings/css-backgrounds-3.json",
-      "ids": "ids/css-backgrounds-3.json"
+      "ids": "ids/css-backgrounds-3.json",
+      "error": "Error: Loading https://drafts.csswg.org/css-backgrounds/ triggered HTTP status 500 Error: Loading https://drafts.csswg.org/css-backgrounds/ triggered HTTP status 500\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:506:23)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:85:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:395:22)\n    at async Promise.all (index 243)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:403:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-box-3/",
@@ -10770,7 +10773,8 @@
       "refs": "refs/css-box-3.json",
       "dfns": "dfns/css-box-3.json",
       "headings": "headings/css-box-3.json",
-      "ids": "ids/css-box-3.json"
+      "ids": "ids/css-box-3.json",
+      "error": "Error: Loading https://drafts.csswg.org/css-box-3/ triggered HTTP status 500 Error: Loading https://drafts.csswg.org/css-box-3/ triggered HTTP status 500\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:506:23)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:85:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:395:22)\n    at async Promise.all (index 244)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:403:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-box-4/",
@@ -10824,7 +10828,8 @@
       "css": "css/css-box.json",
       "dfns": "dfns/css-box-4.json",
       "headings": "headings/css-box-4.json",
-      "ids": "ids/css-box-4.json"
+      "ids": "ids/css-box-4.json",
+      "error": "Error: Loading https://drafts.csswg.org/css-box-4/ triggered HTTP status 500 Error: Loading https://drafts.csswg.org/css-box-4/ triggered HTTP status 500\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:506:23)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:85:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:395:22)\n    at async Promise.all (index 245)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:403:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-break-3/",
@@ -10877,7 +10882,8 @@
       "refs": "refs/css-break-3.json",
       "dfns": "dfns/css-break-3.json",
       "headings": "headings/css-break-3.json",
-      "ids": "ids/css-break-3.json"
+      "ids": "ids/css-break-3.json",
+      "error": "Error: Loading https://drafts.csswg.org/css-break/ triggered HTTP status 500 Error: Loading https://drafts.csswg.org/css-break/ triggered HTTP status 500\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:506:23)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:85:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:395:22)\n    at async Promise.all (index 246)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:403:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-break-4/",
@@ -10931,7 +10937,8 @@
       "css": "css/css-break.json",
       "dfns": "dfns/css-break-4.json",
       "headings": "headings/css-break-4.json",
-      "ids": "ids/css-break-4.json"
+      "ids": "ids/css-break-4.json",
+      "error": "Error: Loading https://drafts.csswg.org/css-break-4/ triggered HTTP status 500 Error: Loading https://drafts.csswg.org/css-break-4/ triggered HTTP status 500\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:506:23)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:85:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:395:22)\n    at async Promise.all (index 247)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:403:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-cascade-3/",
@@ -10984,7 +10991,8 @@
       "refs": "refs/css-cascade-3.json",
       "dfns": "dfns/css-cascade-3.json",
       "headings": "headings/css-cascade-3.json",
-      "ids": "ids/css-cascade-3.json"
+      "ids": "ids/css-cascade-3.json",
+      "error": "Error: Loading https://drafts.csswg.org/css-cascade-3/ triggered HTTP status 500 Error: Loading https://drafts.csswg.org/css-cascade-3/ triggered HTTP status 500\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:506:23)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:85:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:395:22)\n    at async Promise.all (index 248)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:403:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-cascade-4/",
@@ -11038,7 +11046,8 @@
       "refs": "refs/css-cascade-4.json",
       "dfns": "dfns/css-cascade-4.json",
       "headings": "headings/css-cascade-4.json",
-      "ids": "ids/css-cascade-4.json"
+      "ids": "ids/css-cascade-4.json",
+      "error": "Error: Loading https://drafts.csswg.org/css-cascade-4/ triggered HTTP status 500 Error: Loading https://drafts.csswg.org/css-cascade-4/ triggered HTTP status 500\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:506:23)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:85:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:395:22)\n    at async Promise.all (index 249)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:403:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-cascade-5/",
@@ -11095,6 +11104,7 @@
       "dfns": "dfns/css-cascade-5.json",
       "headings": "headings/css-cascade-5.json",
       "ids": "ids/css-cascade-5.json",
+      "error": "Error: Loading https://drafts.csswg.org/css-cascade-5/ triggered HTTP status 500 Error: Loading https://drafts.csswg.org/css-cascade-5/ triggered HTTP status 500\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:506:23)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:85:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:395:22)\n    at async Promise.all (index 250)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:403:21)",
       "idlparsed": "idlparsed/css-cascade-5.json"
     },
     {
@@ -11149,7 +11159,8 @@
       "css": "css/css-cascade-6.json",
       "dfns": "dfns/css-cascade-6.json",
       "headings": "headings/css-cascade-6.json",
-      "ids": "ids/css-cascade-6.json"
+      "ids": "ids/css-cascade-6.json",
+      "error": "Error: Loading https://drafts.csswg.org/css-cascade-6/ triggered HTTP status 500 Error: Loading https://drafts.csswg.org/css-cascade-6/ triggered HTTP status 500\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:506:23)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:85:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:395:22)\n    at async Promise.all (index 251)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:403:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-color-4/",
@@ -11203,7 +11214,8 @@
       "css": "css/css-color.json",
       "dfns": "dfns/css-color-4.json",
       "headings": "headings/css-color-4.json",
-      "ids": "ids/css-color-4.json"
+      "ids": "ids/css-color-4.json",
+      "error": "Error: Loading https://drafts.csswg.org/css-color/ triggered HTTP status 500 Error: Loading https://drafts.csswg.org/css-color/ triggered HTTP status 500\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:506:23)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:85:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:395:22)\n    at async Promise.all (index 252)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:403:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-color-5/",
@@ -11257,7 +11269,8 @@
       "css": "css/css-color-5.json",
       "dfns": "dfns/css-color-5.json",
       "headings": "headings/css-color-5.json",
-      "ids": "ids/css-color-5.json"
+      "ids": "ids/css-color-5.json",
+      "error": "Error: Loading https://drafts.csswg.org/css-color-5/ triggered HTTP status 500 Error: Loading https://drafts.csswg.org/css-color-5/ triggered HTTP status 500\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:506:23)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:85:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:395:22)\n    at async Promise.all (index 253)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:403:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-color-adjust-1/",
@@ -11310,7 +11323,8 @@
       "css": "css/css-color-adjust.json",
       "dfns": "dfns/css-color-adjust-1.json",
       "headings": "headings/css-color-adjust-1.json",
-      "ids": "ids/css-color-adjust-1.json"
+      "ids": "ids/css-color-adjust-1.json",
+      "error": "Error: Loading https://drafts.csswg.org/css-color-adjust-1/ triggered HTTP status 500 Error: Loading https://drafts.csswg.org/css-color-adjust-1/ triggered HTTP status 500\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:506:23)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:85:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:395:22)\n    at async Promise.all (index 254)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:403:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-conditional-3/",
@@ -11366,6 +11380,7 @@
       "dfns": "dfns/css-conditional-3.json",
       "headings": "headings/css-conditional-3.json",
       "ids": "ids/css-conditional-3.json",
+      "error": "Error: Loading https://drafts.csswg.org/css-conditional-3/ triggered HTTP status 500 Error: Loading https://drafts.csswg.org/css-conditional-3/ triggered HTTP status 500\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:506:23)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:85:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:395:22)\n    at async Promise.all (index 255)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:403:21)",
       "idlparsed": "idlparsed/css-conditional-3.json"
     },
     {
@@ -12009,7 +12024,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-fonts-4/",
       "generator": "bikeshed",
-      "date": "21 December 2021",
+      "date": "4 February 2022",
       "links": "links/css-fonts-4.json",
       "refs": "refs/css-fonts-4.json",
       "idl": "idl/css-fonts.idl",
@@ -21197,7 +21212,7 @@
       ],
       "crawled": "https://gpuweb.github.io/gpuweb/",
       "generator": "bikeshed",
-      "date": "3 February 2022",
+      "date": "5 February 2022",
       "links": "links/webgpu.json",
       "refs": "refs/webgpu.json",
       "idl": "idl/webgpu.idl",
@@ -22258,7 +22273,7 @@
       ],
       "crawled": "https://gpuweb.github.io/gpuweb/wgsl/",
       "generator": "bikeshed",
-      "date": "3 February 2022",
+      "date": "5 February 2022",
       "links": "links/WGSL.json",
       "refs": "refs/WGSL.json",
       "dfns": "dfns/WGSL.json",
