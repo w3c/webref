@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2022-02-05T12:42:03.740Z",
+  "date": "2022-02-05T18:39:12.895Z",
   "options": {
     "fallback": "webref-fallback/ed/index.json",
     "output": "report",
@@ -21,7 +21,7 @@
   },
   "stats": {
     "crawled": 462,
-    "errors": 0
+    "errors": 4
   },
   "results": [
     {
@@ -62,7 +62,7 @@
       ],
       "crawled": "https://compat.spec.whatwg.org/",
       "generator": "bikeshed",
-      "date": "2 February 2022",
+      "date": "5 February 2022",
       "links": "links/compat.json",
       "refs": "refs/compat.json",
       "idl": "idl/compat.idl",
@@ -17281,7 +17281,8 @@
       "css": "css/mediaqueries.json",
       "dfns": "dfns/mediaqueries-4.json",
       "headings": "headings/mediaqueries-4.json",
-      "ids": "ids/mediaqueries-4.json"
+      "ids": "ids/mediaqueries-4.json",
+      "error": "Error: Loading https://drafts.csswg.org/mediaqueries-4/ triggered HTTP status 500 Error: Loading https://drafts.csswg.org/mediaqueries-4/ triggered HTTP status 500\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:506:23)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:85:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:395:22)\n    at async Promise.all (index 366)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:403:21)"
     },
     {
       "url": "https://www.w3.org/TR/mediaqueries-5/",
@@ -17335,7 +17336,8 @@
       "css": "css/mediaqueries-5.json",
       "dfns": "dfns/mediaqueries-5.json",
       "headings": "headings/mediaqueries-5.json",
-      "ids": "ids/mediaqueries-5.json"
+      "ids": "ids/mediaqueries-5.json",
+      "error": "Error: Loading https://drafts.csswg.org/mediaqueries-5/ triggered HTTP status 500 Error: Loading https://drafts.csswg.org/mediaqueries-5/ triggered HTTP status 500\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:506:23)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:85:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:395:22)\n    at async Promise.all (index 367)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:403:21)"
     },
     {
       "url": "https://www.w3.org/TR/mediasession/",
@@ -19004,7 +19006,8 @@
       "idlparsed": "idlparsed/resize-observer.json",
       "dfns": "dfns/resize-observer-1.json",
       "headings": "headings/resize-observer-1.json",
-      "ids": "ids/resize-observer-1.json"
+      "ids": "ids/resize-observer-1.json",
+      "error": "Error: Loading https://drafts.csswg.org/resize-observer/ triggered HTTP status 500 Error: Loading https://drafts.csswg.org/resize-observer/ triggered HTTP status 500\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:506:23)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:85:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:395:22)\n    at async Promise.all (index 399)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:403:21)"
     },
     {
       "url": "https://www.w3.org/TR/resource-hints/",
@@ -20833,7 +20836,8 @@
       "idlparsed": "idlparsed/web-animations.json",
       "dfns": "dfns/web-animations-1.json",
       "headings": "headings/web-animations-1.json",
-      "ids": "ids/web-animations-1.json"
+      "ids": "ids/web-animations-1.json",
+      "error": "Error: Loading https://drafts.csswg.org/web-animations-1/ triggered HTTP status 500 Error: Loading https://drafts.csswg.org/web-animations-1/ triggered HTTP status 500\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:506:23)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:85:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:395:22)\n    at async Promise.all (index 432)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:403:21)"
     },
     {
       "url": "https://www.w3.org/TR/web-share/",
