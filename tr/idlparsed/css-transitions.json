@@ -1,0 +1,288 @@
+{
+  "spec": {
+    "title": "CSS Transitions",
+    "url": "https://www.w3.org/TR/css-transitions-1/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {
+        "Window": [
+          "TransitionEvent"
+        ]
+      },
+      "functions": {}
+    },
+    "idlNames": {
+      "TransitionEvent": {
+        "fragment": "[Exposed=Window,\n Constructor(CSSOMString type, optional TransitionEventInit transitionEventInitDict)]\ninterface TransitionEvent : Event {\n  readonly attribute CSSOMString propertyName;\n  readonly attribute double elapsedTime;\n  readonly attribute CSSOMString pseudoElement;\n};",
+        "type": "interface",
+        "name": "TransitionEvent",
+        "inheritance": "Event",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "propertyName",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "elapsedTime",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "pseudoElement",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "Constructor",
+            "rhs": null,
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "type",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CSSOMString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "transitionEventInitDict",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "TransitionEventInit"
+                },
+                "default": null,
+                "optional": true,
+                "variadic": false
+              }
+            ]
+          }
+        ],
+        "partial": false
+      },
+      "TransitionEventInit": {
+        "fragment": "dictionary TransitionEventInit : EventInit {\n  CSSOMString propertyName = \"\";\n  double elapsedTime = 0.0;\n  CSSOMString pseudoElement = \"\";\n};",
+        "type": "dictionary",
+        "name": "TransitionEventInit",
+        "inheritance": "EventInit",
+        "members": [
+          {
+            "type": "field",
+            "name": "propertyName",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSOMString"
+            },
+            "default": {
+              "type": "string",
+              "value": ""
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "elapsedTime",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "default": {
+              "type": "number",
+              "value": "0.0"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "pseudoElement",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSOMString"
+            },
+            "default": {
+              "type": "string",
+              "value": ""
+            },
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      }
+    },
+    "idlExtendedNames": {
+      "GlobalEventHandlers": [
+        {
+          "fragment": "partial interface GlobalEventHandlers {\n  attribute EventHandler ontransitionrun;\n  attribute EventHandler ontransitionstart;\n  attribute EventHandler ontransitionend;\n  attribute EventHandler ontransitioncancel;\n};",
+          "type": "interface",
+          "name": "GlobalEventHandlers",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "attribute",
+              "name": "ontransitionrun",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "EventHandler"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": false
+            },
+            {
+              "type": "attribute",
+              "name": "ontransitionstart",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "EventHandler"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": false
+            },
+            {
+              "type": "attribute",
+              "name": "ontransitionend",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "EventHandler"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": false
+            },
+            {
+              "type": "attribute",
+              "name": "ontransitioncancel",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "EventHandler"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": false
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ]
+    },
+    "globals": {},
+    "exposed": {
+      "Window": [
+        "TransitionEvent"
+      ]
+    },
+    "dependencies": {
+      "TransitionEvent": [
+        "Event",
+        "CSSOMString",
+        "TransitionEventInit"
+      ],
+      "TransitionEventInit": [
+        "EventInit",
+        "CSSOMString"
+      ],
+      "GlobalEventHandlers": [
+        "EventHandler"
+      ]
+    },
+    "externalDependencies": [
+      "Event",
+      "CSSOMString",
+      "EventInit",
+      "GlobalEventHandlers",
+      "EventHandler"
+    ],
+    "hasObsoleteIdl": false
+  }
+}

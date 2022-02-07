@@ -1,0 +1,713 @@
+{
+  "spec": {
+    "title": "Content Security Policy Level 3",
+    "url": "https://www.w3.org/TR/CSP3/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {
+        "Window": [
+          "SecurityPolicyViolationEvent"
+        ],
+        "Worker": [
+          "SecurityPolicyViolationEvent"
+        ]
+      },
+      "functions": {
+        "Window": [
+          "CSPViolationReportBody"
+        ]
+      }
+    },
+    "idlNames": {
+      "CSPViolationReportBody": {
+        "fragment": "[Exposed=Window]\ninterface CSPViolationReportBody : ReportBody {\n  readonly attribute USVString documentURL;\n  readonly attribute USVString? referrer;\n  readonly attribute USVString? blockedURL;\n  readonly attribute DOMString effectiveDirective;\n  readonly attribute DOMString originalPolicy;\n  readonly attribute USVString? sourceFile;\n  readonly attribute DOMString? sample;\n  readonly attribute SecurityPolicyViolationEventDisposition disposition;\n  readonly attribute unsigned short statusCode;\n  readonly attribute unsigned long? lineNumber;\n  readonly attribute unsigned long? columnNumber;\n};",
+        "type": "interface",
+        "name": "CSPViolationReportBody",
+        "inheritance": "ReportBody",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "documentURL",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "referrer",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "blockedURL",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "effectiveDirective",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "originalPolicy",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "sourceFile",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "sample",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "disposition",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SecurityPolicyViolationEventDisposition"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "statusCode",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "lineNumber",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "columnNumber",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "SecurityPolicyViolationEventDisposition": {
+        "fragment": "enum SecurityPolicyViolationEventDisposition {\n  \"enforce\", \"report\"\n};",
+        "type": "enum",
+        "name": "SecurityPolicyViolationEventDisposition",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "enforce"
+          },
+          {
+            "type": "enum-value",
+            "value": "report"
+          }
+        ],
+        "extAttrs": []
+      },
+      "SecurityPolicyViolationEvent": {
+        "fragment": "[Exposed=(Window,Worker)]\ninterface SecurityPolicyViolationEvent : Event {\n    constructor(DOMString type, optional SecurityPolicyViolationEventInit eventInitDict = {});\n    readonly    attribute USVString      documentURI;\n    readonly    attribute USVString      referrer;\n    readonly    attribute USVString      blockedURI;\n    readonly    attribute DOMString      effectiveDirective;\n    readonly    attribute DOMString      violatedDirective; // historical alias of effectiveDirective\n    readonly    attribute DOMString      originalPolicy;\n    readonly    attribute USVString      sourceFile;\n    readonly    attribute DOMString      sample;\n    readonly    attribute SecurityPolicyViolationEventDisposition      disposition;\n    readonly    attribute unsigned short statusCode;\n    readonly    attribute unsigned long  lineNumber;\n    readonly    attribute unsigned long  columnNumber;\n};",
+        "type": "interface",
+        "name": "SecurityPolicyViolationEvent",
+        "inheritance": "Event",
+        "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "type",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "eventInitDict",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "SecurityPolicyViolationEventInit"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": []
+          },
+          {
+            "type": "attribute",
+            "name": "documentURI",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "referrer",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "blockedURI",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "effectiveDirective",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "violatedDirective",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "originalPolicy",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "sourceFile",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "sample",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "disposition",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SecurityPolicyViolationEventDisposition"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "statusCode",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "lineNumber",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "columnNumber",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                }
+              ]
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "SecurityPolicyViolationEventInit": {
+        "fragment": "dictionary SecurityPolicyViolationEventInit : EventInit {\n    required USVString      documentURI;\n             USVString      referrer = \"\";\n             USVString      blockedURI = \"\";\n    required DOMString      violatedDirective;\n    required DOMString      effectiveDirective;\n    required DOMString      originalPolicy;\n             USVString      sourceFile = \"\";\n             DOMString      sample = \"\";\n    required SecurityPolicyViolationEventDisposition disposition;\n    required unsigned short statusCode;\n             unsigned long  lineNumber = 0;\n             unsigned long  columnNumber = 0;\n};",
+        "type": "dictionary",
+        "name": "SecurityPolicyViolationEventInit",
+        "inheritance": "EventInit",
+        "members": [
+          {
+            "type": "field",
+            "name": "documentURI",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "referrer",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "default": {
+              "type": "string",
+              "value": ""
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "blockedURI",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "default": {
+              "type": "string",
+              "value": ""
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "violatedDirective",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "effectiveDirective",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "originalPolicy",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "sourceFile",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "default": {
+              "type": "string",
+              "value": ""
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "sample",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": {
+              "type": "string",
+              "value": ""
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "disposition",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SecurityPolicyViolationEventDisposition"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "statusCode",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "lineNumber",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "default": {
+              "type": "number",
+              "value": "0"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "columnNumber",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "default": {
+              "type": "number",
+              "value": "0"
+            },
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      }
+    },
+    "idlExtendedNames": {},
+    "globals": {},
+    "exposed": {
+      "Window": [
+        "CSPViolationReportBody",
+        "SecurityPolicyViolationEvent"
+      ],
+      "Worker": [
+        "SecurityPolicyViolationEvent"
+      ]
+    },
+    "dependencies": {
+      "CSPViolationReportBody": [
+        "ReportBody",
+        "SecurityPolicyViolationEventDisposition"
+      ],
+      "SecurityPolicyViolationEvent": [
+        "Event",
+        "SecurityPolicyViolationEventInit",
+        "SecurityPolicyViolationEventDisposition"
+      ],
+      "SecurityPolicyViolationEventInit": [
+        "EventInit",
+        "SecurityPolicyViolationEventDisposition"
+      ]
+    },
+    "externalDependencies": [
+      "ReportBody",
+      "Event",
+      "EventInit"
+    ],
+    "hasObsoleteIdl": false
+  }
+}

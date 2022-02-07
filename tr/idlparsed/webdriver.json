@@ -1,0 +1,60 @@
+{
+  "spec": {
+    "title": "WebDriver",
+    "url": "https://www.w3.org/TR/webdriver2/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {},
+      "functions": {}
+    },
+    "idlNames": {
+      "NavigatorAutomationInformation": {
+        "fragment": "interface mixin NavigatorAutomationInformation {\n  readonly attribute boolean webdriver;\n};",
+        "type": "interface mixin",
+        "name": "NavigatorAutomationInformation",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "attribute",
+            "name": "webdriver",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      }
+    },
+    "idlExtendedNames": {
+      "Navigator": [
+        {
+          "fragment": "Navigator includes NavigatorAutomationInformation;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "Navigator",
+          "includes": "NavigatorAutomationInformation"
+        }
+      ]
+    },
+    "globals": {},
+    "exposed": {},
+    "dependencies": {
+      "NavigatorAutomationInformation": [],
+      "Navigator": [
+        "NavigatorAutomationInformation"
+      ]
+    },
+    "externalDependencies": [],
+    "hasObsoleteIdl": false
+  }
+}

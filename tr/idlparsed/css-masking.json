@@ -1,0 +1,206 @@
+{
+  "spec": {
+    "title": "CSS Masking Module Level 1",
+    "url": "https://www.w3.org/TR/css-masking-1/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {},
+      "functions": {
+        "Window": [
+          "SVGClipPathElement",
+          "SVGMaskElement"
+        ]
+      }
+    },
+    "idlNames": {
+      "SVGClipPathElement": {
+        "fragment": "[Exposed=Window]\ninterface SVGClipPathElement : SVGElement {\n  readonly attribute SVGAnimatedEnumeration clipPathUnits;\n  readonly attribute SVGAnimatedTransformList transform;\n};",
+        "type": "interface",
+        "name": "SVGClipPathElement",
+        "inheritance": "SVGElement",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "clipPathUnits",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedEnumeration"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "transform",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedTransformList"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "SVGMaskElement": {
+        "fragment": "[Exposed=Window]\ninterface SVGMaskElement : SVGElement {\n  readonly attribute SVGAnimatedEnumeration maskUnits;\n  readonly attribute SVGAnimatedEnumeration maskContentUnits;\n  readonly attribute SVGAnimatedLength x;\n  readonly attribute SVGAnimatedLength y;\n  readonly attribute SVGAnimatedLength width;\n  readonly attribute SVGAnimatedLength height;\n};",
+        "type": "interface",
+        "name": "SVGMaskElement",
+        "inheritance": "SVGElement",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "maskUnits",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedEnumeration"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "maskContentUnits",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedEnumeration"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "x",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedLength"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "y",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedLength"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "width",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedLength"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "height",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedLength"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      }
+    },
+    "idlExtendedNames": {},
+    "globals": {},
+    "exposed": {
+      "Window": [
+        "SVGClipPathElement",
+        "SVGMaskElement"
+      ]
+    },
+    "dependencies": {
+      "SVGClipPathElement": [
+        "SVGElement",
+        "SVGAnimatedEnumeration",
+        "SVGAnimatedTransformList"
+      ],
+      "SVGMaskElement": [
+        "SVGElement",
+        "SVGAnimatedEnumeration",
+        "SVGAnimatedLength"
+      ]
+    },
+    "externalDependencies": [
+      "SVGElement",
+      "SVGAnimatedEnumeration",
+      "SVGAnimatedTransformList",
+      "SVGAnimatedLength"
+    ],
+    "hasObsoleteIdl": false
+  }
+}

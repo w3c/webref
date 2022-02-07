@@ -1,0 +1,545 @@
+{
+  "spec": {
+    "title": "WebXR Depth Sensing Module",
+    "url": "https://www.w3.org/TR/webxr-depth-sensing-1/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {},
+      "functions": {
+        "Window": [
+          "XRDepthInformation",
+          "XRCPUDepthInformation",
+          "XRWebGLDepthInformation"
+        ]
+      }
+    },
+    "idlNames": {
+      "XRDepthUsage": {
+        "fragment": "enum XRDepthUsage {\n  \"cpu-optimized\",\n  \"gpu-optimized\",\n};",
+        "type": "enum",
+        "name": "XRDepthUsage",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "cpu-optimized"
+          },
+          {
+            "type": "enum-value",
+            "value": "gpu-optimized"
+          }
+        ],
+        "extAttrs": []
+      },
+      "XRDepthDataFormat": {
+        "fragment": "enum XRDepthDataFormat {\n  \"luminance-alpha\",\n  \"float32\"\n};",
+        "type": "enum",
+        "name": "XRDepthDataFormat",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "luminance-alpha"
+          },
+          {
+            "type": "enum-value",
+            "value": "float32"
+          }
+        ],
+        "extAttrs": []
+      },
+      "XRDepthStateInit": {
+        "fragment": "dictionary XRDepthStateInit {\n  required sequence<XRDepthUsage> usagePreference;\n  required sequence<XRDepthDataFormat> dataFormatPreference;\n};",
+        "type": "dictionary",
+        "name": "XRDepthStateInit",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "usagePreference",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "XRDepthUsage"
+                }
+              ]
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "dataFormatPreference",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "XRDepthDataFormat"
+                }
+              ]
+            },
+            "default": null,
+            "required": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "XRDepthInformation": {
+        "fragment": "[SecureContext, Exposed=Window]\ninterface XRDepthInformation {\n  readonly attribute unsigned long width;\n  readonly attribute unsigned long height;\n\n  [SameObject] readonly attribute XRRigidTransform normDepthBufferFromNormView;\n  readonly attribute float rawValueToMeters;\n};",
+        "type": "interface",
+        "name": "XRDepthInformation",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "attribute",
+            "name": "width",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "height",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "normDepthBufferFromNormView",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "XRRigidTransform"
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "SameObject",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "rawValueToMeters",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "float"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "XRCPUDepthInformation": {
+        "fragment": "[Exposed=Window]\ninterface XRCPUDepthInformation : XRDepthInformation {\n  [SameObject] readonly attribute ArrayBuffer data;\n\n  float getDepthInMeters(float x, float y);\n};",
+        "type": "interface",
+        "name": "XRCPUDepthInformation",
+        "inheritance": "XRDepthInformation",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "data",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "ArrayBuffer"
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "SameObject",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "operation",
+            "name": "getDepthInMeters",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "float"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "x",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "float"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "y",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "float"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "XRWebGLDepthInformation": {
+        "fragment": "[Exposed=Window]\ninterface XRWebGLDepthInformation : XRDepthInformation {\n  [SameObject] readonly attribute WebGLTexture texture;\n};",
+        "type": "interface",
+        "name": "XRWebGLDepthInformation",
+        "inheritance": "XRDepthInformation",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "texture",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "WebGLTexture"
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "SameObject",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      }
+    },
+    "idlExtendedNames": {
+      "XRSessionInit": [
+        {
+          "fragment": "partial dictionary XRSessionInit {\n  XRDepthStateInit depthSensing;\n};",
+          "type": "dictionary",
+          "name": "XRSessionInit",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "depthSensing",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "XRDepthStateInit"
+              },
+              "default": null,
+              "required": false
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ],
+      "XRSession": [
+        {
+          "fragment": "partial interface XRSession {\n  readonly attribute XRDepthUsage depthUsage;\n  readonly attribute XRDepthDataFormat depthDataFormat;\n};",
+          "type": "interface",
+          "name": "XRSession",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "attribute",
+              "name": "depthUsage",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "XRDepthUsage"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": true
+            },
+            {
+              "type": "attribute",
+              "name": "depthDataFormat",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "XRDepthDataFormat"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": true
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ],
+      "XRFrame": [
+        {
+          "fragment": "partial interface XRFrame {\n  XRCPUDepthInformation? getDepthInformation(XRView view);\n};",
+          "type": "interface",
+          "name": "XRFrame",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "operation",
+              "name": "getDepthInformation",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": true,
+                "union": false,
+                "idlType": "XRCPUDepthInformation"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "view",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "XRView"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ],
+      "XRWebGLBinding": [
+        {
+          "fragment": "partial interface XRWebGLBinding {\n  XRWebGLDepthInformation? getDepthInformation(XRView view);\n};",
+          "type": "interface",
+          "name": "XRWebGLBinding",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "operation",
+              "name": "getDepthInformation",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": true,
+                "union": false,
+                "idlType": "XRWebGLDepthInformation"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "view",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "XRView"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ]
+    },
+    "globals": {},
+    "exposed": {
+      "Window": [
+        "XRDepthInformation",
+        "XRCPUDepthInformation",
+        "XRWebGLDepthInformation"
+      ]
+    },
+    "dependencies": {
+      "XRDepthStateInit": [
+        "XRDepthUsage",
+        "XRDepthDataFormat"
+      ],
+      "XRSessionInit": [
+        "XRDepthStateInit"
+      ],
+      "XRSession": [
+        "XRDepthUsage",
+        "XRDepthDataFormat"
+      ],
+      "XRDepthInformation": [
+        "XRRigidTransform"
+      ],
+      "XRCPUDepthInformation": [
+        "XRDepthInformation",
+        "ArrayBuffer"
+      ],
+      "XRFrame": [
+        "XRCPUDepthInformation",
+        "XRView"
+      ],
+      "XRWebGLDepthInformation": [
+        "XRDepthInformation",
+        "WebGLTexture"
+      ],
+      "XRWebGLBinding": [
+        "XRWebGLDepthInformation",
+        "XRView"
+      ]
+    },
+    "externalDependencies": [
+      "XRSessionInit",
+      "XRSession",
+      "XRRigidTransform",
+      "ArrayBuffer",
+      "XRFrame",
+      "XRView",
+      "WebGLTexture",
+      "XRWebGLBinding"
+    ],
+    "hasObsoleteIdl": false
+  }
+}

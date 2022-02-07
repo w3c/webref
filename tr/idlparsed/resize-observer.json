@@ -1,0 +1,555 @@
+{
+  "spec": {
+    "title": "Resize Observer",
+    "url": "https://www.w3.org/TR/resize-observer-1/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {
+        "Window": [
+          "ResizeObserver"
+        ]
+      },
+      "functions": {
+        "Window": [
+          "ResizeObserverEntry"
+        ]
+      }
+    },
+    "idlNames": {
+      "ResizeObserverBoxOptions": {
+        "fragment": "enum ResizeObserverBoxOptions {\n    \"border-box\", \"content-box\", \"device-pixel-content-box\"\n};",
+        "type": "enum",
+        "name": "ResizeObserverBoxOptions",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "border-box"
+          },
+          {
+            "type": "enum-value",
+            "value": "content-box"
+          },
+          {
+            "type": "enum-value",
+            "value": "device-pixel-content-box"
+          }
+        ],
+        "extAttrs": []
+      },
+      "ResizeObserverOptions": {
+        "fragment": "dictionary ResizeObserverOptions {\n    ResizeObserverBoxOptions box = \"content-box\";\n};",
+        "type": "dictionary",
+        "name": "ResizeObserverOptions",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "box",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "ResizeObserverBoxOptions"
+            },
+            "default": {
+              "type": "string",
+              "value": "content-box"
+            },
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "ResizeObserver": {
+        "fragment": "[Exposed=(Window),\n Constructor(ResizeObserverCallback callback)]\ninterface ResizeObserver {\n    void observe(Element target, optional ResizeObserverOptions options);\n    void unobserve(Element target);\n    void disconnect();\n};",
+        "type": "interface",
+        "name": "ResizeObserver",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "operation",
+            "name": "observe",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "void"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "target",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "Element"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "options",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "ResizeObserverOptions"
+                },
+                "default": null,
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "unobserve",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "void"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "target",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "Element"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "disconnect",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "void"
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": ""
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                }
+              ]
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "Constructor",
+            "rhs": null,
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "callback",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "ResizeObserverCallback"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ]
+          }
+        ],
+        "partial": false
+      },
+      "ResizeObserverCallback": {
+        "fragment": "callback ResizeObserverCallback = void (sequence<ResizeObserverEntry> entries, ResizeObserver observer);",
+        "type": "callback",
+        "name": "ResizeObserverCallback",
+        "idlType": {
+          "type": "return-type",
+          "extAttrs": [],
+          "generic": "",
+          "nullable": false,
+          "union": false,
+          "idlType": "void"
+        },
+        "arguments": [
+          {
+            "type": "argument",
+            "name": "entries",
+            "extAttrs": [],
+            "idlType": {
+              "type": "argument-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "ResizeObserverEntry"
+                }
+              ]
+            },
+            "default": null,
+            "optional": false,
+            "variadic": false
+          },
+          {
+            "type": "argument",
+            "name": "observer",
+            "extAttrs": [],
+            "idlType": {
+              "type": "argument-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "ResizeObserver"
+            },
+            "default": null,
+            "optional": false,
+            "variadic": false
+          }
+        ],
+        "extAttrs": []
+      },
+      "ResizeObserverEntry": {
+        "fragment": "[Exposed=Window]\ninterface ResizeObserverEntry {\n    readonly attribute Element target;\n    readonly attribute DOMRectReadOnly contentRect;\n    readonly attribute sequence<ResizeObserverSize> borderBoxSize;\n    readonly attribute sequence<ResizeObserverSize> contentBoxSize;\n    readonly attribute sequence<ResizeObserverSize> devicePixelContentBoxSize;\n};",
+        "type": "interface",
+        "name": "ResizeObserverEntry",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "attribute",
+            "name": "target",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "Element"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "contentRect",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMRectReadOnly"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "borderBoxSize",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "ResizeObserverSize"
+                }
+              ]
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "contentBoxSize",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "ResizeObserverSize"
+                }
+              ]
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "devicePixelContentBoxSize",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "ResizeObserverSize"
+                }
+              ]
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "ResizeObserverSize": {
+        "fragment": "interface ResizeObserverSize {\n    readonly attribute unrestricted double inlineSize;\n    readonly attribute unrestricted double blockSize;\n};",
+        "type": "interface",
+        "name": "ResizeObserverSize",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "attribute",
+            "name": "inlineSize",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unrestricted double"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "blockSize",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unrestricted double"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "ResizeObservation": {
+        "fragment": "[Constructor(Element target)\n]\ninterface ResizeObservation {\n    readonly attribute Element target;\n    readonly attribute ResizeObserverBoxOptions observedBox;\n    readonly attribute sequence<ResizeObserverSize> lastReportedSizes;\n};",
+        "type": "interface",
+        "name": "ResizeObservation",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "attribute",
+            "name": "target",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "Element"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "observedBox",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "ResizeObserverBoxOptions"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "lastReportedSizes",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "ResizeObserverSize"
+                }
+              ]
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Constructor",
+            "rhs": null,
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "target",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "Element"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ]
+          }
+        ],
+        "partial": false
+      }
+    },
+    "idlExtendedNames": {},
+    "globals": {},
+    "exposed": {
+      "Window": [
+        "ResizeObserver",
+        "ResizeObserverEntry"
+      ]
+    },
+    "dependencies": {
+      "ResizeObserverOptions": [
+        "ResizeObserverBoxOptions"
+      ],
+      "ResizeObserver": [
+        "ResizeObserverCallback",
+        "void",
+        "Element",
+        "ResizeObserverOptions"
+      ],
+      "ResizeObserverEntry": [
+        "Element",
+        "DOMRectReadOnly",
+        "ResizeObserverSize"
+      ],
+      "ResizeObserverSize": [],
+      "ResizeObservation": [
+        "Element",
+        "ResizeObserverBoxOptions",
+        "ResizeObserverSize"
+      ]
+    },
+    "externalDependencies": [
+      "void",
+      "Element",
+      "DOMRectReadOnly"
+    ],
+    "hasObsoleteIdl": false
+  }
+}

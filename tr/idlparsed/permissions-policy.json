@@ -1,0 +1,366 @@
+{
+  "spec": {
+    "title": "Permissions Policy",
+    "url": "https://www.w3.org/TR/permissions-policy-1/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {},
+      "functions": {
+        "Window": [
+          "PermissionsPolicy",
+          "PermissionsPolicyViolationReportBody"
+        ]
+      }
+    },
+    "idlNames": {
+      "PermissionsPolicy": {
+        "fragment": "[Exposed=Window]\ninterface PermissionsPolicy {\n  boolean allowsFeature(DOMString feature, optional DOMString origin);\n  sequence<DOMString> features();\n  sequence<DOMString> allowedFeatures();\n  sequence<DOMString> getAllowlistForFeature(DOMString feature);\n};",
+        "type": "interface",
+        "name": "PermissionsPolicy",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "operation",
+            "name": "allowsFeature",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "feature",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "origin",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": null,
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "features",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                }
+              ]
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "allowedFeatures",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                }
+              ]
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "getAllowlistForFeature",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                }
+              ]
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "feature",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "PermissionsPolicyViolationReportBody": {
+        "fragment": "[Exposed=Window]\ninterface PermissionsPolicyViolationReportBody : ReportBody {\n  readonly attribute DOMString featureId;\n  readonly attribute DOMString? sourceFile;\n  readonly attribute long? lineNumber;\n  readonly attribute long? columnNumber;\n  readonly attribute DOMString disposition;\n};",
+        "type": "interface",
+        "name": "PermissionsPolicyViolationReportBody",
+        "inheritance": "ReportBody",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "featureId",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "sourceFile",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "lineNumber",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "long"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "columnNumber",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "long"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "disposition",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      }
+    },
+    "idlExtendedNames": {
+      "Document": [
+        {
+          "fragment": "partial interface Document {\n    [SameObject] readonly attribute PermissionsPolicy permissionsPolicy;\n};",
+          "type": "interface",
+          "name": "Document",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "attribute",
+              "name": "permissionsPolicy",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "PermissionsPolicy"
+              },
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "SameObject",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "special": "",
+              "readonly": true
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ],
+      "HTMLIFrameElement": [
+        {
+          "fragment": "partial interface HTMLIFrameElement {\n    [SameObject] readonly attribute PermissionsPolicy permissionsPolicy;\n};",
+          "type": "interface",
+          "name": "HTMLIFrameElement",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "attribute",
+              "name": "permissionsPolicy",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "PermissionsPolicy"
+              },
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "SameObject",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "special": "",
+              "readonly": true
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ]
+    },
+    "globals": {},
+    "exposed": {
+      "Window": [
+        "PermissionsPolicy",
+        "PermissionsPolicyViolationReportBody"
+      ]
+    },
+    "dependencies": {
+      "PermissionsPolicy": [],
+      "Document": [
+        "PermissionsPolicy"
+      ],
+      "HTMLIFrameElement": [
+        "PermissionsPolicy"
+      ],
+      "PermissionsPolicyViolationReportBody": [
+        "ReportBody"
+      ]
+    },
+    "externalDependencies": [
+      "Document",
+      "HTMLIFrameElement",
+      "ReportBody"
+    ],
+    "hasObsoleteIdl": false
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "spec": {
+    "title": "CSS Device Adaptation Module Level 1",
+    "url": "https://www.w3.org/TR/css-device-adapt-1/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {},
+      "functions": {}
+    },
+    "idlNames": {
+      "CSSViewportRule": {
+        "fragment": "interface CSSViewportRule : CSSRule {\n    readonly attribute CSSStyleDeclaration style;\n};",
+        "type": "interface",
+        "name": "CSSViewportRule",
+        "inheritance": "CSSRule",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "style",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSStyleDeclaration"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      }
+    },
+    "idlExtendedNames": {
+      "CSSRule": [
+        {
+          "fragment": "partial interface CSSRule {\n    const unsigned short VIEWPORT_RULE = 15;\n};",
+          "type": "interface",
+          "name": "CSSRule",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "const",
+              "name": "VIEWPORT_RULE",
+              "idlType": {
+                "type": "const-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "unsigned short"
+              },
+              "extAttrs": [],
+              "value": {
+                "type": "number",
+                "value": "15"
+              }
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ]
+    },
+    "globals": {},
+    "exposed": {},
+    "dependencies": {
+      "CSSRule": [],
+      "CSSViewportRule": [
+        "CSSRule",
+        "CSSStyleDeclaration"
+      ]
+    },
+    "externalDependencies": [
+      "CSSRule",
+      "CSSStyleDeclaration"
+    ],
+    "hasObsoleteIdl": false
+  }
+}

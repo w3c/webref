@@ -6,7 +6,7 @@
       "title": "Battery Status API",
       "url": "https://www.w3.org/TR/battery-status/"
     },
-    "fragment": "[Exposed=Window]\ninterface BatteryManager : EventTarget {\n    readonly        attribute boolean             charging;\n    readonly        attribute unrestricted double chargingTime;\n    readonly        attribute unrestricted double dischargingTime;\n    readonly        attribute double              level;\n                    attribute EventHandler        onchargingchange;\n                    attribute EventHandler        onchargingtimechange;\n                    attribute EventHandler        ondischargingtimechange;\n                    attribute EventHandler        onlevelchange;\n};",
+    "fragment": "[SecureContext, Exposed=Window]\ninterface BatteryManager : EventTarget {\n    readonly        attribute boolean             charging;\n    readonly        attribute unrestricted double chargingTime;\n    readonly        attribute unrestricted double dischargingTime;\n    readonly        attribute double              level;\n                    attribute EventHandler        onchargingchange;\n                    attribute EventHandler        onchargingtimechange;\n                    attribute EventHandler        ondischargingtimechange;\n                    attribute EventHandler        onlevelchange;\n};",
     "href": "https://www.w3.org/TR/battery-status/#dom-batterymanager"
   },
   "extended": [],

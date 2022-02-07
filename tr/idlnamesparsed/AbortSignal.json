@@ -6,7 +6,7 @@
       "title": "DOM Standard",
       "url": "https://dom.spec.whatwg.org/"
     },
-    "fragment": "[Exposed=*]\ninterface AbortSignal : EventTarget {\n  [NewObject] static AbortSignal abort(optional any reason);\n\n  readonly attribute boolean aborted;\n  readonly attribute any reason;\n  undefined throwIfAborted();\n\n  attribute EventHandler onabort;\n};",
+    "fragment": "[Exposed=*]\ninterface AbortSignal : EventTarget {\n  [NewObject] static AbortSignal abort(optional any reason);\n  [NewObject] static AbortSignal timeout([EnforceRange] unsigned long long milliseconds);\n\n  readonly attribute boolean aborted;\n  readonly attribute any reason;\n  undefined throwIfAborted();\n\n  attribute EventHandler onabort;\n};",
     "href": "https://dom.spec.whatwg.org/#abortsignal"
   },
   "extended": [],

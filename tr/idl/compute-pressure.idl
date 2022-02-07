@@ -17,6 +17,7 @@ interface ComputePressureObserver {
   undefined unobserve(ComputePressureTarget target);
   undefined disconnect();
   sequence<ComputePressureEntry> takeRecords();
+  [SameObject] static readonly attribute FrozenArray<DOMString> supportedTargetTypes;
 };
 
 dictionary ComputePressureEntry {

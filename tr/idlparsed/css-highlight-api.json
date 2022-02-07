@@ -1,0 +1,229 @@
+{
+  "spec": {
+    "title": "CSS Custom Highlight API Module Level 1",
+    "url": "https://www.w3.org/TR/css-highlight-api-1/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {
+        "Window": [
+          "Highlight"
+        ]
+      },
+      "functions": {
+        "Window": [
+          "HighlightRegistry"
+        ]
+      }
+    },
+    "idlNames": {
+      "HighlightType": {
+        "fragment": "enum HighlightType {\n  \"highlight\",\n  \"spelling-error\",\n  \"grammar-error\"\n};",
+        "type": "enum",
+        "name": "HighlightType",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "highlight"
+          },
+          {
+            "type": "enum-value",
+            "value": "spelling-error"
+          },
+          {
+            "type": "enum-value",
+            "value": "grammar-error"
+          }
+        ],
+        "extAttrs": []
+      },
+      "Highlight": {
+        "fragment": "[Exposed=Window]\ninterface Highlight {\n  constructor(AbstractRange... initialRanges);\n  setlike<AbstractRange>;\n  attribute long priority;\n  attribute HighlightType type;\n};",
+        "type": "interface",
+        "name": "Highlight",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "initialRanges",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "AbstractRange"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": true
+              }
+            ],
+            "extAttrs": []
+          },
+          {
+            "type": "setlike",
+            "idlType": [
+              {
+                "type": null,
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "AbstractRange"
+              }
+            ],
+            "arguments": [],
+            "extAttrs": [],
+            "readonly": false,
+            "async": false
+          },
+          {
+            "type": "attribute",
+            "name": "priority",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "long"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "type",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "HighlightType"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "HighlightRegistry": {
+        "fragment": "[Exposed=Window]\ninterface HighlightRegistry {\n  maplike<DOMString, Highlight>;\n};",
+        "type": "interface",
+        "name": "HighlightRegistry",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "maplike",
+            "idlType": [
+              {
+                "type": null,
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "DOMString"
+              },
+              {
+                "type": null,
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "Highlight"
+              }
+            ],
+            "arguments": [],
+            "extAttrs": [],
+            "readonly": false,
+            "async": false
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      }
+    },
+    "idlExtendedNames": {
+      "CSS": [
+        {
+          "fragment": "partial namespace CSS {\n  readonly attribute HighlightRegistry highlights;\n};",
+          "type": "namespace",
+          "name": "CSS",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "attribute",
+              "name": "highlights",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "HighlightRegistry"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": true
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ]
+    },
+    "globals": {},
+    "exposed": {
+      "Window": [
+        "Highlight",
+        "HighlightRegistry"
+      ]
+    },
+    "dependencies": {
+      "Highlight": [
+        "AbstractRange",
+        "HighlightType"
+      ],
+      "CSS": [
+        "HighlightRegistry"
+      ],
+      "HighlightRegistry": [
+        "Highlight"
+      ]
+    },
+    "externalDependencies": [
+      "AbstractRange",
+      "CSS"
+    ],
+    "hasObsoleteIdl": false
+  }
+}

@@ -42,22 +42,6 @@ partial dictionary MediaTrackConstraintSet {
   ConstrainBoolean             torch;
 };
 
-// Source: Media Capture Depth Stream Extensions (https://www.w3.org/TR/mediacapture-depth/)
-partial dictionary MediaTrackConstraintSet {
-    // Apply to both depth stream track and color stream track:
-    ConstrainDOMString videoKind;
-    ConstrainDouble    focalLengthX;
-    ConstrainDouble    focalLengthY;
-    ConstrainDouble    principalPointX;
-    ConstrainDouble    principalPointY;
-    ConstrainBoolean   deprojectionDistortionCoefficients;
-    ConstrainBoolean   projectionDistortionCoefficients;
-    // Apply to depth stream track:
-    ConstrainDouble    depthNear;
-    ConstrainDouble    depthFar;
-    ConstrainBoolean   depthToVideoTransform;
-};
-
 // Source: Screen Capture (https://www.w3.org/TR/screen-capture/)
 partial dictionary MediaTrackConstraintSet {
   ConstrainDOMString displaySurface;

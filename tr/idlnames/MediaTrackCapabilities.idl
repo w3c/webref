@@ -41,22 +41,6 @@ partial dictionary MediaTrackCapabilities {
   boolean              torch;
 };
 
-// Source: Media Capture Depth Stream Extensions (https://www.w3.org/TR/mediacapture-depth/)
-partial dictionary MediaTrackCapabilities {
-    // Apply to both depth stream track and color stream track:
-    DOMString               videoKind;
-    (double or DoubleRange) focalLengthX;
-    (double or DoubleRange) focalLengthY;
-    (double or DoubleRange) principalPointX;
-    (double or DoubleRange) principalPointY;
-    boolean                 deprojectionDistortionCoefficients;
-    boolean                 projectionDistortionCoefficients;
-    // Apply to depth stream track:
-    (double or DoubleRange) depthNear;
-    (double or DoubleRange) depthFar;
-    boolean                 depthToVideoTransform;
-};
-
 // Source: Screen Capture (https://www.w3.org/TR/screen-capture/)
 partial dictionary MediaTrackCapabilities {
   DOMString displaySurface;

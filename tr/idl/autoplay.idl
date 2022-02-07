@@ -9,13 +9,11 @@ enum AutoplayPolicy {
   "disallowed"
 };
 
-callback HTMLMediaElementConstructor = HTMLMediaElement ();
-callback AudioContextConstructor = AudioContext ();
+enum AutoplayPolicyMediaType { "mediaelement", "audiocontext" };
 
 [Exposed=Window]
 partial interface Navigator {
-  AutoplayPolicy getAutoplayPolicy(HTMLMediaElementConstructor mediaCtor);
-  AutoplayPolicy getAutoplayPolicy(AudioContextConstructor audioCtor);
+  AutoplayPolicy getAutoplayPolicy(AutoplayPolicyMediaType type);
   AutoplayPolicy getAutoplayPolicy(HTMLMediaElement element);
   AutoplayPolicy getAutoplayPolicy(AudioContext context);
 };

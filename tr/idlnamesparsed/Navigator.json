@@ -71,7 +71,7 @@
         "title": "Autoplay Policy Detection",
         "url": "https://w3c.github.io/autoplay/"
       },
-      "fragment": "[Exposed=Window]\npartial interface Navigator {\n  AutoplayPolicy getAutoplayPolicy(HTMLMediaElementConstructor mediaCtor);\n  AutoplayPolicy getAutoplayPolicy(AudioContextConstructor audioCtor);\n  AutoplayPolicy getAutoplayPolicy(HTMLMediaElement element);\n  AutoplayPolicy getAutoplayPolicy(AudioContext context);\n};"
+      "fragment": "[Exposed=Window]\npartial interface Navigator {\n  AutoplayPolicy getAutoplayPolicy(AutoplayPolicyMediaType type);\n  AutoplayPolicy getAutoplayPolicy(HTMLMediaElement element);\n  AutoplayPolicy getAutoplayPolicy(AudioContext context);\n};"
     },
     {
       "spec": {
@@ -190,7 +190,7 @@
         "title": "Battery Status API",
         "url": "https://www.w3.org/TR/battery-status/"
       },
-      "fragment": "partial interface Navigator {\n  Promise<BatteryManager> getBattery();\n};"
+      "fragment": "[SecureContext]\npartial interface Navigator {\n  Promise<BatteryManager> getBattery();\n};"
     },
     {
       "spec": {

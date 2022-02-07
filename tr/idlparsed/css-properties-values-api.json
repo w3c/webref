@@ -1,0 +1,239 @@
+{
+  "spec": {
+    "title": "CSS Properties and Values API Level 1",
+    "url": "https://www.w3.org/TR/css-properties-values-api-1/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {},
+      "functions": {
+        "Window": [
+          "CSSPropertyRule"
+        ]
+      }
+    },
+    "idlNames": {
+      "PropertyDefinition": {
+        "fragment": "dictionary PropertyDefinition {\n  required DOMString name;\n           DOMString syntax       = \"*\";\n  required boolean   inherits;\n           DOMString initialValue;\n};",
+        "type": "dictionary",
+        "name": "PropertyDefinition",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "name",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "syntax",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": {
+              "type": "string",
+              "value": "*"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "inherits",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "initialValue",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "CSSPropertyRule": {
+        "fragment": "[Exposed=Window]\ninterface CSSPropertyRule : CSSRule {\n    readonly attribute CSSOMString name;\n    readonly attribute CSSOMString syntax;\n    readonly attribute boolean inherits;\n    readonly attribute CSSOMString? initialValue;\n};",
+        "type": "interface",
+        "name": "CSSPropertyRule",
+        "inheritance": "CSSRule",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "name",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "syntax",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "inherits",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "initialValue",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "CSSOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      }
+    },
+    "idlExtendedNames": {
+      "CSS": [
+        {
+          "fragment": "partial namespace CSS {\n  undefined registerProperty(PropertyDefinition definition);\n};",
+          "type": "namespace",
+          "name": "CSS",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "operation",
+              "name": "registerProperty",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "undefined"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "definition",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "PropertyDefinition"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ]
+    },
+    "globals": {},
+    "exposed": {
+      "Window": [
+        "CSSPropertyRule"
+      ]
+    },
+    "dependencies": {
+      "PropertyDefinition": [],
+      "CSS": [
+        "PropertyDefinition"
+      ],
+      "CSSPropertyRule": [
+        "CSSRule",
+        "CSSOMString"
+      ]
+    },
+    "externalDependencies": [
+      "CSS",
+      "CSSRule",
+      "CSSOMString"
+    ],
+    "hasObsoleteIdl": false
+  }
+}

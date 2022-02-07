@@ -1,0 +1,584 @@
+{
+  "spec": {
+    "title": "WebVTT: The Web Video Text Tracks Format",
+    "url": "https://www.w3.org/TR/webvtt1/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {
+        "Window": [
+          "VTTCue",
+          "VTTRegion"
+        ]
+      },
+      "functions": {}
+    },
+    "idlNames": {
+      "AutoKeyword": {
+        "fragment": "enum AutoKeyword { \"auto\" };",
+        "type": "enum",
+        "name": "AutoKeyword",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "auto"
+          }
+        ],
+        "extAttrs": []
+      },
+      "LineAndPositionSetting": {
+        "fragment": "typedef (double or AutoKeyword) LineAndPositionSetting;",
+        "type": "typedef",
+        "name": "LineAndPositionSetting",
+        "idlType": {
+          "type": "typedef-type",
+          "extAttrs": [],
+          "generic": "",
+          "nullable": false,
+          "union": true,
+          "idlType": [
+            {
+              "type": null,
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            {
+              "type": null,
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "AutoKeyword"
+            }
+          ]
+        },
+        "extAttrs": []
+      },
+      "DirectionSetting": {
+        "fragment": "enum DirectionSetting { \"\" /* horizontal */, \"rl\", \"lr\" };",
+        "type": "enum",
+        "name": "DirectionSetting",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": ""
+          },
+          {
+            "type": "enum-value",
+            "value": "rl"
+          },
+          {
+            "type": "enum-value",
+            "value": "lr"
+          }
+        ],
+        "extAttrs": []
+      },
+      "LineAlignSetting": {
+        "fragment": "enum LineAlignSetting { \"start\", \"center\", \"end\" };",
+        "type": "enum",
+        "name": "LineAlignSetting",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "start"
+          },
+          {
+            "type": "enum-value",
+            "value": "center"
+          },
+          {
+            "type": "enum-value",
+            "value": "end"
+          }
+        ],
+        "extAttrs": []
+      },
+      "PositionAlignSetting": {
+        "fragment": "enum PositionAlignSetting { \"line-left\", \"center\", \"line-right\", \"auto\" };",
+        "type": "enum",
+        "name": "PositionAlignSetting",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "line-left"
+          },
+          {
+            "type": "enum-value",
+            "value": "center"
+          },
+          {
+            "type": "enum-value",
+            "value": "line-right"
+          },
+          {
+            "type": "enum-value",
+            "value": "auto"
+          }
+        ],
+        "extAttrs": []
+      },
+      "AlignSetting": {
+        "fragment": "enum AlignSetting { \"start\", \"center\", \"end\", \"left\", \"right\" };",
+        "type": "enum",
+        "name": "AlignSetting",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "start"
+          },
+          {
+            "type": "enum-value",
+            "value": "center"
+          },
+          {
+            "type": "enum-value",
+            "value": "end"
+          },
+          {
+            "type": "enum-value",
+            "value": "left"
+          },
+          {
+            "type": "enum-value",
+            "value": "right"
+          }
+        ],
+        "extAttrs": []
+      },
+      "VTTCue": {
+        "fragment": "[Exposed=Window,\n Constructor(double startTime, double endTime, DOMString text)]\ninterface VTTCue : TextTrackCue {\n  attribute VTTRegion? region;\n  attribute DirectionSetting vertical;\n  attribute boolean snapToLines;\n  attribute LineAndPositionSetting line;\n  attribute LineAlignSetting lineAlign;\n  attribute LineAndPositionSetting position;\n  attribute PositionAlignSetting positionAlign;\n  attribute double size;\n  attribute AlignSetting align;\n  attribute DOMString text;\n  DocumentFragment getCueAsHTML();\n};",
+        "type": "interface",
+        "name": "VTTCue",
+        "inheritance": "TextTrackCue",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "region",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "VTTRegion"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "vertical",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DirectionSetting"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "snapToLines",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "line",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "LineAndPositionSetting"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "lineAlign",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "LineAlignSetting"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "position",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "LineAndPositionSetting"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "positionAlign",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "PositionAlignSetting"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "size",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "align",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "AlignSetting"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "text",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "operation",
+            "name": "getCueAsHTML",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DocumentFragment"
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": ""
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "Constructor",
+            "rhs": null,
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "startTime",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "double"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "endTime",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "double"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "text",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ]
+          }
+        ],
+        "partial": false
+      },
+      "ScrollSetting": {
+        "fragment": "enum ScrollSetting { \"\" /* none */, \"up\" };",
+        "type": "enum",
+        "name": "ScrollSetting",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": ""
+          },
+          {
+            "type": "enum-value",
+            "value": "up"
+          }
+        ],
+        "extAttrs": []
+      },
+      "VTTRegion": {
+        "fragment": "[Exposed=Window,\n Constructor]\ninterface VTTRegion {\n  attribute DOMString id;\n  attribute double width;\n  attribute unsigned long lines;\n  attribute double regionAnchorX;\n  attribute double regionAnchorY;\n  attribute double viewportAnchorX;\n  attribute double viewportAnchorY;\n  attribute ScrollSetting scroll;\n};",
+        "type": "interface",
+        "name": "VTTRegion",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "attribute",
+            "name": "id",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "width",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "lines",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "regionAnchorX",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "regionAnchorY",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "viewportAnchorX",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "viewportAnchorY",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "scroll",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "ScrollSetting"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "Constructor",
+            "rhs": null,
+            "arguments": []
+          }
+        ],
+        "partial": false
+      }
+    },
+    "idlExtendedNames": {},
+    "globals": {},
+    "exposed": {
+      "Window": [
+        "VTTCue",
+        "VTTRegion"
+      ]
+    },
+    "dependencies": {
+      "VTTCue": [
+        "TextTrackCue",
+        "VTTRegion",
+        "DirectionSetting",
+        "LineAndPositionSetting",
+        "LineAlignSetting",
+        "PositionAlignSetting",
+        "AlignSetting",
+        "DocumentFragment"
+      ],
+      "VTTRegion": [
+        "ScrollSetting"
+      ]
+    },
+    "externalDependencies": [
+      "TextTrackCue",
+      "DocumentFragment"
+    ],
+    "hasObsoleteIdl": false
+  }
+}

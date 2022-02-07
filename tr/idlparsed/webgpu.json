@@ -7673,7 +7673,7 @@
         "partial": false
       },
       "GPUComputePassEncoder": {
-        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUComputePassEncoder {\n    undefined setPipeline(GPUComputePipeline pipeline);\n    undefined dispatch(GPUSize32 workgroupCountX, optional GPUSize32 workgroupCountY = 1, optional GPUSize32 workgroupCountZ = 1);\n    undefined dispatchIndirect(GPUBuffer indirectBuffer, GPUSize64 indirectOffset);\n\n    undefined endPass();\n};",
+        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUComputePassEncoder {\n    undefined setPipeline(GPUComputePipeline pipeline);\n    undefined dispatch(GPUSize32 workgroupCountX, optional GPUSize32 workgroupCountY = 1, optional GPUSize32 workgroupCountZ = 1);\n    undefined dispatchIndirect(GPUBuffer indirectBuffer, GPUSize64 indirectOffset);\n\n    undefined end();\n};",
         "type": "interface",
         "name": "GPUComputePassEncoder",
         "inheritance": null,
@@ -7830,7 +7830,7 @@
           },
           {
             "type": "operation",
-            "name": "endPass",
+            "name": "end",
             "idlType": {
               "type": "return-type",
               "extAttrs": [],
@@ -8494,7 +8494,7 @@
         "partial": false
       },
       "GPURenderPassEncoder": {
-        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPURenderPassEncoder {\n    undefined setViewport(float x, float y,\n                     float width, float height,\n                     float minDepth, float maxDepth);\n\n    undefined setScissorRect(GPUIntegerCoordinate x, GPUIntegerCoordinate y,\n                        GPUIntegerCoordinate width, GPUIntegerCoordinate height);\n\n    undefined setBlendConstant(GPUColor color);\n    undefined setStencilReference(GPUStencilValue reference);\n\n    undefined beginOcclusionQuery(GPUSize32 queryIndex);\n    undefined endOcclusionQuery();\n\n    undefined executeBundles(sequence<GPURenderBundle> bundles);\n    undefined endPass();\n};",
+        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPURenderPassEncoder {\n    undefined setViewport(float x, float y,\n                     float width, float height,\n                     float minDepth, float maxDepth);\n\n    undefined setScissorRect(GPUIntegerCoordinate x, GPUIntegerCoordinate y,\n                        GPUIntegerCoordinate width, GPUIntegerCoordinate height);\n\n    undefined setBlendConstant(GPUColor color);\n    undefined setStencilReference(GPUStencilValue reference);\n\n    undefined beginOcclusionQuery(GPUSize32 queryIndex);\n    undefined endOcclusionQuery();\n\n    undefined executeBundles(sequence<GPURenderBundle> bundles);\n    undefined end();\n};",
         "type": "interface",
         "name": "GPURenderPassEncoder",
         "inheritance": null,
@@ -8845,7 +8845,7 @@
           },
           {
             "type": "operation",
-            "name": "endPass",
+            "name": "end",
             "idlType": {
               "type": "return-type",
               "extAttrs": [],
@@ -9147,7 +9147,7 @@
         "partial": false
       },
       "GPURenderPassDepthStencilAttachment": {
-        "fragment": "dictionary GPURenderPassDepthStencilAttachment {\n    required GPUTextureView view;\n\n    float depthClearValue = 0;\n    required GPULoadOp depthLoadOp;\n    required GPUStoreOp depthStoreOp;\n    boolean depthReadOnly = false;\n\n    GPUStencilValue stencilClearValue = 0;\n    required GPULoadOp stencilLoadOp;\n    required GPUStoreOp stencilStoreOp;\n    boolean stencilReadOnly = false;\n};",
+        "fragment": "dictionary GPURenderPassDepthStencilAttachment {\n    required GPUTextureView view;\n\n    float depthClearValue = 0;\n    GPULoadOp depthLoadOp;\n    GPUStoreOp depthStoreOp;\n    boolean depthReadOnly = false;\n\n    GPUStencilValue stencilClearValue = 0;\n    GPULoadOp stencilLoadOp;\n    GPUStoreOp stencilStoreOp;\n    boolean stencilReadOnly = false;\n};",
         "type": "dictionary",
         "name": "GPURenderPassDepthStencilAttachment",
         "inheritance": null,
@@ -9198,7 +9198,7 @@
               "idlType": "GPULoadOp"
             },
             "default": null,
-            "required": true
+            "required": false
           },
           {
             "type": "field",
@@ -9213,7 +9213,7 @@
               "idlType": "GPUStoreOp"
             },
             "default": null,
-            "required": true
+            "required": false
           },
           {
             "type": "field",
@@ -9264,7 +9264,7 @@
               "idlType": "GPULoadOp"
             },
             "default": null,
-            "required": true
+            "required": false
           },
           {
             "type": "field",
@@ -9279,7 +9279,7 @@
               "idlType": "GPUStoreOp"
             },
             "default": null,
-            "required": true
+            "required": false
           },
           {
             "type": "field",

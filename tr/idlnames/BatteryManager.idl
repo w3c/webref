@@ -1,5 +1,5 @@
 // Source: Battery Status API (https://www.w3.org/TR/battery-status/)
-[Exposed=Window]
+[SecureContext, Exposed=Window]
 interface BatteryManager : EventTarget {
     readonly        attribute boolean             charging;
     readonly        attribute unrestricted double chargingTime;

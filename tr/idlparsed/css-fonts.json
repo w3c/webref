@@ -1,0 +1,454 @@
+{
+  "spec": {
+    "title": "CSS Fonts Module Level 4",
+    "url": "https://www.w3.org/TR/css-fonts-4/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {},
+      "functions": {
+        "Window": [
+          "CSSFontFaceRule",
+          "CSSFontFeatureValuesRule",
+          "CSSFontFeatureValuesMap",
+          "CSSFontPaletteValuesRule"
+        ]
+      }
+    },
+    "idlNames": {
+      "CSSFontFaceRule": {
+        "fragment": "[Exposed=Window]\ninterface CSSFontFaceRule : CSSRule {\n    readonly attribute CSSStyleDeclaration style;\n};",
+        "type": "interface",
+        "name": "CSSFontFaceRule",
+        "inheritance": "CSSRule",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "style",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSStyleDeclaration"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "CSSFontFeatureValuesRule": {
+        "fragment": "[Exposed=Window]\ninterface CSSFontFeatureValuesRule : CSSRule {\n  attribute CSSOMString fontFamily;\n  readonly attribute CSSFontFeatureValuesMap annotation;\n  readonly attribute CSSFontFeatureValuesMap ornaments;\n  readonly attribute CSSFontFeatureValuesMap stylistic;\n  readonly attribute CSSFontFeatureValuesMap swash;\n  readonly attribute CSSFontFeatureValuesMap characterVariant;\n  readonly attribute CSSFontFeatureValuesMap styleset;\n};",
+        "type": "interface",
+        "name": "CSSFontFeatureValuesRule",
+        "inheritance": "CSSRule",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "fontFamily",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "annotation",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSFontFeatureValuesMap"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "ornaments",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSFontFeatureValuesMap"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "stylistic",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSFontFeatureValuesMap"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "swash",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSFontFeatureValuesMap"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "characterVariant",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSFontFeatureValuesMap"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "styleset",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSFontFeatureValuesMap"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "CSSFontFeatureValuesMap": {
+        "fragment": "[Exposed=Window]\ninterface CSSFontFeatureValuesMap {\n  maplike<CSSOMString, sequence<unsigned long>>;\n  undefined set(CSSOMString featureValueName,\n           (unsigned long or sequence<unsigned long>) values);\n};",
+        "type": "interface",
+        "name": "CSSFontFeatureValuesMap",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "maplike",
+            "idlType": [
+              {
+                "type": null,
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "CSSOMString"
+              },
+              {
+                "type": null,
+                "extAttrs": [],
+                "generic": "sequence",
+                "nullable": false,
+                "union": false,
+                "idlType": [
+                  {
+                    "type": null,
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "unsigned long"
+                  }
+                ]
+              }
+            ],
+            "arguments": [],
+            "extAttrs": [],
+            "readonly": false,
+            "async": false
+          },
+          {
+            "type": "operation",
+            "name": "set",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "featureValueName",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CSSOMString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "values",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": true,
+                  "idlType": [
+                    {
+                      "type": null,
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "unsigned long"
+                    },
+                    {
+                      "type": null,
+                      "extAttrs": [],
+                      "generic": "sequence",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": [
+                        {
+                          "type": null,
+                          "extAttrs": [],
+                          "generic": "",
+                          "nullable": false,
+                          "union": false,
+                          "idlType": "unsigned long"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "CSSFontPaletteValuesRule": {
+        "fragment": "[Exposed=Window]interface CSSFontPaletteValuesRule : CSSRule {\n  readonly attribute CSSOMString name;\n  readonly attribute CSSOMString fontFamily;\n  readonly attribute CSSOMString basePalette;\n  readonly attribute CSSOMString overrideColors;\n};",
+        "type": "interface",
+        "name": "CSSFontPaletteValuesRule",
+        "inheritance": "CSSRule",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "name",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "fontFamily",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "basePalette",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "overrideColors",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      }
+    },
+    "idlExtendedNames": {
+      "CSSRule": [
+        {
+          "fragment": "partial interface CSSRule {  const unsigned short FONT_FEATURE_VALUES_RULE = 14;\n};",
+          "type": "interface",
+          "name": "CSSRule",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "const",
+              "name": "FONT_FEATURE_VALUES_RULE",
+              "idlType": {
+                "type": "const-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "unsigned short"
+              },
+              "extAttrs": [],
+              "value": {
+                "type": "number",
+                "value": "14"
+              }
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ]
+    },
+    "globals": {},
+    "exposed": {
+      "Window": [
+        "CSSFontFaceRule",
+        "CSSFontFeatureValuesRule",
+        "CSSFontFeatureValuesMap",
+        "CSSFontPaletteValuesRule"
+      ]
+    },
+    "dependencies": {
+      "CSSFontFaceRule": [
+        "CSSRule",
+        "CSSStyleDeclaration"
+      ],
+      "CSSRule": [],
+      "CSSFontFeatureValuesRule": [
+        "CSSRule",
+        "CSSOMString",
+        "CSSFontFeatureValuesMap"
+      ],
+      "CSSFontFeatureValuesMap": [
+        "CSSOMString"
+      ],
+      "CSSFontPaletteValuesRule": [
+        "CSSRule",
+        "CSSOMString"
+      ]
+    },
+    "externalDependencies": [
+      "CSSRule",
+      "CSSStyleDeclaration",
+      "CSSOMString"
+    ],
+    "hasObsoleteIdl": false
+  }
+}

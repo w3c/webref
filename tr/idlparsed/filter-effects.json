@@ -1,0 +1,3179 @@
+{
+  "spec": {
+    "title": "Filter Effects Module Level 1",
+    "url": "https://www.w3.org/TR/filter-effects-1/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {},
+      "functions": {}
+    },
+    "idlNames": {
+      "SVGFilterElement": {
+        "fragment": "interface SVGFilterElement : SVGElement {\n  readonly attribute SVGAnimatedEnumeration filterUnits;\n  readonly attribute SVGAnimatedEnumeration primitiveUnits;\n  readonly attribute SVGAnimatedLength x;\n  readonly attribute SVGAnimatedLength y;\n  readonly attribute SVGAnimatedLength width;\n  readonly attribute SVGAnimatedLength height;\n};",
+        "type": "interface",
+        "name": "SVGFilterElement",
+        "inheritance": "SVGElement",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "filterUnits",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedEnumeration"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "primitiveUnits",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedEnumeration"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "x",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedLength"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "y",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedLength"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "width",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedLength"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "height",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedLength"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "SVGFilterPrimitiveStandardAttributes": {
+        "fragment": "interface mixin SVGFilterPrimitiveStandardAttributes {\n  readonly attribute SVGAnimatedLength x;\n  readonly attribute SVGAnimatedLength y;\n  readonly attribute SVGAnimatedLength width;\n  readonly attribute SVGAnimatedLength height;\n  readonly attribute SVGAnimatedString result;\n};",
+        "type": "interface mixin",
+        "name": "SVGFilterPrimitiveStandardAttributes",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "attribute",
+            "name": "x",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedLength"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "y",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedLength"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "width",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedLength"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "height",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedLength"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "result",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "SVGFEBlendElement": {
+        "fragment": "interface SVGFEBlendElement : SVGElement {\n\n  // Blend Mode Types\n  const unsigned short SVG_FEBLEND_MODE_UNKNOWN = 0;\n  const unsigned short SVG_FEBLEND_MODE_NORMAL = 1;\n  const unsigned short SVG_FEBLEND_MODE_MULTIPLY = 2;\n  const unsigned short SVG_FEBLEND_MODE_SCREEN = 3;\n  const unsigned short SVG_FEBLEND_MODE_DARKEN = 4;\n  const unsigned short SVG_FEBLEND_MODE_LIGHTEN = 5;\n  const unsigned short SVG_FEBLEND_MODE_OVERLAY = 6;\n  const unsigned short SVG_FEBLEND_MODE_COLOR_DODGE = 7;\n  const unsigned short SVG_FEBLEND_MODE_COLOR_BURN = 8;\n  const unsigned short SVG_FEBLEND_MODE_HARD_LIGHT = 9;\n  const unsigned short SVG_FEBLEND_MODE_SOFT_LIGHT = 10;\n  const unsigned short SVG_FEBLEND_MODE_DIFFERENCE = 11;\n  const unsigned short SVG_FEBLEND_MODE_EXCLUSION = 12;\n  const unsigned short SVG_FEBLEND_MODE_HUE = 13;\n  const unsigned short SVG_FEBLEND_MODE_SATURATION = 14;\n  const unsigned short SVG_FEBLEND_MODE_COLOR = 15;\n  const unsigned short SVG_FEBLEND_MODE_LUMINOSITY = 16;\n\n  readonly attribute SVGAnimatedString in1;\n  readonly attribute SVGAnimatedString in2;\n  readonly attribute SVGAnimatedEnumeration mode;\n};",
+        "type": "interface",
+        "name": "SVGFEBlendElement",
+        "inheritance": "SVGElement",
+        "members": [
+          {
+            "type": "const",
+            "name": "SVG_FEBLEND_MODE_UNKNOWN",
+            "idlType": {
+              "type": "const-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "extAttrs": [],
+            "value": {
+              "type": "number",
+              "value": "0"
+            }
+          },
+          {
+            "type": "const",
+            "name": "SVG_FEBLEND_MODE_NORMAL",
+            "idlType": {
+              "type": "const-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "extAttrs": [],
+            "value": {
+              "type": "number",
+              "value": "1"
+            }
+          },
+          {
+            "type": "const",
+            "name": "SVG_FEBLEND_MODE_MULTIPLY",
+            "idlType": {
+              "type": "const-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "extAttrs": [],
+            "value": {
+              "type": "number",
+              "value": "2"
+            }
+          },
+          {
+            "type": "const",
+            "name": "SVG_FEBLEND_MODE_SCREEN",
+            "idlType": {
+              "type": "const-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "extAttrs": [],
+            "value": {
+              "type": "number",
+              "value": "3"
+            }
+          },
+          {
+            "type": "const",
+            "name": "SVG_FEBLEND_MODE_DARKEN",
+            "idlType": {
+              "type": "const-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "extAttrs": [],
+            "value": {
+              "type": "number",
+              "value": "4"
+            }
+          },
+          {
+            "type": "const",
+            "name": "SVG_FEBLEND_MODE_LIGHTEN",
+            "idlType": {
+              "type": "const-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "extAttrs": [],
+            "value": {
+              "type": "number",
+              "value": "5"
+            }
+          },
+          {
+            "type": "const",
+            "name": "SVG_FEBLEND_MODE_OVERLAY",
+            "idlType": {
+              "type": "const-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "extAttrs": [],
+            "value": {
+              "type": "number",
+              "value": "6"
+            }
+          },
+          {
+            "type": "const",
+            "name": "SVG_FEBLEND_MODE_COLOR_DODGE",
+            "idlType": {
+              "type": "const-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "extAttrs": [],
+            "value": {
+              "type": "number",
+              "value": "7"
+            }
+          },
+          {
+            "type": "const",
+            "name": "SVG_FEBLEND_MODE_COLOR_BURN",
+            "idlType": {
+              "type": "const-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "extAttrs": [],
+            "value": {
+              "type": "number",
+              "value": "8"
+            }
+          },
+          {
+            "type": "const",
+            "name": "SVG_FEBLEND_MODE_HARD_LIGHT",
+            "idlType": {
+              "type": "const-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "extAttrs": [],
+            "value": {
+              "type": "number",
+              "value": "9"
+            }
+          },
+          {
+            "type": "const",
+            "name": "SVG_FEBLEND_MODE_SOFT_LIGHT",
+            "idlType": {
+              "type": "const-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "extAttrs": [],
+            "value": {
+              "type": "number",
+              "value": "10"
+            }
+          },
+          {
+            "type": "const",
+            "name": "SVG_FEBLEND_MODE_DIFFERENCE",
+            "idlType": {
+              "type": "const-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "extAttrs": [],
+            "value": {
+              "type": "number",
+              "value": "11"
+            }
+          },
+          {
+            "type": "const",
+            "name": "SVG_FEBLEND_MODE_EXCLUSION",
+            "idlType": {
+              "type": "const-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "extAttrs": [],
+            "value": {
+              "type": "number",
+              "value": "12"
+            }
+          },
+          {
+            "type": "const",
+            "name": "SVG_FEBLEND_MODE_HUE",
+            "idlType": {
+              "type": "const-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "extAttrs": [],
+            "value": {
+              "type": "number",
+              "value": "13"
+            }
+          },
+          {
+            "type": "const",
+            "name": "SVG_FEBLEND_MODE_SATURATION",
+            "idlType": {
+              "type": "const-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "extAttrs": [],
+            "value": {
+              "type": "number",
+              "value": "14"
+            }
+          },
+          {
+            "type": "const",
+            "name": "SVG_FEBLEND_MODE_COLOR",
+            "idlType": {
+              "type": "const-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "extAttrs": [],
+            "value": {
+              "type": "number",
+              "value": "15"
+            }
+          },
+          {
+            "type": "const",
+            "name": "SVG_FEBLEND_MODE_LUMINOSITY",
+            "idlType": {
+              "type": "const-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "extAttrs": [],
+            "value": {
+              "type": "number",
+              "value": "16"
+            }
+          },
+          {
+            "type": "attribute",
+            "name": "in1",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "in2",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "mode",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedEnumeration"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "SVGFEColorMatrixElement": {
+        "fragment": "interface SVGFEColorMatrixElement : SVGElement {\n\n  // Color Matrix Types\n  const unsigned short SVG_FECOLORMATRIX_TYPE_UNKNOWN = 0;\n  const unsigned short SVG_FECOLORMATRIX_TYPE_MATRIX = 1;\n  const unsigned short SVG_FECOLORMATRIX_TYPE_SATURATE = 2;\n  const unsigned short SVG_FECOLORMATRIX_TYPE_HUEROTATE = 3;\n  const unsigned short SVG_FECOLORMATRIX_TYPE_LUMINANCETOALPHA = 4;\n\n  readonly attribute SVGAnimatedString in1;\n  readonly attribute SVGAnimatedEnumeration type;\n  readonly attribute SVGAnimatedNumberList values;\n};",
+        "type": "interface",
+        "name": "SVGFEColorMatrixElement",
+        "inheritance": "SVGElement",
+        "members": [
+          {
+            "type": "const",
+            "name": "SVG_FECOLORMATRIX_TYPE_UNKNOWN",
+            "idlType": {
+              "type": "const-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "extAttrs": [],
+            "value": {
+              "type": "number",
+              "value": "0"
+            }
+          },
+          {
+            "type": "const",
+            "name": "SVG_FECOLORMATRIX_TYPE_MATRIX",
+            "idlType": {
+              "type": "const-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "extAttrs": [],
+            "value": {
+              "type": "number",
+              "value": "1"
+            }
+          },
+          {
+            "type": "const",
+            "name": "SVG_FECOLORMATRIX_TYPE_SATURATE",
+            "idlType": {
+              "type": "const-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "extAttrs": [],
+            "value": {
+              "type": "number",
+              "value": "2"
+            }
+          },
+          {
+            "type": "const",
+            "name": "SVG_FECOLORMATRIX_TYPE_HUEROTATE",
+            "idlType": {
+              "type": "const-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "extAttrs": [],
+            "value": {
+              "type": "number",
+              "value": "3"
+            }
+          },
+          {
+            "type": "const",
+            "name": "SVG_FECOLORMATRIX_TYPE_LUMINANCETOALPHA",
+            "idlType": {
+              "type": "const-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "extAttrs": [],
+            "value": {
+              "type": "number",
+              "value": "4"
+            }
+          },
+          {
+            "type": "attribute",
+            "name": "in1",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "type",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedEnumeration"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "values",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedNumberList"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "SVGFEComponentTransferElement": {
+        "fragment": "interface SVGFEComponentTransferElement : SVGElement {\n  readonly attribute SVGAnimatedString in1;\n};",
+        "type": "interface",
+        "name": "SVGFEComponentTransferElement",
+        "inheritance": "SVGElement",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "in1",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "SVGComponentTransferFunctionElement": {
+        "fragment": "interface SVGComponentTransferFunctionElement : SVGElement {\n\n  // Component Transfer Types\n  const unsigned short SVG_FECOMPONENTTRANSFER_TYPE_UNKNOWN = 0;\n  const unsigned short SVG_FECOMPONENTTRANSFER_TYPE_IDENTITY = 1;\n  const unsigned short SVG_FECOMPONENTTRANSFER_TYPE_TABLE = 2;\n  const unsigned short SVG_FECOMPONENTTRANSFER_TYPE_DISCRETE = 3;\n  const unsigned short SVG_FECOMPONENTTRANSFER_TYPE_LINEAR = 4;\n  const unsigned short SVG_FECOMPONENTTRANSFER_TYPE_GAMMA = 5;\n\n  readonly attribute SVGAnimatedEnumeration type;\n  readonly attribute SVGAnimatedNumberList tableValues;\n  readonly attribute SVGAnimatedNumber slope;\n  readonly attribute SVGAnimatedNumber intercept;\n  readonly attribute SVGAnimatedNumber amplitude;\n  readonly attribute SVGAnimatedNumber exponent;\n  readonly attribute SVGAnimatedNumber offset;\n};",
+        "type": "interface",
+        "name": "SVGComponentTransferFunctionElement",
+        "inheritance": "SVGElement",
+        "members": [
+          {
+            "type": "const",
+            "name": "SVG_FECOMPONENTTRANSFER_TYPE_UNKNOWN",
+            "idlType": {
+              "type": "const-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "extAttrs": [],
+            "value": {
+              "type": "number",
+              "value": "0"
+            }
+          },
+          {
+            "type": "const",
+            "name": "SVG_FECOMPONENTTRANSFER_TYPE_IDENTITY",
+            "idlType": {
+              "type": "const-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "extAttrs": [],
+            "value": {
+              "type": "number",
+              "value": "1"
+            }
+          },
+          {
+            "type": "const",
+            "name": "SVG_FECOMPONENTTRANSFER_TYPE_TABLE",
+            "idlType": {
+              "type": "const-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "extAttrs": [],
+            "value": {
+              "type": "number",
+              "value": "2"
+            }
+          },
+          {
+            "type": "const",
+            "name": "SVG_FECOMPONENTTRANSFER_TYPE_DISCRETE",
+            "idlType": {
+              "type": "const-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "extAttrs": [],
+            "value": {
+              "type": "number",
+              "value": "3"
+            }
+          },
+          {
+            "type": "const",
+            "name": "SVG_FECOMPONENTTRANSFER_TYPE_LINEAR",
+            "idlType": {
+              "type": "const-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "extAttrs": [],
+            "value": {
+              "type": "number",
+              "value": "4"
+            }
+          },
+          {
+            "type": "const",
+            "name": "SVG_FECOMPONENTTRANSFER_TYPE_GAMMA",
+            "idlType": {
+              "type": "const-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "extAttrs": [],
+            "value": {
+              "type": "number",
+              "value": "5"
+            }
+          },
+          {
+            "type": "attribute",
+            "name": "type",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedEnumeration"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "tableValues",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedNumberList"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "slope",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedNumber"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "intercept",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedNumber"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "amplitude",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedNumber"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "exponent",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedNumber"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "offset",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedNumber"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "SVGFEFuncRElement": {
+        "fragment": "interface SVGFEFuncRElement : SVGComponentTransferFunctionElement {\n};",
+        "type": "interface",
+        "name": "SVGFEFuncRElement",
+        "inheritance": "SVGComponentTransferFunctionElement",
+        "members": [],
+        "extAttrs": [],
+        "partial": false
+      },
+      "SVGFEFuncGElement": {
+        "fragment": "interface SVGFEFuncGElement : SVGComponentTransferFunctionElement {\n};",
+        "type": "interface",
+        "name": "SVGFEFuncGElement",
+        "inheritance": "SVGComponentTransferFunctionElement",
+        "members": [],
+        "extAttrs": [],
+        "partial": false
+      },
+      "SVGFEFuncBElement": {
+        "fragment": "interface SVGFEFuncBElement : SVGComponentTransferFunctionElement {\n};",
+        "type": "interface",
+        "name": "SVGFEFuncBElement",
+        "inheritance": "SVGComponentTransferFunctionElement",
+        "members": [],
+        "extAttrs": [],
+        "partial": false
+      },
+      "SVGFEFuncAElement": {
+        "fragment": "interface SVGFEFuncAElement : SVGComponentTransferFunctionElement {\n};",
+        "type": "interface",
+        "name": "SVGFEFuncAElement",
+        "inheritance": "SVGComponentTransferFunctionElement",
+        "members": [],
+        "extAttrs": [],
+        "partial": false
+      },
+      "SVGFECompositeElement": {
+        "fragment": "interface SVGFECompositeElement : SVGElement {\n\n  // Composite Operators\n  const unsigned short SVG_FECOMPOSITE_OPERATOR_UNKNOWN = 0;\n  const unsigned short SVG_FECOMPOSITE_OPERATOR_OVER = 1;\n  const unsigned short SVG_FECOMPOSITE_OPERATOR_IN = 2;\n  const unsigned short SVG_FECOMPOSITE_OPERATOR_OUT = 3;\n  const unsigned short SVG_FECOMPOSITE_OPERATOR_ATOP = 4;\n  const unsigned short SVG_FECOMPOSITE_OPERATOR_XOR = 5;\n  const unsigned short SVG_FECOMPOSITE_OPERATOR_ARITHMETIC = 6;\n\n  readonly attribute SVGAnimatedString in1;\n  readonly attribute SVGAnimatedString in2;\n  readonly attribute SVGAnimatedEnumeration operator;\n  readonly attribute SVGAnimatedNumber k1;\n  readonly attribute SVGAnimatedNumber k2;\n  readonly attribute SVGAnimatedNumber k3;\n  readonly attribute SVGAnimatedNumber k4;\n};",
+        "type": "interface",
+        "name": "SVGFECompositeElement",
+        "inheritance": "SVGElement",
+        "members": [
+          {
+            "type": "const",
+            "name": "SVG_FECOMPOSITE_OPERATOR_UNKNOWN",
+            "idlType": {
+              "type": "const-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "extAttrs": [],
+            "value": {
+              "type": "number",
+              "value": "0"
+            }
+          },
+          {
+            "type": "const",
+            "name": "SVG_FECOMPOSITE_OPERATOR_OVER",
+            "idlType": {
+              "type": "const-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "extAttrs": [],
+            "value": {
+              "type": "number",
+              "value": "1"
+            }
+          },
+          {
+            "type": "const",
+            "name": "SVG_FECOMPOSITE_OPERATOR_IN",
+            "idlType": {
+              "type": "const-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "extAttrs": [],
+            "value": {
+              "type": "number",
+              "value": "2"
+            }
+          },
+          {
+            "type": "const",
+            "name": "SVG_FECOMPOSITE_OPERATOR_OUT",
+            "idlType": {
+              "type": "const-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "extAttrs": [],
+            "value": {
+              "type": "number",
+              "value": "3"
+            }
+          },
+          {
+            "type": "const",
+            "name": "SVG_FECOMPOSITE_OPERATOR_ATOP",
+            "idlType": {
+              "type": "const-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "extAttrs": [],
+            "value": {
+              "type": "number",
+              "value": "4"
+            }
+          },
+          {
+            "type": "const",
+            "name": "SVG_FECOMPOSITE_OPERATOR_XOR",
+            "idlType": {
+              "type": "const-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "extAttrs": [],
+            "value": {
+              "type": "number",
+              "value": "5"
+            }
+          },
+          {
+            "type": "const",
+            "name": "SVG_FECOMPOSITE_OPERATOR_ARITHMETIC",
+            "idlType": {
+              "type": "const-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "extAttrs": [],
+            "value": {
+              "type": "number",
+              "value": "6"
+            }
+          },
+          {
+            "type": "attribute",
+            "name": "in1",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "in2",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "operator",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedEnumeration"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "k1",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedNumber"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "k2",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedNumber"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "k3",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedNumber"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "k4",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedNumber"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "SVGFEConvolveMatrixElement": {
+        "fragment": "interface SVGFEConvolveMatrixElement : SVGElement {\n\n  // Edge Mode Values\n  const unsigned short SVG_EDGEMODE_UNKNOWN = 0;\n  const unsigned short SVG_EDGEMODE_DUPLICATE = 1;\n  const unsigned short SVG_EDGEMODE_WRAP = 2;\n  const unsigned short SVG_EDGEMODE_NONE = 3;\n\n  readonly attribute SVGAnimatedString in1;\n  readonly attribute SVGAnimatedInteger orderX;\n  readonly attribute SVGAnimatedInteger orderY;\n  readonly attribute SVGAnimatedNumberList kernelMatrix;\n  readonly attribute SVGAnimatedNumber divisor;\n  readonly attribute SVGAnimatedNumber bias;\n  readonly attribute SVGAnimatedInteger targetX;\n  readonly attribute SVGAnimatedInteger targetY;\n  readonly attribute SVGAnimatedEnumeration edgeMode;\n  readonly attribute SVGAnimatedNumber kernelUnitLengthX;\n  readonly attribute SVGAnimatedNumber kernelUnitLengthY;\n  readonly attribute SVGAnimatedBoolean preserveAlpha;\n};",
+        "type": "interface",
+        "name": "SVGFEConvolveMatrixElement",
+        "inheritance": "SVGElement",
+        "members": [
+          {
+            "type": "const",
+            "name": "SVG_EDGEMODE_UNKNOWN",
+            "idlType": {
+              "type": "const-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "extAttrs": [],
+            "value": {
+              "type": "number",
+              "value": "0"
+            }
+          },
+          {
+            "type": "const",
+            "name": "SVG_EDGEMODE_DUPLICATE",
+            "idlType": {
+              "type": "const-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "extAttrs": [],
+            "value": {
+              "type": "number",
+              "value": "1"
+            }
+          },
+          {
+            "type": "const",
+            "name": "SVG_EDGEMODE_WRAP",
+            "idlType": {
+              "type": "const-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "extAttrs": [],
+            "value": {
+              "type": "number",
+              "value": "2"
+            }
+          },
+          {
+            "type": "const",
+            "name": "SVG_EDGEMODE_NONE",
+            "idlType": {
+              "type": "const-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "extAttrs": [],
+            "value": {
+              "type": "number",
+              "value": "3"
+            }
+          },
+          {
+            "type": "attribute",
+            "name": "in1",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "orderX",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedInteger"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "orderY",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedInteger"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "kernelMatrix",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedNumberList"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "divisor",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedNumber"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "bias",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedNumber"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "targetX",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedInteger"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "targetY",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedInteger"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "edgeMode",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedEnumeration"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "kernelUnitLengthX",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedNumber"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "kernelUnitLengthY",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedNumber"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "preserveAlpha",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedBoolean"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "SVGFEDiffuseLightingElement": {
+        "fragment": "interface SVGFEDiffuseLightingElement : SVGElement {\n  readonly attribute SVGAnimatedString in1;\n  readonly attribute SVGAnimatedNumber surfaceScale;\n  readonly attribute SVGAnimatedNumber diffuseConstant;\n  readonly attribute SVGAnimatedNumber kernelUnitLengthX;\n  readonly attribute SVGAnimatedNumber kernelUnitLengthY;\n};",
+        "type": "interface",
+        "name": "SVGFEDiffuseLightingElement",
+        "inheritance": "SVGElement",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "in1",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "surfaceScale",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedNumber"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "diffuseConstant",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedNumber"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "kernelUnitLengthX",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedNumber"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "kernelUnitLengthY",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedNumber"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "SVGFEDistantLightElement": {
+        "fragment": "interface SVGFEDistantLightElement : SVGElement {\n  readonly attribute SVGAnimatedNumber azimuth;\n  readonly attribute SVGAnimatedNumber elevation;\n};",
+        "type": "interface",
+        "name": "SVGFEDistantLightElement",
+        "inheritance": "SVGElement",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "azimuth",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedNumber"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "elevation",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedNumber"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "SVGFEPointLightElement": {
+        "fragment": "interface SVGFEPointLightElement : SVGElement {\n  readonly attribute SVGAnimatedNumber x;\n  readonly attribute SVGAnimatedNumber y;\n  readonly attribute SVGAnimatedNumber z;\n};",
+        "type": "interface",
+        "name": "SVGFEPointLightElement",
+        "inheritance": "SVGElement",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "x",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedNumber"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "y",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedNumber"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "z",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedNumber"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "SVGFESpotLightElement": {
+        "fragment": "interface SVGFESpotLightElement : SVGElement {\n  readonly attribute SVGAnimatedNumber x;\n  readonly attribute SVGAnimatedNumber y;\n  readonly attribute SVGAnimatedNumber z;\n  readonly attribute SVGAnimatedNumber pointsAtX;\n  readonly attribute SVGAnimatedNumber pointsAtY;\n  readonly attribute SVGAnimatedNumber pointsAtZ;\n  readonly attribute SVGAnimatedNumber specularExponent;\n  readonly attribute SVGAnimatedNumber limitingConeAngle;\n};",
+        "type": "interface",
+        "name": "SVGFESpotLightElement",
+        "inheritance": "SVGElement",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "x",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedNumber"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "y",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedNumber"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "z",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedNumber"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "pointsAtX",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedNumber"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "pointsAtY",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedNumber"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "pointsAtZ",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedNumber"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "specularExponent",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedNumber"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "limitingConeAngle",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedNumber"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "SVGFEDisplacementMapElement": {
+        "fragment": "interface SVGFEDisplacementMapElement : SVGElement {\n\n  // Channel Selectors\n  const unsigned short SVG_CHANNEL_UNKNOWN = 0;\n  const unsigned short SVG_CHANNEL_R = 1;\n  const unsigned short SVG_CHANNEL_G = 2;\n  const unsigned short SVG_CHANNEL_B = 3;\n  const unsigned short SVG_CHANNEL_A = 4;\n\n  readonly attribute SVGAnimatedString in1;\n  readonly attribute SVGAnimatedString in2;\n  readonly attribute SVGAnimatedNumber scale;\n  readonly attribute SVGAnimatedEnumeration xChannelSelector;\n  readonly attribute SVGAnimatedEnumeration yChannelSelector;\n};",
+        "type": "interface",
+        "name": "SVGFEDisplacementMapElement",
+        "inheritance": "SVGElement",
+        "members": [
+          {
+            "type": "const",
+            "name": "SVG_CHANNEL_UNKNOWN",
+            "idlType": {
+              "type": "const-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "extAttrs": [],
+            "value": {
+              "type": "number",
+              "value": "0"
+            }
+          },
+          {
+            "type": "const",
+            "name": "SVG_CHANNEL_R",
+            "idlType": {
+              "type": "const-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "extAttrs": [],
+            "value": {
+              "type": "number",
+              "value": "1"
+            }
+          },
+          {
+            "type": "const",
+            "name": "SVG_CHANNEL_G",
+            "idlType": {
+              "type": "const-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "extAttrs": [],
+            "value": {
+              "type": "number",
+              "value": "2"
+            }
+          },
+          {
+            "type": "const",
+            "name": "SVG_CHANNEL_B",
+            "idlType": {
+              "type": "const-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "extAttrs": [],
+            "value": {
+              "type": "number",
+              "value": "3"
+            }
+          },
+          {
+            "type": "const",
+            "name": "SVG_CHANNEL_A",
+            "idlType": {
+              "type": "const-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "extAttrs": [],
+            "value": {
+              "type": "number",
+              "value": "4"
+            }
+          },
+          {
+            "type": "attribute",
+            "name": "in1",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "in2",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "scale",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedNumber"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "xChannelSelector",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedEnumeration"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "yChannelSelector",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedEnumeration"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "SVGFEDropShadowElement": {
+        "fragment": "interface SVGFEDropShadowElement : SVGElement {\n  readonly attribute SVGAnimatedString in1;\n  readonly attribute SVGAnimatedNumber dx;\n  readonly attribute SVGAnimatedNumber dy;\n  readonly attribute SVGAnimatedNumber stdDeviationX;\n  readonly attribute SVGAnimatedNumber stdDeviationY;\n\n  void setStdDeviation(float stdDeviationX, float stdDeviationY);\n};",
+        "type": "interface",
+        "name": "SVGFEDropShadowElement",
+        "inheritance": "SVGElement",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "in1",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "dx",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedNumber"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "dy",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedNumber"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "stdDeviationX",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedNumber"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "stdDeviationY",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedNumber"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "operation",
+            "name": "setStdDeviation",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "void"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "stdDeviationX",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "float"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "stdDeviationY",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "float"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "SVGFEFloodElement": {
+        "fragment": "interface SVGFEFloodElement : SVGElement {\n};",
+        "type": "interface",
+        "name": "SVGFEFloodElement",
+        "inheritance": "SVGElement",
+        "members": [],
+        "extAttrs": [],
+        "partial": false
+      },
+      "SVGFEGaussianBlurElement": {
+        "fragment": "interface SVGFEGaussianBlurElement : SVGElement {\n\n  // Edge Mode Values\n  const unsigned short SVG_EDGEMODE_UNKNOWN = 0;\n  const unsigned short SVG_EDGEMODE_DUPLICATE = 1;\n  const unsigned short SVG_EDGEMODE_WRAP = 2;\n  const unsigned short SVG_EDGEMODE_NONE = 3;\n\n  readonly attribute SVGAnimatedString in1;\n  readonly attribute SVGAnimatedNumber stdDeviationX;\n  readonly attribute SVGAnimatedNumber stdDeviationY;\n  readonly attribute SVGAnimatedEnumeration edgeMode;\n\n  void setStdDeviation(float stdDeviationX, float stdDeviationY);\n};",
+        "type": "interface",
+        "name": "SVGFEGaussianBlurElement",
+        "inheritance": "SVGElement",
+        "members": [
+          {
+            "type": "const",
+            "name": "SVG_EDGEMODE_UNKNOWN",
+            "idlType": {
+              "type": "const-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "extAttrs": [],
+            "value": {
+              "type": "number",
+              "value": "0"
+            }
+          },
+          {
+            "type": "const",
+            "name": "SVG_EDGEMODE_DUPLICATE",
+            "idlType": {
+              "type": "const-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "extAttrs": [],
+            "value": {
+              "type": "number",
+              "value": "1"
+            }
+          },
+          {
+            "type": "const",
+            "name": "SVG_EDGEMODE_WRAP",
+            "idlType": {
+              "type": "const-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "extAttrs": [],
+            "value": {
+              "type": "number",
+              "value": "2"
+            }
+          },
+          {
+            "type": "const",
+            "name": "SVG_EDGEMODE_NONE",
+            "idlType": {
+              "type": "const-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "extAttrs": [],
+            "value": {
+              "type": "number",
+              "value": "3"
+            }
+          },
+          {
+            "type": "attribute",
+            "name": "in1",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "stdDeviationX",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedNumber"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "stdDeviationY",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedNumber"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "edgeMode",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedEnumeration"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "operation",
+            "name": "setStdDeviation",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "void"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "stdDeviationX",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "float"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "stdDeviationY",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "float"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "SVGFEImageElement": {
+        "fragment": "interface SVGFEImageElement : SVGElement {\n  readonly attribute SVGAnimatedPreserveAspectRatio preserveAspectRatio;\n  readonly attribute SVGAnimatedString crossOrigin;\n};",
+        "type": "interface",
+        "name": "SVGFEImageElement",
+        "inheritance": "SVGElement",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "preserveAspectRatio",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedPreserveAspectRatio"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "crossOrigin",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "SVGFEMergeElement": {
+        "fragment": "interface SVGFEMergeElement : SVGElement {\n};",
+        "type": "interface",
+        "name": "SVGFEMergeElement",
+        "inheritance": "SVGElement",
+        "members": [],
+        "extAttrs": [],
+        "partial": false
+      },
+      "SVGFEMergeNodeElement": {
+        "fragment": "interface SVGFEMergeNodeElement : SVGElement {\n  readonly attribute SVGAnimatedString in1;\n};",
+        "type": "interface",
+        "name": "SVGFEMergeNodeElement",
+        "inheritance": "SVGElement",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "in1",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "SVGFEMorphologyElement": {
+        "fragment": "interface SVGFEMorphologyElement : SVGElement {\n\n  // Morphology Operators\n  const unsigned short SVG_MORPHOLOGY_OPERATOR_UNKNOWN = 0;\n  const unsigned short SVG_MORPHOLOGY_OPERATOR_ERODE = 1;\n  const unsigned short SVG_MORPHOLOGY_OPERATOR_DILATE = 2;\n\n  readonly attribute SVGAnimatedString in1;\n  readonly attribute SVGAnimatedEnumeration operator;\n  readonly attribute SVGAnimatedNumber radiusX;\n  readonly attribute SVGAnimatedNumber radiusY;\n};",
+        "type": "interface",
+        "name": "SVGFEMorphologyElement",
+        "inheritance": "SVGElement",
+        "members": [
+          {
+            "type": "const",
+            "name": "SVG_MORPHOLOGY_OPERATOR_UNKNOWN",
+            "idlType": {
+              "type": "const-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "extAttrs": [],
+            "value": {
+              "type": "number",
+              "value": "0"
+            }
+          },
+          {
+            "type": "const",
+            "name": "SVG_MORPHOLOGY_OPERATOR_ERODE",
+            "idlType": {
+              "type": "const-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "extAttrs": [],
+            "value": {
+              "type": "number",
+              "value": "1"
+            }
+          },
+          {
+            "type": "const",
+            "name": "SVG_MORPHOLOGY_OPERATOR_DILATE",
+            "idlType": {
+              "type": "const-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "extAttrs": [],
+            "value": {
+              "type": "number",
+              "value": "2"
+            }
+          },
+          {
+            "type": "attribute",
+            "name": "in1",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "operator",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedEnumeration"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "radiusX",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedNumber"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "radiusY",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedNumber"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "SVGFEOffsetElement": {
+        "fragment": "interface SVGFEOffsetElement : SVGElement {\n  readonly attribute SVGAnimatedString in1;\n  readonly attribute SVGAnimatedNumber dx;\n  readonly attribute SVGAnimatedNumber dy;\n};",
+        "type": "interface",
+        "name": "SVGFEOffsetElement",
+        "inheritance": "SVGElement",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "in1",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "dx",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedNumber"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "dy",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedNumber"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "SVGFESpecularLightingElement": {
+        "fragment": "interface SVGFESpecularLightingElement : SVGElement {\n  readonly attribute SVGAnimatedString in1;\n  readonly attribute SVGAnimatedNumber surfaceScale;\n  readonly attribute SVGAnimatedNumber specularConstant;\n  readonly attribute SVGAnimatedNumber specularExponent;\n  readonly attribute SVGAnimatedNumber kernelUnitLengthX;\n  readonly attribute SVGAnimatedNumber kernelUnitLengthY;\n};",
+        "type": "interface",
+        "name": "SVGFESpecularLightingElement",
+        "inheritance": "SVGElement",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "in1",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "surfaceScale",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedNumber"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "specularConstant",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedNumber"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "specularExponent",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedNumber"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "kernelUnitLengthX",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedNumber"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "kernelUnitLengthY",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedNumber"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "SVGFETileElement": {
+        "fragment": "interface SVGFETileElement : SVGElement {\n  readonly attribute SVGAnimatedString in1;\n};",
+        "type": "interface",
+        "name": "SVGFETileElement",
+        "inheritance": "SVGElement",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "in1",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "SVGFETurbulenceElement": {
+        "fragment": "interface SVGFETurbulenceElement : SVGElement {\n\n  // Turbulence Types\n  const unsigned short SVG_TURBULENCE_TYPE_UNKNOWN = 0;\n  const unsigned short SVG_TURBULENCE_TYPE_FRACTALNOISE = 1;\n  const unsigned short SVG_TURBULENCE_TYPE_TURBULENCE = 2;\n\n  // Stitch Options\n  const unsigned short SVG_STITCHTYPE_UNKNOWN = 0;\n  const unsigned short SVG_STITCHTYPE_STITCH = 1;\n  const unsigned short SVG_STITCHTYPE_NOSTITCH = 2;\n\n  readonly attribute SVGAnimatedNumber baseFrequencyX;\n  readonly attribute SVGAnimatedNumber baseFrequencyY;\n  readonly attribute SVGAnimatedInteger numOctaves;\n  readonly attribute SVGAnimatedNumber seed;\n  readonly attribute SVGAnimatedEnumeration stitchTiles;\n  readonly attribute SVGAnimatedEnumeration type;\n};",
+        "type": "interface",
+        "name": "SVGFETurbulenceElement",
+        "inheritance": "SVGElement",
+        "members": [
+          {
+            "type": "const",
+            "name": "SVG_TURBULENCE_TYPE_UNKNOWN",
+            "idlType": {
+              "type": "const-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "extAttrs": [],
+            "value": {
+              "type": "number",
+              "value": "0"
+            }
+          },
+          {
+            "type": "const",
+            "name": "SVG_TURBULENCE_TYPE_FRACTALNOISE",
+            "idlType": {
+              "type": "const-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "extAttrs": [],
+            "value": {
+              "type": "number",
+              "value": "1"
+            }
+          },
+          {
+            "type": "const",
+            "name": "SVG_TURBULENCE_TYPE_TURBULENCE",
+            "idlType": {
+              "type": "const-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "extAttrs": [],
+            "value": {
+              "type": "number",
+              "value": "2"
+            }
+          },
+          {
+            "type": "const",
+            "name": "SVG_STITCHTYPE_UNKNOWN",
+            "idlType": {
+              "type": "const-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "extAttrs": [],
+            "value": {
+              "type": "number",
+              "value": "0"
+            }
+          },
+          {
+            "type": "const",
+            "name": "SVG_STITCHTYPE_STITCH",
+            "idlType": {
+              "type": "const-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "extAttrs": [],
+            "value": {
+              "type": "number",
+              "value": "1"
+            }
+          },
+          {
+            "type": "const",
+            "name": "SVG_STITCHTYPE_NOSTITCH",
+            "idlType": {
+              "type": "const-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "extAttrs": [],
+            "value": {
+              "type": "number",
+              "value": "2"
+            }
+          },
+          {
+            "type": "attribute",
+            "name": "baseFrequencyX",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedNumber"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "baseFrequencyY",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedNumber"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "numOctaves",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedInteger"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "seed",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedNumber"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "stitchTiles",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedEnumeration"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "type",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedEnumeration"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      }
+    },
+    "idlExtendedNames": {
+      "SVGFilterElement": [
+        {
+          "fragment": "SVGFilterElement includes SVGURIReference;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "SVGFilterElement",
+          "includes": "SVGURIReference"
+        }
+      ],
+      "SVGFEBlendElement": [
+        {
+          "fragment": "SVGFEBlendElement includes SVGFilterPrimitiveStandardAttributes;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "SVGFEBlendElement",
+          "includes": "SVGFilterPrimitiveStandardAttributes"
+        }
+      ],
+      "SVGFEColorMatrixElement": [
+        {
+          "fragment": "SVGFEColorMatrixElement includes SVGFilterPrimitiveStandardAttributes;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "SVGFEColorMatrixElement",
+          "includes": "SVGFilterPrimitiveStandardAttributes"
+        }
+      ],
+      "SVGFEComponentTransferElement": [
+        {
+          "fragment": "SVGFEComponentTransferElement includes SVGFilterPrimitiveStandardAttributes;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "SVGFEComponentTransferElement",
+          "includes": "SVGFilterPrimitiveStandardAttributes"
+        }
+      ],
+      "SVGFECompositeElement": [
+        {
+          "fragment": "SVGFECompositeElement includes SVGFilterPrimitiveStandardAttributes;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "SVGFECompositeElement",
+          "includes": "SVGFilterPrimitiveStandardAttributes"
+        }
+      ],
+      "SVGFEConvolveMatrixElement": [
+        {
+          "fragment": "SVGFEConvolveMatrixElement includes SVGFilterPrimitiveStandardAttributes;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "SVGFEConvolveMatrixElement",
+          "includes": "SVGFilterPrimitiveStandardAttributes"
+        }
+      ],
+      "SVGFEDiffuseLightingElement": [
+        {
+          "fragment": "SVGFEDiffuseLightingElement includes SVGFilterPrimitiveStandardAttributes;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "SVGFEDiffuseLightingElement",
+          "includes": "SVGFilterPrimitiveStandardAttributes"
+        }
+      ],
+      "SVGFEDisplacementMapElement": [
+        {
+          "fragment": "SVGFEDisplacementMapElement includes SVGFilterPrimitiveStandardAttributes;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "SVGFEDisplacementMapElement",
+          "includes": "SVGFilterPrimitiveStandardAttributes"
+        }
+      ],
+      "SVGFEDropShadowElement": [
+        {
+          "fragment": "SVGFEDropShadowElement includes SVGFilterPrimitiveStandardAttributes;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "SVGFEDropShadowElement",
+          "includes": "SVGFilterPrimitiveStandardAttributes"
+        }
+      ],
+      "SVGFEFloodElement": [
+        {
+          "fragment": "SVGFEFloodElement includes SVGFilterPrimitiveStandardAttributes;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "SVGFEFloodElement",
+          "includes": "SVGFilterPrimitiveStandardAttributes"
+        }
+      ],
+      "SVGFEGaussianBlurElement": [
+        {
+          "fragment": "SVGFEGaussianBlurElement includes SVGFilterPrimitiveStandardAttributes;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "SVGFEGaussianBlurElement",
+          "includes": "SVGFilterPrimitiveStandardAttributes"
+        }
+      ],
+      "SVGFEImageElement": [
+        {
+          "fragment": "SVGFEImageElement includes SVGFilterPrimitiveStandardAttributes;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "SVGFEImageElement",
+          "includes": "SVGFilterPrimitiveStandardAttributes"
+        },
+        {
+          "fragment": "SVGFEImageElement includes SVGURIReference;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "SVGFEImageElement",
+          "includes": "SVGURIReference"
+        }
+      ],
+      "SVGFEMergeElement": [
+        {
+          "fragment": "SVGFEMergeElement includes SVGFilterPrimitiveStandardAttributes;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "SVGFEMergeElement",
+          "includes": "SVGFilterPrimitiveStandardAttributes"
+        }
+      ],
+      "SVGFEMorphologyElement": [
+        {
+          "fragment": "SVGFEMorphologyElement includes SVGFilterPrimitiveStandardAttributes;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "SVGFEMorphologyElement",
+          "includes": "SVGFilterPrimitiveStandardAttributes"
+        }
+      ],
+      "SVGFEOffsetElement": [
+        {
+          "fragment": "SVGFEOffsetElement includes SVGFilterPrimitiveStandardAttributes;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "SVGFEOffsetElement",
+          "includes": "SVGFilterPrimitiveStandardAttributes"
+        }
+      ],
+      "SVGFESpecularLightingElement": [
+        {
+          "fragment": "SVGFESpecularLightingElement includes SVGFilterPrimitiveStandardAttributes;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "SVGFESpecularLightingElement",
+          "includes": "SVGFilterPrimitiveStandardAttributes"
+        }
+      ],
+      "SVGFETileElement": [
+        {
+          "fragment": "SVGFETileElement includes SVGFilterPrimitiveStandardAttributes;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "SVGFETileElement",
+          "includes": "SVGFilterPrimitiveStandardAttributes"
+        }
+      ],
+      "SVGFETurbulenceElement": [
+        {
+          "fragment": "SVGFETurbulenceElement includes SVGFilterPrimitiveStandardAttributes;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "SVGFETurbulenceElement",
+          "includes": "SVGFilterPrimitiveStandardAttributes"
+        }
+      ]
+    },
+    "globals": {},
+    "exposed": {},
+    "dependencies": {
+      "SVGFilterElement": [
+        "SVGElement",
+        "SVGAnimatedEnumeration",
+        "SVGAnimatedLength",
+        "SVGURIReference"
+      ],
+      "SVGFilterPrimitiveStandardAttributes": [
+        "SVGAnimatedLength",
+        "SVGAnimatedString"
+      ],
+      "SVGFEBlendElement": [
+        "SVGElement",
+        "SVGAnimatedString",
+        "SVGAnimatedEnumeration",
+        "SVGFilterPrimitiveStandardAttributes"
+      ],
+      "SVGFEColorMatrixElement": [
+        "SVGElement",
+        "SVGAnimatedString",
+        "SVGAnimatedEnumeration",
+        "SVGAnimatedNumberList",
+        "SVGFilterPrimitiveStandardAttributes"
+      ],
+      "SVGFEComponentTransferElement": [
+        "SVGElement",
+        "SVGAnimatedString",
+        "SVGFilterPrimitiveStandardAttributes"
+      ],
+      "SVGComponentTransferFunctionElement": [
+        "SVGElement",
+        "SVGAnimatedEnumeration",
+        "SVGAnimatedNumberList",
+        "SVGAnimatedNumber"
+      ],
+      "SVGFEFuncRElement": [
+        "SVGComponentTransferFunctionElement"
+      ],
+      "SVGFEFuncGElement": [
+        "SVGComponentTransferFunctionElement"
+      ],
+      "SVGFEFuncBElement": [
+        "SVGComponentTransferFunctionElement"
+      ],
+      "SVGFEFuncAElement": [
+        "SVGComponentTransferFunctionElement"
+      ],
+      "SVGFECompositeElement": [
+        "SVGElement",
+        "SVGAnimatedString",
+        "SVGAnimatedEnumeration",
+        "SVGAnimatedNumber",
+        "SVGFilterPrimitiveStandardAttributes"
+      ],
+      "SVGFEConvolveMatrixElement": [
+        "SVGElement",
+        "SVGAnimatedString",
+        "SVGAnimatedInteger",
+        "SVGAnimatedNumberList",
+        "SVGAnimatedNumber",
+        "SVGAnimatedEnumeration",
+        "SVGAnimatedBoolean",
+        "SVGFilterPrimitiveStandardAttributes"
+      ],
+      "SVGFEDiffuseLightingElement": [
+        "SVGElement",
+        "SVGAnimatedString",
+        "SVGAnimatedNumber",
+        "SVGFilterPrimitiveStandardAttributes"
+      ],
+      "SVGFEDistantLightElement": [
+        "SVGElement",
+        "SVGAnimatedNumber"
+      ],
+      "SVGFEPointLightElement": [
+        "SVGElement",
+        "SVGAnimatedNumber"
+      ],
+      "SVGFESpotLightElement": [
+        "SVGElement",
+        "SVGAnimatedNumber"
+      ],
+      "SVGFEDisplacementMapElement": [
+        "SVGElement",
+        "SVGAnimatedString",
+        "SVGAnimatedNumber",
+        "SVGAnimatedEnumeration",
+        "SVGFilterPrimitiveStandardAttributes"
+      ],
+      "SVGFEDropShadowElement": [
+        "SVGElement",
+        "SVGAnimatedString",
+        "SVGAnimatedNumber",
+        "void",
+        "SVGFilterPrimitiveStandardAttributes"
+      ],
+      "SVGFEFloodElement": [
+        "SVGElement",
+        "SVGFilterPrimitiveStandardAttributes"
+      ],
+      "SVGFEGaussianBlurElement": [
+        "SVGElement",
+        "SVGAnimatedString",
+        "SVGAnimatedNumber",
+        "SVGAnimatedEnumeration",
+        "void",
+        "SVGFilterPrimitiveStandardAttributes"
+      ],
+      "SVGFEImageElement": [
+        "SVGElement",
+        "SVGAnimatedPreserveAspectRatio",
+        "SVGAnimatedString",
+        "SVGFilterPrimitiveStandardAttributes",
+        "SVGURIReference"
+      ],
+      "SVGFEMergeElement": [
+        "SVGElement",
+        "SVGFilterPrimitiveStandardAttributes"
+      ],
+      "SVGFEMergeNodeElement": [
+        "SVGElement",
+        "SVGAnimatedString"
+      ],
+      "SVGFEMorphologyElement": [
+        "SVGElement",
+        "SVGAnimatedString",
+        "SVGAnimatedEnumeration",
+        "SVGAnimatedNumber",
+        "SVGFilterPrimitiveStandardAttributes"
+      ],
+      "SVGFEOffsetElement": [
+        "SVGElement",
+        "SVGAnimatedString",
+        "SVGAnimatedNumber",
+        "SVGFilterPrimitiveStandardAttributes"
+      ],
+      "SVGFESpecularLightingElement": [
+        "SVGElement",
+        "SVGAnimatedString",
+        "SVGAnimatedNumber",
+        "SVGFilterPrimitiveStandardAttributes"
+      ],
+      "SVGFETileElement": [
+        "SVGElement",
+        "SVGAnimatedString",
+        "SVGFilterPrimitiveStandardAttributes"
+      ],
+      "SVGFETurbulenceElement": [
+        "SVGElement",
+        "SVGAnimatedNumber",
+        "SVGAnimatedInteger",
+        "SVGAnimatedEnumeration",
+        "SVGFilterPrimitiveStandardAttributes"
+      ]
+    },
+    "externalDependencies": [
+      "SVGElement",
+      "SVGAnimatedEnumeration",
+      "SVGAnimatedLength",
+      "SVGAnimatedString",
+      "SVGAnimatedNumberList",
+      "SVGAnimatedNumber",
+      "SVGAnimatedInteger",
+      "SVGAnimatedBoolean",
+      "void",
+      "SVGAnimatedPreserveAspectRatio"
+    ],
+    "hasObsoleteIdl": false
+  }
+}

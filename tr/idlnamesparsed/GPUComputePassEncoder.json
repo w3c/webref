@@ -6,7 +6,7 @@
       "title": "WebGPU",
       "url": "https://www.w3.org/TR/webgpu/"
     },
-    "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUComputePassEncoder {\n    undefined setPipeline(GPUComputePipeline pipeline);\n    undefined dispatch(GPUSize32 workgroupCountX, optional GPUSize32 workgroupCountY = 1, optional GPUSize32 workgroupCountZ = 1);\n    undefined dispatchIndirect(GPUBuffer indirectBuffer, GPUSize64 indirectOffset);\n\n    undefined endPass();\n};",
+    "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUComputePassEncoder {\n    undefined setPipeline(GPUComputePipeline pipeline);\n    undefined dispatch(GPUSize32 workgroupCountX, optional GPUSize32 workgroupCountY = 1, optional GPUSize32 workgroupCountZ = 1);\n    undefined dispatchIndirect(GPUBuffer indirectBuffer, GPUSize64 indirectOffset);\n\n    undefined end();\n};",
     "href": "https://www.w3.org/TR/webgpu/#gpucomputepassencoder"
   },
   "extended": [

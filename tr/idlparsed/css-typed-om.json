@@ -1,0 +1,5115 @@
+{
+  "spec": {
+    "title": "CSS Typed OM Level 1",
+    "url": "https://www.w3.org/TR/css-typed-om-1/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {
+        "Window": [
+          "CSSUnparsedValue",
+          "CSSVariableReferenceValue",
+          "CSSKeywordValue",
+          "CSSUnitValue",
+          "CSSMathSum",
+          "CSSMathProduct",
+          "CSSMathNegate",
+          "CSSMathInvert",
+          "CSSMathMin",
+          "CSSMathMax",
+          "CSSTransformValue",
+          "CSSTranslate",
+          "CSSRotate",
+          "CSSScale",
+          "CSSSkew",
+          "CSSSkewX",
+          "CSSSkewY",
+          "CSSPerspective",
+          "CSSMatrixComponent",
+          "CSSPositionValue"
+        ],
+        "Worker": [
+          "CSSUnparsedValue",
+          "CSSVariableReferenceValue",
+          "CSSKeywordValue",
+          "CSSUnitValue",
+          "CSSMathSum",
+          "CSSMathProduct",
+          "CSSMathNegate",
+          "CSSMathInvert",
+          "CSSMathMin",
+          "CSSMathMax",
+          "CSSTransformValue",
+          "CSSTranslate",
+          "CSSRotate",
+          "CSSScale",
+          "CSSSkew",
+          "CSSSkewX",
+          "CSSSkewY",
+          "CSSPerspective",
+          "CSSMatrixComponent",
+          "CSSPositionValue"
+        ],
+        "PaintWorklet": [
+          "CSSUnparsedValue",
+          "CSSVariableReferenceValue",
+          "CSSKeywordValue",
+          "CSSUnitValue",
+          "CSSMathSum",
+          "CSSMathProduct",
+          "CSSMathNegate",
+          "CSSMathInvert",
+          "CSSMathMin",
+          "CSSMathMax",
+          "CSSTransformValue",
+          "CSSTranslate",
+          "CSSRotate",
+          "CSSScale",
+          "CSSSkew",
+          "CSSSkewX",
+          "CSSSkewY",
+          "CSSPerspective",
+          "CSSMatrixComponent",
+          "CSSPositionValue"
+        ],
+        "LayoutWorklet": [
+          "CSSUnparsedValue",
+          "CSSVariableReferenceValue",
+          "CSSKeywordValue",
+          "CSSUnitValue",
+          "CSSMathSum",
+          "CSSMathProduct",
+          "CSSMathNegate",
+          "CSSMathInvert",
+          "CSSMathMin",
+          "CSSMathMax",
+          "CSSTransformValue",
+          "CSSTranslate",
+          "CSSRotate",
+          "CSSScale",
+          "CSSSkew",
+          "CSSSkewX",
+          "CSSSkewY",
+          "CSSPerspective",
+          "CSSMatrixComponent",
+          "CSSPositionValue"
+        ]
+      },
+      "functions": {
+        "Window": [
+          "CSSStyleValue",
+          "StylePropertyMapReadOnly",
+          "StylePropertyMap",
+          "CSSNumericValue",
+          "CSSMathValue",
+          "CSSNumericArray",
+          "CSSTransformComponent",
+          "CSSImageValue"
+        ],
+        "Worker": [
+          "CSSStyleValue",
+          "StylePropertyMapReadOnly",
+          "CSSNumericValue",
+          "CSSMathValue",
+          "CSSNumericArray",
+          "CSSTransformComponent",
+          "CSSImageValue"
+        ],
+        "PaintWorklet": [
+          "CSSStyleValue",
+          "StylePropertyMapReadOnly",
+          "CSSNumericValue",
+          "CSSMathValue",
+          "CSSNumericArray",
+          "CSSTransformComponent",
+          "CSSImageValue"
+        ],
+        "LayoutWorklet": [
+          "CSSStyleValue",
+          "StylePropertyMapReadOnly",
+          "CSSNumericValue",
+          "CSSMathValue",
+          "CSSNumericArray",
+          "CSSTransformComponent",
+          "CSSImageValue"
+        ]
+      }
+    },
+    "idlNames": {
+      "CSSStyleValue": {
+        "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]\ninterface CSSStyleValue {\n    stringifier;\n    [Exposed=Window] static CSSStyleValue parse(USVString property, USVString cssText);\n    [Exposed=Window] static sequence<CSSStyleValue> parseAll(USVString property, USVString cssText);\n};",
+        "type": "interface",
+        "name": "CSSStyleValue",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "operation",
+            "name": "",
+            "arguments": [],
+            "extAttrs": [],
+            "special": "stringifier"
+          },
+          {
+            "type": "operation",
+            "name": "parse",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSStyleValue"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "property",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "USVString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "cssText",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "USVString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "Exposed",
+                "rhs": {
+                  "type": "identifier",
+                  "value": "Window"
+                },
+                "arguments": []
+              }
+            ],
+            "special": "static"
+          },
+          {
+            "type": "operation",
+            "name": "parseAll",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CSSStyleValue"
+                }
+              ]
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "property",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "USVString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "cssText",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "USVString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "Exposed",
+                "rhs": {
+                  "type": "identifier",
+                  "value": "Window"
+                },
+                "arguments": []
+              }
+            ],
+            "special": "static"
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                },
+                {
+                  "value": "PaintWorklet"
+                },
+                {
+                  "value": "LayoutWorklet"
+                }
+              ]
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "StylePropertyMapReadOnly": {
+        "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]\ninterface StylePropertyMapReadOnly {\n    iterable<USVString, sequence<CSSStyleValue>>;\n    any get(USVString property);\n    /* 'any' means (undefined or CSSStyleValue) here,\n       see https://github.com/heycam/webidl/issues/60 */\n    sequence<CSSStyleValue> getAll(USVString property);\n    boolean has(USVString property);\n    readonly attribute unsigned long size;\n};",
+        "type": "interface",
+        "name": "StylePropertyMapReadOnly",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "iterable",
+            "idlType": [
+              {
+                "type": null,
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "USVString"
+              },
+              {
+                "type": null,
+                "extAttrs": [],
+                "generic": "sequence",
+                "nullable": false,
+                "union": false,
+                "idlType": [
+                  {
+                    "type": null,
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "CSSStyleValue"
+                  }
+                ]
+              }
+            ],
+            "arguments": [],
+            "extAttrs": [],
+            "readonly": false,
+            "async": false
+          },
+          {
+            "type": "operation",
+            "name": "get",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "property",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "USVString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "getAll",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CSSStyleValue"
+                }
+              ]
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "property",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "USVString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "has",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "property",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "USVString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "attribute",
+            "name": "size",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                },
+                {
+                  "value": "PaintWorklet"
+                },
+                {
+                  "value": "LayoutWorklet"
+                }
+              ]
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "StylePropertyMap": {
+        "fragment": "[Exposed=Window]\ninterface StylePropertyMap : StylePropertyMapReadOnly {\n    void set(USVString property, (CSSStyleValue or USVString)... values);\n    void append(USVString property, (CSSStyleValue or USVString)... values);\n    void delete(USVString property);\n    void clear();\n};",
+        "type": "interface",
+        "name": "StylePropertyMap",
+        "inheritance": "StylePropertyMapReadOnly",
+        "members": [
+          {
+            "type": "operation",
+            "name": "set",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "void"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "property",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "USVString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "values",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": true,
+                  "idlType": [
+                    {
+                      "type": null,
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "CSSStyleValue"
+                    },
+                    {
+                      "type": null,
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "USVString"
+                    }
+                  ]
+                },
+                "default": null,
+                "optional": false,
+                "variadic": true
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "append",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "void"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "property",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "USVString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "values",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": true,
+                  "idlType": [
+                    {
+                      "type": null,
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "CSSStyleValue"
+                    },
+                    {
+                      "type": null,
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "USVString"
+                    }
+                  ]
+                },
+                "default": null,
+                "optional": false,
+                "variadic": true
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "delete",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "void"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "property",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "USVString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "clear",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "void"
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": ""
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "CSSUnparsedValue": {
+        "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet),\n Constructor(sequence<CSSUnparsedSegment> members)]\ninterface CSSUnparsedValue : CSSStyleValue {\n    iterable<CSSUnparsedSegment>;\n    readonly attribute unsigned long length;\n    getter CSSUnparsedSegment (unsigned long index);\n    setter CSSUnparsedSegment (unsigned long index, CSSUnparsedSegment val);\n};",
+        "type": "interface",
+        "name": "CSSUnparsedValue",
+        "inheritance": "CSSStyleValue",
+        "members": [
+          {
+            "type": "iterable",
+            "idlType": [
+              {
+                "type": null,
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "CSSUnparsedSegment"
+              }
+            ],
+            "arguments": [],
+            "extAttrs": [],
+            "readonly": false,
+            "async": false
+          },
+          {
+            "type": "attribute",
+            "name": "length",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "operation",
+            "name": "",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSUnparsedSegment"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "index",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "unsigned long"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "getter"
+          },
+          {
+            "type": "operation",
+            "name": "",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSUnparsedSegment"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "index",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "unsigned long"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "val",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CSSUnparsedSegment"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "setter"
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                },
+                {
+                  "value": "PaintWorklet"
+                },
+                {
+                  "value": "LayoutWorklet"
+                }
+              ]
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "Constructor",
+            "rhs": null,
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "members",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "sequence",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": [
+                    {
+                      "type": "argument-type",
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "CSSUnparsedSegment"
+                    }
+                  ]
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ]
+          }
+        ],
+        "partial": false
+      },
+      "CSSUnparsedSegment": {
+        "fragment": "typedef (USVString or CSSVariableReferenceValue) CSSUnparsedSegment;",
+        "type": "typedef",
+        "name": "CSSUnparsedSegment",
+        "idlType": {
+          "type": "typedef-type",
+          "extAttrs": [],
+          "generic": "",
+          "nullable": false,
+          "union": true,
+          "idlType": [
+            {
+              "type": null,
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            {
+              "type": null,
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSVariableReferenceValue"
+            }
+          ]
+        },
+        "extAttrs": []
+      },
+      "CSSVariableReferenceValue": {
+        "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet),\n Constructor(USVString variable, optional CSSUnparsedValue? fallback = null)]\ninterface CSSVariableReferenceValue {\n    attribute USVString variable;\n    readonly attribute CSSUnparsedValue? fallback;\n};",
+        "type": "interface",
+        "name": "CSSVariableReferenceValue",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "attribute",
+            "name": "variable",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "fallback",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "CSSUnparsedValue"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                },
+                {
+                  "value": "PaintWorklet"
+                },
+                {
+                  "value": "LayoutWorklet"
+                }
+              ]
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "Constructor",
+            "rhs": null,
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "variable",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "USVString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "fallback",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": true,
+                  "union": false,
+                  "idlType": "CSSUnparsedValue"
+                },
+                "default": {
+                  "type": "null"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ]
+          }
+        ],
+        "partial": false
+      },
+      "CSSKeywordValue": {
+        "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet),\n Constructor(USVString value)]\ninterface CSSKeywordValue : CSSStyleValue {\n    attribute USVString value;\n};",
+        "type": "interface",
+        "name": "CSSKeywordValue",
+        "inheritance": "CSSStyleValue",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "value",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                },
+                {
+                  "value": "PaintWorklet"
+                },
+                {
+                  "value": "LayoutWorklet"
+                }
+              ]
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "Constructor",
+            "rhs": null,
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "value",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "USVString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ]
+          }
+        ],
+        "partial": false
+      },
+      "CSSNumberish": {
+        "fragment": "typedef (double or CSSNumericValue) CSSNumberish;",
+        "type": "typedef",
+        "name": "CSSNumberish",
+        "idlType": {
+          "type": "typedef-type",
+          "extAttrs": [],
+          "generic": "",
+          "nullable": false,
+          "union": true,
+          "idlType": [
+            {
+              "type": null,
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            {
+              "type": null,
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSNumericValue"
+            }
+          ]
+        },
+        "extAttrs": []
+      },
+      "CSSNumericBaseType": {
+        "fragment": "enum CSSNumericBaseType {\n    \"length\",\n    \"angle\",\n    \"time\",\n    \"frequency\",\n    \"resolution\",\n    \"flex\",\n    \"percent\",\n};",
+        "type": "enum",
+        "name": "CSSNumericBaseType",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "length"
+          },
+          {
+            "type": "enum-value",
+            "value": "angle"
+          },
+          {
+            "type": "enum-value",
+            "value": "time"
+          },
+          {
+            "type": "enum-value",
+            "value": "frequency"
+          },
+          {
+            "type": "enum-value",
+            "value": "resolution"
+          },
+          {
+            "type": "enum-value",
+            "value": "flex"
+          },
+          {
+            "type": "enum-value",
+            "value": "percent"
+          }
+        ],
+        "extAttrs": []
+      },
+      "CSSNumericType": {
+        "fragment": "dictionary CSSNumericType {\n    long length;\n    long angle;\n    long time;\n    long frequency;\n    long resolution;\n    long flex;\n    long percent;\n    CSSNumericBaseType percentHint;\n};",
+        "type": "dictionary",
+        "name": "CSSNumericType",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "length",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "long"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "angle",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "long"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "time",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "long"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "frequency",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "long"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "resolution",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "long"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "flex",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "long"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "percent",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "long"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "percentHint",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSNumericBaseType"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "CSSNumericValue": {
+        "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]\ninterface CSSNumericValue : CSSStyleValue {\n    CSSNumericValue add(CSSNumberish... values);\n    CSSNumericValue sub(CSSNumberish... values);\n    CSSNumericValue mul(CSSNumberish... values);\n    CSSNumericValue div(CSSNumberish... values);\n    CSSNumericValue min(CSSNumberish... values);\n    CSSNumericValue max(CSSNumberish... values);\n\n    boolean equals(CSSNumberish... value);\n\n    CSSUnitValue to(USVString unit);\n    CSSMathSum toSum(USVString... units);\n    CSSNumericType type();\n\n    [Exposed=Window] static CSSNumericValue parse(USVString cssText);\n};",
+        "type": "interface",
+        "name": "CSSNumericValue",
+        "inheritance": "CSSStyleValue",
+        "members": [
+          {
+            "type": "operation",
+            "name": "add",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSNumericValue"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "values",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CSSNumberish"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": true
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "sub",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSNumericValue"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "values",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CSSNumberish"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": true
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "mul",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSNumericValue"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "values",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CSSNumberish"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": true
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "div",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSNumericValue"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "values",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CSSNumberish"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": true
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "min",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSNumericValue"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "values",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CSSNumberish"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": true
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "max",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSNumericValue"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "values",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CSSNumberish"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": true
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "equals",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "value",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CSSNumberish"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": true
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "to",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSUnitValue"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "unit",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "USVString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "toSum",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSMathSum"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "units",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "USVString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": true
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "type",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSNumericType"
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "parse",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSNumericValue"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "cssText",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "USVString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "Exposed",
+                "rhs": {
+                  "type": "identifier",
+                  "value": "Window"
+                },
+                "arguments": []
+              }
+            ],
+            "special": "static"
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                },
+                {
+                  "value": "PaintWorklet"
+                },
+                {
+                  "value": "LayoutWorklet"
+                }
+              ]
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "CSSUnitValue": {
+        "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet),\n Constructor(double value, USVString unit)]\ninterface CSSUnitValue : CSSNumericValue {\n    attribute double value;\n    readonly attribute USVString unit;\n};",
+        "type": "interface",
+        "name": "CSSUnitValue",
+        "inheritance": "CSSNumericValue",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "value",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "unit",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                },
+                {
+                  "value": "PaintWorklet"
+                },
+                {
+                  "value": "LayoutWorklet"
+                }
+              ]
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "Constructor",
+            "rhs": null,
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "value",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "double"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "unit",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "USVString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ]
+          }
+        ],
+        "partial": false
+      },
+      "CSSMathValue": {
+        "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]\ninterface CSSMathValue : CSSNumericValue {\n    readonly attribute CSSMathOperator operator;\n};",
+        "type": "interface",
+        "name": "CSSMathValue",
+        "inheritance": "CSSNumericValue",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "operator",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSMathOperator"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                },
+                {
+                  "value": "PaintWorklet"
+                },
+                {
+                  "value": "LayoutWorklet"
+                }
+              ]
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "CSSMathSum": {
+        "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet),\n Constructor(CSSNumberish... args)]\ninterface CSSMathSum : CSSMathValue {\n    readonly attribute CSSNumericArray values;\n};",
+        "type": "interface",
+        "name": "CSSMathSum",
+        "inheritance": "CSSMathValue",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "values",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSNumericArray"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                },
+                {
+                  "value": "PaintWorklet"
+                },
+                {
+                  "value": "LayoutWorklet"
+                }
+              ]
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "Constructor",
+            "rhs": null,
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "args",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CSSNumberish"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": true
+              }
+            ]
+          }
+        ],
+        "partial": false
+      },
+      "CSSMathProduct": {
+        "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet),\n Constructor(CSSNumberish... args)]\ninterface CSSMathProduct : CSSMathValue {\n    readonly attribute CSSNumericArray values;\n};",
+        "type": "interface",
+        "name": "CSSMathProduct",
+        "inheritance": "CSSMathValue",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "values",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSNumericArray"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                },
+                {
+                  "value": "PaintWorklet"
+                },
+                {
+                  "value": "LayoutWorklet"
+                }
+              ]
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "Constructor",
+            "rhs": null,
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "args",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CSSNumberish"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": true
+              }
+            ]
+          }
+        ],
+        "partial": false
+      },
+      "CSSMathNegate": {
+        "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet),\n Constructor(CSSNumberish arg)]\ninterface CSSMathNegate : CSSMathValue {\n    readonly attribute CSSNumericValue value;\n};",
+        "type": "interface",
+        "name": "CSSMathNegate",
+        "inheritance": "CSSMathValue",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "value",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSNumericValue"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                },
+                {
+                  "value": "PaintWorklet"
+                },
+                {
+                  "value": "LayoutWorklet"
+                }
+              ]
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "Constructor",
+            "rhs": null,
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "arg",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CSSNumberish"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ]
+          }
+        ],
+        "partial": false
+      },
+      "CSSMathInvert": {
+        "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet),\n Constructor(CSSNumberish arg)]\ninterface CSSMathInvert : CSSMathValue {\n    readonly attribute CSSNumericValue value;\n};",
+        "type": "interface",
+        "name": "CSSMathInvert",
+        "inheritance": "CSSMathValue",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "value",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSNumericValue"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                },
+                {
+                  "value": "PaintWorklet"
+                },
+                {
+                  "value": "LayoutWorklet"
+                }
+              ]
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "Constructor",
+            "rhs": null,
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "arg",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CSSNumberish"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ]
+          }
+        ],
+        "partial": false
+      },
+      "CSSMathMin": {
+        "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet),\n Constructor(CSSNumberish... args)]\ninterface CSSMathMin : CSSMathValue {\n    readonly attribute CSSNumericArray values;\n};",
+        "type": "interface",
+        "name": "CSSMathMin",
+        "inheritance": "CSSMathValue",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "values",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSNumericArray"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                },
+                {
+                  "value": "PaintWorklet"
+                },
+                {
+                  "value": "LayoutWorklet"
+                }
+              ]
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "Constructor",
+            "rhs": null,
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "args",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CSSNumberish"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": true
+              }
+            ]
+          }
+        ],
+        "partial": false
+      },
+      "CSSMathMax": {
+        "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet),\n Constructor(CSSNumberish... args)]\ninterface CSSMathMax : CSSMathValue {\n    readonly attribute CSSNumericArray values;\n};",
+        "type": "interface",
+        "name": "CSSMathMax",
+        "inheritance": "CSSMathValue",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "values",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSNumericArray"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                },
+                {
+                  "value": "PaintWorklet"
+                },
+                {
+                  "value": "LayoutWorklet"
+                }
+              ]
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "Constructor",
+            "rhs": null,
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "args",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CSSNumberish"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": true
+              }
+            ]
+          }
+        ],
+        "partial": false
+      },
+      "CSSNumericArray": {
+        "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]\ninterface CSSNumericArray {\n    iterable<CSSNumericValue>;\n    readonly attribute unsigned long length;\n    getter CSSNumericValue (unsigned long index);\n};",
+        "type": "interface",
+        "name": "CSSNumericArray",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "iterable",
+            "idlType": [
+              {
+                "type": null,
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "CSSNumericValue"
+              }
+            ],
+            "arguments": [],
+            "extAttrs": [],
+            "readonly": false,
+            "async": false
+          },
+          {
+            "type": "attribute",
+            "name": "length",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "operation",
+            "name": "",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSNumericValue"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "index",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "unsigned long"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "getter"
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                },
+                {
+                  "value": "PaintWorklet"
+                },
+                {
+                  "value": "LayoutWorklet"
+                }
+              ]
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "CSSMathOperator": {
+        "fragment": "enum CSSMathOperator {\n    \"sum\",\n    \"product\",\n    \"negate\",\n    \"invert\",\n    \"min\",\n    \"max\",\n};",
+        "type": "enum",
+        "name": "CSSMathOperator",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "sum"
+          },
+          {
+            "type": "enum-value",
+            "value": "product"
+          },
+          {
+            "type": "enum-value",
+            "value": "negate"
+          },
+          {
+            "type": "enum-value",
+            "value": "invert"
+          },
+          {
+            "type": "enum-value",
+            "value": "min"
+          },
+          {
+            "type": "enum-value",
+            "value": "max"
+          }
+        ],
+        "extAttrs": []
+      },
+      "CSSTransformValue": {
+        "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet),\n Constructor(sequence<CSSTransformComponent> transforms)]\ninterface CSSTransformValue : CSSStyleValue {\n    iterable<CSSTransformComponent>;\n    readonly attribute unsigned long length;\n    getter CSSTransformComponent (unsigned long index);\n    setter CSSTransformComponent (unsigned long index, CSSTransformComponent val);\n\n    readonly attribute boolean is2D;\n    DOMMatrix toMatrix();\n};",
+        "type": "interface",
+        "name": "CSSTransformValue",
+        "inheritance": "CSSStyleValue",
+        "members": [
+          {
+            "type": "iterable",
+            "idlType": [
+              {
+                "type": null,
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "CSSTransformComponent"
+              }
+            ],
+            "arguments": [],
+            "extAttrs": [],
+            "readonly": false,
+            "async": false
+          },
+          {
+            "type": "attribute",
+            "name": "length",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "operation",
+            "name": "",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSTransformComponent"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "index",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "unsigned long"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "getter"
+          },
+          {
+            "type": "operation",
+            "name": "",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSTransformComponent"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "index",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "unsigned long"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "val",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CSSTransformComponent"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "setter"
+          },
+          {
+            "type": "attribute",
+            "name": "is2D",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "operation",
+            "name": "toMatrix",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMMatrix"
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": ""
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                },
+                {
+                  "value": "PaintWorklet"
+                },
+                {
+                  "value": "LayoutWorklet"
+                }
+              ]
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "Constructor",
+            "rhs": null,
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "transforms",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "sequence",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": [
+                    {
+                      "type": "argument-type",
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "CSSTransformComponent"
+                    }
+                  ]
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ]
+          }
+        ],
+        "partial": false
+      },
+      "CSSTransformComponent": {
+        "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]\ninterface CSSTransformComponent {\n    stringifier;\n    attribute boolean is2D;\n    DOMMatrix toMatrix();\n};",
+        "type": "interface",
+        "name": "CSSTransformComponent",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "operation",
+            "name": "",
+            "arguments": [],
+            "extAttrs": [],
+            "special": "stringifier"
+          },
+          {
+            "type": "attribute",
+            "name": "is2D",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "operation",
+            "name": "toMatrix",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMMatrix"
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": ""
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                },
+                {
+                  "value": "PaintWorklet"
+                },
+                {
+                  "value": "LayoutWorklet"
+                }
+              ]
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "CSSTranslate": {
+        "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet),\n Constructor(CSSNumericValue x, CSSNumericValue y, optional CSSNumericValue z)]\ninterface CSSTranslate : CSSTransformComponent {\n    attribute CSSNumericValue x;\n    attribute CSSNumericValue y;\n    attribute CSSNumericValue z;\n};",
+        "type": "interface",
+        "name": "CSSTranslate",
+        "inheritance": "CSSTransformComponent",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "x",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSNumericValue"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "y",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSNumericValue"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "z",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSNumericValue"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                },
+                {
+                  "value": "PaintWorklet"
+                },
+                {
+                  "value": "LayoutWorklet"
+                }
+              ]
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "Constructor",
+            "rhs": null,
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "x",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CSSNumericValue"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "y",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CSSNumericValue"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "z",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CSSNumericValue"
+                },
+                "default": null,
+                "optional": true,
+                "variadic": false
+              }
+            ]
+          }
+        ],
+        "partial": false
+      },
+      "CSSRotate": {
+        "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet),\n Constructor(CSSNumericValue angle),\n Constructor(CSSNumberish x, CSSNumberish y, CSSNumberish z, CSSNumericValue angle)]\ninterface CSSRotate : CSSTransformComponent {\n    attribute CSSNumberish x;\n    attribute CSSNumberish y;\n    attribute CSSNumberish z;\n    attribute CSSNumericValue angle;\n};",
+        "type": "interface",
+        "name": "CSSRotate",
+        "inheritance": "CSSTransformComponent",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "x",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSNumberish"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "y",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSNumberish"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "z",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSNumberish"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "angle",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSNumericValue"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                },
+                {
+                  "value": "PaintWorklet"
+                },
+                {
+                  "value": "LayoutWorklet"
+                }
+              ]
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "Constructor",
+            "rhs": null,
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "angle",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CSSNumericValue"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ]
+          },
+          {
+            "type": "extended-attribute",
+            "name": "Constructor",
+            "rhs": null,
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "x",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CSSNumberish"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "y",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CSSNumberish"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "z",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CSSNumberish"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "angle",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CSSNumericValue"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ]
+          }
+        ],
+        "partial": false
+      },
+      "CSSScale": {
+        "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet),\n Constructor(CSSNumberish x, CSSNumberish y, optional CSSNumberish z)]\ninterface CSSScale : CSSTransformComponent {\n    attribute CSSNumberish x;\n    attribute CSSNumberish y;\n    attribute CSSNumberish z;\n};",
+        "type": "interface",
+        "name": "CSSScale",
+        "inheritance": "CSSTransformComponent",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "x",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSNumberish"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "y",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSNumberish"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "z",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSNumberish"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                },
+                {
+                  "value": "PaintWorklet"
+                },
+                {
+                  "value": "LayoutWorklet"
+                }
+              ]
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "Constructor",
+            "rhs": null,
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "x",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CSSNumberish"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "y",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CSSNumberish"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "z",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CSSNumberish"
+                },
+                "default": null,
+                "optional": true,
+                "variadic": false
+              }
+            ]
+          }
+        ],
+        "partial": false
+      },
+      "CSSSkew": {
+        "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet),\n Constructor(CSSNumericValue ax, CSSNumericValue ay)]\ninterface CSSSkew : CSSTransformComponent {\n    attribute CSSNumericValue ax;\n    attribute CSSNumericValue ay;\n};",
+        "type": "interface",
+        "name": "CSSSkew",
+        "inheritance": "CSSTransformComponent",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "ax",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSNumericValue"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "ay",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSNumericValue"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                },
+                {
+                  "value": "PaintWorklet"
+                },
+                {
+                  "value": "LayoutWorklet"
+                }
+              ]
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "Constructor",
+            "rhs": null,
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "ax",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CSSNumericValue"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "ay",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CSSNumericValue"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ]
+          }
+        ],
+        "partial": false
+      },
+      "CSSSkewX": {
+        "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet),\n Constructor(CSSNumericValue ax)]\ninterface CSSSkewX : CSSTransformComponent {\n    attribute CSSNumericValue ax;\n};",
+        "type": "interface",
+        "name": "CSSSkewX",
+        "inheritance": "CSSTransformComponent",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "ax",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSNumericValue"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                },
+                {
+                  "value": "PaintWorklet"
+                },
+                {
+                  "value": "LayoutWorklet"
+                }
+              ]
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "Constructor",
+            "rhs": null,
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "ax",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CSSNumericValue"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ]
+          }
+        ],
+        "partial": false
+      },
+      "CSSSkewY": {
+        "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet),\n Constructor(CSSNumericValue ay)]\ninterface CSSSkewY : CSSTransformComponent {\n    attribute CSSNumericValue ay;\n};",
+        "type": "interface",
+        "name": "CSSSkewY",
+        "inheritance": "CSSTransformComponent",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "ay",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSNumericValue"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                },
+                {
+                  "value": "PaintWorklet"
+                },
+                {
+                  "value": "LayoutWorklet"
+                }
+              ]
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "Constructor",
+            "rhs": null,
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "ay",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CSSNumericValue"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ]
+          }
+        ],
+        "partial": false
+      },
+      "CSSPerspective": {
+        "fragment": "/* Note that skew(x,y) is *not* the same as skewX(x) skewY(y),\n   thus the separate interfaces for all three. */\n\n[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet),\n Constructor(CSSNumericValue length)]\ninterface CSSPerspective : CSSTransformComponent {\n    attribute CSSNumericValue length;\n};",
+        "type": "interface",
+        "name": "CSSPerspective",
+        "inheritance": "CSSTransformComponent",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "length",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSNumericValue"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                },
+                {
+                  "value": "PaintWorklet"
+                },
+                {
+                  "value": "LayoutWorklet"
+                }
+              ]
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "Constructor",
+            "rhs": null,
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "length",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CSSNumericValue"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ]
+          }
+        ],
+        "partial": false
+      },
+      "CSSMatrixComponent": {
+        "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet),\n Constructor(DOMMatrixReadOnly matrix, optional CSSMatrixComponentOptions options)]\ninterface CSSMatrixComponent : CSSTransformComponent {\n    attribute DOMMatrix matrix;\n};",
+        "type": "interface",
+        "name": "CSSMatrixComponent",
+        "inheritance": "CSSTransformComponent",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "matrix",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMMatrix"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                },
+                {
+                  "value": "PaintWorklet"
+                },
+                {
+                  "value": "LayoutWorklet"
+                }
+              ]
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "Constructor",
+            "rhs": null,
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "matrix",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMMatrixReadOnly"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "options",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CSSMatrixComponentOptions"
+                },
+                "default": null,
+                "optional": true,
+                "variadic": false
+              }
+            ]
+          }
+        ],
+        "partial": false
+      },
+      "CSSMatrixComponentOptions": {
+        "fragment": "dictionary CSSMatrixComponentOptions {\n    boolean is2D;\n};",
+        "type": "dictionary",
+        "name": "CSSMatrixComponentOptions",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "is2D",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "CSSPositionValue": {
+        "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet),\n Constructor(CSSNumericValue x, CSSNumericValue y)]\ninterface CSSPositionValue : CSSStyleValue {\n    attribute CSSNumericValue x;\n    attribute CSSNumericValue y;\n};",
+        "type": "interface",
+        "name": "CSSPositionValue",
+        "inheritance": "CSSStyleValue",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "x",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSNumericValue"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "y",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSNumericValue"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                },
+                {
+                  "value": "PaintWorklet"
+                },
+                {
+                  "value": "LayoutWorklet"
+                }
+              ]
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "Constructor",
+            "rhs": null,
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "x",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CSSNumericValue"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "y",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CSSNumericValue"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ]
+          }
+        ],
+        "partial": false
+      },
+      "CSSImageValue": {
+        "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]\ninterface CSSImageValue : CSSStyleValue {\n};",
+        "type": "interface",
+        "name": "CSSImageValue",
+        "inheritance": "CSSStyleValue",
+        "members": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                },
+                {
+                  "value": "PaintWorklet"
+                },
+                {
+                  "value": "LayoutWorklet"
+                }
+              ]
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      }
+    },
+    "idlExtendedNames": {
+      "Element": [
+        {
+          "fragment": "partial interface Element {\n    [SameObject] StylePropertyMapReadOnly computedStyleMap();\n};",
+          "type": "interface",
+          "name": "Element",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "operation",
+              "name": "computedStyleMap",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "StylePropertyMapReadOnly"
+              },
+              "arguments": [],
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "SameObject",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "special": ""
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ],
+      "CSSStyleRule": [
+        {
+          "fragment": "partial interface CSSStyleRule {\n    [SameObject] readonly attribute StylePropertyMap styleMap;\n};",
+          "type": "interface",
+          "name": "CSSStyleRule",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "attribute",
+              "name": "styleMap",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "StylePropertyMap"
+              },
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "SameObject",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "special": "",
+              "readonly": true
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ],
+      "ElementCSSInlineStyle": [
+        {
+          "fragment": "partial interface ElementCSSInlineStyle {\n    [SameObject] readonly attribute StylePropertyMap attributeStyleMap;\n};",
+          "type": "interface",
+          "name": "ElementCSSInlineStyle",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "attribute",
+              "name": "attributeStyleMap",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "StylePropertyMap"
+              },
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "SameObject",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "special": "",
+              "readonly": true
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ],
+      "CSS": [
+        {
+          "fragment": "partial namespace CSS {\n    CSSUnitValue number(double value);\n    CSSUnitValue percent(double value);\n\n    // <length>\n    CSSUnitValue em(double value);\n    CSSUnitValue ex(double value);\n    CSSUnitValue ch(double value);\n    CSSUnitValue ic(double value);\n    CSSUnitValue rem(double value);\n    CSSUnitValue lh(double value);\n    CSSUnitValue rlh(double value);\n    CSSUnitValue vw(double value);\n    CSSUnitValue vh(double value);\n    CSSUnitValue vi(double value);\n    CSSUnitValue vb(double value);\n    CSSUnitValue vmin(double value);\n    CSSUnitValue vmax(double value);\n    CSSUnitValue cm(double value);\n    CSSUnitValue mm(double value);\n    CSSUnitValue Q(double value);\n    CSSUnitValue in(double value);\n    CSSUnitValue pt(double value);\n    CSSUnitValue pc(double value);\n    CSSUnitValue px(double value);\n\n    // <angle>\n    CSSUnitValue deg(double value);\n    CSSUnitValue grad(double value);\n    CSSUnitValue rad(double value);\n    CSSUnitValue turn(double value);\n\n    // <time>\n    CSSUnitValue s(double value);\n    CSSUnitValue ms(double value);\n\n    // <frequency>\n    CSSUnitValue Hz(double value);\n    CSSUnitValue kHz(double value);\n\n    // <resolution>\n    CSSUnitValue dpi(double value);\n    CSSUnitValue dpcm(double value);\n    CSSUnitValue dppx(double value);\n\n    // <flex>\n    CSSUnitValue fr(double value);\n};",
+          "type": "namespace",
+          "name": "CSS",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "operation",
+              "name": "number",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "CSSUnitValue"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "value",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "double"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            },
+            {
+              "type": "operation",
+              "name": "percent",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "CSSUnitValue"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "value",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "double"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            },
+            {
+              "type": "operation",
+              "name": "em",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "CSSUnitValue"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "value",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "double"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            },
+            {
+              "type": "operation",
+              "name": "ex",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "CSSUnitValue"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "value",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "double"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            },
+            {
+              "type": "operation",
+              "name": "ch",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "CSSUnitValue"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "value",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "double"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            },
+            {
+              "type": "operation",
+              "name": "ic",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "CSSUnitValue"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "value",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "double"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            },
+            {
+              "type": "operation",
+              "name": "rem",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "CSSUnitValue"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "value",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "double"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            },
+            {
+              "type": "operation",
+              "name": "lh",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "CSSUnitValue"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "value",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "double"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            },
+            {
+              "type": "operation",
+              "name": "rlh",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "CSSUnitValue"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "value",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "double"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            },
+            {
+              "type": "operation",
+              "name": "vw",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "CSSUnitValue"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "value",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "double"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            },
+            {
+              "type": "operation",
+              "name": "vh",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "CSSUnitValue"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "value",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "double"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            },
+            {
+              "type": "operation",
+              "name": "vi",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "CSSUnitValue"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "value",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "double"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            },
+            {
+              "type": "operation",
+              "name": "vb",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "CSSUnitValue"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "value",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "double"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            },
+            {
+              "type": "operation",
+              "name": "vmin",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "CSSUnitValue"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "value",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "double"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            },
+            {
+              "type": "operation",
+              "name": "vmax",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "CSSUnitValue"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "value",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "double"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            },
+            {
+              "type": "operation",
+              "name": "cm",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "CSSUnitValue"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "value",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "double"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            },
+            {
+              "type": "operation",
+              "name": "mm",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "CSSUnitValue"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "value",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "double"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            },
+            {
+              "type": "operation",
+              "name": "Q",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "CSSUnitValue"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "value",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "double"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            },
+            {
+              "type": "operation",
+              "name": "in",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "CSSUnitValue"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "value",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "double"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            },
+            {
+              "type": "operation",
+              "name": "pt",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "CSSUnitValue"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "value",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "double"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            },
+            {
+              "type": "operation",
+              "name": "pc",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "CSSUnitValue"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "value",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "double"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            },
+            {
+              "type": "operation",
+              "name": "px",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "CSSUnitValue"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "value",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "double"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            },
+            {
+              "type": "operation",
+              "name": "deg",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "CSSUnitValue"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "value",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "double"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            },
+            {
+              "type": "operation",
+              "name": "grad",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "CSSUnitValue"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "value",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "double"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            },
+            {
+              "type": "operation",
+              "name": "rad",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "CSSUnitValue"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "value",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "double"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            },
+            {
+              "type": "operation",
+              "name": "turn",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "CSSUnitValue"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "value",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "double"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            },
+            {
+              "type": "operation",
+              "name": "s",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "CSSUnitValue"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "value",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "double"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            },
+            {
+              "type": "operation",
+              "name": "ms",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "CSSUnitValue"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "value",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "double"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            },
+            {
+              "type": "operation",
+              "name": "Hz",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "CSSUnitValue"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "value",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "double"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            },
+            {
+              "type": "operation",
+              "name": "kHz",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "CSSUnitValue"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "value",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "double"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            },
+            {
+              "type": "operation",
+              "name": "dpi",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "CSSUnitValue"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "value",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "double"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            },
+            {
+              "type": "operation",
+              "name": "dpcm",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "CSSUnitValue"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "value",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "double"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            },
+            {
+              "type": "operation",
+              "name": "dppx",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "CSSUnitValue"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "value",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "double"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            },
+            {
+              "type": "operation",
+              "name": "fr",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "CSSUnitValue"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "value",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "double"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ]
+    },
+    "globals": {},
+    "exposed": {
+      "Window": [
+        "CSSStyleValue",
+        "StylePropertyMapReadOnly",
+        "StylePropertyMap",
+        "CSSUnparsedValue",
+        "CSSVariableReferenceValue",
+        "CSSKeywordValue",
+        "CSSNumericValue",
+        "CSSUnitValue",
+        "CSSMathValue",
+        "CSSMathSum",
+        "CSSMathProduct",
+        "CSSMathNegate",
+        "CSSMathInvert",
+        "CSSMathMin",
+        "CSSMathMax",
+        "CSSNumericArray",
+        "CSSTransformValue",
+        "CSSTransformComponent",
+        "CSSTranslate",
+        "CSSRotate",
+        "CSSScale",
+        "CSSSkew",
+        "CSSSkewX",
+        "CSSSkewY",
+        "CSSPerspective",
+        "CSSMatrixComponent",
+        "CSSPositionValue",
+        "CSSImageValue"
+      ],
+      "Worker": [
+        "CSSStyleValue",
+        "StylePropertyMapReadOnly",
+        "CSSUnparsedValue",
+        "CSSVariableReferenceValue",
+        "CSSKeywordValue",
+        "CSSNumericValue",
+        "CSSUnitValue",
+        "CSSMathValue",
+        "CSSMathSum",
+        "CSSMathProduct",
+        "CSSMathNegate",
+        "CSSMathInvert",
+        "CSSMathMin",
+        "CSSMathMax",
+        "CSSNumericArray",
+        "CSSTransformValue",
+        "CSSTransformComponent",
+        "CSSTranslate",
+        "CSSRotate",
+        "CSSScale",
+        "CSSSkew",
+        "CSSSkewX",
+        "CSSSkewY",
+        "CSSPerspective",
+        "CSSMatrixComponent",
+        "CSSPositionValue",
+        "CSSImageValue"
+      ],
+      "PaintWorklet": [
+        "CSSStyleValue",
+        "StylePropertyMapReadOnly",
+        "CSSUnparsedValue",
+        "CSSVariableReferenceValue",
+        "CSSKeywordValue",
+        "CSSNumericValue",
+        "CSSUnitValue",
+        "CSSMathValue",
+        "CSSMathSum",
+        "CSSMathProduct",
+        "CSSMathNegate",
+        "CSSMathInvert",
+        "CSSMathMin",
+        "CSSMathMax",
+        "CSSNumericArray",
+        "CSSTransformValue",
+        "CSSTransformComponent",
+        "CSSTranslate",
+        "CSSRotate",
+        "CSSScale",
+        "CSSSkew",
+        "CSSSkewX",
+        "CSSSkewY",
+        "CSSPerspective",
+        "CSSMatrixComponent",
+        "CSSPositionValue",
+        "CSSImageValue"
+      ],
+      "LayoutWorklet": [
+        "CSSStyleValue",
+        "StylePropertyMapReadOnly",
+        "CSSUnparsedValue",
+        "CSSVariableReferenceValue",
+        "CSSKeywordValue",
+        "CSSNumericValue",
+        "CSSUnitValue",
+        "CSSMathValue",
+        "CSSMathSum",
+        "CSSMathProduct",
+        "CSSMathNegate",
+        "CSSMathInvert",
+        "CSSMathMin",
+        "CSSMathMax",
+        "CSSNumericArray",
+        "CSSTransformValue",
+        "CSSTransformComponent",
+        "CSSTranslate",
+        "CSSRotate",
+        "CSSScale",
+        "CSSSkew",
+        "CSSSkewX",
+        "CSSSkewY",
+        "CSSPerspective",
+        "CSSMatrixComponent",
+        "CSSPositionValue",
+        "CSSImageValue"
+      ]
+    },
+    "dependencies": {
+      "CSSStyleValue": [
+        "CSSStyleValue"
+      ],
+      "StylePropertyMapReadOnly": [
+        "CSSStyleValue"
+      ],
+      "StylePropertyMap": [
+        "StylePropertyMapReadOnly",
+        "void",
+        "CSSStyleValue"
+      ],
+      "Element": [
+        "StylePropertyMapReadOnly"
+      ],
+      "CSSStyleRule": [
+        "StylePropertyMap"
+      ],
+      "ElementCSSInlineStyle": [
+        "StylePropertyMap"
+      ],
+      "CSSUnparsedValue": [
+        "CSSStyleValue",
+        "CSSUnparsedSegment"
+      ],
+      "CSSVariableReferenceValue": [
+        "CSSUnparsedValue"
+      ],
+      "CSSKeywordValue": [
+        "CSSStyleValue"
+      ],
+      "CSSNumericType": [
+        "CSSNumericBaseType"
+      ],
+      "CSSNumericValue": [
+        "CSSStyleValue",
+        "CSSNumericValue",
+        "CSSNumberish",
+        "CSSUnitValue",
+        "CSSMathSum",
+        "CSSNumericType"
+      ],
+      "CSSUnitValue": [
+        "CSSNumericValue"
+      ],
+      "CSSMathValue": [
+        "CSSNumericValue",
+        "CSSMathOperator"
+      ],
+      "CSSMathSum": [
+        "CSSMathValue",
+        "CSSNumberish",
+        "CSSNumericArray"
+      ],
+      "CSSMathProduct": [
+        "CSSMathValue",
+        "CSSNumberish",
+        "CSSNumericArray"
+      ],
+      "CSSMathNegate": [
+        "CSSMathValue",
+        "CSSNumberish",
+        "CSSNumericValue"
+      ],
+      "CSSMathInvert": [
+        "CSSMathValue",
+        "CSSNumberish",
+        "CSSNumericValue"
+      ],
+      "CSSMathMin": [
+        "CSSMathValue",
+        "CSSNumberish",
+        "CSSNumericArray"
+      ],
+      "CSSMathMax": [
+        "CSSMathValue",
+        "CSSNumberish",
+        "CSSNumericArray"
+      ],
+      "CSSNumericArray": [
+        "CSSNumericValue"
+      ],
+      "CSS": [
+        "CSSUnitValue"
+      ],
+      "CSSTransformValue": [
+        "CSSStyleValue",
+        "CSSTransformComponent",
+        "DOMMatrix"
+      ],
+      "CSSTransformComponent": [
+        "DOMMatrix"
+      ],
+      "CSSTranslate": [
+        "CSSTransformComponent",
+        "CSSNumericValue"
+      ],
+      "CSSRotate": [
+        "CSSTransformComponent",
+        "CSSNumericValue",
+        "CSSNumberish"
+      ],
+      "CSSScale": [
+        "CSSTransformComponent",
+        "CSSNumberish"
+      ],
+      "CSSSkew": [
+        "CSSTransformComponent",
+        "CSSNumericValue"
+      ],
+      "CSSSkewX": [
+        "CSSTransformComponent",
+        "CSSNumericValue"
+      ],
+      "CSSSkewY": [
+        "CSSTransformComponent",
+        "CSSNumericValue"
+      ],
+      "CSSPerspective": [
+        "CSSTransformComponent",
+        "CSSNumericValue"
+      ],
+      "CSSMatrixComponent": [
+        "CSSTransformComponent",
+        "DOMMatrixReadOnly",
+        "CSSMatrixComponentOptions",
+        "DOMMatrix"
+      ],
+      "CSSMatrixComponentOptions": [],
+      "CSSPositionValue": [
+        "CSSStyleValue",
+        "CSSNumericValue"
+      ],
+      "CSSImageValue": [
+        "CSSStyleValue"
+      ]
+    },
+    "externalDependencies": [
+      "void",
+      "Element",
+      "CSSStyleRule",
+      "ElementCSSInlineStyle",
+      "CSS",
+      "DOMMatrix",
+      "DOMMatrixReadOnly"
+    ],
+    "hasObsoleteIdl": false
+  }
+}

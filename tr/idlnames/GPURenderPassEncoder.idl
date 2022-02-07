@@ -15,7 +15,7 @@ interface GPURenderPassEncoder {
     undefined endOcclusionQuery();
 
     undefined executeBundles(sequence<GPURenderBundle> bundles);
-    undefined endPass();
+    undefined end();
 };
 
 // Source: WebGPU (https://www.w3.org/TR/webgpu/)

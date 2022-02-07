@@ -40,22 +40,6 @@ partial dictionary MediaTrackSupportedConstraints {
   boolean torch = true;
 };
 
-// Source: Media Capture Depth Stream Extensions (https://www.w3.org/TR/mediacapture-depth/)
-partial dictionary MediaTrackSupportedConstraints {
-    // Apply to both depth stream track and color stream track:
-    boolean videoKind = true;
-    boolean focalLengthX = false;
-    boolean focalLengthY = false;
-    boolean principalPointX = false;
-    boolean principalPointY = false;
-    boolean deprojectionDistortionCoefficients = false;
-    boolean projectionDistortionCoefficients = false;
-    // Apply to depth stream track:
-    boolean depthNear = false;
-    boolean depthFar = false;
-    boolean depthToVideoTransform = false;
-};
-
 // Source: Screen Capture (https://www.w3.org/TR/screen-capture/)
 partial dictionary MediaTrackSupportedConstraints {
   boolean displaySurface = true;
