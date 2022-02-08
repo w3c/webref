@@ -1210,7 +1210,7 @@
         "partial": false
       },
       "AbortSignal": {
-        "fragment": "[Exposed=*]\ninterface AbortSignal : EventTarget {\n  [NewObject] static AbortSignal abort(optional any reason);\n  [NewObject] static AbortSignal timeout([EnforceRange] unsigned long long milliseconds);\n\n  readonly attribute boolean aborted;\n  readonly attribute any reason;\n  undefined throwIfAborted();\n\n  attribute EventHandler onabort;\n};",
+        "fragment": "[Exposed=*]\ninterface AbortSignal : EventTarget {\n  [NewObject] static AbortSignal abort(optional any reason);\n  [Exposed=(Window,Worker), NewObject] static AbortSignal timeout([EnforceRange] unsigned long long milliseconds);\n\n  readonly attribute boolean aborted;\n  readonly attribute any reason;\n  undefined throwIfAborted();\n\n  attribute EventHandler onabort;\n};",
         "type": "interface",
         "name": "AbortSignal",
         "inheritance": "EventTarget",
@@ -1291,6 +1291,22 @@
               }
             ],
             "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "Exposed",
+                "rhs": {
+                  "type": "identifier-list",
+                  "value": [
+                    {
+                      "value": "Window"
+                    },
+                    {
+                      "value": "Worker"
+                    }
+                  ]
+                },
+                "arguments": []
+              },
               {
                 "type": "extended-attribute",
                 "name": "NewObject",

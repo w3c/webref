@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2022-02-08T06:37:27.578Z",
+  "date": "2022-02-08T12:40:30.389Z",
   "options": {
     "fallback": "webref-fallback/ed/index.json",
     "output": "report",
@@ -21,7 +21,7 @@
   },
   "stats": {
     "crawled": 462,
-    "errors": 0
+    "errors": 1
   },
   "crawler": "reffy-6.3.0",
   "results": [
@@ -211,10 +211,10 @@
       ],
       "crawled": "https://dom.spec.whatwg.org/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 02 Feb 2022 22:10:30 GMT"
+        "lastModified": "Tue, 08 Feb 2022 10:41:34 GMT"
       },
       "generator": "bikeshed",
-      "date": "2 February 2022",
+      "date": "8 February 2022",
       "links": "links/dom.json",
       "refs": "refs/dom.json",
       "idl": "idl/dom.idl",
@@ -16058,7 +16058,8 @@
       "css": "css/CSS.json",
       "dfns": "dfns/CSS22.json",
       "headings": "headings/CSS22.json",
-      "ids": "ids/CSS22.json"
+      "ids": "ids/CSS22.json",
+      "error": "Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers' Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers'\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:484:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 324)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/css3-exclusions/",
@@ -18289,10 +18290,10 @@
       ],
       "crawled": "https://w3c.github.io/mediacapture-main/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 31 Jan 2022 07:47:16 GMT"
+        "lastModified": "Tue, 08 Feb 2022 07:39:36 GMT"
       },
       "generator": "respec",
-      "date": "31 January 2022",
+      "date": "08 February 2022",
       "links": "links/mediacapture-streams.json",
       "refs": "refs/mediacapture-streams.json",
       "idl": "idl/mediacapture-streams.idl",
@@ -22938,10 +22939,10 @@
       ],
       "crawled": "https://w3c.github.io/webrtc-pc/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 31 Jan 2022 07:47:09 GMT"
+        "lastModified": "Tue, 08 Feb 2022 07:39:22 GMT"
       },
       "generator": "respec",
-      "date": "31 January 2022",
+      "date": "08 February 2022",
       "links": "links/webrtc.json",
       "refs": "refs/webrtc.json",
       "idl": "idl/webrtc.idl",
