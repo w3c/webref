@@ -130,7 +130,7 @@ async function prepareCurated(rawFolder, curatedFolder) {
   console.log();
   console.log('Re-generate the idlnames and idlnamesparsed folders');
   crawlResults = await expandCrawlResult(crawlIndex, curatedFolder, ['idlparsed', 'dfns']);
-  console.log('- TODO: only keep browser specs (when we can distinguish them)');
+  crawlResults.results = crawlResults.results.filter(spec => spec.categories?.includes('browser'));
   const idlNames = generateIdlNames(crawlResults.results, { dfns: true });
   await saveIdlNames(idlNames, curatedFolder);
   console.log('- done');
