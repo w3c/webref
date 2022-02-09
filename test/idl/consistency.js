@@ -364,7 +364,7 @@ views.forEach(({ name, folder }) => {
         }
       }
 
-      // Collect the know global identifiers.
+      // Collect the known global identifiers.
       const globals = new Set();
       for (const dfn of dfns) {
         const ids = getExtAttrIdentifiers(dfn, 'Global');
