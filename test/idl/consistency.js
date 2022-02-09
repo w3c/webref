@@ -339,6 +339,69 @@ views.forEach(({ name, folder }) => {
       }
     });
 
+    // Validate that Exposed attributes use only the identifiers from Global
+    // attributes.
+    it('contains consistent Exposed and Global extended attributes', function () {
+      // Get the identifiers (strings) from an extended attribute value as an
+      // array. Returns an array for both [Exposed=Window] and
+      // [Exposed=(Window,Worker)], '*' for the special [Exposed=*] wildcard and
+      // null for missing attribute.
+      function getExtAttrIdentifiers(node, name) {
+        const attr = getExtAttr(node, name);
+        if (!attr) {
+          return null;
+        }
+        switch (attr.rhs.type) {
+          case 'identifier':
+            return [attr.rhs.value];
+          case 'identifier-list':
+            return attr.rhs.value.map(({value}) => value);
+          case '*':
+            return '*';
+          default:
+            throw new Error(`Unexpected RHS for extended attribute ${name} on ${node.name}: ${attr.rhs?.type}`);
+        }
+      }
+
+      // Collect the known global identifiers.
+      const globals = new Set();
+      for (const dfn of dfns) {
+        const ids = getExtAttrIdentifiers(dfn, 'Global');
+        if (!ids) {
+          continue;
+        }
+        assert(Array.isArray(ids), `Unexpected Global attribute value on ${dfn.name}: ${ids}`);
+        for (const id of ids) {
+          globals.add(id);
+        }
+      }
+
+      // Check that some well known globals were found.
+      assert(globals.has('Window'), 'List of known globals does not include "Window"');
+      assert(globals.has('ServiceWorker'), 'List of known globals does not include "ServiceWorker"');
+
+      // Validate the Exposed extended attributes of top-level definitions and
+      // their members.
+      for (const dfn of dfns) {
+        const ids = getExtAttrIdentifiers(dfn, 'Exposed');
+        if (Array.isArray(ids)) {
+          for (const id of ids) {
+            assert(globals.has(id), `Exposed attribute value ${id} on ${dfn.name} does not match any known global name`);
+          }
+        }
+        if (dfn.members) {
+          for (const member of dfn.members) {
+            const ids = getExtAttrIdentifiers(member, 'Exposed');
+            if (Array.isArray(ids)) {
+              for (const id of ids) {
+                assert(globals.has(id), `Exposed attribute value ${id} on ${dfn.name}.${member.name} does not match any known global name`);
+              }
+            }
+          }
+        }
+      }
+    });
+
     // This test should remain the last one as it slightly modifies objects in dfns in place.
     it('yields consistent IDL when partials/mixins are merged', function () {
       this.slow(1000);
