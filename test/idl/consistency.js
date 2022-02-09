@@ -387,7 +387,7 @@ views.forEach(({ name, folder }) => {
         const ids = getExtAttrIdentifiers(dfn, 'Exposed');
         if (Array.isArray(ids)) {
           for (const id of ids) {
-            assert(globals.has(id), ``);
+            assert(globals.has(id), `Exposed attribute value ${id} on ${dfn.name} does not match any known global name`);
           }
         }
         if (dfn.members) {
