@@ -329,7 +329,7 @@
         "partial": false
       },
       "PaymentCredentialInstrument": {
-        "fragment": "dictionary PaymentCredentialInstrument {\n    required DOMString displayName;\n    required USVString icon;\n};",
+        "fragment": "dictionary PaymentCredentialInstrument {\n    required DOMString displayName;\n    required USVString icon;\n    boolean iconMustBeShown = true;\n};",
         "type": "dictionary",
         "name": "PaymentCredentialInstrument",
         "inheritance": null,
@@ -363,6 +363,24 @@
             },
             "default": null,
             "required": true
+          },
+          {
+            "type": "field",
+            "name": "iconMustBeShown",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": true
+            },
+            "required": false
           }
         ],
         "extAttrs": [],
