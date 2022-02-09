@@ -370,7 +370,7 @@ views.forEach(({ name, folder }) => {
         if (!ids) {
           continue;
         }
-        assert(Array.isArray(ids));
+        assert(Array.isArray(ids), `Unexpected Global attribute value on ${dfn.name}: ${ids}`);
         for (const id of ids) {
           globals.add(id);
         }
