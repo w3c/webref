@@ -27,7 +27,7 @@ describe('The curated view of Web IDL extracts', function () {
   });
 
   it('contains Web IDL that can be parsed with webidl2.js', async function () {
-    const all = await idl.parseAll(curatedFolder);
+    const all = await idl.parseAll({ folder: curatedFolder });
     assert(Object.keys(all).length > 0);
     for (const ast of Object.values(all)) {
       assert(Array.isArray(ast));
