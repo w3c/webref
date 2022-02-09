@@ -379,7 +379,7 @@ views.forEach(({ name, folder }) => {
 
       // Check that some well known global were found.
       assert(globals.has('Window'), 'List of known globals does not include "Window"');
-      assert(globals.has('ServiceWorker'));
+      assert(globals.has('ServiceWorker'), 'List of known globals does not include "ServiceWorker"');
 
       // Validate the Exposed extended attributes of top-level definitions and
       // their members.
