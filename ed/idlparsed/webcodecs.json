@@ -5010,7 +5010,7 @@
         "partial": false
       },
       "ImageTrackList": {
-        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface ImageTrackList {\n  getter ImageTrack (unsigned long index);\n\n  readonly attribute Promise<undefined> ready;\n  [EnforceRange] readonly attribute unsigned long length;\n  [EnforceRange] readonly attribute long selectedIndex;\n  readonly attribute ImageTrack? selectedTrack;\n};",
+        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface ImageTrackList {\n  getter ImageTrack (unsigned long index);\n\n  readonly attribute Promise<undefined> ready;\n  readonly attribute unsigned long length;\n  readonly attribute long selectedIndex;\n  readonly attribute ImageTrack? selectedTrack;\n};",
         "type": "interface",
         "name": "ImageTrackList",
         "inheritance": null,
@@ -5082,14 +5082,7 @@
               "union": false,
               "idlType": "unsigned long"
             },
-            "extAttrs": [
-              {
-                "type": "extended-attribute",
-                "name": "EnforceRange",
-                "rhs": null,
-                "arguments": []
-              }
-            ],
+            "extAttrs": [],
             "special": "",
             "readonly": true
           },
@@ -5104,14 +5097,7 @@
               "union": false,
               "idlType": "long"
             },
-            "extAttrs": [
-              {
-                "type": "extended-attribute",
-                "name": "EnforceRange",
-                "rhs": null,
-                "arguments": []
-              }
-            ],
+            "extAttrs": [],
             "special": "",
             "readonly": true
           },
@@ -5152,7 +5138,7 @@
         "partial": false
       },
       "ImageTrack": {
-        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface ImageTrack : EventTarget {\n  readonly attribute boolean animated;\n  [EnforceRange] readonly attribute unsigned long frameCount;\n  [EnforceRange] readonly attribute unrestricted float repetitionCount;\n  attribute EventHandler onchange;\n  attribute boolean selected;\n};",
+        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface ImageTrack : EventTarget {\n  readonly attribute boolean animated;\n  readonly attribute unsigned long frameCount;\n  readonly attribute unrestricted float repetitionCount;\n  attribute EventHandler onchange;\n  attribute boolean selected;\n};",
         "type": "interface",
         "name": "ImageTrack",
         "inheritance": "EventTarget",
@@ -5183,14 +5169,7 @@
               "union": false,
               "idlType": "unsigned long"
             },
-            "extAttrs": [
-              {
-                "type": "extended-attribute",
-                "name": "EnforceRange",
-                "rhs": null,
-                "arguments": []
-              }
-            ],
+            "extAttrs": [],
             "special": "",
             "readonly": true
           },
@@ -5205,14 +5184,7 @@
               "union": false,
               "idlType": "unrestricted float"
             },
-            "extAttrs": [
-              {
-                "type": "extended-attribute",
-                "name": "EnforceRange",
-                "rhs": null,
-                "arguments": []
-              }
-            ],
+            "extAttrs": [],
             "special": "",
             "readonly": true
           },
