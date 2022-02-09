@@ -341,7 +341,7 @@ views.forEach(({ name, folder }) => {
 
     // Validate that Exposed attributes use only the identifiers from Global
     // attributes.
-    it('Exposed and Global extended attributes', function () {
+    it('contains consistent Exposed and Global extended attributes', function () {
       // Get the identifiers (strings) from an extended attribute value as an
       // array. Returns an array for both [Exposed=Window] and
       // [Exposed=(Window,Worker)], '*' for the special [Exposed=*] wildcard and
