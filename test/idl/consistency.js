@@ -359,7 +359,6 @@ views.forEach(({ name, folder }) => {
           case '*':
             return '*';
           default:
-            console.log(attr.rhs.type)
             throw new Error(`Unexpected RHS for extended attribute ${name} on ${node.name}: ${attr.rhs?.type}`);
         }
       }
