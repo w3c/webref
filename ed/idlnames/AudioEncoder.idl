@@ -4,7 +4,7 @@ interface AudioEncoder {
   constructor(AudioEncoderInit init);
 
   readonly attribute CodecState state;
-  readonly attribute long encodeQueueSize;
+  readonly attribute unsigned long encodeQueueSize;
 
   undefined configure(AudioEncoderConfig config);
   undefined encode(AudioData data);

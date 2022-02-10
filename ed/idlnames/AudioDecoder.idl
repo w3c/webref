@@ -4,7 +4,7 @@ interface AudioDecoder {
   constructor(AudioDecoderInit init);
 
   readonly attribute CodecState state;
-  readonly attribute long decodeQueueSize;
+  readonly attribute unsigned long decodeQueueSize;
 
   undefined configure(AudioDecoderConfig config);
   undefined decode(EncodedAudioChunk chunk);
