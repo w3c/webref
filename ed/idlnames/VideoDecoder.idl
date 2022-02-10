@@ -4,7 +4,7 @@ interface VideoDecoder {
   constructor(VideoDecoderInit init);
 
   readonly attribute CodecState state;
-  readonly attribute long decodeQueueSize;
+  readonly attribute unsigned long decodeQueueSize;
 
   undefined configure(VideoDecoderConfig config);
   undefined decode(EncodedVideoChunk chunk);

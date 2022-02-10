@@ -44,7 +44,7 @@
     },
     "idlNames": {
       "AudioDecoder": {
-        "fragment": "[Exposed=(Window,DedicatedWorker), SecureContext]\ninterface AudioDecoder {\n  constructor(AudioDecoderInit init);\n\n  readonly attribute CodecState state;\n  readonly attribute long decodeQueueSize;\n\n  undefined configure(AudioDecoderConfig config);\n  undefined decode(EncodedAudioChunk chunk);\n  Promise<undefined> flush();\n  undefined reset();\n  undefined close();\n\n  static Promise<AudioDecoderSupport> isConfigSupported(AudioDecoderConfig config);\n};",
+        "fragment": "[Exposed=(Window,DedicatedWorker), SecureContext]\ninterface AudioDecoder {\n  constructor(AudioDecoderInit init);\n\n  readonly attribute CodecState state;\n  readonly attribute unsigned long decodeQueueSize;\n\n  undefined configure(AudioDecoderConfig config);\n  undefined decode(EncodedAudioChunk chunk);\n  Promise<undefined> flush();\n  undefined reset();\n  undefined close();\n\n  static Promise<AudioDecoderSupport> isConfigSupported(AudioDecoderConfig config);\n};",
         "type": "interface",
         "name": "AudioDecoder",
         "inheritance": null,
@@ -95,7 +95,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "long"
+              "idlType": "unsigned long"
             },
             "extAttrs": [],
             "special": "",
@@ -360,7 +360,7 @@
         "extAttrs": []
       },
       "VideoDecoder": {
-        "fragment": "[Exposed=(Window,DedicatedWorker), SecureContext]\ninterface VideoDecoder {\n  constructor(VideoDecoderInit init);\n\n  readonly attribute CodecState state;\n  readonly attribute long decodeQueueSize;\n\n  undefined configure(VideoDecoderConfig config);\n  undefined decode(EncodedVideoChunk chunk);\n  Promise<undefined> flush();\n  undefined reset();\n  undefined close();\n\n  static Promise<VideoDecoderSupport> isConfigSupported(VideoDecoderConfig config);\n};",
+        "fragment": "[Exposed=(Window,DedicatedWorker), SecureContext]\ninterface VideoDecoder {\n  constructor(VideoDecoderInit init);\n\n  readonly attribute CodecState state;\n  readonly attribute unsigned long decodeQueueSize;\n\n  undefined configure(VideoDecoderConfig config);\n  undefined decode(EncodedVideoChunk chunk);\n  Promise<undefined> flush();\n  undefined reset();\n  undefined close();\n\n  static Promise<VideoDecoderSupport> isConfigSupported(VideoDecoderConfig config);\n};",
         "type": "interface",
         "name": "VideoDecoder",
         "inheritance": null,
@@ -411,7 +411,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "long"
+              "idlType": "unsigned long"
             },
             "extAttrs": [],
             "special": "",
@@ -676,7 +676,7 @@
         "extAttrs": []
       },
       "AudioEncoder": {
-        "fragment": "[Exposed=(Window,DedicatedWorker), SecureContext]\ninterface AudioEncoder {\n  constructor(AudioEncoderInit init);\n\n  readonly attribute CodecState state;\n  readonly attribute long encodeQueueSize;\n\n  undefined configure(AudioEncoderConfig config);\n  undefined encode(AudioData data);\n  Promise<undefined> flush();\n  undefined reset();\n  undefined close();\n\n  static Promise<AudioEncoderSupport> isConfigSupported(AudioEncoderConfig config);\n};",
+        "fragment": "[Exposed=(Window,DedicatedWorker), SecureContext]\ninterface AudioEncoder {\n  constructor(AudioEncoderInit init);\n\n  readonly attribute CodecState state;\n  readonly attribute unsigned long encodeQueueSize;\n\n  undefined configure(AudioEncoderConfig config);\n  undefined encode(AudioData data);\n  Promise<undefined> flush();\n  undefined reset();\n  undefined close();\n\n  static Promise<AudioEncoderSupport> isConfigSupported(AudioEncoderConfig config);\n};",
         "type": "interface",
         "name": "AudioEncoder",
         "inheritance": null,
@@ -727,7 +727,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "long"
+              "idlType": "unsigned long"
             },
             "extAttrs": [],
             "special": "",
@@ -1035,7 +1035,7 @@
         "partial": false
       },
       "VideoEncoder": {
-        "fragment": "[Exposed=(Window,DedicatedWorker), SecureContext]\ninterface VideoEncoder {\n  constructor(VideoEncoderInit init);\n\n  readonly attribute CodecState state;\n  readonly attribute long encodeQueueSize;\n\n  undefined configure(VideoEncoderConfig config);\n  undefined encode(VideoFrame frame, optional VideoEncoderEncodeOptions options = {});\n  Promise<undefined> flush();\n  undefined reset();\n  undefined close();\n\n  static Promise<VideoEncoderSupport> isConfigSupported(VideoEncoderConfig config);\n};",
+        "fragment": "[Exposed=(Window,DedicatedWorker), SecureContext]\ninterface VideoEncoder {\n  constructor(VideoEncoderInit init);\n\n  readonly attribute CodecState state;\n  readonly attribute unsigned long encodeQueueSize;\n\n  undefined configure(VideoEncoderConfig config);\n  undefined encode(VideoFrame frame, optional VideoEncoderEncodeOptions options = {});\n  Promise<undefined> flush();\n  undefined reset();\n  undefined close();\n\n  static Promise<VideoEncoderSupport> isConfigSupported(VideoEncoderConfig config);\n};",
         "type": "interface",
         "name": "VideoEncoder",
         "inheritance": null,
@@ -1086,7 +1086,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "long"
+              "idlType": "unsigned long"
             },
             "extAttrs": [],
             "special": "",
@@ -4528,7 +4528,7 @@
         "extAttrs": []
       },
       "ImageDecoder": {
-        "fragment": "[Exposed=(Window,DedicatedWorker), SecureContext]\ninterface ImageDecoder {\n  constructor(ImageDecoderInit init);\n\n  readonly attribute boolean complete;\n  readonly attribute Promise<undefined> completed;\n  readonly attribute ImageTrackList tracks;\n\n  Promise<ImageDecodeResult> decode(optional ImageDecodeOptions options = {});\n  undefined reset();\n  undefined close();\n\n  static Promise<boolean> isTypeSupported(DOMString type);\n};",
+        "fragment": "[Exposed=(Window,DedicatedWorker), SecureContext]\ninterface ImageDecoder {\n  constructor(ImageDecoderInit init);\n\n  readonly attribute DOMString type;\n  readonly attribute boolean complete;\n  readonly attribute Promise<undefined> completed;\n  readonly attribute ImageTrackList tracks;\n\n  Promise<ImageDecodeResult> decode(optional ImageDecodeOptions options = {});\n  undefined reset();\n  undefined close();\n\n  static Promise<boolean> isTypeSupported(DOMString type);\n};",
         "type": "interface",
         "name": "ImageDecoder",
         "inheritance": null,
@@ -4554,6 +4554,21 @@
               }
             ],
             "extAttrs": []
+          },
+          {
+            "type": "attribute",
+            "name": "type",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
           },
           {
             "type": "attribute",

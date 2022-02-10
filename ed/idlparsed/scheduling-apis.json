@@ -490,7 +490,7 @@
     "idlExtendedNames": {
       "WindowOrWorkerGlobalScope": [
         {
-          "fragment": "partial interface mixin WindowOrWorkerGlobalScope {\n  readonly attribute Scheduler scheduler;\n};",
+          "fragment": "partial interface mixin WindowOrWorkerGlobalScope {\n  [Replaceable] readonly attribute Scheduler scheduler;\n};",
           "type": "interface mixin",
           "name": "WindowOrWorkerGlobalScope",
           "inheritance": null,
@@ -506,7 +506,14 @@
                 "union": false,
                 "idlType": "Scheduler"
               },
-              "extAttrs": [],
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "Replaceable",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
               "special": "",
               "readonly": true
             }
