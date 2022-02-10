@@ -5376,7 +5376,7 @@
         "partial": false
       },
       "GPUFragmentState": {
-        "fragment": "dictionary GPUFragmentState : GPUProgrammableStage {\n    required sequence<GPUColorTargetState> targets;\n};",
+        "fragment": "dictionary GPUFragmentState : GPUProgrammableStage {\n    required sequence<GPUColorTargetState?> targets;\n};",
         "type": "dictionary",
         "name": "GPUFragmentState",
         "inheritance": "GPUProgrammableStage",
@@ -5396,7 +5396,7 @@
                   "type": "dictionary-type",
                   "extAttrs": [],
                   "generic": "",
-                  "nullable": false,
+                  "nullable": true,
                   "union": false,
                   "idlType": "GPUColorTargetState"
                 }
@@ -8980,7 +8980,7 @@
         "extAttrs": []
       },
       "GPURenderPassDescriptor": {
-        "fragment": "dictionary GPURenderPassDescriptor : GPUObjectDescriptorBase {\n    required sequence<GPURenderPassColorAttachment> colorAttachments;\n    GPURenderPassDepthStencilAttachment depthStencilAttachment;\n    GPUQuerySet occlusionQuerySet;\n    GPURenderPassTimestampWrites timestampWrites = [];\n};",
+        "fragment": "dictionary GPURenderPassDescriptor : GPUObjectDescriptorBase {\n    required sequence<GPURenderPassColorAttachment?> colorAttachments;\n    GPURenderPassDepthStencilAttachment depthStencilAttachment;\n    GPUQuerySet occlusionQuerySet;\n    GPURenderPassTimestampWrites timestampWrites = [];\n};",
         "type": "dictionary",
         "name": "GPURenderPassDescriptor",
         "inheritance": "GPUObjectDescriptorBase",
@@ -9000,7 +9000,7 @@
                   "type": "dictionary-type",
                   "extAttrs": [],
                   "generic": "",
-                  "nullable": false,
+                  "nullable": true,
                   "union": false,
                   "idlType": "GPURenderPassColorAttachment"
                 }
@@ -9336,7 +9336,7 @@
         "extAttrs": []
       },
       "GPURenderPassLayout": {
-        "fragment": "dictionary GPURenderPassLayout: GPUObjectDescriptorBase {\n    required sequence<GPUTextureFormat> colorFormats;\n    GPUTextureFormat depthStencilFormat;\n    GPUSize32 sampleCount = 1;\n};",
+        "fragment": "dictionary GPURenderPassLayout: GPUObjectDescriptorBase {\n    required sequence<GPUTextureFormat?> colorFormats;\n    GPUTextureFormat depthStencilFormat;\n    GPUSize32 sampleCount = 1;\n};",
         "type": "dictionary",
         "name": "GPURenderPassLayout",
         "inheritance": "GPUObjectDescriptorBase",
@@ -9356,7 +9356,7 @@
                   "type": "dictionary-type",
                   "extAttrs": [],
                   "generic": "",
-                  "nullable": false,
+                  "nullable": true,
                   "union": false,
                   "idlType": "GPUTextureFormat"
                 }
