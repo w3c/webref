@@ -1,0 +1,209 @@
+{
+  "name": "TextEncoderStream",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Encoding Standard",
+      "url": "https://www.w3.org/TR/encoding/"
+    },
+    "fragment": "[Exposed=*]\ninterface TextEncoderStream {\n  constructor();\n};",
+    "href": "https://encoding.spec.whatwg.org/#textencoderstream"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "Encoding Standard",
+        "url": "https://www.w3.org/TR/encoding/"
+      },
+      "fragment": "TextEncoderStream includes TextEncoderCommon;"
+    },
+    {
+      "spec": {
+        "title": "Encoding Standard",
+        "url": "https://www.w3.org/TR/encoding/"
+      },
+      "fragment": "TextEncoderStream includes GenericTransformStream;"
+    }
+  ],
+  "inheritance": null,
+  "includes": [
+    {
+      "name": "TextEncoderCommon",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "Encoding Standard",
+          "url": "https://www.w3.org/TR/encoding/"
+        },
+        "fragment": "interface mixin TextEncoderCommon {\n  readonly attribute DOMString encoding;\n};",
+        "href": "https://encoding.spec.whatwg.org/#textencodercommon"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "GenericTransformStream",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "Streams Standard",
+          "url": "https://streams.spec.whatwg.org/"
+        },
+        "fragment": "interface mixin GenericTransformStream {\n  readonly attribute ReadableStream readable;\n  readonly attribute WritableStream writable;\n};",
+        "href": "https://streams.spec.whatwg.org/#generictransformstream"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    }
+  ],
+  "dfns": {
+    "https://www.w3.org/TR/encoding/": [
+      {
+        "id": "textencoderstream",
+        "href": "https://encoding.spec.whatwg.org/#textencoderstream",
+        "linkingText": [
+          "TextEncoderStream"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-textencoderstream",
+          "href": "https://encoding.spec.whatwg.org/#interface-textencoderstream",
+          "title": "Interface TextEncoderStream",
+          "number": "7.6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-textencoderstream",
+        "href": "https://encoding.spec.whatwg.org/#dom-textencoderstream",
+        "linkingText": [
+          "TextEncoderStream()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "TextEncoderStream"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-textencoderstream",
+          "href": "https://encoding.spec.whatwg.org/#interface-textencoderstream",
+          "title": "Interface TextEncoderStream",
+          "number": "7.6"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "textencodercommon",
+        "href": "https://encoding.spec.whatwg.org/#textencodercommon",
+        "linkingText": [
+          "TextEncoderCommon"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-mixin-textencodercommon",
+          "href": "https://encoding.spec.whatwg.org/#interface-mixin-textencodercommon",
+          "title": "Interface mixin TextEncoderCommon",
+          "number": "7.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-textencoder-encoding",
+        "href": "https://encoding.spec.whatwg.org/#dom-textencoder-encoding",
+        "linkingText": [
+          "encoding"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "TextEncoderCommon"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-mixin-textencodercommon",
+          "href": "https://encoding.spec.whatwg.org/#interface-mixin-textencodercommon",
+          "title": "Interface mixin TextEncoderCommon",
+          "number": "7.3"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://streams.spec.whatwg.org/": [
+      {
+        "id": "generictransformstream",
+        "href": "https://streams.spec.whatwg.org/#generictransformstream",
+        "linkingText": [
+          "GenericTransformStream"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "other-specs-ts-wrapping",
+          "href": "https://streams.spec.whatwg.org/#other-specs-ts-wrapping",
+          "title": "Wrapping into a custom class",
+          "number": "9.3.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-generictransformstream-readable",
+        "href": "https://streams.spec.whatwg.org/#dom-generictransformstream-readable",
+        "linkingText": [
+          "readable"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "GenericTransformStream"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "other-specs-ts-wrapping",
+          "href": "https://streams.spec.whatwg.org/#other-specs-ts-wrapping",
+          "title": "Wrapping into a custom class",
+          "number": "9.3.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-generictransformstream-writable",
+        "href": "https://streams.spec.whatwg.org/#dom-generictransformstream-writable",
+        "linkingText": [
+          "writable"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "GenericTransformStream"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "other-specs-ts-wrapping",
+          "href": "https://streams.spec.whatwg.org/#other-specs-ts-wrapping",
+          "title": "Wrapping into a custom class",
+          "number": "9.3.2"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}
