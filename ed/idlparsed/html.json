@@ -1732,7 +1732,7 @@
         "partial": false
       },
       "HTMLLinkElement": {
-        "fragment": "[Exposed=Window]\ninterface HTMLLinkElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute USVString href;\n  [CEReactions] attribute DOMString? crossOrigin;\n  [CEReactions] attribute DOMString rel;\n  [CEReactions] attribute DOMString as; // (default \"\")\n  [SameObject, PutForwards=value] readonly attribute DOMTokenList relList;\n  [CEReactions] attribute DOMString media;\n  [CEReactions] attribute DOMString integrity;\n  [CEReactions] attribute DOMString hreflang;\n  [CEReactions] attribute DOMString type;\n  [SameObject, PutForwards=value] readonly attribute DOMTokenList sizes;\n  [CEReactions] attribute USVString imageSrcset;\n  [CEReactions] attribute DOMString imageSizes;\n  [CEReactions] attribute DOMString referrerPolicy;\n  [CEReactions] attribute boolean disabled;\n\n  // also has obsolete members\n};",
+        "fragment": "[Exposed=Window]\ninterface HTMLLinkElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute USVString href;\n  [CEReactions] attribute DOMString? crossOrigin;\n  [CEReactions] attribute DOMString rel;\n  [CEReactions] attribute DOMString as; // (default \"\")\n  [SameObject, PutForwards=value] readonly attribute DOMTokenList relList;\n  [CEReactions] attribute DOMString media;\n  [CEReactions] attribute DOMString integrity;\n  [CEReactions] attribute DOMString hreflang;\n  [CEReactions] attribute DOMString type;\n  [SameObject, PutForwards=value] readonly attribute DOMTokenList sizes;\n  [CEReactions] attribute USVString imageSrcset;\n  [CEReactions] attribute DOMString imageSizes;\n  [CEReactions] attribute DOMString referrerPolicy;\n  [CEReactions] attribute DOMTokenList blocking;\n  [CEReactions] attribute boolean disabled;\n\n  // also has obsolete members\n};",
         "type": "interface",
         "name": "HTMLLinkElement",
         "inheritance": "HTMLElement",
@@ -2055,6 +2055,28 @@
           },
           {
             "type": "attribute",
+            "name": "blocking",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMTokenList"
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
             "name": "disabled",
             "idlType": {
               "type": "attribute-type",
@@ -2210,7 +2232,7 @@
         "partial": false
       },
       "HTMLStyleElement": {
-        "fragment": "[Exposed=Window]\ninterface HTMLStyleElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute DOMString media;\n\n  // also has obsolete members\n};",
+        "fragment": "[Exposed=Window]\ninterface HTMLStyleElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute DOMString media;\n  [CEReactions] attribute DOMTokenList blocking;\n\n  // also has obsolete members\n};",
         "type": "interface",
         "name": "HTMLStyleElement",
         "inheritance": "HTMLElement",
@@ -2237,6 +2259,28 @@
               "nullable": false,
               "union": false,
               "idlType": "DOMString"
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "blocking",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMTokenList"
             },
             "extAttrs": [
               {
@@ -14504,7 +14548,7 @@
         "partial": false
       },
       "HTMLScriptElement": {
-        "fragment": "[Exposed=Window]\ninterface HTMLScriptElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute USVString src;\n  [CEReactions] attribute DOMString type;\n  [CEReactions] attribute boolean noModule;\n  [CEReactions] attribute boolean async;\n  [CEReactions] attribute boolean defer;\n  [CEReactions] attribute DOMString? crossOrigin;\n  [CEReactions] attribute DOMString text;\n  [CEReactions] attribute DOMString integrity;\n  [CEReactions] attribute DOMString referrerPolicy;\n\n  static boolean supports(DOMString type);\n\n  // also has obsolete members\n};",
+        "fragment": "[Exposed=Window]\ninterface HTMLScriptElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute USVString src;\n  [CEReactions] attribute DOMString type;\n  [CEReactions] attribute boolean noModule;\n  [CEReactions] attribute boolean async;\n  [CEReactions] attribute boolean defer;\n  [CEReactions] attribute DOMString? crossOrigin;\n  [CEReactions] attribute DOMString text;\n  [CEReactions] attribute DOMString integrity;\n  [CEReactions] attribute DOMString referrerPolicy;\n  [CEReactions] attribute DOMTokenList blocking;\n\n  static boolean supports(DOMString type);\n\n  // also has obsolete members\n};",
         "type": "interface",
         "name": "HTMLScriptElement",
         "inheritance": "HTMLElement",
@@ -14707,6 +14751,28 @@
               "nullable": false,
               "union": false,
               "idlType": "DOMString"
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "blocking",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMTokenList"
             },
             "extAttrs": [
               {
@@ -38674,6 +38740,7 @@
       ],
       "HTMLStyleElement": [
         "HTMLElement",
+        "DOMTokenList",
         "LinkStyle"
       ],
       "HTMLBodyElement": [
@@ -38972,7 +39039,8 @@
         "HTMLElement"
       ],
       "HTMLScriptElement": [
-        "HTMLElement"
+        "HTMLElement",
+        "DOMTokenList"
       ],
       "HTMLTemplateElement": [
         "HTMLElement",
