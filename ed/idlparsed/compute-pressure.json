@@ -13,8 +13,32 @@
       "functions": {}
     },
     "idlNames": {
+      "PressureState": {
+        "fragment": "enum PressureState { \"nominal\", \"fair\", \"serious\", \"critical\" };",
+        "type": "enum",
+        "name": "PressureState",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "nominal"
+          },
+          {
+            "type": "enum-value",
+            "value": "fair"
+          },
+          {
+            "type": "enum-value",
+            "value": "serious"
+          },
+          {
+            "type": "enum-value",
+            "value": "critical"
+          }
+        ],
+        "extAttrs": []
+      },
       "ComputePressureUpdateCallback": {
-        "fragment": "callback ComputePressureUpdateCallback = undefined (\n  ComputePressureEntry update,\n  ComputePressureObserver observer\n);",
+        "fragment": "callback ComputePressureUpdateCallback = undefined (\n  sequence<ComputePressureEntry> entries,\n  ComputePressureObserver observer\n);",
         "type": "callback",
         "name": "ComputePressureUpdateCallback",
         "idlType": {
@@ -28,15 +52,24 @@
         "arguments": [
           {
             "type": "argument",
-            "name": "update",
+            "name": "entries",
             "extAttrs": [],
             "idlType": {
               "type": "argument-type",
               "extAttrs": [],
-              "generic": "",
+              "generic": "sequence",
               "nullable": false,
               "union": false,
-              "idlType": "ComputePressureEntry"
+              "idlType": [
+                {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "ComputePressureEntry"
+                }
+              ]
             },
             "default": null,
             "optional": false,
@@ -74,7 +107,7 @@
         "extAttrs": []
       },
       "ComputePressureObserver": {
-        "fragment": "[Exposed=Window]\ninterface ComputePressureObserver {\n  constructor(ComputePressureUpdateCallback callback);\n  undefined observe(ComputePressureTarget target, optional ComputePressureObserverOptions options = {});\n  undefined unobserve(ComputePressureTarget target);\n  undefined disconnect();\n  sequence<ComputePressureEntry> takeRecords();\n  [SameObject] static readonly attribute FrozenArray<DOMString> supportedTargetTypes;\n};",
+        "fragment": "[Exposed=Window]\ninterface ComputePressureObserver {\n  constructor(ComputePressureUpdateCallback callback);\n\n  undefined observe(ComputePressureTarget target, optional ComputePressureObserverOptions options = {});\n  undefined unobserve(ComputePressureTarget target);\n  undefined disconnect();\n  sequence<ComputePressureEntry> takeRecords();\n\n  [SameObject] static readonly attribute FrozenArray<DOMString> supportedTargetTypes;\n};",
         "type": "interface",
         "name": "ComputePressureObserver",
         "inheritance": null,
@@ -268,14 +301,14 @@
         "partial": false
       },
       "ComputePressureEntry": {
-        "fragment": "dictionary ComputePressureEntry {\n  double cpuSpeed;\n  double cpuUtilization;\n  ComputePressureObserverOptions options;\n};",
+        "fragment": "dictionary ComputePressureEntry {\n  PressureState state;\n  ComputePressureObserverOptions options;\n};",
         "type": "dictionary",
         "name": "ComputePressureEntry",
         "inheritance": null,
         "members": [
           {
             "type": "field",
-            "name": "cpuSpeed",
+            "name": "state",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -283,22 +316,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "double"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "cpuUtilization",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "double"
+              "idlType": "PressureState"
             },
             "default": null,
             "required": false
@@ -323,66 +341,11 @@
         "partial": false
       },
       "ComputePressureObserverOptions": {
-        "fragment": "dictionary ComputePressureObserverOptions {\n  sequence<double> cpuUtilizationThresholds = [];\n  sequence<double> cpuSpeedThresholds = [];\n};",
+        "fragment": "dictionary ComputePressureObserverOptions {\n  // For future-proofing - expect things to be added here later.\n};",
         "type": "dictionary",
         "name": "ComputePressureObserverOptions",
         "inheritance": null,
-        "members": [
-          {
-            "type": "field",
-            "name": "cpuUtilizationThresholds",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "sequence",
-              "nullable": false,
-              "union": false,
-              "idlType": [
-                {
-                  "type": "dictionary-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "double"
-                }
-              ]
-            },
-            "default": {
-              "type": "sequence",
-              "value": []
-            },
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "cpuSpeedThresholds",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "sequence",
-              "nullable": false,
-              "union": false,
-              "idlType": [
-                {
-                  "type": "dictionary-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "double"
-                }
-              ]
-            },
-            "default": {
-              "type": "sequence",
-              "value": []
-            },
-            "required": false
-          }
-        ],
+        "members": [],
         "extAttrs": [],
         "partial": false
       }
@@ -402,6 +365,7 @@
         "ComputePressureEntry"
       ],
       "ComputePressureEntry": [
+        "PressureState",
         "ComputePressureObserverOptions"
       ],
       "ComputePressureObserverOptions": []
