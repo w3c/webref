@@ -12,7 +12,7 @@ interface HTMLScriptElement : HTMLElement {
   [CEReactions] attribute DOMString text;
   [CEReactions] attribute DOMString integrity;
   [CEReactions] attribute DOMString referrerPolicy;
-  [CEReactions] attribute DOMTokenList blocking;
+  [SameObject, PutForwards=value] readonly attribute DOMTokenList blocking;
 
   static boolean supports(DOMString type);
 

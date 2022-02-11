@@ -6,7 +6,7 @@
       "title": "Compute Pressure API",
       "url": "https://wicg.github.io/compute-pressure/"
     },
-    "fragment": "[Exposed=Window]\ninterface ComputePressureObserver {\n  constructor(ComputePressureUpdateCallback callback);\n  undefined observe(ComputePressureTarget target, optional ComputePressureObserverOptions options = {});\n  undefined unobserve(ComputePressureTarget target);\n  undefined disconnect();\n  sequence<ComputePressureEntry> takeRecords();\n  [SameObject] static readonly attribute FrozenArray<DOMString> supportedTargetTypes;\n};",
+    "fragment": "[Exposed=Window]\ninterface ComputePressureObserver {\n  constructor(ComputePressureUpdateCallback callback);\n\n  undefined observe(ComputePressureTarget target, optional ComputePressureObserverOptions options = {});\n  undefined unobserve(ComputePressureTarget target);\n  undefined disconnect();\n  sequence<ComputePressureEntry> takeRecords();\n\n  [SameObject] static readonly attribute FrozenArray<DOMString> supportedTargetTypes;\n};",
     "href": "https://wicg.github.io/compute-pressure/#dom-computepressureobserver"
   },
   "extended": [],
@@ -29,7 +29,7 @@
           "id": "the-computepressureobserver-object",
           "href": "https://wicg.github.io/compute-pressure/#the-computepressureobserver-object",
           "title": "The ComputePressureObserver object",
-          "number": "5.2"
+          "number": "6.2"
         },
         "definedIn": "prose"
       },
@@ -55,7 +55,7 @@
           "id": "the-constructor-method",
           "href": "https://wicg.github.io/compute-pressure/#the-constructor-method",
           "title": "The constructor() method",
-          "number": "5.2.2"
+          "number": "6.2.2"
         },
         "definedIn": "heading"
       },
@@ -82,7 +82,7 @@
           "id": "the-observe-method",
           "href": "https://wicg.github.io/compute-pressure/#the-observe-method",
           "title": "The observe() method",
-          "number": "5.2.3"
+          "number": "6.2.3"
         },
         "definedIn": "heading"
       },
@@ -108,7 +108,7 @@
           "id": "the-unobserve-method",
           "href": "https://wicg.github.io/compute-pressure/#the-unobserve-method",
           "title": "The unobserve() method",
-          "number": "5.2.4"
+          "number": "6.2.4"
         },
         "definedIn": "heading"
       },
@@ -133,7 +133,7 @@
           "id": "the-disconnect-method",
           "href": "https://wicg.github.io/compute-pressure/#the-disconnect-method",
           "title": "The disconnect() method",
-          "number": "5.2.5"
+          "number": "6.2.5"
         },
         "definedIn": "heading"
       },
@@ -158,7 +158,7 @@
           "id": "the-takerecords-method",
           "href": "https://wicg.github.io/compute-pressure/#the-takerecords-method",
           "title": "The takeRecords() method",
-          "number": "5.2.6"
+          "number": "6.2.6"
         },
         "definedIn": "heading"
       },
@@ -181,7 +181,7 @@
           "id": "the-supportedtargettypes-attribute",
           "href": "https://wicg.github.io/compute-pressure/#the-supportedtargettypes-attribute",
           "title": "The supportedTargetTypes attribute",
-          "number": "5.2.7"
+          "number": "6.2.7"
         },
         "definedIn": "heading"
       }

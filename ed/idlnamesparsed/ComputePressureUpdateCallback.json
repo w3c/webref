@@ -6,7 +6,7 @@
       "title": "Compute Pressure API",
       "url": "https://wicg.github.io/compute-pressure/"
     },
-    "fragment": "callback ComputePressureUpdateCallback = undefined (\n  ComputePressureEntry update,\n  ComputePressureObserver observer\n);",
+    "fragment": "callback ComputePressureUpdateCallback = undefined (\n  sequence<ComputePressureEntry> entries,\n  ComputePressureObserver observer\n);",
     "href": "https://wicg.github.io/compute-pressure/#dom-computepressureupdatecallback"
   },
   "extended": [],
@@ -28,7 +28,7 @@
           "id": "the-computepressureupdatecallback-callback",
           "href": "https://wicg.github.io/compute-pressure/#the-computepressureupdatecallback-callback",
           "title": "The ComputePressureUpdateCallback callback",
-          "number": "5.1"
+          "number": "6.1"
         },
         "definedIn": "pre"
       }

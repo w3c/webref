@@ -6,7 +6,7 @@
       "title": "Compute Pressure API",
       "url": "https://wicg.github.io/compute-pressure/"
     },
-    "fragment": "dictionary ComputePressureObserverOptions {\n  sequence<double> cpuUtilizationThresholds = [];\n  sequence<double> cpuSpeedThresholds = [];\n};",
+    "fragment": "dictionary ComputePressureObserverOptions {\n  // For future-proofing - expect things to be added here later.\n};",
     "href": "https://wicg.github.io/compute-pressure/#dom-computepressureobserveroptions"
   },
   "extended": [],
@@ -29,49 +29,7 @@
           "id": "the-computepressureobserveroptions-dictionary",
           "href": "https://wicg.github.io/compute-pressure/#the-computepressureobserveroptions-dictionary",
           "title": "The ComputePressureObserverOptions dictionary",
-          "number": "5.4"
-        },
-        "definedIn": "heading"
-      },
-      {
-        "id": "dom-computepressureobserveroptions-cpuutilizationthresholds",
-        "href": "https://wicg.github.io/compute-pressure/#dom-computepressureobserveroptions-cpuutilizationthresholds",
-        "linkingText": [
-          "cpuUtilizationThresholds"
-        ],
-        "localLinkingText": [],
-        "type": "dict-member",
-        "for": [
-          "ComputePressureObserverOptions"
-        ],
-        "access": "public",
-        "informative": false,
-        "heading": {
-          "id": "the-cpuutilizationthresholds-member",
-          "href": "https://wicg.github.io/compute-pressure/#the-cpuutilizationthresholds-member",
-          "title": "The cpuUtilizationThresholds member",
-          "number": "5.4.1"
-        },
-        "definedIn": "heading"
-      },
-      {
-        "id": "dom-computepressureobserveroptions-cpuspeedthresholds",
-        "href": "https://wicg.github.io/compute-pressure/#dom-computepressureobserveroptions-cpuspeedthresholds",
-        "linkingText": [
-          "cpuSpeedThresholds"
-        ],
-        "localLinkingText": [],
-        "type": "dict-member",
-        "for": [
-          "ComputePressureObserverOptions"
-        ],
-        "access": "public",
-        "informative": false,
-        "heading": {
-          "id": "the-cpuspeedthresholds-member",
-          "href": "https://wicg.github.io/compute-pressure/#the-cpuspeedthresholds-member",
-          "title": "The cpuSpeedThresholds member",
-          "number": "5.4.2"
+          "number": "6.4"
         },
         "definedIn": "heading"
       }

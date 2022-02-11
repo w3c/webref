@@ -6,7 +6,7 @@
       "title": "Compute Pressure API",
       "url": "https://wicg.github.io/compute-pressure/"
     },
-    "fragment": "dictionary ComputePressureEntry {\n  double cpuSpeed;\n  double cpuUtilization;\n  ComputePressureObserverOptions options;\n};",
+    "fragment": "dictionary ComputePressureEntry {\n  PressureState state;\n  ComputePressureObserverOptions options;\n};",
     "href": "https://wicg.github.io/compute-pressure/#dom-computepressureentry"
   },
   "extended": [],
@@ -29,15 +29,15 @@
           "id": "the-computepressureentry-dictionary",
           "href": "https://wicg.github.io/compute-pressure/#the-computepressureentry-dictionary",
           "title": "The ComputePressureEntry dictionary",
-          "number": "5.3"
+          "number": "6.3"
         },
         "definedIn": "heading"
       },
       {
-        "id": "dom-computepressureentry-cpuspeed",
-        "href": "https://wicg.github.io/compute-pressure/#dom-computepressureentry-cpuspeed",
+        "id": "dom-computepressureentry-state",
+        "href": "https://wicg.github.io/compute-pressure/#dom-computepressureentry-state",
         "linkingText": [
-          "cpuSpeed"
+          "state"
         ],
         "localLinkingText": [],
         "type": "dict-member",
@@ -47,31 +47,10 @@
         "access": "public",
         "informative": false,
         "heading": {
-          "id": "the-cpuspeed-attribute",
-          "href": "https://wicg.github.io/compute-pressure/#the-cpuspeed-attribute",
-          "title": "The cpuSpeed attribute",
-          "number": "5.3.1"
-        },
-        "definedIn": "heading"
-      },
-      {
-        "id": "dom-computepressureentry-cpuutilization",
-        "href": "https://wicg.github.io/compute-pressure/#dom-computepressureentry-cpuutilization",
-        "linkingText": [
-          "cpuUtilization"
-        ],
-        "localLinkingText": [],
-        "type": "dict-member",
-        "for": [
-          "ComputePressureEntry"
-        ],
-        "access": "public",
-        "informative": false,
-        "heading": {
-          "id": "the-cpuutilization-attribute",
-          "href": "https://wicg.github.io/compute-pressure/#the-cpuutilization-attribute",
-          "title": "The cpuUtilization attribute",
-          "number": "5.3.2"
+          "id": "the-state-attribute",
+          "href": "https://wicg.github.io/compute-pressure/#the-state-attribute",
+          "title": "The state attribute",
+          "number": "6.3.1"
         },
         "definedIn": "heading"
       },
@@ -92,7 +71,7 @@
           "id": "the-options-attribute",
           "href": "https://wicg.github.io/compute-pressure/#the-options-attribute",
           "title": "The options attribute",
-          "number": "5.3.3"
+          "number": "6.3.2"
         },
         "definedIn": "heading"
       }
