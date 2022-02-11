@@ -6,7 +6,7 @@
       "title": "HTML Standard",
       "url": "https://html.spec.whatwg.org/multipage/"
     },
-    "fragment": "[Exposed=Window]\ninterface HTMLLinkElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute USVString href;\n  [CEReactions] attribute DOMString? crossOrigin;\n  [CEReactions] attribute DOMString rel;\n  [CEReactions] attribute DOMString as; // (default \"\")\n  [SameObject, PutForwards=value] readonly attribute DOMTokenList relList;\n  [CEReactions] attribute DOMString media;\n  [CEReactions] attribute DOMString integrity;\n  [CEReactions] attribute DOMString hreflang;\n  [CEReactions] attribute DOMString type;\n  [SameObject, PutForwards=value] readonly attribute DOMTokenList sizes;\n  [CEReactions] attribute USVString imageSrcset;\n  [CEReactions] attribute DOMString imageSizes;\n  [CEReactions] attribute DOMString referrerPolicy;\n  [CEReactions] attribute boolean disabled;\n\n  // also has obsolete members\n};",
+    "fragment": "[Exposed=Window]\ninterface HTMLLinkElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute USVString href;\n  [CEReactions] attribute DOMString? crossOrigin;\n  [CEReactions] attribute DOMString rel;\n  [CEReactions] attribute DOMString as; // (default \"\")\n  [SameObject, PutForwards=value] readonly attribute DOMTokenList relList;\n  [CEReactions] attribute DOMString media;\n  [CEReactions] attribute DOMString integrity;\n  [CEReactions] attribute DOMString hreflang;\n  [CEReactions] attribute DOMString type;\n  [SameObject, PutForwards=value] readonly attribute DOMTokenList sizes;\n  [CEReactions] attribute USVString imageSrcset;\n  [CEReactions] attribute DOMString imageSizes;\n  [CEReactions] attribute DOMString referrerPolicy;\n  [CEReactions] attribute DOMTokenList blocking;\n  [CEReactions] attribute boolean disabled;\n\n  // also has obsolete members\n};",
     "href": "https://html.spec.whatwg.org/multipage/semantics.html#htmllinkelement"
   },
   "extended": [
@@ -846,6 +846,27 @@
         "href": "https://html.spec.whatwg.org/multipage/semantics.html#dom-link-referrerpolicy",
         "linkingText": [
           "referrerPolicy"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "HTMLLinkElement"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-link-element",
+          "href": "https://html.spec.whatwg.org/multipage/semantics.html#the-link-element",
+          "title": "The link element",
+          "number": "4.2.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-link-blocking",
+        "href": "https://html.spec.whatwg.org/multipage/semantics.html#dom-link-blocking",
+        "linkingText": [
+          "blocking"
         ],
         "localLinkingText": [],
         "type": "attribute",
