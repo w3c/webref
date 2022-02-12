@@ -20730,6 +20730,67 @@
       "definedIn": "dt"
     },
     {
+      "id": "gpu-error-scope",
+      "href": "https://gpuweb.github.io/gpuweb/#gpu-error-scope",
+      "linkingText": [
+        "GPU error scope"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "error-scopes",
+        "href": "https://gpuweb.github.io/gpuweb/#error-scopes",
+        "title": "Error Scopes",
+        "number": "21.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-gpu-error-scope-error-slot",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpu-error-scope-error-slot",
+      "linkingText": [
+        "[[error]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPU error scope"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "error-scopes",
+        "href": "https://gpuweb.github.io/gpuweb/#error-scopes",
+        "title": "Error Scopes",
+        "number": "21.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-gpu-error-scope-filter-slot",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpu-error-scope-filter-slot",
+      "linkingText": [
+        "[[filter]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPU error scope"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "error-scopes",
+        "href": "https://gpuweb.github.io/gpuweb/#error-scopes",
+        "title": "Error Scopes",
+        "number": "21.2"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "enumdef-gpuerrorfilter",
       "href": "https://gpuweb.github.io/gpuweb/#enumdef-gpuerrorfilter",
       "linkingText": [
@@ -20935,15 +20996,15 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-gpudevice-pusherrorscope-filter-filter",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-pusherrorscope-filter-filter",
+      "id": "dom-gpudevice-errorscopestack-slot",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-errorscopestack-slot",
       "linkingText": [
-        "filter"
+        "[[errorScopeStack]]"
       ],
       "localLinkingText": [],
-      "type": "argument",
+      "type": "attribute",
       "for": [
-        "GPUDevice/pushErrorScope(filter)"
+        "GPUDevice"
       ],
       "access": "public",
       "informative": false,
@@ -20953,7 +21014,46 @@
         "title": "Error Scopes",
         "number": "21.2"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
+    },
+    {
+      "id": "abstract-opdef-current-error-scope",
+      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-current-error-scope",
+      "linkingText": [
+        "current error scope"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "error-scopes",
+        "href": "https://gpuweb.github.io/gpuweb/#error-scopes",
+        "title": "Error Scopes",
+        "number": "21.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "abstract-opdef-generate-a-validation-error",
+      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-generate-a-validation-error",
+      "linkingText": [
+        "Generate a validation error",
+        "generate a validation error"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "error-scopes",
+        "href": "https://gpuweb.github.io/gpuweb/#error-scopes",
+        "title": "Error Scopes",
+        "number": "21.2"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "dom-gpudevice-pusherrorscope",
@@ -20977,6 +21077,27 @@
       "definedIn": "dt"
     },
     {
+      "id": "dom-gpudevice-pusherrorscope-filter-filter",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-pusherrorscope-filter-filter",
+      "linkingText": [
+        "filter"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUDevice/pushErrorScope(filter)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "error-scopes",
+        "href": "https://gpuweb.github.io/gpuweb/#error-scopes",
+        "title": "Error Scopes",
+        "number": "21.2"
+      },
+      "definedIn": "table"
+    },
+    {
       "id": "dom-gpudevice-poperrorscope",
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-poperrorscope",
       "linkingText": [
@@ -20996,6 +21117,27 @@
         "number": "21.2"
       },
       "definedIn": "dt"
+    },
+    {
+      "id": "eventdef-gpudevice-uncapturederror",
+      "href": "https://gpuweb.github.io/gpuweb/#eventdef-gpudevice-uncapturederror",
+      "linkingText": [
+        "uncapturederror"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "GPUDevice"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "telemetry",
+        "href": "https://gpuweb.github.io/gpuweb/#telemetry",
+        "title": "Telemetry",
+        "number": "21.3"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "gpuuncapturederrorevent",
@@ -21162,7 +21304,7 @@
         "title": "Telemetry",
         "number": "21.3"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
       "id": "renderstate",
