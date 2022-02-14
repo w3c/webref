@@ -18,7 +18,7 @@
         "title": "Permissions",
         "url": "https://www.w3.org/TR/permissions/"
       },
-      "fragment": "[Exposed=(Window,Worker)]\ninterface PermissionStatus : EventTarget {\n  readonly attribute PermissionState state;\n  readonly attribute PermissionName name;\n  attribute EventHandler onchange;\n};",
+      "fragment": "[Exposed=(Window,Worker)]\ninterface PermissionStatus : EventTarget {\n  readonly attribute PermissionState state;\n  readonly attribute DOMString name;\n  attribute EventHandler onchange;\n};",
       "href": "https://w3c.github.io/permissions/#dom-permissionstatus"
     },
     "extended": [],
@@ -99,7 +99,7 @@
           "id": "permissionstatus-interface-0",
           "href": "https://w3c.github.io/permissions/#permissionstatus-interface-0",
           "title": "PermissionStatus interface",
-          "number": "3.3"
+          "number": "5.3"
         },
         "definedIn": "pre"
       },
@@ -122,7 +122,7 @@
           "id": "state-attribute",
           "href": "https://w3c.github.io/permissions/#state-attribute",
           "title": "state attribute",
-          "number": "3.3.3"
+          "number": "5.3.3"
         },
         "definedIn": "prose"
       },
@@ -145,7 +145,7 @@
           "id": "name-attribute",
           "href": "https://w3c.github.io/permissions/#name-attribute",
           "title": "name attribute",
-          "number": "3.3.2"
+          "number": "5.3.2"
         },
         "definedIn": "prose"
       },
@@ -168,7 +168,7 @@
           "id": "onchange-attribute",
           "href": "https://w3c.github.io/permissions/#onchange-attribute",
           "title": "onchange attribute",
-          "number": "3.3.4"
+          "number": "5.3.4"
         },
         "definedIn": "prose"
       }
