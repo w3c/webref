@@ -6,7 +6,7 @@
       "title": "WebCodecs",
       "url": "https://www.w3.org/TR/webcodecs/"
     },
-    "fragment": "[Exposed=(Window,DedicatedWorker), SecureContext]\ninterface AudioDecoder {\n  constructor(AudioDecoderInit init);\n\n  readonly attribute CodecState state;\n  readonly attribute long decodeQueueSize;\n\n  undefined configure(AudioDecoderConfig config);\n  undefined decode(EncodedAudioChunk chunk);\n  Promise<undefined> flush();\n  undefined reset();\n  undefined close();\n\n  static Promise<AudioDecoderSupport> isConfigSupported(AudioDecoderConfig config);\n};",
+    "fragment": "[Exposed=(Window,DedicatedWorker), SecureContext]\ninterface AudioDecoder {\n  constructor(AudioDecoderInit init);\n\n  readonly attribute CodecState state;\n  readonly attribute unsigned long decodeQueueSize;\n\n  undefined configure(AudioDecoderConfig config);\n  undefined decode(EncodedAudioChunk chunk);\n  Promise<undefined> flush();\n  undefined reset();\n  undefined close();\n\n  static Promise<AudioDecoderSupport> isConfigSupported(AudioDecoderConfig config);\n};",
     "href": "https://www.w3.org/TR/webcodecs/#audiodecoder"
   },
   "extended": [],

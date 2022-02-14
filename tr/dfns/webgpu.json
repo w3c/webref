@@ -57,7 +57,7 @@
         "id": "security-shader",
         "href": "https://www.w3.org/TR/webgpu/#security-shader",
         "title": "Out-of-bounds access in shaders",
-        "number": "2.4"
+        "number": "2.1.4"
       },
       "definedIn": "prose"
     },
@@ -15108,10 +15108,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "valid-texture-copy-range",
-      "href": "https://www.w3.org/TR/webgpu/#valid-texture-copy-range",
+      "id": "validating-texture-copy-range",
+      "href": "https://www.w3.org/TR/webgpu/#validating-texture-copy-range",
       "linkingText": [
-        "Valid Texture Copy Range"
+        "validating texture copy range"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -20730,6 +20730,67 @@
       "definedIn": "dt"
     },
     {
+      "id": "gpu-error-scope",
+      "href": "https://www.w3.org/TR/webgpu/#gpu-error-scope",
+      "linkingText": [
+        "GPU error scope"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "error-scopes",
+        "href": "https://www.w3.org/TR/webgpu/#error-scopes",
+        "title": "Error Scopes",
+        "number": "21.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-gpu-error-scope-error-slot",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpu-error-scope-error-slot",
+      "linkingText": [
+        "[[error]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPU error scope"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "error-scopes",
+        "href": "https://www.w3.org/TR/webgpu/#error-scopes",
+        "title": "Error Scopes",
+        "number": "21.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-gpu-error-scope-filter-slot",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpu-error-scope-filter-slot",
+      "linkingText": [
+        "[[filter]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPU error scope"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "error-scopes",
+        "href": "https://www.w3.org/TR/webgpu/#error-scopes",
+        "title": "Error Scopes",
+        "number": "21.2"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "enumdef-gpuerrorfilter",
       "href": "https://www.w3.org/TR/webgpu/#enumdef-gpuerrorfilter",
       "linkingText": [
@@ -20935,15 +20996,15 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-gpudevice-pusherrorscope-filter-filter",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpudevice-pusherrorscope-filter-filter",
+      "id": "dom-gpudevice-errorscopestack-slot",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpudevice-errorscopestack-slot",
       "linkingText": [
-        "filter"
+        "[[errorScopeStack]]"
       ],
       "localLinkingText": [],
-      "type": "argument",
+      "type": "attribute",
       "for": [
-        "GPUDevice/pushErrorScope(filter)"
+        "GPUDevice"
       ],
       "access": "public",
       "informative": false,
@@ -20953,7 +21014,46 @@
         "title": "Error Scopes",
         "number": "21.2"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
+    },
+    {
+      "id": "abstract-opdef-current-error-scope",
+      "href": "https://www.w3.org/TR/webgpu/#abstract-opdef-current-error-scope",
+      "linkingText": [
+        "current error scope"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "error-scopes",
+        "href": "https://www.w3.org/TR/webgpu/#error-scopes",
+        "title": "Error Scopes",
+        "number": "21.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "abstract-opdef-generate-a-validation-error",
+      "href": "https://www.w3.org/TR/webgpu/#abstract-opdef-generate-a-validation-error",
+      "linkingText": [
+        "Generate a validation error",
+        "generate a validation error"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "error-scopes",
+        "href": "https://www.w3.org/TR/webgpu/#error-scopes",
+        "title": "Error Scopes",
+        "number": "21.2"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "dom-gpudevice-pusherrorscope",
@@ -20977,6 +21077,27 @@
       "definedIn": "dt"
     },
     {
+      "id": "dom-gpudevice-pusherrorscope-filter-filter",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpudevice-pusherrorscope-filter-filter",
+      "linkingText": [
+        "filter"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUDevice/pushErrorScope(filter)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "error-scopes",
+        "href": "https://www.w3.org/TR/webgpu/#error-scopes",
+        "title": "Error Scopes",
+        "number": "21.2"
+      },
+      "definedIn": "table"
+    },
+    {
       "id": "dom-gpudevice-poperrorscope",
       "href": "https://www.w3.org/TR/webgpu/#dom-gpudevice-poperrorscope",
       "linkingText": [
@@ -20996,6 +21117,27 @@
         "number": "21.2"
       },
       "definedIn": "dt"
+    },
+    {
+      "id": "eventdef-gpudevice-uncapturederror",
+      "href": "https://www.w3.org/TR/webgpu/#eventdef-gpudevice-uncapturederror",
+      "linkingText": [
+        "uncapturederror"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "GPUDevice"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "telemetry",
+        "href": "https://www.w3.org/TR/webgpu/#telemetry",
+        "title": "Telemetry",
+        "number": "21.3"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "gpuuncapturederrorevent",
@@ -21162,7 +21304,7 @@
         "title": "Telemetry",
         "number": "21.3"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
       "id": "renderstate",

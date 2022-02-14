@@ -4,7 +4,7 @@ interface ImageTrackList {
   getter ImageTrack (unsigned long index);
 
   readonly attribute Promise<undefined> ready;
-  [EnforceRange] readonly attribute unsigned long length;
-  [EnforceRange] readonly attribute long selectedIndex;
+  readonly attribute unsigned long length;
+  readonly attribute long selectedIndex;
   readonly attribute ImageTrack? selectedTrack;
 };

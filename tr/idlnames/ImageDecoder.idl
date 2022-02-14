@@ -3,6 +3,7 @@
 interface ImageDecoder {
   constructor(ImageDecoderInit init);
 
+  readonly attribute DOMString type;
   readonly attribute boolean complete;
   readonly attribute Promise<undefined> completed;
   readonly attribute ImageTrackList tracks;

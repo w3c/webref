@@ -26,8 +26,8 @@
       "dom-animation-effect",
       "animationeffect",
       "target-element",
-      "target-effect",
-      "animation",
+      "animation-associated-effect",
+      "concept-animation",
       "animation-class",
       "global-animation-list",
       "idle-play-state",
@@ -44,19 +44,21 @@
       "timeline",
       "documenttimeline",
       "default-document-timeline",
-      "before-phase",
-      "idle-phase",
-      "current-time",
+      "animation-effect-before-phase",
+      "animation-effect-idle-phase",
+      "animation-current-time",
       "unresolved",
-      "after-phase",
+      "animation-effect-after-phase",
       "active-duration",
       "current-iteration",
       "iteration-start",
-      "target-effect-end",
-      "sampling",
-      "pending-play-state",
-      "active-phase",
+      "associated-effect-end",
+      "animation-frame",
+      "pending-play-task",
+      "pending-pause-task",
+      "animation-effect-active-phase",
       "active-time",
+      "animation",
       "dom-animation-playstate"
     ],
     "https://drafts.csswg.org/css-animations-1/": [
@@ -103,7 +105,7 @@
       "easing-function",
       "typedef-easing-function"
     ],
-    "https://drafts.csswg.org/css-writing-modes-4/": [
+    "https://www.w3.org/TR/css-writing-modes-4/": [
       "logical-to-physical"
     ],
     "https://drafts.csswg.org/css-cascade-5/": [
@@ -116,7 +118,7 @@
     "https://drafts.csswg.org/css-values-4/": [
       "mult-comma",
       "comb-one",
-      "css-identifier",
+      "css-css-identifier",
       "identifier-value",
       "string-value",
       "time-value",
@@ -161,7 +163,6 @@
     "https://www.w3.org/TR/css-cascade-5/": [],
     "https://www.w3.org/TR/css-easing-1/": [],
     "https://www.w3.org/TR/css-values-4/": [],
-    "https://www.w3.org/TR/css-writing-modes-4/": [],
     "https://www.w3.org/TR/cssom-1/": [],
     "https://datatracker.ietf.org/doc/html/rfc2119": [],
     "https://www.w3.org/TR/css-masking-1/": [],

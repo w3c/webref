@@ -44,7 +44,7 @@ partial interface mixin WindowOrWorkerGlobalScope {
 
 // Source: Prioritized Task Scheduling (https://wicg.github.io/scheduling-apis/)
 partial interface mixin WindowOrWorkerGlobalScope {
-  readonly attribute Scheduler scheduler;
+  [Replaceable] readonly attribute Scheduler scheduler;
 };
 
 // Source: High Resolution Time (https://www.w3.org/TR/hr-time-3/)

@@ -6,7 +6,7 @@
       "title": "WebGPU",
       "url": "https://www.w3.org/TR/webgpu/"
     },
-    "fragment": "dictionary GPURenderPassLayout: GPUObjectDescriptorBase {\n    required sequence<GPUTextureFormat> colorFormats;\n    GPUTextureFormat depthStencilFormat;\n    GPUSize32 sampleCount = 1;\n};",
+    "fragment": "dictionary GPURenderPassLayout: GPUObjectDescriptorBase {\n    required sequence<GPUTextureFormat?> colorFormats;\n    GPUTextureFormat depthStencilFormat;\n    GPUSize32 sampleCount = 1;\n};",
     "href": "https://www.w3.org/TR/webgpu/#dictdef-gpurenderpasslayout"
   },
   "extended": [],

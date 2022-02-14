@@ -6,7 +6,7 @@
       "title": "WebGPU",
       "url": "https://www.w3.org/TR/webgpu/"
     },
-    "fragment": "dictionary GPURenderPassDescriptor : GPUObjectDescriptorBase {\n    required sequence<GPURenderPassColorAttachment> colorAttachments;\n    GPURenderPassDepthStencilAttachment depthStencilAttachment;\n    GPUQuerySet occlusionQuerySet;\n    GPURenderPassTimestampWrites timestampWrites = [];\n};",
+    "fragment": "dictionary GPURenderPassDescriptor : GPUObjectDescriptorBase {\n    required sequence<GPURenderPassColorAttachment?> colorAttachments;\n    GPURenderPassDepthStencilAttachment depthStencilAttachment;\n    GPUQuerySet occlusionQuerySet;\n    GPURenderPassTimestampWrites timestampWrites = [];\n};",
     "href": "https://www.w3.org/TR/webgpu/#dictdef-gpurenderpassdescriptor"
   },
   "extended": [],

@@ -6,7 +6,7 @@
       "title": "HTML Standard",
       "url": "https://html.spec.whatwg.org/multipage/"
     },
-    "fragment": "[Exposed=Window]\ninterface HTMLStyleElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute DOMString media;\n\n  // also has obsolete members\n};",
+    "fragment": "[Exposed=Window]\ninterface HTMLStyleElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute DOMString media;\n  [SameObject, PutForwards=value] readonly attribute DOMTokenList blocking;\n\n  // also has obsolete members\n};",
     "href": "https://html.spec.whatwg.org/multipage/semantics.html#htmlstyleelement"
   },
   "extended": [
