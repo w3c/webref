@@ -1,5 +1,5 @@
 // Source: Compute Pressure API (https://wicg.github.io/compute-pressure/)
 callback ComputePressureUpdateCallback = undefined (
-  sequence<ComputePressureEntry> entries,
+  sequence<ComputePressureRecord> changes,
   ComputePressureObserver observer
 );
