@@ -111,13 +111,7 @@
       "value": "not <container-query> | <container-query> [ and <container-query> ]* | <container-query> [ or <container-query> ]*"
     },
     "<container-query>": {
-      "value": "( <container-condition> ) | size( <size-query> ) | style( <style-query> )"
-    },
-    "<size-query>": {
-      "value": "<size-feature> | <size-condition>"
-    },
-    "<size-condition>": {
-      "value": "not ( <size-query> ) | ( <size-query> ) [ and ( <size-query> ) ]* | ( <size-query> ) [ or ( <size-query> ) ]*"
+      "value": "( <container-condition> ) | ( <size-feature> ) | style( <style-query> ) | <general-enclosed>"
     },
     "<style-query>": {
       "value": "<style-feature> | <style-condition>"
