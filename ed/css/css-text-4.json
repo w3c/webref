@@ -53,7 +53,7 @@
       "name": "text-space-trim",
       "value": "none | trim-inner || discard-before || discard-after",
       "initial": "none",
-      "appliesTo": "inline boxes",
+      "appliesTo": "inline boxes and block containers",
       "inherited": "no",
       "percentages": "n/a",
       "computedValue": "specified keyword(s)",
@@ -246,7 +246,7 @@
     },
     "text-spacing": {
       "name": "text-spacing",
-      "value": "normal | none | auto | [ trim-start | space-start | space-first ] || [ trim-end | space-end | allow-end ] || [ trim-adjacent | space-adjacent ] || no-compress || ideograph-alpha || ideograph-numeric || punctuation",
+      "value": "normal | none | auto | no-compress || [ trim-start | space-start | space-first ] || [ trim-end | space-end | allow-end ] || [ trim-adjacent | space-adjacent ] || ideograph-alpha || ideograph-numeric || punctuation",
       "initial": "normal",
       "appliesTo": "block containers",
       "inherited": "yes",
