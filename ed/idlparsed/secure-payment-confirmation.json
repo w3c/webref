@@ -10,7 +10,7 @@
     },
     "idlNames": {
       "SecurePaymentConfirmationRequest": {
-        "fragment": "dictionary SecurePaymentConfirmationRequest {\n    required BufferSource challenge;\n    required FrozenArray<BufferSource> credentialIds;\n    required PaymentCredentialInstrument instrument;\n    unsigned long timeout;\n    required USVString payeeOrigin;\n    AuthenticationExtensionsClientInputs extensions;\n};",
+        "fragment": "dictionary SecurePaymentConfirmationRequest {\n    required BufferSource challenge;\n    required USVString rpId;\n    required FrozenArray<BufferSource> credentialIds;\n    required PaymentCredentialInstrument instrument;\n    unsigned long timeout;\n    required USVString payeeOrigin;\n    AuthenticationExtensionsClientInputs extensions;\n};",
         "type": "dictionary",
         "name": "SecurePaymentConfirmationRequest",
         "inheritance": null,
@@ -26,6 +26,21 @@
               "nullable": false,
               "union": false,
               "idlType": "BufferSource"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "rpId",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
             },
             "default": null,
             "required": true

@@ -1,0 +1,53 @@
+{
+  "spec": {
+    "title": "CSS Containment Module Level 3",
+    "url": "https://drafts.csswg.org/css-contain-3/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {},
+      "functions": {
+        "Window": [
+          "CSSContainerRule"
+        ]
+      }
+    },
+    "idlNames": {
+      "CSSContainerRule": {
+        "fragment": "[Exposed=Window]\ninterface CSSContainerRule : CSSConditionRule {\n};",
+        "type": "interface",
+        "name": "CSSContainerRule",
+        "inheritance": "CSSConditionRule",
+        "members": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      }
+    },
+    "idlExtendedNames": {},
+    "globals": {},
+    "exposed": {
+      "Window": [
+        "CSSContainerRule"
+      ]
+    },
+    "dependencies": {
+      "CSSContainerRule": [
+        "CSSConditionRule"
+      ]
+    },
+    "externalDependencies": [
+      "CSSConditionRule"
+    ],
+    "hasObsoleteIdl": false
+  }
+}

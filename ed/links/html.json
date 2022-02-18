@@ -474,7 +474,6 @@
       "concept-request-reload-navigation-flag",
       "concept-request-history-navigation-flag",
       "request-user-activation",
-      "concept-websocket-establish",
       "concept-connection",
       "request-service-workers-mode",
       "concept-header-list-append",
@@ -700,7 +699,7 @@
     "https://tools.ietf.org/html/rfc8288": [
       "section-3"
     ],
-    "https://httpwg.org/http-extensions/draft-ietf-httpbis-header-structure.html": [
+    "https://httpwg.org/specs/rfc8941.html": [
       "boolean",
       "token",
       "param"
@@ -820,7 +819,8 @@
       "Clamp",
       "BufferSource",
       "idl-DOMException",
-      "ArrayBufferView"
+      "ArrayBufferView",
+      "the-given-value"
     ],
     "https://tc39.es/proposal-dynamic-import/": [
       "sec-hostimportmoduledynamically"
@@ -1356,6 +1356,12 @@
       "filter-primitive-attributes",
       "FilterProperty"
     ],
+    "https://drafts.fxtf.org/compositing/": [
+      "ltblendmodegt",
+      "compositemode",
+      "porterduffcompositingoperators_srcover",
+      "porterduffcompositingoperators_src"
+    ],
     "https://w3c.github.io/requestidlecallback/": [
       "the-requestidlecallback-method",
       "start-an-idle-period-algorithm"
@@ -1396,6 +1402,10 @@
     ],
     "https://wicg.github.io/uuid/": [
       "dfn-generate-a-random-uuid"
+    ],
+    "https://websockets.spec.whatwg.org/": [
+      "websocket",
+      "make-disappear"
     ],
     "https://www.w3.org/TR/REC-xml-names/": [
       "NT-QName"
@@ -2713,6 +2723,8 @@
     "https://developer.mozilla.org/en-US/docs/Web/API/ImageBitmap/height": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/Window/requestAnimationFrame": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/Window/cancelAnimationFrame": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/WebSocket": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/CloseEvent": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/MessageEvent": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/MessageEvent/data": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/MessageEvent/origin": [],
@@ -2753,15 +2765,11 @@
       "eventhandler",
       "relevant-settings-object",
       "in-parallel",
-      "event-close",
       "event-loop",
       "step1",
       "event-handlers",
       "event-handler-event-type",
       "event-handler-idl-attributes",
-      "event-open",
-      "event-message",
-      "event-error",
       "queue-a-task",
       "concept-relevant-realm",
       "messageevent",
@@ -2937,7 +2945,6 @@
     "https://www.unicode.org/reports/tr26/": [],
     "https://www.w3.org/TR/charmod/": [],
     "https://w3c.github.io/charmod-norm/": [],
-    "https://drafts.fxtf.org/compositing/": [],
     "https://www.turingarchive.org/browse.php/B/12": [],
     "https://tools.ietf.org/html/rfc6265": [],
     "https://drafts.csswg.org/css-animations/": [],
