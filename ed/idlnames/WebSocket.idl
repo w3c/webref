@@ -2,7 +2,6 @@
 [Exposed=(Window,Worker)]
 interface WebSocket : EventTarget {
   constructor(USVString url, optional (DOMString or sequence<DOMString>) protocols = []);
-
   readonly attribute USVString url;
 
   // ready state
@@ -24,8 +23,5 @@ interface WebSocket : EventTarget {
   // messaging
   attribute EventHandler onmessage;
   attribute BinaryType binaryType;
-  undefined send(USVString data);
-  undefined send(Blob data);
-  undefined send(ArrayBuffer data);
-  undefined send(ArrayBufferView data);
+  undefined send((BufferSource or Blob or USVString) data);
 };

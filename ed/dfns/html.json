@@ -11126,6 +11126,25 @@
       "definedIn": "prose"
     },
     {
+      "id": "parent-element",
+      "href": "https://html.spec.whatwg.org/multipage/infrastructure.html#parent-element",
+      "linkingText": [
+        "parent element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://html.spec.whatwg.org/multipage/infrastructure.html#dependencies",
+        "title": "Dependencies",
+        "number": "2.1.9"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "document-element",
       "href": "https://html.spec.whatwg.org/multipage/infrastructure.html#document-element",
       "linkingText": [
@@ -93821,10 +93840,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "network",
-      "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#network",
+      "id": "concept-websocket-connection-obtain",
+      "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#concept-websocket-connection-obtain",
       "linkingText": [
-        "Web sockets"
+        "obtain a WebSocket connection"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -93832,16 +93851,35 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "network",
-        "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#network",
-        "title": "Web sockets",
-        "number": "9.3"
+        "id": "websocket-connections",
+        "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#websocket-connections",
+        "title": "Connections",
+        "number": "2.1"
       },
-      "definedIn": "heading"
+      "definedIn": "prose"
     },
     {
-      "id": "binarytype",
-      "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#binarytype",
+      "id": "concept-websocket-establish",
+      "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#concept-websocket-establish",
+      "linkingText": [
+        "establish a WebSocket connection"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "websocket-opening-handshake",
+        "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#websocket-opening-handshake",
+        "title": "Opening handshake",
+        "number": "2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "enumdef-binarytype",
+      "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#enumdef-binarytype",
       "linkingText": [
         "BinaryType"
       ],
@@ -93851,10 +93889,10 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "the-websocket-interface",
-        "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#the-websocket-interface",
-        "title": "The WebSocket interface",
-        "number": "9.3.2"
+        "id": "interface-definition",
+        "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#interface-definition",
+        "title": "Interface definition",
+        "number": "3.1"
       },
       "definedIn": "pre"
     },
@@ -93870,37 +93908,157 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "the-websocket-interface",
-        "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#the-websocket-interface",
-        "title": "The WebSocket interface",
-        "number": "9.3.2"
+        "id": "interface-definition",
+        "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#interface-definition",
+        "title": "Interface definition",
+        "number": "3.1"
       },
       "definedIn": "pre"
     },
     {
-      "id": "concept-websocket-url",
-      "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#concept-websocket-url",
+      "id": "dom-websocket-websocket-url-protocols-url",
+      "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#dom-websocket-websocket-url-protocols-url",
       "linkingText": [
         "url"
       ],
       "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "WebSocket/WebSocket(url, protocols)",
+        "WebSocket/constructor(url, protocols)",
+        "WebSocket/WebSocket(url)",
+        "WebSocket/constructor(url)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-definition",
+        "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#interface-definition",
+        "title": "Interface definition",
+        "number": "3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-websocket-websocket-url-protocols-protocols",
+      "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#dom-websocket-websocket-url-protocols-protocols",
+      "linkingText": [
+        "protocols"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "WebSocket/WebSocket(url, protocols)",
+        "WebSocket/constructor(url, protocols)",
+        "WebSocket/WebSocket(url)",
+        "WebSocket/constructor(url)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-definition",
+        "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#interface-definition",
+        "title": "Interface definition",
+        "number": "3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-websocket-close-code-reason-code",
+      "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#dom-websocket-close-code-reason-code",
+      "linkingText": [
+        "code"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "WebSocket/close(code, reason)",
+        "WebSocket/close(code)",
+        "WebSocket/close()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-definition",
+        "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#interface-definition",
+        "title": "Interface definition",
+        "number": "3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-websocket-close-code-reason-reason",
+      "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#dom-websocket-close-code-reason-reason",
+      "linkingText": [
+        "reason"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "WebSocket/close(code, reason)",
+        "WebSocket/close(code)",
+        "WebSocket/close()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-definition",
+        "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#interface-definition",
+        "title": "Interface definition",
+        "number": "3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-websocket-send-data-data",
+      "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#dom-websocket-send-data-data",
+      "linkingText": [
+        "data"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "WebSocket/send(data)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-definition",
+        "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#interface-definition",
+        "title": "Interface definition",
+        "number": "3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "websocket-internal-url",
+      "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#websocket-internal-url",
+      "linkingText": [
+        "internal-url"
+      ],
+      "localLinkingText": [],
       "type": "dfn",
-      "for": [],
+      "for": [
+        "WebSocket"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "the-websocket-interface",
-        "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#the-websocket-interface",
-        "title": "The WebSocket interface",
-        "number": "9.3.2"
+        "id": "interface-definition",
+        "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#interface-definition",
+        "title": "Interface definition",
+        "number": "3.1"
       },
       "definedIn": "prose"
     },
     {
-      "id": "dom-websocket",
-      "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#dom-websocket",
+      "id": "dom-websocket-websocket",
+      "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#dom-websocket-websocket",
       "linkingText": [
-        "WebSocket(url, protocols)"
+        "WebSocket(url, protocols)",
+        "constructor(url, protocols)",
+        "WebSocket(url)",
+        "constructor(url)"
       ],
       "localLinkingText": [],
       "type": "constructor",
@@ -93910,10 +94068,10 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "the-websocket-interface",
-        "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#the-websocket-interface",
-        "title": "The WebSocket interface",
-        "number": "9.3.2"
+        "id": "interface-definition",
+        "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#interface-definition",
+        "title": "Interface definition",
+        "number": "3.1"
       },
       "definedIn": "prose"
     },
@@ -93931,10 +94089,10 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "the-websocket-interface",
-        "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#the-websocket-interface",
-        "title": "The WebSocket interface",
-        "number": "9.3.2"
+        "id": "interface-definition",
+        "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#interface-definition",
+        "title": "Interface definition",
+        "number": "3.1"
       },
       "definedIn": "prose"
     },
@@ -93952,10 +94110,10 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "the-websocket-interface",
-        "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#the-websocket-interface",
-        "title": "The WebSocket interface",
-        "number": "9.3.2"
+        "id": "interface-definition",
+        "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#interface-definition",
+        "title": "Interface definition",
+        "number": "3.1"
       },
       "definedIn": "prose"
     },
@@ -93973,10 +94131,10 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "the-websocket-interface",
-        "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#the-websocket-interface",
-        "title": "The WebSocket interface",
-        "number": "9.3.2"
+        "id": "interface-definition",
+        "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#interface-definition",
+        "title": "Interface definition",
+        "number": "3.1"
       },
       "definedIn": "dt"
     },
@@ -93994,10 +94152,10 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "the-websocket-interface",
-        "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#the-websocket-interface",
-        "title": "The WebSocket interface",
-        "number": "9.3.2"
+        "id": "interface-definition",
+        "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#interface-definition",
+        "title": "Interface definition",
+        "number": "3.1"
       },
       "definedIn": "dt"
     },
@@ -94015,10 +94173,10 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "the-websocket-interface",
-        "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#the-websocket-interface",
-        "title": "The WebSocket interface",
-        "number": "9.3.2"
+        "id": "interface-definition",
+        "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#interface-definition",
+        "title": "Interface definition",
+        "number": "3.1"
       },
       "definedIn": "dt"
     },
@@ -94036,10 +94194,10 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "the-websocket-interface",
-        "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#the-websocket-interface",
-        "title": "The WebSocket interface",
-        "number": "9.3.2"
+        "id": "interface-definition",
+        "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#interface-definition",
+        "title": "Interface definition",
+        "number": "3.1"
       },
       "definedIn": "dt"
     },
@@ -94057,10 +94215,10 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "the-websocket-interface",
-        "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#the-websocket-interface",
-        "title": "The WebSocket interface",
-        "number": "9.3.2"
+        "id": "interface-definition",
+        "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#interface-definition",
+        "title": "Interface definition",
+        "number": "3.1"
       },
       "definedIn": "prose"
     },
@@ -94078,10 +94236,10 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "the-websocket-interface",
-        "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#the-websocket-interface",
-        "title": "The WebSocket interface",
-        "number": "9.3.2"
+        "id": "interface-definition",
+        "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#interface-definition",
+        "title": "Interface definition",
+        "number": "3.1"
       },
       "definedIn": "prose"
     },
@@ -94089,7 +94247,9 @@
       "id": "dom-websocket-close",
       "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#dom-websocket-close",
       "linkingText": [
-        "close(code, reason)"
+        "close(code, reason)",
+        "close(code)",
+        "close()"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -94099,10 +94259,10 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "the-websocket-interface",
-        "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#the-websocket-interface",
-        "title": "The WebSocket interface",
-        "number": "9.3.2"
+        "id": "interface-definition",
+        "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#interface-definition",
+        "title": "Interface definition",
+        "number": "3.1"
       },
       "definedIn": "prose"
     },
@@ -94120,10 +94280,10 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "the-websocket-interface",
-        "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#the-websocket-interface",
-        "title": "The WebSocket interface",
-        "number": "9.3.2"
+        "id": "interface-definition",
+        "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#interface-definition",
+        "title": "Interface definition",
+        "number": "3.1"
       },
       "definedIn": "prose"
     },
@@ -94141,10 +94301,10 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "the-websocket-interface",
-        "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#the-websocket-interface",
-        "title": "The WebSocket interface",
-        "number": "9.3.2"
+        "id": "interface-definition",
+        "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#interface-definition",
+        "title": "Interface definition",
+        "number": "3.1"
       },
       "definedIn": "prose"
     },
@@ -94162,16 +94322,16 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "the-websocket-interface",
-        "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#the-websocket-interface",
-        "title": "The WebSocket interface",
-        "number": "9.3.2"
+        "id": "interface-definition",
+        "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#interface-definition",
+        "title": "Interface definition",
+        "number": "3.1"
       },
       "definedIn": "prose"
     },
     {
-      "id": "handler-websocket-onopen",
-      "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#handler-websocket-onopen",
+      "id": "dom-websocket-onopen",
+      "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#dom-websocket-onopen",
       "linkingText": [
         "onopen"
       ],
@@ -94183,16 +94343,16 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "the-websocket-interface",
-        "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#the-websocket-interface",
-        "title": "The WebSocket interface",
-        "number": "9.3.2"
+        "id": "interface-definition",
+        "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#interface-definition",
+        "title": "Interface definition",
+        "number": "3.1"
       },
       "definedIn": "table"
     },
     {
-      "id": "handler-websocket-onmessage",
-      "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#handler-websocket-onmessage",
+      "id": "dom-websocket-onmessage",
+      "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#dom-websocket-onmessage",
       "linkingText": [
         "onmessage"
       ],
@@ -94204,16 +94364,16 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "the-websocket-interface",
-        "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#the-websocket-interface",
-        "title": "The WebSocket interface",
-        "number": "9.3.2"
+        "id": "interface-definition",
+        "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#interface-definition",
+        "title": "Interface definition",
+        "number": "3.1"
       },
       "definedIn": "table"
     },
     {
-      "id": "handler-websocket-onerror",
-      "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#handler-websocket-onerror",
+      "id": "dom-websocket-onerror",
+      "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#dom-websocket-onerror",
       "linkingText": [
         "onerror"
       ],
@@ -94225,16 +94385,16 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "the-websocket-interface",
-        "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#the-websocket-interface",
-        "title": "The WebSocket interface",
-        "number": "9.3.2"
+        "id": "interface-definition",
+        "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#interface-definition",
+        "title": "Interface definition",
+        "number": "3.1"
       },
       "definedIn": "table"
     },
     {
-      "id": "handler-websocket-onclose",
-      "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#handler-websocket-onclose",
+      "id": "dom-websocket-onclose",
+      "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#dom-websocket-onclose",
       "linkingText": [
         "onclose"
       ],
@@ -94246,10 +94406,10 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "the-websocket-interface",
-        "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#the-websocket-interface",
-        "title": "The WebSocket interface",
-        "number": "9.3.2"
+        "id": "interface-definition",
+        "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#interface-definition",
+        "title": "Interface definition",
+        "number": "3.1"
       },
       "definedIn": "table"
     },
@@ -94257,7 +94417,7 @@
       "id": "dom-binarytype-blob",
       "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#dom-binarytype-blob",
       "linkingText": [
-        "blob"
+        "\"blob\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -94270,7 +94430,7 @@
         "id": "feedback-from-the-protocol",
         "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#feedback-from-the-protocol",
         "title": "Feedback from the protocol",
-        "number": "9.3.3"
+        "number": "4"
       },
       "definedIn": "dt"
     },
@@ -94278,7 +94438,7 @@
       "id": "dom-binarytype-arraybuffer",
       "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#dom-binarytype-arraybuffer",
       "linkingText": [
-        "arraybuffer"
+        "\"arraybuffer\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -94291,13 +94451,13 @@
         "id": "feedback-from-the-protocol",
         "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#feedback-from-the-protocol",
         "title": "Feedback from the protocol",
-        "number": "9.3.3"
+        "number": "4"
       },
       "definedIn": "dt"
     },
     {
-      "id": "concept-websocket-close-fail",
-      "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#concept-websocket-close-fail",
+      "id": "flagged-as-full",
+      "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#flagged-as-full",
       "linkingText": [
         "flagged as full"
       ],
@@ -94310,7 +94470,7 @@
         "id": "feedback-from-the-protocol",
         "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#feedback-from-the-protocol",
         "title": "Feedback from the protocol",
-        "number": "9.3.3"
+        "number": "4"
       },
       "definedIn": "prose"
     },
@@ -94323,13 +94483,13 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "feedback-from-the-protocol",
         "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#feedback-from-the-protocol",
         "title": "Feedback from the protocol",
-        "number": "9.3.3"
+        "number": "4"
       },
       "definedIn": "prose"
     },
@@ -94348,13 +94508,85 @@
         "id": "the-closeevent-interface",
         "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#the-closeevent-interface",
         "title": "The CloseEvent interface",
-        "number": "9.3.5"
+        "number": "6"
       },
       "definedIn": "pre"
     },
     {
-      "id": "closeeventinit",
-      "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#closeeventinit",
+      "id": "dom-closeevent-closeevent",
+      "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#dom-closeevent-closeevent",
+      "linkingText": [
+        "CloseEvent(type, eventInitDict)",
+        "constructor(type, eventInitDict)",
+        "CloseEvent(type)",
+        "constructor(type)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "CloseEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-closeevent-interface",
+        "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#the-closeevent-interface",
+        "title": "The CloseEvent interface",
+        "number": "6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-closeevent-closeevent-type-eventinitdict-type",
+      "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#dom-closeevent-closeevent-type-eventinitdict-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CloseEvent/CloseEvent(type, eventInitDict)",
+        "CloseEvent/constructor(type, eventInitDict)",
+        "CloseEvent/CloseEvent(type)",
+        "CloseEvent/constructor(type)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-closeevent-interface",
+        "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#the-closeevent-interface",
+        "title": "The CloseEvent interface",
+        "number": "6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-closeevent-closeevent-type-eventinitdict-eventinitdict",
+      "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#dom-closeevent-closeevent-type-eventinitdict-eventinitdict",
+      "linkingText": [
+        "eventInitDict"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CloseEvent/CloseEvent(type, eventInitDict)",
+        "CloseEvent/constructor(type, eventInitDict)",
+        "CloseEvent/CloseEvent(type)",
+        "CloseEvent/constructor(type)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-closeevent-interface",
+        "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#the-closeevent-interface",
+        "title": "The CloseEvent interface",
+        "number": "6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-closeeventinit",
+      "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#dictdef-closeeventinit",
       "linkingText": [
         "CloseEventInit"
       ],
@@ -94367,7 +94599,70 @@
         "id": "the-closeevent-interface",
         "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#the-closeevent-interface",
         "title": "The CloseEvent interface",
-        "number": "9.3.5"
+        "number": "6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-closeeventinit-wasclean",
+      "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#dom-closeeventinit-wasclean",
+      "linkingText": [
+        "wasClean"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "CloseEventInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-closeevent-interface",
+        "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#the-closeevent-interface",
+        "title": "The CloseEvent interface",
+        "number": "6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-closeeventinit-code",
+      "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#dom-closeeventinit-code",
+      "linkingText": [
+        "code"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "CloseEventInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-closeevent-interface",
+        "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#the-closeevent-interface",
+        "title": "The CloseEvent interface",
+        "number": "6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-closeeventinit-reason",
+      "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#dom-closeeventinit-reason",
+      "linkingText": [
+        "reason"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "CloseEventInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-closeevent-interface",
+        "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#the-closeevent-interface",
+        "title": "The CloseEvent interface",
+        "number": "6"
       },
       "definedIn": "pre"
     },
@@ -94388,7 +94683,7 @@
         "id": "the-closeevent-interface",
         "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#the-closeevent-interface",
         "title": "The CloseEvent interface",
-        "number": "9.3.5"
+        "number": "6"
       },
       "definedIn": "prose"
     },
@@ -94409,7 +94704,7 @@
         "id": "the-closeevent-interface",
         "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#the-closeevent-interface",
         "title": "The CloseEvent interface",
-        "number": "9.3.5"
+        "number": "6"
       },
       "definedIn": "prose"
     },
@@ -94430,7 +94725,7 @@
         "id": "the-closeevent-interface",
         "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#the-closeevent-interface",
         "title": "The CloseEvent interface",
-        "number": "9.3.5"
+        "number": "6"
       },
       "definedIn": "prose"
     },
@@ -94443,13 +94738,13 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
-        "id": "garbage-collection-2",
-        "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#garbage-collection-2",
+        "id": "garbage-collection",
+        "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#garbage-collection",
         "title": "Garbage collection",
-        "number": "9.3.6"
+        "number": "7"
       },
       "definedIn": "prose"
     },

@@ -1,6 +1,7 @@
 // Source: WebGPU (https://www.w3.org/TR/webgpu/)
 [Exposed=(Window, DedicatedWorker), SecureContext]
 interface GPUExternalTexture {
+    readonly attribute boolean expired;
 };
 
 // Source: WebGPU (https://www.w3.org/TR/webgpu/)
