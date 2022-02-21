@@ -38,7 +38,7 @@
         "extAttrs": []
       },
       "ComputePressureUpdateCallback": {
-        "fragment": "callback ComputePressureUpdateCallback = undefined (\n  sequence<ComputePressureEntry> entries,\n  ComputePressureObserver observer\n);",
+        "fragment": "callback ComputePressureUpdateCallback = undefined (\n  sequence<ComputePressureRecord> changes,\n  ComputePressureObserver observer\n);",
         "type": "callback",
         "name": "ComputePressureUpdateCallback",
         "idlType": {
@@ -52,7 +52,7 @@
         "arguments": [
           {
             "type": "argument",
-            "name": "entries",
+            "name": "changes",
             "extAttrs": [],
             "idlType": {
               "type": "argument-type",
@@ -67,7 +67,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "ComputePressureEntry"
+                  "idlType": "ComputePressureRecord"
                 }
               ]
             },
@@ -107,7 +107,7 @@
         "extAttrs": []
       },
       "ComputePressureObserver": {
-        "fragment": "[Exposed=Window]\ninterface ComputePressureObserver {\n  constructor(ComputePressureUpdateCallback callback);\n\n  undefined observe(ComputePressureTarget target, optional ComputePressureObserverOptions options = {});\n  undefined unobserve(ComputePressureTarget target);\n  undefined disconnect();\n  sequence<ComputePressureEntry> takeRecords();\n\n  [SameObject] static readonly attribute FrozenArray<DOMString> supportedTargetTypes;\n};",
+        "fragment": "[Exposed=Window]\ninterface ComputePressureObserver {\n  constructor(ComputePressureUpdateCallback callback);\n\n  undefined observe(ComputePressureTarget target, optional ComputePressureObserverOptions options = {});\n  undefined unobserve(ComputePressureTarget target);\n  undefined disconnect();\n  sequence<ComputePressureRecord> takeRecords();\n\n  [SameObject] static readonly attribute FrozenArray<DOMString> supportedTargetTypes;\n};",
         "type": "interface",
         "name": "ComputePressureObserver",
         "inheritance": null,
@@ -247,7 +247,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "ComputePressureEntry"
+                  "idlType": "ComputePressureRecord"
                 }
               ]
             },
@@ -300,10 +300,10 @@
         ],
         "partial": false
       },
-      "ComputePressureEntry": {
-        "fragment": "dictionary ComputePressureEntry {\n  PressureState state;\n  ComputePressureObserverOptions options;\n};",
+      "ComputePressureRecord": {
+        "fragment": "dictionary ComputePressureRecord {\n  PressureState state;\n  ComputePressureObserverOptions options;\n};",
         "type": "dictionary",
-        "name": "ComputePressureEntry",
+        "name": "ComputePressureRecord",
         "inheritance": null,
         "members": [
           {
@@ -362,9 +362,9 @@
         "ComputePressureUpdateCallback",
         "ComputePressureTarget",
         "ComputePressureObserverOptions",
-        "ComputePressureEntry"
+        "ComputePressureRecord"
       ],
-      "ComputePressureEntry": [
+      "ComputePressureRecord": [
         "PressureState",
         "ComputePressureObserverOptions"
       ],

@@ -2,6 +2,6 @@
 [Exposed=(Window,Worker)]
 interface PermissionStatus : EventTarget {
   readonly attribute PermissionState state;
-  readonly attribute PermissionName name;
+  readonly attribute DOMString name;
   attribute EventHandler onchange;
 };

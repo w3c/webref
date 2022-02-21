@@ -89,7 +89,7 @@
         "partial": false
       },
       "PermissionDescriptor": {
-        "fragment": "dictionary PermissionDescriptor {\n  required PermissionName name;\n};",
+        "fragment": "dictionary PermissionDescriptor {\n  required DOMString name;\n};",
         "type": "dictionary",
         "name": "PermissionDescriptor",
         "inheritance": null,
@@ -104,7 +104,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "PermissionName"
+              "idlType": "DOMString"
             },
             "default": null,
             "required": true
@@ -114,7 +114,7 @@
         "partial": false
       },
       "PermissionStatus": {
-        "fragment": "[Exposed=(Window,Worker)]\ninterface PermissionStatus : EventTarget {\n  readonly attribute PermissionState state;\n  readonly attribute PermissionName name;\n  attribute EventHandler onchange;\n};",
+        "fragment": "[Exposed=(Window,Worker)]\ninterface PermissionStatus : EventTarget {\n  readonly attribute PermissionState state;\n  readonly attribute DOMString name;\n  attribute EventHandler onchange;\n};",
         "type": "interface",
         "name": "PermissionStatus",
         "inheritance": "EventTarget",
@@ -143,7 +143,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "PermissionName"
+              "idlType": "DOMString"
             },
             "extAttrs": [],
             "special": "",
@@ -205,89 +205,63 @@
         ],
         "extAttrs": []
       },
-      "PermissionName": {
-        "fragment": "enum PermissionName {\n  \"accelerometer\",\n  \"ambient-light-sensor\",\n  \"background-fetch\",\n  \"background-sync\",\n  \"bluetooth\",\n  \"camera\",\n  \"display-capture\",\n  \"geolocation\",\n  \"gyroscope\",\n  \"magnetometer\",\n  \"microphone\",\n  \"midi\",\n  \"nfc\",\n  \"notifications\",\n  \"persistent-storage\",\n  \"push\",\n  \"screen-wake-lock\",\n  \"speaker-selection\",\n  \"xr-spatial-tracking\",\n};",
-        "type": "enum",
-        "name": "PermissionName",
-        "values": [
+      "PermissionSetParameters": {
+        "fragment": "dictionary PermissionSetParameters {\n  required PermissionDescriptor descriptor;\n  required PermissionState state;\n  boolean oneRealm = false;\n};",
+        "type": "dictionary",
+        "name": "PermissionSetParameters",
+        "inheritance": null,
+        "members": [
           {
-            "type": "enum-value",
-            "value": "accelerometer"
+            "type": "field",
+            "name": "descriptor",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "PermissionDescriptor"
+            },
+            "default": null,
+            "required": true
           },
           {
-            "type": "enum-value",
-            "value": "ambient-light-sensor"
+            "type": "field",
+            "name": "state",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "PermissionState"
+            },
+            "default": null,
+            "required": true
           },
           {
-            "type": "enum-value",
-            "value": "background-fetch"
-          },
-          {
-            "type": "enum-value",
-            "value": "background-sync"
-          },
-          {
-            "type": "enum-value",
-            "value": "bluetooth"
-          },
-          {
-            "type": "enum-value",
-            "value": "camera"
-          },
-          {
-            "type": "enum-value",
-            "value": "display-capture"
-          },
-          {
-            "type": "enum-value",
-            "value": "geolocation"
-          },
-          {
-            "type": "enum-value",
-            "value": "gyroscope"
-          },
-          {
-            "type": "enum-value",
-            "value": "magnetometer"
-          },
-          {
-            "type": "enum-value",
-            "value": "microphone"
-          },
-          {
-            "type": "enum-value",
-            "value": "midi"
-          },
-          {
-            "type": "enum-value",
-            "value": "nfc"
-          },
-          {
-            "type": "enum-value",
-            "value": "notifications"
-          },
-          {
-            "type": "enum-value",
-            "value": "persistent-storage"
-          },
-          {
-            "type": "enum-value",
-            "value": "push"
-          },
-          {
-            "type": "enum-value",
-            "value": "screen-wake-lock"
-          },
-          {
-            "type": "enum-value",
-            "value": "speaker-selection"
-          },
-          {
-            "type": "enum-value",
-            "value": "xr-spatial-tracking"
+            "type": "field",
+            "name": "oneRealm",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "partial": false
       }
     },
     "idlExtendedNames": {
@@ -411,14 +385,15 @@
       "Permissions": [
         "PermissionStatus"
       ],
-      "PermissionDescriptor": [
-        "PermissionName"
-      ],
+      "PermissionDescriptor": [],
       "PermissionStatus": [
         "EventTarget",
         "PermissionState",
-        "PermissionName",
         "EventHandler"
+      ],
+      "PermissionSetParameters": [
+        "PermissionDescriptor",
+        "PermissionState"
       ]
     },
     "externalDependencies": [
