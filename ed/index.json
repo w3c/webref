@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2022-02-21T06:38:05.674Z",
+  "date": "2022-02-21T12:40:56.714Z",
   "options": {
     "fallback": "webref-fallback/ed/index.json",
     "output": "report",
@@ -21,7 +21,7 @@
   },
   "stats": {
     "crawled": 462,
-    "errors": 0
+    "errors": 1
   },
   "crawler": "reffy-6.4.3",
   "results": [
@@ -168,9 +168,9 @@
       ],
       "crawled": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html",
       "crawlCacheInfo": {
-        "lastModified": "Sun, 20 Feb 2022 13:33:04 GMT"
+        "lastModified": "Mon, 21 Feb 2022 09:46:52 GMT"
       },
-      "date": "20 February 2022",
+      "date": "21 February 2022",
       "links": "links/rfc6265bis.json",
       "refs": "refs/rfc6265bis.json",
       "headings": "headings/rfc6265bis.json",
@@ -3293,10 +3293,10 @@
       ],
       "crawled": "https://url.spec.whatwg.org/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 11 Feb 2022 18:19:28 GMT"
+        "lastModified": "Mon, 21 Feb 2022 10:39:50 GMT"
       },
       "generator": "bikeshed",
-      "date": "11 February 2022",
+      "date": "21 February 2022",
       "links": "links/url.json",
       "refs": "refs/url.json",
       "idl": "idl/url.idl",
@@ -17022,7 +17022,8 @@
       "css": "css/CSS.json",
       "dfns": "dfns/CSS22.json",
       "headings": "headings/CSS22.json",
-      "ids": "ids/CSS22.json"
+      "ids": "ids/CSS22.json",
+      "error": "Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers' Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers'\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:483:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 324)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/css3-exclusions/",
@@ -24271,10 +24272,10 @@
       ],
       "crawled": "https://w3c.github.io/webrtc-pc/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 08 Feb 2022 07:39:22 GMT"
+        "lastModified": "Mon, 21 Feb 2022 08:08:55 GMT"
       },
       "generator": "respec",
-      "date": "08 February 2022",
+      "date": "21 February 2022",
       "links": "links/webrtc.json",
       "refs": "refs/webrtc.json",
       "idl": "idl/webrtc.idl",
@@ -25087,10 +25088,10 @@
       ],
       "crawled": "https://xhr.spec.whatwg.org/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 11 Feb 2022 12:48:38 GMT"
+        "lastModified": "Mon, 21 Feb 2022 10:39:25 GMT"
       },
       "generator": "bikeshed",
-      "date": "11 February 2022",
+      "date": "21 February 2022",
       "links": "links/xhr.json",
       "refs": "refs/xhr.json",
       "idl": "idl/xhr.idl",
