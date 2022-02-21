@@ -6,6 +6,12 @@
   "idlparsed": {
     "jsNames": {
       "constructors": {
+        "DedicatedWorker": [
+          "ComputePressureObserver"
+        ],
+        "SharedWorker": [
+          "ComputePressureObserver"
+        ],
         "Window": [
           "ComputePressureObserver"
         ]
@@ -107,7 +113,7 @@
         "extAttrs": []
       },
       "ComputePressureObserver": {
-        "fragment": "[Exposed=Window]\ninterface ComputePressureObserver {\n  constructor(ComputePressureUpdateCallback callback);\n\n  undefined observe(ComputePressureTarget target, optional ComputePressureObserverOptions options = {});\n  undefined unobserve(ComputePressureTarget target);\n  undefined disconnect();\n  sequence<ComputePressureRecord> takeRecords();\n\n  [SameObject] static readonly attribute FrozenArray<DOMString> supportedTargetTypes;\n};",
+        "fragment": "[Exposed=(DedicatedWorker,SharedWorker,Window), SecureContext]\ninterface ComputePressureObserver {\n  constructor(ComputePressureUpdateCallback callback);\n\n  undefined observe(ComputePressureTarget target, optional ComputePressureObserverOptions options = {});\n  undefined unobserve(ComputePressureTarget target);\n  undefined disconnect();\n  sequence<ComputePressureRecord> takeRecords();\n\n  [SameObject] static readonly attribute FrozenArray<DOMString> supportedTargetTypes;\n};",
         "type": "interface",
         "name": "ComputePressureObserver",
         "inheritance": null,
@@ -292,9 +298,25 @@
             "type": "extended-attribute",
             "name": "Exposed",
             "rhs": {
-              "type": "identifier",
-              "value": "Window"
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "DedicatedWorker"
+                },
+                {
+                  "value": "SharedWorker"
+                },
+                {
+                  "value": "Window"
+                }
+              ]
             },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
             "arguments": []
           }
         ],
@@ -353,6 +375,12 @@
     "idlExtendedNames": {},
     "globals": {},
     "exposed": {
+      "DedicatedWorker": [
+        "ComputePressureObserver"
+      ],
+      "SharedWorker": [
+        "ComputePressureObserver"
+      ],
       "Window": [
         "ComputePressureObserver"
       ]
