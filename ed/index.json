@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2022-02-22T12:43:25.806Z",
+  "date": "2022-02-22T18:37:16.036Z",
   "options": {
     "fallback": "webref-fallback/ed/index.json",
     "output": "report",
@@ -21,7 +21,7 @@
   },
   "stats": {
     "crawled": 462,
-    "errors": 0
+    "errors": 1
   },
   "crawler": "reffy-6.4.3",
   "results": [
@@ -168,7 +168,7 @@
       ],
       "crawled": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 22 Feb 2022 00:34:46 GMT"
+        "lastModified": "Tue, 22 Feb 2022 15:24:45 GMT"
       },
       "date": "22 February 2022",
       "links": "links/rfc6265bis.json",
@@ -1446,9 +1446,9 @@
       ],
       "crawled": "https://html.spec.whatwg.org/multipage/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 18 Feb 2022 17:11:36 GMT"
+        "lastModified": "Tue, 22 Feb 2022 17:07:09 GMT"
       },
-      "date": "18 February 2022",
+      "date": "22 February 2022",
       "links": "links/html.json",
       "refs": "refs/html.json",
       "idl": "idl/html.idl",
@@ -17022,7 +17022,8 @@
       "css": "css/CSS.json",
       "dfns": "dfns/CSS22.json",
       "headings": "headings/CSS22.json",
-      "ids": "ids/CSS22.json"
+      "ids": "ids/CSS22.json",
+      "error": "Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers' Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers'\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:483:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 324)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/css3-exclusions/",
@@ -24153,10 +24154,10 @@
       ],
       "crawled": "https://w3c.github.io/webrtc-stats/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 17 Feb 2022 21:48:45 GMT"
+        "lastModified": "Tue, 22 Feb 2022 14:06:30 GMT"
       },
       "generator": "respec",
-      "date": "17 February 2022",
+      "date": "22 February 2022",
       "links": "links/webrtc-stats.json",
       "refs": "refs/webrtc-stats.json",
       "idl": "idl/webrtc-stats.idl",
