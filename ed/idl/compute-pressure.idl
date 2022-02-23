@@ -22,6 +22,8 @@ interface ComputePressureObserver {
   sequence<ComputePressureRecord> takeRecords();
 
   [SameObject] static readonly attribute FrozenArray<DOMString> supportedTargetTypes;
+
+  [Exposed=Window] static Promise<PermissionState> requestPermission();
 };
 
 dictionary ComputePressureRecord {

@@ -113,7 +113,7 @@
         "extAttrs": []
       },
       "ComputePressureObserver": {
-        "fragment": "[Exposed=(DedicatedWorker,SharedWorker,Window), SecureContext]\ninterface ComputePressureObserver {\n  constructor(ComputePressureUpdateCallback callback);\n\n  undefined observe(ComputePressureTarget target, optional ComputePressureObserverOptions options = {});\n  undefined unobserve(ComputePressureTarget target);\n  undefined disconnect();\n  sequence<ComputePressureRecord> takeRecords();\n\n  [SameObject] static readonly attribute FrozenArray<DOMString> supportedTargetTypes;\n};",
+        "fragment": "[Exposed=(DedicatedWorker,SharedWorker,Window), SecureContext]\ninterface ComputePressureObserver {\n  constructor(ComputePressureUpdateCallback callback);\n\n  undefined observe(ComputePressureTarget target, optional ComputePressureObserverOptions options = {});\n  undefined unobserve(ComputePressureTarget target);\n  undefined disconnect();\n  sequence<ComputePressureRecord> takeRecords();\n\n  [SameObject] static readonly attribute FrozenArray<DOMString> supportedTargetTypes;\n\n  [Exposed=Window] static Promise<PermissionState> requestPermission();\n};",
         "type": "interface",
         "name": "ComputePressureObserver",
         "inheritance": null,
@@ -291,6 +291,40 @@
             ],
             "special": "static",
             "readonly": true
+          },
+          {
+            "type": "operation",
+            "name": "requestPermission",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "PermissionState"
+                }
+              ]
+            },
+            "arguments": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "Exposed",
+                "rhs": {
+                  "type": "identifier",
+                  "value": "Window"
+                },
+                "arguments": []
+              }
+            ],
+            "special": "static"
           }
         ],
         "extAttrs": [
@@ -390,7 +424,8 @@
         "ComputePressureUpdateCallback",
         "ComputePressureTarget",
         "ComputePressureObserverOptions",
-        "ComputePressureRecord"
+        "ComputePressureRecord",
+        "PermissionState"
       ],
       "ComputePressureRecord": [
         "PressureState",
@@ -398,7 +433,9 @@
       ],
       "ComputePressureObserverOptions": []
     },
-    "externalDependencies": [],
+    "externalDependencies": [
+      "PermissionState"
+    ],
     "hasObsoleteIdl": false
   }
 }
