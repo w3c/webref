@@ -7,7 +7,7 @@
       "url": "https://www.w3.org/TR/webaudio/"
     },
     "fragment": "[Exposed=Window]\ninterface AudioParam {\n  attribute float value;\n  attribute AutomationRate automationRate;\n  readonly attribute float defaultValue;\n  readonly attribute float minValue;\n  readonly attribute float maxValue;\n  AudioParam setValueAtTime (float value, double startTime);\n  AudioParam linearRampToValueAtTime (float value, double endTime);\n  AudioParam exponentialRampToValueAtTime (float value, double endTime);\n  AudioParam setTargetAtTime (float target, double startTime, float timeConstant);\n  AudioParam setValueCurveAtTime (sequence<float> values,\n                                  double startTime,\n                                  double duration);\n  AudioParam cancelScheduledValues (double cancelTime);\n  AudioParam cancelAndHoldAtTime (double cancelTime);\n};",
-    "href": "https://webaudio.github.io/web-audio-api/#audioparam"
+    "href": "https://webaudio.github.io/web-audio-api/#AudioParam"
   },
   "extended": [],
   "inheritance": null,
@@ -15,8 +15,8 @@
   "dfns": {
     "https://www.w3.org/TR/webaudio/": [
       {
-        "id": "audioparam",
-        "href": "https://webaudio.github.io/web-audio-api/#audioparam",
+        "id": "AudioParam",
+        "href": "https://webaudio.github.io/web-audio-api/#AudioParam",
         "linkingText": [
           "AudioParam"
         ],
@@ -31,7 +31,7 @@
           "title": "The AudioParam Interface",
           "number": "1.6"
         },
-        "definedIn": "pre"
+        "definedIn": "heading"
       },
       {
         "id": "dom-audioparam-value",

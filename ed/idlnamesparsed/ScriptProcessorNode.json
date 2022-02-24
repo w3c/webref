@@ -7,7 +7,7 @@
       "url": "https://www.w3.org/TR/webaudio/"
     },
     "fragment": "[Exposed=Window]\ninterface ScriptProcessorNode : AudioNode {\n  attribute EventHandler onaudioprocess;\n  readonly attribute long bufferSize;\n};",
-    "href": "https://webaudio.github.io/web-audio-api/#scriptprocessornode"
+    "href": "https://webaudio.github.io/web-audio-api/#ScriptProcessorNode"
   },
   "extended": [],
   "inheritance": {
@@ -19,7 +19,7 @@
         "url": "https://www.w3.org/TR/webaudio/"
       },
       "fragment": "[Exposed=Window]\ninterface AudioNode : EventTarget {\n  AudioNode connect (AudioNode destinationNode,\n                     optional unsigned long output = 0,\n                     optional unsigned long input = 0);\n  undefined connect (AudioParam destinationParam, optional unsigned long output = 0);\n  undefined disconnect ();\n  undefined disconnect (unsigned long output);\n  undefined disconnect (AudioNode destinationNode);\n  undefined disconnect (AudioNode destinationNode, unsigned long output);\n  undefined disconnect (AudioNode destinationNode,\n                        unsigned long output,\n                        unsigned long input);\n  undefined disconnect (AudioParam destinationParam);\n  undefined disconnect (AudioParam destinationParam, unsigned long output);\n  readonly attribute BaseAudioContext context;\n  readonly attribute unsigned long numberOfInputs;\n  readonly attribute unsigned long numberOfOutputs;\n  attribute unsigned long channelCount;\n  attribute ChannelCountMode channelCountMode;\n  attribute ChannelInterpretation channelInterpretation;\n};",
-      "href": "https://webaudio.github.io/web-audio-api/#audionode"
+      "href": "https://webaudio.github.io/web-audio-api/#AudioNode"
     },
     "extended": [],
     "inheritance": {
@@ -43,8 +43,8 @@
   "dfns": {
     "https://www.w3.org/TR/webaudio/": [
       {
-        "id": "scriptprocessornode",
-        "href": "https://webaudio.github.io/web-audio-api/#scriptprocessornode",
+        "id": "ScriptProcessorNode",
+        "href": "https://webaudio.github.io/web-audio-api/#ScriptProcessorNode",
         "linkingText": [
           "ScriptProcessorNode"
         ],
@@ -59,7 +59,7 @@
           "title": "The ScriptProcessorNode Interface - DEPRECATED",
           "number": "1.29"
         },
-        "definedIn": "pre"
+        "definedIn": "heading"
       },
       {
         "id": "dom-scriptprocessornode-onaudioprocess",
@@ -104,8 +104,8 @@
         "definedIn": "dt"
       },
       {
-        "id": "audionode",
-        "href": "https://webaudio.github.io/web-audio-api/#audionode",
+        "id": "AudioNode",
+        "href": "https://webaudio.github.io/web-audio-api/#AudioNode",
         "linkingText": [
           "AudioNode"
         ],
@@ -120,7 +120,7 @@
           "title": "The AudioNode Interface",
           "number": "1.5"
         },
-        "definedIn": "pre"
+        "definedIn": "heading"
       },
       {
         "id": "dom-audionode-connect",

@@ -7,7 +7,7 @@
       "url": "https://www.w3.org/TR/webaudio/"
     },
     "fragment": "[Exposed=Window]\ninterface AudioBuffer {\n  constructor (AudioBufferOptions options);\n  readonly attribute float sampleRate;\n  readonly attribute unsigned long length;\n  readonly attribute double duration;\n  readonly attribute unsigned long numberOfChannels;\n  Float32Array getChannelData (unsigned long channel);\n  undefined copyFromChannel (Float32Array destination,\n                             unsigned long channelNumber,\n                             optional unsigned long bufferOffset = 0);\n  undefined copyToChannel (Float32Array source,\n                           unsigned long channelNumber,\n                           optional unsigned long bufferOffset = 0);\n};",
-    "href": "https://webaudio.github.io/web-audio-api/#audiobuffer"
+    "href": "https://webaudio.github.io/web-audio-api/#AudioBuffer"
   },
   "extended": [],
   "inheritance": null,
@@ -15,8 +15,8 @@
   "dfns": {
     "https://www.w3.org/TR/webaudio/": [
       {
-        "id": "audiobuffer",
-        "href": "https://webaudio.github.io/web-audio-api/#audiobuffer",
+        "id": "AudioBuffer",
+        "href": "https://webaudio.github.io/web-audio-api/#AudioBuffer",
         "linkingText": [
           "AudioBuffer"
         ],
@@ -31,7 +31,7 @@
           "title": "The AudioBuffer Interface",
           "number": "1.4"
         },
-        "definedIn": "pre"
+        "definedIn": "heading"
       },
       {
         "id": "dom-audiobuffer-audiobuffer",

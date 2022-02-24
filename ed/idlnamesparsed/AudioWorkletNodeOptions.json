@@ -7,7 +7,7 @@
       "url": "https://www.w3.org/TR/webaudio/"
     },
     "fragment": "dictionary AudioWorkletNodeOptions : AudioNodeOptions {\n  unsigned long numberOfInputs = 1;\n  unsigned long numberOfOutputs = 1;\n  sequence<unsigned long> outputChannelCount;\n  record<DOMString, double> parameterData;\n  object processorOptions;\n};",
-    "href": "https://webaudio.github.io/web-audio-api/#dictdef-audioworkletnodeoptions"
+    "href": "https://webaudio.github.io/web-audio-api/#AudioWorkletNodeOptions"
   },
   "extended": [],
   "inheritance": {
@@ -19,7 +19,7 @@
         "url": "https://www.w3.org/TR/webaudio/"
       },
       "fragment": "dictionary AudioNodeOptions {\n  unsigned long channelCount;\n  ChannelCountMode channelCountMode;\n  ChannelInterpretation channelInterpretation;\n};",
-      "href": "https://webaudio.github.io/web-audio-api/#dictdef-audionodeoptions"
+      "href": "https://webaudio.github.io/web-audio-api/#AudioNodeOptions"
     },
     "extended": [],
     "inheritance": null,
@@ -29,8 +29,8 @@
   "dfns": {
     "https://www.w3.org/TR/webaudio/": [
       {
-        "id": "dictdef-audioworkletnodeoptions",
-        "href": "https://webaudio.github.io/web-audio-api/#dictdef-audioworkletnodeoptions",
+        "id": "AudioWorkletNodeOptions",
+        "href": "https://webaudio.github.io/web-audio-api/#AudioWorkletNodeOptions",
         "linkingText": [
           "AudioWorkletNodeOptions"
         ],
@@ -45,7 +45,7 @@
           "title": "AudioWorkletNodeOptions",
           "number": "1.32.3.3"
         },
-        "definedIn": "pre"
+        "definedIn": "heading"
       },
       {
         "id": "dom-audioworkletnodeoptions-numberofinputs",
@@ -153,8 +153,8 @@
         "definedIn": "dt"
       },
       {
-        "id": "dictdef-audionodeoptions",
-        "href": "https://webaudio.github.io/web-audio-api/#dictdef-audionodeoptions",
+        "id": "AudioNodeOptions",
+        "href": "https://webaudio.github.io/web-audio-api/#AudioNodeOptions",
         "linkingText": [
           "AudioNodeOptions"
         ],
@@ -169,7 +169,7 @@
           "title": "AudioNodeOptions",
           "number": "1.5.6"
         },
-        "definedIn": "pre"
+        "definedIn": "heading"
       },
       {
         "id": "dom-audionodeoptions-channelcount",
