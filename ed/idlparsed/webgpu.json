@@ -3199,11 +3199,27 @@
         "extAttrs": []
       },
       "GPUExternalTexture": {
-        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUExternalTexture {\n};",
+        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUExternalTexture {\n    readonly attribute boolean expired;\n};",
         "type": "interface",
         "name": "GPUExternalTexture",
         "inheritance": null,
-        "members": [],
+        "members": [
+          {
+            "type": "attribute",
+            "name": "expired",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
         "extAttrs": [
           {
             "type": "extended-attribute",

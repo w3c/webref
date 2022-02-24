@@ -12,7 +12,7 @@ callback ComputePressureUpdateCallback = undefined (
 
 enum ComputePressureTarget { "cpu" };
 
-[Exposed=Window]
+[Exposed=(DedicatedWorker,SharedWorker,Window), SecureContext]
 interface ComputePressureObserver {
   constructor(ComputePressureUpdateCallback callback);
 
@@ -22,6 +22,8 @@ interface ComputePressureObserver {
   sequence<ComputePressureRecord> takeRecords();
 
   [SameObject] static readonly attribute FrozenArray<DOMString> supportedTargetTypes;
+
+  [Exposed=Window] static Promise<PermissionState> requestPermission();
 };
 
 dictionary ComputePressureRecord {

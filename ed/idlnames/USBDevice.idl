@@ -20,6 +20,7 @@ interface USBDevice {
   readonly attribute boolean opened;
   Promise<undefined> open();
   Promise<undefined> close();
+  Promise<undefined> forget();
   Promise<undefined> selectConfiguration(octet configurationValue);
   Promise<undefined> claimInterface(octet interfaceNumber);
   Promise<undefined> releaseInterface(octet interfaceNumber);

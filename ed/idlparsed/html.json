@@ -86,8 +86,6 @@
           "DOMParser",
           "MessageEvent",
           "EventSource",
-          "WebSocket",
-          "CloseEvent",
           "MessageChannel",
           "BroadcastChannel",
           "Worker",
@@ -106,8 +104,6 @@
           "OffscreenCanvas",
           "MessageEvent",
           "EventSource",
-          "WebSocket",
-          "CloseEvent",
           "MessageChannel",
           "BroadcastChannel"
         ],
@@ -16250,7 +16246,7 @@
         "partial": false
       },
       "CanvasCompositing": {
-        "fragment": "interface mixin CanvasCompositing {\n  // compositing\n  attribute unrestricted double globalAlpha; // (default 1.0)\n  attribute DOMString globalCompositeOperation; // (default source-over)\n};",
+        "fragment": "interface mixin CanvasCompositing {\n  // compositing\n  attribute unrestricted double globalAlpha; // (default 1.0)\n  attribute DOMString globalCompositeOperation; // (default \"source-over\")\n};",
         "type": "interface mixin",
         "name": "CanvasCompositing",
         "inheritance": null,
@@ -19427,7 +19423,7 @@
         "partial": false
       },
       "CanvasPath": {
-        "fragment": "interface mixin CanvasPath {\n  // shared path API methods\n  undefined closePath();\n  undefined moveTo(unrestricted double x, unrestricted double y);\n  undefined lineTo(unrestricted double x, unrestricted double y);\n  undefined quadraticCurveTo(unrestricted double cpx, unrestricted double cpy, unrestricted double x, unrestricted double y);\n  undefined bezierCurveTo(unrestricted double cp1x, unrestricted double cp1y, unrestricted double cp2x, unrestricted double cp2y, unrestricted double x, unrestricted double y);\n  undefined arcTo(unrestricted double x1, unrestricted double y1, unrestricted double x2, unrestricted double y2, unrestricted double radius);\n  undefined rect(unrestricted double x, unrestricted double y, unrestricted double w, unrestricted double h);\n  undefined roundRect(unrestricted double x, unrestricted double y, unrestricted double w, unrestricted double h, sequence<(unrestricted double or DOMPointInit)> radii);\n  undefined arc(unrestricted double x, unrestricted double y, unrestricted double radius, unrestricted double startAngle, unrestricted double endAngle, optional boolean counterclockwise = false);\n  undefined ellipse(unrestricted double x, unrestricted double y, unrestricted double radiusX, unrestricted double radiusY, unrestricted double rotation, unrestricted double startAngle, unrestricted double endAngle, optional boolean counterclockwise = false);\n};",
+        "fragment": "interface mixin CanvasPath {\n  // shared path API methods\n  undefined closePath();\n  undefined moveTo(unrestricted double x, unrestricted double y);\n  undefined lineTo(unrestricted double x, unrestricted double y);\n  undefined quadraticCurveTo(unrestricted double cpx, unrestricted double cpy, unrestricted double x, unrestricted double y);\n  undefined bezierCurveTo(unrestricted double cp1x, unrestricted double cp1y, unrestricted double cp2x, unrestricted double cp2y, unrestricted double x, unrestricted double y);\n  undefined arcTo(unrestricted double x1, unrestricted double y1, unrestricted double x2, unrestricted double y2, unrestricted double radius);\n  undefined rect(unrestricted double x, unrestricted double y, unrestricted double w, unrestricted double h);\n  undefined roundRect(unrestricted double x, unrestricted double y, unrestricted double w, unrestricted double h, optional (unrestricted double or DOMPointInit or sequence<(unrestricted double or DOMPointInit)>) radii = {});\n  undefined arc(unrestricted double x, unrestricted double y, unrestricted double radius, unrestricted double startAngle, unrestricted double endAngle, optional boolean counterclockwise = false);\n  undefined ellipse(unrestricted double x, unrestricted double y, unrestricted double radiusX, unrestricted double radiusY, unrestricted double rotation, unrestricted double startAngle, unrestricted double endAngle, optional boolean counterclockwise = false);\n};",
         "type": "interface mixin",
         "name": "CanvasPath",
         "inheritance": null,
@@ -19994,39 +19990,66 @@
                 "idlType": {
                   "type": "argument-type",
                   "extAttrs": [],
-                  "generic": "sequence",
+                  "generic": "",
                   "nullable": false,
-                  "union": false,
+                  "union": true,
                   "idlType": [
                     {
-                      "type": "argument-type",
+                      "type": null,
                       "extAttrs": [],
                       "generic": "",
                       "nullable": false,
-                      "union": true,
+                      "union": false,
+                      "idlType": "unrestricted double"
+                    },
+                    {
+                      "type": null,
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "DOMPointInit"
+                    },
+                    {
+                      "type": null,
+                      "extAttrs": [],
+                      "generic": "sequence",
+                      "nullable": false,
+                      "union": false,
                       "idlType": [
                         {
                           "type": null,
                           "extAttrs": [],
                           "generic": "",
                           "nullable": false,
-                          "union": false,
-                          "idlType": "unrestricted double"
-                        },
-                        {
-                          "type": null,
-                          "extAttrs": [],
-                          "generic": "",
-                          "nullable": false,
-                          "union": false,
-                          "idlType": "DOMPointInit"
+                          "union": true,
+                          "idlType": [
+                            {
+                              "type": null,
+                              "extAttrs": [],
+                              "generic": "",
+                              "nullable": false,
+                              "union": false,
+                              "idlType": "unrestricted double"
+                            },
+                            {
+                              "type": null,
+                              "extAttrs": [],
+                              "generic": "",
+                              "nullable": false,
+                              "union": false,
+                              "idlType": "DOMPointInit"
+                            }
+                          ]
                         }
                       ]
                     }
                   ]
                 },
-                "default": null,
-                "optional": false,
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
                 "variadic": false
               }
             ],
@@ -30026,693 +30049,6 @@
         "extAttrs": [],
         "partial": false
       },
-      "BinaryType": {
-        "fragment": "enum BinaryType { \"blob\", \"arraybuffer\" };",
-        "type": "enum",
-        "name": "BinaryType",
-        "values": [
-          {
-            "type": "enum-value",
-            "value": "blob"
-          },
-          {
-            "type": "enum-value",
-            "value": "arraybuffer"
-          }
-        ],
-        "extAttrs": []
-      },
-      "WebSocket": {
-        "fragment": "[Exposed=(Window,Worker)]\ninterface WebSocket : EventTarget {\n  constructor(USVString url, optional (DOMString or sequence<DOMString>) protocols = []);\n\n  readonly attribute USVString url;\n\n  // ready state\n  const unsigned short CONNECTING = 0;\n  const unsigned short OPEN = 1;\n  const unsigned short CLOSING = 2;\n  const unsigned short CLOSED = 3;\n  readonly attribute unsigned short readyState;\n  readonly attribute unsigned long long bufferedAmount;\n\n  // networking\n  attribute EventHandler onopen;\n  attribute EventHandler onerror;\n  attribute EventHandler onclose;\n  readonly attribute DOMString extensions;\n  readonly attribute DOMString protocol;\n  undefined close(optional [Clamp] unsigned short code, optional USVString reason);\n\n  // messaging\n  attribute EventHandler onmessage;\n  attribute BinaryType binaryType;\n  undefined send(USVString data);\n  undefined send(Blob data);\n  undefined send(ArrayBuffer data);\n  undefined send(ArrayBufferView data);\n};",
-        "type": "interface",
-        "name": "WebSocket",
-        "inheritance": "EventTarget",
-        "members": [
-          {
-            "type": "constructor",
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "url",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "USVString"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              },
-              {
-                "type": "argument",
-                "name": "protocols",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": true,
-                  "idlType": [
-                    {
-                      "type": null,
-                      "extAttrs": [],
-                      "generic": "",
-                      "nullable": false,
-                      "union": false,
-                      "idlType": "DOMString"
-                    },
-                    {
-                      "type": null,
-                      "extAttrs": [],
-                      "generic": "sequence",
-                      "nullable": false,
-                      "union": false,
-                      "idlType": [
-                        {
-                          "type": null,
-                          "extAttrs": [],
-                          "generic": "",
-                          "nullable": false,
-                          "union": false,
-                          "idlType": "DOMString"
-                        }
-                      ]
-                    }
-                  ]
-                },
-                "default": {
-                  "type": "sequence",
-                  "value": []
-                },
-                "optional": true,
-                "variadic": false
-              }
-            ],
-            "extAttrs": []
-          },
-          {
-            "type": "attribute",
-            "name": "url",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "USVString"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "const",
-            "name": "CONNECTING",
-            "idlType": {
-              "type": "const-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned short"
-            },
-            "extAttrs": [],
-            "value": {
-              "type": "number",
-              "value": "0"
-            }
-          },
-          {
-            "type": "const",
-            "name": "OPEN",
-            "idlType": {
-              "type": "const-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned short"
-            },
-            "extAttrs": [],
-            "value": {
-              "type": "number",
-              "value": "1"
-            }
-          },
-          {
-            "type": "const",
-            "name": "CLOSING",
-            "idlType": {
-              "type": "const-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned short"
-            },
-            "extAttrs": [],
-            "value": {
-              "type": "number",
-              "value": "2"
-            }
-          },
-          {
-            "type": "const",
-            "name": "CLOSED",
-            "idlType": {
-              "type": "const-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned short"
-            },
-            "extAttrs": [],
-            "value": {
-              "type": "number",
-              "value": "3"
-            }
-          },
-          {
-            "type": "attribute",
-            "name": "readyState",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned short"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "attribute",
-            "name": "bufferedAmount",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long long"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "attribute",
-            "name": "onopen",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "EventHandler"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": false
-          },
-          {
-            "type": "attribute",
-            "name": "onerror",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "EventHandler"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": false
-          },
-          {
-            "type": "attribute",
-            "name": "onclose",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "EventHandler"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": false
-          },
-          {
-            "type": "attribute",
-            "name": "extensions",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "attribute",
-            "name": "protocol",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "operation",
-            "name": "close",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "undefined"
-            },
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "code",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [
-                    {
-                      "type": "extended-attribute",
-                      "name": "Clamp",
-                      "rhs": null,
-                      "arguments": []
-                    }
-                  ],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "unsigned short"
-                },
-                "default": null,
-                "optional": true,
-                "variadic": false
-              },
-              {
-                "type": "argument",
-                "name": "reason",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "USVString"
-                },
-                "default": null,
-                "optional": true,
-                "variadic": false
-              }
-            ],
-            "extAttrs": [],
-            "special": ""
-          },
-          {
-            "type": "attribute",
-            "name": "onmessage",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "EventHandler"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": false
-          },
-          {
-            "type": "attribute",
-            "name": "binaryType",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "BinaryType"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": false
-          },
-          {
-            "type": "operation",
-            "name": "send",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "undefined"
-            },
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "data",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "USVString"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              }
-            ],
-            "extAttrs": [],
-            "special": ""
-          },
-          {
-            "type": "operation",
-            "name": "send",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "undefined"
-            },
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "data",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "Blob"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              }
-            ],
-            "extAttrs": [],
-            "special": ""
-          },
-          {
-            "type": "operation",
-            "name": "send",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "undefined"
-            },
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "data",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "ArrayBuffer"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              }
-            ],
-            "extAttrs": [],
-            "special": ""
-          },
-          {
-            "type": "operation",
-            "name": "send",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "undefined"
-            },
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "data",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "ArrayBufferView"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              }
-            ],
-            "extAttrs": [],
-            "special": ""
-          }
-        ],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier-list",
-              "value": [
-                {
-                  "value": "Window"
-                },
-                {
-                  "value": "Worker"
-                }
-              ]
-            },
-            "arguments": []
-          }
-        ],
-        "partial": false
-      },
-      "CloseEvent": {
-        "fragment": "[Exposed=(Window,Worker)]\ninterface CloseEvent : Event {\n  constructor(DOMString type, optional CloseEventInit eventInitDict = {});\n\n  readonly attribute boolean wasClean;\n  readonly attribute unsigned short code;\n  readonly attribute USVString reason;\n};",
-        "type": "interface",
-        "name": "CloseEvent",
-        "inheritance": "Event",
-        "members": [
-          {
-            "type": "constructor",
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "type",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "DOMString"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              },
-              {
-                "type": "argument",
-                "name": "eventInitDict",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "CloseEventInit"
-                },
-                "default": {
-                  "type": "dictionary"
-                },
-                "optional": true,
-                "variadic": false
-              }
-            ],
-            "extAttrs": []
-          },
-          {
-            "type": "attribute",
-            "name": "wasClean",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "boolean"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "attribute",
-            "name": "code",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned short"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "attribute",
-            "name": "reason",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "USVString"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          }
-        ],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier-list",
-              "value": [
-                {
-                  "value": "Window"
-                },
-                {
-                  "value": "Worker"
-                }
-              ]
-            },
-            "arguments": []
-          }
-        ],
-        "partial": false
-      },
-      "CloseEventInit": {
-        "fragment": "dictionary CloseEventInit : EventInit {\n  boolean wasClean = false;\n  unsigned short code = 0;\n  USVString reason = \"\";\n};",
-        "type": "dictionary",
-        "name": "CloseEventInit",
-        "inheritance": "EventInit",
-        "members": [
-          {
-            "type": "field",
-            "name": "wasClean",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "boolean"
-            },
-            "default": {
-              "type": "boolean",
-              "value": false
-            },
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "code",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned short"
-            },
-            "default": {
-              "type": "number",
-              "value": "0"
-            },
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "reason",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "USVString"
-            },
-            "default": {
-              "type": "string",
-              "value": ""
-            },
-            "required": false
-          }
-        ],
-        "extAttrs": [],
-        "partial": false
-      },
       "MessageChannel": {
         "fragment": "[Exposed=(Window,Worker)]\ninterface MessageChannel {\n  constructor();\n\n  readonly attribute MessagePort port1;\n  readonly attribute MessagePort port2;\n};",
         "type": "interface",
@@ -38627,8 +37963,6 @@
         "ImageBitmap",
         "MessageEvent",
         "EventSource",
-        "WebSocket",
-        "CloseEvent",
         "MessageChannel",
         "MessagePort",
         "BroadcastChannel",
@@ -38658,8 +37992,6 @@
         "ImageBitmap",
         "MessageEvent",
         "EventSource",
-        "WebSocket",
-        "CloseEvent",
         "MessageChannel",
         "MessagePort",
         "BroadcastChannel",
@@ -39422,21 +38754,6 @@
         "EventHandler"
       ],
       "EventSourceInit": [],
-      "WebSocket": [
-        "EventTarget",
-        "EventHandler",
-        "BinaryType",
-        "Blob",
-        "ArrayBuffer",
-        "ArrayBufferView"
-      ],
-      "CloseEvent": [
-        "Event",
-        "CloseEventInit"
-      ],
-      "CloseEventInit": [
-        "EventInit"
-      ],
       "MessageChannel": [
         "MessagePort"
       ],
@@ -39562,8 +38879,6 @@
       "VoidFunction",
       "DOMHighResTimeStamp",
       "ServiceWorker",
-      "ArrayBuffer",
-      "ArrayBufferView",
       "RequestCredentials"
     ],
     "hasObsoleteIdl": false

@@ -6,7 +6,7 @@
       "title": "Compute Pressure API",
       "url": "https://wicg.github.io/compute-pressure/"
     },
-    "fragment": "[Exposed=Window]\ninterface ComputePressureObserver {\n  constructor(ComputePressureUpdateCallback callback);\n\n  undefined observe(ComputePressureTarget target, optional ComputePressureObserverOptions options = {});\n  undefined unobserve(ComputePressureTarget target);\n  undefined disconnect();\n  sequence<ComputePressureRecord> takeRecords();\n\n  [SameObject] static readonly attribute FrozenArray<DOMString> supportedTargetTypes;\n};",
+    "fragment": "[Exposed=(DedicatedWorker,SharedWorker,Window), SecureContext]\ninterface ComputePressureObserver {\n  constructor(ComputePressureUpdateCallback callback);\n\n  undefined observe(ComputePressureTarget target, optional ComputePressureObserverOptions options = {});\n  undefined unobserve(ComputePressureTarget target);\n  undefined disconnect();\n  sequence<ComputePressureRecord> takeRecords();\n\n  [SameObject] static readonly attribute FrozenArray<DOMString> supportedTargetTypes;\n\n  [Exposed=Window] static Promise<PermissionState> requestPermission();\n};",
     "href": "https://wicg.github.io/compute-pressure/#dom-computepressureobserver"
   },
   "extended": [],
@@ -29,7 +29,7 @@
           "id": "the-computepressureobserver-object",
           "href": "https://wicg.github.io/compute-pressure/#the-computepressureobserver-object",
           "title": "The ComputePressureObserver object",
-          "number": "6.2"
+          "number": "8.2"
         },
         "definedIn": "prose"
       },
@@ -55,7 +55,7 @@
           "id": "the-constructor-method",
           "href": "https://wicg.github.io/compute-pressure/#the-constructor-method",
           "title": "The constructor() method",
-          "number": "6.2.2"
+          "number": "8.2.1"
         },
         "definedIn": "heading"
       },
@@ -82,7 +82,7 @@
           "id": "the-observe-method",
           "href": "https://wicg.github.io/compute-pressure/#the-observe-method",
           "title": "The observe() method",
-          "number": "6.2.3"
+          "number": "8.2.2"
         },
         "definedIn": "heading"
       },
@@ -108,7 +108,7 @@
           "id": "the-unobserve-method",
           "href": "https://wicg.github.io/compute-pressure/#the-unobserve-method",
           "title": "The unobserve() method",
-          "number": "6.2.4"
+          "number": "8.2.3"
         },
         "definedIn": "heading"
       },
@@ -133,7 +133,7 @@
           "id": "the-disconnect-method",
           "href": "https://wicg.github.io/compute-pressure/#the-disconnect-method",
           "title": "The disconnect() method",
-          "number": "6.2.5"
+          "number": "8.2.4"
         },
         "definedIn": "heading"
       },
@@ -158,7 +158,7 @@
           "id": "the-takerecords-method",
           "href": "https://wicg.github.io/compute-pressure/#the-takerecords-method",
           "title": "The takeRecords() method",
-          "number": "6.2.6"
+          "number": "8.2.5"
         },
         "definedIn": "heading"
       },
@@ -181,7 +181,32 @@
           "id": "the-supportedtargettypes-attribute",
           "href": "https://wicg.github.io/compute-pressure/#the-supportedtargettypes-attribute",
           "title": "The supportedTargetTypes attribute",
-          "number": "6.2.7"
+          "number": "8.2.6"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-computepressureobserver-requestpermission",
+        "href": "https://wicg.github.io/compute-pressure/#dom-computepressureobserver-requestpermission",
+        "linkingText": [
+          "requestPermission()"
+        ],
+        "localLinkingText": [
+          "ComputePressureObserver.requestPermission",
+          "ComputePressureObserver.requestPermission()",
+          "requestPermission"
+        ],
+        "type": "method",
+        "for": [
+          "ComputePressureObserver"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-static-requestpermission-method",
+          "href": "https://wicg.github.io/compute-pressure/#the-static-requestpermission-method",
+          "title": "The static requestPermission() method",
+          "number": "8.2.7"
         },
         "definedIn": "heading"
       }

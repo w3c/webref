@@ -1,0 +1,1043 @@
+{
+  "spec": {
+    "title": "WebSockets Standard",
+    "url": "https://websockets.spec.whatwg.org/"
+  },
+  "dfns": [
+    {
+      "id": "concept-websocket-connection-obtain",
+      "href": "https://websockets.spec.whatwg.org/#concept-websocket-connection-obtain",
+      "linkingText": [
+        "obtain a WebSocket connection"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "websocket-connections",
+        "href": "https://websockets.spec.whatwg.org/#websocket-connections",
+        "title": "Connections",
+        "number": "2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "concept-websocket-establish",
+      "href": "https://websockets.spec.whatwg.org/#concept-websocket-establish",
+      "linkingText": [
+        "establish a WebSocket connection"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "websocket-opening-handshake",
+        "href": "https://websockets.spec.whatwg.org/#websocket-opening-handshake",
+        "title": "Opening handshake",
+        "number": "2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "enumdef-binarytype",
+      "href": "https://websockets.spec.whatwg.org/#enumdef-binarytype",
+      "linkingText": [
+        "BinaryType"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-definition",
+        "href": "https://websockets.spec.whatwg.org/#interface-definition",
+        "title": "Interface definition",
+        "number": "3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "websocket",
+      "href": "https://websockets.spec.whatwg.org/#websocket",
+      "linkingText": [
+        "WebSocket"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-definition",
+        "href": "https://websockets.spec.whatwg.org/#interface-definition",
+        "title": "Interface definition",
+        "number": "3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-websocket-websocket-url-protocols-url",
+      "href": "https://websockets.spec.whatwg.org/#dom-websocket-websocket-url-protocols-url",
+      "linkingText": [
+        "url"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "WebSocket/WebSocket(url, protocols)",
+        "WebSocket/constructor(url, protocols)",
+        "WebSocket/WebSocket(url)",
+        "WebSocket/constructor(url)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-definition",
+        "href": "https://websockets.spec.whatwg.org/#interface-definition",
+        "title": "Interface definition",
+        "number": "3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-websocket-websocket-url-protocols-protocols",
+      "href": "https://websockets.spec.whatwg.org/#dom-websocket-websocket-url-protocols-protocols",
+      "linkingText": [
+        "protocols"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "WebSocket/WebSocket(url, protocols)",
+        "WebSocket/constructor(url, protocols)",
+        "WebSocket/WebSocket(url)",
+        "WebSocket/constructor(url)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-definition",
+        "href": "https://websockets.spec.whatwg.org/#interface-definition",
+        "title": "Interface definition",
+        "number": "3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-websocket-close-code-reason-code",
+      "href": "https://websockets.spec.whatwg.org/#dom-websocket-close-code-reason-code",
+      "linkingText": [
+        "code"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "WebSocket/close(code, reason)",
+        "WebSocket/close(code)",
+        "WebSocket/close()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-definition",
+        "href": "https://websockets.spec.whatwg.org/#interface-definition",
+        "title": "Interface definition",
+        "number": "3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-websocket-close-code-reason-reason",
+      "href": "https://websockets.spec.whatwg.org/#dom-websocket-close-code-reason-reason",
+      "linkingText": [
+        "reason"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "WebSocket/close(code, reason)",
+        "WebSocket/close(code)",
+        "WebSocket/close()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-definition",
+        "href": "https://websockets.spec.whatwg.org/#interface-definition",
+        "title": "Interface definition",
+        "number": "3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-websocket-send-data-data",
+      "href": "https://websockets.spec.whatwg.org/#dom-websocket-send-data-data",
+      "linkingText": [
+        "data"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "WebSocket/send(data)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-definition",
+        "href": "https://websockets.spec.whatwg.org/#interface-definition",
+        "title": "Interface definition",
+        "number": "3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "websocket-internal-url",
+      "href": "https://websockets.spec.whatwg.org/#websocket-internal-url",
+      "linkingText": [
+        "internal-url"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "WebSocket"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "interface-definition",
+        "href": "https://websockets.spec.whatwg.org/#interface-definition",
+        "title": "Interface definition",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "websocket-binary-type",
+      "href": "https://websockets.spec.whatwg.org/#websocket-binary-type",
+      "linkingText": [
+        "binary type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "WebSocket"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "interface-definition",
+        "href": "https://websockets.spec.whatwg.org/#interface-definition",
+        "title": "Interface definition",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "websocket-ready-state",
+      "href": "https://websockets.spec.whatwg.org/#websocket-ready-state",
+      "linkingText": [
+        "ready state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "WebSocket"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "interface-definition",
+        "href": "https://websockets.spec.whatwg.org/#interface-definition",
+        "title": "Interface definition",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-websocket-connecting",
+      "href": "https://websockets.spec.whatwg.org/#dom-websocket-connecting",
+      "linkingText": [
+        "CONNECTING"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "WebSocket"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-definition",
+        "href": "https://websockets.spec.whatwg.org/#interface-definition",
+        "title": "Interface definition",
+        "number": "3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-websocket-open",
+      "href": "https://websockets.spec.whatwg.org/#dom-websocket-open",
+      "linkingText": [
+        "OPEN"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "WebSocket"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-definition",
+        "href": "https://websockets.spec.whatwg.org/#interface-definition",
+        "title": "Interface definition",
+        "number": "3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-websocket-closing",
+      "href": "https://websockets.spec.whatwg.org/#dom-websocket-closing",
+      "linkingText": [
+        "CLOSING"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "WebSocket"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-definition",
+        "href": "https://websockets.spec.whatwg.org/#interface-definition",
+        "title": "Interface definition",
+        "number": "3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-websocket-closed",
+      "href": "https://websockets.spec.whatwg.org/#dom-websocket-closed",
+      "linkingText": [
+        "CLOSED"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "WebSocket"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-definition",
+        "href": "https://websockets.spec.whatwg.org/#interface-definition",
+        "title": "Interface definition",
+        "number": "3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-websocket-websocket",
+      "href": "https://websockets.spec.whatwg.org/#dom-websocket-websocket",
+      "linkingText": [
+        "WebSocket(url, protocols)",
+        "constructor(url, protocols)",
+        "WebSocket(url)",
+        "constructor(url)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "WebSocket"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-definition",
+        "href": "https://websockets.spec.whatwg.org/#interface-definition",
+        "title": "Interface definition",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-websocket-url",
+      "href": "https://websockets.spec.whatwg.org/#dom-websocket-url",
+      "linkingText": [
+        "url"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "WebSocket"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-definition",
+        "href": "https://websockets.spec.whatwg.org/#interface-definition",
+        "title": "Interface definition",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-websocket-readystate",
+      "href": "https://websockets.spec.whatwg.org/#dom-websocket-readystate",
+      "linkingText": [
+        "readyState"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "WebSocket"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-definition",
+        "href": "https://websockets.spec.whatwg.org/#interface-definition",
+        "title": "Interface definition",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-websocket-extensions",
+      "href": "https://websockets.spec.whatwg.org/#dom-websocket-extensions",
+      "linkingText": [
+        "extensions"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "WebSocket"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-definition",
+        "href": "https://websockets.spec.whatwg.org/#interface-definition",
+        "title": "Interface definition",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-websocket-protocol",
+      "href": "https://websockets.spec.whatwg.org/#dom-websocket-protocol",
+      "linkingText": [
+        "protocol"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "WebSocket"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-definition",
+        "href": "https://websockets.spec.whatwg.org/#interface-definition",
+        "title": "Interface definition",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-websocket-close",
+      "href": "https://websockets.spec.whatwg.org/#dom-websocket-close",
+      "linkingText": [
+        "close(code, reason)",
+        "close(code)",
+        "close()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "WebSocket"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-definition",
+        "href": "https://websockets.spec.whatwg.org/#interface-definition",
+        "title": "Interface definition",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-websocket-bufferedamount",
+      "href": "https://websockets.spec.whatwg.org/#dom-websocket-bufferedamount",
+      "linkingText": [
+        "bufferedAmount"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "WebSocket"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-definition",
+        "href": "https://websockets.spec.whatwg.org/#interface-definition",
+        "title": "Interface definition",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-websocket-binarytype",
+      "href": "https://websockets.spec.whatwg.org/#dom-websocket-binarytype",
+      "linkingText": [
+        "binaryType"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "WebSocket"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-definition",
+        "href": "https://websockets.spec.whatwg.org/#interface-definition",
+        "title": "Interface definition",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-websocket-send",
+      "href": "https://websockets.spec.whatwg.org/#dom-websocket-send",
+      "linkingText": [
+        "send(data)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "WebSocket"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-definition",
+        "href": "https://websockets.spec.whatwg.org/#interface-definition",
+        "title": "Interface definition",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-websocket-onopen",
+      "href": "https://websockets.spec.whatwg.org/#dom-websocket-onopen",
+      "linkingText": [
+        "onopen"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "WebSocket"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-definition",
+        "href": "https://websockets.spec.whatwg.org/#interface-definition",
+        "title": "Interface definition",
+        "number": "3.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dom-websocket-onmessage",
+      "href": "https://websockets.spec.whatwg.org/#dom-websocket-onmessage",
+      "linkingText": [
+        "onmessage"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "WebSocket"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-definition",
+        "href": "https://websockets.spec.whatwg.org/#interface-definition",
+        "title": "Interface definition",
+        "number": "3.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dom-websocket-onerror",
+      "href": "https://websockets.spec.whatwg.org/#dom-websocket-onerror",
+      "linkingText": [
+        "onerror"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "WebSocket"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-definition",
+        "href": "https://websockets.spec.whatwg.org/#interface-definition",
+        "title": "Interface definition",
+        "number": "3.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dom-websocket-onclose",
+      "href": "https://websockets.spec.whatwg.org/#dom-websocket-onclose",
+      "linkingText": [
+        "onclose"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "WebSocket"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-definition",
+        "href": "https://websockets.spec.whatwg.org/#interface-definition",
+        "title": "Interface definition",
+        "number": "3.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "eventdef-websocket-open",
+      "href": "https://websockets.spec.whatwg.org/#eventdef-websocket-open",
+      "linkingText": [
+        "open"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "WebSocket"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "feedback-from-the-protocol",
+        "href": "https://websockets.spec.whatwg.org/#feedback-from-the-protocol",
+        "title": "Feedback from the protocol",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-binarytype-blob",
+      "href": "https://websockets.spec.whatwg.org/#dom-binarytype-blob",
+      "linkingText": [
+        "\"blob\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "BinaryType"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "feedback-from-the-protocol",
+        "href": "https://websockets.spec.whatwg.org/#feedback-from-the-protocol",
+        "title": "Feedback from the protocol",
+        "number": "4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-binarytype-arraybuffer",
+      "href": "https://websockets.spec.whatwg.org/#dom-binarytype-arraybuffer",
+      "linkingText": [
+        "\"arraybuffer\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "BinaryType"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "feedback-from-the-protocol",
+        "href": "https://websockets.spec.whatwg.org/#feedback-from-the-protocol",
+        "title": "Feedback from the protocol",
+        "number": "4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "eventdef-websocket-message",
+      "href": "https://websockets.spec.whatwg.org/#eventdef-websocket-message",
+      "linkingText": [
+        "message"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "WebSocket"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "feedback-from-the-protocol",
+        "href": "https://websockets.spec.whatwg.org/#feedback-from-the-protocol",
+        "title": "Feedback from the protocol",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "flagged-as-full",
+      "href": "https://websockets.spec.whatwg.org/#flagged-as-full",
+      "linkingText": [
+        "flagged as full"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "feedback-from-the-protocol",
+        "href": "https://websockets.spec.whatwg.org/#feedback-from-the-protocol",
+        "title": "Feedback from the protocol",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "eventdef-websocket-error",
+      "href": "https://websockets.spec.whatwg.org/#eventdef-websocket-error",
+      "linkingText": [
+        "error"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "WebSocket"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "feedback-from-the-protocol",
+        "href": "https://websockets.spec.whatwg.org/#feedback-from-the-protocol",
+        "title": "Feedback from the protocol",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "eventdef-websocket-close",
+      "href": "https://websockets.spec.whatwg.org/#eventdef-websocket-close",
+      "linkingText": [
+        "close"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "WebSocket"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "feedback-from-the-protocol",
+        "href": "https://websockets.spec.whatwg.org/#feedback-from-the-protocol",
+        "title": "Feedback from the protocol",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "websocket-task-source",
+      "href": "https://websockets.spec.whatwg.org/#websocket-task-source",
+      "linkingText": [
+        "WebSocket task source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "feedback-from-the-protocol",
+        "href": "https://websockets.spec.whatwg.org/#feedback-from-the-protocol",
+        "title": "Feedback from the protocol",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "closeevent",
+      "href": "https://websockets.spec.whatwg.org/#closeevent",
+      "linkingText": [
+        "CloseEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-closeevent-interface",
+        "href": "https://websockets.spec.whatwg.org/#the-closeevent-interface",
+        "title": "The CloseEvent interface",
+        "number": "6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-closeevent-closeevent",
+      "href": "https://websockets.spec.whatwg.org/#dom-closeevent-closeevent",
+      "linkingText": [
+        "CloseEvent(type, eventInitDict)",
+        "constructor(type, eventInitDict)",
+        "CloseEvent(type)",
+        "constructor(type)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "CloseEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-closeevent-interface",
+        "href": "https://websockets.spec.whatwg.org/#the-closeevent-interface",
+        "title": "The CloseEvent interface",
+        "number": "6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-closeevent-closeevent-type-eventinitdict-type",
+      "href": "https://websockets.spec.whatwg.org/#dom-closeevent-closeevent-type-eventinitdict-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CloseEvent/CloseEvent(type, eventInitDict)",
+        "CloseEvent/constructor(type, eventInitDict)",
+        "CloseEvent/CloseEvent(type)",
+        "CloseEvent/constructor(type)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-closeevent-interface",
+        "href": "https://websockets.spec.whatwg.org/#the-closeevent-interface",
+        "title": "The CloseEvent interface",
+        "number": "6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-closeevent-closeevent-type-eventinitdict-eventinitdict",
+      "href": "https://websockets.spec.whatwg.org/#dom-closeevent-closeevent-type-eventinitdict-eventinitdict",
+      "linkingText": [
+        "eventInitDict"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CloseEvent/CloseEvent(type, eventInitDict)",
+        "CloseEvent/constructor(type, eventInitDict)",
+        "CloseEvent/CloseEvent(type)",
+        "CloseEvent/constructor(type)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-closeevent-interface",
+        "href": "https://websockets.spec.whatwg.org/#the-closeevent-interface",
+        "title": "The CloseEvent interface",
+        "number": "6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-closeeventinit",
+      "href": "https://websockets.spec.whatwg.org/#dictdef-closeeventinit",
+      "linkingText": [
+        "CloseEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-closeevent-interface",
+        "href": "https://websockets.spec.whatwg.org/#the-closeevent-interface",
+        "title": "The CloseEvent interface",
+        "number": "6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-closeeventinit-wasclean",
+      "href": "https://websockets.spec.whatwg.org/#dom-closeeventinit-wasclean",
+      "linkingText": [
+        "wasClean"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "CloseEventInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-closeevent-interface",
+        "href": "https://websockets.spec.whatwg.org/#the-closeevent-interface",
+        "title": "The CloseEvent interface",
+        "number": "6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-closeeventinit-code",
+      "href": "https://websockets.spec.whatwg.org/#dom-closeeventinit-code",
+      "linkingText": [
+        "code"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "CloseEventInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-closeevent-interface",
+        "href": "https://websockets.spec.whatwg.org/#the-closeevent-interface",
+        "title": "The CloseEvent interface",
+        "number": "6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-closeeventinit-reason",
+      "href": "https://websockets.spec.whatwg.org/#dom-closeeventinit-reason",
+      "linkingText": [
+        "reason"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "CloseEventInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-closeevent-interface",
+        "href": "https://websockets.spec.whatwg.org/#the-closeevent-interface",
+        "title": "The CloseEvent interface",
+        "number": "6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-closeevent-wasclean",
+      "href": "https://websockets.spec.whatwg.org/#dom-closeevent-wasclean",
+      "linkingText": [
+        "wasClean"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CloseEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-closeevent-interface",
+        "href": "https://websockets.spec.whatwg.org/#the-closeevent-interface",
+        "title": "The CloseEvent interface",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-closeevent-code",
+      "href": "https://websockets.spec.whatwg.org/#dom-closeevent-code",
+      "linkingText": [
+        "code"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CloseEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-closeevent-interface",
+        "href": "https://websockets.spec.whatwg.org/#the-closeevent-interface",
+        "title": "The CloseEvent interface",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-closeevent-reason",
+      "href": "https://websockets.spec.whatwg.org/#dom-closeevent-reason",
+      "linkingText": [
+        "reason"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CloseEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-closeevent-interface",
+        "href": "https://websockets.spec.whatwg.org/#the-closeevent-interface",
+        "title": "The CloseEvent interface",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "make-disappear",
+      "href": "https://websockets.spec.whatwg.org/#make-disappear",
+      "linkingText": [
+        "make disappear"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "garbage-collection",
+        "href": "https://websockets.spec.whatwg.org/#garbage-collection",
+        "title": "Garbage collection",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    }
+  ]
+}

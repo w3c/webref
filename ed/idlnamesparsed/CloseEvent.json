@@ -3,11 +3,11 @@
   "type": "interface",
   "defined": {
     "spec": {
-      "title": "HTML Standard",
-      "url": "https://html.spec.whatwg.org/multipage/"
+      "title": "WebSockets Standard",
+      "url": "https://websockets.spec.whatwg.org/"
     },
     "fragment": "[Exposed=(Window,Worker)]\ninterface CloseEvent : Event {\n  constructor(DOMString type, optional CloseEventInit eventInitDict = {});\n\n  readonly attribute boolean wasClean;\n  readonly attribute unsigned short code;\n  readonly attribute USVString reason;\n};",
-    "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#closeevent"
+    "href": "https://websockets.spec.whatwg.org/#closeevent"
   },
   "extended": [],
   "inheritance": {
@@ -27,10 +27,10 @@
   },
   "includes": [],
   "dfns": {
-    "https://html.spec.whatwg.org/multipage/": [
+    "https://websockets.spec.whatwg.org/": [
       {
         "id": "closeevent",
-        "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#closeevent",
+        "href": "https://websockets.spec.whatwg.org/#closeevent",
         "linkingText": [
           "CloseEvent"
         ],
@@ -41,15 +41,39 @@
         "informative": false,
         "heading": {
           "id": "the-closeevent-interface",
-          "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#the-closeevent-interface",
+          "href": "https://websockets.spec.whatwg.org/#the-closeevent-interface",
           "title": "The CloseEvent interface",
-          "number": "9.3.5"
+          "number": "6"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-closeevent-closeevent",
+        "href": "https://websockets.spec.whatwg.org/#dom-closeevent-closeevent",
+        "linkingText": [
+          "CloseEvent(type, eventInitDict)",
+          "constructor(type, eventInitDict)",
+          "CloseEvent(type)",
+          "constructor(type)"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "CloseEvent"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-closeevent-interface",
+          "href": "https://websockets.spec.whatwg.org/#the-closeevent-interface",
+          "title": "The CloseEvent interface",
+          "number": "6"
         },
         "definedIn": "pre"
       },
       {
         "id": "dom-closeevent-wasclean",
-        "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#dom-closeevent-wasclean",
+        "href": "https://websockets.spec.whatwg.org/#dom-closeevent-wasclean",
         "linkingText": [
           "wasClean"
         ],
@@ -62,15 +86,15 @@
         "informative": false,
         "heading": {
           "id": "the-closeevent-interface",
-          "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#the-closeevent-interface",
+          "href": "https://websockets.spec.whatwg.org/#the-closeevent-interface",
           "title": "The CloseEvent interface",
-          "number": "9.3.5"
+          "number": "6"
         },
         "definedIn": "prose"
       },
       {
         "id": "dom-closeevent-code",
-        "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#dom-closeevent-code",
+        "href": "https://websockets.spec.whatwg.org/#dom-closeevent-code",
         "linkingText": [
           "code"
         ],
@@ -83,15 +107,15 @@
         "informative": false,
         "heading": {
           "id": "the-closeevent-interface",
-          "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#the-closeevent-interface",
+          "href": "https://websockets.spec.whatwg.org/#the-closeevent-interface",
           "title": "The CloseEvent interface",
-          "number": "9.3.5"
+          "number": "6"
         },
         "definedIn": "prose"
       },
       {
         "id": "dom-closeevent-reason",
-        "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#dom-closeevent-reason",
+        "href": "https://websockets.spec.whatwg.org/#dom-closeevent-reason",
         "linkingText": [
           "reason"
         ],
@@ -104,9 +128,9 @@
         "informative": false,
         "heading": {
           "id": "the-closeevent-interface",
-          "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#the-closeevent-interface",
+          "href": "https://websockets.spec.whatwg.org/#the-closeevent-interface",
           "title": "The CloseEvent interface",
-          "number": "9.3.5"
+          "number": "6"
         },
         "definedIn": "prose"
       }

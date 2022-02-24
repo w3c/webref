@@ -6,7 +6,7 @@
       "title": "WebGPU",
       "url": "https://www.w3.org/TR/webgpu/"
     },
-    "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUExternalTexture {\n};",
+    "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUExternalTexture {\n    readonly attribute boolean expired;\n};",
     "href": "https://gpuweb.github.io/gpuweb/#gpuexternaltexture"
   },
   "extended": [
@@ -56,6 +56,27 @@
           "number": "6.4"
         },
         "definedIn": "heading"
+      },
+      {
+        "id": "dom-gpuexternaltexture-expired",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpuexternaltexture-expired",
+        "linkingText": [
+          "expired"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "GPUExternalTexture"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "gpu-external-texture",
+          "href": "https://gpuweb.github.io/gpuweb/#gpu-external-texture",
+          "title": "GPUExternalTexture",
+          "number": "6.4"
+        },
+        "definedIn": "dt"
       },
       {
         "id": "gpuobjectbase",

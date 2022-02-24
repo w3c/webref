@@ -43,7 +43,7 @@
     },
     "container": {
       "name": "container",
-      "value": "<'container-type'> [ / <'container-name'> ]?",
+      "value": "<'container-name'>? [ / <'container-type'> ]?",
       "initial": "see individual properties",
       "appliesTo": "see individual properties",
       "inherited": "see individual properties",
@@ -107,11 +107,11 @@
     ]
   },
   "valuespaces": {
-    "<container-condition>": {
-      "value": "not <container-query> | <container-query> [ and <container-query> ]* | <container-query> [ or <container-query> ]*"
-    },
     "<container-query>": {
       "value": "( <container-condition> ) | ( <size-feature> ) | style( <style-query> ) | <general-enclosed>"
+    },
+    "<container-condition>": {
+      "value": "not <container-query> | <container-query> [ and <container-query> ]* | <container-query> [ or <container-query> ]*"
     },
     "<style-query>": {
       "value": "<style-feature> | <style-condition>"
