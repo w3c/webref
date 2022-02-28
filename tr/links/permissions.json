@@ -14,6 +14,7 @@
       "sec-Disclosure"
     ],
     "https://www.w3.org/groups/wg/webappsec/ipr": [],
+    "https://notifications.spec.whatwg.org/": [],
     "https://www.w3.org/TR/geolocation/": [],
     "https://github.com/w3c/permissions/issues": [],
     "https://infra.spec.whatwg.org/": [
@@ -25,8 +26,15 @@
     "https://www.w3.org/TR/appmanifest/": [
       "dfn-installed-web-application"
     ],
+    "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html": [
+      "realm",
+      "current-realm"
+    ],
     "https://html.spec.whatwg.org/": [
       "top-level-browsing-context",
+      "allowed-to-use",
+      "attr-iframe-allow",
+      "the-iframe-element",
       "concept-global-object-realm",
       "environment-settings-object",
       "current-settings-object",
@@ -34,7 +42,6 @@
       "global-object",
       "non-secure-context",
       "concept-document-window",
-      "allowed-to-use",
       "realms-settings-objects-global-objects",
       "same-origin",
       "queue-a-task",
@@ -42,17 +49,28 @@
       "responsible-event-loop",
       "navigator",
       "workernavigator",
+      "concept-relevant-global",
+      "window",
+      "fully-active",
       "in-parallel",
       "eventhandler",
       "event-handlers",
       "event-handler-event-type",
       "concept-document-permissions-policy",
-      "attr-iframe-allow",
       "concept-settings-object-origin",
       "relevant-settings-object",
       "concept-settings-object-global",
       "window-bc",
       "concept-task"
+    ],
+    "https://www.w3.org/TR/permissions-policy-1/": [
+      "policy-controlled-feature"
+    ],
+    "https://dom.spec.whatwg.org/": [
+      "concept-document",
+      "eventtarget",
+      "concept-event-fire",
+      "concept-event-listener"
     ],
     "https://webidl.spec.whatwg.org/": [
       "dfn-dictionary",
@@ -62,7 +80,10 @@
       "SameObject",
       "idl-promise",
       "idl-object",
+      "this",
       "a-promise-rejected-with",
+      "invalidstateerror",
+      "idl-DOMException",
       "exceptiondef-typeerror",
       "dfn-enumeration",
       "dfn-convert-ecmascript-to-idl-value",
@@ -77,26 +98,14 @@
     "https://www.w3.org/TR/mediacapture-streams/": [
       "dom-mediadevices-getusermedia"
     ],
-    "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html": [
-      "current-realm"
-    ],
-    "https://notifications.spec.whatwg.org/": [],
     "https://www.w3.org/TR/push-api/": [],
     "https://www.w3.org/Privacy/IG/": [],
-    "https://www.w3.org/TR/permissions-policy-1/": [
-      "policy-controlled-feature"
-    ],
     "https://github.com/w3c/permissions/issues/278": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/Navigator/permissions": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/WorkerNavigator/permissions": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/Permissions": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/Permissions/query": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/PermissionStatus": [],
-    "https://dom.spec.whatwg.org/": [
-      "eventtarget",
-      "concept-event-fire",
-      "concept-event-listener"
-    ],
     "https://developer.mozilla.org/en-US/docs/Web/API/PermissionStatus/name": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/PermissionStatus/state": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/PermissionStatus/onchange": [],
@@ -110,8 +119,8 @@
       "dfn-success",
       "dfn-session"
     ],
+    "https://tc39.es/ecma262/multipage/": [],
     "https://www.rfc-editor.org/rfc/rfc2119": [],
-    "https://www.rfc-editor.org/rfc/rfc8174": [],
-    "https://tc39.es/ecma262/multipage/": []
+    "https://www.rfc-editor.org/rfc/rfc8174": []
   }
 }

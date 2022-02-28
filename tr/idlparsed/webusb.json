@@ -473,8 +473,663 @@
         ],
         "partial": false
       },
+      "USBTransferStatus": {
+        "fragment": "enum USBTransferStatus {\n  \"ok\",\n  \"stall\",\n  \"babble\"\n};",
+        "type": "enum",
+        "name": "USBTransferStatus",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "ok"
+          },
+          {
+            "type": "enum-value",
+            "value": "stall"
+          },
+          {
+            "type": "enum-value",
+            "value": "babble"
+          }
+        ],
+        "extAttrs": []
+      },
+      "USBInTransferResult": {
+        "fragment": "[\n  Exposed=(DedicatedWorker,SharedWorker,Window),\n  SecureContext\n]\ninterface USBInTransferResult {\n  constructor(USBTransferStatus status, optional DataView? data);\n  readonly attribute DataView? data;\n  readonly attribute USBTransferStatus status;\n};",
+        "type": "interface",
+        "name": "USBInTransferResult",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "status",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "USBTransferStatus"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "data",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": true,
+                  "union": false,
+                  "idlType": "DataView"
+                },
+                "default": null,
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": []
+          },
+          {
+            "type": "attribute",
+            "name": "data",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "DataView"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "status",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USBTransferStatus"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "DedicatedWorker"
+                },
+                {
+                  "value": "SharedWorker"
+                },
+                {
+                  "value": "Window"
+                }
+              ]
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "USBOutTransferResult": {
+        "fragment": "[\n  Exposed=(DedicatedWorker,SharedWorker,Window),\n  SecureContext\n]\ninterface USBOutTransferResult {\n  constructor(USBTransferStatus status, optional unsigned long bytesWritten = 0);\n  readonly attribute unsigned long bytesWritten;\n  readonly attribute USBTransferStatus status;\n};",
+        "type": "interface",
+        "name": "USBOutTransferResult",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "status",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "USBTransferStatus"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "bytesWritten",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "unsigned long"
+                },
+                "default": {
+                  "type": "number",
+                  "value": "0"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": []
+          },
+          {
+            "type": "attribute",
+            "name": "bytesWritten",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "status",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USBTransferStatus"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "DedicatedWorker"
+                },
+                {
+                  "value": "SharedWorker"
+                },
+                {
+                  "value": "Window"
+                }
+              ]
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "USBIsochronousInTransferPacket": {
+        "fragment": "[\n  Exposed=(DedicatedWorker,SharedWorker,Window),\n  SecureContext\n]\ninterface USBIsochronousInTransferPacket {\n  constructor(USBTransferStatus status, optional DataView? data);\n  readonly attribute DataView? data;\n  readonly attribute USBTransferStatus status;\n};",
+        "type": "interface",
+        "name": "USBIsochronousInTransferPacket",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "status",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "USBTransferStatus"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "data",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": true,
+                  "union": false,
+                  "idlType": "DataView"
+                },
+                "default": null,
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": []
+          },
+          {
+            "type": "attribute",
+            "name": "data",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "DataView"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "status",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USBTransferStatus"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "DedicatedWorker"
+                },
+                {
+                  "value": "SharedWorker"
+                },
+                {
+                  "value": "Window"
+                }
+              ]
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "USBIsochronousInTransferResult": {
+        "fragment": "[\n  Exposed=(DedicatedWorker,SharedWorker,Window),\n  SecureContext\n]\ninterface USBIsochronousInTransferResult {\n  constructor(sequence<USBIsochronousInTransferPacket> packets, optional DataView? data);\n  readonly attribute DataView? data;\n  readonly attribute FrozenArray<USBIsochronousInTransferPacket> packets;\n};",
+        "type": "interface",
+        "name": "USBIsochronousInTransferResult",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "packets",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "sequence",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": [
+                    {
+                      "type": "argument-type",
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "USBIsochronousInTransferPacket"
+                    }
+                  ]
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "data",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": true,
+                  "union": false,
+                  "idlType": "DataView"
+                },
+                "default": null,
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": []
+          },
+          {
+            "type": "attribute",
+            "name": "data",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "DataView"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "packets",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "FrozenArray",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "USBIsochronousInTransferPacket"
+                }
+              ]
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "DedicatedWorker"
+                },
+                {
+                  "value": "SharedWorker"
+                },
+                {
+                  "value": "Window"
+                }
+              ]
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "USBIsochronousOutTransferPacket": {
+        "fragment": "[\n  Exposed=(DedicatedWorker,SharedWorker,Window),\n  SecureContext\n]\ninterface USBIsochronousOutTransferPacket {\n  constructor(USBTransferStatus status, optional unsigned long bytesWritten = 0);\n  readonly attribute unsigned long bytesWritten;\n  readonly attribute USBTransferStatus status;\n};",
+        "type": "interface",
+        "name": "USBIsochronousOutTransferPacket",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "status",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "USBTransferStatus"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "bytesWritten",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "unsigned long"
+                },
+                "default": {
+                  "type": "number",
+                  "value": "0"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": []
+          },
+          {
+            "type": "attribute",
+            "name": "bytesWritten",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "status",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USBTransferStatus"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "DedicatedWorker"
+                },
+                {
+                  "value": "SharedWorker"
+                },
+                {
+                  "value": "Window"
+                }
+              ]
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "USBIsochronousOutTransferResult": {
+        "fragment": "[\n  Exposed=(DedicatedWorker,SharedWorker,Window),\n  SecureContext\n]\ninterface USBIsochronousOutTransferResult {\n  constructor(sequence<USBIsochronousOutTransferPacket> packets);\n  readonly attribute FrozenArray<USBIsochronousOutTransferPacket> packets;\n};",
+        "type": "interface",
+        "name": "USBIsochronousOutTransferResult",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "packets",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "sequence",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": [
+                    {
+                      "type": "argument-type",
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "USBIsochronousOutTransferPacket"
+                    }
+                  ]
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": []
+          },
+          {
+            "type": "attribute",
+            "name": "packets",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "FrozenArray",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "USBIsochronousOutTransferPacket"
+                }
+              ]
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "DedicatedWorker"
+                },
+                {
+                  "value": "SharedWorker"
+                },
+                {
+                  "value": "Window"
+                }
+              ]
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
       "USBDevice": {
-        "fragment": "[Exposed=(DedicatedWorker,SharedWorker,Window), SecureContext]\ninterface USBDevice {\n  readonly attribute octet usbVersionMajor;\n  readonly attribute octet usbVersionMinor;\n  readonly attribute octet usbVersionSubminor;\n  readonly attribute octet deviceClass;\n  readonly attribute octet deviceSubclass;\n  readonly attribute octet deviceProtocol;\n  readonly attribute unsigned short vendorId;\n  readonly attribute unsigned short productId;\n  readonly attribute octet deviceVersionMajor;\n  readonly attribute octet deviceVersionMinor;\n  readonly attribute octet deviceVersionSubminor;\n  readonly attribute DOMString? manufacturerName;\n  readonly attribute DOMString? productName;\n  readonly attribute DOMString? serialNumber;\n  readonly attribute USBConfiguration? configuration;\n  readonly attribute FrozenArray<USBConfiguration> configurations;\n  readonly attribute boolean opened;\n  Promise<undefined> open();\n  Promise<undefined> close();\n  Promise<undefined> selectConfiguration(octet configurationValue);\n  Promise<undefined> claimInterface(octet interfaceNumber);\n  Promise<undefined> releaseInterface(octet interfaceNumber);\n  Promise<undefined> selectAlternateInterface(octet interfaceNumber, octet alternateSetting);\n  Promise<USBInTransferResult> controlTransferIn(USBControlTransferParameters setup, unsigned short length);\n  Promise<USBOutTransferResult> controlTransferOut(USBControlTransferParameters setup, optional BufferSource data);\n  Promise<undefined> clearHalt(USBDirection direction, octet endpointNumber);\n  Promise<USBInTransferResult> transferIn(octet endpointNumber, unsigned long length);\n  Promise<USBOutTransferResult> transferOut(octet endpointNumber, BufferSource data);\n  Promise<USBIsochronousInTransferResult> isochronousTransferIn(octet endpointNumber, sequence<unsigned long> packetLengths);\n  Promise<USBIsochronousOutTransferResult> isochronousTransferOut(octet endpointNumber, BufferSource data, sequence<unsigned long> packetLengths);\n  Promise<undefined> reset();\n};",
+        "fragment": "[Exposed=(DedicatedWorker,SharedWorker,Window), SecureContext]\ninterface USBDevice {\n  readonly attribute octet usbVersionMajor;\n  readonly attribute octet usbVersionMinor;\n  readonly attribute octet usbVersionSubminor;\n  readonly attribute octet deviceClass;\n  readonly attribute octet deviceSubclass;\n  readonly attribute octet deviceProtocol;\n  readonly attribute unsigned short vendorId;\n  readonly attribute unsigned short productId;\n  readonly attribute octet deviceVersionMajor;\n  readonly attribute octet deviceVersionMinor;\n  readonly attribute octet deviceVersionSubminor;\n  readonly attribute DOMString? manufacturerName;\n  readonly attribute DOMString? productName;\n  readonly attribute DOMString? serialNumber;\n  readonly attribute USBConfiguration? configuration;\n  readonly attribute FrozenArray<USBConfiguration> configurations;\n  readonly attribute boolean opened;\n  Promise<undefined> open();\n  Promise<undefined> close();\n  Promise<undefined> forget();\n  Promise<undefined> selectConfiguration(octet configurationValue);\n  Promise<undefined> claimInterface(octet interfaceNumber);\n  Promise<undefined> releaseInterface(octet interfaceNumber);\n  Promise<undefined> selectAlternateInterface(octet interfaceNumber, octet alternateSetting);\n  Promise<USBInTransferResult> controlTransferIn(USBControlTransferParameters setup, unsigned short length);\n  Promise<USBOutTransferResult> controlTransferOut(USBControlTransferParameters setup, optional BufferSource data);\n  Promise<undefined> clearHalt(USBDirection direction, octet endpointNumber);\n  Promise<USBInTransferResult> transferIn(octet endpointNumber, unsigned long length);\n  Promise<USBOutTransferResult> transferOut(octet endpointNumber, BufferSource data);\n  Promise<USBIsochronousInTransferResult> isochronousTransferIn(octet endpointNumber, sequence<unsigned long> packetLengths);\n  Promise<USBIsochronousOutTransferResult> isochronousTransferOut(octet endpointNumber, BufferSource data, sequence<unsigned long> packetLengths);\n  Promise<undefined> reset();\n};",
         "type": "interface",
         "name": "USBDevice",
         "inheritance": null,
@@ -770,6 +1425,30 @@
           {
             "type": "operation",
             "name": "close",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "undefined"
+                }
+              ]
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "forget",
             "idlType": {
               "type": "return-type",
               "extAttrs": [],
@@ -1502,26 +2181,6 @@
         ],
         "extAttrs": []
       },
-      "USBTransferStatus": {
-        "fragment": "enum USBTransferStatus {\n  \"ok\",\n  \"stall\",\n  \"babble\"\n};",
-        "type": "enum",
-        "name": "USBTransferStatus",
-        "values": [
-          {
-            "type": "enum-value",
-            "value": "ok"
-          },
-          {
-            "type": "enum-value",
-            "value": "stall"
-          },
-          {
-            "type": "enum-value",
-            "value": "babble"
-          }
-        ],
-        "extAttrs": []
-      },
       "USBControlTransferParameters": {
         "fragment": "dictionary USBControlTransferParameters {\n  required USBRequestType requestType;\n  required USBRecipient recipient;\n  required octet request;\n  required unsigned short value;\n  required unsigned short index;\n};",
         "type": "dictionary",
@@ -1605,641 +2264,6 @@
           }
         ],
         "extAttrs": [],
-        "partial": false
-      },
-      "USBInTransferResult": {
-        "fragment": "[\n  Exposed=(DedicatedWorker,SharedWorker,Window),\n  SecureContext\n]\ninterface USBInTransferResult {\n  constructor(USBTransferStatus status, optional DataView? data);\n  readonly attribute DataView? data;\n  readonly attribute USBTransferStatus status;\n};",
-        "type": "interface",
-        "name": "USBInTransferResult",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "constructor",
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "status",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "USBTransferStatus"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              },
-              {
-                "type": "argument",
-                "name": "data",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": true,
-                  "union": false,
-                  "idlType": "DataView"
-                },
-                "default": null,
-                "optional": true,
-                "variadic": false
-              }
-            ],
-            "extAttrs": []
-          },
-          {
-            "type": "attribute",
-            "name": "data",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": true,
-              "union": false,
-              "idlType": "DataView"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "attribute",
-            "name": "status",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "USBTransferStatus"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          }
-        ],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier-list",
-              "value": [
-                {
-                  "value": "DedicatedWorker"
-                },
-                {
-                  "value": "SharedWorker"
-                },
-                {
-                  "value": "Window"
-                }
-              ]
-            },
-            "arguments": []
-          },
-          {
-            "type": "extended-attribute",
-            "name": "SecureContext",
-            "rhs": null,
-            "arguments": []
-          }
-        ],
-        "partial": false
-      },
-      "USBOutTransferResult": {
-        "fragment": "[\n  Exposed=(DedicatedWorker,SharedWorker,Window),\n  SecureContext\n]\ninterface USBOutTransferResult {\n  constructor(USBTransferStatus status, optional unsigned long bytesWritten = 0);\n  readonly attribute unsigned long bytesWritten;\n  readonly attribute USBTransferStatus status;\n};",
-        "type": "interface",
-        "name": "USBOutTransferResult",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "constructor",
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "status",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "USBTransferStatus"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              },
-              {
-                "type": "argument",
-                "name": "bytesWritten",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "unsigned long"
-                },
-                "default": {
-                  "type": "number",
-                  "value": "0"
-                },
-                "optional": true,
-                "variadic": false
-              }
-            ],
-            "extAttrs": []
-          },
-          {
-            "type": "attribute",
-            "name": "bytesWritten",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "attribute",
-            "name": "status",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "USBTransferStatus"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          }
-        ],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier-list",
-              "value": [
-                {
-                  "value": "DedicatedWorker"
-                },
-                {
-                  "value": "SharedWorker"
-                },
-                {
-                  "value": "Window"
-                }
-              ]
-            },
-            "arguments": []
-          },
-          {
-            "type": "extended-attribute",
-            "name": "SecureContext",
-            "rhs": null,
-            "arguments": []
-          }
-        ],
-        "partial": false
-      },
-      "USBIsochronousInTransferPacket": {
-        "fragment": "[\n  Exposed=(DedicatedWorker,SharedWorker,Window),\n  SecureContext\n]\ninterface USBIsochronousInTransferPacket {\n  constructor(USBTransferStatus status, optional DataView? data);\n  readonly attribute DataView? data;\n  readonly attribute USBTransferStatus status;\n};",
-        "type": "interface",
-        "name": "USBIsochronousInTransferPacket",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "constructor",
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "status",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "USBTransferStatus"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              },
-              {
-                "type": "argument",
-                "name": "data",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": true,
-                  "union": false,
-                  "idlType": "DataView"
-                },
-                "default": null,
-                "optional": true,
-                "variadic": false
-              }
-            ],
-            "extAttrs": []
-          },
-          {
-            "type": "attribute",
-            "name": "data",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": true,
-              "union": false,
-              "idlType": "DataView"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "attribute",
-            "name": "status",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "USBTransferStatus"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          }
-        ],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier-list",
-              "value": [
-                {
-                  "value": "DedicatedWorker"
-                },
-                {
-                  "value": "SharedWorker"
-                },
-                {
-                  "value": "Window"
-                }
-              ]
-            },
-            "arguments": []
-          },
-          {
-            "type": "extended-attribute",
-            "name": "SecureContext",
-            "rhs": null,
-            "arguments": []
-          }
-        ],
-        "partial": false
-      },
-      "USBIsochronousInTransferResult": {
-        "fragment": "[\n  Exposed=(DedicatedWorker,SharedWorker,Window),\n  SecureContext\n]\ninterface USBIsochronousInTransferResult {\n  constructor(sequence<USBIsochronousInTransferPacket> packets, optional DataView? data);\n  readonly attribute DataView? data;\n  readonly attribute FrozenArray<USBIsochronousInTransferPacket> packets;\n};",
-        "type": "interface",
-        "name": "USBIsochronousInTransferResult",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "constructor",
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "packets",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "sequence",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": [
-                    {
-                      "type": "argument-type",
-                      "extAttrs": [],
-                      "generic": "",
-                      "nullable": false,
-                      "union": false,
-                      "idlType": "USBIsochronousInTransferPacket"
-                    }
-                  ]
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              },
-              {
-                "type": "argument",
-                "name": "data",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": true,
-                  "union": false,
-                  "idlType": "DataView"
-                },
-                "default": null,
-                "optional": true,
-                "variadic": false
-              }
-            ],
-            "extAttrs": []
-          },
-          {
-            "type": "attribute",
-            "name": "data",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": true,
-              "union": false,
-              "idlType": "DataView"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "attribute",
-            "name": "packets",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "FrozenArray",
-              "nullable": false,
-              "union": false,
-              "idlType": [
-                {
-                  "type": "attribute-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "USBIsochronousInTransferPacket"
-                }
-              ]
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          }
-        ],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier-list",
-              "value": [
-                {
-                  "value": "DedicatedWorker"
-                },
-                {
-                  "value": "SharedWorker"
-                },
-                {
-                  "value": "Window"
-                }
-              ]
-            },
-            "arguments": []
-          },
-          {
-            "type": "extended-attribute",
-            "name": "SecureContext",
-            "rhs": null,
-            "arguments": []
-          }
-        ],
-        "partial": false
-      },
-      "USBIsochronousOutTransferPacket": {
-        "fragment": "[\n  Exposed=(DedicatedWorker,SharedWorker,Window),\n  SecureContext\n]\ninterface USBIsochronousOutTransferPacket {\n  constructor(USBTransferStatus status, optional unsigned long bytesWritten = 0);\n  readonly attribute unsigned long bytesWritten;\n  readonly attribute USBTransferStatus status;\n};",
-        "type": "interface",
-        "name": "USBIsochronousOutTransferPacket",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "constructor",
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "status",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "USBTransferStatus"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              },
-              {
-                "type": "argument",
-                "name": "bytesWritten",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "unsigned long"
-                },
-                "default": {
-                  "type": "number",
-                  "value": "0"
-                },
-                "optional": true,
-                "variadic": false
-              }
-            ],
-            "extAttrs": []
-          },
-          {
-            "type": "attribute",
-            "name": "bytesWritten",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "attribute",
-            "name": "status",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "USBTransferStatus"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          }
-        ],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier-list",
-              "value": [
-                {
-                  "value": "DedicatedWorker"
-                },
-                {
-                  "value": "SharedWorker"
-                },
-                {
-                  "value": "Window"
-                }
-              ]
-            },
-            "arguments": []
-          },
-          {
-            "type": "extended-attribute",
-            "name": "SecureContext",
-            "rhs": null,
-            "arguments": []
-          }
-        ],
-        "partial": false
-      },
-      "USBIsochronousOutTransferResult": {
-        "fragment": "[\n  Exposed=(DedicatedWorker,SharedWorker,Window),\n  SecureContext\n]\ninterface USBIsochronousOutTransferResult {\n  constructor(sequence<USBIsochronousOutTransferPacket> packets);\n  readonly attribute FrozenArray<USBIsochronousOutTransferPacket> packets;\n};",
-        "type": "interface",
-        "name": "USBIsochronousOutTransferResult",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "constructor",
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "packets",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "sequence",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": [
-                    {
-                      "type": "argument-type",
-                      "extAttrs": [],
-                      "generic": "",
-                      "nullable": false,
-                      "union": false,
-                      "idlType": "USBIsochronousOutTransferPacket"
-                    }
-                  ]
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              }
-            ],
-            "extAttrs": []
-          },
-          {
-            "type": "attribute",
-            "name": "packets",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "FrozenArray",
-              "nullable": false,
-              "union": false,
-              "idlType": [
-                {
-                  "type": "attribute-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "USBIsochronousOutTransferPacket"
-                }
-              ]
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          }
-        ],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier-list",
-              "value": [
-                {
-                  "value": "DedicatedWorker"
-                },
-                {
-                  "value": "SharedWorker"
-                },
-                {
-                  "value": "Window"
-                }
-              ]
-            },
-            "arguments": []
-          },
-          {
-            "type": "extended-attribute",
-            "name": "SecureContext",
-            "rhs": null,
-            "arguments": []
-          }
-        ],
         "partial": false
       },
       "USBConfiguration": {
@@ -3168,13 +3192,13 @@
         "USB",
         "WorkerNavigator",
         "USBConnectionEvent",
-        "USBDevice",
         "USBInTransferResult",
         "USBOutTransferResult",
         "USBIsochronousInTransferPacket",
         "USBIsochronousInTransferResult",
         "USBIsochronousOutTransferPacket",
         "USBIsochronousOutTransferResult",
+        "USBDevice",
         "USBConfiguration",
         "USBInterface",
         "USBAlternateInterface",
@@ -3185,13 +3209,13 @@
         "USB",
         "WorkerNavigator",
         "USBConnectionEvent",
-        "USBDevice",
         "USBInTransferResult",
         "USBOutTransferResult",
         "USBIsochronousInTransferPacket",
         "USBIsochronousInTransferResult",
         "USBIsochronousOutTransferPacket",
         "USBIsochronousOutTransferResult",
+        "USBDevice",
         "USBConfiguration",
         "USBInterface",
         "USBAlternateInterface",
@@ -3202,13 +3226,13 @@
         "USB",
         "Navigator",
         "USBConnectionEvent",
-        "USBDevice",
         "USBInTransferResult",
         "USBOutTransferResult",
         "USBIsochronousInTransferPacket",
         "USBIsochronousInTransferResult",
         "USBIsochronousOutTransferPacket",
         "USBIsochronousOutTransferResult",
+        "USBDevice",
         "USBConfiguration",
         "USBInterface",
         "USBAlternateInterface",
@@ -3242,20 +3266,6 @@
         "USBConnectionEventInit",
         "USBDevice"
       ],
-      "USBDevice": [
-        "USBConfiguration",
-        "USBInTransferResult",
-        "USBControlTransferParameters",
-        "USBOutTransferResult",
-        "BufferSource",
-        "USBDirection",
-        "USBIsochronousInTransferResult",
-        "USBIsochronousOutTransferResult"
-      ],
-      "USBControlTransferParameters": [
-        "USBRequestType",
-        "USBRecipient"
-      ],
       "USBInTransferResult": [
         "USBTransferStatus",
         "DataView"
@@ -3276,6 +3286,20 @@
       ],
       "USBIsochronousOutTransferResult": [
         "USBIsochronousOutTransferPacket"
+      ],
+      "USBDevice": [
+        "USBConfiguration",
+        "USBInTransferResult",
+        "USBControlTransferParameters",
+        "USBOutTransferResult",
+        "BufferSource",
+        "USBDirection",
+        "USBIsochronousInTransferResult",
+        "USBIsochronousOutTransferResult"
+      ],
+      "USBControlTransferParameters": [
+        "USBRequestType",
+        "USBRecipient"
       ],
       "USBConfiguration": [
         "USBDevice",
@@ -3314,8 +3338,8 @@
       "WorkerNavigator",
       "EventInit",
       "Event",
-      "BufferSource",
       "DataView",
+      "BufferSource",
       "PermissionDescriptor",
       "PermissionStatus"
     ],

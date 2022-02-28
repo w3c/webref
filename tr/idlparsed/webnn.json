@@ -90,7 +90,7 @@
         "extAttrs": []
       },
       "MLPowerPreference": {
-        "fragment": "enum MLPowerPreference {\n  // Let the user agent select the most suitable behavior.\n  \"default\",\n\n  // Prioritizes execution speed over power consumption.\n  \"high-performance\",\n\n  // Prioritizes power consumption over other considerations such as execution speed.\n  \"low-power\"\n};",
+        "fragment": "enum MLPowerPreference {\n  \"default\",\n  \"high-performance\",\n  \"low-power\"\n};",
         "type": "enum",
         "name": "MLPowerPreference",
         "values": [
@@ -110,7 +110,7 @@
         "extAttrs": []
       },
       "MLContextOptions": {
-        "fragment": "dictionary MLContextOptions {\n  // Preferred kind of device used\n  MLDevicePreference devicePreference = \"default\";\n\n  // Preference as related to power consumption\n  MLPowerPreference powerPreference = \"default\";\n};",
+        "fragment": "dictionary MLContextOptions {\n  MLDevicePreference devicePreference = \"default\";\n  MLPowerPreference powerPreference = \"default\";\n};",
         "type": "dictionary",
         "name": "MLContextOptions",
         "inheritance": null,
@@ -156,7 +156,7 @@
         "partial": false
       },
       "ML": {
-        "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface ML {\n  // Create a context with options\n  MLContext createContext(optional MLContextOptions options = {});\n\n  // Create a context from WebGL rendering context\n  MLContext createContext(WebGLRenderingContext glContext);\n\n  // Create a context from WebGPU device\n  MLContext createContext(GPUDevice gpuDevice);\n};",
+        "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface ML {\n  MLContext createContext(optional MLContextOptions options = {});\n  MLContext createContext(WebGLRenderingContext glContext);\n  MLContext createContext(GPUDevice gpuDevice);\n};",
         "type": "interface",
         "name": "ML",
         "inheritance": null,
