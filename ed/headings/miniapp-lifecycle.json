@@ -1,0 +1,251 @@
+{
+  "spec": {
+    "title": "MiniApp Lifecycle",
+    "url": "https://w3c.github.io/miniapp-lifecycle/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://w3c.github.io/miniapp-lifecycle/#title",
+      "level": 1,
+      "title": "MiniApp Lifecycle"
+    },
+    {
+      "id": "toc",
+      "href": "https://w3c.github.io/miniapp-lifecycle/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "background",
+      "href": "https://w3c.github.io/miniapp-lifecycle/#background",
+      "level": 2,
+      "title": "Background",
+      "number": "1"
+    },
+    {
+      "id": "miniapp-global-application-lifecycle",
+      "href": "https://w3c.github.io/miniapp-lifecycle/#miniapp-global-application-lifecycle",
+      "level": 2,
+      "title": "MiniApp Global Application Lifecycle",
+      "number": "2"
+    },
+    {
+      "id": "miniapp-global-application-lifecycle-events",
+      "href": "https://w3c.github.io/miniapp-lifecycle/#miniapp-global-application-lifecycle-events",
+      "level": 3,
+      "title": "MiniApp Global Application Lifecycle Events",
+      "number": "2.1"
+    },
+    {
+      "id": "miniapp-global-application-lifecycle-states",
+      "href": "https://w3c.github.io/miniapp-lifecycle/#miniapp-global-application-lifecycle-states",
+      "level": 3,
+      "title": "MiniApp Global Application Lifecycle States",
+      "number": "2.2"
+    },
+    {
+      "id": "globalstate-enum",
+      "href": "https://w3c.github.io/miniapp-lifecycle/#globalstate-enum",
+      "level": 3,
+      "title": "GlobalState enum",
+      "number": "2.3"
+    },
+    {
+      "id": "miniapp-global-application-lifecycle-interface-and-callbacks",
+      "href": "https://w3c.github.io/miniapp-lifecycle/#miniapp-global-application-lifecycle-interface-and-callbacks",
+      "level": 3,
+      "title": "MiniApp Global Application Lifecycle interface and callbacks",
+      "number": "2.4"
+    },
+    {
+      "id": "getglobalstate-method",
+      "href": "https://w3c.github.io/miniapp-lifecycle/#getglobalstate-method",
+      "level": 4,
+      "title": "getGlobalState() method",
+      "number": "2.4.1"
+    },
+    {
+      "id": "globallaunchedcallback",
+      "href": "https://w3c.github.io/miniapp-lifecycle/#globallaunchedcallback",
+      "level": 4,
+      "title": "globalLaunchedCallback",
+      "number": "2.4.2"
+    },
+    {
+      "id": "globalshowncallback",
+      "href": "https://w3c.github.io/miniapp-lifecycle/#globalshowncallback",
+      "level": 4,
+      "title": "globalShownCallback",
+      "number": "2.4.3"
+    },
+    {
+      "id": "globalhiddencallback",
+      "href": "https://w3c.github.io/miniapp-lifecycle/#globalhiddencallback",
+      "level": 4,
+      "title": "globalHiddenCallback",
+      "number": "2.4.4"
+    },
+    {
+      "id": "globalerrorcallback",
+      "href": "https://w3c.github.io/miniapp-lifecycle/#globalerrorcallback",
+      "level": 4,
+      "title": "globalErrorCallback",
+      "number": "2.4.5"
+    },
+    {
+      "id": "inputobject-interface",
+      "href": "https://w3c.github.io/miniapp-lifecycle/#inputobject-interface",
+      "level": 3,
+      "title": "InputObject interface",
+      "number": "2.5"
+    },
+    {
+      "id": "inputquery-attribute",
+      "href": "https://w3c.github.io/miniapp-lifecycle/#inputquery-attribute",
+      "level": 4,
+      "title": "inputQuery attribute",
+      "number": "2.5.1"
+    },
+    {
+      "id": "pagepath-attribute",
+      "href": "https://w3c.github.io/miniapp-lifecycle/#pagepath-attribute",
+      "level": 4,
+      "title": "pagePath attribute",
+      "number": "2.5.2"
+    },
+    {
+      "id": "referrerinfo-attribute",
+      "href": "https://w3c.github.io/miniapp-lifecycle/#referrerinfo-attribute",
+      "level": 4,
+      "title": "referrerInfo attribute",
+      "number": "2.5.3"
+    },
+    {
+      "id": "lifecycleerror-interface",
+      "href": "https://w3c.github.io/miniapp-lifecycle/#lifecycleerror-interface",
+      "level": 3,
+      "title": "LifecycleError interface",
+      "number": "2.6"
+    },
+    {
+      "id": "errordescription-attribute",
+      "href": "https://w3c.github.io/miniapp-lifecycle/#errordescription-attribute",
+      "level": 4,
+      "title": "errorDescription attribute",
+      "number": "2.6.1"
+    },
+    {
+      "id": "miniapp-page-lifecycle",
+      "href": "https://w3c.github.io/miniapp-lifecycle/#miniapp-page-lifecycle",
+      "level": 2,
+      "title": "MiniApp Page Lifecycle",
+      "number": "3"
+    },
+    {
+      "id": "miniapp-page-lifecycle-events",
+      "href": "https://w3c.github.io/miniapp-lifecycle/#miniapp-page-lifecycle-events",
+      "level": 3,
+      "title": "MiniApp Page Lifecycle Events",
+      "number": "3.1"
+    },
+    {
+      "id": "miniapp-page-lifecycle-states",
+      "href": "https://w3c.github.io/miniapp-lifecycle/#miniapp-page-lifecycle-states",
+      "level": 3,
+      "title": "MiniApp Page Lifecycle States",
+      "number": "3.2"
+    },
+    {
+      "id": "pagestate-enum",
+      "href": "https://w3c.github.io/miniapp-lifecycle/#pagestate-enum",
+      "level": 3,
+      "title": "PageState enum",
+      "number": "3.3"
+    },
+    {
+      "id": "miniapp-page-lifecycle-interface-and-callbacks",
+      "href": "https://w3c.github.io/miniapp-lifecycle/#miniapp-page-lifecycle-interface-and-callbacks",
+      "level": 3,
+      "title": "MiniApp Page Lifecycle interface and callbacks",
+      "number": "3.4"
+    },
+    {
+      "id": "getpagestate-method",
+      "href": "https://w3c.github.io/miniapp-lifecycle/#getpagestate-method",
+      "level": 4,
+      "title": "getPageState() method",
+      "number": "3.4.1"
+    },
+    {
+      "id": "pageloadedcallback",
+      "href": "https://w3c.github.io/miniapp-lifecycle/#pageloadedcallback",
+      "level": 4,
+      "title": "pageLoadedCallback",
+      "number": "3.4.2"
+    },
+    {
+      "id": "pagereadycallback",
+      "href": "https://w3c.github.io/miniapp-lifecycle/#pagereadycallback",
+      "level": 4,
+      "title": "pageReadyCallback",
+      "number": "3.4.3"
+    },
+    {
+      "id": "pageshowncallback",
+      "href": "https://w3c.github.io/miniapp-lifecycle/#pageshowncallback",
+      "level": 4,
+      "title": "pageShownCallback",
+      "number": "3.4.4"
+    },
+    {
+      "id": "pagehiddencallback",
+      "href": "https://w3c.github.io/miniapp-lifecycle/#pagehiddencallback",
+      "level": 4,
+      "title": "pageHiddenCallback",
+      "number": "3.4.5"
+    },
+    {
+      "id": "pageunloadedcallback",
+      "href": "https://w3c.github.io/miniapp-lifecycle/#pageunloadedcallback",
+      "level": 4,
+      "title": "pageUnloadedCallback",
+      "number": "3.4.6"
+    },
+    {
+      "id": "pageinputobject-interface",
+      "href": "https://w3c.github.io/miniapp-lifecycle/#pageinputobject-interface",
+      "level": 3,
+      "title": "PageInputObject interface",
+      "number": "3.5"
+    },
+    {
+      "id": "pageinputquery-attribute",
+      "href": "https://w3c.github.io/miniapp-lifecycle/#pageinputquery-attribute",
+      "level": 4,
+      "title": "pageInputQuery attribute",
+      "number": "3.5.1"
+    },
+    {
+      "id": "privacy-and-security",
+      "href": "https://w3c.github.io/miniapp-lifecycle/#privacy-and-security",
+      "level": 2,
+      "title": "Privacy and Security",
+      "number": "4"
+    },
+    {
+      "id": "references",
+      "href": "https://w3c.github.io/miniapp-lifecycle/#references",
+      "level": 2,
+      "title": "References",
+      "number": "A"
+    },
+    {
+      "id": "informative-references",
+      "href": "https://w3c.github.io/miniapp-lifecycle/#informative-references",
+      "level": 3,
+      "title": "Informative references",
+      "number": "A.1"
+    }
+  ]
+}
