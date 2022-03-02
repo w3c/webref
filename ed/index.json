@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2022-03-02T06:38:53.381Z",
+  "date": "2022-03-02T09:36:57.238Z",
   "options": {
     "fallback": "webref-fallback/ed/index.json",
     "output": "report",
@@ -20,10 +20,10 @@
     ]
   },
   "stats": {
-    "crawled": 462,
-    "errors": 1
+    "crawled": 465,
+    "errors": 0
   },
-  "crawler": "reffy-6.5.0",
+  "crawler": "reffy-6.6.0",
   "results": [
     {
       "url": "https://compat.spec.whatwg.org/",
@@ -18530,7 +18530,6 @@
       "dfns": "dfns/html-media-capture.json",
       "headings": "headings/html-media-capture.json",
       "ids": "ids/html-media-capture.json",
-      "error": "Error: Evaluation failed: Error: Respec generation took too long\n    at isReady (__puppeteer_evaluation_script__:20:27)\n    at isReady (__puppeteer_evaluation_script__:27:27)\n    at async isReady (__puppeteer_evaluation_script__:27:21)\n    at async isReady (__puppeteer_evaluation_script__:27:21)\n    at async isReady (__puppeteer_evaluation_script__:27:21)\n    at async isReady (__puppeteer_evaluation_script__:27:21)\n    at async isReady (__puppeteer_evaluation_script__:27:21)\n    at async isReady (__puppeteer_evaluation_script__:27:21)\n    at async isReady (__puppeteer_evaluation_script__:27:21)\n    at async isReady (__puppeteer_evaluation_script__:27:21) Error: Evaluation failed: Error: Respec generation took too long\n    at isReady (__puppeteer_evaluation_script__:20:27)\n    at isReady (__puppeteer_evaluation_script__:27:27)\n    at async isReady (__puppeteer_evaluation_script__:27:21)\n    at async isReady (__puppeteer_evaluation_script__:27:21)\n    at async isReady (__puppeteer_evaluation_script__:27:21)\n    at async isReady (__puppeteer_evaluation_script__:27:21)\n    at async isReady (__puppeteer_evaluation_script__:27:21)\n    at async isReady (__puppeteer_evaluation_script__:27:21)\n    at async isReady (__puppeteer_evaluation_script__:27:21)\n    at async isReady (__puppeteer_evaluation_script__:27:21)\n    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:221:19)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:110:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 350)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)",
       "idlparsed": "idlparsed/html-media-capture.json"
     },
     {
@@ -19682,6 +19681,153 @@
       "headings": "headings/mediastream-recording.json",
       "ids": "ids/mediastream-recording.json",
       "idlparsed": "idlparsed/mediastream-recording.json"
+    },
+    {
+      "url": "https://www.w3.org/TR/miniapp-lifecycle/",
+      "seriesComposition": "full",
+      "shortname": "miniapp-lifecycle",
+      "series": {
+        "shortname": "miniapp-lifecycle",
+        "currentSpecification": "miniapp-lifecycle",
+        "title": "MiniApp Lifecycle",
+        "shortTitle": "MiniApp Lifecycle",
+        "releaseUrl": "https://www.w3.org/TR/miniapp-lifecycle/",
+        "nightlyUrl": "https://w3c.github.io/miniapp-lifecycle/"
+      },
+      "categories": [],
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "MiniApps Working Group",
+          "url": "https://www.w3.org/2021/miniapps/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/miniapp-lifecycle/",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/miniapp-lifecycle/",
+        "repository": "https://github.com/w3c/miniapp-lifecycle",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "title": "MiniApp Lifecycle",
+      "source": "w3c",
+      "shortTitle": "MiniApp Lifecycle",
+      "versions": [
+        "https://www.w3.org/TR/miniapp-lifecycle/",
+        "https://w3c.github.io/miniapp-lifecycle/"
+      ],
+      "crawled": "https://w3c.github.io/miniapp-lifecycle/",
+      "crawlCacheInfo": {
+        "lastModified": "Thu, 24 Feb 2022 12:42:44 GMT"
+      },
+      "generator": "respec",
+      "date": "24 February 2022",
+      "links": "links/miniapp-lifecycle.json",
+      "refs": "refs/miniapp-lifecycle.json",
+      "dfns": "dfns/miniapp-lifecycle.json",
+      "headings": "headings/miniapp-lifecycle.json",
+      "ids": "ids/miniapp-lifecycle.json"
+    },
+    {
+      "url": "https://www.w3.org/TR/miniapp-manifest/",
+      "seriesComposition": "full",
+      "shortname": "miniapp-manifest",
+      "series": {
+        "shortname": "miniapp-manifest",
+        "currentSpecification": "miniapp-manifest",
+        "title": "MiniApp Manifest",
+        "shortTitle": "MiniApp Manifest",
+        "releaseUrl": "https://www.w3.org/TR/miniapp-manifest/",
+        "nightlyUrl": "https://w3c.github.io/miniapp-manifest/"
+      },
+      "categories": [],
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "MiniApps Working Group",
+          "url": "https://www.w3.org/2021/miniapps/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/miniapp-manifest/",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/miniapp-manifest/",
+        "repository": "https://github.com/w3c/miniapp-manifest",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "title": "MiniApp Manifest",
+      "source": "w3c",
+      "shortTitle": "MiniApp Manifest",
+      "versions": [
+        "https://www.w3.org/TR/miniapp-manifest/",
+        "https://w3c.github.io/miniapp-manifest/"
+      ],
+      "crawled": "https://w3c.github.io/miniapp-manifest/",
+      "crawlCacheInfo": {
+        "lastModified": "Fri, 28 Jan 2022 14:23:33 GMT"
+      },
+      "generator": "respec",
+      "date": "28 January 2022",
+      "links": "links/miniapp-manifest.json",
+      "refs": "refs/miniapp-manifest.json",
+      "dfns": "dfns/miniapp-manifest.json",
+      "headings": "headings/miniapp-manifest.json",
+      "ids": "ids/miniapp-manifest.json"
+    },
+    {
+      "url": "https://www.w3.org/TR/miniapp-packaging/",
+      "seriesComposition": "full",
+      "shortname": "miniapp-packaging",
+      "series": {
+        "shortname": "miniapp-packaging",
+        "currentSpecification": "miniapp-packaging",
+        "title": "MiniApp Packaging",
+        "shortTitle": "MiniApp Packaging",
+        "releaseUrl": "https://www.w3.org/TR/miniapp-packaging/",
+        "nightlyUrl": "https://w3c.github.io/miniapp-packaging/"
+      },
+      "categories": [],
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "MiniApps Working Group",
+          "url": "https://www.w3.org/2021/miniapps/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/miniapp-packaging/",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/miniapp-packaging/",
+        "repository": "https://github.com/w3c/miniapp-packaging",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "title": "MiniApp Packaging",
+      "source": "w3c",
+      "shortTitle": "MiniApp Packaging",
+      "versions": [
+        "https://www.w3.org/TR/miniapp-packaging/",
+        "https://w3c.github.io/miniapp-packaging/"
+      ],
+      "crawled": "https://w3c.github.io/miniapp-packaging/",
+      "crawlCacheInfo": {
+        "lastModified": "Fri, 25 Feb 2022 15:49:14 GMT"
+      },
+      "generator": "respec",
+      "date": "25 February 2022",
+      "links": "links/miniapp-packaging.json",
+      "refs": "refs/miniapp-packaging.json",
+      "dfns": "dfns/miniapp-packaging.json",
+      "headings": "headings/miniapp-packaging.json",
+      "ids": "ids/miniapp-packaging.json"
     },
     {
       "url": "https://www.w3.org/TR/mixed-content/",

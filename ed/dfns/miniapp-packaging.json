@@ -1,0 +1,674 @@
+{
+  "spec": {
+    "title": "MiniApp Packaging",
+    "url": "https://w3c.github.io/miniapp-packaging/"
+  },
+  "dfns": [
+    {
+      "id": "dfn-signature",
+      "href": "https://w3c.github.io/miniapp-packaging/#dfn-signature",
+      "linkingText": [
+        "signatures",
+        "signature",
+        "digital signature",
+        "digital signatures",
+        "Digital signature"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-terminology",
+        "href": "https://w3c.github.io/miniapp-packaging/#sec-terminology",
+        "title": "Terminology",
+        "number": "1.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-filename",
+      "href": "https://w3c.github.io/miniapp-packaging/#dfn-filename",
+      "linkingText": [
+        "file name",
+        "file names",
+        "File name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-terminology",
+        "href": "https://w3c.github.io/miniapp-packaging/#sec-terminology",
+        "title": "Terminology",
+        "number": "1.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-miniapp",
+      "href": "https://w3c.github.io/miniapp-packaging/#dfn-miniapp",
+      "linkingText": [
+        "MiniApps",
+        "MiniApp"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-terminology",
+        "href": "https://w3c.github.io/miniapp-packaging/#sec-terminology",
+        "title": "Terminology",
+        "number": "1.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-package",
+      "href": "https://w3c.github.io/miniapp-packaging/#dfn-package",
+      "linkingText": [
+        "MiniApp package",
+        "MiniApp packages",
+        "package"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-terminology",
+        "href": "https://w3c.github.io/miniapp-packaging/#sec-terminology",
+        "title": "Terminology",
+        "number": "1.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-resource",
+      "href": "https://w3c.github.io/miniapp-packaging/#dfn-resource",
+      "linkingText": [
+        "resources",
+        "resource",
+        "MiniApp resources",
+        "MiniApp resource"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-terminology",
+        "href": "https://w3c.github.io/miniapp-packaging/#sec-terminology",
+        "title": "Terminology",
+        "number": "1.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-page",
+      "href": "https://w3c.github.io/miniapp-packaging/#dfn-page",
+      "linkingText": [
+        "pages",
+        "page",
+        "MiniApp pages",
+        "MiniApp page"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-terminology",
+        "href": "https://w3c.github.io/miniapp-packaging/#sec-terminology",
+        "title": "Terminology",
+        "number": "1.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-useragent",
+      "href": "https://w3c.github.io/miniapp-packaging/#dfn-useragent",
+      "linkingText": [
+        "user agents",
+        "user agent",
+        "MiniApp user agents",
+        "MiniApp user agent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-terminology",
+        "href": "https://w3c.github.io/miniapp-packaging/#sec-terminology",
+        "title": "Terminology",
+        "number": "1.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-container",
+      "href": "https://w3c.github.io/miniapp-packaging/#dfn-container",
+      "linkingText": [
+        "ZIP container",
+        "ZIP containers",
+        "MiniApp ZIP containers",
+        "MiniApp ZIP container"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-terminology",
+        "href": "https://w3c.github.io/miniapp-packaging/#sec-terminology",
+        "title": "Terminology",
+        "number": "1.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-widget",
+      "href": "https://w3c.github.io/miniapp-packaging/#dfn-widget",
+      "linkingText": [
+        "widget",
+        "widgets",
+        "MiniApp widgets",
+        "MiniApp widget"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-terminology",
+        "href": "https://w3c.github.io/miniapp-packaging/#sec-terminology",
+        "title": "Terminology",
+        "number": "1.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-start-page",
+      "href": "https://w3c.github.io/miniapp-packaging/#dfn-start-page",
+      "linkingText": [
+        "MiniApp start pages",
+        "start page",
+        "start pages",
+        "MiniApp start page"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-terminology",
+        "href": "https://w3c.github.io/miniapp-packaging/#sec-terminology",
+        "title": "Terminology",
+        "number": "1.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-root-directory",
+      "href": "https://w3c.github.io/miniapp-packaging/#dfn-root-directory",
+      "linkingText": [
+        "root directory",
+        "root directories",
+        "MiniApp root directories",
+        "MiniApp root directory"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "root-directory",
+        "href": "https://w3c.github.io/miniapp-packaging/#root-directory",
+        "title": "Root Directory",
+        "number": "2.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-i18n-directory",
+      "href": "https://w3c.github.io/miniapp-packaging/#dfn-i18n-directory",
+      "linkingText": [
+        "i18n directory"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "i18n-directory",
+        "href": "https://w3c.github.io/miniapp-packaging/#i18n-directory",
+        "title": "i18n Directory",
+        "number": "2.1.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-html-resource",
+      "href": "https://w3c.github.io/miniapp-packaging/#dfn-html-resource",
+      "linkingText": [
+        "MiniApp HTML resource",
+        "MiniApp HTML resources",
+        "HTML resource",
+        "HTML resources"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-miniapp-resources-html",
+        "href": "https://w3c.github.io/miniapp-packaging/#sec-miniapp-resources-html",
+        "title": "HTML Resources",
+        "number": "2.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-css-resource",
+      "href": "https://w3c.github.io/miniapp-packaging/#dfn-css-resource",
+      "linkingText": [
+        "MiniApp CSS resource",
+        "MiniApp CSS resources",
+        "CSS resources"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-miniapp-resources-css",
+        "href": "https://w3c.github.io/miniapp-packaging/#sec-miniapp-resources-css",
+        "title": "CSS Resources",
+        "number": "2.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-js-resource",
+      "href": "https://w3c.github.io/miniapp-packaging/#dfn-js-resource",
+      "linkingText": [
+        "MiniApp scripting resource",
+        "Scripting resources"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-miniapp-resources-js",
+        "href": "https://w3c.github.io/miniapp-packaging/#sec-miniapp-resources-js",
+        "title": "Scripting Resources",
+        "number": "2.2.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-localization-resources",
+      "href": "https://w3c.github.io/miniapp-packaging/#dfn-localization-resources",
+      "linkingText": [
+        "MiniApp localization resources",
+        "Localization resources",
+        "localization resources",
+        "MiniApp localization resource"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-miniapp-resources-i18n",
+        "href": "https://w3c.github.io/miniapp-packaging/#sec-miniapp-resources-i18n",
+        "title": "Localization Resources",
+        "number": "2.2.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-signing_block",
+      "href": "https://w3c.github.io/miniapp-packaging/#dfn-signing_block",
+      "linkingText": [
+        "signing block",
+        "MiniApp signing blocks",
+        "signing blocks",
+        "MiniApp signing block"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-miniapp-digital-signature-requirements",
+        "href": "https://w3c.github.io/miniapp-packaging/#sec-miniapp-digital-signature-requirements",
+        "title": "Digital Signature Requirements",
+        "number": "3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-magic-numbers",
+      "href": "https://w3c.github.io/miniapp-packaging/#dfn-magic-numbers",
+      "linkingText": [
+        "magic numbers",
+        "signing block magic numbers"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-miniapp-digital-signature-requirements",
+        "href": "https://w3c.github.io/miniapp-packaging/#sec-miniapp-digital-signature-requirements",
+        "title": "Digital Signature Requirements",
+        "number": "3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-i18n",
+      "href": "https://w3c.github.io/miniapp-packaging/#dfn-i18n",
+      "linkingText": [
+        "internationalization",
+        "i18n",
+        "Internationalization"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-miniapp-i18n",
+        "href": "https://w3c.github.io/miniapp-packaging/#sec-miniapp-i18n",
+        "title": "Internationalization",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-localization",
+      "href": "https://w3c.github.io/miniapp-packaging/#dfn-localization",
+      "linkingText": [
+        "localization",
+        "Localization"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-miniapp-i18n",
+        "href": "https://w3c.github.io/miniapp-packaging/#sec-miniapp-i18n",
+        "title": "Internationalization",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-process-a-miniapp-package",
+      "href": "https://w3c.github.io/miniapp-packaging/#dfn-process-a-miniapp-package",
+      "linkingText": [
+        "process a MiniApp package"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-miniapp-processing",
+        "href": "https://w3c.github.io/miniapp-packaging/#sec-miniapp-processing",
+        "title": "MiniApp Package Processing",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-retrieving-a-miniapp-zip-container",
+      "href": "https://w3c.github.io/miniapp-packaging/#dfn-retrieving-a-miniapp-zip-container",
+      "linkingText": [
+        "retrieving a MiniApp ZIP container",
+        "retrieve a MiniApp ZIP container"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-miniapp-processing-retrieval",
+        "href": "https://w3c.github.io/miniapp-packaging/#sec-miniapp-processing-retrieval",
+        "title": "MiniApp ZIP Container Retrieval",
+        "number": "5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-verifying-a-miniapp-zip-container",
+      "href": "https://w3c.github.io/miniapp-packaging/#dfn-verifying-a-miniapp-zip-container",
+      "linkingText": [
+        "verifying a MiniApp ZIP container",
+        "Verify a MiniApp ZIP container",
+        "verify a MiniApp ZIP container"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-miniapp-processing-verify",
+        "href": "https://w3c.github.io/miniapp-packaging/#sec-miniapp-processing-verify",
+        "title": "MiniApp ZIP Container Verification",
+        "number": "5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-processing-the-digital-signatures",
+      "href": "https://w3c.github.io/miniapp-packaging/#dfn-processing-the-digital-signatures",
+      "linkingText": [
+        "processing the digital signatures",
+        "Process the digital signatures",
+        "process the digital signatures"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-miniapp-digital-signatures-processing",
+        "href": "https://w3c.github.io/miniapp-packaging/#sec-miniapp-digital-signatures-processing",
+        "title": "Digital Signatures Processing",
+        "number": "5.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-processing-the-miniapp-manifest",
+      "href": "https://w3c.github.io/miniapp-packaging/#dfn-processing-the-miniapp-manifest",
+      "linkingText": [
+        "processing the MiniApp manifest",
+        "process the MiniApp manifest"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-miniapp-processing-manifest",
+        "href": "https://w3c.github.io/miniapp-packaging/#sec-miniapp-processing-manifest",
+        "title": "MiniApp Manifest Processing",
+        "number": "5.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-preparing-the-platform-runtime",
+      "href": "https://w3c.github.io/miniapp-packaging/#dfn-preparing-the-platform-runtime",
+      "linkingText": [
+        "preparing the platform runtime",
+        "prepare the platform runtime"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-miniapp-platform-runtime-preparation",
+        "href": "https://w3c.github.io/miniapp-packaging/#sec-miniapp-platform-runtime-preparation",
+        "title": "Platform Runtime Preparation",
+        "number": "5.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-verify-platform-compatibility",
+      "href": "https://w3c.github.io/miniapp-packaging/#dfn-verify-platform-compatibility",
+      "linkingText": [
+        "Verify platform compatibility",
+        "verify platform compatibility"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-miniapp-platform-compatibility-verification",
+        "href": "https://w3c.github.io/miniapp-packaging/#sec-miniapp-platform-compatibility-verification",
+        "title": "Platform Compatibility Verification",
+        "number": "5.4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-determining-the-start-page",
+      "href": "https://w3c.github.io/miniapp-packaging/#dfn-determining-the-start-page",
+      "linkingText": [
+        "determining the start page",
+        "determine the start page"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-miniapp-platform-start-page-identification",
+        "href": "https://w3c.github.io/miniapp-packaging/#sec-miniapp-platform-start-page-identification",
+        "title": "Start Page Identification",
+        "number": "5.4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-extracting-the-start-page-from-uri",
+      "href": "https://w3c.github.io/miniapp-packaging/#dfn-extracting-the-start-page-from-uri",
+      "linkingText": [
+        "extracting the start page from URI",
+        "extract the start page from URI"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-miniapp-processing-platform-start-page-uri",
+        "href": "https://w3c.github.io/miniapp-packaging/#sec-miniapp-processing-platform-start-page-uri",
+        "title": "Extraction of Start Page From URI",
+        "number": "5.4.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-extracting-the-start-page-from-manifest",
+      "href": "https://w3c.github.io/miniapp-packaging/#dfn-extracting-the-start-page-from-manifest",
+      "linkingText": [
+        "extracting the start page from manifest",
+        "extract the start page from manifest"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-miniapp-processing-platform-start-page-manifest",
+        "href": "https://w3c.github.io/miniapp-packaging/#sec-miniapp-processing-platform-start-page-manifest",
+        "title": "Extraction of Start Page From Manifest",
+        "number": "5.4.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-extracting-the-locale",
+      "href": "https://w3c.github.io/miniapp-packaging/#dfn-extracting-the-locale",
+      "linkingText": [
+        "extracting the locale",
+        "extract the locale"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-miniapp-processing-locale",
+        "href": "https://w3c.github.io/miniapp-packaging/#sec-miniapp-processing-locale",
+        "title": "Extraction of Locale",
+        "number": "5.4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-provisioning-profile",
+      "href": "https://w3c.github.io/miniapp-packaging/#dfn-provisioning-profile",
+      "linkingText": [
+        "provisioning profile"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "distributor-signature",
+        "href": "https://w3c.github.io/miniapp-packaging/#distributor-signature",
+        "title": "Distributor Signature",
+        "number": "B.1.1.1.2"
+      },
+      "definedIn": "prose"
+    }
+  ]
+}
