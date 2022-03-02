@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2022-03-02T09:36:57.238Z",
+  "date": "2022-03-02T12:41:24.745Z",
   "options": {
     "fallback": "webref-fallback/ed/index.json",
     "output": "report",
@@ -21,7 +21,7 @@
   },
   "stats": {
     "crawled": 465,
-    "errors": 0
+    "errors": 1
   },
   "crawler": "reffy-6.6.0",
   "results": [
@@ -4682,10 +4682,10 @@
       ],
       "crawled": "https://wicg.github.io/compute-pressure/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 28 Feb 2022 11:15:22 GMT"
+        "lastModified": "Wed, 02 Mar 2022 12:16:41 GMT"
       },
       "generator": "respec",
-      "date": "28 February 2022",
+      "date": "02 March 2022",
       "links": "links/compute-pressure.json",
       "refs": "refs/compute-pressure.json",
       "idl": "idl/compute-pressure.idl",
@@ -17029,7 +17029,8 @@
       "css": "css/CSS.json",
       "dfns": "dfns/CSS22.json",
       "headings": "headings/CSS22.json",
-      "ids": "ids/CSS22.json"
+      "ids": "ids/CSS22.json",
+      "error": "Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers' Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers'\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:483:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 324)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/css3-exclusions/",
