@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2022-03-03T01:01:58.674Z",
+  "date": "2022-03-03T06:46:38.570Z",
   "options": {
     "fallback": "webref-fallback/ed/index.json",
     "output": "report",
@@ -21,7 +21,7 @@
   },
   "stats": {
     "crawled": 465,
-    "errors": 0
+    "errors": 1
   },
   "crawler": "reffy-6.6.0",
   "results": [
@@ -2053,7 +2053,7 @@
       ],
       "crawled": "https://tc39.es/ecma262/multipage/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 03 Mar 2022 00:14:29 GMT"
+        "lastModified": "Thu, 03 Mar 2022 04:02:33 GMT"
       },
       "date": "3 March 2022",
       "links": "links/ecmascript.json",
@@ -7730,10 +7730,10 @@
       ],
       "crawled": "https://wicg.github.io/webpackage/loading.html",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 01 Mar 2022 06:53:47 GMT"
+        "lastModified": "Thu, 03 Mar 2022 04:21:31 GMT"
       },
       "generator": "bikeshed",
-      "date": "1 March 2022",
+      "date": "3 March 2022",
       "links": "links/webpackage.json",
       "refs": "refs/webpackage.json",
       "dfns": "dfns/webpackage.json",
@@ -17029,7 +17029,8 @@
       "css": "css/CSS.json",
       "dfns": "dfns/CSS22.json",
       "headings": "headings/CSS22.json",
-      "ids": "ids/CSS22.json"
+      "ids": "ids/CSS22.json",
+      "error": "Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers' Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers'\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:483:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 324)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/css3-exclusions/",
@@ -20800,10 +20801,10 @@
       ],
       "crawled": "https://w3c.github.io/permissions/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 25 Feb 2022 00:49:43 GMT"
+        "lastModified": "Thu, 03 Mar 2022 04:36:07 GMT"
       },
       "generator": "respec",
-      "date": "25 February 2022",
+      "date": "03 March 2022",
       "links": "links/permissions.json",
       "refs": "refs/permissions.json",
       "idl": "idl/permissions.idl",
@@ -23953,10 +23954,10 @@
       ],
       "crawled": "https://gpuweb.github.io/gpuweb/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 02 Mar 2022 19:20:49 GMT"
+        "lastModified": "Thu, 03 Mar 2022 02:36:02 GMT"
       },
       "generator": "bikeshed",
-      "date": "2 March 2022",
+      "date": "3 March 2022",
       "links": "links/webgpu.json",
       "refs": "refs/webgpu.json",
       "idl": "idl/webgpu.idl",
@@ -25134,10 +25135,10 @@
       ],
       "crawled": "https://gpuweb.github.io/gpuweb/wgsl/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 02 Mar 2022 19:20:49 GMT"
+        "lastModified": "Thu, 03 Mar 2022 02:36:02 GMT"
       },
       "generator": "bikeshed",
-      "date": "2 March 2022",
+      "date": "3 March 2022",
       "links": "links/WGSL.json",
       "refs": "refs/WGSL.json",
       "dfns": "dfns/WGSL.json",
