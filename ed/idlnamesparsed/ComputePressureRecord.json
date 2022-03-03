@@ -6,7 +6,7 @@
       "title": "Compute Pressure API",
       "url": "https://wicg.github.io/compute-pressure/"
     },
-    "fragment": "dictionary ComputePressureRecord {\n  PressureState state;\n  ComputePressureObserverOptions options;\n};",
+    "fragment": "dictionary ComputePressureRecord {\n  ComputePressureSource source;\n  ComputePressureState state;\n  ComputePressureObserverOptions options;\n};",
     "href": "https://wicg.github.io/compute-pressure/#dom-computepressurerecord"
   },
   "extended": [],
@@ -34,6 +34,27 @@
         "definedIn": "heading"
       },
       {
+        "id": "dom-computepressurerecord-source",
+        "href": "https://wicg.github.io/compute-pressure/#dom-computepressurerecord-source",
+        "linkingText": [
+          "source"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "ComputePressureRecord"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-source-attribute",
+          "href": "https://wicg.github.io/compute-pressure/#the-source-attribute",
+          "title": "The source attribute",
+          "number": "8.3.1"
+        },
+        "definedIn": "heading"
+      },
+      {
         "id": "dom-computepressurerecord-state",
         "href": "https://wicg.github.io/compute-pressure/#dom-computepressurerecord-state",
         "linkingText": [
@@ -50,7 +71,7 @@
           "id": "the-state-attribute",
           "href": "https://wicg.github.io/compute-pressure/#the-state-attribute",
           "title": "The state attribute",
-          "number": "8.3.1"
+          "number": "8.3.2"
         },
         "definedIn": "heading"
       },
@@ -71,7 +92,7 @@
           "id": "the-options-attribute",
           "href": "https://wicg.github.io/compute-pressure/#the-options-attribute",
           "title": "The options attribute",
-          "number": "8.3.2"
+          "number": "8.3.3"
         },
         "definedIn": "heading"
       }

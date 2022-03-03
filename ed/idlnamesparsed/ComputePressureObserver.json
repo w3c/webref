@@ -6,7 +6,7 @@
       "title": "Compute Pressure API",
       "url": "https://wicg.github.io/compute-pressure/"
     },
-    "fragment": "[Exposed=(DedicatedWorker,SharedWorker,Window), SecureContext]\ninterface ComputePressureObserver {\n  constructor(ComputePressureUpdateCallback callback);\n\n  undefined observe(ComputePressureTarget target, optional ComputePressureObserverOptions options = {});\n  undefined unobserve(ComputePressureTarget target);\n  undefined disconnect();\n  sequence<ComputePressureRecord> takeRecords();\n\n  [SameObject] static readonly attribute FrozenArray<DOMString> supportedTargetTypes;\n\n  [Exposed=Window] static Promise<PermissionState> requestPermission();\n};",
+    "fragment": "[Exposed=(DedicatedWorker,SharedWorker,Window), SecureContext]\ninterface ComputePressureObserver {\n  constructor(ComputePressureUpdateCallback callback);\n\n  undefined observe(ComputePressureSource source, optional ComputePressureObserverOptions options = {});\n  undefined unobserve(ComputePressureSource source);\n  undefined disconnect();\n  sequence<ComputePressureRecord> takeRecords();\n\n  [SameObject] static readonly attribute FrozenArray<DOMString> supportedSources;\n\n  [Exposed=Window] static Promise<PermissionState> requestPermission();\n};",
     "href": "https://wicg.github.io/compute-pressure/#dom-computepressureobserver"
   },
   "extended": [],
@@ -64,8 +64,8 @@
         "href": "https://wicg.github.io/compute-pressure/#dom-computepressureobserver-observe",
         "linkingText": [
           "observe()",
-          "observe(target)",
-          "observe(target, options)"
+          "observe(source)",
+          "observe(source, options)"
         ],
         "localLinkingText": [
           "ComputePressureObserver.observe",
@@ -91,7 +91,7 @@
         "href": "https://wicg.github.io/compute-pressure/#dom-computepressureobserver-unobserve",
         "linkingText": [
           "unobserve()",
-          "unobserve(target)"
+          "unobserve(source)"
         ],
         "localLinkingText": [
           "ComputePressureObserver.unobserve",
@@ -163,13 +163,13 @@
         "definedIn": "heading"
       },
       {
-        "id": "dom-computepressureobserver-supportedtargettypes",
-        "href": "https://wicg.github.io/compute-pressure/#dom-computepressureobserver-supportedtargettypes",
+        "id": "dom-computepressureobserver-supportedsources",
+        "href": "https://wicg.github.io/compute-pressure/#dom-computepressureobserver-supportedsources",
         "linkingText": [
-          "supportedTargetTypes"
+          "supportedSources"
         ],
         "localLinkingText": [
-          "ComputePressureObserver.supportedTargetTypes"
+          "ComputePressureObserver.supportedSources"
         ],
         "type": "attribute",
         "for": [
@@ -178,9 +178,9 @@
         "access": "public",
         "informative": false,
         "heading": {
-          "id": "the-supportedtargettypes-attribute",
-          "href": "https://wicg.github.io/compute-pressure/#the-supportedtargettypes-attribute",
-          "title": "The supportedTargetTypes attribute",
+          "id": "the-supportedsources-attribute",
+          "href": "https://wicg.github.io/compute-pressure/#the-supportedsources-attribute",
+          "title": "The supportedSources attribute",
           "number": "8.2.6"
         },
         "definedIn": "heading"
