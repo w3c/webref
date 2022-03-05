@@ -52,11 +52,20 @@
   },
   "descriptors": {},
   "valuespaces": {
+    "<basic-shape-rect>": {
+      "value": "<inset()> | <rect()> | <xywh()>"
+    },
     "<shape-box>": {
       "value": "<box> | margin-box"
     },
     "<inset()>": {
       "value": "inset( <length-percentage>{1,4} [ round <'border-radius'> ]? )"
+    },
+    "<xywh()>": {
+      "value": "xywh( <length-percentage>{2} <length-percentage [0,∞]>{2} [ round <'border-radius'> ]? )"
+    },
+    "<rect()>": {
+      "value": "rect( [ <length-percentage> | auto ]{4} [ round <'border-radius'> ]? )"
     },
     "<circle()>": {
       "value": "circle( <shape-radius>? [ at <position> ]? )"
