@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2022-03-05T00:47:53.110Z",
+  "date": "2022-03-05T06:36:13.533Z",
   "options": {
     "fallback": "webref-fallback/ed/index.json",
     "output": "report",
@@ -21,7 +21,7 @@
   },
   "stats": {
     "crawled": 465,
-    "errors": 0
+    "errors": 1
   },
   "crawler": "reffy-6.6.0",
   "results": [
@@ -17029,7 +17029,8 @@
       "css": "css/CSS.json",
       "dfns": "dfns/CSS22.json",
       "headings": "headings/CSS22.json",
-      "ids": "ids/CSS22.json"
+      "ids": "ids/CSS22.json",
+      "error": "Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers' Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers'\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:483:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 324)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/css3-exclusions/",
@@ -18464,10 +18465,10 @@
       ],
       "crawled": "https://w3c.github.io/html-aria/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 04 Mar 2022 16:11:52 GMT"
+        "lastModified": "Sat, 05 Mar 2022 00:49:41 GMT"
       },
       "generator": "respec",
-      "date": "04 March 2022",
+      "date": "05 March 2022",
       "links": "links/html-aria.json",
       "refs": "refs/html-aria.json",
       "dfns": "dfns/html-aria.json",
@@ -23953,10 +23954,10 @@
       ],
       "crawled": "https://gpuweb.github.io/gpuweb/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 04 Mar 2022 22:35:50 GMT"
+        "lastModified": "Sat, 05 Mar 2022 01:30:54 GMT"
       },
       "generator": "bikeshed",
-      "date": "4 March 2022",
+      "date": "5 March 2022",
       "links": "links/webgpu.json",
       "refs": "refs/webgpu.json",
       "idl": "idl/webgpu.idl",
@@ -25134,10 +25135,10 @@
       ],
       "crawled": "https://gpuweb.github.io/gpuweb/wgsl/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 04 Mar 2022 22:35:50 GMT"
+        "lastModified": "Sat, 05 Mar 2022 01:30:54 GMT"
       },
       "generator": "bikeshed",
-      "date": "4 March 2022",
+      "date": "5 March 2022",
       "links": "links/WGSL.json",
       "refs": "refs/WGSL.json",
       "dfns": "dfns/WGSL.json",
