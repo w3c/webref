@@ -1,0 +1,1817 @@
+{
+  "spec": {
+    "title": "MiniApp Manifest",
+    "url": "https://www.w3.org/TR/miniapp-manifest/"
+  },
+  "dfns": [
+    {
+      "id": "dfn-miniapp-manifest-s",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-miniapp-manifest-s",
+      "linkingText": [
+        "MiniApp manifest's",
+        "manifest",
+        "MiniApp manifests",
+        "MiniApp manifest"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "miniapp-manifest",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#miniapp-manifest",
+        "title": "MiniApp Manifest",
+        "number": "1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-dir",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-dir",
+      "linkingText": [
+        "dir"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dir-member",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#dir-member",
+        "title": "dir member",
+        "number": "1.4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-icons",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-icons",
+      "linkingText": [
+        "icons"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "icons-member",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#icons-member",
+        "title": "icons member",
+        "number": "1.4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-lang",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-lang",
+      "linkingText": [
+        "lang"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "lang-member",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#lang-member",
+        "title": "lang member",
+        "number": "1.4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-name",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "MiniApp manifest"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "name-member",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#name-member",
+        "title": "name member",
+        "number": "1.4.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-short_name",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-short_name",
+      "linkingText": [
+        "short_name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "short_name-member",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#short_name-member",
+        "title": "short_name member",
+        "number": "1.4.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-description",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-description",
+      "linkingText": [
+        "description"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "description-member",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#description-member",
+        "title": "description member",
+        "number": "1.5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-process-the-description-member",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-process-the-description-member",
+      "linkingText": [
+        "process the description member"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "description-member",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#description-member",
+        "title": "description member",
+        "number": "1.5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-app_id",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-app_id",
+      "linkingText": [
+        "app_id"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "app_id-member",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#app_id-member",
+        "title": "app_id member",
+        "number": "1.6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-process-the-app_id-member",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-process-the-app_id-member",
+      "linkingText": [
+        "process the app_id member"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "app_id-member",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#app_id-member",
+        "title": "app_id member",
+        "number": "1.6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-color_scheme",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-color_scheme",
+      "linkingText": [
+        "color_scheme"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "color_scheme-member",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#color_scheme-member",
+        "title": "color_scheme member",
+        "number": "1.6.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-color-scheme-values",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-color-scheme-values",
+      "linkingText": [
+        "color scheme values"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "color_scheme-member",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#color_scheme-member",
+        "title": "color_scheme member",
+        "number": "1.6.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-auto",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-auto",
+      "linkingText": [
+        "\"auto\""
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "color_scheme"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "color_scheme-member",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#color_scheme-member",
+        "title": "color_scheme member",
+        "number": "1.6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-light",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-light",
+      "linkingText": [
+        "\"light\""
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "color_scheme"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "color_scheme-member",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#color_scheme-member",
+        "title": "color_scheme member",
+        "number": "1.6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-dark",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-dark",
+      "linkingText": [
+        "\"dark\""
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "color_scheme"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "color_scheme-member",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#color_scheme-member",
+        "title": "color_scheme member",
+        "number": "1.6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-process-the-color_scheme-member",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-process-the-color_scheme-member",
+      "linkingText": [
+        "process the color_scheme member"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "color_scheme-member",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#color_scheme-member",
+        "title": "color_scheme member",
+        "number": "1.6.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-device_type",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-device_type",
+      "linkingText": [
+        "device_type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "device_type-member",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#device_type-member",
+        "title": "device_type member",
+        "number": "1.6.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-process-the-device_type-member",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-process-the-device_type-member",
+      "linkingText": [
+        "process the device_type member"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "device_type-member",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#device_type-member",
+        "title": "device_type member",
+        "number": "1.6.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-pages",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-pages",
+      "linkingText": [
+        "pages"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "pages-member",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#pages-member",
+        "title": "pages member",
+        "number": "1.6.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-route",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-route",
+      "linkingText": [
+        "route",
+        "page route",
+        "page routes",
+        "MiniApp page route"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "pages-member",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#pages-member",
+        "title": "pages member",
+        "number": "1.6.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-process-the-pages-member",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-process-the-pages-member",
+      "linkingText": [
+        "process the pages member"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "pages-member",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#pages-member",
+        "title": "pages member",
+        "number": "1.6.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-platform_version",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-platform_version",
+      "linkingText": [
+        "platform_version"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "platform_version-member",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#platform_version-member",
+        "title": "platform_version member",
+        "number": "1.6.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-process-the-platform_version-member",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-process-the-platform_version-member",
+      "linkingText": [
+        "process the platform_version member"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "platform_version-member",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#platform_version-member",
+        "title": "platform_version member",
+        "number": "1.6.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-req_permissions",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-req_permissions",
+      "linkingText": [
+        "req_permissions"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "req_permissions-member",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#req_permissions-member",
+        "title": "req_permissions member",
+        "number": "1.6.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-process-the-req_permissions-member",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-process-the-req_permissions-member",
+      "linkingText": [
+        "process the req_permissions member"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "req_permissions-member",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#req_permissions-member",
+        "title": "req_permissions member",
+        "number": "1.6.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-version",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-version",
+      "linkingText": [
+        "version"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "version-member",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#version-member",
+        "title": "version member",
+        "number": "1.6.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-code",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-code",
+      "linkingText": [
+        "code"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "version-member",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#version-member",
+        "title": "version member",
+        "number": "1.6.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-name-0",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-name-0",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "version-member",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#version-member",
+        "title": "version member",
+        "number": "1.6.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-process-the-version-member",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-process-the-version-member",
+      "linkingText": [
+        "process the version member"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "version-member",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#version-member",
+        "title": "version member",
+        "number": "1.6.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-widgets",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-widgets",
+      "linkingText": [
+        "widgets"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "widgets-member",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#widgets-member",
+        "title": "widgets member",
+        "number": "1.6.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-process-the-widgets-member",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-process-the-widgets-member",
+      "linkingText": [
+        "process the widgets member"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "widgets-member",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#widgets-member",
+        "title": "widgets member",
+        "number": "1.6.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-window",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-window",
+      "linkingText": [
+        "window"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "window-member",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#window-member",
+        "title": "window member",
+        "number": "1.6.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-process-the-window-member",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-process-the-window-member",
+      "linkingText": [
+        "process the window member"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "window-member",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#window-member",
+        "title": "window member",
+        "number": "1.6.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-processing-a-miniapp-manifest",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-processing-a-miniapp-manifest",
+      "linkingText": [
+        "processing a MiniApp manifest",
+        "process a MiniApp manifest"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "processing",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#processing",
+        "title": "Processing the manifest",
+        "number": "1.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-platform-version-resource",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-platform-version-resource",
+      "linkingText": [
+        "platform version resource",
+        "MiniApp platform version resources",
+        "MiniApp platform version resource's",
+        "MiniApp platform version resource"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-platform-version-resources",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#sec-platform-version-resources",
+        "title": "MiniApp platform version resources",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-min_code",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-min_code",
+      "linkingText": [
+        "min_code"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "MiniApp platform version resource"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "version-min-code",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#version-min-code",
+        "title": "min_code member",
+        "number": "2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-process-the-platform-version-s-min_code-member",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-process-the-platform-version-s-min_code-member",
+      "linkingText": [
+        "process the platform version's min_code member"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "version-min-code",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#version-min-code",
+        "title": "min_code member",
+        "number": "2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-release_type",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-release_type",
+      "linkingText": [
+        "release_type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "MiniApp platform version resource"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "release_type-member",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#release_type-member",
+        "title": "release_type member",
+        "number": "2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-process-the-platform-version-s-release_type-member",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-process-the-platform-version-s-release_type-member",
+      "linkingText": [
+        "process the platform version's release_type member"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "release_type-member",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#release_type-member",
+        "title": "release_type member",
+        "number": "2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-target_code",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-target_code",
+      "linkingText": [
+        "target_code"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "MiniApp platform version resource"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "target_code-member",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#target_code-member",
+        "title": "target_code member",
+        "number": "2.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-process-the-platform-version-s-target_code-member",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-process-the-platform-version-s-target_code-member",
+      "linkingText": [
+        "process the platform version's target_code member"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "target_code-member",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#target_code-member",
+        "title": "target_code member",
+        "number": "2.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-permission-resource",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-permission-resource",
+      "linkingText": [
+        "permission resource",
+        "MiniApp permission resources",
+        "MiniApp permission resource's",
+        "MiniApp permission resource"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-permission-resources",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#sec-permission-resources",
+        "title": "MiniApp permission resources",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-name-1",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-name-1",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "MiniApp permission resource"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "permission-name",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#permission-name",
+        "title": "name member",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-process-the-permission-resource-s-name-member",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-process-the-permission-resource-s-name-member",
+      "linkingText": [
+        "process the permission resource's name member"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "permission-name",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#permission-name",
+        "title": "name member",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-reason",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-reason",
+      "linkingText": [
+        "reason"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "reason-member",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#reason-member",
+        "title": "reason member",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-process-the-permission-resource-s-reason-member",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-process-the-permission-resource-s-reason-member",
+      "linkingText": [
+        "process the permission resource's reason member"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "reason-member",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#reason-member",
+        "title": "reason member",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-version-resource",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-version-resource",
+      "linkingText": [
+        "version resource",
+        "MiniApp version resources",
+        "MiniApp version resource's",
+        "MiniApp version resource"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-version-resources",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#sec-version-resources",
+        "title": "MiniApp version resources",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-code-0",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-code-0",
+      "linkingText": [
+        "code"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "MiniApp version resource"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "code-member",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#code-member",
+        "title": "code member",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-process-the-version-s-code-member",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-process-the-version-s-code-member",
+      "linkingText": [
+        "process the version's code member"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "code-member",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#code-member",
+        "title": "code member",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-name-2",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-name-2",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "MiniApp version resource"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "version-name",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#version-name",
+        "title": "name member",
+        "number": "4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-process-the-version-s-name-member",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-process-the-version-s-name-member",
+      "linkingText": [
+        "process the version's name member"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "version-name",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#version-name",
+        "title": "name member",
+        "number": "4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-widget-resources",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-widget-resources",
+      "linkingText": [
+        "widget resources",
+        "MiniApp widget resources",
+        "MiniApp widget resource's",
+        "MiniApp widget resource"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-widget-resource-members",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#sec-widget-resource-members",
+        "title": "MiniApp widget resource members",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-name-3",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-name-3",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "MiniApp widget resource"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "widget-name",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#widget-name",
+        "title": "name member",
+        "number": "5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-process-the-widget-s-name-member",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-process-the-widget-s-name-member",
+      "linkingText": [
+        "process the widget's name member"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "widget-name",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#widget-name",
+        "title": "name member",
+        "number": "5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-path",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-path",
+      "linkingText": [
+        "path"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "path-member",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#path-member",
+        "title": "path member",
+        "number": "5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-process-the-widget-s-path-member",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-process-the-widget-s-path-member",
+      "linkingText": [
+        "process the widget's path member"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "path-member",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#path-member",
+        "title": "path member",
+        "number": "5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-min_code-0",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-min_code-0",
+      "linkingText": [
+        "min_code"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "MiniApp widget resource"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "widget-min-code",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#widget-min-code",
+        "title": "min_code member",
+        "number": "5.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-process-the-widget-s-min_code-member",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-process-the-widget-s-min_code-member",
+      "linkingText": [
+        "process the widget's min_code member"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "widget-min-code",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#widget-min-code",
+        "title": "min_code member",
+        "number": "5.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-window-resource",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-window-resource",
+      "linkingText": [
+        "window resource",
+        "MiniApp window resources",
+        "MiniApp window resource's",
+        "MiniApp window resource"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-window-resource-members",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#sec-window-resource-members",
+        "title": "MiniApp window resource members",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-auto_design_width",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-auto_design_width",
+      "linkingText": [
+        "auto_design_width"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "auto_design_width-member",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#auto_design_width-member",
+        "title": "auto_design_width member",
+        "number": "6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-process-the-window-s-auto_design_width-member",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-process-the-window-s-auto_design_width-member",
+      "linkingText": [
+        "process the window's auto_design_width member"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "auto_design_width-member",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#auto_design_width-member",
+        "title": "auto_design_width member",
+        "number": "6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-background_color",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-background_color",
+      "linkingText": [
+        "background_color"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "MiniApp window resource"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "background_color-member",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#background_color-member",
+        "title": "background_color member",
+        "number": "6.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-background_text_style",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-background_text_style",
+      "linkingText": [
+        "background_text_style"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "background_text_style-member",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#background_text_style-member",
+        "title": "background_text_style member",
+        "number": "6.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-background-text-style-values",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-background-text-style-values",
+      "linkingText": [
+        "background text style values"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "background_text_style-member",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#background_text_style-member",
+        "title": "background_text_style member",
+        "number": "6.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-light-0",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-light-0",
+      "linkingText": [
+        "light"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "background text style values"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "background_text_style-member",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#background_text_style-member",
+        "title": "background_text_style member",
+        "number": "6.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-dark-0",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-dark-0",
+      "linkingText": [
+        "dark"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "background text style values"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "background_text_style-member",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#background_text_style-member",
+        "title": "background_text_style member",
+        "number": "6.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-process-the-window-s-background_text_style-member",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-process-the-window-s-background_text_style-member",
+      "linkingText": [
+        "process the window's background_text_style member"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "background_text_style-member",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#background_text_style-member",
+        "title": "background_text_style member",
+        "number": "6.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-design_width",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-design_width",
+      "linkingText": [
+        "design_width"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "design_width-member",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#design_width-member",
+        "title": "design_width member",
+        "number": "6.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-process-the-window-s-design_width-member",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-process-the-window-s-design_width-member",
+      "linkingText": [
+        "process the window's design_width member"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "design_width-member",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#design_width-member",
+        "title": "design_width member",
+        "number": "6.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-enable_pull_down_refresh",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-enable_pull_down_refresh",
+      "linkingText": [
+        "enable_pull_down_refresh"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "enable_pull_down_refresh-member",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#enable_pull_down_refresh-member",
+        "title": "enable_pull_down_refresh member",
+        "number": "6.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-process-the-window-s-enable_pull_down_refresh-member",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-process-the-window-s-enable_pull_down_refresh-member",
+      "linkingText": [
+        "process the window's enable_pull_down_refresh member"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "enable_pull_down_refresh-member",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#enable_pull_down_refresh-member",
+        "title": "enable_pull_down_refresh member",
+        "number": "6.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-fullscreen",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-fullscreen",
+      "linkingText": [
+        "fullscreen"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "fullscreen-member",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#fullscreen-member",
+        "title": "fullscreen member",
+        "number": "6.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-process-the-window-s-fullscreen-member",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-process-the-window-s-fullscreen-member",
+      "linkingText": [
+        "process the window's fullscreen member"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "fullscreen-member",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#fullscreen-member",
+        "title": "fullscreen member",
+        "number": "6.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-navigation_bar_background_color",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-navigation_bar_background_color",
+      "linkingText": [
+        "navigation_bar_background_color"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "navigation_bar_background_color-member",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#navigation_bar_background_color-member",
+        "title": "navigation_bar_background_color member",
+        "number": "6.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-navigation_bar_text_style",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-navigation_bar_text_style",
+      "linkingText": [
+        "navigation_bar_text_style"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "navigation_bar_text_style-member",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#navigation_bar_text_style-member",
+        "title": "navigation_bar_text_style member",
+        "number": "6.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-text-style-values",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-text-style-values",
+      "linkingText": [
+        "text style values"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "navigation_bar_text_style-member",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#navigation_bar_text_style-member",
+        "title": "navigation_bar_text_style member",
+        "number": "6.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-white",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-white",
+      "linkingText": [
+        "white"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "text style values"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "navigation_bar_text_style-member",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#navigation_bar_text_style-member",
+        "title": "navigation_bar_text_style member",
+        "number": "6.8"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-black",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-black",
+      "linkingText": [
+        "black"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "text style values"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "navigation_bar_text_style-member",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#navigation_bar_text_style-member",
+        "title": "navigation_bar_text_style member",
+        "number": "6.8"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-process-the-window-s-navigation_bar_text_style-member",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-process-the-window-s-navigation_bar_text_style-member",
+      "linkingText": [
+        "process the window's navigation_bar_text_style member"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "navigation_bar_text_style-member",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#navigation_bar_text_style-member",
+        "title": "navigation_bar_text_style member",
+        "number": "6.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-navigation_bar_title_text",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-navigation_bar_title_text",
+      "linkingText": [
+        "navigation_bar_title_text"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "navigation_bar_title_text-member",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#navigation_bar_title_text-member",
+        "title": "navigation_bar_title_text member",
+        "number": "6.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-process-the-window-s-navigation_bar_title_text-member",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-process-the-window-s-navigation_bar_title_text-member",
+      "linkingText": [
+        "process the window's navigation_bar_title_text member"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "navigation_bar_title_text-member",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#navigation_bar_title_text-member",
+        "title": "navigation_bar_title_text member",
+        "number": "6.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-navigation_style",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-navigation_style",
+      "linkingText": [
+        "navigation_style"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "navigation_style-member",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#navigation_style-member",
+        "title": "navigation_style member",
+        "number": "6.10"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-navigation-style-values",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-navigation-style-values",
+      "linkingText": [
+        "navigation style values"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "navigation_style-member",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#navigation_style-member",
+        "title": "navigation_style member",
+        "number": "6.10"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-default",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-default",
+      "linkingText": [
+        "default"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "navigation style values"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "navigation_style-member",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#navigation_style-member",
+        "title": "navigation_style member",
+        "number": "6.10"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-custom",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-custom",
+      "linkingText": [
+        "custom"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "navigation style values"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "navigation_style-member",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#navigation_style-member",
+        "title": "navigation_style member",
+        "number": "6.10"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-process-the-window-s-navigation_style-member",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-process-the-window-s-navigation_style-member",
+      "linkingText": [
+        "process the window's navigation_style member"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "navigation_style-member",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#navigation_style-member",
+        "title": "navigation_style member",
+        "number": "6.10"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-on_reach_bottom_distance",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-on_reach_bottom_distance",
+      "linkingText": [
+        "on_reach_bottom_distance"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "on_reach_bottom_distance-member",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#on_reach_bottom_distance-member",
+        "title": "on_reach_bottom_distance member",
+        "number": "6.11"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-process-the-window-s-on_reach_bottom_distance-member",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-process-the-window-s-on_reach_bottom_distance-member",
+      "linkingText": [
+        "process the window's on_reach_bottom_distance member"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "on_reach_bottom_distance-member",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#on_reach_bottom_distance-member",
+        "title": "on_reach_bottom_distance member",
+        "number": "6.11"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-orientation",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-orientation",
+      "linkingText": [
+        "orientation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "orientation-member",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#orientation-member",
+        "title": "orientation member",
+        "number": "6.12"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-orientation-values",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-orientation-values",
+      "linkingText": [
+        "orientation values"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "orientation-member",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#orientation-member",
+        "title": "orientation member",
+        "number": "6.12"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-process-the-window-s-orientation-member",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-process-the-window-s-orientation-member",
+      "linkingText": [
+        "process the window's orientation member"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "orientation-member",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#orientation-member",
+        "title": "orientation member",
+        "number": "6.12"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-localizable-members",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dfn-localizable-members",
+      "linkingText": [
+        "localizable members",
+        "localizable member"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-localizable-members",
+        "href": "https://www.w3.org/TR/miniapp-manifest/#sec-localizable-members",
+        "title": "Localizable members",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    }
+  ]
+}

@@ -1,0 +1,486 @@
+{
+  "spec": {
+    "title": "MiniApp Manifest",
+    "url": "https://www.w3.org/TR/miniapp-manifest/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#title",
+      "level": 1,
+      "title": "MiniApp Manifest"
+    },
+    {
+      "id": "abstract",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "sotd",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#sotd",
+      "level": 2,
+      "title": "Status of This Document"
+    },
+    {
+      "id": "toc",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "miniapp-manifest",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#miniapp-manifest",
+      "level": 2,
+      "title": "MiniApp Manifest",
+      "number": "1"
+    },
+    {
+      "id": "manifest-conformance",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#manifest-conformance",
+      "level": 3,
+      "title": "Conformance",
+      "number": "1.1"
+    },
+    {
+      "id": "summary-of-members",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#summary-of-members",
+      "level": 3,
+      "title": "Summary of Members",
+      "number": "1.2"
+    },
+    {
+      "id": "sec-example",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#sec-example",
+      "level": 3,
+      "title": "Example",
+      "number": "1.3"
+    },
+    {
+      "id": "webappmanifest-members",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#webappmanifest-members",
+      "level": 3,
+      "title": "Web Application Manifest members",
+      "number": "1.4"
+    },
+    {
+      "id": "dir-member",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dir-member",
+      "level": 4,
+      "title": "dir member",
+      "number": "1.4.1"
+    },
+    {
+      "id": "icons-member",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#icons-member",
+      "level": 4,
+      "title": "icons member",
+      "number": "1.4.2"
+    },
+    {
+      "id": "lang-member",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#lang-member",
+      "level": 4,
+      "title": "lang member",
+      "number": "1.4.3"
+    },
+    {
+      "id": "name-member",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#name-member",
+      "level": 4,
+      "title": "name member",
+      "number": "1.4.4"
+    },
+    {
+      "id": "short_name-member",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#short_name-member",
+      "level": 4,
+      "title": "short_name member",
+      "number": "1.4.5"
+    },
+    {
+      "id": "webappmanifest-app-info-members",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#webappmanifest-app-info-members",
+      "level": 3,
+      "title": "Application Information members",
+      "number": "1.5"
+    },
+    {
+      "id": "description-member",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#description-member",
+      "level": 4,
+      "title": "description member",
+      "number": "1.5.1"
+    },
+    {
+      "id": "supplementary-manifest-members",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#supplementary-manifest-members",
+      "level": 3,
+      "title": "Supplementary members",
+      "number": "1.6"
+    },
+    {
+      "id": "app_id-member",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#app_id-member",
+      "level": 4,
+      "title": "app_id member",
+      "number": "1.6.1"
+    },
+    {
+      "id": "color_scheme-member",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#color_scheme-member",
+      "level": 4,
+      "title": "color_scheme member",
+      "number": "1.6.2"
+    },
+    {
+      "id": "device_type-member",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#device_type-member",
+      "level": 4,
+      "title": "device_type member",
+      "number": "1.6.3"
+    },
+    {
+      "id": "pages-member",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#pages-member",
+      "level": 4,
+      "title": "pages member",
+      "number": "1.6.4"
+    },
+    {
+      "id": "platform_version-member",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#platform_version-member",
+      "level": 4,
+      "title": "platform_version member",
+      "number": "1.6.5"
+    },
+    {
+      "id": "req_permissions-member",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#req_permissions-member",
+      "level": 4,
+      "title": "req_permissions member",
+      "number": "1.6.6"
+    },
+    {
+      "id": "version-member",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#version-member",
+      "level": 4,
+      "title": "version member",
+      "number": "1.6.7"
+    },
+    {
+      "id": "widgets-member",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#widgets-member",
+      "level": 4,
+      "title": "widgets member",
+      "number": "1.6.8"
+    },
+    {
+      "id": "window-member",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#window-member",
+      "level": 4,
+      "title": "window member",
+      "number": "1.6.9"
+    },
+    {
+      "id": "processing",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#processing",
+      "level": 3,
+      "title": "Processing the manifest",
+      "number": "1.7"
+    },
+    {
+      "id": "sec-platform-version-resources",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#sec-platform-version-resources",
+      "level": 2,
+      "title": "MiniApp platform version resources",
+      "number": "2"
+    },
+    {
+      "id": "version-min-code",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#version-min-code",
+      "level": 3,
+      "title": "min_code member",
+      "number": "2.1"
+    },
+    {
+      "id": "release_type-member",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#release_type-member",
+      "level": 3,
+      "title": "release_type member",
+      "number": "2.2"
+    },
+    {
+      "id": "target_code-member",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#target_code-member",
+      "level": 3,
+      "title": "target_code member",
+      "number": "2.3"
+    },
+    {
+      "id": "sec-permission-resources",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#sec-permission-resources",
+      "level": 2,
+      "title": "MiniApp permission resources",
+      "number": "3"
+    },
+    {
+      "id": "permission-name",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#permission-name",
+      "level": 3,
+      "title": "name member",
+      "number": "3.1"
+    },
+    {
+      "id": "reason-member",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#reason-member",
+      "level": 3,
+      "title": "reason member",
+      "number": "3.2"
+    },
+    {
+      "id": "sec-version-resources",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#sec-version-resources",
+      "level": 2,
+      "title": "MiniApp version resources",
+      "number": "4"
+    },
+    {
+      "id": "code-member",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#code-member",
+      "level": 3,
+      "title": "code member",
+      "number": "4.1"
+    },
+    {
+      "id": "version-name",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#version-name",
+      "level": 3,
+      "title": "name member",
+      "number": "4.2"
+    },
+    {
+      "id": "sec-widget-resource-members",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#sec-widget-resource-members",
+      "level": 2,
+      "title": "MiniApp widget resource members",
+      "number": "5"
+    },
+    {
+      "id": "widget-name",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#widget-name",
+      "level": 3,
+      "title": "name member",
+      "number": "5.1"
+    },
+    {
+      "id": "path-member",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#path-member",
+      "level": 3,
+      "title": "path member",
+      "number": "5.2"
+    },
+    {
+      "id": "widget-min-code",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#widget-min-code",
+      "level": 3,
+      "title": "min_code member",
+      "number": "5.3"
+    },
+    {
+      "id": "sec-window-resource-members",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#sec-window-resource-members",
+      "level": 2,
+      "title": "MiniApp window resource members",
+      "number": "6"
+    },
+    {
+      "id": "auto_design_width-member",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#auto_design_width-member",
+      "level": 3,
+      "title": "auto_design_width member",
+      "number": "6.1"
+    },
+    {
+      "id": "background_color-member",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#background_color-member",
+      "level": 3,
+      "title": "background_color member",
+      "number": "6.2"
+    },
+    {
+      "id": "background_text_style-member",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#background_text_style-member",
+      "level": 3,
+      "title": "background_text_style member",
+      "number": "6.3"
+    },
+    {
+      "id": "design_width-member",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#design_width-member",
+      "level": 3,
+      "title": "design_width member",
+      "number": "6.4"
+    },
+    {
+      "id": "enable_pull_down_refresh-member",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#enable_pull_down_refresh-member",
+      "level": 3,
+      "title": "enable_pull_down_refresh member",
+      "number": "6.5"
+    },
+    {
+      "id": "fullscreen-member",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#fullscreen-member",
+      "level": 3,
+      "title": "fullscreen member",
+      "number": "6.6"
+    },
+    {
+      "id": "navigation_bar_background_color-member",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#navigation_bar_background_color-member",
+      "level": 3,
+      "title": "navigation_bar_background_color member",
+      "number": "6.7"
+    },
+    {
+      "id": "navigation_bar_text_style-member",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#navigation_bar_text_style-member",
+      "level": 3,
+      "title": "navigation_bar_text_style member",
+      "number": "6.8"
+    },
+    {
+      "id": "navigation_bar_title_text-member",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#navigation_bar_title_text-member",
+      "level": 3,
+      "title": "navigation_bar_title_text member",
+      "number": "6.9"
+    },
+    {
+      "id": "navigation_style-member",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#navigation_style-member",
+      "level": 3,
+      "title": "navigation_style member",
+      "number": "6.10"
+    },
+    {
+      "id": "on_reach_bottom_distance-member",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#on_reach_bottom_distance-member",
+      "level": 3,
+      "title": "on_reach_bottom_distance member",
+      "number": "6.11"
+    },
+    {
+      "id": "orientation-member",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#orientation-member",
+      "level": 3,
+      "title": "orientation member",
+      "number": "6.12"
+    },
+    {
+      "id": "sec-localizable-members",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#sec-localizable-members",
+      "level": 2,
+      "title": "Localizable members",
+      "number": "7"
+    },
+    {
+      "id": "dependencies",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#dependencies",
+      "level": 2,
+      "title": "Dependencies",
+      "number": "8"
+    },
+    {
+      "id": "accessibility-considerations",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#accessibility-considerations",
+      "level": 2,
+      "title": "Accessibility considerations",
+      "number": "9"
+    },
+    {
+      "id": "security-and-privacy-considerations",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#security-and-privacy-considerations",
+      "level": 2,
+      "title": "10. Security and Privacy Considerations"
+    },
+    {
+      "id": "content-constraint",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#content-constraint",
+      "level": 3,
+      "title": "Content constraint",
+      "number": "10.1"
+    },
+    {
+      "id": "local-resource-access",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#local-resource-access",
+      "level": 3,
+      "title": "Local resource access",
+      "number": "10.2"
+    },
+    {
+      "id": "integrity",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#integrity",
+      "level": 3,
+      "title": "Integrity",
+      "number": "10.3"
+    },
+    {
+      "id": "transparency",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#transparency",
+      "level": 3,
+      "title": "Transparency",
+      "number": "10.4"
+    },
+    {
+      "id": "conformance",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#conformance",
+      "level": 2,
+      "title": "Conformance",
+      "number": "A"
+    },
+    {
+      "id": "sec-json-schema",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#sec-json-schema",
+      "level": 2,
+      "title": "JSON Schema",
+      "number": "B"
+    },
+    {
+      "id": "acknowledgements",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#acknowledgements",
+      "level": 2,
+      "title": "Acknowledgements",
+      "number": "C"
+    },
+    {
+      "id": "extensibility",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#extensibility",
+      "level": 2,
+      "title": "Extensibility",
+      "number": "D"
+    },
+    {
+      "id": "references",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#references",
+      "level": 2,
+      "title": "References",
+      "number": "E"
+    },
+    {
+      "id": "normative-references",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "number": "E.1"
+    },
+    {
+      "id": "informative-references",
+      "href": "https://www.w3.org/TR/miniapp-manifest/#informative-references",
+      "level": 3,
+      "title": "Informative references",
+      "number": "E.2"
+    }
+  ]
+}

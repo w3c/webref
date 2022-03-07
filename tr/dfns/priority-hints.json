@@ -5,10 +5,10 @@
   },
   "dfns": [
     {
-      "id": "importance-enum",
-      "href": "https://wicg.github.io/priority-hints/#importance-enum",
+      "id": "fetchpriority-enum",
+      "href": "https://wicg.github.io/priority-hints/#fetchpriority-enum",
       "linkingText": [
-        "Importance enum"
+        "FetchPriority enum"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -24,10 +24,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "enumdef-importance",
-      "href": "https://wicg.github.io/priority-hints/#enumdef-importance",
+      "id": "enumdef-fetchpriority",
+      "href": "https://wicg.github.io/priority-hints/#enumdef-fetchpriority",
       "linkingText": [
-        "Importance"
+        "FetchPriority"
       ],
       "localLinkingText": [],
       "type": "enum",
@@ -43,15 +43,15 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-importance-high",
-      "href": "https://wicg.github.io/priority-hints/#dom-importance-high",
+      "id": "dom-fetchpriority-high",
+      "href": "https://wicg.github.io/priority-hints/#dom-fetchpriority-high",
       "linkingText": [
         "\"high\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
       "for": [
-        "Importance"
+        "FetchPriority"
       ],
       "access": "public",
       "informative": false,
@@ -64,15 +64,15 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-importance-low",
-      "href": "https://wicg.github.io/priority-hints/#dom-importance-low",
+      "id": "dom-fetchpriority-low",
+      "href": "https://wicg.github.io/priority-hints/#dom-fetchpriority-low",
       "linkingText": [
         "\"low\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
       "for": [
-        "Importance"
+        "FetchPriority"
       ],
       "access": "public",
       "informative": false,
@@ -85,15 +85,15 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-importance-auto",
-      "href": "https://wicg.github.io/priority-hints/#dom-importance-auto",
+      "id": "dom-fetchpriority-auto",
+      "href": "https://wicg.github.io/priority-hints/#dom-fetchpriority-auto",
       "linkingText": [
         "\"auto\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
       "for": [
-        "Importance"
+        "FetchPriority"
       ],
       "access": "public",
       "informative": false,
@@ -106,8 +106,8 @@
       "definedIn": "pre"
     },
     {
-      "id": "importance-enum-high",
-      "href": "https://wicg.github.io/priority-hints/#importance-enum-high",
+      "id": "fetchpriority-enum-high",
+      "href": "https://wicg.github.io/priority-hints/#fetchpriority-enum-high",
       "linkingText": [
         "high"
       ],
@@ -125,8 +125,8 @@
       "definedIn": "table"
     },
     {
-      "id": "importance-enum-low",
-      "href": "https://wicg.github.io/priority-hints/#importance-enum-low",
+      "id": "fetchpriority-enum-low",
+      "href": "https://wicg.github.io/priority-hints/#fetchpriority-enum-low",
       "linkingText": [
         "low"
       ],
@@ -144,8 +144,8 @@
       "definedIn": "table"
     },
     {
-      "id": "importance-enum-auto",
-      "href": "https://wicg.github.io/priority-hints/#importance-enum-auto",
+      "id": "fetchpriority-enum-auto",
+      "href": "https://wicg.github.io/priority-hints/#fetchpriority-enum-auto",
       "linkingText": [
         "auto"
       ],
@@ -163,10 +163,10 @@
       "definedIn": "table"
     },
     {
-      "id": "concept-request-importance",
-      "href": "https://wicg.github.io/priority-hints/#concept-request-importance",
+      "id": "concept-request-priority",
+      "href": "https://wicg.github.io/priority-hints/#concept-request-priority",
       "linkingText": [
-        "importance"
+        "priority"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -182,10 +182,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-request-importance",
-      "href": "https://wicg.github.io/priority-hints/#dom-request-importance",
+      "id": "dom-request-priority",
+      "href": "https://wicg.github.io/priority-hints/#dom-request-priority",
       "linkingText": [
-        "importance"
+        "priority"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -203,10 +203,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-requestinit-importance",
-      "href": "https://wicg.github.io/priority-hints/#dom-requestinit-importance",
+      "id": "dom-requestinit-priority",
+      "href": "https://wicg.github.io/priority-hints/#dom-requestinit-priority",
       "linkingText": [
-        "importance"
+        "priority"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -224,10 +224,29 @@
       "definedIn": "pre"
     },
     {
-      "id": "importance-attribute",
-      "href": "https://wicg.github.io/priority-hints/#importance-attribute",
+      "id": "internalpriority",
+      "href": "https://wicg.github.io/priority-hints/#internalpriority",
       "linkingText": [
-        "importance attribute"
+        "internalpriority"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "fetch-integration",
+        "href": "https://wicg.github.io/priority-hints/#fetch-integration",
+        "title": "Fetch Integration",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "fetchpriority-attribute",
+      "href": "https://wicg.github.io/priority-hints/#fetchpriority-attribute",
+      "linkingText": [
+        "fetchpriority attribute"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -243,10 +262,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "element-attrdef-img-importance",
-      "href": "https://wicg.github.io/priority-hints/#element-attrdef-img-importance",
+      "id": "element-attrdef-img-fetchpriority",
+      "href": "https://wicg.github.io/priority-hints/#element-attrdef-img-fetchpriority",
       "linkingText": [
-        "importance"
+        "fetchpriority"
       ],
       "localLinkingText": [],
       "type": "element-attr",
@@ -264,10 +283,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-htmlimageelement-importance",
-      "href": "https://wicg.github.io/priority-hints/#dom-htmlimageelement-importance",
+      "id": "dom-htmlimageelement-fetchpriority",
+      "href": "https://wicg.github.io/priority-hints/#dom-htmlimageelement-fetchpriority",
       "linkingText": [
-        "importance"
+        "fetchpriority"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -285,10 +304,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "element-attrdef-link-importance",
-      "href": "https://wicg.github.io/priority-hints/#element-attrdef-link-importance",
+      "id": "element-attrdef-link-fetchpriority",
+      "href": "https://wicg.github.io/priority-hints/#element-attrdef-link-fetchpriority",
       "linkingText": [
-        "importance"
+        "fetchpriority"
       ],
       "localLinkingText": [],
       "type": "element-attr",
@@ -306,10 +325,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-htmllinkelement-importance",
-      "href": "https://wicg.github.io/priority-hints/#dom-htmllinkelement-importance",
+      "id": "dom-htmllinkelement-fetchpriority",
+      "href": "https://wicg.github.io/priority-hints/#dom-htmllinkelement-fetchpriority",
       "linkingText": [
-        "importance"
+        "fetchpriority"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -327,10 +346,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "element-attrdef-script-importance",
-      "href": "https://wicg.github.io/priority-hints/#element-attrdef-script-importance",
+      "id": "element-attrdef-script-fetchpriority",
+      "href": "https://wicg.github.io/priority-hints/#element-attrdef-script-fetchpriority",
       "linkingText": [
-        "importance"
+        "fetchpriority"
       ],
       "localLinkingText": [],
       "type": "element-attr",
@@ -348,10 +367,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-htmlscriptelement-importance",
-      "href": "https://wicg.github.io/priority-hints/#dom-htmlscriptelement-importance",
+      "id": "dom-htmlscriptelement-fetchpriority",
+      "href": "https://wicg.github.io/priority-hints/#dom-htmlscriptelement-fetchpriority",
       "linkingText": [
-        "importance"
+        "fetchpriority"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -369,10 +388,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "element-attrdef-iframe-importance",
-      "href": "https://wicg.github.io/priority-hints/#element-attrdef-iframe-importance",
+      "id": "element-attrdef-iframe-fetchpriority",
+      "href": "https://wicg.github.io/priority-hints/#element-attrdef-iframe-fetchpriority",
       "linkingText": [
-        "importance"
+        "fetchpriority"
       ],
       "localLinkingText": [],
       "type": "element-attr",
@@ -390,10 +409,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-htmliframeelement-importance",
-      "href": "https://wicg.github.io/priority-hints/#dom-htmliframeelement-importance",
+      "id": "dom-htmliframeelement-fetchpriority",
+      "href": "https://wicg.github.io/priority-hints/#dom-htmliframeelement-fetchpriority",
       "linkingText": [
-        "importance"
+        "fetchpriority"
       ],
       "localLinkingText": [],
       "type": "attribute",

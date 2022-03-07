@@ -3,12 +3,12 @@
 interface ComputePressureObserver {
   constructor(ComputePressureUpdateCallback callback);
 
-  undefined observe(ComputePressureTarget target, optional ComputePressureObserverOptions options = {});
-  undefined unobserve(ComputePressureTarget target);
+  undefined observe(ComputePressureSource source, optional ComputePressureObserverOptions options = {});
+  undefined unobserve(ComputePressureSource source);
   undefined disconnect();
   sequence<ComputePressureRecord> takeRecords();
 
-  [SameObject] static readonly attribute FrozenArray<DOMString> supportedTargetTypes;
+  [SameObject] static readonly attribute FrozenArray<DOMString> supportedSources;
 
   [Exposed=Window] static Promise<PermissionState> requestPermission();
 };

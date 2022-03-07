@@ -9,10 +9,10 @@
       "functions": {}
     },
     "idlNames": {
-      "Importance": {
-        "fragment": "enum Importance { \"high\", \"low\", \"auto\" };",
+      "FetchPriority": {
+        "fragment": "enum FetchPriority { \"high\", \"low\", \"auto\" };",
         "type": "enum",
-        "name": "Importance",
+        "name": "FetchPriority",
         "values": [
           {
             "type": "enum-value",
@@ -33,21 +33,21 @@
     "idlExtendedNames": {
       "Request": [
         {
-          "fragment": "partial interface Request {\n  readonly attribute Importance importance;\n};",
+          "fragment": "partial interface Request {\n  readonly attribute FetchPriority priority;\n};",
           "type": "interface",
           "name": "Request",
           "inheritance": null,
           "members": [
             {
               "type": "attribute",
-              "name": "importance",
+              "name": "priority",
               "idlType": {
                 "type": "attribute-type",
                 "extAttrs": [],
                 "generic": "",
                 "nullable": false,
                 "union": false,
-                "idlType": "Importance"
+                "idlType": "FetchPriority"
               },
               "extAttrs": [],
               "special": "",
@@ -60,14 +60,14 @@
       ],
       "RequestInit": [
         {
-          "fragment": "partial dictionary RequestInit {\n  Importance importance;\n};",
+          "fragment": "partial dictionary RequestInit {\n  FetchPriority priority;\n};",
           "type": "dictionary",
           "name": "RequestInit",
           "inheritance": null,
           "members": [
             {
               "type": "field",
-              "name": "importance",
+              "name": "priority",
               "extAttrs": [],
               "idlType": {
                 "type": "dictionary-type",
@@ -75,7 +75,7 @@
                 "generic": "",
                 "nullable": false,
                 "union": false,
-                "idlType": "Importance"
+                "idlType": "FetchPriority"
               },
               "default": null,
               "required": false
@@ -87,14 +87,14 @@
       ],
       "HTMLImageElement": [
         {
-          "fragment": "partial interface HTMLImageElement {\n    [CEReactions] attribute DOMString importance;\n};",
+          "fragment": "partial interface HTMLImageElement {\n    [CEReactions] attribute DOMString fetchpriority;\n};",
           "type": "interface",
           "name": "HTMLImageElement",
           "inheritance": null,
           "members": [
             {
               "type": "attribute",
-              "name": "importance",
+              "name": "fetchpriority",
               "idlType": {
                 "type": "attribute-type",
                 "extAttrs": [],
@@ -121,14 +121,14 @@
       ],
       "HTMLLinkElement": [
         {
-          "fragment": "partial interface HTMLLinkElement {\n    [CEReactions] attribute DOMString importance;\n};",
+          "fragment": "partial interface HTMLLinkElement {\n    [CEReactions] attribute DOMString fetchpriority;\n};",
           "type": "interface",
           "name": "HTMLLinkElement",
           "inheritance": null,
           "members": [
             {
               "type": "attribute",
-              "name": "importance",
+              "name": "fetchpriority",
               "idlType": {
                 "type": "attribute-type",
                 "extAttrs": [],
@@ -155,14 +155,14 @@
       ],
       "HTMLScriptElement": [
         {
-          "fragment": "partial interface HTMLScriptElement {\n    [CEReactions] attribute DOMString importance;\n};",
+          "fragment": "partial interface HTMLScriptElement {\n    [CEReactions] attribute DOMString fetchpriority;\n};",
           "type": "interface",
           "name": "HTMLScriptElement",
           "inheritance": null,
           "members": [
             {
               "type": "attribute",
-              "name": "importance",
+              "name": "fetchpriority",
               "idlType": {
                 "type": "attribute-type",
                 "extAttrs": [],
@@ -189,14 +189,14 @@
       ],
       "HTMLIFrameElement": [
         {
-          "fragment": "partial interface HTMLIFrameElement {\n    [CEReactions] attribute DOMString importance;\n};",
+          "fragment": "partial interface HTMLIFrameElement {\n    [CEReactions] attribute DOMString fetchpriority;\n};",
           "type": "interface",
           "name": "HTMLIFrameElement",
           "inheritance": null,
           "members": [
             {
               "type": "attribute",
-              "name": "importance",
+              "name": "fetchpriority",
               "idlType": {
                 "type": "attribute-type",
                 "extAttrs": [],
@@ -226,10 +226,10 @@
     "exposed": {},
     "dependencies": {
       "Request": [
-        "Importance"
+        "FetchPriority"
       ],
       "RequestInit": [
-        "Importance"
+        "FetchPriority"
       ],
       "HTMLImageElement": [],
       "HTMLLinkElement": [],

@@ -19,10 +19,10 @@
       "functions": {}
     },
     "idlNames": {
-      "PressureState": {
-        "fragment": "enum PressureState { \"nominal\", \"fair\", \"serious\", \"critical\" };",
+      "ComputePressureState": {
+        "fragment": "enum ComputePressureState { \"nominal\", \"fair\", \"serious\", \"critical\" };",
         "type": "enum",
-        "name": "PressureState",
+        "name": "ComputePressureState",
         "values": [
           {
             "type": "enum-value",
@@ -100,10 +100,10 @@
         ],
         "extAttrs": []
       },
-      "ComputePressureTarget": {
-        "fragment": "enum ComputePressureTarget { \"cpu\" };",
+      "ComputePressureSource": {
+        "fragment": "enum ComputePressureSource { \"cpu\" };",
         "type": "enum",
-        "name": "ComputePressureTarget",
+        "name": "ComputePressureSource",
         "values": [
           {
             "type": "enum-value",
@@ -113,7 +113,7 @@
         "extAttrs": []
       },
       "ComputePressureObserver": {
-        "fragment": "[Exposed=(DedicatedWorker,SharedWorker,Window), SecureContext]\ninterface ComputePressureObserver {\n  constructor(ComputePressureUpdateCallback callback);\n\n  undefined observe(ComputePressureTarget target, optional ComputePressureObserverOptions options = {});\n  undefined unobserve(ComputePressureTarget target);\n  undefined disconnect();\n  sequence<ComputePressureRecord> takeRecords();\n\n  [SameObject] static readonly attribute FrozenArray<DOMString> supportedTargetTypes;\n\n  [Exposed=Window] static Promise<PermissionState> requestPermission();\n};",
+        "fragment": "[Exposed=(DedicatedWorker,SharedWorker,Window), SecureContext]\ninterface ComputePressureObserver {\n  constructor(ComputePressureUpdateCallback callback);\n\n  undefined observe(ComputePressureSource source, optional ComputePressureObserverOptions options = {});\n  undefined unobserve(ComputePressureSource source);\n  undefined disconnect();\n  sequence<ComputePressureRecord> takeRecords();\n\n  [SameObject] static readonly attribute FrozenArray<DOMString> supportedSources;\n\n  [Exposed=Window] static Promise<PermissionState> requestPermission();\n};",
         "type": "interface",
         "name": "ComputePressureObserver",
         "inheritance": null,
@@ -154,7 +154,7 @@
             "arguments": [
               {
                 "type": "argument",
-                "name": "target",
+                "name": "source",
                 "extAttrs": [],
                 "idlType": {
                   "type": "argument-type",
@@ -162,7 +162,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "ComputePressureTarget"
+                  "idlType": "ComputePressureSource"
                 },
                 "default": null,
                 "optional": false,
@@ -204,7 +204,7 @@
             "arguments": [
               {
                 "type": "argument",
-                "name": "target",
+                "name": "source",
                 "extAttrs": [],
                 "idlType": {
                   "type": "argument-type",
@@ -212,7 +212,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "ComputePressureTarget"
+                  "idlType": "ComputePressureSource"
                 },
                 "default": null,
                 "optional": false,
@@ -263,7 +263,7 @@
           },
           {
             "type": "attribute",
-            "name": "supportedTargetTypes",
+            "name": "supportedSources",
             "idlType": {
               "type": "attribute-type",
               "extAttrs": [],
@@ -357,11 +357,26 @@
         "partial": false
       },
       "ComputePressureRecord": {
-        "fragment": "dictionary ComputePressureRecord {\n  PressureState state;\n  ComputePressureObserverOptions options;\n};",
+        "fragment": "dictionary ComputePressureRecord {\n  ComputePressureSource source;\n  ComputePressureState state;\n  ComputePressureObserverOptions options;\n};",
         "type": "dictionary",
         "name": "ComputePressureRecord",
         "inheritance": null,
         "members": [
+          {
+            "type": "field",
+            "name": "source",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "ComputePressureSource"
+            },
+            "default": null,
+            "required": false
+          },
           {
             "type": "field",
             "name": "state",
@@ -372,7 +387,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "PressureState"
+              "idlType": "ComputePressureState"
             },
             "default": null,
             "required": false
@@ -422,13 +437,14 @@
     "dependencies": {
       "ComputePressureObserver": [
         "ComputePressureUpdateCallback",
-        "ComputePressureTarget",
+        "ComputePressureSource",
         "ComputePressureObserverOptions",
         "ComputePressureRecord",
         "PermissionState"
       ],
       "ComputePressureRecord": [
-        "PressureState",
+        "ComputePressureSource",
+        "ComputePressureState",
         "ComputePressureObserverOptions"
       ],
       "ComputePressureObserverOptions": []
