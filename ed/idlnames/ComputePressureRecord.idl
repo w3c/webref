@@ -2,5 +2,6 @@
 dictionary ComputePressureRecord {
   ComputePressureSource source;
   ComputePressureState state;
+  sequence<ComputePressureFactor> factors;
   ComputePressureObserverOptions options;
 };
