@@ -1,10 +1,10 @@
 // Source: Close Watcher API (https://wicg.github.io/close-watcher/)
 [Exposed=Window]
 interface CloseWatcher : EventTarget {
-  constructor();
+  constructor(optional CloseWatcherOptions options = {});
 
   undefined destroy();
-  undefined signalClose();
+  undefined close();
 
   attribute EventHandler oncancel;
   attribute EventHandler onclose;
