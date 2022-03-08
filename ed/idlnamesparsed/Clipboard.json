@@ -6,7 +6,7 @@
       "title": "Clipboard API and events",
       "url": "https://www.w3.org/TR/clipboard-apis/"
     },
-    "fragment": "[SecureContext, Exposed=Window] interface Clipboard : EventTarget {\n  Promise<ClipboardItems> read();\n  Promise<DOMString> readText();\n  Promise<undefined> write(ClipboardItems data);\n  Promise<undefined> writeText(DOMString data);\n};",
+    "fragment": "[SecureContext, Exposed=Window]\ninterface Clipboard : EventTarget {\n  Promise<ClipboardItems> read();\n  Promise<DOMString> readText();\n  Promise<undefined> write(ClipboardItems data);\n  Promise<undefined> writeText(DOMString data);\n};",
     "href": "https://w3c.github.io/clipboard-apis/#clipboard"
   },
   "extended": [],
