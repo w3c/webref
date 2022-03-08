@@ -4,6 +4,21 @@
     "url": "https://drafts.csswg.org/css-images-4/"
   },
   "properties": {
+    "object-view-box": {
+      "name": "object-view-box",
+      "value": "none |",
+      "initial": "none",
+      "appliesTo": "replaced elements",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "specified keyword, or computed function",
+      "canonicalOrder": "per grammar",
+      "animationType": "as if possible, otherwise discrete",
+      "styleDeclaration": [
+        "object-view-box",
+        "objectViewBox"
+      ]
+    },
     "object-fit": {
       "name": "object-fit",
       "value": "fill | none | [contain | cover] || scale-down",
@@ -17,6 +32,21 @@
       "styleDeclaration": [
         "object-fit",
         "objectFit"
+      ]
+    },
+    "object-overflow": {
+      "name": "object-overflow",
+      "value": "clip | visible",
+      "initial": "clip",
+      "appliesTo": "replaced elements",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "object-overflow",
+        "objectOverflow"
       ]
     },
     "image-resolution": {
