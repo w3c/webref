@@ -1,289 +1,289 @@
 {
   "spec": {
-    "title": "App History API",
-    "url": "https://wicg.github.io/app-history/"
+    "title": "Navigation API",
+    "url": "https://wicg.github.io/navigation-api/"
   },
   "headings": [
     {
       "id": "title",
-      "href": "https://wicg.github.io/app-history/#title",
+      "href": "https://wicg.github.io/navigation-api/#title",
       "level": 1,
-      "title": "App History API"
+      "title": "Navigation API"
     },
     {
       "id": "abstract",
-      "href": "https://wicg.github.io/app-history/#abstract",
+      "href": "https://wicg.github.io/navigation-api/#abstract",
       "level": 2,
       "title": "Abstract"
     },
     {
       "id": "status",
-      "href": "https://wicg.github.io/app-history/#status",
+      "href": "https://wicg.github.io/navigation-api/#status",
       "level": 2,
       "title": "Status of this document"
     },
     {
       "id": "toc",
-      "href": "https://wicg.github.io/app-history/#toc",
+      "href": "https://wicg.github.io/navigation-api/#toc",
       "level": 2,
       "title": "Table of Contents"
     },
     {
       "id": "global",
-      "href": "https://wicg.github.io/app-history/#global",
+      "href": "https://wicg.github.io/navigation-api/#global",
       "level": 2,
-      "title": "The AppHistory class",
+      "title": "The Navigation class",
       "number": "1"
     },
     {
       "id": "entries-api",
-      "href": "https://wicg.github.io/app-history/#entries-api",
+      "href": "https://wicg.github.io/navigation-api/#entries-api",
       "level": 3,
-      "title": "Introspecting the app history entry list",
+      "title": "Introspecting the navigation API history entry list",
       "number": "1.1"
     },
     {
       "id": "current-entry",
-      "href": "https://wicg.github.io/app-history/#current-entry",
+      "href": "https://wicg.github.io/navigation-api/#current-entry",
       "level": 3,
       "title": "The current entry",
       "number": "1.2"
     },
     {
       "id": "ongoing-state",
-      "href": "https://wicg.github.io/app-history/#ongoing-state",
+      "href": "https://wicg.github.io/navigation-api/#ongoing-state",
       "level": 3,
       "title": "Ongoing navigation tracking",
       "number": "1.3"
     },
     {
       "id": "global-navigate",
-      "href": "https://wicg.github.io/app-history/#global-navigate",
+      "href": "https://wicg.github.io/navigation-api/#global-navigate",
       "level": 3,
       "title": "Navigating",
       "number": "1.4"
     },
     {
       "id": "global-traversing",
-      "href": "https://wicg.github.io/app-history/#global-traversing",
+      "href": "https://wicg.github.io/navigation-api/#global-traversing",
       "level": 3,
       "title": "Traversing",
       "number": "1.5"
     },
     {
       "id": "global-events",
-      "href": "https://wicg.github.io/app-history/#global-events",
+      "href": "https://wicg.github.io/navigation-api/#global-events",
       "level": 3,
       "title": "Event handlers",
       "number": "1.6"
     },
     {
       "id": "navigate-event",
-      "href": "https://wicg.github.io/app-history/#navigate-event",
+      "href": "https://wicg.github.io/navigation-api/#navigate-event",
       "level": 2,
       "title": "The navigate event",
       "number": "2"
     },
     {
       "id": "navigate-event-class",
-      "href": "https://wicg.github.io/app-history/#navigate-event-class",
+      "href": "https://wicg.github.io/navigation-api/#navigate-event-class",
       "level": 3,
-      "title": "The AppHistoryNavigateEvent class",
+      "title": "The NavigateEvent class",
       "number": "2.1"
     },
     {
       "id": "navigate-event-destination",
-      "href": "https://wicg.github.io/app-history/#navigate-event-destination",
+      "href": "https://wicg.github.io/navigation-api/#navigate-event-destination",
       "level": 3,
-      "title": "The AppHistoryDestination class",
+      "title": "The NavigationDestination class",
       "number": "2.2"
     },
     {
       "id": "navigate-event-firing",
-      "href": "https://wicg.github.io/app-history/#navigate-event-firing",
+      "href": "https://wicg.github.io/navigation-api/#navigate-event-firing",
       "level": 3,
       "title": "Firing the event",
       "number": "2.3"
     },
     {
-      "id": "apphistoryentry-class",
-      "href": "https://wicg.github.io/app-history/#apphistoryentry-class",
+      "id": "NavigationHistoryEntry-class",
+      "href": "https://wicg.github.io/navigation-api/#NavigationHistoryEntry-class",
       "level": 2,
-      "title": "App history entries",
+      "title": "Navigation API history entries",
       "number": "3"
     },
     {
       "id": "navigate-patches",
-      "href": "https://wicg.github.io/app-history/#navigate-patches",
+      "href": "https://wicg.github.io/navigation-api/#navigate-patches",
       "level": 2,
       "title": "Patches to fire the navigate event",
       "number": "4"
     },
     {
       "id": "form-patches",
-      "href": "https://wicg.github.io/app-history/#form-patches",
+      "href": "https://wicg.github.io/navigation-api/#form-patches",
       "level": 3,
       "title": "Form submission patches",
       "number": "4.1"
     },
     {
       "id": "user-initiated-patches",
-      "href": "https://wicg.github.io/app-history/#user-initiated-patches",
+      "href": "https://wicg.github.io/navigation-api/#user-initiated-patches",
       "level": 3,
       "title": "Browser UI/user-initiated patches",
       "number": "4.2"
     },
     {
       "id": "navigate-algorithm-patches",
-      "href": "https://wicg.github.io/app-history/#navigate-algorithm-patches",
+      "href": "https://wicg.github.io/navigation-api/#navigate-algorithm-patches",
       "level": 3,
       "title": "Navigation algorithm updates",
       "number": "4.3"
     },
     {
       "id": "navigate-event-traversal-patches",
-      "href": "https://wicg.github.io/app-history/#navigate-event-traversal-patches",
+      "href": "https://wicg.github.io/navigation-api/#navigate-event-traversal-patches",
       "level": 3,
       "title": "History traversal updates",
       "number": "4.4"
     },
     {
       "id": "session-history-patches",
-      "href": "https://wicg.github.io/app-history/#session-history-patches",
+      "href": "https://wicg.github.io/navigation-api/#session-history-patches",
       "level": 2,
       "title": "Patches to session history",
       "number": "5"
     },
     {
       "id": "session-history-new-she-fields",
-      "href": "https://wicg.github.io/app-history/#session-history-new-she-fields",
+      "href": "https://wicg.github.io/navigation-api/#session-history-new-she-fields",
       "level": 3,
       "title": "New session history entry items",
       "number": "5.1"
     },
     {
       "id": "session-history-patches-key",
-      "href": "https://wicg.github.io/app-history/#session-history-patches-key",
+      "href": "https://wicg.github.io/navigation-api/#session-history-patches-key",
       "level": 3,
-      "title": "Carrying over the app history key",
+      "title": "Carrying over the navigation API key",
       "number": "5.2"
     },
     {
       "id": "session-history-patches-state",
-      "href": "https://wicg.github.io/app-history/#session-history-patches-state",
+      "href": "https://wicg.github.io/navigation-api/#session-history-patches-state",
       "level": 3,
-      "title": "Carrying over the app history state",
+      "title": "Carrying over the navigation API state",
       "number": "5.3"
     },
     {
       "id": "session-history-patches-origin",
-      "href": "https://wicg.github.io/app-history/#session-history-patches-origin",
+      "href": "https://wicg.github.io/navigation-api/#session-history-patches-origin",
       "level": 3,
       "title": "Tracking the origin member",
       "number": "5.4"
     },
     {
       "id": "session-history-patches-policy-container",
-      "href": "https://wicg.github.io/app-history/#session-history-patches-policy-container",
+      "href": "https://wicg.github.io/navigation-api/#session-history-patches-policy-container",
       "level": 3,
       "title": "Tracking the policy container member more often",
       "number": "5.5"
     },
     {
       "id": "session-history-patches-update",
-      "href": "https://wicg.github.io/app-history/#session-history-patches-update",
+      "href": "https://wicg.github.io/navigation-api/#session-history-patches-update",
       "level": 3,
-      "title": "Updating the AppHistory object",
+      "title": "Updating the Navigation object",
       "number": "5.6"
     },
     {
       "id": "other-patches",
-      "href": "https://wicg.github.io/app-history/#other-patches",
+      "href": "https://wicg.github.io/navigation-api/#other-patches",
       "level": 2,
       "title": "Other patches",
       "number": "6"
     },
     {
       "id": "cancel-navigation",
-      "href": "https://wicg.github.io/app-history/#cancel-navigation",
+      "href": "https://wicg.github.io/navigation-api/#cancel-navigation",
       "level": 3,
       "title": "Canceling navigation and traversals",
       "number": "6.1"
     },
     {
       "id": "security-privacy",
-      "href": "https://wicg.github.io/app-history/#security-privacy",
+      "href": "https://wicg.github.io/navigation-api/#security-privacy",
       "level": 2,
       "title": "Security and privacy considerations",
       "number": "7"
     },
     {
       "id": "sp-cross-site-tracking",
-      "href": "https://wicg.github.io/app-history/#sp-cross-site-tracking",
+      "href": "https://wicg.github.io/navigation-api/#sp-cross-site-tracking",
       "level": 3,
       "title": "Cross-site tracking",
       "number": "7.1"
     },
     {
       "id": "sp-navigation-monitoring-interception",
-      "href": "https://wicg.github.io/app-history/#sp-navigation-monitoring-interception",
+      "href": "https://wicg.github.io/navigation-api/#sp-navigation-monitoring-interception",
       "level": 3,
       "title": "Navigation monitoring and interception",
       "number": "7.2"
     },
     {
       "id": "sp-url-updates",
-      "href": "https://wicg.github.io/app-history/#sp-url-updates",
+      "href": "https://wicg.github.io/navigation-api/#sp-url-updates",
       "level": 3,
       "title": "URL updates",
       "number": "7.3"
     },
     {
       "id": "sp-ua-ui",
-      "href": "https://wicg.github.io/app-history/#sp-ua-ui",
+      "href": "https://wicg.github.io/navigation-api/#sp-ua-ui",
       "level": 3,
       "title": "Other user agent UI",
       "number": "7.4"
     },
     {
       "id": "index",
-      "href": "https://wicg.github.io/app-history/#index",
+      "href": "https://wicg.github.io/navigation-api/#index",
       "level": 2,
       "title": "Index"
     },
     {
       "id": "index-defined-here",
-      "href": "https://wicg.github.io/app-history/#index-defined-here",
+      "href": "https://wicg.github.io/navigation-api/#index-defined-here",
       "level": 3,
       "title": "Terms defined by this specification"
     },
     {
       "id": "index-defined-elsewhere",
-      "href": "https://wicg.github.io/app-history/#index-defined-elsewhere",
+      "href": "https://wicg.github.io/navigation-api/#index-defined-elsewhere",
       "level": 3,
       "title": "Terms defined by reference"
     },
     {
       "id": "references",
-      "href": "https://wicg.github.io/app-history/#references",
+      "href": "https://wicg.github.io/navigation-api/#references",
       "level": 2,
       "title": "References"
     },
     {
       "id": "normative",
-      "href": "https://wicg.github.io/app-history/#normative",
+      "href": "https://wicg.github.io/navigation-api/#normative",
       "level": 3,
       "title": "Normative References"
     },
     {
       "id": "informative",
-      "href": "https://wicg.github.io/app-history/#informative",
+      "href": "https://wicg.github.io/navigation-api/#informative",
       "level": 3,
       "title": "Informative References"
     },
     {
       "id": "idl-index",
-      "href": "https://wicg.github.io/app-history/#idl-index",
+      "href": "https://wicg.github.io/navigation-api/#idl-index",
       "level": 2,
       "title": "IDL Index"
     }

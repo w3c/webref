@@ -1,0 +1,29 @@
+{
+  "name": "NavigateEventInit",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Navigation API",
+      "url": "https://wicg.github.io/app-history/"
+    },
+    "fragment": "dictionary NavigateEventInit : EventInit {\n  NavigationNavigationType navigationType = \"push\";\n  required NavigationDestination destination;\n  boolean canTransition = false;\n  boolean userInitiated = false;\n  boolean hashChange = false;\n  required AbortSignal signal;\n  FormData? formData = null;\n  any info;\n};",
+    "href": "https://wicg.github.io/navigation-api/#dictdef-navigateeventinit"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "EventInit",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "dictionary EventInit {\n  boolean bubbles = false;\n  boolean cancelable = false;\n  boolean composed = false;\n};",
+      "href": "https://dom.spec.whatwg.org/#dictdef-eventinit"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}
