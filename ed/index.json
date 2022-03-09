@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2022-03-09T06:38:34.711Z",
+  "date": "2022-03-09T12:42:29.991Z",
   "options": {
     "fallback": "webref-fallback/ed/index.json",
     "output": "report",
@@ -21,7 +21,7 @@
   },
   "stats": {
     "crawled": 465,
-    "errors": 1
+    "errors": 5
   },
   "crawler": "reffy-6.6.0",
   "results": [
@@ -279,7 +279,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/css-typed-om-2/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 9 Mar 2022 02:17:19 GMT"
+        "lastModified": "Wed, 9 Mar 2022 06:51:37 GMT"
       },
       "generator": "bikeshed",
       "date": "8 February 2021",
@@ -324,7 +324,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/font-metrics-api-1/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 9 Mar 2022 02:17:24 GMT"
+        "lastModified": "Wed, 9 Mar 2022 06:51:42 GMT"
       },
       "generator": "bikeshed",
       "date": "12 May 2021",
@@ -1195,7 +1195,7 @@
       ],
       "crawled": "https://drafts.fxtf.org/filter-effects-2/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 9 Mar 2022 02:16:22 GMT"
+        "lastModified": "Wed, 9 Mar 2022 06:50:26 GMT"
       },
       "generator": "bikeshed",
       "date": "10 February 2022",
@@ -3155,9 +3155,9 @@
       ],
       "crawled": "https://tc39.es/proposal-temporal/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 08 Mar 2022 19:23:42 GMT"
+        "lastModified": "Wed, 09 Mar 2022 11:08:37 GMT"
       },
-      "date": "8 March 2022",
+      "date": "9 March 2022",
       "links": "links/tc39-temporal.json",
       "headings": "headings/tc39-temporal.json",
       "ids": "ids/tc39-temporal.json"
@@ -11662,7 +11662,7 @@
       ],
       "crawled": "https://drafts.fxtf.org/compositing-1/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 9 Mar 2022 02:16:14 GMT"
+        "lastModified": "Wed, 9 Mar 2022 06:50:19 GMT"
       },
       "generator": "bikeshed",
       "date": "10 February 2022",
@@ -12019,7 +12019,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/css-animationworklet-1/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 9 Mar 2022 02:17:14 GMT"
+        "lastModified": "Wed, 9 Mar 2022 06:51:31 GMT"
       },
       "generator": "bikeshed",
       "date": "18 August 2020",
@@ -14062,7 +14062,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/css-layout-api-1/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 9 Mar 2022 02:17:16 GMT"
+        "lastModified": "Wed, 9 Mar 2022 06:51:33 GMT"
       },
       "generator": "bikeshed",
       "date": "16 December 2021",
@@ -14306,7 +14306,8 @@
       "dfns": "dfns/css-masking-1.json",
       "elements": "elements/css-masking-1.json",
       "headings": "headings/css-masking-1.json",
-      "ids": "ids/css-masking-1.json"
+      "ids": "ids/css-masking-1.json",
+      "error": "Error: Loading https://drafts.fxtf.org/css-masking-1/ triggered HTTP status 500 Error: Loading https://drafts.fxtf.org/css-masking-1/ triggered HTTP status 500\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 279)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-multicol-1/",
@@ -14876,7 +14877,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/css-paint-api-1/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 9 Mar 2022 02:17:17 GMT"
+        "lastModified": "Wed, 9 Mar 2022 06:51:35 GMT"
       },
       "generator": "bikeshed",
       "date": "15 December 2020",
@@ -15000,7 +15001,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/css-properties-values-api-1/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 9 Mar 2022 02:17:19 GMT"
+        "lastModified": "Wed, 9 Mar 2022 06:51:36 GMT"
       },
       "generator": "bikeshed",
       "date": "26 February 2021",
@@ -16484,7 +16485,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/css-typed-om-1/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 9 Mar 2022 02:17:24 GMT"
+        "lastModified": "Wed, 9 Mar 2022 06:51:41 GMT"
       },
       "generator": "bikeshed",
       "date": "28 January 2022",
@@ -17732,7 +17733,8 @@
       "css": "css/fill-stroke.json",
       "dfns": "dfns/fill-stroke-3.json",
       "headings": "headings/fill-stroke-3.json",
-      "ids": "ids/fill-stroke-3.json"
+      "ids": "ids/fill-stroke-3.json",
+      "error": "Error: Loading https://drafts.fxtf.org/fill-stroke/ triggered HTTP status 500 Error: Loading https://drafts.fxtf.org/fill-stroke/ triggered HTTP status 500\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 336)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/filter-effects-1/",
@@ -17795,7 +17797,8 @@
       "dfns": "dfns/filter-effects-1.json",
       "elements": "elements/filter-effects-1.json",
       "headings": "headings/filter-effects-1.json",
-      "ids": "ids/filter-effects-1.json"
+      "ids": "ids/filter-effects-1.json",
+      "error": "Error: Loading https://drafts.fxtf.org/filter-effects-1/ triggered HTTP status 500 Error: Loading https://drafts.fxtf.org/filter-effects-1/ triggered HTTP status 500\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 337)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/fingerprinting-guidance/",
@@ -18132,7 +18135,7 @@
       ],
       "crawled": "https://drafts.fxtf.org/geometry/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 9 Mar 2022 02:16:31 GMT"
+        "lastModified": "Wed, 9 Mar 2022 06:50:46 GMT"
       },
       "generator": "bikeshed",
       "date": "10 February 2022",
@@ -19946,7 +19949,8 @@
       "css": "css/motion.json",
       "dfns": "dfns/motion-1.json",
       "headings": "headings/motion-1.json",
-      "ids": "ids/motion-1.json"
+      "ids": "ids/motion-1.json",
+      "error": "Error: Loading https://drafts.fxtf.org/motion-1/ triggered HTTP status 500 Error: Loading https://drafts.fxtf.org/motion-1/ triggered HTTP status 500\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 375)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/mst-content-hint/",
@@ -20056,10 +20060,10 @@
       ],
       "crawled": "https://w3c.github.io/navigation-timing/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 24 Feb 2022 09:36:46 GMT"
+        "lastModified": "Wed, 09 Mar 2022 09:28:29 GMT"
       },
       "generator": "respec",
-      "date": "24 February 2022",
+      "date": "09 March 2022",
       "links": "links/navigation-timing-2.json",
       "refs": "refs/navigation-timing-2.json",
       "idl": "idl/navigation-timing.idl",
