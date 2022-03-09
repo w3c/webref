@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2022-03-09T00:52:28.962Z",
+  "date": "2022-03-09T06:38:34.711Z",
   "options": {
     "fallback": "webref-fallback/ed/index.json",
     "output": "report",
@@ -21,7 +21,7 @@
   },
   "stats": {
     "crawled": 465,
-    "errors": 0
+    "errors": 1
   },
   "crawler": "reffy-6.6.0",
   "results": [
@@ -168,9 +168,9 @@
       ],
       "crawled": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 08 Mar 2022 00:37:09 GMT"
+        "lastModified": "Wed, 09 Mar 2022 01:46:30 GMT"
       },
-      "date": "8 March 2022",
+      "date": "9 March 2022",
       "links": "links/rfc6265bis.json",
       "refs": "refs/rfc6265bis.json",
       "headings": "headings/rfc6265bis.json",
@@ -279,7 +279,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/css-typed-om-2/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 8 Mar 2022 23:31:29 GMT"
+        "lastModified": "Wed, 9 Mar 2022 02:17:19 GMT"
       },
       "generator": "bikeshed",
       "date": "8 February 2021",
@@ -324,7 +324,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/font-metrics-api-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 8 Mar 2022 23:31:34 GMT"
+        "lastModified": "Wed, 9 Mar 2022 02:17:24 GMT"
       },
       "generator": "bikeshed",
       "date": "12 May 2021",
@@ -1195,7 +1195,7 @@
       ],
       "crawled": "https://drafts.fxtf.org/filter-effects-2/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 8 Mar 2022 23:30:50 GMT"
+        "lastModified": "Wed, 9 Mar 2022 02:16:22 GMT"
       },
       "generator": "bikeshed",
       "date": "10 February 2022",
@@ -11662,7 +11662,7 @@
       ],
       "crawled": "https://drafts.fxtf.org/compositing-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 8 Mar 2022 23:30:44 GMT"
+        "lastModified": "Wed, 9 Mar 2022 02:16:14 GMT"
       },
       "generator": "bikeshed",
       "date": "10 February 2022",
@@ -12019,7 +12019,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/css-animationworklet-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 8 Mar 2022 23:31:24 GMT"
+        "lastModified": "Wed, 9 Mar 2022 02:17:14 GMT"
       },
       "generator": "bikeshed",
       "date": "18 August 2020",
@@ -14062,7 +14062,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/css-layout-api-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 8 Mar 2022 23:31:26 GMT"
+        "lastModified": "Wed, 9 Mar 2022 02:17:16 GMT"
       },
       "generator": "bikeshed",
       "date": "16 December 2021",
@@ -14294,7 +14294,7 @@
       ],
       "crawled": "https://drafts.fxtf.org/css-masking-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 8 Mar 2022 23:30:46 GMT"
+        "lastModified": "Wed, 9 Mar 2022 02:16:17 GMT"
       },
       "generator": "bikeshed",
       "date": "24 February 2022",
@@ -14876,7 +14876,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/css-paint-api-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 8 Mar 2022 23:31:27 GMT"
+        "lastModified": "Wed, 9 Mar 2022 02:17:17 GMT"
       },
       "generator": "bikeshed",
       "date": "15 December 2020",
@@ -15000,7 +15000,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/css-properties-values-api-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 8 Mar 2022 23:31:29 GMT"
+        "lastModified": "Wed, 9 Mar 2022 02:17:19 GMT"
       },
       "generator": "bikeshed",
       "date": "26 February 2021",
@@ -16484,7 +16484,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/css-typed-om-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 8 Mar 2022 23:31:34 GMT"
+        "lastModified": "Wed, 9 Mar 2022 02:17:24 GMT"
       },
       "generator": "bikeshed",
       "date": "28 January 2022",
@@ -17029,7 +17029,8 @@
       "css": "css/CSS.json",
       "dfns": "dfns/CSS22.json",
       "headings": "headings/CSS22.json",
-      "ids": "ids/CSS22.json"
+      "ids": "ids/CSS22.json",
+      "error": "Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers' Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers'\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:483:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 324)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/css3-exclusions/",
@@ -17722,7 +17723,7 @@
       ],
       "crawled": "https://drafts.fxtf.org/fill-stroke/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 8 Mar 2022 23:30:49 GMT"
+        "lastModified": "Wed, 9 Mar 2022 02:16:20 GMT"
       },
       "generator": "bikeshed",
       "date": "4 April 2017",
@@ -17782,7 +17783,7 @@
       ],
       "crawled": "https://drafts.fxtf.org/filter-effects-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 8 Mar 2022 23:30:55 GMT"
+        "lastModified": "Wed, 9 Mar 2022 02:16:28 GMT"
       },
       "generator": "bikeshed",
       "date": "21 February 2022",
@@ -18131,7 +18132,7 @@
       ],
       "crawled": "https://drafts.fxtf.org/geometry/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 8 Mar 2022 23:30:57 GMT"
+        "lastModified": "Wed, 9 Mar 2022 02:16:31 GMT"
       },
       "generator": "bikeshed",
       "date": "10 February 2022",
@@ -19936,7 +19937,7 @@
       ],
       "crawled": "https://drafts.fxtf.org/motion-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 8 Mar 2022 23:30:59 GMT"
+        "lastModified": "Wed, 9 Mar 2022 02:16:33 GMT"
       },
       "generator": "bikeshed",
       "date": "23 February 2022",
@@ -23953,10 +23954,10 @@
       ],
       "crawled": "https://gpuweb.github.io/gpuweb/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 08 Mar 2022 21:53:00 GMT"
+        "lastModified": "Wed, 09 Mar 2022 02:12:47 GMT"
       },
       "generator": "bikeshed",
-      "date": "8 March 2022",
+      "date": "9 March 2022",
       "links": "links/webgpu.json",
       "refs": "refs/webgpu.json",
       "idl": "idl/webgpu.idl",
@@ -25134,10 +25135,10 @@
       ],
       "crawled": "https://gpuweb.github.io/gpuweb/wgsl/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 08 Mar 2022 21:53:00 GMT"
+        "lastModified": "Wed, 09 Mar 2022 02:12:47 GMT"
       },
       "generator": "bikeshed",
-      "date": "8 March 2022",
+      "date": "9 March 2022",
       "links": "links/WGSL.json",
       "refs": "refs/WGSL.json",
       "dfns": "dfns/WGSL.json",
