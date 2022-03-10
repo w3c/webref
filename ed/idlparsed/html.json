@@ -890,7 +890,7 @@
         "extAttrs": []
       },
       "HTMLElement": {
-        "fragment": "[Exposed=Window]\ninterface HTMLElement : Element {\n  [HTMLConstructor] constructor();\n\n  // metadata attributes\n  [CEReactions] attribute DOMString title;\n  [CEReactions] attribute DOMString lang;\n  [CEReactions] attribute boolean translate;\n  [CEReactions] attribute DOMString dir;\n\n  // user interaction\n  [CEReactions] attribute boolean hidden;\n  undefined click();\n  [CEReactions] attribute DOMString accessKey;\n  readonly attribute DOMString accessKeyLabel;\n  [CEReactions] attribute boolean draggable;\n  [CEReactions] attribute boolean spellcheck;\n  [CEReactions] attribute DOMString autocapitalize;\n\n  [CEReactions] attribute [LegacyNullToEmptyString] DOMString innerText;\n  [CEReactions] attribute [LegacyNullToEmptyString] DOMString outerText;\n\n  ElementInternals attachInternals();\n};",
+        "fragment": "[Exposed=Window]\ninterface HTMLElement : Element {\n  [HTMLConstructor] constructor();\n\n  // metadata attributes\n  [CEReactions] attribute DOMString title;\n  [CEReactions] attribute DOMString lang;\n  [CEReactions] attribute boolean translate;\n  [CEReactions] attribute DOMString dir;\n\n  // user interaction\n  [CEReactions] attribute boolean hidden;\n  [CEReactions] attribute boolean inert;\n  undefined click();\n  [CEReactions] attribute DOMString accessKey;\n  readonly attribute DOMString accessKeyLabel;\n  [CEReactions] attribute boolean draggable;\n  [CEReactions] attribute boolean spellcheck;\n  [CEReactions] attribute DOMString autocapitalize;\n\n  [CEReactions] attribute [LegacyNullToEmptyString] DOMString innerText;\n  [CEReactions] attribute [LegacyNullToEmptyString] DOMString outerText;\n\n  ElementInternals attachInternals();\n};",
         "type": "interface",
         "name": "HTMLElement",
         "inheritance": "Element",
@@ -998,6 +998,28 @@
           {
             "type": "attribute",
             "name": "hidden",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "inert",
             "idlType": {
               "type": "attribute-type",
               "extAttrs": [],
