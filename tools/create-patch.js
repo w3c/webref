@@ -7,6 +7,7 @@
  * node tools/create-patch.js
  */
 
+const fs = require('fs/promises');
 const util = require('util');
 const path = require('path');
 const exec = util.promisify(require('child_process').exec);
@@ -47,7 +48,8 @@ async function main() {
 
   console.log('Move patch file to appropriate patch folder...');
   const finalPatchFile = path.join('ed', patchType + 'patches', patchFile + '.patch');
-  await execFile('mv', [rawPatchFile, finalPatchFile]);
+  await fs.copyFile(rawPatchFile, finalPatchFile);
+  await fs.unlink(rawPatchFile);
   console.log(`  moved to ${finalPatchFile}`);
 
   console.log('Commit patch file to a separate branch...');
