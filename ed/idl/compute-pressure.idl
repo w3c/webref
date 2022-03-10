@@ -32,6 +32,7 @@ dictionary ComputePressureRecord {
   ComputePressureSource source;
   ComputePressureState state;
   sequence<ComputePressureFactor> factors;
+  DOMHighResTimeStamp timestamp;
   ComputePressureObserverOptions options;
 };
 

@@ -373,7 +373,7 @@
         "partial": false
       },
       "ComputePressureRecord": {
-        "fragment": "dictionary ComputePressureRecord {\n  ComputePressureSource source;\n  ComputePressureState state;\n  sequence<ComputePressureFactor> factors;\n  ComputePressureObserverOptions options;\n};",
+        "fragment": "dictionary ComputePressureRecord {\n  ComputePressureSource source;\n  ComputePressureState state;\n  sequence<ComputePressureFactor> factors;\n  DOMHighResTimeStamp timestamp;\n  ComputePressureObserverOptions options;\n};",
         "type": "dictionary",
         "name": "ComputePressureRecord",
         "inheritance": null,
@@ -434,6 +434,21 @@
           },
           {
             "type": "field",
+            "name": "timestamp",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMHighResTimeStamp"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
             "name": "options",
             "extAttrs": [],
             "idlType": {
@@ -486,12 +501,14 @@
         "ComputePressureSource",
         "ComputePressureState",
         "ComputePressureFactor",
+        "DOMHighResTimeStamp",
         "ComputePressureObserverOptions"
       ],
       "ComputePressureObserverOptions": []
     },
     "externalDependencies": [
-      "PermissionState"
+      "PermissionState",
+      "DOMHighResTimeStamp"
     ],
     "hasObsoleteIdl": false
   }
