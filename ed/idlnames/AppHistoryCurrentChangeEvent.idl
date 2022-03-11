@@ -1,8 +1,0 @@
-// Source: App History API (https://wicg.github.io/app-history/)
-[Exposed=Window]
-interface AppHistoryCurrentChangeEvent : Event {
-  constructor(DOMString type, AppHistoryCurrentChangeEventInit eventInit);
-
-  readonly attribute AppHistoryNavigationType? navigationType;
-  readonly attribute AppHistoryEntry from;
-};
