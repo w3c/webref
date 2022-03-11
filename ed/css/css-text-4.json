@@ -395,12 +395,12 @@
     },
     "word-spacing": {
       "name": "word-spacing",
-      "value": "normal | <length>",
+      "value": "normal | <length-percentage>",
       "initial": "normal",
       "appliesTo": "text",
       "inherited": "yes",
-      "percentages": "N/A",
-      "computedValue": "an absolute length",
+      "percentages": "relative to computed font-size, i.e. 1em",
+      "computedValue": "an absolute length and/or a percentage",
       "canonicalOrder": "n/a",
       "animationType": "by computed value type",
       "styleDeclaration": [
@@ -410,12 +410,12 @@
     },
     "letter-spacing": {
       "name": "letter-spacing",
-      "value": "normal | <length>",
+      "value": "normal | <length-percentage>",
       "initial": "normal",
       "appliesTo": "inline boxes and text",
       "inherited": "yes",
-      "percentages": "n/a",
-      "computedValue": "an absolute length",
+      "percentages": "relative to computed font-size, i.e. 1em",
+      "computedValue": "an absolute length and/or a percentage",
       "canonicalOrder": "n/a",
       "animationType": "by computed value type",
       "styleDeclaration": [
@@ -489,8 +489,11 @@
     "<auto()>": {
       "value": "auto(<lang>)"
     },
-    "<length>": {
+    "<length-percentages>": {
       "prose": "Specifies extra spacing in addition to the intrinsic inter-word spacing defined by the font."
+    },
+    "<length>": {
+      "prose": "Specifies additional spacing between typographic character units. Values may be negative, but there may be implementation-dependent limits."
     },
     "<percentage>": {
       "prose": "Gives the amount of the indent as a percentage of the block container’s own logical width. Percentages must be treated as 0 for the purpose of calculating intrinsic size contributions, but are always resolved normally when performing layout."
