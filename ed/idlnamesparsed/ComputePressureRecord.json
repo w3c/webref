@@ -6,7 +6,7 @@
       "title": "Compute Pressure API",
       "url": "https://wicg.github.io/compute-pressure/"
     },
-    "fragment": "dictionary ComputePressureRecord {\n  ComputePressureSource source;\n  ComputePressureState state;\n  ComputePressureObserverOptions options;\n};",
+    "fragment": "dictionary ComputePressureRecord {\n  ComputePressureSource source;\n  ComputePressureState state;\n  sequence<ComputePressureFactor> factors;\n  DOMHighResTimeStamp timestamp;\n  ComputePressureObserverOptions options;\n};",
     "href": "https://wicg.github.io/compute-pressure/#dom-computepressurerecord"
   },
   "extended": [],
@@ -29,7 +29,7 @@
           "id": "the-computepressurerecord-dictionary",
           "href": "https://wicg.github.io/compute-pressure/#the-computepressurerecord-dictionary",
           "title": "The ComputePressureRecord dictionary",
-          "number": "8.3"
+          "number": "9.3"
         },
         "definedIn": "heading"
       },
@@ -50,7 +50,7 @@
           "id": "the-source-attribute",
           "href": "https://wicg.github.io/compute-pressure/#the-source-attribute",
           "title": "The source attribute",
-          "number": "8.3.1"
+          "number": "9.3.1"
         },
         "definedIn": "heading"
       },
@@ -71,7 +71,49 @@
           "id": "the-state-attribute",
           "href": "https://wicg.github.io/compute-pressure/#the-state-attribute",
           "title": "The state attribute",
-          "number": "8.3.2"
+          "number": "9.3.2"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-computepressurerecord-factors",
+        "href": "https://wicg.github.io/compute-pressure/#dom-computepressurerecord-factors",
+        "linkingText": [
+          "factors"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "ComputePressureRecord"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-factors-attribute",
+          "href": "https://wicg.github.io/compute-pressure/#the-factors-attribute",
+          "title": "The factors attribute",
+          "number": "9.3.3"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-computepressurerecord-timestamp",
+        "href": "https://wicg.github.io/compute-pressure/#dom-computepressurerecord-timestamp",
+        "linkingText": [
+          "timestamp"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "ComputePressureRecord"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-timestamp-attribute",
+          "href": "https://wicg.github.io/compute-pressure/#the-timestamp-attribute",
+          "title": "The timestamp attribute",
+          "number": "9.3.4"
         },
         "definedIn": "heading"
       },
@@ -92,7 +134,7 @@
           "id": "the-options-attribute",
           "href": "https://wicg.github.io/compute-pressure/#the-options-attribute",
           "title": "The options attribute",
-          "number": "8.3.3"
+          "number": "9.3.5"
         },
         "definedIn": "heading"
       }

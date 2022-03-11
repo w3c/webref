@@ -1,85 +1,85 @@
 // GENERATED CONTENT - DO NOT EDIT
 // Content was automatically extracted by Reffy into webref
 // (https://github.com/w3c/webref)
-// Source: App History API (https://wicg.github.io/app-history/)
+// Source: Navigation API (https://wicg.github.io/navigation-api/)
 
 partial interface Window {
-  readonly attribute AppHistory appHistory;
+  readonly attribute Navigation navigation;
 };
 
 [Exposed=Window]
-interface AppHistory : EventTarget {
-  sequence<AppHistoryEntry> entries();
-  readonly attribute AppHistoryEntry? current;
-  undefined updateCurrent(AppHistoryUpdateCurrentOptions options);
-  readonly attribute AppHistoryTransition? transition;
+interface Navigation : EventTarget {
+  sequence<NavigationHistoryEntry> entries();
+  readonly attribute NavigationHistoryEntry? currentEntry;
+  undefined updateCurrentEntry(NavigationUpdateCurrentEntryOptions options);
+  readonly attribute NavigationTransition? transition;
 
   readonly attribute boolean canGoBack;
   readonly attribute boolean canGoForward;
 
-  AppHistoryResult navigate(USVString url, optional AppHistoryNavigateOptions options = {});
-  AppHistoryResult reload(optional AppHistoryReloadOptions options = {});
+  NavigationResult navigate(USVString url, optional NavigationNavigateOptions options = {});
+  NavigationResult reload(optional NavigationReloadOptions options = {});
 
-  AppHistoryResult goTo(DOMString key, optional AppHistoryNavigationOptions options = {});
-  AppHistoryResult back(optional AppHistoryNavigationOptions options = {});
-  AppHistoryResult forward(optional AppHistoryNavigationOptions options = {});
+  NavigationResult traverseTo(DOMString key, optional NavigationOptions options = {});
+  NavigationResult back(optional NavigationOptions options = {});
+  NavigationResult forward(optional NavigationOptions options = {});
 
   attribute EventHandler onnavigate;
   attribute EventHandler onnavigatesuccess;
   attribute EventHandler onnavigateerror;
-  attribute EventHandler oncurrentchange;
+  attribute EventHandler oncurrententrychange;
 };
 
-dictionary AppHistoryUpdateCurrentOptions {
+dictionary NavigationUpdateCurrentEntryOptions {
   required any state;
 };
 
-dictionary AppHistoryNavigationOptions {
+dictionary NavigationOptions {
   any info;
 };
 
-dictionary AppHistoryNavigateOptions : AppHistoryNavigationOptions {
+dictionary NavigationNavigateOptions : NavigationOptions {
   any state;
   boolean replace = false;
 };
 
-dictionary AppHistoryReloadOptions : AppHistoryNavigationOptions {
+dictionary NavigationReloadOptions : NavigationOptions {
   any state;
 };
 
-dictionary AppHistoryResult {
-  Promise<AppHistoryEntry> committed;
-  Promise<AppHistoryEntry> finished;
+dictionary NavigationResult {
+  Promise<NavigationHistoryEntry> committed;
+  Promise<NavigationHistoryEntry> finished;
 };
 
 [Exposed=Window]
-interface AppHistoryCurrentChangeEvent : Event {
-  constructor(DOMString type, AppHistoryCurrentChangeEventInit eventInit);
+interface NavigationCurrentEntryChangeEvent : Event {
+  constructor(DOMString type, NavigationCurrentEntryChangeEventInit eventInit);
 
-  readonly attribute AppHistoryNavigationType? navigationType;
-  readonly attribute AppHistoryEntry from;
+  readonly attribute NavigationNavigationType? navigationType;
+  readonly attribute NavigationHistoryEntry from;
 };
 
-dictionary AppHistoryCurrentChangeEventInit : EventInit {
-  AppHistoryNavigationType? navigationType = null;
-  required AppHistoryEntry destination;
+dictionary NavigationCurrentEntryChangeEventInit : EventInit {
+  NavigationNavigationType? navigationType = null;
+  required NavigationHistoryEntry destination;
 };
 
 [Exposed=Window]
-interface AppHistoryTransition {
-  readonly attribute AppHistoryNavigationType navigationType;
-  readonly attribute AppHistoryEntry from;
+interface NavigationTransition {
+  readonly attribute NavigationNavigationType navigationType;
+  readonly attribute NavigationHistoryEntry from;
   readonly attribute Promise<undefined> finished;
 
-  AppHistoryResult rollback(optional AppHistoryNavigationOptions options = {});
+  NavigationResult rollback(optional NavigationOptions options = {});
 };
 
 [Exposed=Window]
-interface AppHistoryNavigateEvent : Event {
-  constructor(DOMString type, AppHistoryNavigateEventInit eventInit);
+interface NavigateEvent : Event {
+  constructor(DOMString type, NavigateEventInit eventInit);
 
-  readonly attribute AppHistoryNavigationType navigationType;
-  readonly attribute AppHistoryDestination destination;
+  readonly attribute NavigationNavigationType navigationType;
+  readonly attribute NavigationDestination destination;
   readonly attribute boolean canTransition;
   readonly attribute boolean userInitiated;
   readonly attribute boolean hashChange;
@@ -90,9 +90,9 @@ interface AppHistoryNavigateEvent : Event {
   undefined transitionWhile(Promise<undefined> newNavigationAction);
 };
 
-dictionary AppHistoryNavigateEventInit : EventInit {
-  AppHistoryNavigationType navigationType = "push";
-  required AppHistoryDestination destination;
+dictionary NavigateEventInit : EventInit {
+  NavigationNavigationType navigationType = "push";
+  required NavigationDestination destination;
   boolean canTransition = false;
   boolean userInitiated = false;
   boolean hashChange = false;
@@ -101,7 +101,8 @@ dictionary AppHistoryNavigateEventInit : EventInit {
   any info;
 };
 
-enum AppHistoryNavigationType {
+// TODO: rename to NavigationType after https://github.com/w3c/navigation-timing/pull/172 lands.
+enum NavigationNavigationType {
   "reload",
   "push",
   "replace",
@@ -109,7 +110,7 @@ enum AppHistoryNavigationType {
 };
 
 [Exposed=Window]
-interface AppHistoryDestination {
+interface NavigationDestination {
   readonly attribute USVString url;
   readonly attribute DOMString? key;
   readonly attribute DOMString? id;
@@ -120,7 +121,7 @@ interface AppHistoryDestination {
 };
 
 [Exposed=Window]
-interface AppHistoryEntry : EventTarget {
+interface NavigationHistoryEntry : EventTarget {
   readonly attribute USVString? url;
   readonly attribute DOMString key;
   readonly attribute DOMString id;

@@ -6,7 +6,7 @@
       "title": "Close Watcher API",
       "url": "https://wicg.github.io/close-watcher/"
     },
-    "fragment": "[Exposed=Window]\ninterface CloseWatcher : EventTarget {\n  constructor();\n\n  undefined destroy();\n  undefined signalClose();\n\n  attribute EventHandler oncancel;\n  attribute EventHandler onclose;\n};",
+    "fragment": "[Exposed=Window]\ninterface CloseWatcher : EventTarget {\n  constructor(optional CloseWatcherOptions options = {});\n\n  undefined destroy();\n  undefined close();\n\n  attribute EventHandler oncancel;\n  attribute EventHandler onclose;\n};",
     "href": "https://wicg.github.io/close-watcher/#closewatcher"
   },
   "extended": [],
@@ -51,6 +51,8 @@
         "id": "dom-closewatcher-closewatcher",
         "href": "https://wicg.github.io/close-watcher/#dom-closewatcher-closewatcher",
         "linkingText": [
+          "CloseWatcher(options)",
+          "constructor(options)",
           "CloseWatcher()",
           "constructor()"
         ],
@@ -91,10 +93,10 @@
         "definedIn": "prose"
       },
       {
-        "id": "dom-closewatcher-signalclose",
-        "href": "https://wicg.github.io/close-watcher/#dom-closewatcher-signalclose",
+        "id": "dom-closewatcher-close",
+        "href": "https://wicg.github.io/close-watcher/#dom-closewatcher-close",
         "linkingText": [
-          "signalClose()"
+          "close()"
         ],
         "localLinkingText": [],
         "type": "method",

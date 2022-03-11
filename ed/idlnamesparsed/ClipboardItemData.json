@@ -6,7 +6,7 @@
       "title": "Clipboard API and events",
       "url": "https://www.w3.org/TR/clipboard-apis/"
     },
-    "fragment": "typedef Promise<ClipboardItemDataType> ClipboardItemData;",
+    "fragment": "typedef Promise<(DOMString or Blob)> ClipboardItemData;",
     "href": "https://w3c.github.io/clipboard-apis/#typedefdef-clipboarditemdata"
   },
   "extended": [],
@@ -25,9 +25,9 @@
         "access": "public",
         "informative": false,
         "heading": {
-          "id": "clipboard-interface",
-          "href": "https://w3c.github.io/clipboard-apis/#clipboard-interface",
-          "title": "Clipboard Interface",
+          "id": "clipboard-item-interface",
+          "href": "https://w3c.github.io/clipboard-apis/#clipboard-item-interface",
+          "title": "ClipboardItem Interface",
           "number": "7.2"
         },
         "definedIn": "pre"

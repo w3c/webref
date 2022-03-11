@@ -20,17 +20,20 @@
       "concept-relevant-global",
       "transient-activation",
       "in-parallel",
-      "queue-a-global-task",
       "concept-document-window",
       "allowed-to-use",
-      "window"
+      "queue-a-task",
+      "window",
+      "queue-a-global-task"
     ],
     "https://w3c.github.io/permissions/": [
-      "dfn-powerful-feature",
+      "dfn-default-powerful-feature",
       "dom-permissionstate",
       "dfn-request-permission-to-use",
-      "dfn-permissions-task-source",
-      "dfn-permission-state"
+      "dfn-state",
+      "dfn-granted",
+      "dfn-permission",
+      "dfn-denied"
     ],
     "https://w3c.github.io/webappsec-permissions-policy/": [
       "policy-controlled-feature",
@@ -39,7 +42,9 @@
     "https://fetch.spec.whatwg.org/": [
       "dom-requestdestination-iframe"
     ],
-    "https://heycam.github.io/webidl/": [
+    "https://developer.mozilla.org/en-US/docs/Web/API/IdleDetector": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/IdleDetector/IdleDetector": [],
+    "https://webidl.spec.whatwg.org/": [
       "EnforceRange",
       "idl-unsigned-long-long",
       "SecureContext",
@@ -47,19 +52,19 @@
       "idl-promise",
       "idl-undefined",
       "this",
-      "a-new-promise",
-      "reject",
+      "a-promise-rejected-with",
       "notallowederror",
       "idl-DOMException",
+      "a-new-promise",
       "resolve",
       "invalidstateerror",
       "exceptiondef-typeerror",
+      "reject",
       "aborterror"
     ],
     "https://dom.spec.whatwg.org/": [
       "abortsignal",
       "eventtarget",
-      "abortsignal-aborted-flag",
       "abortsignal-add",
       "concept-event-fire"
     ],
@@ -72,6 +77,11 @@
     "https://wpt.fyi/results/idle-detection/idlharness.https.window.js": [],
     "https://wpt.live/idle-detection/idlharness.https.window.js": [],
     "https://github.com/web-platform-tests/wpt/blob/master/idle-detection/idlharness.https.window.js": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/IdleDetector/userState": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/IdleDetector/screenState": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/IdleDetector/onchange": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/IdleDetector/requestPermission": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/IdleDetector/start": [],
     "https://wpt.fyi/results/idle-detection/idle-detection-allowed-by-feature-policy-attribute-redirect-on-load.https.sub.html": [],
     "https://wpt.live/idle-detection/idle-detection-allowed-by-feature-policy-attribute-redirect-on-load.https.sub.html": [],
     "https://github.com/web-platform-tests/wpt/blob/master/idle-detection/idle-detection-allowed-by-feature-policy-attribute-redirect-on-load.https.sub.html": [],
@@ -93,13 +103,13 @@
     "https://wpt.fyi/results/idle-detection/basics.tentative.https.window.js": [],
     "https://wpt.live/idle-detection/basics.tentative.https.window.js": [],
     "https://github.com/web-platform-tests/wpt/blob/master/idle-detection/basics.tentative.https.window.js": [],
+    "https://wpt.fyi/results/idle-detection/idle-permission.tentative.https.window.js": [],
+    "https://wpt.live/idle-detection/idle-permission.tentative.https.window.js": [],
+    "https://github.com/web-platform-tests/wpt/blob/master/idle-detection/idle-permission.tentative.https.window.js": [],
     "https://infra.spec.whatwg.org/": [
       "abort-when",
       "user-agent"
     ],
-    "https://wpt.fyi/results/idle-detection/idle-permission.tentative.https.window.js": [],
-    "https://wpt.live/idle-detection/idle-permission.tentative.https.window.js": [],
-    "https://github.com/web-platform-tests/wpt/blob/master/idle-detection/idle-permission.tentative.https.window.js": [],
     "https://tc39.es/ecma262/multipage/": [],
     "https://www.w3.org/TR/permissions/": [],
     "https://www.w3.org/TR/permissions-policy-1/": [],

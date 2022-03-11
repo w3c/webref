@@ -1,0 +1,370 @@
+{
+  "name": "NavigationHistoryEntry",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Navigation API",
+      "url": "https://wicg.github.io/app-history/"
+    },
+    "fragment": "[Exposed=Window]\ninterface NavigationHistoryEntry : EventTarget {\n  readonly attribute USVString? url;\n  readonly attribute DOMString key;\n  readonly attribute DOMString id;\n  readonly attribute long long index;\n  readonly attribute boolean sameDocument;\n\n  any getState();\n\n  attribute EventHandler onnavigateto;\n  attribute EventHandler onnavigatefrom;\n  attribute EventHandler onfinish;\n  attribute EventHandler ondispose;\n};",
+    "href": "https://wicg.github.io/navigation-api/#navigationhistoryentry"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "EventTarget",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=*]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+      "href": "https://dom.spec.whatwg.org/#eventtarget"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://wicg.github.io/app-history/": [
+      {
+        "id": "navigationhistoryentry",
+        "href": "https://wicg.github.io/navigation-api/#navigationhistoryentry",
+        "linkingText": [
+          "NavigationHistoryEntry"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "NavigationHistoryEntry-class",
+          "href": "https://wicg.github.io/navigation-api/#NavigationHistoryEntry-class",
+          "title": "Navigation API history entries",
+          "number": "3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-navigationhistoryentry-url",
+        "href": "https://wicg.github.io/navigation-api/#dom-navigationhistoryentry-url",
+        "linkingText": [
+          "url"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "NavigationHistoryEntry"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "NavigationHistoryEntry-class",
+          "href": "https://wicg.github.io/navigation-api/#NavigationHistoryEntry-class",
+          "title": "Navigation API history entries",
+          "number": "3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-navigationhistoryentry-key",
+        "href": "https://wicg.github.io/navigation-api/#dom-navigationhistoryentry-key",
+        "linkingText": [
+          "key"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "NavigationHistoryEntry"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "NavigationHistoryEntry-class",
+          "href": "https://wicg.github.io/navigation-api/#NavigationHistoryEntry-class",
+          "title": "Navigation API history entries",
+          "number": "3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-navigationhistoryentry-id",
+        "href": "https://wicg.github.io/navigation-api/#dom-navigationhistoryentry-id",
+        "linkingText": [
+          "id"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "NavigationHistoryEntry"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "NavigationHistoryEntry-class",
+          "href": "https://wicg.github.io/navigation-api/#NavigationHistoryEntry-class",
+          "title": "Navigation API history entries",
+          "number": "3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-navigationhistoryentry-index",
+        "href": "https://wicg.github.io/navigation-api/#dom-navigationhistoryentry-index",
+        "linkingText": [
+          "index"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "NavigationHistoryEntry"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "NavigationHistoryEntry-class",
+          "href": "https://wicg.github.io/navigation-api/#NavigationHistoryEntry-class",
+          "title": "Navigation API history entries",
+          "number": "3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-navigationhistoryentry-samedocument",
+        "href": "https://wicg.github.io/navigation-api/#dom-navigationhistoryentry-samedocument",
+        "linkingText": [
+          "sameDocument"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "NavigationHistoryEntry"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "NavigationHistoryEntry-class",
+          "href": "https://wicg.github.io/navigation-api/#NavigationHistoryEntry-class",
+          "title": "Navigation API history entries",
+          "number": "3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-navigationhistoryentry-getstate",
+        "href": "https://wicg.github.io/navigation-api/#dom-navigationhistoryentry-getstate",
+        "linkingText": [
+          "getState()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "NavigationHistoryEntry"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "NavigationHistoryEntry-class",
+          "href": "https://wicg.github.io/navigation-api/#NavigationHistoryEntry-class",
+          "title": "Navigation API history entries",
+          "number": "3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-navigationhistoryentry-onnavigateto",
+        "href": "https://wicg.github.io/navigation-api/#dom-navigationhistoryentry-onnavigateto",
+        "linkingText": [
+          "onnavigateto"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "NavigationHistoryEntry"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "NavigationHistoryEntry-class",
+          "href": "https://wicg.github.io/navigation-api/#NavigationHistoryEntry-class",
+          "title": "Navigation API history entries",
+          "number": "3"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "dom-navigationhistoryentry-onnavigatefrom",
+        "href": "https://wicg.github.io/navigation-api/#dom-navigationhistoryentry-onnavigatefrom",
+        "linkingText": [
+          "onnavigatefrom"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "NavigationHistoryEntry"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "NavigationHistoryEntry-class",
+          "href": "https://wicg.github.io/navigation-api/#NavigationHistoryEntry-class",
+          "title": "Navigation API history entries",
+          "number": "3"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "dom-navigationhistoryentry-onfinish",
+        "href": "https://wicg.github.io/navigation-api/#dom-navigationhistoryentry-onfinish",
+        "linkingText": [
+          "onfinish"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "NavigationHistoryEntry"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "NavigationHistoryEntry-class",
+          "href": "https://wicg.github.io/navigation-api/#NavigationHistoryEntry-class",
+          "title": "Navigation API history entries",
+          "number": "3"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "dom-navigationhistoryentry-ondispose",
+        "href": "https://wicg.github.io/navigation-api/#dom-navigationhistoryentry-ondispose",
+        "linkingText": [
+          "ondispose"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "NavigationHistoryEntry"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "NavigationHistoryEntry-class",
+          "href": "https://wicg.github.io/navigation-api/#NavigationHistoryEntry-class",
+          "title": "Navigation API history entries",
+          "number": "3"
+        },
+        "definedIn": "table"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "eventtarget",
+        "href": "https://dom.spec.whatwg.org/#eventtarget",
+        "linkingText": [
+          "EventTarget"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventtarget-eventtarget",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-eventtarget",
+        "linkingText": [
+          "EventTarget()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-addeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-addeventlistener",
+        "linkingText": [
+          "addEventListener(type, callback, options)",
+          "addEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-removeeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-removeeventlistener",
+        "linkingText": [
+          "removeEventListener(type, callback, options)",
+          "removeEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-dispatchevent",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-dispatchevent",
+        "linkingText": [
+          "dispatchEvent(event)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

@@ -17,7 +17,7 @@
     },
     "idlNames": {
       "PerformanceNavigationTiming": {
-        "fragment": "[Exposed=Window]\ninterface PerformanceNavigationTiming : PerformanceResourceTiming {\n    readonly        attribute DOMHighResTimeStamp unloadEventStart;\n    readonly        attribute DOMHighResTimeStamp unloadEventEnd;\n    readonly        attribute DOMHighResTimeStamp domInteractive;\n    readonly        attribute DOMHighResTimeStamp domContentLoadedEventStart;\n    readonly        attribute DOMHighResTimeStamp domContentLoadedEventEnd;\n    readonly        attribute DOMHighResTimeStamp domComplete;\n    readonly        attribute DOMHighResTimeStamp loadEventStart;\n    readonly        attribute DOMHighResTimeStamp loadEventEnd;\n    readonly        attribute NavigationType      type;\n    readonly        attribute unsigned short      redirectCount;\n    [Default] object toJSON();\n};",
+        "fragment": "[Exposed=Window]\ninterface PerformanceNavigationTiming : PerformanceResourceTiming {\n    readonly        attribute DOMHighResTimeStamp  unloadEventStart;\n    readonly        attribute DOMHighResTimeStamp  unloadEventEnd;\n    readonly        attribute DOMHighResTimeStamp  domInteractive;\n    readonly        attribute DOMHighResTimeStamp  domContentLoadedEventStart;\n    readonly        attribute DOMHighResTimeStamp  domContentLoadedEventEnd;\n    readonly        attribute DOMHighResTimeStamp  domComplete;\n    readonly        attribute DOMHighResTimeStamp  loadEventStart;\n    readonly        attribute DOMHighResTimeStamp  loadEventEnd;\n    readonly        attribute NavigationTimingType type;\n    readonly        attribute unsigned short       redirectCount;\n    [Default] object toJSON();\n};",
         "type": "interface",
         "name": "PerformanceNavigationTiming",
         "inheritance": "PerformanceResourceTiming",
@@ -151,7 +151,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "NavigationType"
+              "idlType": "NavigationTimingType"
             },
             "extAttrs": [],
             "special": "",
@@ -208,10 +208,10 @@
         ],
         "partial": false
       },
-      "NavigationType": {
-        "fragment": "enum NavigationType {\n    \"navigate\",\n    \"reload\",\n    \"back_forward\",\n    \"prerender\"\n};",
+      "NavigationTimingType": {
+        "fragment": "enum NavigationTimingType {\n    \"navigate\",\n    \"reload\",\n    \"back_forward\",\n    \"prerender\"\n};",
         "type": "enum",
-        "name": "NavigationType",
+        "name": "NavigationTimingType",
         "values": [
           {
             "type": "enum-value",
@@ -811,7 +811,7 @@
       "PerformanceNavigationTiming": [
         "PerformanceResourceTiming",
         "DOMHighResTimeStamp",
-        "NavigationType"
+        "NavigationTimingType"
       ],
       "PerformanceTiming": [],
       "PerformanceNavigation": [],

@@ -1,0 +1,164 @@
+{
+  "name": "NavigationDestination",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Navigation API",
+      "url": "https://wicg.github.io/app-history/"
+    },
+    "fragment": "[Exposed=Window]\ninterface NavigationDestination {\n  readonly attribute USVString url;\n  readonly attribute DOMString? key;\n  readonly attribute DOMString? id;\n  readonly attribute long long index;\n  readonly attribute boolean sameDocument;\n\n  any getState();\n};",
+    "href": "https://wicg.github.io/navigation-api/#navigationdestination"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://wicg.github.io/app-history/": [
+      {
+        "id": "navigationdestination",
+        "href": "https://wicg.github.io/navigation-api/#navigationdestination",
+        "linkingText": [
+          "NavigationDestination"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "navigate-event-destination",
+          "href": "https://wicg.github.io/navigation-api/#navigate-event-destination",
+          "title": "The NavigationDestination class",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-navigationdestination-url",
+        "href": "https://wicg.github.io/navigation-api/#dom-navigationdestination-url",
+        "linkingText": [
+          "url"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "NavigationDestination"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "navigate-event-destination",
+          "href": "https://wicg.github.io/navigation-api/#navigate-event-destination",
+          "title": "The NavigationDestination class",
+          "number": "2.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-navigationdestination-key",
+        "href": "https://wicg.github.io/navigation-api/#dom-navigationdestination-key",
+        "linkingText": [
+          "key"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "NavigationDestination"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "navigate-event-destination",
+          "href": "https://wicg.github.io/navigation-api/#navigate-event-destination",
+          "title": "The NavigationDestination class",
+          "number": "2.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-navigationdestination-id",
+        "href": "https://wicg.github.io/navigation-api/#dom-navigationdestination-id",
+        "linkingText": [
+          "id"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "NavigationDestination"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "navigate-event-destination",
+          "href": "https://wicg.github.io/navigation-api/#navigate-event-destination",
+          "title": "The NavigationDestination class",
+          "number": "2.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-navigationdestination-index",
+        "href": "https://wicg.github.io/navigation-api/#dom-navigationdestination-index",
+        "linkingText": [
+          "index"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "NavigationDestination"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "navigate-event-destination",
+          "href": "https://wicg.github.io/navigation-api/#navigate-event-destination",
+          "title": "The NavigationDestination class",
+          "number": "2.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-navigationdestination-samedocument",
+        "href": "https://wicg.github.io/navigation-api/#dom-navigationdestination-samedocument",
+        "linkingText": [
+          "sameDocument"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "NavigationDestination"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "navigate-event-destination",
+          "href": "https://wicg.github.io/navigation-api/#navigate-event-destination",
+          "title": "The NavigationDestination class",
+          "number": "2.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-navigationdestination-getstate",
+        "href": "https://wicg.github.io/navigation-api/#dom-navigationdestination-getstate",
+        "linkingText": [
+          "getState()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "NavigationDestination"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "navigate-event-destination",
+          "href": "https://wicg.github.io/navigation-api/#navigate-event-destination",
+          "title": "The NavigationDestination class",
+          "number": "2.2"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

@@ -43,6 +43,22 @@
         ],
         "extAttrs": []
       },
+      "ComputePressureFactor": {
+        "fragment": "enum ComputePressureFactor { \"thermal\", \"power-supply\" };",
+        "type": "enum",
+        "name": "ComputePressureFactor",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "thermal"
+          },
+          {
+            "type": "enum-value",
+            "value": "power-supply"
+          }
+        ],
+        "extAttrs": []
+      },
       "ComputePressureUpdateCallback": {
         "fragment": "callback ComputePressureUpdateCallback = undefined (\n  sequence<ComputePressureRecord> changes,\n  ComputePressureObserver observer\n);",
         "type": "callback",
@@ -357,7 +373,7 @@
         "partial": false
       },
       "ComputePressureRecord": {
-        "fragment": "dictionary ComputePressureRecord {\n  ComputePressureSource source;\n  ComputePressureState state;\n  ComputePressureObserverOptions options;\n};",
+        "fragment": "dictionary ComputePressureRecord {\n  ComputePressureSource source;\n  ComputePressureState state;\n  sequence<ComputePressureFactor> factors;\n  DOMHighResTimeStamp timestamp;\n  ComputePressureObserverOptions options;\n};",
         "type": "dictionary",
         "name": "ComputePressureRecord",
         "inheritance": null,
@@ -388,6 +404,45 @@
               "nullable": false,
               "union": false,
               "idlType": "ComputePressureState"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "factors",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "ComputePressureFactor"
+                }
+              ]
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "timestamp",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMHighResTimeStamp"
             },
             "default": null,
             "required": false
@@ -445,12 +500,15 @@
       "ComputePressureRecord": [
         "ComputePressureSource",
         "ComputePressureState",
+        "ComputePressureFactor",
+        "DOMHighResTimeStamp",
         "ComputePressureObserverOptions"
       ],
       "ComputePressureObserverOptions": []
     },
     "externalDependencies": [
-      "PermissionState"
+      "PermissionState",
+      "DOMHighResTimeStamp"
     ],
     "hasObsoleteIdl": false
   }

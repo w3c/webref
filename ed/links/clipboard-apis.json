@@ -14,13 +14,14 @@
       "sec-Disclosure"
     ],
     "https://www.w3.org/2004/01/pp-impl/114929/status": [],
-    "https://www.w3.org/2020/Process-20200915/": [],
+    "https://www.w3.org/2021/Process-20211102/": [],
     "https://w3c.github.io/permissions/": [
       "dfn-powerful-feature",
+      "dfn-permissions-task-source",
       "dfn-permission-descriptor-type",
       "dom-permissiondescriptor",
       "dom-permissionstate-denied",
-      "dfn-permission-state",
+      "dfn-state",
       "dom-permissionstate-granted",
       "dfn-request-permission-to-use"
     ],
@@ -37,7 +38,10 @@
       "dom-datatransfer-setdata",
       "datatransferitemlist",
       "navigator",
+      "concept-relevant-realm",
       "in-parallel",
+      "queue-a-global-task",
+      "concept-realm-global",
       "concept-relevant-global",
       "transient-activation",
       "has-focus-steps",
@@ -59,7 +63,6 @@
       "constructing-events",
       "dom-event-preventdefault",
       "eventtarget",
-      "concept-cd-data",
       "dom-event-istrusted",
       "dom-event-composed"
     ],
@@ -69,14 +72,22 @@
       "idl-DOMString",
       "SecureContext",
       "SameObject",
-      "idl-sequence",
+      "this",
       "idl-promise",
-      "idl-undefined",
       "idl-record",
-      "idl-long-long",
-      "idl-boolean",
       "idl-frozen-array",
-      "this"
+      "new",
+      "exceptiondef-typeerror",
+      "dfn-create-frozen-array",
+      "a-new-promise",
+      "dfn-perform-steps-once-promise-is-settled",
+      "reject",
+      "notfounderror",
+      "idl-DOMException",
+      "idl-sequence",
+      "idl-undefined",
+      "notallowederror",
+      "idl-boolean"
     ],
     "https://developer.mozilla.org/en-US/docs/Web/API/ClipboardEvent/clipboardData": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/Document/copy_event": [],
@@ -92,32 +103,45 @@
       "allowed-to-show-a-popup"
     ],
     "https://developer.mozilla.org/en-US/docs/Web/API/Navigator/clipboard": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/Clipboard": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/ClipboardItem/ClipboardItem": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/ClipboardItem/getType": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/ClipboardItem/presentationStyle": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/ClipboardItem/types": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/ClipboardItem": [],
     "https://w3c.github.io/FileAPI/": [
       "dfn-Blob",
       "dfn-type",
-      "dfn-blobparts",
       "dfn-file",
       "dfn-name",
       "dfn-lastModified"
     ],
-    "https://developer.mozilla.org/en-US/docs/Web/API/Clipboard/read": [],
     "https://tc39.github.io/ecma262/": [
       "sec-promise-objects"
     ],
+    "https://mimesniff.spec.whatwg.org/": [
+      "mime-type",
+      "parse-a-mime-type",
+      "serialize-a-mime-type",
+      "mime-type-essence"
+    ],
+    "https://developer.mozilla.org/en-US/docs/Web/API/ClipboardItem/ClipboardItem": [],
+    "https://infra.spec.whatwg.org/": [
+      "list-contain",
+      "list-size"
+    ],
+    "https://developer.mozilla.org/en-US/docs/Web/API/ClipboardItem/presentationStyle": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/ClipboardItem/types": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/ClipboardItem/getType": [],
+    "https://encoding.spec.whatwg.org/": [
+      "utf-8-encode",
+      "utf-8-decode"
+    ],
+    "https://developer.mozilla.org/en-US/docs/Web/API/Clipboard": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/Clipboard/read": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/Clipboard/readText": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/Clipboard/write": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/Clipboard/writeText": [],
-    "https://tc39.es/ecma262/multipage/": [],
     "https://www.w3.org/TR/FileAPI/": [],
     "https://www.w3.org/TR/permissions/": [],
     "https://datatracker.ietf.org/doc/html/rfc2119": [],
     "https://www.rfc-editor.org/rfc/rfc2392": [],
+    "https://tc39.es/ecma262/multipage/": [],
     "https://msdn.microsoft.com/en-us/ie/ms537658(v=vs.94)": [],
     "https://www.w3.org/TR/SVG11/": []
   }
