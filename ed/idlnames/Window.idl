@@ -94,7 +94,7 @@ partial interface Window {
 
 // Source: Navigation API (https://wicg.github.io/app-history/)
 partial interface Window {
-  readonly attribute Navigation navigation;
+  [Replaceable] readonly attribute Navigation navigation;
 };
 
 // Source: Attribution Reporting (https://wicg.github.io/conversion-measurement-api/)
