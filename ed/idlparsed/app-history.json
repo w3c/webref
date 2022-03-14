@@ -1504,7 +1504,7 @@
     "idlExtendedNames": {
       "Window": [
         {
-          "fragment": "partial interface Window {\n  readonly attribute Navigation navigation;\n};",
+          "fragment": "partial interface Window {\n  [Replaceable] readonly attribute Navigation navigation;\n};",
           "type": "interface",
           "name": "Window",
           "inheritance": null,
@@ -1520,7 +1520,14 @@
                 "union": false,
                 "idlType": "Navigation"
               },
-              "extAttrs": [],
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "Replaceable",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
               "special": "",
               "readonly": true
             }
