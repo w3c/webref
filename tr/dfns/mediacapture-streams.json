@@ -184,8 +184,8 @@
       "definedIn": "prose"
     },
     {
-      "id": "track-set",
-      "href": "https://www.w3.org/TR/mediacapture-streams/#track-set",
+      "id": "dfn-track-set",
+      "href": "https://www.w3.org/TR/mediacapture-streams/#dfn-track-set",
       "linkingText": [
         "track set"
       ],
@@ -306,14 +306,16 @@
       "definedIn": "prose"
     },
     {
-      "id": "add-track",
-      "href": "https://www.w3.org/TR/mediacapture-streams/#add-track",
+      "id": "dfn-add-a-track",
+      "href": "https://www.w3.org/TR/mediacapture-streams/#dfn-add-a-track",
       "linkingText": [
         "add a track"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
+      "for": [
+        "MediaStream"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
@@ -325,14 +327,16 @@
       "definedIn": "prose"
     },
     {
-      "id": "remove-track",
-      "href": "https://www.w3.org/TR/mediacapture-streams/#remove-track",
+      "id": "dfn-remove-a-track",
+      "href": "https://www.w3.org/TR/mediacapture-streams/#dfn-remove-a-track",
       "linkingText": [
         "remove a track"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
+      "for": [
+        "MediaStream"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
@@ -3441,44 +3445,6 @@
       "definedIn": "dt"
     },
     {
-      "id": "dfn-ended-video-playback",
-      "href": "https://www.w3.org/TR/mediacapture-streams/#dfn-ended-video-playback",
-      "linkingText": [
-        "ended video playback"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "mediastreams-in-media-elements",
-        "href": "https://www.w3.org/TR/mediacapture-streams/#mediastreams-in-media-elements",
-        "title": "MediaStreams in Media Elements",
-        "number": "6"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-ended-audio-playback",
-      "href": "https://www.w3.org/TR/mediacapture-streams/#dfn-ended-audio-playback",
-      "linkingText": [
-        "ended audio playback"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "mediastreams-in-media-elements",
-        "href": "https://www.w3.org/TR/mediacapture-streams/#mediastreams-in-media-elements",
-        "title": "MediaStreams in Media Elements",
-        "number": "6"
-      },
-      "definedIn": "prose"
-    },
-    {
       "id": "dom-overconstrainederror-constructor",
       "href": "https://www.w3.org/TR/mediacapture-streams/#dom-overconstrainederror-constructor",
       "linkingText": [
@@ -5362,25 +5328,6 @@
       "definedIn": "prose"
     },
     {
-      "id": "dfn-constraints-and-constraintset",
-      "href": "https://www.w3.org/TR/mediacapture-streams/#dfn-constraints-and-constraintset",
-      "linkingText": [
-        "Constraints and ConstraintSet"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "constraints",
-        "href": "https://www.w3.org/TR/mediacapture-streams/#constraints",
-        "title": "Constraints and ConstraintSet",
-        "number": "11.5"
-      },
-      "definedIn": "heading"
-    },
-    {
       "id": "dom-constraintset",
       "href": "https://www.w3.org/TR/mediacapture-streams/#dom-constraintset",
       "linkingText": [
@@ -5438,6 +5385,42 @@
         "number": "11.5.1"
       },
       "definedIn": "dt"
+    },
+    {
+      "id": "dfn-camera",
+      "href": "https://www.w3.org/TR/mediacapture-streams/#dfn-camera",
+      "linkingText": [
+        "\"camera\""
+      ],
+      "localLinkingText": [],
+      "type": "permission",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "permissions-integration-0",
+        "href": "https://www.w3.org/TR/mediacapture-streams/#permissions-integration-0",
+        "title": "13. Permissions Integration"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-microphone",
+      "href": "https://www.w3.org/TR/mediacapture-streams/#dfn-microphone",
+      "linkingText": [
+        "\"microphone\""
+      ],
+      "localLinkingText": [],
+      "type": "permission",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "permissions-integration-0",
+        "href": "https://www.w3.org/TR/mediacapture-streams/#permissions-integration-0",
+        "title": "13. Permissions Integration"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "dom-devicepermissiondescriptor",
@@ -5514,42 +5497,6 @@
         "title": "13. Permissions Integration"
       },
       "definedIn": "pre"
-    },
-    {
-      "id": "dfn-camera",
-      "href": "https://www.w3.org/TR/mediacapture-streams/#dfn-camera",
-      "linkingText": [
-        "\"camera\""
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "permissions-policy-integration-0",
-        "href": "https://www.w3.org/TR/mediacapture-streams/#permissions-policy-integration-0",
-        "title": "14. Permissions Policy Integration"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-microphone",
-      "href": "https://www.w3.org/TR/mediacapture-streams/#dfn-microphone",
-      "linkingText": [
-        "\"microphone\""
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "permissions-policy-integration-0",
-        "href": "https://www.w3.org/TR/mediacapture-streams/#permissions-policy-integration-0",
-        "title": "14. Permissions Policy Integration"
-      },
-      "definedIn": "prose"
     }
   ]
 }

@@ -1709,6 +1709,25 @@
       "definedIn": "prose"
     },
     {
+      "id": "allowed-public-key-algorithms",
+      "href": "https://www.w3.org/TR/webtransport/#allowed-public-key-algorithms",
+      "linkingText": [
+        "allowed public key algorithms"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "web-transport-configuration",
+        "href": "https://www.w3.org/TR/webtransport/#web-transport-configuration",
+        "title": "Configuration",
+        "number": "6.9"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "dictdef-webtransportcloseinfo",
       "href": "https://www.w3.org/TR/webtransport/#dictdef-webtransportcloseinfo",
       "linkingText": [
@@ -1852,6 +1871,27 @@
       "definedIn": "dt"
     },
     {
+      "id": "dom-webtransportstats-packetslost",
+      "href": "https://www.w3.org/TR/webtransport/#dom-webtransportstats-packetslost",
+      "linkingText": [
+        "packetsLost"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "WebTransportStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "web-transport-stats",
+        "href": "https://www.w3.org/TR/webtransport/#web-transport-stats",
+        "title": "WebTransportStats Dictionary",
+        "number": "6.11"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "dom-webtransportstats-numoutgoingstreamscreated",
       "href": "https://www.w3.org/TR/webtransport/#dom-webtransportstats-numoutgoingstreamscreated",
       "linkingText": [
@@ -1919,6 +1959,48 @@
       "href": "https://www.w3.org/TR/webtransport/#dom-webtransportstats-packetsreceived",
       "linkingText": [
         "packetsReceived"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "WebTransportStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "web-transport-stats",
+        "href": "https://www.w3.org/TR/webtransport/#web-transport-stats",
+        "title": "WebTransportStats Dictionary",
+        "number": "6.11"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-webtransportstats-smoothedrtt",
+      "href": "https://www.w3.org/TR/webtransport/#dom-webtransportstats-smoothedrtt",
+      "linkingText": [
+        "smoothedRtt"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "WebTransportStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "web-transport-stats",
+        "href": "https://www.w3.org/TR/webtransport/#web-transport-stats",
+        "title": "WebTransportStats Dictionary",
+        "number": "6.11"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-webtransportstats-rttvariation",
+      "href": "https://www.w3.org/TR/webtransport/#dom-webtransportstats-rttvariation",
+      "linkingText": [
+        "rttVariation"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -2289,48 +2371,6 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-webtransportbidirectionalstream-readable",
-      "href": "https://www.w3.org/TR/webtransport/#dom-webtransportbidirectionalstream-readable",
-      "linkingText": [
-        "readable"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "WebTransportBidirectionalStream"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "bidirectional-stream",
-        "href": "https://www.w3.org/TR/webtransport/#bidirectional-stream",
-        "title": "Interface WebTransportBidirectionalStream",
-        "number": "9"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-webtransportbidirectionalstream-writable",
-      "href": "https://www.w3.org/TR/webtransport/#dom-webtransportbidirectionalstream-writable",
-      "linkingText": [
-        "writable"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "WebTransportBidirectionalStream"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "bidirectional-stream",
-        "href": "https://www.w3.org/TR/webtransport/#bidirectional-stream",
-        "title": "Interface WebTransportBidirectionalStream",
-        "number": "9"
-      },
-      "definedIn": "pre"
-    },
-    {
       "id": "bidirectionalstream-readable",
       "href": "https://www.w3.org/TR/webtransport/#bidirectionalstream-readable",
       "linkingText": [
@@ -2394,6 +2434,48 @@
       "definedIn": "table"
     },
     {
+      "id": "dom-webtransportbidirectionalstream-readable",
+      "href": "https://www.w3.org/TR/webtransport/#dom-webtransportbidirectionalstream-readable",
+      "linkingText": [
+        "readable"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "WebTransportBidirectionalStream"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "bidirectional-stream-attributes",
+        "href": "https://www.w3.org/TR/webtransport/#bidirectional-stream-attributes",
+        "title": "Attributes",
+        "number": "9.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-webtransportbidirectionalstream-writable",
+      "href": "https://www.w3.org/TR/webtransport/#dom-webtransportbidirectionalstream-writable",
+      "linkingText": [
+        "writable"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "WebTransportBidirectionalStream"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "bidirectional-stream-attributes",
+        "href": "https://www.w3.org/TR/webtransport/#bidirectional-stream-attributes",
+        "title": "Attributes",
+        "number": "9.2"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "bidirectionalstream-create",
       "href": "https://www.w3.org/TR/webtransport/#bidirectionalstream-create",
       "linkingText": [
@@ -2410,7 +2492,7 @@
         "id": "bidirectional-stream-procedures",
         "href": "https://www.w3.org/TR/webtransport/#bidirectional-stream-procedures",
         "title": "Procedures",
-        "number": "9.2"
+        "number": "9.3"
       },
       "definedIn": "prose"
     },

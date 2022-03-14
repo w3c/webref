@@ -1,0 +1,16 @@
+// Source: Navigation API (https://wicg.github.io/app-history/)
+[Exposed=Window]
+interface NavigateEvent : Event {
+  constructor(DOMString type, NavigateEventInit eventInit);
+
+  readonly attribute NavigationNavigationType navigationType;
+  readonly attribute NavigationDestination destination;
+  readonly attribute boolean canTransition;
+  readonly attribute boolean userInitiated;
+  readonly attribute boolean hashChange;
+  readonly attribute AbortSignal signal;
+  readonly attribute FormData? formData;
+  readonly attribute any info;
+
+  undefined transitionWhile(Promise<undefined> newNavigationAction);
+};

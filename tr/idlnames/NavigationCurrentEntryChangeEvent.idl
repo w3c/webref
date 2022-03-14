@@ -1,0 +1,8 @@
+// Source: Navigation API (https://wicg.github.io/app-history/)
+[Exposed=Window]
+interface NavigationCurrentEntryChangeEvent : Event {
+  constructor(DOMString type, NavigationCurrentEntryChangeEventInit eventInit);
+
+  readonly attribute NavigationNavigationType? navigationType;
+  readonly attribute NavigationHistoryEntry from;
+};

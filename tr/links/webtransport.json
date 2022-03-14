@@ -5,7 +5,10 @@
   },
   "links": {
     "https://www.w3.org/TR/": [],
-    "https://www.w3.org/webtransport/": [],
+    "https://www.w3.org/groups/wg/webtransport": [],
+    "https://www.w3.org/2021/Process-20211102/": [
+      "recs-and-notes"
+    ],
     "https://github.com/w3c/webtransport/issues": [],
     "https://github.com/w3c/webtransport/": [],
     "https://www.w3.org/Consortium/Patent-Policy/": [
@@ -13,7 +16,6 @@
       "sec-Disclosure"
     ],
     "https://www.w3.org/2004/01/pp-impl/125908/status": [],
-    "https://www.w3.org/2020/Process-20200915/": [],
     "https://html.spec.whatwg.org/": [
       "eventhandler",
       "errorevent",
@@ -21,7 +23,11 @@
       "networking-task-source",
       "event-handlers",
       "event-handler-event-type",
+      "concept-request-origin",
+      "ascii-serialisation-of-an-origin",
       "relevant-settings-object",
+      "concept-settings-object-origin",
+      "concept-settings-object-policy-container",
       "in-parallel",
       "queue-a-global-task",
       "concept-relevant-global",
@@ -32,7 +38,8 @@
     "https://dom.spec.whatwg.org/": [
       "concept-event",
       "document",
-      "abortsignal-add"
+      "abortsignal-add",
+      "abortsignal-abort-reason"
     ],
     "https://webidl.spec.whatwg.org/": [
       "dfn-throw",
@@ -76,6 +83,7 @@
     "https://streams.spec.whatwg.org/": [
       "readablestream",
       "writablestream",
+      "high-water-mark",
       "readablestream-enqueue",
       "default-writer-ready",
       "readablestream-set-up",
@@ -106,11 +114,20 @@
     ],
     "https://fetch.spec.whatwg.org/": [
       "concept-connection",
+      "credentials",
+      "concept-request",
+      "concept-request-url",
+      "concept-request-client",
+      "concept-request-policy-container",
+      "concept-request-destination",
+      "concept-request-origin",
+      "block-bad-port",
       "determine-the-network-partition-key",
       "concept-connection-obtain",
       "obtain-a-connection-http3only",
       "concept-header-list-set",
-      "concept-fetch"
+      "concept-fetch",
+      "http-origin"
     ],
     "https://datatracker.ietf.org/doc/html/draft-ietf-webtrans-http3/": [
       "section-4.4",
@@ -120,8 +137,8 @@
       "section-5"
     ],
     "https://infra.spec.whatwg.org/": [
+      "isomorphic-encode",
       "byte-sequence",
-      "pair",
       "implementation-defined",
       "queue-dequeue",
       "queue-enqueue",
@@ -144,6 +161,10 @@
       "concept-url-scheme",
       "concept-url-fragment"
     ],
+    "https://www.w3.org/TR/CSP3/": [
+      "report-for-request",
+      "should-block-request"
+    ],
     "https://encoding.spec.whatwg.org/": [
       "utf-8-encode",
       "utf-8-decode",
@@ -155,6 +176,9 @@
     "https://www.w3.org/TR/hr-time-3/": [
       "dom-domhighrestimestamp"
     ],
+    "https://www.rfc-editor.org/rfc/rfc9002": [
+      "section-5.3"
+    ],
     "https://heycam.github.io/webidl/": [
       "dom-domexception-domexception"
     ],
@@ -162,7 +186,10 @@
     "https://tools.ietf.org/html/draft-ietf-quic-transport": [],
     "https://datatracker.ietf.org/doc/html/draft-ietf-quic-datagram/": [],
     "https://datatracker.ietf.org/doc/html/rfc2119": [],
+    "https://www.rfc-editor.org/rfc/rfc3279": [],
     "https://www.rfc-editor.org/rfc/rfc5280": [],
+    "https://www.rfc-editor.org/rfc/rfc6125": [],
+    "https://www.rfc-editor.org/rfc/rfc8422": [],
     "https://datatracker.ietf.org/doc/html/draft-ietf-webtrans-overview": [],
     "https://www.rfc-editor.org/rfc/rfc7301": [],
     "https://www.rfc-editor.org/rfc/rfc8446": []

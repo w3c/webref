@@ -14,14 +14,33 @@
     },
     "idlNames": {
       "CloseWatcher": {
-        "fragment": "[Exposed=Window]\ninterface CloseWatcher : EventTarget {\n  constructor();\n\n  undefined destroy();\n  undefined signalClose();\n\n  attribute EventHandler oncancel;\n  attribute EventHandler onclose;\n};",
+        "fragment": "[Exposed=Window]\ninterface CloseWatcher : EventTarget {\n  constructor(optional CloseWatcherOptions options = {});\n\n  undefined destroy();\n  undefined close();\n\n  attribute EventHandler oncancel;\n  attribute EventHandler onclose;\n};",
         "type": "interface",
         "name": "CloseWatcher",
         "inheritance": "EventTarget",
         "members": [
           {
             "type": "constructor",
-            "arguments": [],
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "options",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CloseWatcherOptions"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
             "extAttrs": []
           },
           {
@@ -41,7 +60,7 @@
           },
           {
             "type": "operation",
-            "name": "signalClose",
+            "name": "close",
             "idlType": {
               "type": "return-type",
               "extAttrs": [],
@@ -97,6 +116,31 @@
           }
         ],
         "partial": false
+      },
+      "CloseWatcherOptions": {
+        "fragment": "dictionary CloseWatcherOptions {\n  AbortSignal signal;\n};",
+        "type": "dictionary",
+        "name": "CloseWatcherOptions",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "signal",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "AbortSignal"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
       }
     },
     "idlExtendedNames": {},
@@ -109,12 +153,17 @@
     "dependencies": {
       "CloseWatcher": [
         "EventTarget",
+        "CloseWatcherOptions",
         "EventHandler"
+      ],
+      "CloseWatcherOptions": [
+        "AbortSignal"
       ]
     },
     "externalDependencies": [
       "EventTarget",
-      "EventHandler"
+      "EventHandler",
+      "AbortSignal"
     ],
     "hasObsoleteIdl": false
   }

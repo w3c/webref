@@ -1,30 +1,30 @@
 {
   "spec": {
-    "title": "App History API",
-    "url": "https://wicg.github.io/app-history/"
+    "title": "Navigation API",
+    "url": "https://wicg.github.io/navigation-api/"
   },
   "idlparsed": {
     "jsNames": {
       "constructors": {
         "Window": [
-          "AppHistoryCurrentChangeEvent",
-          "AppHistoryNavigateEvent"
+          "NavigationCurrentEntryChangeEvent",
+          "NavigateEvent"
         ]
       },
       "functions": {
         "Window": [
-          "AppHistory",
-          "AppHistoryTransition",
-          "AppHistoryDestination",
-          "AppHistoryEntry"
+          "Navigation",
+          "NavigationTransition",
+          "NavigationDestination",
+          "NavigationHistoryEntry"
         ]
       }
     },
     "idlNames": {
-      "AppHistory": {
-        "fragment": "[Exposed=Window]\ninterface AppHistory : EventTarget {\n  sequence<AppHistoryEntry> entries();\n  readonly attribute AppHistoryEntry? current;\n  undefined updateCurrent(AppHistoryUpdateCurrentOptions options);\n  readonly attribute AppHistoryTransition? transition;\n\n  readonly attribute boolean canGoBack;\n  readonly attribute boolean canGoForward;\n\n  AppHistoryResult navigate(USVString url, optional AppHistoryNavigateOptions options = {});\n  AppHistoryResult reload(optional AppHistoryReloadOptions options = {});\n\n  AppHistoryResult goTo(DOMString key, optional AppHistoryNavigationOptions options = {});\n  AppHistoryResult back(optional AppHistoryNavigationOptions options = {});\n  AppHistoryResult forward(optional AppHistoryNavigationOptions options = {});\n\n  attribute EventHandler onnavigate;\n  attribute EventHandler onnavigatesuccess;\n  attribute EventHandler onnavigateerror;\n  attribute EventHandler oncurrentchange;\n};",
+      "Navigation": {
+        "fragment": "[Exposed=Window]\ninterface Navigation : EventTarget {\n  sequence<NavigationHistoryEntry> entries();\n  readonly attribute NavigationHistoryEntry? currentEntry;\n  undefined updateCurrentEntry(NavigationUpdateCurrentEntryOptions options);\n  readonly attribute NavigationTransition? transition;\n\n  readonly attribute boolean canGoBack;\n  readonly attribute boolean canGoForward;\n\n  NavigationResult navigate(USVString url, optional NavigationNavigateOptions options = {});\n  NavigationResult reload(optional NavigationReloadOptions options = {});\n\n  NavigationResult traverseTo(DOMString key, optional NavigationOptions options = {});\n  NavigationResult back(optional NavigationOptions options = {});\n  NavigationResult forward(optional NavigationOptions options = {});\n\n  attribute EventHandler onnavigate;\n  attribute EventHandler onnavigatesuccess;\n  attribute EventHandler onnavigateerror;\n  attribute EventHandler oncurrententrychange;\n};",
         "type": "interface",
-        "name": "AppHistory",
+        "name": "Navigation",
         "inheritance": "EventTarget",
         "members": [
           {
@@ -43,7 +43,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "AppHistoryEntry"
+                  "idlType": "NavigationHistoryEntry"
                 }
               ]
             },
@@ -53,14 +53,14 @@
           },
           {
             "type": "attribute",
-            "name": "current",
+            "name": "currentEntry",
             "idlType": {
               "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
               "nullable": true,
               "union": false,
-              "idlType": "AppHistoryEntry"
+              "idlType": "NavigationHistoryEntry"
             },
             "extAttrs": [],
             "special": "",
@@ -68,7 +68,7 @@
           },
           {
             "type": "operation",
-            "name": "updateCurrent",
+            "name": "updateCurrentEntry",
             "idlType": {
               "type": "return-type",
               "extAttrs": [],
@@ -88,7 +88,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "AppHistoryUpdateCurrentOptions"
+                  "idlType": "NavigationUpdateCurrentEntryOptions"
                 },
                 "default": null,
                 "optional": false,
@@ -107,7 +107,7 @@
               "generic": "",
               "nullable": true,
               "union": false,
-              "idlType": "AppHistoryTransition"
+              "idlType": "NavigationTransition"
             },
             "extAttrs": [],
             "special": "",
@@ -152,7 +152,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "AppHistoryResult"
+              "idlType": "NavigationResult"
             },
             "arguments": [
               {
@@ -181,7 +181,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "AppHistoryNavigateOptions"
+                  "idlType": "NavigationNavigateOptions"
                 },
                 "default": {
                   "type": "dictionary"
@@ -202,7 +202,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "AppHistoryResult"
+              "idlType": "NavigationResult"
             },
             "arguments": [
               {
@@ -215,7 +215,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "AppHistoryReloadOptions"
+                  "idlType": "NavigationReloadOptions"
                 },
                 "default": {
                   "type": "dictionary"
@@ -229,14 +229,14 @@
           },
           {
             "type": "operation",
-            "name": "goTo",
+            "name": "traverseTo",
             "idlType": {
               "type": "return-type",
               "extAttrs": [],
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "AppHistoryResult"
+              "idlType": "NavigationResult"
             },
             "arguments": [
               {
@@ -265,7 +265,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "AppHistoryNavigationOptions"
+                  "idlType": "NavigationOptions"
                 },
                 "default": {
                   "type": "dictionary"
@@ -286,7 +286,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "AppHistoryResult"
+              "idlType": "NavigationResult"
             },
             "arguments": [
               {
@@ -299,7 +299,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "AppHistoryNavigationOptions"
+                  "idlType": "NavigationOptions"
                 },
                 "default": {
                   "type": "dictionary"
@@ -320,7 +320,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "AppHistoryResult"
+              "idlType": "NavigationResult"
             },
             "arguments": [
               {
@@ -333,7 +333,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "AppHistoryNavigationOptions"
+                  "idlType": "NavigationOptions"
                 },
                 "default": {
                   "type": "dictionary"
@@ -392,7 +392,7 @@
           },
           {
             "type": "attribute",
-            "name": "oncurrentchange",
+            "name": "oncurrententrychange",
             "idlType": {
               "type": "attribute-type",
               "extAttrs": [],
@@ -419,10 +419,10 @@
         ],
         "partial": false
       },
-      "AppHistoryUpdateCurrentOptions": {
-        "fragment": "dictionary AppHistoryUpdateCurrentOptions {\n  required any state;\n};",
+      "NavigationUpdateCurrentEntryOptions": {
+        "fragment": "dictionary NavigationUpdateCurrentEntryOptions {\n  required any state;\n};",
         "type": "dictionary",
-        "name": "AppHistoryUpdateCurrentOptions",
+        "name": "NavigationUpdateCurrentEntryOptions",
         "inheritance": null,
         "members": [
           {
@@ -444,10 +444,10 @@
         "extAttrs": [],
         "partial": false
       },
-      "AppHistoryNavigationOptions": {
-        "fragment": "dictionary AppHistoryNavigationOptions {\n  any info;\n};",
+      "NavigationOptions": {
+        "fragment": "dictionary NavigationOptions {\n  any info;\n};",
         "type": "dictionary",
-        "name": "AppHistoryNavigationOptions",
+        "name": "NavigationOptions",
         "inheritance": null,
         "members": [
           {
@@ -469,11 +469,11 @@
         "extAttrs": [],
         "partial": false
       },
-      "AppHistoryNavigateOptions": {
-        "fragment": "dictionary AppHistoryNavigateOptions : AppHistoryNavigationOptions {\n  any state;\n  boolean replace = false;\n};",
+      "NavigationNavigateOptions": {
+        "fragment": "dictionary NavigationNavigateOptions : NavigationOptions {\n  any state;\n  boolean replace = false;\n};",
         "type": "dictionary",
-        "name": "AppHistoryNavigateOptions",
-        "inheritance": "AppHistoryNavigationOptions",
+        "name": "NavigationNavigateOptions",
+        "inheritance": "NavigationOptions",
         "members": [
           {
             "type": "field",
@@ -512,11 +512,11 @@
         "extAttrs": [],
         "partial": false
       },
-      "AppHistoryReloadOptions": {
-        "fragment": "dictionary AppHistoryReloadOptions : AppHistoryNavigationOptions {\n  any state;\n};",
+      "NavigationReloadOptions": {
+        "fragment": "dictionary NavigationReloadOptions : NavigationOptions {\n  any state;\n};",
         "type": "dictionary",
-        "name": "AppHistoryReloadOptions",
-        "inheritance": "AppHistoryNavigationOptions",
+        "name": "NavigationReloadOptions",
+        "inheritance": "NavigationOptions",
         "members": [
           {
             "type": "field",
@@ -537,10 +537,10 @@
         "extAttrs": [],
         "partial": false
       },
-      "AppHistoryResult": {
-        "fragment": "dictionary AppHistoryResult {\n  Promise<AppHistoryEntry> committed;\n  Promise<AppHistoryEntry> finished;\n};",
+      "NavigationResult": {
+        "fragment": "dictionary NavigationResult {\n  Promise<NavigationHistoryEntry> committed;\n  Promise<NavigationHistoryEntry> finished;\n};",
         "type": "dictionary",
-        "name": "AppHistoryResult",
+        "name": "NavigationResult",
         "inheritance": null,
         "members": [
           {
@@ -560,7 +560,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "AppHistoryEntry"
+                  "idlType": "NavigationHistoryEntry"
                 }
               ]
             },
@@ -584,7 +584,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "AppHistoryEntry"
+                  "idlType": "NavigationHistoryEntry"
                 }
               ]
             },
@@ -595,10 +595,10 @@
         "extAttrs": [],
         "partial": false
       },
-      "AppHistoryCurrentChangeEvent": {
-        "fragment": "[Exposed=Window]\ninterface AppHistoryCurrentChangeEvent : Event {\n  constructor(DOMString type, AppHistoryCurrentChangeEventInit eventInit);\n\n  readonly attribute AppHistoryNavigationType? navigationType;\n  readonly attribute AppHistoryEntry from;\n};",
+      "NavigationCurrentEntryChangeEvent": {
+        "fragment": "[Exposed=Window]\ninterface NavigationCurrentEntryChangeEvent : Event {\n  constructor(DOMString type, NavigationCurrentEntryChangeEventInit eventInit);\n\n  readonly attribute NavigationNavigationType? navigationType;\n  readonly attribute NavigationHistoryEntry from;\n};",
         "type": "interface",
-        "name": "AppHistoryCurrentChangeEvent",
+        "name": "NavigationCurrentEntryChangeEvent",
         "inheritance": "Event",
         "members": [
           {
@@ -630,7 +630,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "AppHistoryCurrentChangeEventInit"
+                  "idlType": "NavigationCurrentEntryChangeEventInit"
                 },
                 "default": null,
                 "optional": false,
@@ -648,7 +648,7 @@
               "generic": "",
               "nullable": true,
               "union": false,
-              "idlType": "AppHistoryNavigationType"
+              "idlType": "NavigationNavigationType"
             },
             "extAttrs": [],
             "special": "",
@@ -663,7 +663,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "AppHistoryEntry"
+              "idlType": "NavigationHistoryEntry"
             },
             "extAttrs": [],
             "special": "",
@@ -683,10 +683,10 @@
         ],
         "partial": false
       },
-      "AppHistoryCurrentChangeEventInit": {
-        "fragment": "dictionary AppHistoryCurrentChangeEventInit : EventInit {\n  AppHistoryNavigationType? navigationType = null;\n  required AppHistoryEntry destination;\n};",
+      "NavigationCurrentEntryChangeEventInit": {
+        "fragment": "dictionary NavigationCurrentEntryChangeEventInit : EventInit {\n  NavigationNavigationType? navigationType = null;\n  required NavigationHistoryEntry destination;\n};",
         "type": "dictionary",
-        "name": "AppHistoryCurrentChangeEventInit",
+        "name": "NavigationCurrentEntryChangeEventInit",
         "inheritance": "EventInit",
         "members": [
           {
@@ -699,7 +699,7 @@
               "generic": "",
               "nullable": true,
               "union": false,
-              "idlType": "AppHistoryNavigationType"
+              "idlType": "NavigationNavigationType"
             },
             "default": {
               "type": "null"
@@ -716,7 +716,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "AppHistoryEntry"
+              "idlType": "NavigationHistoryEntry"
             },
             "default": null,
             "required": true
@@ -725,10 +725,10 @@
         "extAttrs": [],
         "partial": false
       },
-      "AppHistoryTransition": {
-        "fragment": "[Exposed=Window]\ninterface AppHistoryTransition {\n  readonly attribute AppHistoryNavigationType navigationType;\n  readonly attribute AppHistoryEntry from;\n  readonly attribute Promise<undefined> finished;\n\n  AppHistoryResult rollback(optional AppHistoryNavigationOptions options = {});\n};",
+      "NavigationTransition": {
+        "fragment": "[Exposed=Window]\ninterface NavigationTransition {\n  readonly attribute NavigationNavigationType navigationType;\n  readonly attribute NavigationHistoryEntry from;\n  readonly attribute Promise<undefined> finished;\n\n  NavigationResult rollback(optional NavigationOptions options = {});\n};",
         "type": "interface",
-        "name": "AppHistoryTransition",
+        "name": "NavigationTransition",
         "inheritance": null,
         "members": [
           {
@@ -740,7 +740,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "AppHistoryNavigationType"
+              "idlType": "NavigationNavigationType"
             },
             "extAttrs": [],
             "special": "",
@@ -755,7 +755,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "AppHistoryEntry"
+              "idlType": "NavigationHistoryEntry"
             },
             "extAttrs": [],
             "special": "",
@@ -794,7 +794,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "AppHistoryResult"
+              "idlType": "NavigationResult"
             },
             "arguments": [
               {
@@ -807,7 +807,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "AppHistoryNavigationOptions"
+                  "idlType": "NavigationOptions"
                 },
                 "default": {
                   "type": "dictionary"
@@ -833,10 +833,10 @@
         ],
         "partial": false
       },
-      "AppHistoryNavigateEvent": {
-        "fragment": "[Exposed=Window]\ninterface AppHistoryNavigateEvent : Event {\n  constructor(DOMString type, AppHistoryNavigateEventInit eventInit);\n\n  readonly attribute AppHistoryNavigationType navigationType;\n  readonly attribute AppHistoryDestination destination;\n  readonly attribute boolean canTransition;\n  readonly attribute boolean userInitiated;\n  readonly attribute boolean hashChange;\n  readonly attribute AbortSignal signal;\n  readonly attribute FormData? formData;\n  readonly attribute any info;\n\n  undefined transitionWhile(Promise<undefined> newNavigationAction);\n};",
+      "NavigateEvent": {
+        "fragment": "[Exposed=Window]\ninterface NavigateEvent : Event {\n  constructor(DOMString type, NavigateEventInit eventInit);\n\n  readonly attribute NavigationNavigationType navigationType;\n  readonly attribute NavigationDestination destination;\n  readonly attribute boolean canTransition;\n  readonly attribute boolean userInitiated;\n  readonly attribute boolean hashChange;\n  readonly attribute AbortSignal signal;\n  readonly attribute FormData? formData;\n  readonly attribute any info;\n\n  undefined transitionWhile(Promise<undefined> newNavigationAction);\n};",
         "type": "interface",
-        "name": "AppHistoryNavigateEvent",
+        "name": "NavigateEvent",
         "inheritance": "Event",
         "members": [
           {
@@ -868,7 +868,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "AppHistoryNavigateEventInit"
+                  "idlType": "NavigateEventInit"
                 },
                 "default": null,
                 "optional": false,
@@ -886,7 +886,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "AppHistoryNavigationType"
+              "idlType": "NavigationNavigationType"
             },
             "extAttrs": [],
             "special": "",
@@ -901,7 +901,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "AppHistoryDestination"
+              "idlType": "NavigationDestination"
             },
             "extAttrs": [],
             "special": "",
@@ -1052,10 +1052,10 @@
         ],
         "partial": false
       },
-      "AppHistoryNavigateEventInit": {
-        "fragment": "dictionary AppHistoryNavigateEventInit : EventInit {\n  AppHistoryNavigationType navigationType = \"push\";\n  required AppHistoryDestination destination;\n  boolean canTransition = false;\n  boolean userInitiated = false;\n  boolean hashChange = false;\n  required AbortSignal signal;\n  FormData? formData = null;\n  any info;\n};",
+      "NavigateEventInit": {
+        "fragment": "dictionary NavigateEventInit : EventInit {\n  NavigationNavigationType navigationType = \"push\";\n  required NavigationDestination destination;\n  boolean canTransition = false;\n  boolean userInitiated = false;\n  boolean hashChange = false;\n  required AbortSignal signal;\n  FormData? formData = null;\n  any info;\n};",
         "type": "dictionary",
-        "name": "AppHistoryNavigateEventInit",
+        "name": "NavigateEventInit",
         "inheritance": "EventInit",
         "members": [
           {
@@ -1068,7 +1068,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "AppHistoryNavigationType"
+              "idlType": "NavigationNavigationType"
             },
             "default": {
               "type": "string",
@@ -1086,7 +1086,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "AppHistoryDestination"
+              "idlType": "NavigationDestination"
             },
             "default": null,
             "required": true
@@ -1196,10 +1196,10 @@
         "extAttrs": [],
         "partial": false
       },
-      "AppHistoryNavigationType": {
-        "fragment": "enum AppHistoryNavigationType {\n  \"reload\",\n  \"push\",\n  \"replace\",\n  \"traverse\"\n};",
+      "NavigationNavigationType": {
+        "fragment": "// TODO: rename to NavigationType after https://github.com/w3c/navigation-timing/pull/172 lands.\nenum NavigationNavigationType {\n  \"reload\",\n  \"push\",\n  \"replace\",\n  \"traverse\"\n};",
         "type": "enum",
-        "name": "AppHistoryNavigationType",
+        "name": "NavigationNavigationType",
         "values": [
           {
             "type": "enum-value",
@@ -1220,10 +1220,10 @@
         ],
         "extAttrs": []
       },
-      "AppHistoryDestination": {
-        "fragment": "[Exposed=Window]\ninterface AppHistoryDestination {\n  readonly attribute USVString url;\n  readonly attribute DOMString? key;\n  readonly attribute DOMString? id;\n  readonly attribute long long index;\n  readonly attribute boolean sameDocument;\n\n  any getState();\n};",
+      "NavigationDestination": {
+        "fragment": "[Exposed=Window]\ninterface NavigationDestination {\n  readonly attribute USVString url;\n  readonly attribute DOMString? key;\n  readonly attribute DOMString? id;\n  readonly attribute long long index;\n  readonly attribute boolean sameDocument;\n\n  any getState();\n};",
         "type": "interface",
-        "name": "AppHistoryDestination",
+        "name": "NavigationDestination",
         "inheritance": null,
         "members": [
           {
@@ -1330,10 +1330,10 @@
         ],
         "partial": false
       },
-      "AppHistoryEntry": {
-        "fragment": "[Exposed=Window]\ninterface AppHistoryEntry : EventTarget {\n  readonly attribute USVString? url;\n  readonly attribute DOMString key;\n  readonly attribute DOMString id;\n  readonly attribute long long index;\n  readonly attribute boolean sameDocument;\n\n  any getState();\n\n  attribute EventHandler onnavigateto;\n  attribute EventHandler onnavigatefrom;\n  attribute EventHandler onfinish;\n  attribute EventHandler ondispose;\n};",
+      "NavigationHistoryEntry": {
+        "fragment": "[Exposed=Window]\ninterface NavigationHistoryEntry : EventTarget {\n  readonly attribute USVString? url;\n  readonly attribute DOMString key;\n  readonly attribute DOMString id;\n  readonly attribute long long index;\n  readonly attribute boolean sameDocument;\n\n  any getState();\n\n  attribute EventHandler onnavigateto;\n  attribute EventHandler onnavigatefrom;\n  attribute EventHandler onfinish;\n  attribute EventHandler ondispose;\n};",
         "type": "interface",
-        "name": "AppHistoryEntry",
+        "name": "NavigationHistoryEntry",
         "inheritance": "EventTarget",
         "members": [
           {
@@ -1504,21 +1504,21 @@
     "idlExtendedNames": {
       "Window": [
         {
-          "fragment": "partial interface Window {\n  readonly attribute AppHistory appHistory;\n};",
+          "fragment": "partial interface Window {\n  readonly attribute Navigation navigation;\n};",
           "type": "interface",
           "name": "Window",
           "inheritance": null,
           "members": [
             {
               "type": "attribute",
-              "name": "appHistory",
+              "name": "navigation",
               "idlType": {
                 "type": "attribute-type",
                 "extAttrs": [],
                 "generic": "",
                 "nullable": false,
                 "union": false,
-                "idlType": "AppHistory"
+                "idlType": "Navigation"
               },
               "extAttrs": [],
               "special": "",
@@ -1533,74 +1533,74 @@
     "globals": {},
     "exposed": {
       "Window": [
-        "AppHistory",
-        "AppHistoryCurrentChangeEvent",
-        "AppHistoryTransition",
-        "AppHistoryNavigateEvent",
-        "AppHistoryDestination",
-        "AppHistoryEntry"
+        "Navigation",
+        "NavigationCurrentEntryChangeEvent",
+        "NavigationTransition",
+        "NavigateEvent",
+        "NavigationDestination",
+        "NavigationHistoryEntry"
       ]
     },
     "dependencies": {
       "Window": [
-        "AppHistory"
+        "Navigation"
       ],
-      "AppHistory": [
+      "Navigation": [
         "EventTarget",
-        "AppHistoryEntry",
-        "AppHistoryUpdateCurrentOptions",
-        "AppHistoryTransition",
-        "AppHistoryResult",
-        "AppHistoryNavigateOptions",
-        "AppHistoryReloadOptions",
-        "AppHistoryNavigationOptions",
+        "NavigationHistoryEntry",
+        "NavigationUpdateCurrentEntryOptions",
+        "NavigationTransition",
+        "NavigationResult",
+        "NavigationNavigateOptions",
+        "NavigationReloadOptions",
+        "NavigationOptions",
         "EventHandler"
       ],
-      "AppHistoryUpdateCurrentOptions": [],
-      "AppHistoryNavigationOptions": [],
-      "AppHistoryNavigateOptions": [
-        "AppHistoryNavigationOptions"
+      "NavigationUpdateCurrentEntryOptions": [],
+      "NavigationOptions": [],
+      "NavigationNavigateOptions": [
+        "NavigationOptions"
       ],
-      "AppHistoryReloadOptions": [
-        "AppHistoryNavigationOptions"
+      "NavigationReloadOptions": [
+        "NavigationOptions"
       ],
-      "AppHistoryResult": [
-        "AppHistoryEntry"
+      "NavigationResult": [
+        "NavigationHistoryEntry"
       ],
-      "AppHistoryCurrentChangeEvent": [
+      "NavigationCurrentEntryChangeEvent": [
         "Event",
-        "AppHistoryCurrentChangeEventInit",
-        "AppHistoryNavigationType",
-        "AppHistoryEntry"
+        "NavigationCurrentEntryChangeEventInit",
+        "NavigationNavigationType",
+        "NavigationHistoryEntry"
       ],
-      "AppHistoryCurrentChangeEventInit": [
+      "NavigationCurrentEntryChangeEventInit": [
         "EventInit",
-        "AppHistoryNavigationType",
-        "AppHistoryEntry"
+        "NavigationNavigationType",
+        "NavigationHistoryEntry"
       ],
-      "AppHistoryTransition": [
-        "AppHistoryNavigationType",
-        "AppHistoryEntry",
-        "AppHistoryResult",
-        "AppHistoryNavigationOptions"
+      "NavigationTransition": [
+        "NavigationNavigationType",
+        "NavigationHistoryEntry",
+        "NavigationResult",
+        "NavigationOptions"
       ],
-      "AppHistoryNavigateEvent": [
+      "NavigateEvent": [
         "Event",
-        "AppHistoryNavigateEventInit",
-        "AppHistoryNavigationType",
-        "AppHistoryDestination",
+        "NavigateEventInit",
+        "NavigationNavigationType",
+        "NavigationDestination",
         "AbortSignal",
         "FormData"
       ],
-      "AppHistoryNavigateEventInit": [
+      "NavigateEventInit": [
         "EventInit",
-        "AppHistoryNavigationType",
-        "AppHistoryDestination",
+        "NavigationNavigationType",
+        "NavigationDestination",
         "AbortSignal",
         "FormData"
       ],
-      "AppHistoryDestination": [],
-      "AppHistoryEntry": [
+      "NavigationDestination": [],
+      "NavigationHistoryEntry": [
         "EventTarget",
         "EventHandler"
       ]

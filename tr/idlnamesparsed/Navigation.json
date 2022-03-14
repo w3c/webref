@@ -1,0 +1,29 @@
+{
+  "name": "Navigation",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Navigation API",
+      "url": "https://wicg.github.io/app-history/"
+    },
+    "fragment": "[Exposed=Window]\ninterface Navigation : EventTarget {\n  sequence<NavigationHistoryEntry> entries();\n  readonly attribute NavigationHistoryEntry? currentEntry;\n  undefined updateCurrentEntry(NavigationUpdateCurrentEntryOptions options);\n  readonly attribute NavigationTransition? transition;\n\n  readonly attribute boolean canGoBack;\n  readonly attribute boolean canGoForward;\n\n  NavigationResult navigate(USVString url, optional NavigationNavigateOptions options = {});\n  NavigationResult reload(optional NavigationReloadOptions options = {});\n\n  NavigationResult traverseTo(DOMString key, optional NavigationOptions options = {});\n  NavigationResult back(optional NavigationOptions options = {});\n  NavigationResult forward(optional NavigationOptions options = {});\n\n  attribute EventHandler onnavigate;\n  attribute EventHandler onnavigatesuccess;\n  attribute EventHandler onnavigateerror;\n  attribute EventHandler oncurrententrychange;\n};",
+    "href": "https://wicg.github.io/navigation-api/#navigation"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "EventTarget",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=*]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+      "href": "https://dom.spec.whatwg.org/#eventtarget"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

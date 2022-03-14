@@ -1,14 +1,14 @@
 {
   "spec": {
-    "title": "App History API",
-    "url": "https://wicg.github.io/app-history/"
+    "title": "Navigation API",
+    "url": "https://wicg.github.io/navigation-api/"
   },
   "dfns": [
     {
-      "id": "window-app-history",
-      "href": "https://wicg.github.io/app-history/#window-app-history",
+      "id": "window-navigation-api",
+      "href": "https://wicg.github.io/navigation-api/#window-navigation-api",
       "linkingText": [
-        "app history"
+        "navigation API"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -19,17 +19,17 @@
       "informative": false,
       "heading": {
         "id": "global",
-        "href": "https://wicg.github.io/app-history/#global",
-        "title": "The AppHistory class",
+        "href": "https://wicg.github.io/navigation-api/#global",
+        "title": "The Navigation class",
         "number": "1"
       },
       "definedIn": "prose"
     },
     {
-      "id": "dom-window-apphistory",
-      "href": "https://wicg.github.io/app-history/#dom-window-apphistory",
+      "id": "dom-window-navigation",
+      "href": "https://wicg.github.io/navigation-api/#dom-window-navigation",
       "linkingText": [
-        "appHistory"
+        "navigation"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -40,17 +40,17 @@
       "informative": false,
       "heading": {
         "id": "global",
-        "href": "https://wicg.github.io/app-history/#global",
-        "title": "The AppHistory class",
+        "href": "https://wicg.github.io/navigation-api/#global",
+        "title": "The Navigation class",
         "number": "1"
       },
       "definedIn": "prose"
     },
     {
-      "id": "apphistory",
-      "href": "https://wicg.github.io/app-history/#apphistory",
+      "id": "navigation",
+      "href": "https://wicg.github.io/navigation-api/#navigation",
       "linkingText": [
-        "AppHistory"
+        "Navigation"
       ],
       "localLinkingText": [],
       "type": "interface",
@@ -59,192 +59,213 @@
       "informative": false,
       "heading": {
         "id": "global",
-        "href": "https://wicg.github.io/app-history/#global",
-        "title": "The AppHistory class",
+        "href": "https://wicg.github.io/navigation-api/#global",
+        "title": "The Navigation class",
         "number": "1"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-apphistory-updatecurrent-options-options",
-      "href": "https://wicg.github.io/app-history/#dom-apphistory-updatecurrent-options-options",
+      "id": "dom-navigation-currententry",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigation-currententry",
+      "linkingText": [
+        "currentEntry"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Navigation"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "global",
+        "href": "https://wicg.github.io/navigation-api/#global",
+        "title": "The Navigation class",
+        "number": "1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-navigation-updatecurrententry-options-options",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigation-updatecurrententry-options-options",
       "linkingText": [
         "options"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "AppHistory/updateCurrent(options)"
+        "Navigation/updateCurrentEntry(options)"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "global",
-        "href": "https://wicg.github.io/app-history/#global",
-        "title": "The AppHistory class",
+        "href": "https://wicg.github.io/navigation-api/#global",
+        "title": "The Navigation class",
         "number": "1"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-apphistory-navigate-url-options-url",
-      "href": "https://wicg.github.io/app-history/#dom-apphistory-navigate-url-options-url",
+      "id": "dom-navigation-navigate-url-options-url",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigation-navigate-url-options-url",
       "linkingText": [
         "url"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "AppHistory/navigate(url, options)",
-        "AppHistory/navigate(url)"
+        "Navigation/navigate(url, options)",
+        "Navigation/navigate(url)"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "global",
-        "href": "https://wicg.github.io/app-history/#global",
-        "title": "The AppHistory class",
+        "href": "https://wicg.github.io/navigation-api/#global",
+        "title": "The Navigation class",
         "number": "1"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-apphistory-navigate-url-options-options",
-      "href": "https://wicg.github.io/app-history/#dom-apphistory-navigate-url-options-options",
+      "id": "dom-navigation-navigate-url-options-options",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigation-navigate-url-options-options",
       "linkingText": [
         "options"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "AppHistory/navigate(url, options)",
-        "AppHistory/navigate(url)"
+        "Navigation/navigate(url, options)",
+        "Navigation/navigate(url)"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "global",
-        "href": "https://wicg.github.io/app-history/#global",
-        "title": "The AppHistory class",
+        "href": "https://wicg.github.io/navigation-api/#global",
+        "title": "The Navigation class",
         "number": "1"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-apphistory-reload-options-options",
-      "href": "https://wicg.github.io/app-history/#dom-apphistory-reload-options-options",
+      "id": "dom-navigation-reload-options-options",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigation-reload-options-options",
       "linkingText": [
         "options"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "AppHistory/reload(options)",
-        "AppHistory/reload()"
+        "Navigation/reload(options)",
+        "Navigation/reload()"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "global",
-        "href": "https://wicg.github.io/app-history/#global",
-        "title": "The AppHistory class",
+        "href": "https://wicg.github.io/navigation-api/#global",
+        "title": "The Navigation class",
         "number": "1"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-apphistory-goto-key-options-key",
-      "href": "https://wicg.github.io/app-history/#dom-apphistory-goto-key-options-key",
+      "id": "dom-navigation-traverseto-key-options-key",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigation-traverseto-key-options-key",
       "linkingText": [
         "key"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "AppHistory/goTo(key, options)",
-        "AppHistory/goTo(key)"
+        "Navigation/traverseTo(key, options)",
+        "Navigation/traverseTo(key)"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "global",
-        "href": "https://wicg.github.io/app-history/#global",
-        "title": "The AppHistory class",
+        "href": "https://wicg.github.io/navigation-api/#global",
+        "title": "The Navigation class",
         "number": "1"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-apphistory-goto-key-options-options",
-      "href": "https://wicg.github.io/app-history/#dom-apphistory-goto-key-options-options",
+      "id": "dom-navigation-traverseto-key-options-options",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigation-traverseto-key-options-options",
       "linkingText": [
         "options"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "AppHistory/goTo(key, options)",
-        "AppHistory/goTo(key)"
+        "Navigation/traverseTo(key, options)",
+        "Navigation/traverseTo(key)"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "global",
-        "href": "https://wicg.github.io/app-history/#global",
-        "title": "The AppHistory class",
+        "href": "https://wicg.github.io/navigation-api/#global",
+        "title": "The Navigation class",
         "number": "1"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-apphistory-back-options-options",
-      "href": "https://wicg.github.io/app-history/#dom-apphistory-back-options-options",
+      "id": "dom-navigation-back-options-options",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigation-back-options-options",
       "linkingText": [
         "options"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "AppHistory/back(options)",
-        "AppHistory/back()"
+        "Navigation/back(options)",
+        "Navigation/back()"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "global",
-        "href": "https://wicg.github.io/app-history/#global",
-        "title": "The AppHistory class",
+        "href": "https://wicg.github.io/navigation-api/#global",
+        "title": "The Navigation class",
         "number": "1"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-apphistory-forward-options-options",
-      "href": "https://wicg.github.io/app-history/#dom-apphistory-forward-options-options",
+      "id": "dom-navigation-forward-options-options",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigation-forward-options-options",
       "linkingText": [
         "options"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "AppHistory/forward(options)",
-        "AppHistory/forward()"
+        "Navigation/forward(options)",
+        "Navigation/forward()"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "global",
-        "href": "https://wicg.github.io/app-history/#global",
-        "title": "The AppHistory class",
+        "href": "https://wicg.github.io/navigation-api/#global",
+        "title": "The Navigation class",
         "number": "1"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dictdef-apphistoryupdatecurrentoptions",
-      "href": "https://wicg.github.io/app-history/#dictdef-apphistoryupdatecurrentoptions",
+      "id": "dictdef-navigationupdatecurrententryoptions",
+      "href": "https://wicg.github.io/navigation-api/#dictdef-navigationupdatecurrententryoptions",
       "linkingText": [
-        "AppHistoryUpdateCurrentOptions"
+        "NavigationUpdateCurrentEntryOptions"
       ],
       "localLinkingText": [],
       "type": "dictionary",
@@ -253,38 +274,38 @@
       "informative": false,
       "heading": {
         "id": "global",
-        "href": "https://wicg.github.io/app-history/#global",
-        "title": "The AppHistory class",
+        "href": "https://wicg.github.io/navigation-api/#global",
+        "title": "The Navigation class",
         "number": "1"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-apphistoryupdatecurrentoptions-state",
-      "href": "https://wicg.github.io/app-history/#dom-apphistoryupdatecurrentoptions-state",
+      "id": "dom-navigationupdatecurrententryoptions-state",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigationupdatecurrententryoptions-state",
       "linkingText": [
         "state"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "AppHistoryUpdateCurrentOptions"
+        "NavigationUpdateCurrentEntryOptions"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "global",
-        "href": "https://wicg.github.io/app-history/#global",
-        "title": "The AppHistory class",
+        "href": "https://wicg.github.io/navigation-api/#global",
+        "title": "The Navigation class",
         "number": "1"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dictdef-apphistorynavigationoptions",
-      "href": "https://wicg.github.io/app-history/#dictdef-apphistorynavigationoptions",
+      "id": "dictdef-navigationoptions",
+      "href": "https://wicg.github.io/navigation-api/#dictdef-navigationoptions",
       "linkingText": [
-        "AppHistoryNavigationOptions"
+        "NavigationOptions"
       ],
       "localLinkingText": [],
       "type": "dictionary",
@@ -293,38 +314,38 @@
       "informative": false,
       "heading": {
         "id": "global",
-        "href": "https://wicg.github.io/app-history/#global",
-        "title": "The AppHistory class",
+        "href": "https://wicg.github.io/navigation-api/#global",
+        "title": "The Navigation class",
         "number": "1"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-apphistorynavigationoptions-info",
-      "href": "https://wicg.github.io/app-history/#dom-apphistorynavigationoptions-info",
+      "id": "dom-navigationoptions-info",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigationoptions-info",
       "linkingText": [
         "info"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "AppHistoryNavigationOptions"
+        "NavigationOptions"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "global",
-        "href": "https://wicg.github.io/app-history/#global",
-        "title": "The AppHistory class",
+        "href": "https://wicg.github.io/navigation-api/#global",
+        "title": "The Navigation class",
         "number": "1"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dictdef-apphistorynavigateoptions",
-      "href": "https://wicg.github.io/app-history/#dictdef-apphistorynavigateoptions",
+      "id": "dictdef-navigationnavigateoptions",
+      "href": "https://wicg.github.io/navigation-api/#dictdef-navigationnavigateoptions",
       "linkingText": [
-        "AppHistoryNavigateOptions"
+        "NavigationNavigateOptions"
       ],
       "localLinkingText": [],
       "type": "dictionary",
@@ -333,59 +354,59 @@
       "informative": false,
       "heading": {
         "id": "global",
-        "href": "https://wicg.github.io/app-history/#global",
-        "title": "The AppHistory class",
+        "href": "https://wicg.github.io/navigation-api/#global",
+        "title": "The Navigation class",
         "number": "1"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-apphistorynavigateoptions-state",
-      "href": "https://wicg.github.io/app-history/#dom-apphistorynavigateoptions-state",
+      "id": "dom-navigationnavigateoptions-state",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigationnavigateoptions-state",
       "linkingText": [
         "state"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "AppHistoryNavigateOptions"
+        "NavigationNavigateOptions"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "global",
-        "href": "https://wicg.github.io/app-history/#global",
-        "title": "The AppHistory class",
+        "href": "https://wicg.github.io/navigation-api/#global",
+        "title": "The Navigation class",
         "number": "1"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-apphistorynavigateoptions-replace",
-      "href": "https://wicg.github.io/app-history/#dom-apphistorynavigateoptions-replace",
+      "id": "dom-navigationnavigateoptions-replace",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigationnavigateoptions-replace",
       "linkingText": [
         "replace"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "AppHistoryNavigateOptions"
+        "NavigationNavigateOptions"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "global",
-        "href": "https://wicg.github.io/app-history/#global",
-        "title": "The AppHistory class",
+        "href": "https://wicg.github.io/navigation-api/#global",
+        "title": "The Navigation class",
         "number": "1"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dictdef-apphistoryreloadoptions",
-      "href": "https://wicg.github.io/app-history/#dictdef-apphistoryreloadoptions",
+      "id": "dictdef-navigationreloadoptions",
+      "href": "https://wicg.github.io/navigation-api/#dictdef-navigationreloadoptions",
       "linkingText": [
-        "AppHistoryReloadOptions"
+        "NavigationReloadOptions"
       ],
       "localLinkingText": [],
       "type": "dictionary",
@@ -394,38 +415,38 @@
       "informative": false,
       "heading": {
         "id": "global",
-        "href": "https://wicg.github.io/app-history/#global",
-        "title": "The AppHistory class",
+        "href": "https://wicg.github.io/navigation-api/#global",
+        "title": "The Navigation class",
         "number": "1"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-apphistoryreloadoptions-state",
-      "href": "https://wicg.github.io/app-history/#dom-apphistoryreloadoptions-state",
+      "id": "dom-navigationreloadoptions-state",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigationreloadoptions-state",
       "linkingText": [
         "state"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "AppHistoryReloadOptions"
+        "NavigationReloadOptions"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "global",
-        "href": "https://wicg.github.io/app-history/#global",
-        "title": "The AppHistory class",
+        "href": "https://wicg.github.io/navigation-api/#global",
+        "title": "The Navigation class",
         "number": "1"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dictdef-apphistoryresult",
-      "href": "https://wicg.github.io/app-history/#dictdef-apphistoryresult",
+      "id": "dictdef-navigationresult",
+      "href": "https://wicg.github.io/navigation-api/#dictdef-navigationresult",
       "linkingText": [
-        "AppHistoryResult"
+        "NavigationResult"
       ],
       "localLinkingText": [],
       "type": "dictionary",
@@ -434,143 +455,143 @@
       "informative": false,
       "heading": {
         "id": "global",
-        "href": "https://wicg.github.io/app-history/#global",
-        "title": "The AppHistory class",
+        "href": "https://wicg.github.io/navigation-api/#global",
+        "title": "The Navigation class",
         "number": "1"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-apphistoryresult-committed",
-      "href": "https://wicg.github.io/app-history/#dom-apphistoryresult-committed",
+      "id": "dom-navigationresult-committed",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigationresult-committed",
       "linkingText": [
         "committed"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "AppHistoryResult"
+        "NavigationResult"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "global",
-        "href": "https://wicg.github.io/app-history/#global",
-        "title": "The AppHistory class",
+        "href": "https://wicg.github.io/navigation-api/#global",
+        "title": "The Navigation class",
         "number": "1"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-apphistoryresult-finished",
-      "href": "https://wicg.github.io/app-history/#dom-apphistoryresult-finished",
+      "id": "dom-navigationresult-finished",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigationresult-finished",
       "linkingText": [
         "finished"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "AppHistoryResult"
+        "NavigationResult"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "global",
-        "href": "https://wicg.github.io/app-history/#global",
-        "title": "The AppHistory class",
+        "href": "https://wicg.github.io/navigation-api/#global",
+        "title": "The Navigation class",
         "number": "1"
       },
       "definedIn": "pre"
     },
     {
-      "id": "apphistory-entry-list",
-      "href": "https://wicg.github.io/app-history/#apphistory-entry-list",
+      "id": "navigation-entry-list",
+      "href": "https://wicg.github.io/navigation-api/#navigation-entry-list",
       "linkingText": [
         "entry list"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "AppHistory"
+        "Navigation"
       ],
       "access": "private",
       "informative": false,
       "heading": {
         "id": "global",
-        "href": "https://wicg.github.io/app-history/#global",
-        "title": "The AppHistory class",
+        "href": "https://wicg.github.io/navigation-api/#global",
+        "title": "The Navigation class",
         "number": "1"
       },
       "definedIn": "prose"
     },
     {
-      "id": "apphistory-current-index",
-      "href": "https://wicg.github.io/app-history/#apphistory-current-index",
+      "id": "navigation-current-entry-index",
+      "href": "https://wicg.github.io/navigation-api/#navigation-current-entry-index",
       "linkingText": [
-        "current index"
+        "current entry index"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "AppHistory"
+        "Navigation"
       ],
       "access": "private",
       "informative": false,
       "heading": {
         "id": "global",
-        "href": "https://wicg.github.io/app-history/#global",
-        "title": "The AppHistory class",
+        "href": "https://wicg.github.io/navigation-api/#global",
+        "title": "The Navigation class",
         "number": "1"
       },
       "definedIn": "prose"
     },
     {
-      "id": "apphistory-has-entries-and-events-disabled",
-      "href": "https://wicg.github.io/app-history/#apphistory-has-entries-and-events-disabled",
+      "id": "navigation-has-entries-and-events-disabled",
+      "href": "https://wicg.github.io/navigation-api/#navigation-has-entries-and-events-disabled",
       "linkingText": [
         "has entries and events disabled"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "AppHistory"
+        "Navigation"
       ],
       "access": "private",
       "informative": false,
       "heading": {
         "id": "global",
-        "href": "https://wicg.github.io/app-history/#global",
-        "title": "The AppHistory class",
+        "href": "https://wicg.github.io/navigation-api/#global",
+        "title": "The Navigation class",
         "number": "1"
       },
       "definedIn": "prose"
     },
     {
-      "id": "apphistory-update-the-entries",
-      "href": "https://wicg.github.io/app-history/#apphistory-update-the-entries",
+      "id": "navigation-update-the-entries",
+      "href": "https://wicg.github.io/navigation-api/#navigation-update-the-entries",
       "linkingText": [
         "update the entries"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "AppHistory"
+        "Navigation"
       ],
       "access": "private",
       "informative": false,
       "heading": {
         "id": "global",
-        "href": "https://wicg.github.io/app-history/#global",
-        "title": "The AppHistory class",
+        "href": "https://wicg.github.io/navigation-api/#global",
+        "title": "The Navigation class",
         "number": "1"
       },
       "definedIn": "prose"
     },
     {
-      "id": "get-the-app-history-index",
-      "href": "https://wicg.github.io/app-history/#get-the-app-history-index",
+      "id": "get-the-navigation-api-history-index",
+      "href": "https://wicg.github.io/navigation-api/#get-the-navigation-api-history-index",
       "linkingText": [
-        "get the app history index"
+        "get the navigation API history index"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -579,80 +600,80 @@
       "informative": false,
       "heading": {
         "id": "global",
-        "href": "https://wicg.github.io/app-history/#global",
-        "title": "The AppHistory class",
+        "href": "https://wicg.github.io/navigation-api/#global",
+        "title": "The Navigation class",
         "number": "1"
       },
       "definedIn": "prose"
     },
     {
-      "id": "dom-apphistory-entries",
-      "href": "https://wicg.github.io/app-history/#dom-apphistory-entries",
+      "id": "dom-navigation-entries",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigation-entries",
       "linkingText": [
         "entries()"
       ],
       "localLinkingText": [],
       "type": "method",
       "for": [
-        "AppHistory"
+        "Navigation"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "entries-api",
-        "href": "https://wicg.github.io/app-history/#entries-api",
-        "title": "Introspecting the app history entry list",
+        "href": "https://wicg.github.io/navigation-api/#entries-api",
+        "title": "Introspecting the navigation API history entry list",
         "number": "1.1"
       },
       "definedIn": "prose"
     },
     {
-      "id": "dom-apphistory-cangoback",
-      "href": "https://wicg.github.io/app-history/#dom-apphistory-cangoback",
+      "id": "dom-navigation-cangoback",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigation-cangoback",
       "linkingText": [
         "canGoBack"
       ],
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "AppHistory"
+        "Navigation"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "entries-api",
-        "href": "https://wicg.github.io/app-history/#entries-api",
-        "title": "Introspecting the app history entry list",
+        "href": "https://wicg.github.io/navigation-api/#entries-api",
+        "title": "Introspecting the navigation API history entry list",
         "number": "1.1"
       },
       "definedIn": "prose"
     },
     {
-      "id": "dom-apphistory-cangoforward",
-      "href": "https://wicg.github.io/app-history/#dom-apphistory-cangoforward",
+      "id": "dom-navigation-cangoforward",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigation-cangoforward",
       "linkingText": [
         "canGoForward"
       ],
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "AppHistory"
+        "Navigation"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "entries-api",
-        "href": "https://wicg.github.io/app-history/#entries-api",
-        "title": "Introspecting the app history entry list",
+        "href": "https://wicg.github.io/navigation-api/#entries-api",
+        "title": "Introspecting the navigation API history entry list",
         "number": "1.1"
       },
       "definedIn": "prose"
     },
     {
-      "id": "apphistorycurrentchangeevent",
-      "href": "https://wicg.github.io/app-history/#apphistorycurrentchangeevent",
+      "id": "navigationcurrententrychangeevent",
+      "href": "https://wicg.github.io/navigation-api/#navigationcurrententrychangeevent",
       "linkingText": [
-        "AppHistoryCurrentChangeEvent"
+        "NavigationCurrentEntryChangeEvent"
       ],
       "localLinkingText": [],
       "type": "interface",
@@ -661,125 +682,125 @@
       "informative": false,
       "heading": {
         "id": "current-entry",
-        "href": "https://wicg.github.io/app-history/#current-entry",
+        "href": "https://wicg.github.io/navigation-api/#current-entry",
         "title": "The current entry",
         "number": "1.2"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-apphistorycurrentchangeevent-apphistorycurrentchangeevent",
-      "href": "https://wicg.github.io/app-history/#dom-apphistorycurrentchangeevent-apphistorycurrentchangeevent",
+      "id": "dom-navigationcurrententrychangeevent-navigationcurrententrychangeevent",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigationcurrententrychangeevent-navigationcurrententrychangeevent",
       "linkingText": [
-        "AppHistoryCurrentChangeEvent(type, eventInit)",
+        "NavigationCurrentEntryChangeEvent(type, eventInit)",
         "constructor(type, eventInit)"
       ],
       "localLinkingText": [],
       "type": "constructor",
       "for": [
-        "AppHistoryCurrentChangeEvent"
+        "NavigationCurrentEntryChangeEvent"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "current-entry",
-        "href": "https://wicg.github.io/app-history/#current-entry",
+        "href": "https://wicg.github.io/navigation-api/#current-entry",
         "title": "The current entry",
         "number": "1.2"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-apphistorycurrentchangeevent-apphistorycurrentchangeevent-type-eventinit-type",
-      "href": "https://wicg.github.io/app-history/#dom-apphistorycurrentchangeevent-apphistorycurrentchangeevent-type-eventinit-type",
+      "id": "dom-navigationcurrententrychangeevent-navigationcurrententrychangeevent-type-eventinit-type",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigationcurrententrychangeevent-navigationcurrententrychangeevent-type-eventinit-type",
       "linkingText": [
         "type"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "AppHistoryCurrentChangeEvent/AppHistoryCurrentChangeEvent(type, eventInit)",
-        "AppHistoryCurrentChangeEvent/constructor(type, eventInit)"
+        "NavigationCurrentEntryChangeEvent/NavigationCurrentEntryChangeEvent(type, eventInit)",
+        "NavigationCurrentEntryChangeEvent/constructor(type, eventInit)"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "current-entry",
-        "href": "https://wicg.github.io/app-history/#current-entry",
+        "href": "https://wicg.github.io/navigation-api/#current-entry",
         "title": "The current entry",
         "number": "1.2"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-apphistorycurrentchangeevent-apphistorycurrentchangeevent-type-eventinit-eventinit",
-      "href": "https://wicg.github.io/app-history/#dom-apphistorycurrentchangeevent-apphistorycurrentchangeevent-type-eventinit-eventinit",
+      "id": "dom-navigationcurrententrychangeevent-navigationcurrententrychangeevent-type-eventinit-eventinit",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigationcurrententrychangeevent-navigationcurrententrychangeevent-type-eventinit-eventinit",
       "linkingText": [
         "eventInit"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "AppHistoryCurrentChangeEvent/AppHistoryCurrentChangeEvent(type, eventInit)",
-        "AppHistoryCurrentChangeEvent/constructor(type, eventInit)"
+        "NavigationCurrentEntryChangeEvent/NavigationCurrentEntryChangeEvent(type, eventInit)",
+        "NavigationCurrentEntryChangeEvent/constructor(type, eventInit)"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "current-entry",
-        "href": "https://wicg.github.io/app-history/#current-entry",
+        "href": "https://wicg.github.io/navigation-api/#current-entry",
         "title": "The current entry",
         "number": "1.2"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-apphistorycurrentchangeevent-navigationtype",
-      "href": "https://wicg.github.io/app-history/#dom-apphistorycurrentchangeevent-navigationtype",
+      "id": "dom-navigationcurrententrychangeevent-navigationtype",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigationcurrententrychangeevent-navigationtype",
       "linkingText": [
         "navigationType"
       ],
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "AppHistoryCurrentChangeEvent"
+        "NavigationCurrentEntryChangeEvent"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "current-entry",
-        "href": "https://wicg.github.io/app-history/#current-entry",
+        "href": "https://wicg.github.io/navigation-api/#current-entry",
         "title": "The current entry",
         "number": "1.2"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-apphistorycurrentchangeevent-from",
-      "href": "https://wicg.github.io/app-history/#dom-apphistorycurrentchangeevent-from",
+      "id": "dom-navigationcurrententrychangeevent-from",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigationcurrententrychangeevent-from",
       "linkingText": [
         "from"
       ],
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "AppHistoryCurrentChangeEvent"
+        "NavigationCurrentEntryChangeEvent"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "current-entry",
-        "href": "https://wicg.github.io/app-history/#current-entry",
+        "href": "https://wicg.github.io/navigation-api/#current-entry",
         "title": "The current entry",
         "number": "1.2"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dictdef-apphistorycurrentchangeeventinit",
-      "href": "https://wicg.github.io/app-history/#dictdef-apphistorycurrentchangeeventinit",
+      "id": "dictdef-navigationcurrententrychangeeventinit",
+      "href": "https://wicg.github.io/navigation-api/#dictdef-navigationcurrententrychangeeventinit",
       "linkingText": [
-        "AppHistoryCurrentChangeEventInit"
+        "NavigationCurrentEntryChangeEventInit"
       ],
       "localLinkingText": [],
       "type": "dictionary",
@@ -788,122 +809,122 @@
       "informative": false,
       "heading": {
         "id": "current-entry",
-        "href": "https://wicg.github.io/app-history/#current-entry",
+        "href": "https://wicg.github.io/navigation-api/#current-entry",
         "title": "The current entry",
         "number": "1.2"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-apphistorycurrentchangeeventinit-navigationtype",
-      "href": "https://wicg.github.io/app-history/#dom-apphistorycurrentchangeeventinit-navigationtype",
+      "id": "dom-navigationcurrententrychangeeventinit-navigationtype",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigationcurrententrychangeeventinit-navigationtype",
       "linkingText": [
         "navigationType"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "AppHistoryCurrentChangeEventInit"
+        "NavigationCurrentEntryChangeEventInit"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "current-entry",
-        "href": "https://wicg.github.io/app-history/#current-entry",
+        "href": "https://wicg.github.io/navigation-api/#current-entry",
         "title": "The current entry",
         "number": "1.2"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-apphistorycurrentchangeeventinit-destination",
-      "href": "https://wicg.github.io/app-history/#dom-apphistorycurrentchangeeventinit-destination",
+      "id": "dom-navigationcurrententrychangeeventinit-destination",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigationcurrententrychangeeventinit-destination",
       "linkingText": [
         "destination"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "AppHistoryCurrentChangeEventInit"
+        "NavigationCurrentEntryChangeEventInit"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "current-entry",
-        "href": "https://wicg.github.io/app-history/#current-entry",
+        "href": "https://wicg.github.io/navigation-api/#current-entry",
         "title": "The current entry",
         "number": "1.2"
       },
       "definedIn": "pre"
     },
     {
-      "id": "apphistory-current-entry",
-      "href": "https://wicg.github.io/app-history/#apphistory-current-entry",
+      "id": "navigation-current-entry",
+      "href": "https://wicg.github.io/navigation-api/#navigation-current-entry",
       "linkingText": [
         "current entry"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "AppHistory"
+        "Navigation"
       ],
       "access": "private",
       "informative": false,
       "heading": {
         "id": "current-entry",
-        "href": "https://wicg.github.io/app-history/#current-entry",
+        "href": "https://wicg.github.io/navigation-api/#current-entry",
         "title": "The current entry",
         "number": "1.2"
       },
       "definedIn": "prose"
     },
     {
-      "id": "dom-apphistory-current",
-      "href": "https://wicg.github.io/app-history/#dom-apphistory-current",
+      "id": "dom-navigation-current",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigation-current",
       "linkingText": [
         "current"
       ],
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "AppHistory"
+        "Navigation"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "current-entry",
-        "href": "https://wicg.github.io/app-history/#current-entry",
+        "href": "https://wicg.github.io/navigation-api/#current-entry",
         "title": "The current entry",
         "number": "1.2"
       },
       "definedIn": "prose"
     },
     {
-      "id": "dom-apphistory-updatecurrent",
-      "href": "https://wicg.github.io/app-history/#dom-apphistory-updatecurrent",
+      "id": "dom-navigation-updatecurrententry",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigation-updatecurrententry",
       "linkingText": [
-        "updateCurrent(options)"
+        "updateCurrentEntry(options)"
       ],
       "localLinkingText": [],
       "type": "method",
       "for": [
-        "AppHistory"
+        "Navigation"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "current-entry",
-        "href": "https://wicg.github.io/app-history/#current-entry",
+        "href": "https://wicg.github.io/navigation-api/#current-entry",
         "title": "The current entry",
         "number": "1.2"
       },
       "definedIn": "prose"
     },
     {
-      "id": "apphistorytransition",
-      "href": "https://wicg.github.io/app-history/#apphistorytransition",
+      "id": "navigationtransition",
+      "href": "https://wicg.github.io/navigation-api/#navigationtransition",
       "linkingText": [
-        "AppHistoryTransition"
+        "NavigationTransition"
       ],
       "localLinkingText": [],
       "type": "interface",
@@ -912,205 +933,205 @@
       "informative": false,
       "heading": {
         "id": "ongoing-state",
-        "href": "https://wicg.github.io/app-history/#ongoing-state",
+        "href": "https://wicg.github.io/navigation-api/#ongoing-state",
         "title": "Ongoing navigation tracking",
         "number": "1.3"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-apphistorytransition-rollback-options-options",
-      "href": "https://wicg.github.io/app-history/#dom-apphistorytransition-rollback-options-options",
+      "id": "dom-navigationtransition-rollback-options-options",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigationtransition-rollback-options-options",
       "linkingText": [
         "options"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "AppHistoryTransition/rollback(options)",
-        "AppHistoryTransition/rollback()"
+        "NavigationTransition/rollback(options)",
+        "NavigationTransition/rollback()"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "ongoing-state",
-        "href": "https://wicg.github.io/app-history/#ongoing-state",
+        "href": "https://wicg.github.io/navigation-api/#ongoing-state",
         "title": "Ongoing navigation tracking",
         "number": "1.3"
       },
       "definedIn": "pre"
     },
     {
-      "id": "apphistory-transition",
-      "href": "https://wicg.github.io/app-history/#apphistory-transition",
+      "id": "navigation-transition",
+      "href": "https://wicg.github.io/navigation-api/#navigation-transition",
       "linkingText": [
         "transition"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "AppHistory"
+        "Navigation"
       ],
       "access": "private",
       "informative": false,
       "heading": {
         "id": "ongoing-state",
-        "href": "https://wicg.github.io/app-history/#ongoing-state",
+        "href": "https://wicg.github.io/navigation-api/#ongoing-state",
         "title": "Ongoing navigation tracking",
         "number": "1.3"
       },
       "definedIn": "prose"
     },
     {
-      "id": "dom-apphistory-transition",
-      "href": "https://wicg.github.io/app-history/#dom-apphistory-transition",
+      "id": "dom-navigation-transition",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigation-transition",
       "linkingText": [
         "transition"
       ],
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "AppHistory"
+        "Navigation"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "ongoing-state",
-        "href": "https://wicg.github.io/app-history/#ongoing-state",
+        "href": "https://wicg.github.io/navigation-api/#ongoing-state",
         "title": "Ongoing navigation tracking",
         "number": "1.3"
       },
       "definedIn": "prose"
     },
     {
-      "id": "apphistorytransition-navigation-type",
-      "href": "https://wicg.github.io/app-history/#apphistorytransition-navigation-type",
+      "id": "navigationtransition-navigation-type",
+      "href": "https://wicg.github.io/navigation-api/#navigationtransition-navigation-type",
       "linkingText": [
         "navigation type"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "AppHistoryTransition"
+        "NavigationTransition"
       ],
       "access": "private",
       "informative": false,
       "heading": {
         "id": "ongoing-state",
-        "href": "https://wicg.github.io/app-history/#ongoing-state",
+        "href": "https://wicg.github.io/navigation-api/#ongoing-state",
         "title": "Ongoing navigation tracking",
         "number": "1.3"
       },
       "definedIn": "prose"
     },
     {
-      "id": "apphistorytransition-from-entry",
-      "href": "https://wicg.github.io/app-history/#apphistorytransition-from-entry",
+      "id": "navigationtransition-from-entry",
+      "href": "https://wicg.github.io/navigation-api/#navigationtransition-from-entry",
       "linkingText": [
         "from entry"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "AppHistoryTransition"
+        "NavigationTransition"
       ],
       "access": "private",
       "informative": false,
       "heading": {
         "id": "ongoing-state",
-        "href": "https://wicg.github.io/app-history/#ongoing-state",
+        "href": "https://wicg.github.io/navigation-api/#ongoing-state",
         "title": "Ongoing navigation tracking",
         "number": "1.3"
       },
       "definedIn": "prose"
     },
     {
-      "id": "apphistorytransition-finished-promise",
-      "href": "https://wicg.github.io/app-history/#apphistorytransition-finished-promise",
+      "id": "navigationtransition-finished-promise",
+      "href": "https://wicg.github.io/navigation-api/#navigationtransition-finished-promise",
       "linkingText": [
         "finished promise"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "AppHistoryTransition"
+        "NavigationTransition"
       ],
       "access": "private",
       "informative": false,
       "heading": {
         "id": "ongoing-state",
-        "href": "https://wicg.github.io/app-history/#ongoing-state",
+        "href": "https://wicg.github.io/navigation-api/#ongoing-state",
         "title": "Ongoing navigation tracking",
         "number": "1.3"
       },
       "definedIn": "prose"
     },
     {
-      "id": "dom-apphistorytransition-navigationtype",
-      "href": "https://wicg.github.io/app-history/#dom-apphistorytransition-navigationtype",
+      "id": "dom-navigationtransition-navigationtype",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigationtransition-navigationtype",
       "linkingText": [
         "navigationType"
       ],
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "AppHistoryTransition"
+        "NavigationTransition"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "ongoing-state",
-        "href": "https://wicg.github.io/app-history/#ongoing-state",
+        "href": "https://wicg.github.io/navigation-api/#ongoing-state",
         "title": "Ongoing navigation tracking",
         "number": "1.3"
       },
       "definedIn": "prose"
     },
     {
-      "id": "dom-apphistorytransition-from",
-      "href": "https://wicg.github.io/app-history/#dom-apphistorytransition-from",
+      "id": "dom-navigationtransition-from",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigationtransition-from",
       "linkingText": [
         "from"
       ],
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "AppHistoryTransition"
+        "NavigationTransition"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "ongoing-state",
-        "href": "https://wicg.github.io/app-history/#ongoing-state",
+        "href": "https://wicg.github.io/navigation-api/#ongoing-state",
         "title": "Ongoing navigation tracking",
         "number": "1.3"
       },
       "definedIn": "prose"
     },
     {
-      "id": "dom-apphistorytransition-finished",
-      "href": "https://wicg.github.io/app-history/#dom-apphistorytransition-finished",
+      "id": "dom-navigationtransition-finished",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigationtransition-finished",
       "linkingText": [
         "finished"
       ],
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "AppHistoryTransition"
+        "NavigationTransition"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "ongoing-state",
-        "href": "https://wicg.github.io/app-history/#ongoing-state",
+        "href": "https://wicg.github.io/navigation-api/#ongoing-state",
         "title": "Ongoing navigation tracking",
         "number": "1.3"
       },
       "definedIn": "prose"
     },
     {
-      "id": "dom-apphistorytransition-rollback",
-      "href": "https://wicg.github.io/app-history/#dom-apphistorytransition-rollback",
+      "id": "dom-navigationtransition-rollback",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigationtransition-rollback",
       "linkingText": [
         "rollback(options)",
         "rollback()"
@@ -1118,128 +1139,128 @@
       "localLinkingText": [],
       "type": "method",
       "for": [
-        "AppHistoryTransition"
+        "NavigationTransition"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "ongoing-state",
-        "href": "https://wicg.github.io/app-history/#ongoing-state",
+        "href": "https://wicg.github.io/navigation-api/#ongoing-state",
         "title": "Ongoing navigation tracking",
         "number": "1.3"
       },
       "definedIn": "prose"
     },
     {
-      "id": "apphistory-ongoing-navigate-event",
-      "href": "https://wicg.github.io/app-history/#apphistory-ongoing-navigate-event",
+      "id": "navigation-ongoing-navigate-event",
+      "href": "https://wicg.github.io/navigation-api/#navigation-ongoing-navigate-event",
       "linkingText": [
         "ongoing navigate event"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "AppHistory"
+        "Navigation"
       ],
       "access": "private",
       "informative": false,
       "heading": {
         "id": "ongoing-state",
-        "href": "https://wicg.github.io/app-history/#ongoing-state",
+        "href": "https://wicg.github.io/navigation-api/#ongoing-state",
         "title": "Ongoing navigation tracking",
         "number": "1.3"
       },
       "definedIn": "prose"
     },
     {
-      "id": "apphistory-ongoing-navigation-signal",
-      "href": "https://wicg.github.io/app-history/#apphistory-ongoing-navigation-signal",
+      "id": "navigation-ongoing-navigation-signal",
+      "href": "https://wicg.github.io/navigation-api/#navigation-ongoing-navigation-signal",
       "linkingText": [
         "ongoing navigation signal"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "AppHistory"
+        "Navigation"
       ],
       "access": "private",
       "informative": false,
       "heading": {
         "id": "ongoing-state",
-        "href": "https://wicg.github.io/app-history/#ongoing-state",
+        "href": "https://wicg.github.io/navigation-api/#ongoing-state",
         "title": "Ongoing navigation tracking",
         "number": "1.3"
       },
       "definedIn": "prose"
     },
     {
-      "id": "apphistory-ongoing-navigation",
-      "href": "https://wicg.github.io/app-history/#apphistory-ongoing-navigation",
+      "id": "navigation-ongoing-navigation",
+      "href": "https://wicg.github.io/navigation-api/#navigation-ongoing-navigation",
       "linkingText": [
         "ongoing navigation"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "AppHistory"
+        "Navigation"
       ],
       "access": "private",
       "informative": false,
       "heading": {
         "id": "ongoing-state",
-        "href": "https://wicg.github.io/app-history/#ongoing-state",
+        "href": "https://wicg.github.io/navigation-api/#ongoing-state",
         "title": "Ongoing navigation tracking",
         "number": "1.3"
       },
       "definedIn": "prose"
     },
     {
-      "id": "apphistory-upcoming-non-traverse-navigation",
-      "href": "https://wicg.github.io/app-history/#apphistory-upcoming-non-traverse-navigation",
+      "id": "navigation-upcoming-non-traverse-navigation",
+      "href": "https://wicg.github.io/navigation-api/#navigation-upcoming-non-traverse-navigation",
       "linkingText": [
         "upcoming non-traverse navigation"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "AppHistory"
+        "Navigation"
       ],
       "access": "private",
       "informative": false,
       "heading": {
         "id": "ongoing-state",
-        "href": "https://wicg.github.io/app-history/#ongoing-state",
+        "href": "https://wicg.github.io/navigation-api/#ongoing-state",
         "title": "Ongoing navigation tracking",
         "number": "1.3"
       },
       "definedIn": "prose"
     },
     {
-      "id": "apphistory-upcoming-traverse-navigations",
-      "href": "https://wicg.github.io/app-history/#apphistory-upcoming-traverse-navigations",
+      "id": "navigation-upcoming-traverse-navigations",
+      "href": "https://wicg.github.io/navigation-api/#navigation-upcoming-traverse-navigations",
       "linkingText": [
         "upcoming traverse navigations"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "AppHistory"
+        "Navigation"
       ],
       "access": "private",
       "informative": false,
       "heading": {
         "id": "ongoing-state",
-        "href": "https://wicg.github.io/app-history/#ongoing-state",
+        "href": "https://wicg.github.io/navigation-api/#ongoing-state",
         "title": "Ongoing navigation tracking",
         "number": "1.3"
       },
       "definedIn": "prose"
     },
     {
-      "id": "app-history-api-navigation",
-      "href": "https://wicg.github.io/app-history/#app-history-api-navigation",
+      "id": "navigation-api-method-navigation",
+      "href": "https://wicg.github.io/navigation-api/#navigation-api-method-navigation",
       "linkingText": [
-        "app history API navigation"
+        "navigation API method navigation"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1248,309 +1269,309 @@
       "informative": false,
       "heading": {
         "id": "ongoing-state",
-        "href": "https://wicg.github.io/app-history/#ongoing-state",
+        "href": "https://wicg.github.io/navigation-api/#ongoing-state",
         "title": "Ongoing navigation tracking",
         "number": "1.3"
       },
       "definedIn": "prose"
     },
     {
-      "id": "app-history-api-navigation-app-history",
-      "href": "https://wicg.github.io/app-history/#app-history-api-navigation-app-history",
+      "id": "navigation-api-method-navigation-navigation-object",
+      "href": "https://wicg.github.io/navigation-api/#navigation-api-method-navigation-navigation-object",
       "linkingText": [
-        "app history"
+        "navigation object"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "app history API navigation"
+        "navigation API method navigation"
       ],
       "access": "private",
       "informative": false,
       "heading": {
         "id": "ongoing-state",
-        "href": "https://wicg.github.io/app-history/#ongoing-state",
+        "href": "https://wicg.github.io/navigation-api/#ongoing-state",
         "title": "Ongoing navigation tracking",
         "number": "1.3"
       },
       "definedIn": "prose"
     },
     {
-      "id": "app-history-api-navigation-key",
-      "href": "https://wicg.github.io/app-history/#app-history-api-navigation-key",
+      "id": "navigation-api-method-navigation-key",
+      "href": "https://wicg.github.io/navigation-api/#navigation-api-method-navigation-key",
       "linkingText": [
         "key"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "app history API navigation"
+        "navigation API method navigation"
       ],
       "access": "private",
       "informative": false,
       "heading": {
         "id": "ongoing-state",
-        "href": "https://wicg.github.io/app-history/#ongoing-state",
+        "href": "https://wicg.github.io/navigation-api/#ongoing-state",
         "title": "Ongoing navigation tracking",
         "number": "1.3"
       },
       "definedIn": "prose"
     },
     {
-      "id": "app-history-api-navigation-info",
-      "href": "https://wicg.github.io/app-history/#app-history-api-navigation-info",
+      "id": "navigation-api-method-navigation-info",
+      "href": "https://wicg.github.io/navigation-api/#navigation-api-method-navigation-info",
       "linkingText": [
         "info"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "app history API navigation"
+        "navigation API method navigation"
       ],
       "access": "private",
       "informative": false,
       "heading": {
         "id": "ongoing-state",
-        "href": "https://wicg.github.io/app-history/#ongoing-state",
+        "href": "https://wicg.github.io/navigation-api/#ongoing-state",
         "title": "Ongoing navigation tracking",
         "number": "1.3"
       },
       "definedIn": "prose"
     },
     {
-      "id": "app-history-api-navigation-serialized-state",
-      "href": "https://wicg.github.io/app-history/#app-history-api-navigation-serialized-state",
+      "id": "navigation-api-method-navigation-serialized-state",
+      "href": "https://wicg.github.io/navigation-api/#navigation-api-method-navigation-serialized-state",
       "linkingText": [
         "serialized state"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "app history API navigation"
+        "navigation API method navigation"
       ],
       "access": "private",
       "informative": false,
       "heading": {
         "id": "ongoing-state",
-        "href": "https://wicg.github.io/app-history/#ongoing-state",
+        "href": "https://wicg.github.io/navigation-api/#ongoing-state",
         "title": "Ongoing navigation tracking",
         "number": "1.3"
       },
       "definedIn": "prose"
     },
     {
-      "id": "app-history-api-navigation-committed-to-entry",
-      "href": "https://wicg.github.io/app-history/#app-history-api-navigation-committed-to-entry",
+      "id": "navigation-api-method-navigation-committed-to-entry",
+      "href": "https://wicg.github.io/navigation-api/#navigation-api-method-navigation-committed-to-entry",
       "linkingText": [
         "committed-to entry"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "app history API navigation"
+        "navigation API method navigation"
       ],
       "access": "private",
       "informative": false,
       "heading": {
         "id": "ongoing-state",
-        "href": "https://wicg.github.io/app-history/#ongoing-state",
+        "href": "https://wicg.github.io/navigation-api/#ongoing-state",
         "title": "Ongoing navigation tracking",
         "number": "1.3"
       },
       "definedIn": "prose"
     },
     {
-      "id": "app-history-api-navigation-committed-promise",
-      "href": "https://wicg.github.io/app-history/#app-history-api-navigation-committed-promise",
+      "id": "navigation-api-method-navigation-committed-promise",
+      "href": "https://wicg.github.io/navigation-api/#navigation-api-method-navigation-committed-promise",
       "linkingText": [
         "committed promise"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "app history API navigation"
+        "navigation API method navigation"
       ],
       "access": "private",
       "informative": false,
       "heading": {
         "id": "ongoing-state",
-        "href": "https://wicg.github.io/app-history/#ongoing-state",
+        "href": "https://wicg.github.io/navigation-api/#ongoing-state",
         "title": "Ongoing navigation tracking",
         "number": "1.3"
       },
       "definedIn": "prose"
     },
     {
-      "id": "app-history-api-navigation-finished-promise",
-      "href": "https://wicg.github.io/app-history/#app-history-api-navigation-finished-promise",
+      "id": "navigation-api-method-navigation-finished-promise",
+      "href": "https://wicg.github.io/navigation-api/#navigation-api-method-navigation-finished-promise",
       "linkingText": [
         "finished promise"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "app history API navigation"
+        "navigation API method navigation"
       ],
       "access": "private",
       "informative": false,
       "heading": {
         "id": "ongoing-state",
-        "href": "https://wicg.github.io/app-history/#ongoing-state",
+        "href": "https://wicg.github.io/navigation-api/#ongoing-state",
         "title": "Ongoing navigation tracking",
         "number": "1.3"
       },
       "definedIn": "prose"
     },
     {
-      "id": "apphistory-set-the-upcoming-non-traverse-navigation",
-      "href": "https://wicg.github.io/app-history/#apphistory-set-the-upcoming-non-traverse-navigation",
+      "id": "navigation-set-the-upcoming-non-traverse-navigation",
+      "href": "https://wicg.github.io/navigation-api/#navigation-set-the-upcoming-non-traverse-navigation",
       "linkingText": [
         "set the upcoming non-traverse navigation"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "AppHistory"
+        "Navigation"
       ],
       "access": "private",
       "informative": false,
       "heading": {
         "id": "ongoing-state",
-        "href": "https://wicg.github.io/app-history/#ongoing-state",
+        "href": "https://wicg.github.io/navigation-api/#ongoing-state",
         "title": "Ongoing navigation tracking",
         "number": "1.3"
       },
       "definedIn": "prose"
     },
     {
-      "id": "apphistory-set-an-upcoming-traverse-navigation",
-      "href": "https://wicg.github.io/app-history/#apphistory-set-an-upcoming-traverse-navigation",
+      "id": "navigation-set-an-upcoming-traverse-navigation",
+      "href": "https://wicg.github.io/navigation-api/#navigation-set-an-upcoming-traverse-navigation",
       "linkingText": [
         "set an upcoming traverse navigation"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "AppHistory"
+        "Navigation"
       ],
       "access": "private",
       "informative": false,
       "heading": {
         "id": "ongoing-state",
-        "href": "https://wicg.github.io/app-history/#ongoing-state",
+        "href": "https://wicg.github.io/navigation-api/#ongoing-state",
         "title": "Ongoing navigation tracking",
         "number": "1.3"
       },
       "definedIn": "prose"
     },
     {
-      "id": "apphistory-promote-the-upcoming-navigation-to-ongoing",
-      "href": "https://wicg.github.io/app-history/#apphistory-promote-the-upcoming-navigation-to-ongoing",
+      "id": "navigation-promote-the-upcoming-navigation-to-ongoing",
+      "href": "https://wicg.github.io/navigation-api/#navigation-promote-the-upcoming-navigation-to-ongoing",
       "linkingText": [
         "promote the upcoming navigation to ongoing"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "AppHistory"
+        "Navigation"
       ],
       "access": "private",
       "informative": false,
       "heading": {
         "id": "ongoing-state",
-        "href": "https://wicg.github.io/app-history/#ongoing-state",
+        "href": "https://wicg.github.io/navigation-api/#ongoing-state",
         "title": "Ongoing navigation tracking",
         "number": "1.3"
       },
       "definedIn": "prose"
     },
     {
-      "id": "app-history-api-navigation-clean-up",
-      "href": "https://wicg.github.io/app-history/#app-history-api-navigation-clean-up",
+      "id": "navigation-api-method-navigation-clean-up",
+      "href": "https://wicg.github.io/navigation-api/#navigation-api-method-navigation-clean-up",
       "linkingText": [
         "clean up"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "app history API navigation"
+        "navigation API method navigation"
       ],
       "access": "private",
       "informative": false,
       "heading": {
         "id": "ongoing-state",
-        "href": "https://wicg.github.io/app-history/#ongoing-state",
+        "href": "https://wicg.github.io/navigation-api/#ongoing-state",
         "title": "Ongoing navigation tracking",
         "number": "1.3"
       },
       "definedIn": "prose"
     },
     {
-      "id": "app-history-api-navigation-notify-about-the-committed-to-entry",
-      "href": "https://wicg.github.io/app-history/#app-history-api-navigation-notify-about-the-committed-to-entry",
+      "id": "navigation-api-method-navigation-notify-about-the-committed-to-entry",
+      "href": "https://wicg.github.io/navigation-api/#navigation-api-method-navigation-notify-about-the-committed-to-entry",
       "linkingText": [
         "notify about the committed-to entry"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "app history API navigation"
+        "navigation API method navigation"
       ],
       "access": "private",
       "informative": false,
       "heading": {
         "id": "ongoing-state",
-        "href": "https://wicg.github.io/app-history/#ongoing-state",
+        "href": "https://wicg.github.io/navigation-api/#ongoing-state",
         "title": "Ongoing navigation tracking",
         "number": "1.3"
       },
       "definedIn": "prose"
     },
     {
-      "id": "app-history-api-navigation-resolve-the-finished-promise",
-      "href": "https://wicg.github.io/app-history/#app-history-api-navigation-resolve-the-finished-promise",
+      "id": "navigation-api-method-navigation-resolve-the-finished-promise",
+      "href": "https://wicg.github.io/navigation-api/#navigation-api-method-navigation-resolve-the-finished-promise",
       "linkingText": [
         "resolve the finished promise"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "app history API navigation"
+        "navigation API method navigation"
       ],
       "access": "private",
       "informative": false,
       "heading": {
         "id": "ongoing-state",
-        "href": "https://wicg.github.io/app-history/#ongoing-state",
+        "href": "https://wicg.github.io/navigation-api/#ongoing-state",
         "title": "Ongoing navigation tracking",
         "number": "1.3"
       },
       "definedIn": "prose"
     },
     {
-      "id": "app-history-api-navigation-reject-the-finished-promise",
-      "href": "https://wicg.github.io/app-history/#app-history-api-navigation-reject-the-finished-promise",
+      "id": "navigation-api-method-navigation-reject-the-finished-promise",
+      "href": "https://wicg.github.io/navigation-api/#navigation-api-method-navigation-reject-the-finished-promise",
       "linkingText": [
         "reject the finished promise"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "app history API navigation"
+        "navigation API method navigation"
       ],
       "access": "private",
       "informative": false,
       "heading": {
         "id": "ongoing-state",
-        "href": "https://wicg.github.io/app-history/#ongoing-state",
+        "href": "https://wicg.github.io/navigation-api/#ongoing-state",
         "title": "Ongoing navigation tracking",
         "number": "1.3"
       },
       "definedIn": "prose"
     },
     {
-      "id": "dom-apphistory-navigate",
-      "href": "https://wicg.github.io/app-history/#dom-apphistory-navigate",
+      "id": "dom-navigation-navigate",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigation-navigate",
       "linkingText": [
         "navigate(url, options)",
         "navigate(url)"
@@ -1558,21 +1579,21 @@
       "localLinkingText": [],
       "type": "method",
       "for": [
-        "AppHistory"
+        "Navigation"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "global-navigate",
-        "href": "https://wicg.github.io/app-history/#global-navigate",
+        "href": "https://wicg.github.io/navigation-api/#global-navigate",
         "title": "Navigating",
         "number": "1.4"
       },
       "definedIn": "prose"
     },
     {
-      "id": "dom-apphistory-reload",
-      "href": "https://wicg.github.io/app-history/#dom-apphistory-reload",
+      "id": "dom-navigation-reload",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigation-reload",
       "linkingText": [
         "reload(options)",
         "reload()"
@@ -1580,23 +1601,23 @@
       "localLinkingText": [],
       "type": "method",
       "for": [
-        "AppHistory"
+        "Navigation"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "global-navigate",
-        "href": "https://wicg.github.io/app-history/#global-navigate",
+        "href": "https://wicg.github.io/navigation-api/#global-navigate",
         "title": "Navigating",
         "number": "1.4"
       },
       "definedIn": "prose"
     },
     {
-      "id": "perform-a-non-traverse-app-history-navigation",
-      "href": "https://wicg.github.io/app-history/#perform-a-non-traverse-app-history-navigation",
+      "id": "perform-a-non-traverse-navigation-api-navigation",
+      "href": "https://wicg.github.io/navigation-api/#perform-a-non-traverse-navigation-api-navigation",
       "linkingText": [
-        "perform a non-traverse app history navigation"
+        "perform a non-traverse navigation API navigation"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1605,7 +1626,7 @@
       "informative": false,
       "heading": {
         "id": "global-navigate",
-        "href": "https://wicg.github.io/app-history/#global-navigate",
+        "href": "https://wicg.github.io/navigation-api/#global-navigate",
         "title": "Navigating",
         "number": "1.4"
       },
@@ -1613,7 +1634,7 @@
     },
     {
       "id": "an-early-error-result",
-      "href": "https://wicg.github.io/app-history/#an-early-error-result",
+      "href": "https://wicg.github.io/navigation-api/#an-early-error-result",
       "linkingText": [
         "an early error result"
       ],
@@ -1624,37 +1645,37 @@
       "informative": false,
       "heading": {
         "id": "global-navigate",
-        "href": "https://wicg.github.io/app-history/#global-navigate",
+        "href": "https://wicg.github.io/navigation-api/#global-navigate",
         "title": "Navigating",
         "number": "1.4"
       },
       "definedIn": "prose"
     },
     {
-      "id": "dom-apphistory-goto",
-      "href": "https://wicg.github.io/app-history/#dom-apphistory-goto",
+      "id": "dom-navigation-traverseto",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigation-traverseto",
       "linkingText": [
-        "goTo(key, options)",
-        "goTo(key)"
+        "traverseTo(key, options)",
+        "traverseTo(key)"
       ],
       "localLinkingText": [],
       "type": "method",
       "for": [
-        "AppHistory"
+        "Navigation"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "global-traversing",
-        "href": "https://wicg.github.io/app-history/#global-traversing",
+        "href": "https://wicg.github.io/navigation-api/#global-traversing",
         "title": "Traversing",
         "number": "1.5"
       },
       "definedIn": "prose"
     },
     {
-      "id": "dom-apphistory-back",
-      "href": "https://wicg.github.io/app-history/#dom-apphistory-back",
+      "id": "dom-navigation-back",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigation-back",
       "linkingText": [
         "back(options)",
         "back()"
@@ -1662,21 +1683,21 @@
       "localLinkingText": [],
       "type": "method",
       "for": [
-        "AppHistory"
+        "Navigation"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "global-traversing",
-        "href": "https://wicg.github.io/app-history/#global-traversing",
+        "href": "https://wicg.github.io/navigation-api/#global-traversing",
         "title": "Traversing",
         "number": "1.5"
       },
       "definedIn": "prose"
     },
     {
-      "id": "dom-apphistory-forward",
-      "href": "https://wicg.github.io/app-history/#dom-apphistory-forward",
+      "id": "dom-navigation-forward",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigation-forward",
       "linkingText": [
         "forward(options)",
         "forward()"
@@ -1684,23 +1705,23 @@
       "localLinkingText": [],
       "type": "method",
       "for": [
-        "AppHistory"
+        "Navigation"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "global-traversing",
-        "href": "https://wicg.github.io/app-history/#global-traversing",
+        "href": "https://wicg.github.io/navigation-api/#global-traversing",
         "title": "Traversing",
         "number": "1.5"
       },
       "definedIn": "prose"
     },
     {
-      "id": "perform-an-app-history-traversal",
-      "href": "https://wicg.github.io/app-history/#perform-an-app-history-traversal",
+      "id": "perform-a-navigation-api-traversal",
+      "href": "https://wicg.github.io/navigation-api/#perform-a-navigation-api-traversal",
       "linkingText": [
-        "perform an app history traversal"
+        "perform a navigation API traversal"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1709,185 +1730,185 @@
       "informative": false,
       "heading": {
         "id": "global-traversing",
-        "href": "https://wicg.github.io/app-history/#global-traversing",
+        "href": "https://wicg.github.io/navigation-api/#global-traversing",
         "title": "Traversing",
         "number": "1.5"
       },
       "definedIn": "prose"
     },
     {
-      "id": "dom-apphistory-onnavigate",
-      "href": "https://wicg.github.io/app-history/#dom-apphistory-onnavigate",
+      "id": "dom-navigation-onnavigate",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigation-onnavigate",
       "linkingText": [
         "onnavigate"
       ],
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "AppHistory"
+        "Navigation"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "global-events",
-        "href": "https://wicg.github.io/app-history/#global-events",
+        "href": "https://wicg.github.io/navigation-api/#global-events",
         "title": "Event handlers",
         "number": "1.6"
       },
       "definedIn": "table"
     },
     {
-      "id": "eventdef-apphistory-navigate",
-      "href": "https://wicg.github.io/app-history/#eventdef-apphistory-navigate",
+      "id": "eventdef-navigation-navigate",
+      "href": "https://wicg.github.io/navigation-api/#eventdef-navigation-navigate",
       "linkingText": [
         "navigate"
       ],
       "localLinkingText": [],
       "type": "event",
       "for": [
-        "AppHistory"
+        "Navigation"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "global-events",
-        "href": "https://wicg.github.io/app-history/#global-events",
+        "href": "https://wicg.github.io/navigation-api/#global-events",
         "title": "Event handlers",
         "number": "1.6"
       },
       "definedIn": "table"
     },
     {
-      "id": "dom-apphistory-onnavigatesuccess",
-      "href": "https://wicg.github.io/app-history/#dom-apphistory-onnavigatesuccess",
+      "id": "dom-navigation-onnavigatesuccess",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigation-onnavigatesuccess",
       "linkingText": [
         "onnavigatesuccess"
       ],
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "AppHistory"
+        "Navigation"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "global-events",
-        "href": "https://wicg.github.io/app-history/#global-events",
+        "href": "https://wicg.github.io/navigation-api/#global-events",
         "title": "Event handlers",
         "number": "1.6"
       },
       "definedIn": "table"
     },
     {
-      "id": "eventdef-apphistory-navigatesuccess",
-      "href": "https://wicg.github.io/app-history/#eventdef-apphistory-navigatesuccess",
+      "id": "eventdef-navigation-navigatesuccess",
+      "href": "https://wicg.github.io/navigation-api/#eventdef-navigation-navigatesuccess",
       "linkingText": [
         "navigatesuccess"
       ],
       "localLinkingText": [],
       "type": "event",
       "for": [
-        "AppHistory"
+        "Navigation"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "global-events",
-        "href": "https://wicg.github.io/app-history/#global-events",
+        "href": "https://wicg.github.io/navigation-api/#global-events",
         "title": "Event handlers",
         "number": "1.6"
       },
       "definedIn": "table"
     },
     {
-      "id": "dom-apphistory-onnavigateerror",
-      "href": "https://wicg.github.io/app-history/#dom-apphistory-onnavigateerror",
+      "id": "dom-navigation-onnavigateerror",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigation-onnavigateerror",
       "linkingText": [
         "onnavigateerror"
       ],
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "AppHistory"
+        "Navigation"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "global-events",
-        "href": "https://wicg.github.io/app-history/#global-events",
+        "href": "https://wicg.github.io/navigation-api/#global-events",
         "title": "Event handlers",
         "number": "1.6"
       },
       "definedIn": "table"
     },
     {
-      "id": "eventdef-apphistory-navigateerror",
-      "href": "https://wicg.github.io/app-history/#eventdef-apphistory-navigateerror",
+      "id": "eventdef-navigation-navigateerror",
+      "href": "https://wicg.github.io/navigation-api/#eventdef-navigation-navigateerror",
       "linkingText": [
         "navigateerror"
       ],
       "localLinkingText": [],
       "type": "event",
       "for": [
-        "AppHistory"
+        "Navigation"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "global-events",
-        "href": "https://wicg.github.io/app-history/#global-events",
+        "href": "https://wicg.github.io/navigation-api/#global-events",
         "title": "Event handlers",
         "number": "1.6"
       },
       "definedIn": "table"
     },
     {
-      "id": "dom-apphistory-oncurrentchange",
-      "href": "https://wicg.github.io/app-history/#dom-apphistory-oncurrentchange",
+      "id": "dom-navigation-oncurrententrychange",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigation-oncurrententrychange",
       "linkingText": [
-        "oncurrentchange"
+        "oncurrententrychange"
       ],
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "AppHistory"
+        "Navigation"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "global-events",
-        "href": "https://wicg.github.io/app-history/#global-events",
+        "href": "https://wicg.github.io/navigation-api/#global-events",
         "title": "Event handlers",
         "number": "1.6"
       },
       "definedIn": "table"
     },
     {
-      "id": "eventdef-apphistory-currentchange",
-      "href": "https://wicg.github.io/app-history/#eventdef-apphistory-currentchange",
+      "id": "eventdef-navigation-currententrychange",
+      "href": "https://wicg.github.io/navigation-api/#eventdef-navigation-currententrychange",
       "linkingText": [
-        "currentchange"
+        "currententrychange"
       ],
       "localLinkingText": [],
       "type": "event",
       "for": [
-        "AppHistory"
+        "Navigation"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "global-events",
-        "href": "https://wicg.github.io/app-history/#global-events",
+        "href": "https://wicg.github.io/navigation-api/#global-events",
         "title": "Event handlers",
         "number": "1.6"
       },
       "definedIn": "table"
     },
     {
-      "id": "apphistorynavigateevent",
-      "href": "https://wicg.github.io/app-history/#apphistorynavigateevent",
+      "id": "navigateevent",
+      "href": "https://wicg.github.io/navigation-api/#navigateevent",
       "linkingText": [
-        "AppHistoryNavigateEvent"
+        "NavigateEvent"
       ],
       "localLinkingText": [],
       "type": "interface",
@@ -1896,104 +1917,104 @@
       "informative": false,
       "heading": {
         "id": "navigate-event-class",
-        "href": "https://wicg.github.io/app-history/#navigate-event-class",
-        "title": "The AppHistoryNavigateEvent class",
+        "href": "https://wicg.github.io/navigation-api/#navigate-event-class",
+        "title": "The NavigateEvent class",
         "number": "2.1"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-apphistorynavigateevent-apphistorynavigateevent",
-      "href": "https://wicg.github.io/app-history/#dom-apphistorynavigateevent-apphistorynavigateevent",
+      "id": "dom-navigateevent-navigateevent",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigateevent-navigateevent",
       "linkingText": [
-        "AppHistoryNavigateEvent(type, eventInit)",
+        "NavigateEvent(type, eventInit)",
         "constructor(type, eventInit)"
       ],
       "localLinkingText": [],
       "type": "constructor",
       "for": [
-        "AppHistoryNavigateEvent"
+        "NavigateEvent"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "navigate-event-class",
-        "href": "https://wicg.github.io/app-history/#navigate-event-class",
-        "title": "The AppHistoryNavigateEvent class",
+        "href": "https://wicg.github.io/navigation-api/#navigate-event-class",
+        "title": "The NavigateEvent class",
         "number": "2.1"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-apphistorynavigateevent-apphistorynavigateevent-type-eventinit-type",
-      "href": "https://wicg.github.io/app-history/#dom-apphistorynavigateevent-apphistorynavigateevent-type-eventinit-type",
+      "id": "dom-navigateevent-navigateevent-type-eventinit-type",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigateevent-navigateevent-type-eventinit-type",
       "linkingText": [
         "type"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "AppHistoryNavigateEvent/AppHistoryNavigateEvent(type, eventInit)",
-        "AppHistoryNavigateEvent/constructor(type, eventInit)"
+        "NavigateEvent/NavigateEvent(type, eventInit)",
+        "NavigateEvent/constructor(type, eventInit)"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "navigate-event-class",
-        "href": "https://wicg.github.io/app-history/#navigate-event-class",
-        "title": "The AppHistoryNavigateEvent class",
+        "href": "https://wicg.github.io/navigation-api/#navigate-event-class",
+        "title": "The NavigateEvent class",
         "number": "2.1"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-apphistorynavigateevent-apphistorynavigateevent-type-eventinit-eventinit",
-      "href": "https://wicg.github.io/app-history/#dom-apphistorynavigateevent-apphistorynavigateevent-type-eventinit-eventinit",
+      "id": "dom-navigateevent-navigateevent-type-eventinit-eventinit",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigateevent-navigateevent-type-eventinit-eventinit",
       "linkingText": [
         "eventInit"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "AppHistoryNavigateEvent/AppHistoryNavigateEvent(type, eventInit)",
-        "AppHistoryNavigateEvent/constructor(type, eventInit)"
+        "NavigateEvent/NavigateEvent(type, eventInit)",
+        "NavigateEvent/constructor(type, eventInit)"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "navigate-event-class",
-        "href": "https://wicg.github.io/app-history/#navigate-event-class",
-        "title": "The AppHistoryNavigateEvent class",
+        "href": "https://wicg.github.io/navigation-api/#navigate-event-class",
+        "title": "The NavigateEvent class",
         "number": "2.1"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-apphistorynavigateevent-transitionwhile-newnavigationaction-newnavigationaction",
-      "href": "https://wicg.github.io/app-history/#dom-apphistorynavigateevent-transitionwhile-newnavigationaction-newnavigationaction",
+      "id": "dom-navigateevent-transitionwhile-newnavigationaction-newnavigationaction",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigateevent-transitionwhile-newnavigationaction-newnavigationaction",
       "linkingText": [
         "newNavigationAction"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "AppHistoryNavigateEvent/transitionWhile(newNavigationAction)"
+        "NavigateEvent/transitionWhile(newNavigationAction)"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "navigate-event-class",
-        "href": "https://wicg.github.io/app-history/#navigate-event-class",
-        "title": "The AppHistoryNavigateEvent class",
+        "href": "https://wicg.github.io/navigation-api/#navigate-event-class",
+        "title": "The NavigateEvent class",
         "number": "2.1"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dictdef-apphistorynavigateeventinit",
-      "href": "https://wicg.github.io/app-history/#dictdef-apphistorynavigateeventinit",
+      "id": "dictdef-navigateeventinit",
+      "href": "https://wicg.github.io/navigation-api/#dictdef-navigateeventinit",
       "linkingText": [
-        "AppHistoryNavigateEventInit"
+        "NavigateEventInit"
       ],
       "localLinkingText": [],
       "type": "dictionary",
@@ -2002,185 +2023,185 @@
       "informative": false,
       "heading": {
         "id": "navigate-event-class",
-        "href": "https://wicg.github.io/app-history/#navigate-event-class",
-        "title": "The AppHistoryNavigateEvent class",
+        "href": "https://wicg.github.io/navigation-api/#navigate-event-class",
+        "title": "The NavigateEvent class",
         "number": "2.1"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-apphistorynavigateeventinit-navigationtype",
-      "href": "https://wicg.github.io/app-history/#dom-apphistorynavigateeventinit-navigationtype",
+      "id": "dom-navigateeventinit-navigationtype",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigateeventinit-navigationtype",
       "linkingText": [
         "navigationType"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "AppHistoryNavigateEventInit"
+        "NavigateEventInit"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "navigate-event-class",
-        "href": "https://wicg.github.io/app-history/#navigate-event-class",
-        "title": "The AppHistoryNavigateEvent class",
+        "href": "https://wicg.github.io/navigation-api/#navigate-event-class",
+        "title": "The NavigateEvent class",
         "number": "2.1"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-apphistorynavigateeventinit-destination",
-      "href": "https://wicg.github.io/app-history/#dom-apphistorynavigateeventinit-destination",
+      "id": "dom-navigateeventinit-destination",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigateeventinit-destination",
       "linkingText": [
         "destination"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "AppHistoryNavigateEventInit"
+        "NavigateEventInit"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "navigate-event-class",
-        "href": "https://wicg.github.io/app-history/#navigate-event-class",
-        "title": "The AppHistoryNavigateEvent class",
+        "href": "https://wicg.github.io/navigation-api/#navigate-event-class",
+        "title": "The NavigateEvent class",
         "number": "2.1"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-apphistorynavigateeventinit-cantransition",
-      "href": "https://wicg.github.io/app-history/#dom-apphistorynavigateeventinit-cantransition",
+      "id": "dom-navigateeventinit-cantransition",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigateeventinit-cantransition",
       "linkingText": [
         "canTransition"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "AppHistoryNavigateEventInit"
+        "NavigateEventInit"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "navigate-event-class",
-        "href": "https://wicg.github.io/app-history/#navigate-event-class",
-        "title": "The AppHistoryNavigateEvent class",
+        "href": "https://wicg.github.io/navigation-api/#navigate-event-class",
+        "title": "The NavigateEvent class",
         "number": "2.1"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-apphistorynavigateeventinit-userinitiated",
-      "href": "https://wicg.github.io/app-history/#dom-apphistorynavigateeventinit-userinitiated",
+      "id": "dom-navigateeventinit-userinitiated",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigateeventinit-userinitiated",
       "linkingText": [
         "userInitiated"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "AppHistoryNavigateEventInit"
+        "NavigateEventInit"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "navigate-event-class",
-        "href": "https://wicg.github.io/app-history/#navigate-event-class",
-        "title": "The AppHistoryNavigateEvent class",
+        "href": "https://wicg.github.io/navigation-api/#navigate-event-class",
+        "title": "The NavigateEvent class",
         "number": "2.1"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-apphistorynavigateeventinit-hashchange",
-      "href": "https://wicg.github.io/app-history/#dom-apphistorynavigateeventinit-hashchange",
+      "id": "dom-navigateeventinit-hashchange",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigateeventinit-hashchange",
       "linkingText": [
         "hashChange"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "AppHistoryNavigateEventInit"
+        "NavigateEventInit"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "navigate-event-class",
-        "href": "https://wicg.github.io/app-history/#navigate-event-class",
-        "title": "The AppHistoryNavigateEvent class",
+        "href": "https://wicg.github.io/navigation-api/#navigate-event-class",
+        "title": "The NavigateEvent class",
         "number": "2.1"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-apphistorynavigateeventinit-signal",
-      "href": "https://wicg.github.io/app-history/#dom-apphistorynavigateeventinit-signal",
+      "id": "dom-navigateeventinit-signal",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigateeventinit-signal",
       "linkingText": [
         "signal"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "AppHistoryNavigateEventInit"
+        "NavigateEventInit"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "navigate-event-class",
-        "href": "https://wicg.github.io/app-history/#navigate-event-class",
-        "title": "The AppHistoryNavigateEvent class",
+        "href": "https://wicg.github.io/navigation-api/#navigate-event-class",
+        "title": "The NavigateEvent class",
         "number": "2.1"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-apphistorynavigateeventinit-formdata",
-      "href": "https://wicg.github.io/app-history/#dom-apphistorynavigateeventinit-formdata",
+      "id": "dom-navigateeventinit-formdata",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigateeventinit-formdata",
       "linkingText": [
         "formData"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "AppHistoryNavigateEventInit"
+        "NavigateEventInit"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "navigate-event-class",
-        "href": "https://wicg.github.io/app-history/#navigate-event-class",
-        "title": "The AppHistoryNavigateEvent class",
+        "href": "https://wicg.github.io/navigation-api/#navigate-event-class",
+        "title": "The NavigateEvent class",
         "number": "2.1"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-apphistorynavigateeventinit-info",
-      "href": "https://wicg.github.io/app-history/#dom-apphistorynavigateeventinit-info",
+      "id": "dom-navigateeventinit-info",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigateeventinit-info",
       "linkingText": [
         "info"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "AppHistoryNavigateEventInit"
+        "NavigateEventInit"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "navigate-event-class",
-        "href": "https://wicg.github.io/app-history/#navigate-event-class",
-        "title": "The AppHistoryNavigateEvent class",
+        "href": "https://wicg.github.io/navigation-api/#navigate-event-class",
+        "title": "The NavigateEvent class",
         "number": "2.1"
       },
       "definedIn": "pre"
     },
     {
-      "id": "enumdef-apphistorynavigationtype",
-      "href": "https://wicg.github.io/app-history/#enumdef-apphistorynavigationtype",
+      "id": "enumdef-navigationnavigationtype",
+      "href": "https://wicg.github.io/navigation-api/#enumdef-navigationnavigationtype",
       "linkingText": [
-        "AppHistoryNavigationType"
+        "NavigationNavigationType"
       ],
       "localLinkingText": [],
       "type": "enum",
@@ -2189,332 +2210,332 @@
       "informative": false,
       "heading": {
         "id": "navigate-event-class",
-        "href": "https://wicg.github.io/app-history/#navigate-event-class",
-        "title": "The AppHistoryNavigateEvent class",
+        "href": "https://wicg.github.io/navigation-api/#navigate-event-class",
+        "title": "The NavigateEvent class",
         "number": "2.1"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-apphistorynavigationtype-reload",
-      "href": "https://wicg.github.io/app-history/#dom-apphistorynavigationtype-reload",
+      "id": "dom-navigationnavigationtype-reload",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigationnavigationtype-reload",
       "linkingText": [
         "\"reload\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
       "for": [
-        "AppHistoryNavigationType"
+        "NavigationNavigationType"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "navigate-event-class",
-        "href": "https://wicg.github.io/app-history/#navigate-event-class",
-        "title": "The AppHistoryNavigateEvent class",
+        "href": "https://wicg.github.io/navigation-api/#navigate-event-class",
+        "title": "The NavigateEvent class",
         "number": "2.1"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-apphistorynavigationtype-push",
-      "href": "https://wicg.github.io/app-history/#dom-apphistorynavigationtype-push",
+      "id": "dom-navigationnavigationtype-push",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigationnavigationtype-push",
       "linkingText": [
         "\"push\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
       "for": [
-        "AppHistoryNavigationType"
+        "NavigationNavigationType"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "navigate-event-class",
-        "href": "https://wicg.github.io/app-history/#navigate-event-class",
-        "title": "The AppHistoryNavigateEvent class",
+        "href": "https://wicg.github.io/navigation-api/#navigate-event-class",
+        "title": "The NavigateEvent class",
         "number": "2.1"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-apphistorynavigationtype-replace",
-      "href": "https://wicg.github.io/app-history/#dom-apphistorynavigationtype-replace",
+      "id": "dom-navigationnavigationtype-replace",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigationnavigationtype-replace",
       "linkingText": [
         "\"replace\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
       "for": [
-        "AppHistoryNavigationType"
+        "NavigationNavigationType"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "navigate-event-class",
-        "href": "https://wicg.github.io/app-history/#navigate-event-class",
-        "title": "The AppHistoryNavigateEvent class",
+        "href": "https://wicg.github.io/navigation-api/#navigate-event-class",
+        "title": "The NavigateEvent class",
         "number": "2.1"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-apphistorynavigationtype-traverse",
-      "href": "https://wicg.github.io/app-history/#dom-apphistorynavigationtype-traverse",
+      "id": "dom-navigationnavigationtype-traverse",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigationnavigationtype-traverse",
       "linkingText": [
         "\"traverse\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
       "for": [
-        "AppHistoryNavigationType"
+        "NavigationNavigationType"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "navigate-event-class",
-        "href": "https://wicg.github.io/app-history/#navigate-event-class",
-        "title": "The AppHistoryNavigateEvent class",
+        "href": "https://wicg.github.io/navigation-api/#navigate-event-class",
+        "title": "The NavigateEvent class",
         "number": "2.1"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-apphistorynavigateevent-navigationtype",
-      "href": "https://wicg.github.io/app-history/#dom-apphistorynavigateevent-navigationtype",
+      "id": "dom-navigateevent-navigationtype",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigateevent-navigationtype",
       "linkingText": [
         "navigationType"
       ],
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "AppHistoryNavigateEvent"
+        "NavigateEvent"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "navigate-event-class",
-        "href": "https://wicg.github.io/app-history/#navigate-event-class",
-        "title": "The AppHistoryNavigateEvent class",
+        "href": "https://wicg.github.io/navigation-api/#navigate-event-class",
+        "title": "The NavigateEvent class",
         "number": "2.1"
       },
       "definedIn": "prose"
     },
     {
-      "id": "dom-apphistorynavigateevent-destination",
-      "href": "https://wicg.github.io/app-history/#dom-apphistorynavigateevent-destination",
+      "id": "dom-navigateevent-destination",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigateevent-destination",
       "linkingText": [
         "destination"
       ],
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "AppHistoryNavigateEvent"
+        "NavigateEvent"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "navigate-event-class",
-        "href": "https://wicg.github.io/app-history/#navigate-event-class",
-        "title": "The AppHistoryNavigateEvent class",
+        "href": "https://wicg.github.io/navigation-api/#navigate-event-class",
+        "title": "The NavigateEvent class",
         "number": "2.1"
       },
       "definedIn": "prose"
     },
     {
-      "id": "dom-apphistorynavigateevent-cantransition",
-      "href": "https://wicg.github.io/app-history/#dom-apphistorynavigateevent-cantransition",
+      "id": "dom-navigateevent-cantransition",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigateevent-cantransition",
       "linkingText": [
         "canTransition"
       ],
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "AppHistoryNavigateEvent"
+        "NavigateEvent"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "navigate-event-class",
-        "href": "https://wicg.github.io/app-history/#navigate-event-class",
-        "title": "The AppHistoryNavigateEvent class",
+        "href": "https://wicg.github.io/navigation-api/#navigate-event-class",
+        "title": "The NavigateEvent class",
         "number": "2.1"
       },
       "definedIn": "prose"
     },
     {
-      "id": "dom-apphistorynavigateevent-userinitiated",
-      "href": "https://wicg.github.io/app-history/#dom-apphistorynavigateevent-userinitiated",
+      "id": "dom-navigateevent-userinitiated",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigateevent-userinitiated",
       "linkingText": [
         "userInitiated"
       ],
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "AppHistoryNavigateEvent"
+        "NavigateEvent"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "navigate-event-class",
-        "href": "https://wicg.github.io/app-history/#navigate-event-class",
-        "title": "The AppHistoryNavigateEvent class",
+        "href": "https://wicg.github.io/navigation-api/#navigate-event-class",
+        "title": "The NavigateEvent class",
         "number": "2.1"
       },
       "definedIn": "prose"
     },
     {
-      "id": "dom-apphistorynavigateevent-hashchange",
-      "href": "https://wicg.github.io/app-history/#dom-apphistorynavigateevent-hashchange",
+      "id": "dom-navigateevent-hashchange",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigateevent-hashchange",
       "linkingText": [
         "hashChange"
       ],
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "AppHistoryNavigateEvent"
+        "NavigateEvent"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "navigate-event-class",
-        "href": "https://wicg.github.io/app-history/#navigate-event-class",
-        "title": "The AppHistoryNavigateEvent class",
+        "href": "https://wicg.github.io/navigation-api/#navigate-event-class",
+        "title": "The NavigateEvent class",
         "number": "2.1"
       },
       "definedIn": "prose"
     },
     {
-      "id": "dom-apphistorynavigateevent-signal",
-      "href": "https://wicg.github.io/app-history/#dom-apphistorynavigateevent-signal",
+      "id": "dom-navigateevent-signal",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigateevent-signal",
       "linkingText": [
         "signal"
       ],
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "AppHistoryNavigateEvent"
+        "NavigateEvent"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "navigate-event-class",
-        "href": "https://wicg.github.io/app-history/#navigate-event-class",
-        "title": "The AppHistoryNavigateEvent class",
+        "href": "https://wicg.github.io/navigation-api/#navigate-event-class",
+        "title": "The NavigateEvent class",
         "number": "2.1"
       },
       "definedIn": "prose"
     },
     {
-      "id": "dom-apphistorynavigateevent-formdata",
-      "href": "https://wicg.github.io/app-history/#dom-apphistorynavigateevent-formdata",
+      "id": "dom-navigateevent-formdata",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigateevent-formdata",
       "linkingText": [
         "formData"
       ],
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "AppHistoryNavigateEvent"
+        "NavigateEvent"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "navigate-event-class",
-        "href": "https://wicg.github.io/app-history/#navigate-event-class",
-        "title": "The AppHistoryNavigateEvent class",
+        "href": "https://wicg.github.io/navigation-api/#navigate-event-class",
+        "title": "The NavigateEvent class",
         "number": "2.1"
       },
       "definedIn": "prose"
     },
     {
-      "id": "dom-apphistorynavigateevent-info",
-      "href": "https://wicg.github.io/app-history/#dom-apphistorynavigateevent-info",
+      "id": "dom-navigateevent-info",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigateevent-info",
       "linkingText": [
         "info"
       ],
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "AppHistoryNavigateEvent"
+        "NavigateEvent"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "navigate-event-class",
-        "href": "https://wicg.github.io/app-history/#navigate-event-class",
-        "title": "The AppHistoryNavigateEvent class",
+        "href": "https://wicg.github.io/navigation-api/#navigate-event-class",
+        "title": "The NavigateEvent class",
         "number": "2.1"
       },
       "definedIn": "prose"
     },
     {
-      "id": "apphistorynavigateevent-classic-history-api-serialized-data",
-      "href": "https://wicg.github.io/app-history/#apphistorynavigateevent-classic-history-api-serialized-data",
+      "id": "navigateevent-classic-history-api-serialized-data",
+      "href": "https://wicg.github.io/navigation-api/#navigateevent-classic-history-api-serialized-data",
       "linkingText": [
         "classic history API serialized data"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "AppHistoryNavigateEvent"
+        "NavigateEvent"
       ],
       "access": "private",
       "informative": false,
       "heading": {
         "id": "navigate-event-class",
-        "href": "https://wicg.github.io/app-history/#navigate-event-class",
-        "title": "The AppHistoryNavigateEvent class",
+        "href": "https://wicg.github.io/navigation-api/#navigate-event-class",
+        "title": "The NavigateEvent class",
         "number": "2.1"
       },
       "definedIn": "prose"
     },
     {
-      "id": "apphistorynavigateevent-navigation-action-promises-list",
-      "href": "https://wicg.github.io/app-history/#apphistorynavigateevent-navigation-action-promises-list",
+      "id": "navigateevent-navigation-action-promises-list",
+      "href": "https://wicg.github.io/navigation-api/#navigateevent-navigation-action-promises-list",
       "linkingText": [
         "navigation action promises list"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "AppHistoryNavigateEvent"
+        "NavigateEvent"
       ],
       "access": "private",
       "informative": false,
       "heading": {
         "id": "navigate-event-class",
-        "href": "https://wicg.github.io/app-history/#navigate-event-class",
-        "title": "The AppHistoryNavigateEvent class",
+        "href": "https://wicg.github.io/navigation-api/#navigate-event-class",
+        "title": "The NavigateEvent class",
         "number": "2.1"
       },
       "definedIn": "prose"
     },
     {
-      "id": "dom-apphistorynavigateevent-transitionwhile",
-      "href": "https://wicg.github.io/app-history/#dom-apphistorynavigateevent-transitionwhile",
+      "id": "dom-navigateevent-transitionwhile",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigateevent-transitionwhile",
       "linkingText": [
         "transitionWhile(newNavigationAction)"
       ],
       "localLinkingText": [],
       "type": "method",
       "for": [
-        "AppHistoryNavigateEvent"
+        "NavigateEvent"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "navigate-event-class",
-        "href": "https://wicg.github.io/app-history/#navigate-event-class",
-        "title": "The AppHistoryNavigateEvent class",
+        "href": "https://wicg.github.io/navigation-api/#navigate-event-class",
+        "title": "The NavigateEvent class",
         "number": "2.1"
       },
       "definedIn": "prose"
     },
     {
-      "id": "apphistorydestination",
-      "href": "https://wicg.github.io/app-history/#apphistorydestination",
+      "id": "navigationdestination",
+      "href": "https://wicg.github.io/navigation-api/#navigationdestination",
       "linkingText": [
-        "AppHistoryDestination"
+        "NavigationDestination"
       ],
       "localLinkingText": [],
       "type": "interface",
@@ -2523,267 +2544,267 @@
       "informative": false,
       "heading": {
         "id": "navigate-event-destination",
-        "href": "https://wicg.github.io/app-history/#navigate-event-destination",
-        "title": "The AppHistoryDestination class",
+        "href": "https://wicg.github.io/navigation-api/#navigate-event-destination",
+        "title": "The NavigationDestination class",
         "number": "2.2"
       },
       "definedIn": "pre"
     },
     {
-      "id": "apphistorydestination-url",
-      "href": "https://wicg.github.io/app-history/#apphistorydestination-url",
+      "id": "navigationdestination-url",
+      "href": "https://wicg.github.io/navigation-api/#navigationdestination-url",
       "linkingText": [
         "URL"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "AppHistoryDestination"
+        "NavigationDestination"
       ],
       "access": "private",
       "informative": false,
       "heading": {
         "id": "navigate-event-destination",
-        "href": "https://wicg.github.io/app-history/#navigate-event-destination",
-        "title": "The AppHistoryDestination class",
+        "href": "https://wicg.github.io/navigation-api/#navigate-event-destination",
+        "title": "The NavigationDestination class",
         "number": "2.2"
       },
       "definedIn": "prose"
     },
     {
-      "id": "apphistorydestination-key",
-      "href": "https://wicg.github.io/app-history/#apphistorydestination-key",
+      "id": "navigationdestination-key",
+      "href": "https://wicg.github.io/navigation-api/#navigationdestination-key",
       "linkingText": [
         "key"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "AppHistoryDestination"
+        "NavigationDestination"
       ],
       "access": "private",
       "informative": false,
       "heading": {
         "id": "navigate-event-destination",
-        "href": "https://wicg.github.io/app-history/#navigate-event-destination",
-        "title": "The AppHistoryDestination class",
+        "href": "https://wicg.github.io/navigation-api/#navigate-event-destination",
+        "title": "The NavigationDestination class",
         "number": "2.2"
       },
       "definedIn": "prose"
     },
     {
-      "id": "apphistorydestination-id",
-      "href": "https://wicg.github.io/app-history/#apphistorydestination-id",
+      "id": "navigationdestination-id",
+      "href": "https://wicg.github.io/navigation-api/#navigationdestination-id",
       "linkingText": [
         "id"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "AppHistoryDestination"
+        "NavigationDestination"
       ],
       "access": "private",
       "informative": false,
       "heading": {
         "id": "navigate-event-destination",
-        "href": "https://wicg.github.io/app-history/#navigate-event-destination",
-        "title": "The AppHistoryDestination class",
+        "href": "https://wicg.github.io/navigation-api/#navigate-event-destination",
+        "title": "The NavigationDestination class",
         "number": "2.2"
       },
       "definedIn": "prose"
     },
     {
-      "id": "apphistorydestination-index",
-      "href": "https://wicg.github.io/app-history/#apphistorydestination-index",
+      "id": "navigationdestination-index",
+      "href": "https://wicg.github.io/navigation-api/#navigationdestination-index",
       "linkingText": [
         "index"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "AppHistoryDestination"
+        "NavigationDestination"
       ],
       "access": "private",
       "informative": false,
       "heading": {
         "id": "navigate-event-destination",
-        "href": "https://wicg.github.io/app-history/#navigate-event-destination",
-        "title": "The AppHistoryDestination class",
+        "href": "https://wicg.github.io/navigation-api/#navigate-event-destination",
+        "title": "The NavigationDestination class",
         "number": "2.2"
       },
       "definedIn": "prose"
     },
     {
-      "id": "apphistorydestination-state",
-      "href": "https://wicg.github.io/app-history/#apphistorydestination-state",
+      "id": "navigationdestination-state",
+      "href": "https://wicg.github.io/navigation-api/#navigationdestination-state",
       "linkingText": [
         "state"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "AppHistoryDestination"
+        "NavigationDestination"
       ],
       "access": "private",
       "informative": false,
       "heading": {
         "id": "navigate-event-destination",
-        "href": "https://wicg.github.io/app-history/#navigate-event-destination",
-        "title": "The AppHistoryDestination class",
+        "href": "https://wicg.github.io/navigation-api/#navigate-event-destination",
+        "title": "The NavigationDestination class",
         "number": "2.2"
       },
       "definedIn": "prose"
     },
     {
-      "id": "apphistorydestination-is-same-document",
-      "href": "https://wicg.github.io/app-history/#apphistorydestination-is-same-document",
+      "id": "navigationdestination-is-same-document",
+      "href": "https://wicg.github.io/navigation-api/#navigationdestination-is-same-document",
       "linkingText": [
         "is same document"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "AppHistoryDestination"
+        "NavigationDestination"
       ],
       "access": "private",
       "informative": false,
       "heading": {
         "id": "navigate-event-destination",
-        "href": "https://wicg.github.io/app-history/#navigate-event-destination",
-        "title": "The AppHistoryDestination class",
+        "href": "https://wicg.github.io/navigation-api/#navigate-event-destination",
+        "title": "The NavigationDestination class",
         "number": "2.2"
       },
       "definedIn": "prose"
     },
     {
-      "id": "dom-apphistorydestination-url",
-      "href": "https://wicg.github.io/app-history/#dom-apphistorydestination-url",
+      "id": "dom-navigationdestination-url",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigationdestination-url",
       "linkingText": [
         "url"
       ],
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "AppHistoryDestination"
+        "NavigationDestination"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "navigate-event-destination",
-        "href": "https://wicg.github.io/app-history/#navigate-event-destination",
-        "title": "The AppHistoryDestination class",
+        "href": "https://wicg.github.io/navigation-api/#navigate-event-destination",
+        "title": "The NavigationDestination class",
         "number": "2.2"
       },
       "definedIn": "prose"
     },
     {
-      "id": "dom-apphistorydestination-key",
-      "href": "https://wicg.github.io/app-history/#dom-apphistorydestination-key",
+      "id": "dom-navigationdestination-key",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigationdestination-key",
       "linkingText": [
         "key"
       ],
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "AppHistoryDestination"
+        "NavigationDestination"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "navigate-event-destination",
-        "href": "https://wicg.github.io/app-history/#navigate-event-destination",
-        "title": "The AppHistoryDestination class",
+        "href": "https://wicg.github.io/navigation-api/#navigate-event-destination",
+        "title": "The NavigationDestination class",
         "number": "2.2"
       },
       "definedIn": "prose"
     },
     {
-      "id": "dom-apphistorydestination-id",
-      "href": "https://wicg.github.io/app-history/#dom-apphistorydestination-id",
+      "id": "dom-navigationdestination-id",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigationdestination-id",
       "linkingText": [
         "id"
       ],
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "AppHistoryDestination"
+        "NavigationDestination"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "navigate-event-destination",
-        "href": "https://wicg.github.io/app-history/#navigate-event-destination",
-        "title": "The AppHistoryDestination class",
+        "href": "https://wicg.github.io/navigation-api/#navigate-event-destination",
+        "title": "The NavigationDestination class",
         "number": "2.2"
       },
       "definedIn": "prose"
     },
     {
-      "id": "dom-apphistorydestination-index",
-      "href": "https://wicg.github.io/app-history/#dom-apphistorydestination-index",
+      "id": "dom-navigationdestination-index",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigationdestination-index",
       "linkingText": [
         "index"
       ],
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "AppHistoryDestination"
+        "NavigationDestination"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "navigate-event-destination",
-        "href": "https://wicg.github.io/app-history/#navigate-event-destination",
-        "title": "The AppHistoryDestination class",
+        "href": "https://wicg.github.io/navigation-api/#navigate-event-destination",
+        "title": "The NavigationDestination class",
         "number": "2.2"
       },
       "definedIn": "prose"
     },
     {
-      "id": "dom-apphistorydestination-samedocument",
-      "href": "https://wicg.github.io/app-history/#dom-apphistorydestination-samedocument",
+      "id": "dom-navigationdestination-samedocument",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigationdestination-samedocument",
       "linkingText": [
         "sameDocument"
       ],
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "AppHistoryDestination"
+        "NavigationDestination"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "navigate-event-destination",
-        "href": "https://wicg.github.io/app-history/#navigate-event-destination",
-        "title": "The AppHistoryDestination class",
+        "href": "https://wicg.github.io/navigation-api/#navigate-event-destination",
+        "title": "The NavigationDestination class",
         "number": "2.2"
       },
       "definedIn": "prose"
     },
     {
-      "id": "dom-apphistorydestination-getstate",
-      "href": "https://wicg.github.io/app-history/#dom-apphistorydestination-getstate",
+      "id": "dom-navigationdestination-getstate",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigationdestination-getstate",
       "linkingText": [
         "getState()"
       ],
       "localLinkingText": [],
       "type": "method",
       "for": [
-        "AppHistoryDestination"
+        "NavigationDestination"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "navigate-event-destination",
-        "href": "https://wicg.github.io/app-history/#navigate-event-destination",
-        "title": "The AppHistoryDestination class",
+        "href": "https://wicg.github.io/navigation-api/#navigate-event-destination",
+        "title": "The NavigationDestination class",
         "number": "2.2"
       },
       "definedIn": "prose"
     },
     {
       "id": "fire-a-traversal-navigate-event",
-      "href": "https://wicg.github.io/app-history/#fire-a-traversal-navigate-event",
+      "href": "https://wicg.github.io/navigation-api/#fire-a-traversal-navigate-event",
       "linkingText": [
         "fire a traversal navigate event"
       ],
@@ -2794,7 +2815,7 @@
       "informative": false,
       "heading": {
         "id": "navigate-event-firing",
-        "href": "https://wicg.github.io/app-history/#navigate-event-firing",
+        "href": "https://wicg.github.io/navigation-api/#navigate-event-firing",
         "title": "Firing the event",
         "number": "2.3"
       },
@@ -2802,7 +2823,7 @@
     },
     {
       "id": "fire-a-traversal-navigate-event-destinationentry",
-      "href": "https://wicg.github.io/app-history/#fire-a-traversal-navigate-event-destinationentry",
+      "href": "https://wicg.github.io/navigation-api/#fire-a-traversal-navigate-event-destinationentry",
       "linkingText": [
         "destinationEntry"
       ],
@@ -2815,7 +2836,7 @@
       "informative": false,
       "heading": {
         "id": "navigate-event-firing",
-        "href": "https://wicg.github.io/app-history/#navigate-event-firing",
+        "href": "https://wicg.github.io/navigation-api/#navigate-event-firing",
         "title": "Firing the event",
         "number": "2.3"
       },
@@ -2823,7 +2844,7 @@
     },
     {
       "id": "fire-a-traversal-navigate-event-userinvolvement",
-      "href": "https://wicg.github.io/app-history/#fire-a-traversal-navigate-event-userinvolvement",
+      "href": "https://wicg.github.io/navigation-api/#fire-a-traversal-navigate-event-userinvolvement",
       "linkingText": [
         "userInvolvement"
       ],
@@ -2836,7 +2857,7 @@
       "informative": false,
       "heading": {
         "id": "navigate-event-firing",
-        "href": "https://wicg.github.io/app-history/#navigate-event-firing",
+        "href": "https://wicg.github.io/navigation-api/#navigate-event-firing",
         "title": "Firing the event",
         "number": "2.3"
       },
@@ -2844,7 +2865,7 @@
     },
     {
       "id": "fire-a-non-traversal-navigate-event",
-      "href": "https://wicg.github.io/app-history/#fire-a-non-traversal-navigate-event",
+      "href": "https://wicg.github.io/navigation-api/#fire-a-non-traversal-navigate-event",
       "linkingText": [
         "fire a non-traversal navigate event"
       ],
@@ -2855,7 +2876,7 @@
       "informative": false,
       "heading": {
         "id": "navigate-event-firing",
-        "href": "https://wicg.github.io/app-history/#navigate-event-firing",
+        "href": "https://wicg.github.io/navigation-api/#navigate-event-firing",
         "title": "Firing the event",
         "number": "2.3"
       },
@@ -2863,7 +2884,7 @@
     },
     {
       "id": "fire-a-non-traversal-navigate-event-navigationtype",
-      "href": "https://wicg.github.io/app-history/#fire-a-non-traversal-navigate-event-navigationtype",
+      "href": "https://wicg.github.io/navigation-api/#fire-a-non-traversal-navigate-event-navigationtype",
       "linkingText": [
         "navigationType"
       ],
@@ -2876,7 +2897,7 @@
       "informative": false,
       "heading": {
         "id": "navigate-event-firing",
-        "href": "https://wicg.github.io/app-history/#navigate-event-firing",
+        "href": "https://wicg.github.io/navigation-api/#navigate-event-firing",
         "title": "Firing the event",
         "number": "2.3"
       },
@@ -2884,7 +2905,7 @@
     },
     {
       "id": "fire-a-non-traversal-navigate-event-destinationurl",
-      "href": "https://wicg.github.io/app-history/#fire-a-non-traversal-navigate-event-destinationurl",
+      "href": "https://wicg.github.io/navigation-api/#fire-a-non-traversal-navigate-event-destinationurl",
       "linkingText": [
         "destinationURL"
       ],
@@ -2897,7 +2918,7 @@
       "informative": false,
       "heading": {
         "id": "navigate-event-firing",
-        "href": "https://wicg.github.io/app-history/#navigate-event-firing",
+        "href": "https://wicg.github.io/navigation-api/#navigate-event-firing",
         "title": "Firing the event",
         "number": "2.3"
       },
@@ -2905,7 +2926,7 @@
     },
     {
       "id": "fire-a-non-traversal-navigate-event-issamedocument",
-      "href": "https://wicg.github.io/app-history/#fire-a-non-traversal-navigate-event-issamedocument",
+      "href": "https://wicg.github.io/navigation-api/#fire-a-non-traversal-navigate-event-issamedocument",
       "linkingText": [
         "isSameDocument"
       ],
@@ -2918,7 +2939,7 @@
       "informative": false,
       "heading": {
         "id": "navigate-event-firing",
-        "href": "https://wicg.github.io/app-history/#navigate-event-firing",
+        "href": "https://wicg.github.io/navigation-api/#navigate-event-firing",
         "title": "Firing the event",
         "number": "2.3"
       },
@@ -2926,7 +2947,7 @@
     },
     {
       "id": "fire-a-non-traversal-navigate-event-userinvolvement",
-      "href": "https://wicg.github.io/app-history/#fire-a-non-traversal-navigate-event-userinvolvement",
+      "href": "https://wicg.github.io/navigation-api/#fire-a-non-traversal-navigate-event-userinvolvement",
       "linkingText": [
         "userInvolvement"
       ],
@@ -2939,7 +2960,7 @@
       "informative": false,
       "heading": {
         "id": "navigate-event-firing",
-        "href": "https://wicg.github.io/app-history/#navigate-event-firing",
+        "href": "https://wicg.github.io/navigation-api/#navigate-event-firing",
         "title": "Firing the event",
         "number": "2.3"
       },
@@ -2947,7 +2968,7 @@
     },
     {
       "id": "fire-a-non-traversal-navigate-event-state",
-      "href": "https://wicg.github.io/app-history/#fire-a-non-traversal-navigate-event-state",
+      "href": "https://wicg.github.io/navigation-api/#fire-a-non-traversal-navigate-event-state",
       "linkingText": [
         "state"
       ],
@@ -2960,7 +2981,7 @@
       "informative": false,
       "heading": {
         "id": "navigate-event-firing",
-        "href": "https://wicg.github.io/app-history/#navigate-event-firing",
+        "href": "https://wicg.github.io/navigation-api/#navigate-event-firing",
         "title": "Firing the event",
         "number": "2.3"
       },
@@ -2968,7 +2989,7 @@
     },
     {
       "id": "fire-a-non-traversal-navigate-event-formdataentrylist",
-      "href": "https://wicg.github.io/app-history/#fire-a-non-traversal-navigate-event-formdataentrylist",
+      "href": "https://wicg.github.io/navigation-api/#fire-a-non-traversal-navigate-event-formdataentrylist",
       "linkingText": [
         "formDataEntryList"
       ],
@@ -2981,7 +3002,7 @@
       "informative": false,
       "heading": {
         "id": "navigate-event-firing",
-        "href": "https://wicg.github.io/app-history/#navigate-event-firing",
+        "href": "https://wicg.github.io/navigation-api/#navigate-event-firing",
         "title": "Firing the event",
         "number": "2.3"
       },
@@ -2989,7 +3010,7 @@
     },
     {
       "id": "fire-a-non-traversal-navigate-event-classichistoryapiserializeddata",
-      "href": "https://wicg.github.io/app-history/#fire-a-non-traversal-navigate-event-classichistoryapiserializeddata",
+      "href": "https://wicg.github.io/navigation-api/#fire-a-non-traversal-navigate-event-classichistoryapiserializeddata",
       "linkingText": [
         "classicHistoryAPISerializedData"
       ],
@@ -3002,7 +3023,7 @@
       "informative": false,
       "heading": {
         "id": "navigate-event-firing",
-        "href": "https://wicg.github.io/app-history/#navigate-event-firing",
+        "href": "https://wicg.github.io/navigation-api/#navigate-event-firing",
         "title": "Firing the event",
         "number": "2.3"
       },
@@ -3010,7 +3031,7 @@
     },
     {
       "id": "inner-navigate-event-firing-algorithm",
-      "href": "https://wicg.github.io/app-history/#inner-navigate-event-firing-algorithm",
+      "href": "https://wicg.github.io/navigation-api/#inner-navigate-event-firing-algorithm",
       "linkingText": [
         "inner navigate event firing algorithm"
       ],
@@ -3021,7 +3042,7 @@
       "informative": false,
       "heading": {
         "id": "navigate-event-firing",
-        "href": "https://wicg.github.io/app-history/#navigate-event-firing",
+        "href": "https://wicg.github.io/navigation-api/#navigate-event-firing",
         "title": "Firing the event",
         "number": "2.3"
       },
@@ -3029,7 +3050,7 @@
     },
     {
       "id": "finalize-with-an-aborted-navigation-error",
-      "href": "https://wicg.github.io/app-history/#finalize-with-an-aborted-navigation-error",
+      "href": "https://wicg.github.io/navigation-api/#finalize-with-an-aborted-navigation-error",
       "linkingText": [
         "finalize with an aborted navigation error"
       ],
@@ -3040,17 +3061,17 @@
       "informative": false,
       "heading": {
         "id": "navigate-event-firing",
-        "href": "https://wicg.github.io/app-history/#navigate-event-firing",
+        "href": "https://wicg.github.io/navigation-api/#navigate-event-firing",
         "title": "Firing the event",
         "number": "2.3"
       },
       "definedIn": "prose"
     },
     {
-      "id": "inform-app-history-about-canceling-navigation",
-      "href": "https://wicg.github.io/app-history/#inform-app-history-about-canceling-navigation",
+      "id": "inform-the-navigation-api-about-canceling-navigation",
+      "href": "https://wicg.github.io/navigation-api/#inform-the-navigation-api-about-canceling-navigation",
       "linkingText": [
-        "inform app history about canceling navigation"
+        "inform the navigation API about canceling navigation"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -3059,17 +3080,17 @@
       "informative": false,
       "heading": {
         "id": "navigate-event-firing",
-        "href": "https://wicg.github.io/app-history/#navigate-event-firing",
+        "href": "https://wicg.github.io/navigation-api/#navigate-event-firing",
         "title": "Firing the event",
         "number": "2.3"
       },
       "definedIn": "prose"
     },
     {
-      "id": "inform-app-history-about-browsing-context-discarding",
-      "href": "https://wicg.github.io/app-history/#inform-app-history-about-browsing-context-discarding",
+      "id": "inform-the-navigation-api-about-browsing-context-discarding",
+      "href": "https://wicg.github.io/navigation-api/#inform-the-navigation-api-about-browsing-context-discarding",
       "linkingText": [
-        "inform app history about browsing context discarding"
+        "inform the navigation API about browsing context discarding"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -3078,17 +3099,17 @@
       "informative": false,
       "heading": {
         "id": "navigate-event-firing",
-        "href": "https://wicg.github.io/app-history/#navigate-event-firing",
+        "href": "https://wicg.github.io/navigation-api/#navigate-event-firing",
         "title": "Firing the event",
         "number": "2.3"
       },
       "definedIn": "prose"
     },
     {
-      "id": "apphistoryentry",
-      "href": "https://wicg.github.io/app-history/#apphistoryentry",
+      "id": "navigationhistoryentry",
+      "href": "https://wicg.github.io/navigation-api/#navigationhistoryentry",
       "linkingText": [
-        "AppHistoryEntry"
+        "NavigationHistoryEntry"
       ],
       "localLinkingText": [],
       "type": "interface",
@@ -3096,352 +3117,352 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "apphistoryentry-class",
-        "href": "https://wicg.github.io/app-history/#apphistoryentry-class",
-        "title": "App history entries",
+        "id": "NavigationHistoryEntry-class",
+        "href": "https://wicg.github.io/navigation-api/#NavigationHistoryEntry-class",
+        "title": "Navigation API history entries",
         "number": "3"
       },
       "definedIn": "pre"
     },
     {
-      "id": "apphistoryentry-session-history-entry",
-      "href": "https://wicg.github.io/app-history/#apphistoryentry-session-history-entry",
+      "id": "navigationhistoryentry-session-history-entry",
+      "href": "https://wicg.github.io/navigation-api/#navigationhistoryentry-session-history-entry",
       "linkingText": [
         "session history entry"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "AppHistoryEntry"
+        "NavigationHistoryEntry"
       ],
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "apphistoryentry-class",
-        "href": "https://wicg.github.io/app-history/#apphistoryentry-class",
-        "title": "App history entries",
+        "id": "NavigationHistoryEntry-class",
+        "href": "https://wicg.github.io/navigation-api/#NavigationHistoryEntry-class",
+        "title": "Navigation API history entries",
         "number": "3"
       },
       "definedIn": "prose"
     },
     {
-      "id": "apphistoryentry-index",
-      "href": "https://wicg.github.io/app-history/#apphistoryentry-index",
+      "id": "navigationhistoryentry-index",
+      "href": "https://wicg.github.io/navigation-api/#navigationhistoryentry-index",
       "linkingText": [
         "index"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "AppHistoryEntry"
+        "NavigationHistoryEntry"
       ],
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "apphistoryentry-class",
-        "href": "https://wicg.github.io/app-history/#apphistoryentry-class",
-        "title": "App history entries",
+        "id": "NavigationHistoryEntry-class",
+        "href": "https://wicg.github.io/navigation-api/#NavigationHistoryEntry-class",
+        "title": "Navigation API history entries",
         "number": "3"
       },
       "definedIn": "prose"
     },
     {
-      "id": "dom-apphistoryentry-key",
-      "href": "https://wicg.github.io/app-history/#dom-apphistoryentry-key",
+      "id": "dom-navigationhistoryentry-key",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigationhistoryentry-key",
       "linkingText": [
         "key"
       ],
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "AppHistoryEntry"
+        "NavigationHistoryEntry"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "apphistoryentry-class",
-        "href": "https://wicg.github.io/app-history/#apphistoryentry-class",
-        "title": "App history entries",
+        "id": "NavigationHistoryEntry-class",
+        "href": "https://wicg.github.io/navigation-api/#NavigationHistoryEntry-class",
+        "title": "Navigation API history entries",
         "number": "3"
       },
       "definedIn": "prose"
     },
     {
-      "id": "dom-apphistoryentry-id",
-      "href": "https://wicg.github.io/app-history/#dom-apphistoryentry-id",
+      "id": "dom-navigationhistoryentry-id",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigationhistoryentry-id",
       "linkingText": [
         "id"
       ],
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "AppHistoryEntry"
+        "NavigationHistoryEntry"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "apphistoryentry-class",
-        "href": "https://wicg.github.io/app-history/#apphistoryentry-class",
-        "title": "App history entries",
+        "id": "NavigationHistoryEntry-class",
+        "href": "https://wicg.github.io/navigation-api/#NavigationHistoryEntry-class",
+        "title": "Navigation API history entries",
         "number": "3"
       },
       "definedIn": "prose"
     },
     {
-      "id": "dom-apphistoryentry-url",
-      "href": "https://wicg.github.io/app-history/#dom-apphistoryentry-url",
+      "id": "dom-navigationhistoryentry-url",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigationhistoryentry-url",
       "linkingText": [
         "url"
       ],
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "AppHistoryEntry"
+        "NavigationHistoryEntry"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "apphistoryentry-class",
-        "href": "https://wicg.github.io/app-history/#apphistoryentry-class",
-        "title": "App history entries",
+        "id": "NavigationHistoryEntry-class",
+        "href": "https://wicg.github.io/navigation-api/#NavigationHistoryEntry-class",
+        "title": "Navigation API history entries",
         "number": "3"
       },
       "definedIn": "prose"
     },
     {
-      "id": "dom-apphistoryentry-index",
-      "href": "https://wicg.github.io/app-history/#dom-apphistoryentry-index",
+      "id": "dom-navigationhistoryentry-index",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigationhistoryentry-index",
       "linkingText": [
         "index"
       ],
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "AppHistoryEntry"
+        "NavigationHistoryEntry"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "apphistoryentry-class",
-        "href": "https://wicg.github.io/app-history/#apphistoryentry-class",
-        "title": "App history entries",
+        "id": "NavigationHistoryEntry-class",
+        "href": "https://wicg.github.io/navigation-api/#NavigationHistoryEntry-class",
+        "title": "Navigation API history entries",
         "number": "3"
       },
       "definedIn": "prose"
     },
     {
-      "id": "dom-apphistoryentry-samedocument",
-      "href": "https://wicg.github.io/app-history/#dom-apphistoryentry-samedocument",
+      "id": "dom-navigationhistoryentry-samedocument",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigationhistoryentry-samedocument",
       "linkingText": [
         "sameDocument"
       ],
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "AppHistoryEntry"
+        "NavigationHistoryEntry"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "apphistoryentry-class",
-        "href": "https://wicg.github.io/app-history/#apphistoryentry-class",
-        "title": "App history entries",
+        "id": "NavigationHistoryEntry-class",
+        "href": "https://wicg.github.io/navigation-api/#NavigationHistoryEntry-class",
+        "title": "Navigation API history entries",
         "number": "3"
       },
       "definedIn": "prose"
     },
     {
-      "id": "dom-apphistoryentry-getstate",
-      "href": "https://wicg.github.io/app-history/#dom-apphistoryentry-getstate",
+      "id": "dom-navigationhistoryentry-getstate",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigationhistoryentry-getstate",
       "linkingText": [
         "getState()"
       ],
       "localLinkingText": [],
       "type": "method",
       "for": [
-        "AppHistoryEntry"
+        "NavigationHistoryEntry"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "apphistoryentry-class",
-        "href": "https://wicg.github.io/app-history/#apphistoryentry-class",
-        "title": "App history entries",
+        "id": "NavigationHistoryEntry-class",
+        "href": "https://wicg.github.io/navigation-api/#NavigationHistoryEntry-class",
+        "title": "Navigation API history entries",
         "number": "3"
       },
       "definedIn": "prose"
     },
     {
-      "id": "dom-apphistoryentry-onnavigateto",
-      "href": "https://wicg.github.io/app-history/#dom-apphistoryentry-onnavigateto",
+      "id": "dom-navigationhistoryentry-onnavigateto",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigationhistoryentry-onnavigateto",
       "linkingText": [
         "onnavigateto"
       ],
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "AppHistoryEntry"
+        "NavigationHistoryEntry"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "apphistoryentry-class",
-        "href": "https://wicg.github.io/app-history/#apphistoryentry-class",
-        "title": "App history entries",
+        "id": "NavigationHistoryEntry-class",
+        "href": "https://wicg.github.io/navigation-api/#NavigationHistoryEntry-class",
+        "title": "Navigation API history entries",
         "number": "3"
       },
       "definedIn": "table"
     },
     {
-      "id": "eventdef-apphistoryentry-navigateto",
-      "href": "https://wicg.github.io/app-history/#eventdef-apphistoryentry-navigateto",
+      "id": "eventdef-navigationhistoryentry-navigateto",
+      "href": "https://wicg.github.io/navigation-api/#eventdef-navigationhistoryentry-navigateto",
       "linkingText": [
         "navigateto"
       ],
       "localLinkingText": [],
       "type": "event",
       "for": [
-        "AppHistoryEntry"
+        "NavigationHistoryEntry"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "apphistoryentry-class",
-        "href": "https://wicg.github.io/app-history/#apphistoryentry-class",
-        "title": "App history entries",
+        "id": "NavigationHistoryEntry-class",
+        "href": "https://wicg.github.io/navigation-api/#NavigationHistoryEntry-class",
+        "title": "Navigation API history entries",
         "number": "3"
       },
       "definedIn": "table"
     },
     {
-      "id": "dom-apphistoryentry-onnavigatefrom",
-      "href": "https://wicg.github.io/app-history/#dom-apphistoryentry-onnavigatefrom",
+      "id": "dom-navigationhistoryentry-onnavigatefrom",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigationhistoryentry-onnavigatefrom",
       "linkingText": [
         "onnavigatefrom"
       ],
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "AppHistoryEntry"
+        "NavigationHistoryEntry"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "apphistoryentry-class",
-        "href": "https://wicg.github.io/app-history/#apphistoryentry-class",
-        "title": "App history entries",
+        "id": "NavigationHistoryEntry-class",
+        "href": "https://wicg.github.io/navigation-api/#NavigationHistoryEntry-class",
+        "title": "Navigation API history entries",
         "number": "3"
       },
       "definedIn": "table"
     },
     {
-      "id": "eventdef-apphistoryentry-navigatefrom",
-      "href": "https://wicg.github.io/app-history/#eventdef-apphistoryentry-navigatefrom",
+      "id": "eventdef-navigationhistoryentry-navigatefrom",
+      "href": "https://wicg.github.io/navigation-api/#eventdef-navigationhistoryentry-navigatefrom",
       "linkingText": [
         "navigatefrom"
       ],
       "localLinkingText": [],
       "type": "event",
       "for": [
-        "AppHistoryEntry"
+        "NavigationHistoryEntry"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "apphistoryentry-class",
-        "href": "https://wicg.github.io/app-history/#apphistoryentry-class",
-        "title": "App history entries",
+        "id": "NavigationHistoryEntry-class",
+        "href": "https://wicg.github.io/navigation-api/#NavigationHistoryEntry-class",
+        "title": "Navigation API history entries",
         "number": "3"
       },
       "definedIn": "table"
     },
     {
-      "id": "dom-apphistoryentry-onfinish",
-      "href": "https://wicg.github.io/app-history/#dom-apphistoryentry-onfinish",
+      "id": "dom-navigationhistoryentry-onfinish",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigationhistoryentry-onfinish",
       "linkingText": [
         "onfinish"
       ],
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "AppHistoryEntry"
+        "NavigationHistoryEntry"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "apphistoryentry-class",
-        "href": "https://wicg.github.io/app-history/#apphistoryentry-class",
-        "title": "App history entries",
+        "id": "NavigationHistoryEntry-class",
+        "href": "https://wicg.github.io/navigation-api/#NavigationHistoryEntry-class",
+        "title": "Navigation API history entries",
         "number": "3"
       },
       "definedIn": "table"
     },
     {
-      "id": "eventdef-apphistoryentry-finish",
-      "href": "https://wicg.github.io/app-history/#eventdef-apphistoryentry-finish",
+      "id": "eventdef-navigationhistoryentry-finish",
+      "href": "https://wicg.github.io/navigation-api/#eventdef-navigationhistoryentry-finish",
       "linkingText": [
         "finish"
       ],
       "localLinkingText": [],
       "type": "event",
       "for": [
-        "AppHistoryEntry"
+        "NavigationHistoryEntry"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "apphistoryentry-class",
-        "href": "https://wicg.github.io/app-history/#apphistoryentry-class",
-        "title": "App history entries",
+        "id": "NavigationHistoryEntry-class",
+        "href": "https://wicg.github.io/navigation-api/#NavigationHistoryEntry-class",
+        "title": "Navigation API history entries",
         "number": "3"
       },
       "definedIn": "table"
     },
     {
-      "id": "dom-apphistoryentry-ondispose",
-      "href": "https://wicg.github.io/app-history/#dom-apphistoryentry-ondispose",
+      "id": "dom-navigationhistoryentry-ondispose",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigationhistoryentry-ondispose",
       "linkingText": [
         "ondispose"
       ],
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "AppHistoryEntry"
+        "NavigationHistoryEntry"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "apphistoryentry-class",
-        "href": "https://wicg.github.io/app-history/#apphistoryentry-class",
-        "title": "App history entries",
+        "id": "NavigationHistoryEntry-class",
+        "href": "https://wicg.github.io/navigation-api/#NavigationHistoryEntry-class",
+        "title": "Navigation API history entries",
         "number": "3"
       },
       "definedIn": "table"
     },
     {
-      "id": "eventdef-apphistoryentry-dispose",
-      "href": "https://wicg.github.io/app-history/#eventdef-apphistoryentry-dispose",
+      "id": "eventdef-navigationhistoryentry-dispose",
+      "href": "https://wicg.github.io/navigation-api/#eventdef-navigationhistoryentry-dispose",
       "linkingText": [
         "dispose"
       ],
       "localLinkingText": [],
       "type": "event",
       "for": [
-        "AppHistoryEntry"
+        "NavigationHistoryEntry"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "apphistoryentry-class",
-        "href": "https://wicg.github.io/app-history/#apphistoryentry-class",
-        "title": "App history entries",
+        "id": "NavigationHistoryEntry-class",
+        "href": "https://wicg.github.io/navigation-api/#NavigationHistoryEntry-class",
+        "title": "Navigation API history entries",
         "number": "3"
       },
       "definedIn": "table"
     },
     {
       "id": "navigate-entrylist",
-      "href": "https://wicg.github.io/app-history/#navigate-entrylist",
+      "href": "https://wicg.github.io/navigation-api/#navigate-entrylist",
       "linkingText": [
         "entryList"
       ],
@@ -3454,7 +3475,7 @@
       "informative": false,
       "heading": {
         "id": "form-patches",
-        "href": "https://wicg.github.io/app-history/#form-patches",
+        "href": "https://wicg.github.io/navigation-api/#form-patches",
         "title": "Form submission patches",
         "number": "4.1"
       },
@@ -3462,7 +3483,7 @@
     },
     {
       "id": "user-navigation-involvement",
-      "href": "https://wicg.github.io/app-history/#user-navigation-involvement",
+      "href": "https://wicg.github.io/navigation-api/#user-navigation-involvement",
       "linkingText": [
         "user navigation involvement"
       ],
@@ -3473,7 +3494,7 @@
       "informative": false,
       "heading": {
         "id": "user-initiated-patches",
-        "href": "https://wicg.github.io/app-history/#user-initiated-patches",
+        "href": "https://wicg.github.io/navigation-api/#user-initiated-patches",
         "title": "Browser UI/user-initiated patches",
         "number": "4.2"
       },
@@ -3481,7 +3502,7 @@
     },
     {
       "id": "user-navigation-involvement-browser-ui",
-      "href": "https://wicg.github.io/app-history/#user-navigation-involvement-browser-ui",
+      "href": "https://wicg.github.io/navigation-api/#user-navigation-involvement-browser-ui",
       "linkingText": [
         "browser UI"
       ],
@@ -3494,7 +3515,7 @@
       "informative": false,
       "heading": {
         "id": "user-initiated-patches",
-        "href": "https://wicg.github.io/app-history/#user-initiated-patches",
+        "href": "https://wicg.github.io/navigation-api/#user-initiated-patches",
         "title": "Browser UI/user-initiated patches",
         "number": "4.2"
       },
@@ -3502,7 +3523,7 @@
     },
     {
       "id": "user-navigation-involvement-activation",
-      "href": "https://wicg.github.io/app-history/#user-navigation-involvement-activation",
+      "href": "https://wicg.github.io/navigation-api/#user-navigation-involvement-activation",
       "linkingText": [
         "activation"
       ],
@@ -3515,7 +3536,7 @@
       "informative": false,
       "heading": {
         "id": "user-initiated-patches",
-        "href": "https://wicg.github.io/app-history/#user-initiated-patches",
+        "href": "https://wicg.github.io/navigation-api/#user-initiated-patches",
         "title": "Browser UI/user-initiated patches",
         "number": "4.2"
       },
@@ -3523,7 +3544,7 @@
     },
     {
       "id": "user-navigation-involvement-none",
-      "href": "https://wicg.github.io/app-history/#user-navigation-involvement-none",
+      "href": "https://wicg.github.io/navigation-api/#user-navigation-involvement-none",
       "linkingText": [
         "none"
       ],
@@ -3536,7 +3557,7 @@
       "informative": false,
       "heading": {
         "id": "user-initiated-patches",
-        "href": "https://wicg.github.io/app-history/#user-initiated-patches",
+        "href": "https://wicg.github.io/navigation-api/#user-initiated-patches",
         "title": "Browser UI/user-initiated patches",
         "number": "4.2"
       },
@@ -3544,7 +3565,7 @@
     },
     {
       "id": "event-user-navigation-involvement",
-      "href": "https://wicg.github.io/app-history/#event-user-navigation-involvement",
+      "href": "https://wicg.github.io/navigation-api/#event-user-navigation-involvement",
       "linkingText": [
         "user navigation involvement"
       ],
@@ -3557,7 +3578,7 @@
       "informative": false,
       "heading": {
         "id": "user-initiated-patches",
-        "href": "https://wicg.github.io/app-history/#user-initiated-patches",
+        "href": "https://wicg.github.io/navigation-api/#user-initiated-patches",
         "title": "Browser UI/user-initiated patches",
         "number": "4.2"
       },
@@ -3565,7 +3586,7 @@
     },
     {
       "id": "navigate-userinvolvement",
-      "href": "https://wicg.github.io/app-history/#navigate-userinvolvement",
+      "href": "https://wicg.github.io/navigation-api/#navigate-userinvolvement",
       "linkingText": [
         "userInvolvement"
       ],
@@ -3578,7 +3599,7 @@
       "informative": false,
       "heading": {
         "id": "user-initiated-patches",
-        "href": "https://wicg.github.io/app-history/#user-initiated-patches",
+        "href": "https://wicg.github.io/navigation-api/#user-initiated-patches",
         "title": "Browser UI/user-initiated patches",
         "number": "4.2"
       },
@@ -3586,7 +3607,7 @@
     },
     {
       "id": "traverse-the-history-by-a-delta-userinvolvement",
-      "href": "https://wicg.github.io/app-history/#traverse-the-history-by-a-delta-userinvolvement",
+      "href": "https://wicg.github.io/navigation-api/#traverse-the-history-by-a-delta-userinvolvement",
       "linkingText": [
         "userInvolvement"
       ],
@@ -3599,17 +3620,17 @@
       "informative": false,
       "heading": {
         "id": "user-initiated-patches",
-        "href": "https://wicg.github.io/app-history/#user-initiated-patches",
+        "href": "https://wicg.github.io/navigation-api/#user-initiated-patches",
         "title": "Browser UI/user-initiated patches",
         "number": "4.2"
       },
       "definedIn": "prose"
     },
     {
-      "id": "navigate-apphistorystate",
-      "href": "https://wicg.github.io/app-history/#navigate-apphistorystate",
+      "id": "navigate-navigationapistate",
+      "href": "https://wicg.github.io/navigation-api/#navigate-navigationapistate",
       "linkingText": [
-        "appHistoryState"
+        "navigationAPIState"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -3620,7 +3641,7 @@
       "informative": false,
       "heading": {
         "id": "navigate-algorithm-patches",
-        "href": "https://wicg.github.io/app-history/#navigate-algorithm-patches",
+        "href": "https://wicg.github.io/navigation-api/#navigate-algorithm-patches",
         "title": "Navigation algorithm updates",
         "number": "4.3"
       },
@@ -3628,7 +3649,7 @@
     },
     {
       "id": "convert-a-history-handling-behavior-to-a-navigation-type",
-      "href": "https://wicg.github.io/app-history/#convert-a-history-handling-behavior-to-a-navigation-type",
+      "href": "https://wicg.github.io/navigation-api/#convert-a-history-handling-behavior-to-a-navigation-type",
       "linkingText": [
         "convert a history handling behavior to a navigation type"
       ],
@@ -3639,7 +3660,7 @@
       "informative": false,
       "heading": {
         "id": "navigate-algorithm-patches",
-        "href": "https://wicg.github.io/app-history/#navigate-algorithm-patches",
+        "href": "https://wicg.github.io/navigation-api/#navigate-algorithm-patches",
         "title": "Navigation algorithm updates",
         "number": "4.3"
       },
@@ -3647,7 +3668,7 @@
     },
     {
       "id": "session-history-entry-origin",
-      "href": "https://wicg.github.io/app-history/#session-history-entry-origin",
+      "href": "https://wicg.github.io/navigation-api/#session-history-entry-origin",
       "linkingText": [
         "origin"
       ],
@@ -3660,17 +3681,17 @@
       "informative": false,
       "heading": {
         "id": "session-history-new-she-fields",
-        "href": "https://wicg.github.io/app-history/#session-history-new-she-fields",
+        "href": "https://wicg.github.io/navigation-api/#session-history-new-she-fields",
         "title": "New session history entry items",
         "number": "5.1"
       },
       "definedIn": "prose"
     },
     {
-      "id": "session-history-entry-app-history-key",
-      "href": "https://wicg.github.io/app-history/#session-history-entry-app-history-key",
+      "id": "session-history-entry-navigation-api-key",
+      "href": "https://wicg.github.io/navigation-api/#session-history-entry-navigation-api-key",
       "linkingText": [
-        "app history key"
+        "navigation API key"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -3681,17 +3702,17 @@
       "informative": false,
       "heading": {
         "id": "session-history-new-she-fields",
-        "href": "https://wicg.github.io/app-history/#session-history-new-she-fields",
+        "href": "https://wicg.github.io/navigation-api/#session-history-new-she-fields",
         "title": "New session history entry items",
         "number": "5.1"
       },
       "definedIn": "prose"
     },
     {
-      "id": "session-history-entry-app-history-id",
-      "href": "https://wicg.github.io/app-history/#session-history-entry-app-history-id",
+      "id": "session-history-entry-navigation-api-id",
+      "href": "https://wicg.github.io/navigation-api/#session-history-entry-navigation-api-id",
       "linkingText": [
-        "app history id"
+        "navigation API ID"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -3702,17 +3723,17 @@
       "informative": false,
       "heading": {
         "id": "session-history-new-she-fields",
-        "href": "https://wicg.github.io/app-history/#session-history-new-she-fields",
+        "href": "https://wicg.github.io/navigation-api/#session-history-new-she-fields",
         "title": "New session history entry items",
         "number": "5.1"
       },
       "definedIn": "prose"
     },
     {
-      "id": "session-history-entry-app-history-state",
-      "href": "https://wicg.github.io/app-history/#session-history-entry-app-history-state",
+      "id": "session-history-entry-navigation-api-state",
+      "href": "https://wicg.github.io/navigation-api/#session-history-entry-navigation-api-state",
       "linkingText": [
-        "app history state"
+        "navigation API state"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -3723,7 +3744,7 @@
       "informative": false,
       "heading": {
         "id": "session-history-new-she-fields",
-        "href": "https://wicg.github.io/app-history/#session-history-new-she-fields",
+        "href": "https://wicg.github.io/navigation-api/#session-history-new-she-fields",
         "title": "New session history entry items",
         "number": "5.1"
       },

@@ -5,6 +5,8 @@
 
 enum ComputePressureState { "nominal", "fair", "serious", "critical" };
 
+enum ComputePressureFactor { "thermal", "power-supply" };
+
 callback ComputePressureUpdateCallback = undefined (
   sequence<ComputePressureRecord> changes,
   ComputePressureObserver observer
@@ -29,6 +31,8 @@ interface ComputePressureObserver {
 dictionary ComputePressureRecord {
   ComputePressureSource source;
   ComputePressureState state;
+  sequence<ComputePressureFactor> factors;
+  DOMHighResTimeStamp timestamp;
   ComputePressureObserverOptions options;
 };
 

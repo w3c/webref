@@ -1,0 +1,16 @@
+// Source: Navigation API (https://wicg.github.io/app-history/)
+[Exposed=Window]
+interface NavigationHistoryEntry : EventTarget {
+  readonly attribute USVString? url;
+  readonly attribute DOMString key;
+  readonly attribute DOMString id;
+  readonly attribute long long index;
+  readonly attribute boolean sameDocument;
+
+  any getState();
+
+  attribute EventHandler onnavigateto;
+  attribute EventHandler onnavigatefrom;
+  attribute EventHandler onfinish;
+  attribute EventHandler ondispose;
+};
