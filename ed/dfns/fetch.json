@@ -230,6 +230,27 @@
       "definedIn": "dt"
     },
     {
+      "id": "fetch-params-controller",
+      "href": "https://fetch.spec.whatwg.org/#fetch-params-controller",
+      "linkingText": [
+        "controller"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "fetch params"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "infrastructure",
+        "href": "https://fetch.spec.whatwg.org/#infrastructure",
+        "title": "Infrastructure",
+        "number": "2"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "fetch-params-timing-info",
       "href": "https://fetch.spec.whatwg.org/#fetch-params-timing-info",
       "linkingText": [
@@ -249,6 +270,130 @@
         "number": "2"
       },
       "definedIn": "dt"
+    },
+    {
+      "id": "fetch-controller",
+      "href": "https://fetch.spec.whatwg.org/#fetch-controller",
+      "linkingText": [
+        "fetch controller"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "infrastructure",
+        "href": "https://fetch.spec.whatwg.org/#infrastructure",
+        "title": "Infrastructure",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "fetch-controller-state",
+      "href": "https://fetch.spec.whatwg.org/#fetch-controller-state",
+      "linkingText": [
+        "state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "fetch controller"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "infrastructure",
+        "href": "https://fetch.spec.whatwg.org/#infrastructure",
+        "title": "Infrastructure",
+        "number": "2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "fetch-controller-abort",
+      "href": "https://fetch.spec.whatwg.org/#fetch-controller-abort",
+      "linkingText": [
+        "abort"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "fetch controller"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "infrastructure",
+        "href": "https://fetch.spec.whatwg.org/#infrastructure",
+        "title": "Infrastructure",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "fetch-controller-terminate",
+      "href": "https://fetch.spec.whatwg.org/#fetch-controller-terminate",
+      "linkingText": [
+        "terminate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "fetch controller"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "infrastructure",
+        "href": "https://fetch.spec.whatwg.org/#infrastructure",
+        "title": "Infrastructure",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "fetch-params-aborted",
+      "href": "https://fetch.spec.whatwg.org/#fetch-params-aborted",
+      "linkingText": [
+        "aborted"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "fetch params"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "infrastructure",
+        "href": "https://fetch.spec.whatwg.org/#infrastructure",
+        "title": "Infrastructure",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "fetch-params-canceled",
+      "href": "https://fetch.spec.whatwg.org/#fetch-params-canceled",
+      "linkingText": [
+        "canceled"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "fetch params"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "infrastructure",
+        "href": "https://fetch.spec.whatwg.org/#infrastructure",
+        "title": "Infrastructure",
+        "number": "2"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "fetch-timing-info",
@@ -3186,6 +3331,25 @@
       "definedIn": "prose"
     },
     {
+      "id": "appropriate-network-error",
+      "href": "https://fetch.spec.whatwg.org/#appropriate-network-error",
+      "linkingText": [
+        "appropriate network error"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "responses",
+        "href": "https://fetch.spec.whatwg.org/#responses",
+        "title": "Responses",
+        "number": "2.2.6"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "concept-filtered-response",
       "href": "https://fetch.spec.whatwg.org/#concept-filtered-response",
       "linkingText": [
@@ -3545,7 +3709,7 @@
       "id": "concept-fetch-record-fetch",
       "href": "https://fetch.spec.whatwg.org/#concept-fetch-record-fetch",
       "linkingText": [
-        "fetch"
+        "controller"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -4733,27 +4897,6 @@
       "href": "https://fetch.spec.whatwg.org/#fetch-useparallelqueue",
       "linkingText": [
         "useParallelQueue"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "fetch"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "fetching",
-        "href": "https://fetch.spec.whatwg.org/#fetching",
-        "title": "Fetching",
-        "number": "4"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "concept-fetch-terminate",
-      "href": "https://fetch.spec.whatwg.org/#concept-fetch-terminate",
-      "linkingText": [
-        "terminated"
       ],
       "localLinkingText": [],
       "type": "dfn",
