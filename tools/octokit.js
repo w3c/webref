@@ -21,7 +21,7 @@ module.exports = function (params) {
           return false;
         }
       },
-      onAbuseLimit: (retryAfter, options) => {
+      onSecondaryRateLimit: (retryAfter, options) => {
         if (options.request.retryCount < MAX_RETRIES) {
           console.warn(`Abuse detection triggered, retrying after ${retryAfter} seconds`)
           return true;
