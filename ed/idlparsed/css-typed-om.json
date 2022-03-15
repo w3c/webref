@@ -5437,7 +5437,7 @@
       ],
       "CSS": [
         {
-          "fragment": "partial namespace CSS {\n    CSSUnitValue number(double value);\n    CSSUnitValue percent(double value);\n\n    // <length>\n    CSSUnitValue em(double value);\n    CSSUnitValue ex(double value);\n    CSSUnitValue ch(double value);\n    CSSUnitValue ic(double value);\n    CSSUnitValue rem(double value);\n    CSSUnitValue lh(double value);\n    CSSUnitValue rlh(double value);\n    CSSUnitValue vw(double value);\n    CSSUnitValue vh(double value);\n    CSSUnitValue vi(double value);\n    CSSUnitValue vb(double value);\n    CSSUnitValue vmin(double value);\n    CSSUnitValue vmax(double value);\n    CSSUnitValue cm(double value);\n    CSSUnitValue mm(double value);\n    CSSUnitValue Q(double value);\n    CSSUnitValue in(double value);\n    CSSUnitValue pt(double value);\n    CSSUnitValue pc(double value);\n    CSSUnitValue px(double value);\n\n    // <angle>\n    CSSUnitValue deg(double value);\n    CSSUnitValue grad(double value);\n    CSSUnitValue rad(double value);\n    CSSUnitValue turn(double value);\n\n    // <time>\n    CSSUnitValue s(double value);\n    CSSUnitValue ms(double value);\n\n    // <frequency>\n    CSSUnitValue Hz(double value);\n    CSSUnitValue kHz(double value);\n\n    // <resolution>\n    CSSUnitValue dpi(double value);\n    CSSUnitValue dpcm(double value);\n    CSSUnitValue dppx(double value);\n\n    // <flex>\n    CSSUnitValue fr(double value);\n};",
+          "fragment": "partial namespace CSS {\n    CSSUnitValue number(double value);\n    CSSUnitValue percent(double value);\n\n    // <length>\n    CSSUnitValue em(double value);\n    CSSUnitValue ex(double value);\n    CSSUnitValue ch(double value);\n    CSSUnitValue ic(double value);\n    CSSUnitValue rem(double value);\n    CSSUnitValue lh(double value);\n    CSSUnitValue rlh(double value);\n    CSSUnitValue vw(double value);\n    CSSUnitValue vh(double value);\n    CSSUnitValue vi(double value);\n    CSSUnitValue vb(double value);\n    CSSUnitValue vmin(double value);\n    CSSUnitValue vmax(double value);\n    CSSUnitValue svw(double value);\n    CSSUnitValue svh(double value);\n    CSSUnitValue svi(double value);\n    CSSUnitValue svb(double value);\n    CSSUnitValue svmin(double value);\n    CSSUnitValue svmax(double value);\n    CSSUnitValue lvw(double value);\n    CSSUnitValue lvh(double value);\n    CSSUnitValue lvi(double value);\n    CSSUnitValue lvb(double value);\n    CSSUnitValue lvmin(double value);\n    CSSUnitValue lvmax(double value);\n    CSSUnitValue dvw(double value);\n    CSSUnitValue dvh(double value);\n    CSSUnitValue dvi(double value);\n    CSSUnitValue dvb(double value);\n    CSSUnitValue dvmin(double value);\n    CSSUnitValue dvmax(double value);\n    CSSUnitValue cqw(double value);\n    CSSUnitValue cqh(double value);\n    CSSUnitValue cqi(double value);\n    CSSUnitValue cqb(double value);\n    CSSUnitValue cqmin(double value);\n    CSSUnitValue cqmax(double value);\n    CSSUnitValue cm(double value);\n    CSSUnitValue mm(double value);\n    CSSUnitValue Q(double value);\n    CSSUnitValue in(double value);\n    CSSUnitValue pt(double value);\n    CSSUnitValue pc(double value);\n    CSSUnitValue px(double value);\n\n    // <angle>\n    CSSUnitValue deg(double value);\n    CSSUnitValue grad(double value);\n    CSSUnitValue rad(double value);\n    CSSUnitValue turn(double value);\n\n    // <time>\n    CSSUnitValue s(double value);\n    CSSUnitValue ms(double value);\n\n    // <frequency>\n    CSSUnitValue Hz(double value);\n    CSSUnitValue kHz(double value);\n\n    // <resolution>\n    CSSUnitValue dpi(double value);\n    CSSUnitValue dpcm(double value);\n    CSSUnitValue dppx(double value);\n\n    // <flex>\n    CSSUnitValue fr(double value);\n};",
           "type": "namespace",
           "name": "CSS",
           "inheritance": null,
@@ -5893,6 +5893,774 @@
             {
               "type": "operation",
               "name": "vmax",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "CSSUnitValue"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "value",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "double"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            },
+            {
+              "type": "operation",
+              "name": "svw",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "CSSUnitValue"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "value",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "double"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            },
+            {
+              "type": "operation",
+              "name": "svh",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "CSSUnitValue"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "value",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "double"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            },
+            {
+              "type": "operation",
+              "name": "svi",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "CSSUnitValue"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "value",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "double"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            },
+            {
+              "type": "operation",
+              "name": "svb",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "CSSUnitValue"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "value",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "double"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            },
+            {
+              "type": "operation",
+              "name": "svmin",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "CSSUnitValue"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "value",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "double"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            },
+            {
+              "type": "operation",
+              "name": "svmax",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "CSSUnitValue"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "value",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "double"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            },
+            {
+              "type": "operation",
+              "name": "lvw",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "CSSUnitValue"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "value",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "double"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            },
+            {
+              "type": "operation",
+              "name": "lvh",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "CSSUnitValue"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "value",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "double"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            },
+            {
+              "type": "operation",
+              "name": "lvi",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "CSSUnitValue"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "value",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "double"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            },
+            {
+              "type": "operation",
+              "name": "lvb",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "CSSUnitValue"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "value",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "double"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            },
+            {
+              "type": "operation",
+              "name": "lvmin",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "CSSUnitValue"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "value",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "double"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            },
+            {
+              "type": "operation",
+              "name": "lvmax",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "CSSUnitValue"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "value",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "double"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            },
+            {
+              "type": "operation",
+              "name": "dvw",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "CSSUnitValue"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "value",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "double"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            },
+            {
+              "type": "operation",
+              "name": "dvh",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "CSSUnitValue"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "value",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "double"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            },
+            {
+              "type": "operation",
+              "name": "dvi",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "CSSUnitValue"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "value",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "double"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            },
+            {
+              "type": "operation",
+              "name": "dvb",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "CSSUnitValue"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "value",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "double"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            },
+            {
+              "type": "operation",
+              "name": "dvmin",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "CSSUnitValue"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "value",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "double"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            },
+            {
+              "type": "operation",
+              "name": "dvmax",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "CSSUnitValue"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "value",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "double"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            },
+            {
+              "type": "operation",
+              "name": "cqw",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "CSSUnitValue"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "value",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "double"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            },
+            {
+              "type": "operation",
+              "name": "cqh",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "CSSUnitValue"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "value",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "double"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            },
+            {
+              "type": "operation",
+              "name": "cqi",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "CSSUnitValue"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "value",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "double"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            },
+            {
+              "type": "operation",
+              "name": "cqb",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "CSSUnitValue"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "value",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "double"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            },
+            {
+              "type": "operation",
+              "name": "cqmin",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "CSSUnitValue"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "value",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "double"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            },
+            {
+              "type": "operation",
+              "name": "cqmax",
               "idlType": {
                 "type": "return-type",
                 "extAttrs": [],
