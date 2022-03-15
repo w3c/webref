@@ -92,11 +92,6 @@ partial interface Window {
   [Replaceable, SameObject] readonly attribute External external;
 };
 
-// Source: Navigation API (https://wicg.github.io/app-history/)
-partial interface Window {
-  [Replaceable] readonly attribute Navigation navigation;
-};
-
 // Source: Attribution Reporting (https://wicg.github.io/conversion-measurement-api/)
 [SecureContext]
 partial interface Window {
@@ -121,6 +116,11 @@ partial interface Window {
 partial interface Window {
   attribute EventHandler onappinstalled;
   attribute EventHandler onbeforeinstallprompt;
+};
+
+// Source: Navigation API (https://wicg.github.io/navigation-api/)
+partial interface Window {
+  [Replaceable] readonly attribute Navigation navigation;
 };
 
 // Source: Portals (https://wicg.github.io/portals/)
