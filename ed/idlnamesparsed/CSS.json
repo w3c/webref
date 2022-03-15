@@ -71,7 +71,7 @@
         "title": "CSS Typed OM Level 1",
         "url": "https://www.w3.org/TR/css-typed-om-1/"
       },
-      "fragment": "partial namespace CSS {\n    CSSUnitValue number(double value);\n    CSSUnitValue percent(double value);\n\n    // <length>\n    CSSUnitValue em(double value);\n    CSSUnitValue ex(double value);\n    CSSUnitValue ch(double value);\n    CSSUnitValue ic(double value);\n    CSSUnitValue rem(double value);\n    CSSUnitValue lh(double value);\n    CSSUnitValue rlh(double value);\n    CSSUnitValue vw(double value);\n    CSSUnitValue vh(double value);\n    CSSUnitValue vi(double value);\n    CSSUnitValue vb(double value);\n    CSSUnitValue vmin(double value);\n    CSSUnitValue vmax(double value);\n    CSSUnitValue cm(double value);\n    CSSUnitValue mm(double value);\n    CSSUnitValue Q(double value);\n    CSSUnitValue in(double value);\n    CSSUnitValue pt(double value);\n    CSSUnitValue pc(double value);\n    CSSUnitValue px(double value);\n\n    // <angle>\n    CSSUnitValue deg(double value);\n    CSSUnitValue grad(double value);\n    CSSUnitValue rad(double value);\n    CSSUnitValue turn(double value);\n\n    // <time>\n    CSSUnitValue s(double value);\n    CSSUnitValue ms(double value);\n\n    // <frequency>\n    CSSUnitValue Hz(double value);\n    CSSUnitValue kHz(double value);\n\n    // <resolution>\n    CSSUnitValue dpi(double value);\n    CSSUnitValue dpcm(double value);\n    CSSUnitValue dppx(double value);\n\n    // <flex>\n    CSSUnitValue fr(double value);\n};"
+      "fragment": "partial namespace CSS {\n    CSSUnitValue number(double value);\n    CSSUnitValue percent(double value);\n\n    // <length>\n    CSSUnitValue em(double value);\n    CSSUnitValue ex(double value);\n    CSSUnitValue ch(double value);\n    CSSUnitValue ic(double value);\n    CSSUnitValue rem(double value);\n    CSSUnitValue lh(double value);\n    CSSUnitValue rlh(double value);\n    CSSUnitValue vw(double value);\n    CSSUnitValue vh(double value);\n    CSSUnitValue vi(double value);\n    CSSUnitValue vb(double value);\n    CSSUnitValue vmin(double value);\n    CSSUnitValue vmax(double value);\n    CSSUnitValue svw(double value);\n    CSSUnitValue svh(double value);\n    CSSUnitValue svi(double value);\n    CSSUnitValue svb(double value);\n    CSSUnitValue svmin(double value);\n    CSSUnitValue svmax(double value);\n    CSSUnitValue lvw(double value);\n    CSSUnitValue lvh(double value);\n    CSSUnitValue lvi(double value);\n    CSSUnitValue lvb(double value);\n    CSSUnitValue lvmin(double value);\n    CSSUnitValue lvmax(double value);\n    CSSUnitValue dvw(double value);\n    CSSUnitValue dvh(double value);\n    CSSUnitValue dvi(double value);\n    CSSUnitValue dvb(double value);\n    CSSUnitValue dvmin(double value);\n    CSSUnitValue dvmax(double value);\n    CSSUnitValue cqw(double value);\n    CSSUnitValue cqh(double value);\n    CSSUnitValue cqi(double value);\n    CSSUnitValue cqb(double value);\n    CSSUnitValue cqmin(double value);\n    CSSUnitValue cqmax(double value);\n    CSSUnitValue cm(double value);\n    CSSUnitValue mm(double value);\n    CSSUnitValue Q(double value);\n    CSSUnitValue in(double value);\n    CSSUnitValue pt(double value);\n    CSSUnitValue pc(double value);\n    CSSUnitValue px(double value);\n\n    // <angle>\n    CSSUnitValue deg(double value);\n    CSSUnitValue grad(double value);\n    CSSUnitValue rad(double value);\n    CSSUnitValue turn(double value);\n\n    // <time>\n    CSSUnitValue s(double value);\n    CSSUnitValue ms(double value);\n\n    // <frequency>\n    CSSUnitValue Hz(double value);\n    CSSUnitValue kHz(double value);\n\n    // <resolution>\n    CSSUnitValue dpi(double value);\n    CSSUnitValue dpcm(double value);\n    CSSUnitValue dppx(double value);\n\n    // <flex>\n    CSSUnitValue fr(double value);\n};"
     }
   ],
   "inheritance": null,
@@ -776,6 +776,510 @@
         "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-css-vmax",
         "linkingText": [
           "vmax(value)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSS"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "numeric-factory",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory",
+          "title": "Numeric Factory Functions",
+          "number": "4.3.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-css-svw",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-css-svw",
+        "linkingText": [
+          "svw(value)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSS"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "numeric-factory",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory",
+          "title": "Numeric Factory Functions",
+          "number": "4.3.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-css-svh",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-css-svh",
+        "linkingText": [
+          "svh(value)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSS"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "numeric-factory",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory",
+          "title": "Numeric Factory Functions",
+          "number": "4.3.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-css-svi",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-css-svi",
+        "linkingText": [
+          "svi(value)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSS"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "numeric-factory",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory",
+          "title": "Numeric Factory Functions",
+          "number": "4.3.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-css-svb",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-css-svb",
+        "linkingText": [
+          "svb(value)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSS"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "numeric-factory",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory",
+          "title": "Numeric Factory Functions",
+          "number": "4.3.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-css-svmin",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-css-svmin",
+        "linkingText": [
+          "svmin(value)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSS"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "numeric-factory",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory",
+          "title": "Numeric Factory Functions",
+          "number": "4.3.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-css-svmax",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-css-svmax",
+        "linkingText": [
+          "svmax(value)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSS"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "numeric-factory",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory",
+          "title": "Numeric Factory Functions",
+          "number": "4.3.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-css-lvw",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-css-lvw",
+        "linkingText": [
+          "lvw(value)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSS"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "numeric-factory",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory",
+          "title": "Numeric Factory Functions",
+          "number": "4.3.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-css-lvh",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-css-lvh",
+        "linkingText": [
+          "lvh(value)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSS"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "numeric-factory",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory",
+          "title": "Numeric Factory Functions",
+          "number": "4.3.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-css-lvi",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-css-lvi",
+        "linkingText": [
+          "lvi(value)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSS"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "numeric-factory",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory",
+          "title": "Numeric Factory Functions",
+          "number": "4.3.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-css-lvb",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-css-lvb",
+        "linkingText": [
+          "lvb(value)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSS"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "numeric-factory",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory",
+          "title": "Numeric Factory Functions",
+          "number": "4.3.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-css-lvmin",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-css-lvmin",
+        "linkingText": [
+          "lvmin(value)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSS"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "numeric-factory",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory",
+          "title": "Numeric Factory Functions",
+          "number": "4.3.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-css-lvmax",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-css-lvmax",
+        "linkingText": [
+          "lvmax(value)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSS"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "numeric-factory",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory",
+          "title": "Numeric Factory Functions",
+          "number": "4.3.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-css-dvw",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-css-dvw",
+        "linkingText": [
+          "dvw(value)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSS"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "numeric-factory",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory",
+          "title": "Numeric Factory Functions",
+          "number": "4.3.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-css-dvh",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-css-dvh",
+        "linkingText": [
+          "dvh(value)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSS"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "numeric-factory",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory",
+          "title": "Numeric Factory Functions",
+          "number": "4.3.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-css-dvi",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-css-dvi",
+        "linkingText": [
+          "dvi(value)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSS"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "numeric-factory",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory",
+          "title": "Numeric Factory Functions",
+          "number": "4.3.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-css-dvb",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-css-dvb",
+        "linkingText": [
+          "dvb(value)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSS"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "numeric-factory",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory",
+          "title": "Numeric Factory Functions",
+          "number": "4.3.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-css-dvmin",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-css-dvmin",
+        "linkingText": [
+          "dvmin(value)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSS"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "numeric-factory",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory",
+          "title": "Numeric Factory Functions",
+          "number": "4.3.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-css-dvmax",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-css-dvmax",
+        "linkingText": [
+          "dvmax(value)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSS"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "numeric-factory",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory",
+          "title": "Numeric Factory Functions",
+          "number": "4.3.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-css-cqw",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-css-cqw",
+        "linkingText": [
+          "cqw(value)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSS"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "numeric-factory",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory",
+          "title": "Numeric Factory Functions",
+          "number": "4.3.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-css-cqh",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-css-cqh",
+        "linkingText": [
+          "cqh(value)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSS"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "numeric-factory",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory",
+          "title": "Numeric Factory Functions",
+          "number": "4.3.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-css-cqi",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-css-cqi",
+        "linkingText": [
+          "cqi(value)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSS"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "numeric-factory",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory",
+          "title": "Numeric Factory Functions",
+          "number": "4.3.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-css-cqb",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-css-cqb",
+        "linkingText": [
+          "cqb(value)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSS"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "numeric-factory",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory",
+          "title": "Numeric Factory Functions",
+          "number": "4.3.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-css-cqmin",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-css-cqmin",
+        "linkingText": [
+          "cqmin(value)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "CSS"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "numeric-factory",
+          "href": "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory",
+          "title": "Numeric Factory Functions",
+          "number": "4.3.5"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-css-cqmax",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-css-cqmax",
+        "linkingText": [
+          "cqmax(value)"
         ],
         "localLinkingText": [],
         "type": "method",

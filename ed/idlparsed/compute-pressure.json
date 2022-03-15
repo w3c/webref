@@ -467,11 +467,27 @@
         "partial": false
       },
       "ComputePressureObserverOptions": {
-        "fragment": "dictionary ComputePressureObserverOptions {\n  // For future-proofing - expect things to be added here later.\n};",
+        "fragment": "dictionary ComputePressureObserverOptions {\n  double frequency;\n};",
         "type": "dictionary",
         "name": "ComputePressureObserverOptions",
         "inheritance": null,
-        "members": [],
+        "members": [
+          {
+            "type": "field",
+            "name": "frequency",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
         "extAttrs": [],
         "partial": false
       }
