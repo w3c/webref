@@ -6,7 +6,7 @@
       "title": "WebGPU",
       "url": "https://www.w3.org/TR/webgpu/"
     },
-    "fragment": "dictionary GPUDeviceDescriptor : GPUObjectDescriptorBase {\n    sequence<GPUFeatureName> requiredFeatures = [];\n    record<DOMString, GPUSize64> requiredLimits = {};\n};",
+    "fragment": "dictionary GPUDeviceDescriptor : GPUObjectDescriptorBase {\n    sequence<GPUFeatureName> requiredFeatures = [];\n    record<DOMString, GPUSize64> requiredLimits = {};\n    GPUQueueDescriptor defaultQueue = {};\n};",
     "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpudevicedescriptor"
   },
   "extended": [],
@@ -73,6 +73,27 @@
         "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevicedescriptor-requiredlimits",
         "linkingText": [
           "requiredLimits"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "GPUDeviceDescriptor"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "gpudevicedescriptor",
+          "href": "https://gpuweb.github.io/gpuweb/#gpudevicedescriptor",
+          "title": "GPUDeviceDescriptor",
+          "number": "4.3.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpudevicedescriptor-defaultqueue",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevicedescriptor-defaultqueue",
+        "linkingText": [
+          "defaultQueue"
         ],
         "localLinkingText": [],
         "type": "dict-member",
