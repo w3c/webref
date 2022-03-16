@@ -957,7 +957,7 @@
         "partial": false
       },
       "GPUDeviceDescriptor": {
-        "fragment": "dictionary GPUDeviceDescriptor : GPUObjectDescriptorBase {\n    sequence<GPUFeatureName> requiredFeatures = [];\n    record<DOMString, GPUSize64> requiredLimits = {};\n};",
+        "fragment": "dictionary GPUDeviceDescriptor : GPUObjectDescriptorBase {\n    sequence<GPUFeatureName> requiredFeatures = [];\n    record<DOMString, GPUSize64> requiredLimits = {};\n    GPUQueueDescriptor defaultQueue = {};\n};",
         "type": "dictionary",
         "name": "GPUDeviceDescriptor",
         "inheritance": "GPUObjectDescriptorBase",
@@ -1017,6 +1017,23 @@
                   "idlType": "GPUSize64"
                 }
               ]
+            },
+            "default": {
+              "type": "dictionary"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "defaultQueue",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUQueueDescriptor"
             },
             "default": {
               "type": "dictionary"
@@ -3322,7 +3339,7 @@
         "partial": false
       },
       "GPUSamplerDescriptor": {
-        "fragment": "dictionary GPUSamplerDescriptor : GPUObjectDescriptorBase {\n    GPUAddressMode addressModeU = \"clamp-to-edge\";\n    GPUAddressMode addressModeV = \"clamp-to-edge\";\n    GPUAddressMode addressModeW = \"clamp-to-edge\";\n    GPUFilterMode magFilter = \"nearest\";\n    GPUFilterMode minFilter = \"nearest\";\n    GPUFilterMode mipmapFilter = \"nearest\";\n    float lodMinClamp = 0;\n    float lodMaxClamp = 32;\n    GPUCompareFunction compare;\n    [Clamp] unsigned short maxAnisotropy = 1;\n};",
+        "fragment": "dictionary GPUSamplerDescriptor : GPUObjectDescriptorBase {\n    GPUAddressMode addressModeU = \"clamp-to-edge\";\n    GPUAddressMode addressModeV = \"clamp-to-edge\";\n    GPUAddressMode addressModeW = \"clamp-to-edge\";\n    GPUFilterMode magFilter = \"nearest\";\n    GPUFilterMode minFilter = \"nearest\";\n    GPUMipmapFilterMode mipmapFilter = \"nearest\";\n    float lodMinClamp = 0;\n    float lodMaxClamp = 32;\n    GPUCompareFunction compare;\n    [Clamp] unsigned short maxAnisotropy = 1;\n};",
         "type": "dictionary",
         "name": "GPUSamplerDescriptor",
         "inheritance": "GPUObjectDescriptorBase",
@@ -3427,7 +3444,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "GPUFilterMode"
+              "idlType": "GPUMipmapFilterMode"
             },
             "default": {
               "type": "string",
@@ -3539,6 +3556,22 @@
         "fragment": "enum GPUFilterMode {\n    \"nearest\",\n    \"linear\",\n};",
         "type": "enum",
         "name": "GPUFilterMode",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "nearest"
+          },
+          {
+            "type": "enum-value",
+            "value": "linear"
+          }
+        ],
+        "extAttrs": []
+      },
+      "GPUMipmapFilterMode": {
+        "fragment": "enum GPUMipmapFilterMode {\n    \"nearest\",\n    \"linear\",\n};",
+        "type": "enum",
+        "name": "GPUMipmapFilterMode",
         "values": [
           {
             "type": "enum-value",
@@ -9572,6 +9605,15 @@
         "extAttrs": [],
         "partial": false
       },
+      "GPUQueueDescriptor": {
+        "fragment": "dictionary GPUQueueDescriptor : GPUObjectDescriptorBase {\n};",
+        "type": "dictionary",
+        "name": "GPUQueueDescriptor",
+        "inheritance": "GPUObjectDescriptorBase",
+        "members": [],
+        "extAttrs": [],
+        "partial": false
+      },
       "GPUQueue": {
         "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUQueue {\n    undefined submit(sequence<GPUCommandBuffer> commandBuffers);\n\n    Promise<undefined> onSubmittedWorkDone();\n\n    undefined writeBuffer(\n        GPUBuffer buffer,\n        GPUSize64 bufferOffset,\n        [AllowShared] BufferSource data,\n        optional GPUSize64 dataOffset = 0,\n        optional GPUSize64 size);\n\n    undefined writeTexture(\n        GPUImageCopyTexture destination,\n        [AllowShared] BufferSource data,\n        GPUImageDataLayout dataLayout,\n        GPUExtent3D size);\n\n    undefined copyExternalImageToTexture(\n        GPUImageCopyExternalImage source,\n        GPUImageCopyTextureTagged destination,\n        GPUExtent3D copySize);\n};",
         "type": "interface",
@@ -11861,7 +11903,8 @@
       "GPUDeviceDescriptor": [
         "GPUObjectDescriptorBase",
         "GPUFeatureName",
-        "GPUSize64"
+        "GPUSize64",
+        "GPUQueueDescriptor"
       ],
       "GPUDevice": [
         "EventTarget",
@@ -11953,6 +11996,7 @@
         "GPUObjectDescriptorBase",
         "GPUAddressMode",
         "GPUFilterMode",
+        "GPUMipmapFilterMode",
         "GPUCompareFunction"
       ],
       "GPUBindGroupLayout": [
@@ -12259,6 +12303,9 @@
       ],
       "GPURenderBundleEncoderDescriptor": [
         "GPURenderPassLayout"
+      ],
+      "GPUQueueDescriptor": [
+        "GPUObjectDescriptorBase"
       ],
       "GPUQueue": [
         "GPUCommandBuffer",
