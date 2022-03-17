@@ -1,9 +1,9 @@
 // Source: Compute Pressure API (https://wicg.github.io/compute-pressure/)
 [Exposed=(DedicatedWorker,SharedWorker,Window), SecureContext]
 interface ComputePressureObserver {
-  constructor(ComputePressureUpdateCallback callback);
+  constructor(ComputePressureUpdateCallback callback, optional ComputePressureObserverOptions options = {});
 
-  undefined observe(ComputePressureSource source, optional ComputePressureObserverOptions options = {});
+  undefined observe(ComputePressureSource source);
   undefined unobserve(ComputePressureSource source);
   undefined disconnect();
   sequence<ComputePressureRecord> takeRecords();
