@@ -6,7 +6,7 @@
       "title": "Compute Pressure API",
       "url": "https://wicg.github.io/compute-pressure/"
     },
-    "fragment": "[Exposed=(DedicatedWorker,SharedWorker,Window), SecureContext]\ninterface ComputePressureObserver {\n  constructor(ComputePressureUpdateCallback callback);\n\n  undefined observe(ComputePressureSource source, optional ComputePressureObserverOptions options = {});\n  undefined unobserve(ComputePressureSource source);\n  undefined disconnect();\n  sequence<ComputePressureRecord> takeRecords();\n\n  [SameObject] static readonly attribute FrozenArray<DOMString> supportedSources;\n\n  [Exposed=Window] static Promise<PermissionState> requestPermission();\n};",
+    "fragment": "[Exposed=(DedicatedWorker,SharedWorker,Window), SecureContext]\ninterface ComputePressureObserver {\n  constructor(ComputePressureUpdateCallback callback, optional ComputePressureObserverOptions options = {});\n\n  undefined observe(ComputePressureSource source);\n  undefined unobserve(ComputePressureSource source);\n  undefined disconnect();\n  sequence<ComputePressureRecord> takeRecords();\n\n  [SameObject] static readonly attribute FrozenArray<DOMString> supportedSources;\n\n  [Exposed=Window] static Promise<PermissionState> requestPermission();\n};",
     "href": "https://wicg.github.io/compute-pressure/#dom-computepressureobserver"
   },
   "extended": [],
@@ -38,7 +38,8 @@
         "href": "https://wicg.github.io/compute-pressure/#dom-computepressureobserver-constructor",
         "linkingText": [
           "constructor()",
-          "constructor(callback)"
+          "constructor(callback)",
+          "constructor(callback, options)"
         ],
         "localLinkingText": [
           "ComputePressureObserver.constructor",
@@ -64,8 +65,7 @@
         "href": "https://wicg.github.io/compute-pressure/#dom-computepressureobserver-observe",
         "linkingText": [
           "observe()",
-          "observe(source)",
-          "observe(source, options)"
+          "observe(source)"
         ],
         "localLinkingText": [
           "ComputePressureObserver.observe",
