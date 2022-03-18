@@ -129,7 +129,7 @@
         "extAttrs": []
       },
       "ComputePressureObserver": {
-        "fragment": "[Exposed=(DedicatedWorker,SharedWorker,Window), SecureContext]\ninterface ComputePressureObserver {\n  constructor(ComputePressureUpdateCallback callback, optional ComputePressureObserverOptions options = {});\n\n  undefined observe(ComputePressureSource source);\n  undefined unobserve(ComputePressureSource source);\n  undefined disconnect();\n  sequence<ComputePressureRecord> takeRecords();\n\n  [SameObject] static readonly attribute FrozenArray<DOMString> supportedSources;\n\n  [Exposed=Window] static Promise<PermissionState> requestPermission();\n};",
+        "fragment": "[Exposed=(DedicatedWorker,SharedWorker,Window), SecureContext]\ninterface ComputePressureObserver {\n  constructor(ComputePressureUpdateCallback callback, optional ComputePressureObserverOptions options = {});\n\n  undefined observe(ComputePressureSource source);\n  undefined unobserve(ComputePressureSource source);\n  undefined disconnect();\n  sequence<ComputePressureRecord> takeRecords();\n\n  [SameObject] static readonly attribute FrozenArray<ComputePressureSource> supportedSources;\n\n  [Exposed=Window] static Promise<PermissionState> requestPermission();\n};",
         "type": "interface",
         "name": "ComputePressureObserver",
         "inheritance": null,
@@ -293,7 +293,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "DOMString"
+                  "idlType": "ComputePressureSource"
                 }
               ]
             },
