@@ -1,5 +1,5 @@
 // Source: Digital Goods API (https://wicg.github.io/digital-goods/)
-[SecureContext] interface DigitalGoodsService {
+[Exposed=Window, SecureContext] interface DigitalGoodsService {
 
   Promise<sequence<ItemDetails>> getDetails(sequence<DOMString> itemIds);
 

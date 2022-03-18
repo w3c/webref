@@ -6,7 +6,7 @@
       "title": "Digital Goods API",
       "url": "https://wicg.github.io/digital-goods/"
     },
-    "fragment": "[SecureContext] interface DigitalGoodsService {\n\n  Promise<sequence<ItemDetails>> getDetails(sequence<DOMString> itemIds);\n\n  Promise<sequence<PurchaseDetails>> listPurchases();\n\n  Promise<sequence<PurchaseDetails>> listPurchaseHistory();\n\n  Promise<undefined> consume(DOMString purchaseToken);\n};",
+    "fragment": "[Exposed=Window, SecureContext] interface DigitalGoodsService {\n\n  Promise<sequence<ItemDetails>> getDetails(sequence<DOMString> itemIds);\n\n  Promise<sequence<PurchaseDetails>> listPurchases();\n\n  Promise<sequence<PurchaseDetails>> listPurchaseHistory();\n\n  Promise<undefined> consume(DOMString purchaseToken);\n};",
     "href": "https://wicg.github.io/digital-goods/#digitalgoodsservice"
   },
   "extended": [],

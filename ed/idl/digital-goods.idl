@@ -8,7 +8,7 @@ partial interface Window {
       DOMString serviceProvider);
 };
 
-[SecureContext] interface DigitalGoodsService {
+[Exposed=Window, SecureContext] interface DigitalGoodsService {
 
   Promise<sequence<ItemDetails>> getDetails(sequence<DOMString> itemIds);
 

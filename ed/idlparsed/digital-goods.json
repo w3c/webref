@@ -6,11 +6,15 @@
   "idlparsed": {
     "jsNames": {
       "constructors": {},
-      "functions": {}
+      "functions": {
+        "Window": [
+          "DigitalGoodsService"
+        ]
+      }
     },
     "idlNames": {
       "DigitalGoodsService": {
-        "fragment": "[SecureContext] interface DigitalGoodsService {\n\n  Promise<sequence<ItemDetails>> getDetails(sequence<DOMString> itemIds);\n\n  Promise<sequence<PurchaseDetails>> listPurchases();\n\n  Promise<sequence<PurchaseDetails>> listPurchaseHistory();\n\n  Promise<undefined> consume(DOMString purchaseToken);\n};",
+        "fragment": "[Exposed=Window, SecureContext] interface DigitalGoodsService {\n\n  Promise<sequence<ItemDetails>> getDetails(sequence<DOMString> itemIds);\n\n  Promise<sequence<PurchaseDetails>> listPurchases();\n\n  Promise<sequence<PurchaseDetails>> listPurchaseHistory();\n\n  Promise<undefined> consume(DOMString purchaseToken);\n};",
         "type": "interface",
         "name": "DigitalGoodsService",
         "inheritance": null,
@@ -183,6 +187,15 @@
           }
         ],
         "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          },
           {
             "type": "extended-attribute",
             "name": "SecureContext",
@@ -503,7 +516,11 @@
       ]
     },
     "globals": {},
-    "exposed": {},
+    "exposed": {
+      "Window": [
+        "DigitalGoodsService"
+      ]
+    },
     "dependencies": {
       "Window": [
         "DigitalGoodsService"
