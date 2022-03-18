@@ -1,0 +1,122 @@
+{
+  "name": "DigitalGoodsService",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Digital Goods API",
+      "url": "https://wicg.github.io/digital-goods/"
+    },
+    "fragment": "[Exposed=Window, SecureContext] interface DigitalGoodsService {\n\n  Promise<sequence<ItemDetails>> getDetails(sequence<DOMString> itemIds);\n\n  Promise<sequence<PurchaseDetails>> listPurchases();\n\n  Promise<sequence<PurchaseDetails>> listPurchaseHistory();\n\n  Promise<undefined> consume(DOMString purchaseToken);\n};",
+    "href": "https://wicg.github.io/digital-goods/#digitalgoodsservice"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://wicg.github.io/digital-goods/": [
+      {
+        "id": "digitalgoodsservice",
+        "href": "https://wicg.github.io/digital-goods/#digitalgoodsservice",
+        "linkingText": [
+          "DigitalGoodsService"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "digitalgoodsservice-interface",
+          "href": "https://wicg.github.io/digital-goods/#digitalgoodsservice-interface",
+          "title": "DigitalGoodsService interface",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-digitalgoodsservice-getdetails",
+        "href": "https://wicg.github.io/digital-goods/#dom-digitalgoodsservice-getdetails",
+        "linkingText": [
+          "getDetails(itemIds)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "DigitalGoodsService"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "getDetails-method",
+          "href": "https://wicg.github.io/digital-goods/#getDetails-method",
+          "title": "getDetails() method",
+          "number": "2.2.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-digitalgoodsservice-listpurchases",
+        "href": "https://wicg.github.io/digital-goods/#dom-digitalgoodsservice-listpurchases",
+        "linkingText": [
+          "listPurchases()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "DigitalGoodsService"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "listPurchases-method",
+          "href": "https://wicg.github.io/digital-goods/#listPurchases-method",
+          "title": "listPurchases() method",
+          "number": "2.2.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-digitalgoodsservice-listpurchasehistory",
+        "href": "https://wicg.github.io/digital-goods/#dom-digitalgoodsservice-listpurchasehistory",
+        "linkingText": [
+          "listPurchaseHistory()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "DigitalGoodsService"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "listPurchaseHistory-method",
+          "href": "https://wicg.github.io/digital-goods/#listPurchaseHistory-method",
+          "title": "listPurchaseHistory() method",
+          "number": "2.2.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-digitalgoodsservice-consume",
+        "href": "https://wicg.github.io/digital-goods/#dom-digitalgoodsservice-consume",
+        "linkingText": [
+          "consume(purchaseToken)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "DigitalGoodsService"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "consume-method",
+          "href": "https://wicg.github.io/digital-goods/#consume-method",
+          "title": "consume() method",
+          "number": "2.2.4"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

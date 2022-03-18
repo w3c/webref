@@ -373,7 +373,7 @@
         "partial": false
       },
       "ComputePressureRecord": {
-        "fragment": "dictionary ComputePressureRecord {\n  ComputePressureSource source;\n  ComputePressureState state;\n  sequence<ComputePressureFactor> factors;\n  DOMHighResTimeStamp timestamp;\n};",
+        "fragment": "dictionary ComputePressureRecord {\n  ComputePressureSource source;\n  ComputePressureState state;\n  sequence<ComputePressureFactor> factors;\n  DOMHighResTimeStamp time;\n};",
         "type": "dictionary",
         "name": "ComputePressureRecord",
         "inheritance": null,
@@ -434,7 +434,7 @@
           },
           {
             "type": "field",
-            "name": "timestamp",
+            "name": "time",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",

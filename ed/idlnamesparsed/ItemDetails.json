@@ -1,0 +1,269 @@
+{
+  "name": "ItemDetails",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Digital Goods API",
+      "url": "https://wicg.github.io/digital-goods/"
+    },
+    "fragment": "dictionary ItemDetails {\n  required DOMString itemId;\n  required DOMString title;\n  required PaymentCurrencyAmount price;\n  ItemType type;\n  DOMString description;\n  sequence<DOMString> iconURLs;\n  DOMString subscriptionPeriod;\n  DOMString freeTrialPeriod;\n  PaymentCurrencyAmount introductoryPrice;\n  DOMString introductoryPricePeriod;\n  [EnforceRange] unsigned long long introductoryPriceCycles;\n};",
+    "href": "https://wicg.github.io/digital-goods/#dictdef-itemdetails"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://wicg.github.io/digital-goods/": [
+      {
+        "id": "dictdef-itemdetails",
+        "href": "https://wicg.github.io/digital-goods/#dictdef-itemdetails",
+        "linkingText": [
+          "ItemDetails"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "digitalgoodsservice-interface",
+          "href": "https://wicg.github.io/digital-goods/#digitalgoodsservice-interface",
+          "title": "DigitalGoodsService interface",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-itemdetails-itemid",
+        "href": "https://wicg.github.io/digital-goods/#dom-itemdetails-itemid",
+        "linkingText": [
+          "itemId"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "ItemDetails"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "digitalgoodsservice-interface",
+          "href": "https://wicg.github.io/digital-goods/#digitalgoodsservice-interface",
+          "title": "DigitalGoodsService interface",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-itemdetails-title",
+        "href": "https://wicg.github.io/digital-goods/#dom-itemdetails-title",
+        "linkingText": [
+          "title"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "ItemDetails"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "digitalgoodsservice-interface",
+          "href": "https://wicg.github.io/digital-goods/#digitalgoodsservice-interface",
+          "title": "DigitalGoodsService interface",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-itemdetails-price",
+        "href": "https://wicg.github.io/digital-goods/#dom-itemdetails-price",
+        "linkingText": [
+          "price"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "ItemDetails"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "digitalgoodsservice-interface",
+          "href": "https://wicg.github.io/digital-goods/#digitalgoodsservice-interface",
+          "title": "DigitalGoodsService interface",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-itemdetails-type",
+        "href": "https://wicg.github.io/digital-goods/#dom-itemdetails-type",
+        "linkingText": [
+          "type"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "ItemDetails"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "digitalgoodsservice-interface",
+          "href": "https://wicg.github.io/digital-goods/#digitalgoodsservice-interface",
+          "title": "DigitalGoodsService interface",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-itemdetails-description",
+        "href": "https://wicg.github.io/digital-goods/#dom-itemdetails-description",
+        "linkingText": [
+          "description"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "ItemDetails"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "digitalgoodsservice-interface",
+          "href": "https://wicg.github.io/digital-goods/#digitalgoodsservice-interface",
+          "title": "DigitalGoodsService interface",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-itemdetails-iconurls",
+        "href": "https://wicg.github.io/digital-goods/#dom-itemdetails-iconurls",
+        "linkingText": [
+          "iconURLs"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "ItemDetails"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "digitalgoodsservice-interface",
+          "href": "https://wicg.github.io/digital-goods/#digitalgoodsservice-interface",
+          "title": "DigitalGoodsService interface",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-itemdetails-subscriptionperiod",
+        "href": "https://wicg.github.io/digital-goods/#dom-itemdetails-subscriptionperiod",
+        "linkingText": [
+          "subscriptionPeriod"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "ItemDetails"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "digitalgoodsservice-interface",
+          "href": "https://wicg.github.io/digital-goods/#digitalgoodsservice-interface",
+          "title": "DigitalGoodsService interface",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-itemdetails-freetrialperiod",
+        "href": "https://wicg.github.io/digital-goods/#dom-itemdetails-freetrialperiod",
+        "linkingText": [
+          "freeTrialPeriod"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "ItemDetails"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "digitalgoodsservice-interface",
+          "href": "https://wicg.github.io/digital-goods/#digitalgoodsservice-interface",
+          "title": "DigitalGoodsService interface",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-itemdetails-introductoryprice",
+        "href": "https://wicg.github.io/digital-goods/#dom-itemdetails-introductoryprice",
+        "linkingText": [
+          "introductoryPrice"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "ItemDetails"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "digitalgoodsservice-interface",
+          "href": "https://wicg.github.io/digital-goods/#digitalgoodsservice-interface",
+          "title": "DigitalGoodsService interface",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-itemdetails-introductorypriceperiod",
+        "href": "https://wicg.github.io/digital-goods/#dom-itemdetails-introductorypriceperiod",
+        "linkingText": [
+          "introductoryPricePeriod"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "ItemDetails"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "digitalgoodsservice-interface",
+          "href": "https://wicg.github.io/digital-goods/#digitalgoodsservice-interface",
+          "title": "DigitalGoodsService interface",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-itemdetails-introductorypricecycles",
+        "href": "https://wicg.github.io/digital-goods/#dom-itemdetails-introductorypricecycles",
+        "linkingText": [
+          "introductoryPriceCycles"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "ItemDetails"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "digitalgoodsservice-interface",
+          "href": "https://wicg.github.io/digital-goods/#digitalgoodsservice-interface",
+          "title": "DigitalGoodsService interface",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

@@ -89,6 +89,13 @@
     },
     {
       "spec": {
+        "title": "Digital Goods API",
+        "url": "https://wicg.github.io/digital-goods/"
+      },
+      "fragment": "partial interface Window {\n  [SecureContext] Promise<DigitalGoodsService> getDigitalGoodsService(\n      DOMString serviceProvider);\n};"
+    },
+    {
+      "spec": {
         "title": "File System Access",
         "url": "https://wicg.github.io/file-system-access/"
       },
@@ -3892,6 +3899,29 @@
           "href": "https://wicg.github.io/cookie-store/#Window",
           "title": "The Window interface",
           "number": "6.1"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://wicg.github.io/digital-goods/": [
+      {
+        "id": "dom-window-getdigitalgoodsservice",
+        "href": "https://wicg.github.io/digital-goods/#dom-window-getdigitalgoodsservice",
+        "linkingText": [
+          "getDigitalGoodsService(serviceProvider)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Window"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "getdigitalgoodsservice-method",
+          "href": "https://wicg.github.io/digital-goods/#getdigitalgoodsservice-method",
+          "title": "getDigitalGoodsService() method",
+          "number": "2.1.1"
         },
         "definedIn": "prose"
       }
