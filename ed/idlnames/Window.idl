@@ -104,6 +104,12 @@ partial interface Window {
   [SameObject] readonly attribute CookieStore cookieStore;
 };
 
+// Source: Digital Goods API (https://wicg.github.io/digital-goods/)
+partial interface Window {
+  [SecureContext] Promise<DigitalGoodsService> getDigitalGoodsService(
+      DOMString serviceProvider);
+};
+
 // Source: File System Access (https://wicg.github.io/file-system-access/)
 [SecureContext]
 partial interface Window {
