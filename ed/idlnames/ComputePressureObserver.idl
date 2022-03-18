@@ -8,7 +8,7 @@ interface ComputePressureObserver {
   undefined disconnect();
   sequence<ComputePressureRecord> takeRecords();
 
-  [SameObject] static readonly attribute FrozenArray<DOMString> supportedSources;
+  [SameObject] static readonly attribute FrozenArray<ComputePressureSource> supportedSources;
 
   [Exposed=Window] static Promise<PermissionState> requestPermission();
 };
