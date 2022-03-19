@@ -129,20 +129,6 @@
       },
       {
         "spec": {
-          "title": "CSSOM View Module",
-          "url": "https://www.w3.org/TR/cssom-view-1/"
-        },
-        "fragment": "partial interface Document {\n  Element? elementFromPoint(double x, double y);\n  sequence<Element> elementsFromPoint(double x, double y);\n  CaretPosition? caretPositionFromPoint(double x, double y);\n  readonly attribute Element? scrollingElement;\n};"
-      },
-      {
-        "spec": {
-          "title": "CSSOM View Module",
-          "url": "https://www.w3.org/TR/cssom-view-1/"
-        },
-        "fragment": "Document includes GeometryUtils;"
-      },
-      {
-        "spec": {
           "title": "Permissions Policy",
           "url": "https://www.w3.org/TR/permissions-policy-1/"
         },
@@ -400,21 +386,6 @@
           },
           "fragment": "interface mixin FontFaceSource {\n  readonly attribute FontFaceSet fonts;\n};",
           "href": "https://drafts.csswg.org/css-font-loading/#fontfacesource"
-        },
-        "extended": [],
-        "inheritance": null,
-        "includes": []
-      },
-      {
-        "name": "GeometryUtils",
-        "type": "interface mixin",
-        "defined": {
-          "spec": {
-            "title": "CSSOM View Module",
-            "url": "https://www.w3.org/TR/cssom-view-1/"
-          },
-          "fragment": "interface mixin GeometryUtils {\n  sequence<DOMQuad> getBoxQuads(optional BoxQuadOptions options = {});\n  DOMQuad convertQuadFromNode(DOMQuadInit quad, GeometryNode from, optional ConvertCoordinateOptions options = {});\n  DOMQuad convertRectFromNode(DOMRectReadOnly rect, GeometryNode from, optional ConvertCoordinateOptions options = {});\n  DOMPoint convertPointFromNode(DOMPointInit point, GeometryNode from, optional ConvertCoordinateOptions options = {}); // XXX z,w turns into 0\n};",
-          "href": "https://drafts.csswg.org/cssom-view/#geometryutils"
         },
         "extended": [],
         "inheritance": null,
