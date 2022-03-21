@@ -99,7 +99,7 @@
         "title": "CSSOM View Module",
         "url": "https://www.w3.org/TR/cssom-view-1/"
       },
-      "fragment": "partial interface Element {\n  DOMRectList getClientRects();\n  [NewObject] DOMRect getBoundingClientRect();\n  undefined scrollIntoView(optional (boolean or ScrollIntoViewOptions) arg = {});\n  undefined scroll(optional ScrollToOptions options = {});\n  undefined scroll(unrestricted double x, unrestricted double y);\n  undefined scrollTo(optional ScrollToOptions options = {});\n  undefined scrollTo(unrestricted double x, unrestricted double y);\n  undefined scrollBy(optional ScrollToOptions options = {});\n  undefined scrollBy(unrestricted double x, unrestricted double y);\n  attribute unrestricted double scrollTop;\n  attribute unrestricted double scrollLeft;\n  readonly attribute long scrollWidth;\n  readonly attribute long scrollHeight;\n  readonly attribute long clientTop;\n  readonly attribute long clientLeft;\n  readonly attribute long clientWidth;\n  readonly attribute long clientHeight;\n};"
+      "fragment": "partial interface Element {\n  DOMRectList getClientRects();\n  [NewObject] DOMRect getBoundingClientRect();\n\n  boolean isVisible(optional IsVisibleOptions options = {});\n\n  undefined scrollIntoView(optional (boolean or ScrollIntoViewOptions) arg = {});\n  undefined scroll(optional ScrollToOptions options = {});\n  undefined scroll(unrestricted double x, unrestricted double y);\n  undefined scrollTo(optional ScrollToOptions options = {});\n  undefined scrollTo(unrestricted double x, unrestricted double y);\n  undefined scrollBy(optional ScrollToOptions options = {});\n  undefined scrollBy(unrestricted double x, unrestricted double y);\n  attribute unrestricted double scrollTop;\n  attribute unrestricted double scrollLeft;\n  readonly attribute long scrollWidth;\n  readonly attribute long scrollHeight;\n  readonly attribute long clientTop;\n  readonly attribute long clientLeft;\n  readonly attribute long clientWidth;\n  readonly attribute long clientHeight;\n};"
     },
     {
       "spec": {
@@ -2955,6 +2955,28 @@
         "href": "https://drafts.csswg.org/cssom-view/#dom-element-getboundingclientrect",
         "linkingText": [
           "getBoundingClientRect()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Element"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "extension-to-the-element-interface",
+          "href": "https://drafts.csswg.org/cssom-view/#extension-to-the-element-interface",
+          "title": "Extensions to the Element Interface",
+          "number": "6"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-element-isvisible",
+        "href": "https://drafts.csswg.org/cssom-view/#dom-element-isvisible",
+        "linkingText": [
+          "isVisible(options)",
+          "isVisible()"
         ],
         "localLinkingText": [],
         "type": "method",
