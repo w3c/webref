@@ -4,11 +4,26 @@
     "url": "https://www.w3.org/TR/css-text-4/"
   },
   "properties": {
+    "text-transform": {
+      "name": "text-transform",
+      "value": "none | [capitalize | uppercase | lowercase ] || full-width || full-size-kana",
+      "initial": "none",
+      "appliesTo": "text",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "specified keyword",
+      "canonicalOrder": "n/a",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "text-transform",
+        "textTransform"
+      ]
+    },
     "word-boundary-detection": {
       "name": "word-boundary-detection",
       "value": "normal | manual | auto(<lang>)",
       "initial": "normal",
-      "appliesTo": "inline boxes",
+      "appliesTo": "text",
       "inherited": "yes",
       "percentages": "N/A",
       "computedValue": "as specified (However, see special provision for unsupported <lang>)",
@@ -23,7 +38,7 @@
       "name": "word-boundary-expansion",
       "value": "none | space | ideographic-space",
       "initial": "none",
-      "appliesTo": "inline boxes",
+      "appliesTo": "text",
       "inherited": "yes",
       "percentages": "N/A",
       "computedValue": "as specified",
@@ -34,11 +49,26 @@
         "wordBoundaryExpansion"
       ]
     },
+    "white-space": {
+      "name": "white-space",
+      "value": "normal | pre | nowrap | pre-wrap | break-spaces | pre-line",
+      "initial": "normal",
+      "appliesTo": "text",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "specified keyword",
+      "canonicalOrder": "n/a",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "white-space",
+        "whiteSpace"
+      ]
+    },
     "text-space-collapse": {
       "name": "text-space-collapse",
       "value": "collapse | discard | preserve | preserve-breaks | preserve-spaces",
       "initial": "collapse",
-      "appliesTo": "all elements",
+      "appliesTo": "text",
       "inherited": "yes",
       "percentages": "n/a",
       "computedValue": "specified keyword",
@@ -53,7 +83,7 @@
       "name": "text-space-trim",
       "value": "none | trim-inner || discard-before || discard-after",
       "initial": "none",
-      "appliesTo": "all elements",
+      "appliesTo": "inline boxes and block containers",
       "inherited": "no",
       "percentages": "n/a",
       "computedValue": "specified keyword(s)",
@@ -64,11 +94,175 @@
         "textSpaceTrim"
       ]
     },
+    "tab-size": {
+      "name": "tab-size",
+      "value": "<number> | <length>",
+      "initial": "8",
+      "appliesTo": "text",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "the specified number or absolute length",
+      "canonicalOrder": "n/a",
+      "animationType": "by computed value type",
+      "styleDeclaration": [
+        "tab-size",
+        "tabSize"
+      ]
+    },
+    "word-break": {
+      "name": "word-break",
+      "value": "normal | keep-all | break-all | break-word",
+      "initial": "normal",
+      "appliesTo": "text",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "specified keyword",
+      "canonicalOrder": "n/a",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "word-break",
+        "wordBreak"
+      ]
+    },
+    "line-break": {
+      "name": "line-break",
+      "value": "auto | loose | normal | strict | anywhere",
+      "initial": "auto",
+      "appliesTo": "text",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "specified keyword",
+      "canonicalOrder": "n/a",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "line-break",
+        "lineBreak"
+      ]
+    },
+    "hyphens": {
+      "name": "hyphens",
+      "value": "none | manual | auto",
+      "initial": "manual",
+      "appliesTo": "text",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "specified keyword",
+      "canonicalOrder": "n/a",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "hyphens"
+      ]
+    },
+    "hyphenate-character": {
+      "name": "hyphenate-character",
+      "value": "auto | <string>",
+      "initial": "auto",
+      "appliesTo": "text",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "specified keyword",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "hyphenate-character",
+        "hyphenateCharacter"
+      ]
+    },
+    "hyphenate-limit-zone": {
+      "name": "hyphenate-limit-zone",
+      "value": "<length-percentage>",
+      "initial": "0",
+      "appliesTo": "block containers",
+      "inherited": "yes",
+      "percentages": "refers to length of the line box",
+      "computedValue": "computed <length-percentage> value",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
+      "styleDeclaration": [
+        "hyphenate-limit-zone",
+        "hyphenateLimitZone"
+      ]
+    },
+    "hyphenate-limit-chars": {
+      "name": "hyphenate-limit-chars",
+      "value": "[ auto | <integer> ]{1,3}",
+      "initial": "auto",
+      "appliesTo": "text",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "three values, each either the auto keyword or an integer",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
+      "styleDeclaration": [
+        "hyphenate-limit-chars",
+        "hyphenateLimitChars"
+      ]
+    },
+    "hyphenate-limit-lines": {
+      "name": "hyphenate-limit-lines",
+      "value": "no-limit | <integer>",
+      "initial": "no-limit",
+      "appliesTo": "block containers",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "specified keyword or integer",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
+      "styleDeclaration": [
+        "hyphenate-limit-lines",
+        "hyphenateLimitLines"
+      ]
+    },
+    "hyphenate-limit-last": {
+      "name": "hyphenate-limit-last",
+      "value": "none | always | column | page | spread",
+      "initial": "none",
+      "appliesTo": "block containers",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "specified keyword",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "hyphenate-limit-last",
+        "hyphenateLimitLast"
+      ]
+    },
+    "overflow-wrap": {
+      "name": "overflow-wrap",
+      "value": "normal | break-word | anywhere",
+      "initial": "normal",
+      "appliesTo": "text",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "specified keyword",
+      "canonicalOrder": "n/a",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "overflow-wrap",
+        "overflowWrap"
+      ]
+    },
+    "word-wrap": {
+      "name": "word-wrap",
+      "value": "normal | break-word | anywhere",
+      "initial": "normal",
+      "appliesTo": "text",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "specified keyword",
+      "canonicalOrder": "n/a",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "word-wrap",
+        "wordWrap"
+      ]
+    },
     "text-wrap": {
       "name": "text-wrap",
       "value": "wrap | nowrap | balance | stable | pretty",
       "initial": "wrap",
-      "appliesTo": "inline boxes and block containers",
+      "appliesTo": "text and block containers",
       "inherited": "yes",
       "percentages": "n/a",
       "computedValue": "specified keyword",
@@ -124,94 +318,64 @@
         "wrapInside"
       ]
     },
-    "white-space": {
-      "name": "white-space",
-      "value": "normal | pre | nowrap | pre-wrap | pre-line",
-      "initial": "auto",
-      "appliesTo": "all elements",
+    "text-align": {
+      "name": "text-align",
+      "value": "start | end | left | right | center | <string> | justify | match-parent | justify-all",
+      "initial": "start",
+      "appliesTo": "block containers",
       "inherited": "yes",
-      "percentages": "n/a",
+      "percentages": "see individual properties",
       "computedValue": "see individual properties",
       "animationType": "discrete",
-      "canonicalOrder": "per grammar",
+      "canonicalOrder": "n/a",
       "styleDeclaration": [
-        "white-space",
-        "whiteSpace"
+        "text-align",
+        "textAlign"
       ]
     },
-    "hyphenate-character": {
-      "name": "hyphenate-character",
-      "value": "auto | <string>",
-      "initial": "auto",
-      "appliesTo": "all elements",
+    "text-align-all": {
+      "name": "text-align-all",
+      "value": "start | end | left | right | center | justify | match-parent",
+      "initial": "start",
+      "appliesTo": "block containers",
       "inherited": "yes",
       "percentages": "n/a",
-      "computedValue": "specified keyword",
-      "canonicalOrder": "per grammar",
+      "computedValue": "keyword as specified, except for match-parent which computes as defined above",
+      "canonicalOrder": "n/a",
       "animationType": "discrete",
       "styleDeclaration": [
-        "hyphenate-character",
-        "hyphenateCharacter"
+        "text-align-all",
+        "textAlignAll"
       ]
     },
-    "hyphenate-limit-zone": {
-      "name": "hyphenate-limit-zone",
-      "value": "<length-percentage>",
-      "initial": "0",
-      "appliesTo": "block containers",
-      "inherited": "yes",
-      "percentages": "refers to length of the line box",
-      "computedValue": "computed <length-percentage> value",
-      "canonicalOrder": "per grammar",
-      "animationType": "by computed value type",
-      "styleDeclaration": [
-        "hyphenate-limit-zone",
-        "hyphenateLimitZone"
-      ]
-    },
-    "hyphenate-limit-chars": {
-      "name": "hyphenate-limit-chars",
-      "value": "[ auto | <integer> ]{1,3}",
+    "text-align-last": {
+      "name": "text-align-last",
+      "value": "auto | start | end | left | right | center | justify | match-parent",
       "initial": "auto",
-      "appliesTo": "all elements",
-      "inherited": "yes",
-      "percentages": "n/a",
-      "computedValue": "three values, each either the auto keyword or an integer",
-      "canonicalOrder": "per grammar",
-      "animationType": "by computed value type",
-      "styleDeclaration": [
-        "hyphenate-limit-chars",
-        "hyphenateLimitChars"
-      ]
-    },
-    "hyphenate-limit-lines": {
-      "name": "hyphenate-limit-lines",
-      "value": "no-limit | <integer>",
-      "initial": "no-limit",
-      "appliesTo": "block containers",
-      "inherited": "yes",
-      "percentages": "n/a",
-      "computedValue": "specified keyword or integer",
-      "canonicalOrder": "per grammar",
-      "animationType": "by computed value type",
-      "styleDeclaration": [
-        "hyphenate-limit-lines",
-        "hyphenateLimitLines"
-      ]
-    },
-    "hyphenate-limit-last": {
-      "name": "hyphenate-limit-last",
-      "value": "none | always | column | page | spread",
-      "initial": "none",
       "appliesTo": "block containers",
       "inherited": "yes",
       "percentages": "n/a",
       "computedValue": "specified keyword",
-      "canonicalOrder": "per grammar",
+      "canonicalOrder": "n/a",
       "animationType": "discrete",
       "styleDeclaration": [
-        "hyphenate-limit-last",
-        "hyphenateLimitLast"
+        "text-align-last",
+        "textAlignLast"
+      ]
+    },
+    "text-justify": {
+      "name": "text-justify",
+      "value": "auto | none | inter-word | inter-character",
+      "initial": "auto",
+      "appliesTo": "text",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "specified keyword (except for the distribute legacy value)",
+      "canonicalOrder": "n/a",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "text-justify",
+        "textJustify"
       ]
     },
     "text-group-align": {
@@ -227,6 +391,36 @@
       "styleDeclaration": [
         "text-group-align",
         "textGroupAlign"
+      ]
+    },
+    "word-spacing": {
+      "name": "word-spacing",
+      "value": "normal | <length-percentage>",
+      "initial": "normal",
+      "appliesTo": "text",
+      "inherited": "yes",
+      "percentages": "relative to computed font-size, i.e. 1em",
+      "computedValue": "an absolute length and/or a percentage",
+      "canonicalOrder": "n/a",
+      "animationType": "by computed value type",
+      "styleDeclaration": [
+        "word-spacing",
+        "wordSpacing"
+      ]
+    },
+    "letter-spacing": {
+      "name": "letter-spacing",
+      "value": "normal | <length-percentage>",
+      "initial": "normal",
+      "appliesTo": "inline boxes and text",
+      "inherited": "yes",
+      "percentages": "relative to computed font-size, i.e. 1em",
+      "computedValue": "an absolute length and/or a percentage",
+      "canonicalOrder": "n/a",
+      "animationType": "by computed value type",
+      "styleDeclaration": [
+        "letter-spacing",
+        "letterSpacing"
       ]
     },
     "line-padding": {
@@ -246,7 +440,7 @@
     },
     "text-spacing": {
       "name": "text-spacing",
-      "value": "normal | none | [ trim-start | space-start | space-first ] || [ trim-end | space-end | allow-end ] || [ trim-adjacent | space-adjacent ] || no-compress || ideograph-alpha || ideograph-numeric || punctuation",
+      "value": "normal | none | auto | no-compress || [ trim-start | space-start | space-first ] || [ trim-end | space-end | allow-end ] || [ trim-adjacent | space-adjacent ] || ideograph-alpha || ideograph-numeric || punctuation",
       "initial": "normal",
       "appliesTo": "block containers",
       "inherited": "yes",
@@ -258,12 +452,51 @@
         "text-spacing",
         "textSpacing"
       ]
+    },
+    "text-indent": {
+      "name": "text-indent",
+      "value": "[ <length-percentage> ] && hanging? && each-line?",
+      "initial": "0",
+      "appliesTo": "block containers",
+      "inherited": "yes",
+      "percentages": "refers to block container’s own inline-axis inner size",
+      "computedValue": "computed <length-percentage> value, plus any specified keywords",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
+      "styleDeclaration": [
+        "text-indent",
+        "textIndent"
+      ]
+    },
+    "hanging-punctuation": {
+      "name": "hanging-punctuation",
+      "value": "none | [ first || [ force-end | allow-end ] || last ]",
+      "initial": "none",
+      "appliesTo": "text",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "specified keyword(s)",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "hanging-punctuation",
+        "hangingPunctuation"
+      ]
     }
   },
   "descriptors": {},
   "valuespaces": {
     "<auto()>": {
       "value": "auto(<lang>)"
+    },
+    "<length-percentages>": {
+      "prose": "Specifies extra spacing in addition to the intrinsic inter-word spacing defined by the font."
+    },
+    "<length>": {
+      "prose": "Specifies additional spacing between typographic character units. Values may be negative, but there may be implementation-dependent limits."
+    },
+    "<percentage>": {
+      "prose": "Gives the amount of the indent as a percentage of the block container’s own logical width. Percentages must be treated as 0 for the purpose of calculating intrinsic size contributions, but are always resolved normally when performing layout."
     }
   }
 }

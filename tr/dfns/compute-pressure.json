@@ -176,25 +176,6 @@
       "definedIn": "prose"
     },
     {
-      "id": "dfn-options",
-      "href": "https://wicg.github.io/compute-pressure/#dfn-options",
-      "linkingText": [
-        "options"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "internal-slot-definitions",
-        "href": "https://wicg.github.io/compute-pressure/#internal-slot-definitions",
-        "title": "Internal Slot Definitions",
-        "number": "6"
-      },
-      "definedIn": "prose"
-    },
-    {
       "id": "dfn-callback",
       "href": "https://wicg.github.io/compute-pressure/#dfn-callback",
       "linkingText": [
@@ -216,10 +197,52 @@
       "definedIn": "prose"
     },
     {
+      "id": "dfn-options",
+      "href": "https://wicg.github.io/compute-pressure/#dfn-options",
+      "linkingText": [
+        "[[Options]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ComputePressureObserver"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "internal-slot-definitions",
+        "href": "https://wicg.github.io/compute-pressure/#internal-slot-definitions",
+        "title": "Internal Slot Definitions",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "dfn-queuedrecords",
       "href": "https://wicg.github.io/compute-pressure/#dfn-queuedrecords",
       "linkingText": [
         "[[QueuedRecords]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ComputePressureObserver"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "internal-slot-definitions",
+        "href": "https://wicg.github.io/compute-pressure/#internal-slot-definitions",
+        "title": "Internal Slot Definitions",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-lastrecordmap",
+      "href": "https://wicg.github.io/compute-pressure/#dfn-lastrecordmap",
+      "linkingText": [
+        "[[LastRecordMap]]"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -540,7 +563,8 @@
       "href": "https://wicg.github.io/compute-pressure/#dom-computepressureobserver-constructor",
       "linkingText": [
         "constructor()",
-        "constructor(callback)"
+        "constructor(callback)",
+        "constructor(callback, options)"
       ],
       "localLinkingText": [
         "ComputePressureObserver.constructor",
@@ -566,8 +590,7 @@
       "href": "https://wicg.github.io/compute-pressure/#dom-computepressureobserver-observe",
       "linkingText": [
         "observe()",
-        "observe(source)",
-        "observe(source, options)"
+        "observe(source)"
       ],
       "localLinkingText": [
         "ComputePressureObserver.observe",
@@ -795,10 +818,10 @@
       "definedIn": "heading"
     },
     {
-      "id": "dom-computepressurerecord-timestamp",
-      "href": "https://wicg.github.io/compute-pressure/#dom-computepressurerecord-timestamp",
+      "id": "dom-computepressurerecord-time",
+      "href": "https://wicg.github.io/compute-pressure/#dom-computepressurerecord-time",
       "linkingText": [
-        "timestamp"
+        "time"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -808,31 +831,10 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "the-timestamp-attribute",
-        "href": "https://wicg.github.io/compute-pressure/#the-timestamp-attribute",
-        "title": "The timestamp attribute",
+        "id": "the-time-attribute",
+        "href": "https://wicg.github.io/compute-pressure/#the-time-attribute",
+        "title": "The time attribute",
         "number": "9.3.4"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "dom-computepressurerecord-options",
-      "href": "https://wicg.github.io/compute-pressure/#dom-computepressurerecord-options",
-      "linkingText": [
-        "options"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "ComputePressureRecord"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "the-options-attribute",
-        "href": "https://wicg.github.io/compute-pressure/#the-options-attribute",
-        "title": "The options attribute",
-        "number": "9.3.5"
       },
       "definedIn": "heading"
     },
@@ -856,10 +858,88 @@
       "definedIn": "heading"
     },
     {
-      "id": "dfn-should-receive-readings",
-      "href": "https://wicg.github.io/compute-pressure/#dfn-should-receive-readings",
+      "id": "dom-computepressureobserveroptions-frequency",
+      "href": "https://wicg.github.io/compute-pressure/#dom-computepressureobserveroptions-frequency",
       "linkingText": [
-        "should receive readings"
+        "frequency"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ComputePressureObserverOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-frequency-member",
+        "href": "https://wicg.github.io/compute-pressure/#the-frequency-member",
+        "title": "The frequency member",
+        "number": "9.4.1"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-requested-sampling-frequency",
+      "href": "https://wicg.github.io/compute-pressure/#dfn-requested-sampling-frequency",
+      "linkingText": [
+        "requested sampling frequency"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-frequency-member",
+        "href": "https://wicg.github.io/compute-pressure/#the-frequency-member",
+        "title": "The frequency member",
+        "number": "9.4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-passes-privacy-test",
+      "href": "https://wicg.github.io/compute-pressure/#dfn-passes-privacy-test",
+      "linkingText": [
+        "passes privacy test"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "supporting-algorithms",
+        "href": "https://wicg.github.io/compute-pressure/#supporting-algorithms",
+        "title": "Supporting algorithms",
+        "number": "9.6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-passes-frequency-test",
+      "href": "https://wicg.github.io/compute-pressure/#dfn-passes-frequency-test",
+      "linkingText": [
+        "passes frequency test"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "supporting-algorithms",
+        "href": "https://wicg.github.io/compute-pressure/#supporting-algorithms",
+        "title": "Supporting algorithms",
+        "number": "9.6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-has-change-in-data",
+      "href": "https://wicg.github.io/compute-pressure/#dfn-has-change-in-data",
+      "linkingText": [
+        "has change in data"
       ],
       "localLinkingText": [],
       "type": "dfn",

@@ -129,7 +129,7 @@
         "extAttrs": []
       },
       "ComputePressureObserver": {
-        "fragment": "[Exposed=(DedicatedWorker,SharedWorker,Window), SecureContext]\ninterface ComputePressureObserver {\n  constructor(ComputePressureUpdateCallback callback);\n\n  undefined observe(ComputePressureSource source, optional ComputePressureObserverOptions options = {});\n  undefined unobserve(ComputePressureSource source);\n  undefined disconnect();\n  sequence<ComputePressureRecord> takeRecords();\n\n  [SameObject] static readonly attribute FrozenArray<DOMString> supportedSources;\n\n  [Exposed=Window] static Promise<PermissionState> requestPermission();\n};",
+        "fragment": "[Exposed=(DedicatedWorker,SharedWorker,Window), SecureContext]\ninterface ComputePressureObserver {\n  constructor(ComputePressureUpdateCallback callback, optional ComputePressureObserverOptions options = {});\n\n  undefined observe(ComputePressureSource source);\n  undefined unobserve(ComputePressureSource source);\n  undefined disconnect();\n  sequence<ComputePressureRecord> takeRecords();\n\n  [SameObject] static readonly attribute FrozenArray<ComputePressureSource> supportedSources;\n\n  [Exposed=Window] static Promise<PermissionState> requestPermission();\n};",
         "type": "interface",
         "name": "ComputePressureObserver",
         "inheritance": null,
@@ -151,6 +151,24 @@
                 },
                 "default": null,
                 "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "options",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "ComputePressureObserverOptions"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
                 "variadic": false
               }
             ],
@@ -182,24 +200,6 @@
                 },
                 "default": null,
                 "optional": false,
-                "variadic": false
-              },
-              {
-                "type": "argument",
-                "name": "options",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "ComputePressureObserverOptions"
-                },
-                "default": {
-                  "type": "dictionary"
-                },
-                "optional": true,
                 "variadic": false
               }
             ],
@@ -293,7 +293,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "DOMString"
+                  "idlType": "ComputePressureSource"
                 }
               ]
             },
@@ -373,7 +373,7 @@
         "partial": false
       },
       "ComputePressureRecord": {
-        "fragment": "dictionary ComputePressureRecord {\n  ComputePressureSource source;\n  ComputePressureState state;\n  sequence<ComputePressureFactor> factors;\n  DOMHighResTimeStamp timestamp;\n  ComputePressureObserverOptions options;\n};",
+        "fragment": "dictionary ComputePressureRecord {\n  ComputePressureSource source;\n  ComputePressureState state;\n  sequence<ComputePressureFactor> factors;\n  DOMHighResTimeStamp time;\n};",
         "type": "dictionary",
         "name": "ComputePressureRecord",
         "inheritance": null,
@@ -434,7 +434,7 @@
           },
           {
             "type": "field",
-            "name": "timestamp",
+            "name": "time",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -446,10 +446,20 @@
             },
             "default": null,
             "required": false
-          },
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "ComputePressureObserverOptions": {
+        "fragment": "dictionary ComputePressureObserverOptions {\n  double frequency;\n};",
+        "type": "dictionary",
+        "name": "ComputePressureObserverOptions",
+        "inheritance": null,
+        "members": [
           {
             "type": "field",
-            "name": "options",
+            "name": "frequency",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -457,21 +467,12 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "ComputePressureObserverOptions"
+              "idlType": "double"
             },
             "default": null,
             "required": false
           }
         ],
-        "extAttrs": [],
-        "partial": false
-      },
-      "ComputePressureObserverOptions": {
-        "fragment": "dictionary ComputePressureObserverOptions {\n  // For future-proofing - expect things to be added here later.\n};",
-        "type": "dictionary",
-        "name": "ComputePressureObserverOptions",
-        "inheritance": null,
-        "members": [],
         "extAttrs": [],
         "partial": false
       }
@@ -492,8 +493,8 @@
     "dependencies": {
       "ComputePressureObserver": [
         "ComputePressureUpdateCallback",
-        "ComputePressureSource",
         "ComputePressureObserverOptions",
+        "ComputePressureSource",
         "ComputePressureRecord",
         "PermissionState"
       ],
@@ -501,8 +502,7 @@
         "ComputePressureSource",
         "ComputePressureState",
         "ComputePressureFactor",
-        "DOMHighResTimeStamp",
-        "ComputePressureObserverOptions"
+        "DOMHighResTimeStamp"
       ],
       "ComputePressureObserverOptions": []
     },

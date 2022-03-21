@@ -2674,6 +2674,27 @@
       "definedIn": "dt"
     },
     {
+      "id": "dom-gpudevicedescriptor-defaultqueue",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpudevicedescriptor-defaultqueue",
+      "linkingText": [
+        "defaultQueue"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "GPUDeviceDescriptor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gpudevicedescriptor",
+        "href": "https://www.w3.org/TR/webgpu/#gpudevicedescriptor",
+        "title": "GPUDeviceDescriptor",
+        "number": "4.3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "enumdef-gpufeaturename",
       "href": "https://www.w3.org/TR/webgpu/#enumdef-gpufeaturename",
       "linkingText": [
@@ -7803,6 +7824,67 @@
       "localLinkingText": [],
       "type": "enum",
       "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "GPUSamplerDescriptor",
+        "href": "https://www.w3.org/TR/webgpu/#GPUSamplerDescriptor",
+        "title": "GPUSamplerDescriptor",
+        "number": "7.2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "enumdef-gpumipmapfiltermode",
+      "href": "https://www.w3.org/TR/webgpu/#enumdef-gpumipmapfiltermode",
+      "linkingText": [
+        "GPUMipmapFilterMode"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "GPUSamplerDescriptor",
+        "href": "https://www.w3.org/TR/webgpu/#GPUSamplerDescriptor",
+        "title": "GPUSamplerDescriptor",
+        "number": "7.2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-gpumipmapfiltermode-nearest",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpumipmapfiltermode-nearest",
+      "linkingText": [
+        "\"nearest\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "GPUMipmapFilterMode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "GPUSamplerDescriptor",
+        "href": "https://www.w3.org/TR/webgpu/#GPUSamplerDescriptor",
+        "title": "GPUSamplerDescriptor",
+        "number": "7.2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-gpumipmapfiltermode-linear",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpumipmapfiltermode-linear",
+      "linkingText": [
+        "\"linear\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "GPUMipmapFilterMode"
+      ],
       "access": "public",
       "informative": false,
       "heading": {
@@ -19429,6 +19511,25 @@
       "definedIn": "table"
     },
     {
+      "id": "dictdef-gpuqueuedescriptor",
+      "href": "https://www.w3.org/TR/webgpu/#dictdef-gpuqueuedescriptor",
+      "linkingText": [
+        "GPUQueueDescriptor"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gpuqueuedescriptor",
+        "href": "https://www.w3.org/TR/webgpu/#gpuqueuedescriptor",
+        "title": "GPUQueueDescriptor",
+        "number": "18.1"
+      },
+      "definedIn": "heading"
+    },
+    {
       "id": "gpuqueue",
       "href": "https://www.w3.org/TR/webgpu/#gpuqueue",
       "linkingText": [
@@ -19440,11 +19541,12 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "queues",
-        "href": "https://www.w3.org/TR/webgpu/#queues",
-        "title": "18. Queues"
+        "id": "gpu-queue",
+        "href": "https://www.w3.org/TR/webgpu/#gpu-queue",
+        "title": "GPUQueue",
+        "number": "18.2"
       },
-      "definedIn": "pre"
+      "definedIn": "heading"
     },
     {
       "id": "dom-gpuqueue-writebuffer",
@@ -19462,9 +19564,10 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "queues",
-        "href": "https://www.w3.org/TR/webgpu/#queues",
-        "title": "18. Queues"
+        "id": "gpu-queue",
+        "href": "https://www.w3.org/TR/webgpu/#gpu-queue",
+        "title": "GPUQueue",
+        "number": "18.2"
       },
       "definedIn": "dt"
     },
@@ -19482,9 +19585,10 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "queues",
-        "href": "https://www.w3.org/TR/webgpu/#queues",
-        "title": "18. Queues"
+        "id": "gpu-queue",
+        "href": "https://www.w3.org/TR/webgpu/#gpu-queue",
+        "title": "GPUQueue",
+        "number": "18.2"
       },
       "definedIn": "table"
     },
@@ -19502,9 +19606,10 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "queues",
-        "href": "https://www.w3.org/TR/webgpu/#queues",
-        "title": "18. Queues"
+        "id": "gpu-queue",
+        "href": "https://www.w3.org/TR/webgpu/#gpu-queue",
+        "title": "GPUQueue",
+        "number": "18.2"
       },
       "definedIn": "table"
     },
@@ -19522,9 +19627,10 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "queues",
-        "href": "https://www.w3.org/TR/webgpu/#queues",
-        "title": "18. Queues"
+        "id": "gpu-queue",
+        "href": "https://www.w3.org/TR/webgpu/#gpu-queue",
+        "title": "GPUQueue",
+        "number": "18.2"
       },
       "definedIn": "table"
     },
@@ -19542,9 +19648,10 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "queues",
-        "href": "https://www.w3.org/TR/webgpu/#queues",
-        "title": "18. Queues"
+        "id": "gpu-queue",
+        "href": "https://www.w3.org/TR/webgpu/#gpu-queue",
+        "title": "GPUQueue",
+        "number": "18.2"
       },
       "definedIn": "table"
     },
@@ -19562,9 +19669,10 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "queues",
-        "href": "https://www.w3.org/TR/webgpu/#queues",
-        "title": "18. Queues"
+        "id": "gpu-queue",
+        "href": "https://www.w3.org/TR/webgpu/#gpu-queue",
+        "title": "GPUQueue",
+        "number": "18.2"
       },
       "definedIn": "table"
     },
@@ -19582,9 +19690,10 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "queues",
-        "href": "https://www.w3.org/TR/webgpu/#queues",
-        "title": "18. Queues"
+        "id": "gpu-queue",
+        "href": "https://www.w3.org/TR/webgpu/#gpu-queue",
+        "title": "GPUQueue",
+        "number": "18.2"
       },
       "definedIn": "dt"
     },
@@ -19602,9 +19711,10 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "queues",
-        "href": "https://www.w3.org/TR/webgpu/#queues",
-        "title": "18. Queues"
+        "id": "gpu-queue",
+        "href": "https://www.w3.org/TR/webgpu/#gpu-queue",
+        "title": "GPUQueue",
+        "number": "18.2"
       },
       "definedIn": "table"
     },
@@ -19622,9 +19732,10 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "queues",
-        "href": "https://www.w3.org/TR/webgpu/#queues",
-        "title": "18. Queues"
+        "id": "gpu-queue",
+        "href": "https://www.w3.org/TR/webgpu/#gpu-queue",
+        "title": "GPUQueue",
+        "number": "18.2"
       },
       "definedIn": "table"
     },
@@ -19642,9 +19753,10 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "queues",
-        "href": "https://www.w3.org/TR/webgpu/#queues",
-        "title": "18. Queues"
+        "id": "gpu-queue",
+        "href": "https://www.w3.org/TR/webgpu/#gpu-queue",
+        "title": "GPUQueue",
+        "number": "18.2"
       },
       "definedIn": "table"
     },
@@ -19662,9 +19774,10 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "queues",
-        "href": "https://www.w3.org/TR/webgpu/#queues",
-        "title": "18. Queues"
+        "id": "gpu-queue",
+        "href": "https://www.w3.org/TR/webgpu/#gpu-queue",
+        "title": "GPUQueue",
+        "number": "18.2"
       },
       "definedIn": "table"
     },
@@ -19682,9 +19795,10 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "queues",
-        "href": "https://www.w3.org/TR/webgpu/#queues",
-        "title": "18. Queues"
+        "id": "gpu-queue",
+        "href": "https://www.w3.org/TR/webgpu/#gpu-queue",
+        "title": "GPUQueue",
+        "number": "18.2"
       },
       "definedIn": "dt"
     },
@@ -19702,9 +19816,10 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "queues",
-        "href": "https://www.w3.org/TR/webgpu/#queues",
-        "title": "18. Queues"
+        "id": "gpu-queue",
+        "href": "https://www.w3.org/TR/webgpu/#gpu-queue",
+        "title": "GPUQueue",
+        "number": "18.2"
       },
       "definedIn": "table"
     },
@@ -19722,9 +19837,10 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "queues",
-        "href": "https://www.w3.org/TR/webgpu/#queues",
-        "title": "18. Queues"
+        "id": "gpu-queue",
+        "href": "https://www.w3.org/TR/webgpu/#gpu-queue",
+        "title": "GPUQueue",
+        "number": "18.2"
       },
       "definedIn": "table"
     },
@@ -19742,9 +19858,10 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "queues",
-        "href": "https://www.w3.org/TR/webgpu/#queues",
-        "title": "18. Queues"
+        "id": "gpu-queue",
+        "href": "https://www.w3.org/TR/webgpu/#gpu-queue",
+        "title": "GPUQueue",
+        "number": "18.2"
       },
       "definedIn": "table"
     },
@@ -19762,9 +19879,10 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "queues",
-        "href": "https://www.w3.org/TR/webgpu/#queues",
-        "title": "18. Queues"
+        "id": "gpu-queue",
+        "href": "https://www.w3.org/TR/webgpu/#gpu-queue",
+        "title": "GPUQueue",
+        "number": "18.2"
       },
       "definedIn": "dt"
     },
@@ -19782,9 +19900,10 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "queues",
-        "href": "https://www.w3.org/TR/webgpu/#queues",
-        "title": "18. Queues"
+        "id": "gpu-queue",
+        "href": "https://www.w3.org/TR/webgpu/#gpu-queue",
+        "title": "GPUQueue",
+        "number": "18.2"
       },
       "definedIn": "table"
     },
@@ -19802,9 +19921,10 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "queues",
-        "href": "https://www.w3.org/TR/webgpu/#queues",
-        "title": "18. Queues"
+        "id": "gpu-queue",
+        "href": "https://www.w3.org/TR/webgpu/#gpu-queue",
+        "title": "GPUQueue",
+        "number": "18.2"
       },
       "definedIn": "dt"
     },

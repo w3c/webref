@@ -75,13 +75,6 @@
     },
     {
       "spec": {
-        "title": "Navigation API",
-        "url": "https://wicg.github.io/app-history/"
-      },
-      "fragment": "partial interface Window {\n  readonly attribute Navigation navigation;\n};"
-    },
-    {
-      "spec": {
         "title": "Attribution Reporting",
         "url": "https://wicg.github.io/conversion-measurement-api/"
       },
@@ -96,6 +89,13 @@
     },
     {
       "spec": {
+        "title": "Digital Goods API",
+        "url": "https://wicg.github.io/digital-goods/"
+      },
+      "fragment": "partial interface Window {\n  [SecureContext] Promise<DigitalGoodsService> getDigitalGoodsService(\n      DOMString serviceProvider);\n};"
+    },
+    {
+      "spec": {
         "title": "File System Access",
         "url": "https://wicg.github.io/file-system-access/"
       },
@@ -107,6 +107,13 @@
         "url": "https://wicg.github.io/manifest-incubations/"
       },
       "fragment": "partial interface Window {\n  attribute EventHandler onappinstalled;\n  attribute EventHandler onbeforeinstallprompt;\n};"
+    },
+    {
+      "spec": {
+        "title": "Navigation API",
+        "url": "https://wicg.github.io/navigation-api/"
+      },
+      "fragment": "partial interface Window {\n  [Replaceable] readonly attribute Navigation navigation;\n};"
     },
     {
       "spec": {

@@ -4,7 +4,7 @@
 // Source: Navigation API (https://wicg.github.io/navigation-api/)
 
 partial interface Window {
-  readonly attribute Navigation navigation;
+  [Replaceable] readonly attribute Navigation navigation;
 };
 
 [Exposed=Window]

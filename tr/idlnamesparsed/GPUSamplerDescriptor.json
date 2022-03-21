@@ -6,7 +6,7 @@
       "title": "WebGPU",
       "url": "https://www.w3.org/TR/webgpu/"
     },
-    "fragment": "dictionary GPUSamplerDescriptor : GPUObjectDescriptorBase {\n    GPUAddressMode addressModeU = \"clamp-to-edge\";\n    GPUAddressMode addressModeV = \"clamp-to-edge\";\n    GPUAddressMode addressModeW = \"clamp-to-edge\";\n    GPUFilterMode magFilter = \"nearest\";\n    GPUFilterMode minFilter = \"nearest\";\n    GPUFilterMode mipmapFilter = \"nearest\";\n    float lodMinClamp = 0;\n    float lodMaxClamp = 32;\n    GPUCompareFunction compare;\n    [Clamp] unsigned short maxAnisotropy = 1;\n};",
+    "fragment": "dictionary GPUSamplerDescriptor : GPUObjectDescriptorBase {\n    GPUAddressMode addressModeU = \"clamp-to-edge\";\n    GPUAddressMode addressModeV = \"clamp-to-edge\";\n    GPUAddressMode addressModeW = \"clamp-to-edge\";\n    GPUFilterMode magFilter = \"nearest\";\n    GPUFilterMode minFilter = \"nearest\";\n    GPUMipmapFilterMode mipmapFilter = \"nearest\";\n    float lodMinClamp = 0;\n    float lodMaxClamp = 32;\n    GPUCompareFunction compare;\n    [Clamp] unsigned short maxAnisotropy = 1;\n};",
     "href": "https://www.w3.org/TR/webgpu/#dictdef-gpusamplerdescriptor"
   },
   "extended": [],
