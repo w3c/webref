@@ -12,6 +12,20 @@
   "extended": [
     {
       "spec": {
+        "title": "The Capture-Handle Actions Mechanism",
+        "url": "https://w3c.github.io/mediacapture-handle/actions/"
+      },
+      "fragment": "partial interface MediaDevices {\n  undefined setSupportedCaptureActions(sequence<DOMString> actions);\n  attribute EventHandler oncaptureaction;\n};"
+    },
+    {
+      "spec": {
+        "title": "Capture Handle - Bootstrapping Collaboration when Screensharing",
+        "url": "https://w3c.github.io/mediacapture-handle/identity/"
+      },
+      "fragment": "partial interface MediaDevices {\n  undefined setCaptureHandleConfig(optional CaptureHandleConfig config = {});\n};"
+    },
+    {
+      "spec": {
         "title": "Region Capture",
         "url": "https://w3c.github.io/mediacapture-region/"
       },

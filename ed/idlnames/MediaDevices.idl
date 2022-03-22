@@ -5,6 +5,17 @@ interface MediaDevices : EventTarget {
   Promise<sequence<MediaDeviceInfo>> enumerateDevices();
 };
 
+// Source: The Capture-Handle Actions Mechanism (https://w3c.github.io/mediacapture-handle/actions/)
+partial interface MediaDevices {
+  undefined setSupportedCaptureActions(sequence<DOMString> actions);
+  attribute EventHandler oncaptureaction;
+};
+
+// Source: Capture Handle - Bootstrapping Collaboration when Screensharing (https://w3c.github.io/mediacapture-handle/identity/)
+partial interface MediaDevices {
+  undefined setCaptureHandleConfig(optional CaptureHandleConfig config = {});
+};
+
 // Source: Region Capture (https://w3c.github.io/mediacapture-region/)
 partial interface MediaDevices {
   Promise<CropTarget>
