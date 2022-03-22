@@ -105,7 +105,7 @@ partial interface Element {
   DOMRectList getClientRects();
   [NewObject] DOMRect getBoundingClientRect();
 
-  boolean isVisible(optional IsVisibleOptions options = {});
+  bool isVisible(optional IsVisibleOptions options = {});
 
   undefined scrollIntoView(optional (boolean or ScrollIntoViewOptions) arg = {});
   undefined scroll(optional ScrollToOptions options = {});
