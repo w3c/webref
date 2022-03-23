@@ -621,11 +621,84 @@
         "partial": false
       },
       "IsVisibleOptions": {
-        "fragment": "dictionary IsVisibleOptions {\n\n};",
+        "fragment": "dictionary IsVisibleOptions {\n    bool checkAriaHidden = false;\n    bool checkInert = false;\n    bool checkOpacity = false;\n    bool checkVisibilityCSS = false;\n};",
         "type": "dictionary",
         "name": "IsVisibleOptions",
         "inheritance": null,
-        "members": [],
+        "members": [
+          {
+            "type": "field",
+            "name": "checkAriaHidden",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "bool"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "checkInert",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "bool"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "checkOpacity",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "bool"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "checkVisibilityCSS",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "bool"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false
+          }
+        ],
         "extAttrs": [],
         "partial": false
       },
@@ -3033,7 +3106,9 @@
         "ScrollOptions",
         "ScrollLogicalPosition"
       ],
-      "IsVisibleOptions": [],
+      "IsVisibleOptions": [
+        "bool"
+      ],
       "Element": [
         "DOMRectList",
         "DOMRect",
@@ -3089,8 +3164,8 @@
       "Element",
       "Node",
       "DOMRect",
-      "DOMRectList",
       "bool",
+      "DOMRectList",
       "HTMLElement",
       "HTMLImageElement",
       "Range",
