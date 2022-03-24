@@ -10,12 +10,15 @@
         "Window": [
           "CropTarget",
           "BrowserCaptureMediaStreamTrack"
+        ],
+        "Worker": [
+          "CropTarget"
         ]
       }
     },
     "idlNames": {
       "CropTarget": {
-        "fragment": "[Exposed = Window]\ninterface CropTarget {\n  // Intentionally empty; just an opaque identifier.\n};",
+        "fragment": "[Exposed=(Window,Worker)]\ninterface CropTarget {\n  // Intentionally empty; just an opaque identifier.\n};",
         "type": "interface",
         "name": "CropTarget",
         "inheritance": null,
@@ -25,8 +28,15 @@
             "type": "extended-attribute",
             "name": "Exposed",
             "rhs": {
-              "type": "identifier",
-              "value": "Window"
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                }
+              ]
             },
             "arguments": []
           }
@@ -170,6 +180,9 @@
       "Window": [
         "CropTarget",
         "BrowserCaptureMediaStreamTrack"
+      ],
+      "Worker": [
+        "CropTarget"
       ]
     },
     "dependencies": {
