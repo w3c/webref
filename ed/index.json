@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2022-03-24T00:48:05.367Z",
+  "date": "2022-03-24T06:37:18.559Z",
   "options": {
     "fallback": "webref-fallback/ed/index.json",
     "output": "report",
@@ -21,7 +21,7 @@
   },
   "stats": {
     "crawled": 471,
-    "errors": 0
+    "errors": 1
   },
   "crawler": "reffy-7.0.3",
   "results": [
@@ -17324,7 +17324,8 @@
       "css": "css/CSS.json",
       "dfns": "dfns/CSS22.json",
       "headings": "headings/CSS22.json",
-      "ids": "ids/CSS22.json"
+      "ids": "ids/CSS22.json",
+      "error": "Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers' Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers'\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:483:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 330)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/css3-exclusions/",
@@ -24251,10 +24252,10 @@
       ],
       "crawled": "https://gpuweb.github.io/gpuweb/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 23 Mar 2022 20:17:15 GMT"
+        "lastModified": "Thu, 24 Mar 2022 03:29:18 GMT"
       },
       "generator": "bikeshed",
-      "date": "23 March 2022",
+      "date": "24 March 2022",
       "links": "links/webgpu.json",
       "refs": "refs/webgpu.json",
       "idl": "idl/webgpu.idl",
@@ -25432,10 +25433,10 @@
       ],
       "crawled": "https://gpuweb.github.io/gpuweb/wgsl/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 23 Mar 2022 20:17:15 GMT"
+        "lastModified": "Thu, 24 Mar 2022 03:29:18 GMT"
       },
       "generator": "bikeshed",
-      "date": "23 March 2022",
+      "date": "24 March 2022",
       "links": "links/WGSL.json",
       "refs": "refs/WGSL.json",
       "dfns": "dfns/WGSL.json",
