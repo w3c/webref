@@ -2,7 +2,8 @@
 dictionary CollectedClientAdditionalPaymentData {
     required USVString rp;
     required USVString topOrigin;
-    required USVString payeeOrigin;
+    DOMString payeeName;
+    USVString payeeOrigin;
     required PaymentCurrencyAmount total;
     required PaymentCredentialInstrument instrument;
 };
