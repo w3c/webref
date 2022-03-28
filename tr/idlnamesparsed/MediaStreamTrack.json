@@ -12,6 +12,27 @@
   "extended": [
     {
       "spec": {
+        "title": "The Capture-Handle Actions Mechanism",
+        "url": "https://w3c.github.io/mediacapture-handle/actions/"
+      },
+      "fragment": "partial interface MediaStreamTrack {\n  sequence<DOMString> getSupportedCaptureActions();\n  Promise<undefined> sendCaptureAction(CaptureAction action);\n};"
+    },
+    {
+      "spec": {
+        "title": "Capture Handle - Bootstrapping Collaboration when Screensharing",
+        "url": "https://w3c.github.io/mediacapture-handle/identity/"
+      },
+      "fragment": "partial interface MediaStreamTrack {\n  CaptureHandle? getCaptureHandle();\n};"
+    },
+    {
+      "spec": {
+        "title": "Capture Handle - Bootstrapping Collaboration when Screensharing",
+        "url": "https://w3c.github.io/mediacapture-handle/identity/"
+      },
+      "fragment": "partial interface MediaStreamTrack {\n  attribute EventHandler oncapturehandlechange;\n};"
+    },
+    {
+      "spec": {
         "title": "MediaStreamTrack Content Hints",
         "url": "https://www.w3.org/TR/mst-content-hint/"
       },

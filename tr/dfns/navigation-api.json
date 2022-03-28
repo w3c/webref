@@ -66,27 +66,6 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-navigation-currententry",
-      "href": "https://wicg.github.io/navigation-api/#dom-navigation-currententry",
-      "linkingText": [
-        "currentEntry"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "Navigation"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "global",
-        "href": "https://wicg.github.io/navigation-api/#global",
-        "title": "The Navigation class",
-        "number": "1"
-      },
-      "definedIn": "pre"
-    },
-    {
       "id": "dom-navigation-updatecurrententry-options-options",
       "href": "https://wicg.github.io/navigation-api/#dom-navigation-updatecurrententry-options-options",
       "linkingText": [
@@ -382,10 +361,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-navigationnavigateoptions-replace",
-      "href": "https://wicg.github.io/navigation-api/#dom-navigationnavigateoptions-replace",
+      "id": "dom-navigationnavigateoptions-history",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigationnavigateoptions-history",
       "linkingText": [
-        "replace"
+        "history"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -492,6 +471,88 @@
       "type": "dict-member",
       "for": [
         "NavigationResult"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "global",
+        "href": "https://wicg.github.io/navigation-api/#global",
+        "title": "The Navigation class",
+        "number": "1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "enumdef-navigationhistorybehavior",
+      "href": "https://wicg.github.io/navigation-api/#enumdef-navigationhistorybehavior",
+      "linkingText": [
+        "NavigationHistoryBehavior"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "global",
+        "href": "https://wicg.github.io/navigation-api/#global",
+        "title": "The Navigation class",
+        "number": "1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-navigationhistorybehavior-auto",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigationhistorybehavior-auto",
+      "linkingText": [
+        "\"auto\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "NavigationHistoryBehavior"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "global",
+        "href": "https://wicg.github.io/navigation-api/#global",
+        "title": "The Navigation class",
+        "number": "1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-navigationhistorybehavior-push",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigationhistorybehavior-push",
+      "linkingText": [
+        "\"push\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "NavigationHistoryBehavior"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "global",
+        "href": "https://wicg.github.io/navigation-api/#global",
+        "title": "The Navigation class",
+        "number": "1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-navigationhistorybehavior-replace",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigationhistorybehavior-replace",
+      "linkingText": [
+        "\"replace\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "NavigationHistoryBehavior"
       ],
       "access": "public",
       "informative": false,
@@ -879,10 +940,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-navigation-current",
-      "href": "https://wicg.github.io/navigation-api/#dom-navigation-current",
+      "id": "dom-navigation-currententry",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigation-currententry",
       "linkingText": [
-        "current"
+        "currentEntry"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -2177,6 +2238,27 @@
       "definedIn": "pre"
     },
     {
+      "id": "dom-navigateeventinit-downloadrequest",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigateeventinit-downloadrequest",
+      "linkingText": [
+        "downloadRequest"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "NavigateEventInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "navigate-event-class",
+        "href": "https://wicg.github.io/navigation-api/#navigate-event-class",
+        "title": "The NavigateEvent class",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "dom-navigateeventinit-info",
       "href": "https://wicg.github.io/navigation-api/#dom-navigateeventinit-info",
       "linkingText": [
@@ -2431,6 +2513,27 @@
       "href": "https://wicg.github.io/navigation-api/#dom-navigateevent-formdata",
       "linkingText": [
         "formData"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "NavigateEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "navigate-event-class",
+        "href": "https://wicg.github.io/navigation-api/#navigate-event-class",
+        "title": "The NavigateEvent class",
+        "number": "2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-navigateevent-downloadrequest",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigateevent-downloadrequest",
+      "linkingText": [
+        "downloadRequest"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -3018,6 +3121,88 @@
       "type": "dfn",
       "for": [
         "fire a non-traversal navigate event"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "navigate-event-firing",
+        "href": "https://wicg.github.io/navigation-api/#navigate-event-firing",
+        "title": "Firing the event",
+        "number": "2.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "fire-a-download-requested-navigate-event",
+      "href": "https://wicg.github.io/navigation-api/#fire-a-download-requested-navigate-event",
+      "linkingText": [
+        "fire a download-requested navigate event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "navigate-event-firing",
+        "href": "https://wicg.github.io/navigation-api/#navigate-event-firing",
+        "title": "Firing the event",
+        "number": "2.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "fire-a-download-requested-navigate-event-destinationurl",
+      "href": "https://wicg.github.io/navigation-api/#fire-a-download-requested-navigate-event-destinationurl",
+      "linkingText": [
+        "destinationURL"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "fire a download-requested navigate event"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "navigate-event-firing",
+        "href": "https://wicg.github.io/navigation-api/#navigate-event-firing",
+        "title": "Firing the event",
+        "number": "2.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "fire-a-download-requested-navigate-event-userinvolvement",
+      "href": "https://wicg.github.io/navigation-api/#fire-a-download-requested-navigate-event-userinvolvement",
+      "linkingText": [
+        "userInvolvement"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "fire a download-requested navigate event"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "navigate-event-firing",
+        "href": "https://wicg.github.io/navigation-api/#navigate-event-firing",
+        "title": "Firing the event",
+        "number": "2.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "fire-a-download-requested-navigate-event-filename",
+      "href": "https://wicg.github.io/navigation-api/#fire-a-download-requested-navigate-event-filename",
+      "linkingText": [
+        "filename"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "fire a download-requested navigate event"
       ],
       "access": "private",
       "informative": false,

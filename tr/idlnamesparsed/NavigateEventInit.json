@@ -6,7 +6,7 @@
       "title": "Navigation API",
       "url": "https://wicg.github.io/navigation-api/"
     },
-    "fragment": "dictionary NavigateEventInit : EventInit {\n  NavigationNavigationType navigationType = \"push\";\n  required NavigationDestination destination;\n  boolean canTransition = false;\n  boolean userInitiated = false;\n  boolean hashChange = false;\n  required AbortSignal signal;\n  FormData? formData = null;\n  any info;\n};",
+    "fragment": "dictionary NavigateEventInit : EventInit {\n  NavigationNavigationType navigationType = \"push\";\n  required NavigationDestination destination;\n  boolean canTransition = false;\n  boolean userInitiated = false;\n  boolean hashChange = false;\n  required AbortSignal signal;\n  FormData? formData = null;\n  DOMString? downloadRequest = null;\n  any info;\n};",
     "href": "https://wicg.github.io/navigation-api/#dictdef-navigateeventinit"
   },
   "extended": [],

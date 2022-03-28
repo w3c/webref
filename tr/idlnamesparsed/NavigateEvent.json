@@ -6,7 +6,7 @@
       "title": "Navigation API",
       "url": "https://wicg.github.io/navigation-api/"
     },
-    "fragment": "[Exposed=Window]\ninterface NavigateEvent : Event {\n  constructor(DOMString type, NavigateEventInit eventInit);\n\n  readonly attribute NavigationNavigationType navigationType;\n  readonly attribute NavigationDestination destination;\n  readonly attribute boolean canTransition;\n  readonly attribute boolean userInitiated;\n  readonly attribute boolean hashChange;\n  readonly attribute AbortSignal signal;\n  readonly attribute FormData? formData;\n  readonly attribute any info;\n\n  undefined transitionWhile(Promise<undefined> newNavigationAction);\n};",
+    "fragment": "[Exposed=Window]\ninterface NavigateEvent : Event {\n  constructor(DOMString type, NavigateEventInit eventInit);\n\n  readonly attribute NavigationNavigationType navigationType;\n  readonly attribute NavigationDestination destination;\n  readonly attribute boolean canTransition;\n  readonly attribute boolean userInitiated;\n  readonly attribute boolean hashChange;\n  readonly attribute AbortSignal signal;\n  readonly attribute FormData? formData;\n  readonly attribute DOMString? downloadRequest;\n  readonly attribute any info;\n\n  undefined transitionWhile(Promise<undefined> newNavigationAction);\n};",
     "href": "https://wicg.github.io/navigation-api/#navigateevent"
   },
   "extended": [],

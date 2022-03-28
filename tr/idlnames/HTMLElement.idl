@@ -10,7 +10,7 @@ interface HTMLElement : Element {
   [CEReactions] attribute DOMString dir;
 
   // user interaction
-  [CEReactions] attribute boolean hidden;
+  [CEReactions] attribute (boolean or unrestricted double or DOMString)? hidden;
   [CEReactions] attribute boolean inert;
   undefined click();
   [CEReactions] attribute DOMString accessKey;

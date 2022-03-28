@@ -6,7 +6,7 @@
       "title": "WebHID API",
       "url": "https://wicg.github.io/webhid/"
     },
-    "fragment": "dictionary HIDDeviceRequestOptions {\n    required sequence<HIDDeviceFilter> filters;\n};",
+    "fragment": "dictionary HIDDeviceRequestOptions {\n    required sequence<HIDDeviceFilter> filters;\n    sequence<HIDDeviceFilter> exclusionFilters;\n};",
     "href": "https://wicg.github.io/webhid/#dom-hiddevicerequestoptions"
   },
   "extended": [],
