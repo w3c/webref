@@ -1,0 +1,112 @@
+From ff6b89328cf7f857d1b27c48a1aaa20522c5dc7a Mon Sep 17 00:00:00 2001
+From: Francois Daoust <fd@tidoust.net>
+Date: Tue, 29 Mar 2022 15:38:31 +0200
+Subject: [PATCH] Add IDL patch for File System Access spec
+
+Most of the IDL has now migrated to the File System spec in WHATWG. The File
+System Access spec has not yet been updated to reflect that migration. Will be
+done as part of addressing:
+https://github.com/WICG/file-system-access/issues/342
+
+This patch drops the IDL that got migrated to the File System spec. The File
+System Access spec defines additional IDL that this patch preserves.
+---
+ ed/idl/file-system-access.idl | 73 +----------------------------------
+ 1 file changed, 1 insertion(+), 72 deletions(-)
+
+diff --git a/ed/idl/file-system-access.idl b/ed/idl/file-system-access.idl
+index 252e9cdc5..fac89ea54 100644
+--- a/ed/idl/file-system-access.idl
++++ b/ed/idl/file-system-access.idl
+@@ -17,78 +17,12 @@ dictionary FileSystemHandlePermissionDescriptor {
+   FileSystemPermissionMode mode = "read";
+ };
+ 
+-enum FileSystemHandleKind {
+-  "file",
+-  "directory",
+-};
+-
+ [Exposed=(Window,Worker), SecureContext, Serializable]
+-interface FileSystemHandle {
+-  readonly attribute FileSystemHandleKind kind;
+-  readonly attribute USVString name;
+-
+-  Promise<boolean> isSameEntry(FileSystemHandle other);
+-
++partial interface FileSystemHandle {
+   Promise<PermissionState> queryPermission(optional FileSystemHandlePermissionDescriptor descriptor = {});
+   Promise<PermissionState> requestPermission(optional FileSystemHandlePermissionDescriptor descriptor = {});
+ };
+ 
+-dictionary FileSystemCreateWritableOptions {
+-  boolean keepExistingData = false;
+-};
+-
+-[Exposed=(Window,Worker), SecureContext, Serializable]
+-interface FileSystemFileHandle : FileSystemHandle {
+-  Promise<File> getFile();
+-  Promise<FileSystemWritableFileStream> createWritable(optional FileSystemCreateWritableOptions options = {});
+-};
+-
+-dictionary FileSystemGetFileOptions {
+-  boolean create = false;
+-};
+-
+-dictionary FileSystemGetDirectoryOptions {
+-  boolean create = false;
+-};
+-
+-dictionary FileSystemRemoveOptions {
+-  boolean recursive = false;
+-};
+-
+-[Exposed=(Window,Worker), SecureContext, Serializable]
+-interface FileSystemDirectoryHandle : FileSystemHandle {
+-  async iterable<USVString, FileSystemHandle>;
+-
+-  Promise<FileSystemFileHandle> getFileHandle(USVString name, optional FileSystemGetFileOptions options = {});
+-  Promise<FileSystemDirectoryHandle> getDirectoryHandle(USVString name, optional FileSystemGetDirectoryOptions options = {});
+-
+-  Promise<undefined> removeEntry(USVString name, optional FileSystemRemoveOptions options = {});
+-
+-  Promise<sequence<USVString>?> resolve(FileSystemHandle possibleDescendant);
+-};
+-
+-enum WriteCommandType {
+-  "write",
+-  "seek",
+-  "truncate",
+-};
+-
+-dictionary WriteParams {
+-  required WriteCommandType type;
+-  unsigned long long? size;
+-  unsigned long long? position;
+-  (BufferSource or Blob or USVString)? data;
+-};
+-
+-typedef (BufferSource or Blob or USVString or WriteParams) FileSystemWriteChunkType;
+-
+-[Exposed=(Window,Worker), SecureContext]
+-interface FileSystemWritableFileStream : WritableStream {
+-  Promise<undefined> write(FileSystemWriteChunkType data);
+-  Promise<undefined> seek(unsigned long long position);
+-  Promise<undefined> truncate(unsigned long long size);
+-};
+-
+ enum WellKnownDirectory {
+   "desktop",
+   "documents",
+@@ -135,8 +69,3 @@ partial interface Window {
+ partial interface DataTransferItem {
+     Promise<FileSystemHandle?> getAsFileSystemHandle();
+ };
+-
+-[SecureContext]
+-partial interface StorageManager {
+-  Promise<FileSystemDirectoryHandle> getDirectory();
+-};
+-- 
+2.35.1.windows.2
+
