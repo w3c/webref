@@ -107,17 +107,20 @@
     ]
   },
   "valuespaces": {
-    "<container-query>": {
+    "<container-condition>": {
+      "value": "not <query-in-parens> | <query-in-parens> [ [ and <query-in-parens> ]* | [ or <query-in-parens> ]* ]"
+    },
+    "<query-in-parens>": {
       "value": "( <container-condition> ) | ( <size-feature> ) | style( <style-query> ) | <general-enclosed>"
     },
-    "<container-condition>": {
-      "value": "not <container-query> | <container-query> [ and <container-query> ]* | <container-query> [ or <container-query> ]*"
-    },
     "<style-query>": {
-      "value": "<style-feature> | <style-condition>"
+      "value": "<style-condition> | <style-feature>"
     },
     "<style-condition>": {
-      "value": "not ( <style-query> ) | ( <style-query> ) [ and ( <style-query> ) ]* | ( <style-query> ) [ or ( <style-query> ) ]*"
+      "value": "not <style-in-parens> | <style-in-parens> [ [ and <style-in-parens> ]* | [ or <style-in-parens> ]* ]"
+    },
+    "<style-in-parens>": {
+      "value": "( <style-condition> ) | ( <style-feature> ) | <general-enclosed>"
     }
   }
 }
