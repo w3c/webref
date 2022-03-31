@@ -166,7 +166,7 @@
         "partial": false
       },
       "WebTransport": {
-        "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface WebTransport {\n  constructor(USVString url, optional WebTransportOptions options = {});\n\n  Promise<WebTransportStats> getStats();\n  readonly attribute Promise<undefined> ready;\n  readonly attribute Promise<WebTransportCloseInfo> closed;\n  undefined close(optional WebTransportCloseInfo closeInfo = {});\n\n  readonly attribute WebTransportDatagramDuplexStream datagrams;\n\n  Promise<WebTransportBidirectionalStream> createBidirectionalStream();\n  /* a ReadableStream of WebTransportBidirectionalStream objects */\n  readonly attribute ReadableStream incomingBidirectionalStreams;\n\n  Promise<WritableStream> createUnidirectionalStream();\n  /* a ReadableStream of ReceiveStreams */\n  readonly attribute ReadableStream incomingUnidirectionalStreams;\n};",
+        "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface WebTransport {\n  constructor(USVString url, optional WebTransportOptions options = {});\n\n  Promise<WebTransportStats> getStats();\n  readonly attribute Promise<undefined> ready;\n  readonly attribute WebTransportReliabilityMode reliability;\n  readonly attribute Promise<WebTransportCloseInfo> closed;\n  undefined close(optional WebTransportCloseInfo closeInfo = {});\n\n  readonly attribute WebTransportDatagramDuplexStream datagrams;\n\n  Promise<WebTransportBidirectionalStream> createBidirectionalStream();\n  /* a ReadableStream of WebTransportBidirectionalStream objects */\n  readonly attribute ReadableStream incomingBidirectionalStreams;\n\n  Promise<WritableStream> createUnidirectionalStream();\n  /* a ReadableStream of ReceiveStreams */\n  readonly attribute ReadableStream incomingUnidirectionalStreams;\n};",
         "type": "interface",
         "name": "WebTransport",
         "inheritance": null,
@@ -254,6 +254,21 @@
                   "idlType": "undefined"
                 }
               ]
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "reliability",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "WebTransportReliabilityMode"
             },
             "extAttrs": [],
             "special": "",
@@ -437,6 +452,26 @@
         ],
         "partial": false
       },
+      "WebTransportReliabilityMode": {
+        "fragment": "enum WebTransportReliabilityMode {\n  \"pending\",\n  \"reliable-only\",\n  \"supports-unreliable\",\n};",
+        "type": "enum",
+        "name": "WebTransportReliabilityMode",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "pending"
+          },
+          {
+            "type": "enum-value",
+            "value": "reliable-only"
+          },
+          {
+            "type": "enum-value",
+            "value": "supports-unreliable"
+          }
+        ],
+        "extAttrs": []
+      },
       "WebTransportHash": {
         "fragment": "dictionary WebTransportHash {\n  DOMString algorithm;\n  BufferSource value;\n};",
         "type": "dictionary",
@@ -478,7 +513,7 @@
         "partial": false
       },
       "WebTransportOptions": {
-        "fragment": "dictionary WebTransportOptions {\n  boolean allowPooling;\n  sequence<WebTransportHash> serverCertificateHashes;\n};",
+        "fragment": "dictionary WebTransportOptions {\n  boolean allowPooling = false;\n  boolean requireUnreliable = false;\n  sequence<WebTransportHash> serverCertificateHashes;\n};",
         "type": "dictionary",
         "name": "WebTransportOptions",
         "inheritance": null,
@@ -495,7 +530,28 @@
               "union": false,
               "idlType": "boolean"
             },
-            "default": null,
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "requireUnreliable",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
             "required": false
           },
           {
@@ -573,7 +629,7 @@
         "partial": false
       },
       "WebTransportStats": {
-        "fragment": "dictionary WebTransportStats {\n  DOMHighResTimeStamp timestamp;\n  unsigned long long bytesSent;\n  unsigned long long packetsSent;\n  unsigned long long packetsLost;\n  unsigned long numOutgoingStreamsCreated;\n  unsigned long numIncomingStreamsCreated;\n  unsigned long long bytesReceived;\n  unsigned long long packetsReceived;\n  DOMHighResTimeStamp smoothedRtt;\n  DOMHighResTimeStamp rttVariation;\n  DOMHighResTimeStamp minRtt;\n  unsigned long numReceivedDatagramsDropped;\n};",
+        "fragment": "dictionary WebTransportStats {\n  DOMHighResTimeStamp timestamp;\n  unsigned long long bytesSent;\n  unsigned long long packetsSent;\n  unsigned long long packetsLost;\n  unsigned long numOutgoingStreamsCreated;\n  unsigned long numIncomingStreamsCreated;\n  unsigned long long bytesReceived;\n  unsigned long long packetsReceived;\n  DOMHighResTimeStamp smoothedRtt;\n  DOMHighResTimeStamp rttVariation;\n  DOMHighResTimeStamp minRtt;\n  WebTransportDatagramStats datagrams;\n};",
         "type": "dictionary",
         "name": "WebTransportStats",
         "inheritance": null,
@@ -745,7 +801,7 @@
           },
           {
             "type": "field",
-            "name": "numReceivedDatagramsDropped",
+            "name": "datagrams",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -753,7 +809,77 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "unsigned long"
+              "idlType": "WebTransportDatagramStats"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "WebTransportDatagramStats": {
+        "fragment": "dictionary WebTransportDatagramStats {\n  DOMHighResTimeStamp timestamp;\n  unsigned long long expiredOutgoing;\n  unsigned long long droppedIncoming;\n  unsigned long long lostOutgoing;\n};",
+        "type": "dictionary",
+        "name": "WebTransportDatagramStats",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "timestamp",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMHighResTimeStamp"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "expiredOutgoing",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long long"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "droppedIncoming",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long long"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "lostOutgoing",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long long"
             },
             "default": null,
             "required": false
@@ -1000,6 +1126,7 @@
       "WebTransport": [
         "WebTransportOptions",
         "WebTransportStats",
+        "WebTransportReliabilityMode",
         "WebTransportCloseInfo",
         "WebTransportDatagramDuplexStream",
         "WebTransportBidirectionalStream",
@@ -1014,6 +1141,10 @@
       ],
       "WebTransportCloseInfo": [],
       "WebTransportStats": [
+        "DOMHighResTimeStamp",
+        "WebTransportDatagramStats"
+      ],
+      "WebTransportDatagramStats": [
         "DOMHighResTimeStamp"
       ],
       "WebTransportBidirectionalStream": [

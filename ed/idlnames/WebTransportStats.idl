@@ -11,5 +11,5 @@ dictionary WebTransportStats {
   DOMHighResTimeStamp smoothedRtt;
   DOMHighResTimeStamp rttVariation;
   DOMHighResTimeStamp minRtt;
-  unsigned long numReceivedDatagramsDropped;
+  WebTransportDatagramStats datagrams;
 };

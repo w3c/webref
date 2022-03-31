@@ -1052,6 +1052,88 @@
       "definedIn": "pre"
     },
     {
+      "id": "enumdef-webtransportreliabilitymode",
+      "href": "https://w3c.github.io/webtransport/#enumdef-webtransportreliabilitymode",
+      "linkingText": [
+        "WebTransportReliabilityMode"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "web-transport",
+        "href": "https://w3c.github.io/webtransport/#web-transport",
+        "title": "WebTransport Interface",
+        "number": "5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-webtransportreliabilitymode-pending",
+      "href": "https://w3c.github.io/webtransport/#dom-webtransportreliabilitymode-pending",
+      "linkingText": [
+        "\"pending\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "WebTransportReliabilityMode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "web-transport",
+        "href": "https://w3c.github.io/webtransport/#web-transport",
+        "title": "WebTransport Interface",
+        "number": "5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-webtransportreliabilitymode-reliable-only",
+      "href": "https://w3c.github.io/webtransport/#dom-webtransportreliabilitymode-reliable-only",
+      "linkingText": [
+        "\"reliable-only\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "WebTransportReliabilityMode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "web-transport",
+        "href": "https://w3c.github.io/webtransport/#web-transport",
+        "title": "WebTransport Interface",
+        "number": "5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-webtransportreliabilitymode-supports-unreliable",
+      "href": "https://w3c.github.io/webtransport/#dom-webtransportreliabilitymode-supports-unreliable",
+      "linkingText": [
+        "\"supports-unreliable\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "WebTransportReliabilityMode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "web-transport",
+        "href": "https://w3c.github.io/webtransport/#web-transport",
+        "title": "WebTransport Interface",
+        "number": "5"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "dom-webtransport-sendstreams-slot",
       "href": "https://w3c.github.io/webtransport/#dom-webtransport-sendstreams-slot",
       "linkingText": [
@@ -1161,6 +1243,27 @@
       "href": "https://w3c.github.io/webtransport/#dom-webtransport-ready-slot",
       "linkingText": [
         "[[Ready]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "WebTransport"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "webtransport-internal-slots",
+        "href": "https://w3c.github.io/webtransport/#webtransport-internal-slots",
+        "title": "Internal slots",
+        "number": "5.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dom-webtransport-reliability-slot",
+      "href": "https://w3c.github.io/webtransport/#dom-webtransport-reliability-slot",
+      "linkingText": [
+        "[[Reliability]]"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -1386,6 +1489,27 @@
       "href": "https://w3c.github.io/webtransport/#dom-webtransport-incomingunidirectionalstreams",
       "linkingText": [
         "incomingUnidirectionalStreams"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "WebTransport"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "webtransport-attributes",
+        "href": "https://w3c.github.io/webtransport/#webtransport-attributes",
+        "title": "Attributes",
+        "number": "5.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-webtransport-reliability",
+      "href": "https://w3c.github.io/webtransport/#dom-webtransport-reliability",
+      "linkingText": [
+        "reliability"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -1631,6 +1755,27 @@
       "definedIn": "dt"
     },
     {
+      "id": "dom-webtransportoptions-requireunreliable",
+      "href": "https://w3c.github.io/webtransport/#dom-webtransportoptions-requireunreliable",
+      "linkingText": [
+        "requireUnreliable"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "WebTransportOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "web-transport-configuration",
+        "href": "https://w3c.github.io/webtransport/#web-transport-configuration",
+        "title": "Configuration",
+        "number": "5.9"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "dom-webtransportoptions-servercertificatehashes",
       "href": "https://w3c.github.io/webtransport/#dom-webtransportoptions-servercertificatehashes",
       "linkingText": [
@@ -1806,6 +1951,27 @@
         "number": "5.11"
       },
       "definedIn": "prose"
+    },
+    {
+      "id": "dom-webtransportstats-datagrams",
+      "href": "https://w3c.github.io/webtransport/#dom-webtransportstats-datagrams",
+      "linkingText": [
+        "datagrams"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "WebTransportStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "web-transport-stats",
+        "href": "https://w3c.github.io/webtransport/#web-transport-stats",
+        "title": "WebTransportStats Dictionary",
+        "number": "5.11"
+      },
+      "definedIn": "pre"
     },
     {
       "id": "dom-webtransportstats-timestamp",
@@ -2039,23 +2205,105 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-webtransportstats-numreceiveddatagramsdropped",
-      "href": "https://w3c.github.io/webtransport/#dom-webtransportstats-numreceiveddatagramsdropped",
+      "id": "dictdef-webtransportdatagramstats",
+      "href": "https://w3c.github.io/webtransport/#dictdef-webtransportdatagramstats",
       "linkingText": [
-        "numReceivedDatagramsDropped"
+        "WebTransportDatagramStats"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "web-transport-stats①",
+        "href": "https://w3c.github.io/webtransport/#web-transport-stats%E2%91%A0",
+        "title": "WebTransportDatagramStats Dictionary",
+        "number": "5.12"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-webtransportdatagramstats-timestamp",
+      "href": "https://w3c.github.io/webtransport/#dom-webtransportdatagramstats-timestamp",
+      "linkingText": [
+        "timestamp"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "WebTransportStats"
+        "WebTransportDatagramStats"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "web-transport-stats",
-        "href": "https://w3c.github.io/webtransport/#web-transport-stats",
-        "title": "WebTransportStats Dictionary",
-        "number": "5.11"
+        "id": "web-transport-stats①",
+        "href": "https://w3c.github.io/webtransport/#web-transport-stats%E2%91%A0",
+        "title": "WebTransportDatagramStats Dictionary",
+        "number": "5.12"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-webtransportdatagramstats-expiredoutgoing",
+      "href": "https://w3c.github.io/webtransport/#dom-webtransportdatagramstats-expiredoutgoing",
+      "linkingText": [
+        "expiredOutgoing"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "WebTransportDatagramStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "web-transport-stats①",
+        "href": "https://w3c.github.io/webtransport/#web-transport-stats%E2%91%A0",
+        "title": "WebTransportDatagramStats Dictionary",
+        "number": "5.12"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-webtransportdatagramstats-droppedincoming",
+      "href": "https://w3c.github.io/webtransport/#dom-webtransportdatagramstats-droppedincoming",
+      "linkingText": [
+        "droppedIncoming"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "WebTransportDatagramStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "web-transport-stats①",
+        "href": "https://w3c.github.io/webtransport/#web-transport-stats%E2%91%A0",
+        "title": "WebTransportDatagramStats Dictionary",
+        "number": "5.12"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-webtransportdatagramstats-lostoutgoing",
+      "href": "https://w3c.github.io/webtransport/#dom-webtransportdatagramstats-lostoutgoing",
+      "linkingText": [
+        "lostOutgoing"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "WebTransportDatagramStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "web-transport-stats①",
+        "href": "https://w3c.github.io/webtransport/#web-transport-stats%E2%91%A0",
+        "title": "WebTransportDatagramStats Dictionary",
+        "number": "5.12"
       },
       "definedIn": "dt"
     },
