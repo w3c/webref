@@ -12,6 +12,20 @@
   "extended": [
     {
       "spec": {
+        "title": "The Capture-Handle Actions Mechanism",
+        "url": "https://w3c.github.io/mediacapture-handle/actions/"
+      },
+      "fragment": "partial interface MediaDevices {\n  undefined setSupportedCaptureActions(sequence<DOMString> actions);\n  attribute EventHandler oncaptureaction;\n};"
+    },
+    {
+      "spec": {
+        "title": "Capture Handle - Bootstrapping Collaboration when Screensharing",
+        "url": "https://w3c.github.io/mediacapture-handle/identity/"
+      },
+      "fragment": "partial interface MediaDevices {\n  undefined setCaptureHandleConfig(optional CaptureHandleConfig config = {});\n};"
+    },
+    {
+      "spec": {
         "title": "Region Capture",
         "url": "https://w3c.github.io/mediacapture-region/"
       },
@@ -170,6 +184,85 @@
           "title": "Methods"
         },
         "definedIn": "prose"
+      }
+    ],
+    "https://w3c.github.io/mediacapture-handle/actions/": [
+      {
+        "id": "dom-mediadevices-setsupportedcaptureactions",
+        "href": "https://w3c.github.io/mediacapture-handle/actions/#dom-mediadevices-setsupportedcaptureactions",
+        "linkingText": [
+          "setSupportedCaptureActions()",
+          "setSupportedCaptureActions(actions)"
+        ],
+        "localLinkingText": [
+          "MediaDevices.setSupportedCaptureActions",
+          "MediaDevices.setSupportedCaptureActions()",
+          "setSupportedCaptureActions"
+        ],
+        "type": "method",
+        "for": [
+          "MediaDevices"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "set-supported-capture-actions",
+          "href": "https://w3c.github.io/mediacapture-handle/actions/#set-supported-capture-actions",
+          "title": "Registering and responding to capture actions",
+          "number": "3.1.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediadevices-oncaptureaction",
+        "href": "https://w3c.github.io/mediacapture-handle/actions/#dom-mediadevices-oncaptureaction",
+        "linkingText": [
+          "oncaptureaction"
+        ],
+        "localLinkingText": [
+          "MediaDevices.oncaptureaction"
+        ],
+        "type": "attribute",
+        "for": [
+          "MediaDevices"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "set-supported-capture-actions",
+          "href": "https://w3c.github.io/mediacapture-handle/actions/#set-supported-capture-actions",
+          "title": "Registering and responding to capture actions",
+          "number": "3.1.1"
+        },
+        "definedIn": "dt"
+      }
+    ],
+    "https://w3c.github.io/mediacapture-handle/identity/": [
+      {
+        "id": "dom-mediadevices-setcapturehandleconfig",
+        "href": "https://w3c.github.io/mediacapture-handle/identity/#dom-mediadevices-setcapturehandleconfig",
+        "linkingText": [
+          "setCaptureHandleConfig()",
+          "setCaptureHandleConfig(config)"
+        ],
+        "localLinkingText": [
+          "MediaDevices.setCaptureHandleConfig",
+          "MediaDevices.setCaptureHandleConfig()",
+          "setCaptureHandleConfig"
+        ],
+        "type": "method",
+        "for": [
+          "MediaDevices"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "set-capture-handle-config",
+          "href": "https://w3c.github.io/mediacapture-handle/identity/#set-capture-handle-config",
+          "title": "MediaDevices.setCaptureHandleConfig()",
+          "number": "4.2"
+        },
+        "definedIn": "dt"
       }
     ],
     "https://w3c.github.io/mediacapture-region/": [

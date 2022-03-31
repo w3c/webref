@@ -470,7 +470,7 @@
         "partial": false
       },
       "NavigationNavigateOptions": {
-        "fragment": "dictionary NavigationNavigateOptions : NavigationOptions {\n  any state;\n  boolean replace = false;\n};",
+        "fragment": "dictionary NavigationNavigateOptions : NavigationOptions {\n  any state;\n  NavigationHistoryBehavior history = \"auto\";\n};",
         "type": "dictionary",
         "name": "NavigationNavigateOptions",
         "inheritance": "NavigationOptions",
@@ -492,7 +492,7 @@
           },
           {
             "type": "field",
-            "name": "replace",
+            "name": "history",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -500,11 +500,11 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "boolean"
+              "idlType": "NavigationHistoryBehavior"
             },
             "default": {
-              "type": "boolean",
-              "value": false
+              "type": "string",
+              "value": "auto"
             },
             "required": false
           }
@@ -594,6 +594,26 @@
         ],
         "extAttrs": [],
         "partial": false
+      },
+      "NavigationHistoryBehavior": {
+        "fragment": "enum NavigationHistoryBehavior {\n  \"auto\",\n  \"push\",\n  \"replace\"\n};",
+        "type": "enum",
+        "name": "NavigationHistoryBehavior",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "auto"
+          },
+          {
+            "type": "enum-value",
+            "value": "push"
+          },
+          {
+            "type": "enum-value",
+            "value": "replace"
+          }
+        ],
+        "extAttrs": []
       },
       "NavigationCurrentEntryChangeEvent": {
         "fragment": "[Exposed=Window]\ninterface NavigationCurrentEntryChangeEvent : Event {\n  constructor(DOMString type, NavigationCurrentEntryChangeEventInit eventInit);\n\n  readonly attribute NavigationNavigationType? navigationType;\n  readonly attribute NavigationHistoryEntry from;\n};",
@@ -834,7 +854,7 @@
         "partial": false
       },
       "NavigateEvent": {
-        "fragment": "[Exposed=Window]\ninterface NavigateEvent : Event {\n  constructor(DOMString type, NavigateEventInit eventInit);\n\n  readonly attribute NavigationNavigationType navigationType;\n  readonly attribute NavigationDestination destination;\n  readonly attribute boolean canTransition;\n  readonly attribute boolean userInitiated;\n  readonly attribute boolean hashChange;\n  readonly attribute AbortSignal signal;\n  readonly attribute FormData? formData;\n  readonly attribute any info;\n\n  undefined transitionWhile(Promise<undefined> newNavigationAction);\n};",
+        "fragment": "[Exposed=Window]\ninterface NavigateEvent : Event {\n  constructor(DOMString type, NavigateEventInit eventInit);\n\n  readonly attribute NavigationNavigationType navigationType;\n  readonly attribute NavigationDestination destination;\n  readonly attribute boolean canTransition;\n  readonly attribute boolean userInitiated;\n  readonly attribute boolean hashChange;\n  readonly attribute AbortSignal signal;\n  readonly attribute FormData? formData;\n  readonly attribute DOMString? downloadRequest;\n  readonly attribute any info;\n\n  undefined transitionWhile(Promise<undefined> newNavigationAction);\n};",
         "type": "interface",
         "name": "NavigateEvent",
         "inheritance": "Event",
@@ -984,6 +1004,21 @@
           },
           {
             "type": "attribute",
+            "name": "downloadRequest",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
             "name": "info",
             "idlType": {
               "type": "attribute-type",
@@ -1053,7 +1088,7 @@
         "partial": false
       },
       "NavigateEventInit": {
-        "fragment": "dictionary NavigateEventInit : EventInit {\n  NavigationNavigationType navigationType = \"push\";\n  required NavigationDestination destination;\n  boolean canTransition = false;\n  boolean userInitiated = false;\n  boolean hashChange = false;\n  required AbortSignal signal;\n  FormData? formData = null;\n  any info;\n};",
+        "fragment": "dictionary NavigateEventInit : EventInit {\n  NavigationNavigationType navigationType = \"push\";\n  required NavigationDestination destination;\n  boolean canTransition = false;\n  boolean userInitiated = false;\n  boolean hashChange = false;\n  required AbortSignal signal;\n  FormData? formData = null;\n  DOMString? downloadRequest = null;\n  any info;\n};",
         "type": "dictionary",
         "name": "NavigateEventInit",
         "inheritance": "EventInit",
@@ -1171,6 +1206,23 @@
               "nullable": true,
               "union": false,
               "idlType": "FormData"
+            },
+            "default": {
+              "type": "null"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "downloadRequest",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "DOMString"
             },
             "default": {
               "type": "null"
@@ -1566,7 +1618,8 @@
       "NavigationUpdateCurrentEntryOptions": [],
       "NavigationOptions": [],
       "NavigationNavigateOptions": [
-        "NavigationOptions"
+        "NavigationOptions",
+        "NavigationHistoryBehavior"
       ],
       "NavigationReloadOptions": [
         "NavigationOptions"

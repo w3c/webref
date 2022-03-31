@@ -8,7 +8,7 @@ interface StorageManager {
   Promise<StorageEstimate> estimate();
 };
 
-// Source: File System Access (https://wicg.github.io/file-system-access/)
+// Source: File System Standard (https://fs.spec.whatwg.org/)
 [SecureContext]
 partial interface StorageManager {
   Promise<FileSystemDirectoryHandle> getDirectory();

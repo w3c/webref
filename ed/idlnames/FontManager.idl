@@ -2,5 +2,5 @@
 [SecureContext,
  Exposed=Window]
 interface FontManager {
-  Promise<sequence<FontMetadata>> query(optional QueryOptions options = {});
+  Promise<sequence<FontData>> query(optional QueryOptions options = {});
 };

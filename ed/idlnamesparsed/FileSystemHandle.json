@@ -3,20 +3,28 @@
   "type": "interface",
   "defined": {
     "spec": {
-      "title": "File System Access",
-      "url": "https://wicg.github.io/file-system-access/"
+      "title": "File System Standard",
+      "url": "https://fs.spec.whatwg.org/"
     },
-    "fragment": "[Exposed=(Window,Worker), SecureContext, Serializable]\ninterface FileSystemHandle {\n  readonly attribute FileSystemHandleKind kind;\n  readonly attribute USVString name;\n\n  Promise<boolean> isSameEntry(FileSystemHandle other);\n\n  Promise<PermissionState> queryPermission(optional FileSystemHandlePermissionDescriptor descriptor = {});\n  Promise<PermissionState> requestPermission(optional FileSystemHandlePermissionDescriptor descriptor = {});\n};",
-    "href": "https://wicg.github.io/file-system-access/#filesystemhandle"
+    "fragment": "[Exposed=(Window,Worker), SecureContext, Serializable]\ninterface FileSystemHandle {\n  readonly attribute FileSystemHandleKind kind;\n  readonly attribute USVString name;\n\n  Promise<boolean> isSameEntry(FileSystemHandle other);\n};",
+    "href": "https://fs.spec.whatwg.org/#filesystemhandle"
   },
-  "extended": [],
+  "extended": [
+    {
+      "spec": {
+        "title": "File System Access",
+        "url": "https://wicg.github.io/file-system-access/"
+      },
+      "fragment": "[Exposed=(Window,Worker), SecureContext, Serializable]\npartial interface FileSystemHandle {\n  Promise<PermissionState> queryPermission(optional FileSystemHandlePermissionDescriptor descriptor = {});\n  Promise<PermissionState> requestPermission(optional FileSystemHandlePermissionDescriptor descriptor = {});\n};"
+    }
+  ],
   "inheritance": null,
   "includes": [],
   "dfns": {
-    "https://wicg.github.io/file-system-access/": [
+    "https://fs.spec.whatwg.org/": [
       {
         "id": "filesystemhandle",
-        "href": "https://wicg.github.io/file-system-access/#filesystemhandle",
+        "href": "https://fs.spec.whatwg.org/#filesystemhandle",
         "linkingText": [
           "FileSystemHandle"
         ],
@@ -27,15 +35,15 @@
         "informative": false,
         "heading": {
           "id": "api-filesystemhandle",
-          "href": "https://wicg.github.io/file-system-access/#api-filesystemhandle",
+          "href": "https://fs.spec.whatwg.org/#api-filesystemhandle",
           "title": "The FileSystemHandle interface",
-          "number": "2.3"
+          "number": "2.2"
         },
         "definedIn": "pre"
       },
       {
         "id": "dom-filesystemhandle-kind",
-        "href": "https://wicg.github.io/file-system-access/#dom-filesystemhandle-kind",
+        "href": "https://fs.spec.whatwg.org/#dom-filesystemhandle-kind",
         "linkingText": [
           "kind"
         ],
@@ -48,15 +56,15 @@
         "informative": false,
         "heading": {
           "id": "api-filesystemhandle",
-          "href": "https://wicg.github.io/file-system-access/#api-filesystemhandle",
+          "href": "https://fs.spec.whatwg.org/#api-filesystemhandle",
           "title": "The FileSystemHandle interface",
-          "number": "2.3"
+          "number": "2.2"
         },
         "definedIn": "prose"
       },
       {
         "id": "dom-filesystemhandle-name",
-        "href": "https://wicg.github.io/file-system-access/#dom-filesystemhandle-name",
+        "href": "https://fs.spec.whatwg.org/#dom-filesystemhandle-name",
         "linkingText": [
           "name"
         ],
@@ -69,15 +77,15 @@
         "informative": false,
         "heading": {
           "id": "api-filesystemhandle",
-          "href": "https://wicg.github.io/file-system-access/#api-filesystemhandle",
+          "href": "https://fs.spec.whatwg.org/#api-filesystemhandle",
           "title": "The FileSystemHandle interface",
-          "number": "2.3"
+          "number": "2.2"
         },
         "definedIn": "prose"
       },
       {
         "id": "dom-filesystemhandle-issameentry",
-        "href": "https://wicg.github.io/file-system-access/#dom-filesystemhandle-issameentry",
+        "href": "https://fs.spec.whatwg.org/#dom-filesystemhandle-issameentry",
         "linkingText": [
           "isSameEntry(other)"
         ],
@@ -90,12 +98,14 @@
         "informative": false,
         "heading": {
           "id": "api-filesystemhandle-issameentry",
-          "href": "https://wicg.github.io/file-system-access/#api-filesystemhandle-issameentry",
+          "href": "https://fs.spec.whatwg.org/#api-filesystemhandle-issameentry",
           "title": "The isSameEntry() method",
-          "number": "2.3.1"
+          "number": "2.2.1"
         },
         "definedIn": "prose"
-      },
+      }
+    ],
+    "https://wicg.github.io/file-system-access/": [
       {
         "id": "dom-filesystemhandle-querypermission",
         "href": "https://wicg.github.io/file-system-access/#dom-filesystemhandle-querypermission",

@@ -10,6 +10,7 @@ interface NavigateEvent : Event {
   readonly attribute boolean hashChange;
   readonly attribute AbortSignal signal;
   readonly attribute FormData? formData;
+  readonly attribute DOMString? downloadRequest;
   readonly attribute any info;
 
   undefined transitionWhile(Promise<undefined> newNavigationAction);

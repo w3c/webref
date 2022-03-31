@@ -25,24 +25,26 @@
       "current-entry",
       "same-origin",
       "concept-relevant-realm",
+      "queue-a-global-task",
       "session-history-entry",
       "structuredserializeforstorage",
       "dom-location-href",
       "serialized-state",
       "event-unhandledrejection",
       "serializable-objects",
-      "navigate-fragid",
       "parse-a-url",
       "relevant-settings-object",
       "resulting-url-record",
-      "fully-active",
-      "unload-counter",
+      "is-initial-about:blank",
+      "completely-loaded",
+      "navigate",
       "hh-replace",
       "hh-default",
       "active-document",
       "hh-reload",
       "history-handling-behavior",
-      "navigate",
+      "fully-active",
+      "unload-counter",
       "navigation-hh",
       "source-browsing-context",
       "dom-location-assign",
@@ -58,6 +60,8 @@
       "the-a-element",
       "the-form-element",
       "concept-form-submit",
+      "the-area-element",
+      "attr-hyperlink-download",
       "dom-document-2",
       "dom-history-pushstate",
       "structureddeserialize",
@@ -70,9 +74,6 @@
       "dom-errorevent-lineno",
       "dom-errorevent-colno",
       "report-the-exception",
-      "url-and-history-update-steps",
-      "uhus-serializeddata",
-      "uhus-ispush",
       "dom-window-stop",
       "browsing-context",
       "active-window",
@@ -83,7 +84,6 @@
       "plan-to-navigate",
       "navigation-navigationtype",
       "submit-body",
-      "the-area-element",
       "traverse-the-history-by-a-delta",
       "following-hyperlinks-2",
       "providing-users-with-a-means-to-follow-hyperlinks-created-using-the-link-element",
@@ -92,13 +92,18 @@
       "the-button-element",
       "concept-submit-button",
       "implicit-submission",
-      "shared-history-push/replace-state-steps",
       "hh-entry-update",
+      "downloading-hyperlinks",
+      "allowed-to-download",
+      "cannot-navigate",
       "concept-origin",
       "update-the-session-history-with-the-new-page",
       "traverse-the-history",
       "requires-storing-the-policy-container-in-history",
       "determining-navigation-params-policy-container",
+      "event-popstate",
+      "event-hashchange",
+      "event-pageshow",
       "creating-a-new-browsing-context",
       "stop-document-loading",
       "a-browsing-context-is-discarded",
@@ -127,6 +132,7 @@
       "mark-a-promise-as-handled",
       "aborterror",
       "syntaxerror",
+      "notsupportederror",
       "a-promise-rejected-with",
       "a-promise-resolved-with",
       "securityerror",
@@ -138,6 +144,7 @@
       "eventtarget",
       "concept-document-origin",
       "concept-event-fire",
+      "document",
       "event",
       "dictdef-eventinit",
       "eventdef-abortsignal-abort",
@@ -145,7 +152,6 @@
       "abortsignal-signal-abort",
       "abortsignal",
       "concept-document-url",
-      "document",
       "dom-event-istrusted",
       "dispatch-flag",
       "concept-event-create",
@@ -183,15 +189,23 @@
       "referrer-policy-origin",
       "referrer-policy"
     ],
+    "https://whatpr.org/html/6315/webappapis.html": [
+      "navigation-and-traversal-task-source"
+    ],
     "https://whatpr.org/html/6315/history.html": [
+      "reactivate-a-document",
       "tn-session-history-traversal-queue",
+      "navigate-fragid",
       "nav-traversable",
       "getting-session-history-entries",
       "nav-active-history-entry",
       "she-step",
       "tn-current-session-history-step",
       "getting-all-history-steps",
-      "apply-the-history-step"
+      "apply-the-history-step",
+      "uhus-serializeddata",
+      "uhus-historyhandling",
+      "update-document-for-history-step-application"
     ],
     "https://fetch.spec.whatwg.org/": [
       "concept-response-status",
@@ -201,19 +215,23 @@
       "fetch-scheme"
     ],
     "https://url.spec.whatwg.org/": [
+      "concept-url-scheme",
       "concept-url",
       "concept-url-serializer",
       "concept-url-equals",
       "url-equals-exclude-fragments",
-      "concept-url-fragment",
-      "concept-url-scheme"
+      "concept-url-fragment"
     ],
     "https://whatpr.org/html/6315/browsers.html": [
-      "bc-navigable"
+      "bc-navigable",
+      "url-and-history-update-steps",
+      "shared-history-push/replace-state-steps",
+      "nav-window"
     ],
     "https://xhr.spec.whatwg.org/": [
       "formdata"
     ],
+    "https://github.com/whatwg/html/issues/7718": [],
     "https://github.com/whatwg/html/issues/5381": [],
     "https://w3c.github.io/webappsec-fetch-metadata/": [
       "http-headerdef-sec-fetch-site"
@@ -221,6 +239,7 @@
     "https://console.spec.whatwg.org/": [
       "report-a-warning-to-the-console"
     ],
+    "https://github.com/whatwg/html/issues/5548": [],
     "https://wicg.github.io/uuid/": [
       "dfn-generate-a-random-uuid"
     ],

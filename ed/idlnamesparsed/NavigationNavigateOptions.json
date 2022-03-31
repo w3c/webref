@@ -6,7 +6,7 @@
       "title": "Navigation API",
       "url": "https://wicg.github.io/navigation-api/"
     },
-    "fragment": "dictionary NavigationNavigateOptions : NavigationOptions {\n  any state;\n  boolean replace = false;\n};",
+    "fragment": "dictionary NavigationNavigateOptions : NavigationOptions {\n  any state;\n  NavigationHistoryBehavior history = \"auto\";\n};",
     "href": "https://wicg.github.io/navigation-api/#dictdef-navigationnavigateoptions"
   },
   "extended": [],
@@ -69,10 +69,10 @@
         "definedIn": "pre"
       },
       {
-        "id": "dom-navigationnavigateoptions-replace",
-        "href": "https://wicg.github.io/navigation-api/#dom-navigationnavigateoptions-replace",
+        "id": "dom-navigationnavigateoptions-history",
+        "href": "https://wicg.github.io/navigation-api/#dom-navigationnavigateoptions-history",
         "linkingText": [
-          "replace"
+          "history"
         ],
         "localLinkingText": [],
         "type": "dict-member",

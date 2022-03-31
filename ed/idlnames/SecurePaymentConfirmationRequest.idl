@@ -5,6 +5,7 @@ dictionary SecurePaymentConfirmationRequest {
     required FrozenArray<BufferSource> credentialIds;
     required PaymentCredentialInstrument instrument;
     unsigned long timeout;
-    required USVString payeeOrigin;
+    DOMString payeeName;
+    USVString payeeOrigin;
     AuthenticationExtensionsClientInputs extensions;
 };

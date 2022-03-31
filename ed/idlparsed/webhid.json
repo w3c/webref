@@ -159,7 +159,7 @@
         "partial": false
       },
       "HIDDeviceRequestOptions": {
-        "fragment": "dictionary HIDDeviceRequestOptions {\n    required sequence<HIDDeviceFilter> filters;\n};",
+        "fragment": "dictionary HIDDeviceRequestOptions {\n    required sequence<HIDDeviceFilter> filters;\n    sequence<HIDDeviceFilter> exclusionFilters;\n};",
         "type": "dictionary",
         "name": "HIDDeviceRequestOptions",
         "inheritance": null,
@@ -187,6 +187,30 @@
             },
             "default": null,
             "required": true
+          },
+          {
+            "type": "field",
+            "name": "exclusionFilters",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "HIDDeviceFilter"
+                }
+              ]
+            },
+            "default": null,
+            "required": false
           }
         ],
         "extAttrs": [],

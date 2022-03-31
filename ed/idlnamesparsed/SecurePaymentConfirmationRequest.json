@@ -6,7 +6,7 @@
       "title": "Secure Payment Confirmation",
       "url": "https://www.w3.org/TR/secure-payment-confirmation/"
     },
-    "fragment": "dictionary SecurePaymentConfirmationRequest {\n    required BufferSource challenge;\n    required USVString rpId;\n    required FrozenArray<BufferSource> credentialIds;\n    required PaymentCredentialInstrument instrument;\n    unsigned long timeout;\n    required USVString payeeOrigin;\n    AuthenticationExtensionsClientInputs extensions;\n};",
+    "fragment": "dictionary SecurePaymentConfirmationRequest {\n    required BufferSource challenge;\n    required USVString rpId;\n    required FrozenArray<BufferSource> credentialIds;\n    required PaymentCredentialInstrument instrument;\n    unsigned long timeout;\n    DOMString payeeName;\n    USVString payeeOrigin;\n    AuthenticationExtensionsClientInputs extensions;\n};",
     "href": "https://w3c.github.io/secure-payment-confirmation/#dictdef-securepaymentconfirmationrequest"
   },
   "extended": [],
@@ -122,6 +122,27 @@
         "href": "https://w3c.github.io/secure-payment-confirmation/#dom-securepaymentconfirmationrequest-timeout",
         "linkingText": [
           "timeout"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "SecurePaymentConfirmationRequest"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "sctn-securepaymentconfirmationrequest-dictionary",
+          "href": "https://w3c.github.io/secure-payment-confirmation/#sctn-securepaymentconfirmationrequest-dictionary",
+          "title": "SecurePaymentConfirmationRequest Dictionary",
+          "number": "4.1.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-securepaymentconfirmationrequest-payeename",
+        "href": "https://w3c.github.io/secure-payment-confirmation/#dom-securepaymentconfirmationrequest-payeename",
+        "linkingText": [
+          "payeeName"
         ],
         "localLinkingText": [],
         "type": "dict-member",

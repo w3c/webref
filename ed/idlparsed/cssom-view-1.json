@@ -621,11 +621,84 @@
         "partial": false
       },
       "IsVisibleOptions": {
-        "fragment": "dictionary IsVisibleOptions {\n\n};",
+        "fragment": "dictionary IsVisibleOptions {\n    boolean checkAriaHidden = false;\n    boolean checkInert = false;\n    boolean checkOpacity = false;\n    boolean checkVisibilityCSS = false;\n};",
         "type": "dictionary",
         "name": "IsVisibleOptions",
         "inheritance": null,
-        "members": [],
+        "members": [
+          {
+            "type": "field",
+            "name": "checkAriaHidden",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "checkInert",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "checkOpacity",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "checkVisibilityCSS",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false
+          }
+        ],
         "extAttrs": [],
         "partial": false
       },

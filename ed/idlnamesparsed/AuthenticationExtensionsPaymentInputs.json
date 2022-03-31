@@ -6,7 +6,7 @@
       "title": "Secure Payment Confirmation",
       "url": "https://www.w3.org/TR/secure-payment-confirmation/"
     },
-    "fragment": "dictionary AuthenticationExtensionsPaymentInputs {\n  boolean isPayment;\n\n  // Only used for authentication.\n  USVString rp;\n  USVString topOrigin;\n  USVString payeeOrigin;\n  PaymentCurrencyAmount total;\n  PaymentCredentialInstrument instrument;\n};",
+    "fragment": "dictionary AuthenticationExtensionsPaymentInputs {\n  boolean isPayment;\n\n  // Only used for authentication.\n  USVString rp;\n  USVString topOrigin;\n  DOMString payeeName;\n  USVString payeeOrigin;\n  PaymentCurrencyAmount total;\n  PaymentCredentialInstrument instrument;\n};",
     "href": "https://w3c.github.io/secure-payment-confirmation/#dictdef-authenticationextensionspaymentinputs"
   },
   "extended": [],
@@ -80,6 +80,27 @@
         "href": "https://w3c.github.io/secure-payment-confirmation/#dom-authenticationextensionspaymentinputs-toporigin",
         "linkingText": [
           "topOrigin"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "AuthenticationExtensionsPaymentInputs"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "sctn-payment-extension-registration",
+          "href": "https://w3c.github.io/secure-payment-confirmation/#sctn-payment-extension-registration",
+          "title": "WebAuthn Extension - \"payment\"",
+          "number": "5"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-authenticationextensionspaymentinputs-payeename",
+        "href": "https://w3c.github.io/secure-payment-confirmation/#dom-authenticationextensionspaymentinputs-payeename",
+        "linkingText": [
+          "payeeName"
         ],
         "localLinkingText": [],
         "type": "dict-member",

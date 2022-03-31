@@ -18,7 +18,7 @@
         "title": "HTML Standard",
         "url": "https://html.spec.whatwg.org/multipage/"
       },
-      "fragment": "[Exposed=Window]\ninterface HTMLElement : Element {\n  [HTMLConstructor] constructor();\n\n  // metadata attributes\n  [CEReactions] attribute DOMString title;\n  [CEReactions] attribute DOMString lang;\n  [CEReactions] attribute boolean translate;\n  [CEReactions] attribute DOMString dir;\n\n  // user interaction\n  [CEReactions] attribute boolean hidden;\n  [CEReactions] attribute boolean inert;\n  undefined click();\n  [CEReactions] attribute DOMString accessKey;\n  readonly attribute DOMString accessKeyLabel;\n  [CEReactions] attribute boolean draggable;\n  [CEReactions] attribute boolean spellcheck;\n  [CEReactions] attribute DOMString autocapitalize;\n\n  [CEReactions] attribute [LegacyNullToEmptyString] DOMString innerText;\n  [CEReactions] attribute [LegacyNullToEmptyString] DOMString outerText;\n\n  ElementInternals attachInternals();\n};",
+      "fragment": "[Exposed=Window]\ninterface HTMLElement : Element {\n  [HTMLConstructor] constructor();\n\n  // metadata attributes\n  [CEReactions] attribute DOMString title;\n  [CEReactions] attribute DOMString lang;\n  [CEReactions] attribute boolean translate;\n  [CEReactions] attribute DOMString dir;\n\n  // user interaction\n  [CEReactions] attribute (boolean or unrestricted double or DOMString)? hidden;\n  [CEReactions] attribute boolean inert;\n  undefined click();\n  [CEReactions] attribute DOMString accessKey;\n  readonly attribute DOMString accessKeyLabel;\n  [CEReactions] attribute boolean draggable;\n  [CEReactions] attribute boolean spellcheck;\n  [CEReactions] attribute DOMString autocapitalize;\n\n  [CEReactions] attribute [LegacyNullToEmptyString] DOMString innerText;\n  [CEReactions] attribute [LegacyNullToEmptyString] DOMString outerText;\n\n  ElementInternals attachInternals();\n};",
       "href": "https://html.spec.whatwg.org/multipage/dom.html#htmlelement"
     },
     "extended": [
@@ -401,7 +401,7 @@
             "title": "HTML Standard",
             "url": "https://html.spec.whatwg.org/multipage/"
           },
-          "fragment": "interface mixin GlobalEventHandlers {\n  attribute EventHandler onabort;\n  attribute EventHandler onauxclick;\n  attribute EventHandler onblur;\n  attribute EventHandler oncancel;\n  attribute EventHandler oncanplay;\n  attribute EventHandler oncanplaythrough;\n  attribute EventHandler onchange;\n  attribute EventHandler onclick;\n  attribute EventHandler onclose;\n  attribute EventHandler oncontextlost;\n  attribute EventHandler oncontextmenu;\n  attribute EventHandler oncontextrestored;\n  attribute EventHandler oncuechange;\n  attribute EventHandler ondblclick;\n  attribute EventHandler ondrag;\n  attribute EventHandler ondragend;\n  attribute EventHandler ondragenter;\n  attribute EventHandler ondragleave;\n  attribute EventHandler ondragover;\n  attribute EventHandler ondragstart;\n  attribute EventHandler ondrop;\n  attribute EventHandler ondurationchange;\n  attribute EventHandler onemptied;\n  attribute EventHandler onended;\n  attribute OnErrorEventHandler onerror;\n  attribute EventHandler onfocus;\n  attribute EventHandler onformdata;\n  attribute EventHandler oninput;\n  attribute EventHandler oninvalid;\n  attribute EventHandler onkeydown;\n  attribute EventHandler onkeypress;\n  attribute EventHandler onkeyup;\n  attribute EventHandler onload;\n  attribute EventHandler onloadeddata;\n  attribute EventHandler onloadedmetadata;\n  attribute EventHandler onloadstart;\n  attribute EventHandler onmousedown;\n  [LegacyLenientThis] attribute EventHandler onmouseenter;\n  [LegacyLenientThis] attribute EventHandler onmouseleave;\n  attribute EventHandler onmousemove;\n  attribute EventHandler onmouseout;\n  attribute EventHandler onmouseover;\n  attribute EventHandler onmouseup;\n  attribute EventHandler onpause;\n  attribute EventHandler onplay;\n  attribute EventHandler onplaying;\n  attribute EventHandler onprogress;\n  attribute EventHandler onratechange;\n  attribute EventHandler onreset;\n  attribute EventHandler onresize;\n  attribute EventHandler onscroll;\n  attribute EventHandler onsecuritypolicyviolation;\n  attribute EventHandler onseeked;\n  attribute EventHandler onseeking;\n  attribute EventHandler onselect;\n  attribute EventHandler onslotchange;\n  attribute EventHandler onstalled;\n  attribute EventHandler onsubmit;\n  attribute EventHandler onsuspend;\n  attribute EventHandler ontimeupdate;\n  attribute EventHandler ontoggle;\n  attribute EventHandler onvolumechange;\n  attribute EventHandler onwaiting;\n  attribute EventHandler onwebkitanimationend;\n  attribute EventHandler onwebkitanimationiteration;\n  attribute EventHandler onwebkitanimationstart;\n  attribute EventHandler onwebkittransitionend;\n  attribute EventHandler onwheel;\n};",
+          "fragment": "interface mixin GlobalEventHandlers {\n  attribute EventHandler onabort;\n  attribute EventHandler onauxclick;\n  attribute EventHandler onbeforematch;\n  attribute EventHandler onblur;\n  attribute EventHandler oncancel;\n  attribute EventHandler oncanplay;\n  attribute EventHandler oncanplaythrough;\n  attribute EventHandler onchange;\n  attribute EventHandler onclick;\n  attribute EventHandler onclose;\n  attribute EventHandler oncontextlost;\n  attribute EventHandler oncontextmenu;\n  attribute EventHandler oncontextrestored;\n  attribute EventHandler oncuechange;\n  attribute EventHandler ondblclick;\n  attribute EventHandler ondrag;\n  attribute EventHandler ondragend;\n  attribute EventHandler ondragenter;\n  attribute EventHandler ondragleave;\n  attribute EventHandler ondragover;\n  attribute EventHandler ondragstart;\n  attribute EventHandler ondrop;\n  attribute EventHandler ondurationchange;\n  attribute EventHandler onemptied;\n  attribute EventHandler onended;\n  attribute OnErrorEventHandler onerror;\n  attribute EventHandler onfocus;\n  attribute EventHandler onformdata;\n  attribute EventHandler oninput;\n  attribute EventHandler oninvalid;\n  attribute EventHandler onkeydown;\n  attribute EventHandler onkeypress;\n  attribute EventHandler onkeyup;\n  attribute EventHandler onload;\n  attribute EventHandler onloadeddata;\n  attribute EventHandler onloadedmetadata;\n  attribute EventHandler onloadstart;\n  attribute EventHandler onmousedown;\n  [LegacyLenientThis] attribute EventHandler onmouseenter;\n  [LegacyLenientThis] attribute EventHandler onmouseleave;\n  attribute EventHandler onmousemove;\n  attribute EventHandler onmouseout;\n  attribute EventHandler onmouseover;\n  attribute EventHandler onmouseup;\n  attribute EventHandler onpause;\n  attribute EventHandler onplay;\n  attribute EventHandler onplaying;\n  attribute EventHandler onprogress;\n  attribute EventHandler onratechange;\n  attribute EventHandler onreset;\n  attribute EventHandler onresize;\n  attribute EventHandler onscroll;\n  attribute EventHandler onsecuritypolicyviolation;\n  attribute EventHandler onseeked;\n  attribute EventHandler onseeking;\n  attribute EventHandler onselect;\n  attribute EventHandler onslotchange;\n  attribute EventHandler onstalled;\n  attribute EventHandler onsubmit;\n  attribute EventHandler onsuspend;\n  attribute EventHandler ontimeupdate;\n  attribute EventHandler ontoggle;\n  attribute EventHandler onvolumechange;\n  attribute EventHandler onwaiting;\n  attribute EventHandler onwebkitanimationend;\n  attribute EventHandler onwebkitanimationiteration;\n  attribute EventHandler onwebkitanimationstart;\n  attribute EventHandler onwebkittransitionend;\n  attribute EventHandler onwheel;\n};",
           "href": "https://html.spec.whatwg.org/multipage/webappapis.html#globaleventhandlers"
         },
         "extended": [
@@ -1584,6 +1584,30 @@
         "href": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onauxclick",
         "linkingText": [
           "onauxclick"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "HTMLElement",
+          "Document",
+          "Window",
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "event-handlers-on-elements,-document-objects,-and-window-objects",
+          "href": "https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers-on-elements,-document-objects,-and-window-objects",
+          "title": "Event handlers on elements, Document objects, and Window objects",
+          "number": "8.1.7.2"
+        },
+        "definedIn": "table"
+      },
+      {
+        "id": "handler-onbeforematch",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onbeforematch",
+        "linkingText": [
+          "onbeforematch"
         ],
         "localLinkingText": [],
         "type": "attribute",

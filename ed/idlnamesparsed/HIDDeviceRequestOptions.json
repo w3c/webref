@@ -6,7 +6,7 @@
       "title": "WebHID API",
       "url": "https://wicg.github.io/webhid/"
     },
-    "fragment": "dictionary HIDDeviceRequestOptions {\n    required sequence<HIDDeviceFilter> filters;\n};",
+    "fragment": "dictionary HIDDeviceRequestOptions {\n    required sequence<HIDDeviceFilter> filters;\n    sequence<HIDDeviceFilter> exclusionFilters;\n};",
     "href": "https://wicg.github.io/webhid/#dom-hiddevicerequestoptions"
   },
   "extended": [],
@@ -38,6 +38,27 @@
         "href": "https://wicg.github.io/webhid/#dom-hiddevicerequestoptions-filters",
         "linkingText": [
           "filters"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "HIDDeviceRequestOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "hiddevicerequestoptions-dictionary",
+          "href": "https://wicg.github.io/webhid/#hiddevicerequestoptions-dictionary",
+          "title": "HIDDeviceRequestOptions dictionary",
+          "number": "5.2.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-hiddevicerequestoptions-exclusionfilters",
+        "href": "https://wicg.github.io/webhid/#dom-hiddevicerequestoptions-exclusionfilters",
+        "linkingText": [
+          "exclusionFilters"
         ],
         "localLinkingText": [],
         "type": "dict-member",
