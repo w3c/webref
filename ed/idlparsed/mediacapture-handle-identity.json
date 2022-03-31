@@ -127,7 +127,7 @@
         "partial": false
       },
       "CaptureHandleChangeEvent": {
-        "fragment": "[Exposed=Window]\ninterface CaptureHandleChangeEvent : Event {\n  constructor(CaptureHandleChangeEventInit init);\n  [SameObject] CaptureHandle captureHandle();\n};",
+        "fragment": "[Exposed=Window]\ninterface CaptureHandleChangeEvent : Event {\n  constructor(optional CaptureHandleChangeEventInit init = {});\n  [SameObject] CaptureHandle captureHandle();\n};",
         "type": "interface",
         "name": "CaptureHandleChangeEvent",
         "inheritance": "Event",
@@ -147,8 +147,10 @@
                   "union": false,
                   "idlType": "CaptureHandleChangeEventInit"
                 },
-                "default": null,
-                "optional": false,
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
                 "variadic": false
               }
             ],
