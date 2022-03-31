@@ -6,7 +6,7 @@
       "title": "WebTransport",
       "url": "https://www.w3.org/TR/webtransport/"
     },
-    "fragment": "dictionary WebTransportStats {\n  DOMHighResTimeStamp timestamp;\n  unsigned long long bytesSent;\n  unsigned long long packetsSent;\n  unsigned long long packetsLost;\n  unsigned long numOutgoingStreamsCreated;\n  unsigned long numIncomingStreamsCreated;\n  unsigned long long bytesReceived;\n  unsigned long long packetsReceived;\n  DOMHighResTimeStamp smoothedRtt;\n  DOMHighResTimeStamp rttVariation;\n  DOMHighResTimeStamp minRtt;\n  unsigned long numReceivedDatagramsDropped;\n};",
+    "fragment": "dictionary WebTransportStats {\n  DOMHighResTimeStamp timestamp;\n  unsigned long long bytesSent;\n  unsigned long long packetsSent;\n  unsigned long long packetsLost;\n  unsigned long numOutgoingStreamsCreated;\n  unsigned long numIncomingStreamsCreated;\n  unsigned long long bytesReceived;\n  unsigned long long packetsReceived;\n  DOMHighResTimeStamp smoothedRtt;\n  DOMHighResTimeStamp rttVariation;\n  DOMHighResTimeStamp minRtt;\n  WebTransportDatagramStats datagrams;\n};",
     "href": "https://w3c.github.io/webtransport/#dictdef-webtransportstats"
   },
   "extended": [],
@@ -265,10 +265,10 @@
         "definedIn": "dt"
       },
       {
-        "id": "dom-webtransportstats-numreceiveddatagramsdropped",
-        "href": "https://w3c.github.io/webtransport/#dom-webtransportstats-numreceiveddatagramsdropped",
+        "id": "dom-webtransportstats-datagrams",
+        "href": "https://w3c.github.io/webtransport/#dom-webtransportstats-datagrams",
         "linkingText": [
-          "numReceivedDatagramsDropped"
+          "datagrams"
         ],
         "localLinkingText": [],
         "type": "dict-member",
@@ -283,7 +283,7 @@
           "title": "WebTransportStats Dictionary",
           "number": "5.11"
         },
-        "definedIn": "dt"
+        "definedIn": "pre"
       }
     ]
   }

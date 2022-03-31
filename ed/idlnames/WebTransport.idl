@@ -5,6 +5,7 @@ interface WebTransport {
 
   Promise<WebTransportStats> getStats();
   readonly attribute Promise<undefined> ready;
+  readonly attribute WebTransportReliabilityMode reliability;
   readonly attribute Promise<WebTransportCloseInfo> closed;
   undefined close(optional WebTransportCloseInfo closeInfo = {});
 

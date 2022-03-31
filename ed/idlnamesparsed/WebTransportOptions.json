@@ -6,7 +6,7 @@
       "title": "WebTransport",
       "url": "https://www.w3.org/TR/webtransport/"
     },
-    "fragment": "dictionary WebTransportOptions {\n  boolean allowPooling;\n  sequence<WebTransportHash> serverCertificateHashes;\n};",
+    "fragment": "dictionary WebTransportOptions {\n  boolean allowPooling = false;\n  boolean requireUnreliable = false;\n  sequence<WebTransportHash> serverCertificateHashes;\n};",
     "href": "https://w3c.github.io/webtransport/#dictdef-webtransportoptions"
   },
   "extended": [],
@@ -38,6 +38,27 @@
         "href": "https://w3c.github.io/webtransport/#dom-webtransportoptions-allowpooling",
         "linkingText": [
           "allowPooling"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "WebTransportOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "web-transport-configuration",
+          "href": "https://w3c.github.io/webtransport/#web-transport-configuration",
+          "title": "Configuration",
+          "number": "5.9"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-webtransportoptions-requireunreliable",
+        "href": "https://w3c.github.io/webtransport/#dom-webtransportoptions-requireunreliable",
+        "linkingText": [
+          "requireUnreliable"
         ],
         "localLinkingText": [],
         "type": "dict-member",
