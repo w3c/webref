@@ -854,7 +854,7 @@
         "partial": false
       },
       "NavigateEvent": {
-        "fragment": "[Exposed=Window]\ninterface NavigateEvent : Event {\n  constructor(DOMString type, NavigateEventInit eventInit);\n\n  readonly attribute NavigationNavigationType navigationType;\n  readonly attribute NavigationDestination destination;\n  readonly attribute boolean canTransition;\n  readonly attribute boolean userInitiated;\n  readonly attribute boolean hashChange;\n  readonly attribute AbortSignal signal;\n  readonly attribute FormData? formData;\n  readonly attribute DOMString? downloadRequest;\n  readonly attribute any info;\n\n  undefined transitionWhile(Promise<undefined> newNavigationAction);\n};",
+        "fragment": "[Exposed=Window]\ninterface NavigateEvent : Event {\n  constructor(DOMString type, NavigateEventInit eventInit);\n\n  readonly attribute NavigationNavigationType navigationType;\n  readonly attribute NavigationDestination destination;\n  readonly attribute boolean canTransition;\n  readonly attribute boolean userInitiated;\n  readonly attribute boolean hashChange;\n  readonly attribute AbortSignal signal;\n  readonly attribute FormData? formData;\n  readonly attribute DOMString? downloadRequest;\n  readonly attribute any info;\n\n  undefined transitionWhile(Promise<undefined> newNavigationAction,\n                            optional NavigationTransitionWhileOptions options = {});\n  undefined restoreScroll();\n};",
         "type": "interface",
         "name": "NavigateEvent",
         "inheritance": "Event",
@@ -1068,8 +1068,41 @@
                 "default": null,
                 "optional": false,
                 "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "options",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "NavigationTransitionWhileOptions"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
               }
             ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "restoreScroll",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [],
             "extAttrs": [],
             "special": ""
           }
@@ -1247,6 +1280,78 @@
         ],
         "extAttrs": [],
         "partial": false
+      },
+      "NavigationTransitionWhileOptions": {
+        "fragment": "dictionary NavigationTransitionWhileOptions {\n  NavigationFocusReset focusReset;\n  NavigationScrollRestoration scrollRestoration;\n};",
+        "type": "dictionary",
+        "name": "NavigationTransitionWhileOptions",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "focusReset",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "NavigationFocusReset"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "scrollRestoration",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "NavigationScrollRestoration"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "NavigationFocusReset": {
+        "fragment": "enum NavigationFocusReset {\n  \"after-transition\",\n  \"manual\"\n};",
+        "type": "enum",
+        "name": "NavigationFocusReset",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "after-transition"
+          },
+          {
+            "type": "enum-value",
+            "value": "manual"
+          }
+        ],
+        "extAttrs": []
+      },
+      "NavigationScrollRestoration": {
+        "fragment": "enum NavigationScrollRestoration {\n  \"after-transition\",\n  \"manual\"\n};",
+        "type": "enum",
+        "name": "NavigationScrollRestoration",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "after-transition"
+          },
+          {
+            "type": "enum-value",
+            "value": "manual"
+          }
+        ],
+        "extAttrs": []
       },
       "NavigationNavigationType": {
         "fragment": "// TODO: rename to NavigationType after https://github.com/w3c/navigation-timing/pull/172 lands.\nenum NavigationNavigationType {\n  \"reload\",\n  \"push\",\n  \"replace\",\n  \"traverse\"\n};",
@@ -1650,7 +1755,8 @@
         "NavigationNavigationType",
         "NavigationDestination",
         "AbortSignal",
-        "FormData"
+        "FormData",
+        "NavigationTransitionWhileOptions"
       ],
       "NavigateEventInit": [
         "EventInit",
@@ -1658,6 +1764,10 @@
         "NavigationDestination",
         "AbortSignal",
         "FormData"
+      ],
+      "NavigationTransitionWhileOptions": [
+        "NavigationFocusReset",
+        "NavigationScrollRestoration"
       ],
       "NavigationDestination": [],
       "NavigationHistoryEntry": [
