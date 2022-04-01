@@ -94,7 +94,9 @@ interface NavigateEvent : Event {
   readonly attribute DOMString? downloadRequest;
   readonly attribute any info;
 
-  undefined transitionWhile(Promise<undefined> newNavigationAction);
+  undefined transitionWhile(Promise<undefined> newNavigationAction,
+                            optional NavigationTransitionWhileOptions options = {});
+  undefined restoreScroll();
 };
 
 dictionary NavigateEventInit : EventInit {
@@ -107,6 +109,21 @@ dictionary NavigateEventInit : EventInit {
   FormData? formData = null;
   DOMString? downloadRequest = null;
   any info;
+};
+
+dictionary NavigationTransitionWhileOptions {
+  NavigationFocusReset focusReset;
+  NavigationScrollRestoration scrollRestoration;
+};
+
+enum NavigationFocusReset {
+  "after-transition",
+  "manual"
+};
+
+enum NavigationScrollRestoration {
+  "after-transition",
+  "manual"
 };
 
 // TODO: rename to NavigationType after https://github.com/w3c/navigation-timing/pull/172 lands.

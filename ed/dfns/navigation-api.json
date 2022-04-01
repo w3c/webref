@@ -1255,6 +1255,48 @@
       "definedIn": "prose"
     },
     {
+      "id": "navigation-focus-changed-during-ongoing-navigation",
+      "href": "https://wicg.github.io/navigation-api/#navigation-focus-changed-during-ongoing-navigation",
+      "linkingText": [
+        "focus changed during ongoing navigation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "Navigation"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "ongoing-state",
+        "href": "https://wicg.github.io/navigation-api/#ongoing-state",
+        "title": "Ongoing navigation tracking",
+        "number": "1.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "navigation-suppress-normal-scroll-restoration-during-ongoing-navigation",
+      "href": "https://wicg.github.io/navigation-api/#navigation-suppress-normal-scroll-restoration-during-ongoing-navigation",
+      "linkingText": [
+        "suppress normal scroll restoration during ongoing navigation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "Navigation"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "ongoing-state",
+        "href": "https://wicg.github.io/navigation-api/#ongoing-state",
+        "title": "Ongoing navigation tracking",
+        "number": "1.3"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "navigation-ongoing-navigation",
       "href": "https://wicg.github.io/navigation-api/#navigation-ongoing-navigation",
       "linkingText": [
@@ -2051,14 +2093,37 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-navigateevent-transitionwhile-newnavigationaction-newnavigationaction",
-      "href": "https://wicg.github.io/navigation-api/#dom-navigateevent-transitionwhile-newnavigationaction-newnavigationaction",
+      "id": "dom-navigateevent-transitionwhile-newnavigationaction-options-newnavigationaction",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigateevent-transitionwhile-newnavigationaction-options-newnavigationaction",
       "linkingText": [
         "newNavigationAction"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
+        "NavigateEvent/transitionWhile(newNavigationAction, options)",
+        "NavigateEvent/transitionWhile(newNavigationAction)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "navigate-event-class",
+        "href": "https://wicg.github.io/navigation-api/#navigate-event-class",
+        "title": "The NavigateEvent class",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-navigateevent-transitionwhile-newnavigationaction-options-options",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigateevent-transitionwhile-newnavigationaction-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "NavigateEvent/transitionWhile(newNavigationAction, options)",
         "NavigateEvent/transitionWhile(newNavigationAction)"
       ],
       "access": "public",
@@ -2268,6 +2333,189 @@
       "type": "dict-member",
       "for": [
         "NavigateEventInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "navigate-event-class",
+        "href": "https://wicg.github.io/navigation-api/#navigate-event-class",
+        "title": "The NavigateEvent class",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-navigationtransitionwhileoptions",
+      "href": "https://wicg.github.io/navigation-api/#dictdef-navigationtransitionwhileoptions",
+      "linkingText": [
+        "NavigationTransitionWhileOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "navigate-event-class",
+        "href": "https://wicg.github.io/navigation-api/#navigate-event-class",
+        "title": "The NavigateEvent class",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-navigationtransitionwhileoptions-focusreset",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigationtransitionwhileoptions-focusreset",
+      "linkingText": [
+        "focusReset"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "NavigationTransitionWhileOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "navigate-event-class",
+        "href": "https://wicg.github.io/navigation-api/#navigate-event-class",
+        "title": "The NavigateEvent class",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-navigationtransitionwhileoptions-scrollrestoration",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigationtransitionwhileoptions-scrollrestoration",
+      "linkingText": [
+        "scrollRestoration"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "NavigationTransitionWhileOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "navigate-event-class",
+        "href": "https://wicg.github.io/navigation-api/#navigate-event-class",
+        "title": "The NavigateEvent class",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "enumdef-navigationfocusreset",
+      "href": "https://wicg.github.io/navigation-api/#enumdef-navigationfocusreset",
+      "linkingText": [
+        "NavigationFocusReset"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "navigate-event-class",
+        "href": "https://wicg.github.io/navigation-api/#navigate-event-class",
+        "title": "The NavigateEvent class",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-navigationfocusreset-after-transition",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigationfocusreset-after-transition",
+      "linkingText": [
+        "\"after-transition\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "NavigationFocusReset"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "navigate-event-class",
+        "href": "https://wicg.github.io/navigation-api/#navigate-event-class",
+        "title": "The NavigateEvent class",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-navigationfocusreset-manual",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigationfocusreset-manual",
+      "linkingText": [
+        "\"manual\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "NavigationFocusReset"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "navigate-event-class",
+        "href": "https://wicg.github.io/navigation-api/#navigate-event-class",
+        "title": "The NavigateEvent class",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "enumdef-navigationscrollrestoration",
+      "href": "https://wicg.github.io/navigation-api/#enumdef-navigationscrollrestoration",
+      "linkingText": [
+        "NavigationScrollRestoration"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "navigate-event-class",
+        "href": "https://wicg.github.io/navigation-api/#navigate-event-class",
+        "title": "The NavigateEvent class",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-navigationscrollrestoration-after-transition",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigationscrollrestoration-after-transition",
+      "linkingText": [
+        "\"after-transition\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "NavigationScrollRestoration"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "navigate-event-class",
+        "href": "https://wicg.github.io/navigation-api/#navigate-event-class",
+        "title": "The NavigateEvent class",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-navigationscrollrestoration-manual",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigationscrollrestoration-manual",
+      "linkingText": [
+        "\"manual\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "NavigationScrollRestoration"
       ],
       "access": "public",
       "informative": false,
@@ -2593,6 +2841,69 @@
       "definedIn": "prose"
     },
     {
+      "id": "navigateevent-focus-reset-behavior",
+      "href": "https://wicg.github.io/navigation-api/#navigateevent-focus-reset-behavior",
+      "linkingText": [
+        "focus reset behavior"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "NavigateEvent"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "navigate-event-class",
+        "href": "https://wicg.github.io/navigation-api/#navigate-event-class",
+        "title": "The NavigateEvent class",
+        "number": "2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "navigateevent-scroll-restoration-behavior",
+      "href": "https://wicg.github.io/navigation-api/#navigateevent-scroll-restoration-behavior",
+      "linkingText": [
+        "scroll restoration behavior"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "NavigateEvent"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "navigate-event-class",
+        "href": "https://wicg.github.io/navigation-api/#navigate-event-class",
+        "title": "The NavigateEvent class",
+        "number": "2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "navigateevent-did-process-scroll-restoration",
+      "href": "https://wicg.github.io/navigation-api/#navigateevent-did-process-scroll-restoration",
+      "linkingText": [
+        "did process scroll restoration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "NavigateEvent"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "navigate-event-class",
+        "href": "https://wicg.github.io/navigation-api/#navigate-event-class",
+        "title": "The NavigateEvent class",
+        "number": "2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "navigateevent-navigation-action-promises-list",
       "href": "https://wicg.github.io/navigation-api/#navigateevent-navigation-action-promises-list",
       "linkingText": [
@@ -2617,7 +2928,29 @@
       "id": "dom-navigateevent-transitionwhile",
       "href": "https://wicg.github.io/navigation-api/#dom-navigateevent-transitionwhile",
       "linkingText": [
+        "transitionWhile(newNavigationAction, options)",
         "transitionWhile(newNavigationAction)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "NavigateEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "navigate-event-class",
+        "href": "https://wicg.github.io/navigation-api/#navigate-event-class",
+        "title": "The NavigateEvent class",
+        "number": "2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-navigateevent-restorescroll",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigateevent-restorescroll",
+      "linkingText": [
+        "restoreScroll()"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -3291,6 +3624,44 @@
       "definedIn": "prose"
     },
     {
+      "id": "potentially-reset-the-focus",
+      "href": "https://wicg.github.io/navigation-api/#potentially-reset-the-focus",
+      "linkingText": [
+        "potentially reset the focus"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "navigate-event-firing",
+        "href": "https://wicg.github.io/navigation-api/#navigate-event-firing",
+        "title": "Firing the event",
+        "number": "2.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "potentially-perform-scroll-restoration",
+      "href": "https://wicg.github.io/navigation-api/#potentially-perform-scroll-restoration",
+      "linkingText": [
+        "potentially perform scroll restoration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "navigate-event-firing",
+        "href": "https://wicg.github.io/navigation-api/#navigate-event-firing",
+        "title": "Firing the event",
+        "number": "2.3"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "navigationhistoryentry",
       "href": "https://wicg.github.io/navigation-api/#navigationhistoryentry",
       "linkingText": [
@@ -3932,6 +4303,46 @@
         "href": "https://wicg.github.io/navigation-api/#session-history-new-she-fields",
         "title": "New session history entry items",
         "number": "5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "document-has-been-scrolled-by-the-user",
+      "href": "https://wicg.github.io/navigation-api/#document-has-been-scrolled-by-the-user",
+      "linkingText": [
+        "has been scrolled by the user"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "Document"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "scroll-restoration-patches",
+        "href": "https://wicg.github.io/navigation-api/#scroll-restoration-patches",
+        "title": "Scroll restoration",
+        "number": "6.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "restoring-scroll-position-data",
+      "href": "https://wicg.github.io/navigation-api/#restoring-scroll-position-data",
+      "linkingText": [
+        "restoring scroll position data"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "scroll-restoration-patches",
+        "href": "https://wicg.github.io/navigation-api/#scroll-restoration-patches",
+        "title": "Scroll restoration",
+        "number": "6.2"
       },
       "definedIn": "prose"
     }
