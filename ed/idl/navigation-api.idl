@@ -62,18 +62,18 @@ enum NavigationHistoryBehavior {
 interface NavigationCurrentEntryChangeEvent : Event {
   constructor(DOMString type, NavigationCurrentEntryChangeEventInit eventInit);
 
-  readonly attribute NavigationNavigationType? navigationType;
+  readonly attribute NavigationType? navigationType;
   readonly attribute NavigationHistoryEntry from;
 };
 
 dictionary NavigationCurrentEntryChangeEventInit : EventInit {
-  NavigationNavigationType? navigationType = null;
+  NavigationType? navigationType = null;
   required NavigationHistoryEntry destination;
 };
 
 [Exposed=Window]
 interface NavigationTransition {
-  readonly attribute NavigationNavigationType navigationType;
+  readonly attribute NavigationType navigationType;
   readonly attribute NavigationHistoryEntry from;
   readonly attribute Promise<undefined> finished;
 
@@ -84,7 +84,7 @@ interface NavigationTransition {
 interface NavigateEvent : Event {
   constructor(DOMString type, NavigateEventInit eventInit);
 
-  readonly attribute NavigationNavigationType navigationType;
+  readonly attribute NavigationType navigationType;
   readonly attribute NavigationDestination destination;
   readonly attribute boolean canTransition;
   readonly attribute boolean userInitiated;
@@ -100,7 +100,7 @@ interface NavigateEvent : Event {
 };
 
 dictionary NavigateEventInit : EventInit {
-  NavigationNavigationType navigationType = "push";
+  NavigationType navigationType = "push";
   required NavigationDestination destination;
   boolean canTransition = false;
   boolean userInitiated = false;
@@ -126,8 +126,7 @@ enum NavigationScrollRestoration {
   "manual"
 };
 
-// TODO: rename to NavigationType after https://github.com/w3c/navigation-timing/pull/172 lands.
-enum NavigationNavigationType {
+enum NavigationType {
   "reload",
   "push",
   "replace",

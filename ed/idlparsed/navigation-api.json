@@ -616,7 +616,7 @@
         "extAttrs": []
       },
       "NavigationCurrentEntryChangeEvent": {
-        "fragment": "[Exposed=Window]\ninterface NavigationCurrentEntryChangeEvent : Event {\n  constructor(DOMString type, NavigationCurrentEntryChangeEventInit eventInit);\n\n  readonly attribute NavigationNavigationType? navigationType;\n  readonly attribute NavigationHistoryEntry from;\n};",
+        "fragment": "[Exposed=Window]\ninterface NavigationCurrentEntryChangeEvent : Event {\n  constructor(DOMString type, NavigationCurrentEntryChangeEventInit eventInit);\n\n  readonly attribute NavigationType? navigationType;\n  readonly attribute NavigationHistoryEntry from;\n};",
         "type": "interface",
         "name": "NavigationCurrentEntryChangeEvent",
         "inheritance": "Event",
@@ -668,7 +668,7 @@
               "generic": "",
               "nullable": true,
               "union": false,
-              "idlType": "NavigationNavigationType"
+              "idlType": "NavigationType"
             },
             "extAttrs": [],
             "special": "",
@@ -704,7 +704,7 @@
         "partial": false
       },
       "NavigationCurrentEntryChangeEventInit": {
-        "fragment": "dictionary NavigationCurrentEntryChangeEventInit : EventInit {\n  NavigationNavigationType? navigationType = null;\n  required NavigationHistoryEntry destination;\n};",
+        "fragment": "dictionary NavigationCurrentEntryChangeEventInit : EventInit {\n  NavigationType? navigationType = null;\n  required NavigationHistoryEntry destination;\n};",
         "type": "dictionary",
         "name": "NavigationCurrentEntryChangeEventInit",
         "inheritance": "EventInit",
@@ -719,7 +719,7 @@
               "generic": "",
               "nullable": true,
               "union": false,
-              "idlType": "NavigationNavigationType"
+              "idlType": "NavigationType"
             },
             "default": {
               "type": "null"
@@ -746,7 +746,7 @@
         "partial": false
       },
       "NavigationTransition": {
-        "fragment": "[Exposed=Window]\ninterface NavigationTransition {\n  readonly attribute NavigationNavigationType navigationType;\n  readonly attribute NavigationHistoryEntry from;\n  readonly attribute Promise<undefined> finished;\n\n  NavigationResult rollback(optional NavigationOptions options = {});\n};",
+        "fragment": "[Exposed=Window]\ninterface NavigationTransition {\n  readonly attribute NavigationType navigationType;\n  readonly attribute NavigationHistoryEntry from;\n  readonly attribute Promise<undefined> finished;\n\n  NavigationResult rollback(optional NavigationOptions options = {});\n};",
         "type": "interface",
         "name": "NavigationTransition",
         "inheritance": null,
@@ -760,7 +760,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "NavigationNavigationType"
+              "idlType": "NavigationType"
             },
             "extAttrs": [],
             "special": "",
@@ -854,7 +854,7 @@
         "partial": false
       },
       "NavigateEvent": {
-        "fragment": "[Exposed=Window]\ninterface NavigateEvent : Event {\n  constructor(DOMString type, NavigateEventInit eventInit);\n\n  readonly attribute NavigationNavigationType navigationType;\n  readonly attribute NavigationDestination destination;\n  readonly attribute boolean canTransition;\n  readonly attribute boolean userInitiated;\n  readonly attribute boolean hashChange;\n  readonly attribute AbortSignal signal;\n  readonly attribute FormData? formData;\n  readonly attribute DOMString? downloadRequest;\n  readonly attribute any info;\n\n  undefined transitionWhile(Promise<undefined> newNavigationAction,\n                            optional NavigationTransitionWhileOptions options = {});\n  undefined restoreScroll();\n};",
+        "fragment": "[Exposed=Window]\ninterface NavigateEvent : Event {\n  constructor(DOMString type, NavigateEventInit eventInit);\n\n  readonly attribute NavigationType navigationType;\n  readonly attribute NavigationDestination destination;\n  readonly attribute boolean canTransition;\n  readonly attribute boolean userInitiated;\n  readonly attribute boolean hashChange;\n  readonly attribute AbortSignal signal;\n  readonly attribute FormData? formData;\n  readonly attribute DOMString? downloadRequest;\n  readonly attribute any info;\n\n  undefined transitionWhile(Promise<undefined> newNavigationAction,\n                            optional NavigationTransitionWhileOptions options = {});\n  undefined restoreScroll();\n};",
         "type": "interface",
         "name": "NavigateEvent",
         "inheritance": "Event",
@@ -906,7 +906,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "NavigationNavigationType"
+              "idlType": "NavigationType"
             },
             "extAttrs": [],
             "special": "",
@@ -1121,7 +1121,7 @@
         "partial": false
       },
       "NavigateEventInit": {
-        "fragment": "dictionary NavigateEventInit : EventInit {\n  NavigationNavigationType navigationType = \"push\";\n  required NavigationDestination destination;\n  boolean canTransition = false;\n  boolean userInitiated = false;\n  boolean hashChange = false;\n  required AbortSignal signal;\n  FormData? formData = null;\n  DOMString? downloadRequest = null;\n  any info;\n};",
+        "fragment": "dictionary NavigateEventInit : EventInit {\n  NavigationType navigationType = \"push\";\n  required NavigationDestination destination;\n  boolean canTransition = false;\n  boolean userInitiated = false;\n  boolean hashChange = false;\n  required AbortSignal signal;\n  FormData? formData = null;\n  DOMString? downloadRequest = null;\n  any info;\n};",
         "type": "dictionary",
         "name": "NavigateEventInit",
         "inheritance": "EventInit",
@@ -1136,7 +1136,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "NavigationNavigationType"
+              "idlType": "NavigationType"
             },
             "default": {
               "type": "string",
@@ -1353,10 +1353,10 @@
         ],
         "extAttrs": []
       },
-      "NavigationNavigationType": {
-        "fragment": "// TODO: rename to NavigationType after https://github.com/w3c/navigation-timing/pull/172 lands.\nenum NavigationNavigationType {\n  \"reload\",\n  \"push\",\n  \"replace\",\n  \"traverse\"\n};",
+      "NavigationType": {
+        "fragment": "enum NavigationType {\n  \"reload\",\n  \"push\",\n  \"replace\",\n  \"traverse\"\n};",
         "type": "enum",
-        "name": "NavigationNavigationType",
+        "name": "NavigationType",
         "values": [
           {
             "type": "enum-value",
@@ -1735,16 +1735,16 @@
       "NavigationCurrentEntryChangeEvent": [
         "Event",
         "NavigationCurrentEntryChangeEventInit",
-        "NavigationNavigationType",
+        "NavigationType",
         "NavigationHistoryEntry"
       ],
       "NavigationCurrentEntryChangeEventInit": [
         "EventInit",
-        "NavigationNavigationType",
+        "NavigationType",
         "NavigationHistoryEntry"
       ],
       "NavigationTransition": [
-        "NavigationNavigationType",
+        "NavigationType",
         "NavigationHistoryEntry",
         "NavigationResult",
         "NavigationOptions"
@@ -1752,7 +1752,7 @@
       "NavigateEvent": [
         "Event",
         "NavigateEventInit",
-        "NavigationNavigationType",
+        "NavigationType",
         "NavigationDestination",
         "AbortSignal",
         "FormData",
@@ -1760,7 +1760,7 @@
       ],
       "NavigateEventInit": [
         "EventInit",
-        "NavigationNavigationType",
+        "NavigationType",
         "NavigationDestination",
         "AbortSignal",
         "FormData"
