@@ -1,5 +1,5 @@
 // Source: Navigation API (https://wicg.github.io/navigation-api/)
 dictionary NavigationCurrentEntryChangeEventInit : EventInit {
-  NavigationNavigationType? navigationType = null;
+  NavigationType? navigationType = null;
   required NavigationHistoryEntry destination;
 };
