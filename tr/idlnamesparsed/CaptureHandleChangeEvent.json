@@ -6,7 +6,7 @@
       "title": "Capture Handle - Bootstrapping Collaboration when Screensharing",
       "url": "https://w3c.github.io/mediacapture-handle/identity/"
     },
-    "fragment": "[Exposed=Window]\ninterface CaptureHandleChangeEvent : Event {\n  constructor(CaptureHandleChangeEventInit init);\n  [SameObject] CaptureHandle captureHandle();\n};",
+    "fragment": "[Exposed=Window]\ninterface CaptureHandleChangeEvent : Event {\n  constructor(optional CaptureHandleChangeEventInit init = {});\n  [SameObject] CaptureHandle captureHandle();\n};",
     "href": "https://w3c.github.io/mediacapture-handle/identity/#dom-capturehandlechangeevent"
   },
   "extended": [],

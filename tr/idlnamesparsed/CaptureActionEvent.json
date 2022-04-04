@@ -6,7 +6,7 @@
       "title": "The Capture-Handle Actions Mechanism",
       "url": "https://w3c.github.io/mediacapture-handle/actions/"
     },
-    "fragment": "[Exposed=Window]\ninterface CaptureActionEvent : Event {\n  constructor(CaptureActionEventInit init);\n  readonly attribute CaptureAction action;\n};",
+    "fragment": "[Exposed=Window]\ninterface CaptureActionEvent : Event {\n  constructor(optional CaptureActionEventInit init = {});\n  readonly attribute CaptureAction action;\n};",
     "href": "https://w3c.github.io/mediacapture-handle/actions/#dom-captureactionevent"
   },
   "extended": [],

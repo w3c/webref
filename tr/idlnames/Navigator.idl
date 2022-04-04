@@ -28,14 +28,6 @@ Navigator includes NavigatorConcurrentHardware;
 // Source: Storage Standard (https://storage.spec.whatwg.org/)
 Navigator includes NavigatorStorage;
 
-// Source: Autoplay Policy Detection (https://w3c.github.io/autoplay/)
-[Exposed=Window]
-partial interface Navigator {
-  AutoplayPolicy getAutoplayPolicy(AutoplayPolicyMediaType type);
-  AutoplayPolicy getAutoplayPolicy(HTMLMediaElement element);
-  AutoplayPolicy getAutoplayPolicy(AudioContext context);
-};
-
 // Source: Badging API (https://w3c.github.io/badging/)
 // Methods only exposed on documents.
 [SecureContext]
@@ -115,6 +107,14 @@ partial interface Navigator {
 [SecureContext, Exposed=(Window)]
 partial interface Navigator {
   [SameObject] readonly attribute WindowControlsOverlay windowControlsOverlay;
+};
+
+// Source: Autoplay Policy Detection (https://www.w3.org/TR/autoplay-detection/)
+[Exposed=Window]
+partial interface Navigator {
+  AutoplayPolicy getAutoplayPolicy(AutoplayPolicyMediaType type);
+  AutoplayPolicy getAutoplayPolicy(HTMLMediaElement element);
+  AutoplayPolicy getAutoplayPolicy(AudioContext context);
 };
 
 // Source: Battery Status API (https://www.w3.org/TR/battery-status/)

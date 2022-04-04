@@ -1,6 +1,6 @@
 // Source: Navigation API (https://wicg.github.io/navigation-api/)
 dictionary NavigateEventInit : EventInit {
-  NavigationNavigationType navigationType = "push";
+  NavigationType navigationType = "push";
   required NavigationDestination destination;
   boolean canTransition = false;
   boolean userInitiated = false;

@@ -3,7 +3,7 @@
 interface NavigateEvent : Event {
   constructor(DOMString type, NavigateEventInit eventInit);
 
-  readonly attribute NavigationNavigationType navigationType;
+  readonly attribute NavigationType navigationType;
   readonly attribute NavigationDestination destination;
   readonly attribute boolean canTransition;
   readonly attribute boolean userInitiated;
@@ -13,5 +13,7 @@ interface NavigateEvent : Event {
   readonly attribute DOMString? downloadRequest;
   readonly attribute any info;
 
-  undefined transitionWhile(Promise<undefined> newNavigationAction);
+  undefined transitionWhile(Promise<undefined> newNavigationAction,
+                            optional NavigationTransitionWhileOptions options = {});
+  undefined restoreScroll();
 };

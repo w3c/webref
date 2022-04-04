@@ -1,6 +1,6 @@
 {
   "spec": {
-    "title": "ECMAScript® 2022 Internationalization API Specification",
+    "title": "ECMAScript® 2023 Internationalization API Specification",
     "url": "https://tc39.es/ecma402/"
   },
   "links": {
@@ -39,6 +39,7 @@
       "sec-codepointstostring",
       "assert",
       "sec-keywords-and-reserved-words",
+      "sec-stringindexof",
       "sec-ecmascript-standard-built-in-objects",
       "sec-global-object",
       "sec-properties-of-the-object-prototype-object",
@@ -53,7 +54,6 @@
       "sec-tostring",
       "sec-hasproperty",
       "number-value",
-      "sec-stringindexof",
       "sec-ecmascript-language-types-string-type",
       "sec-samevalue",
       "sec-ordinaryobjectcreate",
@@ -92,8 +92,8 @@
       "sec-throwcompletion",
       "sec-iteratorclose",
       "sec-tonumeric",
-      "mathematical-value",
       "%E2%84%9D",
+      "mathematical-value",
       "eqn-abs",
       "sec-tointegerorinfinity",
       "sec-createiterresultobject",
@@ -101,6 +101,8 @@
       "sec-string.prototype.localecompare",
       "sec-requireobjectcoercible",
       "sec-string.prototype.tolocalelowercase",
+      "sec-ecmascript-language-types",
+      "sec-stringtocodepoints",
       "sec-string.prototype.tolocaleuppercase",
       "sec-thisnumbervalue",
       "sec-properties-of-the-number-prototype-object",
@@ -137,14 +139,13 @@
     "https://github.com/tc39/ecma402/issues/342": [],
     "https://github.com/tc39/ecma402/issues/57": [],
     "https://unicode.org/reports/tr35/tr35.html": [
-      "Unicode_locale_identifier",
-      "Validity_Data"
+      "Unicode_locale_identifier"
     ],
     "https://www.rfc-editor.org/rfc/bcp/bcp47.txt": [],
-    "https://unicode.org/reports/tr35/tr35-general.html": [
-      "Unit_Elements",
-      "ListPatterns"
+    "https://www.unicode.org/reports/tr35/tr35-general.html": [
+      "Unit_Identifiers"
     ],
+    "https://github.com/unicode-org/cldr/blob/maint/maint-38/common/validity/unit.xml": [],
     "https://www.unicode.org/reports/tr35/": [
       "Identifiers",
       "Unicode_locale_identifier",
@@ -152,9 +153,13 @@
     ],
     "https://unicode.org/reports/tr10/": [],
     "https://cldr.unicode.org/": [],
+    "https://unicode.org/reports/tr35/tr35-general.html": [
+      "ListPatterns"
+    ],
     "https://unicode.org/reports/tr35/tr35-numbers.html": [
       "Operands"
     ],
+    "https://unicode.org/Public/UCD/latest/ucd/SpecialCasing.txt": [],
     "https://github.com/bterlson/ecmarkup": [],
     "https://github.com/rbuckton/grammarkdown": [],
     "https://github.com/domenic/ecmarkdown": [],

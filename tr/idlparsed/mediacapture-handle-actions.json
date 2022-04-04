@@ -38,7 +38,7 @@
         "extAttrs": []
       },
       "CaptureActionEvent": {
-        "fragment": "[Exposed=Window]\ninterface CaptureActionEvent : Event {\n  constructor(CaptureActionEventInit init);\n  readonly attribute CaptureAction action;\n};",
+        "fragment": "[Exposed=Window]\ninterface CaptureActionEvent : Event {\n  constructor(optional CaptureActionEventInit init = {});\n  readonly attribute CaptureAction action;\n};",
         "type": "interface",
         "name": "CaptureActionEvent",
         "inheritance": "Event",
@@ -58,8 +58,10 @@
                   "union": false,
                   "idlType": "CaptureActionEventInit"
                 },
-                "default": null,
-                "optional": false,
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
                 "variadic": false
               }
             ],

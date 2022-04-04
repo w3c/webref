@@ -68,13 +68,6 @@
     },
     {
       "spec": {
-        "title": "Autoplay Policy Detection",
-        "url": "https://w3c.github.io/autoplay/"
-      },
-      "fragment": "[Exposed=Window]\npartial interface Navigator {\n  AutoplayPolicy getAutoplayPolicy(AutoplayPolicyMediaType type);\n  AutoplayPolicy getAutoplayPolicy(HTMLMediaElement element);\n  AutoplayPolicy getAutoplayPolicy(AudioContext context);\n};"
-    },
-    {
-      "spec": {
         "title": "Badging API",
         "url": "https://w3c.github.io/badging/"
       },
@@ -184,6 +177,13 @@
         "url": "https://wicg.github.io/window-controls-overlay/"
       },
       "fragment": "[SecureContext, Exposed=(Window)]\npartial interface Navigator {\n  [SameObject] readonly attribute WindowControlsOverlay windowControlsOverlay;\n};"
+    },
+    {
+      "spec": {
+        "title": "Autoplay Policy Detection",
+        "url": "https://www.w3.org/TR/autoplay-detection/"
+      },
+      "fragment": "[Exposed=Window]\npartial interface Navigator {\n  AutoplayPolicy getAutoplayPolicy(AutoplayPolicyMediaType type);\n  AutoplayPolicy getAutoplayPolicy(HTMLMediaElement element);\n  AutoplayPolicy getAutoplayPolicy(AudioContext context);\n};"
     },
     {
       "spec": {

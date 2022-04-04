@@ -3,11 +3,11 @@
   "type": "interface",
   "defined": {
     "spec": {
-      "title": "File System Access",
-      "url": "https://wicg.github.io/file-system-access/"
+      "title": "File System Standard",
+      "url": "https://fs.spec.whatwg.org/"
     },
     "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface FileSystemWritableFileStream : WritableStream {\n  Promise<undefined> write(FileSystemWriteChunkType data);\n  Promise<undefined> seek(unsigned long long position);\n  Promise<undefined> truncate(unsigned long long size);\n};",
-    "href": "https://wicg.github.io/file-system-access/#filesystemwritablefilestream"
+    "href": "https://fs.spec.whatwg.org/#filesystemwritablefilestream"
   },
   "extended": [],
   "inheritance": {

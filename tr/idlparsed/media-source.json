@@ -15,6 +15,7 @@
       },
       "functions": {
         "Window": [
+          "MediaSourceHandle",
           "SourceBuffer",
           "SourceBufferList",
           "AudioTrack",
@@ -22,6 +23,7 @@
           "TextTrack"
         ],
         "DedicatedWorker": [
+          "MediaSourceHandle",
           "SourceBuffer",
           "SourceBufferList",
           "AudioTrack",
@@ -68,7 +70,7 @@
         "extAttrs": []
       },
       "MediaSource": {
-        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface MediaSource : EventTarget {\n    constructor();\n    readonly        attribute SourceBufferList    sourceBuffers;\n    readonly        attribute SourceBufferList    activeSourceBuffers;\n    readonly        attribute ReadyState          readyState;\n                    attribute unrestricted double duration;\n                    attribute EventHandler        onsourceopen;\n                    attribute EventHandler        onsourceended;\n                    attribute EventHandler        onsourceclose;\n    static readonly attribute boolean canConstructInDedicatedWorker;\n    SourceBuffer   addSourceBuffer (DOMString type);\n    undefined           removeSourceBuffer (SourceBuffer sourceBuffer);\n    undefined           endOfStream (optional EndOfStreamError error);\n    undefined           setLiveSeekableRange (double start, double end);\n    undefined           clearLiveSeekableRange ();\n    static boolean isTypeSupported (DOMString type);\n};",
+        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface MediaSource : EventTarget {\n    constructor();\n    readonly        attribute SourceBufferList    sourceBuffers;\n    readonly        attribute SourceBufferList    activeSourceBuffers;\n    readonly        attribute ReadyState          readyState;\n                    attribute unrestricted double duration;\n                    attribute EventHandler        onsourceopen;\n                    attribute EventHandler        onsourceended;\n                    attribute EventHandler        onsourceclose;\n    static readonly attribute boolean canConstructInDedicatedWorker;\n    SourceBuffer      addSourceBuffer (DOMString type);\n    undefined         removeSourceBuffer (SourceBuffer sourceBuffer);\n    undefined         endOfStream (optional EndOfStreamError error);\n    undefined         setLiveSeekableRange (double start, double end);\n    undefined         clearLiveSeekableRange ();\n    MediaSourceHandle getHandle ();\n    static boolean    isTypeSupported (DOMString type);\n};",
         "type": "interface",
         "name": "MediaSource",
         "inheritance": "EventTarget",
@@ -359,6 +361,21 @@
           },
           {
             "type": "operation",
+            "name": "getHandle",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MediaSourceHandle"
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
             "name": "isTypeSupported",
             "idlType": {
               "type": "return-type",
@@ -390,6 +407,32 @@
             "special": "static"
           }
         ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "DedicatedWorker"
+                }
+              ]
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "MediaSourceHandle": {
+        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface MediaSourceHandle {};",
+        "type": "interface",
+        "name": "MediaSourceHandle",
+        "inheritance": null,
+        "members": [],
         "extAttrs": [
           {
             "type": "extended-attribute",
@@ -1033,6 +1076,7 @@
     "exposed": {
       "Window": [
         "MediaSource",
+        "MediaSourceHandle",
         "SourceBuffer",
         "SourceBufferList",
         "AudioTrack",
@@ -1041,6 +1085,7 @@
       ],
       "DedicatedWorker": [
         "MediaSource",
+        "MediaSourceHandle",
         "SourceBuffer",
         "SourceBufferList",
         "AudioTrack",
@@ -1055,8 +1100,10 @@
         "ReadyState",
         "EventHandler",
         "SourceBuffer",
-        "EndOfStreamError"
+        "EndOfStreamError",
+        "MediaSourceHandle"
       ],
+      "MediaSourceHandle": [],
       "SourceBuffer": [
         "EventTarget",
         "AppendMode",

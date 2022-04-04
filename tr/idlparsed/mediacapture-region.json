@@ -18,7 +18,7 @@
     },
     "idlNames": {
       "CropTarget": {
-        "fragment": "[Exposed=(Window,Worker)]\ninterface CropTarget {\n  // Intentionally empty; just an opaque identifier.\n};",
+        "fragment": "[Exposed=(Window,Worker), Serializable]\ninterface CropTarget {\n  // Intentionally empty; just an opaque identifier.\n};",
         "type": "interface",
         "name": "CropTarget",
         "inheritance": null,
@@ -38,6 +38,12 @@
                 }
               ]
             },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "Serializable",
+            "rhs": null,
             "arguments": []
           }
         ],
@@ -123,7 +129,7 @@
     "idlExtendedNames": {
       "MediaDevices": [
         {
-          "fragment": "partial interface MediaDevices {\n  Promise<CropTarget>\n  produceCropTarget(HTMLElement element);\n};",
+          "fragment": "partial interface MediaDevices {\n  Promise<CropTarget>\n  produceCropTarget(Element element);\n};",
           "type": "interface",
           "name": "MediaDevices",
           "inheritance": null,
@@ -159,7 +165,7 @@
                     "generic": "",
                     "nullable": false,
                     "union": false,
-                    "idlType": "HTMLElement"
+                    "idlType": "Element"
                   },
                   "default": null,
                   "optional": false,
@@ -189,7 +195,7 @@
       "CropTarget": [],
       "MediaDevices": [
         "CropTarget",
-        "HTMLElement"
+        "Element"
       ],
       "BrowserCaptureMediaStreamTrack": [
         "MediaStreamTrack",
@@ -199,7 +205,7 @@
     },
     "externalDependencies": [
       "MediaDevices",
-      "HTMLElement",
+      "Element",
       "MediaStreamTrack"
     ],
     "hasObsoleteIdl": false
