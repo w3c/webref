@@ -6,7 +6,7 @@
       "title": "WebGPU",
       "url": "https://www.w3.org/TR/webgpu/"
     },
-    "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUComputePassEncoder {\n    undefined setPipeline(GPUComputePipeline pipeline);\n    undefined dispatch(GPUSize32 workgroupCountX, optional GPUSize32 workgroupCountY = 1, optional GPUSize32 workgroupCountZ = 1);\n    undefined dispatchIndirect(GPUBuffer indirectBuffer, GPUSize64 indirectOffset);\n\n    undefined end();\n};",
+    "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUComputePassEncoder {\n    undefined setPipeline(GPUComputePipeline pipeline);\n    undefined dispatchWorkgroups(GPUSize32 workgroupCountX, optional GPUSize32 workgroupCountY = 1, optional GPUSize32 workgroupCountZ = 1);\n    undefined dispatchWorkgroupsIndirect(GPUBuffer indirectBuffer, GPUSize64 indirectOffset);\n\n    undefined end();\n};",
     "href": "https://gpuweb.github.io/gpuweb/#gpucomputepassencoder"
   },
   "extended": [
@@ -145,12 +145,12 @@
         "definedIn": "dt"
       },
       {
-        "id": "dom-gpucomputepassencoder-dispatch",
-        "href": "https://gpuweb.github.io/gpuweb/#dom-gpucomputepassencoder-dispatch",
+        "id": "dom-gpucomputepassencoder-dispatchworkgroups",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpucomputepassencoder-dispatchworkgroups",
         "linkingText": [
-          "dispatch(workgroupCountX, workgroupCountY, workgroupCountZ)",
-          "dispatch(workgroupCountX, workgroupCountY)",
-          "dispatch(workgroupCountX)"
+          "dispatchWorkgroups(workgroupCountX, workgroupCountY, workgroupCountZ)",
+          "dispatchWorkgroups(workgroupCountX, workgroupCountY)",
+          "dispatchWorkgroups(workgroupCountX)"
         ],
         "localLinkingText": [],
         "type": "method",
@@ -168,10 +168,10 @@
         "definedIn": "dt"
       },
       {
-        "id": "dom-gpucomputepassencoder-dispatchindirect",
-        "href": "https://gpuweb.github.io/gpuweb/#dom-gpucomputepassencoder-dispatchindirect",
+        "id": "dom-gpucomputepassencoder-dispatchworkgroupsindirect",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpucomputepassencoder-dispatchworkgroupsindirect",
         "linkingText": [
-          "dispatchIndirect(indirectBuffer, indirectOffset)"
+          "dispatchWorkgroupsIndirect(indirectBuffer, indirectOffset)"
         ],
         "localLinkingText": [],
         "type": "method",
