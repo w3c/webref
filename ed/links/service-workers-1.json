@@ -5,7 +5,7 @@
   },
   "links": {
     "https://www.w3.org/TR/": [],
-    "https://www.w3.org/sw/": [],
+    "https://www.w3.org/groups/wg/service-workers": [],
     "https://w3c.github.io/ServiceWorker/v1/": [],
     "https://lists.w3.org/Archives/Public/public-webapps/": [],
     "https://www.w3.org/Consortium/Patent-Policy-20170801/": [
@@ -13,7 +13,8 @@
       "sec-Disclosure"
     ],
     "https://www.w3.org/2004/01/pp-impl/101220/status": [],
-    "https://www.w3.org/2020/Process-20200915/": [],
+    "https://www.w3.org/2021/Process-20211102/": [],
+    "https://developer.mozilla.org/docs/Web/API/Window/applicationCache": [],
     "https://alistapart.com/article/application-cache-is-a-douchebag": [
       "section6"
     ],
@@ -70,7 +71,6 @@
       "navigator",
       "workernavigator",
       "workertype",
-      "responsible-document",
       "responsible-event-loop",
       "api-base-url",
       "concept-relevant-realm",
@@ -118,6 +118,8 @@
       "api-url-character-encoding",
       "concept-settings-object-policy-container",
       "concept-workerglobalscope-policy-container",
+      "concept-settings-object-time-origin",
+      "concept-workerglobalscope-cross-origin-isolated-capability",
       "concept-environment-top-level-creation-url",
       "concept-environment-top-level-origin",
       "concept-workerglobalscope-url",
@@ -127,8 +129,6 @@
       "run-a-classic-script",
       "module-script",
       "run-a-module-script",
-      "list-of-active-timers",
-      "concept-workerglobalscope-cross-origin-isolated-capability",
       "unload-a-document",
       "nested-browsing-context",
       "auxiliary-browsing-context",
@@ -164,7 +164,6 @@
       "list-iterate",
       "iteration-break",
       "iteration-continue",
-      "pair",
       "map-entry",
       "map-key",
       "map-value",
@@ -178,7 +177,9 @@
       "ascii-case-insensitive",
       "list-contain",
       "implementation-defined",
-      "list-remove"
+      "list-remove",
+      "abort-when",
+      "if-aborted"
     ],
     "https://fetch.spec.whatwg.org/": [
       "concept-response",
@@ -203,7 +204,6 @@
       "cross-origin-resource-policy-check",
       "headers",
       "concept-headers-guard",
-      "concept-fetch-terminate",
       "concept-request-client",
       "request-service-workers-mode",
       "concept-request-initiator",
@@ -226,6 +226,7 @@
       "extract-header-list-values",
       "concept-request-parser-metadata",
       "concept-request-use-url-credentials-flag",
+      "fetch-controller",
       "concept-request-reserved-client",
       "non-subresource-request",
       "navigation-request",
@@ -233,6 +234,7 @@
       "concept-request-clone",
       "concept-header-list-append",
       "concept-header-value",
+      "fetch-controller-abort",
       "subresource-request",
       "concept-request-replaces-client-id",
       "concept-request-body",
@@ -269,6 +271,7 @@
       "sec-map-objects",
       "sec-throwcompletion",
       "sec-normalcompletion",
+      "sec-algorithm-conventions",
       "sec-abstract-module-records",
       "sec-cyclic-module-records"
     ],
@@ -277,6 +280,11 @@
     ],
     "https://www.w3.org/TR/hr-time-2/": [
       "dom-domhighrestimestamp"
+    ],
+    "https://storage.spec.whatwg.org/": [
+      "storage-key",
+      "obtain-a-storage-key",
+      "storage-key-equal"
     ],
     "https://github.com/w3c/ServiceWorker/issues/765": [],
     "https://github.com/whatwg/html/pull/2809": [],
@@ -293,7 +301,7 @@
       "dfn-fire-the-push-event"
     ],
     "https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorker": [],
-    "https://heycam.github.io/webidl/": [
+    "https://webidl.spec.whatwg.org/": [
       "SecureContext",
       "Exposed",
       "idl-USVString",
@@ -339,7 +347,7 @@
     ],
     "https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorker/scriptURL": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorker/state": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorker/onstatechange": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorker/statechange_event": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerRegistration": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerRegistration/installing": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerRegistration/waiting": [],
@@ -349,7 +357,7 @@
     "https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerRegistration/updateViaCache": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerRegistration/update": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerRegistration/unregister": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerRegistration/onupdatefound": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerRegistration/updatefound_event": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/Navigator/serviceWorker": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerContainer": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerContainer/controller": [],
@@ -358,18 +366,21 @@
     "https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerContainer/getRegistration": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerContainer/getRegistrations": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerContainer/startMessages": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerContainer/oncontrollerchange": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerContainer/controllerchange_event": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerContainer/message_event": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/NavigationPreloadManager": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/NavigationPreloadManager/enable": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/NavigationPreloadManager/disable": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/NavigationPreloadManager/setHeaderValue": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/NavigationPreloadManager/getState": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerGlobalScope": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerGlobalScope/clients": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerGlobalScope/registration": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerGlobalScope/skipWaiting": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerGlobalScope/oninstall": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerGlobalScope/onactivate": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerGlobalScope/onfetch": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerContainer/onmessage": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerGlobalScope/onmessage": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerGlobalScope/install_event": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerGlobalScope/activate_event": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerGlobalScope/fetch_event": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerGlobalScope/message_event": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/Client": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/WindowClient": [],
     "https://www.w3.org/TR/page-visibility/": [
@@ -425,8 +436,6 @@
     "https://developer.mozilla.org/en-US/docs/Web/API/ExtendableMessageEvent/lastEventId": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/ExtendableMessageEvent/source": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/ExtendableMessageEvent/ports": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerGlobalScope/install_event": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerGlobalScope/activate_event": [],
     "https://notifications.spec.whatwg.org/": [
       "dom-serviceworkerglobalscope-onnotificationclick",
       "notificationevent",
@@ -447,9 +456,7 @@
       "dom-paymentrequestevent",
       "dfn-handling-a-paymentrequestevent"
     ],
-    "https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerGlobalScope/message_event": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/caches": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerGlobalScope/caches": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/caches": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/Cache": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/Cache/match": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/Cache/matchAll": [],
@@ -484,12 +491,15 @@
       "javascript-mime-type"
     ],
     "https://github.com/w3c/ServiceWorker/issues/1374": [],
+    "https://www.w3.org/TR/hr-time-3/": [
+      "dfn-unsafe-shared-current-time",
+      "dfn-coarsen-time",
+      "dfn-coarsened-shared-current-time"
+    ],
     "https://encoding.spec.whatwg.org/": [
       "utf-8"
     ],
-    "https://www.w3.org/TR/hr-time-3/": [
-      "dfn-coarsened-shared-current-time"
-    ],
+    "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Service-Worker-Navigation-Preload": [],
     "https://www.w3.org/TR/CSP3/": [],
     "https://tc39.es/ecma262/multipage/": [],
     "https://www.w3.org/TR/FileAPI/": [],
