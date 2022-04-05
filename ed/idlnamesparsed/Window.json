@@ -103,6 +103,13 @@
     },
     {
       "spec": {
+        "title": "Local Font Access API",
+        "url": "https://wicg.github.io/local-font-access/"
+      },
+      "fragment": "[SecureContext]\npartial interface Window {\n  Promise<sequence<FontData>> queryLocalFonts(optional QueryOptions options = {});\n};"
+    },
+    {
+      "spec": {
         "title": "Manifest Incubations",
         "url": "https://wicg.github.io/manifest-incubations/"
       },

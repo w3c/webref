@@ -131,13 +131,6 @@
     },
     {
       "spec": {
-        "title": "Local Font Access API",
-        "url": "https://wicg.github.io/local-font-access/"
-      },
-      "fragment": "Navigator includes NavigatorFonts;"
-    },
-    {
-      "spec": {
         "title": "Network Information API",
         "url": "https://wicg.github.io/netinfo/"
       },
@@ -522,21 +515,6 @@
         },
         "fragment": "[SecureContext]\ninterface mixin NavigatorLocks {\n  readonly attribute LockManager locks;\n};",
         "href": "https://w3c.github.io/web-locks/#navigatorlocks"
-      },
-      "extended": [],
-      "inheritance": null,
-      "includes": []
-    },
-    {
-      "name": "NavigatorFonts",
-      "type": "interface mixin",
-      "defined": {
-        "spec": {
-          "title": "Local Font Access API",
-          "url": "https://wicg.github.io/local-font-access/"
-        },
-        "fragment": "[SecureContext]\ninterface mixin NavigatorFonts {\n  [SameObject] readonly attribute FontManager fonts;\n};",
-        "href": "https://wicg.github.io/local-font-access/#navigatorfonts"
       },
       "extended": [],
       "inheritance": null,
