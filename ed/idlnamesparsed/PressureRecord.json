@@ -1,13 +1,13 @@
 {
-  "name": "ComputePressureRecord",
+  "name": "PressureRecord",
   "type": "dictionary",
   "defined": {
     "spec": {
-      "title": "Compute and System Pressure Level 1",
+      "title": "Compute Pressure Level 1",
       "url": "https://wicg.github.io/compute-pressure/"
     },
-    "fragment": "dictionary ComputePressureRecord {\n  ComputePressureSource source;\n  ComputePressureState state;\n  sequence<ComputePressureFactor> factors;\n  DOMHighResTimeStamp time;\n};",
-    "href": "https://wicg.github.io/compute-pressure/#dom-computepressurerecord"
+    "fragment": "dictionary PressureRecord {\n  PressureSource source;\n  PressureState state;\n  sequence<PressureFactor> factors;\n  DOMHighResTimeStamp time;\n};",
+    "href": "https://wicg.github.io/compute-pressure/#dom-pressurerecord"
   },
   "extended": [],
   "inheritance": null,
@@ -15,10 +15,10 @@
   "dfns": {
     "https://wicg.github.io/compute-pressure/": [
       {
-        "id": "dom-computepressurerecord",
-        "href": "https://wicg.github.io/compute-pressure/#dom-computepressurerecord",
+        "id": "dom-pressurerecord",
+        "href": "https://wicg.github.io/compute-pressure/#dom-pressurerecord",
         "linkingText": [
-          "ComputePressureRecord"
+          "PressureRecord"
         ],
         "localLinkingText": [],
         "type": "dictionary",
@@ -26,23 +26,23 @@
         "access": "public",
         "informative": false,
         "heading": {
-          "id": "the-computepressurerecord-dictionary",
-          "href": "https://wicg.github.io/compute-pressure/#the-computepressurerecord-dictionary",
-          "title": "The ComputePressureRecord dictionary",
+          "id": "the-pressurerecord-dictionary",
+          "href": "https://wicg.github.io/compute-pressure/#the-pressurerecord-dictionary",
+          "title": "The PressureRecord dictionary",
           "number": "9.3"
         },
         "definedIn": "heading"
       },
       {
-        "id": "dom-computepressurerecord-source",
-        "href": "https://wicg.github.io/compute-pressure/#dom-computepressurerecord-source",
+        "id": "dom-pressurerecord-source",
+        "href": "https://wicg.github.io/compute-pressure/#dom-pressurerecord-source",
         "linkingText": [
           "source"
         ],
         "localLinkingText": [],
         "type": "dict-member",
         "for": [
-          "ComputePressureRecord"
+          "PressureRecord"
         ],
         "access": "public",
         "informative": false,
@@ -55,15 +55,15 @@
         "definedIn": "heading"
       },
       {
-        "id": "dom-computepressurerecord-state",
-        "href": "https://wicg.github.io/compute-pressure/#dom-computepressurerecord-state",
+        "id": "dom-pressurerecord-state",
+        "href": "https://wicg.github.io/compute-pressure/#dom-pressurerecord-state",
         "linkingText": [
           "state"
         ],
         "localLinkingText": [],
         "type": "dict-member",
         "for": [
-          "ComputePressureRecord"
+          "PressureRecord"
         ],
         "access": "public",
         "informative": false,
@@ -76,15 +76,15 @@
         "definedIn": "heading"
       },
       {
-        "id": "dom-computepressurerecord-factors",
-        "href": "https://wicg.github.io/compute-pressure/#dom-computepressurerecord-factors",
+        "id": "dom-pressurerecord-factors",
+        "href": "https://wicg.github.io/compute-pressure/#dom-pressurerecord-factors",
         "linkingText": [
           "factors"
         ],
         "localLinkingText": [],
         "type": "dict-member",
         "for": [
-          "ComputePressureRecord"
+          "PressureRecord"
         ],
         "access": "public",
         "informative": false,
@@ -97,15 +97,15 @@
         "definedIn": "heading"
       },
       {
-        "id": "dom-computepressurerecord-time",
-        "href": "https://wicg.github.io/compute-pressure/#dom-computepressurerecord-time",
+        "id": "dom-pressurerecord-time",
+        "href": "https://wicg.github.io/compute-pressure/#dom-pressurerecord-time",
         "linkingText": [
           "time"
         ],
         "localLinkingText": [],
         "type": "dict-member",
         "for": [
-          "ComputePressureRecord"
+          "PressureRecord"
         ],
         "access": "public",
         "informative": false,

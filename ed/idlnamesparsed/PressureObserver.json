@@ -1,13 +1,13 @@
 {
-  "name": "ComputePressureObserver",
+  "name": "PressureObserver",
   "type": "interface",
   "defined": {
     "spec": {
-      "title": "Compute and System Pressure Level 1",
+      "title": "Compute Pressure Level 1",
       "url": "https://wicg.github.io/compute-pressure/"
     },
-    "fragment": "[Exposed=(DedicatedWorker,SharedWorker,Window), SecureContext]\ninterface ComputePressureObserver {\n  constructor(ComputePressureUpdateCallback callback, optional ComputePressureObserverOptions options = {});\n\n  undefined observe(ComputePressureSource source);\n  undefined unobserve(ComputePressureSource source);\n  undefined disconnect();\n  sequence<ComputePressureRecord> takeRecords();\n\n  [SameObject] static readonly attribute FrozenArray<ComputePressureSource> supportedSources;\n\n  [Exposed=Window] static Promise<PermissionState> requestPermission();\n};",
-    "href": "https://wicg.github.io/compute-pressure/#dom-computepressureobserver"
+    "fragment": "[Exposed=(DedicatedWorker,SharedWorker,Window), SecureContext]\ninterface PressureObserver {\n  constructor(PressureUpdateCallback callback, optional PressureObserverOptions options = {});\n\n  undefined observe(PressureSource source);\n  undefined unobserve(PressureSource source);\n  undefined disconnect();\n  sequence<PressureRecord> takeRecords();\n\n  [SameObject] static readonly attribute FrozenArray<PressureSource> supportedSources;\n\n  [Exposed=Window] static Promise<PermissionState> requestPermission();\n};",
+    "href": "https://wicg.github.io/compute-pressure/#dom-pressureobserver"
   },
   "extended": [],
   "inheritance": null,
@@ -15,10 +15,10 @@
   "dfns": {
     "https://wicg.github.io/compute-pressure/": [
       {
-        "id": "dom-computepressureobserver",
-        "href": "https://wicg.github.io/compute-pressure/#dom-computepressureobserver",
+        "id": "dom-pressureobserver",
+        "href": "https://wicg.github.io/compute-pressure/#dom-pressureobserver",
         "linkingText": [
-          "ComputePressureObserver"
+          "PressureObserver"
         ],
         "localLinkingText": [],
         "type": "interface",
@@ -26,29 +26,29 @@
         "access": "public",
         "informative": false,
         "heading": {
-          "id": "the-computepressureobserver-object",
-          "href": "https://wicg.github.io/compute-pressure/#the-computepressureobserver-object",
-          "title": "The ComputePressureObserver object",
+          "id": "the-pressureobserver-object",
+          "href": "https://wicg.github.io/compute-pressure/#the-pressureobserver-object",
+          "title": "The PressureObserver object",
           "number": "9.2"
         },
         "definedIn": "prose"
       },
       {
-        "id": "dom-computepressureobserver-constructor",
-        "href": "https://wicg.github.io/compute-pressure/#dom-computepressureobserver-constructor",
+        "id": "dom-pressureobserver-constructor",
+        "href": "https://wicg.github.io/compute-pressure/#dom-pressureobserver-constructor",
         "linkingText": [
           "constructor()",
           "constructor(callback)",
           "constructor(callback, options)"
         ],
         "localLinkingText": [
-          "ComputePressureObserver.constructor",
-          "ComputePressureObserver.constructor()",
+          "PressureObserver.constructor",
+          "PressureObserver.constructor()",
           "constructor"
         ],
         "type": "constructor",
         "for": [
-          "ComputePressureObserver"
+          "PressureObserver"
         ],
         "access": "public",
         "informative": false,
@@ -61,20 +61,20 @@
         "definedIn": "heading"
       },
       {
-        "id": "dom-computepressureobserver-observe",
-        "href": "https://wicg.github.io/compute-pressure/#dom-computepressureobserver-observe",
+        "id": "dom-pressureobserver-observe",
+        "href": "https://wicg.github.io/compute-pressure/#dom-pressureobserver-observe",
         "linkingText": [
           "observe()",
           "observe(source)"
         ],
         "localLinkingText": [
-          "ComputePressureObserver.observe",
-          "ComputePressureObserver.observe()",
+          "PressureObserver.observe",
+          "PressureObserver.observe()",
           "observe"
         ],
         "type": "method",
         "for": [
-          "ComputePressureObserver"
+          "PressureObserver"
         ],
         "access": "public",
         "informative": false,
@@ -87,20 +87,20 @@
         "definedIn": "heading"
       },
       {
-        "id": "dom-computepressureobserver-unobserve",
-        "href": "https://wicg.github.io/compute-pressure/#dom-computepressureobserver-unobserve",
+        "id": "dom-pressureobserver-unobserve",
+        "href": "https://wicg.github.io/compute-pressure/#dom-pressureobserver-unobserve",
         "linkingText": [
           "unobserve()",
           "unobserve(source)"
         ],
         "localLinkingText": [
-          "ComputePressureObserver.unobserve",
-          "ComputePressureObserver.unobserve()",
+          "PressureObserver.unobserve",
+          "PressureObserver.unobserve()",
           "unobserve"
         ],
         "type": "method",
         "for": [
-          "ComputePressureObserver"
+          "PressureObserver"
         ],
         "access": "public",
         "informative": false,
@@ -113,19 +113,19 @@
         "definedIn": "heading"
       },
       {
-        "id": "dom-computepressureobserver-disconnect",
-        "href": "https://wicg.github.io/compute-pressure/#dom-computepressureobserver-disconnect",
+        "id": "dom-pressureobserver-disconnect",
+        "href": "https://wicg.github.io/compute-pressure/#dom-pressureobserver-disconnect",
         "linkingText": [
           "disconnect()"
         ],
         "localLinkingText": [
-          "ComputePressureObserver.disconnect",
-          "ComputePressureObserver.disconnect()",
+          "PressureObserver.disconnect",
+          "PressureObserver.disconnect()",
           "disconnect"
         ],
         "type": "method",
         "for": [
-          "ComputePressureObserver"
+          "PressureObserver"
         ],
         "access": "public",
         "informative": false,
@@ -138,19 +138,19 @@
         "definedIn": "heading"
       },
       {
-        "id": "dom-computepressureobserver-takerecords",
-        "href": "https://wicg.github.io/compute-pressure/#dom-computepressureobserver-takerecords",
+        "id": "dom-pressureobserver-takerecords",
+        "href": "https://wicg.github.io/compute-pressure/#dom-pressureobserver-takerecords",
         "linkingText": [
           "takeRecords()"
         ],
         "localLinkingText": [
-          "ComputePressureObserver.takeRecords",
-          "ComputePressureObserver.takeRecords()",
+          "PressureObserver.takeRecords",
+          "PressureObserver.takeRecords()",
           "takeRecords"
         ],
         "type": "method",
         "for": [
-          "ComputePressureObserver"
+          "PressureObserver"
         ],
         "access": "public",
         "informative": false,
@@ -163,17 +163,17 @@
         "definedIn": "heading"
       },
       {
-        "id": "dom-computepressureobserver-supportedsources",
-        "href": "https://wicg.github.io/compute-pressure/#dom-computepressureobserver-supportedsources",
+        "id": "dom-pressureobserver-supportedsources",
+        "href": "https://wicg.github.io/compute-pressure/#dom-pressureobserver-supportedsources",
         "linkingText": [
           "supportedSources"
         ],
         "localLinkingText": [
-          "ComputePressureObserver.supportedSources"
+          "PressureObserver.supportedSources"
         ],
         "type": "attribute",
         "for": [
-          "ComputePressureObserver"
+          "PressureObserver"
         ],
         "access": "public",
         "informative": false,
@@ -186,19 +186,19 @@
         "definedIn": "heading"
       },
       {
-        "id": "dom-computepressureobserver-requestpermission",
-        "href": "https://wicg.github.io/compute-pressure/#dom-computepressureobserver-requestpermission",
+        "id": "dom-pressureobserver-requestpermission",
+        "href": "https://wicg.github.io/compute-pressure/#dom-pressureobserver-requestpermission",
         "linkingText": [
           "requestPermission()"
         ],
         "localLinkingText": [
-          "ComputePressureObserver.requestPermission",
-          "ComputePressureObserver.requestPermission()",
+          "PressureObserver.requestPermission",
+          "PressureObserver.requestPermission()",
           "requestPermission"
         ],
         "type": "method",
         "for": [
-          "ComputePressureObserver"
+          "PressureObserver"
         ],
         "access": "public",
         "informative": false,

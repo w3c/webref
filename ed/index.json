@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2022-04-06T12:45:27.687Z",
+  "date": "2022-04-06T18:36:09.765Z",
   "options": {
     "fallback": "webref-fallback/ed/index.json",
     "output": "report",
@@ -21,7 +21,7 @@
   },
   "stats": {
     "crawled": 472,
-    "errors": 0
+    "errors": 1
   },
   "crawler": "reffy-7.0.4",
   "results": [
@@ -168,9 +168,9 @@
       ],
       "crawled": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 05 Apr 2022 22:00:46 GMT"
+        "lastModified": "Wed, 06 Apr 2022 15:05:32 GMT"
       },
-      "date": "5 April 2022",
+      "date": "6 April 2022",
       "links": "links/rfc6265bis.json",
       "refs": "refs/rfc6265bis.json",
       "headings": "headings/rfc6265bis.json",
@@ -3256,9 +3256,9 @@
       ],
       "crawled": "https://tc39.es/proposal-temporal/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 05 Apr 2022 23:20:16 GMT"
+        "lastModified": "Wed, 06 Apr 2022 16:58:37 GMT"
       },
-      "date": "5 April 2022",
+      "date": "6 April 2022",
       "links": "links/tc39-temporal.json",
       "headings": "headings/tc39-temporal.json",
       "ids": "ids/tc39-temporal.json"
@@ -4312,10 +4312,10 @@
       ],
       "crawled": "https://w3c.github.io/webdriver-bidi/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 17 Mar 2022 12:01:54 GMT"
+        "lastModified": "Wed, 06 Apr 2022 16:10:49 GMT"
       },
       "generator": "bikeshed",
-      "date": "17 March 2022",
+      "date": "6 April 2022",
       "links": "links/webdriver-bidi.json",
       "refs": "refs/webdriver-bidi.json",
       "dfns": "dfns/webdriver-bidi.json",
@@ -4914,7 +4914,7 @@
         "sourcePath": "index.html",
         "filename": "index.html"
       },
-      "title": "Compute and System Pressure Level 1",
+      "title": "Compute Pressure Level 1",
       "source": "spec",
       "shortTitle": "Compute Pressure API 1",
       "categories": [
@@ -4925,10 +4925,10 @@
       ],
       "crawled": "https://wicg.github.io/compute-pressure/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 05 Apr 2022 12:56:19 GMT"
+        "lastModified": "Wed, 06 Apr 2022 15:16:40 GMT"
       },
       "generator": "respec",
-      "date": "05 April 2022",
+      "date": "06 April 2022",
       "links": "links/compute-pressure.json",
       "refs": "refs/compute-pressure.json",
       "idl": "idl/compute-pressure.idl",
@@ -17380,7 +17380,8 @@
       "css": "css/CSS.json",
       "dfns": "dfns/CSS22.json",
       "headings": "headings/CSS22.json",
-      "ids": "ids/CSS22.json"
+      "ids": "ids/CSS22.json",
+      "error": "Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers' Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers'\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:483:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 331)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/css3-exclusions/",
