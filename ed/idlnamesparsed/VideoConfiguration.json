@@ -6,7 +6,7 @@
       "title": "Media Capabilities",
       "url": "https://www.w3.org/TR/media-capabilities/"
     },
-    "fragment": "dictionary VideoConfiguration {\n  required DOMString contentType;\n  required unsigned long width;\n  required unsigned long height;\n  required unsigned long long bitrate;\n  required double framerate;\n  boolean hasAlphaChannel;\n  HdrMetadataType hdrMetadataType;\n  ColorGamut colorGamut;\n  TransferFunction transferFunction;\n  DOMString scalabilityMode;\n};",
+    "fragment": "dictionary VideoConfiguration {\n  required DOMString contentType;\n  required unsigned long width;\n  required unsigned long height;\n  required unsigned long long bitrate;\n  required double framerate;\n  boolean hasAlphaChannel;\n  HdrMetadataType hdrMetadataType;\n  ColorGamut colorGamut;\n  TransferFunction transferFunction;\n  DOMString scalabilityMode;\n  boolean spatialScalability;\n};",
     "href": "https://w3c.github.io/media-capabilities/#dictdef-videoconfiguration"
   },
   "extended": [],
@@ -227,6 +227,27 @@
         "href": "https://w3c.github.io/media-capabilities/#dom-videoconfiguration-scalabilitymode",
         "linkingText": [
           "scalabilityMode"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "VideoConfiguration"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "videoconfiguration",
+          "href": "https://w3c.github.io/media-capabilities/#videoconfiguration",
+          "title": "VideoConfiguration",
+          "number": "2.1.5"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-videoconfiguration-spatialscalability",
+        "href": "https://w3c.github.io/media-capabilities/#dom-videoconfiguration-spatialscalability",
+        "linkingText": [
+          "spatialScalability"
         ],
         "localLinkingText": [],
         "type": "dict-member",
