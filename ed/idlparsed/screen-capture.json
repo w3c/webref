@@ -9,8 +9,24 @@
       "functions": {}
     },
     "idlNames": {
+      "SelfCapturePreferenceEnum": {
+        "fragment": "enum SelfCapturePreferenceEnum {\n  \"include\",\n  \"exclude\"\n};",
+        "type": "enum",
+        "name": "SelfCapturePreferenceEnum",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "include"
+          },
+          {
+            "type": "enum-value",
+            "value": "exclude"
+          }
+        ],
+        "extAttrs": []
+      },
       "DisplayMediaStreamConstraints": {
-        "fragment": "dictionary DisplayMediaStreamConstraints {\n  (boolean or MediaTrackConstraints) video = true;\n  (boolean or MediaTrackConstraints) audio = false;\n};",
+        "fragment": "dictionary DisplayMediaStreamConstraints {\n  (boolean or MediaTrackConstraints) video = true;\n  (boolean or MediaTrackConstraints) audio = false;\n  SelfCapturePreferenceEnum selfBrowserSurface;\n};",
         "type": "dictionary",
         "name": "DisplayMediaStreamConstraints",
         "inheritance": null,
@@ -84,13 +100,28 @@
               "value": false
             },
             "required": false
+          },
+          {
+            "type": "field",
+            "name": "selfBrowserSurface",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SelfCapturePreferenceEnum"
+            },
+            "default": null,
+            "required": false
           }
         ],
         "extAttrs": [],
         "partial": false
       },
       "DisplayCaptureSurfaceType": {
-        "fragment": "enum DisplayCaptureSurfaceType {\n  \"monitor\",\n  \"window\",\n  \"application\",\n  \"browser\"\n};",
+        "fragment": "enum DisplayCaptureSurfaceType {\n  \"monitor\",\n  \"window\",\n  \"browser\"\n};",
         "type": "enum",
         "name": "DisplayCaptureSurfaceType",
         "values": [
@@ -101,10 +132,6 @@
           {
             "type": "enum-value",
             "value": "window"
-          },
-          {
-            "type": "enum-value",
-            "value": "application"
           },
           {
             "type": "enum-value",
@@ -526,7 +553,8 @@
         "DisplayMediaStreamConstraints"
       ],
       "DisplayMediaStreamConstraints": [
-        "MediaTrackConstraints"
+        "MediaTrackConstraints",
+        "SelfCapturePreferenceEnum"
       ],
       "MediaTrackSupportedConstraints": [],
       "MediaTrackConstraintSet": [
