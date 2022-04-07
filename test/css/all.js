@@ -24,11 +24,21 @@ const cssValues = [
 
 // TEMP: constructs that are not yet supported by the parser
 // See: https://github.com/w3c/reffy/issues/494#issuecomment-790713119
-// (last validated on 2021-12-17)
+// (last validated on 2022-04-07)
 const tempIgnore = [
+  // Stacked combinator "+#?" not supported by css-tree
   { shortname: 'css-extensions', prop: 'valuespaces', name: '<custom-selector>' },
+
+  // Stacked combinator "#?" not supported by css-tree
+  { shortname: 'css-ui', prop: 'properties', name: 'cursor' },
+
+  // Stacked combinator "+#" not supported by css-tree
   { shortname: 'fill-stroke', prop: 'properties', name: 'stroke-dasharray' },
+
+  // Unescaped comma with multiplier ",*" not supported by css-tree
   { shortname: 'svg-animations', prop: 'valuespaces', name: '<control-point>' },
+
+  // Stacked combinator "#*" not supported by css-tree
   { shortname: 'svg-strokes', prop: 'valuespaces', name: '<dasharray>' }
 ];
 
