@@ -10,6 +10,7 @@
 const assert = require('assert').strict;
 const path = require('path');
 const css = require('@webref/css');
+const index = require('../../curated/index.json');
 const { definitionSyntax } = require('css-tree');
 
 const curatedFolder = path.join(__dirname, '..', '..', 'curated', 'css');
@@ -45,6 +46,8 @@ const tempIgnore = [
 describe(`The curated view of CSS extracts`, () => {
   before(async () => {
     const all = await css.listAll({ folder: curatedFolder });
+    const baseProperties = {};
+    const extendedProperties = {};
 
     for (const [shortname, data] of Object.entries(all)) {
       describe(`The CSS extract for ${shortname} in the curated view`, () => {
@@ -54,10 +57,23 @@ describe(`The curated view of CSS extracts`, () => {
           assert(data.spec.title);
         });
 
+        const spec = index.results.find(s => s.nightly.url === data.spec.url);
         for (const { type, prop, value } of cssValues) {
           for (const [name, desc] of Object.entries(data[prop])) {
             if (!desc[value]) {
               continue;
+            }
+            if ((type === 'property') && (spec.seriesComposition !== 'delta')) {
+              if (!baseProperties[name]) {
+                baseProperties[name] = [];
+              }
+              baseProperties[name].push({ spec: data.spec, dfn: desc });
+            }
+            else if ((type === 'extended property')) {
+              if (!extendedProperties[name]) {
+                extendedProperties[name] = [];
+              }
+              extendedProperties[name].push({ spec: data.spec, dfn: desc });
             }
             if (tempIgnore.some(c => c.shortname === shortname &&
                 c.prop === prop && c.name === name)) {
@@ -73,6 +89,23 @@ describe(`The curated view of CSS extracts`, () => {
         }
       });
     }
+
+    describe(`Looking at CSS properties, the curated view`, () => {
+      for (const [name, dfns] of Object.entries(baseProperties)) {
+        it(`contains only one "${name}" property definition`, () => {
+          assert.strictEqual(dfns.length, 1,
+            `defined in ${dfns.map(d => d.spec.title).join(', ')} (${dfns.map(d => d.spec.url).join(', ')})`);
+        });
+      }
+    });
+
+    describe(`Looking at extended CSS properties, the curated view`, () => {
+      for (const [name, dfns] of Object.entries(extendedProperties)) {
+        it(`contains a base definition for the "${name}" property`, () => {
+          assert(baseProperties[name], 'no base definition found');
+        });
+      }
+    });
   });
 
   // Dummy test needed for "before" to run and register late tests
