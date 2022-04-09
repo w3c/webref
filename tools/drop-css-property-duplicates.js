@@ -14,7 +14,7 @@ const fs = require('fs').promises;
 const path = require('path');
 const util = require('util');
 const execFile = util.promisify(require('child_process').execFile);
-const requireFromWorkingDirectory = require('./utils').requireFromWorkingDirectory;
+const loadJSON = require('./utils').loadJSON;
 const expandCrawlResult = require('reffy').expandCrawlResult;
 
 
@@ -58,7 +58,7 @@ const supersededBy = {
 
 
 async function dropCSSPropertyDuplicates(folder) {
-  const rawIndex = requireFromWorkingDirectory(path.join(folder, 'index.json'));
+  const rawIndex = await loadJSON(path.join(folder, 'index.json'));
   const index = await expandCrawlResult(rawIndex, folder, ['css']);
   
   const properties = {};

@@ -18,21 +18,17 @@ async function createFolderIfNeeded(folder) {
 
 
 /**
- * Wrapper around the "require" function to require files relative to the
- * current working directory (CWD), instead of relative to the current JS
- * file.
- *
- * This is typically needed to be able to use "require" to load JSON config
- * files provided as command-line arguments.
+ * Load a JSON file as JS object.
  *
  * @function
  * @param {String} filename The path to the file to require
- * @return {Object} The result of requiring the file relative to the current
- *   working directory.
+ * @return {Object} The result of loading and parsing the file relative to the
+ *   current working directory.
  */
-function requireFromWorkingDirectory(filename) {
+async function loadJSON(filename) {
   try {
-    return require(path.resolve(filename));
+    const json = await fs.readFile(filename, 'utf8');
+    return JSON.parse(json);
   }
   catch (err) {
     return null;
@@ -73,6 +69,6 @@ async function copyFolder(source, target, { excludeRoot = false } = {}) {
 
 module.exports = {
   createFolderIfNeeded,
-  requireFromWorkingDirectory,
+  loadJSON,
   copyFolder
 };

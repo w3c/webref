@@ -15,13 +15,13 @@
 
 const fs = require('fs').promises;
 const path = require('path');
-const { requireFromWorkingDirectory } = require('./utils');
+const { loadJSON } = require('./utils');
 const { execSync } = require('child_process');
 
 async function checkPackage(type) {
   console.log(`Check ${type} package`);
   const packageFile = path.resolve(__dirname, '..', 'packages', type, 'package.json');
-  const package = requireFromWorkingDirectory(packageFile);
+  const package = await loadJSON(packageFile);
   const version = package.version;
   console.log(`- Current version: ${version}`);
 
