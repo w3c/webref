@@ -19,7 +19,7 @@
 
 const fs = require("fs").promises;
 const path = require("path");
-const { requireFromWorkingDirectory } = require('./utils');
+const { loadJSON } = require('./utils');
 
 const idlnamesSubdirs = ['idlnames', 'idlnamesparsed'];
 
@@ -40,7 +40,7 @@ async function cleanExtractFolder(folder, crawlResults) {
 
 async function cleanCrawlFolder(crawlFolder) {
   console.log('Load crawl results');
-  const indexFile = requireFromWorkingDirectory(path.join(crawlFolder, 'index.json'));
+  const indexFile = await loadJSON(path.join(crawlFolder, 'index.json'));
   const crawlResults = indexFile.results;
   if (!crawlResults) {
     throw new Error('The index.json file does not seem to contain crawl results');

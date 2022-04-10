@@ -21,9 +21,10 @@ const {
   generateIdlParsed, saveIdlParsed } = require('reffy');
 const {
   createFolderIfNeeded,
-  requireFromWorkingDirectory,
+  loadJSON,
   copyFolder } = require('./utils');
-const { applyPatches } = require('./apply-patches.js');
+const { applyPatches } = require('./apply-patches');
+const { dropCSSPropertyDuplicates } = require('./drop-css-property-duplicates');
 
 
 /**
@@ -96,10 +97,15 @@ async function prepareCurated(rawFolder, curatedFolder) {
   console.log('- patches applied');
 
   let crawlIndexFile = path.join(curatedFolder, 'index.json');
-  let crawlIndex = requireFromWorkingDirectory(crawlIndexFile);
+  let crawlIndex = await loadJSON(crawlIndexFile);
   await Promise.all(crawlIndex.results.map(cleanCrawlOutcome));
   await fs.writeFile(crawlIndexFile, JSON.stringify(crawlIndex, null, 2));
   console.log('- crawl outcome adjusted');
+
+  console.log();
+  console.log('Drop duplicate CSS property definitions when possible');
+  await dropCSSPropertyDuplicates(curatedFolder);
+  console.log('- done');
 
   console.log();
   console.log('Re-generate the idlparsed folder');

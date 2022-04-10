@@ -17,11 +17,11 @@ const fs = require('fs').promises;
 const path = require('path');
 const util = require('util');
 const execFile = util.promisify(require('child_process').execFile);
-const { requireFromWorkingDirectory } = require('./utils');
+const { loadJSON } = require('./utils');
 
 async function preparePackages(curatedFolder, packagesFolder) {
   console.log('Load crawl index file');
-  const crawlIndex = requireFromWorkingDirectory(path.join(curatedFolder, 'index.json'));
+  const crawlIndex = await loadJSON(path.join(curatedFolder, 'index.json'));
   console.log(`- ${crawlIndex.results.length} curated specs in index file`);
 
   const packages = [
