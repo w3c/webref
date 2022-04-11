@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2022-04-11T06:37:57.974Z",
+  "date": "2022-04-11T08:28:15.084Z",
   "options": {
     "fallback": "webref-fallback/ed/index.json",
     "output": "report",
@@ -20,10 +20,10 @@
     ]
   },
   "stats": {
-    "crawled": 472,
-    "errors": 1
+    "crawled": 467,
+    "errors": 2
   },
-  "crawler": "reffy-7.0.4",
+  "crawler": "reffy-7.0.5",
   "results": [
     {
       "url": "https://compat.spec.whatwg.org/",
@@ -1349,6 +1349,12 @@
       "categories": [
         "browser"
       ],
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "fs"
+        ]
+      },
       "versions": [
         "https://fs.spec.whatwg.org/"
       ],
@@ -2212,48 +2218,6 @@
       "ids": "ids/ecma-402.json"
     },
     {
-      "url": "https://tc39.es/proposal-accessible-object-hasownproperty/",
-      "seriesComposition": "full",
-      "shortname": "tc39-accessible-object-hasownproperty",
-      "series": {
-        "shortname": "tc39-accessible-object-hasownproperty",
-        "currentSpecification": "tc39-accessible-object-hasownproperty",
-        "title": "Accessible Object.hasOwnProperty",
-        "shortTitle": "Accessible Object.hasOwnProperty",
-        "nightlyUrl": "https://tc39.es/proposal-accessible-object-hasownproperty/"
-      },
-      "organization": "Ecma International",
-      "groups": [
-        {
-          "name": "TC39",
-          "url": "https://tc39.es/"
-        }
-      ],
-      "nightly": {
-        "url": "https://tc39.es/proposal-accessible-object-hasownproperty/",
-        "repository": "https://github.com/tc39/proposal-accessible-object-hasownproperty",
-        "sourcePath": "index.html",
-        "filename": "index.html"
-      },
-      "title": "Accessible `Object.hasOwnProperty`",
-      "source": "spec",
-      "shortTitle": "Accessible Object.hasOwnProperty",
-      "categories": [
-        "browser"
-      ],
-      "versions": [
-        "https://tc39.es/proposal-accessible-object-hasownproperty/"
-      ],
-      "crawled": "https://tc39.es/proposal-accessible-object-hasownproperty/",
-      "crawlCacheInfo": {
-        "lastModified": "Tue, 31 Aug 2021 14:29:24 GMT"
-      },
-      "date": "31 August 2021",
-      "links": "links/tc39-accessible-object-hasownproperty.json",
-      "headings": "headings/tc39-accessible-object-hasownproperty.json",
-      "ids": "ids/tc39-accessible-object-hasownproperty.json"
-    },
-    {
       "url": "https://tc39.es/proposal-array-find-from-last/",
       "seriesComposition": "full",
       "shortname": "tc39-array-find-from-last",
@@ -2380,15 +2344,15 @@
       "ids": "ids/tc39-atomics-wait-async.json"
     },
     {
-      "url": "https://tc39.es/proposal-class-fields/",
+      "url": "https://tc39.es/proposal-change-array-by-copy/",
       "seriesComposition": "full",
-      "shortname": "tc39-class-fields",
+      "shortname": "tc39-change-array-by-copy",
       "series": {
-        "shortname": "tc39-class-fields",
-        "currentSpecification": "tc39-class-fields",
-        "title": "Public and private instance fields proposal",
-        "shortTitle": "Public and private instance fields proposal",
-        "nightlyUrl": "https://tc39.es/proposal-class-fields/"
+        "shortname": "tc39-change-array-by-copy",
+        "currentSpecification": "tc39-change-array-by-copy",
+        "title": "Change Array by copy",
+        "shortTitle": "Change Array by copy",
+        "nightlyUrl": "https://tc39.es/proposal-change-array-by-copy/"
       },
       "organization": "Ecma International",
       "groups": [
@@ -2398,39 +2362,39 @@
         }
       ],
       "nightly": {
-        "url": "https://tc39.es/proposal-class-fields/",
-        "repository": "https://github.com/tc39/proposal-class-fields",
+        "url": "https://tc39.es/proposal-change-array-by-copy/",
+        "repository": "https://github.com/tc39/proposal-change-array-by-copy",
         "sourcePath": "spec.html",
         "filename": "index.html"
       },
-      "title": "Public and private instance fields proposal",
+      "title": "Change Array by copy",
       "source": "spec",
-      "shortTitle": "Public and private instance fields proposal",
+      "shortTitle": "Change Array by copy",
       "categories": [
         "browser"
       ],
       "versions": [
-        "https://tc39.es/proposal-class-fields/"
+        "https://tc39.es/proposal-change-array-by-copy/"
       ],
-      "crawled": "https://tc39.es/proposal-class-fields/",
+      "crawled": "https://tc39.es/proposal-change-array-by-copy/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 14 Apr 2021 13:02:36 GMT"
+        "lastModified": "Sun, 03 Apr 2022 16:36:44 GMT"
       },
-      "date": "14 April 2021",
-      "links": "links/tc39-class-fields.json",
-      "headings": "headings/tc39-class-fields.json",
-      "ids": "ids/tc39-class-fields.json"
+      "date": "3 April 2022",
+      "links": "links/tc39-change-array-by-copy.json",
+      "headings": "headings/tc39-change-array-by-copy.json",
+      "ids": "ids/tc39-change-array-by-copy.json"
     },
     {
-      "url": "https://tc39.es/proposal-class-static-block/",
+      "url": "https://tc39.es/proposal-decorators/",
       "seriesComposition": "full",
-      "shortname": "tc39-class-static-block",
+      "shortname": "tc39-decorators",
       "series": {
-        "shortname": "tc39-class-static-block",
-        "currentSpecification": "tc39-class-static-block",
-        "title": "ECMAScript class static initialization blocks",
-        "shortTitle": "ECMAScript class static initialization blocks",
-        "nightlyUrl": "https://tc39.es/proposal-class-static-block/"
+        "shortname": "tc39-decorators",
+        "currentSpecification": "tc39-decorators",
+        "title": "Decorators proposal",
+        "shortTitle": "Decorators proposal",
+        "nightlyUrl": "https://tc39.es/proposal-decorators/"
       },
       "organization": "Ecma International",
       "groups": [
@@ -2440,70 +2404,28 @@
         }
       ],
       "nightly": {
-        "url": "https://tc39.es/proposal-class-static-block/",
-        "repository": "https://github.com/tc39/proposal-class-static-block",
-        "sourcePath": "spec/index.html",
+        "url": "https://tc39.es/proposal-decorators/",
+        "repository": "https://github.com/tc39/proposal-decorators",
         "filename": "index.html"
       },
-      "title": "ECMAScript class static initialization blocks",
+      "title": "Decorators proposal",
       "source": "spec",
-      "shortTitle": "ECMAScript class static initialization blocks",
+      "shortTitle": "Decorators proposal",
       "categories": [
         "browser"
       ],
       "versions": [
-        "https://tc39.es/proposal-class-static-block/"
+        "https://tc39.es/proposal-decorators/"
       ],
-      "crawled": "https://tc39.es/proposal-class-static-block/",
+      "crawled": "https://tc39.es/proposal-decorators/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 31 Aug 2021 19:56:44 GMT"
+        "lastModified": "Thu, 07 Feb 2019 14:40:43 GMT"
       },
-      "date": "31 August 2021",
-      "links": "links/tc39-class-static-block.json",
-      "headings": "headings/tc39-class-static-block.json",
-      "ids": "ids/tc39-class-static-block.json"
-    },
-    {
-      "url": "https://tc39.es/proposal-error-cause/",
-      "seriesComposition": "full",
-      "shortname": "tc39-error-cause",
-      "series": {
-        "shortname": "tc39-error-cause",
-        "currentSpecification": "tc39-error-cause",
-        "title": "Error Cause",
-        "shortTitle": "Error Cause",
-        "nightlyUrl": "https://tc39.es/proposal-error-cause/"
-      },
-      "organization": "Ecma International",
-      "groups": [
-        {
-          "name": "TC39",
-          "url": "https://tc39.es/"
-        }
-      ],
-      "nightly": {
-        "url": "https://tc39.es/proposal-error-cause/",
-        "repository": "https://github.com/tc39/proposal-error-cause",
-        "sourcePath": "index.html",
-        "filename": "index.html"
-      },
-      "title": "Error Cause",
-      "source": "spec",
-      "shortTitle": "Error Cause",
-      "categories": [
-        "browser"
-      ],
-      "versions": [
-        "https://tc39.es/proposal-error-cause/"
-      ],
-      "crawled": "https://tc39.es/proposal-error-cause/",
-      "crawlCacheInfo": {
-        "lastModified": "Tue, 26 Oct 2021 17:28:03 GMT"
-      },
-      "date": "26 October 2021",
-      "links": "links/tc39-error-cause.json",
-      "headings": "headings/tc39-error-cause.json",
-      "ids": "ids/tc39-error-cause.json"
+      "date": "7 February 2019",
+      "links": "links/tc39-decorators.json",
+      "dfns": "dfns/tc39-decorators.json",
+      "headings": "headings/tc39-decorators.json",
+      "ids": "ids/tc39-decorators.json"
     },
     {
       "url": "https://tc39.es/proposal-import-assertions/",
@@ -2927,174 +2849,6 @@
       "ids": "ids/tc39-json-modules.json"
     },
     {
-      "url": "https://tc39.es/proposal-private-fields-in-in/",
-      "seriesComposition": "full",
-      "shortname": "tc39-private-fields-in-in",
-      "series": {
-        "shortname": "tc39-private-fields-in-in",
-        "currentSpecification": "tc39-private-fields-in-in",
-        "title": "Private Fields in in",
-        "shortTitle": "Private Fields in in",
-        "nightlyUrl": "https://tc39.es/proposal-private-fields-in-in/"
-      },
-      "organization": "Ecma International",
-      "groups": [
-        {
-          "name": "TC39",
-          "url": "https://tc39.es/"
-        }
-      ],
-      "nightly": {
-        "url": "https://tc39.es/proposal-private-fields-in-in/",
-        "repository": "https://github.com/tc39/proposal-private-fields-in-in",
-        "sourcePath": "index.html",
-        "filename": "index.html"
-      },
-      "title": "Private Fields in `in`",
-      "source": "spec",
-      "shortTitle": "Private Fields in in",
-      "categories": [
-        "browser"
-      ],
-      "versions": [
-        "https://tc39.es/proposal-private-fields-in-in/"
-      ],
-      "crawled": "https://tc39.es/proposal-private-fields-in-in/",
-      "crawlCacheInfo": {
-        "lastModified": "Wed, 14 Jul 2021 23:07:51 GMT"
-      },
-      "date": "14 July 2021",
-      "links": "links/tc39-private-fields-in-in.json",
-      "headings": "headings/tc39-private-fields-in-in.json",
-      "ids": "ids/tc39-private-fields-in-in.json"
-    },
-    {
-      "url": "https://tc39.es/proposal-private-methods/",
-      "seriesComposition": "full",
-      "shortname": "tc39-private-methods",
-      "series": {
-        "shortname": "tc39-private-methods",
-        "currentSpecification": "tc39-private-methods",
-        "title": "Private Methods and Accessors Proposal",
-        "shortTitle": "Private Methods and Accessors",
-        "nightlyUrl": "https://tc39.es/proposal-private-methods/"
-      },
-      "organization": "Ecma International",
-      "groups": [
-        {
-          "name": "TC39",
-          "url": "https://tc39.es/"
-        }
-      ],
-      "nightly": {
-        "url": "https://tc39.es/proposal-private-methods/",
-        "repository": "https://github.com/tc39/proposal-private-methods",
-        "sourcePath": "spec.html",
-        "filename": "index.html"
-      },
-      "title": "Private Methods and Accessors Proposal",
-      "source": "spec",
-      "shortTitle": "Private Methods and Accessors",
-      "categories": [
-        "browser"
-      ],
-      "versions": [
-        "https://tc39.es/proposal-private-methods/"
-      ],
-      "crawled": "https://tc39.es/proposal-private-methods/",
-      "crawlCacheInfo": {
-        "lastModified": "Wed, 14 Apr 2021 13:08:50 GMT"
-      },
-      "date": "14 April 2021",
-      "links": "links/tc39-private-methods.json",
-      "headings": "headings/tc39-private-methods.json",
-      "ids": "ids/tc39-private-methods.json"
-    },
-    {
-      "url": "https://tc39.es/proposal-regexp-match-indices/",
-      "seriesComposition": "full",
-      "shortname": "tc39-regexp-match-indices",
-      "series": {
-        "shortname": "tc39-regexp-match-indices",
-        "currentSpecification": "tc39-regexp-match-indices",
-        "title": "RegExp Match Indices",
-        "shortTitle": "RegExp Match Indices",
-        "nightlyUrl": "https://tc39.es/proposal-regexp-match-indices/"
-      },
-      "organization": "Ecma International",
-      "groups": [
-        {
-          "name": "TC39",
-          "url": "https://tc39.es/"
-        }
-      ],
-      "nightly": {
-        "url": "https://tc39.es/proposal-regexp-match-indices/",
-        "repository": "https://github.com/tc39/proposal-regexp-match-indices",
-        "sourcePath": "spec/index.html",
-        "filename": "index.html"
-      },
-      "title": "RegExp Match Indices",
-      "source": "spec",
-      "shortTitle": "RegExp Match Indices",
-      "categories": [
-        "browser"
-      ],
-      "versions": [
-        "https://tc39.es/proposal-regexp-match-indices/"
-      ],
-      "crawled": "https://tc39.es/proposal-regexp-match-indices/",
-      "crawlCacheInfo": {
-        "lastModified": "Fri, 15 Jan 2021 06:03:45 GMT"
-      },
-      "date": "15 January 2021",
-      "links": "links/tc39-regexp-match-indices.json",
-      "headings": "headings/tc39-regexp-match-indices.json",
-      "ids": "ids/tc39-regexp-match-indices.json"
-    },
-    {
-      "url": "https://tc39.es/proposal-relative-indexing-method/",
-      "seriesComposition": "full",
-      "shortname": "tc39-relative-indexing-method",
-      "series": {
-        "shortname": "tc39-relative-indexing-method",
-        "currentSpecification": "tc39-relative-indexing-method",
-        "title": "Relative Indexing Method",
-        "shortTitle": "Relative Indexing Method",
-        "nightlyUrl": "https://tc39.es/proposal-relative-indexing-method/"
-      },
-      "organization": "Ecma International",
-      "groups": [
-        {
-          "name": "TC39",
-          "url": "https://tc39.es/"
-        }
-      ],
-      "nightly": {
-        "url": "https://tc39.es/proposal-relative-indexing-method/",
-        "repository": "https://github.com/tc39/proposal-relative-indexing-method",
-        "sourcePath": "spec.html",
-        "filename": "index.html"
-      },
-      "title": "Relative Indexing Method",
-      "source": "spec",
-      "shortTitle": "Relative Indexing Method",
-      "categories": [
-        "browser"
-      ],
-      "versions": [
-        "https://tc39.es/proposal-relative-indexing-method/"
-      ],
-      "crawled": "https://tc39.es/proposal-relative-indexing-method/",
-      "crawlCacheInfo": {
-        "lastModified": "Mon, 24 Jan 2022 22:43:17 GMT"
-      },
-      "date": "24 January 2022",
-      "links": "links/tc39-relative-indexing-method.json",
-      "headings": "headings/tc39-relative-indexing-method.json",
-      "ids": "ids/tc39-relative-indexing-method.json"
-    },
-    {
       "url": "https://tc39.es/proposal-resizablearraybuffer/",
       "seriesComposition": "full",
       "shortname": "tc39-resizablearraybuffer",
@@ -3180,48 +2934,6 @@
       "ids": "ids/tc39-shadowrealm.json"
     },
     {
-      "url": "https://tc39.es/proposal-static-class-features/",
-      "seriesComposition": "full",
-      "shortname": "tc39-static-class-features",
-      "series": {
-        "shortname": "tc39-static-class-features",
-        "currentSpecification": "tc39-static-class-features",
-        "title": "Static class features",
-        "shortTitle": "Static class features",
-        "nightlyUrl": "https://tc39.es/proposal-static-class-features/"
-      },
-      "organization": "Ecma International",
-      "groups": [
-        {
-          "name": "TC39",
-          "url": "https://tc39.es/"
-        }
-      ],
-      "nightly": {
-        "url": "https://tc39.es/proposal-static-class-features/",
-        "repository": "https://github.com/tc39/proposal-static-class-features",
-        "sourcePath": "spec.html",
-        "filename": "index.html"
-      },
-      "title": "Static class features",
-      "source": "spec",
-      "shortTitle": "Static class features",
-      "categories": [
-        "browser"
-      ],
-      "versions": [
-        "https://tc39.es/proposal-static-class-features/"
-      ],
-      "crawled": "https://tc39.es/proposal-static-class-features/",
-      "crawlCacheInfo": {
-        "lastModified": "Wed, 14 Apr 2021 17:15:14 GMT"
-      },
-      "date": "14 April 2021",
-      "links": "links/tc39-static-class-features.json",
-      "headings": "headings/tc39-static-class-features.json",
-      "ids": "ids/tc39-static-class-features.json"
-    },
-    {
       "url": "https://tc39.es/proposal-temporal/",
       "seriesComposition": "full",
       "shortname": "tc39-temporal",
@@ -3262,49 +2974,6 @@
       "links": "links/tc39-temporal.json",
       "headings": "headings/tc39-temporal.json",
       "ids": "ids/tc39-temporal.json"
-    },
-    {
-      "url": "https://tc39.es/proposal-top-level-await/",
-      "seriesComposition": "full",
-      "shortname": "tc39-top-level-await",
-      "series": {
-        "shortname": "tc39-top-level-await",
-        "currentSpecification": "tc39-top-level-await",
-        "title": "Top-Level Await",
-        "shortTitle": "Top-Level Await",
-        "nightlyUrl": "https://tc39.es/proposal-top-level-await/"
-      },
-      "organization": "Ecma International",
-      "groups": [
-        {
-          "name": "TC39",
-          "url": "https://tc39.es/"
-        }
-      ],
-      "nightly": {
-        "url": "https://tc39.es/proposal-top-level-await/",
-        "repository": "https://github.com/tc39/proposal-top-level-await",
-        "sourcePath": "spec.html",
-        "filename": "index.html"
-      },
-      "title": "Top-Level Await",
-      "source": "spec",
-      "shortTitle": "Top-Level Await",
-      "categories": [
-        "browser"
-      ],
-      "versions": [
-        "https://tc39.es/proposal-top-level-await/"
-      ],
-      "crawled": "https://tc39.es/proposal-top-level-await/",
-      "crawlCacheInfo": {
-        "lastModified": "Fri, 28 May 2021 08:02:28 GMT"
-      },
-      "date": "28 May 2021",
-      "links": "links/tc39-top-level-await.json",
-      "dfns": "dfns/tc39-top-level-await.json",
-      "headings": "headings/tc39-top-level-await.json",
-      "ids": "ids/tc39-top-level-await.json"
     },
     {
       "url": "https://testutils.spec.whatwg.org/",
@@ -3521,7 +3190,7 @@
       "groups": [
         {
           "name": "Web Applications Working Group",
-          "url": "https://www.w3.org/2019/webapps/"
+          "url": "https://www.w3.org/groups/wg/webapps"
         }
       ],
       "nightly": {
@@ -3618,7 +3287,7 @@
       "groups": [
         {
           "name": "Web Applications Working Group",
-          "url": "https://www.w3.org/2019/webapps/"
+          "url": "https://www.w3.org/groups/wg/webapps"
         }
       ],
       "nightly": {
@@ -3937,53 +3606,6 @@
       "idlparsed": "idlparsed/mediacapture-handle-identity.json"
     },
     {
-      "url": "https://w3c.github.io/mediacapture-region/",
-      "seriesComposition": "full",
-      "shortname": "mediacapture-region",
-      "series": {
-        "shortname": "mediacapture-region",
-        "currentSpecification": "mediacapture-region",
-        "title": "Region Capture",
-        "shortTitle": "Region Capture",
-        "nightlyUrl": "https://w3c.github.io/mediacapture-region/"
-      },
-      "organization": "W3C",
-      "groups": [
-        {
-          "name": "Web Real-Time Communications Working Group",
-          "url": "https://www.w3.org/groups/wg/webrtc"
-        }
-      ],
-      "nightly": {
-        "url": "https://w3c.github.io/mediacapture-region/",
-        "repository": "https://github.com/w3c/mediacapture-region",
-        "sourcePath": "index.html",
-        "filename": "index.html"
-      },
-      "title": "Region Capture",
-      "source": "spec",
-      "shortTitle": "Region Capture",
-      "categories": [
-        "browser"
-      ],
-      "versions": [
-        "https://w3c.github.io/mediacapture-region/"
-      ],
-      "crawled": "https://w3c.github.io/mediacapture-region/",
-      "crawlCacheInfo": {
-        "lastModified": "Wed, 06 Apr 2022 09:25:34 GMT"
-      },
-      "generator": "respec",
-      "date": "06 April 2022",
-      "links": "links/mediacapture-region.json",
-      "refs": "refs/mediacapture-region.json",
-      "idl": "idl/mediacapture-region.idl",
-      "dfns": "dfns/mediacapture-region.json",
-      "headings": "headings/mediacapture-region.json",
-      "ids": "ids/mediacapture-region.json",
-      "idlparsed": "idlparsed/mediacapture-region.json"
-    },
-    {
       "url": "https://w3c.github.io/PNG-spec/",
       "seriesComposition": "full",
       "shortname": "PNG-spec",
@@ -4043,7 +3665,7 @@
       "groups": [
         {
           "name": "Web Applications Working Group",
-          "url": "https://www.w3.org/2019/webapps/"
+          "url": "https://www.w3.org/groups/wg/webapps"
         }
       ],
       "nightly": {
@@ -4897,8 +4519,8 @@
       "series": {
         "shortname": "compute-pressure",
         "currentSpecification": "compute-pressure",
-        "title": "Compute Pressure API",
-        "shortTitle": "Compute Pressure API",
+        "title": "Compute Pressure",
+        "shortTitle": "Compute Pressure",
         "nightlyUrl": "https://wicg.github.io/compute-pressure/"
       },
       "organization": "W3C",
@@ -4916,7 +4538,7 @@
       },
       "title": "Compute Pressure Level 1",
       "source": "spec",
-      "shortTitle": "Compute Pressure API 1",
+      "shortTitle": "Compute Pressure 1",
       "categories": [
         "browser"
       ],
@@ -7937,6 +7559,53 @@
       "headings": "headings/web-otp.json",
       "ids": "ids/web-otp.json",
       "idlparsed": "idlparsed/web-otp.json"
+    },
+    {
+      "url": "https://wicg.github.io/webcrypto-secure-curves/",
+      "seriesComposition": "full",
+      "shortname": "webcrypto-secure-curves",
+      "series": {
+        "shortname": "webcrypto-secure-curves",
+        "currentSpecification": "webcrypto-secure-curves",
+        "title": "Secure Curves in the Web Cryptography API",
+        "shortTitle": "Secure Curves in the Web Cryptography API",
+        "nightlyUrl": "https://wicg.github.io/webcrypto-secure-curves/"
+      },
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Web Platform Incubator Community Group",
+          "url": "https://www.w3.org/community/wicg/"
+        }
+      ],
+      "nightly": {
+        "url": "https://wicg.github.io/webcrypto-secure-curves/",
+        "repository": "https://github.com/WICG/webcrypto-secure-curves",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "title": "Secure Curves in the Web Cryptography API",
+      "source": "spec",
+      "shortTitle": "Secure Curves in the Web Cryptography API",
+      "categories": [
+        "browser"
+      ],
+      "versions": [
+        "https://wicg.github.io/webcrypto-secure-curves/"
+      ],
+      "crawled": "https://wicg.github.io/webcrypto-secure-curves/",
+      "crawlCacheInfo": {
+        "lastModified": "Thu, 31 Mar 2022 15:27:44 GMT"
+      },
+      "generator": "respec",
+      "date": "31 March 2022",
+      "links": "links/webcrypto-secure-curves.json",
+      "refs": "refs/webcrypto-secure-curves.json",
+      "idl": "idl/webcrypto-secure-curves.idl",
+      "dfns": "dfns/webcrypto-secure-curves.json",
+      "headings": "headings/webcrypto-secure-curves.json",
+      "ids": "ids/webcrypto-secure-curves.json",
+      "idlparsed": "idlparsed/webcrypto-secure-curves.json"
     },
     {
       "url": "https://wicg.github.io/webhid/",
@@ -11571,7 +11240,7 @@
       "groups": [
         {
           "name": "Web Applications Working Group",
-          "url": "https://www.w3.org/2019/webapps/"
+          "url": "https://www.w3.org/groups/wg/webapps"
         }
       ],
       "release": {
@@ -11915,7 +11584,7 @@
       "groups": [
         {
           "name": "Web Applications Working Group",
-          "url": "https://www.w3.org/2019/webapps/"
+          "url": "https://www.w3.org/groups/wg/webapps"
         }
       ],
       "release": {
@@ -17380,8 +17049,7 @@
       "css": "css/CSS.json",
       "dfns": "dfns/CSS22.json",
       "headings": "headings/CSS22.json",
-      "ids": "ids/CSS22.json",
-      "error": "Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers' Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers'\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:483:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 331)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
+      "ids": "ids/CSS22.json"
     },
     {
       "url": "https://www.w3.org/TR/css3-exclusions/",
@@ -17907,6 +17575,104 @@
       "idlparsed": "idlparsed/encrypted-media.json"
     },
     {
+      "url": "https://www.w3.org/TR/epub-33/",
+      "seriesComposition": "full",
+      "shortname": "epub-33",
+      "series": {
+        "shortname": "epub",
+        "currentSpecification": "epub-33",
+        "title": "EPUB",
+        "shortTitle": "EPUB",
+        "releaseUrl": "https://www.w3.org/TR/epub/",
+        "nightlyUrl": "https://w3c.github.io/epub-specs/epub33/core/"
+      },
+      "seriesVersion": "3.3",
+      "nightly": {
+        "url": "https://w3c.github.io/epub-specs/epub33/core/",
+        "sourcePath": "epub33/core/index.html",
+        "repository": "https://github.com/w3c/epub-specs",
+        "filename": "index.html"
+      },
+      "categories": [],
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "EPUB 3 Working Group",
+          "url": "https://www.w3.org/publishing/groups/epub-wg/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/epub-33/",
+        "filename": "Overview.html"
+      },
+      "title": "EPUB 3.3",
+      "source": "w3c",
+      "shortTitle": "EPUB 3.3",
+      "versions": [
+        "https://www.w3.org/TR/epub-33/",
+        "https://w3c.github.io/epub-specs/epub33/core/"
+      ],
+      "crawled": {
+        "url": "https://w3c.github.io/epub-specs/epub33/core/",
+        "sourcePath": "epub33/core/index.html",
+        "repository": "https://github.com/w3c/epub-specs",
+        "filename": "index.html"
+      },
+      "error": "Error: Evaluation failed: TypeError: Cannot read properties of null (reading 'textContent')\n    at https://w3c.github.io/epub-specs/epub33/core/reffy/scripts/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/extract-cssdfn.mjs:61:58\n    at Array.map (<anonymous>)\n    at extractTableDfn (https://w3c.github.io/epub-specs/epub33/core/reffy/scripts/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/extract-cssdfn.mjs:55:6)\n    at Array.map (<anonymous>)\n    at extractDfns (https://w3c.github.io/epub-specs/epub33/core/reffy/scripts/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/extract-cssdfn.mjs:137:6)\n    at extractTableDfns (https://w3c.github.io/epub-specs/epub33/core/reffy/scripts/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/extract-cssdfn.mjs:168:3)\n    at Object.default [as extractCssdfn] (https://w3c.github.io/epub-specs/epub33/core/reffy/scripts/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/extract-cssdfn.mjs:15:17)\n    at __puppeteer_evaluation_script__:8:63\n    at Array.forEach (<anonymous>)\n    at __puppeteer_evaluation_script__:7:25 Error: Evaluation failed: TypeError: Cannot read properties of null (reading 'textContent')\n    at https://w3c.github.io/epub-specs/epub33/core/reffy/scripts/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/extract-cssdfn.mjs:61:58\n    at Array.map (<anonymous>)\n    at extractTableDfn (https://w3c.github.io/epub-specs/epub33/core/reffy/scripts/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/extract-cssdfn.mjs:55:6)\n    at Array.map (<anonymous>)\n    at extractDfns (https://w3c.github.io/epub-specs/epub33/core/reffy/scripts/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/extract-cssdfn.mjs:137:6)\n    at extractTableDfns (https://w3c.github.io/epub-specs/epub33/core/reffy/scripts/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/extract-cssdfn.mjs:168:3)\n    at Object.default [as extractCssdfn] (https://w3c.github.io/epub-specs/epub33/core/reffy/scripts/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/extract-cssdfn.mjs:15:17)\n    at __puppeteer_evaluation_script__:8:63\n    at Array.forEach (<anonymous>)\n    at __puppeteer_evaluation_script__:7:25\n    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:221:19)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:110:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:658:25)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 333)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
+    },
+    {
+      "url": "https://www.w3.org/TR/epub-rs-33/",
+      "seriesComposition": "full",
+      "shortname": "epub-rs-33",
+      "series": {
+        "shortname": "epub-rs",
+        "currentSpecification": "epub-rs-33",
+        "title": "EPUB Reading Systems",
+        "shortTitle": "EPUB Reading Systems",
+        "releaseUrl": "https://www.w3.org/TR/epub-rs/",
+        "nightlyUrl": "https://w3c.github.io/epub-specs/epub33/rs/"
+      },
+      "seriesVersion": "3.3",
+      "nightly": {
+        "url": "https://w3c.github.io/epub-specs/epub33/rs/",
+        "sourcePath": "epub33/rs/index.html",
+        "repository": "https://github.com/w3c/epub-specs",
+        "filename": "index.html"
+      },
+      "categories": [],
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "EPUB 3 Working Group",
+          "url": "https://www.w3.org/publishing/groups/epub-wg/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/epub-rs-33/",
+        "filename": "Overview.html"
+      },
+      "title": "EPUB Reading Systems 3.3",
+      "source": "w3c",
+      "shortTitle": "EPUB Reading Systems 3.3",
+      "versions": [
+        "https://www.w3.org/TR/epub-rs-33/",
+        "https://w3c.github.io/epub-specs/epub33/rs/"
+      ],
+      "crawled": "https://w3c.github.io/epub-specs/epub33/rs/",
+      "crawlCacheInfo": {
+        "lastModified": "Sat, 09 Apr 2022 04:50:27 GMT"
+      },
+      "generator": "respec",
+      "date": "09 April 2022",
+      "links": "links/epub-rs-33.json",
+      "refs": "refs/epub-rs-33.json",
+      "idl": "idl/epub-rs.idl",
+      "dfns": "dfns/epub-rs-33.json",
+      "headings": "headings/epub-rs-33.json",
+      "ids": "ids/epub-rs-33.json",
+      "idlparsed": "idlparsed/epub-rs-33.json"
+    },
+    {
       "url": "https://www.w3.org/TR/fetch-metadata/",
       "seriesComposition": "full",
       "shortname": "fetch-metadata",
@@ -17979,7 +17745,7 @@
       "groups": [
         {
           "name": "Web Applications Working Group",
-          "url": "https://www.w3.org/2019/webapps/"
+          "url": "https://www.w3.org/groups/wg/webapps"
         }
       ],
       "release": {
@@ -18215,7 +17981,7 @@
       "groups": [
         {
           "name": "Web Applications Working Group",
-          "url": "https://www.w3.org/2019/webapps/"
+          "url": "https://www.w3.org/groups/wg/webapps"
         }
       ],
       "release": {
@@ -18791,7 +18557,7 @@
       "groups": [
         {
           "name": "Web Applications Working Group",
-          "url": "https://www.w3.org/2019/webapps/"
+          "url": "https://www.w3.org/groups/wg/webapps"
         }
       ],
       "release": {
@@ -18884,6 +18650,7 @@
       "dfns": "dfns/html-media-capture.json",
       "headings": "headings/html-media-capture.json",
       "ids": "ids/html-media-capture.json",
+      "error": "Error: Evaluation failed: Error: Respec generation took too long\n    at isReady (__puppeteer_evaluation_script__:20:27)\n    at isReady (__puppeteer_evaluation_script__:27:27)\n    at async isReady (__puppeteer_evaluation_script__:27:21)\n    at async isReady (__puppeteer_evaluation_script__:27:21)\n    at async isReady (__puppeteer_evaluation_script__:27:21)\n    at async isReady (__puppeteer_evaluation_script__:27:21)\n    at async isReady (__puppeteer_evaluation_script__:27:21)\n    at async isReady (__puppeteer_evaluation_script__:27:21)\n    at async isReady (__puppeteer_evaluation_script__:27:21)\n    at async isReady (__puppeteer_evaluation_script__:27:21) Error: Evaluation failed: Error: Respec generation took too long\n    at isReady (__puppeteer_evaluation_script__:20:27)\n    at isReady (__puppeteer_evaluation_script__:27:27)\n    at async isReady (__puppeteer_evaluation_script__:27:21)\n    at async isReady (__puppeteer_evaluation_script__:27:21)\n    at async isReady (__puppeteer_evaluation_script__:27:21)\n    at async isReady (__puppeteer_evaluation_script__:27:21)\n    at async isReady (__puppeteer_evaluation_script__:27:21)\n    at async isReady (__puppeteer_evaluation_script__:27:21)\n    at async isReady (__puppeteer_evaluation_script__:27:21)\n    at async isReady (__puppeteer_evaluation_script__:27:21)\n    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:221:19)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:110:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 351)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)",
       "idlparsed": "idlparsed/html-media-capture.json"
     },
     {
@@ -19061,7 +18828,7 @@
       "groups": [
         {
           "name": "Web Applications Working Group",
-          "url": "https://www.w3.org/2019/webapps/"
+          "url": "https://www.w3.org/groups/wg/webapps"
         }
       ],
       "release": {
@@ -19116,7 +18883,7 @@
       "groups": [
         {
           "name": "Web Applications Working Group",
-          "url": "https://www.w3.org/2019/webapps/"
+          "url": "https://www.w3.org/groups/wg/webapps"
         }
       ],
       "release": {
@@ -19175,7 +18942,7 @@
       "groups": [
         {
           "name": "Web Applications Working Group",
-          "url": "https://www.w3.org/2019/webapps/"
+          "url": "https://www.w3.org/groups/wg/webapps"
         }
       ],
       "release": {
@@ -19235,7 +19002,7 @@
       "groups": [
         {
           "name": "Web Applications Working Group",
-          "url": "https://www.w3.org/2019/webapps/"
+          "url": "https://www.w3.org/groups/wg/webapps"
         }
       ],
       "release": {
@@ -19413,7 +19180,7 @@
       "groups": [
         {
           "name": "Web Applications Working Group",
-          "url": "https://www.w3.org/2019/webapps/"
+          "url": "https://www.w3.org/groups/wg/webapps"
         }
       ],
       "release": {
@@ -19684,6 +19451,59 @@
       "headings": "headings/mediacapture-fromelement.json",
       "ids": "ids/mediacapture-fromelement.json",
       "idlparsed": "idlparsed/mediacapture-fromelement.json"
+    },
+    {
+      "url": "https://www.w3.org/TR/mediacapture-region/",
+      "seriesComposition": "full",
+      "shortname": "mediacapture-region",
+      "series": {
+        "shortname": "mediacapture-region",
+        "currentSpecification": "mediacapture-region",
+        "title": "Region Capture",
+        "shortTitle": "Region Capture",
+        "releaseUrl": "https://www.w3.org/TR/mediacapture-region/",
+        "nightlyUrl": "https://w3c.github.io/mediacapture-region/"
+      },
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Web Real-Time Communications Working Group",
+          "url": "https://www.w3.org/groups/wg/webrtc"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/mediacapture-region/",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/mediacapture-region/",
+        "repository": "https://github.com/w3c/mediacapture-region",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "title": "Region Capture",
+      "source": "w3c",
+      "shortTitle": "Region Capture",
+      "categories": [
+        "browser"
+      ],
+      "versions": [
+        "https://www.w3.org/TR/mediacapture-region/",
+        "https://w3c.github.io/mediacapture-region/"
+      ],
+      "crawled": "https://w3c.github.io/mediacapture-region/",
+      "crawlCacheInfo": {
+        "lastModified": "Wed, 06 Apr 2022 09:25:34 GMT"
+      },
+      "generator": "respec",
+      "date": "06 April 2022",
+      "links": "links/mediacapture-region.json",
+      "refs": "refs/mediacapture-region.json",
+      "idl": "idl/mediacapture-region.idl",
+      "dfns": "dfns/mediacapture-region.json",
+      "headings": "headings/mediacapture-region.json",
+      "ids": "ids/mediacapture-region.json",
+      "idlparsed": "idlparsed/mediacapture-region.json"
     },
     {
       "url": "https://www.w3.org/TR/mediacapture-streams/",
@@ -21300,7 +21120,7 @@
       "groups": [
         {
           "name": "Web Applications Working Group",
-          "url": "https://www.w3.org/2019/webapps/"
+          "url": "https://www.w3.org/groups/wg/webapps"
         }
       ],
       "release": {
@@ -21535,7 +21355,7 @@
       "groups": [
         {
           "name": "Web Applications Working Group",
-          "url": "https://www.w3.org/2019/webapps/"
+          "url": "https://www.w3.org/groups/wg/webapps"
         }
       ],
       "release": {
@@ -22063,7 +21883,7 @@
       "groups": [
         {
           "name": "Web Applications Working Group",
-          "url": "https://www.w3.org/2019/webapps/"
+          "url": "https://www.w3.org/groups/wg/webapps"
         }
       ],
       "release": {
@@ -22297,7 +22117,7 @@
       "groups": [
         {
           "name": "Web Applications Working Group",
-          "url": "https://www.w3.org/2019/webapps/"
+          "url": "https://www.w3.org/groups/wg/webapps"
         }
       ],
       "release": {
@@ -23332,7 +23152,7 @@
       "groups": [
         {
           "name": "Web Applications Working Group",
-          "url": "https://www.w3.org/2019/webapps/"
+          "url": "https://www.w3.org/groups/wg/webapps"
         }
       ],
       "release": {
@@ -23687,7 +23507,7 @@
       "groups": [
         {
           "name": "WebAssembly Working Group",
-          "url": "https://www.w3.org/wasm/"
+          "url": "https://www.w3.org/groups/wg/wasm"
         }
       ],
       "release": {
@@ -23741,7 +23561,7 @@
       "groups": [
         {
           "name": "WebAssembly Working Group",
-          "url": "https://www.w3.org/wasm/"
+          "url": "https://www.w3.org/groups/wg/wasm"
         }
       ],
       "release": {
@@ -23801,7 +23621,7 @@
       "groups": [
         {
           "name": "WebAssembly Working Group",
-          "url": "https://www.w3.org/wasm/"
+          "url": "https://www.w3.org/groups/wg/wasm"
         }
       ],
       "release": {
@@ -23921,7 +23741,7 @@
       "groups": [
         {
           "name": "Web Applications Working Group",
-          "url": "https://www.w3.org/2019/webapps/"
+          "url": "https://www.w3.org/groups/wg/webapps"
         }
       ],
       "release": {
