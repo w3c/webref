@@ -2284,7 +2284,7 @@
         "partial": false
       },
       "HTMLStyleElement": {
-        "fragment": "[Exposed=Window]\ninterface HTMLStyleElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute DOMString media;\n  [SameObject, PutForwards=value] readonly attribute DOMTokenList blocking;\n\n  // also has obsolete members\n};",
+        "fragment": "[Exposed=Window]\ninterface HTMLStyleElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  attribute boolean disabled;\n  [CEReactions] attribute DOMString media;\n  [SameObject, PutForwards=value] readonly attribute DOMTokenList blocking;\n\n  // also has obsolete members\n};",
         "type": "interface",
         "name": "HTMLStyleElement",
         "inheritance": "HTMLElement",
@@ -2300,6 +2300,21 @@
                 "arguments": []
               }
             ]
+          },
+          {
+            "type": "attribute",
+            "name": "disabled",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
           },
           {
             "type": "attribute",
