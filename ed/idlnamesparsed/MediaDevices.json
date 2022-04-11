@@ -26,17 +26,17 @@
     },
     {
       "spec": {
-        "title": "Region Capture",
-        "url": "https://w3c.github.io/mediacapture-region/"
-      },
-      "fragment": "partial interface MediaDevices {\n  Promise<CropTarget>\n  produceCropTarget(Element element);\n};"
-    },
-    {
-      "spec": {
         "title": "Audio Output Devices API",
         "url": "https://www.w3.org/TR/audio-output/"
       },
       "fragment": "partial interface MediaDevices {\n  Promise<MediaDeviceInfo> selectAudioOutput(optional AudioOutputOptions options = {});\n};"
+    },
+    {
+      "spec": {
+        "title": "Region Capture",
+        "url": "https://www.w3.org/TR/mediacapture-region/"
+      },
+      "fragment": "partial interface MediaDevices {\n  Promise<CropTarget>\n  produceCropTarget(Element element);\n};"
     },
     {
       "spec": {
