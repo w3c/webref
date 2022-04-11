@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2022-04-11T08:28:15.084Z",
+  "date": "2022-04-11T12:43:15.781Z",
   "options": {
     "fallback": "webref-fallback/ed/index.json",
     "output": "report",
@@ -4088,10 +4088,10 @@
       ],
       "crawled": "https://webbluetoothcg.github.io/web-bluetooth/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 14 Mar 2022 22:02:55 GMT"
+        "lastModified": "Mon, 11 Apr 2022 08:41:02 GMT"
       },
       "generator": "bikeshed",
-      "date": "14 March 2022",
+      "date": "11 April 2022",
       "links": "links/web-bluetooth.json",
       "refs": "refs/web-bluetooth.json",
       "idl": "idl/web-bluetooth.idl",
@@ -17051,7 +17051,8 @@
       "css": "css/CSS.json",
       "dfns": "dfns/CSS22.json",
       "headings": "headings/CSS22.json",
-      "ids": "ids/CSS22.json"
+      "ids": "ids/CSS22.json",
+      "error": "Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers' Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers'\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:483:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 323)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/css3-exclusions/",
@@ -17614,13 +17615,17 @@
         "https://www.w3.org/TR/epub-33/",
         "https://w3c.github.io/epub-specs/epub33/core/"
       ],
-      "crawled": {
-        "url": "https://w3c.github.io/epub-specs/epub33/core/",
-        "sourcePath": "epub33/core/index.html",
-        "repository": "https://github.com/w3c/epub-specs",
-        "filename": "index.html"
+      "crawled": "https://w3c.github.io/epub-specs/epub33/core/",
+      "crawlCacheInfo": {
+        "lastModified": "Mon, 11 Apr 2022 11:30:11 GMT"
       },
-      "error": "Error: Evaluation failed: TypeError: Cannot read properties of null (reading 'textContent')\n    at https://w3c.github.io/epub-specs/epub33/core/reffy/scripts/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/extract-cssdfn.mjs:61:58\n    at Array.map (<anonymous>)\n    at extractTableDfn (https://w3c.github.io/epub-specs/epub33/core/reffy/scripts/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/extract-cssdfn.mjs:55:6)\n    at Array.map (<anonymous>)\n    at extractDfns (https://w3c.github.io/epub-specs/epub33/core/reffy/scripts/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/extract-cssdfn.mjs:137:6)\n    at extractTableDfns (https://w3c.github.io/epub-specs/epub33/core/reffy/scripts/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/extract-cssdfn.mjs:168:3)\n    at Object.default [as extractCssdfn] (https://w3c.github.io/epub-specs/epub33/core/reffy/scripts/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/extract-cssdfn.mjs:15:17)\n    at __puppeteer_evaluation_script__:8:63\n    at Array.forEach (<anonymous>)\n    at __puppeteer_evaluation_script__:7:25 Error: Evaluation failed: TypeError: Cannot read properties of null (reading 'textContent')\n    at https://w3c.github.io/epub-specs/epub33/core/reffy/scripts/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/extract-cssdfn.mjs:61:58\n    at Array.map (<anonymous>)\n    at extractTableDfn (https://w3c.github.io/epub-specs/epub33/core/reffy/scripts/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/extract-cssdfn.mjs:55:6)\n    at Array.map (<anonymous>)\n    at extractDfns (https://w3c.github.io/epub-specs/epub33/core/reffy/scripts/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/extract-cssdfn.mjs:137:6)\n    at extractTableDfns (https://w3c.github.io/epub-specs/epub33/core/reffy/scripts/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/extract-cssdfn.mjs:168:3)\n    at Object.default [as extractCssdfn] (https://w3c.github.io/epub-specs/epub33/core/reffy/scripts/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/extract-cssdfn.mjs:15:17)\n    at __puppeteer_evaluation_script__:8:63\n    at Array.forEach (<anonymous>)\n    at __puppeteer_evaluation_script__:7:25\n    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:221:19)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:110:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:658:25)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 333)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
+      "generator": "respec",
+      "date": "11 April 2022",
+      "links": "links/epub-33.json",
+      "refs": "refs/epub-33.json",
+      "dfns": "dfns/epub-33.json",
+      "headings": "headings/epub-33.json",
+      "ids": "ids/epub-33.json"
     },
     {
       "url": "https://www.w3.org/TR/epub-rs-33/",
@@ -17662,10 +17667,10 @@
       ],
       "crawled": "https://w3c.github.io/epub-specs/epub33/rs/",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 09 Apr 2022 04:50:27 GMT"
+        "lastModified": "Mon, 11 Apr 2022 11:30:11 GMT"
       },
       "generator": "respec",
-      "date": "09 April 2022",
+      "date": "11 April 2022",
       "links": "links/epub-rs-33.json",
       "refs": "refs/epub-rs-33.json",
       "idl": "idl/epub-rs.idl",
@@ -21033,10 +21038,10 @@
       ],
       "crawled": "https://w3c.github.io/picture-in-picture/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 30 Aug 2021 11:45:01 GMT"
+        "lastModified": "Mon, 11 Apr 2022 09:07:08 GMT"
       },
       "generator": "bikeshed",
-      "date": "30 August 2021",
+      "date": "11 April 2022",
       "links": "links/picture-in-picture.json",
       "refs": "refs/picture-in-picture.json",
       "idl": "idl/picture-in-picture.idl",
