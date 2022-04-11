@@ -1,7 +1,8 @@
 // Source: Reporting API (https://www.w3.org/TR/reporting-1/)
-[Constructor(ReportingObserverCallback callback, optional ReportingObserverOptions options)]
+[Exposed=(Window,Worker)]
 interface ReportingObserver {
-  void observe();
-  void disconnect();
+  constructor(ReportingObserverCallback callback, optional ReportingObserverOptions options = {});
+  undefined observe();
+  undefined disconnect();
   ReportList takeRecords();
 };

@@ -8,129 +8,11 @@
       "constructors": {},
       "functions": {
         "Window": [
-          "FontManager",
           "FontData"
         ]
       }
     },
     "idlNames": {
-      "NavigatorFonts": {
-        "fragment": "[SecureContext]\ninterface mixin NavigatorFonts {\n  [SameObject] readonly attribute FontManager fonts;\n};",
-        "type": "interface mixin",
-        "name": "NavigatorFonts",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "attribute",
-            "name": "fonts",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "FontManager"
-            },
-            "extAttrs": [
-              {
-                "type": "extended-attribute",
-                "name": "SameObject",
-                "rhs": null,
-                "arguments": []
-              }
-            ],
-            "special": "",
-            "readonly": true
-          }
-        ],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "SecureContext",
-            "rhs": null,
-            "arguments": []
-          }
-        ],
-        "partial": false
-      },
-      "FontManager": {
-        "fragment": "[SecureContext,\n Exposed=Window]\ninterface FontManager {\n  Promise<sequence<FontData>> query(optional QueryOptions options = {});\n};",
-        "type": "interface",
-        "name": "FontManager",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "operation",
-            "name": "query",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "Promise",
-              "nullable": false,
-              "union": false,
-              "idlType": [
-                {
-                  "type": "return-type",
-                  "extAttrs": [],
-                  "generic": "sequence",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": [
-                    {
-                      "type": "return-type",
-                      "extAttrs": [],
-                      "generic": "",
-                      "nullable": false,
-                      "union": false,
-                      "idlType": "FontData"
-                    }
-                  ]
-                }
-              ]
-            },
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "options",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "QueryOptions"
-                },
-                "default": {
-                  "type": "dictionary"
-                },
-                "optional": true,
-                "variadic": false
-              }
-            ],
-            "extAttrs": [],
-            "special": ""
-          }
-        ],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "SecureContext",
-            "rhs": null,
-            "arguments": []
-          },
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier",
-              "value": "Window"
-            },
-            "arguments": []
-          }
-        ],
-        "partial": false
-      },
       "QueryOptions": {
         "fragment": "dictionary QueryOptions {\n  sequence<DOMString> postscriptNames;\n};",
         "type": "dictionary",
@@ -271,31 +153,86 @@
       }
     },
     "idlExtendedNames": {
-      "Navigator": [
+      "Window": [
         {
-          "fragment": "Navigator includes NavigatorFonts;",
-          "type": "includes",
-          "extAttrs": [],
-          "target": "Navigator",
-          "includes": "NavigatorFonts"
+          "fragment": "[SecureContext]\npartial interface Window {\n  Promise<sequence<FontData>> queryLocalFonts(optional QueryOptions options = {});\n};",
+          "type": "interface",
+          "name": "Window",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "operation",
+              "name": "queryLocalFonts",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "Promise",
+                "nullable": false,
+                "union": false,
+                "idlType": [
+                  {
+                    "type": "return-type",
+                    "extAttrs": [],
+                    "generic": "sequence",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": [
+                      {
+                        "type": "return-type",
+                        "extAttrs": [],
+                        "generic": "",
+                        "nullable": false,
+                        "union": false,
+                        "idlType": "FontData"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "options",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "QueryOptions"
+                  },
+                  "default": {
+                    "type": "dictionary"
+                  },
+                  "optional": true,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            }
+          ],
+          "extAttrs": [
+            {
+              "type": "extended-attribute",
+              "name": "SecureContext",
+              "rhs": null,
+              "arguments": []
+            }
+          ],
+          "partial": true
         }
       ]
     },
     "globals": {},
     "exposed": {
       "Window": [
-        "FontManager",
         "FontData"
       ]
     },
     "dependencies": {
-      "NavigatorFonts": [
-        "FontManager"
-      ],
-      "Navigator": [
-        "NavigatorFonts"
-      ],
-      "FontManager": [
+      "Window": [
         "FontData",
         "QueryOptions"
       ],
@@ -305,6 +242,7 @@
       ]
     },
     "externalDependencies": [
+      "Window",
       "Blob"
     ],
     "hasObsoleteIdl": false

@@ -1,28 +1,28 @@
 {
   "spec": {
-    "title": "Compute Pressure API Level 1",
+    "title": "Compute Pressure Level 1",
     "url": "https://wicg.github.io/compute-pressure/"
   },
   "idlparsed": {
     "jsNames": {
       "constructors": {
         "DedicatedWorker": [
-          "ComputePressureObserver"
+          "PressureObserver"
         ],
         "SharedWorker": [
-          "ComputePressureObserver"
+          "PressureObserver"
         ],
         "Window": [
-          "ComputePressureObserver"
+          "PressureObserver"
         ]
       },
       "functions": {}
     },
     "idlNames": {
-      "ComputePressureState": {
-        "fragment": "enum ComputePressureState { \"nominal\", \"fair\", \"serious\", \"critical\" };",
+      "PressureState": {
+        "fragment": "enum PressureState { \"nominal\", \"fair\", \"serious\", \"critical\" };",
         "type": "enum",
-        "name": "ComputePressureState",
+        "name": "PressureState",
         "values": [
           {
             "type": "enum-value",
@@ -43,10 +43,10 @@
         ],
         "extAttrs": []
       },
-      "ComputePressureFactor": {
-        "fragment": "enum ComputePressureFactor { \"thermal\", \"power-supply\" };",
+      "PressureFactor": {
+        "fragment": "enum PressureFactor { \"thermal\", \"power-supply\" };",
         "type": "enum",
-        "name": "ComputePressureFactor",
+        "name": "PressureFactor",
         "values": [
           {
             "type": "enum-value",
@@ -59,10 +59,10 @@
         ],
         "extAttrs": []
       },
-      "ComputePressureUpdateCallback": {
-        "fragment": "callback ComputePressureUpdateCallback = undefined (\n  sequence<ComputePressureRecord> changes,\n  ComputePressureObserver observer\n);",
+      "PressureUpdateCallback": {
+        "fragment": "callback PressureUpdateCallback = undefined (\n  sequence<PressureRecord> changes,\n  PressureObserver observer\n);",
         "type": "callback",
-        "name": "ComputePressureUpdateCallback",
+        "name": "PressureUpdateCallback",
         "idlType": {
           "type": "return-type",
           "extAttrs": [],
@@ -89,7 +89,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "ComputePressureRecord"
+                  "idlType": "PressureRecord"
                 }
               ]
             },
@@ -107,7 +107,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "ComputePressureObserver"
+              "idlType": "PressureObserver"
             },
             "default": null,
             "optional": false,
@@ -116,10 +116,10 @@
         ],
         "extAttrs": []
       },
-      "ComputePressureSource": {
-        "fragment": "enum ComputePressureSource { \"cpu\" };",
+      "PressureSource": {
+        "fragment": "enum PressureSource { \"cpu\" };",
         "type": "enum",
-        "name": "ComputePressureSource",
+        "name": "PressureSource",
         "values": [
           {
             "type": "enum-value",
@@ -128,10 +128,10 @@
         ],
         "extAttrs": []
       },
-      "ComputePressureObserver": {
-        "fragment": "[Exposed=(DedicatedWorker,SharedWorker,Window), SecureContext]\ninterface ComputePressureObserver {\n  constructor(ComputePressureUpdateCallback callback, optional ComputePressureObserverOptions options = {});\n\n  undefined observe(ComputePressureSource source);\n  undefined unobserve(ComputePressureSource source);\n  undefined disconnect();\n  sequence<ComputePressureRecord> takeRecords();\n\n  [SameObject] static readonly attribute FrozenArray<ComputePressureSource> supportedSources;\n\n  [Exposed=Window] static Promise<PermissionState> requestPermission();\n};",
+      "PressureObserver": {
+        "fragment": "[Exposed=(DedicatedWorker,SharedWorker,Window), SecureContext]\ninterface PressureObserver {\n  constructor(PressureUpdateCallback callback, optional PressureObserverOptions options = {});\n\n  undefined observe(PressureSource source);\n  undefined unobserve(PressureSource source);\n  undefined disconnect();\n  sequence<PressureRecord> takeRecords();\n\n  [SameObject] static readonly attribute FrozenArray<PressureSource> supportedSources;\n\n  [Exposed=Window] static Promise<PermissionState> requestPermission();\n};",
         "type": "interface",
-        "name": "ComputePressureObserver",
+        "name": "PressureObserver",
         "inheritance": null,
         "members": [
           {
@@ -147,7 +147,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "ComputePressureUpdateCallback"
+                  "idlType": "PressureUpdateCallback"
                 },
                 "default": null,
                 "optional": false,
@@ -163,7 +163,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "ComputePressureObserverOptions"
+                  "idlType": "PressureObserverOptions"
                 },
                 "default": {
                   "type": "dictionary"
@@ -196,7 +196,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "ComputePressureSource"
+                  "idlType": "PressureSource"
                 },
                 "default": null,
                 "optional": false,
@@ -228,7 +228,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "ComputePressureSource"
+                  "idlType": "PressureSource"
                 },
                 "default": null,
                 "optional": false,
@@ -269,7 +269,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "ComputePressureRecord"
+                  "idlType": "PressureRecord"
                 }
               ]
             },
@@ -293,7 +293,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "ComputePressureSource"
+                  "idlType": "PressureSource"
                 }
               ]
             },
@@ -372,10 +372,10 @@
         ],
         "partial": false
       },
-      "ComputePressureRecord": {
-        "fragment": "dictionary ComputePressureRecord {\n  ComputePressureSource source;\n  ComputePressureState state;\n  sequence<ComputePressureFactor> factors;\n  DOMHighResTimeStamp time;\n};",
+      "PressureRecord": {
+        "fragment": "dictionary PressureRecord {\n  PressureSource source;\n  PressureState state;\n  sequence<PressureFactor> factors;\n  DOMHighResTimeStamp time;\n};",
         "type": "dictionary",
-        "name": "ComputePressureRecord",
+        "name": "PressureRecord",
         "inheritance": null,
         "members": [
           {
@@ -388,7 +388,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "ComputePressureSource"
+              "idlType": "PressureSource"
             },
             "default": null,
             "required": false
@@ -403,7 +403,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "ComputePressureState"
+              "idlType": "PressureState"
             },
             "default": null,
             "required": false
@@ -425,7 +425,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "ComputePressureFactor"
+                  "idlType": "PressureFactor"
                 }
               ]
             },
@@ -451,10 +451,10 @@
         "extAttrs": [],
         "partial": false
       },
-      "ComputePressureObserverOptions": {
-        "fragment": "dictionary ComputePressureObserverOptions {\n  double frequency;\n};",
+      "PressureObserverOptions": {
+        "fragment": "dictionary PressureObserverOptions {\n  double frequency;\n};",
         "type": "dictionary",
-        "name": "ComputePressureObserverOptions",
+        "name": "PressureObserverOptions",
         "inheritance": null,
         "members": [
           {
@@ -481,30 +481,30 @@
     "globals": {},
     "exposed": {
       "DedicatedWorker": [
-        "ComputePressureObserver"
+        "PressureObserver"
       ],
       "SharedWorker": [
-        "ComputePressureObserver"
+        "PressureObserver"
       ],
       "Window": [
-        "ComputePressureObserver"
+        "PressureObserver"
       ]
     },
     "dependencies": {
-      "ComputePressureObserver": [
-        "ComputePressureUpdateCallback",
-        "ComputePressureObserverOptions",
-        "ComputePressureSource",
-        "ComputePressureRecord",
+      "PressureObserver": [
+        "PressureUpdateCallback",
+        "PressureObserverOptions",
+        "PressureSource",
+        "PressureRecord",
         "PermissionState"
       ],
-      "ComputePressureRecord": [
-        "ComputePressureSource",
-        "ComputePressureState",
-        "ComputePressureFactor",
+      "PressureRecord": [
+        "PressureSource",
+        "PressureState",
+        "PressureFactor",
         "DOMHighResTimeStamp"
       ],
-      "ComputePressureObserverOptions": []
+      "PressureObserverOptions": []
     },
     "externalDependencies": [
       "PermissionState",

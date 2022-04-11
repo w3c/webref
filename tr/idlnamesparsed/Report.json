@@ -6,7 +6,7 @@
       "title": "Reporting API",
       "url": "https://www.w3.org/TR/reporting-1/"
     },
-    "fragment": "interface Report {\n  readonly attribute DOMString type;\n  readonly attribute DOMString url;\n  readonly attribute ReportBody? body;\n};",
+    "fragment": "[Exposed=(Window,Worker)]\ninterface Report {\n  [Default] object toJSON();\n  readonly attribute DOMString type;\n  readonly attribute DOMString url;\n  readonly attribute ReportBody? body;\n};",
     "href": "https://www.w3.org/TR/reporting-1/#dom-report"
   },
   "extended": [],

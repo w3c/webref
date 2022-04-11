@@ -118,6 +118,12 @@ partial interface Window {
     Promise<FileSystemDirectoryHandle> showDirectoryPicker(optional DirectoryPickerOptions options = {});
 };
 
+// Source: Local Font Access API (https://wicg.github.io/local-font-access/)
+[SecureContext]
+partial interface Window {
+  Promise<sequence<FontData>> queryLocalFonts(optional QueryOptions options = {});
+};
+
 // Source: Manifest Incubations (https://wicg.github.io/manifest-incubations/)
 partial interface Window {
   attribute EventHandler onappinstalled;

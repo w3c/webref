@@ -6,7 +6,7 @@
       "title": "Reporting API",
       "url": "https://www.w3.org/TR/reporting-1/"
     },
-    "fragment": "interface ReportBody {\n};",
+    "fragment": "[Exposed=(Window,Worker)]\ninterface ReportBody {\n  [Default] object toJSON();\n};",
     "href": "https://www.w3.org/TR/reporting-1/#reportbody"
   },
   "extended": [],

@@ -15968,6 +15968,26 @@
       "definedIn": "dt"
     },
     {
+      "id": "dom-gpuprogrammablepassencoder-dynamic_offsets-slot",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpuprogrammablepassencoder-dynamic_offsets-slot",
+      "linkingText": [
+        "[[dynamic_offsets]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPUProgrammablePassEncoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "programmable-passes",
+        "href": "https://www.w3.org/TR/webgpu/#programmable-passes",
+        "title": "13. Programmable Passes"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "dom-gpuprogrammablepassencoder-setbindgroup",
       "href": "https://www.w3.org/TR/webgpu/#dom-gpuprogrammablepassencoder-setbindgroup",
       "linkingText": [
@@ -16679,12 +16699,12 @@
       "definedIn": "table"
     },
     {
-      "id": "dom-gpucomputepassencoder-dispatch",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpucomputepassencoder-dispatch",
+      "id": "dom-gpucomputepassencoder-dispatchworkgroups",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpucomputepassencoder-dispatchworkgroups",
       "linkingText": [
-        "dispatch(workgroupCountX, workgroupCountY, workgroupCountZ)",
-        "dispatch(workgroupCountX, workgroupCountY)",
-        "dispatch(workgroupCountX)"
+        "dispatchWorkgroups(workgroupCountX, workgroupCountY, workgroupCountZ)",
+        "dispatchWorkgroups(workgroupCountX, workgroupCountY)",
+        "dispatchWorkgroups(workgroupCountX)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -16702,15 +16722,15 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-gpucomputepassencoder-dispatch-workgroupcountx-workgroupcounty-workgroupcountz-workgroupcountx",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpucomputepassencoder-dispatch-workgroupcountx-workgroupcounty-workgroupcountz-workgroupcountx",
+      "id": "dom-gpucomputepassencoder-dispatchworkgroups-workgroupcountx-workgroupcounty-workgroupcountz-workgroupcountx",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpucomputepassencoder-dispatchworkgroups-workgroupcountx-workgroupcounty-workgroupcountz-workgroupcountx",
       "linkingText": [
         "workgroupCountX"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "GPUComputePassEncoder/dispatch(workgroupCountX, workgroupCountY, workgroupCountZ)"
+        "GPUComputePassEncoder/dispatchWorkgroups(workgroupCountX, workgroupCountY, workgroupCountZ)"
       ],
       "access": "public",
       "informative": false,
@@ -16723,15 +16743,15 @@
       "definedIn": "table"
     },
     {
-      "id": "dom-gpucomputepassencoder-dispatch-workgroupcountx-workgroupcounty-workgroupcountz-workgroupcounty",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpucomputepassencoder-dispatch-workgroupcountx-workgroupcounty-workgroupcountz-workgroupcounty",
+      "id": "dom-gpucomputepassencoder-dispatchworkgroups-workgroupcountx-workgroupcounty-workgroupcountz-workgroupcounty",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpucomputepassencoder-dispatchworkgroups-workgroupcountx-workgroupcounty-workgroupcountz-workgroupcounty",
       "linkingText": [
         "workgroupCountY"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "GPUComputePassEncoder/dispatch(workgroupCountX, workgroupCountY, workgroupCountZ)"
+        "GPUComputePassEncoder/dispatchWorkgroups(workgroupCountX, workgroupCountY, workgroupCountZ)"
       ],
       "access": "public",
       "informative": false,
@@ -16744,15 +16764,15 @@
       "definedIn": "table"
     },
     {
-      "id": "dom-gpucomputepassencoder-dispatch-workgroupcountx-workgroupcounty-workgroupcountz-workgroupcountz",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpucomputepassencoder-dispatch-workgroupcountx-workgroupcounty-workgroupcountz-workgroupcountz",
+      "id": "dom-gpucomputepassencoder-dispatchworkgroups-workgroupcountx-workgroupcounty-workgroupcountz-workgroupcountz",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpucomputepassencoder-dispatchworkgroups-workgroupcountx-workgroupcounty-workgroupcountz-workgroupcountz",
       "linkingText": [
         "workgroupCountZ"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "GPUComputePassEncoder/dispatch(workgroupCountX, workgroupCountY, workgroupCountZ)"
+        "GPUComputePassEncoder/dispatchWorkgroups(workgroupCountX, workgroupCountY, workgroupCountZ)"
       ],
       "access": "public",
       "informative": false,
@@ -16765,10 +16785,10 @@
       "definedIn": "table"
     },
     {
-      "id": "dom-gpucomputepassencoder-dispatchindirect",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpucomputepassencoder-dispatchindirect",
+      "id": "dom-gpucomputepassencoder-dispatchworkgroupsindirect",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpucomputepassencoder-dispatchworkgroupsindirect",
       "linkingText": [
-        "dispatchIndirect(indirectBuffer, indirectOffset)"
+        "dispatchWorkgroupsIndirect(indirectBuffer, indirectOffset)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -16805,15 +16825,15 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-gpucomputepassencoder-dispatchindirect-indirectbuffer-indirectoffset-indirectbuffer",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpucomputepassencoder-dispatchindirect-indirectbuffer-indirectoffset-indirectbuffer",
+      "id": "dom-gpucomputepassencoder-dispatchworkgroupsindirect-indirectbuffer-indirectoffset-indirectbuffer",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpucomputepassencoder-dispatchworkgroupsindirect-indirectbuffer-indirectoffset-indirectbuffer",
       "linkingText": [
         "indirectBuffer"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "GPUComputePassEncoder/dispatchIndirect(indirectBuffer, indirectOffset)"
+        "GPUComputePassEncoder/dispatchWorkgroupsIndirect(indirectBuffer, indirectOffset)"
       ],
       "access": "public",
       "informative": false,
@@ -16826,15 +16846,15 @@
       "definedIn": "table"
     },
     {
-      "id": "dom-gpucomputepassencoder-dispatchindirect-indirectbuffer-indirectoffset-indirectoffset",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpucomputepassencoder-dispatchindirect-indirectbuffer-indirectoffset-indirectoffset",
+      "id": "dom-gpucomputepassencoder-dispatchworkgroupsindirect-indirectbuffer-indirectoffset-indirectoffset",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpucomputepassencoder-dispatchworkgroupsindirect-indirectbuffer-indirectoffset-indirectoffset",
       "linkingText": [
         "indirectOffset"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "GPUComputePassEncoder/dispatchIndirect(indirectBuffer, indirectOffset)"
+        "GPUComputePassEncoder/dispatchWorkgroupsIndirect(indirectBuffer, indirectOffset)"
       ],
       "access": "public",
       "informative": false,

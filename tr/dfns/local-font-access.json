@@ -5,6 +5,25 @@
   },
   "dfns": [
     {
+      "id": "user-language",
+      "href": "https://wicg.github.io/local-font-access/#user-language",
+      "linkingText": [
+        "user language"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "concepts",
+        "href": "https://wicg.github.io/local-font-access/#concepts",
+        "title": "Concepts",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "font-representation",
       "href": "https://wicg.github.io/local-font-access/#font-representation",
       "linkingText": [
@@ -45,10 +64,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "font-representation-table-list",
-      "href": "https://wicg.github.io/local-font-access/#font-representation-table-list",
+      "id": "font-representation-postscript-name",
+      "href": "https://wicg.github.io/local-font-access/#font-representation-postscript-name",
       "linkingText": [
-        "table list"
+        "PostScript name"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -66,10 +85,73 @@
       "definedIn": "prose"
     },
     {
-      "id": "font-table",
-      "href": "https://wicg.github.io/local-font-access/#font-table",
+      "id": "font-representation-full-name",
+      "href": "https://wicg.github.io/local-font-access/#font-representation-full-name",
       "linkingText": [
-        "font table"
+        "full name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "font representation"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "concept-font-representation",
+        "href": "https://wicg.github.io/local-font-access/#concept-font-representation",
+        "title": "Font Representation",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "font-representation-family-name",
+      "href": "https://wicg.github.io/local-font-access/#font-representation-family-name",
+      "linkingText": [
+        "family name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "font representation"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "concept-font-representation",
+        "href": "https://wicg.github.io/local-font-access/#concept-font-representation",
+        "title": "Font Representation",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "font-representation-style-name",
+      "href": "https://wicg.github.io/local-font-access/#font-representation-style-name",
+      "linkingText": [
+        "style name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "font representation"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "concept-font-representation",
+        "href": "https://wicg.github.io/local-font-access/#concept-font-representation",
+        "title": "Font Representation",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valid-postscript-name",
+      "href": "https://wicg.github.io/local-font-access/#valid-postscript-name",
+      "linkingText": [
+        "valid PostScript name"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -77,81 +159,56 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "concept-font-table",
-        "href": "https://wicg.github.io/local-font-access/#concept-font-table",
-        "title": "Font Table",
+        "id": "concept-font-representation",
+        "href": "https://wicg.github.io/local-font-access/#concept-font-representation",
+        "title": "Font Representation",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "system-font",
+      "href": "https://wicg.github.io/local-font-access/#system-font",
+      "linkingText": [
+        "system font"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "concept-system-fonts",
+        "href": "https://wicg.github.io/local-font-access/#concept-system-fonts",
+        "title": "System Fonts",
         "number": "4.2"
       },
       "definedIn": "prose"
     },
     {
-      "id": "font-table-tag",
-      "href": "https://wicg.github.io/local-font-access/#font-table-tag",
+      "id": "read-as-a-font-representation",
+      "href": "https://wicg.github.io/local-font-access/#read-as-a-font-representation",
       "linkingText": [
-        "tag"
+        "read as a font representation"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [
-        "font table"
-      ],
+      "for": [],
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "concept-font-table",
-        "href": "https://wicg.github.io/local-font-access/#concept-font-table",
-        "title": "Font Table",
+        "id": "concept-system-fonts",
+        "href": "https://wicg.github.io/local-font-access/#concept-system-fonts",
+        "title": "System Fonts",
         "number": "4.2"
       },
       "definedIn": "prose"
     },
     {
-      "id": "font-representation-name-table",
-      "href": "https://wicg.github.io/local-font-access/#font-representation-name-table",
+      "id": "get-all-system-font-representations",
+      "href": "https://wicg.github.io/local-font-access/#get-all-system-font-representations",
       "linkingText": [
-        "name table"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "font representation"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "concept-name-table",
-        "href": "https://wicg.github.io/local-font-access/#concept-name-table",
-        "title": "Name Table",
-        "number": "4.3"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "name-table-names",
-      "href": "https://wicg.github.io/local-font-access/#name-table-names",
-      "linkingText": [
-        "names"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "name table"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "concept-name-table",
-        "href": "https://wicg.github.io/local-font-access/#concept-name-table",
-        "title": "Name Table",
-        "number": "4.3"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "name-id",
-      "href": "https://wicg.github.io/local-font-access/#name-id",
-      "linkingText": [
-        "name ID"
+        "get all system font representations"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -159,90 +216,10 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "concept-name-table",
-        "href": "https://wicg.github.io/local-font-access/#concept-name-table",
-        "title": "Name Table",
-        "number": "4.3"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "localized-string-map",
-      "href": "https://wicg.github.io/local-font-access/#localized-string-map",
-      "linkingText": [
-        "localized string map"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "concept-name-table",
-        "href": "https://wicg.github.io/local-font-access/#concept-name-table",
-        "title": "Name Table",
-        "number": "4.3"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "font-representation-name-string",
-      "href": "https://wicg.github.io/local-font-access/#font-representation-name-string",
-      "linkingText": [
-        "name string"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "font representation"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "concept-name-table",
-        "href": "https://wicg.github.io/local-font-access/#concept-name-table",
-        "title": "Name Table",
-        "number": "4.3"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "font-representation-postscript-name",
-      "href": "https://wicg.github.io/local-font-access/#font-representation-postscript-name",
-      "linkingText": [
-        "PostScript name"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "font representation"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "concept-name-table",
-        "href": "https://wicg.github.io/local-font-access/#concept-name-table",
-        "title": "Name Table",
-        "number": "4.3"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "user-language",
-      "href": "https://wicg.github.io/local-font-access/#user-language",
-      "linkingText": [
-        "user language"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "concept-name-table",
-        "href": "https://wicg.github.io/local-font-access/#concept-name-table",
-        "title": "Name Table",
-        "number": "4.3"
+        "id": "concept-system-fonts",
+        "href": "https://wicg.github.io/local-font-access/#concept-system-fonts",
+        "title": "System Fonts",
+        "number": "4.2"
       },
       "definedIn": "prose"
     },
@@ -308,75 +285,16 @@
       "definedIn": "prose"
     },
     {
-      "id": "navigatorfonts",
-      "href": "https://wicg.github.io/local-font-access/#navigatorfonts",
-      "linkingText": [
-        "NavigatorFonts"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "font-manager-api",
-        "href": "https://wicg.github.io/local-font-access/#font-manager-api",
-        "title": "Font manager",
-        "number": "6.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-navigatorfonts-fonts",
-      "href": "https://wicg.github.io/local-font-access/#dom-navigatorfonts-fonts",
-      "linkingText": [
-        "fonts"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "NavigatorFonts"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "font-manager-api",
-        "href": "https://wicg.github.io/local-font-access/#font-manager-api",
-        "title": "Font manager",
-        "number": "6.2"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "fontmanager",
-      "href": "https://wicg.github.io/local-font-access/#fontmanager",
-      "linkingText": [
-        "FontManager"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "font-manager-api",
-        "href": "https://wicg.github.io/local-font-access/#font-manager-api",
-        "title": "Font manager",
-        "number": "6.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-fontmanager-query-options-options",
-      "href": "https://wicg.github.io/local-font-access/#dom-fontmanager-query-options-options",
+      "id": "dom-window-querylocalfonts-options-options",
+      "href": "https://wicg.github.io/local-font-access/#dom-window-querylocalfonts-options-options",
       "linkingText": [
         "options"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "FontManager/query(options)",
-        "FontManager/query()"
+        "Window/queryLocalFonts(options)",
+        "Window/queryLocalFonts()"
       ],
       "access": "public",
       "informative": false,
@@ -429,16 +347,16 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-fontmanager-query",
-      "href": "https://wicg.github.io/local-font-access/#dom-fontmanager-query",
+      "id": "dom-window-querylocalfonts",
+      "href": "https://wicg.github.io/local-font-access/#dom-window-querylocalfonts",
       "linkingText": [
-        "query(options)",
-        "query()"
+        "queryLocalFonts(options)",
+        "queryLocalFonts()"
       ],
       "localLinkingText": [],
       "type": "method",
       "for": [
-        "FontManager"
+        "Window"
       ],
       "access": "public",
       "informative": false,
@@ -567,9 +485,10 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "title",
-        "href": "https://wicg.github.io/local-font-access/#title",
-        "title": "Local Font Access API"
+        "id": "fontdata-interface",
+        "href": "https://wicg.github.io/local-font-access/#fontdata-interface",
+        "title": "The FontData interface",
+        "number": "6.3"
       },
       "definedIn": "prose"
     }

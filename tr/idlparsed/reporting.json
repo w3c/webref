@@ -5,25 +5,103 @@
   },
   "idlparsed": {
     "jsNames": {
-      "constructors": {},
-      "functions": {}
+      "constructors": {
+        "Window": [
+          "ReportingObserver"
+        ],
+        "Worker": [
+          "ReportingObserver"
+        ]
+      },
+      "functions": {
+        "Window": [
+          "ReportBody",
+          "Report"
+        ],
+        "Worker": [
+          "ReportBody",
+          "Report"
+        ]
+      }
     },
     "idlNames": {
       "ReportBody": {
-        "fragment": "interface ReportBody {\n};",
+        "fragment": "[Exposed=(Window,Worker)]\ninterface ReportBody {\n  [Default] object toJSON();\n};",
         "type": "interface",
         "name": "ReportBody",
         "inheritance": null,
-        "members": [],
-        "extAttrs": [],
+        "members": [
+          {
+            "type": "operation",
+            "name": "toJSON",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "object"
+            },
+            "arguments": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "Default",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": ""
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                }
+              ]
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "Report": {
-        "fragment": "interface Report {\n  readonly attribute DOMString type;\n  readonly attribute DOMString url;\n  readonly attribute ReportBody? body;\n};",
+        "fragment": "[Exposed=(Window,Worker)]\ninterface Report {\n  [Default] object toJSON();\n  readonly attribute DOMString type;\n  readonly attribute DOMString url;\n  readonly attribute ReportBody? body;\n};",
         "type": "interface",
         "name": "Report",
         "inheritance": null,
         "members": [
+          {
+            "type": "operation",
+            "name": "toJSON",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "object"
+            },
+            "arguments": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "Default",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": ""
+          },
           {
             "type": "attribute",
             "name": "type",
@@ -70,66 +148,34 @@
             "readonly": true
           }
         ],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                }
+              ]
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "ReportingObserver": {
-        "fragment": "[Constructor(ReportingObserverCallback callback, optional ReportingObserverOptions options)]\ninterface ReportingObserver {\n  void observe();\n  void disconnect();\n  ReportList takeRecords();\n};",
+        "fragment": "[Exposed=(Window,Worker)]\ninterface ReportingObserver {\n  constructor(ReportingObserverCallback callback, optional ReportingObserverOptions options = {});\n  undefined observe();\n  undefined disconnect();\n  ReportList takeRecords();\n};",
         "type": "interface",
         "name": "ReportingObserver",
         "inheritance": null,
         "members": [
           {
-            "type": "operation",
-            "name": "observe",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "void"
-            },
-            "arguments": [],
-            "extAttrs": [],
-            "special": ""
-          },
-          {
-            "type": "operation",
-            "name": "disconnect",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "void"
-            },
-            "arguments": [],
-            "extAttrs": [],
-            "special": ""
-          },
-          {
-            "type": "operation",
-            "name": "takeRecords",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "ReportList"
-            },
-            "arguments": [],
-            "extAttrs": [],
-            "special": ""
-          }
-        ],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Constructor",
-            "rhs": null,
+            "type": "constructor",
             "arguments": [
               {
                 "type": "argument",
@@ -159,17 +205,83 @@
                   "union": false,
                   "idlType": "ReportingObserverOptions"
                 },
-                "default": null,
+                "default": {
+                  "type": "dictionary"
+                },
                 "optional": true,
                 "variadic": false
               }
-            ]
+            ],
+            "extAttrs": []
+          },
+          {
+            "type": "operation",
+            "name": "observe",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "disconnect",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "takeRecords",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "ReportList"
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": ""
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                }
+              ]
+            },
+            "arguments": []
           }
         ],
         "partial": false
       },
       "ReportingObserverCallback": {
-        "fragment": "callback ReportingObserverCallback = void (sequence<Report> reports, ReportingObserver observer);",
+        "fragment": "callback ReportingObserverCallback = undefined (sequence<Report> reports, ReportingObserver observer);",
         "type": "callback",
         "name": "ReportingObserverCallback",
         "idlType": {
@@ -178,7 +290,7 @@
           "generic": "",
           "nullable": false,
           "union": false,
-          "idlType": "void"
+          "idlType": "undefined"
         },
         "arguments": [
           {
@@ -300,233 +412,8 @@
         },
         "extAttrs": []
       },
-      "DeprecationReportBody": {
-        "fragment": "interface DeprecationReportBody : ReportBody {\n  readonly attribute DOMString id;\n  readonly attribute Date? anticipatedRemoval;\n  readonly attribute DOMString message;\n  readonly attribute DOMString? sourceFile;\n  readonly attribute unsigned long? lineNumber;\n  readonly attribute unsigned long? columnNumber;\n};",
-        "type": "interface",
-        "name": "DeprecationReportBody",
-        "inheritance": "ReportBody",
-        "members": [
-          {
-            "type": "attribute",
-            "name": "id",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "attribute",
-            "name": "anticipatedRemoval",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": true,
-              "union": false,
-              "idlType": "Date"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "attribute",
-            "name": "message",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "attribute",
-            "name": "sourceFile",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": true,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "attribute",
-            "name": "lineNumber",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": true,
-              "union": false,
-              "idlType": "unsigned long"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "attribute",
-            "name": "columnNumber",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": true,
-              "union": false,
-              "idlType": "unsigned long"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          }
-        ],
-        "extAttrs": [],
-        "partial": false
-      },
-      "InterventionReportBody": {
-        "fragment": "interface InterventionReportBody : ReportBody {\n  readonly attribute DOMString id;\n  readonly attribute DOMString message;\n  readonly attribute DOMString? sourceFile;\n  readonly attribute unsigned long? lineNumber;\n  readonly attribute unsigned long? columnNumber;\n};",
-        "type": "interface",
-        "name": "InterventionReportBody",
-        "inheritance": "ReportBody",
-        "members": [
-          {
-            "type": "attribute",
-            "name": "id",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "attribute",
-            "name": "message",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "attribute",
-            "name": "sourceFile",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": true,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "attribute",
-            "name": "lineNumber",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": true,
-              "union": false,
-              "idlType": "unsigned long"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "attribute",
-            "name": "columnNumber",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": true,
-              "union": false,
-              "idlType": "unsigned long"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          }
-        ],
-        "extAttrs": [],
-        "partial": false
-      },
-      "CrashReportBody": {
-        "fragment": "interface CrashReportBody : ReportBody {\n  readonly attribute DOMString crashId;\n  readonly attribute DOMString? reason;\n};",
-        "type": "interface",
-        "name": "CrashReportBody",
-        "inheritance": "ReportBody",
-        "members": [
-          {
-            "type": "attribute",
-            "name": "crashId",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "attribute",
-            "name": "reason",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": true,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          }
-        ],
-        "extAttrs": [],
-        "partial": false
-      },
       "GenerateTestReportParameters": {
-        "fragment": "dictionary GenerateTestReportParameters {\n  required DOMString message;\n  DOMString group;\n};",
+        "fragment": "dictionary GenerateTestReportParameters {\n  required DOMString message;\n  DOMString group = \"default\";\n};",
         "type": "dictionary",
         "name": "GenerateTestReportParameters",
         "inheritance": null,
@@ -558,7 +445,10 @@
               "union": false,
               "idlType": "DOMString"
             },
-            "default": null,
+            "default": {
+              "type": "string",
+              "value": "default"
+            },
             "required": false
           }
         ],
@@ -568,7 +458,18 @@
     },
     "idlExtendedNames": {},
     "globals": {},
-    "exposed": {},
+    "exposed": {
+      "Window": [
+        "ReportBody",
+        "Report",
+        "ReportingObserver"
+      ],
+      "Worker": [
+        "ReportBody",
+        "Report",
+        "ReportingObserver"
+      ]
+    },
     "dependencies": {
       "ReportBody": [],
       "Report": [
@@ -577,26 +478,12 @@
       "ReportingObserver": [
         "ReportingObserverCallback",
         "ReportingObserverOptions",
-        "void",
         "ReportList"
       ],
       "ReportingObserverOptions": [],
-      "DeprecationReportBody": [
-        "ReportBody",
-        "Date"
-      ],
-      "InterventionReportBody": [
-        "ReportBody"
-      ],
-      "CrashReportBody": [
-        "ReportBody"
-      ],
       "GenerateTestReportParameters": []
     },
-    "externalDependencies": [
-      "void",
-      "Date"
-    ],
+    "externalDependencies": [],
     "hasObsoleteIdl": false
   }
 }

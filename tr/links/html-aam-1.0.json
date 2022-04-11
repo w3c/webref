@@ -10,8 +10,6 @@
       "dfn-role",
       "dfn-state",
       "dfn-property",
-      "dfn-accessible-name",
-      "dfn-accessible-description",
       "dfn-element",
       "dfn-node"
     ],
@@ -45,6 +43,7 @@
       "role-map-figure",
       "role-map-contentinfo",
       "role-map-form",
+      "role-map-form-nameless",
       "role-map-heading",
       "ariaLevel",
       "role-map-banner",
@@ -126,6 +125,11 @@
       "sec-Disclosure"
     ],
     "https://www.w3.org/groups/wg/aria/ipr": [],
+    "https://www.w3.org/TR/accname-1.2/": [
+      "dfn-accessible-name",
+      "dfn-accessible-description",
+      "mapping_additional_nd_te"
+    ],
     "https://www.w3.org/TR/svg-aam-1.0/": [],
     "https://w3c.github.io/mathml-aam/": [],
     "https://wiki.linuxfoundation.org/accessibility/iaccessible2/start": [],
@@ -136,10 +140,12 @@
     "https://datatracker.ietf.org/doc/html/bcp14": [],
     "https://www.w3.org/TR/wai-aria-1.2/": [
       "dfn-accessibility-api",
-      "dfn-accessible-name",
-      "dfn-accessible-description",
       "dfn-accessible-object",
-      "dfn-widget"
+      "dfn-widget",
+      "aria-multiselectable",
+      "aria-label",
+      "aria-labelledby",
+      "aria-describedby"
     ],
     "https://html.spec.whatwg.org/": [
       "category-label",
@@ -151,6 +157,8 @@
       "the-area-element",
       "the-article-element",
       "the-aside-element",
+      "sectioning-content",
+      "sectioning-root",
       "audio",
       "attr-media-controls",
       "autonomous-custom-element",
@@ -185,8 +193,6 @@
       "the-figure-element",
       "the-footer-element",
       "the-main-element",
-      "sectioning-content",
-      "sectioning-root",
       "the-form-element",
       "custom-elements-face-example",
       "the-h1,-h2,-h3,-h4,-h5,-and-h6-elements",
@@ -502,20 +508,12 @@
     "https://www.w3.org/TR/html/": [
       "element-attrdef-label-for"
     ],
-    "https://www.w3.org/TR/accname-aam-1.1/": [
-      "mapping_additional_nd_te"
-    ],
-    "https://www.w3.org/TR/wai-aria-1.1/": [
-      "aria-multiselectable",
-      "aria-label",
-      "aria-labelledby",
-      "aria-describedby"
-    ],
     "https://msdn.microsoft.com/en-us/library/system.windows.automation.expandcollapsepattern.aspx": [],
     "https://dom.spec.whatwg.org/": [
       "concept-tree-child"
     ],
     "https://github.com/w3c/html-aam/commits/gh-pages": [],
+    "https://github.com/w3c/html-aam/pull/350": [],
     "https://github.com/w3c/html-aam/pull/364": [],
     "https://github.com/w3c/html-aam/issues/316": [],
     "https://github.com/w3c/html-aam/pull/348": [],
