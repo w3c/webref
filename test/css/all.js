@@ -43,11 +43,54 @@ const tempIgnore = [
   { shortname: 'svg-strokes', prop: 'valuespaces', name: '<dasharray>' }
 ];
 
+
+// Valuespaces that are defined more than once...
+const duplicatedValuespaces = [
+  // Defined in CSS Grid Layout Module Level 2 and CSS Box Sizing Module Level 3
+  // https://drafts.csswg.org/css-grid-2/
+  // https://drafts.csswg.org/css-sizing-3/
+  '<fit-content()>',
+
+  // Defined in CSS Images Module Level 3, CSS Positioned Layout Module Level 3
+  // and CSS Text Module Level 3 (and CSS Values but in prose so not extracted)
+  // https://drafts.csswg.org/css-images-3/
+  // https://drafts.csswg.org/css-position/
+  // https://drafts.csswg.org/css-text-3/
+  '<length>',
+
+  // Defined in CSS Shapes Module Level 1 and Motion Path Module Level 1
+  // https://drafts.csswg.org/css-shapes/
+  // https://drafts.fxtf.org/motion-1/
+  '<path()>',
+
+  // Defined in CSS Positioned Layout Module Level 3,
+  // CSS Mobile Text Size Adjustment Module Level 1 and CSS Text Module Level 3
+  // (and CSS Values but in prose so not extracted)
+  // https://drafts.csswg.org/css-position/
+  // https://drafts.csswg.org/css-size-adjust-1/
+  // https://drafts.csswg.org/css-text-3/
+  '<percentage>',
+
+  // Defined in CSS Masking Module Level 1 and CSS Shapes Module Level 1
+  // https://drafts.fxtf.org/css-masking-1/
+  // https://drafts.csswg.org/css-shapes/
+  '<rect()>',
+
+  // Defined in CSS Masking Module Level 1, CSS Values and Units Module Level 4
+  // and Filter Effects Module Level 1
+  // https://drafts.fxtf.org/css-masking-1/
+  // https://drafts.csswg.org/css-values-4/
+  // https://drafts.fxtf.org/filter-effects-1/
+  '<url>'
+];
+
+
 describe(`The curated view of CSS extracts`, () => {
   before(async () => {
     const all = await css.listAll({ folder: curatedFolder });
     const baseProperties = {};
     const extendedProperties = {};
+    const valuespaces = {};
 
     for (const [shortname, data] of Object.entries(all)) {
       describe(`The CSS extract for ${shortname} in the curated view`, () => {
@@ -60,20 +103,26 @@ describe(`The curated view of CSS extracts`, () => {
         const spec = index.results.find(s => s.nightly.url === data.spec.url);
         for (const { type, prop, value } of cssValues) {
           for (const [name, desc] of Object.entries(data[prop])) {
-            if (!desc[value]) {
-              continue;
-            }
-            if ((type === 'property') && (spec.seriesComposition !== 'delta')) {
+            if ((type === 'property') && (spec.seriesComposition !== 'delta') && !desc.newValues) {
               if (!baseProperties[name]) {
                 baseProperties[name] = [];
               }
               baseProperties[name].push({ spec: data.spec, dfn: desc });
             }
-            else if ((type === 'extended property')) {
+            else if ((type === 'extended property') && desc[value]) {
               if (!extendedProperties[name]) {
                 extendedProperties[name] = [];
               }
               extendedProperties[name].push({ spec: data.spec, dfn: desc });
+            }
+            else if ((type === 'value space') && (spec.seriesComposition !== 'delta')) {
+              if (!valuespaces[name]) {
+                valuespaces[name] = [];
+              }
+              valuespaces[name].push({ spec: data.spec, dfn: desc });
+            }
+            if (!desc[value]) {
+              continue;
             }
             if (tempIgnore.some(c => c.shortname === shortname &&
                 c.prop === prop && c.name === name)) {
@@ -104,6 +153,22 @@ describe(`The curated view of CSS extracts`, () => {
         it(`contains a base definition for the "${name}" property`, () => {
           assert(baseProperties[name], 'no base definition found');
         });
+      }
+    });
+
+    describe(`Looking at CSS valuespaces, the curated view`, () => {
+      for (const [name, dfns] of Object.entries(valuespaces)) {
+        if (duplicatedValuespaces.includes(name)) {
+          it(`contains more than "${name}" valuespace definitions`, () => {
+            assert(dfns.length >= 2);
+          });
+        }
+        else {
+          it(`contains only one "${name}" valuespace definition`, () => {
+            assert.strictEqual(dfns.length, 1,
+              `defined in ${dfns.map(d => d.spec.title).join(', ')} (${dfns.map(d => d.spec.url).join(', ')})`);
+          });
+        }
       }
     });
   });
