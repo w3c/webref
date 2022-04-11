@@ -1,0 +1,2202 @@
+{
+  "spec": {
+    "title": "EPUB 3.3",
+    "url": "https://w3c.github.io/epub-specs/epub33/core/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#title",
+      "level": 1,
+      "title": "EPUB 3.3"
+    },
+    {
+      "id": "toc",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "sec-introduction",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-introduction",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "sec-intro-overview",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-intro-overview",
+      "level": 3,
+      "title": "Overview",
+      "number": "1.1"
+    },
+    {
+      "id": "sec-intro-spec-org",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-intro-spec-org",
+      "level": 3,
+      "title": "Organization",
+      "number": "1.2"
+    },
+    {
+      "id": "sec-intro-relations",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-intro-relations",
+      "level": 3,
+      "title": "Relationship to Other Specifications",
+      "number": "1.3"
+    },
+    {
+      "id": "sec-overview-relations-html",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-overview-relations-html",
+      "level": 4,
+      "title": "Relationship to HTML",
+      "number": "1.3.1"
+    },
+    {
+      "id": "sec-overview-relations-svg",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-overview-relations-svg",
+      "level": 4,
+      "title": "Relationship to SVG",
+      "number": "1.3.2"
+    },
+    {
+      "id": "sec-overview-relations-css",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-overview-relations-css",
+      "level": 4,
+      "title": "Relationship to CSS",
+      "number": "1.3.3"
+    },
+    {
+      "id": "sec-overview-relations-mathml",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-overview-relations-mathml",
+      "level": 4,
+      "title": "Relationship to MathML",
+      "number": "1.3.4"
+    },
+    {
+      "id": "sec-overview-relations-smil",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-overview-relations-smil",
+      "level": 4,
+      "title": "Relationship to SMIL",
+      "number": "1.3.5"
+    },
+    {
+      "id": "sec-overview-relations-url",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-overview-relations-url",
+      "level": 4,
+      "title": "Relationship to URL",
+      "number": "1.3.6"
+    },
+    {
+      "id": "sec-terminology",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-terminology",
+      "level": 3,
+      "title": "Terminology",
+      "number": "1.4"
+    },
+    {
+      "id": "conformance",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#conformance",
+      "level": 3,
+      "title": "Conformance",
+      "number": "1.5"
+    },
+    {
+      "id": "sec-intro-shorthands",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-intro-shorthands",
+      "level": 3,
+      "title": "Authoring Shorthands",
+      "number": "1.6"
+    },
+    {
+      "id": "sec-epub-conf",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-epub-conf",
+      "level": 2,
+      "title": "EPUB Publication Conformance",
+      "number": "2"
+    },
+    {
+      "id": "sec-conformance-checking",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-conformance-checking",
+      "level": 3,
+      "title": "Conformance Checking",
+      "number": "2.1"
+    },
+    {
+      "id": "sec-publication-resources",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-publication-resources",
+      "level": 2,
+      "title": "Publication Resources",
+      "number": "3"
+    },
+    {
+      "id": "sec-pub-res-intro",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-pub-res-intro",
+      "level": 3,
+      "title": "Introduction",
+      "number": "3.1"
+    },
+    {
+      "id": "sec-manifest-plane",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-manifest-plane",
+      "level": 4,
+      "title": "The Manifest Plane",
+      "number": "3.1.1"
+    },
+    {
+      "id": "sec-spine-plane",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-spine-plane",
+      "level": 4,
+      "title": "The Spine Plane",
+      "number": "3.1.2"
+    },
+    {
+      "id": "sec-content-plane",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-content-plane",
+      "level": 4,
+      "title": "The Content Plane",
+      "number": "3.1.3"
+    },
+    {
+      "id": "sec-core-media-types",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-core-media-types",
+      "level": 3,
+      "title": "Core Media Types",
+      "number": "3.2"
+    },
+    {
+      "id": "sec-foreign-resources",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-foreign-resources",
+      "level": 3,
+      "title": "Foreign Resources",
+      "number": "3.3"
+    },
+    {
+      "id": "sec-exempt-resources",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-exempt-resources",
+      "level": 3,
+      "title": "Exempt Resources",
+      "number": "3.4"
+    },
+    {
+      "id": "sec-resource-fallbacks",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-resource-fallbacks",
+      "level": 3,
+      "title": "Resource Fallbacks",
+      "number": "3.5"
+    },
+    {
+      "id": "sec-manifest-fallbacks",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-manifest-fallbacks",
+      "level": 4,
+      "title": "Manifest Fallbacks",
+      "number": "3.5.1"
+    },
+    {
+      "id": "sec-intrinsic-fallbacks",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-intrinsic-fallbacks",
+      "level": 4,
+      "title": "Intrinsic Fallbacks",
+      "number": "3.5.2"
+    },
+    {
+      "id": "sec-fallbacks-audio",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-fallbacks-audio",
+      "level": 5,
+      "title": "HTML audio Fallbacks",
+      "number": "3.5.2.1"
+    },
+    {
+      "id": "sec-fallbacks-img",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-fallbacks-img",
+      "level": 5,
+      "title": "HTML img Fallbacks",
+      "number": "3.5.2.2"
+    },
+    {
+      "id": "sec-resource-locations",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-resource-locations",
+      "level": 3,
+      "title": "Resource Locations",
+      "number": "3.6"
+    },
+    {
+      "id": "sec-data-urls",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-data-urls",
+      "level": 3,
+      "title": "Data URLs",
+      "number": "3.7"
+    },
+    {
+      "id": "sec-xml-constraints",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-xml-constraints",
+      "level": 3,
+      "title": "XML Conformance",
+      "number": "3.8"
+    },
+    {
+      "id": "sec-ocf",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-ocf",
+      "level": 2,
+      "title": "Open Container Format",
+      "number": "4"
+    },
+    {
+      "id": "sec-container-abstract",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-container-abstract",
+      "level": 3,
+      "title": "OCF Abstract Container",
+      "number": "4.1"
+    },
+    {
+      "id": "sec-container-abstract-intro",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-container-abstract-intro",
+      "level": 4,
+      "title": "Introduction",
+      "number": "4.1.1"
+    },
+    {
+      "id": "sec-container-file-and-dir-structure",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-container-file-and-dir-structure",
+      "level": 4,
+      "title": "File and Directory Structure",
+      "number": "4.1.2"
+    },
+    {
+      "id": "sec-container-filenames",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-container-filenames",
+      "level": 4,
+      "title": "File Paths and File Names",
+      "number": "4.1.3"
+    },
+    {
+      "id": "sec-file-names-to-path-names",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-file-names-to-path-names",
+      "level": 4,
+      "title": "Deriving File Paths",
+      "number": "4.1.4"
+    },
+    {
+      "id": "sec-container-iri",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-container-iri",
+      "level": 4,
+      "title": "URLs in the OCF Abstract Container",
+      "number": "4.1.5"
+    },
+    {
+      "id": "sec-container-metainf",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-container-metainf",
+      "level": 4,
+      "title": "META-INF Directory",
+      "number": "4.1.6"
+    },
+    {
+      "id": "sec-container-metainf-inc",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-container-metainf-inc",
+      "level": 5,
+      "title": "Inclusion in OCF Abstract Container",
+      "number": "4.1.6.1"
+    },
+    {
+      "id": "sec-parsing-urls-metainf",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-parsing-urls-metainf",
+      "level": 5,
+      "title": "Parsing URLs in the META-INF Directory",
+      "number": "4.1.6.2"
+    },
+    {
+      "id": "sec-container-metainf-files",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-container-metainf-files",
+      "level": 5,
+      "title": "Reserved Files",
+      "number": "4.1.6.3"
+    },
+    {
+      "id": "sec-container-metainf-container.xml",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-container-metainf-container.xml",
+      "level": 6,
+      "title": "Container File (container.xml)",
+      "number": "4.1.6.3.1"
+    },
+    {
+      "id": "sec-container.xml-container-elem",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-container.xml-container-elem",
+      "level": 6,
+      "title": "The container Element",
+      "number": "4.1.6.3.1.1"
+    },
+    {
+      "id": "sec-container.xml-rootfiles-elem",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-container.xml-rootfiles-elem",
+      "level": 6,
+      "title": "The rootfiles Element",
+      "number": "4.1.6.3.1.2"
+    },
+    {
+      "id": "sec-container.xml-rootfile-elem",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-container.xml-rootfile-elem",
+      "level": 6,
+      "title": "The rootfile Element",
+      "number": "4.1.6.3.1.3"
+    },
+    {
+      "id": "sec-container.xml-links-elem",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-container.xml-links-elem",
+      "level": 6,
+      "title": "The links Element",
+      "number": "4.1.6.3.1.4"
+    },
+    {
+      "id": "sec-container.xml-link-elem",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-container.xml-link-elem",
+      "level": 6,
+      "title": "The link Element",
+      "number": "4.1.6.3.1.5"
+    },
+    {
+      "id": "sec-container-container.xml-example",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-container-container.xml-example",
+      "level": 6,
+      "title": "Examples",
+      "number": "4.1.6.3.1.6"
+    },
+    {
+      "id": "sec-container-metainf-encryption.xml",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-container-metainf-encryption.xml",
+      "level": 6,
+      "title": "Encryption File (encryption.xml)",
+      "number": "4.1.6.3.2"
+    },
+    {
+      "id": "sec-encryption.xml-encryption",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-encryption.xml-encryption",
+      "level": 6,
+      "title": "The encryption element",
+      "number": "4.1.6.3.2.1"
+    },
+    {
+      "id": "sec-enc-compression",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-enc-compression",
+      "level": 6,
+      "title": "Order of Compression and Encryption",
+      "number": "4.1.6.3.2.2"
+    },
+    {
+      "id": "sec-container-metainf-manifest.xml",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-container-metainf-manifest.xml",
+      "level": 6,
+      "title": "Manifest File (manifest.xml)",
+      "number": "4.1.6.3.3"
+    },
+    {
+      "id": "sec-container-metainf-metadata.xml",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-container-metainf-metadata.xml",
+      "level": 6,
+      "title": "Metadata File (metadata.xml)",
+      "number": "4.1.6.3.4"
+    },
+    {
+      "id": "sec-container-metainf-rights.xml",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-container-metainf-rights.xml",
+      "level": 6,
+      "title": "Rights Management File (rights.xml)",
+      "number": "4.1.6.3.5"
+    },
+    {
+      "id": "sec-container-metainf-signatures.xml",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-container-metainf-signatures.xml",
+      "level": 6,
+      "title": "Digital Signatures File (signatures.xml)",
+      "number": "4.1.6.3.6"
+    },
+    {
+      "id": "sec-signatures.xml-signatures",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-signatures.xml-signatures",
+      "level": 6,
+      "title": "The signatures element",
+      "number": "4.1.6.3.6.1"
+    },
+    {
+      "id": "sec-container-zip",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-container-zip",
+      "level": 3,
+      "title": "OCF ZIP Container",
+      "number": "4.2"
+    },
+    {
+      "id": "sec-container-zip-intro",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-container-zip-intro",
+      "level": 4,
+      "title": "Introduction",
+      "number": "4.2.1"
+    },
+    {
+      "id": "sec-zip-container-zipreqs",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-zip-container-zipreqs",
+      "level": 4,
+      "title": "ZIP File Requirements",
+      "number": "4.2.2"
+    },
+    {
+      "id": "sec-zip-container-mime",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-zip-container-mime",
+      "level": 4,
+      "title": "OCF ZIP Container Media Type Identification",
+      "number": "4.2.3"
+    },
+    {
+      "id": "sec-font-obfuscation",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-font-obfuscation",
+      "level": 3,
+      "title": "Font Obfuscation",
+      "number": "4.3"
+    },
+    {
+      "id": "fobfus-intro",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#fobfus-intro",
+      "level": 4,
+      "title": "Introduction",
+      "number": "4.3.1"
+    },
+    {
+      "id": "fobfus-limitations",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#fobfus-limitations",
+      "level": 4,
+      "title": "Limitations",
+      "number": "4.3.2"
+    },
+    {
+      "id": "obfus-keygen",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#obfus-keygen",
+      "level": 4,
+      "title": "Obfuscation Key",
+      "number": "4.3.3"
+    },
+    {
+      "id": "obfus-algorithm",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#obfus-algorithm",
+      "level": 4,
+      "title": "Obfuscation Algorithm",
+      "number": "4.3.4"
+    },
+    {
+      "id": "obfus-specifying",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#obfus-specifying",
+      "level": 4,
+      "title": "Specifying Obfuscated Fonts",
+      "number": "4.3.5"
+    },
+    {
+      "id": "sec-package-doc",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-package-doc",
+      "level": 2,
+      "title": "Package Document",
+      "number": "5"
+    },
+    {
+      "id": "sec-package-intro",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-package-intro",
+      "level": 3,
+      "title": "Introduction",
+      "number": "5.1"
+    },
+    {
+      "id": "sec-parse-package-urls",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-parse-package-urls",
+      "level": 3,
+      "title": "Parsing URLs in the Package Document",
+      "number": "5.2"
+    },
+    {
+      "id": "sec-shared-attrs",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-shared-attrs",
+      "level": 3,
+      "title": "Shared Attributes",
+      "number": "5.3"
+    },
+    {
+      "id": "attrdef-dir",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#attrdef-dir",
+      "level": 4,
+      "title": "The dir Attribute",
+      "number": "5.3.1"
+    },
+    {
+      "id": "attrdef-href",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#attrdef-href",
+      "level": 4,
+      "title": "The href Attribute",
+      "number": "5.3.2"
+    },
+    {
+      "id": "attrdef-id",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#attrdef-id",
+      "level": 4,
+      "title": "The id Attribute",
+      "number": "5.3.3"
+    },
+    {
+      "id": "attrdef-media-type",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#attrdef-media-type",
+      "level": 4,
+      "title": "The media-type Attribute",
+      "number": "5.3.4"
+    },
+    {
+      "id": "attrdef-properties",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#attrdef-properties",
+      "level": 4,
+      "title": "The properties Attribute",
+      "number": "5.3.5"
+    },
+    {
+      "id": "attrdef-refines",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#attrdef-refines",
+      "level": 4,
+      "title": "The refines Attribute",
+      "number": "5.3.6"
+    },
+    {
+      "id": "attrdef-xml-lang",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#attrdef-xml-lang",
+      "level": 4,
+      "title": "The xml:lang Attribute",
+      "number": "5.3.7"
+    },
+    {
+      "id": "sec-package-elem",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-package-elem",
+      "level": 3,
+      "title": "The package Element",
+      "number": "5.4"
+    },
+    {
+      "id": "sec-pkg-metadata",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-pkg-metadata",
+      "level": 3,
+      "title": "Metadata Section",
+      "number": "5.5"
+    },
+    {
+      "id": "sec-metadata-elem",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-metadata-elem",
+      "level": 4,
+      "title": "The metadata Element",
+      "number": "5.5.1"
+    },
+    {
+      "id": "sec-metadata-values",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-metadata-values",
+      "level": 4,
+      "title": "Metadata Values",
+      "number": "5.5.2"
+    },
+    {
+      "id": "sec-opf-dcmes-required",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-opf-dcmes-required",
+      "level": 4,
+      "title": "Dublin Core Required Elements",
+      "number": "5.5.3"
+    },
+    {
+      "id": "sec-opf-dcidentifier",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-opf-dcidentifier",
+      "level": 5,
+      "title": "The dc:identifier Element",
+      "number": "5.5.3.1"
+    },
+    {
+      "id": "sec-opf-dctitle",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-opf-dctitle",
+      "level": 5,
+      "title": "The dc:title Element",
+      "number": "5.5.3.2"
+    },
+    {
+      "id": "sec-opf-dclanguage",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-opf-dclanguage",
+      "level": 5,
+      "title": "The dc:language Element",
+      "number": "5.5.3.3"
+    },
+    {
+      "id": "sec-opf-dcmes-optional",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-opf-dcmes-optional",
+      "level": 4,
+      "title": "Dublin Core Optional Elements",
+      "number": "5.5.4"
+    },
+    {
+      "id": "sec-opf-dcmes-optional-def",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-opf-dcmes-optional-def",
+      "level": 5,
+      "title": "General Definition",
+      "number": "5.5.4.1"
+    },
+    {
+      "id": "sec-opf-dccontributor",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-opf-dccontributor",
+      "level": 5,
+      "title": "The dc:contributor Element",
+      "number": "5.5.4.2"
+    },
+    {
+      "id": "sec-opf-dccreator",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-opf-dccreator",
+      "level": 5,
+      "title": "The dc:creator Element",
+      "number": "5.5.4.3"
+    },
+    {
+      "id": "sec-opf-dcdate",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-opf-dcdate",
+      "level": 5,
+      "title": "The dc:date Element",
+      "number": "5.5.4.4"
+    },
+    {
+      "id": "sec-opf-dcsubject",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-opf-dcsubject",
+      "level": 5,
+      "title": "The dc:subject Element",
+      "number": "5.5.4.5"
+    },
+    {
+      "id": "sec-opf-dctype",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-opf-dctype",
+      "level": 5,
+      "title": "The dc:type Element",
+      "number": "5.5.4.6"
+    },
+    {
+      "id": "sec-meta-elem",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-meta-elem",
+      "level": 4,
+      "title": "The meta Element",
+      "number": "5.5.5"
+    },
+    {
+      "id": "sec-metadata-last-modified",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-metadata-last-modified",
+      "level": 4,
+      "title": "Last Modified Date",
+      "number": "5.5.6"
+    },
+    {
+      "id": "sec-link-elem",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-link-elem",
+      "level": 4,
+      "title": "The link Element",
+      "number": "5.5.7"
+    },
+    {
+      "id": "sec-pkg-manifest",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-pkg-manifest",
+      "level": 3,
+      "title": "Manifest Section",
+      "number": "5.6"
+    },
+    {
+      "id": "sec-manifest-elem",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-manifest-elem",
+      "level": 4,
+      "title": "The manifest Element",
+      "number": "5.6.1"
+    },
+    {
+      "id": "sec-item-elem",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-item-elem",
+      "level": 4,
+      "title": "The item Element",
+      "number": "5.6.2"
+    },
+    {
+      "id": "sec-item-resource-properties",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-item-resource-properties",
+      "level": 5,
+      "title": "Resource Properties",
+      "number": "5.6.2.1"
+    },
+    {
+      "id": "sec-item-elem-examples",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-item-elem-examples",
+      "level": 5,
+      "title": "Examples",
+      "number": "5.6.2.2"
+    },
+    {
+      "id": "sec-opf-bindings",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-opf-bindings",
+      "level": 4,
+      "title": "The bindings Element (Deprecated)",
+      "number": "5.6.3"
+    },
+    {
+      "id": "sec-pkg-spine",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-pkg-spine",
+      "level": 3,
+      "title": "Spine Section",
+      "number": "5.7"
+    },
+    {
+      "id": "sec-spine-elem",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-spine-elem",
+      "level": 4,
+      "title": "The spine Element",
+      "number": "5.7.1"
+    },
+    {
+      "id": "sec-itemref-elem",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-itemref-elem",
+      "level": 4,
+      "title": "The itemref Element",
+      "number": "5.7.2"
+    },
+    {
+      "id": "sec-pkg-collections",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-pkg-collections",
+      "level": 3,
+      "title": "Collections",
+      "number": "5.8"
+    },
+    {
+      "id": "sec-collection-elem",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-collection-elem",
+      "level": 4,
+      "title": "The collection Element",
+      "number": "5.8.1"
+    },
+    {
+      "id": "sec-defining-collection-types",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-defining-collection-types",
+      "level": 4,
+      "title": "Defining Collection Types (Deprecated)",
+      "number": "5.8.2"
+    },
+    {
+      "id": "sec-pkg-legacy",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-pkg-legacy",
+      "level": 3,
+      "title": "Legacy Content",
+      "number": "5.9"
+    },
+    {
+      "id": "sec-opf2-meta",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-opf2-meta",
+      "level": 4,
+      "title": "The meta Element",
+      "number": "5.9.1"
+    },
+    {
+      "id": "sec-opf2-guide",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-opf2-guide",
+      "level": 4,
+      "title": "The guide Element",
+      "number": "5.9.2"
+    },
+    {
+      "id": "sec-opf2-ncx",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-opf2-ncx",
+      "level": 4,
+      "title": "NCX",
+      "number": "5.9.3"
+    },
+    {
+      "id": "sec-contentdocs",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-contentdocs",
+      "level": 2,
+      "title": "EPUB Content Documents",
+      "number": "6"
+    },
+    {
+      "id": "sec-xhtml",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-xhtml",
+      "level": 3,
+      "title": "XHTML Content Documents",
+      "number": "6.1"
+    },
+    {
+      "id": "sec-xhtml-intro",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-xhtml-intro",
+      "level": 4,
+      "title": "Introduction",
+      "number": "6.1.1"
+    },
+    {
+      "id": "sec-xhtml-req",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-xhtml-req",
+      "level": 4,
+      "title": "XHTML Requirements",
+      "number": "6.1.2"
+    },
+    {
+      "id": "sec-xhtml-extensions",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-xhtml-extensions",
+      "level": 4,
+      "title": "HTML Extensions",
+      "number": "6.1.3"
+    },
+    {
+      "id": "sec-xhtml-structural-semantics",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-xhtml-structural-semantics",
+      "level": 5,
+      "title": "Structural Semantics",
+      "number": "6.1.3.1"
+    },
+    {
+      "id": "sec-xhtml-rdfa",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-xhtml-rdfa",
+      "level": 5,
+      "title": "RDFa",
+      "number": "6.1.3.2"
+    },
+    {
+      "id": "sec-xhtml-content-switch",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-xhtml-content-switch",
+      "level": 5,
+      "title": "Content Switching (Deprecated)",
+      "number": "6.1.3.3"
+    },
+    {
+      "id": "sec-xhtml-epub-trigger",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-xhtml-epub-trigger",
+      "level": 5,
+      "title": "The epub:trigger Element (Deprecated)",
+      "number": "6.1.3.4"
+    },
+    {
+      "id": "sec-xhtml-custom-attributes",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-xhtml-custom-attributes",
+      "level": 5,
+      "title": "Custom Attributes",
+      "number": "6.1.3.5"
+    },
+    {
+      "id": "sec-xhtml-deviations",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-xhtml-deviations",
+      "level": 4,
+      "title": "HTML Deviations and Constraints",
+      "number": "6.1.4"
+    },
+    {
+      "id": "sec-xhtml-mathml",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-xhtml-mathml",
+      "level": 5,
+      "title": "Embedded MathML",
+      "number": "6.1.4.1"
+    },
+    {
+      "id": "sec-xhtml-svg",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-xhtml-svg",
+      "level": 5,
+      "title": "Embedded SVG",
+      "number": "6.1.4.2"
+    },
+    {
+      "id": "sec-xhtml-deviations-discouraged",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-xhtml-deviations-discouraged",
+      "level": 5,
+      "title": "Discouraged Constructs",
+      "number": "6.1.4.3"
+    },
+    {
+      "id": "sec-xhtml-deviations-base",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-xhtml-deviations-base",
+      "level": 6,
+      "title": "The base Element",
+      "number": "6.1.4.3.1"
+    },
+    {
+      "id": "sec-xhtml-deviations-rp",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-xhtml-deviations-rp",
+      "level": 6,
+      "title": "The rp Element",
+      "number": "6.1.4.3.2"
+    },
+    {
+      "id": "sec-xhtml-deviations-embed",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-xhtml-deviations-embed",
+      "level": 6,
+      "title": "The embed Element",
+      "number": "6.1.4.3.3"
+    },
+    {
+      "id": "sec-svg",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-svg",
+      "level": 3,
+      "title": "SVG Content Documents",
+      "number": "6.2"
+    },
+    {
+      "id": "sec-svg-intro",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-svg-intro",
+      "level": 4,
+      "title": "Introduction",
+      "number": "6.2.1"
+    },
+    {
+      "id": "sec-svg-req",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-svg-req",
+      "level": 4,
+      "title": "SVG Requirements",
+      "number": "6.2.2"
+    },
+    {
+      "id": "sec-svg-restrictions",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-svg-restrictions",
+      "level": 4,
+      "title": "Restrictions on SVG",
+      "number": "6.2.3"
+    },
+    {
+      "id": "sec-common-resource-req",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-common-resource-req",
+      "level": 3,
+      "title": "Common Resource Requirements",
+      "number": "6.3"
+    },
+    {
+      "id": "sec-css",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-css",
+      "level": 4,
+      "title": "Cascading Style Sheets (CSS)",
+      "number": "6.3.1"
+    },
+    {
+      "id": "sec-css-intro",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-css-intro",
+      "level": 5,
+      "title": "Introduction",
+      "number": "6.3.1.1"
+    },
+    {
+      "id": "sec-css-req",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-css-req",
+      "level": 5,
+      "title": "CSS Requirements",
+      "number": "6.3.1.2"
+    },
+    {
+      "id": "sec-css-prefixed",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-css-prefixed",
+      "level": 5,
+      "title": "Prefixed Properties",
+      "number": "6.3.1.3"
+    },
+    {
+      "id": "sec-scripted-content",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-scripted-content",
+      "level": 4,
+      "title": "Scripting",
+      "number": "6.3.2"
+    },
+    {
+      "id": "sec-scripted-support",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-scripted-support",
+      "level": 5,
+      "title": "Script Inclusion",
+      "number": "6.3.2.1"
+    },
+    {
+      "id": "sec-scripted-context",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-scripted-context",
+      "level": 5,
+      "title": "Scripting Contexts",
+      "number": "6.3.2.2"
+    },
+    {
+      "id": "sec-scripted-container-constrained",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-scripted-container-constrained",
+      "level": 6,
+      "title": "Container-Constrained Scripts",
+      "number": "6.3.2.2.1"
+    },
+    {
+      "id": "sec-scripted-spine",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-scripted-spine",
+      "level": 6,
+      "title": "Spine-Level Scripts",
+      "number": "6.3.2.2.2"
+    },
+    {
+      "id": "sec-scripted-content-events",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-scripted-content-events",
+      "level": 5,
+      "title": "Event Model",
+      "number": "6.3.2.3"
+    },
+    {
+      "id": "sec-scripted-a11y",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-scripted-a11y",
+      "level": 5,
+      "title": "Scripting Accessibility",
+      "number": "6.3.2.4"
+    },
+    {
+      "id": "sec-scripted-fallbacks",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-scripted-fallbacks",
+      "level": 5,
+      "title": "Scripting Fallbacks",
+      "number": "6.3.2.5"
+    },
+    {
+      "id": "sec-nav",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-nav",
+      "level": 2,
+      "title": "EPUB Navigation Document",
+      "number": "7"
+    },
+    {
+      "id": "sec-nav-intro",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-nav-intro",
+      "level": 3,
+      "title": "Introduction",
+      "number": "7.1"
+    },
+    {
+      "id": "sec-nav-def-model",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-nav-def-model",
+      "level": 3,
+      "title": "The nav Element: Restrictions",
+      "number": "7.2"
+    },
+    {
+      "id": "sec-nav-def-types",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-nav-def-types",
+      "level": 3,
+      "title": "The nav Element: Types",
+      "number": "7.3"
+    },
+    {
+      "id": "sec-nav-def-types-intro",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-nav-def-types-intro",
+      "level": 4,
+      "title": "Introduction",
+      "number": "7.3.1"
+    },
+    {
+      "id": "sec-nav-toc",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-nav-toc",
+      "level": 4,
+      "title": "The toc nav Element",
+      "number": "7.3.2"
+    },
+    {
+      "id": "sec-nav-pagelist",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-nav-pagelist",
+      "level": 4,
+      "title": "The page-list nav Element",
+      "number": "7.3.3"
+    },
+    {
+      "id": "sec-nav-landmarks",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-nav-landmarks",
+      "level": 4,
+      "title": "The landmarks nav Element",
+      "number": "7.3.4"
+    },
+    {
+      "id": "sec-nav-def-types-other",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-nav-def-types-other",
+      "level": 4,
+      "title": "Other nav Elements",
+      "number": "7.3.5"
+    },
+    {
+      "id": "sec-nav-doc-use-spine",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-nav-doc-use-spine",
+      "level": 3,
+      "title": "Using in the Spine",
+      "number": "7.4"
+    },
+    {
+      "id": "sec-rendering-control",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-rendering-control",
+      "level": 2,
+      "title": "Layout Rendering Control",
+      "number": "8"
+    },
+    {
+      "id": "sec-general-rendering-intro",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-general-rendering-intro",
+      "level": 3,
+      "title": "Introduction",
+      "number": "8.1"
+    },
+    {
+      "id": "sec-fixed-layouts",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-fixed-layouts",
+      "level": 3,
+      "title": "Fixed Layouts",
+      "number": "8.2"
+    },
+    {
+      "id": "fxl-intro",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#fxl-intro",
+      "level": 4,
+      "title": "Introduction",
+      "number": "8.2.1"
+    },
+    {
+      "id": "sec-fxl-package",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-fxl-package",
+      "level": 4,
+      "title": "Fixed-Layout Package Settings",
+      "number": "8.2.2"
+    },
+    {
+      "id": "layout",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#layout",
+      "level": 5,
+      "title": "Layout",
+      "number": "8.2.2.1"
+    },
+    {
+      "id": "layout-overrides",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#layout-overrides",
+      "level": 6,
+      "title": "Layout Overrides",
+      "number": "8.2.2.1.1"
+    },
+    {
+      "id": "orientation",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#orientation",
+      "level": 5,
+      "title": "Orientation",
+      "number": "8.2.2.2"
+    },
+    {
+      "id": "orientation-overrides",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#orientation-overrides",
+      "level": 6,
+      "title": "Orientation Overrides",
+      "number": "8.2.2.2.1"
+    },
+    {
+      "id": "spread",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#spread",
+      "level": 5,
+      "title": "Synthetic Spreads",
+      "number": "8.2.2.3"
+    },
+    {
+      "id": "spread-overrides",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#spread-overrides",
+      "level": 6,
+      "title": "Synthetic Spread Overrides",
+      "number": "8.2.2.3.1"
+    },
+    {
+      "id": "page-spread",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#page-spread",
+      "level": 5,
+      "title": "Spread Placement",
+      "number": "8.2.2.4"
+    },
+    {
+      "id": "viewport",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#viewport",
+      "level": 5,
+      "title": "Viewport Dimensions (Deprecated)",
+      "number": "8.2.2.5"
+    },
+    {
+      "id": "sec-fxl-content-dimensions",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-fxl-content-dimensions",
+      "level": 5,
+      "title": "Content Document Dimensions",
+      "number": "8.2.2.6"
+    },
+    {
+      "id": "sec-reflowable-layouts",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-reflowable-layouts",
+      "level": 3,
+      "title": "Reflowable Layouts",
+      "number": "8.3"
+    },
+    {
+      "id": "flow",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#flow",
+      "level": 4,
+      "title": "The rendition:flow Property",
+      "number": "8.3.1"
+    },
+    {
+      "id": "layout-property-flow-overrides",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#layout-property-flow-overrides",
+      "level": 5,
+      "title": "Spine Overrides",
+      "number": "8.3.1.1"
+    },
+    {
+      "id": "align-x-center",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#align-x-center",
+      "level": 4,
+      "title": "The rendition:align-x-center Property",
+      "number": "8.3.2"
+    },
+    {
+      "id": "sec-media-overlays",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-media-overlays",
+      "level": 2,
+      "title": "Media Overlays",
+      "number": "9"
+    },
+    {
+      "id": "sec-overlays-introduction",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-overlays-introduction",
+      "level": 3,
+      "title": "Introduction",
+      "number": "9.1"
+    },
+    {
+      "id": "sec-overlay-docs",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-overlay-docs",
+      "level": 3,
+      "title": "Media Overlay Documents",
+      "number": "9.2"
+    },
+    {
+      "id": "sec-overlay-req",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-overlay-req",
+      "level": 4,
+      "title": "Media Overlay Document Requirements",
+      "number": "9.2.1"
+    },
+    {
+      "id": "sec-overlays-def",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-overlays-def",
+      "level": 4,
+      "title": "Media Overlay Document Definition",
+      "number": "9.2.2"
+    },
+    {
+      "id": "sec-smil-smil-elem",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-smil-smil-elem",
+      "level": 5,
+      "title": "The smil Element",
+      "number": "9.2.2.1"
+    },
+    {
+      "id": "sec-smil-head-elem",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-smil-head-elem",
+      "level": 5,
+      "title": "The head Element",
+      "number": "9.2.2.2"
+    },
+    {
+      "id": "sec-smil-metadata-elem",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-smil-metadata-elem",
+      "level": 5,
+      "title": "The metadata Element",
+      "number": "9.2.2.3"
+    },
+    {
+      "id": "sec-smil-body-elem",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-smil-body-elem",
+      "level": 5,
+      "title": "The body Element",
+      "number": "9.2.2.4"
+    },
+    {
+      "id": "sec-smil-seq-elem",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-smil-seq-elem",
+      "level": 5,
+      "title": "The seq Element",
+      "number": "9.2.2.5"
+    },
+    {
+      "id": "sec-smil-par-elem",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-smil-par-elem",
+      "level": 5,
+      "title": "The par Element",
+      "number": "9.2.2.6"
+    },
+    {
+      "id": "sec-smil-text-elem",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-smil-text-elem",
+      "level": 5,
+      "title": "The text Element",
+      "number": "9.2.2.7"
+    },
+    {
+      "id": "sec-smil-audio-elem",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-smil-audio-elem",
+      "level": 5,
+      "title": "The audio Element",
+      "number": "9.2.2.8"
+    },
+    {
+      "id": "sec-overlay-doc-create",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-overlay-doc-create",
+      "level": 3,
+      "title": "Creating Media Overlays",
+      "number": "9.3"
+    },
+    {
+      "id": "sec-docs-intro",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-docs-intro",
+      "level": 4,
+      "title": "Introduction",
+      "number": "9.3.1"
+    },
+    {
+      "id": "sec-docs-relations",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-docs-relations",
+      "level": 4,
+      "title": "Relationship to the EPUB Content Document",
+      "number": "9.3.2"
+    },
+    {
+      "id": "sec-media-overlays-structure",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-media-overlays-structure",
+      "level": 5,
+      "title": "Overlay Structure",
+      "number": "9.3.2.1"
+    },
+    {
+      "id": "sec-media-overlays-fragids",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-media-overlays-fragids",
+      "level": 5,
+      "title": "Referencing Document Fragments",
+      "number": "9.3.2.2"
+    },
+    {
+      "id": "sec-media-overlays-granularity",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-media-overlays-granularity",
+      "level": 5,
+      "title": "Overlay Granularity",
+      "number": "9.3.2.3"
+    },
+    {
+      "id": "sec-embedded-media",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-embedded-media",
+      "level": 5,
+      "title": "Embedded Media",
+      "number": "9.3.2.4"
+    },
+    {
+      "id": "sec-emb-audio-video",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-emb-audio-video",
+      "level": 6,
+      "title": "Embedded Audio and Video",
+      "number": "9.3.2.4.1"
+    },
+    {
+      "id": "sec-emb-img",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-emb-img",
+      "level": 6,
+      "title": "Embedded Images",
+      "number": "9.3.2.4.2"
+    },
+    {
+      "id": "sec-tts",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-tts",
+      "level": 5,
+      "title": "Text-to-Speech Rendering",
+      "number": "9.3.2.5"
+    },
+    {
+      "id": "sec-docs-structural-semantic",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-docs-structural-semantic",
+      "level": 4,
+      "title": "Structural Semantics in Overlays",
+      "number": "9.3.3"
+    },
+    {
+      "id": "sec-docs-assoc-style",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-docs-assoc-style",
+      "level": 4,
+      "title": "Associating Style Information",
+      "number": "9.3.4"
+    },
+    {
+      "id": "sec-docs-package",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-docs-package",
+      "level": 4,
+      "title": "Media Overlays Packaging",
+      "number": "9.3.5"
+    },
+    {
+      "id": "sec-package-including",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-package-including",
+      "level": 5,
+      "title": "Including Media Overlays",
+      "number": "9.3.5.1"
+    },
+    {
+      "id": "sec-mo-package-metadata",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-mo-package-metadata",
+      "level": 5,
+      "title": "Overlays Package Metadata",
+      "number": "9.3.5.2"
+    },
+    {
+      "id": "sec-behaviors-skip-escape",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-behaviors-skip-escape",
+      "level": 3,
+      "title": "Skippability and Escapability",
+      "number": "9.4"
+    },
+    {
+      "id": "sec-skippability",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-skippability",
+      "level": 4,
+      "title": "Skippability",
+      "number": "9.4.1"
+    },
+    {
+      "id": "sec-escapability",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-escapability",
+      "level": 4,
+      "title": "Escapability",
+      "number": "9.4.2"
+    },
+    {
+      "id": "sec-mo-nav-doc",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-mo-nav-doc",
+      "level": 3,
+      "title": "Navigation Document Overlays",
+      "number": "9.5"
+    },
+    {
+      "id": "sec-accessibility",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-accessibility",
+      "level": 2,
+      "title": "10. Accessibility"
+    },
+    {
+      "id": "sec-security-privacy",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-security-privacy",
+      "level": 2,
+      "title": "11. Security and Privacy"
+    },
+    {
+      "id": "security-privacy-overview",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#security-privacy-overview",
+      "level": 3,
+      "title": "Overview",
+      "number": "11.1"
+    },
+    {
+      "id": "epub-threat-model",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#epub-threat-model",
+      "level": 3,
+      "title": "Threat Model",
+      "number": "11.2"
+    },
+    {
+      "id": "privacy-security-epub-features",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#privacy-security-epub-features",
+      "level": 4,
+      "title": "EPUB-Specific Features",
+      "number": "11.2.1"
+    },
+    {
+      "id": "security-privacy-recommendations",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#security-privacy-recommendations",
+      "level": 3,
+      "title": "Recommendations",
+      "number": "11.3"
+    },
+    {
+      "id": "app-overview-unsupported",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#app-overview-unsupported",
+      "level": 2,
+      "title": "Unsupported Features",
+      "number": "A"
+    },
+    {
+      "id": "under-implemented",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#under-implemented",
+      "level": 3,
+      "title": "Under-implemented Features",
+      "number": "A.1"
+    },
+    {
+      "id": "deprecated",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#deprecated",
+      "level": 3,
+      "title": "Deprecated Features",
+      "number": "A.2"
+    },
+    {
+      "id": "legacy",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#legacy",
+      "level": 3,
+      "title": "Legacy Features",
+      "number": "A.3"
+    },
+    {
+      "id": "app-identifiers-allowed",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#app-identifiers-allowed",
+      "level": 2,
+      "title": "Allowed External Identifiers",
+      "number": "B"
+    },
+    {
+      "id": "app-structural-semantics",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#app-structural-semantics",
+      "level": 2,
+      "title": "Expressing Structural Semantics",
+      "number": "C"
+    },
+    {
+      "id": "sec-structural-semantics-intro",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-structural-semantics-intro",
+      "level": 3,
+      "title": "Introduction",
+      "number": "C.1"
+    },
+    {
+      "id": "sec-epub-type-attribute",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-epub-type-attribute",
+      "level": 3,
+      "title": "The epub:type Attribute",
+      "number": "C.2"
+    },
+    {
+      "id": "app-vocabs",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#app-vocabs",
+      "level": 2,
+      "title": "Vocabularies",
+      "number": "D"
+    },
+    {
+      "id": "sec-vocab-assoc",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-vocab-assoc",
+      "level": 3,
+      "title": "Vocabulary Association Mechanisms",
+      "number": "D.1"
+    },
+    {
+      "id": "sec-vocab-assoc-intro",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-vocab-assoc-intro",
+      "level": 4,
+      "title": "Introduction",
+      "number": "D.1.1"
+    },
+    {
+      "id": "sec-property-datatype",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-property-datatype",
+      "level": 4,
+      "title": "The property Data Type",
+      "number": "D.1.2"
+    },
+    {
+      "id": "sec-default-vocab",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-default-vocab",
+      "level": 4,
+      "title": "Default Vocabularies",
+      "number": "D.1.3"
+    },
+    {
+      "id": "sec-prefix-attr",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-prefix-attr",
+      "level": 4,
+      "title": "The prefix Attribute",
+      "number": "D.1.4"
+    },
+    {
+      "id": "sec-reserved-prefixes",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-reserved-prefixes",
+      "level": 4,
+      "title": "Reserved Prefixes",
+      "number": "D.1.5"
+    },
+    {
+      "id": "sec-property-field-definitions",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-property-field-definitions",
+      "level": 3,
+      "title": "Property Field Definitions",
+      "number": "D.2"
+    },
+    {
+      "id": "app-meta-property-vocab",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#app-meta-property-vocab",
+      "level": 3,
+      "title": "Meta Properties Vocabulary",
+      "number": "D.3"
+    },
+    {
+      "id": "sec-alternate-script",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-alternate-script",
+      "level": 4,
+      "title": "alternate-script",
+      "number": "D.3.1"
+    },
+    {
+      "id": "sec-authority",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-authority",
+      "level": 4,
+      "title": "authority",
+      "number": "D.3.2"
+    },
+    {
+      "id": "sec-belongs-to-collection",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-belongs-to-collection",
+      "level": 4,
+      "title": "belongs-to-collection",
+      "number": "D.3.3"
+    },
+    {
+      "id": "sec-collection-type",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-collection-type",
+      "level": 4,
+      "title": "collection-type",
+      "number": "D.3.4"
+    },
+    {
+      "id": "sec-display-seq",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-display-seq",
+      "level": 4,
+      "title": "display-seq",
+      "number": "D.3.5"
+    },
+    {
+      "id": "sec-file-as",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-file-as",
+      "level": 4,
+      "title": "file-as",
+      "number": "D.3.6"
+    },
+    {
+      "id": "sec-group-position",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-group-position",
+      "level": 4,
+      "title": "group-position",
+      "number": "D.3.7"
+    },
+    {
+      "id": "sec-identifier-type",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-identifier-type",
+      "level": 4,
+      "title": "identifier-type",
+      "number": "D.3.8"
+    },
+    {
+      "id": "sec-meta-auth",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-meta-auth",
+      "level": 4,
+      "title": "meta-auth (Deprecated)",
+      "number": "D.3.9"
+    },
+    {
+      "id": "sec-role",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-role",
+      "level": 4,
+      "title": "role",
+      "number": "D.3.10"
+    },
+    {
+      "id": "sec-source-of",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-source-of",
+      "level": 4,
+      "title": "source-of",
+      "number": "D.3.11"
+    },
+    {
+      "id": "sec-term",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-term",
+      "level": 4,
+      "title": "term",
+      "number": "D.3.12"
+    },
+    {
+      "id": "sec-title-type",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-title-type",
+      "level": 4,
+      "title": "title-type",
+      "number": "D.3.13"
+    },
+    {
+      "id": "sec-property-examples",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-property-examples",
+      "level": 4,
+      "title": "Examples",
+      "number": "D.3.14"
+    },
+    {
+      "id": "app-link-vocab",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#app-link-vocab",
+      "level": 3,
+      "title": "Metadata Link Vocabulary",
+      "number": "D.4"
+    },
+    {
+      "id": "sec-link-rel",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-link-rel",
+      "level": 4,
+      "title": "Link Relationships",
+      "number": "D.4.1"
+    },
+    {
+      "id": "sec-acquire",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-acquire",
+      "level": 5,
+      "title": "acquire",
+      "number": "D.4.1.1"
+    },
+    {
+      "id": "sec-alternate",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-alternate",
+      "level": 5,
+      "title": "alternate",
+      "number": "D.4.1.2"
+    },
+    {
+      "id": "sec-marc21xml-record",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-marc21xml-record",
+      "level": 5,
+      "title": "marc21xml-record (Deprecated)",
+      "number": "D.4.1.3"
+    },
+    {
+      "id": "sec-mods-record",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-mods-record",
+      "level": 5,
+      "title": "mods-record (Deprecated)",
+      "number": "D.4.1.4"
+    },
+    {
+      "id": "sec-onix-record",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-onix-record",
+      "level": 5,
+      "title": "onix-record (Deprecated)",
+      "number": "D.4.1.5"
+    },
+    {
+      "id": "sec-record",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-record",
+      "level": 5,
+      "title": "record",
+      "number": "D.4.1.6"
+    },
+    {
+      "id": "sec-voicing",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-voicing",
+      "level": 5,
+      "title": "voicing",
+      "number": "D.4.1.7"
+    },
+    {
+      "id": "sec-xml-signature",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-xml-signature",
+      "level": 5,
+      "title": "xml-signature (Deprecated)",
+      "number": "D.4.1.8"
+    },
+    {
+      "id": "sec-xmp-record",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-xmp-record",
+      "level": 5,
+      "title": "xmp-record (Deprecated)",
+      "number": "D.4.1.9"
+    },
+    {
+      "id": "sec-link-properties",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-link-properties",
+      "level": 4,
+      "title": "Link Properties",
+      "number": "D.4.2"
+    },
+    {
+      "id": "sec-onix",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-onix",
+      "level": 5,
+      "title": "onix",
+      "number": "D.4.2.1"
+    },
+    {
+      "id": "sec-xmp",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-xmp",
+      "level": 5,
+      "title": "xmp",
+      "number": "D.4.2.2"
+    },
+    {
+      "id": "app-rendering-vocab",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#app-rendering-vocab",
+      "level": 3,
+      "title": "Package Rendering Vocabulary",
+      "number": "D.5"
+    },
+    {
+      "id": "sec-rendering-custom-properties",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-rendering-custom-properties",
+      "level": 4,
+      "title": "Custom Rendering Properties",
+      "number": "D.5.1"
+    },
+    {
+      "id": "app-item-properties-vocab",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#app-item-properties-vocab",
+      "level": 3,
+      "title": "Manifest Properties Vocabulary",
+      "number": "D.6"
+    },
+    {
+      "id": "sec-cover-image",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-cover-image",
+      "level": 4,
+      "title": "cover-image",
+      "number": "D.6.1"
+    },
+    {
+      "id": "sec-mathml",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-mathml",
+      "level": 4,
+      "title": "mathml",
+      "number": "D.6.2"
+    },
+    {
+      "id": "sec-nav-prop",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-nav-prop",
+      "level": 4,
+      "title": "nav",
+      "number": "D.6.3"
+    },
+    {
+      "id": "sec-remote-resources",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-remote-resources",
+      "level": 4,
+      "title": "remote-resources",
+      "number": "D.6.4"
+    },
+    {
+      "id": "sec-scripted",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-scripted",
+      "level": 4,
+      "title": "scripted",
+      "number": "D.6.5"
+    },
+    {
+      "id": "sec-svg-prop",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-svg-prop",
+      "level": 4,
+      "title": "svg",
+      "number": "D.6.6"
+    },
+    {
+      "id": "sec-switch",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-switch",
+      "level": 4,
+      "title": "switch",
+      "number": "D.6.7"
+    },
+    {
+      "id": "app-itemref-properties-vocab",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#app-itemref-properties-vocab",
+      "level": 3,
+      "title": "Spine Properties Vocabulary",
+      "number": "D.7"
+    },
+    {
+      "id": "sec-page-spread-left",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-page-spread-left",
+      "level": 4,
+      "title": "page-spread-left",
+      "number": "D.7.1"
+    },
+    {
+      "id": "sec-page-spread-right",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-page-spread-right",
+      "level": 4,
+      "title": "page-spread-right",
+      "number": "D.7.2"
+    },
+    {
+      "id": "examples-itemref-properties",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#examples-itemref-properties",
+      "level": 4,
+      "title": "Examples",
+      "number": "D.7.3"
+    },
+    {
+      "id": "app-overlays-vocab",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#app-overlays-vocab",
+      "level": 3,
+      "title": "Media Overlays Vocabulary",
+      "number": "D.8"
+    },
+    {
+      "id": "sec-active-class",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-active-class",
+      "level": 4,
+      "title": "active-class",
+      "number": "D.8.1"
+    },
+    {
+      "id": "sec-duration",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-duration",
+      "level": 4,
+      "title": "duration",
+      "number": "D.8.2"
+    },
+    {
+      "id": "sec-narrator",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-narrator",
+      "level": 4,
+      "title": "narrator",
+      "number": "D.8.3"
+    },
+    {
+      "id": "sec-playback-active-class",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-playback-active-class",
+      "level": 4,
+      "title": "playback-active-class",
+      "number": "D.8.4"
+    },
+    {
+      "id": "css-prefixes",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#css-prefixes",
+      "level": 2,
+      "title": "Prefixed CSS Properties",
+      "number": "E"
+    },
+    {
+      "id": "sec-css-prefixed-writing-modes",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-css-prefixed-writing-modes",
+      "level": 3,
+      "title": "CSS Writing Modes",
+      "number": "E.1"
+    },
+    {
+      "id": "sec-css-prefixed-writing-modes-text-orientation",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-css-prefixed-writing-modes-text-orientation",
+      "level": 4,
+      "title": "The -epub-text-orientation Property",
+      "number": "E.1.1"
+    },
+    {
+      "id": "sec-css-prefixed-writing-modes-writing-mode",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-css-prefixed-writing-modes-writing-mode",
+      "level": 4,
+      "title": "The -epub-writing-mode Property",
+      "number": "E.1.2"
+    },
+    {
+      "id": "sec-css-prefixed-writing-modes-text-combine",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-css-prefixed-writing-modes-text-combine",
+      "level": 4,
+      "title": "The -epub-text-combine-horizontal and -epub-text-combine Properties",
+      "number": "E.1.3"
+    },
+    {
+      "id": "sec-css-prefixed-text",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-css-prefixed-text",
+      "level": 3,
+      "title": "CSS Text Level 3",
+      "number": "E.2"
+    },
+    {
+      "id": "sec-css-prefixed-text-epub-hyphens",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-css-prefixed-text-epub-hyphens",
+      "level": 4,
+      "title": "The -epub-hyphens Property",
+      "number": "E.2.1"
+    },
+    {
+      "id": "sec-css-prefixed-text-epub-line-break",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-css-prefixed-text-epub-line-break",
+      "level": 4,
+      "title": "The -epub-line-break Property",
+      "number": "E.2.2"
+    },
+    {
+      "id": "sec-css-prefixed-text-epub-text-align-last",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-css-prefixed-text-epub-text-align-last",
+      "level": 4,
+      "title": "The -epub-text-align-last Property",
+      "number": "E.2.3"
+    },
+    {
+      "id": "sec-css-prefixed-text-epub-word-break",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-css-prefixed-text-epub-word-break",
+      "level": 4,
+      "title": "The -epub-word-break Property",
+      "number": "E.2.4"
+    },
+    {
+      "id": "sec-css-prefixed-text-text-transform",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-css-prefixed-text-text-transform",
+      "level": 4,
+      "title": "The text-transform Property",
+      "number": "E.2.5"
+    },
+    {
+      "id": "sec-css-prefixed-text-decoration",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-css-prefixed-text-decoration",
+      "level": 3,
+      "title": "CSS Text Decoration Level 3",
+      "number": "E.3"
+    },
+    {
+      "id": "sec-css-prefixed-text-epub-text-emphasis-color",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-css-prefixed-text-epub-text-emphasis-color",
+      "level": 4,
+      "title": "The -epub-text-emphasis-color Property",
+      "number": "E.3.1"
+    },
+    {
+      "id": "sec-css-prefixed-text-epub-text-emphasis-position",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-css-prefixed-text-epub-text-emphasis-position",
+      "level": 4,
+      "title": "The -epub-text-emphasis-position Property",
+      "number": "E.3.2"
+    },
+    {
+      "id": "sec-css-prefixed-text-epub-text-emphasis-style",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-css-prefixed-text-epub-text-emphasis-style",
+      "level": 4,
+      "title": "The -epub-text-emphasis-style Property",
+      "number": "E.3.3"
+    },
+    {
+      "id": "sec-css-prefixed-text-epub-text-underline-position",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#sec-css-prefixed-text-epub-text-underline-position",
+      "level": 4,
+      "title": "The -epub-text-underline-position Property",
+      "number": "E.3.4"
+    },
+    {
+      "id": "app-schemas",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#app-schemas",
+      "level": 2,
+      "title": "Schemas",
+      "number": "F"
+    },
+    {
+      "id": "app-package-schema",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#app-package-schema",
+      "level": 3,
+      "title": "Package Document Schema",
+      "number": "F.1"
+    },
+    {
+      "id": "app-ocf-schema",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#app-ocf-schema",
+      "level": 3,
+      "title": "OCF Schemas",
+      "number": "F.2"
+    },
+    {
+      "id": "app-schema-container",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#app-schema-container",
+      "level": 4,
+      "title": "Schema for container.xml",
+      "number": "F.2.1"
+    },
+    {
+      "id": "app-schema-encryption",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#app-schema-encryption",
+      "level": 4,
+      "title": "Schema for encryption.xml",
+      "number": "F.2.2"
+    },
+    {
+      "id": "app-schema-signatures",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#app-schema-signatures",
+      "level": 4,
+      "title": "Schema for signatures.xml",
+      "number": "F.2.3"
+    },
+    {
+      "id": "app-schema-overlays",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#app-schema-overlays",
+      "level": 3,
+      "title": "Media Overlays Schema",
+      "number": "F.3"
+    },
+    {
+      "id": "app-examples",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#app-examples",
+      "level": 2,
+      "title": "Detailed Examples",
+      "number": "G"
+    },
+    {
+      "id": "publication-resources-example",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#publication-resources-example",
+      "level": 3,
+      "title": "Resources",
+      "number": "G.1"
+    },
+    {
+      "id": "scripted-contexts-example",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#scripted-contexts-example",
+      "level": 3,
+      "title": "Scripting Contexts",
+      "number": "G.2"
+    },
+    {
+      "id": "ocf-example",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#ocf-example",
+      "level": 3,
+      "title": "Packaged EPUB",
+      "number": "G.3"
+    },
+    {
+      "id": "clock-examples",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#clock-examples",
+      "level": 3,
+      "title": "Clock Values",
+      "number": "G.4"
+    },
+    {
+      "id": "app-media-types",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#app-media-types",
+      "level": 2,
+      "title": "Media Type Registrations",
+      "number": "H"
+    },
+    {
+      "id": "app-media-type-app-oebps-package",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#app-media-type-app-oebps-package",
+      "level": 3,
+      "title": "The application/oebps-package+xml Media Type",
+      "number": "H.1"
+    },
+    {
+      "id": "app-media-type",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#app-media-type",
+      "level": 3,
+      "title": "The application/epub+zip Media Type",
+      "number": "H.2"
+    },
+    {
+      "id": "change-log",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#change-log",
+      "level": 2,
+      "title": "Change Log",
+      "number": "I"
+    },
+    {
+      "id": "ack",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#ack",
+      "level": 2,
+      "title": "Acknowledgements",
+      "number": "J"
+    },
+    {
+      "id": "references",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#references",
+      "level": 2,
+      "title": "References",
+      "number": "K"
+    },
+    {
+      "id": "normative-references",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "number": "K.1"
+    },
+    {
+      "id": "informative-references",
+      "href": "https://w3c.github.io/epub-specs/epub33/core/#informative-references",
+      "level": 3,
+      "title": "Informative references",
+      "number": "K.2"
+    }
+  ]
+}

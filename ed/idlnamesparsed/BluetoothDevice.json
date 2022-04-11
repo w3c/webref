@@ -6,7 +6,7 @@
       "title": "Web Bluetooth",
       "url": "https://webbluetoothcg.github.io/web-bluetooth/"
     },
-    "fragment": "[Exposed=Window, SecureContext]\ninterface BluetoothDevice : EventTarget {\n  readonly attribute DOMString id;\n  readonly attribute DOMString? name;\n  readonly attribute BluetoothRemoteGATTServer? gatt;\n\n  Promise<undefined> watchAdvertisements(\n      optional WatchAdvertisementsOptions options = {});\n  readonly attribute boolean watchingAdvertisements;\n};",
+    "fragment": "[Exposed=Window, SecureContext]\ninterface BluetoothDevice : EventTarget {\n  readonly attribute DOMString id;\n  readonly attribute DOMString? name;\n  readonly attribute BluetoothRemoteGATTServer? gatt;\n\n  Promise<undefined> forget();\n  Promise<undefined> watchAdvertisements(\n      optional WatchAdvertisementsOptions options = {});\n  readonly attribute boolean watchingAdvertisements;\n};",
     "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetoothdevice"
   },
   "extended": [
@@ -165,6 +165,27 @@
         ],
         "localLinkingText": [],
         "type": "attribute",
+        "for": [
+          "BluetoothDevice"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "bluetoothdevice-interface",
+          "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetoothdevice-interface",
+          "title": "BluetoothDevice",
+          "number": "5.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-bluetoothdevice-forget",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothdevice-forget",
+        "linkingText": [
+          "forget()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
         "for": [
           "BluetoothDevice"
         ],
