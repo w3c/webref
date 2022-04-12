@@ -746,7 +746,7 @@
         "partial": false
       },
       "NavigationTransition": {
-        "fragment": "[Exposed=Window]\ninterface NavigationTransition {\n  readonly attribute NavigationType navigationType;\n  readonly attribute NavigationHistoryEntry from;\n  readonly attribute Promise<undefined> finished;\n\n  NavigationResult rollback(optional NavigationOptions options = {});\n};",
+        "fragment": "[Exposed=Window]\ninterface NavigationTransition {\n  readonly attribute NavigationType navigationType;\n  readonly attribute NavigationHistoryEntry from;\n  readonly attribute Promise<undefined> finished;\n};",
         "type": "interface",
         "name": "NavigationTransition",
         "inheritance": null,
@@ -804,40 +804,6 @@
             "extAttrs": [],
             "special": "",
             "readonly": true
-          },
-          {
-            "type": "operation",
-            "name": "rollback",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "NavigationResult"
-            },
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "options",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "NavigationOptions"
-                },
-                "default": {
-                  "type": "dictionary"
-                },
-                "optional": true,
-                "variadic": false
-              }
-            ],
-            "extAttrs": [],
-            "special": ""
           }
         ],
         "extAttrs": [
@@ -1488,7 +1454,7 @@
         "partial": false
       },
       "NavigationHistoryEntry": {
-        "fragment": "[Exposed=Window]\ninterface NavigationHistoryEntry : EventTarget {\n  readonly attribute USVString? url;\n  readonly attribute DOMString key;\n  readonly attribute DOMString id;\n  readonly attribute long long index;\n  readonly attribute boolean sameDocument;\n\n  any getState();\n\n  attribute EventHandler onnavigateto;\n  attribute EventHandler onnavigatefrom;\n  attribute EventHandler onfinish;\n  attribute EventHandler ondispose;\n};",
+        "fragment": "[Exposed=Window]\ninterface NavigationHistoryEntry : EventTarget {\n  readonly attribute USVString? url;\n  readonly attribute DOMString key;\n  readonly attribute DOMString id;\n  readonly attribute long long index;\n  readonly attribute boolean sameDocument;\n\n  any getState();\n\n  attribute EventHandler ondispose;\n};",
         "type": "interface",
         "name": "NavigationHistoryEntry",
         "inheritance": "EventTarget",
@@ -1582,51 +1548,6 @@
             "arguments": [],
             "extAttrs": [],
             "special": ""
-          },
-          {
-            "type": "attribute",
-            "name": "onnavigateto",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "EventHandler"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": false
-          },
-          {
-            "type": "attribute",
-            "name": "onnavigatefrom",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "EventHandler"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": false
-          },
-          {
-            "type": "attribute",
-            "name": "onfinish",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "EventHandler"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": false
           },
           {
             "type": "attribute",
@@ -1745,9 +1666,7 @@
       ],
       "NavigationTransition": [
         "NavigationType",
-        "NavigationHistoryEntry",
-        "NavigationResult",
-        "NavigationOptions"
+        "NavigationHistoryEntry"
       ],
       "NavigateEvent": [
         "Event",
