@@ -6,7 +6,7 @@
       "title": "Navigation API",
       "url": "https://wicg.github.io/navigation-api/"
     },
-    "fragment": "[Exposed=Window]\ninterface NavigationHistoryEntry : EventTarget {\n  readonly attribute USVString? url;\n  readonly attribute DOMString key;\n  readonly attribute DOMString id;\n  readonly attribute long long index;\n  readonly attribute boolean sameDocument;\n\n  any getState();\n\n  attribute EventHandler onnavigateto;\n  attribute EventHandler onnavigatefrom;\n  attribute EventHandler onfinish;\n  attribute EventHandler ondispose;\n};",
+    "fragment": "[Exposed=Window]\ninterface NavigationHistoryEntry : EventTarget {\n  readonly attribute USVString? url;\n  readonly attribute DOMString key;\n  readonly attribute DOMString id;\n  readonly attribute long long index;\n  readonly attribute boolean sameDocument;\n\n  any getState();\n\n  attribute EventHandler ondispose;\n};",
     "href": "https://wicg.github.io/navigation-api/#navigationhistoryentry"
   },
   "extended": [],
@@ -172,69 +172,6 @@
           "number": "3"
         },
         "definedIn": "prose"
-      },
-      {
-        "id": "dom-navigationhistoryentry-onnavigateto",
-        "href": "https://wicg.github.io/navigation-api/#dom-navigationhistoryentry-onnavigateto",
-        "linkingText": [
-          "onnavigateto"
-        ],
-        "localLinkingText": [],
-        "type": "attribute",
-        "for": [
-          "NavigationHistoryEntry"
-        ],
-        "access": "public",
-        "informative": false,
-        "heading": {
-          "id": "NavigationHistoryEntry-class",
-          "href": "https://wicg.github.io/navigation-api/#NavigationHistoryEntry-class",
-          "title": "Navigation API history entries",
-          "number": "3"
-        },
-        "definedIn": "table"
-      },
-      {
-        "id": "dom-navigationhistoryentry-onnavigatefrom",
-        "href": "https://wicg.github.io/navigation-api/#dom-navigationhistoryentry-onnavigatefrom",
-        "linkingText": [
-          "onnavigatefrom"
-        ],
-        "localLinkingText": [],
-        "type": "attribute",
-        "for": [
-          "NavigationHistoryEntry"
-        ],
-        "access": "public",
-        "informative": false,
-        "heading": {
-          "id": "NavigationHistoryEntry-class",
-          "href": "https://wicg.github.io/navigation-api/#NavigationHistoryEntry-class",
-          "title": "Navigation API history entries",
-          "number": "3"
-        },
-        "definedIn": "table"
-      },
-      {
-        "id": "dom-navigationhistoryentry-onfinish",
-        "href": "https://wicg.github.io/navigation-api/#dom-navigationhistoryentry-onfinish",
-        "linkingText": [
-          "onfinish"
-        ],
-        "localLinkingText": [],
-        "type": "attribute",
-        "for": [
-          "NavigationHistoryEntry"
-        ],
-        "access": "public",
-        "informative": false,
-        "heading": {
-          "id": "NavigationHistoryEntry-class",
-          "href": "https://wicg.github.io/navigation-api/#NavigationHistoryEntry-class",
-          "title": "Navigation API history entries",
-          "number": "3"
-        },
-        "definedIn": "table"
       },
       {
         "id": "dom-navigationhistoryentry-ondispose",

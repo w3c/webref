@@ -6,7 +6,7 @@
       "title": "WebGPU",
       "url": "https://www.w3.org/TR/webgpu/"
     },
-    "fragment": "enum GPUFeatureName {\n    \"depth-clip-control\",\n    \"depth24unorm-stencil8\",\n    \"depth32float-stencil8\",\n    \"texture-compression-bc\",\n    \"texture-compression-etc2\",\n    \"texture-compression-astc\",\n    \"timestamp-query\",\n    \"indirect-first-instance\",\n};",
+    "fragment": "enum GPUFeatureName {\n    \"depth-clip-control\",\n    \"depth24unorm-stencil8\",\n    \"depth32float-stencil8\",\n    \"texture-compression-bc\",\n    \"texture-compression-etc2\",\n    \"texture-compression-astc\",\n    \"timestamp-query\",\n    \"indirect-first-instance\",\n    \"shader-f16\",\n};",
     "href": "https://gpuweb.github.io/gpuweb/#enumdef-gpufeaturename"
   },
   "extended": [],
@@ -197,6 +197,27 @@
           "href": "https://gpuweb.github.io/gpuweb/#indirect-first-instance",
           "title": "\"indirect-first-instance\"",
           "number": "24.8"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-gpufeaturename-shader-f16",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpufeaturename-shader-f16",
+        "linkingText": [
+          "\"shader-f16\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUFeatureName"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "shader-f16",
+          "href": "https://gpuweb.github.io/gpuweb/#shader-f16",
+          "title": "\"shader-f16\"",
+          "number": "24.9"
         },
         "definedIn": "heading"
       }

@@ -16,7 +16,7 @@
     },
     "idlNames": {
       "CSSConditionRule": {
-        "fragment": "[Exposed=Window]\ninterface CSSConditionRule : CSSGroupingRule {\n    attribute CSSOMString conditionText;\n};",
+        "fragment": "[Exposed=Window]\ninterface CSSConditionRule : CSSGroupingRule {\n    readonly attribute CSSOMString conditionText;\n};",
         "type": "interface",
         "name": "CSSConditionRule",
         "inheritance": "CSSGroupingRule",
@@ -34,7 +34,7 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": true
           }
         ],
         "extAttrs": [
