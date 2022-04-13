@@ -78,33 +78,56 @@ async function dropCSSPropertyDuplicates(folder) {
     }
   }
 
+  const valuespaces = {};
+  for (const spec of index.results) {
+    if (!spec.css?.valuespaces) {
+      continue;
+    }
+    for (const [name, dfn] of Object.entries(spec.css.valuespaces)) {
+      if (!valuespaces[name]) {
+        valuespaces[name] = [];
+      }
+      valuespaces[name].push(spec);
+    }
+  }
+
+  function filterSuperseded(spec, specs, type, name) {
+    const shortname = spec.series.shortname;
+    if ((spec.seriesComposition === 'delta') &&
+        specs.find(s => s !== spec && s.series.shortname === shortname)) {
+      // Property name both defined in delta spec and in base full spec,
+      // let's ignore the duplication.
+      return false;
+    }
+
+    const superseding = [supersededBy[shortname]].flat();
+    if (superseding[0] === '*' ||
+        specs.find(s => superseding.includes(s.series.shortname))) {
+      // Property name defined in a spec that supersedes the current one,
+      // drop the property definition from the current spec
+      delete spec.css[type][name];
+      spec.needsSaving = true;
+      return false;
+    }
+    return true;
+  }
+
   let duplicates = 0;
   for (const [name, specs] of Object.entries(properties)) {
     if (specs.length > 1) {
-      properties[name] = specs.filter(spec => {
-        const shortname = spec.series.shortname;
-        if ((spec.seriesComposition === 'delta') &&
-            specs.find(s => s !== spec && s.series.shortname === shortname)) {
-          // Property name both defined in delta spec and in base full spec,
-          // let's ignore the duplication.
-          return false;
-        }
-
-        const superseding = [supersededBy[shortname]].flat();
-        if (superseding[0] === '*' ||
-            specs.find(s => superseding.includes(s.series.shortname))) {
-          // Property name defined in a spec that supersedes the current one,
-          // drop the property definition from the current spec
-          delete spec.css.properties[name];
-          spec.needsSaving = true;
-          return false;
-        }
-        return true;
-      });
+      properties[name] = specs.filter(spec => filterSuperseded(spec, specs, 'properties', name));
     }
     if (properties[name].length > 1) {
       console.error(`- ${name} defined in ${properties[name].map(spec => `[${spec.shortTitle}](${spec.url})`).join(', ')}`);
       duplicates += 1;
+    }
+  }
+
+  // Same logic for valuespaces, but there will remain a few duplicates
+  // (e.g. "<rect()>" or "<path()>") and that's fine.
+  for (const [name, specs] of Object.entries(valuespaces)) {
+    if (specs.length > 1) {
+      specs.filter(spec => filterSuperseded(spec, specs, 'valuespaces', name));
     }
   }
 
