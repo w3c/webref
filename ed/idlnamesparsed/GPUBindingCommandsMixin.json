@@ -1,0 +1,15 @@
+{
+  "name": "GPUBindingCommandsMixin",
+  "type": "interface mixin",
+  "defined": {
+    "spec": {
+      "title": "WebGPU",
+      "url": "https://www.w3.org/TR/webgpu/"
+    },
+    "fragment": "interface mixin GPUBindingCommandsMixin {\n    undefined setBindGroup(GPUIndex32 index, GPUBindGroup bindGroup,\n                      optional sequence<GPUBufferDynamicOffset> dynamicOffsets = []);\n\n    undefined setBindGroup(GPUIndex32 index, GPUBindGroup bindGroup,\n                      Uint32Array dynamicOffsetsData,\n                      GPUSize64 dynamicOffsetsDataStart,\n                      GPUSize32 dynamicOffsetsDataLength);\n};",
+    "href": "https://gpuweb.github.io/gpuweb/#gpubindingcommandsmixin"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}
