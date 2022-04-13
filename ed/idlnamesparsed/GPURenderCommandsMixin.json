@@ -1,13 +1,13 @@
 {
-  "name": "GPURenderEncoderBase",
+  "name": "GPURenderCommandsMixin",
   "type": "interface mixin",
   "defined": {
     "spec": {
       "title": "WebGPU",
       "url": "https://www.w3.org/TR/webgpu/"
     },
-    "fragment": "interface mixin GPURenderEncoderBase {\n    undefined setPipeline(GPURenderPipeline pipeline);\n\n    undefined setIndexBuffer(GPUBuffer buffer, GPUIndexFormat indexFormat, optional GPUSize64 offset = 0, optional GPUSize64 size);\n    undefined setVertexBuffer(GPUIndex32 slot, GPUBuffer buffer, optional GPUSize64 offset = 0, optional GPUSize64 size);\n\n    undefined draw(GPUSize32 vertexCount, optional GPUSize32 instanceCount = 1,\n              optional GPUSize32 firstVertex = 0, optional GPUSize32 firstInstance = 0);\n    undefined drawIndexed(GPUSize32 indexCount, optional GPUSize32 instanceCount = 1,\n                     optional GPUSize32 firstIndex = 0,\n                     optional GPUSignedOffset32 baseVertex = 0,\n                     optional GPUSize32 firstInstance = 0);\n\n    undefined drawIndirect(GPUBuffer indirectBuffer, GPUSize64 indirectOffset);\n    undefined drawIndexedIndirect(GPUBuffer indirectBuffer, GPUSize64 indirectOffset);\n};",
-    "href": "https://gpuweb.github.io/gpuweb/#gpurenderencoderbase"
+    "fragment": "interface mixin GPURenderCommandsMixin {\n    undefined setPipeline(GPURenderPipeline pipeline);\n\n    undefined setIndexBuffer(GPUBuffer buffer, GPUIndexFormat indexFormat, optional GPUSize64 offset = 0, optional GPUSize64 size);\n    undefined setVertexBuffer(GPUIndex32 slot, GPUBuffer buffer, optional GPUSize64 offset = 0, optional GPUSize64 size);\n\n    undefined draw(GPUSize32 vertexCount, optional GPUSize32 instanceCount = 1,\n              optional GPUSize32 firstVertex = 0, optional GPUSize32 firstInstance = 0);\n    undefined drawIndexed(GPUSize32 indexCount, optional GPUSize32 instanceCount = 1,\n                     optional GPUSize32 firstIndex = 0,\n                     optional GPUSignedOffset32 baseVertex = 0,\n                     optional GPUSize32 firstInstance = 0);\n\n    undefined drawIndirect(GPUBuffer indirectBuffer, GPUSize64 indirectOffset);\n    undefined drawIndexedIndirect(GPUBuffer indirectBuffer, GPUSize64 indirectOffset);\n};",
+    "href": "https://gpuweb.github.io/gpuweb/#gpurendercommandsmixin"
   },
   "extended": [],
   "inheritance": null,
@@ -15,10 +15,10 @@
   "dfns": {
     "https://www.w3.org/TR/webgpu/": [
       {
-        "id": "gpurenderencoderbase",
-        "href": "https://gpuweb.github.io/gpuweb/#gpurenderencoderbase",
+        "id": "gpurendercommandsmixin",
+        "href": "https://gpuweb.github.io/gpuweb/#gpurendercommandsmixin",
         "linkingText": [
-          "GPURenderEncoderBase"
+          "GPURenderCommandsMixin"
         ],
         "localLinkingText": [],
         "type": "interface",
@@ -26,23 +26,23 @@
         "access": "public",
         "informative": false,
         "heading": {
-          "id": "render-pass-encoder",
-          "href": "https://gpuweb.github.io/gpuweb/#render-pass-encoder",
-          "title": "GPURenderPassEncoder",
-          "number": "16.1"
+          "id": "render-commands",
+          "href": "https://gpuweb.github.io/gpuweb/#render-commands",
+          "title": "GPURenderCommandsMixin",
+          "number": "16.2"
         },
-        "definedIn": "pre"
+        "definedIn": "heading"
       },
       {
-        "id": "dom-gpurenderencoderbase-setpipeline",
-        "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-setpipeline",
+        "id": "dom-gpurendercommandsmixin-setpipeline",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpurendercommandsmixin-setpipeline",
         "linkingText": [
           "setPipeline(pipeline)"
         ],
         "localLinkingText": [],
         "type": "method",
         "for": [
-          "GPURenderEncoderBase"
+          "GPURenderCommandsMixin"
         ],
         "access": "public",
         "informative": false,
@@ -50,13 +50,13 @@
           "id": "render-pass-encoder-drawing",
           "href": "https://gpuweb.github.io/gpuweb/#render-pass-encoder-drawing",
           "title": "Drawing",
-          "number": "16.1.2"
+          "number": "16.2.1"
         },
         "definedIn": "dt"
       },
       {
-        "id": "dom-gpurenderencoderbase-setindexbuffer",
-        "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-setindexbuffer",
+        "id": "dom-gpurendercommandsmixin-setindexbuffer",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpurendercommandsmixin-setindexbuffer",
         "linkingText": [
           "setIndexBuffer(buffer, indexFormat, offset, size)",
           "setIndexBuffer(buffer, indexFormat, offset)",
@@ -65,7 +65,7 @@
         "localLinkingText": [],
         "type": "method",
         "for": [
-          "GPURenderEncoderBase"
+          "GPURenderCommandsMixin"
         ],
         "access": "public",
         "informative": false,
@@ -73,13 +73,13 @@
           "id": "render-pass-encoder-drawing",
           "href": "https://gpuweb.github.io/gpuweb/#render-pass-encoder-drawing",
           "title": "Drawing",
-          "number": "16.1.2"
+          "number": "16.2.1"
         },
         "definedIn": "dt"
       },
       {
-        "id": "dom-gpurenderencoderbase-setvertexbuffer",
-        "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-setvertexbuffer",
+        "id": "dom-gpurendercommandsmixin-setvertexbuffer",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpurendercommandsmixin-setvertexbuffer",
         "linkingText": [
           "setVertexBuffer(slot, buffer, offset, size)",
           "setVertexBuffer(slot, buffer, offset)",
@@ -88,7 +88,7 @@
         "localLinkingText": [],
         "type": "method",
         "for": [
-          "GPURenderEncoderBase"
+          "GPURenderCommandsMixin"
         ],
         "access": "public",
         "informative": false,
@@ -96,13 +96,13 @@
           "id": "render-pass-encoder-drawing",
           "href": "https://gpuweb.github.io/gpuweb/#render-pass-encoder-drawing",
           "title": "Drawing",
-          "number": "16.1.2"
+          "number": "16.2.1"
         },
         "definedIn": "dt"
       },
       {
-        "id": "dom-gpurenderencoderbase-draw",
-        "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-draw",
+        "id": "dom-gpurendercommandsmixin-draw",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpurendercommandsmixin-draw",
         "linkingText": [
           "draw(vertexCount, instanceCount, firstVertex, firstInstance)",
           "draw(vertexCount, instanceCount, firstVertex)",
@@ -112,7 +112,7 @@
         "localLinkingText": [],
         "type": "method",
         "for": [
-          "GPURenderEncoderBase"
+          "GPURenderCommandsMixin"
         ],
         "access": "public",
         "informative": false,
@@ -120,13 +120,13 @@
           "id": "render-pass-encoder-drawing",
           "href": "https://gpuweb.github.io/gpuweb/#render-pass-encoder-drawing",
           "title": "Drawing",
-          "number": "16.1.2"
+          "number": "16.2.1"
         },
         "definedIn": "dt"
       },
       {
-        "id": "dom-gpurenderencoderbase-drawindexed",
-        "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-drawindexed",
+        "id": "dom-gpurendercommandsmixin-drawindexed",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpurendercommandsmixin-drawindexed",
         "linkingText": [
           "drawIndexed(indexCount, instanceCount, firstIndex, baseVertex, firstInstance)",
           "drawIndexed(indexCount, instanceCount, firstIndex, baseVertex)",
@@ -137,7 +137,7 @@
         "localLinkingText": [],
         "type": "method",
         "for": [
-          "GPURenderEncoderBase"
+          "GPURenderCommandsMixin"
         ],
         "access": "public",
         "informative": false,
@@ -145,20 +145,20 @@
           "id": "render-pass-encoder-drawing",
           "href": "https://gpuweb.github.io/gpuweb/#render-pass-encoder-drawing",
           "title": "Drawing",
-          "number": "16.1.2"
+          "number": "16.2.1"
         },
         "definedIn": "dt"
       },
       {
-        "id": "dom-gpurenderencoderbase-drawindirect",
-        "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-drawindirect",
+        "id": "dom-gpurendercommandsmixin-drawindirect",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpurendercommandsmixin-drawindirect",
         "linkingText": [
           "drawIndirect(indirectBuffer, indirectOffset)"
         ],
         "localLinkingText": [],
         "type": "method",
         "for": [
-          "GPURenderEncoderBase"
+          "GPURenderCommandsMixin"
         ],
         "access": "public",
         "informative": false,
@@ -166,20 +166,20 @@
           "id": "render-pass-encoder-drawing",
           "href": "https://gpuweb.github.io/gpuweb/#render-pass-encoder-drawing",
           "title": "Drawing",
-          "number": "16.1.2"
+          "number": "16.2.1"
         },
         "definedIn": "dt"
       },
       {
-        "id": "dom-gpurenderencoderbase-drawindexedindirect",
-        "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-drawindexedindirect",
+        "id": "dom-gpurendercommandsmixin-drawindexedindirect",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpurendercommandsmixin-drawindexedindirect",
         "linkingText": [
           "drawIndexedIndirect(indirectBuffer, indirectOffset)"
         ],
         "localLinkingText": [],
         "type": "method",
         "for": [
-          "GPURenderEncoderBase"
+          "GPURenderCommandsMixin"
         ],
         "access": "public",
         "informative": false,
@@ -187,7 +187,7 @@
           "id": "render-pass-encoder-drawing",
           "href": "https://gpuweb.github.io/gpuweb/#render-pass-encoder-drawing",
           "title": "Drawing",
-          "number": "16.1.2"
+          "number": "16.2.1"
         },
         "definedIn": "dt"
       }

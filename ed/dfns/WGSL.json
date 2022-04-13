@@ -366,10 +366,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "syntax-_space",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#syntax-_space",
+      "id": "syntax-_blankspace",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#syntax-_blankspace",
       "linkingText": [
-        "_space"
+        "_blankspace"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -905,6 +905,27 @@
       "definedIn": "table"
     },
     {
+      "id": "attribute-const",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#attribute-const",
+      "linkingText": [
+        "const"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribute"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attributes",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#attributes",
+        "title": "Attributes",
+        "number": "3.6"
+      },
+      "definedIn": "table"
+    },
+    {
       "id": "attribute-group",
       "href": "https://gpuweb.github.io/gpuweb/wgsl/#attribute-group",
       "linkingText": [
@@ -1031,10 +1052,10 @@
       "definedIn": "table"
     },
     {
-      "id": "attribute-stage",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#attribute-stage",
+      "id": "attribute-workgroup_size",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#attribute-workgroup_size",
       "linkingText": [
-        "stage"
+        "workgroup_size"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1052,10 +1073,71 @@
       "definedIn": "table"
     },
     {
-      "id": "attribute-workgroup_size",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#attribute-workgroup_size",
+      "id": "pipeline-stage-attributes",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#pipeline-stage-attributes",
       "linkingText": [
-        "workgroup_size"
+        "pipeline stage attributes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attributes",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#attributes",
+        "title": "Attributes",
+        "number": "3.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "attribute-vertex",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#attribute-vertex",
+      "linkingText": [
+        "vertex"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribute"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attributes",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#attributes",
+        "title": "Attributes",
+        "number": "3.6"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "attribute-fragment",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#attribute-fragment",
+      "linkingText": [
+        "fragment"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribute"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attributes",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#attributes",
+        "title": "Attributes",
+        "number": "3.6"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "attribute-compute",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#attribute-compute",
+      "linkingText": [
+        "compute"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1778,6 +1860,25 @@
       "definedIn": "prose"
     },
     {
+      "id": "concrete",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#concrete",
+      "linkingText": [
+        "concrete"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "types-for-creation-time-constants",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#types-for-creation-time-constants",
+        "title": "Types for Creation-Time Constants",
+        "number": "4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "plain-type",
       "href": "https://gpuweb.github.io/gpuweb/wgsl/#plain-type",
       "linkingText": [
@@ -1991,6 +2092,25 @@
       "href": "https://gpuweb.github.io/gpuweb/wgsl/#numeric-vector",
       "linkingText": [
         "numeric vector"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "vector-types",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#vector-types",
+        "title": "Vector Types",
+        "number": "4.3.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "abstract-vector",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#abstract-vector",
+      "linkingText": [
+        "abstract vector"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -3848,6 +3968,25 @@
       "definedIn": "prose"
     },
     {
+      "id": "override-expression",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#override-expression",
+      "linkingText": [
+        "override expression"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "override-decls",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#override-decls",
+        "title": "override Declarations",
+        "number": "5.1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "pipeline-constant-id",
       "href": "https://gpuweb.github.io/gpuweb/wgsl/#pipeline-constant-id",
       "linkingText": [
@@ -3901,6 +4040,25 @@
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#override-decls",
         "title": "override Declarations",
         "number": "5.1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "creation-time-constant",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#creation-time-constant",
+      "linkingText": [
+        "creation-time constant"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "creation-time-consts",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#creation-time-consts",
+        "title": "Creation-time Constants",
+        "number": "5.1.3"
       },
       "definedIn": "prose"
     },
@@ -4145,23 +4303,21 @@
       "definedIn": "prose"
     },
     {
-      "id": "syntax-const_expression",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#syntax-const_expression",
+      "id": "creation-time-expressions",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#creation-time-expressions",
       "linkingText": [
-        "const_expression"
+        "creation-time expressions"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [
-        "syntax"
-      ],
+      "for": [],
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "var-and-value-decl-grammar",
-        "href": "https://gpuweb.github.io/gpuweb/wgsl/#var-and-value-decl-grammar",
-        "title": "Variable and Value Declaration Grammar Summary",
-        "number": "5.6"
+        "id": "creation-time-expr",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#creation-time-expr",
+        "title": "Creation-time Expressions",
+        "number": "6.1"
       },
       "definedIn": "prose"
     },
@@ -4180,7 +4336,7 @@
         "id": "zero-value-expr",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#zero-value-expr",
         "title": "Zero Value Expressions",
-        "number": "6.3.2"
+        "number": "6.4.2"
       },
       "definedIn": "prose"
     },
@@ -4199,7 +4355,7 @@
         "id": "conversion-expr",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#conversion-expr",
         "title": "Conversion Expressions",
-        "number": "6.3.3"
+        "number": "6.4.3"
       },
       "definedIn": "prose"
     },
@@ -4218,7 +4374,7 @@
         "id": "address-of-expr",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#address-of-expr",
         "title": "Address-Of Expression",
-        "number": "6.13"
+        "number": "6.14"
       },
       "definedIn": "prose"
     },
@@ -4237,7 +4393,7 @@
         "id": "indirection-expr",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#indirection-expr",
         "title": "Indirection Expression",
-        "number": "6.14"
+        "number": "6.15"
       },
       "definedIn": "prose"
     },
@@ -4258,7 +4414,7 @@
         "id": "expression-grammar",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#expression-grammar",
         "title": "Expression Grammar Summary",
-        "number": "6.16"
+        "number": "6.17"
       },
       "definedIn": "prose"
     },
@@ -4279,7 +4435,7 @@
         "id": "expression-grammar",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#expression-grammar",
         "title": "Expression Grammar Summary",
-        "number": "6.16"
+        "number": "6.17"
       },
       "definedIn": "prose"
     },
@@ -4300,7 +4456,7 @@
         "id": "expression-grammar",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#expression-grammar",
         "title": "Expression Grammar Summary",
-        "number": "6.16"
+        "number": "6.17"
       },
       "definedIn": "prose"
     },
@@ -4321,7 +4477,7 @@
         "id": "expression-grammar",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#expression-grammar",
         "title": "Expression Grammar Summary",
-        "number": "6.16"
+        "number": "6.17"
       },
       "definedIn": "prose"
     },
@@ -4342,7 +4498,7 @@
         "id": "expression-grammar",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#expression-grammar",
         "title": "Expression Grammar Summary",
-        "number": "6.16"
+        "number": "6.17"
       },
       "definedIn": "prose"
     },
@@ -4363,7 +4519,7 @@
         "id": "expression-grammar",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#expression-grammar",
         "title": "Expression Grammar Summary",
-        "number": "6.16"
+        "number": "6.17"
       },
       "definedIn": "prose"
     },
@@ -4384,7 +4540,7 @@
         "id": "expression-grammar",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#expression-grammar",
         "title": "Expression Grammar Summary",
-        "number": "6.16"
+        "number": "6.17"
       },
       "definedIn": "prose"
     },
@@ -4405,7 +4561,7 @@
         "id": "expression-grammar",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#expression-grammar",
         "title": "Expression Grammar Summary",
-        "number": "6.16"
+        "number": "6.17"
       },
       "definedIn": "prose"
     },
@@ -4426,7 +4582,7 @@
         "id": "expression-grammar",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#expression-grammar",
         "title": "Expression Grammar Summary",
-        "number": "6.16"
+        "number": "6.17"
       },
       "definedIn": "prose"
     },
@@ -4447,7 +4603,7 @@
         "id": "expression-grammar",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#expression-grammar",
         "title": "Expression Grammar Summary",
-        "number": "6.16"
+        "number": "6.17"
       },
       "definedIn": "prose"
     },
@@ -4468,7 +4624,7 @@
         "id": "expression-grammar",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#expression-grammar",
         "title": "Expression Grammar Summary",
-        "number": "6.16"
+        "number": "6.17"
       },
       "definedIn": "prose"
     },
@@ -4489,7 +4645,7 @@
         "id": "expression-grammar",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#expression-grammar",
         "title": "Expression Grammar Summary",
-        "number": "6.16"
+        "number": "6.17"
       },
       "definedIn": "prose"
     },
@@ -4510,7 +4666,7 @@
         "id": "expression-grammar",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#expression-grammar",
         "title": "Expression Grammar Summary",
-        "number": "6.16"
+        "number": "6.17"
       },
       "definedIn": "prose"
     },
@@ -4531,7 +4687,7 @@
         "id": "expression-grammar",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#expression-grammar",
         "title": "Expression Grammar Summary",
-        "number": "6.16"
+        "number": "6.17"
       },
       "definedIn": "prose"
     },
@@ -4552,7 +4708,7 @@
         "id": "expression-grammar",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#expression-grammar",
         "title": "Expression Grammar Summary",
-        "number": "6.16"
+        "number": "6.17"
       },
       "definedIn": "prose"
     },
@@ -4573,7 +4729,7 @@
         "id": "expression-grammar",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#expression-grammar",
         "title": "Expression Grammar Summary",
-        "number": "6.16"
+        "number": "6.17"
       },
       "definedIn": "prose"
     },
@@ -4594,7 +4750,28 @@
         "id": "expression-grammar",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#expression-grammar",
         "title": "Expression Grammar Summary",
-        "number": "6.16"
+        "number": "6.17"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "syntax-bitwise_expression",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#syntax-bitwise_expression",
+      "linkingText": [
+        "bitwise_expression"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "syntax"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "expression-grammar",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#expression-grammar",
+        "title": "Expression Grammar Summary",
+        "number": "6.17"
       },
       "definedIn": "prose"
     },
@@ -4615,7 +4792,7 @@
         "id": "expression-grammar",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#expression-grammar",
         "title": "Expression Grammar Summary",
-        "number": "6.16"
+        "number": "6.17"
       },
       "definedIn": "prose"
     },
@@ -6000,6 +6177,25 @@
       "definedIn": "prose"
     },
     {
+      "id": "creation-time-functions",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#creation-time-functions",
+      "linkingText": [
+        "creation-time functions"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "creation-time-funcs",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#creation-time-funcs",
+        "title": "Creation-time Functions",
+        "number": "8.3"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "alias",
       "href": "https://gpuweb.github.io/gpuweb/wgsl/#alias",
       "linkingText": [
@@ -6014,7 +6210,7 @@
         "id": "function-aliasing",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#function-aliasing",
         "title": "Aliasing Memory Views",
-        "number": "8.3.1"
+        "number": "8.4.1"
       },
       "definedIn": "prose"
     },
@@ -8090,6 +8286,27 @@
       "href": "https://gpuweb.github.io/gpuweb/wgsl/#syntax-case",
       "linkingText": [
         "case"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "syntax"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "other-keywords",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#other-keywords",
+        "title": "Other Keywords",
+        "number": "14.1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "syntax-const",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#syntax-const",
+      "linkingText": [
+        "const"
       ],
       "localLinkingText": [],
       "type": "dfn",
