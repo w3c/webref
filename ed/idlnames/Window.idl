@@ -217,7 +217,7 @@ partial interface Window {
     [SecureContext] attribute EventHandler ondevicemotion;
 };
 
-// Source: Cooperative Scheduling of Background Tasks (https://www.w3.org/TR/requestidlecallback/)
+// Source: requestIdleCallback() (https://www.w3.org/TR/requestidlecallback/)
 partial interface Window {
   unsigned long requestIdleCallback(IdleRequestCallback callback, optional IdleRequestOptions options = {});
   undefined cancelIdleCallback(unsigned long handle);
