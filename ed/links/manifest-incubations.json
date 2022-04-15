@@ -18,7 +18,10 @@
       "dfn-within-scope-0",
       "dfn-processing-extension-point-of-web-manifest",
       "dfn-processing-a-manifest",
-      "dfn-processed-manifest"
+      "dfn-processed-manifest",
+      "dfn-start_url",
+      "dfn-scope",
+      "dfn-process-image-resources"
     ],
     "https://www.w3.org/groups/cg/wicg": [],
     "https://www.w3.org/community/about/agreements/cla/": [],
@@ -27,11 +30,15 @@
     "https://webidl.spec.whatwg.org/": [
       "idl-sequence",
       "this",
+      "dfn-dictionary",
+      "idl-frozen-array",
       "Exposed",
       "idl-DOMString",
       "idl-promise",
       "notallowederror",
-      "resolve"
+      "resolve",
+      "idl-any",
+      "idl-undefined"
     ],
     "https://infra.spec.whatwg.org/": [
       "list-iterate",
@@ -41,7 +48,11 @@
       "list",
       "iteration-continue",
       "list-contain",
-      "list-append"
+      "list-append",
+      "user-agent",
+      "map-is-empty",
+      "map-iterate",
+      "list-empty"
     ],
     "https://w3c.github.io/web-share-target/": [],
     "https://url.spec.whatwg.org/": [
@@ -68,6 +79,16 @@
       "eventhandler",
       "event-handler-idl-attributes"
     ],
+    "https://mimesniff.spec.whatwg.org/": [
+      "mime-type",
+      "parse-a-mime-type"
+    ],
+    "https://wicg.github.io/file-system-access/": [
+      "valid-suffix-code-points",
+      "filesystemhandle",
+      "dom-filesystempermissiondescriptor-mode",
+      "dom-filesystempermissionmode-readwrite"
+    ],
     "https://dom.spec.whatwg.org/": [
       "document",
       "concept-event-fire",
@@ -78,7 +99,11 @@
       "dom-event-preventdefault",
       "dom-event-istrusted"
     ],
+    "https://www.w3.org/TR/permissions/": [
+      "dom-permissionstate-granted"
+    ],
     "https://datatracker.ietf.org/doc/html/bcp14": [],
+    "https://www.iana.org/assignments/media-types/": [],
     "https://www.rfc-editor.org/rfc/rfc2119": [],
     "https://www.rfc-editor.org/rfc/rfc8174": []
   }

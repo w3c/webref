@@ -117,6 +117,13 @@
     },
     {
       "spec": {
+        "title": "Manifest Incubations",
+        "url": "https://wicg.github.io/manifest-incubations/"
+      },
+      "fragment": "partial interface Window {\n  readonly attribute LaunchQueue launchQueue;\n};"
+    },
+    {
+      "spec": {
         "title": "Navigation API",
         "url": "https://wicg.github.io/navigation-api/"
       },
@@ -4069,7 +4076,7 @@
           "id": "onappinstalled-attribute",
           "href": "https://wicg.github.io/manifest-incubations/#onappinstalled-attribute",
           "title": "onappinstalled attribute",
-          "number": "7.2.1"
+          "number": "8.2.1"
         },
         "definedIn": "prose"
       },
@@ -4092,7 +4099,30 @@
           "id": "extensions-to-the-window-object",
           "href": "https://wicg.github.io/manifest-incubations/#extensions-to-the-window-object",
           "title": "Extensions to the Window object",
-          "number": "7.2"
+          "number": "8.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-window-launchqueue",
+        "href": "https://wicg.github.io/manifest-incubations/#dom-window-launchqueue",
+        "linkingText": [
+          "launchQueue"
+        ],
+        "localLinkingText": [
+          "Window.launchQueue"
+        ],
+        "type": "attribute",
+        "for": [
+          "Window"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "launchqueue-interface",
+          "href": "https://wicg.github.io/manifest-incubations/#launchqueue-interface",
+          "title": "LaunchQueue interface",
+          "number": "9.3"
         },
         "definedIn": "pre"
       }

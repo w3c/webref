@@ -1,0 +1,5 @@
+// Source: Manifest Incubations (https://wicg.github.io/manifest-incubations/)
+[Exposed=Window] interface LaunchParams {
+  readonly attribute DOMString? targetURL;
+  readonly attribute FrozenArray<FileSystemHandle> files;
+};

@@ -1,0 +1,84 @@
+{
+  "name": "LaunchParams",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Manifest Incubations",
+      "url": "https://wicg.github.io/manifest-incubations/"
+    },
+    "fragment": "[Exposed=Window] interface LaunchParams {\n  readonly attribute DOMString? targetURL;\n  readonly attribute FrozenArray<FileSystemHandle> files;\n};",
+    "href": "https://wicg.github.io/manifest-incubations/#dom-launchparams"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://wicg.github.io/manifest-incubations/": [
+      {
+        "id": "dom-launchparams",
+        "href": "https://wicg.github.io/manifest-incubations/#dom-launchparams",
+        "linkingText": [
+          "LaunchParams"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "launchparams-interface",
+          "href": "https://wicg.github.io/manifest-incubations/#launchparams-interface",
+          "title": "LaunchParams interface",
+          "number": "9.1"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-launchparams-targeturl",
+        "href": "https://wicg.github.io/manifest-incubations/#dom-launchparams-targeturl",
+        "linkingText": [
+          "targetURL"
+        ],
+        "localLinkingText": [
+          "LaunchParams.targetURL"
+        ],
+        "type": "attribute",
+        "for": [
+          "LaunchParams"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "launchparams-interface",
+          "href": "https://wicg.github.io/manifest-incubations/#launchparams-interface",
+          "title": "LaunchParams interface",
+          "number": "9.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-launchparams-files",
+        "href": "https://wicg.github.io/manifest-incubations/#dom-launchparams-files",
+        "linkingText": [
+          "files"
+        ],
+        "localLinkingText": [
+          "LaunchParams.files"
+        ],
+        "type": "attribute",
+        "for": [
+          "LaunchParams"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "launchparams-interface",
+          "href": "https://wicg.github.io/manifest-incubations/#launchparams-interface",
+          "title": "LaunchParams interface",
+          "number": "9.1"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}
