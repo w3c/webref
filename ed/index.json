@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2022-04-16T00:47:49.098Z",
+  "date": "2022-04-16T06:37:14.504Z",
   "options": {
     "fallback": "webref-fallback/ed/index.json",
     "output": "report",
@@ -21,7 +21,7 @@
   },
   "stats": {
     "crawled": 467,
-    "errors": 1
+    "errors": 2
   },
   "crawler": "reffy-7.0.5",
   "results": [
@@ -17050,7 +17050,8 @@
       "css": "css/CSS.json",
       "dfns": "dfns/CSS22.json",
       "headings": "headings/CSS22.json",
-      "ids": "ids/CSS22.json"
+      "ids": "ids/CSS22.json",
+      "error": "Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers' Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers'\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:483:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 323)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/css3-exclusions/",
@@ -23537,10 +23538,10 @@
       ],
       "crawled": "https://webassembly.github.io/spec/core/bikeshed/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 15 Apr 2022 08:53:35 GMT"
+        "lastModified": "Sat, 16 Apr 2022 00:53:11 GMT"
       },
       "generator": "bikeshed",
-      "date": "15 April 2022",
+      "date": "16 April 2022",
       "links": "links/wasm-core-1.json",
       "refs": "refs/wasm-core-1.json",
       "headings": "headings/wasm-core-1.json",
@@ -23597,10 +23598,10 @@
       ],
       "crawled": "https://webassembly.github.io/spec/js-api/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 15 Apr 2022 08:53:35 GMT"
+        "lastModified": "Sat, 16 Apr 2022 00:53:11 GMT"
       },
       "generator": "bikeshed",
-      "date": "15 April 2022",
+      "date": "16 April 2022",
       "links": "links/wasm-js-api-1.json",
       "refs": "refs/wasm-js-api-1.json",
       "idl": "idl/wasm-js-api.idl",
@@ -23657,10 +23658,10 @@
       ],
       "crawled": "https://webassembly.github.io/spec/web-api/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 15 Apr 2022 08:53:35 GMT"
+        "lastModified": "Sat, 16 Apr 2022 00:53:11 GMT"
       },
       "generator": "bikeshed",
-      "date": "15 April 2022",
+      "date": "16 April 2022",
       "links": "links/wasm-web-api-1.json",
       "refs": "refs/wasm-web-api-1.json",
       "idl": "idl/wasm-web-api.idl",
