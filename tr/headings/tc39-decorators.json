@@ -1,0 +1,350 @@
+{
+  "spec": {
+    "title": "Decorators proposal",
+    "url": "https://tc39.es/proposal-decorators/"
+  },
+  "headings": [
+    {
+      "id": "sec-syntax",
+      "title": "Syntax",
+      "level": 1,
+      "number": "1"
+    },
+    {
+      "id": "sec-new-syntax",
+      "title": "New Productions",
+      "level": 2,
+      "number": "1.1"
+    },
+    {
+      "id": "sec-updated-syntax",
+      "title": "Updated Productions",
+      "level": 2,
+      "number": "1.2"
+    },
+    {
+      "id": "sec-syntax-early-errors",
+      "title": "Static Semantics: Early Errors",
+      "level": 2,
+      "number": "1.3"
+    },
+    {
+      "id": "sec-new-ecmascript-specification-types",
+      "title": "New ECMAScript Specification Types",
+      "level": 1,
+      "number": "2"
+    },
+    {
+      "id": "sec-classes-specification-types",
+      "title": "Classes Specification Types",
+      "level": 2,
+      "number": "2.1"
+    },
+    {
+      "id": "sec-elementdescriptor-specification-type",
+      "title": "The ElementDescriptor Specification Type",
+      "level": 3,
+      "number": "2.1.1"
+    },
+    {
+      "id": "sec-internal-algorithms",
+      "title": "Class algorithms",
+      "level": 1,
+      "number": "3"
+    },
+    {
+      "id": "runtime-semantics-class-definition-evaluation",
+      "title": "Runtime Semantics: ClassDefinitionEvaluation",
+      "level": 2,
+      "number": "3.1"
+    },
+    {
+      "id": "sec-default-method-descriptor",
+      "title": "DefaultMethodDescriptor ( key, closure, enumerable, placement )",
+      "level": 2,
+      "number": "3.2"
+    },
+    {
+      "id": "sec-method-definitions-runtime-semantics-propertydefinitionevaluation",
+      "title": "Runtime Semantics: ClassElementEvaluation",
+      "level": 2,
+      "number": "3.3"
+    },
+    {
+      "id": "runtime-semantics-class-field-definition-evaluation",
+      "title": "Runtime Semantics: ClassFieldDefinitionEvaluation",
+      "level": 2,
+      "number": "3.4"
+    },
+    {
+      "id": "sec-runtime-semantics-bindingclassdeclarationevaluation",
+      "title": "Runtime Semantics: BindingClassDeclarationEvaluation",
+      "level": 2,
+      "number": "3.5"
+    },
+    {
+      "id": "sec-class-definitions-runtime-semantics-evaluation",
+      "title": "Runtime Semantics: Evaluation",
+      "level": 2,
+      "number": "3.6"
+    },
+    {
+      "id": "sec-coalesce-getter-setter",
+      "title": "CoalesceGetterSetter ( element, other )",
+      "level": 2,
+      "number": "3.7"
+    },
+    {
+      "id": "sec-coalesce-class-elements",
+      "title": "CoalesceClassElements ( elements )",
+      "level": 2,
+      "number": "3.8"
+    },
+    {
+      "id": "sec-define-field",
+      "title": "DefineField(receiver, descriptor)",
+      "level": 2,
+      "number": "3.9"
+    },
+    {
+      "id": "sec-privatefielddefine",
+      "title": "PrivateFieldDefine (P, O, desc)",
+      "level": 2,
+      "number": "3.10"
+    },
+    {
+      "id": "initialize-public-instance-elements",
+      "title": "InitializeInstanceElements ( O, constructor )",
+      "level": 2,
+      "number": "3.11"
+    },
+    {
+      "id": "initialize-class-elements",
+      "title": "InitializeClassElements(F, proto)",
+      "level": 2,
+      "number": "3.12"
+    },
+    {
+      "id": "sec-assign-private-names",
+      "title": "AssignPrivateNames ( elements )",
+      "level": 2,
+      "number": "3.13"
+    },
+    {
+      "id": "sec-private-names",
+      "title": "Private Names and references",
+      "level": 1,
+      "number": "4"
+    },
+    {
+      "id": "sec-privatefieldget",
+      "title": "PrivateFieldGet (P, O )",
+      "level": 2,
+      "number": "4.1"
+    },
+    {
+      "id": "sec-privatefieldset",
+      "title": "PrivateFieldSet (P, O, value )",
+      "level": 2,
+      "number": "4.2"
+    },
+    {
+      "id": "sec-private-name-objects",
+      "title": "Private Name Objects",
+      "level": 2,
+      "number": "4.3"
+    },
+    {
+      "id": "sec-private-name-constructor",
+      "title": "The %PrivateName% Constructor",
+      "level": 3,
+      "number": "4.3.1"
+    },
+    {
+      "id": "sec-private-description",
+      "title": "%PrivateName% ( )",
+      "level": 4,
+      "number": "4.3.1.1"
+    },
+    {
+      "id": "sec-private-name-object",
+      "title": "PrivateNameObject ( name )",
+      "level": 4,
+      "number": "4.3.1.2"
+    },
+    {
+      "id": "sec-properties-of-the-private-name-prototype-object",
+      "title": "Properties of the %PrivateNamePrototype% Object",
+      "level": 4,
+      "number": "4.3.1.3"
+    },
+    {
+      "id": "sec-private-name.prototype.constructor",
+      "title": "%PrivateName%.prototype.constructor",
+      "level": 5,
+      "number": "4.3.1.3.1"
+    },
+    {
+      "id": "sec-private-name-get",
+      "title": "%PrivateName%.prototype.get ( object )",
+      "level": 5,
+      "number": "4.3.1.3.2"
+    },
+    {
+      "id": "sec-private-name-set",
+      "title": "%PrivateName%.prototype.set ( object, value )",
+      "level": 5,
+      "number": "4.3.1.3.3"
+    },
+    {
+      "id": "sec-private-name.prototype.description",
+      "title": "get %PrivateName%.prototype.description ( )",
+      "level": 5,
+      "number": "4.3.1.3.4"
+    },
+    {
+      "id": "sec-private-name.prototype.tostring",
+      "title": "%PrivateName%.prototype.toString ( )",
+      "level": 5,
+      "number": "4.3.1.3.5"
+    },
+    {
+      "id": "sec-private-name.prototype-@@tostringtag",
+      "title": "PrivateName.prototype [ @@toStringTag ]",
+      "level": 5,
+      "number": "4.3.1.3.6"
+    },
+    {
+      "id": "sec-private-name-this-private-name",
+      "title": "GetPrivateName ( O )",
+      "level": 5,
+      "number": "4.3.1.3.7"
+    },
+    {
+      "id": "sec-properties-of-private-name-instances",
+      "title": "Properties of PrivateName Instances",
+      "level": 4,
+      "number": "4.3.1.4"
+    },
+    {
+      "id": "sec-createintrinsics",
+      "title": "CreateIntrinsics ( realmRec )",
+      "level": 2,
+      "number": "4.4"
+    },
+    {
+      "id": "decorator-semantics",
+      "title": "Decorator semantics",
+      "level": 1,
+      "number": "5"
+    },
+    {
+      "id": "sec-decorator-functions",
+      "title": "Decorator Functions",
+      "level": 2,
+      "number": "5.1"
+    },
+    {
+      "id": "sec-decorator-runtime-semantics-decoratorevaluation",
+      "title": "Runtime Semantics: DecoratorEvaluation",
+      "level": 2,
+      "number": "5.2"
+    },
+    {
+      "id": "sec-method-definitions-runtime-semantics-decoratorlistevaluation",
+      "title": "Runtime Semantics: DecoratorListEvaluation",
+      "level": 2,
+      "number": "5.3"
+    },
+    {
+      "id": "sec-decorate-class",
+      "title": "DecorateClass ( elements, decorators )",
+      "level": 2,
+      "number": "5.4"
+    },
+    {
+      "id": "sec-decorate-element",
+      "title": "DecorateElement ( element, placements )",
+      "level": 2,
+      "number": "5.5"
+    },
+    {
+      "id": "sec-decorate-constructor",
+      "title": "DecorateConstructor ( elements, decorators )",
+      "level": 2,
+      "number": "5.6"
+    },
+    {
+      "id": "sec-add-element-placement",
+      "title": "AddElementPlacement (element, placements [, silent])",
+      "level": 2,
+      "number": "5.7"
+    },
+    {
+      "id": "sec-remove-element-placement",
+      "title": "RemoveElementPlacement (element, placements)",
+      "level": 2,
+      "number": "5.8"
+    },
+    {
+      "id": "sec-from-element-descriptors",
+      "title": "FromElementDescriptors ( elements )",
+      "level": 2,
+      "number": "5.9"
+    },
+    {
+      "id": "sec-from-element-descriptor",
+      "title": "FromElementDescriptor ( element )",
+      "level": 2,
+      "number": "5.10"
+    },
+    {
+      "id": "sec-to-element-descriptors",
+      "title": "ToElementDescriptors ( elementObjects )",
+      "level": 2,
+      "number": "5.11"
+    },
+    {
+      "id": "sec-to-decorator-property-descriptor",
+      "title": "ToDecoratorPropertyDescriptor ( elementObject )",
+      "level": 2,
+      "number": "5.12"
+    },
+    {
+      "id": "sec-to-element-descriptor",
+      "title": "ToElementDescriptor ( elementObject )",
+      "level": 2,
+      "number": "5.13"
+    },
+    {
+      "id": "sec-to-element-extras",
+      "title": "ToElementExtras ( elementObject )",
+      "level": 2,
+      "number": "5.14"
+    },
+    {
+      "id": "sec-from-class-descriptor",
+      "title": "FromClassDescriptor ( elements )",
+      "level": 2,
+      "number": "5.15"
+    },
+    {
+      "id": "sec-to-class-descriptor",
+      "title": "ToClassDescriptor ( classDescriptor )",
+      "level": 2,
+      "number": "5.16"
+    },
+    {
+      "id": "sec-strict-mode-code",
+      "title": "Strict Mode Code",
+      "level": 1,
+      "number": "6"
+    },
+    {
+      "id": "sec-non-ecmascript-functions",
+      "title": "Non-ECMAScript Functions",
+      "level": 1,
+      "number": "7"
+    }
+  ]
+}

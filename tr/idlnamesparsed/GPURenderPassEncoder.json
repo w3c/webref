@@ -36,14 +36,14 @@
         "title": "WebGPU",
         "url": "https://www.w3.org/TR/webgpu/"
       },
-      "fragment": "GPURenderPassEncoder includes GPUProgrammablePassEncoder;"
+      "fragment": "GPURenderPassEncoder includes GPUBindingCommandsMixin;"
     },
     {
       "spec": {
         "title": "WebGPU",
         "url": "https://www.w3.org/TR/webgpu/"
       },
-      "fragment": "GPURenderPassEncoder includes GPURenderEncoderBase;"
+      "fragment": "GPURenderPassEncoder includes GPURenderCommandsMixin;"
     }
   ],
   "inheritance": null,
@@ -94,30 +94,30 @@
       "includes": []
     },
     {
-      "name": "GPUProgrammablePassEncoder",
+      "name": "GPUBindingCommandsMixin",
       "type": "interface mixin",
       "defined": {
         "spec": {
           "title": "WebGPU",
           "url": "https://www.w3.org/TR/webgpu/"
         },
-        "fragment": "interface mixin GPUProgrammablePassEncoder {\n    undefined setBindGroup(GPUIndex32 index, GPUBindGroup bindGroup,\n                      optional sequence<GPUBufferDynamicOffset> dynamicOffsets = []);\n\n    undefined setBindGroup(GPUIndex32 index, GPUBindGroup bindGroup,\n                      Uint32Array dynamicOffsetsData,\n                      GPUSize64 dynamicOffsetsDataStart,\n                      GPUSize32 dynamicOffsetsDataLength);\n};",
-        "href": "https://www.w3.org/TR/webgpu/#gpuprogrammablepassencoder"
+        "fragment": "interface mixin GPUBindingCommandsMixin {\n    undefined setBindGroup(GPUIndex32 index, GPUBindGroup bindGroup,\n                      optional sequence<GPUBufferDynamicOffset> dynamicOffsets = []);\n\n    undefined setBindGroup(GPUIndex32 index, GPUBindGroup bindGroup,\n                      Uint32Array dynamicOffsetsData,\n                      GPUSize64 dynamicOffsetsDataStart,\n                      GPUSize32 dynamicOffsetsDataLength);\n};",
+        "href": "https://www.w3.org/TR/webgpu/#gpubindingcommandsmixin"
       },
       "extended": [],
       "inheritance": null,
       "includes": []
     },
     {
-      "name": "GPURenderEncoderBase",
+      "name": "GPURenderCommandsMixin",
       "type": "interface mixin",
       "defined": {
         "spec": {
           "title": "WebGPU",
           "url": "https://www.w3.org/TR/webgpu/"
         },
-        "fragment": "interface mixin GPURenderEncoderBase {\n    undefined setPipeline(GPURenderPipeline pipeline);\n\n    undefined setIndexBuffer(GPUBuffer buffer, GPUIndexFormat indexFormat, optional GPUSize64 offset = 0, optional GPUSize64 size);\n    undefined setVertexBuffer(GPUIndex32 slot, GPUBuffer buffer, optional GPUSize64 offset = 0, optional GPUSize64 size);\n\n    undefined draw(GPUSize32 vertexCount, optional GPUSize32 instanceCount = 1,\n              optional GPUSize32 firstVertex = 0, optional GPUSize32 firstInstance = 0);\n    undefined drawIndexed(GPUSize32 indexCount, optional GPUSize32 instanceCount = 1,\n                     optional GPUSize32 firstIndex = 0,\n                     optional GPUSignedOffset32 baseVertex = 0,\n                     optional GPUSize32 firstInstance = 0);\n\n    undefined drawIndirect(GPUBuffer indirectBuffer, GPUSize64 indirectOffset);\n    undefined drawIndexedIndirect(GPUBuffer indirectBuffer, GPUSize64 indirectOffset);\n};",
-        "href": "https://www.w3.org/TR/webgpu/#gpurenderencoderbase"
+        "fragment": "interface mixin GPURenderCommandsMixin {\n    undefined setPipeline(GPURenderPipeline pipeline);\n\n    undefined setIndexBuffer(GPUBuffer buffer, GPUIndexFormat indexFormat, optional GPUSize64 offset = 0, optional GPUSize64 size);\n    undefined setVertexBuffer(GPUIndex32 slot, GPUBuffer buffer, optional GPUSize64 offset = 0, optional GPUSize64 size);\n\n    undefined draw(GPUSize32 vertexCount, optional GPUSize32 instanceCount = 1,\n              optional GPUSize32 firstVertex = 0, optional GPUSize32 firstInstance = 0);\n    undefined drawIndexed(GPUSize32 indexCount, optional GPUSize32 instanceCount = 1,\n                     optional GPUSize32 firstIndex = 0,\n                     optional GPUSignedOffset32 baseVertex = 0,\n                     optional GPUSize32 firstInstance = 0);\n\n    undefined drawIndirect(GPUBuffer indirectBuffer, GPUSize64 indirectOffset);\n    undefined drawIndexedIndirect(GPUBuffer indirectBuffer, GPUSize64 indirectOffset);\n};",
+        "href": "https://www.w3.org/TR/webgpu/#gpurendercommandsmixin"
       },
       "extended": [],
       "inheritance": null,

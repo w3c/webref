@@ -9,8 +9,5 @@ interface NavigationHistoryEntry : EventTarget {
 
   any getState();
 
-  attribute EventHandler onnavigateto;
-  attribute EventHandler onnavigatefrom;
-  attribute EventHandler onfinish;
   attribute EventHandler ondispose;
 };

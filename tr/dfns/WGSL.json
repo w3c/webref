@@ -366,10 +366,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "syntax-_space",
-      "href": "https://www.w3.org/TR/WGSL/#syntax-_space",
+      "id": "syntax-_blankspace",
+      "href": "https://www.w3.org/TR/WGSL/#syntax-_blankspace",
       "linkingText": [
-        "_space"
+        "_blankspace"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -905,6 +905,27 @@
       "definedIn": "table"
     },
     {
+      "id": "attribute-const",
+      "href": "https://www.w3.org/TR/WGSL/#attribute-const",
+      "linkingText": [
+        "const"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribute"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attributes",
+        "href": "https://www.w3.org/TR/WGSL/#attributes",
+        "title": "Attributes",
+        "number": "3.6"
+      },
+      "definedIn": "table"
+    },
+    {
       "id": "attribute-group",
       "href": "https://www.w3.org/TR/WGSL/#attribute-group",
       "linkingText": [
@@ -1031,10 +1052,10 @@
       "definedIn": "table"
     },
     {
-      "id": "attribute-stage",
-      "href": "https://www.w3.org/TR/WGSL/#attribute-stage",
+      "id": "attribute-workgroup_size",
+      "href": "https://www.w3.org/TR/WGSL/#attribute-workgroup_size",
       "linkingText": [
-        "stage"
+        "workgroup_size"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1052,10 +1073,71 @@
       "definedIn": "table"
     },
     {
-      "id": "attribute-workgroup_size",
-      "href": "https://www.w3.org/TR/WGSL/#attribute-workgroup_size",
+      "id": "pipeline-stage-attributes",
+      "href": "https://www.w3.org/TR/WGSL/#pipeline-stage-attributes",
       "linkingText": [
-        "workgroup_size"
+        "pipeline stage attributes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attributes",
+        "href": "https://www.w3.org/TR/WGSL/#attributes",
+        "title": "Attributes",
+        "number": "3.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "attribute-vertex",
+      "href": "https://www.w3.org/TR/WGSL/#attribute-vertex",
+      "linkingText": [
+        "vertex"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribute"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attributes",
+        "href": "https://www.w3.org/TR/WGSL/#attributes",
+        "title": "Attributes",
+        "number": "3.6"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "attribute-fragment",
+      "href": "https://www.w3.org/TR/WGSL/#attribute-fragment",
+      "linkingText": [
+        "fragment"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribute"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attributes",
+        "href": "https://www.w3.org/TR/WGSL/#attributes",
+        "title": "Attributes",
+        "number": "3.6"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "attribute-compute",
+      "href": "https://www.w3.org/TR/WGSL/#attribute-compute",
+      "linkingText": [
+        "compute"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1778,6 +1860,25 @@
       "definedIn": "prose"
     },
     {
+      "id": "concrete",
+      "href": "https://www.w3.org/TR/WGSL/#concrete",
+      "linkingText": [
+        "concrete"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "types-for-creation-time-constants",
+        "href": "https://www.w3.org/TR/WGSL/#types-for-creation-time-constants",
+        "title": "Types for Creation-Time Constants",
+        "number": "4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "plain-type",
       "href": "https://www.w3.org/TR/WGSL/#plain-type",
       "linkingText": [
@@ -1858,6 +1959,25 @@
       "href": "https://www.w3.org/TR/WGSL/#f32",
       "linkingText": [
         "f32"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "floating-point-types",
+        "href": "https://www.w3.org/TR/WGSL/#floating-point-types",
+        "title": "Floating Point Type",
+        "number": "4.3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "f16",
+      "href": "https://www.w3.org/TR/WGSL/#f16",
+      "linkingText": [
+        "f16"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1972,6 +2092,25 @@
       "href": "https://www.w3.org/TR/WGSL/#numeric-vector",
       "linkingText": [
         "numeric vector"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "vector-types",
+        "href": "https://www.w3.org/TR/WGSL/#vector-types",
+        "title": "Vector Types",
+        "number": "4.3.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "abstract-vector",
+      "href": "https://www.w3.org/TR/WGSL/#abstract-vector",
+      "linkingText": [
+        "abstract vector"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -3829,6 +3968,25 @@
       "definedIn": "prose"
     },
     {
+      "id": "override-expression",
+      "href": "https://www.w3.org/TR/WGSL/#override-expression",
+      "linkingText": [
+        "override expression"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "override-decls",
+        "href": "https://www.w3.org/TR/WGSL/#override-decls",
+        "title": "override Declarations",
+        "number": "5.1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "pipeline-constant-id",
       "href": "https://www.w3.org/TR/WGSL/#pipeline-constant-id",
       "linkingText": [
@@ -3882,6 +4040,25 @@
         "href": "https://www.w3.org/TR/WGSL/#override-decls",
         "title": "override Declarations",
         "number": "5.1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "creation-time-constant",
+      "href": "https://www.w3.org/TR/WGSL/#creation-time-constant",
+      "linkingText": [
+        "creation-time constant"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "creation-time-consts",
+        "href": "https://www.w3.org/TR/WGSL/#creation-time-consts",
+        "title": "Creation-time Constants",
+        "number": "5.1.3"
       },
       "definedIn": "prose"
     },
@@ -4126,23 +4303,21 @@
       "definedIn": "prose"
     },
     {
-      "id": "syntax-const_expression",
-      "href": "https://www.w3.org/TR/WGSL/#syntax-const_expression",
+      "id": "creation-time-expressions",
+      "href": "https://www.w3.org/TR/WGSL/#creation-time-expressions",
       "linkingText": [
-        "const_expression"
+        "creation-time expressions"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [
-        "syntax"
-      ],
+      "for": [],
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "var-and-value-decl-grammar",
-        "href": "https://www.w3.org/TR/WGSL/#var-and-value-decl-grammar",
-        "title": "Variable and Value Declaration Grammar Summary",
-        "number": "5.6"
+        "id": "creation-time-expr",
+        "href": "https://www.w3.org/TR/WGSL/#creation-time-expr",
+        "title": "Creation-time Expressions",
+        "number": "6.1"
       },
       "definedIn": "prose"
     },
@@ -4161,7 +4336,7 @@
         "id": "zero-value-expr",
         "href": "https://www.w3.org/TR/WGSL/#zero-value-expr",
         "title": "Zero Value Expressions",
-        "number": "6.3.2"
+        "number": "6.4.2"
       },
       "definedIn": "prose"
     },
@@ -4180,7 +4355,7 @@
         "id": "conversion-expr",
         "href": "https://www.w3.org/TR/WGSL/#conversion-expr",
         "title": "Conversion Expressions",
-        "number": "6.3.3"
+        "number": "6.4.3"
       },
       "definedIn": "prose"
     },
@@ -4199,7 +4374,7 @@
         "id": "address-of-expr",
         "href": "https://www.w3.org/TR/WGSL/#address-of-expr",
         "title": "Address-Of Expression",
-        "number": "6.13"
+        "number": "6.14"
       },
       "definedIn": "prose"
     },
@@ -4218,7 +4393,7 @@
         "id": "indirection-expr",
         "href": "https://www.w3.org/TR/WGSL/#indirection-expr",
         "title": "Indirection Expression",
-        "number": "6.14"
+        "number": "6.15"
       },
       "definedIn": "prose"
     },
@@ -4239,7 +4414,7 @@
         "id": "expression-grammar",
         "href": "https://www.w3.org/TR/WGSL/#expression-grammar",
         "title": "Expression Grammar Summary",
-        "number": "6.16"
+        "number": "6.17"
       },
       "definedIn": "prose"
     },
@@ -4260,7 +4435,7 @@
         "id": "expression-grammar",
         "href": "https://www.w3.org/TR/WGSL/#expression-grammar",
         "title": "Expression Grammar Summary",
-        "number": "6.16"
+        "number": "6.17"
       },
       "definedIn": "prose"
     },
@@ -4281,7 +4456,7 @@
         "id": "expression-grammar",
         "href": "https://www.w3.org/TR/WGSL/#expression-grammar",
         "title": "Expression Grammar Summary",
-        "number": "6.16"
+        "number": "6.17"
       },
       "definedIn": "prose"
     },
@@ -4302,7 +4477,7 @@
         "id": "expression-grammar",
         "href": "https://www.w3.org/TR/WGSL/#expression-grammar",
         "title": "Expression Grammar Summary",
-        "number": "6.16"
+        "number": "6.17"
       },
       "definedIn": "prose"
     },
@@ -4323,7 +4498,7 @@
         "id": "expression-grammar",
         "href": "https://www.w3.org/TR/WGSL/#expression-grammar",
         "title": "Expression Grammar Summary",
-        "number": "6.16"
+        "number": "6.17"
       },
       "definedIn": "prose"
     },
@@ -4344,7 +4519,7 @@
         "id": "expression-grammar",
         "href": "https://www.w3.org/TR/WGSL/#expression-grammar",
         "title": "Expression Grammar Summary",
-        "number": "6.16"
+        "number": "6.17"
       },
       "definedIn": "prose"
     },
@@ -4365,7 +4540,7 @@
         "id": "expression-grammar",
         "href": "https://www.w3.org/TR/WGSL/#expression-grammar",
         "title": "Expression Grammar Summary",
-        "number": "6.16"
+        "number": "6.17"
       },
       "definedIn": "prose"
     },
@@ -4386,7 +4561,7 @@
         "id": "expression-grammar",
         "href": "https://www.w3.org/TR/WGSL/#expression-grammar",
         "title": "Expression Grammar Summary",
-        "number": "6.16"
+        "number": "6.17"
       },
       "definedIn": "prose"
     },
@@ -4407,7 +4582,7 @@
         "id": "expression-grammar",
         "href": "https://www.w3.org/TR/WGSL/#expression-grammar",
         "title": "Expression Grammar Summary",
-        "number": "6.16"
+        "number": "6.17"
       },
       "definedIn": "prose"
     },
@@ -4428,7 +4603,7 @@
         "id": "expression-grammar",
         "href": "https://www.w3.org/TR/WGSL/#expression-grammar",
         "title": "Expression Grammar Summary",
-        "number": "6.16"
+        "number": "6.17"
       },
       "definedIn": "prose"
     },
@@ -4449,7 +4624,7 @@
         "id": "expression-grammar",
         "href": "https://www.w3.org/TR/WGSL/#expression-grammar",
         "title": "Expression Grammar Summary",
-        "number": "6.16"
+        "number": "6.17"
       },
       "definedIn": "prose"
     },
@@ -4470,7 +4645,7 @@
         "id": "expression-grammar",
         "href": "https://www.w3.org/TR/WGSL/#expression-grammar",
         "title": "Expression Grammar Summary",
-        "number": "6.16"
+        "number": "6.17"
       },
       "definedIn": "prose"
     },
@@ -4491,7 +4666,7 @@
         "id": "expression-grammar",
         "href": "https://www.w3.org/TR/WGSL/#expression-grammar",
         "title": "Expression Grammar Summary",
-        "number": "6.16"
+        "number": "6.17"
       },
       "definedIn": "prose"
     },
@@ -4512,7 +4687,7 @@
         "id": "expression-grammar",
         "href": "https://www.w3.org/TR/WGSL/#expression-grammar",
         "title": "Expression Grammar Summary",
-        "number": "6.16"
+        "number": "6.17"
       },
       "definedIn": "prose"
     },
@@ -4533,7 +4708,7 @@
         "id": "expression-grammar",
         "href": "https://www.w3.org/TR/WGSL/#expression-grammar",
         "title": "Expression Grammar Summary",
-        "number": "6.16"
+        "number": "6.17"
       },
       "definedIn": "prose"
     },
@@ -4554,7 +4729,7 @@
         "id": "expression-grammar",
         "href": "https://www.w3.org/TR/WGSL/#expression-grammar",
         "title": "Expression Grammar Summary",
-        "number": "6.16"
+        "number": "6.17"
       },
       "definedIn": "prose"
     },
@@ -4575,7 +4750,28 @@
         "id": "expression-grammar",
         "href": "https://www.w3.org/TR/WGSL/#expression-grammar",
         "title": "Expression Grammar Summary",
-        "number": "6.16"
+        "number": "6.17"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "syntax-bitwise_expression",
+      "href": "https://www.w3.org/TR/WGSL/#syntax-bitwise_expression",
+      "linkingText": [
+        "bitwise_expression"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "syntax"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "expression-grammar",
+        "href": "https://www.w3.org/TR/WGSL/#expression-grammar",
+        "title": "Expression Grammar Summary",
+        "number": "6.17"
       },
       "definedIn": "prose"
     },
@@ -4596,7 +4792,7 @@
         "id": "expression-grammar",
         "href": "https://www.w3.org/TR/WGSL/#expression-grammar",
         "title": "Expression Grammar Summary",
-        "number": "6.16"
+        "number": "6.17"
       },
       "definedIn": "prose"
     },
@@ -5981,6 +6177,44 @@
       "definedIn": "prose"
     },
     {
+      "id": "creation-time-functions",
+      "href": "https://www.w3.org/TR/WGSL/#creation-time-functions",
+      "linkingText": [
+        "creation-time functions"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "creation-time-funcs",
+        "href": "https://www.w3.org/TR/WGSL/#creation-time-funcs",
+        "title": "Creation-time Functions",
+        "number": "8.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "alias",
+      "href": "https://www.w3.org/TR/WGSL/#alias",
+      "linkingText": [
+        "alias"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "function-aliasing",
+        "href": "https://www.w3.org/TR/WGSL/#function-aliasing",
+        "title": "Aliasing Memory Views",
+        "number": "8.4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "entry-point",
       "href": "https://www.w3.org/TR/WGSL/#entry-point",
       "linkingText": [
@@ -6474,6 +6708,27 @@
         "number": "10.1"
       },
       "definedIn": "prose"
+    },
+    {
+      "id": "extension-f16",
+      "href": "https://www.w3.org/TR/WGSL/#extension-f16",
+      "linkingText": [
+        "f16"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "extension"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "extension-list",
+        "href": "https://www.w3.org/TR/WGSL/#extension-list",
+        "title": "Extensions list",
+        "number": "10.2"
+      },
+      "definedIn": "table"
     },
     {
       "id": "syntax-translation_unit",
@@ -7212,6 +7467,27 @@
       "href": "https://www.w3.org/TR/WGSL/#syntax-float32",
       "linkingText": [
         "float32"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "syntax"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-defining-keywords",
+        "href": "https://www.w3.org/TR/WGSL/#type-defining-keywords",
+        "title": "Type-defining Keywords",
+        "number": "14.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "syntax-float16",
+      "href": "https://www.w3.org/TR/WGSL/#syntax-float16",
+      "linkingText": [
+        "float16"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -8010,6 +8286,27 @@
       "href": "https://www.w3.org/TR/WGSL/#syntax-case",
       "linkingText": [
         "case"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "syntax"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "other-keywords",
+        "href": "https://www.w3.org/TR/WGSL/#other-keywords",
+        "title": "Other Keywords",
+        "number": "14.1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "syntax-const",
+      "href": "https://www.w3.org/TR/WGSL/#syntax-const",
+      "linkingText": [
+        "const"
       ],
       "localLinkingText": [],
       "type": "dfn",

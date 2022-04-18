@@ -1045,7 +1045,7 @@
         "partial": false
       },
       "GPUFeatureName": {
-        "fragment": "enum GPUFeatureName {\n    \"depth-clip-control\",\n    \"depth24unorm-stencil8\",\n    \"depth32float-stencil8\",\n    \"texture-compression-bc\",\n    \"texture-compression-etc2\",\n    \"texture-compression-astc\",\n    \"timestamp-query\",\n    \"indirect-first-instance\",\n};",
+        "fragment": "enum GPUFeatureName {\n    \"depth-clip-control\",\n    \"depth24unorm-stencil8\",\n    \"depth32float-stencil8\",\n    \"texture-compression-bc\",\n    \"texture-compression-etc2\",\n    \"texture-compression-astc\",\n    \"timestamp-query\",\n    \"indirect-first-instance\",\n    \"shader-f16\",\n};",
         "type": "enum",
         "name": "GPUFeatureName",
         "values": [
@@ -1080,6 +1080,10 @@
           {
             "type": "enum-value",
             "value": "indirect-first-instance"
+          },
+          {
+            "type": "enum-value",
+            "value": "shader-f16"
           }
         ],
         "extAttrs": []
@@ -5022,7 +5026,7 @@
         "extAttrs": []
       },
       "GPUComputePipeline": {
-        "fragment": "// May represent WGSL’s bool, f32, i32, u32.\n\n[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUComputePipeline {\n};",
+        "fragment": "// May represent WGSL’s bool, f32, i32, u32, and f16 if enabled.\n\n[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUComputePipeline {\n};",
         "type": "interface",
         "name": "GPUComputePipeline",
         "inheritance": null,
@@ -7450,10 +7454,10 @@
         "extAttrs": [],
         "partial": false
       },
-      "GPUProgrammablePassEncoder": {
-        "fragment": "interface mixin GPUProgrammablePassEncoder {\n    undefined setBindGroup(GPUIndex32 index, GPUBindGroup bindGroup,\n                      optional sequence<GPUBufferDynamicOffset> dynamicOffsets = []);\n\n    undefined setBindGroup(GPUIndex32 index, GPUBindGroup bindGroup,\n                      Uint32Array dynamicOffsetsData,\n                      GPUSize64 dynamicOffsetsDataStart,\n                      GPUSize32 dynamicOffsetsDataLength);\n};",
+      "GPUBindingCommandsMixin": {
+        "fragment": "interface mixin GPUBindingCommandsMixin {\n    undefined setBindGroup(GPUIndex32 index, GPUBindGroup bindGroup,\n                      optional sequence<GPUBufferDynamicOffset> dynamicOffsets = []);\n\n    undefined setBindGroup(GPUIndex32 index, GPUBindGroup bindGroup,\n                      Uint32Array dynamicOffsetsData,\n                      GPUSize64 dynamicOffsetsDataStart,\n                      GPUSize32 dynamicOffsetsDataLength);\n};",
         "type": "interface mixin",
-        "name": "GPUProgrammablePassEncoder",
+        "name": "GPUBindingCommandsMixin",
         "inheritance": null,
         "members": [
           {
@@ -8036,507 +8040,6 @@
               "value": []
             },
             "required": false
-          }
-        ],
-        "extAttrs": [],
-        "partial": false
-      },
-      "GPURenderEncoderBase": {
-        "fragment": "interface mixin GPURenderEncoderBase {\n    undefined setPipeline(GPURenderPipeline pipeline);\n\n    undefined setIndexBuffer(GPUBuffer buffer, GPUIndexFormat indexFormat, optional GPUSize64 offset = 0, optional GPUSize64 size);\n    undefined setVertexBuffer(GPUIndex32 slot, GPUBuffer buffer, optional GPUSize64 offset = 0, optional GPUSize64 size);\n\n    undefined draw(GPUSize32 vertexCount, optional GPUSize32 instanceCount = 1,\n              optional GPUSize32 firstVertex = 0, optional GPUSize32 firstInstance = 0);\n    undefined drawIndexed(GPUSize32 indexCount, optional GPUSize32 instanceCount = 1,\n                     optional GPUSize32 firstIndex = 0,\n                     optional GPUSignedOffset32 baseVertex = 0,\n                     optional GPUSize32 firstInstance = 0);\n\n    undefined drawIndirect(GPUBuffer indirectBuffer, GPUSize64 indirectOffset);\n    undefined drawIndexedIndirect(GPUBuffer indirectBuffer, GPUSize64 indirectOffset);\n};",
-        "type": "interface mixin",
-        "name": "GPURenderEncoderBase",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "operation",
-            "name": "setPipeline",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "undefined"
-            },
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "pipeline",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "GPURenderPipeline"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              }
-            ],
-            "extAttrs": [],
-            "special": ""
-          },
-          {
-            "type": "operation",
-            "name": "setIndexBuffer",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "undefined"
-            },
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "buffer",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "GPUBuffer"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              },
-              {
-                "type": "argument",
-                "name": "indexFormat",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "GPUIndexFormat"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              },
-              {
-                "type": "argument",
-                "name": "offset",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "GPUSize64"
-                },
-                "default": {
-                  "type": "number",
-                  "value": "0"
-                },
-                "optional": true,
-                "variadic": false
-              },
-              {
-                "type": "argument",
-                "name": "size",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "GPUSize64"
-                },
-                "default": null,
-                "optional": true,
-                "variadic": false
-              }
-            ],
-            "extAttrs": [],
-            "special": ""
-          },
-          {
-            "type": "operation",
-            "name": "setVertexBuffer",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "undefined"
-            },
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "slot",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "GPUIndex32"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              },
-              {
-                "type": "argument",
-                "name": "buffer",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "GPUBuffer"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              },
-              {
-                "type": "argument",
-                "name": "offset",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "GPUSize64"
-                },
-                "default": {
-                  "type": "number",
-                  "value": "0"
-                },
-                "optional": true,
-                "variadic": false
-              },
-              {
-                "type": "argument",
-                "name": "size",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "GPUSize64"
-                },
-                "default": null,
-                "optional": true,
-                "variadic": false
-              }
-            ],
-            "extAttrs": [],
-            "special": ""
-          },
-          {
-            "type": "operation",
-            "name": "draw",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "undefined"
-            },
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "vertexCount",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "GPUSize32"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              },
-              {
-                "type": "argument",
-                "name": "instanceCount",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "GPUSize32"
-                },
-                "default": {
-                  "type": "number",
-                  "value": "1"
-                },
-                "optional": true,
-                "variadic": false
-              },
-              {
-                "type": "argument",
-                "name": "firstVertex",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "GPUSize32"
-                },
-                "default": {
-                  "type": "number",
-                  "value": "0"
-                },
-                "optional": true,
-                "variadic": false
-              },
-              {
-                "type": "argument",
-                "name": "firstInstance",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "GPUSize32"
-                },
-                "default": {
-                  "type": "number",
-                  "value": "0"
-                },
-                "optional": true,
-                "variadic": false
-              }
-            ],
-            "extAttrs": [],
-            "special": ""
-          },
-          {
-            "type": "operation",
-            "name": "drawIndexed",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "undefined"
-            },
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "indexCount",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "GPUSize32"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              },
-              {
-                "type": "argument",
-                "name": "instanceCount",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "GPUSize32"
-                },
-                "default": {
-                  "type": "number",
-                  "value": "1"
-                },
-                "optional": true,
-                "variadic": false
-              },
-              {
-                "type": "argument",
-                "name": "firstIndex",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "GPUSize32"
-                },
-                "default": {
-                  "type": "number",
-                  "value": "0"
-                },
-                "optional": true,
-                "variadic": false
-              },
-              {
-                "type": "argument",
-                "name": "baseVertex",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "GPUSignedOffset32"
-                },
-                "default": {
-                  "type": "number",
-                  "value": "0"
-                },
-                "optional": true,
-                "variadic": false
-              },
-              {
-                "type": "argument",
-                "name": "firstInstance",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "GPUSize32"
-                },
-                "default": {
-                  "type": "number",
-                  "value": "0"
-                },
-                "optional": true,
-                "variadic": false
-              }
-            ],
-            "extAttrs": [],
-            "special": ""
-          },
-          {
-            "type": "operation",
-            "name": "drawIndirect",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "undefined"
-            },
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "indirectBuffer",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "GPUBuffer"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              },
-              {
-                "type": "argument",
-                "name": "indirectOffset",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "GPUSize64"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              }
-            ],
-            "extAttrs": [],
-            "special": ""
-          },
-          {
-            "type": "operation",
-            "name": "drawIndexedIndirect",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "undefined"
-            },
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "indirectBuffer",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "GPUBuffer"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              },
-              {
-                "type": "argument",
-                "name": "indirectOffset",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "GPUSize64"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              }
-            ],
-            "extAttrs": [],
-            "special": ""
           }
         ],
         "extAttrs": [],
@@ -9446,6 +8949,507 @@
               "value": "1"
             },
             "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "GPURenderCommandsMixin": {
+        "fragment": "interface mixin GPURenderCommandsMixin {\n    undefined setPipeline(GPURenderPipeline pipeline);\n\n    undefined setIndexBuffer(GPUBuffer buffer, GPUIndexFormat indexFormat, optional GPUSize64 offset = 0, optional GPUSize64 size);\n    undefined setVertexBuffer(GPUIndex32 slot, GPUBuffer buffer, optional GPUSize64 offset = 0, optional GPUSize64 size);\n\n    undefined draw(GPUSize32 vertexCount, optional GPUSize32 instanceCount = 1,\n              optional GPUSize32 firstVertex = 0, optional GPUSize32 firstInstance = 0);\n    undefined drawIndexed(GPUSize32 indexCount, optional GPUSize32 instanceCount = 1,\n                     optional GPUSize32 firstIndex = 0,\n                     optional GPUSignedOffset32 baseVertex = 0,\n                     optional GPUSize32 firstInstance = 0);\n\n    undefined drawIndirect(GPUBuffer indirectBuffer, GPUSize64 indirectOffset);\n    undefined drawIndexedIndirect(GPUBuffer indirectBuffer, GPUSize64 indirectOffset);\n};",
+        "type": "interface mixin",
+        "name": "GPURenderCommandsMixin",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "operation",
+            "name": "setPipeline",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "pipeline",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GPURenderPipeline"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "setIndexBuffer",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "buffer",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GPUBuffer"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "indexFormat",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GPUIndexFormat"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "offset",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GPUSize64"
+                },
+                "default": {
+                  "type": "number",
+                  "value": "0"
+                },
+                "optional": true,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "size",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GPUSize64"
+                },
+                "default": null,
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "setVertexBuffer",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "slot",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GPUIndex32"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "buffer",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GPUBuffer"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "offset",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GPUSize64"
+                },
+                "default": {
+                  "type": "number",
+                  "value": "0"
+                },
+                "optional": true,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "size",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GPUSize64"
+                },
+                "default": null,
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "draw",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "vertexCount",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GPUSize32"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "instanceCount",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GPUSize32"
+                },
+                "default": {
+                  "type": "number",
+                  "value": "1"
+                },
+                "optional": true,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "firstVertex",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GPUSize32"
+                },
+                "default": {
+                  "type": "number",
+                  "value": "0"
+                },
+                "optional": true,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "firstInstance",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GPUSize32"
+                },
+                "default": {
+                  "type": "number",
+                  "value": "0"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "drawIndexed",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "indexCount",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GPUSize32"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "instanceCount",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GPUSize32"
+                },
+                "default": {
+                  "type": "number",
+                  "value": "1"
+                },
+                "optional": true,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "firstIndex",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GPUSize32"
+                },
+                "default": {
+                  "type": "number",
+                  "value": "0"
+                },
+                "optional": true,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "baseVertex",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GPUSignedOffset32"
+                },
+                "default": {
+                  "type": "number",
+                  "value": "0"
+                },
+                "optional": true,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "firstInstance",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GPUSize32"
+                },
+                "default": {
+                  "type": "number",
+                  "value": "0"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "drawIndirect",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "indirectBuffer",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GPUBuffer"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "indirectOffset",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GPUSize64"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "drawIndexedIndirect",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "indirectBuffer",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GPUBuffer"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "indirectOffset",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GPUSize64"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
           }
         ],
         "extAttrs": [],
@@ -11685,11 +11689,11 @@
           "includes": "GPUDebugCommandsMixin"
         },
         {
-          "fragment": "GPUComputePassEncoder includes GPUProgrammablePassEncoder;",
+          "fragment": "GPUComputePassEncoder includes GPUBindingCommandsMixin;",
           "type": "includes",
           "extAttrs": [],
           "target": "GPUComputePassEncoder",
-          "includes": "GPUProgrammablePassEncoder"
+          "includes": "GPUBindingCommandsMixin"
         }
       ],
       "GPURenderPassEncoder": [
@@ -11715,18 +11719,18 @@
           "includes": "GPUDebugCommandsMixin"
         },
         {
-          "fragment": "GPURenderPassEncoder includes GPUProgrammablePassEncoder;",
+          "fragment": "GPURenderPassEncoder includes GPUBindingCommandsMixin;",
           "type": "includes",
           "extAttrs": [],
           "target": "GPURenderPassEncoder",
-          "includes": "GPUProgrammablePassEncoder"
+          "includes": "GPUBindingCommandsMixin"
         },
         {
-          "fragment": "GPURenderPassEncoder includes GPURenderEncoderBase;",
+          "fragment": "GPURenderPassEncoder includes GPURenderCommandsMixin;",
           "type": "includes",
           "extAttrs": [],
           "target": "GPURenderPassEncoder",
-          "includes": "GPURenderEncoderBase"
+          "includes": "GPURenderCommandsMixin"
         }
       ],
       "GPURenderBundle": [
@@ -11761,18 +11765,18 @@
           "includes": "GPUDebugCommandsMixin"
         },
         {
-          "fragment": "GPURenderBundleEncoder includes GPUProgrammablePassEncoder;",
+          "fragment": "GPURenderBundleEncoder includes GPUBindingCommandsMixin;",
           "type": "includes",
           "extAttrs": [],
           "target": "GPURenderBundleEncoder",
-          "includes": "GPUProgrammablePassEncoder"
+          "includes": "GPUBindingCommandsMixin"
         },
         {
-          "fragment": "GPURenderBundleEncoder includes GPURenderEncoderBase;",
+          "fragment": "GPURenderBundleEncoder includes GPURenderCommandsMixin;",
           "type": "includes",
           "extAttrs": [],
           "target": "GPURenderBundleEncoder",
-          "includes": "GPURenderEncoderBase"
+          "includes": "GPURenderCommandsMixin"
         }
       ],
       "GPUQueue": [
@@ -12208,7 +12212,7 @@
         "OffscreenCanvas",
         "GPUOrigin2D"
       ],
-      "GPUProgrammablePassEncoder": [
+      "GPUBindingCommandsMixin": [
         "GPUIndex32",
         "GPUBindGroup",
         "GPUBufferDynamicOffset",
@@ -12225,7 +12229,7 @@
         "GPUObjectBase",
         "GPUCommandsMixin",
         "GPUDebugCommandsMixin",
-        "GPUProgrammablePassEncoder"
+        "GPUBindingCommandsMixin"
       ],
       "GPUComputePassTimestampWrite": [
         "GPUQuerySet",
@@ -12236,15 +12240,6 @@
         "GPUObjectDescriptorBase",
         "GPUComputePassTimestampWrites"
       ],
-      "GPURenderEncoderBase": [
-        "GPURenderPipeline",
-        "GPUBuffer",
-        "GPUIndexFormat",
-        "GPUSize64",
-        "GPUIndex32",
-        "GPUSize32",
-        "GPUSignedOffset32"
-      ],
       "GPURenderPassEncoder": [
         "GPUIntegerCoordinate",
         "GPUColor",
@@ -12254,8 +12249,8 @@
         "GPUObjectBase",
         "GPUCommandsMixin",
         "GPUDebugCommandsMixin",
-        "GPUProgrammablePassEncoder",
-        "GPURenderEncoderBase"
+        "GPUBindingCommandsMixin",
+        "GPURenderCommandsMixin"
       ],
       "GPURenderPassTimestampWrite": [
         "GPUQuerySet",
@@ -12286,6 +12281,15 @@
         "GPUTextureFormat",
         "GPUSize32"
       ],
+      "GPURenderCommandsMixin": [
+        "GPURenderPipeline",
+        "GPUBuffer",
+        "GPUIndexFormat",
+        "GPUSize64",
+        "GPUIndex32",
+        "GPUSize32",
+        "GPUSignedOffset32"
+      ],
       "GPURenderBundle": [
         "GPUObjectBase"
       ],
@@ -12298,8 +12302,8 @@
         "GPUObjectBase",
         "GPUCommandsMixin",
         "GPUDebugCommandsMixin",
-        "GPUProgrammablePassEncoder",
-        "GPURenderEncoderBase"
+        "GPUBindingCommandsMixin",
+        "GPURenderCommandsMixin"
       ],
       "GPURenderBundleEncoderDescriptor": [
         "GPURenderPassLayout"

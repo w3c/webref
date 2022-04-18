@@ -1,0 +1,721 @@
+{
+  "spec": {
+    "title": "EPUB Reading Systems 3.3",
+    "url": "https://www.w3.org/TR/epub-rs-33/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://www.w3.org/TR/epub-rs-33/#title",
+      "level": 1,
+      "title": "EPUB Reading Systems 3.3"
+    },
+    {
+      "id": "toc",
+      "href": "https://www.w3.org/TR/epub-rs-33/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "sec-introduction",
+      "href": "https://www.w3.org/TR/epub-rs-33/#sec-introduction",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "sec-intro-overview",
+      "href": "https://www.w3.org/TR/epub-rs-33/#sec-intro-overview",
+      "level": 3,
+      "title": "Overview",
+      "number": "1.1"
+    },
+    {
+      "id": "sec-terminology",
+      "href": "https://www.w3.org/TR/epub-rs-33/#sec-terminology",
+      "level": 3,
+      "title": "Terminology",
+      "number": "1.2"
+    },
+    {
+      "id": "conformance",
+      "href": "https://www.w3.org/TR/epub-rs-33/#conformance",
+      "level": 3,
+      "title": "Conformance",
+      "number": "1.3"
+    },
+    {
+      "id": "sec-intro-relations",
+      "href": "https://www.w3.org/TR/epub-rs-33/#sec-intro-relations",
+      "level": 3,
+      "title": "Relationship to other specifications",
+      "number": "1.4"
+    },
+    {
+      "id": "rel",
+      "href": "https://www.w3.org/TR/epub-rs-33/#rel",
+      "level": 4,
+      "title": "Relationship to HTML",
+      "number": "1.4.1"
+    },
+    {
+      "id": "sec-overview-relations-svg",
+      "href": "https://www.w3.org/TR/epub-rs-33/#sec-overview-relations-svg",
+      "level": 4,
+      "title": "Relationship to SVG",
+      "number": "1.4.2"
+    },
+    {
+      "id": "sec-pub-resources",
+      "href": "https://www.w3.org/TR/epub-rs-33/#sec-pub-resources",
+      "level": 2,
+      "title": "Publication resource processing",
+      "number": "2"
+    },
+    {
+      "id": "sec-epub-rs-conf-cmt",
+      "href": "https://www.w3.org/TR/epub-rs-33/#sec-epub-rs-conf-cmt",
+      "level": 3,
+      "title": "Core Media types",
+      "number": "2.1"
+    },
+    {
+      "id": "sec-epub-rs-conf-foreign-res",
+      "href": "https://www.w3.org/TR/epub-rs-33/#sec-epub-rs-conf-foreign-res",
+      "level": 3,
+      "title": "Foreign resources",
+      "number": "2.2"
+    },
+    {
+      "id": "sec-epub-rs-conf-remote-res",
+      "href": "https://www.w3.org/TR/epub-rs-33/#sec-epub-rs-conf-remote-res",
+      "level": 3,
+      "title": "Resource locations",
+      "number": "2.3"
+    },
+    {
+      "id": "sec-epub-rs-conf-data-urls",
+      "href": "https://www.w3.org/TR/epub-rs-33/#sec-epub-rs-conf-data-urls",
+      "level": 3,
+      "title": "Data URLs",
+      "number": "2.4"
+    },
+    {
+      "id": "sec-epub-rs-conf-xml",
+      "href": "https://www.w3.org/TR/epub-rs-33/#sec-epub-rs-conf-xml",
+      "level": 3,
+      "title": "XML processing",
+      "number": "2.5"
+    },
+    {
+      "id": "sec-epub-rs-i18n",
+      "href": "https://www.w3.org/TR/epub-rs-33/#sec-epub-rs-i18n",
+      "level": 3,
+      "title": "Internationalization",
+      "number": "2.6"
+    },
+    {
+      "id": "sec-epub-rs-network-access",
+      "href": "https://www.w3.org/TR/epub-rs-33/#sec-epub-rs-network-access",
+      "level": 3,
+      "title": "Network access",
+      "number": "2.7"
+    },
+    {
+      "id": "sec-epub-rs-external-links",
+      "href": "https://www.w3.org/TR/epub-rs-33/#sec-epub-rs-external-links",
+      "level": 3,
+      "title": "External links",
+      "number": "2.8"
+    },
+    {
+      "id": "sec-ocf",
+      "href": "https://www.w3.org/TR/epub-rs-33/#sec-ocf",
+      "level": 2,
+      "title": "Open Container Format (OCF) processing",
+      "number": "3"
+    },
+    {
+      "id": "sec-container-abstract",
+      "href": "https://www.w3.org/TR/epub-rs-33/#sec-container-abstract",
+      "level": 3,
+      "title": "OCF abstract container",
+      "number": "3.1"
+    },
+    {
+      "id": "sec-container-iri",
+      "href": "https://www.w3.org/TR/epub-rs-33/#sec-container-iri",
+      "level": 4,
+      "title": "URL of the root directory",
+      "number": "3.1.1"
+    },
+    {
+      "id": "sec-container-filenames",
+      "href": "https://www.w3.org/TR/epub-rs-33/#sec-container-filenames",
+      "level": 4,
+      "title": "File names",
+      "number": "3.1.2"
+    },
+    {
+      "id": "sec-container-metainf",
+      "href": "https://www.w3.org/TR/epub-rs-33/#sec-container-metainf",
+      "level": 4,
+      "title": "META-INF directory",
+      "number": "3.1.3"
+    },
+    {
+      "id": "sec-container-zip",
+      "href": "https://www.w3.org/TR/epub-rs-33/#sec-container-zip",
+      "level": 3,
+      "title": "OCF ZIP container",
+      "number": "3.2"
+    },
+    {
+      "id": "sec-container-fobfus",
+      "href": "https://www.w3.org/TR/epub-rs-33/#sec-container-fobfus",
+      "level": 3,
+      "title": "Font obfuscation",
+      "number": "3.3"
+    },
+    {
+      "id": "sec-package-doc",
+      "href": "https://www.w3.org/TR/epub-rs-33/#sec-package-doc",
+      "level": 2,
+      "title": "Package document processing",
+      "number": "4"
+    },
+    {
+      "id": "sec-pkg-doc-base-dir",
+      "href": "https://www.w3.org/TR/epub-rs-33/#sec-pkg-doc-base-dir",
+      "level": 3,
+      "title": "Base direction",
+      "number": "4.1"
+    },
+    {
+      "id": "sec-pkg-doc-pub-identifiers",
+      "href": "https://www.w3.org/TR/epub-rs-33/#sec-pkg-doc-pub-identifiers",
+      "level": 3,
+      "title": "Unique identifier",
+      "number": "4.2"
+    },
+    {
+      "id": "sec-pkg-doc-metadata",
+      "href": "https://www.w3.org/TR/epub-rs-33/#sec-pkg-doc-metadata",
+      "level": 3,
+      "title": "Metadata",
+      "number": "4.3"
+    },
+    {
+      "id": "sec-pkg-doc-manifest",
+      "href": "https://www.w3.org/TR/epub-rs-33/#sec-pkg-doc-manifest",
+      "level": 3,
+      "title": "Manifest",
+      "number": "4.4"
+    },
+    {
+      "id": "sec-pkg-doc-spine",
+      "href": "https://www.w3.org/TR/epub-rs-33/#sec-pkg-doc-spine",
+      "level": 3,
+      "title": "Spine",
+      "number": "4.5"
+    },
+    {
+      "id": "spine-overrides",
+      "href": "https://www.w3.org/TR/epub-rs-33/#spine-overrides",
+      "level": 4,
+      "title": "Spine overrides",
+      "number": "4.5.1"
+    },
+    {
+      "id": "sec-pkg-doc-collections",
+      "href": "https://www.w3.org/TR/epub-rs-33/#sec-pkg-doc-collections",
+      "level": 3,
+      "title": "Collections",
+      "number": "4.6"
+    },
+    {
+      "id": "sec-contentdocs",
+      "href": "https://www.w3.org/TR/epub-rs-33/#sec-contentdocs",
+      "level": 2,
+      "title": "EPUB content document processing",
+      "number": "5"
+    },
+    {
+      "id": "sec-xhtml",
+      "href": "https://www.w3.org/TR/epub-rs-33/#sec-xhtml",
+      "level": 3,
+      "title": "XHTML content documents",
+      "number": "5.1"
+    },
+    {
+      "id": "sec-xhtml-extensions",
+      "href": "https://www.w3.org/TR/epub-rs-33/#sec-xhtml-extensions",
+      "level": 4,
+      "title": "HTML extensions",
+      "number": "5.1.1"
+    },
+    {
+      "id": "sec-xhtml-aria",
+      "href": "https://www.w3.org/TR/epub-rs-33/#sec-xhtml-aria",
+      "level": 5,
+      "title": "ARIA",
+      "number": "5.1.1.1"
+    },
+    {
+      "id": "sec-xhtml-structural-semantics",
+      "href": "https://www.w3.org/TR/epub-rs-33/#sec-xhtml-structural-semantics",
+      "level": 5,
+      "title": "Structural semantics",
+      "number": "5.1.1.2"
+    },
+    {
+      "id": "sec-xhtml-rdfa",
+      "href": "https://www.w3.org/TR/epub-rs-33/#sec-xhtml-rdfa",
+      "level": 5,
+      "title": "RDFa",
+      "number": "5.1.1.3"
+    },
+    {
+      "id": "sec-xhtml-microdata",
+      "href": "https://www.w3.org/TR/epub-rs-33/#sec-xhtml-microdata",
+      "level": 5,
+      "title": "Microdata",
+      "number": "5.1.1.4"
+    },
+    {
+      "id": "sec-xhtml-content-switch",
+      "href": "https://www.w3.org/TR/epub-rs-33/#sec-xhtml-content-switch",
+      "level": 5,
+      "title": "Content switching (deprecated)",
+      "number": "5.1.1.5"
+    },
+    {
+      "id": "sec-xhtml-epub-trigger",
+      "href": "https://www.w3.org/TR/epub-rs-33/#sec-xhtml-epub-trigger",
+      "level": 5,
+      "title": "The epub:trigger element (deprecated)",
+      "number": "5.1.1.6"
+    },
+    {
+      "id": "sec-xhtml-custom-attributes",
+      "href": "https://www.w3.org/TR/epub-rs-33/#sec-xhtml-custom-attributes",
+      "level": 5,
+      "title": "Custom attributes",
+      "number": "5.1.1.7"
+    },
+    {
+      "id": "sec-xhtml-deviations",
+      "href": "https://www.w3.org/TR/epub-rs-33/#sec-xhtml-deviations",
+      "level": 4,
+      "title": "HTML deviations and constraints",
+      "number": "5.1.2"
+    },
+    {
+      "id": "sec-xhtml-mathml",
+      "href": "https://www.w3.org/TR/epub-rs-33/#sec-xhtml-mathml",
+      "level": 5,
+      "title": "MathML",
+      "number": "5.1.2.1"
+    },
+    {
+      "id": "sec-xhtml-svg",
+      "href": "https://www.w3.org/TR/epub-rs-33/#sec-xhtml-svg",
+      "level": 5,
+      "title": "Embedded SVG",
+      "number": "5.1.2.2"
+    },
+    {
+      "id": "sec-xhtml-svg-css",
+      "href": "https://www.w3.org/TR/epub-rs-33/#sec-xhtml-svg-css",
+      "level": 6,
+      "title": "Embedded SVG and CSS",
+      "number": "5.1.2.2.1"
+    },
+    {
+      "id": "sec-xhtml-forms",
+      "href": "https://www.w3.org/TR/epub-rs-33/#sec-xhtml-forms",
+      "level": 5,
+      "title": "Form submission",
+      "number": "5.1.2.3"
+    },
+    {
+      "id": "sec-svg",
+      "href": "https://www.w3.org/TR/epub-rs-33/#sec-svg",
+      "level": 3,
+      "title": "SVG content documents",
+      "number": "5.2"
+    },
+    {
+      "id": "sec-css",
+      "href": "https://www.w3.org/TR/epub-rs-33/#sec-css",
+      "level": 3,
+      "title": "Cascading Style Sheets (CSS)",
+      "number": "5.3"
+    },
+    {
+      "id": "sec-scripted-content",
+      "href": "https://www.w3.org/TR/epub-rs-33/#sec-scripted-content",
+      "level": 3,
+      "title": "Scripting",
+      "number": "5.4"
+    },
+    {
+      "id": "sec-local-storage",
+      "href": "https://www.w3.org/TR/epub-rs-33/#sec-local-storage",
+      "level": 4,
+      "title": "Local storage",
+      "number": "5.4.1"
+    },
+    {
+      "id": "sec-scripted-content-events",
+      "href": "https://www.w3.org/TR/epub-rs-33/#sec-scripted-content-events",
+      "level": 4,
+      "title": "Event model",
+      "number": "5.4.2"
+    },
+    {
+      "id": "sec-scripted-content-security",
+      "href": "https://www.w3.org/TR/epub-rs-33/#sec-scripted-content-security",
+      "level": 4,
+      "title": "Security considerations",
+      "number": "5.4.3"
+    },
+    {
+      "id": "sec-nav",
+      "href": "https://www.w3.org/TR/epub-rs-33/#sec-nav",
+      "level": 2,
+      "title": "Navigation document processing",
+      "number": "6"
+    },
+    {
+      "id": "sec-rendering-control",
+      "href": "https://www.w3.org/TR/epub-rs-33/#sec-rendering-control",
+      "level": 2,
+      "title": "Layout rendering control processing",
+      "number": "7"
+    },
+    {
+      "id": "sec-fixed-layouts",
+      "href": "https://www.w3.org/TR/epub-rs-33/#sec-fixed-layouts",
+      "level": 3,
+      "title": "Fixed-layout documents",
+      "number": "7.1"
+    },
+    {
+      "id": "sec-fxl-props",
+      "href": "https://www.w3.org/TR/epub-rs-33/#sec-fxl-props",
+      "level": 4,
+      "title": "Fixed-layout properties",
+      "number": "7.1.1"
+    },
+    {
+      "id": "layout",
+      "href": "https://www.w3.org/TR/epub-rs-33/#layout",
+      "level": 5,
+      "title": "The rendition:layout property",
+      "number": "7.1.1.1"
+    },
+    {
+      "id": "orientation",
+      "href": "https://www.w3.org/TR/epub-rs-33/#orientation",
+      "level": 5,
+      "title": "The rendition:orientation property",
+      "number": "7.1.1.2"
+    },
+    {
+      "id": "spread",
+      "href": "https://www.w3.org/TR/epub-rs-33/#spread",
+      "level": 5,
+      "title": "The rendition:spread property",
+      "number": "7.1.1.3"
+    },
+    {
+      "id": "page-spread",
+      "href": "https://www.w3.org/TR/epub-rs-33/#page-spread",
+      "level": 5,
+      "title": "The rendition:page-spread-* properties",
+      "number": "7.1.1.4"
+    },
+    {
+      "id": "sec-fxl-dimensions",
+      "href": "https://www.w3.org/TR/epub-rs-33/#sec-fxl-dimensions",
+      "level": 4,
+      "title": "Initial containing block dimensions",
+      "number": "7.1.2"
+    },
+    {
+      "id": "sec-fxl-viewport",
+      "href": "https://www.w3.org/TR/epub-rs-33/#sec-fxl-viewport",
+      "level": 4,
+      "title": "Viewport rendering",
+      "number": "7.1.3"
+    },
+    {
+      "id": "sec-reflowable-layouts",
+      "href": "https://www.w3.org/TR/epub-rs-33/#sec-reflowable-layouts",
+      "level": 3,
+      "title": "Reflowable layouts",
+      "number": "7.2"
+    },
+    {
+      "id": "flow",
+      "href": "https://www.w3.org/TR/epub-rs-33/#flow",
+      "level": 4,
+      "title": "The rendition:flow property",
+      "number": "7.2.1"
+    },
+    {
+      "id": "align-x-center",
+      "href": "https://www.w3.org/TR/epub-rs-33/#align-x-center",
+      "level": 4,
+      "title": "The rendition:align-x-center property",
+      "number": "7.2.2"
+    },
+    {
+      "id": "sec-custom-properties",
+      "href": "https://www.w3.org/TR/epub-rs-33/#sec-custom-properties",
+      "level": 3,
+      "title": "Custom properties",
+      "number": "7.3"
+    },
+    {
+      "id": "sec-media-overlays",
+      "href": "https://www.w3.org/TR/epub-rs-33/#sec-media-overlays",
+      "level": 2,
+      "title": "Media overlays processing",
+      "number": "8"
+    },
+    {
+      "id": "sec-behaviors-loading",
+      "href": "https://www.w3.org/TR/epub-rs-33/#sec-behaviors-loading",
+      "level": 3,
+      "title": "Loading the media overlay",
+      "number": "8.1"
+    },
+    {
+      "id": "sec-behaviors-playback",
+      "href": "https://www.w3.org/TR/epub-rs-33/#sec-behaviors-playback",
+      "level": 3,
+      "title": "Basic playback",
+      "number": "8.2"
+    },
+    {
+      "id": "sec-rsconf-timing-synch",
+      "href": "https://www.w3.org/TR/epub-rs-33/#sec-rsconf-timing-synch",
+      "level": 4,
+      "title": "Timing and synchronization",
+      "number": "8.2.1"
+    },
+    {
+      "id": "sec-rsconf-rendering-audio",
+      "href": "https://www.w3.org/TR/epub-rs-33/#sec-rsconf-rendering-audio",
+      "level": 4,
+      "title": "Rendering audio",
+      "number": "8.2.2"
+    },
+    {
+      "id": "sec-rsconf-rendering-text",
+      "href": "https://www.w3.org/TR/epub-rs-33/#sec-rsconf-rendering-text",
+      "level": 4,
+      "title": "Rendering EPUB content document elements",
+      "number": "8.2.3"
+    },
+    {
+      "id": "sec-behaviors-interaction",
+      "href": "https://www.w3.org/TR/epub-rs-33/#sec-behaviors-interaction",
+      "level": 3,
+      "title": "Interacting with the EPUB content document",
+      "number": "8.3"
+    },
+    {
+      "id": "sec-rsconf-navigation",
+      "href": "https://www.w3.org/TR/epub-rs-33/#sec-rsconf-navigation",
+      "level": 4,
+      "title": "Navigation",
+      "number": "8.3.1"
+    },
+    {
+      "id": "sec-embedded-media",
+      "href": "https://www.w3.org/TR/epub-rs-33/#sec-embedded-media",
+      "level": 4,
+      "title": "Embedded audio and video",
+      "number": "8.3.2"
+    },
+    {
+      "id": "sec-text-to-speech",
+      "href": "https://www.w3.org/TR/epub-rs-33/#sec-text-to-speech",
+      "level": 4,
+      "title": "Text-to-speech",
+      "number": "8.3.3"
+    },
+    {
+      "id": "sec-behaviors-skip-escape",
+      "href": "https://www.w3.org/TR/epub-rs-33/#sec-behaviors-skip-escape",
+      "level": 3,
+      "title": "Skippability and escapability",
+      "number": "8.4"
+    },
+    {
+      "id": "sec-skippability",
+      "href": "https://www.w3.org/TR/epub-rs-33/#sec-skippability",
+      "level": 4,
+      "title": "Skippability",
+      "number": "8.4.1"
+    },
+    {
+      "id": "sec-escapability",
+      "href": "https://www.w3.org/TR/epub-rs-33/#sec-escapability",
+      "level": 4,
+      "title": "Escapability",
+      "number": "8.4.2"
+    },
+    {
+      "id": "sec-structural-semantics",
+      "href": "https://www.w3.org/TR/epub-rs-33/#sec-structural-semantics",
+      "level": 2,
+      "title": "Processing structural semantics",
+      "number": "9"
+    },
+    {
+      "id": "sec-vocab-assoc",
+      "href": "https://www.w3.org/TR/epub-rs-33/#sec-vocab-assoc",
+      "level": 2,
+      "title": "10. Vocabulary association mechanisms"
+    },
+    {
+      "id": "sec-epub-rs-conf-backward",
+      "href": "https://www.w3.org/TR/epub-rs-33/#sec-epub-rs-conf-backward",
+      "level": 2,
+      "title": "11. Backward compatibility"
+    },
+    {
+      "id": "sec-epub-rs-conf-forward",
+      "href": "https://www.w3.org/TR/epub-rs-33/#sec-epub-rs-conf-forward",
+      "level": 2,
+      "title": "12. Forward compatibility"
+    },
+    {
+      "id": "sec-accessibility",
+      "href": "https://www.w3.org/TR/epub-rs-33/#sec-accessibility",
+      "level": 2,
+      "title": "13. Accessibility"
+    },
+    {
+      "id": "sec-security-privacy",
+      "href": "https://www.w3.org/TR/epub-rs-33/#sec-security-privacy",
+      "level": 2,
+      "title": "14. Security and privacy"
+    },
+    {
+      "id": "security-privacy-overview",
+      "href": "https://www.w3.org/TR/epub-rs-33/#security-privacy-overview",
+      "level": 3,
+      "title": "Overview",
+      "number": "14.1"
+    },
+    {
+      "id": "epub-threat-model",
+      "href": "https://www.w3.org/TR/epub-rs-33/#epub-threat-model",
+      "level": 3,
+      "title": "Threat model",
+      "number": "14.2"
+    },
+    {
+      "id": "security-privacy-recommendations",
+      "href": "https://www.w3.org/TR/epub-rs-33/#security-privacy-recommendations",
+      "level": 3,
+      "title": "Recommendations",
+      "number": "14.3"
+    },
+    {
+      "id": "app-epubReadingSystem",
+      "href": "https://www.w3.org/TR/epub-rs-33/#app-epubReadingSystem",
+      "level": 2,
+      "title": "15. epubReadingSystem object"
+    },
+    {
+      "id": "app-ers-idl",
+      "href": "https://www.w3.org/TR/epub-rs-33/#app-ers-idl",
+      "level": 3,
+      "title": "Interface definition",
+      "number": "15.1"
+    },
+    {
+      "id": "app-ers-desc",
+      "href": "https://www.w3.org/TR/epub-rs-33/#app-ers-desc",
+      "level": 3,
+      "title": "Description",
+      "number": "15.2"
+    },
+    {
+      "id": "app-ers-properties",
+      "href": "https://www.w3.org/TR/epub-rs-33/#app-ers-properties",
+      "level": 3,
+      "title": "Properties",
+      "number": "15.3"
+    },
+    {
+      "id": "app-ers-methods",
+      "href": "https://www.w3.org/TR/epub-rs-33/#app-ers-methods",
+      "level": 3,
+      "title": "Methods",
+      "number": "15.4"
+    },
+    {
+      "id": "app-ers-hasFeature",
+      "href": "https://www.w3.org/TR/epub-rs-33/#app-ers-hasFeature",
+      "level": 4,
+      "title": "hasFeature",
+      "number": "15.4.1"
+    },
+    {
+      "id": "app-ers-hasFeature-desc",
+      "href": "https://www.w3.org/TR/epub-rs-33/#app-ers-hasFeature-desc",
+      "level": 5,
+      "title": "Description",
+      "number": "15.4.1.1"
+    },
+    {
+      "id": "app-ers-hasFeature-features",
+      "href": "https://www.w3.org/TR/epub-rs-33/#app-ers-hasFeature-features",
+      "level": 5,
+      "title": "Features",
+      "number": "15.4.1.2"
+    },
+    {
+      "id": "change-log",
+      "href": "https://www.w3.org/TR/epub-rs-33/#change-log",
+      "level": 2,
+      "title": "Change log",
+      "number": "A"
+    },
+    {
+      "id": "ack",
+      "href": "https://www.w3.org/TR/epub-rs-33/#ack",
+      "level": 2,
+      "title": "Acknowledgements",
+      "number": "B"
+    },
+    {
+      "id": "references",
+      "href": "https://www.w3.org/TR/epub-rs-33/#references",
+      "level": 2,
+      "title": "References",
+      "number": "C"
+    },
+    {
+      "id": "normative-references",
+      "href": "https://www.w3.org/TR/epub-rs-33/#normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "number": "C.1"
+    },
+    {
+      "id": "informative-references",
+      "href": "https://www.w3.org/TR/epub-rs-33/#informative-references",
+      "level": 3,
+      "title": "Informative references",
+      "number": "C.2"
+    }
+  ]
+}

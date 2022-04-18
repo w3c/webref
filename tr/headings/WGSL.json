@@ -169,20 +169,6 @@
       "number": "4.2"
     },
     {
-      "id": "constexpr-expr",
-      "href": "https://www.w3.org/TR/WGSL/#constexpr-expr",
-      "level": 4,
-      "title": "Constexpr Expressions",
-      "number": "4.2.1"
-    },
-    {
-      "id": "constexpr-examples",
-      "href": "https://www.w3.org/TR/WGSL/#constexpr-examples",
-      "level": 4,
-      "title": "Constexpr Examples",
-      "number": "4.2.2"
-    },
-    {
       "id": "plain-types-section",
       "href": "https://www.w3.org/TR/WGSL/#plain-types-section",
       "level": 3,
@@ -512,6 +498,13 @@
       "number": "5.1.2"
     },
     {
+      "id": "creation-time-consts",
+      "href": "https://www.w3.org/TR/WGSL/#creation-time-consts",
+      "level": 4,
+      "title": "Creation-time Constants",
+      "number": "5.1.3"
+    },
+    {
       "id": "var-decls",
       "href": "https://www.w3.org/TR/WGSL/#var-decls",
       "level": 3,
@@ -554,186 +547,193 @@
       "number": "6"
     },
     {
+      "id": "creation-time-expr",
+      "href": "https://www.w3.org/TR/WGSL/#creation-time-expr",
+      "level": 3,
+      "title": "Creation-time Expressions",
+      "number": "6.1"
+    },
+    {
       "id": "literal-expressions",
       "href": "https://www.w3.org/TR/WGSL/#literal-expressions",
       "level": 3,
       "title": "Literal Value Expressions",
-      "number": "6.1"
+      "number": "6.2"
     },
     {
       "id": "parenthesized-expressions",
       "href": "https://www.w3.org/TR/WGSL/#parenthesized-expressions",
       "level": 3,
       "title": "Parenthesized Expressions",
-      "number": "6.2"
+      "number": "6.3"
     },
     {
       "id": "type-constructor-expr",
       "href": "https://www.w3.org/TR/WGSL/#type-constructor-expr",
       "level": 3,
       "title": "Type Constructor Expressions",
-      "number": "6.3"
+      "number": "6.4"
     },
     {
       "id": "construction-from-components",
       "href": "https://www.w3.org/TR/WGSL/#construction-from-components",
       "level": 4,
       "title": "Construction From Components",
-      "number": "6.3.1"
+      "number": "6.4.1"
     },
     {
       "id": "zero-value-expr",
       "href": "https://www.w3.org/TR/WGSL/#zero-value-expr",
       "level": 4,
       "title": "Zero Value Expressions",
-      "number": "6.3.2"
+      "number": "6.4.2"
     },
     {
       "id": "conversion-expr",
       "href": "https://www.w3.org/TR/WGSL/#conversion-expr",
       "level": 4,
       "title": "Conversion Expressions",
-      "number": "6.3.3"
+      "number": "6.4.3"
     },
     {
       "id": "bitcast-expr",
       "href": "https://www.w3.org/TR/WGSL/#bitcast-expr",
       "level": 3,
       "title": "Reinterpretation of Representation Expressions",
-      "number": "6.4"
+      "number": "6.5"
     },
     {
       "id": "composite-value-decomposition-expr",
       "href": "https://www.w3.org/TR/WGSL/#composite-value-decomposition-expr",
       "level": 3,
       "title": "Composite Value Decomposition Expressions",
-      "number": "6.5"
+      "number": "6.6"
     },
     {
       "id": "vector-access-expr",
       "href": "https://www.w3.org/TR/WGSL/#vector-access-expr",
       "level": 4,
       "title": "Vector Access Expression",
-      "number": "6.5.1"
+      "number": "6.6.1"
     },
     {
       "id": "vector-single-component",
       "href": "https://www.w3.org/TR/WGSL/#vector-single-component",
       "level": 5,
       "title": "Vector Single Component Selection",
-      "number": "6.5.1.1"
+      "number": "6.6.1.1"
     },
     {
       "id": "vector-multi-component",
       "href": "https://www.w3.org/TR/WGSL/#vector-multi-component",
       "level": 5,
       "title": "Vector Multiple Component Selection",
-      "number": "6.5.1.2"
+      "number": "6.6.1.2"
     },
     {
       "id": "component-reference-from-vector-reference",
       "href": "https://www.w3.org/TR/WGSL/#component-reference-from-vector-reference",
       "level": 5,
       "title": "Component Reference from Vector Reference",
-      "number": "6.5.1.3"
+      "number": "6.6.1.3"
     },
     {
       "id": "matrix-access-expr",
       "href": "https://www.w3.org/TR/WGSL/#matrix-access-expr",
       "level": 4,
       "title": "Matrix Access Expression",
-      "number": "6.5.2"
+      "number": "6.6.2"
     },
     {
       "id": "array-access-expr",
       "href": "https://www.w3.org/TR/WGSL/#array-access-expr",
       "level": 4,
       "title": "Array Access Expression",
-      "number": "6.5.3"
+      "number": "6.6.3"
     },
     {
       "id": "struct-access-expr",
       "href": "https://www.w3.org/TR/WGSL/#struct-access-expr",
       "level": 4,
       "title": "Structure Access Expression",
-      "number": "6.5.4"
+      "number": "6.6.4"
     },
     {
       "id": "logical-expr",
       "href": "https://www.w3.org/TR/WGSL/#logical-expr",
       "level": 3,
       "title": "Logical Expressions",
-      "number": "6.6"
+      "number": "6.7"
     },
     {
       "id": "arithmetic-expr",
       "href": "https://www.w3.org/TR/WGSL/#arithmetic-expr",
       "level": 3,
       "title": "Arithmetic Expressions",
-      "number": "6.7"
+      "number": "6.8"
     },
     {
       "id": "comparison-expr",
       "href": "https://www.w3.org/TR/WGSL/#comparison-expr",
       "level": 3,
       "title": "Comparison Expressions",
-      "number": "6.8"
+      "number": "6.9"
     },
     {
       "id": "bit-expr",
       "href": "https://www.w3.org/TR/WGSL/#bit-expr",
       "level": 3,
       "title": "Bit Expressions",
-      "number": "6.9"
+      "number": "6.10"
     },
     {
       "id": "function-call-expr",
       "href": "https://www.w3.org/TR/WGSL/#function-call-expr",
       "level": 3,
       "title": "Function Call Expression",
-      "number": "6.10"
+      "number": "6.11"
     },
     {
       "id": "var-identifier-expr",
       "href": "https://www.w3.org/TR/WGSL/#var-identifier-expr",
       "level": 3,
       "title": "Variable Identifier Expression",
-      "number": "6.11"
+      "number": "6.12"
     },
     {
       "id": "formal-parameter-expr",
       "href": "https://www.w3.org/TR/WGSL/#formal-parameter-expr",
       "level": 3,
       "title": "Formal Parameter Expression",
-      "number": "6.12"
+      "number": "6.13"
     },
     {
       "id": "address-of-expr",
       "href": "https://www.w3.org/TR/WGSL/#address-of-expr",
       "level": 3,
       "title": "Address-Of Expression",
-      "number": "6.13"
+      "number": "6.14"
     },
     {
       "id": "indirection-expr",
       "href": "https://www.w3.org/TR/WGSL/#indirection-expr",
       "level": 3,
       "title": "Indirection Expression",
-      "number": "6.14"
+      "number": "6.15"
     },
     {
       "id": "constant-identifier-expr",
       "href": "https://www.w3.org/TR/WGSL/#constant-identifier-expr",
       "level": 3,
       "title": "Constant Identifier Expression",
-      "number": "6.15"
+      "number": "6.16"
     },
     {
       "id": "expression-grammar",
       "href": "https://www.w3.org/TR/WGSL/#expression-grammar",
       "level": 3,
       "title": "Expression Grammar Summary",
-      "number": "6.16"
+      "number": "6.17"
     },
     {
       "id": "statements",
@@ -932,11 +932,25 @@
       "number": "8.2"
     },
     {
+      "id": "creation-time-funcs",
+      "href": "https://www.w3.org/TR/WGSL/#creation-time-funcs",
+      "level": 3,
+      "title": "Creation-time Functions",
+      "number": "8.3"
+    },
+    {
       "id": "function-restriction",
       "href": "https://www.w3.org/TR/WGSL/#function-restriction",
       "level": 3,
-      "title": "Restrictions on functions",
-      "number": "8.3"
+      "title": "Restrictions on Functions",
+      "number": "8.4"
+    },
+    {
+      "id": "function-aliasing",
+      "href": "https://www.w3.org/TR/WGSL/#function-aliasing",
+      "level": 4,
+      "title": "Aliasing Memory Views",
+      "number": "8.4.1"
     },
     {
       "id": "entry-points",
@@ -1034,6 +1048,13 @@
       "level": 3,
       "title": "Enable Directive",
       "number": "10.1"
+    },
+    {
+      "id": "extension-list",
+      "href": "https://www.w3.org/TR/WGSL/#extension-list",
+      "level": 3,
+      "title": "Extensions list",
+      "number": "10.2"
     },
     {
       "id": "wgsl-program",

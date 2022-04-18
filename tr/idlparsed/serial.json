@@ -244,7 +244,7 @@
         "partial": false
       },
       "SerialPort": {
-        "fragment": "[Exposed=(DedicatedWorker,Window), SecureContext]\ninterface SerialPort : EventTarget {\n  attribute EventHandler onconnect;\n  attribute EventHandler ondisconnect;\n  readonly attribute ReadableStream readable;\n  readonly attribute WritableStream writable;\n\n  SerialPortInfo getInfo();\n\n  Promise<undefined> open(SerialOptions options);\n  Promise<undefined> setSignals(optional SerialOutputSignals signals = {});\n  Promise<SerialInputSignals> getSignals();\n  Promise<undefined> close();\n};",
+        "fragment": "[Exposed=(DedicatedWorker,Window), SecureContext]\ninterface SerialPort : EventTarget {\n  attribute EventHandler onconnect;\n  attribute EventHandler ondisconnect;\n  readonly attribute ReadableStream readable;\n  readonly attribute WritableStream writable;\n\n  SerialPortInfo getInfo();\n\n  Promise<undefined> open(SerialOptions options);\n  Promise<undefined> setSignals(optional SerialOutputSignals signals = {});\n  Promise<SerialInputSignals> getSignals();\n  Promise<undefined> close();\n  Promise<undefined> forget();\n};",
         "type": "interface",
         "name": "SerialPort",
         "inheritance": "EventTarget",
@@ -435,6 +435,30 @@
           {
             "type": "operation",
             "name": "close",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "undefined"
+                }
+              ]
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "forget",
             "idlType": {
               "type": "return-type",
               "extAttrs": [],

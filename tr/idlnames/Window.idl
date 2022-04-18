@@ -130,6 +130,11 @@ partial interface Window {
   attribute EventHandler onbeforeinstallprompt;
 };
 
+// Source: Manifest Incubations (https://wicg.github.io/manifest-incubations/)
+partial interface Window {
+  readonly attribute LaunchQueue launchQueue;
+};
+
 // Source: Navigation API (https://wicg.github.io/navigation-api/)
 partial interface Window {
   [Replaceable] readonly attribute Navigation navigation;

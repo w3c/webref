@@ -53,7 +53,6 @@
       "allowed-to-navigate",
       "exceptions-enabled",
       "joint-session-history",
-      "enqueue-the-following-steps",
       "event-handlers",
       "event-handler-event-type",
       "event-handler-idl-attributes",
@@ -90,7 +89,6 @@
       "plan-to-navigate",
       "navigation-navigationtype",
       "submit-body",
-      "traverse-the-history-by-a-delta",
       "following-hyperlinks-2",
       "providing-users-with-a-means-to-follow-hyperlinks-created-using-the-link-element",
       "the-input-element",
@@ -161,7 +159,6 @@
       "document",
       "event",
       "dictdef-eventinit",
-      "eventdef-abortsignal-abort",
       "canceled-flag",
       "abortsignal-signal-abort",
       "abortsignal",
@@ -174,7 +171,8 @@
       "concept-event-dispatch",
       "abortsignal-aborted",
       "document-element",
-      "eventtarget-activation-behavior"
+      "eventtarget-activation-behavior",
+      "eventdef-abortsignal-abort"
     ],
     "https://infra.spec.whatwg.org/": [
       "list",
@@ -212,14 +210,19 @@
       "tn-session-history-traversal-queue",
       "navigate-fragid",
       "nav-traversable",
+      "snapshotting-target-snapshot-params",
+      "tn-append-session-history-traversal-steps",
       "getting-session-history-entries",
       "nav-active-history-entry",
-      "she-step",
-      "tn-current-session-history-step",
-      "getting-all-history-steps",
       "apply-the-history-step",
+      "she-step",
+      "apply-history-step-check",
+      "apply-history-step-start-time",
+      "apply-history-step-source-snapshot",
+      "apply-history-step-initiator",
       "uhus-serializeddata",
       "uhus-historyhandling",
+      "top-level-traversable",
       "update-document-for-history-step-application"
     ],
     "https://fetch.spec.whatwg.org/": [
@@ -238,11 +241,15 @@
       "concept-url-fragment"
     ],
     "https://whatpr.org/html/6315/browsers.html": [
-      "bc-navigable",
+      "node-navigable",
       "window-navigable",
       "url-and-history-update-steps",
+      "traverse-the-history-by-a-delta",
       "shared-history-push/replace-state-steps",
       "nav-window"
+    ],
+    "https://www.w3.org/TR/hr-time-3/": [
+      "dfn-unsafe-shared-current-time"
     ],
     "https://xhr.spec.whatwg.org/": [
       "formdata"
@@ -267,6 +274,7 @@
     "https://github.com/whatwg/html/issues/5767": [],
     "https://github.com/privacycg/storage-partitioning": [],
     "https://github.com/WICG/navigation-api/issues/32": [],
+    "https://w3c.github.io/hr-time/": [],
     "https://w3c.github.io/webappsec-csp/": [],
     "https://drafts.csswg.org/css-scroll-anchoring/": []
   }
