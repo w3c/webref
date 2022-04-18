@@ -893,7 +893,7 @@
         "partial": false
       },
       "ReadableStreamDefaultReader": {
-        "fragment": "[Exposed=*]\ninterface ReadableStreamDefaultReader {\n  constructor(ReadableStream stream);\n\n  Promise<ReadableStreamDefaultReadResult> read();\n  undefined releaseLock();\n};",
+        "fragment": "[Exposed=*]\ninterface ReadableStreamDefaultReader {\n  constructor(ReadableStream stream);\n\n  Promise<ReadableStreamReadResult> read();\n  undefined releaseLock();\n};",
         "type": "interface",
         "name": "ReadableStreamDefaultReader",
         "inheritance": null,
@@ -936,7 +936,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "ReadableStreamDefaultReadResult"
+                  "idlType": "ReadableStreamReadResult"
                 }
               ]
             },
@@ -973,10 +973,10 @@
         ],
         "partial": false
       },
-      "ReadableStreamDefaultReadResult": {
-        "fragment": "dictionary ReadableStreamDefaultReadResult {\n  any value;\n  boolean done;\n};",
+      "ReadableStreamReadResult": {
+        "fragment": "dictionary ReadableStreamReadResult {\n  any value;\n  boolean done;\n};",
         "type": "dictionary",
-        "name": "ReadableStreamDefaultReadResult",
+        "name": "ReadableStreamReadResult",
         "inheritance": null,
         "members": [
           {
@@ -1014,7 +1014,7 @@
         "partial": false
       },
       "ReadableStreamBYOBReader": {
-        "fragment": "[Exposed=*]\ninterface ReadableStreamBYOBReader {\n  constructor(ReadableStream stream);\n\n  Promise<ReadableStreamBYOBReadResult> read(ArrayBufferView view);\n  undefined releaseLock();\n};",
+        "fragment": "[Exposed=*]\ninterface ReadableStreamBYOBReader {\n  constructor(ReadableStream stream);\n\n  Promise<ReadableStreamReadResult> read(ArrayBufferView view);\n  undefined releaseLock();\n};",
         "type": "interface",
         "name": "ReadableStreamBYOBReader",
         "inheritance": null,
@@ -1057,7 +1057,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "ReadableStreamBYOBReadResult"
+                  "idlType": "ReadableStreamReadResult"
                 }
               ]
             },
@@ -1109,63 +1109,6 @@
             "arguments": []
           }
         ],
-        "partial": false
-      },
-      "ReadableStreamBYOBReadResult": {
-        "fragment": "dictionary ReadableStreamBYOBReadResult {\n  (ArrayBufferView or undefined) value;\n  boolean done;\n};",
-        "type": "dictionary",
-        "name": "ReadableStreamBYOBReadResult",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "field",
-            "name": "value",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": true,
-              "idlType": [
-                {
-                  "type": null,
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "ArrayBufferView"
-                },
-                {
-                  "type": null,
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "undefined"
-                }
-              ]
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "done",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "boolean"
-            },
-            "default": null,
-            "required": false
-          }
-        ],
-        "extAttrs": [],
         "partial": false
       },
       "ReadableStreamDefaultController": {
@@ -3003,18 +2946,15 @@
       "ReadableStreamGenericReader": [],
       "ReadableStreamDefaultReader": [
         "ReadableStream",
-        "ReadableStreamDefaultReadResult",
+        "ReadableStreamReadResult",
         "ReadableStreamGenericReader"
       ],
-      "ReadableStreamDefaultReadResult": [],
+      "ReadableStreamReadResult": [],
       "ReadableStreamBYOBReader": [
         "ReadableStream",
-        "ReadableStreamBYOBReadResult",
+        "ReadableStreamReadResult",
         "ArrayBufferView",
         "ReadableStreamGenericReader"
-      ],
-      "ReadableStreamBYOBReadResult": [
-        "ArrayBufferView"
       ],
       "ReadableStreamDefaultController": [],
       "ReadableByteStreamController": [
