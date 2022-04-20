@@ -35,6 +35,7 @@
       "invalidmodificationerror",
       "idl-observable-array",
       "observable-array-attribute-set-an-indexed-value",
+      "observable-array-attribute-backing-list",
       "observable-array-attribute-delete-an-indexed-value"
     ],
     "https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleValue/parse": [],
@@ -170,16 +171,33 @@
     "https://www.w3.org/TR/css-syntax-3/": [
       "tokenization"
     ],
-    "https://drafts.csswg.org/css2/": [
-      "value-def-identifier",
-      "propdef-z-index",
-      "propdef-border-spacing",
-      "propdef-clear",
-      "propdef-float",
-      "propdef-line-height",
-      "propdef-page-break-after",
-      "propdef-page-break-before",
-      "propdef-page-break-inside"
+    "https://drafts.csswg.org/css-values-4/": [
+      "typedef-ident",
+      "css-css-identifier",
+      "number-value",
+      "percentage-value",
+      "typedef-dimension",
+      "compatible-units",
+      "in",
+      "px",
+      "canonical-unit",
+      "math-function",
+      "length-value",
+      "angle-value",
+      "time-value",
+      "frequency-value",
+      "resolution-value",
+      "typedef-length-percentage",
+      "typedef-angle-percentage",
+      "typedef-time-percentage",
+      "funcdef-calc",
+      "funcdef-min",
+      "funcdef-max",
+      "relative-length",
+      "percentage",
+      "funcdef-url",
+      "identifier-value",
+      "em"
     ],
     "https://drafts.csswg.org/css-position-3/": [
       "valdef-top-auto",
@@ -241,31 +259,15 @@
     "https://developer.mozilla.org/en-US/docs/Web/API/CSSKeywordValue": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/CSSKeywordValue/CSSKeywordValue": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/CSSKeywordValue/value": [],
-    "https://drafts.csswg.org/css-values-4/": [
-      "number-value",
-      "percentage-value",
-      "typedef-dimension",
-      "compatible-units",
-      "in",
-      "px",
-      "canonical-unit",
-      "math-function",
-      "length-value",
-      "angle-value",
-      "time-value",
-      "frequency-value",
-      "resolution-value",
-      "typedef-length-percentage",
-      "typedef-angle-percentage",
-      "typedef-time-percentage",
-      "funcdef-calc",
-      "funcdef-min",
-      "funcdef-max",
-      "relative-length",
-      "percentage",
-      "funcdef-url",
-      "identifier-value",
-      "em"
+    "https://drafts.csswg.org/css2/": [
+      "propdef-z-index",
+      "propdef-border-spacing",
+      "propdef-clear",
+      "propdef-float",
+      "propdef-line-height",
+      "propdef-page-break-after",
+      "propdef-page-break-before",
+      "propdef-page-break-inside"
     ],
     "https://developer.mozilla.org/en-US/docs/Web/API/CSSNumericValue": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/CSSNumericValue/add": [],
@@ -412,15 +414,13 @@
       "predefined"
     ],
     "https://drafts.csswg.org/css-color-5/": [
-      "at-ruledef-profile",
       "funcdef-rgb",
       "funcdef-hsl",
       "funcdef-hwb",
       "funcdef-lab",
       "funcdef-lch",
       "funcdef-oklab",
-      "funcdef-color",
-      "funcdef-device-cmyk"
+      "funcdef-color"
     ],
     "https://www.w3.org/TR/css-properties-values-api-1/": [
       "css-style-value-reification"
@@ -627,8 +627,10 @@
       "StrokeWidthProperty",
       "TextRenderingProperty"
     ],
-    "https://www.w3.org/TR/SVG11/": [
-      "ColorRenderingProperty"
+    "https://www.w3.org/TR/SVG2/": [
+      "ColorRenderingProperty",
+      "TextDecorationFillProperty",
+      "TextDecorationStrokeProperty"
     ],
     "https://drafts.csswg.org/css-multicol-2/": [
       "propdef-column-span"
@@ -849,10 +851,6 @@
       "propdef-text-decoration-thickness",
       "propdef-text-emphasis-skip",
       "propdef-text-underline-offset"
-    ],
-    "https://www.w3.org/TR/SVG2/": [
-      "TextDecorationFillProperty",
-      "TextDecorationStrokeProperty"
     ],
     "https://drafts.csswg.org/css-size-adjust-1/": [
       "propdef-text-size-adjust"
