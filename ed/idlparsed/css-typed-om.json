@@ -3754,58 +3754,11 @@
         "partial": false
       },
       "CSSColorValue": {
-        "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]\ninterface CSSColorValue : CSSStyleValue {\n    readonly attribute CSSKeywordValue colorSpace;\n    CSSColorValue to(CSSKeywordish colorSpace);\n    [Exposed=Window] static (CSSColorValue or CSSStyleValue) parse(USVString cssText);\n};",
+        "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]\ninterface CSSColorValue : CSSStyleValue {\n    [Exposed=Window] static (CSSColorValue or CSSStyleValue) parse(USVString cssText);\n};",
         "type": "interface",
         "name": "CSSColorValue",
         "inheritance": "CSSStyleValue",
         "members": [
-          {
-            "type": "attribute",
-            "name": "colorSpace",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "CSSKeywordValue"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "operation",
-            "name": "to",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "CSSColorValue"
-            },
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "colorSpace",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "CSSKeywordish"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              }
-            ],
-            "extAttrs": [],
-            "special": ""
-          },
           {
             "type": "operation",
             "name": "parse",
@@ -7598,9 +7551,7 @@
       ],
       "CSSColorValue": [
         "CSSStyleValue",
-        "CSSKeywordValue",
-        "CSSColorValue",
-        "CSSKeywordish"
+        "CSSColorValue"
       ],
       "CSSRGB": [
         "CSSColorValue",
