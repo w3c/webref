@@ -1,0 +1,449 @@
+{
+  "name": "ScreenDetailed",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Multi-Screen Window Placement",
+      "url": "https://w3c.github.io/window-placement/"
+    },
+    "fragment": "[Exposed=Window, SecureContext]\ninterface ScreenDetailed : Screen {\n  readonly attribute long availLeft;\n  readonly attribute long availTop;\n  readonly attribute long left;\n  readonly attribute long top;\n  readonly attribute boolean isPrimary;\n  readonly attribute boolean isInternal;\n  readonly attribute float devicePixelRatio;\n  readonly attribute DOMString label;\n};",
+    "href": "https://w3c.github.io/window-placement/#screendetailed"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "Screen",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "CSSOM View Module",
+        "url": "https://www.w3.org/TR/cssom-view-1/"
+      },
+      "fragment": "[Exposed=Window]\ninterface Screen {\n  readonly attribute long availWidth;\n  readonly attribute long availHeight;\n  readonly attribute long width;\n  readonly attribute long height;\n  readonly attribute unsigned long colorDepth;\n  readonly attribute unsigned long pixelDepth;\n};",
+      "href": "https://drafts.csswg.org/cssom-view/#screen"
+    },
+    "extended": [
+      {
+        "spec": {
+          "title": "Multi-Screen Window Placement",
+          "url": "https://w3c.github.io/window-placement/"
+        },
+        "fragment": "partial interface Screen /* : EventTarget */ {\n  [SecureContext]\n  readonly attribute boolean isExtended;\n\n  [SecureContext]\n  attribute EventHandler onchange;\n};"
+      },
+      {
+        "spec": {
+          "title": "The Screen Orientation API",
+          "url": "https://www.w3.org/TR/screen-orientation/"
+        },
+        "fragment": "partial interface Screen {\n  [SameObject] readonly attribute ScreenOrientation orientation;\n};"
+      }
+    ],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://w3c.github.io/window-placement/": [
+      {
+        "id": "screendetailed",
+        "href": "https://w3c.github.io/window-placement/#screendetailed",
+        "linkingText": [
+          "ScreenDetailed"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-screendetailed-interface",
+          "href": "https://w3c.github.io/window-placement/#api-screendetailed-interface",
+          "title": "The ScreenDetailed interface",
+          "number": "3.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-screendetailed-availleft",
+        "href": "https://w3c.github.io/window-placement/#dom-screendetailed-availleft",
+        "linkingText": [
+          "availLeft"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "ScreenDetailed"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-screendetailed-interface",
+          "href": "https://w3c.github.io/window-placement/#api-screendetailed-interface",
+          "title": "The ScreenDetailed interface",
+          "number": "3.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-screendetailed-availtop",
+        "href": "https://w3c.github.io/window-placement/#dom-screendetailed-availtop",
+        "linkingText": [
+          "availTop"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "ScreenDetailed"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-screendetailed-interface",
+          "href": "https://w3c.github.io/window-placement/#api-screendetailed-interface",
+          "title": "The ScreenDetailed interface",
+          "number": "3.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-screendetailed-left",
+        "href": "https://w3c.github.io/window-placement/#dom-screendetailed-left",
+        "linkingText": [
+          "left"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "ScreenDetailed"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-screendetailed-interface",
+          "href": "https://w3c.github.io/window-placement/#api-screendetailed-interface",
+          "title": "The ScreenDetailed interface",
+          "number": "3.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-screendetailed-top",
+        "href": "https://w3c.github.io/window-placement/#dom-screendetailed-top",
+        "linkingText": [
+          "top"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "ScreenDetailed"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-screendetailed-interface",
+          "href": "https://w3c.github.io/window-placement/#api-screendetailed-interface",
+          "title": "The ScreenDetailed interface",
+          "number": "3.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-screendetailed-isprimary",
+        "href": "https://w3c.github.io/window-placement/#dom-screendetailed-isprimary",
+        "linkingText": [
+          "isPrimary"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "ScreenDetailed"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-screendetailed-interface",
+          "href": "https://w3c.github.io/window-placement/#api-screendetailed-interface",
+          "title": "The ScreenDetailed interface",
+          "number": "3.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-screendetailed-isinternal",
+        "href": "https://w3c.github.io/window-placement/#dom-screendetailed-isinternal",
+        "linkingText": [
+          "isInternal"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "ScreenDetailed"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-screendetailed-interface",
+          "href": "https://w3c.github.io/window-placement/#api-screendetailed-interface",
+          "title": "The ScreenDetailed interface",
+          "number": "3.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-screendetailed-devicepixelratio",
+        "href": "https://w3c.github.io/window-placement/#dom-screendetailed-devicepixelratio",
+        "linkingText": [
+          "devicePixelRatio"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "ScreenDetailed"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-screendetailed-interface",
+          "href": "https://w3c.github.io/window-placement/#api-screendetailed-interface",
+          "title": "The ScreenDetailed interface",
+          "number": "3.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-screendetailed-label",
+        "href": "https://w3c.github.io/window-placement/#dom-screendetailed-label",
+        "linkingText": [
+          "label"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "ScreenDetailed"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-screendetailed-interface",
+          "href": "https://w3c.github.io/window-placement/#api-screendetailed-interface",
+          "title": "The ScreenDetailed interface",
+          "number": "3.4"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-screen-isextended",
+        "href": "https://w3c.github.io/window-placement/#dom-screen-isextended",
+        "linkingText": [
+          "isExtended"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Screen"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-screen-isExtended-attribute",
+          "href": "https://w3c.github.io/window-placement/#api-screen-isExtended-attribute",
+          "title": "isExtended attribute",
+          "number": "3.1.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-screen-onchange",
+        "href": "https://w3c.github.io/window-placement/#dom-screen-onchange",
+        "linkingText": [
+          "onchange"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Screen"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-screen-onchange-attribute",
+          "href": "https://w3c.github.io/window-placement/#api-screen-onchange-attribute",
+          "title": "onchange attribute",
+          "number": "3.1.2"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://www.w3.org/TR/cssom-view-1/": [
+      {
+        "id": "screen",
+        "href": "https://drafts.csswg.org/cssom-view/#screen",
+        "linkingText": [
+          "Screen"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-screen-interface",
+          "href": "https://drafts.csswg.org/cssom-view/#the-screen-interface",
+          "title": "The Screen Interface",
+          "number": "4.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-screen-availwidth",
+        "href": "https://drafts.csswg.org/cssom-view/#dom-screen-availwidth",
+        "linkingText": [
+          "availWidth"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Screen"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-screen-interface",
+          "href": "https://drafts.csswg.org/cssom-view/#the-screen-interface",
+          "title": "The Screen Interface",
+          "number": "4.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-screen-availheight",
+        "href": "https://drafts.csswg.org/cssom-view/#dom-screen-availheight",
+        "linkingText": [
+          "availHeight"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Screen"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-screen-interface",
+          "href": "https://drafts.csswg.org/cssom-view/#the-screen-interface",
+          "title": "The Screen Interface",
+          "number": "4.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-screen-width",
+        "href": "https://drafts.csswg.org/cssom-view/#dom-screen-width",
+        "linkingText": [
+          "width"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Screen"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-screen-interface",
+          "href": "https://drafts.csswg.org/cssom-view/#the-screen-interface",
+          "title": "The Screen Interface",
+          "number": "4.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-screen-height",
+        "href": "https://drafts.csswg.org/cssom-view/#dom-screen-height",
+        "linkingText": [
+          "height"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Screen"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-screen-interface",
+          "href": "https://drafts.csswg.org/cssom-view/#the-screen-interface",
+          "title": "The Screen Interface",
+          "number": "4.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-screen-colordepth",
+        "href": "https://drafts.csswg.org/cssom-view/#dom-screen-colordepth",
+        "linkingText": [
+          "colorDepth"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Screen"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-screen-interface",
+          "href": "https://drafts.csswg.org/cssom-view/#the-screen-interface",
+          "title": "The Screen Interface",
+          "number": "4.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-screen-pixeldepth",
+        "href": "https://drafts.csswg.org/cssom-view/#dom-screen-pixeldepth",
+        "linkingText": [
+          "pixelDepth"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Screen"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "the-screen-interface",
+          "href": "https://drafts.csswg.org/cssom-view/#the-screen-interface",
+          "title": "The Screen Interface",
+          "number": "4.3"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://www.w3.org/TR/screen-orientation/": [
+      {
+        "id": "dom-screen-orientation",
+        "href": "https://w3c.github.io/screen-orientation/#dom-screen-orientation",
+        "linkingText": [
+          "orientation"
+        ],
+        "localLinkingText": [
+          "Screen.orientation"
+        ],
+        "type": "attribute",
+        "for": [
+          "Screen"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "orientation-attribute",
+          "href": "https://w3c.github.io/screen-orientation/#orientation-attribute",
+          "title": "orientation attribute",
+          "number": "2.1"
+        },
+        "definedIn": "heading"
+      }
+    ]
+  }
+}

@@ -12,6 +12,13 @@
   "extended": [
     {
       "spec": {
+        "title": "Multi-Screen Window Placement",
+        "url": "https://w3c.github.io/window-placement/"
+      },
+      "fragment": "partial interface Screen /* : EventTarget */ {\n  [SecureContext]\n  readonly attribute boolean isExtended;\n\n  [SecureContext]\n  attribute EventHandler onchange;\n};"
+    },
+    {
+      "spec": {
         "title": "The Screen Orientation API",
         "url": "https://www.w3.org/TR/screen-orientation/"
       },
@@ -164,6 +171,50 @@
           "href": "https://drafts.csswg.org/cssom-view/#the-screen-interface",
           "title": "The Screen Interface",
           "number": "4.3"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://w3c.github.io/window-placement/": [
+      {
+        "id": "dom-screen-isextended",
+        "href": "https://w3c.github.io/window-placement/#dom-screen-isextended",
+        "linkingText": [
+          "isExtended"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Screen"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-screen-isExtended-attribute",
+          "href": "https://w3c.github.io/window-placement/#api-screen-isExtended-attribute",
+          "title": "isExtended attribute",
+          "number": "3.1.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-screen-onchange",
+        "href": "https://w3c.github.io/window-placement/#dom-screen-onchange",
+        "linkingText": [
+          "onchange"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Screen"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-screen-onchange-attribute",
+          "href": "https://w3c.github.io/window-placement/#api-screen-onchange-attribute",
+          "title": "onchange attribute",
+          "number": "3.1.2"
         },
         "definedIn": "prose"
       }

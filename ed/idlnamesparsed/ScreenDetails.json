@@ -1,0 +1,244 @@
+{
+  "name": "ScreenDetails",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Multi-Screen Window Placement",
+      "url": "https://w3c.github.io/window-placement/"
+    },
+    "fragment": "[Exposed=Window, SecureContext]\ninterface ScreenDetails : EventTarget {\n  readonly attribute FrozenArray<ScreenDetailed> screens;\n  readonly attribute ScreenDetailed currentScreen;\n\n  attribute EventHandler onscreenschange;\n  attribute EventHandler oncurrentscreenchange;\n};",
+    "href": "https://w3c.github.io/window-placement/#screendetails"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "EventTarget",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=*]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+      "href": "https://dom.spec.whatwg.org/#eventtarget"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://w3c.github.io/window-placement/": [
+      {
+        "id": "screendetails",
+        "href": "https://w3c.github.io/window-placement/#screendetails",
+        "linkingText": [
+          "ScreenDetails"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-screendetails-interface",
+          "href": "https://w3c.github.io/window-placement/#api-screendetails-interface",
+          "title": "ScreenDetails interface",
+          "number": "3.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-screendetails-screens",
+        "href": "https://w3c.github.io/window-placement/#dom-screendetails-screens",
+        "linkingText": [
+          "screens"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "ScreenDetails"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-screendetails-screens-attribute",
+          "href": "https://w3c.github.io/window-placement/#api-screendetails-screens-attribute",
+          "title": "screens attribute",
+          "number": "3.3.1"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-screendetails-currentscreen",
+        "href": "https://w3c.github.io/window-placement/#dom-screendetails-currentscreen",
+        "linkingText": [
+          "currentScreen"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "ScreenDetails"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-screendetails-currentscreen-attribute",
+          "href": "https://w3c.github.io/window-placement/#api-screendetails-currentscreen-attribute",
+          "title": "currentScreen attribute",
+          "number": "3.3.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-screendetails-onscreenschange",
+        "href": "https://w3c.github.io/window-placement/#dom-screendetails-onscreenschange",
+        "linkingText": [
+          "onscreenschange"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "ScreenDetails"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-screendetails-onscreenschange-attribute",
+          "href": "https://w3c.github.io/window-placement/#api-screendetails-onscreenschange-attribute",
+          "title": "onscreenschange attribute",
+          "number": "3.3.3"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-screendetails-oncurrentscreenchange",
+        "href": "https://w3c.github.io/window-placement/#dom-screendetails-oncurrentscreenchange",
+        "linkingText": [
+          "oncurrentscreenchange"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "ScreenDetails"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-screendetails-oncurrentscreenchange-attribute",
+          "href": "https://w3c.github.io/window-placement/#api-screendetails-oncurrentscreenchange-attribute",
+          "title": "oncurrentscreenchange attribute",
+          "number": "3.3.4"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "eventtarget",
+        "href": "https://dom.spec.whatwg.org/#eventtarget",
+        "linkingText": [
+          "EventTarget"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventtarget-eventtarget",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-eventtarget",
+        "linkingText": [
+          "EventTarget()",
+          "constructor()"
+        ],
+        "localLinkingText": [],
+        "type": "constructor",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-addeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-addeventlistener",
+        "linkingText": [
+          "addEventListener(type, callback, options)",
+          "addEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-removeeventlistener",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-removeeventlistener",
+        "linkingText": [
+          "removeEventListener(type, callback, options)",
+          "removeEventListener(type, callback)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-eventtarget-dispatchevent",
+        "href": "https://dom.spec.whatwg.org/#dom-eventtarget-dispatchevent",
+        "linkingText": [
+          "dispatchEvent(event)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "EventTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-eventtarget",
+          "href": "https://dom.spec.whatwg.org/#interface-eventtarget",
+          "title": "Interface EventTarget",
+          "number": "2.7"
+        },
+        "definedIn": "prose"
+      }
+    ]
+  }
+}

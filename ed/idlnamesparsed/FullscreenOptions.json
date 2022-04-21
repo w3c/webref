@@ -9,7 +9,15 @@
     "fragment": "dictionary FullscreenOptions {\n  FullscreenNavigationUI navigationUI = \"auto\";\n};",
     "href": "https://fullscreen.spec.whatwg.org/#dictdef-fullscreenoptions"
   },
-  "extended": [],
+  "extended": [
+    {
+      "spec": {
+        "title": "Multi-Screen Window Placement",
+        "url": "https://w3c.github.io/window-placement/"
+      },
+      "fragment": "partial dictionary FullscreenOptions {\n  ScreenDetailed screen;\n};"
+    }
+  ],
   "inheritance": null,
   "includes": [],
   "dfns": {
@@ -51,6 +59,29 @@
           "href": "https://fullscreen.spec.whatwg.org/#api",
           "title": "API",
           "number": "3"
+        },
+        "definedIn": "pre"
+      }
+    ],
+    "https://w3c.github.io/window-placement/": [
+      {
+        "id": "dom-fullscreenoptions-screen",
+        "href": "https://w3c.github.io/window-placement/#dom-fullscreenoptions-screen",
+        "linkingText": [
+          "screen"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "FullscreenOptions"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-extensions-to-fullscreen-options",
+          "href": "https://w3c.github.io/window-placement/#api-extensions-to-fullscreen-options",
+          "title": "Extensions to FullscreenOptions",
+          "number": "3.5"
         },
         "definedIn": "pre"
       }

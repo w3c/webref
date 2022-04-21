@@ -92,6 +92,12 @@ partial interface Window {
   [Replaceable, SameObject] readonly attribute External external;
 };
 
+// Source: Multi-Screen Window Placement (https://w3c.github.io/window-placement/)
+partial interface Window {
+  [SecureContext]
+  Promise<ScreenDetails> getScreenDetails();
+};
+
 // Source: Attribution Reporting (https://wicg.github.io/conversion-measurement-api/)
 [SecureContext]
 partial interface Window {
