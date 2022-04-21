@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2022-04-21T12:43:33.157Z",
+  "date": "2022-04-21T18:44:49.975Z",
   "options": {
     "fallback": "webref-fallback/ed/index.json",
     "output": "report",
@@ -20,10 +20,10 @@
     ]
   },
   "stats": {
-    "crawled": 467,
-    "errors": 2
+    "crawled": 468,
+    "errors": 0
   },
-  "crawler": "reffy-7.0.5",
+  "crawler": "reffy-7.0.6",
   "results": [
     {
       "url": "https://compat.spec.whatwg.org/",
@@ -1553,9 +1553,9 @@
       ],
       "crawled": "https://html.spec.whatwg.org/multipage/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 19 Apr 2022 14:54:44 GMT"
+        "lastModified": "Thu, 21 Apr 2022 17:00:54 GMT"
       },
-      "date": "19 April 2022",
+      "date": "21 April 2022",
       "links": "links/html.json",
       "refs": "refs/html.json",
       "idl": "idl/html.idl",
@@ -3998,6 +3998,53 @@
       "dfns": "dfns/webrtc-ice.json",
       "headings": "headings/webrtc-ice.json",
       "ids": "ids/webrtc-ice.json"
+    },
+    {
+      "url": "https://w3c.github.io/window-placement/",
+      "seriesComposition": "full",
+      "shortname": "window-placement",
+      "series": {
+        "shortname": "window-placement",
+        "currentSpecification": "window-placement",
+        "title": "Multi-Screen Window Placement",
+        "shortTitle": "Multi-Screen Window Placement",
+        "nightlyUrl": "https://w3c.github.io/window-placement/"
+      },
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Second Screen Working Group",
+          "url": "https://www.w3.org/2014/secondscreen/"
+        }
+      ],
+      "nightly": {
+        "url": "https://w3c.github.io/window-placement/",
+        "repository": "https://github.com/w3c/window-placement",
+        "sourcePath": "index.bs",
+        "filename": "index.html"
+      },
+      "title": "Multi-Screen Window Placement",
+      "source": "spec",
+      "shortTitle": "Multi-Screen Window Placement",
+      "categories": [
+        "browser"
+      ],
+      "versions": [
+        "https://w3c.github.io/window-placement/"
+      ],
+      "crawled": "https://w3c.github.io/window-placement/",
+      "crawlCacheInfo": {
+        "lastModified": "Thu, 14 Apr 2022 12:54:11 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "14 April 2022",
+      "links": "links/window-placement.json",
+      "refs": "refs/window-placement.json",
+      "idl": "idl/window-placement.idl",
+      "idlparsed": "idlparsed/window-placement.json",
+      "dfns": "dfns/window-placement.json",
+      "headings": "headings/window-placement.json",
+      "ids": "ids/window-placement.json"
     },
     {
       "url": "https://webassembly.github.io/exception-handling/js-api/",
@@ -17052,8 +17099,7 @@
       "css": "css/CSS.json",
       "dfns": "dfns/CSS22.json",
       "headings": "headings/CSS22.json",
-      "ids": "ids/CSS22.json",
-      "error": "Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers' Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers'\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:483:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 323)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
+      "ids": "ids/CSS22.json"
     },
     {
       "url": "https://www.w3.org/TR/css3-exclusions/",
@@ -18658,8 +18704,7 @@
       "idlparsed": "idlparsed/html-media-capture.json",
       "dfns": "dfns/html-media-capture.json",
       "headings": "headings/html-media-capture.json",
-      "ids": "ids/html-media-capture.json",
-      "error": "Error: Evaluation failed: Error: Respec generation took too long\n    at isReady (__puppeteer_evaluation_script__:20:27)\n    at isReady (__puppeteer_evaluation_script__:27:27)\n    at async isReady (__puppeteer_evaluation_script__:27:21)\n    at async isReady (__puppeteer_evaluation_script__:27:21)\n    at async isReady (__puppeteer_evaluation_script__:27:21)\n    at async isReady (__puppeteer_evaluation_script__:27:21)\n    at async isReady (__puppeteer_evaluation_script__:27:21)\n    at async isReady (__puppeteer_evaluation_script__:27:21)\n    at async isReady (__puppeteer_evaluation_script__:27:21)\n    at async isReady (__puppeteer_evaluation_script__:27:21) Error: Evaluation failed: Error: Respec generation took too long\n    at isReady (__puppeteer_evaluation_script__:20:27)\n    at isReady (__puppeteer_evaluation_script__:27:27)\n    at async isReady (__puppeteer_evaluation_script__:27:21)\n    at async isReady (__puppeteer_evaluation_script__:27:21)\n    at async isReady (__puppeteer_evaluation_script__:27:21)\n    at async isReady (__puppeteer_evaluation_script__:27:21)\n    at async isReady (__puppeteer_evaluation_script__:27:21)\n    at async isReady (__puppeteer_evaluation_script__:27:21)\n    at async isReady (__puppeteer_evaluation_script__:27:21)\n    at async isReady (__puppeteer_evaluation_script__:27:21)\n    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:221:19)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:110:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 351)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
+      "ids": "ids/html-media-capture.json"
     },
     {
       "url": "https://www.w3.org/TR/i18n-glossary/",
@@ -19561,10 +19606,10 @@
       ],
       "crawled": "https://w3c.github.io/mediacapture-main/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 21 Mar 2022 07:32:16 GMT"
+        "lastModified": "Thu, 21 Apr 2022 14:45:59 GMT"
       },
       "generator": "respec",
-      "date": "21 March 2022",
+      "date": "21 April 2022",
       "links": "links/mediacapture-streams.json",
       "refs": "refs/mediacapture-streams.json",
       "idl": "idl/mediacapture-streams.idl",
@@ -20802,10 +20847,10 @@
       ],
       "crawled": "https://w3c.github.io/payment-request/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 16 Mar 2022 00:50:12 GMT"
+        "lastModified": "Thu, 21 Apr 2022 15:07:47 GMT"
       },
       "generator": "respec",
-      "date": "16 March 2022",
+      "date": "21 April 2022",
       "links": "links/payment-request.json",
       "refs": "refs/payment-request.json",
       "idl": "idl/payment-request.idl",
@@ -21863,10 +21908,10 @@
       ],
       "crawled": "https://w3c.github.io/mediacapture-screen-share/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 07 Apr 2022 15:59:49 GMT"
+        "lastModified": "Thu, 21 Apr 2022 14:48:17 GMT"
       },
       "generator": "respec",
-      "date": "07 April 2022",
+      "date": "21 April 2022",
       "links": "links/screen-capture.json",
       "refs": "refs/screen-capture.json",
       "idl": "idl/screen-capture.idl",
@@ -22327,10 +22372,10 @@
       ],
       "crawled": "https://w3c.github.io/server-timing/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 30 Jun 2021 18:47:41 GMT"
+        "lastModified": "Thu, 21 Apr 2022 13:04:32 GMT"
       },
       "generator": "respec",
-      "date": "30 June 2021",
+      "date": "21 April 2022",
       "links": "links/server-timing.json",
       "refs": "refs/server-timing.json",
       "idl": "idl/server-timing.idl",
@@ -24136,10 +24181,10 @@
       ],
       "crawled": "https://gpuweb.github.io/gpuweb/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 20 Apr 2022 22:26:39 GMT"
+        "lastModified": "Thu, 21 Apr 2022 14:12:56 GMT"
       },
       "generator": "bikeshed",
-      "date": "20 April 2022",
+      "date": "21 April 2022",
       "links": "links/webgpu.json",
       "refs": "refs/webgpu.json",
       "idl": "idl/webgpu.idl",
@@ -24254,10 +24299,10 @@
       ],
       "crawled": "https://webmachinelearning.github.io/webnn/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 24 Mar 2022 16:47:43 GMT"
+        "lastModified": "Thu, 21 Apr 2022 15:22:32 GMT"
       },
       "generator": "bikeshed",
-      "date": "24 March 2022",
+      "date": "21 April 2022",
       "links": "links/webnn.json",
       "refs": "refs/webnn.json",
       "idl": "idl/webnn.idl",
@@ -25136,10 +25181,10 @@
       ],
       "crawled": "https://immersive-web.github.io/lighting-estimation/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 04 Nov 2021 12:38:55 GMT"
+        "lastModified": "Thu, 21 Apr 2022 18:25:55 GMT"
       },
       "generator": "bikeshed",
-      "date": "4 November 2021",
+      "date": "21 April 2022",
       "links": "links/webxr-lighting-estimation-1.json",
       "refs": "refs/webxr-lighting-estimation-1.json",
       "idl": "idl/webxr-lighting-estimation.idl",
@@ -25264,10 +25309,10 @@
       ],
       "crawled": "https://immersive-web.github.io/layers/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 05 Jan 2022 21:54:10 GMT"
+        "lastModified": "Thu, 21 Apr 2022 18:25:14 GMT"
       },
       "generator": "bikeshed",
-      "date": "5 January 2022",
+      "date": "21 April 2022",
       "links": "links/webxrlayers-1.json",
       "refs": "refs/webxrlayers-1.json",
       "idl": "idl/webxrlayers.idl",
@@ -25317,10 +25362,10 @@
       ],
       "crawled": "https://gpuweb.github.io/gpuweb/wgsl/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 20 Apr 2022 22:26:39 GMT"
+        "lastModified": "Thu, 21 Apr 2022 14:12:56 GMT"
       },
       "generator": "bikeshed",
-      "date": "20 April 2022",
+      "date": "21 April 2022",
       "links": "links/WGSL.json",
       "refs": "refs/WGSL.json",
       "dfns": "dfns/WGSL.json",

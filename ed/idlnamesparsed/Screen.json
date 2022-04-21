@@ -12,6 +12,13 @@
   "extended": [
     {
       "spec": {
+        "title": "Multi-Screen Window Placement",
+        "url": "https://w3c.github.io/window-placement/"
+      },
+      "fragment": "partial interface Screen /* : EventTarget */ {\n  [SecureContext]\n  readonly attribute boolean isExtended;\n\n  [SecureContext]\n  attribute EventHandler onchange;\n};"
+    },
+    {
+      "spec": {
         "title": "The Screen Orientation API",
         "url": "https://www.w3.org/TR/screen-orientation/"
       },
