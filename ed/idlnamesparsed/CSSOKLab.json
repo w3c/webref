@@ -18,7 +18,7 @@
         "title": "CSS Typed OM Level 1",
         "url": "https://www.w3.org/TR/css-typed-om-1/"
       },
-      "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]\ninterface CSSColorValue : CSSStyleValue {\n    readonly attribute CSSKeywordValue colorSpace;\n    CSSColorValue to(CSSKeywordish colorSpace);\n    [Exposed=Window] static (CSSColorValue or CSSStyleValue) parse(USVString cssText);\n};",
+      "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]\ninterface CSSColorValue : CSSStyleValue {\n    [Exposed=Window] static (CSSColorValue or CSSStyleValue) parse(USVString cssText);\n};",
       "href": "https://drafts.css-houdini.org/css-typed-om-1/#csscolorvalue"
     },
     "extended": [],
@@ -187,48 +187,6 @@
           "number": "4.6"
         },
         "definedIn": "pre"
-      },
-      {
-        "id": "dom-csscolorvalue-colorspace",
-        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-csscolorvalue-colorspace",
-        "linkingText": [
-          "colorSpace"
-        ],
-        "localLinkingText": [],
-        "type": "attribute",
-        "for": [
-          "CSSColorValue"
-        ],
-        "access": "public",
-        "informative": false,
-        "heading": {
-          "id": "colorvalue-objects",
-          "href": "https://drafts.css-houdini.org/css-typed-om-1/#colorvalue-objects",
-          "title": "CSSColorValue objects",
-          "number": "4.6"
-        },
-        "definedIn": "prose"
-      },
-      {
-        "id": "dom-csscolorvalue-to",
-        "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-csscolorvalue-to",
-        "linkingText": [
-          "to(colorSpace)"
-        ],
-        "localLinkingText": [],
-        "type": "method",
-        "for": [
-          "CSSColorValue"
-        ],
-        "access": "public",
-        "informative": false,
-        "heading": {
-          "id": "colorvalue-objects",
-          "href": "https://drafts.css-houdini.org/css-typed-om-1/#colorvalue-objects",
-          "title": "CSSColorValue objects",
-          "number": "4.6"
-        },
-        "definedIn": "prose"
       },
       {
         "id": "dom-csscolorvalue-parse",
