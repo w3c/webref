@@ -17,7 +17,7 @@ elements.listAll().then(all => {
 });
 ```
 
-For each spec, value is an object with a `spec` property that describes the specification, and an `elements` property that lists elements defined in the spec, as an array of objects with `name` and `interface` properties. The `interface` property is not present for elements that do not implement an interface:
+For each spec, value is an object with a `spec` property that describes the specification, and an `elements` property that lists elements defined in the spec, as an array of objects with `name`, `interface` and `obsolete` properties. The `interface` property is not present for elements that do not implement an interface:
 
 ```js
 const elements = require('@webref/elements');
@@ -37,6 +37,9 @@ elements.listAll().then(all => {
   }
 });
 ```
+
+The `obsolete` property is a boolean flag, only present (and set to `true`) for elements that are obsolete.
+
 
 # Guarantees
 
