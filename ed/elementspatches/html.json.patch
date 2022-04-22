@@ -1,0 +1,185 @@
+From cb31d9b6e0d8063d745687b268fe153ce5d21191 Mon Sep 17 00:00:00 2001
+From: Francois Daoust <fd@tidoust.net>
+Date: Fri, 22 Apr 2022 15:39:27 +0200
+Subject: [PATCH] Add obsolete HTML elements
+
+Patches the list of HTML elements with elements that are entirely obsolete but
+still need to be supported by browsers, see:
+https://html.spec.whatwg.org/multipage/obsolete.html#non-conforming-features
+
+These obsolete elements cannot easily be extracted automatically. The list is
+unlikely to evolve significantly over time, and should only grow as new elements
+get obsoleted. When that happens, the element would first disappear from
+`elements/html.json`, which should provide the nudge we need to update this
+patch.
+
+Obsolete element definitions come with an `"obsolete": true` property to
+distinguish them from regular HTML elements. Some of them have dedicated
+interfaces, and a couple of others inherit from specific interfaces (this is not
+very clear in the spec though, e.g. `xmp` implements the `HTMLPreElement`
+interface whereas `plaintext` does not, yet the prose in the spec is similar in
+both cases).
+---
+ ed/elements/html.json | 145 ++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 145 insertions(+)
+
+diff --git a/ed/elements/html.json b/ed/elements/html.json
+index 4754a89db..d1cd88d99 100644
+--- a/ed/elements/html.json
++++ b/ed/elements/html.json
+@@ -447,6 +447,151 @@
+     {
+       "name": "canvas",
+       "interface": "HTMLCanvasElement"
++    },
++    {
++      "name": "applet",
++      "interface": "HTMLElement",
++      "obsolete": true
++    },
++    {
++      "name": "acronym",
++      "interface": "HTMLElement",
++      "obsolete": true
++    },
++    {
++      "name": "bgsound",
++      "interface": "HTMLElement",
++      "obsolete": true
++    },
++    {
++      "name": "dir",
++      "interface": "HTMLDirectoryElement",
++      "obsolete": true
++    },
++    {
++      "name": "frame",
++      "interface": "HTMLFrameElement",
++      "obsolete": true
++    },
++    {
++      "name": "frameset",
++      "interface": "HTMLFrameSetElement",
++      "obsolete": true
++    },
++    {
++      "name": "noframes",
++      "interface": "HTMLElement",
++      "obsolete": true
++    },
++    {
++      "name": "isindex",
++      "interface": "HTMLElement",
++      "obsolete": true
++    },
++    {
++      "name": "keygen",
++      "interface": "HTMLElement",
++      "obsolete": true
++    },
++    {
++      "name": "listing",
++      "interface": "HTMLPreElement",
++      "obsolete": true
++    },
++    {
++      "name": "menuitem",
++      "interface": "HTMLElement",
++      "obsolete": true
++    },
++    {
++      "name": "nextid",
++      "interface": "HTMLElement",
++      "obsolete": true
++    },
++    {
++      "name": "noembed",
++      "interface": "HTMLElement",
++      "obsolete": true
++    },
++    {
++      "name": "param",
++      "interface": "HTMLParamElement",
++      "obsolete": true
++    },
++    {
++      "name": "plaintext",
++      "interface": "HTMLElement",
++      "obsolete": true
++    },
++    {
++      "name": "rb",
++      "interface": "HTMLElement",
++      "obsolete": true
++    },
++    {
++      "name": "rtc",
++      "interface": "HTMLElement",
++      "obsolete": true
++    },
++    {
++      "name": "strike",
++      "interface": "HTMLElement",
++      "obsolete": true
++    },
++    {
++      "name": "xmp",
++      "interface": "HTMLPreElement",
++      "obsolete": true
++    },
++    {
++      "name": "basefont",
++      "interface": "HTMLElement",
++      "obsolete": true
++    },
++    {
++      "name": "big",
++      "interface": "HTMLElement",
++      "obsolete": true
++    },
++    {
++      "name": "blink",
++      "interface": "HTMLElement",
++      "obsolete": true
++    },
++    {
++      "name": "center",
++      "interface": "HTMLElement",
++      "obsolete": true
++    },
++    {
++      "name": "font",
++      "interface": "HTMLFontElement",
++      "obsolete": true
++    },
++    {
++      "name": "marquee",
++      "interface": "HTMLMarqueeElement",
++      "obsolete": true
++    },
++    {
++      "name": "multicol",
++      "interface": "HTMLElement",
++      "obsolete": true
++    },
++    {
++      "name": "nobr",
++      "interface": "HTMLElement",
++      "obsolete": true
++    },
++    {
++      "name": "spacer",
++      "interface": "HTMLElement",
++      "obsolete": true
++    },
++    {
++      "name": "tt",
++      "interface": "HTMLElement",
++      "obsolete": true
+     }
+   ]
+ }
+\ No newline at end of file
+-- 
+2.35.1.windows.2
+
