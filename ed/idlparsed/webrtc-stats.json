@@ -2839,7 +2839,7 @@
         "partial": false
       },
       "RTCTransportStats": {
-        "fragment": "dictionary RTCTransportStats : RTCStats {\n             unsigned long long    packetsSent;\n             unsigned long long    packetsReceived;\n             unsigned long long    bytesSent;\n             unsigned long long    bytesReceived;\n             DOMString             rtcpTransportStatsId;\n             RTCIceRole            iceRole;\n             DOMString             iceLocalUsernameFragment;\n             required RTCDtlsTransportState dtlsState;\n             RTCIceTransportState  iceState;\n             DOMString             selectedCandidatePairId;\n             DOMString             localCertificateId;\n             DOMString             remoteCertificateId;\n             DOMString             tlsVersion;\n             DOMString             dtlsCipher;\n             DOMString             srtpCipher;\n             DOMString             tlsGroup;\n             unsigned long         selectedCandidatePairChanges;\n};",
+        "fragment": "dictionary RTCTransportStats : RTCStats {\n             unsigned long long    packetsSent;\n             unsigned long long    packetsReceived;\n             unsigned long long    bytesSent;\n             unsigned long long    bytesReceived;\n             DOMString             rtcpTransportStatsId;\n             RTCIceRole            iceRole;\n             DOMString             iceLocalUsernameFragment;\n             required RTCDtlsTransportState dtlsState;\n             RTCIceTransportState  iceState;\n             DOMString             selectedCandidatePairId;\n             DOMString             localCertificateId;\n             DOMString             remoteCertificateId;\n             DOMString             tlsVersion;\n             DOMString             dtlsCipher;\n             RTCDtlsRole           dtlsRole;\n             DOMString             srtpCipher;\n             DOMString             tlsGroup;\n             unsigned long         selectedCandidatePairChanges;\n};",
         "type": "dictionary",
         "name": "RTCTransportStats",
         "inheritance": "RTCStats",
@@ -3056,6 +3056,21 @@
           },
           {
             "type": "field",
+            "name": "dtlsRole",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "RTCDtlsRole"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
             "name": "srtpCipher",
             "extAttrs": [],
             "idlType": {
@@ -3102,6 +3117,26 @@
         ],
         "extAttrs": [],
         "partial": false
+      },
+      "RTCDtlsRole": {
+        "fragment": "enum RTCDtlsRole {\n        \"client\",\n        \"server\",\n        \"unknown\",\n};",
+        "type": "enum",
+        "name": "RTCDtlsRole",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "client"
+          },
+          {
+            "type": "enum-value",
+            "value": "server"
+          },
+          {
+            "type": "enum-value",
+            "value": "unknown"
+          }
+        ],
+        "extAttrs": []
       },
       "RTCSctpTransportStats": {
         "fragment": "dictionary RTCSctpTransportStats : RTCStats {\n            DOMString transportId;\n            double smoothedRoundTripTime;\n            unsigned long congestionWindow;\n            unsigned long receiverWindow;\n            unsigned long mtu;\n            unsigned long unackData;\n};",
@@ -4102,7 +4137,8 @@
         "RTCStats",
         "RTCIceRole",
         "RTCDtlsTransportState",
-        "RTCIceTransportState"
+        "RTCIceTransportState",
+        "RTCDtlsRole"
       ],
       "RTCSctpTransportStats": [
         "RTCStats"
