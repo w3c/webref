@@ -620,6 +620,27 @@
       "definedIn": "prose"
     },
     {
+      "id": "directive-webrtc-pre-connect-check",
+      "href": "https://w3c.github.io/webappsec-csp/#directive-webrtc-pre-connect-check",
+      "linkingText": [
+        "webrtc pre-connect check"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "directive"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "framework-directives",
+        "href": "https://w3c.github.io/webappsec-csp/#framework-directives",
+        "title": "Directives",
+        "number": "2.3"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "source-lists",
       "href": "https://w3c.github.io/webappsec-csp/#source-lists",
       "linkingText": [
@@ -1658,7 +1679,7 @@
       "id": "can-compile-strings",
       "href": "https://w3c.github.io/webappsec-csp/#can-compile-strings",
       "linkingText": [
-        "EnsureCSPDoesNotBlockStringCompilation(callerRealm, calleeRealm, source)"
+        "EnsureCSPDoesNotBlockStringCompilation(realm, source)"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1668,8 +1689,8 @@
       "heading": {
         "id": "can-compile-strings",
         "href": "https://w3c.github.io/webappsec-csp/#can-compile-strings",
-        "title": "EnsureCSPDoesNotBlockStringCompilation(callerRealm, calleeRealm, source)",
-        "number": "4.3.1"
+        "title": "EnsureCSPDoesNotBlockStringCompilation(realm, source)",
+        "number": "4.4.1"
       },
       "definedIn": "heading"
     },
@@ -1677,7 +1698,7 @@
       "id": "can-compile-wasm-bytes",
       "href": "https://w3c.github.io/webappsec-csp/#can-compile-wasm-bytes",
       "linkingText": [
-        "EnsureCSPDoesNotBlockWasmByteCompilation(callerRealm, calleeRealm)"
+        "EnsureCSPDoesNotBlockWasmByteCompilation(realm)"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1687,8 +1708,8 @@
       "heading": {
         "id": "can-compile-wasm-bytes",
         "href": "https://w3c.github.io/webappsec-csp/#can-compile-wasm-bytes",
-        "title": "EnsureCSPDoesNotBlockWasmByteCompilation(callerRealm, calleeRealm)",
-        "number": "4.4.1"
+        "title": "EnsureCSPDoesNotBlockWasmByteCompilation(realm)",
+        "number": "4.5.1"
       },
       "definedIn": "heading"
     },
@@ -2960,6 +2981,63 @@
       "definedIn": "prose"
     },
     {
+      "id": "webrtc",
+      "href": "https://w3c.github.io/webappsec-csp/#webrtc",
+      "linkingText": [
+        "webrtc"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "directive-webrtc",
+        "href": "https://w3c.github.io/webappsec-csp/#directive-webrtc",
+        "title": "webrtc",
+        "number": "6.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "grammardef-allow",
+      "href": "https://w3c.github.io/webappsec-csp/#grammardef-allow",
+      "linkingText": [
+        "'allow'"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "directive-webrtc",
+        "href": "https://w3c.github.io/webappsec-csp/#directive-webrtc",
+        "title": "webrtc",
+        "number": "6.2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "grammardef-block",
+      "href": "https://w3c.github.io/webappsec-csp/#grammardef-block",
+      "linkingText": [
+        "'block'"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "directive-webrtc",
+        "href": "https://w3c.github.io/webappsec-csp/#directive-webrtc",
+        "title": "webrtc",
+        "number": "6.2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "worker-src",
       "href": "https://w3c.github.io/webappsec-csp/#worker-src",
       "linkingText": [
@@ -2974,7 +3052,7 @@
         "id": "directive-worker-src",
         "href": "https://w3c.github.io/webappsec-csp/#directive-worker-src",
         "title": "worker-src",
-        "number": "6.1.17"
+        "number": "6.2.2"
       },
       "definedIn": "prose"
     },
@@ -2993,7 +3071,7 @@
         "id": "directive-base-uri",
         "href": "https://w3c.github.io/webappsec-csp/#directive-base-uri",
         "title": "base-uri",
-        "number": "6.2.1"
+        "number": "6.3.1"
       },
       "definedIn": "prose"
     },
@@ -3012,7 +3090,7 @@
         "id": "allow-base-for-document",
         "href": "https://w3c.github.io/webappsec-csp/#allow-base-for-document",
         "title": "Is base allowed for document?",
-        "number": "6.2.1.1"
+        "number": "6.3.1.1"
       },
       "definedIn": "heading"
     },
@@ -3031,7 +3109,7 @@
         "id": "directive-sandbox",
         "href": "https://w3c.github.io/webappsec-csp/#directive-sandbox",
         "title": "sandbox",
-        "number": "6.2.2"
+        "number": "6.3.2"
       },
       "definedIn": "prose"
     },
@@ -3050,7 +3128,7 @@
         "id": "directive-form-action",
         "href": "https://w3c.github.io/webappsec-csp/#directive-form-action",
         "title": "form-action",
-        "number": "6.3.1"
+        "number": "6.4.1"
       },
       "definedIn": "prose"
     },
@@ -3069,7 +3147,7 @@
         "id": "directive-frame-ancestors",
         "href": "https://w3c.github.io/webappsec-csp/#directive-frame-ancestors",
         "title": "frame-ancestors",
-        "number": "6.3.2"
+        "number": "6.4.2"
       },
       "definedIn": "prose"
     },
@@ -3088,7 +3166,7 @@
         "id": "directive-frame-ancestors",
         "href": "https://w3c.github.io/webappsec-csp/#directive-frame-ancestors",
         "title": "frame-ancestors",
-        "number": "6.3.2"
+        "number": "6.4.2"
       },
       "definedIn": "pre"
     },
@@ -3107,7 +3185,7 @@
         "id": "directive-frame-ancestors",
         "href": "https://w3c.github.io/webappsec-csp/#directive-frame-ancestors",
         "title": "frame-ancestors",
-        "number": "6.3.2"
+        "number": "6.4.2"
       },
       "definedIn": "pre"
     },
@@ -3126,7 +3204,7 @@
         "id": "directive-navigate-to",
         "href": "https://w3c.github.io/webappsec-csp/#directive-navigate-to",
         "title": "navigate-to",
-        "number": "6.3.3"
+        "number": "6.4.3"
       },
       "definedIn": "prose"
     },
@@ -3145,7 +3223,7 @@
         "id": "directive-report-uri",
         "href": "https://w3c.github.io/webappsec-csp/#directive-report-uri",
         "title": "report-uri",
-        "number": "6.4.1"
+        "number": "6.5.1"
       },
       "definedIn": "prose"
     },
@@ -3164,7 +3242,7 @@
         "id": "directive-report-to",
         "href": "https://w3c.github.io/webappsec-csp/#directive-report-to",
         "title": "report-to",
-        "number": "6.4.2"
+        "number": "6.5.2"
       },
       "definedIn": "prose"
     },
@@ -3183,7 +3261,7 @@
         "id": "match-schemes",
         "href": "https://w3c.github.io/webappsec-csp/#match-schemes",
         "title": "scheme-part matching",
-        "number": "6.6.2.7"
+        "number": "6.7.2.7"
       },
       "definedIn": "prose"
     },
@@ -3202,7 +3280,7 @@
         "id": "match-hosts",
         "href": "https://w3c.github.io/webappsec-csp/#match-hosts",
         "title": "host-part matching",
-        "number": "6.6.2.8"
+        "number": "6.7.2.8"
       },
       "definedIn": "prose"
     },
@@ -3221,7 +3299,7 @@
         "id": "match-ports",
         "href": "https://w3c.github.io/webappsec-csp/#match-ports",
         "title": "port-part matching",
-        "number": "6.6.2.9"
+        "number": "6.7.2.9"
       },
       "definedIn": "prose"
     },
@@ -3240,7 +3318,7 @@
         "id": "match-paths",
         "href": "https://w3c.github.io/webappsec-csp/#match-paths",
         "title": "path-part matching",
-        "number": "6.6.2.10"
+        "number": "6.7.2.10"
       },
       "definedIn": "prose"
     },
@@ -3263,7 +3341,7 @@
         "id": "allow-all-inline",
         "href": "https://w3c.github.io/webappsec-csp/#allow-all-inline",
         "title": "Does a source list allow all inline behavior for type?",
-        "number": "6.6.3.2"
+        "number": "6.7.3.2"
       },
       "definedIn": "prose"
     },
@@ -3284,7 +3362,7 @@
         "id": "effective-directive-for-a-request",
         "href": "https://w3c.github.io/webappsec-csp/#effective-directive-for-a-request",
         "title": "Get the effective directive for request",
-        "number": "6.7.1"
+        "number": "6.8.1"
       },
       "definedIn": "prose"
     }
