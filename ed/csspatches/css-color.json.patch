@@ -3,14 +3,16 @@ From: Francois Daoust <fd@tidoust.net>
 Date: Mon, 25 Apr 2022 11:50:02 +0200
 Subject: [PATCH] Add legacy values for rgb() and hsl() definitions
 
-The legacy values cannot easily be extracted from the prose (and if they were,
-we would have a hard time qualifying them as legacy definitions). Tools that
-want to handle legacy values need to join the `value` property and the
-`legacyValue` with a `|`.
+This is a permanent patch as legacy values cannot easily be extracted from the
+spec prose (even if they could, we would have a hard time qualifying them as
+legacy definitions).
 
 Definitions are at:
 https://drafts.csswg.org/css-color-4/#ref-for-legacy-color-syntax%E2%91%A1
 https://drafts.csswg.org/css-color-4/#ref-for-legacy-color-syntax%E2%91%A3
+
+Tools that want to handle legacy values need to join the `value` property and
+the `legacyValue` with a `|`.
 
 Via https://github.com/w3c/webref/issues/563
 ---
