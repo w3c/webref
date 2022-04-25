@@ -1,0 +1,15 @@
+{
+  "name": "AudioRenderCapacityEvent",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Web Audio API",
+      "url": "https://www.w3.org/TR/webaudio/"
+    },
+    "fragment": "[Exposed=Window]\ninterface AudioRenderCapacityEvent {\n  constructor (DOMString type, double timestamp, double averageLoad,\n              double peakLoad, double underrunRatio);\n    readonly attribute double timestamp;\n    readonly attribute double averageLoad;\n    readonly attribute double peakLoad;\n    readonly attribute double underrunRatio;\n};",
+    "href": "https://webaudio.github.io/web-audio-api/#audiorendercapacityevent"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

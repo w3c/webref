@@ -80,6 +80,23 @@ interface AudioContext : BaseAudioContext {
   MediaStreamAudioDestinationNode createMediaStreamDestination ();
 };
 
+[Exposed=Window]
+interface AudioContext : BaseAudioContext {
+  constructor (optional AudioContextOptions contextOptions = {});
+  readonly attribute double baseLatency;
+  readonly attribute double outputLatency;
+  [SecureContext] readonly attribute AudioRenderCapacity renderCapacity;
+  AudioTimestamp getOutputTimestamp ();
+  Promise<undefined> resume ();
+  Promise<undefined> suspend ();
+  Promise<undefined> close ();
+  MediaElementAudioSourceNode createMediaElementSource (HTMLMediaElement mediaElement);
+  MediaStreamAudioSourceNode createMediaStreamSource (MediaStream mediaStream);
+  MediaStreamTrackAudioSourceNode createMediaStreamTrackSource (
+    MediaStreamTrack mediaStreamTrack);
+  MediaStreamAudioDestinationNode createMediaStreamDestination ();
+};
+
 dictionary AudioContextOptions {
   (AudioContextLatencyCategory or double) latencyHint = "interactive";
   float sampleRate;
@@ -88,6 +105,27 @@ dictionary AudioContextOptions {
 dictionary AudioTimestamp {
   double contextTime;
   DOMHighResTimeStamp performanceTime;
+};
+
+[Exposed=Window]
+interface AudioRenderCapacity {
+  undefined start(AudioRenderCapacityOptions options);
+    undefined stop();
+    attribute EventHandler onupdate;
+};
+
+dictionary AudioRenderCapacityOptions {
+    double updateInterval = 1;
+};
+
+[Exposed=Window]
+interface AudioRenderCapacityEvent {
+  constructor (DOMString type, double timestamp, double averageLoad,
+              double peakLoad, double underrunRatio);
+    readonly attribute double timestamp;
+    readonly attribute double averageLoad;
+    readonly attribute double peakLoad;
+    readonly attribute double underrunRatio;
 };
 
 [Exposed=Window]

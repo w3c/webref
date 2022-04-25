@@ -8,6 +8,8 @@
       "constructors": {
         "Window": [
           "AudioContext",
+          "AudioContext",
+          "AudioRenderCapacityEvent",
           "OfflineAudioContext",
           "OfflineAudioCompletionEvent",
           "AudioBuffer",
@@ -41,6 +43,7 @@
       "functions": {
         "Window": [
           "BaseAudioContext",
+          "AudioRenderCapacity",
           "AudioNode",
           "AudioParam",
           "AudioScheduledSourceNode",
@@ -929,7 +932,7 @@
         "extAttrs": []
       },
       "AudioContext": {
-        "fragment": "[Exposed=Window]\ninterface AudioContext : BaseAudioContext {\n  constructor (optional AudioContextOptions contextOptions = {});\n  readonly attribute double baseLatency;\n  readonly attribute double outputLatency;\n  AudioTimestamp getOutputTimestamp ();\n  Promise<undefined> resume ();\n  Promise<undefined> suspend ();\n  Promise<undefined> close ();\n  MediaElementAudioSourceNode createMediaElementSource (HTMLMediaElement mediaElement);\n  MediaStreamAudioSourceNode createMediaStreamSource (MediaStream mediaStream);\n  MediaStreamTrackAudioSourceNode createMediaStreamTrackSource (\n    MediaStreamTrack mediaStreamTrack);\n  MediaStreamAudioDestinationNode createMediaStreamDestination ();\n};",
+        "fragment": "[Exposed=Window]\ninterface AudioContext : BaseAudioContext {\n  constructor (optional AudioContextOptions contextOptions = {});\n  readonly attribute double baseLatency;\n  readonly attribute double outputLatency;\n  [SecureContext] readonly attribute AudioRenderCapacity renderCapacity;\n  AudioTimestamp getOutputTimestamp ();\n  Promise<undefined> resume ();\n  Promise<undefined> suspend ();\n  Promise<undefined> close ();\n  MediaElementAudioSourceNode createMediaElementSource (HTMLMediaElement mediaElement);\n  MediaStreamAudioSourceNode createMediaStreamSource (MediaStream mediaStream);\n  MediaStreamTrackAudioSourceNode createMediaStreamTrackSource (\n    MediaStreamTrack mediaStreamTrack);\n  MediaStreamAudioDestinationNode createMediaStreamDestination ();\n};",
         "type": "interface",
         "name": "AudioContext",
         "inheritance": "BaseAudioContext",
@@ -985,6 +988,28 @@
               "idlType": "double"
             },
             "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "renderCapacity",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "AudioRenderCapacity"
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "SecureContext",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": "",
             "readonly": true
           },
@@ -1298,6 +1323,282 @@
           }
         ],
         "extAttrs": [],
+        "partial": false
+      },
+      "AudioRenderCapacity": {
+        "fragment": "[Exposed=Window]\ninterface AudioRenderCapacity {\n  undefined start(AudioRenderCapacityOptions options);\n    undefined stop();\n    attribute EventHandler onupdate;\n};",
+        "type": "interface",
+        "name": "AudioRenderCapacity",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "operation",
+            "name": "start",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "options",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "AudioRenderCapacityOptions"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "stop",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "attribute",
+            "name": "onupdate",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "EventHandler"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "AudioRenderCapacityOptions": {
+        "fragment": "dictionary AudioRenderCapacityOptions {\n    double updateInterval = 1;\n};",
+        "type": "dictionary",
+        "name": "AudioRenderCapacityOptions",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "updateInterval",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "default": {
+              "type": "number",
+              "value": "1"
+            },
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "AudioRenderCapacityEvent": {
+        "fragment": "[Exposed=Window]\ninterface AudioRenderCapacityEvent {\n  constructor (DOMString type, double timestamp, double averageLoad,\n              double peakLoad, double underrunRatio);\n    readonly attribute double timestamp;\n    readonly attribute double averageLoad;\n    readonly attribute double peakLoad;\n    readonly attribute double underrunRatio;\n};",
+        "type": "interface",
+        "name": "AudioRenderCapacityEvent",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "type",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "timestamp",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "double"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "averageLoad",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "double"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "peakLoad",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "double"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "underrunRatio",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "double"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": []
+          },
+          {
+            "type": "attribute",
+            "name": "timestamp",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "averageLoad",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "peakLoad",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "underrunRatio",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "OfflineAudioContext": {
@@ -8252,6 +8553,9 @@
       "Window": [
         "BaseAudioContext",
         "AudioContext",
+        "AudioContext",
+        "AudioRenderCapacity",
+        "AudioRenderCapacityEvent",
         "OfflineAudioContext",
         "OfflineAudioCompletionEvent",
         "AudioBuffer",
@@ -8332,7 +8636,8 @@
         "MediaStream",
         "MediaStreamTrackAudioSourceNode",
         "MediaStreamTrack",
-        "MediaStreamAudioDestinationNode"
+        "MediaStreamAudioDestinationNode",
+        "AudioRenderCapacity"
       ],
       "AudioContextOptions": [
         "AudioContextLatencyCategory"
@@ -8340,6 +8645,12 @@
       "AudioTimestamp": [
         "DOMHighResTimeStamp"
       ],
+      "AudioRenderCapacity": [
+        "AudioRenderCapacityOptions",
+        "EventHandler"
+      ],
+      "AudioRenderCapacityOptions": [],
+      "AudioRenderCapacityEvent": [],
       "OfflineAudioContext": [
         "BaseAudioContext",
         "OfflineAudioContextOptions",
