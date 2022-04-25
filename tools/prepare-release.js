@@ -70,7 +70,11 @@ function computeDiff(type) {
   // code to 0 to avoid the exception.
   const installedFiles = path.join(tmpFolder, "node_modules", "@webref", type);
   let diff = execSync(
-    `diff ${installedFiles} packages/${type} --ignore-trailing-space --exclude=package.json --unified=3 || echo -n`,
+    `diff ${installedFiles} packages/${type} --ignore-trailing-space --exclude=package.json --exclude=README.md --unified=3 || echo -n`,
+    { encoding: "utf8" });
+
+  const diffReadme = execSync(
+    `diff ${installedFiles}/README.md packages/${folder}/README.md --ignore-trailing-space --unified=3 || echo -n`,
     { encoding: "utf8" });
 
   // Diff includes added/removed files but they are hard to detect inline,
@@ -121,6 +125,13 @@ function computeDiff(type) {
   if (added.length > 0) {
     diff = "New repo files that are not yet in the released package:\n" +
       added.map(file => `+ ${file}`).join("\n") +
+      "\n\n" +
+      diff;
+  }
+
+  if (diffReadme) {
+    diff = "Static file(s) changed:\n" +
+      "+ README.md" +
       "\n\n" +
       diff;
   }
