@@ -39,7 +39,6 @@
           "HTMLIFrameElement",
           "HTMLEmbedElement",
           "HTMLObjectElement",
-          "HTMLParamElement",
           "HTMLVideoElement",
           "HTMLAudioElement",
           "HTMLTrackElement",
@@ -95,7 +94,8 @@
           "HTMLFrameSetElement",
           "HTMLFrameElement",
           "HTMLDirectoryElement",
-          "HTMLFontElement"
+          "HTMLFontElement",
+          "HTMLParamElement"
         ],
         "Worker": [
           "CanvasFilter",
@@ -4984,82 +4984,6 @@
             ],
             "extAttrs": [],
             "special": ""
-          }
-        ],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier",
-              "value": "Window"
-            },
-            "arguments": []
-          }
-        ],
-        "partial": false
-      },
-      "HTMLParamElement": {
-        "fragment": "[Exposed=Window]\ninterface HTMLParamElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute DOMString name;\n  [CEReactions] attribute DOMString value;\n\n  // also has obsolete members\n};",
-        "type": "interface",
-        "name": "HTMLParamElement",
-        "inheritance": "HTMLElement",
-        "members": [
-          {
-            "type": "constructor",
-            "arguments": [],
-            "extAttrs": [
-              {
-                "type": "extended-attribute",
-                "name": "HTMLConstructor",
-                "rhs": null,
-                "arguments": []
-              }
-            ]
-          },
-          {
-            "type": "attribute",
-            "name": "name",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            "extAttrs": [
-              {
-                "type": "extended-attribute",
-                "name": "CEReactions",
-                "rhs": null,
-                "arguments": []
-              }
-            ],
-            "special": "",
-            "readonly": false
-          },
-          {
-            "type": "attribute",
-            "name": "value",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            "extAttrs": [
-              {
-                "type": "extended-attribute",
-                "name": "CEReactions",
-                "rhs": null,
-                "arguments": []
-              }
-            ],
-            "special": "",
-            "readonly": false
           }
         ],
         "extAttrs": [
@@ -33245,6 +33169,126 @@
         ],
         "partial": false
       },
+      "HTMLParamElement": {
+        "fragment": "[Exposed=Window]\ninterface HTMLParamElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute DOMString name;\n  [CEReactions] attribute DOMString value;\n  [CEReactions] attribute DOMString type;\n  [CEReactions] attribute DOMString valueType;\n};",
+        "type": "interface",
+        "name": "HTMLParamElement",
+        "inheritance": "HTMLElement",
+        "members": [
+          {
+            "type": "constructor",
+            "arguments": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "HTMLConstructor",
+                "rhs": null,
+                "arguments": []
+              }
+            ]
+          },
+          {
+            "type": "attribute",
+            "name": "name",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "value",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "type",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "valueType",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": false
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
       "External": {
         "fragment": "[Exposed=Window]\ninterface External {\n  undefined AddSearchProvider();\n  undefined IsSearchProviderInstalled();\n};",
         "type": "interface",
@@ -37003,62 +37047,6 @@
           "partial": true
         }
       ],
-      "HTMLParamElement": [
-        {
-          "fragment": "partial interface HTMLParamElement {\n  [CEReactions] attribute DOMString type;\n  [CEReactions] attribute DOMString valueType;\n};",
-          "type": "interface",
-          "name": "HTMLParamElement",
-          "inheritance": null,
-          "members": [
-            {
-              "type": "attribute",
-              "name": "type",
-              "idlType": {
-                "type": "attribute-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "DOMString"
-              },
-              "extAttrs": [
-                {
-                  "type": "extended-attribute",
-                  "name": "CEReactions",
-                  "rhs": null,
-                  "arguments": []
-                }
-              ],
-              "special": "",
-              "readonly": false
-            },
-            {
-              "type": "attribute",
-              "name": "valueType",
-              "idlType": {
-                "type": "attribute-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "DOMString"
-              },
-              "extAttrs": [
-                {
-                  "type": "extended-attribute",
-                  "name": "CEReactions",
-                  "rhs": null,
-                  "arguments": []
-                }
-              ],
-              "special": "",
-              "readonly": false
-            }
-          ],
-          "extAttrs": [],
-          "partial": true
-        }
-      ],
       "HTMLPreElement": [
         {
           "fragment": "partial interface HTMLPreElement {\n  [CEReactions] attribute long width;\n};",
@@ -37961,7 +37949,6 @@
         "HTMLIFrameElement",
         "HTMLEmbedElement",
         "HTMLObjectElement",
-        "HTMLParamElement",
         "HTMLVideoElement",
         "HTMLAudioElement",
         "HTMLTrackElement",
@@ -38054,6 +38041,7 @@
         "HTMLFrameElement",
         "HTMLDirectoryElement",
         "HTMLFontElement",
+        "HTMLParamElement",
         "External"
       ],
       "Worker": [
@@ -38263,9 +38251,6 @@
         "Document",
         "WindowProxy",
         "ValidityState"
-      ],
-      "HTMLParamElement": [
-        "HTMLElement"
       ],
       "HTMLVideoElement": [
         "HTMLMediaElement"
@@ -38916,6 +38901,9 @@
         "HTMLElement"
       ],
       "HTMLFontElement": [
+        "HTMLElement"
+      ],
+      "HTMLParamElement": [
         "HTMLElement"
       ],
       "External": []

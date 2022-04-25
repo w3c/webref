@@ -5,63 +5,6 @@
   },
   "dfns": [
     {
-      "id": "dfn-mediastream",
-      "href": "https://www.w3.org/TR/webrtc-stats/#dfn-mediastream",
-      "linkingText": [
-        "MediaStream"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "terminology",
-        "href": "https://www.w3.org/TR/webrtc-stats/#terminology",
-        "title": "Terminology",
-        "number": "3"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-mediastreamtrack",
-      "href": "https://www.w3.org/TR/webrtc-stats/#dfn-mediastreamtrack",
-      "linkingText": [
-        "MediaStreamTrack"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "terminology",
-        "href": "https://www.w3.org/TR/webrtc-stats/#terminology",
-        "title": "Terminology",
-        "number": "3"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-consumer",
-      "href": "https://www.w3.org/TR/webrtc-stats/#dfn-consumer",
-      "linkingText": [
-        "Consumer"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "terminology",
-        "href": "https://www.w3.org/TR/webrtc-stats/#terminology",
-        "title": "Terminology",
-        "number": "3"
-      },
-      "definedIn": "prose"
-    },
-    {
       "id": "dfn-rtcprioritytype",
       "href": "https://www.w3.org/TR/webrtc-stats/#dfn-rtcprioritytype",
       "linkingText": [
@@ -4563,24 +4506,6 @@
       "definedIn": "dt"
     },
     {
-      "id": "dfn-transportid",
-      "href": "https://www.w3.org/TR/webrtc-stats/#dfn-transportid",
-      "linkingText": [
-        "transportId"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "dictionary-rtcdatachannelstats-members",
-        "href": "https://www.w3.org/TR/webrtc-stats/#dictionary-rtcdatachannelstats-members",
-        "title": "Dictionary RTCDataChannelStats Members"
-      },
-      "definedIn": "dt"
-    },
-    {
       "id": "dom-rtcdatachannelstats-state",
       "href": "https://www.w3.org/TR/webrtc-stats/#dom-rtcdatachannelstats-state",
       "linkingText": [
@@ -4980,6 +4905,26 @@
       "definedIn": "dt"
     },
     {
+      "id": "dom-rtctransportstats-dtlsrole",
+      "href": "https://www.w3.org/TR/webrtc-stats/#dom-rtctransportstats-dtlsrole",
+      "linkingText": [
+        "dtlsRole"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCTransportStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "dictionary-rtctransportstats-members",
+        "href": "https://www.w3.org/TR/webrtc-stats/#dictionary-rtctransportstats-members",
+        "title": "Dictionary RTCTransportStats Members"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "dom-rtctransportstats-srtpcipher",
       "href": "https://www.w3.org/TR/webrtc-stats/#dom-rtctransportstats-srtpcipher",
       "linkingText": [
@@ -5038,6 +4983,84 @@
         "title": "Dictionary RTCTransportStats Members"
       },
       "definedIn": "dt"
+    },
+    {
+      "id": "dom-rtcdtlsrole",
+      "href": "https://www.w3.org/TR/webrtc-stats/#dom-rtcdtlsrole",
+      "linkingText": [
+        "RTCDtlsRole"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "rtcdtlsrole-enum",
+        "href": "https://www.w3.org/TR/webrtc-stats/#rtcdtlsrole-enum",
+        "title": "RTCDtlsRole enum"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-rtcdtlsrole-client",
+      "href": "https://www.w3.org/TR/webrtc-stats/#dom-rtcdtlsrole-client",
+      "linkingText": [
+        "client"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "RTCDtlsRole"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "rtcdtlsrole-enum",
+        "href": "https://www.w3.org/TR/webrtc-stats/#rtcdtlsrole-enum",
+        "title": "RTCDtlsRole enum"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dom-rtcdtlsrole-server",
+      "href": "https://www.w3.org/TR/webrtc-stats/#dom-rtcdtlsrole-server",
+      "linkingText": [
+        "server"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "RTCDtlsRole"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "rtcdtlsrole-enum",
+        "href": "https://www.w3.org/TR/webrtc-stats/#rtcdtlsrole-enum",
+        "title": "RTCDtlsRole enum"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dom-rtcdtlsrole-unknown",
+      "href": "https://www.w3.org/TR/webrtc-stats/#dom-rtcdtlsrole-unknown",
+      "linkingText": [
+        "unknown"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "RTCDtlsRole"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "rtcdtlsrole-enum",
+        "href": "https://www.w3.org/TR/webrtc-stats/#rtcdtlsrole-enum",
+        "title": "RTCDtlsRole enum"
+      },
+      "definedIn": "table"
     },
     {
       "id": "dom-rtcsctptransportstats",

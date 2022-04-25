@@ -6,18 +6,10 @@
       "title": "HTML Standard",
       "url": "https://html.spec.whatwg.org/multipage/"
     },
-    "fragment": "[Exposed=Window]\ninterface HTMLParamElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute DOMString name;\n  [CEReactions] attribute DOMString value;\n\n  // also has obsolete members\n};",
-    "href": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#htmlparamelement"
+    "fragment": "[Exposed=Window]\ninterface HTMLParamElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute DOMString name;\n  [CEReactions] attribute DOMString value;\n  [CEReactions] attribute DOMString type;\n  [CEReactions] attribute DOMString valueType;\n};",
+    "href": "https://html.spec.whatwg.org/multipage/obsolete.html#htmlparamelement"
   },
-  "extended": [
-    {
-      "spec": {
-        "title": "HTML Standard",
-        "url": "https://html.spec.whatwg.org/multipage/"
-      },
-      "fragment": "partial interface HTMLParamElement {\n  [CEReactions] attribute DOMString type;\n  [CEReactions] attribute DOMString valueType;\n};"
-    }
-  ],
+  "extended": [],
   "inheritance": {
     "name": "HTMLElement",
     "type": "interface",

@@ -81,9 +81,7 @@ partial interface HTMLMediaElement {
 
 // Source: Remote Playback API (https://www.w3.org/TR/remote-playback/)
 partial interface HTMLMediaElement {
-    [SameObject]
-    readonly attribute RemotePlayback remote;
+  [SameObject] readonly attribute RemotePlayback remote;
 
-    [CEReactions]
-             attribute boolean        disableRemotePlayback;
+  [CEReactions] attribute boolean disableRemotePlayback;
 };

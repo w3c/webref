@@ -1,0 +1,399 @@
+{
+  "spec": {
+    "title": "Multi-Screen Window Placement",
+    "url": "https://w3c.github.io/window-placement/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://w3c.github.io/window-placement/#title",
+      "level": 1,
+      "title": "Multi-Screen Window Placement"
+    },
+    {
+      "id": "abstract",
+      "href": "https://w3c.github.io/window-placement/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "sotd",
+      "href": "https://w3c.github.io/window-placement/#sotd",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://w3c.github.io/window-placement/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "introduction",
+      "href": "https://w3c.github.io/window-placement/#introduction",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "motivations",
+      "href": "https://w3c.github.io/window-placement/#motivations",
+      "level": 3,
+      "title": "Motivating Use Cases",
+      "number": "1.1"
+    },
+    {
+      "id": "usage-overview",
+      "href": "https://w3c.github.io/window-placement/#usage-overview",
+      "level": 3,
+      "title": "Usage Overview",
+      "number": "1.2"
+    },
+    {
+      "id": "usage-overview-screen-extended",
+      "href": "https://w3c.github.io/window-placement/#usage-overview-screen-extended",
+      "level": 4,
+      "title": "Detect the presence of multiple screens",
+      "number": "1.2.1"
+    },
+    {
+      "id": "usage-overview-screen-changes",
+      "href": "https://w3c.github.io/window-placement/#usage-overview-screen-changes",
+      "level": 4,
+      "title": "Detect Screen attribute changes",
+      "number": "1.2.2"
+    },
+    {
+      "id": "usage-overview-screen-details",
+      "href": "https://w3c.github.io/window-placement/#usage-overview-screen-details",
+      "level": 4,
+      "title": "Request detailed screen information",
+      "number": "1.2.3"
+    },
+    {
+      "id": "usage-overview-place-fullscreen-content-on-a-specific-screen",
+      "href": "https://w3c.github.io/window-placement/#usage-overview-place-fullscreen-content-on-a-specific-screen",
+      "level": 4,
+      "title": "Place fullscreen content on a specific screen",
+      "number": "1.2.4"
+    },
+    {
+      "id": "usage-overview-place-windows-on-a-specific-screen",
+      "href": "https://w3c.github.io/window-placement/#usage-overview-place-windows-on-a-specific-screen",
+      "level": 4,
+      "title": "Place windows on a specific screen",
+      "number": "1.2.5"
+    },
+    {
+      "id": "concepts",
+      "href": "https://w3c.github.io/window-placement/#concepts",
+      "level": 2,
+      "title": "Concepts",
+      "number": "2"
+    },
+    {
+      "id": "concept-screen",
+      "href": "https://w3c.github.io/window-placement/#concept-screen",
+      "level": 3,
+      "title": "Screen",
+      "number": "2.1"
+    },
+    {
+      "id": "concept-screen-pixel",
+      "href": "https://w3c.github.io/window-placement/#concept-screen-pixel",
+      "level": 3,
+      "title": "Screen pixel",
+      "number": "2.2"
+    },
+    {
+      "id": "concept-screen-area",
+      "href": "https://w3c.github.io/window-placement/#concept-screen-area",
+      "level": 3,
+      "title": "Screen area",
+      "number": "2.3"
+    },
+    {
+      "id": "concept-available-screen-area",
+      "href": "https://w3c.github.io/window-placement/#concept-available-screen-area",
+      "level": 3,
+      "title": "Available screen area",
+      "number": "2.4"
+    },
+    {
+      "id": "concept-virtual-screen-arrangement",
+      "href": "https://w3c.github.io/window-placement/#concept-virtual-screen-arrangement",
+      "level": 3,
+      "title": "Virtual screen arrangement",
+      "number": "2.5"
+    },
+    {
+      "id": "concept-screen-position",
+      "href": "https://w3c.github.io/window-placement/#concept-screen-position",
+      "level": 3,
+      "title": "Screen position",
+      "number": "2.6"
+    },
+    {
+      "id": "concept-available-screen-position",
+      "href": "https://w3c.github.io/window-placement/#concept-available-screen-position",
+      "level": 3,
+      "title": "Available screen position",
+      "number": "2.7"
+    },
+    {
+      "id": "concept-primary-screen",
+      "href": "https://w3c.github.io/window-placement/#concept-primary-screen",
+      "level": 3,
+      "title": "Primary screen",
+      "number": "2.8"
+    },
+    {
+      "id": "concept-internal-screen",
+      "href": "https://w3c.github.io/window-placement/#concept-internal-screen",
+      "level": 3,
+      "title": "Internal screen",
+      "number": "2.9"
+    },
+    {
+      "id": "concept-current-screen",
+      "href": "https://w3c.github.io/window-placement/#concept-current-screen",
+      "level": 3,
+      "title": "Current screen",
+      "number": "2.10"
+    },
+    {
+      "id": "concept-observable-screen-properties",
+      "href": "https://w3c.github.io/window-placement/#concept-observable-screen-properties",
+      "level": 3,
+      "title": "Observable screen properties",
+      "number": "2.11"
+    },
+    {
+      "id": "api",
+      "href": "https://w3c.github.io/window-placement/#api",
+      "level": 2,
+      "title": "API",
+      "number": "3"
+    },
+    {
+      "id": "api-extensions-to-screen",
+      "href": "https://w3c.github.io/window-placement/#api-extensions-to-screen",
+      "level": 3,
+      "title": "Extensions to the Screen interface",
+      "number": "3.1"
+    },
+    {
+      "id": "api-screen-isExtended-attribute",
+      "href": "https://w3c.github.io/window-placement/#api-screen-isExtended-attribute",
+      "level": 4,
+      "title": "isExtended attribute",
+      "number": "3.1.1"
+    },
+    {
+      "id": "api-screen-onchange-attribute",
+      "href": "https://w3c.github.io/window-placement/#api-screen-onchange-attribute",
+      "level": 4,
+      "title": "onchange attribute",
+      "number": "3.1.2"
+    },
+    {
+      "id": "api-extensions-to-window",
+      "href": "https://w3c.github.io/window-placement/#api-extensions-to-window",
+      "level": 3,
+      "title": "Extensions to the Window interface",
+      "number": "3.2"
+    },
+    {
+      "id": "api-window-getScreenDetails-method",
+      "href": "https://w3c.github.io/window-placement/#api-window-getScreenDetails-method",
+      "level": 4,
+      "title": "getScreenDetails() method",
+      "number": "3.2.1"
+    },
+    {
+      "id": "api-window-attribute-and-method-definition-changes",
+      "href": "https://w3c.github.io/window-placement/#api-window-attribute-and-method-definition-changes",
+      "level": 4,
+      "title": "Window attribute and method definition changes",
+      "number": "3.2.2"
+    },
+    {
+      "id": "api-screendetails-interface",
+      "href": "https://w3c.github.io/window-placement/#api-screendetails-interface",
+      "level": 3,
+      "title": "ScreenDetails interface",
+      "number": "3.3"
+    },
+    {
+      "id": "api-screendetails-screens-attribute",
+      "href": "https://w3c.github.io/window-placement/#api-screendetails-screens-attribute",
+      "level": 4,
+      "title": "screens attribute",
+      "number": "3.3.1"
+    },
+    {
+      "id": "api-screendetails-currentscreen-attribute",
+      "href": "https://w3c.github.io/window-placement/#api-screendetails-currentscreen-attribute",
+      "level": 4,
+      "title": "currentScreen attribute",
+      "number": "3.3.2"
+    },
+    {
+      "id": "api-screendetails-onscreenschange-attribute",
+      "href": "https://w3c.github.io/window-placement/#api-screendetails-onscreenschange-attribute",
+      "level": 4,
+      "title": "onscreenschange attribute",
+      "number": "3.3.3"
+    },
+    {
+      "id": "api-screendetails-oncurrentscreenchange-attribute",
+      "href": "https://w3c.github.io/window-placement/#api-screendetails-oncurrentscreenchange-attribute",
+      "level": 4,
+      "title": "oncurrentscreenchange attribute",
+      "number": "3.3.4"
+    },
+    {
+      "id": "api-screendetailed-interface",
+      "href": "https://w3c.github.io/window-placement/#api-screendetailed-interface",
+      "level": 3,
+      "title": "The ScreenDetailed interface",
+      "number": "3.4"
+    },
+    {
+      "id": "api-screendetailed-onchange-attribute",
+      "href": "https://w3c.github.io/window-placement/#api-screendetailed-onchange-attribute",
+      "level": 4,
+      "title": "onchange attribute",
+      "number": "3.4.1"
+    },
+    {
+      "id": "api-extensions-to-fullscreen-options",
+      "href": "https://w3c.github.io/window-placement/#api-extensions-to-fullscreen-options",
+      "level": 3,
+      "title": "Extensions to FullscreenOptions",
+      "number": "3.5"
+    },
+    {
+      "id": "api-element-requestfullscreen-method-definition-changes",
+      "href": "https://w3c.github.io/window-placement/#api-element-requestfullscreen-method-definition-changes",
+      "level": 4,
+      "title": "requestFullscreen method definition changes",
+      "number": "3.5.1"
+    },
+    {
+      "id": "api-permission-api-integration",
+      "href": "https://w3c.github.io/window-placement/#api-permission-api-integration",
+      "level": 3,
+      "title": "Permission API Integration",
+      "number": "3.6"
+    },
+    {
+      "id": "api-permission-policy-integration",
+      "href": "https://w3c.github.io/window-placement/#api-permission-policy-integration",
+      "level": 3,
+      "title": "Permission Policy integration",
+      "number": "3.7"
+    },
+    {
+      "id": "security",
+      "href": "https://w3c.github.io/window-placement/#security",
+      "level": 2,
+      "title": "Security Considerations",
+      "number": "4"
+    },
+    {
+      "id": "privacy",
+      "href": "https://w3c.github.io/window-placement/#privacy",
+      "level": 2,
+      "title": "Privacy Considerations",
+      "number": "5"
+    },
+    {
+      "id": "a11y",
+      "href": "https://w3c.github.io/window-placement/#a11y",
+      "level": 2,
+      "title": "Accessibility Considerations",
+      "number": "6"
+    },
+    {
+      "id": "i18n",
+      "href": "https://w3c.github.io/window-placement/#i18n",
+      "level": 2,
+      "title": "Internationalization Considerations",
+      "number": "7"
+    },
+    {
+      "id": "acknowledgements",
+      "href": "https://w3c.github.io/window-placement/#acknowledgements",
+      "level": 2,
+      "title": "Acknowledgements",
+      "number": "8"
+    },
+    {
+      "id": "w3c-conformance",
+      "href": "https://w3c.github.io/window-placement/#w3c-conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "w3c-conventions",
+      "href": "https://w3c.github.io/window-placement/#w3c-conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "w3c-conformant-algorithms",
+      "href": "https://w3c.github.io/window-placement/#w3c-conformant-algorithms",
+      "level": 3,
+      "title": "Conformant Algorithms"
+    },
+    {
+      "id": "index",
+      "href": "https://w3c.github.io/window-placement/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://w3c.github.io/window-placement/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://w3c.github.io/window-placement/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://w3c.github.io/window-placement/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://w3c.github.io/window-placement/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://w3c.github.io/window-placement/#informative",
+      "level": 3,
+      "title": "Informative References"
+    },
+    {
+      "id": "idl-index",
+      "href": "https://w3c.github.io/window-placement/#idl-index",
+      "level": 2,
+      "title": "IDL Index"
+    },
+    {
+      "id": "issues-index",
+      "href": "https://w3c.github.io/window-placement/#issues-index",
+      "level": 2,
+      "title": "Issues Index"
+    }
+  ]
+}

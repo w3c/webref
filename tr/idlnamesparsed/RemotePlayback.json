@@ -6,7 +6,8 @@
       "title": "Remote Playback API",
       "url": "https://www.w3.org/TR/remote-playback/"
     },
-    "fragment": "[Exposed=Window]\ninterface RemotePlayback : EventTarget {\n    Promise<long> watchAvailability(RemotePlaybackAvailabilityCallback callback);\n    Promise<void> cancelWatchAvailability(optional long id);\n\n    readonly attribute RemotePlaybackState state;\n\n             attribute EventHandler        onconnecting;\n             attribute EventHandler        onconnect;\n             attribute EventHandler        ondisconnect;\n\n    Promise<void> prompt();\n};"
+    "fragment": "[Exposed=Window]\ninterface RemotePlayback : EventTarget {\n  Promise<long> watchAvailability(RemotePlaybackAvailabilityCallback callback);\n  Promise<undefined> cancelWatchAvailability(optional long id);\n\n  readonly attribute RemotePlaybackState state;\n\n  attribute EventHandler onconnecting;\n  attribute EventHandler onconnect;\n  attribute EventHandler ondisconnect;\n\n  Promise<undefined> prompt();\n};",
+    "href": "https://www.w3.org/TR/remote-playback/#dom-remoteplayback"
   },
   "extended": [],
   "inheritance": {

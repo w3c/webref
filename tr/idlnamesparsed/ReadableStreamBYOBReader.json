@@ -6,7 +6,7 @@
       "title": "Streams Standard",
       "url": "https://streams.spec.whatwg.org/"
     },
-    "fragment": "[Exposed=*]\ninterface ReadableStreamBYOBReader {\n  constructor(ReadableStream stream);\n\n  Promise<ReadableStreamBYOBReadResult> read(ArrayBufferView view);\n  undefined releaseLock();\n};",
+    "fragment": "[Exposed=*]\ninterface ReadableStreamBYOBReader {\n  constructor(ReadableStream stream);\n\n  Promise<ReadableStreamReadResult> read(ArrayBufferView view);\n  undefined releaseLock();\n};",
     "href": "https://streams.spec.whatwg.org/#readablestreambyobreader"
   },
   "extended": [

@@ -14,7 +14,7 @@
     },
     "idlNames": {
       "RemotePlayback": {
-        "fragment": "[Exposed=Window]\ninterface RemotePlayback : EventTarget {\n    Promise<long> watchAvailability(RemotePlaybackAvailabilityCallback callback);\n    Promise<void> cancelWatchAvailability(optional long id);\n\n    readonly attribute RemotePlaybackState state;\n\n             attribute EventHandler        onconnecting;\n             attribute EventHandler        onconnect;\n             attribute EventHandler        ondisconnect;\n\n    Promise<void> prompt();\n};",
+        "fragment": "[Exposed=Window]\ninterface RemotePlayback : EventTarget {\n  Promise<long> watchAvailability(RemotePlaybackAvailabilityCallback callback);\n  Promise<undefined> cancelWatchAvailability(optional long id);\n\n  readonly attribute RemotePlaybackState state;\n\n  attribute EventHandler onconnecting;\n  attribute EventHandler onconnect;\n  attribute EventHandler ondisconnect;\n\n  Promise<undefined> prompt();\n};",
         "type": "interface",
         "name": "RemotePlayback",
         "inheritance": "EventTarget",
@@ -76,7 +76,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "void"
+                  "idlType": "undefined"
                 }
               ]
             },
@@ -177,7 +177,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "void"
+                  "idlType": "undefined"
                 }
               ]
             },
@@ -200,7 +200,7 @@
         "partial": false
       },
       "RemotePlaybackState": {
-        "fragment": "enum RemotePlaybackState {\n    \"connecting\",\n    \"connected\",\n    \"disconnected\"\n};",
+        "fragment": "enum RemotePlaybackState {\n  \"connecting\",\n  \"connected\",\n  \"disconnected\"\n};",
         "type": "enum",
         "name": "RemotePlaybackState",
         "values": [
@@ -220,7 +220,7 @@
         "extAttrs": []
       },
       "RemotePlaybackAvailabilityCallback": {
-        "fragment": "callback RemotePlaybackAvailabilityCallback = void (boolean available);",
+        "fragment": "callback RemotePlaybackAvailabilityCallback = undefined(boolean available);",
         "type": "callback",
         "name": "RemotePlaybackAvailabilityCallback",
         "idlType": {
@@ -229,7 +229,7 @@
           "generic": "",
           "nullable": false,
           "union": false,
-          "idlType": "void"
+          "idlType": "undefined"
         },
         "arguments": [
           {
@@ -255,7 +255,7 @@
     "idlExtendedNames": {
       "HTMLMediaElement": [
         {
-          "fragment": "partial interface HTMLMediaElement {\n    [SameObject]\n    readonly attribute RemotePlayback remote;\n\n    [CEReactions]\n             attribute boolean        disableRemotePlayback;\n};",
+          "fragment": "partial interface HTMLMediaElement {\n  [SameObject] readonly attribute RemotePlayback remote;\n\n  [CEReactions] attribute boolean disableRemotePlayback;\n};",
           "type": "interface",
           "name": "HTMLMediaElement",
           "inheritance": null,
@@ -320,7 +320,6 @@
       "RemotePlayback": [
         "EventTarget",
         "RemotePlaybackAvailabilityCallback",
-        "void",
         "RemotePlaybackState",
         "EventHandler"
       ],
@@ -330,7 +329,6 @@
     },
     "externalDependencies": [
       "EventTarget",
-      "void",
       "EventHandler",
       "HTMLMediaElement"
     ],

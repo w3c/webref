@@ -1,3 +1,12 @@
+// Source: Multi-Screen Window Placement (https://w3c.github.io/window-placement/)
+partial interface Screen /* : EventTarget */ {
+  [SecureContext]
+  readonly attribute boolean isExtended;
+
+  [SecureContext]
+  attribute EventHandler onchange;
+};
+
 // Source: The Screen Orientation API (https://www.w3.org/TR/screen-orientation/)
 partial interface Screen {
   [SameObject] readonly attribute ScreenOrientation orientation;
