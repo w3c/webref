@@ -45,13 +45,15 @@
       "value": "<number> | <angle> | none"
     },
     "<rgb()>": {
-      "value": "rgb( [<percentage> | none]{3} [ / [<alpha-value> | none] ]? ) | rgb( [<number> | none]{3} [ / [<alpha-value> | none] ]? )"
+      "value": "rgb( [<percentage> | none]{3} [ / [<alpha-value> | none] ]? ) | rgb( [<number> | none]{3} [ / [<alpha-value> | none] ]? )",
+      "legacyValue": "rgb( <percentage>#{3} , <alpha-value>? ) | rgb( <number>#{3} , <alpha-value>? )"
     },
     "<alpha-value>": {
       "value": "<number> | <percentage>"
     },
     "<hsl()>": {
-      "value": "hsl( [<hue> | none] [<percentage> | none] [<percentage> | none] [ / [<alpha-value> | none] ]? )"
+      "value": "hsl( [<hue> | none] [<percentage> | none] [<percentage> | none] [ / [<alpha-value> | none] ]? )",
+      "legacyValue": "hsl( <hue>, <percentage>, <percentage>, <alpha-value>? )"
     },
     "<hwb()>": {
       "value": "hwb( [<hue> | none] [<percentage> | none] [<percentage> | none] [ / [<alpha-value> | none] ]? )"
