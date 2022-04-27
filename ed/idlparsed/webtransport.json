@@ -18,10 +18,14 @@
       "functions": {
         "Window": [
           "WebTransportDatagramDuplexStream",
+          "WebTransportSendStream",
+          "WebTransportReceiveStream",
           "WebTransportBidirectionalStream"
         ],
         "Worker": [
           "WebTransportDatagramDuplexStream",
+          "WebTransportSendStream",
+          "WebTransportReceiveStream",
           "WebTransportBidirectionalStream"
         ]
       }
@@ -166,7 +170,7 @@
         "partial": false
       },
       "WebTransport": {
-        "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface WebTransport {\n  constructor(USVString url, optional WebTransportOptions options = {});\n\n  Promise<WebTransportStats> getStats();\n  readonly attribute Promise<undefined> ready;\n  readonly attribute WebTransportReliabilityMode reliability;\n  readonly attribute Promise<WebTransportCloseInfo> closed;\n  undefined close(optional WebTransportCloseInfo closeInfo = {});\n\n  readonly attribute WebTransportDatagramDuplexStream datagrams;\n\n  Promise<WebTransportBidirectionalStream> createBidirectionalStream();\n  /* a ReadableStream of WebTransportBidirectionalStream objects */\n  readonly attribute ReadableStream incomingBidirectionalStreams;\n\n  Promise<WritableStream> createUnidirectionalStream();\n  /* a ReadableStream of ReceiveStreams */\n  readonly attribute ReadableStream incomingUnidirectionalStreams;\n};",
+        "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface WebTransport {\n  constructor(USVString url, optional WebTransportOptions options = {});\n\n  Promise<WebTransportStats> getStats();\n  readonly attribute Promise<undefined> ready;\n  readonly attribute WebTransportReliabilityMode reliability;\n  readonly attribute Promise<WebTransportCloseInfo> closed;\n  undefined close(optional WebTransportCloseInfo closeInfo = {});\n\n  readonly attribute WebTransportDatagramDuplexStream datagrams;\n\n  Promise<WebTransportBidirectionalStream> createBidirectionalStream();\n  /* a ReadableStream of WebTransportBidirectionalStream objects */\n  readonly attribute ReadableStream incomingBidirectionalStreams;\n\n  Promise<WebTransportSendStream> createUnidirectionalStream();\n  /* a ReadableStream of WebTransportReceiveStream objects */\n  readonly attribute ReadableStream incomingUnidirectionalStreams;\n};",
         "type": "interface",
         "name": "WebTransport",
         "inheritance": null,
@@ -402,7 +406,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "WritableStream"
+                  "idlType": "WebTransportSendStream"
                 }
               ]
             },
@@ -888,6 +892,245 @@
         "extAttrs": [],
         "partial": false
       },
+      "WebTransportSendStream": {
+        "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface WebTransportSendStream : WritableStream {\n  Promise<WebTransportSendStreamStats> getStats();\n};",
+        "type": "interface",
+        "name": "WebTransportSendStream",
+        "inheritance": "WritableStream",
+        "members": [
+          {
+            "type": "operation",
+            "name": "getStats",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "WebTransportSendStreamStats"
+                }
+              ]
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": ""
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                }
+              ]
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "WebTransportSendStreamStats": {
+        "fragment": "dictionary WebTransportSendStreamStats {\n  DOMHighResTimeStamp timestamp;\n  unsigned long long bytesWritten;\n  unsigned long long bytesSent;\n  unsigned long long bytesAcknowledged;\n};",
+        "type": "dictionary",
+        "name": "WebTransportSendStreamStats",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "timestamp",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMHighResTimeStamp"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "bytesWritten",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long long"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "bytesSent",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long long"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "bytesAcknowledged",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long long"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "WebTransportReceiveStream": {
+        "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface WebTransportReceiveStream : ReadableStream {\n  Promise<WebTransportReceiveStreamStats> getStats();\n};",
+        "type": "interface",
+        "name": "WebTransportReceiveStream",
+        "inheritance": "ReadableStream",
+        "members": [
+          {
+            "type": "operation",
+            "name": "getStats",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "WebTransportReceiveStreamStats"
+                }
+              ]
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": ""
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                }
+              ]
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "WebTransportReceiveStreamStats": {
+        "fragment": "dictionary WebTransportReceiveStreamStats {\n  DOMHighResTimeStamp timestamp;\n  unsigned long long bytesReceived;\n  unsigned long long bytesRead;\n};",
+        "type": "dictionary",
+        "name": "WebTransportReceiveStreamStats",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "timestamp",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMHighResTimeStamp"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "bytesReceived",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long long"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "bytesRead",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long long"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
       "WebTransportBidirectionalStream": {
         "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface WebTransportBidirectionalStream {\n  readonly attribute ReadableStream readable;\n  readonly attribute WritableStream writable;\n};",
         "type": "interface",
@@ -1108,12 +1351,16 @@
       "Window": [
         "WebTransportDatagramDuplexStream",
         "WebTransport",
+        "WebTransportSendStream",
+        "WebTransportReceiveStream",
         "WebTransportBidirectionalStream",
         "WebTransportError"
       ],
       "Worker": [
         "WebTransportDatagramDuplexStream",
         "WebTransport",
+        "WebTransportSendStream",
+        "WebTransportReceiveStream",
         "WebTransportBidirectionalStream",
         "WebTransportError"
       ]
@@ -1131,7 +1378,7 @@
         "WebTransportDatagramDuplexStream",
         "WebTransportBidirectionalStream",
         "ReadableStream",
-        "WritableStream"
+        "WebTransportSendStream"
       ],
       "WebTransportHash": [
         "BufferSource"
@@ -1145,6 +1392,20 @@
         "WebTransportDatagramStats"
       ],
       "WebTransportDatagramStats": [
+        "DOMHighResTimeStamp"
+      ],
+      "WebTransportSendStream": [
+        "WritableStream",
+        "WebTransportSendStreamStats"
+      ],
+      "WebTransportSendStreamStats": [
+        "DOMHighResTimeStamp"
+      ],
+      "WebTransportReceiveStream": [
+        "ReadableStream",
+        "WebTransportReceiveStreamStats"
+      ],
+      "WebTransportReceiveStreamStats": [
         "DOMHighResTimeStamp"
       ],
       "WebTransportBidirectionalStream": [
