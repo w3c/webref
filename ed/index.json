@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2022-04-29T12:51:14.681Z",
+  "date": "2022-04-29T18:38:43.838Z",
   "options": {
     "fallback": "webref-fallback/ed/index.json",
     "output": "report",
@@ -21,7 +21,7 @@
   },
   "stats": {
     "crawled": 467,
-    "errors": 0
+    "errors": 1
   },
   "crawler": "reffy-7.0.7",
   "results": [
@@ -2968,9 +2968,9 @@
       ],
       "crawled": "https://tc39.es/proposal-temporal/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 28 Apr 2022 17:48:32 GMT"
+        "lastModified": "Fri, 29 Apr 2022 17:57:14 GMT"
       },
-      "date": "28 April 2022",
+      "date": "29 April 2022",
       "links": "links/tc39-temporal.json",
       "headings": "headings/tc39-temporal.json",
       "ids": "ids/tc39-temporal.json"
@@ -17044,7 +17044,8 @@
       "css": "css/CSS.json",
       "dfns": "dfns/CSS22.json",
       "headings": "headings/CSS22.json",
-      "ids": "ids/CSS22.json"
+      "ids": "ids/CSS22.json",
+      "error": "Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers' Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers'\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:483:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 323)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/css3-exclusions/",
@@ -18531,10 +18532,10 @@
       ],
       "crawled": "https://w3c.github.io/html-aam/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 13 Apr 2022 12:18:28 GMT"
+        "lastModified": "Fri, 29 Apr 2022 15:28:50 GMT"
       },
       "generator": "respec",
-      "date": "13 April 2022",
+      "date": "29 April 2022",
       "links": "links/html-aam-1.0.json",
       "refs": "refs/html-aam-1.0.json",
       "headings": "headings/html-aam-1.0.json",
@@ -22087,10 +22088,10 @@
       ],
       "crawled": "https://w3c.github.io/secure-payment-confirmation/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 27 Apr 2022 17:53:33 GMT"
+        "lastModified": "Fri, 29 Apr 2022 13:20:06 GMT"
       },
       "generator": "bikeshed",
-      "date": "27 April 2022",
+      "date": "29 April 2022",
       "links": "links/secure-payment-confirmation.json",
       "refs": "refs/secure-payment-confirmation.json",
       "idl": "idl/secure-payment-confirmation.idl",
@@ -23470,7 +23471,7 @@
       ],
       "crawled": "https://w3c.github.io/aria/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 29 Apr 2022 07:16:13 GMT"
+        "lastModified": "Fri, 29 Apr 2022 14:27:19 GMT"
       },
       "generator": "respec",
       "date": "29 April 2022",
