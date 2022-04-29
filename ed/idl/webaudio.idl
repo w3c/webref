@@ -69,6 +69,7 @@ interface AudioContext : BaseAudioContext {
   constructor (optional AudioContextOptions contextOptions = {});
   readonly attribute double baseLatency;
   readonly attribute double outputLatency;
+  [SecureContext] readonly attribute AudioRenderCapacity renderCapacity;
   AudioTimestamp getOutputTimestamp ();
   Promise<undefined> resume ();
   Promise<undefined> suspend ();
@@ -88,6 +89,27 @@ dictionary AudioContextOptions {
 dictionary AudioTimestamp {
   double contextTime;
   DOMHighResTimeStamp performanceTime;
+};
+
+[Exposed=Window]
+interface AudioRenderCapacity {
+  undefined start(optional AudioRenderCapacityOptions options = {});
+    undefined stop();
+    attribute EventHandler onupdate;
+};
+
+dictionary AudioRenderCapacityOptions {
+    double updateInterval = 1;
+};
+
+[Exposed=Window]
+interface AudioRenderCapacityEvent {
+  constructor (DOMString type, double timestamp, double averageLoad,
+              double peakLoad, double underrunRatio);
+    readonly attribute double timestamp;
+    readonly attribute double averageLoad;
+    readonly attribute double peakLoad;
+    readonly attribute double underrunRatio;
 };
 
 [Exposed=Window]

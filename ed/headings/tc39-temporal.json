@@ -2753,7 +2753,7 @@
       "number": "11.6.3"
     },
     {
-      "id": "sec-temporal-getianatimezoneoffsetnanoseconds",
+      "id": "sec-temporalgetianatimezoneoffsetnanoseconds",
       "title": "GetIANATimeZoneOffsetNanoseconds ( epochNanoseconds, timeZoneIdentifier )",
       "level": 3,
       "number": "11.6.4"
@@ -2843,466 +2843,478 @@
       "number": "12"
     },
     {
-      "id": "sec-temporal-calendar-abstract-ops",
-      "title": "Abstract Operations for Temporal.Calendar Objects",
+      "id": "sec-calendar-types",
+      "title": "Calendar Types",
       "level": 2,
       "number": "12.1"
-    },
-    {
-      "id": "sec-temporal-createtemporalcalendar",
-      "title": "CreateTemporalCalendar ( identifier [ , newTarget ] )",
-      "level": 3,
-      "number": "12.1.1"
     },
     {
       "id": "sec-temporal-isbuiltincalendar",
       "title": "IsBuiltinCalendar ( id )",
       "level": 3,
+      "number": "12.1.1"
+    },
+    {
+      "id": "sec-temporal-availablecalendars",
+      "title": "AvailableCalendars ( )",
+      "level": 3,
       "number": "12.1.2"
+    },
+    {
+      "id": "sec-temporal-calendar-abstract-ops",
+      "title": "Abstract Operations for Temporal.Calendar Objects",
+      "level": 2,
+      "number": "12.2"
+    },
+    {
+      "id": "sec-temporal-createtemporalcalendar",
+      "title": "CreateTemporalCalendar ( identifier [ , newTarget ] )",
+      "level": 3,
+      "number": "12.2.1"
     },
     {
       "id": "sec-temporal-getbuiltincalendar",
       "title": "GetBuiltinCalendar ( id )",
       "level": 3,
-      "number": "12.1.3"
+      "number": "12.2.2"
     },
     {
       "id": "sec-temporal-getiso8601calendar",
       "title": "GetISO8601Calendar ( )",
       "level": 3,
-      "number": "12.1.4"
+      "number": "12.2.3"
     },
     {
       "id": "sec-temporal-calendarfields",
       "title": "CalendarFields ( calendar, fieldNames )",
       "level": 3,
-      "number": "12.1.5"
+      "number": "12.2.4"
     },
     {
       "id": "sec-temporal-calendarmergefields",
       "title": "CalendarMergeFields ( calendar, fields, additionalFields )",
       "level": 3,
-      "number": "12.1.6"
+      "number": "12.2.5"
     },
     {
       "id": "sec-temporal-calendardateadd",
       "title": "CalendarDateAdd ( calendar, date, duration [ , options [ , dateAdd ] ] )",
       "level": 3,
-      "number": "12.1.7"
+      "number": "12.2.6"
     },
     {
       "id": "sec-temporal-calendardateuntil",
       "title": "CalendarDateUntil ( calendar, one, two, options [ , dateUntil ] )",
       "level": 3,
-      "number": "12.1.8"
+      "number": "12.2.7"
     },
     {
       "id": "sec-temporal-calendaryear",
       "title": "CalendarYear ( calendar, dateLike )",
       "level": 3,
-      "number": "12.1.9"
+      "number": "12.2.8"
     },
     {
       "id": "sec-temporal-calendarmonth",
       "title": "CalendarMonth ( calendar, dateLike )",
       "level": 3,
-      "number": "12.1.10"
+      "number": "12.2.9"
     },
     {
       "id": "sec-temporal-calendarmonthcode",
       "title": "CalendarMonthCode ( calendar, dateLike )",
       "level": 3,
-      "number": "12.1.11"
+      "number": "12.2.10"
     },
     {
       "id": "sec-temporal-calendarday",
       "title": "CalendarDay ( calendar, dateLike )",
       "level": 3,
-      "number": "12.1.12"
+      "number": "12.2.11"
     },
     {
       "id": "sec-temporal-calendardayofweek",
       "title": "CalendarDayOfWeek ( calendar, dateLike )",
       "level": 3,
-      "number": "12.1.13"
+      "number": "12.2.12"
     },
     {
       "id": "sec-temporal-calendardayofyear",
       "title": "CalendarDayOfYear ( calendar, dateLike )",
       "level": 3,
-      "number": "12.1.14"
+      "number": "12.2.13"
     },
     {
       "id": "sec-temporal-calendarweekofyear",
       "title": "CalendarWeekOfYear ( calendar, dateLike )",
       "level": 3,
-      "number": "12.1.15"
+      "number": "12.2.14"
     },
     {
       "id": "sec-temporal-calendardaysinweek",
       "title": "CalendarDaysInWeek ( calendar, dateLike )",
       "level": 3,
-      "number": "12.1.16"
+      "number": "12.2.15"
     },
     {
       "id": "sec-temporal-calendardaysinmonth",
       "title": "CalendarDaysInMonth ( calendar, dateLike )",
       "level": 3,
-      "number": "12.1.17"
+      "number": "12.2.16"
     },
     {
       "id": "sec-temporal-calendardaysinyear",
       "title": "CalendarDaysInYear ( calendar, dateLike )",
       "level": 3,
-      "number": "12.1.18"
+      "number": "12.2.17"
     },
     {
       "id": "sec-temporal-calendarmonthsinyear",
       "title": "CalendarMonthsInYear ( calendar, dateLike )",
       "level": 3,
-      "number": "12.1.19"
+      "number": "12.2.18"
     },
     {
       "id": "sec-temporal-calendarinleapyear",
       "title": "CalendarInLeapYear ( calendar, dateLike )",
       "level": 3,
-      "number": "12.1.20"
+      "number": "12.2.19"
     },
     {
       "id": "sec-temporal-totemporalcalendar",
       "title": "ToTemporalCalendar ( temporalCalendarLike )",
       "level": 3,
-      "number": "12.1.21"
+      "number": "12.2.20"
     },
     {
       "id": "sec-temporal-totemporalcalendarwithisodefault",
       "title": "ToTemporalCalendarWithISODefault ( temporalCalendarLike )",
       "level": 3,
-      "number": "12.1.22"
+      "number": "12.2.21"
     },
     {
       "id": "sec-temporal-gettemporalcalendarwithisodefault",
       "title": "GetTemporalCalendarWithISODefault ( item )",
       "level": 3,
-      "number": "12.1.23"
+      "number": "12.2.22"
     },
     {
       "id": "sec-temporal-calendardatefromfields",
       "title": "CalendarDateFromFields ( calendar, fields [ , options ] )",
       "level": 3,
-      "number": "12.1.24"
+      "number": "12.2.23"
     },
     {
       "id": "sec-temporal-calendaryearmonthfromfields",
       "title": "CalendarYearMonthFromFields ( calendar, fields [ , options ] )",
       "level": 3,
-      "number": "12.1.25"
+      "number": "12.2.24"
     },
     {
       "id": "sec-temporal-calendarmonthdayfromfields",
       "title": "CalendarMonthDayFromFields ( calendar, fields [ , options ] )",
       "level": 3,
-      "number": "12.1.26"
+      "number": "12.2.25"
     },
     {
       "id": "sec-temporal-formatcalendarannotation",
       "title": "FormatCalendarAnnotation ( id, showCalendar )",
       "level": 3,
-      "number": "12.1.27"
+      "number": "12.2.26"
     },
     {
       "id": "sec-temporal-calendarequals",
       "title": "CalendarEquals ( one, two )",
       "level": 3,
-      "number": "12.1.28"
+      "number": "12.2.27"
     },
     {
       "id": "sec-temporal-consolidatecalendars",
       "title": "ConsolidateCalendars ( one, two )",
       "level": 3,
-      "number": "12.1.29"
+      "number": "12.2.28"
     },
     {
       "id": "sec-temporal-isisoleapyear",
       "title": "IsISOLeapYear ( year )",
       "level": 3,
-      "number": "12.1.30"
+      "number": "12.2.29"
     },
     {
       "id": "sec-temporal-isodaysinyear",
       "title": "ISODaysInYear ( year )",
       "level": 3,
-      "number": "12.1.31"
+      "number": "12.2.30"
     },
     {
       "id": "sec-temporal-isodaysinmonth",
       "title": "ISODaysInMonth ( year, month )",
       "level": 3,
-      "number": "12.1.32"
+      "number": "12.2.31"
     },
     {
       "id": "sec-temporal-toisodayofweek",
       "title": "ToISODayOfWeek ( year, month, day )",
       "level": 3,
-      "number": "12.1.33"
+      "number": "12.2.32"
     },
     {
       "id": "sec-temporal-toisodayofyear",
       "title": "ToISODayOfYear ( year, month, day )",
       "level": 3,
-      "number": "12.1.34"
+      "number": "12.2.33"
     },
     {
       "id": "sec-temporal-toisoweekofyear",
       "title": "ToISOWeekOfYear ( year, month, day )",
       "level": 3,
-      "number": "12.1.35"
+      "number": "12.2.34"
     },
     {
       "id": "sec-buildisomonthcode",
       "title": "BuildISOMonthCode ( month )",
       "level": 3,
-      "number": "12.1.36"
+      "number": "12.2.35"
     },
     {
       "id": "sec-temporal-resolveisomonth",
       "title": "ResolveISOMonth ( fields )",
       "level": 3,
-      "number": "12.1.37"
+      "number": "12.2.36"
     },
     {
       "id": "sec-temporal-isodatefromfields",
       "title": "ISODateFromFields ( fields, options )",
       "level": 3,
-      "number": "12.1.38"
+      "number": "12.2.37"
     },
     {
       "id": "sec-temporal-isoyearmonthfromfields",
       "title": "ISOYearMonthFromFields ( fields, options )",
       "level": 3,
-      "number": "12.1.39"
+      "number": "12.2.38"
     },
     {
       "id": "sec-temporal-isomonthdayfromfields",
       "title": "ISOMonthDayFromFields ( fields, options )",
       "level": 3,
-      "number": "12.1.40"
+      "number": "12.2.39"
     },
     {
       "id": "sec-temporal-isoyear",
       "title": "ISOYear ( temporalObject )",
       "level": 3,
-      "number": "12.1.41"
+      "number": "12.2.40"
     },
     {
       "id": "sec-temporal-isomonth",
       "title": "ISOMonth ( temporalObject )",
       "level": 3,
-      "number": "12.1.42"
+      "number": "12.2.41"
     },
     {
       "id": "sec-temporal-isomonthcode",
       "title": "ISOMonthCode ( temporalObject )",
       "level": 3,
-      "number": "12.1.43"
+      "number": "12.2.42"
     },
     {
       "id": "sec-temporal-isoday",
       "title": "ISODay ( temporalObject )",
       "level": 3,
-      "number": "12.1.44"
+      "number": "12.2.43"
     },
     {
       "id": "sec-temporal-defaultmergefields",
       "title": "DefaultMergeFields ( fields, additionalFields )",
       "level": 3,
-      "number": "12.1.45"
+      "number": "12.2.44"
     },
     {
       "id": "sec-temporal-calendar-constructor",
       "title": "The Temporal.Calendar Constructor",
       "level": 2,
-      "number": "12.2"
+      "number": "12.3"
     },
     {
       "id": "sec-temporal.calendar",
       "title": "Temporal.Calendar ( id )",
       "level": 3,
-      "number": "12.2.1"
+      "number": "12.3.1"
     },
     {
       "id": "sec-properties-of-the-temporal-calendar-constructor",
       "title": "Properties of the Temporal.Calendar Constructor",
       "level": 2,
-      "number": "12.3"
+      "number": "12.4"
     },
     {
       "id": "sec-temporal-calendar-prototype",
       "title": "Temporal.Calendar.prototype",
       "level": 3,
-      "number": "12.3.1"
+      "number": "12.4.1"
     },
     {
       "id": "sec-temporal.calendar.from",
       "title": "Temporal.Calendar.from ( calendarLike )",
       "level": 3,
-      "number": "12.3.2"
+      "number": "12.4.2"
     },
     {
       "id": "sec-properties-of-the-temporal-calendar-prototype-object",
       "title": "Properties of the Temporal.Calendar Prototype Object",
       "level": 2,
-      "number": "12.4"
+      "number": "12.5"
     },
     {
       "id": "sec-temporal.calendar.prototype.constructor",
       "title": "Temporal.Calendar.prototype.constructor",
       "level": 3,
-      "number": "12.4.1"
+      "number": "12.5.1"
     },
     {
       "id": "sec-temporal.calendar.prototype-@@tostringtag",
       "title": "Temporal.Calendar.prototype[ @@toStringTag ]",
       "level": 3,
-      "number": "12.4.2"
+      "number": "12.5.2"
     },
     {
       "id": "sec-get-temporal.calendar.prototype.id",
       "title": "get Temporal.Calendar.prototype.id",
       "level": 3,
-      "number": "12.4.3"
+      "number": "12.5.3"
     },
     {
       "id": "sec-temporal.calendar.prototype.datefromfields",
       "title": "Temporal.Calendar.prototype.dateFromFields ( fields [ , options ] )",
       "level": 3,
-      "number": "12.4.4"
+      "number": "12.5.4"
     },
     {
       "id": "sec-temporal.calendar.prototype.yearmonthfromfields",
       "title": "Temporal.Calendar.prototype.yearMonthFromFields ( fields [ , options ] )",
       "level": 3,
-      "number": "12.4.5"
+      "number": "12.5.5"
     },
     {
       "id": "sec-temporal.calendar.prototype.monthdayfromfields",
       "title": "Temporal.Calendar.prototype.monthDayFromFields ( fields [ , options ] )",
       "level": 3,
-      "number": "12.4.6"
+      "number": "12.5.6"
     },
     {
       "id": "sec-temporal.calendar.prototype.dateadd",
       "title": "Temporal.Calendar.prototype.dateAdd ( date, duration [ , options ] )",
       "level": 3,
-      "number": "12.4.7"
+      "number": "12.5.7"
     },
     {
       "id": "sec-temporal.calendar.prototype.dateuntil",
       "title": "Temporal.Calendar.prototype.dateUntil ( one, two [ , options ] )",
       "level": 3,
-      "number": "12.4.8"
+      "number": "12.5.8"
     },
     {
       "id": "sec-temporal.calendar.prototype.year",
       "title": "Temporal.Calendar.prototype.year ( temporalDateLike )",
       "level": 3,
-      "number": "12.4.9"
+      "number": "12.5.9"
     },
     {
       "id": "sec-temporal.calendar.prototype.month",
       "title": "Temporal.Calendar.prototype.month ( temporalDateLike )",
       "level": 3,
-      "number": "12.4.10"
+      "number": "12.5.10"
     },
     {
       "id": "sec-temporal.calendar.prototype.monthcode",
       "title": "Temporal.Calendar.prototype.monthCode ( temporalDateLike )",
       "level": 3,
-      "number": "12.4.11"
+      "number": "12.5.11"
     },
     {
       "id": "sec-temporal.calendar.prototype.day",
       "title": "Temporal.Calendar.prototype.day ( temporalDateLike )",
       "level": 3,
-      "number": "12.4.12"
+      "number": "12.5.12"
     },
     {
       "id": "sec-temporal.calendar.prototype.dayofweek",
       "title": "Temporal.Calendar.prototype.dayOfWeek ( temporalDateLike )",
       "level": 3,
-      "number": "12.4.13"
+      "number": "12.5.13"
     },
     {
       "id": "sec-temporal.calendar.prototype.dayofyear",
       "title": "Temporal.Calendar.prototype.dayOfYear ( temporalDateLike )",
       "level": 3,
-      "number": "12.4.14"
+      "number": "12.5.14"
     },
     {
       "id": "sec-temporal.calendar.prototype.weekofyear",
       "title": "Temporal.Calendar.prototype.weekOfYear ( temporalDateLike )",
       "level": 3,
-      "number": "12.4.15"
+      "number": "12.5.15"
     },
     {
       "id": "sec-temporal.calendar.prototype.daysinweek",
       "title": "Temporal.Calendar.prototype.daysInWeek ( temporalDateLike )",
       "level": 3,
-      "number": "12.4.16"
+      "number": "12.5.16"
     },
     {
       "id": "sec-temporal.calendar.prototype.daysinmonth",
       "title": "Temporal.Calendar.prototype.daysInMonth ( temporalDateLike )",
       "level": 3,
-      "number": "12.4.17"
+      "number": "12.5.17"
     },
     {
       "id": "sec-temporal.calendar.prototype.daysinyear",
       "title": "Temporal.Calendar.prototype.daysInYear ( temporalDateLike )",
       "level": 3,
-      "number": "12.4.18"
+      "number": "12.5.18"
     },
     {
       "id": "sec-temporal.calendar.prototype.monthsinyear",
       "title": "Temporal.Calendar.prototype.monthsInYear ( temporalDateLike )",
       "level": 3,
-      "number": "12.4.19"
+      "number": "12.5.19"
     },
     {
       "id": "sec-temporal.calendar.prototype.inleapyear",
       "title": "Temporal.Calendar.prototype.inLeapYear ( temporalDateLike )",
       "level": 3,
-      "number": "12.4.20"
+      "number": "12.5.20"
     },
     {
       "id": "sec-temporal.calendar.prototype.fields",
       "title": "Temporal.Calendar.prototype.fields ( fields )",
       "level": 3,
-      "number": "12.4.21"
+      "number": "12.5.21"
     },
     {
       "id": "sec-temporal.calendar.prototype.mergefields",
       "title": "Temporal.Calendar.prototype.mergeFields ( fields, additionalFields )",
       "level": 3,
-      "number": "12.4.22"
+      "number": "12.5.22"
     },
     {
       "id": "sec-temporal.calendar.prototype.tostring",
       "title": "Temporal.Calendar.prototype.toString ( )",
       "level": 3,
-      "number": "12.4.23"
+      "number": "12.5.23"
     },
     {
       "id": "sec-temporal.calendar.prototype.tojson",
       "title": "Temporal.Calendar.prototype.toJSON ( )",
       "level": 3,
-      "number": "12.4.24"
+      "number": "12.5.24"
     },
     {
       "id": "sec-properties-of-temporal-calendar-instances",
       "title": "Properties of Temporal.Calendar Instances",
       "level": 2,
-      "number": "12.5"
+      "number": "12.6"
     },
     {
       "id": "sec-temporal-abstract-ops",
@@ -3653,6 +3665,18 @@
       "number": "15.1.3"
     },
     {
+      "id": "sup-calendar-types",
+      "title": "Calendar Types",
+      "level": 3,
+      "number": "15.1.4"
+    },
+    {
+      "id": "sup-availablecalendars",
+      "title": "AvailableCalendars ( )",
+      "level": 4,
+      "number": "15.1.4.1"
+    },
+    {
       "id": "sec-abstract-operations",
       "title": "Abstract Operations",
       "level": 2,
@@ -3851,22 +3875,130 @@
       "number": "15.6.1"
     },
     {
-      "id": "sup-temporal-isbuiltincalendar",
-      "title": "IsBuiltinCalendar ( id )",
-      "level": 4,
-      "number": "15.6.1.1"
-    },
-    {
       "id": "sec-temporal-calendarera",
       "title": "CalendarEra ( calendar, dateLike )",
       "level": 4,
-      "number": "15.6.1.2"
+      "number": "15.6.1.1"
     },
     {
       "id": "sec-temporal-calendarerayear",
       "title": "CalendarEraYear ( calendar, dateLike )",
       "level": 4,
+      "number": "15.6.1.2"
+    },
+    {
+      "id": "sec-temporal-calendardatetoiso",
+      "title": "CalendarDateToISO ( calendar, fields, overflow )",
+      "level": 4,
       "number": "15.6.1.3"
+    },
+    {
+      "id": "sec-temporal-calendardateaddition",
+      "title": "CalendarDateAddition ( calendar, date, duration, overflow )",
+      "level": 4,
+      "number": "15.6.1.4"
+    },
+    {
+      "id": "sec-temporal-calendardatedifference",
+      "title": "CalendarDateDifference ( calendar, one, two, largestUnit )",
+      "level": 4,
+      "number": "15.6.1.5"
+    },
+    {
+      "id": "sec-temporal-calendardateera",
+      "title": "CalendarDateEra ( calendar, date )",
+      "level": 4,
+      "number": "15.6.1.6"
+    },
+    {
+      "id": "sec-temporal-calendardateerayear",
+      "title": "CalendarDateEraYear ( calendar, date )",
+      "level": 4,
+      "number": "15.6.1.7"
+    },
+    {
+      "id": "sec-temporal-calendardateyear",
+      "title": "CalendarDateYear ( calendar, date )",
+      "level": 4,
+      "number": "15.6.1.8"
+    },
+    {
+      "id": "sec-temporal-calendardatemonth",
+      "title": "CalendarDateMonth ( calendar, date )",
+      "level": 4,
+      "number": "15.6.1.9"
+    },
+    {
+      "id": "sec-temporal-calendardatemonthcode",
+      "title": "CalendarDateMonthCode ( calendar, date )",
+      "level": 4,
+      "number": "15.6.1.10"
+    },
+    {
+      "id": "sec-temporal-calendardateday",
+      "title": "CalendarDateDay ( calendar, date )",
+      "level": 4,
+      "number": "15.6.1.11"
+    },
+    {
+      "id": "sec-temporal-calendardatedayofweek",
+      "title": "CalendarDateDayOfWeek ( calendar, date )",
+      "level": 4,
+      "number": "15.6.1.12"
+    },
+    {
+      "id": "sec-temporal-calendardatedayofyear",
+      "title": "CalendarDateDayOfYear ( calendar, date )",
+      "level": 4,
+      "number": "15.6.1.13"
+    },
+    {
+      "id": "sec-temporal-calendardateweekofyear",
+      "title": "CalendarDateWeekOfYear ( calendar, date )",
+      "level": 4,
+      "number": "15.6.1.14"
+    },
+    {
+      "id": "sec-temporal-calendardatedaysinweek",
+      "title": "CalendarDateDaysInWeek ( calendar, date )",
+      "level": 4,
+      "number": "15.6.1.15"
+    },
+    {
+      "id": "sec-temporal-calendardatedaysinmonth",
+      "title": "CalendarDateDaysInMonth ( calendar, date )",
+      "level": 4,
+      "number": "15.6.1.16"
+    },
+    {
+      "id": "sec-temporal-calendardatedaysinyear",
+      "title": "CalendarDateDaysInYear ( calendar, date )",
+      "level": 4,
+      "number": "15.6.1.17"
+    },
+    {
+      "id": "sec-temporal-calendardatemonthsinyear",
+      "title": "CalendarDateMonthsInYear ( calendar, date )",
+      "level": 4,
+      "number": "15.6.1.18"
+    },
+    {
+      "id": "sec-temporal-calendardateinleapyear",
+      "title": "CalendarDateInLeapYear ( calendar, date )",
+      "level": 4,
+      "number": "15.6.1.19"
+    },
+    {
+      "id": "sec-temporal-calendardatefields",
+      "title": "CalendarDateFields ( calendar, fields )",
+      "level": 4,
+      "number": "15.6.1.20"
+    },
+    {
+      "id": "sec-temporal-calendardatemergefields",
+      "title": "CalendarDateMergeFields ( calendar, fields, additionalFields )",
+      "level": 4,
+      "number": "15.6.1.21"
     },
     {
       "id": "sup-properties-of-the-temporal-calendar-prototype-object",
