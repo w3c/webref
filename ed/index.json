@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2022-04-29T06:38:19.081Z",
+  "date": "2022-04-29T12:51:14.681Z",
   "options": {
     "fallback": "webref-fallback/ed/index.json",
     "output": "report",
@@ -20,10 +20,10 @@
     ]
   },
   "stats": {
-    "crawled": 468,
-    "errors": 3
+    "crawled": 467,
+    "errors": 0
   },
-  "crawler": "reffy-7.0.6",
+  "crawler": "reffy-7.0.7",
   "results": [
     {
       "url": "https://compat.spec.whatwg.org/",
@@ -3936,10 +3936,10 @@
       ],
       "crawled": "https://w3c.github.io/webdriver-bidi/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 14 Apr 2022 10:52:45 GMT"
+        "lastModified": "Fri, 29 Apr 2022 11:44:51 GMT"
       },
       "generator": "bikeshed",
-      "date": "14 April 2022",
+      "date": "29 April 2022",
       "links": "links/webdriver-bidi.json",
       "refs": "refs/webdriver-bidi.json",
       "dfns": "dfns/webdriver-bidi.json",
@@ -4049,17 +4049,17 @@
     {
       "url": "https://webassembly.github.io/exception-handling/js-api/",
       "seriesComposition": "fork",
-      "shortname": "wasm-js-api-1-fork-exception-handling",
+      "shortname": "wasm-js-api-2-fork-exception-handling",
       "series": {
         "shortname": "wasm-js-api",
-        "currentSpecification": "wasm-js-api-1",
+        "currentSpecification": "wasm-js-api-2",
         "title": "WebAssembly JavaScript Interface",
         "shortTitle": "WebAssembly JavaScript Interface",
         "releaseUrl": "https://www.w3.org/TR/wasm-js-api/",
         "nightlyUrl": "https://webassembly.github.io/spec/js-api/"
       },
-      "seriesVersion": "1",
-      "forkOf": "wasm-js-api-1",
+      "seriesVersion": "2",
+      "forkOf": "wasm-js-api-2",
       "organization": "W3C",
       "groups": [
         {
@@ -4088,11 +4088,11 @@
       },
       "generator": "bikeshed",
       "date": "28 February 2022",
-      "links": "links/wasm-js-api-1-fork-exception-handling.json",
-      "refs": "refs/wasm-js-api-1-fork-exception-handling.json",
-      "dfns": "dfns/wasm-js-api-1-fork-exception-handling.json",
-      "headings": "headings/wasm-js-api-1-fork-exception-handling.json",
-      "ids": "ids/wasm-js-api-1-fork-exception-handling.json"
+      "links": "links/wasm-js-api-2-fork-exception-handling.json",
+      "refs": "refs/wasm-js-api-2-fork-exception-handling.json",
+      "dfns": "dfns/wasm-js-api-2-fork-exception-handling.json",
+      "headings": "headings/wasm-js-api-2-fork-exception-handling.json",
+      "ids": "ids/wasm-js-api-2-fork-exception-handling.json"
     },
     {
       "url": "https://webbluetoothcg.github.io/web-bluetooth/",
@@ -6229,60 +6229,6 @@
       "dfns": "dfns/netinfo.json",
       "headings": "headings/netinfo.json",
       "ids": "ids/netinfo.json"
-    },
-    {
-      "url": "https://wicg.github.io/origin-policy/",
-      "seriesComposition": "full",
-      "shortname": "origin-policy",
-      "series": {
-        "shortname": "origin-policy",
-        "currentSpecification": "origin-policy",
-        "title": "Origin Policy",
-        "shortTitle": "Origin Policy",
-        "nightlyUrl": "https://wicg.github.io/origin-policy/"
-      },
-      "organization": "W3C",
-      "groups": [
-        {
-          "name": "Web Platform Incubator Community Group",
-          "url": "https://www.w3.org/community/wicg/"
-        }
-      ],
-      "nightly": {
-        "url": "https://wicg.github.io/origin-policy/",
-        "repository": "https://github.com/WICG/origin-policy",
-        "sourcePath": "index.src.html",
-        "filename": "index.html"
-      },
-      "title": "Origin Policy",
-      "source": "specref",
-      "shortTitle": "Origin Policy",
-      "categories": [
-        "browser"
-      ],
-      "tests": {
-        "repository": "https://github.com/web-platform-tests/wpt",
-        "testPaths": [
-          "origin-policy"
-        ]
-      },
-      "versions": [
-        "https://wicg.github.io/origin-policy/"
-      ],
-      "crawled": "https://wicg.github.io/origin-policy/",
-      "crawlCacheInfo": {
-        "lastModified": "Mon, 08 Jun 2020 19:18:05 GMT"
-      },
-      "generator": "bikeshed",
-      "date": "8 June 2020",
-      "links": "links/origin-policy.json",
-      "refs": "refs/origin-policy.json",
-      "idl": "idl/origin-policy.idl",
-      "idlparsed": "idlparsed/origin-policy.json",
-      "dfns": "dfns/origin-policy.json",
-      "headings": "headings/origin-policy.json",
-      "ids": "ids/origin-policy.json",
-      "error": "Error: Loading script from reffy/scripts/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/reffy.mjs failed Error: Loading script from reffy/scripts/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/reffy.mjs failed\n    at DOMWorld.addScriptTag (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:177:23)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:652:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 122)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://wicg.github.io/overscroll-scrollend-events/",
@@ -17100,8 +17046,7 @@
       "css": "css/CSS.json",
       "dfns": "dfns/CSS22.json",
       "headings": "headings/CSS22.json",
-      "ids": "ids/CSS22.json",
-      "error": "Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers' Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers'\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:483:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 324)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
+      "ids": "ids/CSS22.json"
     },
     {
       "url": "https://www.w3.org/TR/css3-exclusions/",
@@ -20918,8 +20863,7 @@
       "idlparsed": "idlparsed/performance-timeline.json",
       "dfns": "dfns/performance-timeline.json",
       "headings": "headings/performance-timeline.json",
-      "ids": "ids/performance-timeline.json",
-      "error": "Error: Loading https://w3c.github.io/performance-timeline/ triggered HTTP status 503 Error: Loading https://w3c.github.io/performance-timeline/ triggered HTTP status 503\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 391)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
+      "ids": "ids/performance-timeline.json"
     },
     {
       "url": "https://www.w3.org/TR/permissions-policy-1/",
@@ -21679,10 +21623,10 @@
       ],
       "crawled": "https://w3c.github.io/requestidlecallback/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 13 Apr 2022 13:30:58 GMT"
+        "lastModified": "Fri, 29 Apr 2022 09:31:49 GMT"
       },
       "generator": "respec",
-      "date": "13 April 2022",
+      "date": "29 April 2022",
       "links": "links/requestidlecallback.json",
       "refs": "refs/requestidlecallback.json",
       "idl": "idl/requestidlecallback.idl",
@@ -23528,10 +23472,10 @@
       ],
       "crawled": "https://w3c.github.io/aria/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 22 Apr 2022 09:04:53 GMT"
+        "lastModified": "Fri, 29 Apr 2022 07:16:13 GMT"
       },
       "generator": "respec",
-      "date": "22 April 2022",
+      "date": "29 April 2022",
       "links": "links/wai-aria-1.2.json",
       "refs": "refs/wai-aria-1.2.json",
       "idl": "idl/wai-aria.idl",
@@ -23598,20 +23542,20 @@
       "ids": "ids/wasm-core-1.json"
     },
     {
-      "url": "https://www.w3.org/TR/wasm-js-api-1/",
+      "url": "https://www.w3.org/TR/wasm-js-api-2/",
       "seriesComposition": "full",
-      "shortname": "wasm-js-api-1",
+      "shortname": "wasm-js-api-2",
       "series": {
         "shortname": "wasm-js-api",
-        "currentSpecification": "wasm-js-api-1",
+        "currentSpecification": "wasm-js-api-2",
         "title": "WebAssembly JavaScript Interface",
         "shortTitle": "WebAssembly JavaScript Interface",
         "releaseUrl": "https://www.w3.org/TR/wasm-js-api/",
         "nightlyUrl": "https://webassembly.github.io/spec/js-api/"
       },
-      "seriesVersion": "1",
+      "seriesVersion": "2",
       "forks": [
-        "wasm-js-api-1-fork-exception-handling"
+        "wasm-js-api-2-fork-exception-handling"
       ],
       "organization": "W3C",
       "groups": [
@@ -23621,7 +23565,7 @@
         }
       ],
       "release": {
-        "url": "https://www.w3.org/TR/wasm-js-api-1/",
+        "url": "https://www.w3.org/TR/wasm-js-api-2/",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -23643,7 +23587,7 @@
         ]
       },
       "versions": [
-        "https://www.w3.org/TR/wasm-js-api-1/",
+        "https://www.w3.org/TR/wasm-js-api-2/",
         "https://webassembly.github.io/spec/js-api/"
       ],
       "crawled": "https://webassembly.github.io/spec/js-api/",
@@ -23652,27 +23596,27 @@
       },
       "generator": "bikeshed",
       "date": "27 April 2022",
-      "links": "links/wasm-js-api-1.json",
-      "refs": "refs/wasm-js-api-1.json",
+      "links": "links/wasm-js-api-2.json",
+      "refs": "refs/wasm-js-api-2.json",
       "idl": "idl/wasm-js-api.idl",
       "idlparsed": "idlparsed/wasm-js-api.json",
-      "dfns": "dfns/wasm-js-api-1.json",
-      "headings": "headings/wasm-js-api-1.json",
-      "ids": "ids/wasm-js-api-1.json"
+      "dfns": "dfns/wasm-js-api-2.json",
+      "headings": "headings/wasm-js-api-2.json",
+      "ids": "ids/wasm-js-api-2.json"
     },
     {
-      "url": "https://www.w3.org/TR/wasm-web-api-1/",
+      "url": "https://www.w3.org/TR/wasm-web-api-2/",
       "seriesComposition": "full",
-      "shortname": "wasm-web-api-1",
+      "shortname": "wasm-web-api-2",
       "series": {
         "shortname": "wasm-web-api",
-        "currentSpecification": "wasm-web-api-1",
+        "currentSpecification": "wasm-web-api-2",
         "title": "WebAssembly Web API",
         "shortTitle": "WebAssembly Web API",
         "releaseUrl": "https://www.w3.org/TR/wasm-web-api/",
         "nightlyUrl": "https://webassembly.github.io/spec/web-api/"
       },
-      "seriesVersion": "1",
+      "seriesVersion": "2",
       "organization": "W3C",
       "groups": [
         {
@@ -23681,7 +23625,7 @@
         }
       ],
       "release": {
-        "url": "https://www.w3.org/TR/wasm-web-api-1/",
+        "url": "https://www.w3.org/TR/wasm-web-api-2/",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -23703,7 +23647,7 @@
         ]
       },
       "versions": [
-        "https://www.w3.org/TR/wasm-web-api-1/",
+        "https://www.w3.org/TR/wasm-web-api-2/",
         "https://webassembly.github.io/spec/web-api/"
       ],
       "crawled": "https://webassembly.github.io/spec/web-api/",
@@ -23712,13 +23656,13 @@
       },
       "generator": "bikeshed",
       "date": "27 April 2022",
-      "links": "links/wasm-web-api-1.json",
-      "refs": "refs/wasm-web-api-1.json",
+      "links": "links/wasm-web-api-2.json",
+      "refs": "refs/wasm-web-api-2.json",
       "idl": "idl/wasm-web-api.idl",
       "idlparsed": "idlparsed/wasm-web-api.json",
-      "dfns": "dfns/wasm-web-api-1.json",
-      "headings": "headings/wasm-web-api-1.json",
-      "ids": "ids/wasm-web-api-1.json"
+      "dfns": "dfns/wasm-web-api-2.json",
+      "headings": "headings/wasm-web-api-2.json",
+      "ids": "ids/wasm-web-api-2.json"
     },
     {
       "url": "https://www.w3.org/TR/web-animations-1/",

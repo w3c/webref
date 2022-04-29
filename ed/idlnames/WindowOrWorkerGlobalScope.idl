@@ -37,11 +37,6 @@ partial interface mixin WindowOrWorkerGlobalScope {
   readonly attribute TrustedTypePolicyFactory trustedTypes;
 };
 
-// Source: Origin Policy (https://wicg.github.io/origin-policy/)
-partial interface mixin WindowOrWorkerGlobalScope {
-  readonly attribute FrozenArray<DOMString> originPolicyIds;
-};
-
 // Source: Prioritized Task Scheduling (https://wicg.github.io/scheduling-apis/)
 partial interface mixin WindowOrWorkerGlobalScope {
   [Replaceable] readonly attribute Scheduler scheduler;
