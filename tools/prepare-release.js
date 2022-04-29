@@ -74,7 +74,7 @@ function computeDiff(type) {
     { encoding: "utf8" });
 
   const diffReadme = execSync(
-    `diff ${installedFiles}/README.md packages/${folder}/README.md --ignore-trailing-space --unified=3 || echo -n`,
+    `diff ${installedFiles}/README.md packages/${type}/README.md --ignore-trailing-space --unified=3 || echo -n`,
     { encoding: "utf8" });
 
   // Diff includes added/removed files but they are hard to detect inline,
