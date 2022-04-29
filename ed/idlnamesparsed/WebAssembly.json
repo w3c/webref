@@ -4,7 +4,7 @@
   "defined": {
     "spec": {
       "title": "WebAssembly JavaScript Interface",
-      "url": "https://www.w3.org/TR/wasm-js-api-1/"
+      "url": "https://www.w3.org/TR/wasm-js-api-2/"
     },
     "fragment": "[Exposed=(Window,Worker,Worklet)]\nnamespace WebAssembly {\n    boolean validate(BufferSource bytes);\n    Promise<Module> compile(BufferSource bytes);\n\n    Promise<WebAssemblyInstantiatedSource> instantiate(\n        BufferSource bytes, optional object importObject);\n\n    Promise<Instance> instantiate(\n        Module moduleObject, optional object importObject);\n};",
     "href": "https://webassembly.github.io/spec/js-api/#namespacedef-webassembly"
@@ -13,7 +13,7 @@
     {
       "spec": {
         "title": "WebAssembly Web API",
-        "url": "https://www.w3.org/TR/wasm-web-api-1/"
+        "url": "https://www.w3.org/TR/wasm-web-api-2/"
       },
       "fragment": "[Exposed=(Window,Worker)]\npartial namespace WebAssembly {\n  Promise<Module> compileStreaming(Promise<Response> source);\n  Promise<WebAssemblyInstantiatedSource> instantiateStreaming(\n      Promise<Response> source, optional object importObject);\n};"
     }
@@ -21,7 +21,7 @@
   "inheritance": null,
   "includes": [],
   "dfns": {
-    "https://www.w3.org/TR/wasm-js-api-1/": [
+    "https://www.w3.org/TR/wasm-js-api-2/": [
       {
         "id": "namespacedef-webassembly",
         "href": "https://webassembly.github.io/spec/js-api/#namespacedef-webassembly",
@@ -128,7 +128,7 @@
         "definedIn": "prose"
       }
     ],
-    "https://www.w3.org/TR/wasm-web-api-1/": [
+    "https://www.w3.org/TR/wasm-web-api-2/": [
       {
         "id": "dom-webassembly-compilestreaming",
         "href": "https://webassembly.github.io/spec/web-api/#dom-webassembly-compilestreaming",
