@@ -1,0 +1,55 @@
+From 745dd73e339032e20b2c0bc06a08cc26d4a7bfc4 Mon Sep 17 00:00:00 2001
+From: Francois Daoust <fd@tidoust.net>
+Date: Fri, 29 Apr 2022 10:07:39 +0200
+Subject: [PATCH] Patch duplicate and invalid IDL definitions
+
+Fixes the following IDL issues:
+
+* Make dictionary argument optional:
+https://github.com/WebAudio/web-audio-api/pull/2485
+
+* Drop duplicate AudioContext interface definition:
+https://github.com/WebAudio/web-audio-api/pull/2486
+---
+ ed/idl/webaudio.idl | 18 +-----------------
+ 1 file changed, 1 insertion(+), 17 deletions(-)
+
+diff --git a/ed/idl/webaudio.idl b/ed/idl/webaudio.idl
+index 6664056ac..bca694672 100644
+--- a/ed/idl/webaudio.idl
++++ b/ed/idl/webaudio.idl
+@@ -64,22 +64,6 @@ enum AudioContextLatencyCategory {
+     "playback"
+ };
+ 
+-[Exposed=Window]
+-interface AudioContext : BaseAudioContext {
+-  constructor (optional AudioContextOptions contextOptions = {});
+-  readonly attribute double baseLatency;
+-  readonly attribute double outputLatency;
+-  AudioTimestamp getOutputTimestamp ();
+-  Promise<undefined> resume ();
+-  Promise<undefined> suspend ();
+-  Promise<undefined> close ();
+-  MediaElementAudioSourceNode createMediaElementSource (HTMLMediaElement mediaElement);
+-  MediaStreamAudioSourceNode createMediaStreamSource (MediaStream mediaStream);
+-  MediaStreamTrackAudioSourceNode createMediaStreamTrackSource (
+-    MediaStreamTrack mediaStreamTrack);
+-  MediaStreamAudioDestinationNode createMediaStreamDestination ();
+-};
+-
+ [Exposed=Window]
+ interface AudioContext : BaseAudioContext {
+   constructor (optional AudioContextOptions contextOptions = {});
+@@ -109,7 +93,7 @@ dictionary AudioTimestamp {
+ 
+ [Exposed=Window]
+ interface AudioRenderCapacity {
+-  undefined start(AudioRenderCapacityOptions options);
++  undefined start(optional AudioRenderCapacityOptions options = {});
+     undefined stop();
+     attribute EventHandler onupdate;
+ };
+-- 
+2.36.0.windows.1
+
