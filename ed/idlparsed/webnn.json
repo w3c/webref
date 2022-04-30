@@ -19,14 +19,16 @@
           "MLContext",
           "MLOperand",
           "MLOperator",
-          "MLGraph"
+          "MLGraph",
+          "MLCommandEncoder"
         ],
         "DedicatedWorker": [
           "ML",
           "MLContext",
           "MLOperand",
           "MLOperator",
-          "MLGraph"
+          "MLGraph",
+          "MLCommandEncoder"
         ]
       }
     },
@@ -69,22 +71,18 @@
         "extAttrs": [],
         "partial": false
       },
-      "MLDevicePreference": {
-        "fragment": "enum MLDevicePreference {\n  \"default\",\n  \"gpu\",\n  \"cpu\"\n};",
+      "MLDeviceType": {
+        "fragment": "enum MLDeviceType {\n  \"cpu\",\n  \"gpu\"\n};",
         "type": "enum",
-        "name": "MLDevicePreference",
+        "name": "MLDeviceType",
         "values": [
           {
             "type": "enum-value",
-            "value": "default"
+            "value": "cpu"
           },
           {
             "type": "enum-value",
             "value": "gpu"
-          },
-          {
-            "type": "enum-value",
-            "value": "cpu"
           }
         ],
         "extAttrs": []
@@ -110,14 +108,14 @@
         "extAttrs": []
       },
       "MLContextOptions": {
-        "fragment": "dictionary MLContextOptions {\n  MLDevicePreference devicePreference = \"default\";\n  MLPowerPreference powerPreference = \"default\";\n};",
+        "fragment": "dictionary MLContextOptions {\n  MLDeviceType deviceType = \"cpu\";\n  MLPowerPreference powerPreference = \"default\";\n};",
         "type": "dictionary",
         "name": "MLContextOptions",
         "inheritance": null,
         "members": [
           {
             "type": "field",
-            "name": "devicePreference",
+            "name": "deviceType",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -125,11 +123,11 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLDevicePreference"
+              "idlType": "MLDeviceType"
             },
             "default": {
               "type": "string",
-              "value": "default"
+              "value": "cpu"
             },
             "required": false
           },
@@ -156,7 +154,7 @@
         "partial": false
       },
       "ML": {
-        "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface ML {\n  MLContext createContext(optional MLContextOptions options = {});\n  MLContext createContext(WebGLRenderingContext glContext);\n  MLContext createContext(GPUDevice gpuDevice);\n};",
+        "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface ML {\n  MLContext createContext(optional MLContextOptions options = {});\n  MLContext createContext(GPUDevice gpuDevice);\n  MLContext createContext(WebGLRenderingContext glContext);\n};",
         "type": "interface",
         "name": "ML",
         "inheritance": null,
@@ -209,7 +207,7 @@
             "arguments": [
               {
                 "type": "argument",
-                "name": "glContext",
+                "name": "gpuDevice",
                 "extAttrs": [],
                 "idlType": {
                   "type": "argument-type",
@@ -217,7 +215,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "WebGLRenderingContext"
+                  "idlType": "GPUDevice"
                 },
                 "default": null,
                 "optional": false,
@@ -241,7 +239,7 @@
             "arguments": [
               {
                 "type": "argument",
-                "name": "gpuDevice",
+                "name": "glContext",
                 "extAttrs": [],
                 "idlType": {
                   "type": "argument-type",
@@ -249,7 +247,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "GPUDevice"
+                  "idlType": "WebGLRenderingContext"
                 },
                 "default": null,
                 "optional": false,
@@ -285,6 +283,134 @@
           }
         ],
         "partial": false
+      },
+      "MLArrayInput": {
+        "fragment": "dictionary MLArrayInput {\n  required ArrayBufferView resource;\n  required sequence<long> dimensions;\n};",
+        "type": "dictionary",
+        "name": "MLArrayInput",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "resource",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "ArrayBufferView"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "dimensions",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "long"
+                }
+              ]
+            },
+            "default": null,
+            "required": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "MLNamedArrayInputs": {
+        "fragment": "typedef record<DOMString, (ArrayBufferView or MLArrayInput)> MLNamedArrayInputs;",
+        "type": "typedef",
+        "name": "MLNamedArrayInputs",
+        "idlType": {
+          "type": "typedef-type",
+          "extAttrs": [],
+          "generic": "record",
+          "nullable": false,
+          "union": false,
+          "idlType": [
+            {
+              "type": "typedef-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            {
+              "type": "typedef-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": true,
+              "idlType": [
+                {
+                  "type": null,
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "ArrayBufferView"
+                },
+                {
+                  "type": null,
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "MLArrayInput"
+                }
+              ]
+            }
+          ]
+        },
+        "extAttrs": []
+      },
+      "MLNamedArrayOutputs": {
+        "fragment": "typedef record<DOMString, ArrayBufferView> MLNamedArrayOutputs;",
+        "type": "typedef",
+        "name": "MLNamedArrayOutputs",
+        "idlType": {
+          "type": "typedef-type",
+          "extAttrs": [],
+          "generic": "record",
+          "nullable": false,
+          "union": false,
+          "idlType": [
+            {
+              "type": "typedef-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            {
+              "type": "typedef-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "ArrayBufferView"
+            }
+          ]
+        },
+        "extAttrs": []
       },
       "MLContext": {
         "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface MLContext {};",
@@ -617,7 +743,7 @@
         "extAttrs": []
       },
       "MLGraphBuilder": {
-        "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface MLGraphBuilder {\n  // Construct the graph builder from the context.\n  constructor(MLContext context);\n\n  // Create an operand for a graph input.\n  MLOperand input(DOMString name, MLOperandDescriptor desc);\n\n  // Create an operand for a graph constant.\n  MLOperand constant(MLOperandDescriptor desc, MLBufferView bufferView);\n\n  // Create a single-value operand from the specified number of the specified type.\n  MLOperand constant(double value, optional MLOperandType type = \"float32\");\n\n  // Compile the graph up to the specified output operands\n  MLGraph build(MLNamedOperands outputs);\n};",
+        "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface MLGraphBuilder {\n  // Construct the graph builder from the context.\n  constructor(MLContext context);\n\n  // Create an operand for a graph input.\n  MLOperand input(DOMString name, MLOperandDescriptor desc);\n\n  // Create an operand for a graph constant.\n  MLOperand constant(MLOperandDescriptor desc, MLBufferView bufferView);\n\n  // Create a single-value operand from the specified number of the specified type.\n  MLOperand constant(double value, optional MLOperandType type = \"float32\");\n\n  // Compile the graph up to the specified output operands\n  [Exposed=(DedicatedWorker)]\n  MLGraph build(MLNamedOperands outputs);\n};",
         "type": "interface",
         "name": "MLGraphBuilder",
         "inheritance": null,
@@ -820,7 +946,21 @@
                 "variadic": false
               }
             ],
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "Exposed",
+                "rhs": {
+                  "type": "identifier-list",
+                  "value": [
+                    {
+                      "value": "DedicatedWorker"
+                    }
+                  ]
+                },
+                "arguments": []
+              }
+            ],
             "special": ""
           }
         ],
@@ -2667,10 +2807,42 @@
         "extAttrs": [],
         "partial": false
       },
-      "MLResource": {
-        "fragment": "typedef (MLBufferView or WebGLTexture or GPUTexture) MLResource;",
+      "MLGraph": {
+        "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface MLGraph {};",
+        "type": "interface",
+        "name": "MLGraph",
+        "inheritance": null,
+        "members": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "DedicatedWorker"
+                }
+              ]
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "MLGPUResource": {
+        "fragment": "typedef (GPUBuffer or GPUTexture) MLGPUResource;",
         "type": "typedef",
-        "name": "MLResource",
+        "name": "MLGPUResource",
         "idlType": {
           "type": "typedef-type",
           "extAttrs": [],
@@ -2684,15 +2856,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLBufferView"
-            },
-            {
-              "type": null,
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "WebGLTexture"
+              "idlType": "GPUBuffer"
             },
             {
               "type": null,
@@ -2706,10 +2870,10 @@
         },
         "extAttrs": []
       },
-      "MLInput": {
-        "fragment": "dictionary MLInput {\n  required MLResource resource;\n  required sequence<long> dimensions;\n};",
+      "MLGPUInput": {
+        "fragment": "dictionary MLGPUInput {\n  required MLGPUResource resource;\n  required sequence<long> dimensions;\n};",
         "type": "dictionary",
-        "name": "MLInput",
+        "name": "MLGPUInput",
         "inheritance": null,
         "members": [
           {
@@ -2722,7 +2886,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLResource"
+              "idlType": "MLGPUResource"
             },
             "default": null,
             "required": true
@@ -2755,10 +2919,10 @@
         "extAttrs": [],
         "partial": false
       },
-      "MLNamedInputs": {
-        "fragment": "typedef record<DOMString, (MLResource or MLInput)> MLNamedInputs;",
+      "MLNamedGPUInputs": {
+        "fragment": "typedef record<DOMString, (MLGPUResource or MLGPUInput)> MLNamedGPUInputs;",
         "type": "typedef",
-        "name": "MLNamedInputs",
+        "name": "MLNamedGPUInputs",
         "idlType": {
           "type": "typedef-type",
           "extAttrs": [],
@@ -2787,7 +2951,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "MLResource"
+                  "idlType": "MLGPUResource"
                 },
                 {
                   "type": null,
@@ -2795,7 +2959,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "MLInput"
+                  "idlType": "MLGPUInput"
                 }
               ]
             }
@@ -2803,10 +2967,10 @@
         },
         "extAttrs": []
       },
-      "MLNamedOutputs": {
-        "fragment": "typedef record<DOMString, MLResource> MLNamedOutputs;",
+      "MLNamedGPUOutputs": {
+        "fragment": "typedef record<DOMString, MLGPUResource> MLNamedGPUOutputs;",
         "type": "typedef",
-        "name": "MLNamedOutputs",
+        "name": "MLNamedGPUOutputs",
         "idlType": {
           "type": "typedef-type",
           "extAttrs": [],
@@ -2828,67 +2992,18 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLResource"
+              "idlType": "MLGPUResource"
             }
           ]
         },
         "extAttrs": []
       },
-      "MLGraph": {
-        "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface MLGraph {\n  undefined compute(MLNamedInputs inputs, MLNamedOutputs outputs);\n};",
+      "MLCommandEncoder": {
+        "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface MLCommandEncoder {};",
         "type": "interface",
-        "name": "MLGraph",
+        "name": "MLCommandEncoder",
         "inheritance": null,
-        "members": [
-          {
-            "type": "operation",
-            "name": "compute",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "undefined"
-            },
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "inputs",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "MLNamedInputs"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              },
-              {
-                "type": "argument",
-                "name": "outputs",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "MLNamedOutputs"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              }
-            ],
-            "extAttrs": [],
-            "special": ""
-          }
-        ],
+        "members": [],
         "extAttrs": [
           {
             "type": "extended-attribute",
@@ -2933,6 +3048,204 @@
           "extAttrs": [],
           "target": "WorkerNavigator",
           "includes": "NavigatorML"
+        }
+      ],
+      "MLContext": [
+        {
+          "fragment": "partial interface MLContext {\n  [Exposed=(DedicatedWorker)]\n  undefined compute(MLGraph graph, MLNamedArrayInputs inputs, MLNamedArrayOutputs outputs);\n};",
+          "type": "interface",
+          "name": "MLContext",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "operation",
+              "name": "compute",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "undefined"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "graph",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLGraph"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "inputs",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLNamedArrayInputs"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "outputs",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLNamedArrayOutputs"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "Exposed",
+                  "rhs": {
+                    "type": "identifier-list",
+                    "value": [
+                      {
+                        "value": "DedicatedWorker"
+                      }
+                    ]
+                  },
+                  "arguments": []
+                }
+              ],
+              "special": ""
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial interface MLContext {\n  Promise<undefined> computeAsync(MLGraph graph, MLNamedArrayInputs inputs,\n\n                    MLNamedArrayOutputs outputs);\n};",
+          "type": "interface",
+          "name": "MLContext",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "operation",
+              "name": "computeAsync",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "Promise",
+                "nullable": false,
+                "union": false,
+                "idlType": [
+                  {
+                    "type": "return-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "undefined"
+                  }
+                ]
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "graph",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLGraph"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "inputs",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLNamedArrayInputs"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "outputs",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLNamedArrayOutputs"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial interface MLContext {\n  MLCommandEncoder createCommandEncoder();\n};",
+          "type": "interface",
+          "name": "MLContext",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "operation",
+              "name": "createCommandEncoder",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLCommandEncoder"
+              },
+              "arguments": [],
+              "extAttrs": [],
+              "special": ""
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
         }
       ],
       "MLGraphBuilder": [
@@ -6447,6 +6760,168 @@
           "extAttrs": [],
           "partial": true
         }
+      ],
+      "MLCommandEncoder": [
+        {
+          "fragment": "partial interface MLCommandEncoder {\n  undefined initializeGraph(MLGraph graph);\n};",
+          "type": "interface",
+          "name": "MLCommandEncoder",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "operation",
+              "name": "initializeGraph",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "undefined"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "graph",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLGraph"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial interface MLCommandEncoder {\n  undefined dispatch(MLGraph graph, MLNamedGPUInputs inputs, MLNamedGPUOutputs outputs);\n};",
+          "type": "interface",
+          "name": "MLCommandEncoder",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "operation",
+              "name": "dispatch",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "undefined"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "graph",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLGraph"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "inputs",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLNamedGPUInputs"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "outputs",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLNamedGPUOutputs"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial interface MLCommandEncoder {\n  GPUCommandBuffer finish(optional GPUCommandBufferDescriptor descriptor = {});\n};",
+          "type": "interface",
+          "name": "MLCommandEncoder",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "operation",
+              "name": "finish",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "GPUCommandBuffer"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "descriptor",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "GPUCommandBufferDescriptor"
+                  },
+                  "default": {
+                    "type": "dictionary"
+                  },
+                  "optional": true,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
       ]
     },
     "globals": {},
@@ -6457,7 +6932,8 @@
         "MLOperand",
         "MLOperator",
         "MLGraphBuilder",
-        "MLGraph"
+        "MLGraph",
+        "MLCommandEncoder"
       ],
       "DedicatedWorker": [
         "ML",
@@ -6465,7 +6941,8 @@
         "MLOperand",
         "MLOperator",
         "MLGraphBuilder",
-        "MLGraph"
+        "MLGraph",
+        "MLCommandEncoder"
       ]
     },
     "dependencies": {
@@ -6479,16 +6956,24 @@
         "NavigatorML"
       ],
       "MLContextOptions": [
-        "MLDevicePreference",
+        "MLDeviceType",
         "MLPowerPreference"
       ],
       "ML": [
         "MLContext",
         "MLContextOptions",
-        "WebGLRenderingContext",
-        "GPUDevice"
+        "GPUDevice",
+        "WebGLRenderingContext"
       ],
-      "MLContext": [],
+      "MLArrayInput": [
+        "ArrayBufferView"
+      ],
+      "MLContext": [
+        "MLGraph",
+        "MLNamedArrayInputs",
+        "MLNamedArrayOutputs",
+        "MLCommandEncoder"
+      ],
       "MLOperandDescriptor": [
         "MLOperandType"
       ],
@@ -6587,22 +7072,27 @@
       "MLSplitOptions": [],
       "MLSqueezeOptions": [],
       "MLTransposeOptions": [],
-      "MLInput": [
-        "MLResource"
+      "MLGraph": [],
+      "MLGPUInput": [
+        "MLGPUResource"
       ],
-      "MLGraph": [
-        "MLNamedInputs",
-        "MLNamedOutputs"
+      "MLCommandEncoder": [
+        "MLGraph",
+        "MLNamedGPUInputs",
+        "MLNamedGPUOutputs",
+        "GPUCommandBuffer",
+        "GPUCommandBufferDescriptor"
       ]
     },
     "externalDependencies": [
-      "WebGLRenderingContext",
       "GPUDevice",
+      "WebGLRenderingContext",
+      "ArrayBufferView",
       "WebGLBuffer",
       "GPUBuffer",
-      "ArrayBufferView",
-      "WebGLTexture",
-      "GPUTexture"
+      "GPUTexture",
+      "GPUCommandBuffer",
+      "GPUCommandBufferDescriptor"
     ],
     "hasObsoleteIdl": false
   }

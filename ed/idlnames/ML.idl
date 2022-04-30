@@ -2,6 +2,6 @@
 [SecureContext, Exposed=(Window, DedicatedWorker)]
 interface ML {
   MLContext createContext(optional MLContextOptions options = {});
-  MLContext createContext(WebGLRenderingContext glContext);
   MLContext createContext(GPUDevice gpuDevice);
+  MLContext createContext(WebGLRenderingContext glContext);
 };

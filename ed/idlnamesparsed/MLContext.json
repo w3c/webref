@@ -9,7 +9,29 @@
     "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface MLContext {};",
     "href": "https://webmachinelearning.github.io/webnn/#mlcontext"
   },
-  "extended": [],
+  "extended": [
+    {
+      "spec": {
+        "title": "Web Neural Network API",
+        "url": "https://www.w3.org/TR/webnn/"
+      },
+      "fragment": "partial interface MLContext {\n  [Exposed=(DedicatedWorker)]\n  undefined compute(MLGraph graph, MLNamedArrayInputs inputs, MLNamedArrayOutputs outputs);\n};"
+    },
+    {
+      "spec": {
+        "title": "Web Neural Network API",
+        "url": "https://www.w3.org/TR/webnn/"
+      },
+      "fragment": "partial interface MLContext {\n  Promise<undefined> computeAsync(MLGraph graph, MLNamedArrayInputs inputs,\n\n                    MLNamedArrayOutputs outputs);\n};"
+    },
+    {
+      "spec": {
+        "title": "Web Neural Network API",
+        "url": "https://www.w3.org/TR/webnn/"
+      },
+      "fragment": "partial interface MLContext {\n  MLCommandEncoder createCommandEncoder();\n};"
+    }
+  ],
   "inheritance": null,
   "includes": [],
   "dfns": {
@@ -30,6 +52,69 @@
           "href": "https://webmachinelearning.github.io/webnn/#api-mlcontext",
           "title": "MLContext",
           "number": "7.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlcontext-compute",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlcontext-compute",
+        "linkingText": [
+          "compute(graph, inputs, outputs)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MLContext"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlcontext-sync-execution",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlcontext-sync-execution",
+          "title": "Synchronous Execution",
+          "number": "7.3.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlcontext-computeasync",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlcontext-computeasync",
+        "linkingText": [
+          "computeAsync(graph, inputs, outputs)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MLContext"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlcontext-async-execution",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlcontext-async-execution",
+          "title": "Asynchronous Execution",
+          "number": "7.3.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlcontext-createcommandencoder",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlcontext-createcommandencoder",
+        "linkingText": [
+          "createCommandEncoder()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MLContext"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlcontext-webgpu-interop",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlcontext-webgpu-interop",
+          "title": "WebGPU Interoperability",
+          "number": "7.3.3"
         },
         "definedIn": "pre"
       }

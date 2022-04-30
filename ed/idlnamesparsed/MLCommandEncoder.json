@@ -1,0 +1,124 @@
+{
+  "name": "MLCommandEncoder",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Web Neural Network API",
+      "url": "https://www.w3.org/TR/webnn/"
+    },
+    "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface MLCommandEncoder {};",
+    "href": "https://webmachinelearning.github.io/webnn/#mlcommandencoder"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "Web Neural Network API",
+        "url": "https://www.w3.org/TR/webnn/"
+      },
+      "fragment": "partial interface MLCommandEncoder {\n  undefined initializeGraph(MLGraph graph);\n};"
+    },
+    {
+      "spec": {
+        "title": "Web Neural Network API",
+        "url": "https://www.w3.org/TR/webnn/"
+      },
+      "fragment": "partial interface MLCommandEncoder {\n  undefined dispatch(MLGraph graph, MLNamedGPUInputs inputs, MLNamedGPUOutputs outputs);\n};"
+    },
+    {
+      "spec": {
+        "title": "Web Neural Network API",
+        "url": "https://www.w3.org/TR/webnn/"
+      },
+      "fragment": "partial interface MLCommandEncoder {\n  GPUCommandBuffer finish(optional GPUCommandBufferDescriptor descriptor = {});\n};"
+    }
+  ],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webnn/": [
+      {
+        "id": "mlcommandencoder",
+        "href": "https://webmachinelearning.github.io/webnn/#mlcommandencoder",
+        "linkingText": [
+          "MLCommandEncoder"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlcommandencoder",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlcommandencoder",
+          "title": "MLCommandEncoder",
+          "number": "7.9"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlcommandencoder-initializegraph",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlcommandencoder-initializegraph",
+        "linkingText": [
+          "initializeGraph(graph)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MLCommandEncoder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlcommandencoder-graph-initialization",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlcommandencoder-graph-initialization",
+          "title": "Graph Initialization",
+          "number": "7.9.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlcommandencoder-dispatch",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlcommandencoder-dispatch",
+        "linkingText": [
+          "dispatch(graph, inputs, outputs)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MLCommandEncoder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlcommandencoder-dispatch-commands",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlcommandencoder-dispatch-commands",
+          "title": "Dispatch Execution Commands",
+          "number": "7.9.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlcommandencoder-finish",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlcommandencoder-finish",
+        "linkingText": [
+          "finish(descriptor)",
+          "finish()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MLCommandEncoder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlcommandencoder-generate-gpu-command-buffer",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlcommandencoder-generate-gpu-command-buffer",
+          "title": "Generate GPU Command Buffer",
+          "number": "7.9.3"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}
