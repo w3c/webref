@@ -1,6 +1,7 @@
-// Source: WebAssembly JavaScript Interface (https://www.w3.org/TR/wasm-js-api-1/)
-[LegacyNamespace=WebAssembly, Constructor(MemoryDescriptor descriptor), Exposed=(Window,Worker,Worklet)]
+// Source: WebAssembly JavaScript Interface (https://www.w3.org/TR/wasm-js-api-2/)
+[LegacyNamespace=WebAssembly, Exposed=(Window,Worker,Worklet)]
 interface Memory {
+  constructor(MemoryDescriptor descriptor);
   unsigned long grow([EnforceRange] unsigned long delta);
   readonly attribute ArrayBuffer buffer;
 };

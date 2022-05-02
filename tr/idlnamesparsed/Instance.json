@@ -4,10 +4,10 @@
   "defined": {
     "spec": {
       "title": "WebAssembly JavaScript Interface",
-      "url": "https://www.w3.org/TR/wasm-js-api-1/"
+      "url": "https://www.w3.org/TR/wasm-js-api-2/"
     },
-    "fragment": "[LegacyNamespace=WebAssembly, Constructor(Module module, optional object importObject), Exposed=(Window,Worker,Worklet)]\ninterface Instance {\n  readonly attribute object exports;\n};",
-    "href": "https://www.w3.org/TR/wasm-js-api-1/#instance"
+    "fragment": "[LegacyNamespace=WebAssembly, Exposed=(Window,Worker,Worklet)]\ninterface Instance {\n  constructor(Module module, optional object importObject);\n  readonly attribute object exports;\n};",
+    "href": "https://www.w3.org/TR/wasm-js-api-2/#instance"
   },
   "extended": [],
   "inheritance": null,

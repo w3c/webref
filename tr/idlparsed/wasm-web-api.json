@@ -1,7 +1,7 @@
 {
   "spec": {
     "title": "WebAssembly Web API",
-    "url": "https://www.w3.org/TR/wasm-web-api-1/"
+    "url": "https://www.w3.org/TR/wasm-web-api-2/"
   },
   "idlparsed": {
     "jsNames": {
@@ -12,7 +12,7 @@
     "idlExtendedNames": {
       "WebAssembly": [
         {
-          "fragment": "partial namespace WebAssembly {\n  Promise<Module> compileStreaming(Promise<Response> source);\n  Promise<WebAssemblyInstantiatedSource> instantiateStreaming(\n      Promise<Response> source, optional object importObject);\n};",
+          "fragment": "[Exposed=(Window,Worker)]\npartial namespace WebAssembly {\n  Promise<Module> compileStreaming(Promise<Response> source);\n  Promise<WebAssemblyInstantiatedSource> instantiateStreaming(\n      Promise<Response> source, optional object importObject);\n};",
           "type": "namespace",
           "name": "WebAssembly",
           "inheritance": null,
@@ -134,13 +134,37 @@
               "special": ""
             }
           ],
-          "extAttrs": [],
+          "extAttrs": [
+            {
+              "type": "extended-attribute",
+              "name": "Exposed",
+              "rhs": {
+                "type": "identifier-list",
+                "value": [
+                  {
+                    "value": "Window"
+                  },
+                  {
+                    "value": "Worker"
+                  }
+                ]
+              },
+              "arguments": []
+            }
+          ],
           "partial": true
         }
       ]
     },
     "globals": {},
-    "exposed": {},
+    "exposed": {
+      "Window": [
+        "WebAssembly"
+      ],
+      "Worker": [
+        "WebAssembly"
+      ]
+    },
     "dependencies": {
       "WebAssembly": [
         "Module",

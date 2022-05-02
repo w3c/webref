@@ -9,7 +9,29 @@
     "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface MLContext {};",
     "href": "https://www.w3.org/TR/webnn/#mlcontext"
   },
-  "extended": [],
+  "extended": [
+    {
+      "spec": {
+        "title": "Web Neural Network API",
+        "url": "https://www.w3.org/TR/webnn/"
+      },
+      "fragment": "partial interface MLContext {\n  [Exposed=(DedicatedWorker)]\n  undefined compute(MLGraph graph, MLNamedArrayInputs inputs, MLNamedArrayOutputs outputs);\n};"
+    },
+    {
+      "spec": {
+        "title": "Web Neural Network API",
+        "url": "https://www.w3.org/TR/webnn/"
+      },
+      "fragment": "partial interface MLContext {\n  Promise<undefined> computeAsync(MLGraph graph, MLNamedArrayInputs inputs,\n\n                    MLNamedArrayOutputs outputs);\n};"
+    },
+    {
+      "spec": {
+        "title": "Web Neural Network API",
+        "url": "https://www.w3.org/TR/webnn/"
+      },
+      "fragment": "partial interface MLContext {\n  MLCommandEncoder createCommandEncoder();\n};"
+    }
+  ],
   "inheritance": null,
   "includes": []
 }

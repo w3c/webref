@@ -4,10 +4,10 @@
   "defined": {
     "spec": {
       "title": "WebAssembly JavaScript Interface",
-      "url": "https://www.w3.org/TR/wasm-js-api-1/"
+      "url": "https://www.w3.org/TR/wasm-js-api-2/"
     },
-    "fragment": "[LegacyNamespace=WebAssembly, Constructor(MemoryDescriptor descriptor), Exposed=(Window,Worker,Worklet)]\ninterface Memory {\n  unsigned long grow([EnforceRange] unsigned long delta);\n  readonly attribute ArrayBuffer buffer;\n};",
-    "href": "https://www.w3.org/TR/wasm-js-api-1/#memory"
+    "fragment": "[LegacyNamespace=WebAssembly, Exposed=(Window,Worker,Worklet)]\ninterface Memory {\n  constructor(MemoryDescriptor descriptor);\n  unsigned long grow([EnforceRange] unsigned long delta);\n  readonly attribute ArrayBuffer buffer;\n};",
+    "href": "https://www.w3.org/TR/wasm-js-api-2/#memory"
   },
   "extended": [],
   "inheritance": null,

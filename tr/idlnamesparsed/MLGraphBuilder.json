@@ -6,7 +6,7 @@
       "title": "Web Neural Network API",
       "url": "https://www.w3.org/TR/webnn/"
     },
-    "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface MLGraphBuilder {\n  // Construct the graph builder from the context.\n  constructor(MLContext context);\n\n  // Create an operand for a graph input.\n  MLOperand input(DOMString name, MLOperandDescriptor desc);\n\n  // Create an operand for a graph constant.\n  MLOperand constant(MLOperandDescriptor desc, MLBufferView bufferView);\n\n  // Create a single-value operand from the specified number of the specified type.\n  MLOperand constant(double value, optional MLOperandType type = \"float32\");\n\n  // Compile the graph up to the specified output operands\n  MLGraph build(MLNamedOperands outputs);\n};",
+    "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface MLGraphBuilder {\n  // Construct the graph builder from the context.\n  constructor(MLContext context);\n\n  // Create an operand for a graph input.\n  MLOperand input(DOMString name, MLOperandDescriptor desc);\n\n  // Create an operand for a graph constant.\n  MLOperand constant(MLOperandDescriptor desc, MLBufferView bufferView);\n\n  // Create a single-value operand from the specified number of the specified type.\n  MLOperand constant(double value, optional MLOperandType type = \"float32\");\n\n  // Compile the graph up to the specified output operands\n  [Exposed=(DedicatedWorker)]\n  MLGraph build(MLNamedOperands outputs);\n};",
     "href": "https://www.w3.org/TR/webnn/#mlgraphbuilder"
   },
   "extended": [

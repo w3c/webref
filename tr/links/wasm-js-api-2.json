@@ -1,23 +1,37 @@
 {
   "spec": {
     "title": "WebAssembly JavaScript Interface",
-    "url": "https://www.w3.org/TR/wasm-js-api-1/"
+    "url": "https://www.w3.org/TR/wasm-js-api-2/"
   },
   "links": {
     "https://www.w3.org/TR/wasm-core/": [],
     "https://www.w3.org/TR/wasm-js-api/": [],
     "https://www.w3.org/TR/wasm-web-api/": [],
     "https://www.w3.org/TR/": [],
-    "https://www.w3.org/wasm/": [],
     "https://github.com/WebAssembly/spec/issues": [],
     "https://github.com/WebAssembly/spec/issues?utf8=%E2%9C%93&q=is%3Aissue++": [],
-    "https://www.w3.org/Consortium/Patent-Policy/": [
+    "https://www.w3.org/groups/wg/wasm": [],
+    "https://www.w3.org/2021/Process-20211102/": [
+      "recs-and-notes"
+    ],
+    "https://www.w3.org/Consortium/Patent-Policy-20170801/": [
       "def-essential",
       "sec-Disclosure"
     ],
-    "https://www.w3.org/2004/01/pp-impl/101196/status": [],
-    "https://www.w3.org/2019/Process-20190301/": [],
-    "https://wpt.fyi/results/wasm": [],
+    "https://www.w3.org/groups/wg/wasm/ipr": [],
+    "https://webassembly.github.io/spec/core/syntax/conventions.html": [
+      "grammar-notation"
+    ],
+    "https://infra.spec.whatwg.org/": [
+      "list",
+      "ordered-map",
+      "list-is-empty",
+      "list-iterate",
+      "list-append",
+      "map-exists",
+      "map-set",
+      "list-size"
+    ],
     "https://webassembly.github.io/spec/core/exec/runtime.html": [
       "syntax-store",
       "memory-instances",
@@ -26,12 +40,12 @@
       "syntax-tableaddr",
       "syntax-funcaddr",
       "syntax-globaladdr",
+      "syntax-externaddr",
       "syntax-externval",
       "values",
       "syntax-frame",
       "syntax-moduleinst",
       "table-instances",
-      "syntax-funcelem",
       "global-instances",
       "syntax-hostfunc"
     ],
@@ -54,16 +68,19 @@
       "sec-tostring",
       "current-realm",
       "sec-createbuiltinfunction",
-      "sec-properties-of-the-function-prototype-object",
-      "sec-setfunctionlength",
-      "sec-setfunctionname",
+      "sec-createarrayfromlist",
       "sec-call",
+      "sec-getmethod",
+      "sec-well-known-symbols",
+      "sec-iterabletolist",
+      "sec-ecmascript-language-types-bigint-type",
       "sec-ecmascript-language-types-number-type",
       "sec-numbertorawbytes",
+      "sec-tobigint64",
       "sec-toint32",
       "sec-tonumber",
-      "sec-well-known-intrinsic-objects",
-      "sec-nativeerror-constructors"
+      "sec-nativeerror-object-structure",
+      "sec-createmethodproperty"
     ],
     "https://webassembly.github.io/spec/core/appendix/embedding.html": [
       "embed-store-init",
@@ -71,16 +88,18 @@
       "embed-error",
       "embed-module-validate",
       "embed-module-imports",
-      "embed-module-instantiate",
       "embed-global-alloc",
       "embed-module-exports",
       "embed-instance-export",
+      "embed-module-instantiate",
       "embed-mem-alloc",
       "embed-mem-size",
       "embed-mem-grow",
-      "embed-table-size",
       "embed-table-alloc",
+      "embed-table-size",
+      "embed-table-type",
       "embed-table-grow",
+      "embed-table-read",
       "embed-table-write",
       "embed-global-type",
       "embed-global-read",
@@ -89,36 +108,32 @@
       "embed-func-invoke",
       "embed-func-alloc"
     ],
-    "https://infra.spec.whatwg.org/": [
-      "ordered-map",
-      "list",
-      "set-append",
-      "map-exists",
-      "map-set",
-      "list-size",
-      "list-append",
-      "list-empty"
-    ],
-    "https://heycam.github.io/webidl/": [
+    "https://webidl.spec.whatwg.org/": [
       "Exposed",
       "idl-boolean",
       "BufferSource",
+      "idl-promise",
       "idl-object",
       "dfn-get-buffer-source-copy",
       "a-new-promise",
       "resolve",
+      "implements",
       "reject",
       "new",
       "upon-fulfillment",
       "upon-rejection",
       "idl-USVString",
       "LegacyNamespace",
+      "idl-sequence",
       "idl-DOMString",
       "EnforceRange",
       "idl-unsigned-long",
-      "dfn-present",
-      "Function",
-      "dfn-throw"
+      "idl-any",
+      "idl-undefined",
+      "dfn-throw",
+      "dfn-associated-realm",
+      "dfn-namespace-object",
+      "create-a-namespace-object"
     ],
     "https://webassembly.github.io/spec/core/syntax/modules.html": [
       "syntax-module",
@@ -127,12 +142,19 @@
     "https://html.spec.whatwg.org/": [
       "task-source",
       "in-parallel",
-      "queue-a-task"
+      "queue-a-task",
+      "incumbent-settings-object",
+      "concept-realm-settings-object",
+      "prepare-to-run-script",
+      "prepare-to-run-a-callback",
+      "clean-up-after-running-a-callback",
+      "clean-up-after-running-script"
     ],
     "https://webassembly.github.io/spec/core/syntax/types.html": [
       "external-types",
-      "syntax-valtype",
+      "syntax-numtype",
       "syntax-mut",
+      "syntax-reftype",
       "syntax-tabletype"
     ],
     "https://webassembly.github.io/spec/core/valid/modules.html": [
@@ -153,16 +175,12 @@
     "https://webassembly.github.io/spec/core/exec/conventions.html": [
       "exec-notation-textual"
     ],
-    "https://webassembly.github.io/spec/core/syntax/conventions.html": [
-      "grammar-notation"
-    ],
     "https://webassembly.github.io/spec/core/exec/numerics.html": [
       "aux-signed"
     ],
     "https://github.com/WebAssembly/spec/issues/879": [],
-    "https://www.w3.org/TR/2018/WD-wasm-js-api-1-20180904/": [],
-    "https://www.w3.org/2001/tag/doc/promises-guide": [],
-    "https://tools.ietf.org/html/rfc2119": [],
+    "https://tc39.es/ecma262/multipage/": [],
+    "https://datatracker.ietf.org/doc/html/rfc2119": [],
     "https://webassembly.github.io/spec/core/": []
   }
 }

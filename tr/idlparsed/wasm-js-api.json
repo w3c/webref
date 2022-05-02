@@ -1,7 +1,7 @@
 {
   "spec": {
     "title": "WebAssembly JavaScript Interface",
-    "url": "https://www.w3.org/TR/wasm-js-api-1/"
+    "url": "https://www.w3.org/TR/wasm-js-api-2/"
   },
   "idlparsed": {
     "jsNames": {
@@ -408,11 +408,33 @@
         "partial": false
       },
       "Module": {
-        "fragment": "[LegacyNamespace=WebAssembly, Constructor(BufferSource bytes), Exposed=(Window,Worker,Worklet)]\ninterface Module {\n  static sequence<ModuleExportDescriptor> exports(Module moduleObject);\n  static sequence<ModuleImportDescriptor> imports(Module moduleObject);\n  static sequence<ArrayBuffer> customSections(Module moduleObject, DOMString sectionName);\n};",
+        "fragment": "[LegacyNamespace=WebAssembly, Exposed=(Window,Worker,Worklet)]\ninterface Module {\n  constructor(BufferSource bytes);\n  static sequence<ModuleExportDescriptor> exports(Module moduleObject);\n  static sequence<ModuleImportDescriptor> imports(Module moduleObject);\n  static sequence<ArrayBuffer> customSections(Module moduleObject, DOMString sectionName);\n};",
         "type": "interface",
         "name": "Module",
         "inheritance": null,
         "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "bytes",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "BufferSource"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": []
+          },
           {
             "type": "operation",
             "name": "exports",
@@ -565,29 +587,6 @@
           },
           {
             "type": "extended-attribute",
-            "name": "Constructor",
-            "rhs": null,
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "bytes",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "BufferSource"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              }
-            ]
-          },
-          {
-            "type": "extended-attribute",
             "name": "Exposed",
             "rhs": {
               "type": "identifier-list",
@@ -609,41 +608,13 @@
         "partial": false
       },
       "Instance": {
-        "fragment": "[LegacyNamespace=WebAssembly, Constructor(Module module, optional object importObject), Exposed=(Window,Worker,Worklet)]\ninterface Instance {\n  readonly attribute object exports;\n};",
+        "fragment": "[LegacyNamespace=WebAssembly, Exposed=(Window,Worker,Worklet)]\ninterface Instance {\n  constructor(Module module, optional object importObject);\n  readonly attribute object exports;\n};",
         "type": "interface",
         "name": "Instance",
         "inheritance": null,
         "members": [
           {
-            "type": "attribute",
-            "name": "exports",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "object"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          }
-        ],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "LegacyNamespace",
-            "rhs": {
-              "type": "identifier",
-              "value": "WebAssembly"
-            },
-            "arguments": []
-          },
-          {
-            "type": "extended-attribute",
-            "name": "Constructor",
-            "rhs": null,
+            "type": "constructor",
             "arguments": [
               {
                 "type": "argument",
@@ -677,7 +648,34 @@
                 "optional": true,
                 "variadic": false
               }
-            ]
+            ],
+            "extAttrs": []
+          },
+          {
+            "type": "attribute",
+            "name": "exports",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "object"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "LegacyNamespace",
+            "rhs": {
+              "type": "identifier",
+              "value": "WebAssembly"
+            },
+            "arguments": []
           },
           {
             "type": "extended-attribute",
@@ -756,11 +754,33 @@
         "partial": false
       },
       "Memory": {
-        "fragment": "[LegacyNamespace=WebAssembly, Constructor(MemoryDescriptor descriptor), Exposed=(Window,Worker,Worklet)]\ninterface Memory {\n  unsigned long grow([EnforceRange] unsigned long delta);\n  readonly attribute ArrayBuffer buffer;\n};",
+        "fragment": "[LegacyNamespace=WebAssembly, Exposed=(Window,Worker,Worklet)]\ninterface Memory {\n  constructor(MemoryDescriptor descriptor);\n  unsigned long grow([EnforceRange] unsigned long delta);\n  readonly attribute ArrayBuffer buffer;\n};",
         "type": "interface",
         "name": "Memory",
         "inheritance": null,
         "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "descriptor",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "MemoryDescriptor"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": []
+          },
           {
             "type": "operation",
             "name": "grow",
@@ -828,29 +848,6 @@
           },
           {
             "type": "extended-attribute",
-            "name": "Constructor",
-            "rhs": null,
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "descriptor",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "MemoryDescriptor"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              }
-            ]
-          },
-          {
-            "type": "extended-attribute",
             "name": "Exposed",
             "rhs": {
               "type": "identifier-list",
@@ -872,10 +869,14 @@
         "partial": false
       },
       "TableKind": {
-        "fragment": "enum TableKind {\n  \"anyfunc\",\n  // Note: More values may be added in future iterations,\n  // e.g., typed function references, typed GC references\n};",
+        "fragment": "enum TableKind {\n  \"externref\",\n  \"anyfunc\",\n  // Note: More values may be added in future iterations,\n  // e.g., typed function references, typed GC references\n};",
         "type": "enum",
         "name": "TableKind",
         "values": [
+          {
+            "type": "enum-value",
+            "value": "externref"
+          },
           {
             "type": "enum-value",
             "value": "anyfunc"
@@ -953,11 +954,49 @@
         "partial": false
       },
       "Table": {
-        "fragment": "[LegacyNamespace=WebAssembly, Constructor(TableDescriptor descriptor), Exposed=(Window,Worker,Worklet)]\ninterface Table {\n  unsigned long grow([EnforceRange] unsigned long delta);\n  Function? get([EnforceRange] unsigned long index);\n  void set([EnforceRange] unsigned long index, Function? value);\n  readonly attribute unsigned long length;\n};",
+        "fragment": "[LegacyNamespace=WebAssembly, Exposed=(Window,Worker,Worklet)]\ninterface Table {\n  constructor(TableDescriptor descriptor, optional any value);\n  unsigned long grow([EnforceRange] unsigned long delta, optional any value);\n  any get([EnforceRange] unsigned long index);\n  undefined set([EnforceRange] unsigned long index, optional any value);\n  readonly attribute unsigned long length;\n};",
         "type": "interface",
         "name": "Table",
         "inheritance": null,
         "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "descriptor",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "TableDescriptor"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "value",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "any"
+                },
+                "default": null,
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": []
+          },
           {
             "type": "operation",
             "name": "grow",
@@ -992,6 +1031,22 @@
                 "default": null,
                 "optional": false,
                 "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "value",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "any"
+                },
+                "default": null,
+                "optional": true,
+                "variadic": false
               }
             ],
             "extAttrs": [],
@@ -1004,9 +1059,9 @@
               "type": "return-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": true,
+              "nullable": false,
               "union": false,
-              "idlType": "Function"
+              "idlType": "any"
             },
             "arguments": [
               {
@@ -1045,7 +1100,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
             },
             "arguments": [
               {
@@ -1079,12 +1134,12 @@
                   "type": "argument-type",
                   "extAttrs": [],
                   "generic": "",
-                  "nullable": true,
+                  "nullable": false,
                   "union": false,
-                  "idlType": "Function"
+                  "idlType": "any"
                 },
                 "default": null,
-                "optional": false,
+                "optional": true,
                 "variadic": false
               }
             ],
@@ -1119,29 +1174,6 @@
           },
           {
             "type": "extended-attribute",
-            "name": "Constructor",
-            "rhs": null,
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "descriptor",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "TableDescriptor"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              }
-            ]
-          },
-          {
-            "type": "extended-attribute",
             "name": "Exposed",
             "rhs": {
               "type": "identifier-list",
@@ -1163,7 +1195,7 @@
         "partial": false
       },
       "ValueType": {
-        "fragment": "enum ValueType {\n  \"i32\",\n  \"i64\",\n  \"f32\",\n  \"f64\"\n};",
+        "fragment": "enum ValueType {\n  \"i32\",\n  \"i64\",\n  \"f32\",\n  \"f64\",\n  \"v128\",\n  \"externref\",\n  \"anyfunc\",\n};",
         "type": "enum",
         "name": "ValueType",
         "values": [
@@ -1182,6 +1214,18 @@
           {
             "type": "enum-value",
             "value": "f64"
+          },
+          {
+            "type": "enum-value",
+            "value": "v128"
+          },
+          {
+            "type": "enum-value",
+            "value": "externref"
+          },
+          {
+            "type": "enum-value",
+            "value": "anyfunc"
           }
         ],
         "extAttrs": []
@@ -1230,11 +1274,49 @@
         "partial": false
       },
       "Global": {
-        "fragment": "[LegacyNamespace=WebAssembly, Constructor(GlobalDescriptor descriptor, optional any v), Exposed=(Window,Worker,Worklet)]\ninterface Global {\n  any valueOf();\n  attribute any value;\n};",
+        "fragment": "[LegacyNamespace=WebAssembly, Exposed=(Window,Worker,Worklet)]\ninterface Global {\n  constructor(GlobalDescriptor descriptor, optional any v);\n  any valueOf();\n  attribute any value;\n};",
         "type": "interface",
         "name": "Global",
         "inheritance": null,
         "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "descriptor",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GlobalDescriptor"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "v",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "any"
+                },
+                "default": null,
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": []
+          },
           {
             "type": "operation",
             "name": "valueOf",
@@ -1278,45 +1360,6 @@
           },
           {
             "type": "extended-attribute",
-            "name": "Constructor",
-            "rhs": null,
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "descriptor",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "GlobalDescriptor"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              },
-              {
-                "type": "argument",
-                "name": "v",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "any"
-                },
-                "default": null,
-                "optional": true,
-                "variadic": false
-              }
-            ]
-          },
-          {
-            "type": "extended-attribute",
             "name": "Exposed",
             "rhs": {
               "type": "identifier-list",
@@ -1331,63 +1374,6 @@
                   "value": "Worklet"
                 }
               ]
-            },
-            "arguments": []
-          }
-        ],
-        "partial": false
-      },
-      "CompileError": {
-        "fragment": "[LegacyNamespace=WebAssembly]\ninterface CompileError { };",
-        "type": "interface",
-        "name": "CompileError",
-        "inheritance": null,
-        "members": [],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "LegacyNamespace",
-            "rhs": {
-              "type": "identifier",
-              "value": "WebAssembly"
-            },
-            "arguments": []
-          }
-        ],
-        "partial": false
-      },
-      "LinkError": {
-        "fragment": "[LegacyNamespace=WebAssembly]\ninterface LinkError { };",
-        "type": "interface",
-        "name": "LinkError",
-        "inheritance": null,
-        "members": [],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "LegacyNamespace",
-            "rhs": {
-              "type": "identifier",
-              "value": "WebAssembly"
-            },
-            "arguments": []
-          }
-        ],
-        "partial": false
-      },
-      "RuntimeError": {
-        "fragment": "[LegacyNamespace=WebAssembly]\ninterface RuntimeError { };",
-        "type": "interface",
-        "name": "RuntimeError",
-        "inheritance": null,
-        "members": [],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "LegacyNamespace",
-            "rhs": {
-              "type": "identifier",
-              "value": "WebAssembly"
             },
             "arguments": []
           }
@@ -1459,25 +1445,18 @@
         "TableKind"
       ],
       "Table": [
-        "TableDescriptor",
-        "Function",
-        "void"
+        "TableDescriptor"
       ],
       "GlobalDescriptor": [
         "ValueType"
       ],
       "Global": [
         "GlobalDescriptor"
-      ],
-      "CompileError": [],
-      "LinkError": [],
-      "RuntimeError": []
+      ]
     },
     "externalDependencies": [
       "BufferSource",
-      "ArrayBuffer",
-      "Function",
-      "void"
+      "ArrayBuffer"
     ],
     "hasObsoleteIdl": false
   }

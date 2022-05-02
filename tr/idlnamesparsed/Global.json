@@ -4,10 +4,10 @@
   "defined": {
     "spec": {
       "title": "WebAssembly JavaScript Interface",
-      "url": "https://www.w3.org/TR/wasm-js-api-1/"
+      "url": "https://www.w3.org/TR/wasm-js-api-2/"
     },
-    "fragment": "[LegacyNamespace=WebAssembly, Constructor(GlobalDescriptor descriptor, optional any v), Exposed=(Window,Worker,Worklet)]\ninterface Global {\n  any valueOf();\n  attribute any value;\n};",
-    "href": "https://www.w3.org/TR/wasm-js-api-1/#global"
+    "fragment": "[LegacyNamespace=WebAssembly, Exposed=(Window,Worker,Worklet)]\ninterface Global {\n  constructor(GlobalDescriptor descriptor, optional any v);\n  any valueOf();\n  attribute any value;\n};",
+    "href": "https://www.w3.org/TR/wasm-js-api-2/#global"
   },
   "extended": [],
   "inheritance": null,
