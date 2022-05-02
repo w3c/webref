@@ -131,6 +131,26 @@ async function dropCSSPropertyDuplicates(folder) {
     }
   }
 
+  // Special case for css-logical:
+  // Extensions of base properties in that spec actually extend base definitions
+  // in CSS 2, and not base definitions in specific and more recent CSS modules.
+  // As of 2022-05-02, all extensions defined in css-logical are for base
+  // properties re-defined in newer CSS modules (css-text, css-page-floats and
+  // css-tables), so let's ignore all of them. The new definition of
+  // "caption-side" in css-tables does not have "inline-start" and "inline-end"
+  // but that seems to be on purpose as these values are only for
+  // implementations that support the non-defined "left" and "right" values,
+  // which css-tables explicitly notes it does not currently try to define.
+  const cssIllogical = index.results.find(spec => spec.shortname === 'css-logical-1');
+  if (cssIllogical?.css?.properties) {
+    Object.keys(cssIllogical.css.properties)
+      .filter(prop => !!cssIllogical.css.properties[prop].newValues)
+      .forEach(prop => {
+        delete cssIllogical.css.properties[prop];
+        cssIllogical.needsSaving = true;
+      });
+  }
+
   function getBaseJSON(spec) {
     return {
       spec: {
