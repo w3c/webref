@@ -144,7 +144,7 @@ async function dropCSSPropertyDuplicates(folder) {
   const cssIllogical = index.results.find(spec => spec.shortname === 'css-logical-1');
   if (cssIllogical?.css?.properties) {
     Object.keys(cssIllogical.css.properties)
-      .filter(prop => !!cssIllogical.css.properties[prop].newValues)
+      .filter(prop => ['float', 'caption-side', 'clear', 'text-align'].includes(prop))
       .forEach(prop => {
         delete cssIllogical.css.properties[prop];
         cssIllogical.needsSaving = true;
