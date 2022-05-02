@@ -69,22 +69,6 @@ interface AudioContext : BaseAudioContext {
   constructor (optional AudioContextOptions contextOptions = {});
   readonly attribute double baseLatency;
   readonly attribute double outputLatency;
-  AudioTimestamp getOutputTimestamp ();
-  Promise<undefined> resume ();
-  Promise<undefined> suspend ();
-  Promise<undefined> close ();
-  MediaElementAudioSourceNode createMediaElementSource (HTMLMediaElement mediaElement);
-  MediaStreamAudioSourceNode createMediaStreamSource (MediaStream mediaStream);
-  MediaStreamTrackAudioSourceNode createMediaStreamTrackSource (
-    MediaStreamTrack mediaStreamTrack);
-  MediaStreamAudioDestinationNode createMediaStreamDestination ();
-};
-
-[Exposed=Window]
-interface AudioContext : BaseAudioContext {
-  constructor (optional AudioContextOptions contextOptions = {});
-  readonly attribute double baseLatency;
-  readonly attribute double outputLatency;
   [SecureContext] readonly attribute AudioRenderCapacity renderCapacity;
   AudioTimestamp getOutputTimestamp ();
   Promise<undefined> resume ();

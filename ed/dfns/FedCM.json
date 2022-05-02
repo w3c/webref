@@ -1,0 +1,2225 @@
+{
+  "spec": {
+    "title": "Federated Credential Management API",
+    "url": "https://fedidcg.github.io/FedCM/"
+  },
+  "dfns": [
+    {
+      "id": "account",
+      "href": "https://fedidcg.github.io/FedCM/#account",
+      "linkingText": [
+        "account"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://fedidcg.github.io/FedCM/#terminology",
+        "title": "Terminology",
+        "number": "5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "authentication",
+      "href": "https://fedidcg.github.io/FedCM/#authentication",
+      "linkingText": [
+        "authentication"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://fedidcg.github.io/FedCM/#terminology",
+        "title": "Terminology",
+        "number": "5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "directed-identifier",
+      "href": "https://fedidcg.github.io/FedCM/#directed-identifier",
+      "linkingText": [
+        "directed identifier"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://fedidcg.github.io/FedCM/#terminology",
+        "title": "Terminology",
+        "number": "5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "first-party",
+      "href": "https://fedidcg.github.io/FedCM/#first-party",
+      "linkingText": [
+        "first party"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://fedidcg.github.io/FedCM/#terminology",
+        "title": "Terminology",
+        "number": "5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "global-identifier",
+      "href": "https://fedidcg.github.io/FedCM/#global-identifier",
+      "linkingText": [
+        "global identifier"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://fedidcg.github.io/FedCM/#terminology",
+        "title": "Terminology",
+        "number": "5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "high-level-api",
+      "href": "https://fedidcg.github.io/FedCM/#high-level-api",
+      "linkingText": [
+        "high-level API"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://fedidcg.github.io/FedCM/#terminology",
+        "title": "Terminology",
+        "number": "5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "id-token",
+      "href": "https://fedidcg.github.io/FedCM/#id-token",
+      "linkingText": [
+        "id token"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://fedidcg.github.io/FedCM/#terminology",
+        "title": "Terminology",
+        "number": "5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "identity-provider",
+      "href": "https://fedidcg.github.io/FedCM/#identity-provider",
+      "linkingText": [
+        "Identity Provider"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://fedidcg.github.io/FedCM/#terminology",
+        "title": "Terminology",
+        "number": "5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "idp",
+      "href": "https://fedidcg.github.io/FedCM/#idp",
+      "linkingText": [
+        "IDP"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://fedidcg.github.io/FedCM/#terminology",
+        "title": "Terminology",
+        "number": "5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "joining",
+      "href": "https://fedidcg.github.io/FedCM/#joining",
+      "linkingText": [
+        "joining"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://fedidcg.github.io/FedCM/#terminology",
+        "title": "Terminology",
+        "number": "5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "logged-in",
+      "href": "https://fedidcg.github.io/FedCM/#logged-in",
+      "linkingText": [
+        "logged in"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://fedidcg.github.io/FedCM/#terminology",
+        "title": "Terminology",
+        "number": "5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "logged-out",
+      "href": "https://fedidcg.github.io/FedCM/#logged-out",
+      "linkingText": [
+        "logged out"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://fedidcg.github.io/FedCM/#terminology",
+        "title": "Terminology",
+        "number": "5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "low-level-api",
+      "href": "https://fedidcg.github.io/FedCM/#low-level-api",
+      "linkingText": [
+        "low-level API"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://fedidcg.github.io/FedCM/#terminology",
+        "title": "Terminology",
+        "number": "5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "minting",
+      "href": "https://fedidcg.github.io/FedCM/#minting",
+      "linkingText": [
+        "minting"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://fedidcg.github.io/FedCM/#terminology",
+        "title": "Terminology",
+        "number": "5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "minted",
+      "href": "https://fedidcg.github.io/FedCM/#minted",
+      "linkingText": [
+        "minted"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://fedidcg.github.io/FedCM/#terminology",
+        "title": "Terminology",
+        "number": "5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "out-of-band",
+      "href": "https://fedidcg.github.io/FedCM/#out-of-band",
+      "linkingText": [
+        "out-of-band"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://fedidcg.github.io/FedCM/#terminology",
+        "title": "Terminology",
+        "number": "5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "party",
+      "href": "https://fedidcg.github.io/FedCM/#party",
+      "linkingText": [
+        "party"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://fedidcg.github.io/FedCM/#terminology",
+        "title": "Terminology",
+        "number": "5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "registered",
+      "href": "https://fedidcg.github.io/FedCM/#registered",
+      "linkingText": [
+        "registered"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://fedidcg.github.io/FedCM/#terminology",
+        "title": "Terminology",
+        "number": "5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "relying-party",
+      "href": "https://fedidcg.github.io/FedCM/#relying-party",
+      "linkingText": [
+        "Relying Party"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://fedidcg.github.io/FedCM/#terminology",
+        "title": "Terminology",
+        "number": "5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "rp",
+      "href": "https://fedidcg.github.io/FedCM/#rp",
+      "linkingText": [
+        "RP"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://fedidcg.github.io/FedCM/#terminology",
+        "title": "Terminology",
+        "number": "5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "website",
+      "href": "https://fedidcg.github.io/FedCM/#website",
+      "linkingText": [
+        "Website"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://fedidcg.github.io/FedCM/#terminology",
+        "title": "Terminology",
+        "number": "5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "session",
+      "href": "https://fedidcg.github.io/FedCM/#session",
+      "linkingText": [
+        "session"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://fedidcg.github.io/FedCM/#terminology",
+        "title": "Terminology",
+        "number": "5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "federated-sign-in",
+      "href": "https://fedidcg.github.io/FedCM/#federated-sign-in",
+      "linkingText": [
+        "Federated sign-in"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://fedidcg.github.io/FedCM/#terminology",
+        "title": "Terminology",
+        "number": "5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "site",
+      "href": "https://fedidcg.github.io/FedCM/#site",
+      "linkingText": [
+        "site"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://fedidcg.github.io/FedCM/#terminology",
+        "title": "Terminology",
+        "number": "5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "third-party",
+      "href": "https://fedidcg.github.io/FedCM/#third-party",
+      "linkingText": [
+        "third party"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://fedidcg.github.io/FedCM/#terminology",
+        "title": "Terminology",
+        "number": "5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "unregistered",
+      "href": "https://fedidcg.github.io/FedCM/#unregistered",
+      "linkingText": [
+        "unregistered"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://fedidcg.github.io/FedCM/#terminology",
+        "title": "Terminology",
+        "number": "5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "user",
+      "href": "https://fedidcg.github.io/FedCM/#user",
+      "linkingText": [
+        "user"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://fedidcg.github.io/FedCM/#terminology",
+        "title": "Terminology",
+        "number": "5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "user-identifier",
+      "href": "https://fedidcg.github.io/FedCM/#user-identifier",
+      "linkingText": [
+        "user identifier"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://fedidcg.github.io/FedCM/#terminology",
+        "title": "Terminology",
+        "number": "5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-manifest-accounts_endpoint",
+      "href": "https://fedidcg.github.io/FedCM/#dom-manifest-accounts_endpoint",
+      "linkingText": [
+        "accounts_endpoint"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Manifest"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "idp-api-manifest",
+        "href": "https://fedidcg.github.io/FedCM/#idp-api-manifest",
+        "title": "Manifest",
+        "number": "7.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-manifest-client_metadata_endpoint",
+      "href": "https://fedidcg.github.io/FedCM/#dom-manifest-client_metadata_endpoint",
+      "linkingText": [
+        "client_metadata_endpoint"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Manifest"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "idp-api-manifest",
+        "href": "https://fedidcg.github.io/FedCM/#idp-api-manifest",
+        "title": "Manifest",
+        "number": "7.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-manifest-id_token_endpoint",
+      "href": "https://fedidcg.github.io/FedCM/#dom-manifest-id_token_endpoint",
+      "linkingText": [
+        "id_token_endpoint"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Manifest"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "idp-api-manifest",
+        "href": "https://fedidcg.github.io/FedCM/#idp-api-manifest",
+        "title": "Manifest",
+        "number": "7.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-manifest-revocation_endpoint",
+      "href": "https://fedidcg.github.io/FedCM/#dom-manifest-revocation_endpoint",
+      "linkingText": [
+        "revocation_endpoint"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Manifest"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "idp-api-manifest",
+        "href": "https://fedidcg.github.io/FedCM/#idp-api-manifest",
+        "title": "Manifest",
+        "number": "7.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-manifest-branding",
+      "href": "https://fedidcg.github.io/FedCM/#dom-manifest-branding",
+      "linkingText": [
+        "branding"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Manifest"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "idp-api-manifest",
+        "href": "https://fedidcg.github.io/FedCM/#idp-api-manifest",
+        "title": "Manifest",
+        "number": "7.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "branding-json",
+      "href": "https://fedidcg.github.io/FedCM/#branding-json",
+      "linkingText": [
+        "Branding JSON"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "idp-api-manifest",
+        "href": "https://fedidcg.github.io/FedCM/#idp-api-manifest",
+        "title": "Manifest",
+        "number": "7.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-manifest_branding-background_color",
+      "href": "https://fedidcg.github.io/FedCM/#dom-manifest_branding-background_color",
+      "linkingText": [
+        "background_color"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "manifest_branding"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "idp-api-manifest",
+        "href": "https://fedidcg.github.io/FedCM/#idp-api-manifest",
+        "title": "Manifest",
+        "number": "7.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-manifest_branding-color",
+      "href": "https://fedidcg.github.io/FedCM/#dom-manifest_branding-color",
+      "linkingText": [
+        "color"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "manifest_branding"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "idp-api-manifest",
+        "href": "https://fedidcg.github.io/FedCM/#idp-api-manifest",
+        "title": "Manifest",
+        "number": "7.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-manifest_branding-icons",
+      "href": "https://fedidcg.github.io/FedCM/#dom-manifest_branding-icons",
+      "linkingText": [
+        "icons"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "manifest_branding"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "idp-api-manifest",
+        "href": "https://fedidcg.github.io/FedCM/#idp-api-manifest",
+        "title": "Manifest",
+        "number": "7.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "icon-json",
+      "href": "https://fedidcg.github.io/FedCM/#icon-json",
+      "linkingText": [
+        "Icon JSON"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "idp-api-manifest",
+        "href": "https://fedidcg.github.io/FedCM/#idp-api-manifest",
+        "title": "Manifest",
+        "number": "7.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-manifest_branding_icons-url",
+      "href": "https://fedidcg.github.io/FedCM/#dom-manifest_branding_icons-url",
+      "linkingText": [
+        "url"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "manifest_branding_icons"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "idp-api-manifest",
+        "href": "https://fedidcg.github.io/FedCM/#idp-api-manifest",
+        "title": "Manifest",
+        "number": "7.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-manifest_branding_icons-size",
+      "href": "https://fedidcg.github.io/FedCM/#dom-manifest_branding_icons-size",
+      "linkingText": [
+        "size"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "manifest_branding_icons"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "idp-api-manifest",
+        "href": "https://fedidcg.github.io/FedCM/#idp-api-manifest",
+        "title": "Manifest",
+        "number": "7.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "color",
+      "href": "https://fedidcg.github.io/FedCM/#color",
+      "linkingText": [
+        "color"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "idp-api-manifest",
+        "href": "https://fedidcg.github.io/FedCM/#idp-api-manifest",
+        "title": "Manifest",
+        "number": "7.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-accounts_endpoint_response-accounts",
+      "href": "https://fedidcg.github.io/FedCM/#dom-accounts_endpoint_response-accounts",
+      "linkingText": [
+        "accounts"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "accounts_endpoint_response"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "idp-api-accounts-endpoint",
+        "href": "https://fedidcg.github.io/FedCM/#idp-api-accounts-endpoint",
+        "title": "Accounts List",
+        "number": "7.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "account-json",
+      "href": "https://fedidcg.github.io/FedCM/#account-json",
+      "linkingText": [
+        "Account JSON"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "idp-api-accounts-endpoint",
+        "href": "https://fedidcg.github.io/FedCM/#idp-api-accounts-endpoint",
+        "title": "Accounts List",
+        "number": "7.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-accounts_endpoint_response_accounts-id",
+      "href": "https://fedidcg.github.io/FedCM/#dom-accounts_endpoint_response_accounts-id",
+      "linkingText": [
+        "id"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "accounts_endpoint_response_accounts"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "idp-api-accounts-endpoint",
+        "href": "https://fedidcg.github.io/FedCM/#idp-api-accounts-endpoint",
+        "title": "Accounts List",
+        "number": "7.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-accounts_endpoint_response_accounts-name",
+      "href": "https://fedidcg.github.io/FedCM/#dom-accounts_endpoint_response_accounts-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "accounts_endpoint_response_accounts"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "idp-api-accounts-endpoint",
+        "href": "https://fedidcg.github.io/FedCM/#idp-api-accounts-endpoint",
+        "title": "Accounts List",
+        "number": "7.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-accounts_endpoint_response_accounts-email",
+      "href": "https://fedidcg.github.io/FedCM/#dom-accounts_endpoint_response_accounts-email",
+      "linkingText": [
+        "email"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "accounts_endpoint_response_accounts"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "idp-api-accounts-endpoint",
+        "href": "https://fedidcg.github.io/FedCM/#idp-api-accounts-endpoint",
+        "title": "Accounts List",
+        "number": "7.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-accounts_endpoint_response_accounts-given_name",
+      "href": "https://fedidcg.github.io/FedCM/#dom-accounts_endpoint_response_accounts-given_name",
+      "linkingText": [
+        "given_name"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "accounts_endpoint_response_accounts"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "idp-api-accounts-endpoint",
+        "href": "https://fedidcg.github.io/FedCM/#idp-api-accounts-endpoint",
+        "title": "Accounts List",
+        "number": "7.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-accounts_endpoint_response_accounts-approved_clients",
+      "href": "https://fedidcg.github.io/FedCM/#dom-accounts_endpoint_response_accounts-approved_clients",
+      "linkingText": [
+        "approved_clients"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "accounts_endpoint_response_accounts"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "idp-api-accounts-endpoint",
+        "href": "https://fedidcg.github.io/FedCM/#idp-api-accounts-endpoint",
+        "title": "Accounts List",
+        "number": "7.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-client_metadata_endpoint_response-privacy_policy_url",
+      "href": "https://fedidcg.github.io/FedCM/#dom-client_metadata_endpoint_response-privacy_policy_url",
+      "linkingText": [
+        "privacy_policy_url"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "client_metadata_endpoint_response"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "idp-api-client-id-metadata-endpoint",
+        "href": "https://fedidcg.github.io/FedCM/#idp-api-client-id-metadata-endpoint",
+        "title": "Client Metadata",
+        "number": "7.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-client_metadata_endpoint_response-terms_of_service_url",
+      "href": "https://fedidcg.github.io/FedCM/#dom-client_metadata_endpoint_response-terms_of_service_url",
+      "linkingText": [
+        "terms_of_service_url"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "client_metadata_endpoint_response"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "idp-api-client-id-metadata-endpoint",
+        "href": "https://fedidcg.github.io/FedCM/#idp-api-client-id-metadata-endpoint",
+        "title": "Client Metadata",
+        "number": "7.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-id_token_endpoint_request-client_id",
+      "href": "https://fedidcg.github.io/FedCM/#dom-id_token_endpoint_request-client_id",
+      "linkingText": [
+        "client_id"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "id_token_endpoint_request"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "idp-api-id-token-endpoint",
+        "href": "https://fedidcg.github.io/FedCM/#idp-api-id-token-endpoint",
+        "title": "ID Token",
+        "number": "7.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-id_token_endpoint_request-nonce",
+      "href": "https://fedidcg.github.io/FedCM/#dom-id_token_endpoint_request-nonce",
+      "linkingText": [
+        "nonce"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "id_token_endpoint_request"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "idp-api-id-token-endpoint",
+        "href": "https://fedidcg.github.io/FedCM/#idp-api-id-token-endpoint",
+        "title": "ID Token",
+        "number": "7.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-id_token_endpoint_request-account_id",
+      "href": "https://fedidcg.github.io/FedCM/#dom-id_token_endpoint_request-account_id",
+      "linkingText": [
+        "account_id"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "id_token_endpoint_request"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "idp-api-id-token-endpoint",
+        "href": "https://fedidcg.github.io/FedCM/#idp-api-id-token-endpoint",
+        "title": "ID Token",
+        "number": "7.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-id_token_endpoint_request-consent_acquired",
+      "href": "https://fedidcg.github.io/FedCM/#dom-id_token_endpoint_request-consent_acquired",
+      "linkingText": [
+        "consent_acquired"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "id_token_endpoint_request"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "idp-api-id-token-endpoint",
+        "href": "https://fedidcg.github.io/FedCM/#idp-api-id-token-endpoint",
+        "title": "ID Token",
+        "number": "7.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-id_token_endpoint_response-id_token",
+      "href": "https://fedidcg.github.io/FedCM/#dom-id_token_endpoint_response-id_token",
+      "linkingText": [
+        "id_token"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "id_token_endpoint_response"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "idp-api-id-token-endpoint",
+        "href": "https://fedidcg.github.io/FedCM/#idp-api-id-token-endpoint",
+        "title": "ID Token",
+        "number": "7.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-revocation_endpoint_request-client_id",
+      "href": "https://fedidcg.github.io/FedCM/#dom-revocation_endpoint_request-client_id",
+      "linkingText": [
+        "client_id"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "revocation_endpoint_request"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "idp-api-revocation-endpoint",
+        "href": "https://fedidcg.github.io/FedCM/#idp-api-revocation-endpoint",
+        "title": "Revocation",
+        "number": "7.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-revocation_endpoint_request-hint",
+      "href": "https://fedidcg.github.io/FedCM/#dom-revocation_endpoint_request-hint",
+      "linkingText": [
+        "hint"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "revocation_endpoint_request"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "idp-api-revocation-endpoint",
+        "href": "https://fedidcg.github.io/FedCM/#idp-api-revocation-endpoint",
+        "title": "Revocation",
+        "number": "7.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "sec-fedcm-csrf",
+      "href": "https://fedidcg.github.io/FedCM/#sec-fedcm-csrf",
+      "linkingText": [
+        "Sec-FedCM-CSRF"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "Sec-FedCM-CSRF",
+        "href": "https://fedidcg.github.io/FedCM/#Sec-FedCM-CSRF",
+        "title": "Sec-FedCM-CSRF",
+        "number": "7.6"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-statemachine-account-state",
+      "href": "https://fedidcg.github.io/FedCM/#dom-statemachine-account-state",
+      "linkingText": [
+        "Account State"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "StateMachine"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "browser-api-state-machine",
+        "href": "https://fedidcg.github.io/FedCM/#browser-api-state-machine",
+        "title": "The State Machine",
+        "number": "9.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-statemachine-session-state",
+      "href": "https://fedidcg.github.io/FedCM/#dom-statemachine-session-state",
+      "linkingText": [
+        "Session State"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "StateMachine"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "browser-api-state-machine",
+        "href": "https://fedidcg.github.io/FedCM/#browser-api-state-machine",
+        "title": "The State Machine",
+        "number": "9.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-federatedcredentialrequestoptions-providers",
+      "href": "https://fedidcg.github.io/FedCM/#dom-federatedcredentialrequestoptions-providers",
+      "linkingText": [
+        "providers"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "FederatedCredentialRequestOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "browser-api-federated-credential",
+        "href": "https://fedidcg.github.io/FedCM/#browser-api-federated-credential",
+        "title": "The FederatedCredential Object",
+        "number": "9.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-federatedidentityprovider",
+      "href": "https://fedidcg.github.io/FedCM/#dictdef-federatedidentityprovider",
+      "linkingText": [
+        "FederatedIdentityProvider"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "browser-api-federated-credential",
+        "href": "https://fedidcg.github.io/FedCM/#browser-api-federated-credential",
+        "title": "The FederatedCredential Object",
+        "number": "9.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-federatedidentityprovider-url",
+      "href": "https://fedidcg.github.io/FedCM/#dom-federatedidentityprovider-url",
+      "linkingText": [
+        "url"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "FederatedIdentityProvider"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "browser-api-federated-credential",
+        "href": "https://fedidcg.github.io/FedCM/#browser-api-federated-credential",
+        "title": "The FederatedCredential Object",
+        "number": "9.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-federatedidentityprovider-clientid",
+      "href": "https://fedidcg.github.io/FedCM/#dom-federatedidentityprovider-clientid",
+      "linkingText": [
+        "clientId"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "FederatedIdentityProvider"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "browser-api-federated-credential",
+        "href": "https://fedidcg.github.io/FedCM/#browser-api-federated-credential",
+        "title": "The FederatedCredential Object",
+        "number": "9.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-federatedidentityprovider-hint",
+      "href": "https://fedidcg.github.io/FedCM/#dom-federatedidentityprovider-hint",
+      "linkingText": [
+        "hint"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "FederatedIdentityProvider"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "browser-api-federated-credential",
+        "href": "https://fedidcg.github.io/FedCM/#browser-api-federated-credential",
+        "title": "The FederatedCredential Object",
+        "number": "9.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-federatedidentityprovider-url①",
+      "href": "https://fedidcg.github.io/FedCM/#dom-federatedidentityprovider-url%E2%91%A0",
+      "linkingText": [
+        "url"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "FederatedIdentityProvider"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "browser-api-federated-credential",
+        "href": "https://fedidcg.github.io/FedCM/#browser-api-federated-credential",
+        "title": "The FederatedCredential Object",
+        "number": "9.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-federatedidentityprovider-clientid①",
+      "href": "https://fedidcg.github.io/FedCM/#dom-federatedidentityprovider-clientid%E2%91%A0",
+      "linkingText": [
+        "clientId"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "FederatedIdentityProvider"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "browser-api-federated-credential",
+        "href": "https://fedidcg.github.io/FedCM/#browser-api-federated-credential",
+        "title": "The FederatedCredential Object",
+        "number": "9.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-federatedidentityprovider-hint①",
+      "href": "https://fedidcg.github.io/FedCM/#dom-federatedidentityprovider-hint%E2%91%A0",
+      "linkingText": [
+        "hint"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "FederatedIdentityProvider"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "browser-api-federated-credential",
+        "href": "https://fedidcg.github.io/FedCM/#browser-api-federated-credential",
+        "title": "The FederatedCredential Object",
+        "number": "9.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-federatedcredential-discoverfromexternalsource-slot",
+      "href": "https://fedidcg.github.io/FedCM/#dom-federatedcredential-discoverfromexternalsource-slot",
+      "linkingText": [
+        "[[DiscoverFromExternalSource]](origin, options, sameOriginWithAncestors)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "FederatedCredential"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "browser-api-federated-credential",
+        "href": "https://fedidcg.github.io/FedCM/#browser-api-federated-credential",
+        "title": "The FederatedCredential Object",
+        "number": "9.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-federatedcredential-discoverfromexternalsource-origin-options-sameoriginwithancestors-origin",
+      "href": "https://fedidcg.github.io/FedCM/#dom-federatedcredential-discoverfromexternalsource-origin-options-sameoriginwithancestors-origin",
+      "linkingText": [
+        "origin"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "FederatedCredential/[[DiscoverFromExternalSource]](origin, options, sameOriginWithAncestors)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "browser-api-federated-credential",
+        "href": "https://fedidcg.github.io/FedCM/#browser-api-federated-credential",
+        "title": "The FederatedCredential Object",
+        "number": "9.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-federatedcredential-discoverfromexternalsource-origin-options-sameoriginwithancestors-options",
+      "href": "https://fedidcg.github.io/FedCM/#dom-federatedcredential-discoverfromexternalsource-origin-options-sameoriginwithancestors-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "FederatedCredential/[[DiscoverFromExternalSource]](origin, options, sameOriginWithAncestors)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "browser-api-federated-credential",
+        "href": "https://fedidcg.github.io/FedCM/#browser-api-federated-credential",
+        "title": "The FederatedCredential Object",
+        "number": "9.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-federatedcredential-discoverfromexternalsource-origin-options-sameoriginwithancestors-sameoriginwithancestors",
+      "href": "https://fedidcg.github.io/FedCM/#dom-federatedcredential-discoverfromexternalsource-origin-options-sameoriginwithancestors-sameoriginwithancestors",
+      "linkingText": [
+        "sameOriginWithAncestors"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "FederatedCredential/[[DiscoverFromExternalSource]](origin, options, sameOriginWithAncestors)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "browser-api-federated-credential",
+        "href": "https://fedidcg.github.io/FedCM/#browser-api-federated-credential",
+        "title": "The FederatedCredential Object",
+        "number": "9.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "create-credential",
+      "href": "https://fedidcg.github.io/FedCM/#create-credential",
+      "linkingText": [
+        "create-credential"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "browser-api-federated-credential",
+        "href": "https://fedidcg.github.io/FedCM/#browser-api-federated-credential",
+        "title": "The FederatedCredential Object",
+        "number": "9.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "sign-up",
+      "href": "https://fedidcg.github.io/FedCM/#sign-up",
+      "linkingText": [
+        "sign-up"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "browser-api-federated-credential",
+        "href": "https://fedidcg.github.io/FedCM/#browser-api-federated-credential",
+        "title": "The FederatedCredential Object",
+        "number": "9.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "select-an-account",
+      "href": "https://fedidcg.github.io/FedCM/#select-an-account",
+      "linkingText": [
+        "select an account"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "browser-api-federated-credential",
+        "href": "https://fedidcg.github.io/FedCM/#browser-api-federated-credential",
+        "title": "The FederatedCredential Object",
+        "number": "9.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "sign-in",
+      "href": "https://fedidcg.github.io/FedCM/#sign-in",
+      "linkingText": [
+        "sign-in"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "browser-api-federated-credential",
+        "href": "https://fedidcg.github.io/FedCM/#browser-api-federated-credential",
+        "title": "The FederatedCredential Object",
+        "number": "9.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "auto-sign-in",
+      "href": "https://fedidcg.github.io/FedCM/#auto-sign-in",
+      "linkingText": [
+        "auto sign-in"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "browser-api-federated-credential",
+        "href": "https://fedidcg.github.io/FedCM/#browser-api-federated-credential",
+        "title": "The FederatedCredential Object",
+        "number": "9.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "explicit-sign-in",
+      "href": "https://fedidcg.github.io/FedCM/#explicit-sign-in",
+      "linkingText": [
+        "explicit sign-in"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "browser-api-federated-credential",
+        "href": "https://fedidcg.github.io/FedCM/#browser-api-federated-credential",
+        "title": "The FederatedCredential Object",
+        "number": "9.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "fetch-the-manifest",
+      "href": "https://fedidcg.github.io/FedCM/#fetch-the-manifest",
+      "linkingText": [
+        "fetch the manifest"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "browser-api-federated-credential",
+        "href": "https://fedidcg.github.io/FedCM/#browser-api-federated-credential",
+        "title": "The FederatedCredential Object",
+        "number": "9.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "fetch-the-accounts-list",
+      "href": "https://fedidcg.github.io/FedCM/#fetch-the-accounts-list",
+      "linkingText": [
+        "fetch the accounts list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "browser-api-federated-credential",
+        "href": "https://fedidcg.github.io/FedCM/#browser-api-federated-credential",
+        "title": "The FederatedCredential Object",
+        "number": "9.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "fetch-the-client-metadata",
+      "href": "https://fedidcg.github.io/FedCM/#fetch-the-client-metadata",
+      "linkingText": [
+        "fetch the client metadata"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "browser-api-federated-credential",
+        "href": "https://fedidcg.github.io/FedCM/#browser-api-federated-credential",
+        "title": "The FederatedCredential Object",
+        "number": "9.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "privacy-policy",
+      "href": "https://fedidcg.github.io/FedCM/#privacy-policy",
+      "linkingText": [
+        "Privacy Policy"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "browser-api-federated-credential",
+        "href": "https://fedidcg.github.io/FedCM/#browser-api-federated-credential",
+        "title": "The FederatedCredential Object",
+        "number": "9.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "terms-of-service",
+      "href": "https://fedidcg.github.io/FedCM/#terms-of-service",
+      "linkingText": [
+        "Terms of Service"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "browser-api-federated-credential",
+        "href": "https://fedidcg.github.io/FedCM/#browser-api-federated-credential",
+        "title": "The FederatedCredential Object",
+        "number": "9.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dictdef-federatedaccountloginrequest",
+      "href": "https://fedidcg.github.io/FedCM/#dictdef-federatedaccountloginrequest",
+      "linkingText": [
+        "FederatedAccountLoginRequest"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "browser-api-rp-sign-in",
+        "href": "https://fedidcg.github.io/FedCM/#browser-api-rp-sign-in",
+        "title": "RP Sign-in API",
+        "number": "9.3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-federatedaccountloginrequest-signal",
+      "href": "https://fedidcg.github.io/FedCM/#dom-federatedaccountloginrequest-signal",
+      "linkingText": [
+        "signal"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "FederatedAccountLoginRequest"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "browser-api-rp-sign-in",
+        "href": "https://fedidcg.github.io/FedCM/#browser-api-rp-sign-in",
+        "title": "RP Sign-in API",
+        "number": "9.3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-federatedaccountloginrequest-nonce",
+      "href": "https://fedidcg.github.io/FedCM/#dom-federatedaccountloginrequest-nonce",
+      "linkingText": [
+        "nonce"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "FederatedAccountLoginRequest"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "browser-api-rp-sign-in",
+        "href": "https://fedidcg.github.io/FedCM/#browser-api-rp-sign-in",
+        "title": "RP Sign-in API",
+        "number": "9.3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-federatedcredential-login",
+      "href": "https://fedidcg.github.io/FedCM/#dom-federatedcredential-login",
+      "linkingText": [
+        "login(request)",
+        "login()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "FederatedCredential"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "browser-api-rp-sign-in",
+        "href": "https://fedidcg.github.io/FedCM/#browser-api-rp-sign-in",
+        "title": "RP Sign-in API",
+        "number": "9.3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-federatedcredential-login-request-request",
+      "href": "https://fedidcg.github.io/FedCM/#dom-federatedcredential-login-request-request",
+      "linkingText": [
+        "request"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "FederatedCredential/login(request)",
+        "FederatedCredential/login()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "browser-api-rp-sign-in",
+        "href": "https://fedidcg.github.io/FedCM/#browser-api-rp-sign-in",
+        "title": "RP Sign-in API",
+        "number": "9.3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-federatedtokens",
+      "href": "https://fedidcg.github.io/FedCM/#dictdef-federatedtokens",
+      "linkingText": [
+        "FederatedTokens"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "browser-api-rp-sign-in",
+        "href": "https://fedidcg.github.io/FedCM/#browser-api-rp-sign-in",
+        "title": "RP Sign-in API",
+        "number": "9.3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-federatedtokens-idtoken",
+      "href": "https://fedidcg.github.io/FedCM/#dom-federatedtokens-idtoken",
+      "linkingText": [
+        "idToken"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "FederatedTokens"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "browser-api-rp-sign-in",
+        "href": "https://fedidcg.github.io/FedCM/#browser-api-rp-sign-in",
+        "title": "RP Sign-in API",
+        "number": "9.3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-federatedaccountloginrequest-nonce①",
+      "href": "https://fedidcg.github.io/FedCM/#dom-federatedaccountloginrequest-nonce%E2%91%A0",
+      "linkingText": [
+        "nonce"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "FederatedAccountLoginRequest"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "browser-api-rp-sign-in",
+        "href": "https://fedidcg.github.io/FedCM/#browser-api-rp-sign-in",
+        "title": "RP Sign-in API",
+        "number": "9.3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-federatedaccountloginrequest-signal①",
+      "href": "https://fedidcg.github.io/FedCM/#dom-federatedaccountloginrequest-signal%E2%91%A0",
+      "linkingText": [
+        "signal"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "FederatedAccountLoginRequest"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "browser-api-rp-sign-in",
+        "href": "https://fedidcg.github.io/FedCM/#browser-api-rp-sign-in",
+        "title": "RP Sign-in API",
+        "number": "9.3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-federatedtokens-idtoken①",
+      "href": "https://fedidcg.github.io/FedCM/#dom-federatedtokens-idtoken%E2%91%A0",
+      "linkingText": [
+        "idToken"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "FederatedTokens"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "browser-api-rp-sign-in",
+        "href": "https://fedidcg.github.io/FedCM/#browser-api-rp-sign-in",
+        "title": "RP Sign-in API",
+        "number": "9.3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-federatedcredential-revoke",
+      "href": "https://fedidcg.github.io/FedCM/#dom-federatedcredential-revoke",
+      "linkingText": [
+        "revoke(hint)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "FederatedCredential"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "browser-api-revocation",
+        "href": "https://fedidcg.github.io/FedCM/#browser-api-revocation",
+        "title": "The Revocation API",
+        "number": "9.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-federatedcredential-revoke-hint-hint",
+      "href": "https://fedidcg.github.io/FedCM/#dom-federatedcredential-revoke-hint-hint",
+      "linkingText": [
+        "hint"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "FederatedCredential/revoke(hint)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "browser-api-revocation",
+        "href": "https://fedidcg.github.io/FedCM/#browser-api-revocation",
+        "title": "The Revocation API",
+        "number": "9.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-federatedcredential-logout",
+      "href": "https://fedidcg.github.io/FedCM/#dom-federatedcredential-logout",
+      "linkingText": [
+        "logout()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "FederatedCredential"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "browser-api-rp-sign-out",
+        "href": "https://fedidcg.github.io/FedCM/#browser-api-rp-sign-out",
+        "title": "RP Sign-out",
+        "number": "9.5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-federatedcredentiallogoutrpsrequest",
+      "href": "https://fedidcg.github.io/FedCM/#dictdef-federatedcredentiallogoutrpsrequest",
+      "linkingText": [
+        "FederatedCredentialLogoutRpsRequest"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "browser-api-idp-sign-out",
+        "href": "https://fedidcg.github.io/FedCM/#browser-api-idp-sign-out",
+        "title": "IDP Sign-out",
+        "number": "9.5.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-federatedcredentiallogoutrpsrequest-url",
+      "href": "https://fedidcg.github.io/FedCM/#dom-federatedcredentiallogoutrpsrequest-url",
+      "linkingText": [
+        "url"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "FederatedCredentialLogoutRpsRequest"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "browser-api-idp-sign-out",
+        "href": "https://fedidcg.github.io/FedCM/#browser-api-idp-sign-out",
+        "title": "IDP Sign-out",
+        "number": "9.5.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-federatedcredentiallogoutrpsrequest-accountid",
+      "href": "https://fedidcg.github.io/FedCM/#dom-federatedcredentiallogoutrpsrequest-accountid",
+      "linkingText": [
+        "accountId"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "FederatedCredentialLogoutRpsRequest"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "browser-api-idp-sign-out",
+        "href": "https://fedidcg.github.io/FedCM/#browser-api-idp-sign-out",
+        "title": "IDP Sign-out",
+        "number": "9.5.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-federatedcredential-logoutrps",
+      "href": "https://fedidcg.github.io/FedCM/#dom-federatedcredential-logoutrps",
+      "linkingText": [
+        "logoutRPs(logoutRequests)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "FederatedCredential"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "browser-api-idp-sign-out",
+        "href": "https://fedidcg.github.io/FedCM/#browser-api-idp-sign-out",
+        "title": "IDP Sign-out",
+        "number": "9.5.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-federatedcredential-logoutrps-logoutrequests-logoutrequests",
+      "href": "https://fedidcg.github.io/FedCM/#dom-federatedcredential-logoutrps-logoutrequests-logoutrequests",
+      "linkingText": [
+        "logoutRequests"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "FederatedCredential/logoutRPs(logoutRequests)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "browser-api-idp-sign-out",
+        "href": "https://fedidcg.github.io/FedCM/#browser-api-idp-sign-out",
+        "title": "IDP Sign-out",
+        "number": "9.5.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "surveillance",
+      "href": "https://fedidcg.github.io/FedCM/#surveillance",
+      "linkingText": [
+        "Surveillance"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "privacy-threat-model-high-level-threats",
+        "href": "https://fedidcg.github.io/FedCM/#privacy-threat-model-high-level-threats",
+        "title": "High-level threats",
+        "number": "11.1.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "stored-data-compromise",
+      "href": "https://fedidcg.github.io/FedCM/#stored-data-compromise",
+      "linkingText": [
+        "Stored Data Compromise"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "privacy-threat-model-high-level-threats",
+        "href": "https://fedidcg.github.io/FedCM/#privacy-threat-model-high-level-threats",
+        "title": "High-level threats",
+        "number": "11.1.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "intrusion",
+      "href": "https://fedidcg.github.io/FedCM/#intrusion",
+      "linkingText": [
+        "Intrusion"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "privacy-threat-model-high-level-threats",
+        "href": "https://fedidcg.github.io/FedCM/#privacy-threat-model-high-level-threats",
+        "title": "High-level threats",
+        "number": "11.1.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "misattribution",
+      "href": "https://fedidcg.github.io/FedCM/#misattribution",
+      "linkingText": [
+        "Misattribution"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "privacy-threat-model-high-level-threats",
+        "href": "https://fedidcg.github.io/FedCM/#privacy-threat-model-high-level-threats",
+        "title": "High-level threats",
+        "number": "11.1.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "correlation",
+      "href": "https://fedidcg.github.io/FedCM/#correlation",
+      "linkingText": [
+        "Correlation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "privacy-threat-model-high-level-threats",
+        "href": "https://fedidcg.github.io/FedCM/#privacy-threat-model-high-level-threats",
+        "title": "High-level threats",
+        "number": "11.1.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "identification",
+      "href": "https://fedidcg.github.io/FedCM/#identification",
+      "linkingText": [
+        "Identification"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "privacy-threat-model-high-level-threats",
+        "href": "https://fedidcg.github.io/FedCM/#privacy-threat-model-high-level-threats",
+        "title": "High-level threats",
+        "number": "11.1.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "secondary-use",
+      "href": "https://fedidcg.github.io/FedCM/#secondary-use",
+      "linkingText": [
+        "Secondary Use"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "privacy-threat-model-high-level-threats",
+        "href": "https://fedidcg.github.io/FedCM/#privacy-threat-model-high-level-threats",
+        "title": "High-level threats",
+        "number": "11.1.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "disclosure",
+      "href": "https://fedidcg.github.io/FedCM/#disclosure",
+      "linkingText": [
+        "Disclosure"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "privacy-threat-model-high-level-threats",
+        "href": "https://fedidcg.github.io/FedCM/#privacy-threat-model-high-level-threats",
+        "title": "High-level threats",
+        "number": "11.1.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "exclusion",
+      "href": "https://fedidcg.github.io/FedCM/#exclusion",
+      "linkingText": [
+        "Exclusion"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "privacy-threat-model-high-level-threats",
+        "href": "https://fedidcg.github.io/FedCM/#privacy-threat-model-high-level-threats",
+        "title": "High-level threats",
+        "number": "11.1.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "rp-secondary-use",
+      "href": "https://fedidcg.github.io/FedCM/#rp-secondary-use",
+      "linkingText": [
+        "RP Secondary Use"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attack-scenarios-by-rp-cross-site-correlation",
+        "href": "https://fedidcg.github.io/FedCM/#attack-scenarios-by-rp-cross-site-correlation",
+        "title": "Cross-Site Correlation",
+        "number": "11.1.3.1.1"
+      },
+      "definedIn": "prose"
+    }
+  ]
+}

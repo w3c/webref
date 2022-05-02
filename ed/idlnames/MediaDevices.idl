@@ -16,6 +16,12 @@ partial interface MediaDevices {
   undefined setCaptureHandleConfig(optional CaptureHandleConfig config = {});
 };
 
+// Source: Viewport Capture (https://w3c.github.io/mediacapture-viewport/)
+partial interface MediaDevices {
+  Promise<MediaStream> getViewportMedia(
+      optional DisplayMediaStreamConstraints constraints = {});
+};
+
 // Source: Audio Output Devices API (https://www.w3.org/TR/audio-output/)
 partial interface MediaDevices {
   Promise<MediaDeviceInfo> selectAudioOutput(optional AudioOutputOptions options = {});
