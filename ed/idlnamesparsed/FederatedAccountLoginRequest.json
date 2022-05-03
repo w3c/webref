@@ -1,0 +1,80 @@
+{
+  "name": "FederatedAccountLoginRequest",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Federated Credential Management API",
+      "url": "https://fedidcg.github.io/FedCM/"
+    },
+    "fragment": "[Exposed=Window, SecureContext]\ndictionary FederatedAccountLoginRequest {\n  AbortSignal signal;\n  USVString nonce;\n};",
+    "href": "https://fedidcg.github.io/FedCM/#dictdef-federatedaccountloginrequest"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://fedidcg.github.io/FedCM/": [
+      {
+        "id": "dictdef-federatedaccountloginrequest",
+        "href": "https://fedidcg.github.io/FedCM/#dictdef-federatedaccountloginrequest",
+        "linkingText": [
+          "FederatedAccountLoginRequest"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "browser-api-rp-sign-in",
+          "href": "https://fedidcg.github.io/FedCM/#browser-api-rp-sign-in",
+          "title": "RP Sign-in API",
+          "number": "9.3.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-federatedaccountloginrequest-signal",
+        "href": "https://fedidcg.github.io/FedCM/#dom-federatedaccountloginrequest-signal",
+        "linkingText": [
+          "signal"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "FederatedAccountLoginRequest"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "browser-api-rp-sign-in",
+          "href": "https://fedidcg.github.io/FedCM/#browser-api-rp-sign-in",
+          "title": "RP Sign-in API",
+          "number": "9.3.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-federatedaccountloginrequest-nonce",
+        "href": "https://fedidcg.github.io/FedCM/#dom-federatedaccountloginrequest-nonce",
+        "linkingText": [
+          "nonce"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "FederatedAccountLoginRequest"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "browser-api-rp-sign-in",
+          "href": "https://fedidcg.github.io/FedCM/#browser-api-rp-sign-in",
+          "title": "RP Sign-in API",
+          "number": "9.3.1"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

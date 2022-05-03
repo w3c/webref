@@ -26,6 +26,13 @@
     },
     {
       "spec": {
+        "title": "Viewport Capture",
+        "url": "https://w3c.github.io/mediacapture-viewport/"
+      },
+      "fragment": "partial interface MediaDevices {\n  Promise<MediaStream> getViewportMedia(\n      optional DisplayMediaStreamConstraints constraints = {});\n};"
+    },
+    {
+      "spec": {
         "title": "Audio Output Devices API",
         "url": "https://www.w3.org/TR/audio-output/"
       },
@@ -261,6 +268,34 @@
           "href": "https://w3c.github.io/mediacapture-handle/identity/#set-capture-handle-config",
           "title": "MediaDevices.setCaptureHandleConfig()",
           "number": "4.2"
+        },
+        "definedIn": "dt"
+      }
+    ],
+    "https://w3c.github.io/mediacapture-viewport/": [
+      {
+        "id": "dom-mediadevices-getviewportmedia",
+        "href": "https://w3c.github.io/mediacapture-viewport/#dom-mediadevices-getviewportmedia",
+        "linkingText": [
+          "getViewportMedia()",
+          "getViewportMedia(constraints)"
+        ],
+        "localLinkingText": [
+          "MediaDevices.getViewportMedia",
+          "MediaDevices.getViewportMedia()",
+          "getViewportMedia"
+        ],
+        "type": "method",
+        "for": [
+          "MediaDevices"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "mediadevices-additions",
+          "href": "https://w3c.github.io/mediacapture-viewport/#mediadevices-additions",
+          "title": "MediaDevices Additions",
+          "number": "5.1"
         },
         "definedIn": "dt"
       }

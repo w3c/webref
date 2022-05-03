@@ -1,0 +1,59 @@
+{
+  "name": "FederatedTokens",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Federated Credential Management API",
+      "url": "https://fedidcg.github.io/FedCM/"
+    },
+    "fragment": "[Exposed=Window, SecureContext]\ndictionary FederatedTokens {\n  USVString idToken;\n};",
+    "href": "https://fedidcg.github.io/FedCM/#dictdef-federatedtokens"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": [],
+  "dfns": {
+    "https://fedidcg.github.io/FedCM/": [
+      {
+        "id": "dictdef-federatedtokens",
+        "href": "https://fedidcg.github.io/FedCM/#dictdef-federatedtokens",
+        "linkingText": [
+          "FederatedTokens"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "browser-api-rp-sign-in",
+          "href": "https://fedidcg.github.io/FedCM/#browser-api-rp-sign-in",
+          "title": "RP Sign-in API",
+          "number": "9.3.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-federatedtokens-idtoken",
+        "href": "https://fedidcg.github.io/FedCM/#dom-federatedtokens-idtoken",
+        "linkingText": [
+          "idToken"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "FederatedTokens"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "browser-api-rp-sign-in",
+          "href": "https://fedidcg.github.io/FedCM/#browser-api-rp-sign-in",
+          "title": "RP Sign-in API",
+          "number": "9.3.1"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}
