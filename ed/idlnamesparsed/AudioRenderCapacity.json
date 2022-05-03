@@ -6,10 +6,24 @@
       "title": "Web Audio API",
       "url": "https://www.w3.org/TR/webaudio/"
     },
-    "fragment": "[Exposed=Window]\ninterface AudioRenderCapacity {\n  undefined start(AudioRenderCapacityOptions options);\n    undefined stop();\n    attribute EventHandler onupdate;\n};",
+    "fragment": "[Exposed=Window]\ninterface AudioRenderCapacity : EventTarget {\n  undefined start(optional AudioRenderCapacityOptions options = {});\n    undefined stop();\n    attribute EventHandler onupdate;\n};",
     "href": "https://webaudio.github.io/web-audio-api/#audiorendercapacity"
   },
   "extended": [],
-  "inheritance": null,
+  "inheritance": {
+    "name": "EventTarget",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=*]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+      "href": "https://dom.spec.whatwg.org/#eventtarget"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
   "includes": []
 }
