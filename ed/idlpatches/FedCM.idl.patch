@@ -1,0 +1,39 @@
+From cd54901a059cdad7f573ce9c86053a12a3c09f94 Mon Sep 17 00:00:00 2001
+From: Francois Daoust <fd@tidoust.net>
+Date: Tue, 3 May 2022 10:37:45 +0200
+Subject: [PATCH] Drop invalid IDL for FederatedCredentialRequestOptions
+
+See https://github.com/fedidcg/FedCM/issues/255
+
+The Web IDL defined in the FedCM spec does not mean much without the extended
+`providers` member but it's not entirely clear how this is going to be fixed in
+the spec. In the meantime, this patch is merely meant to allow data curation to
+resume.
+---
+ ed/idl/FedCM.idl | 10 ----------
+ 1 file changed, 10 deletions(-)
+
+diff --git a/ed/idl/FedCM.idl b/ed/idl/FedCM.idl
+index c7e943d54..af4862103 100644
+--- a/ed/idl/FedCM.idl
++++ b/ed/idl/FedCM.idl
+@@ -3,16 +3,6 @@
+ // (https://github.com/w3c/webref)
+ // Source: Federated Credential Management API (https://fedidcg.github.io/FedCM/)
+ 
+-partial dictionary FederatedCredentialRequestOptions {
+-  sequence<(DOMString or FederatedIdentityProvider)> providers;
+-};
+-
+-dictionary FederatedIdentityProvider {
+-  required USVString url;
+-  required USVString clientId;
+-  USVString hint;
+-};
+-
+ [Exposed=Window, SecureContext]
+ dictionary FederatedAccountLoginRequest {
+   AbortSignal signal;
+-- 
+2.36.0.windows.1
+
