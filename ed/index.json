@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2022-05-03T00:48:44.160Z",
+  "date": "2022-05-03T06:37:59.744Z",
   "options": {
     "fallback": "webref-fallback/ed/index.json",
     "output": "report",
@@ -21,7 +21,7 @@
   },
   "stats": {
     "crawled": 469,
-    "errors": 0
+    "errors": 1
   },
   "crawler": "reffy-7.0.8",
   "results": [
@@ -168,9 +168,9 @@
       ],
       "crawled": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html",
       "crawlCacheInfo": {
-        "lastModified": "Sun, 01 May 2022 01:00:15 GMT"
+        "lastModified": "Tue, 03 May 2022 00:51:20 GMT"
       },
-      "date": "1 May 2022",
+      "date": "3 May 2022",
       "links": "links/rfc6265bis.json",
       "refs": "refs/rfc6265bis.json",
       "headings": "headings/rfc6265bis.json",
@@ -1354,7 +1354,7 @@
       ],
       "crawled": "https://fetch.spec.whatwg.org/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 02 May 2022 15:21:08 GMT"
+        "lastModified": "Tue, 03 May 2022 06:36:03 GMT"
       },
       "generator": "bikeshed",
       "date": "2 May 2022",
@@ -12010,10 +12010,10 @@
       ],
       "crawled": "https://w3c.github.io/webappsec-csp/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 22 Apr 2022 11:19:44 GMT"
+        "lastModified": "Tue, 03 May 2022 05:35:18 GMT"
       },
       "generator": "bikeshed",
-      "date": "22 April 2022",
+      "date": "3 May 2022",
       "links": "links/CSP3.json",
       "refs": "refs/CSP3.json",
       "idl": "idl/CSP.idl",
@@ -17140,7 +17140,8 @@
       "css": "css/CSS.json",
       "dfns": "dfns/CSS22.json",
       "headings": "headings/CSS22.json",
-      "ids": "ids/CSS22.json"
+      "ids": "ids/CSS22.json",
+      "error": "Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers' Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers'\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:483:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 325)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/css3-exclusions/",
