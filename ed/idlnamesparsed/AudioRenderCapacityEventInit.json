@@ -1,0 +1,220 @@
+{
+  "name": "AudioRenderCapacityEventInit",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Web Audio API",
+      "url": "https://www.w3.org/TR/webaudio/"
+    },
+    "fragment": "dictionary AudioRenderCapacityEventInit : EventInit {\n  double timestamp = 0;\n  double averageLoad = 0;\n  double peakLoad = 0;\n  double underrunRatio = 0;\n};",
+    "href": "https://webaudio.github.io/web-audio-api/#dictdef-audiorendercapacityeventinit"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "EventInit",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "dictionary EventInit {\n  boolean bubbles = false;\n  boolean cancelable = false;\n  boolean composed = false;\n};",
+      "href": "https://dom.spec.whatwg.org/#dictdef-eventinit"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [],
+  "dfns": {
+    "https://www.w3.org/TR/webaudio/": [
+      {
+        "id": "dictdef-audiorendercapacityeventinit",
+        "href": "https://webaudio.github.io/web-audio-api/#dictdef-audiorendercapacityeventinit",
+        "linkingText": [
+          "AudioRenderCapacityEventInit"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "AudioRenderCapacityEvent",
+          "href": "https://webaudio.github.io/web-audio-api/#AudioRenderCapacityEvent",
+          "title": "AudioRenderCapacityEvent",
+          "number": "1.2.8"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-audiorendercapacityeventinit-timestamp",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-audiorendercapacityeventinit-timestamp",
+        "linkingText": [
+          "timestamp"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "AudioRenderCapacityEventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "AudioRenderCapacityEvent",
+          "href": "https://webaudio.github.io/web-audio-api/#AudioRenderCapacityEvent",
+          "title": "AudioRenderCapacityEvent",
+          "number": "1.2.8"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-audiorendercapacityeventinit-averageload",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-audiorendercapacityeventinit-averageload",
+        "linkingText": [
+          "averageLoad"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "AudioRenderCapacityEventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "AudioRenderCapacityEvent",
+          "href": "https://webaudio.github.io/web-audio-api/#AudioRenderCapacityEvent",
+          "title": "AudioRenderCapacityEvent",
+          "number": "1.2.8"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-audiorendercapacityeventinit-peakload",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-audiorendercapacityeventinit-peakload",
+        "linkingText": [
+          "peakLoad"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "AudioRenderCapacityEventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "AudioRenderCapacityEvent",
+          "href": "https://webaudio.github.io/web-audio-api/#AudioRenderCapacityEvent",
+          "title": "AudioRenderCapacityEvent",
+          "number": "1.2.8"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-audiorendercapacityeventinit-underrunratio",
+        "href": "https://webaudio.github.io/web-audio-api/#dom-audiorendercapacityeventinit-underrunratio",
+        "linkingText": [
+          "underrunRatio"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "AudioRenderCapacityEventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "AudioRenderCapacityEvent",
+          "href": "https://webaudio.github.io/web-audio-api/#AudioRenderCapacityEvent",
+          "title": "AudioRenderCapacityEvent",
+          "number": "1.2.8"
+        },
+        "definedIn": "pre"
+      }
+    ],
+    "https://dom.spec.whatwg.org/": [
+      {
+        "id": "dictdef-eventinit",
+        "href": "https://dom.spec.whatwg.org/#dictdef-eventinit",
+        "linkingText": [
+          "EventInit"
+        ],
+        "localLinkingText": [],
+        "type": "dictionary",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventinit-bubbles",
+        "href": "https://dom.spec.whatwg.org/#dom-eventinit-bubbles",
+        "linkingText": [
+          "bubbles"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventinit-cancelable",
+        "href": "https://dom.spec.whatwg.org/#dom-eventinit-cancelable",
+        "linkingText": [
+          "cancelable"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-eventinit-composed",
+        "href": "https://dom.spec.whatwg.org/#dom-eventinit-composed",
+        "linkingText": [
+          "composed"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "EventInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "interface-event",
+          "href": "https://dom.spec.whatwg.org/#interface-event",
+          "title": "Interface Event",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
+      }
+    ]
+  }
+}

@@ -1325,10 +1325,10 @@
         "partial": false
       },
       "AudioRenderCapacity": {
-        "fragment": "[Exposed=Window]\ninterface AudioRenderCapacity {\n  undefined start(optional AudioRenderCapacityOptions options = {});\n    undefined stop();\n    attribute EventHandler onupdate;\n};",
+        "fragment": "[Exposed=Window]\ninterface AudioRenderCapacity : EventTarget {\n  undefined start(optional AudioRenderCapacityOptions options = {});\n    undefined stop();\n    attribute EventHandler onupdate;\n};",
         "type": "interface",
         "name": "AudioRenderCapacity",
-        "inheritance": null,
+        "inheritance": "EventTarget",
         "members": [
           {
             "type": "operation",
@@ -1437,10 +1437,10 @@
         "partial": false
       },
       "AudioRenderCapacityEvent": {
-        "fragment": "[Exposed=Window]\ninterface AudioRenderCapacityEvent {\n  constructor (DOMString type, double timestamp, double averageLoad,\n              double peakLoad, double underrunRatio);\n    readonly attribute double timestamp;\n    readonly attribute double averageLoad;\n    readonly attribute double peakLoad;\n    readonly attribute double underrunRatio;\n};",
+        "fragment": "[Exposed=Window]\ninterface AudioRenderCapacityEvent : Event {\n  constructor (DOMString type, optional AudioRenderCapacityEventInit eventInitDict = {});\n    readonly attribute double timestamp;\n    readonly attribute double averageLoad;\n    readonly attribute double peakLoad;\n    readonly attribute double underrunRatio;\n};",
         "type": "interface",
         "name": "AudioRenderCapacityEvent",
-        "inheritance": null,
+        "inheritance": "Event",
         "members": [
           {
             "type": "constructor",
@@ -1463,7 +1463,7 @@
               },
               {
                 "type": "argument",
-                "name": "timestamp",
+                "name": "eventInitDict",
                 "extAttrs": [],
                 "idlType": {
                   "type": "argument-type",
@@ -1471,58 +1471,12 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "double"
+                  "idlType": "AudioRenderCapacityEventInit"
                 },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              },
-              {
-                "type": "argument",
-                "name": "averageLoad",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "double"
+                "default": {
+                  "type": "dictionary"
                 },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              },
-              {
-                "type": "argument",
-                "name": "peakLoad",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "double"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              },
-              {
-                "type": "argument",
-                "name": "underrunRatio",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "double"
-                },
-                "default": null,
-                "optional": false,
+                "optional": true,
                 "variadic": false
               }
             ],
@@ -1600,6 +1554,88 @@
             "arguments": []
           }
         ],
+        "partial": false
+      },
+      "AudioRenderCapacityEventInit": {
+        "fragment": "dictionary AudioRenderCapacityEventInit : EventInit {\n  double timestamp = 0;\n  double averageLoad = 0;\n  double peakLoad = 0;\n  double underrunRatio = 0;\n};",
+        "type": "dictionary",
+        "name": "AudioRenderCapacityEventInit",
+        "inheritance": "EventInit",
+        "members": [
+          {
+            "type": "field",
+            "name": "timestamp",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "default": {
+              "type": "number",
+              "value": "0"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "averageLoad",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "default": {
+              "type": "number",
+              "value": "0"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "peakLoad",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "default": {
+              "type": "number",
+              "value": "0"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "underrunRatio",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "default": {
+              "type": "number",
+              "value": "0"
+            },
+            "required": false
+          }
+        ],
+        "extAttrs": [],
         "partial": false
       },
       "OfflineAudioContext": {
@@ -8646,11 +8682,18 @@
         "DOMHighResTimeStamp"
       ],
       "AudioRenderCapacity": [
+        "EventTarget",
         "AudioRenderCapacityOptions",
         "EventHandler"
       ],
       "AudioRenderCapacityOptions": [],
-      "AudioRenderCapacityEvent": [],
+      "AudioRenderCapacityEvent": [
+        "Event",
+        "AudioRenderCapacityEventInit"
+      ],
+      "AudioRenderCapacityEventInit": [
+        "EventInit"
+      ],
       "OfflineAudioContext": [
         "BaseAudioContext",
         "OfflineAudioContextOptions",
