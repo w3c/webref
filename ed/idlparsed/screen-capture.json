@@ -25,8 +25,24 @@
         ],
         "extAttrs": []
       },
+      "SystemAudioPreferenceEnum": {
+        "fragment": "enum SystemAudioPreferenceEnum {\n  \"include\",\n  \"exclude\"\n};",
+        "type": "enum",
+        "name": "SystemAudioPreferenceEnum",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "include"
+          },
+          {
+            "type": "enum-value",
+            "value": "exclude"
+          }
+        ],
+        "extAttrs": []
+      },
       "DisplayMediaStreamConstraints": {
-        "fragment": "dictionary DisplayMediaStreamConstraints {\n  (boolean or MediaTrackConstraints) video = true;\n  (boolean or MediaTrackConstraints) audio = false;\n  SelfCapturePreferenceEnum selfBrowserSurface;\n};",
+        "fragment": "dictionary DisplayMediaStreamConstraints {\n  (boolean or MediaTrackConstraints) video = true;\n  (boolean or MediaTrackConstraints) audio = false;\n  SelfCapturePreferenceEnum selfBrowserSurface;\n  SystemAudioPreferenceEnum systemAudio;\n};",
         "type": "dictionary",
         "name": "DisplayMediaStreamConstraints",
         "inheritance": null,
@@ -112,6 +128,21 @@
               "nullable": false,
               "union": false,
               "idlType": "SelfCapturePreferenceEnum"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "systemAudio",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SystemAudioPreferenceEnum"
             },
             "default": null,
             "required": false
@@ -554,7 +585,8 @@
       ],
       "DisplayMediaStreamConstraints": [
         "MediaTrackConstraints",
-        "SelfCapturePreferenceEnum"
+        "SelfCapturePreferenceEnum",
+        "SystemAudioPreferenceEnum"
       ],
       "MediaTrackSupportedConstraints": [],
       "MediaTrackConstraintSet": [
