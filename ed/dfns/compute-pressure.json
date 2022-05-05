@@ -81,25 +81,6 @@
       "definedIn": "prose"
     },
     {
-      "id": "dfn-platform-collector",
-      "href": "https://wicg.github.io/compute-pressure/#dfn-platform-collector",
-      "linkingText": [
-        "platform collector"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "platform-primitives",
-        "href": "https://wicg.github.io/compute-pressure/#platform-primitives",
-        "title": "Platform primitives",
-        "number": "4"
-      },
-      "definedIn": "prose"
-    },
-    {
       "id": "dfn-source-types",
       "href": "https://wicg.github.io/compute-pressure/#dfn-source-types",
       "linkingText": [
@@ -142,6 +123,25 @@
       "href": "https://wicg.github.io/compute-pressure/#dfn-registered-observer-list",
       "linkingText": [
         "registered observer list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "internal-slot-definitions",
+        "href": "https://wicg.github.io/compute-pressure/#internal-slot-definitions",
+        "title": "Internal Slot Definitions",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-platform-collector",
+      "href": "https://wicg.github.io/compute-pressure/#dfn-platform-collector",
+      "linkingText": [
+        "platform collector"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -420,10 +420,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "dfn-pressure-factors",
-      "href": "https://wicg.github.io/compute-pressure/#dfn-pressure-factors",
+      "id": "dfn-contributing-factors",
+      "href": "https://wicg.github.io/compute-pressure/#dfn-contributing-factors",
       "linkingText": [
-        "Pressure factors"
+        "Contributing factors"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -431,9 +431,9 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "pressure-factors",
-        "href": "https://wicg.github.io/compute-pressure/#pressure-factors",
-        "title": "Pressure Factors",
+        "id": "contributing-factors",
+        "href": "https://wicg.github.io/compute-pressure/#contributing-factors",
+        "title": "Contributing Factors",
         "number": "8"
       },
       "definedIn": "prose"
@@ -452,9 +452,9 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "pressure-factors",
-        "href": "https://wicg.github.io/compute-pressure/#pressure-factors",
-        "title": "Pressure Factors",
+        "id": "contributing-factors",
+        "href": "https://wicg.github.io/compute-pressure/#contributing-factors",
+        "title": "Contributing Factors",
         "number": "8"
       },
       "definedIn": "pre"
@@ -473,9 +473,9 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "pressure-factors",
-        "href": "https://wicg.github.io/compute-pressure/#pressure-factors",
-        "title": "Pressure Factors",
+        "id": "contributing-factors",
+        "href": "https://wicg.github.io/compute-pressure/#contributing-factors",
+        "title": "Contributing Factors",
         "number": "8"
       },
       "definedIn": "pre"
@@ -492,9 +492,9 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "pressure-factors",
-        "href": "https://wicg.github.io/compute-pressure/#pressure-factors",
-        "title": "Pressure Factors",
+        "id": "contributing-factors",
+        "href": "https://wicg.github.io/compute-pressure/#contributing-factors",
+        "title": "Contributing Factors",
         "number": "8"
       },
       "definedIn": "prose"
@@ -974,6 +974,25 @@
       "definedIn": "prose"
     },
     {
+      "id": "dfn-data-delivery",
+      "href": "https://wicg.github.io/compute-pressure/#dfn-data-delivery",
+      "linkingText": [
+        "data delivery"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "data-delivery",
+        "href": "https://wicg.github.io/compute-pressure/#data-delivery",
+        "title": "Data delivery",
+        "number": "9.6.2"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "dfn-queue-a-record",
       "href": "https://wicg.github.io/compute-pressure/#dfn-queue-a-record",
       "linkingText": [
@@ -1023,9 +1042,9 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "queue-a-pressureobserver-task",
-        "href": "https://wicg.github.io/compute-pressure/#queue-a-pressureobserver-task",
-        "title": "Queue a PressureObserver Task",
+        "id": "queue-a-pressure-observer-task",
+        "href": "https://wicg.github.io/compute-pressure/#queue-a-pressure-observer-task",
+        "title": "Queue a Pressure Observer Task",
         "number": "9.6.5"
       },
       "definedIn": "prose"
@@ -1042,10 +1061,29 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "queue-a-pressureobserver-task",
-        "href": "https://wicg.github.io/compute-pressure/#queue-a-pressureobserver-task",
-        "title": "Queue a PressureObserver Task",
+        "id": "queue-a-pressure-observer-task",
+        "href": "https://wicg.github.io/compute-pressure/#queue-a-pressure-observer-task",
+        "title": "Queue a Pressure Observer Task",
         "number": "9.6.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-notify-pressure-observers",
+      "href": "https://wicg.github.io/compute-pressure/#dfn-notify-pressure-observers",
+      "linkingText": [
+        "notify pressure observers"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "notify-observers",
+        "href": "https://wicg.github.io/compute-pressure/#notify-observers",
+        "title": "Notify Pressure Observers",
+        "number": "9.6.6"
       },
       "definedIn": "prose"
     },
