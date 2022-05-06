@@ -15,7 +15,7 @@
     "https://lists.w3.org/Archives/Public/www-style/": [],
     "https://www.w3.org/2021/Process-20211102/": [],
     "https://html.spec.whatwg.org/": [
-      "html-elements",
+      "the-body-element-2",
       "the-body-element",
       "window",
       "concept-document-window",
@@ -36,18 +36,24 @@
       "dom-document-defaultview",
       "same-origin",
       "htmlelement",
+      "html-elements",
       "htmlimageelement"
     ],
-    "https://drafts.csswg.org/css-overflow-3/": [
-      "propdef-overflow-x",
-      "propdef-overflow-y",
-      "valdef-overflow-hidden",
-      "valdef-overflow-clip",
-      "valdef-overflow-visible",
-      "propdef-overflow",
-      "valdef-overflow-auto",
-      "propdef-scroll-behavior",
-      "valdef-scroll-behavior-auto"
+    "https://drafts.csswg.org/css-display-3/": [
+      "box",
+      "initial-containing-block",
+      "propdef-display",
+      "valdef-display-table-column",
+      "valdef-display-table-column-group",
+      "valdef-display-table",
+      "valdef-display-inline-table",
+      "anonymous",
+      "block-box",
+      "box-tree",
+      "invisible",
+      "principal-box",
+      "inline-level-box",
+      "block-level"
     ],
     "https://dom.spec.whatwg.org/": [
       "parent-element",
@@ -74,10 +80,28 @@
       "concept-range-start-offset",
       "concept-document-quirks",
       "node",
+      "concept-shadow-including-ancestor",
       "concept-node-document",
       "concept-closed-shadow-hidden",
       "text",
       "dispatch-flag"
+    ],
+    "https://drafts.csswg.org/css-overflow-3/": [
+      "propdef-overflow-x",
+      "propdef-overflow-y",
+      "valdef-overflow-visible",
+      "valdef-overflow-clip",
+      "propdef-overflow",
+      "valdef-overflow-auto",
+      "propdef-scroll-behavior",
+      "valdef-scroll-behavior-smooth",
+      "valdef-scroll-behavior-auto"
+    ],
+    "https://drafts.csswg.org/cssom-view-1/": [
+      "scrolling-box"
+    ],
+    "https://drafts.csswg.org/css2/": [
+      "viewport%E2%91%A0"
     ],
     "https://drafts.csswg.org/css-writing-modes-4/": [
       "block-end",
@@ -91,17 +115,14 @@
     "https://www.w3.org/TR/css-align-3/": [
       "overflow-scroll-position"
     ],
-    "https://drafts.csswg.org/css-display-3/": [
-      "initial-containing-block",
-      "propdef-display",
-      "valdef-display-table-column",
-      "valdef-display-table-column-group",
-      "valdef-display-table",
-      "valdef-display-inline-table",
-      "box-tree",
-      "principal-box",
-      "inline-level-box",
-      "block-level"
+    "https://drafts.csswg.org/css-box-4/": [
+      "margin-edge",
+      "padding-edge",
+      "border-edge",
+      "border-box"
+    ],
+    "https://svgwg.org/svg2-draft/shapes.html": [
+      "elementdef-rect"
     ],
     "https://infra.spec.whatwg.org/": [
       "string-is",
@@ -111,9 +132,6 @@
     ],
     "https://drafts.csswg.org/css-values-4/": [
       "px"
-    ],
-    "https://drafts.csswg.org/css-images-3/": [
-      "valdef-image-rendering-smooth"
     ],
     "https://webidl.spec.whatwg.org/": [
       "idl-unrestricted-double",
@@ -131,13 +149,11 @@
       "idl-sequence"
     ],
     "https://drafts.csswg.org/cssom-1/": [
-      "cssomstring"
-    ],
-    "https://developer.mozilla.org/en-US/docs/Web/API/Window/matchMedia": [],
-    "https://drafts.csswg.org/cssom/": [
+      "cssomstring",
       "parse-a-media-query-list",
       "serialize-a-media-query-list"
     ],
+    "https://developer.mozilla.org/en-US/docs/Web/API/Window/matchMedia": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/Window/screen": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/Window/moveTo": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/Window/moveBy": [],
@@ -175,8 +191,8 @@
     "https://developer.mozilla.org/en-US/docs/Web/API/Screen/height": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/Screen/colorDepth": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/Screen/pixelDepth": [],
-    "https://drafts.csswg.org/mediaqueries-4/": [
-      "mf-colors"
+    "https://drafts.csswg.org/mediaqueries-5/": [
+      "descdef-media-color"
     ],
     "https://developer.mozilla.org/en-US/docs/Web/API/Document": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/Document/elementFromPoint": [],
@@ -205,18 +221,9 @@
     "https://drafts.csswg.org/css-break-4/": [
       "box-fragment"
     ],
-    "https://www.w3.org/TR/CSS21/": [
-      "anonymous-block-level",
-      "style-sheet",
-      "user-agent",
-      "ignore"
-    ],
     "https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect": [],
     "https://drafts.csswg.org/css-contain-2/": [
       "propdef-content-visibility"
-    ],
-    "https://www.w3.org/TR/wai-aria-1.1/": [
-      "dfn-hidden"
     ],
     "https://drafts.csswg.org/css-color-4/": [
       "propdef-opacity"
@@ -249,9 +256,6 @@
     "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetTop": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetLeft": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetWidth": [],
-    "https://drafts.csswg.org/css-box-4/": [
-      "border-box"
-    ],
     "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetHeight": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/x": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/y": [],
@@ -279,12 +283,19 @@
     "https://developer.mozilla.org/en-US/docs/Web/API/Element/scroll_event": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/Document/scroll_event": [],
     "https://github.com/w3c/csswg-drafts/issues/4727": [],
+    "https://www.w3.org/TR/CSS21/": [
+      "style-sheet",
+      "user-agent",
+      "ignore"
+    ],
     "https://www.w3.org/Style/CSS/Test/": [],
     "https://lists.w3.org/Archives/Public/public-css-testsuite": [],
     "https://caniuse.com/": [
       "feat=matchmedia",
       "feat=devicepixelratio",
       "feat=element-from-point",
+      "feat=document-scrollingelement",
+      "feat=element-scroll-methods",
       "feat=getboundingclientrect",
       "feat=scrollintoview"
     ],
@@ -295,7 +306,6 @@
     "https://www.w3.org/TR/css-contain-2/": [],
     "https://www.w3.org/TR/css-device-adapt-1/": [],
     "https://www.w3.org/TR/css-display-3/": [],
-    "https://www.w3.org/TR/css-images-3/": [],
     "https://www.w3.org/TR/css-overflow-3/": [],
     "https://www.w3.org/TR/css-position-3/": [],
     "https://www.w3.org/TR/css-pseudo-4/": [],
@@ -306,11 +316,12 @@
     "https://www.w3.org/TR/css-values-3/": [],
     "https://www.w3.org/TR/css-values-4/": [],
     "https://www.w3.org/TR/css-writing-modes-4/": [],
-    "https://www.w3.org/TR/css-box-3/": [],
     "https://www.w3.org/TR/cssom-1/": [],
     "https://www.w3.org/TR/geometry-1/": [],
+    "https://www.w3.org/TR/mediaqueries-5/": [],
     "https://datatracker.ietf.org/doc/html/rfc2119": [],
     "https://www.w3.org/TR/SVG11/": [],
+    "https://www.w3.org/TR/SVG2/": [],
     "https://www.w3.org/TR/css-ui-4/": []
   }
 }
