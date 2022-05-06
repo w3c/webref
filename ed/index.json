@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2022-05-06T01:10:54.402Z",
+  "date": "2022-05-06T06:40:32.075Z",
   "options": {
     "fallback": "webref-fallback/ed/index.json",
     "output": "report",
@@ -21,7 +21,7 @@
   },
   "stats": {
     "crawled": 468,
-    "errors": 4
+    "errors": 6
   },
   "crawler": "reffy-7.0.9",
   "results": [
@@ -1250,7 +1250,7 @@
       ],
       "crawled": "https://drafts.fxtf.org/filter-effects-2/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 4 May 2022 18:21:27 GMT"
+        "lastModified": "Fri, 6 May 2022 06:18:53 GMT"
       },
       "generator": "bikeshed",
       "date": "10 February 2022",
@@ -14404,7 +14404,7 @@
       ],
       "crawled": "https://drafts.fxtf.org/css-masking-1/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 4 May 2022 18:21:18 GMT"
+        "lastModified": "Fri, 6 May 2022 06:18:45 GMT"
       },
       "generator": "bikeshed",
       "date": "24 February 2022",
@@ -17144,7 +17144,8 @@
       "css": "css/CSS.json",
       "dfns": "dfns/CSS22.json",
       "headings": "headings/CSS22.json",
-      "ids": "ids/CSS22.json"
+      "ids": "ids/CSS22.json",
+      "error": "Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers' Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers'\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:483:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 325)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/css3-exclusions/",
@@ -17939,7 +17940,7 @@
       ],
       "crawled": "https://drafts.fxtf.org/fill-stroke/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 4 May 2022 18:21:25 GMT"
+        "lastModified": "Fri, 6 May 2022 06:18:51 GMT"
       },
       "generator": "bikeshed",
       "date": "4 April 2017",
@@ -17999,7 +18000,7 @@
       ],
       "crawled": "https://drafts.fxtf.org/filter-effects-1/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 4 May 2022 18:22:07 GMT"
+        "lastModified": "Fri, 6 May 2022 06:19:15 GMT"
       },
       "generator": "bikeshed",
       "date": "21 February 2022",
@@ -18348,7 +18349,7 @@
       ],
       "crawled": "https://drafts.fxtf.org/geometry/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 4 May 2022 18:22:17 GMT"
+        "lastModified": "Fri, 6 May 2022 06:19:24 GMT"
       },
       "generator": "bikeshed",
       "date": "10 February 2022",
@@ -20206,7 +20207,7 @@
       ],
       "crawled": "https://drafts.fxtf.org/motion-1/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 4 May 2022 18:22:23 GMT"
+        "lastModified": "Fri, 6 May 2022 06:19:29 GMT"
       },
       "generator": "bikeshed",
       "date": "23 February 2022",
@@ -22258,7 +22259,8 @@
       "css": "css/selectors.json",
       "dfns": "dfns/selectors-4.json",
       "headings": "headings/selectors-4.json",
-      "ids": "ids/selectors-4.json"
+      "ids": "ids/selectors-4.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at __puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at __puppeteer_evaluation_script__:7:23\n    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:221:19)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:110:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 414)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/selectors-nonelement-1/",
@@ -24169,7 +24171,7 @@
       ],
       "crawled": "https://gpuweb.github.io/gpuweb/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 06 May 2022 01:09:33 GMT"
+        "lastModified": "Fri, 06 May 2022 04:00:39 GMT"
       },
       "generator": "bikeshed",
       "date": "6 May 2022",
@@ -25350,7 +25352,7 @@
       ],
       "crawled": "https://gpuweb.github.io/gpuweb/wgsl/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 06 May 2022 01:09:33 GMT"
+        "lastModified": "Fri, 06 May 2022 04:00:39 GMT"
       },
       "generator": "bikeshed",
       "date": "6 May 2022",
