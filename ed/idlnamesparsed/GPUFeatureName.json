@@ -6,7 +6,7 @@
       "title": "WebGPU",
       "url": "https://www.w3.org/TR/webgpu/"
     },
-    "fragment": "enum GPUFeatureName {\n    \"depth-clip-control\",\n    \"depth24unorm-stencil8\",\n    \"depth32float-stencil8\",\n    \"texture-compression-bc\",\n    \"texture-compression-etc2\",\n    \"texture-compression-astc\",\n    \"timestamp-query\",\n    \"indirect-first-instance\",\n    \"shader-f16\",\n};",
+    "fragment": "enum GPUFeatureName {\n    \"depth-clip-control\",\n    \"depth24unorm-stencil8\",\n    \"depth32float-stencil8\",\n    \"texture-compression-bc\",\n    \"texture-compression-etc2\",\n    \"texture-compression-astc\",\n    \"timestamp-query\",\n    \"indirect-first-instance\",\n    \"shader-f16\",\n    \"bgra8unorm-storage\",\n};",
     "href": "https://gpuweb.github.io/gpuweb/#enumdef-gpufeaturename"
   },
   "extended": [],
@@ -218,6 +218,27 @@
           "href": "https://gpuweb.github.io/gpuweb/#shader-f16",
           "title": "\"shader-f16\"",
           "number": "24.9"
+        },
+        "definedIn": "heading"
+      },
+      {
+        "id": "dom-gpufeaturename-bgra8unorm-storage",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpufeaturename-bgra8unorm-storage",
+        "linkingText": [
+          "\"bgra8unorm-storage\""
+        ],
+        "localLinkingText": [],
+        "type": "enum-value",
+        "for": [
+          "GPUFeatureName"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "bgra8unorm-storage",
+          "href": "https://gpuweb.github.io/gpuweb/#bgra8unorm-storage",
+          "title": "\"bgra8unorm-storage\"",
+          "number": "24.10"
         },
         "definedIn": "heading"
       }
