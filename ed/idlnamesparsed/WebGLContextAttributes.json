@@ -1,14 +1,4 @@
 {
-  "name": "WebGLContextAttributes",
-  "type": "dictionary",
-  "defined": {
-    "spec": {
-      "title": "WebGL Specification",
-      "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/"
-    },
-    "fragment": "dictionary WebGLContextAttributes {\n    boolean alpha = true;\n    boolean depth = true;\n    boolean stencil = false;\n    boolean antialias = true;\n    boolean premultipliedAlpha = true;\n    boolean preserveDrawingBuffer = false;\n    WebGLPowerPreference powerPreference = \"default\";\n    boolean failIfMajorPerformanceCaveat = false;\n    boolean desynchronized = false;\n};",
-    "href": "https://www.khronos.org/registry/webgl/specs/latest/1.0/#WebGLContextAttributes"
-  },
   "extended": [
     {
       "spec": {
@@ -18,6 +8,5 @@
       "fragment": "partial dictionary WebGLContextAttributes {\n    boolean xrCompatible = false;\n};"
     }
   ],
-  "inheritance": null,
   "includes": []
 }
