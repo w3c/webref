@@ -1028,7 +1028,7 @@
         "partial": false
       },
       "GPUFeatureName": {
-        "fragment": "enum GPUFeatureName {\n    \"depth-clip-control\",\n    \"depth24unorm-stencil8\",\n    \"depth32float-stencil8\",\n    \"texture-compression-bc\",\n    \"texture-compression-etc2\",\n    \"texture-compression-astc\",\n    \"timestamp-query\",\n    \"indirect-first-instance\",\n    \"shader-f16\",\n};",
+        "fragment": "enum GPUFeatureName {\n    \"depth-clip-control\",\n    \"depth24unorm-stencil8\",\n    \"depth32float-stencil8\",\n    \"texture-compression-bc\",\n    \"texture-compression-etc2\",\n    \"texture-compression-astc\",\n    \"timestamp-query\",\n    \"indirect-first-instance\",\n    \"shader-f16\",\n    \"bgra8unorm-storage\",\n};",
         "type": "enum",
         "name": "GPUFeatureName",
         "values": [
@@ -1067,6 +1067,10 @@
           {
             "type": "enum-value",
             "value": "shader-f16"
+          },
+          {
+            "type": "enum-value",
+            "value": "bgra8unorm-storage"
           }
         ],
         "extAttrs": []
@@ -4547,7 +4551,7 @@
         "partial": false
       },
       "GPUShaderModuleCompilationHint": {
-        "fragment": "dictionary GPUShaderModuleCompilationHint {\n    required GPUPipelineLayout layout;\n};",
+        "fragment": "dictionary GPUShaderModuleCompilationHint {\n    required (GPUPipelineLayout or GPUAutoLayoutMode) layout;\n};",
         "type": "dictionary",
         "name": "GPUShaderModuleCompilationHint",
         "inheritance": null,
@@ -4561,8 +4565,25 @@
               "extAttrs": [],
               "generic": "",
               "nullable": false,
-              "union": false,
-              "idlType": "GPUPipelineLayout"
+              "union": true,
+              "idlType": [
+                {
+                  "type": null,
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GPUPipelineLayout"
+                },
+                {
+                  "type": null,
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GPUAutoLayoutMode"
+                }
+              ]
             },
             "default": null,
             "required": true
@@ -4855,8 +4876,20 @@
         ],
         "partial": false
       },
+      "GPUAutoLayoutMode": {
+        "fragment": "enum GPUAutoLayoutMode {\n    \"auto\",\n};",
+        "type": "enum",
+        "name": "GPUAutoLayoutMode",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "auto"
+          }
+        ],
+        "extAttrs": []
+      },
       "GPUPipelineDescriptorBase": {
-        "fragment": "dictionary GPUPipelineDescriptorBase : GPUObjectDescriptorBase {\n    GPUPipelineLayout layout;\n};",
+        "fragment": "dictionary GPUPipelineDescriptorBase : GPUObjectDescriptorBase {\n    required (GPUPipelineLayout or GPUAutoLayoutMode) layout;\n};",
         "type": "dictionary",
         "name": "GPUPipelineDescriptorBase",
         "inheritance": "GPUObjectDescriptorBase",
@@ -4870,11 +4903,28 @@
               "extAttrs": [],
               "generic": "",
               "nullable": false,
-              "union": false,
-              "idlType": "GPUPipelineLayout"
+              "union": true,
+              "idlType": [
+                {
+                  "type": null,
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GPUPipelineLayout"
+                },
+                {
+                  "type": null,
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GPUAutoLayoutMode"
+                }
+              ]
             },
             "default": null,
-            "required": false
+            "required": true
           }
         ],
         "extAttrs": [],
@@ -12048,7 +12098,8 @@
         "GPUObjectBase"
       ],
       "GPUShaderModuleCompilationHint": [
-        "GPUPipelineLayout"
+        "GPUPipelineLayout",
+        "GPUAutoLayoutMode"
       ],
       "GPUShaderModuleDescriptor": [
         "GPUObjectDescriptorBase",
@@ -12062,7 +12113,8 @@
       ],
       "GPUPipelineDescriptorBase": [
         "GPUObjectDescriptorBase",
-        "GPUPipelineLayout"
+        "GPUPipelineLayout",
+        "GPUAutoLayoutMode"
       ],
       "GPUPipelineBase": [
         "GPUBindGroupLayout"

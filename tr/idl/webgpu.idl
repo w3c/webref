@@ -97,6 +97,7 @@ enum GPUFeatureName {
     "timestamp-query",
     "indirect-first-instance",
     "shader-f16",
+    "bgra8unorm-storage",
 };
 
 [Exposed=(Window, DedicatedWorker), SecureContext]
@@ -527,7 +528,7 @@ interface GPUShaderModule {
 GPUShaderModule includes GPUObjectBase;
 
 dictionary GPUShaderModuleCompilationHint {
-    required GPUPipelineLayout layout;
+    required (GPUPipelineLayout or GPUAutoLayoutMode) layout;
 };
 
 dictionary GPUShaderModuleDescriptor : GPUObjectDescriptorBase {
@@ -557,8 +558,12 @@ interface GPUCompilationInfo {
     readonly attribute FrozenArray<GPUCompilationMessage> messages;
 };
 
+enum GPUAutoLayoutMode {
+    "auto",
+};
+
 dictionary GPUPipelineDescriptorBase : GPUObjectDescriptorBase {
-    GPUPipelineLayout layout;
+    required (GPUPipelineLayout or GPUAutoLayoutMode) layout;
 };
 
 interface mixin GPUPipelineBase {

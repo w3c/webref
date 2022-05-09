@@ -7,35 +7,35 @@
     "https://www.w3.org/TR/CSS/": [
       "future-proofing",
       "unstable",
-      "proprietary-extension",
-      "vendor-prefix"
+      "proprietary-extension"
     ],
     "https://www.w3.org/TR/": [],
+    "https://www.w3.org/groups/wg/css": [],
+    "https://www.w3.org/2021/Process-20211102/": [
+      "recs-and-notes"
+    ],
     "https://github.com/w3c/csswg-drafts/issues": [],
     "https://lists.w3.org/Archives/Public/public-css-archive/": [],
     "https://lists.w3.org/Archives/Public/www-style/": [],
-    "https://www.w3.org/Style/CSS/members": [],
-    "https://www.w3.org/Style/": [],
-    "https://www.w3.org/Consortium/Patent-Policy/": [
+    "https://www.w3.org/Consortium/Patent-Policy-20200915/": [
       "def-essential",
       "sec-Disclosure"
     ],
-    "https://www.w3.org/2004/01/pp-impl/32061/status": [],
-    "https://www.w3.org/2018/Process-20180201/": [],
-    "https://www.w3.org/TR/selectors4/": [
-      "selectordef-drop-function"
-    ],
+    "https://www.w3.org/groups/wg/css/ipr": [],
     "https://haml.info/": [],
     "https://en.wikipedia.org/wiki/Emmet_(software)": [],
     "https://www.w3.org/TR/REC-CSS1/": [],
     "https://www.w3.org/TR/CSS21/": [
       "characters",
       "value-def-identifier",
-      "propdef-visibility"
+      "style-sheet",
+      "user-agent",
+      "ignore"
     ],
-    "https://www.w3.org/TR/css3-selectors/": [
-      "x",
-      "sel-lang"
+    "https://www.w3.org/TR/css3-selectors/": [],
+    "https://infra.spec.whatwg.org/": [
+      "string-is",
+      "ascii-case-insensitive"
     ],
     "https://www.w3.org/TR/css-scoping-1/": [
       "shadow-host",
@@ -49,7 +49,8 @@
       "selectordef-first-line",
       "selectordef-first-letter",
       "selectordef-before",
-      "selectordef-after"
+      "selectordef-after",
+      "tree-abiding"
     ],
     "https://dom.spec.whatwg.org/": [
       "documentfragment",
@@ -61,54 +62,41 @@
       "concept-shadow-including-tree-order",
       "concept-tree-descendant"
     ],
-    "https://www.w3.org/TR/svg2/": [
-      "elementdef-a",
-      "LinkElement"
-    ],
-    "https://github.com/w3c/csswg-drafts/issues/2199": [],
-    "https://www.w3.org/TR/css-syntax-3/": [
-      "identifier",
-      "typedef-ident-token",
-      "typedef-string-token",
-      "typedef-hash-token",
-      "typedef-function-token",
-      "anb-production"
-    ],
-    "https://infra.spec.whatwg.org/": [
-      "ascii-case-insensitive"
-    ],
-    "https://www.w3.org/TR/CSS1/": [],
-    "https://www.w3.org/TR/CSS2/": [
-      "pseudo-element-selectors",
-      "style-sheet",
-      "user-agent",
-      "ignore"
-    ],
-    "https://www.w3.org/TR/css-display-3/": [
-      "css-box-tree",
-      "propdef-display"
-    ],
     "https://html.spec.whatwg.org/": [
+      "the-a-element",
       "selectors",
       "the-ol-element",
       "the-button-element",
+      "the-h1-element",
+      "custom-element",
+      "element-definition",
       "the-span-element",
       "the-object-element",
       "the-p-element",
       "the-div-element",
       "the-directionality",
-      "selector-ltr",
-      "selector-rtl",
       "meta",
       "the-q-element",
       "the-area-element",
+      "attr-hyperlink-href",
       "selector-hover",
       "the-label-element",
       "selector-active",
       "focusable-area",
       "the-input-element",
+      "audio",
+      "video",
+      "seeking",
+      "media-data",
+      "stall-timeout",
+      "effective-media-volume",
+      "the-dialog-element",
+      "dom-dialog-showmodal",
       "selector-enabled",
       "selector-read-only",
+      "attr-input-placeholder",
+      "the-option-element",
+      "the-select-element",
       "selector-default",
       "selector-checked",
       "selector-indeterminate",
@@ -121,14 +109,49 @@
       "the-li-element",
       "the-pre-element"
     ],
-    "https://github.com/w3c/csswg-drafts/issues/3264": [],
+    "https://github.com/w3c/csswg-drafts/issues/2199": [],
+    "https://www.w3.org/TR/css-values-4/": [
+      "css-css-identifier",
+      "typedef-ident",
+      "string-value",
+      "mult-comma",
+      "mult-opt",
+      "mult-zero-plus",
+      "mult-req",
+      "comb-one"
+    ],
+    "https://www.w3.org/TR/CSS1/": [],
+    "https://www.w3.org/TR/CSS2/": [
+      "pseudo-element-selectors"
+    ],
+    "https://www.w3.org/TR/selectors-3/": [
+      "x"
+    ],
+    "https://www.w3.org/TR/css-color-5/": [
+      "valdef-lab-a"
+    ],
+    "https://www.w3.org/TR/css-display-3/": [
+      "valdef-display-list-item",
+      "display-type",
+      "box-tree",
+      "propdef-display",
+      "propdef-visibility"
+    ],
     "https://www.w3.org/TR/css-namespaces-3/": [
       "css-qualified-name",
       "default-namespace"
     ],
     "https://lists.w3.org/Archives/Public/www-style/2011Mar/0215.html": [],
-    "https://www.w3.org/TR/css3-namespace/": [
-      "css-qnames"
+    "https://www.w3.org/TR/css-syntax-3/": [
+      "typedef-ident-token",
+      "typedef-string-token",
+      "anb-microsyntax",
+      "css-parse-something-according-to-a-css-grammar",
+      "typedef-hash-token",
+      "typedef-function-token",
+      "typedef-any-value",
+      "css-parse-a-comma-separated-list-according-to-a-css-grammar",
+      "anb-production"
     ],
     "https://www.w3.org/TR/css-writing-modes-3/": [
       "propdef-direction"
@@ -136,17 +159,6 @@
     "https://www.w3.org/TR/css-text-3/": [
       "content-language",
       "white-space"
-    ],
-    "https://www.w3.org/TR/css-values-4/": [
-      "typedef-ident",
-      "mult-comma",
-      "mult-opt",
-      "mult-zero-plus",
-      "mult-req",
-      "comb-one"
-    ],
-    "https://www.w3.org/TR/css3-values/": [
-      "string-value"
     ],
     "https://www.w3.org/International/questions/qa-lang-2or3.html": [],
     "https://url.spec.whatwg.org/": [
@@ -161,24 +173,32 @@
     "https://dev.w3.org/html5/webvtt/": [
       "the-past-and-future-pseudo-classes"
     ],
-    "https://developer.mozilla.org/en-US/docs/Web/CSS/%3A-moz-ui-invalid": [],
-    "https://developer.mozilla.org/en-US/docs/Web/CSS/%3A-moz-ui-valid": [],
-    "https://lists.w3.org/Archives/Public/www-style/2014Feb/0511.html": [],
-    "https://drafts.csswg.org/css-syntax-3/": [
-      "anb-microsyntax",
-      "css-parse-something-according-to-a-css-grammar",
-      "typedef-any-value"
+    "https://www.w3.org/TR/mediacapture-streams/": [
+      "track-muted"
     ],
+    "https://fullscreen.spec.whatwg.org/": [
+      "dom-element-requestfullscreen"
+    ],
+    "https://developer.mozilla.org/en-US/docs/Web/CSS/%3A-moz-ui-invalid": [],
+    "https://lists.w3.org/Archives/Public/www-style/2014Feb/0511.html": [],
     "https://drafts.csswg.org/css-syntax/": [
       "anb"
     ],
     "https://www.w3.org/TR/css-style-attr/": [
       "interpret"
     ],
-    "https://drafts.csswg.org/css-pseudo-4/": [
-      "tree-abiding"
-    ],
     "https://github.com/lloyd/JSONSelect": [],
+    "https://www.w3.org/TR/2018/WD-selectors-4-20181121/": [],
+    "https://github.com/w3c/csswg-drafts/issues/3925": [],
+    "https://github.com/w3c/csswg-drafts/issues/2258": [],
+    "https://github.com/w3c/csswg-drafts/issues/6965": [],
+    "https://github.com/w3c/csswg-drafts/issues/3796": [],
+    "https://github.com/w3c/csswg-drafts/issues/3821": [],
+    "https://github.com/w3c/csswg-drafts/issues/3933": [],
+    "https://github.com/w3c/csswg-drafts/issues/5775": [],
+    "https://lists.w3.org/Archives/Public/www-style/2015Sep/0111.html": [],
+    "https://github.com/w3c/csswg-drafts/issues/3264": [],
+    "https://github.com/w3c/csswg-drafts/issues/3760": [],
     "https://www.w3.org/TR/2018/WD-selectors-4-20180202/": [],
     "https://github.com/w3c/csswg-drafts/issues/2143": [],
     "https://github.com/w3c/csswg-drafts/issues/3258": [],
@@ -193,19 +213,17 @@
     "https://lists.w3.org/Archives/Public/www-style/2014Jan/0607.html": [],
     "https://www.w3.org/TR/2012/WD-selectors4-20120823/": [],
     "https://www.w3.org/TR/2011/WD-selectors4-20110929/": [],
-    "https://www.w3.org/TR/selectors-3/": [],
     "https://www.w3.org/TR/css-ui-3/": [],
     "https://www.w3.org/Style/CSS/Test/": [],
     "https://lists.w3.org/Archives/Public/public-css-testsuite": [],
-    "https://www.w3.org/TR/css-values-3/": [],
-    "https://tools.ietf.org/html/rfc2119": [],
-    "https://www.w3.org/TR/SVG2/": [],
-    "https://tools.ietf.org/html/bcp47": [],
+    "https://datatracker.ietf.org/doc/html/rfc2119": [],
+    "https://www.rfc-editor.org/rfc/rfc5646": [],
     "https://www.w3.org/TR/html5/": [],
     "https://www.w3.org/TR/its20/": [],
     "https://www.w3.org/TR/REC-MathML/": [],
+    "https://www.w3.org/TR/picture-in-picture/": [],
     "https://quirks.spec.whatwg.org/": [],
-    "https://tools.ietf.org/html/rfc4647": [],
+    "https://www.rfc-editor.org/rfc/rfc4647": [],
     "https://www.w3.org/TR/SVG11/": [],
     "https://www.w3.org/TR/xforms11/": [],
     "https://www.w3.org/TR/xml-names/": [],

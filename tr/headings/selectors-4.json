@@ -8,13 +8,7 @@
       "id": "title",
       "href": "https://www.w3.org/TR/selectors-4/#title",
       "level": 1,
-      "title": "Selectors Level 4"
-    },
-    {
-      "id": "subtitle",
-      "href": "https://www.w3.org/TR/selectors-4/#subtitle",
-      "level": 2,
-      "title": "W3C Working Draft, 21 November 2018"
+      "title": "133 TestsSelectors Level 4"
     },
     {
       "id": "abstract",
@@ -23,8 +17,8 @@
       "title": "Abstract"
     },
     {
-      "id": "status",
-      "href": "https://www.w3.org/TR/selectors-4/#status",
+      "id": "sotd",
+      "href": "https://www.w3.org/TR/selectors-4/#sotd",
       "level": 2,
       "title": "Status of this document"
     },
@@ -54,13 +48,6 @@
       "level": 2,
       "title": "Selectors Overview",
       "number": "2"
-    },
-    {
-      "id": "profiles",
-      "href": "https://www.w3.org/TR/selectors-4/#profiles",
-      "level": 3,
-      "title": "Live vs Snapshot Selector Profiles",
-      "number": "2.1"
     },
     {
       "id": "syntax",
@@ -140,11 +127,18 @@
       "number": "3.6.3"
     },
     {
+      "id": "sub-pseudo-elements",
+      "href": "https://www.w3.org/TR/selectors-4/#sub-pseudo-elements",
+      "level": 4,
+      "title": "Sub-pseudo-elements",
+      "number": "3.6.4"
+    },
+    {
       "id": "pseudo-element-structure",
       "href": "https://www.w3.org/TR/selectors-4/#pseudo-element-structure",
       "level": 4,
       "title": "Internal Structure",
-      "number": "3.6.4"
+      "number": "3.6.5"
     },
     {
       "id": "case-sensitive",
@@ -166,6 +160,13 @@
       "level": 3,
       "title": "Invalid Selectors and Error Handling",
       "number": "3.9"
+    },
+    {
+      "id": "legacy-aliasing",
+      "href": "https://www.w3.org/TR/selectors-4/#legacy-aliasing",
+      "level": 3,
+      "title": "Legacy Aliases",
+      "number": "3.10"
     },
     {
       "id": "logical-combination",
@@ -236,6 +237,13 @@
       "level": 3,
       "title": "Namespaces in Elemental Selectors",
       "number": "5.3"
+    },
+    {
+      "id": "the-defined-pseudo",
+      "href": "https://www.w3.org/TR/selectors-4/#the-defined-pseudo",
+      "level": 3,
+      "title": "The Defined Pseudo-class: :defined",
+      "number": "5.4"
     },
     {
       "id": "attribute-selectors",
@@ -436,443 +444,499 @@
       "id": "resource-pseudos",
       "href": "https://www.w3.org/TR/selectors-4/#resource-pseudos",
       "level": 2,
-      "title": "11. Resource State Pseudos"
+      "title": "11. Resource State Pseudo-classes"
     },
     {
       "id": "video-state",
       "href": "https://www.w3.org/TR/selectors-4/#video-state",
       "level": 3,
-      "title": "Video/Audio Play State: the :playing and :paused pseudo-classes",
+      "title": "Media Playback State: the :playing, :paused, and :seeking pseudo-classes",
       "number": "11.1"
+    },
+    {
+      "id": "media-loading-state",
+      "href": "https://www.w3.org/TR/selectors-4/#media-loading-state",
+      "level": 3,
+      "title": "Media Loading State: the :buffering and :stalled pseudo-classes",
+      "number": "11.2"
+    },
+    {
+      "id": "sound-state",
+      "href": "https://www.w3.org/TR/selectors-4/#sound-state",
+      "level": 3,
+      "title": "Sound State: the :muted and :volume-locked pseudo-classes",
+      "number": "11.3"
+    },
+    {
+      "id": "display-state-pseudos",
+      "href": "https://www.w3.org/TR/selectors-4/#display-state-pseudos",
+      "level": 2,
+      "title": "12. Element Display State Pseudo-classes"
+    },
+    {
+      "id": "modal-state",
+      "href": "https://www.w3.org/TR/selectors-4/#modal-state",
+      "level": 3,
+      "title": "Modal (Exclusive Interaction) State: the :modal pseudo-class",
+      "number": "12.1"
+    },
+    {
+      "id": "fullscreen-state",
+      "href": "https://www.w3.org/TR/selectors-4/#fullscreen-state",
+      "level": 3,
+      "title": "Fullscreen Presentation State: the :fullscreen pseudo-class",
+      "number": "12.2"
+    },
+    {
+      "id": "pip-state",
+      "href": "https://www.w3.org/TR/selectors-4/#pip-state",
+      "level": 3,
+      "title": "Picture-in-Picture Presentation State: the :picture-in-picture pseudo-class",
+      "number": "12.3"
     },
     {
       "id": "input-pseudos",
       "href": "https://www.w3.org/TR/selectors-4/#input-pseudos",
       "level": 2,
-      "title": "12. The Input Pseudo-classes"
+      "title": "13. The Input Pseudo-classes"
     },
     {
       "id": "input-states",
       "href": "https://www.w3.org/TR/selectors-4/#input-states",
       "level": 3,
       "title": "Input Control States",
-      "number": "12.1"
+      "number": "13.1"
     },
     {
       "id": "enableddisabled",
       "href": "https://www.w3.org/TR/selectors-4/#enableddisabled",
       "level": 4,
       "title": "The :enabled and :disabled Pseudo-classes",
-      "number": "12.1.1"
+      "number": "13.1.1"
     },
     {
       "id": "rw-pseudos",
       "href": "https://www.w3.org/TR/selectors-4/#rw-pseudos",
       "level": 4,
       "title": "The Mutability Pseudo-classes: :read-only and :read-write",
-      "number": "12.1.2"
+      "number": "13.1.2"
     },
     {
       "id": "placeholder",
       "href": "https://www.w3.org/TR/selectors-4/#placeholder",
       "level": 4,
       "title": "The Placeholder-shown Pseudo-class: :placeholder-shown",
-      "number": "12.1.3"
+      "number": "13.1.3"
+    },
+    {
+      "id": "autofill",
+      "href": "https://www.w3.org/TR/selectors-4/#autofill",
+      "level": 4,
+      "title": "The Automatic Input Pseudo-class: :autofill",
+      "number": "13.1.4"
     },
     {
       "id": "the-default-pseudo",
       "href": "https://www.w3.org/TR/selectors-4/#the-default-pseudo",
       "level": 4,
       "title": "The Default-option Pseudo-class: :default",
-      "number": "12.1.4"
+      "number": "13.1.5"
     },
     {
       "id": "input-value-states",
       "href": "https://www.w3.org/TR/selectors-4/#input-value-states",
       "level": 3,
       "title": "Input Value States",
-      "number": "12.2"
+      "number": "13.2"
     },
     {
       "id": "checked",
       "href": "https://www.w3.org/TR/selectors-4/#checked",
       "level": 4,
       "title": "The Selected-option Pseudo-class: :checked",
-      "number": "12.2.1"
+      "number": "13.2.1"
     },
     {
       "id": "indeterminate",
       "href": "https://www.w3.org/TR/selectors-4/#indeterminate",
       "level": 4,
       "title": "The Indeterminate-value Pseudo-class: :indeterminate",
-      "number": "12.2.2"
+      "number": "13.2.2"
     },
     {
       "id": "ui-validity",
       "href": "https://www.w3.org/TR/selectors-4/#ui-validity",
       "level": 3,
       "title": "Input Value-checking",
-      "number": "12.3"
+      "number": "13.3"
     },
     {
       "id": "blank",
       "href": "https://www.w3.org/TR/selectors-4/#blank",
       "level": 4,
       "title": "The Empty-Value Pseudo-class: :blank",
-      "number": "12.3.1"
+      "number": "13.3.1"
     },
     {
       "id": "validity-pseudos",
       "href": "https://www.w3.org/TR/selectors-4/#validity-pseudos",
       "level": 4,
       "title": "The Validity Pseudo-classes: :valid and :invalid",
-      "number": "12.3.2"
+      "number": "13.3.2"
     },
     {
       "id": "range-pseudos",
       "href": "https://www.w3.org/TR/selectors-4/#range-pseudos",
       "level": 4,
       "title": "The Range Pseudo-classes: :in-range and :out-of-range",
-      "number": "12.3.3"
+      "number": "13.3.3"
     },
     {
       "id": "opt-pseudos",
       "href": "https://www.w3.org/TR/selectors-4/#opt-pseudos",
       "level": 4,
       "title": "The Optionality Pseudo-classes: :required and :optional",
-      "number": "12.3.4"
+      "number": "13.3.4"
     },
     {
       "id": "user-pseudos",
       "href": "https://www.w3.org/TR/selectors-4/#user-pseudos",
       "level": 4,
-      "title": "The User-interaction Pseudo-class: :user-invalid",
-      "number": "12.3.5"
+      "title": "The User-interaction Pseudo-classes: :user-valid and :user-invalid",
+      "number": "13.3.5"
     },
     {
       "id": "structural-pseudos",
       "href": "https://www.w3.org/TR/selectors-4/#structural-pseudos",
       "level": 2,
-      "title": "13. Tree-Structural pseudo-classes"
+      "title": "14. Tree-Structural pseudo-classes"
     },
     {
       "id": "the-root-pseudo",
       "href": "https://www.w3.org/TR/selectors-4/#the-root-pseudo",
       "level": 3,
       "title": ":root pseudo-class",
-      "number": "13.1"
+      "number": "14.1"
     },
     {
       "id": "the-empty-pseudo",
       "href": "https://www.w3.org/TR/selectors-4/#the-empty-pseudo",
       "level": 3,
       "title": ":empty pseudo-class",
-      "number": "13.2"
+      "number": "14.2"
     },
     {
       "id": "child-index",
       "href": "https://www.w3.org/TR/selectors-4/#child-index",
       "level": 3,
       "title": "Child-indexed Pseudo-classes",
-      "number": "13.3"
+      "number": "14.3"
     },
     {
       "id": "the-nth-child-pseudo",
       "href": "https://www.w3.org/TR/selectors-4/#the-nth-child-pseudo",
       "level": 4,
       "title": ":nth-child() pseudo-class",
-      "number": "13.3.1"
+      "number": "14.3.1"
     },
     {
       "id": "the-nth-last-child-pseudo",
       "href": "https://www.w3.org/TR/selectors-4/#the-nth-last-child-pseudo",
       "level": 4,
       "title": ":nth-last-child() pseudo-class",
-      "number": "13.3.2"
+      "number": "14.3.2"
     },
     {
       "id": "the-first-child-pseudo",
       "href": "https://www.w3.org/TR/selectors-4/#the-first-child-pseudo",
       "level": 4,
       "title": ":first-child pseudo-class",
-      "number": "13.3.3"
+      "number": "14.3.3"
     },
     {
       "id": "the-last-child-pseudo",
       "href": "https://www.w3.org/TR/selectors-4/#the-last-child-pseudo",
       "level": 4,
       "title": ":last-child pseudo-class",
-      "number": "13.3.4"
+      "number": "14.3.4"
     },
     {
       "id": "the-only-child-pseudo",
       "href": "https://www.w3.org/TR/selectors-4/#the-only-child-pseudo",
       "level": 4,
       "title": ":only-child pseudo-class",
-      "number": "13.3.5"
+      "number": "14.3.5"
     },
     {
       "id": "typed-child-index",
       "href": "https://www.w3.org/TR/selectors-4/#typed-child-index",
       "level": 3,
       "title": "Typed Child-indexed Pseudo-classes",
-      "number": "13.4"
+      "number": "14.4"
     },
     {
       "id": "the-nth-of-type-pseudo",
       "href": "https://www.w3.org/TR/selectors-4/#the-nth-of-type-pseudo",
       "level": 4,
       "title": ":nth-of-type() pseudo-class",
-      "number": "13.4.1"
+      "number": "14.4.1"
     },
     {
       "id": "the-nth-last-of-type-pseudo",
       "href": "https://www.w3.org/TR/selectors-4/#the-nth-last-of-type-pseudo",
       "level": 4,
       "title": ":nth-last-of-type() pseudo-class",
-      "number": "13.4.2"
+      "number": "14.4.2"
     },
     {
       "id": "the-first-of-type-pseudo",
       "href": "https://www.w3.org/TR/selectors-4/#the-first-of-type-pseudo",
       "level": 4,
       "title": ":first-of-type pseudo-class",
-      "number": "13.4.3"
+      "number": "14.4.3"
     },
     {
       "id": "the-last-of-type-pseudo",
       "href": "https://www.w3.org/TR/selectors-4/#the-last-of-type-pseudo",
       "level": 4,
       "title": ":last-of-type pseudo-class",
-      "number": "13.4.4"
+      "number": "14.4.4"
     },
     {
       "id": "the-only-of-type-pseudo",
       "href": "https://www.w3.org/TR/selectors-4/#the-only-of-type-pseudo",
       "level": 4,
       "title": ":only-of-type pseudo-class",
-      "number": "13.4.5"
+      "number": "14.4.5"
     },
     {
       "id": "combinators",
       "href": "https://www.w3.org/TR/selectors-4/#combinators",
       "level": 2,
-      "title": "14. Combinators"
+      "title": "15. Combinators"
     },
     {
       "id": "descendant-combinators",
       "href": "https://www.w3.org/TR/selectors-4/#descendant-combinators",
       "level": 3,
       "title": "Descendant combinator ( )",
-      "number": "14.1"
+      "number": "15.1"
     },
     {
       "id": "child-combinators",
       "href": "https://www.w3.org/TR/selectors-4/#child-combinators",
       "level": 3,
       "title": "Child combinator (>)",
-      "number": "14.2"
+      "number": "15.2"
     },
     {
       "id": "adjacent-sibling-combinators",
       "href": "https://www.w3.org/TR/selectors-4/#adjacent-sibling-combinators",
       "level": 3,
       "title": "Next-sibling combinator (+)",
-      "number": "14.3"
+      "number": "15.3"
     },
     {
       "id": "general-sibling-combinators",
       "href": "https://www.w3.org/TR/selectors-4/#general-sibling-combinators",
       "level": 3,
       "title": "Subsequent-sibling combinator (~)",
-      "number": "14.4"
+      "number": "15.4"
     },
     {
       "id": "table-pseudos",
       "href": "https://www.w3.org/TR/selectors-4/#table-pseudos",
       "level": 2,
-      "title": "15. Grid-Structural Selectors"
+      "title": "16. Grid-Structural Selectors"
     },
     {
       "id": "the-column-combinator",
       "href": "https://www.w3.org/TR/selectors-4/#the-column-combinator",
       "level": 3,
       "title": "Column combinator (||)",
-      "number": "15.1"
+      "number": "16.1"
     },
     {
       "id": "the-nth-col-pseudo",
       "href": "https://www.w3.org/TR/selectors-4/#the-nth-col-pseudo",
       "level": 3,
       "title": ":nth-col() pseudo-class",
-      "number": "15.2"
+      "number": "16.2"
     },
     {
       "id": "the-nth-last-col-pseudo",
       "href": "https://www.w3.org/TR/selectors-4/#the-nth-last-col-pseudo",
       "level": 3,
       "title": ":nth-last-col() pseudo-class",
-      "number": "15.3"
+      "number": "16.3"
     },
     {
       "id": "specificity-rules",
       "href": "https://www.w3.org/TR/selectors-4/#specificity-rules",
       "level": 2,
-      "title": "16. Calculating a selector’s specificity"
+      "title": "17. Calculating a selector’s specificity"
     },
     {
       "id": "grammar",
       "href": "https://www.w3.org/TR/selectors-4/#grammar",
       "level": 2,
-      "title": "17. Grammar"
+      "title": "18. Grammar"
+    },
+    {
+      "id": "forgiving-selector",
+      "href": "https://www.w3.org/TR/selectors-4/#forgiving-selector",
+      "level": 3,
+      "title": "<forgiving-selector-list> and <forgiving-relative-selector-list>",
+      "number": "18.1"
     },
     {
       "id": "api-hooks",
       "href": "https://www.w3.org/TR/selectors-4/#api-hooks",
       "level": 2,
-      "title": "18. API Hooks"
+      "title": "19. API Hooks"
     },
     {
       "id": "parse-selector",
       "href": "https://www.w3.org/TR/selectors-4/#parse-selector",
       "level": 3,
       "title": "Parse A Selector",
-      "number": "18.1"
+      "number": "19.1"
     },
     {
       "id": "parse-relative-selector",
       "href": "https://www.w3.org/TR/selectors-4/#parse-relative-selector",
       "level": 3,
       "title": "Parse A Relative Selector",
-      "number": "18.2"
+      "number": "19.2"
     },
     {
       "id": "match-against-element",
       "href": "https://www.w3.org/TR/selectors-4/#match-against-element",
       "level": 3,
       "title": "Match a Selector Against an Element",
-      "number": "18.3"
+      "number": "19.3"
     },
     {
       "id": "match-against-pseudo-element",
       "href": "https://www.w3.org/TR/selectors-4/#match-against-pseudo-element",
       "level": 3,
       "title": "Match a Selector Against a Pseudo-element",
-      "number": "18.4"
+      "number": "19.4"
     },
     {
       "id": "match-against-tree",
       "href": "https://www.w3.org/TR/selectors-4/#match-against-tree",
       "level": 3,
       "title": "Match a Selector Against a Tree",
-      "number": "18.5"
+      "number": "19.5"
     },
     {
       "id": "dom-mapping",
       "href": "https://www.w3.org/TR/selectors-4/#dom-mapping",
       "level": 2,
-      "title": "19. Appendix A: Guidance on Mapping Source Documents & Data to an Element Tree"
+      "title": "Appendix A: Guidance on Mapping Source Documents & Data to an Element Tree"
     },
     {
       "id": "compat",
       "href": "https://www.w3.org/TR/selectors-4/#compat",
       "level": 2,
-      "title": "20. Appendix B: Obsolete but Required Parsing Quirks for Web Compat"
+      "title": "Appendix B: Obsolete but Required Parsing Quirks for Web Compat"
     },
     {
       "id": "changes",
       "href": "https://www.w3.org/TR/selectors-4/#changes",
       "level": 2,
-      "title": "21. Changes"
+      "title": "20. Changes"
+    },
+    {
+      "id": "changes-2018-11",
+      "href": "https://www.w3.org/TR/selectors-4/#changes-2018-11",
+      "level": 3,
+      "title": "Changes since the 21 November 2018 Working Draft",
+      "number": "20.1"
     },
     {
       "id": "changes-2018-02",
       "href": "https://www.w3.org/TR/selectors-4/#changes-2018-02",
       "level": 3,
       "title": "Changes since the 2 February 2018 Working Draft",
-      "number": "21.1"
+      "number": "20.2"
     },
     {
       "id": "changes-2013",
       "href": "https://www.w3.org/TR/selectors-4/#changes-2013",
       "level": 3,
       "title": "Changes since the 2 May 2013 Working Draft",
-      "number": "21.2"
+      "number": "20.3"
     },
     {
       "id": "changes-2012",
       "href": "https://www.w3.org/TR/selectors-4/#changes-2012",
       "level": 3,
       "title": "Changes since the 23 August 2012 Working Draft",
-      "number": "21.3"
+      "number": "20.4"
     },
     {
       "id": "changes-2011",
       "href": "https://www.w3.org/TR/selectors-4/#changes-2011",
       "level": 3,
       "title": "Changes since the 29 September 2011 Working Draft",
-      "number": "21.4"
+      "number": "20.5"
     },
     {
       "id": "changes-level-3",
       "href": "https://www.w3.org/TR/selectors-4/#changes-level-3",
       "level": 3,
       "title": "Changes Since Level 3",
-      "number": "21.5"
+      "number": "20.6"
     },
     {
       "id": "acknowledgements",
       "href": "https://www.w3.org/TR/selectors-4/#acknowledgements",
       "level": 2,
-      "title": "22. Acknowledgements"
+      "title": "21. Acknowledgements"
     },
     {
       "id": "priv-sec",
       "href": "https://www.w3.org/TR/selectors-4/#priv-sec",
       "level": 2,
-      "title": "23. Privacy and Security Considerations"
+      "title": "22. Privacy and Security Considerations"
     },
     {
-      "id": "conformance",
-      "href": "https://www.w3.org/TR/selectors-4/#conformance",
+      "id": "w3c-conformance",
+      "href": "https://www.w3.org/TR/selectors-4/#w3c-conformance",
       "level": 2,
       "title": "Conformance"
     },
     {
-      "id": "document-conventions",
-      "href": "https://www.w3.org/TR/selectors-4/#document-conventions",
+      "id": "w3c-conventions",
+      "href": "https://www.w3.org/TR/selectors-4/#w3c-conventions",
       "level": 3,
       "title": "Document conventions"
     },
     {
-      "id": "conform-classes",
-      "href": "https://www.w3.org/TR/selectors-4/#conform-classes",
+      "id": "w3c-conformance-classes",
+      "href": "https://www.w3.org/TR/selectors-4/#w3c-conformance-classes",
       "level": 3,
       "title": "Conformance classes"
     },
     {
-      "id": "conform-responsible",
-      "href": "https://www.w3.org/TR/selectors-4/#conform-responsible",
+      "id": "w3c-partial",
+      "href": "https://www.w3.org/TR/selectors-4/#w3c-partial",
       "level": 3,
-      "title": "Requirements for Responsible Implementation of CSS"
+      "title": "Partial implementations"
     },
     {
-      "id": "conform-partial",
-      "href": "https://www.w3.org/TR/selectors-4/#conform-partial",
-      "level": 4,
-      "title": "Partial Implementations"
-    },
-    {
-      "id": "conform-future-proofing",
-      "href": "https://www.w3.org/TR/selectors-4/#conform-future-proofing",
+      "id": "w3c-conform-future-proofing",
+      "href": "https://www.w3.org/TR/selectors-4/#w3c-conform-future-proofing",
       "level": 4,
       "title": "Implementations of Unstable and Proprietary Features"
     },
     {
-      "id": "conform-testing",
-      "href": "https://www.w3.org/TR/selectors-4/#conform-testing",
-      "level": 4,
-      "title": "Implementations of CR-level Features"
+      "id": "w3c-testing",
+      "href": "https://www.w3.org/TR/selectors-4/#w3c-testing",
+      "level": 3,
+      "title": "Non-experimental implementations"
     },
     {
       "id": "index",

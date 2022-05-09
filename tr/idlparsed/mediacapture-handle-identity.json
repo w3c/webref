@@ -5,11 +5,7 @@
   },
   "idlparsed": {
     "jsNames": {
-      "constructors": {
-        "Window": [
-          "CaptureHandleChangeEvent"
-        ]
-      },
+      "constructors": {},
       "functions": {}
     },
     "idlNames": {
@@ -125,97 +121,6 @@
         ],
         "extAttrs": [],
         "partial": false
-      },
-      "CaptureHandleChangeEvent": {
-        "fragment": "[Exposed=Window]\ninterface CaptureHandleChangeEvent : Event {\n  constructor(optional CaptureHandleChangeEventInit init = {});\n  [SameObject] CaptureHandle captureHandle();\n};",
-        "type": "interface",
-        "name": "CaptureHandleChangeEvent",
-        "inheritance": "Event",
-        "members": [
-          {
-            "type": "constructor",
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "init",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "CaptureHandleChangeEventInit"
-                },
-                "default": {
-                  "type": "dictionary"
-                },
-                "optional": true,
-                "variadic": false
-              }
-            ],
-            "extAttrs": []
-          },
-          {
-            "type": "operation",
-            "name": "captureHandle",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "CaptureHandle"
-            },
-            "arguments": [],
-            "extAttrs": [
-              {
-                "type": "extended-attribute",
-                "name": "SameObject",
-                "rhs": null,
-                "arguments": []
-              }
-            ],
-            "special": ""
-          }
-        ],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier",
-              "value": "Window"
-            },
-            "arguments": []
-          }
-        ],
-        "partial": false
-      },
-      "CaptureHandleChangeEventInit": {
-        "fragment": "dictionary CaptureHandleChangeEventInit : EventInit {\n  CaptureHandle captureHandle;\n};",
-        "type": "dictionary",
-        "name": "CaptureHandleChangeEventInit",
-        "inheritance": "EventInit",
-        "members": [
-          {
-            "type": "field",
-            "name": "captureHandle",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "CaptureHandle"
-            },
-            "default": null,
-            "required": false
-          }
-        ],
-        "extAttrs": [],
-        "partial": false
       }
     },
     "idlExtendedNames": {
@@ -319,11 +224,7 @@
       ]
     },
     "globals": {},
-    "exposed": {
-      "Window": [
-        "CaptureHandleChangeEvent"
-      ]
-    },
+    "exposed": {},
     "dependencies": {
       "CaptureHandleConfig": [],
       "MediaDevices": [
@@ -333,22 +234,11 @@
       "MediaStreamTrack": [
         "CaptureHandle",
         "EventHandler"
-      ],
-      "CaptureHandleChangeEvent": [
-        "Event",
-        "CaptureHandleChangeEventInit",
-        "CaptureHandle"
-      ],
-      "CaptureHandleChangeEventInit": [
-        "EventInit",
-        "CaptureHandle"
       ]
     },
     "externalDependencies": [
       "MediaDevices",
       "MediaStreamTrack",
-      "Event",
-      "EventInit",
       "EventHandler"
     ],
     "hasObsoleteIdl": false

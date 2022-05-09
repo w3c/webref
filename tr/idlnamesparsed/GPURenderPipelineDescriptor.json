@@ -18,7 +18,7 @@
         "title": "WebGPU",
         "url": "https://www.w3.org/TR/webgpu/"
       },
-      "fragment": "dictionary GPUPipelineDescriptorBase : GPUObjectDescriptorBase {\n    GPUPipelineLayout layout;\n};",
+      "fragment": "dictionary GPUPipelineDescriptorBase : GPUObjectDescriptorBase {\n    required (GPUPipelineLayout or GPUAutoLayoutMode) layout;\n};",
       "href": "https://www.w3.org/TR/webgpu/#dictdef-gpupipelinedescriptorbase"
     },
     "extended": [],

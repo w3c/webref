@@ -509,6 +509,12 @@
       "number": "3.5.10"
     },
     {
+      "id": "sec-temporal-differencetemporalplaindate",
+      "title": "DifferenceTemporalPlainDate ( operation, temporalDate, other, options )",
+      "level": 3,
+      "number": "3.5.11"
+    },
+    {
       "id": "sec-temporal-plaintime-objects",
       "title": "Temporal.PlainTime Objects",
       "level": 1,
@@ -783,6 +789,18 @@
       "title": "RoundTime ( hour, minute, second, millisecond, microsecond, nanosecond, increment, unit, roundingMode [ , dayLengthNs ] )",
       "level": 3,
       "number": "4.5.13"
+    },
+    {
+      "id": "sec-temporal-differencetemporalplaintime",
+      "title": "DifferenceTemporalPlainTime ( operation, temporalTime, other, options )",
+      "level": 3,
+      "number": "4.5.14"
+    },
+    {
+      "id": "sec-temporal-adddurationtoorsubtractdurationfromplaintime",
+      "title": "AddDurationToOrSubtractDurationFromPlainTime ( operation, temporalTime, temporalDurationLike )",
+      "level": 3,
+      "number": "4.5.15"
     },
     {
       "id": "sec-temporal-plaindatetime-objects",
@@ -1155,6 +1173,18 @@
       "title": "DifferenceISODateTime ( y1, mon1, d1, h1, min1, s1, ms1, mus1, ns1, y2, mon2, d2, h2, min2, s2, ms2, mus2, ns2, calendar, largestUnit [ , options ] )",
       "level": 3,
       "number": "5.5.11"
+    },
+    {
+      "id": "sec-temporal-differencetemporalplaindatetime",
+      "title": "DifferenceTemporalPlainDateTime ( operation, dateTime, other, options )",
+      "level": 3,
+      "number": "5.5.12"
+    },
+    {
+      "id": "sec-temporal-adddurationtoorsubtractdurationfromplaindatetime",
+      "title": "AddDurationToOrSubtractDurationFromPlainDateTime ( operation, dateTime, temporalDurationLike, options )",
+      "level": 3,
+      "number": "5.5.13"
     },
     {
       "id": "sec-temporal-zoneddatetime-objects",
@@ -1571,6 +1601,18 @@
       "number": "6.5.7"
     },
     {
+      "id": "sec-temporal-differencetemporalzoneddatetime",
+      "title": "DifferenceTemporalZonedDateTime ( operation, zonedDateTime, other, options )",
+      "level": 3,
+      "number": "6.5.8"
+    },
+    {
+      "id": "sec-temporal-adddurationtoOrsubtractdurationfromzoneddatetime",
+      "title": "AddDurationToOrSubtractDurationFromZonedDateTime ( operation, zonedDateTime, temporalDurationLike, options )",
+      "level": 3,
+      "number": "6.5.9"
+    },
+    {
       "id": "sec-temporal-duration-objects",
       "title": "Temporal.Duration Objects",
       "level": 1,
@@ -1949,6 +1991,12 @@
       "number": "7.5.28"
     },
     {
+      "id": "sec-temporal-adddurationtoorsubtractdurationfromduration",
+      "title": "AddDurationToOrSubtractDurationFromDuration ( operation, duration, other, options )",
+      "level": 3,
+      "number": "7.5.29"
+    },
+    {
       "id": "sec-temporal-instant-objects",
       "title": "Temporal.Instant Objects",
       "level": 1,
@@ -2135,6 +2183,12 @@
       "number": "8.4"
     },
     {
+      "id": "sec-temporal-instant-range",
+      "title": "Temporal.Instant range",
+      "level": 3,
+      "number": "8.4.1"
+    },
+    {
       "id": "sec-temporal-instant-abstract-ops",
       "title": "Abstract operations",
       "level": 2,
@@ -2193,6 +2247,18 @@
       "title": "TemporalInstantToString ( instant, timeZone, precision )",
       "level": 3,
       "number": "8.5.9"
+    },
+    {
+      "id": "sec-temporal-differencetemporalinstant",
+      "title": "DifferenceTemporalInstant ( operation, instant, other, options )",
+      "level": 3,
+      "number": "8.5.10"
+    },
+    {
+      "id": "sec-temporal-adddurationtoorsubtractdurationfrominstant",
+      "title": "AddDurationToOrSubtractDurationFromInstant ( operation, instant, temporalDurationLike )",
+      "level": 3,
+      "number": "8.5.11"
     },
     {
       "id": "sec-temporal-plainyearmonth-objects",
@@ -2433,6 +2499,18 @@
       "title": "TemporalYearMonthToString ( yearMonth, showCalendar )",
       "level": 3,
       "number": "9.5.8"
+    },
+    {
+      "id": "sec-temporal-differencetemporalplainyearmonth",
+      "title": "DifferenceTemporalPlainYearMonth ( operation, yearMonth, other, options )",
+      "level": 3,
+      "number": "9.5.9"
+    },
+    {
+      "id": "sec-temporal-adddurationtoorsubtractdurationfromplainyearmonth",
+      "title": "AddDurationToOrSubtractDurationFromPlainYearMonth ( operation, yearMonth, temporalDurationLike, options )",
+      "level": 3,
+      "number": "9.5.10"
     },
     {
       "id": "sec-temporal-plainmonthday-objects",
@@ -3035,100 +3113,76 @@
       "number": "12.2.28"
     },
     {
-      "id": "sec-temporal-isisoleapyear",
-      "title": "IsISOLeapYear ( year )",
-      "level": 3,
-      "number": "12.2.29"
-    },
-    {
-      "id": "sec-temporal-isodaysinyear",
-      "title": "ISODaysInYear ( year )",
-      "level": 3,
-      "number": "12.2.30"
-    },
-    {
       "id": "sec-temporal-isodaysinmonth",
       "title": "ISODaysInMonth ( year, month )",
       "level": 3,
-      "number": "12.2.31"
-    },
-    {
-      "id": "sec-temporal-toisodayofweek",
-      "title": "ToISODayOfWeek ( year, month, day )",
-      "level": 3,
-      "number": "12.2.32"
-    },
-    {
-      "id": "sec-temporal-toisodayofyear",
-      "title": "ToISODayOfYear ( year, month, day )",
-      "level": 3,
-      "number": "12.2.33"
+      "number": "12.2.29"
     },
     {
       "id": "sec-temporal-toisoweekofyear",
       "title": "ToISOWeekOfYear ( year, month, day )",
       "level": 3,
-      "number": "12.2.34"
+      "number": "12.2.30"
     },
     {
       "id": "sec-buildisomonthcode",
       "title": "BuildISOMonthCode ( month )",
       "level": 3,
-      "number": "12.2.35"
+      "number": "12.2.31"
     },
     {
       "id": "sec-temporal-resolveisomonth",
       "title": "ResolveISOMonth ( fields )",
       "level": 3,
-      "number": "12.2.36"
+      "number": "12.2.32"
     },
     {
       "id": "sec-temporal-isodatefromfields",
       "title": "ISODateFromFields ( fields, options )",
       "level": 3,
-      "number": "12.2.37"
+      "number": "12.2.33"
     },
     {
       "id": "sec-temporal-isoyearmonthfromfields",
       "title": "ISOYearMonthFromFields ( fields, options )",
       "level": 3,
-      "number": "12.2.38"
+      "number": "12.2.34"
     },
     {
       "id": "sec-temporal-isomonthdayfromfields",
       "title": "ISOMonthDayFromFields ( fields, options )",
       "level": 3,
-      "number": "12.2.39"
+      "number": "12.2.35"
     },
     {
       "id": "sec-temporal-isoyear",
       "title": "ISOYear ( temporalObject )",
       "level": 3,
-      "number": "12.2.40"
+      "number": "12.2.36"
     },
     {
       "id": "sec-temporal-isomonth",
       "title": "ISOMonth ( temporalObject )",
       "level": 3,
-      "number": "12.2.41"
+      "number": "12.2.37"
     },
     {
       "id": "sec-temporal-isomonthcode",
       "title": "ISOMonthCode ( temporalObject )",
       "level": 3,
-      "number": "12.2.42"
+      "number": "12.2.38"
     },
     {
       "id": "sec-temporal-isoday",
       "title": "ISODay ( temporalObject )",
       "level": 3,
-      "number": "12.2.43"
+      "number": "12.2.39"
     },
     {
       "id": "sec-temporal-defaultmergefields",
       "title": "DefaultMergeFields ( fields, additionalFields )",
       "level": 3,
-      "number": "12.2.44"
+      "number": "12.2.40"
     },
     {
       "id": "sec-temporal-calendar-constructor",
