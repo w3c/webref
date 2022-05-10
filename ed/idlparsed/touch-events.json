@@ -734,7 +734,7 @@
         "partial": false
       },
       "TouchEvent": {
-        "fragment": "[Exposed=Window]\ninterface TouchEvent : UIEvent {\n    constructor(DOMString type, optional TouchEventInit eventInitDict = {});\n    readonly        attribute TouchList touches;\n    readonly        attribute TouchList targetTouches;\n    readonly        attribute TouchList changedTouches;\n    readonly        attribute boolean   altKey;\n    readonly        attribute boolean   metaKey;\n    readonly        attribute boolean   ctrlKey;\n    readonly        attribute boolean   shiftKey;\n};",
+        "fragment": "[Exposed=Window]\ninterface TouchEvent : UIEvent {\n    constructor(DOMString type, optional TouchEventInit eventInitDict = {});\n    readonly        attribute TouchList touches;\n    readonly        attribute TouchList targetTouches;\n    readonly        attribute TouchList changedTouches;\n    readonly        attribute boolean   altKey;\n    readonly        attribute boolean   metaKey;\n    readonly        attribute boolean   ctrlKey;\n    readonly        attribute boolean   shiftKey;\n    getter boolean getModifierState (DOMString keyArg);\n};",
         "type": "interface",
         "name": "TouchEvent",
         "inheritance": "UIEvent",
@@ -883,6 +883,38 @@
             "extAttrs": [],
             "special": "",
             "readonly": true
+          },
+          {
+            "type": "operation",
+            "name": "getModifierState",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "keyArg",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "getter"
           }
         ],
         "extAttrs": [

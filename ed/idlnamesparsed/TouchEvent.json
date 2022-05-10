@@ -6,7 +6,7 @@
       "title": "Touch Events - Level 2",
       "url": "https://www.w3.org/TR/touch-events/"
     },
-    "fragment": "[Exposed=Window]\ninterface TouchEvent : UIEvent {\n    constructor(DOMString type, optional TouchEventInit eventInitDict = {});\n    readonly        attribute TouchList touches;\n    readonly        attribute TouchList targetTouches;\n    readonly        attribute TouchList changedTouches;\n    readonly        attribute boolean   altKey;\n    readonly        attribute boolean   metaKey;\n    readonly        attribute boolean   ctrlKey;\n    readonly        attribute boolean   shiftKey;\n};",
+    "fragment": "[Exposed=Window]\ninterface TouchEvent : UIEvent {\n    constructor(DOMString type, optional TouchEventInit eventInitDict = {});\n    readonly        attribute TouchList touches;\n    readonly        attribute TouchList targetTouches;\n    readonly        attribute TouchList changedTouches;\n    readonly        attribute boolean   altKey;\n    readonly        attribute boolean   metaKey;\n    readonly        attribute boolean   ctrlKey;\n    readonly        attribute boolean   shiftKey;\n    getter boolean getModifierState (DOMString keyArg);\n};",
     "href": "https://w3c.github.io/touch-events/#dom-touchevent"
   },
   "extended": [],
