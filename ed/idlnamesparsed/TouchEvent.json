@@ -6,7 +6,7 @@
       "title": "Touch Events - Level 2",
       "url": "https://www.w3.org/TR/touch-events/"
     },
-    "fragment": "[Exposed=Window]\ninterface TouchEvent : UIEvent {\n    constructor(DOMString type, optional TouchEventInit eventInitDict = {});\n    readonly        attribute TouchList touches;\n    readonly        attribute TouchList targetTouches;\n    readonly        attribute TouchList changedTouches;\n    readonly        attribute boolean   altKey;\n    readonly        attribute boolean   metaKey;\n    readonly        attribute boolean   ctrlKey;\n    readonly        attribute boolean   shiftKey;\n};",
+    "fragment": "[Exposed=Window]\ninterface TouchEvent : UIEvent {\n    constructor(DOMString type, optional TouchEventInit eventInitDict = {});\n    readonly        attribute TouchList touches;\n    readonly        attribute TouchList targetTouches;\n    readonly        attribute TouchList changedTouches;\n    readonly        attribute boolean   altKey;\n    readonly        attribute boolean   metaKey;\n    readonly        attribute boolean   ctrlKey;\n    readonly        attribute boolean   shiftKey;\n    getter boolean getModifierState (DOMString keyArg);\n};",
     "href": "https://w3c.github.io/touch-events/#dom-touchevent"
   },
   "extended": [],
@@ -258,6 +258,32 @@
           "TouchEvent.shiftKey"
         ],
         "type": "attribute",
+        "for": [
+          "TouchEvent"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "touchevent-interface",
+          "href": "https://w3c.github.io/touch-events/#touchevent-interface",
+          "title": "TouchEvent Interface",
+          "number": "5"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-touchevent-getmodifierstate",
+        "href": "https://w3c.github.io/touch-events/#dom-touchevent-getmodifierstate",
+        "linkingText": [
+          "getModifierState()",
+          "getModifierState(keyArg)"
+        ],
+        "localLinkingText": [
+          "TouchEvent.getModifierState",
+          "TouchEvent.getModifierState()",
+          "getModifierState"
+        ],
+        "type": "method",
         "for": [
           "TouchEvent"
         ],
