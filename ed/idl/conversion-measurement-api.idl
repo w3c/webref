@@ -21,7 +21,7 @@ dictionary AttributionSourceParams {
 
 [Exposed=Window, SecureContext]
 interface AttributionReporting {
-  Promise<undefined> registerAttributionSource(AttributionSourceParams params);
+  Promise<undefined> registerSource(USVString url);
 };
 
 [SecureContext]

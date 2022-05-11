@@ -99,14 +99,14 @@
         "partial": false
       },
       "AttributionReporting": {
-        "fragment": "[Exposed=Window, SecureContext]\ninterface AttributionReporting {\n  Promise<undefined> registerAttributionSource(AttributionSourceParams params);\n};",
+        "fragment": "[Exposed=Window, SecureContext]\ninterface AttributionReporting {\n  Promise<undefined> registerSource(USVString url);\n};",
         "type": "interface",
         "name": "AttributionReporting",
         "inheritance": null,
         "members": [
           {
             "type": "operation",
-            "name": "registerAttributionSource",
+            "name": "registerSource",
             "idlType": {
               "type": "return-type",
               "extAttrs": [],
@@ -127,7 +127,7 @@
             "arguments": [
               {
                 "type": "argument",
-                "name": "params",
+                "name": "url",
                 "extAttrs": [],
                 "idlType": {
                   "type": "argument-type",
@@ -135,7 +135,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "AttributionSourceParams"
+                  "idlType": "USVString"
                 },
                 "default": null,
                 "optional": false,
@@ -333,9 +333,7 @@
     "dependencies": {
       "HTMLAnchorElement": [],
       "AttributionSourceParams": [],
-      "AttributionReporting": [
-        "AttributionSourceParams"
-      ],
+      "AttributionReporting": [],
       "Window": [
         "AttributionReporting"
       ]
