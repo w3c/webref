@@ -5243,34 +5243,6 @@
         "extAttrs": [],
         "partial": false
       },
-      "GPUPrimitiveTopology": {
-        "fragment": "enum GPUPrimitiveTopology {\n    \"point-list\",\n    \"line-list\",\n    \"line-strip\",\n    \"triangle-list\",\n    \"triangle-strip\",\n};",
-        "type": "enum",
-        "name": "GPUPrimitiveTopology",
-        "values": [
-          {
-            "type": "enum-value",
-            "value": "point-list"
-          },
-          {
-            "type": "enum-value",
-            "value": "line-list"
-          },
-          {
-            "type": "enum-value",
-            "value": "line-strip"
-          },
-          {
-            "type": "enum-value",
-            "value": "triangle-list"
-          },
-          {
-            "type": "enum-value",
-            "value": "triangle-strip"
-          }
-        ],
-        "extAttrs": []
-      },
       "GPUPrimitiveState": {
         "fragment": "dictionary GPUPrimitiveState {\n    GPUPrimitiveTopology topology = \"triangle-list\";\n    GPUIndexFormat stripIndexFormat;\n    GPUFrontFace frontFace = \"ccw\";\n    GPUCullMode cullMode = \"none\";\n\n    // Requires \"depth-clip-control\" feature.\n    boolean unclippedDepth = false;\n};",
         "type": "dictionary",
@@ -5367,6 +5339,34 @@
         ],
         "extAttrs": [],
         "partial": false
+      },
+      "GPUPrimitiveTopology": {
+        "fragment": "enum GPUPrimitiveTopology {\n    \"point-list\",\n    \"line-list\",\n    \"line-strip\",\n    \"triangle-list\",\n    \"triangle-strip\",\n};",
+        "type": "enum",
+        "name": "GPUPrimitiveTopology",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "point-list"
+          },
+          {
+            "type": "enum-value",
+            "value": "line-list"
+          },
+          {
+            "type": "enum-value",
+            "value": "line-strip"
+          },
+          {
+            "type": "enum-value",
+            "value": "triangle-list"
+          },
+          {
+            "type": "enum-value",
+            "value": "triangle-strip"
+          }
+        ],
+        "extAttrs": []
       },
       "GPUFrontFace": {
         "fragment": "enum GPUFrontFace {\n    \"ccw\",\n    \"cw\",\n};",
