@@ -129,27 +129,6 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-htmlanchorelement-registerattributionsource",
-      "href": "https://wicg.github.io/conversion-measurement-api/#dom-htmlanchorelement-registerattributionsource",
-      "linkingText": [
-        "registerAttributionSource"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "HTMLAnchorElement"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "monkeypatch-anchor",
-        "href": "https://wicg.github.io/conversion-measurement-api/#monkeypatch-anchor",
-        "title": "<a> element",
-        "number": "2.2"
-      },
-      "definedIn": "pre"
-    },
-    {
       "id": "element-attrdef-a-attributiondestination",
       "href": "https://wicg.github.io/conversion-measurement-api/#element-attrdef-a-attributiondestination",
       "linkingText": [
@@ -238,27 +217,6 @@
       "href": "https://wicg.github.io/conversion-measurement-api/#element-attrdef-a-attributionsourcepriority",
       "linkingText": [
         "attributionsourcepriority"
-      ],
-      "localLinkingText": [],
-      "type": "element-attr",
-      "for": [
-        "a"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "monkeypatch-anchor",
-        "href": "https://wicg.github.io/conversion-measurement-api/#monkeypatch-anchor",
-        "title": "<a> element",
-        "number": "2.2"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "element-attrdef-a-registerattributionsource",
-      "href": "https://wicg.github.io/conversion-measurement-api/#element-attrdef-a-registerattributionsource",
-      "linkingText": [
-        "registerattributionsource"
       ],
       "localLinkingText": [],
       "type": "element-attr",
@@ -440,15 +398,15 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-attributionreporting-registerattributionsource-params-params",
-      "href": "https://wicg.github.io/conversion-measurement-api/#dom-attributionreporting-registerattributionsource-params-params",
+      "id": "dom-attributionreporting-registersource-url-url",
+      "href": "https://wicg.github.io/conversion-measurement-api/#dom-attributionreporting-registersource-url-url",
       "linkingText": [
-        "params"
+        "url"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "AttributionReporting/registerAttributionSource(params)"
+        "AttributionReporting/registerSource(url)"
       ],
       "access": "public",
       "informative": false,
@@ -482,10 +440,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-attributionreporting-registerattributionsource",
-      "href": "https://wicg.github.io/conversion-measurement-api/#dom-attributionreporting-registerattributionsource",
+      "id": "dom-attributionreporting-registersource",
+      "href": "https://wicg.github.io/conversion-measurement-api/#dom-attributionreporting-registersource",
       "linkingText": [
-        "registerAttributionSource(params)"
+        "registerSource(url)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -522,10 +480,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "attribution-mode",
-      "href": "https://wicg.github.io/conversion-measurement-api/#attribution-mode",
+      "id": "trigger-state",
+      "href": "https://wicg.github.io/conversion-measurement-api/#trigger-state",
       "linkingText": [
-        "Attribution mode"
+        "Trigger state"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -533,10 +491,71 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "attribution-mode",
-        "href": "https://wicg.github.io/conversion-measurement-api/#attribution-mode",
-        "title": "Attribution mode",
+        "id": "trigger-state",
+        "href": "https://wicg.github.io/conversion-measurement-api/#trigger-state",
+        "title": "Trigger state",
         "number": "6.1"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "trigger-state-trigger-data",
+      "href": "https://wicg.github.io/conversion-measurement-api/#trigger-state-trigger-data",
+      "linkingText": [
+        "trigger data"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "trigger state"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "trigger-state",
+        "href": "https://wicg.github.io/conversion-measurement-api/#trigger-state",
+        "title": "Trigger state",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "trigger-state-report-window",
+      "href": "https://wicg.github.io/conversion-measurement-api/#trigger-state-report-window",
+      "linkingText": [
+        "report window"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "trigger state"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "trigger-state",
+        "href": "https://wicg.github.io/conversion-measurement-api/#trigger-state",
+        "title": "Trigger state",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "randomized-source-response",
+      "href": "https://wicg.github.io/conversion-measurement-api/#randomized-source-response",
+      "linkingText": [
+        "Randomized source response"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "randomized-source-response",
+        "href": "https://wicg.github.io/conversion-measurement-api/#randomized-source-response",
+        "title": "Randomized source response",
+        "number": "6.2"
       },
       "definedIn": "heading"
     },
@@ -555,7 +574,7 @@
         "id": "attribution-filter-map",
         "href": "https://wicg.github.io/conversion-measurement-api/#attribution-filter-map",
         "title": "Attribution filter map",
-        "number": "6.2"
+        "number": "6.3"
       },
       "definedIn": "heading"
     },
@@ -574,7 +593,7 @@
         "id": "source-type",
         "href": "https://wicg.github.io/conversion-measurement-api/#source-type",
         "title": "Source type",
-        "number": "6.3"
+        "number": "6.4"
       },
       "definedIn": "heading"
     },
@@ -593,7 +612,7 @@
         "id": "attribution-source",
         "href": "https://wicg.github.io/conversion-measurement-api/#attribution-source",
         "title": "Attribution source",
-        "number": "6.4"
+        "number": "6.5"
       },
       "definedIn": "heading"
     },
@@ -614,7 +633,7 @@
         "id": "attribution-source",
         "href": "https://wicg.github.io/conversion-measurement-api/#attribution-source",
         "title": "Attribution source",
-        "number": "6.4"
+        "number": "6.5"
       },
       "definedIn": "dt"
     },
@@ -635,7 +654,7 @@
         "id": "attribution-source",
         "href": "https://wicg.github.io/conversion-measurement-api/#attribution-source",
         "title": "Attribution source",
-        "number": "6.4"
+        "number": "6.5"
       },
       "definedIn": "dt"
     },
@@ -656,7 +675,7 @@
         "id": "attribution-source",
         "href": "https://wicg.github.io/conversion-measurement-api/#attribution-source",
         "title": "Attribution source",
-        "number": "6.4"
+        "number": "6.5"
       },
       "definedIn": "dt"
     },
@@ -677,7 +696,7 @@
         "id": "attribution-source",
         "href": "https://wicg.github.io/conversion-measurement-api/#attribution-source",
         "title": "Attribution source",
-        "number": "6.4"
+        "number": "6.5"
       },
       "definedIn": "dt"
     },
@@ -698,7 +717,7 @@
         "id": "attribution-source",
         "href": "https://wicg.github.io/conversion-measurement-api/#attribution-source",
         "title": "Attribution source",
-        "number": "6.4"
+        "number": "6.5"
       },
       "definedIn": "dt"
     },
@@ -719,7 +738,7 @@
         "id": "attribution-source",
         "href": "https://wicg.github.io/conversion-measurement-api/#attribution-source",
         "title": "Attribution source",
-        "number": "6.4"
+        "number": "6.5"
       },
       "definedIn": "dt"
     },
@@ -740,7 +759,7 @@
         "id": "attribution-source",
         "href": "https://wicg.github.io/conversion-measurement-api/#attribution-source",
         "title": "Attribution source",
-        "number": "6.4"
+        "number": "6.5"
       },
       "definedIn": "dt"
     },
@@ -761,7 +780,7 @@
         "id": "attribution-source",
         "href": "https://wicg.github.io/conversion-measurement-api/#attribution-source",
         "title": "Attribution source",
-        "number": "6.4"
+        "number": "6.5"
       },
       "definedIn": "dt"
     },
@@ -782,7 +801,7 @@
         "id": "attribution-source",
         "href": "https://wicg.github.io/conversion-measurement-api/#attribution-source",
         "title": "Attribution source",
-        "number": "6.4"
+        "number": "6.5"
       },
       "definedIn": "dt"
     },
@@ -803,7 +822,7 @@
         "id": "attribution-source",
         "href": "https://wicg.github.io/conversion-measurement-api/#attribution-source",
         "title": "Attribution source",
-        "number": "6.4"
+        "number": "6.5"
       },
       "definedIn": "dt"
     },
@@ -824,15 +843,15 @@
         "id": "attribution-source",
         "href": "https://wicg.github.io/conversion-measurement-api/#attribution-source",
         "title": "Attribution source",
-        "number": "6.4"
+        "number": "6.5"
       },
       "definedIn": "dt"
     },
     {
-      "id": "attribution-source-attribution-mode",
-      "href": "https://wicg.github.io/conversion-measurement-api/#attribution-source-attribution-mode",
+      "id": "attribution-source-randomized-response",
+      "href": "https://wicg.github.io/conversion-measurement-api/#attribution-source-randomized-response",
       "linkingText": [
-        "attribution mode"
+        "randomized response"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -845,7 +864,7 @@
         "id": "attribution-source",
         "href": "https://wicg.github.io/conversion-measurement-api/#attribution-source",
         "title": "Attribution source",
-        "number": "6.4"
+        "number": "6.5"
       },
       "definedIn": "dt"
     },
@@ -866,7 +885,7 @@
         "id": "attribution-source",
         "href": "https://wicg.github.io/conversion-measurement-api/#attribution-source",
         "title": "Attribution source",
-        "number": "6.4"
+        "number": "6.5"
       },
       "definedIn": "dt"
     },
@@ -887,7 +906,7 @@
         "id": "attribution-source",
         "href": "https://wicg.github.io/conversion-measurement-api/#attribution-source",
         "title": "Attribution source",
-        "number": "6.4"
+        "number": "6.5"
       },
       "definedIn": "dt"
     },
@@ -908,7 +927,192 @@
         "id": "attribution-source",
         "href": "https://wicg.github.io/conversion-measurement-api/#attribution-source",
         "title": "Attribution source",
-        "number": "6.4"
+        "number": "6.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "attribution-source-aggregatable-source",
+      "href": "https://wicg.github.io/conversion-measurement-api/#attribution-source-aggregatable-source",
+      "linkingText": [
+        "aggregatable source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribution source"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-source",
+        "href": "https://wicg.github.io/conversion-measurement-api/#attribution-source",
+        "title": "Attribution source",
+        "number": "6.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "attribution-aggregatable-trigger-data",
+      "href": "https://wicg.github.io/conversion-measurement-api/#attribution-aggregatable-trigger-data",
+      "linkingText": [
+        "Attribution aggregatable trigger data"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-aggregatable-trigger-data",
+        "href": "https://wicg.github.io/conversion-measurement-api/#attribution-aggregatable-trigger-data",
+        "title": "Attribution aggregatable trigger data",
+        "number": "6.6"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "attribution-aggregatable-trigger-data-key-piece",
+      "href": "https://wicg.github.io/conversion-measurement-api/#attribution-aggregatable-trigger-data-key-piece",
+      "linkingText": [
+        "key piece"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribution aggregatable trigger data"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-aggregatable-trigger-data",
+        "href": "https://wicg.github.io/conversion-measurement-api/#attribution-aggregatable-trigger-data",
+        "title": "Attribution aggregatable trigger data",
+        "number": "6.6"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "attribution-aggregatable-trigger-data-source-keys",
+      "href": "https://wicg.github.io/conversion-measurement-api/#attribution-aggregatable-trigger-data-source-keys",
+      "linkingText": [
+        "source keys"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribution aggregatable trigger data"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-aggregatable-trigger-data",
+        "href": "https://wicg.github.io/conversion-measurement-api/#attribution-aggregatable-trigger-data",
+        "title": "Attribution aggregatable trigger data",
+        "number": "6.6"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "attribution-aggregatable-trigger-data-filters",
+      "href": "https://wicg.github.io/conversion-measurement-api/#attribution-aggregatable-trigger-data-filters",
+      "linkingText": [
+        "filters"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribution aggregatable trigger data"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-aggregatable-trigger-data",
+        "href": "https://wicg.github.io/conversion-measurement-api/#attribution-aggregatable-trigger-data",
+        "title": "Attribution aggregatable trigger data",
+        "number": "6.6"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "attribution-aggregatable-trigger-data-negated-filters",
+      "href": "https://wicg.github.io/conversion-measurement-api/#attribution-aggregatable-trigger-data-negated-filters",
+      "linkingText": [
+        "negated filters"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribution aggregatable trigger data"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-aggregatable-trigger-data",
+        "href": "https://wicg.github.io/conversion-measurement-api/#attribution-aggregatable-trigger-data",
+        "title": "Attribution aggregatable trigger data",
+        "number": "6.6"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "attribution-aggregatable-trigger",
+      "href": "https://wicg.github.io/conversion-measurement-api/#attribution-aggregatable-trigger",
+      "linkingText": [
+        "Attribution aggregatable trigger"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-aggregatable-trigger",
+        "href": "https://wicg.github.io/conversion-measurement-api/#attribution-aggregatable-trigger",
+        "title": "Attribution aggregatable trigger",
+        "number": "6.7"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "attribution-aggregatable-trigger-trigger-data",
+      "href": "https://wicg.github.io/conversion-measurement-api/#attribution-aggregatable-trigger-trigger-data",
+      "linkingText": [
+        "trigger data"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribution aggregatable trigger"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-aggregatable-trigger",
+        "href": "https://wicg.github.io/conversion-measurement-api/#attribution-aggregatable-trigger",
+        "title": "Attribution aggregatable trigger",
+        "number": "6.7"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "attribution-aggregatable-trigger-values",
+      "href": "https://wicg.github.io/conversion-measurement-api/#attribution-aggregatable-trigger-values",
+      "linkingText": [
+        "values"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribution aggregatable trigger"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-aggregatable-trigger",
+        "href": "https://wicg.github.io/conversion-measurement-api/#attribution-aggregatable-trigger",
+        "title": "Attribution aggregatable trigger",
+        "number": "6.7"
       },
       "definedIn": "dt"
     },
@@ -927,7 +1131,7 @@
         "id": "attribution-trigger",
         "href": "https://wicg.github.io/conversion-measurement-api/#attribution-trigger",
         "title": "Attribution trigger",
-        "number": "6.5"
+        "number": "6.8"
       },
       "definedIn": "heading"
     },
@@ -948,7 +1152,7 @@
         "id": "attribution-trigger",
         "href": "https://wicg.github.io/conversion-measurement-api/#attribution-trigger",
         "title": "Attribution trigger",
-        "number": "6.5"
+        "number": "6.8"
       },
       "definedIn": "dt"
     },
@@ -969,7 +1173,7 @@
         "id": "attribution-trigger",
         "href": "https://wicg.github.io/conversion-measurement-api/#attribution-trigger",
         "title": "Attribution trigger",
-        "number": "6.5"
+        "number": "6.8"
       },
       "definedIn": "dt"
     },
@@ -990,7 +1194,7 @@
         "id": "attribution-trigger",
         "href": "https://wicg.github.io/conversion-measurement-api/#attribution-trigger",
         "title": "Attribution trigger",
-        "number": "6.5"
+        "number": "6.8"
       },
       "definedIn": "dt"
     },
@@ -1011,7 +1215,7 @@
         "id": "attribution-trigger",
         "href": "https://wicg.github.io/conversion-measurement-api/#attribution-trigger",
         "title": "Attribution trigger",
-        "number": "6.5"
+        "number": "6.8"
       },
       "definedIn": "dt"
     },
@@ -1032,7 +1236,7 @@
         "id": "attribution-trigger",
         "href": "https://wicg.github.io/conversion-measurement-api/#attribution-trigger",
         "title": "Attribution trigger",
-        "number": "6.5"
+        "number": "6.8"
       },
       "definedIn": "dt"
     },
@@ -1053,7 +1257,7 @@
         "id": "attribution-trigger",
         "href": "https://wicg.github.io/conversion-measurement-api/#attribution-trigger",
         "title": "Attribution trigger",
-        "number": "6.5"
+        "number": "6.8"
       },
       "definedIn": "dt"
     },
@@ -1074,7 +1278,7 @@
         "id": "attribution-trigger",
         "href": "https://wicg.github.io/conversion-measurement-api/#attribution-trigger",
         "title": "Attribution trigger",
-        "number": "6.5"
+        "number": "6.8"
       },
       "definedIn": "dt"
     },
@@ -1095,7 +1299,7 @@
         "id": "attribution-trigger",
         "href": "https://wicg.github.io/conversion-measurement-api/#attribution-trigger",
         "title": "Attribution trigger",
-        "number": "6.5"
+        "number": "6.8"
       },
       "definedIn": "dt"
     },
@@ -1116,7 +1320,28 @@
         "id": "attribution-trigger",
         "href": "https://wicg.github.io/conversion-measurement-api/#attribution-trigger",
         "title": "Attribution trigger",
-        "number": "6.5"
+        "number": "6.8"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "attribution-trigger-aggregatable-trigger",
+      "href": "https://wicg.github.io/conversion-measurement-api/#attribution-trigger-aggregatable-trigger",
+      "linkingText": [
+        "aggregatable trigger"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribution trigger"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-trigger",
+        "href": "https://wicg.github.io/conversion-measurement-api/#attribution-trigger",
+        "title": "Attribution trigger",
+        "number": "6.8"
       },
       "definedIn": "dt"
     },
@@ -1135,7 +1360,7 @@
         "id": "attribution-report",
         "href": "https://wicg.github.io/conversion-measurement-api/#attribution-report",
         "title": "Attribution report",
-        "number": "6.6"
+        "number": "6.9"
       },
       "definedIn": "heading"
     },
@@ -1156,7 +1381,7 @@
         "id": "attribution-report",
         "href": "https://wicg.github.io/conversion-measurement-api/#attribution-report",
         "title": "Attribution report",
-        "number": "6.6"
+        "number": "6.9"
       },
       "definedIn": "dt"
     },
@@ -1177,7 +1402,7 @@
         "id": "attribution-report",
         "href": "https://wicg.github.io/conversion-measurement-api/#attribution-report",
         "title": "Attribution report",
-        "number": "6.6"
+        "number": "6.9"
       },
       "definedIn": "dt"
     },
@@ -1198,7 +1423,7 @@
         "id": "attribution-report",
         "href": "https://wicg.github.io/conversion-measurement-api/#attribution-report",
         "title": "Attribution report",
-        "number": "6.6"
+        "number": "6.9"
       },
       "definedIn": "dt"
     },
@@ -1219,7 +1444,7 @@
         "id": "attribution-report",
         "href": "https://wicg.github.io/conversion-measurement-api/#attribution-report",
         "title": "Attribution report",
-        "number": "6.6"
+        "number": "6.9"
       },
       "definedIn": "dt"
     },
@@ -1240,7 +1465,7 @@
         "id": "attribution-report",
         "href": "https://wicg.github.io/conversion-measurement-api/#attribution-report",
         "title": "Attribution report",
-        "number": "6.6"
+        "number": "6.9"
       },
       "definedIn": "dt"
     },
@@ -1261,7 +1486,7 @@
         "id": "attribution-report",
         "href": "https://wicg.github.io/conversion-measurement-api/#attribution-report",
         "title": "Attribution report",
-        "number": "6.6"
+        "number": "6.9"
       },
       "definedIn": "dt"
     },
@@ -1282,7 +1507,7 @@
         "id": "attribution-report",
         "href": "https://wicg.github.io/conversion-measurement-api/#attribution-report",
         "title": "Attribution report",
-        "number": "6.6"
+        "number": "6.9"
       },
       "definedIn": "dt"
     },
@@ -1303,7 +1528,7 @@
         "id": "attribution-report",
         "href": "https://wicg.github.io/conversion-measurement-api/#attribution-report",
         "title": "Attribution report",
-        "number": "6.6"
+        "number": "6.9"
       },
       "definedIn": "dt"
     },
@@ -1324,7 +1549,7 @@
         "id": "attribution-report",
         "href": "https://wicg.github.io/conversion-measurement-api/#attribution-report",
         "title": "Attribution report",
-        "number": "6.6"
+        "number": "6.9"
       },
       "definedIn": "dt"
     },
@@ -1345,7 +1570,7 @@
         "id": "attribution-report",
         "href": "https://wicg.github.io/conversion-measurement-api/#attribution-report",
         "title": "Attribution report",
-        "number": "6.6"
+        "number": "6.9"
       },
       "definedIn": "dt"
     },
@@ -1366,7 +1591,7 @@
         "id": "attribution-report",
         "href": "https://wicg.github.io/conversion-measurement-api/#attribution-report",
         "title": "Attribution report",
-        "number": "6.6"
+        "number": "6.9"
       },
       "definedIn": "dt"
     },
@@ -1387,7 +1612,7 @@
         "id": "attribution-report",
         "href": "https://wicg.github.io/conversion-measurement-api/#attribution-report",
         "title": "Attribution report",
-        "number": "6.6"
+        "number": "6.9"
       },
       "definedIn": "dt"
     },
@@ -1408,7 +1633,7 @@
         "id": "attribution-report",
         "href": "https://wicg.github.io/conversion-measurement-api/#attribution-report",
         "title": "Attribution report",
-        "number": "6.6"
+        "number": "6.9"
       },
       "definedIn": "dt"
     },
@@ -1429,7 +1654,68 @@
         "id": "attribution-report",
         "href": "https://wicg.github.io/conversion-measurement-api/#attribution-report",
         "title": "Attribution report",
-        "number": "6.6"
+        "number": "6.9"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "attribution-aggregatable-histogram",
+      "href": "https://wicg.github.io/conversion-measurement-api/#attribution-aggregatable-histogram",
+      "linkingText": [
+        "Attribution aggregatable histogram"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-aggregatable-histogram",
+        "href": "https://wicg.github.io/conversion-measurement-api/#attribution-aggregatable-histogram",
+        "title": "Attribution aggregatable histogram",
+        "number": "6.10"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "attribution-aggregatable-histogram-key",
+      "href": "https://wicg.github.io/conversion-measurement-api/#attribution-aggregatable-histogram-key",
+      "linkingText": [
+        "key"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribution aggregatable histogram"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-aggregatable-histogram",
+        "href": "https://wicg.github.io/conversion-measurement-api/#attribution-aggregatable-histogram",
+        "title": "Attribution aggregatable histogram",
+        "number": "6.10"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "attribution-aggregatable-histogram-value",
+      "href": "https://wicg.github.io/conversion-measurement-api/#attribution-aggregatable-histogram-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribution aggregatable histogram"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-aggregatable-histogram",
+        "href": "https://wicg.github.io/conversion-measurement-api/#attribution-aggregatable-histogram",
+        "title": "Attribution aggregatable histogram",
+        "number": "6.10"
       },
       "definedIn": "dt"
     },
@@ -1448,7 +1734,7 @@
         "id": "attribution-rate-limit-record",
         "href": "https://wicg.github.io/conversion-measurement-api/#attribution-rate-limit-record",
         "title": "Attribution rate-limit record",
-        "number": "6.7"
+        "number": "6.11"
       },
       "definedIn": "heading"
     },
@@ -1469,7 +1755,7 @@
         "id": "attribution-rate-limit-record",
         "href": "https://wicg.github.io/conversion-measurement-api/#attribution-rate-limit-record",
         "title": "Attribution rate-limit record",
-        "number": "6.7"
+        "number": "6.11"
       },
       "definedIn": "dt"
     },
@@ -1490,7 +1776,7 @@
         "id": "attribution-rate-limit-record",
         "href": "https://wicg.github.io/conversion-measurement-api/#attribution-rate-limit-record",
         "title": "Attribution rate-limit record",
-        "number": "6.7"
+        "number": "6.11"
       },
       "definedIn": "dt"
     },
@@ -1511,7 +1797,7 @@
         "id": "attribution-rate-limit-record",
         "href": "https://wicg.github.io/conversion-measurement-api/#attribution-rate-limit-record",
         "title": "Attribution rate-limit record",
-        "number": "6.7"
+        "number": "6.11"
       },
       "definedIn": "dt"
     },
@@ -1532,7 +1818,7 @@
         "id": "attribution-rate-limit-record",
         "href": "https://wicg.github.io/conversion-measurement-api/#attribution-rate-limit-record",
         "title": "Attribution rate-limit record",
-        "number": "6.7"
+        "number": "6.11"
       },
       "definedIn": "dt"
     },
@@ -1553,7 +1839,7 @@
         "id": "attribution-rate-limit-record",
         "href": "https://wicg.github.io/conversion-measurement-api/#attribution-rate-limit-record",
         "title": "Attribution rate-limit record",
-        "number": "6.7"
+        "number": "6.11"
       },
       "definedIn": "dt"
     },
@@ -1733,10 +2019,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "obtain-a-random-attribution-mode",
-      "href": "https://wicg.github.io/conversion-measurement-api/#obtain-a-random-attribution-mode",
+      "id": "obtain-a-randomized-source-response",
+      "href": "https://wicg.github.io/conversion-measurement-api/#obtain-a-randomized-source-response",
       "linkingText": [
-        "obtain a random attribution mode"
+        "obtain a randomized source response"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1744,9 +2030,9 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "obtaining-random-attribution-mode",
-        "href": "https://wicg.github.io/conversion-measurement-api/#obtaining-random-attribution-mode",
-        "title": "Obtaining a random attribution mode",
+        "id": "obtaining-randomized-source-response",
+        "href": "https://wicg.github.io/conversion-measurement-api/#obtaining-randomized-source-response",
+        "title": "Obtaining a randomized source response",
         "number": "9.4"
       },
       "definedIn": "prose"
@@ -1771,44 +2057,6 @@
       "definedIn": "prose"
     },
     {
-      "id": "obtain-an-event-attribution-source-from-a-source",
-      "href": "https://wicg.github.io/conversion-measurement-api/#obtain-an-event-attribution-source-from-a-source",
-      "linkingText": [
-        "obtain an event attribution source from a source"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "obtaining-event-attribution-source-source",
-        "href": "https://wicg.github.io/conversion-measurement-api/#obtaining-event-attribution-source-source",
-        "title": "Obtaining an event attribution source from a source",
-        "number": "9.6"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "randomized-event-source-trigger-rate",
-      "href": "https://wicg.github.io/conversion-measurement-api/#randomized-event-source-trigger-rate",
-      "linkingText": [
-        "Randomized event-source trigger rate"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "obtaining-event-attribution-source-source",
-        "href": "https://wicg.github.io/conversion-measurement-api/#obtaining-event-attribution-source-source",
-        "title": "Obtaining an event attribution source from a source",
-        "number": "9.6"
-      },
-      "definedIn": "prose"
-    },
-    {
       "id": "obtain-an-attribution-source-from-params",
       "href": "https://wicg.github.io/conversion-measurement-api/#obtain-an-attribution-source-from-params",
       "linkingText": [
@@ -1823,7 +2071,7 @@
         "id": "obtaining-attribution-source-params",
         "href": "https://wicg.github.io/conversion-measurement-api/#obtaining-attribution-source-params",
         "title": "Obtaining an attribution source from AttributionSourceParams",
-        "number": "9.7"
+        "number": "9.6"
       },
       "definedIn": "prose"
     },
@@ -1842,7 +2090,64 @@
         "id": "obtaining-attribution-source-params",
         "href": "https://wicg.github.io/conversion-measurement-api/#obtaining-attribution-source-params",
         "title": "Obtaining an attribution source from AttributionSourceParams",
-        "number": "9.7"
+        "number": "9.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "max-source-expiry",
+      "href": "https://wicg.github.io/conversion-measurement-api/#max-source-expiry",
+      "linkingText": [
+        "Max source expiry"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "obtaining-attribution-source-params",
+        "href": "https://wicg.github.io/conversion-measurement-api/#obtaining-attribution-source-params",
+        "title": "Obtaining an attribution source from AttributionSourceParams",
+        "number": "9.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "randomized-navigation-source-trigger-rate",
+      "href": "https://wicg.github.io/conversion-measurement-api/#randomized-navigation-source-trigger-rate",
+      "linkingText": [
+        "Randomized navigation-source trigger rate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "obtaining-attribution-source-params",
+        "href": "https://wicg.github.io/conversion-measurement-api/#obtaining-attribution-source-params",
+        "title": "Obtaining an attribution source from AttributionSourceParams",
+        "number": "9.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "randomized-event-source-trigger-rate",
+      "href": "https://wicg.github.io/conversion-measurement-api/#randomized-event-source-trigger-rate",
+      "linkingText": [
+        "Randomized event-source trigger rate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "obtaining-attribution-source-params",
+        "href": "https://wicg.github.io/conversion-measurement-api/#obtaining-attribution-source-params",
+        "title": "Obtaining an attribution source from AttributionSourceParams",
+        "number": "9.6"
       },
       "definedIn": "prose"
     },
@@ -1861,7 +2166,26 @@
         "id": "processing-an-attribution-source",
         "href": "https://wicg.github.io/conversion-measurement-api/#processing-an-attribution-source",
         "title": "Processing an attribution source",
-        "number": "9.8"
+        "number": "9.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "obtain-a-fake-report",
+      "href": "https://wicg.github.io/conversion-measurement-api/#obtain-a-fake-report",
+      "linkingText": [
+        "obtain a fake report"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "processing-an-attribution-source",
+        "href": "https://wicg.github.io/conversion-measurement-api/#processing-an-attribution-source",
+        "title": "Processing an attribution source",
+        "number": "9.7"
       },
       "definedIn": "prose"
     },
@@ -1880,7 +2204,7 @@
         "id": "processing-an-attribution-source",
         "href": "https://wicg.github.io/conversion-measurement-api/#processing-an-attribution-source",
         "title": "Processing an attribution source",
-        "number": "9.8"
+        "number": "9.7"
       },
       "definedIn": "prose"
     },
@@ -1899,7 +2223,26 @@
         "id": "processing-an-attribution-source",
         "href": "https://wicg.github.io/conversion-measurement-api/#processing-an-attribution-source",
         "title": "Processing an attribution source",
-        "number": "9.8"
+        "number": "9.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "max-pending-sources-per-source-origin",
+      "href": "https://wicg.github.io/conversion-measurement-api/#max-pending-sources-per-source-origin",
+      "linkingText": [
+        "Max pending sources per source origin"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "processing-an-attribution-source",
+        "href": "https://wicg.github.io/conversion-measurement-api/#processing-an-attribution-source",
+        "title": "Processing an attribution source",
+        "number": "9.7"
       },
       "definedIn": "prose"
     },
@@ -1923,10 +2266,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "trigger-data-cardinality",
-      "href": "https://wicg.github.io/conversion-measurement-api/#trigger-data-cardinality",
+      "id": "navigation-source-trigger-data-cardinality",
+      "href": "https://wicg.github.io/conversion-measurement-api/#navigation-source-trigger-data-cardinality",
       "linkingText": [
-        "Trigger data cardinality"
+        "Navigation-source trigger data cardinality"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -2132,6 +2475,25 @@
       "definedIn": "prose"
     },
     {
+      "id": "create-attribution-aggregatable-histograms",
+      "href": "https://wicg.github.io/conversion-measurement-api/#create-attribution-aggregatable-histograms",
+      "linkingText": [
+        "create attribution aggregatable histograms"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "creating-aggregatable-histograms",
+        "href": "https://wicg.github.io/conversion-measurement-api/#creating-aggregatable-histograms",
+        "title": "Creating aggregatable histograms",
+        "number": "10.6"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "trigger-attribution",
       "href": "https://wicg.github.io/conversion-measurement-api/#trigger-attribution",
       "linkingText": [
@@ -2146,7 +2508,7 @@
         "id": "triggering-attribution",
         "href": "https://wicg.github.io/conversion-measurement-api/#triggering-attribution",
         "title": "Triggering attribution",
-        "number": "10.6"
+        "number": "10.7"
       },
       "definedIn": "prose"
     },
@@ -2165,7 +2527,7 @@
         "id": "triggering-attribution",
         "href": "https://wicg.github.io/conversion-measurement-api/#triggering-attribution",
         "title": "Triggering attribution",
-        "number": "10.6"
+        "number": "10.7"
       },
       "definedIn": "prose"
     },
@@ -2184,7 +2546,7 @@
         "id": "triggering-attribution",
         "href": "https://wicg.github.io/conversion-measurement-api/#triggering-attribution",
         "title": "Triggering attribution",
-        "number": "10.6"
+        "number": "10.7"
       },
       "definedIn": "prose"
     },
@@ -2203,7 +2565,7 @@
         "id": "triggering-attribution",
         "href": "https://wicg.github.io/conversion-measurement-api/#triggering-attribution",
         "title": "Triggering attribution",
-        "number": "10.6"
+        "number": "10.7"
       },
       "definedIn": "prose"
     },
@@ -2222,7 +2584,102 @@
         "id": "triggering-attribution",
         "href": "https://wicg.github.io/conversion-measurement-api/#triggering-attribution",
         "title": "Triggering attribution",
-        "number": "10.6"
+        "number": "10.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "obtain-an-expiry-deadline",
+      "href": "https://wicg.github.io/conversion-measurement-api/#obtain-an-expiry-deadline",
+      "linkingText": [
+        "obtain an expiry deadline"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "delivery-time",
+        "href": "https://wicg.github.io/conversion-measurement-api/#delivery-time",
+        "title": "Establishing report delivery time",
+        "number": "10.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "obtain-early-deadlines",
+      "href": "https://wicg.github.io/conversion-measurement-api/#obtain-early-deadlines",
+      "linkingText": [
+        "obtain early deadlines"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "delivery-time",
+        "href": "https://wicg.github.io/conversion-measurement-api/#delivery-time",
+        "title": "Establishing report delivery time",
+        "number": "10.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "obtain-the-number-of-report-windows",
+      "href": "https://wicg.github.io/conversion-measurement-api/#obtain-the-number-of-report-windows",
+      "linkingText": [
+        "obtain the number of report windows"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "delivery-time",
+        "href": "https://wicg.github.io/conversion-measurement-api/#delivery-time",
+        "title": "Establishing report delivery time",
+        "number": "10.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "obtain-a-report-time-from-deadline",
+      "href": "https://wicg.github.io/conversion-measurement-api/#obtain-a-report-time-from-deadline",
+      "linkingText": [
+        "obtain a report time from deadline"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "delivery-time",
+        "href": "https://wicg.github.io/conversion-measurement-api/#delivery-time",
+        "title": "Establishing report delivery time",
+        "number": "10.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "obtain-the-report-time-at-a-window",
+      "href": "https://wicg.github.io/conversion-measurement-api/#obtain-the-report-time-at-a-window",
+      "linkingText": [
+        "obtain the report time at a window"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "delivery-time",
+        "href": "https://wicg.github.io/conversion-measurement-api/#delivery-time",
+        "title": "Establishing report delivery time",
+        "number": "10.8"
       },
       "definedIn": "prose"
     },
@@ -2241,7 +2698,7 @@
         "id": "delivery-time",
         "href": "https://wicg.github.io/conversion-measurement-api/#delivery-time",
         "title": "Establishing report delivery time",
-        "number": "10.7"
+        "number": "10.8"
       },
       "definedIn": "prose"
     },
@@ -2260,7 +2717,7 @@
         "id": "obtaining-a-report",
         "href": "https://wicg.github.io/conversion-measurement-api/#obtaining-a-report",
         "title": "Obtaining a report",
-        "number": "10.8"
+        "number": "10.9"
       },
       "definedIn": "prose"
     },

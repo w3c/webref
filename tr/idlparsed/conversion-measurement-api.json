@@ -99,14 +99,14 @@
         "partial": false
       },
       "AttributionReporting": {
-        "fragment": "[Exposed=Window, SecureContext]\ninterface AttributionReporting {\n  Promise<undefined> registerAttributionSource(AttributionSourceParams params);\n};",
+        "fragment": "[Exposed=Window, SecureContext]\ninterface AttributionReporting {\n  Promise<undefined> registerSource(USVString url);\n};",
         "type": "interface",
         "name": "AttributionReporting",
         "inheritance": null,
         "members": [
           {
             "type": "operation",
-            "name": "registerAttributionSource",
+            "name": "registerSource",
             "idlType": {
               "type": "return-type",
               "extAttrs": [],
@@ -127,7 +127,7 @@
             "arguments": [
               {
                 "type": "argument",
-                "name": "params",
+                "name": "url",
                 "extAttrs": [],
                 "idlType": {
                   "type": "argument-type",
@@ -135,7 +135,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "AttributionSourceParams"
+                  "idlType": "USVString"
                 },
                 "default": null,
                 "optional": false,
@@ -169,7 +169,7 @@
     "idlExtendedNames": {
       "HTMLAnchorElement": [
         {
-          "fragment": "partial interface HTMLAnchorElement {\n    [CEReactions] attribute USVString attributionDestination;\n    [CEReactions] attribute DOMString attributionSourceEventId;\n    [CEReactions] attribute USVString attributionReportTo;\n    [CEReactions] attribute long long attributionExpiry;\n    [CEReactions] attribute long long attributionSourcePriority;\n    [CEReactions] attribute boolean registerAttributionSource;\n};",
+          "fragment": "partial interface HTMLAnchorElement {\n    [CEReactions] attribute USVString attributionDestination;\n    [CEReactions] attribute DOMString attributionSourceEventId;\n    [CEReactions] attribute USVString attributionReportTo;\n    [CEReactions] attribute long long attributionExpiry;\n    [CEReactions] attribute long long attributionSourcePriority;\n};",
           "type": "interface",
           "name": "HTMLAnchorElement",
           "inheritance": null,
@@ -283,28 +283,6 @@
               ],
               "special": "",
               "readonly": false
-            },
-            {
-              "type": "attribute",
-              "name": "registerAttributionSource",
-              "idlType": {
-                "type": "attribute-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "boolean"
-              },
-              "extAttrs": [
-                {
-                  "type": "extended-attribute",
-                  "name": "CEReactions",
-                  "rhs": null,
-                  "arguments": []
-                }
-              ],
-              "special": "",
-              "readonly": false
             }
           ],
           "extAttrs": [],
@@ -355,9 +333,7 @@
     "dependencies": {
       "HTMLAnchorElement": [],
       "AttributionSourceParams": [],
-      "AttributionReporting": [
-        "AttributionSourceParams"
-      ],
+      "AttributionReporting": [],
       "Window": [
         "AttributionReporting"
       ]

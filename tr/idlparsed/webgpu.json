@@ -3681,105 +3681,6 @@
         "extAttrs": [],
         "partial": false
       },
-      "GPUShaderStageFlags": {
-        "fragment": "typedef [EnforceRange] unsigned long GPUShaderStageFlags;",
-        "type": "typedef",
-        "name": "GPUShaderStageFlags",
-        "idlType": {
-          "type": "typedef-type",
-          "extAttrs": [
-            {
-              "type": "extended-attribute",
-              "name": "EnforceRange",
-              "rhs": null,
-              "arguments": []
-            }
-          ],
-          "generic": "",
-          "nullable": false,
-          "union": false,
-          "idlType": "unsigned long"
-        },
-        "extAttrs": []
-      },
-      "GPUShaderStage": {
-        "fragment": "[Exposed=(Window, DedicatedWorker)]\nnamespace GPUShaderStage {\n    const GPUFlagsConstant VERTEX   = 0x1;\n    const GPUFlagsConstant FRAGMENT = 0x2;\n    const GPUFlagsConstant COMPUTE  = 0x4;\n};",
-        "type": "namespace",
-        "name": "GPUShaderStage",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "const",
-            "name": "VERTEX",
-            "idlType": {
-              "type": "const-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "GPUFlagsConstant"
-            },
-            "extAttrs": [],
-            "value": {
-              "type": "number",
-              "value": "0x1"
-            }
-          },
-          {
-            "type": "const",
-            "name": "FRAGMENT",
-            "idlType": {
-              "type": "const-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "GPUFlagsConstant"
-            },
-            "extAttrs": [],
-            "value": {
-              "type": "number",
-              "value": "0x2"
-            }
-          },
-          {
-            "type": "const",
-            "name": "COMPUTE",
-            "idlType": {
-              "type": "const-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "GPUFlagsConstant"
-            },
-            "extAttrs": [],
-            "value": {
-              "type": "number",
-              "value": "0x4"
-            }
-          }
-        ],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier-list",
-              "value": [
-                {
-                  "value": "Window"
-                },
-                {
-                  "value": "DedicatedWorker"
-                }
-              ]
-            },
-            "arguments": []
-          }
-        ],
-        "partial": false
-      },
       "GPUBindGroupLayoutEntry": {
         "fragment": "dictionary GPUBindGroupLayoutEntry {\n    required GPUIndex32 binding;\n    required GPUShaderStageFlags visibility;\n\n    GPUBufferBindingLayout buffer;\n    GPUSamplerBindingLayout sampler;\n    GPUTextureBindingLayout texture;\n    GPUStorageTextureBindingLayout storageTexture;\n    GPUExternalTextureBindingLayout externalTexture;\n};",
         "type": "dictionary",
@@ -3893,6 +3794,105 @@
           }
         ],
         "extAttrs": [],
+        "partial": false
+      },
+      "GPUShaderStageFlags": {
+        "fragment": "typedef [EnforceRange] unsigned long GPUShaderStageFlags;",
+        "type": "typedef",
+        "name": "GPUShaderStageFlags",
+        "idlType": {
+          "type": "typedef-type",
+          "extAttrs": [
+            {
+              "type": "extended-attribute",
+              "name": "EnforceRange",
+              "rhs": null,
+              "arguments": []
+            }
+          ],
+          "generic": "",
+          "nullable": false,
+          "union": false,
+          "idlType": "unsigned long"
+        },
+        "extAttrs": []
+      },
+      "GPUShaderStage": {
+        "fragment": "[Exposed=(Window, DedicatedWorker)]\nnamespace GPUShaderStage {\n    const GPUFlagsConstant VERTEX   = 0x1;\n    const GPUFlagsConstant FRAGMENT = 0x2;\n    const GPUFlagsConstant COMPUTE  = 0x4;\n};",
+        "type": "namespace",
+        "name": "GPUShaderStage",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "const",
+            "name": "VERTEX",
+            "idlType": {
+              "type": "const-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUFlagsConstant"
+            },
+            "extAttrs": [],
+            "value": {
+              "type": "number",
+              "value": "0x1"
+            }
+          },
+          {
+            "type": "const",
+            "name": "FRAGMENT",
+            "idlType": {
+              "type": "const-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUFlagsConstant"
+            },
+            "extAttrs": [],
+            "value": {
+              "type": "number",
+              "value": "0x2"
+            }
+          },
+          {
+            "type": "const",
+            "name": "COMPUTE",
+            "idlType": {
+              "type": "const-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUFlagsConstant"
+            },
+            "extAttrs": [],
+            "value": {
+              "type": "number",
+              "value": "0x4"
+            }
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "DedicatedWorker"
+                }
+              ]
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "GPUBufferBindingType": {
@@ -4550,48 +4550,6 @@
         ],
         "partial": false
       },
-      "GPUShaderModuleCompilationHint": {
-        "fragment": "dictionary GPUShaderModuleCompilationHint {\n    required (GPUPipelineLayout or GPUAutoLayoutMode) layout;\n};",
-        "type": "dictionary",
-        "name": "GPUShaderModuleCompilationHint",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "field",
-            "name": "layout",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": true,
-              "idlType": [
-                {
-                  "type": null,
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "GPUPipelineLayout"
-                },
-                {
-                  "type": null,
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "GPUAutoLayoutMode"
-                }
-              ]
-            },
-            "default": null,
-            "required": true
-          }
-        ],
-        "extAttrs": [],
-        "partial": false
-      },
       "GPUShaderModuleDescriptor": {
         "fragment": "dictionary GPUShaderModuleDescriptor : GPUObjectDescriptorBase {\n    required USVString code;\n    object sourceMap;\n    record<USVString, GPUShaderModuleCompilationHint> hints;\n};",
         "type": "dictionary",
@@ -4659,6 +4617,48 @@
             },
             "default": null,
             "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "GPUShaderModuleCompilationHint": {
+        "fragment": "dictionary GPUShaderModuleCompilationHint {\n    required (GPUPipelineLayout or GPUAutoLayoutMode) layout;\n};",
+        "type": "dictionary",
+        "name": "GPUShaderModuleCompilationHint",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "layout",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": true,
+              "idlType": [
+                {
+                  "type": null,
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GPUPipelineLayout"
+                },
+                {
+                  "type": null,
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GPUAutoLayoutMode"
+                }
+              ]
+            },
+            "default": null,
+            "required": true
           }
         ],
         "extAttrs": [],
@@ -4931,7 +4931,7 @@
         "partial": false
       },
       "GPUPipelineBase": {
-        "fragment": "interface mixin GPUPipelineBase {\n    GPUBindGroupLayout getBindGroupLayout(unsigned long index);\n};",
+        "fragment": "interface mixin GPUPipelineBase {\n    [NewObject] GPUBindGroupLayout getBindGroupLayout(unsigned long index);\n};",
         "type": "interface mixin",
         "name": "GPUPipelineBase",
         "inheritance": null,
@@ -4965,7 +4965,14 @@
                 "variadic": false
               }
             ],
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "NewObject",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": ""
           }
         ],
@@ -5236,34 +5243,6 @@
         "extAttrs": [],
         "partial": false
       },
-      "GPUPrimitiveTopology": {
-        "fragment": "enum GPUPrimitiveTopology {\n    \"point-list\",\n    \"line-list\",\n    \"line-strip\",\n    \"triangle-list\",\n    \"triangle-strip\",\n};",
-        "type": "enum",
-        "name": "GPUPrimitiveTopology",
-        "values": [
-          {
-            "type": "enum-value",
-            "value": "point-list"
-          },
-          {
-            "type": "enum-value",
-            "value": "line-list"
-          },
-          {
-            "type": "enum-value",
-            "value": "line-strip"
-          },
-          {
-            "type": "enum-value",
-            "value": "triangle-list"
-          },
-          {
-            "type": "enum-value",
-            "value": "triangle-strip"
-          }
-        ],
-        "extAttrs": []
-      },
       "GPUPrimitiveState": {
         "fragment": "dictionary GPUPrimitiveState {\n    GPUPrimitiveTopology topology = \"triangle-list\";\n    GPUIndexFormat stripIndexFormat;\n    GPUFrontFace frontFace = \"ccw\";\n    GPUCullMode cullMode = \"none\";\n\n    // Requires \"depth-clip-control\" feature.\n    boolean unclippedDepth = false;\n};",
         "type": "dictionary",
@@ -5360,6 +5339,34 @@
         ],
         "extAttrs": [],
         "partial": false
+      },
+      "GPUPrimitiveTopology": {
+        "fragment": "enum GPUPrimitiveTopology {\n    \"point-list\",\n    \"line-list\",\n    \"line-strip\",\n    \"triangle-list\",\n    \"triangle-strip\",\n};",
+        "type": "enum",
+        "name": "GPUPrimitiveTopology",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "point-list"
+          },
+          {
+            "type": "enum-value",
+            "value": "line-list"
+          },
+          {
+            "type": "enum-value",
+            "value": "line-strip"
+          },
+          {
+            "type": "enum-value",
+            "value": "triangle-list"
+          },
+          {
+            "type": "enum-value",
+            "value": "triangle-strip"
+          }
+        ],
+        "extAttrs": []
       },
       "GPUFrontFace": {
         "fragment": "enum GPUFrontFace {\n    \"ccw\",\n    \"cw\",\n};",
@@ -12043,7 +12050,6 @@
         "GPUObjectDescriptorBase",
         "GPUBindGroupLayoutEntry"
       ],
-      "GPUShaderStage": [],
       "GPUBindGroupLayoutEntry": [
         "GPUIndex32",
         "GPUShaderStageFlags",
@@ -12053,6 +12059,7 @@
         "GPUStorageTextureBindingLayout",
         "GPUExternalTextureBindingLayout"
       ],
+      "GPUShaderStage": [],
       "GPUBufferBindingLayout": [
         "GPUBufferBindingType",
         "GPUSize64"
@@ -12097,13 +12104,13 @@
         "GPUCompilationInfo",
         "GPUObjectBase"
       ],
-      "GPUShaderModuleCompilationHint": [
-        "GPUPipelineLayout",
-        "GPUAutoLayoutMode"
-      ],
       "GPUShaderModuleDescriptor": [
         "GPUObjectDescriptorBase",
         "GPUShaderModuleCompilationHint"
+      ],
+      "GPUShaderModuleCompilationHint": [
+        "GPUPipelineLayout",
+        "GPUAutoLayoutMode"
       ],
       "GPUCompilationMessage": [
         "GPUCompilationMessageType"
