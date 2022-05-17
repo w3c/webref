@@ -1,6 +1,4 @@
 // Source: WebGPU (https://www.w3.org/TR/webgpu/)
 [Exposed=(Window, DedicatedWorker), SecureContext]
-interface GPUValidationError {
-    constructor(DOMString message);
-    readonly attribute DOMString message;
+interface GPUValidationError : GPUError {
 };

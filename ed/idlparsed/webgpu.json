@@ -7,13 +7,11 @@
     "jsNames": {
       "constructors": {
         "Window": [
-          "GPUOutOfMemoryError",
-          "GPUValidationError",
+          "GPUError",
           "GPUUncapturedErrorEvent"
         ],
         "DedicatedWorker": [
-          "GPUOutOfMemoryError",
-          "GPUValidationError",
+          "GPUError",
           "GPUUncapturedErrorEvent"
         ]
       },
@@ -46,7 +44,9 @@
           "GPUQueue",
           "GPUQuerySet",
           "GPUCanvasContext",
-          "GPUDeviceLostInfo"
+          "GPUDeviceLostInfo",
+          "GPUOutOfMemoryError",
+          "GPUValidationError"
         ],
         "DedicatedWorker": [
           "GPUSupportedLimits",
@@ -76,7 +76,9 @@
           "GPUQueue",
           "GPUQuerySet",
           "GPUCanvasContext",
-          "GPUDeviceLostInfo"
+          "GPUDeviceLostInfo",
+          "GPUOutOfMemoryError",
+          "GPUValidationError"
         ]
       }
     },
@@ -655,7 +657,7 @@
         "partial": false
       },
       "GPU": {
-        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPU {\n    Promise<GPUAdapter?> requestAdapter(optional GPURequestAdapterOptions options = {});\n};",
+        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPU {\n    Promise<GPUAdapter?> requestAdapter(optional GPURequestAdapterOptions options = {});\n    GPUTextureFormat getPreferredCanvasFormat();\n};",
         "type": "interface",
         "name": "GPU",
         "inheritance": null,
@@ -700,6 +702,21 @@
                 "variadic": false
               }
             ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "getPreferredCanvasFormat",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUTextureFormat"
+            },
+            "arguments": [],
             "extAttrs": [],
             "special": ""
           }
@@ -10118,7 +10135,7 @@
         "extAttrs": []
       },
       "GPUCanvasContext": {
-        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUCanvasContext {\n    readonly attribute (HTMLCanvasElement or OffscreenCanvas) canvas;\n\n    undefined configure(GPUCanvasConfiguration configuration);\n    undefined unconfigure();\n\n    GPUTextureFormat getPreferredFormat(GPUAdapter adapter);\n    GPUTexture getCurrentTexture();\n};",
+        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUCanvasContext {\n    readonly attribute (HTMLCanvasElement or OffscreenCanvas) canvas;\n\n    undefined configure(GPUCanvasConfiguration configuration);\n    undefined unconfigure();\n\n    GPUTexture getCurrentTexture();\n};",
         "type": "interface",
         "name": "GPUCanvasContext",
         "inheritance": null,
@@ -10204,38 +10221,6 @@
           },
           {
             "type": "operation",
-            "name": "getPreferredFormat",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "GPUTextureFormat"
-            },
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "adapter",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "GPUAdapter"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              }
-            ],
-            "extAttrs": [],
-            "special": ""
-          },
-          {
-            "type": "operation",
             "name": "getCurrentTexture",
             "idlType": {
               "type": "return-type",
@@ -10293,7 +10278,7 @@
         "extAttrs": []
       },
       "GPUCanvasConfiguration": {
-        "fragment": "dictionary GPUCanvasConfiguration {\n    required GPUDevice device;\n    required GPUTextureFormat format;\n    GPUTextureUsageFlags usage = 0x10;  // GPUTextureUsage.RENDER_ATTACHMENT\n    sequence<GPUTextureFormat> viewFormats = [];\n    GPUPredefinedColorSpace colorSpace = \"srgb\";\n    GPUCanvasCompositingAlphaMode compositingAlphaMode = \"opaque\";\n    GPUExtent3D size;\n};",
+        "fragment": "dictionary GPUCanvasConfiguration {\n    required GPUDevice device;\n    required GPUTextureFormat format;\n    GPUTextureUsageFlags usage = 0x10;  // GPUTextureUsage.RENDER_ATTACHMENT\n    sequence<GPUTextureFormat> viewFormats = [];\n    GPUPredefinedColorSpace colorSpace = \"srgb\";\n    GPUCanvasCompositingAlphaMode compositingAlphaMode = \"opaque\";\n};",
         "type": "dictionary",
         "name": "GPUCanvasConfiguration",
         "inheritance": null,
@@ -10408,21 +10393,6 @@
               "value": "opaque"
             },
             "required": false
-          },
-          {
-            "type": "field",
-            "name": "size",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "GPUExtent3D"
-            },
-            "default": null,
-            "required": false
           }
         ],
         "extAttrs": [],
@@ -10536,48 +10506,10 @@
         ],
         "extAttrs": []
       },
-      "GPUOutOfMemoryError": {
-        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUOutOfMemoryError {\n    constructor();\n};",
+      "GPUError": {
+        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUError {\n    constructor(DOMString message);\n    readonly attribute DOMString message;\n};",
         "type": "interface",
-        "name": "GPUOutOfMemoryError",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "constructor",
-            "arguments": [],
-            "extAttrs": []
-          }
-        ],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier-list",
-              "value": [
-                {
-                  "value": "Window"
-                },
-                {
-                  "value": "DedicatedWorker"
-                }
-              ]
-            },
-            "arguments": []
-          },
-          {
-            "type": "extended-attribute",
-            "name": "SecureContext",
-            "rhs": null,
-            "arguments": []
-          }
-        ],
-        "partial": false
-      },
-      "GPUValidationError": {
-        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUValidationError {\n    constructor(DOMString message);\n    readonly attribute DOMString message;\n};",
-        "type": "interface",
-        "name": "GPUValidationError",
+        "name": "GPUError",
         "inheritance": null,
         "members": [
           {
@@ -10644,36 +10576,69 @@
         ],
         "partial": false
       },
-      "GPUError": {
-        "fragment": "typedef (GPUOutOfMemoryError or GPUValidationError) GPUError;",
-        "type": "typedef",
-        "name": "GPUError",
-        "idlType": {
-          "type": "typedef-type",
-          "extAttrs": [],
-          "generic": "",
-          "nullable": false,
-          "union": true,
-          "idlType": [
-            {
-              "type": null,
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "GPUOutOfMemoryError"
+      "GPUOutOfMemoryError": {
+        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUOutOfMemoryError : GPUError {\n};",
+        "type": "interface",
+        "name": "GPUOutOfMemoryError",
+        "inheritance": "GPUError",
+        "members": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "DedicatedWorker"
+                }
+              ]
             },
-            {
-              "type": null,
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "GPUValidationError"
-            }
-          ]
-        },
-        "extAttrs": []
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "GPUValidationError": {
+        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUValidationError : GPUError {\n};",
+        "type": "interface",
+        "name": "GPUValidationError",
+        "inheritance": "GPUError",
+        "members": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "DedicatedWorker"
+                }
+              ]
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
+          }
+        ],
+        "partial": false
       },
       "GPUUncapturedErrorEvent": {
         "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUUncapturedErrorEvent : Event {\n    constructor(\n        DOMString type,\n        GPUUncapturedErrorEventInit gpuUncapturedErrorEventInitDict\n    );\n    readonly attribute GPUError error;\n};",
@@ -11874,6 +11839,7 @@
         "GPUQuerySet",
         "GPUCanvasContext",
         "GPUDeviceLostInfo",
+        "GPUError",
         "GPUOutOfMemoryError",
         "GPUValidationError",
         "GPUUncapturedErrorEvent"
@@ -11912,6 +11878,7 @@
         "GPUQuerySet",
         "GPUCanvasContext",
         "GPUDeviceLostInfo",
+        "GPUError",
         "GPUOutOfMemoryError",
         "GPUValidationError",
         "GPUUncapturedErrorEvent"
@@ -11933,7 +11900,8 @@
       ],
       "GPU": [
         "GPUAdapter",
-        "GPURequestAdapterOptions"
+        "GPURequestAdapterOptions",
+        "GPUTextureFormat"
       ],
       "GPURequestAdapterOptions": [
         "GPUPowerPreference"
@@ -12377,8 +12345,6 @@
         "HTMLCanvasElement",
         "OffscreenCanvas",
         "GPUCanvasConfiguration",
-        "GPUTextureFormat",
-        "GPUAdapter",
         "GPUTexture"
       ],
       "GPUCanvasConfiguration": [
@@ -12386,14 +12352,18 @@
         "GPUTextureFormat",
         "GPUTextureUsageFlags",
         "GPUPredefinedColorSpace",
-        "GPUCanvasCompositingAlphaMode",
-        "GPUExtent3D"
+        "GPUCanvasCompositingAlphaMode"
       ],
       "GPUDeviceLostInfo": [
         "GPUDeviceLostReason"
       ],
-      "GPUOutOfMemoryError": [],
-      "GPUValidationError": [],
+      "GPUError": [],
+      "GPUOutOfMemoryError": [
+        "GPUError"
+      ],
+      "GPUValidationError": [
+        "GPUError"
+      ],
       "GPUUncapturedErrorEvent": [
         "Event",
         "GPUUncapturedErrorEventInit",

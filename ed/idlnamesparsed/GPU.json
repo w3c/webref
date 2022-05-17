@@ -6,7 +6,7 @@
       "title": "WebGPU",
       "url": "https://www.w3.org/TR/webgpu/"
     },
-    "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPU {\n    Promise<GPUAdapter?> requestAdapter(optional GPURequestAdapterOptions options = {});\n};",
+    "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPU {\n    Promise<GPUAdapter?> requestAdapter(optional GPURequestAdapterOptions options = {});\n    GPUTextureFormat getPreferredCanvasFormat();\n};",
     "href": "https://gpuweb.github.io/gpuweb/#gpu"
   },
   "extended": [],
