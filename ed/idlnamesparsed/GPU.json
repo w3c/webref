@@ -6,7 +6,7 @@
       "title": "WebGPU",
       "url": "https://www.w3.org/TR/webgpu/"
     },
-    "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPU {\n    Promise<GPUAdapter?> requestAdapter(optional GPURequestAdapterOptions options = {});\n};",
+    "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPU {\n    Promise<GPUAdapter?> requestAdapter(optional GPURequestAdapterOptions options = {});\n    GPUTextureFormat getPreferredCanvasFormat();\n};",
     "href": "https://gpuweb.github.io/gpuweb/#gpu"
   },
   "extended": [],
@@ -39,6 +39,27 @@
         "linkingText": [
           "requestAdapter(options)",
           "requestAdapter()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "GPU"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "gpu-interface",
+          "href": "https://gpuweb.github.io/gpuweb/#gpu-interface",
+          "title": "GPU",
+          "number": "4.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpu-getpreferredcanvasformat",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpu-getpreferredcanvasformat",
+        "linkingText": [
+          "getPreferredCanvasFormat()"
         ],
         "localLinkingText": [],
         "type": "method",

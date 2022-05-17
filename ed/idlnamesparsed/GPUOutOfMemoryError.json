@@ -6,11 +6,25 @@
       "title": "WebGPU",
       "url": "https://www.w3.org/TR/webgpu/"
     },
-    "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUOutOfMemoryError {\n    constructor();\n};",
+    "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUOutOfMemoryError : GPUError {\n};",
     "href": "https://gpuweb.github.io/gpuweb/#gpuoutofmemoryerror"
   },
   "extended": [],
-  "inheritance": null,
+  "inheritance": {
+    "name": "GPUError",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "WebGPU",
+        "url": "https://www.w3.org/TR/webgpu/"
+      },
+      "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUError {\n    constructor(DOMString message);\n    readonly attribute DOMString message;\n};",
+      "href": "https://gpuweb.github.io/gpuweb/#gpuerror"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
   "includes": [],
   "dfns": {
     "https://www.w3.org/TR/webgpu/": [
@@ -34,16 +48,35 @@
         "definedIn": "pre"
       },
       {
-        "id": "dom-gpuoutofmemoryerror-gpuoutofmemoryerror",
-        "href": "https://gpuweb.github.io/gpuweb/#dom-gpuoutofmemoryerror-gpuoutofmemoryerror",
+        "id": "gpuerror",
+        "href": "https://gpuweb.github.io/gpuweb/#gpuerror",
         "linkingText": [
-          "GPUOutOfMemoryError()",
-          "constructor()"
+          "GPUError"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "error-scopes",
+          "href": "https://gpuweb.github.io/gpuweb/#error-scopes",
+          "title": "Error Scopes",
+          "number": "21.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gpuerror-gpuerror",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpuerror-gpuerror",
+        "linkingText": [
+          "GPUError(message)",
+          "constructor(message)"
         ],
         "localLinkingText": [],
         "type": "constructor",
         "for": [
-          "GPUOutOfMemoryError"
+          "GPUError"
         ],
         "access": "public",
         "informative": false,
@@ -54,6 +87,27 @@
           "number": "21.2"
         },
         "definedIn": "pre"
+      },
+      {
+        "id": "dom-gpuerror-message",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpuerror-message",
+        "linkingText": [
+          "message"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "GPUError"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "error-scopes",
+          "href": "https://gpuweb.github.io/gpuweb/#error-scopes",
+          "title": "Error Scopes",
+          "number": "21.2"
+        },
+        "definedIn": "dt"
       }
     ]
   }

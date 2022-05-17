@@ -6,7 +6,7 @@
       "title": "WebGPU",
       "url": "https://www.w3.org/TR/webgpu/"
     },
-    "fragment": "dictionary GPUCanvasConfiguration {\n    required GPUDevice device;\n    required GPUTextureFormat format;\n    GPUTextureUsageFlags usage = 0x10;  // GPUTextureUsage.RENDER_ATTACHMENT\n    sequence<GPUTextureFormat> viewFormats = [];\n    GPUPredefinedColorSpace colorSpace = \"srgb\";\n    GPUCanvasCompositingAlphaMode compositingAlphaMode = \"opaque\";\n    GPUExtent3D size;\n};",
+    "fragment": "dictionary GPUCanvasConfiguration {\n    required GPUDevice device;\n    required GPUTextureFormat format;\n    GPUTextureUsageFlags usage = 0x10;  // GPUTextureUsage.RENDER_ATTACHMENT\n    sequence<GPUTextureFormat> viewFormats = [];\n    GPUPredefinedColorSpace colorSpace = \"srgb\";\n    GPUCanvasCompositingAlphaMode compositingAlphaMode = \"opaque\";\n};",
     "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpucanvasconfiguration"
   },
   "extended": [],
@@ -143,27 +143,6 @@
         "href": "https://gpuweb.github.io/gpuweb/#dom-gpucanvasconfiguration-compositingalphamode",
         "linkingText": [
           "compositingAlphaMode"
-        ],
-        "localLinkingText": [],
-        "type": "dict-member",
-        "for": [
-          "GPUCanvasConfiguration"
-        ],
-        "access": "public",
-        "informative": false,
-        "heading": {
-          "id": "canvas-configuration",
-          "href": "https://gpuweb.github.io/gpuweb/#canvas-configuration",
-          "title": "GPUCanvasConfiguration",
-          "number": "20.3"
-        },
-        "definedIn": "pre"
-      },
-      {
-        "id": "dom-gpucanvasconfiguration-size",
-        "href": "https://gpuweb.github.io/gpuweb/#dom-gpucanvasconfiguration-size",
-        "linkingText": [
-          "size"
         ],
         "localLinkingText": [],
         "type": "dict-member",

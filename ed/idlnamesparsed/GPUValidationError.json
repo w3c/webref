@@ -6,11 +6,25 @@
       "title": "WebGPU",
       "url": "https://www.w3.org/TR/webgpu/"
     },
-    "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUValidationError {\n    constructor(DOMString message);\n    readonly attribute DOMString message;\n};",
+    "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUValidationError : GPUError {\n};",
     "href": "https://gpuweb.github.io/gpuweb/#gpuvalidationerror"
   },
   "extended": [],
-  "inheritance": null,
+  "inheritance": {
+    "name": "GPUError",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "WebGPU",
+        "url": "https://www.w3.org/TR/webgpu/"
+      },
+      "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUError {\n    constructor(DOMString message);\n    readonly attribute DOMString message;\n};",
+      "href": "https://gpuweb.github.io/gpuweb/#gpuerror"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
   "includes": [],
   "dfns": {
     "https://www.w3.org/TR/webgpu/": [
@@ -34,16 +48,35 @@
         "definedIn": "pre"
       },
       {
-        "id": "dom-gpuvalidationerror-gpuvalidationerror",
-        "href": "https://gpuweb.github.io/gpuweb/#dom-gpuvalidationerror-gpuvalidationerror",
+        "id": "gpuerror",
+        "href": "https://gpuweb.github.io/gpuweb/#gpuerror",
         "linkingText": [
-          "GPUValidationError(message)",
+          "GPUError"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "error-scopes",
+          "href": "https://gpuweb.github.io/gpuweb/#error-scopes",
+          "title": "Error Scopes",
+          "number": "21.2"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-gpuerror-gpuerror",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpuerror-gpuerror",
+        "linkingText": [
+          "GPUError(message)",
           "constructor(message)"
         ],
         "localLinkingText": [],
         "type": "constructor",
         "for": [
-          "GPUValidationError"
+          "GPUError"
         ],
         "access": "public",
         "informative": false,
@@ -56,15 +89,15 @@
         "definedIn": "pre"
       },
       {
-        "id": "dom-gpuvalidationerror-message",
-        "href": "https://gpuweb.github.io/gpuweb/#dom-gpuvalidationerror-message",
+        "id": "dom-gpuerror-message",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpuerror-message",
         "linkingText": [
           "message"
         ],
         "localLinkingText": [],
         "type": "attribute",
         "for": [
-          "GPUValidationError"
+          "GPUError"
         ],
         "access": "public",
         "informative": false,
@@ -74,7 +107,7 @@
           "title": "Error Scopes",
           "number": "21.2"
         },
-        "definedIn": "pre"
+        "definedIn": "dt"
       }
     ]
   }
