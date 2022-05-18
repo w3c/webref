@@ -11,11 +11,6 @@ partial interface MediaDevices {
   attribute EventHandler oncaptureaction;
 };
 
-// Source: Capture Handle - Bootstrapping Collaboration when Screensharing (https://w3c.github.io/mediacapture-handle/identity/)
-partial interface MediaDevices {
-  undefined setCaptureHandleConfig(optional CaptureHandleConfig config = {});
-};
-
 // Source: Viewport Capture (https://w3c.github.io/mediacapture-viewport/)
 partial interface MediaDevices {
   Promise<MediaStream> getViewportMedia(
