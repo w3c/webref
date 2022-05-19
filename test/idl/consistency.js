@@ -64,6 +64,28 @@ function isOverloadedOperation(a, b) {
   return true;
 }
 
+// Helper to test if two members define an operation with the same identifier,
+// one of them being a static operation and the other a regular one. This is
+// allowed in Web IDL, see https://github.com/whatwg/webidl/issues/1097
+function isAllowedOperationWithSameIdentifier(a, b) {
+  if (a.type !== 'operation') {
+    return false;
+  }
+  if (a.type !== b.type) {
+    return false;
+  }
+  if (a.name !== b.name) {
+    return false;
+  }
+  if (a.special !== 'static' && b.special !== 'static') {
+    return false;
+  }
+  if (a.special === b.special) {
+    return false;
+  }
+  return true;
+}
+
 function describeDfn(dfn) {
   let desc = dfn.type;
   if (dfn.name) {
@@ -159,6 +181,10 @@ function merge(dfns, partials, includes) {
         // Non-overlapping exposure sets are OK. Assume it's OK if either
         // members has an [Exposed] extended attribute. TODO: do better.
         if (getExtAttr(firstMember, 'Exposed') || getExtAttr(member, 'Exposed')) {
+          continue;
+        }
+        // A static operation that has the same identifier as a regular one is OK
+        if (isAllowedOperationWithSameIdentifier(member, firstMember)) {
           continue;
         }
         assert.fail(`duplicate definition of ${dfn.name} member ${member.name}`);
