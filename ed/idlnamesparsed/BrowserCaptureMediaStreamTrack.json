@@ -31,6 +31,20 @@
       },
       {
         "spec": {
+          "title": "Capture Handle - Bootstrapping Collaboration when Screensharing",
+          "url": "https://www.w3.org/TR/capture-handle-identity/"
+        },
+        "fragment": "partial interface MediaStreamTrack {\n  CaptureHandle? getCaptureHandle();\n};"
+      },
+      {
+        "spec": {
+          "title": "Capture Handle - Bootstrapping Collaboration when Screensharing",
+          "url": "https://www.w3.org/TR/capture-handle-identity/"
+        },
+        "fragment": "partial interface MediaStreamTrack {\n  attribute EventHandler oncapturehandlechange;\n};"
+      },
+      {
+        "spec": {
           "title": "MediaStreamTrack Content Hints",
           "url": "https://www.w3.org/TR/mst-content-hint/"
         },
@@ -548,6 +562,56 @@
           "href": "https://w3c.github.io/mediacapture-handle/actions/#capture-handle-get-supported-actions",
           "title": "Enumerating supported actions and triggering them",
           "number": "3.2.1"
+        },
+        "definedIn": "dt"
+      }
+    ],
+    "https://www.w3.org/TR/capture-handle-identity/": [
+      {
+        "id": "dom-mediastreamtrack-getcapturehandle",
+        "href": "https://w3c.github.io/mediacapture-handle/identity/#dom-mediastreamtrack-getcapturehandle",
+        "linkingText": [
+          "getCaptureHandle()"
+        ],
+        "localLinkingText": [
+          "MediaStreamTrack.getCaptureHandle",
+          "MediaStreamTrack.getCaptureHandle()",
+          "getCaptureHandle"
+        ],
+        "type": "method",
+        "for": [
+          "MediaStreamTrack"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "capture-handle-via-getcapturehandle",
+          "href": "https://w3c.github.io/mediacapture-handle/identity/#capture-handle-via-getcapturehandle",
+          "title": "MediaStreamTrack.getCaptureHandle()",
+          "number": "5.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-mediastreamtrack-oncapturehandlechange",
+        "href": "https://w3c.github.io/mediacapture-handle/identity/#dom-mediastreamtrack-oncapturehandlechange",
+        "linkingText": [
+          "oncapturehandlechange"
+        ],
+        "localLinkingText": [
+          "MediaStreamTrack.oncapturehandlechange"
+        ],
+        "type": "attribute",
+        "for": [
+          "MediaStreamTrack"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "oncapturehandlechange",
+          "href": "https://w3c.github.io/mediacapture-handle/identity/#oncapturehandlechange",
+          "title": "oncapturehandlechange",
+          "number": "5.3.2"
         },
         "definedIn": "dt"
       }

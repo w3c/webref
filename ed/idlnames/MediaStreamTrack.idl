@@ -24,6 +24,16 @@ partial interface MediaStreamTrack {
   Promise<undefined> sendCaptureAction(CaptureAction action);
 };
 
+// Source: Capture Handle - Bootstrapping Collaboration when Screensharing (https://www.w3.org/TR/capture-handle-identity/)
+partial interface MediaStreamTrack {
+  CaptureHandle? getCaptureHandle();
+};
+
+// Source: Capture Handle - Bootstrapping Collaboration when Screensharing (https://www.w3.org/TR/capture-handle-identity/)
+partial interface MediaStreamTrack {
+  attribute EventHandler oncapturehandlechange;
+};
+
 // Source: MediaStreamTrack Content Hints (https://www.w3.org/TR/mst-content-hint/)
 partial interface MediaStreamTrack {
   attribute DOMString contentHint;

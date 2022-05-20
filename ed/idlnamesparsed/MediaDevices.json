@@ -33,6 +33,13 @@
     },
     {
       "spec": {
+        "title": "Capture Handle - Bootstrapping Collaboration when Screensharing",
+        "url": "https://www.w3.org/TR/capture-handle-identity/"
+      },
+      "fragment": "partial interface MediaDevices {\n  undefined setCaptureHandleConfig(optional CaptureHandleConfig config = {});\n};"
+    },
+    {
+      "spec": {
         "title": "Region Capture",
         "url": "https://www.w3.org/TR/mediacapture-region/"
       },
@@ -288,6 +295,34 @@
           "id": "methods-0",
           "href": "https://w3c.github.io/mediacapture-output/#methods-0",
           "title": "Methods"
+        },
+        "definedIn": "dt"
+      }
+    ],
+    "https://www.w3.org/TR/capture-handle-identity/": [
+      {
+        "id": "dom-mediadevices-setcapturehandleconfig",
+        "href": "https://w3c.github.io/mediacapture-handle/identity/#dom-mediadevices-setcapturehandleconfig",
+        "linkingText": [
+          "setCaptureHandleConfig()",
+          "setCaptureHandleConfig(config)"
+        ],
+        "localLinkingText": [
+          "MediaDevices.setCaptureHandleConfig",
+          "MediaDevices.setCaptureHandleConfig()",
+          "setCaptureHandleConfig"
+        ],
+        "type": "method",
+        "for": [
+          "MediaDevices"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "set-capture-handle-config",
+          "href": "https://w3c.github.io/mediacapture-handle/identity/#set-capture-handle-config",
+          "title": "MediaDevices.setCaptureHandleConfig()",
+          "number": "4.2"
         },
         "definedIn": "dt"
       }
