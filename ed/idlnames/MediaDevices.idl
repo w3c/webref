@@ -22,6 +22,11 @@ partial interface MediaDevices {
   Promise<MediaDeviceInfo> selectAudioOutput(optional AudioOutputOptions options = {});
 };
 
+// Source: Capture Handle - Bootstrapping Collaboration when Screensharing (https://www.w3.org/TR/capture-handle-identity/)
+partial interface MediaDevices {
+  undefined setCaptureHandleConfig(optional CaptureHandleConfig config = {});
+};
+
 // Source: Region Capture (https://www.w3.org/TR/mediacapture-region/)
 partial interface MediaDevices {
   Promise<CropTarget>
