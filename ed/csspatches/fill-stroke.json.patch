@@ -1,0 +1,65 @@
+From ed95a53a1bc1d7ee38f0e662ba3f1e65acbd94b2 Mon Sep 17 00:00:00 2001
+From: Francois Daoust <fd@tidoust.net>
+Date: Fri, 20 May 2022 17:18:37 +0200
+Subject: [PATCH] Drop fill and stroke properties dfns from fill-stroke spec
+
+The "<'background'> with modifications" value is not proper CSS grammar.
+Dropping the definitions means we'll fall back on the SVG ones for now.
+
+Tracked in:
+https://github.com/w3c/csswg-drafts/issues/7285
+---
+ ed/css/fill-stroke.json | 30 ------------------------------
+ 1 file changed, 30 deletions(-)
+
+diff --git a/ed/css/fill-stroke.json b/ed/css/fill-stroke.json
+index afff13433..819635366 100644
+--- a/ed/css/fill-stroke.json
++++ b/ed/css/fill-stroke.json
+@@ -132,21 +132,6 @@
+         "fillRepeat"
+       ]
+     },
+-    "fill": {
+-      "name": "fill",
+-      "value": "<'background'> with modifications",
+-      "initial": "See individual properties",
+-      "appliesTo": "See individual properties",
+-      "inherited": "See individual properties",
+-      "percentages": "N/A",
+-      "computedValue": "See individual properties",
+-      "canonicalOrder": "per grammar",
+-      "media": "visual",
+-      "animatable": "See individual properties",
+-      "styleDeclaration": [
+-        "fill"
+-      ]
+-    },
+     "fill-opacity": {
+       "name": "fill-opacity",
+       "value": "<'opacity'>",
+@@ -419,21 +404,6 @@
+         "strokeRepeat"
+       ]
+     },
+-    "stroke": {
+-      "name": "stroke",
+-      "value": "<'background'> with modifications",
+-      "initial": "See individual properties",
+-      "appliesTo": "See individual properties",
+-      "inherited": "See individual properties",
+-      "percentages": "N/A",
+-      "computedValue": "See individual properties",
+-      "canonicalOrder": "per grammar",
+-      "media": "visual",
+-      "animatable": "See individual properties",
+-      "styleDeclaration": [
+-        "stroke"
+-      ]
+-    },
+     "stroke-opacity": {
+       "name": "stroke-opacity",
+       "value": "<'opacity'>",
+-- 
+2.36.0.windows.1
+
