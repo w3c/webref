@@ -227,7 +227,7 @@
       "number": "3.2"
     },
     {
-      "id": "sec-temporal-plaindate-prototype",
+      "id": "sec-temporal.plaindate.prototype",
       "title": "Temporal.PlainDate.prototype",
       "level": 3,
       "number": "3.2.1"
@@ -551,7 +551,7 @@
       "number": "4.2"
     },
     {
-      "id": "sec-temporal-plaintime-prototype",
+      "id": "sec-temporal.plaintime.prototype",
       "title": "Temporal.PlainTime.prototype",
       "level": 3,
       "number": "4.2.1"
@@ -839,7 +839,7 @@
       "number": "5.2"
     },
     {
-      "id": "sec-temporal-plaindatetime-prototype",
+      "id": "sec-temporal.plaindatetime.prototype",
       "title": "Temporal.PlainDateTime.prototype",
       "level": 3,
       "number": "5.2.1"
@@ -1223,7 +1223,7 @@
       "number": "6.2"
     },
     {
-      "id": "sec-temporal-zoneddatetime-prototype",
+      "id": "sec-temporal.zoneddatetime.prototype",
       "title": "Temporal.ZonedDateTime.prototype",
       "level": 3,
       "number": "6.2.1"
@@ -1649,7 +1649,7 @@
       "number": "7.2"
     },
     {
-      "id": "sec-temporal-duration-prototype",
+      "id": "sec-temporal.duration.prototype",
       "title": "Temporal.Duration.prototype",
       "level": 3,
       "number": "7.2.1"
@@ -2033,7 +2033,7 @@
       "number": "8.2"
     },
     {
-      "id": "sec-temporal-instant-prototype",
+      "id": "sec-temporal.instant.prototype",
       "title": "Temporal.Instant.prototype",
       "level": 3,
       "number": "8.2.1"
@@ -2297,7 +2297,7 @@
       "number": "9.2"
     },
     {
-      "id": "sec-temporal-plainyearmonth-prototype",
+      "id": "sec-temporal.plainyearmonth.prototype",
       "title": "Temporal.PlainYearMonth.prototype",
       "level": 3,
       "number": "9.2.1"
@@ -2549,7 +2549,7 @@
       "number": "10.2"
     },
     {
-      "id": "sec-temporal-plainmonthday-prototype",
+      "id": "sec-temporal.plainmonthday.prototype",
       "title": "Temporal.PlainMonthDay.prototype",
       "level": 3,
       "number": "10.2.1"
@@ -2723,7 +2723,7 @@
       "number": "11.3"
     },
     {
-      "id": "sec-temporal-timezone-prototype",
+      "id": "sec-temporal.timezone.prototype",
       "title": "Temporal.TimeZone.prototype",
       "level": 3,
       "number": "11.3.1"
@@ -3215,7 +3215,7 @@
       "number": "12.4"
     },
     {
-      "id": "sec-temporal-calendar-prototype",
+      "id": "sec-temporal.calendar.prototype",
       "title": "Temporal.Calendar.prototype",
       "level": 3,
       "number": "12.4.1"
@@ -3551,124 +3551,130 @@
       "number": "13.27"
     },
     {
-      "id": "sec-temporal-roundhalfawayfromzero",
-      "title": "RoundHalfAwayFromZero ( x )",
+      "id": "sec-temporal-getunsignedroundingmode",
+      "title": "GetUnsignedRoundingMode ( roundingMode, isNegative )",
       "level": 2,
       "number": "13.28"
+    },
+    {
+      "id": "sec-temporal-applyunsignedroundingmode",
+      "title": "ApplyUnsignedRoundingMode ( x, r1, r2, unsignedRoundingMode )",
+      "level": 2,
+      "number": "13.29"
     },
     {
       "id": "sec-temporal-roundnumbertoincrement",
       "title": "RoundNumberToIncrement ( x, increment, roundingMode )",
       "level": 2,
-      "number": "13.29"
+      "number": "13.30"
     },
     {
       "id": "sec-temporal-iso8601grammar",
       "title": "ISO 8601 grammar",
       "level": 2,
-      "number": "13.30"
+      "number": "13.31"
     },
     {
       "id": "sec-temporal-parseisodatetime",
       "title": "ParseISODateTime ( isoString )",
       "level": 2,
-      "number": "13.31"
+      "number": "13.32"
     },
     {
       "id": "sec-temporal-parsetemporalinstantstring",
       "title": "ParseTemporalInstantString ( isoString )",
       "level": 2,
-      "number": "13.32"
+      "number": "13.33"
     },
     {
       "id": "sec-temporal-parsetemporalzoneddatetimestring",
       "title": "ParseTemporalZonedDateTimeString ( isoString )",
       "level": 2,
-      "number": "13.33"
+      "number": "13.34"
     },
     {
       "id": "sec-temporal-parsetemporalcalendarstring",
       "title": "ParseTemporalCalendarString ( isoString )",
       "level": 2,
-      "number": "13.34"
+      "number": "13.35"
     },
     {
       "id": "sec-temporal-parsetemporaldatestring",
       "title": "ParseTemporalDateString ( isoString )",
       "level": 2,
-      "number": "13.35"
+      "number": "13.36"
     },
     {
       "id": "sec-temporal-parsetemporaldatetimestring",
       "title": "ParseTemporalDateTimeString ( isoString )",
       "level": 2,
-      "number": "13.36"
+      "number": "13.37"
     },
     {
       "id": "sec-temporal-parsetemporaldurationstring",
       "title": "ParseTemporalDurationString ( isoString )",
       "level": 2,
-      "number": "13.37"
+      "number": "13.38"
     },
     {
       "id": "sec-temporal-parsetemporalmonthdaystring",
       "title": "ParseTemporalMonthDayString ( isoString )",
       "level": 2,
-      "number": "13.38"
+      "number": "13.39"
     },
     {
       "id": "sec-temporal-parsetemporalrelativetostring",
       "title": "ParseTemporalRelativeToString ( isoString )",
       "level": 2,
-      "number": "13.39"
+      "number": "13.40"
     },
     {
       "id": "sec-temporal-parsetemporaltimestring",
       "title": "ParseTemporalTimeString ( isoString )",
       "level": 2,
-      "number": "13.40"
+      "number": "13.41"
     },
     {
       "id": "sec-temporal-parsetemporaltimezonestring",
       "title": "ParseTemporalTimeZoneString ( isoString )",
       "level": 2,
-      "number": "13.41"
+      "number": "13.42"
     },
     {
       "id": "sec-temporal-parsetemporalyearmonthstring",
       "title": "ParseTemporalYearMonthString ( isoString )",
       "level": 2,
-      "number": "13.42"
+      "number": "13.43"
     },
     {
       "id": "sec-temporal-topositiveinteger",
       "title": "ToPositiveInteger ( argument )",
       "level": 2,
-      "number": "13.43"
+      "number": "13.44"
     },
     {
       "id": "sec-temporal-tointegerthrowoninfinity",
       "title": "ToIntegerThrowOnInfinity ( argument )",
       "level": 2,
-      "number": "13.44"
+      "number": "13.45"
     },
     {
       "id": "sec-temporal-tointegerwithoutrounding",
       "title": "ToIntegerWithoutRounding ( argument )",
       "level": 2,
-      "number": "13.45"
+      "number": "13.46"
     },
     {
       "id": "sec-temporal-preparetemporalfields",
       "title": "PrepareTemporalFields ( fields, fieldNames, requiredFields )",
       "level": 2,
-      "number": "13.46"
+      "number": "13.47"
     },
     {
       "id": "sec-temporal-preparepartialtemporalfields",
       "title": "PreparePartialTemporalFields ( fields, fieldNames )",
       "level": 2,
-      "number": "13.47"
+      "number": "13.48"
     },
     {
       "id": "sec-temporal-legacy-date-objects",

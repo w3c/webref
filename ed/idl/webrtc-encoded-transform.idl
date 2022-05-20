@@ -120,7 +120,7 @@ interface RTCRtpScriptTransformer {
     readonly attribute ReadableStream readable;
     readonly attribute WritableStream writable;
     readonly attribute any options;
-    Promise<undefined> generateKeyFrame(optional sequence <DOMString> rids);
+    Promise<unsigned long long> generateKeyFrame(optional DOMString rid);
     Promise<undefined> sendKeyFrameRequest();
 };
 

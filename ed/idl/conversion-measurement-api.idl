@@ -18,13 +18,3 @@ dictionary AttributionSourceParams {
   long long attributionExpiry;
   long long attributionSourcePriority;
 };
-
-[Exposed=Window, SecureContext]
-interface AttributionReporting {
-  Promise<undefined> registerSource(USVString url);
-};
-
-[SecureContext]
-partial interface Window {
-  readonly attribute AttributionReporting attributionReporting;
-};

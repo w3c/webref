@@ -6,7 +6,7 @@
       "title": "Web Neural Network API",
       "url": "https://www.w3.org/TR/webnn/"
     },
-    "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface MLGraphBuilder {\n  // Construct the graph builder from the context.\n  constructor(MLContext context);\n\n  // Create an operand for a graph input.\n  MLOperand input(DOMString name, MLOperandDescriptor desc);\n\n  // Create an operand for a graph constant.\n  MLOperand constant(MLOperandDescriptor desc, MLBufferView bufferView);\n\n  // Create a single-value operand from the specified number of the specified type.\n  MLOperand constant(double value, optional MLOperandType type = \"float32\");\n\n  // Compile the graph up to the specified output operands\n  [Exposed=(DedicatedWorker)]\n  MLGraph build(MLNamedOperands outputs);\n};",
+    "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface MLGraphBuilder {\n  // Construct the graph builder from the context.\n  constructor(MLContext context);\n\n  // Create an operand for a graph input.\n  MLOperand input(DOMString name, MLOperandDescriptor desc);\n\n  // Create an operand for a graph constant.\n  MLOperand constant(MLOperandDescriptor desc, MLBufferView bufferView);\n\n  // Create a single-value operand from the specified number of the specified type.\n  MLOperand constant(double value, optional MLOperandType type = \"float32\");\n\n  // Compile the graph up to the specified output operands synchronously.\n  [Exposed=(DedicatedWorker)]\n  MLGraph build(MLNamedOperands outputs);\n\n  // Compile the graph up to the specified output operands asynchronously.\n  Promise<MLGraph> buildAsync(MLNamedOperands outputs);\n};",
     "href": "https://webmachinelearning.github.io/webnn/#mlgraphbuilder"
   },
   "extended": [
@@ -349,6 +349,27 @@
         "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-build",
         "linkingText": [
           "build(outputs)"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "MLGraphBuilder"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-mlgraphbuilder",
+          "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder",
+          "title": "MLGraphBuilder",
+          "number": "7.7"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-mlgraphbuilder-buildasync",
+        "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-buildasync",
+        "linkingText": [
+          "buildAsync(outputs)"
         ],
         "localLinkingText": [],
         "type": "method",

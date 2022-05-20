@@ -83,6 +83,7 @@ enum RequestRedirect { "follow", "error", "manual" };
 
   [NewObject] static Response error();
   [NewObject] static Response redirect(USVString url, optional unsigned short status = 302);
+  [NewObject] static Response json(any data, optional ResponseInit init = {});
 
   readonly attribute ResponseType type;
 

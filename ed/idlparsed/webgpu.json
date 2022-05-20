@@ -7,11 +7,13 @@
     "jsNames": {
       "constructors": {
         "Window": [
-          "GPUError",
+          "GPUOutOfMemoryError",
+          "GPUValidationError",
           "GPUUncapturedErrorEvent"
         ],
         "DedicatedWorker": [
-          "GPUError",
+          "GPUOutOfMemoryError",
+          "GPUValidationError",
           "GPUUncapturedErrorEvent"
         ]
       },
@@ -45,8 +47,7 @@
           "GPUQuerySet",
           "GPUCanvasContext",
           "GPUDeviceLostInfo",
-          "GPUOutOfMemoryError",
-          "GPUValidationError"
+          "GPUError"
         ],
         "DedicatedWorker": [
           "GPUSupportedLimits",
@@ -77,8 +78,7 @@
           "GPUQuerySet",
           "GPUCanvasContext",
           "GPUDeviceLostInfo",
-          "GPUOutOfMemoryError",
-          "GPUValidationError"
+          "GPUError"
         ]
       }
     },
@@ -10507,33 +10507,11 @@
         "extAttrs": []
       },
       "GPUError": {
-        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUError {\n    constructor(DOMString message);\n    readonly attribute DOMString message;\n};",
+        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUError {\n    readonly attribute DOMString message;\n};",
         "type": "interface",
         "name": "GPUError",
         "inheritance": null,
         "members": [
-          {
-            "type": "constructor",
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "message",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "DOMString"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              }
-            ],
-            "extAttrs": []
-          },
           {
             "type": "attribute",
             "name": "message",
@@ -10577,11 +10555,34 @@
         "partial": false
       },
       "GPUOutOfMemoryError": {
-        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUOutOfMemoryError : GPUError {\n};",
+        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUOutOfMemoryError : GPUError {\n    constructor(DOMString message);\n};",
         "type": "interface",
         "name": "GPUOutOfMemoryError",
         "inheritance": "GPUError",
-        "members": [],
+        "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "message",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": []
+          }
+        ],
         "extAttrs": [
           {
             "type": "extended-attribute",
@@ -10609,11 +10610,34 @@
         "partial": false
       },
       "GPUValidationError": {
-        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUValidationError : GPUError {\n};",
+        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUValidationError : GPUError {\n    constructor(DOMString message);\n};",
         "type": "interface",
         "name": "GPUValidationError",
         "inheritance": "GPUError",
-        "members": [],
+        "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "message",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": []
+          }
+        ],
         "extAttrs": [
           {
             "type": "extended-attribute",

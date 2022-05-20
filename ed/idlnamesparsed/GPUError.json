@@ -6,7 +6,7 @@
       "title": "WebGPU",
       "url": "https://www.w3.org/TR/webgpu/"
     },
-    "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUError {\n    constructor(DOMString message);\n    readonly attribute DOMString message;\n};",
+    "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUError {\n    readonly attribute DOMString message;\n};",
     "href": "https://gpuweb.github.io/gpuweb/#gpuerror"
   },
   "extended": [],
@@ -23,28 +23,6 @@
         "localLinkingText": [],
         "type": "interface",
         "for": [],
-        "access": "public",
-        "informative": false,
-        "heading": {
-          "id": "error-scopes",
-          "href": "https://gpuweb.github.io/gpuweb/#error-scopes",
-          "title": "Error Scopes",
-          "number": "21.2"
-        },
-        "definedIn": "pre"
-      },
-      {
-        "id": "dom-gpuerror-gpuerror",
-        "href": "https://gpuweb.github.io/gpuweb/#dom-gpuerror-gpuerror",
-        "linkingText": [
-          "GPUError(message)",
-          "constructor(message)"
-        ],
-        "localLinkingText": [],
-        "type": "constructor",
-        "for": [
-          "GPUError"
-        ],
         "access": "public",
         "informative": false,
         "heading": {
