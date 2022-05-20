@@ -1,0 +1,41 @@
+From 4177e54d75eaddf861a13845644ac0a6b18567b7 Mon Sep 17 00:00:00 2001
+From: Francois Daoust <fd@tidoust.net>
+Date: Fri, 20 May 2022 15:39:45 +0200
+Subject: [PATCH] Add CSS patch to drop pointer-events dfn from CSS UI
+
+The definition of `pointer-events` is not yet as complete as that in the SVG
+spec. Tracking issue at:
+https://github.com/w3c/csswg-drafts/issues/4438
+---
+ ed/css/css-ui.json | 15 ---------------
+ 1 file changed, 15 deletions(-)
+
+diff --git a/ed/css/css-ui.json b/ed/css/css-ui.json
+index a54aa5534..7fbe23bd8 100644
+--- a/ed/css/css-ui.json
++++ b/ed/css/css-ui.json
+@@ -225,21 +225,6 @@
+         "userSelect"
+       ]
+     },
+-    "pointer-events": {
+-      "name": "pointer-events",
+-      "value": "auto | none",
+-      "initial": "auto",
+-      "appliesTo": "all elements",
+-      "inherited": "yes",
+-      "percentages": "N/A",
+-      "computedValue": "specified keyword",
+-      "canonicalOrder": "per grammar",
+-      "animationType": "by computed value type",
+-      "styleDeclaration": [
+-        "pointer-events",
+-        "pointerEvents"
+-      ]
+-    },
+     "accent-color": {
+       "name": "accent-color",
+       "value": "auto | <color>",
+-- 
+2.36.0.windows.1
+
