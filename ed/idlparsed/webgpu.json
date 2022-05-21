@@ -21,6 +21,7 @@
         "Window": [
           "GPUSupportedLimits",
           "GPUSupportedFeatures",
+          "GPUAdapterInfo",
           "GPU",
           "GPUAdapter",
           "GPUDevice",
@@ -52,6 +53,7 @@
         "DedicatedWorker": [
           "GPUSupportedLimits",
           "GPUSupportedFeatures",
+          "GPUAdapterInfo",
           "GPU",
           "GPUAdapter",
           "GPUDevice",
@@ -606,6 +608,99 @@
         ],
         "partial": false
       },
+      "GPUAdapterInfo": {
+        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUAdapterInfo {\n  readonly attribute DOMString vendor;\n  readonly attribute DOMString architecture;\n  readonly attribute DOMString device;\n  readonly attribute DOMString description;\n};",
+        "type": "interface",
+        "name": "GPUAdapterInfo",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "attribute",
+            "name": "vendor",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "architecture",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "device",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "description",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "DedicatedWorker"
+                }
+              ]
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
       "GPUPredefinedColorSpace": {
         "fragment": "enum GPUPredefinedColorSpace {\n    \"srgb\",\n};",
         "type": "enum",
@@ -807,26 +902,11 @@
         "extAttrs": []
       },
       "GPUAdapter": {
-        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUAdapter {\n    readonly attribute DOMString name;\n    [SameObject] readonly attribute GPUSupportedFeatures features;\n    [SameObject] readonly attribute GPUSupportedLimits limits;\n    readonly attribute boolean isFallbackAdapter;\n\n    Promise<GPUDevice> requestDevice(optional GPUDeviceDescriptor descriptor = {});\n};",
+        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUAdapter {\n    [SameObject] readonly attribute GPUSupportedFeatures features;\n    [SameObject] readonly attribute GPUSupportedLimits limits;\n    readonly attribute boolean isFallbackAdapter;\n\n    Promise<GPUDevice> requestDevice(optional GPUDeviceDescriptor descriptor = {});\n    Promise<GPUAdapterInfo> requestAdapterInfo(optional sequence<DOMString> unmaskHints = []);\n};",
         "type": "interface",
         "name": "GPUAdapter",
         "inheritance": null,
         "members": [
-          {
-            "type": "attribute",
-            "name": "name",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
           {
             "type": "attribute",
             "name": "features",
@@ -921,6 +1001,59 @@
                 },
                 "default": {
                   "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "requestAdapterInfo",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GPUAdapterInfo"
+                }
+              ]
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "unmaskHints",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "sequence",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": [
+                    {
+                      "type": "argument-type",
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "DOMString"
+                    }
+                  ]
+                },
+                "default": {
+                  "type": "sequence",
+                  "value": []
                 },
                 "optional": true,
                 "variadic": false
@@ -11832,6 +11965,7 @@
       "Window": [
         "GPUSupportedLimits",
         "GPUSupportedFeatures",
+        "GPUAdapterInfo",
         "GPU",
         "GPUAdapter",
         "GPUDevice",
@@ -11871,6 +12005,7 @@
       "DedicatedWorker": [
         "GPUSupportedLimits",
         "GPUSupportedFeatures",
+        "GPUAdapterInfo",
         "GPU",
         "GPUAdapter",
         "GPUDevice",
@@ -11913,6 +12048,7 @@
       "GPUObjectDescriptorBase": [],
       "GPUSupportedLimits": [],
       "GPUSupportedFeatures": [],
+      "GPUAdapterInfo": [],
       "NavigatorGPU": [
         "GPU"
       ],
@@ -11934,7 +12070,8 @@
         "GPUSupportedFeatures",
         "GPUSupportedLimits",
         "GPUDevice",
-        "GPUDeviceDescriptor"
+        "GPUDeviceDescriptor",
+        "GPUAdapterInfo"
       ],
       "GPUDeviceDescriptor": [
         "GPUObjectDescriptorBase",
