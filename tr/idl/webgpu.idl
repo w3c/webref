@@ -46,6 +46,14 @@ interface GPUSupportedFeatures {
     readonly setlike<DOMString>;
 };
 
+[Exposed=(Window, DedicatedWorker), SecureContext]
+interface GPUAdapterInfo {
+  readonly attribute DOMString vendor;
+  readonly attribute DOMString architecture;
+  readonly attribute DOMString device;
+  readonly attribute DOMString description;
+};
+
 enum GPUPredefinedColorSpace {
     "srgb",
 };
@@ -59,6 +67,7 @@ WorkerNavigator includes NavigatorGPU;
 [Exposed=(Window, DedicatedWorker), SecureContext]
 interface GPU {
     Promise<GPUAdapter?> requestAdapter(optional GPURequestAdapterOptions options = {});
+    GPUTextureFormat getPreferredCanvasFormat();
 };
 
 dictionary GPURequestAdapterOptions {
@@ -73,12 +82,12 @@ enum GPUPowerPreference {
 
 [Exposed=(Window, DedicatedWorker), SecureContext]
 interface GPUAdapter {
-    readonly attribute DOMString name;
     [SameObject] readonly attribute GPUSupportedFeatures features;
     [SameObject] readonly attribute GPUSupportedLimits limits;
     readonly attribute boolean isFallbackAdapter;
 
     Promise<GPUDevice> requestDevice(optional GPUDeviceDescriptor descriptor = {});
+    Promise<GPUAdapterInfo> requestAdapterInfo(optional sequence<DOMString> unmaskHints = []);
 };
 
 dictionary GPUDeviceDescriptor : GPUObjectDescriptorBase {
@@ -1098,7 +1107,6 @@ interface GPUCanvasContext {
     undefined configure(GPUCanvasConfiguration configuration);
     undefined unconfigure();
 
-    GPUTextureFormat getPreferredFormat(GPUAdapter adapter);
     GPUTexture getCurrentTexture();
 };
 
@@ -1114,7 +1122,6 @@ dictionary GPUCanvasConfiguration {
     sequence<GPUTextureFormat> viewFormats = [];
     GPUPredefinedColorSpace colorSpace = "srgb";
     GPUCanvasCompositingAlphaMode compositingAlphaMode = "opaque";
-    GPUExtent3D size;
 };
 
 enum GPUDeviceLostReason {
@@ -1137,17 +1144,19 @@ enum GPUErrorFilter {
 };
 
 [Exposed=(Window, DedicatedWorker), SecureContext]
-interface GPUOutOfMemoryError {
-    constructor();
-};
-
-[Exposed=(Window, DedicatedWorker), SecureContext]
-interface GPUValidationError {
-    constructor(DOMString message);
+interface GPUError {
     readonly attribute DOMString message;
 };
 
-typedef (GPUOutOfMemoryError or GPUValidationError) GPUError;
+[Exposed=(Window, DedicatedWorker), SecureContext]
+interface GPUOutOfMemoryError : GPUError {
+    constructor(DOMString message);
+};
+
+[Exposed=(Window, DedicatedWorker), SecureContext]
+interface GPUValidationError : GPUError {
+    constructor(DOMString message);
+};
 
 partial interface GPUDevice {
     undefined pushErrorScope(GPUErrorFilter filter);

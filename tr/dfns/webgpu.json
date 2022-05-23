@@ -770,6 +770,27 @@
       "definedIn": "dt"
     },
     {
+      "id": "dom-adapter-unmaskedidentifiers-slot",
+      "href": "https://www.w3.org/TR/webgpu/#dom-adapter-unmaskedidentifiers-slot",
+      "linkingText": [
+        "[[unmaskedIdentifiers]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "adapter"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "adapters",
+        "href": "https://www.w3.org/TR/webgpu/#adapters",
+        "title": "Adapters",
+        "number": "3.5.1"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "device",
       "href": "https://www.w3.org/TR/webgpu/#device",
       "linkingText": [
@@ -2220,6 +2241,147 @@
       "definedIn": "heading"
     },
     {
+      "id": "gpuadapterinfo",
+      "href": "https://www.w3.org/TR/webgpu/#gpuadapterinfo",
+      "linkingText": [
+        "GPUAdapterInfo"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gpu-adapterinfo",
+        "href": "https://www.w3.org/TR/webgpu/#gpu-adapterinfo",
+        "title": "GPUAdapterInfo",
+        "number": "3.6.2.3"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-gpuadapterinfo-vendor",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpuadapterinfo-vendor",
+      "linkingText": [
+        "vendor"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPUAdapterInfo"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gpu-adapterinfo",
+        "href": "https://www.w3.org/TR/webgpu/#gpu-adapterinfo",
+        "title": "GPUAdapterInfo",
+        "number": "3.6.2.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-gpuadapterinfo-architecture",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpuadapterinfo-architecture",
+      "linkingText": [
+        "architecture"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPUAdapterInfo"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gpu-adapterinfo",
+        "href": "https://www.w3.org/TR/webgpu/#gpu-adapterinfo",
+        "title": "GPUAdapterInfo",
+        "number": "3.6.2.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-gpuadapterinfo-device",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpuadapterinfo-device",
+      "linkingText": [
+        "device"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPUAdapterInfo"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gpu-adapterinfo",
+        "href": "https://www.w3.org/TR/webgpu/#gpu-adapterinfo",
+        "title": "GPUAdapterInfo",
+        "number": "3.6.2.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-gpuadapterinfo-description",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpuadapterinfo-description",
+      "linkingText": [
+        "description"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPUAdapterInfo"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gpu-adapterinfo",
+        "href": "https://www.w3.org/TR/webgpu/#gpu-adapterinfo",
+        "title": "GPUAdapterInfo",
+        "number": "3.6.2.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "abstract-opdef-new-adapter-info",
+      "href": "https://www.w3.org/TR/webgpu/#abstract-opdef-new-adapter-info",
+      "linkingText": [
+        "new adapter info"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gpu-adapterinfo",
+        "href": "https://www.w3.org/TR/webgpu/#gpu-adapterinfo",
+        "title": "GPUAdapterInfo",
+        "number": "3.6.2.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "normalized-identifier-string",
+      "href": "https://www.w3.org/TR/webgpu/#normalized-identifier-string",
+      "linkingText": [
+        "normalized identifier string"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "gpu-adapterinfo",
+        "href": "https://www.w3.org/TR/webgpu/#gpu-adapterinfo",
+        "title": "GPUAdapterInfo",
+        "number": "3.6.2.3"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "enumdef-gpupredefinedcolorspace",
       "href": "https://www.w3.org/TR/webgpu/#enumdef-gpupredefinedcolorspace",
       "linkingText": [
@@ -2360,6 +2522,27 @@
         "number": "4.2"
       },
       "definedIn": "table"
+    },
+    {
+      "id": "dom-gpu-getpreferredcanvasformat",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpu-getpreferredcanvasformat",
+      "linkingText": [
+        "getPreferredCanvasFormat()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "GPU"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gpu-interface",
+        "href": "https://www.w3.org/TR/webgpu/#gpu-interface",
+        "title": "GPU",
+        "number": "4.2"
+      },
+      "definedIn": "dt"
     },
     {
       "id": "dom-gpu-previously_returned_adapters-slot",
@@ -2543,27 +2726,6 @@
       "definedIn": "heading"
     },
     {
-      "id": "dom-gpuadapter-name",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpuadapter-name",
-      "linkingText": [
-        "name"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "GPUAdapter"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "gpu-adapter",
-        "href": "https://www.w3.org/TR/webgpu/#gpu-adapter",
-        "title": "GPUAdapter",
-        "number": "4.3"
-      },
-      "definedIn": "dt"
-    },
-    {
       "id": "dom-gpuadapter-features",
       "href": "https://www.w3.org/TR/webgpu/#dom-gpuadapter-features",
       "linkingText": [
@@ -2679,6 +2841,49 @@
       "type": "argument",
       "for": [
         "GPUAdapter/requestDevice(descriptor)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gpu-adapter",
+        "href": "https://www.w3.org/TR/webgpu/#gpu-adapter",
+        "title": "GPUAdapter",
+        "number": "4.3"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dom-gpuadapter-requestadapterinfo",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpuadapter-requestadapterinfo",
+      "linkingText": [
+        "requestAdapterInfo(unmaskHints)",
+        "requestAdapterInfo()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "GPUAdapter"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gpu-adapter",
+        "href": "https://www.w3.org/TR/webgpu/#gpu-adapter",
+        "title": "GPUAdapter",
+        "number": "4.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-gpuadapter-requestadapterinfo-unmaskhints",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpuadapter-requestadapterinfo-unmaskhints",
+      "linkingText": [
+        "unmaskHints"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUAdapter/requestAdapterInfo()"
       ],
       "access": "public",
       "informative": false,
@@ -9521,6 +9726,69 @@
       "definedIn": "heading"
     },
     {
+      "id": "dom-gpubindgroup-layout-slot",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpubindgroup-layout-slot",
+      "linkingText": [
+        "[[layout]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPUBindGroup"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gpu-bind-group",
+        "href": "https://www.w3.org/TR/webgpu/#gpu-bind-group",
+        "title": "GPUBindGroup",
+        "number": "8.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-gpubindgroup-entries-slot",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpubindgroup-entries-slot",
+      "linkingText": [
+        "[[entries]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPUBindGroup"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gpu-bind-group",
+        "href": "https://www.w3.org/TR/webgpu/#gpu-bind-group",
+        "title": "GPUBindGroup",
+        "number": "8.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-gpubindgroup-usedresources-slot",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpubindgroup-usedresources-slot",
+      "linkingText": [
+        "[[usedResources]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPUBindGroup"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gpu-bind-group",
+        "href": "https://www.w3.org/TR/webgpu/#gpu-bind-group",
+        "title": "GPUBindGroup",
+        "number": "8.2"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "dictdef-gpubindgroupdescriptor",
       "href": "https://www.w3.org/TR/webgpu/#dictdef-gpubindgroupdescriptor",
       "linkingText": [
@@ -9558,7 +9826,7 @@
         "title": "Bind Group Creation",
         "number": "8.2.1"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
       "id": "dom-gpubindgroupdescriptor-entries",
@@ -9579,7 +9847,7 @@
         "title": "Bind Group Creation",
         "number": "8.2.1"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
       "id": "typedefdef-gpubindingresource",
@@ -9638,7 +9906,7 @@
         "title": "Bind Group Creation",
         "number": "8.2.1"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
       "id": "dom-gpubindgroupentry-resource",
@@ -9659,7 +9927,7 @@
         "title": "Bind Group Creation",
         "number": "8.2.1"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
       "id": "dictdef-gpubufferbinding",
@@ -9699,7 +9967,7 @@
         "title": "Bind Group Creation",
         "number": "8.2.1"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
       "id": "dom-gpubufferbinding-offset",
@@ -9720,7 +9988,7 @@
         "title": "Bind Group Creation",
         "number": "8.2.1"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
       "id": "dom-gpubufferbinding-size",
@@ -9732,69 +10000,6 @@
       "type": "dict-member",
       "for": [
         "GPUBufferBinding"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "bind-group-creation",
-        "href": "https://www.w3.org/TR/webgpu/#bind-group-creation",
-        "title": "Bind Group Creation",
-        "number": "8.2.1"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-gpubindgroup-layout-slot",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpubindgroup-layout-slot",
-      "linkingText": [
-        "[[layout]]"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "GPUBindGroup"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "bind-group-creation",
-        "href": "https://www.w3.org/TR/webgpu/#bind-group-creation",
-        "title": "Bind Group Creation",
-        "number": "8.2.1"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-gpubindgroup-entries-slot",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpubindgroup-entries-slot",
-      "linkingText": [
-        "[[entries]]"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "GPUBindGroup"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "bind-group-creation",
-        "href": "https://www.w3.org/TR/webgpu/#bind-group-creation",
-        "title": "Bind Group Creation",
-        "number": "8.2.1"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-gpubindgroup-usedresources-slot",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpubindgroup-usedresources-slot",
-      "linkingText": [
-        "[[usedResources]]"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "GPUBindGroup"
       ],
       "access": "public",
       "informative": false,
@@ -9964,7 +10169,7 @@
         "title": "Creation",
         "number": "8.3.1"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
       "id": "dom-gpudevice-createpipelinelayout",
@@ -13374,7 +13579,7 @@
         "title": "Vertex Formats",
         "number": "10.3.7.1"
       },
-      "definedIn": "pre"
+      "definedIn": "table"
     },
     {
       "id": "dom-gpuvertexformat-uint8x4",
@@ -13395,7 +13600,7 @@
         "title": "Vertex Formats",
         "number": "10.3.7.1"
       },
-      "definedIn": "pre"
+      "definedIn": "table"
     },
     {
       "id": "dom-gpuvertexformat-sint8x2",
@@ -13416,7 +13621,7 @@
         "title": "Vertex Formats",
         "number": "10.3.7.1"
       },
-      "definedIn": "pre"
+      "definedIn": "table"
     },
     {
       "id": "dom-gpuvertexformat-sint8x4",
@@ -13437,7 +13642,7 @@
         "title": "Vertex Formats",
         "number": "10.3.7.1"
       },
-      "definedIn": "pre"
+      "definedIn": "table"
     },
     {
       "id": "dom-gpuvertexformat-unorm8x2",
@@ -13458,7 +13663,7 @@
         "title": "Vertex Formats",
         "number": "10.3.7.1"
       },
-      "definedIn": "pre"
+      "definedIn": "table"
     },
     {
       "id": "dom-gpuvertexformat-unorm8x4",
@@ -13479,7 +13684,7 @@
         "title": "Vertex Formats",
         "number": "10.3.7.1"
       },
-      "definedIn": "pre"
+      "definedIn": "table"
     },
     {
       "id": "dom-gpuvertexformat-snorm8x2",
@@ -13500,7 +13705,7 @@
         "title": "Vertex Formats",
         "number": "10.3.7.1"
       },
-      "definedIn": "pre"
+      "definedIn": "table"
     },
     {
       "id": "dom-gpuvertexformat-snorm8x4",
@@ -13521,7 +13726,7 @@
         "title": "Vertex Formats",
         "number": "10.3.7.1"
       },
-      "definedIn": "pre"
+      "definedIn": "table"
     },
     {
       "id": "dom-gpuvertexformat-uint16x2",
@@ -13542,7 +13747,7 @@
         "title": "Vertex Formats",
         "number": "10.3.7.1"
       },
-      "definedIn": "pre"
+      "definedIn": "table"
     },
     {
       "id": "dom-gpuvertexformat-uint16x4",
@@ -13563,7 +13768,7 @@
         "title": "Vertex Formats",
         "number": "10.3.7.1"
       },
-      "definedIn": "pre"
+      "definedIn": "table"
     },
     {
       "id": "dom-gpuvertexformat-sint16x2",
@@ -13584,7 +13789,7 @@
         "title": "Vertex Formats",
         "number": "10.3.7.1"
       },
-      "definedIn": "pre"
+      "definedIn": "table"
     },
     {
       "id": "dom-gpuvertexformat-sint16x4",
@@ -13605,7 +13810,7 @@
         "title": "Vertex Formats",
         "number": "10.3.7.1"
       },
-      "definedIn": "pre"
+      "definedIn": "table"
     },
     {
       "id": "dom-gpuvertexformat-unorm16x2",
@@ -13626,7 +13831,7 @@
         "title": "Vertex Formats",
         "number": "10.3.7.1"
       },
-      "definedIn": "pre"
+      "definedIn": "table"
     },
     {
       "id": "dom-gpuvertexformat-unorm16x4",
@@ -13647,7 +13852,7 @@
         "title": "Vertex Formats",
         "number": "10.3.7.1"
       },
-      "definedIn": "pre"
+      "definedIn": "table"
     },
     {
       "id": "dom-gpuvertexformat-snorm16x2",
@@ -13668,7 +13873,7 @@
         "title": "Vertex Formats",
         "number": "10.3.7.1"
       },
-      "definedIn": "pre"
+      "definedIn": "table"
     },
     {
       "id": "dom-gpuvertexformat-snorm16x4",
@@ -13689,7 +13894,7 @@
         "title": "Vertex Formats",
         "number": "10.3.7.1"
       },
-      "definedIn": "pre"
+      "definedIn": "table"
     },
     {
       "id": "dom-gpuvertexformat-float16x2",
@@ -13710,7 +13915,7 @@
         "title": "Vertex Formats",
         "number": "10.3.7.1"
       },
-      "definedIn": "pre"
+      "definedIn": "table"
     },
     {
       "id": "dom-gpuvertexformat-float16x4",
@@ -13731,7 +13936,7 @@
         "title": "Vertex Formats",
         "number": "10.3.7.1"
       },
-      "definedIn": "pre"
+      "definedIn": "table"
     },
     {
       "id": "dom-gpuvertexformat-float32",
@@ -13752,7 +13957,7 @@
         "title": "Vertex Formats",
         "number": "10.3.7.1"
       },
-      "definedIn": "pre"
+      "definedIn": "table"
     },
     {
       "id": "dom-gpuvertexformat-float32x2",
@@ -13773,7 +13978,7 @@
         "title": "Vertex Formats",
         "number": "10.3.7.1"
       },
-      "definedIn": "pre"
+      "definedIn": "table"
     },
     {
       "id": "dom-gpuvertexformat-float32x3",
@@ -13794,7 +13999,7 @@
         "title": "Vertex Formats",
         "number": "10.3.7.1"
       },
-      "definedIn": "pre"
+      "definedIn": "table"
     },
     {
       "id": "dom-gpuvertexformat-float32x4",
@@ -13815,7 +14020,7 @@
         "title": "Vertex Formats",
         "number": "10.3.7.1"
       },
-      "definedIn": "pre"
+      "definedIn": "table"
     },
     {
       "id": "dom-gpuvertexformat-uint32",
@@ -13836,7 +14041,7 @@
         "title": "Vertex Formats",
         "number": "10.3.7.1"
       },
-      "definedIn": "pre"
+      "definedIn": "table"
     },
     {
       "id": "dom-gpuvertexformat-uint32x2",
@@ -13857,7 +14062,7 @@
         "title": "Vertex Formats",
         "number": "10.3.7.1"
       },
-      "definedIn": "pre"
+      "definedIn": "table"
     },
     {
       "id": "dom-gpuvertexformat-uint32x3",
@@ -13878,7 +14083,7 @@
         "title": "Vertex Formats",
         "number": "10.3.7.1"
       },
-      "definedIn": "pre"
+      "definedIn": "table"
     },
     {
       "id": "dom-gpuvertexformat-uint32x4",
@@ -13899,7 +14104,7 @@
         "title": "Vertex Formats",
         "number": "10.3.7.1"
       },
-      "definedIn": "pre"
+      "definedIn": "table"
     },
     {
       "id": "dom-gpuvertexformat-sint32",
@@ -13920,7 +14125,7 @@
         "title": "Vertex Formats",
         "number": "10.3.7.1"
       },
-      "definedIn": "pre"
+      "definedIn": "table"
     },
     {
       "id": "dom-gpuvertexformat-sint32x2",
@@ -13941,7 +14146,7 @@
         "title": "Vertex Formats",
         "number": "10.3.7.1"
       },
-      "definedIn": "pre"
+      "definedIn": "table"
     },
     {
       "id": "dom-gpuvertexformat-sint32x3",
@@ -13962,7 +14167,7 @@
         "title": "Vertex Formats",
         "number": "10.3.7.1"
       },
-      "definedIn": "pre"
+      "definedIn": "table"
     },
     {
       "id": "dom-gpuvertexformat-sint32x4",
@@ -13983,7 +14188,7 @@
         "title": "Vertex Formats",
         "number": "10.3.7.1"
       },
-      "definedIn": "pre"
+      "definedIn": "table"
     },
     {
       "id": "enumdef-gpuvertexstepmode",
@@ -20514,27 +20719,6 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-gpucanvascontext-validconfiguration-slot",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpucanvascontext-validconfiguration-slot",
-      "linkingText": [
-        "[[validConfiguration]]"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "GPUCanvasContext"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "canvas-context",
-        "href": "https://www.w3.org/TR/webgpu/#canvas-context",
-        "title": "GPUCanvasContext",
-        "number": "20.2"
-      },
-      "definedIn": "dt"
-    },
-    {
       "id": "dom-gpucanvascontext-configuration-slot",
       "href": "https://www.w3.org/TR/webgpu/#dom-gpucanvascontext-configuration-slot",
       "linkingText": [
@@ -20556,10 +20740,10 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-gpucanvascontext-size-slot",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpucanvascontext-size-slot",
+      "id": "dom-gpucanvascontext-texturedescriptor-slot",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpucanvascontext-texturedescriptor-slot",
       "linkingText": [
-        "[[size]]"
+        "[[textureDescriptor]]"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -20661,48 +20845,6 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-gpucanvascontext-getpreferredformat",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpucanvascontext-getpreferredformat",
-      "linkingText": [
-        "getPreferredFormat(adapter)"
-      ],
-      "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "GPUCanvasContext"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "canvas-context",
-        "href": "https://www.w3.org/TR/webgpu/#canvas-context",
-        "title": "GPUCanvasContext",
-        "number": "20.2"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-gpucanvascontext-getpreferredformat-adapter-adapter",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpucanvascontext-getpreferredformat-adapter-adapter",
-      "linkingText": [
-        "adapter"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUCanvasContext/getPreferredFormat(adapter)"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "canvas-context",
-        "href": "https://www.w3.org/TR/webgpu/#canvas-context",
-        "title": "GPUCanvasContext",
-        "number": "20.2"
-      },
-      "definedIn": "table"
-    },
-    {
       "id": "dom-gpucanvascontext-getcurrenttexture",
       "href": "https://www.w3.org/TR/webgpu/#dom-gpucanvascontext-getcurrenttexture",
       "linkingText": [
@@ -20747,25 +20889,6 @@
       "href": "https://www.w3.org/TR/webgpu/#abstract-opdef-get-a-copy-of-the-image-contents-of-a-context",
       "linkingText": [
         "get a copy of the image contents of a context"
-      ],
-      "localLinkingText": [],
-      "type": "abstract-op",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "canvas-context",
-        "href": "https://www.w3.org/TR/webgpu/#canvas-context",
-        "title": "GPUCanvasContext",
-        "number": "20.2"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "abstract-opdef-allocating-a-new-context-texture",
-      "href": "https://www.w3.org/TR/webgpu/#abstract-opdef-allocating-a-new-context-texture",
-      "linkingText": [
-        "allocating a new context texture"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -21025,16 +21148,14 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-gpucanvasconfiguration-size",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpucanvasconfiguration-size",
+      "id": "abstract-opdef-gputexturedescriptor-for-the-canvas-and-configuration",
+      "href": "https://www.w3.org/TR/webgpu/#abstract-opdef-gputexturedescriptor-for-the-canvas-and-configuration",
       "linkingText": [
-        "size"
+        "GPUTextureDescriptor for the canvas and configuration"
       ],
       "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "GPUCanvasConfiguration"
-      ],
+      "type": "abstract-op",
+      "for": [],
       "access": "public",
       "informative": false,
       "heading": {
@@ -21043,7 +21164,26 @@
         "title": "GPUCanvasConfiguration",
         "number": "20.3"
       },
-      "definedIn": "pre"
+      "definedIn": "prose"
+    },
+    {
+      "id": "abstract-opdef-update-the-canvas-size",
+      "href": "https://www.w3.org/TR/webgpu/#abstract-opdef-update-the-canvas-size",
+      "linkingText": [
+        "update the canvas size"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "context-sizing",
+        "href": "https://www.w3.org/TR/webgpu/#context-sizing",
+        "title": "Canvas Context sizing",
+        "number": "20.3.2"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "dom-gpucanvascompositingalphamode-gpucanvascompositingalphamode",
@@ -21311,6 +21451,25 @@
       "definedIn": "pre"
     },
     {
+      "id": "gpuerror",
+      "href": "https://www.w3.org/TR/webgpu/#gpuerror",
+      "linkingText": [
+        "GPUError"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "error-scopes",
+        "href": "https://www.w3.org/TR/webgpu/#error-scopes",
+        "title": "Error Scopes",
+        "number": "21.2"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "gpuoutofmemoryerror",
       "href": "https://www.w3.org/TR/webgpu/#gpuoutofmemoryerror",
       "linkingText": [
@@ -21333,13 +21492,35 @@
       "id": "dom-gpuoutofmemoryerror-gpuoutofmemoryerror",
       "href": "https://www.w3.org/TR/webgpu/#dom-gpuoutofmemoryerror-gpuoutofmemoryerror",
       "linkingText": [
-        "GPUOutOfMemoryError()",
-        "constructor()"
+        "GPUOutOfMemoryError(message)",
+        "constructor(message)"
       ],
       "localLinkingText": [],
       "type": "constructor",
       "for": [
         "GPUOutOfMemoryError"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "error-scopes",
+        "href": "https://www.w3.org/TR/webgpu/#error-scopes",
+        "title": "Error Scopes",
+        "number": "21.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-gpuoutofmemoryerror-gpuoutofmemoryerror-message-message",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpuoutofmemoryerror-gpuoutofmemoryerror-message-message",
+      "linkingText": [
+        "message"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUOutOfMemoryError/GPUOutOfMemoryError(message)",
+        "GPUOutOfMemoryError/constructor(message)"
       ],
       "access": "public",
       "informative": false,
@@ -21415,35 +21596,16 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-gpuvalidationerror-message",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpuvalidationerror-message",
+      "id": "dom-gpuerror-message",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpuerror-message",
       "linkingText": [
         "message"
       ],
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "GPUValidationError"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "error-scopes",
-        "href": "https://www.w3.org/TR/webgpu/#error-scopes",
-        "title": "Error Scopes",
-        "number": "21.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "typedefdef-gpuerror",
-      "href": "https://www.w3.org/TR/webgpu/#typedefdef-gpuerror",
-      "linkingText": [
         "GPUError"
       ],
-      "localLinkingText": [],
-      "type": "typedef",
-      "for": [],
       "access": "public",
       "informative": false,
       "heading": {
@@ -21452,7 +21614,7 @@
         "title": "Error Scopes",
         "number": "21.2"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
       "id": "dom-gpudevice-errorscopestack-slot",

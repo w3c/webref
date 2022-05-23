@@ -11,11 +11,6 @@ partial interface MediaDevices {
   attribute EventHandler oncaptureaction;
 };
 
-// Source: Capture Handle - Bootstrapping Collaboration when Screensharing (https://w3c.github.io/mediacapture-handle/identity/)
-partial interface MediaDevices {
-  undefined setCaptureHandleConfig(optional CaptureHandleConfig config = {});
-};
-
 // Source: Viewport Capture (https://w3c.github.io/mediacapture-viewport/)
 partial interface MediaDevices {
   Promise<MediaStream> getViewportMedia(
@@ -25,6 +20,11 @@ partial interface MediaDevices {
 // Source: Audio Output Devices API (https://www.w3.org/TR/audio-output/)
 partial interface MediaDevices {
   Promise<MediaDeviceInfo> selectAudioOutput(optional AudioOutputOptions options = {});
+};
+
+// Source: Capture Handle - Bootstrapping Collaboration when Screensharing (https://www.w3.org/TR/capture-handle-identity/)
+partial interface MediaDevices {
+  undefined setCaptureHandleConfig(optional CaptureHandleConfig config = {});
 };
 
 // Source: Region Capture (https://www.w3.org/TR/mediacapture-region/)

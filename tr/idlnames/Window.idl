@@ -98,12 +98,6 @@ partial interface Window {
   Promise<ScreenDetails> getScreenDetails();
 };
 
-// Source: Attribution Reporting (https://wicg.github.io/conversion-measurement-api/)
-[SecureContext]
-partial interface Window {
-  readonly attribute AttributionReporting attributionReporting;
-};
-
 // Source: Cookie Store API (https://wicg.github.io/cookie-store/)
 [SecureContext]
 partial interface Window {

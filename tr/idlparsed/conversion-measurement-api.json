@@ -6,11 +6,7 @@
   "idlparsed": {
     "jsNames": {
       "constructors": {},
-      "functions": {
-        "Window": [
-          "AttributionReporting"
-        ]
-      }
+      "functions": {}
     },
     "idlNames": {
       "AttributionSourceParams": {
@@ -96,73 +92,6 @@
           }
         ],
         "extAttrs": [],
-        "partial": false
-      },
-      "AttributionReporting": {
-        "fragment": "[Exposed=Window, SecureContext]\ninterface AttributionReporting {\n  Promise<undefined> registerSource(USVString url);\n};",
-        "type": "interface",
-        "name": "AttributionReporting",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "operation",
-            "name": "registerSource",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "Promise",
-              "nullable": false,
-              "union": false,
-              "idlType": [
-                {
-                  "type": "return-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "undefined"
-                }
-              ]
-            },
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "url",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "USVString"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              }
-            ],
-            "extAttrs": [],
-            "special": ""
-          }
-        ],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier",
-              "value": "Window"
-            },
-            "arguments": []
-          },
-          {
-            "type": "extended-attribute",
-            "name": "SecureContext",
-            "rhs": null,
-            "arguments": []
-          }
-        ],
         "partial": false
       }
     },
@@ -288,59 +217,16 @@
           "extAttrs": [],
           "partial": true
         }
-      ],
-      "Window": [
-        {
-          "fragment": "[SecureContext]\npartial interface Window {\n  readonly attribute AttributionReporting attributionReporting;\n};",
-          "type": "interface",
-          "name": "Window",
-          "inheritance": null,
-          "members": [
-            {
-              "type": "attribute",
-              "name": "attributionReporting",
-              "idlType": {
-                "type": "attribute-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "AttributionReporting"
-              },
-              "extAttrs": [],
-              "special": "",
-              "readonly": true
-            }
-          ],
-          "extAttrs": [
-            {
-              "type": "extended-attribute",
-              "name": "SecureContext",
-              "rhs": null,
-              "arguments": []
-            }
-          ],
-          "partial": true
-        }
       ]
     },
     "globals": {},
-    "exposed": {
-      "Window": [
-        "AttributionReporting"
-      ]
-    },
+    "exposed": {},
     "dependencies": {
       "HTMLAnchorElement": [],
-      "AttributionSourceParams": [],
-      "AttributionReporting": [],
-      "Window": [
-        "AttributionReporting"
-      ]
+      "AttributionSourceParams": []
     },
     "externalDependencies": [
-      "HTMLAnchorElement",
-      "Window"
+      "HTMLAnchorElement"
     ],
     "hasObsoleteIdl": false
   }
