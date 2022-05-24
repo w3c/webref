@@ -1,19 +1,23 @@
-From ed95a53a1bc1d7ee38f0e662ba3f1e65acbd94b2 Mon Sep 17 00:00:00 2001
+From c68ba86adab6629524c71d3cfb8b43b95236d932 Mon Sep 17 00:00:00 2001
 From: Francois Daoust <fd@tidoust.net>
-Date: Fri, 20 May 2022 17:18:37 +0200
-Subject: [PATCH] Drop fill and stroke properties dfns from fill-stroke spec
+Date: Tue, 24 May 2022 12:08:49 +0200
+Subject: [PATCH] Patch not-yet-up-to-date fill-stroke spec properties
 
-The "<'background'> with modifications" value is not proper CSS grammar.
-Dropping the definitions means we'll fall back on the SVG ones for now.
-
-Tracked in:
+The "<'background'> with modifications" value for the `fill` and `stroke`
+properties is not proper CSS grammar. Dropping the definitions means we'll fall
+back on the SVG ones for now. Tracked in:
 https://github.com/w3c/csswg-drafts/issues/7285
+
+The patch also fixed a regression since SVG Strokes or SVG2 for the
+`stroke-width`, `stroke-dasharray` and `stroke-dashoffset` properties that
+should accept unitless values. Tracked in:
+https://github.com/w3c/csswg-drafts/issues/3057
 ---
- ed/css/fill-stroke.json | 30 ------------------------------
- 1 file changed, 30 deletions(-)
+ ed/css/fill-stroke.json | 36 +++---------------------------------
+ 1 file changed, 3 insertions(+), 33 deletions(-)
 
 diff --git a/ed/css/fill-stroke.json b/ed/css/fill-stroke.json
-index afff13433..819635366 100644
+index afff13433..557bf0e53 100644
 --- a/ed/css/fill-stroke.json
 +++ b/ed/css/fill-stroke.json
 @@ -132,21 +132,6 @@
@@ -38,6 +42,33 @@ index afff13433..819635366 100644
      "fill-opacity": {
        "name": "fill-opacity",
        "value": "<'opacity'>",
+@@ -165,7 +150,7 @@
+     },
+     "stroke-width": {
+       "name": "stroke-width",
+-      "value": "<length-percentage>#",
++      "value": "[<length-percentage> | <number>]#",
+       "initial": "1px",
+       "appliesTo": "text and SVG shapes",
+       "inherited": "yes",
+@@ -261,7 +246,7 @@
+     },
+     "stroke-dasharray": {
+       "name": "stroke-dasharray",
+-      "value": "none | <length-percentage>+#",
++      "value": "none | [<length-percentage> | <number>]+#",
+       "initial": "none",
+       "appliesTo": "text and SVG shapes",
+       "inherited": "yes",
+@@ -277,7 +262,7 @@
+     },
+     "stroke-dashoffset": {
+       "name": "stroke-dashoffset",
+-      "value": "<length-percentage>",
++      "value": "<length-percentage> | <number>",
+       "initial": "0",
+       "appliesTo": "text and SVG shapes",
+       "inherited": "yes",
 @@ -419,21 +404,6 @@
          "strokeRepeat"
        ]
