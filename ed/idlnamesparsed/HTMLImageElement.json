@@ -19,6 +19,13 @@
     },
     {
       "spec": {
+        "title": "Attribution Reporting",
+        "url": "https://wicg.github.io/conversion-measurement-api/"
+      },
+      "fragment": "partial interface HTMLImageElement {\n    [CEReactions] attribute USVString attributionSrc;\n};"
+    },
+    {
+      "spec": {
         "title": "Priority Hints",
         "url": "https://wicg.github.io/priority-hints/"
       },
@@ -3376,6 +3383,29 @@
           "number": "6.6.6"
         },
         "definedIn": "prose"
+      }
+    ],
+    "https://wicg.github.io/conversion-measurement-api/": [
+      {
+        "id": "dom-htmlimageelement-attributionsrc",
+        "href": "https://wicg.github.io/conversion-measurement-api/#dom-htmlimageelement-attributionsrc",
+        "linkingText": [
+          "attributionSrc"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "HTMLImageElement"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "monkeypatch-image",
+          "href": "https://wicg.github.io/conversion-measurement-api/#monkeypatch-image",
+          "title": "<img> element",
+          "number": "2.2"
+        },
+        "definedIn": "pre"
       }
     ],
     "https://wicg.github.io/priority-hints/": [

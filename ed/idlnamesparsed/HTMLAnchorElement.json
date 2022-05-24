@@ -36,7 +36,7 @@
         "title": "Attribution Reporting",
         "url": "https://wicg.github.io/conversion-measurement-api/"
       },
-      "fragment": "partial interface HTMLAnchorElement {\n    [CEReactions] attribute USVString attributionDestination;\n    [CEReactions] attribute DOMString attributionSourceEventId;\n    [CEReactions] attribute USVString attributionReportTo;\n    [CEReactions] attribute long long attributionExpiry;\n    [CEReactions] attribute long long attributionSourcePriority;\n};"
+      "fragment": "partial interface HTMLAnchorElement {\n    [CEReactions] attribute USVString attributionSrc;\n};"
     }
   ],
   "inheritance": {
@@ -3466,10 +3466,10 @@
     ],
     "https://wicg.github.io/conversion-measurement-api/": [
       {
-        "id": "dom-htmlanchorelement-attributiondestination",
-        "href": "https://wicg.github.io/conversion-measurement-api/#dom-htmlanchorelement-attributiondestination",
+        "id": "dom-htmlanchorelement-attributionsrc",
+        "href": "https://wicg.github.io/conversion-measurement-api/#dom-htmlanchorelement-attributionsrc",
         "linkingText": [
-          "attributionDestination"
+          "attributionSrc"
         ],
         "localLinkingText": [],
         "type": "attribute",
@@ -3482,91 +3482,7 @@
           "id": "monkeypatch-anchor",
           "href": "https://wicg.github.io/conversion-measurement-api/#monkeypatch-anchor",
           "title": "<a> element",
-          "number": "2.2"
-        },
-        "definedIn": "pre"
-      },
-      {
-        "id": "dom-htmlanchorelement-attributionsourceeventid",
-        "href": "https://wicg.github.io/conversion-measurement-api/#dom-htmlanchorelement-attributionsourceeventid",
-        "linkingText": [
-          "attributionSourceEventId"
-        ],
-        "localLinkingText": [],
-        "type": "attribute",
-        "for": [
-          "HTMLAnchorElement"
-        ],
-        "access": "public",
-        "informative": false,
-        "heading": {
-          "id": "monkeypatch-anchor",
-          "href": "https://wicg.github.io/conversion-measurement-api/#monkeypatch-anchor",
-          "title": "<a> element",
-          "number": "2.2"
-        },
-        "definedIn": "pre"
-      },
-      {
-        "id": "dom-htmlanchorelement-attributionreportto",
-        "href": "https://wicg.github.io/conversion-measurement-api/#dom-htmlanchorelement-attributionreportto",
-        "linkingText": [
-          "attributionReportTo"
-        ],
-        "localLinkingText": [],
-        "type": "attribute",
-        "for": [
-          "HTMLAnchorElement"
-        ],
-        "access": "public",
-        "informative": false,
-        "heading": {
-          "id": "monkeypatch-anchor",
-          "href": "https://wicg.github.io/conversion-measurement-api/#monkeypatch-anchor",
-          "title": "<a> element",
-          "number": "2.2"
-        },
-        "definedIn": "pre"
-      },
-      {
-        "id": "dom-htmlanchorelement-attributionexpiry",
-        "href": "https://wicg.github.io/conversion-measurement-api/#dom-htmlanchorelement-attributionexpiry",
-        "linkingText": [
-          "attributionExpiry"
-        ],
-        "localLinkingText": [],
-        "type": "attribute",
-        "for": [
-          "HTMLAnchorElement"
-        ],
-        "access": "public",
-        "informative": false,
-        "heading": {
-          "id": "monkeypatch-anchor",
-          "href": "https://wicg.github.io/conversion-measurement-api/#monkeypatch-anchor",
-          "title": "<a> element",
-          "number": "2.2"
-        },
-        "definedIn": "pre"
-      },
-      {
-        "id": "dom-htmlanchorelement-attributionsourcepriority",
-        "href": "https://wicg.github.io/conversion-measurement-api/#dom-htmlanchorelement-attributionsourcepriority",
-        "linkingText": [
-          "attributionSourcePriority"
-        ],
-        "localLinkingText": [],
-        "type": "attribute",
-        "for": [
-          "HTMLAnchorElement"
-        ],
-        "access": "public",
-        "informative": false,
-        "heading": {
-          "id": "monkeypatch-anchor",
-          "href": "https://wicg.github.io/conversion-measurement-api/#monkeypatch-anchor",
-          "title": "<a> element",
-          "number": "2.2"
+          "number": "2.1"
         },
         "definedIn": "pre"
       }
