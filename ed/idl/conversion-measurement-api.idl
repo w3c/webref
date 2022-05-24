@@ -4,17 +4,9 @@
 // Source: Attribution Reporting (https://wicg.github.io/conversion-measurement-api/)
 
 partial interface HTMLAnchorElement {
-    [CEReactions] attribute USVString attributionDestination;
-    [CEReactions] attribute DOMString attributionSourceEventId;
-    [CEReactions] attribute USVString attributionReportTo;
-    [CEReactions] attribute long long attributionExpiry;
-    [CEReactions] attribute long long attributionSourcePriority;
+    [CEReactions] attribute USVString attributionSrc;
 };
 
-dictionary AttributionSourceParams {
-  required USVString attributionDestination;
-  required DOMString attributionSourceEventId;
-  USVString attributionReportTo;
-  long long attributionExpiry;
-  long long attributionSourcePriority;
+partial interface HTMLImageElement {
+    [CEReactions] attribute USVString attributionSrc;
 };
