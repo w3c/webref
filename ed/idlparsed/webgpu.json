@@ -4773,7 +4773,7 @@
         "partial": false
       },
       "GPUShaderModuleCompilationHint": {
-        "fragment": "dictionary GPUShaderModuleCompilationHint {\n    required (GPUPipelineLayout or GPUAutoLayoutMode) layout;\n};",
+        "fragment": "dictionary GPUShaderModuleCompilationHint {\n    (GPUPipelineLayout or GPUAutoLayoutMode) layout;\n};",
         "type": "dictionary",
         "name": "GPUShaderModuleCompilationHint",
         "inheritance": null,
@@ -4808,7 +4808,7 @@
               ]
             },
             "default": null,
-            "required": true
+            "required": false
           }
         ],
         "extAttrs": [],

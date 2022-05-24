@@ -543,7 +543,7 @@ dictionary GPUShaderModuleDescriptor : GPUObjectDescriptorBase {
 };
 
 dictionary GPUShaderModuleCompilationHint {
-    required (GPUPipelineLayout or GPUAutoLayoutMode) layout;
+    (GPUPipelineLayout or GPUAutoLayoutMode) layout;
 };
 
 enum GPUCompilationMessageType {
