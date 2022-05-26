@@ -196,7 +196,7 @@
     "idlExtendedNames": {
       "Window": [
         {
-          "fragment": "partial interface Window {\n  [SameObject, Replaceable] readonly attribute VisualViewport visualViewport;\n};",
+          "fragment": "partial interface Window {\n  [SameObject, Replaceable] readonly attribute VisualViewport? visualViewport;\n};",
           "type": "interface",
           "name": "Window",
           "inheritance": null,
@@ -208,7 +208,7 @@
                 "type": "attribute-type",
                 "extAttrs": [],
                 "generic": "",
-                "nullable": false,
+                "nullable": true,
                 "union": false,
                 "idlType": "VisualViewport"
               },
