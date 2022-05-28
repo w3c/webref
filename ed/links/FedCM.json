@@ -4,7 +4,7 @@
     "url": "https://fedidcg.github.io/FedCM/"
   },
   "links": {
-    "https://www.w3.org/community/wicg/": [],
+    "https://www.w3.org/community/fed-id/": [],
     "https://www.w3.org/community/about/agreements/cla/": [],
     "https://www.w3.org/community/": [],
     "https://webkit.org/blog/10218/full-third-party-cookie-blocking-and-more/": [],
@@ -14,7 +14,12 @@
     "https://infra.spec.whatwg.org/": [
       "user-agent",
       "map-exists",
-      "list-size"
+      "list-size",
+      "parse-json-bytes-to-an-infra-value",
+      "ordered-map",
+      "list",
+      "string",
+      "string-is"
     ],
     "https://datatracker.ietf.org/doc/html/draft-bertocci-identity-in-browser-00": [],
     "https://w3c.github.io/webappsec-credential-management/": [
@@ -30,8 +35,8 @@
       "dom-credentialrequestoptions-federated",
       "same-origin-with-its-ancestors",
       "security-origin-confusion",
-      "dom-credentialmediationrequirement-required",
-      "dom-credentialmediationrequirement-silent"
+      "dom-credential-id",
+      "dom-federatedcredential-provider"
     ],
     "https://html.spec.whatwg.org/": [
       "concept-origin",
@@ -40,6 +45,7 @@
       "relevant-settings-object",
       "concept-settings-object-origin",
       "environment-settings-object",
+      "content-type",
       "tracking-user-activation"
     ],
     "https://openid.net/specs/openid-connect-core-1_0.html": [
@@ -56,7 +62,11 @@
     "https://www.w3.org/TR/tracking-dnt/": [],
     "https://github.com/sleevi/psl-problems": [],
     "https://url.spec.whatwg.org/": [
-      "host-registrable-domain"
+      "host-registrable-domain",
+      "concept-url",
+      "concept-url-scheme",
+      "concept-url-host",
+      "concept-url-path"
     ],
     "https://www.w3.org/2001/tag/doc/unsanctioned-tracking/": [],
     "https://httpwg.org/specs/rfc7231.html": [
@@ -80,7 +90,17 @@
       "referrer-policy-strict-origin"
     ],
     "https://fetch.spec.whatwg.org/": [
-      "forbidden-header-name"
+      "forbidden-header-name",
+      "concept-request",
+      "concept-request-url",
+      "concept-request-redirect-mode",
+      "concept-fetch",
+      "process-response-end-of-body",
+      "concept-response",
+      "concept-network-error",
+      "concept-response-status",
+      "ok-status",
+      "concept-response-body"
     ],
     "https://webidl.spec.whatwg.org/": [
       "idl-sequence",
@@ -91,17 +111,23 @@
       "Exposed",
       "SecureContext",
       "idl-promise",
+      "reject",
+      "this",
+      "resolve",
       "idl-undefined"
     ],
     "https://tc39.github.io/ecma262/": [
       "sec-ordinary-object-internal-methods-and-internal-slots"
     ],
-    "https://www.w3.org/TR/CSP3/": [
-      "directive-connect-src"
-    ],
     "https://datatracker.ietf.org/doc/html/rfc7519": [],
     "https://dom.spec.whatwg.org/": [
       "abortsignal"
+    ],
+    "https://mimesniff.spec.whatwg.org/": [
+      "json-mime-type"
+    ],
+    "https://www.w3.org/TR/CSP3/": [
+      "directive-connect-src"
     ],
     "https://openid.net/specs/openid-connect-frontchannel-1_0.html": [],
     "https://w3ctag.github.io/design-principles": [],
