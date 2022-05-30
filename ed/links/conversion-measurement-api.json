@@ -1,7 +1,7 @@
 {
   "spec": {
     "title": "Attribution Reporting",
-    "url": "https://wicg.github.io/conversion-measurement-api/"
+    "url": "https://wicg.github.io/attribution-reporting-api/"
   },
   "links": {
     "https://www.w3.org/community/wicg/": [],
@@ -34,13 +34,8 @@
       "navigation-params-origin",
       "queue-a-task",
       "same-origin",
-      "concept-environment-top-level-origin",
-      "concept-origin-opaque",
-      "concept-relevant-global",
-      "concept-document-window",
-      "allowed-to-use",
-      "concept-settings-object-origin",
       "in-parallel",
+      "concept-origin-opaque",
       "serialization-of-a-site",
       "concept-origin-host",
       "concept-origin-port"
@@ -49,40 +44,13 @@
       "concept-url",
       "concept-url-origin",
       "concept-url-parser",
-      "concept-url-query",
-      "concept-url-path",
       "concept-url-scheme",
       "concept-url-host",
-      "concept-url-port"
+      "concept-url-port",
+      "concept-url-path"
     ],
     "https://webidl.spec.whatwg.org/": [
       "idl-USVString"
-    ],
-    "https://fetch.spec.whatwg.org/": [
-      "concept-main-fetch",
-      "concept-request",
-      "concept-request-current-url",
-      "concept-request-window",
-      "concept-request-redirect-count",
-      "concept-request-url-list",
-      "concept-request-method",
-      "concept-request-url",
-      "concept-request-header-list",
-      "concept-header-list",
-      "concept-header",
-      "concept-request-body",
-      "concept-body",
-      "concept-body-source",
-      "concept-request-referrer",
-      "concept-request-client",
-      "request-service-workers-mode",
-      "concept-request-initiator",
-      "concept-request-mode",
-      "unsafe-request-flag",
-      "concept-request-credentials-mode",
-      "concept-request-cache-mode",
-      "concept-fetch",
-      "process-response"
     ],
     "https://w3c.github.io/webappsec-permissions-policy/": [
       "policy-controlled-feature",
@@ -104,10 +72,10 @@
       "list-remove",
       "list-size",
       "map-iterate",
+      "list-iterate",
       "iteration-continue",
       "set-intersection",
       "list-contain",
-      "list-iterate",
       "list-append",
       "list-sort-in-descending-order",
       "iteration-break",
@@ -123,12 +91,33 @@
     "https://w3c.github.io/webappsec-secure-contexts/": [
       "potentially-trustworthy-origin"
     ],
-    "https://github.com/WICG/conversion-measurement-api/issues/91": [],
     "https://wicg.github.io/uuid/": [
       "dfn-generate-a-random-uuid"
     ],
     "https://github.com/whatwg/infra/issues/201": [],
-    "https://github.com/WICG/conversion-measurement-api/issues/220": [],
+    "https://fetch.spec.whatwg.org/": [
+      "concept-request",
+      "concept-request-method",
+      "concept-request-url",
+      "concept-request-header-list",
+      "concept-header-list",
+      "concept-header",
+      "concept-request-body",
+      "concept-body",
+      "concept-body-source",
+      "concept-request-referrer",
+      "concept-request-client",
+      "concept-request-window",
+      "request-service-workers-mode",
+      "concept-request-initiator",
+      "concept-request-mode",
+      "unsafe-request-flag",
+      "concept-request-credentials-mode",
+      "concept-request-cache-mode",
+      "concept-fetch",
+      "process-response"
+    ],
+    "https://github.com/WICG/attribution-reporting-api/issues/220": [],
     "https://www.w3.org/TR/permissions-policy-1/": [],
     "https://datatracker.ietf.org/doc/html/rfc2119": [],
     "https://www.w3.org/TR/secure-contexts/": []
