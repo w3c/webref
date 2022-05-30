@@ -2422,6 +2422,25 @@
       "definedIn": "dt"
     },
     {
+      "id": "super-luminant",
+      "href": "https://www.w3.org/TR/webgpu/#super-luminant",
+      "linkingText": [
+        "super-luminant"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "color-spaces",
+        "href": "https://www.w3.org/TR/webgpu/#color-spaces",
+        "title": "Color Spaces and Encoding",
+        "number": "3.8"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "navigatorgpu",
       "href": "https://www.w3.org/TR/webgpu/#navigatorgpu",
       "linkingText": [
@@ -20679,6 +20698,25 @@
       "definedIn": "pre"
     },
     {
+      "id": "abstract-opdef-create-a-webgpu-context-on-a-canvas",
+      "href": "https://www.w3.org/TR/webgpu/#abstract-opdef-create-a-webgpu-context-on-a-canvas",
+      "linkingText": [
+        "create a 'webgpu' context on a canvas"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "canvas-getcontext",
+        "href": "https://www.w3.org/TR/webgpu/#canvas-getcontext",
+        "title": "HTMLCanvasElement.getContext()",
+        "number": "20.1"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "gpucanvascontext",
       "href": "https://www.w3.org/TR/webgpu/#gpucanvascontext",
       "linkingText": [
@@ -20744,6 +20782,27 @@
       "href": "https://www.w3.org/TR/webgpu/#dom-gpucanvascontext-texturedescriptor-slot",
       "linkingText": [
         "[[textureDescriptor]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPUCanvasContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "canvas-context",
+        "href": "https://www.w3.org/TR/webgpu/#canvas-context",
+        "title": "GPUCanvasContext",
+        "number": "20.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-gpucanvascontext-drawingbuffer-slot",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpucanvascontext-drawingbuffer-slot",
+      "linkingText": [
+        "[[drawingBuffer]]"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -20866,10 +20925,10 @@
       "definedIn": "dt"
     },
     {
-      "id": "abstract-opdef-present-the-context-content-to-the-canvas",
-      "href": "https://www.w3.org/TR/webgpu/#abstract-opdef-present-the-context-content-to-the-canvas",
+      "id": "abstract-opdef-update-the-rendering-of-the-webgpu-canvas",
+      "href": "https://www.w3.org/TR/webgpu/#abstract-opdef-update-the-rendering-of-the-webgpu-canvas",
       "linkingText": [
-        "present the context content to the canvas"
+        "update the rendering of the WebGPU canvas"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -20904,10 +20963,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "abstract-opdef-invalidate-the-current-texture",
-      "href": "https://www.w3.org/TR/webgpu/#abstract-opdef-invalidate-the-current-texture",
+      "id": "abstract-opdef-replace-the-drawing-buffer",
+      "href": "https://www.w3.org/TR/webgpu/#abstract-opdef-replace-the-drawing-buffer",
       "linkingText": [
-        "Invalidate the current texture"
+        "Replace the drawing buffer"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -20942,10 +21001,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "enumdef-gpucanvascompositingalphamode",
-      "href": "https://www.w3.org/TR/webgpu/#enumdef-gpucanvascompositingalphamode",
+      "id": "enumdef-gpucanvasalphamode",
+      "href": "https://www.w3.org/TR/webgpu/#enumdef-gpucanvasalphamode",
       "linkingText": [
-        "GPUCanvasCompositingAlphaMode"
+        "GPUCanvasAlphaMode"
       ],
       "localLinkingText": [],
       "type": "enum",
@@ -20961,15 +21020,15 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-gpucanvascompositingalphamode-opaque",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpucanvascompositingalphamode-opaque",
+      "id": "dom-gpucanvasalphamode-opaque",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpucanvasalphamode-opaque",
       "linkingText": [
         "\"opaque\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
       "for": [
-        "GPUCanvasCompositingAlphaMode"
+        "GPUCanvasAlphaMode"
       ],
       "access": "public",
       "informative": false,
@@ -20982,15 +21041,15 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-gpucanvascompositingalphamode-premultiplied",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpucanvascompositingalphamode-premultiplied",
+      "id": "dom-gpucanvasalphamode-premultiplied",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpucanvasalphamode-premultiplied",
       "linkingText": [
         "\"premultiplied\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
       "for": [
-        "GPUCanvasCompositingAlphaMode"
+        "GPUCanvasAlphaMode"
       ],
       "access": "public",
       "informative": false,
@@ -21127,10 +21186,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-gpucanvasconfiguration-compositingalphamode",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpucanvasconfiguration-compositingalphamode",
+      "id": "dom-gpucanvasconfiguration-alphamode",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpucanvasconfiguration-alphamode",
       "linkingText": [
-        "compositingAlphaMode"
+        "alphaMode"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -21186,22 +21245,22 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-gpucanvascompositingalphamode-gpucanvascompositingalphamode",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpucanvascompositingalphamode-gpucanvascompositingalphamode",
+      "id": "dom-gpucanvasalphamode-gpucanvasalphamode",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpucanvasalphamode-gpucanvasalphamode",
       "linkingText": [
-        "GPUCanvasCompositingAlphaMode"
+        "GPUCanvasAlphaMode"
       ],
       "localLinkingText": [],
       "type": "enum-value",
       "for": [
-        "GPUCanvasCompositingAlphaMode"
+        "GPUCanvasAlphaMode"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "GPUCanvasCompositingAlphaMode",
-        "href": "https://www.w3.org/TR/webgpu/#GPUCanvasCompositingAlphaMode",
-        "title": "GPUCanvasCompositingAlphaMode",
+        "id": "GPUCanvasAlphaMode",
+        "href": "https://www.w3.org/TR/webgpu/#GPUCanvasAlphaMode",
+        "title": "GPUCanvasAlphaMode",
         "number": "20.4"
       },
       "definedIn": "heading"

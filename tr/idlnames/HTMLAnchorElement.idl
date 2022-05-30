@@ -35,12 +35,3 @@ partial interface HTMLAnchorElement {
     [CEReactions] attribute unsigned long attributionSourceId;
     [CEReactions] attribute DOMString attributionDestination;
 };
-
-// Source: Attribution Reporting (https://wicg.github.io/conversion-measurement-api/)
-partial interface HTMLAnchorElement {
-    [CEReactions] attribute USVString attributionDestination;
-    [CEReactions] attribute DOMString attributionSourceEventId;
-    [CEReactions] attribute USVString attributionReportTo;
-    [CEReactions] attribute long long attributionExpiry;
-    [CEReactions] attribute long long attributionSourcePriority;
-};

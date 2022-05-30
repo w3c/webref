@@ -4773,7 +4773,7 @@
         "partial": false
       },
       "GPUShaderModuleCompilationHint": {
-        "fragment": "dictionary GPUShaderModuleCompilationHint {\n    required (GPUPipelineLayout or GPUAutoLayoutMode) layout;\n};",
+        "fragment": "dictionary GPUShaderModuleCompilationHint {\n    (GPUPipelineLayout or GPUAutoLayoutMode) layout;\n};",
         "type": "dictionary",
         "name": "GPUShaderModuleCompilationHint",
         "inheritance": null,
@@ -4808,7 +4808,7 @@
               ]
             },
             "default": null,
-            "required": true
+            "required": false
           }
         ],
         "extAttrs": [],
@@ -10394,10 +10394,10 @@
         ],
         "partial": false
       },
-      "GPUCanvasCompositingAlphaMode": {
-        "fragment": "enum GPUCanvasCompositingAlphaMode {\n    \"opaque\",\n    \"premultiplied\",\n};",
+      "GPUCanvasAlphaMode": {
+        "fragment": "enum GPUCanvasAlphaMode {\n    \"opaque\",\n    \"premultiplied\",\n};",
         "type": "enum",
-        "name": "GPUCanvasCompositingAlphaMode",
+        "name": "GPUCanvasAlphaMode",
         "values": [
           {
             "type": "enum-value",
@@ -10411,7 +10411,7 @@
         "extAttrs": []
       },
       "GPUCanvasConfiguration": {
-        "fragment": "dictionary GPUCanvasConfiguration {\n    required GPUDevice device;\n    required GPUTextureFormat format;\n    GPUTextureUsageFlags usage = 0x10;  // GPUTextureUsage.RENDER_ATTACHMENT\n    sequence<GPUTextureFormat> viewFormats = [];\n    GPUPredefinedColorSpace colorSpace = \"srgb\";\n    GPUCanvasCompositingAlphaMode compositingAlphaMode = \"opaque\";\n};",
+        "fragment": "dictionary GPUCanvasConfiguration {\n    required GPUDevice device;\n    required GPUTextureFormat format;\n    GPUTextureUsageFlags usage = 0x10;  // GPUTextureUsage.RENDER_ATTACHMENT\n    sequence<GPUTextureFormat> viewFormats = [];\n    GPUPredefinedColorSpace colorSpace = \"srgb\";\n    GPUCanvasAlphaMode alphaMode = \"opaque\";\n};",
         "type": "dictionary",
         "name": "GPUCanvasConfiguration",
         "inheritance": null,
@@ -10511,7 +10511,7 @@
           },
           {
             "type": "field",
-            "name": "compositingAlphaMode",
+            "name": "alphaMode",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -10519,7 +10519,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "GPUCanvasCompositingAlphaMode"
+              "idlType": "GPUCanvasAlphaMode"
             },
             "default": {
               "type": "string",
@@ -12513,7 +12513,7 @@
         "GPUTextureFormat",
         "GPUTextureUsageFlags",
         "GPUPredefinedColorSpace",
-        "GPUCanvasCompositingAlphaMode"
+        "GPUCanvasAlphaMode"
       ],
       "GPUDeviceLostInfo": [
         "GPUDeviceLostReason"
