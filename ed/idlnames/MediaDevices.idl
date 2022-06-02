@@ -11,12 +11,6 @@ partial interface MediaDevices {
   attribute EventHandler oncaptureaction;
 };
 
-// Source: Viewport Capture (https://w3c.github.io/mediacapture-viewport/)
-partial interface MediaDevices {
-  Promise<MediaStream> getViewportMedia(
-      optional DisplayMediaStreamConstraints constraints = {});
-};
-
 // Source: Audio Output Devices API (https://www.w3.org/TR/audio-output/)
 partial interface MediaDevices {
   Promise<MediaDeviceInfo> selectAudioOutput(optional AudioOutputOptions options = {});
@@ -27,16 +21,16 @@ partial interface MediaDevices {
   undefined setCaptureHandleConfig(optional CaptureHandleConfig config = {});
 };
 
-// Source: Region Capture (https://www.w3.org/TR/mediacapture-region/)
-partial interface MediaDevices {
-  Promise<CropTarget>
-  produceCropTarget(Element element);
-};
-
 // Source: Media Capture and Streams (https://www.w3.org/TR/mediacapture-streams/)
 partial interface MediaDevices {
   MediaTrackSupportedConstraints getSupportedConstraints();
   Promise<MediaStream> getUserMedia(optional MediaStreamConstraints constraints = {});
+};
+
+// Source: Viewport Capture (https://www.w3.org/TR/mediacapture-viewport/)
+partial interface MediaDevices {
+  Promise<MediaStream> getViewportMedia(
+      optional DisplayMediaStreamConstraints constraints = {});
 };
 
 // Source: Screen Capture (https://www.w3.org/TR/screen-capture/)

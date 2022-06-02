@@ -6,16 +6,16 @@ interface Performance : EventTarget {
     [Default] object toJSON();
 };
 
-// Source: Event Timing API (https://w3c.github.io/event-timing/)
+// Source: Measure Memory API (https://wicg.github.io/performance-measure-memory/)
+partial interface Performance {
+  [Exposed=(Window,ServiceWorker,SharedWorker), CrossOriginIsolated] Promise<MemoryMeasurement> measureUserAgentSpecificMemory();
+};
+
+// Source: Event Timing API (https://www.w3.org/TR/event-timing/)
 [Exposed=Window]
 partial interface Performance {
     [SameObject] readonly attribute EventCounts eventCounts;
     [SameObject] readonly attribute InteractionCounts interactionCounts;
-};
-
-// Source: Measure Memory API (https://wicg.github.io/performance-measure-memory/)
-partial interface Performance {
-  [Exposed=(Window,ServiceWorker,SharedWorker), CrossOriginIsolated] Promise<MemoryMeasurement> measureUserAgentSpecificMemory();
 };
 
 // Source: Navigation Timing Level 2 (https://www.w3.org/TR/navigation-timing-2/)

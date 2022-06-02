@@ -34,9 +34,9 @@
     {
       "spec": {
         "title": "Attribution Reporting",
-        "url": "https://wicg.github.io/conversion-measurement-api/"
+        "url": "https://wicg.github.io/attribution-reporting-api/"
       },
-      "fragment": "partial interface HTMLAnchorElement {\n    [CEReactions] attribute USVString attributionSrc;\n};"
+      "fragment": "HTMLAnchorElement includes HTMLAttributionSrcElementUtils;"
     }
   ],
   "inheritance": {
@@ -569,6 +569,21 @@
         },
         "fragment": "interface mixin HTMLHyperlinkElementUtils {\n  [CEReactions] stringifier attribute USVString href;\n  readonly attribute USVString origin;\n  [CEReactions] attribute USVString protocol;\n  [CEReactions] attribute USVString username;\n  [CEReactions] attribute USVString password;\n  [CEReactions] attribute USVString host;\n  [CEReactions] attribute USVString hostname;\n  [CEReactions] attribute USVString port;\n  [CEReactions] attribute USVString pathname;\n  [CEReactions] attribute USVString search;\n  [CEReactions] attribute USVString hash;\n};",
         "href": "https://html.spec.whatwg.org/multipage/links.html#htmlhyperlinkelementutils"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "HTMLAttributionSrcElementUtils",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "Attribution Reporting",
+          "url": "https://wicg.github.io/attribution-reporting-api/"
+        },
+        "fragment": "interface mixin HTMLAttributionSrcElementUtils {\n    [CEReactions] attribute USVString attributionSrc;\n};",
+        "href": "https://wicg.github.io/attribution-reporting-api/#htmlattributionsrcelementutils"
       },
       "extended": [],
       "inheritance": null,
@@ -3464,24 +3479,43 @@
         "definedIn": "pre"
       }
     ],
-    "https://wicg.github.io/conversion-measurement-api/": [
+    "https://wicg.github.io/attribution-reporting-api/": [
       {
-        "id": "dom-htmlanchorelement-attributionsrc",
-        "href": "https://wicg.github.io/attribution-reporting-api/#dom-htmlanchorelement-attributionsrc",
+        "id": "htmlattributionsrcelementutils",
+        "href": "https://wicg.github.io/attribution-reporting-api/#htmlattributionsrcelementutils",
+        "linkingText": [
+          "HTMLAttributionSrcElementUtils"
+        ],
+        "localLinkingText": [],
+        "type": "interface",
+        "for": [],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "monkeypatch-attributionsrc",
+          "href": "https://wicg.github.io/attribution-reporting-api/#monkeypatch-attributionsrc",
+          "title": "API for elements",
+          "number": "2.1"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-htmlattributionsrcelementutils-attributionsrc",
+        "href": "https://wicg.github.io/attribution-reporting-api/#dom-htmlattributionsrcelementutils-attributionsrc",
         "linkingText": [
           "attributionSrc"
         ],
         "localLinkingText": [],
         "type": "attribute",
         "for": [
-          "HTMLAnchorElement"
+          "HTMLAttributionSrcElementUtils"
         ],
         "access": "public",
         "informative": false,
         "heading": {
-          "id": "monkeypatch-anchor",
-          "href": "https://wicg.github.io/attribution-reporting-api/#monkeypatch-anchor",
-          "title": "<a> element",
+          "id": "monkeypatch-attributionsrc",
+          "href": "https://wicg.github.io/attribution-reporting-api/#monkeypatch-attributionsrc",
+          "title": "API for elements",
           "number": "2.1"
         },
         "definedIn": "pre"

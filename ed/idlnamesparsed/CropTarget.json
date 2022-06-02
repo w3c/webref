@@ -6,7 +6,7 @@
       "title": "Region Capture",
       "url": "https://www.w3.org/TR/mediacapture-region/"
     },
-    "fragment": "[Exposed=(Window,Worker), Serializable]\ninterface CropTarget {\n  // Intentionally empty; just an opaque identifier.\n};",
+    "fragment": "[Exposed=(Window,Worker), Serializable]\ninterface CropTarget {\n  [SecureContext] static Promise<CropTarget> fromElement(Element element);\n};",
     "href": "https://w3c.github.io/mediacapture-region/#dom-croptarget"
   },
   "extended": [],
@@ -32,6 +32,32 @@
           "number": "6.2"
         },
         "definedIn": "heading"
+      },
+      {
+        "id": "dom-croptarget-fromelement",
+        "href": "https://w3c.github.io/mediacapture-region/#dom-croptarget-fromelement",
+        "linkingText": [
+          "fromElement()",
+          "fromElement(element)"
+        ],
+        "localLinkingText": [
+          "CropTarget.fromElement",
+          "CropTarget.fromElement()",
+          "fromElement"
+        ],
+        "type": "method",
+        "for": [
+          "CropTarget"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "crop-target",
+          "href": "https://w3c.github.io/mediacapture-region/#crop-target",
+          "title": "CropTarget Definition",
+          "number": "6.2"
+        },
+        "definedIn": "dt"
       }
     ]
   }

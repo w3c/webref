@@ -19,13 +19,6 @@
     },
     {
       "spec": {
-        "title": "Viewport Capture",
-        "url": "https://w3c.github.io/mediacapture-viewport/"
-      },
-      "fragment": "partial interface MediaDevices {\n  Promise<MediaStream> getViewportMedia(\n      optional DisplayMediaStreamConstraints constraints = {});\n};"
-    },
-    {
-      "spec": {
         "title": "Audio Output Devices API",
         "url": "https://www.w3.org/TR/audio-output/"
       },
@@ -40,17 +33,17 @@
     },
     {
       "spec": {
-        "title": "Region Capture",
-        "url": "https://www.w3.org/TR/mediacapture-region/"
-      },
-      "fragment": "partial interface MediaDevices {\n  Promise<CropTarget>\n  produceCropTarget(Element element);\n};"
-    },
-    {
-      "spec": {
         "title": "Media Capture and Streams",
         "url": "https://www.w3.org/TR/mediacapture-streams/"
       },
       "fragment": "partial interface MediaDevices {\n  MediaTrackSupportedConstraints getSupportedConstraints();\n  Promise<MediaStream> getUserMedia(optional MediaStreamConstraints constraints = {});\n};"
+    },
+    {
+      "spec": {
+        "title": "Viewport Capture",
+        "url": "https://www.w3.org/TR/mediacapture-viewport/"
+      },
+      "fragment": "partial interface MediaDevices {\n  Promise<MediaStream> getViewportMedia(\n      optional DisplayMediaStreamConstraints constraints = {});\n};"
     },
     {
       "spec": {
@@ -244,34 +237,6 @@
         "definedIn": "dt"
       }
     ],
-    "https://w3c.github.io/mediacapture-viewport/": [
-      {
-        "id": "dom-mediadevices-getviewportmedia",
-        "href": "https://w3c.github.io/mediacapture-viewport/#dom-mediadevices-getviewportmedia",
-        "linkingText": [
-          "getViewportMedia()",
-          "getViewportMedia(constraints)"
-        ],
-        "localLinkingText": [
-          "MediaDevices.getViewportMedia",
-          "MediaDevices.getViewportMedia()",
-          "getViewportMedia"
-        ],
-        "type": "method",
-        "for": [
-          "MediaDevices"
-        ],
-        "access": "public",
-        "informative": false,
-        "heading": {
-          "id": "mediadevices-additions",
-          "href": "https://w3c.github.io/mediacapture-viewport/#mediadevices-additions",
-          "title": "MediaDevices Additions",
-          "number": "5.1"
-        },
-        "definedIn": "dt"
-      }
-    ],
     "https://www.w3.org/TR/audio-output/": [
       {
         "id": "dom-mediadevices-selectaudiooutput",
@@ -327,18 +292,18 @@
         "definedIn": "dt"
       }
     ],
-    "https://www.w3.org/TR/mediacapture-region/": [
+    "https://www.w3.org/TR/mediacapture-viewport/": [
       {
-        "id": "dom-mediadevices-producecroptarget",
-        "href": "https://w3c.github.io/mediacapture-region/#dom-mediadevices-producecroptarget",
+        "id": "dom-mediadevices-getviewportmedia",
+        "href": "https://w3c.github.io/mediacapture-viewport/#dom-mediadevices-getviewportmedia",
         "linkingText": [
-          "produceCropTarget()",
-          "produceCropTarget(element)"
+          "getViewportMedia()",
+          "getViewportMedia(constraints)"
         ],
         "localLinkingText": [
-          "MediaDevices.produceCropTarget",
-          "MediaDevices.produceCropTarget()",
-          "produceCropTarget"
+          "MediaDevices.getViewportMedia",
+          "MediaDevices.getViewportMedia()",
+          "getViewportMedia"
         ],
         "type": "method",
         "for": [
@@ -347,10 +312,10 @@
         "access": "public",
         "informative": false,
         "heading": {
-          "id": "producecroptarget-method",
-          "href": "https://w3c.github.io/mediacapture-region/#producecroptarget-method",
-          "title": "MediaDevices.produceCropTarget",
-          "number": "6.3"
+          "id": "mediadevices-additions",
+          "href": "https://w3c.github.io/mediacapture-viewport/#mediadevices-additions",
+          "title": "MediaDevices Additions",
+          "number": "5.1"
         },
         "definedIn": "dt"
       }
