@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2022-06-02T06:42:44.554Z",
+  "date": "2022-06-02T12:44:32.436Z",
   "options": {
     "fallback": "webref-fallback/ed/index.json",
     "output": "report",
@@ -21,7 +21,7 @@
   },
   "stats": {
     "crawled": 467,
-    "errors": 0
+    "errors": 2
   },
   "crawler": "reffy-7.0.11",
   "results": [
@@ -4292,10 +4292,10 @@
       ],
       "crawled": "https://websockets.spec.whatwg.org/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 10 May 2022 08:12:08 GMT"
+        "lastModified": "Thu, 02 Jun 2022 10:10:54 GMT"
       },
       "generator": "bikeshed",
-      "date": "10 May 2022",
+      "date": "2 June 2022",
       "links": "links/websockets.json",
       "refs": "refs/websockets.json",
       "idl": "idl/websockets.idl",
@@ -17150,7 +17150,8 @@
       "css": "css/CSS.json",
       "dfns": "dfns/CSS22.json",
       "headings": "headings/CSS22.json",
-      "ids": "ids/CSS22.json"
+      "ids": "ids/CSS22.json",
+      "error": "Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers' Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers'\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:483:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 325)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/css3-exclusions/",
@@ -23416,6 +23417,7 @@
       "dfns": "dfns/virtual-keyboard.json",
       "headings": "headings/virtual-keyboard.json",
       "ids": "ids/virtual-keyboard.json",
+      "error": "Error: Loading https://w3c.github.io/virtual-keyboard/ triggered HTTP status 503 Error: Loading https://w3c.github.io/virtual-keyboard/ triggered HTTP status 503\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 432)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)",
       "idlparsed": "idlparsed/virtual-keyboard.json"
     },
     {
