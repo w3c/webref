@@ -1,0 +1,91 @@
+{
+  "spec": {
+    "title": "Attribution Reporting",
+    "url": "https://wicg.github.io/attribution-reporting-api/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {},
+      "functions": {}
+    },
+    "idlNames": {
+      "HTMLAttributionSrcElementUtils": {
+        "fragment": "interface mixin HTMLAttributionSrcElementUtils {\n    [CEReactions] attribute USVString attributionSrc;\n};",
+        "type": "interface mixin",
+        "name": "HTMLAttributionSrcElementUtils",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "attribute",
+            "name": "attributionSrc",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      }
+    },
+    "idlExtendedNames": {
+      "HTMLAnchorElement": [
+        {
+          "fragment": "HTMLAnchorElement includes HTMLAttributionSrcElementUtils;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "HTMLAnchorElement",
+          "includes": "HTMLAttributionSrcElementUtils"
+        }
+      ],
+      "HTMLImageElement": [
+        {
+          "fragment": "HTMLImageElement includes HTMLAttributionSrcElementUtils;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "HTMLImageElement",
+          "includes": "HTMLAttributionSrcElementUtils"
+        }
+      ],
+      "HTMLScriptElement": [
+        {
+          "fragment": "HTMLScriptElement includes HTMLAttributionSrcElementUtils;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "HTMLScriptElement",
+          "includes": "HTMLAttributionSrcElementUtils"
+        }
+      ]
+    },
+    "globals": {},
+    "exposed": {},
+    "dependencies": {
+      "HTMLAttributionSrcElementUtils": [],
+      "HTMLAnchorElement": [
+        "HTMLAttributionSrcElementUtils"
+      ],
+      "HTMLImageElement": [
+        "HTMLAttributionSrcElementUtils"
+      ],
+      "HTMLScriptElement": [
+        "HTMLAttributionSrcElementUtils"
+      ]
+    },
+    "externalDependencies": [],
+    "hasObsoleteIdl": false
+  }
+}

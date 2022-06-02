@@ -12,17 +12,17 @@
   "extended": [
     {
       "spec": {
-        "title": "Event Timing API",
-        "url": "https://w3c.github.io/event-timing/"
-      },
-      "fragment": "[Exposed=Window]\npartial interface Performance {\n    [SameObject] readonly attribute EventCounts eventCounts;\n    [SameObject] readonly attribute InteractionCounts interactionCounts;\n};"
-    },
-    {
-      "spec": {
         "title": "Measure Memory API",
         "url": "https://wicg.github.io/performance-measure-memory/"
       },
       "fragment": "partial interface Performance {\n  [Exposed=(Window,ServiceWorker,SharedWorker), CrossOriginIsolated] Promise<MemoryMeasurement> measureUserAgentSpecificMemory();\n};"
+    },
+    {
+      "spec": {
+        "title": "Event Timing API",
+        "url": "https://www.w3.org/TR/event-timing/"
+      },
+      "fragment": "[Exposed=Window]\npartial interface Performance {\n    [SameObject] readonly attribute EventCounts eventCounts;\n    [SameObject] readonly attribute InteractionCounts interactionCounts;\n};"
     },
     {
       "spec": {

@@ -20,9 +20,9 @@
     {
       "spec": {
         "title": "Attribution Reporting",
-        "url": "https://wicg.github.io/conversion-measurement-api/"
+        "url": "https://wicg.github.io/attribution-reporting-api/"
       },
-      "fragment": "partial interface HTMLImageElement {\n    [CEReactions] attribute USVString attributionSrc;\n};"
+      "fragment": "HTMLImageElement includes HTMLAttributionSrcElementUtils;"
     },
     {
       "spec": {
@@ -558,5 +558,21 @@
       }
     ]
   },
-  "includes": []
+  "includes": [
+    {
+      "name": "HTMLAttributionSrcElementUtils",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "Attribution Reporting",
+          "url": "https://wicg.github.io/attribution-reporting-api/"
+        },
+        "fragment": "interface mixin HTMLAttributionSrcElementUtils {\n    [CEReactions] attribute USVString attributionSrc;\n};",
+        "href": "https://wicg.github.io/attribution-reporting-api/#htmlattributionsrcelementutils"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    }
+  ]
 }

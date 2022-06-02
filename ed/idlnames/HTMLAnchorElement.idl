@@ -36,7 +36,5 @@ partial interface HTMLAnchorElement {
     [CEReactions] attribute DOMString attributionDestination;
 };
 
-// Source: Attribution Reporting (https://wicg.github.io/conversion-measurement-api/)
-partial interface HTMLAnchorElement {
-    [CEReactions] attribute USVString attributionSrc;
-};
+// Source: Attribution Reporting (https://wicg.github.io/attribution-reporting-api/)
+HTMLAnchorElement includes HTMLAttributionSrcElementUtils;
