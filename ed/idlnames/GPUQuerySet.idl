@@ -2,6 +2,9 @@
 [Exposed=(Window, DedicatedWorker), SecureContext]
 interface GPUQuerySet {
     undefined destroy();
+
+    readonly attribute GPUQueryType type;
+    readonly attribute GPUSize32 count;
 };
 
 // Source: WebGPU (https://www.w3.org/TR/webgpu/)

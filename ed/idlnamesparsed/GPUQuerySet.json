@@ -6,7 +6,7 @@
       "title": "WebGPU",
       "url": "https://www.w3.org/TR/webgpu/"
     },
-    "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUQuerySet {\n    undefined destroy();\n};",
+    "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUQuerySet {\n    undefined destroy();\n\n    readonly attribute GPUQueryType type;\n    readonly attribute GPUSize32 count;\n};",
     "href": "https://gpuweb.github.io/gpuweb/#gpuqueryset"
   },
   "extended": [
