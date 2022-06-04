@@ -1857,7 +1857,7 @@
         "partial": false
       },
       "GPUBuffer": {
-        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUBuffer {\n    Promise<undefined> mapAsync(GPUMapModeFlags mode, optional GPUSize64 offset = 0, optional GPUSize64 size);\n    ArrayBuffer getMappedRange(optional GPUSize64 offset = 0, optional GPUSize64 size);\n    undefined unmap();\n\n    undefined destroy();\n};",
+        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUBuffer {\n    Promise<undefined> mapAsync(GPUMapModeFlags mode, optional GPUSize64 offset = 0, optional GPUSize64 size);\n    ArrayBuffer getMappedRange(optional GPUSize64 offset = 0, optional GPUSize64 size);\n    undefined unmap();\n\n    undefined destroy();\n\n    readonly attribute GPUSize64 size;\n    readonly attribute GPUBufferUsageFlags usage;\n};",
         "type": "interface",
         "name": "GPUBuffer",
         "inheritance": null,
@@ -2018,6 +2018,36 @@
             "arguments": [],
             "extAttrs": [],
             "special": ""
+          },
+          {
+            "type": "attribute",
+            "name": "size",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUSize64"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "usage",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUBufferUsageFlags"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
           }
         ],
         "extAttrs": [
@@ -2405,7 +2435,7 @@
         "partial": false
       },
       "GPUTexture": {
-        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUTexture {\n    GPUTextureView createView(optional GPUTextureViewDescriptor descriptor = {});\n\n    undefined destroy();\n};",
+        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUTexture {\n    GPUTextureView createView(optional GPUTextureViewDescriptor descriptor = {});\n\n    undefined destroy();\n\n    readonly attribute GPUIntegerCoordinate width;\n    readonly attribute GPUIntegerCoordinate height;\n    readonly attribute GPUIntegerCoordinate depthOrArrayLayers;\n    readonly attribute GPUIntegerCoordinate mipLevelCount;\n    readonly attribute GPUSize32 sampleCount;\n    readonly attribute GPUTextureDimension dimension;\n    readonly attribute GPUTextureFormat format;\n    readonly attribute GPUTextureUsageFlags usage;\n};",
         "type": "interface",
         "name": "GPUTexture",
         "inheritance": null,
@@ -2458,6 +2488,126 @@
             "arguments": [],
             "extAttrs": [],
             "special": ""
+          },
+          {
+            "type": "attribute",
+            "name": "width",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUIntegerCoordinate"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "height",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUIntegerCoordinate"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "depthOrArrayLayers",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUIntegerCoordinate"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "mipLevelCount",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUIntegerCoordinate"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "sampleCount",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUSize32"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "dimension",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUTextureDimension"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "format",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUTextureFormat"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "usage",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUTextureUsageFlags"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
           }
         ],
         "extAttrs": [
@@ -10179,7 +10329,7 @@
         "partial": false
       },
       "GPUQuerySet": {
-        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUQuerySet {\n    undefined destroy();\n};",
+        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUQuerySet {\n    undefined destroy();\n\n    readonly attribute GPUQueryType type;\n    readonly attribute GPUSize32 count;\n};",
         "type": "interface",
         "name": "GPUQuerySet",
         "inheritance": null,
@@ -10198,6 +10348,36 @@
             "arguments": [],
             "extAttrs": [],
             "special": ""
+          },
+          {
+            "type": "attribute",
+            "name": "type",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUQueryType"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "count",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUSize32"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
           }
         ],
         "extAttrs": [
@@ -12135,6 +12315,7 @@
         "GPUMapModeFlags",
         "GPUSize64",
         "ArrayBuffer",
+        "GPUBufferUsageFlags",
         "GPUObjectBase"
       ],
       "GPUBufferDescriptor": [
@@ -12147,6 +12328,11 @@
       "GPUTexture": [
         "GPUTextureView",
         "GPUTextureViewDescriptor",
+        "GPUIntegerCoordinate",
+        "GPUSize32",
+        "GPUTextureDimension",
+        "GPUTextureFormat",
+        "GPUTextureUsageFlags",
         "GPUObjectBase"
       ],
       "GPUTextureDescriptor": [
@@ -12510,6 +12696,8 @@
         "GPUObjectBase"
       ],
       "GPUQuerySet": [
+        "GPUQueryType",
+        "GPUSize32",
         "GPUObjectBase"
       ],
       "GPUQuerySetDescriptor": [

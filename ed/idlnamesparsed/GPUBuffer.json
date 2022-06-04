@@ -6,7 +6,7 @@
       "title": "WebGPU",
       "url": "https://www.w3.org/TR/webgpu/"
     },
-    "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUBuffer {\n    Promise<undefined> mapAsync(GPUMapModeFlags mode, optional GPUSize64 offset = 0, optional GPUSize64 size);\n    ArrayBuffer getMappedRange(optional GPUSize64 offset = 0, optional GPUSize64 size);\n    undefined unmap();\n\n    undefined destroy();\n};",
+    "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUBuffer {\n    Promise<undefined> mapAsync(GPUMapModeFlags mode, optional GPUSize64 offset = 0, optional GPUSize64 size);\n    ArrayBuffer getMappedRange(optional GPUSize64 offset = 0, optional GPUSize64 size);\n    undefined unmap();\n\n    undefined destroy();\n\n    readonly attribute GPUSize64 size;\n    readonly attribute GPUBufferUsageFlags usage;\n};",
     "href": "https://gpuweb.github.io/gpuweb/#gpubuffer"
   },
   "extended": [
@@ -142,6 +142,48 @@
           "href": "https://gpuweb.github.io/gpuweb/#buffer-destruction",
           "title": "Buffer Destruction",
           "number": "5.3"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpubuffer-size",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpubuffer-size",
+        "linkingText": [
+          "size"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "GPUBuffer"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "buffer-interface",
+          "href": "https://gpuweb.github.io/gpuweb/#buffer-interface",
+          "title": "GPUBuffer",
+          "number": "5.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpubuffer-usage",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpubuffer-usage",
+        "linkingText": [
+          "usage"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "GPUBuffer"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "buffer-interface",
+          "href": "https://gpuweb.github.io/gpuweb/#buffer-interface",
+          "title": "GPUBuffer",
+          "number": "5.1"
         },
         "definedIn": "dt"
       },

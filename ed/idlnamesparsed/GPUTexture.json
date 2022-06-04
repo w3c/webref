@@ -6,7 +6,7 @@
       "title": "WebGPU",
       "url": "https://www.w3.org/TR/webgpu/"
     },
-    "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUTexture {\n    GPUTextureView createView(optional GPUTextureViewDescriptor descriptor = {});\n\n    undefined destroy();\n};",
+    "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUTexture {\n    GPUTextureView createView(optional GPUTextureViewDescriptor descriptor = {});\n\n    undefined destroy();\n\n    readonly attribute GPUIntegerCoordinate width;\n    readonly attribute GPUIntegerCoordinate height;\n    readonly attribute GPUIntegerCoordinate depthOrArrayLayers;\n    readonly attribute GPUIntegerCoordinate mipLevelCount;\n    readonly attribute GPUSize32 sampleCount;\n    readonly attribute GPUTextureDimension dimension;\n    readonly attribute GPUTextureFormat format;\n    readonly attribute GPUTextureUsageFlags usage;\n};",
     "href": "https://gpuweb.github.io/gpuweb/#gputexture"
   },
   "extended": [
@@ -97,6 +97,174 @@
           "href": "https://gpuweb.github.io/gpuweb/#texture-destruction",
           "title": "Texture Destruction",
           "number": "6.1.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gputexture-width",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputexture-width",
+        "linkingText": [
+          "width"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "GPUTexture"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-interface",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-interface",
+          "title": "GPUTexture",
+          "number": "6.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gputexture-height",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputexture-height",
+        "linkingText": [
+          "height"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "GPUTexture"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-interface",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-interface",
+          "title": "GPUTexture",
+          "number": "6.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gputexture-depthorarraylayers",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputexture-depthorarraylayers",
+        "linkingText": [
+          "depthOrArrayLayers"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "GPUTexture"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-interface",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-interface",
+          "title": "GPUTexture",
+          "number": "6.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gputexture-miplevelcount",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputexture-miplevelcount",
+        "linkingText": [
+          "mipLevelCount"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "GPUTexture"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-interface",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-interface",
+          "title": "GPUTexture",
+          "number": "6.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gputexture-samplecount",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputexture-samplecount",
+        "linkingText": [
+          "sampleCount"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "GPUTexture"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-interface",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-interface",
+          "title": "GPUTexture",
+          "number": "6.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gputexture-dimension",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputexture-dimension",
+        "linkingText": [
+          "dimension"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "GPUTexture"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-interface",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-interface",
+          "title": "GPUTexture",
+          "number": "6.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gputexture-format",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputexture-format",
+        "linkingText": [
+          "format"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "GPUTexture"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-interface",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-interface",
+          "title": "GPUTexture",
+          "number": "6.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gputexture-usage",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gputexture-usage",
+        "linkingText": [
+          "usage"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "GPUTexture"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "texture-interface",
+          "href": "https://gpuweb.github.io/gpuweb/#texture-interface",
+          "title": "GPUTexture",
+          "number": "6.1"
         },
         "definedIn": "dt"
       },

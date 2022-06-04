@@ -6,7 +6,7 @@
       "title": "WebGPU",
       "url": "https://www.w3.org/TR/webgpu/"
     },
-    "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUQuerySet {\n    undefined destroy();\n};",
+    "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUQuerySet {\n    undefined destroy();\n\n    readonly attribute GPUQueryType type;\n    readonly attribute GPUSize32 count;\n};",
     "href": "https://gpuweb.github.io/gpuweb/#gpuqueryset"
   },
   "extended": [
@@ -75,6 +75,48 @@
           "href": "https://gpuweb.github.io/gpuweb/#queryset-destruction",
           "title": "QuerySet Destruction",
           "number": "19.1.2"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpuqueryset-type",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpuqueryset-type",
+        "linkingText": [
+          "type"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "GPUQuerySet"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "queryset",
+          "href": "https://gpuweb.github.io/gpuweb/#queryset",
+          "title": "GPUQuerySet",
+          "number": "19.1"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-gpuqueryset-count",
+        "href": "https://gpuweb.github.io/gpuweb/#dom-gpuqueryset-count",
+        "linkingText": [
+          "count"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "GPUQuerySet"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "queryset",
+          "href": "https://gpuweb.github.io/gpuweb/#queryset",
+          "title": "GPUQuerySet",
+          "number": "19.1"
         },
         "definedIn": "dt"
       },

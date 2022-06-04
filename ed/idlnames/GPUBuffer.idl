@@ -6,6 +6,9 @@ interface GPUBuffer {
     undefined unmap();
 
     undefined destroy();
+
+    readonly attribute GPUSize64 size;
+    readonly attribute GPUBufferUsageFlags usage;
 };
 
 // Source: WebGPU (https://www.w3.org/TR/webgpu/)
