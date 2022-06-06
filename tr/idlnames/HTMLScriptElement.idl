@@ -26,6 +26,9 @@ partial interface HTMLScriptElement {
   [CEReactions] attribute DOMString htmlFor;
 };
 
+// Source: Attribution Reporting (https://wicg.github.io/attribution-reporting-api/)
+HTMLScriptElement includes HTMLAttributionSrcElementUtils;
+
 // Source: Priority Hints (https://wicg.github.io/priority-hints/)
 partial interface HTMLScriptElement {
     [CEReactions] attribute DOMString fetchPriority;

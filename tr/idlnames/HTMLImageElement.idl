@@ -38,6 +38,9 @@ partial interface HTMLImageElement {
   [CEReactions] attribute [LegacyNullToEmptyString] DOMString border;
 };
 
+// Source: Attribution Reporting (https://wicg.github.io/attribution-reporting-api/)
+HTMLImageElement includes HTMLAttributionSrcElementUtils;
+
 // Source: Priority Hints (https://wicg.github.io/priority-hints/)
 partial interface HTMLImageElement {
     [CEReactions] attribute DOMString fetchPriority;

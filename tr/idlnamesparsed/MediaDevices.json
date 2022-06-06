@@ -19,13 +19,6 @@
     },
     {
       "spec": {
-        "title": "Viewport Capture",
-        "url": "https://w3c.github.io/mediacapture-viewport/"
-      },
-      "fragment": "partial interface MediaDevices {\n  Promise<MediaStream> getViewportMedia(\n      optional DisplayMediaStreamConstraints constraints = {});\n};"
-    },
-    {
-      "spec": {
         "title": "Audio Output Devices API",
         "url": "https://www.w3.org/TR/audio-output/"
       },
@@ -40,17 +33,17 @@
     },
     {
       "spec": {
-        "title": "Region Capture",
-        "url": "https://www.w3.org/TR/mediacapture-region/"
-      },
-      "fragment": "partial interface MediaDevices {\n  Promise<CropTarget>\n  produceCropTarget(Element element);\n};"
-    },
-    {
-      "spec": {
         "title": "Media Capture and Streams",
         "url": "https://www.w3.org/TR/mediacapture-streams/"
       },
       "fragment": "partial interface MediaDevices {\n  MediaTrackSupportedConstraints getSupportedConstraints();\n  Promise<MediaStream> getUserMedia(optional MediaStreamConstraints constraints = {});\n};"
+    },
+    {
+      "spec": {
+        "title": "Viewport Capture",
+        "url": "https://www.w3.org/TR/mediacapture-viewport/"
+      },
+      "fragment": "partial interface MediaDevices {\n  Promise<MediaStream> getViewportMedia(\n      optional DisplayMediaStreamConstraints constraints = {});\n};"
     },
     {
       "spec": {

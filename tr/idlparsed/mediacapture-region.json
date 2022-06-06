@@ -18,11 +18,60 @@
     },
     "idlNames": {
       "CropTarget": {
-        "fragment": "[Exposed=(Window,Worker), Serializable]\ninterface CropTarget {\n  // Intentionally empty; just an opaque identifier.\n};",
+        "fragment": "[Exposed=(Window,Worker), Serializable]\ninterface CropTarget {\n  [SecureContext] static Promise<CropTarget> fromElement(Element element);\n};",
         "type": "interface",
         "name": "CropTarget",
         "inheritance": null,
-        "members": [],
+        "members": [
+          {
+            "type": "operation",
+            "name": "fromElement",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CropTarget"
+                }
+              ]
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "element",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "Element"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "SecureContext",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "static"
+          }
+        ],
         "extAttrs": [
           {
             "type": "extended-attribute",
@@ -126,61 +175,7 @@
         "partial": false
       }
     },
-    "idlExtendedNames": {
-      "MediaDevices": [
-        {
-          "fragment": "partial interface MediaDevices {\n  Promise<CropTarget>\n  produceCropTarget(Element element);\n};",
-          "type": "interface",
-          "name": "MediaDevices",
-          "inheritance": null,
-          "members": [
-            {
-              "type": "operation",
-              "name": "produceCropTarget",
-              "idlType": {
-                "type": "return-type",
-                "extAttrs": [],
-                "generic": "Promise",
-                "nullable": false,
-                "union": false,
-                "idlType": [
-                  {
-                    "type": "return-type",
-                    "extAttrs": [],
-                    "generic": "",
-                    "nullable": false,
-                    "union": false,
-                    "idlType": "CropTarget"
-                  }
-                ]
-              },
-              "arguments": [
-                {
-                  "type": "argument",
-                  "name": "element",
-                  "extAttrs": [],
-                  "idlType": {
-                    "type": "argument-type",
-                    "extAttrs": [],
-                    "generic": "",
-                    "nullable": false,
-                    "union": false,
-                    "idlType": "Element"
-                  },
-                  "default": null,
-                  "optional": false,
-                  "variadic": false
-                }
-              ],
-              "extAttrs": [],
-              "special": ""
-            }
-          ],
-          "extAttrs": [],
-          "partial": true
-        }
-      ]
-    },
+    "idlExtendedNames": {},
     "globals": {},
     "exposed": {
       "Window": [
@@ -192,8 +187,7 @@
       ]
     },
     "dependencies": {
-      "CropTarget": [],
-      "MediaDevices": [
+      "CropTarget": [
         "CropTarget",
         "Element"
       ],
@@ -204,7 +198,6 @@
       ]
     },
     "externalDependencies": [
-      "MediaDevices",
       "Element",
       "MediaStreamTrack"
     ],

@@ -1510,6 +1510,27 @@
       "definedIn": "table"
     },
     {
+      "id": "dom-supported-limits-maxinterstageshadervariables",
+      "href": "https://www.w3.org/TR/webgpu/#dom-supported-limits-maxinterstageshadervariables",
+      "linkingText": [
+        "maxInterStageShaderVariables"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "supported limits"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "limits",
+        "href": "https://www.w3.org/TR/webgpu/#limits",
+        "title": "Limits",
+        "number": "3.6.2"
+      },
+      "definedIn": "table"
+    },
+    {
       "id": "dom-supported-limits-maxcolorattachments",
       "href": "https://www.w3.org/TR/webgpu/#dom-supported-limits-maxcolorattachments",
       "linkingText": [
@@ -2079,6 +2100,27 @@
       "href": "https://www.w3.org/TR/webgpu/#dom-gpusupportedlimits-maxinterstageshadercomponents",
       "linkingText": [
         "maxInterStageShaderComponents"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPUSupportedLimits"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gpu-supportedlimits",
+        "href": "https://www.w3.org/TR/webgpu/#gpu-supportedlimits",
+        "title": "GPUSupportedLimits",
+        "number": "3.6.2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-gpusupportedlimits-maxinterstageshadervariables",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpusupportedlimits-maxinterstageshadervariables",
+      "linkingText": [
+        "maxInterStageShaderVariables"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -3195,10 +3237,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-gpubuffer-size-slot",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpubuffer-size-slot",
+      "id": "dom-gpubuffer-size",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpubuffer-size",
       "linkingText": [
-        "[[size]]"
+        "size"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -3216,10 +3258,10 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-gpubuffer-usage-slot",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpubuffer-usage-slot",
+      "id": "dom-gpubuffer-usage",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpubuffer-usage",
       "linkingText": [
-        "[[usage]]"
+        "usage"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -4244,10 +4286,199 @@
       "definedIn": "heading"
     },
     {
-      "id": "dom-gputexture-descriptor-slot",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gputexture-descriptor-slot",
+      "id": "dom-gputexture-width",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gputexture-width",
       "linkingText": [
-        "[[descriptor]]"
+        "width"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPUTexture"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "texture-interface",
+        "href": "https://www.w3.org/TR/webgpu/#texture-interface",
+        "title": "GPUTexture",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-gputexture-height",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gputexture-height",
+      "linkingText": [
+        "height"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPUTexture"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "texture-interface",
+        "href": "https://www.w3.org/TR/webgpu/#texture-interface",
+        "title": "GPUTexture",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-gputexture-depthorarraylayers",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gputexture-depthorarraylayers",
+      "linkingText": [
+        "depthOrArrayLayers"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPUTexture"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "texture-interface",
+        "href": "https://www.w3.org/TR/webgpu/#texture-interface",
+        "title": "GPUTexture",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-gputexture-miplevelcount",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gputexture-miplevelcount",
+      "linkingText": [
+        "mipLevelCount"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPUTexture"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "texture-interface",
+        "href": "https://www.w3.org/TR/webgpu/#texture-interface",
+        "title": "GPUTexture",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-gputexture-samplecount",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gputexture-samplecount",
+      "linkingText": [
+        "sampleCount"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPUTexture"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "texture-interface",
+        "href": "https://www.w3.org/TR/webgpu/#texture-interface",
+        "title": "GPUTexture",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-gputexture-dimension",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gputexture-dimension",
+      "linkingText": [
+        "dimension"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPUTexture"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "texture-interface",
+        "href": "https://www.w3.org/TR/webgpu/#texture-interface",
+        "title": "GPUTexture",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-gputexture-format",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gputexture-format",
+      "linkingText": [
+        "format"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPUTexture"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "texture-interface",
+        "href": "https://www.w3.org/TR/webgpu/#texture-interface",
+        "title": "GPUTexture",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-gputexture-usage",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gputexture-usage",
+      "linkingText": [
+        "usage"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPUTexture"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "texture-interface",
+        "href": "https://www.w3.org/TR/webgpu/#texture-interface",
+        "title": "GPUTexture",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-gputexture-size-slot",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gputexture-size-slot",
+      "linkingText": [
+        "[[size]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPUTexture"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "texture-interface",
+        "href": "https://www.w3.org/TR/webgpu/#texture-interface",
+        "title": "GPUTexture",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-gputexture-viewformats-slot",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gputexture-viewformats-slot",
+      "linkingText": [
+        "[[viewFormats]]"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -10940,7 +11171,7 @@
         "title": "GPUProgrammableStage",
         "number": "10.1.2"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
       "id": "dom-gpuprogrammablestage-entrypoint",
@@ -10961,7 +11192,7 @@
         "title": "GPUProgrammableStage",
         "number": "10.1.2"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
       "id": "dom-gpuprogrammablestage-constants",
@@ -11117,7 +11348,7 @@
         "title": "Creation",
         "number": "10.2.1"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
       "id": "dom-gpudevice-createcomputepipeline",
@@ -11342,7 +11573,7 @@
         "title": "Creation",
         "number": "10.3.1"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
       "id": "dom-gpurenderpipelinedescriptor-primitive",
@@ -11363,7 +11594,7 @@
         "title": "Creation",
         "number": "10.3.1"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
       "id": "dom-gpurenderpipelinedescriptor-depthstencil",
@@ -11384,7 +11615,7 @@
         "title": "Creation",
         "number": "10.3.1"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
       "id": "dom-gpurenderpipelinedescriptor-multisample",
@@ -11405,7 +11636,7 @@
         "title": "Creation",
         "number": "10.3.1"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
       "id": "dom-gpurenderpipelinedescriptor-fragment",
@@ -11426,7 +11657,7 @@
         "title": "Creation",
         "number": "10.3.1"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
       "id": "dom-gpudevice-createrenderpipeline",
@@ -11517,6 +11748,25 @@
       "href": "https://www.w3.org/TR/webgpu/#abstract-opdef-validating-gpurenderpipelinedescriptor",
       "linkingText": [
         "validating GPURenderPipelineDescriptor"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "render-pipeline-creation",
+        "href": "https://www.w3.org/TR/webgpu/#render-pipeline-creation",
+        "title": "Creation",
+        "number": "10.3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "abstract-opdef-validating-inter-stage-interfaces",
+      "href": "https://www.w3.org/TR/webgpu/#abstract-opdef-validating-inter-stage-interfaces",
+      "linkingText": [
+        "validating inter-stage interfaces"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -20410,10 +20660,31 @@
       "definedIn": "heading"
     },
     {
-      "id": "dom-gpuqueryset-descriptor-slot",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpuqueryset-descriptor-slot",
+      "id": "dom-gpuqueryset-type",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpuqueryset-type",
       "linkingText": [
-        "[[descriptor]]"
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPUQuerySet"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "queryset",
+        "href": "https://www.w3.org/TR/webgpu/#queryset",
+        "title": "GPUQuerySet",
+        "number": "19.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-gpuqueryset-count",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpuqueryset-count",
+      "linkingText": [
+        "count"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -21099,7 +21370,7 @@
         "title": "GPUCanvasConfiguration",
         "number": "20.3"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
       "id": "dom-gpucanvasconfiguration-format",
@@ -21120,7 +21391,7 @@
         "title": "GPUCanvasConfiguration",
         "number": "20.3"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
       "id": "dom-gpucanvasconfiguration-usage",
@@ -21141,7 +21412,7 @@
         "title": "GPUCanvasConfiguration",
         "number": "20.3"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
       "id": "dom-gpucanvasconfiguration-viewformats",
@@ -21162,7 +21433,7 @@
         "title": "GPUCanvasConfiguration",
         "number": "20.3"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
       "id": "dom-gpucanvasconfiguration-colorspace",
@@ -21183,7 +21454,7 @@
         "title": "GPUCanvasConfiguration",
         "number": "20.3"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
       "id": "dom-gpucanvasconfiguration-alphamode",
@@ -21204,7 +21475,7 @@
         "title": "GPUCanvasConfiguration",
         "number": "20.3"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
       "id": "abstract-opdef-gputexturedescriptor-for-the-canvas-and-configuration",

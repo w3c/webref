@@ -6,7 +6,7 @@
       "title": "WebGPU",
       "url": "https://www.w3.org/TR/webgpu/"
     },
-    "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUTexture {\n    GPUTextureView createView(optional GPUTextureViewDescriptor descriptor = {});\n\n    undefined destroy();\n};",
+    "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUTexture {\n    GPUTextureView createView(optional GPUTextureViewDescriptor descriptor = {});\n\n    undefined destroy();\n\n    readonly attribute GPUIntegerCoordinate width;\n    readonly attribute GPUIntegerCoordinate height;\n    readonly attribute GPUIntegerCoordinate depthOrArrayLayers;\n    readonly attribute GPUIntegerCoordinate mipLevelCount;\n    readonly attribute GPUSize32 sampleCount;\n    readonly attribute GPUTextureDimension dimension;\n    readonly attribute GPUTextureFormat format;\n    readonly attribute GPUTextureUsageFlags usage;\n};",
     "href": "https://www.w3.org/TR/webgpu/#gputexture"
   },
   "extended": [

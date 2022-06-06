@@ -30,6 +30,13 @@
         "url": "https://privacycg.github.io/private-click-measurement/"
       },
       "fragment": "partial interface HTMLAnchorElement {\n    [CEReactions] attribute unsigned long attributionSourceId;\n    [CEReactions] attribute DOMString attributionDestination;\n};"
+    },
+    {
+      "spec": {
+        "title": "Attribution Reporting",
+        "url": "https://wicg.github.io/attribution-reporting-api/"
+      },
+      "fragment": "HTMLAnchorElement includes HTMLAttributionSrcElementUtils;"
     }
   ],
   "inheritance": {
@@ -475,6 +482,21 @@
         },
         "fragment": "interface mixin HTMLHyperlinkElementUtils {\n  [CEReactions] stringifier attribute USVString href;\n  readonly attribute USVString origin;\n  [CEReactions] attribute USVString protocol;\n  [CEReactions] attribute USVString username;\n  [CEReactions] attribute USVString password;\n  [CEReactions] attribute USVString host;\n  [CEReactions] attribute USVString hostname;\n  [CEReactions] attribute USVString port;\n  [CEReactions] attribute USVString pathname;\n  [CEReactions] attribute USVString search;\n  [CEReactions] attribute USVString hash;\n};",
         "href": "https://html.spec.whatwg.org/multipage/links.html#htmlhyperlinkelementutils"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "HTMLAttributionSrcElementUtils",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "Attribution Reporting",
+          "url": "https://wicg.github.io/attribution-reporting-api/"
+        },
+        "fragment": "interface mixin HTMLAttributionSrcElementUtils {\n    [CEReactions] attribute USVString attributionSrc;\n};",
+        "href": "https://wicg.github.io/attribution-reporting-api/#htmlattributionsrcelementutils"
       },
       "extended": [],
       "inheritance": null,
