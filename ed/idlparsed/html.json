@@ -25332,7 +25332,7 @@
         "partial": false
       },
       "ErrorEventInit": {
-        "fragment": "dictionary ErrorEventInit : EventInit {\n  DOMString message = \"\";\n  USVString filename = \"\";\n  unsigned long lineno = 0;\n  unsigned long colno = 0;\n  any error = null;\n};",
+        "fragment": "dictionary ErrorEventInit : EventInit {\n  DOMString message = \"\";\n  USVString filename = \"\";\n  unsigned long lineno = 0;\n  unsigned long colno = 0;\n  any error;\n};",
         "type": "dictionary",
         "name": "ErrorEventInit",
         "inheritance": "EventInit",
@@ -25421,9 +25421,7 @@
               "union": false,
               "idlType": "any"
             },
-            "default": {
-              "type": "null"
-            },
+            "default": null,
             "required": false
           }
         ],
