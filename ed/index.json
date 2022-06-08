@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2022-06-08T12:45:52.861Z",
+  "date": "2022-06-08T18:38:27.714Z",
   "options": {
     "fallback": "webref-fallback/ed/index.json",
     "output": "report",
@@ -21,7 +21,7 @@
   },
   "stats": {
     "crawled": 469,
-    "errors": 0
+    "errors": 1
   },
   "crawler": "reffy-7.0.12",
   "results": [
@@ -1296,7 +1296,7 @@
       ],
       "crawled": "https://fedidcg.github.io/FedCM/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 08 Jun 2022 00:43:05 GMT"
+        "lastModified": "Wed, 08 Jun 2022 18:03:54 GMT"
       },
       "generator": "bikeshed",
       "date": "8 June 2022",
@@ -1354,10 +1354,10 @@
       ],
       "crawled": "https://fetch.spec.whatwg.org/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 01 Jun 2022 16:33:56 GMT"
+        "lastModified": "Wed, 08 Jun 2022 13:38:49 GMT"
       },
       "generator": "bikeshed",
-      "date": "1 June 2022",
+      "date": "8 June 2022",
       "links": "links/fetch.json",
       "refs": "refs/fetch.json",
       "idl": "idl/fetch.idl",
@@ -1600,9 +1600,9 @@
       ],
       "crawled": "https://html.spec.whatwg.org/multipage/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 07 Jun 2022 07:07:36 GMT"
+        "lastModified": "Wed, 08 Jun 2022 16:27:04 GMT"
       },
-      "date": "7 June 2022",
+      "date": "8 June 2022",
       "links": "links/html.json",
       "refs": "refs/html.json",
       "idl": "idl/html.idl",
@@ -3054,7 +3054,7 @@
       ],
       "crawled": "https://tc39.es/proposal-temporal/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 08 Jun 2022 10:23:00 GMT"
+        "lastModified": "Wed, 08 Jun 2022 17:35:37 GMT"
       },
       "date": "8 June 2022",
       "links": "links/tc39-temporal.json",
@@ -3983,10 +3983,10 @@
       ],
       "crawled": "https://w3c.github.io/window-placement/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 07 Jun 2022 22:04:59 GMT"
+        "lastModified": "Wed, 08 Jun 2022 15:43:10 GMT"
       },
       "generator": "bikeshed",
-      "date": "7 June 2022",
+      "date": "8 June 2022",
       "links": "links/window-placement.json",
       "refs": "refs/window-placement.json",
       "idl": "idl/window-placement.idl",
@@ -5869,7 +5869,7 @@
       ],
       "crawled": "https://wicg.github.io/keyboard-map/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 15 Oct 2021 23:14:12 GMT"
+        "lastModified": "Wed, 08 Jun 2022 15:06:47 GMT"
       },
       "generator": "bikeshed",
       "date": "6 October 2021",
@@ -17048,7 +17048,8 @@
       "css": "css/CSS.json",
       "dfns": "dfns/CSS22.json",
       "headings": "headings/CSS22.json",
-      "ids": "ids/CSS22.json"
+      "ids": "ids/CSS22.json",
+      "error": "Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers' Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers'\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:483:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 323)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/css3-exclusions/",
@@ -18968,10 +18969,10 @@
       ],
       "crawled": "https://w3c.github.io/IndexedDB/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 06 Oct 2021 21:46:12 GMT"
+        "lastModified": "Wed, 08 Jun 2022 18:02:33 GMT"
       },
       "generator": "bikeshed",
-      "date": "6 October 2021",
+      "date": "8 June 2022",
       "links": "links/IndexedDB-3.json",
       "refs": "refs/IndexedDB-3.json",
       "idl": "idl/IndexedDB.idl",
@@ -21258,10 +21259,10 @@
       ],
       "crawled": "https://w3c.github.io/pointerevents/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 01 Jun 2022 16:07:40 GMT"
+        "lastModified": "Wed, 08 Jun 2022 15:35:39 GMT"
       },
       "generator": "respec",
-      "date": "01 June 2022",
+      "date": "08 June 2022",
       "links": "links/pointerevents3.json",
       "refs": "refs/pointerevents3.json",
       "idl": "idl/pointerevents.idl",
@@ -23589,10 +23590,10 @@
       ],
       "crawled": "https://webassembly.github.io/spec/core/bikeshed/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 07 Jun 2022 21:31:04 GMT"
+        "lastModified": "Wed, 08 Jun 2022 13:48:10 GMT"
       },
       "generator": "bikeshed",
-      "date": "7 June 2022",
+      "date": "8 June 2022",
       "links": "links/wasm-core-1.json",
       "refs": "refs/wasm-core-1.json",
       "headings": "headings/wasm-core-1.json",
@@ -23649,10 +23650,10 @@
       ],
       "crawled": "https://webassembly.github.io/spec/js-api/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 07 Jun 2022 21:31:04 GMT"
+        "lastModified": "Wed, 08 Jun 2022 13:48:10 GMT"
       },
       "generator": "bikeshed",
-      "date": "7 June 2022",
+      "date": "8 June 2022",
       "links": "links/wasm-js-api-2.json",
       "refs": "refs/wasm-js-api-2.json",
       "idl": "idl/wasm-js-api.idl",
@@ -23709,10 +23710,10 @@
       ],
       "crawled": "https://webassembly.github.io/spec/web-api/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 07 Jun 2022 21:31:04 GMT"
+        "lastModified": "Wed, 08 Jun 2022 13:48:10 GMT"
       },
       "generator": "bikeshed",
-      "date": "7 June 2022",
+      "date": "8 June 2022",
       "links": "links/wasm-web-api-2.json",
       "refs": "refs/wasm-web-api-2.json",
       "idl": "idl/wasm-web-api.idl",
@@ -24185,7 +24186,7 @@
       ],
       "crawled": "https://gpuweb.github.io/gpuweb/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 08 Jun 2022 07:47:10 GMT"
+        "lastModified": "Wed, 08 Jun 2022 15:55:22 GMT"
       },
       "generator": "bikeshed",
       "date": "8 June 2022",
@@ -25366,7 +25367,7 @@
       ],
       "crawled": "https://gpuweb.github.io/gpuweb/wgsl/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 08 Jun 2022 07:47:10 GMT"
+        "lastModified": "Wed, 08 Jun 2022 15:55:22 GMT"
       },
       "generator": "bikeshed",
       "date": "8 June 2022",
