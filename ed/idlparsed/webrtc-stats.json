@@ -10,7 +10,7 @@
     },
     "idlNames": {
       "RTCStatsType": {
-        "fragment": "enum RTCStatsType {\n\"codec\",\n\"inbound-rtp\",\n\"outbound-rtp\",\n\"remote-inbound-rtp\",\n\"remote-outbound-rtp\",\n\"media-source\",\n\"peer-connection\",\n\"data-channel\",\n\"stream\",\n\"track\",\n\"transceiver\",\n\"sender\",\n\"receiver\",\n\"transport\",\n\"sctp-transport\",\n\"candidate-pair\",\n\"local-candidate\",\n\"remote-candidate\",\n\"certificate\"\n};",
+        "fragment": "enum RTCStatsType {\n\"codec\",\n\"inbound-rtp\",\n\"outbound-rtp\",\n\"remote-inbound-rtp\",\n\"remote-outbound-rtp\",\n\"media-source\",\n\"peer-connection\",\n\"data-channel\",\n\"stream\",\n\"track\",\n\"transport\",\n\"candidate-pair\",\n\"local-candidate\",\n\"remote-candidate\",\n\"certificate\"\n};",
         "type": "enum",
         "name": "RTCStatsType",
         "values": [
@@ -56,23 +56,7 @@
           },
           {
             "type": "enum-value",
-            "value": "transceiver"
-          },
-          {
-            "type": "enum-value",
-            "value": "sender"
-          },
-          {
-            "type": "enum-value",
-            "value": "receiver"
-          },
-          {
-            "type": "enum-value",
             "value": "transport"
-          },
-          {
-            "type": "enum-value",
-            "value": "sctp-transport"
           },
           {
             "type": "enum-value",
@@ -264,7 +248,7 @@
         "partial": false
       },
       "RTCReceivedRtpStreamStats": {
-        "fragment": "dictionary RTCReceivedRtpStreamStats : RTCRtpStreamStats {\n             unsigned long long   packetsReceived;\n             long long            packetsLost;\n             double               jitter;\n             unsigned long long   packetsDiscarded;\n             unsigned long        framesDropped;\n};",
+        "fragment": "dictionary RTCReceivedRtpStreamStats : RTCRtpStreamStats {\n             unsigned long long   packetsReceived;\n             long long            packetsLost;\n             double               jitter;\n             unsigned long        framesDropped;\n};",
         "type": "dictionary",
         "name": "RTCReceivedRtpStreamStats",
         "inheritance": "RTCRtpStreamStats",
@@ -316,21 +300,6 @@
           },
           {
             "type": "field",
-            "name": "packetsDiscarded",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long long"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
             "name": "framesDropped",
             "extAttrs": [],
             "idlType": {
@@ -349,14 +318,14 @@
         "partial": false
       },
       "RTCInboundRtpStreamStats": {
-        "fragment": "dictionary RTCInboundRtpStreamStats : RTCReceivedRtpStreamStats {\n required DOMString   receiverId;\n DOMString            remoteId;\n unsigned long        framesDecoded;\n unsigned long        keyFramesDecoded;\n unsigned long        frameWidth;\n unsigned long        frameHeight;\n double               framesPerSecond;\n unsigned long long   qpSum;\n double               totalDecodeTime;\n double               totalInterFrameDelay;\n double               totalSquaredInterFrameDelay;\n DOMHighResTimeStamp  lastPacketReceivedTimestamp;\n unsigned long long   headerBytesReceived;\n unsigned long long   fecPacketsReceived;\n unsigned long long   fecPacketsDiscarded;\n unsigned long long   bytesReceived;\n unsigned long        nackCount;\n unsigned long        firCount;\n unsigned long        pliCount;\n double               totalProcessingDelay;\n DOMHighResTimeStamp  estimatedPlayoutTimestamp;\n double               jitterBufferDelay;\n unsigned long long   jitterBufferEmittedCount;\n unsigned long long   totalSamplesReceived;\n unsigned long long   concealedSamples;\n unsigned long long   silentConcealedSamples;\n unsigned long long   concealmentEvents;\n unsigned long long   insertedSamplesForDeceleration;\n unsigned long long   removedSamplesForAcceleration;\n double               audioLevel;\n double               totalAudioEnergy;\n double               totalSamplesDuration;\n unsigned long        framesReceived;\n DOMString            decoderImplementation;\n};",
+        "fragment": "dictionary RTCInboundRtpStreamStats : RTCReceivedRtpStreamStats {\n required DOMString   trackIdentifier;\n required DOMString   kind;\n DOMString            mid;\n DOMString            remoteId;\n unsigned long        framesDecoded;\n unsigned long        keyFramesDecoded;\n unsigned long        frameWidth;\n unsigned long        frameHeight;\n double               framesPerSecond;\n unsigned long long   qpSum;\n double               totalDecodeTime;\n double               totalInterFrameDelay;\n double               totalSquaredInterFrameDelay;\n DOMHighResTimeStamp  lastPacketReceivedTimestamp;\n unsigned long long   headerBytesReceived;\n unsigned long long   packetsDiscarded;\n unsigned long long   fecPacketsReceived;\n unsigned long long   fecPacketsDiscarded;\n unsigned long long   bytesReceived;\n unsigned long        nackCount;\n unsigned long        firCount;\n unsigned long        pliCount;\n double               totalProcessingDelay;\n DOMHighResTimeStamp  estimatedPlayoutTimestamp;\n double               jitterBufferDelay;\n unsigned long long   jitterBufferEmittedCount;\n unsigned long long   totalSamplesReceived;\n unsigned long long   concealedSamples;\n unsigned long long   silentConcealedSamples;\n unsigned long long   concealmentEvents;\n unsigned long long   insertedSamplesForDeceleration;\n unsigned long long   removedSamplesForAcceleration;\n double               audioLevel;\n double               totalAudioEnergy;\n double               totalSamplesDuration;\n unsigned long        framesReceived;\n DOMString            decoderImplementation;\n};",
         "type": "dictionary",
         "name": "RTCInboundRtpStreamStats",
         "inheritance": "RTCReceivedRtpStreamStats",
         "members": [
           {
             "type": "field",
-            "name": "receiverId",
+            "name": "trackIdentifier",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -368,6 +337,36 @@
             },
             "default": null,
             "required": true
+          },
+          {
+            "type": "field",
+            "name": "kind",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "mid",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false
           },
           {
             "type": "field",
@@ -537,6 +536,21 @@
           {
             "type": "field",
             "name": "headerBytesReceived",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long long"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "packetsDiscarded",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -994,29 +1008,14 @@
         "partial": false
       },
       "RTCOutboundRtpStreamStats": {
-        "fragment": "dictionary RTCOutboundRtpStreamStats : RTCSentRtpStreamStats {\n             unsigned long        rtxSsrc;\n             DOMString            mediaSourceId;\n             DOMString            senderId;\n             DOMString            remoteId;\n             DOMString            rid;\n             unsigned long long   headerBytesSent;\n             unsigned long long   retransmittedPacketsSent;\n             unsigned long long   retransmittedBytesSent;\n             double               targetBitrate;\n             unsigned long long   totalEncodedBytesTarget;\n             unsigned long        frameWidth;\n             unsigned long        frameHeight;\n             double               framesPerSecond;\n             unsigned long        framesSent;\n             unsigned long        hugeFramesSent;\n             unsigned long        framesEncoded;\n             unsigned long        keyFramesEncoded;\n             unsigned long long   qpSum;\n             double               totalEncodeTime;\n             double               totalPacketSendDelay;\n             RTCQualityLimitationReason                 qualityLimitationReason;\n             record<DOMString, double> qualityLimitationDurations;\n             unsigned long        qualityLimitationResolutionChanges;\n             unsigned long        nackCount;\n             unsigned long        firCount;\n             unsigned long        pliCount;\n             DOMString            encoderImplementation;\n};",
+        "fragment": "dictionary RTCOutboundRtpStreamStats : RTCSentRtpStreamStats {\n             DOMString            mid;\n             DOMString            mediaSourceId;\n             DOMString            remoteId;\n             DOMString            rid;\n             unsigned long long   headerBytesSent;\n             unsigned long long   retransmittedPacketsSent;\n             unsigned long long   retransmittedBytesSent;\n             double               targetBitrate;\n             unsigned long long   totalEncodedBytesTarget;\n             unsigned long        frameWidth;\n             unsigned long        frameHeight;\n             double               framesPerSecond;\n             unsigned long        framesSent;\n             unsigned long        hugeFramesSent;\n             unsigned long        framesEncoded;\n             unsigned long        keyFramesEncoded;\n             unsigned long long   qpSum;\n             double               totalEncodeTime;\n             double               totalPacketSendDelay;\n             RTCQualityLimitationReason                 qualityLimitationReason;\n             record<DOMString, double> qualityLimitationDurations;\n             unsigned long        qualityLimitationResolutionChanges;\n             unsigned long        nackCount;\n             unsigned long        firCount;\n             unsigned long        pliCount;\n             DOMString            encoderImplementation;\n};",
         "type": "dictionary",
         "name": "RTCOutboundRtpStreamStats",
         "inheritance": "RTCSentRtpStreamStats",
         "members": [
           {
             "type": "field",
-            "name": "rtxSsrc",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "mediaSourceId",
+            "name": "mid",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -1031,7 +1030,7 @@
           },
           {
             "type": "field",
-            "name": "senderId",
+            "name": "mediaSourceId",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -1784,61 +1783,6 @@
         "extAttrs": [],
         "partial": false
       },
-      "RTCRtpTransceiverStats": {
-        "fragment": "dictionary RTCRtpTransceiverStats : RTCStats {\n    required DOMString senderId;\n    required DOMString receiverId;\n    DOMString mid;\n};",
-        "type": "dictionary",
-        "name": "RTCRtpTransceiverStats",
-        "inheritance": "RTCStats",
-        "members": [
-          {
-            "type": "field",
-            "name": "senderId",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            "default": null,
-            "required": true
-          },
-          {
-            "type": "field",
-            "name": "receiverId",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            "default": null,
-            "required": true
-          },
-          {
-            "type": "field",
-            "name": "mid",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            "default": null,
-            "required": false
-          }
-        ],
-        "extAttrs": [],
-        "partial": false
-      },
       "RTCMediaHandlerStats": {
         "fragment": "dictionary RTCMediaHandlerStats : RTCStats {\n             DOMString           trackIdentifier;\n             boolean             ended;\n             required DOMString  kind;\n};",
         "type": "dictionary",
@@ -1903,79 +1847,11 @@
         "extAttrs": [],
         "partial": false
       },
-      "RTCVideoSenderStats": {
-        "fragment": "dictionary RTCVideoSenderStats : RTCVideoHandlerStats {\n             DOMString           mediaSourceId;\n};",
-        "type": "dictionary",
-        "name": "RTCVideoSenderStats",
-        "inheritance": "RTCVideoHandlerStats",
-        "members": [
-          {
-            "type": "field",
-            "name": "mediaSourceId",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            "default": null,
-            "required": false
-          }
-        ],
-        "extAttrs": [],
-        "partial": false
-      },
-      "RTCVideoReceiverStats": {
-        "fragment": "dictionary RTCVideoReceiverStats : RTCVideoHandlerStats {\n};",
-        "type": "dictionary",
-        "name": "RTCVideoReceiverStats",
-        "inheritance": "RTCVideoHandlerStats",
-        "members": [],
-        "extAttrs": [],
-        "partial": false
-      },
       "RTCAudioHandlerStats": {
         "fragment": "dictionary RTCAudioHandlerStats : RTCMediaHandlerStats {\n};",
         "type": "dictionary",
         "name": "RTCAudioHandlerStats",
         "inheritance": "RTCMediaHandlerStats",
-        "members": [],
-        "extAttrs": [],
-        "partial": false
-      },
-      "RTCAudioSenderStats": {
-        "fragment": "dictionary RTCAudioSenderStats : RTCAudioHandlerStats {\n             DOMString           mediaSourceId;\n};",
-        "type": "dictionary",
-        "name": "RTCAudioSenderStats",
-        "inheritance": "RTCAudioHandlerStats",
-        "members": [
-          {
-            "type": "field",
-            "name": "mediaSourceId",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            "default": null,
-            "required": false
-          }
-        ],
-        "extAttrs": [],
-        "partial": false
-      },
-      "RTCAudioReceiverStats": {
-        "fragment": "dictionary RTCAudioReceiverStats : RTCAudioHandlerStats {\n};",
-        "type": "dictionary",
-        "name": "RTCAudioReceiverStats",
-        "inheritance": "RTCAudioHandlerStats",
         "members": [],
         "extAttrs": [],
         "partial": false
@@ -2111,7 +1987,7 @@
         "partial": false
       },
       "RTCTransportStats": {
-        "fragment": "dictionary RTCTransportStats : RTCStats {\n             unsigned long long    packetsSent;\n             unsigned long long    packetsReceived;\n             unsigned long long    bytesSent;\n             unsigned long long    bytesReceived;\n             DOMString             rtcpTransportStatsId;\n             RTCIceRole            iceRole;\n             DOMString             iceLocalUsernameFragment;\n             required RTCDtlsTransportState dtlsState;\n             RTCIceTransportState  iceState;\n             DOMString             selectedCandidatePairId;\n             DOMString             localCertificateId;\n             DOMString             remoteCertificateId;\n             DOMString             tlsVersion;\n             DOMString             dtlsCipher;\n             RTCDtlsRole           dtlsRole;\n             DOMString             srtpCipher;\n             unsigned long         selectedCandidatePairChanges;\n};",
+        "fragment": "dictionary RTCTransportStats : RTCStats {\n             unsigned long long    packetsSent;\n             unsigned long long    packetsReceived;\n             unsigned long long    bytesSent;\n             unsigned long long    bytesReceived;\n             RTCIceRole            iceRole;\n             DOMString             iceLocalUsernameFragment;\n             required RTCDtlsTransportState dtlsState;\n             RTCIceTransportState  iceState;\n             DOMString             selectedCandidatePairId;\n             DOMString             localCertificateId;\n             DOMString             remoteCertificateId;\n             DOMString             tlsVersion;\n             DOMString             dtlsCipher;\n             RTCDtlsRole           dtlsRole;\n             DOMString             srtpCipher;\n             unsigned long         selectedCandidatePairChanges;\n};",
         "type": "dictionary",
         "name": "RTCTransportStats",
         "inheritance": "RTCStats",
@@ -2172,21 +2048,6 @@
               "nullable": false,
               "union": false,
               "idlType": "unsigned long long"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "rtcpTransportStatsId",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMString"
             },
             "default": null,
             "required": false
@@ -2376,7 +2237,7 @@
         "partial": false
       },
       "RTCDtlsRole": {
-        "fragment": "enum RTCDtlsRole {\n        \"client\",\n        \"server\",\n        \"unknown\",\n};",
+        "fragment": "enum RTCDtlsRole {\n      \"client\",\n      \"server\",\n      \"unknown\",\n};",
         "type": "enum",
         "name": "RTCDtlsRole",
         "values": [
@@ -2394,106 +2255,6 @@
           }
         ],
         "extAttrs": []
-      },
-      "RTCSctpTransportStats": {
-        "fragment": "dictionary RTCSctpTransportStats : RTCStats {\n            DOMString transportId;\n            double smoothedRoundTripTime;\n            unsigned long congestionWindow;\n            unsigned long receiverWindow;\n            unsigned long mtu;\n            unsigned long unackData;\n};",
-        "type": "dictionary",
-        "name": "RTCSctpTransportStats",
-        "inheritance": "RTCStats",
-        "members": [
-          {
-            "type": "field",
-            "name": "transportId",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "smoothedRoundTripTime",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "double"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "congestionWindow",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "receiverWindow",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "mtu",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "unackData",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long"
-            },
-            "default": null,
-            "required": false
-          }
-        ],
-        "extAttrs": [],
-        "partial": false
       },
       "RTCIceCandidateStats": {
         "fragment": "dictionary RTCIceCandidateStats : RTCStats {\n             required DOMString       transportId;\n             DOMString?               address;\n             long                     port;\n             DOMString                protocol;\n             required RTCIceCandidateType candidateType;\n             long                     priority;\n             DOMString                url;\n             DOMString                relayProtocol;\n};",
@@ -3107,29 +2868,14 @@
       "RTCPeerConnectionStats": [
         "RTCStats"
       ],
-      "RTCRtpTransceiverStats": [
-        "RTCStats"
-      ],
       "RTCMediaHandlerStats": [
         "RTCStats"
       ],
       "RTCVideoHandlerStats": [
         "RTCMediaHandlerStats"
       ],
-      "RTCVideoSenderStats": [
-        "RTCVideoHandlerStats"
-      ],
-      "RTCVideoReceiverStats": [
-        "RTCVideoHandlerStats"
-      ],
       "RTCAudioHandlerStats": [
         "RTCMediaHandlerStats"
-      ],
-      "RTCAudioSenderStats": [
-        "RTCAudioHandlerStats"
-      ],
-      "RTCAudioReceiverStats": [
-        "RTCAudioHandlerStats"
       ],
       "RTCDataChannelStats": [
         "RTCStats",
@@ -3141,9 +2887,6 @@
         "RTCDtlsTransportState",
         "RTCIceTransportState",
         "RTCDtlsRole"
-      ],
-      "RTCSctpTransportStats": [
-        "RTCStats"
       ],
       "RTCIceCandidateStats": [
         "RTCStats",
