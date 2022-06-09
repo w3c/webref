@@ -6,7 +6,7 @@
       "title": "Identifiers for WebRTC's Statistics API",
       "url": "https://www.w3.org/TR/webrtc-stats/"
     },
-    "fragment": "dictionary RTCRemoteInboundRtpStreamStats : RTCReceivedRtpStreamStats {\n             DOMString            localId;\n             double               roundTripTime;\n             double               totalRoundTripTime;\n             double               fractionLost;\n             unsigned long long   reportsReceived;\n             unsigned long long   roundTripTimeMeasurements;\n};",
+    "fragment": "dictionary RTCRemoteInboundRtpStreamStats : RTCReceivedRtpStreamStats {\n             DOMString            localId;\n             double               roundTripTime;\n             double               totalRoundTripTime;\n             double               fractionLost;\n             unsigned long long   roundTripTimeMeasurements;\n};",
     "href": "https://w3c.github.io/webrtc-stats/#dom-rtcremoteinboundrtpstreamstats"
   },
   "extended": [],
@@ -18,7 +18,7 @@
         "title": "Identifiers for WebRTC's Statistics API",
         "url": "https://www.w3.org/TR/webrtc-stats/"
       },
-      "fragment": "dictionary RTCReceivedRtpStreamStats : RTCRtpStreamStats {\n             unsigned long long   packetsReceived;\n             long long            packetsLost;\n             double               jitter;\n             unsigned long long   packetsDiscarded;\n             unsigned long long   packetsRepaired;\n             unsigned long long   burstPacketsLost;\n             unsigned long long   burstPacketsDiscarded;\n             unsigned long        burstLossCount;\n             unsigned long        burstDiscardCount;\n             double               burstLossRate;\n             double               burstDiscardRate;\n             double               gapLossRate;\n             double               gapDiscardRate;\n             unsigned long        framesDropped;\n             unsigned long        partialFramesLost;\n             unsigned long        fullFramesLost;\n\n};",
+      "fragment": "dictionary RTCReceivedRtpStreamStats : RTCRtpStreamStats {\n             unsigned long long   packetsReceived;\n             long long            packetsLost;\n             double               jitter;\n             unsigned long long   packetsDiscarded;\n             unsigned long        framesDropped;\n};",
       "href": "https://w3c.github.io/webrtc-stats/#dom-rtcreceivedrtpstreamstats"
     },
     "extended": [],
@@ -156,26 +156,6 @@
         "definedIn": "dt"
       },
       {
-        "id": "dom-rtcremoteinboundrtpstreamstats-reportsreceived",
-        "href": "https://w3c.github.io/webrtc-stats/#dom-rtcremoteinboundrtpstreamstats-reportsreceived",
-        "linkingText": [
-          "reportsReceived"
-        ],
-        "localLinkingText": [],
-        "type": "dict-member",
-        "for": [
-          "RTCRemoteInboundRtpStreamStats"
-        ],
-        "access": "public",
-        "informative": false,
-        "heading": {
-          "id": "dictionary-rtcremoteinboundrtpstreamstats-members",
-          "href": "https://w3c.github.io/webrtc-stats/#dictionary-rtcremoteinboundrtpstreamstats-members",
-          "title": "Dictionary RTCRemoteInboundRtpStreamStats Members"
-        },
-        "definedIn": "dt"
-      },
-      {
         "id": "dom-rtcremoteinboundrtpstreamstats-roundtriptimemeasurements",
         "href": "https://w3c.github.io/webrtc-stats/#dom-rtcremoteinboundrtpstreamstats-roundtriptimemeasurements",
         "linkingText": [
@@ -295,230 +275,10 @@
         "definedIn": "dt"
       },
       {
-        "id": "dom-rtcreceivedrtpstreamstats-packetsrepaired",
-        "href": "https://w3c.github.io/webrtc-stats/#dom-rtcreceivedrtpstreamstats-packetsrepaired",
-        "linkingText": [
-          "packetsRepaired"
-        ],
-        "localLinkingText": [],
-        "type": "dict-member",
-        "for": [
-          "RTCReceivedRtpStreamStats"
-        ],
-        "access": "public",
-        "informative": false,
-        "heading": {
-          "id": "dictionary-rtcreceivedrtpstreamstats-members",
-          "href": "https://w3c.github.io/webrtc-stats/#dictionary-rtcreceivedrtpstreamstats-members",
-          "title": "Dictionary RTCReceivedRtpStreamStats Members"
-        },
-        "definedIn": "dt"
-      },
-      {
-        "id": "dom-rtcreceivedrtpstreamstats-burstpacketslost",
-        "href": "https://w3c.github.io/webrtc-stats/#dom-rtcreceivedrtpstreamstats-burstpacketslost",
-        "linkingText": [
-          "burstPacketsLost"
-        ],
-        "localLinkingText": [],
-        "type": "dict-member",
-        "for": [
-          "RTCReceivedRtpStreamStats"
-        ],
-        "access": "public",
-        "informative": false,
-        "heading": {
-          "id": "dictionary-rtcreceivedrtpstreamstats-members",
-          "href": "https://w3c.github.io/webrtc-stats/#dictionary-rtcreceivedrtpstreamstats-members",
-          "title": "Dictionary RTCReceivedRtpStreamStats Members"
-        },
-        "definedIn": "dt"
-      },
-      {
-        "id": "dom-rtcreceivedrtpstreamstats-burstpacketsdiscarded",
-        "href": "https://w3c.github.io/webrtc-stats/#dom-rtcreceivedrtpstreamstats-burstpacketsdiscarded",
-        "linkingText": [
-          "burstPacketsDiscarded"
-        ],
-        "localLinkingText": [],
-        "type": "dict-member",
-        "for": [
-          "RTCReceivedRtpStreamStats"
-        ],
-        "access": "public",
-        "informative": false,
-        "heading": {
-          "id": "dictionary-rtcreceivedrtpstreamstats-members",
-          "href": "https://w3c.github.io/webrtc-stats/#dictionary-rtcreceivedrtpstreamstats-members",
-          "title": "Dictionary RTCReceivedRtpStreamStats Members"
-        },
-        "definedIn": "dt"
-      },
-      {
-        "id": "dom-rtcreceivedrtpstreamstats-burstlosscount",
-        "href": "https://w3c.github.io/webrtc-stats/#dom-rtcreceivedrtpstreamstats-burstlosscount",
-        "linkingText": [
-          "burstLossCount"
-        ],
-        "localLinkingText": [],
-        "type": "dict-member",
-        "for": [
-          "RTCReceivedRtpStreamStats"
-        ],
-        "access": "public",
-        "informative": false,
-        "heading": {
-          "id": "dictionary-rtcreceivedrtpstreamstats-members",
-          "href": "https://w3c.github.io/webrtc-stats/#dictionary-rtcreceivedrtpstreamstats-members",
-          "title": "Dictionary RTCReceivedRtpStreamStats Members"
-        },
-        "definedIn": "dt"
-      },
-      {
-        "id": "dom-rtcreceivedrtpstreamstats-burstdiscardcount",
-        "href": "https://w3c.github.io/webrtc-stats/#dom-rtcreceivedrtpstreamstats-burstdiscardcount",
-        "linkingText": [
-          "burstDiscardCount"
-        ],
-        "localLinkingText": [],
-        "type": "dict-member",
-        "for": [
-          "RTCReceivedRtpStreamStats"
-        ],
-        "access": "public",
-        "informative": false,
-        "heading": {
-          "id": "dictionary-rtcreceivedrtpstreamstats-members",
-          "href": "https://w3c.github.io/webrtc-stats/#dictionary-rtcreceivedrtpstreamstats-members",
-          "title": "Dictionary RTCReceivedRtpStreamStats Members"
-        },
-        "definedIn": "dt"
-      },
-      {
-        "id": "dom-rtcreceivedrtpstreamstats-burstlossrate",
-        "href": "https://w3c.github.io/webrtc-stats/#dom-rtcreceivedrtpstreamstats-burstlossrate",
-        "linkingText": [
-          "burstLossRate"
-        ],
-        "localLinkingText": [],
-        "type": "dict-member",
-        "for": [
-          "RTCReceivedRtpStreamStats"
-        ],
-        "access": "public",
-        "informative": false,
-        "heading": {
-          "id": "dictionary-rtcreceivedrtpstreamstats-members",
-          "href": "https://w3c.github.io/webrtc-stats/#dictionary-rtcreceivedrtpstreamstats-members",
-          "title": "Dictionary RTCReceivedRtpStreamStats Members"
-        },
-        "definedIn": "dt"
-      },
-      {
-        "id": "dom-rtcreceivedrtpstreamstats-burstdiscardrate",
-        "href": "https://w3c.github.io/webrtc-stats/#dom-rtcreceivedrtpstreamstats-burstdiscardrate",
-        "linkingText": [
-          "burstDiscardRate"
-        ],
-        "localLinkingText": [],
-        "type": "dict-member",
-        "for": [
-          "RTCReceivedRtpStreamStats"
-        ],
-        "access": "public",
-        "informative": false,
-        "heading": {
-          "id": "dictionary-rtcreceivedrtpstreamstats-members",
-          "href": "https://w3c.github.io/webrtc-stats/#dictionary-rtcreceivedrtpstreamstats-members",
-          "title": "Dictionary RTCReceivedRtpStreamStats Members"
-        },
-        "definedIn": "dt"
-      },
-      {
-        "id": "dom-rtcreceivedrtpstreamstats-gaplossrate",
-        "href": "https://w3c.github.io/webrtc-stats/#dom-rtcreceivedrtpstreamstats-gaplossrate",
-        "linkingText": [
-          "gapLossRate"
-        ],
-        "localLinkingText": [],
-        "type": "dict-member",
-        "for": [
-          "RTCReceivedRtpStreamStats"
-        ],
-        "access": "public",
-        "informative": false,
-        "heading": {
-          "id": "dictionary-rtcreceivedrtpstreamstats-members",
-          "href": "https://w3c.github.io/webrtc-stats/#dictionary-rtcreceivedrtpstreamstats-members",
-          "title": "Dictionary RTCReceivedRtpStreamStats Members"
-        },
-        "definedIn": "dt"
-      },
-      {
-        "id": "dom-rtcreceivedrtpstreamstats-gapdiscardrate",
-        "href": "https://w3c.github.io/webrtc-stats/#dom-rtcreceivedrtpstreamstats-gapdiscardrate",
-        "linkingText": [
-          "gapDiscardRate"
-        ],
-        "localLinkingText": [],
-        "type": "dict-member",
-        "for": [
-          "RTCReceivedRtpStreamStats"
-        ],
-        "access": "public",
-        "informative": false,
-        "heading": {
-          "id": "dictionary-rtcreceivedrtpstreamstats-members",
-          "href": "https://w3c.github.io/webrtc-stats/#dictionary-rtcreceivedrtpstreamstats-members",
-          "title": "Dictionary RTCReceivedRtpStreamStats Members"
-        },
-        "definedIn": "dt"
-      },
-      {
         "id": "dom-rtcreceivedrtpstreamstats-framesdropped",
         "href": "https://w3c.github.io/webrtc-stats/#dom-rtcreceivedrtpstreamstats-framesdropped",
         "linkingText": [
           "framesDropped"
-        ],
-        "localLinkingText": [],
-        "type": "dict-member",
-        "for": [
-          "RTCReceivedRtpStreamStats"
-        ],
-        "access": "public",
-        "informative": false,
-        "heading": {
-          "id": "dictionary-rtcreceivedrtpstreamstats-members",
-          "href": "https://w3c.github.io/webrtc-stats/#dictionary-rtcreceivedrtpstreamstats-members",
-          "title": "Dictionary RTCReceivedRtpStreamStats Members"
-        },
-        "definedIn": "dt"
-      },
-      {
-        "id": "dom-rtcreceivedrtpstreamstats-partialframeslost",
-        "href": "https://w3c.github.io/webrtc-stats/#dom-rtcreceivedrtpstreamstats-partialframeslost",
-        "linkingText": [
-          "partialFramesLost"
-        ],
-        "localLinkingText": [],
-        "type": "dict-member",
-        "for": [
-          "RTCReceivedRtpStreamStats"
-        ],
-        "access": "public",
-        "informative": false,
-        "heading": {
-          "id": "dictionary-rtcreceivedrtpstreamstats-members",
-          "href": "https://w3c.github.io/webrtc-stats/#dictionary-rtcreceivedrtpstreamstats-members",
-          "title": "Dictionary RTCReceivedRtpStreamStats Members"
-        },
-        "definedIn": "dt"
-      },
-      {
-        "id": "dom-rtcreceivedrtpstreamstats-fullframeslost",
-        "href": "https://w3c.github.io/webrtc-stats/#dom-rtcreceivedrtpstreamstats-fullframeslost",
-        "linkingText": [
-          "fullFramesLost"
         ],
         "localLinkingText": [],
         "type": "dict-member",

@@ -6,7 +6,7 @@
       "title": "Identifiers for WebRTC's Statistics API",
       "url": "https://www.w3.org/TR/webrtc-stats/"
     },
-    "fragment": "dictionary RTCPeerConnectionStats : RTCStats {\n            unsigned long dataChannelsOpened;\n            unsigned long dataChannelsClosed;\n            unsigned long dataChannelsRequested;\n            unsigned long dataChannelsAccepted;\n};",
+    "fragment": "dictionary RTCPeerConnectionStats : RTCStats {\n            unsigned long dataChannelsOpened;\n            unsigned long dataChannelsClosed;\n};",
     "href": "https://w3c.github.io/webrtc-stats/#dom-rtcpeerconnectionstats"
   },
   "extended": [],
@@ -43,7 +43,7 @@
           "id": "pcstats-dict*",
           "href": "https://w3c.github.io/webrtc-stats/#pcstats-dict*",
           "title": "RTCPeerConnectionStats dictionary",
-          "number": "7.15"
+          "number": "7.14"
         },
         "definedIn": "heading"
       },
@@ -72,46 +72,6 @@
         "href": "https://w3c.github.io/webrtc-stats/#dom-rtcpeerconnectionstats-datachannelsclosed",
         "linkingText": [
           "dataChannelsClosed"
-        ],
-        "localLinkingText": [],
-        "type": "dict-member",
-        "for": [
-          "RTCPeerConnectionStats"
-        ],
-        "access": "public",
-        "informative": false,
-        "heading": {
-          "id": "dictionary-rtcpeerconnectionstats-members",
-          "href": "https://w3c.github.io/webrtc-stats/#dictionary-rtcpeerconnectionstats-members",
-          "title": "Dictionary RTCPeerConnectionStats Members"
-        },
-        "definedIn": "dt"
-      },
-      {
-        "id": "dom-rtcpeerconnectionstats-datachannelsrequested",
-        "href": "https://w3c.github.io/webrtc-stats/#dom-rtcpeerconnectionstats-datachannelsrequested",
-        "linkingText": [
-          "dataChannelsRequested"
-        ],
-        "localLinkingText": [],
-        "type": "dict-member",
-        "for": [
-          "RTCPeerConnectionStats"
-        ],
-        "access": "public",
-        "informative": false,
-        "heading": {
-          "id": "dictionary-rtcpeerconnectionstats-members",
-          "href": "https://w3c.github.io/webrtc-stats/#dictionary-rtcpeerconnectionstats-members",
-          "title": "Dictionary RTCPeerConnectionStats Members"
-        },
-        "definedIn": "dt"
-      },
-      {
-        "id": "dom-rtcpeerconnectionstats-datachannelsaccepted",
-        "href": "https://w3c.github.io/webrtc-stats/#dom-rtcpeerconnectionstats-datachannelsaccepted",
-        "linkingText": [
-          "dataChannelsAccepted"
         ],
         "localLinkingText": [],
         "type": "dict-member",

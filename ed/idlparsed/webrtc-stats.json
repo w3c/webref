@@ -10,7 +10,7 @@
     },
     "idlNames": {
       "RTCStatsType": {
-        "fragment": "enum RTCStatsType {\n\"codec\",\n\"inbound-rtp\",\n\"outbound-rtp\",\n\"remote-inbound-rtp\",\n\"remote-outbound-rtp\",\n\"media-source\",\n\"csrc\",\n\"peer-connection\",\n\"data-channel\",\n\"stream\",\n\"track\",\n\"transceiver\",\n\"sender\",\n\"receiver\",\n\"transport\",\n\"sctp-transport\",\n\"candidate-pair\",\n\"local-candidate\",\n\"remote-candidate\",\n\"certificate\",\n\"ice-server\"\n};",
+        "fragment": "enum RTCStatsType {\n\"codec\",\n\"inbound-rtp\",\n\"outbound-rtp\",\n\"remote-inbound-rtp\",\n\"remote-outbound-rtp\",\n\"media-source\",\n\"peer-connection\",\n\"data-channel\",\n\"stream\",\n\"track\",\n\"transceiver\",\n\"sender\",\n\"receiver\",\n\"transport\",\n\"sctp-transport\",\n\"candidate-pair\",\n\"local-candidate\",\n\"remote-candidate\",\n\"certificate\"\n};",
         "type": "enum",
         "name": "RTCStatsType",
         "values": [
@@ -37,10 +37,6 @@
           {
             "type": "enum-value",
             "value": "media-source"
-          },
-          {
-            "type": "enum-value",
-            "value": "csrc"
           },
           {
             "type": "enum-value",
@@ -93,10 +89,6 @@
           {
             "type": "enum-value",
             "value": "certificate"
-          },
-          {
-            "type": "enum-value",
-            "value": "ice-server"
           }
         ],
         "extAttrs": []
@@ -172,7 +164,7 @@
         "partial": false
       },
       "RTCCodecStats": {
-        "fragment": "dictionary RTCCodecStats : RTCStats {\n             required unsigned long payloadType;\n             RTCCodecType  codecType;\n             required DOMString     transportId;\n             required DOMString     mimeType;\n             unsigned long clockRate;\n             unsigned long channels;\n             DOMString     sdpFmtpLine;\n};",
+        "fragment": "dictionary RTCCodecStats : RTCStats {\n             required unsigned long payloadType;\n             required DOMString     transportId;\n             required DOMString     mimeType;\n             unsigned long clockRate;\n             unsigned long channels;\n             DOMString     sdpFmtpLine;\n};",
         "type": "dictionary",
         "name": "RTCCodecStats",
         "inheritance": "RTCStats",
@@ -191,21 +183,6 @@
             },
             "default": null,
             "required": true
-          },
-          {
-            "type": "field",
-            "name": "codecType",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "RTCCodecType"
-            },
-            "default": null,
-            "required": false
           },
           {
             "type": "field",
@@ -286,24 +263,8 @@
         "extAttrs": [],
         "partial": false
       },
-      "RTCCodecType": {
-        "fragment": "enum RTCCodecType {\n    \"encode\",\n    \"decode\",\n};",
-        "type": "enum",
-        "name": "RTCCodecType",
-        "values": [
-          {
-            "type": "enum-value",
-            "value": "encode"
-          },
-          {
-            "type": "enum-value",
-            "value": "decode"
-          }
-        ],
-        "extAttrs": []
-      },
       "RTCReceivedRtpStreamStats": {
-        "fragment": "dictionary RTCReceivedRtpStreamStats : RTCRtpStreamStats {\n             unsigned long long   packetsReceived;\n             long long            packetsLost;\n             double               jitter;\n             unsigned long long   packetsDiscarded;\n             unsigned long long   packetsRepaired;\n             unsigned long long   burstPacketsLost;\n             unsigned long long   burstPacketsDiscarded;\n             unsigned long        burstLossCount;\n             unsigned long        burstDiscardCount;\n             double               burstLossRate;\n             double               burstDiscardRate;\n             double               gapLossRate;\n             double               gapDiscardRate;\n             unsigned long        framesDropped;\n             unsigned long        partialFramesLost;\n             unsigned long        fullFramesLost;\n\n};",
+        "fragment": "dictionary RTCReceivedRtpStreamStats : RTCRtpStreamStats {\n             unsigned long long   packetsReceived;\n             long long            packetsLost;\n             double               jitter;\n             unsigned long long   packetsDiscarded;\n             unsigned long        framesDropped;\n};",
         "type": "dictionary",
         "name": "RTCReceivedRtpStreamStats",
         "inheritance": "RTCRtpStreamStats",
@@ -370,172 +331,7 @@
           },
           {
             "type": "field",
-            "name": "packetsRepaired",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long long"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "burstPacketsLost",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long long"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "burstPacketsDiscarded",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long long"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "burstLossCount",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "burstDiscardCount",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "burstLossRate",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "double"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "burstDiscardRate",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "double"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "gapLossRate",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "double"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "gapDiscardRate",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "double"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
             "name": "framesDropped",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "partialFramesLost",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "fullFramesLost",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -553,7 +349,7 @@
         "partial": false
       },
       "RTCInboundRtpStreamStats": {
-        "fragment": "dictionary RTCInboundRtpStreamStats : RTCReceivedRtpStreamStats {\n required DOMString   receiverId;\n DOMString            remoteId;\n unsigned long        framesDecoded;\n unsigned long        keyFramesDecoded;\n unsigned long        frameWidth;\n unsigned long        frameHeight;\n unsigned long        frameBitDepth;\n double               framesPerSecond;\n unsigned long long   qpSum;\n double               totalDecodeTime;\n double               totalInterFrameDelay;\n double               totalSquaredInterFrameDelay;\n boolean              voiceActivityFlag;\n DOMHighResTimeStamp  lastPacketReceivedTimestamp;\n double               averageRtcpInterval;\n unsigned long long   headerBytesReceived;\n unsigned long long   fecPacketsReceived;\n unsigned long long   fecPacketsDiscarded;\n unsigned long long   bytesReceived;\n unsigned long long   packetsFailedDecryption;\n unsigned long long   packetsDuplicated;\n record<USVString, unsigned long long> perDscpPacketsReceived;\n unsigned long        nackCount;\n unsigned long        firCount;\n unsigned long        pliCount;\n unsigned long        sliCount;\n double               totalProcessingDelay;\n DOMHighResTimeStamp  estimatedPlayoutTimestamp;\n double               jitterBufferDelay;\n unsigned long long   jitterBufferEmittedCount;\n unsigned long long   totalSamplesReceived;\n unsigned long long   totalSamplesDecoded;\n unsigned long long   samplesDecodedWithSilk;\n unsigned long long   samplesDecodedWithCelt;\n unsigned long long   concealedSamples;\n unsigned long long   silentConcealedSamples;\n unsigned long long   concealmentEvents;\n unsigned long long   insertedSamplesForDeceleration;\n unsigned long long   removedSamplesForAcceleration;\n double               audioLevel;\n double               totalAudioEnergy;\n double               totalSamplesDuration;\n unsigned long        framesReceived;\n DOMString            decoderImplementation;\n};",
+        "fragment": "dictionary RTCInboundRtpStreamStats : RTCReceivedRtpStreamStats {\n required DOMString   receiverId;\n DOMString            remoteId;\n unsigned long        framesDecoded;\n unsigned long        keyFramesDecoded;\n unsigned long        frameWidth;\n unsigned long        frameHeight;\n double               framesPerSecond;\n unsigned long long   qpSum;\n double               totalDecodeTime;\n double               totalInterFrameDelay;\n double               totalSquaredInterFrameDelay;\n DOMHighResTimeStamp  lastPacketReceivedTimestamp;\n unsigned long long   headerBytesReceived;\n unsigned long long   fecPacketsReceived;\n unsigned long long   fecPacketsDiscarded;\n unsigned long long   bytesReceived;\n unsigned long        nackCount;\n unsigned long        firCount;\n unsigned long        pliCount;\n double               totalProcessingDelay;\n DOMHighResTimeStamp  estimatedPlayoutTimestamp;\n double               jitterBufferDelay;\n unsigned long long   jitterBufferEmittedCount;\n unsigned long long   totalSamplesReceived;\n unsigned long long   concealedSamples;\n unsigned long long   silentConcealedSamples;\n unsigned long long   concealmentEvents;\n unsigned long long   insertedSamplesForDeceleration;\n unsigned long long   removedSamplesForAcceleration;\n double               audioLevel;\n double               totalAudioEnergy;\n double               totalSamplesDuration;\n unsigned long        framesReceived;\n DOMString            decoderImplementation;\n};",
         "type": "dictionary",
         "name": "RTCInboundRtpStreamStats",
         "inheritance": "RTCReceivedRtpStreamStats",
@@ -650,21 +446,6 @@
           },
           {
             "type": "field",
-            "name": "frameBitDepth",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
             "name": "framesPerSecond",
             "extAttrs": [],
             "idlType": {
@@ -740,21 +521,6 @@
           },
           {
             "type": "field",
-            "name": "voiceActivityFlag",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "boolean"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
             "name": "lastPacketReceivedTimestamp",
             "extAttrs": [],
             "idlType": {
@@ -764,21 +530,6 @@
               "nullable": false,
               "union": false,
               "idlType": "DOMHighResTimeStamp"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "averageRtcpInterval",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "double"
             },
             "default": null,
             "required": false
@@ -845,68 +596,6 @@
           },
           {
             "type": "field",
-            "name": "packetsFailedDecryption",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long long"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "packetsDuplicated",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long long"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "perDscpPacketsReceived",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "record",
-              "nullable": false,
-              "union": false,
-              "idlType": [
-                {
-                  "type": "dictionary-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "USVString"
-                },
-                {
-                  "type": "dictionary-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "unsigned long long"
-                }
-              ]
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
             "name": "nackCount",
             "extAttrs": [],
             "idlType": {
@@ -938,21 +627,6 @@
           {
             "type": "field",
             "name": "pliCount",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "sliCount",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -1028,51 +702,6 @@
           {
             "type": "field",
             "name": "totalSamplesReceived",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long long"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "totalSamplesDecoded",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long long"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "samplesDecodedWithSilk",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long long"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "samplesDecodedWithCelt",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -1240,7 +869,7 @@
         "partial": false
       },
       "RTCRemoteInboundRtpStreamStats": {
-        "fragment": "dictionary RTCRemoteInboundRtpStreamStats : RTCReceivedRtpStreamStats {\n             DOMString            localId;\n             double               roundTripTime;\n             double               totalRoundTripTime;\n             double               fractionLost;\n             unsigned long long   reportsReceived;\n             unsigned long long   roundTripTimeMeasurements;\n};",
+        "fragment": "dictionary RTCRemoteInboundRtpStreamStats : RTCReceivedRtpStreamStats {\n             DOMString            localId;\n             double               roundTripTime;\n             double               totalRoundTripTime;\n             double               fractionLost;\n             unsigned long long   roundTripTimeMeasurements;\n};",
         "type": "dictionary",
         "name": "RTCRemoteInboundRtpStreamStats",
         "inheritance": "RTCReceivedRtpStreamStats",
@@ -1307,21 +936,6 @@
           },
           {
             "type": "field",
-            "name": "reportsReceived",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long long"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
             "name": "roundTripTimeMeasurements",
             "extAttrs": [],
             "idlType": {
@@ -1380,7 +994,7 @@
         "partial": false
       },
       "RTCOutboundRtpStreamStats": {
-        "fragment": "dictionary RTCOutboundRtpStreamStats : RTCSentRtpStreamStats {\n             unsigned long        rtxSsrc;\n             DOMString            mediaSourceId;\n             DOMString            senderId;\n             DOMString            remoteId;\n             DOMString            rid;\n             DOMHighResTimeStamp  lastPacketSentTimestamp;\n             unsigned long long   headerBytesSent;\n             unsigned long        packetsDiscardedOnSend;\n             unsigned long long   bytesDiscardedOnSend;\n             unsigned long        fecPacketsSent;\n             unsigned long long   retransmittedPacketsSent;\n             unsigned long long   retransmittedBytesSent;\n             double               targetBitrate;\n             unsigned long long   totalEncodedBytesTarget;\n             unsigned long        frameWidth;\n             unsigned long        frameHeight;\n             unsigned long        frameBitDepth;\n             double               framesPerSecond;\n             unsigned long        framesSent;\n             unsigned long        hugeFramesSent;\n             unsigned long        framesEncoded;\n             unsigned long        keyFramesEncoded;\n             unsigned long        framesDiscardedOnSend;\n             unsigned long long   qpSum;\n             unsigned long long   totalSamplesSent;\n             unsigned long long   samplesEncodedWithSilk;\n             unsigned long long   samplesEncodedWithCelt;\n             boolean              voiceActivityFlag;\n             double               totalEncodeTime;\n             double               totalPacketSendDelay;\n             double               averageRtcpInterval;\n             RTCQualityLimitationReason                 qualityLimitationReason;\n             record<DOMString, double> qualityLimitationDurations;\n             unsigned long        qualityLimitationResolutionChanges;\n             record<USVString, unsigned long long> perDscpPacketsSent;\n             unsigned long        nackCount;\n             unsigned long        firCount;\n             unsigned long        pliCount;\n             unsigned long        sliCount;\n             DOMString            encoderImplementation;\n};",
+        "fragment": "dictionary RTCOutboundRtpStreamStats : RTCSentRtpStreamStats {\n             unsigned long        rtxSsrc;\n             DOMString            mediaSourceId;\n             DOMString            senderId;\n             DOMString            remoteId;\n             DOMString            rid;\n             unsigned long long   headerBytesSent;\n             unsigned long long   retransmittedPacketsSent;\n             unsigned long long   retransmittedBytesSent;\n             double               targetBitrate;\n             unsigned long long   totalEncodedBytesTarget;\n             unsigned long        frameWidth;\n             unsigned long        frameHeight;\n             double               framesPerSecond;\n             unsigned long        framesSent;\n             unsigned long        hugeFramesSent;\n             unsigned long        framesEncoded;\n             unsigned long        keyFramesEncoded;\n             unsigned long long   qpSum;\n             double               totalEncodeTime;\n             double               totalPacketSendDelay;\n             RTCQualityLimitationReason                 qualityLimitationReason;\n             record<DOMString, double> qualityLimitationDurations;\n             unsigned long        qualityLimitationResolutionChanges;\n             unsigned long        nackCount;\n             unsigned long        firCount;\n             unsigned long        pliCount;\n             DOMString            encoderImplementation;\n};",
         "type": "dictionary",
         "name": "RTCOutboundRtpStreamStats",
         "inheritance": "RTCSentRtpStreamStats",
@@ -1462,21 +1076,6 @@
           },
           {
             "type": "field",
-            "name": "lastPacketSentTimestamp",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMHighResTimeStamp"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
             "name": "headerBytesSent",
             "extAttrs": [],
             "idlType": {
@@ -1486,51 +1085,6 @@
               "nullable": false,
               "union": false,
               "idlType": "unsigned long long"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "packetsDiscardedOnSend",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "bytesDiscardedOnSend",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long long"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "fecPacketsSent",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long"
             },
             "default": null,
             "required": false
@@ -1627,21 +1181,6 @@
           },
           {
             "type": "field",
-            "name": "frameBitDepth",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
             "name": "framesPerSecond",
             "extAttrs": [],
             "idlType": {
@@ -1717,21 +1256,6 @@
           },
           {
             "type": "field",
-            "name": "framesDiscardedOnSend",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
             "name": "qpSum",
             "extAttrs": [],
             "idlType": {
@@ -1741,66 +1265,6 @@
               "nullable": false,
               "union": false,
               "idlType": "unsigned long long"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "totalSamplesSent",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long long"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "samplesEncodedWithSilk",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long long"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "samplesEncodedWithCelt",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long long"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "voiceActivityFlag",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "boolean"
             },
             "default": null,
             "required": false
@@ -1823,21 +1287,6 @@
           {
             "type": "field",
             "name": "totalPacketSendDelay",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "double"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "averageRtcpInterval",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -1914,38 +1363,6 @@
           },
           {
             "type": "field",
-            "name": "perDscpPacketsSent",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "record",
-              "nullable": false,
-              "union": false,
-              "idlType": [
-                {
-                  "type": "dictionary-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "USVString"
-                },
-                {
-                  "type": "dictionary-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "unsigned long long"
-                }
-              ]
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
             "name": "nackCount",
             "extAttrs": [],
             "idlType": {
@@ -1977,21 +1394,6 @@
           {
             "type": "field",
             "name": "pliCount",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "sliCount",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -2148,7 +1550,7 @@
         "partial": false
       },
       "RTCMediaSourceStats": {
-        "fragment": "dictionary RTCMediaSourceStats : RTCStats {\n             required DOMString       trackIdentifier;\n             required DOMString       kind;\n             boolean         relayedSource;\n};",
+        "fragment": "dictionary RTCMediaSourceStats : RTCStats {\n             required DOMString       trackIdentifier;\n             required DOMString       kind;\n};",
         "type": "dictionary",
         "name": "RTCMediaSourceStats",
         "inheritance": "RTCStats",
@@ -2182,21 +1584,6 @@
             },
             "default": null,
             "required": true
-          },
-          {
-            "type": "field",
-            "name": "relayedSource",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "boolean"
-            },
-            "default": null,
-            "required": false
           }
         ],
         "extAttrs": [],
@@ -2288,7 +1675,7 @@
         "partial": false
       },
       "RTCVideoSourceStats": {
-        "fragment": "dictionary RTCVideoSourceStats : RTCMediaSourceStats {\n             unsigned long   width;\n             unsigned long   height;\n             unsigned long   bitDepth;\n             unsigned long   frames;\n             double          framesPerSecond;\n};",
+        "fragment": "dictionary RTCVideoSourceStats : RTCMediaSourceStats {\n             unsigned long   width;\n             unsigned long   height;\n             unsigned long   frames;\n             double          framesPerSecond;\n};",
         "type": "dictionary",
         "name": "RTCVideoSourceStats",
         "inheritance": "RTCMediaSourceStats",
@@ -2311,21 +1698,6 @@
           {
             "type": "field",
             "name": "height",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "bitDepth",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -2372,78 +1744,8 @@
         "extAttrs": [],
         "partial": false
       },
-      "RTCRtpContributingSourceStats": {
-        "fragment": "dictionary RTCRtpContributingSourceStats : RTCStats {\n             required unsigned long contributorSsrc;\n             required DOMString     inboundRtpStreamId;\n             unsigned long packetsContributedTo;\n             double        audioLevel;\n};",
-        "type": "dictionary",
-        "name": "RTCRtpContributingSourceStats",
-        "inheritance": "RTCStats",
-        "members": [
-          {
-            "type": "field",
-            "name": "contributorSsrc",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long"
-            },
-            "default": null,
-            "required": true
-          },
-          {
-            "type": "field",
-            "name": "inboundRtpStreamId",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            "default": null,
-            "required": true
-          },
-          {
-            "type": "field",
-            "name": "packetsContributedTo",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "audioLevel",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "double"
-            },
-            "default": null,
-            "required": false
-          }
-        ],
-        "extAttrs": [],
-        "partial": false
-      },
       "RTCPeerConnectionStats": {
-        "fragment": "dictionary RTCPeerConnectionStats : RTCStats {\n            unsigned long dataChannelsOpened;\n            unsigned long dataChannelsClosed;\n            unsigned long dataChannelsRequested;\n            unsigned long dataChannelsAccepted;\n};",
+        "fragment": "dictionary RTCPeerConnectionStats : RTCStats {\n            unsigned long dataChannelsOpened;\n            unsigned long dataChannelsClosed;\n};",
         "type": "dictionary",
         "name": "RTCPeerConnectionStats",
         "inheritance": "RTCStats",
@@ -2466,36 +1768,6 @@
           {
             "type": "field",
             "name": "dataChannelsClosed",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "dataChannelsRequested",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "dataChannelsAccepted",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -2839,7 +2111,7 @@
         "partial": false
       },
       "RTCTransportStats": {
-        "fragment": "dictionary RTCTransportStats : RTCStats {\n             unsigned long long    packetsSent;\n             unsigned long long    packetsReceived;\n             unsigned long long    bytesSent;\n             unsigned long long    bytesReceived;\n             DOMString             rtcpTransportStatsId;\n             RTCIceRole            iceRole;\n             DOMString             iceLocalUsernameFragment;\n             required RTCDtlsTransportState dtlsState;\n             RTCIceTransportState  iceState;\n             DOMString             selectedCandidatePairId;\n             DOMString             localCertificateId;\n             DOMString             remoteCertificateId;\n             DOMString             tlsVersion;\n             DOMString             dtlsCipher;\n             RTCDtlsRole           dtlsRole;\n             DOMString             srtpCipher;\n             DOMString             tlsGroup;\n             unsigned long         selectedCandidatePairChanges;\n};",
+        "fragment": "dictionary RTCTransportStats : RTCStats {\n             unsigned long long    packetsSent;\n             unsigned long long    packetsReceived;\n             unsigned long long    bytesSent;\n             unsigned long long    bytesReceived;\n             DOMString             rtcpTransportStatsId;\n             RTCIceRole            iceRole;\n             DOMString             iceLocalUsernameFragment;\n             required RTCDtlsTransportState dtlsState;\n             RTCIceTransportState  iceState;\n             DOMString             selectedCandidatePairId;\n             DOMString             localCertificateId;\n             DOMString             remoteCertificateId;\n             DOMString             tlsVersion;\n             DOMString             dtlsCipher;\n             RTCDtlsRole           dtlsRole;\n             DOMString             srtpCipher;\n             unsigned long         selectedCandidatePairChanges;\n};",
         "type": "dictionary",
         "name": "RTCTransportStats",
         "inheritance": "RTCStats",
@@ -3072,21 +2344,6 @@
           {
             "type": "field",
             "name": "srtpCipher",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "tlsGroup",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -3369,7 +2626,7 @@
         "partial": false
       },
       "RTCIceCandidatePairStats": {
-        "fragment": "dictionary RTCIceCandidatePairStats : RTCStats {\n             required DOMString            transportId;\n             required DOMString            localCandidateId;\n             required DOMString            remoteCandidateId;\n             required RTCStatsIceCandidatePairState state;\n             boolean                       nominated;\n             unsigned long long            packetsSent;\n             unsigned long long            packetsReceived;\n             unsigned long long            bytesSent;\n             unsigned long long            bytesReceived;\n             DOMHighResTimeStamp           lastPacketSentTimestamp;\n             DOMHighResTimeStamp           lastPacketReceivedTimestamp;\n             DOMHighResTimeStamp           firstRequestTimestamp;\n             DOMHighResTimeStamp           lastRequestTimestamp;\n             DOMHighResTimeStamp           lastResponseTimestamp;\n             double                        totalRoundTripTime;\n             double                        currentRoundTripTime;\n             double                        availableOutgoingBitrate;\n             double                        availableIncomingBitrate;\n             unsigned long                 circuitBreakerTriggerCount;\n             unsigned long long            requestsReceived;\n             unsigned long long            requestsSent;\n             unsigned long long            responsesReceived;\n             unsigned long long            responsesSent;\n             unsigned long long            retransmissionsReceived;\n             unsigned long long            retransmissionsSent;\n             unsigned long long            consentRequestsSent;\n             DOMHighResTimeStamp           consentExpiredTimestamp;\n             unsigned long                 packetsDiscardedOnSend;\n             unsigned long long            bytesDiscardedOnSend;\n             unsigned long long            requestBytesSent;\n             unsigned long long            consentRequestBytesSent;\n             unsigned long long            responseBytesSent;\n};",
+        "fragment": "dictionary RTCIceCandidatePairStats : RTCStats {\n             required DOMString            transportId;\n             required DOMString            localCandidateId;\n             required DOMString            remoteCandidateId;\n             required RTCStatsIceCandidatePairState state;\n             boolean                       nominated;\n             unsigned long long            packetsSent;\n             unsigned long long            packetsReceived;\n             unsigned long long            bytesSent;\n             unsigned long long            bytesReceived;\n             DOMHighResTimeStamp           lastPacketSentTimestamp;\n             DOMHighResTimeStamp           lastPacketReceivedTimestamp;\n             double                        totalRoundTripTime;\n             double                        currentRoundTripTime;\n             double                        availableOutgoingBitrate;\n             double                        availableIncomingBitrate;\n             unsigned long long            requestsReceived;\n             unsigned long long            requestsSent;\n             unsigned long long            responsesReceived;\n             unsigned long long            responsesSent;\n             unsigned long long            consentRequestsSent;\n             unsigned long                 packetsDiscardedOnSend;\n             unsigned long long            bytesDiscardedOnSend;\n};",
         "type": "dictionary",
         "name": "RTCIceCandidatePairStats",
         "inheritance": "RTCStats",
@@ -3541,51 +2798,6 @@
           },
           {
             "type": "field",
-            "name": "firstRequestTimestamp",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMHighResTimeStamp"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "lastRequestTimestamp",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMHighResTimeStamp"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "lastResponseTimestamp",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMHighResTimeStamp"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
             "name": "totalRoundTripTime",
             "extAttrs": [],
             "idlType": {
@@ -3640,21 +2852,6 @@
               "nullable": false,
               "union": false,
               "idlType": "double"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "circuitBreakerTriggerCount",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long"
             },
             "default": null,
             "required": false
@@ -3721,36 +2918,6 @@
           },
           {
             "type": "field",
-            "name": "retransmissionsReceived",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long long"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "retransmissionsSent",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long long"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
             "name": "consentRequestsSent",
             "extAttrs": [],
             "idlType": {
@@ -3760,21 +2927,6 @@
               "nullable": false,
               "union": false,
               "idlType": "unsigned long long"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "consentExpiredTimestamp",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMHighResTimeStamp"
             },
             "default": null,
             "required": false
@@ -3797,51 +2949,6 @@
           {
             "type": "field",
             "name": "bytesDiscardedOnSend",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long long"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "requestBytesSent",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long long"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "consentRequestBytesSent",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long long"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "responseBytesSent",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -3955,106 +3062,6 @@
         ],
         "extAttrs": [],
         "partial": false
-      },
-      "RTCIceServerStats": {
-        "fragment": "dictionary RTCIceServerStats : RTCStats {\n           required DOMString url;\n           long port;\n           DOMString relayProtocol;\n           unsigned long totalRequestsSent;\n           unsigned long totalResponsesReceived;\n           double totalRoundTripTime;\n};",
-        "type": "dictionary",
-        "name": "RTCIceServerStats",
-        "inheritance": "RTCStats",
-        "members": [
-          {
-            "type": "field",
-            "name": "url",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            "default": null,
-            "required": true
-          },
-          {
-            "type": "field",
-            "name": "port",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "long"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "relayProtocol",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "totalRequestsSent",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "totalResponsesReceived",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "totalRoundTripTime",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "double"
-            },
-            "default": null,
-            "required": false
-          }
-        ],
-        "extAttrs": [],
-        "partial": false
       }
     },
     "idlExtendedNames": {},
@@ -4065,8 +3072,7 @@
         "RTCStats"
       ],
       "RTCCodecStats": [
-        "RTCStats",
-        "RTCCodecType"
+        "RTCStats"
       ],
       "RTCReceivedRtpStreamStats": [
         "RTCRtpStreamStats"
@@ -4083,7 +3089,6 @@
       ],
       "RTCOutboundRtpStreamStats": [
         "RTCSentRtpStreamStats",
-        "DOMHighResTimeStamp",
         "RTCQualityLimitationReason"
       ],
       "RTCRemoteOutboundRtpStreamStats": [
@@ -4098,9 +3103,6 @@
       ],
       "RTCVideoSourceStats": [
         "RTCMediaSourceStats"
-      ],
-      "RTCRtpContributingSourceStats": [
-        "RTCStats"
       ],
       "RTCPeerConnectionStats": [
         "RTCStats"
@@ -4153,9 +3155,6 @@
         "DOMHighResTimeStamp"
       ],
       "RTCCertificateStats": [
-        "RTCStats"
-      ],
-      "RTCIceServerStats": [
         "RTCStats"
       ]
     },
