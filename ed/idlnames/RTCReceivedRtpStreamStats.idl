@@ -4,17 +4,5 @@ dictionary RTCReceivedRtpStreamStats : RTCRtpStreamStats {
              long long            packetsLost;
              double               jitter;
              unsigned long long   packetsDiscarded;
-             unsigned long long   packetsRepaired;
-             unsigned long long   burstPacketsLost;
-             unsigned long long   burstPacketsDiscarded;
-             unsigned long        burstLossCount;
-             unsigned long        burstDiscardCount;
-             double               burstLossRate;
-             double               burstDiscardRate;
-             double               gapLossRate;
-             double               gapDiscardRate;
              unsigned long        framesDropped;
-             unsigned long        partialFramesLost;
-             unsigned long        fullFramesLost;
-
 };
