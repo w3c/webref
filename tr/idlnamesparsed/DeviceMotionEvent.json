@@ -6,7 +6,7 @@
       "title": "DeviceOrientation Event Specification",
       "url": "https://www.w3.org/TR/orientation-event/"
     },
-    "fragment": "[Constructor(DOMString type, optional DeviceMotionEventInit eventInitDict), Exposed=Window, SecureContext]\ninterface DeviceMotionEvent : Event {\n    readonly attribute DeviceMotionEventAcceleration? acceleration;\n    readonly attribute DeviceMotionEventAcceleration? accelerationIncludingGravity;\n    readonly attribute DeviceMotionEventRotationRate? rotationRate;\n    readonly attribute double interval;\n\n    static Promise<PermissionState> requestPermission();\n};",
+    "fragment": "[Exposed=Window, SecureContext]\ninterface DeviceMotionEvent : Event {\n    constructor(DOMString type, optional DeviceMotionEventInit eventInitDict = {});\n    readonly attribute DeviceMotionEventAcceleration? acceleration;\n    readonly attribute DeviceMotionEventAcceleration? accelerationIncludingGravity;\n    readonly attribute DeviceMotionEventRotationRate? rotationRate;\n    readonly attribute double interval;\n\n    static Promise<PermissionState> requestPermission();\n};",
     "href": "https://www.w3.org/TR/orientation-event/#devicemotionevent"
   },
   "extended": [],

@@ -1,6 +1,7 @@
 // Source: DeviceOrientation Event Specification (https://www.w3.org/TR/orientation-event/)
-[Constructor(DOMString type, optional DeviceMotionEventInit eventInitDict), Exposed=Window, SecureContext]
+[Exposed=Window, SecureContext]
 interface DeviceMotionEvent : Event {
+    constructor(DOMString type, optional DeviceMotionEventInit eventInitDict = {});
     readonly attribute DeviceMotionEventAcceleration? acceleration;
     readonly attribute DeviceMotionEventAcceleration? accelerationIncludingGravity;
     readonly attribute DeviceMotionEventRotationRate? rotationRate;

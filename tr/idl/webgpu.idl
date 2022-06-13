@@ -34,6 +34,7 @@ interface GPUSupportedLimits {
     readonly attribute unsigned long maxVertexBufferArrayStride;
     readonly attribute unsigned long maxInterStageShaderComponents;
     readonly attribute unsigned long maxInterStageShaderVariables;
+    readonly attribute unsigned long maxColorAttachments;
     readonly attribute unsigned long maxComputeWorkgroupStorageSize;
     readonly attribute unsigned long maxComputeInvocationsPerWorkgroup;
     readonly attribute unsigned long maxComputeWorkgroupSizeX;
@@ -53,10 +54,6 @@ interface GPUAdapterInfo {
   readonly attribute DOMString architecture;
   readonly attribute DOMString device;
   readonly attribute DOMString description;
-};
-
-enum GPUPredefinedColorSpace {
-    "srgb"
 };
 
 interface mixin NavigatorGPU {
@@ -99,7 +96,6 @@ dictionary GPUDeviceDescriptor : GPUObjectDescriptorBase {
 
 enum GPUFeatureName {
     "depth-clip-control",
-    "depth24unorm-stencil8",
     "depth32float-stencil8",
     "texture-compression-bc",
     "texture-compression-etc2",
@@ -310,9 +306,6 @@ enum GPUTextureFormat {
     "depth24plus-stencil8",
     "depth32float",
 
-    // "depth24unorm-stencil8" feature
-    "depth24unorm-stencil8",
-
     // "depth32float-stencil8" feature
     "depth32float-stencil8",
 
@@ -386,7 +379,7 @@ GPUExternalTexture includes GPUObjectBase;
 
 dictionary GPUExternalTextureDescriptor : GPUObjectDescriptorBase {
     required HTMLVideoElement source;
-    GPUPredefinedColorSpace colorSpace = "srgb";
+    PredefinedColorSpace colorSpace = "srgb";
 };
 
 [Exposed=(Window, DedicatedWorker), SecureContext]
@@ -889,7 +882,7 @@ dictionary GPUImageCopyTexture {
 };
 
 dictionary GPUImageCopyTextureTagged : GPUImageCopyTexture {
-    GPUPredefinedColorSpace colorSpace = "srgb";
+    PredefinedColorSpace colorSpace = "srgb";
     boolean premultipliedAlpha = false;
 };
 
@@ -1136,7 +1129,7 @@ dictionary GPUCanvasConfiguration {
     required GPUTextureFormat format;
     GPUTextureUsageFlags usage = 0x10;  // GPUTextureUsage.RENDER_ATTACHMENT
     sequence<GPUTextureFormat> viewFormats = [];
-    GPUPredefinedColorSpace colorSpace = "srgb";
+    PredefinedColorSpace colorSpace = "srgb";
     GPUCanvasAlphaMode alphaMode = "opaque";
 };
 

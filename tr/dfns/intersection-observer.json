@@ -251,6 +251,30 @@
       "definedIn": "pre"
     },
     {
+      "id": "dom-intersectionobserver-intersectionobserver",
+      "href": "https://www.w3.org/TR/intersection-observer/#dom-intersectionobserver-intersectionobserver",
+      "linkingText": [
+        "IntersectionObserver(callback, options)",
+        "constructor(callback, options)",
+        "IntersectionObserver(callback)",
+        "constructor(callback)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "IntersectionObserver"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "intersection-observer-interface",
+        "href": "https://www.w3.org/TR/intersection-observer/#intersection-observer-interface",
+        "title": "The IntersectionObserver interface",
+        "number": "2.2"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "dom-intersectionobserver-intersectionobserver-callback-options-callback",
       "href": "https://www.w3.org/TR/intersection-observer/#dom-intersectionobserver-intersectionobserver-callback-options-callback",
       "linkingText": [
@@ -341,13 +365,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-intersectionobserver-intersectionobserver",
-      "href": "https://www.w3.org/TR/intersection-observer/#dom-intersectionobserver-intersectionobserver",
+      "id": "dom-intersectionobserver-intersectionobserver-callback-options",
+      "href": "https://www.w3.org/TR/intersection-observer/#dom-intersectionobserver-intersectionobserver-callback-options",
       "linkingText": [
-        "IntersectionObserver(callback, options)",
-        "constructor(callback, options)",
-        "IntersectionObserver(callback)",
-        "constructor(callback)"
+        "IntersectionObserver(callback, options = {})"
       ],
       "localLinkingText": [],
       "type": "constructor",
@@ -510,6 +531,27 @@
         "number": "2.2"
       },
       "definedIn": "dt"
+    },
+    {
+      "id": "intersectionobserver-content-clip",
+      "href": "https://www.w3.org/TR/intersection-observer/#intersectionobserver-content-clip",
+      "linkingText": [
+        "content clip"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "IntersectionObserver"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "intersection-observer-interface",
+        "href": "https://www.w3.org/TR/intersection-observer/#intersection-observer-interface",
+        "title": "The IntersectionObserver interface",
+        "number": "2.2"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "intersectionobserver-root-intersection-rectangle",
@@ -1397,7 +1439,7 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "update-intersection-observations-algo",

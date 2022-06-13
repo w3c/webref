@@ -11,9 +11,11 @@
         "deviceorientation"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "event",
+      "for": [
+        "Window"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "deviceorientation",
@@ -45,11 +47,32 @@
       "definedIn": "pre"
     },
     {
+      "id": "deviceorientationevent",
+      "href": "https://www.w3.org/TR/orientation-event/#deviceorientationevent",
+      "linkingText": [
+        "DeviceOrientationEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "deviceorientation",
+        "href": "https://www.w3.org/TR/orientation-event/#deviceorientation",
+        "title": "deviceorientation Event",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "dom-deviceorientationevent-deviceorientationevent",
       "href": "https://www.w3.org/TR/orientation-event/#dom-deviceorientationevent-deviceorientationevent",
       "linkingText": [
         "DeviceOrientationEvent(type, eventInitDict)",
-        "DeviceOrientationEvent(type)"
+        "constructor(type, eventInitDict)",
+        "DeviceOrientationEvent(type)",
+        "constructor(type)"
       ],
       "localLinkingText": [],
       "type": "constructor",
@@ -75,7 +98,10 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "DeviceOrientationEvent/DeviceOrientationEvent(type, eventInitDict)"
+        "DeviceOrientationEvent/DeviceOrientationEvent(type, eventInitDict)",
+        "DeviceOrientationEvent/constructor(type, eventInitDict)",
+        "DeviceOrientationEvent/DeviceOrientationEvent(type)",
+        "DeviceOrientationEvent/constructor(type)"
       ],
       "access": "public",
       "informative": false,
@@ -96,27 +122,11 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "DeviceOrientationEvent/DeviceOrientationEvent(type, eventInitDict)"
+        "DeviceOrientationEvent/DeviceOrientationEvent(type, eventInitDict)",
+        "DeviceOrientationEvent/constructor(type, eventInitDict)",
+        "DeviceOrientationEvent/DeviceOrientationEvent(type)",
+        "DeviceOrientationEvent/constructor(type)"
       ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "deviceorientation",
-        "href": "https://www.w3.org/TR/orientation-event/#deviceorientation",
-        "title": "deviceorientation Event",
-        "number": "4.1"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "deviceorientationevent",
-      "href": "https://www.w3.org/TR/orientation-event/#deviceorientationevent",
-      "linkingText": [
-        "DeviceOrientationEvent"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
       "access": "public",
       "informative": false,
       "heading": {
@@ -403,9 +413,11 @@
         "deviceorientationabsolute"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "event",
+      "for": [
+        "Window"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "deviceorientationabsolute",
@@ -443,9 +455,11 @@
         "compassneedscalibration"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "event",
+      "for": [
+        "Window"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "compassneedscalibration",
@@ -483,9 +497,11 @@
         "devicemotion"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "event",
+      "for": [
+        "Window"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "devicemotion",
@@ -681,11 +697,32 @@
       "definedIn": "pre"
     },
     {
+      "id": "devicemotionevent",
+      "href": "https://www.w3.org/TR/orientation-event/#devicemotionevent",
+      "linkingText": [
+        "DeviceMotionEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "devicemotion",
+        "href": "https://www.w3.org/TR/orientation-event/#devicemotion",
+        "title": "devicemotion Event",
+        "number": "4.4"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "dom-devicemotionevent-devicemotionevent",
       "href": "https://www.w3.org/TR/orientation-event/#dom-devicemotionevent-devicemotionevent",
       "linkingText": [
         "DeviceMotionEvent(type, eventInitDict)",
-        "DeviceMotionEvent(type)"
+        "constructor(type, eventInitDict)",
+        "DeviceMotionEvent(type)",
+        "constructor(type)"
       ],
       "localLinkingText": [],
       "type": "constructor",
@@ -711,7 +748,10 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "DeviceMotionEvent/DeviceMotionEvent(type, eventInitDict)"
+        "DeviceMotionEvent/DeviceMotionEvent(type, eventInitDict)",
+        "DeviceMotionEvent/constructor(type, eventInitDict)",
+        "DeviceMotionEvent/DeviceMotionEvent(type)",
+        "DeviceMotionEvent/constructor(type)"
       ],
       "access": "public",
       "informative": false,
@@ -732,27 +772,11 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "DeviceMotionEvent/DeviceMotionEvent(type, eventInitDict)"
+        "DeviceMotionEvent/DeviceMotionEvent(type, eventInitDict)",
+        "DeviceMotionEvent/constructor(type, eventInitDict)",
+        "DeviceMotionEvent/DeviceMotionEvent(type)",
+        "DeviceMotionEvent/constructor(type)"
       ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "devicemotion",
-        "href": "https://www.w3.org/TR/orientation-event/#devicemotion",
-        "title": "devicemotion Event",
-        "number": "4.4"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "devicemotionevent",
-      "href": "https://www.w3.org/TR/orientation-event/#devicemotionevent",
-      "linkingText": [
-        "DeviceMotionEvent"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
       "access": "public",
       "informative": false,
       "heading": {

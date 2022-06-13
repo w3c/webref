@@ -1317,11 +1317,60 @@
       "number": "16.1"
     },
     {
+      "id": "all-vector-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#all-vector-builtin",
+      "level": 4,
+      "title": "all (vector)",
+      "number": "16.1.1"
+    },
+    {
+      "id": "all-scalar-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#all-scalar-builtin",
+      "level": 4,
+      "title": "all (scalar)",
+      "number": "16.1.2"
+    },
+    {
+      "id": "any-vector-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#any-vector-builtin",
+      "level": 4,
+      "title": "any (vector)",
+      "number": "16.1.3"
+    },
+    {
+      "id": "any-scalar-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#any-scalar-builtin",
+      "level": 4,
+      "title": "any (scalar)",
+      "number": "16.1.4"
+    },
+    {
+      "id": "select-scalar-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#select-scalar-builtin",
+      "level": 4,
+      "title": "select (scalar)",
+      "number": "16.1.5"
+    },
+    {
+      "id": "select-vector-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#select-vector-builtin",
+      "level": 4,
+      "title": "select (vector)",
+      "number": "16.1.6"
+    },
+    {
       "id": "array-builtin-functions",
       "href": "https://www.w3.org/TR/WGSL/#array-builtin-functions",
       "level": 3,
       "title": "Array Built-in Functions",
       "number": "16.2"
+    },
+    {
+      "id": "arrayLength-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#arrayLength-builtin",
+      "level": 4,
+      "title": "arrayLength",
+      "number": "16.2.1"
     },
     {
       "id": "float-builtin-functions",
@@ -1331,11 +1380,487 @@
       "number": "16.3"
     },
     {
+      "id": "abs-float-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#abs-float-builtin",
+      "level": 4,
+      "title": "abs",
+      "number": "16.3.1"
+    },
+    {
+      "id": "acos-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#acos-builtin",
+      "level": 4,
+      "title": "acos",
+      "number": "16.3.2"
+    },
+    {
+      "id": "acosh-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#acosh-builtin",
+      "level": 4,
+      "title": "acosh",
+      "number": "16.3.3"
+    },
+    {
+      "id": "asin-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#asin-builtin",
+      "level": 4,
+      "title": "asin",
+      "number": "16.3.4"
+    },
+    {
+      "id": "asinh-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#asinh-builtin",
+      "level": 4,
+      "title": "asinh",
+      "number": "16.3.5"
+    },
+    {
+      "id": "atan-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#atan-builtin",
+      "level": 4,
+      "title": "atan",
+      "number": "16.3.6"
+    },
+    {
+      "id": "atanh-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#atanh-builtin",
+      "level": 4,
+      "title": "atanh",
+      "number": "16.3.7"
+    },
+    {
+      "id": "atan2-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#atan2-builtin",
+      "level": 4,
+      "title": "atan2",
+      "number": "16.3.8"
+    },
+    {
+      "id": "ceil-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#ceil-builtin",
+      "level": 4,
+      "title": "ceil",
+      "number": "16.3.9"
+    },
+    {
+      "id": "clamp-float-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#clamp-float-builtin",
+      "level": 4,
+      "title": "clamp",
+      "number": "16.3.10"
+    },
+    {
+      "id": "cos-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#cos-builtin",
+      "level": 4,
+      "title": "cos",
+      "number": "16.3.11"
+    },
+    {
+      "id": "cosh-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#cosh-builtin",
+      "level": 4,
+      "title": "cosh",
+      "number": "16.3.12"
+    },
+    {
+      "id": "cross-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#cross-builtin",
+      "level": 4,
+      "title": "cross",
+      "number": "16.3.13"
+    },
+    {
+      "id": "degrees-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#degrees-builtin",
+      "level": 4,
+      "title": "degrees",
+      "number": "16.3.14"
+    },
+    {
+      "id": "distance-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#distance-builtin",
+      "level": 4,
+      "title": "distance",
+      "number": "16.3.15"
+    },
+    {
+      "id": "exp-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#exp-builtin",
+      "level": 4,
+      "title": "exp",
+      "number": "16.3.16"
+    },
+    {
+      "id": "exp2-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#exp2-builtin",
+      "level": 4,
+      "title": "exp2",
+      "number": "16.3.17"
+    },
+    {
+      "id": "faceForward-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#faceForward-builtin",
+      "level": 4,
+      "title": "faceForward",
+      "number": "16.3.18"
+    },
+    {
+      "id": "floor-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#floor-builtin",
+      "level": 4,
+      "title": "floor",
+      "number": "16.3.19"
+    },
+    {
+      "id": "fma-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#fma-builtin",
+      "level": 4,
+      "title": "fma",
+      "number": "16.3.20"
+    },
+    {
+      "id": "fract-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#fract-builtin",
+      "level": 4,
+      "title": "fract",
+      "number": "16.3.21"
+    },
+    {
+      "id": "frexp-scalar-f32-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#frexp-scalar-f32-builtin",
+      "level": 4,
+      "title": "frexp (scalar f32)",
+      "number": "16.3.22"
+    },
+    {
+      "id": "frexp-scalar-f16-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#frexp-scalar-f16-builtin",
+      "level": 4,
+      "title": "frexp (scalar f16)",
+      "number": "16.3.23"
+    },
+    {
+      "id": "frexp-vector-f32-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#frexp-vector-f32-builtin",
+      "level": 4,
+      "title": "frexp (vector f32)",
+      "number": "16.3.24"
+    },
+    {
+      "id": "frexp-vector-f16-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#frexp-vector-f16-builtin",
+      "level": 4,
+      "title": "frexp (vector f16)",
+      "number": "16.3.25"
+    },
+    {
+      "id": "inverseSqrt-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#inverseSqrt-builtin",
+      "level": 4,
+      "title": "inverseSqrt",
+      "number": "16.3.26"
+    },
+    {
+      "id": "ldexp-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#ldexp-builtin",
+      "level": 4,
+      "title": "ldexp",
+      "number": "16.3.27"
+    },
+    {
+      "id": "length-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#length-builtin",
+      "level": 4,
+      "title": "length",
+      "number": "16.3.28"
+    },
+    {
+      "id": "log-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#log-builtin",
+      "level": 4,
+      "title": "log",
+      "number": "16.3.29"
+    },
+    {
+      "id": "log2-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#log2-builtin",
+      "level": 4,
+      "title": "log2",
+      "number": "16.3.30"
+    },
+    {
+      "id": "max-float-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#max-float-builtin",
+      "level": 4,
+      "title": "max",
+      "number": "16.3.31"
+    },
+    {
+      "id": "min-float-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#min-float-builtin",
+      "level": 4,
+      "title": "min",
+      "number": "16.3.32"
+    },
+    {
+      "id": "mix-scalar-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#mix-scalar-builtin",
+      "level": 4,
+      "title": "mix (scalar)",
+      "number": "16.3.33"
+    },
+    {
+      "id": "mix-vector-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#mix-vector-builtin",
+      "level": 4,
+      "title": "mix (vector)",
+      "number": "16.3.34"
+    },
+    {
+      "id": "modf-scalar-f32-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#modf-scalar-f32-builtin",
+      "level": 4,
+      "title": "modf (scalar f32)",
+      "number": "16.3.35"
+    },
+    {
+      "id": "modf-scalar-f16-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#modf-scalar-f16-builtin",
+      "level": 4,
+      "title": "modf (scalar f16)",
+      "number": "16.3.36"
+    },
+    {
+      "id": "modf-vector-f32-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#modf-vector-f32-builtin",
+      "level": 4,
+      "title": "modf (vector f32)",
+      "number": "16.3.37"
+    },
+    {
+      "id": "modf-vector-f16-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#modf-vector-f16-builtin",
+      "level": 4,
+      "title": "modf (vector f16)",
+      "number": "16.3.38"
+    },
+    {
+      "id": "normalize-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#normalize-builtin",
+      "level": 4,
+      "title": "normalize",
+      "number": "16.3.39"
+    },
+    {
+      "id": "pow-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#pow-builtin",
+      "level": 4,
+      "title": "pow",
+      "number": "16.3.40"
+    },
+    {
+      "id": "quantizeToF16-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#quantizeToF16-builtin",
+      "level": 4,
+      "title": "quantizeToF16",
+      "number": "16.3.41"
+    },
+    {
+      "id": "radians-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#radians-builtin",
+      "level": 4,
+      "title": "radians",
+      "number": "16.3.42"
+    },
+    {
+      "id": "reflect-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#reflect-builtin",
+      "level": 4,
+      "title": "reflect",
+      "number": "16.3.43"
+    },
+    {
+      "id": "refract-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#refract-builtin",
+      "level": 4,
+      "title": "refract",
+      "number": "16.3.44"
+    },
+    {
+      "id": "round-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#round-builtin",
+      "level": 4,
+      "title": "round",
+      "number": "16.3.45"
+    },
+    {
+      "id": "sign-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#sign-builtin",
+      "level": 4,
+      "title": "sign",
+      "number": "16.3.46"
+    },
+    {
+      "id": "sin-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#sin-builtin",
+      "level": 4,
+      "title": "sin",
+      "number": "16.3.47"
+    },
+    {
+      "id": "sinh-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#sinh-builtin",
+      "level": 4,
+      "title": "sinh",
+      "number": "16.3.48"
+    },
+    {
+      "id": "smoothstep-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#smoothstep-builtin",
+      "level": 4,
+      "title": "smoothstep",
+      "number": "16.3.49"
+    },
+    {
+      "id": "sqrt-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#sqrt-builtin",
+      "level": 4,
+      "title": "sqrt",
+      "number": "16.3.50"
+    },
+    {
+      "id": "step-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#step-builtin",
+      "level": 4,
+      "title": "step",
+      "number": "16.3.51"
+    },
+    {
+      "id": "tan-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#tan-builtin",
+      "level": 4,
+      "title": "tan",
+      "number": "16.3.52"
+    },
+    {
+      "id": "tanh-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#tanh-builtin",
+      "level": 4,
+      "title": "tanh",
+      "number": "16.3.53"
+    },
+    {
+      "id": "trunc-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#trunc-builtin",
+      "level": 4,
+      "title": "trunc",
+      "number": "16.3.54"
+    },
+    {
       "id": "integer-builtin-functions",
       "href": "https://www.w3.org/TR/WGSL/#integer-builtin-functions",
       "level": 3,
       "title": "Integer Built-in Functions",
       "number": "16.4"
+    },
+    {
+      "id": "abs-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#abs-builtin",
+      "level": 4,
+      "title": "abs",
+      "number": "16.4.1"
+    },
+    {
+      "id": "clamp-integral-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#clamp-integral-builtin",
+      "level": 4,
+      "title": "clamp",
+      "number": "16.4.2"
+    },
+    {
+      "id": "countLeadingZeros-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#countLeadingZeros-builtin",
+      "level": 4,
+      "title": "countLeadingZeros",
+      "number": "16.4.3"
+    },
+    {
+      "id": "countOneBits-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#countOneBits-builtin",
+      "level": 4,
+      "title": "countOneBits",
+      "number": "16.4.4"
+    },
+    {
+      "id": "countTrailingZeros-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#countTrailingZeros-builtin",
+      "level": 4,
+      "title": "countTrailingZeros",
+      "number": "16.4.5"
+    },
+    {
+      "id": "firstLeadingBit-signed-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#firstLeadingBit-signed-builtin",
+      "level": 4,
+      "title": "firstLeadingBit (signed)",
+      "number": "16.4.6"
+    },
+    {
+      "id": "firstLeadingBit-unsigned-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#firstLeadingBit-unsigned-builtin",
+      "level": 4,
+      "title": "firstLeadingBit (unsigned)",
+      "number": "16.4.7"
+    },
+    {
+      "id": "firstTrailingBit-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#firstTrailingBit-builtin",
+      "level": 4,
+      "title": "firstTrailingBit",
+      "number": "16.4.8"
+    },
+    {
+      "id": "extractBits-signed-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#extractBits-signed-builtin",
+      "level": 4,
+      "title": "extractBits (signed)",
+      "number": "16.4.9"
+    },
+    {
+      "id": "extractBits-unsigned-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#extractBits-unsigned-builtin",
+      "level": 4,
+      "title": "extractBits (unsigned)",
+      "number": "16.4.10"
+    },
+    {
+      "id": "insertBits-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#insertBits-builtin",
+      "level": 4,
+      "title": "insertBits",
+      "number": "16.4.11"
+    },
+    {
+      "id": "max-integral-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#max-integral-builtin",
+      "level": 4,
+      "title": "max",
+      "number": "16.4.12"
+    },
+    {
+      "id": "min-integral-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#min-integral-builtin",
+      "level": 4,
+      "title": "min",
+      "number": "16.4.13"
+    },
+    {
+      "id": "reverseBits-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#reverseBits-builtin",
+      "level": 4,
+      "title": "reverseBits",
+      "number": "16.4.14"
     },
     {
       "id": "matrix-builtin-functions",
@@ -1345,6 +1870,20 @@
       "number": "16.5"
     },
     {
+      "id": "determinant-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#determinant-builtin",
+      "level": 4,
+      "title": "determinant",
+      "number": "16.5.1"
+    },
+    {
+      "id": "transpose-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#transpose-builtin",
+      "level": 4,
+      "title": "transpose",
+      "number": "16.5.2"
+    },
+    {
       "id": "vector-builtin-functions",
       "href": "https://www.w3.org/TR/WGSL/#vector-builtin-functions",
       "level": 3,
@@ -1352,11 +1891,81 @@
       "number": "16.6"
     },
     {
+      "id": "dot-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#dot-builtin",
+      "level": 4,
+      "title": "dot",
+      "number": "16.6.1"
+    },
+    {
       "id": "derivative-builtin-functions",
       "href": "https://www.w3.org/TR/WGSL/#derivative-builtin-functions",
       "level": 3,
       "title": "Derivative Built-in Functions",
       "number": "16.7"
+    },
+    {
+      "id": "dpdx-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#dpdx-builtin",
+      "level": 4,
+      "title": "dpdx",
+      "number": "16.7.1"
+    },
+    {
+      "id": "dpdxCoarse-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#dpdxCoarse-builtin",
+      "level": 4,
+      "title": "dpdxCoarse",
+      "number": "16.7.2"
+    },
+    {
+      "id": "dpdxFine-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#dpdxFine-builtin",
+      "level": 4,
+      "title": "dpdxFine",
+      "number": "16.7.3"
+    },
+    {
+      "id": "dpdy-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#dpdy-builtin",
+      "level": 4,
+      "title": "dpdy",
+      "number": "16.7.4"
+    },
+    {
+      "id": "dpdyCoarse-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#dpdyCoarse-builtin",
+      "level": 4,
+      "title": "dpdyCoarse",
+      "number": "16.7.5"
+    },
+    {
+      "id": "dpdyFine-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#dpdyFine-builtin",
+      "level": 4,
+      "title": "dpdyFine",
+      "number": "16.7.6"
+    },
+    {
+      "id": "fwidth-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#fwidth-builtin",
+      "level": 4,
+      "title": "fwidth",
+      "number": "16.7.7"
+    },
+    {
+      "id": "fwidthCoarse-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#fwidthCoarse-builtin",
+      "level": 4,
+      "title": "fwidthCoarse",
+      "number": "16.7.8"
+    },
+    {
+      "id": "fwidthFine-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#fwidthFine-builtin",
+      "level": 4,
+      "title": "fwidthFine",
+      "number": "16.7.9"
     },
     {
       "id": "texture-builtin-functions",
@@ -1499,11 +2108,81 @@
       "number": "16.10"
     },
     {
+      "id": "pack4x8snorm-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#pack4x8snorm-builtin",
+      "level": 4,
+      "title": "pack4x8snorm",
+      "number": "16.10.1"
+    },
+    {
+      "id": "pack4x8unorm-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#pack4x8unorm-builtin",
+      "level": 4,
+      "title": "pack4x8unorm",
+      "number": "16.10.2"
+    },
+    {
+      "id": "pack2x16snorm-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#pack2x16snorm-builtin",
+      "level": 4,
+      "title": "pack2x16snorm",
+      "number": "16.10.3"
+    },
+    {
+      "id": "pack2x16unorm-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#pack2x16unorm-builtin",
+      "level": 4,
+      "title": "pack2x16unorm",
+      "number": "16.10.4"
+    },
+    {
+      "id": "pack2x16float-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#pack2x16float-builtin",
+      "level": 4,
+      "title": "pack2x16float",
+      "number": "16.10.5"
+    },
+    {
       "id": "unpack-builtin-functions",
       "href": "https://www.w3.org/TR/WGSL/#unpack-builtin-functions",
       "level": 3,
       "title": "Data Unpacking Built-in Functions",
       "number": "16.11"
+    },
+    {
+      "id": "unpack4x8snorm-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#unpack4x8snorm-builtin",
+      "level": 4,
+      "title": "unpack4x8snorm",
+      "number": "16.11.1"
+    },
+    {
+      "id": "unpack4x8unorm-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#unpack4x8unorm-builtin",
+      "level": 4,
+      "title": "unpack4x8unorm",
+      "number": "16.11.2"
+    },
+    {
+      "id": "unpack2x16snorm-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#unpack2x16snorm-builtin",
+      "level": 4,
+      "title": "unpack2x16snorm",
+      "number": "16.11.3"
+    },
+    {
+      "id": "unpack2x16unorm-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#unpack2x16unorm-builtin",
+      "level": 4,
+      "title": "unpack2x16unorm",
+      "number": "16.11.4"
+    },
+    {
+      "id": "unpack2x16float-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#unpack2x16float-builtin",
+      "level": 4,
+      "title": "unpack2x16float",
+      "number": "16.11.5"
     },
     {
       "id": "sync-builtin-functions",

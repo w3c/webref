@@ -6,7 +6,7 @@
       "title": "DeviceOrientation Event Specification",
       "url": "https://www.w3.org/TR/orientation-event/"
     },
-    "fragment": "[Constructor(DOMString type, optional DeviceOrientationEventInit eventInitDict), Exposed=Window, SecureContext]\ninterface DeviceOrientationEvent : Event {\n    readonly attribute double? alpha;\n    readonly attribute double? beta;\n    readonly attribute double? gamma;\n    readonly attribute boolean absolute;\n\n    static Promise<PermissionState> requestPermission();\n};",
+    "fragment": "[Exposed=Window, SecureContext]\ninterface DeviceOrientationEvent : Event {\n    constructor(DOMString type, optional DeviceOrientationEventInit eventInitDict = {});\n    readonly attribute double? alpha;\n    readonly attribute double? beta;\n    readonly attribute double? gamma;\n    readonly attribute boolean absolute;\n\n    static Promise<PermissionState> requestPermission();\n};",
     "href": "https://www.w3.org/TR/orientation-event/#deviceorientationevent"
   },
   "extended": [],

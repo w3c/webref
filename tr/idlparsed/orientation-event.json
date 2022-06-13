@@ -11,15 +11,60 @@
           "DeviceMotionEvent"
         ]
       },
-      "functions": {}
+      "functions": {
+        "Window": [
+          "DeviceMotionEventAcceleration",
+          "DeviceMotionEventRotationRate"
+        ]
+      }
     },
     "idlNames": {
       "DeviceOrientationEvent": {
-        "fragment": "[Constructor(DOMString type, optional DeviceOrientationEventInit eventInitDict), Exposed=Window, SecureContext]\ninterface DeviceOrientationEvent : Event {\n    readonly attribute double? alpha;\n    readonly attribute double? beta;\n    readonly attribute double? gamma;\n    readonly attribute boolean absolute;\n\n    static Promise<PermissionState> requestPermission();\n};",
+        "fragment": "[Exposed=Window, SecureContext]\ninterface DeviceOrientationEvent : Event {\n    constructor(DOMString type, optional DeviceOrientationEventInit eventInitDict = {});\n    readonly attribute double? alpha;\n    readonly attribute double? beta;\n    readonly attribute double? gamma;\n    readonly attribute boolean absolute;\n\n    static Promise<PermissionState> requestPermission();\n};",
         "type": "interface",
         "name": "DeviceOrientationEvent",
         "inheritance": "Event",
         "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "type",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "eventInitDict",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DeviceOrientationEventInit"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": []
+          },
           {
             "type": "attribute",
             "name": "alpha",
@@ -106,45 +151,6 @@
           }
         ],
         "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Constructor",
-            "rhs": null,
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "type",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "DOMString"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              },
-              {
-                "type": "argument",
-                "name": "eventInitDict",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "DeviceOrientationEventInit"
-                },
-                "default": null,
-                "optional": true,
-                "variadic": false
-              }
-            ]
-          },
           {
             "type": "extended-attribute",
             "name": "Exposed",
@@ -259,7 +265,7 @@
         "extAttrs": []
       },
       "DeviceMotionEventAcceleration": {
-        "fragment": "[SecureContext]\ninterface DeviceMotionEventAcceleration {\n    readonly attribute double? x;\n    readonly attribute double? y;\n    readonly attribute double? z;\n};",
+        "fragment": "[Exposed=Window, SecureContext]\ninterface DeviceMotionEventAcceleration {\n    readonly attribute double? x;\n    readonly attribute double? y;\n    readonly attribute double? z;\n};",
         "type": "interface",
         "name": "DeviceMotionEventAcceleration",
         "inheritance": null,
@@ -313,6 +319,15 @@
         "extAttrs": [
           {
             "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
             "name": "SecureContext",
             "rhs": null,
             "arguments": []
@@ -321,7 +336,7 @@
         "partial": false
       },
       "DeviceMotionEventRotationRate": {
-        "fragment": "[SecureContext]\ninterface DeviceMotionEventRotationRate {\n    readonly attribute double? alpha;\n    readonly attribute double? beta;\n    readonly attribute double? gamma;\n};",
+        "fragment": "[Exposed=Window, SecureContext]\ninterface DeviceMotionEventRotationRate {\n    readonly attribute double? alpha;\n    readonly attribute double? beta;\n    readonly attribute double? gamma;\n};",
         "type": "interface",
         "name": "DeviceMotionEventRotationRate",
         "inheritance": null,
@@ -375,6 +390,15 @@
         "extAttrs": [
           {
             "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
             "name": "SecureContext",
             "rhs": null,
             "arguments": []
@@ -383,11 +407,51 @@
         "partial": false
       },
       "DeviceMotionEvent": {
-        "fragment": "[Constructor(DOMString type, optional DeviceMotionEventInit eventInitDict), Exposed=Window, SecureContext]\ninterface DeviceMotionEvent : Event {\n    readonly attribute DeviceMotionEventAcceleration? acceleration;\n    readonly attribute DeviceMotionEventAcceleration? accelerationIncludingGravity;\n    readonly attribute DeviceMotionEventRotationRate? rotationRate;\n    readonly attribute double interval;\n\n    static Promise<PermissionState> requestPermission();\n};",
+        "fragment": "[Exposed=Window, SecureContext]\ninterface DeviceMotionEvent : Event {\n    constructor(DOMString type, optional DeviceMotionEventInit eventInitDict = {});\n    readonly attribute DeviceMotionEventAcceleration? acceleration;\n    readonly attribute DeviceMotionEventAcceleration? accelerationIncludingGravity;\n    readonly attribute DeviceMotionEventRotationRate? rotationRate;\n    readonly attribute double interval;\n\n    static Promise<PermissionState> requestPermission();\n};",
         "type": "interface",
         "name": "DeviceMotionEvent",
         "inheritance": "Event",
         "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "type",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "eventInitDict",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DeviceMotionEventInit"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": []
+          },
           {
             "type": "attribute",
             "name": "acceleration",
@@ -474,45 +538,6 @@
           }
         ],
         "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Constructor",
-            "rhs": null,
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "type",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "DOMString"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              },
-              {
-                "type": "argument",
-                "name": "eventInitDict",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "DeviceMotionEventInit"
-                },
-                "default": null,
-                "optional": true,
-                "variadic": false
-              }
-            ]
-          },
           {
             "type": "extended-attribute",
             "name": "Exposed",
@@ -856,6 +881,8 @@
     "exposed": {
       "Window": [
         "DeviceOrientationEvent",
+        "DeviceMotionEventAcceleration",
+        "DeviceMotionEventRotationRate",
         "DeviceMotionEvent"
       ]
     },

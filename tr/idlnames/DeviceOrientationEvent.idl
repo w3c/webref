@@ -1,6 +1,7 @@
 // Source: DeviceOrientation Event Specification (https://www.w3.org/TR/orientation-event/)
-[Constructor(DOMString type, optional DeviceOrientationEventInit eventInitDict), Exposed=Window, SecureContext]
+[Exposed=Window, SecureContext]
 interface DeviceOrientationEvent : Event {
+    constructor(DOMString type, optional DeviceOrientationEventInit eventInitDict = {});
     readonly attribute double? alpha;
     readonly attribute double? beta;
     readonly attribute double? gamma;

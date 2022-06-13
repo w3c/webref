@@ -136,7 +136,7 @@
         "partial": false
       },
       "GPUSupportedLimits": {
-        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUSupportedLimits {\n    readonly attribute unsigned long maxTextureDimension1D;\n    readonly attribute unsigned long maxTextureDimension2D;\n    readonly attribute unsigned long maxTextureDimension3D;\n    readonly attribute unsigned long maxTextureArrayLayers;\n    readonly attribute unsigned long maxBindGroups;\n    readonly attribute unsigned long maxDynamicUniformBuffersPerPipelineLayout;\n    readonly attribute unsigned long maxDynamicStorageBuffersPerPipelineLayout;\n    readonly attribute unsigned long maxSampledTexturesPerShaderStage;\n    readonly attribute unsigned long maxSamplersPerShaderStage;\n    readonly attribute unsigned long maxStorageBuffersPerShaderStage;\n    readonly attribute unsigned long maxStorageTexturesPerShaderStage;\n    readonly attribute unsigned long maxUniformBuffersPerShaderStage;\n    readonly attribute unsigned long long maxUniformBufferBindingSize;\n    readonly attribute unsigned long long maxStorageBufferBindingSize;\n    readonly attribute unsigned long minUniformBufferOffsetAlignment;\n    readonly attribute unsigned long minStorageBufferOffsetAlignment;\n    readonly attribute unsigned long maxVertexBuffers;\n    readonly attribute unsigned long maxVertexAttributes;\n    readonly attribute unsigned long maxVertexBufferArrayStride;\n    readonly attribute unsigned long maxInterStageShaderComponents;\n    readonly attribute unsigned long maxInterStageShaderVariables;\n    readonly attribute unsigned long maxComputeWorkgroupStorageSize;\n    readonly attribute unsigned long maxComputeInvocationsPerWorkgroup;\n    readonly attribute unsigned long maxComputeWorkgroupSizeX;\n    readonly attribute unsigned long maxComputeWorkgroupSizeY;\n    readonly attribute unsigned long maxComputeWorkgroupSizeZ;\n    readonly attribute unsigned long maxComputeWorkgroupsPerDimension;\n};",
+        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUSupportedLimits {\n    readonly attribute unsigned long maxTextureDimension1D;\n    readonly attribute unsigned long maxTextureDimension2D;\n    readonly attribute unsigned long maxTextureDimension3D;\n    readonly attribute unsigned long maxTextureArrayLayers;\n    readonly attribute unsigned long maxBindGroups;\n    readonly attribute unsigned long maxDynamicUniformBuffersPerPipelineLayout;\n    readonly attribute unsigned long maxDynamicStorageBuffersPerPipelineLayout;\n    readonly attribute unsigned long maxSampledTexturesPerShaderStage;\n    readonly attribute unsigned long maxSamplersPerShaderStage;\n    readonly attribute unsigned long maxStorageBuffersPerShaderStage;\n    readonly attribute unsigned long maxStorageTexturesPerShaderStage;\n    readonly attribute unsigned long maxUniformBuffersPerShaderStage;\n    readonly attribute unsigned long long maxUniformBufferBindingSize;\n    readonly attribute unsigned long long maxStorageBufferBindingSize;\n    readonly attribute unsigned long minUniformBufferOffsetAlignment;\n    readonly attribute unsigned long minStorageBufferOffsetAlignment;\n    readonly attribute unsigned long maxVertexBuffers;\n    readonly attribute unsigned long maxVertexAttributes;\n    readonly attribute unsigned long maxVertexBufferArrayStride;\n    readonly attribute unsigned long maxInterStageShaderComponents;\n    readonly attribute unsigned long maxInterStageShaderVariables;\n    readonly attribute unsigned long maxColorAttachments;\n    readonly attribute unsigned long maxComputeWorkgroupStorageSize;\n    readonly attribute unsigned long maxComputeInvocationsPerWorkgroup;\n    readonly attribute unsigned long maxComputeWorkgroupSizeX;\n    readonly attribute unsigned long maxComputeWorkgroupSizeY;\n    readonly attribute unsigned long maxComputeWorkgroupSizeZ;\n    readonly attribute unsigned long maxComputeWorkgroupsPerDimension;\n};",
         "type": "interface",
         "name": "GPUSupportedLimits",
         "inheritance": null,
@@ -458,6 +458,21 @@
           },
           {
             "type": "attribute",
+            "name": "maxColorAttachments",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
             "name": "maxComputeWorkgroupStorageSize",
             "idlType": {
               "type": "attribute-type",
@@ -715,18 +730,6 @@
           }
         ],
         "partial": false
-      },
-      "GPUPredefinedColorSpace": {
-        "fragment": "enum GPUPredefinedColorSpace {\n    \"srgb\"\n};",
-        "type": "enum",
-        "name": "GPUPredefinedColorSpace",
-        "values": [
-          {
-            "type": "enum-value",
-            "value": "srgb"
-          }
-        ],
-        "extAttrs": []
       },
       "NavigatorGPU": {
         "fragment": "interface mixin NavigatorGPU {\n    [SameObject, SecureContext] readonly attribute GPU gpu;\n};",
@@ -1193,17 +1196,13 @@
         "partial": false
       },
       "GPUFeatureName": {
-        "fragment": "enum GPUFeatureName {\n    \"depth-clip-control\",\n    \"depth24unorm-stencil8\",\n    \"depth32float-stencil8\",\n    \"texture-compression-bc\",\n    \"texture-compression-etc2\",\n    \"texture-compression-astc\",\n    \"timestamp-query\",\n    \"indirect-first-instance\",\n    \"shader-f16\",\n    \"bgra8unorm-storage\"\n};",
+        "fragment": "enum GPUFeatureName {\n    \"depth-clip-control\",\n    \"depth32float-stencil8\",\n    \"texture-compression-bc\",\n    \"texture-compression-etc2\",\n    \"texture-compression-astc\",\n    \"timestamp-query\",\n    \"indirect-first-instance\",\n    \"shader-f16\",\n    \"bgra8unorm-storage\"\n};",
         "type": "enum",
         "name": "GPUFeatureName",
         "values": [
           {
             "type": "enum-value",
             "value": "depth-clip-control"
-          },
-          {
-            "type": "enum-value",
-            "value": "depth24unorm-stencil8"
           },
           {
             "type": "enum-value",
@@ -3134,7 +3133,7 @@
         "extAttrs": []
       },
       "GPUTextureFormat": {
-        "fragment": "enum GPUTextureFormat {\n    // 8-bit formats\n    \"r8unorm\",\n    \"r8snorm\",\n    \"r8uint\",\n    \"r8sint\",\n\n    // 16-bit formats\n    \"r16uint\",\n    \"r16sint\",\n    \"r16float\",\n    \"rg8unorm\",\n    \"rg8snorm\",\n    \"rg8uint\",\n    \"rg8sint\",\n\n    // 32-bit formats\n    \"r32uint\",\n    \"r32sint\",\n    \"r32float\",\n    \"rg16uint\",\n    \"rg16sint\",\n    \"rg16float\",\n    \"rgba8unorm\",\n    \"rgba8unorm-srgb\",\n    \"rgba8snorm\",\n    \"rgba8uint\",\n    \"rgba8sint\",\n    \"bgra8unorm\",\n    \"bgra8unorm-srgb\",\n    // Packed 32-bit formats\n    \"rgb9e5ufloat\",\n    \"rgb10a2unorm\",\n    \"rg11b10ufloat\",\n\n    // 64-bit formats\n    \"rg32uint\",\n    \"rg32sint\",\n    \"rg32float\",\n    \"rgba16uint\",\n    \"rgba16sint\",\n    \"rgba16float\",\n\n    // 128-bit formats\n    \"rgba32uint\",\n    \"rgba32sint\",\n    \"rgba32float\",\n\n    // Depth/stencil formats\n    \"stencil8\",\n    \"depth16unorm\",\n    \"depth24plus\",\n    \"depth24plus-stencil8\",\n    \"depth32float\",\n\n    // \"depth24unorm-stencil8\" feature\n    \"depth24unorm-stencil8\",\n\n    // \"depth32float-stencil8\" feature\n    \"depth32float-stencil8\",\n\n    // BC compressed formats usable if \"texture-compression-bc\" is both\n    // supported by the device/user agent and enabled in requestDevice.\n    \"bc1-rgba-unorm\",\n    \"bc1-rgba-unorm-srgb\",\n    \"bc2-rgba-unorm\",\n    \"bc2-rgba-unorm-srgb\",\n    \"bc3-rgba-unorm\",\n    \"bc3-rgba-unorm-srgb\",\n    \"bc4-r-unorm\",\n    \"bc4-r-snorm\",\n    \"bc5-rg-unorm\",\n    \"bc5-rg-snorm\",\n    \"bc6h-rgb-ufloat\",\n    \"bc6h-rgb-float\",\n    \"bc7-rgba-unorm\",\n    \"bc7-rgba-unorm-srgb\",\n\n    // ETC2 compressed formats usable if \"texture-compression-etc2\" is both\n    // supported by the device/user agent and enabled in requestDevice.\n    \"etc2-rgb8unorm\",\n    \"etc2-rgb8unorm-srgb\",\n    \"etc2-rgb8a1unorm\",\n    \"etc2-rgb8a1unorm-srgb\",\n    \"etc2-rgba8unorm\",\n    \"etc2-rgba8unorm-srgb\",\n    \"eac-r11unorm\",\n    \"eac-r11snorm\",\n    \"eac-rg11unorm\",\n    \"eac-rg11snorm\",\n\n    // ASTC compressed formats usable if \"texture-compression-astc\" is both\n    // supported by the device/user agent and enabled in requestDevice.\n    \"astc-4x4-unorm\",\n    \"astc-4x4-unorm-srgb\",\n    \"astc-5x4-unorm\",\n    \"astc-5x4-unorm-srgb\",\n    \"astc-5x5-unorm\",\n    \"astc-5x5-unorm-srgb\",\n    \"astc-6x5-unorm\",\n    \"astc-6x5-unorm-srgb\",\n    \"astc-6x6-unorm\",\n    \"astc-6x6-unorm-srgb\",\n    \"astc-8x5-unorm\",\n    \"astc-8x5-unorm-srgb\",\n    \"astc-8x6-unorm\",\n    \"astc-8x6-unorm-srgb\",\n    \"astc-8x8-unorm\",\n    \"astc-8x8-unorm-srgb\",\n    \"astc-10x5-unorm\",\n    \"astc-10x5-unorm-srgb\",\n    \"astc-10x6-unorm\",\n    \"astc-10x6-unorm-srgb\",\n    \"astc-10x8-unorm\",\n    \"astc-10x8-unorm-srgb\",\n    \"astc-10x10-unorm\",\n    \"astc-10x10-unorm-srgb\",\n    \"astc-12x10-unorm\",\n    \"astc-12x10-unorm-srgb\",\n    \"astc-12x12-unorm\",\n    \"astc-12x12-unorm-srgb\"\n};",
+        "fragment": "enum GPUTextureFormat {\n    // 8-bit formats\n    \"r8unorm\",\n    \"r8snorm\",\n    \"r8uint\",\n    \"r8sint\",\n\n    // 16-bit formats\n    \"r16uint\",\n    \"r16sint\",\n    \"r16float\",\n    \"rg8unorm\",\n    \"rg8snorm\",\n    \"rg8uint\",\n    \"rg8sint\",\n\n    // 32-bit formats\n    \"r32uint\",\n    \"r32sint\",\n    \"r32float\",\n    \"rg16uint\",\n    \"rg16sint\",\n    \"rg16float\",\n    \"rgba8unorm\",\n    \"rgba8unorm-srgb\",\n    \"rgba8snorm\",\n    \"rgba8uint\",\n    \"rgba8sint\",\n    \"bgra8unorm\",\n    \"bgra8unorm-srgb\",\n    // Packed 32-bit formats\n    \"rgb9e5ufloat\",\n    \"rgb10a2unorm\",\n    \"rg11b10ufloat\",\n\n    // 64-bit formats\n    \"rg32uint\",\n    \"rg32sint\",\n    \"rg32float\",\n    \"rgba16uint\",\n    \"rgba16sint\",\n    \"rgba16float\",\n\n    // 128-bit formats\n    \"rgba32uint\",\n    \"rgba32sint\",\n    \"rgba32float\",\n\n    // Depth/stencil formats\n    \"stencil8\",\n    \"depth16unorm\",\n    \"depth24plus\",\n    \"depth24plus-stencil8\",\n    \"depth32float\",\n\n    // \"depth32float-stencil8\" feature\n    \"depth32float-stencil8\",\n\n    // BC compressed formats usable if \"texture-compression-bc\" is both\n    // supported by the device/user agent and enabled in requestDevice.\n    \"bc1-rgba-unorm\",\n    \"bc1-rgba-unorm-srgb\",\n    \"bc2-rgba-unorm\",\n    \"bc2-rgba-unorm-srgb\",\n    \"bc3-rgba-unorm\",\n    \"bc3-rgba-unorm-srgb\",\n    \"bc4-r-unorm\",\n    \"bc4-r-snorm\",\n    \"bc5-rg-unorm\",\n    \"bc5-rg-snorm\",\n    \"bc6h-rgb-ufloat\",\n    \"bc6h-rgb-float\",\n    \"bc7-rgba-unorm\",\n    \"bc7-rgba-unorm-srgb\",\n\n    // ETC2 compressed formats usable if \"texture-compression-etc2\" is both\n    // supported by the device/user agent and enabled in requestDevice.\n    \"etc2-rgb8unorm\",\n    \"etc2-rgb8unorm-srgb\",\n    \"etc2-rgb8a1unorm\",\n    \"etc2-rgb8a1unorm-srgb\",\n    \"etc2-rgba8unorm\",\n    \"etc2-rgba8unorm-srgb\",\n    \"eac-r11unorm\",\n    \"eac-r11snorm\",\n    \"eac-rg11unorm\",\n    \"eac-rg11snorm\",\n\n    // ASTC compressed formats usable if \"texture-compression-astc\" is both\n    // supported by the device/user agent and enabled in requestDevice.\n    \"astc-4x4-unorm\",\n    \"astc-4x4-unorm-srgb\",\n    \"astc-5x4-unorm\",\n    \"astc-5x4-unorm-srgb\",\n    \"astc-5x5-unorm\",\n    \"astc-5x5-unorm-srgb\",\n    \"astc-6x5-unorm\",\n    \"astc-6x5-unorm-srgb\",\n    \"astc-6x6-unorm\",\n    \"astc-6x6-unorm-srgb\",\n    \"astc-8x5-unorm\",\n    \"astc-8x5-unorm-srgb\",\n    \"astc-8x6-unorm\",\n    \"astc-8x6-unorm-srgb\",\n    \"astc-8x8-unorm\",\n    \"astc-8x8-unorm-srgb\",\n    \"astc-10x5-unorm\",\n    \"astc-10x5-unorm-srgb\",\n    \"astc-10x6-unorm\",\n    \"astc-10x6-unorm-srgb\",\n    \"astc-10x8-unorm\",\n    \"astc-10x8-unorm-srgb\",\n    \"astc-10x10-unorm\",\n    \"astc-10x10-unorm-srgb\",\n    \"astc-12x10-unorm\",\n    \"astc-12x10-unorm-srgb\",\n    \"astc-12x12-unorm\",\n    \"astc-12x12-unorm-srgb\"\n};",
         "type": "enum",
         "name": "GPUTextureFormat",
         "values": [
@@ -3301,10 +3300,6 @@
           {
             "type": "enum-value",
             "value": "depth32float"
-          },
-          {
-            "type": "enum-value",
-            "value": "depth24unorm-stencil8"
           },
           {
             "type": "enum-value",
@@ -3570,7 +3565,7 @@
         "partial": false
       },
       "GPUExternalTextureDescriptor": {
-        "fragment": "dictionary GPUExternalTextureDescriptor : GPUObjectDescriptorBase {\n    required HTMLVideoElement source;\n    GPUPredefinedColorSpace colorSpace = \"srgb\";\n};",
+        "fragment": "dictionary GPUExternalTextureDescriptor : GPUObjectDescriptorBase {\n    required HTMLVideoElement source;\n    PredefinedColorSpace colorSpace = \"srgb\";\n};",
         "type": "dictionary",
         "name": "GPUExternalTextureDescriptor",
         "inheritance": "GPUObjectDescriptorBase",
@@ -3600,7 +3595,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "GPUPredefinedColorSpace"
+              "idlType": "PredefinedColorSpace"
             },
             "default": {
               "type": "string",
@@ -7679,7 +7674,7 @@
         "partial": false
       },
       "GPUImageCopyTextureTagged": {
-        "fragment": "dictionary GPUImageCopyTextureTagged : GPUImageCopyTexture {\n    GPUPredefinedColorSpace colorSpace = \"srgb\";\n    boolean premultipliedAlpha = false;\n};",
+        "fragment": "dictionary GPUImageCopyTextureTagged : GPUImageCopyTexture {\n    PredefinedColorSpace colorSpace = \"srgb\";\n    boolean premultipliedAlpha = false;\n};",
         "type": "dictionary",
         "name": "GPUImageCopyTextureTagged",
         "inheritance": "GPUImageCopyTexture",
@@ -7694,7 +7689,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "GPUPredefinedColorSpace"
+              "idlType": "PredefinedColorSpace"
             },
             "default": {
               "type": "string",
@@ -10606,7 +10601,7 @@
         "extAttrs": []
       },
       "GPUCanvasConfiguration": {
-        "fragment": "dictionary GPUCanvasConfiguration {\n    required GPUDevice device;\n    required GPUTextureFormat format;\n    GPUTextureUsageFlags usage = 0x10;  // GPUTextureUsage.RENDER_ATTACHMENT\n    sequence<GPUTextureFormat> viewFormats = [];\n    GPUPredefinedColorSpace colorSpace = \"srgb\";\n    GPUCanvasAlphaMode alphaMode = \"opaque\";\n};",
+        "fragment": "dictionary GPUCanvasConfiguration {\n    required GPUDevice device;\n    required GPUTextureFormat format;\n    GPUTextureUsageFlags usage = 0x10;  // GPUTextureUsage.RENDER_ATTACHMENT\n    sequence<GPUTextureFormat> viewFormats = [];\n    PredefinedColorSpace colorSpace = \"srgb\";\n    GPUCanvasAlphaMode alphaMode = \"opaque\";\n};",
         "type": "dictionary",
         "name": "GPUCanvasConfiguration",
         "inheritance": null,
@@ -10696,7 +10691,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "GPUPredefinedColorSpace"
+              "idlType": "PredefinedColorSpace"
             },
             "default": {
               "type": "string",
@@ -12361,7 +12356,7 @@
       "GPUExternalTextureDescriptor": [
         "GPUObjectDescriptorBase",
         "HTMLVideoElement",
-        "GPUPredefinedColorSpace"
+        "PredefinedColorSpace"
       ],
       "GPUSampler": [
         "GPUObjectBase"
@@ -12576,7 +12571,7 @@
       ],
       "GPUImageCopyTextureTagged": [
         "GPUImageCopyTexture",
-        "GPUPredefinedColorSpace"
+        "PredefinedColorSpace"
       ],
       "GPUImageCopyExternalImage": [
         "ImageBitmap",
@@ -12715,7 +12710,7 @@
         "GPUDevice",
         "GPUTextureFormat",
         "GPUTextureUsageFlags",
-        "GPUPredefinedColorSpace",
+        "PredefinedColorSpace",
         "GPUCanvasAlphaMode"
       ],
       "GPUDeviceLostInfo": [
@@ -12752,6 +12747,7 @@
       "EventTarget",
       "ArrayBuffer",
       "HTMLVideoElement",
+      "PredefinedColorSpace",
       "ImageBitmap",
       "HTMLCanvasElement",
       "OffscreenCanvas",
