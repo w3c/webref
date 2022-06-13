@@ -737,82 +737,76 @@
       "number": "4.5.2"
     },
     {
-      "id": "sec-temporal-topartialtime",
-      "title": "ToPartialTime ( temporalTimeLike )",
-      "level": 3,
-      "number": "4.5.3"
-    },
-    {
       "id": "sec-temporal-regulatetime",
       "title": "RegulateTime ( hour, minute, second, millisecond, microsecond, nanosecond, overflow )",
       "level": 3,
-      "number": "4.5.4"
+      "number": "4.5.3"
     },
     {
       "id": "sec-temporal-isvalidtime",
       "title": "IsValidTime ( hour, minute, second, millisecond, microsecond, nanosecond )",
       "level": 3,
-      "number": "4.5.5"
+      "number": "4.5.4"
     },
     {
       "id": "sec-temporal-balancetime",
       "title": "BalanceTime ( hour, minute, second, millisecond, microsecond, nanosecond )",
       "level": 3,
-      "number": "4.5.6"
+      "number": "4.5.5"
     },
     {
       "id": "sec-temporal-constraintime",
       "title": "ConstrainTime ( hour, minute, second, millisecond, microsecond, nanosecond )",
       "level": 3,
-      "number": "4.5.7"
+      "number": "4.5.6"
     },
     {
       "id": "sec-temporal-createtemporaltime",
       "title": "CreateTemporalTime ( hour, minute, second, millisecond, microsecond, nanosecond [ , newTarget ] )",
       "level": 3,
-      "number": "4.5.8"
+      "number": "4.5.7"
     },
     {
       "id": "sec-temporal-totemporaltimerecord",
-      "title": "ToTemporalTimeRecord ( temporalTimeLike )",
+      "title": "ToTemporalTimeRecord ( temporalTimeLike [ , completeness ] )",
       "level": 3,
-      "number": "4.5.9"
+      "number": "4.5.8"
     },
     {
       "id": "sec-temporal-temporaltimetostring",
       "title": "TemporalTimeToString ( hour, minute, second, millisecond, microsecond, nanosecond, precision )",
       "level": 3,
-      "number": "4.5.10"
+      "number": "4.5.9"
     },
     {
       "id": "sec-temporal-comparetemporaltime",
       "title": "CompareTemporalTime ( h1, min1, s1, ms1, mus1, ns1, h2, min2, s2, ms2, mus2, ns2 )",
       "level": 3,
-      "number": "4.5.11"
+      "number": "4.5.10"
     },
     {
       "id": "sec-temporal-addtime",
       "title": "AddTime ( hour, minute, second, millisecond, microsecond, nanosecond, hours, minutes, seconds, milliseconds, microseconds, nanoseconds )",
       "level": 3,
-      "number": "4.5.12"
+      "number": "4.5.11"
     },
     {
       "id": "sec-temporal-roundtime",
       "title": "RoundTime ( hour, minute, second, millisecond, microsecond, nanosecond, increment, unit, roundingMode [ , dayLengthNs ] )",
       "level": 3,
-      "number": "4.5.13"
+      "number": "4.5.12"
     },
     {
       "id": "sec-temporal-differencetemporalplaintime",
       "title": "DifferenceTemporalPlainTime ( operation, temporalTime, other, options )",
       "level": 3,
-      "number": "4.5.14"
+      "number": "4.5.13"
     },
     {
       "id": "sec-temporal-adddurationtoorsubtractdurationfromplaintime",
       "title": "AddDurationToOrSubtractDurationFromPlainTime ( operation, temporalTime, temporalDurationLike )",
       "level": 3,
-      "number": "4.5.15"
+      "number": "4.5.14"
     },
     {
       "id": "sec-temporal-plaindatetime-objects",
@@ -1907,8 +1901,8 @@
       "number": "7.5.12"
     },
     {
-      "id": "sec-temporal-topartialduration",
-      "title": "ToPartialDuration ( temporalDurationLike )",
+      "id": "sec-temporal-totemporalpartialdurationrecord",
+      "title": "ToTemporalPartialDurationRecord ( temporalDurationLike )",
       "level": 3,
       "number": "7.5.13"
     },
@@ -3639,12 +3633,6 @@
       "title": "PrepareTemporalFields ( fields, fieldNames, requiredFields )",
       "level": 2,
       "number": "13.43"
-    },
-    {
-      "id": "sec-temporal-preparepartialtemporalfields",
-      "title": "PreparePartialTemporalFields ( fields, fieldNames )",
-      "level": 2,
-      "number": "13.44"
     },
     {
       "id": "sec-temporal-legacy-date-objects",
