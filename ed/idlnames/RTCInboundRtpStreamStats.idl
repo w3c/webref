@@ -25,6 +25,7 @@ dictionary RTCInboundRtpStreamStats : RTCReceivedRtpStreamStats {
  double               totalProcessingDelay;
  DOMHighResTimeStamp  estimatedPlayoutTimestamp;
  double               jitterBufferDelay;
+ double               jitterBufferTargetDelay;
  unsigned long long   jitterBufferEmittedCount;
  unsigned long long   totalSamplesReceived;
  unsigned long long   concealedSamples;

@@ -1514,6 +1514,26 @@
       "definedIn": "dt"
     },
     {
+      "id": "dom-rtcinboundrtpstreamstats-jitterbuffertargetdelay",
+      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-jitterbuffertargetdelay",
+      "linkingText": [
+        "jitterBufferTargetDelay"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCInboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "dictionary-rtcinboundrtpstreamstats-members",
+        "href": "https://w3c.github.io/webrtc-stats/#dictionary-rtcinboundrtpstreamstats-members",
+        "title": "Dictionary RTCInboundRtpStreamStats Members"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "dom-rtcinboundrtpstreamstats-jitterbufferemittedcount",
       "href": "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-jitterbufferemittedcount",
       "linkingText": [
@@ -3049,123 +3069,6 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-rtcmediahandlerstats",
-      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcmediahandlerstats",
-      "linkingText": [
-        "RTCMediaHandlerStats"
-      ],
-      "localLinkingText": [],
-      "type": "dictionary",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "mststats-dict*",
-        "href": "https://w3c.github.io/webrtc-stats/#mststats-dict*",
-        "title": "RTCMediaHandlerStats dictionary",
-        "number": "7.15"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "dom-rtcmediahandlerstats-trackidentifier",
-      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcmediahandlerstats-trackidentifier",
-      "linkingText": [
-        "trackIdentifier"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "RTCMediaHandlerStats"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "dictionary-rtcmediahandlerstats-members",
-        "href": "https://w3c.github.io/webrtc-stats/#dictionary-rtcmediahandlerstats-members",
-        "title": "Dictionary RTCMediaHandlerStats Members"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-rtcmediahandlerstats-ended",
-      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcmediahandlerstats-ended",
-      "linkingText": [
-        "ended"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "RTCMediaHandlerStats"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "dictionary-rtcmediahandlerstats-members",
-        "href": "https://w3c.github.io/webrtc-stats/#dictionary-rtcmediahandlerstats-members",
-        "title": "Dictionary RTCMediaHandlerStats Members"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-rtcmediahandlerstats-kind",
-      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcmediahandlerstats-kind",
-      "linkingText": [
-        "kind"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "RTCMediaHandlerStats"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "dictionary-rtcmediahandlerstats-members",
-        "href": "https://w3c.github.io/webrtc-stats/#dictionary-rtcmediahandlerstats-members",
-        "title": "Dictionary RTCMediaHandlerStats Members"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-rtcvideohandlerstats",
-      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcvideohandlerstats",
-      "linkingText": [
-        "RTCVideoHandlerStats"
-      ],
-      "localLinkingText": [],
-      "type": "dictionary",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "vststats-dict*",
-        "href": "https://w3c.github.io/webrtc-stats/#vststats-dict*",
-        "title": "RTCVideoHandlerStats dictionary",
-        "number": "7.16"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "dom-rtcaudiohandlerstats",
-      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcaudiohandlerstats",
-      "linkingText": [
-        "RTCAudioHandlerStats"
-      ],
-      "localLinkingText": [],
-      "type": "dictionary",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "aststats-dict*",
-        "href": "https://w3c.github.io/webrtc-stats/#aststats-dict*",
-        "title": "RTCAudioHandlerStats dictionary",
-        "number": "7.17"
-      },
-      "definedIn": "heading"
-    },
-    {
       "id": "dom-rtcdatachannelstats",
       "href": "https://w3c.github.io/webrtc-stats/#dom-rtcdatachannelstats",
       "linkingText": [
@@ -3180,7 +3083,7 @@
         "id": "dcstats-dict*",
         "href": "https://w3c.github.io/webrtc-stats/#dcstats-dict*",
         "title": "RTCDataChannelStats dictionary",
-        "number": "7.18"
+        "number": "7.15"
       },
       "definedIn": "heading"
     },
@@ -3359,7 +3262,7 @@
         "id": "transportstats-dict*",
         "href": "https://w3c.github.io/webrtc-stats/#transportstats-dict*",
         "title": "RTCTransportStats dictionary",
-        "number": "7.19"
+        "number": "7.16"
       },
       "definedIn": "heading"
     },
@@ -3776,7 +3679,7 @@
         "id": "icecandidate-dict*",
         "href": "https://w3c.github.io/webrtc-stats/#icecandidate-dict*",
         "title": "RTCIceCandidateStats dictionary",
-        "number": "7.20"
+        "number": "7.17"
       },
       "definedIn": "heading"
     },
@@ -3955,7 +3858,7 @@
         "id": "candidatepair-dict*",
         "href": "https://w3c.github.io/webrtc-stats/#candidatepair-dict*",
         "title": "RTCIceCandidatePairStats dictionary",
-        "number": "7.21"
+        "number": "7.18"
       },
       "definedIn": "heading"
     },
@@ -4414,7 +4317,7 @@
         "id": "rtcstatsicecandidatepairstate-enum",
         "href": "https://w3c.github.io/webrtc-stats/#rtcstatsicecandidatepairstate-enum",
         "title": "RTCStatsIceCandidatePairState enum",
-        "number": "7.21.1"
+        "number": "7.18.1"
       },
       "definedIn": "heading"
     },
@@ -4435,7 +4338,7 @@
         "id": "rtcstatsicecandidatepairstate-enum",
         "href": "https://w3c.github.io/webrtc-stats/#rtcstatsicecandidatepairstate-enum",
         "title": "RTCStatsIceCandidatePairState enum",
-        "number": "7.21.1"
+        "number": "7.18.1"
       },
       "definedIn": "table"
     },
@@ -4456,7 +4359,7 @@
         "id": "rtcstatsicecandidatepairstate-enum",
         "href": "https://w3c.github.io/webrtc-stats/#rtcstatsicecandidatepairstate-enum",
         "title": "RTCStatsIceCandidatePairState enum",
-        "number": "7.21.1"
+        "number": "7.18.1"
       },
       "definedIn": "table"
     },
@@ -4477,7 +4380,7 @@
         "id": "rtcstatsicecandidatepairstate-enum",
         "href": "https://w3c.github.io/webrtc-stats/#rtcstatsicecandidatepairstate-enum",
         "title": "RTCStatsIceCandidatePairState enum",
-        "number": "7.21.1"
+        "number": "7.18.1"
       },
       "definedIn": "table"
     },
@@ -4498,7 +4401,7 @@
         "id": "rtcstatsicecandidatepairstate-enum",
         "href": "https://w3c.github.io/webrtc-stats/#rtcstatsicecandidatepairstate-enum",
         "title": "RTCStatsIceCandidatePairState enum",
-        "number": "7.21.1"
+        "number": "7.18.1"
       },
       "definedIn": "table"
     },
@@ -4519,7 +4422,7 @@
         "id": "rtcstatsicecandidatepairstate-enum",
         "href": "https://w3c.github.io/webrtc-stats/#rtcstatsicecandidatepairstate-enum",
         "title": "RTCStatsIceCandidatePairState enum",
-        "number": "7.21.1"
+        "number": "7.18.1"
       },
       "definedIn": "table"
     },
@@ -4538,7 +4441,7 @@
         "id": "certificatestats-dict*",
         "href": "https://w3c.github.io/webrtc-stats/#certificatestats-dict*",
         "title": "RTCCertificateStats dictionary",
-        "number": "7.22"
+        "number": "7.19"
       },
       "definedIn": "heading"
     },
@@ -4679,78 +4582,6 @@
         "title": "Obsolete RTCMediaStreamStats members"
       },
       "definedIn": "dt"
-    },
-    {
-      "id": "dom-rtcsendervideotrackattachmentstats",
-      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcsendervideotrackattachmentstats",
-      "linkingText": [
-        "RTCSenderVideoTrackAttachmentStats"
-      ],
-      "localLinkingText": [],
-      "type": "dictionary",
-      "for": [],
-      "access": "private",
-      "informative": true,
-      "heading": {
-        "id": "lvststats-dict*",
-        "href": "https://w3c.github.io/webrtc-stats/#lvststats-dict*",
-        "title": "Obsolete RTCSenderVideoTrackAttachmentStats dictionary"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "dom-rtcsenderaudiotrackattachmentstats",
-      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcsenderaudiotrackattachmentstats",
-      "linkingText": [
-        "RTCSenderAudioTrackAttachmentStats"
-      ],
-      "localLinkingText": [],
-      "type": "dictionary",
-      "for": [],
-      "access": "public",
-      "informative": true,
-      "heading": {
-        "id": "laststats-dict*",
-        "href": "https://w3c.github.io/webrtc-stats/#laststats-dict*",
-        "title": "Obsolete RTCSenderAudioTrackAttachmentStats dictionary"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "dom-rtcreceivervideotrackattachmentstats",
-      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcreceivervideotrackattachmentstats",
-      "linkingText": [
-        "RTCReceiverVideoTrackAttachmentStats"
-      ],
-      "localLinkingText": [],
-      "type": "dictionary",
-      "for": [],
-      "access": "private",
-      "informative": true,
-      "heading": {
-        "id": "obsolete-rtcreceivervideotrackattachmentstats-dictionary",
-        "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcreceivervideotrackattachmentstats-dictionary",
-        "title": "Obsolete RTCReceiverVideoTrackAttachmentStats dictionary"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "dom-rtcreceiveraudiotrackattachmentstats",
-      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcreceiveraudiotrackattachmentstats",
-      "linkingText": [
-        "RTCReceiverAudioTrackAttachmentStats"
-      ],
-      "localLinkingText": [],
-      "type": "dictionary",
-      "for": [],
-      "access": "private",
-      "informative": true,
-      "heading": {
-        "id": "obsolete-rtcreceiveraudiotrackattachmentstats-dictionary",
-        "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcreceiveraudiotrackattachmentstats-dictionary",
-        "title": "Obsolete RTCReceiverAudioTrackAttachmentStats dictionary"
-      },
-      "definedIn": "heading"
     },
     {
       "id": "dom-rtccodecstats-implementation",
@@ -4953,734 +4784,620 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-rtcmediahandlerstats-priority",
-      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcmediahandlerstats-priority",
+      "id": "dom-rtcmediastreamtrackstats",
+      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcmediastreamtrackstats",
+      "linkingText": [
+        "RTCMediaStreamTrackStats"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "obsolete-rtcmediastreamtrackstats-members",
+        "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcmediastreamtrackstats-members",
+        "title": "Obsolete RTCMediaStreamTrackStats members"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-rtcmediastreamtrackstats-trackidentifier",
+      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcmediastreamtrackstats-trackidentifier",
+      "linkingText": [
+        "trackIdentifier"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCMediaStreamTrackStats"
+      ],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "obsolete-rtcmediastreamtrackstats-members",
+        "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcmediastreamtrackstats-members",
+        "title": "Obsolete RTCMediaStreamTrackStats members"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-rtcmediastreamtrackstats-ended",
+      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcmediastreamtrackstats-ended",
+      "linkingText": [
+        "ended"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCMediaStreamTrackStats"
+      ],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "obsolete-rtcmediastreamtrackstats-members",
+        "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcmediastreamtrackstats-members",
+        "title": "Obsolete RTCMediaStreamTrackStats members"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-rtcmediastreamtrackstats-kind",
+      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcmediastreamtrackstats-kind",
+      "linkingText": [
+        "kind"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCMediaStreamTrackStats"
+      ],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "obsolete-rtcmediastreamtrackstats-members",
+        "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcmediastreamtrackstats-members",
+        "title": "Obsolete RTCMediaStreamTrackStats members"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-rtcmediastreamtrackstats-priority",
+      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcmediastreamtrackstats-priority",
       "linkingText": [
         "priority"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "RTCMediaHandlerStats"
+        "RTCMediaStreamTrackStats"
       ],
       "access": "public",
       "informative": true,
       "heading": {
-        "id": "obsolete-rtcmediahandlerstats-members",
-        "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcmediahandlerstats-members",
-        "title": "Obsolete RTCMediaHandlerStats members"
+        "id": "obsolete-rtcmediastreamtrackstats-members",
+        "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcmediastreamtrackstats-members",
+        "title": "Obsolete RTCMediaStreamTrackStats members"
       },
       "definedIn": "dt"
     },
     {
-      "id": "dom-rtcmediahandlerstats-remotesource",
-      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcmediahandlerstats-remotesource",
+      "id": "dom-rtcmediastreamtrackstats-remotesource",
+      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcmediastreamtrackstats-remotesource",
       "linkingText": [
         "remoteSource"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "RTCMediaHandlerStats"
+        "RTCMediaStreamTrackStats"
       ],
       "access": "public",
       "informative": true,
       "heading": {
-        "id": "obsolete-rtcmediahandlerstats-members",
-        "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcmediahandlerstats-members",
-        "title": "Obsolete RTCMediaHandlerStats members"
+        "id": "obsolete-rtcmediastreamtrackstats-members",
+        "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcmediastreamtrackstats-members",
+        "title": "Obsolete RTCMediaStreamTrackStats members"
       },
       "definedIn": "dt"
     },
     {
-      "id": "dom-rtcaudiohandlerstats-audiolevel",
-      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcaudiohandlerstats-audiolevel",
+      "id": "dom-rtcmediastreamtrackstats-estimatedplayouttimestamp",
+      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcmediastreamtrackstats-estimatedplayouttimestamp",
+      "linkingText": [
+        "estimatedPlayoutTimestamp"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCMediaStreamTrackStats"
+      ],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "obsolete-rtcmediastreamtrackstats-members",
+        "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcmediastreamtrackstats-members",
+        "title": "Obsolete RTCMediaStreamTrackStats members"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-rtcmediastreamtrackstats-jitterbufferdelay",
+      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcmediastreamtrackstats-jitterbufferdelay",
+      "linkingText": [
+        "jitterBufferDelay"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCMediaStreamTrackStats"
+      ],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "obsolete-rtcmediastreamtrackstats-members",
+        "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcmediastreamtrackstats-members",
+        "title": "Obsolete RTCMediaStreamTrackStats members"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-rtcmediastreamtrackstats-jitterbufferemittedcount",
+      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcmediastreamtrackstats-jitterbufferemittedcount",
+      "linkingText": [
+        "jitterBufferEmittedCount"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCMediaStreamTrackStats"
+      ],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "obsolete-rtcmediastreamtrackstats-members",
+        "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcmediastreamtrackstats-members",
+        "title": "Obsolete RTCMediaStreamTrackStats members"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-rtcmediastreamtrackstats-audiolevel",
+      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcmediastreamtrackstats-audiolevel",
       "linkingText": [
         "audioLevel"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "RTCAudioHandlerStats"
+        "RTCMediaStreamTrackStats"
       ],
       "access": "public",
       "informative": true,
       "heading": {
-        "id": "obsolete-rtcaudiohandlerstats-members",
-        "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcaudiohandlerstats-members",
-        "title": "Obsolete RTCAudioHandlerStats members"
+        "id": "obsolete-rtcmediastreamtrackstats-members",
+        "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcmediastreamtrackstats-members",
+        "title": "Obsolete RTCMediaStreamTrackStats members"
       },
       "definedIn": "dt"
     },
     {
-      "id": "dom-rtcaudiohandlerstats-totalaudioenergy",
-      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcaudiohandlerstats-totalaudioenergy",
+      "id": "dom-rtcmediastreamtrackstats-totalaudioenergy",
+      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcmediastreamtrackstats-totalaudioenergy",
       "linkingText": [
         "totalAudioEnergy"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "RTCAudioHandlerStats"
+        "RTCMediaStreamTrackStats"
       ],
       "access": "public",
       "informative": true,
       "heading": {
-        "id": "obsolete-rtcaudiohandlerstats-members",
-        "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcaudiohandlerstats-members",
-        "title": "Obsolete RTCAudioHandlerStats members"
+        "id": "obsolete-rtcmediastreamtrackstats-members",
+        "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcmediastreamtrackstats-members",
+        "title": "Obsolete RTCMediaStreamTrackStats members"
       },
       "definedIn": "dt"
     },
     {
-      "id": "dom-rtcaudiohandlerstats-totalsamplesduration",
-      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcaudiohandlerstats-totalsamplesduration",
+      "id": "dom-rtcmediastreamtrackstats-totalsamplesduration",
+      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcmediastreamtrackstats-totalsamplesduration",
       "linkingText": [
         "totalSamplesDuration"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "RTCAudioHandlerStats"
+        "RTCMediaStreamTrackStats"
       ],
       "access": "public",
       "informative": true,
       "heading": {
-        "id": "obsolete-rtcaudiohandlerstats-members",
-        "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcaudiohandlerstats-members",
-        "title": "Obsolete RTCAudioHandlerStats members"
+        "id": "obsolete-rtcmediastreamtrackstats-members",
+        "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcmediastreamtrackstats-members",
+        "title": "Obsolete RTCMediaStreamTrackStats members"
       },
       "definedIn": "dt"
     },
     {
-      "id": "dom-rtcaudiosenderstats",
-      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcaudiosenderstats",
-      "linkingText": [
-        "RTCAudioSenderStats"
-      ],
-      "localLinkingText": [],
-      "type": "dictionary",
-      "for": [],
-      "access": "public",
-      "informative": true,
-      "heading": {
-        "id": "obsolete-rtcaudiosenderstats-members",
-        "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcaudiosenderstats-members",
-        "title": "Obsolete RTCAudioSenderStats members"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "dom-rtcaudiosenderstats-echoreturnloss",
-      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcaudiosenderstats-echoreturnloss",
+      "id": "dom-rtcmediastreamtrackstats-echoreturnloss",
+      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcmediastreamtrackstats-echoreturnloss",
       "linkingText": [
         "echoReturnLoss"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "RTCAudioSenderStats"
+        "RTCMediaStreamTrackStats"
       ],
       "access": "public",
       "informative": true,
       "heading": {
-        "id": "obsolete-rtcaudiosenderstats-members",
-        "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcaudiosenderstats-members",
-        "title": "Obsolete RTCAudioSenderStats members"
+        "id": "obsolete-rtcmediastreamtrackstats-members",
+        "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcmediastreamtrackstats-members",
+        "title": "Obsolete RTCMediaStreamTrackStats members"
       },
       "definedIn": "dt"
     },
     {
-      "id": "dom-rtcaudiosenderstats-echoreturnlossenhancement",
-      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcaudiosenderstats-echoreturnlossenhancement",
+      "id": "dom-rtcmediastreamtrackstats-echoreturnlossenhancement",
+      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcmediastreamtrackstats-echoreturnlossenhancement",
       "linkingText": [
         "echoReturnLossEnhancement"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "RTCAudioSenderStats"
+        "RTCMediaStreamTrackStats"
       ],
       "access": "public",
       "informative": true,
       "heading": {
-        "id": "obsolete-rtcaudiosenderstats-members",
-        "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcaudiosenderstats-members",
-        "title": "Obsolete RTCAudioSenderStats members"
+        "id": "obsolete-rtcmediastreamtrackstats-members",
+        "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcmediastreamtrackstats-members",
+        "title": "Obsolete RTCMediaStreamTrackStats members"
       },
       "definedIn": "dt"
     },
     {
-      "id": "dom-rtcaudioreceiverstats",
-      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcaudioreceiverstats",
-      "linkingText": [
-        "RTCAudioReceiverStats"
-      ],
-      "localLinkingText": [],
-      "type": "dictionary",
-      "for": [],
-      "access": "public",
-      "informative": true,
-      "heading": {
-        "id": "obsolete-rtcaudioreceiverstats-members",
-        "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcaudioreceiverstats-members",
-        "title": "Obsolete RTCAudioReceiverStats members"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "dom-rtcaudioreceiverstats-estimatedplayouttimestamp",
-      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcaudioreceiverstats-estimatedplayouttimestamp",
-      "linkingText": [
-        "estimatedPlayoutTimestamp"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "RTCAudioReceiverStats"
-      ],
-      "access": "public",
-      "informative": true,
-      "heading": {
-        "id": "obsolete-rtcaudioreceiverstats-members",
-        "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcaudioreceiverstats-members",
-        "title": "Obsolete RTCAudioReceiverStats members"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-rtcaudioreceiverstats-jitterbufferdelay",
-      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcaudioreceiverstats-jitterbufferdelay",
-      "linkingText": [
-        "jitterBufferDelay"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "RTCAudioReceiverStats"
-      ],
-      "access": "public",
-      "informative": true,
-      "heading": {
-        "id": "obsolete-rtcaudioreceiverstats-members",
-        "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcaudioreceiverstats-members",
-        "title": "Obsolete RTCAudioReceiverStats members"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-rtcaudioreceiverstats-jitterbufferemittedcount",
-      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcaudioreceiverstats-jitterbufferemittedcount",
-      "linkingText": [
-        "jitterBufferEmittedCount"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "RTCAudioReceiverStats"
-      ],
-      "access": "public",
-      "informative": true,
-      "heading": {
-        "id": "obsolete-rtcaudioreceiverstats-members",
-        "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcaudioreceiverstats-members",
-        "title": "Obsolete RTCAudioReceiverStats members"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-rtcaudioreceiverstats-totalsamplesreceived",
-      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcaudioreceiverstats-totalsamplesreceived",
+      "id": "dom-rtcmediastreamtrackstats-totalsamplesreceived",
+      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcmediastreamtrackstats-totalsamplesreceived",
       "linkingText": [
         "totalSamplesReceived"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "RTCAudioReceiverStats"
+        "RTCMediaStreamTrackStats"
       ],
       "access": "public",
       "informative": true,
       "heading": {
-        "id": "obsolete-rtcaudioreceiverstats-members",
-        "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcaudioreceiverstats-members",
-        "title": "Obsolete RTCAudioReceiverStats members"
+        "id": "obsolete-rtcmediastreamtrackstats-members",
+        "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcmediastreamtrackstats-members",
+        "title": "Obsolete RTCMediaStreamTrackStats members"
       },
       "definedIn": "dt"
     },
     {
-      "id": "dom-rtcaudioreceiverstats-concealedsamples",
-      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcaudioreceiverstats-concealedsamples",
+      "id": "dom-rtcmediastreamtrackstats-concealedsamples",
+      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcmediastreamtrackstats-concealedsamples",
       "linkingText": [
         "concealedSamples"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "RTCAudioReceiverStats"
+        "RTCMediaStreamTrackStats"
       ],
       "access": "public",
       "informative": true,
       "heading": {
-        "id": "obsolete-rtcaudioreceiverstats-members",
-        "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcaudioreceiverstats-members",
-        "title": "Obsolete RTCAudioReceiverStats members"
+        "id": "obsolete-rtcmediastreamtrackstats-members",
+        "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcmediastreamtrackstats-members",
+        "title": "Obsolete RTCMediaStreamTrackStats members"
       },
       "definedIn": "dt"
     },
     {
-      "id": "dom-rtcaudioreceiverstats-silentconcealedsamples",
-      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcaudioreceiverstats-silentconcealedsamples",
+      "id": "dom-rtcmediastreamtrackstats-silentconcealedsamples",
+      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcmediastreamtrackstats-silentconcealedsamples",
       "linkingText": [
         "silentConcealedSamples"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "RTCAudioReceiverStats"
+        "RTCMediaStreamTrackStats"
       ],
       "access": "public",
       "informative": true,
       "heading": {
-        "id": "obsolete-rtcaudioreceiverstats-members",
-        "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcaudioreceiverstats-members",
-        "title": "Obsolete RTCAudioReceiverStats members"
+        "id": "obsolete-rtcmediastreamtrackstats-members",
+        "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcmediastreamtrackstats-members",
+        "title": "Obsolete RTCMediaStreamTrackStats members"
       },
       "definedIn": "dt"
     },
     {
-      "id": "dom-rtcaudioreceiverstats-concealmentevents",
-      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcaudioreceiverstats-concealmentevents",
+      "id": "dom-rtcmediastreamtrackstats-concealmentevents",
+      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcmediastreamtrackstats-concealmentevents",
       "linkingText": [
         "concealmentEvents"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "RTCAudioReceiverStats"
+        "RTCMediaStreamTrackStats"
       ],
       "access": "public",
       "informative": true,
       "heading": {
-        "id": "obsolete-rtcaudioreceiverstats-members",
-        "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcaudioreceiverstats-members",
-        "title": "Obsolete RTCAudioReceiverStats members"
+        "id": "obsolete-rtcmediastreamtrackstats-members",
+        "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcmediastreamtrackstats-members",
+        "title": "Obsolete RTCMediaStreamTrackStats members"
       },
       "definedIn": "dt"
     },
     {
-      "id": "dom-rtcaudioreceiverstats-insertedsamplesfordeceleration",
-      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcaudioreceiverstats-insertedsamplesfordeceleration",
+      "id": "dom-rtcmediastreamtrackstats-insertedsamplesfordeceleration",
+      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcmediastreamtrackstats-insertedsamplesfordeceleration",
       "linkingText": [
         "insertedSamplesForDeceleration"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "RTCAudioReceiverStats"
+        "RTCMediaStreamTrackStats"
       ],
       "access": "public",
       "informative": true,
       "heading": {
-        "id": "obsolete-rtcaudioreceiverstats-members",
-        "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcaudioreceiverstats-members",
-        "title": "Obsolete RTCAudioReceiverStats members"
+        "id": "obsolete-rtcmediastreamtrackstats-members",
+        "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcmediastreamtrackstats-members",
+        "title": "Obsolete RTCMediaStreamTrackStats members"
       },
       "definedIn": "dt"
     },
     {
-      "id": "dom-rtcaudioreceiverstats-removedsamplesforacceleration",
-      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcaudioreceiverstats-removedsamplesforacceleration",
+      "id": "dom-rtcmediastreamtrackstats-removedsamplesforacceleration",
+      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcmediastreamtrackstats-removedsamplesforacceleration",
       "linkingText": [
         "removedSamplesForAcceleration"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "RTCAudioReceiverStats"
+        "RTCMediaStreamTrackStats"
       ],
       "access": "public",
       "informative": true,
       "heading": {
-        "id": "obsolete-rtcaudioreceiverstats-members",
-        "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcaudioreceiverstats-members",
-        "title": "Obsolete RTCAudioReceiverStats members"
+        "id": "obsolete-rtcmediastreamtrackstats-members",
+        "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcmediastreamtrackstats-members",
+        "title": "Obsolete RTCMediaStreamTrackStats members"
       },
       "definedIn": "dt"
     },
     {
-      "id": "dom-rtcaudioreceiverstats-audiolevel",
-      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcaudioreceiverstats-audiolevel",
-      "linkingText": [
-        "audioLevel"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "RTCAudioReceiverStats"
-      ],
-      "access": "public",
-      "informative": true,
-      "heading": {
-        "id": "obsolete-rtcaudioreceiverstats-members",
-        "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcaudioreceiverstats-members",
-        "title": "Obsolete RTCAudioReceiverStats members"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-rtcaudioreceiverstats-totalaudioenergy",
-      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcaudioreceiverstats-totalaudioenergy",
-      "linkingText": [
-        "totalAudioEnergy"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "RTCAudioReceiverStats"
-      ],
-      "access": "public",
-      "informative": true,
-      "heading": {
-        "id": "obsolete-rtcaudioreceiverstats-members",
-        "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcaudioreceiverstats-members",
-        "title": "Obsolete RTCAudioReceiverStats members"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-rtcaudioreceiverstats-totalsamplesduration",
-      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcaudioreceiverstats-totalsamplesduration",
-      "linkingText": [
-        "totalSamplesDuration"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "RTCAudioReceiverStats"
-      ],
-      "access": "public",
-      "informative": true,
-      "heading": {
-        "id": "obsolete-rtcaudioreceiverstats-members",
-        "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcaudioreceiverstats-members",
-        "title": "Obsolete RTCAudioReceiverStats members"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-rtcvideohandlerstats-framewidth",
-      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcvideohandlerstats-framewidth",
+      "id": "dom-rtcmediastreamtrackstats-framewidth",
+      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcmediastreamtrackstats-framewidth",
       "linkingText": [
         "frameWidth"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "RTCVideoHandlerStats"
+        "RTCMediaStreamTrackStats"
       ],
       "access": "public",
       "informative": true,
       "heading": {
-        "id": "obsolete-rtcvideohandlerstats-members",
-        "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcvideohandlerstats-members",
-        "title": "Obsolete RTCVideoHandlerStats members"
+        "id": "obsolete-rtcmediastreamtrackstats-members",
+        "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcmediastreamtrackstats-members",
+        "title": "Obsolete RTCMediaStreamTrackStats members"
       },
       "definedIn": "dt"
     },
     {
-      "id": "dom-rtcvideohandlerstats-frameheight",
-      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcvideohandlerstats-frameheight",
+      "id": "dom-rtcmediastreamtrackstats-frameheight",
+      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcmediastreamtrackstats-frameheight",
       "linkingText": [
         "frameHeight"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "RTCVideoHandlerStats"
+        "RTCMediaStreamTrackStats"
       ],
       "access": "public",
       "informative": true,
       "heading": {
-        "id": "obsolete-rtcvideohandlerstats-members",
-        "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcvideohandlerstats-members",
-        "title": "Obsolete RTCVideoHandlerStats members"
+        "id": "obsolete-rtcmediastreamtrackstats-members",
+        "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcmediastreamtrackstats-members",
+        "title": "Obsolete RTCMediaStreamTrackStats members"
       },
       "definedIn": "dt"
     },
     {
-      "id": "dom-rtcvideohandlerstats-framespersecond",
-      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcvideohandlerstats-framespersecond",
+      "id": "dom-rtcmediastreamtrackstats-framespersecond",
+      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcmediastreamtrackstats-framespersecond",
       "linkingText": [
         "framesPerSecond"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "RTCVideoHandlerStats"
+        "RTCMediaStreamTrackStats"
       ],
       "access": "public",
       "informative": true,
       "heading": {
-        "id": "obsolete-rtcvideohandlerstats-members",
-        "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcvideohandlerstats-members",
-        "title": "Obsolete RTCVideoHandlerStats members"
+        "id": "obsolete-rtcmediastreamtrackstats-members",
+        "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcmediastreamtrackstats-members",
+        "title": "Obsolete RTCMediaStreamTrackStats members"
       },
       "definedIn": "dt"
     },
     {
-      "id": "dom-rtcvideosenderstats",
-      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcvideosenderstats",
-      "linkingText": [
-        "RTCVideoSenderStats"
-      ],
-      "localLinkingText": [],
-      "type": "dictionary",
-      "for": [],
-      "access": "public",
-      "informative": true,
-      "heading": {
-        "id": "obsolete-rtcvideosenderstats-members",
-        "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcvideosenderstats-members",
-        "title": "Obsolete RTCVideoSenderStats members"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "dom-rtcvideosenderstats-keyframessent",
-      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcvideosenderstats-keyframessent",
+      "id": "dom-rtcmediastreamtrackstats-keyframessent",
+      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcmediastreamtrackstats-keyframessent",
       "linkingText": [
         "keyFramesSent"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "RTCVideoSenderStats"
+        "RTCMediaStreamTrackStats"
       ],
       "access": "public",
       "informative": true,
       "heading": {
-        "id": "obsolete-rtcvideosenderstats-members",
-        "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcvideosenderstats-members",
-        "title": "Obsolete RTCVideoSenderStats members"
+        "id": "obsolete-rtcmediastreamtrackstats-members",
+        "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcmediastreamtrackstats-members",
+        "title": "Obsolete RTCMediaStreamTrackStats members"
       },
       "definedIn": "dt"
     },
     {
-      "id": "dom-rtcvideosenderstats-framescaptured",
-      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcvideosenderstats-framescaptured",
+      "id": "dom-rtcmediastreamtrackstats-framescaptured",
+      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcmediastreamtrackstats-framescaptured",
       "linkingText": [
         "framesCaptured"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "RTCVideoSenderStats"
+        "RTCMediaStreamTrackStats"
       ],
       "access": "public",
       "informative": true,
       "heading": {
-        "id": "obsolete-rtcvideosenderstats-members",
-        "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcvideosenderstats-members",
-        "title": "Obsolete RTCVideoSenderStats members"
+        "id": "obsolete-rtcmediastreamtrackstats-members",
+        "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcmediastreamtrackstats-members",
+        "title": "Obsolete RTCMediaStreamTrackStats members"
       },
       "definedIn": "dt"
     },
     {
-      "id": "dom-rtcvideosenderstats-framessent",
-      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcvideosenderstats-framessent",
+      "id": "dom-rtcmediastreamtrackstats-framessent",
+      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcmediastreamtrackstats-framessent",
       "linkingText": [
         "framesSent"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "RTCVideoSenderStats"
+        "RTCMediaStreamTrackStats"
       ],
       "access": "public",
       "informative": true,
       "heading": {
-        "id": "obsolete-rtcvideosenderstats-members",
-        "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcvideosenderstats-members",
-        "title": "Obsolete RTCVideoSenderStats members"
+        "id": "obsolete-rtcmediastreamtrackstats-members",
+        "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcmediastreamtrackstats-members",
+        "title": "Obsolete RTCMediaStreamTrackStats members"
       },
       "definedIn": "dt"
     },
     {
-      "id": "dom-rtcvideosenderstats-hugeframessent",
-      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcvideosenderstats-hugeframessent",
+      "id": "dom-rtcmediastreamtrackstats-hugeframessent",
+      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcmediastreamtrackstats-hugeframessent",
       "linkingText": [
         "hugeFramesSent"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "RTCVideoSenderStats"
+        "RTCMediaStreamTrackStats"
       ],
       "access": "public",
       "informative": true,
       "heading": {
-        "id": "obsolete-rtcvideosenderstats-members",
-        "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcvideosenderstats-members",
-        "title": "Obsolete RTCVideoSenderStats members"
+        "id": "obsolete-rtcmediastreamtrackstats-members",
+        "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcmediastreamtrackstats-members",
+        "title": "Obsolete RTCMediaStreamTrackStats members"
       },
       "definedIn": "dt"
     },
     {
-      "id": "dom-rtcvideoreceiverstats",
-      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcvideoreceiverstats",
-      "linkingText": [
-        "RTCVideoReceiverStats"
-      ],
-      "localLinkingText": [],
-      "type": "dictionary",
-      "for": [],
-      "access": "public",
-      "informative": true,
-      "heading": {
-        "id": "obsolete-rtcvideoreceiverstats-members",
-        "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcvideoreceiverstats-members",
-        "title": "Obsolete RTCVideoReceiverStats members"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "dom-rtcvideoreceiverstats-estimatedplayouttimestamp",
-      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcvideoreceiverstats-estimatedplayouttimestamp",
-      "linkingText": [
-        "estimatedPlayoutTimestamp"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "RTCVideoReceiverStats"
-      ],
-      "access": "public",
-      "informative": true,
-      "heading": {
-        "id": "obsolete-rtcvideoreceiverstats-members",
-        "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcvideoreceiverstats-members",
-        "title": "Obsolete RTCVideoReceiverStats members"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-rtcvideoreceiverstats-keyframesreceived",
-      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcvideoreceiverstats-keyframesreceived",
+      "id": "dom-rtcmediastreamtrackstats-keyframesreceived",
+      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcmediastreamtrackstats-keyframesreceived",
       "linkingText": [
         "keyFramesReceived"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "RTCVideoReceiverStats"
+        "RTCMediaStreamTrackStats"
       ],
       "access": "public",
       "informative": true,
       "heading": {
-        "id": "obsolete-rtcvideoreceiverstats-members",
-        "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcvideoreceiverstats-members",
-        "title": "Obsolete RTCVideoReceiverStats members"
+        "id": "obsolete-rtcmediastreamtrackstats-members",
+        "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcmediastreamtrackstats-members",
+        "title": "Obsolete RTCMediaStreamTrackStats members"
       },
       "definedIn": "dt"
     },
     {
-      "id": "dom-rtcvideoreceiverstats-jitterbufferdelay",
-      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcvideoreceiverstats-jitterbufferdelay",
-      "linkingText": [
-        "jitterBufferDelay"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "RTCVideoReceiverStats"
-      ],
-      "access": "public",
-      "informative": true,
-      "heading": {
-        "id": "obsolete-rtcvideoreceiverstats-members",
-        "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcvideoreceiverstats-members",
-        "title": "Obsolete RTCVideoReceiverStats members"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-rtcvideoreceiverstats-jitterbufferemittedcount",
-      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcvideoreceiverstats-jitterbufferemittedcount",
-      "linkingText": [
-        "jitterBufferEmittedCount"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "RTCVideoReceiverStats"
-      ],
-      "access": "public",
-      "informative": true,
-      "heading": {
-        "id": "obsolete-rtcvideoreceiverstats-members",
-        "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcvideoreceiverstats-members",
-        "title": "Obsolete RTCVideoReceiverStats members"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-rtcvideoreceiverstats-framesreceived",
-      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcvideoreceiverstats-framesreceived",
+      "id": "dom-rtcmediastreamtrackstats-framesreceived",
+      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcmediastreamtrackstats-framesreceived",
       "linkingText": [
         "framesReceived"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "RTCVideoReceiverStats"
+        "RTCMediaStreamTrackStats"
       ],
       "access": "public",
       "informative": true,
       "heading": {
-        "id": "obsolete-rtcvideoreceiverstats-members",
-        "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcvideoreceiverstats-members",
-        "title": "Obsolete RTCVideoReceiverStats members"
+        "id": "obsolete-rtcmediastreamtrackstats-members",
+        "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcmediastreamtrackstats-members",
+        "title": "Obsolete RTCMediaStreamTrackStats members"
       },
       "definedIn": "dt"
     },
     {
-      "id": "dom-rtcvideoreceiverstats-framesdecoded",
-      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcvideoreceiverstats-framesdecoded",
+      "id": "dom-rtcmediastreamtrackstats-framesdecoded",
+      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcmediastreamtrackstats-framesdecoded",
       "linkingText": [
         "framesDecoded"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "RTCVideoReceiverStats"
+        "RTCMediaStreamTrackStats"
       ],
       "access": "public",
       "informative": true,
       "heading": {
-        "id": "obsolete-rtcvideoreceiverstats-members",
-        "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcvideoreceiverstats-members",
-        "title": "Obsolete RTCVideoReceiverStats members"
+        "id": "obsolete-rtcmediastreamtrackstats-members",
+        "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcmediastreamtrackstats-members",
+        "title": "Obsolete RTCMediaStreamTrackStats members"
       },
       "definedIn": "dt"
     },
     {
-      "id": "dom-rtcvideoreceiverstats-framesdropped",
-      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcvideoreceiverstats-framesdropped",
+      "id": "dom-rtcmediastreamtrackstats-framesdropped",
+      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcmediastreamtrackstats-framesdropped",
       "linkingText": [
         "framesDropped"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "RTCVideoReceiverStats"
+        "RTCMediaStreamTrackStats"
       ],
       "access": "public",
       "informative": true,
       "heading": {
-        "id": "obsolete-rtcvideoreceiverstats-members",
-        "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcvideoreceiverstats-members",
-        "title": "Obsolete RTCVideoReceiverStats members"
+        "id": "obsolete-rtcmediastreamtrackstats-members",
+        "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcmediastreamtrackstats-members",
+        "title": "Obsolete RTCMediaStreamTrackStats members"
       },
       "definedIn": "dt"
     }
