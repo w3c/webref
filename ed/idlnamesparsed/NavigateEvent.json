@@ -6,7 +6,7 @@
       "title": "Navigation API",
       "url": "https://wicg.github.io/navigation-api/"
     },
-    "fragment": "[Exposed=Window]\ninterface NavigateEvent : Event {\n  constructor(DOMString type, NavigateEventInit eventInit);\n\n  readonly attribute NavigationType navigationType;\n  readonly attribute NavigationDestination destination;\n  readonly attribute boolean canTransition;\n  readonly attribute boolean userInitiated;\n  readonly attribute boolean hashChange;\n  readonly attribute AbortSignal signal;\n  readonly attribute FormData? formData;\n  readonly attribute DOMString? downloadRequest;\n  readonly attribute any info;\n\n  undefined transitionWhile(Promise<undefined> newNavigationAction,\n                            optional NavigationTransitionWhileOptions options = {});\n  undefined restoreScroll();\n};",
+    "fragment": "[Exposed=Window]\ninterface NavigateEvent : Event {\n  constructor(DOMString type, NavigateEventInit eventInit);\n\n  readonly attribute NavigationType navigationType;\n  readonly attribute NavigationDestination destination;\n  readonly attribute boolean canIntercept;\n  readonly attribute boolean userInitiated;\n  readonly attribute boolean hashChange;\n  readonly attribute AbortSignal signal;\n  readonly attribute FormData? formData;\n  readonly attribute DOMString? downloadRequest;\n  readonly attribute any info;\n\n  undefined intercept(optional NavigationInterceptOptions options = {});\n  undefined restoreScroll();\n};",
     "href": "https://wicg.github.io/navigation-api/#navigateevent"
   },
   "extended": [],
@@ -112,10 +112,10 @@
         "definedIn": "prose"
       },
       {
-        "id": "dom-navigateevent-cantransition",
-        "href": "https://wicg.github.io/navigation-api/#dom-navigateevent-cantransition",
+        "id": "dom-navigateevent-canintercept",
+        "href": "https://wicg.github.io/navigation-api/#dom-navigateevent-canintercept",
         "linkingText": [
-          "canTransition"
+          "canIntercept"
         ],
         "localLinkingText": [],
         "type": "attribute",
@@ -259,11 +259,11 @@
         "definedIn": "prose"
       },
       {
-        "id": "dom-navigateevent-transitionwhile",
-        "href": "https://wicg.github.io/navigation-api/#dom-navigateevent-transitionwhile",
+        "id": "dom-navigateevent-intercept",
+        "href": "https://wicg.github.io/navigation-api/#dom-navigateevent-intercept",
         "linkingText": [
-          "transitionWhile(newNavigationAction, options)",
-          "transitionWhile(newNavigationAction)"
+          "intercept(options)",
+          "intercept()"
         ],
         "localLinkingText": [],
         "type": "method",

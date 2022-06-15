@@ -34,9 +34,6 @@
     "<color-mix()>": {
       "value": "color-mix( <color-interpolation-method> , [ <color> && <percentage [0,100]>? ]#{2})"
     },
-    "<color-contrast()>": {
-      "value": "color-contrast( <color> vs <color>#{2,} [ to [<number> | AA | AA-large | AAA | AAA-large]]? )"
-    },
     "<rgb()>": {
       "value": "rgb( [<percentage> | none]{3} [ / [<alpha-value> | none] ]? ) | rgb( [<number> | none]{3} [ / [<alpha-value> | none] ]? rgb( [ from <color> ]? [ <number> | <percentage> | none]{3} [ / [<alpha-value> | none] ]? )"
     },
@@ -44,7 +41,7 @@
       "value": "<number> | <percentage>"
     },
     "<hsl()>": {
-      "value": "hsl(([from <color>]? [<hue> | none] [<percentage> | <number> | none] [<percentage> | <number> | none] [ / [<alpha-value> | none] ]? )"
+      "value": "hsl([from <color>]? [<hue> | none] [<percentage> | <number> | none] [<percentage> | <number> | none] [ / [<alpha-value> | none] ]? )"
     },
     "<hwb()>": {
       "value": "hwb([from <color>]? [<hue> | none] [<percentage> | <number> | none] [<percentage> | <number> | none] [ / [<alpha-value> | none] ]? )"
