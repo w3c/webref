@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2022-06-15T06:46:08.471Z",
+  "date": "2022-06-15T12:43:59.364Z",
   "options": {
     "fallback": "webref-fallback/ed/index.json",
     "output": "report",
@@ -21,7 +21,7 @@
   },
   "stats": {
     "crawled": 469,
-    "errors": 0
+    "errors": 2
   },
   "crawler": "reffy-7.0.12",
   "results": [
@@ -3584,10 +3584,10 @@
       ],
       "crawled": "https://w3c.github.io/PNG-spec/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 02 Jun 2022 13:13:39 GMT"
+        "lastModified": "Wed, 15 Jun 2022 12:37:43 GMT"
       },
       "generator": "respec",
-      "date": "02 June 2022",
+      "date": "15 June 2022",
       "links": "links/PNG-spec.json",
       "refs": "refs/PNG-spec.json",
       "dfns": "dfns/PNG-spec.json",
@@ -4798,7 +4798,8 @@
       "date": "10 June 2022",
       "links": "links/credentiallessness.json",
       "headings": "headings/credentiallessness.json",
-      "ids": "ids/credentiallessness.json"
+      "ids": "ids/credentiallessness.json",
+      "error": "Error: Execution context was destroyed, most likely because of a navigation. Error: Execution context was destroyed, most likely because of a navigation.\n    at rewriteError (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:260:23)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:219:60)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:110:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 93)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://wicg.github.io/csp-next/scripting-policy.html",
@@ -7639,7 +7640,7 @@
       ],
       "crawled": "https://wicg.github.io/webpackage/loading.html",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 15 Jun 2022 00:32:12 GMT"
+        "lastModified": "Wed, 15 Jun 2022 07:23:06 GMT"
       },
       "generator": "bikeshed",
       "date": "15 June 2022",
@@ -17046,7 +17047,8 @@
       "css": "css/CSS.json",
       "dfns": "dfns/CSS22.json",
       "headings": "headings/CSS22.json",
-      "ids": "ids/CSS22.json"
+      "ids": "ids/CSS22.json",
+      "error": "Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers' Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers'\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:483:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 323)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/css3-exclusions/",
@@ -19086,10 +19088,10 @@
       ],
       "crawled": "https://w3c.github.io/IntersectionObserver/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 14 Jun 2022 09:44:12 GMT"
+        "lastModified": "Wed, 15 Jun 2022 11:56:08 GMT"
       },
       "generator": "bikeshed",
-      "date": "14 June 2022",
+      "date": "15 June 2022",
       "links": "links/intersection-observer.json",
       "refs": "refs/intersection-observer.json",
       "idl": "idl/intersection-observer.idl",
