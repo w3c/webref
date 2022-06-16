@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2022-06-16T12:44:29.691Z",
+  "date": "2022-06-16T14:03:02.986Z",
   "options": {
     "fallback": "webref-fallback/ed/index.json",
     "output": "report",
@@ -11,6 +11,7 @@
       "date",
       "links",
       "refs",
+      "events",
       "idl",
       "css",
       "dfns",
@@ -21,9 +22,9 @@
   },
   "stats": {
     "crawled": 469,
-    "errors": 1
+    "errors": 102
   },
-  "crawler": "reffy-7.0.13",
+  "crawler": "reffy-7.1.0",
   "results": [
     {
       "url": "https://compat.spec.whatwg.org/",
@@ -72,6 +73,7 @@
       "date": "6 June 2022",
       "links": "links/compat.json",
       "refs": "refs/compat.json",
+      "events": "events/compat.json",
       "idl": "idl/compat.idl",
       "css": "css/compat.json",
       "dfns": "dfns/compat.json",
@@ -229,6 +231,7 @@
       "date": "9 June 2022",
       "links": "links/dom.json",
       "refs": "refs/dom.json",
+      "events": "events/dom.json",
       "idl": "idl/dom.idl",
       "dfns": "dfns/dom.json",
       "headings": "headings/dom.json",
@@ -391,6 +394,7 @@
       "dfns": "dfns/css-animations-2.json",
       "headings": "headings/css-animations-2.json",
       "ids": "ids/css-animations-2.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 6)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)",
       "idlparsed": "idlparsed/css-animations-2.json"
     },
     {
@@ -446,7 +450,8 @@
       "css": "css/css-backgrounds-4.json",
       "dfns": "dfns/css-backgrounds-4.json",
       "headings": "headings/css-backgrounds-4.json",
-      "ids": "ids/css-backgrounds-4.json"
+      "ids": "ids/css-backgrounds-4.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 7)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://drafts.csswg.org/css-env-1/",
@@ -499,7 +504,8 @@
       "css": "css/css-env.json",
       "dfns": "dfns/css-env-1.json",
       "headings": "headings/css-env-1.json",
-      "ids": "ids/css-env-1.json"
+      "ids": "ids/css-env-1.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 8)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://drafts.csswg.org/css-extensions-1/",
@@ -546,7 +552,8 @@
       "css": "css/css-extensions.json",
       "dfns": "dfns/css-extensions-1.json",
       "headings": "headings/css-extensions-1.json",
-      "ids": "ids/css-extensions-1.json"
+      "ids": "ids/css-extensions-1.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 9)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://drafts.csswg.org/css-gcpm-4/",
@@ -601,7 +608,8 @@
       "css": "css/css-gcpm-4.json",
       "dfns": "dfns/css-gcpm-4.json",
       "headings": "headings/css-gcpm-4.json",
-      "ids": "ids/css-gcpm-4.json"
+      "ids": "ids/css-gcpm-4.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 10)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://drafts.csswg.org/css-grid-3/",
@@ -656,7 +664,8 @@
       "css": "css/css-grid-3.json",
       "dfns": "dfns/css-grid-3.json",
       "headings": "headings/css-grid-3.json",
-      "ids": "ids/css-grid-3.json"
+      "ids": "ids/css-grid-3.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 11)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://drafts.csswg.org/css-multicol-2/",
@@ -711,7 +720,8 @@
       "css": "css/css-multicol-2.json",
       "dfns": "dfns/css-multicol-2.json",
       "headings": "headings/css-multicol-2.json",
-      "ids": "ids/css-multicol-2.json"
+      "ids": "ids/css-multicol-2.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 12)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://drafts.csswg.org/css-page-4/",
@@ -819,7 +829,8 @@
       "css": "css/css-scroll-snap-2.json",
       "dfns": "dfns/css-scroll-snap-2.json",
       "headings": "headings/css-scroll-snap-2.json",
-      "ids": "ids/css-scroll-snap-2.json"
+      "ids": "ids/css-scroll-snap-2.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 14)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://drafts.csswg.org/css-shapes-2/",
@@ -874,7 +885,8 @@
       "css": "css/css-shapes-2.json",
       "dfns": "dfns/css-shapes-2.json",
       "headings": "headings/css-shapes-2.json",
-      "ids": "ids/css-shapes-2.json"
+      "ids": "ids/css-shapes-2.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 15)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://drafts.csswg.org/css-size-adjust-1/",
@@ -927,7 +939,8 @@
       "css": "css/css-size-adjust.json",
       "dfns": "dfns/css-size-adjust-1.json",
       "headings": "headings/css-size-adjust-1.json",
-      "ids": "ids/css-size-adjust-1.json"
+      "ids": "ids/css-size-adjust-1.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 16)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://drafts.csswg.org/css-transitions-2/",
@@ -983,6 +996,7 @@
       "dfns": "dfns/css-transitions-2.json",
       "headings": "headings/css-transitions-2.json",
       "ids": "ids/css-transitions-2.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 17)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)",
       "idlparsed": "idlparsed/css-transitions-2.json"
     },
     {
@@ -1038,7 +1052,8 @@
       "css": "css/css-values-5.json",
       "dfns": "dfns/css-values-5.json",
       "headings": "headings/css-values-5.json",
-      "ids": "ids/css-values-5.json"
+      "ids": "ids/css-values-5.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 18)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://drafts.csswg.org/scroll-animations-1/",
@@ -1093,6 +1108,7 @@
       "dfns": "dfns/scroll-animations-1.json",
       "headings": "headings/scroll-animations-1.json",
       "ids": "ids/scroll-animations-1.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 19)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)",
       "idlparsed": "idlparsed/scroll-animations-1.json"
     },
     {
@@ -1149,6 +1165,7 @@
       "dfns": "dfns/web-animations-2.json",
       "headings": "headings/web-animations-2.json",
       "ids": "ids/web-animations-2.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 20)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)",
       "idlparsed": "idlparsed/web-animations-2.json"
     },
     {
@@ -1296,10 +1313,10 @@
       ],
       "crawled": "https://fedidcg.github.io/FedCM/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 14 Jun 2022 19:59:15 GMT"
+        "lastModified": "Thu, 16 Jun 2022 13:12:53 GMT"
       },
       "generator": "bikeshed",
-      "date": "14 June 2022",
+      "date": "16 June 2022",
       "links": "links/FedCM.json",
       "refs": "refs/FedCM.json",
       "idl": "idl/FedCM.idl",
@@ -1466,6 +1483,7 @@
       "date": "17 January 2022",
       "links": "links/fullscreen.json",
       "refs": "refs/fullscreen.json",
+      "events": "events/fullscreen.json",
       "idl": "idl/fullscreen.idl",
       "dfns": "dfns/fullscreen.json",
       "headings": "headings/fullscreen.json",
@@ -1605,6 +1623,7 @@
       "date": "15 June 2022",
       "links": "links/html.json",
       "refs": "refs/html.json",
+      "events": "events/html.json",
       "idl": "idl/html.idl",
       "css": "css/html.json",
       "dfns": "dfns/html.json",
@@ -1809,6 +1828,7 @@
       "date": "17 January 2022",
       "links": "links/notifications.json",
       "refs": "refs/notifications.json",
+      "events": "events/notifications.json",
       "idl": "idl/notifications.idl",
       "dfns": "dfns/notifications.json",
       "headings": "headings/notifications.json",
@@ -2154,6 +2174,7 @@
       "date": "26 May 2022",
       "links": "links/svg-animations.json",
       "refs": "refs/svg-animations.json",
+      "events": "events/svg-animations.json",
       "idl": "idl/svg-animations.idl",
       "css": "css/svg-animations.json",
       "dfns": "dfns/svg-animations.json",
@@ -3585,6 +3606,7 @@
       "date": "19 May 2022",
       "links": "links/mediacapture-handle-actions.json",
       "refs": "refs/mediacapture-handle-actions.json",
+      "events": "events/mediacapture-handle-actions.json",
       "idl": "idl/mediacapture-handle-actions.idl",
       "dfns": "dfns/mediacapture-handle-actions.json",
       "headings": "headings/mediacapture-handle-actions.json",
@@ -3736,6 +3758,7 @@
       "date": "29 March 2022",
       "links": "links/web-nfc.json",
       "refs": "refs/web-nfc.json",
+      "events": "events/web-nfc.json",
       "idl": "idl/web-nfc.idl",
       "dfns": "dfns/web-nfc.json",
       "headings": "headings/web-nfc.json",
@@ -3977,6 +4000,7 @@
       "date": "03 June 2022",
       "links": "links/webrtc-ice.json",
       "refs": "refs/webrtc-ice.json",
+      "events": "events/webrtc-ice.json",
       "idl": "idl/webrtc-ice.idl",
       "dfns": "dfns/webrtc-ice.json",
       "headings": "headings/webrtc-ice.json",
@@ -4030,6 +4054,7 @@
       "date": "8 June 2022",
       "links": "links/window-placement.json",
       "refs": "refs/window-placement.json",
+      "events": "events/window-placement.json",
       "idl": "idl/window-placement.idl",
       "dfns": "dfns/window-placement.json",
       "headings": "headings/window-placement.json",
@@ -4131,6 +4156,7 @@
       "date": "9 June 2022",
       "links": "links/web-bluetooth.json",
       "refs": "refs/web-bluetooth.json",
+      "events": "events/web-bluetooth.json",
       "idl": "idl/web-bluetooth.idl",
       "dfns": "dfns/web-bluetooth.json",
       "headings": "headings/web-bluetooth.json",
@@ -4237,6 +4263,7 @@
       "date": "2 June 2022",
       "links": "links/websockets.json",
       "refs": "refs/websockets.json",
+      "events": "events/websockets.json",
       "idl": "idl/websockets.idl",
       "dfns": "dfns/websockets.json",
       "headings": "headings/websockets.json",
@@ -4337,6 +4364,7 @@
       "date": "21 April 2021",
       "links": "links/background-fetch.json",
       "refs": "refs/background-fetch.json",
+      "events": "events/background-fetch.json",
       "idl": "idl/background-fetch.idl",
       "dfns": "dfns/background-fetch.json",
       "headings": "headings/background-fetch.json",
@@ -4390,6 +4418,7 @@
       "date": "10 November 2021",
       "links": "links/background-sync.json",
       "refs": "refs/background-sync.json",
+      "events": "events/background-sync.json",
       "idl": "idl/background-sync.idl",
       "dfns": "dfns/background-sync.json",
       "headings": "headings/background-sync.json",
@@ -4539,6 +4568,7 @@
       "date": "3 June 2022",
       "links": "links/close-watcher.json",
       "refs": "refs/close-watcher.json",
+      "events": "events/close-watcher.json",
       "idl": "idl/close-watcher.idl",
       "dfns": "dfns/close-watcher.json",
       "headings": "headings/close-watcher.json",
@@ -4692,6 +4722,7 @@
       "date": "13 April 2021",
       "links": "links/content-index.json",
       "refs": "refs/content-index.json",
+      "events": "events/content-index.json",
       "idl": "idl/content-index.idl",
       "dfns": "dfns/content-index.json",
       "headings": "headings/content-index.json",
@@ -4745,6 +4776,7 @@
       "date": "20 August 2021",
       "links": "links/cookie-store.json",
       "refs": "refs/cookie-store.json",
+      "events": "events/cookie-store.json",
       "idl": "idl/cookie-store.idl",
       "dfns": "dfns/cookie-store.json",
       "headings": "headings/cookie-store.json",
@@ -5455,6 +5487,7 @@
       "date": "24 March 2022",
       "links": "links/idle-detection.json",
       "refs": "refs/idle-detection.json",
+      "events": "events/idle-detection.json",
       "idl": "idl/idle-detection.idl",
       "dfns": "dfns/idle-detection.json",
       "headings": "headings/idle-detection.json",
@@ -5508,6 +5541,7 @@
       "date": "6 May 2022",
       "links": "links/import-maps.json",
       "refs": "refs/import-maps.json",
+      "events": "events/import-maps.json",
       "dfns": "dfns/import-maps.json",
       "headings": "headings/import-maps.json",
       "ids": "ids/import-maps.json"
@@ -5871,6 +5905,7 @@
       "date": "6 October 2021",
       "links": "links/keyboard-map.json",
       "refs": "refs/keyboard-map.json",
+      "events": "events/keyboard-map.json",
       "idl": "idl/keyboard-map.idl",
       "dfns": "dfns/keyboard-map.json",
       "headings": "headings/keyboard-map.json",
@@ -6018,6 +6053,7 @@
       "date": "27 May 2022",
       "links": "links/manifest-incubations.json",
       "refs": "refs/manifest-incubations.json",
+      "events": "events/manifest-incubations.json",
       "idl": "idl/manifest-incubations.idl",
       "dfns": "dfns/manifest-incubations.json",
       "headings": "headings/manifest-incubations.json",
@@ -6116,6 +6152,7 @@
       "date": "15 June 2022",
       "links": "links/navigation-api.json",
       "refs": "refs/navigation-api.json",
+      "events": "events/navigation-api.json",
       "idl": "idl/navigation-api.idl",
       "dfns": "dfns/navigation-api.json",
       "headings": "headings/navigation-api.json",
@@ -6169,6 +6206,7 @@
       "date": "11 May 2020",
       "links": "links/netinfo.json",
       "refs": "refs/netinfo.json",
+      "events": "events/netinfo.json",
       "idl": "idl/netinfo.idl",
       "dfns": "dfns/netinfo.json",
       "headings": "headings/netinfo.json",
@@ -6268,6 +6306,7 @@
       "date": "9 June 2022",
       "links": "links/page-lifecycle.json",
       "refs": "refs/page-lifecycle.json",
+      "events": "events/page-lifecycle.json",
       "idl": "idl/page-lifecycle.idl",
       "dfns": "dfns/page-lifecycle.json",
       "headings": "headings/page-lifecycle.json",
@@ -6374,6 +6413,7 @@
       "date": "12 April 2021",
       "links": "links/periodic-background-sync.json",
       "refs": "refs/periodic-background-sync.json",
+      "events": "events/periodic-background-sync.json",
       "idl": "idl/periodic-background-sync.idl",
       "dfns": "dfns/periodic-background-sync.json",
       "headings": "headings/periodic-background-sync.json",
@@ -6533,6 +6573,7 @@
       "date": "19 April 2021",
       "links": "links/portals.json",
       "refs": "refs/portals.json",
+      "events": "events/portals.json",
       "idl": "idl/portals.idl",
       "dfns": "dfns/portals.json",
       "headings": "headings/portals.json",
@@ -6835,6 +6876,7 @@
       "date": "31 May 2022",
       "links": "links/savedata.json",
       "refs": "refs/savedata.json",
+      "events": "events/savedata.json",
       "idl": "idl/savedata.idl",
       "dfns": "dfns/savedata.json",
       "headings": "headings/savedata.json",
@@ -6888,6 +6930,7 @@
       "date": "9 February 2022",
       "links": "links/scheduling-apis.json",
       "refs": "refs/scheduling-apis.json",
+      "events": "events/scheduling-apis.json",
       "idl": "idl/scheduling-apis.idl",
       "dfns": "dfns/scheduling-apis.json",
       "headings": "headings/scheduling-apis.json",
@@ -6994,6 +7037,7 @@
       "date": "14 April 2022",
       "links": "links/serial.json",
       "refs": "refs/serial.json",
+      "events": "events/serial.json",
       "idl": "idl/serial.idl",
       "dfns": "dfns/serial.json",
       "headings": "headings/serial.json",
@@ -7192,6 +7236,7 @@
       "date": "18 August 2020",
       "links": "links/speech-api.json",
       "refs": "refs/speech-api.json",
+      "events": "events/speech-api.json",
       "idl": "idl/speech-api.idl",
       "dfns": "dfns/speech-api.json",
       "headings": "headings/speech-api.json",
@@ -7443,6 +7488,7 @@
       "date": "09 June 2022",
       "links": "links/visual-viewport.json",
       "refs": "refs/visual-viewport.json",
+      "events": "events/visual-viewport.json",
       "idl": "idl/visual-viewport.idl",
       "dfns": "dfns/visual-viewport.json",
       "headings": "headings/visual-viewport.json",
@@ -7596,6 +7642,7 @@
       "date": "24 March 2022",
       "links": "links/webhid.json",
       "refs": "refs/webhid.json",
+      "events": "events/webhid.json",
       "idl": "idl/webhid.idl",
       "dfns": "dfns/webhid.json",
       "headings": "headings/webhid.json",
@@ -7694,6 +7741,7 @@
       "date": "7 June 2022",
       "links": "links/webusb.json",
       "refs": "refs/webusb.json",
+      "events": "events/webusb.json",
       "idl": "idl/webusb.idl",
       "dfns": "dfns/webusb.json",
       "headings": "headings/webusb.json",
@@ -7741,6 +7789,7 @@
       "date": "02 February 2022",
       "links": "links/window-controls-overlay.json",
       "refs": "refs/window-controls-overlay.json",
+      "events": "events/window-controls-overlay.json",
       "idl": "idl/window-controls-overlay.idl",
       "dfns": "dfns/window-controls-overlay.json",
       "headings": "headings/window-controls-overlay.json",
@@ -9816,6 +9865,7 @@
       "dfns": "dfns/webgl1.json",
       "headings": "headings/webgl1.json",
       "ids": "ids/webgl1.json",
+      "error": "Error: Evaluation failed: WebIDLParseError: Syntax error at line 514, since `interface mixin WebGLRenderingContextBase`:\n    attribute PredefinedColorSpace drawingBufferColorSpace = \"srgb\";\n                                                           ^ Unterminated attribute, expected `;`\n    at Tokeniser.error (https://www.khronos.org/registry/webgl/specs/latest/1.0/reffy/scripts/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/node_modules/webidl2/lib/tokeniser.js:243:11)\n    at parse (https://www.khronos.org/registry/webgl/specs/latest/1.0/reffy/scripts/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/node_modules/webidl2/lib/productions/attribute.js:51:17)\n    at Container.parse (https://www.khronos.org/registry/webgl/specs/latest/1.0/reffy/scripts/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/node_modules/webidl2/lib/productions/container.js:48:28)\n    at Mixin.parse (https://www.khronos.org/registry/webgl/specs/latest/1.0/reffy/scripts/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/node_modules/webidl2/lib/productions/mixin.js:22:22)\n    at interface_ (https://www.khronos.org/registry/webgl/specs/latest/1.0/reffy/scripts/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/node_modules/webidl2/lib/webidl2.js:45:13)\n    at definition (https://www.khronos.org/registry/webgl/specs/latest/1.0/reffy/scripts/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/node_modules/webidl2/lib/webidl2.js:74:7)\n    at definitions (https://www.khronos.org/registry/webgl/specs/latest/1.0/reffy/scripts/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/node_modules/webidl2/lib/webidl2.js:89:19)\n    at parseByTokens (https://www.khronos.org/registry/webgl/specs/latest/1.0/reffy/scripts/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/node_modules/webidl2/lib/webidl2.js:103:15)\n    at parse (https://www.khronos.org/registry/webgl/specs/latest/1.0/reffy/scripts/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/node_modules/webidl2/lib/webidl2.js:122:10)\n    at Object.default [as extractEvents] (https://www.khronos.org/registry/webgl/specs/latest/1.0/reffy/scripts/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/extract-events.mjs:17:19) Error: Evaluation failed: WebIDLParseError: Syntax error at line 514, since `interface mixin WebGLRenderingContextBase`:\n    attribute PredefinedColorSpace drawingBufferColorSpace = \"srgb\";\n                                                           ^ Unterminated attribute, expected `;`\n    at Tokeniser.error (https://www.khronos.org/registry/webgl/specs/latest/1.0/reffy/scripts/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/node_modules/webidl2/lib/tokeniser.js:243:11)\n    at parse (https://www.khronos.org/registry/webgl/specs/latest/1.0/reffy/scripts/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/node_modules/webidl2/lib/productions/attribute.js:51:17)\n    at Container.parse (https://www.khronos.org/registry/webgl/specs/latest/1.0/reffy/scripts/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/node_modules/webidl2/lib/productions/container.js:48:28)\n    at Mixin.parse (https://www.khronos.org/registry/webgl/specs/latest/1.0/reffy/scripts/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/node_modules/webidl2/lib/productions/mixin.js:22:22)\n    at interface_ (https://www.khronos.org/registry/webgl/specs/latest/1.0/reffy/scripts/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/node_modules/webidl2/lib/webidl2.js:45:13)\n    at definition (https://www.khronos.org/registry/webgl/specs/latest/1.0/reffy/scripts/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/node_modules/webidl2/lib/webidl2.js:74:7)\n    at definitions (https://www.khronos.org/registry/webgl/specs/latest/1.0/reffy/scripts/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/node_modules/webidl2/lib/webidl2.js:89:19)\n    at parseByTokens (https://www.khronos.org/registry/webgl/specs/latest/1.0/reffy/scripts/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/node_modules/webidl2/lib/webidl2.js:103:15)\n    at parse (https://www.khronos.org/registry/webgl/specs/latest/1.0/reffy/scripts/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/node_modules/webidl2/lib/webidl2.js:122:10)\n    at Object.default [as extractEvents] (https://www.khronos.org/registry/webgl/specs/latest/1.0/reffy/scripts/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/extract-events.mjs:17:19)\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:658:25)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 194)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)",
       "idlparsed": "idlparsed/webgl1.json"
     },
     {
@@ -11388,6 +11438,7 @@
       "date": "03 February 2022",
       "links": "links/battery-status.json",
       "refs": "refs/battery-status.json",
+      "events": "events/battery-status.json",
       "idl": "idl/battery-status.idl",
       "dfns": "dfns/battery-status.json",
       "headings": "headings/battery-status.json",
@@ -11500,6 +11551,7 @@
       "date": "19 May 2022",
       "links": "links/capture-handle-identity.json",
       "refs": "refs/capture-handle-identity.json",
+      "events": "events/capture-handle-identity.json",
       "idl": "idl/capture-handle-identity.idl",
       "dfns": "dfns/capture-handle-identity.json",
       "headings": "headings/capture-handle-identity.json",
@@ -11920,6 +11972,7 @@
       "date": "3 May 2022",
       "links": "links/CSP3.json",
       "refs": "refs/CSP3.json",
+      "events": "events/CSP3.json",
       "idl": "idl/CSP.idl",
       "dfns": "dfns/CSP3.json",
       "headings": "headings/CSP3.json",
@@ -11983,7 +12036,8 @@
       "css": "css/css-align.json",
       "dfns": "dfns/css-align-3.json",
       "headings": "headings/css-align-3.json",
-      "ids": "ids/css-align-3.json"
+      "ids": "ids/css-align-3.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 239)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-animation-worklet-1/",
@@ -12105,6 +12159,7 @@
       "dfns": "dfns/css-animations-1.json",
       "headings": "headings/css-animations-1.json",
       "ids": "ids/css-animations-1.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 241)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)",
       "idlparsed": "idlparsed/css-animations-1.json"
     },
     {
@@ -12165,7 +12220,8 @@
       "css": "css/css-backgrounds.json",
       "dfns": "dfns/css-backgrounds-3.json",
       "headings": "headings/css-backgrounds-3.json",
-      "ids": "ids/css-backgrounds-3.json"
+      "ids": "ids/css-backgrounds-3.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 242)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-box-3/",
@@ -12224,7 +12280,8 @@
       "refs": "refs/css-box-3.json",
       "dfns": "dfns/css-box-3.json",
       "headings": "headings/css-box-3.json",
-      "ids": "ids/css-box-3.json"
+      "ids": "ids/css-box-3.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 243)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-box-4/",
@@ -12284,7 +12341,8 @@
       "css": "css/css-box.json",
       "dfns": "dfns/css-box-4.json",
       "headings": "headings/css-box-4.json",
-      "ids": "ids/css-box-4.json"
+      "ids": "ids/css-box-4.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 244)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-break-3/",
@@ -12343,7 +12401,8 @@
       "refs": "refs/css-break-3.json",
       "dfns": "dfns/css-break-3.json",
       "headings": "headings/css-break-3.json",
-      "ids": "ids/css-break-3.json"
+      "ids": "ids/css-break-3.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 245)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-break-4/",
@@ -12403,7 +12462,8 @@
       "css": "css/css-break.json",
       "dfns": "dfns/css-break-4.json",
       "headings": "headings/css-break-4.json",
-      "ids": "ids/css-break-4.json"
+      "ids": "ids/css-break-4.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 246)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-cascade-3/",
@@ -12462,7 +12522,8 @@
       "refs": "refs/css-cascade-3.json",
       "dfns": "dfns/css-cascade-3.json",
       "headings": "headings/css-cascade-3.json",
-      "ids": "ids/css-cascade-3.json"
+      "ids": "ids/css-cascade-3.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 247)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-cascade-4/",
@@ -12522,7 +12583,8 @@
       "refs": "refs/css-cascade-4.json",
       "dfns": "dfns/css-cascade-4.json",
       "headings": "headings/css-cascade-4.json",
-      "ids": "ids/css-cascade-4.json"
+      "ids": "ids/css-cascade-4.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 248)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-cascade-5/",
@@ -12585,6 +12647,7 @@
       "dfns": "dfns/css-cascade-5.json",
       "headings": "headings/css-cascade-5.json",
       "ids": "ids/css-cascade-5.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 249)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)",
       "idlparsed": "idlparsed/css-cascade-5.json"
     },
     {
@@ -12645,7 +12708,8 @@
       "css": "css/css-cascade-6.json",
       "dfns": "dfns/css-cascade-6.json",
       "headings": "headings/css-cascade-6.json",
-      "ids": "ids/css-cascade-6.json"
+      "ids": "ids/css-cascade-6.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 250)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-color-4/",
@@ -12705,7 +12769,8 @@
       "css": "css/css-color.json",
       "dfns": "dfns/css-color-4.json",
       "headings": "headings/css-color-4.json",
-      "ids": "ids/css-color-4.json"
+      "ids": "ids/css-color-4.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 251)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-color-5/",
@@ -12765,7 +12830,8 @@
       "css": "css/css-color-5.json",
       "dfns": "dfns/css-color-5.json",
       "headings": "headings/css-color-5.json",
-      "ids": "ids/css-color-5.json"
+      "ids": "ids/css-color-5.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 252)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-color-adjust-1/",
@@ -12824,7 +12890,8 @@
       "css": "css/css-color-adjust.json",
       "dfns": "dfns/css-color-adjust-1.json",
       "headings": "headings/css-color-adjust-1.json",
-      "ids": "ids/css-color-adjust-1.json"
+      "ids": "ids/css-color-adjust-1.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 253)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-conditional-3/",
@@ -12886,6 +12953,7 @@
       "dfns": "dfns/css-conditional-3.json",
       "headings": "headings/css-conditional-3.json",
       "ids": "ids/css-conditional-3.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 254)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)",
       "idlparsed": "idlparsed/css-conditional-3.json"
     },
     {
@@ -12947,7 +13015,8 @@
       "css": "css/css-conditional-4.json",
       "dfns": "dfns/css-conditional-4.json",
       "headings": "headings/css-conditional-4.json",
-      "ids": "ids/css-conditional-4.json"
+      "ids": "ids/css-conditional-4.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 255)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-conditional-5/",
@@ -13007,7 +13076,8 @@
       "css": "css/css-conditional-5.json",
       "dfns": "dfns/css-conditional-5.json",
       "headings": "headings/css-conditional-5.json",
-      "ids": "ids/css-conditional-5.json"
+      "ids": "ids/css-conditional-5.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 256)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-contain-2/",
@@ -13067,7 +13137,8 @@
       "css": "css/css-contain.json",
       "dfns": "dfns/css-contain-2.json",
       "headings": "headings/css-contain-2.json",
-      "ids": "ids/css-contain-2.json"
+      "ids": "ids/css-contain-2.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 257)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-contain-3/",
@@ -13129,6 +13200,7 @@
       "dfns": "dfns/css-contain-3.json",
       "headings": "headings/css-contain-3.json",
       "ids": "ids/css-contain-3.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 258)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)",
       "idlparsed": "idlparsed/css-contain-3.json"
     },
     {
@@ -13188,7 +13260,8 @@
       "css": "css/css-content.json",
       "dfns": "dfns/css-content-3.json",
       "headings": "headings/css-content-3.json",
-      "ids": "ids/css-content-3.json"
+      "ids": "ids/css-content-3.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 259)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-counter-styles-3/",
@@ -13249,6 +13322,7 @@
       "dfns": "dfns/css-counter-styles-3.json",
       "headings": "headings/css-counter-styles-3.json",
       "ids": "ids/css-counter-styles-3.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 260)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)",
       "idlparsed": "idlparsed/css-counter-styles-3.json"
     },
     {
@@ -13310,6 +13384,7 @@
       "dfns": "dfns/css-device-adapt-1.json",
       "headings": "headings/css-device-adapt-1.json",
       "ids": "ids/css-device-adapt-1.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 261)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)",
       "idlparsed": "idlparsed/css-device-adapt-1.json"
     },
     {
@@ -13369,7 +13444,8 @@
       "css": "css/css-display.json",
       "dfns": "dfns/css-display-3.json",
       "headings": "headings/css-display-3.json",
-      "ids": "ids/css-display-3.json"
+      "ids": "ids/css-display-3.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 262)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-easing-1/",
@@ -13428,7 +13504,8 @@
       "css": "css/css-easing.json",
       "dfns": "dfns/css-easing-1.json",
       "headings": "headings/css-easing-1.json",
-      "ids": "ids/css-easing-1.json"
+      "ids": "ids/css-easing-1.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 263)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-flexbox-1/",
@@ -13487,7 +13564,8 @@
       "css": "css/css-flexbox.json",
       "dfns": "dfns/css-flexbox-1.json",
       "headings": "headings/css-flexbox-1.json",
-      "ids": "ids/css-flexbox-1.json"
+      "ids": "ids/css-flexbox-1.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 264)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-font-loading-3/",
@@ -13547,6 +13625,7 @@
       "dfns": "dfns/css-font-loading-3.json",
       "headings": "headings/css-font-loading-3.json",
       "ids": "ids/css-font-loading-3.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 265)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)",
       "idlparsed": "idlparsed/css-font-loading-3.json"
     },
     {
@@ -13611,6 +13690,7 @@
       "dfns": "dfns/css-fonts-4.json",
       "headings": "headings/css-fonts-4.json",
       "ids": "ids/css-fonts-4.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 266)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)",
       "idlparsed": "idlparsed/css-fonts-4.json"
     },
     {
@@ -13671,7 +13751,8 @@
       "css": "css/css-fonts-5.json",
       "dfns": "dfns/css-fonts-5.json",
       "headings": "headings/css-fonts-5.json",
-      "ids": "ids/css-fonts-5.json"
+      "ids": "ids/css-fonts-5.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 267)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-gcpm-3/",
@@ -13731,7 +13812,8 @@
       "css": "css/css-gcpm.json",
       "dfns": "dfns/css-gcpm-3.json",
       "headings": "headings/css-gcpm-3.json",
-      "ids": "ids/css-gcpm-3.json"
+      "ids": "ids/css-gcpm-3.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 268)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-grid-2/",
@@ -13791,7 +13873,8 @@
       "css": "css/css-grid.json",
       "dfns": "dfns/css-grid-2.json",
       "headings": "headings/css-grid-2.json",
-      "ids": "ids/css-grid-2.json"
+      "ids": "ids/css-grid-2.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 269)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-highlight-api-1/",
@@ -13845,6 +13928,7 @@
       "dfns": "dfns/css-highlight-api-1.json",
       "headings": "headings/css-highlight-api-1.json",
       "ids": "ids/css-highlight-api-1.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 270)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)",
       "idlparsed": "idlparsed/css-highlight-api-1.json"
     },
     {
@@ -13905,7 +13989,8 @@
       "css": "css/css-images.json",
       "dfns": "dfns/css-images-3.json",
       "headings": "headings/css-images-3.json",
-      "ids": "ids/css-images-3.json"
+      "ids": "ids/css-images-3.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 271)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-images-4/",
@@ -13967,6 +14052,7 @@
       "dfns": "dfns/css-images-4.json",
       "headings": "headings/css-images-4.json",
       "ids": "ids/css-images-4.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 272)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)",
       "idlparsed": "idlparsed/css-images-4.json"
     },
     {
@@ -14026,7 +14112,8 @@
       "css": "css/css-inline.json",
       "dfns": "dfns/css-inline-3.json",
       "headings": "headings/css-inline-3.json",
-      "ids": "ids/css-inline-3.json"
+      "ids": "ids/css-inline-3.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 273)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-layout-api-1/",
@@ -14140,7 +14227,8 @@
       "css": "css/css-line-grid.json",
       "dfns": "dfns/css-line-grid-1.json",
       "headings": "headings/css-line-grid-1.json",
-      "ids": "ids/css-line-grid-1.json"
+      "ids": "ids/css-line-grid-1.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 275)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-lists-3/",
@@ -14199,7 +14287,8 @@
       "css": "css/css-lists.json",
       "dfns": "dfns/css-lists-3.json",
       "headings": "headings/css-lists-3.json",
-      "ids": "ids/css-lists-3.json"
+      "ids": "ids/css-lists-3.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 276)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-logical-1/",
@@ -14258,7 +14347,8 @@
       "css": "css/css-logical.json",
       "dfns": "dfns/css-logical-1.json",
       "headings": "headings/css-logical-1.json",
-      "ids": "ids/css-logical-1.json"
+      "ids": "ids/css-logical-1.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 277)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-masking-1/",
@@ -14380,7 +14470,8 @@
       "css": "css/css-multicol.json",
       "dfns": "dfns/css-multicol-1.json",
       "headings": "headings/css-multicol-1.json",
-      "ids": "ids/css-multicol-1.json"
+      "ids": "ids/css-multicol-1.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 279)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-namespaces-3/",
@@ -14439,7 +14530,8 @@
       "css": "css/css-namespaces.json",
       "dfns": "dfns/css-namespaces-3.json",
       "headings": "headings/css-namespaces-3.json",
-      "ids": "ids/css-namespaces-3.json"
+      "ids": "ids/css-namespaces-3.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 280)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-nav-1/",
@@ -14494,6 +14586,7 @@
       "dfns": "dfns/css-nav-1.json",
       "headings": "headings/css-nav-1.json",
       "ids": "ids/css-nav-1.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 281)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)",
       "idlparsed": "idlparsed/css-nav-1.json"
     },
     {
@@ -14548,6 +14641,7 @@
       "dfns": "dfns/css-nesting-1.json",
       "headings": "headings/css-nesting-1.json",
       "ids": "ids/css-nesting-1.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 282)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)",
       "idlparsed": "idlparsed/css-nesting-1.json"
     },
     {
@@ -14608,7 +14702,8 @@
       "css": "css/css-overflow.json",
       "dfns": "dfns/css-overflow-3.json",
       "headings": "headings/css-overflow-3.json",
-      "ids": "ids/css-overflow-3.json"
+      "ids": "ids/css-overflow-3.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 283)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-overflow-4/",
@@ -14668,7 +14763,8 @@
       "css": "css/css-overflow-4.json",
       "dfns": "dfns/css-overflow-4.json",
       "headings": "headings/css-overflow-4.json",
-      "ids": "ids/css-overflow-4.json"
+      "ids": "ids/css-overflow-4.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 284)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-overscroll-1/",
@@ -14727,7 +14823,8 @@
       "css": "css/css-overscroll.json",
       "dfns": "dfns/css-overscroll-1.json",
       "headings": "headings/css-overscroll-1.json",
-      "ids": "ids/css-overscroll-1.json"
+      "ids": "ids/css-overscroll-1.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 285)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-page-3/",
@@ -14787,7 +14884,8 @@
       "css": "css/css-page.json",
       "dfns": "dfns/css-page-3.json",
       "headings": "headings/css-page-3.json",
-      "ids": "ids/css-page-3.json"
+      "ids": "ids/css-page-3.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 286)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-page-floats-3/",
@@ -14840,7 +14938,8 @@
       "css": "css/css-page-floats.json",
       "dfns": "dfns/css-page-floats-3.json",
       "headings": "headings/css-page-floats-3.json",
-      "ids": "ids/css-page-floats-3.json"
+      "ids": "ids/css-page-floats-3.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 287)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-paint-api-1/",
@@ -14960,7 +15059,8 @@
       "css": "css/css-position.json",
       "dfns": "dfns/css-position-3.json",
       "headings": "headings/css-position-3.json",
-      "ids": "ids/css-position-3.json"
+      "ids": "ids/css-position-3.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 289)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-properties-values-api-1/",
@@ -15085,6 +15185,7 @@
       "dfns": "dfns/css-pseudo-4.json",
       "headings": "headings/css-pseudo-4.json",
       "ids": "ids/css-pseudo-4.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 291)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)",
       "idlparsed": "idlparsed/css-pseudo-4.json"
     },
     {
@@ -15140,6 +15241,7 @@
       "dfns": "dfns/css-regions-1.json",
       "headings": "headings/css-regions-1.json",
       "ids": "ids/css-regions-1.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 292)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)",
       "idlparsed": "idlparsed/css-regions-1.json"
     },
     {
@@ -15193,7 +15295,8 @@
       "css": "css/css-rhythm.json",
       "dfns": "dfns/css-rhythm-1.json",
       "headings": "headings/css-rhythm-1.json",
-      "ids": "ids/css-rhythm-1.json"
+      "ids": "ids/css-rhythm-1.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 293)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-round-display-1/",
@@ -15252,7 +15355,8 @@
       "css": "css/css-round-display.json",
       "dfns": "dfns/css-round-display-1.json",
       "headings": "headings/css-round-display-1.json",
-      "ids": "ids/css-round-display-1.json"
+      "ids": "ids/css-round-display-1.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 294)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-ruby-1/",
@@ -15311,7 +15415,8 @@
       "css": "css/css-ruby.json",
       "dfns": "dfns/css-ruby-1.json",
       "headings": "headings/css-ruby-1.json",
-      "ids": "ids/css-ruby-1.json"
+      "ids": "ids/css-ruby-1.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 295)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-scoping-1/",
@@ -15369,7 +15474,8 @@
       "refs": "refs/css-scoping-1.json",
       "dfns": "dfns/css-scoping-1.json",
       "headings": "headings/css-scoping-1.json",
-      "ids": "ids/css-scoping-1.json"
+      "ids": "ids/css-scoping-1.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 296)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-scroll-anchoring-1/",
@@ -15428,7 +15534,8 @@
       "css": "css/css-scroll-anchoring.json",
       "dfns": "dfns/css-scroll-anchoring-1.json",
       "headings": "headings/css-scroll-anchoring-1.json",
-      "ids": "ids/css-scroll-anchoring-1.json"
+      "ids": "ids/css-scroll-anchoring-1.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 297)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-scroll-snap-1/",
@@ -15488,7 +15595,8 @@
       "css": "css/css-scroll-snap.json",
       "dfns": "dfns/css-scroll-snap-1.json",
       "headings": "headings/css-scroll-snap-1.json",
-      "ids": "ids/css-scroll-snap-1.json"
+      "ids": "ids/css-scroll-snap-1.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 298)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-scrollbars-1/",
@@ -15547,7 +15655,8 @@
       "css": "css/css-scrollbars.json",
       "dfns": "dfns/css-scrollbars-1.json",
       "headings": "headings/css-scrollbars-1.json",
-      "ids": "ids/css-scrollbars-1.json"
+      "ids": "ids/css-scrollbars-1.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 299)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-shadow-parts-1/",
@@ -15608,6 +15717,7 @@
       "dfns": "dfns/css-shadow-parts-1.json",
       "headings": "headings/css-shadow-parts-1.json",
       "ids": "ids/css-shadow-parts-1.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 300)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)",
       "idlparsed": "idlparsed/css-shadow-parts-1.json"
     },
     {
@@ -15668,7 +15778,8 @@
       "css": "css/css-shapes.json",
       "dfns": "dfns/css-shapes-1.json",
       "headings": "headings/css-shapes-1.json",
-      "ids": "ids/css-shapes-1.json"
+      "ids": "ids/css-shapes-1.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 301)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-sizing-3/",
@@ -15728,7 +15839,8 @@
       "css": "css/css-sizing.json",
       "dfns": "dfns/css-sizing-3.json",
       "headings": "headings/css-sizing-3.json",
-      "ids": "ids/css-sizing-3.json"
+      "ids": "ids/css-sizing-3.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 302)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-sizing-4/",
@@ -15788,7 +15900,8 @@
       "css": "css/css-sizing-4.json",
       "dfns": "dfns/css-sizing-4.json",
       "headings": "headings/css-sizing-4.json",
-      "ids": "ids/css-sizing-4.json"
+      "ids": "ids/css-sizing-4.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 303)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-speech-1/",
@@ -15847,7 +15960,8 @@
       "css": "css/css-speech.json",
       "dfns": "dfns/css-speech-1.json",
       "headings": "headings/css-speech-1.json",
-      "ids": "ids/css-speech-1.json"
+      "ids": "ids/css-speech-1.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 304)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-style-attr/",
@@ -15963,7 +16077,8 @@
       "css": "css/css-syntax.json",
       "dfns": "dfns/css-syntax-3.json",
       "headings": "headings/css-syntax-3.json",
-      "ids": "ids/css-syntax-3.json"
+      "ids": "ids/css-syntax-3.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 306)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-tables-3/",
@@ -16022,7 +16137,8 @@
       "css": "css/css-tables.json",
       "dfns": "dfns/css-tables-3.json",
       "headings": "headings/css-tables-3.json",
-      "ids": "ids/css-tables-3.json"
+      "ids": "ids/css-tables-3.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 307)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-text-3/",
@@ -16082,7 +16198,8 @@
       "css": "css/css-text.json",
       "dfns": "dfns/css-text-3.json",
       "headings": "headings/css-text-3.json",
-      "ids": "ids/css-text-3.json"
+      "ids": "ids/css-text-3.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 308)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-text-4/",
@@ -16142,7 +16259,8 @@
       "css": "css/css-text-4.json",
       "dfns": "dfns/css-text-4.json",
       "headings": "headings/css-text-4.json",
-      "ids": "ids/css-text-4.json"
+      "ids": "ids/css-text-4.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 309)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-text-decor-3/",
@@ -16202,7 +16320,8 @@
       "css": "css/css-text-decor.json",
       "dfns": "dfns/css-text-decor-3.json",
       "headings": "headings/css-text-decor-3.json",
-      "ids": "ids/css-text-decor-3.json"
+      "ids": "ids/css-text-decor-3.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 310)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-text-decor-4/",
@@ -16262,7 +16381,8 @@
       "css": "css/css-text-decor-4.json",
       "dfns": "dfns/css-text-decor-4.json",
       "headings": "headings/css-text-decor-4.json",
-      "ids": "ids/css-text-decor-4.json"
+      "ids": "ids/css-text-decor-4.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 311)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-transforms-1/",
@@ -16322,7 +16442,8 @@
       "css": "css/css-transforms.json",
       "dfns": "dfns/css-transforms-1.json",
       "headings": "headings/css-transforms-1.json",
-      "ids": "ids/css-transforms-1.json"
+      "ids": "ids/css-transforms-1.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 312)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-transforms-2/",
@@ -16382,7 +16503,8 @@
       "css": "css/css-transforms-2.json",
       "dfns": "dfns/css-transforms-2.json",
       "headings": "headings/css-transforms-2.json",
-      "ids": "ids/css-transforms-2.json"
+      "ids": "ids/css-transforms-2.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 313)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-transitions-1/",
@@ -16444,6 +16566,7 @@
       "dfns": "dfns/css-transitions-1.json",
       "headings": "headings/css-transitions-1.json",
       "ids": "ids/css-transitions-1.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 314)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)",
       "idlparsed": "idlparsed/css-transitions-1.json"
     },
     {
@@ -16568,7 +16691,8 @@
       "css": "css/css-ui.json",
       "dfns": "dfns/css-ui-4.json",
       "headings": "headings/css-ui-4.json",
-      "ids": "ids/css-ui-4.json"
+      "ids": "ids/css-ui-4.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 316)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-values-3/",
@@ -16629,7 +16753,8 @@
       "refs": "refs/css-values-3.json",
       "dfns": "dfns/css-values-3.json",
       "headings": "headings/css-values-3.json",
-      "ids": "ids/css-values-3.json"
+      "ids": "ids/css-values-3.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 317)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-values-4/",
@@ -16690,7 +16815,8 @@
       "css": "css/css-values.json",
       "dfns": "dfns/css-values-4.json",
       "headings": "headings/css-values-4.json",
-      "ids": "ids/css-values-4.json"
+      "ids": "ids/css-values-4.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 318)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-variables-1/",
@@ -16749,7 +16875,8 @@
       "css": "css/css-variables.json",
       "dfns": "dfns/css-variables-1.json",
       "headings": "headings/css-variables-1.json",
-      "ids": "ids/css-variables-1.json"
+      "ids": "ids/css-variables-1.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 319)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-will-change-1/",
@@ -16808,7 +16935,8 @@
       "css": "css/css-will-change.json",
       "dfns": "dfns/css-will-change-1.json",
       "headings": "headings/css-will-change-1.json",
-      "ids": "ids/css-will-change-1.json"
+      "ids": "ids/css-will-change-1.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 320)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-writing-modes-4/",
@@ -16867,7 +16995,8 @@
       "css": "css/css-writing-modes.json",
       "dfns": "dfns/css-writing-modes-4.json",
       "headings": "headings/css-writing-modes-4.json",
-      "ids": "ids/css-writing-modes-4.json"
+      "ids": "ids/css-writing-modes-4.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 321)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/CSS21/",
@@ -16955,7 +17084,8 @@
       "refs": "refs/CSS21.json",
       "dfns": "dfns/CSS21.json",
       "headings": "headings/CSS21.json",
-      "ids": "ids/CSS21.json"
+      "ids": "ids/CSS21.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 322)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/CSS22/",
@@ -17045,7 +17175,7 @@
       "dfns": "dfns/CSS22.json",
       "headings": "headings/CSS22.json",
       "ids": "ids/CSS22.json",
-      "error": "Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers' Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers'\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:483:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 323)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 323)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/css3-exclusions/",
@@ -17104,7 +17234,8 @@
       "css": "css/css-exclusions.json",
       "dfns": "dfns/css3-exclusions.json",
       "headings": "headings/css3-exclusions.json",
-      "ids": "ids/css3-exclusions.json"
+      "ids": "ids/css3-exclusions.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 324)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/cssom-1/",
@@ -17164,6 +17295,7 @@
       "dfns": "dfns/cssom-1.json",
       "headings": "headings/cssom-1.json",
       "ids": "ids/cssom-1.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 325)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)",
       "idlparsed": "idlparsed/cssom-1.json"
     },
     {
@@ -17225,6 +17357,7 @@
       "dfns": "dfns/cssom-view-1.json",
       "headings": "headings/cssom-view-1.json",
       "ids": "ids/cssom-view-1.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 326)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)",
       "idlparsed": "idlparsed/cssom-view-1.json"
     },
     {
@@ -17334,6 +17467,7 @@
       "date": "04 November 2021",
       "links": "links/device-posture.json",
       "refs": "refs/device-posture.json",
+      "events": "events/device-posture.json",
       "idl": "idl/device-posture.idl",
       "dfns": "dfns/device-posture.json",
       "headings": "headings/device-posture.json",
@@ -17446,6 +17580,7 @@
       "date": "20 December 2021",
       "links": "links/edit-context.json",
       "refs": "refs/edit-context.json",
+      "events": "events/edit-context.json",
       "idl": "idl/edit-context.idl",
       "dfns": "dfns/edit-context.json",
       "headings": "headings/edit-context.json",
@@ -17564,6 +17699,7 @@
       "date": "16 March 2022",
       "links": "links/encrypted-media.json",
       "refs": "refs/encrypted-media.json",
+      "events": "events/encrypted-media.json",
       "idl": "idl/encrypted-media.idl",
       "dfns": "dfns/encrypted-media.json",
       "headings": "headings/encrypted-media.json",
@@ -17835,6 +17971,7 @@
       "date": "4 June 2021",
       "links": "links/FileAPI.json",
       "refs": "refs/FileAPI.json",
+      "events": "events/FileAPI.json",
       "idl": "idl/FileAPI.idl",
       "dfns": "dfns/FileAPI.json",
       "headings": "headings/FileAPI.json",
@@ -18071,6 +18208,7 @@
       "date": "07 June 2022",
       "links": "links/gamepad.json",
       "refs": "refs/gamepad.json",
+      "events": "events/gamepad.json",
       "idl": "idl/gamepad.idl",
       "dfns": "dfns/gamepad.json",
       "headings": "headings/gamepad.json",
@@ -18130,6 +18268,7 @@
       "date": "7 June 2022",
       "links": "links/generic-sensor.json",
       "refs": "refs/generic-sensor.json",
+      "events": "events/generic-sensor.json",
       "idl": "idl/generic-sensor.idl",
       "dfns": "dfns/generic-sensor.json",
       "headings": "headings/generic-sensor.json",
@@ -18971,6 +19110,7 @@
       "date": "8 June 2022",
       "links": "links/IndexedDB-3.json",
       "refs": "refs/IndexedDB-3.json",
+      "events": "events/IndexedDB-3.json",
       "idl": "idl/IndexedDB.idl",
       "dfns": "dfns/IndexedDB-3.json",
       "headings": "headings/IndexedDB-3.json",
@@ -19498,6 +19638,7 @@
       "date": "19 May 2022",
       "links": "links/media-source-2.json",
       "refs": "refs/media-source-2.json",
+      "events": "events/media-source-2.json",
       "idl": "idl/media-source.idl",
       "dfns": "dfns/media-source-2.json",
       "headings": "headings/media-source-2.json",
@@ -19670,6 +19811,7 @@
       "date": "10 June 2022",
       "links": "links/mediacapture-streams.json",
       "refs": "refs/mediacapture-streams.json",
+      "events": "events/mediacapture-streams.json",
       "idl": "idl/mediacapture-streams.idl",
       "dfns": "dfns/mediacapture-streams.json",
       "headings": "headings/mediacapture-streams.json",
@@ -19840,7 +19982,8 @@
       "css": "css/mediaqueries.json",
       "dfns": "dfns/mediaqueries-4.json",
       "headings": "headings/mediaqueries-4.json",
-      "ids": "ids/mediaqueries-4.json"
+      "ids": "ids/mediaqueries-4.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 372)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/mediaqueries-5/",
@@ -19900,7 +20043,8 @@
       "css": "css/mediaqueries-5.json",
       "dfns": "dfns/mediaqueries-5.json",
       "headings": "headings/mediaqueries-5.json",
-      "ids": "ids/mediaqueries-5.json"
+      "ids": "ids/mediaqueries-5.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 373)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/mediasession/",
@@ -20014,6 +20158,7 @@
       "date": "16 February 2021",
       "links": "links/mediastream-recording.json",
       "refs": "refs/mediastream-recording.json",
+      "events": "events/mediastream-recording.json",
       "idl": "idl/mediastream-recording.idl",
       "dfns": "dfns/mediastream-recording.json",
       "headings": "headings/mediastream-recording.json",
@@ -20565,6 +20710,7 @@
       "date": "10 June 2022",
       "links": "links/orientation-event.json",
       "refs": "refs/orientation-event.json",
+      "events": "events/orientation-event.json",
       "idl": "idl/orientation-event.idl",
       "dfns": "dfns/orientation-event.json",
       "headings": "headings/orientation-event.json",
@@ -20742,6 +20888,7 @@
       "date": "04 October 2021",
       "links": "links/payment-handler.json",
       "refs": "refs/payment-handler.json",
+      "events": "events/payment-handler.json",
       "idl": "idl/payment-handler.idl",
       "dfns": "dfns/payment-handler.json",
       "headings": "headings/payment-handler.json",
@@ -20964,6 +21111,7 @@
       "date": "20 May 2022",
       "links": "links/payment-request.json",
       "refs": "refs/payment-request.json",
+      "events": "events/payment-request.json",
       "idl": "idl/payment-request.idl",
       "dfns": "dfns/payment-request.json",
       "headings": "headings/payment-request.json",
@@ -21142,6 +21290,7 @@
       "date": "27 May 2022",
       "links": "links/permissions.json",
       "refs": "refs/permissions.json",
+      "events": "events/permissions.json",
       "idl": "idl/permissions.idl",
       "dfns": "dfns/permissions.json",
       "headings": "headings/permissions.json",
@@ -21201,6 +21350,7 @@
       "date": "9 June 2022",
       "links": "links/picture-in-picture.json",
       "refs": "refs/picture-in-picture.json",
+      "events": "events/picture-in-picture.json",
       "idl": "idl/picture-in-picture.idl",
       "dfns": "dfns/picture-in-picture.json",
       "headings": "headings/picture-in-picture.json",
@@ -21261,6 +21411,7 @@
       "date": "08 June 2022",
       "links": "links/pointerevents3.json",
       "refs": "refs/pointerevents3.json",
+      "events": "events/pointerevents3.json",
       "idl": "idl/pointerevents.idl",
       "dfns": "dfns/pointerevents3.json",
       "headings": "headings/pointerevents3.json",
@@ -21322,6 +21473,7 @@
       "date": "17 November 2021",
       "links": "links/pointerlock-2.json",
       "refs": "refs/pointerlock-2.json",
+      "events": "events/pointerlock-2.json",
       "idl": "idl/pointerlock.idl",
       "dfns": "dfns/pointerlock-2.json",
       "headings": "headings/pointerlock-2.json",
@@ -21381,6 +21533,7 @@
       "date": "02 June 2022",
       "links": "links/presentation-api.json",
       "refs": "refs/presentation-api.json",
+      "events": "events/presentation-api.json",
       "idl": "idl/presentation-api.idl",
       "dfns": "dfns/presentation-api.json",
       "headings": "headings/presentation-api.json",
@@ -21499,6 +21652,7 @@
       "date": "02 June 2022",
       "links": "links/push-api.json",
       "refs": "refs/push-api.json",
+      "events": "events/push-api.json",
       "idl": "idl/push-api.idl",
       "dfns": "dfns/push-api.json",
       "headings": "headings/push-api.json",
@@ -21617,6 +21771,7 @@
       "date": "08 June 2022",
       "links": "links/remote-playback.json",
       "refs": "refs/remote-playback.json",
+      "events": "events/remote-playback.json",
       "idl": "idl/remote-playback.idl",
       "dfns": "dfns/remote-playback.json",
       "headings": "headings/remote-playback.json",
@@ -21800,6 +21955,7 @@
       "dfns": "dfns/resize-observer-1.json",
       "headings": "headings/resize-observer-1.json",
       "ids": "ids/resize-observer-1.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 406)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)",
       "idlparsed": "idlparsed/resize-observer-1.json"
     },
     {
@@ -21909,6 +22065,7 @@
       "date": "13 April 2022",
       "links": "links/resource-timing-2.json",
       "refs": "refs/resource-timing-2.json",
+      "events": "events/resource-timing-2.json",
       "idl": "idl/resource-timing.idl",
       "dfns": "dfns/resource-timing-2.json",
       "headings": "headings/resource-timing-2.json",
@@ -22027,6 +22184,7 @@
       "date": "18 May 2022",
       "links": "links/screen-orientation.json",
       "refs": "refs/screen-orientation.json",
+      "events": "events/screen-orientation.json",
       "idl": "idl/screen-orientation.idl",
       "dfns": "dfns/screen-orientation.json",
       "headings": "headings/screen-orientation.json",
@@ -22086,6 +22244,7 @@
       "date": "30 May 2022",
       "links": "links/screen-wake-lock.json",
       "refs": "refs/screen-wake-lock.json",
+      "events": "events/screen-wake-lock.json",
       "idl": "idl/screen-wake-lock.idl",
       "dfns": "dfns/screen-wake-lock.json",
       "headings": "headings/screen-wake-lock.json",
@@ -22261,6 +22420,7 @@
       "date": "24 July 2021",
       "links": "links/selection-api.json",
       "refs": "refs/selection-api.json",
+      "events": "events/selection-api.json",
       "idl": "idl/selection-api.idl",
       "dfns": "dfns/selection-api.json",
       "headings": "headings/selection-api.json",
@@ -22324,7 +22484,8 @@
       "css": "css/selectors.json",
       "dfns": "dfns/selectors-4.json",
       "headings": "headings/selectors-4.json",
-      "ids": "ids/selectors-4.json"
+      "ids": "ids/selectors-4.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 415)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/server-timing/",
@@ -22440,6 +22601,7 @@
       "date": "14 June 2022",
       "links": "links/service-workers-1.json",
       "refs": "refs/service-workers-1.json",
+      "events": "events/service-workers-1.json",
       "idl": "idl/service-workers.idl",
       "dfns": "dfns/service-workers-1.json",
       "headings": "headings/service-workers-1.json",
@@ -22797,7 +22959,8 @@
       "refs": "refs/SVG11.json",
       "elements": "elements/SVG11.json",
       "headings": "headings/SVG11.json",
-      "ids": "ids/SVG11.json"
+      "ids": "ids/SVG11.json",
+      "error": "Error: Evaluation failed: WebIDLParseError: Syntax error at line 2, since `interface SVGElement`:\n           attribute DOMString id setraises(DOMException);\n                                  ^ Unterminated attribute, expected `;`\n    at Tokeniser.error (https://www.w3.org/TR/SVG11/reffy/scripts/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/node_modules/webidl2/lib/tokeniser.js:243:11)\n    at parse (https://www.w3.org/TR/SVG11/reffy/scripts/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/node_modules/webidl2/lib/productions/attribute.js:51:17)\n    at Container.parse (https://www.w3.org/TR/SVG11/reffy/scripts/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/node_modules/webidl2/lib/productions/container.js:48:28)\n    at Interface.parse (https://www.w3.org/TR/SVG11/reffy/scripts/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/node_modules/webidl2/lib/productions/interface.js:40:22)\n    at interface_ (https://www.w3.org/TR/SVG11/reffy/scripts/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/node_modules/webidl2/lib/webidl2.js:46:17)\n    at definition (https://www.w3.org/TR/SVG11/reffy/scripts/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/node_modules/webidl2/lib/webidl2.js:74:7)\n    at definitions (https://www.w3.org/TR/SVG11/reffy/scripts/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/node_modules/webidl2/lib/webidl2.js:89:19)\n    at parseByTokens (https://www.w3.org/TR/SVG11/reffy/scripts/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/node_modules/webidl2/lib/webidl2.js:103:15)\n    at parse (https://www.w3.org/TR/SVG11/reffy/scripts/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/node_modules/webidl2/lib/webidl2.js:122:10)\n    at Object.default [as extractEvents] (https://www.w3.org/TR/SVG11/reffy/scripts/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/extract-events.mjs:17:19) Error: Evaluation failed: WebIDLParseError: Syntax error at line 2, since `interface SVGElement`:\n           attribute DOMString id setraises(DOMException);\n                                  ^ Unterminated attribute, expected `;`\n    at Tokeniser.error (https://www.w3.org/TR/SVG11/reffy/scripts/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/node_modules/webidl2/lib/tokeniser.js:243:11)\n    at parse (https://www.w3.org/TR/SVG11/reffy/scripts/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/node_modules/webidl2/lib/productions/attribute.js:51:17)\n    at Container.parse (https://www.w3.org/TR/SVG11/reffy/scripts/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/node_modules/webidl2/lib/productions/container.js:48:28)\n    at Interface.parse (https://www.w3.org/TR/SVG11/reffy/scripts/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/node_modules/webidl2/lib/productions/interface.js:40:22)\n    at interface_ (https://www.w3.org/TR/SVG11/reffy/scripts/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/node_modules/webidl2/lib/webidl2.js:46:17)\n    at definition (https://www.w3.org/TR/SVG11/reffy/scripts/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/node_modules/webidl2/lib/webidl2.js:74:7)\n    at definitions (https://www.w3.org/TR/SVG11/reffy/scripts/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/node_modules/webidl2/lib/webidl2.js:89:19)\n    at parseByTokens (https://www.w3.org/TR/SVG11/reffy/scripts/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/node_modules/webidl2/lib/webidl2.js:103:15)\n    at parse (https://www.w3.org/TR/SVG11/reffy/scripts/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/node_modules/webidl2/lib/webidl2.js:122:10)\n    at Object.default [as extractEvents] (https://www.w3.org/TR/SVG11/reffy/scripts/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/extract-events.mjs:17:19)\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:658:25)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 422)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/SVG2/",
@@ -23031,6 +23194,7 @@
       "date": "03 June 2022",
       "links": "links/touch-events.json",
       "refs": "refs/touch-events.json",
+      "events": "events/touch-events.json",
       "idl": "idl/touch-events.idl",
       "dfns": "dfns/touch-events.json",
       "headings": "headings/touch-events.json",
@@ -23243,6 +23407,7 @@
       "date": "1 June 2022",
       "links": "links/uievents.json",
       "refs": "refs/uievents.json",
+      "events": "events/uievents.json",
       "idl": "idl/uievents.idl",
       "dfns": "dfns/uievents.json",
       "headings": "headings/uievents.json",
@@ -23472,6 +23637,7 @@
       "date": "05 May 2022",
       "links": "links/virtual-keyboard.json",
       "refs": "refs/virtual-keyboard.json",
+      "events": "events/virtual-keyboard.json",
       "idl": "idl/virtual-keyboard.idl",
       "dfns": "dfns/virtual-keyboard.json",
       "headings": "headings/virtual-keyboard.json",
@@ -23777,6 +23943,7 @@
       "dfns": "dfns/web-animations-1.json",
       "headings": "headings/web-animations-1.json",
       "ids": "ids/web-animations-1.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 438)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)",
       "idlparsed": "idlparsed/web-animations-1.json"
     },
     {
@@ -23891,6 +24058,7 @@
       "date": "3 May 2022",
       "links": "links/webaudio.json",
       "refs": "refs/webaudio.json",
+      "events": "events/webaudio.json",
       "idl": "idl/webaudio.idl",
       "dfns": "dfns/webaudio.json",
       "headings": "headings/webaudio.json",
@@ -24010,6 +24178,7 @@
       "date": "24 May 2022",
       "links": "links/webcodecs.json",
       "refs": "refs/webcodecs.json",
+      "events": "events/webcodecs.json",
       "idl": "idl/webcodecs.idl",
       "dfns": "dfns/webcodecs.json",
       "headings": "headings/webcodecs.json",
@@ -24188,6 +24357,7 @@
       "date": "16 June 2022",
       "links": "links/webgpu.json",
       "refs": "refs/webgpu.json",
+      "events": "events/webgpu.json",
       "idl": "idl/webgpu.idl",
       "dfns": "dfns/webgpu.json",
       "headings": "headings/webgpu.json",
@@ -24247,6 +24417,7 @@
       "date": "26 October 2021",
       "links": "links/webmidi.json",
       "refs": "refs/webmidi.json",
+      "events": "events/webmidi.json",
       "idl": "idl/webmidi.idl",
       "dfns": "dfns/webmidi.json",
       "headings": "headings/webmidi.json",
@@ -24365,6 +24536,7 @@
       "date": "19 May 2022",
       "links": "links/webrtc-encoded-transform.json",
       "refs": "refs/webrtc-encoded-transform.json",
+      "events": "events/webrtc-encoded-transform.json",
       "idl": "idl/webrtc-encoded-transform.idl",
       "dfns": "dfns/webrtc-encoded-transform.json",
       "headings": "headings/webrtc-encoded-transform.json",
@@ -24424,6 +24596,7 @@
       "date": "09 June 2022",
       "links": "links/webrtc-identity.json",
       "refs": "refs/webrtc-identity.json",
+      "events": "events/webrtc-identity.json",
       "idl": "idl/webrtc-identity.idl",
       "dfns": "dfns/webrtc-identity.json",
       "headings": "headings/webrtc-identity.json",
@@ -24660,6 +24833,7 @@
       "date": "07 June 2022",
       "links": "links/webrtc.json",
       "refs": "refs/webrtc.json",
+      "events": "events/webrtc.json",
       "idl": "idl/webrtc.idl",
       "dfns": "dfns/webrtc.json",
       "headings": "headings/webrtc.json",
@@ -24954,6 +25128,7 @@
       "date": "3 June 2022",
       "links": "links/webxr-dom-overlays-1.json",
       "refs": "refs/webxr-dom-overlays-1.json",
+      "events": "events/webxr-dom-overlays-1.json",
       "idl": "idl/webxr-dom-overlays.idl",
       "dfns": "dfns/webxr-dom-overlays-1.json",
       "headings": "headings/webxr-dom-overlays-1.json",
@@ -25188,6 +25363,7 @@
       "date": "3 June 2022",
       "links": "links/webxr-lighting-estimation-1.json",
       "refs": "refs/webxr-lighting-estimation-1.json",
+      "events": "events/webxr-lighting-estimation-1.json",
       "idl": "idl/webxr-lighting-estimation.idl",
       "dfns": "dfns/webxr-lighting-estimation-1.json",
       "headings": "headings/webxr-lighting-estimation-1.json",
@@ -25256,6 +25432,7 @@
       "date": "31 March 2022",
       "links": "links/webxr.json",
       "refs": "refs/webxr.json",
+      "events": "events/webxr.json",
       "idl": "idl/webxr.idl",
       "dfns": "dfns/webxr.json",
       "headings": "headings/webxr.json",
@@ -25316,6 +25493,7 @@
       "date": "26 April 2022",
       "links": "links/webxrlayers-1.json",
       "refs": "refs/webxrlayers-1.json",
+      "events": "events/webxrlayers-1.json",
       "idl": "idl/webxrlayers.idl",
       "dfns": "dfns/webxrlayers-1.json",
       "headings": "headings/webxrlayers-1.json",
@@ -25533,6 +25711,7 @@
       "date": "12 May 2022",
       "links": "links/xhr.json",
       "refs": "refs/xhr.json",
+      "events": "events/xhr.json",
       "idl": "idl/xhr.idl",
       "dfns": "dfns/xhr.json",
       "headings": "headings/xhr.json",
