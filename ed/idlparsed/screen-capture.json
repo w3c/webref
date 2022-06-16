@@ -41,8 +41,24 @@
         ],
         "extAttrs": []
       },
+      "SurfaceSwitchingPreferenceEnum": {
+        "fragment": "enum SurfaceSwitchingPreferenceEnum {\n  \"include\",\n  \"exclude\"\n};",
+        "type": "enum",
+        "name": "SurfaceSwitchingPreferenceEnum",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "include"
+          },
+          {
+            "type": "enum-value",
+            "value": "exclude"
+          }
+        ],
+        "extAttrs": []
+      },
       "DisplayMediaStreamConstraints": {
-        "fragment": "dictionary DisplayMediaStreamConstraints {\n  (boolean or MediaTrackConstraints) video = true;\n  (boolean or MediaTrackConstraints) audio = false;\n  SelfCapturePreferenceEnum selfBrowserSurface;\n  SystemAudioPreferenceEnum systemAudio;\n};",
+        "fragment": "dictionary DisplayMediaStreamConstraints {\n  (boolean or MediaTrackConstraints) video = true;\n  (boolean or MediaTrackConstraints) audio = false;\n  SelfCapturePreferenceEnum selfBrowserSurface;\n  SystemAudioPreferenceEnum systemAudio;\n  SurfaceSwitchingPreferenceEnum surfaceSwitching;\n};",
         "type": "dictionary",
         "name": "DisplayMediaStreamConstraints",
         "inheritance": null,
@@ -143,6 +159,21 @@
               "nullable": false,
               "union": false,
               "idlType": "SystemAudioPreferenceEnum"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "surfaceSwitching",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SurfaceSwitchingPreferenceEnum"
             },
             "default": null,
             "required": false
@@ -586,7 +617,8 @@
       "DisplayMediaStreamConstraints": [
         "MediaTrackConstraints",
         "SelfCapturePreferenceEnum",
-        "SystemAudioPreferenceEnum"
+        "SystemAudioPreferenceEnum",
+        "SurfaceSwitchingPreferenceEnum"
       ],
       "MediaTrackSupportedConstraints": [],
       "MediaTrackConstraintSet": [
