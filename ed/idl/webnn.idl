@@ -29,7 +29,6 @@ dictionary MLContextOptions {
 interface ML {
   MLContext createContext(optional MLContextOptions options = {});
   MLContext createContext(GPUDevice gpuDevice);
-  MLContext createContext(WebGLRenderingContext glContext);
 };
 
 dictionary MLArrayInput {
@@ -90,7 +89,7 @@ interface MLOperator {};
 typedef record<DOMString, MLOperand> MLNamedOperands;
 
 dictionary MLBufferResourceView {
-  required (WebGLBuffer or GPUBuffer) resource;
+  required GPUBuffer resource;
   unsigned long long offset = 0;
   unsigned long long size;
 };

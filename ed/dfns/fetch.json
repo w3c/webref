@@ -354,6 +354,90 @@
       "definedIn": "dt"
     },
     {
+      "id": "fetch-controller-full-timing-info",
+      "href": "https://fetch.spec.whatwg.org/#fetch-controller-full-timing-info",
+      "linkingText": [
+        "full timing info"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "fetch controller"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "infrastructure",
+        "href": "https://fetch.spec.whatwg.org/#infrastructure",
+        "title": "Infrastructure",
+        "number": "2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "fetch-controller-report-timing-steps",
+      "href": "https://fetch.spec.whatwg.org/#fetch-controller-report-timing-steps",
+      "linkingText": [
+        "report timing steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "fetch controller"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "infrastructure",
+        "href": "https://fetch.spec.whatwg.org/#infrastructure",
+        "title": "Infrastructure",
+        "number": "2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "finalize-and-report-timing",
+      "href": "https://fetch.spec.whatwg.org/#finalize-and-report-timing",
+      "linkingText": [
+        "report timing for a fetch controller controller given a global object global:"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "fetch controller"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "infrastructure",
+        "href": "https://fetch.spec.whatwg.org/#infrastructure",
+        "title": "Infrastructure",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "extract-full-timing-info",
+      "href": "https://fetch.spec.whatwg.org/#extract-full-timing-info",
+      "linkingText": [
+        "extract full timing info given a fetch controller controller:"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "fetch controller"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "infrastructure",
+        "href": "https://fetch.spec.whatwg.org/#infrastructure",
+        "title": "Infrastructure",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "fetch-controller-abort",
       "href": "https://fetch.spec.whatwg.org/#fetch-controller-abort",
       "linkingText": [
@@ -625,48 +709,6 @@
       "definedIn": "dt"
     },
     {
-      "id": "fetch-timing-info-encoded-body-size",
-      "href": "https://fetch.spec.whatwg.org/#fetch-timing-info-encoded-body-size",
-      "linkingText": [
-        "encoded body size"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "fetch timing info"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "infrastructure",
-        "href": "https://fetch.spec.whatwg.org/#infrastructure",
-        "title": "Infrastructure",
-        "number": "2"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "fetch-timing-info-decoded-body-size",
-      "href": "https://fetch.spec.whatwg.org/#fetch-timing-info-decoded-body-size",
-      "linkingText": [
-        "decoded body size"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "fetch timing info"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "infrastructure",
-        "href": "https://fetch.spec.whatwg.org/#infrastructure",
-        "title": "Infrastructure",
-        "number": "2"
-      },
-      "definedIn": "dt"
-    },
-    {
       "id": "fetch-timing-info-final-connection-timing-info",
       "href": "https://fetch.spec.whatwg.org/#fetch-timing-info-final-connection-timing-info",
       "linkingText": [
@@ -709,11 +751,10 @@
       "definedIn": "dt"
     },
     {
-      "id": "create-an-opaque-timing-info",
-      "href": "https://fetch.spec.whatwg.org/#create-an-opaque-timing-info",
+      "id": "response-body-info",
+      "href": "https://fetch.spec.whatwg.org/#response-body-info",
       "linkingText": [
-        "create an opaque timing info",
-        "creating an opaque timing info"
+        "response body info"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -729,15 +770,58 @@
       "definedIn": "prose"
     },
     {
-      "id": "update-timing-info-from-stored-response",
-      "href": "https://fetch.spec.whatwg.org/#update-timing-info-from-stored-response",
+      "id": "fetch-timing-info-encoded-body-size",
+      "href": "https://fetch.spec.whatwg.org/#fetch-timing-info-encoded-body-size",
       "linkingText": [
-        "update timing info from stored response"
+        "encoded size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "response body info"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "infrastructure",
+        "href": "https://fetch.spec.whatwg.org/#infrastructure",
+        "title": "Infrastructure",
+        "number": "2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "fetch-timing-info-decoded-body-size",
+      "href": "https://fetch.spec.whatwg.org/#fetch-timing-info-decoded-body-size",
+      "linkingText": [
+        "decoded size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "response body info"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "infrastructure",
+        "href": "https://fetch.spec.whatwg.org/#infrastructure",
+        "title": "Infrastructure",
+        "number": "2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "create-an-opaque-timing-info",
+      "href": "https://fetch.spec.whatwg.org/#create-an-opaque-timing-info",
+      "linkingText": [
+        "create an opaque timing info",
+        "creating an opaque timing info"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "infrastructure",
@@ -2320,6 +2404,27 @@
       "definedIn": "prose"
     },
     {
+      "id": "request-initiator-type",
+      "href": "https://fetch.spec.whatwg.org/#request-initiator-type",
+      "linkingText": [
+        "initiator type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "request"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "requests",
+        "href": "https://fetch.spec.whatwg.org/#requests",
+        "title": "Requests",
+        "number": "2.2.5"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "concept-request-initiator",
       "href": "https://fetch.spec.whatwg.org/#concept-request-initiator",
       "linkingText": [
@@ -3396,17 +3501,17 @@
       "definedIn": "prose"
     },
     {
-      "id": "concept-response-timing-info",
-      "href": "https://fetch.spec.whatwg.org/#concept-response-timing-info",
+      "id": "concept-response-body-info",
+      "href": "https://fetch.spec.whatwg.org/#concept-response-body-info",
       "linkingText": [
-        "timing info"
+        "body info"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
         "response"
       ],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "responses",
@@ -5112,25 +5217,6 @@
       "type": "dfn",
       "for": [],
       "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "main-fetch",
-        "href": "https://fetch.spec.whatwg.org/#main-fetch",
-        "title": "Main fetch",
-        "number": "4.1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "finalize-and-report-timing",
-      "href": "https://fetch.spec.whatwg.org/#finalize-and-report-timing",
-      "linkingText": [
-        "finalize and report timing"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
       "informative": false,
       "heading": {
         "id": "main-fetch",
