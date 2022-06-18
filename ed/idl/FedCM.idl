@@ -3,6 +3,11 @@
 // (https://github.com/w3c/webref)
 // Source: Federated Credential Management API (https://fedidcg.github.io/FedCM/)
 
+[Exposed=Window, SecureContext]
+interface IdentityCredential : Credential {
+  readonly attribute USVString? idToken;
+};
+
 partial dictionary CredentialRequestOptions {
   IdentityCredentialRequestOptions identity;
 };
@@ -14,37 +19,8 @@ dictionary IdentityCredentialRequestOptions {
 dictionary IdentityProvider {
   required USVString url;
   required USVString clientId;
-  USVString hint;
-};
-
-[Exposed=Window, SecureContext]
-interface IdentityCredential : Credential {
-};
-
-[Exposed=Window, SecureContext]
-dictionary FederatedAccountLoginRequest {
-  AbortSignal signal;
   USVString nonce;
-};
-
-[Exposed=Window, SecureContext]
-partial interface IdentityCredential {
-  Promise<FederatedTokens> login(optional FederatedAccountLoginRequest request = {});
-};
-
-[Exposed=Window, SecureContext]
-dictionary FederatedTokens {
-  USVString idToken;
-};
-
-[Exposed=Window, SecureContext]
-partial interface IdentityCredential {
-  Promise<undefined> revoke(USVString hint);
-};
-
-[Exposed=Window, SecureContext]
-partial interface IdentityCredential {
-  Promise<undefined> logout();
+  USVString hint;
 };
 
 dictionary IdentityCredentialLogoutRpsRequest {

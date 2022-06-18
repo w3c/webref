@@ -9,14 +9,52 @@
       "functions": {
         "Window": [
           "IdentityCredential",
-          "IdentityCredential",
-          "IdentityCredential",
-          "IdentityCredential",
           "IdentityCredential"
         ]
       }
     },
     "idlNames": {
+      "IdentityCredential": {
+        "fragment": "[Exposed=Window, SecureContext]\ninterface IdentityCredential : Credential {\n  readonly attribute USVString? idToken;\n};",
+        "type": "interface",
+        "name": "IdentityCredential",
+        "inheritance": "Credential",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "idToken",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
       "IdentityCredentialRequestOptions": {
         "fragment": "dictionary IdentityCredentialRequestOptions {\n  sequence<IdentityProvider> providers;\n};",
         "type": "dictionary",
@@ -52,7 +90,7 @@
         "partial": false
       },
       "IdentityProvider": {
-        "fragment": "dictionary IdentityProvider {\n  required USVString url;\n  required USVString clientId;\n  USVString hint;\n};",
+        "fragment": "dictionary IdentityProvider {\n  required USVString url;\n  required USVString clientId;\n  USVString nonce;\n  USVString hint;\n};",
         "type": "dictionary",
         "name": "IdentityProvider",
         "inheritance": null,
@@ -89,6 +127,21 @@
           },
           {
             "type": "field",
+            "name": "nonce",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
             "name": "hint",
             "extAttrs": [],
             "idlType": {
@@ -104,128 +157,6 @@
           }
         ],
         "extAttrs": [],
-        "partial": false
-      },
-      "IdentityCredential": {
-        "fragment": "[Exposed=Window, SecureContext]\ninterface IdentityCredential : Credential {\n};",
-        "type": "interface",
-        "name": "IdentityCredential",
-        "inheritance": "Credential",
-        "members": [],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier",
-              "value": "Window"
-            },
-            "arguments": []
-          },
-          {
-            "type": "extended-attribute",
-            "name": "SecureContext",
-            "rhs": null,
-            "arguments": []
-          }
-        ],
-        "partial": false
-      },
-      "FederatedAccountLoginRequest": {
-        "fragment": "[Exposed=Window, SecureContext]\ndictionary FederatedAccountLoginRequest {\n  AbortSignal signal;\n  USVString nonce;\n};",
-        "type": "dictionary",
-        "name": "FederatedAccountLoginRequest",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "field",
-            "name": "signal",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "AbortSignal"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "nonce",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "USVString"
-            },
-            "default": null,
-            "required": false
-          }
-        ],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier",
-              "value": "Window"
-            },
-            "arguments": []
-          },
-          {
-            "type": "extended-attribute",
-            "name": "SecureContext",
-            "rhs": null,
-            "arguments": []
-          }
-        ],
-        "partial": false
-      },
-      "FederatedTokens": {
-        "fragment": "[Exposed=Window, SecureContext]\ndictionary FederatedTokens {\n  USVString idToken;\n};",
-        "type": "dictionary",
-        "name": "FederatedTokens",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "field",
-            "name": "idToken",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "USVString"
-            },
-            "default": null,
-            "required": false
-          }
-        ],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier",
-              "value": "Window"
-            },
-            "arguments": []
-          },
-          {
-            "type": "extended-attribute",
-            "name": "SecureContext",
-            "rhs": null,
-            "arguments": []
-          }
-        ],
         "partial": false
       },
       "IdentityCredentialLogoutRpsRequest": {
@@ -298,192 +229,6 @@
         }
       ],
       "IdentityCredential": [
-        {
-          "fragment": "[Exposed=Window, SecureContext]\npartial interface IdentityCredential {\n  Promise<FederatedTokens> login(optional FederatedAccountLoginRequest request = {});\n};",
-          "type": "interface",
-          "name": "IdentityCredential",
-          "inheritance": null,
-          "members": [
-            {
-              "type": "operation",
-              "name": "login",
-              "idlType": {
-                "type": "return-type",
-                "extAttrs": [],
-                "generic": "Promise",
-                "nullable": false,
-                "union": false,
-                "idlType": [
-                  {
-                    "type": "return-type",
-                    "extAttrs": [],
-                    "generic": "",
-                    "nullable": false,
-                    "union": false,
-                    "idlType": "FederatedTokens"
-                  }
-                ]
-              },
-              "arguments": [
-                {
-                  "type": "argument",
-                  "name": "request",
-                  "extAttrs": [],
-                  "idlType": {
-                    "type": "argument-type",
-                    "extAttrs": [],
-                    "generic": "",
-                    "nullable": false,
-                    "union": false,
-                    "idlType": "FederatedAccountLoginRequest"
-                  },
-                  "default": {
-                    "type": "dictionary"
-                  },
-                  "optional": true,
-                  "variadic": false
-                }
-              ],
-              "extAttrs": [],
-              "special": ""
-            }
-          ],
-          "extAttrs": [
-            {
-              "type": "extended-attribute",
-              "name": "Exposed",
-              "rhs": {
-                "type": "identifier",
-                "value": "Window"
-              },
-              "arguments": []
-            },
-            {
-              "type": "extended-attribute",
-              "name": "SecureContext",
-              "rhs": null,
-              "arguments": []
-            }
-          ],
-          "partial": true
-        },
-        {
-          "fragment": "[Exposed=Window, SecureContext]\npartial interface IdentityCredential {\n  Promise<undefined> revoke(USVString hint);\n};",
-          "type": "interface",
-          "name": "IdentityCredential",
-          "inheritance": null,
-          "members": [
-            {
-              "type": "operation",
-              "name": "revoke",
-              "idlType": {
-                "type": "return-type",
-                "extAttrs": [],
-                "generic": "Promise",
-                "nullable": false,
-                "union": false,
-                "idlType": [
-                  {
-                    "type": "return-type",
-                    "extAttrs": [],
-                    "generic": "",
-                    "nullable": false,
-                    "union": false,
-                    "idlType": "undefined"
-                  }
-                ]
-              },
-              "arguments": [
-                {
-                  "type": "argument",
-                  "name": "hint",
-                  "extAttrs": [],
-                  "idlType": {
-                    "type": "argument-type",
-                    "extAttrs": [],
-                    "generic": "",
-                    "nullable": false,
-                    "union": false,
-                    "idlType": "USVString"
-                  },
-                  "default": null,
-                  "optional": false,
-                  "variadic": false
-                }
-              ],
-              "extAttrs": [],
-              "special": ""
-            }
-          ],
-          "extAttrs": [
-            {
-              "type": "extended-attribute",
-              "name": "Exposed",
-              "rhs": {
-                "type": "identifier",
-                "value": "Window"
-              },
-              "arguments": []
-            },
-            {
-              "type": "extended-attribute",
-              "name": "SecureContext",
-              "rhs": null,
-              "arguments": []
-            }
-          ],
-          "partial": true
-        },
-        {
-          "fragment": "[Exposed=Window, SecureContext]\npartial interface IdentityCredential {\n  Promise<undefined> logout();\n};",
-          "type": "interface",
-          "name": "IdentityCredential",
-          "inheritance": null,
-          "members": [
-            {
-              "type": "operation",
-              "name": "logout",
-              "idlType": {
-                "type": "return-type",
-                "extAttrs": [],
-                "generic": "Promise",
-                "nullable": false,
-                "union": false,
-                "idlType": [
-                  {
-                    "type": "return-type",
-                    "extAttrs": [],
-                    "generic": "",
-                    "nullable": false,
-                    "union": false,
-                    "idlType": "undefined"
-                  }
-                ]
-              },
-              "arguments": [],
-              "extAttrs": [],
-              "special": ""
-            }
-          ],
-          "extAttrs": [
-            {
-              "type": "extended-attribute",
-              "name": "Exposed",
-              "rhs": {
-                "type": "identifier",
-                "value": "Window"
-              },
-              "arguments": []
-            },
-            {
-              "type": "extended-attribute",
-              "name": "SecureContext",
-              "rhs": null,
-              "arguments": []
-            }
-          ],
-          "partial": true
-        },
         {
           "fragment": "[Exposed=Window, SecureContext]\npartial interface IdentityCredential {\n  static Promise<undefined> logoutRPs(sequence<IdentityCredentialLogoutRpsRequest> logoutRequests);\n};",
           "type": "interface",
@@ -566,15 +311,14 @@
     "exposed": {
       "Window": [
         "IdentityCredential",
-        "FederatedAccountLoginRequest",
-        "IdentityCredential",
-        "FederatedTokens",
-        "IdentityCredential",
-        "IdentityCredential",
         "IdentityCredential"
       ]
     },
     "dependencies": {
+      "IdentityCredential": [
+        "Credential",
+        "IdentityCredentialLogoutRpsRequest"
+      ],
       "CredentialRequestOptions": [
         "IdentityCredentialRequestOptions"
       ],
@@ -582,22 +326,11 @@
         "IdentityProvider"
       ],
       "IdentityProvider": [],
-      "IdentityCredential": [
-        "Credential",
-        "FederatedTokens",
-        "FederatedAccountLoginRequest",
-        "IdentityCredentialLogoutRpsRequest"
-      ],
-      "FederatedAccountLoginRequest": [
-        "AbortSignal"
-      ],
-      "FederatedTokens": [],
       "IdentityCredentialLogoutRpsRequest": []
     },
     "externalDependencies": [
-      "CredentialRequestOptions",
       "Credential",
-      "AbortSignal"
+      "CredentialRequestOptions"
     ],
     "hasObsoleteIdl": false
   }
