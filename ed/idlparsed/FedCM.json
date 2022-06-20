@@ -8,23 +8,96 @@
       "constructors": {},
       "functions": {
         "Window": [
-          "FederatedCredential",
-          "FederatedCredential",
-          "FederatedCredential",
-          "FederatedCredential"
+          "IdentityCredential",
+          "IdentityCredential"
         ]
       }
     },
     "idlNames": {
-      "FederatedAccountLoginRequest": {
-        "fragment": "[Exposed=Window, SecureContext]\ndictionary FederatedAccountLoginRequest {\n  AbortSignal signal;\n  USVString nonce;\n};",
+      "IdentityCredential": {
+        "fragment": "[Exposed=Window, SecureContext]\ninterface IdentityCredential : Credential {\n  readonly attribute USVString? idToken;\n};",
+        "type": "interface",
+        "name": "IdentityCredential",
+        "inheritance": "Credential",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "idToken",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "IdentityCredentialRequestOptions": {
+        "fragment": "dictionary IdentityCredentialRequestOptions {\n  sequence<IdentityProvider> providers;\n};",
         "type": "dictionary",
-        "name": "FederatedAccountLoginRequest",
+        "name": "IdentityCredentialRequestOptions",
         "inheritance": null,
         "members": [
           {
             "type": "field",
-            "name": "signal",
+            "name": "providers",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "IdentityProvider"
+                }
+              ]
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "IdentityProvider": {
+        "fragment": "dictionary IdentityProvider {\n  required USVString url;\n  required USVString clientId;\n  USVString nonce;\n  USVString hint;\n};",
+        "type": "dictionary",
+        "name": "IdentityProvider",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "url",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -32,10 +105,25 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "AbortSignal"
+              "idlType": "USVString"
             },
             "default": null,
-            "required": false
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "clientId",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "default": null,
+            "required": true
           },
           {
             "type": "field",
@@ -51,36 +139,10 @@
             },
             "default": null,
             "required": false
-          }
-        ],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier",
-              "value": "Window"
-            },
-            "arguments": []
           },
           {
-            "type": "extended-attribute",
-            "name": "SecureContext",
-            "rhs": null,
-            "arguments": []
-          }
-        ],
-        "partial": false
-      },
-      "FederatedTokens": {
-        "fragment": "[Exposed=Window, SecureContext]\ndictionary FederatedTokens {\n  USVString idToken;\n};",
-        "type": "dictionary",
-        "name": "FederatedTokens",
-        "inheritance": null,
-        "members": [
-          {
             "type": "field",
-            "name": "idToken",
+            "name": "hint",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -94,29 +156,13 @@
             "required": false
           }
         ],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier",
-              "value": "Window"
-            },
-            "arguments": []
-          },
-          {
-            "type": "extended-attribute",
-            "name": "SecureContext",
-            "rhs": null,
-            "arguments": []
-          }
-        ],
+        "extAttrs": [],
         "partial": false
       },
-      "FederatedCredentialLogoutRpsRequest": {
-        "fragment": "dictionary FederatedCredentialLogoutRpsRequest {\n  required USVString url;\n  required USVString accountId;\n};",
+      "IdentityCredentialLogoutRpsRequest": {
+        "fragment": "dictionary IdentityCredentialLogoutRpsRequest {\n  required USVString url;\n  required USVString accountId;\n};",
         "type": "dictionary",
-        "name": "FederatedCredentialLogoutRpsRequest",
+        "name": "IdentityCredentialLogoutRpsRequest",
         "inheritance": null,
         "members": [
           {
@@ -155,197 +201,38 @@
       }
     },
     "idlExtendedNames": {
-      "FederatedCredential": [
+      "CredentialRequestOptions": [
         {
-          "fragment": "[Exposed=Window, SecureContext]\npartial interface FederatedCredential {\n  Promise<FederatedTokens> login(optional FederatedAccountLoginRequest request = {});\n};",
-          "type": "interface",
-          "name": "FederatedCredential",
+          "fragment": "partial dictionary CredentialRequestOptions {\n  IdentityCredentialRequestOptions identity;\n};",
+          "type": "dictionary",
+          "name": "CredentialRequestOptions",
           "inheritance": null,
           "members": [
             {
-              "type": "operation",
-              "name": "login",
+              "type": "field",
+              "name": "identity",
+              "extAttrs": [],
               "idlType": {
-                "type": "return-type",
+                "type": "dictionary-type",
                 "extAttrs": [],
-                "generic": "Promise",
+                "generic": "",
                 "nullable": false,
                 "union": false,
-                "idlType": [
-                  {
-                    "type": "return-type",
-                    "extAttrs": [],
-                    "generic": "",
-                    "nullable": false,
-                    "union": false,
-                    "idlType": "FederatedTokens"
-                  }
-                ]
+                "idlType": "IdentityCredentialRequestOptions"
               },
-              "arguments": [
-                {
-                  "type": "argument",
-                  "name": "request",
-                  "extAttrs": [],
-                  "idlType": {
-                    "type": "argument-type",
-                    "extAttrs": [],
-                    "generic": "",
-                    "nullable": false,
-                    "union": false,
-                    "idlType": "FederatedAccountLoginRequest"
-                  },
-                  "default": {
-                    "type": "dictionary"
-                  },
-                  "optional": true,
-                  "variadic": false
-                }
-              ],
-              "extAttrs": [],
-              "special": ""
+              "default": null,
+              "required": false
             }
           ],
-          "extAttrs": [
-            {
-              "type": "extended-attribute",
-              "name": "Exposed",
-              "rhs": {
-                "type": "identifier",
-                "value": "Window"
-              },
-              "arguments": []
-            },
-            {
-              "type": "extended-attribute",
-              "name": "SecureContext",
-              "rhs": null,
-              "arguments": []
-            }
-          ],
+          "extAttrs": [],
           "partial": true
-        },
+        }
+      ],
+      "IdentityCredential": [
         {
-          "fragment": "[Exposed=Window, SecureContext]\npartial interface FederatedCredential {\n  Promise<undefined> revoke(USVString hint);\n};",
+          "fragment": "[Exposed=Window, SecureContext]\npartial interface IdentityCredential {\n  static Promise<undefined> logoutRPs(sequence<IdentityCredentialLogoutRpsRequest> logoutRequests);\n};",
           "type": "interface",
-          "name": "FederatedCredential",
-          "inheritance": null,
-          "members": [
-            {
-              "type": "operation",
-              "name": "revoke",
-              "idlType": {
-                "type": "return-type",
-                "extAttrs": [],
-                "generic": "Promise",
-                "nullable": false,
-                "union": false,
-                "idlType": [
-                  {
-                    "type": "return-type",
-                    "extAttrs": [],
-                    "generic": "",
-                    "nullable": false,
-                    "union": false,
-                    "idlType": "undefined"
-                  }
-                ]
-              },
-              "arguments": [
-                {
-                  "type": "argument",
-                  "name": "hint",
-                  "extAttrs": [],
-                  "idlType": {
-                    "type": "argument-type",
-                    "extAttrs": [],
-                    "generic": "",
-                    "nullable": false,
-                    "union": false,
-                    "idlType": "USVString"
-                  },
-                  "default": null,
-                  "optional": false,
-                  "variadic": false
-                }
-              ],
-              "extAttrs": [],
-              "special": ""
-            }
-          ],
-          "extAttrs": [
-            {
-              "type": "extended-attribute",
-              "name": "Exposed",
-              "rhs": {
-                "type": "identifier",
-                "value": "Window"
-              },
-              "arguments": []
-            },
-            {
-              "type": "extended-attribute",
-              "name": "SecureContext",
-              "rhs": null,
-              "arguments": []
-            }
-          ],
-          "partial": true
-        },
-        {
-          "fragment": "[Exposed=Window, SecureContext]\npartial interface FederatedCredential {\n  Promise<undefined> logout();\n};",
-          "type": "interface",
-          "name": "FederatedCredential",
-          "inheritance": null,
-          "members": [
-            {
-              "type": "operation",
-              "name": "logout",
-              "idlType": {
-                "type": "return-type",
-                "extAttrs": [],
-                "generic": "Promise",
-                "nullable": false,
-                "union": false,
-                "idlType": [
-                  {
-                    "type": "return-type",
-                    "extAttrs": [],
-                    "generic": "",
-                    "nullable": false,
-                    "union": false,
-                    "idlType": "undefined"
-                  }
-                ]
-              },
-              "arguments": [],
-              "extAttrs": [],
-              "special": ""
-            }
-          ],
-          "extAttrs": [
-            {
-              "type": "extended-attribute",
-              "name": "Exposed",
-              "rhs": {
-                "type": "identifier",
-                "value": "Window"
-              },
-              "arguments": []
-            },
-            {
-              "type": "extended-attribute",
-              "name": "SecureContext",
-              "rhs": null,
-              "arguments": []
-            }
-          ],
-          "partial": true
-        },
-        {
-          "fragment": "[Exposed=Window, SecureContext]\npartial interface FederatedCredential {\n  static Promise<undefined> logoutRPs(sequence<FederatedCredentialLogoutRpsRequest> logoutRequests);\n};",
-          "type": "interface",
-          "name": "FederatedCredential",
+          "name": "IdentityCredential",
           "inheritance": null,
           "members": [
             {
@@ -386,7 +273,7 @@
                         "generic": "",
                         "nullable": false,
                         "union": false,
-                        "idlType": "FederatedCredentialLogoutRpsRequest"
+                        "idlType": "IdentityCredentialLogoutRpsRequest"
                       }
                     ]
                   },
@@ -423,29 +310,27 @@
     "globals": {},
     "exposed": {
       "Window": [
-        "FederatedAccountLoginRequest",
-        "FederatedCredential",
-        "FederatedTokens",
-        "FederatedCredential",
-        "FederatedCredential",
-        "FederatedCredential"
+        "IdentityCredential",
+        "IdentityCredential"
       ]
     },
     "dependencies": {
-      "FederatedAccountLoginRequest": [
-        "AbortSignal"
+      "IdentityCredential": [
+        "Credential",
+        "IdentityCredentialLogoutRpsRequest"
       ],
-      "FederatedCredential": [
-        "FederatedTokens",
-        "FederatedAccountLoginRequest",
-        "FederatedCredentialLogoutRpsRequest"
+      "CredentialRequestOptions": [
+        "IdentityCredentialRequestOptions"
       ],
-      "FederatedTokens": [],
-      "FederatedCredentialLogoutRpsRequest": []
+      "IdentityCredentialRequestOptions": [
+        "IdentityProvider"
+      ],
+      "IdentityProvider": [],
+      "IdentityCredentialLogoutRpsRequest": []
     },
     "externalDependencies": [
-      "AbortSignal",
-      "FederatedCredential"
+      "Credential",
+      "CredentialRequestOptions"
     ],
     "hasObsoleteIdl": false
   }

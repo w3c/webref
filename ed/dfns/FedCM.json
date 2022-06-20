@@ -676,27 +676,6 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-manifest-revocation_endpoint",
-      "href": "https://fedidcg.github.io/FedCM/#dom-manifest-revocation_endpoint",
-      "linkingText": [
-        "revocation_endpoint"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "Manifest"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "idp-api-manifest",
-        "href": "https://fedidcg.github.io/FedCM/#idp-api-manifest",
-        "title": "Manifest",
-        "number": "7.1"
-      },
-      "definedIn": "dt"
-    },
-    {
       "id": "dom-manifest-branding",
       "href": "https://fedidcg.github.io/FedCM/#dom-manifest-branding",
       "linkingText": [
@@ -1172,48 +1151,6 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-revocation_endpoint_request-client_id",
-      "href": "https://fedidcg.github.io/FedCM/#dom-revocation_endpoint_request-client_id",
-      "linkingText": [
-        "client_id"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "revocation_endpoint_request"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "idp-api-revocation-endpoint",
-        "href": "https://fedidcg.github.io/FedCM/#idp-api-revocation-endpoint",
-        "title": "Revocation",
-        "number": "7.5"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-revocation_endpoint_request-hint",
-      "href": "https://fedidcg.github.io/FedCM/#dom-revocation_endpoint_request-hint",
-      "linkingText": [
-        "hint"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "revocation_endpoint_request"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "idp-api-revocation-endpoint",
-        "href": "https://fedidcg.github.io/FedCM/#idp-api-revocation-endpoint",
-        "title": "Revocation",
-        "number": "7.5"
-      },
-      "definedIn": "dt"
-    },
-    {
       "id": "sec-fedcm-csrf",
       "href": "https://fedidcg.github.io/FedCM/#sec-fedcm-csrf",
       "linkingText": [
@@ -1228,7 +1165,7 @@
         "id": "Sec-FedCM-CSRF",
         "href": "https://fedidcg.github.io/FedCM/#Sec-FedCM-CSRF",
         "title": "Sec-FedCM-CSRF",
-        "number": "7.6"
+        "number": "7.5"
       },
       "definedIn": "heading"
     },
@@ -1275,31 +1212,132 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-federatedcredentialrequestoptions-providers",
-      "href": "https://fedidcg.github.io/FedCM/#dom-federatedcredentialrequestoptions-providers",
+      "id": "identitycredential",
+      "href": "https://fedidcg.github.io/FedCM/#identitycredential",
+      "linkingText": [
+        "IdentityCredential"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "browser-api-identity-credential-interface",
+        "href": "https://fedidcg.github.io/FedCM/#browser-api-identity-credential-interface",
+        "title": "The IdentityCredential Interface",
+        "number": "9.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-identitycredential-idtoken",
+      "href": "https://fedidcg.github.io/FedCM/#dom-identitycredential-idtoken",
+      "linkingText": [
+        "idToken"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "IdentityCredential"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "browser-api-identity-credential-interface",
+        "href": "https://fedidcg.github.io/FedCM/#browser-api-identity-credential-interface",
+        "title": "The IdentityCredential Interface",
+        "number": "9.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-identitycredential-idtoken①",
+      "href": "https://fedidcg.github.io/FedCM/#dom-identitycredential-idtoken%E2%91%A0",
+      "linkingText": [
+        "idToken"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "IdentityCredential"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "browser-api-identity-credential-interface",
+        "href": "https://fedidcg.github.io/FedCM/#browser-api-identity-credential-interface",
+        "title": "The IdentityCredential Interface",
+        "number": "9.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-credentialrequestoptions-identity",
+      "href": "https://fedidcg.github.io/FedCM/#dom-credentialrequestoptions-identity",
+      "linkingText": [
+        "identity"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "CredentialRequestOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "browser-api-credential-request-options",
+        "href": "https://fedidcg.github.io/FedCM/#browser-api-credential-request-options",
+        "title": "The CredentialRequestOptions",
+        "number": "9.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-identitycredentialrequestoptions",
+      "href": "https://fedidcg.github.io/FedCM/#dictdef-identitycredentialrequestoptions",
+      "linkingText": [
+        "IdentityCredentialRequestOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "browser-api-credential-request-options",
+        "href": "https://fedidcg.github.io/FedCM/#browser-api-credential-request-options",
+        "title": "The CredentialRequestOptions",
+        "number": "9.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-identitycredentialrequestoptions-providers",
+      "href": "https://fedidcg.github.io/FedCM/#dom-identitycredentialrequestoptions-providers",
       "linkingText": [
         "providers"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "FederatedCredentialRequestOptions"
+        "IdentityCredentialRequestOptions"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "browser-api-federated-credential",
-        "href": "https://fedidcg.github.io/FedCM/#browser-api-federated-credential",
-        "title": "The FederatedCredential Object",
-        "number": "9.2"
+        "id": "browser-api-credential-request-options",
+        "href": "https://fedidcg.github.io/FedCM/#browser-api-credential-request-options",
+        "title": "The CredentialRequestOptions",
+        "number": "9.3"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dictdef-federatedidentityprovider",
-      "href": "https://fedidcg.github.io/FedCM/#dictdef-federatedidentityprovider",
+      "id": "dictdef-identityprovider",
+      "href": "https://fedidcg.github.io/FedCM/#dictdef-identityprovider",
       "linkingText": [
-        "FederatedIdentityProvider"
+        "IdentityProvider"
       ],
       "localLinkingText": [],
       "type": "dictionary",
@@ -1307,447 +1345,262 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "browser-api-federated-credential",
-        "href": "https://fedidcg.github.io/FedCM/#browser-api-federated-credential",
-        "title": "The FederatedCredential Object",
-        "number": "9.2"
+        "id": "browser-api-credential-request-options",
+        "href": "https://fedidcg.github.io/FedCM/#browser-api-credential-request-options",
+        "title": "The CredentialRequestOptions",
+        "number": "9.3"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-federatedidentityprovider-url",
-      "href": "https://fedidcg.github.io/FedCM/#dom-federatedidentityprovider-url",
+      "id": "dom-identityprovider-url",
+      "href": "https://fedidcg.github.io/FedCM/#dom-identityprovider-url",
       "linkingText": [
         "url"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "FederatedIdentityProvider"
+        "IdentityProvider"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "browser-api-federated-credential",
-        "href": "https://fedidcg.github.io/FedCM/#browser-api-federated-credential",
-        "title": "The FederatedCredential Object",
-        "number": "9.2"
+        "id": "browser-api-credential-request-options",
+        "href": "https://fedidcg.github.io/FedCM/#browser-api-credential-request-options",
+        "title": "The CredentialRequestOptions",
+        "number": "9.3"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-federatedidentityprovider-clientid",
-      "href": "https://fedidcg.github.io/FedCM/#dom-federatedidentityprovider-clientid",
+      "id": "dom-identityprovider-clientid",
+      "href": "https://fedidcg.github.io/FedCM/#dom-identityprovider-clientid",
       "linkingText": [
         "clientId"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "FederatedIdentityProvider"
+        "IdentityProvider"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "browser-api-federated-credential",
-        "href": "https://fedidcg.github.io/FedCM/#browser-api-federated-credential",
-        "title": "The FederatedCredential Object",
-        "number": "9.2"
+        "id": "browser-api-credential-request-options",
+        "href": "https://fedidcg.github.io/FedCM/#browser-api-credential-request-options",
+        "title": "The CredentialRequestOptions",
+        "number": "9.3"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-federatedidentityprovider-hint",
-      "href": "https://fedidcg.github.io/FedCM/#dom-federatedidentityprovider-hint",
+      "id": "dom-identityprovider-nonce",
+      "href": "https://fedidcg.github.io/FedCM/#dom-identityprovider-nonce",
+      "linkingText": [
+        "nonce"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "IdentityProvider"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "browser-api-credential-request-options",
+        "href": "https://fedidcg.github.io/FedCM/#browser-api-credential-request-options",
+        "title": "The CredentialRequestOptions",
+        "number": "9.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-identityprovider-hint",
+      "href": "https://fedidcg.github.io/FedCM/#dom-identityprovider-hint",
       "linkingText": [
         "hint"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "FederatedIdentityProvider"
+        "IdentityProvider"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "browser-api-federated-credential",
-        "href": "https://fedidcg.github.io/FedCM/#browser-api-federated-credential",
-        "title": "The FederatedCredential Object",
-        "number": "9.2"
+        "id": "browser-api-credential-request-options",
+        "href": "https://fedidcg.github.io/FedCM/#browser-api-credential-request-options",
+        "title": "The CredentialRequestOptions",
+        "number": "9.3"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-federatedidentityprovider-url①",
-      "href": "https://fedidcg.github.io/FedCM/#dom-federatedidentityprovider-url%E2%91%A0",
+      "id": "dom-identityprovider-url①",
+      "href": "https://fedidcg.github.io/FedCM/#dom-identityprovider-url%E2%91%A0",
       "linkingText": [
         "url"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "FederatedIdentityProvider"
+        "IdentityProvider"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "browser-api-federated-credential",
-        "href": "https://fedidcg.github.io/FedCM/#browser-api-federated-credential",
-        "title": "The FederatedCredential Object",
-        "number": "9.2"
+        "id": "browser-api-credential-request-options",
+        "href": "https://fedidcg.github.io/FedCM/#browser-api-credential-request-options",
+        "title": "The CredentialRequestOptions",
+        "number": "9.3"
       },
       "definedIn": "dt"
     },
     {
-      "id": "dom-federatedidentityprovider-clientid①",
-      "href": "https://fedidcg.github.io/FedCM/#dom-federatedidentityprovider-clientid%E2%91%A0",
+      "id": "dom-identityprovider-clientid①",
+      "href": "https://fedidcg.github.io/FedCM/#dom-identityprovider-clientid%E2%91%A0",
       "linkingText": [
         "clientId"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "FederatedIdentityProvider"
+        "IdentityProvider"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "browser-api-federated-credential",
-        "href": "https://fedidcg.github.io/FedCM/#browser-api-federated-credential",
-        "title": "The FederatedCredential Object",
-        "number": "9.2"
+        "id": "browser-api-credential-request-options",
+        "href": "https://fedidcg.github.io/FedCM/#browser-api-credential-request-options",
+        "title": "The CredentialRequestOptions",
+        "number": "9.3"
       },
       "definedIn": "dt"
     },
     {
-      "id": "dom-federatedidentityprovider-hint①",
-      "href": "https://fedidcg.github.io/FedCM/#dom-federatedidentityprovider-hint%E2%91%A0",
+      "id": "dom-identityprovider-nonce①",
+      "href": "https://fedidcg.github.io/FedCM/#dom-identityprovider-nonce%E2%91%A0",
+      "linkingText": [
+        "nonce"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "IdentityProvider"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "browser-api-credential-request-options",
+        "href": "https://fedidcg.github.io/FedCM/#browser-api-credential-request-options",
+        "title": "The CredentialRequestOptions",
+        "number": "9.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-identityprovider-hint①",
+      "href": "https://fedidcg.github.io/FedCM/#dom-identityprovider-hint%E2%91%A0",
       "linkingText": [
         "hint"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "FederatedIdentityProvider"
+        "IdentityProvider"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "browser-api-federated-credential",
-        "href": "https://fedidcg.github.io/FedCM/#browser-api-federated-credential",
-        "title": "The FederatedCredential Object",
-        "number": "9.2"
+        "id": "browser-api-credential-request-options",
+        "href": "https://fedidcg.github.io/FedCM/#browser-api-credential-request-options",
+        "title": "The CredentialRequestOptions",
+        "number": "9.3"
       },
       "definedIn": "dt"
     },
     {
-      "id": "dom-federatedcredential-discoverfromexternalsource-slot",
-      "href": "https://fedidcg.github.io/FedCM/#dom-federatedcredential-discoverfromexternalsource-slot",
+      "id": "dom-identitycredential-discoverfromexternalsource-slot",
+      "href": "https://fedidcg.github.io/FedCM/#dom-identitycredential-discoverfromexternalsource-slot",
       "linkingText": [
         "[[DiscoverFromExternalSource]](origin, options, sameOriginWithAncestors)"
       ],
       "localLinkingText": [],
       "type": "method",
       "for": [
-        "FederatedCredential"
+        "IdentityCredential"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "browser-api-federated-credential",
-        "href": "https://fedidcg.github.io/FedCM/#browser-api-federated-credential",
-        "title": "The FederatedCredential Object",
-        "number": "9.2"
+        "id": "browser-api-rp-sign-in",
+        "href": "https://fedidcg.github.io/FedCM/#browser-api-rp-sign-in",
+        "title": "The [[DiscoverFromExternalSource]](origin, options, sameOriginWithAncestors) internal method",
+        "number": "9.4"
       },
-      "definedIn": "prose"
+      "definedIn": "heading"
     },
     {
-      "id": "provider",
-      "href": "https://fedidcg.github.io/FedCM/#provider",
-      "linkingText": [
-        "provider"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "browser-api-federated-credential",
-        "href": "https://fedidcg.github.io/FedCM/#browser-api-federated-credential",
-        "title": "The FederatedCredential Object",
-        "number": "9.2"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dom-federatedcredential-discoverfromexternalsource-origin-options-sameoriginwithancestors-origin",
-      "href": "https://fedidcg.github.io/FedCM/#dom-federatedcredential-discoverfromexternalsource-origin-options-sameoriginwithancestors-origin",
+      "id": "dom-identitycredential-discoverfromexternalsource-origin-options-sameoriginwithancestors-origin",
+      "href": "https://fedidcg.github.io/FedCM/#dom-identitycredential-discoverfromexternalsource-origin-options-sameoriginwithancestors-origin",
       "linkingText": [
         "origin"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "FederatedCredential/[[DiscoverFromExternalSource]](origin, options, sameOriginWithAncestors)"
+        "IdentityCredential/[[DiscoverFromExternalSource]](origin, options, sameOriginWithAncestors)"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "browser-api-federated-credential",
-        "href": "https://fedidcg.github.io/FedCM/#browser-api-federated-credential",
-        "title": "The FederatedCredential Object",
-        "number": "9.2"
+        "id": "browser-api-rp-sign-in",
+        "href": "https://fedidcg.github.io/FedCM/#browser-api-rp-sign-in",
+        "title": "The [[DiscoverFromExternalSource]](origin, options, sameOriginWithAncestors) internal method",
+        "number": "9.4"
       },
       "definedIn": "dt"
     },
     {
-      "id": "dom-federatedcredential-discoverfromexternalsource-origin-options-sameoriginwithancestors-options",
-      "href": "https://fedidcg.github.io/FedCM/#dom-federatedcredential-discoverfromexternalsource-origin-options-sameoriginwithancestors-options",
+      "id": "dom-identitycredential-discoverfromexternalsource-origin-options-sameoriginwithancestors-options",
+      "href": "https://fedidcg.github.io/FedCM/#dom-identitycredential-discoverfromexternalsource-origin-options-sameoriginwithancestors-options",
       "linkingText": [
         "options"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "FederatedCredential/[[DiscoverFromExternalSource]](origin, options, sameOriginWithAncestors)"
+        "IdentityCredential/[[DiscoverFromExternalSource]](origin, options, sameOriginWithAncestors)"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "browser-api-federated-credential",
-        "href": "https://fedidcg.github.io/FedCM/#browser-api-federated-credential",
-        "title": "The FederatedCredential Object",
-        "number": "9.2"
+        "id": "browser-api-rp-sign-in",
+        "href": "https://fedidcg.github.io/FedCM/#browser-api-rp-sign-in",
+        "title": "The [[DiscoverFromExternalSource]](origin, options, sameOriginWithAncestors) internal method",
+        "number": "9.4"
       },
       "definedIn": "dt"
     },
     {
-      "id": "dom-federatedcredential-discoverfromexternalsource-origin-options-sameoriginwithancestors-sameoriginwithancestors",
-      "href": "https://fedidcg.github.io/FedCM/#dom-federatedcredential-discoverfromexternalsource-origin-options-sameoriginwithancestors-sameoriginwithancestors",
+      "id": "dom-identitycredential-discoverfromexternalsource-origin-options-sameoriginwithancestors-sameoriginwithancestors",
+      "href": "https://fedidcg.github.io/FedCM/#dom-identitycredential-discoverfromexternalsource-origin-options-sameoriginwithancestors-sameoriginwithancestors",
       "linkingText": [
         "sameOriginWithAncestors"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "FederatedCredential/[[DiscoverFromExternalSource]](origin, options, sameOriginWithAncestors)"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "browser-api-federated-credential",
-        "href": "https://fedidcg.github.io/FedCM/#browser-api-federated-credential",
-        "title": "The FederatedCredential Object",
-        "number": "9.2"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dictdef-federatedaccountloginrequest",
-      "href": "https://fedidcg.github.io/FedCM/#dictdef-federatedaccountloginrequest",
-      "linkingText": [
-        "FederatedAccountLoginRequest"
-      ],
-      "localLinkingText": [],
-      "type": "dictionary",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "browser-api-rp-sign-in",
-        "href": "https://fedidcg.github.io/FedCM/#browser-api-rp-sign-in",
-        "title": "RP Sign-in API",
-        "number": "9.3.1"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-federatedaccountloginrequest-signal",
-      "href": "https://fedidcg.github.io/FedCM/#dom-federatedaccountloginrequest-signal",
-      "linkingText": [
-        "signal"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "FederatedAccountLoginRequest"
+        "IdentityCredential/[[DiscoverFromExternalSource]](origin, options, sameOriginWithAncestors)"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "browser-api-rp-sign-in",
         "href": "https://fedidcg.github.io/FedCM/#browser-api-rp-sign-in",
-        "title": "RP Sign-in API",
-        "number": "9.3.1"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-federatedaccountloginrequest-nonce",
-      "href": "https://fedidcg.github.io/FedCM/#dom-federatedaccountloginrequest-nonce",
-      "linkingText": [
-        "nonce"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "FederatedAccountLoginRequest"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "browser-api-rp-sign-in",
-        "href": "https://fedidcg.github.io/FedCM/#browser-api-rp-sign-in",
-        "title": "RP Sign-in API",
-        "number": "9.3.1"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-federatedcredential-login",
-      "href": "https://fedidcg.github.io/FedCM/#dom-federatedcredential-login",
-      "linkingText": [
-        "login(request)",
-        "login()"
-      ],
-      "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "FederatedCredential"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "browser-api-rp-sign-in",
-        "href": "https://fedidcg.github.io/FedCM/#browser-api-rp-sign-in",
-        "title": "RP Sign-in API",
-        "number": "9.3.1"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-federatedcredential-login-request-request",
-      "href": "https://fedidcg.github.io/FedCM/#dom-federatedcredential-login-request-request",
-      "linkingText": [
-        "request"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "FederatedCredential/login(request)",
-        "FederatedCredential/login()"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "browser-api-rp-sign-in",
-        "href": "https://fedidcg.github.io/FedCM/#browser-api-rp-sign-in",
-        "title": "RP Sign-in API",
-        "number": "9.3.1"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dictdef-federatedtokens",
-      "href": "https://fedidcg.github.io/FedCM/#dictdef-federatedtokens",
-      "linkingText": [
-        "FederatedTokens"
-      ],
-      "localLinkingText": [],
-      "type": "dictionary",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "browser-api-rp-sign-in",
-        "href": "https://fedidcg.github.io/FedCM/#browser-api-rp-sign-in",
-        "title": "RP Sign-in API",
-        "number": "9.3.1"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-federatedtokens-idtoken",
-      "href": "https://fedidcg.github.io/FedCM/#dom-federatedtokens-idtoken",
-      "linkingText": [
-        "idToken"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "FederatedTokens"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "browser-api-rp-sign-in",
-        "href": "https://fedidcg.github.io/FedCM/#browser-api-rp-sign-in",
-        "title": "RP Sign-in API",
-        "number": "9.3.1"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-federatedaccountloginrequest-nonce①",
-      "href": "https://fedidcg.github.io/FedCM/#dom-federatedaccountloginrequest-nonce%E2%91%A0",
-      "linkingText": [
-        "nonce"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "FederatedAccountLoginRequest"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "browser-api-rp-sign-in",
-        "href": "https://fedidcg.github.io/FedCM/#browser-api-rp-sign-in",
-        "title": "RP Sign-in API",
-        "number": "9.3.1"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-federatedaccountloginrequest-signal①",
-      "href": "https://fedidcg.github.io/FedCM/#dom-federatedaccountloginrequest-signal%E2%91%A0",
-      "linkingText": [
-        "signal"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "FederatedAccountLoginRequest"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "browser-api-rp-sign-in",
-        "href": "https://fedidcg.github.io/FedCM/#browser-api-rp-sign-in",
-        "title": "RP Sign-in API",
-        "number": "9.3.1"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-federatedtokens-idtoken①",
-      "href": "https://fedidcg.github.io/FedCM/#dom-federatedtokens-idtoken%E2%91%A0",
-      "linkingText": [
-        "idToken"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "FederatedTokens"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "browser-api-rp-sign-in",
-        "href": "https://fedidcg.github.io/FedCM/#browser-api-rp-sign-in",
-        "title": "RP Sign-in API",
-        "number": "9.3.1"
+        "title": "The [[DiscoverFromExternalSource]](origin, options, sameOriginWithAncestors) internal method",
+        "number": "9.4"
       },
       "definedIn": "dt"
     },
@@ -1765,8 +1618,8 @@
       "heading": {
         "id": "browser-api-rp-sign-in",
         "href": "https://fedidcg.github.io/FedCM/#browser-api-rp-sign-in",
-        "title": "RP Sign-in API",
-        "number": "9.3.1"
+        "title": "The [[DiscoverFromExternalSource]](origin, options, sameOriginWithAncestors) internal method",
+        "number": "9.4"
       },
       "definedIn": "prose"
     },
@@ -1784,8 +1637,8 @@
       "heading": {
         "id": "browser-api-rp-sign-in",
         "href": "https://fedidcg.github.io/FedCM/#browser-api-rp-sign-in",
-        "title": "RP Sign-in API",
-        "number": "9.3.1"
+        "title": "The [[DiscoverFromExternalSource]](origin, options, sameOriginWithAncestors) internal method",
+        "number": "9.4"
       },
       "definedIn": "prose"
     },
@@ -1803,8 +1656,8 @@
       "heading": {
         "id": "browser-api-rp-sign-in",
         "href": "https://fedidcg.github.io/FedCM/#browser-api-rp-sign-in",
-        "title": "RP Sign-in API",
-        "number": "9.3.1"
+        "title": "The [[DiscoverFromExternalSource]](origin, options, sameOriginWithAncestors) internal method",
+        "number": "9.4"
       },
       "definedIn": "prose"
     },
@@ -1822,8 +1675,8 @@
       "heading": {
         "id": "browser-api-rp-sign-in",
         "href": "https://fedidcg.github.io/FedCM/#browser-api-rp-sign-in",
-        "title": "RP Sign-in API",
-        "number": "9.3.1"
+        "title": "The [[DiscoverFromExternalSource]](origin, options, sameOriginWithAncestors) internal method",
+        "number": "9.4"
       },
       "definedIn": "prose"
     },
@@ -1841,8 +1694,8 @@
       "heading": {
         "id": "browser-api-rp-sign-in",
         "href": "https://fedidcg.github.io/FedCM/#browser-api-rp-sign-in",
-        "title": "RP Sign-in API",
-        "number": "9.3.1"
+        "title": "The [[DiscoverFromExternalSource]](origin, options, sameOriginWithAncestors) internal method",
+        "number": "9.4"
       },
       "definedIn": "prose"
     },
@@ -1860,8 +1713,8 @@
       "heading": {
         "id": "browser-api-rp-sign-in",
         "href": "https://fedidcg.github.io/FedCM/#browser-api-rp-sign-in",
-        "title": "RP Sign-in API",
-        "number": "9.3.1"
+        "title": "The [[DiscoverFromExternalSource]](origin, options, sameOriginWithAncestors) internal method",
+        "number": "9.4"
       },
       "definedIn": "prose"
     },
@@ -1879,8 +1732,8 @@
       "heading": {
         "id": "browser-api-rp-sign-in",
         "href": "https://fedidcg.github.io/FedCM/#browser-api-rp-sign-in",
-        "title": "RP Sign-in API",
-        "number": "9.3.1"
+        "title": "The [[DiscoverFromExternalSource]](origin, options, sameOriginWithAncestors) internal method",
+        "number": "9.4"
       },
       "definedIn": "prose"
     },
@@ -1898,8 +1751,8 @@
       "heading": {
         "id": "browser-api-rp-sign-in",
         "href": "https://fedidcg.github.io/FedCM/#browser-api-rp-sign-in",
-        "title": "RP Sign-in API",
-        "number": "9.3.1"
+        "title": "The [[DiscoverFromExternalSource]](origin, options, sameOriginWithAncestors) internal method",
+        "number": "9.4"
       },
       "definedIn": "prose"
     },
@@ -1917,8 +1770,8 @@
       "heading": {
         "id": "browser-api-rp-sign-in",
         "href": "https://fedidcg.github.io/FedCM/#browser-api-rp-sign-in",
-        "title": "RP Sign-in API",
-        "number": "9.3.1"
+        "title": "The [[DiscoverFromExternalSource]](origin, options, sameOriginWithAncestors) internal method",
+        "number": "9.4"
       },
       "definedIn": "prose"
     },
@@ -1936,79 +1789,16 @@
       "heading": {
         "id": "browser-api-rp-sign-in",
         "href": "https://fedidcg.github.io/FedCM/#browser-api-rp-sign-in",
-        "title": "RP Sign-in API",
-        "number": "9.3.1"
+        "title": "The [[DiscoverFromExternalSource]](origin, options, sameOriginWithAncestors) internal method",
+        "number": "9.4"
       },
       "definedIn": "prose"
     },
     {
-      "id": "dom-federatedcredential-revoke",
-      "href": "https://fedidcg.github.io/FedCM/#dom-federatedcredential-revoke",
+      "id": "dictdef-identitycredentiallogoutrpsrequest",
+      "href": "https://fedidcg.github.io/FedCM/#dictdef-identitycredentiallogoutrpsrequest",
       "linkingText": [
-        "revoke(hint)"
-      ],
-      "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "FederatedCredential"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "browser-api-revocation",
-        "href": "https://fedidcg.github.io/FedCM/#browser-api-revocation",
-        "title": "The Revocation API",
-        "number": "9.4"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-federatedcredential-revoke-hint-hint",
-      "href": "https://fedidcg.github.io/FedCM/#dom-federatedcredential-revoke-hint-hint",
-      "linkingText": [
-        "hint"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "FederatedCredential/revoke(hint)"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "browser-api-revocation",
-        "href": "https://fedidcg.github.io/FedCM/#browser-api-revocation",
-        "title": "The Revocation API",
-        "number": "9.4"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-federatedcredential-logout",
-      "href": "https://fedidcg.github.io/FedCM/#dom-federatedcredential-logout",
-      "linkingText": [
-        "logout()"
-      ],
-      "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "FederatedCredential"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "browser-api-rp-sign-out",
-        "href": "https://fedidcg.github.io/FedCM/#browser-api-rp-sign-out",
-        "title": "RP Sign-out",
-        "number": "9.5.1"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dictdef-federatedcredentiallogoutrpsrequest",
-      "href": "https://fedidcg.github.io/FedCM/#dictdef-federatedcredentiallogoutrpsrequest",
-      "linkingText": [
-        "FederatedCredentialLogoutRpsRequest"
+        "IdentityCredentialLogoutRpsRequest"
       ],
       "localLinkingText": [],
       "type": "dictionary",
@@ -2019,20 +1809,20 @@
         "id": "browser-api-idp-sign-out",
         "href": "https://fedidcg.github.io/FedCM/#browser-api-idp-sign-out",
         "title": "IDP Sign-out",
-        "number": "9.5.2"
+        "number": "9.4.1"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-federatedcredentiallogoutrpsrequest-url",
-      "href": "https://fedidcg.github.io/FedCM/#dom-federatedcredentiallogoutrpsrequest-url",
+      "id": "dom-identitycredentiallogoutrpsrequest-url",
+      "href": "https://fedidcg.github.io/FedCM/#dom-identitycredentiallogoutrpsrequest-url",
       "linkingText": [
         "url"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "FederatedCredentialLogoutRpsRequest"
+        "IdentityCredentialLogoutRpsRequest"
       ],
       "access": "public",
       "informative": false,
@@ -2040,20 +1830,20 @@
         "id": "browser-api-idp-sign-out",
         "href": "https://fedidcg.github.io/FedCM/#browser-api-idp-sign-out",
         "title": "IDP Sign-out",
-        "number": "9.5.2"
+        "number": "9.4.1"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-federatedcredentiallogoutrpsrequest-accountid",
-      "href": "https://fedidcg.github.io/FedCM/#dom-federatedcredentiallogoutrpsrequest-accountid",
+      "id": "dom-identitycredentiallogoutrpsrequest-accountid",
+      "href": "https://fedidcg.github.io/FedCM/#dom-identitycredentiallogoutrpsrequest-accountid",
       "linkingText": [
         "accountId"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "FederatedCredentialLogoutRpsRequest"
+        "IdentityCredentialLogoutRpsRequest"
       ],
       "access": "public",
       "informative": false,
@@ -2061,20 +1851,20 @@
         "id": "browser-api-idp-sign-out",
         "href": "https://fedidcg.github.io/FedCM/#browser-api-idp-sign-out",
         "title": "IDP Sign-out",
-        "number": "9.5.2"
+        "number": "9.4.1"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-federatedcredential-logoutrps",
-      "href": "https://fedidcg.github.io/FedCM/#dom-federatedcredential-logoutrps",
+      "id": "dom-identitycredential-logoutrps",
+      "href": "https://fedidcg.github.io/FedCM/#dom-identitycredential-logoutrps",
       "linkingText": [
         "logoutRPs(logoutRequests)"
       ],
       "localLinkingText": [],
       "type": "method",
       "for": [
-        "FederatedCredential"
+        "IdentityCredential"
       ],
       "access": "public",
       "informative": false,
@@ -2082,20 +1872,20 @@
         "id": "browser-api-idp-sign-out",
         "href": "https://fedidcg.github.io/FedCM/#browser-api-idp-sign-out",
         "title": "IDP Sign-out",
-        "number": "9.5.2"
+        "number": "9.4.1"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-federatedcredential-logoutrps-logoutrequests-logoutrequests",
-      "href": "https://fedidcg.github.io/FedCM/#dom-federatedcredential-logoutrps-logoutrequests-logoutrequests",
+      "id": "dom-identitycredential-logoutrps-logoutrequests-logoutrequests",
+      "href": "https://fedidcg.github.io/FedCM/#dom-identitycredential-logoutrps-logoutrequests-logoutrequests",
       "linkingText": [
         "logoutRequests"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "FederatedCredential/logoutRPs(logoutRequests)"
+        "IdentityCredential/logoutRPs(logoutRequests)"
       ],
       "access": "public",
       "informative": false,
@@ -2103,7 +1893,7 @@
         "id": "browser-api-idp-sign-out",
         "href": "https://fedidcg.github.io/FedCM/#browser-api-idp-sign-out",
         "title": "IDP Sign-out",
-        "number": "9.5.2"
+        "number": "9.4.1"
       },
       "definedIn": "pre"
     },
