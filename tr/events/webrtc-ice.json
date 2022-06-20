@@ -1,0 +1,27 @@
+{
+  "spec": {
+    "title": "IceTransport Extensions for WebRTC",
+    "url": "https://w3c.github.io/webrtc-ice/"
+  },
+  "events": [
+    {
+      "src": {
+        "format": "summary table",
+        "href": "https://w3c.github.io/webrtc-ice/#event-summary"
+      },
+      "type": "icecandidateerror",
+      "interface": "RTCPeerConnectionIceErrorEvent"
+    },
+    {
+      "src": {
+        "format": "summary table",
+        "href": "https://w3c.github.io/webrtc-ice/#event-summary"
+      },
+      "type": "icecandidate",
+      "targets": [
+        "RTCIceTransport"
+      ],
+      "interface": "RTCPeerConnectionIceEvent"
+    }
+  ]
+}

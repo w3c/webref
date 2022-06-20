@@ -154,7 +154,7 @@
         "partial": false
       },
       "ML": {
-        "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface ML {\n  MLContext createContext(optional MLContextOptions options = {});\n  MLContext createContext(GPUDevice gpuDevice);\n  MLContext createContext(WebGLRenderingContext glContext);\n};",
+        "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface ML {\n  MLContext createContext(optional MLContextOptions options = {});\n  MLContext createContext(GPUDevice gpuDevice);\n};",
         "type": "interface",
         "name": "ML",
         "inheritance": null,
@@ -216,38 +216,6 @@
                   "nullable": false,
                   "union": false,
                   "idlType": "GPUDevice"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              }
-            ],
-            "extAttrs": [],
-            "special": ""
-          },
-          {
-            "type": "operation",
-            "name": "createContext",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "MLContext"
-            },
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "glContext",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "WebGLRenderingContext"
                 },
                 "default": null,
                 "optional": false,
@@ -637,7 +605,7 @@
         "extAttrs": []
       },
       "MLBufferResourceView": {
-        "fragment": "dictionary MLBufferResourceView {\n  required (WebGLBuffer or GPUBuffer) resource;\n  unsigned long long offset = 0;\n  unsigned long long size;\n};",
+        "fragment": "dictionary MLBufferResourceView {\n  required GPUBuffer resource;\n  unsigned long long offset = 0;\n  unsigned long long size;\n};",
         "type": "dictionary",
         "name": "MLBufferResourceView",
         "inheritance": null,
@@ -651,25 +619,8 @@
               "extAttrs": [],
               "generic": "",
               "nullable": false,
-              "union": true,
-              "idlType": [
-                {
-                  "type": null,
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "WebGLBuffer"
-                },
-                {
-                  "type": null,
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "GPUBuffer"
-                }
-              ]
+              "union": false,
+              "idlType": "GPUBuffer"
             },
             "default": null,
             "required": true
@@ -7003,8 +6954,7 @@
       "ML": [
         "MLContext",
         "MLContextOptions",
-        "GPUDevice",
-        "WebGLRenderingContext"
+        "GPUDevice"
       ],
       "MLArrayInput": [
         "ArrayBufferView"
@@ -7021,7 +6971,6 @@
       "MLOperand": [],
       "MLOperator": [],
       "MLBufferResourceView": [
-        "WebGLBuffer",
         "GPUBuffer"
       ],
       "MLGraphBuilder": [
@@ -7127,9 +7076,7 @@
     },
     "externalDependencies": [
       "GPUDevice",
-      "WebGLRenderingContext",
       "ArrayBufferView",
-      "WebGLBuffer",
       "GPUBuffer",
       "GPUTexture",
       "GPUCommandBuffer",

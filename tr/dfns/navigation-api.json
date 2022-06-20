@@ -2049,38 +2049,16 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-navigateevent-transitionwhile-newnavigationaction-options-newnavigationaction",
-      "href": "https://wicg.github.io/navigation-api/#dom-navigateevent-transitionwhile-newnavigationaction-options-newnavigationaction",
-      "linkingText": [
-        "newNavigationAction"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "NavigateEvent/transitionWhile(newNavigationAction, options)",
-        "NavigateEvent/transitionWhile(newNavigationAction)"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "navigate-event-class",
-        "href": "https://wicg.github.io/navigation-api/#navigate-event-class",
-        "title": "The NavigateEvent class",
-        "number": "2.1"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-navigateevent-transitionwhile-newnavigationaction-options-options",
-      "href": "https://wicg.github.io/navigation-api/#dom-navigateevent-transitionwhile-newnavigationaction-options-options",
+      "id": "dom-navigateevent-intercept-options-options",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigateevent-intercept-options-options",
       "linkingText": [
         "options"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "NavigateEvent/transitionWhile(newNavigationAction, options)",
-        "NavigateEvent/transitionWhile(newNavigationAction)"
+        "NavigateEvent/intercept(options)",
+        "NavigateEvent/intercept()"
       ],
       "access": "public",
       "informative": false,
@@ -2154,10 +2132,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-navigateeventinit-cantransition",
-      "href": "https://wicg.github.io/navigation-api/#dom-navigateeventinit-cantransition",
+      "id": "dom-navigateeventinit-canintercept",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigateeventinit-canintercept",
       "linkingText": [
-        "canTransition"
+        "canIntercept"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -2301,10 +2279,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "dictdef-navigationtransitionwhileoptions",
-      "href": "https://wicg.github.io/navigation-api/#dictdef-navigationtransitionwhileoptions",
+      "id": "dictdef-navigationinterceptoptions",
+      "href": "https://wicg.github.io/navigation-api/#dictdef-navigationinterceptoptions",
       "linkingText": [
-        "NavigationTransitionWhileOptions"
+        "NavigationInterceptOptions"
       ],
       "localLinkingText": [],
       "type": "dictionary",
@@ -2320,15 +2298,15 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-navigationtransitionwhileoptions-focusreset",
-      "href": "https://wicg.github.io/navigation-api/#dom-navigationtransitionwhileoptions-focusreset",
+      "id": "dom-navigationinterceptoptions-handler",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigationinterceptoptions-handler",
       "linkingText": [
-        "focusReset"
+        "handler"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "NavigationTransitionWhileOptions"
+        "NavigationInterceptOptions"
       ],
       "access": "public",
       "informative": false,
@@ -2341,15 +2319,36 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-navigationtransitionwhileoptions-scrollrestoration",
-      "href": "https://wicg.github.io/navigation-api/#dom-navigationtransitionwhileoptions-scrollrestoration",
+      "id": "dom-navigationinterceptoptions-focusreset",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigationinterceptoptions-focusreset",
+      "linkingText": [
+        "focusReset"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "NavigationInterceptOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "navigate-event-class",
+        "href": "https://wicg.github.io/navigation-api/#navigate-event-class",
+        "title": "The NavigateEvent class",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-navigationinterceptoptions-scrollrestoration",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigationinterceptoptions-scrollrestoration",
       "linkingText": [
         "scrollRestoration"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "NavigationTransitionWhileOptions"
+        "NavigationInterceptOptions"
       ],
       "access": "public",
       "informative": false,
@@ -2473,6 +2472,25 @@
       "for": [
         "NavigationScrollRestoration"
       ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "navigate-event-class",
+        "href": "https://wicg.github.io/navigation-api/#navigate-event-class",
+        "title": "The NavigateEvent class",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "callbackdef-navigationintercepthandler",
+      "href": "https://wicg.github.io/navigation-api/#callbackdef-navigationintercepthandler",
+      "linkingText": [
+        "NavigationInterceptHandler"
+      ],
+      "localLinkingText": [],
+      "type": "callback",
+      "for": [],
       "access": "public",
       "informative": false,
       "heading": {
@@ -2629,10 +2647,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-navigateevent-cantransition",
-      "href": "https://wicg.github.io/navigation-api/#dom-navigateevent-cantransition",
+      "id": "dom-navigateevent-canintercept",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigateevent-canintercept",
       "linkingText": [
-        "canTransition"
+        "canIntercept"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -2860,10 +2878,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "navigateevent-navigation-action-promises-list",
-      "href": "https://wicg.github.io/navigation-api/#navigateevent-navigation-action-promises-list",
+      "id": "navigateevent-was-intercepted",
+      "href": "https://wicg.github.io/navigation-api/#navigateevent-was-intercepted",
       "linkingText": [
-        "navigation action promises list"
+        "was intercepted"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -2881,11 +2899,32 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-navigateevent-transitionwhile",
-      "href": "https://wicg.github.io/navigation-api/#dom-navigateevent-transitionwhile",
+      "id": "navigateevent-navigation-handler-list",
+      "href": "https://wicg.github.io/navigation-api/#navigateevent-navigation-handler-list",
       "linkingText": [
-        "transitionWhile(newNavigationAction, options)",
-        "transitionWhile(newNavigationAction)"
+        "navigation handler list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "NavigateEvent"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "navigate-event-class",
+        "href": "https://wicg.github.io/navigation-api/#navigate-event-class",
+        "title": "The NavigateEvent class",
+        "number": "2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-navigateevent-intercept",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigateevent-intercept",
+      "linkingText": [
+        "intercept(options)",
+        "intercept()"
       ],
       "localLinkingText": [],
       "type": "method",

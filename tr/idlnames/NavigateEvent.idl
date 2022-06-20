@@ -5,7 +5,7 @@ interface NavigateEvent : Event {
 
   readonly attribute NavigationType navigationType;
   readonly attribute NavigationDestination destination;
-  readonly attribute boolean canTransition;
+  readonly attribute boolean canIntercept;
   readonly attribute boolean userInitiated;
   readonly attribute boolean hashChange;
   readonly attribute AbortSignal signal;
@@ -13,7 +13,6 @@ interface NavigateEvent : Event {
   readonly attribute DOMString? downloadRequest;
   readonly attribute any info;
 
-  undefined transitionWhile(Promise<undefined> newNavigationAction,
-                            optional NavigationTransitionWhileOptions options = {});
+  undefined intercept(optional NavigationInterceptOptions options = {});
   undefined restoreScroll();
 };

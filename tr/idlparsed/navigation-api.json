@@ -820,7 +820,7 @@
         "partial": false
       },
       "NavigateEvent": {
-        "fragment": "[Exposed=Window]\ninterface NavigateEvent : Event {\n  constructor(DOMString type, NavigateEventInit eventInit);\n\n  readonly attribute NavigationType navigationType;\n  readonly attribute NavigationDestination destination;\n  readonly attribute boolean canTransition;\n  readonly attribute boolean userInitiated;\n  readonly attribute boolean hashChange;\n  readonly attribute AbortSignal signal;\n  readonly attribute FormData? formData;\n  readonly attribute DOMString? downloadRequest;\n  readonly attribute any info;\n\n  undefined transitionWhile(Promise<undefined> newNavigationAction,\n                            optional NavigationTransitionWhileOptions options = {});\n  undefined restoreScroll();\n};",
+        "fragment": "[Exposed=Window]\ninterface NavigateEvent : Event {\n  constructor(DOMString type, NavigateEventInit eventInit);\n\n  readonly attribute NavigationType navigationType;\n  readonly attribute NavigationDestination destination;\n  readonly attribute boolean canIntercept;\n  readonly attribute boolean userInitiated;\n  readonly attribute boolean hashChange;\n  readonly attribute AbortSignal signal;\n  readonly attribute FormData? formData;\n  readonly attribute DOMString? downloadRequest;\n  readonly attribute any info;\n\n  undefined intercept(optional NavigationInterceptOptions options = {});\n  undefined restoreScroll();\n};",
         "type": "interface",
         "name": "NavigateEvent",
         "inheritance": "Event",
@@ -895,7 +895,7 @@
           },
           {
             "type": "attribute",
-            "name": "canTransition",
+            "name": "canIntercept",
             "idlType": {
               "type": "attribute-type",
               "extAttrs": [],
@@ -1000,7 +1000,7 @@
           },
           {
             "type": "operation",
-            "name": "transitionWhile",
+            "name": "intercept",
             "idlType": {
               "type": "return-type",
               "extAttrs": [],
@@ -1012,31 +1012,6 @@
             "arguments": [
               {
                 "type": "argument",
-                "name": "newNavigationAction",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "Promise",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": [
-                    {
-                      "type": "argument-type",
-                      "extAttrs": [],
-                      "generic": "",
-                      "nullable": false,
-                      "union": false,
-                      "idlType": "undefined"
-                    }
-                  ]
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              },
-              {
-                "type": "argument",
                 "name": "options",
                 "extAttrs": [],
                 "idlType": {
@@ -1045,7 +1020,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "NavigationTransitionWhileOptions"
+                  "idlType": "NavigationInterceptOptions"
                 },
                 "default": {
                   "type": "dictionary"
@@ -1087,7 +1062,7 @@
         "partial": false
       },
       "NavigateEventInit": {
-        "fragment": "dictionary NavigateEventInit : EventInit {\n  NavigationType navigationType = \"push\";\n  required NavigationDestination destination;\n  boolean canTransition = false;\n  boolean userInitiated = false;\n  boolean hashChange = false;\n  required AbortSignal signal;\n  FormData? formData = null;\n  DOMString? downloadRequest = null;\n  any info;\n};",
+        "fragment": "dictionary NavigateEventInit : EventInit {\n  NavigationType navigationType = \"push\";\n  required NavigationDestination destination;\n  boolean canIntercept = false;\n  boolean userInitiated = false;\n  boolean hashChange = false;\n  required AbortSignal signal;\n  FormData? formData = null;\n  DOMString? downloadRequest = null;\n  any info;\n};",
         "type": "dictionary",
         "name": "NavigateEventInit",
         "inheritance": "EventInit",
@@ -1127,7 +1102,7 @@
           },
           {
             "type": "field",
-            "name": "canTransition",
+            "name": "canIntercept",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -1247,12 +1222,27 @@
         "extAttrs": [],
         "partial": false
       },
-      "NavigationTransitionWhileOptions": {
-        "fragment": "dictionary NavigationTransitionWhileOptions {\n  NavigationFocusReset focusReset;\n  NavigationScrollRestoration scrollRestoration;\n};",
+      "NavigationInterceptOptions": {
+        "fragment": "dictionary NavigationInterceptOptions {\n  NavigationInterceptHandler handler;\n  NavigationFocusReset focusReset;\n  NavigationScrollRestoration scrollRestoration;\n};",
         "type": "dictionary",
-        "name": "NavigationTransitionWhileOptions",
+        "name": "NavigationInterceptOptions",
         "inheritance": null,
         "members": [
+          {
+            "type": "field",
+            "name": "handler",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "NavigationInterceptHandler"
+            },
+            "default": null,
+            "required": false
+          },
           {
             "type": "field",
             "name": "focusReset",
@@ -1317,6 +1307,30 @@
             "value": "manual"
           }
         ],
+        "extAttrs": []
+      },
+      "NavigationInterceptHandler": {
+        "fragment": "callback NavigationInterceptHandler = Promise<undefined> ();",
+        "type": "callback",
+        "name": "NavigationInterceptHandler",
+        "idlType": {
+          "type": "return-type",
+          "extAttrs": [],
+          "generic": "Promise",
+          "nullable": false,
+          "union": false,
+          "idlType": [
+            {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            }
+          ]
+        },
+        "arguments": [],
         "extAttrs": []
       },
       "NavigationType": {
@@ -1675,7 +1689,7 @@
         "NavigationDestination",
         "AbortSignal",
         "FormData",
-        "NavigationTransitionWhileOptions"
+        "NavigationInterceptOptions"
       ],
       "NavigateEventInit": [
         "EventInit",
@@ -1684,7 +1698,8 @@
         "AbortSignal",
         "FormData"
       ],
-      "NavigationTransitionWhileOptions": [
+      "NavigationInterceptOptions": [
+        "NavigationInterceptHandler",
         "NavigationFocusReset",
         "NavigationScrollRestoration"
       ],

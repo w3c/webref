@@ -1,0 +1,104 @@
+{
+  "spec": {
+    "title": "Service Workers 1",
+    "url": "https://www.w3.org/TR/service-workers-1/"
+  },
+  "events": [
+    {
+      "href": "https://www.w3.org/TR/service-workers-1/#eventdef-serviceworker-statechange",
+      "src": {
+        "format": "summary table",
+        "href": "https://www.w3.org/TR/service-workers-1/#eventdef-serviceworker-statechange"
+      },
+      "type": "statechange",
+      "targets": [
+        "ServiceWorker"
+      ],
+      "interface": "Event"
+    },
+    {
+      "href": "https://www.w3.org/TR/service-workers-1/#service-worker-registration-updatefound-event",
+      "src": {
+        "format": "summary table",
+        "href": "https://www.w3.org/TR/service-workers-1/#service-worker-registration-updatefound-event"
+      },
+      "type": "updatefound",
+      "targets": [
+        "ServiceWorkerRegistration"
+      ],
+      "interface": "Event"
+    },
+    {
+      "href": "https://www.w3.org/TR/service-workers-1/#service-worker-container-controllerchange-event",
+      "src": {
+        "format": "summary table",
+        "href": "https://www.w3.org/TR/service-workers-1/#service-worker-container-controllerchange-event"
+      },
+      "type": "controllerchange",
+      "targets": [
+        "ServiceWorkerContainer"
+      ],
+      "interface": "Event"
+    },
+    {
+      "href": "https://www.w3.org/TR/service-workers-1/#service-worker-global-scope-install-event",
+      "src": {
+        "format": "summary table",
+        "href": "https://www.w3.org/TR/service-workers-1/#service-worker-global-scope-install-event"
+      },
+      "type": "install",
+      "targets": [
+        "ServiceWorkerGlobalScope"
+      ],
+      "interface": "ExtendableEvent"
+    },
+    {
+      "href": "https://www.w3.org/TR/service-workers-1/#service-worker-global-scope-activate-event",
+      "src": {
+        "format": "summary table",
+        "href": "https://www.w3.org/TR/service-workers-1/#service-worker-global-scope-activate-event"
+      },
+      "type": "activate",
+      "targets": [
+        "ServiceWorkerGlobalScope"
+      ],
+      "interface": "ExtendableEvent"
+    },
+    {
+      "href": "https://www.w3.org/TR/service-workers-1/#service-worker-global-scope-fetch-event",
+      "src": {
+        "format": "summary table",
+        "href": "https://www.w3.org/TR/service-workers-1/#service-worker-global-scope-fetch-event"
+      },
+      "type": "fetch",
+      "targets": [
+        "ServiceWorkerGlobalScope"
+      ],
+      "interface": "FetchEvent"
+    },
+    {
+      "href": "https://www.w3.org/TR/service-workers-1/#eventdef-serviceworkerglobalscope-message",
+      "src": {
+        "format": "summary table",
+        "href": "https://www.w3.org/TR/service-workers-1/#eventdef-serviceworkerglobalscope-message"
+      },
+      "type": "message",
+      "targets": [
+        "ServiceWorkerGlobalScope"
+      ],
+      "interface": "ExtendableMessageEvent"
+    },
+    {
+      "href": "https://www.w3.org/TR/service-workers-1/#eventdef-serviceworkerglobalscope-messageerror",
+      "src": {
+        "format": "summary table",
+        "href": "https://www.w3.org/TR/service-workers-1/#eventdef-serviceworkerglobalscope-messageerror"
+      },
+      "type": "messageerror",
+      "targets": [
+        "ServiceWorkerGlobalScope"
+      ],
+      "interface": "MessageEvent"
+    }
+  ]
+}

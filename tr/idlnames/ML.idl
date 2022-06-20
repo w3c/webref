@@ -3,5 +3,4 @@
 interface ML {
   MLContext createContext(optional MLContextOptions options = {});
   MLContext createContext(GPUDevice gpuDevice);
-  MLContext createContext(WebGLRenderingContext glContext);
 };

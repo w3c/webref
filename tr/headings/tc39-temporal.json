@@ -737,82 +737,76 @@
       "number": "4.5.2"
     },
     {
-      "id": "sec-temporal-topartialtime",
-      "title": "ToPartialTime ( temporalTimeLike )",
-      "level": 3,
-      "number": "4.5.3"
-    },
-    {
       "id": "sec-temporal-regulatetime",
       "title": "RegulateTime ( hour, minute, second, millisecond, microsecond, nanosecond, overflow )",
       "level": 3,
-      "number": "4.5.4"
+      "number": "4.5.3"
     },
     {
       "id": "sec-temporal-isvalidtime",
       "title": "IsValidTime ( hour, minute, second, millisecond, microsecond, nanosecond )",
       "level": 3,
-      "number": "4.5.5"
+      "number": "4.5.4"
     },
     {
       "id": "sec-temporal-balancetime",
       "title": "BalanceTime ( hour, minute, second, millisecond, microsecond, nanosecond )",
       "level": 3,
-      "number": "4.5.6"
+      "number": "4.5.5"
     },
     {
       "id": "sec-temporal-constraintime",
       "title": "ConstrainTime ( hour, minute, second, millisecond, microsecond, nanosecond )",
       "level": 3,
-      "number": "4.5.7"
+      "number": "4.5.6"
     },
     {
       "id": "sec-temporal-createtemporaltime",
       "title": "CreateTemporalTime ( hour, minute, second, millisecond, microsecond, nanosecond [ , newTarget ] )",
       "level": 3,
-      "number": "4.5.8"
+      "number": "4.5.7"
     },
     {
       "id": "sec-temporal-totemporaltimerecord",
-      "title": "ToTemporalTimeRecord ( temporalTimeLike )",
+      "title": "ToTemporalTimeRecord ( temporalTimeLike [ , completeness ] )",
       "level": 3,
-      "number": "4.5.9"
+      "number": "4.5.8"
     },
     {
       "id": "sec-temporal-temporaltimetostring",
       "title": "TemporalTimeToString ( hour, minute, second, millisecond, microsecond, nanosecond, precision )",
       "level": 3,
-      "number": "4.5.10"
+      "number": "4.5.9"
     },
     {
       "id": "sec-temporal-comparetemporaltime",
       "title": "CompareTemporalTime ( h1, min1, s1, ms1, mus1, ns1, h2, min2, s2, ms2, mus2, ns2 )",
       "level": 3,
-      "number": "4.5.11"
+      "number": "4.5.10"
     },
     {
       "id": "sec-temporal-addtime",
       "title": "AddTime ( hour, minute, second, millisecond, microsecond, nanosecond, hours, minutes, seconds, milliseconds, microseconds, nanoseconds )",
       "level": 3,
-      "number": "4.5.12"
+      "number": "4.5.11"
     },
     {
       "id": "sec-temporal-roundtime",
       "title": "RoundTime ( hour, minute, second, millisecond, microsecond, nanosecond, increment, unit, roundingMode [ , dayLengthNs ] )",
       "level": 3,
-      "number": "4.5.13"
+      "number": "4.5.12"
     },
     {
       "id": "sec-temporal-differencetemporalplaintime",
       "title": "DifferenceTemporalPlainTime ( operation, temporalTime, other, options )",
       "level": 3,
-      "number": "4.5.14"
+      "number": "4.5.13"
     },
     {
       "id": "sec-temporal-adddurationtoorsubtractdurationfromplaintime",
       "title": "AddDurationToOrSubtractDurationFromPlainTime ( operation, temporalTime, temporalDurationLike )",
       "level": 3,
-      "number": "4.5.15"
+      "number": "4.5.14"
     },
     {
       "id": "sec-temporal-plaindatetime-objects",
@@ -1182,7 +1176,7 @@
     },
     {
       "id": "sec-temporal-differenceisodatetime",
-      "title": "DifferenceISODateTime ( y1, mon1, d1, h1, min1, s1, ms1, mus1, ns1, y2, mon2, d2, h2, min2, s2, ms2, mus2, ns2, calendar, largestUnit [ , options ] )",
+      "title": "DifferenceISODateTime ( y1, mon1, d1, h1, min1, s1, ms1, mus1, ns1, y2, mon2, d2, h2, min2, s2, ms2, mus2, ns2, calendar, largestUnit, options )",
       "level": 3,
       "number": "5.5.11"
     },
@@ -1602,7 +1596,7 @@
     },
     {
       "id": "sec-temporal-differencezoneddatetime",
-      "title": "DifferenceZonedDateTime ( ns1, ns2, timeZone, calendar, largestUnit [ , options ] )",
+      "title": "DifferenceZonedDateTime ( ns1, ns2, timeZone, calendar, largestUnit, options )",
       "level": 3,
       "number": "6.5.6"
     },
@@ -1907,8 +1901,8 @@
       "number": "7.5.12"
     },
     {
-      "id": "sec-temporal-topartialduration",
-      "title": "ToPartialDuration ( temporalDurationLike )",
+      "id": "sec-temporal-totemporalpartialdurationrecord",
+      "title": "ToTemporalPartialDurationRecord ( temporalDurationLike )",
       "level": 3,
       "number": "7.5.13"
     },
@@ -1926,7 +1920,7 @@
     },
     {
       "id": "sec-temporal-calculateoffsetshift",
-      "title": "CalculateOffsetShift ( relativeTo, y, mon, w, d, h, min, s, ms, mus, ns )",
+      "title": "CalculateOffsetShift ( relativeTo, y, mon, w, d )",
       "level": 3,
       "number": "7.5.16"
     },
@@ -1986,7 +1980,7 @@
     },
     {
       "id": "sec-temporal-adjustroundeddurationdays",
-      "title": "AdjustRoundedDurationDays ( years, months, weeks, days, hours, minutes, seconds, milliseconds, microseconds, nanoseconds, increment, unit, roundingMode [ , relativeTo ] )",
+      "title": "AdjustRoundedDurationDays ( years, months, weeks, days, hours, minutes, seconds, milliseconds, microseconds, nanoseconds, increment, unit, roundingMode, relativeTo )",
       "level": 3,
       "number": "7.5.26"
     },
@@ -2489,34 +2483,28 @@
       "number": "9.5.5"
     },
     {
-      "id": "sec-temporal-constrainisoyearmonth",
-      "title": "ConstrainISOYearMonth ( year, month )",
-      "level": 3,
-      "number": "9.5.6"
-    },
-    {
       "id": "sec-temporal-createtemporalyearmonth",
       "title": "CreateTemporalYearMonth ( isoYear, isoMonth, calendar, referenceISODay [ , newTarget ] )",
       "level": 3,
-      "number": "9.5.7"
+      "number": "9.5.6"
     },
     {
       "id": "sec-temporal-temporalyearmonthtostring",
       "title": "TemporalYearMonthToString ( yearMonth, showCalendar )",
       "level": 3,
-      "number": "9.5.8"
+      "number": "9.5.7"
     },
     {
       "id": "sec-temporal-differencetemporalplainyearmonth",
       "title": "DifferenceTemporalPlainYearMonth ( operation, yearMonth, other, options )",
       "level": 3,
-      "number": "9.5.9"
+      "number": "9.5.8"
     },
     {
       "id": "sec-temporal-adddurationtoorsubtractdurationfromplainyearmonth",
       "title": "AddDurationToOrSubtractDurationFromPlainYearMonth ( operation, yearMonth, temporalDurationLike, options )",
       "level": 3,
-      "number": "9.5.10"
+      "number": "9.5.9"
     },
     {
       "id": "sec-temporal-plainmonthday-objects",
@@ -3396,145 +3384,145 @@
     },
     {
       "id": "sec-getoption",
-      "title": "GetOption ( options, property, types, values, fallback )",
+      "title": "GetOption ( options, property, type, values, default )",
       "level": 2,
       "number": "13.3"
-    },
-    {
-      "id": "sec-getstringornumberoption",
-      "title": "GetStringOrNumberOption ( options, property, stringValues, minimum, maximum, fallback )",
-      "level": 2,
-      "number": "13.4"
     },
     {
       "id": "sec-temporal-totemporaloverflow",
       "title": "ToTemporalOverflow ( options )",
       "level": 2,
-      "number": "13.5"
+      "number": "13.4"
     },
     {
       "id": "sec-temporal-totemporaldisambiguation",
       "title": "ToTemporalDisambiguation ( options )",
       "level": 2,
-      "number": "13.6"
+      "number": "13.5"
     },
     {
       "id": "sec-temporal-totemporalroundingmode",
       "title": "ToTemporalRoundingMode ( normalizedOptions, fallback )",
       "level": 2,
-      "number": "13.7"
+      "number": "13.6"
     },
     {
       "id": "sec-temporal-negatetemporalroundingmode",
       "title": "NegateTemporalRoundingMode ( roundingMode )",
       "level": 2,
-      "number": "13.8"
+      "number": "13.7"
     },
     {
       "id": "sec-temporal-totemporaloffset",
       "title": "ToTemporalOffset ( options, fallback )",
       "level": 2,
-      "number": "13.9"
+      "number": "13.8"
     },
     {
       "id": "sec-temporal-toshowcalendaroption",
       "title": "ToShowCalendarOption ( normalizedOptions )",
       "level": 2,
-      "number": "13.10"
+      "number": "13.9"
     },
     {
       "id": "sec-temporal-toshowtimezonenameoption",
       "title": "ToShowTimeZoneNameOption ( normalizedOptions )",
       "level": 2,
-      "number": "13.11"
+      "number": "13.10"
     },
     {
       "id": "sec-temporal-toshowoffsetoption",
       "title": "ToShowOffsetOption ( normalizedOptions )",
       "level": 2,
-      "number": "13.12"
+      "number": "13.11"
     },
     {
       "id": "sec-temporal-totemporalroundingincrement",
       "title": "ToTemporalRoundingIncrement ( normalizedOptions, dividend, inclusive )",
       "level": 2,
-      "number": "13.13"
+      "number": "13.12"
     },
     {
       "id": "sec-temporal-totemporaldatetimeroundingincrement",
       "title": "ToTemporalDateTimeRoundingIncrement ( normalizedOptions, smallestUnit )",
       "level": 2,
-      "number": "13.14"
+      "number": "13.13"
     },
     {
       "id": "sec-temporal-tosecondsstringprecision",
       "title": "ToSecondsStringPrecision ( normalizedOptions )",
       "level": 2,
-      "number": "13.15"
+      "number": "13.14"
     },
     {
       "id": "sec-temporal-gettemporalunit",
       "title": "GetTemporalUnit ( normalizedOptions, key, unitGroup, default [ , extraValues ] )",
       "level": 2,
-      "number": "13.16"
+      "number": "13.15"
     },
     {
       "id": "sec-temporal-torelativetemporalobject",
       "title": "ToRelativeTemporalObject ( options )",
       "level": 2,
-      "number": "13.17"
+      "number": "13.16"
     },
     {
       "id": "sec-temporal-largeroftwotemporalunits",
       "title": "LargerOfTwoTemporalUnits ( u1, u2 )",
       "level": 2,
-      "number": "13.18"
+      "number": "13.17"
     },
     {
       "id": "sec-temporal-mergelargestunitoption",
       "title": "MergeLargestUnitOption ( options, largestUnit )",
       "level": 2,
-      "number": "13.19"
+      "number": "13.18"
     },
     {
       "id": "sec-temporal-maximumtemporaldurationroundingincrement",
       "title": "MaximumTemporalDurationRoundingIncrement ( unit )",
       "level": 2,
-      "number": "13.20"
+      "number": "13.19"
     },
     {
       "id": "sec-temporal-rejectobjectwithcalendarortimezone",
       "title": "RejectObjectWithCalendarOrTimeZone ( object )",
       "level": 2,
-      "number": "13.21"
+      "number": "13.20"
     },
     {
       "id": "sec-temporal-formatsecondsstringpart",
       "title": "FormatSecondsStringPart ( second, millisecond, microsecond, nanosecond, precision )",
       "level": 2,
-      "number": "13.22"
+      "number": "13.21"
     },
     {
       "id": "sec-temporal-roundtowardszero",
       "title": "RoundTowardsZero ( x )",
       "level": 2,
-      "number": "13.23"
+      "number": "13.22"
     },
     {
       "id": "sec-temporal-getunsignedroundingmode",
       "title": "GetUnsignedRoundingMode ( roundingMode, isNegative )",
       "level": 2,
-      "number": "13.24"
+      "number": "13.23"
     },
     {
       "id": "sec-temporal-applyunsignedroundingmode",
       "title": "ApplyUnsignedRoundingMode ( x, r1, r2, unsignedRoundingMode )",
       "level": 2,
-      "number": "13.25"
+      "number": "13.24"
     },
     {
       "id": "sec-temporal-roundnumbertoincrement",
       "title": "RoundNumberToIncrement ( x, increment, roundingMode )",
+      "level": 2,
+      "number": "13.25"
+    },
+    {
+      "id": "sec-temporal-roundnumbertoincrementasifpositive",
+      "title": "RoundNumberToIncrementAsIfPositive ( x, increment, roundingMode )",
       "level": 2,
       "number": "13.26"
     },
@@ -3641,40 +3629,40 @@
       "number": "13.43"
     },
     {
-      "id": "sec-temporal-preparepartialtemporalfields",
-      "title": "PreparePartialTemporalFields ( fields, fieldNames )",
-      "level": 2,
-      "number": "13.44"
-    },
-    {
       "id": "sec-temporal-legacy-date-objects",
       "title": "Amendments to the ECMAScript® 2023 Language Specification",
       "level": 1,
       "number": "14"
     },
     {
+      "id": "sec-temporal-mergelists",
+      "title": "MergeLists ( a, b )",
+      "level": 2,
+      "number": "14.1"
+    },
+    {
       "id": "sec-literals-numeric-literals",
       "title": "Numeric Literals",
       "level": 2,
-      "number": "14.1"
+      "number": "14.2"
     },
     {
       "id": "sec-mathematical-operations",
       "title": "Mathematical Operations",
       "level": 2,
-      "number": "14.2"
+      "number": "14.3"
     },
     {
       "id": "sec-temporal-properties-of-the-legacy-date-prototype-object",
       "title": "Properties of the Date Prototype Object",
       "level": 2,
-      "number": "14.3"
+      "number": "14.4"
     },
     {
       "id": "sec-date.prototype.totemporalinstant",
       "title": "Date.prototype.toTemporalInstant ( )",
       "level": 3,
-      "number": "14.3.1"
+      "number": "14.4.1"
     },
     {
       "id": "sec-temporal-intl",
@@ -3707,18 +3695,6 @@
       "number": "15.1.3"
     },
     {
-      "id": "sup-calendar-types",
-      "title": "Calendar Types",
-      "level": 3,
-      "number": "15.1.4"
-    },
-    {
-      "id": "sup-availablecalendars",
-      "title": "AvailableCalendars ( )",
-      "level": 4,
-      "number": "15.1.4.1"
-    },
-    {
       "id": "sec-abstract-operations",
       "title": "Abstract Operations",
       "level": 2,
@@ -3729,6 +3705,12 @@
       "title": "GetOptionsObject ( options )",
       "level": 3,
       "number": "15.2.1"
+    },
+    {
+      "id": "sec-getoption-deleted",
+      "title": "GetOption ( options, property, type, values, default )",
+      "level": 3,
+      "number": "15.2.2"
     },
     {
       "id": "sec-datetimeformat-abstracts",
