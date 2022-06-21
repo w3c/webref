@@ -1,6 +1,0 @@
-// Source: MediaStream Recording (https://www.w3.org/TR/mediastream-recording/)
-[Exposed=Window]
-interface MediaRecorderErrorEvent : Event {
-  constructor(DOMString type, MediaRecorderErrorEventInit eventInitDict);
-  [SameObject] readonly attribute DOMException error;
-};

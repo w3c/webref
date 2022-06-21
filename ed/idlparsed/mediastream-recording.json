@@ -8,8 +8,7 @@
       "constructors": {
         "Window": [
           "MediaRecorder",
-          "BlobEvent",
-          "MediaRecorderErrorEvent"
+          "BlobEvent"
         ]
       },
       "functions": {}
@@ -640,111 +639,6 @@
         ],
         "extAttrs": [],
         "partial": false
-      },
-      "MediaRecorderErrorEventInit": {
-        "fragment": "dictionary MediaRecorderErrorEventInit : EventInit {\n  required DOMException error;\n};",
-        "type": "dictionary",
-        "name": "MediaRecorderErrorEventInit",
-        "inheritance": "EventInit",
-        "members": [
-          {
-            "type": "field",
-            "name": "error",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMException"
-            },
-            "default": null,
-            "required": true
-          }
-        ],
-        "extAttrs": [],
-        "partial": false
-      },
-      "MediaRecorderErrorEvent": {
-        "fragment": "[Exposed=Window]\ninterface MediaRecorderErrorEvent : Event {\n  constructor(DOMString type, MediaRecorderErrorEventInit eventInitDict);\n  [SameObject] readonly attribute DOMException error;\n};",
-        "type": "interface",
-        "name": "MediaRecorderErrorEvent",
-        "inheritance": "Event",
-        "members": [
-          {
-            "type": "constructor",
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "type",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "DOMString"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              },
-              {
-                "type": "argument",
-                "name": "eventInitDict",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "MediaRecorderErrorEventInit"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              }
-            ],
-            "extAttrs": []
-          },
-          {
-            "type": "attribute",
-            "name": "error",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMException"
-            },
-            "extAttrs": [
-              {
-                "type": "extended-attribute",
-                "name": "SameObject",
-                "rhs": null,
-                "arguments": []
-              }
-            ],
-            "special": "",
-            "readonly": true
-          }
-        ],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier",
-              "value": "Window"
-            },
-            "arguments": []
-          }
-        ],
-        "partial": false
       }
     },
     "idlExtendedNames": {},
@@ -752,8 +646,7 @@
     "exposed": {
       "Window": [
         "MediaRecorder",
-        "BlobEvent",
-        "MediaRecorderErrorEvent"
+        "BlobEvent"
       ]
     },
     "dependencies": {
@@ -777,15 +670,6 @@
       "BlobEventInit": [
         "Blob",
         "DOMHighResTimeStamp"
-      ],
-      "MediaRecorderErrorEventInit": [
-        "EventInit",
-        "DOMException"
-      ],
-      "MediaRecorderErrorEvent": [
-        "Event",
-        "MediaRecorderErrorEventInit",
-        "DOMException"
       ]
     },
     "externalDependencies": [
@@ -794,9 +678,7 @@
       "EventHandler",
       "Event",
       "Blob",
-      "DOMHighResTimeStamp",
-      "EventInit",
-      "DOMException"
+      "DOMHighResTimeStamp"
     ],
     "hasObsoleteIdl": false
   }
