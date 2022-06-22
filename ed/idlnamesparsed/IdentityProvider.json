@@ -6,7 +6,7 @@
       "title": "Federated Credential Management API",
       "url": "https://fedidcg.github.io/FedCM/"
     },
-    "fragment": "dictionary IdentityProvider {\n  required USVString url;\n  required USVString clientId;\n  USVString nonce;\n  USVString hint;\n};",
+    "fragment": "dictionary IdentityProvider {\n  required USVString configURL;\n  required USVString clientId;\n  USVString nonce;\n  USVString hint;\n};",
     "href": "https://fedidcg.github.io/FedCM/#dictdef-identityprovider"
   },
   "extended": [],
@@ -34,10 +34,10 @@
         "definedIn": "pre"
       },
       {
-        "id": "dom-identityprovider-url",
-        "href": "https://fedidcg.github.io/FedCM/#dom-identityprovider-url",
+        "id": "dom-identityprovider-configurl",
+        "href": "https://fedidcg.github.io/FedCM/#dom-identityprovider-configurl",
         "linkingText": [
-          "url"
+          "configURL"
         ],
         "localLinkingText": [],
         "type": "dict-member",
