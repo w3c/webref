@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2022-06-22T12:44:21.223Z",
+  "date": "2022-06-22T18:43:27.177Z",
   "options": {
     "fallback": "webref-fallback/ed/index.json",
     "output": "report",
@@ -22,7 +22,7 @@
   },
   "stats": {
     "crawled": 469,
-    "errors": 3
+    "errors": 6
   },
   "crawler": "reffy-7.1.1",
   "results": [
@@ -170,9 +170,9 @@
       ],
       "crawled": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 21 Jun 2022 00:53:35 GMT"
+        "lastModified": "Wed, 22 Jun 2022 18:05:00 GMT"
       },
-      "date": "21 June 2022",
+      "date": "22 June 2022",
       "links": "links/rfc6265bis.json",
       "refs": "refs/rfc6265bis.json",
       "headings": "headings/rfc6265bis.json",
@@ -282,7 +282,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/css-typed-om-2/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 22 Jun 2022 01:58:08 GMT"
+        "lastModified": "Wed, 22 Jun 2022 18:23:21 GMT"
       },
       "generator": "bikeshed",
       "date": "8 February 2021",
@@ -327,7 +327,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/font-metrics-api-1/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 22 Jun 2022 01:58:29 GMT"
+        "lastModified": "Wed, 22 Jun 2022 18:23:43 GMT"
       },
       "generator": "bikeshed",
       "date": "12 May 2021",
@@ -1254,7 +1254,7 @@
       ],
       "crawled": "https://drafts.fxtf.org/filter-effects-2/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 22 Jun 2022 01:55:58 GMT"
+        "lastModified": "Wed, 22 Jun 2022 18:19:30 GMT"
       },
       "generator": "bikeshed",
       "date": "10 February 2022",
@@ -3103,7 +3103,7 @@
       ],
       "crawled": "https://tc39.es/proposal-temporal/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 22 Jun 2022 08:03:05 GMT"
+        "lastModified": "Wed, 22 Jun 2022 17:20:02 GMT"
       },
       "date": "22 June 2022",
       "links": "links/tc39-temporal.json",
@@ -3932,10 +3932,10 @@
       ],
       "crawled": "https://w3c.github.io/webdriver-bidi/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 21 Jun 2022 12:58:49 GMT"
+        "lastModified": "Wed, 22 Jun 2022 16:13:26 GMT"
       },
       "generator": "bikeshed",
-      "date": "21 June 2022",
+      "date": "22 June 2022",
       "links": "links/webdriver-bidi.json",
       "refs": "refs/webdriver-bidi.json",
       "dfns": "dfns/webdriver-bidi.json",
@@ -6135,10 +6135,10 @@
       ],
       "crawled": "https://wicg.github.io/navigation-api/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 15 Jun 2022 17:03:11 GMT"
+        "lastModified": "Wed, 22 Jun 2022 16:12:13 GMT"
       },
       "generator": "bikeshed",
-      "date": "15 June 2022",
+      "date": "22 June 2022",
       "links": "links/navigation-api.json",
       "refs": "refs/navigation-api.json",
       "events": "events/navigation-api.json",
@@ -7625,10 +7625,10 @@
       ],
       "crawled": "https://wicg.github.io/webhid/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 24 Mar 2022 20:56:11 GMT"
+        "lastModified": "Wed, 22 Jun 2022 16:43:13 GMT"
       },
       "generator": "respec",
-      "date": "24 March 2022",
+      "date": "22 June 2022",
       "links": "links/webhid.json",
       "refs": "refs/webhid.json",
       "events": "events/webhid.json",
@@ -12075,7 +12075,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/css-animationworklet-1/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 22 Jun 2022 01:57:51 GMT"
+        "lastModified": "Wed, 22 Jun 2022 18:22:45 GMT"
       },
       "generator": "bikeshed",
       "date": "18 August 2020",
@@ -12748,7 +12748,8 @@
       "css": "css/css-color.json",
       "dfns": "dfns/css-color-4.json",
       "headings": "headings/css-color-4.json",
-      "ids": "ids/css-color-4.json"
+      "ids": "ids/css-color-4.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 251)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-color-5/",
@@ -12808,7 +12809,8 @@
       "css": "css/css-color-5.json",
       "dfns": "dfns/css-color-5.json",
       "headings": "headings/css-color-5.json",
-      "ids": "ids/css-color-5.json"
+      "ids": "ids/css-color-5.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 252)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-color-adjust-1/",
@@ -14120,7 +14122,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/css-layout-api-1/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 22 Jun 2022 01:57:58 GMT"
+        "lastModified": "Wed, 22 Jun 2022 18:22:51 GMT"
       },
       "generator": "bikeshed",
       "date": "16 December 2021",
@@ -14352,7 +14354,7 @@
       ],
       "crawled": "https://drafts.fxtf.org/css-masking-1/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 22 Jun 2022 01:55:47 GMT"
+        "lastModified": "Wed, 22 Jun 2022 18:19:20 GMT"
       },
       "generator": "bikeshed",
       "date": "24 February 2022",
@@ -14935,7 +14937,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/css-paint-api-1/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 22 Jun 2022 01:58:01 GMT"
+        "lastModified": "Wed, 22 Jun 2022 18:22:56 GMT"
       },
       "generator": "bikeshed",
       "date": "15 December 2020",
@@ -15059,7 +15061,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/css-properties-values-api-1/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 22 Jun 2022 01:58:07 GMT"
+        "lastModified": "Wed, 22 Jun 2022 18:23:18 GMT"
       },
       "generator": "bikeshed",
       "date": "15 April 2022",
@@ -16545,7 +16547,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/css-typed-om-1/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 22 Jun 2022 01:58:27 GMT"
+        "lastModified": "Wed, 22 Jun 2022 18:23:42 GMT"
       },
       "generator": "bikeshed",
       "date": "20 April 2022",
@@ -17272,7 +17274,8 @@
       "idlparsed": "idlparsed/cssom-view.json",
       "dfns": "dfns/cssom-view-1.json",
       "headings": "headings/cssom-view-1.json",
-      "ids": "ids/cssom-view-1.json"
+      "ids": "ids/cssom-view-1.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:282:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 326)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/device-memory-1/",
@@ -17660,10 +17663,10 @@
       ],
       "crawled": "https://w3c.github.io/epub-specs/epub33/core/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 20 Jun 2022 14:17:52 GMT"
+        "lastModified": "Wed, 22 Jun 2022 14:47:09 GMT"
       },
       "generator": "respec",
-      "date": "20 June 2022",
+      "date": "22 June 2022",
       "links": "links/epub-33.json",
       "refs": "refs/epub-33.json",
       "dfns": "dfns/epub-33.json",
@@ -17710,10 +17713,10 @@
       ],
       "crawled": "https://w3c.github.io/epub-specs/epub33/rs/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 20 Jun 2022 14:17:52 GMT"
+        "lastModified": "Wed, 22 Jun 2022 14:47:09 GMT"
       },
       "generator": "respec",
-      "date": "20 June 2022",
+      "date": "22 June 2022",
       "links": "links/epub-rs-33.json",
       "refs": "refs/epub-rs-33.json",
       "idl": "idl/epub-rs.idl",
@@ -17944,7 +17947,7 @@
       ],
       "crawled": "https://drafts.fxtf.org/fill-stroke/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 22 Jun 2022 01:55:56 GMT"
+        "lastModified": "Wed, 22 Jun 2022 18:19:28 GMT"
       },
       "generator": "bikeshed",
       "date": "4 April 2017",
@@ -18004,7 +18007,7 @@
       ],
       "crawled": "https://drafts.fxtf.org/filter-effects-1/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 22 Jun 2022 01:56:23 GMT"
+        "lastModified": "Wed, 22 Jun 2022 18:19:56 GMT"
       },
       "generator": "bikeshed",
       "date": "21 February 2022",
@@ -18355,7 +18358,7 @@
       ],
       "crawled": "https://drafts.fxtf.org/geometry/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 22 Jun 2022 01:56:33 GMT"
+        "lastModified": "Wed, 22 Jun 2022 18:20:14 GMT"
       },
       "generator": "bikeshed",
       "date": "10 February 2022",
@@ -20329,7 +20332,7 @@
       ],
       "crawled": "https://drafts.fxtf.org/motion-1/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 22 Jun 2022 01:56:38 GMT"
+        "lastModified": "Wed, 22 Jun 2022 18:20:26 GMT"
       },
       "generator": "bikeshed",
       "date": "23 February 2022",
@@ -22266,10 +22269,10 @@
       ],
       "crawled": "https://w3c.github.io/secure-payment-confirmation/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 01 Jun 2022 18:07:42 GMT"
+        "lastModified": "Wed, 22 Jun 2022 17:22:02 GMT"
       },
       "generator": "bikeshed",
-      "date": "1 June 2022",
+      "date": "22 June 2022",
       "links": "links/secure-payment-confirmation.json",
       "refs": "refs/secure-payment-confirmation.json",
       "idl": "idl/secure-payment-confirmation.idl",

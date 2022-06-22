@@ -35,6 +35,12 @@ partial interface WorkerNavigator {
 // Source: User-Agent Client Hints (https://wicg.github.io/ua-client-hints/)
 WorkerNavigator includes NavigatorUA;
 
+// Source: WebHID API (https://wicg.github.io/webhid/)
+[Exposed=ServiceWorker, SecureContext]
+partial interface WorkerNavigator {
+    [SameObject] readonly attribute HID hid;
+};
+
 // Source: WebUSB API (https://wicg.github.io/webusb/)
 [Exposed=(DedicatedWorker,SharedWorker), SecureContext]
 partial interface WorkerNavigator {
