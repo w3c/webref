@@ -6,7 +6,7 @@
       "title": "WebHID API",
       "url": "https://wicg.github.io/webhid/"
     },
-    "fragment": "[Exposed=Window, SecureContext]\ninterface HID : EventTarget {\n    attribute EventHandler onconnect;\n    attribute EventHandler ondisconnect;\n    Promise<sequence<HIDDevice>> getDevices();\n    Promise<sequence<HIDDevice>> requestDevice(\n        HIDDeviceRequestOptions options);\n};",
+    "fragment": "[Exposed=(Window,ServiceWorker), SecureContext]\ninterface HID : EventTarget {\n    attribute EventHandler onconnect;\n    attribute EventHandler ondisconnect;\n    Promise<sequence<HIDDevice>> getDevices();\n    Promise<sequence<HIDDevice>> requestDevice(\n        HIDDeviceRequestOptions options);\n};",
     "href": "https://wicg.github.io/webhid/#dom-hid"
   },
   "extended": [],
@@ -43,7 +43,7 @@
           "id": "hid-interface",
           "href": "https://wicg.github.io/webhid/#hid-interface",
           "title": "HID interface",
-          "number": "5"
+          "number": "6"
         },
         "definedIn": "pre"
       },
@@ -66,7 +66,7 @@
           "id": "hid-interface",
           "href": "https://wicg.github.io/webhid/#hid-interface",
           "title": "HID interface",
-          "number": "5"
+          "number": "6"
         },
         "definedIn": "dt"
       },
@@ -89,7 +89,7 @@
           "id": "hid-interface",
           "href": "https://wicg.github.io/webhid/#hid-interface",
           "title": "HID interface",
-          "number": "5"
+          "number": "6"
         },
         "definedIn": "dt"
       },
@@ -114,7 +114,7 @@
           "id": "getdevices-method",
           "href": "https://wicg.github.io/webhid/#getdevices-method",
           "title": "getDevices() method",
-          "number": "5.1"
+          "number": "6.1"
         },
         "definedIn": "heading"
       },
@@ -140,7 +140,7 @@
           "id": "requestdevice-method",
           "href": "https://wicg.github.io/webhid/#requestdevice-method",
           "title": "requestDevice() method",
-          "number": "5.2"
+          "number": "6.2"
         },
         "definedIn": "heading"
       }

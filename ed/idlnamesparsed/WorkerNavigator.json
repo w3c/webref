@@ -82,6 +82,13 @@
     },
     {
       "spec": {
+        "title": "WebHID API",
+        "url": "https://wicg.github.io/webhid/"
+      },
+      "fragment": "[Exposed=ServiceWorker, SecureContext]\npartial interface WorkerNavigator {\n    [SameObject] readonly attribute HID hid;\n};"
+    },
+    {
+      "spec": {
         "title": "WebUSB API",
         "url": "https://wicg.github.io/webusb/"
       },
@@ -978,6 +985,31 @@
           "number": "4"
         },
         "definedIn": "pre"
+      }
+    ],
+    "https://wicg.github.io/webhid/": [
+      {
+        "id": "dom-workernavigator-hid",
+        "href": "https://wicg.github.io/webhid/#dom-workernavigator-hid",
+        "linkingText": [
+          "hid"
+        ],
+        "localLinkingText": [
+          "WorkerNavigator.hid"
+        ],
+        "type": "attribute",
+        "for": [
+          "WorkerNavigator"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "hid-attribute-0",
+          "href": "https://wicg.github.io/webhid/#hid-attribute-0",
+          "title": "hid attribute",
+          "number": "5.1"
+        },
+        "definedIn": "heading"
       }
     ],
     "https://wicg.github.io/webusb/": [
