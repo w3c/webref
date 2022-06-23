@@ -61,6 +61,24 @@
     "<color()>": {
       "value": "color( [from <color>]? <colorspace-params> [ / [ <alpha-value> | none ] ]? )"
     },
+    "<colorspace-params>": {
+      "value": "[<custom-params> | <predefined-rgb-params> | <xyz-params>]"
+    },
+    "<custom-params>": {
+      "value": "<dashed-ident> [ <number> | <percentage> | none ]#"
+    },
+    "<predefined-rgb-params>": {
+      "value": "<predefined-rgb> [ <number> | <percentage> | none ]{3}"
+    },
+    "<predefined-rgb>": {
+      "value": "srgb | srgb-linear | display-p3 | a98-rgb | prophoto-rgb | rec2020"
+    },
+    "<xyz-params>": {
+      "value": "<xyz> [ <number> | <percentage> | none ]{3}"
+    },
+    "<xyz>": {
+      "value": "xyz | xyz-d50 | xyz-d65"
+    },
     "<device-cmyk()>": {
       "value": "device-cmyk( <cmyk-component>{4} [ / <alpha-value> ]? )"
     },
