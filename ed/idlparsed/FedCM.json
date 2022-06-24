@@ -90,7 +90,7 @@
         "partial": false
       },
       "IdentityProvider": {
-        "fragment": "dictionary IdentityProvider {\n  required USVString configURL;\n  required USVString clientId;\n  USVString nonce;\n  USVString hint;\n};",
+        "fragment": "dictionary IdentityProvider {\n  required USVString configURL;\n  required USVString clientId;\n  USVString nonce;\n};",
         "type": "dictionary",
         "name": "IdentityProvider",
         "inheritance": null,
@@ -128,21 +128,6 @@
           {
             "type": "field",
             "name": "nonce",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "USVString"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "hint",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
