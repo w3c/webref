@@ -6,6 +6,12 @@
   "properties": {},
   "descriptors": {},
   "valuespaces": {
+    "<forgiving-selector-list>": {
+      "prose": "The <forgiving-selector-list> production instead parses each selector in the list individually, simply ignoring ones that fail to parse, so the remaining selectors can still be used."
+    },
+    "<forgiving-relative-selector-list>": {
+      "prose": "<forgiving-relative-selector-list> is identical to <forgiving-selector-list>, except it parses its components as <relative-selector> rather than <complex-selector>."
+    },
     "<selector-list>": {
       "value": "<complex-selector-list>"
     },
