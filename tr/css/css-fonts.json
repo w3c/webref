@@ -524,6 +524,18 @@
     ]
   },
   "valuespaces": {
+    "<family-name>": {
+      "prose": "The name of a font family, such as Helvetica or Verdana in the previous example."
+    },
+    "<generic-family>": {
+      "prose": "Each <generic-family> keyword represents a generic font choice, and behaves as an alias for one or more locally-installed fonts belonging to the specified generic font category. A <generic-family> can thus be used as a reliable fallback for when an author’s more specific font choices are not available. Authors are encouraged to append a generic font family as a last alternative for improved robustness. Note that <generic-family> keywords cannot be quoted (otherwise they are interpreted as a <family-name>). The set of generic family keywords is defined in § 2.1.3 Generic font families."
+    },
+    "<palette-identifier>": {
+      "prose": "This value identifies an CSS-defined palette to use. Users can define a palette by using the @font-palette-values rule. If no applicable @font-palette-values rule is present, this value behaves as normal. <palette-identifier> is parsed as a <dashed-ident>."
+    },
+    "<integer>": {
+      "prose": "Identifies a (zero-based) numerical palette index within the font."
+    },
     "<font-weight-absolute>": {
       "value": "[normal | bold | <number [1,1000]>]"
     },
@@ -583,36 +595,6 @@
     },
     "<feature-tag-value>": {
       "value": "<string> [ <integer> | on | off ]?"
-    },
-    "<stylistic()>": {
-      "value": "stylistic(<feature-value-name>)"
-    },
-    "<styleset()>": {
-      "value": "styleset(<feature-value-name>#)"
-    },
-    "<character-variant()>": {
-      "value": "character-variant(<feature-value-name>#)"
-    },
-    "<swash()>": {
-      "value": "swash(<feature-value-name>)"
-    },
-    "<ornaments()>": {
-      "value": "ornaments(<feature-value-name>)"
-    },
-    "<annotation()>": {
-      "value": "annotation(<feature-value-name>)"
-    },
-    "<family-name>": {
-      "prose": "The name of a font family, such as Helvetica or Verdana in the previous example."
-    },
-    "<generic-family>": {
-      "prose": "Each <generic-family> keyword represents a generic font choice, and behaves as an alias for one or more locally-installed fonts belonging to the specified generic font category. A <generic-family> can thus be used as a reliable fallback for when an author’s more specific font choices are not available. Authors are encouraged to append a generic font family as a last alternative for improved robustness. Note that <generic-family> keywords cannot be quoted (otherwise they are interpreted as a <family-name>). The set of generic family keywords is defined in § 2.1.3 Generic font families."
-    },
-    "<palette-identifier>": {
-      "prose": "This value identifies an CSS-defined palette to use. Users can define a palette by using the @font-palette-values rule. If no applicable @font-palette-values rule is present, this value behaves as normal. <palette-identifier> is parsed as a <dashed-ident>."
-    },
-    "<integer>": {
-      "prose": "Identifies a (zero-based) numerical palette index within the font."
     }
   }
 }

@@ -95,11 +95,18 @@
   },
   "descriptors": {},
   "valuespaces": {
-    "<quote>": {
-      "value": "open-quote | close-quote | no-open-quote | no-close-quote"
+    "<content-replacement>": {
+      "value": "<image>"
+    },
+    "<content-list>": {
+      "value": "[ <string> | contents | <image> | <counter> | <quote> | <target> | <leader()> ]+"
     },
     "<leader()>": {
       "value": "leader( <leader-type> )"
+    },
+    "<image>": {},
+    "<quote>": {
+      "value": "open-quote | close-quote | no-open-quote | no-close-quote"
     },
     "<leader-type>": {
       "value": "dotted | solid | space | <string>"
@@ -121,12 +128,6 @@
     },
     "<content()>": {
       "value": "content( [ text | before | after | first-letter | marker ]? )"
-    },
-    "<content-replacement>": {
-      "value": "<image>"
-    },
-    "<content-list>": {
-      "value": "[ <string> | contents | <image> | <counter> | <quote> | <target> | <leader()> ]+"
     }
   }
 }

@@ -175,6 +175,12 @@
     ]
   },
   "valuespaces": {
+    "<media-query-list>": {
+      "prose": "To parse a <media-query-list> production, parse a comma-separated list of component values, then parse each entry in the returned list as a <media-query>. Its value is the list of <media-query>s so produced."
+    },
+    "<mq-boolean>": {
+      "prose": "The <mq-boolean> value type is an <integer> with the value 0 or 1. Any other integer value is invalid. Note that -0 is always equivalent to 0 in CSS, and so is also accepted as a valid <mq-boolean> value."
+    },
     "<media-query>": {
       "value": "<media-condition> | [ not | only ]? <media-type> [ and <media-condition-without-or> ]?"
     },

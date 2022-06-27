@@ -27,6 +27,7 @@
       "securityerror",
       "idl-DOMException",
       "resolve",
+      "notsupportederror",
       "exceptiondef-typeerror",
       "idl-unsigned-long",
       "idl-unsigned-short",
@@ -47,11 +48,15 @@
     ],
     "https://html.spec.whatwg.org/": [
       "navigator",
+      "workernavigator",
       "eventhandler",
-      "event-handler-idl-attributes",
       "concept-relevant-global",
+      "event-handler-idl-attributes",
+      "window",
       "queue-a-global-task",
+      "dom-window",
       "concept-document-window",
+      "global-object",
       "allowed-to-use",
       "in-parallel",
       "transient-activation"
@@ -61,6 +66,11 @@
       "concept-event-fire",
       "event",
       "dictdef-eventinit"
+    ],
+    "https://www.w3.org/TR/service-workers-1/": [
+      "serviceworkerglobalscope",
+      "dfn-service-worker-client",
+      "dfn-window-client"
     ],
     "https://infra.spec.whatwg.org/": [
       "ordered-set",
@@ -100,6 +110,7 @@
     "https://www.rfc-editor.org/rfc/rfc2119": [],
     "https://www.rfc-editor.org/rfc/rfc8174": [],
     "https://www.usb.org/document-library/device-class-definition-hid-111": [],
+    "https://browserext.github.io/browserext/": [],
     "https://www.w3.org/TR/gamepad/": [],
     "https://www.usb.org/document-library/hid-usage-tables-122": []
   }

@@ -17,10 +17,9 @@ dictionary IdentityCredentialRequestOptions {
 };
 
 dictionary IdentityProvider {
-  required USVString url;
+  required USVString configURL;
   required USVString clientId;
   USVString nonce;
-  USVString hint;
 };
 
 dictionary IdentityCredentialLogoutRpsRequest {

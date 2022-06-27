@@ -12,6 +12,10 @@
         ]
       },
       "functions": {
+        "ServiceWorker": [
+          "WorkerNavigator",
+          "HID"
+        ],
         "Window": [
           "HID",
           "HIDDevice"
@@ -20,7 +24,7 @@
     },
     "idlNames": {
       "HID": {
-        "fragment": "[Exposed=Window, SecureContext]\ninterface HID : EventTarget {\n    attribute EventHandler onconnect;\n    attribute EventHandler ondisconnect;\n    Promise<sequence<HIDDevice>> getDevices();\n    Promise<sequence<HIDDevice>> requestDevice(\n        HIDDeviceRequestOptions options);\n};",
+        "fragment": "[Exposed=(Window,ServiceWorker), SecureContext]\ninterface HID : EventTarget {\n    attribute EventHandler onconnect;\n    attribute EventHandler ondisconnect;\n    Promise<sequence<HIDDevice>> getDevices();\n    Promise<sequence<HIDDevice>> requestDevice(\n        HIDDeviceRequestOptions options);\n};",
         "type": "interface",
         "name": "HID",
         "inheritance": "EventTarget",
@@ -144,8 +148,15 @@
             "type": "extended-attribute",
             "name": "Exposed",
             "rhs": {
-              "type": "identifier",
-              "value": "Window"
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "ServiceWorker"
+                }
+              ]
             },
             "arguments": []
           },
@@ -1667,10 +1678,64 @@
           ],
           "partial": true
         }
+      ],
+      "WorkerNavigator": [
+        {
+          "fragment": "[Exposed=ServiceWorker, SecureContext]\npartial interface WorkerNavigator {\n    [SameObject] readonly attribute HID hid;\n};",
+          "type": "interface",
+          "name": "WorkerNavigator",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "attribute",
+              "name": "hid",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "HID"
+              },
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "SameObject",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "special": "",
+              "readonly": true
+            }
+          ],
+          "extAttrs": [
+            {
+              "type": "extended-attribute",
+              "name": "Exposed",
+              "rhs": {
+                "type": "identifier",
+                "value": "ServiceWorker"
+              },
+              "arguments": []
+            },
+            {
+              "type": "extended-attribute",
+              "name": "SecureContext",
+              "rhs": null,
+              "arguments": []
+            }
+          ],
+          "partial": true
+        }
       ]
     },
     "globals": {},
     "exposed": {
+      "ServiceWorker": [
+        "WorkerNavigator",
+        "HID"
+      ],
       "Window": [
         "HID",
         "HIDDevice",
@@ -1680,6 +1745,9 @@
     },
     "dependencies": {
       "Navigator": [
+        "HID"
+      ],
+      "WorkerNavigator": [
         "HID"
       ],
       "HID": [
@@ -1732,6 +1800,7 @@
     },
     "externalDependencies": [
       "Navigator",
+      "WorkerNavigator",
       "EventTarget",
       "EventHandler",
       "BufferSource",

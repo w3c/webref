@@ -14698,6 +14698,28 @@
       "definedIn": "prose"
     },
     {
+      "id": "sec-regexp-records",
+      "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-regexp-records",
+      "linkingText": [
+        "RegExp Record",
+        "RegExp Records"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ECMAScript"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-regexp-records",
+        "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-regexp-records",
+        "title": "RegExp Records",
+        "number": "22.2.2.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "sec-runtime-semantics-repeatmatcher-abstract-operation",
       "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-runtime-semantics-repeatmatcher-abstract-operation",
       "linkingText": [
@@ -14720,7 +14742,7 @@
       "id": "sec-runtime-semantics-iswordchar-abstract-operation",
       "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-runtime-semantics-iswordchar-abstract-operation",
       "linkingText": [
-        "IsWordChar(e)"
+        "IsWordChar(rer, Input, e)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -14730,7 +14752,7 @@
       "heading": {
         "id": "sec-runtime-semantics-iswordchar-abstract-operation",
         "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-runtime-semantics-iswordchar-abstract-operation",
-        "title": "IsWordChar ( e )",
+        "title": "IsWordChar ( rer, Input, e )",
         "number": "22.2.2.4.1"
       },
       "definedIn": "heading"
@@ -14739,7 +14761,7 @@
       "id": "sec-runtime-semantics-charactersetmatcher-abstract-operation",
       "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-runtime-semantics-charactersetmatcher-abstract-operation",
       "linkingText": [
-        "CharacterSetMatcher(A, invert, direction)"
+        "CharacterSetMatcher(rer, A, invert, direction)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -14749,7 +14771,7 @@
       "heading": {
         "id": "sec-runtime-semantics-charactersetmatcher-abstract-operation",
         "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-runtime-semantics-charactersetmatcher-abstract-operation",
-        "title": "CharacterSetMatcher ( A, invert, direction )",
+        "title": "CharacterSetMatcher ( rer, A, invert, direction )",
         "number": "22.2.2.7.1"
       },
       "definedIn": "heading"
@@ -14758,7 +14780,7 @@
       "id": "sec-backreference-matcher",
       "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-backreference-matcher",
       "linkingText": [
-        "BackreferenceMatcher(n, direction)"
+        "BackreferenceMatcher(rer, n, direction)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -14768,7 +14790,7 @@
       "heading": {
         "id": "sec-backreference-matcher",
         "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-backreference-matcher",
-        "title": "BackreferenceMatcher ( n, direction )",
+        "title": "BackreferenceMatcher ( rer, n, direction )",
         "number": "22.2.2.7.2"
       },
       "definedIn": "heading"
@@ -14777,7 +14799,7 @@
       "id": "sec-runtime-semantics-canonicalize-ch",
       "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-runtime-semantics-canonicalize-ch",
       "linkingText": [
-        "Canonicalize(ch)"
+        "Canonicalize(rer, ch)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -14787,7 +14809,7 @@
       "heading": {
         "id": "sec-runtime-semantics-canonicalize-ch",
         "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-runtime-semantics-canonicalize-ch",
-        "title": "Canonicalize ( ch )",
+        "title": "Canonicalize ( rer, ch )",
         "number": "22.2.2.7.3"
       },
       "definedIn": "heading"
@@ -14928,6 +14950,25 @@
       "definedIn": "heading"
     },
     {
+      "id": "sec-wordcharacters",
+      "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-wordcharacters",
+      "linkingText": [
+        "WordCharacters(rer)"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-wordcharacters",
+        "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-wordcharacters",
+        "title": "WordCharacters ( rer )",
+        "number": "22.2.3.2.4"
+      },
+      "definedIn": "heading"
+    },
+    {
       "id": "sec-regexpcreate",
       "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-regexpcreate",
       "linkingText": [
@@ -14942,7 +14983,7 @@
         "id": "sec-regexpcreate",
         "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-regexpcreate",
         "title": "RegExpCreate ( P, F )",
-        "number": "22.2.3.2.4"
+        "number": "22.2.3.2.5"
       },
       "definedIn": "heading"
     },
@@ -14961,7 +15002,7 @@
         "id": "sec-escaperegexppattern",
         "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-escaperegexppattern",
         "title": "EscapeRegExpPattern ( P, F )",
-        "number": "22.2.3.2.5"
+        "number": "22.2.3.2.6"
       },
       "definedIn": "heading"
     },
@@ -23284,7 +23325,7 @@
       "id": "sec-runtime-semantics-characterrangeorunion-abstract-operation",
       "href": "https://tc39.es/ecma262/multipage/additional-ecmascript-features-for-web-browsers.html#sec-runtime-semantics-characterrangeorunion-abstract-operation",
       "linkingText": [
-        "CharacterRangeOrUnion(A, B)"
+        "CharacterRangeOrUnion(rer, A, B)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -23294,7 +23335,7 @@
       "heading": {
         "id": "sec-runtime-semantics-characterrangeorunion-abstract-operation",
         "href": "https://tc39.es/ecma262/multipage/additional-ecmascript-features-for-web-browsers.html#sec-runtime-semantics-characterrangeorunion-abstract-operation",
-        "title": "CharacterRangeOrUnion ( A, B )",
+        "title": "CharacterRangeOrUnion ( rer, A, B )",
         "number": "B.1.2.8.1"
       },
       "definedIn": "heading"

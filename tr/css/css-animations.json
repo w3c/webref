@@ -141,15 +141,6 @@
   },
   "descriptors": {},
   "valuespaces": {
-    "<keyframes-name>": {
-      "value": "<custom-ident> | <string>"
-    },
-    "<keyframe-block>": {
-      "value": "<keyframe-selector># { <declaration-list> }"
-    },
-    "<keyframe-selector>": {
-      "value": "from | to | <percentage>"
-    },
     "<single-animation-iteration-count>": {
       "value": "infinite | <number>"
     },
@@ -164,6 +155,18 @@
     },
     "<single-animation>": {
       "value": "<time> || <timing-function> || <time> || <single-animation-iteration-count> || <single-animation-direction> || <single-animation-fill-mode> || <single-animation-play-state> || [ none | <keyframes-name> ]"
+    },
+    "<AnimationEvent(type, animationEventInitDict)>": {
+      "prose": "AnimationEvent(type, animationEventInitDict) is an event constructor."
+    },
+    "<keyframes-name>": {
+      "value": "<custom-ident> | <string>"
+    },
+    "<keyframe-block>": {
+      "value": "<keyframe-selector># { <declaration-list> }"
+    },
+    "<keyframe-selector>": {
+      "value": "from | to | <percentage>"
     }
   }
 }

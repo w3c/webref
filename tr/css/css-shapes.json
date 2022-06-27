@@ -49,14 +49,29 @@
   },
   "descriptors": {},
   "valuespaces": {
-    "<shape-box>": {
-      "value": "<box> | margin-box"
+    "<basic-shape>": {
+      "prose": "The <basic-shape> type can be specified using basic shape functions. When using this syntax to define shapes, the reference box is defined by each property that uses <basic-shape> values. The coordinate system for the shape has its origin on the top-left corner of the reference box with the x-axis running to the right and the y-axis running downwards. All the lengths expressed in percentages are resolved from the used dimensions of the reference box."
+    },
+    "<inset()>": {
+      "value": "inset( <shape-arg>{1,4} [round <border-radius>]? )"
+    },
+    "<circle()>": {
+      "value": "circle( [<shape-radius>]? [at <position>]? )"
+    },
+    "<ellipse()>": {
+      "value": "ellipse( [<shape-radius>{2}]? [at <position>]? )"
+    },
+    "<polygon()>": {
+      "value": "polygon( [<fill-rule>,]? [<shape-arg> <shape-arg>]# )"
     },
     "<shape-arg>": {
-      "prose": "Defines a radius for a circle or ellipse. If omitted it defaults to closest-side. closest-side uses the length from the center of the shape to the closest side of the reference box. For circles, this is the closest side in any dimension. For ellipses, this is the closest side in the radius dimension. farthest-side uses the length from the center of the shape to the farthest side of the reference box. For circles, this is the farthest side in any dimension. For ellipses, this is the farthest side in the radius dimension."
+      "value": "<length> | <percentage>"
     },
     "<shape-radius>": {
-      "prose": "Defines a radius for a circle or ellipse. If omitted it defaults to closest-side. closest-side uses the length from the center of the shape to the closest side of the reference box. For circles, this is the closest side in any dimension. For ellipses, this is the closest side in the radius dimension. farthest-side uses the length from the center of the shape to the farthest side of the reference box. For circles, this is the farthest side in any dimension. For ellipses, this is the farthest side in the radius dimension."
+      "value": "<length> | <percentage> | closest-side | farthest-side"
+    },
+    "<shape-box>": {
+      "value": "<box> | margin-box"
     }
   }
 }

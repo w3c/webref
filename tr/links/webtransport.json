@@ -16,33 +16,62 @@
       "sec-Disclosure"
     ],
     "https://www.w3.org/2004/01/pp-impl/125908/status": [],
-    "https://html.spec.whatwg.org/": [
-      "eventhandler",
-      "errorevent",
-      "queue-a-task",
-      "networking-task-source",
-      "event-handlers",
-      "event-handler-event-type",
+    "https://fetch.spec.whatwg.org/": [
+      "concept-connection",
+      "http-origin",
+      "credentials",
+      "concept-request",
+      "concept-request-url",
+      "concept-request-client",
+      "concept-request-policy-container",
+      "concept-request-destination",
       "concept-request-origin",
+      "block-bad-port",
+      "determine-the-network-partition-key",
+      "concept-connection-obtain",
+      "concept-fetch"
+    ],
+    "https://datatracker.ietf.org/doc/html/draft-ietf-webtrans-http3/": [
+      "section-4.4",
+      "section-4.1",
+      "section-4.2",
+      "section-3.3",
+      "section-5"
+    ],
+    "https://html.spec.whatwg.org/": [
+      "concept-origin",
       "ascii-serialisation-of-an-origin",
       "relevant-settings-object",
       "concept-settings-object-origin",
       "concept-settings-object-policy-container",
       "in-parallel",
       "queue-a-global-task",
+      "networking-task-source",
       "concept-relevant-global",
       "unloading-document-cleanup-steps",
       "concept-agent-event-loop",
       "feedback-from-the-protocol"
     ],
-    "https://dom.spec.whatwg.org/": [
-      "concept-event",
-      "document",
-      "abortsignal-add",
-      "abortsignal-abort-reason"
+    "https://infra.spec.whatwg.org/": [
+      "isomorphic-encode",
+      "byte-sequence",
+      "implementation-defined",
+      "queue-dequeue",
+      "queue-enqueue",
+      "iteration-break",
+      "ordered-set",
+      "code-unit-prefix",
+      "byte-sequence-length",
+      "list-iterate",
+      "set-append",
+      "list-remove"
+    ],
+    "https://datatracker.ietf.org/doc/html/draft-ietf-quic-transport": [
+      "section-2.2",
+      "section-3.5",
+      "section-19.4"
     ],
     "https://webidl.spec.whatwg.org/": [
-      "dfn-throw",
       "Exposed",
       "SecureContext",
       "idl-unsigned-long",
@@ -58,14 +87,15 @@
       "idl-USVString",
       "idl-promise",
       "idl-undefined",
+      "dfn-throw",
       "syntaxerror",
       "upon-fulfillment",
       "aborterror",
-      "notsupportederror",
       "invalidstateerror",
       "idl-DOMString",
       "idl-boolean",
       "idl-sequence",
+      "notsupportederror",
       "idl-unsigned-long-long",
       "buffersource-byte-length",
       "buffersource-underlying-buffer",
@@ -76,9 +106,6 @@
       "idl-octet",
       "Clamp",
       "dom-domexception-code"
-    ],
-    "https://www.ecma-international.org/ecma-262/6.0/": [
-      "sec-promise-objects"
     ],
     "https://streams.spec.whatwg.org/": [
       "readablestream",
@@ -96,6 +123,7 @@
       "readablestream-close",
       "writablestream-set-up-closealgorithm",
       "writablestream-set-up-abortalgorithm",
+      "default-writer-write",
       "readable-byte-stream",
       "byob-reader",
       "default-reader",
@@ -105,55 +133,14 @@
       "readablestream-current-byob-request-view",
       "ws-abort",
       "ws-close",
-      "default-writer-write",
       "default-writer-close",
       "default-writer-abort",
       "rs-cancel",
       "default-reader-read",
       "generic-reader-cancel"
     ],
-    "https://fetch.spec.whatwg.org/": [
-      "concept-connection",
-      "credentials",
-      "concept-request",
-      "concept-request-url",
-      "concept-request-client",
-      "concept-request-policy-container",
-      "concept-request-destination",
-      "concept-request-origin",
-      "block-bad-port",
-      "determine-the-network-partition-key",
-      "concept-connection-obtain",
-      "obtain-a-connection-http3only",
-      "concept-header-list-set",
-      "concept-fetch",
-      "http-origin"
-    ],
-    "https://datatracker.ietf.org/doc/html/draft-ietf-webtrans-http3/": [
-      "section-4.4",
-      "section-4.1",
-      "section-4.2",
-      "section-3.3",
-      "section-5"
-    ],
-    "https://infra.spec.whatwg.org/": [
-      "isomorphic-encode",
-      "byte-sequence",
-      "implementation-defined",
-      "queue-dequeue",
-      "queue-enqueue",
-      "iteration-break",
-      "ordered-set",
-      "byte-sequence-length",
-      "byte-sequence-prefix",
-      "list-iterate",
-      "set-append",
-      "list-remove"
-    ],
-    "https://datatracker.ietf.org/doc/html/draft-ietf-quic-transport": [
-      "section-2.2",
-      "section-3.5",
-      "section-19.4"
+    "https://www.ecma-international.org/ecma-262/6.0/": [
+      "sec-promise-objects"
     ],
     "https://url.spec.whatwg.org/": [
       "concept-url",
@@ -171,13 +158,19 @@
       "textencoderstream",
       "textdecoderstream"
     ],
+    "https://dom.spec.whatwg.org/": [
+      "document",
+      "abortsignal-add",
+      "abortsignal-abort-reason"
+    ],
     "https://www.github.com/w3c/webtransport/issues/127": [],
     "https://www.github.com/whatwg/html/issues/6831": [],
     "https://www.w3.org/TR/hr-time-3/": [
       "dom-domhighrestimestamp"
     ],
     "https://www.rfc-editor.org/rfc/rfc9002": [
-      "section-5.3"
+      "section-5.3",
+      "section-6.1"
     ],
     "https://heycam.github.io/webidl/": [
       "dom-domexception-domexception"

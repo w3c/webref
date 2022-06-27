@@ -325,6 +325,21 @@
   },
   "descriptors": {},
   "valuespaces": {
+    "<rect()>": {
+      "value": "rect( <top>, <right>, <bottom>, <left> )"
+    },
+    "<top>": {
+      "prose": "<top>, <right>, <bottom>, and <left> may either have a <length> value or auto. Negative lengths are permitted. The value auto means that a given edge of the clipping region will be the same as the edge of the element’s generated border box (i.e., auto means the same as 0 for <top> and <left>, the same as the used value of the height plus the sum of vertical padding and border widths for <bottom>, and the same as the used value of the width plus the sum of the horizontal padding and border widths for <right>, such that four auto values result in the clipping region being the same as the element’s border box)."
+    },
+    "<right>": {
+      "prose": "<top>, <right>, <bottom>, and <left> may either have a <length> value or auto. Negative lengths are permitted. The value auto means that a given edge of the clipping region will be the same as the edge of the element’s generated border box (i.e., auto means the same as 0 for <top> and <left>, the same as the used value of the height plus the sum of vertical padding and border widths for <bottom>, and the same as the used value of the width plus the sum of the horizontal padding and border widths for <right>, such that four auto values result in the clipping region being the same as the element’s border box)."
+    },
+    "<bottom>": {
+      "prose": "<top>, <right>, <bottom>, and <left> may either have a <length> value or auto. Negative lengths are permitted. The value auto means that a given edge of the clipping region will be the same as the edge of the element’s generated border box (i.e., auto means the same as 0 for <top> and <left>, the same as the used value of the height plus the sum of vertical padding and border widths for <bottom>, and the same as the used value of the width plus the sum of the horizontal padding and border widths for <right>, such that four auto values result in the clipping region being the same as the element’s border box)."
+    },
+    "<left>": {
+      "prose": "<top>, <right>, <bottom>, and <left> may either have a <length> value or auto. Negative lengths are permitted. The value auto means that a given edge of the clipping region will be the same as the edge of the element’s generated border box (i.e., auto means the same as 0 for <top> and <left>, the same as the used value of the height plus the sum of vertical padding and border widths for <bottom>, and the same as the used value of the width plus the sum of the horizontal padding and border widths for <right>, such that four auto values result in the clipping region being the same as the element’s border box)."
+    },
     "<clip-source>": {
       "value": "<url>"
     },
@@ -345,12 +360,6 @@
     },
     "<mask-layer>": {
       "value": "<mask-reference> || <position> [ / <bg-size> ]? ||<repeat-style> || <geometry-box> || [ <geometry-box> | no-clip ] || <compositing-operator> || <masking-mode>"
-    },
-    "<rect()>": {
-      "value": "rect( <top>, <right>, <bottom>, <left> )"
-    },
-    "<url>": {
-      "prose": "A URL reference to a mask element (for example url(commonmasks.svg#mask)) or to a CSS image."
     }
   }
 }
