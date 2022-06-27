@@ -6,8 +6,18 @@
   "properties": {},
   "descriptors": {},
   "valuespaces": {
+    "<toggle()>": {
+      "prose": "The toggle() expression allows descendant elements to cycle over a list of values instead of inheriting the same value."
+    },
+    "<toggle-value>": {
+      "prose": "where <toggle-value> is any CSS value that is valid where the expression is placed. If any of the values inside are not valid, then the entire toggle() expression is invalid. The toggle() expression may be used as the value of any property, but must be the only component in that property’s value."
+    },
     "<attr()>": {
+      "prose": "The attr() function substitutes the value of an attribute on an element into a property, similar to how the var() function substitutes a custom property value into a function.",
       "value": "attr( <q-name> <attr-type>? , <declaration-value>?)"
+    },
+    "<dimension-unit>": {
+      "prose": "The <dimension-unit> production matches a literal \"%\" character (that is, a <delim-token> with a value of \"%\") or an ident whose value is any of the CSS units for <length>, <angle>, <time>, <frequency>, or <flex> values (such as px or ms)."
     },
     "<attr-type>": {
       "value": "string | url | ident | color | number | percentage | length | angle | time | frequency | flex | <dimension-unit>"

@@ -6,26 +6,143 @@
   "properties": {},
   "descriptors": {},
   "valuespaces": {
-    "<url>": {
-      "value": "url( <string> <url-modifier>* ) | src( <string> <url-modifier>* )"
+    "<mix()>": {
+      "prose": "Interpolation of two values can be represented by the mix() functional notation, whose syntax is defined as follows:"
+    },
+    "<start-value>": {
+      "prose": "The value at the “start” (0%) of the interpolation range."
+    },
+    "<end-value>": {
+      "prose": "The value at the “end” (100%) of the interpolation range."
+    },
+    "<ident>": {
+      "prose": "CSS identifiers, generically denoted by <ident>, consist of a sequence of characters conforming to the <ident-token> grammar. [CSS-SYNTAX-3] Identifiers cannot be quoted; otherwise they would be interpreted as strings. CSS properties accept two classes of identifiers: pre-defined keywords and author-defined identifiers."
+    },
+    "<custom-ident>": {
+      "prose": "Some properties accept arbitrary author-defined identifiers as a component value. This generic data type is denoted by <custom-ident>, and represents any valid CSS identifier that would not be misinterpreted as a pre-defined keyword in that property’s value definition. Such identifiers are fully case-sensitive (meaning they’re compared using the \"identical to\" operation), even in the ASCII range (e.g. example and EXAMPLE are two different, unrelated user-defined identifiers)."
+    },
+    "<dashed-ident>": {
+      "prose": "The <dashed-ident> production is a <custom-ident>, with all the case-sensitivity that implies, with the additional restriction that it must start with two dashes (U+002D HYPHEN-MINUS)."
+    },
+    "<string>": {
+      "prose": "Strings are denoted by <string>. When written literally, they consist of a sequence of characters delimited by double quotes or single quotes, corresponding to the <string-token> production in the CSS Syntax Module [CSS-SYNTAX-3]."
+    },
+    "<url()>": {
+      "prose": "Typically, a <url> is written with the url() or src() functional notations:"
+    },
+    "<src()>": {
+      "prose": "Typically, a <url> is written with the url() or src() functional notations:"
+    },
+    "<url-modifier>": {
+      "prose": "The url() function supports specifying additional <url-modifier>s, which change the meaning or the interpretation of the URL somehow. A <url-modifier> is either an <ident> or a functional notation."
+    },
+    "<zero>": {
+      "prose": "The value <zero> represents a literal number with the value 0. Expressions that merely evaluate to a <number> with the value 0 (for example, calc(0)) do not match <zero>; only literal <number-token>s do."
+    },
+    "<dimension>": {
+      "prose": "The general term dimension refers to a number with a unit attached to it; and is denoted by <dimension>."
+    },
+    "<length-percentage>": {
+      "value": "[ <length> | <percentage> ]"
+    },
+    "<frequency-percentage>": {
+      "value": "[ <frequency> | <percentage> ]"
+    },
+    "<angle-percentage>": {
+      "value": "[ <angle> | <percentage> ]"
+    },
+    "<time-percentage>": {
+      "value": "[ <time> | <percentage> ]"
     },
     "<ratio>": {
+      "prose": "Ratio values are denoted by <ratio>, and represent the ratio of two numeric values. It most often represents an aspect ratio, relating a width (first) to a height (second).",
       "value": "<number [0,∞]> [ / <number [0,∞]> ]?"
     },
-    "<position>": {
-      "value": "[ [ left | center | right ] || [ top | center | bottom ] | [ left | center | right | <length-percentage> ] [ top | center | bottom | <length-percentage> ]? | [ [ left | right ] <length-percentage> ] && [ [ top | bottom ] <length-percentage> ] ]"
+    "<angle>": {
+      "prose": "Angle values are <dimension>s denoted by <angle>. The angle unit identifiers are:"
+    },
+    "<time>": {
+      "prose": "Time values are dimensions denoted by <time>. The time unit identifiers are:"
+    },
+    "<frequency>": {
+      "prose": "Frequency values are dimensions denoted by <frequency>. The frequency unit identifiers are:"
+    },
+    "<resolution>": {
+      "prose": "Resolution units are dimensions denoted by <resolution>. The resolution unit identifiers are:"
     },
     "<calc()>": {
+      "prose": "The calc() function is a math function that allows basic arithmetic to be performed on numerical values, using addition (+), subtraction (-), multiplication (*), division (/), and parentheses.",
       "value": "calc( <calc-sum> )"
     },
     "<min()>": {
+      "prose": "The min() or max() functions contain one or more comma-separated calculations, and represent the smallest (most negative) or largest (most positive) of them, respectively.",
       "value": "min( <calc-sum># )"
     },
     "<max()>": {
+      "prose": "The min() or max() functions contain one or more comma-separated calculations, and represent the smallest (most negative) or largest (most positive) of them, respectively.",
       "value": "max( <calc-sum># )"
     },
     "<clamp()>": {
+      "prose": "The clamp() function takes three calculations—a minimum value, a central value, and a maximum value—and represents its central calculation, clamped according to its min and max calculations, favoring the min calculation if it conflicts with the max. (That is, given clamp(MIN, VAL, MAX), it represents exactly the same value as max(MIN, min(VAL, MAX))).",
       "value": "clamp( <calc-sum>#{3} )"
+    },
+    "<round(<rounding-strategy>?, A, B)>": {
+      "prose": "The round(<rounding-strategy>?, A, B) function contains an optional rounding strategy, and two calculations A and B, and returns the value of A, rounded according to the rounding strategy, to the nearest integer multiple of B either above or below A. The argument calculations can resolve to any <number>, <dimension>, or <percentage>, but must have the same type, or else the function is invalid; the result will have the same type as the arguments."
+    },
+    "<rounding-strategy>": {
+      "prose": "If A is exactly equal to an integer multiple of B, round() resolves to A exactly (preserving whether A is 0⁻ or 0⁺, if relevant). Otherwise, there are two integer multiples of B that are potentially \"closest\" to A, lower B which is closer to −∞ and upper B which is closer to +∞. The following <rounding-strategy>s dictate how to choose between them:",
+      "value": "nearest | up | down | to-zero"
+    },
+    "<mod(A, B)>": {
+      "prose": "The modulus functions mod(A, B) and rem(A, B) similarly contain two calculations A and B, and return the difference between A and the nearest integer multiple of B either above or below A. The argument calculations can resolve to any <number>, <dimension>, or <percentage>, but must have the same type, or else the function is invalid; the result will have the same type as the arguments."
+    },
+    "<rem(A, B)>": {
+      "prose": "The modulus functions mod(A, B) and rem(A, B) similarly contain two calculations A and B, and return the difference between A and the nearest integer multiple of B either above or below A. The argument calculations can resolve to any <number>, <dimension>, or <percentage>, but must have the same type, or else the function is invalid; the result will have the same type as the arguments."
+    },
+    "<sin(A)>": {
+      "prose": "The sin(A), cos(A), and tan(A) functions all contain a single calculation which must resolve to either a <number> or an <angle>, and compute their corresponding function by interpreting the result of their argument as radians. (That is, sin(45deg), sin(.125turn), and sin(3.14159 / 4) all represent the same value, approximately .707.) They all represent a <number>; sin() and cos() will always return a number between −1 and 1, while tan() can return any number between −∞ and +∞. (See § 10.9 Type Checking for details on how math functions handle ∞.)"
+    },
+    "<cos(A)>": {
+      "prose": "The sin(A), cos(A), and tan(A) functions all contain a single calculation which must resolve to either a <number> or an <angle>, and compute their corresponding function by interpreting the result of their argument as radians. (That is, sin(45deg), sin(.125turn), and sin(3.14159 / 4) all represent the same value, approximately .707.) They all represent a <number>; sin() and cos() will always return a number between −1 and 1, while tan() can return any number between −∞ and +∞. (See § 10.9 Type Checking for details on how math functions handle ∞.)"
+    },
+    "<tan(A)>": {
+      "prose": "The sin(A), cos(A), and tan(A) functions all contain a single calculation which must resolve to either a <number> or an <angle>, and compute their corresponding function by interpreting the result of their argument as radians. (That is, sin(45deg), sin(.125turn), and sin(3.14159 / 4) all represent the same value, approximately .707.) They all represent a <number>; sin() and cos() will always return a number between −1 and 1, while tan() can return any number between −∞ and +∞. (See § 10.9 Type Checking for details on how math functions handle ∞.)"
+    },
+    "<asin(A)>": {
+      "prose": "The asin(A), acos(A), and atan(A) functions are the \"arc\" or \"inverse\" trigonometric functions, representing the inverse function to their corresponding \"normal\" trig functions. All of them contain a single calculation which must resolve to a <number>, and compute their corresponding function, interpreting their result as a number of radians, representing an <angle>. The angle returned by asin() must be normalized to the range [-90deg, 90deg]; the angle returned by acos() to the range [0deg, 180deg]; and the angle returned by atan() to the range [-90deg, 90deg]."
+    },
+    "<acos(A)>": {
+      "prose": "The asin(A), acos(A), and atan(A) functions are the \"arc\" or \"inverse\" trigonometric functions, representing the inverse function to their corresponding \"normal\" trig functions. All of them contain a single calculation which must resolve to a <number>, and compute their corresponding function, interpreting their result as a number of radians, representing an <angle>. The angle returned by asin() must be normalized to the range [-90deg, 90deg]; the angle returned by acos() to the range [0deg, 180deg]; and the angle returned by atan() to the range [-90deg, 90deg]."
+    },
+    "<atan(A)>": {
+      "prose": "The asin(A), acos(A), and atan(A) functions are the \"arc\" or \"inverse\" trigonometric functions, representing the inverse function to their corresponding \"normal\" trig functions. All of them contain a single calculation which must resolve to a <number>, and compute their corresponding function, interpreting their result as a number of radians, representing an <angle>. The angle returned by asin() must be normalized to the range [-90deg, 90deg]; the angle returned by acos() to the range [0deg, 180deg]; and the angle returned by atan() to the range [-90deg, 90deg]."
+    },
+    "<atan2(A, B)>": {
+      "prose": "The atan2(A, B) function contains two comma-separated calculations, A and B. A and B can resolve to any <number>, <dimension>, or <percentage>, but must have the same type, or else the function is invalid. The function returns the <angle> between the positive X-axis and the point (B,A). The returned angle must be normalized to the interval (-180deg, 180deg] (that is, greater than -180deg, and less than or equal to 180deg)."
+    },
+    "<pow(A, B)>": {
+      "prose": "The pow(A, B) function contains two comma-separated calculations A and B, both of which must resolve to <number>s, and returns the result of raising A to the power of B, returning the value as a <number>."
+    },
+    "<sqrt(A)>": {
+      "prose": "The sqrt(A) function contains a single calculation which must resolve to a <number>, and returns the square root of the value as a <number>. (sqrt(X) and pow(X, .5) are basically equivalent, differing only in some error-handling; sqrt() is a common enough function that it is provided as a convenience.)"
+    },
+    "<hypot(A, …)>": {
+      "prose": "The hypot(A, …) function contains one or more comma-separated calculations, and returns the length of an N-dimensional vector with components equal to each of the calculations. (That is, the square root of the sum of the squares of its arguments.) The argument calculations can resolve to any <number>, <dimension>, or <percentage>, but must have the same type, or else the function is invalid; the result will have the same type as the arguments."
+    },
+    "<log(A, B?)>": {
+      "prose": "The log(A, B?) function contains one or two calculations (representing the value to be logarithmed, and the base of the logarithm, defaulting to e), which must resolve to <number>s, and returns the logarithm base B of the value A, as a <number>."
+    },
+    "<exp(A)>": {
+      "prose": "The exp(A) function contains one calculation which must resolve to a <number>, and returns the same value as pow(e, A) as a <number>."
+    },
+    "<abs(A)>": {
+      "prose": "The abs(A) function contains one calculation A, and returns the absolute value of A, as the same type as the input: if A’s numeric value is positive or 0⁺, just A again; otherwise -1 * A."
+    },
+    "<sign(A)>": {
+      "prose": "The sign(A) function contains one calculation A, and returns -1 if A’s numeric value is negative, +1 if A’s numeric value is positive, 0⁺ if A’s numeric value is 0⁺, and 0⁻ if A’s numeric value is 0⁻."
+    },
+    "<quirky-length>": {
+      "prose": "When CSS is being parsed in quirks mode, <quirky-length> is a type of <length> that is only valid in certain properties:"
     },
     "<round()>": {
       "value": "round( <rounding-strategy>?, <calc-sum>, <calc-sum> )"
@@ -89,27 +206,6 @@
     },
     "<calc-constant>": {
       "value": "e | pi | infinity | -infinity | NaN"
-    },
-    "<rounding-strategy>": {
-      "value": "nearest | up | down | to-zero"
-    },
-    "<start-value>": {
-      "prose": "The value at the “start” (0%) of the interpolation range."
-    },
-    "<end-value>": {
-      "prose": "The value at the “end” (100%) of the interpolation range."
-    },
-    "<length-percentage>": {
-      "value": "[ <length> | <percentage> ]"
-    },
-    "<frequency-percentage>": {
-      "value": "[ <frequency> | <percentage> ]"
-    },
-    "<angle-percentage>": {
-      "value": "[ <angle> | <percentage> ]"
-    },
-    "<time-percentage>": {
-      "value": "[ <time> | <percentage> ]"
     }
   }
 }

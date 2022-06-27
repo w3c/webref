@@ -51,8 +51,8 @@
   },
   "descriptors": {},
   "valuespaces": {
-    "<transform-list>": {
-      "value": "<transform-function>+"
+    "<transform-function>": {
+      "prose": "The value of the transform property is a list of <transform-function>. The set of allowed transform functions is given below. In the following functions, a <zero> behaves the same as 0deg (\"unitless 0\" angles are preserved for legacy compat). A percentage for horizontal translations is relative to the width of the reference box. A percentage for vertical translations is relative to the height of the reference box."
     },
     "<matrix()>": {
       "value": "matrix( <number>#{6} )"
@@ -86,6 +86,9 @@
     },
     "<skewY()>": {
       "value": "skewY( [ <angle> | <zero> ] )"
+    },
+    "<transform-list>": {
+      "value": "<transform-function>+"
     }
   }
 }

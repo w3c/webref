@@ -36,7 +36,29 @@
   "descriptors": {},
   "valuespaces": {
     "<color>": {
+      "prose": "Colors in CSS are represented by the <color> type:",
       "value": "<absolute-color-base> | currentcolor | <system-color> | <device-cmyk()>"
+    },
+    "<rgba()>": {
+      "prose": "Also, an rgba() legacy color syntax also exists, with an identical grammar and behavior to rgb()."
+    },
+    "<hex-color>": {
+      "prose": "The syntax of a <hex-color> is a <hash-token> token whose value consists of 3, 4, 6, or 8 hexadecimal digits. In other words, a hex color is written as a hash character, \"#\", followed by some number of digits 0-9 or letters a-f (the case of the letters doesn’t matter - #00ff00 is identical to #00FF00)."
+    },
+    "<named-color>": {
+      "prose": "CSS defines a large set of named colors, so that common colors can be written and read more easily. A <named-color> is written as an <ident>, accepted anywhere a <color> is. As usual for CSS-defined <ident>s, all of these keywords are ASCII case-insensitive."
+    },
+    "<system-color>": {
+      "prose": "However, in forced colors mode, most colors on the page are forced into a restricted, user-chosen palette. The <system-color> keywords expose these user-chosen colors so that the rest of the page can integrate with this restricted palette."
+    },
+    "<hsla()>": {
+      "prose": "Also, an hsla() legacy color syntax also exists, with an identical grammar and behavior to hsl()."
+    },
+    "<deprecated-color>": {
+      "prose": "The deprecated system colors are represented as the <deprecated-color> sub-type, and are defined as:"
+    },
+    "<quirky-color>": {
+      "prose": "When CSS is being parsed in quirks mode, <quirky-color> is a type of <color> that is only valid in certain properties:"
     },
     "<absolute-color-base>": {
       "value": "<hex-color> | <named-color> | transparent | <rgb()> | <rgba()> | <hsl()> | <hsla()> | <hwb()> | <lab()> | <lch()> | <oklab()> | <oklch()> | <color()>"

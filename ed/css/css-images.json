@@ -67,8 +67,14 @@
   },
   "descriptors": {},
   "valuespaces": {
-    "<image>": {
-      "value": "<url> | <gradient>"
+    "<size>": {
+      "prose": "Both circle and ellipse gradients accept the following keywords as their <size>:"
+    },
+    "<repeating-linear-gradient()>": {
+      "prose": "In addition to linear-gradient() and radial-gradient(), this specification defines repeating-linear-gradient() and repeating-radial-gradient() values. These notations take the same values and are interpreted the same as their respective non-repeating siblings defined previously."
+    },
+    "<repeating-radial-gradient()>": {
+      "prose": "In addition to linear-gradient() and radial-gradient(), this specification defines repeating-linear-gradient() and repeating-radial-gradient() values. These notations take the same values and are interpreted the same as their respective non-repeating siblings defined previously."
     },
     "<gradient>": {
       "value": "<linear-gradient()> | <repeating-linear-gradient()> | <radial-gradient()> | <repeating-radial-gradient()>"
@@ -90,12 +96,6 @@
     },
     "<linear-color-hint>": {
       "value": "<length-percentage>"
-    },
-    "<ending-shape>": {
-      "prose": "Can be either circle or ellipse; determines whether the gradient’s ending shape is a circle or an ellipse, respectively. If <ending-shape> is omitted, the ending shape defaults to a circle if the <size> is a single <length>, and to an ellipse otherwise."
-    },
-    "<length>": {
-      "prose": "Gives the radius of the circle explicitly. Negative values are invalid."
     }
   }
 }

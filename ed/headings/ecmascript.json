@@ -8117,6 +8117,12 @@
       "number": "22.2.2.1"
     },
     {
+      "id": "sec-regexp-records",
+      "title": "RegExp Records",
+      "level": 5,
+      "number": "22.2.2.1.1"
+    },
+    {
       "id": "sec-compilepattern",
       "title": "Runtime Semantics: CompilePattern",
       "level": 4,
@@ -8142,7 +8148,7 @@
     },
     {
       "id": "sec-runtime-semantics-iswordchar-abstract-operation",
-      "title": "IsWordChar ( e )",
+      "title": "IsWordChar ( rer, Input, e )",
       "level": 5,
       "number": "22.2.2.4.1"
     },
@@ -8166,19 +8172,19 @@
     },
     {
       "id": "sec-runtime-semantics-charactersetmatcher-abstract-operation",
-      "title": "CharacterSetMatcher ( A, invert, direction )",
+      "title": "CharacterSetMatcher ( rer, A, invert, direction )",
       "level": 5,
       "number": "22.2.2.7.1"
     },
     {
       "id": "sec-backreference-matcher",
-      "title": "BackreferenceMatcher ( n, direction )",
+      "title": "BackreferenceMatcher ( rer, n, direction )",
       "level": 5,
       "number": "22.2.2.7.2"
     },
     {
       "id": "sec-runtime-semantics-canonicalize-ch",
-      "title": "Canonicalize ( ch )",
+      "title": "Canonicalize ( rer, ch )",
       "level": 5,
       "number": "22.2.2.7.3"
     },
@@ -8249,16 +8255,22 @@
       "number": "22.2.3.2.3"
     },
     {
+      "id": "sec-wordcharacters",
+      "title": "WordCharacters ( rer )",
+      "level": 5,
+      "number": "22.2.3.2.4"
+    },
+    {
       "id": "sec-regexpcreate",
       "title": "RegExpCreate ( P, F )",
       "level": 5,
-      "number": "22.2.3.2.4"
+      "number": "22.2.3.2.5"
     },
     {
       "id": "sec-escaperegexppattern",
       "title": "EscapeRegExpPattern ( P, F )",
       "level": 5,
-      "number": "22.2.3.2.5"
+      "number": "22.2.3.2.6"
     },
     {
       "id": "sec-properties-of-the-regexp-constructor",

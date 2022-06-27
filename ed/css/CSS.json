@@ -67,6 +67,33 @@
   },
   "descriptors": {},
   "valuespaces": {
+    "<uri>": {
+      "prose": "URI values (Uniform Resource Identifiers, see [RFC3986], which includes URLs, URNs, etc) in this specification are denoted by <uri>. The functional notation used to designate URIs in property values is \"url()\", as in:"
+    },
+    "<Counters>": {
+      "prose": "Counters are denoted by case-sensitive identifiers (see the counter-increment and counter-reset properties). To refer to the value of a counter, the notation counter(<identifier>) or 'counter(<identifier>, <'list-style-type>), with optional white space separating the tokens, is used. The default style is decimal."
+    },
+    "<counter(<identifier>)>": {
+      "prose": "Counters are denoted by case-sensitive identifiers (see the counter-increment and counter-reset properties). To refer to the value of a counter, the notation counter(<identifier>) or 'counter(<identifier>, <'list-style-type>), with optional white space separating the tokens, is used. The default style is decimal."
+    },
+    "<counters(<identifier>, <string>)>": {
+      "prose": "To refer to a sequence of nested counters of the same name, the notation is counters(<identifier>, <string>) or 'counters(<identifier>, <string>, <'list-style-type>) with optional white space separating the tokens."
+    },
+    "<Strings>": {
+      "prose": "Strings can either be written with double quotes or with single quotes. Double quotes cannot occur inside double quotes, unless escaped (e.g., as \\\" or as \\22). Analogously for single quotes (e.g., \"\\'\" or \"\\27\")."
+    },
+    "<margin-width>": {
+      "prose": "The properties defined in this section refer to the <margin-width> value type, which may take one of the following values:"
+    },
+    "<padding-width>": {
+      "prose": "The properties defined in this section refer to the <padding-width> value type, which may take one of the following values:"
+    },
+    "<border-width>": {
+      "prose": "The border width properties specify the width of the border area. The properties defined in this section refer to the <border-width> value type, which may take one of the following values:"
+    },
+    "<border-style>": {
+      "prose": "The border style properties specify the line style of a box’s border (solid, double, dashed, etc.). The properties defined in this section refer to the <border-style> value type, which may take one of the following values:"
+    },
     "<shape>": {
       "prose": "In CSS 2, the only valid <shape> value is: rect(<top>, <right>, <bottom>, <left>) where <top> and <bottom> specify offsets from the top border edge of the box, and <right>, and <left> specify offsets from the left border edge of the box. Authors should separate offset values with commas. User agents must support separation with commas, but may also support separation without commas (but not a combination), because a previous revision of this specification was ambiguous in this respect. <top>, <right>, <bottom>, and <left> may either have a <length> value or auto. Negative lengths are permitted. The value auto means that a given edge of the clipping region will be the same as the edge of the element’s generated border box (i.e., auto means the same as 0 for <top> and <left>, the same as the used value of the height plus the sum of vertical padding and border widths for <bottom>, and the same as the used value of the width plus the sum of the horizontal padding and border widths for <right>, such that four auto values result in the clipping region being the same as the element’s border box). When coordinates are rounded to pixel coordinates, care should be taken that no pixels remain visible when <left> and <right> have the same value (or <top> and <bottom> have the same value), and conversely that no pixels within the element’s border box remain hidden when these values are auto."
     }
