@@ -25,6 +25,19 @@ const supersededBy = {
   // All CSS modules supersede CSS 2.x
   'CSS': '*',
 
+  // All unit value spaces defined in CSS values supersede re-definitions that
+  // just refine how the value needs to be interpreted in other specs
+  // (happens for <integer> and <url> for instance)
+  // NB: Reffy should rather take the `data-dfn-for` attribute to avoid having
+  // to deal with that here, see https://github.com/w3c/reffy/issues/980
+  'css-values': '*',
+
+  // CSS Images defines the <image> value space. CSS Content merely explains
+  // how it needs to be interpreted in the context of <content-list>
+  // NB: Reffy should rather take the `data-dfn-for` attribute to avoid having
+  // to deal with that here, see https://github.com/w3c/reffy/issues/980
+  'css-images': 'css-content',
+
   // See note in https://drafts.csswg.org/css-align/#placement
   // "The property definitions here supersede those in [CSS-FLEXBOX-1]"
   'css-flexbox': 'css-align',

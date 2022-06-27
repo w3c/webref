@@ -37,51 +37,21 @@ const tempIgnore = [
   { shortname: 'fill-stroke', prop: 'properties', name: 'stroke-dasharray' },
 
   // Unescaped comma with multiplier ",*" not supported by css-tree
-  { shortname: 'svg-animations', prop: 'valuespaces', name: '<control-point>' },
-
-  // Stacked combinator "#*" not supported by css-tree
-  { shortname: 'svg-strokes', prop: 'valuespaces', name: '<dasharray>' }
+  { shortname: 'svg-animations', prop: 'valuespaces', name: '<control-point>' }
 ];
 
 
 // Valuespaces that are defined more than once...
 const duplicatedValuespaces = [
-  // Defined in CSS Grid Layout Module Level 2 and CSS Box Sizing Module Level 3
-  // https://drafts.csswg.org/css-grid-2/
-  // https://drafts.csswg.org/css-sizing-3/
-  '<fit-content()>',
-
-  // Defined in CSS Images Module Level 3, CSS Positioned Layout Module Level 3
-  // and CSS Text Module Level 3 (and CSS Values but in prose so not extracted)
-  // https://drafts.csswg.org/css-images-3/
-  // https://drafts.csswg.org/css-position/
-  // https://drafts.csswg.org/css-text-3/
-  '<length>',
-
   // Defined in CSS Shapes Module Level 1 and Motion Path Module Level 1
   // https://drafts.csswg.org/css-shapes/
   // https://drafts.fxtf.org/motion-1/
   '<path()>',
 
-  // Defined in CSS Positioned Layout Module Level 3,
-  // CSS Mobile Text Size Adjustment Module Level 1 and CSS Text Module Level 3
-  // (and CSS Values but in prose so not extracted)
-  // https://drafts.csswg.org/css-position/
-  // https://drafts.csswg.org/css-size-adjust-1/
-  // https://drafts.csswg.org/css-text-3/
-  '<percentage>',
-
   // Defined in CSS Masking Module Level 1 and CSS Shapes Module Level 1
   // https://drafts.fxtf.org/css-masking-1/
   // https://drafts.csswg.org/css-shapes/
-  '<rect()>',
-
-  // Defined in CSS Masking Module Level 1, CSS Values and Units Module Level 4
-  // and Filter Effects Module Level 1
-  // https://drafts.fxtf.org/css-masking-1/
-  // https://drafts.csswg.org/css-values-4/
-  // https://drafts.fxtf.org/filter-effects-1/
-  '<url>'
+  '<rect()>'
 ];
 
 
@@ -159,7 +129,7 @@ describe(`The curated view of CSS extracts`, () => {
     describe(`Looking at CSS valuespaces, the curated view`, () => {
       for (const [name, dfns] of Object.entries(valuespaces)) {
         if (duplicatedValuespaces.includes(name)) {
-          it(`contains more than "${name}" valuespace definitions`, () => {
+          it(`contains more than one "${name}" valuespace definitions`, () => {
             assert(dfns.length >= 2);
           });
         }
