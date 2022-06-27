@@ -385,7 +385,7 @@
         "partial": false
       },
       "DirectoryPickerOptions": {
-        "fragment": "dictionary DirectoryPickerOptions {\n    DOMString id;\n    StartInDirectory startIn;\n};",
+        "fragment": "dictionary DirectoryPickerOptions {\n    DOMString id;\n    StartInDirectory startIn;\n    FileSystemPermissionMode mode = \"read\";\n};",
         "type": "dictionary",
         "name": "DirectoryPickerOptions",
         "inheritance": null,
@@ -418,6 +418,24 @@
               "idlType": "StartInDirectory"
             },
             "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "mode",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "FileSystemPermissionMode"
+            },
+            "default": {
+              "type": "string",
+              "value": "read"
+            },
             "required": false
           }
         ],
@@ -781,7 +799,8 @@
         "FilePickerOptions"
       ],
       "DirectoryPickerOptions": [
-        "StartInDirectory"
+        "StartInDirectory",
+        "FileSystemPermissionMode"
       ],
       "Window": [
         "FileSystemFileHandle",
