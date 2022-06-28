@@ -60,8 +60,13 @@ async function commitCurated(curatedFolder, stayOnCurated) {
   console.log('- done');
 
   console.log();
-  console.log('Add package.json file to the "curated" branch');
+  console.log('Add stripped down version of package.json to the "curated" branch');
   execSync('git checkout main -- package.json');
+  const packagejson = JSON.parse(await fs.readFile('package.json', 'utf8'));
+  delete packagejson.devDependencies;
+  delete packagejson.scripts;
+  await fs.writeFile('package.json', JSON.stringify(packagejson, null, 2), 'utf8');
+  execSync('git add package.json');
   console.log('- done');
 
   console.log();
