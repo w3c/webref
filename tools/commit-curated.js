@@ -60,6 +60,11 @@ async function commitCurated(curatedFolder, stayOnCurated) {
   console.log('- done');
 
   console.log();
+  console.log('Add package.json file to the "curated" branch');
+  execSync('git checkout main -- package.json');
+  console.log('- done');
+
+  console.log();
   console.log('Commit changes to the "curated" branch');
   execSync('git add ed --all');
   execSync(`git commit -m "Publish curated data from ${currentCommit}" -m "Curated data generated from raw data at ${currentCommit}" || echo ""`);
