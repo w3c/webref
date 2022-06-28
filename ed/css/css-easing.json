@@ -7,7 +7,10 @@
   "descriptors": {},
   "valuespaces": {
     "<easing-function>": {
-      "value": "linear | <cubic-bezier-easing-function> | <step-easing-function>"
+      "value": "linear | linear-spline() | <cubic-bezier-easing-function> | <step-easing-function>"
+    },
+    "<linear-spline()>": {
+      "value": "linear-spline(<linear-spline-stop-list>)"
     },
     "<cubic-bezier-easing-function>": {
       "value": "ease | ease-in | ease-out | ease-in-out | cubic-bezier(<number [0,1]>, <number>, <number [0,1]>, <number>)"
@@ -16,13 +19,22 @@
       "value": "cubic-bezier(<number [0,1]>, <number>, <number [0,1]>, <number>)"
     },
     "<step-easing-function>": {
-      "value": "step-start | step-end | steps(<integer>[, <step-position>]?) <step-position>"
+      "value": "step-start | step-end | steps(<integer>[, <step-position>]?)"
     },
     "<step-position>": {
       "value": "jump-start | jump-end | jump-none | jump-both | start | end"
     },
     "<steps()>": {
       "value": "steps(<integer>[, <step-position> ]?)"
+    },
+    "<linear-spline-stop-list>": {
+      "value": "[ <linear-spline-stop> ]#"
+    },
+    "<linear-spline-stop>": {
+      "value": "<number> && <linear-spline-stop-length>?"
+    },
+    "<linear-spline-stop-length>": {
+      "value": "<percentage>{1,2}"
     }
   }
 }
