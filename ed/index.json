@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2022-06-29T00:48:14.177Z",
+  "date": "2022-06-29T06:37:50.305Z",
   "options": {
     "fallback": "webref-fallback/ed/index.json",
     "output": "report",
@@ -22,7 +22,7 @@
   },
   "stats": {
     "crawled": 469,
-    "errors": 0
+    "errors": 1
   },
   "crawler": "reffy-7.2.0",
   "results": [
@@ -1300,10 +1300,10 @@
       ],
       "crawled": "https://fedidcg.github.io/FedCM/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 28 Jun 2022 05:43:44 GMT"
+        "lastModified": "Wed, 29 Jun 2022 03:49:56 GMT"
       },
       "generator": "bikeshed",
-      "date": "28 June 2022",
+      "date": "29 June 2022",
       "links": "links/FedCM.json",
       "refs": "refs/FedCM.json",
       "idl": "idl/FedCM.idl",
@@ -2302,9 +2302,9 @@
       ],
       "crawled": "https://tc39.es/ecma402/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 02 Jun 2022 14:44:46 GMT"
+        "lastModified": "Wed, 29 Jun 2022 03:08:58 GMT"
       },
-      "date": "2 June 2022",
+      "date": "29 June 2022",
       "links": "links/ecma-402.json",
       "dfns": "dfns/ecma-402.json",
       "headings": "headings/ecma-402.json",
@@ -4497,10 +4497,10 @@
       ],
       "crawled": "https://wicg.github.io/client-hints-infrastructure/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 02 Feb 2022 00:05:08 GMT"
+        "lastModified": "Wed, 29 Jun 2022 05:56:11 GMT"
       },
       "generator": "bikeshed",
-      "date": "2 February 2022",
+      "date": "29 June 2022",
       "links": "links/client-hints-infrastructure.json",
       "refs": "refs/client-hints-infrastructure.json",
       "dfns": "dfns/client-hints-infrastructure.json",
@@ -7670,10 +7670,10 @@
       ],
       "crawled": "https://wicg.github.io/webpackage/loading.html",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 28 Jun 2022 08:16:07 GMT"
+        "lastModified": "Wed, 29 Jun 2022 02:07:03 GMT"
       },
       "generator": "bikeshed",
-      "date": "28 June 2022",
+      "date": "29 June 2022",
       "links": "links/webpackage.json",
       "refs": "refs/webpackage.json",
       "dfns": "dfns/webpackage.json",
@@ -17086,7 +17086,8 @@
       "css": "css/CSS.json",
       "dfns": "dfns/CSS22.json",
       "headings": "headings/CSS22.json",
-      "ids": "ids/CSS22.json"
+      "ids": "ids/CSS22.json",
+      "error": "Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers' Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers'\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:483:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 323)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/css3-exclusions/",

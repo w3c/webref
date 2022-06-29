@@ -19,7 +19,6 @@
       "map-set",
       "set-append",
       "list-clone",
-      "list-remove",
       "list-iterate",
       "byte-lowercase"
     ],
@@ -29,40 +28,45 @@
     "https://html.spec.whatwg.org/": [
       "same-origin",
       "concept-settings-object-origin",
-      "secure-context",
+      "non-secure-context",
       "concept-settings-object-global",
       "window-bc",
       "top-level-browsing-context",
       "environment-settings-object",
       "meta",
-      "the-head-element",
-      "attr-meta-content",
       "the-link-element",
+      "the-style-element",
       "script",
+      "attr-meta-name",
+      "attr-meta-content",
       "relevant-settings-object",
       "concept-document-permissions-policy",
       "process-a-navigate-response",
       "set-up-a-worker-environment-settings-object",
       "standard-metadata-names"
     ],
-    "https://dom.spec.whatwg.org/": [
-      "concept-tree-preceding",
-      "concept-tree-sibling"
+    "https://www.w3.org/TR/permissions-policy/": [
+      "algo-parse-policy-directive",
+      "algo-should-request-be-allowed-to-use-feature"
+    ],
+    "https://github.com/WICG/client-hints-infrastructure/issues/110": [],
+    "https://w3c.github.io/ServiceWorker/": [
+      "serviceworkerglobalscope"
     ],
     "https://fetch.spec.whatwg.org/": [
       "concept-fetch",
       "concept-request-request",
       "concept-request-client",
-      "subresource-request",
+      "non-subresource-request",
+      "concept-request-destination",
       "concept-request-header-list",
-      "header-list-contains",
+      "navigation-request",
       "concept-header-list-append",
+      "header-list-contains",
+      "concept-main-fetch",
       "concept-http-redirect-fetch",
       "concept-header-name",
       "concept-header-value"
-    ],
-    "https://www.w3.org/TR/permissions-policy/": [
-      "algo-should-request-be-allowed-to-use-feature"
     ],
     "https://wicg.github.io/savedata/": [
       "save-data-request-header-field"
@@ -90,6 +94,7 @@
       "sec-ch-prefers-color-scheme"
     ],
     "https://datatracker.ietf.org/doc/html/rfc2119": [],
-    "https://www.rfc-editor.org/rfc/rfc8942": []
+    "https://www.rfc-editor.org/rfc/rfc8942": [],
+    "https://www.w3.org/TR/service-workers-1/": []
   }
 }
