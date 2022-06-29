@@ -52,8 +52,8 @@
   },
   "descriptors": {},
   "valuespaces": {
-    "<type( <string> )>": {
-      "prose": "A type( <string> ) function (optional), specifying the image’s MIME type in the <string>."
+    "<type()>": {
+      "value": "type( <string> )"
     },
     "<repeating-linear-gradient()>": {
       "prose": "In addition to linear-gradient(), radial-gradient(), and conic-gradient(), this specification defines repeating-linear-gradient(), repeating-radial-gradient(), and repeating-conic-gradient() values. These notations take the same values and are interpreted the same as their respective non-repeating siblings defined previously."
@@ -89,7 +89,7 @@
       "value": "cross-fade( <cf-image># )"
     },
     "<cf-image>": {
-      "value": "<percentage>? && [ <image> | <color> ]"
+      "value": "<percentage [0,100]>? && [ <image> | <color> ]"
     },
     "<element()>": {
       "value": "element( <id-selector> )"

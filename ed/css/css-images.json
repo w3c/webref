@@ -68,7 +68,8 @@
   "descriptors": {},
   "valuespaces": {
     "<size>": {
-      "prose": "Both circle and ellipse gradients accept the following keywords as their <size>:"
+      "prose": "Both circle and ellipse gradients accept the following keywords as their <size>:",
+      "value": "| | {2}"
     },
     "<repeating-linear-gradient()>": {
       "prose": "In addition to linear-gradient() and radial-gradient(), this specification defines repeating-linear-gradient() and repeating-radial-gradient() values. These notations take the same values and are interpreted the same as their respective non-repeating siblings defined previously."
@@ -90,6 +91,9 @@
     },
     "<radial-gradient()>": {
       "value": "radial-gradient( [ <ending-shape> || <size> ]? [ at <position> ]? , <color-stop-list> )"
+    },
+    "<extent-keyword>": {
+      "value": "closest-corner | closest-side | farthest-corner | farthest-side"
     },
     "<color-stop-list>": {
       "value": "<linear-color-stop> , [ <linear-color-hint>? , <linear-color-stop> ]#"
