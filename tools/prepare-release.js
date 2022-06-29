@@ -48,7 +48,7 @@ function btoa(str) {
  *
  * @function
  * @param {String} type Package name. Must match one of the existing folder
- *  names under "packages" (e.g. "css", "elements", "idl")
+ *  names under "packages" (e.g. "css", "elements", "events", "idl")
  * @return {String} The results of running the diff. An empty string if contents
  *   match.
  */
@@ -145,7 +145,7 @@ function computeDiff(type) {
  *
  * @function
  * @param {String} type Package name. Must match one of the existing folder
- *  names under "packages" (e.g. "css", "elements", "idl")
+ *  names under "packages" (e.g. "css", "elements", "events", "idl")
  */
 async function prepareRelease(type) {
   // Compute a reasonably unique ID

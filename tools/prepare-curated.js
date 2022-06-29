@@ -2,7 +2,7 @@
  * Prepare the curated data and save the result to the given folder.
  *
  * Curation means copying raw data to the given folder, applying patches (CSS,
- * elements, IDL) when needed, re-generating the `idlparsed` folder, and
+ * elements, events, IDL) when needed, re-generating the `idlparsed` folder, and
  * re-generating the `idlnames` and `idlnamesparsed` folders for relevant
  * browser specs.
  *
@@ -58,7 +58,7 @@ async function cleanCrawlOutcome(spec) {
  *
  * @function
  * @param {String} type Package name. Must match one of the existing folder
- *  names under "packages" (e.g. "css", "elements", "idl")
+ *  names under "packages" (e.g. "css", "elements", "events", "idl")
  */
 async function prepareCurated(rawFolder, curatedFolder) {
   console.log('Make sure that curated folder exists and is empty');

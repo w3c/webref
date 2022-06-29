@@ -10,7 +10,7 @@
  * patches (default is "ed");
  * - [output folder] the name of the folder that is to contain the results of
  * applying the patches (default is "curated");
- * - [type] is the type of patches to apply: "css", "elements", "idl", or "all"
+ * - [type] is the type of patches to apply: "css", "elements", "events", "idl", or "all"
  * (default is "all").
  */
 
@@ -21,7 +21,7 @@ const execFile = util.promisify(require('child_process').execFile);
 const { createFolderIfNeeded } = require('./utils');
 
 async function applyPatches(rawFolder, outputFolder, type) {
-  type = (type === 'all') ? ['css', 'elements', 'idl'] : [type];
+  type = (type === 'all') ? ['css', 'elements', 'events', 'idl'] : [type];
 
   const packages = [
     {
@@ -38,6 +38,14 @@ async function applyPatches(rawFolder, outputFolder, type) {
       dstDir: path.join(outputFolder, 'elements'),
       dstDirForCli: [outputFolder, 'elements'].join('/'),
       patchDir: path.join(rawFolder, 'elementspatches'),
+      fileExt: 'json'
+    },
+    {
+      name: 'events',
+      srcDir: path.join(rawFolder, 'events'),
+      dstDir: path.join(outputFolder, 'events'),
+      dstDirForCli: [outputFolder, 'events'].join('/'),
+      patchDir: path.join(rawFolder, 'eventspatches'),
       fileExt: 'json'
     },
     {

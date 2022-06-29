@@ -14,6 +14,7 @@ Additionally, subsets of the curated content get manually reviewed and published
 - [@webref/idl](https://www.npmjs.com/package/@webref/idl) contains a [curated](packages/idl#guarantees) version of the [ed/idl](ed/idl) folder.
 - [@webref/css](https://www.npmjs.com/package/@webref/css) contains a [curated](packages/css#guarantees) version of the [ed/css](ed/css) folder.
 - [@webref/elements](https://www.npmjs.com/package/@webref/elements) contains a [curated](packages/elements#guarantees) version of the [ed/elements](ed/elements) folder.
+- [@webref/events](https://www.npmjs.com/package/@webref/events) contains a [curated](packages/events#guarantees) version of the [ed/events](ed/events) folder.
 
 **Important:** Unless you are ready to deal with invalid content, we recommend that you rely on the content of the `curated` branch or NPM packages instead of on the raw content in the `main` branch of this repository.
 
@@ -27,6 +28,7 @@ The following subfolders contain individual machine-readable JSON or text files 
 - [ed/css](ed/css) and [tr/css](tr/css): CSS terms (properties, descriptors, value spaces). One file per specification [series](https://github.com/w3c/browser-specs/#series).
 - [ed/dfns](ed/dfns) and [tr/dfns](tr/dfns): `<dfn>` terms, along with metadata such as linking text, access level, namespace. One file per specification.
 - [ed/elements](ed/elements) and [tr/elements](tr/elements): Markup elements defined, along with the interface that they implement. One file per specification.
+- [ed/events](ed/events) and [tr/events](tr/events): Events defined, along with the interfaces that they use and target. One file per specification.
 - [ed/headings](ed/headings) and [tr/headings](tr/headings): Section headings. One file per specification.
 - [ed/idl](ed/idl) and [tr/idl](tr/idl): Raw WebIDL index. One file per specification [series](https://github.com/w3c/browser-specs/#series).
 - [ed/idlparsed](ed/idlparsed) and [tr/idlparsed](tr/idlparsed): Parsed WebIDL. One file per specification.
@@ -96,5 +98,5 @@ GitHub Actions workflows are used to automate most of the tasks in this repo.
 
 ### Releases to NPM
 
-- [Publish @webref package if needed](https://github.com/w3c/webref/actions/workflows/release-package.yml) - publishes a new version of the `@webref/css`, `@webref/elements` or `@webref/idl` package to NPM, tags the corresponding commits on the `main` and `curated` branches, and updates the relevant `@webref/xxx@latest` tag to point to the right commit on the `curated` branch. Runs whenever a pre-release PR is merged. Note that the released version is the version that appeared in `packages/css/package.json`, `packages/elements/package.json` or `packages/idl/package.json` **before** the pre-release PR is merged.
+- [Publish @webref package if needed](https://github.com/w3c/webref/actions/workflows/release-package.yml) - publishes a new version of the `@webref/css`, `@webref/elements`, `@webref/events` or `@webref/idl` package to NPM, tags the corresponding commits on the `main` and `curated` branches, and updates the relevant `@webref/xxx@latest` tag to point to the right commit on the `curated` branch. Runs whenever a pre-release PR is merged. Note that the released version is the version that appeared in `packages/css/package.json`, `packages/elements/package.json`, `packages/events/package.json` or `packages/idl/package.json` **before** the pre-release PR is merged.
 - [@webref release: Request review of pre-release PR] - assigns reviewers to NPM package pull requests. Runs once per week.

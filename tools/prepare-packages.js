@@ -1,7 +1,8 @@
 /**
  * Prepare the NPM packages from curated data
  *
- * NPM packages include @webref/css, @webref/elements and @webref/idl.
+ * NPM packages include @webref/css, @webref/elements, @webref/events
+ * and @webref/idl.
  * 
  * These packages contain a filtered view of the curated data, which must have
  * been prepared prior to running this script (see tools/prepare-curated.js).
@@ -27,6 +28,7 @@ async function preparePackages(curatedFolder, packagesFolder) {
   const packages = [
     { name: 'css', fileExt: 'json' },
     { name: 'elements', fileExt: 'json' },
+    { name: 'events', fileExt: 'json' },
     { name: 'idl', fileExt: 'idl' }
   ];
 

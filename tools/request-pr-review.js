@@ -79,6 +79,8 @@ requestReview("css")
   .then(() => console.log())
   .then(() => requestReview("elements"))
   .then(() => console.log())
+  .then(() => requestReview("events"))
+  .then(() => console.log())
   .then(() => requestReview("idl"))
   .then(() => {
     console.log();
