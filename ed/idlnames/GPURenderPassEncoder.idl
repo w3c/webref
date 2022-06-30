@@ -2,8 +2,8 @@
 [Exposed=(Window, DedicatedWorker), SecureContext]
 interface GPURenderPassEncoder {
     undefined setViewport(float x, float y,
-                     float width, float height,
-                     float minDepth, float maxDepth);
+        float width, float height,
+        float minDepth, float maxDepth);
 
     undefined setScissorRect(GPUIntegerCoordinate x, GPUIntegerCoordinate y,
                         GPUIntegerCoordinate width, GPUIntegerCoordinate height);

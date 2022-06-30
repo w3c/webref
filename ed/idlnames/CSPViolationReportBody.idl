@@ -1,6 +1,7 @@
 // Source: Content Security Policy Level 3 (https://www.w3.org/TR/CSP3/)
 [Exposed=Window]
 interface CSPViolationReportBody : ReportBody {
+  [Default] object toJSON();
   readonly attribute USVString documentURL;
   readonly attribute USVString? referrer;
   readonly attribute USVString? blockedURL;
