@@ -24,120 +24,6 @@
       "definedIn": "prose"
     },
     {
-      "id": "dfn-icecandidate",
-      "href": "https://w3c.github.io/webrtc-ice/#dfn-icecandidate",
-      "linkingText": [
-        "icecandidate"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "terminology",
-        "href": "https://w3c.github.io/webrtc-ice/#terminology",
-        "title": "Terminology",
-        "number": "3"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-icecandidateerror",
-      "href": "https://w3c.github.io/webrtc-ice/#dfn-icecandidateerror",
-      "linkingText": [
-        "icecandidateerror"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "terminology",
-        "href": "https://w3c.github.io/webrtc-ice/#terminology",
-        "title": "Terminology",
-        "number": "3"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "respec-offender-internal-slot-icerole-must-be-associated-with-a-webidl-interface",
-      "href": "https://w3c.github.io/webrtc-ice/#respec-offender-internal-slot-icerole-must-be-associated-with-a-webidl-interface",
-      "linkingText": [
-        "[[IceRole]]"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "terminology",
-        "href": "https://w3c.github.io/webrtc-ice/#terminology",
-        "title": "Terminology",
-        "number": "3"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "respec-offender-internal-slot-icetransportstate-must-be-associated-with-a-webidl-interface",
-      "href": "https://w3c.github.io/webrtc-ice/#respec-offender-internal-slot-icetransportstate-must-be-associated-with-a-webidl-interface",
-      "linkingText": [
-        "[[IceTransportState]]"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "terminology",
-        "href": "https://w3c.github.io/webrtc-ice/#terminology",
-        "title": "Terminology",
-        "number": "3"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "respec-offender-internal-slot-icegathererstate-must-be-associated-with-a-webidl-interface",
-      "href": "https://w3c.github.io/webrtc-ice/#respec-offender-internal-slot-icegathererstate-must-be-associated-with-a-webidl-interface",
-      "linkingText": [
-        "[[IceGathererState]]"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "terminology",
-        "href": "https://w3c.github.io/webrtc-ice/#terminology",
-        "title": "Terminology",
-        "number": "3"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "respec-offender-internal-slot-selectedcandidatepair-must-be-associated-with-a-webidl-interface",
-      "href": "https://w3c.github.io/webrtc-ice/#respec-offender-internal-slot-selectedcandidatepair-must-be-associated-with-a-webidl-interface",
-      "linkingText": [
-        "[[SelectedCandidatePair]]"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "terminology",
-        "href": "https://w3c.github.io/webrtc-ice/#terminology",
-        "title": "Terminology",
-        "number": "3"
-      },
-      "definedIn": "prose"
-    },
-    {
       "id": "dom-rtciceparameters-icelite",
       "href": "https://w3c.github.io/webrtc-ice/#dom-rtciceparameters-icelite",
       "linkingText": [
@@ -172,7 +58,7 @@
         "id": "rtcicegatheroptions*",
         "href": "https://w3c.github.io/webrtc-ice/#rtcicegatheroptions*",
         "title": "RTCIceGatherOptions Dictionary",
-        "number": "4.2"
+        "number": "3.2"
       },
       "definedIn": "heading"
     },
@@ -401,6 +287,48 @@
         "title": "Methods"
       },
       "definedIn": "dt"
+    },
+    {
+      "id": "dfn-icecandidateerror",
+      "href": "https://w3c.github.io/webrtc-ice/#dfn-icecandidateerror",
+      "linkingText": [
+        "icecandidateerror"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "RTCIceTransport"
+      ],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "event-summary",
+        "href": "https://w3c.github.io/webrtc-ice/#event-summary",
+        "title": "Event summary",
+        "number": "5"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dfn-icecandidate",
+      "href": "https://w3c.github.io/webrtc-ice/#dfn-icecandidate",
+      "linkingText": [
+        "icecandidate"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "RTCIceTransport"
+      ],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "event-summary",
+        "href": "https://w3c.github.io/webrtc-ice/#event-summary",
+        "title": "Event summary",
+        "number": "5"
+      },
+      "definedIn": "table"
     }
   ]
 }
