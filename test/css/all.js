@@ -104,11 +104,11 @@ describe(`The curated view of CSS extracts`, () => {
                 // parser does not support them yet:
                 // https://github.com/csstree/csstree/issues/192
                 // (This arguably awful regexp typically replaces:
-                // <angle [-90deg,90deg]) with <angle [-90,90]>
+                // <angle [-90deg,90deg]> with <angle [-90,90]>
                 // <time [0s,∞]> with <time [0,∞]>
                 const normalizedValue = desc[value].replace(
-                  /<(.*?)\s+\[\s*(\-?(?:\d+|∞))[A-Za-z]*\s*,\s*(\-?(?:\d+|∞))[A-Za-z]*\s*\]\s*>/g,
-                  '<$1 [$2,$3]>');
+                  /<(?<name>.*?)\s+\[\s*(?<min>\-?(?:\d+|∞))[A-Za-z]*\s*,\s*(?<max>\-?(?:\d+|∞))[A-Za-z]*\s*\]\s*>/g,
+                  '<$<name> [$<min>,$<max>]>');
                 const ast = definitionSyntax.parse(normalizedValue);
                 assert(ast.type);
               }, `Invalid definition value: ${desc[value]}`);
