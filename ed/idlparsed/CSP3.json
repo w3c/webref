@@ -21,11 +21,33 @@
     },
     "idlNames": {
       "CSPViolationReportBody": {
-        "fragment": "[Exposed=Window]\ninterface CSPViolationReportBody : ReportBody {\n  readonly attribute USVString documentURL;\n  readonly attribute USVString? referrer;\n  readonly attribute USVString? blockedURL;\n  readonly attribute DOMString effectiveDirective;\n  readonly attribute DOMString originalPolicy;\n  readonly attribute USVString? sourceFile;\n  readonly attribute DOMString? sample;\n  readonly attribute SecurityPolicyViolationEventDisposition disposition;\n  readonly attribute unsigned short statusCode;\n  readonly attribute unsigned long? lineNumber;\n  readonly attribute unsigned long? columnNumber;\n};",
+        "fragment": "[Exposed=Window]\ninterface CSPViolationReportBody : ReportBody {\n  [Default] object toJSON();\n  readonly attribute USVString documentURL;\n  readonly attribute USVString? referrer;\n  readonly attribute USVString? blockedURL;\n  readonly attribute DOMString effectiveDirective;\n  readonly attribute DOMString originalPolicy;\n  readonly attribute USVString? sourceFile;\n  readonly attribute DOMString? sample;\n  readonly attribute SecurityPolicyViolationEventDisposition disposition;\n  readonly attribute unsigned short statusCode;\n  readonly attribute unsigned long? lineNumber;\n  readonly attribute unsigned long? columnNumber;\n};",
         "type": "interface",
         "name": "CSPViolationReportBody",
         "inheritance": "ReportBody",
         "members": [
+          {
+            "type": "operation",
+            "name": "toJSON",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "object"
+            },
+            "arguments": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "Default",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": ""
+          },
           {
             "type": "attribute",
             "name": "documentURL",

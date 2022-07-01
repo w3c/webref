@@ -36,7 +36,7 @@
     },
     "font-stretch": {
       "name": "font-stretch",
-      "value": "normal | <percentage> | ultra-condensed | extra-condensed | condensed | semi-condensed | semi-expanded | expanded | extra-expanded | ultra-expanded",
+      "value": "normal | <percentage [0,∞]> | ultra-condensed | extra-condensed | condensed | semi-condensed | semi-expanded | expanded | extra-expanded | ultra-expanded",
       "initial": "normal",
       "appliesTo": "all elements and text",
       "inherited": "yes",
@@ -51,7 +51,7 @@
     },
     "font-style": {
       "name": "font-style",
-      "value": "normal | italic | oblique <angle>?",
+      "value": "normal | italic | oblique <angle [-90deg,90deg]>?",
       "initial": "normal",
       "appliesTo": "all elements and text",
       "inherited": "yes",
@@ -66,7 +66,7 @@
     },
     "font-size": {
       "name": "font-size",
-      "value": "<absolute-size> | <relative-size> | <length-percentage> | math",
+      "value": "<absolute-size> | <relative-size> | <length-percentage [0,∞]> | math",
       "initial": "medium",
       "appliesTo": "all elements and text",
       "inherited": "yes",
@@ -81,7 +81,7 @@
     },
     "font-size-adjust": {
       "name": "font-size-adjust",
-      "value": "none | <number>",
+      "value": "none | <number [0,∞]>",
       "initial": "none",
       "appliesTo": "all elements and text",
       "inherited": "yes",
@@ -486,7 +486,7 @@
       {
         "name": "ascent-override",
         "for": "@font-face",
-        "value": "normal | <percentage>",
+        "value": "normal | <percentage [0,∞]>",
         "initial": "normal"
       }
     ],
@@ -494,7 +494,7 @@
       {
         "name": "descent-override",
         "for": "@font-face",
-        "value": "normal | <percentage>",
+        "value": "normal | <percentage [0,∞]>",
         "initial": "normal"
       }
     ],
@@ -502,7 +502,7 @@
       {
         "name": "line-gap-override",
         "for": "@font-face",
-        "value": "normal | <percentage>",
+        "value": "normal | <percentage [0,∞]>",
         "initial": "normal"
       }
     ],

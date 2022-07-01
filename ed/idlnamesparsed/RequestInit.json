@@ -6,7 +6,7 @@
       "title": "Fetch Standard",
       "url": "https://fetch.spec.whatwg.org/"
     },
-    "fragment": "dictionary RequestInit {\n  ByteString method;\n  HeadersInit headers;\n  BodyInit? body;\n  USVString referrer;\n  ReferrerPolicy referrerPolicy;\n  RequestMode mode;\n  RequestCredentials credentials;\n  RequestCache cache;\n  RequestRedirect redirect;\n  DOMString integrity;\n  boolean keepalive;\n  AbortSignal? signal;\n  any window; // can only be set to null\n};",
+    "fragment": "dictionary RequestInit {\n  ByteString method;\n  HeadersInit headers;\n  BodyInit? body;\n  USVString referrer;\n  ReferrerPolicy referrerPolicy;\n  RequestMode mode;\n  RequestCredentials credentials;\n  RequestCache cache;\n  RequestRedirect redirect;\n  DOMString integrity;\n  boolean keepalive;\n  AbortSignal? signal;\n  RequestDuplex duplex;\n  any window; // can only be set to null\n};",
     "href": "https://fetch.spec.whatwg.org/#requestinit"
   },
   "extended": [
@@ -277,6 +277,27 @@
         "href": "https://fetch.spec.whatwg.org/#dom-requestinit-signal",
         "linkingText": [
           "signal"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "RequestInit"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "request-class",
+          "href": "https://fetch.spec.whatwg.org/#request-class",
+          "title": "Request class",
+          "number": "5.4"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-requestinit-duplex",
+        "href": "https://fetch.spec.whatwg.org/#dom-requestinit-duplex",
+        "linkingText": [
+          "duplex"
         ],
         "localLinkingText": [],
         "type": "dict-member",

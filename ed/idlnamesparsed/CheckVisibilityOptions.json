@@ -1,13 +1,13 @@
 {
-  "name": "IsVisibleOptions",
+  "name": "CheckVisibilityOptions",
   "type": "dictionary",
   "defined": {
     "spec": {
       "title": "CSSOM View Module",
       "url": "https://www.w3.org/TR/cssom-view-1/"
     },
-    "fragment": "dictionary IsVisibleOptions {\n    boolean checkOpacity = false;\n    boolean checkVisibilityCSS = false;\n};",
-    "href": "https://drafts.csswg.org/cssom-view/#dictdef-isvisibleoptions"
+    "fragment": "dictionary CheckVisibilityOptions {\n    boolean checkOpacity = false;\n    boolean checkVisibilityCSS = false;\n};",
+    "href": "https://drafts.csswg.org/cssom-view/#dictdef-checkvisibilityoptions"
   },
   "extended": [],
   "inheritance": null,
@@ -15,10 +15,10 @@
   "dfns": {
     "https://www.w3.org/TR/cssom-view-1/": [
       {
-        "id": "dictdef-isvisibleoptions",
-        "href": "https://drafts.csswg.org/cssom-view/#dictdef-isvisibleoptions",
+        "id": "dictdef-checkvisibilityoptions",
+        "href": "https://drafts.csswg.org/cssom-view/#dictdef-checkvisibilityoptions",
         "linkingText": [
-          "IsVisibleOptions"
+          "CheckVisibilityOptions"
         ],
         "localLinkingText": [],
         "type": "dictionary",
@@ -34,15 +34,15 @@
         "definedIn": "pre"
       },
       {
-        "id": "dom-isvisibleoptions-checkopacity",
-        "href": "https://drafts.csswg.org/cssom-view/#dom-isvisibleoptions-checkopacity",
+        "id": "dom-checkvisibilityoptions-checkopacity",
+        "href": "https://drafts.csswg.org/cssom-view/#dom-checkvisibilityoptions-checkopacity",
         "linkingText": [
           "checkOpacity"
         ],
         "localLinkingText": [],
         "type": "dict-member",
         "for": [
-          "IsVisibleOptions"
+          "CheckVisibilityOptions"
         ],
         "access": "public",
         "informative": false,
@@ -55,15 +55,15 @@
         "definedIn": "pre"
       },
       {
-        "id": "dom-isvisibleoptions-checkvisibilitycss",
-        "href": "https://drafts.csswg.org/cssom-view/#dom-isvisibleoptions-checkvisibilitycss",
+        "id": "dom-checkvisibilityoptions-checkvisibilitycss",
+        "href": "https://drafts.csswg.org/cssom-view/#dom-checkvisibilityoptions-checkvisibilitycss",
         "linkingText": [
           "checkVisibilityCSS"
         ],
         "localLinkingText": [],
         "type": "dict-member",
         "for": [
-          "IsVisibleOptions"
+          "CheckVisibilityOptions"
         ],
         "access": "public",
         "informative": false,

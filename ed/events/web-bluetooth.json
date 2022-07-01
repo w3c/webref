@@ -9,7 +9,7 @@
         "format": "fire an event phrasing",
         "href": "https://webbluetoothcg.github.io/web-bluetooth/#ref-for-concept-event-fire"
       },
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#eventdef-bluetooth-availabilitychanged",
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/#ref-for-concept-event-fire",
       "type": "availabilitychanged",
       "targets": [
         "Bluetooth"
@@ -21,7 +21,7 @@
         "format": "fire an event phrasing",
         "href": "https://webbluetoothcg.github.io/web-bluetooth/#ref-for-concept-event-fire%E2%91%A0"
       },
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#eventdef-bluetoothdeviceeventhandlers-advertisementreceived",
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/#ref-for-concept-event-fire%E2%91%A0",
       "type": "advertisementreceived",
       "targets": [
         "BluetoothDeviceEventHandlers"
@@ -33,10 +33,10 @@
         "format": "fire an event phrasing",
         "href": "https://webbluetoothcg.github.io/web-bluetooth/#ref-for-concept-event-fire%E2%91%A1"
       },
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#eventdef-bluetoothremotegattcharacteristic-characteristicvaluechanged",
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/#ref-for-concept-event-fire%E2%91%A1",
       "type": "characteristicvaluechanged",
       "targets": [
-        "BluetoothRemoteGATTCharacteristic"
+        "CharacteristicEventHandlers"
       ],
       "interface": "Event",
       "bubbles": true
@@ -46,7 +46,7 @@
         "format": "fire an event phrasing",
         "href": "https://webbluetoothcg.github.io/web-bluetooth/#ref-for-concept-event-fire%E2%91%A2"
       },
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#eventdef-bluetoothdeviceeventhandlers-gattserverdisconnected",
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/#ref-for-concept-event-fire%E2%91%A2",
       "type": "gattserverdisconnected",
       "targets": [
         "BluetoothDeviceEventHandlers"
@@ -59,10 +59,10 @@
         "format": "fire an event phrasing",
         "href": "https://webbluetoothcg.github.io/web-bluetooth/#ref-for-concept-event-fire%E2%91%A4"
       },
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#eventdef-bluetoothremotegattservice-serviceremoved",
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/#ref-for-concept-event-fire%E2%91%A4",
       "type": "serviceremoved",
       "targets": [
-        "BluetoothRemoteGATTService"
+        "ServiceEventHandlers"
       ],
       "interface": "Event",
       "bubbles": true
@@ -72,10 +72,10 @@
         "format": "fire an event phrasing",
         "href": "https://webbluetoothcg.github.io/web-bluetooth/#ref-for-concept-event-fire%E2%91%A5"
       },
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#eventdef-bluetoothremotegattservice-serviceadded",
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/#ref-for-concept-event-fire%E2%91%A5",
       "type": "serviceadded",
       "targets": [
-        "BluetoothRemoteGATTService"
+        "ServiceEventHandlers"
       ],
       "interface": "Event",
       "bubbles": true
@@ -85,13 +85,61 @@
         "format": "fire an event phrasing",
         "href": "https://webbluetoothcg.github.io/web-bluetooth/#ref-for-concept-event-fire%E2%91%A6"
       },
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#eventdef-bluetoothremotegattservice-servicechanged",
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/#ref-for-concept-event-fire%E2%91%A6",
       "type": "servicechanged",
       "targets": [
-        "BluetoothRemoteGATTService"
+        "ServiceEventHandlers"
       ],
       "interface": "Event",
       "bubbles": true
+    },
+    {
+      "type": "characteristicvaluechanged",
+      "interface": null,
+      "targets": [
+        "BluetoothRemoteGATTCharacteristic"
+      ],
+      "src": {
+        "format": "dfn",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#eventdef-bluetoothremotegattcharacteristic-characteristicvaluechanged"
+      },
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/#eventdef-bluetoothremotegattcharacteristic-characteristicvaluechanged"
+    },
+    {
+      "type": "serviceadded",
+      "interface": null,
+      "targets": [
+        "BluetoothRemoteGATTService"
+      ],
+      "src": {
+        "format": "dfn",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#eventdef-bluetoothremotegattservice-serviceadded"
+      },
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/#eventdef-bluetoothremotegattservice-serviceadded"
+    },
+    {
+      "type": "servicechanged",
+      "interface": null,
+      "targets": [
+        "BluetoothRemoteGATTService"
+      ],
+      "src": {
+        "format": "dfn",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#eventdef-bluetoothremotegattservice-servicechanged"
+      },
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/#eventdef-bluetoothremotegattservice-servicechanged"
+    },
+    {
+      "type": "serviceremoved",
+      "interface": null,
+      "targets": [
+        "BluetoothRemoteGATTService"
+      ],
+      "src": {
+        "format": "dfn",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#eventdef-bluetoothremotegattservice-serviceremoved"
+      },
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/#eventdef-bluetoothremotegattservice-serviceremoved"
     }
   ]
 }
