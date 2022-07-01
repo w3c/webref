@@ -25,6 +25,7 @@ const {
   copyFolder } = require('./utils');
 const { applyPatches } = require('./apply-patches');
 const { dropCSSPropertyDuplicates } = require('./drop-css-property-duplicates');
+const { applyEventPaches } = require('./amend-event-data');
 
 
 /**
@@ -95,6 +96,11 @@ async function prepareCurated(rawFolder, curatedFolder) {
   console.log('Apply patches');
   await applyPatches(rawFolder, curatedFolder, 'all');
   console.log('- patches applied');
+
+  console.log();
+  console.log('Amend event data as needed');
+  await applyEventPaches(curatedFolder);
+  console.log('- done');
 
   let crawlIndexFile = path.join(curatedFolder, 'index.json');
   let crawlIndex = await loadJSON(crawlIndexFile);
