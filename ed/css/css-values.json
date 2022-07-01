@@ -103,59 +103,59 @@
       "value": "clamp( <calc-sum>#{3} )"
     },
     "<round()>": {
-      "value": "round(<rounding-strategy>?, A, B)"
+      "value": "round( <rounding-strategy>?, <calc-sum>, <calc-sum> )"
     },
     "<rounding-strategy>": {
       "prose": "If A is exactly equal to an integer multiple of B, round() resolves to A exactly (preserving whether A is 0⁻ or 0⁺, if relevant). Otherwise, there are two integer multiples of B that are potentially \"closest\" to A, lower B which is closer to −∞ and upper B which is closer to +∞. The following <rounding-strategy>s dictate how to choose between them:",
       "value": "nearest | up | down | to-zero"
     },
     "<mod()>": {
-      "value": "mod(A, B)"
+      "value": "mod( <calc-sum>, <calc-sum> )"
     },
     "<rem()>": {
-      "value": "rem(A, B)"
+      "value": "rem( <calc-sum>, <calc-sum> )"
     },
     "<sin()>": {
-      "value": "sin(A)"
+      "value": "sin( <calc-sum> )"
     },
     "<cos()>": {
-      "value": "cos(A)"
+      "value": "cos( <calc-sum> )"
     },
     "<tan()>": {
-      "value": "tan(A)"
+      "value": "tan( <calc-sum> )"
     },
     "<asin()>": {
-      "value": "asin(A)"
+      "value": "asin( <calc-sum> )"
     },
     "<acos()>": {
-      "value": "acos(A)"
+      "value": "acos( <calc-sum> )"
     },
     "<atan()>": {
-      "value": "atan(A)"
+      "value": "atan( <calc-sum> )"
     },
     "<atan2()>": {
-      "value": "atan2(A, B)"
+      "value": "atan2( <calc-sum>, <calc-sum> )"
     },
     "<pow()>": {
-      "value": "pow(A, B)"
+      "value": "pow( <calc-sum>, <calc-sum> )"
     },
     "<sqrt()>": {
-      "value": "sqrt(A)"
+      "value": "sqrt( <calc-sum> )"
     },
     "<hypot()>": {
-      "value": "hypot(A, …)"
+      "value": "hypot( <calc-sum># )"
     },
     "<log()>": {
-      "value": "log(A, B?)"
+      "value": "log( <calc-sum>, <calc-sum>? )"
     },
     "<exp()>": {
-      "value": "exp(A)"
+      "value": "exp( <calc-sum> )"
     },
     "<abs()>": {
-      "value": "abs(A)"
+      "value": "abs( <calc-sum> )"
     },
     "<sign()>": {
-      "value": "sign(A)"
+      "value": "sign( <calc-sum> )"
     },
     "<quirky-length>": {
       "prose": "When CSS is being parsed in quirks mode, <quirky-length> is a type of <length> that is only valid in certain properties:"
