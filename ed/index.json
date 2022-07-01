@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2022-07-01T00:50:25.280Z",
+  "date": "2022-07-01T06:39:53.813Z",
   "options": {
     "fallback": "webref-fallback/ed/index.json",
     "output": "report",
@@ -22,7 +22,7 @@
   },
   "stats": {
     "crawled": 469,
-    "errors": 0
+    "errors": 1
   },
   "crawler": "reffy-7.2.1",
   "results": [
@@ -1605,9 +1605,9 @@
       ],
       "crawled": "https://html.spec.whatwg.org/multipage/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 30 Jun 2022 03:52:49 GMT"
+        "lastModified": "Fri, 01 Jul 2022 04:25:09 GMT"
       },
-      "date": "30 June 2022",
+      "date": "1 July 2022",
       "links": "links/html.json",
       "refs": "refs/html.json",
       "events": "events/html.json",
@@ -3102,9 +3102,9 @@
       ],
       "crawled": "https://tc39.es/proposal-temporal/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 30 Jun 2022 04:10:26 GMT"
+        "lastModified": "Fri, 01 Jul 2022 02:22:42 GMT"
       },
-      "date": "30 June 2022",
+      "date": "1 July 2022",
       "links": "links/tc39-temporal.json",
       "headings": "headings/tc39-temporal.json",
       "ids": "ids/tc39-temporal.json"
@@ -17088,7 +17088,8 @@
       "css": "css/CSS.json",
       "dfns": "dfns/CSS22.json",
       "headings": "headings/CSS22.json",
-      "ids": "ids/CSS22.json"
+      "ids": "ids/CSS22.json",
+      "error": "Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers' Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers'\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:483:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 323)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/css3-exclusions/",
@@ -20113,10 +20114,10 @@
       ],
       "crawled": "https://w3c.github.io/miniapp-lifecycle/",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 28 May 2022 09:15:07 GMT"
+        "lastModified": "Fri, 01 Jul 2022 06:27:34 GMT"
       },
       "generator": "respec",
-      "date": "28 May 2022",
+      "date": "01 July 2022",
       "links": "links/miniapp-lifecycle.json",
       "refs": "refs/miniapp-lifecycle.json",
       "dfns": "dfns/miniapp-lifecycle.json",
@@ -20162,10 +20163,10 @@
       ],
       "crawled": "https://w3c.github.io/miniapp-manifest/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 17 May 2022 03:11:39 GMT"
+        "lastModified": "Fri, 01 Jul 2022 06:25:15 GMT"
       },
       "generator": "respec",
-      "date": "17 May 2022",
+      "date": "01 July 2022",
       "links": "links/miniapp-manifest.json",
       "refs": "refs/miniapp-manifest.json",
       "dfns": "dfns/miniapp-manifest.json",
@@ -23899,10 +23900,10 @@
       ],
       "crawled": "https://w3c.github.io/web-share/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 08 Jun 2022 00:14:56 GMT"
+        "lastModified": "Fri, 01 Jul 2022 02:26:56 GMT"
       },
       "generator": "respec",
-      "date": "08 June 2022",
+      "date": "01 July 2022",
       "links": "links/web-share.json",
       "refs": "refs/web-share.json",
       "idl": "idl/web-share.idl",
