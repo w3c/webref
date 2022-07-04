@@ -44,7 +44,7 @@ const patches = {
       pattern: { type: /^nav(beforefocus|notarget)$/ },
       // fails because of https://github.com/w3c/csswg-drafts/pull/7443
       matched: 2,
-      change: { targets: 'HTMLElement' }
+      change: { targets: ['HTMLElement'] }
     }
   ],
   'css-scroll-snap': [
@@ -52,7 +52,7 @@ const patches = {
     {
       pattern: { type: /^snapChang(ed|ing)$/ },
       matched: 2,
-      change: { targets: 'HTMLElement' }
+      change: { targets: ['HTMLElement'] }
     }
   ],
   'html': [
