@@ -11,7 +11,12 @@
         "href": "https://w3c.github.io/uievents/#ref-for-abort"
       },
       "type": "abort",
-      "bubbles": false
+      "targets": [
+        "Window",
+        "Element"
+      ],
+      "bubbles": false,
+      "interface": "Event"
     },
     {
       "href": "https://w3c.github.io/uievents/#auxclick",
@@ -20,7 +25,11 @@
         "href": "https://w3c.github.io/uievents/#ref-for-auxclick"
       },
       "type": "auxclick",
-      "bubbles": true
+      "targets": [
+        "Element"
+      ],
+      "bubbles": true,
+      "interface": "PointerEvent"
     },
     {
       "href": "https://w3c.github.io/uievents/#beforeinput",
@@ -29,7 +38,11 @@
         "href": "https://w3c.github.io/uievents/#ref-for-beforeinput"
       },
       "type": "beforeinput",
-      "bubbles": true
+      "targets": [
+        "Element"
+      ],
+      "bubbles": true,
+      "interface": "InputEvent"
     },
     {
       "href": "https://w3c.github.io/uievents/#blur",
@@ -38,7 +51,12 @@
         "href": "https://w3c.github.io/uievents/#ref-for-blur"
       },
       "type": "blur",
-      "bubbles": false
+      "targets": [
+        "Window",
+        "Element"
+      ],
+      "bubbles": false,
+      "interface": "FocusEvent"
     },
     {
       "href": "https://w3c.github.io/uievents/#click",
@@ -47,7 +65,11 @@
         "href": "https://w3c.github.io/uievents/#ref-for-click%E2%91%A3"
       },
       "type": "click",
-      "bubbles": true
+      "targets": [
+        "Element"
+      ],
+      "bubbles": true,
+      "interface": "PointerEvent"
     },
     {
       "href": "https://w3c.github.io/uievents/#compositionstart",
@@ -56,7 +78,11 @@
         "href": "https://w3c.github.io/uievents/#ref-for-compositionstart"
       },
       "type": "compositionstart",
-      "bubbles": true
+      "targets": [
+        "Element"
+      ],
+      "bubbles": true,
+      "interface": "CompositionEvent"
     },
     {
       "href": "https://w3c.github.io/uievents/#compositionupdate",
@@ -65,7 +91,11 @@
         "href": "https://w3c.github.io/uievents/#ref-for-compositionupdate"
       },
       "type": "compositionupdate",
-      "bubbles": true
+      "targets": [
+        "Element"
+      ],
+      "bubbles": true,
+      "interface": "CompositionEvent"
     },
     {
       "href": "https://w3c.github.io/uievents/#compositionend",
@@ -74,7 +104,11 @@
         "href": "https://w3c.github.io/uievents/#ref-for-compositionend"
       },
       "type": "compositionend",
-      "bubbles": true
+      "targets": [
+        "Element"
+      ],
+      "bubbles": true,
+      "interface": "CompositionEvent"
     },
     {
       "href": "https://w3c.github.io/uievents/#contextmenu",
@@ -83,7 +117,11 @@
         "href": "https://w3c.github.io/uievents/#ref-for-contextmenu"
       },
       "type": "contextmenu",
-      "bubbles": true
+      "targets": [
+        "Element"
+      ],
+      "bubbles": true,
+      "interface": "PointerEvent"
     },
     {
       "href": "https://w3c.github.io/uievents/#dblclick",
@@ -92,7 +130,11 @@
         "href": "https://w3c.github.io/uievents/#ref-for-dblclick"
       },
       "type": "dblclick",
-      "bubbles": true
+      "targets": [
+        "Element"
+      ],
+      "bubbles": true,
+      "interface": "MouseEvent"
     },
     {
       "href": "https://w3c.github.io/uievents/#error",
@@ -101,7 +143,12 @@
         "href": "https://w3c.github.io/uievents/#ref-for-error"
       },
       "type": "error",
-      "bubbles": false
+      "targets": [
+        "Window",
+        "Element"
+      ],
+      "bubbles": false,
+      "interface": "Event"
     },
     {
       "href": "https://w3c.github.io/uievents/#focus",
@@ -110,7 +157,12 @@
         "href": "https://w3c.github.io/uievents/#ref-for-focus"
       },
       "type": "focus",
-      "bubbles": false
+      "targets": [
+        "Window",
+        "Element"
+      ],
+      "bubbles": false,
+      "interface": "FocusEvent"
     },
     {
       "href": "https://w3c.github.io/uievents/#focusin",
@@ -119,7 +171,12 @@
         "href": "https://w3c.github.io/uievents/#ref-for-focusin"
       },
       "type": "focusin",
-      "bubbles": true
+      "targets": [
+        "Window",
+        "Element"
+      ],
+      "bubbles": true,
+      "interface": "FocusEvent"
     },
     {
       "href": "https://w3c.github.io/uievents/#focusout",
@@ -128,7 +185,12 @@
         "href": "https://w3c.github.io/uievents/#ref-for-focusout"
       },
       "type": "focusout",
-      "bubbles": true
+      "targets": [
+        "Window",
+        "Element"
+      ],
+      "bubbles": true,
+      "interface": "FocusEvent"
     },
     {
       "href": "https://w3c.github.io/uievents/#input",
@@ -137,7 +199,11 @@
         "href": "https://w3c.github.io/uievents/#ref-for-input"
       },
       "type": "input",
-      "bubbles": true
+      "targets": [
+        "Element"
+      ],
+      "bubbles": true,
+      "interface": "InputEvent"
     },
     {
       "href": "https://w3c.github.io/uievents/#keydown",
@@ -146,7 +212,11 @@
         "href": "https://w3c.github.io/uievents/#ref-for-keydown%E2%91%A0"
       },
       "type": "keydown",
-      "bubbles": true
+      "targets": [
+        "Element"
+      ],
+      "bubbles": true,
+      "interface": "KeyboardEvent"
     },
     {
       "href": "https://w3c.github.io/uievents/#keyup",
@@ -155,7 +225,11 @@
         "href": "https://w3c.github.io/uievents/#ref-for-keyup"
       },
       "type": "keyup",
-      "bubbles": true
+      "targets": [
+        "Element"
+      ],
+      "bubbles": true,
+      "interface": "KeyboardEvent"
     },
     {
       "href": "https://w3c.github.io/uievents/#load",
@@ -164,7 +238,13 @@
         "href": "https://w3c.github.io/uievents/#ref-for-load%E2%91%A0"
       },
       "type": "load",
-      "bubbles": false
+      "targets": [
+        "Window",
+        "Document",
+        "Element"
+      ],
+      "bubbles": false,
+      "interface": "Event"
     },
     {
       "href": "https://w3c.github.io/uievents/#mousedown",
@@ -173,7 +253,11 @@
         "href": "https://w3c.github.io/uievents/#ref-for-mousedown%E2%91%A1"
       },
       "type": "mousedown",
-      "bubbles": true
+      "targets": [
+        "Element"
+      ],
+      "bubbles": true,
+      "interface": "MouseEvent"
     },
     {
       "href": "https://w3c.github.io/uievents/#mouseenter",
@@ -182,7 +266,11 @@
         "href": "https://w3c.github.io/uievents/#ref-for-mouseenter"
       },
       "type": "mouseenter",
-      "bubbles": false
+      "targets": [
+        "Element"
+      ],
+      "bubbles": false,
+      "interface": "MouseEvent"
     },
     {
       "href": "https://w3c.github.io/uievents/#mouseleave",
@@ -191,7 +279,11 @@
         "href": "https://w3c.github.io/uievents/#ref-for-mouseleave"
       },
       "type": "mouseleave",
-      "bubbles": false
+      "targets": [
+        "Element"
+      ],
+      "bubbles": false,
+      "interface": "MouseEvent"
     },
     {
       "href": "https://w3c.github.io/uievents/#mousemove",
@@ -200,7 +292,11 @@
         "href": "https://w3c.github.io/uievents/#ref-for-mousemove"
       },
       "type": "mousemove",
-      "bubbles": true
+      "targets": [
+        "Element"
+      ],
+      "bubbles": true,
+      "interface": "MouseEvent"
     },
     {
       "href": "https://w3c.github.io/uievents/#mouseout",
@@ -209,7 +305,11 @@
         "href": "https://w3c.github.io/uievents/#ref-for-mouseout"
       },
       "type": "mouseout",
-      "bubbles": true
+      "targets": [
+        "Element"
+      ],
+      "bubbles": true,
+      "interface": "MouseEvent"
     },
     {
       "href": "https://w3c.github.io/uievents/#mouseover",
@@ -218,7 +318,11 @@
         "href": "https://w3c.github.io/uievents/#ref-for-mouseover"
       },
       "type": "mouseover",
-      "bubbles": true
+      "targets": [
+        "Element"
+      ],
+      "bubbles": true,
+      "interface": "MouseEvent"
     },
     {
       "href": "https://w3c.github.io/uievents/#mouseup",
@@ -227,7 +331,11 @@
         "href": "https://w3c.github.io/uievents/#ref-for-mouseup"
       },
       "type": "mouseup",
-      "bubbles": true
+      "targets": [
+        "Element"
+      ],
+      "bubbles": true,
+      "interface": "MouseEvent"
     },
     {
       "href": "https://w3c.github.io/uievents/#select",
@@ -236,7 +344,11 @@
         "href": "https://w3c.github.io/uievents/#ref-for-select"
       },
       "type": "select",
-      "bubbles": true
+      "targets": [
+        "Element"
+      ],
+      "bubbles": true,
+      "interface": "Event"
     },
     {
       "href": "https://w3c.github.io/uievents/#unload",
@@ -245,7 +357,13 @@
         "href": "https://w3c.github.io/uievents/#ref-for-unload"
       },
       "type": "unload",
-      "bubbles": false
+      "targets": [
+        "Window",
+        "Document",
+        "Element"
+      ],
+      "bubbles": false,
+      "interface": "Event"
     },
     {
       "href": "https://w3c.github.io/uievents/#wheel",
@@ -254,377 +372,11 @@
         "href": "https://w3c.github.io/uievents/#ref-for-wheel"
       },
       "type": "wheel",
-      "bubbles": true
-    },
-    {
-      "type": "load",
-      "interface": "UIEvent",
-      "targets": [
-        "Window",
-        "Document",
-        "Element"
-      ],
-      "bubbles": false,
-      "src": {
-        "format": "definition table",
-        "href": null
-      },
-      "href": null
-    },
-    {
-      "type": "unload",
-      "interface": "UIEvent",
-      "targets": [
-        "Window",
-        "Document",
-        "Element"
-      ],
-      "bubbles": false,
-      "src": {
-        "format": "definition table",
-        "href": null
-      },
-      "href": null
-    },
-    {
-      "type": "abort",
-      "interface": "UIEvent",
-      "targets": [
-        "Window",
-        "Element"
-      ],
-      "bubbles": false,
-      "src": {
-        "format": "definition table",
-        "href": null
-      },
-      "href": null
-    },
-    {
-      "type": "error",
-      "interface": "UIEvent",
-      "targets": [
-        "Window",
-        "Element"
-      ],
-      "bubbles": false,
-      "src": {
-        "format": "definition table",
-        "href": null
-      },
-      "href": null
-    },
-    {
-      "type": "select",
-      "interface": "UIEvent",
       "targets": [
         "Element"
       ],
       "bubbles": true,
-      "src": {
-        "format": "definition table",
-        "href": null
-      },
-      "href": null
-    },
-    {
-      "type": "blur",
-      "interface": "FocusEvent",
-      "targets": [
-        "Window",
-        "Element"
-      ],
-      "bubbles": false,
-      "src": {
-        "format": "definition table",
-        "href": null
-      },
-      "href": null
-    },
-    {
-      "type": "focus",
-      "interface": "FocusEvent",
-      "targets": [
-        "Window",
-        "Element"
-      ],
-      "bubbles": false,
-      "src": {
-        "format": "definition table",
-        "href": null
-      },
-      "href": null
-    },
-    {
-      "type": "focusin",
-      "interface": "FocusEvent",
-      "targets": [
-        "Window",
-        "Element"
-      ],
-      "bubbles": true,
-      "src": {
-        "format": "definition table",
-        "href": null
-      },
-      "href": null
-    },
-    {
-      "type": "focusout",
-      "interface": "FocusEvent",
-      "targets": [
-        "Window",
-        "Element"
-      ],
-      "bubbles": true,
-      "src": {
-        "format": "definition table",
-        "href": null
-      },
-      "href": null
-    },
-    {
-      "type": "auxclick",
-      "interface": "PointerEvent",
-      "targets": [
-        "Element"
-      ],
-      "bubbles": true,
-      "src": {
-        "format": "definition table",
-        "href": null
-      },
-      "href": null
-    },
-    {
-      "type": "click",
-      "interface": "PointerEvent",
-      "targets": [
-        "Element"
-      ],
-      "bubbles": true,
-      "src": {
-        "format": "definition table",
-        "href": null
-      },
-      "href": null
-    },
-    {
-      "type": "contextmenu",
-      "interface": "PointerEvent",
-      "targets": [
-        "Element"
-      ],
-      "bubbles": true,
-      "src": {
-        "format": "definition table",
-        "href": null
-      },
-      "href": null
-    },
-    {
-      "type": "dblclick",
-      "interface": "MouseEvent",
-      "targets": [
-        "Element"
-      ],
-      "bubbles": true,
-      "src": {
-        "format": "definition table",
-        "href": null
-      },
-      "href": null
-    },
-    {
-      "type": "mousedown",
-      "interface": "MouseEvent",
-      "targets": [
-        "Element"
-      ],
-      "bubbles": true,
-      "src": {
-        "format": "definition table",
-        "href": null
-      },
-      "href": null
-    },
-    {
-      "type": "mouseenter",
-      "interface": "MouseEvent",
-      "targets": [
-        "Element"
-      ],
-      "bubbles": false,
-      "src": {
-        "format": "definition table",
-        "href": null
-      },
-      "href": null
-    },
-    {
-      "type": "mouseleave",
-      "interface": "MouseEvent",
-      "targets": [
-        "Element"
-      ],
-      "bubbles": false,
-      "src": {
-        "format": "definition table",
-        "href": null
-      },
-      "href": null
-    },
-    {
-      "type": "mousemove",
-      "interface": "MouseEvent",
-      "targets": [
-        "Element"
-      ],
-      "bubbles": true,
-      "src": {
-        "format": "definition table",
-        "href": null
-      },
-      "href": null
-    },
-    {
-      "type": "mouseout",
-      "interface": "MouseEvent",
-      "targets": [
-        "Element"
-      ],
-      "bubbles": true,
-      "src": {
-        "format": "definition table",
-        "href": null
-      },
-      "href": null
-    },
-    {
-      "type": "mouseover",
-      "interface": "MouseEvent",
-      "targets": [
-        "Element"
-      ],
-      "bubbles": true,
-      "src": {
-        "format": "definition table",
-        "href": null
-      },
-      "href": null
-    },
-    {
-      "type": "mouseup",
-      "interface": "MouseEvent",
-      "targets": [
-        "Element"
-      ],
-      "bubbles": true,
-      "src": {
-        "format": "definition table",
-        "href": null
-      },
-      "href": null
-    },
-    {
-      "type": "wheel",
-      "interface": "WheelEvent",
-      "targets": [
-        "Element"
-      ],
-      "bubbles": true,
-      "src": {
-        "format": "definition table",
-        "href": null
-      },
-      "href": null
-    },
-    {
-      "type": "beforeinput",
-      "interface": "InputEvent",
-      "targets": null,
-      "bubbles": true,
-      "src": {
-        "format": "definition table",
-        "href": null
-      },
-      "href": null
-    },
-    {
-      "type": "input",
-      "interface": "InputEvent",
-      "targets": null,
-      "bubbles": true,
-      "src": {
-        "format": "definition table",
-        "href": null
-      },
-      "href": null
-    },
-    {
-      "type": "keydown",
-      "interface": "KeyboardEvent",
-      "targets": [
-        "Element"
-      ],
-      "bubbles": true,
-      "src": {
-        "format": "definition table",
-        "href": null
-      },
-      "href": null
-    },
-    {
-      "type": "keyup",
-      "interface": "KeyboardEvent",
-      "targets": [
-        "Element"
-      ],
-      "bubbles": true,
-      "src": {
-        "format": "definition table",
-        "href": null
-      },
-      "href": null
-    },
-    {
-      "type": "compositionstart",
-      "interface": "CompositionEvent",
-      "targets": [
-        "Element"
-      ],
-      "bubbles": true,
-      "src": {
-        "format": "definition table",
-        "href": null
-      },
-      "href": null
-    },
-    {
-      "type": "compositionupdate",
-      "interface": "CompositionEvent",
-      "targets": [
-        "Element"
-      ],
-      "bubbles": true,
-      "src": {
-        "format": "definition table",
-        "href": null
-      },
-      "href": null
-    },
-    {
-      "type": "compositionend",
-      "interface": "CompositionEvent",
-      "targets": [
-        "Element"
-      ],
-      "bubbles": true,
-      "src": {
-        "format": "definition table",
-        "href": null
-      },
-      "href": null
+      "interface": "WheelEvent"
     },
     {
       "href": "https://w3c.github.io/uievents/#domactivate",
@@ -633,7 +385,11 @@
         "href": "https://w3c.github.io/uievents/#ref-for-domactivate%E2%91%A0"
       },
       "type": "DOMActivate",
-      "bubbles": true
+      "targets": [
+        "Element"
+      ],
+      "bubbles": true,
+      "interface": "UIEvent"
     },
     {
       "href": "https://w3c.github.io/uievents/#domattrmodified",
@@ -642,7 +398,11 @@
         "href": "https://w3c.github.io/uievents/#ref-for-domattrmodified"
       },
       "type": "DOMAttrModified",
-      "bubbles": true
+      "targets": [
+        "Element"
+      ],
+      "bubbles": true,
+      "interface": "MutationEvent"
     },
     {
       "href": "https://w3c.github.io/uievents/#domcharacterdatamodified",
@@ -651,7 +411,13 @@
         "href": "https://w3c.github.io/uievents/#ref-for-domcharacterdatamodified"
       },
       "type": "DOMCharacterDataModified",
-      "bubbles": true
+      "targets": [
+        "Text",
+        "Comment",
+        "ProcessingInstruction"
+      ],
+      "bubbles": true,
+      "interface": "MutationEvent"
     },
     {
       "href": "https://w3c.github.io/uievents/#domfocusin",
@@ -660,7 +426,12 @@
         "href": "https://w3c.github.io/uievents/#ref-for-domfocusin"
       },
       "type": "DOMFocusIn",
-      "bubbles": true
+      "targets": [
+        "Window",
+        "Element"
+      ],
+      "bubbles": true,
+      "interface": "FocusEvent"
     },
     {
       "href": "https://w3c.github.io/uievents/#domfocusout",
@@ -669,7 +440,12 @@
         "href": "https://w3c.github.io/uievents/#ref-for-domfocusout"
       },
       "type": "DOMFocusOut",
-      "bubbles": true
+      "targets": [
+        "Window",
+        "Element"
+      ],
+      "bubbles": true,
+      "interface": "FocusEvent"
     },
     {
       "href": "https://w3c.github.io/uievents/#domnodeinserted",
@@ -678,7 +454,16 @@
         "href": "https://w3c.github.io/uievents/#ref-for-domnodeinserted"
       },
       "type": "DOMNodeInserted",
-      "bubbles": true
+      "targets": [
+        "Element",
+        "Attr",
+        "Text",
+        "Comment",
+        "DocumentType",
+        "ProcessingInstruction"
+      ],
+      "bubbles": true,
+      "interface": "MutationEvent"
     },
     {
       "href": "https://w3c.github.io/uievents/#domnodeinsertedintodocument",
@@ -687,7 +472,16 @@
         "href": "https://w3c.github.io/uievents/#ref-for-domnodeinsertedintodocument"
       },
       "type": "DOMNodeInsertedIntoDocument",
-      "bubbles": false
+      "targets": [
+        "Element",
+        "Attr",
+        "Text",
+        "Comment",
+        "DocumentType",
+        "ProcessingInstruction"
+      ],
+      "bubbles": false,
+      "interface": "MutationEvent"
     },
     {
       "href": "https://w3c.github.io/uievents/#domnoderemoved",
@@ -696,7 +490,16 @@
         "href": "https://w3c.github.io/uievents/#ref-for-domnoderemoved"
       },
       "type": "DOMNodeRemoved",
-      "bubbles": true
+      "targets": [
+        "Element",
+        "Attr",
+        "Text",
+        "Comment",
+        "DocumentType",
+        "ProcessingInstruction"
+      ],
+      "bubbles": true,
+      "interface": "MutationEvent"
     },
     {
       "href": "https://w3c.github.io/uievents/#domnoderemovedfromdocument",
@@ -705,7 +508,16 @@
         "href": "https://w3c.github.io/uievents/#ref-for-domnoderemovedfromdocument"
       },
       "type": "DOMNodeRemovedFromDocument",
-      "bubbles": false
+      "targets": [
+        "Element",
+        "Attr",
+        "Text",
+        "Comment",
+        "DocumentType",
+        "ProcessingInstruction"
+      ],
+      "bubbles": false,
+      "interface": "MutationEvent"
     },
     {
       "href": "https://w3c.github.io/uievents/#domsubtreemodified",
@@ -714,174 +526,6 @@
         "href": "https://w3c.github.io/uievents/#ref-for-domsubtreemodified"
       },
       "type": "DOMSubtreeModified",
-      "bubbles": true
-    },
-    {
-      "href": "https://w3c.github.io/uievents/#keypress",
-      "src": {
-        "format": "summary table",
-        "href": "https://w3c.github.io/uievents/#ref-for-keypress%E2%91%A8"
-      },
-      "type": "keypress",
-      "bubbles": true
-    },
-    {
-      "type": "DOMActivate",
-      "interface": "UIEvent",
-      "targets": [
-        "Element"
-      ],
-      "bubbles": true,
-      "src": {
-        "format": "definition table",
-        "href": null
-      },
-      "href": null
-    },
-    {
-      "type": "DOMFocusIn",
-      "interface": "FocusEvent",
-      "targets": [
-        "Window",
-        "Element"
-      ],
-      "bubbles": true,
-      "src": {
-        "format": "definition table",
-        "href": null
-      },
-      "href": null
-    },
-    {
-      "type": "DOMFocusOut",
-      "interface": "FocusEvent",
-      "targets": [
-        "Window",
-        "Element"
-      ],
-      "bubbles": true,
-      "src": {
-        "format": "definition table",
-        "href": null
-      },
-      "href": null
-    },
-    {
-      "type": "keypress",
-      "interface": "KeyboardEvent",
-      "targets": [
-        "Element"
-      ],
-      "bubbles": true,
-      "src": {
-        "format": "definition table",
-        "href": null
-      },
-      "href": null
-    },
-    {
-      "type": "DOMAttrModified",
-      "interface": "MutationEvent",
-      "targets": [
-        "Element"
-      ],
-      "bubbles": true,
-      "src": {
-        "format": "definition table",
-        "href": null
-      },
-      "href": null
-    },
-    {
-      "type": "DOMCharacterDataModified",
-      "interface": "MutationEvent",
-      "targets": [
-        "Text",
-        "Comment",
-        "ProcessingInstruction"
-      ],
-      "bubbles": true,
-      "src": {
-        "format": "definition table",
-        "href": null
-      },
-      "href": null
-    },
-    {
-      "type": "DOMNodeInserted",
-      "interface": "MutationEvent",
-      "targets": [
-        "Element",
-        "Attr",
-        "Text",
-        "Comment",
-        "DocumentType",
-        "ProcessingInstruction"
-      ],
-      "bubbles": true,
-      "src": {
-        "format": "definition table",
-        "href": null
-      },
-      "href": null
-    },
-    {
-      "type": "DOMNodeInsertedIntoDocument",
-      "interface": "MutationEvent",
-      "targets": [
-        "Element",
-        "Attr",
-        "Text",
-        "Comment",
-        "DocumentType",
-        "ProcessingInstruction"
-      ],
-      "bubbles": false,
-      "src": {
-        "format": "definition table",
-        "href": null
-      },
-      "href": null
-    },
-    {
-      "type": "DOMNodeRemoved",
-      "interface": "MutationEvent",
-      "targets": [
-        "Element",
-        "Attr",
-        "Text",
-        "Comment",
-        "DocumentType",
-        "ProcessingInstruction"
-      ],
-      "bubbles": true,
-      "src": {
-        "format": "definition table",
-        "href": null
-      },
-      "href": null
-    },
-    {
-      "type": "DOMNodeRemovedFromDocument",
-      "interface": "MutationEvent",
-      "targets": [
-        "Element",
-        "Attr",
-        "Text",
-        "Comment",
-        "DocumentType",
-        "ProcessingInstruction"
-      ],
-      "bubbles": false,
-      "src": {
-        "format": "definition table",
-        "href": null
-      },
-      "href": null
-    },
-    {
-      "type": "DOMSubtreeModified",
-      "interface": "MutationEvent",
       "targets": [
         "Window",
         "Document",
@@ -890,11 +534,20 @@
         "Attr"
       ],
       "bubbles": true,
+      "interface": "MutationEvent"
+    },
+    {
+      "href": "https://w3c.github.io/uievents/#keypress",
       "src": {
-        "format": "definition table",
-        "href": null
+        "format": "summary table",
+        "href": "https://w3c.github.io/uievents/#ref-for-keypress%E2%91%A8"
       },
-      "href": null
+      "type": "keypress",
+      "targets": [
+        "Element"
+      ],
+      "bubbles": true,
+      "interface": "KeyboardEvent"
     }
   ]
 }
