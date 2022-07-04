@@ -5,48 +5,69 @@
   },
   "events": [
     {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://w3c.github.io/IndexedDB/#ref-for-concept-event-fire"
+      },
+      "href": "https://w3c.github.io/IndexedDB/#eventdef-request-error",
+      "type": "error",
+      "targets": [
+        "IDBDatabase",
+        "IDBRequest",
+        "IDBTransaction"
+      ],
+      "interface": "Event",
+      "bubbles": true
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://w3c.github.io/IndexedDB/#ref-for-concept-event-fire%E2%91%A0"
+      },
+      "href": "https://w3c.github.io/IndexedDB/#eventdef-request-success",
       "type": "success",
       "targets": [
         "IDBRequest"
       ],
-      "interface": null,
-      "src": {
-        "format": "IDL eventHandler",
-        "href": null
-      }
+      "interface": "Event"
     },
     {
-      "type": "error",
-      "targets": [
-        "IDBRequest"
-      ],
-      "interface": null,
       "src": {
-        "format": "IDL eventHandler",
-        "href": null
-      }
-    },
-    {
-      "type": "error",
+        "format": "fire an event phrasing",
+        "href": "https://w3c.github.io/IndexedDB/#ref-for-concept-event-fire%E2%91%A2"
+      },
+      "href": "https://w3c.github.io/IndexedDB/#eventdef-connection-close",
+      "type": "close",
       "targets": [
         "IDBDatabase"
       ],
-      "interface": null,
-      "src": {
-        "format": "IDL eventHandler",
-        "href": null
-      }
+      "interface": "Event"
     },
     {
-      "type": "error",
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://w3c.github.io/IndexedDB/#ref-for-concept-event-fire%E2%91%A3"
+      },
+      "href": "https://w3c.github.io/IndexedDB/#eventdef-transaction-complete",
+      "type": "complete",
       "targets": [
         "IDBTransaction"
       ],
-      "interface": null,
+      "interface": "Event"
+    },
+    {
       "src": {
-        "format": "IDL eventHandler",
-        "href": null
-      }
+        "format": "fire an event phrasing",
+        "href": "https://w3c.github.io/IndexedDB/#ref-for-concept-event-fire%E2%91%A5"
+      },
+      "href": "https://w3c.github.io/IndexedDB/#eventdef-transaction-abort",
+      "type": "abort",
+      "targets": [
+        "IDBDatabase",
+        "IDBTransaction"
+      ],
+      "interface": "Event",
+      "bubbles": true
     },
     {
       "type": "blocked",
@@ -71,39 +92,6 @@
       }
     },
     {
-      "type": "abort",
-      "targets": [
-        "IDBDatabase"
-      ],
-      "interface": null,
-      "src": {
-        "format": "IDL eventHandler",
-        "href": null
-      }
-    },
-    {
-      "type": "abort",
-      "targets": [
-        "IDBTransaction"
-      ],
-      "interface": null,
-      "src": {
-        "format": "IDL eventHandler",
-        "href": null
-      }
-    },
-    {
-      "type": "close",
-      "targets": [
-        "IDBDatabase"
-      ],
-      "interface": null,
-      "src": {
-        "format": "IDL eventHandler",
-        "href": null
-      }
-    },
-    {
       "type": "versionchange",
       "targets": [
         "IDBDatabase"
@@ -115,15 +103,28 @@
       }
     },
     {
-      "type": "complete",
+      "type": "abort",
+      "interface": null,
       "targets": [
         "IDBTransaction"
       ],
-      "interface": null,
       "src": {
-        "format": "IDL eventHandler",
-        "href": null
-      }
+        "format": "dfn",
+        "href": "https://w3c.github.io/IndexedDB/#eventdef-idbtransaction-abort"
+      },
+      "href": "https://w3c.github.io/IndexedDB/#eventdef-idbtransaction-abort"
+    },
+    {
+      "type": "error",
+      "interface": null,
+      "targets": [
+        "IDBRequest"
+      ],
+      "src": {
+        "format": "dfn",
+        "href": "https://w3c.github.io/IndexedDB/#eventdef-idbrequest-error"
+      },
+      "href": "https://w3c.github.io/IndexedDB/#eventdef-idbrequest-error"
     }
   ]
 }
