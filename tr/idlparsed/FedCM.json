@@ -15,14 +15,14 @@
     },
     "idlNames": {
       "IdentityCredential": {
-        "fragment": "[Exposed=Window, SecureContext]\ninterface IdentityCredential : Credential {\n  readonly attribute USVString? idToken;\n};",
+        "fragment": "[Exposed=Window, SecureContext]\ninterface IdentityCredential : Credential {\n  readonly attribute USVString? token;\n};",
         "type": "interface",
         "name": "IdentityCredential",
         "inheritance": "Credential",
         "members": [
           {
             "type": "attribute",
-            "name": "idToken",
+            "name": "token",
             "idlType": {
               "type": "attribute-type",
               "extAttrs": [],

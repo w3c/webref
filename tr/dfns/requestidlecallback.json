@@ -1,389 +1,9 @@
 {
   "spec": {
-    "title": "Cooperative Scheduling of Background Tasks",
+    "title": "requestIdleCallback()",
     "url": "https://www.w3.org/TR/requestidlecallback/"
   },
   "dfns": [
-    {
-      "id": "dfn-browsing-context",
-      "href": "https://www.w3.org/TR/requestidlecallback/#dfn-browsing-context",
-      "linkingText": [
-        "browsing context"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "dependencies",
-        "href": "https://www.w3.org/TR/requestidlecallback/#dependencies",
-        "title": "Dependencies",
-        "number": "1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-event-loop",
-      "href": "https://www.w3.org/TR/requestidlecallback/#dfn-event-loop",
-      "linkingText": [
-        "event loop"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "dependencies",
-        "href": "https://www.w3.org/TR/requestidlecallback/#dependencies",
-        "title": "Dependencies",
-        "number": "1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-event-loop-processing-model",
-      "href": "https://www.w3.org/TR/requestidlecallback/#dfn-event-loop-processing-model",
-      "linkingText": [
-        "event loop processing model"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "dependencies",
-        "href": "https://www.w3.org/TR/requestidlecallback/#dependencies",
-        "title": "Dependencies",
-        "number": "1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-spin-the-event-loop",
-      "href": "https://www.w3.org/TR/requestidlecallback/#dfn-spin-the-event-loop",
-      "linkingText": [
-        "spin the event loop"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "dependencies",
-        "href": "https://www.w3.org/TR/requestidlecallback/#dependencies",
-        "title": "Dependencies",
-        "number": "1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-fully-active",
-      "href": "https://www.w3.org/TR/requestidlecallback/#dfn-fully-active",
-      "linkingText": [
-        "fully active"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "dependencies",
-        "href": "https://www.w3.org/TR/requestidlecallback/#dependencies",
-        "title": "Dependencies",
-        "number": "1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-tasks",
-      "href": "https://www.w3.org/TR/requestidlecallback/#dfn-tasks",
-      "linkingText": [
-        "tasks"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "dependencies",
-        "href": "https://www.w3.org/TR/requestidlecallback/#dependencies",
-        "title": "Dependencies",
-        "number": "1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-task-source",
-      "href": "https://www.w3.org/TR/requestidlecallback/#dfn-task-source",
-      "linkingText": [
-        "task source"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "dependencies",
-        "href": "https://www.w3.org/TR/requestidlecallback/#dependencies",
-        "title": "Dependencies",
-        "number": "1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-task-queues",
-      "href": "https://www.w3.org/TR/requestidlecallback/#dfn-task-queues",
-      "linkingText": [
-        "task queues"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "dependencies",
-        "href": "https://www.w3.org/TR/requestidlecallback/#dependencies",
-        "title": "Dependencies",
-        "number": "1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-queue-a-task",
-      "href": "https://www.w3.org/TR/requestidlecallback/#dfn-queue-a-task",
-      "linkingText": [
-        "queue a task"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "dependencies",
-        "href": "https://www.w3.org/TR/requestidlecallback/#dependencies",
-        "title": "Dependencies",
-        "number": "1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-microtask-queue",
-      "href": "https://www.w3.org/TR/requestidlecallback/#dfn-microtask-queue",
-      "linkingText": [
-        "microtask queue"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "dependencies",
-        "href": "https://www.w3.org/TR/requestidlecallback/#dependencies",
-        "title": "Dependencies",
-        "number": "1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-list-of-active-timers",
-      "href": "https://www.w3.org/TR/requestidlecallback/#dfn-list-of-active-timers",
-      "linkingText": [
-        "list of active timers"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "dependencies",
-        "href": "https://www.w3.org/TR/requestidlecallback/#dependencies",
-        "title": "Dependencies",
-        "number": "1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-settimeout",
-      "href": "https://www.w3.org/TR/requestidlecallback/#dfn-settimeout",
-      "linkingText": [
-        "setTimeout"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "dependencies",
-        "href": "https://www.w3.org/TR/requestidlecallback/#dependencies",
-        "title": "Dependencies",
-        "number": "1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-setinterval",
-      "href": "https://www.w3.org/TR/requestidlecallback/#dfn-setinterval",
-      "linkingText": [
-        "setInterval"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "dependencies",
-        "href": "https://www.w3.org/TR/requestidlecallback/#dependencies",
-        "title": "Dependencies",
-        "number": "1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-requestanimationframe",
-      "href": "https://www.w3.org/TR/requestidlecallback/#dfn-requestanimationframe",
-      "linkingText": [
-        "requestAnimationFrame"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "dependencies",
-        "href": "https://www.w3.org/TR/requestidlecallback/#dependencies",
-        "title": "Dependencies",
-        "number": "1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-report-the-error",
-      "href": "https://www.w3.org/TR/requestidlecallback/#dfn-report-the-error",
-      "linkingText": [
-        "report the error"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "dependencies",
-        "href": "https://www.w3.org/TR/requestidlecallback/#dependencies",
-        "title": "Dependencies",
-        "number": "1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-current-high-resolution-time",
-      "href": "https://www.w3.org/TR/requestidlecallback/#dfn-current-high-resolution-time",
-      "linkingText": [
-        "current high resolution time"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "dependencies",
-        "href": "https://www.w3.org/TR/requestidlecallback/#dependencies",
-        "title": "Dependencies",
-        "number": "1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-domhighrestimestamp",
-      "href": "https://www.w3.org/TR/requestidlecallback/#dfn-domhighrestimestamp",
-      "linkingText": [
-        "DOMHighResTimestamp"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "dependencies",
-        "href": "https://www.w3.org/TR/requestidlecallback/#dependencies",
-        "title": "Dependencies",
-        "number": "1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-conforming-implementation",
-      "href": "https://www.w3.org/TR/requestidlecallback/#dfn-conforming-implementation",
-      "linkingText": [
-        "conforming implementation"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "dependencies",
-        "href": "https://www.w3.org/TR/requestidlecallback/#dependencies",
-        "title": "Dependencies",
-        "number": "1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-hidden",
-      "href": "https://www.w3.org/TR/requestidlecallback/#dfn-hidden",
-      "linkingText": [
-        "hidden"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "dependencies",
-        "href": "https://www.w3.org/TR/requestidlecallback/#dependencies",
-        "title": "Dependencies",
-        "number": "1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dom-window",
-      "href": "https://www.w3.org/TR/requestidlecallback/#dom-window",
-      "linkingText": [
-        "Window"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "window_extensions",
-        "href": "https://www.w3.org/TR/requestidlecallback/#window_extensions",
-        "title": "Window interface extensions",
-        "number": "5"
-      },
-      "definedIn": "prose"
-    },
     {
       "id": "dfn-list-of-idle-request-callbacks",
       "href": "https://www.w3.org/TR/requestidlecallback/#dfn-list-of-idle-request-callbacks",
@@ -399,7 +19,7 @@
         "id": "window_extensions",
         "href": "https://www.w3.org/TR/requestidlecallback/#window_extensions",
         "title": "Window interface extensions",
-        "number": "5"
+        "number": "4"
       },
       "definedIn": "prose"
     },
@@ -418,7 +38,7 @@
         "id": "window_extensions",
         "href": "https://www.w3.org/TR/requestidlecallback/#window_extensions",
         "title": "Window interface extensions",
-        "number": "5"
+        "number": "4"
       },
       "definedIn": "prose"
     },
@@ -437,26 +57,7 @@
         "id": "window_extensions",
         "href": "https://www.w3.org/TR/requestidlecallback/#window_extensions",
         "title": "Window interface extensions",
-        "number": "5"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-last-idle-period-deadline",
-      "href": "https://www.w3.org/TR/requestidlecallback/#dfn-last-idle-period-deadline",
-      "linkingText": [
-        "last idle period deadline"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "window_extensions",
-        "href": "https://www.w3.org/TR/requestidlecallback/#window_extensions",
-        "title": "Window interface extensions",
-        "number": "5"
+        "number": "4"
       },
       "definedIn": "prose"
     },
@@ -464,21 +65,26 @@
       "id": "dom-window-requestidlecallback",
       "href": "https://www.w3.org/TR/requestidlecallback/#dom-window-requestidlecallback",
       "linkingText": [
-        "requestidlecallback()",
+        "requestIdleCallback()",
+        "requestIdleCallback(callback)",
+        "requestIdleCallback(callback, options)"
+      ],
+      "localLinkingText": [
+        "Window.requestIdleCallback",
+        "Window.requestIdleCallback()",
         "requestIdleCallback"
       ],
-      "localLinkingText": [],
-      "type": "dfn",
+      "type": "method",
       "for": [
-        "window"
+        "Window"
       ],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "the-requestidlecallback-method",
         "href": "https://www.w3.org/TR/requestidlecallback/#the-requestidlecallback-method",
-        "title": "The requestIdleCallback method",
-        "number": "5.1"
+        "title": "The requestIdleCallback() method",
+        "number": "4.1"
       },
       "definedIn": "heading"
     },
@@ -489,15 +95,15 @@
         "IdleRequestCallback"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "callback",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "the-requestidlecallback-method",
         "href": "https://www.w3.org/TR/requestidlecallback/#the-requestidlecallback-method",
-        "title": "The requestIdleCallback method",
-        "number": "5.1"
+        "title": "The requestIdleCallback() method",
+        "number": "4.1"
       },
       "definedIn": "prose"
     },
@@ -508,15 +114,15 @@
         "IdleRequestOptions"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "dictionary",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "the-requestidlecallback-method",
         "href": "https://www.w3.org/TR/requestidlecallback/#the-requestidlecallback-method",
-        "title": "The requestIdleCallback method",
-        "number": "5.1"
+        "title": "The requestIdleCallback() method",
+        "number": "4.1"
       },
       "definedIn": "prose"
     },
@@ -527,17 +133,17 @@
         "timeout"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "dict-member",
       "for": [
-        "idlerequestoptions"
+        "IdleRequestOptions"
       ],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "the-requestidlecallback-method",
         "href": "https://www.w3.org/TR/requestidlecallback/#the-requestidlecallback-method",
-        "title": "The requestIdleCallback method",
-        "number": "5.1"
+        "title": "The requestIdleCallback() method",
+        "number": "4.1"
       },
       "definedIn": "prose"
     },
@@ -545,21 +151,25 @@
       "id": "dom-window-cancelidlecallback",
       "href": "https://www.w3.org/TR/requestidlecallback/#dom-window-cancelidlecallback",
       "linkingText": [
-        "cancelidlecallback()",
+        "cancelIdleCallback()",
+        "cancelIdleCallback(handle)"
+      ],
+      "localLinkingText": [
+        "Window.cancelIdleCallback",
+        "Window.cancelIdleCallback()",
         "cancelIdleCallback"
       ],
-      "localLinkingText": [],
-      "type": "dfn",
+      "type": "method",
       "for": [
-        "window"
+        "Window"
       ],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "the-cancelidlecallback-method",
         "href": "https://www.w3.org/TR/requestidlecallback/#the-cancelidlecallback-method",
-        "title": "The cancelIdleCallback method",
-        "number": "5.2"
+        "title": "The cancelIdleCallback() method",
+        "number": "4.2"
       },
       "definedIn": "heading"
     },
@@ -570,23 +180,23 @@
         "IdleDeadline"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "interface",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "the-idledeadline-interface",
         "href": "https://www.w3.org/TR/requestidlecallback/#the-idledeadline-interface",
         "title": "The IdleDeadline interface",
-        "number": "5.3"
+        "number": "4.3"
       },
       "definedIn": "heading"
     },
     {
-      "id": "dfn-time",
-      "href": "https://www.w3.org/TR/requestidlecallback/#dfn-time",
+      "id": "dfn-get-deadline-time",
+      "href": "https://www.w3.org/TR/requestidlecallback/#dfn-get-deadline-time",
       "linkingText": [
-        "time"
+        "get deadline time"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -597,7 +207,7 @@
         "id": "the-idledeadline-interface",
         "href": "https://www.w3.org/TR/requestidlecallback/#the-idledeadline-interface",
         "title": "The IdleDeadline interface",
-        "number": "5.3"
+        "number": "4.3"
       },
       "definedIn": "prose"
     },
@@ -605,21 +215,24 @@
       "id": "dom-idledeadline-timeremaining",
       "href": "https://www.w3.org/TR/requestidlecallback/#dom-idledeadline-timeremaining",
       "linkingText": [
-        "timeremaining()",
+        "timeRemaining()"
+      ],
+      "localLinkingText": [
+        "IdleDeadline.timeRemaining",
+        "IdleDeadline.timeRemaining()",
         "timeRemaining"
       ],
-      "localLinkingText": [],
-      "type": "dfn",
+      "type": "method",
       "for": [
-        "idledeadline"
+        "IdleDeadline"
       ],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "the-idledeadline-interface",
         "href": "https://www.w3.org/TR/requestidlecallback/#the-idledeadline-interface",
         "title": "The IdleDeadline interface",
-        "number": "5.3"
+        "number": "4.3"
       },
       "definedIn": "prose"
     },
@@ -638,7 +251,7 @@
         "id": "the-idledeadline-interface",
         "href": "https://www.w3.org/TR/requestidlecallback/#the-idledeadline-interface",
         "title": "The IdleDeadline interface",
-        "number": "5.3"
+        "number": "4.3"
       },
       "definedIn": "prose"
     },
@@ -648,56 +261,39 @@
       "linkingText": [
         "didTimeout"
       ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "idledeadline"
+      "localLinkingText": [
+        "IdleDeadline.didTimeout"
       ],
-      "access": "private",
+      "type": "attribute",
+      "for": [
+        "IdleDeadline"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "the-idledeadline-interface",
         "href": "https://www.w3.org/TR/requestidlecallback/#the-idledeadline-interface",
         "title": "The IdleDeadline interface",
-        "number": "5.3"
+        "number": "4.3"
       },
       "definedIn": "prose"
     },
     {
-      "id": "dfn-start-an-idle-period-algorithm",
-      "href": "https://www.w3.org/TR/requestidlecallback/#dfn-start-an-idle-period-algorithm",
+      "id": "dfn-start-an-idle-period",
+      "href": "https://www.w3.org/TR/requestidlecallback/#dfn-start-an-idle-period",
       "linkingText": [
-        "start an idle period algorithm"
+        "start an idle period"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "start-an-idle-period-algorithm",
         "href": "https://www.w3.org/TR/requestidlecallback/#start-an-idle-period-algorithm",
         "title": "Start an idle period algorithm",
-        "number": "6.1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-idle-task-task-source",
-      "href": "https://www.w3.org/TR/requestidlecallback/#dfn-idle-task-task-source",
-      "linkingText": [
-        "idle-task task source"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "start-an-idle-period-algorithm",
-        "href": "https://www.w3.org/TR/requestidlecallback/#start-an-idle-period-algorithm",
-        "title": "Start an idle period algorithm",
-        "number": "6.1"
+        "number": "5.1"
       },
       "definedIn": "prose"
     },
@@ -716,7 +312,7 @@
         "id": "start-an-idle-period-algorithm",
         "href": "https://www.w3.org/TR/requestidlecallback/#start-an-idle-period-algorithm",
         "title": "Start an idle period algorithm",
-        "number": "6.1"
+        "number": "5.1"
       },
       "definedIn": "note"
     },
@@ -735,7 +331,7 @@
         "id": "invoke-idle-callbacks-algorithm",
         "href": "https://www.w3.org/TR/requestidlecallback/#invoke-idle-callbacks-algorithm",
         "title": "Invoke idle callbacks algorithm",
-        "number": "6.2"
+        "number": "5.2"
       },
       "definedIn": "prose"
     },
@@ -754,7 +350,7 @@
         "id": "invoke-idle-callback-timeout-algorithm",
         "href": "https://www.w3.org/TR/requestidlecallback/#invoke-idle-callback-timeout-algorithm",
         "title": "Invoke idle callback timeout algorithm",
-        "number": "6.3"
+        "number": "5.3"
       },
       "definedIn": "prose"
     }

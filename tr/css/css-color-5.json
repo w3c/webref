@@ -34,9 +34,6 @@
     "<color-mix()>": {
       "value": "color-mix( <color-interpolation-method> , [ <color> && <percentage [0,100]>? ]#{2})"
     },
-    "<color-contrast()>": {
-      "value": "color-contrast( <color> vs <color>#{2,} [ to [<number> | AA | AA-large | AAA | AAA-large]]? )"
-    },
     "<rgb()>": {
       "value": "rgb( [<percentage> | none]{3} [ / [<alpha-value> | none] ]? ) | rgb( [<number> | none]{3} [ / [<alpha-value> | none] ]? rgb( [ from <color> ]? [ <number> | <percentage> | none]{3} [ / [<alpha-value> | none] ]? )"
     },
@@ -44,7 +41,7 @@
       "value": "<number> | <percentage>"
     },
     "<hsl()>": {
-      "value": "hsl(([from <color>]? [<hue> | none] [<percentage> | <number> | none] [<percentage> | <number> | none] [ / [<alpha-value> | none] ]? )"
+      "value": "hsl([from <color>]? [<hue> | none] [<percentage> | <number> | none] [<percentage> | <number> | none] [ / [<alpha-value> | none] ]? )"
     },
     "<hwb()>": {
       "value": "hwb([from <color>]? [<hue> | none] [<percentage> | <number> | none] [<percentage> | <number> | none] [ / [<alpha-value> | none] ]? )"
@@ -62,7 +59,25 @@
       "value": "oklch([from <color>]? [<percentage> | <number> | none] [<percentage> | <number> | none] [<hue> | none] [ / [<alpha-value> | none] ]? )"
     },
     "<color()>": {
-      "value": "color( [from <color>]? <colorspace-params> [ / <alpha-value> ]? )"
+      "value": "color( [from <color>]? <colorspace-params> [ / [ <alpha-value> | none ] ]? )"
+    },
+    "<colorspace-params>": {
+      "value": "[<custom-params> | <predefined-rgb-params> | <xyz-params>]"
+    },
+    "<custom-params>": {
+      "value": "<dashed-ident> [ <number> | <percentage> | none ]#"
+    },
+    "<predefined-rgb-params>": {
+      "value": "<predefined-rgb> [ <number> | <percentage> | none ]{3}"
+    },
+    "<predefined-rgb>": {
+      "value": "srgb | srgb-linear | display-p3 | a98-rgb | prophoto-rgb | rec2020"
+    },
+    "<xyz-params>": {
+      "value": "<xyz> [ <number> | <percentage> | none ]{3}"
+    },
+    "<xyz>": {
+      "value": "xyz | xyz-d50 | xyz-d65"
     },
     "<device-cmyk()>": {
       "value": "device-cmyk( <cmyk-component>{4} [ / <alpha-value> ]? )"

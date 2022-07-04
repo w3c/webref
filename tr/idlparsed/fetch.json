@@ -985,7 +985,7 @@
         "partial": false
       },
       "RequestInit": {
-        "fragment": "dictionary RequestInit {\n  ByteString method;\n  HeadersInit headers;\n  BodyInit? body;\n  USVString referrer;\n  ReferrerPolicy referrerPolicy;\n  RequestMode mode;\n  RequestCredentials credentials;\n  RequestCache cache;\n  RequestRedirect redirect;\n  DOMString integrity;\n  boolean keepalive;\n  AbortSignal? signal;\n  any window; // can only be set to null\n};",
+        "fragment": "dictionary RequestInit {\n  ByteString method;\n  HeadersInit headers;\n  BodyInit? body;\n  USVString referrer;\n  ReferrerPolicy referrerPolicy;\n  RequestMode mode;\n  RequestCredentials credentials;\n  RequestCache cache;\n  RequestRedirect redirect;\n  DOMString integrity;\n  boolean keepalive;\n  AbortSignal? signal;\n  RequestDuplex duplex;\n  any window; // can only be set to null\n};",
         "type": "dictionary",
         "name": "RequestInit",
         "inheritance": null,
@@ -1166,6 +1166,21 @@
               "nullable": true,
               "union": false,
               "idlType": "AbortSignal"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "duplex",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "RequestDuplex"
             },
             "default": null,
             "required": false
@@ -1369,6 +1384,18 @@
           {
             "type": "enum-value",
             "value": "manual"
+          }
+        ],
+        "extAttrs": []
+      },
+      "RequestDuplex": {
+        "fragment": "enum RequestDuplex { \"half\" };",
+        "type": "enum",
+        "name": "RequestDuplex",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "half"
           }
         ],
         "extAttrs": []
@@ -1950,7 +1977,8 @@
         "RequestCredentials",
         "RequestCache",
         "RequestRedirect",
-        "AbortSignal"
+        "AbortSignal",
+        "RequestDuplex"
       ],
       "Response": [
         "BodyInit",
