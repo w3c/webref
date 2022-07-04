@@ -5,7 +5,7 @@
 
 [Exposed=Window, SecureContext]
 interface IdentityCredential : Credential {
-  readonly attribute USVString? idToken;
+  readonly attribute USVString? token;
 };
 
 partial dictionary CredentialRequestOptions {

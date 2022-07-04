@@ -1,16 +1,20 @@
 {
   "spec": {
-    "title": "Cooperative Scheduling of Background Tasks",
+    "title": "requestIdleCallback()",
     "url": "https://www.w3.org/TR/requestidlecallback/"
   },
   "idlparsed": {
     "jsNames": {
       "constructors": {},
-      "functions": {}
+      "functions": {
+        "Window": [
+          "IdleDeadline"
+        ]
+      }
     },
     "idlNames": {
       "IdleRequestOptions": {
-        "fragment": "dictionary IdleRequestOptions {\n    unsigned long timeout;\n};",
+        "fragment": "dictionary IdleRequestOptions {\n  unsigned long timeout;\n};",
         "type": "dictionary",
         "name": "IdleRequestOptions",
         "inheritance": null,
@@ -35,7 +39,7 @@
         "partial": false
       },
       "IdleDeadline": {
-        "fragment": "interface IdleDeadline {\n    DOMHighResTimeStamp timeRemaining();\n    readonly attribute boolean didTimeout;\n};",
+        "fragment": "[Exposed=Window] interface IdleDeadline {\n  DOMHighResTimeStamp timeRemaining();\n  readonly attribute boolean didTimeout;\n};",
         "type": "interface",
         "name": "IdleDeadline",
         "inheritance": null,
@@ -71,11 +75,21 @@
             "readonly": true
           }
         ],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "IdleRequestCallback": {
-        "fragment": "callback IdleRequestCallback = void (IdleDeadline deadline);",
+        "fragment": "callback IdleRequestCallback = undefined (IdleDeadline deadline);",
         "type": "callback",
         "name": "IdleRequestCallback",
         "idlType": {
@@ -84,7 +98,7 @@
           "generic": "",
           "nullable": false,
           "union": false,
-          "idlType": "void"
+          "idlType": "undefined"
         },
         "arguments": [
           {
@@ -110,7 +124,7 @@
     "idlExtendedNames": {
       "Window": [
         {
-          "fragment": "partial interface Window {\n    unsigned long requestIdleCallback(IdleRequestCallback callback,\n                                      optional IdleRequestOptions options);\n    void          cancelIdleCallback(unsigned long handle);\n};",
+          "fragment": "partial interface Window {\n  unsigned long requestIdleCallback(IdleRequestCallback callback, optional IdleRequestOptions options = {});\n  undefined cancelIdleCallback(unsigned long handle);\n};",
           "type": "interface",
           "name": "Window",
           "inheritance": null,
@@ -155,7 +169,9 @@
                     "union": false,
                     "idlType": "IdleRequestOptions"
                   },
-                  "default": null,
+                  "default": {
+                    "type": "dictionary"
+                  },
                   "optional": true,
                   "variadic": false
                 }
@@ -172,7 +188,7 @@
                 "generic": "",
                 "nullable": false,
                 "union": false,
-                "idlType": "void"
+                "idlType": "undefined"
               },
               "arguments": [
                 {
@@ -202,12 +218,15 @@
       ]
     },
     "globals": {},
-    "exposed": {},
+    "exposed": {
+      "Window": [
+        "IdleDeadline"
+      ]
+    },
     "dependencies": {
       "Window": [
         "IdleRequestCallback",
-        "IdleRequestOptions",
-        "void"
+        "IdleRequestOptions"
       ],
       "IdleRequestOptions": [],
       "IdleDeadline": [
@@ -216,7 +235,6 @@
     },
     "externalDependencies": [
       "Window",
-      "void",
       "DOMHighResTimeStamp"
     ],
     "hasObsoleteIdl": false

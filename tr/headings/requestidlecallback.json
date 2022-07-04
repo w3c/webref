@@ -1,32 +1,20 @@
 {
   "spec": {
-    "title": "Cooperative Scheduling of Background Tasks",
+    "title": "requestIdleCallback()",
     "url": "https://www.w3.org/TR/requestidlecallback/"
   },
   "headings": [
     {
-      "id": "respecDocument",
-      "href": "https://www.w3.org/TR/requestidlecallback/#respecDocument",
+      "id": "title",
+      "href": "https://www.w3.org/TR/requestidlecallback/#title",
       "level": 1,
+      "title": "requestIdleCallback()"
+    },
+    {
+      "id": "subtitle",
+      "href": "https://www.w3.org/TR/requestidlecallback/#subtitle",
+      "level": 2,
       "title": "Cooperative Scheduling of Background Tasks"
-    },
-    {
-      "id": "w3c-proposed-recommendation-12-september-2017",
-      "href": "https://www.w3.org/TR/requestidlecallback/#w3c-proposed-recommendation-12-september-2017",
-      "level": 2,
-      "title": "W3C Proposed Recommendation 10 October 2017"
-    },
-    {
-      "id": "abstract",
-      "href": "https://www.w3.org/TR/requestidlecallback/#abstract",
-      "level": 2,
-      "title": "Abstract"
-    },
-    {
-      "id": "sotd",
-      "href": "https://www.w3.org/TR/requestidlecallback/#sotd",
-      "level": 2,
-      "title": "Status of This Document"
     },
     {
       "id": "toc",
@@ -35,108 +23,95 @@
       "title": "Table of Contents"
     },
     {
-      "id": "dependencies",
-      "href": "https://www.w3.org/TR/requestidlecallback/#dependencies",
-      "level": 2,
-      "title": "Dependencies",
-      "number": "1"
-    },
-    {
       "id": "introduction",
       "href": "https://www.w3.org/TR/requestidlecallback/#introduction",
       "level": 2,
       "title": "Introduction",
-      "number": "2"
+      "number": "1"
     },
     {
       "id": "idle-periods",
       "href": "https://www.w3.org/TR/requestidlecallback/#idle-periods",
       "level": 2,
       "title": "Idle Periods",
-      "number": "3"
+      "number": "2"
     },
     {
       "id": "conformance",
       "href": "https://www.w3.org/TR/requestidlecallback/#conformance",
       "level": 2,
       "title": "Conformance",
-      "number": "4"
+      "number": "3"
     },
     {
       "id": "window_extensions",
       "href": "https://www.w3.org/TR/requestidlecallback/#window_extensions",
       "level": 2,
       "title": "Window interface extensions",
-      "number": "5"
+      "number": "4"
     },
     {
       "id": "the-requestidlecallback-method",
       "href": "https://www.w3.org/TR/requestidlecallback/#the-requestidlecallback-method",
       "level": 3,
-      "title": "The requestIdleCallback method",
-      "number": "5.1"
+      "title": "The requestIdleCallback() method",
+      "number": "4.1"
     },
     {
       "id": "the-cancelidlecallback-method",
       "href": "https://www.w3.org/TR/requestidlecallback/#the-cancelidlecallback-method",
       "level": 3,
-      "title": "The cancelIdleCallback method",
-      "number": "5.2"
+      "title": "The cancelIdleCallback() method",
+      "number": "4.2"
     },
     {
       "id": "the-idledeadline-interface",
       "href": "https://www.w3.org/TR/requestidlecallback/#the-idledeadline-interface",
       "level": 3,
       "title": "The IdleDeadline interface",
-      "number": "5.3"
+      "number": "4.3"
     },
     {
       "id": "processing",
       "href": "https://www.w3.org/TR/requestidlecallback/#processing",
       "level": 2,
       "title": "Processing",
-      "number": "6"
+      "number": "5"
     },
     {
       "id": "start-an-idle-period-algorithm",
       "href": "https://www.w3.org/TR/requestidlecallback/#start-an-idle-period-algorithm",
       "level": 3,
       "title": "Start an idle period algorithm",
-      "number": "6.1"
+      "number": "5.1"
     },
     {
       "id": "invoke-idle-callbacks-algorithm",
       "href": "https://www.w3.org/TR/requestidlecallback/#invoke-idle-callbacks-algorithm",
       "level": 3,
       "title": "Invoke idle callbacks algorithm",
-      "number": "6.2"
+      "number": "5.2"
     },
     {
       "id": "invoke-idle-callback-timeout-algorithm",
       "href": "https://www.w3.org/TR/requestidlecallback/#invoke-idle-callback-timeout-algorithm",
       "level": 3,
       "title": "Invoke idle callback timeout algorithm",
-      "number": "6.3"
+      "number": "5.3"
     },
     {
-      "id": "privacy-and-security",
-      "href": "https://www.w3.org/TR/requestidlecallback/#privacy-and-security",
+      "id": "privacy-considerations",
+      "href": "https://www.w3.org/TR/requestidlecallback/#privacy-considerations",
       "level": 2,
-      "title": "Privacy and Security",
+      "title": "Privacy Considerations",
+      "number": "6"
+    },
+    {
+      "id": "security-considerations",
+      "href": "https://www.w3.org/TR/requestidlecallback/#security-considerations",
+      "level": 2,
+      "title": "Security Considerations",
       "number": "7"
-    },
-    {
-      "id": "changes",
-      "href": "https://www.w3.org/TR/requestidlecallback/#changes",
-      "level": 2,
-      "title": "changes",
-      "number": "8"
-    },
-    {
-      "id": "changes-pr",
-      "href": "https://www.w3.org/TR/requestidlecallback/#changes-pr",
-      "level": 3,
-      "title": "Changes between this Proposed Recommendation and the 31 January 2017 Candidate Recommendation"
     },
     {
       "id": "acknowledgements",

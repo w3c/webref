@@ -5,66 +5,48 @@
   },
   "events": [
     {
-      "src": {
-        "format": "fire an event phrasing",
-        "href": "https://www.w3.org/TR/IndexedDB-3/#ref-for-concept-event-fire"
-      },
-      "href": "https://www.w3.org/TR/IndexedDB-3/#eventdef-request-error",
-      "type": "error",
-      "targets": [
-        "request"
-      ],
-      "interface": "Event",
-      "bubbles": true
-    },
-    {
-      "src": {
-        "format": "fire an event phrasing",
-        "href": "https://www.w3.org/TR/IndexedDB-3/#ref-for-concept-event-fire%E2%91%A0"
-      },
-      "href": "https://www.w3.org/TR/IndexedDB-3/#eventdef-request-success",
       "type": "success",
       "targets": [
-        "request"
+        "IDBRequest"
       ],
-      "interface": "Event"
+      "interface": null,
+      "src": {
+        "format": "IDL eventHandler",
+        "href": null
+      }
     },
     {
-      "src": {
-        "format": "fire an event phrasing",
-        "href": "https://www.w3.org/TR/IndexedDB-3/#ref-for-concept-event-fire%E2%91%A2"
-      },
-      "href": "https://www.w3.org/TR/IndexedDB-3/#eventdef-connection-close",
-      "type": "close",
+      "type": "error",
       "targets": [
-        "connection"
+        "IDBRequest"
       ],
-      "interface": "Event"
+      "interface": null,
+      "src": {
+        "format": "IDL eventHandler",
+        "href": null
+      }
     },
     {
-      "src": {
-        "format": "fire an event phrasing",
-        "href": "https://www.w3.org/TR/IndexedDB-3/#ref-for-concept-event-fire%E2%91%A3"
-      },
-      "href": "https://www.w3.org/TR/IndexedDB-3/#eventdef-transaction-complete",
-      "type": "complete",
+      "type": "error",
       "targets": [
-        "transaction"
+        "IDBDatabase"
       ],
-      "interface": "Event"
+      "interface": null,
+      "src": {
+        "format": "IDL eventHandler",
+        "href": null
+      }
     },
     {
-      "src": {
-        "format": "fire an event phrasing",
-        "href": "https://www.w3.org/TR/IndexedDB-3/#ref-for-concept-event-fire%E2%91%A5"
-      },
-      "href": "https://www.w3.org/TR/IndexedDB-3/#eventdef-transaction-abort",
-      "type": "abort",
+      "type": "error",
       "targets": [
-        "transaction"
+        "IDBTransaction"
       ],
-      "interface": "Event",
-      "bubbles": true
+      "interface": null,
+      "src": {
+        "format": "IDL eventHandler",
+        "href": null
+      }
     },
     {
       "type": "blocked",
@@ -81,6 +63,39 @@
       "type": "upgradeneeded",
       "targets": [
         "IDBOpenDBRequest"
+      ],
+      "interface": null,
+      "src": {
+        "format": "IDL eventHandler",
+        "href": null
+      }
+    },
+    {
+      "type": "abort",
+      "targets": [
+        "IDBDatabase"
+      ],
+      "interface": null,
+      "src": {
+        "format": "IDL eventHandler",
+        "href": null
+      }
+    },
+    {
+      "type": "abort",
+      "targets": [
+        "IDBTransaction"
+      ],
+      "interface": null,
+      "src": {
+        "format": "IDL eventHandler",
+        "href": null
+      }
+    },
+    {
+      "type": "close",
+      "targets": [
+        "IDBDatabase"
       ],
       "interface": null,
       "src": {
@@ -100,40 +115,15 @@
       }
     },
     {
-      "type": "versionchange",
-      "interface": null,
+      "type": "complete",
       "targets": [
-        "connection"
+        "IDBTransaction"
       ],
-      "src": {
-        "format": "dfn",
-        "href": "https://www.w3.org/TR/IndexedDB-3/#eventdef-connection-versionchange"
-      },
-      "href": "https://www.w3.org/TR/IndexedDB-3/#eventdef-connection-versionchange"
-    },
-    {
-      "type": "blocked",
       "interface": null,
-      "targets": [
-        "request"
-      ],
       "src": {
-        "format": "dfn",
-        "href": "https://www.w3.org/TR/IndexedDB-3/#eventdef-request-blocked"
-      },
-      "href": "https://www.w3.org/TR/IndexedDB-3/#eventdef-request-blocked"
-    },
-    {
-      "type": "upgradeneeded",
-      "interface": null,
-      "targets": [
-        "request"
-      ],
-      "src": {
-        "format": "dfn",
-        "href": "https://www.w3.org/TR/IndexedDB-3/#eventdef-request-upgradeneeded"
-      },
-      "href": "https://www.w3.org/TR/IndexedDB-3/#eventdef-request-upgradeneeded"
+        "format": "IDL eventHandler",
+        "href": null
+      }
     }
   ]
 }

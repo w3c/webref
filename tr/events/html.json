@@ -342,7 +342,8 @@
       },
       "type": "cuechange",
       "targets": [
-        "HTMLMediaElement"
+        "HTMLTrackElement",
+        "TextTrack"
       ],
       "interface": "Event"
     },
@@ -378,7 +379,7 @@
       },
       "type": "enter",
       "targets": [
-        "HTMLMediaElement"
+        "TextTrackCue"
       ],
       "interface": "Event"
     },
@@ -390,7 +391,7 @@
       },
       "type": "exit",
       "targets": [
-        "HTMLMediaElement"
+        "TextTrackCue"
       ],
       "interface": "Event"
     },
@@ -481,8 +482,7 @@
       "targets": [
         "Document"
       ],
-      "interface": "Event",
-      "bubbles": true
+      "interface": "Event"
     },
     {
       "href": "https://html.spec.whatwg.org/multipage/indices.html#event-afterprint",
@@ -555,8 +555,7 @@
       "targets": [
         "HTMLElement"
       ],
-      "interface": "Event",
-      "bubbles": true
+      "interface": "Event"
     },
     {
       "href": "https://html.spec.whatwg.org/multipage/indices.html#event-change",
@@ -568,8 +567,7 @@
       "targets": [
         "HTMLElement"
       ],
-      "interface": "Event",
-      "bubbles": true
+      "interface": "Event"
     },
     {
       "href": "https://html.spec.whatwg.org/multipage/indices.html#event-close",
@@ -653,13 +651,13 @@
       },
       "type": "error",
       "targets": [
-        "Window",
-        "WorkerGlobalScope",
-        "HTMLElement",
+        "AbstractWorker",
         "EventSource",
-        "Worker",
+        "HTMLElement",
         "SharedWorker",
-        "AbstractWorker"
+        "Window",
+        "Worker",
+        "WorkerGlobalScope"
       ],
       "interface": "Event"
     },
@@ -686,8 +684,7 @@
       "targets": [
         "HTMLElement"
       ],
-      "interface": "FormDataEvent",
-      "bubbles": true
+      "interface": "FormDataEvent"
     },
     {
       "href": "https://html.spec.whatwg.org/multipage/indices.html#event-hashchange",
@@ -734,8 +731,8 @@
       },
       "type": "load",
       "targets": [
-        "Window",
-        "HTMLElement"
+        "HTMLElement",
+        "Window"
       ],
       "interface": "Event"
     },
@@ -747,13 +744,13 @@
       },
       "type": "message",
       "targets": [
-        "Window",
-        "EventSource",
-        "MessagePort",
         "BroadcastChannel",
         "DedicatedWorkerGlobalScope",
-        "Worker",
-        "ServiceWorkerContainer"
+        "EventSource",
+        "MessagePort",
+        "ServiceWorkerContainer",
+        "Window",
+        "Worker"
       ],
       "interface": "MessageEvent"
     },
@@ -765,12 +762,12 @@
       },
       "type": "messageerror",
       "targets": [
-        "Window",
-        "MessagePort",
         "BroadcastChannel",
         "DedicatedWorkerGlobalScope",
-        "Worker",
-        "ServiceWorkerContainer"
+        "MessagePort",
+        "ServiceWorkerContainer",
+        "Window",
+        "Worker"
       ],
       "interface": "MessageEvent"
     },
@@ -895,8 +892,7 @@
       "targets": [
         "HTMLElement"
       ],
-      "interface": "Event",
-      "bubbles": true
+      "interface": "Event"
     },
     {
       "href": "https://html.spec.whatwg.org/multipage/indices.html#event-securitypolicyviolation",
@@ -908,7 +904,7 @@
       "targets": [
         "HTMLElement"
       ],
-      "interface": "Event"
+      "interface": "SecurityPolicyViolationEvent"
     },
     {
       "href": "https://html.spec.whatwg.org/multipage/indices.html#event-select",
@@ -920,8 +916,7 @@
       "targets": [
         "HTMLElement"
       ],
-      "interface": "Event",
-      "bubbles": true
+      "interface": "Event"
     },
     {
       "href": "https://html.spec.whatwg.org/multipage/indices.html#event-slotchange",
@@ -957,8 +952,7 @@
       "targets": [
         "HTMLElement"
       ],
-      "interface": "SubmitEvent",
-      "bubbles": true
+      "interface": "SubmitEvent"
     },
     {
       "href": "https://html.spec.whatwg.org/multipage/indices.html#event-toggle",
@@ -1012,13 +1006,639 @@
     {
       "src": {
         "format": "fire an event phrasing",
-        "href": "https://html.spec.whatwg.org/multipage/input.html#common-input-element-events:concept-event-fire"
+        "href": "https://html.spec.whatwg.org/multipage/semantics.html#the-style-element:concept-event-fire"
       },
-      "href": "https://html.spec.whatwg.org/multipage/#the-input-element",
+      "href": "https://html.spec.whatwg.org/multipage/semantics.html#the-style-element:concept-event-fire",
+      "type": "load",
+      "targets": [
+        "GlobalEventHandlers"
+      ],
+      "interface": "Event"
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://html.spec.whatwg.org/multipage/semantics.html#the-style-element:concept-event-fire-2"
+      },
+      "href": "https://html.spec.whatwg.org/multipage/semantics.html#the-style-element:concept-event-fire-2",
+      "type": "error",
+      "interface": "Event"
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://html.spec.whatwg.org/multipage/media.html#the-video-element:concept-event-fire"
+      },
+      "href": "https://html.spec.whatwg.org/multipage/media.html#the-video-element:concept-event-fire",
+      "type": "resize",
+      "targets": [
+        "GlobalEventHandlers"
+      ],
+      "interface": "Event"
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://html.spec.whatwg.org/multipage/media.html#loading-the-media-resource:concept-event-fire"
+      },
+      "href": "https://html.spec.whatwg.org/multipage/media.html#loading-the-media-resource:concept-event-fire",
+      "type": "abort",
+      "targets": [
+        "GlobalEventHandlers"
+      ],
+      "interface": "Event"
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://html.spec.whatwg.org/multipage/media.html#loading-the-media-resource:concept-event-fire-2"
+      },
+      "href": "https://html.spec.whatwg.org/multipage/media.html#loading-the-media-resource:concept-event-fire-2",
+      "type": "emptied",
+      "targets": [
+        "GlobalEventHandlers"
+      ],
+      "interface": "Event"
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://html.spec.whatwg.org/multipage/media.html#loading-the-media-resource:concept-event-fire-3"
+      },
+      "href": "https://html.spec.whatwg.org/multipage/media.html#loading-the-media-resource:concept-event-fire-3",
+      "type": "timeupdate",
+      "targets": [
+        "GlobalEventHandlers"
+      ],
+      "interface": "Event"
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://html.spec.whatwg.org/multipage/media.html#loading-the-media-resource:concept-event-fire-4"
+      },
+      "href": "https://html.spec.whatwg.org/multipage/media.html#loading-the-media-resource:concept-event-fire-4",
+      "type": "loadstart",
+      "targets": [
+        "GlobalEventHandlers"
+      ],
+      "interface": "Event"
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://html.spec.whatwg.org/multipage/media.html#loading-the-media-resource:concept-event-fire-7"
+      },
+      "href": "https://html.spec.whatwg.org/multipage/media.html#loading-the-media-resource:concept-event-fire-7",
+      "type": "suspend",
+      "targets": [
+        "GlobalEventHandlers"
+      ],
+      "interface": "Event"
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://html.spec.whatwg.org/multipage/media.html#loading-the-media-resource:concept-event-fire-8"
+      },
+      "href": "https://html.spec.whatwg.org/multipage/media.html#loading-the-media-resource:concept-event-fire-8",
+      "type": "stalled",
+      "targets": [
+        "GlobalEventHandlers"
+      ],
+      "interface": "Event"
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://html.spec.whatwg.org/multipage/media.html#loading-the-media-resource:concept-event-fire-10"
+      },
+      "href": "https://html.spec.whatwg.org/multipage/media.html#loading-the-media-resource:concept-event-fire-10",
+      "type": "progress",
+      "targets": [
+        "GlobalEventHandlers"
+      ],
+      "interface": "Event"
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://html.spec.whatwg.org/multipage/media.html#loading-the-media-resource:concept-event-fire-11"
+      },
+      "href": "https://html.spec.whatwg.org/multipage/media.html#loading-the-media-resource:concept-event-fire-11",
+      "type": "addtrack",
+      "interface": "TrackEvent"
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://html.spec.whatwg.org/multipage/media.html#offsets-into-the-media-resource:concept-event-fire-2"
+      },
+      "href": "https://html.spec.whatwg.org/multipage/media.html#offsets-into-the-media-resource:concept-event-fire-2",
+      "type": "removetrack",
+      "interface": "TrackEvent"
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://html.spec.whatwg.org/multipage/media.html#offsets-into-the-media-resource:concept-event-fire-3"
+      },
+      "href": "https://html.spec.whatwg.org/multipage/media.html#offsets-into-the-media-resource:concept-event-fire-3",
+      "type": "durationchange",
+      "targets": [
+        "GlobalEventHandlers"
+      ],
+      "interface": "Event"
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://html.spec.whatwg.org/multipage/media.html#ready-states:concept-event-fire"
+      },
+      "href": "https://html.spec.whatwg.org/multipage/media.html#ready-states:concept-event-fire",
+      "type": "loadedmetadata",
+      "targets": [
+        "GlobalEventHandlers"
+      ],
+      "interface": "Event"
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://html.spec.whatwg.org/multipage/media.html#ready-states:concept-event-fire-2"
+      },
+      "href": "https://html.spec.whatwg.org/multipage/media.html#ready-states:concept-event-fire-2",
+      "type": "loadeddata",
+      "targets": [
+        "GlobalEventHandlers"
+      ],
+      "interface": "Event"
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://html.spec.whatwg.org/multipage/media.html#ready-states:concept-event-fire-4"
+      },
+      "href": "https://html.spec.whatwg.org/multipage/media.html#ready-states:concept-event-fire-4",
+      "type": "timeupdate",
+      "interface": "Event"
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://html.spec.whatwg.org/multipage/media.html#ready-states:concept-event-fire-5"
+      },
+      "href": "https://html.spec.whatwg.org/multipage/media.html#ready-states:concept-event-fire-5",
+      "type": "canplay",
+      "targets": [
+        "GlobalEventHandlers"
+      ],
+      "interface": "Event"
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://html.spec.whatwg.org/multipage/media.html#ready-states:concept-event-fire-7"
+      },
+      "href": "https://html.spec.whatwg.org/multipage/media.html#ready-states:concept-event-fire-7",
+      "type": "canplaythrough",
+      "targets": [
+        "GlobalEventHandlers"
+      ],
+      "interface": "Event"
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://html.spec.whatwg.org/multipage/media.html#ready-states:concept-event-fire-8"
+      },
+      "href": "https://html.spec.whatwg.org/multipage/media.html#ready-states:concept-event-fire-8",
+      "type": "play",
+      "targets": [
+        "GlobalEventHandlers"
+      ],
+      "interface": "Event"
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://html.spec.whatwg.org/multipage/media.html#ready-states:concept-event-fire-9"
+      },
+      "href": "https://html.spec.whatwg.org/multipage/media.html#ready-states:concept-event-fire-9",
+      "type": "pause",
+      "targets": [
+        "GlobalEventHandlers"
+      ],
+      "interface": "Event"
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://html.spec.whatwg.org/multipage/media.html#playing-the-media-resource:concept-event-fire-4"
+      },
+      "href": "https://html.spec.whatwg.org/multipage/media.html#playing-the-media-resource:concept-event-fire-4",
+      "type": "ended",
+      "targets": [
+        "GlobalEventHandlers"
+      ],
+      "interface": "Event"
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://html.spec.whatwg.org/multipage/media.html#playing-the-media-resource:concept-event-fire-6"
+      },
+      "href": "https://html.spec.whatwg.org/multipage/media.html#playing-the-media-resource:concept-event-fire-6",
+      "type": "ratechange",
+      "targets": [
+        "GlobalEventHandlers"
+      ],
+      "interface": "Event"
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://html.spec.whatwg.org/multipage/media.html#playing-the-media-resource:concept-event-fire-7"
+      },
+      "href": "https://html.spec.whatwg.org/multipage/media.html#playing-the-media-resource:concept-event-fire-7",
+      "type": "playing",
+      "targets": [
+        "GlobalEventHandlers"
+      ],
+      "interface": "Event"
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://html.spec.whatwg.org/multipage/media.html#playing-the-media-resource:concept-event-fire-10"
+      },
+      "href": "https://html.spec.whatwg.org/multipage/media.html#playing-the-media-resource:concept-event-fire-10",
+      "type": "waiting",
+      "targets": [
+        "GlobalEventHandlers"
+      ],
+      "interface": "Event"
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://html.spec.whatwg.org/multipage/media.html#playing-the-media-resource:concept-event-fire-15"
+      },
+      "href": "https://html.spec.whatwg.org/multipage/media.html#playing-the-media-resource:concept-event-fire-15",
+      "type": "cuechange",
+      "interface": "Event"
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://html.spec.whatwg.org/multipage/media.html#seeking:concept-event-fire"
+      },
+      "href": "https://html.spec.whatwg.org/multipage/media.html#seeking:concept-event-fire",
+      "type": "seeking",
+      "targets": [
+        "GlobalEventHandlers"
+      ],
+      "interface": "Event"
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://html.spec.whatwg.org/multipage/media.html#seeking:concept-event-fire-3"
+      },
+      "href": "https://html.spec.whatwg.org/multipage/media.html#seeking:concept-event-fire-3",
+      "type": "seeked",
+      "targets": [
+        "GlobalEventHandlers"
+      ],
+      "interface": "Event"
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://html.spec.whatwg.org/multipage/media.html#audiotracklist-and-videotracklist-objects:concept-event-fire"
+      },
+      "href": "https://html.spec.whatwg.org/multipage/media.html#audiotracklist-and-videotracklist-objects:concept-event-fire",
+      "type": "change",
+      "interface": "Event",
+      "bubbles": true
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://html.spec.whatwg.org/multipage/media.html#user-interface:concept-event-fire"
+      },
+      "href": "https://html.spec.whatwg.org/multipage/media.html#user-interface:concept-event-fire",
+      "type": "volumechange",
+      "targets": [
+        "GlobalEventHandlers"
+      ],
+      "interface": "Event"
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://html.spec.whatwg.org/multipage/input.html#text-(type=text)-state-and-search-state-(type=search):concept-event-fire"
+      },
+      "href": "https://html.spec.whatwg.org/multipage/input.html#text-(type=text)-state-and-search-state-(type=search):concept-event-fire",
       "type": "input",
       "targets": [
         "GlobalEventHandlers"
       ],
+      "interface": "Event",
+      "bubbles": true
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://html.spec.whatwg.org/multipage/input.html#image-button-state-(type=image):concept-event-fire-2"
+      },
+      "href": "https://html.spec.whatwg.org/multipage/input.html#image-button-state-(type=image):concept-event-fire-2",
+      "type": "load",
+      "interface": "Event"
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://html.spec.whatwg.org/multipage/input.html#common-input-element-apis:concept-event-fire"
+      },
+      "href": "https://html.spec.whatwg.org/multipage/input.html#common-input-element-apis:concept-event-fire",
+      "type": "cancel",
+      "targets": [
+        "GlobalEventHandlers"
+      ],
+      "interface": "Event",
+      "bubbles": true
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://html.spec.whatwg.org/multipage/input.html#common-input-element-events:concept-event-fire-2"
+      },
+      "href": "https://html.spec.whatwg.org/multipage/input.html#common-input-element-events:concept-event-fire-2",
+      "type": "input",
+      "interface": "Event",
+      "bubbles": true
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#textFieldSelection:concept-event-fire"
+      },
+      "href": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#textFieldSelection:concept-event-fire",
+      "type": "select",
+      "targets": [
+        "GlobalEventHandlers"
+      ],
+      "interface": "Event",
+      "bubbles": true
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#constraint-validation:concept-event-fire"
+      },
+      "href": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#constraint-validation:concept-event-fire",
+      "type": "invalid",
+      "targets": [
+        "GlobalEventHandlers"
+      ],
+      "interface": "Event"
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#form-submission-algorithm:concept-event-fire"
+      },
+      "href": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#form-submission-algorithm:concept-event-fire",
+      "type": "submit",
+      "targets": [
+        "GlobalEventHandlers"
+      ],
+      "interface": "SubmitEvent",
+      "bubbles": true
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#constructing-form-data-set:concept-event-fire"
+      },
+      "href": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#constructing-form-data-set:concept-event-fire",
+      "type": "formdata",
+      "targets": [
+        "GlobalEventHandlers"
+      ],
+      "interface": "FormDataEvent",
+      "bubbles": true
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#resetting-a-form:concept-event-fire"
+      },
+      "href": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#resetting-a-form:concept-event-fire",
+      "type": "reset",
+      "targets": [
+        "GlobalEventHandlers"
+      ],
+      "interface": "Event",
+      "bubbles": true
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://html.spec.whatwg.org/multipage/interactive-elements.html#the-details-element:concept-event-fire"
+      },
+      "href": "https://html.spec.whatwg.org/multipage/interactive-elements.html#the-details-element:concept-event-fire",
+      "type": "toggle",
+      "targets": [
+        "GlobalEventHandlers"
+      ],
+      "interface": "Event"
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://html.spec.whatwg.org/multipage/interactive-elements.html#the-dialog-element:concept-event-fire"
+      },
+      "href": "https://html.spec.whatwg.org/multipage/interactive-elements.html#the-dialog-element:concept-event-fire",
+      "type": "close",
+      "targets": [
+        "GlobalEventHandlers"
+      ],
+      "interface": "Event"
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://html.spec.whatwg.org/multipage/interaction.html#the-hidden-attribute:concept-event-fire"
+      },
+      "href": "https://html.spec.whatwg.org/multipage/interaction.html#the-hidden-attribute:concept-event-fire",
+      "type": "beforematch",
+      "targets": [
+        "GlobalEventHandlers"
+      ],
+      "interface": "Event"
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://html.spec.whatwg.org/multipage/browsing-the-web.html#history-traversal:concept-event-fire"
+      },
+      "href": "https://html.spec.whatwg.org/multipage/browsing-the-web.html#history-traversal:concept-event-fire",
+      "type": "popstate",
+      "targets": [
+        "WindowEventHandlers"
+      ],
+      "interface": "PopStateEvent"
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://html.spec.whatwg.org/multipage/browsing-the-web.html#history-traversal:concept-event-fire-2"
+      },
+      "href": "https://html.spec.whatwg.org/multipage/browsing-the-web.html#history-traversal:concept-event-fire-2",
+      "type": "hashchange",
+      "targets": [
+        "WindowEventHandlers"
+      ],
+      "interface": "HashChangeEvent"
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://html.spec.whatwg.org/multipage/browsing-the-web.html#unloading-documents:concept-event-fire"
+      },
+      "href": "https://html.spec.whatwg.org/multipage/browsing-the-web.html#unloading-documents:concept-event-fire",
+      "type": "unload",
+      "targets": [
+        "WindowEventHandlers"
+      ],
+      "interface": "Event"
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#unhandled-promise-rejections:concept-event-fire"
+      },
+      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#unhandled-promise-rejections:concept-event-fire",
+      "type": "unhandledrejection",
+      "interface": "PromiseRejectionEvent"
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#the-hostpromiserejectiontracker-implementation:concept-event-fire"
+      },
+      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#the-hostpromiserejectiontracker-implementation:concept-event-fire",
+      "type": "rejectionhandled",
+      "interface": "PromiseRejectionEvent"
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#event-loop-processing-model:concept-event-fire"
+      },
+      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#event-loop-processing-model:concept-event-fire",
+      "type": "contextlost",
+      "interface": "Event"
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#event-loop-processing-model:concept-event-fire-2"
+      },
+      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#event-loop-processing-model:concept-event-fire-2",
+      "type": "contextrestored",
+      "interface": "Event"
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#printing:concept-event-fire"
+      },
+      "href": "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#printing:concept-event-fire",
+      "type": "beforeprint",
+      "targets": [
+        "WindowEventHandlers"
+      ],
+      "interface": "Event"
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#printing:concept-event-fire-2"
+      },
+      "href": "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#printing:concept-event-fire-2",
+      "type": "afterprint",
+      "targets": [
+        "WindowEventHandlers"
+      ],
+      "interface": "Event"
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://html.spec.whatwg.org/multipage/system-state.html#language-preferences:concept-event-fire"
+      },
+      "href": "https://html.spec.whatwg.org/multipage/system-state.html#language-preferences:concept-event-fire",
+      "type": "languagechange",
+      "interface": "Event"
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://html.spec.whatwg.org/multipage/system-state.html#navigator.online:concept-event-fire"
+      },
+      "href": "https://html.spec.whatwg.org/multipage/system-state.html#navigator.online:concept-event-fire",
+      "type": "offline",
+      "interface": "Event"
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://html.spec.whatwg.org/multipage/system-state.html#navigator.online:concept-event-fire-2"
+      },
+      "href": "https://html.spec.whatwg.org/multipage/system-state.html#navigator.online:concept-event-fire-2",
+      "type": "online",
+      "interface": "Event"
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://html.spec.whatwg.org/multipage/web-messaging.html#posting-messages:concept-event-fire"
+      },
+      "href": "https://html.spec.whatwg.org/multipage/web-messaging.html#posting-messages:concept-event-fire",
+      "type": "messageerror",
+      "interface": "MessageEvent"
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://html.spec.whatwg.org/multipage/web-messaging.html#posting-messages:concept-event-fire-2"
+      },
+      "href": "https://html.spec.whatwg.org/multipage/web-messaging.html#posting-messages:concept-event-fire-2",
+      "type": "message",
+      "interface": "MessageEvent"
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://html.spec.whatwg.org/multipage/webstorage.html#the-storage-interface:concept-event-fire"
+      },
+      "href": "https://html.spec.whatwg.org/multipage/webstorage.html#the-storage-interface:concept-event-fire",
+      "type": "storage",
+      "targets": [
+        "WindowEventHandlers"
+      ],
+      "interface": "StorageEvent"
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://html.spec.whatwg.org/multipage/parsing.html#the-end:concept-event-fire"
+      },
+      "href": "https://html.spec.whatwg.org/multipage/parsing.html#the-end:concept-event-fire",
+      "type": "DOMContentLoaded",
       "interface": "Event",
       "bubbles": true
     }

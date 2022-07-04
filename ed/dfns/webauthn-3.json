@@ -1659,6 +1659,48 @@
       "definedIn": "pre"
     },
     {
+      "id": "dom-publickeycredential-isconditionalmediationavailable",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredential-isconditionalmediationavailable",
+      "linkingText": [
+        "isConditionalMediationAvailable()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "PublicKeyCredential"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "iface-pkcredential",
+        "href": "https://w3c.github.io/webauthn/#iface-pkcredential",
+        "title": "PublicKeyCredential Interface",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-publickeycredential-tojson",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredential-tojson",
+      "linkingText": [
+        "toJSON()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "PublicKeyCredential"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "iface-pkcredential",
+        "href": "https://w3c.github.io/webauthn/#iface-pkcredential",
+        "title": "PublicKeyCredential Interface",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "dom-publickeycredential-response",
       "href": "https://w3c.github.io/webauthn/#dom-publickeycredential-response",
       "linkingText": [
@@ -1699,6 +1741,538 @@
         "number": "5.1"
       },
       "definedIn": "dt"
+    },
+    {
+      "id": "typedefdef-base64urlstring",
+      "href": "https://w3c.github.io/webauthn/#typedefdef-base64urlstring",
+      "linkingText": [
+        "Base64URLString"
+      ],
+      "localLinkingText": [],
+      "type": "typedef",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "iface-pkcredential",
+        "href": "https://w3c.github.io/webauthn/#iface-pkcredential",
+        "title": "PublicKeyCredential Interface",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "typedefdef-publickeycredentialjson",
+      "href": "https://w3c.github.io/webauthn/#typedefdef-publickeycredentialjson",
+      "linkingText": [
+        "PublicKeyCredentialJSON"
+      ],
+      "localLinkingText": [],
+      "type": "typedef",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "iface-pkcredential",
+        "href": "https://w3c.github.io/webauthn/#iface-pkcredential",
+        "title": "PublicKeyCredential Interface",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-registrationresponsejson",
+      "href": "https://w3c.github.io/webauthn/#dictdef-registrationresponsejson",
+      "linkingText": [
+        "RegistrationResponseJSON"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "iface-pkcredential",
+        "href": "https://w3c.github.io/webauthn/#iface-pkcredential",
+        "title": "PublicKeyCredential Interface",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-registrationresponsejson-id",
+      "href": "https://w3c.github.io/webauthn/#dom-registrationresponsejson-id",
+      "linkingText": [
+        "id"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RegistrationResponseJSON"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "iface-pkcredential",
+        "href": "https://w3c.github.io/webauthn/#iface-pkcredential",
+        "title": "PublicKeyCredential Interface",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-registrationresponsejson-rawid",
+      "href": "https://w3c.github.io/webauthn/#dom-registrationresponsejson-rawid",
+      "linkingText": [
+        "rawId"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RegistrationResponseJSON"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "iface-pkcredential",
+        "href": "https://w3c.github.io/webauthn/#iface-pkcredential",
+        "title": "PublicKeyCredential Interface",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-registrationresponsejson-response",
+      "href": "https://w3c.github.io/webauthn/#dom-registrationresponsejson-response",
+      "linkingText": [
+        "response"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RegistrationResponseJSON"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "iface-pkcredential",
+        "href": "https://w3c.github.io/webauthn/#iface-pkcredential",
+        "title": "PublicKeyCredential Interface",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-registrationresponsejson-authenticatorattachment",
+      "href": "https://w3c.github.io/webauthn/#dom-registrationresponsejson-authenticatorattachment",
+      "linkingText": [
+        "authenticatorAttachment"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RegistrationResponseJSON"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "iface-pkcredential",
+        "href": "https://w3c.github.io/webauthn/#iface-pkcredential",
+        "title": "PublicKeyCredential Interface",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-registrationresponsejson-clientextensionresults",
+      "href": "https://w3c.github.io/webauthn/#dom-registrationresponsejson-clientextensionresults",
+      "linkingText": [
+        "clientExtensionResults"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RegistrationResponseJSON"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "iface-pkcredential",
+        "href": "https://w3c.github.io/webauthn/#iface-pkcredential",
+        "title": "PublicKeyCredential Interface",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-registrationresponsejson-type",
+      "href": "https://w3c.github.io/webauthn/#dom-registrationresponsejson-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RegistrationResponseJSON"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "iface-pkcredential",
+        "href": "https://w3c.github.io/webauthn/#iface-pkcredential",
+        "title": "PublicKeyCredential Interface",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-authenticatorattestationresponsejson",
+      "href": "https://w3c.github.io/webauthn/#dictdef-authenticatorattestationresponsejson",
+      "linkingText": [
+        "AuthenticatorAttestationResponseJSON"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "iface-pkcredential",
+        "href": "https://w3c.github.io/webauthn/#iface-pkcredential",
+        "title": "PublicKeyCredential Interface",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-authenticatorattestationresponsejson-clientdatajson",
+      "href": "https://w3c.github.io/webauthn/#dom-authenticatorattestationresponsejson-clientdatajson",
+      "linkingText": [
+        "clientDataJSON"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AuthenticatorAttestationResponseJSON"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "iface-pkcredential",
+        "href": "https://w3c.github.io/webauthn/#iface-pkcredential",
+        "title": "PublicKeyCredential Interface",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-authenticatorattestationresponsejson-attestationobject",
+      "href": "https://w3c.github.io/webauthn/#dom-authenticatorattestationresponsejson-attestationobject",
+      "linkingText": [
+        "attestationObject"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AuthenticatorAttestationResponseJSON"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "iface-pkcredential",
+        "href": "https://w3c.github.io/webauthn/#iface-pkcredential",
+        "title": "PublicKeyCredential Interface",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-authenticatorattestationresponsejson-transports",
+      "href": "https://w3c.github.io/webauthn/#dom-authenticatorattestationresponsejson-transports",
+      "linkingText": [
+        "transports"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AuthenticatorAttestationResponseJSON"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "iface-pkcredential",
+        "href": "https://w3c.github.io/webauthn/#iface-pkcredential",
+        "title": "PublicKeyCredential Interface",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-authenticationresponsejson",
+      "href": "https://w3c.github.io/webauthn/#dictdef-authenticationresponsejson",
+      "linkingText": [
+        "AuthenticationResponseJSON"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "iface-pkcredential",
+        "href": "https://w3c.github.io/webauthn/#iface-pkcredential",
+        "title": "PublicKeyCredential Interface",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-authenticationresponsejson-id",
+      "href": "https://w3c.github.io/webauthn/#dom-authenticationresponsejson-id",
+      "linkingText": [
+        "id"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AuthenticationResponseJSON"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "iface-pkcredential",
+        "href": "https://w3c.github.io/webauthn/#iface-pkcredential",
+        "title": "PublicKeyCredential Interface",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-authenticationresponsejson-rawid",
+      "href": "https://w3c.github.io/webauthn/#dom-authenticationresponsejson-rawid",
+      "linkingText": [
+        "rawId"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AuthenticationResponseJSON"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "iface-pkcredential",
+        "href": "https://w3c.github.io/webauthn/#iface-pkcredential",
+        "title": "PublicKeyCredential Interface",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-authenticationresponsejson-response",
+      "href": "https://w3c.github.io/webauthn/#dom-authenticationresponsejson-response",
+      "linkingText": [
+        "response"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AuthenticationResponseJSON"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "iface-pkcredential",
+        "href": "https://w3c.github.io/webauthn/#iface-pkcredential",
+        "title": "PublicKeyCredential Interface",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-authenticationresponsejson-authenticatorattachment",
+      "href": "https://w3c.github.io/webauthn/#dom-authenticationresponsejson-authenticatorattachment",
+      "linkingText": [
+        "authenticatorAttachment"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AuthenticationResponseJSON"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "iface-pkcredential",
+        "href": "https://w3c.github.io/webauthn/#iface-pkcredential",
+        "title": "PublicKeyCredential Interface",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-authenticationresponsejson-clientextensionresults",
+      "href": "https://w3c.github.io/webauthn/#dom-authenticationresponsejson-clientextensionresults",
+      "linkingText": [
+        "clientExtensionResults"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AuthenticationResponseJSON"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "iface-pkcredential",
+        "href": "https://w3c.github.io/webauthn/#iface-pkcredential",
+        "title": "PublicKeyCredential Interface",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-authenticationresponsejson-type",
+      "href": "https://w3c.github.io/webauthn/#dom-authenticationresponsejson-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AuthenticationResponseJSON"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "iface-pkcredential",
+        "href": "https://w3c.github.io/webauthn/#iface-pkcredential",
+        "title": "PublicKeyCredential Interface",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-authenticatorassertionresponsejson",
+      "href": "https://w3c.github.io/webauthn/#dictdef-authenticatorassertionresponsejson",
+      "linkingText": [
+        "AuthenticatorAssertionResponseJSON"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "iface-pkcredential",
+        "href": "https://w3c.github.io/webauthn/#iface-pkcredential",
+        "title": "PublicKeyCredential Interface",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-authenticatorassertionresponsejson-clientdatajson",
+      "href": "https://w3c.github.io/webauthn/#dom-authenticatorassertionresponsejson-clientdatajson",
+      "linkingText": [
+        "clientDataJSON"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AuthenticatorAssertionResponseJSON"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "iface-pkcredential",
+        "href": "https://w3c.github.io/webauthn/#iface-pkcredential",
+        "title": "PublicKeyCredential Interface",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-authenticatorassertionresponsejson-authenticatordata",
+      "href": "https://w3c.github.io/webauthn/#dom-authenticatorassertionresponsejson-authenticatordata",
+      "linkingText": [
+        "authenticatorData"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AuthenticatorAssertionResponseJSON"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "iface-pkcredential",
+        "href": "https://w3c.github.io/webauthn/#iface-pkcredential",
+        "title": "PublicKeyCredential Interface",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-authenticatorassertionresponsejson-signature",
+      "href": "https://w3c.github.io/webauthn/#dom-authenticatorassertionresponsejson-signature",
+      "linkingText": [
+        "signature"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AuthenticatorAssertionResponseJSON"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "iface-pkcredential",
+        "href": "https://w3c.github.io/webauthn/#iface-pkcredential",
+        "title": "PublicKeyCredential Interface",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-authenticatorassertionresponsejson-userhandle",
+      "href": "https://w3c.github.io/webauthn/#dom-authenticatorassertionresponsejson-userhandle",
+      "linkingText": [
+        "userHandle"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AuthenticatorAssertionResponseJSON"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "iface-pkcredential",
+        "href": "https://w3c.github.io/webauthn/#iface-pkcredential",
+        "title": "PublicKeyCredential Interface",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-authenticationextensionsclientoutputsjson",
+      "href": "https://w3c.github.io/webauthn/#dictdef-authenticationextensionsclientoutputsjson",
+      "linkingText": [
+        "AuthenticationExtensionsClientOutputsJSON"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "iface-pkcredential",
+        "href": "https://w3c.github.io/webauthn/#iface-pkcredential",
+        "title": "PublicKeyCredential Interface",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
     },
     {
       "id": "dom-publickeycredential-type-slot",
@@ -2180,25 +2754,6 @@
       "definedIn": "dt"
     },
     {
-      "id": "effective-user-verification-requirement-for-assertion",
-      "href": "https://w3c.github.io/webauthn/#effective-user-verification-requirement-for-assertion",
-      "linkingText": [
-        "effective user verification requirement for assertion"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "sctn-discover-from-external-source",
-        "href": "https://w3c.github.io/webauthn/#sctn-discover-from-external-source",
-        "title": "PublicKeyCredential’s [[DiscoverFromExternalSource]](origin, options, sameOriginWithAncestors) Method",
-        "number": "5.1.4.1"
-      },
-      "definedIn": "prose"
-    },
-    {
       "id": "assertioncreationdata-credentialidresult",
       "href": "https://w3c.github.io/webauthn/#assertioncreationdata-credentialidresult",
       "linkingText": [
@@ -2325,6 +2880,172 @@
       "definedIn": "dt"
     },
     {
+      "id": "publickeycredential-issuing-a-credential-request-to-an-authenticator",
+      "href": "https://w3c.github.io/webauthn/#publickeycredential-issuing-a-credential-request-to-an-authenticator",
+      "linkingText": [
+        "Issuing a Credential Request to an Authenticator"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PublicKeyCredential"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sctn-issuing-cred-request-to-authenticator",
+        "href": "https://w3c.github.io/webauthn/#sctn-issuing-cred-request-to-authenticator",
+        "title": "Issuing a Credential Request to an Authenticator",
+        "number": "5.1.4.2"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-issuing-a-credential-request-to-an-authenticator-authenticator",
+      "href": "https://w3c.github.io/webauthn/#dom-issuing-a-credential-request-to-an-authenticator-authenticator",
+      "linkingText": [
+        "authenticator"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Issuing a credential request to an authenticator"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sctn-issuing-cred-request-to-authenticator",
+        "href": "https://w3c.github.io/webauthn/#sctn-issuing-cred-request-to-authenticator",
+        "title": "Issuing a Credential Request to an Authenticator",
+        "number": "5.1.4.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-issuing-a-credential-request-to-an-authenticator-savedcredentialids",
+      "href": "https://w3c.github.io/webauthn/#dom-issuing-a-credential-request-to-an-authenticator-savedcredentialids",
+      "linkingText": [
+        "savedCredentialIds"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Issuing a credential request to an authenticator"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sctn-issuing-cred-request-to-authenticator",
+        "href": "https://w3c.github.io/webauthn/#sctn-issuing-cred-request-to-authenticator",
+        "title": "Issuing a Credential Request to an Authenticator",
+        "number": "5.1.4.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-issuing-a-credential-request-to-an-authenticator-options",
+      "href": "https://w3c.github.io/webauthn/#dom-issuing-a-credential-request-to-an-authenticator-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Issuing a credential request to an authenticator"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sctn-issuing-cred-request-to-authenticator",
+        "href": "https://w3c.github.io/webauthn/#sctn-issuing-cred-request-to-authenticator",
+        "title": "Issuing a Credential Request to an Authenticator",
+        "number": "5.1.4.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-issuing-a-credential-request-to-an-authenticator-rpid",
+      "href": "https://w3c.github.io/webauthn/#dom-issuing-a-credential-request-to-an-authenticator-rpid",
+      "linkingText": [
+        "rpId"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Issuing a credential request to an authenticator"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sctn-issuing-cred-request-to-authenticator",
+        "href": "https://w3c.github.io/webauthn/#sctn-issuing-cred-request-to-authenticator",
+        "title": "Issuing a Credential Request to an Authenticator",
+        "number": "5.1.4.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-issuing-a-credential-request-to-an-authenticator-clientdatahash",
+      "href": "https://w3c.github.io/webauthn/#dom-issuing-a-credential-request-to-an-authenticator-clientdatahash",
+      "linkingText": [
+        "clientDataHash"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Issuing a credential request to an authenticator"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sctn-issuing-cred-request-to-authenticator",
+        "href": "https://w3c.github.io/webauthn/#sctn-issuing-cred-request-to-authenticator",
+        "title": "Issuing a Credential Request to an Authenticator",
+        "number": "5.1.4.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-issuing-a-credential-request-to-an-authenticator-authenticatorextensions",
+      "href": "https://w3c.github.io/webauthn/#dom-issuing-a-credential-request-to-an-authenticator-authenticatorextensions",
+      "linkingText": [
+        "authenticatorExtensions"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Issuing a credential request to an authenticator"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sctn-issuing-cred-request-to-authenticator",
+        "href": "https://w3c.github.io/webauthn/#sctn-issuing-cred-request-to-authenticator",
+        "title": "Issuing a Credential Request to an Authenticator",
+        "number": "5.1.4.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "effective-user-verification-requirement-for-assertion",
+      "href": "https://w3c.github.io/webauthn/#effective-user-verification-requirement-for-assertion",
+      "linkingText": [
+        "effective user verification requirement for assertion"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sctn-issuing-cred-request-to-authenticator",
+        "href": "https://w3c.github.io/webauthn/#sctn-issuing-cred-request-to-authenticator",
+        "title": "Issuing a Credential Request to an Authenticator",
+        "number": "5.1.4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "dom-publickeycredential-store-slot",
       "href": "https://w3c.github.io/webauthn/#dom-publickeycredential-store-slot",
       "linkingText": [
@@ -2426,6 +3147,626 @@
         "href": "https://w3c.github.io/webauthn/#sctn-isUserVerifyingPlatformAuthenticatorAvailable",
         "title": "Availability of User-Verifying Platform Authenticator - PublicKeyCredential’s isUserVerifyingPlatformAuthenticatorAvailable() Method",
         "number": "5.1.7"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-publickeycredential-parsecreationoptionsfromjson",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredential-parsecreationoptionsfromjson",
+      "linkingText": [
+        "parseCreationOptionsFromJSON(options)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "PublicKeyCredential"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sctn-parseCreationOptionsFromJSON",
+        "href": "https://w3c.github.io/webauthn/#sctn-parseCreationOptionsFromJSON",
+        "title": "Deserialize Registration ceremony options - PublicKeyCredential’s parseCreationOptionsFromJSON() Method",
+        "number": "5.1.8"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-publickeycredential-parsecreationoptionsfromjson-options-options",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredential-parsecreationoptionsfromjson-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "PublicKeyCredential/parseCreationOptionsFromJSON(options)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sctn-parseCreationOptionsFromJSON",
+        "href": "https://w3c.github.io/webauthn/#sctn-parseCreationOptionsFromJSON",
+        "title": "Deserialize Registration ceremony options - PublicKeyCredential’s parseCreationOptionsFromJSON() Method",
+        "number": "5.1.8"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-publickeycredentialcreationoptionsjson",
+      "href": "https://w3c.github.io/webauthn/#dictdef-publickeycredentialcreationoptionsjson",
+      "linkingText": [
+        "PublicKeyCredentialCreationOptionsJSON"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sctn-parseCreationOptionsFromJSON",
+        "href": "https://w3c.github.io/webauthn/#sctn-parseCreationOptionsFromJSON",
+        "title": "Deserialize Registration ceremony options - PublicKeyCredential’s parseCreationOptionsFromJSON() Method",
+        "number": "5.1.8"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-publickeycredentialcreationoptionsjson-rp",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialcreationoptionsjson-rp",
+      "linkingText": [
+        "rp"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PublicKeyCredentialCreationOptionsJSON"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sctn-parseCreationOptionsFromJSON",
+        "href": "https://w3c.github.io/webauthn/#sctn-parseCreationOptionsFromJSON",
+        "title": "Deserialize Registration ceremony options - PublicKeyCredential’s parseCreationOptionsFromJSON() Method",
+        "number": "5.1.8"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-publickeycredentialcreationoptionsjson-user",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialcreationoptionsjson-user",
+      "linkingText": [
+        "user"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PublicKeyCredentialCreationOptionsJSON"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sctn-parseCreationOptionsFromJSON",
+        "href": "https://w3c.github.io/webauthn/#sctn-parseCreationOptionsFromJSON",
+        "title": "Deserialize Registration ceremony options - PublicKeyCredential’s parseCreationOptionsFromJSON() Method",
+        "number": "5.1.8"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-publickeycredentialcreationoptionsjson-challenge",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialcreationoptionsjson-challenge",
+      "linkingText": [
+        "challenge"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PublicKeyCredentialCreationOptionsJSON"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sctn-parseCreationOptionsFromJSON",
+        "href": "https://w3c.github.io/webauthn/#sctn-parseCreationOptionsFromJSON",
+        "title": "Deserialize Registration ceremony options - PublicKeyCredential’s parseCreationOptionsFromJSON() Method",
+        "number": "5.1.8"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-publickeycredentialcreationoptionsjson-pubkeycredparams",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialcreationoptionsjson-pubkeycredparams",
+      "linkingText": [
+        "pubKeyCredParams"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PublicKeyCredentialCreationOptionsJSON"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sctn-parseCreationOptionsFromJSON",
+        "href": "https://w3c.github.io/webauthn/#sctn-parseCreationOptionsFromJSON",
+        "title": "Deserialize Registration ceremony options - PublicKeyCredential’s parseCreationOptionsFromJSON() Method",
+        "number": "5.1.8"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-publickeycredentialcreationoptionsjson-timeout",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialcreationoptionsjson-timeout",
+      "linkingText": [
+        "timeout"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PublicKeyCredentialCreationOptionsJSON"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sctn-parseCreationOptionsFromJSON",
+        "href": "https://w3c.github.io/webauthn/#sctn-parseCreationOptionsFromJSON",
+        "title": "Deserialize Registration ceremony options - PublicKeyCredential’s parseCreationOptionsFromJSON() Method",
+        "number": "5.1.8"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-publickeycredentialcreationoptionsjson-excludecredentials",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialcreationoptionsjson-excludecredentials",
+      "linkingText": [
+        "excludeCredentials"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PublicKeyCredentialCreationOptionsJSON"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sctn-parseCreationOptionsFromJSON",
+        "href": "https://w3c.github.io/webauthn/#sctn-parseCreationOptionsFromJSON",
+        "title": "Deserialize Registration ceremony options - PublicKeyCredential’s parseCreationOptionsFromJSON() Method",
+        "number": "5.1.8"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-publickeycredentialcreationoptionsjson-authenticatorselection",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialcreationoptionsjson-authenticatorselection",
+      "linkingText": [
+        "authenticatorSelection"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PublicKeyCredentialCreationOptionsJSON"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sctn-parseCreationOptionsFromJSON",
+        "href": "https://w3c.github.io/webauthn/#sctn-parseCreationOptionsFromJSON",
+        "title": "Deserialize Registration ceremony options - PublicKeyCredential’s parseCreationOptionsFromJSON() Method",
+        "number": "5.1.8"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-publickeycredentialcreationoptionsjson-attestation",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialcreationoptionsjson-attestation",
+      "linkingText": [
+        "attestation"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PublicKeyCredentialCreationOptionsJSON"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sctn-parseCreationOptionsFromJSON",
+        "href": "https://w3c.github.io/webauthn/#sctn-parseCreationOptionsFromJSON",
+        "title": "Deserialize Registration ceremony options - PublicKeyCredential’s parseCreationOptionsFromJSON() Method",
+        "number": "5.1.8"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-publickeycredentialcreationoptionsjson-extensions",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialcreationoptionsjson-extensions",
+      "linkingText": [
+        "extensions"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PublicKeyCredentialCreationOptionsJSON"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sctn-parseCreationOptionsFromJSON",
+        "href": "https://w3c.github.io/webauthn/#sctn-parseCreationOptionsFromJSON",
+        "title": "Deserialize Registration ceremony options - PublicKeyCredential’s parseCreationOptionsFromJSON() Method",
+        "number": "5.1.8"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-publickeycredentialuserentityjson",
+      "href": "https://w3c.github.io/webauthn/#dictdef-publickeycredentialuserentityjson",
+      "linkingText": [
+        "PublicKeyCredentialUserEntityJSON"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sctn-parseCreationOptionsFromJSON",
+        "href": "https://w3c.github.io/webauthn/#sctn-parseCreationOptionsFromJSON",
+        "title": "Deserialize Registration ceremony options - PublicKeyCredential’s parseCreationOptionsFromJSON() Method",
+        "number": "5.1.8"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-publickeycredentialuserentityjson-id",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialuserentityjson-id",
+      "linkingText": [
+        "id"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PublicKeyCredentialUserEntityJSON"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sctn-parseCreationOptionsFromJSON",
+        "href": "https://w3c.github.io/webauthn/#sctn-parseCreationOptionsFromJSON",
+        "title": "Deserialize Registration ceremony options - PublicKeyCredential’s parseCreationOptionsFromJSON() Method",
+        "number": "5.1.8"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-publickeycredentialuserentityjson-name",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialuserentityjson-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PublicKeyCredentialUserEntityJSON"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sctn-parseCreationOptionsFromJSON",
+        "href": "https://w3c.github.io/webauthn/#sctn-parseCreationOptionsFromJSON",
+        "title": "Deserialize Registration ceremony options - PublicKeyCredential’s parseCreationOptionsFromJSON() Method",
+        "number": "5.1.8"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-publickeycredentialuserentityjson-displayname",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialuserentityjson-displayname",
+      "linkingText": [
+        "displayName"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PublicKeyCredentialUserEntityJSON"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sctn-parseCreationOptionsFromJSON",
+        "href": "https://w3c.github.io/webauthn/#sctn-parseCreationOptionsFromJSON",
+        "title": "Deserialize Registration ceremony options - PublicKeyCredential’s parseCreationOptionsFromJSON() Method",
+        "number": "5.1.8"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-publickeycredentialdescriptorjson",
+      "href": "https://w3c.github.io/webauthn/#dictdef-publickeycredentialdescriptorjson",
+      "linkingText": [
+        "PublicKeyCredentialDescriptorJSON"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sctn-parseCreationOptionsFromJSON",
+        "href": "https://w3c.github.io/webauthn/#sctn-parseCreationOptionsFromJSON",
+        "title": "Deserialize Registration ceremony options - PublicKeyCredential’s parseCreationOptionsFromJSON() Method",
+        "number": "5.1.8"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-publickeycredentialdescriptorjson-id",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialdescriptorjson-id",
+      "linkingText": [
+        "id"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PublicKeyCredentialDescriptorJSON"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sctn-parseCreationOptionsFromJSON",
+        "href": "https://w3c.github.io/webauthn/#sctn-parseCreationOptionsFromJSON",
+        "title": "Deserialize Registration ceremony options - PublicKeyCredential’s parseCreationOptionsFromJSON() Method",
+        "number": "5.1.8"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-publickeycredentialdescriptorjson-type",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialdescriptorjson-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PublicKeyCredentialDescriptorJSON"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sctn-parseCreationOptionsFromJSON",
+        "href": "https://w3c.github.io/webauthn/#sctn-parseCreationOptionsFromJSON",
+        "title": "Deserialize Registration ceremony options - PublicKeyCredential’s parseCreationOptionsFromJSON() Method",
+        "number": "5.1.8"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-publickeycredentialdescriptorjson-transports",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialdescriptorjson-transports",
+      "linkingText": [
+        "transports"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PublicKeyCredentialDescriptorJSON"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sctn-parseCreationOptionsFromJSON",
+        "href": "https://w3c.github.io/webauthn/#sctn-parseCreationOptionsFromJSON",
+        "title": "Deserialize Registration ceremony options - PublicKeyCredential’s parseCreationOptionsFromJSON() Method",
+        "number": "5.1.8"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-authenticationextensionsclientinputsjson",
+      "href": "https://w3c.github.io/webauthn/#dictdef-authenticationextensionsclientinputsjson",
+      "linkingText": [
+        "AuthenticationExtensionsClientInputsJSON"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sctn-parseCreationOptionsFromJSON",
+        "href": "https://w3c.github.io/webauthn/#sctn-parseCreationOptionsFromJSON",
+        "title": "Deserialize Registration ceremony options - PublicKeyCredential’s parseCreationOptionsFromJSON() Method",
+        "number": "5.1.8"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-publickeycredential-parserequestoptionsfromjson",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredential-parserequestoptionsfromjson",
+      "linkingText": [
+        "parseRequestOptionsFromJSON(options)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "PublicKeyCredential"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sctn-parseRequestOptionsFromJSON",
+        "href": "https://w3c.github.io/webauthn/#sctn-parseRequestOptionsFromJSON",
+        "title": "Deserialize Authentication ceremony options - PublicKeyCredential’s parseRequestOptionsFromJSON() Methods",
+        "number": "5.1.9"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-publickeycredential-parserequestoptionsfromjson-options-options",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredential-parserequestoptionsfromjson-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "PublicKeyCredential/parseRequestOptionsFromJSON(options)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sctn-parseRequestOptionsFromJSON",
+        "href": "https://w3c.github.io/webauthn/#sctn-parseRequestOptionsFromJSON",
+        "title": "Deserialize Authentication ceremony options - PublicKeyCredential’s parseRequestOptionsFromJSON() Methods",
+        "number": "5.1.9"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-publickeycredentialrequestoptionsjson",
+      "href": "https://w3c.github.io/webauthn/#dictdef-publickeycredentialrequestoptionsjson",
+      "linkingText": [
+        "PublicKeyCredentialRequestOptionsJSON"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sctn-parseRequestOptionsFromJSON",
+        "href": "https://w3c.github.io/webauthn/#sctn-parseRequestOptionsFromJSON",
+        "title": "Deserialize Authentication ceremony options - PublicKeyCredential’s parseRequestOptionsFromJSON() Methods",
+        "number": "5.1.9"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-publickeycredentialrequestoptionsjson-challenge",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialrequestoptionsjson-challenge",
+      "linkingText": [
+        "challenge"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PublicKeyCredentialRequestOptionsJSON"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sctn-parseRequestOptionsFromJSON",
+        "href": "https://w3c.github.io/webauthn/#sctn-parseRequestOptionsFromJSON",
+        "title": "Deserialize Authentication ceremony options - PublicKeyCredential’s parseRequestOptionsFromJSON() Methods",
+        "number": "5.1.9"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-publickeycredentialrequestoptionsjson-timeout",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialrequestoptionsjson-timeout",
+      "linkingText": [
+        "timeout"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PublicKeyCredentialRequestOptionsJSON"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sctn-parseRequestOptionsFromJSON",
+        "href": "https://w3c.github.io/webauthn/#sctn-parseRequestOptionsFromJSON",
+        "title": "Deserialize Authentication ceremony options - PublicKeyCredential’s parseRequestOptionsFromJSON() Methods",
+        "number": "5.1.9"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-publickeycredentialrequestoptionsjson-rpid",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialrequestoptionsjson-rpid",
+      "linkingText": [
+        "rpId"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PublicKeyCredentialRequestOptionsJSON"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sctn-parseRequestOptionsFromJSON",
+        "href": "https://w3c.github.io/webauthn/#sctn-parseRequestOptionsFromJSON",
+        "title": "Deserialize Authentication ceremony options - PublicKeyCredential’s parseRequestOptionsFromJSON() Methods",
+        "number": "5.1.9"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-publickeycredentialrequestoptionsjson-allowcredentials",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialrequestoptionsjson-allowcredentials",
+      "linkingText": [
+        "allowCredentials"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PublicKeyCredentialRequestOptionsJSON"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sctn-parseRequestOptionsFromJSON",
+        "href": "https://w3c.github.io/webauthn/#sctn-parseRequestOptionsFromJSON",
+        "title": "Deserialize Authentication ceremony options - PublicKeyCredential’s parseRequestOptionsFromJSON() Methods",
+        "number": "5.1.9"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-publickeycredentialrequestoptionsjson-userverification",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialrequestoptionsjson-userverification",
+      "linkingText": [
+        "userVerification"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PublicKeyCredentialRequestOptionsJSON"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sctn-parseRequestOptionsFromJSON",
+        "href": "https://w3c.github.io/webauthn/#sctn-parseRequestOptionsFromJSON",
+        "title": "Deserialize Authentication ceremony options - PublicKeyCredential’s parseRequestOptionsFromJSON() Methods",
+        "number": "5.1.9"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-publickeycredentialrequestoptionsjson-extensions",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialrequestoptionsjson-extensions",
+      "linkingText": [
+        "extensions"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PublicKeyCredentialRequestOptionsJSON"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sctn-parseRequestOptionsFromJSON",
+        "href": "https://w3c.github.io/webauthn/#sctn-parseRequestOptionsFromJSON",
+        "title": "Deserialize Authentication ceremony options - PublicKeyCredential’s parseRequestOptionsFromJSON() Methods",
+        "number": "5.1.9"
       },
       "definedIn": "pre"
     },
@@ -5074,6 +6415,107 @@
         "number": "6.3.4"
       },
       "definedIn": "heading"
+    },
+    {
+      "id": "silentcredentialdiscovery",
+      "href": "https://w3c.github.io/webauthn/#silentcredentialdiscovery",
+      "linkingText": [
+        "silentCredentialDiscovery"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sctn-op-silent-discovery",
+        "href": "https://w3c.github.io/webauthn/#sctn-op-silent-discovery",
+        "title": "The silentCredentialDiscovery operation",
+        "number": "6.3.5"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "discoverablecredentialmetadata",
+      "href": "https://w3c.github.io/webauthn/#discoverablecredentialmetadata",
+      "linkingText": [
+        "DiscoverableCredentialMetadata"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sctn-op-silent-discovery",
+        "href": "https://w3c.github.io/webauthn/#sctn-op-silent-discovery",
+        "title": "The silentCredentialDiscovery operation",
+        "number": "6.3.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "discoverablecredentialmetadata-type",
+      "href": "https://w3c.github.io/webauthn/#discoverablecredentialmetadata-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "DiscoverableCredentialMetadata"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sctn-op-silent-discovery",
+        "href": "https://w3c.github.io/webauthn/#sctn-op-silent-discovery",
+        "title": "The silentCredentialDiscovery operation",
+        "number": "6.3.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "discoverablecredentialmetadata-id",
+      "href": "https://w3c.github.io/webauthn/#discoverablecredentialmetadata-id",
+      "linkingText": [
+        "id"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "DiscoverableCredentialMetadata"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sctn-op-silent-discovery",
+        "href": "https://w3c.github.io/webauthn/#sctn-op-silent-discovery",
+        "title": "The silentCredentialDiscovery operation",
+        "number": "6.3.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "discoverablecredentialmetadata-otherui",
+      "href": "https://w3c.github.io/webauthn/#discoverablecredentialmetadata-otherui",
+      "linkingText": [
+        "otherUI"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "DiscoverableCredentialMetadata"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sctn-op-silent-discovery",
+        "href": "https://w3c.github.io/webauthn/#sctn-op-silent-discovery",
+        "title": "The silentCredentialDiscovery operation",
+        "number": "6.3.5"
+      },
+      "definedIn": "dt"
     },
     {
       "id": "attestation-object",

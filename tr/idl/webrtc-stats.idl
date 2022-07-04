@@ -72,6 +72,7 @@ dictionary RTCInboundRtpStreamStats : RTCReceivedRtpStreamStats {
  double               jitterBufferDelay;
  double               jitterBufferTargetDelay;
  unsigned long long   jitterBufferEmittedCount;
+ double               jitterBufferMinimumDelay;
  unsigned long long   totalSamplesReceived;
  unsigned long long   concealedSamples;
  unsigned long long   silentConcealedSamples;

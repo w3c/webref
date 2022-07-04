@@ -12,6 +12,7 @@ dictionary RequestInit {
   DOMString integrity;
   boolean keepalive;
   AbortSignal? signal;
+  RequestDuplex duplex;
   any window; // can only be set to null
 };
 

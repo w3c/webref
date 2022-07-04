@@ -342,7 +342,8 @@
       },
       "type": "cuechange",
       "targets": [
-        "HTMLMediaElement"
+        "HTMLTrackElement",
+        "TextTrack"
       ],
       "interface": "Event"
     },
@@ -378,7 +379,7 @@
       },
       "type": "enter",
       "targets": [
-        "HTMLMediaElement"
+        "TextTrackCue"
       ],
       "interface": "Event"
     },
@@ -390,7 +391,7 @@
       },
       "type": "exit",
       "targets": [
-        "HTMLMediaElement"
+        "TextTrackCue"
       ],
       "interface": "Event"
     },
@@ -572,6 +573,18 @@
       "bubbles": true
     },
     {
+      "href": null,
+      "src": {
+        "format": "summary table",
+        "href": "https://html.spec.whatwg.org/multipage/indices.html#events-2:event-click"
+      },
+      "type": "click",
+      "targets": [
+        "Elements"
+      ],
+      "interface": "PointerEvent"
+    },
+    {
       "href": "https://html.spec.whatwg.org/multipage/indices.html#event-close",
       "src": {
         "format": "summary table",
@@ -607,6 +620,18 @@
         "OffscreenCanvas"
       ],
       "interface": "Event"
+    },
+    {
+      "href": null,
+      "src": {
+        "format": "summary table",
+        "href": "https://html.spec.whatwg.org/multipage/indices.html#events-2:event-contextmenu"
+      },
+      "type": "contextmenu",
+      "targets": [
+        "Elements"
+      ],
+      "interface": "PointerEvent"
     },
     {
       "href": "https://html.spec.whatwg.org/multipage/indices.html#event-contextrestored",
@@ -653,13 +678,13 @@
       },
       "type": "error",
       "targets": [
-        "Window",
-        "WorkerGlobalScope",
-        "HTMLElement",
+        "AbstractWorker",
         "EventSource",
-        "Worker",
+        "HTMLElement",
         "SharedWorker",
-        "AbstractWorker"
+        "Window",
+        "Worker",
+        "WorkerGlobalScope"
       ],
       "interface": "Event"
     },
@@ -702,6 +727,18 @@
       "interface": "HashChangeEvent"
     },
     {
+      "href": null,
+      "src": {
+        "format": "summary table",
+        "href": "https://html.spec.whatwg.org/multipage/indices.html#events-2:event-input-2"
+      },
+      "type": "input",
+      "targets": [
+        "Elements"
+      ],
+      "interface": "Event"
+    },
+    {
       "href": "https://html.spec.whatwg.org/multipage/indices.html#event-invalid",
       "src": {
         "format": "summary table",
@@ -734,8 +771,8 @@
       },
       "type": "load",
       "targets": [
-        "Window",
-        "HTMLElement"
+        "HTMLElement",
+        "Window"
       ],
       "interface": "Event"
     },
@@ -908,7 +945,7 @@
       "targets": [
         "HTMLElement"
       ],
-      "interface": "Event"
+      "interface": "SecurityPolicyViolationEvent"
     },
     {
       "href": "https://html.spec.whatwg.org/multipage/indices.html#event-select",
@@ -1012,13 +1049,51 @@
     {
       "src": {
         "format": "fire an event phrasing",
-        "href": "https://html.spec.whatwg.org/multipage/input.html#common-input-element-events:concept-event-fire"
+        "href": "https://html.spec.whatwg.org/multipage/links.html#link-type-preload:concept-event-fire-2"
       },
-      "href": "https://html.spec.whatwg.org/multipage/#the-input-element",
+      "href": "https://html.spec.whatwg.org/multipage/links.html#link-type-preload:concept-event-fire-2",
+      "type": "error",
+      "interface": "Event"
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://html.spec.whatwg.org/multipage/media.html#ready-states:concept-event-fire-4"
+      },
+      "href": "https://html.spec.whatwg.org/multipage/media.html#ready-states:concept-event-fire-4",
+      "type": "timeupdate",
+      "interface": "Event"
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://html.spec.whatwg.org/multipage/input.html#text-(type=text)-state-and-search-state-(type=search):concept-event-fire"
+      },
+      "href": "https://w3c.github.io/uievents/#event-type-input",
       "type": "input",
       "targets": [
         "GlobalEventHandlers"
       ],
+      "interface": "Event",
+      "bubbles": true,
+      "isExtension": true
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://html.spec.whatwg.org/multipage/input.html#image-button-state-(type=image):concept-event-fire-2"
+      },
+      "href": "https://html.spec.whatwg.org/multipage/input.html#image-button-state-(type=image):concept-event-fire-2",
+      "type": "load",
+      "interface": "Event"
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://html.spec.whatwg.org/multipage/input.html#common-input-element-events:concept-event-fire-2"
+      },
+      "href": "https://html.spec.whatwg.org/multipage/input.html#common-input-element-events:concept-event-fire-2",
+      "type": "input",
       "interface": "Event",
       "bubbles": true
     }
