@@ -36,6 +36,8 @@ events.listAll().then(all => {
 # Guarantees
 
 The following guarantees are provided by this package:
-- All events have a `type` attribute
-- All Web IDL intefaces in `interface` attributes exist in the latest version of the [`@webref/idl` package](https://www.npmjs.com/package/@webref/idl) at the time the `@webref/events` package is released.
-- All Web IDL interfaces in `target` attributes exist in the latest version of the [`@webref/idl` package](https://www.npmjs.com/package/@webref/idl) at the time the `@webref/events` package is released.
+- All events have a `type` attribute that match the name of the event
+- All events have a `interface` attribute to describe the interface used by the Event. The Web IDL interface exists in the latest version of the [`@webref/idl` package](https://www.npmjs.com/package/@webref/idl) at the time the `@webref/events` package is released, and represents an actual interface (i.e. not a mixin).
+- All events have a `targets` attribute with a non-empty list of target interfaces on which the event may fire. All Web IDL interfaces in the list exist in the latest version of the [`@webref/idl` package](https://www.npmjs.com/package/@webref/idl) at the time the `@webref/events` package is released, and represent an actual interface (i.e. not a mixin).
+- The `bubbles` attribute is always set for events that can fire at interfaces linked to a tree (DOM, IndexedDB, Web Bluetooth).
+- The `bubbles` attribute is not set otherwise.

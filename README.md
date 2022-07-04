@@ -69,6 +69,13 @@ Data curation brings the following guarantees.
 
 - All Web IDL interfaces referenced by elements exist in Web IDL extracts.
 
+### Events extracts
+
+- All events have a `type` attribute that match the name of the event
+- All events have a `interface` attribute to describe the interface used by the Event. The Web IDL interface exists in the latest version of the [`@webref/idl` package](https://www.npmjs.com/package/@webref/idl) at the time the `@webref/events` package is released, and represents an actual interface (i.e. not a mixin).
+- All events have a `targets` attribute with a non-empty list of target interfaces on which the event may fire. All Web IDL interfaces in the list exist in the latest version of the [`@webref/idl` package](https://www.npmjs.com/package/@webref/idl) at the time the `@webref/events` package is released, and represent an actual interface (i.e. not a mixin).
+- The `bubbles` attribute is always set for events that can fire at interfaces linked to a tree (DOM, IndexedDB, Web Bluetooth).
+- The `bubbles` attribute is not set otherwise.
 
 ## Potential spec anomalies
 
