@@ -32,7 +32,11 @@ const treeInterfaces = [
   // Web Bluetooth tree
   // https://webbluetoothcg.github.io/web-bluetooth/#bluetooth-tree-bluetooth-tree
   'BluetoothDevice', 'BluetoothRemoteGATTService',
-  'BluetoothRemoteGATTCharacteristic', 'BluetoothRemoteGATTDesriptor'
+  'BluetoothRemoteGATTCharacteristic', 'BluetoothRemoteGATTDescriptor',
+
+  // Serial tree
+  // https://wicg.github.io/serial/#serialport-interface
+  'SerialPort'
 ];
 
 

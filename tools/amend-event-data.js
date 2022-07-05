@@ -22,6 +22,7 @@ const trees = {
   idb: ["IDBDatabase", "IDBTransaction", "IDBRequest"],
   bt: ['Bluetooth', 'BluetoothDevice', 'BluetoothRemoteGATTService',
        'BluetoothRemoteGATTCharacteristic', 'BluetoothRemoteGATTDescriptor'],
+  serial: ['Serial', 'SerialPort'],
   match: function(iface) {
     return Object.keys(this).find(t => 
       Array.isArray(this[t]) && this[t].find(i => typeof i === "string" ? i === iface : iface.match(i))
