@@ -17,24 +17,21 @@ const execFile = util.promisify(require('child_process').execFile);
 const loadJSON = require('./utils').loadJSON;
 const expandCrawlResult = require('reffy').expandCrawlResult;
 
-// These are all known parent interfaces that are in tree structures
-// (note the actual tree root interfaces such as `Bluetooth` and `IDBDatabase`
-// are not listed on purpose)
-const treeInterfaces = [
-  // DOM tree:
-  // https://dom.spec.whatwg.org/#node-trees
-  'Node',
+const trees = {
+  dom: ["Window", "Document", /^.*Element$/, "Node"],
+  idb: ["IDBDatabase", "IDBTransaction", "IDBRequest"],
+  bt: ['Bluetooth', 'BluetoothDevice', 'BluetoothRemoteGATTService',
+       'BluetoothRemoteGATTCharacteristic', 'BluetoothRemoteGATTDescriptor'],
+  match: function(iface) {
+    return Object.keys(this).find(t => 
+      Array.isArray(this[t]) && this[t].find(i => typeof i === "string" ? i === iface : iface.match(i))
+    );
+  },
+  getDepth: function(tree, iface) {
+    return this[tree].findIndex(i =>typeof i === "string" ? i === iface : iface.match(i));
+  }
 
-  // IndexedDB tree (defined through "get the parent" algorithms)
-  // https://www.w3.org/TR/IndexedDB/#ref-for-get-the-parent%E2%91%A0
-  // https://www.w3.org/TR/IndexedDB/#ref-for-get-the-parent%E2%91%A1
-  'IDBRequest', 'IDBTransaction',
-
-  // Web Bluetooth tree
-  // https://webbluetoothcg.github.io/web-bluetooth/#bluetooth-tree-bluetooth-tree
-  'BluetoothDevice', 'BluetoothRemoteGATTService',
-  'BluetoothRemoteGATTCharacteristic', 'BluetoothRemoteGATTDesriptor'
-];
+};
 
 
 const patches = {
@@ -75,6 +72,11 @@ const patches = {
     }
   ],
   'css-nav-1': [
+    {
+      pattern: { interface: null },
+      matched: 2,
+      delete: true
+    },
     {
       // may be fixed once https://github.com/w3c/csswg-drafts/issues/3380 gets fixed
       pattern: { type: /^nav(beforefocus|notarget)$/ },
@@ -163,19 +165,34 @@ function applyEventPatches(spec) {
   let errors = [];
   for (const patch of patches[spec.shortname]) {
     let matched = 0;
-    for (const event of spec.events) {
-      const matches = Object.keys(patch.pattern).every(prop => event[prop]?.toString()?.match(patch.pattern[prop]));
+    const updatedEvents = [];
+    for (let event of spec.events) {
+      const matches = Object.keys(patch.pattern).every(prop => {
+	if (patch.pattern[prop] === null) {
+	  return event[prop] === null;
+	} else if (typeof patch.pattern[prop] === "string") {
+	  return event[prop]?.toString() === patch.pattern[prop];
+	}
+	// Assume RegExp
+	return event[prop]?.toString()?.match(patch.pattern[prop]);
+      });
       if (matches) {
 	matched++;
-	for (const target of Object.keys(patch.change)) {
-	  event[target] = patch.change[target];
+	if (patch.delete) {
+	  continue;
+	} else {
+	  for (const target of Object.keys(patch.change)) {
+	    event[target] = patch.change[target];
+	  }
 	}
       }
+      updatedEvents.push(event);
     }
     if (matched !== patch.matched) {
       errors.push(`The following patch for the ${spec.shortname} spec changes ${matched} events, but ${patch.matched} was expected: ${JSON.stringify(patch, null, 2)}`);
       continue;
     }
+    spec.events = updatedEvents;
   }
   if (!errors.length) {
     spec.needsSaving = true;
@@ -184,24 +201,17 @@ function applyEventPatches(spec) {
 }
 
 function deepestInterfaceInTree(interfaces) {
-  const trees = {
-    dom: ["Window", "Document", "HTMLElement", "Element", "Node"],
-    idb: ["IDBDatabase", "IDBTransaction", "IDBRequest"],
-    bt: ['Bluetooth', 'BluetoothDevice', 'BluetoothRemoteGATTService',
-     'BluetoothRemoteGATTCharacteristic', 'BluetoothRemoteGATTDescriptor']
-  };
-
   let deepestInTrees = {};
   let filteredInterfaces = [];
   for (let iface of interfaces) {
-    const tree = Object.keys(trees).find(t => trees[t].includes(iface));
+    const tree = trees.match(iface);
     if (!tree) { // Not in a tree, we keep it in
       filteredInterfaces.push(iface);
       continue;
     }
-    const depth = trees[tree].indexOf(iface);
+    const depth = trees.getDepth(tree, iface);
     const currentDeepest = deepestInTrees[tree];
-    if (!currentDeepest || depth > trees[tree].indexOf(currentDeepest)) {
+    if (!currentDeepest || depth > trees.getDepth(tree, currentDeepest)) {
       deepestInTrees[tree] = iface;
     }
   }
@@ -218,6 +228,32 @@ function expandMixinTargets(event, mixins) {
   return false;
 }
 
+function setNotBubbling(event) {
+  // if an event targets an interface in a tree
+  // but the root of the tree wasn't detected as a target
+  // we can assume bubbles is false
+  // (ideally, we should check the existence of the event handler on the
+  // root interface, but there is no easy way to get a consolidated IDL view
+  // of the root at the moment)
+  if (event.hasOwnProperty("bubbles")) return false;
+  if (!event.targets) return false;
+  const rootDetected = {};
+  for (let iface of event.targets) {
+    const tree = trees.match(iface);
+    if (!tree) continue;
+    rootDetected[tree] = false;
+    if (trees[tree].indexOf(iface) === 0) {
+      rootDetected[tree] = true;
+    }
+  }
+  if (Object.values(rootDetected).every(x => x === false)) {
+    event.bubbles = false;
+    return true;
+  }
+  return false;
+}
+
+
 function cleanTargetInTrees(event) {
   // When several targets are attached to an event that bubbles
   // keep only the "deepest" target
@@ -230,6 +266,7 @@ function cleanTargetInTrees(event) {
   }
   return false;
 }
+
 
 async function curateEvents(folder) {
   const rawIndex = await loadJSON(path.join(folder, 'index.json'));
@@ -278,6 +315,9 @@ async function curateEvents(folder) {
   for (const spec of index.results.filter(s => s.events)) {
     for (const event of spec.events) {
       if (expandMixinTargets(event, mixins)) {
+	spec.needsSaving = true;
+      }
+      if (setNotBubbling(event)) {
 	spec.needsSaving = true;
       }
       if (cleanTargetInTrees(event)) {
