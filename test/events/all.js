@@ -97,16 +97,16 @@ describe('The curated view of events extracts', function () {
 
           it(`contains valid target interfaces for event "${event.type}"`, () => {
             assert(event.targets?.[0], 'No target interfaces');
-            event.targets.map(target => {
+            event.targets.map(({target, bubbles}) => {
               assert(interfaces.has(target) || mixins.has(target), `Unknown target interface "${target}"`);
               assert(interfaces.has(target), `Target interface "${target}" is a mixin`);
 
               const root = getRootTreeInterfaceOf(target);
               if (root && treeInterfaces.includes(root)) {
-                assert(event.hasOwnProperty('bubbles'), `No "bubbles" attribute whereas target interface "${target}" is part of a tree (tree interface: "${root}")`);
+                assert(bubbles !== undefined, `No "bubbles" attribute whereas target interface "${target}" is part of a tree (tree interface: "${root}")`);
               }
               else {
-                assert(!event.hasOwnProperty('bubbles'), `A "bubbles" attribute is set whereas target interface "${target}" is not part of a tree`);
+                assert(bubbles === undefined, `A "bubbles" attribute is set whereas target interface "${target}" is not part of a tree`);
               }
             });
           });

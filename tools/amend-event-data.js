@@ -226,22 +226,22 @@ function applyEventPatches(spec) {
   return errors;
 }
 
-function deepestInterfaceInTree(interfaces) {
+function deepestInterfaceInTree(targets) {
   let deepestInTrees = {};
-  let filteredInterfaces = [];
-  for (let iface of interfaces) {
-    const tree = trees.match(iface);
+  let filteredTargets = [];
+  for (let {target, bubbles} of targets) {
+    const tree = trees.match(target);
     if (!tree) { // Not in a tree, we keep it in
-      filteredInterfaces.push(iface);
+      filteredTargets.push({target, bubbles});
       continue;
     }
-    const depth = trees.getDepth(tree, iface);
-    const currentDeepest = deepestInTrees[tree];
+    const depth = trees.getDepth(tree, target);
+    const currentDeepest = deepestInTrees[tree]?.target;
     if (!currentDeepest || depth > trees.getDepth(tree, currentDeepest)) {
-      deepestInTrees[tree] = iface;
+      deepestInTrees[tree] = {target, bubbles};
     }
   }
-  return filteredInterfaces.concat(Object.values(deepestInTrees));
+  return filteredTargets.concat(Object.values(deepestInTrees));
 }
 
 function expandMixinTargets(event, mixins) {
@@ -254,39 +254,45 @@ function expandMixinTargets(event, mixins) {
   return false;
 }
 
-function setNotBubbling(event) {
+function setBubblingPerTarget(event) {
   // if an event targets an interface in a tree
   // but the root of the tree wasn't detected as a target
   // we can assume bubbles is false
   // (ideally, we should check the existence of the event handler on the
   // root interface, but there is no easy way to get a consolidated IDL view
   // of the root at the moment)
-  if (event.bubbles) return false;
-  if (!event.targets) return false;
+  if (!event.targets) return;
+  const updatedTargets = [];
   const detected = {};
+  const treeInterfaces = [];
   for (let iface of event.targets) {
     const tree = trees.match(iface);
-    if (!tree) continue;
+    if (!tree) {
+      updatedTargets.push({target: iface});
+      continue;
+    }
     if (!detected[tree]) {
       detected[tree] = {root: false, nonroot: false};
     }
     if (trees[tree].indexOf(iface) === 0) {
+      // bubbling doesn't matter on the root interface
+      updatedTargets.push({target: iface});
       detected[tree].root = true;
     } else {
+      treeInterfaces.push(iface);
       detected[tree].nonroot = true;
     }
   }
-  // if bubbles is set but none of the interfaces are in a tree
-  // delete the meaningless property
-  if (event.hasOwnProperty("bubbles") && !Object.values(detected).length) {
-    delete event.bubbles;
-    return true;
-  }
   if (Object.values(detected).length && Object.values(detected).every(x => x.root === false) && Object.values(detected).some(x => x.nonroot === true)) {
     event.bubbles = false;
-    return true;
   }
-  return false;
+  for (let iface of treeInterfaces) {
+    if (event.hasOwnProperty("bubbles")) {
+      updatedTargets.push({target: iface, bubbles: event.bubbles});
+    }
+  }
+  event.targets = updatedTargets;
+  delete event.bubbles;
 }
 
 
@@ -353,7 +359,8 @@ async function curateEvents(folder) {
       if (expandMixinTargets(event, mixins)) {
 	spec.needsSaving = true;
       }
-      if (setNotBubbling(event)) {
+      if (event.targets) {
+	setBubblingPerTarget(event);
 	spec.needsSaving = true;
       }
       if (cleanTargetInTrees(event)) {
