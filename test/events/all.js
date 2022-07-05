@@ -85,7 +85,7 @@ describe('The curated view of events extracts', function () {
         });
 
         for (const event of data.events) {
-          if (!event.type) {
+          if (!event.type || event.isExtension) {
             continue;
           }
 
