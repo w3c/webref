@@ -115,6 +115,18 @@ const patches = {
       change: { targets: ['HTMLElement'] }
     }
   ],
+  'fullscreen': [
+    {
+      pattern: { href: null },
+      delete: true,
+      matched: 4
+    },
+    {
+      pattern: {  type: /^fullscreen(change|error)$/ },
+      matched: 2,
+      change: { bubbles: true, interface: "Event"}
+    }
+  ],
   'html': [
     {
       pattern: { href: /dnd.html#event-dnd/ },
@@ -195,7 +207,7 @@ function applyEventPatches(spec) {
     for (let event of spec.events) {
       const matches = Object.keys(patch.pattern).every(prop => {
 	if (patch.pattern[prop] === null) {
-	  return event[prop] === null;
+	  return event[prop] === null || event[prop] === undefined;
 	} else if (typeof patch.pattern[prop] === "string") {
 	  return event[prop]?.toString() === patch.pattern[prop];
 	}
