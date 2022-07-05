@@ -36,6 +36,27 @@ const trees = {
 
 
 const patches = {
+  'IndexedDB-3': [
+    {
+      pattern: { type: "versionchange" },
+      matched: 1,
+      change: { interface: "IDBVersionChangeEvent" }
+    },
+    {
+      pattern: { type: /^(blocked|upgradeneeded)$/},
+      matched: 2,
+      change: { interface: "IDBVersionChangeEvent", bubbles: false }
+    },
+    {
+      add : {
+	interface: "IDBVersionChangeEvent",
+	bubbles: false,
+	type: "success",
+	targets: ["IDBOpenDBRequest"] ,
+	src: { "href": "https://w3c.github.io/IndexedDB/#dom-idbfactory-deletedatabase" }
+      }
+    }
+  ],
   'background-fetch': [
     {
       pattern: { type: /^backgroundfetch(success|fail)$/ },
@@ -167,6 +188,10 @@ function applyEventPatches(spec) {
   for (const patch of patches[spec.shortname]) {
     let matched = 0;
     const updatedEvents = [];
+    if (patch.add) {
+      spec.events.push(patch.add);
+      continue;
+    }
     for (let event of spec.events) {
       const matches = Object.keys(patch.pattern).every(prop => {
 	if (patch.pattern[prop] === null) {
@@ -181,7 +206,7 @@ function applyEventPatches(spec) {
 	matched++;
 	if (patch.delete) {
 	  continue;
-	} else {
+	} else if (patch.change) {
 	  for (const target of Object.keys(patch.change)) {
 	    event[target] = patch.change[target];
 	  }
