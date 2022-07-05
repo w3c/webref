@@ -17,6 +17,26 @@ const execFile = util.promisify(require('child_process').execFile);
 const loadJSON = require('./utils').loadJSON;
 const expandCrawlResult = require('reffy').expandCrawlResult;
 
+// These are all known parent interfaces that are in tree structures
+// (note the actual tree root interfaces such as `Bluetooth` and `IDBDatabase`
+// are not listed on purpose)
+const treeInterfaces = [
+  // DOM tree:
+  // https://dom.spec.whatwg.org/#node-trees
+  'Node',
+
+  // IndexedDB tree (defined through "get the parent" algorithms)
+  // https://www.w3.org/TR/IndexedDB/#ref-for-get-the-parent%E2%91%A0
+  // https://www.w3.org/TR/IndexedDB/#ref-for-get-the-parent%E2%91%A1
+  'IDBRequest', 'IDBTransaction',
+
+  // Web Bluetooth tree
+  // https://webbluetoothcg.github.io/web-bluetooth/#bluetooth-tree-bluetooth-tree
+  'BluetoothDevice', 'BluetoothRemoteGATTService',
+  'BluetoothRemoteGATTCharacteristic', 'BluetoothRemoteGATTDesriptor'
+];
+
+
 const patches = {
   'background-fetch': [
     {
@@ -31,6 +51,22 @@ const patches = {
     }
 
   ],
+  'battery-status': [
+    {
+      pattern: { type: /^(charging(time)?change|dischargingtimechange|levelchange)$/ },
+      matched: 4,
+      change: { interface: "Event" }
+    }
+  ],
+  'compat': [
+    {
+      // https://compat.spec.whatwg.org/#windoworientation-interface says
+      // that htmlbodyelement as a target is safari-only
+      pattern: { type: 'orientationchange' },
+      matched: 1,
+      change: { targets: ['Window'] }
+    }
+  ],
   'cookie-store': [
     {
       pattern: { type: /^change$/ },
@@ -38,7 +74,7 @@ const patches = {
       change: { interface: "CookieChangeEvent" }
     }
   ],
-  'css-nav': [
+  'css-nav-1': [
     {
       // may be fixed once https://github.com/w3c/csswg-drafts/issues/3380 gets fixed
       pattern: { type: /^nav(beforefocus|notarget)$/ },
@@ -47,7 +83,7 @@ const patches = {
       change: { targets: ['HTMLElement'] }
     }
   ],
-  'css-scroll-snap': [
+  'css-scroll-snap-2': [
     // see also https://github.com/w3c/csswg-drafts/issues/7442
     {
       pattern: { type: /^snapChang(ed|ing)$/ },
@@ -122,44 +158,97 @@ const patches = {
   ]
 };
 
-async function applyEventPaches(folder) {
-  const rawIndex = await loadJSON(path.join(folder, 'index.json'));
-  const index = await expandCrawlResult(rawIndex, folder, ['events']);
 
+function applyEventPatches(spec) {
   let errors = [];
-  for (const specShortname of Object.keys(patches)) {
-    let specErrors = [];
-    const spec = index.results.find(s => s.series.shortname === specShortname);
-    if (!spec) {
-      specErrors.push(`Could not find spec with shortname ${specShortname} for event patching`);
-      continue;
-    }
-    if (!spec.events) {
-      specErrors.push(`Spec with shortname ${specShortname} has no event to patch`);
-      continue;
-    }
-    for (const patch of patches[spec.series.shortname]) {
-      let matched = 0;
-      for (const event of spec.events) {
-	const matches = Object.keys(patch.pattern).every(prop => event[prop]?.toString()?.match(patch.pattern[prop]));
-	if (matches) {
-	  matched++;
-	  for (const target of Object.keys(patch.change)) {
-	    event[target] = patch.change[target];
-	  }
+  for (const patch of patches[spec.shortname]) {
+    let matched = 0;
+    for (const event of spec.events) {
+      const matches = Object.keys(patch.pattern).every(prop => event[prop]?.toString()?.match(patch.pattern[prop]));
+      if (matches) {
+	matched++;
+	for (const target of Object.keys(patch.change)) {
+	  event[target] = patch.change[target];
 	}
       }
-      if (matched !== patch.matched) {
-	specErrors.push(`The following patch for the ${spec.series.shortname} spec changes ${matched} events, but ${patch.matched} was expected: ${JSON.stringify(patch, null, 2)}`);
-	continue;
-      }
     }
-    if (!specErrors.length) {
-      spec.needsSaving = true;
-    } else {
-      errors = errors.concat(specErrors);
+    if (matched !== patch.matched) {
+      errors.push(`The following patch for the ${spec.shortname} spec changes ${matched} events, but ${patch.matched} was expected: ${JSON.stringify(patch, null, 2)}`);
+      continue;
     }
   }
+  if (!errors.length) {
+    spec.needsSaving = true;
+  }
+  return errors;
+}
+
+function deepestInterfaceInTree(interfaces) {
+  const trees = {
+    dom: ["Window", "Document", "HTMLElement", "Element", "Node"],
+    idb: ["IDBDatabase", "IDBTransaction", "IDBRequest"],
+    bt: ['Bluetooth', 'BluetoothDevice', 'BluetoothRemoteGATTService',
+     'BluetoothRemoteGATTCharacteristic', 'BluetoothRemoteGATTDescriptor']
+  };
+
+  let deepestInTrees = {};
+  let filteredInterfaces = [];
+  for (let iface of interfaces) {
+    const tree = Object.keys(trees).find(t => trees[t].includes(iface));
+    if (!tree) { // Not in a tree, we keep it in
+      filteredInterfaces.push(iface);
+      continue;
+    }
+    const depth = trees[tree].indexOf(iface);
+    const currentDeepest = deepestInTrees[tree];
+    if (!currentDeepest || depth > trees[tree].indexOf(currentDeepest)) {
+      deepestInTrees[tree] = iface;
+    }
+  }
+  return filteredInterfaces.concat(Object.values(deepestInTrees));
+}
+
+function expandMixinTargets(event, mixins) {
+  const expandedTargets = event.targets?.map(i => mixins[i] || i)?.flat();
+  // This assumes a mixin matches more than one interface
+  if (expandedTargets && expandedTargets.length !== event.targets?.length) {
+    event.targets = expandedTargets;
+    return true;
+  }
+  return false;
+}
+
+function cleanTargetInTrees(event) {
+  // When several targets are attached to an event that bubbles
+  // keep only the "deepest" target
+  if (event.bubbles && event.targets?.length > 1) {
+    const filteredTargets = deepestInterfaceInTree(event.targets);
+    if (filteredTargets.length !== event.targets.length) {
+      event.targets = filteredTargets;
+      return true;
+    }
+  }
+  return false;
+}
+
+async function curateEvents(folder) {
+  const rawIndex = await loadJSON(path.join(folder, 'index.json'));
+  const index = await expandCrawlResult(rawIndex, folder, ['events', 'idlparsed']);
+
+  // Collect list of mixin interfaces
+  const mixins = {};
+  index.results.forEach(s => {
+    if (s.idlparsed && s.idlparsed.idlExtendedNames) {
+      Object.keys(s.idlparsed.idlExtendedNames).forEach(n => {
+        s.idlparsed.idlExtendedNames[n].forEach(f => {
+	  if (f.type === "includes") {
+	    if (!mixins[f.includes]) mixins[f.includes] = [];
+	    mixins[f.includes].push(n);
+	  }
+	});
+      });
+    }
+  });
 
   async function saveEvents(spec) {
     const events = Object.assign({
@@ -169,9 +258,33 @@ async function applyEventPaches(folder) {
       }
     }, {events: spec.events});
     const json = JSON.stringify(events, null, 2) + '\n';
-    const pathname = path.join(folder, 'events', spec.series.shortname + '.json');
+    const pathname = path.join(folder, 'events', spec.shortname + '.json');
     await fs.writeFile(pathname, json);
   };
+
+  let errors = [];
+  for (const specShortname of Object.keys(patches)) {
+    const spec = index.results.find(s => s.shortname === specShortname);
+    if (!spec) {
+      errors.push(`Could not find spec with shortname ${specShortname} for event patching`);
+      continue;
+    }
+    if (!spec.events) {
+      errors.push(`Spec with shortname ${specShortname} has no event to patch`);
+      continue;
+    }
+    errors = errors.concat(applyEventPatches(spec));
+  }
+  for (const spec of index.results.filter(s => s.events)) {
+    for (const event of spec.events) {
+      if (expandMixinTargets(event, mixins)) {
+	spec.needsSaving = true;
+      }
+      if (cleanTargetInTrees(event)) {
+	spec.needsSaving = true;
+      }
+    }
+  }
 
   for (const spec of index.results) {
     if (spec.needsSaving) {
@@ -185,10 +298,11 @@ async function applyEventPaches(folder) {
 
 }
 
+
 /**************************************************
 Export methods for use as module
 **************************************************/
-module.exports.applyEventPaches = applyEventPaches;
+module.exports.curateEvents = curateEvents;
 
 /**************************************************
 Code run if the code is run as a stand-alone module
@@ -196,7 +310,7 @@ Code run if the code is run as a stand-alone module
 if (require.main === module) {
   const folder = process.argv[2] ?? 'curated';
 
-  applyEventPaches(folder).catch(e => {
+  curateEvents(folder).catch(e => {
     console.error(e);
     process.exit(1);
   });

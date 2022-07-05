@@ -25,7 +25,7 @@ const {
   copyFolder } = require('./utils');
 const { applyPatches } = require('./apply-patches');
 const { dropCSSPropertyDuplicates } = require('./drop-css-property-duplicates');
-const { applyEventPaches } = require('./amend-event-data');
+const { curateEvents } = require('./amend-event-data');
 
 
 /**
@@ -97,11 +97,6 @@ async function prepareCurated(rawFolder, curatedFolder) {
   await applyPatches(rawFolder, curatedFolder, 'all');
   console.log('- patches applied');
 
-  console.log();
-  console.log('Amend event data as needed');
-  await applyEventPaches(curatedFolder);
-  console.log('- done');
-
   let crawlIndexFile = path.join(curatedFolder, 'index.json');
   let crawlIndex = await loadJSON(crawlIndexFile);
   await Promise.all(crawlIndex.results.map(cleanCrawlOutcome));
@@ -145,6 +140,12 @@ async function prepareCurated(rawFolder, curatedFolder) {
   crawlResults.results = crawlResults.results.filter(spec => spec.categories?.includes('browser'));
   const idlNames = generateIdlNames(crawlResults.results, { dfns: true });
   await saveIdlNames(idlNames, curatedFolder);
+  console.log('- done');
+
+  // This relies on idlparsed having been generated
+  console.log();
+  console.log('Amend event data as needed');
+  await curateEvents(curatedFolder);
   console.log('- done');
 }
 
