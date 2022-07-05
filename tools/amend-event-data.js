@@ -98,7 +98,7 @@ const patches = {
     {
       pattern: { href: /dnd.html#event-dnd/ },
       matched: 7,
-      change: { interface: 'DragEvent' }
+      change: { interface: 'DragEvent', bubbles: true }
     },
     {
       pattern: { type: "cancel"},
@@ -147,8 +147,8 @@ const patches = {
       change: { targets: ["HTMLDetailsElement" ]}
     },
     {
-      pattern: { targets: /^(HTMLMediaElement|HTMLSourceElement|AudioTrackList,TextTrackList,VideoTrackList|TextTrack,HTMLTrackElement|HTMLTrackElement|TextTrackCue)/ },
-      matched: 32,
+      pattern: { targets: /^(HTMLMediaElement|HTMLSourceElement|TextTrack,HTMLTrackElement|HTMLTrackElement)/ },
+      matched: 27,
       change: { bubbles: false}
     }
   ],
@@ -236,18 +236,28 @@ function setNotBubbling(event) {
   // (ideally, we should check the existence of the event handler on the
   // root interface, but there is no easy way to get a consolidated IDL view
   // of the root at the moment)
-  if (event.hasOwnProperty("bubbles")) return false;
+  if (event.bubbles) return false;
   if (!event.targets) return false;
-  const rootDetected = {};
+  const detected = {};
   for (let iface of event.targets) {
     const tree = trees.match(iface);
     if (!tree) continue;
-    rootDetected[tree] = false;
+    if (!detected[tree]) {
+      detected[tree] = {root: false, nonroot: false};
+    }
     if (trees[tree].indexOf(iface) === 0) {
-      rootDetected[tree] = true;
+      detected[tree].root = true;
+    } else {
+      detected[tree].nonroot = true;
     }
   }
-  if (Object.values(rootDetected).every(x => x === false)) {
+  // if bubbles is set but none of the interfaces are in a tree
+  // delete the meaningless property
+  if (event.hasOwnProperty("bubbles") && !Object.values(detected).length) {
+    delete event.bubbles;
+    return true;
+  }
+  if (Object.values(detected).length && Object.values(detected).every(x => x.root === false) && Object.values(detected).some(x => x.nonroot === true)) {
     event.bubbles = false;
     return true;
   }
