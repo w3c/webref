@@ -220,6 +220,39 @@ const patches = {
       change: { interface: "MessageEvent", href: "https://html.spec.whatwg.org/multipage/indices.html#event-message", isExtension: true }
     }
   ],
+  'speech-api': [
+    {
+      pattern: { type: /^(audiostart|soundstart|speechstart|speechend|soundend|audioend|start|end)$/, targets: "SpeechRecognition" },
+      matched: 8,
+      change: { interface: 'Event' }
+    },
+    {
+      pattern: { type: /^(result|nomatch)$/ },
+      matched: 2,
+      change: { interface: 'SpeechRecognitionEvent' }
+    },
+    {
+      pattern: { type: "error", targets: "SpeechRecognition" },
+      matched: 1,
+      change: { interface: "SpeechRecognitionErrorEvent" }
+    },
+    {
+      pattern: { type: "voiceschanged" },
+      matched: 1,
+      change: { interface: 'Event' }
+    },
+    {
+      pattern: { type: /^(start|end|pause|resume|mark|boundary)$/, targets: "SpeechSynthesisUtterance" },
+      matched: 6,
+      change: { interface: "SpeechSynthesisEvent" }
+    },
+    {
+      pattern: { type: "error", targets: "SpeechSynthesisUtterance" },
+      matched: 1,
+      change: { interface: "SpeechSynthesisErrorEvent" }
+    }
+
+  ],
   'uievents': [
     // per https://github.com/w3c/uievents/issues/186
     { pattern: { type: /^(load|unload|abort|error|select)$/ },
