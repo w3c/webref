@@ -19,7 +19,7 @@ const expandCrawlResult = require('reffy').expandCrawlResult;
 
 const trees = {
   dom: ["Window", "Document", /^.*Element$/, "Node"],
-  idb: ["IDBDatabase", "IDBTransaction", "IDBRequest"],
+  idb: ["IDBDatabase", "IDBTransaction", "IDBRequest", "IDBOpenDBRequest"],
   bt: ['Bluetooth', 'BluetoothDevice', 'BluetoothRemoteGATTService',
        'BluetoothRemoteGATTCharacteristic', 'BluetoothRemoteGATTDescriptor'],
   serial: ['Serial', 'SerialPort'],
@@ -91,6 +91,13 @@ const patches = {
       pattern: { type: /^change$/ },
       matched: 1,
       change: { interface: "CookieChangeEvent" }
+    }
+  ],
+  'css-font-loading-3': [
+    {
+      pattern: { type: /^loading/ },
+      matched: 3,
+      change: { interface: 'FontFaceSetLoadEvent' }
     }
   ],
   'css-nav-1': [
