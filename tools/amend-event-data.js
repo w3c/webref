@@ -210,7 +210,14 @@ const patches = {
     {
       pattern: { type: /^pointerlock(change|error)$/ },
       matched: 2,
-      change: { bubbles: false, interface: Event }
+      change: { bubbles: false, interface: "Event" }
+    }
+  ],
+  'presentation-api': [
+    {
+      pattern: { type: "message" },
+      matched: 1,
+      change: { interface: "MessageEvent", href: "https://html.spec.whatwg.org/multipage/indices.html#event-message", isExtension: true }
     }
   ],
   'uievents': [
