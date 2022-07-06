@@ -46,7 +46,7 @@ describe('The curated view of events extracts', function () {
         });
 
         for (const event of data.events) {
-          if (!event.type || event.isExtension) {
+          if (!event.type) {
             continue;
           }
 
@@ -56,7 +56,7 @@ describe('The curated view of events extracts', function () {
             assert(interfaces.has(event.interface), `Event interface "${event.interface}" is a mixin`);
           });
 
-          it(`contains valid target interfaces for event "${event.type}"`, () => {
+          it(`contains valid target interfaces for event "${event.type} ${event.href}"`, () => {
             assert(event.targets?.[0], 'No target interfaces');
             event.targets.map(({target, bubbles}) => {
               assert(interfaces.has(target) || mixins.has(target), `Unknown target interface "${target}"`);

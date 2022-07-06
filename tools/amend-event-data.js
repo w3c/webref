@@ -32,11 +32,11 @@ const patches = {
     },
     {
       add : {
-	interface: "IDBVersionChangeEvent",
-	bubbles: false,
-	type: "success",
-	targets: ["IDBOpenDBRequest"] ,
-	src: { "href": "https://w3c.github.io/IndexedDB/#dom-idbfactory-deletedatabase" }
+        interface: "IDBVersionChangeEvent",
+        bubbles: false,
+        type: "success",
+        targets: ["IDBOpenDBRequest"] ,
+        src: { "href": "https://w3c.github.io/IndexedDB/#dom-idbfactory-deletedatabase" }
       }
     }
   ],
@@ -118,6 +118,11 @@ const patches = {
     }
   ],
   'html': [
+    {
+      pattern: { href: 'https://w3c.github.io/uievents/#event-type-input' },
+      matched: 1,
+      change: { href: 'https://w3c.github.io/uievents/#input' }
+    },
     {
       pattern: { href: /dnd.html#event-dnd/ },
       matched: 7,
@@ -287,23 +292,23 @@ function applyEventPatches(spec) {
     }
     for (let event of spec.events) {
       const matches = Object.keys(patch.pattern).every(prop => {
-	if (patch.pattern[prop] === null) {
-	  return event[prop] === null || event[prop] === undefined;
-	} else if (typeof patch.pattern[prop] === "string") {
-	  return event[prop]?.toString() === patch.pattern[prop];
-	}
-	// Assume RegExp
-	return event[prop]?.toString()?.match(patch.pattern[prop]);
+        if (patch.pattern[prop] === null) {
+          return event[prop] === null || event[prop] === undefined;
+        } else if (typeof patch.pattern[prop] === "string") {
+          return event[prop]?.toString() === patch.pattern[prop];
+        }
+        // Assume RegExp
+        return event[prop]?.toString()?.match(patch.pattern[prop]);
       });
       if (matches) {
-	matched++;
-	if (patch.delete) {
-	  continue;
-	} else if (patch.change) {
-	  for (const target of Object.keys(patch.change)) {
-	    event[target] = patch.change[target];
-	  }
-	}
+        matched++;
+        if (patch.delete) {
+          continue;
+        } else if (patch.change) {
+          for (const target of Object.keys(patch.change)) {
+            event[target] = patch.change[target];
+          }
+        }
       }
       updatedEvents.push(event);
     }
@@ -333,7 +338,7 @@ function deepestInterfaceInTree(targets, parsedInterfaces) {
     if (currentDeepest) {
       const { depth: currentDeepestDepth } = getTreeInfo(currentDeepest, parsedInterfaces);
       if (depth > currentDeepestDepth) {
-	deepestInTrees[tree] = {target, bubbles};
+        deepestInTrees[tree] = {target, bubbles};
       }
     } else {
       deepestInTrees[tree] = {target, bubbles};
@@ -411,6 +416,24 @@ function cleanTargetInTrees(event, parsedInterfaces) {
   return false;
 }
 
+function extendEvent(event, spec, consolidatedEvents) {
+  const {event: extendedEvent, spec: extendedSpec} = consolidatedEvents.find(({event: e}) => e.href === event.href) || {};
+  if (!extendedEvent) {
+    // make this a fatal error
+    return `Found extended event with link ${event.href} in ${spec.shortname}, but did not find a matching original event`;
+  }
+  // Document potential additional targets
+  const newTargets = event.targets?.filter(t => !extendedEvent.targets.find(tt => tt.target === t.target));
+  if (newTargets) {
+    extendedEvent.targets = (extendedEvent.targets || []).concat(newTargets);
+  }
+  // Document the fact that the event has been extended
+  if (!extendedEvent.extendedIn) {
+    extendedEvent.extendedIn = [];
+  }
+  extendedEvent.extendedIn.push({ spec: spec.series.shortname, href: event.src?.href });
+  extendedSpec.needsSaving = true;
+}
 
 async function curateEvents(folder) {
   const rawIndex = await loadJSON(path.join(folder, 'index.json'));
@@ -422,21 +445,21 @@ async function curateEvents(folder) {
   index.results.forEach(s => {
     if (s.idlparsed) {
       if (s.idlparsed.idlNames) {
-	Object.values(s.idlparsed.idlNames).forEach(dfn => {
-	  if (dfn.type === "interface" && !dfn.partial) {
-	    parsedInterfaces.push(dfn);
-	  }
-	});
+        Object.values(s.idlparsed.idlNames).forEach(dfn => {
+          if (dfn.type === "interface" && !dfn.partial) {
+            parsedInterfaces.push(dfn);
+          }
+        });
       }
       if (s.idlparsed.idlExtendedNames) {
-	Object.keys(s.idlparsed.idlExtendedNames).forEach(n => {
+        Object.keys(s.idlparsed.idlExtendedNames).forEach(n => {
           s.idlparsed.idlExtendedNames[n].forEach(f => {
-	    if (f.type === "includes") {
-	      if (!mixins[f.includes]) mixins[f.includes] = [];
-	      mixins[f.includes].push(n);
-	    }
-	  });
-	});
+            if (f.type === "includes") {
+              if (!mixins[f.includes]) mixins[f.includes] = [];
+              mixins[f.includes].push(n);
+            }
+          });
+        });
       }
     }
   });
@@ -466,19 +489,36 @@ async function curateEvents(folder) {
     }
     errors = errors.concat(applyEventPatches(spec));
   }
+  const consolidatedEvents = [];
+  const eventsToConsolidate = [];
   for (const spec of index.results.filter(s => s.events)) {
+    const updatedEvents = [];
     for (const event of spec.events) {
       if (expandMixinTargets(event, mixins)) {
-	spec.needsSaving = true;
+        spec.needsSaving = true;
       }
       if (event.targets) {
-	setBubblingPerTarget(event, parsedInterfaces);
-	spec.needsSaving = true;
+        setBubblingPerTarget(event, parsedInterfaces);
+        spec.needsSaving = true;
       }
       if (cleanTargetInTrees(event, parsedInterfaces)) {
-	spec.needsSaving = true;
+        spec.needsSaving = true;
+      }
+      if (!event.isExtension) {
+        updatedEvents.push(event);
+        if (event.href) {
+          consolidatedEvents.push({ event, spec });
+        }
+      } else {
+        eventsToConsolidate.push({event, spec});
+        spec.needsSaving = true;
       }
     }
+    spec.events = updatedEvents;
+  }
+  for (let {event, spec} of eventsToConsolidate) {
+    const err = extendEvent(event, spec, consolidatedEvents);
+    if (err) { errors.push(err) ;}
   }
 
   for (const spec of index.results) {
