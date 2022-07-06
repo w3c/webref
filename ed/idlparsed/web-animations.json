@@ -22,7 +22,7 @@
     },
     "idlNames": {
       "AnimationTimeline": {
-        "fragment": "[Exposed=Window]\ninterface AnimationTimeline {\n    readonly attribute double? currentTime;\n    readonly attribute TimelinePhase phase;\n};",
+        "fragment": "[Exposed=Window]\ninterface AnimationTimeline {\n    readonly attribute double? currentTime;\n};",
         "type": "interface",
         "name": "AnimationTimeline",
         "inheritance": null,
@@ -37,21 +37,6 @@
               "nullable": true,
               "union": false,
               "idlType": "double"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "attribute",
-            "name": "phase",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "TimelinePhase"
             },
             "extAttrs": [],
             "special": "",
@@ -608,30 +593,6 @@
           {
             "type": "enum-value",
             "value": "persisted"
-          }
-        ],
-        "extAttrs": []
-      },
-      "TimelinePhase": {
-        "fragment": "enum TimelinePhase { \"inactive\", \"before\", \"active\", \"after\" };",
-        "type": "enum",
-        "name": "TimelinePhase",
-        "values": [
-          {
-            "type": "enum-value",
-            "value": "inactive"
-          },
-          {
-            "type": "enum-value",
-            "value": "before"
-          },
-          {
-            "type": "enum-value",
-            "value": "active"
-          },
-          {
-            "type": "enum-value",
-            "value": "after"
           }
         ],
         "extAttrs": []
@@ -2175,9 +2136,7 @@
       ]
     },
     "dependencies": {
-      "AnimationTimeline": [
-        "TimelinePhase"
-      ],
+      "AnimationTimeline": [],
       "DocumentTimelineOptions": [
         "DOMHighResTimeStamp"
       ],
