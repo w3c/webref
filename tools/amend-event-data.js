@@ -119,6 +119,11 @@ const patches = {
   ],
   'html': [
     {
+      pattern: { targets: "Elements" },
+      matched: 3,
+      change: { targets: null }
+    },
+    {
       pattern: { href: /dnd.html#event-dnd/ },
       matched: 7,
       change: { interface: 'DragEvent', bubbles: true }
