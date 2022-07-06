@@ -465,15 +465,19 @@ async function curateEvents(folder) {
   });
 
   async function saveEvents(spec) {
-    const events = Object.assign({
-      spec: {
-        title: spec.title,
-        url: spec.crawled
-      }
-    }, {events: spec.events});
-    const json = JSON.stringify(events, null, 2) + '\n';
     const pathname = path.join(folder, 'events', spec.shortname + '.json');
-    await fs.writeFile(pathname, json);
+    if (spec.events.length) {
+      const events = Object.assign({
+	spec: {
+          title: spec.title,
+          url: spec.crawled
+	}
+      }, {events: spec.events});
+      const json = JSON.stringify(events, null, 2) + '\n';
+      await fs.writeFile(pathname, json);
+    } else {
+      await fs.unlink(pathname);
+    }
   };
 
   let errors = [];
@@ -526,6 +530,16 @@ async function curateEvents(folder) {
       await saveEvents(spec);
     }
   }
+
+  // Update index removing specs with no events left
+  rawIndex.results.forEach(s => {
+    if (s.events && index.results.find(ss => ss.url === s.url).events.length === 0) {
+      delete s.events;
+    }
+  });
+  const json = JSON.stringify(rawIndex, null, 2) + '\n';
+  const pathname = path.join(folder, 'index.json');
+  await fs.writeFile(pathname, json);
 
   if (errors.length) {
     throw new Error("\n- " + errors.join("\n-"));
