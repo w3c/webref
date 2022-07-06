@@ -242,6 +242,36 @@ const patches = {
       matched: 5,
       change: { interface: "Event" }
     }
+  ],
+  'webaudio': [
+    {
+      pattern: { type: 'update' },
+      matched: 1,
+      change: { interface: 'AudioRenderCapacityEvent' }
+    },
+    {
+      pattern: { type: 'ended' },
+      matched: 1,
+      change: { interface: 'Event' }
+    },
+    {
+      pattern: { type: 'audioprocess' },
+      matched: 1,
+      change: { interface: 'AudioProcessingEvent' }
+    }
+  ],
+  'webcodecs': [
+    {
+      pattern: { type: "change" },
+      matched: 1,
+      delete: true
+    }
+  ],
+  'web-animations-1': [
+    { pattern: { type: /^(finish|cancel|remove)$/ },
+      matched: 3,
+      change: { interface: "AnimationPlaybackEvent"}
+    }
   ]
 };
 
