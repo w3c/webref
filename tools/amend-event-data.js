@@ -38,6 +38,12 @@ const patches = {
         targets: ["IDBOpenDBRequest"] ,
         src: { "href": "https://w3c.github.io/IndexedDB/#dom-idbfactory-deletedatabase" }
       }
+    },
+    // pending https://github.com/w3c/IndexedDB/pull/388
+    {
+      pattern: { interface: null},
+      matched: 2,
+      delete: true
     }
   ],
   'background-fetch': [
@@ -98,11 +104,29 @@ const patches = {
     }
   ],
   'css-scroll-snap-2': [
-    // see also https://github.com/w3c/csswg-drafts/issues/7442
+    // deleting until we have clarity on the events https://github.com/w3c/csswg-drafts/issues/7442
     {
       pattern: { type: /^snapChang(ed|ing)$/ },
       matched: 2,
-      change: { targets: ['HTMLElement'] }
+      delete: true
+    }
+  ],
+  'edit-context': [
+    {
+      pattern: { type: "beforeinput" },
+      matched: 1,
+      change: { isExtension: true, href: "https://w3c.github.io/uievents/#beforeinput"}
+    },
+    // pending https://github.com/w3c/edit-context/pull/30
+    {
+      pattern: { type: "textformatupdate"},
+      matched: 1,
+      delete: true
+    },
+    {
+      pattern: { type: "textformateupdate"},
+      matched: 1,
+      change: { type: "textformatupdate", targets: ["EditContext"] }
     }
   ],
   'fullscreen': [
@@ -180,6 +204,13 @@ const patches = {
       change: { bubbles: false}
     }
   ],
+  'import-maps': [
+    // pending https://github.com/w3c/browser-specs/pull/647
+    { pattern: { type: /.*/ },
+      matched: 2,
+      delete: true
+    }
+  ],
   'navigation-api': [
     {
       pattern: { type: "navigate" },
@@ -206,6 +237,26 @@ const patches = {
       pattern: { type: "message" },
       matched: 1,
       change: { interface: "MessageEvent", href: "https://html.spec.whatwg.org/multipage/indices.html#event-message", isExtension: true }
+    }
+  ],
+  'savedata': [
+    {
+      pattern: { type: "change" },
+      matched: 1,
+      change: { href: "https://wicg.github.io/netinfo/#handling-changes-to-the-underlying-connection", isExtension: true }
+    }
+  ],
+  'selection-api': [
+    // pending https://github.com/w3c/selection-api/pull/148
+    {
+      pattern: { type: "selectstart" },
+      matched: 1,
+      change: { interface: "Event", bubbles: true }
+    },
+    {
+      pattern: { type: "selectionchange" },
+      matched: 1,
+      change: { interface: "Event", bubbles: false }
     }
   ],
   'service-workers-1': [
@@ -248,6 +299,13 @@ const patches = {
     }
 
   ],
+  'svg-animations': [
+    {
+      pattern: { type: /.*/ },
+      matched: 3,
+      change: { interface: "TimeEvent", targets: ["SVGAnimationElement"], bubbles: false }
+    }
+  ],
   'uievents': [
     // per https://github.com/w3c/uievents/issues/186
     { pattern: { type: /^(load|unload|abort|error|select)$/ },
@@ -279,10 +337,33 @@ const patches = {
       delete: true
     }
   ],
+  'webmidi': [
+    // Pending https://github.com/WebAudio/web-midi-api/pull/234
+    { pattern: { targets: null, type: "statechange" },
+      matched: 1,
+      delete: true
+    },
+    {
+      pattern: { type: "statechange"},
+      matched: 1,
+      change: { targets: ["MIDIPort", "MIDIAccess" ] }
+    }
+  ],
   'web-animations-1': [
     { pattern: { type: /^(finish|cancel|remove)$/ },
       matched: 3,
       change: { interface: "AnimationPlaybackEvent"}
+    }
+  ],
+  'window-controls-overlay': [
+    // Pending https://github.com/WICG/window-controls-overlay/pull/60
+    { pattern: { type: "geometrychange" },
+      matched: 1,
+      delete: true
+    },
+    { pattern: { type: "ongeometrychange" },
+      matched: 1,
+      change: { type: "geometrychange", targets: ["WindowControlsOverlay"] }
     }
   ]
 };
