@@ -111,26 +111,23 @@ const patches = {
       delete: true
     }
   ],
+  // pending https://github.com/w3c/edit-context/pull/31
   'edit-context': [
-    // TODO: patchable
     {
       pattern: { type: "beforeinput" },
       matched: 1,
       change: { isExtension: true, href: "https://w3c.github.io/uievents/#beforeinput", interface: "InputEvent"}
     },
-    // TODO: patchable
     {
       pattern: { type: "textupdate" },
       matched: 1,
       change: { interface: "TextUpdateEvent" }
     },
-    // TODO: patchable
     {
       pattern: { type: "characterboundsupdate" },
       matched: 1,
       change: { interface: "CharacterBoundsUpdateEvent" }
     },
-    // pending https://github.com/w3c/edit-context/pull/30
     {
       pattern: { type: "textformatupdate"},
       matched: 1,
@@ -242,6 +239,14 @@ const patches = {
       pattern: { type: /^notification(click|close)$/ },
       matched: 2,
       change: { interface: "NotificationEvent" }
+    }
+  ],
+  // TODO: to-be-idenfied bug in reffy, see https://github.com/w3c/webref/commit/348b90a37475563d924f4da8156c290ca27d77e2#diff-3877beb696dd5561959ba0c9b8c1485e9c78fbed53b1ec6723ae68621940e0c7
+  'periodic-background-sync': [
+    {
+      pattern: { type: "periodicsync" },
+      matched: 1,
+      change: { interface: "PeriodicSyncEvent" }
     }
   ],
   'pointerlock-2': [
