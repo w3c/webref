@@ -390,8 +390,10 @@ function setBubblingPerTarget(event, parsedInterfaces) {
   // if the event is sent at targets in a tree, but isn't detected
   // on the root target, and no bubbling info is available,
   // assume it doesn't bubble
-  if (Object.values(detected).length && Object.values(detected).every(x => !x.root && x.nonroot )) {
-    event.bubbles = false;
+  if (Object.values(detected).length) {
+    if (!event.hasOwnProperty("bubbles") && Object.values(detected).every(x => !x.root && x.nonroot )) {
+      event.bubbles = false;
+    }
   }
   for (let iface of treeInterfaces) {
     if (event.hasOwnProperty("bubbles")) {
