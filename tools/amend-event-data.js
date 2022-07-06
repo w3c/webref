@@ -192,6 +192,20 @@ const patches = {
       change: { bubbles: false}
     }
   ],
+  'navigation-api': [
+    {
+      pattern: { type: "navigate" },
+      matched: 1,
+      change: { interface: "NavigateEvent" }
+    }
+  ],
+  'notifications': [
+    {
+      pattern: { type: /^notification(click|close)$/ },
+      matched: 2,
+      change: { interface: "NotificationEvent" }
+    }
+  ],
   'uievents': [
     // per https://github.com/w3c/uievents/issues/186
     { pattern: { type: /^(load|unload|abort|error|select)$/ },
