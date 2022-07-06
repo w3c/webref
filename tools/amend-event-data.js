@@ -206,6 +206,13 @@ const patches = {
       change: { interface: "NotificationEvent" }
     }
   ],
+  'pointerlock-2': [
+    {
+      pattern: { type: /^pointerlock(change|error)$/ },
+      matched: 2,
+      change: { bubbles: false, interface: Event }
+    }
+  ],
   'uievents': [
     // per https://github.com/w3c/uievents/issues/186
     { pattern: { type: /^(load|unload|abort|error|select)$/ },
