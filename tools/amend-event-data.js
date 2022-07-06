@@ -112,10 +112,23 @@ const patches = {
     }
   ],
   'edit-context': [
+    // TODO: patchable
     {
       pattern: { type: "beforeinput" },
       matched: 1,
       change: { isExtension: true, href: "https://w3c.github.io/uievents/#beforeinput", interface: "InputEvent"}
+    },
+    // TODO: patchable
+    {
+      pattern: { type: "textupdate" },
+      matched: 1,
+      change: { interface: "TextUpdateEvent" }
+    },
+    // TODO: patchable
+    {
+      pattern: { type: "characterboundsupdate" },
+      matched: 1,
+      change: { interface: "CharacterBoundsUpdateEvent" }
     },
     // pending https://github.com/w3c/edit-context/pull/30
     {
@@ -126,7 +139,7 @@ const patches = {
     {
       pattern: { type: "textformateupdate"},
       matched: 1,
-      change: { type: "textformatupdate", targets: ["EditContext"] }
+      change: { type: "textformatupdate", targets: ["EditContext"] , interface: "TextFormatUpdateEvent" }
     }
   ],
   'fullscreen': [
@@ -142,6 +155,7 @@ const patches = {
     }
   ],
   'html': [
+    // TODO: patchable
     {
       pattern: { type: "input" },
       matched: 1,
