@@ -115,7 +115,7 @@ const patches = {
     {
       pattern: { type: "beforeinput" },
       matched: 1,
-      change: { isExtension: true, href: "https://w3c.github.io/uievents/#beforeinput"}
+      change: { isExtension: true, href: "https://w3c.github.io/uievents/#beforeinput", interface: "InputEvent"}
     },
     // pending https://github.com/w3c/edit-context/pull/30
     {
@@ -142,6 +142,11 @@ const patches = {
     }
   ],
   'html': [
+    {
+      pattern: { type: "input" },
+      matched: 1,
+      change: { interface: "InputEvent"}
+    },
     {
       pattern: { targets: "Elements" },
       matched: 3,
@@ -191,7 +196,7 @@ const patches = {
     {
       pattern: { type: "slotchange"},
       matched: 1,
-      change: { targets: ["HTMLSlotElement" ]}
+      change: { targets: null}
     },
     {
       pattern: { type: "toggle"},
@@ -514,8 +519,11 @@ function extendEvent(event, spec, consolidatedEvents) {
     // make this a fatal error
     return `Found extended event with link ${event.href} in ${spec.shortname}, but did not find a matching original event`;
   }
+  if (extendedEvent.interface && event.interface && extendedEvent.interface !== event.interface) {
+    return `Found extended event with link ${event.href} in ${spec.shortname} set to use interface ${event.interface}, different from original event interface ${extendedEvent.interface} in ${extendedSpec.shortname}`;
+  }
   // Document potential additional targets
-  const newTargets = event.targets?.filter(t => !extendedEvent.targets.find(tt => tt.target === t.target));
+  const newTargets = event.targets?.filter(t => !extendedEvent.targets?.find(tt => tt.target === t.target));
   if (newTargets) {
     extendedEvent.targets = (extendedEvent.targets || []).concat(newTargets);
   }
