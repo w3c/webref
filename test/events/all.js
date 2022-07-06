@@ -15,12 +15,14 @@ const { getTreeInfo } = require('../../tools/utils.js');
 
 const curatedFolder = path.join(__dirname, '..', '..', 'curated');
 
+const interfaces = new Set();
+const usedEventInterfaces = new Set();
+
 describe('The curated view of events extracts', function () {
   before(async () => {
     // Create a set of well-known interfaces and an inheritance chain
     const allIdl = await idl.parseAll({ folder: path.join(curatedFolder, 'idl') });
     const parsedInterfaces = [];
-    const interfaces = new Set();
     const mixins = new Set();
     for (const [shortname, ast] of Object.entries(allIdl)) {
       for (const dfn of ast) {
@@ -49,7 +51,9 @@ describe('The curated view of events extracts', function () {
           if (!event.type) {
             continue;
           }
-
+	  if (event.interface) {
+	    usedEventInterfaces.add(event.interface);
+	  }
           it(`contains a valid interface for event "${event.type}"`, () => {
             assert(event.interface, 'No event interface');
             assert(interfaces.has(event.interface) || mixins.has(event.interface), `Unknown interface "${event.interface}"`);
@@ -72,8 +76,15 @@ describe('The curated view of events extracts', function () {
             });
           });
         }
+
       });
     }
+  });
+
+  it('references all the known *Event interfaces', () => {
+    const eventInterfaces = [...interfaces].filter(iface => iface.match(/Event$/));
+    console.log(eventInterfaces);
+    assert.deepEqual(eventInterfaces.filter(iface => !usedEventInterfaces.has(iface)), [], "Event interfaces are defined in the platform but not referenced from extracted events");
   });
 
   it('contains valid JSON and expected properties', async function () {
