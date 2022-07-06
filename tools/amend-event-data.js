@@ -293,7 +293,7 @@ function setBubblingPerTarget(event) {
     if (!detected[tree]) {
       detected[tree] = {root: false, nonroot: false};
     }
-    if (trees[tree].indexOf(iface) === 0) {
+    if (trees.getDepth(tree, iface) === 0) {
       // bubbling doesn't matter on the root interface
       updatedTargets.push({target: iface});
       detected[tree].root = true;
@@ -302,7 +302,10 @@ function setBubblingPerTarget(event) {
       detected[tree].nonroot = true;
     }
   }
-  if (Object.values(detected).length && Object.values(detected).every(x => x.root === false) && Object.values(detected).some(x => x.nonroot === true)) {
+  // if the event is sent at targets in a tree, but isn't detected
+  // on the root target, and no bubbling info is available,
+  // assume it doesn't bubble
+  if (Object.values(detected).length && Object.values(detected).every(x => !x.root && x.nonroot )) {
     event.bubbles = false;
   }
   for (let iface of treeInterfaces) {
