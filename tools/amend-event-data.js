@@ -119,11 +119,6 @@ const patches = {
   ],
   'html': [
     {
-      pattern: { href: 'https://w3c.github.io/uievents/#event-type-input' },
-      matched: 1,
-      change: { href: 'https://w3c.github.io/uievents/#input' }
-    },
-    {
       pattern: { href: /dnd.html#event-dnd/ },
       matched: 7,
       change: { interface: 'DragEvent', bubbles: true }
@@ -206,6 +201,13 @@ const patches = {
       pattern: { type: "message" },
       matched: 1,
       change: { interface: "MessageEvent", href: "https://html.spec.whatwg.org/multipage/indices.html#event-message", isExtension: true }
+    }
+  ],
+  'service-workers-1': [
+    {
+      pattern: { href: "https://wicg.github.io/BackgroundSync/spec/#sync" },
+      matched: 1,
+      change: { href: "https://wicg.github.io/background-sync/spec/#sync"}
     }
   ],
   'speech-api': [
@@ -419,7 +421,9 @@ function cleanTargetInTrees(event, parsedInterfaces) {
 }
 
 function extendEvent(event, spec, consolidatedEvents) {
-  const {event: extendedEvent, spec: extendedSpec} = consolidatedEvents.find(({event: e}) => e.href === event.href) || {};
+  const {event: extendedEvent, spec: extendedSpec} = consolidatedEvents.find(({event: e}) => e.href === event.href)
+	|| consolidatedEvents.find(({event: e, spec: s}) => { return event.href.startsWith(s.crawled) && e.type === event.type; })
+	|| {};
   if (!extendedEvent) {
     // make this a fatal error
     return `Found extended event with link ${event.href} in ${spec.shortname}, but did not find a matching original event`;
@@ -512,9 +516,7 @@ async function curateEvents(folder) {
       }
       if (!event.isExtension) {
         updatedEvents.push(event);
-        if (event.href) {
-          consolidatedEvents.push({ event, spec });
-        }
+        consolidatedEvents.push({ event, spec });
       } else {
         eventsToConsolidate.push({event, spec});
         spec.needsSaving = true;
