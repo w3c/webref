@@ -16,24 +16,7 @@ const util = require('util');
 const execFile = util.promisify(require('child_process').execFile);
 const loadJSON = require('./utils').loadJSON;
 const expandCrawlResult = require('reffy').expandCrawlResult;
-
-const trees = {
-  dom: ["Window", "Document", /^.*Element$/, "Node"],
-  idb: ["IDBDatabase", "IDBTransaction", "IDBRequest", "IDBOpenDBRequest"],
-  bt: ['Bluetooth', 'BluetoothDevice', 'BluetoothRemoteGATTService',
-       'BluetoothRemoteGATTCharacteristic', 'BluetoothRemoteGATTDescriptor'],
-  serial: ['Serial', 'SerialPort'],
-  match: function(iface) {
-    return Object.keys(this).find(t => 
-      Array.isArray(this[t]) && this[t].find(i => typeof i === "string" ? i === iface : iface.match(i))
-    );
-  },
-  getDepth: function(tree, iface) {
-    return this[tree].findIndex(i =>typeof i === "string" ? i === iface : iface.match(i));
-  }
-
-};
-
+const { getTreeInfo } = require('./utils.js');
 
 const patches = {
   'IndexedDB-3': [
@@ -306,18 +289,23 @@ function applyEventPatches(spec) {
   return errors;
 }
 
-function deepestInterfaceInTree(targets) {
+function deepestInterfaceInTree(targets, parsedInterfaces) {
   let deepestInTrees = {};
   let filteredTargets = [];
   for (let {target, bubbles} of targets) {
-    const tree = trees.match(target);
-    if (!tree) { // Not in a tree, we keep it in
-      filteredTargets.push({target, bubbles});
+    const treeInfo = getTreeInfo(target, parsedInterfaces);
+    if (!treeInfo) { // Not in a tree, we keep it in
+      filteredTargets.push({target});
       continue;
     }
-    const depth = trees.getDepth(tree, target);
+    const { tree, depth } = treeInfo;
     const currentDeepest = deepestInTrees[tree]?.target;
-    if (!currentDeepest || depth > trees.getDepth(tree, currentDeepest)) {
+    if (currentDeepest) {
+      const { depth: currentDeepestDepth } = getTreeInfo(currentDeepest, parsedInterfaces);
+      if (depth > currentDeepestDepth) {
+	deepestInTrees[tree] = {target, bubbles};
+      }
+    } else {
       deepestInTrees[tree] = {target, bubbles};
     }
   }
@@ -334,7 +322,7 @@ function expandMixinTargets(event, mixins) {
   return false;
 }
 
-function setBubblingPerTarget(event) {
+function setBubblingPerTarget(event, parsedInterfaces) {
   // if an event targets an interface in a tree
   // but the root of the tree wasn't detected as a target
   // we can assume bubbles is false
@@ -346,15 +334,16 @@ function setBubblingPerTarget(event) {
   const detected = {};
   const treeInterfaces = [];
   for (let iface of event.targets) {
-    const tree = trees.match(iface);
-    if (!tree) {
+    const treeInfo = getTreeInfo(iface, parsedInterfaces);
+    if (!treeInfo) {
       updatedTargets.push({target: iface});
       continue;
     }
+    const { tree, depth } = treeInfo;
     if (!detected[tree]) {
       detected[tree] = {root: false, nonroot: false};
     }
-    if (trees.getDepth(tree, iface) === 0) {
+    if (depth === 0) {
       // bubbling doesn't matter on the root interface
       updatedTargets.push({target: iface});
       detected[tree].root = true;
@@ -379,11 +368,11 @@ function setBubblingPerTarget(event) {
 }
 
 
-function cleanTargetInTrees(event) {
+function cleanTargetInTrees(event, parsedInterfaces) {
   // When several targets are attached to an event that bubbles
   // keep only the "deepest" target
   if (event.bubbles && event.targets?.length > 1) {
-    const filteredTargets = deepestInterfaceInTree(event.targets);
+    const filteredTargets = deepestInterfaceInTree(event.targets, parsedInterfaces);
     if (filteredTargets.length !== event.targets.length) {
       event.targets = filteredTargets;
       return true;
@@ -399,16 +388,26 @@ async function curateEvents(folder) {
 
   // Collect list of mixin interfaces
   const mixins = {};
+  const parsedInterfaces = [];
   index.results.forEach(s => {
-    if (s.idlparsed && s.idlparsed.idlExtendedNames) {
-      Object.keys(s.idlparsed.idlExtendedNames).forEach(n => {
-        s.idlparsed.idlExtendedNames[n].forEach(f => {
-	  if (f.type === "includes") {
-	    if (!mixins[f.includes]) mixins[f.includes] = [];
-	    mixins[f.includes].push(n);
+    if (s.idlparsed) {
+      if (s.idlparsed.idlNames) {
+	Object.values(s.idlparsed.idlNames).forEach(dfn => {
+	  if (dfn.type === "interface" && !dfn.partial) {
+	    parsedInterfaces.push(dfn);
 	  }
 	});
-      });
+      }
+      if (s.idlparsed.idlExtendedNames) {
+	Object.keys(s.idlparsed.idlExtendedNames).forEach(n => {
+          s.idlparsed.idlExtendedNames[n].forEach(f => {
+	    if (f.type === "includes") {
+	      if (!mixins[f.includes]) mixins[f.includes] = [];
+	      mixins[f.includes].push(n);
+	    }
+	  });
+	});
+      }
     }
   });
 
@@ -443,10 +442,10 @@ async function curateEvents(folder) {
 	spec.needsSaving = true;
       }
       if (event.targets) {
-	setBubblingPerTarget(event);
+	setBubblingPerTarget(event, parsedInterfaces);
 	spec.needsSaving = true;
       }
-      if (cleanTargetInTrees(event)) {
+      if (cleanTargetInTrees(event, parsedInterfaces)) {
 	spec.needsSaving = true;
       }
     }
