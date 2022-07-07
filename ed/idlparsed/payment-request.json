@@ -596,6 +596,33 @@
         "extAttrs": [],
         "partial": false
       },
+      "PaymentCompleteDetails": {
+        "fragment": "dictionary PaymentCompleteDetails {\n  object? data = null;\n};",
+        "type": "dictionary",
+        "name": "PaymentCompleteDetails",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "data",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "object"
+            },
+            "default": {
+              "type": "null"
+            },
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
       "PaymentComplete": {
         "fragment": "enum PaymentComplete {\n  \"fail\",\n  \"success\",\n  \"unknown\"\n};",
         "type": "enum",
@@ -617,7 +644,7 @@
         "extAttrs": []
       },
       "PaymentResponse": {
-        "fragment": "[SecureContext, Exposed=Window]\ninterface PaymentResponse : EventTarget  {\n  [Default] object toJSON();\n\n  readonly attribute DOMString requestId;\n  readonly attribute DOMString methodName;\n  readonly attribute object details;\n\n  [NewObject]\n  Promise<undefined> complete(optional PaymentComplete result = \"unknown\");\n  [NewObject]\n  Promise<undefined> retry(optional PaymentValidationErrors errorFields = {});\n};",
+        "fragment": "[SecureContext, Exposed=Window]\ninterface PaymentResponse : EventTarget  {\n  [Default] object toJSON();\n\n  readonly attribute DOMString requestId;\n  readonly attribute DOMString methodName;\n  readonly attribute object details;\n\n  [NewObject]\n  Promise<undefined> complete(\n    optional PaymentComplete result = \"unknown\",\n    optional PaymentCompleteDetails details = {}\n  );\n  [NewObject]\n  Promise<undefined> retry(optional PaymentValidationErrors errorFields = {});\n};",
         "type": "interface",
         "name": "PaymentResponse",
         "inheritance": "EventTarget",
@@ -725,6 +752,24 @@
                 "default": {
                   "type": "string",
                   "value": "unknown"
+                },
+                "optional": true,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "details",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "PaymentCompleteDetails"
+                },
+                "default": {
+                  "type": "dictionary"
                 },
                 "optional": true,
                 "variadic": false
@@ -1147,9 +1192,11 @@
       "PaymentItem": [
         "PaymentCurrencyAmount"
       ],
+      "PaymentCompleteDetails": [],
       "PaymentResponse": [
         "EventTarget",
         "PaymentComplete",
+        "PaymentCompleteDetails",
         "PaymentValidationErrors"
       ],
       "PaymentValidationErrors": [],

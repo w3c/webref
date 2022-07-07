@@ -6,7 +6,7 @@
       "title": "Payment Request API",
       "url": "https://www.w3.org/TR/payment-request/"
     },
-    "fragment": "[SecureContext, Exposed=Window]\ninterface PaymentResponse : EventTarget  {\n  [Default] object toJSON();\n\n  readonly attribute DOMString requestId;\n  readonly attribute DOMString methodName;\n  readonly attribute object details;\n\n  [NewObject]\n  Promise<undefined> complete(optional PaymentComplete result = \"unknown\");\n  [NewObject]\n  Promise<undefined> retry(optional PaymentValidationErrors errorFields = {});\n};",
+    "fragment": "[SecureContext, Exposed=Window]\ninterface PaymentResponse : EventTarget  {\n  [Default] object toJSON();\n\n  readonly attribute DOMString requestId;\n  readonly attribute DOMString methodName;\n  readonly attribute object details;\n\n  [NewObject]\n  Promise<undefined> complete(\n    optional PaymentComplete result = \"unknown\",\n    optional PaymentCompleteDetails details = {}\n  );\n  [NewObject]\n  Promise<undefined> retry(optional PaymentValidationErrors errorFields = {});\n};",
     "href": "https://w3c.github.io/payment-request/#dom-paymentresponse"
   },
   "extended": [],
@@ -42,7 +42,7 @@
         "heading": {
           "id": "paymentresponse-interface",
           "href": "https://w3c.github.io/payment-request/#paymentresponse-interface",
-          "title": "10. PaymentResponse interface"
+          "title": "11. PaymentResponse interface"
         },
         "definedIn": "heading"
       },
@@ -65,7 +65,7 @@
           "id": "requestid-attribute",
           "href": "https://w3c.github.io/payment-request/#requestid-attribute",
           "title": "requestId attribute",
-          "number": "10.4"
+          "number": "11.4"
         },
         "definedIn": "heading"
       },
@@ -88,7 +88,7 @@
           "id": "methodname-attribute",
           "href": "https://w3c.github.io/payment-request/#methodname-attribute",
           "title": "methodName attribute",
-          "number": "10.2"
+          "number": "11.2"
         },
         "definedIn": "heading"
       },
@@ -111,7 +111,7 @@
           "id": "details-attribute",
           "href": "https://w3c.github.io/payment-request/#details-attribute",
           "title": "details attribute",
-          "number": "10.3"
+          "number": "11.3"
         },
         "definedIn": "heading"
       },
@@ -120,7 +120,8 @@
         "href": "https://w3c.github.io/payment-request/#dom-paymentresponse-complete",
         "linkingText": [
           "complete()",
-          "complete(result)"
+          "complete(result)",
+          "complete(result, details)"
         ],
         "localLinkingText": [
           "PaymentResponse.complete",
@@ -137,7 +138,7 @@
           "id": "complete-method",
           "href": "https://w3c.github.io/payment-request/#complete-method",
           "title": "complete() method",
-          "number": "10.5"
+          "number": "11.5"
         },
         "definedIn": "heading"
       },
@@ -163,7 +164,7 @@
           "id": "retry-method",
           "href": "https://w3c.github.io/payment-request/#retry-method",
           "title": "retry() method",
-          "number": "10.1"
+          "number": "11.1"
         },
         "definedIn": "heading"
       }

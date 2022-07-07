@@ -59,6 +59,10 @@ dictionary PaymentItem {
   boolean pending = false;
 };
 
+dictionary PaymentCompleteDetails {
+  object? data = null;
+};
+
 enum PaymentComplete {
   "fail",
   "success",
@@ -74,7 +78,10 @@ interface PaymentResponse : EventTarget  {
   readonly attribute object details;
 
   [NewObject]
-  Promise<undefined> complete(optional PaymentComplete result = "unknown");
+  Promise<undefined> complete(
+    optional PaymentComplete result = "unknown",
+    optional PaymentCompleteDetails details = {}
+  );
   [NewObject]
   Promise<undefined> retry(optional PaymentValidationErrors errorFields = {});
 };
