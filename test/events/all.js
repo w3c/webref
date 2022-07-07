@@ -84,7 +84,11 @@ describe('The curated view of events extracts', function () {
   it('references all the known *Event interfaces', () => {
     const eventInterfaces = [...interfaces].filter(iface => iface.match(/Event$/));
     console.log(eventInterfaces);
-    assert.deepEqual(eventInterfaces.filter(iface => !usedEventInterfaces.has(iface)), [], "Event interfaces are defined in the platform but not referenced from extracted events");
+    assert.deepEqual(eventInterfaces.filter(iface => !usedEventInterfaces.has(iface)),
+		     [
+		       'CustomEvent', // not used by any spec
+		       'PaymentRequestUpdateEvent' // pending https://github.com/w3c/payment-request/issues/991
+		     ], "Event interfaces are defined in the platform but not referenced from extracted events");
   });
 
   it('contains valid JSON and expected properties', async function () {

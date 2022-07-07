@@ -38,12 +38,6 @@ const patches = {
         targets: ["IDBOpenDBRequest"] ,
         src: { "href": "https://w3c.github.io/IndexedDB/#dom-idbfactory-deletedatabase" }
       }
-    },
-    // pending https://github.com/w3c/IndexedDB/pull/388
-    {
-      pattern: { interface: null},
-      matched: 2,
-      delete: true
     }
   ],
   'background-fetch': [
@@ -66,6 +60,46 @@ const patches = {
       change: { interface: "Event" }
     }
   ],
+  // pending https://github.com/w3c/clipboard-apis/pull/181
+  // see also https://github.com/w3c/clipboard-apis/issues/74
+  'clipboard-apis': [
+    {
+      add:
+      { type: "clipboardchange",
+	interface: "ClipboardEvent",
+	targets: ["DocumentAndElementEventHandlers"],
+	bubbles: true,
+	href: "https://w3c.github.io/clipboard-apis/#clipboardchange"
+      }
+    },
+    {
+      add:
+      { type: "copy",
+	interface: "ClipboardEvent",
+	targets: ["DocumentAndElementEventHandlers"],
+	bubbles: true,
+	href: "https://w3c.github.io/clipboard-apis/#clipboardchange"
+      }
+    },
+    {
+      add:
+      { type: "cut",
+	interface: "ClipboardEvent",
+	targets: ["DocumentAndElementEventHandlers"],
+	bubbles: true,
+	href: "https://w3c.github.io/clipboard-apis/#clipboardchange"
+      }
+    },
+      {
+      add:
+      { type: "paste",
+	interface: "ClipboardEvent",
+	targets: ["DocumentAndElementEventHandlers"],
+	bubbles: true,
+	href: "https://w3c.github.io/clipboard-apis/#clipboardchange"
+      }
+      },
+  ],
   'compat': [
     {
       // https://compat.spec.whatwg.org/#windoworientation-interface says
@@ -80,6 +114,14 @@ const patches = {
       pattern: { type: /^change$/ },
       matched: 1,
       change: { interface: "CookieChangeEvent" }
+    }
+  ],
+  // pending https://github.com/w3c/csswg-drafts/pull/7466/files
+  'cssom-view-1': [
+    {
+      pattern: { type: "change" },
+      matched: 1,
+      change: { interface: 'MediaQueryListEvent' }
     }
   ],
   'css-font-loading-3': [
@@ -361,8 +403,35 @@ const patches = {
       delete: true
     }
   ],
+  // see also https://github.com/KhronosGroup/WebGL/issues/3349
+  'webgl1': [
+    { add: {
+      interface: "WebGLContextEvent",
+      bubbles: false,
+      type: "webglcontextlost",
+      targets: ["HTMLCanvasElement", "OffscreenCanvas"] ,
+      src: { "href": "https://www.khronos.org/registry/webgl/specs/latest/1.0/#CONTEXT_LOST" }
+    }
+    },
+    { add: {
+      interface: "WebGLContextEvent",
+      bubbles: false,
+      type: "webglcontextrestored",
+      targets: ["HTMLCanvasElement", "OffscreenCanvas"] ,
+      src: { "href": "https://www.khronos.org/registry/webgl/specs/latest/1.0/#CONTEXT_RESTORED" }
+    }
+    },
+    { add: {
+      interface: "WebGLContextEvent",
+      bubbles: false,
+      type: "webglcontextcreationerror",
+      targets: ["HTMLCanvasElement", "OffscreenCanvas"] ,
+      src: { "href": "https://www.khronos.org/registry/webgl/specs/latest/1.0/#CONTEXT_CREATION_ERROR" }
+    }
+    }
+  ],
+  // Pending https://github.com/WebAudio/web-midi-api/pull/234
   'webmidi': [
-    // Pending https://github.com/WebAudio/web-midi-api/pull/234
     { pattern: { targets: null, type: "statechange" },
       matched: 1,
       delete: true
@@ -370,7 +439,20 @@ const patches = {
     {
       pattern: { type: "statechange"},
       matched: 1,
-      change: { targets: ["MIDIPort", "MIDIAccess" ] }
+      change: { targets: ["MIDIPort", "MIDIAccess" ], interface: "MIDIConnectionEvent" }
+    },
+    {
+      pattern: { type: "midimessage"},
+      matched: 1,
+      change: { interface: "MIDIMessageEvent" }
+
+    }
+  ],
+  // pending https://github.com/immersive-web/layers/pull/285
+  'webxrlayers-1': [
+    { pattern: { type: "redraw" },
+      matched: 1,
+      change: { interface: "XRLayerEvent" }
     }
   ],
   'web-animations-1': [
@@ -387,7 +469,7 @@ const patches = {
     },
     { pattern: { type: "ongeometrychange" },
       matched: 1,
-      change: { type: "geometrychange", targets: ["WindowControlsOverlay"] }
+      change: { type: "geometrychange", targets: ["WindowControlsOverlay"], interface: 'WindowControlsOverlayGeometryChangeEvent' }
     }
   ]
 };
@@ -607,8 +689,7 @@ async function curateEvents(folder) {
       continue;
     }
     if (!spec.events) {
-      errors.push(`Spec with shortname ${specShortname} has no event to patch`);
-      continue;
+      spec.events = [];
     }
     errors = errors.concat(applyEventPatches(spec));
   }
