@@ -472,7 +472,7 @@
                   "title": "Pointer Events",
                   "url": "https://www.w3.org/TR/pointerevents3/"
                 },
-                "fragment": "partial interface mixin GlobalEventHandlers {\n    attribute EventHandler ongotpointercapture;\n    attribute EventHandler onlostpointercapture;\n    attribute EventHandler onpointerdown;\n    attribute EventHandler onpointermove;\n    [SecureContext] attribute EventHandler onpointerrawupdate;\n    attribute EventHandler onpointerup;\n    attribute EventHandler onpointercancel;\n    attribute EventHandler onpointerover;\n    attribute EventHandler onpointerout;\n    attribute EventHandler onpointerenter;\n    attribute EventHandler onpointerleave;\n};"
+                "fragment": "partial interface mixin GlobalEventHandlers {\n    attribute EventHandler onpointerover;\n    attribute EventHandler onpointerenter;\n    attribute EventHandler onpointerdown;\n    attribute EventHandler onpointermove;\n    [SecureContext] attribute EventHandler onpointerrawupdate;\n    attribute EventHandler onpointerup;\n    attribute EventHandler onpointercancel;\n    attribute EventHandler onpointerout;\n    attribute EventHandler onpointerleave;\n    attribute EventHandler ongotpointercapture;\n    attribute EventHandler onlostpointercapture;\n};"
               },
               {
                 "spec": {
@@ -3127,13 +3127,13 @@
     ],
     "https://www.w3.org/TR/pointerevents3/": [
       {
-        "id": "dom-globaleventhandlers-ongotpointercapture",
-        "href": "https://w3c.github.io/pointerevents/#dom-globaleventhandlers-ongotpointercapture",
+        "id": "dom-globaleventhandlers-onpointerover",
+        "href": "https://w3c.github.io/pointerevents/#dom-globaleventhandlers-onpointerover",
         "linkingText": [
-          "ongotpointercapture"
+          "onpointerover"
         ],
         "localLinkingText": [
-          "GlobalEventHandlers.ongotpointercapture"
+          "GlobalEventHandlers.onpointerover"
         ],
         "type": "attribute",
         "for": [
@@ -3150,13 +3150,13 @@
         "definedIn": "dt"
       },
       {
-        "id": "dom-globaleventhandlers-onlostpointercapture",
-        "href": "https://w3c.github.io/pointerevents/#dom-globaleventhandlers-onlostpointercapture",
+        "id": "dom-globaleventhandlers-onpointerenter",
+        "href": "https://w3c.github.io/pointerevents/#dom-globaleventhandlers-onpointerenter",
         "linkingText": [
-          "onlostpointercapture"
+          "onpointerenter"
         ],
         "localLinkingText": [
-          "GlobalEventHandlers.onlostpointercapture"
+          "GlobalEventHandlers.onpointerenter"
         ],
         "type": "attribute",
         "for": [
@@ -3239,7 +3239,7 @@
           "title": "Extensions to the GlobalEventHandlers mixin",
           "number": "6"
         },
-        "definedIn": "pre"
+        "definedIn": "dt"
       },
       {
         "id": "dom-globaleventhandlers-onpointerup",
@@ -3288,29 +3288,6 @@
         "definedIn": "dt"
       },
       {
-        "id": "dom-globaleventhandlers-onpointerover",
-        "href": "https://w3c.github.io/pointerevents/#dom-globaleventhandlers-onpointerover",
-        "linkingText": [
-          "onpointerover"
-        ],
-        "localLinkingText": [
-          "GlobalEventHandlers.onpointerover"
-        ],
-        "type": "attribute",
-        "for": [
-          "GlobalEventHandlers"
-        ],
-        "access": "public",
-        "informative": false,
-        "heading": {
-          "id": "extensions-to-the-globaleventhandlers-mixin",
-          "href": "https://w3c.github.io/pointerevents/#extensions-to-the-globaleventhandlers-mixin",
-          "title": "Extensions to the GlobalEventHandlers mixin",
-          "number": "6"
-        },
-        "definedIn": "dt"
-      },
-      {
         "id": "dom-globaleventhandlers-onpointerout",
         "href": "https://w3c.github.io/pointerevents/#dom-globaleventhandlers-onpointerout",
         "linkingText": [
@@ -3334,13 +3311,13 @@
         "definedIn": "dt"
       },
       {
-        "id": "dom-globaleventhandlers-onpointerenter",
-        "href": "https://w3c.github.io/pointerevents/#dom-globaleventhandlers-onpointerenter",
+        "id": "dom-globaleventhandlers-onpointerleave",
+        "href": "https://w3c.github.io/pointerevents/#dom-globaleventhandlers-onpointerleave",
         "linkingText": [
-          "onpointerenter"
+          "onpointerleave"
         ],
         "localLinkingText": [
-          "GlobalEventHandlers.onpointerenter"
+          "GlobalEventHandlers.onpointerleave"
         ],
         "type": "attribute",
         "for": [
@@ -3357,13 +3334,36 @@
         "definedIn": "dt"
       },
       {
-        "id": "dom-globaleventhandlers-onpointerleave",
-        "href": "https://w3c.github.io/pointerevents/#dom-globaleventhandlers-onpointerleave",
+        "id": "dom-globaleventhandlers-ongotpointercapture",
+        "href": "https://w3c.github.io/pointerevents/#dom-globaleventhandlers-ongotpointercapture",
         "linkingText": [
-          "onpointerleave"
+          "ongotpointercapture"
         ],
         "localLinkingText": [
-          "GlobalEventHandlers.onpointerleave"
+          "GlobalEventHandlers.ongotpointercapture"
+        ],
+        "type": "attribute",
+        "for": [
+          "GlobalEventHandlers"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "extensions-to-the-globaleventhandlers-mixin",
+          "href": "https://w3c.github.io/pointerevents/#extensions-to-the-globaleventhandlers-mixin",
+          "title": "Extensions to the GlobalEventHandlers mixin",
+          "number": "6"
+        },
+        "definedIn": "dt"
+      },
+      {
+        "id": "dom-globaleventhandlers-onlostpointercapture",
+        "href": "https://w3c.github.io/pointerevents/#dom-globaleventhandlers-onlostpointercapture",
+        "linkingText": [
+          "onlostpointercapture"
+        ],
+        "localLinkingText": [
+          "GlobalEventHandlers.onlostpointercapture"
         ],
         "type": "attribute",
         "for": [
