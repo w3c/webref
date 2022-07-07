@@ -220,7 +220,7 @@
         "partial": false
       },
       "SanitizerConfig": {
-        "fragment": "dictionary SanitizerConfig {\n  sequence<DOMString> allowElements;\n  sequence<DOMString> blockElements;\n  sequence<DOMString> dropElements;\n  AttributeMatchList allowAttributes;\n  AttributeMatchList dropAttributes;\n  boolean allowCustomElements;\n  boolean allowComments;\n};",
+        "fragment": "dictionary SanitizerConfig {\n  sequence<DOMString> allowElements;\n  sequence<DOMString> blockElements;\n  sequence<DOMString> dropElements;\n  AttributeMatchList allowAttributes;\n  AttributeMatchList dropAttributes;\n  boolean allowCustomElements;\n  boolean allowUnknownMarkup;\n  boolean allowComments;\n};",
         "type": "dictionary",
         "name": "SanitizerConfig",
         "inheritance": null,
@@ -344,6 +344,21 @@
           },
           {
             "type": "field",
+            "name": "allowUnknownMarkup",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
             "name": "allowComments",
             "extAttrs": [],
             "idlType": {
@@ -405,7 +420,7 @@
     "idlExtendedNames": {
       "Element": [
         {
-          "fragment": "partial interface Element {\n  undefined setHTML(DOMString input, optional SetHTMLOptions options = {});\n};",
+          "fragment": "[SecureContext]\npartial interface Element {\n  undefined setHTML(DOMString input, optional SetHTMLOptions options = {});\n};",
           "type": "interface",
           "name": "Element",
           "inheritance": null,
@@ -461,7 +476,14 @@
               "special": ""
             }
           ],
-          "extAttrs": [],
+          "extAttrs": [
+            {
+              "type": "extended-attribute",
+              "name": "SecureContext",
+              "rhs": null,
+              "arguments": []
+            }
+          ],
           "partial": true
         }
       ]

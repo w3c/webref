@@ -119,6 +119,84 @@
       "definedIn": "prose"
     },
     {
+      "id": "visual-viewport",
+      "href": "https://drafts.csswg.org/cssom-view/#visual-viewport",
+      "linkingText": [
+        "visual viewport"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://drafts.csswg.org/cssom-view/#terminology",
+        "title": "Terminology",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "layout-viewport",
+      "href": "https://drafts.csswg.org/cssom-view/#layout-viewport",
+      "linkingText": [
+        "layout viewport"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://drafts.csswg.org/cssom-view/#terminology",
+        "title": "Terminology",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "scale-factor",
+      "href": "https://drafts.csswg.org/cssom-view/#scale-factor",
+      "linkingText": [
+        "scale factor"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://drafts.csswg.org/cssom-view/#terminology",
+        "title": "Terminology",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "visualviewport-associated-document",
+      "href": "https://drafts.csswg.org/cssom-view/#visualviewport-associated-document",
+      "linkingText": [
+        "associated document"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "visualviewport"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://drafts.csswg.org/cssom-view/#terminology",
+        "title": "Terminology",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "svg-layout-box",
       "href": "https://drafts.csswg.org/cssom-view/#svg-layout-box",
       "linkingText": [
@@ -161,25 +239,6 @@
       "href": "https://drafts.csswg.org/cssom-view/#page-zoom",
       "linkingText": [
         "page zoom"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "zooming",
-        "href": "https://drafts.csswg.org/cssom-view/#zooming",
-        "title": "Zooming",
-        "number": "2.2"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "pinch-zoom",
-      "href": "https://drafts.csswg.org/cssom-view/#pinch-zoom",
-      "linkingText": [
-        "pinch zoom"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -953,6 +1012,27 @@
       "href": "https://drafts.csswg.org/cssom-view/#dom-window-screen",
       "linkingText": [
         "screen"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Window"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "extensions-to-the-window-interface",
+        "href": "https://drafts.csswg.org/cssom-view/#extensions-to-the-window-interface",
+        "title": "Extensions to the Window Interface",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-window-visualviewport",
+      "href": "https://drafts.csswg.org/cssom-view/#dom-window-visualviewport",
+      "linkingText": [
+        "visualViewport"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -4417,6 +4497,214 @@
       "definedIn": "prose"
     },
     {
+      "id": "visualviewport",
+      "href": "https://drafts.csswg.org/cssom-view/#visualviewport",
+      "linkingText": [
+        "VisualViewport"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-visualviewport-interface",
+        "href": "https://drafts.csswg.org/cssom-view/#the-visualviewport-interface",
+        "title": "The VisualViewport Interface",
+        "number": "12.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-visualviewport-offsetleft",
+      "href": "https://drafts.csswg.org/cssom-view/#dom-visualviewport-offsetleft",
+      "linkingText": [
+        "offsetLeft"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VisualViewport"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-visualviewport-interface",
+        "href": "https://drafts.csswg.org/cssom-view/#the-visualviewport-interface",
+        "title": "The VisualViewport Interface",
+        "number": "12.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-visualviewport-offsettop",
+      "href": "https://drafts.csswg.org/cssom-view/#dom-visualviewport-offsettop",
+      "linkingText": [
+        "offsetTop"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VisualViewport"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-visualviewport-interface",
+        "href": "https://drafts.csswg.org/cssom-view/#the-visualviewport-interface",
+        "title": "The VisualViewport Interface",
+        "number": "12.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-visualviewport-pageleft",
+      "href": "https://drafts.csswg.org/cssom-view/#dom-visualviewport-pageleft",
+      "linkingText": [
+        "pageLeft"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VisualViewport"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-visualviewport-interface",
+        "href": "https://drafts.csswg.org/cssom-view/#the-visualviewport-interface",
+        "title": "The VisualViewport Interface",
+        "number": "12.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-visualviewport-pagetop",
+      "href": "https://drafts.csswg.org/cssom-view/#dom-visualviewport-pagetop",
+      "linkingText": [
+        "pageTop"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VisualViewport"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-visualviewport-interface",
+        "href": "https://drafts.csswg.org/cssom-view/#the-visualviewport-interface",
+        "title": "The VisualViewport Interface",
+        "number": "12.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-visualviewport-width",
+      "href": "https://drafts.csswg.org/cssom-view/#dom-visualviewport-width",
+      "linkingText": [
+        "width"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VisualViewport"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-visualviewport-interface",
+        "href": "https://drafts.csswg.org/cssom-view/#the-visualviewport-interface",
+        "title": "The VisualViewport Interface",
+        "number": "12.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-visualviewport-height",
+      "href": "https://drafts.csswg.org/cssom-view/#dom-visualviewport-height",
+      "linkingText": [
+        "height"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VisualViewport"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-visualviewport-interface",
+        "href": "https://drafts.csswg.org/cssom-view/#the-visualviewport-interface",
+        "title": "The VisualViewport Interface",
+        "number": "12.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-visualviewport-scale",
+      "href": "https://drafts.csswg.org/cssom-view/#dom-visualviewport-scale",
+      "linkingText": [
+        "scale"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VisualViewport"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-visualviewport-interface",
+        "href": "https://drafts.csswg.org/cssom-view/#the-visualviewport-interface",
+        "title": "The VisualViewport Interface",
+        "number": "12.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-visualviewport-onresize",
+      "href": "https://drafts.csswg.org/cssom-view/#dom-visualviewport-onresize",
+      "linkingText": [
+        "onresize"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VisualViewport"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-visualviewport-interface",
+        "href": "https://drafts.csswg.org/cssom-view/#the-visualviewport-interface",
+        "title": "The VisualViewport Interface",
+        "number": "12.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-visualviewport-onscroll",
+      "href": "https://drafts.csswg.org/cssom-view/#dom-visualviewport-onscroll",
+      "linkingText": [
+        "onscroll"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VisualViewport"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-visualviewport-interface",
+        "href": "https://drafts.csswg.org/cssom-view/#the-visualviewport-interface",
+        "title": "The VisualViewport Interface",
+        "number": "12.1"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "document-run-the-resize-steps",
       "href": "https://drafts.csswg.org/cssom-view/#document-run-the-resize-steps",
       "linkingText": [
@@ -4433,7 +4721,7 @@
         "id": "resizing-viewports",
         "href": "https://drafts.csswg.org/cssom-view/#resizing-viewports",
         "title": "Resizing viewports",
-        "number": "12.1"
+        "number": "13.1"
       },
       "definedIn": "prose"
     },
@@ -4454,7 +4742,7 @@
         "id": "scrolling-events",
         "href": "https://drafts.csswg.org/cssom-view/#scrolling-events",
         "title": "Scrolling",
-        "number": "12.2"
+        "number": "13.2"
       },
       "definedIn": "prose"
     },
@@ -4475,7 +4763,7 @@
         "id": "scrolling-events",
         "href": "https://drafts.csswg.org/cssom-view/#scrolling-events",
         "title": "Scrolling",
-        "number": "12.2"
+        "number": "13.2"
       },
       "definedIn": "prose"
     },
@@ -4496,7 +4784,7 @@
         "id": "event-summary",
         "href": "https://drafts.csswg.org/cssom-view/#event-summary",
         "title": "Event summary",
-        "number": "12.3"
+        "number": "13.3"
       },
       "definedIn": "table"
     },
@@ -4518,7 +4806,7 @@
         "id": "event-summary",
         "href": "https://drafts.csswg.org/cssom-view/#event-summary",
         "title": "Event summary",
-        "number": "12.3"
+        "number": "13.3"
       },
       "definedIn": "table"
     },
@@ -4540,7 +4828,7 @@
         "id": "event-summary",
         "href": "https://drafts.csswg.org/cssom-view/#event-summary",
         "title": "Event summary",
-        "number": "12.3"
+        "number": "13.3"
       },
       "definedIn": "table"
     },
@@ -4559,7 +4847,7 @@
         "id": "event-summary",
         "href": "https://drafts.csswg.org/cssom-view/#event-summary",
         "title": "Event summary",
-        "number": "12.3"
+        "number": "13.3"
       },
       "definedIn": "table"
     }
