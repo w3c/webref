@@ -1,0 +1,41 @@
+{
+  "spec": {
+    "title": "Web MIDI API",
+    "url": "https://webaudio.github.io/web-midi-api/"
+  },
+  "spec-events": [
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://webaudio.github.io/web-midi-api/#midiaccess-interface"
+      },
+      "href": "https://webaudio.github.io/web-midi-api/#midiaccess-interface",
+      "type": "statechange",
+      "interface": "Event"
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://webaudio.github.io/web-midi-api/#midiport-interface"
+      },
+      "href": "https://webaudio.github.io/web-midi-api/#dom-midiport-onstatechange",
+      "type": "statechange",
+      "targets": [
+        "MIDIPort"
+      ],
+      "interface": "Event"
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://webaudio.github.io/web-midi-api/#midiinput-interface"
+      },
+      "href": "https://webaudio.github.io/web-midi-api/#midiinput-interface",
+      "type": "midimessage",
+      "interface": "Event",
+      "targets": [
+        "MIDIInput"
+      ]
+    }
+  ]
+}

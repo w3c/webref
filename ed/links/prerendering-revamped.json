@@ -1,0 +1,360 @@
+{
+  "spec": {
+    "title": "Prerendering Revamped",
+    "url": "https://wicg.github.io/nav-speculation/prerendering.html"
+  },
+  "links": {
+    "https://www.w3.org/community/wicg/": [],
+    "https://www.w3.org/community/about/agreements/cla/": [],
+    "https://www.w3.org/community/": [],
+    "https://html.spec.whatwg.org/": [
+      "linkTypes",
+      "the-link-element",
+      "external-resource-link",
+      "body-ok",
+      "fetch-and-process-the-linked-resource",
+      "browsing-context-connected",
+      "becomes-browsing-context-connected",
+      "attr-link-href",
+      "attr-link-referrerpolicy",
+      "parse-a-url",
+      "resulting-url-record",
+      "same-origin",
+      "delay-the-load-event",
+      "event-error",
+      "event-load",
+      "eventhandler",
+      "event-handler-idl-attributes",
+      "event-handler-event-type",
+      "handler-onreadystatechange",
+      "windows",
+      "browsing-context",
+      "concept-document-bc",
+      "session-history",
+      "navigate",
+      "concept-relevant-global",
+      "window",
+      "concept-document-window",
+      "prompt-to-unload-a-document",
+      "active-document",
+      "creating-a-new-top-level-browsing-context",
+      "a-browsing-context-is-discarded",
+      "source-browsing-context",
+      "top-level-browsing-context",
+      "history-handling-behavior",
+      "concept-navigate-mature",
+      "initialise-the-document-object",
+      "abort-a-document",
+      "refused-to-allow-the-document-to-be-unloaded",
+      "cross-origin-opener-policy-2",
+      "in-parallel",
+      "concept-origin",
+      "list-of-the-descendant-browsing-contexts",
+      "queue-a-global-task",
+      "networking-task-source",
+      "active-window",
+      "event-loop",
+      "bcg-remove",
+      "nested-browsing-context",
+      "creating-a-new-nested-browsing-context",
+      "process-a-navigate-fetch",
+      "bc-container",
+      "traverse-the-history",
+      "she-document",
+      "url-and-history-update-steps",
+      "process-a-navigate-response",
+      "navigation-params-request",
+      "environment-discarding-steps",
+      "navigation-params-reserved-environment",
+      "process-a-navigate-url-scheme",
+      "the-worker's-lifetime",
+      "active-needed-worker",
+      "concept-WorkerGlobalScope-owner-set",
+      "fully-active",
+      "discard-a-document",
+      "visibility-state",
+      "tlbc-system-focus",
+      "script-closable",
+      "auxiliary-browsing-context",
+      "downloading-hyperlinks",
+      "cannot-show-simple-dialogs",
+      "window-bc",
+      "dom-print",
+      "event-loop-for-spec-authors",
+      "concept-relevant-realm",
+      "concept-realm-global",
+      "dom-broadcastchannel-postmessage",
+      "dedicatedworkerglobalscope",
+      "current-global-object",
+      "transient-activation",
+      "active-sandboxing-flag-set",
+      "sandboxed-orientation-lock-browsing-context-flag",
+      "allowed-to-use",
+      "relevant-settings-object",
+      "secure-context",
+      "playing-the-media-resource",
+      "current-playback-position",
+      "htmlmediaelement",
+      "sticky-activation",
+      "dom-open",
+      "event-beforeunload"
+    ],
+    "https://dom.spec.whatwg.org/": [
+      "concept-node-document",
+      "concept-document-origin",
+      "document",
+      "concept-node",
+      "concept-event-fire",
+      "concept-document"
+    ],
+    "https://url.spec.whatwg.org/": [
+      "concept-url-scheme",
+      "concept-url-origin",
+      "concept-url"
+    ],
+    "https://fetch.spec.whatwg.org/": [
+      "http-scheme",
+      "concept-request",
+      "concept-request-url",
+      "concept-request-referrer-policy",
+      "concept-fetch",
+      "concept-request-method",
+      "concept-response-location-url",
+      "concept-network-error",
+      "concept-request-current-url",
+      "concept-response-status"
+    ],
+    "https://infra.spec.whatwg.org/": [
+      "list-contain",
+      "list",
+      "ordered-map",
+      "tuple",
+      "list-item",
+      "user-agent",
+      "assert",
+      "map-exists",
+      "map-remove",
+      "list-extend",
+      "list-iterate",
+      "iteration-break",
+      "list-empty"
+    ],
+    "https://w3c.github.io/webappsec-referrer-policy/": [
+      "referrer-policy"
+    ],
+    "https://webidl.spec.whatwg.org/": [
+      "idl-boolean",
+      "this",
+      "idl-promise",
+      "dfn-regular-operation",
+      "dfn-static-operation",
+      "dfn-return-type",
+      "dfn-promise-type",
+      "idl-undefined",
+      "dfn-exposure-set",
+      "a-new-promise",
+      "resolve",
+      "a-promise-rejected-with",
+      "securityerror",
+      "idl-DOMException",
+      "reject",
+      "notsupportederror"
+    ],
+    "https://www.w3.org/TR/hr-time-2/": [
+      "dom-domhighrestimestamp"
+    ],
+    "https://www.w3.org/TR/hr-time-3/": [
+      "dfn-unsafe-shared-current-time",
+      "dfn-relative-high-resolution-time"
+    ],
+    "https://github.com/whatwg/html/pull/6315": [],
+    "https://whatpr.org/html/6315/history.html": [
+      "traversable-navigable"
+    ],
+    "https://github.com/shivanigithub/fenced-frame": [],
+    "https://w3c.github.io/webappsec-csp/": [
+      "should-block-navigation-request",
+      "navigate-to"
+    ],
+    "https://www.w3.org/TR/navigation-timing-2/": [
+      "dom-performancenavigationtiming"
+    ],
+    "https://w3c.github.io/navigation-timing/": [
+      "dfn-current-document"
+    ],
+    "https://tc39.es/ecma262/": [
+      "current-realm"
+    ],
+    "https://w3c.github.io/ServiceWorker/": [
+      "dom-serviceworkerregistration-update",
+      "dom-serviceworkerregistration-unregister",
+      "dom-serviceworkercontainer-register",
+      "dom-serviceworker-postmessage",
+      "dom-serviceworker-postmessage-message-options"
+    ],
+    "https://w3c.github.io/geolocation-api/": [
+      "getcurrentposition-method",
+      "watchposition-method",
+      "dfn-watch-process",
+      "clearwatch-method"
+    ],
+    "https://wicg.github.io/serial/": [
+      "dom-serial-requestPort",
+      "dom-serial-getports"
+    ],
+    "https://notifications.spec.whatwg.org/": [
+      "dom-notification-requestpermission",
+      "dom-notification-notification",
+      "dom-notification-permission",
+      "get-the-notifications-permission-state"
+    ],
+    "https://webaudio.github.io/web-midi-api/": [
+      "dom-navigator-requestmidiaccess"
+    ],
+    "https://wicg.github.io/idle-detection/": [
+      "api-idledetector-start",
+      "api-idledetector-requestpermission"
+    ],
+    "https://w3c.github.io/sensors/": [
+      "dom-sensor-start",
+      "dom-sensor-state-slot",
+      "dom-sensor-stop"
+    ],
+    "https://w3c.github.io/web-nfc/": [
+      "dom-ndefreader-write",
+      "dom-ndefreader-scan"
+    ],
+    "https://w3c.github.io/battery/": [
+      "dom-navigator-getbattery",
+      "dfn-battery-promise"
+    ],
+    "https://w3c.github.io/screen-orientation/": [
+      "dfn-apply-an-orientation-lock",
+      "dfn-pre-lock-conditions",
+      "dom-screenorientation-unlock",
+      "dom-screenorientation-lock"
+    ],
+    "https://w3c.github.io/gamepad/": [
+      "dom-navigator-getgamepads",
+      "dfn-gamepadconnected",
+      "dfn-gamepaddisconnected",
+      "dom-gamepadevent",
+      "dom-gamepadevent-gamepad",
+      "dom-gamepad"
+    ],
+    "https://w3c.github.io/encrypted-media/": [
+      "requestMediaKeySystemAccess"
+    ],
+    "https://www.w3.org/TR/mediacapture-streams/": [
+      "dom-navigator-getusermedia",
+      "dom-mediadevices-getusermedia",
+      "dom-mediadevices-enumeratedevices",
+      "dom-mediadevices"
+    ],
+    "https://w3c.github.io/mediacapture-main/": [
+      "dfn-device-change-notification-steps"
+    ],
+    "https://w3c.github.io/mediacapture-output/": [
+      "dom-mediadevices-selectaudiooutput"
+    ],
+    "https://w3c.github.io/push-api/": [
+      "dom-pushmanager-subscribe"
+    ],
+    "https://wicg.github.io/background-fetch/": [
+      "dom-backgroundfetchmanager-fetch"
+    ],
+    "https://storage.spec.whatwg.org/": [
+      "dom-storagemanager-persist"
+    ],
+    "https://w3c.github.io/mediacapture-screen-share/": [
+      "dom-mediadevices-getdisplaymedia"
+    ],
+    "https://wicg.github.io/webusb/": [
+      "dom-usb-getdevices",
+      "dom-usb-requestdevice"
+    ],
+    "https://webbluetoothcg.github.io/web-bluetooth/": [
+      "dom-bluetooth-getdevices",
+      "dom-bluetooth-requestdevice"
+    ],
+    "https://wicg.github.io/webhid/": [
+      "dom-hid-getdevices",
+      "dom-hid-requestdevice"
+    ],
+    "https://immersive-web.github.io/webxr/": [
+      "dom-xrsystem-requestsession"
+    ],
+    "https://w3c.github.io/webappsec-credential-management/": [
+      "dom-credentialscontainer-get",
+      "dom-credentialscontainer-store",
+      "dom-credentialscontainer-create"
+    ],
+    "https://wicg.github.io/speech-api/": [
+      "dom-speechsynthesis-speak",
+      "dom-speechsynthesis-cancel",
+      "dom-speechsynthesis-pause",
+      "dom-speechsynthesis-resume",
+      "dom-speechrecognition-start",
+      "dom-speechrecognition-stop",
+      "dom-speechrecognition-abort"
+    ],
+    "https://fullscreen.spec.whatwg.org/": [
+      "dom-element-requestfullscreen"
+    ],
+    "https://wicg.github.io/keyboard-lock/": [
+      "dom-keyboard-lock"
+    ],
+    "https://www.w3.org/TR/payment-request/": [
+      "dom-paymentrequest-show"
+    ],
+    "https://w3c.github.io/presentation-api/": [
+      "dom-presentationrequest-start"
+    ],
+    "https://wicg.github.io/file-system-access/": [
+      "dom-window-showopenfilepicker",
+      "dom-window-showsavefilepicker",
+      "dom-window-showdirectorypicker"
+    ],
+    "https://www.w3.org/TR/web-share/": [
+      "dom-navigator-share"
+    ],
+    "https://w3c.github.io/pointerlock/": [
+      "dfn-requestpointerlock-pointerlockoptions-options"
+    ],
+    "https://w3c.github.io/clipboard-apis/": [
+      "dom-clipboard-read",
+      "dom-clipboard-readtext",
+      "dom-clipboard-write",
+      "dom-clipboard-writetext"
+    ],
+    "https://w3c.github.io/screen-wake-lock/": [
+      "the-request-method"
+    ],
+    "https://w3c.github.io/picture-in-picture/": [
+      "request-picture-in-picture-algorithm",
+      "dom-htmlvideoelement-autopictureinpicture",
+      "dom-htmlvideoelement-requestpictureinpicture"
+    ],
+    "https://www.w3.org/TR/audio-output/": [],
+    "https://www.w3.org/TR/clipboard-apis/": [],
+    "https://www.w3.org/TR/credential-management-1/": [],
+    "https://www.w3.org/TR/CSP3/": [],
+    "https://www.w3.org/TR/encrypted-media/": [],
+    "https://www.w3.org/TR/gamepad/": [],
+    "https://www.w3.org/TR/generic-sensor/": [],
+    "https://www.w3.org/TR/geolocation/": [],
+    "https://www.w3.org/TR/navigation-timing/": [],
+    "https://www.w3.org/TR/picture-in-picture/": [],
+    "https://www.w3.org/TR/pointerlock/": [],
+    "https://www.w3.org/TR/presentation-api/": [],
+    "https://www.w3.org/TR/push-api/": [],
+    "https://www.w3.org/TR/referrer-policy/": [],
+    "https://www.w3.org/TR/screen-capture/": [],
+    "https://www.w3.org/TR/screen-orientation/": [],
+    "https://www.w3.org/TR/screen-wake-lock/": [],
+    "https://www.w3.org/TR/service-workers-1/": [],
+    "https://www.w3.org/TR/webmidi/": [],
+    "https://www.w3.org/TR/webxr/": [],
+    "https://www.w3.org/TR/resource-hints/": []
+  }
+}

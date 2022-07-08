@@ -13,3 +13,8 @@ interface PerformanceNavigationTiming : PerformanceResourceTiming {
     readonly        attribute unsigned short       redirectCount;
     [Default] object toJSON();
 };
+
+// Source: Prerendering Revamped (https://wicg.github.io/nav-speculation/prerendering.html)
+partial interface PerformanceNavigationTiming {
+    readonly attribute DOMHighResTimeStamp activationStart;
+};
