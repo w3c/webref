@@ -89,6 +89,13 @@
     },
     {
       "spec": {
+        "title": "Prerendering Revamped",
+        "url": "https://wicg.github.io/nav-speculation/prerendering.html"
+      },
+      "fragment": "partial interface Document {\n    readonly attribute boolean prerendering;\n\n    // Under \"special event handler IDL attributes that only apply to Document objects\"\n    attribute EventHandler onprerenderingchange;\n};"
+    },
+    {
+      "spec": {
         "title": "Page Lifecycle",
         "url": "https://wicg.github.io/page-lifecycle/"
       },
@@ -5337,6 +5344,50 @@
           "href": "https://privacycg.github.io/storage-access/#the-document-object",
           "title": "Changes to Document",
           "number": "3.2"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://wicg.github.io/nav-speculation/prerendering.html": [
+      {
+        "id": "dom-document-prerendering",
+        "href": "https://wicg.github.io/nav-speculation/prerendering.html#dom-document-prerendering",
+        "linkingText": [
+          "prerendering"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Document"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "prerendering-bcs-subsection",
+          "href": "https://wicg.github.io/nav-speculation/prerendering.html#prerendering-bcs-subsection",
+          "title": "Prerendering browsing contexts",
+          "number": "3.2"
+        },
+        "definedIn": "prose"
+      },
+      {
+        "id": "dom-document-onprerenderingchange",
+        "href": "https://wicg.github.io/nav-speculation/prerendering.html#dom-document-onprerenderingchange",
+        "linkingText": [
+          "onprerenderingchange"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "Document"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "document-prerendering",
+          "href": "https://wicg.github.io/nav-speculation/prerendering.html#document-prerendering",
+          "title": "Extensions to the Document interface",
+          "number": "3.1"
         },
         "definedIn": "prose"
       }

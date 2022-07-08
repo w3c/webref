@@ -6,7 +6,7 @@
       "title": "HTML Sanitizer API",
       "url": "https://wicg.github.io/sanitizer-api/"
     },
-    "fragment": "dictionary SanitizerConfig {\n  sequence<DOMString> allowElements;\n  sequence<DOMString> blockElements;\n  sequence<DOMString> dropElements;\n  AttributeMatchList allowAttributes;\n  AttributeMatchList dropAttributes;\n  boolean allowCustomElements;\n  boolean allowComments;\n};",
+    "fragment": "dictionary SanitizerConfig {\n  sequence<DOMString> allowElements;\n  sequence<DOMString> blockElements;\n  sequence<DOMString> dropElements;\n  AttributeMatchList allowAttributes;\n  AttributeMatchList dropAttributes;\n  boolean allowCustomElements;\n  boolean allowUnknownMarkup;\n  boolean allowComments;\n};",
     "href": "https://wicg.github.io/sanitizer-api/#dictdef-sanitizerconfig"
   },
   "extended": [],
@@ -143,6 +143,27 @@
         "href": "https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-allowcustomelements",
         "linkingText": [
           "allowCustomElements"
+        ],
+        "localLinkingText": [],
+        "type": "dict-member",
+        "for": [
+          "SanitizerConfig"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "config",
+          "href": "https://wicg.github.io/sanitizer-api/#config",
+          "title": "The Configuration Dictionary",
+          "number": "2.3"
+        },
+        "definedIn": "pre"
+      },
+      {
+        "id": "dom-sanitizerconfig-allowunknownmarkup",
+        "href": "https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-allowunknownmarkup",
+        "linkingText": [
+          "allowUnknownMarkup"
         ],
         "localLinkingText": [],
         "type": "dict-member",

@@ -9,7 +9,15 @@
     "fragment": "[Exposed=Window]\ninterface PerformanceNavigationTiming : PerformanceResourceTiming {\n    readonly        attribute DOMHighResTimeStamp  unloadEventStart;\n    readonly        attribute DOMHighResTimeStamp  unloadEventEnd;\n    readonly        attribute DOMHighResTimeStamp  domInteractive;\n    readonly        attribute DOMHighResTimeStamp  domContentLoadedEventStart;\n    readonly        attribute DOMHighResTimeStamp  domContentLoadedEventEnd;\n    readonly        attribute DOMHighResTimeStamp  domComplete;\n    readonly        attribute DOMHighResTimeStamp  loadEventStart;\n    readonly        attribute DOMHighResTimeStamp  loadEventEnd;\n    readonly        attribute NavigationTimingType type;\n    readonly        attribute unsigned short       redirectCount;\n    [Default] object toJSON();\n};",
     "href": "https://w3c.github.io/navigation-timing/#dom-performancenavigationtiming"
   },
-  "extended": [],
+  "extended": [
+    {
+      "spec": {
+        "title": "Prerendering Revamped",
+        "url": "https://wicg.github.io/nav-speculation/prerendering.html"
+      },
+      "fragment": "partial interface PerformanceNavigationTiming {\n    readonly attribute DOMHighResTimeStamp activationStart;\n};"
+    }
+  ],
   "inheritance": {
     "name": "PerformanceResourceTiming",
     "type": "interface",
@@ -296,6 +304,29 @@
           "href": "https://w3c.github.io/navigation-timing/#sec-PerformanceNavigationTiming",
           "title": "The PerformanceNavigationTiming interface",
           "number": "3.3"
+        },
+        "definedIn": "prose"
+      }
+    ],
+    "https://wicg.github.io/nav-speculation/prerendering.html": [
+      {
+        "id": "dom-performancenavigationtiming-activationstart",
+        "href": "https://wicg.github.io/nav-speculation/prerendering.html#dom-performancenavigationtiming-activationstart",
+        "linkingText": [
+          "activationStart"
+        ],
+        "localLinkingText": [],
+        "type": "attribute",
+        "for": [
+          "PerformanceNavigationTiming"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "performance-navigation-timing-extension",
+          "href": "https://wicg.github.io/nav-speculation/prerendering.html#performance-navigation-timing-extension",
+          "title": "Extensions to the PerformanceNavigationTiming interface",
+          "number": "5.3"
         },
         "definedIn": "prose"
       }
