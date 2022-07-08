@@ -10,7 +10,7 @@
     },
     "idlNames": {
       "ARIAMixin": {
-        "fragment": "interface mixin ARIAMixin {\n  attribute DOMString? role;\n\n  attribute DOMString? ariaAtomic;\n  attribute DOMString? ariaAutoComplete;\n  attribute DOMString? ariaBusy;\n  attribute DOMString? ariaChecked;\n  attribute DOMString? ariaColCount;\n  attribute DOMString? ariaColIndex;\n  attribute DOMString? ariaColIndexText;\n  attribute DOMString? ariaColSpan;\n\n  attribute DOMString? ariaCurrent;\n\n  attribute DOMString? ariaDescription;\n\n  attribute DOMString? ariaDisabled;\n\n  attribute DOMString? ariaExpanded;\n\n  attribute DOMString? ariaHasPopup;\n  attribute DOMString? ariaHidden;\n  attribute DOMString? ariaInvalid;\n  attribute DOMString? ariaKeyShortcuts;\n  attribute DOMString? ariaLabel;\n\n  attribute DOMString? ariaLevel;\n  attribute DOMString? ariaLive;\n  attribute DOMString? ariaModal;\n  attribute DOMString? ariaMultiLine;\n  attribute DOMString? ariaMultiSelectable;\n  attribute DOMString? ariaOrientation;\n\n  attribute DOMString? ariaPlaceholder;\n  attribute DOMString? ariaPosInSet;\n  attribute DOMString? ariaPressed;\n  attribute DOMString? ariaReadOnly;\n\n  attribute DOMString? ariaRequired;\n  attribute DOMString? ariaRoleDescription;\n  attribute DOMString? ariaRowCount;\n  attribute DOMString? ariaRowIndex;\n  attribute DOMString? ariaRowIndexText;\n  attribute DOMString? ariaRowSpan;\n  attribute DOMString? ariaSelected;\n  attribute DOMString? ariaSetSize;\n  attribute DOMString? ariaSort;\n  attribute DOMString? ariaValueMax;\n  attribute DOMString? ariaValueMin;\n  attribute DOMString? ariaValueNow;\n  attribute DOMString? ariaValueText;\n};",
+        "fragment": "interface mixin ARIAMixin {\n  attribute DOMString? role;\n  attribute Element? ariaActiveDescendantElement;\n  attribute DOMString? ariaAtomic;\n  attribute DOMString? ariaAutoComplete;\n  attribute DOMString? ariaBusy;\n  attribute DOMString? ariaChecked;\n  attribute DOMString? ariaColCount;\n  attribute DOMString? ariaColIndex;\n  attribute DOMString? ariaColIndexText;\n  attribute DOMString? ariaColSpan;\n  attribute FrozenArray<Element>? ariaControlsElements;\n  attribute DOMString? ariaCurrent;\n  attribute FrozenArray<Element>? ariaDescribedByElements;\n  attribute DOMString? ariaDescription;\n  attribute FrozenArray<Element>? ariaDetailsElements;\n  attribute DOMString? ariaDisabled;\n  attribute Element? ariaErrorMessageElement;\n  attribute DOMString? ariaExpanded;\n  attribute FrozenArray<Element>? ariaFlowToElements;\n  attribute DOMString? ariaHasPopup;\n  attribute DOMString? ariaHidden;\n  attribute DOMString? ariaInvalid;\n  attribute DOMString? ariaKeyShortcuts;\n  attribute DOMString? ariaLabel;\n  attribute FrozenArray<Element>? ariaLabelledByElements;\n  attribute DOMString? ariaLevel;\n  attribute DOMString? ariaLive;\n  attribute DOMString? ariaModal;\n  attribute DOMString? ariaMultiLine;\n  attribute DOMString? ariaMultiSelectable;\n  attribute DOMString? ariaOrientation;\n  attribute FrozenArray<Element>? ariaOwnsElements;\n  attribute DOMString? ariaPlaceholder;\n  attribute DOMString? ariaPosInSet;\n  attribute DOMString? ariaPressed;\n  attribute DOMString? ariaReadOnly;\n\n  attribute DOMString? ariaRequired;\n  attribute DOMString? ariaRoleDescription;\n  attribute DOMString? ariaRowCount;\n  attribute DOMString? ariaRowIndex;\n  attribute DOMString? ariaRowIndexText;\n  attribute DOMString? ariaRowSpan;\n  attribute DOMString? ariaSelected;\n  attribute DOMString? ariaSetSize;\n  attribute DOMString? ariaSort;\n  attribute DOMString? ariaValueMax;\n  attribute DOMString? ariaValueMin;\n  attribute DOMString? ariaValueNow;\n  attribute DOMString? ariaValueText;\n};",
         "type": "interface mixin",
         "name": "ARIAMixin",
         "inheritance": null,
@@ -25,6 +25,21 @@
               "nullable": true,
               "union": false,
               "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "ariaActiveDescendantElement",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "Element"
             },
             "extAttrs": [],
             "special": "",
@@ -152,6 +167,30 @@
           },
           {
             "type": "attribute",
+            "name": "ariaControlsElements",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "FrozenArray",
+              "nullable": true,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "Element"
+                }
+              ]
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
             "name": "ariaCurrent",
             "idlType": {
               "type": "attribute-type",
@@ -160,6 +199,30 @@
               "nullable": true,
               "union": false,
               "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "ariaDescribedByElements",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "FrozenArray",
+              "nullable": true,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "Element"
+                }
+              ]
             },
             "extAttrs": [],
             "special": "",
@@ -182,6 +245,30 @@
           },
           {
             "type": "attribute",
+            "name": "ariaDetailsElements",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "FrozenArray",
+              "nullable": true,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "Element"
+                }
+              ]
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
             "name": "ariaDisabled",
             "idlType": {
               "type": "attribute-type",
@@ -197,6 +284,21 @@
           },
           {
             "type": "attribute",
+            "name": "ariaErrorMessageElement",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "Element"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
             "name": "ariaExpanded",
             "idlType": {
               "type": "attribute-type",
@@ -205,6 +307,30 @@
               "nullable": true,
               "union": false,
               "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "ariaFlowToElements",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "FrozenArray",
+              "nullable": true,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "Element"
+                }
+              ]
             },
             "extAttrs": [],
             "special": "",
@@ -280,6 +406,30 @@
               "nullable": true,
               "union": false,
               "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "ariaLabelledByElements",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "FrozenArray",
+              "nullable": true,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "Element"
+                }
+              ]
             },
             "extAttrs": [],
             "special": "",
@@ -370,6 +520,30 @@
               "nullable": true,
               "union": false,
               "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "ariaOwnsElements",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "FrozenArray",
+              "nullable": true,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "Element"
+                }
+              ]
             },
             "extAttrs": [],
             "special": "",
@@ -649,12 +823,16 @@
     "globals": {},
     "exposed": {},
     "dependencies": {
-      "ARIAMixin": [],
+      "ARIAMixin": [
+        "Element"
+      ],
       "Element": [
         "ARIAMixin"
       ]
     },
-    "externalDependencies": [],
+    "externalDependencies": [
+      "Element"
+    ],
     "hasObsoleteIdl": false
   }
 }
