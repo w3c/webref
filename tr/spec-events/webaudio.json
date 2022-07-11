@@ -1,0 +1,66 @@
+{
+  "spec": {
+    "title": "Web Audio API",
+    "url": "https://www.w3.org/TR/webaudio/"
+  },
+  "spec-events": [
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://www.w3.org/TR/webaudio/#ref-for-concept-event-fire"
+      },
+      "href": "https://www.w3.org/TR/webaudio/#ref-for-concept-event-fire",
+      "type": "statechange",
+      "targets": [
+        "BaseAudioContext"
+      ],
+      "interface": "Event"
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://www.w3.org/TR/webaudio/#ref-for-concept-event-fire%E2%91%A3"
+      },
+      "href": "https://www.w3.org/TR/webaudio/#ref-for-concept-event-fire%E2%91%A3",
+      "type": "complete",
+      "targets": [
+        "OfflineAudioContext"
+      ],
+      "interface": "OfflineAudioCompletionEvent"
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://www.w3.org/TR/webaudio/#ref-for-concept-event-fire%E2%91%A5"
+      },
+      "href": "https://www.w3.org/TR/webaudio/#ref-for-concept-event-fire%E2%91%A5",
+      "type": "processorerror",
+      "targets": [
+        "AudioWorkletNode"
+      ],
+      "interface": "ErrorEvent"
+    },
+    {
+      "type": "ended",
+      "targets": [
+        "AudioScheduledSourceNode"
+      ],
+      "interface": null,
+      "src": {
+        "format": "IDL eventHandler",
+        "href": null
+      }
+    },
+    {
+      "type": "audioprocess",
+      "targets": [
+        "ScriptProcessorNode"
+      ],
+      "interface": null,
+      "src": {
+        "format": "IDL eventHandler",
+        "href": null
+      }
+    }
+  ]
+}

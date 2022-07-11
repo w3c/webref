@@ -1,0 +1,257 @@
+{
+  "spec": {
+    "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
+    "url": "https://www.w3.org/TR/webrtc/"
+  },
+  "spec-events": [
+    {
+      "href": "https://www.w3.org/TR/webrtc/#event-datachannel-open",
+      "src": {
+        "format": "summary table",
+        "href": "https://www.w3.org/TR/webrtc/#event-datachannel-open"
+      },
+      "type": "open",
+      "targets": [
+        "RTCDataChannel"
+      ],
+      "interface": "Event"
+    },
+    {
+      "href": "https://www.w3.org/TR/webrtc/#event-datachannel-message",
+      "src": {
+        "format": "summary table",
+        "href": "https://www.w3.org/TR/webrtc/#event-datachannel-message"
+      },
+      "type": "message",
+      "targets": [
+        "RTCDataChannel"
+      ],
+      "interface": "MessageEvent"
+    },
+    {
+      "href": "https://www.w3.org/TR/webrtc/#event-datachannel-bufferedamountlow",
+      "src": {
+        "format": "summary table",
+        "href": "https://www.w3.org/TR/webrtc/#event-datachannel-bufferedamountlow"
+      },
+      "type": "bufferedamountlow",
+      "targets": [
+        "RTCDataChannel"
+      ],
+      "interface": "Event"
+    },
+    {
+      "href": "https://www.w3.org/TR/webrtc/#dfn-error",
+      "src": {
+        "format": "summary table",
+        "href": "https://www.w3.org/TR/webrtc/#dfn-error"
+      },
+      "type": "error",
+      "interface": "RTCErrorEvent"
+    },
+    {
+      "href": "https://www.w3.org/TR/webrtc/#dfn-closing",
+      "src": {
+        "format": "summary table",
+        "href": "https://www.w3.org/TR/webrtc/#dfn-closing"
+      },
+      "type": "closing",
+      "targets": [
+        "RTCDataChannel"
+      ],
+      "interface": "Event"
+    },
+    {
+      "href": "https://www.w3.org/TR/webrtc/#dfn-close",
+      "src": {
+        "format": "summary table",
+        "href": "https://www.w3.org/TR/webrtc/#dfn-close"
+      },
+      "type": "close",
+      "targets": [
+        "RTCDataChannel"
+      ],
+      "interface": "Event"
+    },
+    {
+      "href": "https://www.w3.org/TR/webrtc/#event-track",
+      "src": {
+        "format": "summary table",
+        "href": "https://www.w3.org/TR/webrtc/#event-track"
+      },
+      "type": "track",
+      "targets": [
+        "RTCPeerConnection"
+      ],
+      "interface": "RTCTrackEvent"
+    },
+    {
+      "href": "https://www.w3.org/TR/webrtc/#event-negotiation",
+      "src": {
+        "format": "summary table",
+        "href": "https://www.w3.org/TR/webrtc/#event-negotiation"
+      },
+      "type": "negotiationneeded",
+      "targets": [
+        "RTCPeerConnection"
+      ],
+      "interface": "Event"
+    },
+    {
+      "href": "https://www.w3.org/TR/webrtc/#event-signalingstatechange",
+      "src": {
+        "format": "summary table",
+        "href": "https://www.w3.org/TR/webrtc/#event-signalingstatechange"
+      },
+      "type": "signalingstatechange",
+      "targets": [
+        "RTCPeerConnection"
+      ],
+      "interface": "Event"
+    },
+    {
+      "href": "https://www.w3.org/TR/webrtc/#event-iceconnectionstatechange",
+      "src": {
+        "format": "summary table",
+        "href": "https://www.w3.org/TR/webrtc/#event-iceconnectionstatechange"
+      },
+      "type": "iceconnectionstatechange",
+      "targets": [
+        "RTCPeerConnection"
+      ],
+      "interface": "Event"
+    },
+    {
+      "href": "https://www.w3.org/TR/webrtc/#event-icegatheringstatechange",
+      "src": {
+        "format": "summary table",
+        "href": "https://www.w3.org/TR/webrtc/#event-icegatheringstatechange"
+      },
+      "type": "icegatheringstatechange",
+      "targets": [
+        "RTCPeerConnection"
+      ],
+      "interface": "Event"
+    },
+    {
+      "href": "https://www.w3.org/TR/webrtc/#event-icecandidate",
+      "src": {
+        "format": "summary table",
+        "href": "https://www.w3.org/TR/webrtc/#event-icecandidate"
+      },
+      "type": "icecandidate",
+      "targets": [
+        "RTCPeerConnection"
+      ],
+      "interface": "RTCPeerConnectionIceEvent"
+    },
+    {
+      "href": "https://www.w3.org/TR/webrtc/#event-connectionstatechange",
+      "src": {
+        "format": "summary table",
+        "href": "https://www.w3.org/TR/webrtc/#event-connectionstatechange"
+      },
+      "type": "connectionstatechange",
+      "targets": [
+        "RTCPeerConnection"
+      ],
+      "interface": "Event"
+    },
+    {
+      "href": "https://www.w3.org/TR/webrtc/#event-icecandidateerror",
+      "src": {
+        "format": "summary table",
+        "href": "https://www.w3.org/TR/webrtc/#event-icecandidateerror"
+      },
+      "type": "icecandidateerror",
+      "targets": [
+        "RTCPeerConnection"
+      ],
+      "interface": "RTCPeerConnectionIceErrorEvent"
+    },
+    {
+      "href": "https://www.w3.org/TR/webrtc/#event-datachannel",
+      "src": {
+        "format": "summary table",
+        "href": "https://www.w3.org/TR/webrtc/#event-datachannel"
+      },
+      "type": "datachannel",
+      "targets": [
+        "RTCPeerConnection"
+      ],
+      "interface": "RTCDataChannelEvent"
+    },
+    {
+      "href": "https://www.w3.org/TR/webrtc/#event-RTCDTMFSender-tonechange",
+      "src": {
+        "format": "summary table",
+        "href": "https://www.w3.org/TR/webrtc/#event-RTCDTMFSender-tonechange"
+      },
+      "type": "tonechange",
+      "targets": [
+        "RTCDTMFSender"
+      ],
+      "interface": "RTCDTMFToneChangeEvent"
+    },
+    {
+      "href": "https://www.w3.org/TR/webrtc/#event-icetransport-statechange",
+      "src": {
+        "format": "summary table",
+        "href": "https://www.w3.org/TR/webrtc/#event-icetransport-statechange"
+      },
+      "type": "statechange",
+      "interface": "Event"
+    },
+    {
+      "href": "https://www.w3.org/TR/webrtc/#event-icetransport-gatheringstatechange",
+      "src": {
+        "format": "summary table",
+        "href": "https://www.w3.org/TR/webrtc/#event-icetransport-gatheringstatechange"
+      },
+      "type": "gatheringstatechange",
+      "targets": [
+        "RTCIceTransport"
+      ],
+      "interface": "Event"
+    },
+    {
+      "href": "https://www.w3.org/TR/webrtc/#event-icetransport-selectedcandidatepairchange",
+      "src": {
+        "format": "summary table",
+        "href": "https://www.w3.org/TR/webrtc/#event-icetransport-selectedcandidatepairchange"
+      },
+      "type": "selectedcandidatepairchange",
+      "targets": [
+        "RTCIceTransport"
+      ],
+      "interface": "Event"
+    },
+    {
+      "href": "https://www.w3.org/TR/webrtc/#event-dtlstransport-statechange",
+      "src": {
+        "format": "summary table",
+        "href": "https://www.w3.org/TR/webrtc/#event-dtlstransport-statechange"
+      },
+      "type": "statechange",
+      "interface": "Event"
+    },
+    {
+      "href": "https://www.w3.org/TR/webrtc/#dfn-rtcdtlstransport-error",
+      "src": {
+        "format": "summary table",
+        "href": "https://www.w3.org/TR/webrtc/#dfn-rtcdtlstransport-error"
+      },
+      "type": "error",
+      "interface": "RTCErrorEvent"
+    },
+    {
+      "href": "https://www.w3.org/TR/webrtc/#event-sctptransport-statechange",
+      "src": {
+        "format": "summary table",
+        "href": "https://www.w3.org/TR/webrtc/#event-sctptransport-statechange"
+      },
+      "type": "statechange",
+      "interface": "Event"
+    }
+  ]
+}

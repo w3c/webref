@@ -127,25 +127,32 @@
       "number": "3.7.1"
     },
     {
+      "id": "context-dependent-names",
+      "href": "https://www.w3.org/TR/WGSL/#context-dependent-names",
+      "level": 3,
+      "title": "Context-Dependent Names",
+      "number": "3.8"
+    },
+    {
       "id": "attributes",
       "href": "https://www.w3.org/TR/WGSL/#attributes",
       "level": 3,
       "title": "Attributes",
-      "number": "3.8"
+      "number": "3.9"
     },
     {
       "id": "directives",
       "href": "https://www.w3.org/TR/WGSL/#directives",
       "level": 3,
       "title": "Directives",
-      "number": "3.9"
+      "number": "3.10"
     },
     {
       "id": "declaration-and-scope",
       "href": "https://www.w3.org/TR/WGSL/#declaration-and-scope",
       "level": 3,
       "title": "Declaration and Scope",
-      "number": "3.10"
+      "number": "3.11"
     },
     {
       "id": "types",
@@ -372,46 +379,53 @@
       "number": "4.4.7.5"
     },
     {
-      "id": "memory-view-types",
-      "href": "https://www.w3.org/TR/WGSL/#memory-view-types",
+      "id": "memory-views",
+      "href": "https://www.w3.org/TR/WGSL/#memory-views",
       "level": 3,
-      "title": "Memory View Types",
+      "title": "Memory Views",
       "number": "4.5"
+    },
+    {
+      "id": "ref-ptr-types",
+      "href": "https://www.w3.org/TR/WGSL/#ref-ptr-types",
+      "level": 4,
+      "title": "Reference and Pointer Types",
+      "number": "4.5.1"
     },
     {
       "id": "access-mode-defaults",
       "href": "https://www.w3.org/TR/WGSL/#access-mode-defaults",
       "level": 4,
       "title": "Access Mode Defaults",
-      "number": "4.5.1"
+      "number": "4.5.2"
     },
     {
       "id": "originating-variable-section",
       "href": "https://www.w3.org/TR/WGSL/#originating-variable-section",
       "level": 4,
       "title": "Originating Variable",
-      "number": "4.5.2"
+      "number": "4.5.3"
     },
     {
       "id": "ref-ptr-use-cases",
       "href": "https://www.w3.org/TR/WGSL/#ref-ptr-use-cases",
       "level": 4,
       "title": "Use Cases for References and Pointers",
-      "number": "4.5.3"
+      "number": "4.5.4"
     },
     {
       "id": "forming-references-and-pointers",
       "href": "https://www.w3.org/TR/WGSL/#forming-references-and-pointers",
       "level": 4,
       "title": "Forming Reference and Pointer Values",
-      "number": "4.5.4"
+      "number": "4.5.5"
     },
     {
       "id": "pointers-other-languages",
       "href": "https://www.w3.org/TR/WGSL/#pointers-other-languages",
       "level": 4,
       "title": "Comparison with References and Pointers in Other Languages",
-      "number": "4.5.5"
+      "number": "4.5.6"
     },
     {
       "id": "texture-types",
@@ -470,10 +484,10 @@
       "number": "4.6.7"
     },
     {
-      "id": "texture-types-grammar",
-      "href": "https://www.w3.org/TR/WGSL/#texture-types-grammar",
+      "id": "texture-and-sampler-types-grammar",
+      "href": "https://www.w3.org/TR/WGSL/#texture-and-sampler-types-grammar",
       "level": 4,
-      "title": "Texture Types Grammar",
+      "title": "Texture and Sampler Types Grammar",
       "number": "4.6.8"
     },
     {
@@ -795,7 +809,7 @@
       "id": "compound-assignment-sec",
       "href": "https://www.w3.org/TR/WGSL/#compound-assignment-sec",
       "level": 4,
-      "title": "Compound assignment",
+      "title": "Compound Assignment",
       "number": "7.2.3"
     },
     {
@@ -1298,6 +1312,13 @@
       "number": "14.3"
     },
     {
+      "id": "context-dependent-name-tokens",
+      "href": "https://www.w3.org/TR/WGSL/#context-dependent-name-tokens",
+      "level": 3,
+      "title": "Context-Dependent Name Tokens",
+      "number": "14.4"
+    },
+    {
       "id": "builtin-values",
       "href": "https://www.w3.org/TR/WGSL/#builtin-values",
       "level": 2,
@@ -1625,67 +1646,74 @@
       "number": "16.3.38"
     },
     {
+      "id": "saturate-float-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#saturate-float-builtin",
+      "level": 4,
+      "title": "saturate",
+      "number": "16.3.39"
+    },
+    {
       "id": "sign-builtin",
       "href": "https://www.w3.org/TR/WGSL/#sign-builtin",
       "level": 4,
       "title": "sign",
-      "number": "16.3.39"
+      "number": "16.3.40"
     },
     {
       "id": "sin-builtin",
       "href": "https://www.w3.org/TR/WGSL/#sin-builtin",
       "level": 4,
       "title": "sin",
-      "number": "16.3.40"
+      "number": "16.3.41"
     },
     {
       "id": "sinh-builtin",
       "href": "https://www.w3.org/TR/WGSL/#sinh-builtin",
       "level": 4,
       "title": "sinh",
-      "number": "16.3.41"
+      "number": "16.3.42"
     },
     {
       "id": "smoothstep-builtin",
       "href": "https://www.w3.org/TR/WGSL/#smoothstep-builtin",
       "level": 4,
       "title": "smoothstep",
-      "number": "16.3.42"
+      "number": "16.3.43"
     },
     {
       "id": "sqrt-builtin",
       "href": "https://www.w3.org/TR/WGSL/#sqrt-builtin",
       "level": 4,
       "title": "sqrt",
-      "number": "16.3.43"
+      "number": "16.3.44"
     },
     {
       "id": "step-builtin",
       "href": "https://www.w3.org/TR/WGSL/#step-builtin",
       "level": 4,
       "title": "step",
-      "number": "16.3.44"
+      "number": "16.3.45"
     },
     {
       "id": "tan-builtin",
       "href": "https://www.w3.org/TR/WGSL/#tan-builtin",
       "level": 4,
       "title": "tan",
-      "number": "16.3.45"
+      "number": "16.3.46"
     },
     {
       "id": "tanh-builtin",
       "href": "https://www.w3.org/TR/WGSL/#tanh-builtin",
       "level": 4,
       "title": "tanh",
-      "number": "16.3.46"
+      "number": "16.3.47"
     },
     {
       "id": "trunc-builtin",
       "href": "https://www.w3.org/TR/WGSL/#trunc-builtin",
       "level": 4,
       "title": "trunc",
-      "number": "16.3.47"
+      "number": "16.3.48"
     },
     {
       "id": "integer-builtin-functions",
@@ -1730,38 +1758,38 @@
       "number": "16.4.5"
     },
     {
-      "id": "firstLeadingBit-signed-builtin",
-      "href": "https://www.w3.org/TR/WGSL/#firstLeadingBit-signed-builtin",
-      "level": 4,
-      "title": "firstLeadingBit (signed)",
-      "number": "16.4.6"
-    },
-    {
-      "id": "firstLeadingBit-unsigned-builtin",
-      "href": "https://www.w3.org/TR/WGSL/#firstLeadingBit-unsigned-builtin",
-      "level": 4,
-      "title": "firstLeadingBit (unsigned)",
-      "number": "16.4.7"
-    },
-    {
-      "id": "firstTrailingBit-builtin",
-      "href": "https://www.w3.org/TR/WGSL/#firstTrailingBit-builtin",
-      "level": 4,
-      "title": "firstTrailingBit",
-      "number": "16.4.8"
-    },
-    {
       "id": "extractBits-signed-builtin",
       "href": "https://www.w3.org/TR/WGSL/#extractBits-signed-builtin",
       "level": 4,
       "title": "extractBits (signed)",
-      "number": "16.4.9"
+      "number": "16.4.6"
     },
     {
       "id": "extractBits-unsigned-builtin",
       "href": "https://www.w3.org/TR/WGSL/#extractBits-unsigned-builtin",
       "level": 4,
       "title": "extractBits (unsigned)",
+      "number": "16.4.7"
+    },
+    {
+      "id": "firstLeadingBit-signed-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#firstLeadingBit-signed-builtin",
+      "level": 4,
+      "title": "firstLeadingBit (signed)",
+      "number": "16.4.8"
+    },
+    {
+      "id": "firstLeadingBit-unsigned-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#firstLeadingBit-unsigned-builtin",
+      "level": 4,
+      "title": "firstLeadingBit (unsigned)",
+      "number": "16.4.9"
+    },
+    {
+      "id": "firstTrailingBit-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#firstTrailingBit-builtin",
+      "level": 4,
+      "title": "firstTrailingBit",
       "number": "16.4.10"
     },
     {

@@ -688,14 +688,14 @@
       ],
       "GlobalEventHandlers": [
         {
-          "fragment": "partial interface mixin GlobalEventHandlers {\n    attribute EventHandler ongotpointercapture;\n    attribute EventHandler onlostpointercapture;\n    attribute EventHandler onpointerdown;\n    attribute EventHandler onpointermove;\n    [SecureContext] attribute EventHandler onpointerrawupdate;\n    attribute EventHandler onpointerup;\n    attribute EventHandler onpointercancel;\n    attribute EventHandler onpointerover;\n    attribute EventHandler onpointerout;\n    attribute EventHandler onpointerenter;\n    attribute EventHandler onpointerleave;\n};",
+          "fragment": "partial interface mixin GlobalEventHandlers {\n    attribute EventHandler onpointerover;\n    attribute EventHandler onpointerenter;\n    attribute EventHandler onpointerdown;\n    attribute EventHandler onpointermove;\n    [SecureContext] attribute EventHandler onpointerrawupdate;\n    attribute EventHandler onpointerup;\n    attribute EventHandler onpointercancel;\n    attribute EventHandler onpointerout;\n    attribute EventHandler onpointerleave;\n    attribute EventHandler ongotpointercapture;\n    attribute EventHandler onlostpointercapture;\n};",
           "type": "interface mixin",
           "name": "GlobalEventHandlers",
           "inheritance": null,
           "members": [
             {
               "type": "attribute",
-              "name": "ongotpointercapture",
+              "name": "onpointerover",
               "idlType": {
                 "type": "attribute-type",
                 "extAttrs": [],
@@ -710,7 +710,7 @@
             },
             {
               "type": "attribute",
-              "name": "onlostpointercapture",
+              "name": "onpointerenter",
               "idlType": {
                 "type": "attribute-type",
                 "extAttrs": [],
@@ -807,21 +807,6 @@
             },
             {
               "type": "attribute",
-              "name": "onpointerover",
-              "idlType": {
-                "type": "attribute-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "EventHandler"
-              },
-              "extAttrs": [],
-              "special": "",
-              "readonly": false
-            },
-            {
-              "type": "attribute",
               "name": "onpointerout",
               "idlType": {
                 "type": "attribute-type",
@@ -837,7 +822,7 @@
             },
             {
               "type": "attribute",
-              "name": "onpointerenter",
+              "name": "onpointerleave",
               "idlType": {
                 "type": "attribute-type",
                 "extAttrs": [],
@@ -852,7 +837,22 @@
             },
             {
               "type": "attribute",
-              "name": "onpointerleave",
+              "name": "ongotpointercapture",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "EventHandler"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": false
+            },
+            {
+              "type": "attribute",
+              "name": "onlostpointercapture",
               "idlType": {
                 "type": "attribute-type",
                 "extAttrs": [],

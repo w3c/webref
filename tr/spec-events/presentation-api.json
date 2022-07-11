@@ -1,0 +1,82 @@
+{
+  "spec": {
+    "title": "Presentation API",
+    "url": "https://www.w3.org/TR/presentation-api/"
+  },
+  "spec-events": [
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://www.w3.org/TR/presentation-api/#ref-for-index-term-fire-an-event-1"
+      },
+      "href": "https://www.w3.org/TR/presentation-api/#dfn-connectionavailable",
+      "type": "connectionavailable",
+      "targets": [
+        "PresentationRequest",
+        "PresentationConnectionList"
+      ],
+      "interface": "PresentationConnectionAvailableEvent",
+      "bubbles": false
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://www.w3.org/TR/presentation-api/#ref-for-index-term-fire-an-event-3"
+      },
+      "href": "https://www.w3.org/TR/presentation-api/#dfn-change",
+      "type": "change",
+      "targets": [
+        "PresentationAvailability"
+      ],
+      "interface": "Event"
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://www.w3.org/TR/presentation-api/#ref-for-index-term-fire-an-event-6"
+      },
+      "href": "https://www.w3.org/TR/presentation-api/#dfn-connect",
+      "type": "connect",
+      "targets": [
+        "PresentationConnection"
+      ],
+      "interface": "Event"
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://www.w3.org/TR/presentation-api/#ref-for-index-term-fire-an-event-8"
+      },
+      "href": "https://www.w3.org/TR/presentation-api/#ref-for-index-term-fire-an-event-8",
+      "type": "close",
+      "targets": [
+        "PresentationConnection"
+      ],
+      "interface": "PresentationConnectionCloseEvent",
+      "bubbles": false
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://www.w3.org/TR/presentation-api/#ref-for-index-term-fire-an-event-9"
+      },
+      "href": "https://www.w3.org/TR/presentation-api/#ref-for-index-term-fire-an-event-9",
+      "type": "terminate",
+      "targets": [
+        "PresentationConnection"
+      ],
+      "interface": "Event"
+    },
+    {
+      "type": "message",
+      "targets": [
+        "PresentationConnection"
+      ],
+      "interface": null,
+      "src": {
+        "format": "IDL eventHandler",
+        "href": null
+      }
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "spec": {
+    "title": "CSSOM View Module",
+    "url": "https://www.w3.org/TR/cssom-view-1/"
+  },
+  "spec-events": [
+    {
+      "href": "https://www.w3.org/TR/cssom-view-1/#eventdef-mediaquerylist-change",
+      "src": {
+        "format": "summary table",
+        "href": "https://www.w3.org/TR/cssom-view-1/#eventdef-mediaquerylist-change"
+      },
+      "type": "change#eventdef-mediaquerylist-changeReferenced in:4.2. The MediaQueryList Interface (2)",
+      "targets": [
+        "MediaQueryList"
+      ],
+      "interface": "Event"
+    },
+    {
+      "href": "https://www.w3.org/TR/cssom-view-1/#eventdef-window-resize",
+      "src": {
+        "format": "summary table",
+        "href": "https://www.w3.org/TR/cssom-view-1/#eventdef-window-resize"
+      },
+      "type": "resize#eventdef-window-resizeReferenced in:12.1. Resizing viewportsChanges From 17 December 2013",
+      "targets": [
+        "Window"
+      ],
+      "interface": "Event"
+    },
+    {
+      "href": "https://www.w3.org/TR/cssom-view-1/#eventdef-document-scroll",
+      "src": {
+        "format": "summary table",
+        "href": "https://www.w3.org/TR/cssom-view-1/#eventdef-document-scroll"
+      },
+      "type": "scroll#eventdef-document-scrollReferenced in:12.2. Scrolling (2)Changes From 17 December 2013",
+      "targets": [
+        "Document",
+        "Element"
+      ],
+      "interface": "Event"
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": null
+      },
+      "href": "https://www.w3.org/TR/cssom-view-1/#eventdef-window-resize",
+      "type": "resize",
+      "targets": [
+        "Window"
+      ],
+      "interface": "Event"
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": null
+      },
+      "href": "https://www.w3.org/TR/cssom-view-1/#eventdef-document-scroll",
+      "type": "scroll",
+      "targets": [
+        "Document",
+        "Element"
+      ],
+      "interface": "Event",
+      "bubbles": true
+    }
+  ]
+}
