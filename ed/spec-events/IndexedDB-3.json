@@ -1,0 +1,106 @@
+{
+  "spec": {
+    "title": "Indexed Database API 3.0",
+    "url": "https://w3c.github.io/IndexedDB/"
+  },
+  "spec-events": [
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://w3c.github.io/IndexedDB/#ref-for-concept-event-fire"
+      },
+      "href": "https://w3c.github.io/IndexedDB/#eventdef-idbrequest-error",
+      "type": "error",
+      "targets": [
+        "IDBRequest"
+      ],
+      "interface": "Event",
+      "bubbles": true
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://w3c.github.io/IndexedDB/#ref-for-concept-event-fire%E2%91%A0"
+      },
+      "href": "https://w3c.github.io/IndexedDB/#eventdef-idbrequest-success",
+      "type": "success",
+      "targets": [
+        "IDBRequest"
+      ],
+      "interface": "Event"
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://w3c.github.io/IndexedDB/#ref-for-concept-event-fire%E2%91%A2"
+      },
+      "href": "https://w3c.github.io/IndexedDB/#eventdef-idbdatabase-close",
+      "type": "close",
+      "targets": [
+        "IDBDatabase"
+      ],
+      "interface": "Event"
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://w3c.github.io/IndexedDB/#ref-for-concept-event-fire%E2%91%A3"
+      },
+      "href": "https://w3c.github.io/IndexedDB/#eventdef-idbtransaction-complete",
+      "type": "complete",
+      "targets": [
+        "IDBTransaction"
+      ],
+      "interface": "Event"
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://w3c.github.io/IndexedDB/#ref-for-concept-event-fire%E2%91%A5"
+      },
+      "href": "https://w3c.github.io/IndexedDB/#eventdef-idbtransaction-abort",
+      "type": "abort",
+      "targets": [
+        "IDBTransaction"
+      ],
+      "interface": "Event",
+      "bubbles": true
+    },
+    {
+      "type": "blocked",
+      "targets": [
+        "IDBOpenDBRequest"
+      ],
+      "interface": null,
+      "src": {
+        "format": "IDL eventHandler",
+        "href": null
+      },
+      "href": "https://w3c.github.io/IndexedDB/#eventdef-idbopendbrequest-blocked"
+    },
+    {
+      "type": "upgradeneeded",
+      "targets": [
+        "IDBOpenDBRequest"
+      ],
+      "interface": null,
+      "src": {
+        "format": "IDL eventHandler",
+        "href": null
+      },
+      "href": "https://w3c.github.io/IndexedDB/#eventdef-idbopendbrequest-upgradeneeded"
+    },
+    {
+      "type": "versionchange",
+      "targets": [
+        "IDBDatabase"
+      ],
+      "interface": null,
+      "src": {
+        "format": "IDL eventHandler",
+        "href": null
+      },
+      "href": "https://w3c.github.io/IndexedDB/#eventdef-idbdatabase-versionchange"
+    }
+  ]
+}

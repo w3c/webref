@@ -26,7 +26,7 @@
       "in-parallel",
       "queue-a-global-task",
       "user-interaction-task-source",
-      "secure-context"
+      "safelisted-scheme"
     ],
     "https://webidl.spec.whatwg.org/": [
       "SecureContext",
@@ -34,9 +34,9 @@
       "idl-undefined",
       "idl-boolean",
       "this",
+      "idl-DOMException",
       "a-promise-rejected-with",
       "invalidstateerror",
-      "idl-DOMException",
       "notallowederror",
       "exceptiondef-typeerror",
       "a-new-promise",
@@ -46,20 +46,20 @@
       "resolve",
       "idl-sequence",
       "idl-USVString",
-      "idl-DOMString",
-      "dfn-exposed"
+      "idl-DOMString"
     ],
     "https://developer.mozilla.org/en-US/docs/Web/API/Navigator/share": [],
     "https://url.spec.whatwg.org/": [
       "concept-url-parser",
       "url",
-      "concept-url-serializer"
+      "concept-url-serializer",
+      "concept-url",
+      "concept-url-scheme"
     ],
     "https://developer.mozilla.org/en-US/docs/Web/API/Navigator/canShare": [],
-    "https://github.com/w3c/web-share/issues/178": [],
-    "https://github.com/w3c/web-share/issues/173": [],
-    "https://github.com/w3c/web-share/pull/174": [],
-    "https://github.com/dveditz": [],
+    "https://fetch.spec.whatwg.org/": [
+      "local-scheme"
+    ],
     "https://www.w3.org/TR/FileAPI/": [
       "dfn-file"
     ],
@@ -91,6 +91,7 @@
     "https://github.com/w3c/web-share/commit/151b35e": [],
     "https://github.com/w3c/web-share/pull/183": [],
     "https://github.com/w3c/web-share/commit/9322cbe": [],
+    "https://github.com/w3c/web-share/pull/174": [],
     "https://github.com/w3c/web-share/commit/aeb208c": [],
     "https://github.com/w3c/web-share/pull/170": [],
     "https://github.com/w3c/web-share/commit/2ef967a": [],
@@ -103,6 +104,10 @@
     "https://github.com/w3c/web-share/pull/150": [],
     "https://github.com/w3c/web-share/commit/5f837a9": [],
     "https://github.com/w3c/web-share/pull/146": [],
+    "https://github.com/w3c/web-share/commit/d3890d1": [],
+    "https://github.com/w3c/web-share/pull/244": [],
+    "https://github.com/w3c/web-share/commit/238ff25": [],
+    "https://github.com/w3c/web-share/pull/245": [],
     "https://www.w3.org/TR/web-intents/": [],
     "https://paul.kinlan.me/": [],
     "https://www.rfc-editor.org/rfc/rfc2119": [],

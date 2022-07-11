@@ -1,0 +1,32 @@
+{
+  "spec": {
+    "title": "Push API",
+    "url": "https://www.w3.org/TR/push-api/"
+  },
+  "spec-events": [
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://www.w3.org/TR/push-api/#receiving-a-push-message"
+      },
+      "href": "https://www.w3.org/TR/push-api/#receiving-a-push-message",
+      "type": "push",
+      "targets": [
+        "ServiceWorkerGlobalScope"
+      ],
+      "interface": "PushEvent"
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://www.w3.org/TR/push-api/#the-pushsubscriptionchange-event"
+      },
+      "href": "https://www.w3.org/TR/push-api/#the-pushsubscriptionchange-event",
+      "type": "pushsubscriptionchange",
+      "targets": [
+        "ServiceWorkerGlobalScope"
+      ],
+      "interface": "PushSubscriptionChangeEvent"
+    }
+  ]
+}

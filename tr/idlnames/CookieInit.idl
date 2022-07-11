@@ -2,7 +2,7 @@
 dictionary CookieInit {
   required USVString name;
   required USVString value;
-  DOMTimeStamp? expires = null;
+  EpochTimeStamp? expires = null;
   USVString? domain = null;
   USVString path = "/";
   CookieSameSite sameSite = "strict";

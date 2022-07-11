@@ -71,6 +71,7 @@ partial interface Element {
 };
 
 // Source: HTML Sanitizer API (https://wicg.github.io/sanitizer-api/)
+[SecureContext]
 partial interface Element {
   undefined setHTML(DOMString input, optional SetHTMLOptions options = {});
 };

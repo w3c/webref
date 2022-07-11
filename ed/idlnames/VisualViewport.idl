@@ -1,4 +1,4 @@
-// Source: Visual Viewport API (https://wicg.github.io/visual-viewport/)
+// Source: CSSOM View Module (https://www.w3.org/TR/cssom-view-1/)
 [Exposed=Window]
 interface VisualViewport : EventTarget {
   readonly attribute double offsetLeft;
@@ -11,8 +11,6 @@ interface VisualViewport : EventTarget {
   readonly attribute double height;
 
   readonly attribute double scale;
-
-  readonly attribute FrozenArray<DOMRect>? segments;
 
   attribute EventHandler onresize;
   attribute EventHandler onscroll;

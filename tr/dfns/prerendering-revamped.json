@@ -1,0 +1,454 @@
+{
+  "spec": {
+    "title": "Prerendering Revamped",
+    "url": "https://wicg.github.io/nav-speculation/prerendering.html"
+  },
+  "dfns": [
+    {
+      "id": "attr-valuedef-link-rel-prerender",
+      "href": "https://wicg.github.io/nav-speculation/prerendering.html#attr-valuedef-link-rel-prerender",
+      "linkingText": [
+        "prerender"
+      ],
+      "localLinkingText": [],
+      "type": "attr-value",
+      "for": [
+        "link/rel"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "link-rel-prerender",
+        "href": "https://wicg.github.io/nav-speculation/prerendering.html#link-rel-prerender",
+        "title": "Link type \"prerender\"",
+        "number": "1"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "list-of-sufficiently-strict-speculative-navigation-referrer-policies",
+      "href": "https://wicg.github.io/nav-speculation/prerendering.html#list-of-sufficiently-strict-speculative-navigation-referrer-policies",
+      "linkingText": [
+        "list of sufficiently-strict speculative navigation referrer policies"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "link-rel-prerender",
+        "href": "https://wicg.github.io/nav-speculation/prerendering.html#link-rel-prerender",
+        "title": "Link type \"prerender\"",
+        "number": "1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-document-onprerenderingchange",
+      "href": "https://wicg.github.io/nav-speculation/prerendering.html#dom-document-onprerenderingchange",
+      "linkingText": [
+        "onprerenderingchange"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Document"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "document-prerendering",
+        "href": "https://wicg.github.io/nav-speculation/prerendering.html#document-prerendering",
+        "title": "Extensions to the Document interface",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "eventdef-document-prerenderingchange",
+      "href": "https://wicg.github.io/nav-speculation/prerendering.html#eventdef-document-prerenderingchange",
+      "linkingText": [
+        "prerenderingchange"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "Document"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "document-prerendering",
+        "href": "https://wicg.github.io/nav-speculation/prerendering.html#document-prerendering",
+        "title": "Extensions to the Document interface",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "browsing-context-loading-mode",
+      "href": "https://wicg.github.io/nav-speculation/prerendering.html#browsing-context-loading-mode",
+      "linkingText": [
+        "loading mode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "browsing context"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "prerendering-bcs-subsection",
+        "href": "https://wicg.github.io/nav-speculation/prerendering.html#prerendering-bcs-subsection",
+        "title": "Prerendering browsing contexts",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "prerendering-browsing-context",
+      "href": "https://wicg.github.io/nav-speculation/prerendering.html#prerendering-browsing-context",
+      "linkingText": [
+        "prerendering browsing context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "prerendering-bcs-subsection",
+        "href": "https://wicg.github.io/nav-speculation/prerendering.html#prerendering-bcs-subsection",
+        "title": "Prerendering browsing contexts",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-document-prerendering",
+      "href": "https://wicg.github.io/nav-speculation/prerendering.html#dom-document-prerendering",
+      "linkingText": [
+        "prerendering"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Document"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "prerendering-bcs-subsection",
+        "href": "https://wicg.github.io/nav-speculation/prerendering.html#prerendering-bcs-subsection",
+        "title": "Prerendering browsing contexts",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "prerendering-browsing-context-empty",
+      "href": "https://wicg.github.io/nav-speculation/prerendering.html#prerendering-browsing-context-empty",
+      "linkingText": [
+        "empty"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "prerendering browsing context"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "prerendering-bcs-subsection",
+        "href": "https://wicg.github.io/nav-speculation/prerendering.html#prerendering-bcs-subsection",
+        "title": "Prerendering browsing contexts",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "document-prerendering-browsing-contexts-map",
+      "href": "https://wicg.github.io/nav-speculation/prerendering.html#document-prerendering-browsing-contexts-map",
+      "linkingText": [
+        "prerendering browsing contexts map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "Document"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "prerendering-bcs-subsection",
+        "href": "https://wicg.github.io/nav-speculation/prerendering.html#prerendering-bcs-subsection",
+        "title": "Prerendering browsing contexts",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "document-post-prerendering-activation-steps-list",
+      "href": "https://wicg.github.io/nav-speculation/prerendering.html#document-post-prerendering-activation-steps-list",
+      "linkingText": [
+        "post-prerendering activation steps list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "Document"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "prerendering-bcs-subsection",
+        "href": "https://wicg.github.io/nav-speculation/prerendering.html#prerendering-bcs-subsection",
+        "title": "Prerendering browsing contexts",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "platform-object-post-prerendering-activation-steps-list",
+      "href": "https://wicg.github.io/nav-speculation/prerendering.html#platform-object-post-prerendering-activation-steps-list",
+      "linkingText": [
+        "post-prerendering activation steps list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "platform object"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "prerendering-bcs-subsection",
+        "href": "https://wicg.github.io/nav-speculation/prerendering.html#prerendering-bcs-subsection",
+        "title": "Prerendering browsing contexts",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "document-activation-start-time",
+      "href": "https://wicg.github.io/nav-speculation/prerendering.html#document-activation-start-time",
+      "linkingText": [
+        "activation start time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "Document"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "prerendering-bcs-subsection",
+        "href": "https://wicg.github.io/nav-speculation/prerendering.html#prerendering-bcs-subsection",
+        "title": "Prerendering browsing contexts",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "start-user-agent-initiated-prerendering",
+      "href": "https://wicg.github.io/nav-speculation/prerendering.html#start-user-agent-initiated-prerendering",
+      "linkingText": [
+        "start user-agent initiated prerendering"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "prerendering-bcs-subsection",
+        "href": "https://wicg.github.io/nav-speculation/prerendering.html#prerendering-bcs-subsection",
+        "title": "Prerendering browsing contexts",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "create-a-prerendering-browsing-context",
+      "href": "https://wicg.github.io/nav-speculation/prerendering.html#create-a-prerendering-browsing-context",
+      "linkingText": [
+        "create a prerendering browsing context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "prerendering-bcs-subsection",
+        "href": "https://wicg.github.io/nav-speculation/prerendering.html#prerendering-bcs-subsection",
+        "title": "Prerendering browsing contexts",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "prerendering-browsing-context-activate",
+      "href": "https://wicg.github.io/nav-speculation/prerendering.html#prerendering-browsing-context-activate",
+      "linkingText": [
+        "activate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "prerendering browsing context"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "prerendering-bcs-subsection",
+        "href": "https://wicg.github.io/nav-speculation/prerendering.html#prerendering-bcs-subsection",
+        "title": "Prerendering browsing contexts",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "prerendering-browsing-context-finalize-activation",
+      "href": "https://wicg.github.io/nav-speculation/prerendering.html#prerendering-browsing-context-finalize-activation",
+      "linkingText": [
+        "finalize activation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "prerendering browsing context"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "prerendering-bcs-subsection",
+        "href": "https://wicg.github.io/nav-speculation/prerendering.html#prerendering-bcs-subsection",
+        "title": "Prerendering browsing contexts",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "prerendering-browsing-context-remove-from-initiator",
+      "href": "https://wicg.github.io/nav-speculation/prerendering.html#prerendering-browsing-context-remove-from-initiator",
+      "linkingText": [
+        "remove from initiator"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "prerendering browsing context"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "prerendering-bcs-subsection",
+        "href": "https://wicg.github.io/nav-speculation/prerendering.html#prerendering-bcs-subsection",
+        "title": "Prerendering browsing contexts",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "can-activate-a-prerender",
+      "href": "https://wicg.github.io/nav-speculation/prerendering.html#can-activate-a-prerender",
+      "linkingText": [
+        "can activate a prerender"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "navigate-activation",
+        "href": "https://wicg.github.io/nav-speculation/prerendering.html#navigate-activation",
+        "title": "Allowing activation in place of navigation",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-performancenavigationtiming-activationstart",
+      "href": "https://wicg.github.io/nav-speculation/prerendering.html#dom-performancenavigationtiming-activationstart",
+      "linkingText": [
+        "activationStart"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PerformanceNavigationTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "performance-navigation-timing-extension",
+        "href": "https://wicg.github.io/nav-speculation/prerendering.html#performance-navigation-timing-extension",
+        "title": "Extensions to the PerformanceNavigationTiming interface",
+        "number": "5.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "script-closable",
+      "href": "https://wicg.github.io/nav-speculation/prerendering.html#script-closable",
+      "linkingText": [
+        "script-closable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "patch-window-apis",
+        "href": "https://wicg.github.io/nav-speculation/prerendering.html#patch-window-apis",
+        "title": "APIs for creating and navigating browsing contexts by name",
+        "number": "6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "extendedattrdef-delaywhileprerendering",
+      "href": "https://wicg.github.io/nav-speculation/prerendering.html#extendedattrdef-delaywhileprerendering",
+      "linkingText": [
+        "[DelayWhilePrerendering]"
+      ],
+      "localLinkingText": [],
+      "type": "extended-attribute",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "delay-while-prerendering",
+        "href": "https://wicg.github.io/nav-speculation/prerendering.html#delay-while-prerendering",
+        "title": "The [DelayWhilePrerendering] extended attribute",
+        "number": "7.3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "post-prerendering-activation-geolocation-watch-process-id",
+      "href": "https://wicg.github.io/nav-speculation/prerendering.html#post-prerendering-activation-geolocation-watch-process-id",
+      "linkingText": [
+        "post-prerendering activation geolocation watch process ID"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "patch-geolocation",
+        "href": "https://wicg.github.io/nav-speculation/prerendering.html#patch-geolocation",
+        "title": "Geolocation API",
+        "number": "7.3.4"
+      },
+      "definedIn": "prose"
+    }
+  ]
+}
