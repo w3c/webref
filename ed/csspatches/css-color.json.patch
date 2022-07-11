@@ -1,7 +1,7 @@
-From 7b815910e42fc0c102bc712a08808ec780b4aa59 Mon Sep 17 00:00:00 2001
+From 9c00eba40b4316d3d546aaa5931f16ddbfe6a07e Mon Sep 17 00:00:00 2001
 From: Francois Daoust <fd@tidoust.net>
-Date: Mon, 25 Apr 2022 11:50:02 +0200
-Subject: [PATCH] Add legacy values for rgb() and hsl() definitions
+Date: Mon, 11 Jul 2022 10:03:14 +0200
+Subject: [PATCH] [Patch] Add legacy values for rgb() and hsl() definitions
 
 This is a permanent patch as legacy values cannot easily be extracted from the
 spec prose (even if they could, we would have a hard time qualifying them as
@@ -18,19 +18,16 @@ the `legacyValue` with a `|`.
  1 file changed, 4 insertions(+), 2 deletions(-)
 
 diff --git a/ed/css/css-color.json b/ed/css/css-color.json
-index 67e5e088a..dcb76a326 100644
+index 4c395b471..f10d3b56b 100644
 --- a/ed/css/css-color.json
 +++ b/ed/css/css-color.json
-@@ -45,13 +45,15 @@
+@@ -73,10 +73,12 @@
        "value": "<number> | <angle> | none"
      },
      "<rgb()>": {
 -      "value": "rgb( [<percentage> | none]{3} [ / [<alpha-value> | none] ]? ) | rgb( [<number> | none]{3} [ / [<alpha-value> | none] ]? )"
 +      "value": "rgb( [<percentage> | none]{3} [ / [<alpha-value> | none] ]? ) | rgb( [<number> | none]{3} [ / [<alpha-value> | none] ]? )",
 +      "legacyValue": "rgb( <percentage>#{3} , <alpha-value>? ) | rgb( <number>#{3} , <alpha-value>? )"
-     },
-     "<alpha-value>": {
-       "value": "<number> | <percentage>"
      },
      "<hsl()>": {
 -      "value": "hsl( [<hue> | none] [<percentage> | none] [<percentage> | none] [ / [<alpha-value> | none] ]? )"
