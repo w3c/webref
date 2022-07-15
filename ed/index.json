@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2022-07-15T00:56:11.592Z",
+  "date": "2022-07-15T06:38:40.324Z",
   "options": {
     "fallback": "webref-fallback/ed/index.json",
     "output": "report",
@@ -22,7 +22,7 @@
   },
   "stats": {
     "crawled": 472,
-    "errors": 2
+    "errors": 5
   },
   "crawler": "reffy-7.2.10",
   "results": [
@@ -394,7 +394,8 @@
       "css": "css/css-animations-2.json",
       "dfns": "dfns/css-animations-2.json",
       "headings": "headings/css-animations-2.json",
-      "ids": "ids/css-animations-2.json"
+      "ids": "ids/css-animations-2.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:286:15)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 6)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://drafts.csswg.org/css-backgrounds-4/",
@@ -987,7 +988,8 @@
       "idlparsed": "idlparsed/css-transitions-2.json",
       "dfns": "dfns/css-transitions-2.json",
       "headings": "headings/css-transitions-2.json",
-      "ids": "ids/css-transitions-2.json"
+      "ids": "ids/css-transitions-2.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:286:15)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:117:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 17)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://drafts.csswg.org/css-values-5/",
@@ -1309,7 +1311,7 @@
       ],
       "crawled": "https://drafts.fxtf.org/filter-effects-2/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 14 Jul 2022 20:26:17 GMT"
+        "lastModified": "Fri, 15 Jul 2022 02:06:48 GMT"
       },
       "generator": "bikeshed",
       "date": "10 February 2022",
@@ -14435,7 +14437,7 @@
       ],
       "crawled": "https://drafts.fxtf.org/css-masking-1/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 14 Jul 2022 20:26:08 GMT"
+        "lastModified": "Fri, 15 Jul 2022 02:06:39 GMT"
       },
       "generator": "bikeshed",
       "date": "24 February 2022",
@@ -17174,7 +17176,8 @@
       "css": "css/CSS.json",
       "dfns": "dfns/CSS22.json",
       "headings": "headings/CSS22.json",
-      "ids": "ids/CSS22.json"
+      "ids": "ids/CSS22.json",
+      "error": "Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers' Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers'\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:483:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:91:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:410:22)\n    at async Promise.all (index 325)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:418:21)"
     },
     {
       "url": "https://www.w3.org/TR/css3-exclusions/",
@@ -17743,10 +17746,10 @@
       ],
       "crawled": "https://w3c.github.io/epub-specs/epub33/core/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 12 Jul 2022 11:54:10 GMT"
+        "lastModified": "Fri, 15 Jul 2022 05:37:00 GMT"
       },
       "generator": "respec",
-      "date": "12 July 2022",
+      "date": "15 July 2022",
       "links": "links/epub-33.json",
       "refs": "refs/epub-33.json",
       "dfns": "dfns/epub-33.json",
@@ -17793,10 +17796,10 @@
       ],
       "crawled": "https://w3c.github.io/epub-specs/epub33/rs/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 12 Jul 2022 11:54:10 GMT"
+        "lastModified": "Fri, 15 Jul 2022 05:37:00 GMT"
       },
       "generator": "respec",
-      "date": "12 July 2022",
+      "date": "15 July 2022",
       "links": "links/epub-rs-33.json",
       "refs": "refs/epub-rs-33.json",
       "idl": "idl/epub-rs.idl",
@@ -18027,7 +18030,7 @@
       ],
       "crawled": "https://drafts.fxtf.org/fill-stroke/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 14 Jul 2022 20:26:15 GMT"
+        "lastModified": "Fri, 15 Jul 2022 02:06:46 GMT"
       },
       "generator": "bikeshed",
       "date": "4 April 2017",
@@ -18087,7 +18090,7 @@
       ],
       "crawled": "https://drafts.fxtf.org/filter-effects-1/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 14 Jul 2022 20:26:41 GMT"
+        "lastModified": "Fri, 15 Jul 2022 02:07:16 GMT"
       },
       "generator": "bikeshed",
       "date": "21 February 2022",
@@ -18438,7 +18441,7 @@
       ],
       "crawled": "https://drafts.fxtf.org/geometry/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 14 Jul 2022 20:26:52 GMT"
+        "lastModified": "Fri, 15 Jul 2022 02:07:26 GMT"
       },
       "generator": "bikeshed",
       "date": "10 February 2022",
@@ -20413,7 +20416,7 @@
       ],
       "crawled": "https://drafts.fxtf.org/motion-1/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 14 Jul 2022 20:26:57 GMT"
+        "lastModified": "Fri, 15 Jul 2022 02:07:32 GMT"
       },
       "generator": "bikeshed",
       "date": "23 February 2022",
