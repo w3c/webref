@@ -13,10 +13,12 @@
     "https://github.com/michaelkleber/privacy-model": [],
     "https://infra.spec.whatwg.org/": [
       "user-agent",
+      "ordered-map",
+      "map-getting-the-keys",
+      "map-getting-the-values",
       "map-exists",
       "list-size",
       "parse-json-bytes-to-an-infra-value",
-      "ordered-map",
       "list",
       "string",
       "string-is"
@@ -28,6 +30,8 @@
       "relevant-settings-object",
       "concept-settings-object-origin",
       "environment-settings-object",
+      "dom-settimeout",
+      "concept-task",
       "content-type"
     ],
     "https://openid.net/specs/openid-connect-core-1_0.html": [
@@ -52,7 +56,6 @@
       "header.location"
     ],
     "https://www.w3.org/TR/appmanifest/": [
-      "dfn-background_color",
       "icon-masks"
     ],
     "https://drafts.csswg.org/css-color-4/": [
@@ -69,10 +72,10 @@
     ],
     "https://fetch.spec.whatwg.org/": [
       "forbidden-header-name",
+      "concept-fetch",
       "concept-request",
       "concept-request-url",
       "concept-request-redirect-mode",
-      "concept-fetch",
       "process-response-end-of-body",
       "concept-response",
       "concept-network-error",
@@ -101,12 +104,17 @@
       "idl-sequence",
       "notallowederror",
       "idl-DOMException",
+      "networkerror",
+      "this",
       "idl-promise",
       "idl-undefined",
       "resolve"
     ],
     "https://tc39.github.io/ecma262/": [
       "sec-ordinary-object-internal-methods-and-internal-slots"
+    ],
+    "https://dom.spec.whatwg.org/": [
+      "concept-document-origin"
     ],
     "https://mimesniff.spec.whatwg.org/": [
       "json-mime-type"

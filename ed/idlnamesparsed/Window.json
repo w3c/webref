@@ -75,13 +75,6 @@
     },
     {
       "spec": {
-        "title": "Multi-Screen Window Placement",
-        "url": "https://w3c.github.io/window-placement/"
-      },
-      "fragment": "partial interface Window {\n  [SecureContext]\n  Promise<ScreenDetails> getScreenDetails();\n};"
-    },
-    {
-      "spec": {
         "title": "Cookie Store API",
         "url": "https://wicg.github.io/cookie-store/"
       },
@@ -205,6 +198,13 @@
         "url": "https://www.w3.org/TR/selection-api/"
       },
       "fragment": "partial interface Window {\n  Selection? getSelection();\n};"
+    },
+    {
+      "spec": {
+        "title": "Multi-Screen Window Placement",
+        "url": "https://www.w3.org/TR/window-placement/"
+      },
+      "fragment": "partial interface Window {\n  [SecureContext]\n  Promise<ScreenDetails> getScreenDetails();\n};"
     }
   ],
   "inheritance": {

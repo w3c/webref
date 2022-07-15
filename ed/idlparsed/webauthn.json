@@ -2047,52 +2047,6 @@
         ],
         "extAttrs": []
       },
-      "UvmEntry": {
-        "fragment": "typedef sequence<unsigned long> UvmEntry;",
-        "type": "typedef",
-        "name": "UvmEntry",
-        "idlType": {
-          "type": "typedef-type",
-          "extAttrs": [],
-          "generic": "sequence",
-          "nullable": false,
-          "union": false,
-          "idlType": [
-            {
-              "type": "typedef-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long"
-            }
-          ]
-        },
-        "extAttrs": []
-      },
-      "UvmEntries": {
-        "fragment": "typedef sequence<UvmEntry> UvmEntries;",
-        "type": "typedef",
-        "name": "UvmEntries",
-        "idlType": {
-          "type": "typedef-type",
-          "extAttrs": [],
-          "generic": "sequence",
-          "nullable": false,
-          "union": false,
-          "idlType": [
-            {
-              "type": "typedef-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "UvmEntry"
-            }
-          ]
-        },
-        "extAttrs": []
-      },
       "CredentialPropertiesOutput": {
         "fragment": "dictionary CredentialPropertiesOutput {\n    boolean rk;\n};",
         "type": "dictionary",
@@ -2110,6 +2064,143 @@
               "nullable": false,
               "union": false,
               "idlType": "boolean"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "AuthenticationExtensionsPRFValues": {
+        "fragment": "dictionary AuthenticationExtensionsPRFValues {\n    required ArrayBuffer first;\n    ArrayBuffer second;\n};",
+        "type": "dictionary",
+        "name": "AuthenticationExtensionsPRFValues",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "first",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "ArrayBuffer"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "second",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "ArrayBuffer"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "AuthenticationExtensionsPRFInputs": {
+        "fragment": "dictionary AuthenticationExtensionsPRFInputs {\n    AuthenticationExtensionsPRFValues eval;\n    record<USVString, AuthenticationExtensionsPRFValues> evalByCredential;\n};",
+        "type": "dictionary",
+        "name": "AuthenticationExtensionsPRFInputs",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "eval",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "AuthenticationExtensionsPRFValues"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "evalByCredential",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "record",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "USVString"
+                },
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "AuthenticationExtensionsPRFValues"
+                }
+              ]
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "AuthenticationExtensionsPRFOutputs": {
+        "fragment": "dictionary AuthenticationExtensionsPRFOutputs {\n    boolean enabled;\n    AuthenticationExtensionsPRFValues results;\n};",
+        "type": "dictionary",
+        "name": "AuthenticationExtensionsPRFOutputs",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "enabled",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "results",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "AuthenticationExtensionsPRFValues"
             },
             "default": null,
             "required": false
@@ -2243,6 +2334,52 @@
         ],
         "extAttrs": [],
         "partial": false
+      },
+      "UvmEntry": {
+        "fragment": "typedef sequence<unsigned long> UvmEntry;",
+        "type": "typedef",
+        "name": "UvmEntry",
+        "idlType": {
+          "type": "typedef-type",
+          "extAttrs": [],
+          "generic": "sequence",
+          "nullable": false,
+          "union": false,
+          "idlType": [
+            {
+              "type": "typedef-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            }
+          ]
+        },
+        "extAttrs": []
+      },
+      "UvmEntries": {
+        "fragment": "typedef sequence<UvmEntry> UvmEntries;",
+        "type": "typedef",
+        "name": "UvmEntries",
+        "idlType": {
+          "type": "typedef-type",
+          "extAttrs": [],
+          "generic": "sequence",
+          "nullable": false,
+          "union": false,
+          "idlType": [
+            {
+              "type": "typedef-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "UvmEntry"
+            }
+          ]
+        },
+        "extAttrs": []
       }
     },
     "idlExtendedNames": {
@@ -2472,31 +2609,6 @@
           "partial": true
         },
         {
-          "fragment": "partial dictionary AuthenticationExtensionsClientInputs {\n  boolean uvm;\n};",
-          "type": "dictionary",
-          "name": "AuthenticationExtensionsClientInputs",
-          "inheritance": null,
-          "members": [
-            {
-              "type": "field",
-              "name": "uvm",
-              "extAttrs": [],
-              "idlType": {
-                "type": "dictionary-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "boolean"
-              },
-              "default": null,
-              "required": false
-            }
-          ],
-          "extAttrs": [],
-          "partial": true
-        },
-        {
           "fragment": "partial dictionary AuthenticationExtensionsClientInputs {\n    boolean credProps;\n};",
           "type": "dictionary",
           "name": "AuthenticationExtensionsClientInputs",
@@ -2522,6 +2634,31 @@
           "partial": true
         },
         {
+          "fragment": "partial dictionary AuthenticationExtensionsClientInputs {\n    AuthenticationExtensionsPRFInputs prf;\n};",
+          "type": "dictionary",
+          "name": "AuthenticationExtensionsClientInputs",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "prf",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "AuthenticationExtensionsPRFInputs"
+              },
+              "default": null,
+              "required": false
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
           "fragment": "partial dictionary AuthenticationExtensionsClientInputs {\n    AuthenticationExtensionsLargeBlobInputs largeBlob;\n};",
           "type": "dictionary",
           "name": "AuthenticationExtensionsClientInputs",
@@ -2538,6 +2675,31 @@
                 "nullable": false,
                 "union": false,
                 "idlType": "AuthenticationExtensionsLargeBlobInputs"
+              },
+              "default": null,
+              "required": false
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial dictionary AuthenticationExtensionsClientInputs {\n  boolean uvm;\n};",
+          "type": "dictionary",
+          "name": "AuthenticationExtensionsClientInputs",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "uvm",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "boolean"
               },
               "default": null,
               "required": false
@@ -2599,31 +2761,6 @@
           "partial": true
         },
         {
-          "fragment": "partial dictionary AuthenticationExtensionsClientOutputs {\n  UvmEntries uvm;\n};",
-          "type": "dictionary",
-          "name": "AuthenticationExtensionsClientOutputs",
-          "inheritance": null,
-          "members": [
-            {
-              "type": "field",
-              "name": "uvm",
-              "extAttrs": [],
-              "idlType": {
-                "type": "dictionary-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "UvmEntries"
-              },
-              "default": null,
-              "required": false
-            }
-          ],
-          "extAttrs": [],
-          "partial": true
-        },
-        {
           "fragment": "partial dictionary AuthenticationExtensionsClientOutputs {\n    CredentialPropertiesOutput credProps;\n};",
           "type": "dictionary",
           "name": "AuthenticationExtensionsClientOutputs",
@@ -2649,6 +2786,31 @@
           "partial": true
         },
         {
+          "fragment": "partial dictionary AuthenticationExtensionsClientOutputs {\n    AuthenticationExtensionsPRFOutputs prf;\n};",
+          "type": "dictionary",
+          "name": "AuthenticationExtensionsClientOutputs",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "prf",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "AuthenticationExtensionsPRFOutputs"
+              },
+              "default": null,
+              "required": false
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
           "fragment": "partial dictionary AuthenticationExtensionsClientOutputs {\n    AuthenticationExtensionsLargeBlobOutputs largeBlob;\n};",
           "type": "dictionary",
           "name": "AuthenticationExtensionsClientOutputs",
@@ -2665,6 +2827,31 @@
                 "nullable": false,
                 "union": false,
                 "idlType": "AuthenticationExtensionsLargeBlobOutputs"
+              },
+              "default": null,
+              "required": false
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial dictionary AuthenticationExtensionsClientOutputs {\n  UvmEntries uvm;\n};",
+          "type": "dictionary",
+          "name": "AuthenticationExtensionsClientOutputs",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "uvm",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "UvmEntries"
               },
               "default": null,
               "required": false
@@ -2779,12 +2966,14 @@
         "AuthenticationExtensionsClientInputs"
       ],
       "AuthenticationExtensionsClientInputs": [
+        "AuthenticationExtensionsPRFInputs",
         "AuthenticationExtensionsLargeBlobInputs"
       ],
       "AuthenticationExtensionsClientOutputs": [
-        "UvmEntries",
         "CredentialPropertiesOutput",
-        "AuthenticationExtensionsLargeBlobOutputs"
+        "AuthenticationExtensionsPRFOutputs",
+        "AuthenticationExtensionsLargeBlobOutputs",
+        "UvmEntries"
       ],
       "CollectedClientData": [],
       "TokenBinding": [],
@@ -2792,6 +2981,15 @@
         "BufferSource"
       ],
       "CredentialPropertiesOutput": [],
+      "AuthenticationExtensionsPRFValues": [
+        "ArrayBuffer"
+      ],
+      "AuthenticationExtensionsPRFInputs": [
+        "AuthenticationExtensionsPRFValues"
+      ],
+      "AuthenticationExtensionsPRFOutputs": [
+        "AuthenticationExtensionsPRFValues"
+      ],
       "AuthenticationExtensionsLargeBlobInputs": [
         "BufferSource"
       ],
