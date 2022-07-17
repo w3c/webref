@@ -31,7 +31,7 @@ const patches = {
       change: { interface: "IDBVersionChangeEvent", bubbles: false }
     },
     {
-      add : {
+      add: {
         interface: "IDBVersionChangeEvent",
         bubbles: false,
         type: "success",
@@ -64,41 +64,41 @@ const patches = {
   // see also https://github.com/w3c/clipboard-apis/issues/74
   'clipboard-apis': [
     {
-      add:
-      { type: "clipboardchange",
-	interface: "ClipboardEvent",
-	targets: ["DocumentAndElementEventHandlers"],
-	bubbles: true,
-	href: "https://w3c.github.io/clipboard-apis/#clipboardchange"
+      add: {
+        type: "clipboardchange",
+        interface: "ClipboardEvent",
+        targets: ["DocumentAndElementEventHandlers"],
+        bubbles: true,
+        href: "https://w3c.github.io/clipboard-apis/#clipboardchange"
       }
     },
     {
-      add:
-      { type: "copy",
-	interface: "ClipboardEvent",
-	targets: ["DocumentAndElementEventHandlers"],
-	bubbles: true,
-	href: "https://w3c.github.io/clipboard-apis/#clipboardchange"
+      add: {
+        type: "copy",
+        interface: "ClipboardEvent",
+        targets: ["DocumentAndElementEventHandlers"],
+        bubbles: true,
+        href: "https://w3c.github.io/clipboard-apis/#clipboardchange"
       }
     },
     {
-      add:
-      { type: "cut",
-	interface: "ClipboardEvent",
-	targets: ["DocumentAndElementEventHandlers"],
-	bubbles: true,
-	href: "https://w3c.github.io/clipboard-apis/#clipboardchange"
+      add: {
+        type: "cut",
+        interface: "ClipboardEvent",
+        targets: ["DocumentAndElementEventHandlers"],
+        bubbles: true,
+        href: "https://w3c.github.io/clipboard-apis/#clipboardchange"
       }
     },
-      {
-      add:
-      { type: "paste",
-	interface: "ClipboardEvent",
-	targets: ["DocumentAndElementEventHandlers"],
-	bubbles: true,
-	href: "https://w3c.github.io/clipboard-apis/#clipboardchange"
+    {
+      add: {
+        type: "paste",
+        interface: "ClipboardEvent",
+        targets: ["DocumentAndElementEventHandlers"],
+        bubbles: true,
+        href: "https://w3c.github.io/clipboard-apis/#clipboardchange"
       }
-      },
+    },
   ],
   'compat': [
     {
@@ -158,7 +158,11 @@ const patches = {
     {
       pattern: { type: "beforeinput" },
       matched: 1,
-      change: { isExtension: true, href: "https://w3c.github.io/uievents/#beforeinput", interface: "InputEvent"}
+      change: {
+        isExtension: true,
+        href: "https://w3c.github.io/uievents/#beforeinput",
+        interface: "InputEvent"
+      }
     },
     {
       pattern: { type: "textupdate" },
@@ -178,7 +182,11 @@ const patches = {
     {
       pattern: { type: "textformateupdate"},
       matched: 1,
-      change: { type: "textformatupdate", targets: ["EditContext"] , interface: "TextFormatUpdateEvent" }
+      change: {
+        type: "textformatupdate",
+        targets: ["EditContext"],
+        interface: "TextFormatUpdateEvent"
+      }
     }
   ],
   'fullscreen': [
@@ -264,7 +272,8 @@ const patches = {
   ],
   'import-maps': [
     // pending https://github.com/w3c/browser-specs/pull/647
-    { pattern: { type: /.*/ },
+    {
+      pattern: { type: /.*/ },
       matched: 2,
       delete: true
     }
@@ -302,14 +311,21 @@ const patches = {
     {
       pattern: { type: "message" },
       matched: 1,
-      change: { interface: "MessageEvent", href: "https://html.spec.whatwg.org/multipage/indices.html#event-message", isExtension: true }
+      change: {
+        interface: "MessageEvent",
+        href: "https://html.spec.whatwg.org/multipage/indices.html#event-message",
+        isExtension: true
+      }
     }
   ],
   'savedata': [
     {
       pattern: { type: "change" },
       matched: 1,
-      change: { href: "https://wicg.github.io/netinfo/#handling-changes-to-the-underlying-connection", isExtension: true }
+      change: {
+        href: "https://wicg.github.io/netinfo/#handling-changes-to-the-underlying-connection",
+        isExtension: true
+      }
     }
   ],
   'selection-api': [
@@ -334,7 +350,9 @@ const patches = {
   ],
   'speech-api': [
     {
-      pattern: { type: /^(audiostart|soundstart|speechstart|speechend|soundend|audioend|start|end)$/, targets: "SpeechRecognition" },
+      pattern: {
+        type: /^(audiostart|soundstart|speechstart|speechend|soundend|audioend|start|end)$/,
+        targets: "SpeechRecognition" },
       matched: 8,
       change: { interface: 'Event' }
     },
@@ -354,7 +372,10 @@ const patches = {
       change: { interface: 'Event' }
     },
     {
-      pattern: { type: /^(start|end|pause|resume|mark|boundary)$/, targets: "SpeechSynthesisUtterance" },
+      pattern: {
+        type: /^(start|end|pause|resume|mark|boundary)$/,
+        targets: "SpeechSynthesisUtterance"
+      },
       matched: 6,
       change: { interface: "SpeechSynthesisEvent" }
     },
@@ -369,7 +390,11 @@ const patches = {
     {
       pattern: { type: /.*/ },
       matched: 3,
-      change: { interface: "TimeEvent", targets: ["SVGAnimationElement"], bubbles: false }
+      change: {
+        interface: "TimeEvent",
+        targets: ["SVGAnimationElement"],
+        bubbles: false
+      }
     }
   ],
   'uievents': [
@@ -405,71 +430,85 @@ const patches = {
   ],
   // see also https://github.com/KhronosGroup/WebGL/issues/3349
   'webgl1': [
-    { add: {
-      interface: "WebGLContextEvent",
-      bubbles: false,
-      type: "webglcontextlost",
-      targets: ["HTMLCanvasElement", "OffscreenCanvas"] ,
-      src: { "href": "https://www.khronos.org/registry/webgl/specs/latest/1.0/#CONTEXT_LOST" }
-    }
+    {
+      add: {
+        interface: "WebGLContextEvent",
+        bubbles: false,
+        type: "webglcontextlost",
+        targets: ["HTMLCanvasElement", "OffscreenCanvas"] ,
+        src: { "href": "https://www.khronos.org/registry/webgl/specs/latest/1.0/#CONTEXT_LOST" }
+      }
     },
-    { add: {
-      interface: "WebGLContextEvent",
-      bubbles: false,
-      type: "webglcontextrestored",
-      targets: ["HTMLCanvasElement", "OffscreenCanvas"] ,
-      src: { "href": "https://www.khronos.org/registry/webgl/specs/latest/1.0/#CONTEXT_RESTORED" }
-    }
+    {
+      add: {
+        interface: "WebGLContextEvent",
+        bubbles: false,
+        type: "webglcontextrestored",
+        targets: ["HTMLCanvasElement", "OffscreenCanvas"] ,
+        src: { "href": "https://www.khronos.org/registry/webgl/specs/latest/1.0/#CONTEXT_RESTORED" }
+      }
     },
-    { add: {
-      interface: "WebGLContextEvent",
-      bubbles: false,
-      type: "webglcontextcreationerror",
-      targets: ["HTMLCanvasElement", "OffscreenCanvas"] ,
-      src: { "href": "https://www.khronos.org/registry/webgl/specs/latest/1.0/#CONTEXT_CREATION_ERROR" }
-    }
+    {
+      add: {
+        interface: "WebGLContextEvent",
+        bubbles: false,
+        type: "webglcontextcreationerror",
+        targets: ["HTMLCanvasElement", "OffscreenCanvas"] ,
+        src: { "href": "https://www.khronos.org/registry/webgl/specs/latest/1.0/#CONTEXT_CREATION_ERROR" }
+      }
     }
   ],
   // Pending https://github.com/WebAudio/web-midi-api/pull/234
   'webmidi': [
-    { pattern: { targets: null, type: "statechange" },
+    {
+      pattern: { targets: null, type: "statechange" },
       matched: 1,
       delete: true
     },
     {
       pattern: { type: "statechange"},
       matched: 1,
-      change: { targets: ["MIDIPort", "MIDIAccess" ], interface: "MIDIConnectionEvent" }
+      change: {
+        targets: ["MIDIPort", "MIDIAccess" ],
+        interface: "MIDIConnectionEvent"
+      }
     },
     {
       pattern: { type: "midimessage"},
       matched: 1,
       change: { interface: "MIDIMessageEvent" }
-
     }
   ],
   // pending https://github.com/immersive-web/layers/pull/285
   'webxrlayers-1': [
-    { pattern: { type: "redraw" },
+    {
+      pattern: { type: "redraw" },
       matched: 1,
       change: { interface: "XRLayerEvent" }
     }
   ],
   'web-animations-1': [
-    { pattern: { type: /^(finish|cancel|remove)$/ },
+    {
+      pattern: { type: /^(finish|cancel|remove)$/ },
       matched: 3,
       change: { interface: "AnimationPlaybackEvent"}
     }
   ],
   'window-controls-overlay': [
     // Pending https://github.com/WICG/window-controls-overlay/pull/60
-    { pattern: { type: "geometrychange" },
+    {
+      pattern: { type: "geometrychange" },
       matched: 1,
       delete: true
     },
-    { pattern: { type: "ongeometrychange" },
+    {
+      pattern: { type: "ongeometrychange" },
       matched: 1,
-      change: { type: "geometrychange", targets: ["WindowControlsOverlay"], interface: 'WindowControlsOverlayGeometryChangeEvent' }
+      change: {
+        type: "geometrychange",
+        targets: ["WindowControlsOverlay"],
+        interface: 'WindowControlsOverlayGeometryChangeEvent'
+      }
     }
   ]
 };
@@ -481,10 +520,10 @@ function applyEventPatches(spec) {
     let matched = 0;
     const updatedEvents = [];
     if (patch.add) {
-      spec.events.push(patch.add);
+      spec['spec-events'].push(patch.add);
       continue;
     }
-    for (let event of spec.events) {
+    for (let event of spec['spec-events']) {
       const matches = Object.keys(patch.pattern).every(prop => {
         if (patch.pattern[prop] === null) {
           return event[prop] === null || event[prop] === undefined;
@@ -510,7 +549,7 @@ function applyEventPatches(spec) {
       errors.push(`The following patch for the ${spec.shortname} spec changes ${matched} events, but ${patch.matched} was expected: ${JSON.stringify(patch, null, 2)}`);
       continue;
     }
-    spec.events = updatedEvents;
+    spec['spec-events'] = updatedEvents;
   }
   if (!errors.length) {
     spec.needsSaving = true;
@@ -613,9 +652,11 @@ function cleanTargetInTrees(event, parsedInterfaces) {
 }
 
 function extendEvent(event, spec, consolidatedEvents) {
-  const {event: extendedEvent, spec: extendedSpec} = consolidatedEvents.find(({event: e}) => e.href === event.href)
-	|| consolidatedEvents.find(({event: e, spec: s}) => { return event.href.startsWith(s.crawled) && e.type === event.type; })
-	|| {};
+  const { event: extendedEvent, spec: extendedSpec } =
+    consolidatedEvents.find(({event: e}) => e.href === event.href) ||
+    consolidatedEvents.find(({event: e, spec: s}) =>
+      event.href.startsWith(s.crawled) && e.type === event.type) ||
+    {};
   if (!extendedEvent) {
     // make this a fatal error
     return `Found extended event with link ${event.href} in ${spec.shortname}, but did not find a matching original event`;
@@ -638,7 +679,7 @@ function extendEvent(event, spec, consolidatedEvents) {
 
 async function curateEvents(folder) {
   const rawIndex = await loadJSON(path.join(folder, 'index.json'));
-  const index = await expandCrawlResult(rawIndex, folder, ['events', 'idlparsed']);
+  const index = await expandCrawlResult(rawIndex, folder, ['spec-events', 'idlparsed']);
 
   // Collect list of mixin interfaces
   const mixins = {};
@@ -666,14 +707,15 @@ async function curateEvents(folder) {
   });
 
   async function saveEvents(spec) {
-    const pathname = path.join(folder, 'events', spec.shortname + '.json');
-    if (spec.events.length) {
-      const events = Object.assign({
-	spec: {
+    const pathname = path.join(folder, 'spec-events', spec.shortname + '.json');
+    if (spec['spec-events'].length) {
+      const events = {
+        spec: {
           title: spec.title,
           url: spec.crawled
-	}
-      }, {events: spec.events});
+        },
+        'spec-events': spec['spec-events']
+      };
       const json = JSON.stringify(events, null, 2) + '\n';
       await fs.writeFile(pathname, json);
     } else {
@@ -688,16 +730,17 @@ async function curateEvents(folder) {
       errors.push(`Could not find spec with shortname ${specShortname} for event patching`);
       continue;
     }
-    if (!spec.events) {
-      spec.events = [];
+    if (!spec['spec-events']) {
+      spec['spec-events'] = [];
     }
     errors = errors.concat(applyEventPatches(spec));
   }
+
   const consolidatedEvents = [];
   const eventsToConsolidate = [];
-  for (const spec of index.results.filter(s => s.events)) {
+  for (const spec of index.results.filter(s => s['spec-events'])) {
     const updatedEvents = [];
-    for (const event of spec.events) {
+    for (const event of spec['spec-events']) {
       if (expandMixinTargets(event, mixins)) {
         spec.needsSaving = true;
       }
@@ -716,7 +759,7 @@ async function curateEvents(folder) {
         spec.needsSaving = true;
       }
     }
-    spec.events = updatedEvents;
+    spec['spec-events'] = updatedEvents;
   }
   for (let {event, spec} of eventsToConsolidate) {
     const err = extendEvent(event, spec, consolidatedEvents);
@@ -731,8 +774,8 @@ async function curateEvents(folder) {
 
   // Update index removing specs with no events left
   rawIndex.results.forEach(s => {
-    if (s.events && index.results.find(ss => ss.url === s.url).events.length === 0) {
-      delete s.events;
+    if (s['spec-events'] && index.results.find(ss => ss.url === s.url)['spec-events'].length === 0) {
+      delete s['spec-events'];
     }
   });
   const json = JSON.stringify(rawIndex, null, 2) + '\n';
