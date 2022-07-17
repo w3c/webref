@@ -1,9 +1,9 @@
 /**
  * Create a patch from last commit in current branch provided it touched one
- * CSS, elements, events, or IDL extract file, rollback that commit, copy the
- * patch file to ed/[xxx]patches as needed, and commit the file in a new branch,
- * leaving just a few manual steps to actually integrate the patch into Webref.
- * 
+ * CSS, elements, or IDL extract file, rollback that commit, copy the patch file
+ * to ed/[xxx]patches as needed, and commit the file in a new branch, leaving
+ * just a few manual steps to actually integrate the patch into Webref.
+ *
  * node tools/create-patch.js
  */
 
@@ -14,23 +14,21 @@ const exec = util.promisify(require('child_process').exec);
 const execFile = util.promisify(require('child_process').execFile);
 
 async function main() {
-  console.log('Check last commit touches one and only one CSS/Elements/Events/IDL file...');
+  console.log('Check last commit touches one and only one CSS/Elements/IDL file...');
   const { stdout: diffOut } = await execFile('git', ['diff', '--name-only', 'HEAD', 'HEAD~1']);
   const files = diffOut.split(/[\r\n]/).filter(f => !!f);
   if (files.length !== 1) {
-    throw new Error('Last commit should only touch one CSS/Elements/Events/IDL file');
+    throw new Error('Last commit should only touch one CSS/Elements/IDL file');
   }
   const commitFile = files[0];
   if (!commitFile.startsWith('ed/idl/') &&
       !commitFile.startsWith('ed/css/') &&
-      !commitFile.startsWith('ed/elements/') &&
-      !commitFile.startsWith('ed/events/')) {
-    throw new Error('Last commit did not touch a CSS/Elements/Events/IDL file');
+      !commitFile.startsWith('ed/elements/')) {
+    throw new Error('Last commit did not touch a CSS/Elements/IDL file');
   }
   const patchType =
     commitFile.startsWith('ed/idl/') ? 'idl' :
-    commitFile.startsWith('ed/elements/') ? 'elements' :
-    commitFile.startsWith('ed/events/') ? 'events' : 'css';
+    commitFile.startsWith('ed/elements/') ? 'elements' : 'css';
   const patchFile = commitFile.substring(`ed/${patchType}/`.length);
   console.log('  done');
 
