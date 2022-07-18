@@ -1,6 +1,0 @@
-// Source: Crash Reporting (https://wicg.github.io/crash-reporting/)
-[Exposed=(Window,Worker)]
-interface CrashReportBody : ReportBody {
-  [Default] object toJSON();
-  readonly attribute DOMString? reason;
-};

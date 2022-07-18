@@ -1,6 +1,0 @@
-// Source: File System Standard (https://fs.spec.whatwg.org/)
-[Exposed=(Window,Worker), SecureContext, Serializable]
-interface FileSystemFileHandle : FileSystemHandle {
-  Promise<File> getFile();
-  Promise<FileSystemWritableFileStream> createWritable(optional FileSystemCreateWritableOptions options = {});
-};

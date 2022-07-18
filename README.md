@@ -15,28 +15,32 @@ Additionally, subsets of the curated content get manually reviewed and published
 - [@webref/css](https://www.npmjs.com/package/@webref/css) contains a [curated](packages/css#guarantees) version of the [ed/css](ed/css) folder.
 - [@webref/elements](https://www.npmjs.com/package/@webref/elements) contains a [curated](packages/elements#guarantees) version of the [ed/elements](ed/elements) folder.
 
-**Important:** Unless you are ready to deal with invalid content, we recommend that you rely on the content of the `curated` branch or NPM packages instead of on the raw content in the `main` branch of this repository.
+**Important:** Unless you are ready to deal with invalid content, we strongly recommend that you process contents of the `curated` branch or NPM packages instead of raw content in the `main` branch.
 
 
 ## Available extracts
 
-This repository contains information about latest Editor's Drafts of Web specifications in the [ed](ed) folder, as well as about the latest published version (for _[/TR/](https://www.w3.org/TR/)_ specifications) in the [tr](tr) folder. More often that not, published versions of specifications are much older than their latest Editor's Draft. Data in the [tr](tr) folder is more invalid/inconsistent than data in the [ed](ed) folder as a result.
+This repository contains raw and curated information about latest Editor's Drafts of Web specifications in the [ed](https://github.com/w3c/webref/tree/curated/ed) folder, as well as raw information about the latest published version (for _[/TR/](https://www.w3.org/TR/)_ specifications) in the [tr](tr) folder.
 
-The following subfolders contain individual machine-readable JSON or text files generated from specifications:
+More often that not, published versions of specifications are much older than their latest Editor's Draft. Data in the [tr](tr) folder is more invalid/inconsistent than data in the [ed](ed) folder as a result. Additionally, no attempt is being made at curating data in the [tr](tr) folder, so use that folder at your own risk!
 
-- [ed/css](ed/css) and [tr/css](tr/css): CSS terms (properties, descriptors, value spaces). One file per specification [series](https://github.com/w3c/browser-specs/#series).
-- [ed/dfns](ed/dfns) and [tr/dfns](tr/dfns): `<dfn>` terms, along with metadata such as linking text, access level, namespace. One file per specification.
-- [ed/elements](ed/elements) and [tr/elements](tr/elements): Markup elements defined, along with the interface that they implement. One file per specification.
-- [ed/headings](ed/headings) and [tr/headings](tr/headings): Section headings. One file per specification.
-- [ed/idl](ed/idl) and [tr/idl](tr/idl): Raw WebIDL index. One file per specification [series](https://github.com/w3c/browser-specs/#series).
-- [ed/idlparsed](ed/idlparsed) and [tr/idlparsed](tr/idlparsed): Parsed WebIDL. One file per specification.
-- [ed/ids](ed/ids) and [tr/ids](tr/ids): Fragments defined in the specification. One file per specification.
-- [ed/links](ed/links) and [tr/links](tr/links): Links to other documents, along with targeted fragments. One file per specification.
-- [ed/refs](ed/refs) and [tr/refs](tr/refs): Normative and informative references to other specifications. One file per specification.
+The following subfolders in the `curated` branch contain individual machine-readable JSON or text files generated from specifications:
+
+- [ed/css](https://github.com/w3c/webref/tree/curated/ed/css): CSS terms (properties, descriptors, value spaces). One file per specification [series](https://github.com/w3c/browser-specs/#series).
+- [ed/dfns](https://github.com/w3c/webref/tree/curated/ed/dfns): `<dfn>` terms, along with metadata such as linking text, access level, namespace. One file per specification.
+- [ed/elements](https://github.com/w3c/webref/tree/curated/ed/elements): Markup elements defined, along with the interface that they implement. One file per specification.
+- [ed/headings](https://github.com/w3c/webref/tree/curated/ed/headings): Section headings. One file per specification.
+- [ed/idl](https://github.com/w3c/webref/tree/curated/ed/idl): Raw WebIDL index. One file per specification [series](https://github.com/w3c/browser-specs/#series).
+- [ed/idlnames](https://github.com/w3c/webref/tree/curated/ed/idlnames): WebIDL definitions per referenceable IDL name. One file per IDL name.
+- [ed/idlnamesparsed](https://github.com/w3c/webref/tree/curated/ed/idlnamesparsed): Parsed WebIDL structure of definitions in the `idlnames` folder. One file per IDL name.
+- [ed/idlparsed](https://github.com/w3c/webref/tree/curated/ed/idlparsed): Parsed WebIDL structure of definitions in the `idl` folder. One file per specification.
+- [ed/ids](https://github.com/w3c/webref/tree/curated/ed/ids): Fragments defined in the specification. One file per specification.
+- [ed/links](https://github.com/w3c/webref/tree/curated/ed/links): Links to other documents, along with targeted fragments. One file per specification.
+- [ed/refs](https://github.com/w3c/webref/tree/curated/ed/refs): Normative and informative references to other specifications. One file per specification.
 
 Individual files are named after the shortname of the specification, or after the shortname of the specification series for CSS definitions and raw IDL files. Individual files are only created when needed, meaning when the specification actually includes relevant terms.
 
-The [ed/index.json](ed/index.json) and [tr/index.json](tr/index.json) files contain the index of specifications that have been crawled, and relative links to individual files that have been created.
+The [ed/index.json](https://github.com/w3c/webref/tree/curated/ed/index.json) file contains the index of specifications that have been crawled, and relative links to individual files that have been created.
 
 This repository uses [Reffy](https://github.com/w3c/reffy), a Web spec exploration tool, to crawl the specifications and generate the data. In particular, the data it contains is the result of running Reffy. The repository does not contain any more data.
 

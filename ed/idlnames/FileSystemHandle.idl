@@ -1,8 +1,0 @@
-// Source: File System Standard (https://fs.spec.whatwg.org/)
-[Exposed=(Window,Worker), SecureContext, Serializable]
-interface FileSystemHandle {
-  readonly attribute FileSystemHandleKind kind;
-  readonly attribute USVString name;
-
-  Promise<boolean> isSameEntry(FileSystemHandle other);
-};
