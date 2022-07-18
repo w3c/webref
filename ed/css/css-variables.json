@@ -3,7 +3,19 @@
     "title": "CSS Custom Properties for Cascading Variables Module Level 2",
     "url": "https://drafts.csswg.org/css-variables-2/"
   },
-  "properties": {},
+  "properties": {
+    "--*": {
+      "name": "--*",
+      "value": "<declaration-value>?",
+      "initial": "the guaranteed-invalid value",
+      "appliesTo": "all elements and all pseudo-elements (including those with restricted property lists)",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "specified value with variables substituted, or the guaranteed-invalid value",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete"
+    }
+  },
   "descriptors": {},
   "valuespaces": {
     "<custom-property-name>": {
