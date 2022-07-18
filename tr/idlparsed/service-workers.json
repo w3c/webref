@@ -1,6 +1,6 @@
 {
   "spec": {
-    "title": "Service Workers 1",
+    "title": "Service Workers",
     "url": "https://www.w3.org/TR/service-workers-1/"
   },
   "idlparsed": {
@@ -17,6 +17,7 @@
           "ServiceWorker",
           "ServiceWorkerRegistration",
           "ServiceWorkerContainer",
+          "NavigationPreloadManager",
           "Cache",
           "CacheStorage"
         ],
@@ -24,6 +25,7 @@
           "ServiceWorker",
           "ServiceWorkerRegistration",
           "ServiceWorkerContainer",
+          "NavigationPreloadManager",
           "Cache",
           "CacheStorage"
         ],
@@ -37,7 +39,7 @@
     },
     "idlNames": {
       "ServiceWorker": {
-        "fragment": "[SecureContext, Exposed=(Window,Worker)]\ninterface ServiceWorker : EventTarget {\n  readonly attribute USVString scriptURL;\n  readonly attribute ServiceWorkerState state;\n  void postMessage(any message, optional sequence<object> transfer = []);\n\n  // event\n  attribute EventHandler onstatechange;\n};",
+        "fragment": "[SecureContext, Exposed=(Window,Worker)]\ninterface ServiceWorker : EventTarget {\n  readonly attribute USVString scriptURL;\n  readonly attribute ServiceWorkerState state;\n  undefined postMessage(any message, sequence<object> transfer);\n  undefined postMessage(any message, optional StructuredSerializeOptions options = {});\n\n  // event\n  attribute EventHandler onstatechange;\n};",
         "type": "interface",
         "name": "ServiceWorker",
         "inheritance": "EventTarget",
@@ -81,7 +83,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
             },
             "arguments": [
               {
@@ -121,9 +123,56 @@
                     }
                   ]
                 },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "postMessage",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "message",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "any"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "options",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "StructuredSerializeOptions"
+                },
                 "default": {
-                  "type": "sequence",
-                  "value": []
+                  "type": "dictionary"
                 },
                 "optional": true,
                 "variadic": false
@@ -175,10 +224,14 @@
         "partial": false
       },
       "ServiceWorkerState": {
-        "fragment": "enum ServiceWorkerState {\n  \"installing\",\n  \"installed\",\n  \"activating\",\n  \"activated\",\n  \"redundant\"\n};",
+        "fragment": "enum ServiceWorkerState {\n  \"parsed\",\n  \"installing\",\n  \"installed\",\n  \"activating\",\n  \"activated\",\n  \"redundant\"\n};",
         "type": "enum",
         "name": "ServiceWorkerState",
         "values": [
+          {
+            "type": "enum-value",
+            "value": "parsed"
+          },
           {
             "type": "enum-value",
             "value": "installing"
@@ -203,7 +256,7 @@
         "extAttrs": []
       },
       "ServiceWorkerRegistration": {
-        "fragment": "[SecureContext, Exposed=(Window,Worker)]\ninterface ServiceWorkerRegistration : EventTarget {\n  readonly attribute ServiceWorker? installing;\n  readonly attribute ServiceWorker? waiting;\n  readonly attribute ServiceWorker? active;\n\n  readonly attribute USVString scope;\n  readonly attribute ServiceWorkerUpdateViaCache updateViaCache;\n\n  [NewObject] Promise<void> update();\n  [NewObject] Promise<boolean> unregister();\n\n  // event\n  attribute EventHandler onupdatefound;\n};",
+        "fragment": "[SecureContext, Exposed=(Window,Worker)]\ninterface ServiceWorkerRegistration : EventTarget {\n  readonly attribute ServiceWorker? installing;\n  readonly attribute ServiceWorker? waiting;\n  readonly attribute ServiceWorker? active;\n  [SameObject] readonly attribute NavigationPreloadManager navigationPreload;\n\n  readonly attribute USVString scope;\n  readonly attribute ServiceWorkerUpdateViaCache updateViaCache;\n\n  [NewObject] Promise<undefined> update();\n  [NewObject] Promise<boolean> unregister();\n\n  // event\n  attribute EventHandler onupdatefound;\n};",
         "type": "interface",
         "name": "ServiceWorkerRegistration",
         "inheritance": "EventTarget",
@@ -255,6 +308,28 @@
           },
           {
             "type": "attribute",
+            "name": "navigationPreload",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "NavigationPreloadManager"
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "SameObject",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
             "name": "scope",
             "idlType": {
               "type": "attribute-type",
@@ -299,7 +374,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "void"
+                  "idlType": "undefined"
                 }
               ]
             },
@@ -408,7 +483,7 @@
         "extAttrs": []
       },
       "ServiceWorkerContainer": {
-        "fragment": "[SecureContext, Exposed=(Window,Worker)]\ninterface ServiceWorkerContainer : EventTarget {\n  readonly attribute ServiceWorker? controller;\n  readonly attribute Promise<ServiceWorkerRegistration> ready;\n\n  [NewObject] Promise<ServiceWorkerRegistration> register(USVString scriptURL, optional RegistrationOptions options = {});\n\n  [NewObject] Promise<any> getRegistration(optional USVString clientURL = \"\");\n  [NewObject] Promise<FrozenArray<ServiceWorkerRegistration>> getRegistrations();\n\n  void startMessages();\n\n  // events\n  attribute EventHandler oncontrollerchange;\n  attribute EventHandler onmessage; // event.source of message events is ServiceWorker object\n  attribute EventHandler onmessageerror;\n};",
+        "fragment": "[SecureContext, Exposed=(Window,Worker)]\ninterface ServiceWorkerContainer : EventTarget {\n  readonly attribute ServiceWorker? controller;\n  readonly attribute Promise<ServiceWorkerRegistration> ready;\n\n  [NewObject] Promise<ServiceWorkerRegistration> register(USVString scriptURL, optional RegistrationOptions options = {});\n\n  [NewObject] Promise<(ServiceWorkerRegistration or undefined)> getRegistration(optional USVString clientURL = \"\");\n  [NewObject] Promise<FrozenArray<ServiceWorkerRegistration>> getRegistrations();\n\n  undefined startMessages();\n\n  // events\n  attribute EventHandler oncontrollerchange;\n  attribute EventHandler onmessage; // event.source of message events is ServiceWorker object\n  attribute EventHandler onmessageerror;\n};",
         "type": "interface",
         "name": "ServiceWorkerContainer",
         "inheritance": "EventTarget",
@@ -533,8 +608,25 @@
                   "extAttrs": [],
                   "generic": "",
                   "nullable": false,
-                  "union": false,
-                  "idlType": "any"
+                  "union": true,
+                  "idlType": [
+                    {
+                      "type": null,
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "ServiceWorkerRegistration"
+                    },
+                    {
+                      "type": null,
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "undefined"
+                    }
+                  ]
                 }
               ]
             },
@@ -618,7 +710,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
             },
             "arguments": [],
             "extAttrs": [],
@@ -757,8 +849,197 @@
         "extAttrs": [],
         "partial": false
       },
+      "NavigationPreloadManager": {
+        "fragment": "[SecureContext, Exposed=(Window,Worker)]\ninterface NavigationPreloadManager {\n  Promise<undefined> enable();\n  Promise<undefined> disable();\n  Promise<undefined> setHeaderValue(ByteString value);\n  Promise<NavigationPreloadState> getState();\n};",
+        "type": "interface",
+        "name": "NavigationPreloadManager",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "operation",
+            "name": "enable",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "undefined"
+                }
+              ]
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "disable",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "undefined"
+                }
+              ]
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "setHeaderValue",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "undefined"
+                }
+              ]
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "value",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "ByteString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "getState",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "NavigationPreloadState"
+                }
+              ]
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": ""
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                }
+              ]
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "NavigationPreloadState": {
+        "fragment": "dictionary NavigationPreloadState {\n  boolean enabled = false;\n  ByteString headerValue;\n};",
+        "type": "dictionary",
+        "name": "NavigationPreloadState",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "enabled",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "headerValue",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "ByteString"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
       "ServiceWorkerGlobalScope": {
-        "fragment": "[Global=(Worker,ServiceWorker), Exposed=ServiceWorker]\ninterface ServiceWorkerGlobalScope : WorkerGlobalScope {\n  [SameObject] readonly attribute Clients clients;\n  [SameObject] readonly attribute ServiceWorkerRegistration registration;\n\n  [NewObject] Promise<void> skipWaiting();\n\n  attribute EventHandler oninstall;\n  attribute EventHandler onactivate;\n  attribute EventHandler onfetch;\n\n  attribute EventHandler onmessage;\n  attribute EventHandler onmessageerror;\n};",
+        "fragment": "[Global=(Worker,ServiceWorker), Exposed=ServiceWorker]\ninterface ServiceWorkerGlobalScope : WorkerGlobalScope {\n  [SameObject] readonly attribute Clients clients;\n  [SameObject] readonly attribute ServiceWorkerRegistration registration;\n  [SameObject] readonly attribute ServiceWorker serviceWorker;\n\n  [NewObject] Promise<undefined> skipWaiting();\n\n  attribute EventHandler oninstall;\n  attribute EventHandler onactivate;\n  attribute EventHandler onfetch;\n\n  attribute EventHandler onmessage;\n  attribute EventHandler onmessageerror;\n};",
         "type": "interface",
         "name": "ServiceWorkerGlobalScope",
         "inheritance": "WorkerGlobalScope",
@@ -808,6 +1089,28 @@
             "readonly": true
           },
           {
+            "type": "attribute",
+            "name": "serviceWorker",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "ServiceWorker"
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "SameObject",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": true
+          },
+          {
             "type": "operation",
             "name": "skipWaiting",
             "idlType": {
@@ -823,7 +1126,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "void"
+                  "idlType": "undefined"
                 }
               ]
             },
@@ -944,7 +1247,7 @@
         "partial": false
       },
       "Client": {
-        "fragment": "[Exposed=ServiceWorker]\ninterface Client {\n  readonly attribute USVString url;\n  readonly attribute FrameType frameType;\n  readonly attribute DOMString id;\n  readonly attribute ClientType type;\n  void postMessage(any message, optional sequence<object> transfer = []);\n};",
+        "fragment": "[Exposed=ServiceWorker]\ninterface Client {\n  readonly attribute USVString url;\n  readonly attribute FrameType frameType;\n  readonly attribute DOMString id;\n  readonly attribute ClientType type;\n  undefined postMessage(any message, sequence<object> transfer);\n  undefined postMessage(any message, optional StructuredSerializeOptions options = {});\n};",
         "type": "interface",
         "name": "Client",
         "inheritance": null,
@@ -1018,7 +1321,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
             },
             "arguments": [
               {
@@ -1058,9 +1361,56 @@
                     }
                   ]
                 },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "postMessage",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "message",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "any"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "options",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "StructuredSerializeOptions"
+                },
                 "default": {
-                  "type": "sequence",
-                  "value": []
+                  "type": "dictionary"
                 },
                 "optional": true,
                 "variadic": false
@@ -1268,7 +1618,7 @@
         "extAttrs": []
       },
       "Clients": {
-        "fragment": "[Exposed=ServiceWorker]\ninterface Clients {\n  // The objects returned will be new instances every time\n  [NewObject] Promise<any> get(DOMString id);\n  [NewObject] Promise<FrozenArray<Client>> matchAll(optional ClientQueryOptions options = {});\n  [NewObject] Promise<WindowClient?> openWindow(USVString url);\n  [NewObject] Promise<void> claim();\n};",
+        "fragment": "[Exposed=ServiceWorker]\ninterface Clients {\n  // The objects returned will be new instances every time\n  [NewObject] Promise<(Client or undefined)> get(DOMString id);\n  [NewObject] Promise<FrozenArray<Client>> matchAll(optional ClientQueryOptions options = {});\n  [NewObject] Promise<WindowClient?> openWindow(USVString url);\n  [NewObject] Promise<undefined> claim();\n};",
         "type": "interface",
         "name": "Clients",
         "inheritance": null,
@@ -1288,8 +1638,25 @@
                   "extAttrs": [],
                   "generic": "",
                   "nullable": false,
-                  "union": false,
-                  "idlType": "any"
+                  "union": true,
+                  "idlType": [
+                    {
+                      "type": null,
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "Client"
+                    },
+                    {
+                      "type": null,
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "undefined"
+                    }
+                  ]
                 }
               ]
             },
@@ -1444,7 +1811,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "void"
+                  "idlType": "undefined"
                 }
               ]
             },
@@ -1544,7 +1911,7 @@
         "extAttrs": []
       },
       "ExtendableEvent": {
-        "fragment": "[Exposed=ServiceWorker]\ninterface ExtendableEvent : Event {\n  constructor(DOMString type, optional ExtendableEventInit eventInitDict = {});\n  void waitUntil(Promise<any> f);\n};",
+        "fragment": "[Exposed=ServiceWorker]\ninterface ExtendableEvent : Event {\n  constructor(DOMString type, optional ExtendableEventInit eventInitDict = {});\n  undefined waitUntil(Promise<any> f);\n};",
         "type": "interface",
         "name": "ExtendableEvent",
         "inheritance": "Event",
@@ -1598,7 +1965,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
             },
             "arguments": [
               {
@@ -1654,7 +2021,7 @@
         "partial": false
       },
       "FetchEvent": {
-        "fragment": "[Exposed=ServiceWorker]\ninterface FetchEvent : ExtendableEvent {\n  constructor(DOMString type, FetchEventInit eventInitDict);\n  [SameObject] readonly attribute Request request;\n  readonly attribute DOMString clientId;\n\n  void respondWith(Promise<Response> r);\n};",
+        "fragment": "[Exposed=ServiceWorker]\ninterface FetchEvent : ExtendableEvent {\n  constructor(DOMString type, FetchEventInit eventInitDict);\n  [SameObject] readonly attribute Request request;\n  readonly attribute Promise<any> preloadResponse;\n  readonly attribute DOMString clientId;\n  readonly attribute DOMString resultingClientId;\n  readonly attribute DOMString replacesClientId;\n  readonly attribute Promise<undefined> handled;\n\n  undefined respondWith(Promise<Response> r);\n};",
         "type": "interface",
         "name": "FetchEvent",
         "inheritance": "ExtendableEvent",
@@ -1721,6 +2088,30 @@
           },
           {
             "type": "attribute",
+            "name": "preloadResponse",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "any"
+                }
+              ]
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
             "name": "clientId",
             "idlType": {
               "type": "attribute-type",
@@ -1735,6 +2126,60 @@
             "readonly": true
           },
           {
+            "type": "attribute",
+            "name": "resultingClientId",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "replacesClientId",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "handled",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "undefined"
+                }
+              ]
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
             "type": "operation",
             "name": "respondWith",
             "idlType": {
@@ -1743,7 +2188,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
             },
             "arguments": [
               {
@@ -1790,7 +2235,7 @@
         "partial": false
       },
       "FetchEventInit": {
-        "fragment": "dictionary FetchEventInit : ExtendableEventInit {\n  required Request request;\n  DOMString clientId = \"\";\n};",
+        "fragment": "dictionary FetchEventInit : ExtendableEventInit {\n  required Request request;\n  Promise<any> preloadResponse;\n  DOMString clientId = \"\";\n  DOMString resultingClientId = \"\";\n  DOMString replacesClientId = \"\";\n  Promise<undefined> handled;\n};",
         "type": "dictionary",
         "name": "FetchEventInit",
         "inheritance": "ExtendableEventInit",
@@ -1812,6 +2257,30 @@
           },
           {
             "type": "field",
+            "name": "preloadResponse",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "any"
+                }
+              ]
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
             "name": "clientId",
             "extAttrs": [],
             "idlType": {
@@ -1826,6 +2295,66 @@
               "type": "string",
               "value": ""
             },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "resultingClientId",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": {
+              "type": "string",
+              "value": ""
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "replacesClientId",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": {
+              "type": "string",
+              "value": ""
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "handled",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "undefined"
+                }
+              ]
+            },
+            "default": null,
             "required": false
           }
         ],
@@ -2141,7 +2670,7 @@
         "partial": false
       },
       "Cache": {
-        "fragment": "[SecureContext, Exposed=(Window,Worker)]\ninterface Cache {\n  [NewObject] Promise<any> match(RequestInfo request, optional CacheQueryOptions options = {});\n  [NewObject] Promise<FrozenArray<Response>> matchAll(optional RequestInfo request, optional CacheQueryOptions options = {});\n  [NewObject] Promise<void> add(RequestInfo request);\n  [NewObject] Promise<void> addAll(sequence<RequestInfo> requests);\n  [NewObject] Promise<void> put(RequestInfo request, Response response);\n  [NewObject] Promise<boolean> delete(RequestInfo request, optional CacheQueryOptions options = {});\n  [NewObject] Promise<FrozenArray<Request>> keys(optional RequestInfo request, optional CacheQueryOptions options = {});\n};",
+        "fragment": "[SecureContext, Exposed=(Window,Worker)]\ninterface Cache {\n  [NewObject] Promise<(Response or undefined)> match(RequestInfo request, optional CacheQueryOptions options = {});\n  [NewObject] Promise<FrozenArray<Response>> matchAll(optional RequestInfo request, optional CacheQueryOptions options = {});\n  [NewObject] Promise<undefined> add(RequestInfo request);\n  [NewObject] Promise<undefined> addAll(sequence<RequestInfo> requests);\n  [NewObject] Promise<undefined> put(RequestInfo request, Response response);\n  [NewObject] Promise<boolean> delete(RequestInfo request, optional CacheQueryOptions options = {});\n  [NewObject] Promise<FrozenArray<Request>> keys(optional RequestInfo request, optional CacheQueryOptions options = {});\n};",
         "type": "interface",
         "name": "Cache",
         "inheritance": null,
@@ -2161,8 +2690,25 @@
                   "extAttrs": [],
                   "generic": "",
                   "nullable": false,
-                  "union": false,
-                  "idlType": "any"
+                  "union": true,
+                  "idlType": [
+                    {
+                      "type": null,
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "Response"
+                    },
+                    {
+                      "type": null,
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "undefined"
+                    }
+                  ]
                 }
               ]
             },
@@ -2303,7 +2849,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "void"
+                  "idlType": "undefined"
                 }
               ]
             },
@@ -2351,7 +2897,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "void"
+                  "idlType": "undefined"
                 }
               ]
             },
@@ -2408,7 +2954,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "void"
+                  "idlType": "undefined"
                 }
               ]
             },
@@ -2689,7 +3235,7 @@
         "partial": false
       },
       "CacheStorage": {
-        "fragment": "[SecureContext, Exposed=(Window,Worker)]\ninterface CacheStorage {\n  [NewObject] Promise<any> match(RequestInfo request, optional MultiCacheQueryOptions options = {});\n  [NewObject] Promise<boolean> has(DOMString cacheName);\n  [NewObject] Promise<Cache> open(DOMString cacheName);\n  [NewObject] Promise<boolean> delete(DOMString cacheName);\n  [NewObject] Promise<sequence<DOMString>> keys();\n};",
+        "fragment": "[SecureContext, Exposed=(Window,Worker)]\ninterface CacheStorage {\n  [NewObject] Promise<(Response or undefined)> match(RequestInfo request, optional MultiCacheQueryOptions options = {});\n  [NewObject] Promise<boolean> has(DOMString cacheName);\n  [NewObject] Promise<Cache> open(DOMString cacheName);\n  [NewObject] Promise<boolean> delete(DOMString cacheName);\n  [NewObject] Promise<sequence<DOMString>> keys();\n};",
         "type": "interface",
         "name": "CacheStorage",
         "inheritance": null,
@@ -2709,8 +3255,25 @@
                   "extAttrs": [],
                   "generic": "",
                   "nullable": false,
-                  "union": false,
-                  "idlType": "any"
+                  "union": true,
+                  "idlType": [
+                    {
+                      "type": null,
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "Response"
+                    },
+                    {
+                      "type": null,
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "undefined"
+                    }
+                  ]
                 }
               ]
             },
@@ -3089,8 +3652,8 @@
       ],
       "WindowOrWorkerGlobalScope": [
         {
-          "fragment": "partial interface WindowOrWorkerGlobalScope {\n  [SecureContext, SameObject] readonly attribute CacheStorage caches;\n};",
-          "type": "interface",
+          "fragment": "partial interface mixin WindowOrWorkerGlobalScope {\n  [SecureContext, SameObject] readonly attribute CacheStorage caches;\n};",
+          "type": "interface mixin",
           "name": "WindowOrWorkerGlobalScope",
           "inheritance": null,
           "members": [
@@ -3141,6 +3704,7 @@
         "ServiceWorker",
         "ServiceWorkerRegistration",
         "ServiceWorkerContainer",
+        "NavigationPreloadManager",
         "Cache",
         "CacheStorage"
       ],
@@ -3148,6 +3712,7 @@
         "ServiceWorker",
         "ServiceWorkerRegistration",
         "ServiceWorkerContainer",
+        "NavigationPreloadManager",
         "Cache",
         "CacheStorage"
       ],
@@ -3165,15 +3730,15 @@
       "ServiceWorker": [
         "EventTarget",
         "ServiceWorkerState",
-        "void",
+        "StructuredSerializeOptions",
         "EventHandler",
         "AbstractWorker"
       ],
       "ServiceWorkerRegistration": [
         "EventTarget",
         "ServiceWorker",
+        "NavigationPreloadManager",
         "ServiceWorkerUpdateViaCache",
-        "void",
         "EventHandler"
       ],
       "Navigator": [
@@ -3187,24 +3752,27 @@
         "ServiceWorker",
         "ServiceWorkerRegistration",
         "RegistrationOptions",
-        "void",
         "EventHandler"
       ],
       "RegistrationOptions": [
         "WorkerType",
         "ServiceWorkerUpdateViaCache"
       ],
+      "NavigationPreloadManager": [
+        "NavigationPreloadState"
+      ],
+      "NavigationPreloadState": [],
       "ServiceWorkerGlobalScope": [
         "WorkerGlobalScope",
         "Clients",
         "ServiceWorkerRegistration",
-        "void",
+        "ServiceWorker",
         "EventHandler"
       ],
       "Client": [
         "FrameType",
         "ClientType",
-        "void"
+        "StructuredSerializeOptions"
       ],
       "WindowClient": [
         "Client",
@@ -3214,16 +3782,14 @@
       "Clients": [
         "Client",
         "ClientQueryOptions",
-        "WindowClient",
-        "void"
+        "WindowClient"
       ],
       "ClientQueryOptions": [
         "ClientType"
       ],
       "ExtendableEvent": [
         "Event",
-        "ExtendableEventInit",
-        "void"
+        "ExtendableEventInit"
       ],
       "ExtendableEventInit": [
         "EventInit"
@@ -3232,7 +3798,6 @@
         "ExtendableEvent",
         "FetchEventInit",
         "Request",
-        "void",
         "Response"
       ],
       "FetchEventInit": [
@@ -3256,14 +3821,14 @@
         "CacheStorage"
       ],
       "Cache": [
+        "Response",
         "RequestInfo",
         "CacheQueryOptions",
-        "Response",
-        "void",
         "Request"
       ],
       "CacheQueryOptions": [],
       "CacheStorage": [
+        "Response",
         "RequestInfo",
         "MultiCacheQueryOptions",
         "Cache"
@@ -3274,7 +3839,7 @@
     },
     "externalDependencies": [
       "EventTarget",
-      "void",
+      "StructuredSerializeOptions",
       "EventHandler",
       "Navigator",
       "WorkerNavigator",

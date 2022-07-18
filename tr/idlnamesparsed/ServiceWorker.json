@@ -3,16 +3,16 @@
   "type": "interface",
   "defined": {
     "spec": {
-      "title": "Service Workers 1",
+      "title": "Service Workers",
       "url": "https://www.w3.org/TR/service-workers-1/"
     },
-    "fragment": "[SecureContext, Exposed=(Window,Worker)]\ninterface ServiceWorker : EventTarget {\n  readonly attribute USVString scriptURL;\n  readonly attribute ServiceWorkerState state;\n  void postMessage(any message, optional sequence<object> transfer = []);\n\n  // event\n  attribute EventHandler onstatechange;\n};",
+    "fragment": "[SecureContext, Exposed=(Window,Worker)]\ninterface ServiceWorker : EventTarget {\n  readonly attribute USVString scriptURL;\n  readonly attribute ServiceWorkerState state;\n  undefined postMessage(any message, sequence<object> transfer);\n  undefined postMessage(any message, optional StructuredSerializeOptions options = {});\n\n  // event\n  attribute EventHandler onstatechange;\n};",
     "href": "https://www.w3.org/TR/service-workers-1/#serviceworker"
   },
   "extended": [
     {
       "spec": {
-        "title": "Service Workers 1",
+        "title": "Service Workers",
         "url": "https://www.w3.org/TR/service-workers-1/"
       },
       "fragment": "ServiceWorker includes AbstractWorker;"

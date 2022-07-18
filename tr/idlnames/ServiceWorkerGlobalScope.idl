@@ -1,10 +1,11 @@
-// Source: Service Workers 1 (https://www.w3.org/TR/service-workers-1/)
+// Source: Service Workers (https://www.w3.org/TR/service-workers-1/)
 [Global=(Worker,ServiceWorker), Exposed=ServiceWorker]
 interface ServiceWorkerGlobalScope : WorkerGlobalScope {
   [SameObject] readonly attribute Clients clients;
   [SameObject] readonly attribute ServiceWorkerRegistration registration;
+  [SameObject] readonly attribute ServiceWorker serviceWorker;
 
-  [NewObject] Promise<void> skipWaiting();
+  [NewObject] Promise<undefined> skipWaiting();
 
   attribute EventHandler oninstall;
   attribute EventHandler onactivate;

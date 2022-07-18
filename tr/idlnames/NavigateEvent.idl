@@ -14,5 +14,5 @@ interface NavigateEvent : Event {
   readonly attribute any info;
 
   undefined intercept(optional NavigationInterceptOptions options = {});
-  undefined restoreScroll();
+  undefined scroll();
 };

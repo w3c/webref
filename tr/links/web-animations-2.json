@@ -22,27 +22,42 @@
     "https://drafts.csswg.org/web-animations-1/": [
       "animation-effect",
       "iteration-duration",
-      "animation-hold-time",
-      "animation",
-      "current-time",
       "end-delay",
       "timeline",
+      "play-state",
+      "current-time",
+      "monotonically-increasing",
+      "apply-any-pending-playback-rate",
+      "playback-rate",
+      "associated-effect-end",
+      "animation-start-time",
+      "animation-hold-time",
       "unresolved",
       "finished-play-state",
+      "update-an-animations-finished-state",
       "iteration-progress",
       "target-effect",
       "keyframe-effect",
-      "inactive-timeline",
       "time-value",
+      "animation",
+      "pending-pause-task",
+      "current-ready-promise",
+      "effective-playback-rate",
+      "pending-playback-rate",
       "ready",
       "animation-associated-effect",
       "current-finished-promise",
       "pause-an-animation",
-      "cancel-an-animation",
       "active-interval",
       "active-time",
       "active-phase",
       "fill-mode",
+      "before-phase",
+      "timeline-current-time",
+      "before-active-boundary-time",
+      "animation-direction",
+      "active-after-boundary-time",
+      "after-phase",
       "iteration-count",
       "animation-playback-rate",
       "transformed-progress",
@@ -55,6 +70,7 @@
       "not-animatable",
       "effect-value",
       "target-property",
+      "effect-composition",
       "current-iteration",
       "update-animations-and-send-events",
       "in-effect",
@@ -64,8 +80,6 @@
       "dom-animation-animation",
       "dictdef-effecttiming",
       "dictdef-optionaleffecttiming",
-      "dom-effecttiming-delay",
-      "dom-effecttiming-enddelay",
       "dom-effecttiming-fill",
       "dom-effecttiming-iterationstart",
       "dom-effecttiming-iterations",
@@ -76,21 +90,13 @@
       "update-the-timing-properties-of-an-animation-effect",
       "dictdef-keyframeeffectoptions",
       "dom-keyframeeffect-composite",
-      "dom-keyframeeffect-keyframeeffect-source-source"
-    ],
-    "https://www.w3.org/TR/web-animations-1/": [
-      "timeline-phase",
-      "timeline-active-phase",
-      "effect-composition"
-    ],
-    "https://drafts.csswg.org/css-gcpm-3/": [
-      "propdef-running"
-    ],
-    "https://drafts.csswg.org/css-transitions-1/": [
-      "transition-start-time"
+      "dom-keyframeeffect-keyframeeffect-source-source",
+      "idle-play-state"
     ],
     "https://heycam.github.io/webidl/": [
-      "dfn-throw"
+      "dfn-throw",
+      "resolve",
+      "dfn-present"
     ],
     "https://drafts.csswg.org/css-values-4/": [
       "time-value",
@@ -113,10 +119,12 @@
       "perform-a-microtask-checkpoint"
     ],
     "https://drafts.csswg.org/css-easing/": [
-      "easing-function",
-      "linear-easing-function"
+      "easing-function"
     ],
     "https://lists.w3.org/Archives/Public/public-fx/2013AprJun/0184.html": [],
+    "https://drafts.csswg.org/css-easing-1/": [
+      "linear-easing-function"
+    ],
     "https://lists.w3.org/Archives/Public/public-fx/2013JulSep/0076.html": [],
     "https://www.w3.org/TR/dom/": [
       "concept-tree-order",
@@ -162,14 +170,9 @@
     ],
     "https://www.w3.org/Style/CSS/Test/": [],
     "https://lists.w3.org/Archives/Public/public-css-testsuite": [],
-    "https://www.w3.org/TR/css-display-3/": [],
-    "https://www.w3.org/TR/css-easing-2/": [],
-    "https://www.w3.org/TR/css-gcpm-3/": [],
-    "https://www.w3.org/TR/css-pseudo-4/": [],
-    "https://www.w3.org/TR/css-transitions-1/": [],
-    "https://www.w3.org/TR/css-typed-om-1/": [],
-    "https://www.w3.org/TR/css-values-4/": [],
+    "https://drafts.csswg.org/css-display/": [],
     "https://datatracker.ietf.org/doc/html/rfc2119": [],
-    "https://www.w3.org/TR/css-animations-1/": []
+    "https://www.w3.org/TR/web-animations-1/": [],
+    "https://drafts.csswg.org/css-animations/": []
   }
 }

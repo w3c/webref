@@ -1,9 +1,13 @@
-// Source: Service Workers 1 (https://www.w3.org/TR/service-workers-1/)
+// Source: Service Workers (https://www.w3.org/TR/service-workers-1/)
 [Exposed=ServiceWorker]
 interface FetchEvent : ExtendableEvent {
   constructor(DOMString type, FetchEventInit eventInitDict);
   [SameObject] readonly attribute Request request;
+  readonly attribute Promise<any> preloadResponse;
   readonly attribute DOMString clientId;
+  readonly attribute DOMString resultingClientId;
+  readonly attribute DOMString replacesClientId;
+  readonly attribute Promise<undefined> handled;
 
-  void respondWith(Promise<Response> r);
+  undefined respondWith(Promise<Response> r);
 };

@@ -3,10 +3,10 @@
   "type": "interface",
   "defined": {
     "spec": {
-      "title": "Service Workers 1",
+      "title": "Service Workers",
       "url": "https://www.w3.org/TR/service-workers-1/"
     },
-    "fragment": "[SecureContext, Exposed=(Window,Worker)]\ninterface ServiceWorkerContainer : EventTarget {\n  readonly attribute ServiceWorker? controller;\n  readonly attribute Promise<ServiceWorkerRegistration> ready;\n\n  [NewObject] Promise<ServiceWorkerRegistration> register(USVString scriptURL, optional RegistrationOptions options = {});\n\n  [NewObject] Promise<any> getRegistration(optional USVString clientURL = \"\");\n  [NewObject] Promise<FrozenArray<ServiceWorkerRegistration>> getRegistrations();\n\n  void startMessages();\n\n  // events\n  attribute EventHandler oncontrollerchange;\n  attribute EventHandler onmessage; // event.source of message events is ServiceWorker object\n  attribute EventHandler onmessageerror;\n};",
+    "fragment": "[SecureContext, Exposed=(Window,Worker)]\ninterface ServiceWorkerContainer : EventTarget {\n  readonly attribute ServiceWorker? controller;\n  readonly attribute Promise<ServiceWorkerRegistration> ready;\n\n  [NewObject] Promise<ServiceWorkerRegistration> register(USVString scriptURL, optional RegistrationOptions options = {});\n\n  [NewObject] Promise<(ServiceWorkerRegistration or undefined)> getRegistration(optional USVString clientURL = \"\");\n  [NewObject] Promise<FrozenArray<ServiceWorkerRegistration>> getRegistrations();\n\n  undefined startMessages();\n\n  // events\n  attribute EventHandler oncontrollerchange;\n  attribute EventHandler onmessage; // event.source of message events is ServiceWorker object\n  attribute EventHandler onmessageerror;\n};",
     "href": "https://www.w3.org/TR/service-workers-1/#serviceworkercontainer"
   },
   "extended": [],

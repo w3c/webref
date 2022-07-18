@@ -3,10 +3,10 @@
   "type": "interface",
   "defined": {
     "spec": {
-      "title": "Service Workers 1",
+      "title": "Service Workers",
       "url": "https://www.w3.org/TR/service-workers-1/"
     },
-    "fragment": "[SecureContext, Exposed=(Window,Worker)]\ninterface ServiceWorkerRegistration : EventTarget {\n  readonly attribute ServiceWorker? installing;\n  readonly attribute ServiceWorker? waiting;\n  readonly attribute ServiceWorker? active;\n\n  readonly attribute USVString scope;\n  readonly attribute ServiceWorkerUpdateViaCache updateViaCache;\n\n  [NewObject] Promise<void> update();\n  [NewObject] Promise<boolean> unregister();\n\n  // event\n  attribute EventHandler onupdatefound;\n};",
+    "fragment": "[SecureContext, Exposed=(Window,Worker)]\ninterface ServiceWorkerRegistration : EventTarget {\n  readonly attribute ServiceWorker? installing;\n  readonly attribute ServiceWorker? waiting;\n  readonly attribute ServiceWorker? active;\n  [SameObject] readonly attribute NavigationPreloadManager navigationPreload;\n\n  readonly attribute USVString scope;\n  readonly attribute ServiceWorkerUpdateViaCache updateViaCache;\n\n  [NewObject] Promise<undefined> update();\n  [NewObject] Promise<boolean> unregister();\n\n  // event\n  attribute EventHandler onupdatefound;\n};",
     "href": "https://www.w3.org/TR/service-workers-1/#serviceworkerregistration"
   },
   "extended": [

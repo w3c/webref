@@ -5,26 +5,30 @@
   },
   "spec-events": [
     {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://www.w3.org/TR/selection-api/#selectstart-event"
+      },
+      "href": "https://www.w3.org/TR/selection-api/#selectstart-event",
       "type": "selectstart",
       "targets": [
         "GlobalEventHandlers"
       ],
-      "interface": null,
-      "src": {
-        "format": "IDL eventHandler",
-        "href": null
-      }
+      "interface": "Event",
+      "bubbles": true
     },
     {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://www.w3.org/TR/selection-api/#selectionchange-event"
+      },
+      "href": "https://www.w3.org/TR/selection-api/#selectionchange-event",
       "type": "selectionchange",
       "targets": [
         "GlobalEventHandlers"
       ],
-      "interface": null,
-      "src": {
-        "format": "IDL eventHandler",
-        "href": null
-      }
+      "interface": "Event",
+      "bubbles": false
     }
   ]
 }

@@ -1,14 +1,15 @@
-// Source: Service Workers 1 (https://www.w3.org/TR/service-workers-1/)
+// Source: Service Workers (https://www.w3.org/TR/service-workers-1/)
 [SecureContext, Exposed=(Window,Worker)]
 interface ServiceWorkerRegistration : EventTarget {
   readonly attribute ServiceWorker? installing;
   readonly attribute ServiceWorker? waiting;
   readonly attribute ServiceWorker? active;
+  [SameObject] readonly attribute NavigationPreloadManager navigationPreload;
 
   readonly attribute USVString scope;
   readonly attribute ServiceWorkerUpdateViaCache updateViaCache;
 
-  [NewObject] Promise<void> update();
+  [NewObject] Promise<undefined> update();
   [NewObject] Promise<boolean> unregister();
 
   // event

@@ -3,10 +3,10 @@
   "type": "interface",
   "defined": {
     "spec": {
-      "title": "Service Workers 1",
+      "title": "Service Workers",
       "url": "https://www.w3.org/TR/service-workers-1/"
     },
-    "fragment": "[Exposed=ServiceWorker]\ninterface Client {\n  readonly attribute USVString url;\n  readonly attribute FrameType frameType;\n  readonly attribute DOMString id;\n  readonly attribute ClientType type;\n  void postMessage(any message, optional sequence<object> transfer = []);\n};",
+    "fragment": "[Exposed=ServiceWorker]\ninterface Client {\n  readonly attribute USVString url;\n  readonly attribute FrameType frameType;\n  readonly attribute DOMString id;\n  readonly attribute ClientType type;\n  undefined postMessage(any message, sequence<object> transfer);\n  undefined postMessage(any message, optional StructuredSerializeOptions options = {});\n};",
     "href": "https://www.w3.org/TR/service-workers-1/#client"
   },
   "extended": [
