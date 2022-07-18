@@ -6,7 +6,7 @@
       "title": "Navigation API",
       "url": "https://wicg.github.io/navigation-api/"
     },
-    "fragment": "[Exposed=Window]\ninterface NavigateEvent : Event {\n  constructor(DOMString type, NavigateEventInit eventInit);\n\n  readonly attribute NavigationType navigationType;\n  readonly attribute NavigationDestination destination;\n  readonly attribute boolean canIntercept;\n  readonly attribute boolean userInitiated;\n  readonly attribute boolean hashChange;\n  readonly attribute AbortSignal signal;\n  readonly attribute FormData? formData;\n  readonly attribute DOMString? downloadRequest;\n  readonly attribute any info;\n\n  undefined intercept(optional NavigationInterceptOptions options = {});\n  undefined restoreScroll();\n};",
+    "fragment": "[Exposed=Window]\ninterface NavigateEvent : Event {\n  constructor(DOMString type, NavigateEventInit eventInit);\n\n  readonly attribute NavigationType navigationType;\n  readonly attribute NavigationDestination destination;\n  readonly attribute boolean canIntercept;\n  readonly attribute boolean userInitiated;\n  readonly attribute boolean hashChange;\n  readonly attribute AbortSignal signal;\n  readonly attribute FormData? formData;\n  readonly attribute DOMString? downloadRequest;\n  readonly attribute any info;\n\n  undefined intercept(optional NavigationInterceptOptions options = {});\n  undefined scroll();\n};",
     "href": "https://wicg.github.io/navigation-api/#navigateevent"
   },
   "extended": [],
@@ -281,10 +281,10 @@
         "definedIn": "prose"
       },
       {
-        "id": "dom-navigateevent-restorescroll",
-        "href": "https://wicg.github.io/navigation-api/#dom-navigateevent-restorescroll",
+        "id": "dom-navigateevent-scroll",
+        "href": "https://wicg.github.io/navigation-api/#dom-navigateevent-scroll",
         "linkingText": [
-          "restoreScroll()"
+          "scroll()"
         ],
         "localLinkingText": [],
         "type": "method",

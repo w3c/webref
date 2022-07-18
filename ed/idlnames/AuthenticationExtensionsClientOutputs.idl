@@ -14,15 +14,20 @@ partial dictionary AuthenticationExtensionsClientOutputs {
 
 // Source: Web Authentication: An API for accessing Public Key Credentials - Level (https://www.w3.org/TR/webauthn-3/)
 partial dictionary AuthenticationExtensionsClientOutputs {
-  UvmEntries uvm;
-};
-
-// Source: Web Authentication: An API for accessing Public Key Credentials - Level (https://www.w3.org/TR/webauthn-3/)
-partial dictionary AuthenticationExtensionsClientOutputs {
     CredentialPropertiesOutput credProps;
 };
 
 // Source: Web Authentication: An API for accessing Public Key Credentials - Level (https://www.w3.org/TR/webauthn-3/)
 partial dictionary AuthenticationExtensionsClientOutputs {
+    AuthenticationExtensionsPRFOutputs prf;
+};
+
+// Source: Web Authentication: An API for accessing Public Key Credentials - Level (https://www.w3.org/TR/webauthn-3/)
+partial dictionary AuthenticationExtensionsClientOutputs {
     AuthenticationExtensionsLargeBlobOutputs largeBlob;
+};
+
+// Source: Web Authentication: An API for accessing Public Key Credentials - Level (https://www.w3.org/TR/webauthn-3/)
+partial dictionary AuthenticationExtensionsClientOutputs {
+  UvmEntries uvm;
 };

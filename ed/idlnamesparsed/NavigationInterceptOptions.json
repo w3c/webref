@@ -6,7 +6,7 @@
       "title": "Navigation API",
       "url": "https://wicg.github.io/navigation-api/"
     },
-    "fragment": "dictionary NavigationInterceptOptions {\n  NavigationInterceptHandler handler;\n  NavigationFocusReset focusReset;\n  NavigationScrollRestoration scrollRestoration;\n};",
+    "fragment": "dictionary NavigationInterceptOptions {\n  NavigationInterceptHandler handler;\n  NavigationFocusReset focusReset;\n  NavigationScrollBehavior scroll;\n};",
     "href": "https://wicg.github.io/navigation-api/#dictdef-navigationinterceptoptions"
   },
   "extended": [],
@@ -76,10 +76,10 @@
         "definedIn": "pre"
       },
       {
-        "id": "dom-navigationinterceptoptions-scrollrestoration",
-        "href": "https://wicg.github.io/navigation-api/#dom-navigationinterceptoptions-scrollrestoration",
+        "id": "dom-navigationinterceptoptions-scroll",
+        "href": "https://wicg.github.io/navigation-api/#dom-navigationinterceptoptions-scroll",
         "linkingText": [
-          "scrollRestoration"
+          "scroll"
         ],
         "localLinkingText": [],
         "type": "dict-member",

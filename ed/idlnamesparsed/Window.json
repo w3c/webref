@@ -75,13 +75,6 @@
     },
     {
       "spec": {
-        "title": "Multi-Screen Window Placement",
-        "url": "https://w3c.github.io/window-placement/"
-      },
-      "fragment": "partial interface Window {\n  [SecureContext]\n  Promise<ScreenDetails> getScreenDetails();\n};"
-    },
-    {
-      "spec": {
         "title": "Cookie Store API",
         "url": "https://wicg.github.io/cookie-store/"
       },
@@ -205,6 +198,13 @@
         "url": "https://www.w3.org/TR/selection-api/"
       },
       "fragment": "partial interface Window {\n  Selection? getSelection();\n};"
+    },
+    {
+      "spec": {
+        "title": "Multi-Screen Window Placement",
+        "url": "https://www.w3.org/TR/window-placement/"
+      },
+      "fragment": "partial interface Window {\n  [SecureContext]\n  Promise<ScreenDetails> getScreenDetails();\n};"
     }
   ],
   "inheritance": {
@@ -3905,29 +3905,6 @@
         "definedIn": "prose"
       }
     ],
-    "https://w3c.github.io/window-placement/": [
-      {
-        "id": "dom-window-getscreendetails",
-        "href": "https://w3c.github.io/window-placement/#dom-window-getscreendetails",
-        "linkingText": [
-          "getScreenDetails()"
-        ],
-        "localLinkingText": [],
-        "type": "method",
-        "for": [
-          "Window"
-        ],
-        "access": "public",
-        "informative": false,
-        "heading": {
-          "id": "api-window-getScreenDetails-method",
-          "href": "https://w3c.github.io/window-placement/#api-window-getScreenDetails-method",
-          "title": "getScreenDetails() method",
-          "number": "3.2.1"
-        },
-        "definedIn": "prose"
-      }
-    ],
     "https://wicg.github.io/cookie-store/": [
       {
         "id": "dom-window-cookiestore",
@@ -4977,6 +4954,29 @@
           "number": "4.3"
         },
         "definedIn": "dt"
+      }
+    ],
+    "https://www.w3.org/TR/window-placement/": [
+      {
+        "id": "dom-window-getscreendetails",
+        "href": "https://w3c.github.io/window-placement/#dom-window-getscreendetails",
+        "linkingText": [
+          "getScreenDetails()"
+        ],
+        "localLinkingText": [],
+        "type": "method",
+        "for": [
+          "Window"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "api-window-getScreenDetails-method",
+          "href": "https://w3c.github.io/window-placement/#api-window-getScreenDetails-method",
+          "title": "getScreenDetails() method",
+          "number": "3.2.1"
+        },
+        "definedIn": "prose"
       }
     ],
     "https://www.w3.org/TR/css-animations-1/": [

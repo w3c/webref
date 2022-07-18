@@ -92,12 +92,6 @@ partial interface Window {
   [Replaceable, SameObject] readonly attribute External external;
 };
 
-// Source: Multi-Screen Window Placement (https://w3c.github.io/window-placement/)
-partial interface Window {
-  [SecureContext]
-  Promise<ScreenDetails> getScreenDetails();
-};
-
 // Source: Cookie Store API (https://wicg.github.io/cookie-store/)
 [SecureContext]
 partial interface Window {
@@ -227,4 +221,10 @@ partial interface Window {
 // Source: Selection API (https://www.w3.org/TR/selection-api/)
 partial interface Window {
   Selection? getSelection();
+};
+
+// Source: Multi-Screen Window Placement (https://www.w3.org/TR/window-placement/)
+partial interface Window {
+  [SecureContext]
+  Promise<ScreenDetails> getScreenDetails();
 };

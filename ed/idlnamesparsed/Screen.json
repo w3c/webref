@@ -12,17 +12,17 @@
   "extended": [
     {
       "spec": {
-        "title": "Multi-Screen Window Placement",
-        "url": "https://w3c.github.io/window-placement/"
-      },
-      "fragment": "partial interface Screen /* : EventTarget */ {\n  [SecureContext]\n  readonly attribute boolean isExtended;\n\n  [SecureContext]\n  attribute EventHandler onchange;\n};"
-    },
-    {
-      "spec": {
         "title": "The Screen Orientation API",
         "url": "https://www.w3.org/TR/screen-orientation/"
       },
       "fragment": "partial interface Screen {\n  [SameObject] readonly attribute ScreenOrientation orientation;\n};"
+    },
+    {
+      "spec": {
+        "title": "Multi-Screen Window Placement",
+        "url": "https://www.w3.org/TR/window-placement/"
+      },
+      "fragment": "partial interface Screen /* : EventTarget */ {\n  [SecureContext]\n  readonly attribute boolean isExtended;\n\n  [SecureContext]\n  attribute EventHandler onchange;\n};"
     }
   ],
   "inheritance": null,
@@ -175,7 +175,32 @@
         "definedIn": "prose"
       }
     ],
-    "https://w3c.github.io/window-placement/": [
+    "https://www.w3.org/TR/screen-orientation/": [
+      {
+        "id": "dom-screen-orientation",
+        "href": "https://w3c.github.io/screen-orientation/#dom-screen-orientation",
+        "linkingText": [
+          "orientation"
+        ],
+        "localLinkingText": [
+          "Screen.orientation"
+        ],
+        "type": "attribute",
+        "for": [
+          "Screen"
+        ],
+        "access": "public",
+        "informative": false,
+        "heading": {
+          "id": "orientation-attribute",
+          "href": "https://w3c.github.io/screen-orientation/#orientation-attribute",
+          "title": "orientation attribute",
+          "number": "2.1"
+        },
+        "definedIn": "heading"
+      }
+    ],
+    "https://www.w3.org/TR/window-placement/": [
       {
         "id": "dom-screen-isextended",
         "href": "https://w3c.github.io/window-placement/#dom-screen-isextended",
@@ -217,31 +242,6 @@
           "number": "3.1.2"
         },
         "definedIn": "prose"
-      }
-    ],
-    "https://www.w3.org/TR/screen-orientation/": [
-      {
-        "id": "dom-screen-orientation",
-        "href": "https://w3c.github.io/screen-orientation/#dom-screen-orientation",
-        "linkingText": [
-          "orientation"
-        ],
-        "localLinkingText": [
-          "Screen.orientation"
-        ],
-        "type": "attribute",
-        "for": [
-          "Screen"
-        ],
-        "access": "public",
-        "informative": false,
-        "heading": {
-          "id": "orientation-attribute",
-          "href": "https://w3c.github.io/screen-orientation/#orientation-attribute",
-          "title": "orientation attribute",
-          "number": "2.1"
-        },
-        "definedIn": "heading"
       }
     ]
   }

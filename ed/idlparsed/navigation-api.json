@@ -820,7 +820,7 @@
         "partial": false
       },
       "NavigateEvent": {
-        "fragment": "[Exposed=Window]\ninterface NavigateEvent : Event {\n  constructor(DOMString type, NavigateEventInit eventInit);\n\n  readonly attribute NavigationType navigationType;\n  readonly attribute NavigationDestination destination;\n  readonly attribute boolean canIntercept;\n  readonly attribute boolean userInitiated;\n  readonly attribute boolean hashChange;\n  readonly attribute AbortSignal signal;\n  readonly attribute FormData? formData;\n  readonly attribute DOMString? downloadRequest;\n  readonly attribute any info;\n\n  undefined intercept(optional NavigationInterceptOptions options = {});\n  undefined restoreScroll();\n};",
+        "fragment": "[Exposed=Window]\ninterface NavigateEvent : Event {\n  constructor(DOMString type, NavigateEventInit eventInit);\n\n  readonly attribute NavigationType navigationType;\n  readonly attribute NavigationDestination destination;\n  readonly attribute boolean canIntercept;\n  readonly attribute boolean userInitiated;\n  readonly attribute boolean hashChange;\n  readonly attribute AbortSignal signal;\n  readonly attribute FormData? formData;\n  readonly attribute DOMString? downloadRequest;\n  readonly attribute any info;\n\n  undefined intercept(optional NavigationInterceptOptions options = {});\n  undefined scroll();\n};",
         "type": "interface",
         "name": "NavigateEvent",
         "inheritance": "Event",
@@ -1034,7 +1034,7 @@
           },
           {
             "type": "operation",
-            "name": "restoreScroll",
+            "name": "scroll",
             "idlType": {
               "type": "return-type",
               "extAttrs": [],
@@ -1223,7 +1223,7 @@
         "partial": false
       },
       "NavigationInterceptOptions": {
-        "fragment": "dictionary NavigationInterceptOptions {\n  NavigationInterceptHandler handler;\n  NavigationFocusReset focusReset;\n  NavigationScrollRestoration scrollRestoration;\n};",
+        "fragment": "dictionary NavigationInterceptOptions {\n  NavigationInterceptHandler handler;\n  NavigationFocusReset focusReset;\n  NavigationScrollBehavior scroll;\n};",
         "type": "dictionary",
         "name": "NavigationInterceptOptions",
         "inheritance": null,
@@ -1260,7 +1260,7 @@
           },
           {
             "type": "field",
-            "name": "scrollRestoration",
+            "name": "scroll",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -1268,7 +1268,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "NavigationScrollRestoration"
+              "idlType": "NavigationScrollBehavior"
             },
             "default": null,
             "required": false
@@ -1293,10 +1293,10 @@
         ],
         "extAttrs": []
       },
-      "NavigationScrollRestoration": {
-        "fragment": "enum NavigationScrollRestoration {\n  \"after-transition\",\n  \"manual\"\n};",
+      "NavigationScrollBehavior": {
+        "fragment": "enum NavigationScrollBehavior {\n  \"after-transition\",\n  \"manual\"\n};",
         "type": "enum",
-        "name": "NavigationScrollRestoration",
+        "name": "NavigationScrollBehavior",
         "values": [
           {
             "type": "enum-value",
@@ -1701,7 +1701,7 @@
       "NavigationInterceptOptions": [
         "NavigationInterceptHandler",
         "NavigationFocusReset",
-        "NavigationScrollRestoration"
+        "NavigationScrollBehavior"
       ],
       "NavigationDestination": [],
       "NavigationHistoryEntry": [
