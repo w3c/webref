@@ -595,6 +595,21 @@ async function curateEvents(folder) {
     }
   }
 
+  // Update index file to add link to newly created events files
+  // (and to delete link to deleted files although note prepare-curated.js
+  // would automatically take care of that in any case)
+  rawIndex.results.forEach(s => {
+    if (s.events && index.results.find(ss => ss.url === s.url).events.length === 0) {
+      delete s.events;
+    }
+    else if (!s.events && index.results.find(ss => ss.url === s.url).events?.length > 0) {
+      s.events = `events/${spec.shortname}.json`;
+    }
+  });
+  const json = JSON.stringify(rawIndex, null, 2) + '\n';
+  const pathname = path.join(folder, 'index.json');
+  await fs.writeFile(pathname, json);
+
   if (errors.length) {
     throw new Error("\n- " + errors.join("\n- "));
   }
