@@ -3,7 +3,7 @@
   "type": "dictionary",
   "defined": {
     "spec": {
-      "title": "Service Workers 1",
+      "title": "Service Workers",
       "url": "https://www.w3.org/TR/service-workers-1/"
     },
     "fragment": "dictionary ExtendableMessageEventInit : ExtendableEventInit {\n  any data = null;\n  USVString origin = \"\";\n  DOMString lastEventId = \"\";\n  (Client or ServiceWorker or MessagePort)? source = null;\n  sequence<MessagePort> ports = [];\n};",
@@ -15,7 +15,7 @@
     "type": "dictionary",
     "defined": {
       "spec": {
-        "title": "Service Workers 1",
+        "title": "Service Workers",
         "url": "https://www.w3.org/TR/service-workers-1/"
       },
       "fragment": "dictionary ExtendableEventInit : EventInit {\n  // Defined for the forward compatibility across the derived events\n};",

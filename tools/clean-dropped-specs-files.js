@@ -21,9 +21,6 @@ const fs = require("fs").promises;
 const path = require("path");
 const { loadJSON } = require('./utils');
 
-const idlnamesSubdirs = ['idlnames', 'idlnamesparsed'];
-
-
 async function cleanExtractFolder(folder, crawlResults) {
   const dir = await fs.readdir(folder);
   for (const filename of dir) {
@@ -51,11 +48,6 @@ async function cleanCrawlFolder(crawlFolder) {
   for (const folder of folders) {
     // Don't touch patches!
     if (folder.endsWith('patches')) {
-      continue;
-    }
-
-    // Skip idlnames folders
-    if (idlnamesSubdirs.includes(folder)) {
       continue;
     }
 

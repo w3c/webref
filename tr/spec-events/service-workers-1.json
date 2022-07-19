@@ -1,6 +1,6 @@
 {
   "spec": {
-    "title": "Service Workers 1",
+    "title": "Service Workers",
     "url": "https://www.w3.org/TR/service-workers-1/"
   },
   "spec-events": [
@@ -35,6 +35,30 @@
         "href": "https://www.w3.org/TR/service-workers-1/#service-worker-container-controllerchange-event"
       },
       "type": "controllerchange",
+      "targets": [
+        "ServiceWorkerContainer"
+      ],
+      "interface": "Event"
+    },
+    {
+      "href": "https://www.w3.org/TR/service-workers-1/#service-worker-container-message-event",
+      "src": {
+        "format": "summary table",
+        "href": "https://www.w3.org/TR/service-workers-1/#service-worker-container-message-event"
+      },
+      "type": "message",
+      "targets": [
+        "ServiceWorkerContainer"
+      ],
+      "interface": "Event"
+    },
+    {
+      "href": "https://www.w3.org/TR/service-workers-1/#service-worker-container-messageerror-event",
+      "src": {
+        "format": "summary table",
+        "href": "https://www.w3.org/TR/service-workers-1/#service-worker-container-messageerror-event"
+      },
+      "type": "messageerror",
       "targets": [
         "ServiceWorkerContainer"
       ],

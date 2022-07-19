@@ -22340,7 +22340,7 @@
         "partial": false
       },
       "FocusOptions": {
-        "fragment": "dictionary FocusOptions {\n  boolean preventScroll = false;\n};",
+        "fragment": "dictionary FocusOptions {\n  boolean preventScroll = false;\n  boolean focusVisible;\n};",
         "type": "dictionary",
         "name": "FocusOptions",
         "inheritance": null,
@@ -22361,6 +22361,21 @@
               "type": "boolean",
               "value": false
             },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "focusVisible",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": null,
             "required": false
           }
         ],

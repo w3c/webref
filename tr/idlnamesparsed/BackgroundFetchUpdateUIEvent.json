@@ -27,10 +27,10 @@
       "type": "interface",
       "defined": {
         "spec": {
-          "title": "Service Workers 1",
+          "title": "Service Workers",
           "url": "https://www.w3.org/TR/service-workers-1/"
         },
-        "fragment": "[Exposed=ServiceWorker]\ninterface ExtendableEvent : Event {\n  constructor(DOMString type, optional ExtendableEventInit eventInitDict = {});\n  void waitUntil(Promise<any> f);\n};",
+        "fragment": "[Exposed=ServiceWorker]\ninterface ExtendableEvent : Event {\n  constructor(DOMString type, optional ExtendableEventInit eventInitDict = {});\n  undefined waitUntil(Promise<any> f);\n};",
         "href": "https://www.w3.org/TR/service-workers-1/#extendableevent"
       },
       "extended": [],

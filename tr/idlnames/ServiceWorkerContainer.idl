@@ -1,4 +1,4 @@
-// Source: Service Workers 1 (https://www.w3.org/TR/service-workers-1/)
+// Source: Service Workers (https://www.w3.org/TR/service-workers-1/)
 [SecureContext, Exposed=(Window,Worker)]
 interface ServiceWorkerContainer : EventTarget {
   readonly attribute ServiceWorker? controller;
@@ -6,10 +6,10 @@ interface ServiceWorkerContainer : EventTarget {
 
   [NewObject] Promise<ServiceWorkerRegistration> register(USVString scriptURL, optional RegistrationOptions options = {});
 
-  [NewObject] Promise<any> getRegistration(optional USVString clientURL = "");
+  [NewObject] Promise<(ServiceWorkerRegistration or undefined)> getRegistration(optional USVString clientURL = "");
   [NewObject] Promise<FrozenArray<ServiceWorkerRegistration>> getRegistrations();
 
-  void startMessages();
+  undefined startMessages();
 
   // events
   attribute EventHandler oncontrollerchange;

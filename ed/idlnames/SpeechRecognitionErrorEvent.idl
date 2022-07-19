@@ -1,7 +1,0 @@
-// Source: Web Speech API (https://wicg.github.io/speech-api/)
-[Exposed=Window]
-interface SpeechRecognitionErrorEvent : Event {
-    constructor(DOMString type, SpeechRecognitionErrorEventInit eventInitDict);
-    readonly attribute SpeechRecognitionErrorCode error;
-    readonly attribute DOMString message;
-};

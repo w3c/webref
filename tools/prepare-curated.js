@@ -2,12 +2,17 @@
  * Prepare the curated data and save the result to the given folder.
  *
  * Curation means copying raw data to the given folder, applying patches (CSS,
- * elements, events, IDL) when needed, re-generating the `idlparsed` folder, and
- * re-generating the `idlnames` and `idlnamesparsed` folders for relevant
- * browser specs.
+ * elements, events, IDL) when needed and running post-processing modules that
+ * need to run on curated data to generate the `idlparsed`, `idlnames` and
+ * `idlnamesparsed` folders, and the merged `events.json` file
  *
  * The output folder gets created if it does not exist yet. Output folder
  * contents get deleted to start with if folder is not empty.
+ *
+ * The `csscomplete` post-processing module is supposed to have been run when
+ * specs were crawled. We don't run it after curation because it could
+ * re-introduce some of the CSS properties defined in prose that the
+ * `dropCSSPropertyDuplicates` function removes during curation.
  *
  * node tools/prepare-curated.js [raw data folder] [curated folder]
  */
@@ -15,10 +20,7 @@
 const fs = require('fs').promises;
 const path = require('path');
 const rimraf = require('rimraf');
-const {
-  expandCrawlResult,
-  generateIdlNames, saveIdlNames,
-  generateIdlParsed, saveIdlParsed } = require('reffy');
+const { crawlSpecs } = require('reffy');
 const {
   createFolderIfNeeded,
   loadJSON,
@@ -73,28 +75,18 @@ async function prepareCurated(rawFolder, curatedFolder) {
   console.log('- folder is empty');
 
   console.log();
-  console.log('Copy crawl outcome (index.json)');
-  await fs.copyFile(
-    path.join(rawFolder, 'index.json'),
-    path.join(curatedFolder, 'index.json'));
-  console.log('- done');
-
-  console.log();
   console.log('Copy raw data to curated folder');
-  const folders = await fs.readdir(rawFolder);
-  await Promise.all(folders.filter(folder =>
-      !folder.endsWith('patches') && !folder.includes('.') &&
-      !['idlnames', 'idlnamesparsed', 'idlparsed'].includes(folder)
-  ).map(async folder => {
-    await copyFolder(
-      path.join(rawFolder, folder),
-      curatedFolder);
-    console.log(`- "${folder}" folder copied`);
-  }));
+  await crawlSpecs({
+    useCrawl: rawFolder,
+    output: curatedFolder,
+    quiet: true
+  });
+  console.log('- done');
 
   console.log();
   console.log('Apply patches');
   await applyPatches(rawFolder, curatedFolder, 'all');
+  await curateEvents(curatedFolder);
   console.log('- patches applied');
 
   let crawlIndexFile = path.join(curatedFolder, 'index.json');
@@ -109,43 +101,13 @@ async function prepareCurated(rawFolder, curatedFolder) {
   console.log('- done');
 
   console.log();
-  console.log('Re-generate the idlparsed folder');
-  const idlExtracts = {};
-  crawlIndex.results.forEach(spec => {
-    if (spec.idl) {
-      idlExtracts[spec.url] = spec.idl;
-    }
+  console.log('Run post-processing modules on curated data');
+  await crawlSpecs({
+    useCrawl: curatedFolder,
+    output: curatedFolder,
+    post: ['idlparsed', 'idlnames', 'events'],
+    quiet: true
   });
-  console.log('- backup of links to IDL extracts in crawl outcome done');
-  let crawlResults = await expandCrawlResult(crawlIndex, curatedFolder, ['idl']);
-  console.log('- IDL expanded in crawl outcome');
-
-  await Promise.all(crawlResults.results.map(async spec => {
-    if (spec.idl) {
-      await generateIdlParsed(spec);
-      spec.idlparsed = await saveIdlParsed(spec, curatedFolder);
-      // Rollback IDL property to a link
-      if (idlExtracts[spec.url]) {
-        spec.idl = idlExtracts[spec.url];
-      }
-    }
-  }));
-  console.log('- parsed IDL generated');
-  await fs.writeFile(crawlIndexFile, JSON.stringify(crawlIndex, null, 2));
-  console.log('- crawl outcome adjusted');
-
-  console.log();
-  console.log('Re-generate the idlnames and idlnamesparsed folders');
-  crawlResults = await expandCrawlResult(crawlIndex, curatedFolder, ['idlparsed', 'dfns']);
-  crawlResults.results = crawlResults.results.filter(spec => spec.categories?.includes('browser'));
-  const idlNames = generateIdlNames(crawlResults.results, { dfns: true });
-  await saveIdlNames(idlNames, curatedFolder);
-  console.log('- done');
-
-  // This relies on idlparsed having been generated
-  console.log();
-  console.log('Amend event data as needed');
-  await curateEvents(curatedFolder);
   console.log('- done');
 }
 

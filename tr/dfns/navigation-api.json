@@ -2340,10 +2340,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-navigationinterceptoptions-scrollrestoration",
-      "href": "https://wicg.github.io/navigation-api/#dom-navigationinterceptoptions-scrollrestoration",
+      "id": "dom-navigationinterceptoptions-scroll",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigationinterceptoptions-scroll",
       "linkingText": [
-        "scrollRestoration"
+        "scroll"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -2422,10 +2422,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "enumdef-navigationscrollrestoration",
-      "href": "https://wicg.github.io/navigation-api/#enumdef-navigationscrollrestoration",
+      "id": "enumdef-navigationscrollbehavior",
+      "href": "https://wicg.github.io/navigation-api/#enumdef-navigationscrollbehavior",
       "linkingText": [
-        "NavigationScrollRestoration"
+        "NavigationScrollBehavior"
       ],
       "localLinkingText": [],
       "type": "enum",
@@ -2441,15 +2441,15 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-navigationscrollrestoration-after-transition",
-      "href": "https://wicg.github.io/navigation-api/#dom-navigationscrollrestoration-after-transition",
+      "id": "dom-navigationscrollbehavior-after-transition",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigationscrollbehavior-after-transition",
       "linkingText": [
         "\"after-transition\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
       "for": [
-        "NavigationScrollRestoration"
+        "NavigationScrollBehavior"
       ],
       "access": "public",
       "informative": false,
@@ -2462,15 +2462,15 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-navigationscrollrestoration-manual",
-      "href": "https://wicg.github.io/navigation-api/#dom-navigationscrollrestoration-manual",
+      "id": "dom-navigationscrollbehavior-manual",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigationscrollbehavior-manual",
       "linkingText": [
         "\"manual\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
       "for": [
-        "NavigationScrollRestoration"
+        "NavigationScrollBehavior"
       ],
       "access": "public",
       "informative": false,
@@ -2836,10 +2836,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "navigateevent-scroll-restoration-behavior",
-      "href": "https://wicg.github.io/navigation-api/#navigateevent-scroll-restoration-behavior",
+      "id": "navigateevent-scroll-behavior",
+      "href": "https://wicg.github.io/navigation-api/#navigateevent-scroll-behavior",
       "linkingText": [
-        "scroll restoration behavior"
+        "scroll behavior"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -2857,10 +2857,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "navigateevent-did-process-scroll-restoration",
-      "href": "https://wicg.github.io/navigation-api/#navigateevent-did-process-scroll-restoration",
+      "id": "navigateevent-did-process-scroll-behavior",
+      "href": "https://wicg.github.io/navigation-api/#navigateevent-did-process-scroll-behavior",
       "linkingText": [
-        "did process scroll restoration"
+        "did process scroll behavior"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -2942,10 +2942,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-navigateevent-restorescroll",
-      "href": "https://wicg.github.io/navigation-api/#dom-navigateevent-restorescroll",
+      "id": "dom-navigateevent-scroll",
+      "href": "https://wicg.github.io/navigation-api/#dom-navigateevent-scroll",
       "linkingText": [
-        "restoreScroll()"
+        "scroll()"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -3638,10 +3638,29 @@
       "definedIn": "prose"
     },
     {
-      "id": "potentially-perform-scroll-restoration",
-      "href": "https://wicg.github.io/navigation-api/#potentially-perform-scroll-restoration",
+      "id": "potentially-process-scroll-behavior",
+      "href": "https://wicg.github.io/navigation-api/#potentially-process-scroll-behavior",
       "linkingText": [
-        "potentially perform scroll restoration"
+        "potentially process scroll behavior"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "navigate-event-firing",
+        "href": "https://wicg.github.io/navigation-api/#navigate-event-firing",
+        "title": "Firing the event",
+        "number": "2.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "definitely-process-scroll-behavior",
+      "href": "https://wicg.github.io/navigation-api/#definitely-process-scroll-behavior",
+      "linkingText": [
+        "definitely process scroll behavior"
       ],
       "localLinkingText": [],
       "type": "dfn",

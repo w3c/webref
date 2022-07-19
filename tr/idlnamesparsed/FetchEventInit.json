@@ -3,10 +3,10 @@
   "type": "dictionary",
   "defined": {
     "spec": {
-      "title": "Service Workers 1",
+      "title": "Service Workers",
       "url": "https://www.w3.org/TR/service-workers-1/"
     },
-    "fragment": "dictionary FetchEventInit : ExtendableEventInit {\n  required Request request;\n  DOMString clientId = \"\";\n};",
+    "fragment": "dictionary FetchEventInit : ExtendableEventInit {\n  required Request request;\n  Promise<any> preloadResponse;\n  DOMString clientId = \"\";\n  DOMString resultingClientId = \"\";\n  DOMString replacesClientId = \"\";\n  Promise<undefined> handled;\n};",
     "href": "https://www.w3.org/TR/service-workers-1/#dictdef-fetcheventinit"
   },
   "extended": [],
@@ -15,7 +15,7 @@
     "type": "dictionary",
     "defined": {
       "spec": {
-        "title": "Service Workers 1",
+        "title": "Service Workers",
         "url": "https://www.w3.org/TR/service-workers-1/"
       },
       "fragment": "dictionary ExtendableEventInit : EventInit {\n  // Defined for the forward compatibility across the derived events\n};",
