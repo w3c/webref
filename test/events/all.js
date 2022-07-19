@@ -41,35 +41,53 @@ describe('The curated view of events extracts', function () {
 
     allEvents = await events.listAll({ folder: curatedFolder });
 
-    describe('Looking at events individually', () => {
+    describe('Looking at event types individually', () => {
+      function report(msg, event) {
+        return msg +
+          ` for event type=${event.type}` +
+          (event.interface ? ` interface=${event.interface}` : '') +
+          (event.src?.href ? ` src=${event.src.href}` : '') +
+          (event.href ? ` href=${event.href}` : '');
+      }
+
+      const eventsPerType = {};
       for (const event of allEvents) {
         if (!event.type) {
           continue;
         }
-        if (event.interface) {
-          usedEventInterfaces.add(event.interface);
+        if (!eventsPerType[event.type]) {
+          eventsPerType[event.type] = [];
         }
-
-        it(`contains a valid interface for event "${event.type}"`, () => {
-          assert(event.interface, 'No event interface');
-          assert(interfaces.has(event.interface) || mixins.has(event.interface), `Unknown interface "${event.interface}"`);
-          assert(interfaces.has(event.interface), `Event interface "${event.interface}" is a mixin`);
+        eventsPerType[event.type].push(event);
+      }
+      for (const [type, list] of Object.entries(eventsPerType)) {
+        it(`contains valid interfaces for events "${type}"`, () => {
+          for (const event of list) {
+            if (event.interface) {
+              usedEventInterfaces.add(event.interface);
+            }
+            assert(event.interface, report('No event interface', event));
+            assert(interfaces.has(event.interface) || mixins.has(event.interface), report('Unknown interface', event));
+            assert(interfaces.has(event.interface), report('Event interface is a mixin', event));
+          }
         });
 
-        it(`contains valid target interfaces for event "${event.type}" at ${event.href}`, () => {
-          assert(event.targets?.[0], 'No target interfaces');
-          event.targets.map(({target, bubbles}) => {
-            assert(interfaces.has(target) || mixins.has(target), `Unknown target interface "${target}"`);
-            assert(interfaces.has(target), `Target interface "${target}" is a mixin`);
+        it(`contains valid target interfaces for events "${type}"`, () => {
+          for (const event of list) {
+            assert(event.targets?.[0], report('No target interfaces', event));
+            event.targets.map(({target, bubbles}) => {
+              assert(interfaces.has(target) || mixins.has(target), report(`Unknown target interface "${target}"`, event));
+              assert(interfaces.has(target), report(`Target interface "${target}" is a mixin`, event));
 
-            const treeInfo = getInterfaceTreeInfo(target, parsedInterfaces);
-            if (treeInfo && treeInfo.depth > 0) {
-              assert(bubbles !== undefined, `No "bubbles" attribute whereas target interface "${target}" is part of tree "${treeInfo.tree}" through interface "${treeInfo.interface}"`);
-            }
-            else {
-              assert(bubbles === undefined, `A "bubbles" attribute is set whereas target interface "${target}" is not part of a tree`);
-            }
-          });
+              const treeInfo = getInterfaceTreeInfo(target, parsedInterfaces);
+              if (treeInfo && treeInfo.depth > 0) {
+                assert(bubbles !== undefined, report(`No "bubbles" attribute whereas target interface "${target}" is part of tree "${treeInfo.tree}" through interface "${treeInfo.interface}"`, event));
+              }
+              else {
+                assert(bubbles === undefined, report(`A "bubbles" attribute is set whereas target interface "${target}" is not part of a tree`, event));
+              }
+            });
+          }
         });
       }
     });
