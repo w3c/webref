@@ -15,6 +15,7 @@ const { getInterfaceTreeInfo } = require('reffy');
 
 const curatedFolder = path.join(__dirname, '..', '..', 'curated');
 
+let allEvents = null;
 const interfaces = new Set();
 const usedEventInterfaces = new Set();
 
@@ -38,42 +39,45 @@ describe('The curated view of events extracts', function () {
       }
     }
 
-    const allEvents = await events.listAll({ folder: curatedFolder });
-    it(`contains type attributes for all events`, () => {
+    allEvents = await events.listAll({ folder: curatedFolder });
+
+    describe('Looking at events individually', () => {
       for (const event of allEvents) {
-        assert(event.type, 'Found an event without a type attribute');
+        if (!event.type) {
+          continue;
+        }
+        if (event.interface) {
+          usedEventInterfaces.add(event.interface);
+        }
+
+        it(`contains a valid interface for event "${event.type}"`, () => {
+          assert(event.interface, 'No event interface');
+          assert(interfaces.has(event.interface) || mixins.has(event.interface), `Unknown interface "${event.interface}"`);
+          assert(interfaces.has(event.interface), `Event interface "${event.interface}" is a mixin`);
+        });
+
+        it(`contains valid target interfaces for event "${event.type}" at ${event.href}`, () => {
+          assert(event.targets?.[0], 'No target interfaces');
+          event.targets.map(({target, bubbles}) => {
+            assert(interfaces.has(target) || mixins.has(target), `Unknown target interface "${target}"`);
+            assert(interfaces.has(target), `Target interface "${target}" is a mixin`);
+
+            const treeInfo = getInterfaceTreeInfo(target, parsedInterfaces);
+            if (treeInfo && treeInfo.depth > 0) {
+              assert(bubbles !== undefined, `No "bubbles" attribute whereas target interface "${target}" is part of tree "${treeInfo.tree}" through interface "${treeInfo.interface}"`);
+            }
+            else {
+              assert(bubbles === undefined, `A "bubbles" attribute is set whereas target interface "${target}" is not part of a tree`);
+            }
+          });
+        });
       }
     });
+  });
 
+  it(`contains type attributes for all events`, () => {
     for (const event of allEvents) {
-      if (!event.type) {
-        continue;
-      }
-      if (event.interface) {
-        usedEventInterfaces.add(event.interface);
-      }
-
-      it(`contains a valid interface for event "${event.type}"`, () => {
-        assert(event.interface, 'No event interface');
-        assert(interfaces.has(event.interface) || mixins.has(event.interface), `Unknown interface "${event.interface}"`);
-        assert(interfaces.has(event.interface), `Event interface "${event.interface}" is a mixin`);
-      });
-
-      it(`contains valid target interfaces for event "${event.type} ${event.href}"`, () => {
-        assert(event.targets?.[0], 'No target interfaces');
-        event.targets.map(({target, bubbles}) => {
-          assert(interfaces.has(target) || mixins.has(target), `Unknown target interface "${target}"`);
-          assert(interfaces.has(target), `Target interface "${target}" is a mixin`);
-
-          const treeInfo = getInterfaceTreeInfo(target, parsedInterfaces);
-          if (treeInfo && treeInfo.depth > 0) {
-            assert(bubbles !== undefined, `No "bubbles" attribute whereas target interface "${target}" is part of tree "${treeInfo.tree}" through interface "${treeInfo.interface}"`);
-          }
-          else {
-            assert(bubbles === undefined, `A "bubbles" attribute is set whereas target interface "${target}" is not part of a tree`);
-          }
-        });
-      });
+      assert(event.type, 'Found an event without a type attribute');
     }
   });
 
