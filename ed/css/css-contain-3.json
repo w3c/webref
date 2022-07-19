@@ -6,7 +6,10 @@
   "properties": {
     "contain": {
       "name": "contain",
-      "newValues": "layout || style || paint || [ size | inline-size ]"
+      "newValues": "layout || style || paint || [ size | inline-size ]",
+      "styleDeclaration": [
+        "contain"
+      ]
     },
     "container-type": {
       "name": "container-type",
@@ -17,7 +20,11 @@
       "percentages": "n/a",
       "computedValue": "the keyword normal or one or more of size, inline-size",
       "canonicalOrder": "per grammar",
-      "animationType": "not animatable"
+      "animationType": "not animatable",
+      "styleDeclaration": [
+        "container-type",
+        "containerType"
+      ]
     },
     "container-name": {
       "name": "container-name",
@@ -28,7 +35,11 @@
       "percentages": "n/a",
       "computedValue": "the keyword none, or an ordered list of identifiers",
       "canonicalOrder": "per grammar",
-      "animationType": "not animatable"
+      "animationType": "not animatable",
+      "styleDeclaration": [
+        "container-name",
+        "containerName"
+      ]
     },
     "container": {
       "name": "container",
@@ -39,7 +50,10 @@
       "percentages": "see individual properties",
       "computedValue": "see individual properties",
       "animationType": "see individual properties",
-      "canonicalOrder": "per grammar"
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "container"
+      ]
     }
   },
   "descriptors": {
