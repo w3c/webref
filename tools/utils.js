@@ -68,69 +68,8 @@ async function copyFolder(source, target, { excludeRoot = false } = {}) {
 };
 
 
-/**
- * Tree hierarchies on which events may bubble
- *
- * First interface is the tree root, further interfaces are deeper levels in
- * the tree.
- */
-const trees = {
-  // DOM tree:
-  // https://dom.spec.whatwg.org/#node-trees
-  'dom': ['Window', 'Document', 'Element', 'Node'],
-
-  // IndexedDB tree (defined through "get the parent" algorithms)
-  // https://www.w3.org/TR/IndexedDB/#ref-for-get-the-parent%E2%91%A0
-  // https://www.w3.org/TR/IndexedDB/#ref-for-get-the-parent%E2%91%A1
-  'IndexedDB': ['IDBDatabase', 'IDBTransaction', 'IDBRequest'],
-
-  // Web Bluetooth tree
-  // https://webbluetoothcg.github.io/web-bluetooth/#bluetooth-tree-bluetooth-tree
-  'web-bluetooth': [
-    'Bluetooth', 'BluetoothDevice', 'BluetoothRemoteGATTService',
-    'BluetoothRemoteGATTCharacteristic', 'BluetoothRemoteGATTDescriptor'],
-
-  // Serial tree
-  // https://wicg.github.io/serial/#serialport-interface
-  'serial': ['Serial', 'SerialPort']
-};
-
-
-/**
- * Return information about the tree hierarchy the IDL interface is linked to.
- *
- * @function
- * @param {String} iface Name of the IDL interface to link to a tree
- * @param {Array(Object)} interfaces A list of all known IDL interfaces with
- *   inheritance information in an "inheritance" property.
- * @return {Object} An object with a "tree" property set to the shortname of the
- *   spec that defines the tree hierarchy, an "interface" property set to the
- *   interface name of the closest interface in the inheritance chain of the
- *   given interface that belongs to the tree, and a "depth" property that gives
- *   the depth of that interface in the tree hierarchy (where 0 is the tree
- *   root). The object is null if the interface cannot be associated with a
- *   tree.
- */
-function getTreeInfo(iface, interfaces) {
-  while (iface) {
-    for (const [tree, nodes] of Object.entries(trees)) {
-      if (nodes.includes(iface)) {
-        return {
-          tree,
-          interface: iface,
-          depth: nodes.findIndex(i => i === iface)
-        };
-      }
-    }
-    iface = interfaces.find(i => i.name === iface)?.inheritance;
-  }
-  return null;
-}
-
-
 module.exports = {
   createFolderIfNeeded,
   loadJSON,
-  copyFolder,
-  getTreeInfo
+  copyFolder
 };

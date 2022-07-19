@@ -11,7 +11,7 @@ const assert = require('assert').strict;
 const path = require('path');
 const events = require('@webref/events');
 const idl = require('@webref/idl');
-const { getTreeInfo } = require('../../tools/utils.js');
+const { getInterfaceTreeInfo } = require('reffy');
 
 const curatedFolder = path.join(__dirname, '..', '..', 'curated');
 
@@ -38,72 +38,54 @@ describe('The curated view of events extracts', function () {
       }
     }
 
-    const allEvents = await events.listAll({ folder: path.join(curatedFolder, 'events') });
-    for (const [shortname, data] of Object.entries(allEvents)) {
-      describe(`The events extract for ${shortname} in the curated view`, () => {
-        it(`contains type attributes for all events`, () => {
-          for (const event of data.events) {
-            assert(event.type, 'Found an event without a type attribute');
+    const allEvents = await events.listAll({ folder: curatedFolder });
+    it(`contains type attributes for all events`, () => {
+      for (const event of allEvents) {
+        assert(event.type, 'Found an event without a type attribute');
+      }
+    });
+
+    for (const event of allEvents) {
+      if (!event.type) {
+        continue;
+      }
+      if (event.interface) {
+        usedEventInterfaces.add(event.interface);
+      }
+
+      it(`contains a valid interface for event "${event.type}"`, () => {
+        assert(event.interface, 'No event interface');
+        assert(interfaces.has(event.interface) || mixins.has(event.interface), `Unknown interface "${event.interface}"`);
+        assert(interfaces.has(event.interface), `Event interface "${event.interface}" is a mixin`);
+      });
+
+      it(`contains valid target interfaces for event "${event.type} ${event.href}"`, () => {
+        assert(event.targets?.[0], 'No target interfaces');
+        event.targets.map(({target, bubbles}) => {
+          assert(interfaces.has(target) || mixins.has(target), `Unknown target interface "${target}"`);
+          assert(interfaces.has(target), `Target interface "${target}" is a mixin`);
+
+          const treeInfo = getInterfaceTreeInfo(target, parsedInterfaces);
+          if (treeInfo && treeInfo.depth > 0) {
+            assert(bubbles !== undefined, `No "bubbles" attribute whereas target interface "${target}" is part of tree "${treeInfo.tree}" through interface "${treeInfo.interface}"`);
+          }
+          else {
+            assert(bubbles === undefined, `A "bubbles" attribute is set whereas target interface "${target}" is not part of a tree`);
           }
         });
-
-        for (const event of data.events) {
-          if (!event.type) {
-            continue;
-          }
-	  if (event.interface) {
-	    usedEventInterfaces.add(event.interface);
-	  }
-          it(`contains a valid interface for event "${event.type}"`, () => {
-            assert(event.interface, 'No event interface');
-            assert(interfaces.has(event.interface) || mixins.has(event.interface), `Unknown interface "${event.interface}"`);
-            assert(interfaces.has(event.interface), `Event interface "${event.interface}" is a mixin`);
-          });
-
-          it(`contains valid target interfaces for event "${event.type} ${event.href}"`, () => {
-            assert(event.targets?.[0], 'No target interfaces');
-            event.targets.map(({target, bubbles}) => {
-              assert(interfaces.has(target) || mixins.has(target), `Unknown target interface "${target}"`);
-              assert(interfaces.has(target), `Target interface "${target}" is a mixin`);
-
-              const treeInfo = getTreeInfo(target, parsedInterfaces);
-              if (treeInfo && treeInfo.depth > 0) {
-                assert(bubbles !== undefined, `No "bubbles" attribute whereas target interface "${target}" is part of tree "${treeInfo.tree}" through interface "${treeInfo.interface}"`);
-              }
-              else {
-                assert(bubbles === undefined, `A "bubbles" attribute is set whereas target interface "${target}" is not part of a tree`);
-              }
-            });
-          });
-        }
-
       });
     }
   });
 
   it('references all the known *Event interfaces', () => {
     const eventInterfaces = [...interfaces].filter(iface => iface.match(/Event$/));
-    console.log(eventInterfaces);
-    assert.deepEqual(eventInterfaces.filter(iface => !usedEventInterfaces.has(iface)),
-		     [
-		       'CustomEvent', // not used by any spec
-		       'PaymentRequestUpdateEvent' // pending https://github.com/w3c/payment-request/issues/991
-		     ], "Event interfaces are defined in the platform but not referenced from extracted events");
-  });
-
-  it('contains valid JSON and expected properties', async function () {
-    this.slow(5000);
-
-    const all = await events.listAll({ folder: path.join(curatedFolder, 'events') });
-    assert(Object.keys(all).length > 0);
-    for (const desc of Object.values(all)) {
-      assert(desc);
-      assert(desc.spec);
-      assert(desc.spec.title);
-      assert(desc.events);
-      assert(desc.events.length > 0);
-      assert(desc.events[0].hasOwnProperty('type'));
-      assert(desc.events[0].hasOwnProperty('interface'));
-    }
+    assert.deepEqual(
+      eventInterfaces.filter(iface => !usedEventInterfaces.has(iface)),
+      [
+        'CustomEvent', // not used by any spec
+        'PaymentRequestUpdateEvent' // pending https://github.com/w3c/payment-request/issues/991
+      ],
+      "Event interfaces are defined in the platform but not referenced from extracted events"
+    );
   });
 });

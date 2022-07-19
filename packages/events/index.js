@@ -1,16 +1,13 @@
 const fs = require('fs').promises;
 const path = require('path');
+let events;
 
 async function listAll({folder = __dirname} = {}) {
-  const all = {};
-  const files = await fs.readdir(folder);
-  for (const f of files) {
-    if (f.endsWith('.json') && f !== 'package.json') {
-      const text = await fs.readFile(path.join(folder, f), 'utf8');
-      all[path.basename(f, '.json')] = JSON.parse(text);
-    }
+  if (!events) {
+    const json = await fs.readFile(path.join(folder, 'events.json'), 'utf8');
+    events = JSON.parse(json);
   }
-  return all;
+  return events;
 }
 
 module.exports = {listAll};
