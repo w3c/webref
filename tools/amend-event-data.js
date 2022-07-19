@@ -12,11 +12,8 @@
 
 const fs = require('fs').promises;
 const path = require('path');
-const util = require('util');
-const execFile = util.promisify(require('child_process').execFile);
 const loadJSON = require('./utils').loadJSON;
 const expandCrawlResult = require('reffy').expandCrawlResult;
-const { getTreeInfo } = require('./utils.js');
 
 const patches = {
   'IndexedDB-3': [
@@ -516,14 +513,15 @@ const patches = {
 
 function applyEventPatches(spec) {
   let errors = [];
+  console.log(`Applying events patches for ${spec.shortname}`);
   for (const patch of patches[spec.shortname]) {
     let matched = 0;
     const updatedEvents = [];
     if (patch.add) {
-      spec['spec-events'].push(patch.add);
+      spec.events.push(patch.add);
       continue;
     }
-    for (let event of spec['spec-events']) {
+    for (let event of spec.events) {
       const matches = Object.keys(patch.pattern).every(prop => {
         if (patch.pattern[prop] === null) {
           return event[prop] === null || event[prop] === undefined;
@@ -549,7 +547,7 @@ function applyEventPatches(spec) {
       errors.push(`The following patch for the ${spec.shortname} spec changes ${matched} events, but ${patch.matched} was expected: ${JSON.stringify(patch, null, 2)}`);
       continue;
     }
-    spec['spec-events'] = updatedEvents;
+    spec.events = updatedEvents;
   }
   if (!errors.length) {
     spec.needsSaving = true;
@@ -557,164 +555,19 @@ function applyEventPatches(spec) {
   return errors;
 }
 
-function deepestInterfaceInTree(targets, parsedInterfaces) {
-  let deepestInTrees = {};
-  let filteredTargets = [];
-  for (let {target, bubbles} of targets) {
-    const treeInfo = getTreeInfo(target, parsedInterfaces);
-    if (!treeInfo) { // Not in a tree, we keep it in
-      filteredTargets.push({target});
-      continue;
-    }
-    const { tree, depth } = treeInfo;
-    const currentDeepest = deepestInTrees[tree]?.target;
-    if (currentDeepest) {
-      const { depth: currentDeepestDepth } = getTreeInfo(currentDeepest, parsedInterfaces);
-      if (depth > currentDeepestDepth) {
-        deepestInTrees[tree] = {target, bubbles};
-      }
-    } else {
-      deepestInTrees[tree] = {target, bubbles};
-    }
-  }
-  return filteredTargets.concat(Object.values(deepestInTrees));
-}
-
-function expandMixinTargets(event, mixins) {
-  const expandedTargets = event.targets?.map(i => mixins[i] || i)?.flat();
-  // This assumes a mixin matches more than one interface
-  if (expandedTargets && expandedTargets.length !== event.targets?.length) {
-    event.targets = expandedTargets;
-    return true;
-  }
-  return false;
-}
-
-function setBubblingPerTarget(event, parsedInterfaces) {
-  // if an event targets an interface in a tree
-  // but the root of the tree wasn't detected as a target
-  // we can assume bubbles is false
-  // (ideally, we should check the existence of the event handler on the
-  // root interface, but there is no easy way to get a consolidated IDL view
-  // of the root at the moment)
-  if (!event.targets) return;
-  const updatedTargets = [];
-  const detected = {};
-  const treeInterfaces = [];
-  for (let iface of event.targets) {
-    const treeInfo = getTreeInfo(iface, parsedInterfaces);
-    if (!treeInfo) {
-      updatedTargets.push({target: iface});
-      continue;
-    }
-    const { tree, depth } = treeInfo;
-    if (!detected[tree]) {
-      detected[tree] = {root: false, nonroot: false};
-    }
-    if (depth === 0) {
-      // bubbling doesn't matter on the root interface
-      updatedTargets.push({target: iface});
-      detected[tree].root = true;
-    } else {
-      treeInterfaces.push(iface);
-      detected[tree].nonroot = true;
-    }
-  }
-  // if the event is sent at targets in a tree, but isn't detected
-  // on the root target, and no bubbling info is available,
-  // assume it doesn't bubble
-  if (Object.values(detected).length) {
-    if (!event.hasOwnProperty("bubbles") && Object.values(detected).every(x => !x.root && x.nonroot )) {
-      event.bubbles = false;
-    }
-  }
-  for (let iface of treeInterfaces) {
-    if (event.hasOwnProperty("bubbles")) {
-      updatedTargets.push({target: iface, bubbles: event.bubbles});
-    }
-  }
-  event.targets = updatedTargets;
-  delete event.bubbles;
-}
-
-
-function cleanTargetInTrees(event, parsedInterfaces) {
-  // When several targets are attached to an event that bubbles
-  // keep only the "deepest" target
-  if (event.bubbles && event.targets?.length > 1) {
-    const filteredTargets = deepestInterfaceInTree(event.targets, parsedInterfaces);
-    if (filteredTargets.length !== event.targets.length) {
-      event.targets = filteredTargets;
-      return true;
-    }
-  }
-  return false;
-}
-
-function extendEvent(event, spec, consolidatedEvents) {
-  const { event: extendedEvent, spec: extendedSpec } =
-    consolidatedEvents.find(({event: e}) => e.href === event.href) ||
-    consolidatedEvents.find(({event: e, spec: s}) =>
-      event.href.startsWith(s.crawled) && e.type === event.type) ||
-    {};
-  if (!extendedEvent) {
-    // make this a fatal error
-    return `Found extended event with link ${event.href} in ${spec.shortname}, but did not find a matching original event`;
-  }
-  if (extendedEvent.interface && event.interface && extendedEvent.interface !== event.interface) {
-    return `Found extended event with link ${event.href} in ${spec.shortname} set to use interface ${event.interface}, different from original event interface ${extendedEvent.interface} in ${extendedSpec.shortname}`;
-  }
-  // Document potential additional targets
-  const newTargets = event.targets?.filter(t => !extendedEvent.targets?.find(tt => tt.target === t.target));
-  if (newTargets) {
-    extendedEvent.targets = (extendedEvent.targets || []).concat(newTargets);
-  }
-  // Document the fact that the event has been extended
-  if (!extendedEvent.extendedIn) {
-    extendedEvent.extendedIn = [];
-  }
-  extendedEvent.extendedIn.push({ spec: spec.series.shortname, href: event.src?.href });
-  extendedSpec.needsSaving = true;
-}
-
 async function curateEvents(folder) {
   const rawIndex = await loadJSON(path.join(folder, 'index.json'));
-  const index = await expandCrawlResult(rawIndex, folder, ['spec-events', 'idlparsed']);
-
-  // Collect list of mixin interfaces
-  const mixins = {};
-  const parsedInterfaces = [];
-  index.results.forEach(s => {
-    if (s.idlparsed) {
-      if (s.idlparsed.idlNames) {
-        Object.values(s.idlparsed.idlNames).forEach(dfn => {
-          if (dfn.type === "interface" && !dfn.partial) {
-            parsedInterfaces.push(dfn);
-          }
-        });
-      }
-      if (s.idlparsed.idlExtendedNames) {
-        Object.keys(s.idlparsed.idlExtendedNames).forEach(n => {
-          s.idlparsed.idlExtendedNames[n].forEach(f => {
-            if (f.type === "includes") {
-              if (!mixins[f.includes]) mixins[f.includes] = [];
-              mixins[f.includes].push(n);
-            }
-          });
-        });
-      }
-    }
-  });
+  const index = await expandCrawlResult(rawIndex, folder, ['events']);
 
   async function saveEvents(spec) {
-    const pathname = path.join(folder, 'spec-events', spec.shortname + '.json');
-    if (spec['spec-events'].length) {
+    const pathname = path.join(folder, 'events', spec.shortname + '.json');
+    if (spec.events.length) {
       const events = {
         spec: {
           title: spec.title,
           url: spec.crawled
         },
-        'spec-events': spec['spec-events']
+        events: spec.events
       };
       const json = JSON.stringify(events, null, 2) + '\n';
       await fs.writeFile(pathname, json);
@@ -730,40 +583,10 @@ async function curateEvents(folder) {
       errors.push(`Could not find spec with shortname ${specShortname} for event patching`);
       continue;
     }
-    if (!spec['spec-events']) {
-      spec['spec-events'] = [];
+    if (!spec.events) {
+      spec.events = [];
     }
     errors = errors.concat(applyEventPatches(spec));
-  }
-
-  const consolidatedEvents = [];
-  const eventsToConsolidate = [];
-  for (const spec of index.results.filter(s => s['spec-events'])) {
-    const updatedEvents = [];
-    for (const event of spec['spec-events']) {
-      if (expandMixinTargets(event, mixins)) {
-        spec.needsSaving = true;
-      }
-      if (event.targets) {
-        setBubblingPerTarget(event, parsedInterfaces);
-        spec.needsSaving = true;
-      }
-      if (cleanTargetInTrees(event, parsedInterfaces)) {
-        spec.needsSaving = true;
-      }
-      if (!event.isExtension) {
-        updatedEvents.push(event);
-        consolidatedEvents.push({ event, spec });
-      } else {
-        eventsToConsolidate.push({event, spec});
-        spec.needsSaving = true;
-      }
-    }
-    spec['spec-events'] = updatedEvents;
-  }
-  for (let {event, spec} of eventsToConsolidate) {
-    const err = extendEvent(event, spec, consolidatedEvents);
-    if (err) { errors.push(err) ;}
   }
 
   for (const spec of index.results) {
@@ -772,20 +595,9 @@ async function curateEvents(folder) {
     }
   }
 
-  // Update index removing specs with no events left
-  rawIndex.results.forEach(s => {
-    if (s['spec-events'] && index.results.find(ss => ss.url === s.url)['spec-events'].length === 0) {
-      delete s['spec-events'];
-    }
-  });
-  const json = JSON.stringify(rawIndex, null, 2) + '\n';
-  const pathname = path.join(folder, 'index.json');
-  await fs.writeFile(pathname, json);
-
   if (errors.length) {
-    throw new Error("\n- " + errors.join("\n-"));
+    throw new Error("\n- " + errors.join("\n- "));
   }
-
 }
 
 
