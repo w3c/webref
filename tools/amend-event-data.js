@@ -592,6 +592,7 @@ async function curateEvents(folder) {
   for (const spec of index.results) {
     if (spec.needsSaving) {
       await saveEvents(spec);
+      delete spec.needsSaving;
     }
   }
 
