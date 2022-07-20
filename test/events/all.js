@@ -82,18 +82,28 @@ before(async () => {
       it(`contains valid target interfaces for events "${type}"`, () => {
         for (const event of list) {
           assert(event.targets?.[0], report('No target interfaces', event));
-          event.targets.map(({target, bubbles}) => {
+          for (const {target, bubbles} of event.targets) {
             assert(interfaces.has(target) || mixins.has(target), report(`Unknown target interface "${target}"`, event));
             assert(interfaces.has(target), report(`Target interface "${target}" is a mixin`, event));
 
             const treeInfo = getInterfaceTreeInfo(target, parsedInterfaces);
             if (treeInfo && treeInfo.depth > 0) {
               assert(bubbles !== undefined, report(`No "bubbles" attribute whereas target interface "${target}" is part of tree "${treeInfo.tree}" through interface "${treeInfo.interface}"`, event));
+              if (bubbles) {
+                const deeperTarget = event.targets
+                  .filter(({ target: t}) => t !== target)
+                  .find(({ target: t}) => {
+                    const targetInfo = getInterfaceTreeInfo(t, parsedInterfaces);
+                    return targetInfo?.tree === treeInfo.tree &&
+                      targetInfo.depth > treeInfo.depth;
+                  });
+                assert(!deeperTarget, report(`Deeper target interface "${deeperTarget?.target}" found on top of "${target}" in bubbling tree "${treeInfo.tree}"`, event));
+              }
             }
             else {
               assert(bubbles === undefined, report(`A "bubbles" attribute is set whereas target interface "${target}" is not part of a tree`, event));
             }
-          });
+          }
         }
       });
     }
