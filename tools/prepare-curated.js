@@ -2,9 +2,9 @@
  * Prepare the curated data and save the result to the given folder.
  *
  * Curation means copying raw data to the given folder, applying patches (CSS,
- * elements, IDL) when needed and running post-processing modules that need to
- * run on curated data to re-generate the `idlparsed`, `idlnames` and
- * `idlnamesparsed` folders.
+ * elements, events, IDL) when needed and running post-processing modules that
+ * need to run on curated data to generate the `idlparsed`, `idlnames` and
+ * `idlnamesparsed` folders, and the merged `events.json` file
  *
  * The output folder gets created if it does not exist yet. Output folder
  * contents get deleted to start with if folder is not empty.
@@ -27,6 +27,7 @@ const {
   copyFolder } = require('./utils');
 const { applyPatches } = require('./apply-patches');
 const { dropCSSPropertyDuplicates } = require('./drop-css-property-duplicates');
+const { curateEvents } = require('./amend-event-data');
 
 
 /**
@@ -60,7 +61,7 @@ async function cleanCrawlOutcome(spec) {
  *
  * @function
  * @param {String} type Package name. Must match one of the existing folder
- *  names under "packages" (e.g. "css", "elements", "idl")
+ *  names under "packages" (e.g. "css", "elements", "events", "idl")
  */
 async function prepareCurated(rawFolder, curatedFolder) {
   console.log('Make sure that curated folder exists and is empty');
@@ -85,6 +86,7 @@ async function prepareCurated(rawFolder, curatedFolder) {
   console.log();
   console.log('Apply patches');
   await applyPatches(rawFolder, curatedFolder, 'all');
+  await curateEvents(curatedFolder);
   console.log('- patches applied');
 
   let crawlIndexFile = path.join(curatedFolder, 'index.json');
@@ -103,7 +105,7 @@ async function prepareCurated(rawFolder, curatedFolder) {
   await crawlSpecs({
     useCrawl: curatedFolder,
     output: curatedFolder,
-    post: ['idlparsed', 'idlnames'],
+    post: ['idlparsed', 'idlnames', 'events'],
     quiet: true
   });
   console.log('- done');

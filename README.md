@@ -14,6 +14,7 @@ Additionally, subsets of the curated content get manually reviewed and published
 - [@webref/idl](https://www.npmjs.com/package/@webref/idl) contains a [curated](packages/idl#guarantees) version of the [ed/idl](ed/idl) folder.
 - [@webref/css](https://www.npmjs.com/package/@webref/css) contains a [curated](packages/css#guarantees) version of the [ed/css](ed/css) folder.
 - [@webref/elements](https://www.npmjs.com/package/@webref/elements) contains a [curated](packages/elements#guarantees) version of the [ed/elements](ed/elements) folder.
+- [@webref/events](https://www.npmjs.com/package/@webref/events) contains a [curated](packages/events#guarantees) version of the [ed/events](ed/events) folder.
 
 **Important:** Unless you are ready to deal with invalid content, we strongly recommend that you process contents of the `curated` branch or NPM packages instead of raw content in the `main` branch.
 
@@ -71,6 +72,15 @@ Data curation brings the following guarantees.
 
 - All Web IDL interfaces referenced by elements exist in Web IDL extracts.
 
+### Events extracts
+
+- All events have a `type` attribute that match the name of the event
+- All events have a `interface` attribute to describe the interface used by the Event. The Web IDL interface exists in the latest version of the [`@webref/idl` package](https://www.npmjs.com/package/@webref/idl) at the time the `@webref/events` package is released, and represents an actual interface (i.e. not a mixin).
+- All events have a `targets` attribute with a non-empty list of target interfaces on which the event may fire. All Web IDL interfaces in the list exist in the latest version of the [`@webref/idl` package](https://www.npmjs.com/package/@webref/idl) at the time the `@webref/events` package is released, and represent an actual interface (i.e. not a mixin).
+- The `bubbles` attribute is always set to a boolean value for target interfaces that belong to a bubbling tree (DOM, IndexedDB, Serial API, Web Bluetooth).
+- The `bubbles` attribute is not set for target interface that do not belong to a bubbling tree.
+- The `targets` attribute contains the top most interfaces in an inheritance chain, unless bubbling conditions differ. For instance, the list may contain `{ "target": "Element", "bubbles": true }` but not also `{ "target": "HTMLElement", "bubbles": true }` since `HTMLElement` inherits from `Element`.
+- For target interfaces that belong to a bubbling tree, the `targets` attribute only contains the deepest interface in the bubbling tree on which the event may fire and bubble. For instance, the list may contain `{ "target": "HTMLElement", "bubbles": true }`, but not also `{ "target": "Document" }` since event would de facto fire at `Document` through bubbling.
 
 ## Potential spec anomalies
 
@@ -100,5 +110,5 @@ GitHub Actions workflows are used to automate most of the tasks in this repo.
 
 ### Releases to NPM
 
-- [Publish @webref package if needed](https://github.com/w3c/webref/actions/workflows/release-package.yml) - publishes a new version of the `@webref/css`, `@webref/elements` or `@webref/idl` package to NPM, tags the corresponding commits on the `main` and `curated` branches, and updates the relevant `@webref/xxx@latest` tag to point to the right commit on the `curated` branch. Runs whenever a pre-release PR is merged. Note that the released version is the version that appeared in `packages/css/package.json`, `packages/elements/package.json` or `packages/idl/package.json` **before** the pre-release PR is merged.
+- [Publish @webref package if needed](https://github.com/w3c/webref/actions/workflows/release-package.yml) - publishes a new version of the `@webref/css`, `@webref/elements`, `@webref/events` or `@webref/idl` package to NPM, tags the corresponding commits on the `main` and `curated` branches, and updates the relevant `@webref/xxx@latest` tag to point to the right commit on the `curated` branch. Runs whenever a pre-release PR is merged. Note that the released version is the version that appeared in `packages/css/package.json`, `packages/elements/package.json`, `packages/events/package.json` or `packages/idl/package.json` **before** the pre-release PR is merged.
 - [@webref release: Request review of pre-release PR] - assigns reviewers to NPM package pull requests. Runs once per week.

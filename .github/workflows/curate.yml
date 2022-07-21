@@ -66,6 +66,11 @@ jobs:
       env:
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+    - name: Prepare a pre-release PR for the @webref/events package if needed
+      run: node tools/prepare-release.js events
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
     - name: Prepare a pre-release PR for the @webref/idl package if needed
       run: node tools/prepare-release.js idl
       env:

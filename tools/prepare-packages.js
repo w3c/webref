@@ -1,7 +1,8 @@
 /**
  * Prepare the NPM packages from curated data
  *
- * NPM packages include @webref/css, @webref/elements and @webref/idl.
+ * NPM packages include @webref/css, @webref/elements, @webref/events
+ * and @webref/idl.
  * 
  * These packages contain a filtered view of the curated data, which must have
  * been prepared prior to running this script (see tools/prepare-curated.js).
@@ -27,12 +28,23 @@ async function preparePackages(curatedFolder, packagesFolder) {
   const packages = [
     { name: 'css', fileExt: 'json' },
     { name: 'elements', fileExt: 'json' },
+    { name: 'events', fileExt: 'json', index: 'events.json', folder: null },
     { name: 'idl', fileExt: 'idl' }
   ];
 
-  for (const { name, fileExt } of packages) {
+  for (let { name, fileExt, index, folder } of packages) {
     console.log();
     console.log(`Prepare the ${name} package`);
+
+    // Copy extract files from folder with same name as package by default,
+    // unless told to use a different folder or not to copy anything (when
+    // value is null)
+    if (folder === undefined) {
+      folder = name;
+    }
+
+    // TODO: consider adding index file from crawl result file (see #554),
+    // unless index is already set to a specific file
 
     // rm packages/${name}/*.${fileExt}
     const dstDir = path.join(packagesFolder, name);
@@ -44,22 +56,30 @@ async function preparePackages(curatedFolder, packagesFolder) {
     }
     console.log(`- cleaned ${dstDir} folder`);
 
-    // Only keep specs targeted at browsers
-    const specs = crawlIndex.results
-      .filter(spec => spec[name])
-      .filter(spec => spec.categories?.includes('browser'));
-    console.log(`- ${specs.length}/${crawlIndex.results.length} specs to include in the package`);
+    if (folder) {
+      // Only keep extracts from specs targeted at browsers
+      const specs = crawlIndex.results
+        .filter(spec => spec[name])
+        .filter(spec => spec.categories?.includes('browser'));
+      console.log(`- ${specs.length}/${crawlIndex.results.length} specs to include in the package`);
 
-    // cp ${curatedFolder}/${name}/*.${fileExt} packages/${name}
-    const srcDir = path.join(curatedFolder, name);
-    const srcFiles = await fs.readdir(srcDir);
-    for (const file of srcFiles) {
-      if (file.endsWith(`.${fileExt}`) &&
-          specs.find(spec => spec[name] === `${name}/${file}`)) {
-        await fs.copyFile(path.join(srcDir, file), path.join(dstDir, file));
+      // cp ${curatedFolder}/${folder}/*.${fileExt} packages/${name}
+      const srcDir = path.join(curatedFolder, folder);
+      const srcFiles = await fs.readdir(srcDir);
+      for (const file of srcFiles) {
+        if (file.endsWith(`.${fileExt}`) &&
+            specs.find(spec => spec[name] === `${name}/${file}`)) {
+          await fs.copyFile(path.join(srcDir, file), path.join(dstDir, file));
+        }
       }
+      console.log(`- Curated extracts copied to ${dstDir}`);
     }
-    console.log(`- Curated extracts copied to ${dstDir}`);
+
+    if (index) {
+      // cp ${curatedFolder}/${index} packages/${name}/${index}
+      await fs.copyFile(path.join(curatedFolder, index), path.join(dstDir, index));
+      console.log(`- Index file copied to ${dstDir}`);
+    }
   }
 }
 

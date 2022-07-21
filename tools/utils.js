@@ -67,6 +67,7 @@ async function copyFolder(source, target, { excludeRoot = false } = {}) {
   }));
 };
 
+
 module.exports = {
   createFolderIfNeeded,
   loadJSON,

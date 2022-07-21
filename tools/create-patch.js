@@ -3,7 +3,7 @@
  * CSS, elements, or IDL extract file, rollback that commit, copy the patch file
  * to ed/[xxx]patches as needed, and commit the file in a new branch, leaving
  * just a few manual steps to actually integrate the patch into Webref.
- * 
+ *
  * node tools/create-patch.js
  */
 
@@ -26,7 +26,8 @@ async function main() {
       !commitFile.startsWith('ed/elements/')) {
     throw new Error('Last commit did not touch a CSS/Elements/IDL file');
   }
-  const patchType = commitFile.startsWith('ed/idl/') ? 'idl' :
+  const patchType =
+    commitFile.startsWith('ed/idl/') ? 'idl' :
     commitFile.startsWith('ed/elements/') ? 'elements' : 'css';
   const patchFile = commitFile.substring(`ed/${patchType}/`.length);
   console.log('  done');
