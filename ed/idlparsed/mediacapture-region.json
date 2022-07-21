@@ -18,7 +18,7 @@
     },
     "idlNames": {
       "CropTarget": {
-        "fragment": "[Exposed=(Window,Worker), Serializable]\ninterface CropTarget {\n  [SecureContext] static Promise<CropTarget> fromElement(Element element);\n};",
+        "fragment": "[Exposed=(Window,Worker), Serializable]\ninterface CropTarget {\n  [Exposed=Window, SecureContext] static Promise<CropTarget> fromElement(Element element);\n};",
         "type": "interface",
         "name": "CropTarget",
         "inheritance": null,
@@ -62,6 +62,15 @@
               }
             ],
             "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "Exposed",
+                "rhs": {
+                  "type": "identifier",
+                  "value": "Window"
+                },
+                "arguments": []
+              },
               {
                 "type": "extended-attribute",
                 "name": "SecureContext",
