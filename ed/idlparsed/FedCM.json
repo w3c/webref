@@ -144,10 +144,10 @@
         "extAttrs": [],
         "partial": false
       },
-      "IdentityCredentialLogoutRpsRequest": {
-        "fragment": "dictionary IdentityCredentialLogoutRpsRequest {\n  required USVString url;\n  required USVString accountId;\n};",
+      "IdentityCredentialLogoutRPsRequest": {
+        "fragment": "dictionary IdentityCredentialLogoutRPsRequest {\n  required USVString url;\n  required USVString accountId;\n};",
         "type": "dictionary",
-        "name": "IdentityCredentialLogoutRpsRequest",
+        "name": "IdentityCredentialLogoutRPsRequest",
         "inheritance": null,
         "members": [
           {
@@ -215,7 +215,7 @@
       ],
       "IdentityCredential": [
         {
-          "fragment": "[Exposed=Window, SecureContext]\npartial interface IdentityCredential {\n  static Promise<undefined> logoutRPs(sequence<IdentityCredentialLogoutRpsRequest> logoutRequests);\n};",
+          "fragment": "[Exposed=Window, SecureContext]\npartial interface IdentityCredential {\n  static Promise<undefined> logoutRPs(sequence<IdentityCredentialLogoutRPsRequest> logoutRequests);\n};",
           "type": "interface",
           "name": "IdentityCredential",
           "inheritance": null,
@@ -258,7 +258,7 @@
                         "generic": "",
                         "nullable": false,
                         "union": false,
-                        "idlType": "IdentityCredentialLogoutRpsRequest"
+                        "idlType": "IdentityCredentialLogoutRPsRequest"
                       }
                     ]
                   },
@@ -302,7 +302,7 @@
     "dependencies": {
       "IdentityCredential": [
         "Credential",
-        "IdentityCredentialLogoutRpsRequest"
+        "IdentityCredentialLogoutRPsRequest"
       ],
       "CredentialRequestOptions": [
         "IdentityCredentialRequestOptions"
@@ -311,7 +311,7 @@
         "IdentityProvider"
       ],
       "IdentityProvider": [],
-      "IdentityCredentialLogoutRpsRequest": []
+      "IdentityCredentialLogoutRPsRequest": []
     },
     "externalDependencies": [
       "Credential",
