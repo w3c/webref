@@ -46,6 +46,16 @@ before(async () => {
     }
   }
 
+  function inheritsFrom(iface, base) {
+    while (iface) {
+      if (iface === base) {
+        return true;
+      }
+      iface = parsedInterfaces.find(i => i.name === iface)?.inheritance;
+    }
+    return false;
+  }
+
   allEvents = await events.listAll({ folder: curatedFolder });
   for (const event of allEvents) {
     if (event.interface) {
@@ -86,19 +96,21 @@ before(async () => {
             assert(interfaces.has(target) || mixins.has(target), report(`Unknown target interface "${target}"`, event));
             assert(interfaces.has(target), report(`Target interface "${target}" is a mixin`, event));
 
+            const ancestor = event.targets.find(({ target: t, bubbles: b }) =>
+              t !== target && b === bubbles && inheritsFrom(target, t));
+            assert(ancestor === undefined, report(`The "${target}" interface inherits from "${ancestor?.target}" which already appears in the list of target interfaces`, event));
+
             const treeInfo = getInterfaceTreeInfo(target, parsedInterfaces);
             if (treeInfo && treeInfo.depth > 0) {
               assert(bubbles !== undefined, report(`No "bubbles" attribute whereas target interface "${target}" is part of tree "${treeInfo.tree}" through interface "${treeInfo.interface}"`, event));
-              if (bubbles) {
-                const deeperTarget = event.targets
-                  .filter(({ target: t}) => t !== target)
-                  .find(({ target: t}) => {
-                    const targetInfo = getInterfaceTreeInfo(t, parsedInterfaces);
-                    return targetInfo?.tree === treeInfo.tree &&
-                      targetInfo.depth > treeInfo.depth;
-                  });
-                assert(!deeperTarget, report(`Deeper target interface "${deeperTarget?.target}" found on top of "${target}" in bubbling tree "${treeInfo.tree}"`, event));
-              }
+              const deeperTargets = event.targets
+                .filter(({ target: t }) => t !== target)
+                .filter(({ target: t, bubbles: b }) => {
+                  const targetInfo = getInterfaceTreeInfo(t, parsedInterfaces);
+                  return getInterfaceTreeInfo(t, parsedInterfaces)?.tree === treeInfo.tree &&
+                    b && targetInfo.depth > treeInfo.depth;
+                });
+              assert.deepEqual(deeperTargets, [], report(`Deeper target interfaces found on top of "${target}" in bubbling tree "${treeInfo.tree}"`, event));
             }
             else {
               assert(bubbles === undefined, report(`A "bubbles" attribute is set whereas target interface "${target}" is not part of a tree`, event));
