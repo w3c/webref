@@ -9,9 +9,10 @@
         "format": "fire an event phrasing",
         "href": "https://w3c.github.io/edit-context/#extensions-to-the-element-interface"
       },
-      "href": "https://w3c.github.io/edit-context/#extensions-to-the-element-interface",
+      "href": "https://w3c.github.io/uievents/#beforeinput",
       "type": "beforeinput",
-      "interface": "Event"
+      "interface": "InputEvent",
+      "isExtension": true
     },
     {
       "src": {
@@ -32,7 +33,7 @@
       },
       "href": "https://w3c.github.io/edit-context/#extensions-to-the-element-interface",
       "type": "textupdate",
-      "interface": "Event",
+      "interface": "TextUpdateEvent",
       "targets": [
         "EditContext"
       ]
@@ -43,8 +44,11 @@
         "href": "https://w3c.github.io/edit-context/#extensions-to-the-element-interface"
       },
       "href": "https://w3c.github.io/edit-context/#extensions-to-the-element-interface",
-      "type": "textformateupdate",
-      "interface": "Event"
+      "type": "textformatupdate",
+      "interface": "TextFormatUpdateEvent",
+      "targets": [
+        "EditContext"
+      ]
     },
     {
       "src": {
@@ -53,7 +57,7 @@
       },
       "href": "https://w3c.github.io/edit-context/#extensions-to-the-element-interface",
       "type": "characterboundsupdate",
-      "interface": "Event",
+      "interface": "CharacterBoundsUpdateEvent",
       "targets": [
         "EditContext"
       ]
@@ -69,17 +73,6 @@
       "targets": [
         "EditContext"
       ]
-    },
-    {
-      "type": "textformatupdate",
-      "targets": [
-        "EditContext"
-      ],
-      "interface": null,
-      "src": {
-        "format": "IDL eventHandler",
-        "href": null
-      }
     }
   ]
 }

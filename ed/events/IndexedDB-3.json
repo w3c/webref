@@ -71,36 +71,49 @@
       "targets": [
         "IDBOpenDBRequest"
       ],
-      "interface": null,
+      "interface": "IDBVersionChangeEvent",
       "src": {
         "format": "IDL eventHandler",
         "href": null
       },
-      "href": "https://w3c.github.io/IndexedDB/#eventdef-idbopendbrequest-blocked"
+      "href": "https://w3c.github.io/IndexedDB/#eventdef-idbopendbrequest-blocked",
+      "bubbles": false
     },
     {
       "type": "upgradeneeded",
       "targets": [
         "IDBOpenDBRequest"
       ],
-      "interface": null,
+      "interface": "IDBVersionChangeEvent",
       "src": {
         "format": "IDL eventHandler",
         "href": null
       },
-      "href": "https://w3c.github.io/IndexedDB/#eventdef-idbopendbrequest-upgradeneeded"
+      "href": "https://w3c.github.io/IndexedDB/#eventdef-idbopendbrequest-upgradeneeded",
+      "bubbles": false
     },
     {
       "type": "versionchange",
       "targets": [
         "IDBDatabase"
       ],
-      "interface": null,
+      "interface": "IDBVersionChangeEvent",
       "src": {
         "format": "IDL eventHandler",
         "href": null
       },
       "href": "https://w3c.github.io/IndexedDB/#eventdef-idbdatabase-versionchange"
+    },
+    {
+      "interface": "IDBVersionChangeEvent",
+      "bubbles": false,
+      "type": "success",
+      "targets": [
+        "IDBOpenDBRequest"
+      ],
+      "src": {
+        "href": "https://w3c.github.io/IndexedDB/#dom-idbfactory-deletedatabase"
+      }
     }
   ]
 }

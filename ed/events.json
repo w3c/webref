@@ -1,0 +1,6463 @@
+[
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://compat.spec.whatwg.org/#ref-for-concept-event-fire"
+    },
+    "href": "https://compat.spec.whatwg.org/#event-orientationchange",
+    "type": "orientationchange",
+    "targets": [
+      {
+        "target": "Window"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://dom.spec.whatwg.org/#ref-for-concept-event-fire%E2%91%A4"
+    },
+    "href": "https://dom.spec.whatwg.org/#eventdef-abortsignal-abort",
+    "type": "abort",
+    "targets": [
+      {
+        "target": "AbortSignal"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "type": "fullscreenchange",
+    "interface": "Event",
+    "targets": [
+      {
+        "target": "Element",
+        "bubbles": true
+      }
+    ],
+    "src": {
+      "format": "dfn",
+      "href": "https://fullscreen.spec.whatwg.org/#eventdef-document-fullscreenchange"
+    },
+    "href": "https://fullscreen.spec.whatwg.org/#eventdef-document-fullscreenchange"
+  },
+  {
+    "type": "fullscreenerror",
+    "interface": "Event",
+    "targets": [
+      {
+        "target": "Element",
+        "bubbles": true
+      }
+    ],
+    "src": {
+      "format": "dfn",
+      "href": "https://fullscreen.spec.whatwg.org/#eventdef-document-fullscreenerror"
+    },
+    "href": "https://fullscreen.spec.whatwg.org/#eventdef-document-fullscreenerror"
+  },
+  {
+    "href": "https://html.spec.whatwg.org/multipage/media.html#event-media-loadstart",
+    "src": {
+      "format": "summary table",
+      "href": "https://html.spec.whatwg.org/multipage/media.html#event-media-loadstart"
+    },
+    "type": "loadstart",
+    "targets": [
+      {
+        "target": "HTMLMediaElement",
+        "bubbles": false
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://html.spec.whatwg.org/multipage/media.html#event-media-progress",
+    "src": {
+      "format": "summary table",
+      "href": "https://html.spec.whatwg.org/multipage/media.html#event-media-progress"
+    },
+    "type": "progress",
+    "targets": [
+      {
+        "target": "HTMLMediaElement",
+        "bubbles": false
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://html.spec.whatwg.org/multipage/media.html#event-media-suspend",
+    "src": {
+      "format": "summary table",
+      "href": "https://html.spec.whatwg.org/multipage/media.html#event-media-suspend"
+    },
+    "type": "suspend",
+    "targets": [
+      {
+        "target": "HTMLMediaElement",
+        "bubbles": false
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://html.spec.whatwg.org/multipage/media.html#event-media-abort",
+    "src": {
+      "format": "summary table",
+      "href": "https://html.spec.whatwg.org/multipage/media.html#event-media-abort"
+    },
+    "type": "abort",
+    "targets": [
+      {
+        "target": "HTMLMediaElement",
+        "bubbles": false
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://html.spec.whatwg.org/multipage/media.html#event-media-error",
+    "src": {
+      "format": "summary table",
+      "href": "https://html.spec.whatwg.org/multipage/media.html#event-media-error"
+    },
+    "type": "error",
+    "targets": [
+      {
+        "target": "HTMLMediaElement",
+        "bubbles": false
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://html.spec.whatwg.org/multipage/media.html#event-media-emptied",
+    "src": {
+      "format": "summary table",
+      "href": "https://html.spec.whatwg.org/multipage/media.html#event-media-emptied"
+    },
+    "type": "emptied",
+    "targets": [
+      {
+        "target": "HTMLMediaElement",
+        "bubbles": false
+      }
+    ],
+    "interface": "Event",
+    "extendedIn": [
+      {
+        "spec": "media-source",
+        "href": "https://w3c.github.io/media-source/#mediasource-detach"
+      }
+    ]
+  },
+  {
+    "href": "https://html.spec.whatwg.org/multipage/media.html#event-media-stalled",
+    "src": {
+      "format": "summary table",
+      "href": "https://html.spec.whatwg.org/multipage/media.html#event-media-stalled"
+    },
+    "type": "stalled",
+    "targets": [
+      {
+        "target": "HTMLMediaElement",
+        "bubbles": false
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://html.spec.whatwg.org/multipage/media.html#event-media-loadedmetadata",
+    "src": {
+      "format": "summary table",
+      "href": "https://html.spec.whatwg.org/multipage/media.html#event-media-loadedmetadata"
+    },
+    "type": "loadedmetadata",
+    "targets": [
+      {
+        "target": "HTMLMediaElement",
+        "bubbles": false
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://html.spec.whatwg.org/multipage/media.html#event-media-loadeddata",
+    "src": {
+      "format": "summary table",
+      "href": "https://html.spec.whatwg.org/multipage/media.html#event-media-loadeddata"
+    },
+    "type": "loadeddata",
+    "targets": [
+      {
+        "target": "HTMLMediaElement",
+        "bubbles": false
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://html.spec.whatwg.org/multipage/media.html#event-media-canplay",
+    "src": {
+      "format": "summary table",
+      "href": "https://html.spec.whatwg.org/multipage/media.html#event-media-canplay"
+    },
+    "type": "canplay",
+    "targets": [
+      {
+        "target": "HTMLMediaElement",
+        "bubbles": false
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://html.spec.whatwg.org/multipage/media.html#event-media-canplaythrough",
+    "src": {
+      "format": "summary table",
+      "href": "https://html.spec.whatwg.org/multipage/media.html#event-media-canplaythrough"
+    },
+    "type": "canplaythrough",
+    "targets": [
+      {
+        "target": "HTMLMediaElement",
+        "bubbles": false
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://html.spec.whatwg.org/multipage/media.html#event-media-playing",
+    "src": {
+      "format": "summary table",
+      "href": "https://html.spec.whatwg.org/multipage/media.html#event-media-playing"
+    },
+    "type": "playing",
+    "targets": [
+      {
+        "target": "HTMLMediaElement",
+        "bubbles": false
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://html.spec.whatwg.org/multipage/media.html#event-media-waiting",
+    "src": {
+      "format": "summary table",
+      "href": "https://html.spec.whatwg.org/multipage/media.html#event-media-waiting"
+    },
+    "type": "waiting",
+    "targets": [
+      {
+        "target": "HTMLMediaElement",
+        "bubbles": false
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://html.spec.whatwg.org/multipage/media.html#event-media-seeking",
+    "src": {
+      "format": "summary table",
+      "href": "https://html.spec.whatwg.org/multipage/media.html#event-media-seeking"
+    },
+    "type": "seeking",
+    "targets": [
+      {
+        "target": "HTMLMediaElement",
+        "bubbles": false
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://html.spec.whatwg.org/multipage/media.html#event-media-seeked",
+    "src": {
+      "format": "summary table",
+      "href": "https://html.spec.whatwg.org/multipage/media.html#event-media-seeked"
+    },
+    "type": "seeked",
+    "targets": [
+      {
+        "target": "HTMLMediaElement",
+        "bubbles": false
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://html.spec.whatwg.org/multipage/media.html#event-media-ended",
+    "src": {
+      "format": "summary table",
+      "href": "https://html.spec.whatwg.org/multipage/media.html#event-media-ended"
+    },
+    "type": "ended",
+    "targets": [
+      {
+        "target": "HTMLMediaElement",
+        "bubbles": false
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://html.spec.whatwg.org/multipage/media.html#event-media-durationchange",
+    "src": {
+      "format": "summary table",
+      "href": "https://html.spec.whatwg.org/multipage/media.html#event-media-durationchange"
+    },
+    "type": "durationchange",
+    "targets": [
+      {
+        "target": "HTMLMediaElement",
+        "bubbles": false
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://html.spec.whatwg.org/multipage/media.html#event-media-timeupdate",
+    "src": {
+      "format": "summary table",
+      "href": "https://html.spec.whatwg.org/multipage/media.html#event-media-timeupdate"
+    },
+    "type": "timeupdate",
+    "targets": [
+      {
+        "target": "HTMLMediaElement",
+        "bubbles": false
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://html.spec.whatwg.org/multipage/media.html#event-media-play",
+    "src": {
+      "format": "summary table",
+      "href": "https://html.spec.whatwg.org/multipage/media.html#event-media-play"
+    },
+    "type": "play",
+    "targets": [
+      {
+        "target": "HTMLMediaElement",
+        "bubbles": false
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://html.spec.whatwg.org/multipage/media.html#event-media-pause",
+    "src": {
+      "format": "summary table",
+      "href": "https://html.spec.whatwg.org/multipage/media.html#event-media-pause"
+    },
+    "type": "pause",
+    "targets": [
+      {
+        "target": "HTMLMediaElement",
+        "bubbles": false
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://html.spec.whatwg.org/multipage/media.html#event-media-ratechange",
+    "src": {
+      "format": "summary table",
+      "href": "https://html.spec.whatwg.org/multipage/media.html#event-media-ratechange"
+    },
+    "type": "ratechange",
+    "targets": [
+      {
+        "target": "HTMLMediaElement",
+        "bubbles": false
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://html.spec.whatwg.org/multipage/media.html#event-media-resize",
+    "src": {
+      "format": "summary table",
+      "href": "https://html.spec.whatwg.org/multipage/media.html#event-media-resize"
+    },
+    "type": "resize",
+    "targets": [
+      {
+        "target": "HTMLMediaElement",
+        "bubbles": false
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://html.spec.whatwg.org/multipage/media.html#event-media-volumechange",
+    "src": {
+      "format": "summary table",
+      "href": "https://html.spec.whatwg.org/multipage/media.html#event-media-volumechange"
+    },
+    "type": "volumechange",
+    "targets": [
+      {
+        "target": "HTMLMediaElement",
+        "bubbles": false
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://html.spec.whatwg.org/multipage/media.html#event-source-error",
+    "src": {
+      "format": "summary table",
+      "href": "https://html.spec.whatwg.org/multipage/media.html#event-source-error"
+    },
+    "type": "error",
+    "targets": [
+      {
+        "target": "HTMLSourceElement",
+        "bubbles": false
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://html.spec.whatwg.org/multipage/media.html#event-media-change",
+    "src": {
+      "format": "summary table",
+      "href": "https://html.spec.whatwg.org/multipage/media.html#event-media-change"
+    },
+    "type": "change",
+    "targets": [
+      {
+        "target": "AudioTrackList"
+      },
+      {
+        "target": "TextTrackList"
+      },
+      {
+        "target": "VideoTrackList"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://html.spec.whatwg.org/multipage/media.html#event-media-addtrack",
+    "src": {
+      "format": "summary table",
+      "href": "https://html.spec.whatwg.org/multipage/media.html#event-media-addtrack"
+    },
+    "type": "addtrack",
+    "targets": [
+      {
+        "target": "AudioTrackList"
+      },
+      {
+        "target": "TextTrackList"
+      },
+      {
+        "target": "VideoTrackList"
+      }
+    ],
+    "interface": "TrackEvent"
+  },
+  {
+    "href": "https://html.spec.whatwg.org/multipage/media.html#event-media-removetrack",
+    "src": {
+      "format": "summary table",
+      "href": "https://html.spec.whatwg.org/multipage/media.html#event-media-removetrack"
+    },
+    "type": "removetrack",
+    "targets": [
+      {
+        "target": "AudioTrackList"
+      },
+      {
+        "target": "TextTrackList"
+      },
+      {
+        "target": "VideoTrackList"
+      }
+    ],
+    "interface": "TrackEvent"
+  },
+  {
+    "href": "https://html.spec.whatwg.org/multipage/media.html#event-media-cuechange",
+    "src": {
+      "format": "summary table",
+      "href": "https://html.spec.whatwg.org/multipage/media.html#event-media-cuechange"
+    },
+    "type": "cuechange",
+    "targets": [
+      {
+        "target": "TextTrack"
+      },
+      {
+        "target": "HTMLTrackElement",
+        "bubbles": false
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://html.spec.whatwg.org/multipage/media.html#event-track-error",
+    "src": {
+      "format": "summary table",
+      "href": "https://html.spec.whatwg.org/multipage/media.html#event-track-error"
+    },
+    "type": "error",
+    "targets": [
+      {
+        "target": "HTMLTrackElement",
+        "bubbles": false
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://html.spec.whatwg.org/multipage/media.html#event-track-load",
+    "src": {
+      "format": "summary table",
+      "href": "https://html.spec.whatwg.org/multipage/media.html#event-track-load"
+    },
+    "type": "load",
+    "targets": [
+      {
+        "target": "HTMLTrackElement",
+        "bubbles": false
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://html.spec.whatwg.org/multipage/media.html#event-media-enter",
+    "src": {
+      "format": "summary table",
+      "href": "https://html.spec.whatwg.org/multipage/media.html#event-media-enter"
+    },
+    "type": "enter",
+    "targets": [
+      {
+        "target": "TextTrackCue"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://html.spec.whatwg.org/multipage/media.html#event-media-exit",
+    "src": {
+      "format": "summary table",
+      "href": "https://html.spec.whatwg.org/multipage/media.html#event-media-exit"
+    },
+    "type": "exit",
+    "targets": [
+      {
+        "target": "TextTrackCue"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://html.spec.whatwg.org/multipage/dnd.html#event-dnd-dragstart",
+    "src": {
+      "format": "summary table",
+      "href": "https://html.spec.whatwg.org/multipage/dnd.html#event-dnd-dragstart"
+    },
+    "type": "dragstart",
+    "targets": [
+      {
+        "target": "HTMLElement",
+        "bubbles": true
+      },
+      {
+        "target": "MathMLElement",
+        "bubbles": true
+      },
+      {
+        "target": "SVGElement",
+        "bubbles": true
+      }
+    ],
+    "interface": "DragEvent"
+  },
+  {
+    "href": "https://html.spec.whatwg.org/multipage/dnd.html#event-dnd-drag",
+    "src": {
+      "format": "summary table",
+      "href": "https://html.spec.whatwg.org/multipage/dnd.html#event-dnd-drag"
+    },
+    "type": "drag",
+    "targets": [
+      {
+        "target": "HTMLElement",
+        "bubbles": true
+      },
+      {
+        "target": "MathMLElement",
+        "bubbles": true
+      },
+      {
+        "target": "SVGElement",
+        "bubbles": true
+      }
+    ],
+    "interface": "DragEvent"
+  },
+  {
+    "href": "https://html.spec.whatwg.org/multipage/dnd.html#event-dnd-dragenter",
+    "src": {
+      "format": "summary table",
+      "href": "https://html.spec.whatwg.org/multipage/dnd.html#event-dnd-dragenter"
+    },
+    "type": "dragenter",
+    "targets": [
+      {
+        "target": "HTMLElement",
+        "bubbles": true
+      },
+      {
+        "target": "MathMLElement",
+        "bubbles": true
+      },
+      {
+        "target": "SVGElement",
+        "bubbles": true
+      }
+    ],
+    "interface": "DragEvent"
+  },
+  {
+    "href": "https://html.spec.whatwg.org/multipage/dnd.html#event-dnd-dragleave",
+    "src": {
+      "format": "summary table",
+      "href": "https://html.spec.whatwg.org/multipage/dnd.html#event-dnd-dragleave"
+    },
+    "type": "dragleave",
+    "targets": [
+      {
+        "target": "HTMLElement",
+        "bubbles": true
+      },
+      {
+        "target": "MathMLElement",
+        "bubbles": true
+      },
+      {
+        "target": "SVGElement",
+        "bubbles": true
+      }
+    ],
+    "interface": "DragEvent"
+  },
+  {
+    "href": "https://html.spec.whatwg.org/multipage/dnd.html#event-dnd-dragover",
+    "src": {
+      "format": "summary table",
+      "href": "https://html.spec.whatwg.org/multipage/dnd.html#event-dnd-dragover"
+    },
+    "type": "dragover",
+    "targets": [
+      {
+        "target": "HTMLElement",
+        "bubbles": true
+      },
+      {
+        "target": "MathMLElement",
+        "bubbles": true
+      },
+      {
+        "target": "SVGElement",
+        "bubbles": true
+      }
+    ],
+    "interface": "DragEvent"
+  },
+  {
+    "href": "https://html.spec.whatwg.org/multipage/dnd.html#event-dnd-drop",
+    "src": {
+      "format": "summary table",
+      "href": "https://html.spec.whatwg.org/multipage/dnd.html#event-dnd-drop"
+    },
+    "type": "drop",
+    "targets": [
+      {
+        "target": "HTMLElement",
+        "bubbles": true
+      },
+      {
+        "target": "MathMLElement",
+        "bubbles": true
+      },
+      {
+        "target": "SVGElement",
+        "bubbles": true
+      }
+    ],
+    "interface": "DragEvent"
+  },
+  {
+    "href": "https://html.spec.whatwg.org/multipage/dnd.html#event-dnd-dragend",
+    "src": {
+      "format": "summary table",
+      "href": "https://html.spec.whatwg.org/multipage/dnd.html#event-dnd-dragend"
+    },
+    "type": "dragend",
+    "targets": [
+      {
+        "target": "HTMLElement",
+        "bubbles": true
+      },
+      {
+        "target": "MathMLElement",
+        "bubbles": true
+      },
+      {
+        "target": "SVGElement",
+        "bubbles": true
+      }
+    ],
+    "interface": "DragEvent"
+  },
+  {
+    "href": "https://html.spec.whatwg.org/multipage/indices.html#event-domcontentloaded",
+    "src": {
+      "format": "summary table",
+      "href": "https://html.spec.whatwg.org/multipage/indices.html#event-domcontentloaded"
+    },
+    "type": "DOMContentLoaded",
+    "targets": [
+      {
+        "target": "Document",
+        "bubbles": true
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://html.spec.whatwg.org/multipage/indices.html#event-afterprint",
+    "src": {
+      "format": "summary table",
+      "href": "https://html.spec.whatwg.org/multipage/indices.html#event-afterprint"
+    },
+    "type": "afterprint",
+    "targets": [
+      {
+        "target": "Window"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://html.spec.whatwg.org/multipage/indices.html#event-beforeprint",
+    "src": {
+      "format": "summary table",
+      "href": "https://html.spec.whatwg.org/multipage/indices.html#event-beforeprint"
+    },
+    "type": "beforeprint",
+    "targets": [
+      {
+        "target": "Window"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://html.spec.whatwg.org/multipage/indices.html#event-beforematch",
+    "src": {
+      "format": "summary table",
+      "href": "https://html.spec.whatwg.org/multipage/indices.html#event-beforematch"
+    },
+    "type": "beforematch",
+    "targets": [
+      {
+        "target": "HTMLElement",
+        "bubbles": false
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://html.spec.whatwg.org/multipage/indices.html#event-beforeunload",
+    "src": {
+      "format": "summary table",
+      "href": "https://html.spec.whatwg.org/multipage/indices.html#event-beforeunload"
+    },
+    "type": "beforeunload",
+    "targets": [
+      {
+        "target": "Window"
+      }
+    ],
+    "interface": "BeforeUnloadEvent"
+  },
+  {
+    "href": "https://html.spec.whatwg.org/multipage/indices.html#event-blur",
+    "src": {
+      "format": "summary table",
+      "href": "https://html.spec.whatwg.org/multipage/indices.html#event-blur"
+    },
+    "type": "blur",
+    "targets": [
+      {
+        "target": "Window"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://html.spec.whatwg.org/multipage/indices.html#event-cancel",
+    "src": {
+      "format": "summary table",
+      "href": "https://html.spec.whatwg.org/multipage/indices.html#event-cancel"
+    },
+    "type": "cancel",
+    "targets": [
+      {
+        "target": "HTMLDialogElement",
+        "bubbles": true
+      },
+      {
+        "target": "HTMLInputElement",
+        "bubbles": true
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://html.spec.whatwg.org/multipage/indices.html#event-change",
+    "src": {
+      "format": "summary table",
+      "href": "https://html.spec.whatwg.org/multipage/indices.html#event-change"
+    },
+    "type": "change",
+    "targets": [
+      {
+        "target": "HTMLInputElement",
+        "bubbles": true
+      },
+      {
+        "target": "HTMLSelectElement",
+        "bubbles": true
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://html.spec.whatwg.org/multipage/indices.html#event-close",
+    "src": {
+      "format": "summary table",
+      "href": "https://html.spec.whatwg.org/multipage/indices.html#event-close"
+    },
+    "type": "close",
+    "targets": [
+      {
+        "target": "HTMLDialogElement",
+        "bubbles": false
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://html.spec.whatwg.org/multipage/indices.html#event-workerglobalscope-connect",
+    "src": {
+      "format": "summary table",
+      "href": "https://html.spec.whatwg.org/multipage/indices.html#event-workerglobalscope-connect"
+    },
+    "type": "connect",
+    "targets": [
+      {
+        "target": "SharedWorkerGlobalScope"
+      }
+    ],
+    "interface": "MessageEvent"
+  },
+  {
+    "href": "https://html.spec.whatwg.org/multipage/indices.html#event-contextlost",
+    "src": {
+      "format": "summary table",
+      "href": "https://html.spec.whatwg.org/multipage/indices.html#event-contextlost"
+    },
+    "type": "contextlost",
+    "targets": [
+      {
+        "target": "OffscreenCanvas"
+      },
+      {
+        "target": "HTMLCanvasElement",
+        "bubbles": false
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://html.spec.whatwg.org/multipage/indices.html#event-contextrestored",
+    "src": {
+      "format": "summary table",
+      "href": "https://html.spec.whatwg.org/multipage/indices.html#event-contextrestored"
+    },
+    "type": "contextrestored",
+    "targets": [
+      {
+        "target": "OffscreenCanvas"
+      },
+      {
+        "target": "HTMLCanvasElement",
+        "bubbles": false
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://html.spec.whatwg.org/multipage/indices.html#event-copy",
+    "src": {
+      "format": "summary table",
+      "href": "https://html.spec.whatwg.org/multipage/indices.html#event-copy"
+    },
+    "type": "copy",
+    "targets": [
+      {
+        "target": "HTMLElement",
+        "bubbles": false
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://html.spec.whatwg.org/multipage/indices.html#event-cut",
+    "src": {
+      "format": "summary table",
+      "href": "https://html.spec.whatwg.org/multipage/indices.html#event-cut"
+    },
+    "type": "cut",
+    "targets": [
+      {
+        "target": "HTMLElement",
+        "bubbles": false
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://html.spec.whatwg.org/multipage/indices.html#event-error",
+    "src": {
+      "format": "summary table",
+      "href": "https://html.spec.whatwg.org/multipage/indices.html#event-error"
+    },
+    "type": "error",
+    "targets": [
+      {
+        "target": "Window"
+      },
+      {
+        "target": "WorkerGlobalScope"
+      },
+      {
+        "target": "EventSource"
+      },
+      {
+        "target": "Worker"
+      },
+      {
+        "target": "SharedWorker"
+      },
+      {
+        "target": "Worker"
+      },
+      {
+        "target": "SharedWorker"
+      },
+      {
+        "target": "ServiceWorker"
+      }
+    ],
+    "interface": "Event",
+    "extendedIn": [
+      {
+        "spec": "webpackage",
+        "href": "https://wicg.github.io/webpackage/loading.html#ref-for-concept-event-fire%E2%91%A0"
+      }
+    ]
+  },
+  {
+    "href": "https://html.spec.whatwg.org/multipage/indices.html#event-focus",
+    "src": {
+      "format": "summary table",
+      "href": "https://html.spec.whatwg.org/multipage/indices.html#event-focus"
+    },
+    "type": "focus",
+    "targets": [
+      {
+        "target": "Window"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://html.spec.whatwg.org/multipage/indices.html#event-formdata",
+    "src": {
+      "format": "summary table",
+      "href": "https://html.spec.whatwg.org/multipage/indices.html#event-formdata"
+    },
+    "type": "formdata",
+    "targets": [
+      {
+        "target": "HTMLFormElement",
+        "bubbles": true
+      }
+    ],
+    "interface": "FormDataEvent"
+  },
+  {
+    "href": "https://html.spec.whatwg.org/multipage/indices.html#event-hashchange",
+    "src": {
+      "format": "summary table",
+      "href": "https://html.spec.whatwg.org/multipage/indices.html#event-hashchange"
+    },
+    "type": "hashchange",
+    "targets": [
+      {
+        "target": "Window"
+      }
+    ],
+    "interface": "HashChangeEvent"
+  },
+  {
+    "href": "https://html.spec.whatwg.org/multipage/indices.html#event-invalid",
+    "src": {
+      "format": "summary table",
+      "href": "https://html.spec.whatwg.org/multipage/indices.html#event-invalid"
+    },
+    "type": "invalid",
+    "targets": [
+      {
+        "target": "HTMLButtonElement",
+        "bubbles": false
+      },
+      {
+        "target": "HTMLInputElement",
+        "bubbles": false
+      },
+      {
+        "target": "HTMLSelectElement",
+        "bubbles": false
+      },
+      {
+        "target": "HTMLTextAreaElement",
+        "bubbles": false
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://html.spec.whatwg.org/multipage/indices.html#event-languagechange",
+    "src": {
+      "format": "summary table",
+      "href": "https://html.spec.whatwg.org/multipage/indices.html#event-languagechange"
+    },
+    "type": "languagechange",
+    "targets": [
+      {
+        "target": "Window"
+      },
+      {
+        "target": "WorkerGlobalScope"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://html.spec.whatwg.org/multipage/indices.html#event-load",
+    "src": {
+      "format": "summary table",
+      "href": "https://html.spec.whatwg.org/multipage/indices.html#event-load"
+    },
+    "type": "load",
+    "targets": [
+      {
+        "target": "Window"
+      }
+    ],
+    "interface": "Event",
+    "extendedIn": [
+      {
+        "spec": "portals",
+        "href": "https://wicg.github.io/portals/#ref-for-concept-event-fire%E2%91%A1"
+      },
+      {
+        "spec": "webpackage",
+        "href": "https://wicg.github.io/webpackage/loading.html#ref-for-concept-event-fire"
+      }
+    ]
+  },
+  {
+    "href": "https://html.spec.whatwg.org/multipage/indices.html#event-message",
+    "src": {
+      "format": "summary table",
+      "href": "https://html.spec.whatwg.org/multipage/indices.html#event-message"
+    },
+    "type": "message",
+    "targets": [
+      {
+        "target": "Window"
+      },
+      {
+        "target": "EventSource"
+      },
+      {
+        "target": "MessagePort"
+      },
+      {
+        "target": "BroadcastChannel"
+      },
+      {
+        "target": "DedicatedWorkerGlobalScope"
+      },
+      {
+        "target": "Worker"
+      },
+      {
+        "target": "ServiceWorkerContainer"
+      },
+      {
+        "target": "PresentationConnection"
+      }
+    ],
+    "interface": "MessageEvent",
+    "extendedIn": [
+      {
+        "spec": "presentation-api",
+        "href": null
+      }
+    ]
+  },
+  {
+    "href": "https://html.spec.whatwg.org/multipage/indices.html#event-messageerror",
+    "src": {
+      "format": "summary table",
+      "href": "https://html.spec.whatwg.org/multipage/indices.html#event-messageerror"
+    },
+    "type": "messageerror",
+    "targets": [
+      {
+        "target": "Window"
+      },
+      {
+        "target": "MessagePort"
+      },
+      {
+        "target": "BroadcastChannel"
+      },
+      {
+        "target": "DedicatedWorkerGlobalScope"
+      },
+      {
+        "target": "Worker"
+      },
+      {
+        "target": "ServiceWorkerContainer"
+      }
+    ],
+    "interface": "MessageEvent"
+  },
+  {
+    "href": "https://html.spec.whatwg.org/multipage/indices.html#event-offline",
+    "src": {
+      "format": "summary table",
+      "href": "https://html.spec.whatwg.org/multipage/indices.html#event-offline"
+    },
+    "type": "offline",
+    "targets": [
+      {
+        "target": "Window"
+      },
+      {
+        "target": "WorkerGlobalScope"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://html.spec.whatwg.org/multipage/indices.html#event-online",
+    "src": {
+      "format": "summary table",
+      "href": "https://html.spec.whatwg.org/multipage/indices.html#event-online"
+    },
+    "type": "online",
+    "targets": [
+      {
+        "target": "Window"
+      },
+      {
+        "target": "WorkerGlobalScope"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://html.spec.whatwg.org/multipage/indices.html#event-open",
+    "src": {
+      "format": "summary table",
+      "href": "https://html.spec.whatwg.org/multipage/indices.html#event-open"
+    },
+    "type": "open",
+    "targets": [
+      {
+        "target": "EventSource"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://html.spec.whatwg.org/multipage/indices.html#event-pagehide",
+    "src": {
+      "format": "summary table",
+      "href": "https://html.spec.whatwg.org/multipage/indices.html#event-pagehide"
+    },
+    "type": "pagehide",
+    "targets": [
+      {
+        "target": "Window"
+      }
+    ],
+    "interface": "PageTransitionEvent"
+  },
+  {
+    "href": "https://html.spec.whatwg.org/multipage/indices.html#event-pageshow",
+    "src": {
+      "format": "summary table",
+      "href": "https://html.spec.whatwg.org/multipage/indices.html#event-pageshow"
+    },
+    "type": "pageshow",
+    "targets": [
+      {
+        "target": "Window"
+      }
+    ],
+    "interface": "PageTransitionEvent"
+  },
+  {
+    "href": "https://html.spec.whatwg.org/multipage/indices.html#event-paste",
+    "src": {
+      "format": "summary table",
+      "href": "https://html.spec.whatwg.org/multipage/indices.html#event-paste"
+    },
+    "type": "paste",
+    "targets": [
+      {
+        "target": "HTMLElement",
+        "bubbles": false
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://html.spec.whatwg.org/multipage/indices.html#event-popstate",
+    "src": {
+      "format": "summary table",
+      "href": "https://html.spec.whatwg.org/multipage/indices.html#event-popstate"
+    },
+    "type": "popstate",
+    "targets": [
+      {
+        "target": "Window"
+      }
+    ],
+    "interface": "PopStateEvent"
+  },
+  {
+    "href": "https://html.spec.whatwg.org/multipage/indices.html#event-readystatechange",
+    "src": {
+      "format": "summary table",
+      "href": "https://html.spec.whatwg.org/multipage/indices.html#event-readystatechange"
+    },
+    "type": "readystatechange",
+    "targets": [
+      {
+        "target": "Document",
+        "bubbles": false
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://html.spec.whatwg.org/multipage/indices.html#event-rejectionhandled",
+    "src": {
+      "format": "summary table",
+      "href": "https://html.spec.whatwg.org/multipage/indices.html#event-rejectionhandled"
+    },
+    "type": "rejectionhandled",
+    "targets": [
+      {
+        "target": "Window"
+      },
+      {
+        "target": "WorkerGlobalScope"
+      }
+    ],
+    "interface": "PromiseRejectionEvent"
+  },
+  {
+    "href": "https://html.spec.whatwg.org/multipage/indices.html#event-reset",
+    "src": {
+      "format": "summary table",
+      "href": "https://html.spec.whatwg.org/multipage/indices.html#event-reset"
+    },
+    "type": "reset",
+    "targets": [
+      {
+        "target": "HTMLFormElement",
+        "bubbles": true
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://html.spec.whatwg.org/multipage/indices.html#event-securitypolicyviolation",
+    "src": {
+      "format": "summary table",
+      "href": "https://html.spec.whatwg.org/multipage/indices.html#event-securitypolicyviolation"
+    },
+    "type": "securitypolicyviolation",
+    "targets": [
+      {
+        "target": "HTMLElement",
+        "bubbles": false
+      }
+    ],
+    "interface": "SecurityPolicyViolationEvent",
+    "extendedIn": [
+      {
+        "spec": "CSP",
+        "href": "https://w3c.github.io/webappsec-csp/#ref-for-concept-event-fire"
+      }
+    ]
+  },
+  {
+    "href": "https://html.spec.whatwg.org/multipage/indices.html#event-select",
+    "src": {
+      "format": "summary table",
+      "href": "https://html.spec.whatwg.org/multipage/indices.html#event-select"
+    },
+    "type": "select",
+    "targets": [
+      {
+        "target": "HTMLInputElement",
+        "bubbles": true
+      },
+      {
+        "target": "HTMLTextAreaElement",
+        "bubbles": true
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://html.spec.whatwg.org/multipage/indices.html#event-slotchange",
+    "src": {
+      "format": "summary table",
+      "href": "https://html.spec.whatwg.org/multipage/indices.html#event-slotchange"
+    },
+    "type": "slotchange",
+    "targets": [
+      {
+        "target": "ShadowRoot",
+        "bubbles": true
+      }
+    ],
+    "interface": "Event",
+    "extendedIn": [
+      {
+        "spec": "dom",
+        "href": "https://dom.spec.whatwg.org/#ref-for-concept-event-fire%E2%91%A5"
+      }
+    ]
+  },
+  {
+    "href": "https://html.spec.whatwg.org/multipage/indices.html#event-storage",
+    "src": {
+      "format": "summary table",
+      "href": "https://html.spec.whatwg.org/multipage/indices.html#event-storage"
+    },
+    "type": "storage",
+    "targets": [
+      {
+        "target": "Window"
+      }
+    ],
+    "interface": "StorageEvent"
+  },
+  {
+    "href": "https://html.spec.whatwg.org/multipage/indices.html#event-submit",
+    "src": {
+      "format": "summary table",
+      "href": "https://html.spec.whatwg.org/multipage/indices.html#event-submit"
+    },
+    "type": "submit",
+    "targets": [
+      {
+        "target": "HTMLFormElement",
+        "bubbles": true
+      }
+    ],
+    "interface": "SubmitEvent"
+  },
+  {
+    "href": "https://html.spec.whatwg.org/multipage/indices.html#event-toggle",
+    "src": {
+      "format": "summary table",
+      "href": "https://html.spec.whatwg.org/multipage/indices.html#event-toggle"
+    },
+    "type": "toggle",
+    "targets": [
+      {
+        "target": "HTMLDetailsElement",
+        "bubbles": false
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://html.spec.whatwg.org/multipage/indices.html#event-unhandledrejection",
+    "src": {
+      "format": "summary table",
+      "href": "https://html.spec.whatwg.org/multipage/indices.html#event-unhandledrejection"
+    },
+    "type": "unhandledrejection",
+    "targets": [
+      {
+        "target": "Window"
+      },
+      {
+        "target": "WorkerGlobalScope"
+      }
+    ],
+    "interface": "PromiseRejectionEvent"
+  },
+  {
+    "href": "https://html.spec.whatwg.org/multipage/indices.html#event-unload",
+    "src": {
+      "format": "summary table",
+      "href": "https://html.spec.whatwg.org/multipage/indices.html#event-unload"
+    },
+    "type": "unload",
+    "targets": [
+      {
+        "target": "Window"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://html.spec.whatwg.org/multipage/indices.html#event-visibilitychange",
+    "src": {
+      "format": "summary table",
+      "href": "https://html.spec.whatwg.org/multipage/indices.html#event-visibilitychange"
+    },
+    "type": "visibilitychange",
+    "targets": [
+      {
+        "target": "Document",
+        "bubbles": false
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://notifications.spec.whatwg.org/#ref-for-concept-event-fire"
+    },
+    "href": "https://notifications.spec.whatwg.org/#ref-for-concept-event-fire",
+    "type": "show",
+    "targets": [
+      {
+        "target": "Notification"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://notifications.spec.whatwg.org/#ref-for-concept-event-fire%E2%91%A0"
+    },
+    "href": "https://notifications.spec.whatwg.org/#ref-for-concept-event-fire%E2%91%A0",
+    "type": "click",
+    "targets": [
+      {
+        "target": "Notification"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://notifications.spec.whatwg.org/#ref-for-concept-event-fire%E2%91%A1"
+    },
+    "href": "https://notifications.spec.whatwg.org/#ref-for-concept-event-fire%E2%91%A1",
+    "type": "close",
+    "targets": [
+      {
+        "target": "Notification"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://notifications.spec.whatwg.org/#ref-for-concept-event-fire%E2%91%A2"
+    },
+    "href": "https://notifications.spec.whatwg.org/#ref-for-concept-event-fire%E2%91%A2",
+    "type": "error",
+    "targets": [
+      {
+        "target": "Notification"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "type": "notificationclick",
+    "targets": [
+      {
+        "target": "ServiceWorkerGlobalScope"
+      }
+    ],
+    "interface": "NotificationEvent",
+    "src": {
+      "format": "IDL eventHandler",
+      "href": null
+    },
+    "extendedIn": [
+      {
+        "spec": "service-workers",
+        "href": null
+      }
+    ]
+  },
+  {
+    "type": "notificationclose",
+    "targets": [
+      {
+        "target": "ServiceWorkerGlobalScope"
+      }
+    ],
+    "interface": "NotificationEvent",
+    "src": {
+      "format": "IDL eventHandler",
+      "href": null
+    },
+    "extendedIn": [
+      {
+        "spec": "service-workers",
+        "href": null
+      }
+    ]
+  },
+  {
+    "type": "begin",
+    "targets": [
+      {
+        "target": "SVGAnimationElement",
+        "bubbles": false
+      }
+    ],
+    "interface": "TimeEvent",
+    "src": {
+      "format": "IDL eventHandler",
+      "href": null
+    }
+  },
+  {
+    "type": "end",
+    "targets": [
+      {
+        "target": "SVGAnimationElement",
+        "bubbles": false
+      }
+    ],
+    "interface": "TimeEvent",
+    "src": {
+      "format": "IDL eventHandler",
+      "href": null
+    }
+  },
+  {
+    "type": "repeat",
+    "targets": [
+      {
+        "target": "SVGAnimationElement",
+        "bubbles": false
+      }
+    ],
+    "interface": "TimeEvent",
+    "src": {
+      "format": "IDL eventHandler",
+      "href": null
+    }
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://w3c.github.io/mediacapture-handle/actions/#capture-handle-get-supported-actions"
+    },
+    "href": "https://w3c.github.io/mediacapture-handle/actions/#capture-handle-get-supported-actions",
+    "type": "captureaction",
+    "interface": "CaptureActionEvent",
+    "targets": [
+      {
+        "target": "MediaDevices"
+      }
+    ]
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://w3c.github.io/web-nfc/#parse-ndef"
+    },
+    "href": "https://w3c.github.io/web-nfc/#parse-ndef",
+    "type": "readingerror",
+    "targets": [
+      {
+        "target": "NDEFReader"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://w3c.github.io/web-nfc/#dispatching-nfc-content"
+    },
+    "href": "https://w3c.github.io/web-nfc/#dispatching-nfc-content",
+    "type": "reading",
+    "targets": [
+      {
+        "target": "NDEFReader"
+      }
+    ],
+    "interface": "NDEFReadingEvent"
+  },
+  {
+    "href": "https://w3c.github.io/webrtc-ice/#dfn-icecandidateerror",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/webrtc-ice/#dfn-icecandidateerror"
+    },
+    "type": "icecandidateerror",
+    "targets": [
+      {
+        "target": "RTCIceTransport"
+      }
+    ],
+    "interface": "RTCPeerConnectionIceErrorEvent"
+  },
+  {
+    "href": "https://w3c.github.io/webrtc-ice/#dfn-icecandidate",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/webrtc-ice/#dfn-icecandidate"
+    },
+    "type": "icecandidate",
+    "targets": [
+      {
+        "target": "RTCIceTransport"
+      }
+    ],
+    "interface": "RTCPeerConnectionIceEvent"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/#ref-for-concept-event-fire"
+    },
+    "href": "https://webbluetoothcg.github.io/web-bluetooth/#eventdef-bluetooth-availabilitychanged",
+    "type": "availabilitychanged",
+    "targets": [
+      {
+        "target": "Bluetooth"
+      }
+    ],
+    "interface": "ValueEvent"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/#ref-for-concept-event-fire%E2%91%A0"
+    },
+    "href": "https://webbluetoothcg.github.io/web-bluetooth/#eventdef-bluetoothdeviceeventhandlers-advertisementreceived",
+    "type": "advertisementreceived",
+    "targets": [
+      {
+        "target": "Bluetooth"
+      }
+    ],
+    "interface": "BluetoothAdvertisingEvent"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/#ref-for-concept-event-fire%E2%91%A1"
+    },
+    "href": "https://webbluetoothcg.github.io/web-bluetooth/#eventdef-bluetoothremotegattcharacteristic-characteristicvaluechanged",
+    "type": "characteristicvaluechanged",
+    "targets": [
+      {
+        "target": "BluetoothRemoteGATTCharacteristic",
+        "bubbles": true
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/#ref-for-concept-event-fire%E2%91%A2"
+    },
+    "href": "https://webbluetoothcg.github.io/web-bluetooth/#eventdef-bluetoothdeviceeventhandlers-gattserverdisconnected",
+    "type": "gattserverdisconnected",
+    "targets": [
+      {
+        "target": "BluetoothDevice",
+        "bubbles": true
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/#ref-for-concept-event-fire%E2%91%A4"
+    },
+    "href": "https://webbluetoothcg.github.io/web-bluetooth/#eventdef-bluetoothremotegattservice-serviceremoved",
+    "type": "serviceremoved",
+    "targets": [
+      {
+        "target": "BluetoothRemoteGATTService",
+        "bubbles": true
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/#ref-for-concept-event-fire%E2%91%A5"
+    },
+    "href": "https://webbluetoothcg.github.io/web-bluetooth/#eventdef-bluetoothremotegattservice-serviceadded",
+    "type": "serviceadded",
+    "targets": [
+      {
+        "target": "BluetoothRemoteGATTService",
+        "bubbles": true
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/#ref-for-concept-event-fire%E2%91%A6"
+    },
+    "href": "https://webbluetoothcg.github.io/web-bluetooth/#eventdef-bluetoothremotegattservice-servicechanged",
+    "type": "servicechanged",
+    "targets": [
+      {
+        "target": "BluetoothRemoteGATTService",
+        "bubbles": true
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://websockets.spec.whatwg.org/#ref-for-concept-event-fire"
+    },
+    "href": "https://websockets.spec.whatwg.org/#eventdef-websocket-open",
+    "type": "open",
+    "targets": [
+      {
+        "target": "WebSocket"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://websockets.spec.whatwg.org/#ref-for-concept-event-fire%E2%91%A0"
+    },
+    "href": "https://websockets.spec.whatwg.org/#eventdef-websocket-message",
+    "type": "message",
+    "targets": [
+      {
+        "target": "WebSocket"
+      }
+    ],
+    "interface": "MessageEvent"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://websockets.spec.whatwg.org/#ref-for-concept-event-fire%E2%91%A1"
+    },
+    "href": "https://websockets.spec.whatwg.org/#eventdef-websocket-error",
+    "type": "error",
+    "targets": [
+      {
+        "target": "WebSocket"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://websockets.spec.whatwg.org/#ref-for-concept-event-fire%E2%91%A2"
+    },
+    "href": "https://websockets.spec.whatwg.org/#eventdef-websocket-close",
+    "type": "close",
+    "targets": [
+      {
+        "target": "WebSocket"
+      }
+    ],
+    "interface": "CloseEvent"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://wicg.github.io/background-fetch/#ref-for-concept-event-fire"
+    },
+    "href": "https://wicg.github.io/background-fetch/#ref-for-concept-event-fire",
+    "type": "progress",
+    "targets": [
+      {
+        "target": "BackgroundFetchRegistration"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://wicg.github.io/background-fetch/#ref-for-fire-functional-event%E2%91%A0"
+    },
+    "href": "https://wicg.github.io/background-fetch/#ref-for-fire-functional-event%E2%91%A0",
+    "type": "backgroundfetchclick",
+    "targets": [
+      {
+        "target": "ServiceWorkerGlobalScope"
+      }
+    ],
+    "interface": "BackgroundFetchEvent"
+  },
+  {
+    "type": "backgroundfetchsuccess",
+    "targets": [
+      {
+        "target": "ServiceWorkerGlobalScope"
+      }
+    ],
+    "interface": "BackgroundFetchUpdateUIEvent",
+    "src": {
+      "format": "IDL eventHandler",
+      "href": null
+    },
+    "href": "https://wicg.github.io/background-fetch/#eventdef-serviceworkerglobalscope-backgroundfetchsuccess"
+  },
+  {
+    "type": "backgroundfetchfail",
+    "targets": [
+      {
+        "target": "ServiceWorkerGlobalScope"
+      }
+    ],
+    "interface": "BackgroundFetchUpdateUIEvent",
+    "src": {
+      "format": "IDL eventHandler",
+      "href": null
+    },
+    "href": "https://wicg.github.io/background-fetch/#eventdef-serviceworkerglobalscope-backgroundfetchfail"
+  },
+  {
+    "type": "backgroundfetchabort",
+    "targets": [
+      {
+        "target": "ServiceWorkerGlobalScope"
+      }
+    ],
+    "interface": "BackgroundFetchEvent",
+    "src": {
+      "format": "IDL eventHandler",
+      "href": null
+    },
+    "href": "https://wicg.github.io/background-fetch/#eventdef-serviceworkerglobalscope-backgroundfetchabort"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://wicg.github.io/background-sync/spec/#ref-for-fire-functional-event"
+    },
+    "href": "https://wicg.github.io/background-sync/spec/#ref-for-fire-functional-event",
+    "type": "sync",
+    "targets": [
+      {
+        "target": "ServiceWorkerGlobalScope"
+      }
+    ],
+    "interface": "SyncEvent",
+    "extendedIn": [
+      {
+        "spec": "service-workers",
+        "href": null
+      }
+    ]
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://wicg.github.io/close-watcher/#ref-for-concept-event-fire"
+    },
+    "href": "https://wicg.github.io/close-watcher/#eventdef-closewatcher-cancel",
+    "type": "cancel",
+    "targets": [
+      {
+        "target": "CloseWatcher"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://wicg.github.io/close-watcher/#ref-for-concept-event-fire%E2%91%A0"
+    },
+    "href": "https://wicg.github.io/close-watcher/#eventdef-closewatcher-close",
+    "type": "close",
+    "targets": [
+      {
+        "target": "CloseWatcher"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://wicg.github.io/content-index/spec/#ref-for-fire-functional-event"
+    },
+    "href": "https://wicg.github.io/content-index/spec/#ref-for-fire-functional-event",
+    "type": "contentdelete",
+    "targets": [
+      {
+        "target": "ServiceWorkerGlobalScope"
+      }
+    ],
+    "interface": "ContentIndexEvent"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://wicg.github.io/cookie-store/#ref-for-fire-functional-event"
+    },
+    "href": "https://wicg.github.io/cookie-store/#ref-for-fire-functional-event",
+    "type": "cookiechange",
+    "targets": [
+      {
+        "target": "ServiceWorkerGlobalScope"
+      }
+    ],
+    "interface": "ExtendableCookieChangeEvent"
+  },
+  {
+    "type": "change",
+    "targets": [
+      {
+        "target": "CookieStore"
+      }
+    ],
+    "interface": "CookieChangeEvent",
+    "src": {
+      "format": "IDL eventHandler",
+      "href": null
+    }
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://wicg.github.io/idle-detection/#ref-for-concept-event-fire"
+    },
+    "href": "https://wicg.github.io/idle-detection/#ref-for-concept-event-fire",
+    "type": "change",
+    "interface": "Event",
+    "targets": [
+      {
+        "target": "IdleDetector"
+      }
+    ]
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://wicg.github.io/keyboard-map/#ref-for-concept-event-fire"
+    },
+    "href": "https://wicg.github.io/keyboard-map/#eventdef-keyboard-layoutchange",
+    "type": "layoutchange",
+    "targets": [
+      {
+        "target": "Keyboard"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://wicg.github.io/manifest-incubations/#installation-prompts"
+    },
+    "href": "https://wicg.github.io/manifest-incubations/#installation-prompts",
+    "type": "beforeinstallprompt",
+    "interface": "BeforeInstallPromptEvent",
+    "targets": [
+      {
+        "target": "Window"
+      }
+    ]
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://wicg.github.io/manifest-incubations/#installation-process"
+    },
+    "href": "https://wicg.github.io/manifest-incubations/#installation-process",
+    "type": "appinstalled",
+    "interface": "Event",
+    "targets": [
+      {
+        "target": "Window"
+      }
+    ]
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://wicg.github.io/nav-speculation/prerendering.html#ref-for-concept-event-fire"
+    },
+    "href": "https://wicg.github.io/nav-speculation/prerendering.html#eventdef-document-prerenderingchange",
+    "type": "prerenderingchange",
+    "targets": [
+      {
+        "target": "Document",
+        "bubbles": false
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://wicg.github.io/navigation-api/#ref-for-concept-event-fire"
+    },
+    "href": "https://wicg.github.io/navigation-api/#eventdef-navigation-currententrychange",
+    "type": "currententrychange",
+    "targets": [
+      {
+        "target": "Navigation"
+      }
+    ],
+    "interface": "NavigationCurrentEntryChangeEvent"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://wicg.github.io/navigation-api/#ref-for-concept-event-fire%E2%91%A0"
+    },
+    "href": "https://wicg.github.io/navigation-api/#eventdef-navigationhistoryentry-dispose",
+    "type": "dispose",
+    "targets": [
+      {
+        "target": "NavigationHistoryEntry"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://wicg.github.io/navigation-api/#ref-for-concept-event-fire%E2%91%A2"
+    },
+    "href": "https://wicg.github.io/navigation-api/#eventdef-navigation-navigatesuccess",
+    "type": "navigatesuccess",
+    "targets": [
+      {
+        "target": "Navigation"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://wicg.github.io/navigation-api/#ref-for-concept-event-fire%E2%91%A3"
+    },
+    "href": "https://wicg.github.io/navigation-api/#eventdef-navigation-navigateerror",
+    "type": "navigateerror",
+    "targets": [
+      {
+        "target": "Navigation"
+      }
+    ],
+    "interface": "ErrorEvent"
+  },
+  {
+    "type": "navigate",
+    "targets": [
+      {
+        "target": "Navigation"
+      }
+    ],
+    "interface": "NavigateEvent",
+    "src": {
+      "format": "IDL eventHandler",
+      "href": null
+    },
+    "href": "https://wicg.github.io/navigation-api/#eventdef-navigation-navigate"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://wicg.github.io/netinfo/#handling-changes-to-the-underlying-connection"
+    },
+    "href": "https://wicg.github.io/netinfo/#handling-changes-to-the-underlying-connection",
+    "type": "change",
+    "targets": [
+      {
+        "target": "NetworkInformation"
+      }
+    ],
+    "interface": "Event",
+    "extendedIn": [
+      {
+        "spec": "savedata",
+        "href": "https://wicg.github.io/savedata/#handling-changes-to-the-user-preference"
+      }
+    ]
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://wicg.github.io/page-lifecycle/#ref-for-concept-event-fire"
+    },
+    "href": "https://wicg.github.io/page-lifecycle/#ref-for-concept-event-fire",
+    "type": "freeze",
+    "targets": [
+      {
+        "target": "Document",
+        "bubbles": false
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://wicg.github.io/page-lifecycle/#ref-for-concept-event-fire%E2%91%A0"
+    },
+    "href": "https://wicg.github.io/page-lifecycle/#ref-for-concept-event-fire%E2%91%A0",
+    "type": "resume",
+    "targets": [
+      {
+        "target": "Document",
+        "bubbles": false
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://wicg.github.io/periodic-background-sync/#ref-for-fire-functional-event"
+    },
+    "href": "https://wicg.github.io/periodic-background-sync/#ref-for-fire-functional-event",
+    "type": "periodicsync",
+    "targets": [
+      {
+        "target": "ServiceWorkerGlobalScope"
+      }
+    ],
+    "interface": "PeriodicSyncEvent"
+  },
+  {
+    "href": "https://wicg.github.io/portals/#eventdef-htmlportalelement-message",
+    "src": {
+      "format": "summary table",
+      "href": "https://wicg.github.io/portals/#eventdef-htmlportalelement-message"
+    },
+    "type": "message",
+    "targets": [
+      {
+        "target": "HTMLPortalElement",
+        "bubbles": false
+      }
+    ],
+    "interface": "MessageEvent"
+  },
+  {
+    "href": "https://wicg.github.io/portals/#eventdef-htmlportalelement-messageerror",
+    "src": {
+      "format": "summary table",
+      "href": "https://wicg.github.io/portals/#eventdef-htmlportalelement-messageerror"
+    },
+    "type": "messageerror",
+    "targets": [
+      {
+        "target": "HTMLPortalElement",
+        "bubbles": false
+      }
+    ],
+    "interface": "MessageEvent"
+  },
+  {
+    "href": "https://wicg.github.io/portals/#eventdef-portalhost-message",
+    "src": {
+      "format": "summary table",
+      "href": "https://wicg.github.io/portals/#eventdef-portalhost-message"
+    },
+    "type": "message",
+    "targets": [
+      {
+        "target": "PortalHost"
+      }
+    ],
+    "interface": "MessageEvent"
+  },
+  {
+    "href": "https://wicg.github.io/portals/#eventdef-portalhost-messageerror",
+    "src": {
+      "format": "summary table",
+      "href": "https://wicg.github.io/portals/#eventdef-portalhost-messageerror"
+    },
+    "type": "messageerror",
+    "targets": [
+      {
+        "target": "PortalHost"
+      }
+    ],
+    "interface": "MessageEvent"
+  },
+  {
+    "href": "https://wicg.github.io/portals/#eventdef-window-portalactivate",
+    "src": {
+      "format": "summary table",
+      "href": "https://wicg.github.io/portals/#eventdef-window-portalactivate"
+    },
+    "type": "portalactivate",
+    "targets": [
+      {
+        "target": "Window"
+      }
+    ],
+    "interface": "PortalActivateEvent"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://wicg.github.io/scheduling-apis/#ref-for-concept-event-fire"
+    },
+    "href": "https://wicg.github.io/scheduling-apis/#eventdef-tasksignal-prioritychange",
+    "type": "prioritychange",
+    "targets": [
+      {
+        "target": "TaskSignal"
+      }
+    ],
+    "interface": "TaskPriorityChangeEvent"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://wicg.github.io/serial/#onconnect-attribute-0"
+    },
+    "href": "https://wicg.github.io/serial/#dfn-connect",
+    "type": "connect",
+    "targets": [
+      {
+        "target": "SerialPort",
+        "bubbles": true
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://wicg.github.io/serial/#ondisconnect-attribute-0"
+    },
+    "href": "https://wicg.github.io/serial/#dfn-disconnect",
+    "type": "disconnect",
+    "targets": [
+      {
+        "target": "SerialPort",
+        "bubbles": true
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "type": "audiostart",
+    "targets": [
+      {
+        "target": "SpeechRecognition"
+      }
+    ],
+    "interface": "Event",
+    "src": {
+      "format": "IDL eventHandler",
+      "href": null
+    },
+    "href": "https://wicg.github.io/speech-api/#eventdef-speechrecognition-audiostart"
+  },
+  {
+    "type": "soundstart",
+    "targets": [
+      {
+        "target": "SpeechRecognition"
+      }
+    ],
+    "interface": "Event",
+    "src": {
+      "format": "IDL eventHandler",
+      "href": null
+    },
+    "href": "https://wicg.github.io/speech-api/#eventdef-speechrecognition-soundstart"
+  },
+  {
+    "type": "speechstart",
+    "targets": [
+      {
+        "target": "SpeechRecognition"
+      }
+    ],
+    "interface": "Event",
+    "src": {
+      "format": "IDL eventHandler",
+      "href": null
+    },
+    "href": "https://wicg.github.io/speech-api/#eventdef-speechrecognition-speechstart"
+  },
+  {
+    "type": "speechend",
+    "targets": [
+      {
+        "target": "SpeechRecognition"
+      }
+    ],
+    "interface": "Event",
+    "src": {
+      "format": "IDL eventHandler",
+      "href": null
+    },
+    "href": "https://wicg.github.io/speech-api/#eventdef-speechrecognition-speechend"
+  },
+  {
+    "type": "soundend",
+    "targets": [
+      {
+        "target": "SpeechRecognition"
+      }
+    ],
+    "interface": "Event",
+    "src": {
+      "format": "IDL eventHandler",
+      "href": null
+    },
+    "href": "https://wicg.github.io/speech-api/#eventdef-speechrecognition-soundend"
+  },
+  {
+    "type": "audioend",
+    "targets": [
+      {
+        "target": "SpeechRecognition"
+      }
+    ],
+    "interface": "Event",
+    "src": {
+      "format": "IDL eventHandler",
+      "href": null
+    },
+    "href": "https://wicg.github.io/speech-api/#eventdef-speechrecognition-audioend"
+  },
+  {
+    "type": "result",
+    "targets": [
+      {
+        "target": "SpeechRecognition"
+      }
+    ],
+    "interface": "SpeechRecognitionEvent",
+    "src": {
+      "format": "IDL eventHandler",
+      "href": null
+    },
+    "href": "https://wicg.github.io/speech-api/#eventdef-speechrecognition-result"
+  },
+  {
+    "type": "nomatch",
+    "targets": [
+      {
+        "target": "SpeechRecognition"
+      }
+    ],
+    "interface": "SpeechRecognitionEvent",
+    "src": {
+      "format": "IDL eventHandler",
+      "href": null
+    },
+    "href": "https://wicg.github.io/speech-api/#eventdef-speechrecognition-nomatch"
+  },
+  {
+    "type": "error",
+    "targets": [
+      {
+        "target": "SpeechRecognition"
+      }
+    ],
+    "interface": "SpeechRecognitionErrorEvent",
+    "src": {
+      "format": "IDL eventHandler",
+      "href": null
+    },
+    "href": "https://wicg.github.io/speech-api/#eventdef-speechrecognition-error"
+  },
+  {
+    "type": "error",
+    "targets": [
+      {
+        "target": "SpeechSynthesisUtterance"
+      }
+    ],
+    "interface": "SpeechSynthesisErrorEvent",
+    "src": {
+      "format": "IDL eventHandler",
+      "href": null
+    },
+    "href": "https://wicg.github.io/speech-api/#eventdef-speechsynthesisutterance-error"
+  },
+  {
+    "type": "start",
+    "targets": [
+      {
+        "target": "SpeechRecognition"
+      }
+    ],
+    "interface": "Event",
+    "src": {
+      "format": "IDL eventHandler",
+      "href": null
+    },
+    "href": "https://wicg.github.io/speech-api/#eventdef-speechrecognition-start"
+  },
+  {
+    "type": "start",
+    "targets": [
+      {
+        "target": "SpeechSynthesisUtterance"
+      }
+    ],
+    "interface": "SpeechSynthesisEvent",
+    "src": {
+      "format": "IDL eventHandler",
+      "href": null
+    },
+    "href": "https://wicg.github.io/speech-api/#eventdef-speechsynthesisutterance-start"
+  },
+  {
+    "type": "end",
+    "targets": [
+      {
+        "target": "SpeechRecognition"
+      }
+    ],
+    "interface": "Event",
+    "src": {
+      "format": "IDL eventHandler",
+      "href": null
+    },
+    "href": "https://wicg.github.io/speech-api/#eventdef-speechrecognition-end"
+  },
+  {
+    "type": "end",
+    "targets": [
+      {
+        "target": "SpeechSynthesisUtterance"
+      }
+    ],
+    "interface": "SpeechSynthesisEvent",
+    "src": {
+      "format": "IDL eventHandler",
+      "href": null
+    },
+    "href": "https://wicg.github.io/speech-api/#eventdef-speechsynthesisutterance-end"
+  },
+  {
+    "type": "voiceschanged",
+    "targets": [
+      {
+        "target": "SpeechSynthesis"
+      }
+    ],
+    "interface": "Event",
+    "src": {
+      "format": "IDL eventHandler",
+      "href": null
+    },
+    "href": "https://wicg.github.io/speech-api/#eventdef-speechsynthesis-voiceschanged"
+  },
+  {
+    "type": "pause",
+    "targets": [
+      {
+        "target": "SpeechSynthesisUtterance"
+      }
+    ],
+    "interface": "SpeechSynthesisEvent",
+    "src": {
+      "format": "IDL eventHandler",
+      "href": null
+    },
+    "href": "https://wicg.github.io/speech-api/#eventdef-speechsynthesisutterance-pause"
+  },
+  {
+    "type": "resume",
+    "targets": [
+      {
+        "target": "SpeechSynthesisUtterance"
+      }
+    ],
+    "interface": "SpeechSynthesisEvent",
+    "src": {
+      "format": "IDL eventHandler",
+      "href": null
+    },
+    "href": "https://wicg.github.io/speech-api/#eventdef-speechsynthesisutterance-resume"
+  },
+  {
+    "type": "mark",
+    "targets": [
+      {
+        "target": "SpeechSynthesisUtterance"
+      }
+    ],
+    "interface": "SpeechSynthesisEvent",
+    "src": {
+      "format": "IDL eventHandler",
+      "href": null
+    },
+    "href": "https://wicg.github.io/speech-api/#eventdef-speechsynthesisutterance-mark"
+  },
+  {
+    "type": "boundary",
+    "targets": [
+      {
+        "target": "SpeechSynthesisUtterance"
+      }
+    ],
+    "interface": "SpeechSynthesisEvent",
+    "src": {
+      "format": "IDL eventHandler",
+      "href": null
+    },
+    "href": "https://wicg.github.io/speech-api/#eventdef-speechsynthesisutterance-boundary"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://wicg.github.io/webhid/#hid-interface"
+    },
+    "href": "https://wicg.github.io/webhid/#dfn-connect",
+    "type": "connect",
+    "targets": [
+      {
+        "target": "HID"
+      }
+    ],
+    "interface": "HIDConnectionEvent"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://wicg.github.io/webhid/#hid-interface"
+    },
+    "href": "https://wicg.github.io/webhid/#dfn-disconnect",
+    "type": "disconnect",
+    "targets": [
+      {
+        "target": "HID"
+      }
+    ],
+    "interface": "HIDConnectionEvent"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://wicg.github.io/webhid/#hiddevice-interface"
+    },
+    "href": "https://wicg.github.io/webhid/#dfn-inputreport",
+    "type": "inputreport",
+    "targets": [
+      {
+        "target": "HIDDevice"
+      }
+    ],
+    "interface": "HIDInputReportEvent"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://wicg.github.io/webusb/#ref-for-concept-event-fire"
+    },
+    "href": "https://wicg.github.io/webusb/#connect",
+    "type": "connect",
+    "targets": [
+      {
+        "target": "USB"
+      }
+    ],
+    "interface": "USBConnectionEvent"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://wicg.github.io/webusb/#ref-for-concept-event-fire%E2%91%A0"
+    },
+    "href": "https://wicg.github.io/webusb/#disconnect",
+    "type": "disconnect",
+    "targets": [
+      {
+        "target": "USB"
+      }
+    ],
+    "interface": "USBConnectionEvent"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://wicg.github.io/window-controls-overlay/#resize-the-title-bar-area"
+    },
+    "href": "https://wicg.github.io/window-controls-overlay/#resize-the-title-bar-area",
+    "type": "geometrychange",
+    "interface": "WindowControlsOverlayGeometryChangeEvent",
+    "targets": [
+      {
+        "target": "WindowControlsOverlay"
+      }
+    ]
+  },
+  {
+    "interface": "WebGLContextEvent",
+    "type": "webglcontextlost",
+    "targets": [
+      {
+        "target": "OffscreenCanvas"
+      },
+      {
+        "target": "HTMLCanvasElement",
+        "bubbles": false
+      }
+    ],
+    "src": {
+      "href": "https://www.khronos.org/registry/webgl/specs/latest/1.0/#CONTEXT_LOST"
+    }
+  },
+  {
+    "interface": "WebGLContextEvent",
+    "type": "webglcontextrestored",
+    "targets": [
+      {
+        "target": "OffscreenCanvas"
+      },
+      {
+        "target": "HTMLCanvasElement",
+        "bubbles": false
+      }
+    ],
+    "src": {
+      "href": "https://www.khronos.org/registry/webgl/specs/latest/1.0/#CONTEXT_RESTORED"
+    }
+  },
+  {
+    "interface": "WebGLContextEvent",
+    "type": "webglcontextcreationerror",
+    "targets": [
+      {
+        "target": "OffscreenCanvas"
+      },
+      {
+        "target": "HTMLCanvasElement",
+        "bubbles": false
+      }
+    ],
+    "src": {
+      "href": "https://www.khronos.org/registry/webgl/specs/latest/1.0/#CONTEXT_CREATION_ERROR"
+    }
+  },
+  {
+    "type": "chargingchange",
+    "targets": [
+      {
+        "target": "BatteryManager"
+      }
+    ],
+    "interface": "Event",
+    "src": {
+      "format": "IDL eventHandler",
+      "href": null
+    }
+  },
+  {
+    "type": "chargingtimechange",
+    "targets": [
+      {
+        "target": "BatteryManager"
+      }
+    ],
+    "interface": "Event",
+    "src": {
+      "format": "IDL eventHandler",
+      "href": null
+    }
+  },
+  {
+    "type": "dischargingtimechange",
+    "targets": [
+      {
+        "target": "BatteryManager"
+      }
+    ],
+    "interface": "Event",
+    "src": {
+      "format": "IDL eventHandler",
+      "href": null
+    }
+  },
+  {
+    "type": "levelchange",
+    "targets": [
+      {
+        "target": "BatteryManager"
+      }
+    ],
+    "interface": "Event",
+    "src": {
+      "format": "IDL eventHandler",
+      "href": null
+    }
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://w3c.github.io/mediacapture-handle/identity/#set-capture-handle-config"
+    },
+    "href": "https://w3c.github.io/mediacapture-handle/identity/#dfn-capturehandlechange",
+    "type": "capturehandlechange",
+    "targets": [
+      {
+        "target": "MediaStreamTrack"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "type": "clipboardchange",
+    "interface": "ClipboardEvent",
+    "targets": [
+      {
+        "target": "HTMLElement",
+        "bubbles": true
+      },
+      {
+        "target": "MathMLElement",
+        "bubbles": true
+      },
+      {
+        "target": "SVGElement",
+        "bubbles": true
+      }
+    ],
+    "href": "https://w3c.github.io/clipboard-apis/#clipboardchange"
+  },
+  {
+    "type": "copy",
+    "interface": "ClipboardEvent",
+    "targets": [
+      {
+        "target": "HTMLElement",
+        "bubbles": true
+      },
+      {
+        "target": "MathMLElement",
+        "bubbles": true
+      },
+      {
+        "target": "SVGElement",
+        "bubbles": true
+      }
+    ],
+    "href": "https://w3c.github.io/clipboard-apis/#clipboardchange"
+  },
+  {
+    "type": "cut",
+    "interface": "ClipboardEvent",
+    "targets": [
+      {
+        "target": "HTMLElement",
+        "bubbles": true
+      },
+      {
+        "target": "MathMLElement",
+        "bubbles": true
+      },
+      {
+        "target": "SVGElement",
+        "bubbles": true
+      }
+    ],
+    "href": "https://w3c.github.io/clipboard-apis/#clipboardchange"
+  },
+  {
+    "type": "paste",
+    "interface": "ClipboardEvent",
+    "targets": [
+      {
+        "target": "HTMLElement",
+        "bubbles": true
+      },
+      {
+        "target": "MathMLElement",
+        "bubbles": true
+      },
+      {
+        "target": "SVGElement",
+        "bubbles": true
+      }
+    ],
+    "href": "https://w3c.github.io/clipboard-apis/#clipboardchange"
+  },
+  {
+    "type": "animationstart",
+    "targets": [
+      {
+        "target": "HTMLElement",
+        "bubbles": true
+      },
+      {
+        "target": "MathMLElement",
+        "bubbles": true
+      },
+      {
+        "target": "SVGElement",
+        "bubbles": true
+      }
+    ],
+    "interface": "AnimationEvent",
+    "src": {
+      "format": "IDL eventHandler",
+      "href": null
+    },
+    "href": "https://drafts.csswg.org/css-animations/#eventdef-globaleventhandlers-animationstart"
+  },
+  {
+    "type": "animationiteration",
+    "targets": [
+      {
+        "target": "HTMLElement",
+        "bubbles": true
+      },
+      {
+        "target": "MathMLElement",
+        "bubbles": true
+      },
+      {
+        "target": "SVGElement",
+        "bubbles": true
+      }
+    ],
+    "interface": "AnimationEvent",
+    "src": {
+      "format": "IDL eventHandler",
+      "href": null
+    },
+    "href": "https://drafts.csswg.org/css-animations/#eventdef-globaleventhandlers-animationiteration"
+  },
+  {
+    "type": "animationend",
+    "targets": [
+      {
+        "target": "HTMLElement",
+        "bubbles": true
+      },
+      {
+        "target": "MathMLElement",
+        "bubbles": true
+      },
+      {
+        "target": "SVGElement",
+        "bubbles": true
+      }
+    ],
+    "interface": "AnimationEvent",
+    "src": {
+      "format": "IDL eventHandler",
+      "href": null
+    },
+    "href": "https://drafts.csswg.org/css-animations/#eventdef-globaleventhandlers-animationend"
+  },
+  {
+    "type": "animationcancel",
+    "targets": [
+      {
+        "target": "HTMLElement",
+        "bubbles": true
+      },
+      {
+        "target": "MathMLElement",
+        "bubbles": true
+      },
+      {
+        "target": "SVGElement",
+        "bubbles": true
+      }
+    ],
+    "interface": "AnimationEvent",
+    "src": {
+      "format": "IDL eventHandler",
+      "href": null
+    },
+    "href": "https://drafts.csswg.org/css-animations/#eventdef-globaleventhandlers-animationcancel"
+  },
+  {
+    "type": "loading",
+    "targets": [
+      {
+        "target": "FontFaceSet"
+      }
+    ],
+    "interface": "FontFaceSetLoadEvent",
+    "src": {
+      "format": "IDL eventHandler",
+      "href": null
+    },
+    "href": "https://drafts.csswg.org/css-font-loading/#eventdef-fontfaceset-loading"
+  },
+  {
+    "type": "loadingdone",
+    "targets": [
+      {
+        "target": "FontFaceSet"
+      }
+    ],
+    "interface": "FontFaceSetLoadEvent",
+    "src": {
+      "format": "IDL eventHandler",
+      "href": null
+    },
+    "href": "https://drafts.csswg.org/css-font-loading/#eventdef-fontfaceset-loadingdone"
+  },
+  {
+    "type": "loadingerror",
+    "targets": [
+      {
+        "target": "FontFaceSet"
+      }
+    ],
+    "interface": "FontFaceSetLoadEvent",
+    "src": {
+      "format": "IDL eventHandler",
+      "href": null
+    },
+    "href": "https://drafts.csswg.org/css-font-loading/#eventdef-fontfaceset-loadingerror"
+  },
+  {
+    "type": "navbeforefocus",
+    "interface": "NavigationEvent",
+    "src": {
+      "format": "css definition table",
+      "href": null
+    },
+    "href": null,
+    "targets": [
+      {
+        "target": "HTMLElement",
+        "bubbles": true
+      }
+    ]
+  },
+  {
+    "type": "navnotarget",
+    "interface": "NavigationEvent",
+    "src": {
+      "format": "css definition table",
+      "href": null
+    },
+    "href": null,
+    "targets": [
+      {
+        "target": "HTMLElement",
+        "bubbles": true
+      }
+    ]
+  },
+  {
+    "type": "transitionrun",
+    "targets": [
+      {
+        "target": "HTMLElement",
+        "bubbles": true
+      },
+      {
+        "target": "MathMLElement",
+        "bubbles": true
+      },
+      {
+        "target": "SVGElement",
+        "bubbles": true
+      }
+    ],
+    "interface": "TransitionEvent",
+    "src": {
+      "format": "IDL eventHandler",
+      "href": null
+    },
+    "href": "https://drafts.csswg.org/css-transitions/#transitionrun"
+  },
+  {
+    "type": "transitionstart",
+    "targets": [
+      {
+        "target": "HTMLElement",
+        "bubbles": true
+      },
+      {
+        "target": "MathMLElement",
+        "bubbles": true
+      },
+      {
+        "target": "SVGElement",
+        "bubbles": true
+      }
+    ],
+    "interface": "TransitionEvent",
+    "src": {
+      "format": "IDL eventHandler",
+      "href": null
+    },
+    "href": "https://drafts.csswg.org/css-transitions/#transitionstart"
+  },
+  {
+    "type": "transitionend",
+    "targets": [
+      {
+        "target": "HTMLElement",
+        "bubbles": true
+      },
+      {
+        "target": "MathMLElement",
+        "bubbles": true
+      },
+      {
+        "target": "SVGElement",
+        "bubbles": true
+      }
+    ],
+    "interface": "TransitionEvent",
+    "src": {
+      "format": "IDL eventHandler",
+      "href": null
+    },
+    "href": "https://drafts.csswg.org/css-transitions/#transitionend"
+  },
+  {
+    "type": "transitioncancel",
+    "targets": [
+      {
+        "target": "HTMLElement",
+        "bubbles": true
+      },
+      {
+        "target": "MathMLElement",
+        "bubbles": true
+      },
+      {
+        "target": "SVGElement",
+        "bubbles": true
+      }
+    ],
+    "interface": "TransitionEvent",
+    "src": {
+      "format": "IDL eventHandler",
+      "href": null
+    },
+    "href": "https://drafts.csswg.org/css-transitions/#transitioncancel"
+  },
+  {
+    "href": "https://drafts.csswg.org/cssom-view/#eventdef-mediaquerylist-change",
+    "src": {
+      "format": "summary table",
+      "href": "https://drafts.csswg.org/cssom-view/#eventdef-mediaquerylist-change"
+    },
+    "type": "change",
+    "targets": [
+      {
+        "target": "MediaQueryList"
+      }
+    ],
+    "interface": "MediaQueryListEvent"
+  },
+  {
+    "href": "https://drafts.csswg.org/cssom-view/#eventdef-window-resize",
+    "src": {
+      "format": "summary table",
+      "href": "https://drafts.csswg.org/cssom-view/#eventdef-window-resize"
+    },
+    "type": "resize",
+    "targets": [
+      {
+        "target": "Window"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://drafts.csswg.org/cssom-view/#eventdef-document-scroll",
+    "src": {
+      "format": "summary table",
+      "href": "https://drafts.csswg.org/cssom-view/#eventdef-document-scroll"
+    },
+    "type": "scroll",
+    "targets": [
+      {
+        "target": "Element",
+        "bubbles": true
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://drafts.csswg.org/cssom-view/#eventdef-document-scrollend",
+    "src": {
+      "format": "summary table",
+      "href": "https://drafts.csswg.org/cssom-view/#eventdef-document-scrollend"
+    },
+    "type": "scrollend",
+    "targets": [
+      {
+        "target": "Element",
+        "bubbles": true
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://w3c.github.io/device-posture/#device-posture-change"
+    },
+    "href": "https://w3c.github.io/device-posture/#device-posture-change",
+    "type": "change",
+    "targets": [
+      {
+        "target": "DevicePosture"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://w3c.github.io/edit-context/#extensions-to-the-element-interface"
+    },
+    "href": "https://w3c.github.io/edit-context/#extensions-to-the-element-interface",
+    "type": "compositionstart",
+    "interface": "Event",
+    "targets": [
+      {
+        "target": "EditContext"
+      }
+    ]
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://w3c.github.io/edit-context/#extensions-to-the-element-interface"
+    },
+    "href": "https://w3c.github.io/edit-context/#extensions-to-the-element-interface",
+    "type": "textupdate",
+    "interface": "TextUpdateEvent",
+    "targets": [
+      {
+        "target": "EditContext"
+      }
+    ]
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://w3c.github.io/edit-context/#extensions-to-the-element-interface"
+    },
+    "href": "https://w3c.github.io/edit-context/#extensions-to-the-element-interface",
+    "type": "textformatupdate",
+    "interface": "TextFormatUpdateEvent",
+    "targets": [
+      {
+        "target": "EditContext"
+      }
+    ]
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://w3c.github.io/edit-context/#extensions-to-the-element-interface"
+    },
+    "href": "https://w3c.github.io/edit-context/#extensions-to-the-element-interface",
+    "type": "characterboundsupdate",
+    "interface": "CharacterBoundsUpdateEvent",
+    "targets": [
+      {
+        "target": "EditContext"
+      }
+    ]
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://w3c.github.io/edit-context/#extensions-to-the-element-interface"
+    },
+    "href": "https://w3c.github.io/edit-context/#extensions-to-the-element-interface",
+    "type": "compositionend",
+    "interface": "Event",
+    "targets": [
+      {
+        "target": "EditContext"
+      }
+    ]
+  },
+  {
+    "href": "https://w3c.github.io/encrypted-media/#dom-evt-keystatuseschange",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/encrypted-media/#dom-evt-keystatuseschange"
+    },
+    "type": "keystatuseschange",
+    "targets": [
+      {
+        "target": "MediaKeySession"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://w3c.github.io/encrypted-media/#dom-evt-message",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/encrypted-media/#dom-evt-message"
+    },
+    "type": "message",
+    "targets": [
+      {
+        "target": "MediaKeySession"
+      }
+    ],
+    "interface": "MediaKeyMessageEvent"
+  },
+  {
+    "href": "https://w3c.github.io/encrypted-media/#dom-evt-encrypted",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/encrypted-media/#dom-evt-encrypted"
+    },
+    "type": "encrypted",
+    "targets": [
+      {
+        "target": "HTMLMediaElement",
+        "bubbles": false
+      }
+    ],
+    "interface": "MediaEncryptedEvent"
+  },
+  {
+    "href": "https://w3c.github.io/encrypted-media/#dom-evt-waitingforkey",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/encrypted-media/#dom-evt-waitingforkey"
+    },
+    "type": "waitingforkey",
+    "targets": [
+      {
+        "target": "HTMLMediaElement",
+        "bubbles": false
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://w3c.github.io/FileAPI/#dfn-loadstart-event",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/FileAPI/#dfn-loadstart-event"
+    },
+    "type": "loadstart",
+    "targets": [
+      {
+        "target": "FileReader"
+      }
+    ],
+    "interface": "ProgressEvent"
+  },
+  {
+    "href": "https://w3c.github.io/FileAPI/#dfn-progress-event",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/FileAPI/#dfn-progress-event"
+    },
+    "type": "progress",
+    "targets": [
+      {
+        "target": "FileReader"
+      }
+    ],
+    "interface": "ProgressEvent"
+  },
+  {
+    "href": "https://w3c.github.io/FileAPI/#dfn-abort-event",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/FileAPI/#dfn-abort-event"
+    },
+    "type": "abort",
+    "targets": [
+      {
+        "target": "FileReader"
+      }
+    ],
+    "interface": "ProgressEvent"
+  },
+  {
+    "href": "https://w3c.github.io/FileAPI/#dfn-error-event",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/FileAPI/#dfn-error-event"
+    },
+    "type": "error",
+    "targets": [
+      {
+        "target": "FileReader"
+      }
+    ],
+    "interface": "ProgressEvent"
+  },
+  {
+    "href": "https://w3c.github.io/FileAPI/#dfn-load-event",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/FileAPI/#dfn-load-event"
+    },
+    "type": "load",
+    "targets": [
+      {
+        "target": "FileReader"
+      }
+    ],
+    "interface": "ProgressEvent"
+  },
+  {
+    "href": "https://w3c.github.io/FileAPI/#dfn-loadend-event",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/FileAPI/#dfn-loadend-event"
+    },
+    "type": "loadend",
+    "targets": [
+      {
+        "target": "FileReader"
+      }
+    ],
+    "interface": "ProgressEvent"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://w3c.github.io/gamepad/#receiving-inputs"
+    },
+    "href": "https://w3c.github.io/gamepad/#dfn-gamepadconnected",
+    "type": "gamepadconnected",
+    "targets": [
+      {
+        "target": "Window"
+      }
+    ],
+    "interface": "GamepadEvent",
+    "extendedIn": [
+      {
+        "spec": "prerendering-revamped",
+        "href": "https://wicg.github.io/nav-speculation/prerendering.html#ref-for-concept-event-fire%E2%91%A0"
+      }
+    ]
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://w3c.github.io/gamepad/#the-gamepaddisconnected-event"
+    },
+    "href": "https://w3c.github.io/gamepad/#dfn-gamepaddisconnected",
+    "type": "gamepaddisconnected",
+    "targets": [
+      {
+        "target": "Window"
+      }
+    ],
+    "interface": "GamepadEvent"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://w3c.github.io/sensors/#ref-for-concept-event-fire%E2%91%A0"
+    },
+    "href": "https://w3c.github.io/sensors/#ref-for-concept-event-fire%E2%91%A0",
+    "type": "reading",
+    "interface": "Event",
+    "targets": [
+      {
+        "target": "Sensor"
+      }
+    ]
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://w3c.github.io/sensors/#ref-for-concept-event-fire%E2%91%A1"
+    },
+    "href": "https://w3c.github.io/sensors/#ref-for-concept-event-fire%E2%91%A1",
+    "type": "activate",
+    "interface": "Event",
+    "targets": [
+      {
+        "target": "Sensor"
+      }
+    ]
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://w3c.github.io/sensors/#ref-for-concept-event-fire%E2%91%A2"
+    },
+    "href": "https://w3c.github.io/sensors/#ref-for-concept-event-fire%E2%91%A2",
+    "type": "error",
+    "interface": "SensorErrorEvent",
+    "targets": [
+      {
+        "target": "Sensor"
+      }
+    ]
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://w3c.github.io/IndexedDB/#ref-for-concept-event-fire"
+    },
+    "href": "https://w3c.github.io/IndexedDB/#eventdef-idbrequest-error",
+    "type": "error",
+    "targets": [
+      {
+        "target": "IDBRequest",
+        "bubbles": true
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://w3c.github.io/IndexedDB/#ref-for-concept-event-fire%E2%91%A0"
+    },
+    "href": "https://w3c.github.io/IndexedDB/#eventdef-idbrequest-success",
+    "type": "success",
+    "targets": [
+      {
+        "target": "IDBRequest",
+        "bubbles": false
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://w3c.github.io/IndexedDB/#ref-for-concept-event-fire%E2%91%A2"
+    },
+    "href": "https://w3c.github.io/IndexedDB/#eventdef-idbdatabase-close",
+    "type": "close",
+    "targets": [
+      {
+        "target": "IDBDatabase"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://w3c.github.io/IndexedDB/#ref-for-concept-event-fire%E2%91%A3"
+    },
+    "href": "https://w3c.github.io/IndexedDB/#eventdef-idbtransaction-complete",
+    "type": "complete",
+    "targets": [
+      {
+        "target": "IDBTransaction",
+        "bubbles": false
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://w3c.github.io/IndexedDB/#ref-for-concept-event-fire%E2%91%A5"
+    },
+    "href": "https://w3c.github.io/IndexedDB/#eventdef-idbtransaction-abort",
+    "type": "abort",
+    "targets": [
+      {
+        "target": "IDBTransaction",
+        "bubbles": true
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "type": "blocked",
+    "targets": [
+      {
+        "target": "IDBOpenDBRequest",
+        "bubbles": false
+      }
+    ],
+    "interface": "IDBVersionChangeEvent",
+    "src": {
+      "format": "IDL eventHandler",
+      "href": null
+    },
+    "href": "https://w3c.github.io/IndexedDB/#eventdef-idbopendbrequest-blocked"
+  },
+  {
+    "type": "upgradeneeded",
+    "targets": [
+      {
+        "target": "IDBOpenDBRequest",
+        "bubbles": false
+      }
+    ],
+    "interface": "IDBVersionChangeEvent",
+    "src": {
+      "format": "IDL eventHandler",
+      "href": null
+    },
+    "href": "https://w3c.github.io/IndexedDB/#eventdef-idbopendbrequest-upgradeneeded"
+  },
+  {
+    "type": "versionchange",
+    "targets": [
+      {
+        "target": "IDBDatabase"
+      }
+    ],
+    "interface": "IDBVersionChangeEvent",
+    "src": {
+      "format": "IDL eventHandler",
+      "href": null
+    },
+    "href": "https://w3c.github.io/IndexedDB/#eventdef-idbdatabase-versionchange"
+  },
+  {
+    "interface": "IDBVersionChangeEvent",
+    "type": "success",
+    "targets": [
+      {
+        "target": "IDBOpenDBRequest",
+        "bubbles": false
+      }
+    ],
+    "src": {
+      "href": "https://w3c.github.io/IndexedDB/#dom-idbfactory-deletedatabase"
+    }
+  },
+  {
+    "href": "https://w3c.github.io/media-source/#dfn-sourceopen",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/media-source/#dfn-sourceopen"
+    },
+    "type": "sourceopen",
+    "targets": [
+      {
+        "target": "MediaSource"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://w3c.github.io/media-source/#dfn-sourceended",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/media-source/#dfn-sourceended"
+    },
+    "type": "sourceended",
+    "targets": [
+      {
+        "target": "MediaSource"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://w3c.github.io/media-source/#dfn-sourceclose",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/media-source/#dfn-sourceclose"
+    },
+    "type": "sourceclose",
+    "targets": [
+      {
+        "target": "MediaSource"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://w3c.github.io/media-source/#dfn-updatestart",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/media-source/#dfn-updatestart"
+    },
+    "type": "updatestart",
+    "targets": [
+      {
+        "target": "SourceBuffer"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://w3c.github.io/media-source/#dfn-update",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/media-source/#dfn-update"
+    },
+    "type": "update",
+    "targets": [
+      {
+        "target": "SourceBuffer"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://w3c.github.io/media-source/#dfn-updateend",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/media-source/#dfn-updateend"
+    },
+    "type": "updateend",
+    "targets": [
+      {
+        "target": "SourceBuffer"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://w3c.github.io/media-source/#dfn-error",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/media-source/#dfn-error"
+    },
+    "type": "error",
+    "targets": [
+      {
+        "target": "SourceBuffer"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://w3c.github.io/media-source/#dfn-abort",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/media-source/#dfn-abort"
+    },
+    "type": "abort",
+    "targets": [
+      {
+        "target": "SourceBuffer"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://w3c.github.io/media-source/#dfn-addsourcebuffer",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/media-source/#dfn-addsourcebuffer"
+    },
+    "type": "addsourcebuffer",
+    "targets": [
+      {
+        "target": "SourceBufferList"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://w3c.github.io/media-source/#dfn-removesourcebuffer",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/media-source/#dfn-removesourcebuffer"
+    },
+    "type": "removesourcebuffer",
+    "targets": [
+      {
+        "target": "SourceBufferList"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://w3c.github.io/mediacapture-main/#event-mediastream-addtrack",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/mediacapture-main/#event-mediastream-addtrack"
+    },
+    "type": "addtrack",
+    "targets": [
+      {
+        "target": "MediaStream"
+      }
+    ],
+    "interface": "MediaStreamTrackEvent"
+  },
+  {
+    "href": "https://w3c.github.io/mediacapture-main/#event-mediastream-removetrack",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/mediacapture-main/#event-mediastream-removetrack"
+    },
+    "type": "removetrack",
+    "targets": [
+      {
+        "target": "MediaStream"
+      }
+    ],
+    "interface": "MediaStreamTrackEvent"
+  },
+  {
+    "href": "https://w3c.github.io/mediacapture-main/#event-mediastreamtrack-mute",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/mediacapture-main/#event-mediastreamtrack-mute"
+    },
+    "type": "mute",
+    "targets": [
+      {
+        "target": "MediaStreamTrack"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://w3c.github.io/mediacapture-main/#event-mediastreamtrack-unmute",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/mediacapture-main/#event-mediastreamtrack-unmute"
+    },
+    "type": "unmute",
+    "targets": [
+      {
+        "target": "MediaStreamTrack"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://w3c.github.io/mediacapture-main/#event-mediastreamtrack-ended",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/mediacapture-main/#event-mediastreamtrack-ended"
+    },
+    "type": "ended",
+    "targets": [
+      {
+        "target": "MediaStreamTrack"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://w3c.github.io/mediacapture-main/#event-mediadevices-devicechange",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/mediacapture-main/#event-mediadevices-devicechange"
+    },
+    "type": "devicechange",
+    "targets": [
+      {
+        "target": "MediaDevices"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://w3c.github.io/mediacapture-record/#eventdef-mediarecorder-start",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/mediacapture-record/#eventdef-mediarecorder-start"
+    },
+    "type": "start",
+    "targets": [
+      {
+        "target": "MediaRecorder"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://w3c.github.io/mediacapture-record/#eventdef-mediarecorder-stop",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/mediacapture-record/#eventdef-mediarecorder-stop"
+    },
+    "type": "stop",
+    "targets": [
+      {
+        "target": "MediaRecorder"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://w3c.github.io/mediacapture-record/#eventdef-mediarecorder-dataavailable",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/mediacapture-record/#eventdef-mediarecorder-dataavailable"
+    },
+    "type": "dataavailable",
+    "targets": [
+      {
+        "target": "MediaRecorder"
+      }
+    ],
+    "interface": "BlobEvent"
+  },
+  {
+    "href": "https://w3c.github.io/mediacapture-record/#eventdef-mediarecorder-pause",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/mediacapture-record/#eventdef-mediarecorder-pause"
+    },
+    "type": "pause",
+    "targets": [
+      {
+        "target": "MediaRecorder"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://w3c.github.io/mediacapture-record/#eventdef-mediarecorder-resume",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/mediacapture-record/#eventdef-mediarecorder-resume"
+    },
+    "type": "resume",
+    "targets": [
+      {
+        "target": "MediaRecorder"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://w3c.github.io/mediacapture-record/#eventdef-mediarecorder-error",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/mediacapture-record/#eventdef-mediarecorder-error"
+    },
+    "type": "error",
+    "targets": [
+      {
+        "target": "MediaRecorder"
+      }
+    ],
+    "interface": "ErrorEvent"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://w3c.github.io/deviceorientation/#ref-for-concept-event-fire"
+    },
+    "href": "https://w3c.github.io/deviceorientation/#def-deviceorientation",
+    "type": "deviceorientation",
+    "targets": [
+      {
+        "target": "Window"
+      }
+    ],
+    "interface": "DeviceOrientationEvent"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://w3c.github.io/deviceorientation/#ref-for-concept-event-fire%E2%91%A0"
+    },
+    "href": "https://w3c.github.io/deviceorientation/#def-deviceorientationabsolute",
+    "type": "deviceorientationabsolute",
+    "targets": [
+      {
+        "target": "Window"
+      }
+    ],
+    "interface": "DeviceOrientationEvent"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://w3c.github.io/deviceorientation/#ref-for-concept-event-fire%E2%91%A1"
+    },
+    "href": "https://w3c.github.io/deviceorientation/#def-compassneedscalibration",
+    "type": "compassneedscalibration",
+    "targets": [
+      {
+        "target": "Window"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://w3c.github.io/deviceorientation/#ref-for-concept-event-fire%E2%91%A2"
+    },
+    "href": "https://w3c.github.io/deviceorientation/#def-devicemotion",
+    "type": "devicemotion",
+    "targets": [
+      {
+        "target": "Window"
+      }
+    ],
+    "interface": "DeviceMotionEvent"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://w3c.github.io/payment-handler/#handling-a-canmakepaymentevent"
+    },
+    "href": "https://w3c.github.io/payment-handler/#handling-a-canmakepaymentevent",
+    "type": "canmakepayment",
+    "targets": [
+      {
+        "target": "ServiceWorkerGlobalScope"
+      }
+    ],
+    "interface": "CanMakePaymentEvent",
+    "extendedIn": [
+      {
+        "spec": "service-workers",
+        "href": null
+      }
+    ]
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://w3c.github.io/payment-handler/#handling-a-paymentrequestevent"
+    },
+    "href": "https://w3c.github.io/payment-handler/#handling-a-paymentrequestevent",
+    "type": "paymentrequest",
+    "targets": [
+      {
+        "target": "ServiceWorkerGlobalScope"
+      }
+    ],
+    "interface": "PaymentRequestEvent",
+    "extendedIn": [
+      {
+        "spec": "service-workers",
+        "href": null
+      }
+    ]
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://w3c.github.io/payment-request/#payment-method-changed-algorithm"
+    },
+    "href": "https://w3c.github.io/payment-request/#dfn-paymentmethodchange",
+    "type": "paymentmethodchange",
+    "targets": [
+      {
+        "target": "PaymentRequest"
+      }
+    ],
+    "interface": "PaymentMethodChangeEvent"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://w3c.github.io/permissions/#onchange-attribute"
+    },
+    "href": "https://w3c.github.io/permissions/#onchange-attribute",
+    "type": "change",
+    "targets": [
+      {
+        "target": "PermissionStatus"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://w3c.github.io/picture-in-picture/#ref-for-concept-event-fire"
+    },
+    "href": "https://w3c.github.io/picture-in-picture/#eventdef-htmlvideoelement-enterpictureinpicture",
+    "type": "enterpictureinpicture",
+    "targets": [
+      {
+        "target": "HTMLVideoElement",
+        "bubbles": true
+      }
+    ],
+    "interface": "PictureInPictureEvent"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://w3c.github.io/picture-in-picture/#ref-for-concept-event-fire%E2%91%A0"
+    },
+    "href": "https://w3c.github.io/picture-in-picture/#eventdef-htmlvideoelement-leavepictureinpicture",
+    "type": "leavepictureinpicture",
+    "targets": [
+      {
+        "target": "HTMLVideoElement",
+        "bubbles": true
+      }
+    ],
+    "interface": "PictureInPictureEvent"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://w3c.github.io/picture-in-picture/#ref-for-concept-event-fire%E2%91%A1"
+    },
+    "href": "https://w3c.github.io/picture-in-picture/#eventdef-pictureinpicturewindow-resize",
+    "type": "resize",
+    "targets": [
+      {
+        "target": "PictureInPictureWindow"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://w3c.github.io/pointerevents/#dfn-pointerover",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/pointerevents/#ref-for-dfn-pointerover-2"
+    },
+    "type": "pointerover",
+    "targets": [
+      {
+        "target": "HTMLElement",
+        "bubbles": true
+      },
+      {
+        "target": "MathMLElement",
+        "bubbles": true
+      },
+      {
+        "target": "SVGElement",
+        "bubbles": true
+      }
+    ],
+    "interface": "PointerEvent"
+  },
+  {
+    "href": "https://w3c.github.io/pointerevents/#dfn-pointerenter",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/pointerevents/#ref-for-dfn-pointerenter-1"
+    },
+    "type": "pointerenter",
+    "targets": [
+      {
+        "target": "Window"
+      },
+      {
+        "target": "Document",
+        "bubbles": false
+      },
+      {
+        "target": "HTMLElement",
+        "bubbles": false
+      },
+      {
+        "target": "MathMLElement",
+        "bubbles": false
+      },
+      {
+        "target": "SVGElement",
+        "bubbles": false
+      }
+    ],
+    "interface": "PointerEvent"
+  },
+  {
+    "href": "https://w3c.github.io/pointerevents/#dfn-pointerdown",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/pointerevents/#ref-for-dfn-pointerdown-6"
+    },
+    "type": "pointerdown",
+    "targets": [
+      {
+        "target": "HTMLElement",
+        "bubbles": true
+      },
+      {
+        "target": "MathMLElement",
+        "bubbles": true
+      },
+      {
+        "target": "SVGElement",
+        "bubbles": true
+      }
+    ],
+    "interface": "PointerEvent"
+  },
+  {
+    "href": "https://w3c.github.io/pointerevents/#dfn-pointermove",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/pointerevents/#ref-for-dfn-pointermove-5"
+    },
+    "type": "pointermove",
+    "targets": [
+      {
+        "target": "HTMLElement",
+        "bubbles": true
+      },
+      {
+        "target": "MathMLElement",
+        "bubbles": true
+      },
+      {
+        "target": "SVGElement",
+        "bubbles": true
+      }
+    ],
+    "interface": "PointerEvent"
+  },
+  {
+    "href": "https://w3c.github.io/pointerevents/#dfn-pointerrawupdate",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/pointerevents/#ref-for-dfn-pointerrawupdate-1"
+    },
+    "type": "pointerrawupdate",
+    "targets": [
+      {
+        "target": "HTMLElement",
+        "bubbles": true
+      },
+      {
+        "target": "MathMLElement",
+        "bubbles": true
+      },
+      {
+        "target": "SVGElement",
+        "bubbles": true
+      }
+    ],
+    "interface": "PointerEvent"
+  },
+  {
+    "href": "https://w3c.github.io/pointerevents/#dfn-pointerup",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/pointerevents/#ref-for-dfn-pointerup-6"
+    },
+    "type": "pointerup",
+    "targets": [
+      {
+        "target": "HTMLElement",
+        "bubbles": true
+      },
+      {
+        "target": "MathMLElement",
+        "bubbles": true
+      },
+      {
+        "target": "SVGElement",
+        "bubbles": true
+      }
+    ],
+    "interface": "PointerEvent"
+  },
+  {
+    "href": "https://w3c.github.io/pointerevents/#dfn-pointercancel",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/pointerevents/#ref-for-dfn-pointercancel-1"
+    },
+    "type": "pointercancel",
+    "targets": [
+      {
+        "target": "HTMLElement",
+        "bubbles": true
+      },
+      {
+        "target": "MathMLElement",
+        "bubbles": true
+      },
+      {
+        "target": "SVGElement",
+        "bubbles": true
+      }
+    ],
+    "interface": "PointerEvent"
+  },
+  {
+    "href": "https://w3c.github.io/pointerevents/#dfn-pointerout",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/pointerevents/#ref-for-dfn-pointerout-2"
+    },
+    "type": "pointerout",
+    "targets": [
+      {
+        "target": "HTMLElement",
+        "bubbles": true
+      },
+      {
+        "target": "MathMLElement",
+        "bubbles": true
+      },
+      {
+        "target": "SVGElement",
+        "bubbles": true
+      }
+    ],
+    "interface": "PointerEvent"
+  },
+  {
+    "href": "https://w3c.github.io/pointerevents/#dfn-pointerleave",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/pointerevents/#ref-for-dfn-pointerleave-1"
+    },
+    "type": "pointerleave",
+    "targets": [
+      {
+        "target": "Window"
+      },
+      {
+        "target": "Document",
+        "bubbles": false
+      },
+      {
+        "target": "HTMLElement",
+        "bubbles": false
+      },
+      {
+        "target": "MathMLElement",
+        "bubbles": false
+      },
+      {
+        "target": "SVGElement",
+        "bubbles": false
+      }
+    ],
+    "interface": "PointerEvent"
+  },
+  {
+    "href": "https://w3c.github.io/pointerevents/#dfn-gotpointercapture",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/pointerevents/#ref-for-dfn-gotpointercapture-2"
+    },
+    "type": "gotpointercapture",
+    "targets": [
+      {
+        "target": "HTMLElement",
+        "bubbles": true
+      },
+      {
+        "target": "MathMLElement",
+        "bubbles": true
+      },
+      {
+        "target": "SVGElement",
+        "bubbles": true
+      }
+    ],
+    "interface": "PointerEvent"
+  },
+  {
+    "href": "https://w3c.github.io/pointerevents/#dfn-lostpointercapture",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/pointerevents/#ref-for-dfn-lostpointercapture-2"
+    },
+    "type": "lostpointercapture",
+    "targets": [
+      {
+        "target": "HTMLElement",
+        "bubbles": true
+      },
+      {
+        "target": "MathMLElement",
+        "bubbles": true
+      },
+      {
+        "target": "SVGElement",
+        "bubbles": true
+      }
+    ],
+    "interface": "PointerEvent"
+  },
+  {
+    "type": "pointerlockchange",
+    "targets": [
+      {
+        "target": "Document",
+        "bubbles": false
+      }
+    ],
+    "interface": "Event",
+    "src": {
+      "format": "IDL eventHandler",
+      "href": null
+    },
+    "href": "https://w3c.github.io/pointerlock/#dfn-pointerlockchange"
+  },
+  {
+    "type": "pointerlockerror",
+    "targets": [
+      {
+        "target": "Document",
+        "bubbles": false
+      }
+    ],
+    "interface": "Event",
+    "src": {
+      "format": "IDL eventHandler",
+      "href": null
+    },
+    "href": "https://w3c.github.io/pointerlock/#dfn-pointerlockerror"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://w3c.github.io/presentation-api/#ref-for-index-term-fire-an-event-1"
+    },
+    "href": "https://w3c.github.io/presentation-api/#dfn-connectionavailable",
+    "type": "connectionavailable",
+    "targets": [
+      {
+        "target": "PresentationRequest"
+      },
+      {
+        "target": "PresentationConnectionList"
+      }
+    ],
+    "interface": "PresentationConnectionAvailableEvent"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://w3c.github.io/presentation-api/#ref-for-index-term-fire-an-event-3"
+    },
+    "href": "https://w3c.github.io/presentation-api/#dfn-change",
+    "type": "change",
+    "targets": [
+      {
+        "target": "PresentationAvailability"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://w3c.github.io/presentation-api/#ref-for-index-term-fire-an-event-6"
+    },
+    "href": "https://w3c.github.io/presentation-api/#dfn-connect",
+    "type": "connect",
+    "targets": [
+      {
+        "target": "PresentationConnection"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://w3c.github.io/presentation-api/#ref-for-index-term-fire-an-event-8"
+    },
+    "href": "https://w3c.github.io/presentation-api/#ref-for-index-term-fire-an-event-8",
+    "type": "close",
+    "targets": [
+      {
+        "target": "PresentationConnection"
+      }
+    ],
+    "interface": "PresentationConnectionCloseEvent"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://w3c.github.io/presentation-api/#ref-for-index-term-fire-an-event-9"
+    },
+    "href": "https://w3c.github.io/presentation-api/#ref-for-index-term-fire-an-event-9",
+    "type": "terminate",
+    "targets": [
+      {
+        "target": "PresentationConnection"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://w3c.github.io/push-api/#receiving-a-push-message"
+    },
+    "href": "https://w3c.github.io/push-api/#receiving-a-push-message",
+    "type": "push",
+    "targets": [
+      {
+        "target": "ServiceWorkerGlobalScope"
+      }
+    ],
+    "interface": "PushEvent",
+    "extendedIn": [
+      {
+        "spec": "service-workers",
+        "href": null
+      }
+    ]
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://w3c.github.io/push-api/#the-pushsubscriptionchange-event"
+    },
+    "href": "https://w3c.github.io/push-api/#the-pushsubscriptionchange-event",
+    "type": "pushsubscriptionchange",
+    "targets": [
+      {
+        "target": "ServiceWorkerGlobalScope"
+      }
+    ],
+    "interface": "PushSubscriptionChangeEvent"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://w3c.github.io/remote-playback/#prompt-user-for-changing-remote-playback-state"
+    },
+    "href": "https://w3c.github.io/remote-playback/#dfn-connecting",
+    "type": "connecting",
+    "targets": [
+      {
+        "target": "RemotePlayback"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://w3c.github.io/remote-playback/#establishing-a-connection-with-a-remote-playback-device"
+    },
+    "href": "https://w3c.github.io/remote-playback/#dfn-connect",
+    "type": "connect",
+    "targets": [
+      {
+        "target": "RemotePlayback"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://w3c.github.io/remote-playback/#establishing-a-connection-with-a-remote-playback-device"
+    },
+    "href": "https://w3c.github.io/remote-playback/#dfn-disconnect",
+    "type": "disconnect",
+    "targets": [
+      {
+        "target": "RemotePlayback"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://w3c.github.io/resource-timing/#sec-extensions-performance-interface"
+    },
+    "href": "https://w3c.github.io/resource-timing/#sec-extensions-performance-interface",
+    "type": "resourcetimingbufferfull",
+    "targets": [
+      {
+        "target": "Performance"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://w3c.github.io/screen-orientation/#Screen-orientation-change"
+    },
+    "href": "https://w3c.github.io/screen-orientation/#Screen-orientation-change",
+    "type": "change",
+    "targets": [
+      {
+        "target": "ScreenOrientation"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://w3c.github.io/screen-wake-lock/#release-wake-lock-algorithm"
+    },
+    "href": "https://w3c.github.io/screen-wake-lock/#release-wake-lock-algorithm",
+    "type": "release",
+    "targets": [
+      {
+        "target": "WakeLockSentinel"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://w3c.github.io/selection-api/#selectstart-event"
+    },
+    "href": "https://w3c.github.io/selection-api/#selectstart-event",
+    "type": "selectstart",
+    "targets": [
+      {
+        "target": "HTMLElement",
+        "bubbles": true
+      },
+      {
+        "target": "MathMLElement",
+        "bubbles": true
+      },
+      {
+        "target": "SVGElement",
+        "bubbles": true
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://w3c.github.io/selection-api/#selectionchange-event"
+    },
+    "href": "https://w3c.github.io/selection-api/#selectionchange-event",
+    "type": "selectionchange",
+    "targets": [
+      {
+        "target": "Window"
+      },
+      {
+        "target": "Document",
+        "bubbles": false
+      },
+      {
+        "target": "HTMLElement",
+        "bubbles": false
+      },
+      {
+        "target": "MathMLElement",
+        "bubbles": false
+      },
+      {
+        "target": "SVGElement",
+        "bubbles": false
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://w3c.github.io/ServiceWorker/#eventdef-serviceworker-statechange",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/ServiceWorker/#eventdef-serviceworker-statechange"
+    },
+    "type": "statechange",
+    "targets": [
+      {
+        "target": "ServiceWorker"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://w3c.github.io/ServiceWorker/#service-worker-registration-updatefound-event",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/ServiceWorker/#service-worker-registration-updatefound-event"
+    },
+    "type": "updatefound",
+    "targets": [
+      {
+        "target": "ServiceWorkerRegistration"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://w3c.github.io/ServiceWorker/#service-worker-container-controllerchange-event",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/ServiceWorker/#service-worker-container-controllerchange-event"
+    },
+    "type": "controllerchange",
+    "targets": [
+      {
+        "target": "ServiceWorkerContainer"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://w3c.github.io/ServiceWorker/#service-worker-container-message-event",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/ServiceWorker/#service-worker-container-message-event"
+    },
+    "type": "message",
+    "targets": [
+      {
+        "target": "ServiceWorkerContainer"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://w3c.github.io/ServiceWorker/#service-worker-container-messageerror-event",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/ServiceWorker/#service-worker-container-messageerror-event"
+    },
+    "type": "messageerror",
+    "targets": [
+      {
+        "target": "ServiceWorkerContainer"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://w3c.github.io/ServiceWorker/#service-worker-global-scope-install-event",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/ServiceWorker/#service-worker-global-scope-install-event"
+    },
+    "type": "install",
+    "targets": [
+      {
+        "target": "ServiceWorkerGlobalScope"
+      }
+    ],
+    "interface": "ExtendableEvent"
+  },
+  {
+    "href": "https://w3c.github.io/ServiceWorker/#service-worker-global-scope-activate-event",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/ServiceWorker/#service-worker-global-scope-activate-event"
+    },
+    "type": "activate",
+    "targets": [
+      {
+        "target": "ServiceWorkerGlobalScope"
+      }
+    ],
+    "interface": "ExtendableEvent"
+  },
+  {
+    "href": "https://w3c.github.io/ServiceWorker/#service-worker-global-scope-fetch-event",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/ServiceWorker/#service-worker-global-scope-fetch-event"
+    },
+    "type": "fetch",
+    "targets": [
+      {
+        "target": "ServiceWorkerGlobalScope"
+      }
+    ],
+    "interface": "FetchEvent"
+  },
+  {
+    "href": "https://w3c.github.io/ServiceWorker/#eventdef-serviceworkerglobalscope-message",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/ServiceWorker/#eventdef-serviceworkerglobalscope-message"
+    },
+    "type": "message",
+    "targets": [
+      {
+        "target": "ServiceWorkerGlobalScope"
+      }
+    ],
+    "interface": "ExtendableMessageEvent"
+  },
+  {
+    "href": "https://w3c.github.io/ServiceWorker/#eventdef-serviceworkerglobalscope-messageerror",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/ServiceWorker/#eventdef-serviceworkerglobalscope-messageerror"
+    },
+    "type": "messageerror",
+    "targets": [
+      {
+        "target": "ServiceWorkerGlobalScope"
+      }
+    ],
+    "interface": "MessageEvent"
+  },
+  {
+    "href": "https://w3c.github.io/touch-events/#dfn-touchstart",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/touch-events/#ref-for-dfn-touchstart-3"
+    },
+    "type": "touchstart",
+    "targets": [
+      {
+        "target": "Element",
+        "bubbles": true
+      }
+    ],
+    "interface": "TouchEvent"
+  },
+  {
+    "href": "https://w3c.github.io/touch-events/#dfn-touchend",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/touch-events/#ref-for-dfn-touchend-3"
+    },
+    "type": "touchend",
+    "targets": [
+      {
+        "target": "Element",
+        "bubbles": true
+      }
+    ],
+    "interface": "TouchEvent"
+  },
+  {
+    "href": "https://w3c.github.io/touch-events/#dfn-touchmove",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/touch-events/#ref-for-dfn-touchmove-3"
+    },
+    "type": "touchmove",
+    "targets": [
+      {
+        "target": "Element",
+        "bubbles": true
+      }
+    ],
+    "interface": "TouchEvent"
+  },
+  {
+    "href": "https://w3c.github.io/touch-events/#dfn-touchcancel",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/touch-events/#ref-for-dfn-touchcancel-3"
+    },
+    "type": "touchcancel",
+    "targets": [
+      {
+        "target": "Element",
+        "bubbles": true
+      }
+    ],
+    "interface": "TouchEvent"
+  },
+  {
+    "href": "https://w3c.github.io/uievents/#abort",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/uievents/#ref-for-abort"
+    },
+    "type": "abort",
+    "targets": [
+      {
+        "target": "Window"
+      },
+      {
+        "target": "Element",
+        "bubbles": false
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://w3c.github.io/uievents/#auxclick",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/uievents/#ref-for-auxclick"
+    },
+    "type": "auxclick",
+    "targets": [
+      {
+        "target": "Element",
+        "bubbles": true
+      }
+    ],
+    "interface": "PointerEvent"
+  },
+  {
+    "href": "https://w3c.github.io/uievents/#beforeinput",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/uievents/#ref-for-beforeinput"
+    },
+    "type": "beforeinput",
+    "targets": [
+      {
+        "target": "Element",
+        "bubbles": true
+      }
+    ],
+    "interface": "InputEvent",
+    "extendedIn": [
+      {
+        "spec": "edit-context",
+        "href": "https://w3c.github.io/edit-context/#extensions-to-the-element-interface"
+      }
+    ]
+  },
+  {
+    "href": "https://w3c.github.io/uievents/#blur",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/uievents/#ref-for-blur"
+    },
+    "type": "blur",
+    "targets": [
+      {
+        "target": "Window"
+      },
+      {
+        "target": "Element",
+        "bubbles": false
+      }
+    ],
+    "interface": "FocusEvent"
+  },
+  {
+    "href": "https://w3c.github.io/uievents/#click",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/uievents/#ref-for-click%E2%91%A3"
+    },
+    "type": "click",
+    "targets": [
+      {
+        "target": "Element",
+        "bubbles": true
+      }
+    ],
+    "interface": "PointerEvent",
+    "extendedIn": [
+      {
+        "spec": "html",
+        "href": "https://html.spec.whatwg.org/multipage/indices.html#events-2:event-click"
+      }
+    ]
+  },
+  {
+    "href": "https://w3c.github.io/uievents/#compositionstart",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/uievents/#ref-for-compositionstart"
+    },
+    "type": "compositionstart",
+    "targets": [
+      {
+        "target": "Element",
+        "bubbles": true
+      }
+    ],
+    "interface": "CompositionEvent"
+  },
+  {
+    "href": "https://w3c.github.io/uievents/#compositionupdate",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/uievents/#ref-for-compositionupdate"
+    },
+    "type": "compositionupdate",
+    "targets": [
+      {
+        "target": "Element",
+        "bubbles": true
+      }
+    ],
+    "interface": "CompositionEvent"
+  },
+  {
+    "href": "https://w3c.github.io/uievents/#compositionend",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/uievents/#ref-for-compositionend"
+    },
+    "type": "compositionend",
+    "targets": [
+      {
+        "target": "Element",
+        "bubbles": true
+      }
+    ],
+    "interface": "CompositionEvent"
+  },
+  {
+    "href": "https://w3c.github.io/uievents/#contextmenu",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/uievents/#ref-for-contextmenu"
+    },
+    "type": "contextmenu",
+    "targets": [
+      {
+        "target": "Element",
+        "bubbles": true
+      }
+    ],
+    "interface": "PointerEvent",
+    "extendedIn": [
+      {
+        "spec": "html",
+        "href": "https://html.spec.whatwg.org/multipage/indices.html#events-2:event-contextmenu"
+      }
+    ]
+  },
+  {
+    "href": "https://w3c.github.io/uievents/#dblclick",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/uievents/#ref-for-dblclick"
+    },
+    "type": "dblclick",
+    "targets": [
+      {
+        "target": "Element",
+        "bubbles": true
+      }
+    ],
+    "interface": "MouseEvent"
+  },
+  {
+    "href": "https://w3c.github.io/uievents/#error",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/uievents/#ref-for-error"
+    },
+    "type": "error",
+    "targets": [
+      {
+        "target": "Window"
+      },
+      {
+        "target": "Element",
+        "bubbles": false
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://w3c.github.io/uievents/#focus",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/uievents/#ref-for-focus"
+    },
+    "type": "focus",
+    "targets": [
+      {
+        "target": "Window"
+      },
+      {
+        "target": "Element",
+        "bubbles": false
+      }
+    ],
+    "interface": "FocusEvent"
+  },
+  {
+    "href": "https://w3c.github.io/uievents/#focusin",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/uievents/#ref-for-focusin"
+    },
+    "type": "focusin",
+    "targets": [
+      {
+        "target": "Element",
+        "bubbles": true
+      }
+    ],
+    "interface": "FocusEvent"
+  },
+  {
+    "href": "https://w3c.github.io/uievents/#focusout",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/uievents/#ref-for-focusout"
+    },
+    "type": "focusout",
+    "targets": [
+      {
+        "target": "Element",
+        "bubbles": true
+      }
+    ],
+    "interface": "FocusEvent"
+  },
+  {
+    "href": "https://w3c.github.io/uievents/#input",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/uievents/#ref-for-input"
+    },
+    "type": "input",
+    "targets": [
+      {
+        "target": "Element",
+        "bubbles": true
+      }
+    ],
+    "interface": "InputEvent",
+    "extendedIn": [
+      {
+        "spec": "html",
+        "href": "https://html.spec.whatwg.org/multipage/indices.html#events-2:event-input-2"
+      }
+    ]
+  },
+  {
+    "href": "https://w3c.github.io/uievents/#keydown",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/uievents/#ref-for-keydown%E2%91%A0"
+    },
+    "type": "keydown",
+    "targets": [
+      {
+        "target": "Element",
+        "bubbles": true
+      }
+    ],
+    "interface": "KeyboardEvent"
+  },
+  {
+    "href": "https://w3c.github.io/uievents/#keyup",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/uievents/#ref-for-keyup"
+    },
+    "type": "keyup",
+    "targets": [
+      {
+        "target": "Element",
+        "bubbles": true
+      }
+    ],
+    "interface": "KeyboardEvent"
+  },
+  {
+    "href": "https://w3c.github.io/uievents/#load",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/uievents/#ref-for-load%E2%91%A0"
+    },
+    "type": "load",
+    "targets": [
+      {
+        "target": "Window"
+      },
+      {
+        "target": "Document",
+        "bubbles": false
+      },
+      {
+        "target": "Element",
+        "bubbles": false
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://w3c.github.io/uievents/#mousedown",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/uievents/#ref-for-mousedown%E2%91%A1"
+    },
+    "type": "mousedown",
+    "targets": [
+      {
+        "target": "Element",
+        "bubbles": true
+      }
+    ],
+    "interface": "MouseEvent"
+  },
+  {
+    "href": "https://w3c.github.io/uievents/#mouseenter",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/uievents/#ref-for-mouseenter"
+    },
+    "type": "mouseenter",
+    "targets": [
+      {
+        "target": "Element",
+        "bubbles": false
+      }
+    ],
+    "interface": "MouseEvent"
+  },
+  {
+    "href": "https://w3c.github.io/uievents/#mouseleave",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/uievents/#ref-for-mouseleave"
+    },
+    "type": "mouseleave",
+    "targets": [
+      {
+        "target": "Element",
+        "bubbles": false
+      }
+    ],
+    "interface": "MouseEvent"
+  },
+  {
+    "href": "https://w3c.github.io/uievents/#mousemove",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/uievents/#ref-for-mousemove"
+    },
+    "type": "mousemove",
+    "targets": [
+      {
+        "target": "Element",
+        "bubbles": true
+      }
+    ],
+    "interface": "MouseEvent"
+  },
+  {
+    "href": "https://w3c.github.io/uievents/#mouseout",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/uievents/#ref-for-mouseout"
+    },
+    "type": "mouseout",
+    "targets": [
+      {
+        "target": "Element",
+        "bubbles": true
+      }
+    ],
+    "interface": "MouseEvent"
+  },
+  {
+    "href": "https://w3c.github.io/uievents/#mouseover",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/uievents/#ref-for-mouseover"
+    },
+    "type": "mouseover",
+    "targets": [
+      {
+        "target": "Element",
+        "bubbles": true
+      }
+    ],
+    "interface": "MouseEvent"
+  },
+  {
+    "href": "https://w3c.github.io/uievents/#mouseup",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/uievents/#ref-for-mouseup"
+    },
+    "type": "mouseup",
+    "targets": [
+      {
+        "target": "Element",
+        "bubbles": true
+      }
+    ],
+    "interface": "MouseEvent"
+  },
+  {
+    "href": "https://w3c.github.io/uievents/#select",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/uievents/#ref-for-select"
+    },
+    "type": "select",
+    "targets": [
+      {
+        "target": "Element",
+        "bubbles": true
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://w3c.github.io/uievents/#unload",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/uievents/#ref-for-unload"
+    },
+    "type": "unload",
+    "targets": [
+      {
+        "target": "Window"
+      },
+      {
+        "target": "Document",
+        "bubbles": false
+      },
+      {
+        "target": "Element",
+        "bubbles": false
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://w3c.github.io/uievents/#wheel",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/uievents/#ref-for-wheel"
+    },
+    "type": "wheel",
+    "targets": [
+      {
+        "target": "Element",
+        "bubbles": true
+      }
+    ],
+    "interface": "WheelEvent"
+  },
+  {
+    "href": "https://w3c.github.io/uievents/#domactivate",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/uievents/#ref-for-domactivate%E2%91%A0"
+    },
+    "type": "DOMActivate",
+    "targets": [
+      {
+        "target": "Element",
+        "bubbles": true
+      }
+    ],
+    "interface": "UIEvent"
+  },
+  {
+    "href": "https://w3c.github.io/uievents/#domattrmodified",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/uievents/#ref-for-domattrmodified"
+    },
+    "type": "DOMAttrModified",
+    "targets": [
+      {
+        "target": "Element",
+        "bubbles": true
+      }
+    ],
+    "interface": "MutationEvent"
+  },
+  {
+    "href": "https://w3c.github.io/uievents/#domcharacterdatamodified",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/uievents/#ref-for-domcharacterdatamodified"
+    },
+    "type": "DOMCharacterDataModified",
+    "targets": [
+      {
+        "target": "Text",
+        "bubbles": true
+      },
+      {
+        "target": "Comment",
+        "bubbles": true
+      },
+      {
+        "target": "ProcessingInstruction",
+        "bubbles": true
+      }
+    ],
+    "interface": "MutationEvent"
+  },
+  {
+    "href": "https://w3c.github.io/uievents/#domfocusin",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/uievents/#ref-for-domfocusin"
+    },
+    "type": "DOMFocusIn",
+    "targets": [
+      {
+        "target": "Element",
+        "bubbles": true
+      }
+    ],
+    "interface": "FocusEvent"
+  },
+  {
+    "href": "https://w3c.github.io/uievents/#domfocusout",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/uievents/#ref-for-domfocusout"
+    },
+    "type": "DOMFocusOut",
+    "targets": [
+      {
+        "target": "Element",
+        "bubbles": true
+      }
+    ],
+    "interface": "FocusEvent"
+  },
+  {
+    "href": "https://w3c.github.io/uievents/#domnodeinserted",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/uievents/#ref-for-domnodeinserted"
+    },
+    "type": "DOMNodeInserted",
+    "targets": [
+      {
+        "target": "Element",
+        "bubbles": true
+      },
+      {
+        "target": "Attr",
+        "bubbles": true
+      },
+      {
+        "target": "Text",
+        "bubbles": true
+      },
+      {
+        "target": "Comment",
+        "bubbles": true
+      },
+      {
+        "target": "DocumentType",
+        "bubbles": true
+      },
+      {
+        "target": "ProcessingInstruction",
+        "bubbles": true
+      }
+    ],
+    "interface": "MutationEvent"
+  },
+  {
+    "href": "https://w3c.github.io/uievents/#domnodeinsertedintodocument",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/uievents/#ref-for-domnodeinsertedintodocument"
+    },
+    "type": "DOMNodeInsertedIntoDocument",
+    "targets": [
+      {
+        "target": "Element",
+        "bubbles": false
+      },
+      {
+        "target": "Attr",
+        "bubbles": false
+      },
+      {
+        "target": "Text",
+        "bubbles": false
+      },
+      {
+        "target": "Comment",
+        "bubbles": false
+      },
+      {
+        "target": "DocumentType",
+        "bubbles": false
+      },
+      {
+        "target": "ProcessingInstruction",
+        "bubbles": false
+      }
+    ],
+    "interface": "MutationEvent"
+  },
+  {
+    "href": "https://w3c.github.io/uievents/#domnoderemoved",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/uievents/#ref-for-domnoderemoved"
+    },
+    "type": "DOMNodeRemoved",
+    "targets": [
+      {
+        "target": "Element",
+        "bubbles": true
+      },
+      {
+        "target": "Attr",
+        "bubbles": true
+      },
+      {
+        "target": "Text",
+        "bubbles": true
+      },
+      {
+        "target": "Comment",
+        "bubbles": true
+      },
+      {
+        "target": "DocumentType",
+        "bubbles": true
+      },
+      {
+        "target": "ProcessingInstruction",
+        "bubbles": true
+      }
+    ],
+    "interface": "MutationEvent"
+  },
+  {
+    "href": "https://w3c.github.io/uievents/#domnoderemovedfromdocument",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/uievents/#ref-for-domnoderemovedfromdocument"
+    },
+    "type": "DOMNodeRemovedFromDocument",
+    "targets": [
+      {
+        "target": "Element",
+        "bubbles": false
+      },
+      {
+        "target": "Attr",
+        "bubbles": false
+      },
+      {
+        "target": "Text",
+        "bubbles": false
+      },
+      {
+        "target": "Comment",
+        "bubbles": false
+      },
+      {
+        "target": "DocumentType",
+        "bubbles": false
+      },
+      {
+        "target": "ProcessingInstruction",
+        "bubbles": false
+      }
+    ],
+    "interface": "MutationEvent"
+  },
+  {
+    "href": "https://w3c.github.io/uievents/#domsubtreemodified",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/uievents/#ref-for-domsubtreemodified"
+    },
+    "type": "DOMSubtreeModified",
+    "targets": [
+      {
+        "target": "DocumentFragment",
+        "bubbles": true
+      },
+      {
+        "target": "Element",
+        "bubbles": true
+      },
+      {
+        "target": "Attr",
+        "bubbles": true
+      }
+    ],
+    "interface": "MutationEvent"
+  },
+  {
+    "href": "https://w3c.github.io/uievents/#keypress",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/uievents/#ref-for-keypress%E2%91%A8"
+    },
+    "type": "keypress",
+    "targets": [
+      {
+        "target": "Element",
+        "bubbles": true
+      }
+    ],
+    "interface": "KeyboardEvent"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://w3c.github.io/virtual-keyboard/#the-virtualkeyboard-interface"
+    },
+    "href": "https://w3c.github.io/virtual-keyboard/#the-virtualkeyboard-interface",
+    "type": "geometrychange",
+    "interface": "Event",
+    "targets": [
+      {
+        "target": "VirtualKeyboard"
+      }
+    ]
+  },
+  {
+    "type": "finish",
+    "targets": [
+      {
+        "target": "Animation"
+      }
+    ],
+    "interface": "AnimationPlaybackEvent",
+    "src": {
+      "format": "IDL eventHandler",
+      "href": null
+    }
+  },
+  {
+    "type": "cancel",
+    "targets": [
+      {
+        "target": "Animation"
+      }
+    ],
+    "interface": "AnimationPlaybackEvent",
+    "src": {
+      "format": "IDL eventHandler",
+      "href": null
+    }
+  },
+  {
+    "type": "remove",
+    "targets": [
+      {
+        "target": "Animation"
+      }
+    ],
+    "interface": "AnimationPlaybackEvent",
+    "src": {
+      "format": "IDL eventHandler",
+      "href": null
+    }
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://webaudio.github.io/web-audio-api/#ref-for-concept-event-fire"
+    },
+    "href": "https://webaudio.github.io/web-audio-api/#ref-for-concept-event-fire",
+    "type": "statechange",
+    "targets": [
+      {
+        "target": "BaseAudioContext"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://webaudio.github.io/web-audio-api/#ref-for-concept-event-fire%E2%91%A3"
+    },
+    "href": "https://webaudio.github.io/web-audio-api/#ref-for-concept-event-fire%E2%91%A3",
+    "type": "complete",
+    "targets": [
+      {
+        "target": "OfflineAudioContext"
+      }
+    ],
+    "interface": "OfflineAudioCompletionEvent"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://webaudio.github.io/web-audio-api/#ref-for-concept-event-fire%E2%91%A5"
+    },
+    "href": "https://webaudio.github.io/web-audio-api/#ref-for-concept-event-fire%E2%91%A5",
+    "type": "processorerror",
+    "targets": [
+      {
+        "target": "AudioWorkletNode"
+      }
+    ],
+    "interface": "ErrorEvent"
+  },
+  {
+    "type": "update",
+    "targets": [
+      {
+        "target": "AudioRenderCapacity"
+      }
+    ],
+    "interface": "AudioRenderCapacityEvent",
+    "src": {
+      "format": "IDL eventHandler",
+      "href": null
+    }
+  },
+  {
+    "type": "ended",
+    "targets": [
+      {
+        "target": "AudioScheduledSourceNode"
+      }
+    ],
+    "interface": "Event",
+    "src": {
+      "format": "IDL eventHandler",
+      "href": null
+    }
+  },
+  {
+    "type": "audioprocess",
+    "targets": [
+      {
+        "target": "ScriptProcessorNode"
+      }
+    ],
+    "interface": "AudioProcessingEvent",
+    "src": {
+      "format": "IDL eventHandler",
+      "href": null
+    }
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://gpuweb.github.io/gpuweb/#ref-for-concept-event-fire"
+    },
+    "href": "https://gpuweb.github.io/gpuweb/#eventdef-gpudevice-uncapturederror",
+    "type": "uncapturederror",
+    "targets": [
+      {
+        "target": "GPUDevice"
+      }
+    ],
+    "interface": "GPUUncapturedErrorEvent"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://webaudio.github.io/web-midi-api/#midiport-interface"
+    },
+    "href": "https://webaudio.github.io/web-midi-api/#dom-midiport-onstatechange",
+    "type": "statechange",
+    "targets": [
+      {
+        "target": "MIDIPort"
+      },
+      {
+        "target": "MIDIAccess"
+      }
+    ],
+    "interface": "MIDIConnectionEvent"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://webaudio.github.io/web-midi-api/#midiinput-interface"
+    },
+    "href": "https://webaudio.github.io/web-midi-api/#midiinput-interface",
+    "type": "midimessage",
+    "interface": "MIDIMessageEvent",
+    "targets": [
+      {
+        "target": "MIDIInput"
+      }
+    ]
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://w3c.github.io/webrtc-encoded-transform/#ref-for-concept-event-fire"
+    },
+    "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-sframetransform-onerror",
+    "type": "error",
+    "targets": [
+      {
+        "target": "SFrameTransform"
+      }
+    ],
+    "interface": "SFrameTransformErrorEvent"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://w3c.github.io/webrtc-encoded-transform/#ref-for-concept-event-fire%E2%91%A2"
+    },
+    "href": "https://w3c.github.io/webrtc-encoded-transform/#eventdef-dedicatedworkerglobalscope-rtctransform",
+    "type": "rtctransform",
+    "targets": [
+      {
+        "target": "DedicatedWorkerGlobalScope"
+      }
+    ],
+    "interface": "RTCTransformEvent"
+  },
+  {
+    "href": "https://w3c.github.io/webrtc-identity/#event-isolationchange",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/webrtc-identity/#event-isolationchange"
+    },
+    "type": "isolationchange",
+    "targets": [
+      {
+        "target": "MediaStreamTrack"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://w3c.github.io/webrtc-pc/#event-datachannel-open",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/webrtc-pc/#event-datachannel-open"
+    },
+    "type": "open",
+    "targets": [
+      {
+        "target": "RTCDataChannel"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://w3c.github.io/webrtc-pc/#event-datachannel-message",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/webrtc-pc/#event-datachannel-message"
+    },
+    "type": "message",
+    "targets": [
+      {
+        "target": "RTCDataChannel"
+      }
+    ],
+    "interface": "MessageEvent"
+  },
+  {
+    "href": "https://w3c.github.io/webrtc-pc/#event-datachannel-bufferedamountlow",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/webrtc-pc/#event-datachannel-bufferedamountlow"
+    },
+    "type": "bufferedamountlow",
+    "targets": [
+      {
+        "target": "RTCDataChannel"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://w3c.github.io/webrtc-pc/#event-datachannel-error",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/webrtc-pc/#event-datachannel-error"
+    },
+    "type": "error",
+    "targets": [
+      {
+        "target": "RTCDataChannel"
+      }
+    ],
+    "interface": "RTCErrorEvent"
+  },
+  {
+    "href": "https://w3c.github.io/webrtc-pc/#event-datachannel-closing",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/webrtc-pc/#event-datachannel-closing"
+    },
+    "type": "closing",
+    "targets": [
+      {
+        "target": "RTCDataChannel"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://w3c.github.io/webrtc-pc/#event-datachannel-close",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/webrtc-pc/#event-datachannel-close"
+    },
+    "type": "close",
+    "targets": [
+      {
+        "target": "RTCDataChannel"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://w3c.github.io/webrtc-pc/#event-track",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/webrtc-pc/#event-track"
+    },
+    "type": "track",
+    "targets": [
+      {
+        "target": "RTCPeerConnection"
+      }
+    ],
+    "interface": "RTCTrackEvent"
+  },
+  {
+    "href": "https://w3c.github.io/webrtc-pc/#event-negotiation",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/webrtc-pc/#event-negotiation"
+    },
+    "type": "negotiationneeded",
+    "targets": [
+      {
+        "target": "RTCPeerConnection"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://w3c.github.io/webrtc-pc/#event-signalingstatechange",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/webrtc-pc/#event-signalingstatechange"
+    },
+    "type": "signalingstatechange",
+    "targets": [
+      {
+        "target": "RTCPeerConnection"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://w3c.github.io/webrtc-pc/#event-iceconnectionstatechange",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/webrtc-pc/#event-iceconnectionstatechange"
+    },
+    "type": "iceconnectionstatechange",
+    "targets": [
+      {
+        "target": "RTCPeerConnection"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://w3c.github.io/webrtc-pc/#event-icegatheringstatechange",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/webrtc-pc/#event-icegatheringstatechange"
+    },
+    "type": "icegatheringstatechange",
+    "targets": [
+      {
+        "target": "RTCPeerConnection"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://w3c.github.io/webrtc-pc/#event-icecandidate",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/webrtc-pc/#event-icecandidate"
+    },
+    "type": "icecandidate",
+    "targets": [
+      {
+        "target": "RTCPeerConnection"
+      }
+    ],
+    "interface": "RTCPeerConnectionIceEvent"
+  },
+  {
+    "href": "https://w3c.github.io/webrtc-pc/#event-connectionstatechange",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/webrtc-pc/#event-connectionstatechange"
+    },
+    "type": "connectionstatechange",
+    "targets": [
+      {
+        "target": "RTCPeerConnection"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://w3c.github.io/webrtc-pc/#event-icecandidateerror",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/webrtc-pc/#event-icecandidateerror"
+    },
+    "type": "icecandidateerror",
+    "targets": [
+      {
+        "target": "RTCPeerConnection"
+      }
+    ],
+    "interface": "RTCPeerConnectionIceErrorEvent"
+  },
+  {
+    "href": "https://w3c.github.io/webrtc-pc/#event-datachannel",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/webrtc-pc/#event-datachannel"
+    },
+    "type": "datachannel",
+    "targets": [
+      {
+        "target": "RTCPeerConnection"
+      }
+    ],
+    "interface": "RTCDataChannelEvent"
+  },
+  {
+    "href": "https://w3c.github.io/webrtc-pc/#event-RTCDTMFSender-tonechange",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/webrtc-pc/#event-RTCDTMFSender-tonechange"
+    },
+    "type": "tonechange",
+    "targets": [
+      {
+        "target": "RTCDTMFSender"
+      }
+    ],
+    "interface": "RTCDTMFToneChangeEvent"
+  },
+  {
+    "href": "https://w3c.github.io/webrtc-pc/#event-icetransport-statechange",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/webrtc-pc/#event-icetransport-statechange"
+    },
+    "type": "statechange",
+    "targets": [
+      {
+        "target": "RTCIceTransport"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://w3c.github.io/webrtc-pc/#event-icetransport-gatheringstatechange",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/webrtc-pc/#event-icetransport-gatheringstatechange"
+    },
+    "type": "gatheringstatechange",
+    "targets": [
+      {
+        "target": "RTCIceTransport"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://w3c.github.io/webrtc-pc/#event-icetransport-selectedcandidatepairchange",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/webrtc-pc/#event-icetransport-selectedcandidatepairchange"
+    },
+    "type": "selectedcandidatepairchange",
+    "targets": [
+      {
+        "target": "RTCIceTransport"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://w3c.github.io/webrtc-pc/#event-dtlstransport-statechange",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/webrtc-pc/#event-dtlstransport-statechange"
+    },
+    "type": "statechange",
+    "targets": [
+      {
+        "target": "RTCDtlsTransport"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://w3c.github.io/webrtc-pc/#dfn-error",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/webrtc-pc/#dfn-error"
+    },
+    "type": "error",
+    "targets": [
+      {
+        "target": "RTCDtlsTransport"
+      }
+    ],
+    "interface": "RTCErrorEvent"
+  },
+  {
+    "href": "https://w3c.github.io/webrtc-pc/#event-sctptransport-statechange",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/webrtc-pc/#event-sctptransport-statechange"
+    },
+    "type": "statechange",
+    "targets": [
+      {
+        "target": "RTCSctpTransport"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://immersive-web.github.io/dom-overlays/#ref-for-concept-event-fire"
+    },
+    "href": "https://immersive-web.github.io/dom-overlays/#beforexrselect",
+    "type": "beforexrselect",
+    "targets": [
+      {
+        "target": "HTMLElement",
+        "bubbles": true
+      },
+      {
+        "target": "MathMLElement",
+        "bubbles": true
+      },
+      {
+        "target": "SVGElement",
+        "bubbles": true
+      }
+    ],
+    "interface": "XRSessionEvent"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://immersive-web.github.io/lighting-estimation/#ref-for-concept-event-fire"
+    },
+    "href": "https://immersive-web.github.io/lighting-estimation/#eventdef-xrlightprobe-reflectionchange",
+    "type": "reflectionchange",
+    "targets": [
+      {
+        "target": "XRLightProbe"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://immersive-web.github.io/webxr/#ref-for-concept-event-fire"
+    },
+    "href": "https://immersive-web.github.io/webxr/#eventdef-xrsystem-devicechange",
+    "type": "devicechange",
+    "targets": [
+      {
+        "target": "XRSystem"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://immersive-web.github.io/webxr/#ref-for-concept-event-fire%E2%91%A1"
+    },
+    "href": "https://immersive-web.github.io/webxr/#eventdef-xrsession-visibilitychange",
+    "type": "visibilitychange",
+    "targets": [
+      {
+        "target": "XRSession"
+      }
+    ],
+    "interface": "XRSessionEvent"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://immersive-web.github.io/webxr/#ref-for-concept-event-fire%E2%91%A2"
+    },
+    "href": "https://immersive-web.github.io/webxr/#eventdef-xrsession-end",
+    "type": "end",
+    "targets": [
+      {
+        "target": "XRSession"
+      }
+    ],
+    "interface": "XRSessionEvent"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://immersive-web.github.io/webxr/#ref-for-concept-event-fire%E2%91%A3"
+    },
+    "href": "https://immersive-web.github.io/webxr/#eventdef-xrsession-inputsourceschange",
+    "type": "inputsourceschange",
+    "targets": [
+      {
+        "target": "XRSession"
+      }
+    ],
+    "interface": "XRInputSourcesChangeEvent"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://immersive-web.github.io/webxr/#ref-for-concept-event-fire%E2%91%A4"
+    },
+    "href": "https://immersive-web.github.io/webxr/#eventdef-xrsession-selectstart",
+    "type": "selectstart",
+    "targets": [
+      {
+        "target": "XRSession"
+      }
+    ],
+    "interface": "XRInputSourceEvent"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://immersive-web.github.io/webxr/#ref-for-concept-event-fire%E2%91%A5"
+    },
+    "href": "https://immersive-web.github.io/webxr/#eventdef-xrsession-selectend",
+    "type": "selectend",
+    "targets": [
+      {
+        "target": "XRSession"
+      }
+    ],
+    "interface": "XRInputSourceEvent"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://immersive-web.github.io/webxr/#ref-for-concept-event-fire%E2%91%A6"
+    },
+    "href": "https://immersive-web.github.io/webxr/#eventdef-xrsession-select",
+    "type": "select",
+    "targets": [
+      {
+        "target": "XRSession"
+      }
+    ],
+    "interface": "XRInputSourceEvent"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://immersive-web.github.io/webxr/#ref-for-concept-event-fire%E2%91%A7"
+    },
+    "href": "https://immersive-web.github.io/webxr/#eventdef-xrsession-squeezestart",
+    "type": "squeezestart",
+    "targets": [
+      {
+        "target": "XRSession"
+      }
+    ],
+    "interface": "XRInputSourceEvent"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://immersive-web.github.io/webxr/#ref-for-concept-event-fire%E2%91%A8"
+    },
+    "href": "https://immersive-web.github.io/webxr/#eventdef-xrsession-squeezeend",
+    "type": "squeezeend",
+    "targets": [
+      {
+        "target": "XRSession"
+      }
+    ],
+    "interface": "XRInputSourceEvent"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://immersive-web.github.io/webxr/#ref-for-concept-event-fire%E2%91%A0%E2%93%AA"
+    },
+    "href": "https://immersive-web.github.io/webxr/#eventdef-xrsession-squeeze",
+    "type": "squeeze",
+    "targets": [
+      {
+        "target": "XRSession"
+      }
+    ],
+    "interface": "XRInputSourceEvent"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://immersive-web.github.io/webxr/#ref-for-concept-event-fire%E2%91%A0%E2%91%A0"
+    },
+    "href": "https://immersive-web.github.io/webxr/#eventdef-xrsession-frameratechange",
+    "type": "frameratechange",
+    "targets": [
+      {
+        "target": "XRSession"
+      }
+    ],
+    "interface": "XRSessionEvent"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://immersive-web.github.io/webxr/#ref-for-concept-event-fire%E2%91%A0%E2%91%A1"
+    },
+    "href": "https://immersive-web.github.io/webxr/#eventdef-xrreferencespace-reset",
+    "type": "reset",
+    "targets": [
+      {
+        "target": "XRReferenceSpace"
+      }
+    ],
+    "interface": "XRReferenceSpaceEvent"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://immersive-web.github.io/layers/#ref-for-concept-event-fire"
+    },
+    "href": "https://immersive-web.github.io/layers/#eventdef-xrlayer-redraw",
+    "type": "redraw",
+    "targets": [
+      {
+        "target": "XRLayer"
+      }
+    ],
+    "interface": "XRLayerEvent"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://w3c.github.io/window-placement/#ref-for-concept-event-fire"
+    },
+    "href": "https://w3c.github.io/window-placement/#eventdef-screen-change",
+    "type": "change",
+    "targets": [
+      {
+        "target": "Screen"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://w3c.github.io/window-placement/#ref-for-concept-event-fire%E2%91%A0"
+    },
+    "href": "https://w3c.github.io/window-placement/#eventdef-screendetails-screenschange",
+    "type": "screenschange",
+    "targets": [
+      {
+        "target": "ScreenDetails"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://w3c.github.io/window-placement/#ref-for-concept-event-fire%E2%91%A1"
+    },
+    "href": "https://w3c.github.io/window-placement/#eventdef-screendetails-currentscreenchange",
+    "type": "currentscreenchange",
+    "targets": [
+      {
+        "target": "ScreenDetails"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://w3c.github.io/window-placement/#ref-for-concept-event-fire%E2%91%A2"
+    },
+    "href": "https://w3c.github.io/window-placement/#eventdef-screendetailed-change",
+    "type": "change",
+    "targets": [
+      {
+        "target": "ScreenDetailed"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://xhr.spec.whatwg.org/#event-xhr-readystatechange",
+    "src": {
+      "format": "summary table",
+      "href": "https://xhr.spec.whatwg.org/#event-xhr-readystatechange"
+    },
+    "type": "readystatechange",
+    "targets": [
+      {
+        "target": "XMLHttpRequest"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "href": "https://xhr.spec.whatwg.org/#event-xhr-loadstart",
+    "src": {
+      "format": "summary table",
+      "href": "https://xhr.spec.whatwg.org/#event-xhr-loadstart"
+    },
+    "type": "loadstart",
+    "targets": [
+      {
+        "target": "XMLHttpRequest"
+      }
+    ],
+    "interface": "ProgressEvent"
+  },
+  {
+    "href": "https://xhr.spec.whatwg.org/#event-xhr-progress",
+    "src": {
+      "format": "summary table",
+      "href": "https://xhr.spec.whatwg.org/#event-xhr-progress"
+    },
+    "type": "progress",
+    "targets": [
+      {
+        "target": "XMLHttpRequest"
+      }
+    ],
+    "interface": "ProgressEvent"
+  },
+  {
+    "href": "https://xhr.spec.whatwg.org/#event-xhr-abort",
+    "src": {
+      "format": "summary table",
+      "href": "https://xhr.spec.whatwg.org/#event-xhr-abort"
+    },
+    "type": "abort",
+    "targets": [
+      {
+        "target": "XMLHttpRequest"
+      }
+    ],
+    "interface": "ProgressEvent"
+  },
+  {
+    "href": "https://xhr.spec.whatwg.org/#event-xhr-error",
+    "src": {
+      "format": "summary table",
+      "href": "https://xhr.spec.whatwg.org/#event-xhr-error"
+    },
+    "type": "error",
+    "targets": [
+      {
+        "target": "XMLHttpRequest"
+      }
+    ],
+    "interface": "ProgressEvent"
+  },
+  {
+    "href": "https://xhr.spec.whatwg.org/#event-xhr-load",
+    "src": {
+      "format": "summary table",
+      "href": "https://xhr.spec.whatwg.org/#event-xhr-load"
+    },
+    "type": "load",
+    "targets": [
+      {
+        "target": "XMLHttpRequest"
+      }
+    ],
+    "interface": "ProgressEvent"
+  },
+  {
+    "href": "https://xhr.spec.whatwg.org/#event-xhr-timeout",
+    "src": {
+      "format": "summary table",
+      "href": "https://xhr.spec.whatwg.org/#event-xhr-timeout"
+    },
+    "type": "timeout",
+    "targets": [
+      {
+        "target": "XMLHttpRequest"
+      }
+    ],
+    "interface": "ProgressEvent"
+  },
+  {
+    "href": "https://xhr.spec.whatwg.org/#event-xhr-loadend",
+    "src": {
+      "format": "summary table",
+      "href": "https://xhr.spec.whatwg.org/#event-xhr-loadend"
+    },
+    "type": "loadend",
+    "targets": [
+      {
+        "target": "XMLHttpRequest"
+      }
+    ],
+    "interface": "ProgressEvent"
+  }
+]

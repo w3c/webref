@@ -7,23 +7,15 @@
     {
       "src": {
         "format": "fire an event phrasing",
-        "href": "https://webaudio.github.io/web-midi-api/#midiaccess-interface"
-      },
-      "href": "https://webaudio.github.io/web-midi-api/#midiaccess-interface",
-      "type": "statechange",
-      "interface": "Event"
-    },
-    {
-      "src": {
-        "format": "fire an event phrasing",
         "href": "https://webaudio.github.io/web-midi-api/#midiport-interface"
       },
       "href": "https://webaudio.github.io/web-midi-api/#dom-midiport-onstatechange",
       "type": "statechange",
       "targets": [
-        "MIDIPort"
+        "MIDIPort",
+        "MIDIAccess"
       ],
-      "interface": "Event"
+      "interface": "MIDIConnectionEvent"
     },
     {
       "src": {
@@ -32,7 +24,7 @@
       },
       "href": "https://webaudio.github.io/web-midi-api/#midiinput-interface",
       "type": "midimessage",
-      "interface": "Event",
+      "interface": "MIDIMessageEvent",
       "targets": [
         "MIDIInput"
       ]
