@@ -42,6 +42,7 @@ interface Animation : EventTarget {
     undefined updatePlaybackRate(double playbackRate);
     undefined reverse();
     undefined persist();
+    [CEReactions]
     undefined commitStyles();
 };
 
