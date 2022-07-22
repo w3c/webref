@@ -6,12 +6,18 @@
   "idlparsed": {
     "jsNames": {
       "constructors": {
-        "*": [
+        "Window": [
+          "PerformanceMark"
+        ],
+        "Worker": [
           "PerformanceMark"
         ]
       },
       "functions": {
-        "*": [
+        "Window": [
+          "PerformanceMeasure"
+        ],
+        "Worker": [
           "PerformanceMeasure"
         ]
       }
@@ -162,7 +168,7 @@
         "partial": false
       },
       "PerformanceMark": {
-        "fragment": "[Exposed=*]\ninterface PerformanceMark : PerformanceEntry {\n  constructor(DOMString markName, optional PerformanceMarkOptions markOptions = {});\n  readonly attribute any detail;\n};",
+        "fragment": "[Exposed=(Window,Worker)]\ninterface PerformanceMark : PerformanceEntry {\n  constructor(DOMString markName, optional PerformanceMarkOptions markOptions = {});\n  readonly attribute any detail;\n};",
         "type": "interface",
         "name": "PerformanceMark",
         "inheritance": "PerformanceEntry",
@@ -228,8 +234,15 @@
             "type": "extended-attribute",
             "name": "Exposed",
             "rhs": {
-              "type": "*",
-              "value": null
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                }
+              ]
             },
             "arguments": []
           }
@@ -237,7 +250,7 @@
         "partial": false
       },
       "PerformanceMeasure": {
-        "fragment": "[Exposed=*]\ninterface PerformanceMeasure : PerformanceEntry {\n  readonly attribute any detail;\n};",
+        "fragment": "[Exposed=(Window,Worker)]\ninterface PerformanceMeasure : PerformanceEntry {\n  readonly attribute any detail;\n};",
         "type": "interface",
         "name": "PerformanceMeasure",
         "inheritance": "PerformanceEntry",
@@ -263,8 +276,15 @@
             "type": "extended-attribute",
             "name": "Exposed",
             "rhs": {
-              "type": "*",
-              "value": null
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                }
+              ]
             },
             "arguments": []
           }
@@ -485,7 +505,11 @@
     },
     "globals": {},
     "exposed": {
-      "*": [
+      "Window": [
+        "PerformanceMark",
+        "PerformanceMeasure"
+      ],
+      "Worker": [
         "PerformanceMark",
         "PerformanceMeasure"
       ]
