@@ -42,6 +42,12 @@ function btoa(str) {
   return Buffer.from(str).toString("base64");
 }
 
+function MissingPackageError(message) {
+  this.name = "MissingPackageError";
+  this.message = (message || "");
+}
+MissingPackageError.prototype = Error.prototype;
+
 
 /**
  * Compute diff between the released npm package and the contents of the repo
@@ -55,9 +61,14 @@ function btoa(str) {
 function computeDiff(type) {
   // Install @webref package in tmp folder
   const tmpFolder = fs.mkdtempSync(path.join(os.tmpdir(), "webref-"));
-  execSync(`npm install @webref/${type}`, {
-    cwd: tmpFolder
-  });
+  try {
+    execSync(`npm install @webref/${type}`, {
+      cwd: tmpFolder
+    });
+  }
+  catch (err) {
+    throw new MissingPackageError(`Package @webref/${type} does not exist or could not be installed.`);
+  }
 
   // Extract released version (will be used in the body of the pre-release PR)
   latestReleasedVersion = require(path.join(tmpFolder, "node_modules", "@webref", type, "package.json")).version;
@@ -377,6 +388,15 @@ prepareRelease(packageType)
     console.log("== The end ==");
   })
   .catch(err => {
-    console.error(err);
-    process.exit(1);
+    if (err.name === "MissingPackageError") {
+      // Package does not exist yet, no way to compute diff
+      console.log(err.message);
+      console.log('No pull request created as a result!');
+      console.log();
+      console.log("== The end ==");
+    }
+    else {
+      console.error(err);
+      process.exit(1);
+    }
   });
