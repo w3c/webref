@@ -14,55 +14,11 @@
     },
     "idlNames": {
       "EpubReadingSystem": {
-        "fragment": "[Exposed=(Window)]\ninterface EpubReadingSystem {\n    [LegacyUnforgeable] readonly attribute DOMString name;\n    [LegacyUnforgeable] readonly attribute DOMString version;\n    boolean hasFeature(DOMString feature, optional DOMString version);\n};",
+        "fragment": "[Exposed=(Window)]\ninterface EpubReadingSystem {\n    boolean hasFeature(DOMString feature, optional DOMString version);\n};",
         "type": "interface",
         "name": "EpubReadingSystem",
         "inheritance": null,
         "members": [
-          {
-            "type": "attribute",
-            "name": "name",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            "extAttrs": [
-              {
-                "type": "extended-attribute",
-                "name": "LegacyUnforgeable",
-                "rhs": null,
-                "arguments": []
-              }
-            ],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "attribute",
-            "name": "version",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            "extAttrs": [
-              {
-                "type": "extended-attribute",
-                "name": "LegacyUnforgeable",
-                "rhs": null,
-                "arguments": []
-              }
-            ],
-            "special": "",
-            "readonly": true
-          },
           {
             "type": "operation",
             "name": "hasFeature",
