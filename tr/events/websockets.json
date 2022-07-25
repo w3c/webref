@@ -1,0 +1,56 @@
+{
+  "spec": {
+    "title": "WebSockets Standard",
+    "url": "https://websockets.spec.whatwg.org/"
+  },
+  "events": [
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://websockets.spec.whatwg.org/#ref-for-concept-event-fire"
+      },
+      "href": "https://websockets.spec.whatwg.org/#eventdef-websocket-open",
+      "type": "open",
+      "targets": [
+        "WebSocket"
+      ],
+      "interface": "Event"
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://websockets.spec.whatwg.org/#ref-for-concept-event-fire%E2%91%A0"
+      },
+      "href": "https://websockets.spec.whatwg.org/#eventdef-websocket-message",
+      "type": "message",
+      "targets": [
+        "WebSocket"
+      ],
+      "interface": "MessageEvent"
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://websockets.spec.whatwg.org/#ref-for-concept-event-fire%E2%91%A1"
+      },
+      "href": "https://websockets.spec.whatwg.org/#eventdef-websocket-error",
+      "type": "error",
+      "targets": [
+        "WebSocket"
+      ],
+      "interface": "Event"
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://websockets.spec.whatwg.org/#ref-for-concept-event-fire%E2%91%A2"
+      },
+      "href": "https://websockets.spec.whatwg.org/#eventdef-websocket-close",
+      "type": "close",
+      "targets": [
+        "WebSocket"
+      ],
+      "interface": "CloseEvent"
+    }
+  ]
+}

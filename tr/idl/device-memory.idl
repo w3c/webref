@@ -4,9 +4,11 @@
 // Source: Device Memory (https://www.w3.org/TR/device-memory-1/)
 
 [
-    NoInterfaceObject,
     SecureContext,
     Exposed=(Window,Worker)
-] interface NavigatorDeviceClass {
+] interface mixin NavigatorDeviceMemory {
     readonly attribute double deviceMemory;
 };
+
+Navigator includes NavigatorDeviceMemory;
+WorkerNavigator includes NavigatorDeviceMemory;

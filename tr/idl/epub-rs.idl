@@ -5,8 +5,6 @@
 
 [Exposed=(Window)]
 interface EpubReadingSystem {
-    [LegacyUnforgeable] readonly attribute DOMString name;
-    [LegacyUnforgeable] readonly attribute DOMString version;
     boolean hasFeature(DOMString feature, optional DOMString version);
 };
 

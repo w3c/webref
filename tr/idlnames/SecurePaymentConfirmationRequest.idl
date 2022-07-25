@@ -1,9 +1,0 @@
-// Source: Secure Payment Confirmation (https://www.w3.org/TR/secure-payment-confirmation/)
-dictionary SecurePaymentConfirmationRequest {
-    required BufferSource challenge;
-    required FrozenArray<BufferSource> credentialIds;
-    required PaymentCredentialInstrument instrument;
-    unsigned long timeout;
-    required USVString payeeOrigin;
-    AuthenticationExtensionsClientInputs extensions;
-};

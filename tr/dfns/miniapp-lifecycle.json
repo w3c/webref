@@ -459,7 +459,7 @@
       "href": "https://www.w3.org/TR/miniapp-lifecycle/#dom-global-getglobalstate",
       "linkingText": [
         "getGlobalState()",
-        "getGlobalState(globalState, globalLaunchedCallback, globalShownCallback, globalHiddenCallback, globalErrorCallback)"
+        "getGlobalState(globalLaunchedCallback, globalShownCallback, globalHiddenCallback, globalErrorCallback)"
       ],
       "localLinkingText": [
         "Global.getGlobalState",
@@ -498,6 +498,151 @@
         "number": "2.5"
       },
       "definedIn": "pre"
+    },
+    {
+      "id": "dom-textdirection",
+      "href": "https://www.w3.org/TR/miniapp-lifecycle/#dom-textdirection",
+      "linkingText": [
+        "TextDirection"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "inputobject-interface",
+        "href": "https://www.w3.org/TR/miniapp-lifecycle/#inputobject-interface",
+        "title": "InputObject interface",
+        "number": "2.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-textdirection-auto",
+      "href": "https://www.w3.org/TR/miniapp-lifecycle/#dom-textdirection-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "TextDirection"
+      ],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "inputobject-interface",
+        "href": "https://www.w3.org/TR/miniapp-lifecycle/#inputobject-interface",
+        "title": "InputObject interface",
+        "number": "2.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-textdirection-ltr",
+      "href": "https://www.w3.org/TR/miniapp-lifecycle/#dom-textdirection-ltr",
+      "linkingText": [
+        "ltr"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "TextDirection"
+      ],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "inputobject-interface",
+        "href": "https://www.w3.org/TR/miniapp-lifecycle/#inputobject-interface",
+        "title": "InputObject interface",
+        "number": "2.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-textdirection-rtl",
+      "href": "https://www.w3.org/TR/miniapp-lifecycle/#dom-textdirection-rtl",
+      "linkingText": [
+        "rtl"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "TextDirection"
+      ],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "inputobject-interface",
+        "href": "https://www.w3.org/TR/miniapp-lifecycle/#inputobject-interface",
+        "title": "InputObject interface",
+        "number": "2.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "textdirection-auto",
+      "href": "https://www.w3.org/TR/miniapp-lifecycle/#textdirection-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "textdirection"
+      ],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "inputobject-interface",
+        "href": "https://www.w3.org/TR/miniapp-lifecycle/#inputobject-interface",
+        "title": "InputObject interface",
+        "number": "2.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "textdirection-ltr",
+      "href": "https://www.w3.org/TR/miniapp-lifecycle/#textdirection-ltr",
+      "linkingText": [
+        "ltr"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "textdirection"
+      ],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "inputobject-interface",
+        "href": "https://www.w3.org/TR/miniapp-lifecycle/#inputobject-interface",
+        "title": "InputObject interface",
+        "number": "2.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "textdirection-rtl",
+      "href": "https://www.w3.org/TR/miniapp-lifecycle/#textdirection-rtl",
+      "linkingText": [
+        "rtl"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "textdirection"
+      ],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "inputobject-interface",
+        "href": "https://www.w3.org/TR/miniapp-lifecycle/#inputobject-interface",
+        "title": "InputObject interface",
+        "number": "2.5"
+      },
+      "definedIn": "dt"
     },
     {
       "id": "dom-inputobject-inputquery",
@@ -569,6 +714,52 @@
       "definedIn": "prose"
     },
     {
+      "id": "dom-inputobject-lang",
+      "href": "https://www.w3.org/TR/miniapp-lifecycle/#dom-inputobject-lang",
+      "linkingText": [
+        "lang"
+      ],
+      "localLinkingText": [
+        "InputObject.lang"
+      ],
+      "type": "attribute",
+      "for": [
+        "InputObject"
+      ],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "lang-attribute",
+        "href": "https://www.w3.org/TR/miniapp-lifecycle/#lang-attribute",
+        "title": "lang attribute",
+        "number": "2.5.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-inputobject-dir",
+      "href": "https://www.w3.org/TR/miniapp-lifecycle/#dom-inputobject-dir",
+      "linkingText": [
+        "dir"
+      ],
+      "localLinkingText": [
+        "InputObject.dir"
+      ],
+      "type": "attribute",
+      "for": [
+        "InputObject"
+      ],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "dir-attribute",
+        "href": "https://www.w3.org/TR/miniapp-lifecycle/#dir-attribute",
+        "title": "dir attribute",
+        "number": "2.5.5"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "dom-lifecycleerror",
       "href": "https://www.w3.org/TR/miniapp-lifecycle/#dom-lifecycleerror",
       "linkingText": [
@@ -607,6 +798,52 @@
         "href": "https://www.w3.org/TR/miniapp-lifecycle/#errordescription-attribute",
         "title": "errorDescription attribute",
         "number": "2.6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-lifecycleerror-lang",
+      "href": "https://www.w3.org/TR/miniapp-lifecycle/#dom-lifecycleerror-lang",
+      "linkingText": [
+        "lang"
+      ],
+      "localLinkingText": [
+        "LifecycleError.lang"
+      ],
+      "type": "attribute",
+      "for": [
+        "LifecycleError"
+      ],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "lang-attribute-0",
+        "href": "https://www.w3.org/TR/miniapp-lifecycle/#lang-attribute-0",
+        "title": "lang attribute",
+        "number": "2.6.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-lifecycleerror-dir",
+      "href": "https://www.w3.org/TR/miniapp-lifecycle/#dom-lifecycleerror-dir",
+      "linkingText": [
+        "dir"
+      ],
+      "localLinkingText": [
+        "LifecycleError.dir"
+      ],
+      "type": "attribute",
+      "for": [
+        "LifecycleError"
+      ],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "dir-attribute-0",
+        "href": "https://www.w3.org/TR/miniapp-lifecycle/#dir-attribute-0",
+        "title": "dir attribute",
+        "number": "2.6.3"
       },
       "definedIn": "prose"
     },
@@ -1126,7 +1363,7 @@
       "href": "https://www.w3.org/TR/miniapp-lifecycle/#dom-page-getpagestate",
       "linkingText": [
         "getPageState()",
-        "getPageState(pageState, pageLoadedCallback, pageReadyCallback, pageShownCallback, pageHiddenCallback, pageUnloadedCallback)"
+        "getPageState(pageLoadedCallback, pageReadyCallback, pageShownCallback, pageHiddenCallback, pageUnloadedCallback)"
       ],
       "localLinkingText": [
         "Page.getPageState",

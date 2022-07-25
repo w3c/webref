@@ -1,0 +1,32 @@
+{
+  "spec": {
+    "title": "Web NFC",
+    "url": "https://w3c.github.io/web-nfc/"
+  },
+  "events": [
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://w3c.github.io/web-nfc/#parse-ndef"
+      },
+      "href": "https://w3c.github.io/web-nfc/#parse-ndef",
+      "type": "readingerror",
+      "targets": [
+        "NDEFReader"
+      ],
+      "interface": "Event"
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://w3c.github.io/web-nfc/#dispatching-nfc-content"
+      },
+      "href": "https://w3c.github.io/web-nfc/#dispatching-nfc-content",
+      "type": "reading",
+      "targets": [
+        "NDEFReader"
+      ],
+      "interface": "NDEFReadingEvent"
+    }
+  ]
+}
