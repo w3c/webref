@@ -1394,10 +1394,10 @@
       "number": "16.2.1"
     },
     {
-      "id": "float-builtin-functions",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#float-builtin-functions",
+      "id": "numeric-builtin-functions",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#numeric-builtin-functions",
       "level": 3,
-      "title": "Float Built-in Functions",
+      "title": "Numeric Built-in Functions",
       "number": "16.3"
     },
     {
@@ -1485,690 +1485,641 @@
       "number": "16.3.12"
     },
     {
-      "id": "cross-builtin",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#cross-builtin",
-      "level": 4,
-      "title": "cross",
-      "number": "16.3.13"
-    },
-    {
-      "id": "degrees-builtin",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#degrees-builtin",
-      "level": 4,
-      "title": "degrees",
-      "number": "16.3.14"
-    },
-    {
-      "id": "distance-builtin",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#distance-builtin",
-      "level": 4,
-      "title": "distance",
-      "number": "16.3.15"
-    },
-    {
-      "id": "exp-builtin",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#exp-builtin",
-      "level": 4,
-      "title": "exp",
-      "number": "16.3.16"
-    },
-    {
-      "id": "exp2-builtin",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#exp2-builtin",
-      "level": 4,
-      "title": "exp2",
-      "number": "16.3.17"
-    },
-    {
-      "id": "faceForward-builtin",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#faceForward-builtin",
-      "level": 4,
-      "title": "faceForward",
-      "number": "16.3.18"
-    },
-    {
-      "id": "floor-builtin",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#floor-builtin",
-      "level": 4,
-      "title": "floor",
-      "number": "16.3.19"
-    },
-    {
-      "id": "fma-builtin",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#fma-builtin",
-      "level": 4,
-      "title": "fma",
-      "number": "16.3.20"
-    },
-    {
-      "id": "fract-builtin",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#fract-builtin",
-      "level": 4,
-      "title": "fract",
-      "number": "16.3.21"
-    },
-    {
-      "id": "frexp-builtin",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#frexp-builtin",
-      "level": 4,
-      "title": "frexp",
-      "number": "16.3.22"
-    },
-    {
-      "id": "inverseSqrt-builtin",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#inverseSqrt-builtin",
-      "level": 4,
-      "title": "inverseSqrt",
-      "number": "16.3.23"
-    },
-    {
-      "id": "ldexp-builtin",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#ldexp-builtin",
-      "level": 4,
-      "title": "ldexp",
-      "number": "16.3.24"
-    },
-    {
-      "id": "length-builtin",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#length-builtin",
-      "level": 4,
-      "title": "length",
-      "number": "16.3.25"
-    },
-    {
-      "id": "log-builtin",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#log-builtin",
-      "level": 4,
-      "title": "log",
-      "number": "16.3.26"
-    },
-    {
-      "id": "log2-builtin",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#log2-builtin",
-      "level": 4,
-      "title": "log2",
-      "number": "16.3.27"
-    },
-    {
-      "id": "max-float-builtin",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#max-float-builtin",
-      "level": 4,
-      "title": "max",
-      "number": "16.3.28"
-    },
-    {
-      "id": "min-float-builtin",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#min-float-builtin",
-      "level": 4,
-      "title": "min",
-      "number": "16.3.29"
-    },
-    {
-      "id": "mix-builtin",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#mix-builtin",
-      "level": 4,
-      "title": "mix",
-      "number": "16.3.30"
-    },
-    {
-      "id": "modf-builtin",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#modf-builtin",
-      "level": 4,
-      "title": "modf",
-      "number": "16.3.31"
-    },
-    {
-      "id": "normalize-builtin",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#normalize-builtin",
-      "level": 4,
-      "title": "normalize",
-      "number": "16.3.32"
-    },
-    {
-      "id": "pow-builtin",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#pow-builtin",
-      "level": 4,
-      "title": "pow",
-      "number": "16.3.33"
-    },
-    {
-      "id": "quantizeToF16-builtin",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#quantizeToF16-builtin",
-      "level": 4,
-      "title": "quantizeToF16",
-      "number": "16.3.34"
-    },
-    {
-      "id": "radians-builtin",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#radians-builtin",
-      "level": 4,
-      "title": "radians",
-      "number": "16.3.35"
-    },
-    {
-      "id": "reflect-builtin",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#reflect-builtin",
-      "level": 4,
-      "title": "reflect",
-      "number": "16.3.36"
-    },
-    {
-      "id": "refract-builtin",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#refract-builtin",
-      "level": 4,
-      "title": "refract",
-      "number": "16.3.37"
-    },
-    {
-      "id": "round-builtin",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#round-builtin",
-      "level": 4,
-      "title": "round",
-      "number": "16.3.38"
-    },
-    {
-      "id": "saturate-float-builtin",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#saturate-float-builtin",
-      "level": 4,
-      "title": "saturate",
-      "number": "16.3.39"
-    },
-    {
-      "id": "sign-builtin",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#sign-builtin",
-      "level": 4,
-      "title": "sign",
-      "number": "16.3.40"
-    },
-    {
-      "id": "sin-builtin",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#sin-builtin",
-      "level": 4,
-      "title": "sin",
-      "number": "16.3.41"
-    },
-    {
-      "id": "sinh-builtin",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#sinh-builtin",
-      "level": 4,
-      "title": "sinh",
-      "number": "16.3.42"
-    },
-    {
-      "id": "smoothstep-builtin",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#smoothstep-builtin",
-      "level": 4,
-      "title": "smoothstep",
-      "number": "16.3.43"
-    },
-    {
-      "id": "sqrt-builtin",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#sqrt-builtin",
-      "level": 4,
-      "title": "sqrt",
-      "number": "16.3.44"
-    },
-    {
-      "id": "step-builtin",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#step-builtin",
-      "level": 4,
-      "title": "step",
-      "number": "16.3.45"
-    },
-    {
-      "id": "tan-builtin",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#tan-builtin",
-      "level": 4,
-      "title": "tan",
-      "number": "16.3.46"
-    },
-    {
-      "id": "tanh-builtin",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#tanh-builtin",
-      "level": 4,
-      "title": "tanh",
-      "number": "16.3.47"
-    },
-    {
-      "id": "trunc-builtin",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#trunc-builtin",
-      "level": 4,
-      "title": "trunc",
-      "number": "16.3.48"
-    },
-    {
-      "id": "integer-builtin-functions",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#integer-builtin-functions",
-      "level": 3,
-      "title": "Integer Built-in Functions",
-      "number": "16.4"
-    },
-    {
-      "id": "abs-builtin",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#abs-builtin",
-      "level": 4,
-      "title": "abs",
-      "number": "16.4.1"
-    },
-    {
-      "id": "clamp-integral-builtin",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#clamp-integral-builtin",
-      "level": 4,
-      "title": "clamp",
-      "number": "16.4.2"
-    },
-    {
       "id": "countLeadingZeros-builtin",
       "href": "https://gpuweb.github.io/gpuweb/wgsl/#countLeadingZeros-builtin",
       "level": 4,
       "title": "countLeadingZeros",
-      "number": "16.4.3"
+      "number": "16.3.13"
     },
     {
       "id": "countOneBits-builtin",
       "href": "https://gpuweb.github.io/gpuweb/wgsl/#countOneBits-builtin",
       "level": 4,
       "title": "countOneBits",
-      "number": "16.4.4"
+      "number": "16.3.14"
     },
     {
       "id": "countTrailingZeros-builtin",
       "href": "https://gpuweb.github.io/gpuweb/wgsl/#countTrailingZeros-builtin",
       "level": 4,
       "title": "countTrailingZeros",
-      "number": "16.4.5"
+      "number": "16.3.15"
     },
     {
-      "id": "extractBits-signed-builtin",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#extractBits-signed-builtin",
+      "id": "cross-builtin",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#cross-builtin",
       "level": 4,
-      "title": "extractBits (signed)",
-      "number": "16.4.6"
+      "title": "cross",
+      "number": "16.3.16"
     },
     {
-      "id": "extractBits-unsigned-builtin",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#extractBits-unsigned-builtin",
+      "id": "degrees-builtin",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#degrees-builtin",
       "level": 4,
-      "title": "extractBits (unsigned)",
-      "number": "16.4.7"
-    },
-    {
-      "id": "firstLeadingBit-signed-builtin",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#firstLeadingBit-signed-builtin",
-      "level": 4,
-      "title": "firstLeadingBit (signed)",
-      "number": "16.4.8"
-    },
-    {
-      "id": "firstLeadingBit-unsigned-builtin",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#firstLeadingBit-unsigned-builtin",
-      "level": 4,
-      "title": "firstLeadingBit (unsigned)",
-      "number": "16.4.9"
-    },
-    {
-      "id": "firstTrailingBit-builtin",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#firstTrailingBit-builtin",
-      "level": 4,
-      "title": "firstTrailingBit",
-      "number": "16.4.10"
-    },
-    {
-      "id": "insertBits-builtin",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#insertBits-builtin",
-      "level": 4,
-      "title": "insertBits",
-      "number": "16.4.11"
-    },
-    {
-      "id": "max-integral-builtin",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#max-integral-builtin",
-      "level": 4,
-      "title": "max",
-      "number": "16.4.12"
-    },
-    {
-      "id": "min-integral-builtin",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#min-integral-builtin",
-      "level": 4,
-      "title": "min",
-      "number": "16.4.13"
-    },
-    {
-      "id": "reverseBits-builtin",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#reverseBits-builtin",
-      "level": 4,
-      "title": "reverseBits",
-      "number": "16.4.14"
-    },
-    {
-      "id": "matrix-builtin-functions",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#matrix-builtin-functions",
-      "level": 3,
-      "title": "Matrix Built-in Functions",
-      "number": "16.5"
+      "title": "degrees",
+      "number": "16.3.17"
     },
     {
       "id": "determinant-builtin",
       "href": "https://gpuweb.github.io/gpuweb/wgsl/#determinant-builtin",
       "level": 4,
       "title": "determinant",
-      "number": "16.5.1"
+      "number": "16.3.18"
     },
     {
-      "id": "transpose-builtin",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#transpose-builtin",
+      "id": "distance-builtin",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#distance-builtin",
       "level": 4,
-      "title": "transpose",
-      "number": "16.5.2"
-    },
-    {
-      "id": "vector-builtin-functions",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#vector-builtin-functions",
-      "level": 3,
-      "title": "Vector Built-in Functions",
-      "number": "16.6"
+      "title": "distance",
+      "number": "16.3.19"
     },
     {
       "id": "dot-builtin",
       "href": "https://gpuweb.github.io/gpuweb/wgsl/#dot-builtin",
       "level": 4,
       "title": "dot",
-      "number": "16.6.1"
+      "number": "16.3.20"
+    },
+    {
+      "id": "exp-builtin",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#exp-builtin",
+      "level": 4,
+      "title": "exp",
+      "number": "16.3.21"
+    },
+    {
+      "id": "exp2-builtin",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#exp2-builtin",
+      "level": 4,
+      "title": "exp2",
+      "number": "16.3.22"
+    },
+    {
+      "id": "extractBits-signed-builtin",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#extractBits-signed-builtin",
+      "level": 4,
+      "title": "extractBits (signed)",
+      "number": "16.3.23"
+    },
+    {
+      "id": "extractBits-unsigned-builtin",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#extractBits-unsigned-builtin",
+      "level": 4,
+      "title": "extractBits (unsigned)",
+      "number": "16.3.24"
+    },
+    {
+      "id": "faceForward-builtin",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#faceForward-builtin",
+      "level": 4,
+      "title": "faceForward",
+      "number": "16.3.25"
+    },
+    {
+      "id": "firstLeadingBit-signed-builtin",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#firstLeadingBit-signed-builtin",
+      "level": 4,
+      "title": "firstLeadingBit (signed)",
+      "number": "16.3.26"
+    },
+    {
+      "id": "firstLeadingBit-unsigned-builtin",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#firstLeadingBit-unsigned-builtin",
+      "level": 4,
+      "title": "firstLeadingBit (unsigned)",
+      "number": "16.3.27"
+    },
+    {
+      "id": "firstTrailingBit-builtin",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#firstTrailingBit-builtin",
+      "level": 4,
+      "title": "firstTrailingBit",
+      "number": "16.3.28"
+    },
+    {
+      "id": "floor-builtin",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#floor-builtin",
+      "level": 4,
+      "title": "floor",
+      "number": "16.3.29"
+    },
+    {
+      "id": "fma-builtin",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#fma-builtin",
+      "level": 4,
+      "title": "fma",
+      "number": "16.3.30"
+    },
+    {
+      "id": "fract-builtin",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#fract-builtin",
+      "level": 4,
+      "title": "fract",
+      "number": "16.3.31"
+    },
+    {
+      "id": "frexp-builtin",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#frexp-builtin",
+      "level": 4,
+      "title": "frexp",
+      "number": "16.3.32"
+    },
+    {
+      "id": "insertBits-builtin",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#insertBits-builtin",
+      "level": 4,
+      "title": "insertBits",
+      "number": "16.3.33"
+    },
+    {
+      "id": "inverseSqrt-builtin",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#inverseSqrt-builtin",
+      "level": 4,
+      "title": "inverseSqrt",
+      "number": "16.3.34"
+    },
+    {
+      "id": "ldexp-builtin",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#ldexp-builtin",
+      "level": 4,
+      "title": "ldexp",
+      "number": "16.3.35"
+    },
+    {
+      "id": "length-builtin",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#length-builtin",
+      "level": 4,
+      "title": "length",
+      "number": "16.3.36"
+    },
+    {
+      "id": "log-builtin",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#log-builtin",
+      "level": 4,
+      "title": "log",
+      "number": "16.3.37"
+    },
+    {
+      "id": "log2-builtin",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#log2-builtin",
+      "level": 4,
+      "title": "log2",
+      "number": "16.3.38"
+    },
+    {
+      "id": "max-float-builtin",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#max-float-builtin",
+      "level": 4,
+      "title": "max",
+      "number": "16.3.39"
+    },
+    {
+      "id": "min-float-builtin",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#min-float-builtin",
+      "level": 4,
+      "title": "min",
+      "number": "16.3.40"
+    },
+    {
+      "id": "mix-builtin",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#mix-builtin",
+      "level": 4,
+      "title": "mix",
+      "number": "16.3.41"
+    },
+    {
+      "id": "modf-builtin",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#modf-builtin",
+      "level": 4,
+      "title": "modf",
+      "number": "16.3.42"
+    },
+    {
+      "id": "normalize-builtin",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#normalize-builtin",
+      "level": 4,
+      "title": "normalize",
+      "number": "16.3.43"
+    },
+    {
+      "id": "pow-builtin",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#pow-builtin",
+      "level": 4,
+      "title": "pow",
+      "number": "16.3.44"
+    },
+    {
+      "id": "quantizeToF16-builtin",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#quantizeToF16-builtin",
+      "level": 4,
+      "title": "quantizeToF16",
+      "number": "16.3.45"
+    },
+    {
+      "id": "radians-builtin",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#radians-builtin",
+      "level": 4,
+      "title": "radians",
+      "number": "16.3.46"
+    },
+    {
+      "id": "reflect-builtin",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#reflect-builtin",
+      "level": 4,
+      "title": "reflect",
+      "number": "16.3.47"
+    },
+    {
+      "id": "refract-builtin",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#refract-builtin",
+      "level": 4,
+      "title": "refract",
+      "number": "16.3.48"
+    },
+    {
+      "id": "reverseBits-builtin",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#reverseBits-builtin",
+      "level": 4,
+      "title": "reverseBits",
+      "number": "16.3.49"
+    },
+    {
+      "id": "round-builtin",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#round-builtin",
+      "level": 4,
+      "title": "round",
+      "number": "16.3.50"
+    },
+    {
+      "id": "saturate-float-builtin",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#saturate-float-builtin",
+      "level": 4,
+      "title": "saturate",
+      "number": "16.3.51"
+    },
+    {
+      "id": "sign-builtin",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#sign-builtin",
+      "level": 4,
+      "title": "sign",
+      "number": "16.3.52"
+    },
+    {
+      "id": "sin-builtin",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#sin-builtin",
+      "level": 4,
+      "title": "sin",
+      "number": "16.3.53"
+    },
+    {
+      "id": "sinh-builtin",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#sinh-builtin",
+      "level": 4,
+      "title": "sinh",
+      "number": "16.3.54"
+    },
+    {
+      "id": "smoothstep-builtin",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#smoothstep-builtin",
+      "level": 4,
+      "title": "smoothstep",
+      "number": "16.3.55"
+    },
+    {
+      "id": "sqrt-builtin",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#sqrt-builtin",
+      "level": 4,
+      "title": "sqrt",
+      "number": "16.3.56"
+    },
+    {
+      "id": "step-builtin",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#step-builtin",
+      "level": 4,
+      "title": "step",
+      "number": "16.3.57"
+    },
+    {
+      "id": "tan-builtin",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#tan-builtin",
+      "level": 4,
+      "title": "tan",
+      "number": "16.3.58"
+    },
+    {
+      "id": "tanh-builtin",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#tanh-builtin",
+      "level": 4,
+      "title": "tanh",
+      "number": "16.3.59"
+    },
+    {
+      "id": "transpose-builtin",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#transpose-builtin",
+      "level": 4,
+      "title": "transpose",
+      "number": "16.3.60"
+    },
+    {
+      "id": "trunc-builtin",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#trunc-builtin",
+      "level": 4,
+      "title": "trunc",
+      "number": "16.3.61"
     },
     {
       "id": "derivative-builtin-functions",
       "href": "https://gpuweb.github.io/gpuweb/wgsl/#derivative-builtin-functions",
       "level": 3,
       "title": "Derivative Built-in Functions",
-      "number": "16.7"
+      "number": "16.4"
     },
     {
       "id": "dpdx-builtin",
       "href": "https://gpuweb.github.io/gpuweb/wgsl/#dpdx-builtin",
       "level": 4,
       "title": "dpdx",
-      "number": "16.7.1"
+      "number": "16.4.1"
     },
     {
       "id": "dpdxCoarse-builtin",
       "href": "https://gpuweb.github.io/gpuweb/wgsl/#dpdxCoarse-builtin",
       "level": 4,
       "title": "dpdxCoarse",
-      "number": "16.7.2"
+      "number": "16.4.2"
     },
     {
       "id": "dpdxFine-builtin",
       "href": "https://gpuweb.github.io/gpuweb/wgsl/#dpdxFine-builtin",
       "level": 4,
       "title": "dpdxFine",
-      "number": "16.7.3"
+      "number": "16.4.3"
     },
     {
       "id": "dpdy-builtin",
       "href": "https://gpuweb.github.io/gpuweb/wgsl/#dpdy-builtin",
       "level": 4,
       "title": "dpdy",
-      "number": "16.7.4"
+      "number": "16.4.4"
     },
     {
       "id": "dpdyCoarse-builtin",
       "href": "https://gpuweb.github.io/gpuweb/wgsl/#dpdyCoarse-builtin",
       "level": 4,
       "title": "dpdyCoarse",
-      "number": "16.7.5"
+      "number": "16.4.5"
     },
     {
       "id": "dpdyFine-builtin",
       "href": "https://gpuweb.github.io/gpuweb/wgsl/#dpdyFine-builtin",
       "level": 4,
       "title": "dpdyFine",
-      "number": "16.7.6"
+      "number": "16.4.6"
     },
     {
       "id": "fwidth-builtin",
       "href": "https://gpuweb.github.io/gpuweb/wgsl/#fwidth-builtin",
       "level": 4,
       "title": "fwidth",
-      "number": "16.7.7"
+      "number": "16.4.7"
     },
     {
       "id": "fwidthCoarse-builtin",
       "href": "https://gpuweb.github.io/gpuweb/wgsl/#fwidthCoarse-builtin",
       "level": 4,
       "title": "fwidthCoarse",
-      "number": "16.7.8"
+      "number": "16.4.8"
     },
     {
       "id": "fwidthFine-builtin",
       "href": "https://gpuweb.github.io/gpuweb/wgsl/#fwidthFine-builtin",
       "level": 4,
       "title": "fwidthFine",
-      "number": "16.7.9"
+      "number": "16.4.9"
     },
     {
       "id": "texture-builtin-functions",
       "href": "https://gpuweb.github.io/gpuweb/wgsl/#texture-builtin-functions",
       "level": 3,
       "title": "Texture Built-in Functions",
-      "number": "16.8"
+      "number": "16.5"
     },
     {
       "id": "texturedimensions",
       "href": "https://gpuweb.github.io/gpuweb/wgsl/#texturedimensions",
       "level": 4,
       "title": "textureDimensions",
-      "number": "16.8.1"
+      "number": "16.5.1"
     },
     {
       "id": "texturegather",
       "href": "https://gpuweb.github.io/gpuweb/wgsl/#texturegather",
       "level": 4,
       "title": "textureGather",
-      "number": "16.8.2"
+      "number": "16.5.2"
     },
     {
       "id": "texturegathercompare",
       "href": "https://gpuweb.github.io/gpuweb/wgsl/#texturegathercompare",
       "level": 4,
       "title": "textureGatherCompare",
-      "number": "16.8.3"
+      "number": "16.5.3"
     },
     {
       "id": "textureload",
       "href": "https://gpuweb.github.io/gpuweb/wgsl/#textureload",
       "level": 4,
       "title": "textureLoad",
-      "number": "16.8.4"
+      "number": "16.5.4"
     },
     {
       "id": "texturenumlayers",
       "href": "https://gpuweb.github.io/gpuweb/wgsl/#texturenumlayers",
       "level": 4,
       "title": "textureNumLayers",
-      "number": "16.8.5"
+      "number": "16.5.5"
     },
     {
       "id": "texturenumlevels",
       "href": "https://gpuweb.github.io/gpuweb/wgsl/#texturenumlevels",
       "level": 4,
       "title": "textureNumLevels",
-      "number": "16.8.6"
+      "number": "16.5.6"
     },
     {
       "id": "texturenumsamples",
       "href": "https://gpuweb.github.io/gpuweb/wgsl/#texturenumsamples",
       "level": 4,
       "title": "textureNumSamples",
-      "number": "16.8.7"
+      "number": "16.5.7"
     },
     {
       "id": "texturesample",
       "href": "https://gpuweb.github.io/gpuweb/wgsl/#texturesample",
       "level": 4,
       "title": "textureSample",
-      "number": "16.8.8"
+      "number": "16.5.8"
     },
     {
       "id": "texturesamplebias",
       "href": "https://gpuweb.github.io/gpuweb/wgsl/#texturesamplebias",
       "level": 4,
       "title": "textureSampleBias",
-      "number": "16.8.9"
+      "number": "16.5.9"
     },
     {
       "id": "texturesamplecompare",
       "href": "https://gpuweb.github.io/gpuweb/wgsl/#texturesamplecompare",
       "level": 4,
       "title": "textureSampleCompare",
-      "number": "16.8.10"
+      "number": "16.5.10"
     },
     {
       "id": "texturesamplecomparelevel",
       "href": "https://gpuweb.github.io/gpuweb/wgsl/#texturesamplecomparelevel",
       "level": 4,
       "title": "textureSampleCompareLevel",
-      "number": "16.8.11"
+      "number": "16.5.11"
     },
     {
       "id": "texturesamplegrad",
       "href": "https://gpuweb.github.io/gpuweb/wgsl/#texturesamplegrad",
       "level": 4,
       "title": "textureSampleGrad",
-      "number": "16.8.12"
+      "number": "16.5.12"
     },
     {
       "id": "texturesamplelevel",
       "href": "https://gpuweb.github.io/gpuweb/wgsl/#texturesamplelevel",
       "level": 4,
       "title": "textureSampleLevel",
-      "number": "16.8.13"
+      "number": "16.5.13"
     },
     {
       "id": "texturestore",
       "href": "https://gpuweb.github.io/gpuweb/wgsl/#texturestore",
       "level": 4,
       "title": "textureStore",
-      "number": "16.8.14"
+      "number": "16.5.14"
     },
     {
       "id": "atomic-builtin-functions",
       "href": "https://gpuweb.github.io/gpuweb/wgsl/#atomic-builtin-functions",
       "level": 3,
       "title": "Atomic Built-in Functions",
-      "number": "16.9"
+      "number": "16.6"
     },
     {
       "id": "atomic-load",
       "href": "https://gpuweb.github.io/gpuweb/wgsl/#atomic-load",
       "level": 4,
       "title": "Atomic Load",
-      "number": "16.9.1"
+      "number": "16.6.1"
     },
     {
       "id": "atomic-store",
       "href": "https://gpuweb.github.io/gpuweb/wgsl/#atomic-store",
       "level": 4,
       "title": "Atomic Store",
-      "number": "16.9.2"
+      "number": "16.6.2"
     },
     {
       "id": "atomic-rmw",
       "href": "https://gpuweb.github.io/gpuweb/wgsl/#atomic-rmw",
       "level": 4,
       "title": "Atomic Read-modify-write",
-      "number": "16.9.3"
+      "number": "16.6.3"
     },
     {
       "id": "pack-builtin-functions",
       "href": "https://gpuweb.github.io/gpuweb/wgsl/#pack-builtin-functions",
       "level": 3,
       "title": "Data Packing Built-in Functions",
-      "number": "16.10"
+      "number": "16.7"
     },
     {
       "id": "pack4x8snorm-builtin",
       "href": "https://gpuweb.github.io/gpuweb/wgsl/#pack4x8snorm-builtin",
       "level": 4,
       "title": "pack4x8snorm",
-      "number": "16.10.1"
+      "number": "16.7.1"
     },
     {
       "id": "pack4x8unorm-builtin",
       "href": "https://gpuweb.github.io/gpuweb/wgsl/#pack4x8unorm-builtin",
       "level": 4,
       "title": "pack4x8unorm",
-      "number": "16.10.2"
+      "number": "16.7.2"
     },
     {
       "id": "pack2x16snorm-builtin",
       "href": "https://gpuweb.github.io/gpuweb/wgsl/#pack2x16snorm-builtin",
       "level": 4,
       "title": "pack2x16snorm",
-      "number": "16.10.3"
+      "number": "16.7.3"
     },
     {
       "id": "pack2x16unorm-builtin",
       "href": "https://gpuweb.github.io/gpuweb/wgsl/#pack2x16unorm-builtin",
       "level": 4,
       "title": "pack2x16unorm",
-      "number": "16.10.4"
+      "number": "16.7.4"
     },
     {
       "id": "pack2x16float-builtin",
       "href": "https://gpuweb.github.io/gpuweb/wgsl/#pack2x16float-builtin",
       "level": 4,
       "title": "pack2x16float",
-      "number": "16.10.5"
+      "number": "16.7.5"
     },
     {
       "id": "unpack-builtin-functions",
       "href": "https://gpuweb.github.io/gpuweb/wgsl/#unpack-builtin-functions",
       "level": 3,
       "title": "Data Unpacking Built-in Functions",
-      "number": "16.11"
+      "number": "16.8"
     },
     {
       "id": "unpack4x8snorm-builtin",
       "href": "https://gpuweb.github.io/gpuweb/wgsl/#unpack4x8snorm-builtin",
       "level": 4,
       "title": "unpack4x8snorm",
-      "number": "16.11.1"
+      "number": "16.8.1"
     },
     {
       "id": "unpack4x8unorm-builtin",
       "href": "https://gpuweb.github.io/gpuweb/wgsl/#unpack4x8unorm-builtin",
       "level": 4,
       "title": "unpack4x8unorm",
-      "number": "16.11.2"
+      "number": "16.8.2"
     },
     {
       "id": "unpack2x16snorm-builtin",
       "href": "https://gpuweb.github.io/gpuweb/wgsl/#unpack2x16snorm-builtin",
       "level": 4,
       "title": "unpack2x16snorm",
-      "number": "16.11.3"
+      "number": "16.8.3"
     },
     {
       "id": "unpack2x16unorm-builtin",
       "href": "https://gpuweb.github.io/gpuweb/wgsl/#unpack2x16unorm-builtin",
       "level": 4,
       "title": "unpack2x16unorm",
-      "number": "16.11.4"
+      "number": "16.8.4"
     },
     {
       "id": "unpack2x16float-builtin",
       "href": "https://gpuweb.github.io/gpuweb/wgsl/#unpack2x16float-builtin",
       "level": 4,
       "title": "unpack2x16float",
-      "number": "16.11.5"
+      "number": "16.8.5"
     },
     {
       "id": "sync-builtin-functions",
       "href": "https://gpuweb.github.io/gpuweb/wgsl/#sync-builtin-functions",
       "level": 3,
       "title": "Synchronization Built-in Functions",
-      "number": "16.12"
+      "number": "16.9"
     },
     {
       "id": "w3c-conformance",
