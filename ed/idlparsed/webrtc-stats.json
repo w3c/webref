@@ -1038,7 +1038,7 @@
         "partial": false
       },
       "RTCOutboundRtpStreamStats": {
-        "fragment": "dictionary RTCOutboundRtpStreamStats : RTCSentRtpStreamStats {\n             DOMString            mid;\n             DOMString            mediaSourceId;\n             DOMString            remoteId;\n             DOMString            rid;\n             unsigned long long   headerBytesSent;\n             unsigned long long   retransmittedPacketsSent;\n             unsigned long long   retransmittedBytesSent;\n             double               targetBitrate;\n             unsigned long long   totalEncodedBytesTarget;\n             unsigned long        frameWidth;\n             unsigned long        frameHeight;\n             double               framesPerSecond;\n             unsigned long        framesSent;\n             unsigned long        hugeFramesSent;\n             unsigned long        framesEncoded;\n             unsigned long        keyFramesEncoded;\n             unsigned long long   qpSum;\n             double               totalEncodeTime;\n             double               totalPacketSendDelay;\n             RTCQualityLimitationReason                 qualityLimitationReason;\n             record<DOMString, double> qualityLimitationDurations;\n             unsigned long        qualityLimitationResolutionChanges;\n             unsigned long        nackCount;\n             unsigned long        firCount;\n             unsigned long        pliCount;\n             DOMString            encoderImplementation;\n};",
+        "fragment": "dictionary RTCOutboundRtpStreamStats : RTCSentRtpStreamStats {\n             DOMString            mid;\n             DOMString            mediaSourceId;\n             DOMString            remoteId;\n             DOMString            rid;\n             unsigned long long   headerBytesSent;\n             unsigned long long   retransmittedPacketsSent;\n             unsigned long long   retransmittedBytesSent;\n             double               targetBitrate;\n             unsigned long long   totalEncodedBytesTarget;\n             unsigned long        frameWidth;\n             unsigned long        frameHeight;\n             double               framesPerSecond;\n             unsigned long        framesSent;\n             unsigned long        hugeFramesSent;\n             unsigned long        framesEncoded;\n             unsigned long        keyFramesEncoded;\n             unsigned long long   qpSum;\n             double               totalEncodeTime;\n             double               totalPacketSendDelay;\n             RTCQualityLimitationReason                 qualityLimitationReason;\n             record<DOMString, double> qualityLimitationDurations;\n             unsigned long        qualityLimitationResolutionChanges;\n             unsigned long        nackCount;\n             unsigned long        firCount;\n             unsigned long        pliCount;\n             DOMString            encoderImplementation;\n             boolean              active;\n};",
         "type": "dictionary",
         "name": "RTCOutboundRtpStreamStats",
         "inheritance": "RTCSentRtpStreamStats",
@@ -1446,6 +1446,21 @@
               "nullable": false,
               "union": false,
               "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "active",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
             },
             "default": null,
             "required": false
