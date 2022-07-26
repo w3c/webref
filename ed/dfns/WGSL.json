@@ -1942,6 +1942,44 @@
       "definedIn": "prose"
     },
     {
+      "id": "concretization",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#concretization",
+      "linkingText": [
+        "concretization"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "conversion-rank",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#conversion-rank",
+        "title": "Conversion Rank",
+        "number": "4.1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "concretization-of-a-value",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#concretization-of-a-value",
+      "linkingText": [
+        "concretization of a value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "conversion-rank",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#conversion-rank",
+        "title": "Conversion Rank",
+        "number": "4.1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "overload-resolution",
       "href": "https://gpuweb.github.io/gpuweb/wgsl/#overload-resolution",
       "linkingText": [
@@ -4059,18 +4097,18 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "value-decls",
-        "href": "https://gpuweb.github.io/gpuweb/wgsl/#value-decls",
-        "title": "Value Declarations",
-        "number": "5.1"
+        "id": "var-and-value",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#var-and-value",
+        "title": "Variable and Value Declarations",
+        "number": "5"
       },
       "definedIn": "prose"
     },
     {
-      "id": "let-declaration",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#let-declaration",
+      "id": "variable-declaration",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#variable-declaration",
       "linkingText": [
-        "let-declaration"
+        "variable declaration"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -4078,18 +4116,18 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "let-decls",
-        "href": "https://gpuweb.github.io/gpuweb/wgsl/#let-decls",
-        "title": "let Declarations",
-        "number": "5.1.1"
+        "id": "var-and-value",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#var-and-value",
+        "title": "Variable and Value Declarations",
+        "number": "5"
       },
       "definedIn": "prose"
     },
     {
-      "id": "override-declaration",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#override-declaration",
+      "id": "function-scope",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#function-scope",
       "linkingText": [
-        "override-declaration"
+        "function scope"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -4097,18 +4135,18 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "override-decls",
-        "href": "https://gpuweb.github.io/gpuweb/wgsl/#override-decls",
-        "title": "override Declarations",
-        "number": "5.1.2"
+        "id": "var-and-value",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#var-and-value",
+        "title": "Variable and Value Declarations",
+        "number": "5"
       },
       "definedIn": "prose"
     },
     {
-      "id": "pipeline-overridable",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#pipeline-overridable",
+      "id": "effective-value-type",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#effective-value-type",
       "linkingText": [
-        "pipeline-overridable"
+        "effective-value-type"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -4116,67 +4154,10 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "override-decls",
-        "href": "https://gpuweb.github.io/gpuweb/wgsl/#override-decls",
-        "title": "override Declarations",
-        "number": "5.1.2"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "pipeline-constant-id",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#pipeline-constant-id",
-      "linkingText": [
-        "pipeline constant ID"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "override-decls",
-        "href": "https://gpuweb.github.io/gpuweb/wgsl/#override-decls",
-        "title": "override Declarations",
-        "number": "5.1.2"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "pipeline-overridable-constant-identifier-string",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#pipeline-overridable-constant-identifier-string",
-      "linkingText": [
-        "pipeline-overridable constant identifier string"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "override-decls",
-        "href": "https://gpuweb.github.io/gpuweb/wgsl/#override-decls",
-        "title": "override Declarations",
-        "number": "5.1.2"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "pipeline-overridable-constant-has-a-default-value",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#pipeline-overridable-constant-has-a-default-value",
-      "linkingText": [
-        "pipeline-overridable constant has a default value"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "override-decls",
-        "href": "https://gpuweb.github.io/gpuweb/wgsl/#override-decls",
-        "title": "override Declarations",
-        "number": "5.1.2"
+        "id": "var-and-value",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#var-and-value",
+        "title": "Variable and Value Declarations",
+        "number": "5"
       },
       "definedIn": "prose"
     },
@@ -4195,7 +4176,121 @@
         "id": "const-decls",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#const-decls",
         "title": "const Declarations",
-        "number": "5.1.3"
+        "number": "5.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "override-declaration",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#override-declaration",
+      "linkingText": [
+        "override-declaration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "override-decls",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#override-decls",
+        "title": "override Declarations",
+        "number": "5.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "pipeline-overridable",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#pipeline-overridable",
+      "linkingText": [
+        "pipeline-overridable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "override-decls",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#override-decls",
+        "title": "override Declarations",
+        "number": "5.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "pipeline-overridable-constant-default-value",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#pipeline-overridable-constant-default-value",
+      "linkingText": [
+        "pipeline-overridable constant default value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "override-decls",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#override-decls",
+        "title": "override Declarations",
+        "number": "5.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "pipeline-constant-id",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#pipeline-constant-id",
+      "linkingText": [
+        "pipeline constant ID"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "override-decls",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#override-decls",
+        "title": "override Declarations",
+        "number": "5.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "pipeline-overridable-constant-identifier-string",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#pipeline-overridable-constant-identifier-string",
+      "linkingText": [
+        "pipeline-overridable constant identifier string"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "override-decls",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#override-decls",
+        "title": "override Declarations",
+        "number": "5.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "let-declaration",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#let-declaration",
+      "linkingText": [
+        "let-declaration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "let-decls",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#let-decls",
+        "title": "let Declarations",
+        "number": "5.2.3"
       },
       "definedIn": "prose"
     },
@@ -4214,15 +4309,15 @@
         "id": "var-decls",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#var-decls",
         "title": "var Declarations",
-        "number": "5.2"
+        "number": "5.3"
       },
       "definedIn": "prose"
     },
     {
-      "id": "variable-declaration",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#variable-declaration",
+      "id": "uniform-buffer",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#uniform-buffer",
       "linkingText": [
-        "variable declaration"
+        "uniform buffer"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -4233,7 +4328,26 @@
         "id": "var-decls",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#var-decls",
         "title": "var Declarations",
-        "number": "5.2"
+        "number": "5.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "storage-buffer",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#storage-buffer",
+      "linkingText": [
+        "storage buffer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "var-decls",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#var-decls",
+        "title": "var Declarations",
+        "number": "5.3"
       },
       "definedIn": "prose"
     },
@@ -4252,34 +4366,15 @@
         "id": "var-decls",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#var-decls",
         "title": "var Declarations",
-        "number": "5.2"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "uniform-buffer",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#uniform-buffer",
-      "linkingText": [
-        "uniform buffer"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "module-scope-variables",
-        "href": "https://gpuweb.github.io/gpuweb/wgsl/#module-scope-variables",
-        "title": "Module Scope Variables",
         "number": "5.3"
       },
       "definedIn": "prose"
     },
     {
-      "id": "storage-buffer",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#storage-buffer",
+      "id": "default-initial-value",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#default-initial-value",
       "linkingText": [
-        "storage buffer"
+        "default initial value"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -4287,29 +4382,10 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "module-scope-variables",
-        "href": "https://gpuweb.github.io/gpuweb/wgsl/#module-scope-variables",
-        "title": "Module Scope Variables",
+        "id": "var-decls",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#var-decls",
+        "title": "var Declarations",
         "number": "5.3"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "function-scope",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#function-scope",
-      "linkingText": [
-        "function scope"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "function-scope-variables",
-        "href": "https://gpuweb.github.io/gpuweb/wgsl/#function-scope-variables",
-        "title": "Function Scope Variables and Constants",
-        "number": "5.5"
       },
       "definedIn": "prose"
     },
@@ -4330,7 +4406,7 @@
         "id": "var-and-value-decl-grammar",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#var-and-value-decl-grammar",
         "title": "Variable and Value Declaration Grammar Summary",
-        "number": "5.6"
+        "number": "5.4"
       },
       "definedIn": "prose"
     },
@@ -4351,7 +4427,7 @@
         "id": "var-and-value-decl-grammar",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#var-and-value-decl-grammar",
         "title": "Variable and Value Declaration Grammar Summary",
-        "number": "5.6"
+        "number": "5.4"
       },
       "definedIn": "prose"
     },
@@ -4372,7 +4448,7 @@
         "id": "var-and-value-decl-grammar",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#var-and-value-decl-grammar",
         "title": "Variable and Value Declaration Grammar Summary",
-        "number": "5.6"
+        "number": "5.4"
       },
       "definedIn": "prose"
     },
@@ -4393,7 +4469,7 @@
         "id": "var-and-value-decl-grammar",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#var-and-value-decl-grammar",
         "title": "Variable and Value Declaration Grammar Summary",
-        "number": "5.6"
+        "number": "5.4"
       },
       "definedIn": "prose"
     },
@@ -4414,7 +4490,7 @@
         "id": "var-and-value-decl-grammar",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#var-and-value-decl-grammar",
         "title": "Variable and Value Declaration Grammar Summary",
-        "number": "5.6"
+        "number": "5.4"
       },
       "definedIn": "prose"
     },
@@ -4435,7 +4511,26 @@
         "id": "var-and-value-decl-grammar",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#var-and-value-decl-grammar",
         "title": "Variable and Value Declaration Grammar Summary",
-        "number": "5.6"
+        "number": "5.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "runtime-expression",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#runtime-expression",
+      "linkingText": [
+        "runtime expression"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "expressions",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#expressions",
+        "title": "Expressions",
+        "number": "6"
       },
       "definedIn": "prose"
     },
