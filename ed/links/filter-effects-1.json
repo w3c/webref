@@ -24,7 +24,8 @@
     "https://drafts.csswg.org/css-display-3/": [
       "containing-block",
       "propdef-display",
-      "propdef-visibility"
+      "propdef-visibility",
+      "valdef-display-table"
     ],
     "https://svgwg.org/svg2-draft/render.html": [
       "TermStackingContext"
@@ -60,6 +61,7 @@
       "number-value",
       "typedef-length-percentage",
       "identifier-value",
+      "in",
       "integer-value",
       "string-value",
       "comb-comma"
@@ -76,7 +78,6 @@
       "graphics-element",
       "elementdef-use",
       "elementdef-desc",
-      "elementdef-title",
       "elementdef-metadata",
       "TermDescriptiveElement"
     ],
@@ -88,6 +89,8 @@
     ],
     "https://html.spec.whatwg.org/": [
       "browsing-context",
+      "the-title-element",
+      "script",
       "attr-img-crossorigin",
       "the-img-element"
     ],
@@ -96,7 +99,10 @@
       "propdef-opacity",
       "typedef-color",
       "valdef-color-transparent",
-      "sRGB-space"
+      "propdef-color",
+      "sRGB-space",
+      "sRGB-linear-space",
+      "valdef-color-currentcolor"
     ],
     "https://drafts.csswg.org/css-transforms-1/": [
       "local-coordinate-system"
@@ -105,13 +111,9 @@
       "Introduction",
       "AnimateElement",
       "SetElement",
-      "AlignmentBaselineProperty",
-      "BaselineShiftProperty",
       "ColorRenderingProperty",
-      "DominantBaselineProperty",
       "EnableBackgroundProperty",
       "GlyphOrientationHorizontalProperty",
-      "GlyphOrientationVerticalProperty",
       "KerningProperty",
       "SimpleAlphaBlending",
       "AnimateTransformElement",
@@ -163,12 +165,14 @@
       "animtype-shadow-list"
     ],
     "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/filter": [],
-    "https://svgwg.org/svg2-draft/interact.html": [
-      "elementdef-script"
-    ],
     "https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/": [
       "TermPresentationAttribute",
       "TermUnsupportedValue"
+    ],
+    "https://drafts.csswg.org/css-inline-3/": [
+      "propdef-alignment-baseline",
+      "propdef-baseline-shift",
+      "propdef-dominant-baseline"
     ],
     "https://drafts.fxtf.org/css-masking-1/": [
       "propdef-clip",
@@ -176,27 +180,13 @@
       "propdef-clip-rule",
       "propdef-mask"
     ],
-    "https://drafts.csswg.org/css-color-3/": [
-      "color0"
-    ],
     "https://svgwg.org/svg2-draft/painting.html": [
       "ColorInterpolationProperty",
-      "FillProperty",
-      "FillOpacityProperty",
-      "FillRuleProperty",
       "MarkerProperty",
       "MarkerEndProperty",
       "MarkerMidProperty",
       "MarkerStartProperty",
       "ShapeRenderingProperty",
-      "StrokeProperty",
-      "StrokeDasharrayProperty",
-      "StrokeDashoffsetProperty",
-      "StrokeLinecapProperty",
-      "StrokeLinejoinProperty",
-      "StrokeMiterlimitProperty",
-      "StrokeOpacityProperty",
-      "StrokeWidthProperty",
       "TextRenderingProperty"
     ],
     "https://drafts.csswg.org/css-ui-4/": [
@@ -208,25 +198,43 @@
       "propdef-direction",
       "propdef-unicode-bidi"
     ],
+    "https://drafts.fxtf.org/fill-stroke-3/": [
+      "propdef-fill",
+      "propdef-fill-opacity",
+      "propdef-fill-rule",
+      "propdef-stroke",
+      "propdef-stroke-dasharray",
+      "propdef-stroke-dashoffset",
+      "propdef-stroke-linecap",
+      "propdef-stroke-linejoin",
+      "propdef-stroke-miterlimit",
+      "propdef-stroke-opacity",
+      "propdef-stroke-width"
+    ],
     "https://drafts.csswg.org/css-fonts-4/": [
       "propdef-font",
-      "propdef-font-size"
-    ],
-    "https://drafts.csswg.org/css-fonts-3/": [
       "propdef-font-family",
+      "propdef-font-size",
       "propdef-font-stretch",
       "propdef-font-style",
       "propdef-font-variant",
-      "propdef-font-weight"
+      "propdef-font-weight",
+      "valdef-font-weight-lighter"
     ],
     "https://drafts.csswg.org/css-fonts-5/": [
       "propdef-font-size-adjust"
+    ],
+    "https://drafts.csswg.org/css-writing-modes-4/": [
+      "propdef-glyph-orientation-vertical",
+      "propdef-writing-mode"
     ],
     "https://drafts.fxtf.org/compositing-2/": [
       "propdef-isolation",
       "ltblendmodegt",
       "backdrop",
+      "valdef-blend-mode-normal",
       "valdef-blend-mode-multiply",
+      "valdef-blend-mode-screen",
       "valdef-blend-mode-darken",
       "valdef-blend-mode-lighten",
       "valdef-blend-mode-overlay",
@@ -237,6 +245,8 @@
       "valdef-blend-mode-difference",
       "valdef-blend-mode-exclusion",
       "valdef-blend-mode-hue",
+      "valdef-blend-mode-saturation",
+      "valdef-blend-mode-color",
       "valdef-blend-mode-luminosity"
     ],
     "https://drafts.csswg.org/css-text-4/": [
@@ -257,9 +267,6 @@
       "propdef-text-decoration",
       "propdef-text-shadow"
     ],
-    "https://drafts.csswg.org/css-writing-modes-4/": [
-      "propdef-writing-mode"
-    ],
     "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/filterUnits": [],
     "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/primitiveUnits": [],
     "https://svgwg.org/svg2-draft/coords.html": [
@@ -275,12 +282,8 @@
     "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feBlend": [],
     "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/mode": [],
     "https://drafts.fxtf.org/compositing-1/": [
-      "valdef-blend-mode-normal",
       "blending",
-      "porterduffcompositingoperators_srcover",
-      "valdef-blend-mode-screen",
-      "valdef-blend-mode-saturation",
-      "valdef-blend-mode-color"
+      "porterduffcompositingoperators_srcover"
     ],
     "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feColorMatrix": [],
     "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feComponentTransfer": [],
@@ -367,11 +370,8 @@
       "used-value",
       "specified-value"
     ],
-    "https://drafts.csswg.org/web-animations-1/": [
-      "composite-operation-replace"
-    ],
-    "https://drafts.csswg.org/selectors-4/": [
-      "visited-pseudo"
+    "https://drafts.csswg.org/css2/": [
+      "selectordef-visited"
     ],
     "https://fetch.spec.whatwg.org/": [
       "cors-request"
@@ -387,6 +387,9 @@
     "https://developer.mozilla.org/en-US/docs/Web/API/SVGFEColorMatrixElement": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/SVGFEComponentTransferElement": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/SVGComponentTransferFunctionElement": [],
+    "https://drafts.csswg.org/css-easing/": [
+      "valdef-easing-function-linear"
+    ],
     "https://developer.mozilla.org/en-US/docs/Web/API/SVGFEFuncRElement": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/SVGFEFuncGElement": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/SVGFEFuncBElement": [],
@@ -423,15 +426,14 @@
     "https://drafts.csswg.org/css-color/": [],
     "https://drafts.csswg.org/css-display/": [],
     "https://drafts.csswg.org/css-transforms/": [],
-    "https://drafts.csswg.org/css2/": [],
     "https://drafts.csswg.org/css-backgrounds/": [],
     "https://drafts.csswg.org/css-values-3/": [],
+    "https://drafts.fxtf.org/fill-stroke/": [],
     "https://datatracker.ietf.org/doc/html/rfc2119": [],
-    "https://drafts.csswg.org/selectors/": [],
-    "https://www.w3.org/TR/SVG/": [],
     "https://svgwg.org/svg2-draft/": [],
     "https://wiki.mozilla.org/User:Bjacob/ArithmeticTimingDifferences": [],
     "https://webstore.iec.ch/publication/6169": [],
-    "https://drafts.csswg.org/css-animations/": []
+    "https://drafts.csswg.org/css-animations/": [],
+    "https://drafts.csswg.org/css-color-3/": []
   }
 }
