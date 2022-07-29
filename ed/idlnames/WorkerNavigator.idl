@@ -47,7 +47,7 @@ partial interface WorkerNavigator {
   [SameObject] readonly attribute USB usb;
 };
 
-// Source: Device Memory 1 (https://www.w3.org/TR/device-memory-1/)
+// Source: Device Memory (https://www.w3.org/TR/device-memory-1/)
 WorkerNavigator includes NavigatorDeviceMemory;
 
 // Source: Media Capabilities (https://www.w3.org/TR/media-capabilities/)
@@ -62,7 +62,7 @@ partial interface WorkerNavigator {
   [SameObject] readonly attribute Permissions permissions;
 };
 
-// Source: Service Workers Nightly (https://www.w3.org/TR/service-workers-1/)
+// Source: Service Workers Nightly (https://www.w3.org/TR/service-workers/)
 partial interface WorkerNavigator {
   [SecureContext, SameObject] readonly attribute ServiceWorkerContainer serviceWorker;
 };

@@ -44,7 +44,7 @@
     },
     "idlNames": {
       "AudioDecoder": {
-        "fragment": "[Exposed=(Window,DedicatedWorker), SecureContext]\ninterface AudioDecoder {\n  constructor(AudioDecoderInit init);\n\n  readonly attribute CodecState state;\n  readonly attribute unsigned long decodeQueueSize;\n\n  undefined configure(AudioDecoderConfig config);\n  undefined decode(EncodedAudioChunk chunk);\n  Promise<undefined> flush();\n  undefined reset();\n  undefined close();\n\n  static Promise<AudioDecoderSupport> isConfigSupported(AudioDecoderConfig config);\n};",
+        "fragment": "[Exposed=(Window,DedicatedWorker), SecureContext]\ninterface AudioDecoder {\n  constructor(AudioDecoderInit init);\n\n  readonly attribute CodecState state;\n  readonly attribute unsigned long decodeQueueSize;\n  attribute EventHandler ondequeue;\n\n  undefined configure(AudioDecoderConfig config);\n  undefined decode(EncodedAudioChunk chunk);\n  Promise<undefined> flush();\n  undefined reset();\n  undefined close();\n\n  static Promise<AudioDecoderSupport> isConfigSupported(AudioDecoderConfig config);\n};",
         "type": "interface",
         "name": "AudioDecoder",
         "inheritance": null,
@@ -100,6 +100,21 @@
             "extAttrs": [],
             "special": "",
             "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "ondequeue",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "EventHandler"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
           },
           {
             "type": "operation",
@@ -360,7 +375,7 @@
         "extAttrs": []
       },
       "VideoDecoder": {
-        "fragment": "[Exposed=(Window,DedicatedWorker), SecureContext]\ninterface VideoDecoder {\n  constructor(VideoDecoderInit init);\n\n  readonly attribute CodecState state;\n  readonly attribute unsigned long decodeQueueSize;\n\n  undefined configure(VideoDecoderConfig config);\n  undefined decode(EncodedVideoChunk chunk);\n  Promise<undefined> flush();\n  undefined reset();\n  undefined close();\n\n  static Promise<VideoDecoderSupport> isConfigSupported(VideoDecoderConfig config);\n};",
+        "fragment": "[Exposed=(Window,DedicatedWorker), SecureContext]\ninterface VideoDecoder {\n  constructor(VideoDecoderInit init);\n\n  readonly attribute CodecState state;\n  readonly attribute unsigned long decodeQueueSize;\n  attribute EventHandler ondequeue;\n\n  undefined configure(VideoDecoderConfig config);\n  undefined decode(EncodedVideoChunk chunk);\n  Promise<undefined> flush();\n  undefined reset();\n  undefined close();\n\n  static Promise<VideoDecoderSupport> isConfigSupported(VideoDecoderConfig config);\n};",
         "type": "interface",
         "name": "VideoDecoder",
         "inheritance": null,
@@ -416,6 +431,21 @@
             "extAttrs": [],
             "special": "",
             "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "ondequeue",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "EventHandler"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
           },
           {
             "type": "operation",
@@ -676,7 +706,7 @@
         "extAttrs": []
       },
       "AudioEncoder": {
-        "fragment": "[Exposed=(Window,DedicatedWorker), SecureContext]\ninterface AudioEncoder {\n  constructor(AudioEncoderInit init);\n\n  readonly attribute CodecState state;\n  readonly attribute unsigned long encodeQueueSize;\n\n  undefined configure(AudioEncoderConfig config);\n  undefined encode(AudioData data);\n  Promise<undefined> flush();\n  undefined reset();\n  undefined close();\n\n  static Promise<AudioEncoderSupport> isConfigSupported(AudioEncoderConfig config);\n};",
+        "fragment": "[Exposed=(Window,DedicatedWorker), SecureContext]\ninterface AudioEncoder {\n  constructor(AudioEncoderInit init);\n\n  readonly attribute CodecState state;\n  readonly attribute unsigned long encodeQueueSize;\n  attribute EventHandler ondequeue;\n\n  undefined configure(AudioEncoderConfig config);\n  undefined encode(AudioData data);\n  Promise<undefined> flush();\n  undefined reset();\n  undefined close();\n\n  static Promise<AudioEncoderSupport> isConfigSupported(AudioEncoderConfig config);\n};",
         "type": "interface",
         "name": "AudioEncoder",
         "inheritance": null,
@@ -732,6 +762,21 @@
             "extAttrs": [],
             "special": "",
             "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "ondequeue",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "EventHandler"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
           },
           {
             "type": "operation",
@@ -1035,7 +1080,7 @@
         "partial": false
       },
       "VideoEncoder": {
-        "fragment": "[Exposed=(Window,DedicatedWorker), SecureContext]\ninterface VideoEncoder {\n  constructor(VideoEncoderInit init);\n\n  readonly attribute CodecState state;\n  readonly attribute unsigned long encodeQueueSize;\n\n  undefined configure(VideoEncoderConfig config);\n  undefined encode(VideoFrame frame, optional VideoEncoderEncodeOptions options = {});\n  Promise<undefined> flush();\n  undefined reset();\n  undefined close();\n\n  static Promise<VideoEncoderSupport> isConfigSupported(VideoEncoderConfig config);\n};",
+        "fragment": "[Exposed=(Window,DedicatedWorker), SecureContext]\ninterface VideoEncoder {\n  constructor(VideoEncoderInit init);\n\n  readonly attribute CodecState state;\n  readonly attribute unsigned long encodeQueueSize;\n  attribute EventHandler ondequeue;\n\n  undefined configure(VideoEncoderConfig config);\n  undefined encode(VideoFrame frame, optional VideoEncoderEncodeOptions options = {});\n  Promise<undefined> flush();\n  undefined reset();\n  undefined close();\n\n  static Promise<VideoEncoderSupport> isConfigSupported(VideoEncoderConfig config);\n};",
         "type": "interface",
         "name": "VideoEncoder",
         "inheritance": null,
@@ -1091,6 +1136,21 @@
             "extAttrs": [],
             "special": "",
             "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "ondequeue",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "EventHandler"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
           },
           {
             "type": "operation",
@@ -5291,6 +5351,7 @@
       "AudioDecoder": [
         "AudioDecoderInit",
         "CodecState",
+        "EventHandler",
         "AudioDecoderConfig",
         "EncodedAudioChunk",
         "AudioDecoderSupport"
@@ -5302,6 +5363,7 @@
       "VideoDecoder": [
         "VideoDecoderInit",
         "CodecState",
+        "EventHandler",
         "VideoDecoderConfig",
         "EncodedVideoChunk",
         "VideoDecoderSupport"
@@ -5313,6 +5375,7 @@
       "AudioEncoder": [
         "AudioEncoderInit",
         "CodecState",
+        "EventHandler",
         "AudioEncoderConfig",
         "AudioData",
         "AudioEncoderSupport"
@@ -5327,6 +5390,7 @@
       "VideoEncoder": [
         "VideoEncoderInit",
         "CodecState",
+        "EventHandler",
         "VideoEncoderConfig",
         "VideoFrame",
         "VideoEncoderEncodeOptions",
@@ -5464,6 +5528,7 @@
       ]
     },
     "externalDependencies": [
+      "EventHandler",
       "BufferSource",
       "BitrateMode",
       "DOMException",
@@ -5473,8 +5538,7 @@
       "ReadableStream",
       "PremultiplyAlpha",
       "ColorSpaceConversion",
-      "EventTarget",
-      "EventHandler"
+      "EventTarget"
     ],
     "hasObsoleteIdl": false
   }

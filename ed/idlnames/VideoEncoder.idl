@@ -5,6 +5,7 @@ interface VideoEncoder {
 
   readonly attribute CodecState state;
   readonly attribute unsigned long encodeQueueSize;
+  attribute EventHandler ondequeue;
 
   undefined configure(VideoEncoderConfig config);
   undefined encode(VideoFrame frame, optional VideoEncoderEncodeOptions options = {});

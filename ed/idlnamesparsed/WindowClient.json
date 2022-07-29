@@ -4,7 +4,7 @@
   "defined": {
     "spec": {
       "title": "Service Workers Nightly",
-      "url": "https://www.w3.org/TR/service-workers-1/"
+      "url": "https://www.w3.org/TR/service-workers/"
     },
     "fragment": "[Exposed=ServiceWorker]\ninterface WindowClient : Client {\n  readonly attribute DocumentVisibilityState visibilityState;\n  readonly attribute boolean focused;\n  [SameObject] readonly attribute FrozenArray<USVString> ancestorOrigins;\n  [NewObject] Promise<WindowClient> focus();\n  [NewObject] Promise<WindowClient?> navigate(USVString url);\n};",
     "href": "https://w3c.github.io/ServiceWorker/#windowclient"
@@ -16,7 +16,7 @@
     "defined": {
       "spec": {
         "title": "Service Workers Nightly",
-        "url": "https://www.w3.org/TR/service-workers-1/"
+        "url": "https://www.w3.org/TR/service-workers/"
       },
       "fragment": "[Exposed=ServiceWorker]\ninterface Client {\n  readonly attribute USVString url;\n  readonly attribute FrameType frameType;\n  readonly attribute DOMString id;\n  readonly attribute ClientType type;\n  undefined postMessage(any message, sequence<object> transfer);\n  undefined postMessage(any message, optional StructuredSerializeOptions options = {});\n};",
       "href": "https://w3c.github.io/ServiceWorker/#client"

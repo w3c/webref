@@ -1,4 +1,4 @@
-// Source: Service Workers Nightly (https://www.w3.org/TR/service-workers-1/)
+// Source: Service Workers Nightly (https://www.w3.org/TR/service-workers/)
 [SecureContext, Exposed=(Window,Worker)]
 interface ServiceWorker : EventTarget {
   readonly attribute USVString scriptURL;
@@ -10,5 +10,5 @@ interface ServiceWorker : EventTarget {
   attribute EventHandler onstatechange;
 };
 
-// Source: Service Workers Nightly (https://www.w3.org/TR/service-workers-1/)
+// Source: Service Workers Nightly (https://www.w3.org/TR/service-workers/)
 ServiceWorker includes AbstractWorker;

@@ -1,4 +1,4 @@
-// Source: Service Workers Nightly (https://www.w3.org/TR/service-workers-1/)
+// Source: Service Workers Nightly (https://www.w3.org/TR/service-workers/)
 [SecureContext, Exposed=(Window,Worker)]
 interface Cache {
   [NewObject] Promise<(Response or undefined)> match(RequestInfo request, optional CacheQueryOptions options = {});

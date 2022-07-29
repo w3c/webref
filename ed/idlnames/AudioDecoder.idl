@@ -5,6 +5,7 @@ interface AudioDecoder {
 
   readonly attribute CodecState state;
   readonly attribute unsigned long decodeQueueSize;
+  attribute EventHandler ondequeue;
 
   undefined configure(AudioDecoderConfig config);
   undefined decode(EncodedAudioChunk chunk);

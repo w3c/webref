@@ -4,7 +4,7 @@
   "defined": {
     "spec": {
       "title": "Service Workers Nightly",
-      "url": "https://www.w3.org/TR/service-workers-1/"
+      "url": "https://www.w3.org/TR/service-workers/"
     },
     "fragment": "[SecureContext, Exposed=(Window,Worker)]\ninterface NavigationPreloadManager {\n  Promise<undefined> enable();\n  Promise<undefined> disable();\n  Promise<undefined> setHeaderValue(ByteString value);\n  Promise<NavigationPreloadState> getState();\n};",
     "href": "https://w3c.github.io/ServiceWorker/#navigationpreloadmanager"

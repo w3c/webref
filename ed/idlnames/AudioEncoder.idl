@@ -5,6 +5,7 @@ interface AudioEncoder {
 
   readonly attribute CodecState state;
   readonly attribute unsigned long encodeQueueSize;
+  attribute EventHandler ondequeue;
 
   undefined configure(AudioEncoderConfig config);
   undefined encode(AudioData data);

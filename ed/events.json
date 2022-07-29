@@ -5679,6 +5679,62 @@
     }
   },
   {
+    "type": "dequeue",
+    "targets": [
+      {
+        "target": "AudioDecoder"
+      }
+    ],
+    "interface": "Event",
+    "src": {
+      "format": "IDL eventHandler",
+      "href": null
+    },
+    "href": "https://w3c.github.io/webcodecs/#eventdef-audiodecoder-dequeue"
+  },
+  {
+    "type": "dequeue",
+    "targets": [
+      {
+        "target": "VideoDecoder"
+      }
+    ],
+    "interface": "Event",
+    "src": {
+      "format": "IDL eventHandler",
+      "href": null
+    },
+    "href": "https://w3c.github.io/webcodecs/#eventdef-videodecoder-dequeue"
+  },
+  {
+    "type": "dequeue",
+    "targets": [
+      {
+        "target": "AudioEncoder"
+      }
+    ],
+    "interface": "Event",
+    "src": {
+      "format": "IDL eventHandler",
+      "href": null
+    },
+    "href": "https://w3c.github.io/webcodecs/#eventdef-audioencoder-dequeue"
+  },
+  {
+    "type": "dequeue",
+    "targets": [
+      {
+        "target": "VideoEncoder"
+      }
+    ],
+    "interface": "Event",
+    "src": {
+      "format": "IDL eventHandler",
+      "href": null
+    },
+    "href": "https://w3c.github.io/webcodecs/#eventdef-videoencoder-dequeue"
+  },
+  {
     "src": {
       "format": "fire an event phrasing",
       "href": "https://gpuweb.github.io/gpuweb/#ref-for-concept-event-fire"

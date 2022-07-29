@@ -5,6 +5,7 @@ interface VideoDecoder {
 
   readonly attribute CodecState state;
   readonly attribute unsigned long decodeQueueSize;
+  attribute EventHandler ondequeue;
 
   undefined configure(VideoDecoderConfig config);
   undefined decode(EncodedVideoChunk chunk);
