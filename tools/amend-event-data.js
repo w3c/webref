@@ -338,7 +338,7 @@ const patches = {
       change: { interface: "Event", bubbles: false }
     }
   ],
-  'service-workers-1': [
+  'service-workers': [
     {
       pattern: { href: "https://wicg.github.io/BackgroundSync/spec/#sync" },
       matched: 1,
@@ -423,6 +423,11 @@ const patches = {
       pattern: { type: "change" },
       matched: 1,
       delete: true
+    },
+    {
+      pattern: { type: "dequeue" },
+      matched: 4,
+      change: { interface: 'Event' }
     }
   ],
   // see also https://github.com/KhronosGroup/WebGL/issues/3349
