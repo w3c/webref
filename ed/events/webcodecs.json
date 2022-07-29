@@ -5,6 +5,54 @@
   },
   "events": [
     {
+      "type": "dequeue",
+      "targets": [
+        "AudioDecoder"
+      ],
+      "interface": null,
+      "src": {
+        "format": "IDL eventHandler",
+        "href": null
+      },
+      "href": "https://w3c.github.io/webcodecs/#eventdef-audiodecoder-dequeue"
+    },
+    {
+      "type": "dequeue",
+      "targets": [
+        "VideoDecoder"
+      ],
+      "interface": null,
+      "src": {
+        "format": "IDL eventHandler",
+        "href": null
+      },
+      "href": "https://w3c.github.io/webcodecs/#eventdef-videodecoder-dequeue"
+    },
+    {
+      "type": "dequeue",
+      "targets": [
+        "AudioEncoder"
+      ],
+      "interface": null,
+      "src": {
+        "format": "IDL eventHandler",
+        "href": null
+      },
+      "href": "https://w3c.github.io/webcodecs/#eventdef-audioencoder-dequeue"
+    },
+    {
+      "type": "dequeue",
+      "targets": [
+        "VideoEncoder"
+      ],
+      "interface": null,
+      "src": {
+        "format": "IDL eventHandler",
+        "href": null
+      },
+      "href": "https://w3c.github.io/webcodecs/#eventdef-videoencoder-dequeue"
+    },
+    {
       "type": "change",
       "targets": [
         "ImageTrack"
