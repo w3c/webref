@@ -11,16 +11,16 @@
       "title": "Scroll-linked Animations"
     },
     {
-      "id": "profile-and-date",
-      "href": "https://drafts.csswg.org/scroll-animations-1/#profile-and-date",
-      "level": 2,
-      "title": ", 15 July 2022"
-    },
-    {
       "id": "abstract",
       "href": "https://drafts.csswg.org/scroll-animations-1/#abstract",
       "level": 2,
       "title": "Abstract"
+    },
+    {
+      "id": "sotd",
+      "href": "https://drafts.csswg.org/scroll-animations-1/#sotd",
+      "level": 2,
+      "title": "Status of this document"
     },
     {
       "id": "toc",
@@ -57,157 +57,130 @@
       "number": "1.3"
     },
     {
-      "id": "use-cases",
-      "href": "https://drafts.csswg.org/scroll-animations-1/#use-cases",
+      "id": "scroll-timelines",
+      "href": "https://drafts.csswg.org/scroll-animations-1/#scroll-timelines",
       "level": 2,
-      "title": "Use cases",
+      "title": "Scroll Progress Timelines",
       "number": "2"
     },
     {
-      "id": "scrollable-animation-usecase",
-      "href": "https://drafts.csswg.org/scroll-animations-1/#scrollable-animation-usecase",
+      "id": "scroll-timelines-anonymous",
+      "href": "https://drafts.csswg.org/scroll-animations-1/#scroll-timelines-anonymous",
       "level": 3,
-      "title": "Scrollable picture-story show",
+      "title": "Anonymous Scroll Progress Timelines",
       "number": "2.1"
     },
     {
-      "id": "content-progress-bar-usecase",
-      "href": "https://drafts.csswg.org/scroll-animations-1/#content-progress-bar-usecase",
-      "level": 3,
-      "title": "The content progress bar",
-      "number": "2.2"
-    },
-    {
-      "id": "combination-scroll-and-time-base-animations-usecase",
-      "href": "https://drafts.csswg.org/scroll-animations-1/#combination-scroll-and-time-base-animations-usecase",
-      "level": 3,
-      "title": "Combination scroll and time-base animations",
-      "number": "2.3"
-    },
-    {
-      "id": "movie-show-case-usecase",
-      "href": "https://drafts.csswg.org/scroll-animations-1/#movie-show-case-usecase",
+      "id": "scroll-notation",
+      "href": "https://drafts.csswg.org/scroll-animations-1/#scroll-notation",
       "level": 4,
-      "title": "Photo viewer",
-      "number": "2.3.1"
-    },
-    {
-      "id": "scroll-driven-animations",
-      "href": "https://drafts.csswg.org/scroll-animations-1/#scroll-driven-animations",
-      "level": 2,
-      "title": "Scroll-driven animations",
-      "number": "3"
-    },
-    {
-      "id": "scroll-timelines",
-      "href": "https://drafts.csswg.org/scroll-animations-1/#scroll-timelines",
-      "level": 3,
-      "title": "Scroll timelines",
-      "number": "3.1"
-    },
-    {
-      "id": "scrolldirection-enumeration",
-      "href": "https://drafts.csswg.org/scroll-animations-1/#scrolldirection-enumeration",
-      "level": 4,
-      "title": "The ScrollDirection enumeration",
-      "number": "3.1.1"
+      "title": "The scroll() notation",
+      "number": "2.1.1"
     },
     {
       "id": "scrolltimeline-interface",
       "href": "https://drafts.csswg.org/scroll-animations-1/#scrolltimeline-interface",
       "level": 4,
-      "title": "The ScrollTimeline interface",
-      "number": "3.1.2"
+      "title": "The ScrollTimeline Interface",
+      "number": "2.1.2"
     },
     {
-      "id": "scroll-timeline-offset-section",
-      "href": "https://drafts.csswg.org/scroll-animations-1/#scroll-timeline-offset-section",
-      "level": 4,
-      "title": "Scroll Timeline Offset",
-      "number": "3.1.3"
-    },
-    {
-      "id": "container-based-offset-section",
-      "href": "https://drafts.csswg.org/scroll-animations-1/#container-based-offset-section",
-      "level": 5,
-      "title": "Container-based Offset",
-      "number": "3.1.3.1"
-    },
-    {
-      "id": "element-based-offset-section",
-      "href": "https://drafts.csswg.org/scroll-animations-1/#element-based-offset-section",
-      "level": 5,
-      "title": "Element-based Offset",
-      "number": "3.1.3.2"
-    },
-    {
-      "id": "effective-scroll-offsets-algorithm",
-      "href": "https://drafts.csswg.org/scroll-animations-1/#effective-scroll-offsets-algorithm",
-      "level": 4,
-      "title": "The effective scroll offsets of a ScrollTimeline",
-      "number": "3.1.4"
-    },
-    {
-      "id": "progress-calculation-algorithm",
-      "href": "https://drafts.csswg.org/scroll-animations-1/#progress-calculation-algorithm",
-      "level": 4,
-      "title": "The progress of a ScrollTimeline",
-      "number": "3.1.5"
-    },
-    {
-      "id": "phase-algorithm",
-      "href": "https://drafts.csswg.org/scroll-animations-1/#phase-algorithm",
-      "level": 4,
-      "title": "The phase of a ScrollTimeline",
-      "number": "3.1.6"
-    },
-    {
-      "id": "current-time-algorithm",
-      "href": "https://drafts.csswg.org/scroll-animations-1/#current-time-algorithm",
-      "level": 4,
-      "title": "The current time of a ScrollTimeline",
-      "number": "3.1.7"
-    },
-    {
-      "id": "scroll-timeline-at-rule",
-      "href": "https://drafts.csswg.org/scroll-animations-1/#scroll-timeline-at-rule",
+      "id": "scroll-timelines-named",
+      "href": "https://drafts.csswg.org/scroll-animations-1/#scroll-timelines-named",
       "level": 3,
-      "title": "The @scroll-timeline at-rule",
+      "title": "Named Scroll Progress Timelines",
+      "number": "2.2"
+    },
+    {
+      "id": "scroll-timeline-name",
+      "href": "https://drafts.csswg.org/scroll-animations-1/#scroll-timeline-name",
+      "level": 4,
+      "title": "Naming a Scroll Progress Timeline: the scroll-timeline-name property",
+      "number": "2.2.1"
+    },
+    {
+      "id": "scroll-timeline-axis",
+      "href": "https://drafts.csswg.org/scroll-animations-1/#scroll-timeline-axis",
+      "level": 4,
+      "title": "Axis of a Scroll Progress Timeline: the scroll-timeline-axis property",
+      "number": "2.2.2"
+    },
+    {
+      "id": "scroll-timeline-shorthand",
+      "href": "https://drafts.csswg.org/scroll-animations-1/#scroll-timeline-shorthand",
+      "level": 4,
+      "title": "Scroll Timeline Shorthand: the scroll-timeline shorthand",
+      "number": "2.2.3"
+    },
+    {
+      "id": "view-timelines",
+      "href": "https://drafts.csswg.org/scroll-animations-1/#view-timelines",
+      "level": 2,
+      "title": "View Progress Timelines",
+      "number": "3"
+    },
+    {
+      "id": "view-timelines-anonymous",
+      "href": "https://drafts.csswg.org/scroll-animations-1/#view-timelines-anonymous",
+      "level": 3,
+      "title": "Anonymous View Progress Timelines",
+      "number": "3.1"
+    },
+    {
+      "id": "viewtimeline-interface",
+      "href": "https://drafts.csswg.org/scroll-animations-1/#viewtimeline-interface",
+      "level": 4,
+      "title": "The ViewTimeline Interface",
+      "number": "3.1.1"
+    },
+    {
+      "id": "view-timelines-named",
+      "href": "https://drafts.csswg.org/scroll-animations-1/#view-timelines-named",
+      "level": 3,
+      "title": "Named View Progress Timelines",
       "number": "3.2"
     },
     {
-      "id": "scroll-timeline-descriptors",
-      "href": "https://drafts.csswg.org/scroll-animations-1/#scroll-timeline-descriptors",
+      "id": "view-timeline-name",
+      "href": "https://drafts.csswg.org/scroll-animations-1/#view-timeline-name",
       "level": 4,
-      "title": "Scroll Timeline descriptors",
+      "title": "Naming a View Progress Timeline: the view-timeline-name property",
       "number": "3.2.1"
     },
     {
-      "id": "the-css-scroll-timeline-rule-interface",
-      "href": "https://drafts.csswg.org/scroll-animations-1/#the-css-scroll-timeline-rule-interface",
+      "id": "view-timeline-axis",
+      "href": "https://drafts.csswg.org/scroll-animations-1/#view-timeline-axis",
       "level": 4,
-      "title": "The CSSScrollTimelineRule Interface",
+      "title": "Axis of a View Progress Timeline: the view-timeline-axis property",
       "number": "3.2.2"
     },
     {
-      "id": "timeline-examples",
-      "href": "https://drafts.csswg.org/scroll-animations-1/#timeline-examples",
-      "level": 3,
-      "title": "Examples",
-      "number": "3.3"
+      "id": "view-timeline-inset",
+      "href": "https://drafts.csswg.org/scroll-animations-1/#view-timeline-inset",
+      "level": 4,
+      "title": "Inset of a View Progress Timeline: the view-timeline-inset property",
+      "number": "3.2.3"
+    },
+    {
+      "id": "view-timeline-shorthand",
+      "href": "https://drafts.csswg.org/scroll-animations-1/#view-timeline-shorthand",
+      "level": 4,
+      "title": "View Timeline Shorthand: the view-timeline shorthand",
+      "number": "3.2.4"
+    },
+    {
+      "id": "timeline-scope",
+      "href": "https://drafts.csswg.org/scroll-animations-1/#timeline-scope",
+      "level": 2,
+      "title": "Named Timeline Scoping",
+      "number": "4"
     },
     {
       "id": "avoiding-cycles",
       "href": "https://drafts.csswg.org/scroll-animations-1/#avoiding-cycles",
       "level": 2,
       "title": "Avoiding cycles with layout",
-      "number": "4"
-    },
-    {
-      "id": "appendix-a-considerations-for-security-and-privacy",
-      "href": "https://drafts.csswg.org/scroll-animations-1/#appendix-a-considerations-for-security-and-privacy",
-      "level": 2,
-      "title": "Appendix A. Considerations for Security and Privacy"
+      "number": "5"
     },
     {
       "id": "w3c-conformance",
@@ -286,12 +259,6 @@
       "href": "https://drafts.csswg.org/scroll-animations-1/#property-index",
       "level": 2,
       "title": "Property Index"
-    },
-    {
-      "id": "scroll-timeline-descriptor-table",
-      "href": "https://drafts.csswg.org/scroll-animations-1/#scroll-timeline-descriptor-table",
-      "level": 3,
-      "title": "@scroll-timeline Descriptors"
     },
     {
       "id": "idl-index",
