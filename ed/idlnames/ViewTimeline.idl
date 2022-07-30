@@ -1,0 +1,8 @@
+// Source: Scroll-linked Animations (https://drafts.csswg.org/scroll-animations-1/)
+[Exposed=Window]
+interface ViewTimeline : ScrollTimeline {
+  constructor(optional ViewTimelineOptions options = {});
+  readonly attribute Element subject;
+  readonly attribute CSSNumericValue startOffset;
+  readonly attribute CSSNumericValue endOffset;
+};
