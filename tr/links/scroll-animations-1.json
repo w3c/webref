@@ -13,11 +13,16 @@
     "https://lists.w3.org/Archives/Public/public-css-archive/": [],
     "https://lists.w3.org/Archives/Public/www-style/": [],
     "https://www.w3.org/2021/Process-20211102/": [],
+    "https://drafts.csswg.org/css-animations-2/": [
+      "propdef-animation-timeline"
+    ],
     "https://drafts.csswg.org/web-animations-1/": [
       "concept-animation",
       "timeline",
       "animationtimeline",
-      "timeline-current-time"
+      "animation",
+      "dom-animatable-animate",
+      "dom-animationtimeline-currenttime"
     ],
     "https://www.w3.org/TR/CSS2/": [
       "property-defs"
@@ -27,63 +32,44 @@
     ],
     "https://drafts.csswg.org/css-values-4/": [
       "css-wide-keywords",
-      "typedef-length-percentage",
-      "funcdef-calc",
-      "length-value",
-      "identifier-value",
-      "string-value",
+      "functional-notation",
+      "mult-opt",
       "comb-one",
-      "mult-comma",
+      "identifier-value",
       "comb-any",
-      "number-value",
-      "mult-opt"
-    ],
-    "https://github.com/w3c/csswg-drafts/blob/master/scroll-animations-1/Use%20cases.md": [],
-    "https://github.com/w3c/csswg-drafts/issues/4354": [],
-    "https://drafts.csswg.org/css-animations-1/": [
-      "propdef-animation",
-      "dom-csskeyframesrule-findrule",
-      "csskeyframerule"
-    ],
-    "https://drafts.csswg.org/css-animations-2/": [
-      "propdef-animation-timeline",
-      "typedef-timeline-name"
-    ],
-    "https://drafts.csswg.org/css-writing-modes-4/": [
-      "block-axis",
-      "inline-axis"
-    ],
-    "https://drafts.css-houdini.org/css-typed-om-1/": [
-      "cssnumericvalue",
-      "typedefdef-csskeywordish",
-      "rectify-a-keywordish-value",
-      "csskeywordvalue",
-      "cssstylevalue-match-a-grammar"
-    ],
-    "https://dom.spec.whatwg.org/": [
-      "element",
-      "document",
-      "concept-shadow-tree"
-    ],
-    "https://webidl.spec.whatwg.org/": [
-      "idl-sequence",
-      "Exposed",
-      "idl-frozen-array",
-      "idl-DOMString",
-      "idl-DOMException",
-      "syntaxerror",
-      "idl-double"
+      "px",
+      "mult-comma",
+      "typedef-length-percentage",
+      "mult-num-range"
     ],
     "https://drafts.csswg.org/css-overflow-3/": [
       "scroll-container",
       "scrollport"
     ],
-    "https://drafts.csswg.org/web-animations-2/": [
-      "dom-effecttiming-duration"
+    "https://drafts.csswg.org/css-writing-modes-4/": [
+      "block-axis",
+      "inline-axis",
+      "y-axis",
+      "x-axis",
+      "writing-mode",
+      "valdef-direction-rtl"
+    ],
+    "https://drafts.csswg.org/css-contain-3/": [
+      "propdef-container-name"
+    ],
+    "https://dom.spec.whatwg.org/": [
+      "element",
+      "document"
+    ],
+    "https://webidl.spec.whatwg.org/": [
+      "Exposed"
+    ],
+    "https://drafts.csswg.org/css-align-3/": [
+      "content-distribute",
+      "overflow-scroll-position"
     ],
     "https://drafts.csswg.org/cssom-view-1/": [
-      "dom-document-scrollingelement",
-      "overflow-directions"
+      "dom-document-scrollingelement"
     ],
     "https://html.spec.whatwg.org/": [
       "concept-document-windowconcept-document-window",
@@ -91,32 +77,43 @@
       "current-global-object",
       "dom-animationframeprovider-requestanimationframe"
     ],
-    "https://www.w3.org/TR/cssom-view/": [
-      "css-layout-box"
+    "https://drafts.csswg.org/css-display-3/": [
+      "principal-box"
+    ],
+    "https://drafts.csswg.org/web-animations-2/": [
+      "dom-effecttiming-duration"
+    ],
+    "https://www.w3.org/TR/css-values/": [
+      "value-defs",
+      "percentages"
+    ],
+    "https://www.w3.org/TR/css-cascade/": [
+      "initial-values",
+      "applies-to",
+      "inherited-property",
+      "computed"
+    ],
+    "https://www.w3.org/TR/cssom/": [
+      "serializing-css-values"
+    ],
+    "https://www.w3.org/TR/web-animations/": [
+      "animation-type"
+    ],
+    "https://drafts.csswg.org/css-cascade-5/": [
+      "shorthand-property"
+    ],
+    "https://drafts.css-houdini.org/css-typed-om-1/": [
+      "cssnumericvalue",
+      "cssunitvalue"
+    ],
+    "https://www.w3.org/TR/css-pseudo/": [
+      "generated-content"
+    ],
+    "https://drafts.csswg.org/css-scroll-snap-1/": [
+      "propdef-scroll-padding"
     ],
     "https://drafts.csswg.org/css-box-4/": [
-      "padding-box"
-    ],
-    "https://www.w3.org/TR/web-animations-1/": [
-      "timeline-phase"
-    ],
-    "https://drafts.csswg.org/css-syntax-3/": [
-      "typedef-declaration-list"
-    ],
-    "https://github.com/w3c/csswg-drafts/issues/5167": [],
-    "https://drafts.csswg.org/selectors-4/": [
-      "typedef-id-selector"
-    ],
-    "https://github.com/w3c/csswg-drafts/issues/4338": [],
-    "https://drafts.csswg.org/cssom-1/": [
-      "cssrule",
-      "cssomstring",
-      "serialize-an-identifier",
-      "serialize-a-css-component-value",
-      "serialize-a-selector"
-    ],
-    "https://www.w3.org/TR/security-privacy-questionnaire/": [
-      "questions"
+      "propdef-margin"
     ],
     "https://www.w3.org/TR/CSS21/": [
       "style-sheet",
@@ -125,13 +122,12 @@
     ],
     "https://www.w3.org/Style/CSS/Test/": [],
     "https://lists.w3.org/Archives/Public/public-css-testsuite": [],
-    "https://drafts.csswg.org/css-syntax/": [],
+    "https://www.w3.org/TR/css-align-3/": [],
+    "https://drafts.csswg.org/css-display/": [],
     "https://drafts.csswg.org/css-values-3/": [],
     "https://drafts.csswg.org/css2/": [],
-    "https://drafts.csswg.org/css-animations/": [],
-    "https://drafts.csswg.org/cssom/": [],
     "https://drafts.csswg.org/cssom-view/": [],
     "https://datatracker.ietf.org/doc/html/rfc2119": [],
-    "https://drafts.csswg.org/selectors/": []
+    "https://drafts.csswg.org/css-animations/": []
   }
 }

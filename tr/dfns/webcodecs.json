@@ -215,6 +215,25 @@
       "definedIn": "dt"
     },
     {
+      "id": "saturated",
+      "href": "https://www.w3.org/TR/webcodecs/#saturated",
+      "linkingText": [
+        "saturated"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "definitions",
+        "href": "https://www.w3.org/TR/webcodecs/#definitions",
+        "title": "Definitions",
+        "number": "1"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "codec-processing-model",
       "href": "https://www.w3.org/TR/webcodecs/#codec-processing-model",
       "linkingText": [
@@ -234,10 +253,10 @@
       "definedIn": "heading"
     },
     {
-      "id": "control-thread",
-      "href": "https://www.w3.org/TR/webcodecs/#control-thread",
+      "id": "control-message",
+      "href": "https://www.w3.org/TR/webcodecs/#control-message",
       "linkingText": [
-        "control thread"
+        "control message"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -245,28 +264,9 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "control-thread-and-codec-thread",
-        "href": "https://www.w3.org/TR/webcodecs/#control-thread-and-codec-thread",
-        "title": "Control Thread and Codec Thread",
-        "number": "2.2"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "codec-thread",
-      "href": "https://www.w3.org/TR/webcodecs/#codec-thread",
-      "linkingText": [
-        "codec thread"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "control-thread-and-codec-thread",
-        "href": "https://www.w3.org/TR/webcodecs/#control-thread-and-codec-thread",
-        "title": "Control Thread and Codec Thread",
+        "id": "control-messages",
+        "href": "https://www.w3.org/TR/webcodecs/#control-messages",
+        "title": "Control Messages",
         "number": "2.2"
       },
       "definedIn": "prose"
@@ -283,18 +283,18 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "control-thread-and-codec-thread",
-        "href": "https://www.w3.org/TR/webcodecs/#control-thread-and-codec-thread",
-        "title": "Control Thread and Codec Thread",
+        "id": "control-messages",
+        "href": "https://www.w3.org/TR/webcodecs/#control-messages",
+        "title": "Control Messages",
         "number": "2.2"
       },
       "definedIn": "prose"
     },
     {
-      "id": "control-messages",
-      "href": "https://www.w3.org/TR/webcodecs/#control-messages",
+      "id": "control-message-queue-slot",
+      "href": "https://www.w3.org/TR/webcodecs/#control-message-queue-slot",
       "linkingText": [
-        "control messages"
+        "[[control message queue]]"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -302,9 +302,9 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "control-thread-and-codec-thread",
-        "href": "https://www.w3.org/TR/webcodecs/#control-thread-and-codec-thread",
-        "title": "Control Thread and Codec Thread",
+        "id": "control-messages",
+        "href": "https://www.w3.org/TR/webcodecs/#control-messages",
+        "title": "Control Messages",
         "number": "2.2"
       },
       "definedIn": "prose"
@@ -322,9 +322,9 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "control-thread-and-codec-thread",
-        "href": "https://www.w3.org/TR/webcodecs/#control-thread-and-codec-thread",
-        "title": "Control Thread and Codec Thread",
+        "id": "control-messages",
+        "href": "https://www.w3.org/TR/webcodecs/#control-messages",
+        "title": "Control Messages",
         "number": "2.2"
       },
       "definedIn": "prose"
@@ -342,18 +342,18 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "control-thread-and-codec-thread",
-        "href": "https://www.w3.org/TR/webcodecs/#control-thread-and-codec-thread",
-        "title": "Control Thread and Codec Thread",
+        "id": "control-messages",
+        "href": "https://www.w3.org/TR/webcodecs/#control-messages",
+        "title": "Control Messages",
         "number": "2.2"
       },
       "definedIn": "prose"
     },
     {
-      "id": "codec-processing-loop",
-      "href": "https://www.w3.org/TR/webcodecs/#codec-processing-loop",
+      "id": "message-queue-blocked",
+      "href": "https://www.w3.org/TR/webcodecs/#message-queue-blocked",
       "linkingText": [
-        "codec processing loop"
+        "[[message queue blocked]]"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -361,10 +361,86 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "control-thread-and-codec-thread",
-        "href": "https://www.w3.org/TR/webcodecs/#control-thread-and-codec-thread",
-        "title": "Control Thread and Codec Thread",
+        "id": "control-messages",
+        "href": "https://www.w3.org/TR/webcodecs/#control-messages",
+        "title": "Control Messages",
         "number": "2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "process-the-control-message-queue",
+      "href": "https://www.w3.org/TR/webcodecs/#process-the-control-message-queue",
+      "linkingText": [
+        "Process the control message queue"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "control-messages",
+        "href": "https://www.w3.org/TR/webcodecs/#control-messages",
+        "title": "Control Messages",
+        "number": "2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "codec-work-queue",
+      "href": "https://www.w3.org/TR/webcodecs/#codec-work-queue",
+      "linkingText": [
+        "[[codec work queue]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "codec-work-parallel-queue",
+        "href": "https://www.w3.org/TR/webcodecs/#codec-work-parallel-queue",
+        "title": "Codec Work Parallel Queue",
+        "number": "2.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "codec-implementation",
+      "href": "https://www.w3.org/TR/webcodecs/#codec-implementation",
+      "linkingText": [
+        "[[codec implementation]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "codec-work-parallel-queue",
+        "href": "https://www.w3.org/TR/webcodecs/#codec-work-parallel-queue",
+        "title": "Codec Work Parallel Queue",
+        "number": "2.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "codec-task-source",
+      "href": "https://www.w3.org/TR/webcodecs/#codec-task-source",
+      "linkingText": [
+        "codec task source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "codec-work-parallel-queue",
+        "href": "https://www.w3.org/TR/webcodecs/#codec-work-parallel-queue",
+        "title": "Codec Work Parallel Queue",
+        "number": "2.3"
       },
       "definedIn": "prose"
     },
@@ -574,10 +650,94 @@
       "definedIn": "pre"
     },
     {
+      "id": "dom-audiodecoder-control-message-queue-slot",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-audiodecoder-control-message-queue-slot",
+      "linkingText": [
+        "[[control message queue]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioDecoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audiodecoder-internal-slots",
+        "href": "https://www.w3.org/TR/webcodecs/#audiodecoder-internal-slots",
+        "title": "Internal Slots",
+        "number": "3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-audiodecoder-message-queue-blocked-slot",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-audiodecoder-message-queue-blocked-slot",
+      "linkingText": [
+        "[[message queue blocked]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioDecoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audiodecoder-internal-slots",
+        "href": "https://www.w3.org/TR/webcodecs/#audiodecoder-internal-slots",
+        "title": "Internal Slots",
+        "number": "3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "dom-audiodecoder-codec-implementation-slot",
       "href": "https://www.w3.org/TR/webcodecs/#dom-audiodecoder-codec-implementation-slot",
       "linkingText": [
         "[[codec implementation]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioDecoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audiodecoder-internal-slots",
+        "href": "https://www.w3.org/TR/webcodecs/#audiodecoder-internal-slots",
+        "title": "Internal Slots",
+        "number": "3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-audiodecoder-codec-work-queue-slot",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-audiodecoder-codec-work-queue-slot",
+      "linkingText": [
+        "[[codec work queue]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioDecoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audiodecoder-internal-slots",
+        "href": "https://www.w3.org/TR/webcodecs/#audiodecoder-internal-slots",
+        "title": "Internal Slots",
+        "number": "3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-audiodecoder-codec-saturated-slot",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-audiodecoder-codec-saturated-slot",
+      "linkingText": [
+        "[[codec saturated]]"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -721,6 +881,27 @@
       "definedIn": "dt"
     },
     {
+      "id": "dom-audiodecoder-dequeue-event-scheduled-slot",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-audiodecoder-dequeue-event-scheduled-slot",
+      "linkingText": [
+        "[[dequeue event scheduled]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioDecoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audiodecoder-internal-slots",
+        "href": "https://www.w3.org/TR/webcodecs/#audiodecoder-internal-slots",
+        "title": "Internal Slots",
+        "number": "3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "dom-audiodecoder-audiodecoder",
       "href": "https://www.w3.org/TR/webcodecs/#dom-audiodecoder-audiodecoder",
       "linkingText": [
@@ -785,6 +966,48 @@
       "definedIn": "dt"
     },
     {
+      "id": "dom-audiodecoder-ondequeue",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-audiodecoder-ondequeue",
+      "linkingText": [
+        "ondequeue"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioDecoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audiodecoder-attributes",
+        "href": "https://www.w3.org/TR/webcodecs/#audiodecoder-attributes",
+        "title": "Attributes",
+        "number": "3.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "eventdef-audiodecoder-dequeue",
+      "href": "https://www.w3.org/TR/webcodecs/#eventdef-audiodecoder-dequeue",
+      "linkingText": [
+        "dequeue"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "AudioDecoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audiodecoder-event-summary",
+        "href": "https://www.w3.org/TR/webcodecs/#audiodecoder-event-summary",
+        "title": "Event Summary",
+        "number": "3.4"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "dom-audiodecoder-configure",
       "href": "https://www.w3.org/TR/webcodecs/#dom-audiodecoder-configure",
       "linkingText": [
@@ -801,7 +1024,7 @@
         "id": "audiodecoder-methods",
         "href": "https://www.w3.org/TR/webcodecs/#audiodecoder-methods",
         "title": "Methods",
-        "number": "3.4"
+        "number": "3.5"
       },
       "definedIn": "dt"
     },
@@ -822,7 +1045,7 @@
         "id": "audiodecoder-methods",
         "href": "https://www.w3.org/TR/webcodecs/#audiodecoder-methods",
         "title": "Methods",
-        "number": "3.4"
+        "number": "3.5"
       },
       "definedIn": "dt"
     },
@@ -843,7 +1066,7 @@
         "id": "audiodecoder-methods",
         "href": "https://www.w3.org/TR/webcodecs/#audiodecoder-methods",
         "title": "Methods",
-        "number": "3.4"
+        "number": "3.5"
       },
       "definedIn": "dt"
     },
@@ -864,7 +1087,7 @@
         "id": "audiodecoder-methods",
         "href": "https://www.w3.org/TR/webcodecs/#audiodecoder-methods",
         "title": "Methods",
-        "number": "3.4"
+        "number": "3.5"
       },
       "definedIn": "dt"
     },
@@ -885,7 +1108,7 @@
         "id": "audiodecoder-methods",
         "href": "https://www.w3.org/TR/webcodecs/#audiodecoder-methods",
         "title": "Methods",
-        "number": "3.4"
+        "number": "3.5"
       },
       "definedIn": "dt"
     },
@@ -906,7 +1129,28 @@
         "id": "audiodecoder-methods",
         "href": "https://www.w3.org/TR/webcodecs/#audiodecoder-methods",
         "title": "Methods",
-        "number": "3.4"
+        "number": "3.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "audiodecoder-schedule-dequeue-event",
+      "href": "https://www.w3.org/TR/webcodecs/#audiodecoder-schedule-dequeue-event",
+      "linkingText": [
+        "Schedule Dequeue Event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "AudioDecoder"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "audiodecoder-algorithms",
+        "href": "https://www.w3.org/TR/webcodecs/#audiodecoder-algorithms",
+        "title": "Algorithms",
+        "number": "3.6"
       },
       "definedIn": "dt"
     },
@@ -925,7 +1169,7 @@
         "id": "audiodecoder-algorithms",
         "href": "https://www.w3.org/TR/webcodecs/#audiodecoder-algorithms",
         "title": "Algorithms",
-        "number": "3.5"
+        "number": "3.6"
       },
       "definedIn": "dt"
     },
@@ -944,7 +1188,7 @@
         "id": "audiodecoder-algorithms",
         "href": "https://www.w3.org/TR/webcodecs/#audiodecoder-algorithms",
         "title": "Algorithms",
-        "number": "3.5"
+        "number": "3.6"
       },
       "definedIn": "dt"
     },
@@ -963,7 +1207,7 @@
         "id": "audiodecoder-algorithms",
         "href": "https://www.w3.org/TR/webcodecs/#audiodecoder-algorithms",
         "title": "Algorithms",
-        "number": "3.5"
+        "number": "3.6"
       },
       "definedIn": "dt"
     },
@@ -1173,10 +1417,94 @@
       "definedIn": "pre"
     },
     {
+      "id": "dom-videodecoder-control-message-queue-slot",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videodecoder-control-message-queue-slot",
+      "linkingText": [
+        "[[control message queue]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoDecoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videodecoder-internal-slots",
+        "href": "https://www.w3.org/TR/webcodecs/#videodecoder-internal-slots",
+        "title": "Internal Slots",
+        "number": "4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videodecoder-message-queue-blocked-slot",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videodecoder-message-queue-blocked-slot",
+      "linkingText": [
+        "[[message queue blocked]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoDecoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videodecoder-internal-slots",
+        "href": "https://www.w3.org/TR/webcodecs/#videodecoder-internal-slots",
+        "title": "Internal Slots",
+        "number": "4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "dom-videodecoder-codec-implementation-slot",
       "href": "https://www.w3.org/TR/webcodecs/#dom-videodecoder-codec-implementation-slot",
       "linkingText": [
         "[[codec implementation]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoDecoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videodecoder-internal-slots",
+        "href": "https://www.w3.org/TR/webcodecs/#videodecoder-internal-slots",
+        "title": "Internal Slots",
+        "number": "4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videodecoder-codec-work-queue-slot",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videodecoder-codec-work-queue-slot",
+      "linkingText": [
+        "[[codec work queue]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoDecoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videodecoder-internal-slots",
+        "href": "https://www.w3.org/TR/webcodecs/#videodecoder-internal-slots",
+        "title": "Internal Slots",
+        "number": "4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videodecoder-codec-saturated-slot",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videodecoder-codec-saturated-slot",
+      "linkingText": [
+        "[[codec saturated]]"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -1341,6 +1669,27 @@
       "definedIn": "dt"
     },
     {
+      "id": "dom-videodecoder-dequeue-event-scheduled-slot",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videodecoder-dequeue-event-scheduled-slot",
+      "linkingText": [
+        "[[dequeue event scheduled]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoDecoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videodecoder-internal-slots",
+        "href": "https://www.w3.org/TR/webcodecs/#videodecoder-internal-slots",
+        "title": "Internal Slots",
+        "number": "4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "dom-videodecoder-videodecoder",
       "href": "https://www.w3.org/TR/webcodecs/#dom-videodecoder-videodecoder",
       "linkingText": [
@@ -1405,6 +1754,48 @@
       "definedIn": "dt"
     },
     {
+      "id": "dom-videodecoder-ondequeue",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videodecoder-ondequeue",
+      "linkingText": [
+        "ondequeue"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoDecoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videodecoder-attributes",
+        "href": "https://www.w3.org/TR/webcodecs/#videodecoder-attributes",
+        "title": "Attributes",
+        "number": "4.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "eventdef-videodecoder-dequeue",
+      "href": "https://www.w3.org/TR/webcodecs/#eventdef-videodecoder-dequeue",
+      "linkingText": [
+        "dequeue"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "VideoDecoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videodecoder-event-summary",
+        "href": "https://www.w3.org/TR/webcodecs/#videodecoder-event-summary",
+        "title": "Event Summary",
+        "number": "4.4"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "dom-videodecoder-configure",
       "href": "https://www.w3.org/TR/webcodecs/#dom-videodecoder-configure",
       "linkingText": [
@@ -1421,7 +1812,7 @@
         "id": "videodecoder-methods",
         "href": "https://www.w3.org/TR/webcodecs/#videodecoder-methods",
         "title": "Methods",
-        "number": "4.4"
+        "number": "4.5"
       },
       "definedIn": "dt"
     },
@@ -1442,7 +1833,7 @@
         "id": "videodecoder-methods",
         "href": "https://www.w3.org/TR/webcodecs/#videodecoder-methods",
         "title": "Methods",
-        "number": "4.4"
+        "number": "4.5"
       },
       "definedIn": "dt"
     },
@@ -1463,7 +1854,7 @@
         "id": "videodecoder-methods",
         "href": "https://www.w3.org/TR/webcodecs/#videodecoder-methods",
         "title": "Methods",
-        "number": "4.4"
+        "number": "4.5"
       },
       "definedIn": "dt"
     },
@@ -1484,7 +1875,7 @@
         "id": "videodecoder-methods",
         "href": "https://www.w3.org/TR/webcodecs/#videodecoder-methods",
         "title": "Methods",
-        "number": "4.4"
+        "number": "4.5"
       },
       "definedIn": "dt"
     },
@@ -1505,7 +1896,7 @@
         "id": "videodecoder-methods",
         "href": "https://www.w3.org/TR/webcodecs/#videodecoder-methods",
         "title": "Methods",
-        "number": "4.4"
+        "number": "4.5"
       },
       "definedIn": "dt"
     },
@@ -1526,7 +1917,28 @@
         "id": "videodecoder-methods",
         "href": "https://www.w3.org/TR/webcodecs/#videodecoder-methods",
         "title": "Methods",
-        "number": "4.4"
+        "number": "4.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "videodecoder-schedule-dequeue-event",
+      "href": "https://www.w3.org/TR/webcodecs/#videodecoder-schedule-dequeue-event",
+      "linkingText": [
+        "Schedule Dequeue Event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "VideoDecoder"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "videodecoder-algorithms",
+        "href": "https://www.w3.org/TR/webcodecs/#videodecoder-algorithms",
+        "title": "Algorithms",
+        "number": "4.6"
       },
       "definedIn": "dt"
     },
@@ -1545,7 +1957,7 @@
         "id": "videodecoder-algorithms",
         "href": "https://www.w3.org/TR/webcodecs/#videodecoder-algorithms",
         "title": "Algorithms",
-        "number": "4.5"
+        "number": "4.6"
       },
       "definedIn": "dt"
     },
@@ -1564,7 +1976,7 @@
         "id": "videodecoder-algorithms",
         "href": "https://www.w3.org/TR/webcodecs/#videodecoder-algorithms",
         "title": "Algorithms",
-        "number": "4.5"
+        "number": "4.6"
       },
       "definedIn": "dt"
     },
@@ -1583,7 +1995,7 @@
         "id": "videodecoder-algorithms",
         "href": "https://www.w3.org/TR/webcodecs/#videodecoder-algorithms",
         "title": "Algorithms",
-        "number": "4.5"
+        "number": "4.6"
       },
       "definedIn": "dt"
     },
@@ -1814,10 +2226,94 @@
       "definedIn": "pre"
     },
     {
+      "id": "dom-audioencoder-control-message-queue-slot",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-audioencoder-control-message-queue-slot",
+      "linkingText": [
+        "[[control message queue]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioEncoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audioencoder-internal-slots",
+        "href": "https://www.w3.org/TR/webcodecs/#audioencoder-internal-slots",
+        "title": "Internal Slots",
+        "number": "5.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-audioencoder-message-queue-blocked-slot",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-audioencoder-message-queue-blocked-slot",
+      "linkingText": [
+        "[[message queue blocked]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioEncoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audioencoder-internal-slots",
+        "href": "https://www.w3.org/TR/webcodecs/#audioencoder-internal-slots",
+        "title": "Internal Slots",
+        "number": "5.1"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "dom-audioencoder-codec-implementation-slot",
       "href": "https://www.w3.org/TR/webcodecs/#dom-audioencoder-codec-implementation-slot",
       "linkingText": [
         "[[codec implementation]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioEncoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audioencoder-internal-slots",
+        "href": "https://www.w3.org/TR/webcodecs/#audioencoder-internal-slots",
+        "title": "Internal Slots",
+        "number": "5.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-audioencoder-codec-work-queue-slot",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-audioencoder-codec-work-queue-slot",
+      "linkingText": [
+        "[[codec work queue]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioEncoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audioencoder-internal-slots",
+        "href": "https://www.w3.org/TR/webcodecs/#audioencoder-internal-slots",
+        "title": "Internal Slots",
+        "number": "5.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-audioencoder-codec-saturated-slot",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-audioencoder-codec-saturated-slot",
+      "linkingText": [
+        "[[codec saturated]]"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -1982,6 +2478,27 @@
       "definedIn": "dt"
     },
     {
+      "id": "dom-audioencoder-dequeue-event-scheduled-slot",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-audioencoder-dequeue-event-scheduled-slot",
+      "linkingText": [
+        "[[dequeue event scheduled]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioEncoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audioencoder-internal-slots",
+        "href": "https://www.w3.org/TR/webcodecs/#audioencoder-internal-slots",
+        "title": "Internal Slots",
+        "number": "5.1"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "dom-audioencoder-audioencoder",
       "href": "https://www.w3.org/TR/webcodecs/#dom-audioencoder-audioencoder",
       "linkingText": [
@@ -2046,6 +2563,48 @@
       "definedIn": "dt"
     },
     {
+      "id": "dom-audioencoder-ondequeue",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-audioencoder-ondequeue",
+      "linkingText": [
+        "ondequeue"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioEncoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audioencoder-attributes",
+        "href": "https://www.w3.org/TR/webcodecs/#audioencoder-attributes",
+        "title": "Attributes",
+        "number": "5.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "eventdef-audioencoder-dequeue",
+      "href": "https://www.w3.org/TR/webcodecs/#eventdef-audioencoder-dequeue",
+      "linkingText": [
+        "dequeue"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "AudioEncoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audioencoder-event-summary",
+        "href": "https://www.w3.org/TR/webcodecs/#audioencoder-event-summary",
+        "title": "Event Summary",
+        "number": "5.4"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "dom-audioencoder-configure",
       "href": "https://www.w3.org/TR/webcodecs/#dom-audioencoder-configure",
       "linkingText": [
@@ -2062,7 +2621,7 @@
         "id": "audioencoder-methods",
         "href": "https://www.w3.org/TR/webcodecs/#audioencoder-methods",
         "title": "Methods",
-        "number": "5.4"
+        "number": "5.5"
       },
       "definedIn": "dt"
     },
@@ -2083,7 +2642,7 @@
         "id": "audioencoder-methods",
         "href": "https://www.w3.org/TR/webcodecs/#audioencoder-methods",
         "title": "Methods",
-        "number": "5.4"
+        "number": "5.5"
       },
       "definedIn": "dt"
     },
@@ -2104,7 +2663,7 @@
         "id": "audioencoder-methods",
         "href": "https://www.w3.org/TR/webcodecs/#audioencoder-methods",
         "title": "Methods",
-        "number": "5.4"
+        "number": "5.5"
       },
       "definedIn": "dt"
     },
@@ -2125,7 +2684,7 @@
         "id": "audioencoder-methods",
         "href": "https://www.w3.org/TR/webcodecs/#audioencoder-methods",
         "title": "Methods",
-        "number": "5.4"
+        "number": "5.5"
       },
       "definedIn": "dt"
     },
@@ -2146,7 +2705,7 @@
         "id": "audioencoder-methods",
         "href": "https://www.w3.org/TR/webcodecs/#audioencoder-methods",
         "title": "Methods",
-        "number": "5.4"
+        "number": "5.5"
       },
       "definedIn": "dt"
     },
@@ -2167,7 +2726,28 @@
         "id": "audioencoder-methods",
         "href": "https://www.w3.org/TR/webcodecs/#audioencoder-methods",
         "title": "Methods",
-        "number": "5.4"
+        "number": "5.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "audioencoder-schedule-dequeue-event",
+      "href": "https://www.w3.org/TR/webcodecs/#audioencoder-schedule-dequeue-event",
+      "linkingText": [
+        "Schedule Dequeue Event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "AudioEncoder"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "audioencoder-algorithms",
+        "href": "https://www.w3.org/TR/webcodecs/#audioencoder-algorithms",
+        "title": "Algorithms",
+        "number": "5.6"
       },
       "definedIn": "dt"
     },
@@ -2186,7 +2766,7 @@
         "id": "audioencoder-algorithms",
         "href": "https://www.w3.org/TR/webcodecs/#audioencoder-algorithms",
         "title": "Algorithms",
-        "number": "5.5"
+        "number": "5.6"
       },
       "definedIn": "dt"
     },
@@ -2205,7 +2785,7 @@
         "id": "audioencoder-algorithms",
         "href": "https://www.w3.org/TR/webcodecs/#audioencoder-algorithms",
         "title": "Algorithms",
-        "number": "5.5"
+        "number": "5.6"
       },
       "definedIn": "dt"
     },
@@ -2224,7 +2804,7 @@
         "id": "audioencoder-algorithms",
         "href": "https://www.w3.org/TR/webcodecs/#audioencoder-algorithms",
         "title": "Algorithms",
-        "number": "5.5"
+        "number": "5.6"
       },
       "definedIn": "dt"
     },
@@ -2243,7 +2823,7 @@
         "id": "encoded-audio-chunk-metadata",
         "href": "https://www.w3.org/TR/webcodecs/#encoded-audio-chunk-metadata",
         "title": "EncodedAudioChunkMetadata",
-        "number": "5.6"
+        "number": "5.7"
       },
       "definedIn": "pre"
     },
@@ -2264,7 +2844,7 @@
         "id": "encoded-audio-chunk-metadata",
         "href": "https://www.w3.org/TR/webcodecs/#encoded-audio-chunk-metadata",
         "title": "EncodedAudioChunkMetadata",
-        "number": "5.6"
+        "number": "5.7"
       },
       "definedIn": "dt"
     },
@@ -2518,10 +3098,94 @@
       "definedIn": "pre"
     },
     {
+      "id": "dom-videoencoder-control-message-queue-slot",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videoencoder-control-message-queue-slot",
+      "linkingText": [
+        "[[control message queue]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoEncoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videoencoder-internal-slots",
+        "href": "https://www.w3.org/TR/webcodecs/#videoencoder-internal-slots",
+        "title": "Internal Slots",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videoencoder-message-queue-blocked-slot",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videoencoder-message-queue-blocked-slot",
+      "linkingText": [
+        "[[message queue blocked]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoEncoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videoencoder-internal-slots",
+        "href": "https://www.w3.org/TR/webcodecs/#videoencoder-internal-slots",
+        "title": "Internal Slots",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "dom-videoencoder-codec-implementation-slot",
       "href": "https://www.w3.org/TR/webcodecs/#dom-videoencoder-codec-implementation-slot",
       "linkingText": [
         "[[codec implementation]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoEncoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videoencoder-internal-slots",
+        "href": "https://www.w3.org/TR/webcodecs/#videoencoder-internal-slots",
+        "title": "Internal Slots",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videoencoder-codec-work-queue-slot",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videoencoder-codec-work-queue-slot",
+      "linkingText": [
+        "[[codec work queue]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoEncoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videoencoder-internal-slots",
+        "href": "https://www.w3.org/TR/webcodecs/#videoencoder-internal-slots",
+        "title": "Internal Slots",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videoencoder-codec-saturated-slot",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videoencoder-codec-saturated-slot",
+      "linkingText": [
+        "[[codec saturated]]"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -2686,6 +3350,27 @@
       "definedIn": "dt"
     },
     {
+      "id": "dom-videoencoder-dequeue-event-scheduled-slot",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videoencoder-dequeue-event-scheduled-slot",
+      "linkingText": [
+        "[[dequeue event scheduled]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoEncoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videoencoder-internal-slots",
+        "href": "https://www.w3.org/TR/webcodecs/#videoencoder-internal-slots",
+        "title": "Internal Slots",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "dom-videoencoder-videoencoder",
       "href": "https://www.w3.org/TR/webcodecs/#dom-videoencoder-videoencoder",
       "linkingText": [
@@ -2750,6 +3435,48 @@
       "definedIn": "dt"
     },
     {
+      "id": "dom-videoencoder-ondequeue",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videoencoder-ondequeue",
+      "linkingText": [
+        "ondequeue"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoEncoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videoencoder-attributes",
+        "href": "https://www.w3.org/TR/webcodecs/#videoencoder-attributes",
+        "title": "Attributes",
+        "number": "6.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "eventdef-videoencoder-dequeue",
+      "href": "https://www.w3.org/TR/webcodecs/#eventdef-videoencoder-dequeue",
+      "linkingText": [
+        "dequeue"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "VideoEncoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videoencoder-event-summary",
+        "href": "https://www.w3.org/TR/webcodecs/#videoencoder-event-summary",
+        "title": "Event Summary",
+        "number": "6.4"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "dom-videoencoder-configure",
       "href": "https://www.w3.org/TR/webcodecs/#dom-videoencoder-configure",
       "linkingText": [
@@ -2766,7 +3493,7 @@
         "id": "videoencoder-methods",
         "href": "https://www.w3.org/TR/webcodecs/#videoencoder-methods",
         "title": "Methods",
-        "number": "6.4"
+        "number": "6.5"
       },
       "definedIn": "dt"
     },
@@ -2788,7 +3515,7 @@
         "id": "videoencoder-methods",
         "href": "https://www.w3.org/TR/webcodecs/#videoencoder-methods",
         "title": "Methods",
-        "number": "6.4"
+        "number": "6.5"
       },
       "definedIn": "dt"
     },
@@ -2809,7 +3536,7 @@
         "id": "videoencoder-methods",
         "href": "https://www.w3.org/TR/webcodecs/#videoencoder-methods",
         "title": "Methods",
-        "number": "6.4"
+        "number": "6.5"
       },
       "definedIn": "dt"
     },
@@ -2830,7 +3557,7 @@
         "id": "videoencoder-methods",
         "href": "https://www.w3.org/TR/webcodecs/#videoencoder-methods",
         "title": "Methods",
-        "number": "6.4"
+        "number": "6.5"
       },
       "definedIn": "dt"
     },
@@ -2851,7 +3578,7 @@
         "id": "videoencoder-methods",
         "href": "https://www.w3.org/TR/webcodecs/#videoencoder-methods",
         "title": "Methods",
-        "number": "6.4"
+        "number": "6.5"
       },
       "definedIn": "dt"
     },
@@ -2872,7 +3599,28 @@
         "id": "videoencoder-methods",
         "href": "https://www.w3.org/TR/webcodecs/#videoencoder-methods",
         "title": "Methods",
-        "number": "6.4"
+        "number": "6.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "videoencoder-schedule-dequeue-event",
+      "href": "https://www.w3.org/TR/webcodecs/#videoencoder-schedule-dequeue-event",
+      "linkingText": [
+        "Schedule Dequeue Event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "VideoEncoder"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "videoencoder-algorithms",
+        "href": "https://www.w3.org/TR/webcodecs/#videoencoder-algorithms",
+        "title": "Algorithms",
+        "number": "6.6"
       },
       "definedIn": "dt"
     },
@@ -2891,7 +3639,7 @@
         "id": "videoencoder-algorithms",
         "href": "https://www.w3.org/TR/webcodecs/#videoencoder-algorithms",
         "title": "Algorithms",
-        "number": "6.5"
+        "number": "6.6"
       },
       "definedIn": "dt"
     },
@@ -2910,7 +3658,7 @@
         "id": "videoencoder-algorithms",
         "href": "https://www.w3.org/TR/webcodecs/#videoencoder-algorithms",
         "title": "Algorithms",
-        "number": "6.5"
+        "number": "6.6"
       },
       "definedIn": "dt"
     },
@@ -2929,7 +3677,7 @@
         "id": "videoencoder-algorithms",
         "href": "https://www.w3.org/TR/webcodecs/#videoencoder-algorithms",
         "title": "Algorithms",
-        "number": "6.5"
+        "number": "6.6"
       },
       "definedIn": "dt"
     },
@@ -2948,7 +3696,7 @@
         "id": "encoded-video-chunk-metadata",
         "href": "https://www.w3.org/TR/webcodecs/#encoded-video-chunk-metadata",
         "title": "EncodedVideoChunkMetadata",
-        "number": "6.6"
+        "number": "6.7"
       },
       "definedIn": "pre"
     },
@@ -2967,7 +3715,7 @@
         "id": "encoded-video-chunk-metadata",
         "href": "https://www.w3.org/TR/webcodecs/#encoded-video-chunk-metadata",
         "title": "EncodedVideoChunkMetadata",
-        "number": "6.6"
+        "number": "6.7"
       },
       "definedIn": "pre"
     },
@@ -2988,7 +3736,7 @@
         "id": "encoded-video-chunk-metadata",
         "href": "https://www.w3.org/TR/webcodecs/#encoded-video-chunk-metadata",
         "title": "EncodedVideoChunkMetadata",
-        "number": "6.6"
+        "number": "6.7"
       },
       "definedIn": "dt"
     },
@@ -3009,7 +3757,7 @@
         "id": "encoded-video-chunk-metadata",
         "href": "https://www.w3.org/TR/webcodecs/#encoded-video-chunk-metadata",
         "title": "EncodedVideoChunkMetadata",
-        "number": "6.6"
+        "number": "6.7"
       },
       "definedIn": "dt"
     },
@@ -3030,7 +3778,7 @@
         "id": "encoded-video-chunk-metadata",
         "href": "https://www.w3.org/TR/webcodecs/#encoded-video-chunk-metadata",
         "title": "EncodedVideoChunkMetadata",
-        "number": "6.6"
+        "number": "6.7"
       },
       "definedIn": "dt"
     },
@@ -3051,7 +3799,7 @@
         "id": "encoded-video-chunk-metadata",
         "href": "https://www.w3.org/TR/webcodecs/#encoded-video-chunk-metadata",
         "title": "EncodedVideoChunkMetadata",
-        "number": "6.6"
+        "number": "6.7"
       },
       "definedIn": "dt"
     },
@@ -9372,6 +10120,69 @@
         "number": "10.2"
       },
       "definedIn": "pre"
+    },
+    {
+      "id": "dom-imagedecoder-control-message-queue-slot",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-imagedecoder-control-message-queue-slot",
+      "linkingText": [
+        "[[control message queue]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ImageDecoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoder-internal-slots",
+        "href": "https://www.w3.org/TR/webcodecs/#imagedecoder-internal-slots",
+        "title": "Internal Slots",
+        "number": "10.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagedecoder-message-queue-blocked-slot",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-imagedecoder-message-queue-blocked-slot",
+      "linkingText": [
+        "[[message queue blocked]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ImageDecoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoder-internal-slots",
+        "href": "https://www.w3.org/TR/webcodecs/#imagedecoder-internal-slots",
+        "title": "Internal Slots",
+        "number": "10.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagedecoder-codec-work-queue-slot",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-imagedecoder-codec-work-queue-slot",
+      "linkingText": [
+        "[[codec work queue]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ImageDecoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoder-internal-slots",
+        "href": "https://www.w3.org/TR/webcodecs/#imagedecoder-internal-slots",
+        "title": "Internal Slots",
+        "number": "10.2.1"
+      },
+      "definedIn": "dt"
     },
     {
       "id": "dom-imagedecoder-imagetracklist-slot",

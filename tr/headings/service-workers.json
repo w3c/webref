@@ -1,1241 +1,1241 @@
 {
   "spec": {
     "title": "Service Workers",
-    "url": "https://www.w3.org/TR/service-workers-1/"
+    "url": "https://www.w3.org/TR/service-workers/"
   },
   "headings": [
     {
       "id": "title",
-      "href": "https://www.w3.org/TR/service-workers-1/#title",
+      "href": "https://www.w3.org/TR/service-workers/#title",
       "level": 1,
       "title": "Service Workers"
     },
     {
       "id": "abstract",
-      "href": "https://www.w3.org/TR/service-workers-1/#abstract",
+      "href": "https://www.w3.org/TR/service-workers/#abstract",
       "level": 2,
       "title": "Abstract"
     },
     {
       "id": "sotd",
-      "href": "https://www.w3.org/TR/service-workers-1/#sotd",
+      "href": "https://www.w3.org/TR/service-workers/#sotd",
       "level": 2,
       "title": "Status of this document"
     },
     {
       "id": "toc",
-      "href": "https://www.w3.org/TR/service-workers-1/#toc",
+      "href": "https://www.w3.org/TR/service-workers/#toc",
       "level": 2,
       "title": "Table of Contents"
     },
     {
       "id": "motivations",
-      "href": "https://www.w3.org/TR/service-workers-1/#motivations",
+      "href": "https://www.w3.org/TR/service-workers/#motivations",
       "level": 2,
       "title": "Motivations",
       "number": "1"
     },
     {
       "id": "model",
-      "href": "https://www.w3.org/TR/service-workers-1/#model",
+      "href": "https://www.w3.org/TR/service-workers/#model",
       "level": 2,
       "title": "Model",
       "number": "2"
     },
     {
       "id": "service-worker-concept",
-      "href": "https://www.w3.org/TR/service-workers-1/#service-worker-concept",
+      "href": "https://www.w3.org/TR/service-workers/#service-worker-concept",
       "level": 3,
       "title": "Service Worker",
       "number": "2.1"
     },
     {
       "id": "service-worker-lifetime",
-      "href": "https://www.w3.org/TR/service-workers-1/#service-worker-lifetime",
+      "href": "https://www.w3.org/TR/service-workers/#service-worker-lifetime",
       "level": 4,
       "title": "Lifetime",
       "number": "2.1.1"
     },
     {
       "id": "service-worker-events",
-      "href": "https://www.w3.org/TR/service-workers-1/#service-worker-events",
+      "href": "https://www.w3.org/TR/service-workers/#service-worker-events",
       "level": 4,
       "title": "Events",
       "number": "2.1.2"
     },
     {
       "id": "service-worker-timing",
-      "href": "https://www.w3.org/TR/service-workers-1/#service-worker-timing",
+      "href": "https://www.w3.org/TR/service-workers/#service-worker-timing",
       "level": 3,
       "title": "Service Worker Timing",
       "number": "2.2"
     },
     {
       "id": "service-worker-registration-concept",
-      "href": "https://www.w3.org/TR/service-workers-1/#service-worker-registration-concept",
+      "href": "https://www.w3.org/TR/service-workers/#service-worker-registration-concept",
       "level": 3,
       "title": "Service Worker Registration",
       "number": "2.3"
     },
     {
       "id": "service-worker-registration-lifetime",
-      "href": "https://www.w3.org/TR/service-workers-1/#service-worker-registration-lifetime",
+      "href": "https://www.w3.org/TR/service-workers/#service-worker-registration-lifetime",
       "level": 4,
       "title": "Lifetime",
       "number": "2.3.1"
     },
     {
       "id": "service-worker-client-concept",
-      "href": "https://www.w3.org/TR/service-workers-1/#service-worker-client-concept",
+      "href": "https://www.w3.org/TR/service-workers/#service-worker-client-concept",
       "level": 3,
       "title": "Service Worker Client",
       "number": "2.4"
     },
     {
       "id": "control-and-use",
-      "href": "https://www.w3.org/TR/service-workers-1/#control-and-use",
+      "href": "https://www.w3.org/TR/service-workers/#control-and-use",
       "level": 3,
       "title": "Control and Use",
       "number": "2.5"
     },
     {
       "id": "control-and-use-window-client",
-      "href": "https://www.w3.org/TR/service-workers-1/#control-and-use-window-client",
+      "href": "https://www.w3.org/TR/service-workers/#control-and-use-window-client",
       "level": 4,
       "title": "The window client case",
       "number": "2.5.1"
     },
     {
       "id": "control-and-use-worker-client",
-      "href": "https://www.w3.org/TR/service-workers-1/#control-and-use-worker-client",
+      "href": "https://www.w3.org/TR/service-workers/#control-and-use-worker-client",
       "level": 4,
       "title": "The worker client case",
       "number": "2.5.2"
     },
     {
       "id": "task-sources",
-      "href": "https://www.w3.org/TR/service-workers-1/#task-sources",
+      "href": "https://www.w3.org/TR/service-workers/#task-sources",
       "level": 3,
       "title": "Task Sources",
       "number": "2.6"
     },
     {
       "id": "user-agent-shutdown",
-      "href": "https://www.w3.org/TR/service-workers-1/#user-agent-shutdown",
+      "href": "https://www.w3.org/TR/service-workers/#user-agent-shutdown",
       "level": 3,
       "title": "User Agent Shutdown",
       "number": "2.7"
     },
     {
       "id": "document-context",
-      "href": "https://www.w3.org/TR/service-workers-1/#document-context",
+      "href": "https://www.w3.org/TR/service-workers/#document-context",
       "level": 2,
       "title": "Client Context",
       "number": "3"
     },
     {
       "id": "serviceworker-interface",
-      "href": "https://www.w3.org/TR/service-workers-1/#serviceworker-interface",
+      "href": "https://www.w3.org/TR/service-workers/#serviceworker-interface",
       "level": 3,
       "title": "ServiceWorker",
       "number": "3.1"
     },
     {
       "id": "service-worker-creation",
-      "href": "https://www.w3.org/TR/service-workers-1/#service-worker-creation",
+      "href": "https://www.w3.org/TR/service-workers/#service-worker-creation",
       "level": 4,
       "title": "Getting ServiceWorker instances",
       "number": "3.1.1"
     },
     {
       "id": "service-worker-url",
-      "href": "https://www.w3.org/TR/service-workers-1/#service-worker-url",
+      "href": "https://www.w3.org/TR/service-workers/#service-worker-url",
       "level": 4,
       "title": "scriptURL",
       "number": "3.1.2"
     },
     {
       "id": "service-worker-state",
-      "href": "https://www.w3.org/TR/service-workers-1/#service-worker-state",
+      "href": "https://www.w3.org/TR/service-workers/#service-worker-state",
       "level": 4,
       "title": "state",
       "number": "3.1.3"
     },
     {
       "id": "service-worker-postmessage",
-      "href": "https://www.w3.org/TR/service-workers-1/#service-worker-postmessage",
+      "href": "https://www.w3.org/TR/service-workers/#service-worker-postmessage",
       "level": 4,
       "title": "postMessage(message, transfer)",
       "number": "3.1.4"
     },
     {
       "id": "service-worker-postmessage-options",
-      "href": "https://www.w3.org/TR/service-workers-1/#service-worker-postmessage-options",
+      "href": "https://www.w3.org/TR/service-workers/#service-worker-postmessage-options",
       "level": 4,
       "title": "postMessage(message, options)",
       "number": "3.1.5"
     },
     {
       "id": "service-worker-event-handler",
-      "href": "https://www.w3.org/TR/service-workers-1/#service-worker-event-handler",
+      "href": "https://www.w3.org/TR/service-workers/#service-worker-event-handler",
       "level": 4,
       "title": "Event handler",
       "number": "3.1.6"
     },
     {
       "id": "serviceworkerregistration-interface",
-      "href": "https://www.w3.org/TR/service-workers-1/#serviceworkerregistration-interface",
+      "href": "https://www.w3.org/TR/service-workers/#serviceworkerregistration-interface",
       "level": 3,
       "title": "ServiceWorkerRegistration",
       "number": "3.2"
     },
     {
       "id": "service-worker-registration-creation",
-      "href": "https://www.w3.org/TR/service-workers-1/#service-worker-registration-creation",
+      "href": "https://www.w3.org/TR/service-workers/#service-worker-registration-creation",
       "level": 4,
       "title": "Getting ServiceWorkerRegistration instances",
       "number": "3.2.1"
     },
     {
       "id": "navigator-service-worker-installing",
-      "href": "https://www.w3.org/TR/service-workers-1/#navigator-service-worker-installing",
+      "href": "https://www.w3.org/TR/service-workers/#navigator-service-worker-installing",
       "level": 4,
       "title": "installing",
       "number": "3.2.2"
     },
     {
       "id": "navigator-service-worker-waiting",
-      "href": "https://www.w3.org/TR/service-workers-1/#navigator-service-worker-waiting",
+      "href": "https://www.w3.org/TR/service-workers/#navigator-service-worker-waiting",
       "level": 4,
       "title": "waiting",
       "number": "3.2.3"
     },
     {
       "id": "navigator-service-worker-active",
-      "href": "https://www.w3.org/TR/service-workers-1/#navigator-service-worker-active",
+      "href": "https://www.w3.org/TR/service-workers/#navigator-service-worker-active",
       "level": 4,
       "title": "active",
       "number": "3.2.4"
     },
     {
       "id": "service-worker-registration-navigationpreload",
-      "href": "https://www.w3.org/TR/service-workers-1/#service-worker-registration-navigationpreload",
+      "href": "https://www.w3.org/TR/service-workers/#service-worker-registration-navigationpreload",
       "level": 4,
       "title": "navigationPreload",
       "number": "3.2.5"
     },
     {
       "id": "service-worker-registration-scope",
-      "href": "https://www.w3.org/TR/service-workers-1/#service-worker-registration-scope",
+      "href": "https://www.w3.org/TR/service-workers/#service-worker-registration-scope",
       "level": 4,
       "title": "scope",
       "number": "3.2.6"
     },
     {
       "id": "service-worker-registration-updateviacache",
-      "href": "https://www.w3.org/TR/service-workers-1/#service-worker-registration-updateviacache",
+      "href": "https://www.w3.org/TR/service-workers/#service-worker-registration-updateviacache",
       "level": 4,
       "title": "updateViaCache",
       "number": "3.2.7"
     },
     {
       "id": "service-worker-registration-update",
-      "href": "https://www.w3.org/TR/service-workers-1/#service-worker-registration-update",
+      "href": "https://www.w3.org/TR/service-workers/#service-worker-registration-update",
       "level": 4,
       "title": "update()",
       "number": "3.2.8"
     },
     {
       "id": "navigator-service-worker-unregister",
-      "href": "https://www.w3.org/TR/service-workers-1/#navigator-service-worker-unregister",
+      "href": "https://www.w3.org/TR/service-workers/#navigator-service-worker-unregister",
       "level": 4,
       "title": "unregister()",
       "number": "3.2.9"
     },
     {
       "id": "service-worker-registration-event-handler",
-      "href": "https://www.w3.org/TR/service-workers-1/#service-worker-registration-event-handler",
+      "href": "https://www.w3.org/TR/service-workers/#service-worker-registration-event-handler",
       "level": 4,
       "title": "Event handler",
       "number": "3.2.10"
     },
     {
       "id": "navigator-serviceworker",
-      "href": "https://www.w3.org/TR/service-workers-1/#navigator-serviceworker",
+      "href": "https://www.w3.org/TR/service-workers/#navigator-serviceworker",
       "level": 3,
       "title": "navigator.serviceWorker",
       "number": "3.3"
     },
     {
       "id": "serviceworkercontainer-interface",
-      "href": "https://www.w3.org/TR/service-workers-1/#serviceworkercontainer-interface",
+      "href": "https://www.w3.org/TR/service-workers/#serviceworkercontainer-interface",
       "level": 3,
       "title": "ServiceWorkerContainer",
       "number": "3.4"
     },
     {
       "id": "navigator-service-worker-controller",
-      "href": "https://www.w3.org/TR/service-workers-1/#navigator-service-worker-controller",
+      "href": "https://www.w3.org/TR/service-workers/#navigator-service-worker-controller",
       "level": 4,
       "title": "controller",
       "number": "3.4.1"
     },
     {
       "id": "navigator-service-worker-ready",
-      "href": "https://www.w3.org/TR/service-workers-1/#navigator-service-worker-ready",
+      "href": "https://www.w3.org/TR/service-workers/#navigator-service-worker-ready",
       "level": 4,
       "title": "ready",
       "number": "3.4.2"
     },
     {
       "id": "navigator-service-worker-register",
-      "href": "https://www.w3.org/TR/service-workers-1/#navigator-service-worker-register",
+      "href": "https://www.w3.org/TR/service-workers/#navigator-service-worker-register",
       "level": 4,
       "title": "register(scriptURL, options)",
       "number": "3.4.3"
     },
     {
       "id": "navigator-service-worker-getRegistration",
-      "href": "https://www.w3.org/TR/service-workers-1/#navigator-service-worker-getRegistration",
+      "href": "https://www.w3.org/TR/service-workers/#navigator-service-worker-getRegistration",
       "level": 4,
       "title": "getRegistration(clientURL)",
       "number": "3.4.4"
     },
     {
       "id": "navigator-service-worker-getRegistrations",
-      "href": "https://www.w3.org/TR/service-workers-1/#navigator-service-worker-getRegistrations",
+      "href": "https://www.w3.org/TR/service-workers/#navigator-service-worker-getRegistrations",
       "level": 4,
       "title": "getRegistrations()",
       "number": "3.4.5"
     },
     {
       "id": "navigator-service-worker-startMessages",
-      "href": "https://www.w3.org/TR/service-workers-1/#navigator-service-worker-startMessages",
+      "href": "https://www.w3.org/TR/service-workers/#navigator-service-worker-startMessages",
       "level": 4,
       "title": "startMessages()",
       "number": "3.4.6"
     },
     {
       "id": "service-worker-container-event-handlers",
-      "href": "https://www.w3.org/TR/service-workers-1/#service-worker-container-event-handlers",
+      "href": "https://www.w3.org/TR/service-workers/#service-worker-container-event-handlers",
       "level": 4,
       "title": "Event handlers",
       "number": "3.4.7"
     },
     {
       "id": "document-context-events",
-      "href": "https://www.w3.org/TR/service-workers-1/#document-context-events",
+      "href": "https://www.w3.org/TR/service-workers/#document-context-events",
       "level": 3,
       "title": "Events",
       "number": "3.5"
     },
     {
       "id": "navigation-preload-manager",
-      "href": "https://www.w3.org/TR/service-workers-1/#navigation-preload-manager",
+      "href": "https://www.w3.org/TR/service-workers/#navigation-preload-manager",
       "level": 3,
       "title": "NavigationPreloadManager",
       "number": "3.6"
     },
     {
       "id": "navigation-preload-manager-enable",
-      "href": "https://www.w3.org/TR/service-workers-1/#navigation-preload-manager-enable",
+      "href": "https://www.w3.org/TR/service-workers/#navigation-preload-manager-enable",
       "level": 4,
       "title": "enable()",
       "number": "3.6.1"
     },
     {
       "id": "navigation-preload-manager-disable",
-      "href": "https://www.w3.org/TR/service-workers-1/#navigation-preload-manager-disable",
+      "href": "https://www.w3.org/TR/service-workers/#navigation-preload-manager-disable",
       "level": 4,
       "title": "disable()",
       "number": "3.6.2"
     },
     {
       "id": "navigation-preload-manager-setheadervalue",
-      "href": "https://www.w3.org/TR/service-workers-1/#navigation-preload-manager-setheadervalue",
+      "href": "https://www.w3.org/TR/service-workers/#navigation-preload-manager-setheadervalue",
       "level": 4,
       "title": "setHeaderValue(value)",
       "number": "3.6.3"
     },
     {
       "id": "navigation-preload-manager-getstate",
-      "href": "https://www.w3.org/TR/service-workers-1/#navigation-preload-manager-getstate",
+      "href": "https://www.w3.org/TR/service-workers/#navigation-preload-manager-getstate",
       "level": 4,
       "title": "getState()",
       "number": "3.6.4"
     },
     {
       "id": "execution-context",
-      "href": "https://www.w3.org/TR/service-workers-1/#execution-context",
+      "href": "https://www.w3.org/TR/service-workers/#execution-context",
       "level": 2,
       "title": "Execution Context",
       "number": "4"
     },
     {
       "id": "serviceworkerglobalscope-interface",
-      "href": "https://www.w3.org/TR/service-workers-1/#serviceworkerglobalscope-interface",
+      "href": "https://www.w3.org/TR/service-workers/#serviceworkerglobalscope-interface",
       "level": 3,
       "title": "ServiceWorkerGlobalScope",
       "number": "4.1"
     },
     {
       "id": "service-worker-global-scope-clients",
-      "href": "https://www.w3.org/TR/service-workers-1/#service-worker-global-scope-clients",
+      "href": "https://www.w3.org/TR/service-workers/#service-worker-global-scope-clients",
       "level": 4,
       "title": "clients",
       "number": "4.1.1"
     },
     {
       "id": "service-worker-global-scope-registration",
-      "href": "https://www.w3.org/TR/service-workers-1/#service-worker-global-scope-registration",
+      "href": "https://www.w3.org/TR/service-workers/#service-worker-global-scope-registration",
       "level": 4,
       "title": "registration",
       "number": "4.1.2"
     },
     {
       "id": "service-worker-global-scope-serviceworker",
-      "href": "https://www.w3.org/TR/service-workers-1/#service-worker-global-scope-serviceworker",
+      "href": "https://www.w3.org/TR/service-workers/#service-worker-global-scope-serviceworker",
       "level": 4,
       "title": "serviceWorker",
       "number": "4.1.3"
     },
     {
       "id": "service-worker-global-scope-skipwaiting",
-      "href": "https://www.w3.org/TR/service-workers-1/#service-worker-global-scope-skipwaiting",
+      "href": "https://www.w3.org/TR/service-workers/#service-worker-global-scope-skipwaiting",
       "level": 4,
       "title": "skipWaiting()",
       "number": "4.1.4"
     },
     {
       "id": "service-worker-global-scope-event-handlers",
-      "href": "https://www.w3.org/TR/service-workers-1/#service-worker-global-scope-event-handlers",
+      "href": "https://www.w3.org/TR/service-workers/#service-worker-global-scope-event-handlers",
       "level": 4,
       "title": "Event handlers",
       "number": "4.1.5"
     },
     {
       "id": "client-interface",
-      "href": "https://www.w3.org/TR/service-workers-1/#client-interface",
+      "href": "https://www.w3.org/TR/service-workers/#client-interface",
       "level": 3,
       "title": "Client",
       "number": "4.2"
     },
     {
       "id": "client-url",
-      "href": "https://www.w3.org/TR/service-workers-1/#client-url",
+      "href": "https://www.w3.org/TR/service-workers/#client-url",
       "level": 4,
       "title": "url",
       "number": "4.2.1"
     },
     {
       "id": "client-frametype",
-      "href": "https://www.w3.org/TR/service-workers-1/#client-frametype",
+      "href": "https://www.w3.org/TR/service-workers/#client-frametype",
       "level": 4,
       "title": "frameType",
       "number": "4.2.2"
     },
     {
       "id": "client-id",
-      "href": "https://www.w3.org/TR/service-workers-1/#client-id",
+      "href": "https://www.w3.org/TR/service-workers/#client-id",
       "level": 4,
       "title": "id",
       "number": "4.2.3"
     },
     {
       "id": "client-type",
-      "href": "https://www.w3.org/TR/service-workers-1/#client-type",
+      "href": "https://www.w3.org/TR/service-workers/#client-type",
       "level": 4,
       "title": "type",
       "number": "4.2.4"
     },
     {
       "id": "client-postmessage",
-      "href": "https://www.w3.org/TR/service-workers-1/#client-postmessage",
+      "href": "https://www.w3.org/TR/service-workers/#client-postmessage",
       "level": 4,
       "title": "postMessage(message, transfer)",
       "number": "4.2.5"
     },
     {
       "id": "client-postmessage-options",
-      "href": "https://www.w3.org/TR/service-workers-1/#client-postmessage-options",
+      "href": "https://www.w3.org/TR/service-workers/#client-postmessage-options",
       "level": 4,
       "title": "postMessage(message, options)",
       "number": "4.2.6"
     },
     {
       "id": "client-visibilitystate",
-      "href": "https://www.w3.org/TR/service-workers-1/#client-visibilitystate",
+      "href": "https://www.w3.org/TR/service-workers/#client-visibilitystate",
       "level": 4,
       "title": "visibilityState",
       "number": "4.2.7"
     },
     {
       "id": "client-focused",
-      "href": "https://www.w3.org/TR/service-workers-1/#client-focused",
+      "href": "https://www.w3.org/TR/service-workers/#client-focused",
       "level": 4,
       "title": "focused",
       "number": "4.2.8"
     },
     {
       "id": "client-ancestororigins",
-      "href": "https://www.w3.org/TR/service-workers-1/#client-ancestororigins",
+      "href": "https://www.w3.org/TR/service-workers/#client-ancestororigins",
       "level": 4,
       "title": "ancestorOrigins",
       "number": "4.2.9"
     },
     {
       "id": "client-focus",
-      "href": "https://www.w3.org/TR/service-workers-1/#client-focus",
+      "href": "https://www.w3.org/TR/service-workers/#client-focus",
       "level": 4,
       "title": "focus()",
       "number": "4.2.10"
     },
     {
       "id": "client-navigate",
-      "href": "https://www.w3.org/TR/service-workers-1/#client-navigate",
+      "href": "https://www.w3.org/TR/service-workers/#client-navigate",
       "level": 4,
       "title": "navigate(url)",
       "number": "4.2.11"
     },
     {
       "id": "clients-interface",
-      "href": "https://www.w3.org/TR/service-workers-1/#clients-interface",
+      "href": "https://www.w3.org/TR/service-workers/#clients-interface",
       "level": 3,
       "title": "Clients",
       "number": "4.3"
     },
     {
       "id": "clients-get",
-      "href": "https://www.w3.org/TR/service-workers-1/#clients-get",
+      "href": "https://www.w3.org/TR/service-workers/#clients-get",
       "level": 4,
       "title": "get(id)",
       "number": "4.3.1"
     },
     {
       "id": "clients-matchall",
-      "href": "https://www.w3.org/TR/service-workers-1/#clients-matchall",
+      "href": "https://www.w3.org/TR/service-workers/#clients-matchall",
       "level": 4,
       "title": "matchAll(options)",
       "number": "4.3.2"
     },
     {
       "id": "clients-openwindow",
-      "href": "https://www.w3.org/TR/service-workers-1/#clients-openwindow",
+      "href": "https://www.w3.org/TR/service-workers/#clients-openwindow",
       "level": 4,
       "title": "openWindow(url)",
       "number": "4.3.3"
     },
     {
       "id": "clients-claim",
-      "href": "https://www.w3.org/TR/service-workers-1/#clients-claim",
+      "href": "https://www.w3.org/TR/service-workers/#clients-claim",
       "level": 4,
       "title": "claim()",
       "number": "4.3.4"
     },
     {
       "id": "extendableevent-interface",
-      "href": "https://www.w3.org/TR/service-workers-1/#extendableevent-interface",
+      "href": "https://www.w3.org/TR/service-workers/#extendableevent-interface",
       "level": 3,
       "title": "ExtendableEvent",
       "number": "4.4"
     },
     {
       "id": "wait-until-method",
-      "href": "https://www.w3.org/TR/service-workers-1/#wait-until-method",
+      "href": "https://www.w3.org/TR/service-workers/#wait-until-method",
       "level": 4,
       "title": "event.waitUntil(f)",
       "number": "4.4.1"
     },
     {
       "id": "fetchevent-interface",
-      "href": "https://www.w3.org/TR/service-workers-1/#fetchevent-interface",
+      "href": "https://www.w3.org/TR/service-workers/#fetchevent-interface",
       "level": 3,
       "title": "FetchEvent",
       "number": "4.5"
     },
     {
       "id": "fetch-event-request",
-      "href": "https://www.w3.org/TR/service-workers-1/#fetch-event-request",
+      "href": "https://www.w3.org/TR/service-workers/#fetch-event-request",
       "level": 4,
       "title": "event.request",
       "number": "4.5.1"
     },
     {
       "id": "fetch-event-preloadresponse",
-      "href": "https://www.w3.org/TR/service-workers-1/#fetch-event-preloadresponse",
+      "href": "https://www.w3.org/TR/service-workers/#fetch-event-preloadresponse",
       "level": 4,
       "title": "event.preloadResponse",
       "number": "4.5.2"
     },
     {
       "id": "fetch-event-clientid",
-      "href": "https://www.w3.org/TR/service-workers-1/#fetch-event-clientid",
+      "href": "https://www.w3.org/TR/service-workers/#fetch-event-clientid",
       "level": 4,
       "title": "event.clientId",
       "number": "4.5.3"
     },
     {
       "id": "fetch-event-resultingclientid",
-      "href": "https://www.w3.org/TR/service-workers-1/#fetch-event-resultingclientid",
+      "href": "https://www.w3.org/TR/service-workers/#fetch-event-resultingclientid",
       "level": 4,
       "title": "event.resultingClientId",
       "number": "4.5.4"
     },
     {
       "id": "fetch-event-replacesClientId",
-      "href": "https://www.w3.org/TR/service-workers-1/#fetch-event-replacesClientId",
+      "href": "https://www.w3.org/TR/service-workers/#fetch-event-replacesClientId",
       "level": 4,
       "title": "event.replacesClientId",
       "number": "4.5.5"
     },
     {
       "id": "fetch-event-handled",
-      "href": "https://www.w3.org/TR/service-workers-1/#fetch-event-handled",
+      "href": "https://www.w3.org/TR/service-workers/#fetch-event-handled",
       "level": 4,
       "title": "event.handled",
       "number": "4.5.6"
     },
     {
       "id": "fetch-event-respondwith",
-      "href": "https://www.w3.org/TR/service-workers-1/#fetch-event-respondwith",
+      "href": "https://www.w3.org/TR/service-workers/#fetch-event-respondwith",
       "level": 4,
       "title": "event.respondWith(r)",
       "number": "4.5.7"
     },
     {
       "id": "extendablemessageevent-interface",
-      "href": "https://www.w3.org/TR/service-workers-1/#extendablemessageevent-interface",
+      "href": "https://www.w3.org/TR/service-workers/#extendablemessageevent-interface",
       "level": 3,
       "title": "ExtendableMessageEvent",
       "number": "4.6"
     },
     {
       "id": "extendablemessage-event-data",
-      "href": "https://www.w3.org/TR/service-workers-1/#extendablemessage-event-data",
+      "href": "https://www.w3.org/TR/service-workers/#extendablemessage-event-data",
       "level": 4,
       "title": "event.data",
       "number": "4.6.1"
     },
     {
       "id": "extendablemessage-event-origin",
-      "href": "https://www.w3.org/TR/service-workers-1/#extendablemessage-event-origin",
+      "href": "https://www.w3.org/TR/service-workers/#extendablemessage-event-origin",
       "level": 4,
       "title": "event.origin",
       "number": "4.6.2"
     },
     {
       "id": "extendablemessage-event-lasteventid",
-      "href": "https://www.w3.org/TR/service-workers-1/#extendablemessage-event-lasteventid",
+      "href": "https://www.w3.org/TR/service-workers/#extendablemessage-event-lasteventid",
       "level": 4,
       "title": "event.lastEventId",
       "number": "4.6.3"
     },
     {
       "id": "extendablemessage-event-source",
-      "href": "https://www.w3.org/TR/service-workers-1/#extendablemessage-event-source",
+      "href": "https://www.w3.org/TR/service-workers/#extendablemessage-event-source",
       "level": 4,
       "title": "event.source",
       "number": "4.6.4"
     },
     {
       "id": "extendablemessage-event-ports",
-      "href": "https://www.w3.org/TR/service-workers-1/#extendablemessage-event-ports",
+      "href": "https://www.w3.org/TR/service-workers/#extendablemessage-event-ports",
       "level": 4,
       "title": "event.ports",
       "number": "4.6.5"
     },
     {
       "id": "execution-context-events",
-      "href": "https://www.w3.org/TR/service-workers-1/#execution-context-events",
+      "href": "https://www.w3.org/TR/service-workers/#execution-context-events",
       "level": 3,
       "title": "Events",
       "number": "4.7"
     },
     {
       "id": "cache-objects",
-      "href": "https://www.w3.org/TR/service-workers-1/#cache-objects",
+      "href": "https://www.w3.org/TR/service-workers/#cache-objects",
       "level": 2,
       "title": "Caches",
       "number": "5"
     },
     {
       "id": "cache-constructs",
-      "href": "https://www.w3.org/TR/service-workers-1/#cache-constructs",
+      "href": "https://www.w3.org/TR/service-workers/#cache-constructs",
       "level": 3,
       "title": "Constructs",
       "number": "5.1"
     },
     {
       "id": "cache-lifetimes",
-      "href": "https://www.w3.org/TR/service-workers-1/#cache-lifetimes",
+      "href": "https://www.w3.org/TR/service-workers/#cache-lifetimes",
       "level": 3,
       "title": "Understanding Cache Lifetimes",
       "number": "5.2"
     },
     {
       "id": "self-caches",
-      "href": "https://www.w3.org/TR/service-workers-1/#self-caches",
+      "href": "https://www.w3.org/TR/service-workers/#self-caches",
       "level": 3,
       "title": "self.caches",
       "number": "5.3"
     },
     {
       "id": "global-caches",
-      "href": "https://www.w3.org/TR/service-workers-1/#global-caches",
+      "href": "https://www.w3.org/TR/service-workers/#global-caches",
       "level": 4,
       "title": "caches",
       "number": "5.3.1"
     },
     {
       "id": "cache-interface",
-      "href": "https://www.w3.org/TR/service-workers-1/#cache-interface",
+      "href": "https://www.w3.org/TR/service-workers/#cache-interface",
       "level": 3,
       "title": "Cache",
       "number": "5.4"
     },
     {
       "id": "cache-match",
-      "href": "https://www.w3.org/TR/service-workers-1/#cache-match",
+      "href": "https://www.w3.org/TR/service-workers/#cache-match",
       "level": 4,
       "title": "match(request, options)",
       "number": "5.4.1"
     },
     {
       "id": "cache-matchall",
-      "href": "https://www.w3.org/TR/service-workers-1/#cache-matchall",
+      "href": "https://www.w3.org/TR/service-workers/#cache-matchall",
       "level": 4,
       "title": "matchAll(request, options)",
       "number": "5.4.2"
     },
     {
       "id": "cache-add",
-      "href": "https://www.w3.org/TR/service-workers-1/#cache-add",
+      "href": "https://www.w3.org/TR/service-workers/#cache-add",
       "level": 4,
       "title": "add(request)",
       "number": "5.4.3"
     },
     {
       "id": "cache-addAll",
-      "href": "https://www.w3.org/TR/service-workers-1/#cache-addAll",
+      "href": "https://www.w3.org/TR/service-workers/#cache-addAll",
       "level": 4,
       "title": "addAll(requests)",
       "number": "5.4.4"
     },
     {
       "id": "cache-put",
-      "href": "https://www.w3.org/TR/service-workers-1/#cache-put",
+      "href": "https://www.w3.org/TR/service-workers/#cache-put",
       "level": 4,
       "title": "put(request, response)",
       "number": "5.4.5"
     },
     {
       "id": "cache-delete",
-      "href": "https://www.w3.org/TR/service-workers-1/#cache-delete",
+      "href": "https://www.w3.org/TR/service-workers/#cache-delete",
       "level": 4,
       "title": "delete(request, options)",
       "number": "5.4.6"
     },
     {
       "id": "cache-keys",
-      "href": "https://www.w3.org/TR/service-workers-1/#cache-keys",
+      "href": "https://www.w3.org/TR/service-workers/#cache-keys",
       "level": 4,
       "title": "keys(request, options)",
       "number": "5.4.7"
     },
     {
       "id": "cachestorage-interface",
-      "href": "https://www.w3.org/TR/service-workers-1/#cachestorage-interface",
+      "href": "https://www.w3.org/TR/service-workers/#cachestorage-interface",
       "level": 3,
       "title": "CacheStorage",
       "number": "5.5"
     },
     {
       "id": "cache-storage-match",
-      "href": "https://www.w3.org/TR/service-workers-1/#cache-storage-match",
+      "href": "https://www.w3.org/TR/service-workers/#cache-storage-match",
       "level": 4,
       "title": "match(request, options)",
       "number": "5.5.1"
     },
     {
       "id": "cache-storage-has",
-      "href": "https://www.w3.org/TR/service-workers-1/#cache-storage-has",
+      "href": "https://www.w3.org/TR/service-workers/#cache-storage-has",
       "level": 4,
       "title": "has(cacheName)",
       "number": "5.5.2"
     },
     {
       "id": "cache-storage-open",
-      "href": "https://www.w3.org/TR/service-workers-1/#cache-storage-open",
+      "href": "https://www.w3.org/TR/service-workers/#cache-storage-open",
       "level": 4,
       "title": "open(cacheName)",
       "number": "5.5.3"
     },
     {
       "id": "cache-storage-delete",
-      "href": "https://www.w3.org/TR/service-workers-1/#cache-storage-delete",
+      "href": "https://www.w3.org/TR/service-workers/#cache-storage-delete",
       "level": 4,
       "title": "delete(cacheName)",
       "number": "5.5.4"
     },
     {
       "id": "cache-storage-keys",
-      "href": "https://www.w3.org/TR/service-workers-1/#cache-storage-keys",
+      "href": "https://www.w3.org/TR/service-workers/#cache-storage-keys",
       "level": 4,
       "title": "keys()",
       "number": "5.5.5"
     },
     {
       "id": "security-considerations",
-      "href": "https://www.w3.org/TR/service-workers-1/#security-considerations",
+      "href": "https://www.w3.org/TR/service-workers/#security-considerations",
       "level": 2,
       "title": "Security Considerations",
       "number": "6"
     },
     {
       "id": "secure-context",
-      "href": "https://www.w3.org/TR/service-workers-1/#secure-context",
+      "href": "https://www.w3.org/TR/service-workers/#secure-context",
       "level": 3,
       "title": "Secure Context",
       "number": "6.1"
     },
     {
       "id": "content-security-policy",
-      "href": "https://www.w3.org/TR/service-workers-1/#content-security-policy",
+      "href": "https://www.w3.org/TR/service-workers/#content-security-policy",
       "level": 3,
       "title": "Content Security Policy",
       "number": "6.2"
     },
     {
       "id": "origin-relativity",
-      "href": "https://www.w3.org/TR/service-workers-1/#origin-relativity",
+      "href": "https://www.w3.org/TR/service-workers/#origin-relativity",
       "level": 3,
       "title": "Origin Relativity",
       "number": "6.3"
     },
     {
       "id": "origin-restriction",
-      "href": "https://www.w3.org/TR/service-workers-1/#origin-restriction",
+      "href": "https://www.w3.org/TR/service-workers/#origin-restriction",
       "level": 4,
       "title": "Origin restriction",
       "number": "6.3.1"
     },
     {
       "id": "importscripts",
-      "href": "https://www.w3.org/TR/service-workers-1/#importscripts",
+      "href": "https://www.w3.org/TR/service-workers/#importscripts",
       "level": 4,
       "title": "importScripts(urls)",
       "number": "6.3.2"
     },
     {
       "id": "cross-origin-resources",
-      "href": "https://www.w3.org/TR/service-workers-1/#cross-origin-resources",
+      "href": "https://www.w3.org/TR/service-workers/#cross-origin-resources",
       "level": 3,
       "title": "Cross-Origin Resources and CORS",
       "number": "6.4"
     },
     {
       "id": "path-restriction",
-      "href": "https://www.w3.org/TR/service-workers-1/#path-restriction",
+      "href": "https://www.w3.org/TR/service-workers/#path-restriction",
       "level": 3,
       "title": "Path restriction",
       "number": "6.5"
     },
     {
       "id": "script-request",
-      "href": "https://www.w3.org/TR/service-workers-1/#script-request",
+      "href": "https://www.w3.org/TR/service-workers/#script-request",
       "level": 3,
       "title": "Service worker script request",
       "number": "6.6"
     },
     {
       "id": "implementer-concerns",
-      "href": "https://www.w3.org/TR/service-workers-1/#implementer-concerns",
+      "href": "https://www.w3.org/TR/service-workers/#implementer-concerns",
       "level": 3,
       "title": "Implementer Concerns",
       "number": "6.7"
     },
     {
       "id": "privacy",
-      "href": "https://www.w3.org/TR/service-workers-1/#privacy",
+      "href": "https://www.w3.org/TR/service-workers/#privacy",
       "level": 3,
       "title": "Privacy",
       "number": "6.8"
     },
     {
       "id": "extensibility",
-      "href": "https://www.w3.org/TR/service-workers-1/#extensibility",
+      "href": "https://www.w3.org/TR/service-workers/#extensibility",
       "level": 2,
       "title": "Extensibility",
       "number": "7"
     },
     {
       "id": "extension-to-service-worker-registration",
-      "href": "https://www.w3.org/TR/service-workers-1/#extension-to-service-worker-registration",
+      "href": "https://www.w3.org/TR/service-workers/#extension-to-service-worker-registration",
       "level": 3,
       "title": "Define API bound to Service Worker Registration",
       "number": "7.1"
     },
     {
       "id": "extension-to-extendable-event",
-      "href": "https://www.w3.org/TR/service-workers-1/#extension-to-extendable-event",
+      "href": "https://www.w3.org/TR/service-workers/#extension-to-extendable-event",
       "level": 3,
       "title": "Define Functional Event",
       "number": "7.2"
     },
     {
       "id": "extension-to-service-worker-global-scope",
-      "href": "https://www.w3.org/TR/service-workers-1/#extension-to-service-worker-global-scope",
+      "href": "https://www.w3.org/TR/service-workers/#extension-to-service-worker-global-scope",
       "level": 3,
       "title": "Define Event Handler",
       "number": "7.3"
     },
     {
       "id": "firing-functional-events",
-      "href": "https://www.w3.org/TR/service-workers-1/#firing-functional-events",
+      "href": "https://www.w3.org/TR/service-workers/#firing-functional-events",
       "level": 3,
       "title": "Firing Functional Events",
       "number": "7.4"
     },
     {
       "id": "algorithms",
-      "href": "https://www.w3.org/TR/service-workers-1/#algorithms",
+      "href": "https://www.w3.org/TR/service-workers/#algorithms",
       "level": 2,
       "title": "Appendix A: Algorithms"
     },
     {
       "id": "create-job-algorithm",
-      "href": "https://www.w3.org/TR/service-workers-1/#create-job-algorithm",
+      "href": "https://www.w3.org/TR/service-workers/#create-job-algorithm",
       "level": 3,
       "title": "Create Job"
     },
     {
       "id": "schedule-job-algorithm",
-      "href": "https://www.w3.org/TR/service-workers-1/#schedule-job-algorithm",
+      "href": "https://www.w3.org/TR/service-workers/#schedule-job-algorithm",
       "level": 3,
       "title": "Schedule Job"
     },
     {
       "id": "run-job-algorithm",
-      "href": "https://www.w3.org/TR/service-workers-1/#run-job-algorithm",
+      "href": "https://www.w3.org/TR/service-workers/#run-job-algorithm",
       "level": 3,
       "title": "Run Job"
     },
     {
       "id": "finish-job-algorithm",
-      "href": "https://www.w3.org/TR/service-workers-1/#finish-job-algorithm",
+      "href": "https://www.w3.org/TR/service-workers/#finish-job-algorithm",
       "level": 3,
       "title": "Finish Job"
     },
     {
       "id": "resolve-job-promise-algorithm",
-      "href": "https://www.w3.org/TR/service-workers-1/#resolve-job-promise-algorithm",
+      "href": "https://www.w3.org/TR/service-workers/#resolve-job-promise-algorithm",
       "level": 3,
       "title": "Resolve Job Promise"
     },
     {
       "id": "reject-job-promise-algorithm",
-      "href": "https://www.w3.org/TR/service-workers-1/#reject-job-promise-algorithm",
+      "href": "https://www.w3.org/TR/service-workers/#reject-job-promise-algorithm",
       "level": 3,
       "title": "Reject Job Promise"
     },
     {
       "id": "start-register-algorithm",
-      "href": "https://www.w3.org/TR/service-workers-1/#start-register-algorithm",
+      "href": "https://www.w3.org/TR/service-workers/#start-register-algorithm",
       "level": 3,
       "title": "Start Register"
     },
     {
       "id": "register-algorithm",
-      "href": "https://www.w3.org/TR/service-workers-1/#register-algorithm",
+      "href": "https://www.w3.org/TR/service-workers/#register-algorithm",
       "level": 3,
       "title": "Register"
     },
     {
       "id": "update-algorithm",
-      "href": "https://www.w3.org/TR/service-workers-1/#update-algorithm",
+      "href": "https://www.w3.org/TR/service-workers/#update-algorithm",
       "level": 3,
       "title": "Update"
     },
     {
       "id": "soft-update-algorithm",
-      "href": "https://www.w3.org/TR/service-workers-1/#soft-update-algorithm",
+      "href": "https://www.w3.org/TR/service-workers/#soft-update-algorithm",
       "level": 3,
       "title": "Soft Update"
     },
     {
       "id": "installation-algorithm",
-      "href": "https://www.w3.org/TR/service-workers-1/#installation-algorithm",
+      "href": "https://www.w3.org/TR/service-workers/#installation-algorithm",
       "level": 3,
       "title": "Install"
     },
     {
       "id": "activation-algorithm",
-      "href": "https://www.w3.org/TR/service-workers-1/#activation-algorithm",
+      "href": "https://www.w3.org/TR/service-workers/#activation-algorithm",
       "level": 3,
       "title": "Activate"
     },
     {
       "id": "try-activate-algorithm",
-      "href": "https://www.w3.org/TR/service-workers-1/#try-activate-algorithm",
+      "href": "https://www.w3.org/TR/service-workers/#try-activate-algorithm",
       "level": 3,
       "title": "Try Activate"
     },
     {
       "id": "run-service-worker-algorithm",
-      "href": "https://www.w3.org/TR/service-workers-1/#run-service-worker-algorithm",
+      "href": "https://www.w3.org/TR/service-workers/#run-service-worker-algorithm",
       "level": 3,
       "title": "Run Service Worker"
     },
     {
       "id": "terminate-service-worker-algorithm",
-      "href": "https://www.w3.org/TR/service-workers-1/#terminate-service-worker-algorithm",
+      "href": "https://www.w3.org/TR/service-workers/#terminate-service-worker-algorithm",
       "level": 3,
       "title": "Terminate Service Worker"
     },
     {
       "id": "on-fetch-request-algorithm",
-      "href": "https://www.w3.org/TR/service-workers-1/#on-fetch-request-algorithm",
+      "href": "https://www.w3.org/TR/service-workers/#on-fetch-request-algorithm",
       "level": 3,
       "title": "Handle Fetch"
     },
     {
       "id": "should-skip-event-algorithm",
-      "href": "https://www.w3.org/TR/service-workers-1/#should-skip-event-algorithm",
+      "href": "https://www.w3.org/TR/service-workers/#should-skip-event-algorithm",
       "level": 3,
       "title": "Should Skip Event"
     },
     {
       "id": "fire-functional-event-algorithm",
-      "href": "https://www.w3.org/TR/service-workers-1/#fire-functional-event-algorithm",
+      "href": "https://www.w3.org/TR/service-workers/#fire-functional-event-algorithm",
       "level": 3,
       "title": "Fire Functional Event"
     },
     {
       "id": "on-client-unload-algorithm",
-      "href": "https://www.w3.org/TR/service-workers-1/#on-client-unload-algorithm",
+      "href": "https://www.w3.org/TR/service-workers/#on-client-unload-algorithm",
       "level": 3,
       "title": "Handle Service Worker Client Unload"
     },
     {
       "id": "on-user-agent-shutdown-algorithm",
-      "href": "https://www.w3.org/TR/service-workers-1/#on-user-agent-shutdown-algorithm",
+      "href": "https://www.w3.org/TR/service-workers/#on-user-agent-shutdown-algorithm",
       "level": 3,
       "title": "Handle User Agent Shutdown"
     },
     {
       "id": "update-service-worker-extended-events-set-algorithm",
-      "href": "https://www.w3.org/TR/service-workers-1/#update-service-worker-extended-events-set-algorithm",
+      "href": "https://www.w3.org/TR/service-workers/#update-service-worker-extended-events-set-algorithm",
       "level": 3,
       "title": "Update Service Worker Extended Events Set"
     },
     {
       "id": "unregister-algorithm",
-      "href": "https://www.w3.org/TR/service-workers-1/#unregister-algorithm",
+      "href": "https://www.w3.org/TR/service-workers/#unregister-algorithm",
       "level": 3,
       "title": "Unregister"
     },
     {
       "id": "set-registration-algorithm",
-      "href": "https://www.w3.org/TR/service-workers-1/#set-registration-algorithm",
+      "href": "https://www.w3.org/TR/service-workers/#set-registration-algorithm",
       "level": 3,
       "title": "Set Registration"
     },
     {
       "id": "clear-registration-algorithm",
-      "href": "https://www.w3.org/TR/service-workers-1/#clear-registration-algorithm",
+      "href": "https://www.w3.org/TR/service-workers/#clear-registration-algorithm",
       "level": 3,
       "title": "Clear Registration"
     },
     {
       "id": "try-clear-registration-algorithm",
-      "href": "https://www.w3.org/TR/service-workers-1/#try-clear-registration-algorithm",
+      "href": "https://www.w3.org/TR/service-workers/#try-clear-registration-algorithm",
       "level": 3,
       "title": "Try Clear Registration"
     },
     {
       "id": "update-registration-state-algorithm",
-      "href": "https://www.w3.org/TR/service-workers-1/#update-registration-state-algorithm",
+      "href": "https://www.w3.org/TR/service-workers/#update-registration-state-algorithm",
       "level": 3,
       "title": "Update Registration State"
     },
     {
       "id": "update-state-algorithm",
-      "href": "https://www.w3.org/TR/service-workers-1/#update-state-algorithm",
+      "href": "https://www.w3.org/TR/service-workers/#update-state-algorithm",
       "level": 3,
       "title": "Update Worker State"
     },
     {
       "id": "notify-controller-change-algorithm",
-      "href": "https://www.w3.org/TR/service-workers-1/#notify-controller-change-algorithm",
+      "href": "https://www.w3.org/TR/service-workers/#notify-controller-change-algorithm",
       "level": 3,
       "title": "Notify Controller Change"
     },
     {
       "id": "scope-match-algorithm",
-      "href": "https://www.w3.org/TR/service-workers-1/#scope-match-algorithm",
+      "href": "https://www.w3.org/TR/service-workers/#scope-match-algorithm",
       "level": 3,
       "title": "Match Service Worker Registration"
     },
     {
       "id": "get-registration-algorithm",
-      "href": "https://www.w3.org/TR/service-workers-1/#get-registration-algorithm",
+      "href": "https://www.w3.org/TR/service-workers/#get-registration-algorithm",
       "level": 3,
       "title": "Get Registration"
     },
     {
       "id": "get-newest-worker-algorithm",
-      "href": "https://www.w3.org/TR/service-workers-1/#get-newest-worker-algorithm",
+      "href": "https://www.w3.org/TR/service-workers/#get-newest-worker-algorithm",
       "level": 3,
       "title": "Get Newest Worker"
     },
     {
       "id": "service-worker-has-no-pending-events-algorithm",
-      "href": "https://www.w3.org/TR/service-workers-1/#service-worker-has-no-pending-events-algorithm",
+      "href": "https://www.w3.org/TR/service-workers/#service-worker-has-no-pending-events-algorithm",
       "level": 3,
       "title": "Service Worker Has No Pending Events"
     },
     {
       "id": "create-client-algorithm",
-      "href": "https://www.w3.org/TR/service-workers-1/#create-client-algorithm",
+      "href": "https://www.w3.org/TR/service-workers/#create-client-algorithm",
       "level": 3,
       "title": "Create Client"
     },
     {
       "id": "create-windowclient-algorithm",
-      "href": "https://www.w3.org/TR/service-workers-1/#create-windowclient-algorithm",
+      "href": "https://www.w3.org/TR/service-workers/#create-windowclient-algorithm",
       "level": 3,
       "title": "Create Window Client"
     },
     {
       "id": "get-frametype-algorithm",
-      "href": "https://www.w3.org/TR/service-workers-1/#get-frametype-algorithm",
+      "href": "https://www.w3.org/TR/service-workers/#get-frametype-algorithm",
       "level": 3,
       "title": "Get Frame Type"
     },
     {
       "id": "resolve-get-client-promise-algorithm",
-      "href": "https://www.w3.org/TR/service-workers-1/#resolve-get-client-promise-algorithm",
+      "href": "https://www.w3.org/TR/service-workers/#resolve-get-client-promise-algorithm",
       "level": 3,
       "title": "Resolve Get Client Promise"
     },
     {
       "id": "query-cache-algorithm",
-      "href": "https://www.w3.org/TR/service-workers-1/#query-cache-algorithm",
+      "href": "https://www.w3.org/TR/service-workers/#query-cache-algorithm",
       "level": 3,
       "title": "Query Cache"
     },
     {
       "id": "request-matches-cached-item-algorithm",
-      "href": "https://www.w3.org/TR/service-workers-1/#request-matches-cached-item-algorithm",
+      "href": "https://www.w3.org/TR/service-workers/#request-matches-cached-item-algorithm",
       "level": 3,
       "title": "Request Matches Cached Item"
     },
     {
       "id": "batch-cache-operations-algorithm",
-      "href": "https://www.w3.org/TR/service-workers-1/#batch-cache-operations-algorithm",
+      "href": "https://www.w3.org/TR/service-workers/#batch-cache-operations-algorithm",
       "level": 3,
       "title": "Batch Cache Operations"
     },
     {
       "id": "is-async-module-algorithm",
-      "href": "https://www.w3.org/TR/service-workers-1/#is-async-module-algorithm",
+      "href": "https://www.w3.org/TR/service-workers/#is-async-module-algorithm",
       "level": 3,
       "title": "Is Async Module"
     },
     {
       "id": "extended-http-headers",
-      "href": "https://www.w3.org/TR/service-workers-1/#extended-http-headers",
+      "href": "https://www.w3.org/TR/service-workers/#extended-http-headers",
       "level": 2,
       "title": "Appendix B: Extended HTTP headers"
     },
     {
       "id": "service-worker-script-request",
-      "href": "https://www.w3.org/TR/service-workers-1/#service-worker-script-request",
+      "href": "https://www.w3.org/TR/service-workers/#service-worker-script-request",
       "level": 3,
       "title": "Service Worker Script Request"
     },
     {
       "id": "service-worker-script-response",
-      "href": "https://www.w3.org/TR/service-workers-1/#service-worker-script-response",
+      "href": "https://www.w3.org/TR/service-workers/#service-worker-script-response",
       "level": 3,
       "title": "Service Worker Script Response"
     },
     {
       "id": "syntax",
-      "href": "https://www.w3.org/TR/service-workers-1/#syntax",
+      "href": "https://www.w3.org/TR/service-workers/#syntax",
       "level": 3,
       "title": "Syntax"
     },
     {
       "id": "acknowledgements",
-      "href": "https://www.w3.org/TR/service-workers-1/#acknowledgements",
+      "href": "https://www.w3.org/TR/service-workers/#acknowledgements",
       "level": 2,
       "title": "Acknowledgements",
       "number": "8"
     },
     {
       "id": "w3c-conformance",
-      "href": "https://www.w3.org/TR/service-workers-1/#w3c-conformance",
+      "href": "https://www.w3.org/TR/service-workers/#w3c-conformance",
       "level": 2,
       "title": "Conformance"
     },
     {
       "id": "w3c-conventions",
-      "href": "https://www.w3.org/TR/service-workers-1/#w3c-conventions",
+      "href": "https://www.w3.org/TR/service-workers/#w3c-conventions",
       "level": 3,
       "title": "Document conventions"
     },
     {
       "id": "w3c-conformant-algorithms",
-      "href": "https://www.w3.org/TR/service-workers-1/#w3c-conformant-algorithms",
+      "href": "https://www.w3.org/TR/service-workers/#w3c-conformant-algorithms",
       "level": 3,
       "title": "Conformant Algorithms"
     },
     {
       "id": "index",
-      "href": "https://www.w3.org/TR/service-workers-1/#index",
+      "href": "https://www.w3.org/TR/service-workers/#index",
       "level": 2,
       "title": "Index"
     },
     {
       "id": "index-defined-here",
-      "href": "https://www.w3.org/TR/service-workers-1/#index-defined-here",
+      "href": "https://www.w3.org/TR/service-workers/#index-defined-here",
       "level": 3,
       "title": "Terms defined by this specification"
     },
     {
       "id": "index-defined-elsewhere",
-      "href": "https://www.w3.org/TR/service-workers-1/#index-defined-elsewhere",
+      "href": "https://www.w3.org/TR/service-workers/#index-defined-elsewhere",
       "level": 3,
       "title": "Terms defined by reference"
     },
     {
       "id": "references",
-      "href": "https://www.w3.org/TR/service-workers-1/#references",
+      "href": "https://www.w3.org/TR/service-workers/#references",
       "level": 2,
       "title": "References"
     },
     {
       "id": "normative",
-      "href": "https://www.w3.org/TR/service-workers-1/#normative",
+      "href": "https://www.w3.org/TR/service-workers/#normative",
       "level": 3,
       "title": "Normative References"
     },
     {
       "id": "informative",
-      "href": "https://www.w3.org/TR/service-workers-1/#informative",
+      "href": "https://www.w3.org/TR/service-workers/#informative",
       "level": 3,
       "title": "Informative References"
     },
     {
       "id": "idl-index",
-      "href": "https://www.w3.org/TR/service-workers-1/#idl-index",
+      "href": "https://www.w3.org/TR/service-workers/#idl-index",
       "level": 2,
       "title": "IDL Index"
     },
     {
       "id": "issues-index",
-      "href": "https://www.w3.org/TR/service-workers-1/#issues-index",
+      "href": "https://www.w3.org/TR/service-workers/#issues-index",
       "level": 2,
       "title": "Issues Index"
     }
