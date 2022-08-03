@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2022-08-03T06:41:27.794Z",
+  "date": "2022-08-03T12:44:43.783Z",
   "options": {
     "fallback": "webref-fallback/ed/index.json",
     "output": "report",
@@ -25,7 +25,7 @@
   },
   "stats": {
     "crawled": 473,
-    "errors": 0
+    "errors": 1
   },
   "crawler": "reffy-8.0.4",
   "results": [
@@ -7709,10 +7709,10 @@
       ],
       "crawled": "https://wicg.github.io/webpackage/loading.html",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 13 Jul 2022 08:37:56 GMT"
+        "lastModified": "Wed, 03 Aug 2022 07:16:54 GMT"
       },
       "generator": "bikeshed",
-      "date": "13 July 2022",
+      "date": "3 August 2022",
       "links": "links/webpackage.json",
       "refs": "refs/webpackage.json",
       "events": "events/webpackage.json",
@@ -11466,10 +11466,10 @@
       ],
       "crawled": "https://w3c.github.io/beacon/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 17 Jun 2022 15:00:24 GMT"
+        "lastModified": "Wed, 03 Aug 2022 12:06:00 GMT"
       },
       "generator": "respec",
-      "date": "17 June 2022",
+      "date": "03 August 2022",
       "links": "links/beacon.json",
       "refs": "refs/beacon.json",
       "idl": "idl/beacon.idl",
@@ -17048,7 +17048,8 @@
       "css": "css/CSS.json",
       "dfns": "dfns/CSS22.json",
       "headings": "headings/CSS22.json",
-      "ids": "ids/CSS22.json"
+      "ids": "ids/CSS22.json",
+      "error": "Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers' Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers'\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:483:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:353:22)\n    at async Promise.all (index 326)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:361:21)"
     },
     {
       "url": "https://www.w3.org/TR/css3-exclusions/",
@@ -23536,10 +23537,10 @@
       ],
       "crawled": "https://webassembly.github.io/spec/core/bikeshed/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 02 Aug 2022 12:23:02 GMT"
+        "lastModified": "Wed, 03 Aug 2022 09:13:20 GMT"
       },
       "generator": "bikeshed",
-      "date": "2 August 2022",
+      "date": "3 August 2022",
       "links": "links/wasm-core-1.json",
       "refs": "refs/wasm-core-1.json",
       "headings": "headings/wasm-core-1.json",
@@ -23596,10 +23597,10 @@
       ],
       "crawled": "https://webassembly.github.io/spec/js-api/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 02 Aug 2022 12:23:02 GMT"
+        "lastModified": "Wed, 03 Aug 2022 09:13:20 GMT"
       },
       "generator": "bikeshed",
-      "date": "2 August 2022",
+      "date": "3 August 2022",
       "links": "links/wasm-js-api-2.json",
       "refs": "refs/wasm-js-api-2.json",
       "idl": "idl/wasm-js-api.idl",
@@ -23655,10 +23656,10 @@
       ],
       "crawled": "https://webassembly.github.io/spec/web-api/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 02 Aug 2022 12:23:02 GMT"
+        "lastModified": "Wed, 03 Aug 2022 09:13:20 GMT"
       },
       "generator": "bikeshed",
-      "date": "2 August 2022",
+      "date": "3 August 2022",
       "links": "links/wasm-web-api-2.json",
       "refs": "refs/wasm-web-api-2.json",
       "idl": "idl/wasm-web-api.idl",
