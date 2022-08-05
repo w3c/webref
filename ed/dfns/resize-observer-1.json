@@ -587,8 +587,8 @@
       "id": "dom-resizeobservation-resizeobservation",
       "href": "https://drafts.csswg.org/resize-observer/#dom-resizeobservation-resizeobservation",
       "linkingText": [
-        "ResizeObservation(target)",
-        "constructor(target)"
+        "ResizeObservation(target, observedBox)",
+        "constructor(target, observedBox)"
       ],
       "localLinkingText": [],
       "type": "constructor",
@@ -606,16 +606,38 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-resizeobservation-resizeobservation-target-target",
-      "href": "https://drafts.csswg.org/resize-observer/#dom-resizeobservation-resizeobservation-target-target",
+      "id": "dom-resizeobservation-resizeobservation-target-observedbox-target",
+      "href": "https://drafts.csswg.org/resize-observer/#dom-resizeobservation-resizeobservation-target-observedbox-target",
       "linkingText": [
         "target"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "ResizeObservation/ResizeObservation(target)",
-        "ResizeObservation/constructor(target)"
+        "ResizeObservation/ResizeObservation(target, observedBox)",
+        "ResizeObservation/constructor(target, observedBox)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "resize-observation-interface",
+        "href": "https://drafts.csswg.org/resize-observer/#resize-observation-interface",
+        "title": "ResizeObservation example struct",
+        "number": "3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-resizeobservation-resizeobservation-target-observedbox-observedbox",
+      "href": "https://drafts.csswg.org/resize-observer/#dom-resizeobservation-resizeobservation-target-observedbox-observedbox",
+      "linkingText": [
+        "observedBox"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "ResizeObservation/ResizeObservation(target, observedBox)",
+        "ResizeObservation/constructor(target, observedBox)"
       ],
       "access": "public",
       "informative": false,
