@@ -97,16 +97,17 @@
       "namespacedef-css",
       "serializing-css-values"
     ],
-    "https://drafts.csswg.org/css-variables-1/": [
+    "https://drafts.csswg.org/css-variables-2/": [
       "custom-property",
       "funcdef-var",
       "typedef-custom-property-name"
     ],
-    "https://drafts.csswg.org/css2/": [
+    "https://drafts.csswg.org/css-backgrounds-3/": [
       "propdef-background-image",
-      "propdef-z-index",
+      "propdef-border-image-source",
       "propdef-background",
       "propdef-background-attachment",
+      "propdef-background-clip",
       "propdef-background-color",
       "propdef-background-position",
       "propdef-background-repeat",
@@ -124,25 +125,28 @@
       "propdef-border-left-color",
       "propdef-border-left-style",
       "propdef-border-left-width",
+      "propdef-border-radius",
       "propdef-border-right",
       "propdef-border-right-color",
       "propdef-border-right-style",
       "propdef-border-right-width",
-      "propdef-border-spacing",
       "propdef-border-style",
       "propdef-border-width",
-      "propdef-clear",
-      "propdef-float",
-      "propdef-line-height",
-      "propdef-page-break-after",
-      "propdef-page-break-before",
-      "propdef-page-break-inside"
+      "propdef-border-image",
+      "propdef-border-image-slice",
+      "border-image-slice-fill",
+      "propdef-border-image-width",
+      "propdef-border-image-outset",
+      "propdef-border-image-repeat",
+      "valdef-border-image-repeat-stretch"
     ],
     "https://drafts.csswg.org/css-animations-1/": [
       "propdef-animation"
     ],
-    "https://www.w3.org/TR/css-color-4/": [
+    "https://drafts.csswg.org/css-color-4/": [
       "propdef-color",
+      "propdef-opacity",
+      "typedef-color",
       "funcdef-rgba",
       "funcdef-hsla",
       "typedef-hex-color",
@@ -253,9 +257,15 @@
     "https://developer.mozilla.org/en-US/docs/Web/API/CSSKeywordValue": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/CSSKeywordValue/CSSKeywordValue": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/CSSKeywordValue/value": [],
-    "https://drafts.csswg.org/css-color-3/": [
-      "opacity",
-      "valuea-def-color"
+    "https://drafts.csswg.org/css2/": [
+      "propdef-z-index",
+      "propdef-border-spacing",
+      "propdef-clear",
+      "propdef-float",
+      "propdef-line-height",
+      "propdef-page-break-after",
+      "propdef-page-break-before",
+      "propdef-page-break-inside"
     ],
     "https://developer.mozilla.org/en-US/docs/Web/API/CSSNumericValue": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/CSSNumericValue/add": [],
@@ -389,16 +399,6 @@
     "https://drafts.csswg.org/css-images-3/": [
       "typedef-image",
       "propdef-image-rendering"
-    ],
-    "https://www.w3.org/TR/css-backgrounds-3/": [
-      "propdef-border-image-source",
-      "propdef-border-image",
-      "propdef-border-image-slice",
-      "border-image-slice-fill",
-      "propdef-border-image-width",
-      "propdef-border-image-outset",
-      "propdef-border-image-repeat",
-      "valdef-border-image-repeat-stretch"
     ],
     "https://drafts.csswg.org/css-images-4/": [
       "funcdef-image",
@@ -670,7 +670,7 @@
     "https://svgwg.org/svg2-draft/paths.html": [
       "DProperty"
     ],
-    "https://www.w3.org/TR/css-writing-modes-3/": [
+    "https://drafts.csswg.org/css-writing-modes-3/": [
       "propdef-direction",
       "propdef-unicode-bidi"
     ],
@@ -791,7 +791,7 @@
       "propdef-ruby-merge",
       "propdef-ruby-position"
     ],
-    "https://www.w3.org/TR/css-scroll-snap-1/": [
+    "https://drafts.csswg.org/css-scroll-snap-1/": [
       "propdef-scroll-margin",
       "propdef-scroll-margin-block",
       "propdef-scroll-margin-block-end",
@@ -805,6 +805,7 @@
       "propdef-scroll-margin-top",
       "propdef-scroll-padding",
       "propdef-scroll-padding-block",
+      "propdef-scroll-padding-block-end",
       "propdef-scroll-padding-block-start",
       "propdef-scroll-padding-bottom",
       "propdef-scroll-padding-inline",
@@ -812,10 +813,7 @@
       "propdef-scroll-padding-inline-start",
       "propdef-scroll-padding-left",
       "propdef-scroll-padding-right",
-      "propdef-scroll-padding-top"
-    ],
-    "https://drafts.csswg.org/css-scroll-snap-1/Proposal.html": [
-      "propdef-scroll-padding-block-end",
+      "propdef-scroll-padding-top",
       "propdef-scroll-snap-align",
       "propdef-scroll-snap-stop",
       "propdef-scroll-snap-type"
@@ -835,7 +833,7 @@
       "StopColorProperty",
       "StopOpacityProperty"
     ],
-    "https://www.w3.org/TR/css-text-3/": [
+    "https://drafts.csswg.org/css-text-3/": [
       "propdef-text-align"
     ],
     "https://drafts.csswg.org/css-text-decor-4/": [
@@ -849,7 +847,7 @@
     "https://drafts.csswg.org/css-size-adjust-1/": [
       "propdef-text-size-adjust"
     ],
-    "https://www.w3.org/TR/css-transitions-1/": [
+    "https://drafts.csswg.org/css-transitions-1/": [
       "propdef-transition",
       "propdef-transition-delay",
       "propdef-transition-duration",
@@ -891,16 +889,12 @@
     "https://drafts.csswg.org/css-rhythm/": [],
     "https://drafts.csswg.org/css-round-display/": [],
     "https://drafts.csswg.org/css-scroll-anchoring/": [],
-    "https://drafts.csswg.org/css-scroll-snap-1/": [],
     "https://drafts.csswg.org/css-shapes/": [],
     "https://www.w3.org/TR/css-syntax-3/": [],
-    "https://drafts.csswg.org/css-text-3/": [],
     "https://www.w3.org/TR/css-transforms-1/": [],
     "https://drafts.csswg.org/css-transitions/": [],
     "https://drafts.csswg.org/css-values-3/": [],
-    "https://drafts.csswg.org/css-variables/": [],
     "https://drafts.csswg.org/css-will-change/": [],
-    "https://drafts.csswg.org/css-writing-modes-3/": [],
     "https://drafts.csswg.org/cssom/": [],
     "https://www.w3.org/TR/cssom-1/": [],
     "https://drafts.fxtf.org/fill-stroke/": [],
