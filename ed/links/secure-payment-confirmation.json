@@ -20,7 +20,9 @@
       "dom-publickeycredentialrequestoptions-challenge",
       "dictdef-collectedclientdata",
       "public-key-credential",
+      "relying-party-identifier",
       "credential-id",
+      "sctn-getAssertion",
       "discoverable-credential",
       "authentication-ceremony",
       "dictdef-authenticationextensionsclientinputs",
@@ -41,18 +43,27 @@
       "client-extension",
       "registration-extension",
       "authentication-extension",
+      "sctn-createCredential",
       "dom-publickeycredentialcreationoptions-authenticatorselection",
       "dom-authenticatorselectioncriteria-authenticatorattachment",
       "dom-authenticatorattachment-platform",
       "dom-authenticatorselectioncriteria-residentkey",
       "dom-residentkeyrequirement-required",
+      "dom-residentkeyrequirement-preferred",
       "dom-authenticatorselectioncriteria-userverification",
       "dom-publickeycredential-discoverfromexternalsource-slot",
       "dom-collectedclientdata-type",
+      "sctn-permissions-policy",
       "dom-publickeycredential-create-slot",
       "publickeycredential",
+      "sctn-verifying-assertion",
       "dom-collectedclientdata-challenge",
-      "dom-collectedclientdata-origin"
+      "dom-collectedclientdata-origin",
+      "sctn-automation",
+      "sctn-security-considerations",
+      "sctn-privacy-considerations",
+      "sctn-assertion-privacy",
+      "sctn-accessiblility-considerations"
     ],
     "https://w3c.github.io/payment-request/": [
       "dfn-payment-method",
@@ -77,18 +88,6 @@
     "https://github.com/w3c/webauthn/issues/1336": [
       "issuecomment-554170183",
       "issue-513568855"
-    ],
-    "https://www.w3.org/TR/webauthn-3/": [
-      "relying-party-identifier",
-      "sctn-getAssertion",
-      "sctn-createCredential",
-      "sctn-permissions-policy",
-      "sctn-verifying-assertion",
-      "sctn-automation",
-      "sctn-security-considerations",
-      "sctn-privacy-considerations",
-      "sctn-assertion-privacy",
-      "sctn-accessiblility-considerations"
     ],
     "https://github.com/w3c/webauthn/issues/1667": [],
     "https://github.com/w3c/webauthn/issues/1545": [],
@@ -163,8 +162,16 @@
       "dfn-fetching-an-image-resource",
       "dom-imageresource-src"
     ],
-    "https://www.w3.org/TR/webdriver1/": [
-      "security"
+    "https://w3c.github.io/webdriver/": [
+      "security",
+      "dfn-extension-command",
+      "dfn-remote-end-steps",
+      "dfn-errors",
+      "dfn-error-code",
+      "dfn-invalid-argument",
+      "dfn-getting-properties",
+      "dfn-undefined",
+      "dfn-success"
     ],
     "https://infra.spec.whatwg.org/": [
       "list-append"
@@ -185,26 +192,14 @@
     "https://tc39.github.io/ecma262/": [
       "sec-object-internal-methods-and-internal-slots"
     ],
-    "https://w3c.github.io/webdriver/": [
-      "dfn-extension-command",
-      "dfn-remote-end-steps",
-      "dfn-errors",
-      "dfn-error-code",
-      "dfn-invalid-argument",
-      "dfn-getting-properties",
-      "dfn-undefined",
-      "dfn-success"
-    ],
     "https://w3c.github.io/FileAPI/": [
       "blob-url-entry-object"
     ],
     "https://github.com/w3c/webauthn/issues/1656": [],
     "https://github.com/w3c/webauthn/issues/1293": [],
     "https://github.com/w3c/secure-payment-confirmation/issues/77": [],
-    "https://www.w3.org/TR/credential-management-1/": [],
-    "https://www.w3.org/TR/FileAPI/": [],
+    "https://w3c.github.io/image-resource/": [],
     "https://datatracker.ietf.org/doc/html/rfc2119": [],
-    "https://www.w3.org/TR/webauthn-1/": [],
     "https://tc39.es/ecma262/multipage/": [],
     "https://www.rfc-editor.org/rfc/rfc2397": []
   }
