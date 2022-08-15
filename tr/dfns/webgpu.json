@@ -3260,10 +3260,10 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-gpubuffer-state-slot",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpubuffer-state-slot",
+      "id": "dom-gpubuffer-devicetimelinestate-slot",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpubuffer-devicetimelinestate-slot",
       "linkingText": [
-        "[[state]]"
+        "[[deviceTimelineState]]"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -3271,6 +3271,170 @@
         "GPUBuffer"
       ],
       "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "buffer-interface",
+        "href": "https://www.w3.org/TR/webgpu/#buffer-interface",
+        "title": "GPUBuffer",
+        "number": "5.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "buffer-device-timeline-state",
+      "href": "https://www.w3.org/TR/webgpu/#buffer-device-timeline-state",
+      "linkingText": [
+        "buffer device timeline state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "buffer-interface",
+        "href": "https://www.w3.org/TR/webgpu/#buffer-interface",
+        "title": "GPUBuffer",
+        "number": "5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "buffer-device-timeline-state-available",
+      "href": "https://www.w3.org/TR/webgpu/#buffer-device-timeline-state-available",
+      "linkingText": [
+        "available"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "buffer device timeline state"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "buffer-interface",
+        "href": "https://www.w3.org/TR/webgpu/#buffer-interface",
+        "title": "GPUBuffer",
+        "number": "5.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "buffer-device-timeline-state-unavailable",
+      "href": "https://www.w3.org/TR/webgpu/#buffer-device-timeline-state-unavailable",
+      "linkingText": [
+        "unavailable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "buffer device timeline state"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "buffer-interface",
+        "href": "https://www.w3.org/TR/webgpu/#buffer-interface",
+        "title": "GPUBuffer",
+        "number": "5.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "buffer-device-timeline-state-destroyed",
+      "href": "https://www.w3.org/TR/webgpu/#buffer-device-timeline-state-destroyed",
+      "linkingText": [
+        "destroyed"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "buffer device timeline state"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "buffer-interface",
+        "href": "https://www.w3.org/TR/webgpu/#buffer-interface",
+        "title": "GPUBuffer",
+        "number": "5.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-gpubuffer-map_requests-slot",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpubuffer-map_requests-slot",
+      "linkingText": [
+        "[[map_requests]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPUBuffer"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "buffer-interface",
+        "href": "https://www.w3.org/TR/webgpu/#buffer-interface",
+        "title": "GPUBuffer",
+        "number": "5.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "map-request-status",
+      "href": "https://www.w3.org/TR/webgpu/#map-request-status",
+      "linkingText": [
+        "map request status"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "buffer-interface",
+        "href": "https://www.w3.org/TR/webgpu/#buffer-interface",
+        "title": "GPUBuffer",
+        "number": "5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "map-request-status-open",
+      "href": "https://www.w3.org/TR/webgpu/#map-request-status-open",
+      "linkingText": [
+        "open"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "map request status"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "buffer-interface",
+        "href": "https://www.w3.org/TR/webgpu/#buffer-interface",
+        "title": "GPUBuffer",
+        "number": "5.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "map-request-status-cancelled",
+      "href": "https://www.w3.org/TR/webgpu/#map-request-status-cancelled",
+      "linkingText": [
+        "cancelled"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "map request status"
+      ],
+      "access": "private",
       "informative": false,
       "heading": {
         "id": "buffer-interface",
@@ -3302,73 +3466,10 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-gpubuffer-mapping_range-slot",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpubuffer-mapping_range-slot",
+      "id": "active-buffer-mapping",
+      "href": "https://www.w3.org/TR/webgpu/#active-buffer-mapping",
       "linkingText": [
-        "[[mapping_range]]"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "GPUBuffer"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "buffer-interface",
-        "href": "https://www.w3.org/TR/webgpu/#buffer-interface",
-        "title": "GPUBuffer",
-        "number": "5.1"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-gpubuffer-mapped_ranges-slot",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpubuffer-mapped_ranges-slot",
-      "linkingText": [
-        "[[mapped_ranges]]"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "GPUBuffer"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "buffer-interface",
-        "href": "https://www.w3.org/TR/webgpu/#buffer-interface",
-        "title": "GPUBuffer",
-        "number": "5.1"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-gpubuffer-map_mode-slot",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpubuffer-map_mode-slot",
-      "linkingText": [
-        "[[map_mode]]"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "GPUBuffer"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "buffer-interface",
-        "href": "https://www.w3.org/TR/webgpu/#buffer-interface",
-        "title": "GPUBuffer",
-        "number": "5.1"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "buffer-state",
-      "href": "https://www.w3.org/TR/webgpu/#buffer-state",
-      "linkingText": [
-        "buffer state"
+        "active buffer mapping"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -3384,15 +3485,15 @@
       "definedIn": "prose"
     },
     {
-      "id": "buffer-state-mapped",
-      "href": "https://www.w3.org/TR/webgpu/#buffer-state-mapped",
+      "id": "active-buffer-mapping-data",
+      "href": "https://www.w3.org/TR/webgpu/#active-buffer-mapping-data",
       "linkingText": [
-        "mapped"
+        "data"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "buffer state"
+        "active buffer mapping"
       ],
       "access": "private",
       "informative": false,
@@ -3405,15 +3506,15 @@
       "definedIn": "dt"
     },
     {
-      "id": "buffer-state-mapped-at-creation",
-      "href": "https://www.w3.org/TR/webgpu/#buffer-state-mapped-at-creation",
+      "id": "active-buffer-mapping-mode",
+      "href": "https://www.w3.org/TR/webgpu/#active-buffer-mapping-mode",
       "linkingText": [
-        "mapped at creation"
+        "mode"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "buffer state"
+        "active buffer mapping"
       ],
       "access": "private",
       "informative": false,
@@ -3426,15 +3527,15 @@
       "definedIn": "dt"
     },
     {
-      "id": "buffer-state-mapping-pending",
-      "href": "https://www.w3.org/TR/webgpu/#buffer-state-mapping-pending",
+      "id": "active-buffer-mapping-range",
+      "href": "https://www.w3.org/TR/webgpu/#active-buffer-mapping-range",
       "linkingText": [
-        "mapping pending"
+        "range"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "buffer state"
+        "active buffer mapping"
       ],
       "access": "private",
       "informative": false,
@@ -3447,36 +3548,15 @@
       "definedIn": "dt"
     },
     {
-      "id": "buffer-state-unmapped",
-      "href": "https://www.w3.org/TR/webgpu/#buffer-state-unmapped",
+      "id": "active-buffer-mapping-views",
+      "href": "https://www.w3.org/TR/webgpu/#active-buffer-mapping-views",
       "linkingText": [
-        "unmapped"
+        "views"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "buffer state"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "buffer-interface",
-        "href": "https://www.w3.org/TR/webgpu/#buffer-interface",
-        "title": "GPUBuffer",
-        "number": "5.1"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "buffer-state-destroyed",
-      "href": "https://www.w3.org/TR/webgpu/#buffer-state-destroyed",
-      "linkingText": [
-        "destroyed"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "buffer state"
+        "active buffer mapping"
       ],
       "access": "private",
       "informative": false,

@@ -5,10 +5,29 @@
   },
   "dfns": [
     {
-      "id": "webauthn-conditional-ui",
-      "href": "https://www.w3.org/TR/secure-payment-confirmation/#webauthn-conditional-ui",
+      "id": "spc-credential",
+      "href": "https://www.w3.org/TR/secure-payment-confirmation/#spc-credential",
       "linkingText": [
-        "WebAuthn Conditional UI"
+        "SPC Credential"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sctn-terminology",
+        "href": "https://www.w3.org/TR/secure-payment-confirmation/#sctn-terminology",
+        "title": "Terminology",
+        "number": "2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "steps-to-silently-determine-if-a-credential-is-spc-enabled",
+      "href": "https://www.w3.org/TR/secure-payment-confirmation/#steps-to-silently-determine-if-a-credential-is-spc-enabled",
+      "linkingText": [
+        "Steps to silently determine if a credential is SPC-enabled"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -16,9 +35,28 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "sctn-dependencies",
-        "href": "https://www.w3.org/TR/secure-payment-confirmation/#sctn-dependencies",
-        "title": "Dependencies",
+        "id": "sctn-terminology",
+        "href": "https://www.w3.org/TR/secure-payment-confirmation/#sctn-terminology",
+        "title": "Terminology",
+        "number": "2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "steps-to-silently-determine-if-a-credential-is-available-for-the-current-device",
+      "href": "https://www.w3.org/TR/secure-payment-confirmation/#steps-to-silently-determine-if-a-credential-is-available-for-the-current-device",
+      "linkingText": [
+        "Steps to silently determine if a credential is available for the current device"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sctn-terminology",
+        "href": "https://www.w3.org/TR/secure-payment-confirmation/#sctn-terminology",
+        "title": "Terminology",
         "number": "2"
       },
       "definedIn": "dt"
@@ -102,6 +140,27 @@
       "definedIn": "dt"
     },
     {
+      "id": "dom-securepaymentconfirmationrequest-rpid",
+      "href": "https://www.w3.org/TR/secure-payment-confirmation/#dom-securepaymentconfirmationrequest-rpid",
+      "linkingText": [
+        "rpId"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SecurePaymentConfirmationRequest"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sctn-securepaymentconfirmationrequest-dictionary",
+        "href": "https://www.w3.org/TR/secure-payment-confirmation/#sctn-securepaymentconfirmationrequest-dictionary",
+        "title": "SecurePaymentConfirmationRequest Dictionary",
+        "number": "4.1.3"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "dom-securepaymentconfirmationrequest-credentialids",
       "href": "https://www.w3.org/TR/secure-payment-confirmation/#dom-securepaymentconfirmationrequest-credentialids",
       "linkingText": [
@@ -148,6 +207,27 @@
       "href": "https://www.w3.org/TR/secure-payment-confirmation/#dom-securepaymentconfirmationrequest-timeout",
       "linkingText": [
         "timeout"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SecurePaymentConfirmationRequest"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sctn-securepaymentconfirmationrequest-dictionary",
+        "href": "https://www.w3.org/TR/secure-payment-confirmation/#sctn-securepaymentconfirmationrequest-dictionary",
+        "title": "SecurePaymentConfirmationRequest Dictionary",
+        "number": "4.1.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-securepaymentconfirmationrequest-payeename",
+      "href": "https://www.w3.org/TR/secure-payment-confirmation/#dom-securepaymentconfirmationrequest-payeename",
+      "linkingText": [
+        "payeeName"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -310,6 +390,27 @@
       "definedIn": "dt"
     },
     {
+      "id": "dom-authenticationextensionspaymentinputs-payeename",
+      "href": "https://www.w3.org/TR/secure-payment-confirmation/#dom-authenticationextensionspaymentinputs-payeename",
+      "linkingText": [
+        "payeeName"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AuthenticationExtensionsPaymentInputs"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sctn-payment-extension-registration",
+        "href": "https://www.w3.org/TR/secure-payment-confirmation/#sctn-payment-extension-registration",
+        "title": "WebAuthn Extension - \"payment\"",
+        "number": "5"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "dom-authenticationextensionspaymentinputs-payeeorigin",
       "href": "https://www.w3.org/TR/secure-payment-confirmation/#dom-authenticationextensionspaymentinputs-payeeorigin",
       "linkingText": [
@@ -362,6 +463,44 @@
       "for": [
         "AuthenticationExtensionsPaymentInputs"
       ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sctn-payment-extension-registration",
+        "href": "https://www.w3.org/TR/secure-payment-confirmation/#sctn-payment-extension-registration",
+        "title": "WebAuthn Extension - \"payment\"",
+        "number": "5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "client-extension-processing-registration",
+      "href": "https://www.w3.org/TR/secure-payment-confirmation/#client-extension-processing-registration",
+      "linkingText": [
+        "Client extension processing (registration)"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sctn-payment-extension-registration",
+        "href": "https://www.w3.org/TR/secure-payment-confirmation/#sctn-payment-extension-registration",
+        "title": "WebAuthn Extension - \"payment\"",
+        "number": "5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "client-extension-processing-authentication",
+      "href": "https://www.w3.org/TR/secure-payment-confirmation/#client-extension-processing-authentication",
+      "linkingText": [
+        "Client extension processing (authentication)"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
       "access": "public",
       "informative": false,
       "heading": {
@@ -457,6 +596,27 @@
       "href": "https://www.w3.org/TR/secure-payment-confirmation/#dom-collectedclientadditionalpaymentdata-toporigin",
       "linkingText": [
         "topOrigin"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "CollectedClientAdditionalPaymentData"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sctn-collectedclientadditionalpaymentdata-dictionary",
+        "href": "https://www.w3.org/TR/secure-payment-confirmation/#sctn-collectedclientadditionalpaymentdata-dictionary",
+        "title": "CollectedClientAdditionalPaymentData Dictionary",
+        "number": "5.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-collectedclientadditionalpaymentdata-payeename",
+      "href": "https://www.w3.org/TR/secure-payment-confirmation/#dom-collectedclientadditionalpaymentdata-payeename",
+      "linkingText": [
+        "payeeName"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -596,6 +756,147 @@
         "number": "6.1"
       },
       "definedIn": "dt"
+    },
+    {
+      "id": "dom-paymentcredentialinstrument-iconmustbeshown",
+      "href": "https://www.w3.org/TR/secure-payment-confirmation/#dom-paymentcredentialinstrument-iconmustbeshown",
+      "linkingText": [
+        "iconMustBeShown"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentCredentialInstrument"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sctn-paymentcredentialinstrument-dictionary",
+        "href": "https://www.w3.org/TR/secure-payment-confirmation/#sctn-paymentcredentialinstrument-dictionary",
+        "title": "PaymentCredentialInstrument Dictionary",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "set-spc-transaction-mode",
+      "href": "https://www.w3.org/TR/secure-payment-confirmation/#set-spc-transaction-mode",
+      "linkingText": [
+        "Set SPC Transaction Mode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sctn-automation-set-spc-transaction-mode",
+        "href": "https://www.w3.org/TR/secure-payment-confirmation/#sctn-automation-set-spc-transaction-mode",
+        "title": "Set SPC Transaction Mode",
+        "number": "9.1"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "current-transaction-automation-mode",
+      "href": "https://www.w3.org/TR/secure-payment-confirmation/#current-transaction-automation-mode",
+      "linkingText": [
+        "current transaction automation mode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sctn-automation-set-spc-transaction-mode",
+        "href": "https://www.w3.org/TR/secure-payment-confirmation/#sctn-automation-set-spc-transaction-mode",
+        "title": "Set SPC Transaction Mode",
+        "number": "9.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "enumdef-transactionautomationmode",
+      "href": "https://www.w3.org/TR/secure-payment-confirmation/#enumdef-transactionautomationmode",
+      "linkingText": [
+        "TransactionAutomationMode"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sctn-automation-set-spc-transaction-mode",
+        "href": "https://www.w3.org/TR/secure-payment-confirmation/#sctn-automation-set-spc-transaction-mode",
+        "title": "Set SPC Transaction Mode",
+        "number": "9.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-transactionautomationmode-none",
+      "href": "https://www.w3.org/TR/secure-payment-confirmation/#dom-transactionautomationmode-none",
+      "linkingText": [
+        "\"none\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "TransactionAutomationMode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sctn-automation-set-spc-transaction-mode",
+        "href": "https://www.w3.org/TR/secure-payment-confirmation/#sctn-automation-set-spc-transaction-mode",
+        "title": "Set SPC Transaction Mode",
+        "number": "9.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-transactionautomationmode-autoaccept",
+      "href": "https://www.w3.org/TR/secure-payment-confirmation/#dom-transactionautomationmode-autoaccept",
+      "linkingText": [
+        "\"autoaccept\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "TransactionAutomationMode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sctn-automation-set-spc-transaction-mode",
+        "href": "https://www.w3.org/TR/secure-payment-confirmation/#sctn-automation-set-spc-transaction-mode",
+        "title": "Set SPC Transaction Mode",
+        "number": "9.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-transactionautomationmode-autoreject",
+      "href": "https://www.w3.org/TR/secure-payment-confirmation/#dom-transactionautomationmode-autoreject",
+      "linkingText": [
+        "\"autoreject\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "TransactionAutomationMode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sctn-automation-set-spc-transaction-mode",
+        "href": "https://www.w3.org/TR/secure-payment-confirmation/#sctn-automation-set-spc-transaction-mode",
+        "title": "Set SPC Transaction Mode",
+        "number": "9.1"
+      },
+      "definedIn": "pre"
     }
   ]
 }
