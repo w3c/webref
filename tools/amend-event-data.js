@@ -420,11 +420,6 @@ const patches = {
   ],
   'webcodecs': [
     {
-      pattern: { type: "change" },
-      matched: 1,
-      delete: true
-    },
-    {
       pattern: { type: "dequeue" },
       matched: 4,
       change: { interface: 'Event' }
