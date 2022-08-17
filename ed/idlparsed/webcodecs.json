@@ -5213,10 +5213,10 @@
         "partial": false
       },
       "ImageTrack": {
-        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface ImageTrack : EventTarget {\n  readonly attribute boolean animated;\n  readonly attribute unsigned long frameCount;\n  readonly attribute unrestricted float repetitionCount;\n  attribute EventHandler onchange;\n  attribute boolean selected;\n};",
+        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface ImageTrack {\n  readonly attribute boolean animated;\n  readonly attribute unsigned long frameCount;\n  readonly attribute unrestricted float repetitionCount;\n  attribute boolean selected;\n};",
         "type": "interface",
         "name": "ImageTrack",
-        "inheritance": "EventTarget",
+        "inheritance": null,
         "members": [
           {
             "type": "attribute",
@@ -5262,21 +5262,6 @@
             "extAttrs": [],
             "special": "",
             "readonly": true
-          },
-          {
-            "type": "attribute",
-            "name": "onchange",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "EventHandler"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": false
           },
           {
             "type": "attribute",
@@ -5522,10 +5507,7 @@
       "ImageTrackList": [
         "ImageTrack"
       ],
-      "ImageTrack": [
-        "EventTarget",
-        "EventHandler"
-      ]
+      "ImageTrack": []
     },
     "externalDependencies": [
       "EventHandler",
@@ -5537,8 +5519,7 @@
       "DOMRectInit",
       "ReadableStream",
       "PremultiplyAlpha",
-      "ColorSpaceConversion",
-      "EventTarget"
+      "ColorSpaceConversion"
     ],
     "hasObsoleteIdl": false
   }

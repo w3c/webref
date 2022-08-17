@@ -10,7 +10,7 @@
     },
     "idlNames": {
       "SecurePaymentConfirmationRequest": {
-        "fragment": "dictionary SecurePaymentConfirmationRequest {\n    required BufferSource challenge;\n    required USVString rpId;\n    required FrozenArray<BufferSource> credentialIds;\n    required PaymentCredentialInstrument instrument;\n    unsigned long timeout;\n    DOMString payeeName;\n    USVString payeeOrigin;\n    AuthenticationExtensionsClientInputs extensions;\n};",
+        "fragment": "dictionary SecurePaymentConfirmationRequest {\n    required BufferSource challenge;\n    required USVString rpId;\n    required sequence<BufferSource> credentialIds;\n    required PaymentCredentialInstrument instrument;\n    unsigned long timeout;\n    DOMString payeeName;\n    USVString payeeOrigin;\n    AuthenticationExtensionsClientInputs extensions;\n};",
         "type": "dictionary",
         "name": "SecurePaymentConfirmationRequest",
         "inheritance": null,
@@ -52,7 +52,7 @@
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
-              "generic": "FrozenArray",
+              "generic": "sequence",
               "nullable": false,
               "union": false,
               "idlType": [

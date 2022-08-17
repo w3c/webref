@@ -20,79 +20,65 @@
       ]
     }
   },
-  "descriptors": {
-    "font-size": [
-      {
-        "name": "font-size",
-        "for": "@font-face",
-        "value": "auto | [<number>]{1,2}",
-        "initial": "normal"
-      }
-    ],
-    "size-adjust": [
-      {
-        "name": "size-adjust",
-        "for": "@font-face",
-        "value": "<percentage [0,∞]>",
-        "initial": "100%"
-      }
-    ],
-    "ascent-override": [
-      {
-        "name": "ascent-override",
-        "for": "@font-face",
-        "value": "[ normal | <percentage [0,∞]> ]{1,2}",
-        "initial": "normal"
-      }
-    ],
-    "descent-override": [
-      {
-        "name": "descent-override",
-        "for": "@font-face",
-        "value": "[ normal | <percentage [0,∞]> ]{1,2}",
-        "initial": "normal"
-      }
-    ],
-    "line-gap-override": [
-      {
-        "name": "line-gap-override",
-        "for": "@font-face",
-        "value": "[ normal | <percentage [0,∞]> ]{1,2}",
-        "initial": "normal"
-      }
-    ],
-    "superscript-position-override": [
-      {
-        "name": "superscript-position-override",
-        "for": "@font-face",
-        "value": "[ normal | from-font | <percentage> ]{1,2}",
-        "initial": "normal"
-      }
-    ],
-    "subscript-position-override": [
-      {
-        "name": "subscript-position-override",
-        "for": "@font-face",
-        "value": "[ normal | from-font | <percentage> ]{1,2}",
-        "initial": "normal"
-      }
-    ],
-    "superscript-size-override": [
-      {
-        "name": "superscript-size-override",
-        "for": "@font-face",
-        "value": "[ normal | from-font | <percentage [0,∞]> ]{1,2}",
-        "initial": "normal"
-      }
-    ],
-    "subscript-size-override": [
-      {
-        "name": "subscript-size-override",
-        "for": "@font-face",
-        "value": "[ normal | from-font | <percentage [0,∞]> ]{1,2}",
-        "initial": "normal"
-      }
-    ]
+  "atrules": {
+    "@font-face": {
+      "descriptors": [
+        {
+          "name": "font-size",
+          "for": "@font-face",
+          "value": "auto | [<number>]{1,2}",
+          "initial": "normal"
+        },
+        {
+          "name": "size-adjust",
+          "for": "@font-face",
+          "value": "<percentage [0,∞]>",
+          "initial": "100%"
+        },
+        {
+          "name": "ascent-override",
+          "for": "@font-face",
+          "value": "[ normal | <percentage [0,∞]> ]{1,2}",
+          "initial": "normal"
+        },
+        {
+          "name": "descent-override",
+          "for": "@font-face",
+          "value": "[ normal | <percentage [0,∞]> ]{1,2}",
+          "initial": "normal"
+        },
+        {
+          "name": "line-gap-override",
+          "for": "@font-face",
+          "value": "[ normal | <percentage [0,∞]> ]{1,2}",
+          "initial": "normal"
+        },
+        {
+          "name": "superscript-position-override",
+          "for": "@font-face",
+          "value": "[ normal | from-font | <percentage> ]{1,2}",
+          "initial": "normal"
+        },
+        {
+          "name": "subscript-position-override",
+          "for": "@font-face",
+          "value": "[ normal | from-font | <percentage> ]{1,2}",
+          "initial": "normal"
+        },
+        {
+          "name": "superscript-size-override",
+          "for": "@font-face",
+          "value": "[ normal | from-font | <percentage [0,∞]> ]{1,2}",
+          "initial": "normal"
+        },
+        {
+          "name": "subscript-size-override",
+          "for": "@font-face",
+          "value": "[ normal | from-font | <percentage [0,∞]> ]{1,2}",
+          "initial": "normal"
+        }
+      ]
+    }
   },
   "valuespaces": {
     "<font-format>": {

@@ -19,10 +19,19 @@
       ]
     }
   },
-  "descriptors": {},
+  "atrules": {
+    "@import": {
+      "value": "@import [ <url> | <string> ] [ layer | layer(<layer-name>) ]? <import-condition> ;",
+      "descriptors": []
+    },
+    "@layer": {
+      "value": "@layer <layer-name>? { <stylesheet> }",
+      "descriptors": []
+    }
+  },
   "valuespaces": {
-    "<import-condition>": {
-      "value": "[ supports( [ <supports-condition> | <declaration> ] ) ]? <media-query-list>? ;"
+    "<import-conditions>": {
+      "value": "[ supports( [ <supports-condition> | <declaration> ] ) ]? <media-query-list>?"
     },
     "<layer-name>": {
       "value": "<ident> [ '.' <ident> ]*"

@@ -56,55 +56,48 @@
       ]
     }
   },
-  "descriptors": {
-    "width": [
-      {
-        "name": "width",
-        "for": "@container",
-        "value": "<length>",
-        "type": "range"
-      }
-    ],
-    "height": [
-      {
-        "name": "height",
-        "for": "@container",
-        "value": "<length>",
-        "type": "range"
-      }
-    ],
-    "inline-size": [
-      {
-        "name": "inline-size",
-        "for": "@container",
-        "value": "<length>",
-        "type": "range"
-      }
-    ],
-    "block-size": [
-      {
-        "name": "block-size",
-        "for": "@container",
-        "value": "<length>",
-        "type": "range"
-      }
-    ],
-    "aspect-ratio": [
-      {
-        "name": "aspect-ratio",
-        "for": "@container",
-        "value": "<ratio>",
-        "type": "range"
-      }
-    ],
-    "orientation": [
-      {
-        "name": "orientation",
-        "for": "@container",
-        "value": "portrait | landscape",
-        "type": "discrete"
-      }
-    ]
+  "atrules": {
+    "@container": {
+      "value": "@container [ <container-name> ]? <container-condition> { <stylesheet> }",
+      "descriptors": [
+        {
+          "name": "width",
+          "for": "@container",
+          "value": "<length>",
+          "type": "range"
+        },
+        {
+          "name": "height",
+          "for": "@container",
+          "value": "<length>",
+          "type": "range"
+        },
+        {
+          "name": "inline-size",
+          "for": "@container",
+          "value": "<length>",
+          "type": "range"
+        },
+        {
+          "name": "block-size",
+          "for": "@container",
+          "value": "<length>",
+          "type": "range"
+        },
+        {
+          "name": "aspect-ratio",
+          "for": "@container",
+          "value": "<ratio>",
+          "type": "range"
+        },
+        {
+          "name": "orientation",
+          "for": "@container",
+          "value": "portrait | landscape",
+          "type": "discrete"
+        }
+      ]
+    }
   },
   "valuespaces": {
     "<size-feature>": {

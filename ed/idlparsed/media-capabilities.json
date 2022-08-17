@@ -480,7 +480,7 @@
         "partial": false
       },
       "MediaCapabilitiesKeySystemConfiguration": {
-        "fragment": "dictionary MediaCapabilitiesKeySystemConfiguration {\n    required DOMString keySystem;\n    DOMString initDataType = \"\";\n    MediaKeysRequirement distinctiveIdentifier = \"optional\";\n    MediaKeysRequirement persistentState = \"optional\";\n    sequence<DOMString> sessionTypes;\n    KeySystemTrackConfiguration audio;\n    KeySystemTrackConfiguration video;\n  };",
+        "fragment": "dictionary MediaCapabilitiesKeySystemConfiguration {\n  required DOMString keySystem;\n  DOMString initDataType = \"\";\n  MediaKeysRequirement distinctiveIdentifier = \"optional\";\n  MediaKeysRequirement persistentState = \"optional\";\n  sequence<DOMString> sessionTypes;\n  KeySystemTrackConfiguration audio;\n  KeySystemTrackConfiguration video;\n};",
         "type": "dictionary",
         "name": "MediaCapabilitiesKeySystemConfiguration",
         "inheritance": null,
@@ -613,7 +613,7 @@
         "partial": false
       },
       "KeySystemTrackConfiguration": {
-        "fragment": "dictionary KeySystemTrackConfiguration {\n    DOMString robustness = \"\";\n    DOMString? encryptionScheme = null;\n  };",
+        "fragment": "dictionary KeySystemTrackConfiguration {\n  DOMString robustness = \"\";\n  DOMString? encryptionScheme = null;\n};",
         "type": "dictionary",
         "name": "KeySystemTrackConfiguration",
         "inheritance": null,
