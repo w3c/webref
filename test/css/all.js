@@ -24,24 +24,6 @@ const cssValues = [
   { type: 'value space', prop: 'valuespaces', value: 'value' }
 ];
 
-// TEMP: constructs that are not yet supported by the parser
-// See: https://github.com/w3c/reffy/issues/494#issuecomment-790713119
-// (last validated on 2022-04-07)
-const tempIgnore = [
-  // Stacked combinator "+#?" not supported by css-tree
-  { shortname: 'css-extensions', prop: 'valuespaces', name: '<custom-selector>' },
-
-  // Stacked combinator "#?" not supported by css-tree
-  { shortname: 'css-ui', prop: 'properties', name: 'cursor' },
-
-  // Stacked combinator "+#" not supported by css-tree
-  { shortname: 'fill-stroke', prop: 'properties', name: 'stroke-dasharray' },
-
-  // Unescaped comma with multiplier ",*" not supported by css-tree
-  { shortname: 'svg-animations', prop: 'valuespaces', name: '<control-point>' }
-];
-
-
 // Valuespaces that are defined more than once...
 const duplicatedValuespaces = [
   // Defined in CSS Shapes Module Level 1 and Motion Path Module Level 1
@@ -95,25 +77,12 @@ describe(`The curated view of CSS extracts`, () => {
             if (!desc[value]) {
               continue;
             }
-            if (tempIgnore.some(c => c.shortname === shortname &&
-                c.prop === prop && c.name === name)) {
-              continue;
-            }
             if (type === 'descriptor') {
               for (const dfn of desc[value]) {
                 it(`defines a valid ${type} "${dfn.name}" for at-rule "${name}"`, () => {
                   assert.strictEqual(dfn.for, name);
                   assert.doesNotThrow(() => {
-                    // 2022-07-01: Drop units in numerical ranges for now since
-                    // parser does not support them yet:
-                    // https://github.com/csstree/csstree/issues/192
-                    // (This arguably awful regexp typically replaces:
-                    // <angle [-90deg,90deg]> with <angle [-90,90]>
-                    // <time [0s,∞]> with <time [0,∞]>
-                    const normalizedValue = dfn.value.replace(
-                      /<(?<name>.*?)\s+\[\s*(?<min>\-?(?:\d+|∞))[A-Za-z]*\s*,\s*(?<max>\-?(?:\d+|∞))[A-Za-z]*\s*\]\s*>/g,
-                      '<$<name> [$<min>,$<max>]>');
-                    const ast = definitionSyntax.parse(normalizedValue);
+                    const ast = definitionSyntax.parse(dfn.value);
                     assert(ast.type);
                   }, `Invalid definition value: ${dfn.value}`);
                 });
@@ -122,16 +91,7 @@ describe(`The curated view of CSS extracts`, () => {
             else {
               it(`defines a valid ${type} "${name}"`, () => {
                 assert.doesNotThrow(() => {
-                  // 2022-07-01: Drop units in numerical ranges for now since
-                  // parser does not support them yet:
-                  // https://github.com/csstree/csstree/issues/192
-                  // (This arguably awful regexp typically replaces:
-                  // <angle [-90deg,90deg]> with <angle [-90,90]>
-                  // <time [0s,∞]> with <time [0,∞]>
-                  const normalizedValue = desc[value].replace(
-                    /<(?<name>.*?)\s+\[\s*(?<min>\-?(?:\d+|∞))[A-Za-z]*\s*,\s*(?<max>\-?(?:\d+|∞))[A-Za-z]*\s*\]\s*>/g,
-                    '<$<name> [$<min>,$<max>]>');
-                  const ast = definitionSyntax.parse(normalizedValue);
+                  const ast = definitionSyntax.parse(desc[value]);
                   assert(ast.type);
                 }, `Invalid definition value: ${desc[value]}`);
               });
