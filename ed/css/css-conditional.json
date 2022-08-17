@@ -4,7 +4,16 @@
     "url": "https://drafts.csswg.org/css-conditional-3/"
   },
   "properties": {},
-  "descriptors": {},
+  "atrules": {
+    "@media": {
+      "value": "@media <media-query-list> { <stylesheet> }",
+      "descriptors": []
+    },
+    "@supports": {
+      "value": "@supports <supports-condition> { <stylesheet> }",
+      "descriptors": []
+    }
+  },
   "valuespaces": {
     "<supports-condition>": {
       "value": "not <supports-in-parens> | <supports-in-parens> [ and <supports-in-parens> ]* | <supports-in-parens> [ or <supports-in-parens> ]*"

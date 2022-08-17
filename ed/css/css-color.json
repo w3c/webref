@@ -1,71 +1,103 @@
 {
   "spec": {
-    "title": "CSS Color Module Level 5",
-    "url": "https://drafts.csswg.org/css-color/"
+    "title": "CSS Color Module Level 4",
+    "url": "https://drafts.csswg.org/css-color-4/"
   },
-  "properties": {},
-  "descriptors": {
-    "src": [
-      {
-        "name": "src",
-        "for": "@color-profile",
-        "value": "<url>",
-        "initial": "n/a"
-      }
-    ],
-    "rendering-intent": [
-      {
-        "name": "rendering-intent",
-        "for": "@color-profile",
-        "value": "relative-colorimetric | absolute-colorimetric | perceptual | saturation",
-        "initial": "relative-colorimetric"
-      }
-    ],
-    "components": [
-      {
-        "name": "components",
-        "for": "@color-profile",
-        "value": "<ident>#",
-        "initial": "n/a"
-      }
-    ]
-  },
-  "valuespaces": {
-    "<color-mix()>": {
-      "value": "color-mix( <color-interpolation-method> , [ <color> && <percentage [0,100]>? ]#{2})"
+  "properties": {
+    "color": {
+      "name": "color",
+      "value": "<color>",
+      "initial": "CanvasText",
+      "appliesTo": "all elements and text",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "computedValue": "computed color, see resolving color values",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
+      "styleDeclaration": [
+        "color"
+      ]
     },
-    "<rgb()>": {
-      "value": "rgb( [<percentage> | none]{3} [ / [<alpha-value> | none] ]? ) | rgb( [<number> | none]{3} [ / [<alpha-value> | none] ]? ) | rgb( [ from <color> ]? [ <number> | <percentage> | none]{3} [ / [<alpha-value> | none] ]? )"
+    "opacity": {
+      "name": "opacity",
+      "value": "<alpha-value>",
+      "initial": "1",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "map to the range [0,1]",
+      "computedValue": "specified number, clamped to the range [0,1]",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
+      "styleDeclaration": [
+        "opacity"
+      ]
+    }
+  },
+  "atrules": {},
+  "valuespaces": {
+    "<color>": {
+      "prose": "Colors in CSS are represented by the <color> type:",
+      "value": "<absolute-color-base> | currentcolor | <system-color>"
+    },
+    "<rgba()>": {
+      "prose": "Also, an rgba() legacy color syntax also exists, with an identical grammar and behavior to rgb()."
+    },
+    "<hex-color>": {
+      "prose": "The syntax of a <hex-color> is a <hash-token> token whose value consists of 3, 4, 6, or 8 hexadecimal digits. In other words, a hex color is written as a hash character, \"#\", followed by some number of digits 0-9 or letters a-f (the case of the letters doesn’t matter - #00ff00 is identical to #00FF00)."
+    },
+    "<named-color>": {
+      "prose": "CSS defines a large set of named colors, so that common colors can be written and read more easily. A <named-color> is written as an <ident>, accepted anywhere a <color> is. As usual for CSS-defined <ident>s, all of these keywords are ASCII case-insensitive."
+    },
+    "<system-color>": {
+      "prose": "However, in forced colors mode, most colors on the page are forced into a restricted, user-chosen palette. The <system-color> keywords expose these user-chosen colors so that the rest of the page can integrate with this restricted palette."
+    },
+    "<hsla()>": {
+      "prose": "Also, an hsla() legacy color syntax also exists, with an identical grammar and behavior to hsl()."
+    },
+    "<deprecated-color>": {
+      "prose": "The deprecated system colors are represented as the <deprecated-color> sub-type, and are defined as:"
+    },
+    "<quirky-color>": {
+      "prose": "When CSS is being parsed in quirks mode, <quirky-color> is a type of <color> that is only valid in certain properties:"
+    },
+    "<absolute-color-base>": {
+      "value": "<hex-color> | <absolute-color-function> | <named-color> | transparent"
+    },
+    "<absolute-color-function>": {
+      "value": "<rgb()> | <rgba()> | <hsl()> | <hsla()> | <hwb()> | <lab()> | <lch()> | <oklab()> | <oklch()> | <color()>"
     },
     "<alpha-value>": {
       "value": "<number> | <percentage>"
     },
+    "<hue>": {
+      "value": "<number> | <angle> | none"
+    },
+    "<rgb()>": {
+      "value": "rgb( [<percentage> | none]{3} [ / [<alpha-value> | none] ]? ) | rgb( [<number> | none]{3} [ / [<alpha-value> | none] ]? )"
+    },
     "<hsl()>": {
-      "value": "hsl([from <color>]? [<hue> | none] [<percentage> | <number> | none] [<percentage> | <number> | none] [ / [<alpha-value> | none] ]? )"
+      "value": "hsl( [<hue> | none] [<percentage> | none] [<percentage> | none] [ / [<alpha-value> | none] ]? )"
     },
     "<hwb()>": {
-      "value": "hwb([from <color>]? [<hue> | none] [<percentage> | <number> | none] [<percentage> | <number> | none] [ / [<alpha-value> | none] ]? )"
+      "value": "hwb( [<hue> | none] [<percentage> | none] [<percentage> | none] [ / [<alpha-value> | none] ]? )"
     },
     "<lab()>": {
-      "value": "lab([from <color>]? [<percentage> | <number> | none] [<percentage> | <number> | none] [<percentage> | <number> | none] [ / [<alpha-value> | none] ]? )"
-    },
-    "<oklab()>": {
-      "value": "oklab([from <color>]? [<percentage> | <number> | none] [<percentage> | <number> | none] [<percentage> | <number> | none] [ / [<alpha-value> | none] ]? )"
+      "value": "lab( [<percentage> | <number> | none] [ <percentage> | <number> | none] [ <percentage> | <number> | none] [ / [<alpha-value> | none] ]? )"
     },
     "<lch()>": {
-      "value": "lch([from <color>]? [<percentage> | <number> | none] [<percentage> | <number> | none] [<hue> | none] [ / [<alpha-value> | none] ]? )"
+      "value": "lch( [<percentage> | <number> | none] [ <percentage> | <number> | none] [ <hue> | none] [ / [<alpha-value> | none] ]? )"
+    },
+    "<oklab()>": {
+      "value": "oklab( [ <percentage> | <number> | none] [ <percentage> | <number> | none] [ <percentage> | <number> | none] [ / [<alpha-value> | none] ]? )"
     },
     "<oklch()>": {
-      "value": "oklch([from <color>]? [<percentage> | <number> | none] [<percentage> | <number> | none] [<hue> | none] [ / [<alpha-value> | none] ]? )"
+      "value": "oklch( [ <percentage> | <number> | none] [ <percentage> | <number> | none] [ <hue> | none] [ / [<alpha-value> | none] ]? )"
     },
     "<color()>": {
-      "value": "color( [from <color>]? <colorspace-params> [ / [ <alpha-value> | none ] ]? )"
+      "value": "color( <colorspace-params> [ / [ <alpha-value> | none ] ]? )"
     },
     "<colorspace-params>": {
-      "value": "[<custom-params> | <predefined-rgb-params> | <xyz-params>]"
-    },
-    "<custom-params>": {
-      "value": "<dashed-ident> [ <number> | <percentage> | none ]#"
+      "value": "[ <predefined-rgb-params> | <xyz-params>]"
     },
     "<predefined-rgb-params>": {
       "value": "<predefined-rgb> [ <number> | <percentage> | none ]{3}"
@@ -74,16 +106,25 @@
       "value": "srgb | srgb-linear | display-p3 | a98-rgb | prophoto-rgb | rec2020"
     },
     "<xyz-params>": {
-      "value": "<xyz> [ <number> | <percentage> | none ]{3}"
+      "value": "<xyz-space> [ <number> | none ]{3}"
     },
-    "<xyz>": {
+    "<xyz-space>": {
       "value": "xyz | xyz-d50 | xyz-d65"
     },
-    "<device-cmyk()>": {
-      "value": "device-cmyk( <cmyk-component>{4} [ / <alpha-value> ]? )"
+    "<color-space>": {
+      "value": "<rectangular-color-space> | <polar-color-space>"
     },
-    "<cmyk-component>": {
-      "value": "<number> | <percentage>"
+    "<rectangular-color-space>": {
+      "value": "srgb | srgb-linear | lab | oklab | xyz | xyz-d50 | xyz-d65"
+    },
+    "<polar-color-space>": {
+      "value": "hsl | hwb | lch | oklch"
+    },
+    "<hue-interpolation-method>": {
+      "value": "[ shorter | longer | increasing | decreasing | specified ] hue"
+    },
+    "<color-interpolation-method>": {
+      "value": "in [ <rectangular-color-space> | <polar-color-space> <hue-interpolation-method>? ]"
     }
   }
 }

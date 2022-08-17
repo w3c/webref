@@ -4,7 +4,16 @@
     "url": "https://drafts.csswg.org/css-conditional-5/"
   },
   "properties": {},
-  "descriptors": {},
+  "atrules": {
+    "@when": {
+      "value": "@when <boolean-condition> { <stylesheet> }",
+      "descriptors": []
+    },
+    "@else": {
+      "value": "@else <boolean-condition>? { <stylesheet> }",
+      "descriptors": []
+    }
+  },
   "valuespaces": {
     "<supports-feature>": {
       "value": "<supports-selector-fn> | <supports-font-tech-fn> | <supports-font-format-fn> | <supports-decl>"

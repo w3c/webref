@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2022-08-17T06:39:33.943Z",
+  "date": "2022-08-17T12:50:36.847Z",
   "options": {
     "fallback": "webref-fallback/ed/index.json",
     "output": "report",
@@ -25,9 +25,9 @@
   },
   "stats": {
     "crawled": 473,
-    "errors": 5
+    "errors": 0
   },
-  "crawler": "reffy-8.0.4",
+  "crawler": "reffy-9.0.0",
   "results": [
     {
       "url": "https://compat.spec.whatwg.org/",
@@ -10971,8 +10971,7 @@
       "refs": "refs/w3c-patent-policy.json",
       "dfns": "dfns/w3c-patent-policy.json",
       "headings": "headings/w3c-patent-policy.json",
-      "ids": "ids/w3c-patent-policy.json",
-      "error": "Error: Loading https://www.w3.org/Consortium/Patent-Policy/ triggered network error FetchError: request to https://www.w3.org/Consortium/Patent-Policy/ failed, reason: connect ETIMEDOUT 128.30.52.100:443 Error: Loading https://www.w3.org/Consortium/Patent-Policy/ triggered network error FetchError: request to https://www.w3.org/Consortium/Patent-Policy/ failed, reason: connect ETIMEDOUT 128.30.52.100:443\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:483:19)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:353:22)\n    at async Promise.all (index 224)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:361:21)"
+      "ids": "ids/w3c-patent-policy.json"
     },
     {
       "url": "https://www.w3.org/Consortium/Process/",
@@ -11019,8 +11018,7 @@
       "refs": "refs/w3c-process.json",
       "dfns": "dfns/w3c-process.json",
       "headings": "headings/w3c-process.json",
-      "ids": "ids/w3c-process.json",
-      "error": "Error: Loading https://www.w3.org/Consortium/Process/ triggered network error FetchError: request to https://www.w3.org/Consortium/Process/ failed, reason: connect ETIMEDOUT 128.30.52.100:443 Error: Loading https://www.w3.org/Consortium/Process/ triggered network error FetchError: request to https://www.w3.org/Consortium/Process/ failed, reason: connect ETIMEDOUT 128.30.52.100:443\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:483:19)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:353:22)\n    at async Promise.all (index 225)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:361:21)"
+      "ids": "ids/w3c-process.json"
     },
     {
       "url": "https://www.w3.org/TR/accelerometer/",
@@ -12682,6 +12680,12 @@
         "nightlyUrl": "https://drafts.csswg.org/css-color/"
       },
       "seriesVersion": "4",
+      "nightly": {
+        "url": "https://drafts.csswg.org/css-color-4/",
+        "repository": "https://github.com/w3c/csswg-drafts",
+        "sourcePath": "css-color-4/Overview.bs",
+        "filename": "Overview.html"
+      },
       "seriesNext": "css-color-5",
       "organization": "W3C",
       "groups": [
@@ -12694,13 +12698,7 @@
         "url": "https://www.w3.org/TR/css-color-4/",
         "filename": "Overview.html"
       },
-      "nightly": {
-        "url": "https://drafts.csswg.org/css-color/",
-        "repository": "https://github.com/w3c/csswg-drafts",
-        "sourcePath": "css-color-4/Overview.bs",
-        "filename": "Overview.html"
-      },
-      "title": "CSS Color Module Level 5",
+      "title": "CSS Color Module Level 4",
       "source": "w3c",
       "shortTitle": "CSS Color 4",
       "categories": [
@@ -12714,14 +12712,14 @@
       },
       "versions": [
         "https://www.w3.org/TR/css-color-4/",
-        "https://drafts.csswg.org/css-color/"
+        "https://drafts.csswg.org/css-color-4/"
       ],
-      "crawled": "https://drafts.csswg.org/css-color/",
+      "crawled": "https://drafts.csswg.org/css-color-4/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 16 Aug 2022 23:36:18 GMT"
+        "lastModified": "Tue, 16 Aug 2022 23:36:12 GMT"
       },
       "generator": "bikeshed",
-      "date": "15 July 2022",
+      "date": "13 August 2022",
       "links": "links/css-color-4.json",
       "refs": "refs/css-color-4.json",
       "css": "css/css-color.json",
@@ -15033,7 +15031,6 @@
       "links": "links/css-properties-values-api-1.json",
       "refs": "refs/css-properties-values-api-1.json",
       "idl": "idl/css-properties-values-api.idl",
-      "css": "css/css-properties-values-api.json",
       "dfns": "dfns/css-properties-values-api-1.json",
       "headings": "headings/css-properties-values-api-1.json",
       "ids": "ids/css-properties-values-api-1.json"
@@ -17051,8 +17048,7 @@
       "css": "css/CSS.json",
       "dfns": "dfns/CSS22.json",
       "headings": "headings/CSS22.json",
-      "ids": "ids/CSS22.json",
-      "error": "Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers' Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers'\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:483:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:353:22)\n    at async Promise.all (index 326)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:361:21)"
+      "ids": "ids/CSS22.json"
     },
     {
       "url": "https://www.w3.org/TR/css3-exclusions/",
@@ -17269,6 +17265,12 @@
       "categories": [
         "browser"
       ],
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "device-memory"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/device-memory-1/",
         "https://www.w3.org/TR/device-memory/"
@@ -17284,8 +17286,7 @@
       "idl": "idl/device-memory.idl",
       "dfns": "dfns/device-memory-1.json",
       "headings": "headings/device-memory-1.json",
-      "ids": "ids/device-memory-1.json",
-      "error": "Error: Loading https://www.w3.org/TR/device-memory/ triggered network error FetchError: request to https://www.w3.org/TR/device-memory/ failed, reason: connect ETIMEDOUT 128.30.52.100:443 Error: Loading https://www.w3.org/TR/device-memory/ triggered network error FetchError: request to https://www.w3.org/TR/device-memory/ failed, reason: connect ETIMEDOUT 128.30.52.100:443\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:483:19)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:353:22)\n    at async Promise.all (index 330)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:361:21)"
+      "ids": "ids/device-memory-1.json"
     },
     {
       "url": "https://www.w3.org/TR/device-posture/",
@@ -20883,17 +20884,18 @@
       "ids": "ids/payment-method-manifest.json"
     },
     {
-      "url": "https://www.w3.org/TR/payment-request/",
+      "url": "https://www.w3.org/TR/payment-request-1.1/",
       "seriesComposition": "full",
-      "shortname": "payment-request",
+      "shortname": "payment-request-1.1",
       "series": {
         "shortname": "payment-request",
-        "currentSpecification": "payment-request",
+        "currentSpecification": "payment-request-1.1",
         "title": "Payment Request API",
         "shortTitle": "Payment Request API",
         "releaseUrl": "https://www.w3.org/TR/payment-request/",
         "nightlyUrl": "https://w3c.github.io/payment-request/"
       },
+      "seriesVersion": "1.1",
       "organization": "W3C",
       "groups": [
         {
@@ -20902,7 +20904,7 @@
         }
       ],
       "release": {
-        "url": "https://www.w3.org/TR/payment-request/",
+        "url": "https://www.w3.org/TR/payment-request-1.1/",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -20913,7 +20915,7 @@
       },
       "title": "Payment Request API 1.1",
       "source": "w3c",
-      "shortTitle": "Payment Request API",
+      "shortTitle": "Payment Request API 1.1",
       "categories": [
         "browser"
       ],
@@ -20924,7 +20926,7 @@
         ]
       },
       "versions": [
-        "https://www.w3.org/TR/payment-request/",
+        "https://www.w3.org/TR/payment-request-1.1/",
         "https://w3c.github.io/payment-request/"
       ],
       "crawled": "https://w3c.github.io/payment-request/",
@@ -20933,13 +20935,13 @@
       },
       "generator": "respec",
       "date": "20 July 2022",
-      "links": "links/payment-request.json",
-      "refs": "refs/payment-request.json",
-      "events": "events/payment-request.json",
+      "links": "links/payment-request-1.1.json",
+      "refs": "refs/payment-request-1.1.json",
+      "events": "events/payment-request-1.1.json",
       "idl": "idl/payment-request.idl",
-      "dfns": "dfns/payment-request.json",
-      "headings": "headings/payment-request.json",
-      "ids": "ids/payment-request.json"
+      "dfns": "dfns/payment-request-1.1.json",
+      "headings": "headings/payment-request-1.1.json",
+      "ids": "ids/payment-request-1.1.json"
     },
     {
       "url": "https://www.w3.org/TR/performance-timeline/",
@@ -22756,8 +22758,7 @@
       "refs": "refs/SVG11.json",
       "elements": "elements/SVG11.json",
       "headings": "headings/SVG11.json",
-      "ids": "ids/SVG11.json",
-      "error": "Error: Loading https://www.w3.org/TR/SVG11/ triggered network error FetchError: request to https://www.w3.org/TR/SVG11/ failed, reason: connect ETIMEDOUT 128.30.52.100:443 Error: Loading https://www.w3.org/TR/SVG11/ triggered network error FetchError: request to https://www.w3.org/TR/SVG11/ failed, reason: connect ETIMEDOUT 128.30.52.100:443\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:483:19)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:353:22)\n    at async Promise.all (index 425)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:361:21)"
+      "ids": "ids/SVG11.json"
     },
     {
       "url": "https://www.w3.org/TR/SVG2/",
