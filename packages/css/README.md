@@ -15,7 +15,7 @@ for (const [shortname, data] of Object.entries(parsedFiles)) {
 }
 ```
 
-CSS fragments that appear in the objects, in other words the contents of the `properties[].value`, `properties[].newValues`, `descriptors[].value` and `valuespaces[].value` properties can be parsed with the [CSSTree Value Definition Syntax parser](https://github.com/csstree/csstree/blob/master/docs/definition-syntax.md#value-definition-syntax). Example:
+CSS fragments that appear in the objects, in other words the contents of the `properties[].value`, `properties[].newValues`, `atrules[].value`, `atrules[].descriptors[].value` and `valuespaces[].value` properties can be parsed with the [CSSTree Value Definition Syntax parser](https://github.com/csstree/csstree/blob/master/docs/definition-syntax.md#value-definition-syntax). Example:
 
 ```js
 const css = require('@webref/css');
@@ -40,6 +40,6 @@ for (const [shortname, data] of Object.entries(parsedFiles)) {
 # Guarantees
 
 The following guarantees are provided by this package:
-- All CSS files can be parsed by the version of [CSSTree](https://github.com/csstree/csstree) used in `peerDependencies` in `package.json`, with the exception of a handful CSS value definitions that, although valid, are not yet supported by CSSTree.
+- All values in CSS files can be parsed by the version of [CSSTree](https://github.com/csstree/csstree) used in `peerDependencies` in `package.json`.
 - No duplicate definitions of CSS properties provided that CSS extracts of [delta specs](https://github.com/w3c/browser-specs/#seriescomposition) are not taken into account (such extracts end with `-n.json`, where `n` is a level number).
 - CSS extracts contain a base definition of all CSS properties that get extended by other CSS property definitions (those for which `newValues` is set).
