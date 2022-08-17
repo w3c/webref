@@ -19,7 +19,8 @@ const curatedFolder = path.join(__dirname, '..', '..', 'curated', 'css');
 const cssValues = [
   { type: 'property', prop: 'properties', value: 'value' },
   { type: 'extended property', prop: 'properties', value: 'newValues' },
-  { type: 'descriptor', prop: 'descriptors', value: 'value' },
+  { type: 'at-rule', prop: 'atrules', value: 'value' },
+  { type: 'descriptor', prop: 'atrules', value: 'descriptors' },
   { type: 'value space', prop: 'valuespaces', value: 'value' }
 ];
 
@@ -72,7 +73,7 @@ describe(`The curated view of CSS extracts`, () => {
 
         const spec = index.results.find(s => s.nightly.url === data.spec.url);
         for (const { type, prop, value } of cssValues) {
-          for (const [name, desc] of Object.entries(data[prop])) {
+          for (const [name, desc] of Object.entries(data[prop] || {})) {
             if ((type === 'property') && (spec.seriesComposition !== 'delta') && !desc.newValues) {
               if (!baseProperties[name]) {
                 baseProperties[name] = [];
@@ -98,21 +99,43 @@ describe(`The curated view of CSS extracts`, () => {
                 c.prop === prop && c.name === name)) {
               continue;
             }
-            it(`defines a valid ${type} "${name}"`, () => {
-              assert.doesNotThrow(() => {
-                // 2022-07-01: Drop units in numerical ranges for now since
-                // parser does not support them yet:
-                // https://github.com/csstree/csstree/issues/192
-                // (This arguably awful regexp typically replaces:
-                // <angle [-90deg,90deg]> with <angle [-90,90]>
-                // <time [0s,∞]> with <time [0,∞]>
-                const normalizedValue = desc[value].replace(
-                  /<(?<name>.*?)\s+\[\s*(?<min>\-?(?:\d+|∞))[A-Za-z]*\s*,\s*(?<max>\-?(?:\d+|∞))[A-Za-z]*\s*\]\s*>/g,
-                  '<$<name> [$<min>,$<max>]>');
-                const ast = definitionSyntax.parse(normalizedValue);
-                assert(ast.type);
-              }, `Invalid definition value: ${desc[value]}`);
-            });
+            if (type === 'descriptor') {
+              for (const dfn of desc[value]) {
+                it(`defines a valid ${type} "${dfn.name}" for at-rule "${name}"`, () => {
+                  assert.strictEqual(dfn.for, name);
+                  assert.doesNotThrow(() => {
+                    // 2022-07-01: Drop units in numerical ranges for now since
+                    // parser does not support them yet:
+                    // https://github.com/csstree/csstree/issues/192
+                    // (This arguably awful regexp typically replaces:
+                    // <angle [-90deg,90deg]> with <angle [-90,90]>
+                    // <time [0s,∞]> with <time [0,∞]>
+                    const normalizedValue = dfn.value.replace(
+                      /<(?<name>.*?)\s+\[\s*(?<min>\-?(?:\d+|∞))[A-Za-z]*\s*,\s*(?<max>\-?(?:\d+|∞))[A-Za-z]*\s*\]\s*>/g,
+                      '<$<name> [$<min>,$<max>]>');
+                    const ast = definitionSyntax.parse(normalizedValue);
+                    assert(ast.type);
+                  }, `Invalid definition value: ${dfn.value}`);
+                });
+              }
+            }
+            else {
+              it(`defines a valid ${type} "${name}"`, () => {
+                assert.doesNotThrow(() => {
+                  // 2022-07-01: Drop units in numerical ranges for now since
+                  // parser does not support them yet:
+                  // https://github.com/csstree/csstree/issues/192
+                  // (This arguably awful regexp typically replaces:
+                  // <angle [-90deg,90deg]> with <angle [-90,90]>
+                  // <time [0s,∞]> with <time [0,∞]>
+                  const normalizedValue = desc[value].replace(
+                    /<(?<name>.*?)\s+\[\s*(?<min>\-?(?:\d+|∞))[A-Za-z]*\s*,\s*(?<max>\-?(?:\d+|∞))[A-Za-z]*\s*\]\s*>/g,
+                    '<$<name> [$<min>,$<max>]>');
+                  const ast = definitionSyntax.parse(normalizedValue);
+                  assert(ast.type);
+                }, `Invalid definition value: ${desc[value]}`);
+              });
+            };
           }
         }
       });
