@@ -1860,11 +1860,56 @@
         "partial": false
       },
       "GPUBuffer": {
-        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUBuffer {\n    Promise<undefined> mapAsync(GPUMapModeFlags mode, optional GPUSize64 offset = 0, optional GPUSize64 size);\n    ArrayBuffer getMappedRange(optional GPUSize64 offset = 0, optional GPUSize64 size);\n    undefined unmap();\n\n    undefined destroy();\n\n    readonly attribute GPUSize64 size;\n    readonly attribute GPUBufferUsageFlags usage;\n};",
+        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUBuffer {\n    readonly attribute GPUSize64 size;\n    readonly attribute GPUBufferUsageFlags usage;\n\n    readonly attribute GPUBufferMapState mapState;\n\n    Promise<undefined> mapAsync(GPUMapModeFlags mode, optional GPUSize64 offset = 0, optional GPUSize64 size);\n    ArrayBuffer getMappedRange(optional GPUSize64 offset = 0, optional GPUSize64 size);\n    undefined unmap();\n\n    undefined destroy();\n};",
         "type": "interface",
         "name": "GPUBuffer",
         "inheritance": null,
         "members": [
+          {
+            "type": "attribute",
+            "name": "size",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUSize64"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "usage",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUBufferUsageFlags"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "mapState",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUBufferMapState"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
           {
             "type": "operation",
             "name": "mapAsync",
@@ -2021,36 +2066,6 @@
             "arguments": [],
             "extAttrs": [],
             "special": ""
-          },
-          {
-            "type": "attribute",
-            "name": "size",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "GPUSize64"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "attribute",
-            "name": "usage",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "GPUBufferUsageFlags"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
           }
         ],
         "extAttrs": [
@@ -2078,6 +2093,26 @@
           }
         ],
         "partial": false
+      },
+      "GPUBufferMapState": {
+        "fragment": "enum GPUBufferMapState {\n    \"unmapped\",\n    \"pending\",\n    \"mapped\"\n};",
+        "type": "enum",
+        "name": "GPUBufferMapState",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "unmapped"
+          },
+          {
+            "type": "enum-value",
+            "value": "pending"
+          },
+          {
+            "type": "enum-value",
+            "value": "mapped"
+          }
+        ],
+        "extAttrs": []
       },
       "GPUBufferDescriptor": {
         "fragment": "dictionary GPUBufferDescriptor : GPUObjectDescriptorBase {\n    required GPUSize64 size;\n    required GPUBufferUsageFlags usage;\n    boolean mappedAtCreation = false;\n};",
@@ -12329,10 +12364,11 @@
         "EventHandler"
       ],
       "GPUBuffer": [
-        "GPUMapModeFlags",
         "GPUSize64",
-        "ArrayBuffer",
         "GPUBufferUsageFlags",
+        "GPUBufferMapState",
+        "GPUMapModeFlags",
+        "ArrayBuffer",
         "GPUObjectBase"
       ],
       "GPUBufferDescriptor": [
