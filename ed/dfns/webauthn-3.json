@@ -1503,25 +1503,6 @@
       "definedIn": "dt"
     },
     {
-      "id": "up",
-      "href": "https://w3c.github.io/webauthn/#up",
-      "linkingText": [
-        "UP"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "sctn-terminology",
-        "href": "https://w3c.github.io/webauthn/#sctn-terminology",
-        "title": "Terminology",
-        "number": "4"
-      },
-      "definedIn": "dt"
-    },
-    {
       "id": "user-verification",
       "href": "https://w3c.github.io/webauthn/#user-verification",
       "linkingText": [
@@ -1545,25 +1526,6 @@
       "href": "https://w3c.github.io/webauthn/#concept-user-verified",
       "linkingText": [
         "User Verified"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "sctn-terminology",
-        "href": "https://w3c.github.io/webauthn/#sctn-terminology",
-        "title": "Terminology",
-        "number": "4"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "uv",
-      "href": "https://w3c.github.io/webauthn/#uv",
-      "linkingText": [
-        "UV"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -5827,14 +5789,16 @@
       "definedIn": "prose"
     },
     {
-      "id": "rpidhash",
-      "href": "https://w3c.github.io/webauthn/#rpidhash",
+      "id": "authdata-rpidhash",
+      "href": "https://w3c.github.io/webauthn/#authdata-rpidhash",
       "linkingText": [
         "rpIdHash"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
+      "for": [
+        "authData"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
@@ -5846,14 +5810,16 @@
       "definedIn": "table"
     },
     {
-      "id": "flags",
-      "href": "https://w3c.github.io/webauthn/#flags",
+      "id": "authdata-flags",
+      "href": "https://w3c.github.io/webauthn/#authdata-flags",
       "linkingText": [
         "flags"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
+      "for": [
+        "authData"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
@@ -5865,14 +5831,142 @@
       "definedIn": "table"
     },
     {
-      "id": "signcount",
-      "href": "https://w3c.github.io/webauthn/#signcount",
+      "id": "authdata-flags-up",
+      "href": "https://w3c.github.io/webauthn/#authdata-flags-up",
+      "linkingText": [
+        "UP"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "authData/flags"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sctn-authenticator-data",
+        "href": "https://w3c.github.io/webauthn/#sctn-authenticator-data",
+        "title": "Authenticator Data",
+        "number": "6.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "authdata-flags-uv",
+      "href": "https://w3c.github.io/webauthn/#authdata-flags-uv",
+      "linkingText": [
+        "UV"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "authData/flags"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sctn-authenticator-data",
+        "href": "https://w3c.github.io/webauthn/#sctn-authenticator-data",
+        "title": "Authenticator Data",
+        "number": "6.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "authdata-flags-be",
+      "href": "https://w3c.github.io/webauthn/#authdata-flags-be",
+      "linkingText": [
+        "BE"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "authData/flags"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sctn-authenticator-data",
+        "href": "https://w3c.github.io/webauthn/#sctn-authenticator-data",
+        "title": "Authenticator Data",
+        "number": "6.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "authdata-flags-bs",
+      "href": "https://w3c.github.io/webauthn/#authdata-flags-bs",
+      "linkingText": [
+        "BS"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "authData/flags"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sctn-authenticator-data",
+        "href": "https://w3c.github.io/webauthn/#sctn-authenticator-data",
+        "title": "Authenticator Data",
+        "number": "6.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "authdata-flags-at",
+      "href": "https://w3c.github.io/webauthn/#authdata-flags-at",
+      "linkingText": [
+        "AT"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "authData/flags"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sctn-authenticator-data",
+        "href": "https://w3c.github.io/webauthn/#sctn-authenticator-data",
+        "title": "Authenticator Data",
+        "number": "6.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "authdata-flags-ed",
+      "href": "https://w3c.github.io/webauthn/#authdata-flags-ed",
+      "linkingText": [
+        "ED"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "authData/flags"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sctn-authenticator-data",
+        "href": "https://w3c.github.io/webauthn/#sctn-authenticator-data",
+        "title": "Authenticator Data",
+        "number": "6.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "authdata-signcount",
+      "href": "https://w3c.github.io/webauthn/#authdata-signcount",
       "linkingText": [
         "signCount"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
+      "for": [
+        "authData"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
@@ -5884,14 +5978,16 @@
       "definedIn": "table"
     },
     {
-      "id": "attestedcredentialdata",
-      "href": "https://w3c.github.io/webauthn/#attestedcredentialdata",
+      "id": "authdata-attestedcredentialdata",
+      "href": "https://w3c.github.io/webauthn/#authdata-attestedcredentialdata",
       "linkingText": [
         "attestedCredentialData"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
+      "for": [
+        "authData"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
@@ -5903,14 +5999,16 @@
       "definedIn": "table"
     },
     {
-      "id": "authdataextensions",
-      "href": "https://w3c.github.io/webauthn/#authdataextensions",
+      "id": "authdata-extensions",
+      "href": "https://w3c.github.io/webauthn/#authdata-extensions",
       "linkingText": [
-        "authDataExtensions"
+        "extensions"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
+      "for": [
+        "authData"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
@@ -6635,14 +6733,16 @@
       "definedIn": "prose"
     },
     {
-      "id": "aaguid",
-      "href": "https://w3c.github.io/webauthn/#aaguid",
+      "id": "authdata-attestedcredentialdata-aaguid",
+      "href": "https://w3c.github.io/webauthn/#authdata-attestedcredentialdata-aaguid",
       "linkingText": [
         "aaguid"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
+      "for": [
+        "authData/attestedCredentialData"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
@@ -6654,14 +6754,16 @@
       "definedIn": "table"
     },
     {
-      "id": "credentialidlength",
-      "href": "https://w3c.github.io/webauthn/#credentialidlength",
+      "id": "authdata-attestedcredentialdata-credentialidlength",
+      "href": "https://w3c.github.io/webauthn/#authdata-attestedcredentialdata-credentialidlength",
       "linkingText": [
         "credentialIdLength"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
+      "for": [
+        "authData/attestedCredentialData"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
@@ -6673,14 +6775,16 @@
       "definedIn": "table"
     },
     {
-      "id": "credentialid",
-      "href": "https://w3c.github.io/webauthn/#credentialid",
+      "id": "authdata-attestedcredentialdata-credentialid",
+      "href": "https://w3c.github.io/webauthn/#authdata-attestedcredentialdata-credentialid",
       "linkingText": [
         "credentialId"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
+      "for": [
+        "authData/attestedCredentialData"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
@@ -6692,14 +6796,16 @@
       "definedIn": "table"
     },
     {
-      "id": "credentialpublickey",
-      "href": "https://w3c.github.io/webauthn/#credentialpublickey",
+      "id": "authdata-attestedcredentialdata-credentialpublickey",
+      "href": "https://w3c.github.io/webauthn/#authdata-attestedcredentialdata-credentialpublickey",
       "linkingText": [
         "credentialPublicKey"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
+      "for": [
+        "authData/attestedCredentialData"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
