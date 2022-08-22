@@ -4,87 +4,71 @@
     "url": "https://www.w3.org/TR/css-counter-styles-3/"
   },
   "properties": {},
-  "descriptors": {
-    "system": [
-      {
-        "name": "system",
-        "for": "@counter-style",
-        "value": "cyclic | numeric | alphabetic | symbolic | additive | [fixed <integer>?] | [ extends <counter-style-name> ]",
-        "initial": "symbolic"
-      }
-    ],
-    "negative": [
-      {
-        "name": "negative",
-        "for": "@counter-style",
-        "value": "<symbol> <symbol>?",
-        "initial": "\"\\2D\" (\"-\" hyphen-minus)"
-      }
-    ],
-    "prefix": [
-      {
-        "name": "prefix",
-        "for": "@counter-style",
-        "value": "<symbol>",
-        "initial": "\"\" (the empty string)"
-      }
-    ],
-    "suffix": [
-      {
-        "name": "suffix",
-        "for": "@counter-style",
-        "value": "<symbol>",
-        "initial": "\"\\2E\\20\" (\".\" full stop followed by a space)"
-      }
-    ],
-    "range": [
-      {
-        "name": "range",
-        "for": "@counter-style",
-        "value": "[ [ <integer> | infinite ]{2} ]# | auto",
-        "initial": "auto"
-      }
-    ],
-    "pad": [
-      {
-        "name": "pad",
-        "for": "@counter-style",
-        "value": "<integer [0,∞]> && <symbol>",
-        "initial": "0 \"\""
-      }
-    ],
-    "fallback": [
-      {
-        "name": "fallback",
-        "for": "@counter-style",
-        "value": "<counter-style-name>",
-        "initial": "decimal"
-      }
-    ],
-    "symbols": [
-      {
-        "name": "symbols",
-        "for": "@counter-style",
-        "value": "<symbol>+",
-        "initial": "n/a"
-      }
-    ],
-    "additive-symbols": [
-      {
-        "name": "additive-symbols",
-        "for": "@counter-style",
-        "value": "[ <integer [0,∞]> && <symbol> ]#",
-        "initial": "n/a"
-      }
-    ],
-    "speak-as": [
-      {
-        "name": "speak-as",
-        "for": "@counter-style",
-        "value": "auto | bullets | numbers | words | spell-out | <counter-style-name>",
-        "initial": "auto"
-      }
-    ]
+  "atrules": {
+    "@counter-style": {
+      "descriptors": [
+        {
+          "name": "system",
+          "for": "@counter-style",
+          "value": "cyclic | numeric | alphabetic | symbolic | additive | [fixed <integer>?] | [ extends <counter-style-name> ]",
+          "initial": "symbolic"
+        },
+        {
+          "name": "negative",
+          "for": "@counter-style",
+          "value": "<symbol> <symbol>?",
+          "initial": "\"\\2D\" (\"-\" hyphen-minus)"
+        },
+        {
+          "name": "prefix",
+          "for": "@counter-style",
+          "value": "<symbol>",
+          "initial": "\"\" (the empty string)"
+        },
+        {
+          "name": "suffix",
+          "for": "@counter-style",
+          "value": "<symbol>",
+          "initial": "\"\\2E\\20\" (\".\" full stop followed by a space)"
+        },
+        {
+          "name": "range",
+          "for": "@counter-style",
+          "value": "[ [ <integer> | infinite ]{2} ]# | auto",
+          "initial": "auto"
+        },
+        {
+          "name": "pad",
+          "for": "@counter-style",
+          "value": "<integer [0,∞]> && <symbol>",
+          "initial": "0 \"\""
+        },
+        {
+          "name": "fallback",
+          "for": "@counter-style",
+          "value": "<counter-style-name>",
+          "initial": "decimal"
+        },
+        {
+          "name": "symbols",
+          "for": "@counter-style",
+          "value": "<symbol>+",
+          "initial": "n/a"
+        },
+        {
+          "name": "additive-symbols",
+          "for": "@counter-style",
+          "value": "[ <integer [0,∞]> && <symbol> ]#",
+          "initial": "n/a"
+        },
+        {
+          "name": "speak-as",
+          "for": "@counter-style",
+          "value": "auto | bullets | numbers | words | spell-out | <counter-style-name>",
+          "initial": "auto"
+        }
+      ]
+    }
   },
   "valuespaces": {
     "<counter-style-name>": {

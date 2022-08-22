@@ -4,7 +4,12 @@
     "url": "https://www.w3.org/TR/css-cascade-6/"
   },
   "properties": {},
-  "descriptors": {},
+  "atrules": {
+    "@scope": {
+      "value": "@scope (<scope-start>) [to (<scope-end>)]? { <stylesheet> }",
+      "descriptors": []
+    }
+  },
   "valuespaces": {
     "<scope-start>": {
       "prose": "The <scope-start> is a <forgiving-selector-list>. Each element matched by <scope-start> is a scoping element, creating a scope with itself as the scoping root."

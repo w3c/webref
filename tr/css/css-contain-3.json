@@ -13,12 +13,12 @@
     },
     "container-type": {
       "name": "container-type",
-      "value": "none | style || state || [ size | inline-size | block-size ]",
-      "initial": "none",
+      "value": "normal || [ size | inline-size ]",
+      "initial": "normal",
       "appliesTo": "all elements",
       "inherited": "no",
       "percentages": "n/a",
-      "computedValue": "the keyword none or one or more of size, inline-size, block-size, style, state",
+      "computedValue": "the keyword normal or one or more of size, inline-size",
       "canonicalOrder": "per grammar",
       "animationType": "not animatable",
       "styleDeclaration": [
@@ -28,12 +28,12 @@
     },
     "container-name": {
       "name": "container-name",
-      "value": "none | [ <custom-ident> | <string> ]+",
+      "value": "none | <custom-ident>+",
       "initial": "none",
       "appliesTo": "all elements",
       "inherited": "no",
       "percentages": "n/a",
-      "computedValue": "a set of unique identifiers",
+      "computedValue": "the keyword none, or an ordered list of identifiers",
       "canonicalOrder": "per grammar",
       "animationType": "not animatable",
       "styleDeclaration": [
@@ -43,7 +43,7 @@
     },
     "container": {
       "name": "container",
-      "value": "<'container-type'> [ / <'container-name'> ]?",
+      "value": "<'container-name'> [ / <'container-type'> ]?",
       "initial": "see individual properties",
       "appliesTo": "see individual properties",
       "inherited": "see individual properties",
@@ -56,86 +56,73 @@
       ]
     }
   },
-  "descriptors": {
-    "width": [
-      {
-        "name": "width",
-        "for": "@container",
-        "value": "<length>",
-        "type": "range"
-      }
-    ],
-    "height": [
-      {
-        "name": "height",
-        "for": "@container",
-        "value": "<length>",
-        "type": "range"
-      }
-    ],
-    "inline-size": [
-      {
-        "name": "inline-size",
-        "for": "@container",
-        "value": "<length>",
-        "type": "range"
-      }
-    ],
-    "block-size": [
-      {
-        "name": "block-size",
-        "for": "@container",
-        "value": "<length>",
-        "type": "range"
-      }
-    ],
-    "aspect-ratio": [
-      {
-        "name": "aspect-ratio",
-        "for": "@container",
-        "value": "<ratio>",
-        "type": "range"
-      }
-    ],
-    "orientation": [
-      {
-        "name": "orientation",
-        "for": "@container",
-        "value": "portrait | landscape",
-        "type": "discrete"
-      }
-    ]
+  "atrules": {
+    "@container": {
+      "value": "@container [ <container-name> ]? <container-condition> { <stylesheet> }",
+      "descriptors": [
+        {
+          "name": "width",
+          "for": "@container",
+          "value": "<length>",
+          "type": "range"
+        },
+        {
+          "name": "height",
+          "for": "@container",
+          "value": "<length>",
+          "type": "range"
+        },
+        {
+          "name": "inline-size",
+          "for": "@container",
+          "value": "<length>",
+          "type": "range"
+        },
+        {
+          "name": "block-size",
+          "for": "@container",
+          "value": "<length>",
+          "type": "range"
+        },
+        {
+          "name": "aspect-ratio",
+          "for": "@container",
+          "value": "<ratio>",
+          "type": "range"
+        },
+        {
+          "name": "orientation",
+          "for": "@container",
+          "value": "portrait | landscape",
+          "type": "discrete"
+        }
+      ]
+    }
   },
   "valuespaces": {
-    "<container-name>": {
-      "prose": "For each element, the query container to be queried is selected from among the element’s ancestor query containers. The optional <container-name> filters the set of query containers considered to just those with a matching query container name, and the optional <container-type> filters the set to just those with a matching container-type. The nearest remaining query container ancestor is selected."
-    },
-    "<container-type>": {
-      "prose": "For each element, the query container to be queried is selected from among the element’s ancestor query containers. The optional <container-name> filters the set of query containers considered to just those with a matching query container name, and the optional <container-type> filters the set to just those with a matching container-type. The nearest remaining query container ancestor is selected."
-    },
     "<size-feature>": {
-      "prose": "A container size query (syntactically represented as <size-query>) allows querying the size of the query container’s principal box. It is a boolean combination of individual size features (<size-feature>) that each query a single, specific dimensional feature of the query container. The syntax of a <size-feature> is the same as for a media feature: a feature name, a comparator, and a value. [mediaqueries-5] The boolean syntax and logic combining size features into a <size-query> is the same as for CSS feature queries. (See @supports. [CSS-CONDITIONAL-3])"
+      "prose": "A container size query allows querying the size of the query container’s principal box. It is a boolean combination of individual size features (<size-feature>) that each query a single, specific dimensional feature of the query container. The syntax of a <size-feature> is the same as for a media feature: a feature name, a comparator, and a value. [mediaqueries-5] The boolean syntax and logic combining size features into a size query is the same as for CSS feature queries. (See @supports. [CSS-CONDITIONAL-3])"
     },
     "<style-feature>": {
-      "prose": "A container style query (syntactically represented by <style-query>) allows querying the computed values of the query container. It is a boolean combination of individual style features (<style-feature>) that each query a single, specific property of the query container. The syntax of a <style-feature> is the same as for a declaration [CSS-SYNTAX-3], and its query is true if the computed value of the given property on the query container matches the given value (which is also computed with respect to the query container), unknown if the property or its value is unsupported, and false otherwise. The boolean syntax and logic combining style features into a <style-query> is the same as for CSS feature queries. (See @supports. [CSS-CONDITIONAL-3])"
+      "prose": "A container style query allows querying the computed values of the query container. It is a boolean combination of individual style features (<style-feature>) that each query a single, specific property of the query container. The syntax of a <style-feature> is the same as for a declaration [CSS-SYNTAX-3], and its query is true if the computed value of the given property on the query container matches the given value (which is also computed with respect to the query container), unknown if the property or its value is invalid or unsupported, and false otherwise. The boolean syntax and logic combining style features into a style query is the same as for CSS feature queries. (See @supports. [CSS-CONDITIONAL-3])"
+    },
+    "<container-name>": {
+      "value": "<custom-ident>"
     },
     "<container-condition>": {
-      "value": "not <container-query> | <container-query> [ and <container-query> ]* | <container-query> [ or <container-query> ]*"
+      "value": "not <query-in-parens> | <query-in-parens> [ [ and <query-in-parens> ]* | [ or <query-in-parens> ]* ]"
     },
-    "<container-query>": {
-      "value": "( <container-condition> ) | size( <size-query> ) | style( <style-query> )"
-    },
-    "<size-query>": {
-      "value": "<size-feature> | <size-condition>"
-    },
-    "<size-condition>": {
-      "value": "not ( <size-query> ) | ( <size-query> ) [ and ( <size-query> ) ]* | ( <size-query> ) [ or ( <size-query> ) ]*"
+    "<query-in-parens>": {
+      "value": "( <container-condition> ) | ( <size-feature> ) | style( <style-query> ) | <general-enclosed>"
     },
     "<style-query>": {
-      "value": "<style-feature> | <style-condition>"
+      "value": "<style-condition> | <style-feature>"
     },
     "<style-condition>": {
-      "value": "not ( <style-query> ) | ( <style-query> ) [ and ( <style-query> ) ]* | ( <style-query> ) [ or ( <style-query> ) ]*"
+      "value": "not <style-in-parens> | <style-in-parens> [ [ and <style-in-parens> ]* | [ or <style-in-parens> ]* ]"
+    },
+    "<style-in-parens>": {
+      "value": "( <style-condition> ) | ( <style-feature> ) | <general-enclosed>"
     }
   }
 }

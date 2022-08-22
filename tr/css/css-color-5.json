@@ -4,31 +4,30 @@
     "url": "https://www.w3.org/TR/css-color-5/"
   },
   "properties": {},
-  "descriptors": {
-    "src": [
-      {
-        "name": "src",
-        "for": "@color-profile",
-        "value": "<url>",
-        "initial": "n/a"
-      }
-    ],
-    "rendering-intent": [
-      {
-        "name": "rendering-intent",
-        "for": "@color-profile",
-        "value": "relative-colorimetric | absolute-colorimetric | perceptual | saturation",
-        "initial": "relative-colorimetric"
-      }
-    ],
-    "components": [
-      {
-        "name": "components",
-        "for": "@color-profile",
-        "value": "<ident>#",
-        "initial": "n/a"
-      }
-    ]
+  "atrules": {
+    "@color-profile": {
+      "value": "@color-profile [<dashed-ident> | device-cmyk] { <declaration-list> }",
+      "descriptors": [
+        {
+          "name": "src",
+          "for": "@color-profile",
+          "value": "<url>",
+          "initial": "n/a"
+        },
+        {
+          "name": "rendering-intent",
+          "for": "@color-profile",
+          "value": "relative-colorimetric | absolute-colorimetric | perceptual | saturation",
+          "initial": "relative-colorimetric"
+        },
+        {
+          "name": "components",
+          "for": "@color-profile",
+          "value": "<ident>#",
+          "initial": "n/a"
+        }
+      ]
+    }
   },
   "valuespaces": {
     "<color-mix()>": {

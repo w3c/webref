@@ -19,34 +19,97 @@
       ]
     }
   },
-  "descriptors": {
-    "size": [
-      {
-        "name": "size",
-        "for": "@page",
-        "value": "<length>{1,2} | auto | [ <page-size> || [ portrait | landscape ] ]",
-        "initial": "auto",
-        "computedValue": "specified value, with <length>s made absolute."
-      }
-    ],
-    "marks": [
-      {
-        "name": "marks",
-        "for": "@page",
-        "value": "none | [ crop || cross ]",
-        "initial": "none",
-        "computedValue": "as specified"
-      }
-    ],
-    "bleed": [
-      {
-        "name": "bleed",
-        "for": "@page",
-        "value": "auto | <length>",
-        "initial": "auto",
-        "computedValue": "as specified"
-      }
-    ]
+  "atrules": {
+    "@page": {
+      "value": "@page <page-selector-list>? { <declaration-list> }",
+      "descriptors": [
+        {
+          "name": "size",
+          "for": "@page",
+          "value": "<length>{1,2} | auto | [ <page-size> || [ portrait | landscape ] ]",
+          "initial": "auto",
+          "computedValue": "specified value, with <length>s made absolute."
+        },
+        {
+          "name": "marks",
+          "for": "@page",
+          "value": "none | [ crop || cross ]",
+          "initial": "none",
+          "computedValue": "as specified"
+        },
+        {
+          "name": "bleed",
+          "for": "@page",
+          "value": "auto | <length>",
+          "initial": "auto",
+          "computedValue": "as specified"
+        }
+      ]
+    },
+    "@top-left-corner": {
+      "value": "@top-left-corner { <declaration-list> };",
+      "descriptors": []
+    },
+    "@top-left": {
+      "value": "@top-left { <declaration-list> };",
+      "descriptors": []
+    },
+    "@top-center": {
+      "value": "@top-center { <declaration-list> };",
+      "descriptors": []
+    },
+    "@top-right": {
+      "value": "@top-right { <declaration-list> };",
+      "descriptors": []
+    },
+    "@top-right-corner": {
+      "value": "@top-right-corner { <declaration-list> };",
+      "descriptors": []
+    },
+    "@bottom-left-corner": {
+      "value": "@bottom-left-corner { <declaration-list> };",
+      "descriptors": []
+    },
+    "@bottom-left": {
+      "value": "@bottom-left { <declaration-list> };",
+      "descriptors": []
+    },
+    "@bottom-center": {
+      "value": "@bottom-center { <declaration-list> };",
+      "descriptors": []
+    },
+    "@bottom-right": {
+      "value": "@bottom-right { <declaration-list> };",
+      "descriptors": []
+    },
+    "@bottom-right-corner": {
+      "value": "@bottom-right-corner { <declaration-list> };",
+      "descriptors": []
+    },
+    "@left-top": {
+      "value": "@left-top { <declaration-list> };",
+      "descriptors": []
+    },
+    "@left-middle": {
+      "value": "@left-middle { <declaration-list> };",
+      "descriptors": []
+    },
+    "@left-bottom": {
+      "value": "@left-bottom { <declaration-list> };",
+      "descriptors": []
+    },
+    "@right-top": {
+      "value": "@right-top { <declaration-list> };",
+      "descriptors": []
+    },
+    "@right-middle": {
+      "value": "@right-middle { <declaration-list> };",
+      "descriptors": []
+    },
+    "@right-bottom": {
+      "value": "@right-bottom { <declaration-list> };",
+      "descriptors": []
+    }
   },
   "valuespaces": {
     "<page-size>": {

@@ -4,303 +4,237 @@
     "url": "https://www.w3.org/TR/mediaqueries-5/"
   },
   "properties": {},
-  "descriptors": {
-    "width": [
-      {
-        "name": "width",
-        "for": "@media",
-        "value": "<length>",
-        "type": "range"
-      }
-    ],
-    "height": [
-      {
-        "name": "height",
-        "for": "@media",
-        "value": "<length>",
-        "type": "range"
-      }
-    ],
-    "aspect-ratio": [
-      {
-        "name": "aspect-ratio",
-        "for": "@media",
-        "value": "<ratio>",
-        "type": "range"
-      }
-    ],
-    "orientation": [
-      {
-        "name": "orientation",
-        "for": "@media",
-        "value": "portrait | landscape",
-        "type": "discrete"
-      }
-    ],
-    "overflow-block": [
-      {
-        "name": "overflow-block",
-        "for": "@media",
-        "value": "none | scroll | paged",
-        "type": "discrete"
-      }
-    ],
-    "overflow-inline": [
-      {
-        "name": "overflow-inline",
-        "for": "@media",
-        "value": "none | scroll",
-        "type": "discrete"
-      }
-    ],
-    "horizontal-viewport-segments": [
-      {
-        "name": "horizontal-viewport-segments",
-        "for": "@media",
-        "value": "<integer>",
-        "type": "range"
-      }
-    ],
-    "vertical-viewport-segments": [
-      {
-        "name": "vertical-viewport-segments",
-        "for": "@media",
-        "value": "<integer>",
-        "type": "range"
-      }
-    ],
-    "display-mode": [
-      {
-        "name": "display-mode",
-        "for": "@media",
-        "value": "fullscreen | standalone | minimal-ui | browser",
-        "type": "discrete"
-      }
-    ],
-    "resolution": [
-      {
-        "name": "resolution",
-        "for": "@media",
-        "value": "<resolution> | infinite",
-        "type": "range"
-      }
-    ],
-    "scan": [
-      {
-        "name": "scan",
-        "for": "@media",
-        "value": "interlace | progressive",
-        "type": "discrete"
-      }
-    ],
-    "grid": [
-      {
-        "name": "grid",
-        "for": "@media",
-        "value": "<mq-boolean>",
-        "type": "discrete"
-      }
-    ],
-    "update": [
-      {
-        "name": "update",
-        "for": "@media",
-        "value": "none | slow | fast",
-        "type": "discrete"
-      }
-    ],
-    "environment-blending": [
-      {
-        "name": "environment-blending",
-        "for": "@media",
-        "value": "opaque | additive | subtractive",
-        "type": "discrete"
-      }
-    ],
-    "color": [
-      {
-        "name": "color",
-        "for": "@media",
-        "value": "<integer>",
-        "type": "range"
-      }
-    ],
-    "color-index": [
-      {
-        "name": "color-index",
-        "for": "@media",
-        "value": "<integer>",
-        "type": "range"
-      }
-    ],
-    "monochrome": [
-      {
-        "name": "monochrome",
-        "for": "@media",
-        "value": "<integer>",
-        "type": "range"
-      }
-    ],
-    "color-gamut": [
-      {
-        "name": "color-gamut",
-        "for": "@media",
-        "value": "srgb | p3 | rec2020",
-        "type": "discrete"
-      }
-    ],
-    "dynamic-range": [
-      {
-        "name": "dynamic-range",
-        "for": "@media",
-        "value": "standard | high",
-        "type": "discrete"
-      }
-    ],
-    "inverted-colors": [
-      {
-        "name": "inverted-colors",
-        "for": "@media",
-        "value": "none | inverted",
-        "type": "discrete"
-      }
-    ],
-    "pointer": [
-      {
-        "name": "pointer",
-        "for": "@media",
-        "value": "none | coarse | fine",
-        "type": "discrete"
-      }
-    ],
-    "hover": [
-      {
-        "name": "hover",
-        "for": "@media",
-        "value": "none | hover",
-        "type": "discrete"
-      }
-    ],
-    "any-pointer": [
-      {
-        "name": "any-pointer",
-        "for": "@media",
-        "value": "none | coarse | fine",
-        "type": "discrete"
-      }
-    ],
-    "any-hover": [
-      {
-        "name": "any-hover",
-        "for": "@media",
-        "value": "none | hover",
-        "type": "discrete"
-      }
-    ],
-    "nav-controls": [
-      {
-        "name": "nav-controls",
-        "for": "@media",
-        "value": "none | back",
-        "type": "discrete"
-      }
-    ],
-    "video-color-gamut": [
-      {
-        "name": "video-color-gamut",
-        "for": "@media",
-        "value": "srgb | p3 | rec2020",
-        "type": "discrete"
-      }
-    ],
-    "video-dynamic-range": [
-      {
-        "name": "video-dynamic-range",
-        "for": "@media",
-        "value": "standard | high",
-        "type": "discrete"
-      }
-    ],
-    "scripting": [
-      {
-        "name": "scripting",
-        "for": "@media",
-        "value": "none | initial-only | enabled",
-        "type": "discrete"
-      }
-    ],
-    "prefers-reduced-motion": [
-      {
-        "name": "prefers-reduced-motion",
-        "for": "@media",
-        "value": "no-preference | reduce",
-        "type": "discrete"
-      }
-    ],
-    "prefers-reduced-transparency": [
-      {
-        "name": "prefers-reduced-transparency",
-        "for": "@media",
-        "value": "no-preference | reduce",
-        "type": "discrete"
-      }
-    ],
-    "prefers-contrast": [
-      {
-        "name": "prefers-contrast",
-        "for": "@media",
-        "value": "no-preference | less | more | custom",
-        "type": "discrete"
-      }
-    ],
-    "forced-colors": [
-      {
-        "name": "forced-colors",
-        "for": "@media",
-        "value": "none | active",
-        "type": "discrete"
-      }
-    ],
-    "prefers-color-scheme": [
-      {
-        "name": "prefers-color-scheme",
-        "for": "@media",
-        "value": "light | dark",
-        "type": "discrete"
-      }
-    ],
-    "prefers-reduced-data": [
-      {
-        "name": "prefers-reduced-data",
-        "for": "@media",
-        "value": "no-preference | reduce",
-        "type": "discrete"
-      }
-    ],
-    "device-width": [
-      {
-        "name": "device-width",
-        "for": "@media",
-        "value": "<length>",
-        "type": "range"
-      }
-    ],
-    "device-height": [
-      {
-        "name": "device-height",
-        "for": "@media",
-        "value": "<length>",
-        "type": "range"
-      }
-    ],
-    "device-aspect-ratio": [
-      {
-        "name": "device-aspect-ratio",
-        "for": "@media",
-        "value": "<ratio>",
-        "type": "range"
-      }
-    ]
+  "atrules": {
+    "@custom-media": {
+      "value": "@custom-media <extension-name> [ <media-query-list> | true | false ] ;",
+      "descriptors": []
+    },
+    "@media": {
+      "descriptors": [
+        {
+          "name": "width",
+          "for": "@media",
+          "value": "<length>",
+          "type": "range"
+        },
+        {
+          "name": "height",
+          "for": "@media",
+          "value": "<length>",
+          "type": "range"
+        },
+        {
+          "name": "aspect-ratio",
+          "for": "@media",
+          "value": "<ratio>",
+          "type": "range"
+        },
+        {
+          "name": "orientation",
+          "for": "@media",
+          "value": "portrait | landscape",
+          "type": "discrete"
+        },
+        {
+          "name": "overflow-block",
+          "for": "@media",
+          "value": "none | scroll | paged",
+          "type": "discrete"
+        },
+        {
+          "name": "overflow-inline",
+          "for": "@media",
+          "value": "none | scroll",
+          "type": "discrete"
+        },
+        {
+          "name": "horizontal-viewport-segments",
+          "for": "@media",
+          "value": "<integer>",
+          "type": "range"
+        },
+        {
+          "name": "vertical-viewport-segments",
+          "for": "@media",
+          "value": "<integer>",
+          "type": "range"
+        },
+        {
+          "name": "display-mode",
+          "for": "@media",
+          "value": "fullscreen | standalone | minimal-ui | browser",
+          "type": "discrete"
+        },
+        {
+          "name": "resolution",
+          "for": "@media",
+          "value": "<resolution> | infinite",
+          "type": "range"
+        },
+        {
+          "name": "scan",
+          "for": "@media",
+          "value": "interlace | progressive",
+          "type": "discrete"
+        },
+        {
+          "name": "grid",
+          "for": "@media",
+          "value": "<mq-boolean>",
+          "type": "discrete"
+        },
+        {
+          "name": "update",
+          "for": "@media",
+          "value": "none | slow | fast",
+          "type": "discrete"
+        },
+        {
+          "name": "environment-blending",
+          "for": "@media",
+          "value": "opaque | additive | subtractive",
+          "type": "discrete"
+        },
+        {
+          "name": "color",
+          "for": "@media",
+          "value": "<integer>",
+          "type": "range"
+        },
+        {
+          "name": "color-index",
+          "for": "@media",
+          "value": "<integer>",
+          "type": "range"
+        },
+        {
+          "name": "monochrome",
+          "for": "@media",
+          "value": "<integer>",
+          "type": "range"
+        },
+        {
+          "name": "color-gamut",
+          "for": "@media",
+          "value": "srgb | p3 | rec2020",
+          "type": "discrete"
+        },
+        {
+          "name": "dynamic-range",
+          "for": "@media",
+          "value": "standard | high",
+          "type": "discrete"
+        },
+        {
+          "name": "inverted-colors",
+          "for": "@media",
+          "value": "none | inverted",
+          "type": "discrete"
+        },
+        {
+          "name": "pointer",
+          "for": "@media",
+          "value": "none | coarse | fine",
+          "type": "discrete"
+        },
+        {
+          "name": "hover",
+          "for": "@media",
+          "value": "none | hover",
+          "type": "discrete"
+        },
+        {
+          "name": "any-pointer",
+          "for": "@media",
+          "value": "none | coarse | fine",
+          "type": "discrete"
+        },
+        {
+          "name": "any-hover",
+          "for": "@media",
+          "value": "none | hover",
+          "type": "discrete"
+        },
+        {
+          "name": "nav-controls",
+          "for": "@media",
+          "value": "none | back",
+          "type": "discrete"
+        },
+        {
+          "name": "video-color-gamut",
+          "for": "@media",
+          "value": "srgb | p3 | rec2020",
+          "type": "discrete"
+        },
+        {
+          "name": "video-dynamic-range",
+          "for": "@media",
+          "value": "standard | high",
+          "type": "discrete"
+        },
+        {
+          "name": "scripting",
+          "for": "@media",
+          "value": "none | initial-only | enabled",
+          "type": "discrete"
+        },
+        {
+          "name": "prefers-reduced-motion",
+          "for": "@media",
+          "value": "no-preference | reduce",
+          "type": "discrete"
+        },
+        {
+          "name": "prefers-reduced-transparency",
+          "for": "@media",
+          "value": "no-preference | reduce",
+          "type": "discrete"
+        },
+        {
+          "name": "prefers-contrast",
+          "for": "@media",
+          "value": "no-preference | less | more | custom",
+          "type": "discrete"
+        },
+        {
+          "name": "forced-colors",
+          "for": "@media",
+          "value": "none | active",
+          "type": "discrete"
+        },
+        {
+          "name": "prefers-color-scheme",
+          "for": "@media",
+          "value": "light | dark",
+          "type": "discrete"
+        },
+        {
+          "name": "prefers-reduced-data",
+          "for": "@media",
+          "value": "no-preference | reduce",
+          "type": "discrete"
+        },
+        {
+          "name": "device-width",
+          "for": "@media",
+          "value": "<length>",
+          "type": "range"
+        },
+        {
+          "name": "device-height",
+          "for": "@media",
+          "value": "<length>",
+          "type": "range"
+        },
+        {
+          "name": "device-aspect-ratio",
+          "for": "@media",
+          "value": "<ratio>",
+          "type": "range"
+        }
+      ]
+    }
   },
   "valuespaces": {
     "<media-query-list>": {

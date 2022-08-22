@@ -37,26 +37,30 @@
       ]
     }
   },
-  "descriptors": {
-    "shape": [
-      {
-        "name": "shape",
-        "for": "@media",
-        "value": "rect | round",
-        "type": "discrete"
-      }
-    ],
-    "viewport-fit": [
-      {
-        "name": "viewport-fit",
-        "for": "@viewport",
-        "value": "auto | contain | cover",
-        "initial": "auto",
-        "percentages": "N/A",
-        "media": "visual, continuous",
-        "computedValue": "as specified"
-      }
-    ]
+  "atrules": {
+    "@media": {
+      "descriptors": [
+        {
+          "name": "shape",
+          "for": "@media",
+          "value": "rect | round",
+          "type": "discrete"
+        }
+      ]
+    },
+    "@viewport": {
+      "descriptors": [
+        {
+          "name": "viewport-fit",
+          "for": "@viewport",
+          "value": "auto | contain | cover",
+          "initial": "auto",
+          "percentages": "N/A",
+          "media": "visual, continuous",
+          "computedValue": "as specified"
+        }
+      ]
+    }
   },
   "valuespaces": {}
 }

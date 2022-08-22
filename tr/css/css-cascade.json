@@ -19,7 +19,16 @@
       ]
     }
   },
-  "descriptors": {},
+  "atrules": {
+    "@import": {
+      "value": "@import [ <url> | <string> ] [ layer | layer(<layer-name>) ]? [ supports( [ <supports-condition> | <declaration> ] ) ]? <media-query-list>? ;",
+      "descriptors": []
+    },
+    "@layer": {
+      "value": "@layer <layer-name>? { <stylesheet> }",
+      "descriptors": []
+    }
+  },
   "valuespaces": {
     "<layer-name>": {
       "value": "<ident> [ '.' <ident> ]*"
