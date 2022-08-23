@@ -24,7 +24,9 @@
       "comb-one",
       "comb-any"
     ],
-    "https://developer.mozilla.org/en-US/docs/Web/CSS/contain": [],
+    "https://developer.mozilla.org/en-US/docs/Web/CSS/contain": [
+      "style"
+    ],
     "https://www.w3.org/TR/css-values/": [
       "value-defs",
       "percentages"
@@ -275,6 +277,31 @@
     "https://wpt.fyi/results/css/css-contain/contain-size-scrollbars-004.html": [],
     "https://wpt.live/css/css-contain/contain-size-scrollbars-004.html": [],
     "https://github.com/web-platform-tests/wpt/blob/master/css/css-contain/contain-size-scrollbars-004.html": [],
+    "https://drafts.csswg.org/css-writing-modes-4/": [
+      "inline-size",
+      "propdef-writing-mode",
+      "propdef-text-orientation",
+      "inline-axis",
+      "block-axis",
+      "block-size"
+    ],
+    "https://drafts.csswg.org/css-display-3/": [
+      "principal-box",
+      "initial-containing-block",
+      "replaced-element",
+      "propdef-display",
+      "inner-display-type",
+      "valdef-display-table",
+      "internal-table-box",
+      "internal-ruby-box",
+      "atomic-inline",
+      "inline-level",
+      "formatting-context",
+      "establish-an-independent-formatting-context",
+      "valdef-display-table-cell",
+      "propdef-visibility",
+      "valdef-display-none"
+    ],
     "https://wpt.fyi/results/css/css-contain/contain-layout-001.html": [],
     "https://wpt.live/css/css-contain/contain-layout-001.html": [],
     "https://github.com/web-platform-tests/wpt/blob/master/css/css-contain/contain-layout-001.html": [],
@@ -597,30 +624,10 @@
       "the-iframe-element",
       "dom-innertext"
     ],
-    "https://drafts.csswg.org/css-display-3/": [
-      "initial-containing-block",
-      "principal-box",
-      "replaced-element",
-      "propdef-display",
-      "inner-display-type",
-      "valdef-display-table",
-      "internal-table-box",
-      "internal-ruby-box",
-      "atomic-inline",
-      "inline-level",
-      "establish-an-independent-formatting-context",
-      "valdef-display-table-cell",
-      "propdef-visibility",
-      "valdef-display-none"
-    ],
     "https://drafts.csswg.org/css-backgrounds-3/": [
       "canvas-background",
       "propdef-background",
       "body-background"
-    ],
-    "https://drafts.csswg.org/css-writing-modes-4/": [
-      "propdef-writing-mode",
-      "propdef-text-orientation"
     ],
     "https://drafts.csswg.org/css-writing-modes-3/": [
       "propdef-direction",
@@ -765,7 +772,9 @@
       "fit-content-size",
       "propdef-width",
       "propdef-height",
-      "sizing-property"
+      "sizing-property",
+      "min-content",
+      "propdef-min-width"
     ],
     "https://drafts.csswg.org/css-grid-2/": [
       "grid-track"
@@ -798,10 +807,10 @@
     "https://drafts.csswg.org/css-break-3/": [
       "monolithic",
       "possible-breaks",
+      "fragmentation",
       "fragmentation-container",
       "fragmentation-context",
       "fragmented-flow",
-      "fragmentation",
       "forced-break",
       "break-between"
     ],
