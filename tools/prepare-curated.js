@@ -31,6 +31,27 @@ const { curateEvents } = require('./amend-event-data');
 
 
 /**
+ * Remove extracts from non-browser specs for browser-only properties
+*/
+async function cleanNonBrowserExtracts(spec, curatedFolder) {
+  if (!spec.categories.includes("browser")) {
+    await Promise.all(["idl", "css", "events", "elements"].map(async property => {
+      if (!spec[property] ||
+          (typeof spec[property] !== 'string') ||
+          !spec[property].match(/^[^\/]+\/[^\/]+\.(json|idl)$/)) {
+	return;
+      }
+      console.log(`${spec.title} is not a browser spec, removing ${path.join(curatedFolder, spec[property])}`);
+      try {
+	await fs.unlink(path.join(curatedFolder, spec[property]));
+      } catch (err) {
+	console.error(err);
+      }
+    }));
+  }
+}
+
+/**
  * Remove links from given spec crawl result to extracts that no longer exist
  * once patches have been applied.
  *
@@ -83,14 +104,21 @@ async function prepareCurated(rawFolder, curatedFolder) {
   });
   console.log('- done');
 
+  let crawlIndexFile = path.join(curatedFolder, 'index.json');
+  let crawlIndex = await loadJSON(crawlIndexFile);
+  console.log();
+  console.log('Remove non-browser extracts from curated folder');
+  await Promise.all(crawlIndex.results.map(s => cleanNonBrowserExtracts(s , curatedFolder)));
+  console.log('- done');
+
   console.log();
   console.log('Apply patches');
-  await applyPatches(rawFolder, curatedFolder, 'all');
+  await applyPatches(rawFolder, curatedFolder, 'all', true);
   await curateEvents(curatedFolder);
   console.log('- patches applied');
 
-  let crawlIndexFile = path.join(curatedFolder, 'index.json');
-  let crawlIndex = await loadJSON(crawlIndexFile);
+  // Reload after changes
+  crawlIndex = await loadJSON(crawlIndexFile);
   await Promise.all(crawlIndex.results.map(cleanCrawlOutcome));
   await fs.writeFile(crawlIndexFile, JSON.stringify(crawlIndex, null, 2));
   console.log('- crawl outcome adjusted');

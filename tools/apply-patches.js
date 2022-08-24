@@ -20,7 +20,10 @@ const util = require('util');
 const execFile = util.promisify(require('child_process').execFile);
 const { createFolderIfNeeded } = require('./utils');
 
-async function applyPatches(rawFolder, outputFolder, type) {
+// the noinit parameter when set to true skips the copy from raw to output
+// this is useful if output has already been created and filtered
+// (as done in prepare-curated)
+async function applyPatches(rawFolder, outputFolder, type, noinit) {
   type = (type === 'all') ? ['css', 'elements', 'idl'] : [type];
 
   const packages = [
@@ -57,21 +60,23 @@ async function applyPatches(rawFolder, outputFolder, type) {
       continue;
     }
 
-    await createFolderIfNeeded(dstDir);
+    if (!noinit) {
+      await createFolderIfNeeded(dstDir);
 
-    // rm dstDir/*.${fileExt}
-    const dstFiles = await fs.readdir(dstDir);
-    for (const file of dstFiles) {
-      if (file.endsWith(`.${fileExt}`) && file !== 'package.json') {
-        await fs.unlink(path.join(dstDir, file));
+      // rm dstDir/*.${fileExt}
+      const dstFiles = await fs.readdir(dstDir);
+      for (const file of dstFiles) {
+	if (file.endsWith(`.${fileExt}`) && file !== 'package.json') {
+          await fs.unlink(path.join(dstDir, file));
+	}
       }
-    }
 
-    // cp srcDir/*.${fileExt} dstDir/
-    const srcFiles = await fs.readdir(srcDir);
-    for (const file of srcFiles) {
-      if (file.endsWith('.' + fileExt)) {
-        await fs.copyFile(path.join(srcDir, file), path.join(dstDir, file));
+      // cp srcDir/*.${fileExt} dstDir/
+      const srcFiles = await fs.readdir(srcDir);
+      for (const file of srcFiles) {
+	if (file.endsWith('.' + fileExt)) {
+          await fs.copyFile(path.join(srcDir, file), path.join(dstDir, file));
+	}
       }
     }
 
