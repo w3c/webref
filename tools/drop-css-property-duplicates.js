@@ -53,6 +53,9 @@ const supersededBy = {
   // (shape-inside should get dropped from css-round-display)
   'css-round-display': 'css-shapes',
 
+  // See https://github.com/w3c/webref/issues/681#issuecomment-1226880620
+  'css-display': 'mathml-core',
+
   // See note in https://svgwg.org/specs/strokes/#sotd
   // "In the future, this specification will supersede the SVG 2 Stroke
   // definition, however at this time the SVG 2 Stroke definition must be
