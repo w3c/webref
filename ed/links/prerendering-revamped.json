@@ -7,22 +7,33 @@
     "https://www.w3.org/community/wicg/": [],
     "https://www.w3.org/community/about/agreements/cla/": [],
     "https://www.w3.org/community/": [],
+    "https://dom.spec.whatwg.org/": [
+      "document",
+      "concept-node",
+      "concept-node-document",
+      "concept-document-origin",
+      "concept-event-fire",
+      "concept-document"
+    ],
+    "https://webidl.spec.whatwg.org/": [
+      "idl-boolean",
+      "this",
+      "idl-promise",
+      "dfn-regular-operation",
+      "dfn-static-operation",
+      "dfn-return-type",
+      "dfn-promise-type",
+      "idl-undefined",
+      "dfn-exposure-set",
+      "a-new-promise",
+      "resolve",
+      "a-promise-rejected-with",
+      "securityerror",
+      "idl-DOMException",
+      "reject",
+      "notsupportederror"
+    ],
     "https://html.spec.whatwg.org/": [
-      "linkTypes",
-      "the-link-element",
-      "external-resource-link",
-      "body-ok",
-      "fetch-and-process-the-linked-resource",
-      "browsing-context-connected",
-      "becomes-browsing-context-connected",
-      "attr-link-href",
-      "attr-link-referrerpolicy",
-      "parse-a-url",
-      "resulting-url-record",
-      "same-origin",
-      "delay-the-load-event",
-      "event-error",
-      "event-load",
       "eventhandler",
       "event-handler-idl-attributes",
       "event-handler-event-type",
@@ -39,6 +50,9 @@
       "active-document",
       "creating-a-new-top-level-browsing-context",
       "a-browsing-context-is-discarded",
+      "same-origin",
+      "concept-document-policy-container",
+      "policy-container-referrer-policy",
       "source-browsing-context",
       "top-level-browsing-context",
       "history-handling-behavior",
@@ -99,18 +113,27 @@
       "dom-open",
       "event-beforeunload"
     ],
-    "https://dom.spec.whatwg.org/": [
-      "concept-node-document",
-      "concept-document-origin",
-      "document",
-      "concept-node",
-      "concept-event-fire",
-      "concept-document"
+    "https://infra.spec.whatwg.org/": [
+      "ordered-map",
+      "list",
+      "list-item",
+      "user-agent",
+      "assert",
+      "map-exists",
+      "map-remove",
+      "list-extend",
+      "list-iterate",
+      "list-contain",
+      "iteration-break",
+      "list-empty"
     ],
     "https://url.spec.whatwg.org/": [
+      "concept-url",
       "concept-url-scheme",
-      "concept-url-origin",
-      "concept-url"
+      "concept-url-origin"
+    ],
+    "https://www.w3.org/TR/hr-time-2/": [
+      "dom-domhighrestimestamp"
     ],
     "https://fetch.spec.whatwg.org/": [
       "http-scheme",
@@ -123,45 +146,6 @@
       "concept-network-error",
       "concept-request-current-url",
       "concept-response-status"
-    ],
-    "https://infra.spec.whatwg.org/": [
-      "list-contain",
-      "list",
-      "ordered-map",
-      "tuple",
-      "list-item",
-      "user-agent",
-      "assert",
-      "map-exists",
-      "map-remove",
-      "list-extend",
-      "list-iterate",
-      "iteration-break",
-      "list-empty"
-    ],
-    "https://w3c.github.io/webappsec-referrer-policy/": [
-      "referrer-policy"
-    ],
-    "https://webidl.spec.whatwg.org/": [
-      "idl-boolean",
-      "this",
-      "idl-promise",
-      "dfn-regular-operation",
-      "dfn-static-operation",
-      "dfn-return-type",
-      "dfn-promise-type",
-      "idl-undefined",
-      "dfn-exposure-set",
-      "a-new-promise",
-      "resolve",
-      "a-promise-rejected-with",
-      "securityerror",
-      "idl-DOMException",
-      "reject",
-      "notsupportederror"
-    ],
-    "https://www.w3.org/TR/hr-time-2/": [
-      "dom-domhighrestimestamp"
     ],
     "https://www.w3.org/TR/hr-time-3/": [
       "dfn-unsafe-shared-current-time",
@@ -338,7 +322,6 @@
     "https://w3c.github.io/hr-time/": [],
     "https://www.w3.org/TR/navigation-timing/": [],
     "https://w3c.github.io/payment-request/": [],
-    "https://w3c.github.io/web-share/": [],
-    "https://w3c.github.io/resource-hints/": []
+    "https://w3c.github.io/web-share/": []
   }
 }

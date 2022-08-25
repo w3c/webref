@@ -4,12 +4,11 @@
     "url": "https://w3c.github.io/mathml-core/"
   },
   "properties": {
-    "display-inside": {
-      "name": "display-inside",
-      "newValues": "math",
+    "display": {
+      "name": "display",
+      "newValues": "<display-outside> || [ <display-inside> | math ]",
       "styleDeclaration": [
-        "display-inside",
-        "displayInside"
+        "display"
       ]
     },
     "text-transform": {
