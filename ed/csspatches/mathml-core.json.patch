@@ -1,0 +1,44 @@
+From 06c09895b07706daabf9394e01a9723f24d95dda Mon Sep 17 00:00:00 2001
+From: Dominique Hazael-Massieux <dom@w3.org>
+Date: Thu, 25 Aug 2022 09:36:26 +0200
+Subject: [PATCH] Patch CSS Extract from MathML Core
+
+See https://github.com/w3c/webref/issues/681#issuecomment-1226880620
+Improperly markuped as an extension to a CSS property value whereas it is an extension to a valuespace (for which there is now markup convention at the moment)
+---
+ ed/css/mathml-core.json | 14 +++++---------
+ 1 file changed, 5 insertions(+), 9 deletions(-)
+
+diff --git a/ed/css/mathml-core.json b/ed/css/mathml-core.json
+index f277a3b17..e738d86e9 100644
+--- a/ed/css/mathml-core.json
++++ b/ed/css/mathml-core.json
+@@ -4,14 +4,6 @@
+     "url": "https://w3c.github.io/mathml-core/"
+   },
+   "properties": {
+-    "display-inside": {
+-      "name": "display-inside",
+-      "newValues": "math",
+-      "styleDeclaration": [
+-        "display-inside",
+-        "displayInside"
+-      ]
+-    },
+     "text-transform": {
+       "name": "text-transform",
+       "newValues": "math-auto | math-bold | math-italic | math-bold-italic | math-double-struck | math-bold-fraktur | math-script | math-bold-script | math-fraktur | math-sans-serif | math-bold-sans-serif | math-sans-serif-italic | math-sans-serif-bold-italic | math-monospace | math-initial | math-tailed | math-looped | math-stretched",
+@@ -70,5 +62,9 @@
+     }
+   },
+   "atrules": {},
+-  "valuespaces": {}
++  "valuespaces": {
++    "<display-inside>": {
++      "value": "flow | flow-root | table | flex | grid | ruby | math"
++    }
++  }
+ }
+-- 
+2.36.1
+
