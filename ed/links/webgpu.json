@@ -14,7 +14,9 @@
     "https://tc39.es/ecma262/": [
       "agent",
       "sec-agent-clusters",
-      "sec-allocatearraybuffer",
+      "sec-data-blocks",
+      "sec-returnifabrupt-shorthands",
+      "sec-createbytedatablock",
       "sec-properties-of-the-arraybuffer-instances",
       "sec-detacharraybuffer"
     ],
@@ -68,13 +70,14 @@
       "idl-record",
       "idl-undefined",
       "getter-steps",
+      "exceptiondef-rangeerror",
       "EnforceRange",
       "dfn-detach",
       "arraybuffer-transfer",
       "a-promise-rejected-with",
+      "arraybuffer-create",
       "aborterror",
       "dfn-interface-object",
-      "invalidstateerror",
       "securityerror",
       "idl-float",
       "Clamp",
@@ -82,7 +85,6 @@
       "idl-object",
       "idl-frozen-array",
       "NewObject",
-      "exceptiondef-rangeerror",
       "idl-double",
       "dfn-convert-ecmascript-to-idl-value",
       "idl-long",
@@ -92,7 +94,8 @@
       "idl-long-long",
       "AllowShared",
       "BufferSource",
-      "idl-DataView"
+      "idl-DataView",
+      "invalidstateerror"
     ],
     "https://www.w3.org/TR/WGSL/": [
       "alignment-and-size",
@@ -152,6 +155,7 @@
       "event",
       "dictdef-eventinit"
     ],
+    "https://github.com/gpuweb/gpuweb/issues/3123": [],
     "https://github.com/gpuweb/gpuweb/issues/3251": [],
     "https://github.com/gpuweb/gpuweb/issues/168": [],
     "https://github.com/gpuweb/gpuweb/issues/1887": [],

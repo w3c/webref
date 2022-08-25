@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2022-08-25T00:51:06.623Z",
+  "date": "2022-08-25T06:45:12.570Z",
   "options": {
     "fallback": "webref-fallback/ed/index.json",
     "output": "report",
@@ -25,7 +25,7 @@
   },
   "stats": {
     "crawled": 476,
-    "errors": 1
+    "errors": 4
   },
   "crawler": "reffy-9.1.1",
   "results": [
@@ -171,9 +171,9 @@
       ],
       "crawled": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 24 Aug 2022 20:20:50 GMT"
+        "lastModified": "Thu, 25 Aug 2022 01:06:15 GMT"
       },
-      "date": "24 August 2022",
+      "date": "25 August 2022",
       "links": "links/rfc6265bis.json",
       "refs": "refs/rfc6265bis.json",
       "headings": "headings/rfc6265bis.json",
@@ -282,7 +282,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/css-typed-om-2/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 24 Aug 2022 23:18:26 GMT"
+        "lastModified": "Thu, 25 Aug 2022 05:52:48 GMT"
       },
       "generator": "bikeshed",
       "date": "8 February 2021",
@@ -327,7 +327,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/font-metrics-api-1/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 24 Aug 2022 23:18:49 GMT"
+        "lastModified": "Thu, 25 Aug 2022 05:53:13 GMT"
       },
       "generator": "bikeshed",
       "date": "12 May 2021",
@@ -392,7 +392,8 @@
       "css": "css/css-animations-2.json",
       "dfns": "dfns/css-animations-2.json",
       "headings": "headings/css-animations-2.json",
-      "ids": "ids/css-animations-2.json"
+      "ids": "ids/css-animations-2.json",
+      "error": "Error: Loading https://drafts.csswg.org/css-animations-2/ triggered HTTP status 500 Error: Loading https://drafts.csswg.org/css-animations-2/ triggered HTTP status 500\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:353:22)\n    at async Promise.all (index 6)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:361:21)"
     },
     {
       "url": "https://drafts.csswg.org/css-backgrounds-4/",
@@ -447,7 +448,8 @@
       "css": "css/css-backgrounds-4.json",
       "dfns": "dfns/css-backgrounds-4.json",
       "headings": "headings/css-backgrounds-4.json",
-      "ids": "ids/css-backgrounds-4.json"
+      "ids": "ids/css-backgrounds-4.json",
+      "error": "Error: Loading https://drafts.csswg.org/css-backgrounds-4/ triggered HTTP status 500 Error: Loading https://drafts.csswg.org/css-backgrounds-4/ triggered HTTP status 500\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:353:22)\n    at async Promise.all (index 7)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:361:21)"
     },
     {
       "url": "https://drafts.csswg.org/css-env-1/",
@@ -1304,7 +1306,7 @@
       ],
       "crawled": "https://drafts.fxtf.org/filter-effects-2/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 24 Aug 2022 23:16:13 GMT"
+        "lastModified": "Thu, 25 Aug 2022 06:38:52 GMT"
       },
       "generator": "bikeshed",
       "date": "10 February 2022",
@@ -12056,7 +12058,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/css-animationworklet-1/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 24 Aug 2022 23:18:08 GMT"
+        "lastModified": "Thu, 25 Aug 2022 05:52:27 GMT"
       },
       "generator": "bikeshed",
       "date": "15 July 2022",
@@ -14092,7 +14094,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/css-layout-api-1/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 24 Aug 2022 23:18:14 GMT"
+        "lastModified": "Thu, 25 Aug 2022 05:52:37 GMT"
       },
       "generator": "bikeshed",
       "date": "15 July 2022",
@@ -14322,7 +14324,7 @@
       ],
       "crawled": "https://drafts.fxtf.org/css-masking-1/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 24 Aug 2022 23:16:04 GMT"
+        "lastModified": "Thu, 25 Aug 2022 06:38:43 GMT"
       },
       "generator": "bikeshed",
       "date": "24 February 2022",
@@ -14903,7 +14905,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/css-paint-api-1/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 24 Aug 2022 23:18:19 GMT"
+        "lastModified": "Thu, 25 Aug 2022 05:52:40 GMT"
       },
       "generator": "bikeshed",
       "date": "15 December 2020",
@@ -15026,7 +15028,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/css-properties-values-api-1/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 24 Aug 2022 23:18:25 GMT"
+        "lastModified": "Thu, 25 Aug 2022 05:52:47 GMT"
       },
       "generator": "bikeshed",
       "date": "15 April 2022",
@@ -16507,7 +16509,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/css-typed-om-1/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 24 Aug 2022 23:18:48 GMT"
+        "lastModified": "Thu, 25 Aug 2022 05:53:12 GMT"
       },
       "generator": "bikeshed",
       "date": "20 April 2022",
@@ -17051,7 +17053,8 @@
       "css": "css/CSS.json",
       "dfns": "dfns/CSS22.json",
       "headings": "headings/CSS22.json",
-      "ids": "ids/CSS22.json"
+      "ids": "ids/CSS22.json",
+      "error": "Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers' Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers'\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:483:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:353:22)\n    at async Promise.all (index 326)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:361:21)"
     },
     {
       "url": "https://www.w3.org/TR/css3-exclusions/",
@@ -17893,7 +17896,7 @@
       ],
       "crawled": "https://drafts.fxtf.org/fill-stroke/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 24 Aug 2022 23:16:11 GMT"
+        "lastModified": "Thu, 25 Aug 2022 06:38:50 GMT"
       },
       "generator": "bikeshed",
       "date": "4 April 2017",
@@ -17953,7 +17956,7 @@
       ],
       "crawled": "https://drafts.fxtf.org/filter-effects-1/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 24 Aug 2022 23:16:36 GMT"
+        "lastModified": "Thu, 25 Aug 2022 06:39:21 GMT"
       },
       "generator": "bikeshed",
       "date": "10 August 2022",
@@ -18299,7 +18302,7 @@
       ],
       "crawled": "https://drafts.fxtf.org/geometry/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 24 Aug 2022 23:16:46 GMT"
+        "lastModified": "Thu, 25 Aug 2022 06:39:30 GMT"
       },
       "generator": "bikeshed",
       "date": "10 February 2022",
@@ -20402,7 +20405,7 @@
       ],
       "crawled": "https://drafts.fxtf.org/motion-1/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 24 Aug 2022 23:16:51 GMT"
+        "lastModified": "Thu, 25 Aug 2022 06:39:35 GMT"
       },
       "generator": "bikeshed",
       "date": "23 February 2022",
@@ -24287,10 +24290,10 @@
       ],
       "crawled": "https://gpuweb.github.io/gpuweb/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 24 Aug 2022 14:25:39 GMT"
+        "lastModified": "Thu, 25 Aug 2022 06:28:12 GMT"
       },
       "generator": "bikeshed",
-      "date": "24 August 2022",
+      "date": "25 August 2022",
       "links": "links/webgpu.json",
       "refs": "refs/webgpu.json",
       "events": "events/webgpu.json",
@@ -25457,10 +25460,10 @@
       ],
       "crawled": "https://gpuweb.github.io/gpuweb/wgsl/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 24 Aug 2022 14:25:39 GMT"
+        "lastModified": "Thu, 25 Aug 2022 06:28:12 GMT"
       },
       "generator": "bikeshed",
-      "date": "24 August 2022",
+      "date": "25 August 2022",
       "links": "links/WGSL.json",
       "refs": "refs/WGSL.json",
       "dfns": "dfns/WGSL.json",

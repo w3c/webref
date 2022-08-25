@@ -1447,6 +1447,27 @@
       "definedIn": "table"
     },
     {
+      "id": "dom-supported-limits-maxbuffersize",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-supported-limits-maxbuffersize",
+      "linkingText": [
+        "maxBufferSize"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "supported limits"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "limits",
+        "href": "https://gpuweb.github.io/gpuweb/#limits",
+        "title": "Limits",
+        "number": "3.6.2"
+      },
+      "definedIn": "table"
+    },
+    {
       "id": "dom-supported-limits-maxvertexattributes",
       "href": "https://gpuweb.github.io/gpuweb/#dom-supported-limits-maxvertexattributes",
       "linkingText": [
@@ -1535,6 +1556,27 @@
       "href": "https://gpuweb.github.io/gpuweb/#dom-supported-limits-maxcolorattachments",
       "linkingText": [
         "maxColorAttachments"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "supported limits"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "limits",
+        "href": "https://gpuweb.github.io/gpuweb/#limits",
+        "title": "Limits",
+        "number": "3.6.2"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dom-supported-limits-maxcolorattachmentbytesperpixel",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-supported-limits-maxcolorattachmentbytesperpixel",
+      "linkingText": [
+        "maxColorAttachmentBytesPerPixel"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -2054,6 +2096,27 @@
       "definedIn": "pre"
     },
     {
+      "id": "dom-gpusupportedlimits-maxbuffersize",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpusupportedlimits-maxbuffersize",
+      "linkingText": [
+        "maxBufferSize"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPUSupportedLimits"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gpu-supportedlimits",
+        "href": "https://gpuweb.github.io/gpuweb/#gpu-supportedlimits",
+        "title": "GPUSupportedLimits",
+        "number": "3.6.2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "dom-gpusupportedlimits-maxvertexattributes",
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpusupportedlimits-maxvertexattributes",
       "linkingText": [
@@ -2142,6 +2205,27 @@
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpusupportedlimits-maxcolorattachments",
       "linkingText": [
         "maxColorAttachments"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPUSupportedLimits"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gpu-supportedlimits",
+        "href": "https://gpuweb.github.io/gpuweb/#gpu-supportedlimits",
+        "title": "GPUSupportedLimits",
+        "number": "3.6.2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-gpusupportedlimits-maxcolorattachmentbytesperpixel",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpusupportedlimits-maxcolorattachmentbytesperpixel",
+      "linkingText": [
+        "maxColorAttachmentBytesPerPixel"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -3609,6 +3693,25 @@
         "number": "5.1"
       },
       "definedIn": "dt"
+    },
+    {
+      "id": "abstract-opdef-initialize-an-active-buffer-mapping",
+      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-initialize-an-active-buffer-mapping",
+      "linkingText": [
+        "initialize an active buffer mapping"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "buffer-interface",
+        "href": "https://gpuweb.github.io/gpuweb/#buffer-interface",
+        "title": "GPUBuffer",
+        "number": "5.1"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "dictdef-gpubufferdescriptor",
@@ -12434,6 +12537,25 @@
       "definedIn": "prose"
     },
     {
+      "id": "abstract-opdef-validating-gpufragmentstates-color-attachment-bytes-per-pixel",
+      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-validating-gpufragmentstates-color-attachment-bytes-per-pixel",
+      "linkingText": [
+        "Validating GPUFragmentState’s color attachment bytes per pixel"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "fragment-state",
+        "href": "https://gpuweb.github.io/gpuweb/#fragment-state",
+        "title": "Fragment State",
+        "number": "10.3.4"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "valid-gpublendcomponent",
       "href": "https://gpuweb.github.io/gpuweb/#valid-gpublendcomponent",
       "linkingText": [
@@ -18059,6 +18181,25 @@
       "definedIn": "prose"
     },
     {
+      "id": "abstract-opdef-validating-gpurenderpassdescriptors-color-attachment-bytes-per-pixel",
+      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-validating-gpurenderpassdescriptors-color-attachment-bytes-per-pixel",
+      "linkingText": [
+        "Validating GPURenderPassDescriptor’s color attachment bytes per pixel"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "render-pass-encoder-creation",
+        "href": "https://gpuweb.github.io/gpuweb/#render-pass-encoder-creation",
+        "title": "Creation",
+        "number": "16.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "dictdef-gpurenderpasscolorattachment",
       "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpurenderpasscolorattachment",
       "linkingText": [
@@ -18208,6 +18349,25 @@
       "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-renderable-texture-view",
       "linkingText": [
         "renderable texture view"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "color-attachments",
+        "href": "https://gpuweb.github.io/gpuweb/#color-attachments",
+        "title": "Color Attachments",
+        "number": "16.1.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "abstract-opdef-calculating-color-attachment-bytes-per-pixel",
+      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-calculating-color-attachment-bytes-per-pixel",
+      "linkingText": [
+        "Calculating color attachment bytes per pixel"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -24275,6 +24435,44 @@
         "number": "24.10"
       },
       "definedIn": "heading"
+    },
+    {
+      "id": "render-target-pixel-byte-cost",
+      "href": "https://gpuweb.github.io/gpuweb/#render-target-pixel-byte-cost",
+      "linkingText": [
+        "Render target pixel byte cost"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "plain-color-formats",
+        "href": "https://gpuweb.github.io/gpuweb/#plain-color-formats",
+        "title": "Plain color formats",
+        "number": "25.1.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "render-target-component-alignment",
+      "href": "https://gpuweb.github.io/gpuweb/#render-target-component-alignment",
+      "linkingText": [
+        "Render target component alignment"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "plain-color-formats",
+        "href": "https://gpuweb.github.io/gpuweb/#plain-color-formats",
+        "title": "Plain color formats",
+        "number": "25.1.1"
+      },
+      "definedIn": "table"
     },
     {
       "id": "depth-or-stencil-format",
